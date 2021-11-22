@@ -43,7 +43,7 @@ An [inactive mailbox](inactive-mailboxes-in-office-365.md) is mailbox state that
 >
 > - [Litigation hold](create-a-litigation-hold.md) remains supported as an alternative method to retain content in a mailbox and make it inactive after a user account is deleted. However, as an older technology, we recommend you use Microsoft 365 retention instead.
 
-Once made inactive, the contents of the mailbox including the [Recoverable Items folder](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder.md) are retained until the hold that was placed on the mailbox before it was made inactive no longer applies.  
+Once made inactive, the contents of the mailbox including the [Recoverable Items folder](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) are retained until the hold that was placed on the mailbox before it was made inactive no longer applies.  
 
 If the applicable hold is not time-based, such as a hold associated with an indefinite retain-only Microsoft 365 retention policy or label, an eDiscovery case or Litigation Hold (without a ```LitigationHoldDuration``` configured), the mailbox content will be retained indefinitely until the hold is removed.  
 
@@ -224,7 +224,7 @@ Get-RetentionCompliancePolicy 6fe063689d404a5bb9940eed0f0bf5d2 | FL Name
 ```
 Once you've identified the policy, you will know which labels have been published and their settings.  Because labels apply to individual items, depending on the number of labels published with the policy and their settings, you may not be able to directly identify which label is affecting the content.  
 
-One method that you can use to identify the content each label applies to is using [Content Search](content-search.md).  For example, using the sample information from above, assume the policy publishes several labels, one of which is named "HR-Content".  With the [correct permissions](microsoft-365-compliance-center-permissions.md), a Content Search can be run with the [New-ComplianceSearch PowerShell command](/powershell/module/exchange/new-compliancesearch.md), specifying the inactive mailbox's primary SMTP address, pre-pended with a period (`.`), and the `-AllowNotFoundExchangeLocationsEnabled $true` parameter to skip validation:
+One method that you can use to identify the content each label applies to is using [Content Search](content-search.md).  For example, using the sample information from above, assume the policy publishes several labels, one of which is named "HR-Content".  With the [correct permissions](microsoft-365-compliance-center-permissions.md), a Content Search can be run with the [New-ComplianceSearch PowerShell command](/powershell/module/exchange/new-compliancesearch), specifying the inactive mailbox's primary SMTP address, pre-pended with a period (`.`), and the `-AllowNotFoundExchangeLocationsEnabled $true` parameter to skip validation:
 
 ```powershell
 New-ComplianceSearch -Name "MeganB Inactive Mailbox HR-Content Label Search" -ExchangeLocation .meganb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true -ContentMatchQuery "compliancetag=HR-Content"
