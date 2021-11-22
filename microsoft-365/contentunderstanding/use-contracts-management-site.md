@@ -17,9 +17,9 @@ description: Learn how to provision, use, and customize the Contracts Management
 
 # Use the Contracts Management site template for Microsoft SharePoint Syntex
 
-The Contracts Management site is a ready to deploy and customizable SharePoint site template that helps your organization maximize the value of SharePoint Syntex. The site is designed to let you create a professional site that meets the contract managing and processing goals of your organization.
+The Contracts Management site is a ready-to-deploy and customizable SharePoint site template that helps your organization maximize the value of SharePoint Syntex. The site is designed to let you create a professional site that lets you manage, process, and track the status of contracts for your organization.
 
-The Contract Management site includes pre-populated pages, web parts, and site navigation. The site can be customized to incorporate your organization's own branding, employee information, policy and planning information, and document repository.
+The Contract Management site includes pre-populated pages, web parts, and site navigation. The site can be customized to incorporate your organization's own branding, employee information, policy and planning information, contacts, and resources.
 
 ![Screenshot of the Contracts Management site template provisioning page.](../media/content-understanding/contracts-management-site-provisioning-page.png)
 
@@ -28,7 +28,7 @@ The Contract Management site includes pre-populated pages, web parts, and site n
 The Contracts Management site can be provisioned from the [SharePoint look book service](https://lookbook.microsoft.com/).
 
 > [!NOTE]
-> You must be a global administrator or SharePoint administrator to provision the site.
+> You must be a global administrator or SharePoint administrator in Microsoft 365 to provision the site.
 
 1. From the main page of the [SharePoint look book](https://lookbook.microsoft.com/), on the **View the designs** menu, select **SharePoint Syntex** > **Contracts Management site**.
 
@@ -36,13 +36,15 @@ The Contracts Management site can be provisioned from the [SharePoint look book 
 
     ![Screenshot of the Add to your tenant button on the Contracts Management site template provisioning page.](../media/content-understanding/contracts-management-site-add-to-your-tenant.png)
 
-3. Enter the information in the email and URL address sections, and then select **Provision**.
+3. Enter your email address (for a notification of when your site is ready to use), the title you want to use for your site, and the site URL you want to use. Select **Provision**.
 
-4. Select **Confirm**. The page will indicate that provisioning has started. When provisioning is complete, in the **Provisioning status** field, you'll see **Provisioning completed**.
+4. Select **Provision**, and in a short time your site will be ready for you to use. You’ll get an email (sent to the email address you provided) indicating that your request to provision the Contracts Management site template is completed.
+
+5. Select **Open site**, and you’ll see your Contracts Management site. From here, you can explore the site and edit the pages and content. 
 
 ## Customize the Contracts Management site
 
-Prior to sharing the Contracts Management site with other users, the site can be customized to meet your requirements. 
+Before you share the Contracts Management site with other users, you'll want to customize the site to meet your requirements. 
 
 ### Customize the look and feel of your site
 
