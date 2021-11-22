@@ -99,7 +99,7 @@ For details about data collected and privacy, see [Privacy Information - Microso
 
 If you are facing internet connectivity issues on cellular network, check if Microsoft Defender for Endpoint has cellular data enabled: Open Settings app > MS Defender > ensure that "Cellular data" is enabled for MS Defender.
 
-If you still have connectivity issues, check if turning on/off Airplane mode helps resolve the issue. And in case the issue still persists, [send us logs](ios-troubleshoot.md#send-in-app-feedback).
+If you still have connectivity issues, check if turning on/off Airplane mode helps resolve the issue. If the issue persists, [send us logs](ios-troubleshoot.md#send-in-app-feedback).
 
 ## Issues on supervised devices with content filter profile installed
 
