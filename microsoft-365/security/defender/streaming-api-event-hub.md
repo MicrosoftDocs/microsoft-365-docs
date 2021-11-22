@@ -49,7 +49,7 @@ Once the Event Hub namespace is created you will need to:
 
 ## Enable raw data streaming
 
-1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> as a ***Global Administrator*** or ***Security Administrator***.
+1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> as a ***Global Administrator*** or ***Security Administrator***.
 
 2. Go to the [Streaming API settings page](https://security.microsoft.com/settings/mtp_settings/raw_data_export).
 

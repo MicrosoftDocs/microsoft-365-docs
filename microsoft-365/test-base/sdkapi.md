@@ -41,7 +41,7 @@ Check out the step-by-step outline below to find out how to access this new capa
 
 ```
 pip install azure-identity 
-pip install azure-mgmt-testbase	 
+pip install azure-mgmt-testbase
 ```
 
 - Authenticating in dev environment 
@@ -99,13 +99,13 @@ Check below links to learn more details about the SDK & API.
 
 **Azure Subscription** 
 
-- [Azure account with an active subscription](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup) 
+- [Azure account with an active subscription](https://azure.microsoft.com/free/?utm_source=campaign&utm_campaign=python-dev-center&mktingSource=environment-setup)
 
 **Python SDK** 
 
-- [Test Base Python SDK Documentation](/python/api/overview/azure/mgmt-testbase-readme?view=azure-python-preview)
-- [Test Base Python SDK Sample](https://aka.ms/testbase-sample-py) 
-- [Azure General Usage Pattern of Python SDK](/azure/developer/python/azure-sdk-overview#provision-and-manage-azure-resources-with-management-libraries) 
+- [Test Base Python SDK Documentation](/python/api/overview/azure/mgmt-testbase-readme)
+- [Test Base Python SDK Sample](https://aka.ms/testbase-sample-py)
+- [Azure General Usage Pattern of Python SDK](/azure/developer/python/azure-sdk-overview#provision-and-manage-azure-resources-with-management-libraries)
 
 **REST API**  
 
