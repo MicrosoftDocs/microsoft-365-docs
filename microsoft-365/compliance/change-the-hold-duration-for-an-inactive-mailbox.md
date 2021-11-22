@@ -215,7 +215,7 @@ If the intention is to modify the retention period for only inactive mailboxes, 
 
 ### Change the duration for a Microsoft 365 retention label
 
-Similar to with retention policies, in order to modify the hold duration of a Microsoft 365 retention label, you must first identify the policy which publishes the label affecting the content within the inactive mailbox by running `Get-RetentionCompliancePolicy` with the associated GUID from the `InPlaceHolds` property on the mailbox in Security and Compliance Center PowerShell.
+As with retention policies, when modifying the hold duration of a Microsoft 365 retention label, you must first identify the policy which publishes the label affecting the content within the inactive mailbox by running `Get-RetentionCompliancePolicy` with the associated GUID from the `InPlaceHolds` property on the mailbox in Security and Compliance Center PowerShell.
 
 Be sure to remove the prefix and suffix from the GUID when running this command.  For example, using the sample information from above, you would take the `InPlaceHolds` value of `mbx6fe063689d404a5bb9940eed0f0bf5d2:1` then remove `mbx` and `:1` resulting in a policy GUID of `6fe063689d404a5bb9940eed0f0bf5d2`.  In this example, you'd want to run:
 
