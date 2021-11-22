@@ -209,11 +209,13 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 7. Select the **Actions** tab, click **New**, and then do the following things:
 
+   ![Action settings to create a new scheduled task for the healthcare connector script.](../media/GenericHealthCareConnectorScheduleTask1.png)
+
     1. In the **Action** dropdown list, make sure that **Start a program** is selected.
 
     2. In the **Program/script** box, click **Browse**, and go to the following location and select it so the path is displayed in the box: C:.0.exe.
 
-    3. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, `..ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Healthcare\audit\records.txt"`
+    3. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, `.\HealthcareConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Healthcare\audit\records.txt"`
 
     4. In the **Start in (optional)** box, paste the folder location of the script that you ran in Step 4. For example, C:\Healthcare\audit.
 
@@ -221,6 +223,10 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 8. In the **Create Task** window, click **Ok** to save the scheduled task. You might be prompted to enter your user account credentials.
 
-The last time the script ran and the next time it's scheduled to run is displayed. You can double-click the task to edit it.
+   The new task is displayed in the Task Scheduler Library.
 
-You can also verify the last time the script ran on the flyout page of the corresponding Healthcare connector in the compliance center.
+   ![The new task for the healthcare connector script is displayed in the Task Scheduler Library.](../media/HealthcareConnectorTaskSchedulerLibrary.png)
+
+   The last time the script ran and the next time it's scheduled to run is displayed. You can double-click the task to edit it.
+
+   You can also verify the last time the script ran on the flyout page of the corresponding Healthcare connector in the compliance center.

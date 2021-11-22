@@ -55,7 +55,7 @@ You can see group membership for the user, by selecting the number under **Group
 
 By selecting the icon under **Manager**, you can see where the user is in the organization tree.
 
-The Microsoft 365 Defender portal user page combines information from Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Cloud App Security (depending on what licenses you have).
+The Microsoft 365 Defender portal user page combines information from Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Defender for Cloud Apps (depending on what licenses you have).
 
 This page shows information specific to the security risk of a user account. This includes a score that helps assess risk and recent events and alerts that contributed to the overall risk of the user.
 
