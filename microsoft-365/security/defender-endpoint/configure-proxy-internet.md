@@ -100,9 +100,9 @@ Configure the static proxy using the Group Policy found here:
 
    :::image type="content" source="images/proxy-server-mdav.png" alt-text="Proxy server for Microsoft Defender Antivirus.":::
 
-3. Under the registry key `HKLM\Software\Policies\Microsoft\Windows Defender`, the policy sets the registry value `ProxyServer` as REG_SZ. 
+3. Under the registry key `HKLM\Software\Policies\Microsoft\Windows Defender`, the policy sets the registry value `ProxyServer` as REG_SZ. 
 
-   The registry value `ProxyServer` takes the following string format:
+   The registry value `ProxyServer` takes the following string format:
 
     ```text
     <server name or ip>:<port>
@@ -194,8 +194,8 @@ The information below list the proxy and firewall configuration information requ
 |*.blob.core.windows.net|Port 443|Outbound|Yes|
 |*.azure-automation.net|Port 443|Outbound|Yes|
 
->[!NOTE]
->*These connectivity requirements also apply to the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to onboard these operating systems with the new unified solution are at [Onboard Windows servers](configure-server-endpoints.md), or to migrate to the new unfiied solution at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
+> [!NOTE]
+> *These connectivity requirements also apply to the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to onboard these operating systems with the new unified solution are at [Onboard Windows servers](configure-server-endpoints.md), or to migrate to the new unified solution at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
 > [!NOTE]
 > As a cloud-based solution, the IP range can change. It's recommended you move to DNS resolving setting.
@@ -204,7 +204,7 @@ The information below list the proxy and firewall configuration information requ
 
  See the following guidance to eliminate the wildcard (*) requirement for your specific environment when using the Microsoft Monitoring Agent (MMA) for previous versions of Windows.
 
-1.	Onboard a previous operating system with the Microsoft Monitoring Agent (MMA) into Defender for Endpoint (for more information, see [Onboard previous versions of Windows on Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) and [Onboard Windows servers](configure-server-endpoints.md).
+1. Onboard a previous operating system with the Microsoft Monitoring Agent (MMA) into Defender for Endpoint (for more information, see [Onboard previous versions of Windows on Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) and [Onboard Windows servers](configure-server-endpoints.md).
 
 2. Ensure the machine is successfully reporting into the Microsoft 365 Defender portal.
 
@@ -219,7 +219,7 @@ The wildcards (\*) used in \*.ods.opinsights.azure.com, \*.oms.opinsights.azure.
 The \*.blob.core.windows.net URL endpoint can be replaced with the URLs shown in the "Firewall Rule: \*.blob.core.windows.net" section of the test results.
 
 > [!NOTE]
-> In the case of onboarding via Azure Defender, multiple workspaces maybe used. You will need to perform the TestCloudConnection.exe procedure above on an onboarded machine from each workspace (to determine if there are any changes to the *.blob.core.windows.net URLs between the workspaces).
+> In the case of onboarding via Microsoft Defender for Cloud, multiple workspaces maybe used. You will need to perform the TestCloudConnection.exe procedure above on an onboarded machine from each workspace (to determine if there are any changes to the *.blob.core.windows.net URLs between the workspaces).
 
 ## Verify client connectivity to Microsoft Defender for Endpoint service URLs
 
