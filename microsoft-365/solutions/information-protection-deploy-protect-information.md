@@ -74,7 +74,7 @@ In addition, site and library level protection are important mechanisms to inclu
 
 For information on other information protection capabilities outside of Microsoft 365, see:
 
-- [Microsoft Cloud Application Security (Defender for Cloud Apps)](/cloud-app-security/)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/)
 - [Azure Information Protection](/azure/information-protection/what-is-information-protection)
 - [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
 - [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
