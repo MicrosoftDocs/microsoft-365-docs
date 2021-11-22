@@ -43,7 +43,7 @@ An [inactive mailbox](inactive-mailboxes-in-office-365.md) is mailbox state that
 >
 > - [Litigation hold](create-a-litigation-hold.md) remains supported as an alternative method to retain content in a mailbox and make it inactive after a user account is deleted. However, as an older technology, we recommend you use Microsoft 365 retention instead.
 
-Once made inactive, the contents of the mailbox including the [Recoverable Items folder](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) are retained until the hold that was placed on the mailbox before it was made inactive no longer applies.  
+Once made inactive, the contents of the mailbox including the [Recoverable Items folder](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder.md) are retained until the hold that was placed on the mailbox before it was made inactive no longer applies.  
 
 If the applicable hold is not time-based, such as a hold associated with an indefinite retain-only Microsoft 365 retention policy or label, an eDiscovery case or Litigation Hold (without a ```LitigationHoldDuration``` configured), the mailbox content will be retained indefinitely until the hold is removed.  
 
@@ -77,7 +77,7 @@ Get-Mailbox -Identity <identity of inactive mailbox> -InactiveMailboxOnly | FL D
 If you need to identify the type of hold for multiple inactive mailboxes and your organization has a large number of them, it may become unmanageable to view using PowerShell. In this case, you can export all of the applicable information to a CSV file using the following command and modifying the ```Path``` as needed for your environment:
 
 ```powershell
-Get-Mailbox -InactiveMailboxOnly -ResultSize Unlimited | Select DisplayName,Name,DistinguishedName,ExchangeGuid,IsInactiveMailbox,LitigationHoldEnabled,LitigationHoldDuration,LitigationHoldDate,LitigationHoldOwner,InPlaceHolds,ComplianceTagHoldApplied | Export-Csv -NoTypeInformation -Path C:\Temp\InactiveMailboxHoldTypes.csv
+Get-Mailbox -InactiveMailboxOnly -ResultSize Unlimited | Select DisplayName,Name,DistinguishedName,ExchangeGuid,IsInactiveMailbox,LitigationHoldEnabled,LitigationHoldDuration,LitigationHoldDate,LitigationHoldOwner,InPlaceHolds,ComplianceTagHoldApplied | Export-Csv -NoTypeInformation -Path "C:\Temp\InactiveMailboxHoldTypes.csv"
 ```
 
 For the purposes of this example, the following shows results for six inactive mailboxes with different possible hold types.
@@ -185,6 +185,65 @@ The following table identifies the six different hold types that were used to ma
 ## Step 2: Change the hold duration for an inactive mailbox
 
 After you identify what type of hold is placed on the inactive mailbox (and whether there are multiple holds), the next step is to change the duration for the hold.  The process varies depending on the type of hold applied.
+
+- [Change the duration for a Microsoft 365 retention policy](#change-the-duration-for-a-microsoft-365-retention-policy)
+
+- [Change the duration for a Microsoft 365 retention label](#change-the-duration-for-a-microsoft-365-retention-label)
+
+- [Change the duration for an eDiscovery Hold](#change-the-duration-for-an-ediscovery-hold)
+
+- [Change the duration for a Litigation Hold](#change-the-duration-for-a-litigation-hold)
+
+- [Change the duration for an In-Place Hold](#change-the-duration-for-an-in-place-hold)
+
+### Change the duration for a Microsoft 365 retention policy
+
+In order to modify the hold duration for a Microsoft 365 retention policy, you must first identify the policy affecting the inactive mailbox by running `Get-RetentionCompliancePolicy` with the associated GUID from the `InPlaceHolds` property on the mailbox in Security and Compliance Center PowerShell.
+
+Be sure to remove the prefix and suffix from the GUID when running this command.  For example, using the sample information from above, you would take the `InPlaceHolds` value of `mbxcdbbb86ce60342489bff371876e7f224:3` then remove `mbx` and `:3` resulting in a policy GUID of `cdbbb86ce60342489bff371876e7f224`.  In this example, you'd want to run:
+
+```powershell
+Get-RetentionCompliancePolicy cdbbb86ce60342489bff371876e7f224 | FL Name
+```
+
+Once you know the name of the policy, you can simply modify the retention policy in the Microsoft 365 Compliance center.  Be aware that retention policies are typically applied to more than one location, so modifying the policy will affect all applied locations - both inactive and active, which may also include locations other than Exchange.  For more information, see [Create and configure retention policies](create-retention-policies.md).  
+
+> [!IMPORTANT]
+> Retention policies with [preservation lock](retention-preservation-lock.md) enabled can have the retention period extended, but not decreased or removed.
+
+If the intention is to modify the retention period for only inactive mailboxes, or only specific inactive mailboxes, you may consider deploying [adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention), which can be used to individually target specific mailboxes - or mailbox types, such as inactive mailboxes - using Azure AD and Exchange attributes and properties.
+
+### Change the duration for a Microsoft 365 retention label
+
+Similar to with retention policies, in order to modify the hold duration of a Microsoft 365 retention label, you must first identify the policy which publishes the label affecting the content within the inactive mailbox by running `Get-RetentionCompliancePolicy` with the associated GUID from the `InPlaceHolds` property on the mailbox in Security and Compliance Center PowerShell.
+
+Be sure to remove the prefix and suffix from the GUID when running this command.  For example, using the sample information from above, you would take the `InPlaceHolds` value of `mbx6fe063689d404a5bb9940eed0f0bf5d2:1` then remove `mbx` and `:1` resulting in a policy GUID of `6fe063689d404a5bb9940eed0f0bf5d2`.  In this example, you'd want to run:
+
+```powershell
+Get-RetentionCompliancePolicy 6fe063689d404a5bb9940eed0f0bf5d2 | FL Name
+```
+Once you've identified the policy, you will know which labels have been published and their settings.  Because labels apply to individual items, depending on the number of labels published with the policy and their settings, you may not be able to directly identify which label is affecting the content.  
+
+One method that you can use to identify the content each label applies to is using [Content Search](content-search.md).  For example, using the sample information from above, assume the policy publishes several labels, one of which is named "HR-Content".  With the [correct permissions](microsoft-365-compliance-center-permissions.md), a Content Search can be run with with the [New-ComplianceSearch PowerShell command](/powershell/module/exchange/new-compliancesearch.md), specifying the inactive mailbox's primary SMTP address, pre-pended with a period (`.`), and the `-AllowNotFoundExchangeLocationsEnabled $true` parameter to skip validation:
+
+```powershell
+New-ComplianceSearch -Name "MeganB Inactive Mailbox HR-Content Label Search" -ExchangeLocation .meganb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true -ContentMatchQuery "compliancetag=HR-Content"
+```
+
+Once the search is created, you will start the search using the following command:
+
+```powershell
+Start-ComplianceSearch "MeganB Inactive Mailbox HR-Content Label Search"
+```
+
+Using this method, you can then identify which labels from the identified label policy apply to content within the inactive mailbox so that you can modify their retention periods. Be aware that retention labels are typically applied to more than one location, so modifying a label will affect all applied locations and labeled content, which may also include locations and content other than Exchange. For more information, see [Create retention labels and apply them in apps](create-apply-retention-labels.md).
+
+> [!NOTE]
+> Not all types of retention labels can be modified.  For some labels, you may only be able to increase the time of retention, and for others you may not be able to modify the retention period at all.
+
+### Change the duration for an eDiscovery Hold
+
+Holds associated with eDiscovery cases are indefinite holds, which means there's no hold duration that can be changed. Items are held forever or until the [hold is removed](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold) or the case is closed.
   
 ### Change the duration for a Litigation Hold
 
@@ -198,39 +257,6 @@ The result is that items in the inactive mailbox are retained indefinitely or un
   
 > [!TIP]
 > The best way to identify an inactive mailbox is by using its **Distinguished Name** or **Exchange GUID** value. Using one of these values helps prevent accidentally specifying the wrong mailbox.
-
-### Change the duration for a Microsoft 365 retention policy
-
-In order to modify the hold duration for a Microsoft 365 retention policy, you must first identify the policy affecting the inactive mailbox by running `Get-RetentionCompliancePolicy` with the associated GUID from the `InPlaceHolds` property on the mailbox in Security and Compliance Center PowerShell.
-
-Be sure to remove the prefix and suffix from the GUID when running this command.  For example, using the sample information from above, you would take the `InPlaceHolds` value of `mbxcdbbb86ce60342489bff371876e7f224:3` then remove `mbx` and `:3` resulting in a policy GUID of `cdbbb86ce60342489bff371876e7f224`.  In this example, you'd want to run:
-
-```powershell
-Get-RetentionCompliancePolicy cdbbb86ce60342489bff371876e7f224 | FL Name
-```
-
-Once you know the name of the policy, you can simply modify the retention policy in the Microsoft 365 Compliance center.  Remember that retention policies are generally applied to more than one location, so modifying the policy will affect all applied locations, which may also include locations other than Exchange.  For more information, see [Create and configure retention policies](create-retention-policies.md).
-
-> [!NOTE]
-> Retention policies with [preservation lock](retention-preservation-lock.md) enabled can have the retention period extended, but not decreased or removed.
-
-### Change the duration for a Microsoft 365 retention label
-
-Similar to with retention policies, in order to modify the hold duration of a Microsoft 365 retention label, you must first identify the policy which publishes the label affecting the content within the inactive mailbox by running `Get-RetentionCompliancePolicy` with the associated GUID from the `InPlaceHolds` property on the mailbox in Security and Compliance Center PowerShell.
-
-Be sure to remove the prefix and suffix from the GUID when running this command.  For example, using the sample information from above, you would take the `InPlaceHolds` value of `mbx6fe063689d404a5bb9940eed0f0bf5d2:1` then remove `mbx` and `:1` resulting in a policy GUID of `6fe063689d404a5bb9940eed0f0bf5d2`.  In this example, you'd want to run:
-
-```powershell
-Get-RetentionCompliancePolicy 6fe063689d404a5bb9940eed0f0bf5d2 | FL Name
-```
-Once you've identified the policy, you will know which labels have been published and their settings.  Because labels apply to individual items, depending on the number of labels published with the policy and their settings, you may not be able to directly identify which label is affecting the content.  Also, remember that retention labels are generally applied to more than one location, so modifying a label will affect all applied locations and labeled content, which may also include locations and content other than Exchange. For more information, see [Create retention labels and apply them in apps](create-apply-retention-labels.md).
-
-> [!NOTE]
-> Not all types of retention labels can be modified.  For some labels, you may only be able to increase the time of retention, and for others you may not be able to modify the retention period at all.
-
-### Change the duration for an eDiscovery Hold
-
-Holds associated with eDiscovery cases are indefinite holds, which means there's no hold duration that can be changed. Items are held forever or until the [hold is removed](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold) or the case is closed.
 
 ### Change the duration for an In-Place Hold
 
