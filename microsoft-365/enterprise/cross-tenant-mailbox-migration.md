@@ -416,7 +416,7 @@ Get-MoveRequest -Flags "CrossTenant"
    ```powershell
    # Now sync the changes from On-Premises to Azure and Exchange Online in the Target tenant
    # This action should create the target mail enabled users (MEUs) in the Target tenant
-   Start-ADSyncSyncCycle
+   Start-ADSyncCycle
    ```
 
 **How do we access Outlook on Day 1 after the use mailbox is moved?**
