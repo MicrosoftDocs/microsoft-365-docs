@@ -305,7 +305,7 @@ Scenarios that include applying a sensitivity label outside Office apps include:
 
 - Exported labeled and encrypted data from Power BI
 
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 
 For these scenarios, using their Office apps, a user with built-in labeling can apply the label's content markings by temporarily removing or replacing the current label and then reapplying the original label.
 

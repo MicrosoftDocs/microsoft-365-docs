@@ -187,8 +187,6 @@ You can also use [Advanced hunting](advanced-hunting-overview.md) to query data 
 
 If you are looking for a pre-made simulation, you can use our ["Do It Yourself" attack scenarios](https://security.microsoft.com/tutorials/all). These scripts are safe, documented, and easy to use. These scenarios will reflect Defender for Endpoint capabilities and walk you through investigation experience.
 
-If you are looking for a pre-made simulation, you can use our ["Do It Yourself" attack scenarios](https://security.microsoft.com/tutorials/all). These scripts are safe, documented, and easy to use. These scenarios will reflect Defender for Endpoint capabilities and walk you through investigation experience.
-
 > [!NOTE]
 > The connection to the test devices is done using RDP. Make sure that your firewall settings allow RDP connections.
 

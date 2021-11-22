@@ -75,7 +75,4 @@ This article shows you how to configure Cornerstone OnDemand as a third-party le
 4. Select **Save** to activate Cornerstone content in Viva Learning. It may take up to 24 hours for the content to display in the Viva Learning app.
 
 >[!NOTE]
->Tenant metadata is stored centrally in our data stores and not stored in geo-specific data stores.
-
->[!NOTE]
 >Currently, all the users within an organization can discover all the tenant-specific courses but they will only be able to consume the courses that they have access to. User-specific content discovery based on roles and permissions is planned for future releases.

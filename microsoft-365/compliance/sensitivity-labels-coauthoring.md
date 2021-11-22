@@ -69,7 +69,7 @@ Make sure you understand the following prerequisites before you turn on this fea
 - Sensitivity labels must be [enabled for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) for the tenant. If this feature isn't already enabled, it will be automatically enabled when you select the setting to turn on co-authoring for files with sensitivity labels.
 
 - Microsoft 365 Apps for enterprise:
-    - **Windows**: Minimum version 2107
+    - **Windows**: Minimum version 2107 from Current Channel or Monthly Enterprise Channel
     - **macOS**: Minimum version 16.51
     - **iOS**: Not yet supported
     - **Android**: Not yet supported
@@ -95,7 +95,7 @@ Microsoft 365 services automatically support the new labeling metadata when you 
 
 - [Auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 - [DLP policies that use sensitivity labels as conditions](dlp-sensitivity-label-as-condition.md)
-- [Microsoft Cloud App Security configured to apply sensitivity labels](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
+- [Microsoft Defender for Cloud Apps configured to apply sensitivity labels](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
 
 ## Limitations
 
