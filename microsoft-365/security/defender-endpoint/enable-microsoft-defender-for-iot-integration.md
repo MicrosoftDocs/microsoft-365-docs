@@ -33,7 +33,7 @@ Microsoft Defender for Endpoint can integrate with Microsoft Defender for IoT to
 
 With this integration enabled, Microsoft Defender for Endpoint gains increased visibility to help locate, identify, and secure the IoT devices in your network. IoT devices discovered by either Microsoft Defender for IoT or Microsoft Defender for Endpoint will be synched automatically to the device inventory in both portals. This gives you a single unified view of your complete OT/IoT inventory alongside the rest of your IT devices (workstations, servers and mobile).
 
-Microsoft Defender for IoT also includes a deployable network sensor that provides an additional data source. Setting up a network sensor as part of you integration will give you the most complete view of your IoT and OT devices, specifically for network segments where Defender for Endpoint sensors are not present and when employees are accessing information remotely. For more information, see [Manage sensors with Defender for IoT in the Azure portal](https://docs.microsoft.com/azure/defender-for-iot/organizations/how-to-manage-sensors-on-the-cloud).
+Microsoft Defender for IoT also includes a deployable network sensor that provides an additional data source. Setting up a network sensor as part of you integration will give you the most complete view of your IoT and OT devices, specifically for network segments where Defender for Endpoint sensors are not present and when employees are accessing information remotely. 
 
 ## Prerequisites
 
@@ -48,14 +48,14 @@ To enable Microsoft Defender for IoT the user must have the following roles:
 
     ![Image of IoT integration setup.](images/enable-defender-for-iot.png)
 
-2. **Select an Azure subscription** from the dropdown list of available subscriptions under your Azure Active Directory (Azure AD) tenant.
+2. **Select an Azure subscription** from the dropdown list of available subscriptions in your Azure Active Directory (Azure AD) tenant.
 3. Choose the Azure subscription and select **Save**.
 
 ## Setup a network sensor
 
-After you have selected your Azure subscription, the option to add a network sensor becomes enabled.
+After you have selected your Azure subscription, you'll have the option to add a network sensor.
 
-In the Settings page for Microsoft Defender for IoT, under **Set up network sensors** choose the **Microsoft Defender for IoT**. This brings you to the Onboard sensor setup process in the Azure portal.
+In the Settings page for Microsoft Defender for IoT, under **Set up network sensors** choose the **Microsoft Defender for IoT** link. This brings you to the Onboard sensor setup process in the Azure portal.
 
 For more information, see [Manage sensors with Defender for IoT in the Azure portal](https://docs.microsoft.com/azure/defender-for-iot/organizations/how-to-manage-sensors-on-the-cloud).
 
