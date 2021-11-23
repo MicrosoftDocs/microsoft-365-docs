@@ -32,7 +32,7 @@ sections:
 
           Suppose that Lee has been using Microsoft Endpoint Manager to manage devices and security settings. Lee has recently started using Microsoft Defender for Business. Lee has chosen to use the simplified configuration process in Defender for Business. Now, Lee sees policy conflicts in Microsoft Endpoint Manager and in the Microsoft 365 Defender portal. 
 
-          To resolve policy conflicts, take one or more of the following actions:
+          Fortunately, policy conflicts can be resolved by taking one or more of the following actions:
 
           - Delete your existing policies in Microsoft Endpoint Manager
           - See [Troubleshoot policies in Microsoft Intune](/troubleshoot/mem/intune/troubleshoot-policies-in-microsoft-intune)
