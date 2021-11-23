@@ -248,6 +248,8 @@ You can also use the [installer script](server-migration.md#installer-script) to
 
 12. To link the GPO to an Organization Unit (OU), right-click and select **Link an existing GPO**. In the dialogue box that is displayed, select the Group Policy Object that you wish to link. Click **OK**.
 
+For additional configuration setttings, see [Configure sample collection settings](configure-endpoints-gp.md#configure-sample-collection-settings) and [Other recommended configuration settings](configure-endpoints-gp.md#other-recommended-configuration-settings).
+
 ### STEP 3: Follow the onboarding steps
 
 1. Now that you have downloaded the required onboarding packages use the guidance listed in [onboarding tools and methods](configure-endpoints.md#endpoint-onboarding-tools) for your server.
@@ -295,9 +297,6 @@ The onboarding package for Windows Server 2019 and Windows Server 2022 through M
 3. Select **Download package**. Save it as WindowsDefenderATPOnboardingPackage.zip.
 
 4. Follow the steps provided in the [follow the onboarding steps](#step-3-follow-the-onboarding-steps) section.
-
-
-
 
 
 ## Verify the onboarding and installation
