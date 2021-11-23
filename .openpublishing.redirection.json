@@ -4220,6 +4220,11 @@
       "redirect_url": "/microsoft-365/security/defender/advanced-hunting-assignedipaddress-function",
       "redirect_document_id": false
     },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/information-protection-in-windows-overview.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint",
+      "redirect_document_id": false
+    },
 	{
       "source_path": "microsoft-365/security/defender-endpoint/mac-sysext-preview.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac",
