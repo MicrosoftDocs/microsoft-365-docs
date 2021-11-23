@@ -73,7 +73,7 @@ To learn more about firewall policies and settings, see [Firewall in Microsoft D
    1. On the **Edit rule** flyout, review and edit the rule's name and description.
    2. Review and if necessary, edit the rule's profile. (Your options include **Domain network**, **Public network**, or **Private network**.)
    3. In the **Remote address type** list, select either **IP** or **Application file path**.
-   4. In the **Value** box, specify an appropriate value. Depending on what you selected in step 6c, you might specify an IP address, an IP address range, or an application file path. (See [Firewall settings](mdb-firewall.md#configuration-settings-for-firewall-protection-in-microsoft-defender-for-business).)
+   4. In the **Value** box, specify an appropriate value. Depending on what you selected in step 6c, you might specify an IP address, an IP address range, or an application file path. (See [Firewall settings](mdb-firewall.md).)
    5. Set **Enable rule** to **On** to make the rule active. Or, to disable the rule, set the switch to **Off**.
    6. On the **Edit rule** flyout, select **Update rule**. 
 
