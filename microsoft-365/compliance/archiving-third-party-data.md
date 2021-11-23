@@ -227,7 +227,7 @@ To create third-party data connectors, users in your organization must be a memb
 - Organization Management
 
 > [!NOTE]
-> Starting on November 30, 2021, you don't have to be assigned the Mailbox Import Export role in Exchange Online to create data connectors. After this date, you just need to be a member of one of the previous role groups in the Microsoft 365 compliance center to create a data connector.
+> Starting on November 30, 2021, you don't have to be assigned the Mailbox Import Export role in Exchange Online to create data connectors. After this date, you only need to be a member of one of the previous role groups in the Microsoft 365 compliance center to create a data connector.
 
 For more information about Microsoft 365 compliance center role groups and how to add users to a compliance role group, see:
 
