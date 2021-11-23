@@ -1,6 +1,6 @@
 ---
 title: Understand policy order in Microsoft Defender for Business
-description: Learn how to view, edit, create, and delete next-generation protection policies in Microsoft Defender for Business
+description: Learn about order of priority with policies in Microsoft Defender for Business
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
