@@ -77,7 +77,7 @@ You'll need to take the following steps:
    - Distribution Method: Install Automatically
    - Level: Computer Level
 
-4.  Navigate to the **Application & Custom Settings** payload and select **Upload** > **Add**
+4.  Navigate to the **Application & Custom Settings** page and select **Upload** > **Add**.
 
     ![Image of configurate app and custom settings.](images/jamfpro-mac-profile.png)
 
