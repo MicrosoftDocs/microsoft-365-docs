@@ -128,6 +128,7 @@ For more information, see [Integration with Microsoft Defender for Cloud](azure-
 
 If you have fully updated your machines with the latest [monthly rollup](/troubleshoot/windows-client/deployment/standard-terminology-software-updates.md#monthly-rollup) package, there are **no** additional prerequisites.
 
+
 The installer package will check if the following components have already been installed via an update:
 
 - [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
