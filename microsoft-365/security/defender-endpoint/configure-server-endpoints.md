@@ -149,8 +149,8 @@ To receive regular product improvements and fixes for the EDR Sensor component, 
 ### Onboarding steps summary
 
 - STEP 1: Download the installation and onboarding packages
-- STEP 2: Apply the installation package
-- STEP 3: Follow the onboarding steps 
+- STEP 2: Apply the installation and onboarding package
+- STEP 3: [Complete the onboarding steps](#step-3-complete-the-onboarding-steps) 
 
 
 ### STEP 1: Download installation and onboarding packages
@@ -180,20 +180,20 @@ Use the following steps to download the packages:
 
 
 
-### STEP 2: Apply the installation package
+### STEP 2: Apply the installation and onboarding package
 In this step you will install the prevention and detection components required before onboarding your device to the Microsoft Defender for Endpoint cloud environment, to prepare the machine for onboarding. Ensure all [prerequisites](#prerequisites) have been met. 
 
    > [!NOTE]
    > Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode. 
 
-#### Options to install the Microsoft Defender for Endpoint installation package
+#### Options to install the Microsoft Defender for Endpoint packages
 
 In the previous section, you downloaded an installation package. The installation package contains the installer for all Microsoft Defender for Endpoint components. 
 
 You can use any of the following options to install the agent:
 - [Install using the command line](#install-microsoft-defender-for-endpoint-using-the-command-line)
 - [Install using a script](#install-microsoft-defender-for-endpoint-using-a-script)
-- [Install using Group Policy](#install-the-microsoft-defender-for-endpoint-installation-package-using-group-policy)
+- [Apply the installation and onboarding packages using Group Policy](#apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy)
 
 ##### Install Microsoft Defender For Endpoint using the command line
 Use the installation package from the previous step to install Microsoft Defender for Endpoint. 
@@ -260,23 +260,23 @@ For additional configuration setttings, see [Configure sample collection setting
 
 ### STEP 3: Complete the onboarding steps
 
-(Only applicable if you're using a third-party anti-malware solutionn). You'll need to apply the following Microsoft Defender Antivirus passive mode setting. Verify that it was configured correctly:
+The following steps are only applicable if you're using a third-party anti-malware solution. You'll need to apply the following Microsoft Defender Antivirus passive mode setting. Verify that it was configured correctly:
 
-    1. Set the following registry entry:
-       - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-       - Name: `ForceDefenderPassiveMode`
-       - Type: `REG_DWORD`
-       - Value: `1`
+1. Set the following registry entry:
+    - Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
+    - Name: `ForceDefenderPassiveMode`
+    - Type: `REG_DWORD`
+    - Value: `1`
 
-    2. Run the following PowerShell command to verify that the passive mode was configured:
+2. Run the following PowerShell command to verify that the passive mode was configured:
 
-        ```powershell
-        Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
-        ```
+    ```powershell
+    Get-WinEvent -FilterHashtable @{ProviderName="Microsoft-Windows-Sense" ;ID=84}
+    ```
 
-    3. Confirm that a recent event containing the passive mode event is found:
+3. Confirm that a recent event containing the passive mode event is found:
 
-       ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
+    ![Image of passive mode verification result](images/atp-verify-passive-mode.png)
 
 > [!IMPORTANT]
 >
@@ -298,7 +298,7 @@ The onboarding package for Windows Server 2019 and Windows Server 2022 through M
 
 3. Select **Download package**. Save it as WindowsDefenderATPOnboardingPackage.zip.
 
-4. Follow the steps provided in the [follow the onboarding steps](#step-3-follow-the-onboarding-steps) section.
+4. Follow the steps provided in the [Complete the onboarding steps](#step-3-complete-the-onboarding-steps) section.
 
 
 ## Verify the onboarding and installation
