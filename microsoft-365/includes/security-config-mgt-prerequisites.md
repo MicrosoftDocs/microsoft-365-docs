@@ -30,6 +30,7 @@ When a device that is domain joined creates a trust with Azure Active Directory,
 - Hybrid Azure Active Directory Join must be configured in your environment (either through Federation or AAD Connect Sync)
 - AAD Connect Sync must include the device objects *in scope* for synchronization with Azure Active Directory (when needed for join)
 - AAD Connect rules for sync must be modified for Server 2012 R2 (when support for Server 2012 R2 is needed)
+- All devices must register in the Azure Active Directory of the tenant that hosts Microsoft Defender for Endpoint. Cross-tenant scenarios are not supported. 
 
 ### Connectivity Requirements
 
