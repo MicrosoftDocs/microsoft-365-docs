@@ -148,7 +148,7 @@ Set-MpPreference -PUAProtection Disabled
 
 Setting the value for this cmdlet to `Disabled` turns off the feature if it has been enabled.
 
-For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender for Cloud cmdlets](/powershell/module/defender/index).
+For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender Antivirus cmdlets](/powershell/module/defender/index).
 
 ## View PUA events using PowerShell
 
