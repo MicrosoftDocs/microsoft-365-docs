@@ -1,0 +1,61 @@
+### YamlMime:FAQ
+metadata:
+  title: Microsoft Defender for Business frequently asked questions
+  description: Get answers to your questions about Microsoft Defender for Business
+  search.appverid: MET150
+  author: denisebmsft
+  ms.author: deniseb
+  manager: dansimp 
+  audience: Admin
+  ms.topic: overview
+  ms.date: 11/04/2021
+  ms.prod: m365-security
+  ms.technology: mdb
+  localization_priority: Normal
+  ms.reviewer: inbadian, shlomiakirav
+  f1.keywords: NOCSH 
+  ms.collection: 
+  - SMB
+  - M365-security-compliance
+
+title: Microsoft Defender for Business - Frequently asked questions and answers
+summary: |
+
+sections:
+  - name: General
+    questions:
+      - question: I have Microsoft Defender for Endpoint. Why am I not seeing Microsoft Defender for Business in my portal?
+        answer: |
+          Currently, whenever a customer has multiple subscriptions, the highest subscription takes precedence. For example, if a customer has Microsoft Defender for Endpoint Plan 2 and Microsoft Defender for Business, Defender for Endpoint Plan 2 takes precedence. In this case, the customer will not see the Defender for Business experience.
+
+      - question: What are the differences between Defender for Business and Defender for Endpoint Plans 1 and 2?
+        answer: |
+          See [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md).
+
+      - question: How do I sign up for the preview of Defender for Business?
+        answer: |
+          Visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) to apply for the preview program.
+
+      - question: Are there any prerequisites for Defender for Business preview?
+        answer: |
+          Your company should be one of the following:
+          - A partner who offers IT services to small and medium-sized businesses
+          - A small or medium-sized business with up to 300 employees
+
+          You do not already have to have another Microsoft 365 subscription.
+
+          See [Microsoft Defender for Business requirements](mdb-requirements.md).
+
+      - question: What will be the licensing model at GA?
+        answer: |
+          When Microsoft Defender for Business reaches general availability (GA), it will be included in Microsoft 365 Business Premium.
+
+          For customers who do not have Microsoft 365 Business Premium, Defender for Business will be available as a standalone plan. 
+
+additionalContent: |
+ ## See also
+
+ - [Overview of Microsoft Defender for Business](mdb-overview.md)
+
+ - [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md)
+ 

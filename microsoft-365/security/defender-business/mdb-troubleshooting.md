@@ -88,4 +88,4 @@ The error message means that a configuration channel must be established between
 
 ## See also
 
-- [Microsoft Defender for Business - Frequently asked questions and answers](mdb-faq.md)
+- [Microsoft Defender for Business - Frequently asked questions and answers](mdb-faq.yml)

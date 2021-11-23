@@ -99,8 +99,8 @@ landingContent:
       - linkListType: reference
         links:
           - text: Frequently asked questions
-            url: mdb-faq.md
+            url: mdb-faq.yml
           - text: Troubleshooting
-            url: mdb-troubleshooting.md
+            url: mdb-troubleshooting.yml
           - text: How to get help or contact support
             url: mdb-get-help.md
