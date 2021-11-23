@@ -56,7 +56,10 @@ sections:
 
       - question: If I am already using Microsoft 365 Business Premium, why do I need Defender for Business?
         answer: |
-           Microsoft 365 Business Premium currently includes Microsoft Defender Antivirus, next-generation protection for Windows devices. Defender for Business extends these capabilities with threat & vulnerability management, attack surface reduction capabilities, endpoint detection and response, and automated investigation and response. [Learn more about Defender for Business](mdb-overview.md).
+           Microsoft 365 Business Premium currently includes Microsoft Defender Antivirus, next-generation protection for Windows devices. Defender for Business extends these capabilities with threat & vulnerability management, attack surface reduction capabilities, endpoint detection and response, and automated investigation and response. To learn more, see the following articles:
+           
+           - [Learn more about Defender for Business](mdb-overview.md)
+           - [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md)
           
 
 additionalContent: |
