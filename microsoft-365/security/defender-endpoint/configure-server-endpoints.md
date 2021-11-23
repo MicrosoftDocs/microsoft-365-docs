@@ -128,6 +128,7 @@ For more information, see [Integration with Microsoft Defender for Cloud](azure-
 
 If you have fully updated your machines with the latest [monthly rollup](/troubleshoot/windows-client/deployment/standard-terminology-software-updates.md#monthly-rollup) package, there are **no** additional prerequisites.
 
+
 The installer package will check if the following components have already been installed via an update:
 
 - [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
@@ -230,7 +231,6 @@ The onboarding package for Windows Server 2019 and Windows Server 2022 through M
         ```
 
         > [!NOTE]
-
         > - The integration between Microsoft Defender for servers and Microsoft Defender for Endpoint has been expanded to support Windows Server 2022, [Windows Server 2019, and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
         > - Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
 
