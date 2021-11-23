@@ -248,7 +248,7 @@ You can also use the [installer script](server-migration.md#installer-script) to
 
 12. To link the GPO to an Organization Unit (OU), right-click and select **Link an existing GPO**. In the dialogue box that is displayed, select the Group Policy Object that you wish to link. Click **OK**.
 
-## STEP 3: Onboarding steps
+### STEP 3: Onboarding steps
 
 1. Now that you have downloaded the required onboarding packages use the guidance listed in [onboarding tools and methods](configure-endpoints.md#endpoint-onboarding-tools) for your server.
 
