@@ -49,7 +49,7 @@ To learn more about firewall policies and settings, see [Firewall in Microsoft D
    2. On the **Create new rule** flyout, specify a name and description for the rule.
    3. Select a profile. (Your options include **Domain network**, **Public network**, or **Private network**.)
    4. In the **Remote address type** list, select either **IP** or **Application file path**.
-   5. In the **Value** box, specify an appropriate value. Depending on what you selected in step 6d, you might specify an IP address, an IP address range, or an application file path. (See [Firewall settings](mdb-firewall.md#configuration-settings-for-firewall-protection-in-microsoft-defender-for-business).)
+   5. In the **Value** box, specify an appropriate value. Depending on what you selected in step 6d, you might specify an IP address, an IP address range, or an application file path. (See [Firewall settings](mdb-firewall.md).)
    6. On the **Create new rule** flyout, select **Create rule**. 
 
 6. On the **Configuration settings** screen, choose **Next**.
