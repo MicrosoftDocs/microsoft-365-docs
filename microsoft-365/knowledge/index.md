@@ -9,7 +9,6 @@ ms.topic: landing-page
 ms.custom: intro-hub-or-landing
 ms.service: viva
 ms.subservice: viva-topics
-ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic

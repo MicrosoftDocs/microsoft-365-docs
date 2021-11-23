@@ -9,7 +9,6 @@ ms.topic: article
 ms.custom: intro-overview
 ms.service: viva
 ms.subservice: viva-topics
-ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic

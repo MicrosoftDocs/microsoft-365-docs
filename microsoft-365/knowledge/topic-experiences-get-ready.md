@@ -5,7 +5,6 @@ author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
 ms.custom: intro-get-started
 ms.service: viva
 ms.subservice: viva-topics
