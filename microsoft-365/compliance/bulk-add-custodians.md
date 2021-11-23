@@ -54,7 +54,7 @@ After you download the CSV custodian template, you can add custodians and their 
 |||
 
 > [!NOTE]
-> <sup>1</sup> When you put more than 1,000 mailboxes or 100 sites on hold, the system will automatically scale the eDiscovery legal hold as needed. The system automatically adds data locations to multiple holds, instead of adding them to a single hold. However, the limit of 10,000 case holds per organization still applies. For more information about hold limits, see [Limits in Advanced eDiscovery](limits-ediscovery20.md#hold-limits).
+> <sup>1</sup> When you put more than 1,000 mailboxes or 100 sites on hold, the system will automatically scale the eDiscovery hold as needed. This means the system will automatically add data locations to multiple holds, instead of adding them to a single hold. However, the limit of 10,000 case holds per organization still applies. For more information about hold limits, see [Limits in Advanced eDiscovery](limits-ediscovery20.md#hold-limits).
 <br>
 > <sup>2</sup> When you include TeamsMailbox and YammerMailbox workloads in the CSV file, the group site (TeamSite and YammerSite) are automatically added by default. You don't need to specify TeamsSite and YammerSite separately in the CSV file.
 
