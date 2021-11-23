@@ -1,7 +1,7 @@
 ---
 title: Add SharePoint as a learning content source for Microsoft Viva Learning
 ms.author: daisyfeller
-author: daisyfeller
+author: daisyfell
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
 ms.date: 10/27/2021
@@ -9,13 +9,12 @@ audience: admin
 ms.topic: article
 ms.service: 
 ms.prod: microsoft-365-enterprise
-search.appverid: 
+search.appverid: MET150
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-learning
 localization_priority: medium
 description: Learn how to add SharePoint as a learning content source for Microsoft Viva Learning.
-ROBOTS: NOINDEX, NOFOLLOW
 
 ---
 
@@ -28,7 +27,7 @@ You can configure SharePoint as a learning content source to make your organizat
 
 ## Overview
 
-The knowledge admin (or global administrator) provides a site URL to where the [Learning Service](configure-sharepoint-content-source.md#learning-service) can create an empty centralized location—the Learning App Content Repository—in the form of a structured SharePoint list. This list can be used by your organization to house links to cross-company SharePoint folders that contain learning content. Admins are responsible for collecting and curating a list of URLs for folders. These folders should only include content that can be made available in Viva Learning.
+The knowledge admin (or global administrator) provides a site URL to where the [Learning Service](configure-sharepoint-content-source.md#learning-service) can create an empty centralized location in the form of a structured SharePoint list. This list is called the Learning App Content Repository. Your organization can use this list to house links to cross-company SharePoint folders that contain learning content. Admins are responsible for collecting and curating a list of URLs for folders. These folders should only include content that can be made available in Viva Learning.
 
 Viva Learning supports the following document types:
 
@@ -48,7 +47,7 @@ If you're using [Microsoft 365 Multi-geo](/microsoft-365/enterprise/microsoft-36
 
 Document library folder URLs can be collected from any SharePoint site in the organization. Viva Learning follows all existing content permissions. Therefore, only content for which a user has permission to access is searchable and visible within Viva Learning. Any content within these folders will be searchable, but only content to which the individual employee has permissions can be used.
 
-Content deletion from your organization’s repository is not currently supported.
+Content deletion from your organization's repository is not currently supported.
 
 To remove unintentionally surfaced content, follow these steps:
 
@@ -62,7 +61,7 @@ For more information, see [Sharing and permissions in the SharePoint modern expe
 
 ## Learning Service
 
-The Learning Service uses the provided folder URLs to get metadata from all content stored in those folders. Within 24 hours of supplying the folder URL in the centralized repository, employees can search for and use your organization’s content within Viva Learning. All changes to content, including updated metadata and permissions, will also be applied in the Learning Service within 24 hours.
+The Learning Service uses the provided folder URLs to get metadata from all content stored in those folders. Within 24 hours of supplying the folder URL in the centralized repository, employees can search for and use your organization's content within Viva Learning. All changes to content, including updated metadata and permissions, will also be applied in the Learning Service within 24 hours.
 
 ## Configure SharePoint as a source
 
@@ -76,7 +75,7 @@ To configure SharePoint as a learning content sources in for Viva Learning, foll
 
      ![Settings page in the Microsoft 365 admin center showing Viva Learning listed.](../media/learning/clcs-services.png)
 
-3. On the **Viva Learning** panel, under SharePoint, provide the site URL to the SharePoint site where you want Viva Learning to create a centralized repository. If your SharePoint site is new, you'll need to wait 1 hour after site creation to add it here.
+3. On the **Viva Learning** panel, under SharePoint, provide the site URL to the SharePoint site where you want Viva Learning to create a centralized repository. If your SharePoint site is new, you'll need to wait 1 hour after site creation to add it here. You must also be the owner of the SharePoint site.
 
      ![Learning panel in the Microsoft 365 admin center showing SharePoint selected.](../media/learning/sharepoint-1.png)
 
@@ -96,7 +95,7 @@ To configure SharePoint as a learning content sources in for Viva Learning, foll
 
        ![Learning Content Repository page in SharePoint showing the New option.](../media/learning/learning-sharepoint-configure5.png)
 
-   2. On the **New item** panel, in the **Title** field, add a directory name of your choice. In the **Folder URL** field, add the URL to the learning content folder. Select **Save**.
+   2. On the **New item** panel, in the **Title** field, add a directory name of your choice. In the **Folder URL** field, add the URL to the learning content folder. Select **Save**. [Learn how to to create the folder URL](#folder-url-document-library-curation).
 
        ![New item panel in SharePoint showing the Title and Folder URL fields.](../media/learning/learning-sharepoint-configure6.png)
 
@@ -112,9 +111,28 @@ To configure SharePoint as a learning content sources in for Viva Learning, foll
 
 ### Folder URL document library curation
 
+Create a folder to store learning content for your organization.
+
+1. Go to your Documents library and select **+ New**.
+
+    ![Image of an empty documents library with the cursor selecting New and Folder.](../media/learning/spfolder-3.png)
+
+2. Choose **Folder** and enter a folder name.
+
+    ![Image of the Create a folder pane with the name Training Materials entered.](../media/learning/spfolder-5.png)
+
+3. Select **Create**. The folder will now show up in your document library.
+
+    ![Image of a folder called Training Materials in the document library.](../media/learning/spfolder-6.png)
+
+4. Upload files that you want to publish as learning content in this folder.
+5. To get the folder url, choose this folder and select **Copy link**.
+
+    ![Image of the Link copied popup.](../media/learning/spfolder-8.png)
+
 Default metadata (such as modified date, created by, document name, content type, and organization name) is automatically pulled into Viva Learning by the Microsoft Graph API.
 
-To improve overall discovery and search relevance of the content, we recommend adding a **Description** column.
+To improve overall discovery and search relevance of the content, we recommend adding a **Description** column. If there's already a description column present, you can delete it and add a new one by following the steps below.
 
 To add a **Description** column to the document library page, follow these steps:
 
@@ -122,11 +140,11 @@ To add a **Description** column to the document library page, follow these steps
 
 2. Select the **Show actions** option, and then select **Single line of text**.
 
-     ![Documents page in SharePoint showing the Show actions options with Single line of text highlighted.](../media/learning/learning-sharepoint-curation1.png)
+    :::image type="content" alt-text="Documents page in SharePoint showing the Show actions options with Single line of text highlighted." source="../media/learning/learning-sharepoint-curation1.png":::
 
 3. On the **Create a column** panel, in the **Name** field, add a descriptive name for the column. Select **Save**.
 
-     ![Create a column panel in SharePoint showing the Name and other fields.](../media/learning/learning-sharepoint-curation2.png)
+    ![Create a column panel in SharePoint showing the Name and other fields.](../media/learning/learning-sharepoint-curation2.png)
 
 4. On the **Documents** page, in the **Description** column, add custom descriptions for each item. If no description is supplied, Viva Learning will provide a default message that highlights the content as being from your own SharePoint library.
 
@@ -134,18 +152,18 @@ To add a **Description** column to the document library page, follow these steps
 
 ### Provide your own organization's content
 
-Knowledge admins can access their organization’s Learning App Content Repository in SharePoint, where they can provide references to cross-organization document libraries. Content within these libraries will be then surfaced as learning content in Viva Learning.
+Knowledge admins can access their organization's Learning App Content Repository in SharePoint, where they can provide references to cross-organization document libraries. Content within these libraries will be then surfaced as learning content in Viva Learning.
 
 1. In Viva Learning, select the ellipses (**...**), and then select **Settings**.
 
-     ![SharePoint library page showing the More options and Settings option.](../media/learning/sharepoint-3.png)
+    ![SharePoint library page showing the More options and Settings option.](../media/learning/sharepoint-3.png)
   
 2. Under **Settings**, select **Permissions**.
 
-     ![Settings option page in SharePoint showing the Permissions and Check access options.](../media/learning/learning-sharepoint-library-2.png)
+    ![Settings option page in SharePoint showing the Permissions and Check access options.](../media/learning/learning-sharepoint-library-2.png)
 
-3. Select **Check access** to connect to your organization’s centralized library.
+3. Select **Check access** to connect to your organization's centralized library.
 
 ## Next step
 
-[Add other content providers for Microsoft Viva Learning](configure-other-content-sources.md)
+[Add learning management systems for Viva Learning](configure-lms.md) or [Add other content providers for Microsoft Viva Learning](configure-other-content-sources.md).

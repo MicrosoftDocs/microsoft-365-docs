@@ -37,12 +37,12 @@ Retrieves specific [Alert](alerts.md) by its ID.
 
 ## Limitations
 
-1. You can get alerts last updated according to your configured retention period.
-2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+- You can get alerts last updated according to your configured retention period.
+- Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md).
 
 Permission type|Permission|Permission display name
 :---|:---|:---
@@ -75,4 +75,4 @@ Empty
 
 ## Response
 
-If successful, this method returns 200 OK, and the [alert](alerts.md) entity in the response body. If alert with the specified id was not found - 404 Not Found.
+If successful, this method returns 200 OK, and the [alert](alerts.md) entity in the response body. If alert with the specified ID was not found - 404 Not Found.

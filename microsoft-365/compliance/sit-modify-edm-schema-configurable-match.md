@@ -93,8 +93,7 @@ Exact Data Match (EDM) based classification enables you to create custom sensiti
     - A-Z
     - a-z
     - \"
-    - \,
-    - |
+    - \,    
 
 6. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
@@ -125,9 +124,9 @@ Exact Data Match (EDM) based classification enables you to create custom sensiti
 
 ## Related articles
 
-- [Create a custom sensitive information type with Exact Data Match based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [Sensitive information type-entity definitions](sensitive-information-type-entity-definitions.md)
 - [Custom sensitive information types](./sensitive-information-type-learn-about.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
-- [Microsoft Cloud App Security](/cloud-app-security)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)

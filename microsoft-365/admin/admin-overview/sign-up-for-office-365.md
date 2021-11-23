@@ -22,6 +22,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_signup
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
