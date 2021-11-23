@@ -31,24 +31,19 @@ ms.technology: m365d
 
 Protecting your environment requires taking inventory of the devices that are in your network. However, mapping devices in a network can often be expensive, challenging, and time-consuming.
 
-Microsoft Defender for Endpoint provides a device discovery capability that helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes. Unmanaged devices can include:
+Microsoft Defender for Endpoint provides a device discovery capability that helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes.
+
+Unknown and unmanaged devices, introduce significant risks to your network. Whether it's unpatched printer, a network devices with weak security configuration, or a server with no security controls. Device discovery use onboarded endpoints in your network to collect, probe or scan your network to discover unmanaged devices. Unmanaged devices can include:
 
 - laptops, workstations and servers not yet onboarded
-- network devices such as routers
-- IoT devices such as printers and cameras
+- network devices, such as, routers
+- IoT devices like printers and cameras
 
-Device discovery use onboarded endpoints to collect, probe or scan your network to discover unmanaged devices. 
+Once devices are discovered, you can reduce the attack surface by identifying and assessing vulnerabilities, and detecting configuration gaps. For applicable devices, you can onboard them to the service, automatically increasing security visibility into them.
 
-Unknown and unmanaged devices, introduce significant risks to your network. Whether it's unpatched printer, a network devices with weak security configuration, or a server with no security controls.
+Use the FAQ page to learn more about the technology and the different things our customer care about.
 
-Device discovery allows you to look at any device in your network to find those devices that are not protected today by the platform, identify vulnerabilities, detect configuration gaps and reduce attack surface.
-
-Once devices are discovered you can then:
-- Identify and assess vulnerabilities and protect
-- Detect configuration gaps and reduce attack surface
-- Onboard applicable devices to the service to increase the security visibility on them
-
-Take the next step to get complete visibility into your devices in the network by enabling Standard Discovery and configuring network device assessment jobs! Use the FAQ page to learn more about the technology and the different things our customer care about.
+Take the next step to get complete visibility into your devices in the network by enabling Standard Discovery and configuring network device assessment jobs!
 
 Watch this video for a quick overview of how device discovery:
 
