@@ -30,7 +30,7 @@ sections:
 
       - question: What are the differences between Defender for Business and Defender for Endpoint Plans 1 and 2?
         answer: |
-          See [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md).
+          Defender for Business was designed for small and medium-sized businesses (up to 300 employees). Both Defender for Business and Defender for Endpoint provide strong threat protection capabilities for your company's endpoints. To learn more about the differences, see [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md).
 
       - question: How do I sign up for the preview of Defender for Business?
         answer: |
