@@ -51,7 +51,7 @@ To view the details about a custodian, click the custodian from the list on the 
 
   ![Custodian data locations and hold information.](../media/CustodianHoldDetails.PNG)
 
-  - **Data locations**. Shows the count and type of data sources (mailboxes, sites, and Teams) that are associated with the custodian and are part of the case.
+  - **Custodial locations**. Shows the count and type of data sources (mailboxes, sites, and Teams) that are associated with the custodian and are part of the case.
 
     - Each data location shows its hold status. Possible values for hold stats: **On hold**, **Not on hold**, and **In progress**.
 
@@ -59,7 +59,7 @@ To view the details about a custodian, click the custodian from the list on the 
 
 ## Edit a custodian
 
-As your case progresses, you may discover that there may be additional data sources relevant to a specific custodian & your case. In other scenarios, you may want to remove certain data sources that have been reviewed and deemed as not relevant.
+As your case progresses, you may discover that there may be additional data sources relevant to a specific custodian and the case. In other scenarios, you may want to remove certain data sources that have been reviewed and deemed as not relevant.
 
 To update the data sources that are associated with a custodian:
 
