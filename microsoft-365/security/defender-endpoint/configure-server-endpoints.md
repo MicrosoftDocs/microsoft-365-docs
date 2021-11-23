@@ -142,6 +142,13 @@ Verify that Microsoft Defender Antivirus is installed, is active and up to date.
 
 To receive regular product improvements and fixes for the EDR Sensor component, ensure Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) gets applied or approved. In addition, to keep protection components updated, see [Manage Microsoft Defender Antivirus updates and apply baselines](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
 
+### Onboarding summary
+
+- STEP 1: Download the installation and onboarding packages
+- STEP 2: Apply the installation package
+- STEP 3: Apply the onboarding package 
+
+
 ### STEP 1: Download installation and onboarding packages
 
 You will need to download both the **installation** and **onboarding** packages from the portal.
@@ -241,27 +248,6 @@ You can also use the [installer script](server-migration.md#installer-script) to
 
 12. To link the GPO to an Organization Unit (OU), right-click and select **Link an existing GPO**. In the dialogue box that is displayed, select the Group Policy Object that you wish to link. Click **OK**.
 
-> [!TIP]
-> After onboarding the device, you can choose to run a detection test to verify that the device is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint device](run-detection-test.md).
-
-
-
-## Windows Server Semi-Annual Enterprise Channel and Windows Server 2019 and Windows Server 2022
-
-The onboarding package for Windows Server 2019 and Windows Server 2022 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
-
-### Download package
-
-1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
-
-2. Select **Windows Server 1803 and 2019**.
-
-3. Select **Download package**. Save it as WindowsDefenderATPOnboardingPackage.zip.
-
-4. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
-
-
-
 ## STEP 3: Onboarding steps
 
 1. Now that you have downloaded the required onboarding packages use the guidance listed in [onboarding tools and methods](configure-endpoints.md#endpoint-onboarding-tools) for your server.
@@ -294,6 +280,28 @@ The onboarding package for Windows Server 2019 and Windows Server 2022 through M
 Data collected by Defender for Endpoint is stored in the geo-location of the tenant as identified during provisioning.
 > - If you use Defender for Endpoint before using Microsoft Defender for Cloud, your data will be stored in the location you specified when you created your tenant even if you integrate with Microsoft Defender for Cloud at a later time.
 > - Once configured, you cannot change the location where your data is stored. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant.
+
+
+
+
+
+## Windows Server Semi-Annual Enterprise Channel and Windows Server 2019 and Windows Server 2022
+
+The onboarding package for Windows Server 2019 and Windows Server 2022 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
+
+### Download package
+
+1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
+
+2. Select **Windows Server 1803 and 2019**.
+
+3. Select **Download package**. Save it as WindowsDefenderATPOnboardingPackage.zip.
+
+4. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
+
+
+
+
 
 ## Verify the onboarding and installation
 
