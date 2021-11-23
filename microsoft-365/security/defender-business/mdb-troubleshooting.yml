@@ -32,16 +32,10 @@ sections:
 
           Suppose that Lee has been using Microsoft Endpoint Manager to manage devices and security settings. Lee has recently started using Microsoft Defender for Business. Lee has chosen to use the simplified configuration process in Defender for Business. Now, Lee sees policy conflicts in Microsoft Endpoint Manager and in the Microsoft 365 Defender portal. 
 
-      - question: Resolve policy conflicts
-        answer: |
-
           To resolve policy conflicts, take one or more of the following actions:
 
           - Delete your existing policies in Microsoft Endpoint Manager
           - See [Troubleshoot policies in Microsoft Intune](/troubleshoot/mem/intune/troubleshoot-policies-in-microsoft-intune)
-
-      - question: Learn more about policy settings
-        answer: |
 
           See the following articles to learn more about your security policies and settings in Defender for Business:
 
@@ -54,6 +48,41 @@ sections:
           If you were using the simplified configuration process in Defender for Business and something went wrong, you can still configure your security settings and policies manually.
 
           See [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md).
+
+      - question: There's an integration issue between Defender for Business and Microsoft Endpoint Manager.
+        answer: |
+
+          During your setup and configuration process, you might see an error message that says:
+
+          *Something went wrong, and we couldn't complete your setup process. There's an integration issue between Defender for Business and Microsoft Endpoint Manager.*
+
+          The error message means that a configuration channel must be established between Defender for Business and Microsoft Endpoint Manager. To resolve the issue, use the following procedures:
+
+          Part 1: Turn on the Microsoft Intune connection in the Microsoft 365 Defender portal 
+
+          1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+
+          2. Choose **Settings** > **Endpoints**. Then, under **General**, select **Advanced features**.
+
+          3. Scroll down to **Microsoft Intune connection**, and make sure it is turned on.
+
+          Part 2: Set the enforcement scope for Defender for Business
+
+          1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
+
+          2. Choose **Settings** > **Endpoints**. Under **Configuration management**, select **Enforcement scope**.
+
+          3. Under **OS platform**, turn on **Windows Client devices**.
+
+          4. Select **Save**.
+
+          Part 3: Turn on Endpoint Security Profile settings in Microsoft Endpoint Manager
+
+          1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com]https://endpoint.microsoft.com)) and sign in.
+
+          2. Select **Endpoint security**, and then, under **Setup**, select **Microsoft Defender for Endpoint**.
+
+          3. Under **Endpoint Security Profile Settings (Preview)**, set **Allow Microsoft Defender for Endpoint to enforce Endpoint Security Configurations (Preview)** to **On**.
 
 additionalContent: |
  ## See also
