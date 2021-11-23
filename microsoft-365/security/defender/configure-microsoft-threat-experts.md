@@ -91,7 +91,7 @@ You can contact Microsoft Threat Experts from inside the Microsoft 365 Defender 
 > [!NOTE]
 >
 > - Alert inquiries related to your organization's customized threat intelligence data are not currently supported. Consult with your security operations or incident response team for details.
-> - You need to have the **Manage security settings in Security Center** permission in the Microsoft 365 Defender portal to submit an inquiry through the **Consult a threat expert** form.
+> - You need to have the **Manage security settings in security center** permission in the Microsoft 365 Defender portal to submit an inquiry through the **Consult a threat expert** form.
 
 1. Navigate to the portal page related to the information that you'd like to investigate: for example, **Device**, **Alert**, or **Incident**. Make sure that the portal page related to your inquiry is in view before you send an investigation request.
 
