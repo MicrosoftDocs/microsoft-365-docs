@@ -58,7 +58,7 @@ sections:
 
           The error message means that a configuration channel must be established between Defender for Business and Microsoft Endpoint Manager. Something has gone wrong with integration. To resolve the issue, use the following three procedures:
 
-          Procedure 1: Turn on the Microsoft Intune connection in the Microsoft 365 Defender portal 
+          **Procedure 1: Turn on the Microsoft Intune connection in the Microsoft 365 Defender portal** 
 
           1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
@@ -66,7 +66,7 @@ sections:
 
           3. Scroll down to **Microsoft Intune connection**, and make sure it is turned on.
 
-          Procedure 2: Set the enforcement scope for Defender for Business
+          **Procedure 2: Set the enforcement scope for Defender for Business**
 
           1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
@@ -76,7 +76,7 @@ sections:
 
           4. Select **Save**.
 
-          Procedure 3: Turn on Endpoint Security Profile settings in Microsoft Endpoint Manager
+          **Procedure 3: Turn on Endpoint Security Profile settings in Microsoft Endpoint Manager**
 
           1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com]https://endpoint.microsoft.com)) and sign in.
 
