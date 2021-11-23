@@ -52,7 +52,7 @@ You'll need to complete the following general steps to successfully onboard serv
 **Windows Server 2012 R2 and Windows Server 2016 (Preview)**
 
 - Download installation and onboarding packages
-- Install application
+- Apply the installation package
 - Follow the onboarding steps for the corresponding tool
 
 **Windows Server Semi-Annual Enterprise Channel and Windows Server 2019**
