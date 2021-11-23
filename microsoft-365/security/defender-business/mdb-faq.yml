@@ -30,7 +30,9 @@ sections:
 
       - question: What are the differences between Defender for Business and Defender for Endpoint Plans 1 and 2?
         answer: |
-          Defender for Business was designed for small and medium-sized businesses (up to 300 employees). Both Defender for Business and Defender for Endpoint provide strong threat protection capabilities for your company's endpoints. To learn more about the differences, see [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md).
+          Defender for Business was designed for small and medium-sized businesses (up to 300 employees). With a [simplified configuration process](mdb-simplified-configuration.md) and several device onboarding options, Defender for Business enables customers who do not necessarily have a security background to set up, configure, and use Defender for Business.  
+          
+          Both Defender for Business and Defender for Endpoint provide strong threat protection capabilities for your company's endpoints. To learn more about the differences, see [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md).
 
       - question: How do I sign up for the preview of Defender for Business?
         answer: |
@@ -51,6 +53,11 @@ sections:
           When Microsoft Defender for Business reaches general availability (GA), it will be included in Microsoft 365 Business Premium.
 
           For customers who do not have Microsoft 365 Business Premium, Defender for Business will be available as a standalone plan. 
+
+      - question: If I am already using Microsoft 365 Business Premium, why do I need Defender for Business?
+        answer: |
+           Microsoft 365 Business Premium currently includes Microsoft Defender Antivirus, next-generation protection for Windows devices. Defender for Business extends these capabilities with threat & vulnerability management, attack surface reduction capabilities, endpoint detection and response, and automated investigation and remediation. [Learn more about Defender for Business](mdb-overview.md).
+          
 
 additionalContent: |
  ## See also
