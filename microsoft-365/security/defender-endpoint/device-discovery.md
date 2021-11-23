@@ -1,6 +1,6 @@
 ---
 title: Device discovery overview
-description: Learn how to leverage endpoint discovery in Microsoft 365 Defender to find unmanaged devices in your network
+description: Learn how to apply endpoint discovery in Microsoft 365 Defender to find unmanaged devices in your network
 keywords: device discovery, discover, passive, proactive, network, visibility, server, workstation, onboard, unmanaged devices
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -29,15 +29,24 @@ ms.technology: m365d
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Protecting your environment requires taking inventory of the devices that are in your network. However, mapping devices in a network can often be expensive, challenging, and time-consuming._
+Protecting your environment requires taking inventory of the devices that are in your network. However, mapping devices in a network can often be expensive, challenging, and time-consuming.
 
-Microsoft Defender for Endpoint provides a device discovery capability that helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes. Unmanaged devices can be laptops, workstations and servers not onboarded to, as well network devices, such as routers, and IoT devices, such as, printers and cameras.
+Microsoft Defender for Endpoint provides a device discovery capability that helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes. Unmanaged devices can include:
 
-Unmanaged devices introduce significant risks to your network. Whether it's unpatched printer, a network devices with weak security configuration, or a server that was left behind without any security controls. Device discovery use onboarded endpoints to collect, probe or scan your network to discover unmanaged devices. Once devices are discovered you can then:
+- laptops, workstations and servers not yet onboarded
+- network devices such as routers
+- IoT devices such as printers and cameras
 
+Device discovery use onboarded endpoints to collect, probe or scan your network to discover unmanaged devices. 
+
+Unknown and unmanaged devices, introduce significant risks to your network. Whether it's unpatched printer, a network devices with weak security configuration, or a server with no security controls.
+
+Device discovery allows you to look at any device in your network to find those devices that are not protected today by the platform, identify vulnerabilities, detect configuration gaps and reduce attack surface.
+
+Once devices are discovered you can then:
 - Identify and assess vulnerabilities and protect
 - Detect configuration gaps and reduce attack surface
-- Onboard applicable devices to the service to increase the security visibility on them__
+- Onboard applicable devices to the service to increase the security visibility on them
 
 Take the next step to get complete visibility into your devices in the network by enabling Standard Discovery and configuring network device assessment jobs! Use the FAQ page to learn more about the technology and the different things our customer care about.
 
