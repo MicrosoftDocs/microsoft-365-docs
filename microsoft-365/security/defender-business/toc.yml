@@ -53,10 +53,10 @@
         href: mdb-firewall.md
     - name: Reference information
       items: 
+      - name: How to get help or contact support
+        href: mdb-get-help.md
       - name: Frequently asked questions
         href: mdb-faq.yml
       - name: Troubleshooting
         href: mdb-troubleshooting.yml
-      - name: How to get help or contact support
-        href: mdb-get-help.md
 
