@@ -63,7 +63,7 @@ You'll need to take the following steps:
 
    ![Image of WindowsDefenderATPOnboarding file.](images/plist-onboarding-file.png)
 
-2. Login to Jamf Pro and navigate t0 **Computers** > **Configuration Profiles** and click **New**
+2. Sign in to Jamf Pro, navigate to **Computers** > **Configuration Profiles**, and select **New**.
 
     ![Image of creating a new Jamf Pro dashboard.](images/jamf-pro-configure-profile.png)
 
