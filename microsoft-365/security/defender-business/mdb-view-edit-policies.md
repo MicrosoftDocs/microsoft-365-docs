@@ -62,7 +62,7 @@ In Microsoft Defender for Business, security settings are configured through pol
 
    - To keep the selected device group as it is, choose **Next**.
    - To remove a device group from the policy, select **Remove**.
-   - To set up a new device group, select **Create new group**, and then set up your device group. (To get help with this task, see [Add or remove devices from a group](mdb-manage-devices.md#add-or-remove-devices-from-a-group).)
+   - To set up a new device group, select **Create new group**, and then set up your device group. (To get help with this task, see [Device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).)
    - To apply the policy to another device group, select **Use existing group**.
 
    After you have specified which device groups should receive the policy, choose **Next**.
