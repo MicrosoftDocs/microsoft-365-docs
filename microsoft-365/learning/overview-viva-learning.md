@@ -10,7 +10,7 @@ ms.topic: article
 ms.custom: intro-overview
 ms.service: 
 ms.prod: microsoft-365-enterprise
-search.appverid: 
+search.appverid: MET150
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-learning
@@ -30,19 +30,19 @@ Viva Learning makes it easy to create learning and growing opportunities for you
 
 ### Everyone
 
-Viva Learning makes it easy to incorporate learning into your day. When you open Viva Learning in Microsoft Teams, you’ll see a personalized view of learning content from both your organization and partners such as LinkedIn Learning. As you continue to search for and complete more training, your recommended content will update to reflect your interests.
+Viva Learning makes it easy to incorporate learning into your day. When you open Viva Learning in Microsoft Teams, you'll see a personalized view of learning content from both your organization and partners such as LinkedIn Learning. As you continue to search for and complete more training, your recommended content will update to reflect your interests.
 
 - Easily find learning opportunities provided by your organization.
 - Browse courses from Microsoft and third-party content providers.
 - Search for specific learning content that appeals to you or supports your career goals.
 - Share relevant, interesting, and important learning content with your team members or groups in a Microsoft Teams chat or channel.
 - Organize your custom selections of learning content in Microsoft Teams channels and tabs.
-- Bookmark courses you’re interested in.
+- Bookmark courses you're interested in.
 - Play LinkedIn Learning courses in the embedded player without leaving Microsoft Teams.
 
 ### Managers
 
-Keep your team engaged and up to date with necessary skills without the need to coordinate learning across platforms. You can recommend learning content to individuals, share content with your team, and track the reported completion status of learning that you’ve recommended.
+Keep your team engaged and up to date with necessary skills without the need to coordinate learning across platforms. You can recommend learning content to individuals, share content with your team, and track the reported completion status of learning that you've recommended.
 
 ## Admin roles
 
@@ -54,7 +54,7 @@ Viva Learning is by default available in Microsoft Teams with some content alrea
 
 ### Knowledge admin
 
-The knowledge admin is a new Azure Active Directory (Azure AD) role in the Microsoft 365 admin center that can be assigned to anyone in the organization. This role manages the organization’s learning content sources through the Microsoft 365 admin center. For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference#knowledge-administrator).
+The knowledge admin is a new Azure Active Directory (Azure AD) role in the Microsoft 365 admin center that can be assigned to anyone in the organization. This role manages the organization's learning content sources through the Microsoft 365 admin center. For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference#knowledge-administrator).
 
 The knowledge admin should be moderately technical and have existing SharePoint administrator credentials. The knowledge admin should be well versed in the education, learning, training, or employee experience part of the organization.
 
@@ -64,7 +64,75 @@ Content from Microsoft Learn and Microsoft 365 Training is automatically availab
 
 ## Supported languages
 
-Viva Learning adapts to your organization's Microsoft 365 language preferences. However, Viva Learning doesn't currently support right-to-left languages.
+Viva Learning adapts to your organization's Microsoft 365 language preferences. However, Viva Learning doesn't currently support right-to-left languages. Currently, Viva Learning is supported in the following locales:
+
+:::row:::
+   :::column span="":::
+      - az-Latn-AZ
+      - bg-BG
+      - bn-IN
+      - ca-ES
+      - ca-Es-VALENCIA
+      - cs-CZ
+      - cy-GB
+      - da-DK
+      - de-DE
+      - el-GR
+      - en-GB
+      - en-US
+      - es-ES
+      - es-MX
+   :::column-end:::
+   :::column span="":::
+      - et-EE
+      - eu-ES
+      - fi-FI
+      - fil-PH
+      - fr-CA
+      - fr-FR
+      - gl-ES
+      - gu-IN
+      - hi-IN
+      - hr-HR
+      - hu-HU
+      - id-ID
+      - is-IS
+      - it-IT
+   :::column-end:::
+   :::column span="":::
+      - ja-JP
+      - ka-GE
+      - kk-KZ
+      - kn-IN
+      - ko-KR
+      - lt-LT
+      - lv-LV
+      - mk-MK
+      - ml-IN
+      - mr-IN
+      - nb-NO
+      - nl-NL
+      - nn-NO
+      - pl-PL
+   :::column-end:::
+   :::column span="":::
+      - pt-BR
+      - pt-PT
+      - ro-RO
+      - ru-RU
+      - sk-SK
+      - sl-SI
+      - sq-AL
+      - sr-Latn-RS
+      - sv-SE,ta-IN
+      - te-IN,th-TH
+      - tr-TR
+      - uk-UA
+      - vi-VN
+      - zh-CN
+      - zh-TW
+   :::column-end:::
+:::row-end:::
 
 ## Data and privacy
 
@@ -84,7 +152,7 @@ Data stored from Viva Learning includes:
 
 ## Get started
 
-When you’re ready to set up and configure Viva Learning in your Microsoft 365 environment:
+When you're ready to set up and configure Viva Learning in your Microsoft 365 environment:
 
 - Use the Microsoft Teams admin center to [manage Viva Learning across your organization](set-up-viva-learning.md).
 - Use the Microsoft 365 admin center to [configure learning sources available to specific groups](content-sources-365-admin-center.md).

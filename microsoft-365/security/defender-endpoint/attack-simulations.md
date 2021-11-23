@@ -9,7 +9,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: maccruz
-author: lomayor
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro

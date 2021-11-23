@@ -64,7 +64,7 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 
 
 - **Microsoft 3655 eDiscovery** supports the use of named entities in Substrate services.
-- **Microsoft Cloud App Security (MCAS)** supports the use of named entities in MCAS policies.
+- **Microsoft Defender for Cloud Apps** supports the use of named entities in Defender for Cloud Apps policies.
 - **Insider Risk Management** supports the use of named entities in Substrate services.
 - **Communication Compliance** doesn't support the use of named entities in Exchange transport rules and data-at-rest.
 - **Microsoft Information Governance** (MIG) doesn't support the use of named entities in Exchange transport rules and data-at-rest.
@@ -83,7 +83,7 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 |SharePoint Online data-at-rest     |supported         |
 |Teams data-at-rest     |supported         |
 |Email messages data-at-rest     |not supported         |
-|Microsoft Cloud App Security (MCAS)     |supported         |
+|Microsoft Defender for Cloud Apps     |supported         |
 
 ### Autolabeling
 
@@ -99,11 +99,11 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 |SharePoint Online data-at-rest|supported|
 |Azure Information Protection (AIP) scanner|not supported|
 
-## Known issues 
+## Known issues
 
 |Issue  |Impact  |
 |---------|---------|
-|DLP Policy tips (OWA, Outlook, Office Win32 clients)     |   Policy tips with entity condition will result in “no match”      |
+|DLP Policy tips (OWA, Outlook, Office Win32 clients)     |   Policy tips with entity condition will result in "no match"      |
 | Asian language support for person name (Chinese, Japanese, Korean)    | Named entities supported for Latin-based character set only (that is, kanji is not supported) for person name        |
 |Devices workload (Endpoint)     | Not supported as a workload – authoring policy with named entities will not be allowed        |
 |On-premises repositories    | Not supported as a workload|

@@ -13,9 +13,7 @@ search.appverid:
   - MET150
   - MOE150
 ms.assetid:
-ms.collection:
-  - M365-security-compliance
-  - m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.custom:
   - seo-marvel-apr2020
 description: Admins can learn about deployment considerations and frequently asked questions regarding Attack simulation and training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
@@ -150,7 +148,7 @@ Managing a large CSV file or adding many individual recipients can be cumbersome
 
 ### Q: Does Microsoft provide payloads in other languages?
 
-A: Currently, there are 5 localized payloads available. We've noticed that any direct or machine translations of existing payloads to other languages will lead to inaccuracies and decreased relevance.
+A: Currently, there are 40+ localized payloads available in 10+ languages: Chinese (Simplified), Chinese (Traditional), English, French, German, Italian, Japanese, Korean, Portuguese, Russian, Spanish and Dutch. We've noticed that any direct or machine translations of existing payloads to other languages will lead to inaccuracies and decreased relevance.
 
 That being said, you can create your own payload in the language of your choice using the custom payload authoring experience. We also strongly recommend that you harvest existing payloads that were used to target users in a specific geography. In other words, let the attackers localize the content for you.
 
