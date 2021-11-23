@@ -56,7 +56,7 @@ With an Azure subscription selected, you'll have the option to add a network sen
 
 Under **Set up network sensors** choose the **Microsoft Defender for IoT** link. This brings you to the Onboard sensor setup process in the Azure portal. For more information, see [Manage sensors with Defender for IoT in the Azure portal](https://docs.microsoft.com/azure/defender-for-iot/organizations/how-to-manage-sensors-on-the-cloud).
 
-You can turn off the Azure subscription integration from the Microsoft Defender for IoT settings page. Once you turn off the subscription, you'll no longer see IoT devices discovered by Microsoft Defender for IoT in the Microsoft Defender for Endpoint device inventory.
+You can turn off the Azure subscription integration from the Microsoft Defender for IoT settings page in the [https://security.microsoft.com](https://security.microsoft.com/) portal. Once you turn off the subscription, you'll no longer see IoT devices discovered by Microsoft Defender for IoT in the Microsoft Defender for Endpoint device inventory.
 
 ## See also
 
