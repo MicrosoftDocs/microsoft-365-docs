@@ -24,6 +24,8 @@ Viva Learning is enabled by default for all Microsoft Teams users in your organi
 
 To allow or block specific users in your organization from using Viva Learning, make sure Viva Learning is turned on for your organization on the **Manage apps** page in the Microsoft Teams admin center. Then create a custom app permission policy and assign it to those users. For more information, see [Manage app permission policies in Teams](/microsoftteams/teams-app-permission-policies).
 
-## Next step
+## Next steps
 
 [Manage content sources for Viva Learning in the Microsoft 365 admin center](content-sources-365-admin-center.md)
+
+[Configure how content shows up in Viva Learning](use-tabs.md)
