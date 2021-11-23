@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 11/11/2021
+ms.date: 11/23/2021
 ms.prod: m365-security
 ms.technology: mde
 localization_priority: Normal
@@ -37,7 +37,7 @@ When it comes to managing your security settings and policies, you can choose fr
 
 | Option | Description |
 |:---|:---|
-| **Use the default security settings and policies in the Microsoft 365 Defender portal** (recommended) | Defender for Business was designed for the busy small or medium-sized business in mind. The default security settings and policies in Defender for Business are designed to protect your company's devices from day one.<br/><br/>You can use the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) to view and manage your security settings and policies.<br/><br/>To learn more, see [View or edit device policies](mdb-view-edit-policies.md). |
+| **Use the default security settings and policies in the Microsoft 365 Defender portal** (*recommended*) | Defender for Business was designed for the busy small or medium-sized business in mind. The default security settings and policies in Defender for Business are designed to protect your company's devices from day one.<br/><br/>You can use the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) to view and manage your security settings and policies.<br/><br/>To learn more, see [View or edit device policies](mdb-view-edit-policies.md). |
 | **Use Microsoft Endpoint Manager** | If your company is using Microsoft Endpoint Manager to manage security settings and policies, you can continue using Endpoint Manager and apply security policies and settings to some or all devices. To learn more, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>Consider switching to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md). If you make the switch, you'll be prompted to delete any existing security policies in Microsoft Endpoint Manager before proceeding with the simplified configuration process in Defender for Business. Deleting your policies in Microsoft Endpoint Manager helps avoid policy conflicts later. |
 
 > [!TIP]
