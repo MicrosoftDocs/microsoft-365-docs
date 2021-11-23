@@ -15,6 +15,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-endpointprotect
   - m365solution-scenario
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
 ---
@@ -75,7 +76,7 @@ To gain access into which licenses are provisioned to your company, and to check
 
 Onboarding to Microsoft Defender for Endpoint is easy. From the navigation menu, select any item under the Endpoints section, or any Microsoft 365 Defender feature such as Incidents, Hunting, Action center, or Threat analytics to initiate the onboarding process.
 
-From a web browser, navigate to the [Microsoft 365 Security Center](https://security.microsoft.com).
+From a web browser, navigate to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 ## Network configuration
 
@@ -156,8 +157,7 @@ Down-Level devices include Windows 7 SP1 and Windows 8.1 workstations as well as
 
 ### Proxy Service URLs
 
-URLs that include v20 in them are only needed if you have Windows 10, version 1803 or Windows 11 devices. For example, `us-v20.events.data.microsoft.com` is only
-needed if the device is on Windows 10, version 1803 or Windows 11.
+URLs that include v20 in them are only needed if you have Windows 10, version 1803 or Windows 11 devices. For example, `us-v20.events.data.microsoft.com` is only needed if the device is on Windows 10, version 1803 or Windows 11.
 
 If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender for Endpoint sensor is connecting from system context, make sure anonymous traffic is permitted in the listed URLs.
 

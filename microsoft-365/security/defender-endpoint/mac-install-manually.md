@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -43,7 +44,7 @@ Before you get started, see [the main Microsoft Defender for Endpoint on macOS p
 
 Download the installation and onboarding packages from Microsoft 365 Defender portal:
 
-1. In Microsoft 365 Defender portal, go to **Settings > Endpoints > Device management > Onboarding**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Settings > Endpoints > Device management > Onboarding**.
 2. In Section 1 of the page, set operating system to **macOS** and Deployment method to **Local script**.
 3. In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.

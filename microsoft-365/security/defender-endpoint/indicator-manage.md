@@ -51,6 +51,9 @@ Download the sample CSV to know the supported column attributes.
 
 5. Select **Done**.
 
+> [!NOTE]
+> Only 500 indicators can be uploaded for each batch.
+
 The following table shows the supported parameters.
 
 Parameter|Type|Description

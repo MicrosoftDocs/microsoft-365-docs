@@ -15,9 +15,7 @@ author: schmurky
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
 ---
@@ -32,7 +30,7 @@ ms.technology: m365d
 
 
 
-The `CloudAppEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about activities in various cloud apps and services covered by Microsoft Cloud App Security. For a complete list, jump to [Apps and services covered](#apps-and-services-covered). Use this reference to construct queries that return information from this table. 
+The `CloudAppEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about activities in various cloud apps and services covered by Microsoft Defender for Cloud Apps. For a complete list, jump to [Apps and services covered](#apps-and-services-covered). Use this reference to construct queries that return information from this table. 
 
 >[!IMPORTANT]
 >This table includes information that used to be available in the `AppFileEvents` table. Starting March 7, 2021, users hunting through file-related activities in cloud services on and beyond this date should use the `CloudAppEvents` table instead. <br><br>Make sure to search for queries and custom detection rules that still use the `AppFileEvents` table and edit them to use the `CloudAppEvents` table. More guidance about converting affected queries can be found in [Hunt across cloud app activities with Microsoft 365 Defender advanced hunting](https://techcommunity.microsoft.com/t5/microsoft-365-defender/hunt-across-cloud-app-activities-with-microsoft-365-defender/ba-p/1893857).
@@ -70,7 +68,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `IsImpersonated` | boolean | Indicates whether the activity was performed by one user on behalf of another (impersonated) user | 
 | `IPTags` | dynamic | Customer-defined information applied to specific IP addresses and IP address ranges | 
 | `IPCategory` | string | Additional information about the IP address | 
-| `UserAgentTags` | dynamic | More information provided by Microsoft Cloud App Security in a tag in the user agent field. Can have any of the following values: Native client, Outdated browser, Outdated operating system, Robot | 
+| `UserAgentTags` | dynamic | More information provided by Microsoft Defender for Cloud Apps in a tag in the user agent field. Can have any of the following values: Native client, Outdated browser, Outdated operating system, Robot | 
 
 ## Apps and services covered
 
