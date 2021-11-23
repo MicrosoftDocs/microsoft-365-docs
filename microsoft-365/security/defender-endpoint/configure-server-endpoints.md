@@ -142,11 +142,11 @@ Verify that Microsoft Defender Antivirus is installed, is active and up to date.
 
 To receive regular product improvements and fixes for the EDR Sensor component, ensure Windows Update [KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) gets applied or approved. In addition, to keep protection components updated, see [Manage Microsoft Defender Antivirus updates and apply baselines](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions).
 
-### Onboarding summary
+### Onboarding steps summary
 
 - STEP 1: Download the installation and onboarding packages
 - STEP 2: Apply the installation package
-- STEP 3: Apply the onboarding package 
+- STEP 3: Follow the onboarding steps 
 
 
 ### STEP 1: Download installation and onboarding packages
@@ -189,9 +189,9 @@ In the previous section, you downloaded an installation package. The installatio
 You can use any of the following options to install the agent:
 - [Install using the command line](#install-microsoft-defender-for-endpoint-using-the-command-line)
 - [Install using a script](#install-microsoft-defender-for-endpoint-using-a-script)
-- [Install using Group Policy](#install-microsoft-defender-for-endpoint-using-group-policy)
+- [Install using Group Policy](#install-the-microsoft-defender-for-endpoint-installation-package-using-group-policy)
 
-##### Install Microsoft Defender For Endpoint using command line
+##### Install Microsoft Defender For Endpoint using the command line
 Use the installation package from the previous step to install Microsoft Defender for Endpoint. 
 
 
@@ -242,13 +242,13 @@ You can also use the [installer script](server-migration.md#installer-script) to
 
 9. In the Name field, type an appropriate name for the scheduled task (for example, Defender for Endpoint Deployment).
 
-10. Go to the **Actions** tab and select **New...** Ensure that **Start a program** is selected in the **Action** field. Enter the UNC path, using the file server's fully qualified domain name (FQDN), of the shared *md4ws.msi** file.
+10. Go to the **Actions** tab and select **New...** Ensure that **Start a program** is selected in the **Action** field. Enter the UNC path, using the file server's fully qualified domain name (FQDN), of the shared *md4ws.msi* file.
 
 11. Select **OK** and close any open GPMC windows.
 
 12. To link the GPO to an Organization Unit (OU), right-click and select **Link an existing GPO**. In the dialogue box that is displayed, select the Group Policy Object that you wish to link. Click **OK**.
 
-### STEP 3: Onboarding steps
+### STEP 3: Follow the onboarding steps
 
 1. Now that you have downloaded the required onboarding packages use the guidance listed in [onboarding tools and methods](configure-endpoints.md#endpoint-onboarding-tools) for your server.
 
@@ -282,9 +282,6 @@ Data collected by Defender for Endpoint is stored in the geo-location of the ten
 > - Once configured, you cannot change the location where your data is stored. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant.
 
 
-
-
-
 ## Windows Server Semi-Annual Enterprise Channel and Windows Server 2019 and Windows Server 2022
 
 The onboarding package for Windows Server 2019 and Windows Server 2022 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
@@ -297,7 +294,7 @@ The onboarding package for Windows Server 2019 and Windows Server 2022 through M
 
 3. Select **Download package**. Save it as WindowsDefenderATPOnboardingPackage.zip.
 
-4. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
+4. Follow the steps provided in the [follow the onboarding steps](#follow-the-onboarding-steps) section.
 
 
 
