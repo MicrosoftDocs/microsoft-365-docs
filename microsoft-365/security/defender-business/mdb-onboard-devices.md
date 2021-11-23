@@ -72,7 +72,7 @@ Follow these steps to onboard devices:
 
 ## What if I want to onboard devices gradually?
 
-If you want to onboard your company's devices in phases (gradual device onboarding), follow these steps:
+If you want to onboard your company's devices in phases, follow these steps:
 
 1. Identify a set of devices to onboard.
 
