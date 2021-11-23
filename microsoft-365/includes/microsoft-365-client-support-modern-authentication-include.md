@@ -34,7 +34,7 @@
 |SWAY|N/A|N/A|N/A|N/A|✔|
 |TEAMS|✔|✔|✔|✔|N/A|
 |TO-DO|✔|✔|✔|N/A|✔|
-|VISIO|N/A|✔|N/A|N/A|N/A|
+|VISIO|N/A|✔|N/A|✔|N/A|
 |WHITEBOARD|✔|✔|N/A|N/A|✔|
 |WORD|✔|✔|✔|✔|✔|
 |WORKPLACE ANALYTICS|N/A|N/A|N/A|N/A|N/A|
