@@ -46,7 +46,7 @@ sections:
 
           See [Microsoft Defender for Business requirements](mdb-requirements.md).
 
-      - question: What will be the licensing model at GA?
+      - question: What will the licensing model be at GA?
         answer: |
           When Microsoft Defender for Business reaches general availability (GA), it will be included in Microsoft 365 Business Premium.
 
