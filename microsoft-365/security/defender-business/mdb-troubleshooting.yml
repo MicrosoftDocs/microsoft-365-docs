@@ -78,7 +78,7 @@ sections:
 
           **Procedure 3: Turn on Endpoint Security Profile settings in Microsoft Endpoint Manager**
 
-          1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com]https://endpoint.microsoft.com)) and sign in.
+          1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
           2. Select **Endpoint security**, and then, under **Setup**, select **Microsoft Defender for Endpoint**.
 
