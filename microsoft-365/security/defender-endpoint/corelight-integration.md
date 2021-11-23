@@ -29,7 +29,7 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Microsoft has partnered with Corelight to enable sending of events from the Corelight network appliances to Microsoft 365 Defender. This integration provides Microsoft 365 Defender with increased visibility into the network activities of unmanaged devices, including communication with other unmanaged devices or external networks.
+Microsoft has partnered with Corelight to help you discover devices across your organization with Corelight’s network detection and response and capabilities. This integration provides Microsoft 365 Defender with increased visibility into the network activities of unmanaged devices, including communication with other unmanaged devices or external networks.
 
 With this data source enabled, all events from Corelight network appliances are sent to Microsoft 365 Defender. You can view these activities in the unmanaged devices timeline, available in the Microsoft Defender for Endpoint device inventory. For more information, see [Device discovery](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/device-discovery?view=o365-worldwide).
 
