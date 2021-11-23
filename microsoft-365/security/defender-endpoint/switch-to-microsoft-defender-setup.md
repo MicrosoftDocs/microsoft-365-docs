@@ -126,7 +126,7 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
 
 ### Are you using Windows Server 2012 R2 or Windows Server 2016?
 
-You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2012 R2 and 2016 using the method above. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint).
+You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2012 R2 and 2016 using the method above. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-installation-package).
 
 ## Configure Defender for Endpoint
 
