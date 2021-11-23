@@ -7,13 +7,13 @@ ms.reviewer: cjtan
 audience: enabler, admin
 ms.topic: landing-page
 ms.custom: intro-hub-or-landing
+ms.service: viva
+ms.subservice: viva-topics
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-topics
-ms.service: viva
-ms.subservice: viva-topics
 ms.localizationpriority:  medium
 description: Learn how to find resources for Microsoft Viva Topics.
 ---
