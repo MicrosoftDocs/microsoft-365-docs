@@ -27,7 +27,7 @@ You can manage some of your Viva Learning content from within the app in Teams. 
 
 To create a set of featured content that will show up for your users, select the **Create featured set** in the top left corner.
 
-[![Image of the Create featured set button.](../media/learning/admin-tab-small.png)](../media/learning/admin-tab.png#lightbox)
+![Image of the Create featured set button.](../media/learning/admin-tab-small.png)
 
 ## How content shows up in the My Learning page
 
