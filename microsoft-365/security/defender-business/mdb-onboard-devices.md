@@ -28,7 +28,7 @@ With Microsoft Defender for Business, you have several options to choose from fo
 ## What to do
 
 1. [Learn about onboarding methods](#types-of-onboarding-methods).
-2. [Onboard devices in the Microsoft 365 Defender portal](#how-to-onboard-devices-in-the-microsoft-365-defender-portal).
+2. [Onboard devices in the Microsoft 365 Defender portal](#how-to-onboard-devices-in-microsoft-365-defender).
 3. [Proceed to your next steps](#next-steps). 
 
 **This article also includes**:
@@ -53,7 +53,7 @@ The following table describes the types of onboarding methods that are supported
 > [!TIP]
 > If you're new to all of the onboarding methods described in this section, consider using either **Microsoft Endpoint Manager** or the **local script** method. 
 
-## How to onboard devices in the Microsoft 365 Defender portal
+## How to onboard devices in Microsoft 365 Defender
 
 The following video demonstrates the onboarding process for Microsoft Defender for Endpoint. This process is similar to what you'll do in Microsoft Defender for Business. <br/><br/>
 
