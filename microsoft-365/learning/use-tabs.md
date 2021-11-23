@@ -25,6 +25,10 @@ You can manage some of your Viva Learning content from within the app in Teams. 
 -Have a premium license for Viva Learning
 -Be assigned either an Admin, Knowledge admin, or Knowledge Manager role. [Learn how to assign roles](/exchange/permissions/role-group-members)
 
+To create a set of featured content that will show up for your users, select the **Create featured set** in the top left corner.
+
+[![Image of the Create featured set button.](../media/admin-tab-small.png)](../media/admin-tab.png#lightbox)
+
 ## How content shows up in the My Learning page
 
 The My Learning page helps users take control of their learning journey. Users will be able to track assignments, recommendations, bookmarks, recent history, and completed courses on this page.
