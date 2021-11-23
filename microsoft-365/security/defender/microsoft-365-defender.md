@@ -205,8 +205,8 @@ The search bar is located at the top of the page. As you type, suggestions are p
 
 You can search across the following entities in Defender for Endpoint and Defender for Identity: 
 
-- **Devices** - supported for both Defender for Endpoint and Defender for Identity. You can even use search operators. For example, you can use "contains" to search for part of a host name. 
-- **Users** - supported for both Defender for Endpoint and Defender for Identity. 
+- **Devices** - supported for both Defender for Endpoint and Defender for Identity. Supports use of search operators. 
+- **Users** - supported for Defender for Endpoint, Defender for Identity, and Defender for Cloud Apps. 
 - **Files, IPs, and URLs** - same capabilities as in Defender for Endpoint.
 
     >[!NOTE]
