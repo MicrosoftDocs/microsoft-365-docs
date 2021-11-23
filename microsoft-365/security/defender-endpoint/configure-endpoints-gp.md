@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/16/2021
 ms.technology: mde
@@ -41,7 +42,7 @@ ms.technology: mde
 
 Check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  or  [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint.
 
-1. Open the GP configuration package file (`WindowsDefenderATPOnboardingPackage.zip`) that you downloaded from the service onboarding wizard. You can also get the package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
+1. Open the GP configuration package file (`WindowsDefenderATPOnboardingPackage.zip`) that you downloaded from the service onboarding wizard. You can also get the package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
 
     1. In the navigation pane, select **Settings** > **Endpoints** > **Device management**  > **Onboarding**.
 
@@ -196,7 +197,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-1. Get the offboarding package from [Microsoft 365 Defender portal](https://security.microsoft.com/):
+1. Get the offboarding package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
 
     1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Offboarding**.
 
@@ -233,7 +234,7 @@ With Group Policy there isn't an option to monitor deployment of policies on the
 
 ## Monitor devices using the portal
 
-1. Go to [Microsoft 365 Defender portal](https://security.microsoft.com/).
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 2. Click **Devices inventory**.
 3. Verify that devices are appearing.
 

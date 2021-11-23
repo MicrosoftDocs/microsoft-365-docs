@@ -294,6 +294,8 @@ Advantages of using adaptive scopes:
 - Query-based membership provides resilience against business changes that might not be reliably reflected in group membership or external processes that rely on cross-department communication.
 
 - A single retention policy can include locations for both Microsoft Teams and Yammer, whereas when you use a static scope, these locations require their own retention policy.
+    
+- You can apply specific retention settings to just inactive mailboxes. This configuration isn't possible with a static scope because at the time the policy is assigned, static scopes don't support the specific inclusion of recipients with inactive mailboxes.
 
 Advantages of using static scopes:
 
@@ -461,7 +463,7 @@ Additional information for specific locations:
         
         An implicit retention policy requires a static policy scope with the **All recipients** (for Exchange email) or **All groups** (for Microsoft 365 Groups) configuration.
     
-    For more information about inactive mailboxes that have retention policies applied, see [Inactive mailboxes and Microsoft 365 retention policies](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention-policies).
+    For more information about inactive mailboxes that have retention policies applied, see [Inactive mailboxes and Microsoft 365 retention](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention).
 
 ## Auditing retention configuration and actions
 
@@ -576,6 +578,10 @@ If you currently use these older features, they will continue to work side by si
     - An archive policy for [archive mailboxes](enable-archive-mailboxes.md) to automatically move emails from a user's primary mailbox to their archive mailbox after a specified period of time. An archive policy (with any settings) can be used in conjunction with a Microsoft 365 retention policy that applies to a user's primary and archive mailbox.
     
     - Retention policies applied by an admin to specific folders within a mailbox. A Microsoft 365 retention policy applies to all folders in the mailbox. However, an admin can configure different retention settings by using retention labels that a user can apply to folders in Outlook as a [default retention label](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder).
+
+- [Litigation hold](create-a-litigation-hold.md) (retention only)
+    
+   Although Litigation holds are still supported, we recommend you use Microsoft 365 retention or eDiscovery holds, [as appropriate](#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds). 
 
 **Older features from SharePoint and OneDrive:**
 

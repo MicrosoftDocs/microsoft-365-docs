@@ -17,7 +17,9 @@ search.appverid:
   - MOE150
 ms.collection:
   - M365-security-compliance
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -36,7 +38,7 @@ The [Microsoft Defender for Office 365](defender-for-office-365.md) evaluation e
 If you don't already have a license that supports Microsoft Defender for Office 365, you can start a [free 30-day evaluation](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) and test the capabilities in the Microsoft 365 Defender portal at <https://security.microsoft.com>. You'll enjoy the quick set-up and you can easily turn it off if necessary.
 
 > [!NOTE]
-> If you're in the Microsoft 365 Defender portal (<https://security.microsoft.com>), you can start a Defender for Office 365 evaluation here: **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Evaluation mode** in the **Others** section.
+> If you're in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, you can start a Defender for Office 365 evaluation here: **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Evaluation mode** in the **Others** section.
 
 ## How the evaluation works
 
@@ -141,7 +143,7 @@ You will be able to scope the evaluation to an inbound connector. If there's no 
 
 ## Get started with the evaluation
 
-Find the Microsoft Defender for Office 365 evaluation set-up card in the Microsoft 365 Defender portal (<https://security.microsoft.com>) from three access points:
+Find the Microsoft Defender for Office 365 evaluation set-up card in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> from three access points:
 
 - **Endpoints** \> **Vulnerability Management** \> **Dashboard** (<https://security.microsoft.com/tvm_dashboard>)
 - **Email & collaboration** \> **Policies & rules** \> **Threat policies** (<https://security.microsoft.com/threatpolicy>)
