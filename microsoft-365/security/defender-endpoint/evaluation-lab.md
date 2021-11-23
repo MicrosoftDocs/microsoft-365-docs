@@ -38,7 +38,7 @@ With the simplified set-up experience, you can focus on running your own test sc
 
 You'll have full access to the powerful capabilities of the platform such as automated investigations, advanced hunting, and threat analytics, allowing you to test the comprehensive protection stack that Defender for Endpoint offers.
 
-You can add Windows 10, Windows 11, Windows Server 2019, or Windows Server 2022 devices that come pre-configured to have the latest OS versions and the right security components in place as well as Office 2019 Standard installed.
+You can add Windows 10, Windows 11, Windows Server 2019, Windows Server 2016, and Linux (Ubuntu) devices that come pre-configured to have the latest OS versions and the right security components in place as well as Office 2019 Standard installed.
 
 You can also install threat simulators. Defender for Endpoint has partnered with industry leading threat simulation platforms to help you test out the Defender for Endpoint capabilities without having to leave the portal.
 
