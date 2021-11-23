@@ -28,14 +28,13 @@ With Microsoft Defender for Business, you have several options to choose from fo
 ## What to do
 
 1. [Learn about onboarding methods](#types-of-onboarding-methods).
-2. 
-
+2. [Onboard devices in the Microsoft 365 Defender portal](#onboard-devices-in-the-microsoft-365-defender-portal).
+3. [Proceed to your next steps](#next-steps). 
 
 **This article also includes**:
 
 - [How to onboard devices gradually](#what-if-i-want-to-onboard-devices-gradually)
 - [How to offboard a device](#what-if-i-want-to-offboard-a-device)
-- [Next steps](#next-steps)
 
 ## Types of onboarding methods
 
