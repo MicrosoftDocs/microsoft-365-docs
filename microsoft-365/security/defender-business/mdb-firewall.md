@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.date: 11/16/2021
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdb
 localization_priority: Normal
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
