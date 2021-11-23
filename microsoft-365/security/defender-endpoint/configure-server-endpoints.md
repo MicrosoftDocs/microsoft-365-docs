@@ -294,7 +294,7 @@ The onboarding package for Windows Server 2019 and Windows Server 2022 through M
 
 3. Select **Download package**. Save it as WindowsDefenderATPOnboardingPackage.zip.
 
-4. Follow the steps provided in the [follow the onboarding steps](#follow-the-onboarding-steps) section.
+4. Follow the steps provided in the [follow the onboarding steps](#step-3-follow-the-onboarding-steps) section.
 
 
 
