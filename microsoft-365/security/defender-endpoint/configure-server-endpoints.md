@@ -103,9 +103,6 @@ The following specifics apply to the new unified solution package for Windows Se
 - Operating system upgrades are not supported. Offboard then uninstall before upgrading.
 - Automatic exclusions for server roles are not supported on Windows Server 2012 R2. For more information about adding exclusions, see [Virus scanning recommendations for Enterprise computers that are running currently supported versions of Windows](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc).
 
-- On Windows Server 2012 R2, Network Events may not populate in the timeline. This issue requires a Windows Update released as part of the [October 12, 2021 monthly rollup (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e).
-- Operating system upgrades are not supported. Offboard then uninstall before upgrading.
-
 <a name="integration-with-azure-defender"></a>
 
 ## Integration with Microsoft Defender for Cloud
