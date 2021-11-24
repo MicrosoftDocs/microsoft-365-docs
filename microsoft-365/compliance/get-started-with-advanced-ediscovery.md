@@ -15,6 +15,7 @@ ms.collection:
 - m365solution-aed
 - m365initiative-compliance
 - m365solution-scenario
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
@@ -41,7 +42,7 @@ To access Advanced eDiscovery or added as a member of an Advanced eDiscovery cas
 
 Complete the following steps to add users to the eDiscovery Manager role group:
 
-1. Go to <https://compliance.microsoft.com/permissions> and sign in using the credentials for an admin account in your Microsoft 365 organization.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Microsoft 365 compliance center</a>and sign in using the credentials for an admin account in your Microsoft 365 organization.
 
 2. On the **Permissions** page, select the **eDiscovery Manager** role group.
 
