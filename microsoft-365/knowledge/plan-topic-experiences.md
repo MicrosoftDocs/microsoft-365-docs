@@ -3,7 +3,7 @@ title: Plan for Microsoft Viva Topics
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.reviewer: nkokoye
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.service: o365-administration
@@ -36,6 +36,9 @@ Keep in mind that Viva Topics needs access to the sites and files that your user
 You must be [subscribed to Viva Topics](https://www.microsoft.com/microsoft-viva/topics) and be a global administrator or SharePoint administrator to access the Microsoft 365 admin center and set up Topics.
 
 All users who are going to use Topics require a **Topic Experiences** license. Assigning licenses is covered in [Set up Microsoft Viva Topics](set-up-topic-experiences.md).
+
+> [!Important] 
+> Topics will only crawl English content.
 
 ## Topic discovery
 

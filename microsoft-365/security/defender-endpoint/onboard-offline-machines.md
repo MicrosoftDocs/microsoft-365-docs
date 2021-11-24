@@ -67,7 +67,7 @@ For more information about onboarding methods, see the following articles:
 - Offline Azure VMs in the same network of OMS Gateway
     - Configure Azure Log Analytics IP as a proxy
     - Azure Log Analytics Workspace Key & ID
-- Azure Defender
+- Microsoft Defender for Cloud
     - [Security Policy \> Log Analytics Workspace](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
     - [Threat Detection \> Allow Defender for Endpoint to access my data](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
 

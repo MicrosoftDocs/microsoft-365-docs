@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-ransomware
 - m365solution-overview
 ms.custom: seo-marvel-jun2020
-keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology
+keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, zero trust
 description: Step through protecting your Microsoft 365 resources from ransomware attacks.
 ---
 
@@ -110,11 +110,11 @@ You can prevent a ransomware attacker from copying files outside your tenant wit
 
     - Confidential organization information based on sensitivity labels.
 
-- [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
 
     Block downloads of sensitive information such as files. 
 
-    You can also use session policies for [Microsoft Cloud App Security Conditional Access App Control](/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization) to monitor the flow of information between a user and an application in real time.
+    You can also use session policies for [Microsoft Defender for Cloud Apps Conditional Access App Control](/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization) to monitor the flow of information between a user and an application in real time.
 
 ## What’s in this solution
 
@@ -134,6 +134,13 @@ Here are the five steps of the solution deployed for your Microsoft 365 tenant.
 
 ![Ransomware protection for a Microsoft 365 tenant](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture.png)
 
+This solution uses the principles of [Zero Trust](/security/zero-trust/): 
+
+- **Verify explicitly:** Always authenticate and authorize based on all available data points.
+- **Use least privilege access:** Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
+- **Assume breach:** Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses.
+
+Unlike conventional intranet access, which trusts everything behind an organization's firewall, Zero Trust treats each sign-in and access as though it originated from an uncontrolled network, whether it's behind the organization firewall or on the Internet. Zero Trust requires protection for the network, infrastructure, identities, endpoints, apps, and data.
 
 ## Microsoft 365 capabilities and features
 
@@ -158,7 +165,7 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 | Microsoft Defender for Office 365 | Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools <br><br> Protects against malware, phishing, spoofing, and other attack types | Phishing attacks. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 | Microsoft Defender for Endpoint | Enables detection and response to advanced threats across endpoints (devices) | Malware installation and device compromise. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 | Azure Active Directory (Azure AD) Identity Protection | Automates detection and remediation of identity-based risks and investigation of those risks | Credential compromise for Azure AD accounts and privilege escalation. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
-| Microsoft Cloud App Security | A cloud access security broker for discovery, investigation, and governance across all your Microsoft and third-party cloud services | Lateral movement and data exfiltration. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
+| Microsoft Defender for Cloud Apps | A cloud access security broker for discovery, investigation, and governance across all your Microsoft and third-party cloud services | Lateral movement and data exfiltration. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 |
 
 ### 3. Identities
@@ -196,7 +203,7 @@ For Windows 10 devices:
 | Controlled folder access | Protects your data by checking apps against a list of known, trusted apps | Prevent files from being altered or encrypted by ransomware. | Microsoft 365 E3 or Microsoft 365 E5 |
 | Microsoft Information Protection | Enables sensitivity labels to be applied to information that is ransomable | Prevent use of exfiltrated information. | Microsoft 365 E3 or Microsoft 365 E5 |
 | Data loss prevention (DLP) | Protects sensitive data and reduces risk by preventing users from sharing it inappropriately | Prevent data exfiltration. | Microsoft 365 E3 or Microsoft 365 E5 |
-| Microsoft Cloud App Security | A cloud access security broker for discovery, investigation, and governance | Detect lateral movement and prevent data exfiltration. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
+| Microsoft Defender for Cloud Apps | A cloud access security broker for discovery, investigation, and governance | Detect lateral movement and prevent data exfiltration. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 |
 
 ## Impact on users and change management
@@ -249,12 +256,12 @@ Microsoft Azure:
 - [Backup and restore plan to protect against ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26-minute video)
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
-- [Advanced multistage attack detection in Azure Sentinel](/azure/sentinel/fusion#ransomware)
-- [Fusion Detection for Ransomware in Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+- [Advanced multistage attack detection in Microsoft Sentinel](/azure/sentinel/fusion#ransomware)
+- [Fusion Detection for Ransomware in Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
-Microsoft Cloud App Security:
+Microsoft Defender for Cloud Apps:
 
--  [Create anomaly detection policies in Cloud App Security](/cloud-app-security/anomaly-detection-policy)
+-  [Create anomaly detection policies in Defender for Cloud Apps](/cloud-app-security/anomaly-detection-policy)
 
 Microsoft Security team blog posts:
 
@@ -277,4 +284,3 @@ Microsoft Security team blog posts:
 
 - [Ransomware response—to pay or not to pay? (December 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 - [Norsk Hydro responds to ransomware attack with transparency (December 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
-
