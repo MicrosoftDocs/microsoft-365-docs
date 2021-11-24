@@ -31,15 +31,15 @@ ms.technology: m365d
 
 Protecting your environment requires taking inventory of the devices that are in your network. However, mapping devices in a network can often be expensive, challenging, and time-consuming.
 
-Microsoft Defender for Endpoint provides a device discovery capability that helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes.
+Microsoft Defender for Endpoint provides a device discovery capability that helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes. Unknown and unmanaged devices, introduce significant risks to your network. Whether it's unpatched printer, a network devices with weak security configuration, or a server with no security controls. Device discovery use onboarded endpoints in your network to collect, probe or scan your network to discover unmanaged devices.
 
-Unknown and unmanaged devices, introduce significant risks to your network. Whether it's unpatched printer, a network devices with weak security configuration, or a server with no security controls. Device discovery use onboarded endpoints in your network to collect, probe or scan your network to discover unmanaged devices. Unmanaged devices can include:
+The device discovery capability allows you to:
 
-- laptops, workstations and servers not yet onboarded
-- network devices, such as, routers
-- IoT devices like printers and cameras
+- Discover enterprise endpoints like, laptops, workstations and servers connected to your corporate network but not yet onboarded to Microsoft Defender for Endpoint
+- Network devices, such as, routers
+- IoT devices,such as, printers and cameras
 
-Once devices are discovered, you can reduce the attack surface by identifying and assessing vulnerabilities, and detecting configuration gaps. For applicable devices, you can onboard them to the service, automatically increasing security visibility into them.
+Once devices are discovered, you can reduce the attack surface by identifying and assessing vulnerabilities, and detecting configuration gaps. Onboarding unmanaged endpoints to the service can increase the security visibility on them.
 
 Use the FAQ page to learn more about the technology and the different things our customer care about.
 
