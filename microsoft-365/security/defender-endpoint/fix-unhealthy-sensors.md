@@ -69,6 +69,7 @@ If you took corrective actions and the device status is still misconfigured, [op
 
 ### No sensor data
 A misconfigured device with status 'No sensor data' has communication with the service but can only report partial sensor data.
+
 Follow theses actions to correct known issues related to a misconfigured device with status 'No sensor data':
 
 - [Ensure the device has Internet connection](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
