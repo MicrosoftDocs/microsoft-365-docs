@@ -17,6 +17,7 @@ ms.collection:
   - M365-security-compliance
 ms.custom:
   - seo-marvel-apr2020
+  - admindeeplinkDEFENDER
 description: Admins can learn how to view and manage quarantined messages for all users in Exchange Online Protection (EOP). Admins in organizations with Microsoft Defender for Office 365 can also manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
@@ -43,7 +44,7 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
 
 ## What do you need to know before you begin?
 
-- To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. To open the **Quarantine** page directly, use <https://security.microsoft.com/quarantine>.
+- To open the Microsoft 365 Defender portal, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>. To open the **Quarantine** page directly, use <https://security.microsoft.com/quarantine>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -59,18 +60,13 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
   - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
   - <sup>\*</sup> Members of the **Quarantine Administrator** role group in **Email & collaboration** roles in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal) also need to be members of the **Hygiene Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) to do quarantine procedures in Exchange Online PowerShell.
 
-- Quarantined messages are retained for a default period of time before they're automatically deleted:
-  - 30 days for messages quarantined by anti-spam policies (spam, phishing, and bulk email). This is the default and maximum value. To configure (lower) this value, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
-  - 15 days for messages that contain malware.
-  - 15 days for files quarantined by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams in Defender for Office 365.
-
-  When a message expires from quarantine, you can't recover it.
+- Quarantined messages are retained for a default period of time based on why they were quarantined. After the retention period expires, the messages are automatically deleted and are not recoverable. For more information, see [Quarantined email messages in EOP and Defender for Offie 365](quarantine-email-messages.md).
 
 ## Use the Microsoft 365 Defender portal to manage quarantined email messages
 
 ### View quarantined email
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Review** \> **Quarantine**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Review** \> **Quarantine**.
 2. On the **Quarantine** page, verify that the **Email** tab is selected.
 
 3. You can sort the results by clicking on an available column header. Click **Customize columns**  to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
@@ -280,7 +276,7 @@ In organizations with Defender for Office 365, admins can manage files that were
 
 ### View quarantined files
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Review** \> **Quarantine**.
+1. In the<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Review** \> **Quarantine**.
 2. On the **Quarantine** page, select the **Files** tab (**Email** is the default tab).
 
 3. You can sort the results by clicking on an available column header. Click **Customize columns** to change the columns that are shown. The default columns are marked with an asterisk (<sup>\*</sup>):

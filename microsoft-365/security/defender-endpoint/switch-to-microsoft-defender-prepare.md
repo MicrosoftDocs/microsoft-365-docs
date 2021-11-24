@@ -18,7 +18,9 @@ ms.collection:
   - m365solution-mcafeemigrate
   - m365solution-symantecmigrate
 ms.topic: article
-ms.custom: migrationguides
+ms.custom: 
+- migrationguides
+- admindeeplinkDEFENDER
 ms.date: 10/07/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
@@ -26,7 +28,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 # Switch to Microsoft Defender for Endpoint - Phase 1: Prepare
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 | ![Phase 1: Prepare.](images/phase-diagrams/prepare.png)<br/>Phase 1: Prepare | [![Phase 2: Set up](images/phase-diagrams/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[Phase 2: Set up](switch-to-microsoft-defender-setup.md) | [![Phase 3: Onboard](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Phase 3: Onboard](switch-to-microsoft-defender-onboard.md) |
@@ -78,14 +80,14 @@ Now that you've updated your organization's devices, the next step is to get Def
 
 4. If endpoints (such as devices) in your organization use a proxy to access the internet, see [Defender for Endpoint setup: Network configuration](production-deployment.md#network-configuration).
 
-At this point, you are ready to grant access to your security administrators and security operators who will use the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+At this point, you are ready to grant access to your security administrators and security operators who will use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 > [!NOTE]
-> The Microsoft 365 Defender portal is sometimes referred to as the Defender for Endpoint portal, and can be accessed at [https://security.microsoft.com](https://security.microsoft.com). The former Microsoft Defender Security Center (https://securitycenter.windows.com) will soon redirect to the Microsoft 365 Defender portal. To learn more, see [Microsoft 365 Defender portal overview](portal-overview.md).
+> The Microsoft 365 Defender portal is sometimes referred to as the Defender for Endpoint portal, and can be accessed at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>. The former Microsoft Defender Security Center (https://securitycenter.windows.com) will soon redirect to the Microsoft 365 Defender portal. To learn more, see [Microsoft 365 Defender portal overview](portal-overview.md).
 
 ## Grant access to the Microsoft 365 Defender portal
 
-The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is where you access and configure features and capabilities of Defender for Endpoint. To learn more, see [Overview of the Microsoft 365 Defender portal](use.md).
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> is where you access and configure features and capabilities of Defender for Endpoint. To learn more, see [Overview of the Microsoft 365 Defender portal](use.md).
 
 Permissions to the Microsoft 365 Defender portal can be granted by using either basic permissions or role-based access control (RBAC). We recommend using RBAC so that you have more granular control over permissions.
 
