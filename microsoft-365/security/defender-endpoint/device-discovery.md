@@ -31,17 +31,15 @@ ms.technology: m365d
 
 Protecting your environment requires taking inventory of the devices that are in your network. However, mapping devices in a network can often be expensive, challenging, and time-consuming.
 
-Microsoft Defender for Endpoint provides a device discovery capability that helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes. Device discovery uses onboarded endpoints, in your network to collect, probe, or scan your network to discover unmanaged devices.
-
-The device discovery capability allows you to discover:
+Microsoft Defender for Endpoint provides a device discovery capability that helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes. Device discovery uses onboarded endpoints, in your network to collect, probe, or scan your network to discover unmanaged devices. The device discovery capability allows you to discover:
 
 - laptops, workstations and servers not yet onboarded to Microsoft Defender for Endpoint
 - Network devices like routers
 - IoT devices like printers and cameras
 
-Whether it's unpatched printer, a network devices with weak security configuration, or a server with no security controls, Unknown and unmanaged devices, introduce significant risks to your network. Once devices are discovered, you can:
+Whether it's an unpatched printer, a network devices with weak security configuration, or a server with no security controls, Unknown and unmanaged devices, introduce significant risks to your network. Once devices are discovered, you can:
 
-- Onboarding unmanaged endpoints to the service, increasing the security visibility on them.
+- Onboard unmanaged endpoints to the service, increasing the security visibility on them.
 - Reduce the attack surface by identifying and assessing vulnerabilities, and detecting configuration gaps.
 
 Watch this video for a quick overview of how device discovery:
