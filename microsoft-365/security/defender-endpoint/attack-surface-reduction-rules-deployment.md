@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar, jcedola
+ms.reviewer:
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
