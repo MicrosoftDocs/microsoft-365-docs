@@ -41,7 +41,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 :---|:---|:---
-Application|Vulnerability.Read.All	|'Read Threat and Vulnerability Management security recommendation information'
+Application|Vulnerability.Read.All|'Read Threat and Vulnerability Management security recommendation information'
 Delegated (work or school account)|Vulnerability.Read|'Read Threat and Vulnerability Management security recommendation information'
 
 ## HTTP request

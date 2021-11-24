@@ -4,9 +4,11 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
-audience: 
-ms.topic: article
-ms.prod: microsoft-365-enterprise
+audience: enabler, admin
+ms.topic: landing-page
+ms.custom: intro-hub-or-landing
+ms.service: viva
+ms.subservice: viva-topics
 search.appverid: 
 ms.collection: 
     - enabler-strategic
@@ -49,6 +51,7 @@ Learn more about how to use and implement Viva Topics in your organization to he
 |:-----|:-----|
 |Learn how to start planning to use Viva Topics |[Get started](topics-adoption-getstarted.md)|  
 |Set up and run a trial pilot program for Viva Topics |[Run a trial](trial-topics.md)|
+|Find resources to help your organization through your adoption journey with Viva Topics |[Adoption resources](adoption-resources.md)|
 
 ## Set up and administration
 

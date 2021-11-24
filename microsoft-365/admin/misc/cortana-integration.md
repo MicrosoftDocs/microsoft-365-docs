@@ -98,9 +98,11 @@ Individual users can try out Cortana voice assistance in the Teams mobile app by
 3. Select **Cortana**
 4. Switch the **Voice activation** toggle
 
+[Learn more about using voice assistance in Teams](https://support.microsoft.com/office/274bb2f0-d962-4182-b45d-307435cea256)
+
 ### Cortana voice assistance in Teams Meeting Room
 
-Cortana voice assistance in Teams Meeting Rooms goes beyond what can be done with Teams on personal devices by providing unique in-room capabilities, like one-touch join, content cameras to share physical whiteboards into the meeting in an intelligent way, and proximity features like seamlessly transferring the room into a Teams meeting from your own personal device. Users can use push to talk (PTT) by pressing the microphone to initiate Cortana then saying, “Start my meeting.” With Keyword Spotting (KWS) enabled users can say the wake word “Cortana” and will receive a conversational response, such as “How can I help you today?”
+Cortana voice assistance in Teams Meeting Rooms goes beyond what can be done with Teams on personal devices by providing unique in-room capabilities, like one-touch join, content cameras to share physical whiteboards into the meeting in an intelligent way, and proximity features like seamlessly transferring the room into a Teams meeting from your own personal device. Users can use push to talk (PTT) by pressing the microphone to initiate Cortana then saying, “Start my meeting.” With Keyword Spotting (KWS) enabled Cortana will start listening when users say "Cortana." 
 
 #### Admin control
 
