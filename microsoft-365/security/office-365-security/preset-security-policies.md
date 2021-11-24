@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
   - M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 description: Admins can learn how to apply Standard and Strict policy settings across the protection features of Exchange Online Protection (EOP) and Microsoft Defender for Office 365
 ms.technology: mdo
 ms.prod: m365-security
@@ -110,7 +111,7 @@ For example, if a security setting exists in **Standard protection** and an admi
 
 ### What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
+- You open the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>. To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -124,7 +125,7 @@ For example, if a security setting exists in **Standard protection** and an admi
 
 ### Use the Microsoft 365 Defender portal to assign Standard and Strict preset security policies to users
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section.
 
 2. On the **Preset security policies** page, click **Manage** in the **Standard protection** or **Strict protection** sections.
 
@@ -161,7 +162,7 @@ Remember, the **Built-in protection** preset security policy is assigned to all 
 
 Therefore, we typically don't recommend exceptions to the **Built-in protection** preset security policy.
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section.
 
 2. On the **Preset security policies** page, select **Add exclusions (not recommended)** in the **Built-in protection** section.
 
