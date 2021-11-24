@@ -101,7 +101,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 
    - **Turn on cloud-delivered protection**: Yes
    - **Cloud-delivered protection level**: High
-   - **Defender Cloud Extended Timeout in Seconds**: 50
+   - **Microsoft Defender Antivirus Extended Timeout in Seconds**: 50
 
    :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Block at first sight settings in Endpoint Manager.":::
 
@@ -169,7 +169,7 @@ You might choose to disable block at first sight if you want to retain the prere
 
    - Set **Turn on cloud-delivered protection** to **No** or **Not configured**.
    - Set **Cloud-delivered protection level** to **Not configured**.
-   - Clear the check box for **Defender Cloud Extended Timeout In Seconds**.
+   - Clear the check box for **Microsoft Defender Antivirus Extended Timeout In Seconds**.
 
 6. Review and save your settings.
 
