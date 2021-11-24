@@ -20,7 +20,7 @@ ms.custom: seo-marvel-apr2020
 
 # During and after your data move
 
-Data moves are a back-end operation with minimal impact to end-users. No action is required while Microsoft moves each service and associated data for your tenant to a new datacenter geo. Data transfer and validation occur in the background in advance with minimal impact to users.
+Data moves are a back-end operation with minimal impact to end users. No action is required while Microsoft moves each service and associated data for your tenant to a new datacenter geo. Data transfer and validation occur in the background in advance with minimal impact to users.
   
 > [!NOTE]
 > Moves occur at different times for each service. As a result, you'll see the described reduced functionality for each service at a different time. 
@@ -71,7 +71,7 @@ When SharePoint Online is moved, data for the following services is also moved:
     
 - Visio Pro for Microsoft 365
     
-After we've completed moving your SharePoint Online data, you might see the some of the following effects.
+After we've completed moving your SharePoint Online data, you might see some of the following effects.
   
 ### Microsoft 365 Video Services
 
