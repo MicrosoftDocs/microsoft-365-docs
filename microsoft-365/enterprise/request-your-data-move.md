@@ -28,20 +28,20 @@ Eligible Microsoft 365 customers may request migration for their entire organiza
 
 | Customers with signup country in | Request period begins | Request deadline |
 |:-----|:-----|:-----|
-|Japan  <br/> | <br/> |Request period closed  <br/> |
-|Australia, New Zealand, Fiji  <br/> | <br/> |Request period closed  <br/> |
-|India  <br/> | <br/> |Request period closed  <br/> |
-|Canada  <br/> | <br/> |Request period closed  <br/> |
-|United Kingdom  <br/> | <br/> |Request period closed  <br/> |
-|South Korea  <br/> | <br/> |Request period closed  <br/> |
-|France  <br/> | <br/> |Request period closed  <br/> |
-|United Arab Emirates  <br/> | <br/> |Request period closed  <br/> |
-|South Africa  <br/> | <br/> |Request period closed  <br/> |
-|Switzerland, Liechtenstein  <br/> | <br/> |Request period closed  <br/> |
-|Norway  <br/> | <br/> |Request period closed  <br/> |
-|Germany  <br/> | <br/> |Request period closed  <br/> |
-|Brazil  <br/> | <br/> |Request period closed  <br/> |
-|Sweden  <br/> |November 16, 2021  <br/> |May 31, 2022  <br/> |
+|Japan  | |Request period closed  |
+|Australia, New Zealand, Fiji  | |Request period closed  |
+|India  | |Request period closed  |
+|Canada  | |Request period closed  |
+|United Kingdom  | |Request period closed  |
+|South Korea  | |Request period closed  |
+|France  | |Request period closed  |
+|United Arab Emirates  | |Request period closed  |
+|South Africa  | |Request period closed  |
+|Switzerland, Liechtenstein  | |Request period closed  |
+|Norway  | |Request period closed  |
+|Germany  | |Request period closed  |
+|Brazil  | |Request period closed  |
+|Sweden  |November 16, 2021  |May 31, 2022  |
 
 ## How to request a move
 
