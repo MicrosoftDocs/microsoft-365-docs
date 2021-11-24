@@ -29,13 +29,13 @@ ms.technology: mde
 
 Defender for Endpoint supports network connection monitoring from different levels of the network stack. A challenging case is when the network uses a forward proxy as a gateway to the Internet.
 
-The proxy acts as if it was the target endpoint. In these cases, simple network connection monitors will audit the connections with the proxy which is correct but has lower investigation value.
+The proxy acts as if it was the target endpoint. In these cases, simple network connection monitors will audit the connections with the proxy that is correct but has lower investigation value.
 
 Defender for Endpoint supports advanced HTTP level monitoring through network protection. When turned on, a new type of event is surfaced which exposes the real target domain names.
 
 ## Use network protection to monitor network connection behind a firewall
 
-Monitoring network connection behind a forward proxy is possible due to additional network events that originate from network protection. To see them on a device timeline, turn network protection on (at the minimum in audit mode).
+Monitoring network connection behind a forward proxy is possible due to other network events that originate from network protection. To see them on a device timeline, turn on network protection (at the minimum in audit mode).
 
 Network protection can be controlled using the following modes:
 
@@ -43,7 +43,7 @@ Network protection can be controlled using the following modes:
 - **Audit**: Users or apps will not be blocked from connecting to dangerous domains. However, you will still see this activity in Microsoft Defender Security Center.
 
 
-If you turn network protection off, users or apps will not be blocked from connecting to dangerous domains. You will not see any network activity in Microsoft Defender Security Center.
+If you turn off network protection, users or apps will not be blocked from connecting to dangerous domains. You will not see any network activity in Microsoft Defender Security Center.
 
 If you do not configure it, network blocking will be turned off by default.
 
@@ -55,7 +55,7 @@ When network protection is turned on, you'll see that on a device's timeline the
 
 ![Image of network events on device's timeline.](images/atp-proxy-investigation.png)
 
-Additional events triggered by the network protection layer are now available to surface the real domain names even behind a proxy.
+Other events triggered by the network protection layer are now available to surface the real domain names even behind a proxy.
 
 Event's information:
 
