@@ -50,10 +50,10 @@ Microsoft Defender for Endpoint on macOS does not depend on any vendor-specific 
 
 Most modern MDM solutions include these features, however, they may call them differently.
 
-You can deploy Defender without the last requirement from the preceding list, however:
+You can deploy Defender for Endpoint without the last requirement from the preceding list, however:
 
-- You will not be able to collect status in a centralized way
-- If you decide to uninstall Defender, you will need to log on to the client device locally as an administrator
+- You will not be able to collect status in a centralized way.
+- If you decide to uninstall Defender for Endpoint, you will need to log on to the client device locally as an administrator.
 
 ## Deployment
 
@@ -77,7 +77,7 @@ Your system may support an arbitrary property list in XML format. You can upload
 Alternatively, it may require you to convert the property list to a different format first.
 
 Typically, your custom profile has an ID, name, or domain attribute. You must use exactly "com.microsoft.wdav.atp" for this value.
-MDM uses it to deploy the settings file to **/Library/Managed Preferences/com.microsoft.wdav.atp.plist** on a client device, and Defender uses this file for loading the onboarding information.
+MDM uses it to deploy the settings file to **/Library/Managed Preferences/com.microsoft.wdav.atp.plist** on a client device, and Defender for Endpoint uses this file for loading the onboarding information.
 
 ### Kernel extension policy
 

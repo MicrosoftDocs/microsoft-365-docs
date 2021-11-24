@@ -23,9 +23,9 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-
 - Windows Server 2012 R2
 - Windows Server 2016
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -42,7 +42,7 @@ These instructions apply to the new unified solution and installer package of Mi
 
 ## Installer script
 
-To facilitate upgrades when Microsoft Endpoint Configuration Manager or Azure Defender are not in use or not yet available to perform the upgrade, you can use this [upgrade script](https://github.com/microsoft/mdefordownlevelserver). It can help automate the following required steps:
+To facilitate upgrades when Microsoft Endpoint Configuration Manager or Microsoft Defender for Cloud are not in use or not yet available to perform the upgrade, you can use this [upgrade script](https://github.com/microsoft/mdefordownlevelserver). It can help automate the following required steps:
 
 1. Remove the OMS workspace for Microsoft Defender for Endpoint (OPTIONAL).
 2. Remove System Center Endpoint Protection client if installed.
@@ -96,13 +96,22 @@ Migration steps:
 7. Remove your non-Microsoft antivirus software by either using the non-Microsoft antivirus console or by using Microsoft Endpoint Configuration Manager as
 appropriate. Make sure to remove passive mode configuration.*
 
-TIP: you can use the [installer script](server-migration.md#installer script) as part of your application to automate the above steps. To enable passive mode, apply the -Passive flag. EXAMPLE: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive
+> [!TIP]
+> You can use the [installer-script](server-migration.md#installer script) as part of your application to automate the above steps. To enable passive mode, apply the -Passive flag. For example, .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive
 
 *These steps only apply if you intend to replace your non-Microsoft antivirus solution. See [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md).
 
-## Other migration scenarios 
+To move a machine out of passive mode, set the following key to 0:
 
-### You have a server that has been onboarded using the MMA-based Microsoft Defender for Endpoint. It has SCEP installed (Windows Server 2012 R2) or Microsoft Defender Antivirus (Windows Server 2016). This machine is **not** managed through Azure Defender, Microsoft Endpoint Manager or Microsoft Endpoint Configuration Manager.
+Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection 
+Name: ForceDefenderPassiveMode
+Type: REG_DWORD
+Value: 0
+
+
+## Other migration scenarios
+
+### You have a server that has been onboarded using the MMA-based Microsoft Defender for Endpoint. It has SCEP installed (Windows Server 2012 R2) or Microsoft Defender Antivirus (Windows Server 2016). This machine is **not** managed through Microsoft Defender for Cloud, Microsoft Endpoint Manager, or Microsoft Endpoint Configuration Manager.
 
 1. Fully update the machine including Microsoft Defender Antivirus (Windows Server 2016).
 2. Remove the MMA workspace configuration for Microsoft Defender for Endpoint. See [Remove a workspace using PowerShell](/azure/azure-monitor/agents/agent-manage).
@@ -116,7 +125,7 @@ TIP: you can use the [installer script](server-migration.md#installer script) as
 > [!TIP]
 > You can use the installer script to automate the above steps.
 
-### You have a server on which you want to install Microsoft Defender for Endpoint. It has a non-Microsoft endpoint protection or endpoint detection and response solution installed. You do not intend to use Microsoft Endpoint Configuration Manager or Azure Defender. You use your own deployment mechanism. 
+### You have a server on which you want to install Microsoft Defender for Endpoint. It has a non-Microsoft endpoint protection or endpoint detection and response solution installed. You do not intend to use Microsoft Endpoint Configuration Manager or Microsoft Defender for Cloud. You use your own deployment mechanism. 
 
 1. Fully update the machine including Microsoft Defender Antivirus (Windows Server 2016).
 2. Install the Microsoft Defender for Endpoint for Windows Server 2012 R2 & 2016 package and **enable passive mode**. See [Install Microsoft Defender Antivirus using command line](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-command-line).
@@ -126,15 +135,23 @@ TIP: you can use the [installer script](server-migration.md#installer script) as
 6. Create and apply policies using Group Policy, PowerShell, or a 3rd party management solution.
 
 > [!TIP]
-> You can use the [installer script](server-migration.md#installer-script) to help automate steps 1 through 4. To enable passive mode, apply the -Passive flag. EXAMPLE: `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive`
+> You can use the [installer script](server-migration.md#installer-script) to help automate steps 1 through 4. To enable passive mode, apply the -Passive flag which will ensure that Defender Antivirus goes into passive mode before onboarding and does not interfere with a non-Microsoft antimalware solution. Then to ensure Defender Antivirus remains in passive mode after onboarding to support EDR capabilities such as EDR Block make sure to set the "ForceDefenderPassiveMode" registry key. EXAMPLE: `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive`
 
-*This step only applies if you intend to replace your non-Microsoft antivirus solution. We recommend using Microsoft Defender Antivirus, included  in Microsoft Defender for Endpoint, to provide the full set of capabilities. See [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md). 
 
-## Azure Defender scenarios
+*This step only applies if you intend to replace your non-Microsoft antivirus solution. We recommend using Microsoft Defender Antivirus, included  in Microsoft Defender for Endpoint, to provide the full set of capabilities. See [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md).
 
-### You're using Azure Defender. The Microsoft Monitoring Agent (MMA) and/or Microsoft Antimalware for Azure (SCEP) are installed and you want to upgrade.
-If you're using Azure Defender, you can leverage the automated upgrade process. See [Protect your endpoints with Security Center's integrated EDR solution: Microsoft Defender for Endpoint](/azure/security-center/security-center-wdatp#enable-the-microsoft-defender-for-endpoint-integration).
+To move a machine out of passive mode, set the following key to 0:
+
+Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
+Name: ForceDefenderPassiveMode
+Type: REG_DWORD
+Value: 0
+
+
+## Microsoft Defender for Cloud scenarios
+
+### You're using Microsoft Defender for Cloud. The Microsoft Monitoring Agent (MMA) and/or Microsoft Antimalware for Azure (SCEP) are installed and you want to upgrade.
+If you're using Microsoft Defender for Cloud, you can leverage the automated upgrade process. See [Protect your endpoints with Defender for Cloud's integrated EDR solution: Microsoft Defender for Endpoint](/azure/security-center/security-center-wdatp#enable-the-microsoft-defender-for-endpoint-integration).
 
 ## Group Policy configuration
-For configuration using Group Policy, please ensure you are using the latest ADMX files in your central store to get access to the correct Microsoft Defender policy options. Please reference [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) and download the latest files **for use with Windows 10**. 
-
+For configuration using Group Policy, ensure you're using the latest ADMX files in your central store to access the correct Defender for Endpoint policy options. Please reference [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) and download the latest files **for use with Windows 10**.

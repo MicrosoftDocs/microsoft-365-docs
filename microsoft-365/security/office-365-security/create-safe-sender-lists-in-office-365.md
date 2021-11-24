@@ -53,10 +53,12 @@ Mail flow rules allow the most flexibility to ensure that only the right message
 > - EOP and Outlook inspect different message properties to determine the sender of the message. For more information, see the [Considerations for bulk email](#considerations-for-bulk-email) section later in this article.
 >
 
-
 In contrast, you also have several options to block email from specific sources using _blocked sender lists_. For more information, see [Create block sender lists in EOP](create-block-sender-lists-in-office-365.md).
 
 ## (Recommended) Use mail flow rules
+
+> [!NOTE]
+> You can't use message headers and mail flow rules to designate an internal sender as a safe sender. The procedures in this section work for external senders only.
 
 Mail flow rules in Exchange Online and standalone EOP use conditions and exceptions to identify messages, and actions to specify what should be done to those messages. For more information, see [Mail flow rules (transport rules) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
 
