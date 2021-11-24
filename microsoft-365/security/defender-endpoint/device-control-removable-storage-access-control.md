@@ -19,6 +19,9 @@ ms.date: 11/02/2021
 
 # Microsoft Defender for Endpoint Device Control Removable Storage Access Control
 
+**Applies to:**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 > [!NOTE]
 > The Group Policy management of this product is now generally avaialable (4.18.2106): See [Tech Community blog: Protect your removable storage and printer with Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806) 
 
