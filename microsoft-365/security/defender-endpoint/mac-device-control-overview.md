@@ -35,7 +35,7 @@ Device control for macOS has the following prerequisites:
 
 > [!div class="checklist"]
 >
-> - Microsoft Defender for Endpoint entitlement (can be trial)
+> - Microsoft Defender for Endpoint entitlement (can be trial)
 > - Minimum OS version: macOS 11 or higher
 > - Minimum product version: 101.34.20
 

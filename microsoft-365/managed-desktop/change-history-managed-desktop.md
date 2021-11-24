@@ -19,6 +19,32 @@ ms.localizationpriority: medium
 
 This article lists new and updated articles in the [Microsoft Managed Desktop documentation](index.yml). "Updated" articles have had material additions or corrections--minor fixes such as correction of typos, style, or formatting issues are not listed. You can always view the history of specific commits (including details of any changes) by visiting the [repo on GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
 
+## October 2021
+New or changed article | Description
+--- | ---
+[Device requirements](service-description/device-requirements.md) | Updated article
+[Register new devices yourself](get-started/register-devices-self.md) | Updated article
+[Readiness assessment tools](get-ready/readiness-assessment-tool.md) | Updated article
+[Deploy apps to devices](get-started/deploy-apps.md) | Updated article
+
+## September 2021
+New or changed article | Description
+--- | ---
+[Work with reports](working-with-managed-desktop/reports.md)| Updated article
+[Register new devices yourself](get-started/register-devices-self.md) | Updated article
+[Prerequisites for guest accounts](get-ready/guest-accounts.md) | Updated article
+[Fix issues found by the readiness assessment tool](get-ready/readiness-assessment-fix.md) | Updated article
+
+## August 2021
+New or changed article | Description
+--- | ---
+[Work with reports](working-with-managed-desktop/reports.md)| Updated article
+[Device status report](working-with-managed-desktop/device-status-report.md) | Updated article
+[Windows security updates report](working-with-managed-desktop/security-updates-report.md) | Updated article
+[Privacy and personal data](service-description/privacy-personal-data.md) | Updated article
+[Microsoft Managed Desktop product lifecycle](service-description/device-lifecycle.md) | Updated article
+[Prepare certificates and network profiles for Microsoft Managed Desktop](get-ready/certs-wifi-lan.md) | Updated article
+[Fix issues found by the readiness assessment tool](get-ready/readiness-assessment-fix.md) | Updated article
 
 ## July 2021
 New or changed article | Description
