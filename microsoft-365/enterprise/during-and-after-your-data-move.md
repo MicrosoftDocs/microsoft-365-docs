@@ -27,7 +27,7 @@ Data moves are a back-end operation with minimal impact to end users. No action 
   
 Watch the Microsoft 365 Message Center for confirmation when moves for each of Exchange Online, SharePoint Online, and Teams chat service complete. As shown in the table below, it can take up to 24 months after the end of the enrollment period to complete core customer data at rest moves to the new datacenter geo.   
 
-|**Customers with signup country in**|**All moves completed by**|
+| Customers with signup country in | All moves completed by |
 |:-----|:-----|
 |Australia, New Zealand, Fiji  <br/> |July 1, 2022  <br/> |
 |Japan  <br/> |July 1, 2022  <br/> |
@@ -52,7 +52,7 @@ Because it takes time to move each user to the new datacenter geo for a single t
 
 Some users open a shared mail folder from another mailbox (that the user has read or write permissions to) in Outlook Web Access using the "Shared Folder" feature. The following table describes how access to shared folders works during a mailbox move. Please note that users with full permissions to a shared mailbox can open the mailbox by using Outlook Web Access during the move. 
   
-|**Configuration**|**Description**|
+| Configuration | Description |
 |:-----|:-----|
 |User has mailbox folder permission to another mailbox  <br/> |Potentially limited.  <br/> If User A and Mailbox B aren't in the same geo during the tenant move, User A can't open Mailbox B's folder in Outlook Web Access if User A only has permission to a specific folder in Mailbox B.  <br/> To add a shared folder, right-click the user name in the left navigation panel and select **Add shared folder**.  <br/> |
 |User with full mailbox permission to another mailbox  <br/> |Fully supported.  <br/> If User A has "Full Access" permission to Mailbox B, then User A can click the shared folder in the left navigation panel in Outlook Web Access to open a window showing Mailbox B.  A user can open a shared mailbox using Outlook Web Access during the move without any adverse impact. The limitation only applies to folder-level sharing in a mailbox.           |
