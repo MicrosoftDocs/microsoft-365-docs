@@ -6,6 +6,7 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
+ms.custom: intro-get-started
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
