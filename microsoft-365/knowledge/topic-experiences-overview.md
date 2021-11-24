@@ -6,8 +6,9 @@ manager: pamgreen
 ms.reviewer: cjtan; lauris
 audience: admin
 ms.topic: article
-ms.service: 
-ms.prod: microsoft-365-enterprise
+ms.custom: intro-overview
+ms.service: viva
+ms.subservice: viva-topics
 search.appverid: 
 ms.collection: 
     - enabler-strategic

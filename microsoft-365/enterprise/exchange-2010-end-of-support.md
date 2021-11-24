@@ -94,9 +94,7 @@ This table shows your migration options and the most important factors that dete
 |Full hybrid migration|More than 150 seats|A few weeks or more|
 |
 
-The following sections give you an overview of these methods. For more information, see [Decide
-on a migration
-path](https://support.office.com/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27).
+The following sections give you an overview of these methods. For more information, see [Decide on a migration path](https://support.office.com/article/Decide-on-a-migration-path-0d4f2396-9cef-43b8-9bd6-306d01df1e27).
 
 ### Cutover migration
 

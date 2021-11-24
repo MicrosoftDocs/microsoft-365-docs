@@ -8,7 +8,7 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-lsaldanha
+ms.author: dansimp
 author: lovina-saldanha
 ms.localizationpriority: medium
 manager: dansimp
@@ -101,7 +101,7 @@ This topic guides you to set up a dedicated lab environment. For information on 
 ## Enable Microsoft 365 trial subscription
 
 >[!NOTE]
->Signing up for a trial gives you 25 user licenses to use for a month. See [Try or Buy an M365 subscription](../../commerce/try-or-buy-microsoft-365.md) for details.
+>Signing up for a trial gives you 25 user licenses to use for a month. See [Try or buy a Microsoft 365 subscription](../../commerce/try-or-buy-microsoft-365.md) for details.
 
 1. From [Microsoft 365 Admin Center](https://admin.microsoft.com/), click **Billing** and then navigate to **Purchase services**.
 
