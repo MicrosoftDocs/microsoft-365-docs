@@ -19,6 +19,7 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 - AdminTemplateSet
+- adminvideo
 search.appverid: MET150
 description: "Use these steps to buy more licenses or reduce the number of licenses for your Microsoft 365 for business subscription."
 ms.date: 09/16/2021

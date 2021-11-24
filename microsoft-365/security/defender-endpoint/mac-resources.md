@@ -106,7 +106,6 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Configuration|Turn on/off antivirus passive mode|`mdatp config passive-mode --value [enabled/disabled]`|
 |Configuration|Configure degree of parallelism for on-demand scans|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
 |Configuration|Turn on/off scans after security intelligence updates|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
-|Configuration|Turn on/off archive scanning (on-demand scans only)|`mdatp config scan-archives --value [enabled/disabled]`|
 |Diagnostics|Change the log level|`mdatp log level set --level [error/warning/info/verbose]`|
 |Diagnostics|Generate diagnostic logs|`mdatp diagnostic create --path [directory]`|
 |Health|Check the product's health|`mdatp health`|
@@ -116,7 +115,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Protection|Do a full scan|`mdatp scan full`|
 |Protection|Cancel an ongoing on-demand scan|`mdatp scan cancel`|
 |Protection|Request a security intelligence update|`mdatp definitions update`|
-|EDR|Add group tag to device. EDR tags are used for managing device groups. For more information, please visit /microsoft-365/security/defender-endpoint/machine-groups|`mdatp edr tag set --name GROUP --value [name]`|
+|EDR|Set/Remove tag, only GROUP supported|`mdatp edr tag set --name GROUP --value [name]`|
 |EDR|Remove group tag from device|`mdatp edr tag remove --tag-name [name]`|
 |EDR|Add Group ID|`mdatp edr group-ids --group-id [group]`|
 

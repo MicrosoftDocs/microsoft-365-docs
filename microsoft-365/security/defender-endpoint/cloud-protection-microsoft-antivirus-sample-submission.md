@@ -97,7 +97,7 @@ For information about configuration options using Intune, Configuration Manager,
 
 ## Examples of metadata sent to the cloud protection service
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="image depicting examples of metadata sent to Microsoft Defender Cloud Protection":::
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="image depicting examples of metadata sent to cloud protection in Microsoft Defender Antivirus":::
 
 The following table lists examples of metadata sent for analysis by cloud protection:
 
