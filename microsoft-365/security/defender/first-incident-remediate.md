@@ -58,13 +58,13 @@ Continuing the example in [Detect, triage, and analyze incidents](first-incident
 3. Ensure the malicious file was quarantined from SharePoint
 4. Check which endpoints were affected by malware
 5. Rebuild systems
-6. Check for similar Microsoft Cloud App Security alerts for other users
+6. Check for similar Microsoft Defender for Cloud Apps alerts for other users
 7. Create a custom indicator in Microsoft Defender for Endpoint to block a Tor IP address
-8. Create a governance action in Microsoft Cloud App Security for this type of alert such as those shown in the following image:
+8. Create a governance action in Microsoft Defender for Cloud Apps for this type of alert such as those shown in the following image:
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Example of governance actions in the Microsoft Cloud App Security portal."::: 
- 
-Most of the remediation actions can be applied and tracked in Microsoft 365 Defender. 
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Example of governance actions in the Microsoft Defender for Cloud Apps portal.":::
+
+Most of the remediation actions can be applied and tracked in Microsoft 365 Defender.
 
 ## Using Playbooks
 

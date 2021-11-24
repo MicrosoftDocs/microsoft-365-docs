@@ -8,9 +8,9 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 10/01/2021
+ms.date: 11/19/2021
 ms.prod: m365-security
-ms.technology: mdep1
+ms.technology: mde
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH  
@@ -39,11 +39,8 @@ The following table describes what's included in each plan at a high level. <br/
 | [Support for Windows 10, iOS, Android OS, and macOS devices](defender-endpoint-plan-1.md#cross-platform-support) | Support for Windows (client and server) and non-Windows platforms<br/> (macOS, iOS, Android, and Linux) |
 | To try Defender for Endpoint Plan 1, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial). | To try Defender for Endpoint Plan 2, visit [https://aka.ms/MDEp2OpenTrial](https://aka.ms/MDEp2OpenTrial). |
 
-> [!IMPORTANT]
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This content includes links to other articles that might describe some features that are not included in Defender for Endpoint Plan 1 (preview).
-
 ## Next steps
 
-- [Get an overview of Microsoft Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md)
-- [Set up and configure Defender for Endpoint Plan 1 (preview)](mde-p1-setup-configuration.md)
-- [Get started using Defender for Endpoint Plan 1 (preview)](mde-plan1-getting-started.md)
+- [Get an overview of Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)
+- [Set up and configure Defender for Endpoint Plan 1](mde-p1-setup-configuration.md)
+- [Get started using Defender for Endpoint Plan 1](mde-plan1-getting-started.md)

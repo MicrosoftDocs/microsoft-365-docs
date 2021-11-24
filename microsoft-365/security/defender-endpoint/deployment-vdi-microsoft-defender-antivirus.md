@@ -2,7 +2,6 @@
 title: Microsoft Defender Antivirus Virtual Desktop Infrastructure deployment guide
 description: Learn how to deploy Microsoft Defender Antivirus in a virtual desktop environment for the best balance between protection and performance.
 keywords: vdi, hyper-v, vm, virtual machine, windows defender, antivirus, av, virtual desktop, rds, remote desktop
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,7 +10,7 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 08/31/2021
+ms.date: 10/18/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
@@ -28,7 +27,7 @@ In addition to standard on-premises or hardware configurations, you can also use
 
 See [Azure Virtual Desktop Documentation](/azure/virtual-desktop) for more details on Microsoft Remote Desktop Services and VDI support.
 
-For Azure-based virtual machines, see [Install Endpoint Protection in Azure Defender](/azure/security-center/security-center-install-endpoint-protection).
+For Azure-based virtual machines, see [Install Endpoint Protection in Microsoft Defender for Cloud](/azure/security-center/security-center-install-endpoint-protection).
 
 With the ability to easily deploy updates to VMs running in VDIs, we've shortened this guide to focus on how you can get updates on your machines quickly and easily. You no longer need to create and seal golden images on a periodic basis, as updates are expanded into their component bits on the host server and then downloaded directly to the VM when it's turned on.
 
@@ -174,7 +173,7 @@ Sometimes, Microsoft Defender Antivirus notifications may be sent to or persist 
 Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up in the Action Center on Windows 10 when scans are done or remediation actions are taken. However, your security operations team will see the results of the scan in the [Microsoft 365 Defender portal](microsoft-defender-security-center.md).
 
 > [!TIP]
-> To open the Action Center on Windows 10, take one of the following steps:
+> To open the Action Center on Windows 10 or Windows 11, take one of the following steps:
 >
 > - On the right end of the taskbar, select the Action Center icon.
 > - Press the Windows logo key button + A.
