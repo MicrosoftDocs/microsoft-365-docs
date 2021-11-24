@@ -165,7 +165,7 @@ Here's the process for searching the audit log in Microsoft 365.
 1. Go to <https://compliance.microsoft.com> and sign in.
 
     > [!TIP]
-    > Use a private browsing session (not a regular session) to access the Microsoft 365 compliance center because this will prevent the credential that you are currently logged on with from being used. To open an InPrivate Browsing session in Internet Explorer or Microsoft Edge, just press CTRL+SHIFT+P. To open a private browsing session in Google Chrome (called an incognito window), press CTRL+SHIFT+N.
+    > Use a private browsing session (not a regular session) to access the Microsoft 365 compliance center because this will prevent the credential that you are currently logged on with from being used. Press **CTRL+SHIFT+N** to open an InPrivate Browsing session in Microsoft Edge or a private browsing session in Google Chrome (called an incognito window).
 
 2. In the left pane of the Microsoft 365 compliance center, click **Audit**.
 
@@ -991,9 +991,10 @@ The following table lists events that result from labeling activities for ShareP
 |:-----|:-----|:-----|
 |Applied sensitivity label to site|SensitivityLabelApplied|A sensitivity label was applied to a SharePoint or Teams site.|
 |Removed sensitivity label from site|SensitivityLabelRemoved|A sensitivity label was removed from a SharePoint or Teams site.|
-|Applied sensitivity label to file|FileSensitivityLabelApplied|A sensitivity label was applied to a document by using Office on the web or an auto-labeling policy.|
-|Changed sensitivity label applied to file|FileSensitivityLabelChanged|A different sensitivity label was applied to a document by using Office on the web or an auto-labeling policy.|
-|Removed sensitivity label from file|FileSensitivityLabelRemoved|A sensitivity label was removed from a document by using Office on the web, an auto-labeling policy, or by using the [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) cmdlet.|
+|Applied sensitivity label to file|FileSensitivityLabelApplied|A sensitivity label was applied to a document by using Microsoft 365 apps, Office on the web. or an auto-labeling policy.|
+|Changed sensitivity label applied to file|FileSensitivityLabelChanged<br /><br>SensitivityLabelUpdated|A different sensitivity label was applied to a document. <br /><br>The operations for this activity are different depending on how the label was changed:<br /> - Office on the web or an auto-labeling policy (FileSensitivityLabelChanged) <br /> - Microsoft 365 apps (SensitivityLabelUpdated)|
+|Changed sensitivity label on a site|SensitivityLabelChanged|A different sensitivity label was applied to a SharePoint or Teams site.|
+|Removed sensitivity label from file|FileSensitivityLabelRemoved|A sensitivity label was removed from a document by using Microsoft 365 apps, Office on the web, an auto-labeling policy, or the [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) cmdlet.|
 ||||
 
 ### Retention policy and retention label activities

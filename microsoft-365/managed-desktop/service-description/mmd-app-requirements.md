@@ -1,6 +1,6 @@
 ---
 title: Microsoft Managed Desktop app requirements 
-description:  
+description:  Management tools we use
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo

@@ -23,7 +23,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
@@ -38,7 +38,7 @@ With the simplified set-up experience, you can focus on running your own test sc
 
 You'll have full access to the powerful capabilities of the platform such as automated investigations, advanced hunting, and threat analytics, allowing you to test the comprehensive protection stack that Defender for Endpoint offers.
 
-You can add Windows 10, Windows 11, Windows Server 2019, or Windows Server 2022 devices that come pre-configured to have the latest OS versions and the right security components in place as well as Office 2019 Standard installed.
+You can add Windows 10, Windows 11, Windows Server 2019, Windows Server 2016, and Linux (Ubuntu) devices that come pre-configured to have the latest OS versions and the right security components in place as well as Office 2019 Standard installed.
 
 You can also install threat simulators. Defender for Endpoint has partnered with industry leading threat simulation platforms to help you test out the Defender for Endpoint capabilities without having to leave the portal.
 
@@ -184,8 +184,6 @@ You can simulate attack scenarios using:
 You can also use [Advanced hunting](advanced-hunting-overview.md) to query data and [Threat analytics](threat-analytics.md) to view reports about emerging threats.
 
 ### Do-it-yourself attack scenarios
-
-If you are looking for a pre-made simulation, you can use our ["Do It Yourself" attack scenarios](https://security.microsoft.com/tutorials/all). These scripts are safe, documented, and easy to use. These scenarios will reflect Defender for Endpoint capabilities and walk you through investigation experience.
 
 If you are looking for a pre-made simulation, you can use our ["Do It Yourself" attack scenarios](https://security.microsoft.com/tutorials/all). These scripts are safe, documented, and easy to use. These scenarios will reflect Defender for Endpoint capabilities and walk you through investigation experience.
 
