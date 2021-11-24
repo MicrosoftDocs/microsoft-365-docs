@@ -1,5 +1,5 @@
 ---
-title: Compare Microsoft Defender for Endpoint Plan 1 (preview) to Plan 2
+title: Compare Microsoft Defender for Endpoint Plan 1 to Plan 2
 description: Compare Defender for Endpoint Plan 1 to Plan 2. Learn about the differences between the plans and select the plan that suits your organization's needs.
 keywords: Defender for Endpoint, advanced threat protection, endpoint protection
 search.appverid: MET150  
@@ -17,7 +17,7 @@ f1.keywords: NOCSH
 ms.collection: M365-security-compliance
 ---
 
-# Microsoft Defender for Endpoint Plan 1 (preview) and Plan 2
+# Microsoft Defender for Endpoint Plan 1 and Plan 2
 
 **Applies to**
 
