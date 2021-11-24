@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 11/06/2020
+ms.date: 11/23/2020
 ms.technology: mde
 ---
 
