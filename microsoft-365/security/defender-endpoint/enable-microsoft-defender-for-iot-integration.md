@@ -27,6 +27,8 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+[!include[Prerelease information](../../includes/prerelease.md)]
+
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 Microsoft Defender for Endpoint can now integrate with Microsoft Defender for IoT. This integration extends your device discovery capabilities with the agentless monitoring capabilities provided by Microsoft Defender for IoT. This will help secure enterprise IoT devices connected to IT networks, such as, Voice over Internet Protocol (VoIP) devices, printers, and cameras. It allows  organizations to take advantage of a single integrated solution that secures all of their IoT, and OT infrastructure. For more information, see [Enterprise IoT network protection -Add link].
