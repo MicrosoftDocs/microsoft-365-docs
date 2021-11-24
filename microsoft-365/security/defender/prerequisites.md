@@ -33,7 +33,7 @@ ms.technology: m365d
 Learn about licensing and other requirements for provisioning and using [Microsoft 365 Defender](microsoft-365-defender.md).
 
 ## Licensing requirements
-Any of these licenses gives you access to Microsoft 365 Defender features in Microsoft 365 Defender portal without additional cost:
+Any of these licenses gives you access to Microsoft 365 Defender features via the Microsoft 365 Defender portal without additional cost:
 
 - Microsoft 365 E5 or A5
 - Microsoft 365 E3 with the Microsoft 365 E5 Security add-on
@@ -44,7 +44,7 @@ Any of these licenses gives you access to Microsoft 365 Defender features in Mic
 - Office 365 E5 or A5
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Identity 
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Defender for Office 365 (Plan 2)
 
 For more information, [view the Microsoft 365 Enterprise service plans](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
@@ -65,7 +65,6 @@ Access Microsoft 365 Defender in the Microsoft 365 Defender portal using Microso
 
 ## Availability to US GCC, GCC High, and other US government institutions
 Currently, Microsoft 365 Defender is *not* available to:
-- US Government Community Cloud (GCC)
 - US Government Community Cloud High (GCC High)
 - US Department of Defense
 - All US government institutions with commercial licenses

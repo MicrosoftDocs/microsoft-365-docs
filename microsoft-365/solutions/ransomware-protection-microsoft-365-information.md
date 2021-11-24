@@ -15,8 +15,8 @@ ms.collection:
 - ransomware
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
-keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology
-description: Use controlled folder access, MIP, DLP, and Microsoft Cloud App Security to protect your Microsoft 365 sensitive data.
+keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, zero trust
+description: Use controlled folder access, MIP, DLP, and Microsoft Defender for Cloud Apps to protect your Microsoft 365 sensitive data.
 ---
 
 # Step 5. Protect information
@@ -87,7 +87,7 @@ To protect your sensitive information in case a ransomware attacker has access t
 
 - Use Microsoft 365 [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) to detect, warn, and block risky, inadvertent, or inappropriate sharing of data containing personal or confidential information based on sensitivity labels, both internally and externally.
 
-- Use [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) to block downloads of sensitive information such as files. You can also use [Cloud App Security anomaly detection policies](/cloud-app-security/anomaly-detection-policy#ransomware-activity) to detect a high rate of file uploads or file deletion activities.
+- Use [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) to block downloads of sensitive information such as files. You can also use [Defender for Cloud Apps anomaly detection policies](/cloud-app-security/anomaly-detection-policy#ransomware-activity) to detect a high rate of file uploads or file deletion activities.
 
 ## Impact on users and change management
 
@@ -113,7 +113,7 @@ Key information from Microsoft:
 - [Human-operated ransomware](/security/compass/human-operated-ransomware)
 - [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware)
 - [2021 Microsoft Digital Defense Report](https://www.microsoft.com/security/business/microsoft-digital-defense-report) (see pages 10-19)
-- **Ransomware: A pervasive and ongoing threat** report in the **Threat analytics** node of the Microsoft 365 Defender portal (see these [licensing requirements](/microsoft-365/security/defender/prerequisites#licensing-requirements))
+- [Ransomware: A pervasive and ongoing threat](https://security.microsoft.com/threatanalytics3/05658b6c-dc62-496d-ad3c-c6a795a33c27/overview) threat analytics report in the Microsoft 365 Defender portal
 
 Microsoft 365:
 
@@ -122,6 +122,8 @@ Microsoft 365:
 - [Malware and ransomware protection](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [Protect your Windows 10 PC from ransomware](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [Handling ransomware in SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
+- [Threat analytics reports for ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) in the Microsoft 365 Defender portal
+
 
 Microsoft 365 Defender:
 
@@ -134,16 +136,24 @@ Microsoft Azure:
 - [Backup and restore plan to protect against ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26-minute video)
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
-- [Advanced multistage attack detection in Azure Sentinel](/azure/sentinel/fusion#ransomware)
-- [Fusion Detection for Ransomware in Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+- [Advanced multistage attack detection in Microsoft Sentinel](/azure/sentinel/fusion#ransomware)
+- [Fusion Detection for Ransomware in Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
-Microsoft Cloud App Security:
+Microsoft Defender for Cloud Apps:
 
--  [Create anomaly detection policies in Cloud App Security](/cloud-app-security/anomaly-detection-policy)
+-  [Create anomaly detection policies in Defender for Cloud Apps](/cloud-app-security/anomaly-detection-policy)
 
 Microsoft Security team blog posts:
 
 - [3 steps to prevent and recover from ransomware (September 2021)](https://www.microsoft.com/security/blog/2021/09/07/3-steps-to-prevent-and-recover-from-ransomware/)
+- [A guide to combatting human-operated ransomware: Part 1 (September 2021)](https://www.microsoft.com/security/blog/2021/09/20/a-guide-to-combatting-human-operated-ransomware-part-1/)
+
+  Key steps on how Microsoft's Detection and Response Team (DART) conducts ransomware incident investigations.
+
+- [A guide to combatting human-operated ransomware: Part 2 (September 2021)](https://www.microsoft.com/security/blog/2021/09/27/a-guide-to-combatting-human-operated-ransomware-part-2/)
+
+  Recommendations and best practices.
+
 - [Becoming resilient by understanding cybersecurity risks: Part 4—navigating current threats (May 2021)](https://www.microsoft.com/security/blog/2021/05/26/becoming-resilient-by-understanding-cybersecurity-risks-part-4-navigating-current-threats/)
 
   See the **Ransomware** section.
@@ -154,4 +164,3 @@ Microsoft Security team blog posts:
 
 - [Ransomware response—to pay or not to pay? (December 2019)](https://www.microsoft.com/security/blog/2019/12/16/ransomware-response-to-pay-or-not-to-pay/)
 - [Norsk Hydro responds to ransomware attack with transparency (December 2019)](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
-

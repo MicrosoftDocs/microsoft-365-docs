@@ -75,7 +75,7 @@ sections:
               > [!NOTE]
               > Once you inactivate a tenant, you can't take action on the tenant until inactivation is complete. It may take up to 48 hours for inactivation to complete.
           
-          To learn more about tenants, see [Microsoft 365 Lighthouse tenant list overview](m365-lighthouse-tenant-list-overview.md).
+          To learn more about tenants, see [Microsoft 365 Lighthouse tenants page overview](m365-lighthouse-tenants-page-overview.md).
 
       - question: Will Microsoft 365 Lighthouse work if my customer tenants have other subscriptions besides Microsoft 365 Business Premium or Microsoft 365 E3?
         answer: |
@@ -95,5 +95,8 @@ sections:
           
       - question: Where can I submit feedback and ideas?
         answer: |
-          Your feedback matters and is important to us! Submit your feedback or feature ideas through the [Microsoft Endpoint Manager Intune Feedback page](https://go.microsoft.com/fwlink/?linkid=2151507). You can start conversations about Lighthouse and Windows 365 features, ask questions to other partners or Microsoft employees, provide feature feedback, and more.
+          Your feedback matters and is important to us! There are a couple different ways for you to submit feedback:
+
+          - Select the Feedback icon in the upper-right corner of Lighthouse. 
+          - Respond to the occasional (not more than once a month) pop-up window in Lighthouse that asks you to provide feedback.
           

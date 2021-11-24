@@ -15,6 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article 
+ms.custom: api
 ---
 
 # Get Machines security states collection API
@@ -74,7 +75,7 @@ Content-type: application/json
 
 Here's an example of the response.
 
-Field *id* contains device id and equal to the field *id** in devices info.
+Field *id* contains device ID and equal to the field *id** in devices info.
 
 ```json
 HTTP/1.1 200 OK

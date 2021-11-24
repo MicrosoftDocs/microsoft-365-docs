@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
+ms.custom: api
 ---
 
 # Get KB collection API

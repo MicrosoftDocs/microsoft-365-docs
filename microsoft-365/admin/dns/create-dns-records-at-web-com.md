@@ -42,24 +42,24 @@ After you add these records at web.com, your domain will be set up to work with 
   
 When you signed up for web.com, you added a domain by using the web.com **Setup** process. 
   
-To verify and create DNS records for your domain in Microsoft, you first need to change the nameservers at your domain registrar so that they use web.com's nameservers.
+To verify and create DNS records for your domain in Microsoft, you first need to change the nameservers at your domain registrar so that they use the web.com nameservers.
   
 To change your domain's name servers at your domain registrar's website yourself, follow these steps.
   
 1. Find the area on the domain registrar's website where you can edit the nameservers for your domain.
-    
+
 2. Either create two nameserver records by using the values in the following table, or edit the existing nameserver records so that they match these values.
-    
+
     |||
     |:-----|:-----|
     |First nameserver  <br/> |Use the nameserver value provided by web.com.  <br/> |
     |Second nameserver  <br/> |Use the nameserver value provided by web.com.  <br/> |
-   
+
     > [!TIP]
     > You should use at least two name server records. If there are any other name servers listed, you should delete them. 
   
 3. Save your changes.
-    
+
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft email and other services will be all set to work with your domain. 
   
@@ -72,42 +72,50 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
   
 1. To get started, go to your domains page at web.com by using [this link](https://checkout.web.com/manage-it/index.jsp). Log in first.
   
-1. On the landing page, select **Domain Names**. 
+1. On the landing page, select **Domain Names**.
   
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
 
     :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="Select Manage from the drop-down list."::: 
   
 1. Scroll down to select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
-    
+
     You might have to select **Continue** to get to the Manage Advanced DNS Records page.
   
     :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
 
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Select + ADD RECORD.":::
+
 1. Under **Type**, select **TXT** from the drop-down list.
 
-1. Select, or copy and paste, the values from the following table. 
-    
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-TXT.png" alt-text="Select TXT from the Type drop-down list.":::
+
+1. Select, or copy and paste, the values from the following table.
+
     |**Refers**|**TXT value**|**TTL**|
     |:-----|:-----|:----|
     |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)    |1 Hour  <br/> |
   
-5. Select **ADD**.
+1. Select **ADD**.
   
-6. Wait a few minutes before you verify your new TXT record, so that the record you just created can update across the Internet.
-    
+    Wait a few minutes before you verify your new TXT record, so that the record you just created can update across the Internet.
+
 Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request the record. When Microsoft finds the correct TXT record, your domain is verified.
   
 To verify the record in Microsoft 365:
   
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
-    
-2. On the Domains page, select the domain that you're verifying, and select **Start setup**.   
+
+1. On the Domains page, select the domain that you're verifying, and select **Start setup**. 
+
+    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Select Start setup.":::
+
+1. Select **Continue**.
   
-3. On the **Verify domain** page, select **Verify**.
-    
+1. On the **Verify domain** page, select **Verify**.
+
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
   
@@ -122,24 +130,30 @@ To verify the record in Microsoft 365:
     :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="Select Manage from the drop-down list.":::
   
 1. Scroll down to select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
-    
+
     You might have to select **Continue** to get to the Manage Advanced DNS Records page.
   
     :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
 
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Select + ADD RECORD.":::
+
 1. Under **Type**, select **MX** from the drop-down list.
 
 1. Select, or copy and paste, the values from the following table. 
-    
+
     | **Refers to** | **Mail server**|**Priority**|**TTL**|
     |:-----|:-----|:-----|:-----| 
     | @ |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from the Microsoft admin center.   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) | For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) <br/> 1| 1 Hour  <br/> |
-   
+
 1. Select **ADD**.
-  
-1. If there are any other MX records listed in the **MX Records** section, select the check box next to the record under **Delete**, and select **Save**. 
+
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-mx-add.png" alt-text="Select ADD.":::
+
+1. If there are any other MX records, delete all of them by selecting the edit tool, and then **Delete** for each record. 
+
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-edit.png" alt-text="Select Edit.":::
 
 ## Add the CNAME record required for Microsoft
 
@@ -148,24 +162,30 @@ To verify the record in Microsoft 365:
 1. On the landing page, select **Domain Names**. 
   
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
- 
+
     :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="Select Manage from the drop-down list.":::
- 
+
 1. Scroll down to select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
-    
+
     You might have to select **Continue** to get to the Manage Advanced DNS Records page.
   
     :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
 
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Select + ADD RECORD.":::
+
 1. Under **Type**, select **CNAME** from the drop-down list.
 
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname.png" alt-text="Select CNAME from the Type drop-down list.":::
+
 1. Select, or copy and paste, the values from the following table. 
-    
+
     |**Refers to** | **Host name** | **Alias to**|**TTL**|
-    |:-----|:-----|:-----|
+    |:-----|:-----|:-----|:-----|
     | Other Host  <br/>| autodiscover  <br/>| autodiscover.outlook.com  <br/> | 1 Hour  <br/>  |
+
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname-values.png" alt-text="Type or copy and paste the CNAME values into the window.":::
   
 1. Select **ADD**.
   
@@ -183,22 +203,26 @@ To verify the record in Microsoft 365:
     :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="Select Manage from the drop-down list.":::
   
 1. Scroll down to select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
-    
+
     You might have to select **Continue** to get to the Manage Advanced DNS Records page.
   
     :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
 
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Select + ADD RECORD.":::
+
 1. Under **Type**, select **TXT** from the drop-down list.
 
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-TXT.png" alt-text="Select TXT from the Type drop-down list.":::
+
 1. Select, or copy and paste, the values from the following table. 
-    
+
     |**Refers to**|**TXT value**|**TTL**|
     |:-----|:-----|:-----|
     |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.  | 1 Hour  <br/> 
- 
-5. Select **ADD**.
+
+1. Select **ADD**.
   
 ## Advanced option: Skype for Business
 
@@ -215,41 +239,45 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
     :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="Select Manage from the drop-down list.":::
   
 1. Scroll down to select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
-    
+
     You might have to select **Continue** to get to the Manage Advanced DNS Records page.
   
     :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
 
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Select + ADD RECORD.":::
+
 1. Under **Type**, select **SRV** from the drop-down list.
 
-1. Select, or copy and paste, the values from the following table. 
-    
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-srv.png" alt-text="Select SRV from the Type drop-down list.":::
+
+1. Select, or copy and paste, the values from the following table.
+
     | **Type** |**Service**|**Protocol**|**Weight**|**Port**|**Target**|**Priority**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     | SRV |_sip  <br/> |TLS  <br/> |100  <br/> |443  <br/> |sipdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> | 1  <br/> | 1 Hour  <br/> |
     | SRV |_sipfederationtls  <br/> |TCP <br/> |100  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> |1  <br/> | 1 Hour  <br/> |
+
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-srv-add.png" alt-text="Type or copy and paste the values from the table into the SRV record window.":::
+
+1. Select **ADD**.
   
-6. Select **ADD**.
-  
-7. To add the other SRV record:
-    
-    In the **Advanced DNS** section, create a record by using the values from the second row in the table, and then again select **ADD** to complete that record. 
-    
+1. Add the other SRV record by copying the values from the second row of the table.
+
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
 
-### Add the two required CNAME records 
-    
+### Add the two required CNAME records
+
 1. To get started, go to your domains page at web.com by using [this link](https://checkout.web.com/manage-it/index.jsp). Log in first.
   
-1. On the landing page, select **Domain Names**. 
-  
+1. On the landing page, select **Domain Names**.
+
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
- 
+
     :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="Select Manage from the drop-down list.":::
- 
+
 1. Scroll down to select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
   
     :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
@@ -258,19 +286,25 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Select + ADD RECORD.":::
+
 1. Under **Type**, select **CNAME** from the drop-down list.
 
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname.png" alt-text="Select CNAME from the Type drop-down list.":::
+
 1. Select, or copy and paste, the values from the following table. 
-    
+
     | **Type**|**Refers to | Host Name**|**Alias to**| **TTL** |
     |:-----|:-----|:-----|:-----|:-----|
     | CNAME | Other Host | sip  <br/> |sipdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> |1 Hour  <br/> |
     | CNAME| Other Host | lyncdiscover  <br/> |webdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> | 1 Hour  <br/> |
   
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname-values.png" alt-text="Type or copy and paste the CNAME values into the window.":::
+
 1. Select **ADD**.
   
-1. Using the preceding steps and the values from the second row in the table, add the other CNAME record.
-    
+1. Add the other CNAME record by copying the values from the second row of the table.
+
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
@@ -282,32 +316,38 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 1. To get started, go to your domains page at web.com by using [this link](https://checkout.web.com/manage-it/index.jsp). Log in first.
   
-1. On the landing page, select **Domain Names**. 
+1. On the landing page, select **Domain Names**.
   
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
- 
+
     :::image type="content" source="../../media/dns-webcom/webcom-domains-1.png" alt-text="Select Manage from the drop-down list.":::
- 
+
 1. Scroll down to select **Advanced Tools**, and next to **Advanced DNS Records**, select **MANAGE**.
-    
+
     You might have to select **Continue** to get to the Manage Advanced DNS Records page.
   
     :::image type="content" source="../../media/dns-webcom/webcom-domains-2.png" alt-text="Next to Advanced DNS records, select MANAGE.":::
 
 1. On the Manage Advanced DNS Records page, select **+ ADD RECORD**.
 
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-add-record.png" alt-text="Select + ADD RECORD.":::
+
 1. Under **Type**, select **CNAME** from the drop-down list.
 
-1. Select, or copy and paste, the values from the following table. 
-    
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname.png" alt-text="Select CNAME from the Type drop-down list.":::
+
+1. Select, or copy and paste, the values from the following table.
+
     | **Type**|**Refers to | Host Name**|**Alias to**| **TTL** |
     |:-----|:-----|:-----|:-----|:-----|
     | CNAME | Other Host | enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> **This value CANNOT end with a period (.)** <br/> | 1 Hour  <br/> |
     | CNAME | Other Host |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> **This value CANNOT end with a period (.)** <br/> | 1 Hour  <br/> |
   
+    :::image type="content" source="../../media/dns-webcom/webcom-domains-cname-values.png" alt-text="Type or copy and paste the CNAME values from the table into the window.":::
+
 1. Select **ADD**.
   
-1. Using the preceding steps and the values from the second row in the table, add the other CNAME record.
-    
+1. Add the other CNAME record by copying the values from the second row of the table.
+
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).

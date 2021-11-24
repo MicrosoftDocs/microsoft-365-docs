@@ -38,11 +38,11 @@ Retrieves specific [Machine Action](machineaction.md) by its ID.
 
 ## Limitations
 
-1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+- Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Defender for Endpoint APIs](apis-intro.md)
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Defender for Endpoint APIs](apis-intro.md).
 
 Permission type|Permission|Permission display name
 :---|:---|:---
@@ -74,7 +74,7 @@ Empty
 
 ## Response
 
-If successful, this method returns 200, Ok response code with a [Machine Action](machineaction.md) entity. If machine action entity with the specified id was not found - 404 Not Found.
+If successful, this method returns 200, Ok response code with a [Machine Action](machineaction.md) entity. If machine action entity with the specified ID was not found - 404 Not Found.
 
 ## Example
 
@@ -88,7 +88,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/2e9da30d-27f6-42
 
 ### Response example
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 HTTP/1.1 200 Ok

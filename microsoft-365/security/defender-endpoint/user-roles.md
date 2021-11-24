@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
 ---
@@ -21,7 +22,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-roles-abovefoldlink)
@@ -32,7 +34,7 @@ ms.technology: mde
 
 The following steps guide you on how to create roles in Microsoft 365 Defender. It assumes that you have already created Azure Active Directory user groups.
 
-1. Log in to [Microsoft 365 Defender](https://security.microsoft.com/) using account with a Security administrator or Global administrator role assigned.
+1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> using account with a Security administrator or Global administrator role assigned.
 
 2. In the navigation pane, select **Settings** \> **Endpoints** \> **Roles** (under **Permissions**).
 
@@ -69,7 +71,7 @@ The following steps guide you on how to create roles in Microsoft 365 Defender. 
     > [!NOTE]
     > This setting is only available in the Microsoft Defender for Endpoint administrator (default) role.
 
-- **Manage security settings in Security Center** - Configure alert suppression settings, manage folder exclusions for automation, onboard and offboard devices, and manage email notifications, manage evaluation lab
+- **Manage security settings in Defender for Cloud** - Configure alert suppression settings, manage folder exclusions for automation, onboard and offboard devices, and manage email notifications, manage evaluation lab
 
 - **Live response capabilities**
   - **Basic** commands:
@@ -86,7 +88,7 @@ For more information on the available commands, see [Investigate devices using L
 
 ## Edit roles
 
-1. Log in to [Microsoft 365 Defender](https://security.microsoft.com/) using account with Security administrator or Global administrator role assigned.
+1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> using account with Security administrator or Global administrator role assigned.
 
 2. In the navigation pane, select **Settings** \> **Endpoints** \> **Roles** (under **Permissions**).
 
@@ -100,7 +102,7 @@ For more information on the available commands, see [Investigate devices using L
 
 ## Delete roles
 
-1. Log in to [Microsoft 365 Defender](https://security.microsoft.com/) using account with Security administrator or Global administrator role assigned.
+1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> using account with Security administrator or Global administrator role assigned.
 
 2. In the navigation pane, select **Settings** \> **Endpoints** \> **Roles** (under **Permissions**).
 
