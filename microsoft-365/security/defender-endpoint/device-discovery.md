@@ -33,8 +33,8 @@ Protecting your environment requires taking inventory of the devices that are in
 
 Microsoft Defender for Endpoint provides a device discovery capability that helps you find unmanaged devices connected to your corporate network without the need for extra appliances or cumbersome process changes. Device discovery uses onboarded endpoints, in your network to collect, probe, or scan your network to discover unmanaged devices. The device discovery capability allows you to discover:
 
-- laptops, workstations and servers not yet onboarded to Microsoft Defender for Endpoint
-- Network devices like routers
+- Enterprise endpoints (Laptops, workstations and servers) not yet onboarded to Microsoft Defender for Endpoint
+- Network devices like routers and switches
 - IoT devices like printers and cameras
 
 Whether it's an unpatched printer, a network devices with weak security configuration, or a server with no security controls, Unknown and unmanaged devices, introduce significant risks to your network. Once devices are discovered, you can:
@@ -80,23 +80,6 @@ You can change and customize your discovery settings, for more information see [
 
 > [!NOTE]
 > The discovery engine distinguishes between network events that are received in the corporate network versus outside of the corporate network. Devices that are not connected to corporate networks will not be discovered or listed in the device inventory.
-
-## Network device discovery
-
-_A designated Microsoft Defender for Endpoint device will be used on each network segment to perform periodic authenticated scans of preconfigured network devices. Once discovered, Defender for Endpoint's threat and vulnerability management capabilities provide integrated workflows to secure discovered switches, routers, WLAN controllers, firewalls, and VPN gateways._
-
-## Device discovery integration
-
-To extend your device discovery capabilities to include areas of the network the following integrations are available:
-
-Microsoft Defender for IoT is a unified security solution for identifying IoT/OT devices, vulnerabilities, and threats. It enables you to secure your entire IoT/OT environment, whether you need to protect existing IoT/OT devices or build security into new IoT innovations. Integration with Microsoft Defender for IoT extends Microsoft Defender for Endpoint device discovery capabilities. 
-Microsoft Defender for IoT is a unified security solution for identifying IoT/OT devices, vulnerabilities, and threats.
-
-View your complete IT/IoT inventory along side the rest of your IT devices (workstations, servers and mobile) within a single unified view.
-For more information:
-
-Microsoft have partnered with Corelight to enable sending of events from the Corelight network appliances to Microsoft 365 Defender.
-This will allow Microsoft 365 Defender to extend its security value with visibility to network activities of unmanaged devices in cases they communicate with other unmanaged devices or external networks.
 
 ## Device Inventory
 
