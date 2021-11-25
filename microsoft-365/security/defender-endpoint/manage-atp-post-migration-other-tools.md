@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection:
   - M365-security-compliance
   - m365solution-scenario
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/23/2020
 ms.reviewer: chventou
@@ -25,7 +26,7 @@ ms.reviewer: chventou
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -73,7 +74,7 @@ To learn more, see [Configure and manage Microsoft Defender Antivirus with mpcmd
 
 ## Configure your Microsoft 365 Defender portal
 
-If you haven't already done so, configure your [Microsoft 365 Defender](https://security.microsoft.com/) portal to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture.
+If you haven't already done so, configure your <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture.
 
 You can also configure whether and what features end users can see in the Microsoft Defender Security Center.
 

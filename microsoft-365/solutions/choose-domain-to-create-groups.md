@@ -116,7 +116,7 @@ There are a few more things to know:
     
 ## Related content
 
-[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step) (article)
+[Collaboration governance planning recommendations](collaboration-governance-overview.md#collaboration-governance-planning-recommendations) (article)
 
 [Create your collaboration governance plan](collaboration-governance-first.md) (article)
 
