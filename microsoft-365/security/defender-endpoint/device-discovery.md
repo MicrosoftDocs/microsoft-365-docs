@@ -57,8 +57,10 @@ There are two modes of discovery available:
 - **Basic discovery**: Endpoints will passively collect events in your network and extract device information from them.
 - **Standard discovery** (recommended): Endpoints will actively find devices in your network. This will better guarantee the discovery of endpoints and provide richer device classification.
 
+You can change and customize your discovery settings, for more information see [Configure device discovery](configure-device-discovery.md).
+
 > [!IMPORTANT]
-> Discovery is set to basic mode. You can choose to retain this configuration through the settings page. Standard discovery will be the default mode for all customers starting July 19, 2021 -
+> Discovery is set to basic mode. You can choose to retain this configuration through the settings page. Standard discovery will be the default mode for all customers starting July 19, 2021 
 Only devices that were observed by the basic discovery mode will be actively probed in standard mode.
 
 Device discovery improves your visibility over all the devices in your network so you can take action to protect them. Discovered devices appear in the device inventory.
