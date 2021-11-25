@@ -1,6 +1,6 @@
 ---
 title: Device discovery overview
-description: Learn how to apply endpoint discovery at Microsoft 365 Defender to find unmanaged devices in your network
+description: Learn how to leverage endpoint discovery in Microsoft 365 Defender to find unmanaged devices in your network
 keywords: device discovery, discover, passive, proactive, network, visibility, server, workstation, onboard, unmanaged devices
 ms.prod: m365-security
 ms.mktglfcycl: deploy
