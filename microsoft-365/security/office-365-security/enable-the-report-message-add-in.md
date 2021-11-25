@@ -73,7 +73,7 @@ We don't recommend the built-in reporting experience in Outlook because it can't
 
 You need to be assigned permissions before you can run this cmdlet. To find the permissions required to run any cmdlet or parameter in your organization, see [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/find-exchange-cmdlet-permissions).
 
-Below is the powershell command to dsable the built-in reporting experience
+Run the following PowerShell command to disable the built-in reporting experience:
 
 ```powershell
 Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled $false
