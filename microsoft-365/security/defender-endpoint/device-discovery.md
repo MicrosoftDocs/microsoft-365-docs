@@ -67,7 +67,7 @@ Device discovery improves your visibility over all the devices in your network s
 
 Devices that have been discovered but have not yet been onboarded and secured by Microsoft Defender for Endpoint will be listed in Device Inventory within the Endpoints tab.
 
-You can now use a new filter in the device inventory list called Onboarding status which can have any of the following values:
+You can now use a new filter in the device inventory list called Onboarding status, which can have any of the following values:
 
 - Onboarded: The endpoint is onboarded to Microsoft Defender for Endpoint.
 - Can be onboarded: The endpoint was discovered in the network and the Operating System was identified as one that is supported by Microsoft Defender for Endpoint, but it is not currently onboarded. We highly recommend onboarding these devices.
