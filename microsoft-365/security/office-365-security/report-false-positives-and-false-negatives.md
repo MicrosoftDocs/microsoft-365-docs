@@ -47,9 +47,9 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 
 We don't recommend the built-in reporting experience in Outlook because it can't use the [user submission policy](./user-submission.md). We recommend using the Report Message add-in or the Report Phishing add-in instead.
 
-You need to be assigned permissions before you can run this cmdlet.  To find the permissions required to run any cmdlet or parameter in your organization, see [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/find-exchange-cmdlet-permissions).
+You need to be assigned permissions before you can run this cmdlet. To find the permissions required to run any cmdlet or parameter in your organization, see [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/find-exchange-cmdlet-permissions).
 
-Run the below powershell command to disable the built-in reporting experience in Outlook on the web.
+Run the following PowerShell command to disable the built-in reporting experience in Outlook on the web:
 
 ```powershell
 Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled $false
