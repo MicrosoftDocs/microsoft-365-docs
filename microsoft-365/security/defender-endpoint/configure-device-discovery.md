@@ -49,16 +49,16 @@ To set up device discovery, take the following configuration steps in <a href="h
     - If you want to configure Basic as the discovery mode to use on your onboarded devices, select **Basic** and then select **Save**
     - To configure Standard, select **Standard**
 
-2. If you've selected to use standard discovery, select which devices to use for active probing: all devices or on a subset by specifying their device tags.
-3. Select **Save**
+2. If you've selected to use standard discovery, select which devices to use for active probing: all devices or on a subset by specifying their device tags, and then select **Save**
 
 > [!NOTE]
 >Standard discovery uses various PowerShell scripts to actively probe devices in the network. Those PowerShell scripts are Microsoft signed and are executed from the following location: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`. For example, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
 
-
 ## Exclude devices from being actively probed in standard discovery
 
 If there are devices on your network which shouldn't be actively scanned (for example, devices used as honeypots for another security tool), you can also define a list of exclusions to prevent them from being scanned. Note that devices can still be discovered using Basic discovery mode and can also be discovered through multicast discovery attempts. Those devices will be passively discovered but won't be actively probed.
+
+You can configure the devices to exclude in the **Exclusions** page.
 
 ## Select networks to monitor
 
