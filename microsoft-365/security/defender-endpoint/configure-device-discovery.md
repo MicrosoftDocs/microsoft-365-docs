@@ -54,7 +54,7 @@ To set up device discovery, take the following configuration steps in <a href="h
 
 ## Exclude devices from being actively probed in standard discovery
 
-If there are devices on your network which shouldn't be actively scanned (for example, devices used as honeypots for another security tool), you can also define a list of exclusions to prevent them from being scanned. Note that devices can still be discovered using Basic discovery mode and can also be discovered through multicast discovery attempts. Those devices will be passively discovered but won't be actively probed.
+If there are devices on your network that shouldn't be actively scanned (for example, devices used as honeypots for another security tool), you can also define a list of exclusions to prevent them from being scanned. Note that devices can still be discovered using Basic discovery mode and can also be discovered through multicast discovery attempts. Those devices will be passively discovered but won't be actively probed.
 
 You can configure the devices to exclude in the **Exclusions** page.
 
@@ -79,7 +79,7 @@ You can apply a filter to view any of the following network discovery states:
 
 ### Configure the network monitor state
 
-You control where device discovery takes place. Monitored networks is where device discovery will be performed and are typically corporate networks. You can also choose to ignore networks or select the initial discovery classification after modifying a state.
+You control where device discovery takes place. Monitored networks are where device discovery will be performed and are typically corporate networks. You can also choose to ignore networks or select the initial discovery classification after modifying a state.
 
 Choosing the initial discovery classification means applying the default system-made network monitor state. Selecting the default system-made network monitor state means that networks that were identified to be corporate, will be monitored, and ones identified as non-corporate, will be ignored automatically.
 
