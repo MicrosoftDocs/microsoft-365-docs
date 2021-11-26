@@ -92,6 +92,9 @@ If you experience any installation failures, refer to [Troubleshooting installat
        - For 6.9: 2.6.32-696.* 
        - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.41.2:
 
+ > [!NOTE]
+ > After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, are provided for technical upgrade support only.
+
     List of versions:
 
     - 2.6.32-754.2.1.el6.x86_64 
