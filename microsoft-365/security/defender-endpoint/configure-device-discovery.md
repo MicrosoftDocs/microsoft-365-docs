@@ -44,12 +44,10 @@ You can customize the list of devices that are used to perform standard discover
 
 To set up device discovery, take the following configuration steps in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
 
-1. Navigate to **Settings** > **Device discovery**.
-
+1. Navigate to **Settings** > **Device discovery**
+ 
     - If you want to configure Basic as the discovery mode to use on your onboarded devices, select **Basic** and then select **Save**
-    - To configure Standard, select **Standard**
-
-2. If you've selected to use standard discovery, select which devices to use for active probing: all devices or on a subset by specifying their device tags, and then select **Save**
+    - If you've selected to use standard discovery, select which devices to use for active probing: all devices or on a subset by specifying their device tags, and then select **Save**
 
 > [!NOTE]
 >Standard discovery uses various PowerShell scripts to actively probe devices in the network. Those PowerShell scripts are Microsoft signed and are executed from the following location: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`. For example, `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\UnicastScannerV1.1.0.ps1`.
