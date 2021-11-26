@@ -970,8 +970,8 @@ If a Forms activity is performed by a coauthor or an anonymous responder, it wil
 |Deleted collection from the Recycle Bin|CollectionHardDeleted|Form owner hard deleted a collection from Recycle Bin.|
 |Moved collection to Recycle Bin|CollectionSoftDeleted|Form owner moved a collection to Recycle Bin.|
 |Renamed a collection|CollectionRenamed|Form owner changed the name of a collection.|
-|Moved a form Into Collection|MovedFormIntoCollection|Form owner moved a form into collection.|
-|Moved a form Out of Collection|MovedFormOutofCollection|Form owner moved a form out of collection.|
+|Moved a form into collection|MovedFormIntoCollection|Form owner moved a form into collection.|
+|Moved a form out of collection|MovedFormOutofCollection|Form owner moved a form out of collection.|
 ||||
 
 #### Forms activities performed by coauthors and anonymous responders
