@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint alert fields
-description: Understand how the alert fields map to the values in Microsoft Defender for Endpoint
+title: Microsoft Defender for Endpoint detection fields
+description: Understand how the detection fields map to the values in Microsoft Defender for Endpoint
 keywords: detections, detections fields, fields, api, fields, pull Detections, rest api, request, response
 search.appverid: met150
 ms.prod: m365-security
@@ -18,7 +18,7 @@ ms.technology: mde
 ms.custom: api
 ---
 
-# Microsoft Defender for Endpoint alert fields
+# Microsoft Defender for Endpoint detection fields
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -29,18 +29,27 @@ ms.custom: api
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
 
+> [!NOTICE]
+> The Microsoft Defender for Endpoint SIEM REST API is planned for deprecation, as the Microsoft Defender for Endpoint Alert API and the Microsoft 365 Defender Incident API that replace it provide much richer metadata - including the up-to-date status of the alert, all evidence entities that are related to the alert, all comments entered by analysts, and allows updating  status, assignedTo, classification, and determination fields programmatically.
+> 
+> No new onboarding to the Microsoft Defender for Endpoint SIEM API will be supported - instead, see [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md) for more information on integrating with the Microsoft Defender for Endpoint Alert API or the Microsoft 365 Defender Incident API.
+> 
+> For information on integration SIEM Tools (Splunk, ArcSight, and QRadar), see [Integrate your SIEM tools with Microsoft Defender for Endpoint](../defender/configure-siem.md).
+
 Understand what data fields are exposed as part of the detections API and how they map to Microsoft 365 Defender.
 
 > [!NOTE]
 >
-> - [Defender for Endpoint Alert](alerts.md) is composed from one or more detections.
-> - **Microsoft Defender ATP Detection** is composed from the suspicious event occurred on the Device and its related **Alert** details.
+> - [Microsoft Defender for Endpoint Alert](alerts.md) is composed from one or more detections.
+> - **Microsoft Defender for Endpoint Detection** is composed from the suspicious event occurred on the Device and its related **Alert** details.
 > - The Microsoft Defender for Endpoint Alert API is the latest API for alert consumption and contain a detailed list of related evidence for each alert. For more information, see [Alert methods and properties](alerts.md) and [List alerts](get-alerts.md).
 
 ## Detections API fields and portal mapping
 
 The following table lists the available fields exposed in the detections API payload. It shows examples for the populated values and a reference on how data is reflected on the portal.
-
+> 
+> The MicroFocus ArcSight FlexConnector described below has been replaced with an official SmartConnector that calls the Microsoft 365 Defender Incident API. For more information, see [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md).
+> 
 The ArcSight field column contains the default mapping between the Defender for Endpoint fields and the built-in fields in ArcSight. You can download the mapping file from the portal when you enable the SIEM integration feature and you can modify it to match the needs of your organization. For more information, see [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md).
 
 Field numbers match the numbers in the images below.
