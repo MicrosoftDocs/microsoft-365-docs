@@ -8,7 +8,7 @@ metadata:
   manager: dansimp 
   audience: Admin
   ms.topic: overview
-  ms.date: 11/23/2021
+  ms.date: 11/29/2021
   ms.prod: m365-security
   ms.technology: mdb
   localization_priority: Normal
@@ -83,6 +83,15 @@ sections:
           2. Select **Endpoint security**, and then, under **Setup**, select **Microsoft Defender for Endpoint**.
 
           3. Under **Endpoint Security Profile Settings (Preview)**, set **Allow Microsoft Defender for Endpoint to enforce Endpoint Security Configurations (Preview)** to **On**.
+
+      - question: Something went wrong with onboarding devices.
+        answer: |
+
+          While onboarding devices, something went wrong in the Microsoft 365 Defender portal. The onboarding process in Microsoft Defender for Business uses a capability called Security Management for Microsoft Defender for Endpoint. If onboarding fails, the issue is likely caused by an issue with this capability. To resolve the issue, see the following articles:
+          
+          - [Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint](microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt)
+
+
 
 additionalContent: |
  ## See also
