@@ -29,11 +29,11 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-|[![Phase 1: Prepare.](images/phase-diagrams/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare](switch-to-microsoft-defender-prepare.md)|![Phase 2: Set up.](images/phase-diagrams/setup.png)<br/>Phase 2: Set up|[![Phase 3: Onboard3.](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Phase 3: Onboard](switch-to-microsoft-defender-onboard.md)|
+|[![Phase 1: Prepare.](images/phase-diagrams/prepare.png)](switch-to-mde-phase-1.md)<br/>[Phase 1: Prepare](switch-to-mde-phase-1.md)|![Phase 2: Set up.](images/phase-diagrams/setup.png)<br/>Phase 2: Set up|[![Phase 3: Onboard3.](images/phase-diagrams/onboard.png)](switch-to-mde-phase-3.md)<br/>[Phase 3: Onboard](switch-to-mde-phase-3.md)|
 |---|---|---|
 ||*You are here!*||
 
-**Welcome to the Setup phase of [switching to Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**. This phase includes the following steps:
+**Welcome to the Setup phase of [switching to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)**. This phase includes the following steps:
 
 1. [Reinstall/enable Microsoft Defender Antivirus on your endpoints](#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).
 2. [Configure Defender for Endpoint](#configure-defender-for-endpoint).
@@ -196,6 +196,6 @@ Device groups, device collections, and organizational units enable your security
 
 ## Next step
 
-**Congratulations**! You have completed the Setup phase of [switching to Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)!
+**Congratulations**! You have completed the Setup phase of [switching to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)!
 
-- [Proceed to Phase 3: Onboard to Defender for Endpoint](switch-to-microsoft-defender-onboard.md)
+- [Proceed to Phase 3: Onboard to Defender for Endpoint](switch-to-mde-phase-3.md)

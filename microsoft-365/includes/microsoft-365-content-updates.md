@@ -370,10 +370,10 @@
 | 11/24/2021 | [Specify the cloud protection level for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/specify-cloud-protection-level-microsoft-defender-antivirus?view=o365-21vianet) | modified |
 | 11/24/2021 | [Stop and quarantine file API](/microsoft-365/security/defender-endpoint/stop-and-quarantine-file?view=o365-21vianet) | modified |
 | 11/24/2021 | [Supported Microsoft Defender for Endpoint response APIs](/microsoft-365/security/defender-endpoint/supported-response-apis?view=o365-21vianet) | modified |
-| 11/24/2021 | [Make the switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-migration?view=o365-21vianet) | modified |
-| 11/24/2021 | [Switch to Microsoft Defender for Endpoint - Onboard](/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-onboard?view=o365-21vianet) | modified |
-| 11/24/2021 | [Switch to Microsoft Defender for Endpoint - Prepare](/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-prepare?view=o365-21vianet) | modified |
-| 11/24/2021 | [Switch to Microsoft Defender for Endpoint - Setup](/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-setup?view=o365-21vianet) | modified |
+| 11/24/2021 | [Make the switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/switch-to-mde-overview?view=o365-21vianet) | modified |
+| 11/24/2021 | [Switch to Microsoft Defender for Endpoint - Onboard](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-3?view=o365-21vianet) | modified |
+| 11/24/2021 | [Switch to Microsoft Defender for Endpoint - Prepare](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-1?view=o365-21vianet) | modified |
+| 11/24/2021 | [Switch to Microsoft Defender for Endpoint - Setup](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2?view=o365-21vianet) | modified |
 | 11/24/2021 | [Techniques in the device timeline](/microsoft-365/security/defender-endpoint/techniques-device-timeline?view=o365-21vianet) | modified |
 | 11/24/2021 | [Understand the analyst report section in threat analytics.](/microsoft-365/security/defender-endpoint/threat-analytics-analyst-reports?view=o365-21vianet) | modified |
 | 11/24/2021 | [Track and respond to emerging threats with Microsoft Defender for Endpoint threat analytics](/microsoft-365/security/defender-endpoint/threat-analytics?view=o365-21vianet) | modified |
@@ -547,8 +547,8 @@
 | 11/15/2021 | [Protect security settings with tamper protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection?view=o365-21vianet) | modified |
 | 11/15/2021 | [Microsoft Defender for Endpoint Device Control Printer Protection](/microsoft-365/security/defender-endpoint/printer-protection?view=o365-21vianet) | modified |
 | 11/15/2021 | [Set up Microsoft Defender for Endpoint deployment](/microsoft-365/security/defender-endpoint/production-deployment?view=o365-21vianet) | modified |
-| 11/15/2021 | [Switch to Microsoft Defender for Endpoint - Onboard](/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-onboard?view=o365-21vianet) | modified |
-| 11/15/2021 | [Switch to Microsoft Defender for Endpoint - Prepare](/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-prepare?view=o365-21vianet) | modified |
+| 11/15/2021 | [Switch to Microsoft Defender for Endpoint - Onboard](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-3?view=o365-21vianet) | modified |
+| 11/15/2021 | [Switch to Microsoft Defender for Endpoint - Prepare](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-1?view=o365-21vianet) | modified |
 | 11/15/2021 | [Report and troubleshoot Microsoft Defender for Endpoint ASR Rules](/microsoft-365/security/defender-endpoint/troubleshoot-asr-rules?view=o365-21vianet) | modified |
 | 11/15/2021 | [Troubleshoot problems with Network protection](/microsoft-365/security/defender-endpoint/troubleshoot-np?view=o365-21vianet) | modified |
 | 11/15/2021 | [Dashboard insights - threat and vulnerability management](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights?view=o365-21vianet) | modified |
@@ -869,7 +869,7 @@
 | 11/18/2021 | [Run and customize on-demand scans in Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/run-scan-microsoft-defender-antivirus?view=o365-21vianet) | modified |
 | 11/18/2021 | [Schedule antivirus scans using PowerShell](/microsoft-365/security/defender-endpoint/schedule-antivirus-scans-powershell?view=o365-21vianet) | modified |
 | 11/18/2021 | [Server migration scenarios for the new version of Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration?view=o365-21vianet) | modified |
-| 11/18/2021 | [Switch to Microsoft Defender for Endpoint - Onboard](/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-onboard?view=o365-21vianet) | modified |
+| 11/18/2021 | [Switch to Microsoft Defender for Endpoint - Onboard](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-3?view=o365-21vianet) | modified |
 | 11/18/2021 | [Integrate Microsoft Defender for Endpoint with other Microsoft solutions](/microsoft-365/security/defender-endpoint/threat-protection-integration?view=o365-21vianet) | modified |
 | 11/18/2021 | [Indicator resource type](/microsoft-365/security/defender-endpoint/ti-indicator?view=o365-21vianet) | modified |
 | 11/18/2021 | [Report and troubleshoot Microsoft Defender for Endpoint ASR Rules](/microsoft-365/security/defender-endpoint/troubleshoot-asr-rules?view=o365-21vianet) | modified |

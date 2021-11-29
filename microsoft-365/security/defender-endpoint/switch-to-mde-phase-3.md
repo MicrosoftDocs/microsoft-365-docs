@@ -31,11 +31,11 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-| [![Phase 1: Prepare3.](images/phase-diagrams/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare](switch-to-microsoft-defender-prepare.md) | [![Phase 2: Set up](images/phase-diagrams/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[Phase 2: Set up](switch-to-microsoft-defender-setup.md) | ![Phase 3: Onboard](images/phase-diagrams/onboard.png)<br/>Phase 3: Onboard |
+| [![Phase 1: Prepare3.](images/phase-diagrams/prepare.png)](switch-to-mde-phase-1.md)<br/>[Phase 1: Prepare](switch-to-mde-phase-1.md) | [![Phase 2: Set up](images/phase-diagrams/setup.png)](switch-to-mde-phase-2.md)<br/>[Phase 2: Set up](switch-to-mde-phase-2.md) | ![Phase 3: Onboard](images/phase-diagrams/onboard.png)<br/>Phase 3: Onboard |
 |--|--|--|
 || |*You are here!* |
 
-**Welcome to Phase 3 of [switching to Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**. This migration phase includes the following steps:
+**Welcome to Phase 3 of [switching to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)**. This migration phase includes the following steps:
 
 1. [Onboard devices to Defender for Endpoint](#onboard-devices-to-microsoft-defender-for-endpoint).
 2. [Run a detection test](#run-a-detection-test).
@@ -162,7 +162,7 @@ Now that you have onboarded to Defender for Endpoint, and you have uninstalled y
 
 ## Next steps
 
-**Congratulations**! You have completed your [migration to Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)!
+**Congratulations**! You have completed your [migration to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)!
 
 - [Visit your security operations dashboard](security-operations-dashboard.md) in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 - [Manage Defender for Endpoint, post migration](manage-mde-post-migration.md).
