@@ -40,9 +40,7 @@ When you make the switch to Defender for Endpoint, you begin with your non-Micro
 To resolve this issue, take the following steps:
 
 1. [Set the DisableAntiSpyware registry key to false](#set-the-disableantispyware-registry-key-to-false).
-
 2. [Add Microsoft Defender for Endpoint to the exclusion list](#add-microsoft-defender-for-endpoint-to-the-exclusion-list).
-
 3. [Set Microsoft Defender Antivirus to passive mode manually](#set-microsoft-defender-antivirus-to-passive-mode-manually).
 
 ### Set the DisableAntiSpyware registry key to false
