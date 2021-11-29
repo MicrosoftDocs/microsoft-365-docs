@@ -79,7 +79,7 @@ In each of the alert pages, you can find the complete information on the event o
      :::image type="content" source="../../media/link-to-incident-7-alert-story.png" alt-text="An example of full details of an event in the **Timeline** tab in the Microsoft 365 Defender portal" lightbox="../../media/link-to-incident-7-alert-story.png":::
 
 You can also select the event to open the **Inspect record** pane.
-:::image type="content" source="../../media/link-to-incident-7-inspect-record.png" alt-text="An example of inspect record details of an event in the **Timeline** tab in the Microsoft 365 Defender portal" lightbox=":::
+:::image type="content" source="../../media/link-to-incident-7-inspect-record.png" alt-text="An example of inspect record details of an event in the **Timeline** tab in the Microsoft 365 Defender portal" lightbox="../../media/link-to-incident-7-inspect-record.png":::
 
 ## Filter for events added using advanced hunting
 You can view which alerts were generated from advanced hunting by filtering the Incidents queue and Alerts queue by **Manual** detection source.
