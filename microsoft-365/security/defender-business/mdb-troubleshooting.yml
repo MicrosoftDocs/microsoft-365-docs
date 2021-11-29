@@ -25,7 +25,7 @@ summary: |
 sections:
   - name: General
     questions:
-      - question: I need to resolve a policy conflict.
+      - question: I need to resolve a policy conflict
         answer: |
 
           Policy conflicts can arise when security policies and settings are defined using multiple tools or methods. Here's an example:
@@ -49,7 +49,7 @@ sections:
 
           See [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md).
 
-      - question: There's an integration issue between Defender for Business and Microsoft Endpoint Manager.
+      - question: There's an integration issue between Defender for Business and Microsoft Endpoint Manager
         answer: |
 
           During your setup and configuration process, you might see an error message that says:
@@ -84,7 +84,7 @@ sections:
 
           3. Under **Endpoint Security Profile Settings (Preview)**, set **Allow Microsoft Defender for Endpoint to enforce Endpoint Security Configurations (Preview)** to **On**.
 
-      - question: Something went wrong with onboarding devices.
+      - question: Something went wrong with onboarding devices
         answer: |
 
           While onboarding devices, something went wrong in the Microsoft 365 Defender portal. The onboarding process in Microsoft Defender for Business uses a capability called Security Management for Microsoft Defender for Endpoint. If onboarding fails, the issue is likely caused by an issue with this capability. To resolve the issue, see the following articles:
