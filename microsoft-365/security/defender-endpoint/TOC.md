@@ -33,10 +33,11 @@
 #### [Onboarding using Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
 ## [Migration guides](migration-guides.md)
-### [Switch from non-Microsoft endpoint protection to Defender for Endpoint](switch-to-mde-overview.md)
+### [Switch to Defender for Endpoint](switch-to-mde-overview.md)
 #### [Phase 1: Prepare](switch-to-mde-phase-1.md)
 #### [Phase 2: Setup](switch-to-mde-phase-2.md)
 #### [Phase 3: Onboard](switch-to-mde-phase-3.md)
+#### [Troubleshooting](switch-to-mde-troubleshooting.md)
 
 
 
