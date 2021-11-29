@@ -23,7 +23,8 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -50,6 +51,9 @@ Download the sample CSV to know the supported column attributes.
 4. Select **Import**. Do this for all the files you'd like to import.
 
 5. Select **Done**.
+
+> [!NOTE]
+> Only 500 indicators can be uploaded for each batch.
 
 The following table shows the supported parameters.
 

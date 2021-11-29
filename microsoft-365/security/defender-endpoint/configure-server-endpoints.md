@@ -30,6 +30,7 @@ ms.technology: mde
 - Windows Server 2019 and later
 - Windows Server 2019 core edition
 - Windows Server 2022
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -101,10 +102,7 @@ The following specifics apply to the new unified solution package for Windows Se
   In addition, on machines with a high volume of network traffic, performance testing in your environment is highly recommended before enabling this capability broadly. You may need to account for additional resource consumption.
 - On Windows Server 2012 R2, Network Events may not populate in the timeline. This issue requires a Windows Update released as part of the [October 12, 2021 monthly rollup (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e).
 - Operating system upgrades are not supported. Offboard then uninstall before upgrading.
-- Automatic exclusions for server roles are not supported on Windows Server 2012 R2. For more information about adding exclusions, see [Virus scanning recommendations for Enterprise computers that are running currently supported versions of Windows](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc).
-
-- On Windows Server 2012 R2, Network Events may not populate in the timeline. This issue requires a Windows Update released as part of the [October 12, 2021 monthly rollup (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e).
-- Operating system upgrades are not supported. Offboard then uninstall before upgrading.
+- Automatic exclusions for *server roles* are not supported on Windows Server 2012 R2; however, built-in exclusions for operating system files are. For more information about adding exclusions, see [Virus scanning recommendations for Enterprise computers that are running currently supported versions of Windows](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc).
 
 <a name="integration-with-azure-defender"></a>
 
@@ -128,6 +126,7 @@ For more information, see [Integration with Microsoft Defender for Cloud](azure-
 
 If you have fully updated your machines with the latest [monthly rollup](/troubleshoot/windows-client/deployment/standard-terminology-software-updates.md#monthly-rollup) package, there are **no** additional prerequisites.
 
+
 The installer package will check if the following components have already been installed via an update:
 
 - [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
@@ -135,7 +134,10 @@ The installer package will check if the following components have already been i
 
 **Prerequisites for Windows Server 2016** 
 
-Verify that Microsoft Defender Antivirus is installed, is active and up to date. You can download and install the latest platform version using Windows Update. Alternatively, download the update package manually from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) or from [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
+Aside from fully updating the machine with the Latest Cumulative Update (LCU), verify that Microsoft Defender Antivirus is installed, is active and up to date. You can download and install the latest platform version using Windows Update. Alternatively, download the update package manually from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) or from [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64). 
+
+> [!NOTE]
+> In order to successfully update the built-in version of Windows Defender, which has a version number starting with 4.10, to the latest available platform, a servicing stack update must have been applied as well as the Latest Cumulative Update (LCU) equal to or later than September 20, 2018—KB4457127 (OS Build 14393.2515).
 
 **New update package for Microsoft Defender for Endpoint on Windows Server 2012 R2 and 2016**
 
@@ -150,11 +152,12 @@ To receive regular product improvements and fixes for the EDR Sensor component, 
 3. Select **Download installation package** and save the .msi file. You can run the msi package through the installation wizard, or follow the command-line steps in [Install Microsoft Defender for Endpoint using the command line](#install-microsoft-defender-for-endpoint-using-command-line).
 
    > [!NOTE]
-   > Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode. For more information, see [Need to set Microsoft Defender Antivirus to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
+   > Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode. 
+ 
 
 4. Select **Download onboarding package** and save the .zip file.
 
-5. Install the installation package using any of the options to install Microsoft Defender Antivirus. (See [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).)
+5. Install the installation package using any of the options to install Microsoft Defender Antivirus. 
 
 6. Follow the steps provided in the [onboarding steps](#onboarding-steps) section.
 
@@ -168,13 +171,17 @@ Use the installation package from the previous step to install Microsoft Defende
 
 Run the following command to install Microsoft Defender for Endpoint:
 
-`msiexec /i md4ws.msi /quiet`
+```console
+Msiexec /i md4ws.msi /quiet
+```
 
 To uninstall, ensure the machine is offboarded first using the appropriate offboarding script. Then, use Control Panel \> Programs \> Programs and Features to perform the uninstall.
 
 Alternatively, run the following uninstall command to uninstall Microsoft Defender for Endpoint:
 
-`msiexec /x md4ws.msi /quiet`
+```console
+Msiexec /x md4ws.msi /quiet
+```
 
 You must use the same package you used for installation for the above command to succeed.
 
@@ -183,8 +190,6 @@ The `/quiet` switch suppresses all notifications.
 > [!NOTE]
 > Microsoft Defender Antivirus doesn't automatically go into passive mode. You can choose to set Microsoft Defender Antivirus to run in passive mode if you are running a non-Microsoft antivirus/antimalware solution. For command line installations, the optional `FORCEPASSIVEMODE=1` immediately sets the Microsoft Defender Antivirus component to Passive mode to avoid interference. Then, to ensure Defender Antivirus remains in passive mode after onboarding to support capabilities like EDR Block, set the "ForceDefenderPassiveMode" registry key.
 >
-> For more information, see [Need to set Microsoft Defender Antivirus to passive mode?](microsoft-defender-antivirus-on-windows-server.md#passive-mode-and-windows-server).
->
 > - The Onboarding package for Windows Server 2019 and Windows Server 2022 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
 > - A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, or Microsoft Endpoint Configuration Manager.
 
@@ -192,7 +197,7 @@ Support for Windows Server provides deeper insight into server activities, cover
 
 ### Install Microsoft Defender for Endpoint using a script
 
-You can also use the [installer script](server-migration.md#installer-script) to help automate installation, uninstallation, and onboarding.
+You can also use the [installer script](server-migration.md#installer-script) to help automate installation, uninstallation, and onboarding. 
 
 ## Windows Server Semi-Annual Enterprise Channel and Windows Server 2019 and Windows Server 2022
 
@@ -227,7 +232,6 @@ The onboarding package for Windows Server 2019 and Windows Server 2022 through M
         ```
 
         > [!NOTE]
-        >
         > - The integration between Microsoft Defender for servers and Microsoft Defender for Endpoint has been expanded to support Windows Server 2022, [Windows Server 2019, and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
         > - Server endpoint monitoring utilizing this integration has been disabled for Office 365 GCC customers.
 
@@ -260,7 +264,9 @@ After onboarding the device, you can choose to run a detection test to verify th
 
     `sc.exe query Windefend`
 
-    If the result is `The specified service doesn't exist as an installed service`, then you'll need to install Microsoft Defender Antivirus. For more information, see [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).
+
+    If the result is 'The specified service doesn't exist as an installed service', then you'll need to install Microsoft Defender Antivirus. 
+
 
     For information on how to use Group Policy to configure and manage Microsoft Defender Antivirus on your Windows servers, see [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md).
 
