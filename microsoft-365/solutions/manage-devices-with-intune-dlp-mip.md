@@ -31,10 +31,11 @@ For example, a DLP policy can look for personal data like a passport number. The
 
 The DLP policy also specifies the location to apply the policy to, such as Exchange email and SharePoint sites. One of the locations available to admins is devices. If devices is selected, you can specify which users and user groups to apply the policy to. You can also specify users and user groups to exclude from the policy.
 
-If your information protection and governance team is ready to extend DLP policies to endpoints, you’ll need to coordinate with them to onboard devices, test and tune the policies, train users, and monitor the results. 
+If your information protection and governance team is ready to extend DLP policies to endpoints, you’ll need to coordinate with them to enable devices for Endpoint DLP, test and tune DLP policies, train users, and monitor the results. 
+
+![Endpoint DLP steps for the device admin](../media/devices/endpoint-dlp-steps.png#lightbox)
 
 If you completed [Step 2. Enroll devices into management](manage-devices-with-intune-enroll.md) and [Step 6. Enroll devices into Defender for Endpoint to monitor device risk and compliance to security baselines](manage-devices-with-intune-monitor-risk.md), your devices are already enabled for Endpoint DLP. 
-
 
 
 Use the following steps to work with your information protection team.
@@ -43,5 +44,6 @@ Use the following steps to work with your information protection team.
 |Step  |Description  |
 |---------|---------|
 |1     |  [Learn about Microsoft 365 Endpoint data loss prevention](../compliance/endpoint-dlp-learn-about.md).        |
-|2     |   Work with your information protection and governance team to define, test, and tune policies. This includes monitoring the results. See these resources:<br>- [Using Endpoint data loss prevention](../compliance/endpoint-dlp-using.md)<br>- [View the reports for data loss prevention](../compliance/view-the-dlp-reports.md)      |
+|2     | Enable devices for Endpoint DLP. If you onboarded devices to Microsoft Defender for Endpoint, your devices are already enabled for Endpoint DLP. If your devices are not onboarded to Defender for Endpoint, see [Get started with Endpoint data loss prevention](../compliance/endpoint-dlp-getting-started.md) for instructions.|
+|3     |   Work with your information protection and governance team to define, test, and tune policies. This includes monitoring the results. See these resources:<br>- [Using Endpoint data loss prevention](../compliance/endpoint-dlp-using.md)<br>- [View the reports for data loss prevention](../compliance/view-the-dlp-reports.md)      |
 |     |         |
