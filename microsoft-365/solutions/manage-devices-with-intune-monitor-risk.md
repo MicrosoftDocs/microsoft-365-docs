@@ -18,10 +18,6 @@ description:
 
 # Step 6. Monitor device risk and compliance to security baselines
 
-This article applies to:
-- Windows 10, Windows 11
-- MacOS
-
 After your organization has deployed Microsoft Defender for Endpoint, you can gain greater insights and protection of your devices by integrating Microsoft Intune with Defender for Endpoint. For mobile devices, this includes the ability to monitor device risk as a condition for access. For Windows devices, you can monitor compliance of these devices to security baselines. 
 
 ![Defender for Endpoint and Microsoft Intune integration illustration](../media/devices/devices-defender-for-endpoint-steps.png#lightbox)
