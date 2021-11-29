@@ -115,7 +115,7 @@ This limitation applies to (a) anything related to the software, services, conte
 
 1. **CONTACT INFORMATION.** If you have questions, complaints or claims about the software, contact the Microsoft affiliate serving your country (see [https://aka.ms/msoffices](https://aka.ms/msoffices)).
 
-Note: As this software is distributed in Canada, some of the clauses in this agreement are provided below in French.
+Note that as this software is distributed in Canada, some of the clauses in this agreement are provided below in French.
 Remarque: Ce logiciel étant distribué au Canada, certaines des clauses dans ce contrat sont fournies ci-dessous en français.
 EXONÉRATION DE GARANTIE. Le logiciel visé par une licence est offert « tel quel ». Toute utilisation de ce logiciel est à votre seule risque et péril. Microsoft n’accorde aucune autre garantie expresse. Vous pouvez bénéficier de droits additionnels en vertu du droit local sur la protection des consommateurs, que ce contrat ne peut modifier. La ou elles sont permises par le droit locale, les garanties implicites de qualité marchande, d’adéquation à un usage particulier et d’absence de contrefaçon sont exclues.
 LIMITATION DES DOMMAGES-INTÉRÊTS ET EXCLUSION DE RESPONSABILITÉ POUR LES DOMMAGES. Vous pouvez obtenir de Microsoft et de ses fournisseurs une indemnisation en cas de dommages directs uniquement à hauteur de 5,00 $ US. Vous ne pouvez prétendre à aucune indemnisation pour les autres dommages, y compris les dommages spéciaux, indirects ou accessoires et pertes de bénéfices.
