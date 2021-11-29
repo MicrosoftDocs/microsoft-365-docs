@@ -102,7 +102,7 @@ Microsoft 365 comes with five pre-trained classifiers:
 - **Business – Healthcare (Preview)**: detects content in medical and healthcare administration aspects such as medical services, diagnoses, treatment, claims etc
 - **Business – Legal Affairs (Preview)**: detects content in legal affairs related categories such as litigation, legal process, legal obligation, legal terminology, law and legislation
 - **Business – HR (Preview)**: detects content in human resources related categories of recruitment, interviewing, hiring, training, evaluating, warning and termination
-- **Business – Procurement (Preview)**: detects content in categories of bidding, quoting, purchasing and paying for supply of goods and services 
+- **Business – Procurement (Preview)**: detects content in categories of bidding, quoting, purchasing and paying for supply of goods and services
 - **Business – IP (Preview)**: detects content in Intellectual Property related categories such as trade secrets and similar confidential information
 - **Harassment**: detects a specific category of offensive language text items related to offensive conduct targeting one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, disability
 - **Profanity**: detects a specific category of offensive language text items that contain expressions that embarrass most people
