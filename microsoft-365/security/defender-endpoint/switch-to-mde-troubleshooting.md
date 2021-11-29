@@ -54,3 +54,5 @@ For more information, see [Microsoft Defender Antivirus on Windows Server](micro
 ## See also
 
 - [Microsoft Defender Antivirus compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
+
+- [Onboarding tools and methods for Windows devices in Defender for Endpoint](configure-endpoints.md) 
