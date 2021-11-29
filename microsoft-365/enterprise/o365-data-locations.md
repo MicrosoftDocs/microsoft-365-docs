@@ -5939,6 +5939,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Manager/Leader AAD org data only | Global Geography 1 – EMEA |
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
 | Viva Insights - Advanced | United States |
+ </p></details>
 
 ## South Georgia and the South Sandwich Islands
 <details><summary>Click to expand</summary><p>
@@ -6666,6 +6667,7 @@ New Microsoft 365 tenants are defaulted to Geo based on the country of the billi
 | Viva Insights - Manager/Leader AAD org data only | Global Geography 1 – EMEA |
 | Viva Insights - Manager/Leader with 3rd party HR data only | United States |
 | Viva Insights - Advanced | United States |
+ </p></details>
 
 ## United Kingdom
 <details><summary>Click to expand</summary><p>
