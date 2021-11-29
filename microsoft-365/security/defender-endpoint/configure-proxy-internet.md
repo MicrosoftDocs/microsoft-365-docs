@@ -34,7 +34,7 @@ The Defender for Endpoint sensor requires Microsoft Windows HTTP (WinHTTP) to re
 > [!TIP]
 > For organizations that use forward proxies as a gateway to the Internet, you can use network protection to [investigate connection events that occur behind forward proxies](investigate-behind-proxy.md).
 
-The WinHTTP configuration setting is independent of the Windows Internet (WinINet) browsing proxy settings (see, [WinINet vs. WinHTTP](https://docs.microsoft.com/windows/win32/wininet/wininet-vs-winhttp)) and can only discover a proxy server by using the following discovery methods:
+The WinHTTP configuration setting is independent of the Windows Internet (WinINet) browsing proxy settings (see, [WinINet vs. WinHTTP](/windows/win32/wininet/wininet-vs-winhttp.md)) and can only discover a proxy server by using the following discovery methods:
 
 - Auto-discovery methods:
 
@@ -126,7 +126,7 @@ Configure the static proxy using the Group Policy found here:
 > - ProxyServer 
 
 > [!NOTE]
-> To use proxy correctly, three different proxy settings have to be made for:
+> To use proxy correctly, configure these three different proxy settings:
 >  - Microsoft Defender for Endpoint (MDE)
 >  - AV (Antivirus)
 >  - Endpoint Detection and Response (EDR)
