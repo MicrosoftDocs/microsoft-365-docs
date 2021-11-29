@@ -33,14 +33,11 @@
 #### [Onboarding using Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
 ## [Migration guides](migration-guides.md)
-### [Switch to Defender for Endpoint](switch-to-mde-overview.md)
+### [Migration overview](switch-to-mde-overview.md)
 #### [Phase 1: Prepare](switch-to-mde-phase-1.md)
 #### [Phase 2: Setup](switch-to-mde-phase-2.md)
 #### [Phase 3: Onboard](switch-to-mde-phase-3.md)
 #### [Troubleshooting](switch-to-mde-troubleshooting.md)
-
-
-
 ### [Manage Defender for Endpoint after migration](manage-mde-post-migration.md)
 #### [Use Intune (recommended)](manage-mde-post-migration-intune.md)
 #### [Use Configuration Manager](manage-mde-post-migration-configuration-manager.md)
