@@ -967,11 +967,11 @@ If a Forms activity is performed by a coauthor or an anonymous responder, it wil
 |Connected to Excel workbook<sup>*</sup>|ConnectToExcelWorkbook|Connected the form to an Excel workbook. <br><br>Property ExcelWorkbookLink:string indicates the associated Excel workbook ID of the current form.|
 |Created a collection|CollectionCreated|Form owner created a collection.|
 |Updated a collection|CollectionUpdated|Form owner updated a collection property.|
-|Deleted collection from Recycle Bin|CollectionHardDeleted|Form owner hard deleted a collection from Recycle Bin.|
-|Moved collection to Recycle Bin|CollectionSoftDeleted|Form owner moved a collection to Recycle Bin.|
+|Deleted collection from the Recycle Bin|CollectionHardDeleted|Form owner hard-deleted a collection from the Recycle Bin.|
+|Moved collection to the Recycle Bin|CollectionSoftDeleted|Form owner moved a collection to the Recycle Bin.|
 |Renamed a collection|CollectionRenamed|Form owner changed the name of a collection.|
-|Moved a form into collection|MovedFormIntoCollection|Form owner moved a form into collection.|
-|Moved a form out of collection|MovedFormOutofCollection|Form owner moved a form out of collection.|
+|Moved a form into collection|MovedFormIntoCollection|Form owner moved a form into a collection.|
+|Moved a form out of collection|MovedFormOutofCollection|Form owner moved a form out of a collection.|
 ||||
 
 #### Forms activities performed by coauthors and anonymous responders
