@@ -95,6 +95,15 @@ Microsoft 365 comes with five pre-trained classifiers:
 > [!NOTE]
 > Source Code is trained to detect when the bulk of the text is source code. It does not detect source code text that is interspersed with plain text.
 
+- **Business – Finance (Preview)**: detects content in corporate finance, accounting, economy, banking and investment categories
+- **Business – IT (Preview)**: detects content in Information Technology and Cybersecurity categories such as network settings, information security, hardware and software
+- **Business – Tax (Preview)**: detects Tax relation content such as tax planning, tax forms, tax filing, tax regulations
+- **Business – Agreements (Preview)**: detects content related to legal agreements such as Non-Disclosure Agreements, statements of work, loan and lease agreements, employment and non-compete agreements
+- **Business – Healthcare (Preview)**: detects content in medical and healthcare administration aspects such as medical services, diagnoses, treatment, claims etc
+- **Business – Legal Affairs (Preview)**: detects content in legal affairs related categories such as litigation, legal process, legal obligation, legal terminology, law and legislation
+- **Business – HR (Preview)**: detects content in human resources related categories of recruitment, interviewing, hiring, training, evaluating, warning and termination
+- **Business – Procurement (Preview)**: detects content in categories of bidding, quoting, purchasing and paying for supply of goods and services 
+- **Business – IP (Preview)**: detects content in Intellectual Property related categories such as trade secrets and similar confidential information
 - **Harassment**: detects a specific category of offensive language text items related to offensive conduct targeting one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, disability
 - **Profanity**: detects a specific category of offensive language text items that contain expressions that embarrass most people
 - **Threat**: detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property
