@@ -14,7 +14,7 @@ ms.collection:
 ms.custom: migrationguides
 ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
-ms.date: 06/14/2021
+ms.date: 11/29/2021
 ms.technology: mde
 ---
 
@@ -36,9 +36,8 @@ If you're considering moving to Defender for Endpoint, we have guidance to help.
 |---|---|
 |You don't have an endpoint protection solution in place yet, and you want to know more about Defender for Endpoint. You want to see how Defender for Endpoint works before rolling it out in your environment.|[Microsoft Defender for Endpoint evaluation lab](evaluation-lab.md)|
 |You already have Defender for Endpoint, and you want some help getting everything set up and configured.|[Microsoft Defender for Endpoint deployment guide](deployment-phases.md)|
-|You're planning to switch from a non-Microsoft endpoint protection solution to Defender for Endpoint and Microsoft Defender Antivirus. You want to get an overview of the migration process and how to make the switch.|[Make the switch to Microsoft Defender for Endpoint](switch-to-mde-overview.md)|
+|You're planning to switch from a non-Microsoft endpoint protection solution to Defender for Endpoint, which includes Microsoft Defender Antivirus. You want to get an overview of the migration process and how to make the switch.|[Make the switch to Microsoft Defender for Endpoint](switch-to-mde-overview.md)|
 |You've already migrated or onboarded to Defender for Endpoint. You want some help with next steps, such as managing your security settings, configuring more features, or fine-tuning your security policies.|[Manage Microsoft Defender for Endpoint, post-migration](manage-mde-post-migration.md)|
-|
 
 
 ## Do you have feedback for us?
