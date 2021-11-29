@@ -1,5 +1,5 @@
 ---
-title: Deploy attack surface reduction rules
+title: Deploy attack surface reduction (ASR) rules
 description: Provides guidance to deploy attack surface reduction rules.
 keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
@@ -118,13 +118,13 @@ As with any new, wide-scale implementation which could potentially impact your l
 
 ## Additional topics in this deployment collection
 
-[Attack surface reduction rules deployment phase 1 - plan](attack-surface-reduction-rules-deployment-phase-1.md)
+[ASR rules deployment phase 1 - plan](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[Attack surface reduction rules deployment phase 2 - test](attack-surface-reduction-rules-deployment-phase-2.md)
+[ASR deployment phase 2 - test](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[Attack surface reduction rules deployment phase 3 - implement](attack-surface-reduction-rules-deployment-phase-3.md)
+[ASR rules deployment phase 3 - implement](attack-surface-reduction-rules-deployment-phase-3.md)
 
-[Attack surface reduction rules deployment phase 4 - operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
+[ASR rules deployment phase 4 - operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
 
 ## Reference
 
