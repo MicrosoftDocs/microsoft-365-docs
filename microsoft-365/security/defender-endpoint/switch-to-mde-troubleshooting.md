@@ -68,15 +68,15 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
 
 Certain exclusions for Defender for Endpoint must be defined in your existing non-Microsoft endpoint protection solution. Make sure to add the following exclusions:
 
-- `C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`
+`C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`
 
-- `C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`
+`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`
 
-- `C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`
+`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`
 
-- `C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`
+`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`
 
-- `C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe`
+`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe`
 
 ### Set Microsoft Defender Antivirus to passive mode manually
 
@@ -84,13 +84,13 @@ On Windows Server 2019, Windows Server, version 1803 or newer, Windows Server 20
 
 You can set Microsoft Defender Antivirus to passive mode by setting the following registry key:
 
-- Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
+Path: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 
-- Name: `ForceDefenderPassiveMode`
+Name: `ForceDefenderPassiveMode`
 
-- Type: `REG_DWORD`
+Type: `REG_DWORD`
 
-- Value: `1`
+Value: `1`
 
 > [!NOTE]
 > For passive mode to work on endpoints running Windows Server 2016 and Windows Server 2012 R2, those endpoints must be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
