@@ -35,7 +35,7 @@ This article provides troubleshooting information for security administrators wh
 
 ## Microsoft Defender Antivirus is getting uninstalled on Windows Server
 
-When you make the switch to Defender for Endpoint, you begin with your non-Microsoft antivirus/antimalware protection in active mode. As part of the setup process, you configure Microsoft Defender Antivirus in passive mode. Occasionally, your non-Microsoft antivirus/antimalware solution might prevent Microsoft Defender Antivirus from running on Windows Server. In fact, it can look like Microsoft Defender Antivirus has been completely removed from Windows Server.
+When you make the switch to Defender for Endpoint, you begin with your non-Microsoft antivirus/antimalware protection in active mode. As part of the setup process, you configure Microsoft Defender Antivirus in passive mode. Occasionally, your non-Microsoft antivirus/antimalware solution might prevent Microsoft Defender Antivirus from running on Windows Server. In fact, it can look like Microsoft Defender Antivirus has been removed from Windows Server.
 
 On Windows Server 2019, Windows Server, version 1803 or newer, Windows Server 2016, or Windows Server 2012 R2, you must set Microsoft Defender Antivirus to passive mode manually. This action helps prevent problems caused by having multiple antivirus products installed on a server. You can set Microsoft Defender Antivirus to passive mode using PowerShell, Group Policy, or a registry key.
 
