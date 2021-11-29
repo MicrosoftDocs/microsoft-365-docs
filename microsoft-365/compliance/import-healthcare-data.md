@@ -67,7 +67,8 @@ The following table lists the fields that are required to enable insider risk ma
 |||
 
 > [!NOTE]
-> <sup>1</sup>This field may not be available by default in your healthcare system. You need to configure the export to ensure the text file contains this field.
+> Make sure you are exporting only the relevant Log metrics from your healthcare EHR system. 
+> <sup>1</sup>This field may not be available by default in your healthcare EHR system. You need to configure the export to ensure the text file contains this field.
 
 ## Step 3: Create the Healthcare connector
 
@@ -163,6 +164,7 @@ Here's an example of the syntax for the Healthcare connector script using actual
 If the upload is successful, the script displays the **Upload Successful** message.
 
 > [!NOTE]
+> Maximum file size supported with the above script is 3 GB, and Maximum number of records supported is 5 Million. Script will take around 30-45 minutes for ingesting files reaching maximum size limits and will create multiple smaller chunks during the process in size of 100K records per file to ingest sequentially.
 > If you have problems running the previous command because of execution policies, see [About Execution Policies](\powershell\module\microsoft.powershell.core\about\about_execution_policies) and [Set-ExecutionPolicy](\powershell\module\microsoft.powershell.security\set-executionpolicy) for guidance about setting execution policies.
 
 ## Step 5: Monitor the Healthcare connector
@@ -181,7 +183,7 @@ If you've haven't run the script in Step 4, a link to download the script is dis
 
 ## (Optional) Step 6: Schedule the script to run automatically
 
-To make sure the latest auditing data from your healthcare EHR system are available to tools like the insider risk management solution, we recommend that you schedule the script to run automatically on a daily basis. This also requires that you update the EHR auditing data in the text file on a similar (if not the same) schedule so that it contains the latest information about patient records access activities by your employees. The goal is to upload the most current auditing data so that the Healthcare connector can make it available to the insider risk management solution.
+To make sure the latest auditing data from your healthcare EHR system are available to tools like the insider risk management solution, we recommend that you schedule the script to run automatically on a daily basis. This also requires that you update the EHR auditing data in the same text file on a similar (if not the same) schedule so that it contains the latest information about patient records access activities by your employees. The goal is to upload the most current auditing data so that the Healthcare connector can make it available to the insider risk management solution.
 
 You can user the Task Scheduler app in Windows to automatically run the script every day.
 
