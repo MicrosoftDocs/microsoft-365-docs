@@ -16,13 +16,11 @@ ms.collection:
   - M365-security-compliance
   - m365solution-scenario
 ms.topic: article
-ms.date: 10/07/2021
+ms.date: 11/29/2021
 ms.reviewer: chventou
 ---
 
 # Manage Microsoft Defender for Endpoint with Intune
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)

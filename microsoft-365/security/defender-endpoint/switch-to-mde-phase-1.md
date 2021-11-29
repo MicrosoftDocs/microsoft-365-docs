@@ -21,7 +21,7 @@ ms.topic: article
 ms.custom: 
 - migrationguides
 - admindeeplinkDEFENDER
-ms.date: 10/07/2021
+ms.date: 11/29/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 

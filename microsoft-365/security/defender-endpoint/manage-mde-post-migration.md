@@ -16,13 +16,11 @@ ms.collection:
   - M365-security-compliance
   - m365solution-scenario
 ms.topic: conceptual
-ms.date: 09/23/2021
+ms.date: 11/29/2021
 ms.reviewer: chventou
 ---
 
 # Manage Microsoft Defender for Endpoint, post migration
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
