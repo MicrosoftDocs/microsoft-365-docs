@@ -37,6 +37,41 @@ This article provides troubleshooting information for security administrators wh
 
 When you make the switch to Defender for Endpoint, you begin with your non-Microsoft antivirus/antimalware protection in active mode. As part of the setup process, you configure Microsoft Defender Antivirus in passive mode. Occasionally, your non-Microsoft antivirus/antimalware solution might prevent Microsoft Defender Antivirus from running on Windows Server. In fact, it can look like Microsoft Defender Antivirus has been removed from Windows Server.
 
+### Set the DisableAntiSpyware registry key to false
+
+The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) registry key was used in the past to disable Microsoft Defender Antivirus, and deploy another antivirus product, such as McAfee, Symantec, or others. **In general, you should not have this registry key on your Windows devices and endpoints**; however, if you *do* have `DisableAntiSpyware` configured, here's how to set its value to false:
+
+1. On your Windows Server device, open Registry Editor.
+
+2. Navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`.
+
+3. In that folder, look for a DWORD entry called **DisableAntiSpyware**.
+   - If you do not see that entry, you're all set.
+   - If you do see **DisableAntiSpyware**, proceed to step 4.
+
+4. Right-click the DisableAntiSpyware DWORD, and then choose **Modify**.
+
+5. Set the value to `0`. (This action sets the registry key's value to *false*.)
+
+> [!TIP]
+> To learn more about this registry key, see [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware).
+
+### Add Microsoft Defender for Endpoint to the exclusion list for your existing antivirus/antimalware solution
+
+Certain exclusions for Defender for Endpoint must be defined in your existing non-Microsoft antivirus/antimalware solution. Make sure to add the following exclusions:
+
+- `C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`
+
+- `C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`
+
+- `C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`
+
+- `C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`
+
+- `C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe`
+
+### Set Microsoft Defender Antivirus to passive mode
+
 On Windows Server 2019, Windows Server, version 1803 or newer, Windows Server 2016, or Windows Server 2012 R2, you must set Microsoft Defender Antivirus to passive mode manually. This action helps prevent problems caused by having multiple antivirus products installed on a server. You can set Microsoft Defender Antivirus to passive mode using PowerShell, Group Policy, or a registry key.
 
 You can set Microsoft Defender Antivirus to passive mode by setting the following registry key:
