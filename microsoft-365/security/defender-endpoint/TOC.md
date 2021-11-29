@@ -40,11 +40,11 @@
 
 
 
-### [Manage Defender for Endpoint after migration](manage-atp-post-migration.md)
-#### [Use Intune (recommended)](manage-atp-post-migration-intune.md)
-#### [Use Configuration Manager](manage-atp-post-migration-configuration-manager.md)
-#### [Use Group Policy](manage-atp-post-migration-group-policy-objects.md)
-#### [Use PowerShell, WMI, or MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
+### [Manage Defender for Endpoint after migration](manage-mde-post-migration.md)
+#### [Use Intune (recommended)](manage-mde-post-migration-intune.md)
+#### [Use Configuration Manager](manage-mde-post-migration-configuration-manager.md)
+#### [Use Group Policy](manage-mde-post-migration-group-policy-objects.md)
+#### [Use PowerShell, WMI, or MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
 #### [Server migration scenarios](server-migration.md)
 
 ## [Configure and onboard devices]()
