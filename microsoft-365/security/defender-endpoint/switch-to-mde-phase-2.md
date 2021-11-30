@@ -78,15 +78,11 @@ The [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-m
 
 ### Reinstall Microsoft Defender Antivirus on Windows Server 2016
 
-You can use the Malware Protection Command-Line Utility to re-enable Microsoft Defender Antivirus on Windows Server 2016.
+You can use the [Malware Protection Command-Line Utility](command-line-arguments-microsoft-defender-antivirus.md) to re-enable Microsoft Defender Antivirus on Windows Server 2016.
 
 1. As a local administrator on the server, open Command Prompt.
 
-2. Run the following command:
-
-   ```dos
-   %ProgramFiles%\Windows Defender\MpCmdRun.exe -wdenable
-   ```
+2. Run the following command: `MpCmdRun.exe -wdenable`
 
 3. Restart the device.
 
