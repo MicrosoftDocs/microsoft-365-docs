@@ -133,10 +133,10 @@ Integrate Microsoft Defender for Endpoint into your existing workflows.
 
 Defender for Endpoint directly integrates with various Microsoft solutions, including:
 
-- Azure Defender
-- Azure Sentinel
+- Microsoft Defender for Cloud
+- Microsoft Sentinel
 - Intune
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Microsoft Defender for Identity
 - Microsoft Defender for Office
 - Skype for Business
@@ -156,4 +156,3 @@ With this learning path from Microsoft Learn, you can understand Defender for En
 
 > [!div class="nextstepaction"]
 > [Start >](/learn/paths/defender-endpoint-fundamentals/)
-

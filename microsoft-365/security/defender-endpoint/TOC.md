@@ -9,7 +9,7 @@
 ### [Data storage and privacy](data-storage-privacy.md)
 ### [Overview of Microsoft Defender Security Center](use.md)
 ### [Portal overview](portal-overview.md)
-### [Defender for Endpoint Plan 1 (preview)]()
+### [Defender for Endpoint Plan 1]()
 #### [Overview](defender-endpoint-plan-1.md)
 #### [Setup and configuration](mde-p1-setup-configuration.md)
 #### [Get started](mde-plan1-getting-started.md)
@@ -33,13 +33,11 @@
 #### [Onboarding using Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
 ## [Migration guides](migration-guides.md)
-### [Switch from non-Microsoft endpoint protection to Defender for Endpoint](switch-to-microsoft-defender-migration.md)
-#### [Phase 1: Prepare](switch-to-microsoft-defender-prepare.md)
-#### [Phase 2: Setup](switch-to-microsoft-defender-setup.md)
-#### [Phase 3: Onboard](switch-to-microsoft-defender-onboard.md)
-
-
-
+### [Migration overview](switch-to-mde-overview.md)
+#### [Phase 1: Prepare](switch-to-mde-phase-1.md)
+#### [Phase 2: Setup](switch-to-mde-phase-2.md)
+#### [Phase 3: Onboard](switch-to-mde-phase-3.md)
+#### [Troubleshooting](switch-to-mde-troubleshooting.md)
 ### [Manage Defender for Endpoint after migration](manage-mde-post-migration.md)
 #### [Use Intune (recommended)](manage-mde-post-migration-intune.md)
 #### [Use Configuration Manager](manage-mde-post-migration-configuration-manager.md)
@@ -48,7 +46,7 @@
 #### [Server migration scenarios](server-migration.md)
 
 ## [Configure and onboard devices]()
-### [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)
+### [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)
 
 
 ### [Microsoft Defender for Endpoint on Windows and Windows Server]()
@@ -70,7 +68,7 @@
 
 
 
-#### [Integration with Azure Defender](azure-server-integration.md)
+#### [Integration with Microsoft Defender for Cloud](azure-server-integration.md)
 
 #### [Onboard devices without Internet access](onboard-offline-machines.md)
 #### [Run a detection test on a newly onboarded device](run-detection-test.md)
@@ -84,8 +82,8 @@
 ### [Microsoft Defender for Endpoint on other Operating Systems]()
 #### [Onboard non-Windows devices](configure-endpoints-non-windows.md)
 
-#### [Microsoft Defender for Endpoint on macOS]()
-##### [Overview of Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
+#### [Microsoft Defender for Endpoint on macOS]()
+##### [Overview of Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
 ##### [What's New](mac-whatsnew.md)
 
 ##### [Deploy]()
@@ -124,7 +122,7 @@
 
 #### [Microsoft Defender for Endpoint on Linux]()
 ##### [Overview of Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-##### [What's New](linux-whatsnew.md)
+##### [What's New](linux-whatsnew.md)
 ##### [Deploy]()
 ###### [Manual deployment](linux-install-manually.md)
 ###### [Puppet based deployment](linux-install-with-puppet.md)
@@ -134,7 +132,7 @@
 ##### [Update](linux-updates.md)
 
 ##### [Configure]()
-###### [Configure and validate exclusions](linux-exclusions.md)
+###### [Configure and validate exclusions](linux-exclusions.md)
 ###### [Static proxy configuration](linux-static-proxy-configuration.md)
 ###### [Set preferences](linux-preferences.md)
 ###### [Detect and block Potentially Unwanted Applications](linux-pua.md)
@@ -147,8 +145,8 @@
 ###### [Investigate agent health issues](health-status.md)
 ###### [Troubleshoot cloud connectivity issues](linux-support-connectivity.md)
 ###### [Troubleshoot RHEL 6 installation issues](linux-support-rhel.md)
-###### [Troubleshoot performance issues](linux-support-perf.md)
-###### [Troubleshoot missing events issues](linux-support-events.md)
+###### [Troubleshoot performance issues](linux-support-perf.md)
+###### [Troubleshoot missing events issues](linux-support-events.md)
 
 ##### [Privacy](linux-privacy.md)
 ##### [Resources](linux-resources.md)
@@ -175,7 +173,7 @@
 
 ##### [Microsoft Defender for Endpoint on iOS]()
 ###### [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
-###### [What's New](ios-whatsnew.md)
+###### [What's New](ios-whatsnew.md)
 
 ###### [Deploy]()
 ####### [Deploy Microsoft Defender for Endpoint on iOS via Intune](ios-install.md)
@@ -271,7 +269,11 @@
 #### [Configure attack surface reduction capabilities](configure-attack-surface-reduction.md)
 #### [Learn about attack surface reduction rules](attack-surface-reduction.md)
 #### [Attack surface reduction rules](attack-surface-reduction-rules.md)
-#### [Deploy attack surface reduction rules](attack-surface-reduction-rules-deployment.md)
+#### [Deploy attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment.md)
+##### [ASR rules deployment phase 1 - plan](attack-surface-reduction-rules-deployment-phase-1.md)
+##### [ASR rules deployment phase 2 - test](attack-surface-reduction-rules-deployment-phase-2.md)
+##### [ASR rules deployment phase 3 - implement](attack-surface-reduction-rules-deployment-phase-3.md)
+##### [ASR rules deployment phase 4 - operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
 #### [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
 #### [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 #### [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
@@ -282,7 +284,6 @@
 ### Next-generation protection
 #### [Next-generation protection overview](next-generation-protection.md)
 ##### [Overview of Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
-##### [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 ##### [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
 ##### [Better together: Microsoft Defender Antivirus and Office 365](office-365-microsoft-defender-antivirus.md)
 #### [Evaluate Microsoft Defender Antivirus](evaluate-microsoft-defender-antivirus.md)
@@ -487,22 +488,22 @@
 ### [Understand threat intelligence concepts](threat-indicator-concepts.md)
 ### [Configure integration with other Microsoft solutions]()
 #### [Configure conditional access](configure-conditional-access.md)
-#### [Configure Microsoft Cloud App Security integration](microsoft-cloud-app-security-config.md)
+#### [Configure Microsoft Defender for Cloud Apps integration](microsoft-cloud-app-security-config.md)
 ### [Management and APIs]()
 #### [Overview of management and APIs](management-apis.md)
 #### [API release notes](api-release-notes.md)
-#### [Microsoft Defender for Endpoint API]()
+#### [Microsoft Defender for Endpoint API]()
 ##### [Get started]()
-###### [Microsoft Defender for Endpoint API license and terms](api-terms-of-use.md)
-###### [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)
+###### [Microsoft Defender for Endpoint API license and terms](api-terms-of-use.md)
+###### [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)
 ###### [Hello World](api-hello-world.md)
 ###### [Get access with application context](exposed-apis-create-app-webapp.md)
 ###### [Get access with user context](exposed-apis-create-app-nativeapp.md)
 
 
 
-##### [Microsoft Defender for Endpoint APIs Schema]()
-###### [Supported Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
+##### [Microsoft Defender for Endpoint APIs Schema]()
+###### [Supported Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
 ###### [Common REST API error codes](common-errors.md)
 ###### [Advanced Hunting](run-advanced-query-api.md)
 
@@ -645,10 +646,9 @@
 ##### [Stream advanced hunting events to Azure Events hub](raw-data-export-event-hub.md)
 ##### [Stream advanced hunting events to your storage account](raw-data-export-storage.md)
 
-
 #### [SIEM integration]()
 ##### [Integrate SIEM tools with Microsoft Defender for Endpoint](configure-siem.md)
-##### [Microsoft Defender for Endpoint detection fields](api-portal-mapping.md)
+##### [Microsoft Defender for Endpoint detection fields](api-portal-mapping.md)
 ##### [Pull detections using SIEM REST API](pull-alerts-using-rest-api.md)
 ##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
 
@@ -681,16 +681,16 @@
 #### [Managed security service provider opportunity](mssp-support.md)
 ### [Partner integration scenarios]()
 #### [Technical partner opportunities](partner-integration.md)
-#### [Become a Microsoft Defender for Endpoint partner](get-started-partner-integration.md)
+#### [Become a Microsoft Defender for Endpoint partner](get-started-partner-integration.md)
 ### [Integrations]()
-#### [Microsoft Defender for Endpoint integrations](threat-protection-integration.md)
+#### [Microsoft Defender for Endpoint integrations](threat-protection-integration.md)
 #### [Protect users, data, and devices with conditional access](conditional-access.md)
-#### [Microsoft Cloud App Security integration overview](microsoft-cloud-app-security-integration.md)
+#### [Microsoft Defender for Cloud Apps integration overview](microsoft-cloud-app-security-integration.md)
 
 ### [Information protection in Windows overview]()
 #### [Windows integration](information-protection-in-windows-overview.md)
 
-### [Access the Microsoft Defender for Endpoint Community Center](community.md)
+### [Access the Microsoft Defender for Endpoint Community Center](community.md)
 
 ### [Helpful resources](helpful-resources.md)
 
@@ -713,10 +713,10 @@
 
  
 
-### [Troubleshoot Microsoft Defender for Endpoint service issues]()
+### [Troubleshoot Microsoft Defender for Endpoint service issues]()
 #### [Troubleshoot service issues](troubleshoot-mdatp.md)
 #### [Check service health](service-status.md)
-#### [Contact Microsoft Defender for Endpoint support](contact-support.md)
+#### [Contact Microsoft Defender for Endpoint support](contact-support.md)
 
 ### [Troubleshoot live response issues](troubleshoot-live-response.md)
 
@@ -727,6 +727,7 @@
 #### [Attack surface reduction rules](troubleshoot-asr.md)
 #### [Migrate to Attack surface reduction rules](migrating-asr-rules.md)
 
-# [Microsoft 365 Defender](../defender/index.yml)
-# [Defender for Office 365](../office-365-security/index.yml)
-# [Defender for Identity](/defender-for-identity/)
+# [Microsoft 365 Defender docs]()
+## [Microsoft 365 Defender](../defender/index.yml)
+## [Defender for Office 365](../office-365-security/index.yml)
+## [Defender for Identity](/defender-for-identity/)
