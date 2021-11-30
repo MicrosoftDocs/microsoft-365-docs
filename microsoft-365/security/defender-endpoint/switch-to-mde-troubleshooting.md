@@ -95,7 +95,7 @@ Value: `1`
 
 For more information, see [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md).
 
-## I am having trouble reinstalling Microsoft Defender Antivirus on Windows Server 2016
+## I am having trouble re-enabling Microsoft Defender Antivirus on Windows Server 2016
 
 If you are using a non-Microsoft antivirus/antimalware solution on Windows Server 2016, your existing solution might have required Microsoft Defender Antivirus to be disabled or uninstalled. You can use the[ Malware Protection Command-Line Utility](command-line-arguments-microsoft-defender-antivirus.md) to re-enable Microsoft Defender Antivirus on Windows Server 2016.
 
