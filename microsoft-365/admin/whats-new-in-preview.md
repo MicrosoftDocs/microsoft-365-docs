@@ -284,7 +284,7 @@ A few months ago, we added a setting that lets you manage the What's New message
 
 ### Docs, training, and videos (June)
 
-- [Getting started with Teams](../business-video/get-started-teams-small-business.md)
+- [Getting started with Teams](https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937)
 
 ## May 2020
 
@@ -387,12 +387,12 @@ We've got two updates for Groups this month:
 
 #### For your users
 
-- [Schedule a meeting](../business-video/schedule-guest-meeting.md)
+- [Schedule a meeting](https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5)
 - [Join a Teams meeting](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [Create an org-wide team](../business-video/org-wide-team.md)
-- [Create a Team with guests](../business-video/team-with-guests.md)
-- [Join a Team as a guest](../business-video/join-team-guest.md)
-- [Create a group email address](../business-video/group-email.md)
+- [Create an org-wide team](https://docs.microsoft.com/microsoftteams/create-an-org-wide-team)
+- [Create a Team with guests](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f)
+- [Join a Team as a guest](https://docs.microsoft.com/microsoftteams/guest-experience)
+- [Create a group email address](https://support.microsoft.com/office/3f73d218-52d6-4f88-a733-9ff37073ee4c)
 
 #### For admins and business owners
 

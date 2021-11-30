@@ -38,7 +38,7 @@ Download an infographic to get a quick overview of ways to share your business f
 - Share a file with someone outside of your company (such as a client or a customer) via email if you only need it to go one way.
 - If you need a response, or want them to fill out some information and send it back, then you can use SharePoint or Microsoft Teams to share it with an edit link.
 
-Learn more about how to [share files outside your organization](securely-share-files-externally.md) with secure links, and how to [share files with an anyone link](share-files-externally.md).
+Learn more about how to [share files outside your organization](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07) with secure links, and how to [share files with an anyone link](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07).
 
 ## Share and collaborate with a client or business partner
 
@@ -48,7 +48,7 @@ Sharing as part of a project? Or as part of an ongoing relationship with a busin
 1. Upload your files.
 1. Invite your partners or suppliers to the team as "guest" users to give them access.
 
-Learn more about how to [share files outside your organization with secure link](securely-share-files-externally.md).
+Learn more about how to [share files outside your organization with secure link](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07).
 
 ## Share inside your business
 
@@ -65,5 +65,5 @@ Need a little help? Learn how to:
 
 - [Send and receive attachments](https://support.microsoft.com/office/sending-and-receiving-attachments-d32cd5ad-c7c5-49df-814d-4c17a5d3beb0)
 - [Share files and folders with OneDrive](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)
-- [Create a company-wide team](org-wide-team.md)
+- [Create a company-wide team](https://docs.microsoft.com/microsoftteams/create-an-org-wide-team)
 - [Add guests to a team](https://support.microsoft.com/office/add-guests-to-a-team-in-teams-fccb4fa6-f864-4508-bdde-256e7384a14f)
