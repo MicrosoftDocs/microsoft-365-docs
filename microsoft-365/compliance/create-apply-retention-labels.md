@@ -242,7 +242,7 @@ For SharePoint, but not OneDrive, you can create a view of the library that cont
 
 #### Applying retention labels using Microsoft 365 groups
 
-When you publish retention labels to the **Microsoft 365 Groups** location, the retention labels appear in the group site but aren't supported by any email client for group mailboxes. The experience of applying a retention label in the site is identical to that for documents in SharePoint.
+When you publish retention labels to the **Microsoft 365 Groups** location, the retention labels appear in the SharePoint teams site but aren't supported by any email client for group mailboxes. The experience of applying a retention label in the site is identical to that for documents in SharePoint.
 
 ### Applying a default retention label to all content in a SharePoint library, folder, or document set
 
