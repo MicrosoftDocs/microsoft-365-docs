@@ -45,13 +45,17 @@ See the [More information](#more-information) section in this article for more d
   Get-Mailbox -InactiveMailboxOnly | Format-List Name,DistinguishedName,ExchangeGuid,PrimarySmtpAddress
   ```
 
-  Use the information returned by this command to restore a specific inactive mailbox.
+  Use the information returned by this command to identify and restore a specific inactive mailbox.
 
 - For more information about inactive mailboxes, see [Inactive mailboxes in Office 365](inactive-mailboxes-in-office-365.md).
 
 ## Restore inactive mailboxes
 
 Use the **New-MailboxRestoreRequest** cmdlet with the  _SourceMailbox_ and  _TargetMailbox_ parameters to restore the contents of an inactive mailbox to an existing mailbox. For more information about using this cmdlet, see [New-MailboxRestoreRequest](/powershell/module/exchange/new-mailboxrestorerequest).
+
+Before you can restore an inactive mailbox, you have to add the LegacyExchangeDN of the inactive mailbox to the target mailbox, as an X500 proxy address of the target mailbox. This has to be done because the **New-MailboxRestoreRequest** checks to ensure that the LegacyExchangeDN values of the source mailbox and target mailbox are the same. After you restore the inactive mailbox, you can optionally remove the LegacyExchangeDN from source mailbox. Be sure to wait until the mailbox restore request is complete before removing the LegacyExchangeDN.
+
+Follow these steps to restore an inactive mailbox to an existing mailbox:
 
 1. Create a variable that contains the properties of the inactive mailbox.
 
@@ -62,10 +66,24 @@ Use the **New-MailboxRestoreRequest** cmdlet with the  _SourceMailbox_ and  _Tar
    > [!IMPORTANT]
    > In the previous command, use the value of the **DistinguishedName** or **ExchangeGUID** property to identify the inactive mailbox. These properties are unique for each mailbox in your organization, whereas it's possible that an active and an inactive mailbox might have the same primary SMTP address.
 
-2. Restore the contents of the inactive mailbox to an existing mailbox. The contents of the inactive mailbox (source mailbox) will be merged into the corresponding folders in the existing mailbox (target mailbox).
+2. Add the LegacyExchangeDN of the inactive mailbox as an X500 proxy address of the target mailbox.
 
    ```powershell
-   New-MailboxRestoreRequest -SourceMailbox $InactiveMailbox.DistinguishedName -TargetMailbox newemployee@contoso.com -AllowLegacyDNMismatch
+   Set-Mailbox <identity of target mailbox> -EmailAddresses @{Add="}
+   ```
+
+Set-Mailbox  angela -EmailAddresses  @{Add="X500:/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=aa04480f2701466ea81ea81102ea58cc-scapegoat"}
+
+
+Set-Mailbox -Identity "John Woods" -EmailAddresses @{add="Jwoods@contoso.com"}
+
+
+
+
+3. Restore the contents of the inactive mailbox to an existing mailbox. The contents of the inactive mailbox (source mailbox) will be merged into the corresponding folders in the existing mailbox (target mailbox).
+
+   ```powershell
+   New-MailboxRestoreRequest -SourceMailbox $InactiveMailbox.DistinguishedName -TargetMailbox <identity of target mailbox> -AllowLegacyDNMismatch
    ```
 
    Alternatively, you can specify a top-level folder in the target mailbox in which to restore the contents from the inactive mailbox. If the specified target folder or target folder structure doesn't already exist in the target mailbox, it is created during the restore process.
@@ -73,8 +91,14 @@ Use the **New-MailboxRestoreRequest** cmdlet with the  _SourceMailbox_ and  _Tar
    This example copies mailbox items and subfolders from an inactive mailbox to a folder named "Inactive Mailbox" in the top-level folder structure of the target mailbox.
 
    ```powershell
-   New-MailboxRestoreRequest -SourceMailbox $InactiveMailbox.DistinguishedName -TargetMailbox newemployee@contoso.com -TargetRootFolder "Inactive Mailbox" -AllowLegacyDNMismatch
+   New-MailboxRestoreRequest -SourceMailbox $InactiveMailbox.DistinguishedName -TargetMailbox <identity of target mailbox> -TargetRootFolder "Inactive Mailbox"
    ```
+
+4. After the restore request is complete, you can optionally remove the LegacyExchangeDN of the inactive mailbox from the target mailbox. Leaving the LegacyExchangeDN from the inactive won't affect the target mailbox.
+
+
+
+
 
 ## Restore the archive from an inactive mailbox
 
