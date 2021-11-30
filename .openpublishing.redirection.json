@@ -5579,6 +5579,51 @@
       "source_path": "microsoft-365/security/mtp/configure-microsoft-threat-experts.md",
       "redirect_url": "/microsoft-365/security/defender/configure-microsoft-threat-experts",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-migration.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-mde-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-onboard.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-mde-phase-3",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-prepare.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-mde-phase-1",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-setup.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/manage-atp-post-migration.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-mde-post-migration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/manage-atp-post-migration-configuration-manager.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-mde-post-migration-configuration-manager",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/manage-atp-post-migration-group-policy-objects.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-mde-post-migration-group-policy-objects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/manage-atp-post-migration-intune.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-mde-post-migration-intune",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/manage-atp-post-migration-other-tools.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools",
+      "redirect_document_id": true
     }
   ]
 }

@@ -16,18 +16,15 @@ ms.collection:
   - M365-security-compliance
   - m365solution-scenario
 ms.topic: article
-ms.date: 09/23/2021
+ms.date: 11/29/2021
 ms.reviewer: chventou
 ---
 
 # Manage Microsoft Defender for Endpoint with Group Policy Objects
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
-[!include[Prerelease information](../../includes/prerelease.md)]
-
 **Applies to:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -69,4 +66,4 @@ If you haven't already done so, configure your Microsoft 365 Defender portal to 
 
 - [Get an overview of threat and vulnerability management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Visit the Microsoft 365 Defender portal security operations dashboard](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
-- [Manage Microsoft Defender for Endpoint with Intune](manage-atp-post-migration-intune.md)
+- [Manage Microsoft Defender for Endpoint with Intune](manage-mde-post-migration-intune.md)

@@ -16,7 +16,6 @@ Review the following sections for requirements for the Security Management for M
 
 When a device onboards to Microsoft Defender for Endpoint:
 
-- The device is surveyed for an existing Endpoint Manager presence, either Configuration Manager or Intune
 - Devices without an Endpoint Manager presence enable the Security Management feature
 - A trust is created with Azure Active Directory if one doesn't already exist
 - Azure Active Directory trust is used to communicate with Endpoint Manager (Intune) and retrieve policies
@@ -110,7 +109,10 @@ Microsoft Defender for Endpoint supports several options to onboard devices. For
 > [!IMPORTANT]
 > After a device onboards with Microsoft Defender for Endpoint, it must and be tagged with **MDE-Management** before it can enroll with Security Management for Microsoft Defender for Endpoint. For more information on device tagging in MDE, see [*Create and manage device tags*](/microsoft-365/security/defender-endpoint/machine-tag).
 
-Devices that you manage with Intune or Configuration Manager are not supported for this scenario.
+
+## Co-existence with Microsoft Endpoint Configuration Manager
+When using Configuration Manager, the best path for management of security policy is using the [Configuration Manager tenant attach](/mem/configmgr/tenant-attach/endpoint-security-get-started). In some environments it may be desired to use Security Management for Microsoft Defender. When using Security Management for Microsoft Defender with Configuration Manager, endpoint security policy should be isolated to a single control plane. Controlling policy through both channels will create the opportunity for conflicts and undesired results.
+
 
 ## Create Azure AD Groups
 
