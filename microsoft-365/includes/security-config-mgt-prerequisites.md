@@ -16,7 +16,6 @@ Review the following sections for requirements for the Security Management for M
 
 When a device onboards to Microsoft Defender for Endpoint:
 
-- The device is surveyed for an existing Endpoint Manager presence, either Configuration Manager or Intune
 - Devices without an Endpoint Manager presence enable the Security Management feature
 - A trust is created with Azure Active Directory if one doesn't already exist
 - Azure Active Directory trust is used to communicate with Endpoint Manager (Intune) and retrieve policies
@@ -30,6 +29,7 @@ When a device that is domain joined creates a trust with Azure Active Directory,
 - Hybrid Azure Active Directory Join must be configured in your environment (either through Federation or AAD Connect Sync)
 - AAD Connect Sync must include the device objects *in scope* for synchronization with Azure Active Directory (when needed for join)
 - AAD Connect rules for sync must be modified for Server 2012 R2 (when support for Server 2012 R2 is needed)
+- All devices must register in the Azure Active Directory of the tenant that hosts Microsoft Defender for Endpoint. Cross-tenant scenarios are not supported. 
 
 ### Connectivity Requirements
 
@@ -81,11 +81,11 @@ To support Microsoft Defender for Endpoint security configuration management thr
 
 1. Sign in to [Microsoft 365 Defender portal](https://security.microsoft.com/) and go to **Settings** > **Endpoints** > **Configuration Management** > **Enforcement Scope** and enable the platforms for security settings management:
 
-   :::image type="content" source="../media/enable-mde-settings-management-defender.png" alt-text="Enable Microsoft Defender for Endpoint settings management in the Defender console.":::
+   :::image type="content" source="../media/enable-mde-settings-management-defender.png" alt-text="Enable Microsoft Defender for Endpoint settings management in the Microsoft 365 Defender portal.":::
 
-2. Make sure the relevant users have permissions to manage endpoint security settings in Microsoft Endpoint Manager or grant those permissions by configuring a role in the Defender portal. Go to **Settings** > **Roles** > **Add item**:
+2. Make sure the relevant users have permissions to manage endpoint security settings in Microsoft Endpoint Manager or grant those permissions by configuring a role in the Microsoft 365 Defender portal. Go to **Settings** > **Roles** > **Add item**:
 
-   :::image type="content" source="../media/add-role-in-mde.png" alt-text="Create a new role in the Defender portal.":::
+   :::image type="content" source="../media/add-role-in-mde.png" alt-text="Create a new role in the Microsoft 365 Defender portal.":::
 
    > [!TIP]
    > You can modify existing roles and add the necessary permissions versus creating additional roles in Microsoft Defender for Endpoint
@@ -106,7 +106,13 @@ To support Microsoft Defender for Endpoint security configuration management thr
 
 Microsoft Defender for Endpoint supports several options to onboard devices. For current guidance, see [Onboarding tools and methods for Windows devices](/microsoft-365/security/defender-endpoint/security-config-management) in the Defender for Endpoint documentation.
 
-Devices that you manage with Intune or Configuration Manager are not supported for this scenario.
+> [!IMPORTANT]
+> After a device onboards with Microsoft Defender for Endpoint, it must and be tagged with **MDE-Management** before it can enroll with Security Management for Microsoft Defender for Endpoint. For more information on device tagging in MDE, see [*Create and manage device tags*](/microsoft-365/security/defender-endpoint/machine-tag).
+
+
+## Co-existence with Microsoft Endpoint Configuration Manager
+When using Configuration Manager, the best path for management of security policy is using the [Configuration Manager tenant attach](/mem/configmgr/tenant-attach/endpoint-security-get-started). In some environments it may be desired to use Security Management for Microsoft Defender. When using Security Management for Microsoft Defender with Configuration Manager, endpoint security policy should be isolated to a single control plane. Controlling policy through both channels will create the opportunity for conflicts and undesired results.
+
 
 ## Create Azure AD Groups
 
@@ -181,4 +187,3 @@ After creating one or more Azure AD groups that contain devices managed by Micro
 9. Wait for the policy to be assigned and view a success indication that policy was applied.
 
 10. You can validate that settings are applied locally on the client by using the [Get-MpPreference](/powershell/module/defender/get-mppreference#examples) command utility.
-
