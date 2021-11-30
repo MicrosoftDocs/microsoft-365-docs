@@ -21,21 +21,22 @@ ms.topic: article
 ms.custom: 
 - migrationguides
 - admindeeplinkDEFENDER
-ms.date: 10/07/2021
+ms.date: 11/30/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
 # Switch to Microsoft Defender for Endpoint - Phase 1: Prepare
 
 **Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-| ![Phase 1: Prepare.](images/phase-diagrams/prepare.png)<br/>Phase 1: Prepare | [![Phase 2: Set up](images/phase-diagrams/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[Phase 2: Set up](switch-to-microsoft-defender-setup.md) | [![Phase 3: Onboard](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Phase 3: Onboard](switch-to-microsoft-defender-onboard.md) |
+| ![Phase 1: Prepare.](images/phase-diagrams/prepare.png)<br/>Phase 1: Prepare | [![Phase 2: Set up](images/phase-diagrams/setup.png)](switch-to-mde-phase-2.md)<br/>[Phase 2: Set up](switch-to-mde-phase-2.md) | [![Phase 3: Onboard](images/phase-diagrams/onboard.png)](switch-to-mde-phase-3.md)<br/>[Phase 3: Onboard](switch-to-mde-phase-3.md) |
 |--|--|--|
 |*You are here!*| | |
 
-**Welcome to the Prepare phase of [switching to Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**.
+**Welcome to the Prepare phase of [switching to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)**.
 
 This migration phase includes the following steps:
 
@@ -111,16 +112,16 @@ To enable communication between your devices and Defender for Endpoint, configur
 
 |Capabilities|Operating System|Resources|
 |---|---|---|
-|[Endpoint detection and response](overview-endpoint-detection-response.md) (EDR)|[Windows 10](/windows/release-health/release-information)<br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 1803, or later](/windows-server/get-started/whats-new-in-windows-server-1803)|[Configure machine proxy and internet connectivity settings](configure-proxy-internet.md)|
+|[Endpoint detection and response](overview-endpoint-detection-response.md) (EDR)|[Windows 10](/windows/release-health/release-information) or later<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>[Windows Server 1803, or later](/windows-server/get-started/whats-new-in-windows-server-1803)|[Configure machine proxy and internet connectivity settings](configure-proxy-internet.md)|
 |EDR|[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[Configure proxy and internet connectivity settings](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
-|EDR|macOS:<br/> 11.3.1 (Big Sur)<br/>10.15 (Catalina)<br/>10.14 (Mojave)|[Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)|
+|EDR|macOS (see [System requirements](microsoft-defender-endpoint-mac.md))|[Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)|
 |[Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> Windows Server 2022 <br/><br/> [Windows Server 1803, or later](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)|[Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)|
-|Antivirus|macOS:<br/> 11.3.1 (Big Sur)<br/>10.15 (Catalina)<br/>10.14 (Mojave)|[Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)|
-|Antivirus|Linux:<br/> RHEL 7.2+<br/>CentOS Linux 7.2+<br/>Ubuntu 16 LTS, or higher LTS<br/>SLES 12+<br/>Debian 9+<br/>Oracle Linux 7.2|[Defender for Endpoint on Linux: Network connections](microsoft-defender-endpoint-linux.md#network-connections)|
+|Antivirus|macOS (see [System requirements](microsoft-defender-endpoint-mac.md))|[Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)|
+|Antivirus|Linux (see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements))|[Defender for Endpoint on Linux: Network connections](microsoft-defender-endpoint-linux.md#network-connections)|
 
 
 ## Next step
 
-**Congratulations**! You have completed the **Prepare** phase of [switching to Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)!
+**Congratulations**! You have completed the **Prepare** phase of [switching to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)!
 
-- [Proceed to set up Defender for Endpoint](switch-to-microsoft-defender-setup.md).
+- [Proceed to set up Defender for Endpoint](switch-to-mde-phase-2.md).
