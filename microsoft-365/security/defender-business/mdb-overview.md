@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 11/23/2021
+ms.date: 11/29/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -69,7 +69,7 @@ The following table summarizes the features and capabilities available in Micros
 | [Threat & vulnerability management](#threat-and-vulnerability-management) (TVM) | TVM provides you with actionable information that can help mitigate threats and vulnerabilities in your environment.|
 | [Attack surface reduction](#attack-surface-reduction) | Your attack surfaces are all the places and ways that your company is vulnerable to a cyberattack. Attack surface reduction capabilities include: <br/>- [Ransomware mitigation](#ransomware-mitigation)  <br/>- [Attack surface reduction rules](#attack-surface-reduction-rules) <br/>- [Application control](#application-control) <br/>- [Web protection](#web-protection) <br/>- [Network protection](#network-protection) <br/>- [Network firewall](#network-firewall) |
 | [Next-generation protection](#next-generation-protection) |Next-generation protection includes antimalware and antivirus protection—on your devices and in the cloud—to protect against threats. |
-| [Endpoint detection and response](#endpoint-detection-and-response) | Endpoint detection and response (EDR) receives security signals across your network, devices, and kernel behavior. EDR capabilities include: <br/>- [Behavioral-based detection](#behavioral-based-detection) <br/>- [Manual response actions](#manual-response-actions) <br/>- [Live response](#live-response) |
+| [Endpoint detection and response](#endpoint-detection-and-response) | Endpoint detection and response (EDR) receives security signals across your network, devices, and kernel behavior. EDR capabilities include: <br/>- [Behavioral-based detection](#behavioral-based-detection) <br/>- [Manual response actions](#manual-response-actions) <br/>- [Live response](#live-response) <br/>-  |
 | [Automated investigation and response](#automated-investigation-and-response) | Automated investigation and response (AIR) capabilities are designed to examine alerts and take immediate action to resolve breaches. AIR can save your security team much time and effort. All remediation actions are tracked, and you can undo actions if needed. |
 | [Centralized management and reporting](#centralized-management-and-reporting) | Defender for Endpoint enables your security operations team to centrally manage your organization’s threat protection solution and settings. Your centralized management and reporting capabilities include: <br/>- [Several setup and configuration options](#setup-and-configuration-options) <br/>- [Role-based access control](#role-based-access-control)<br/>- [Reports](#reporting)  |
 | [APIs](#apis) (for integration)| Application programming interfaces (APIs) like the Defender for Endpoint APIs enable applications to communicate with each other. To learn more, see [APIs](#apis). |
@@ -161,6 +161,7 @@ Endpoint detection and response (EDR) receives security signals across your netw
 - [Behavioral-based detection](#behavioral-based-detection)
 - [Manual response actions](#manual-response-actions)
 - [Live response](#live-response)
+- [Threat analytics](#threat-analytics)
 
 ### Behavioral-based detection
 
@@ -191,6 +192,12 @@ To learn more, see the following articles:
 Live response enables your security team to connect to a device using a remote shell connection. When connected, you can use certain commands to perform tasks, such as collecting forensic data, analyzing a file, running a script, sending suspicious entities for analysis, remediating a file, and hunting proactively for threats. Live response enables you to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time. 
 
 To learn more, including a list of basic commands, see [Investigate entities on devices using live response](../defender-endpoint/live-response.md).
+
+### Threat analytics
+
+Threat analytics is a threat intelligence solution built into the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This solution includes reports from expert Microsoft security researchers that you can use to learn about active threat actors and their campaigns, new attack techniques, vulnerabilities, common attack surfaces, and malware. 
+
+To learn more, see [Track and respond to emerging threats through threat analytics](../defender-endpoint/threat-analytics.md).
 
 ## Automated investigation and response
 
