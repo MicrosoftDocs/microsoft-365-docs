@@ -44,7 +44,7 @@ If you have requirements for specific stakeholders to be involved in case invest
 
 ## Plan for the review and investigation workflow
 
-Select dedicated stakeholders to monitor and review the alerts and cases on a regular cadence in the [Microsoft 365 compliance center](https://compliance.microsoft.com/). Make sure you understand how you will assign different stakeholders to the different role groups available in insider risk management.
+Select dedicated stakeholders to monitor and review the alerts and cases on a regular cadence in the [Microsoft 365 compliance center](https://compliance.microsoft.com). Make sure understand how you will assign different stakeholders to the different role groups available in insider risk management.
 
 > [!IMPORTANT]
 > After configuring your role groups, it may take up to 30 minutes for the role group permissions to apply to assigned users across your organization.

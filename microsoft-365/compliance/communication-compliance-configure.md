@@ -111,7 +111,7 @@ Choose from these solution role group options when configuring and managing comm
 
 Use this option to assign users to specific role groups to segment communication compliance access and responsibilities among different users in your organization.
 
-1. Sign into the Microsoft 365 compliance center using credentials for an admin account in your Microsoft 365 organization, and then go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a>.
+1. Sign into the [Microsoft 365 compliance center](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization, and then go to the **Permissions**</a>.
 
 2. Select the link to view and manage roles in Office 365.
 
@@ -205,7 +205,7 @@ For more information about configuring Yammer in Native Mode, see:
 >[!TIP]  
 >Want to see an in-depth walkthrough of setting up a new communication compliance policy and remediating an alert? Check out [this 15-minute video](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) to see a demonstration of how communication compliance policies can help you detect inappropriate messages, investigate potential violations, and remediate compliance issues.
 
-1. Sign into the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into the [Microsoft 365 compliance center](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
 2. In the Microsoft 365 compliance center, select **Communication compliance**.
 
@@ -260,7 +260,7 @@ If you want to have the option of responding to a policy alert by sending a remi
 
 You can also choose to enable anonymization for displayed usernames when investigating policy matches and taking action on messages.
 
-1. Sign into the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> using credentials for an admin account in your Microsoft 365 organization.
+1. Sign into the [Microsoft 365 compliance center](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
 2. In the Microsoft 365 compliance center, go to **Communication compliance**.
 

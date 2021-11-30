@@ -264,7 +264,7 @@ To create a new insider risk management policy, you'll use the policy wizard in 
 
 Complete the following steps to create a new policy:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to **Insider risk management** and select the **Policies** tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. Select **Create policy** to open the policy wizard.
 3. On the **Policy template** page, choose a policy category and then select the template for the new policy. These templates are made up of conditions and indicators that define the risk activities you want to detect and investigate. Review the template prerequisites, triggering events, and detected activities to confirm this policy template fits your needs.
 
@@ -326,7 +326,7 @@ To update an existing insider risk management policy, you'll use the policy wiza
 
 Complete the following steps to manage an existing policy:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to **Insider risk management** and select the **Policies** tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. On the policy dashboard, select the policy you want to manage.
 3. On the policy details page, select **Edit policy**
 4. In the policy wizard, you cannot edit the following:
@@ -383,7 +383,7 @@ You may need to create a new policy that is similar to an existing policy but ne
 
 Complete the following steps to copy an existing policy:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to Insider risk management and select the Policies tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. On the policy dashboard, select the policy you want to copy.
 3. On the policy details page, select Copy.
 4. In the policy wizard, name the new policy and update the policy configuration as needed.
@@ -403,7 +403,7 @@ Some scenarios where you may want to immediately start scoring user activities:
 
 To manually start scoring activity for users in one or more insider risk management policies, complete the following steps:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to **Insider risk management** and select the **Policies** tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. On the policy dashboard, select the policy or policies you want to add users to.
 3. Select **Start scoring activity for users**.
 4. In the **Reason field** in the **Add users to multiple policies** pane, add a reason for adding the users.
@@ -430,7 +430,7 @@ To stop scoring users in a policy, see the [Insider risk management users: Remov
 
 To delete an existing insider risk management policy, complete the following steps:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to **Insider risk management** and select the **Policies** tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. On the policy dashboard, select the policy you want to delete.
 3. Select **Delete** on the dashboard toolbar.
 4. On the **Delete** dialog, Select **Yes** to delete the policy, or select **Cancel** to close the dialog.
