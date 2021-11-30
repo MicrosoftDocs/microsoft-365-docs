@@ -21,21 +21,22 @@ ms.topic: article
 ms.custom: 
 - migrationguides
 - admindeeplinkDEFENDER
-ms.date: 10/07/2021
+ms.date: 11/29/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
 # Switch to Microsoft Defender for Endpoint - Phase 1: Prepare
 
 **Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-| ![Phase 1: Prepare.](images/phase-diagrams/prepare.png)<br/>Phase 1: Prepare | [![Phase 2: Set up](images/phase-diagrams/setup.png)](switch-to-microsoft-defender-setup.md)<br/>[Phase 2: Set up](switch-to-microsoft-defender-setup.md) | [![Phase 3: Onboard](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Phase 3: Onboard](switch-to-microsoft-defender-onboard.md) |
+| ![Phase 1: Prepare.](images/phase-diagrams/prepare.png)<br/>Phase 1: Prepare | [![Phase 2: Set up](images/phase-diagrams/setup.png)](switch-to-mde-phase-2.md)<br/>[Phase 2: Set up](switch-to-mde-phase-2.md) | [![Phase 3: Onboard](images/phase-diagrams/onboard.png)](switch-to-mde-phase-3.md)<br/>[Phase 3: Onboard](switch-to-mde-phase-3.md) |
 |--|--|--|
 |*You are here!*| | |
 
-**Welcome to the Prepare phase of [switching to Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**.
+**Welcome to the Prepare phase of [switching to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)**.
 
 This migration phase includes the following steps:
 
@@ -121,6 +122,6 @@ To enable communication between your devices and Defender for Endpoint, configur
 
 ## Next step
 
-**Congratulations**! You have completed the **Prepare** phase of [switching to Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)!
+**Congratulations**! You have completed the **Prepare** phase of [switching to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)!
 
-- [Proceed to set up Defender for Endpoint](switch-to-microsoft-defender-setup.md).
+- [Proceed to set up Defender for Endpoint](switch-to-mde-phase-2.md).
