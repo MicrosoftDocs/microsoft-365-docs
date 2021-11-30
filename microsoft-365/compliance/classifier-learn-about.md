@@ -61,7 +61,7 @@ Sensitivity labels can use classifiers as conditions, see [Apply a sensitivity l
 
 ### Pre-trained classifiers
 
-Microsoft 365 comes with five pre-trained classifiers:
+Microsoft 365 comes with multiple pre-trained classifiers:
 
 > [!CAUTION]
 > We are deprecating the **Offensive Language** pre-trained classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Threat**, **Profanity**, and **Harassment** pre-trained classifiers instead.
@@ -95,19 +95,19 @@ Microsoft 365 comes with five pre-trained classifiers:
 > [!NOTE]
 > Source Code is trained to detect when the bulk of the text is source code. It does not detect source code text that is interspersed with plain text.
 
-- **Business – Finance (Preview)**: detects content in corporate finance, accounting, economy, banking and investment categories
-- **Business – IT (Preview)**: detects content in Information Technology and Cybersecurity categories such as network settings, information security, hardware and software
-- **Business – Tax (Preview)**: detects Tax relation content such as tax planning, tax forms, tax filing, tax regulations
-- **Business – Agreements (Preview)**: detects content related to legal agreements such as Non-Disclosure Agreements, statements of work, loan and lease agreements, employment and non-compete agreements
-- **Business – Healthcare (Preview)**: detects content in medical and healthcare administration aspects such as medical services, diagnoses, treatment, claims etc
-- **Business – Legal Affairs (Preview)**: detects content in legal affairs related categories such as litigation, legal process, legal obligation, legal terminology, law and legislation
-- **Business – HR (Preview)**: detects content in human resources related categories of recruitment, interviewing, hiring, training, evaluating, warning and termination
-- **Business – Procurement (Preview)**: detects content in categories of bidding, quoting, purchasing and paying for supply of goods and services
-- **Business – IP (Preview)**: detects content in Intellectual Property related categories such as trade secrets and similar confidential information
-- **Harassment**: detects a specific category of offensive language text items related to offensive conduct targeting one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, disability
-- **Profanity**: detects a specific category of offensive language text items that contain expressions that embarrass most people
-- **Threat**: detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property
+- **Agreements (Preview)**: detects content related to legal agreements such as Non-Disclosure Agreements, statements of work, loan and lease agreements, employment and non-compete agreements
 - **Discrimination**: detects explicit discriminatory language and is particularly sensitive to discriminatory language against the African American/Black communities when compared to other communities.
+- **Finance (Preview)**: detects content in corporate finance, accounting, economy, banking and investment categories
+- **Harassment**: detects a specific category of offensive language text items related to offensive conduct targeting one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, disability
+- **Healthcare (Preview)**: detects content in medical and healthcare administration aspects such as medical services, diagnoses, treatment, claims etc
+- **HR (Preview)**: detects content in human resources related categories of recruitment, interviewing, hiring, training, evaluating, warning and termination
+- **IP (Preview)**: detects content in Intellectual Property related categories such as trade secrets and similar confidential information
+- **IT (Preview)**: detects content in Information Technology and Cybersecurity categories such as network settings, information security, hardware and software
+- **Legal Affairs (Preview)**: detects content in legal affairs related categories such as litigation, legal process, legal obligation, legal terminology, law and legislation
+- **Procurement (Preview)**: detects content in categories of bidding, quoting, purchasing and paying for supply of goods and services
+- **Profanity**: detects a specific category of offensive language text items that contain expressions that embarrass most people
+- **Tax (Preview)**: detects Tax relation content such as tax planning, tax forms, tax filing, tax regulations
+- **Threat**: detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property
 
 These appear in the **Microsoft 365 compliance center** > **Data classification** > **Trainable classifiers** view with the status of `Ready to use`.
 
