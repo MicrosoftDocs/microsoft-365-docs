@@ -7,7 +7,7 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-localization_priority: Normal
+ms.localizationpriority:  medium
 description: Learn how to use accessibility mode when training a model in SharePoint Syntex.
 ---
 
@@ -18,13 +18,13 @@ In [SharePoint Syntex](index.md), users can turn on accessibility mode in all st
 This helps users to use their keyboards to navigate through text in the document viewer and to hear a narration of not only the selected values, but also of actions (such as labeling or removing labeling from selected text), or predicted label values as you train the model with additional example documents. 
 
 
-![Accessibility mode](../media/content-understanding/accessibility-mode.png)
+![Accessibility mode.](../media/content-understanding/accessibility-mode.png)
 
 ## Requirements
 
 To hear the audio of the narration, make sure to turn on the [Narrator App](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) in your Narrator settings on your Windows 10 system.
 
-![Turn on Narrator](../media/content-understanding/narrator-settings.png)
+![Turn on Narrator.](../media/content-understanding/narrator-settings.png)
 
 ## Labeling for keyboard users
 

@@ -10,13 +10,14 @@ ms.reviewer: pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
 - AdminSurgePortfolio
 - commerce_subscriptions
+- admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to verify your school's eligibility for Microsoft 365 Education academic pricing."
 ms.date: 07/21/2020
@@ -54,7 +55,7 @@ If your academic eligibility is denied, see [My school isn't eligible. What do I
 
 After you have a Microsoft 365 Education trial, you can check the status of your school's academic eligibility at any time.
 
-1. Go to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 2. On the home page, find the **Billing** card.\
     The **Billing** card indicates the status of the verification process. The card shows one of the following statuses: approved, pending, declined, or add your domain.
 

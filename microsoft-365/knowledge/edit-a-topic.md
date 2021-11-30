@@ -1,7 +1,7 @@
 ---
 title: Edit an existing topic in Microsoft Viva Topics
-author: chuckedmonson
 ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: cjtan
@@ -12,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-viva-topics
 ms.service: 
-localization_priority: Normal
+ms.localizationpriority:  medium
 description: Learn how to edit an existing topic in Microsoft Viva Topics.
 
 ---
@@ -99,47 +99,13 @@ Knowledge managers can also edit topics directly from the **Manage topics** page
 
 8. The **Suggested sites** section shows the sites that AI suggests to be associated to the topic. 
 
-   ![Screenshot of Suggested sites section](../media/knowledge-management/suggested-sites-section.png)  
+   ![Screenshot of Suggested sites section.](../media/knowledge-management/suggested-sites-section.png)  
 
     You can change a suggested site to a pinned site by selecting the pinned icon.
 
-
-<!---
-
-7.  The <b>Related sites</b> section shows sites that have information about the topic. 
-
-    ![Related sites section](../media/knowledge-management/related-sites.png)</br>
-
-    You can add a related site by selecting <b>Add</b> and then either searching for the site, or selecting it from your list of Frequent or Recent sites.</br>
-    
-    ![Select a site](../media/knowledge-management/sites.png)</br>
-
-8. The <b>Related topics</b> section shows connections that exists between topics. You can add a connection to a different topic by selecting the <b>Connect to a related topic</b> button, and then typing the name of the related topic, and selecting it from the search results. 
-
-   ![Related topics section](../media/knowledge-management/related-topic.png)</br>  
-
-    You can then give a description of how the topics are related, and select <b>Update</b>.</br>
-
-   ![Related topics description](../media/knowledge-management/related-topics-update.png)</br> 
-
-   The related topic you added will display as a connected topic.
-
-   ![Related topics connected](../media/knowledge-management/related-topics-final.png)</br> 
-
-   To remove a related topic, select the topic you want to remove, then select the <b>Remove topic</b> icon.</br>
- 
-   ![Remove related topic](../media/knowledge-management/remove-related.png)</br>  
-
-   Then select <b>Remove</b>.</br>
-
-   ![Confirm remove](../media/knowledge-management/remove-related-confirm.png)</br> 
-
---->
-
-9. You can also add static items to the page — such as text, images, or links - by selecting the canvas icon, which you can find below the short description. Selecting it will open the SharePoint toolbox from which you can choose the item you want to add to the page.
+9. You can also add static items to the page — such as text, images, or links — by selecting the canvas icon, which you can find below the short description. Selecting it will open the SharePoint toolbox from which you can choose the item you want to add to the page.
 
    ![Screenshot showing the Canvas icon.](../media/knowledge-management/webpart-library.png)
-
 
 10. Select **Publish** or **Republish** to save your changes. **Republish** will be your available option if the topic has been published previously.
 

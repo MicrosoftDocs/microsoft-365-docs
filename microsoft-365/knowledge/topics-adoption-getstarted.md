@@ -1,6 +1,6 @@
 ---
-title: "Get started driving adoption of Microsoft Viva Topics"
-description: "Learn how to drive adoption of Microsoft Viva Topics in your organization."
+title: Get started driving adoption of Microsoft Viva Topics
+description: Learn how to drive adoption of Microsoft Viva Topics in your organization.
 ms.author: samanro
 author: samanro
 manager: pamgreen
@@ -10,14 +10,14 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: 
-localization_priority: Normal
+ms.localizationpriority:  medium
 ---
 
 # Get started driving adoption of Microsoft Viva Topics
 
 Before you get started with adoption, you need to understand the concepts involved in knowledge management and Viva Topics. The following diagram shows what happens during topic discovery and curation:
 
-![Viva Topics architecture](../media/knowledge-management/topic-management-architecture.png)
+![Viva Topics architecture.](../media/knowledge-management/topic-management-architecture.png)
 
 - **Discovery**: Users can discover knowledge in the apps they use every day through topic cards - they can also discover topics in Microsoft Search.
 - **Curation**: Subject matter experts (SMEs) refine topics through topic pages, and AI learns from their input. The Topic center contains topic pages that users can explore and experts can manage.
@@ -51,7 +51,7 @@ Review this list of prerequisites for getting the most out of Viva Topics:
 
 To plan for adoption of Viva Topics, you need to:
 
-![Steps to plan for adoption](../media/knowledge-management/km-adoption-plan-adoption.png)
+![Steps to plan for adoption.](../media/knowledge-management/km-adoption-plan-adoption.png)
 
 1. Plan your approach and target scenarios:
     - Think about defining and prioritizing the [scenarios](#target-scenarios).
@@ -116,7 +116,7 @@ After you identify your scenarios, you can prioritize the scenarios:
 
 One way to prioritize them is to plot out your scenarios in a grid showing impact vs. ease of implementation. Look for scenarios that have both high impact and are easy to implement and make those ones your top priority. Low impact and hard-to-implement scenarios are your lowest priority. When you have a quick win with a high impact, easy-to-implement scenario, it helps people get excited and see the possibilities of using topics.
 
-![High impact, easy to implement scenarios are high priority](../media/knowledge-management/topics-prioritize-scenarios.png)
+![High impact, easy to implement scenarios are high priority.](../media/knowledge-management/topics-prioritize-scenarios.png)
 
 Pick a couple of key scenarios to focus on initially, work with your early adopters to get some feedback, and then roll out in stages. This way you can iterate, make improvements, and gain feedback so you can grow adoption over time.
 
@@ -134,7 +134,7 @@ Identify the stakeholders for your project. The key roles are the Executive spon
 | Subject-matter experts and topic contributors | Generate or review topics and descriptions | Any department |
 | Champions | Help evangelize and manage objection handling | Any department (staff) |
 | Tenant administrator | Configure tenant-level settings | IT department |
-| Power Platform administrator| Configure common data services environment | IT department |
+| Power Platform administrator| Configure Dataverse environment | IT department |
 | Search administrator or manager | Configure search settings | IT department |
 
 In a larger organization, you might also have multiple people in these roles, and you'll need to drive coordination amongst them. In a smaller company, a single person might perform several of these roles. Different roles might be more involved in different phases of the project. For example, Tenant administrators are more involved in setting up the features, while Subject-matter experts and Champions don't get involved until you start defining topics.

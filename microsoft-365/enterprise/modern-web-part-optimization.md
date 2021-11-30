@@ -7,7 +7,7 @@ ms.date: 03/11/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - Strat_O365_Enterprise
@@ -47,7 +47,7 @@ Possible results include:
 
 If the **Web parts are impacting page load time** result appears in either the **Attention required** or **Improvement opportunities** section of the results, click the result to see details about which web parts are loading slowly. Future updates to the Page Diagnostics for SharePoint tool may include updates to analysis rules, so please ensure you always have the latest version of the tool.
 
-![Page Diagnostics tool results](../media/modern-portal-optimization/pagediag-web-part.png)
+![Page Diagnostics tool results.](../media/modern-portal-optimization/pagediag-web-part.png)
 
 Information available in the results includes:
 
@@ -95,7 +95,7 @@ dispose resources such as event handlers to avoid memory leaks.
 
 Before you make page revisions to remediate performance issues, make a note of the page load time in the analysis results. Run the tool again after your revision to see if the new result is within the baseline standard, and check the new page load time to see if there was an improvement.
 
-![Page load time results](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Page load time results.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >Page load time can vary based on a variety of factors such as network load, time of day, and other transient conditions. You should test page load time a few times before and after making changes to help you average the results.

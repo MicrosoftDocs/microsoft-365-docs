@@ -9,7 +9,7 @@ ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management 
 - Adm_O365
@@ -17,6 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150
 description: "Learn about billing accounts and how they're used to manage account settings, invoices, payment methods, and purchases."
 ms.date: 03/17/2021
@@ -26,7 +27,7 @@ ms.date: 03/17/2021
 
 A billing account is created when you sign up to try or buy Microsoft products. You use your billing account to manage your account settings, invoices, payment methods, and purchases. You can have access to multiple billing accounts. For example, you signed up for Microsoft 365 directly, or you have access to your organization's Enterprise Agreement, Microsoft Product & Services Agreement or Microsoft Customer Agreement. For each of these scenarios, you would have a separate billing account.
 
-The Microsoft 365 admin center currently supports the following type of billing accounts:
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> currently supports the following type of billing accounts:
 
 - Microsoft Online Services Program: This billing account is created when you sign up for a Microsoft 365 subscription directly.
 - Microsoft Products & Services Agreement (MPSA) Program: This billing account is created when your organization signs an MPSA Volume Licensing agreement to purchase software and online services.
@@ -63,7 +64,7 @@ This section lists the shipping addresses associated with your billing account. 
 
 ## Understand access to billing accounts
 
-You can provide others with access to the billing account in the Microsoft 365 admin center through roles and permissions. Only a billing account owner can grant access to a billing account. You can assign one of the following roles to users:
+You can provide others with access to the billing account in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> through roles and permissions. Only a billing account owner can grant access to a billing account. You can assign one of the following roles to users:
 
 - **Billing account owner** &mdash; Can assign permissions, edit accounts, sign agreements, and view accounts.
 - **Billing account contributor** &mdash; Can edit accounts, sign agreements, and view accounts.

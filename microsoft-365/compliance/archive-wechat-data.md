@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: "Set up and use a connector in the Microsoft 365 compliance center to import and archive WeChat data in Microsoft 365."
 ---
@@ -24,7 +24,7 @@ After WeChat Archiver connector data is stored in user mailboxes, you can apply 
 
 The following overview explains the process of using a connector to archive WeChat communications data in Microsoft 365.
 
-![Archiving workflow for WeChat Archiver data](../media/WeChatConnectorWorkflow.png)
+![Archiving workflow for WeChat Archiver data.](../media/WeChatConnectorWorkflow.png)
 
 1. Your organization works with TeleMessage to set up a WeChat Archiver connector.
 

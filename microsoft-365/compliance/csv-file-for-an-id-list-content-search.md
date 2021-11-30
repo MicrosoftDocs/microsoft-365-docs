@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
@@ -17,6 +17,7 @@ search.appverid:
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: "Use a CSV file from an existing Content search to create an ID list search that returns specific email items."
 ---
 
@@ -64,7 +65,7 @@ You can use a CSV file from a search that included SharePoint sites and OneDrive
 
     Here's an example of a CSV file that's ready to be submitted for an ID list content search.
 
-    ![Example of a CSV file for a targeted content search](../media/SearchIDListCSVFile.png)
+    ![Example of a CSV file for a targeted content search.](../media/SearchIDListCSVFile.png)
 
 6. Save the CSV file or use **Save As** to the save the file with different file name. In both cases, be sure to save the file with the CSV format.
 
@@ -75,7 +76,7 @@ The next step is to create a new ID list search and submit the CSV file that you
 > [!IMPORTANT]
 > You should create an ID list search no more than 2 days after exporting the search results or report. If the search results or report where exported more than 2 days ago, you should re-export the search results or report to generate updated CSV files. Then you can prepare one of the updated CSV files and use it to create an ID list search.
 
-1. Go to <https://compliance.microsoft.com> and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in.
 
 2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **Content search**.
 
@@ -89,7 +90,7 @@ The next step is to create a new ID list search and submit the CSV file that you
 
     Here's an example of the flyout page from an ID list search that shows the query that's generated and the estimated number of search results.
 
-    ![Search query for ID list search](../media/SearchIDListFlyout.png)
+    ![Search query for ID list search.](../media/SearchIDListFlyout.png)
 
     The number of estimated items displayed in statistics for the ID search should match the number of items that you selected in the CSV file.
 

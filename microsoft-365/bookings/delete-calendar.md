@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: "Use the Microsoft 365 admin center or Windows PowerShell to delete Bookings calendars."
 ---
@@ -33,11 +33,11 @@ The booking calendar is where all relevant information about that booking calend
 
 1. In the Admin center, select **Users**.
 
-   ![Image of Users UI in Microsoft 365 admin center](../media/bookings-admin-center-users.png)
+   ![Image of Users UI in Microsoft 365 admin center.](../media/bookings-admin-center-users.png)
 
 1. On the **Active Users** page, choose the names of the users that you want to delete, and then select **Delete user**.
 
-   ![Image of Delete User UI in Microsoft 365 admin center](../media/bookings-delete-user.png)
+   ![Image of Delete User UI in Microsoft 365 admin center.](../media/bookings-delete-user.png)
 
 ## Delete a booking calendar using Exchange Online PowerShell
 

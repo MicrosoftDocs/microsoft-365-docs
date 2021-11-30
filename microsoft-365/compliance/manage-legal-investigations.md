@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
-description: "Use eDiscovery cases in the Security & Compliance Center in Office 365 to manage your organization's legal investigation."
+description: "Use eDiscovery cases in the Microsoft 365 compliance center to manage your organization's legal investigation."
 ---
 
 # Manage legal investigations in Microsoft 365

@@ -1,5 +1,5 @@
 ---
-title: Pilot Microsoft Defender for Endpoint, set up a pilot, test capabilities in evaluation
+title: Pilot Microsoft Defender for Endpoint
 description: Learn how to run a pilot for Microsoft Defender for Endpoint(MDE), including verifying the pilot group and trying out capabilities.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: v-jweston
 author: jweston-1
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -29,7 +29,7 @@ This article will guide you in the process of running a pilot for Microsoft Defe
 
 Use the following steps to setup and configure the pilot for Microsoft Defender for Endpoint. 
 
-![Steps for adding Microsoft Defender for Identity to the Defender evaluation environment](../../media/defender/m365-defender-endpoint-pilot-steps.png)
+![Steps for adding Microsoft Defender for Identity to the Defender evaluation environment.](../../media/defender/m365-defender-endpoint-pilot-steps.png)
 
 - Step 1. Verify pilot group
 - Step 2. Try out capabilities
@@ -79,7 +79,7 @@ To run any of the provided simulations, you need at least [one onboarded device]
 > Simulation files or scripts mimic attack activity but are actually benign and will not harm or compromise the test device.
 
 ## Next steps
-[Evaluate Microsoft Cloud App Security](eval-defender-mcas-overview.md)
+[Evaluate Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)
 
 Return to the overview for [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
 

@@ -11,7 +11,7 @@ f1_keywords:
 - 'O365E_understand_devices'
 - 'BCS365_understand_devices'
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-subscription-management 
 ms.custom:
 - Core_O365Admin_Migration
@@ -26,7 +26,7 @@ description: "Learn the differences between mobile device management and mobile 
 
 # Difference between MDM and MAM
 
-Microsoft 365 Business Premium offers a number of ways for you to protect your business data. See [Overview of Microsoft 365 Business Premium](../microsoft-365-business-overview.md) for more about the various protections that are automatically set up, and what you can set up yourself to further protect your business. You can also set up policies that protect your Windows 10 devices and the data in your mobile devices.
+Microsoft 365 Business Premium offers a number of ways for you to protect your business data. See [Overview of Microsoft 365 Business Premium](../../business-video/what-is-microsoft-365.md) for more about the various protections that are automatically set up, and what you can set up yourself to further protect your business. You can also set up policies that protect your Windows 10 devices and the data in your mobile devices.
 [Set application protection settings for Windows 10 devices](../protection-settings-for-windows-10-devices.md).
 
 ## Mobile device management or MDM

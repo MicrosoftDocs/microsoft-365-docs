@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
@@ -51,7 +51,7 @@ There are two ways to create a new sensitive information type:
 
 Use this procedure to create a new sensitive information type that you fully define. 
 
-1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose **Create info type**.
+1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose **Create sensitive info type**.
 2. Fill in values for **Name** and **Description** and choose **Next**.
 3. Choose **Create pattern**. You can create multiple patterns, each with different elements and confidence levels, as you define your new sensitive information type.
 4. Choose the default confidence level for the pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
@@ -113,9 +113,21 @@ Use this procedure to create a new sensitive information type that is based on a
 13. Choose the **recommended confidence level** for this sensitive information type.
 14. Check your setting and choose **Submit**.
 
+> [!NOTE]
+> These SITs can't be copied:
+> - Canada driver's license number
+> - EU driver's license number
+> - EU national identification number
+> - EU passport number
+> - EU social security number or equivalent identification
+> - EU tax identification number
+> - International classification of diseases (ICD-10-CM)
+> - International classification of diseases (ICD-9-CM)
+> - U.S. driver's license number
+
 You can also create custom sensitive information types by using PowerShell and Exact Data Match capabilities. To learn more about those methods, see:
 - [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Create a custom sensitive information type for DLP with Exact Data Match (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 
 ## More information on regular expression validators
 
@@ -142,7 +154,7 @@ If Mod value != digit 8
 > [!NOTE]
 > If the check digit is not part of the checksum calculation then use 0 as the weight for the check digit. For example, in the above case weight 8 will be equal to 0 if the check digit is not to be used for calculating the check digit.  Modulo_operation).
 
-![screenshot of configured checksum validator](../media/checksum-validator.png)
+![screenshot of configured checksum validator.](../media/checksum-validator.png)
 
 ### Date validator
 
@@ -157,7 +169,7 @@ If a date value that is embedded in regular expression is part of a new pattern 
 2. Then add the date validator.
 3. Select the date format and the start offset. Since the date string is the first six digits, the offset is `0`.
 
-![screenshot of configured date validator](../media/date-validator.png)
+![screenshot of configured date validator.](../media/date-validator.png)
 
 ### Functional processors as validators
 
@@ -195,11 +207,14 @@ Here are the definitions and some examples for the available additional checks.
 
 > [!TIP]
 > To detect patterns containing Chinese/Japanese characters and single byte characters or to detect patterns containing Chinese/Japanese and English, define two variants of the keyword or regex. 
+> - For example, to detect a keyword like "机密的document", use two variants of the keyword; one with a space between the Japanese and English text and another without a space between the Japanese and English text. So, the keywords to be added in the SIT should be "机密的 document" and "机密的document". Similarly, to detect a phrase "東京オリンピック2020", two variants should be used; "東京オリンピック 2020" and "東京オリンピック2020".
 >
-> For example, to detect a keyword like "机密的document", use two variants of the keyword; one with a space between the Japanese and English text and another without a space between the Japanese and English text. So, the keywords to be added in the SIT should be "机密的 document" and "机密的document". Similarly, to detect a phrase "東京オリンピック2020", two variants should be used; "東京オリンピック 2020" and "東京オリンピック2020".
+> Along with Chinese/Japanese/double byte characters, if the list of keywords/phrases also contain non Chinese/Japanese words also (like English only), it is recommended to create two dictionaries/keyword lists. One for keywords containing Chinese/Japanese/double byte characters and another one for English only. 
+> - For example, if you want to create a keyword dictionary/list with three phrases "Highly confidential", "機密性が高い" and "机密的document", the it you should create two keyword lists. 
+>     1. Highly confidential
+>     2. 機密性が高い, 机密的document and 机密的 document
 >
 > While creating a regex using a double byte hyphen or a double byte period, make sure to escape both the characters like one would escape a hyphen or period in a regex. Here is a sample regex for reference:
->
 >    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
 >
 > We recommend using a string match instead of a word match in a keyword list.

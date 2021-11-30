@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: overview
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
   - MOE150
@@ -17,9 +17,12 @@ ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection: 
   - M365-security-compliance
 description: Admins can learn how to use the spoof intelligence policy and the spoof intelligence insight to allow or block detected spoofed senders.
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP
@@ -30,8 +33,8 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-> [!NOTE]
-> This article describes the older spoofed sender management experience that's being replaced (the **spoof intelligence policy** on the **Anti-spam policies** page). For more information about the new experience (the **Spoofing** tab in the Tenant Allow/Block List), see [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md)
+> [!IMPORTANT]
+> This article describes the older spoofed sender management experience that's being replaced (the **spoof intelligence policy** on the **Anti-spam policies** page). For more information about the new experience (the **Spoofing** tab in the Tenant Allow/Block List), see [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, inbound email messages are automatically protected against spoofing by EOP as of October 2018. EOP uses **spoof intelligence** as part of your organization's overall defense against phishing. For more information, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
 
@@ -41,7 +44,7 @@ You can manage spoof intelligence in the Microsoft 365 Defender portal, or in Po
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>.
+- You open the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>.
   - To go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
@@ -75,11 +78,14 @@ There are two ways to allow and block spoofed senders:
 
 ### Manage spoofed senders in the spoof intelligence policy
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Anti-spam**.
+> [!IMPORTANT]
+> This article describes the older spoofed sender management experience that's being replaced (the **spoof intelligence policy** on the **Anti-spam policies** page). For more information about the new experience (the **Spoofing** tab in the Tenant Allow/Block List), see [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
+
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section.
 
 2. On the **Anti-spam policies** page, select **Spoof intelligence policy** by clicking on the name.
 
-   ![Select the spoof intelligence policy](../../media/anti-spam-settings-spoof-intelligence-policy.png)
+   ![Select the spoof intelligence policy.](../../media/anti-spam-settings-spoof-intelligence-policy.png)
 
 3. On the **Spoof intelligence policy** flyout that appears, make one of the following selections:
    - **Show me senders I already reviewed**
@@ -89,11 +95,11 @@ There are two ways to allow and block spoofed senders:
    - **Your Domains**: Senders spoofing users in your internal domains.
    - **External Domains**: Senders spoofing users in external domains.
 
-5. Click ![Expand icon](../../media/scc-expand-icon.png) in the **Allowed to spoof?** column and make one of the following selections:
+5. Click ![Expand icon.](../../media/scc-expand-icon.png) in the **Allowed to spoof?** column and make one of the following selections:
    - **Yes**: Allow the spoofed sender.
    - **No**: Mark the message as spoofed. The action is controlled by the default anti-phishing policy or custom anti-phishing policies. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
 
-   ![Screenshot showing the spoofed senders flyout, and whether the sender is allowed to spoof](../../media/spoof-allow-block-flyout.png)
+   ![Screenshot showing the spoofed senders flyout, and whether the sender is allowed to spoof.](../../media/spoof-allow-block-flyout.png)
 
    The columns and values that you see are explained in the following list:
 
@@ -125,6 +131,9 @@ There are two ways to allow and block spoofed senders:
 6. When you're finished, click **Save**.
 
 #### Use PowerShell to manage spoofed senders
+
+> [!IMPORTANT]
+> This article describes the older spoofed sender management experience that's being replaced (the **spoof intelligence policy** on the **Anti-spam policies** page). For more information about the new experience (the **Spoofing** tab in the Tenant Allow/Block List), see [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
 
 To view allowed and blocked senders in spoof intelligence, use the following syntax:
 
@@ -173,6 +182,9 @@ For detailed syntax and parameter information, see [Set-PhishFilterPolicy](/powe
 
 ### Manage spoofed senders in the spoof intelligence insight
 
+> [!IMPORTANT]
+> This article describes the older spoofed sender management experience that's being replaced (the **spoof intelligence policy** on the **Anti-spam policies** page). For more information about the new experience (the **Spoofing** tab in the Tenant Allow/Block List), see [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
+
 1. In the Security & Compliance Center, go to **Threat Management** \> **Dashboard**.
 
 2. In the **Insights** row, look for one of the following items:
@@ -182,7 +194,7 @@ For detailed syntax and parameter information, see [Set-PhishFilterPolicy](/powe
 
 3. The insight on the dashboard shows you information like this:
 
-   ![Screenshot of spoof intelligence insight](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
+   ![Screenshot of spoof intelligence insight.](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
 
    This insight has two modes:
 
@@ -218,13 +230,13 @@ For detailed syntax and parameter information, see [Set-PhishFilterPolicy](/powe
 
    From here, you can also choose to add or remove the domain/sending infrastructure pair from the **Allowed to spoof** sender allow list. Simply set the toggle accordingly.
 
-   ![Screenshot of a domain in the Spoof intelligence insight details pane](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
+   ![Screenshot of a domain in the Spoof intelligence insight details pane.](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
 
 ## How do you know these procedures worked?
 
 To verify that you've configured spoof intelligence with senders who are allowed and not allowed to spoof, use any of the following steps:
 
-- **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** page \> **Policies** section \> **Anti-spam** \> **Spoof intelligence policy** \> select **Show me senders I already reviewed** \> select the **Your Domains** or **External Domains** tab, and verify the **Allowed to spoof?** value for the sender.
+- **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section \> **Spoof intelligence policy** \> select **Show me senders I already reviewed** \> select the **Your Domains** or **External Domains** tab, and verify the **Allowed to spoof?** value for the sender.
 
 - In PowerShell, run the following commands to view the senders who are allowed and not allowed to spoof:
 

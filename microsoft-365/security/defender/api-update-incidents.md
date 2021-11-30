@@ -7,16 +7,16 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-search.appverid: 
+search.appverid:
   - MOE150
   - MET150
 ms.technology: m365d
@@ -35,7 +35,7 @@ ms.technology: m365d
 
 ## API description
 
-Updates properties of existing incident. Updatable properties are: ```status```, ```determination```, ```classification```, ```assignedTo```, ```tags```, and ```comments```.
+Updates properties of existing incident. Updatable properties are: `status`, `determination`, `classification`, `assignedTo`, `tags`, and `comments`.
 
 ### Quotas, resource allocation, and other constraints
 
@@ -48,10 +48,10 @@ If your request is throttled, it will return a `429` response code. The response
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Access the Microsoft 365 Defender APIs](api-access.md).
 
-Permission type | Permission | Permission display name
--|-|-
-Application | Incident.ReadWrite.All | Read and write all incidents
-Delegated (work or school account) | Incident.ReadWrite | Read and write incidents
+Permission type|Permission|Permission display name
+---|---|---
+Application|Incident.ReadWrite.All|Read and write all incidents
+Delegated (work or school account)|Incident.ReadWrite|Read and write incidents
 
 > [!NOTE]
 > When obtaining a token using user credentials, the user needs to have permission to update the incident in the portal.
@@ -64,23 +64,23 @@ PATCH /api/incidents/{id}
 
 ## Request headers
 
-Name | Type | Description
--|-|-
-Authorization | String | Bearer {token}. **Required**.
-Content-Type | String | application/json. **Required**.
+Name|Type|Description
+---|---|---
+Authorization|String|Bearer {token}. **Required**.
+Content-Type|String|application/json. **Required**.
 
 ## Request body
 
 In the request body, supply the values for the fields that should be updated. Existing properties that aren't included in the request body will maintain their values, unless they have to be recalculated due to changes to related values. For best performance, you should omit existing values that haven't changed.
 
-Property | Type | Description
--|-|-
-status | Enum | Specifies the current status of the incident. Possible values are: ```Active```, ```Resolved```, and ```Redirected```.
-assignedTo | string | Owner of the incident.
-classification | Enum | Specification of the incident. Possible values are: ```Unknown```, ```FalsePositive```, ```TruePositive```.
-determination | Enum | Specifies the determination of the incident. Possible values are: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
-tags | string List | List of Incident tags.
-comment | string | Comment to be added to the incident.
+Property|Type|Description
+---|---|---
+status|Enum|Specifies the current status of the incident. Possible values are: `Active`, `Resolved`, and `Redirected`.
+assignedTo|string|Owner of the incident.
+classification|Enum|Specification of the incident. Possible values are: `Unknown`, `FalsePositive`, `TruePositive`.
+determination|Enum|Specifies the determination of the incident. Possible values are: `NotAvailable`, `Apt`, `Malware`, `SecurityPersonnel`, `SecurityTesting`, `UnwantedSoftware`, `Other`.
+tags|string List|List of Incident tags.
+comment|string|Comment to be added to the incident.
 
 ## Response
 
@@ -89,7 +89,7 @@ If successful, this method returns `200 OK`. The response body will contain the 
 
 ## Example
 
-**Request**
+### Request example
 
 Here's an example of the request.
 
@@ -97,7 +97,7 @@ Here's an example of the request.
  PATCH https://api.security.microsoft.com/api/incidents/{id}
 ```
 
-**Response**
+### Response example
 
 ```json
 {

@@ -29,8 +29,7 @@
           href: topic-experiences-user-permissions.md
         - name: Change the topic center name
           href: topic-experiences-administration.md
-    
-    
+       
     - name: Work with topics
       items:
         - name: Get started with Viva Topics
@@ -50,10 +49,11 @@
         - name: Manage topics at scale 
           href: scale-topics.md             
 
-
     - name: Adoption
       items: 
         - name: Get started driving adoption
           href: topics-adoption-getstarted.md
         - name: Run a trial
           href: trial-topics.md
+        - name: Adoption resources
+          href: adoption-resources.md

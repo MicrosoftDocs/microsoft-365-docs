@@ -4,13 +4,13 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: lauris; jaeccles
-ms.date: 
+ms.date:
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-ms.custom: 
-search.appverid: 
-localization_priority: Normal
+ms.custom:
+search.appverid:
+ms.localizationpriority:  medium
 description: Learn how to plan and run a trial pilot program for Microsoft Viva Topics in your organization.
 ---
 
@@ -25,12 +25,12 @@ Trials are publicly available from one of the following sources. These trials of
 - The [Viva Topics product page](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)
 
 - The [Microsoft 365 admin center](https://admin.microsoft.com)
-    1.	Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-    2.	Go to **Billing** > **Purchase Services**.
-    3.	Scroll down to the **Add-Ons** section.
-    4.	On the **Topic Experiences** tile, select **Details**.
-    5.	Select **Get free trial**.
-    6.	Follow the remaining wizard steps to confirm the trial.
+    1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
+    2. Go to **Billing** > **Purchase Services**.
+    3. Scroll down to the **Add-Ons** section.
+    4. On the **Topic Experiences** tile, select **Details**.
+    5. Select **Get free trial**.
+    6. Follow the remaining wizard steps to confirm the trial.
 
 You must be a Microsoft 365 global administrator or billing administrator to activate a trial.
 
@@ -39,11 +39,11 @@ You must be a Microsoft 365 global administrator or billing administrator to act
 
 ### Who should be involved in a trial
 
-|Role  |Activity  |
-|---------|---------|
-|Microsoft 365 global admin or billing admin  |   Activate the trial and assign licenses      |
-|Microsoft 365 global admin or SharePoint admin    |       Configure  Viva Topics and create topic centers  |
-|Business user     |   Perform knowledge manager, topic contributor, and topic consumer roles      |
+|Role|Activity|
+|---|---|
+|Microsoft 365 global admin or billing admin|Activate the trial and assign licenses|
+|Microsoft 365 global admin or SharePoint admin|Configure  Viva Topics and create topic centers|
+|Business user|Perform knowledge manager, topic contributor, and topic consumer roles|
 
 ### Before you activate a trial
 
@@ -54,8 +54,8 @@ Planning is essential for an effective trial of Viva Topics. The trial period is
 There are two high-level strategy options for configuration of topic discovery during a trial:
 
 - Index all or most of your SharePoint Online content.
-   - Large tenants can take up to two weeks to fully index. While topics will be generated incrementally throughout this period, full indexing could consume up to half the trial period.
-   - For tenants with a significant volume of data, this option can produce a very large number of topics, perhaps tens of thousands.
+  - Large tenants can take up to two weeks to fully index. While topics will be generated incrementally throughout this period, full indexing could consume up to half the trial period.
+  - For tenants with a significant volume of data, this option can produce a very large number of topics, perhaps tens of thousands.
 
 - Identify a subset of your SharePoint sites for indexing.
 
@@ -67,17 +67,17 @@ The choice of these strategies is a balance of the following two factors:
 For most organizations, the second strategy produces the best outcome.
 
 > [!NOTE]
-> Due to the number of documents required by the AI, we recommend that you run Viva Topics trials on a production tenant. There’s no impact on the performance of the tenant during this period. Only users who have a trial license can access Viva Topics user experiences.
+> Due to the number of documents required by the AI, we recommend that you run Viva Topics trials on a production tenant. There's no impact on the performance of the tenant during this period. Only users who have a trial license can access Viva Topics user experiences.
 
 #### Roles
 
 During the trial, there are three roles that must be active, which are described in the following table.
 
-|Role  |Activity  |
-|---------|---------|
-|Knowledge manager     |   Control the lifecycle stages of topics; confirm and remove topics; act as a community manager for topic contributors      |
-|Topic contributor    |      Content subject matter experts, who can:<br> Review topics to evaluate the quality of AI-defined content<br>Curate discovered topics with additional content<br>Create additional topics that weren’t discovered by AI   |
-|Topic consumer    |     Consume topics through page highlights and search<br>Provide feedback on the value of the topics presented    |
+|Role|Activity|
+|---|---|
+|Knowledge manager|Control the lifecycle stages of topics; confirm and remove topics; act as a community manager for topic contributors|
+|Topic contributor|Content subject matter experts, who can:<br> Review topics to evaluate the quality of AI-defined content<br>Curate discovered topics with additional content<br>Create additional topics that weren't discovered by AI|
+|Topic consumer|Consume topics through page highlights and search<br>Provide feedback on the value of the topics presented|
 
 #### Expected topics
 
@@ -109,8 +109,8 @@ The trial period should be used to evaluate the following components of Viva Top
 Consider these factors:
 
 - For Viva Topics to deliver the maximum value, the content in topics needs to be a combination of AI-defined content and human-curated content.
-- All user experiences are “permission trimmed” (including the knowledge manager’s view on the **Manage topics** page). Users will only see a topic if they have permissions to view some of the resources that were used to generate the topic. This means that different users might see different content on the same topic page.
-- Users might see multiple topics that have the same name in the **Manage topics** page. These topics aren't necessarily duplicates but might be because of a single term that’s used in multiple contexts in the data, such as a project code name that’s used by two distinct projects.
+- All user experiences are “permission trimmed” (including the knowledge manager's view on the **Manage topics** page). Users will only see a topic if they have permissions to view some of the resources that were used to generate the topic. This means that different users might see different content on the same topic page.
+- Users might see multiple topics that have the same name in the **Manage topics** page. These topics aren't necessarily duplicates but might be because of a single term that's used in multiple contexts in the data, such as a project code name that's used by two distinct projects.
 
 ## After a trial
 
@@ -118,19 +118,18 @@ Based on the outcome of the trial, you can decide whether to proceed to producti
 
 ### Proceed to production use
 
-To ensure continuity of service, you must purchase the required number of licenses and assign those licenses to users. Trial users who don’t have a full license at the end of the trial period won’t be able to access any Viva Topics experiences.
+To ensure continuity of service, you must purchase the required number of licenses and assign those licenses to users. Trial users who don't have a full license at the end of the trial period won't be able to access any Viva Topics experiences.
 
-### Don’t proceed to production use
+### Don't proceed to production use
 
-If you don’t purchase licenses following the trial:
+If you don't purchase licenses following the trial:
 
 - Topic discovery will stop.
 - Users will no longer see topic highlights or cards.
-- The topic center won’t be deleted, but the suggested topics and manage topics experiences won’t be available.
+- The topic center won't be deleted, but the suggested topics and manage topics experiences won't be available.
 - Any AI-defined topics will be lost.
 - Topics that have been edited by a topic contributor will remain in the topic center pages library. Only the manually provided content will remain on these pages, not any AI-suggested content.
 
 ## See also
 
 [Get started driving adoption of Microsoft Viva Topics](topics-adoption-getstarted.md)
-

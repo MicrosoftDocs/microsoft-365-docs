@@ -2,16 +2,14 @@
 title: Deploy Microsoft Defender for Endpoint on Linux manually
 ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux manually from the command line.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -26,17 +24,17 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 This article describes how to deploy Microsoft Defender for Endpoint on Linux manually. A successful deployment requires the completion of all of the following tasks:
 
 - [Deploy Microsoft Defender for Endpoint on Linux manually](#deploy-microsoft-defender-for-endpoint-on-linux-manually)
   - [Prerequisites and system requirements](#prerequisites-and-system-requirements)
   - [Configure the Linux software repository](#configure-the-linux-software-repository)
-    - [RHEL and variants (CentOS and Oracle Linux)](#rhel-and-variants-centos-and-oracle-linux)
+    - [RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
     - [SLES and variants](#sles-and-variants)
     - [Ubuntu and Debian systems](#ubuntu-and-debian-systems)
   - [Application installation](#application-installation)
@@ -62,7 +60,7 @@ In order to preview new features and provide early feedback, it is recommended t
 > [!WARNING]
 > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
 
-### RHEL and variants (CentOS and Oracle Linux)
+### RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)
 
 - Install `yum-utils` if it isn't installed yet:
 
@@ -70,27 +68,39 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo yum install yum-utils
     ```
 
-- Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/`. For instance, RHEL 7.9 is closer to 7.4 than to 8.
+- Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/rhel/`.
 
-    In the below commands, replace *[distro]* and *[version]* with the information you've identified:
+    Use the following table to help guide you in locating the package:
 
-    > [!NOTE]
-    > In case of Oracle Linux, replace *[distro]* with "rhel".
+    <br>
+
+    ****
+
+    |Distro & version|Package|
+    |---|---|
+    |For RHEL/Centos/Oracle 8.0-8.5|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
+    |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7/[channel].repo>|
+    |For RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|
+    |For Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
+    |For Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
+
+    In the following commands, replace *[version]* and *[channel]* with the information you've identified:
+
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/[version]/[channel].repo
     ```
 
     For example, if you are running CentOS 7 and want to deploy Defender for Endpoint on Linux from the *prod* channel:
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/prod.repo
     ```
 
     Or if you wish to explore new features on selected devices, you might want to deploy Microsoft Defender for Endpoint on Linux to *insiders-fast* channel:
 
     ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/insiders-fast.repo
+    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/insiders-fast.repo
     ```
 
 - Install the Microsoft GPG public key:
@@ -107,7 +117,7 @@ In order to preview new features and provide early feedback, it is recommended t
 
 ### SLES and variants
 
-- Note your distribution and version, and identify the closest entry(by major, then minor) for it under `https://packages.microsoft.com/config/`.
+- Note your distribution and version, and identify the closest entry(by major, then minor) for it under `https://packages.microsoft.com/config/sles/`.
 
     In the following commands, replace *[distro]* and *[version]* with the information you've identified:
 
@@ -141,7 +151,7 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo apt-get install libplist-utils
     ```
 
-- Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config`.
+- Note your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/[distro]/`.
 
     In the below command, replace *[distro]* and *[version]* with the information you've identified:
 
@@ -149,7 +159,7 @@ In order to preview new features and provide early feedback, it is recommended t
     curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
     ```
 
-    For example, if you are running Ubuntu 18.04 and wish to deploy MDE for Linux from the *prod* channel:
+    For example, if you are running Ubuntu 18.04 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
 
     ```bash
     curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
@@ -258,8 +268,8 @@ In order to preview new features and provide early feedback, it is recommended t
     ```
 
     ```Output
-    deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/ubuntu/18.04/prod insiders-fast main
-    deb [arch=amd64] https://packages.microsoft.com/ubuntu/18.04/prod bionic main
+    deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/config/ubuntu/18.04/prod insiders-fast main
+    deb [arch=amd64] https://packages.microsoft.com/config/ubuntu/18.04/prod bionic main
     ```
 
     ```bash
@@ -274,7 +284,7 @@ Download the onboarding package from Microsoft 365 Defender portal:
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft 365 Defender portal screenshot](images/atp-portal-onboarding-linux.png)
+    ![Microsoft 365 Defender portal screenshot.](images/portal-onboarding-linux.png)
 
 4. From a command prompt, verify that you have the file.
     Extract the contents of the archive:
@@ -335,7 +345,7 @@ Download the onboarding package from Microsoft 365 Defender portal:
     > mdatp health --field definitions_status
     > ```
     >
-    > Please note that you may also need to configure a proxy after completing the initial installation. See [Configure Defender for Endpoint on Linux for static proxy discovery: Post-installation configuration](/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration).
+    > Please note that you may also need to configure a proxy after completing the initial installation. See [Configure Defender for Endpoint on Linux for static proxy discovery: Post-installation configuration](linux-static-proxy-configuration.md#post-installation-configuration).
 
 5. Run a detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
@@ -423,7 +433,7 @@ When upgrading your operating system to a new major version, you must first unin
     sudo yum-config-manager --disable packages-microsoft-com-fast-prod
     ```
 
-1. Redeploy MDE for Linux using the "Production channel".
+1. Redeploy Microsoft Defender for Endpoint on Linux using the "Production channel".
 
 ## Uninstallation
 

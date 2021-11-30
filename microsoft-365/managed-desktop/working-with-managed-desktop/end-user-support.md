@@ -4,7 +4,7 @@ description:  How users can get help with the service and devices
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
@@ -45,9 +45,11 @@ Before you request elevated access to a device, it's best to review which action
 2. Select **New elevation request**.
 3. Provide these details:
     - **Support ticket ID** from your own support ticketing system.
-    - **Device name**: enter the device serial number and then select the device from the menu.
-    - **Category**: Select the category that best fits your issue. If no option seems close, then select **Other** and provide more info in the **Title** and **Plan of action** fields. It's best to select a category if at all possible.
-    - **Subcategory**: Select the one that best fits the issue. If no option seems close, then select **Other** and provide a short description in **Title**. In **Plan of action**, provide the troubleshooting steps you plan to take once elevation is granted.
+    - **Device name**: Enter the device serial number and then select the device from the menu.
+    - **Category**: Select the category that best fits your issue. If no option seems close, then select **Other**. It's best to select a category if at all possible.
+    - **Subcategory**: Select the one that best fits the issue. If no option seems close, then select **Other**.
+    - **Title**: Provide a short description of the issue on the device.
+    - **Plan of action**: Provide the troubleshooting steps you plan to take once elevation is granted. 
 4. Select **Submit**.
 
 

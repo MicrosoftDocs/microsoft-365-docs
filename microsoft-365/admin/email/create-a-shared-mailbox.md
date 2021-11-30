@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -29,7 +29,8 @@ description: "Create a shared mailbox to enable multiple users in your business 
 # Create a shared mailbox 
 
 > [!NOTE]
-> If your organization uses a hybrid Exchange environment, you should use the on-premises Exchange admin center (EAC) to create and manage shared mailboxes. See [Create shared mailboxes in the Exchange admin center](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)<br><br>
+> If your organization uses a hybrid Exchange environment, you should use the on-premises Exchange admin center (EAC) to create and manage shared mailboxes. See [Create shared mailboxes in the Exchange admin center](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)
+>
 > If you're not sure if you should create a shared mailbox or a Microsoft 365 group for Outlook, see [Compare groups](../create-groups/compare-groups.md) for some guidance. Note that currently, it's not possible to migrate a shared mailbox to a Microsoft 365 group. If this is something you want, let us know by [voting here](https://go.microsoft.com/fwlink/?linkid=871518).
 
 It's easy to create shared mailboxes so a group of people can monitor and send email from a common email addresses, like info@contoso.com. When a person in the group replies to a message sent to the shared mailbox, the email appears to be from the shared mailbox, not from the individual user.
@@ -44,39 +45,39 @@ Before creating a shared mailbox, be sure to read [About shared mailboxes](about
 
 ::: moniker range="o365-worldwide"
 
-2. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.
+2. In the admin center, go to the **Teams & Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2066847" target="_blank">Shared mailboxes</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-2. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), go to the **Groups** \> **Shared mailboxes** page.
+2. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), go to the **Teams & Groups** \> **Shared mailboxes** page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-2. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), go to the **Groups** \> **Shared mailboxes** page.
+2. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), go to the **Teams & Groups** \> **Shared mailboxes** page.
 
 ::: moniker-end
     
-3. On the **Shared mailboxes** page, select **+ Add a mailbox**. Enter a name for the shared mailbox. Then the wizard chooses the email address, but you can edit it.
+3. On the **Shared mailboxes** page, select **+ Add a shared mailbox**. Enter a name for the shared mailbox. The chooses the email address, but you can edit it if needed.
     
     ![Name your shared mailbox.](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
-4. Select **Add**. It may take a few minutes before you can add members.
+4. Select **Save changes**. It may take a few minutes before you can add members.
 
 5. Under **Next steps**, select **Add members to this mailbox**. Members are the people who will be able to view the incoming mail to this shared mailbox, and the outgoing replies.
 
-   ![Select Add Members](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
+   ![Select Add Members.](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
-6. Select the **+Add members** button. Put a check mark next to the people who you want to use this shared mailbox, and select **Save**.
+6. Select the **+Add members** button. Put a check mark next to the people who you want to use this shared mailbox, and then select **Save**.
 
-   ![Assign members to the shared mailbox](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
+   ![Assign members to the shared mailbox.](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
 7. Select **Close**.
 
-You have a shared mailbox and it includes a shared calendar. Now go on to the next step: block sign-in for the shared mailbox account.
+You have a shared mailbox and it includes a shared calendar. Go on to the next step: [Block sign-in for the shared mailbox account](#block-sign-in-for-the-shared-mailbox-account).
 
 ## Which permissions should you use?
 
@@ -90,11 +91,11 @@ You can use the following permissions with a shared mailbox:
 
 ### Use the EAC to edit shared mailbox delegation
 
-1. In the EAC, go to **Recipients** \> **Shared**. Select the shared mailbox, and then select **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png).
+1. In the EAC, go to **Recipients** \> **Shared**. Select the shared mailbox, and then select **Edit** ![Edit icon.](../../media/ITPro-EAC-EditIcon.png).
 
 2. Select **Mailbox delegation**.
 
-3. To grant or remove Full Access and Send As permissions, select **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png) or **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif) and then select the users you want to grant permissions to.
+3. To grant or remove Full Access and Send As permissions, select **Add** ![Add Icon.](../../media/ITPro-EAC-AddIcon.png) or **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif) and then select the users you want to grant permissions to.
 
    > [!NOTE]
    > The Full Access permission allows a user to open the mailbox as well as create and modify items in it. The Send As permission allows anyone other than the mailbox owner to send email from this shared mailbox. Both permissions are required for successful shared mailbox operation.
@@ -125,13 +126,14 @@ But what if an admin simply resets the password of the shared mailbox user accou
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
 ::: moniker-end
 
-1. In the list of user accounts, find the account for the shared mailbox (for example, change the filter to **Unlicensed users**).
+2. In the list of user accounts, find the account for the shared mailbox (for example, change the filter to **Unlicensed users**).
 
-1. Select the user to open their properties pane, and then select the **Block this user** icon ![Screen shot of the Block this user icon](../../media/block-user-icon.png).
+3. Select the user to open their properties pane, and then select the **Block this user** icon ![Screen shot of the Block this user icon.](../../media/block-user-icon.png).
 
-   **Note**: If the account is already blocked, **Sign in blocked** will appear at the top and the icon will read **Unblock this user**.
+   > [!NOTE]
+   > If the account is already blocked, **Sign in blocked** will appear at the top and the icon will read **Unblock this user**.
 
-1. In the **Block this user?** pane, select **Block the user from signing in**, and then select **Save changes**.
+4. In the **Block this user?** pane, select **Block the user from signing in**, and then select **Save changes**.
 
 For instructions on how to block sign-in for accounts using Azure AD PowerShell (including many accounts at the same time), see [Block user accounts with Office 365 PowerShell](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md).
 

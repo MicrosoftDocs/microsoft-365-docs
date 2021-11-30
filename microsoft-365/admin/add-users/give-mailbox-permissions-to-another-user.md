@@ -8,11 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- Adm_TOC
+
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
@@ -71,7 +71,7 @@ There are a few different ways you can access a mailbox once you've been given a
 
 5. Select **Add permissions**, then choose the name of the person who you want this user to be able to send as. 
     
-6. Select **Save**.
+6. Select **Add**.
  
 ::: moniker-end
 
@@ -85,7 +85,7 @@ There are a few different ways you can access a mailbox once you've been given a
 
 4. Select **Add permissions**, then choose the name of the person who you want this user to be able to send as. 
     
-5. Select **Save**.
+5. Select **Add**.
 
 ::: moniker-end
 
@@ -99,7 +99,7 @@ There are a few different ways you can access a mailbox once you've been given a
 
 4. Select **Add permissions**, then choose the name of the person who you want this user to be able to send as. 
     
-5. Select **Save**.
+5. Select **Add**.
 
 ::: moniker-end
   
@@ -117,7 +117,7 @@ There are a few different ways you can access a mailbox once you've been given a
     
 5. Select **Add permissions**, then choose the name of the user or users that you want to allow to read email from this mailbox.
 
-6. Select **Save**.
+6. Select **Add**.
 
 
 > [!NOTE]
@@ -135,7 +135,7 @@ There are a few different ways you can access a mailbox once you've been given a
     
 4. Select **Add permissions**, then choose the name of the user or users that you want to allow to read email from this mailbox.
 
-5. Select **Save**.
+5. Select **Add**.
 
 ::: moniker-end
 
@@ -149,7 +149,7 @@ There are a few different ways you can access a mailbox once you've been given a
     
 4. Select **Add permissions**, then choose the name of the user or users that you want to allow to read email from this mailbox.
 
-5. Select **Save**.
+5. Select **Add**.
 
 ::: moniker-end
 
@@ -168,7 +168,7 @@ There are a few different ways you can access a mailbox once you've been given a
 
 5. Select **Add permissions**, then choose the name of the user or users that you want to allow to send email on behalf of this mailbox.
 
-6. Select **Save**.
+6. Select **Add**.
 
 ::: moniker-end
 
@@ -182,7 +182,7 @@ There are a few different ways you can access a mailbox once you've been given a
     
 4. Select **Add permissions**, then choose the name of the user or users that you want to allow to send email on behalf of this mailbox.
 
-5. Select **Save**.
+5. Select **Add**.
 
 ::: moniker-end
 
@@ -196,7 +196,7 @@ There are a few different ways you can access a mailbox once you've been given a
     
 4. Select **Add permissions**, then choose the name of the user or users that you want to allow to send email on behalf of this mailbox.
 
-5. Select **Save**.
+5. Select **Add**.
 
 ::: moniker-end
 

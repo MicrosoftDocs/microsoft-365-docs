@@ -1,16 +1,19 @@
 ---
-title: "Get your environment ready for Microsoft Viva Topics"
-description: "Get your environment ready so you can provide as much content as possible for your users with Microsoft Viva Topics."
-ms.author: samanro
-author: samanro
+title: Get your environment ready for Microsoft Viva Topics
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.topic: article
-ms.prod: microsoft-365-enterprise
-ms.custom: Adopt
+ms.custom: intro-get-started
+ms.service: viva
+ms.subservice: viva-topics
 search.appverid: 
-localization_priority: Normal
-
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-viva-topics
+ms.localizationpriority:  medium
+description: Get your environment ready so you can provide as much content as possible for your users with Microsoft Viva Topics.
 ---
 
 # Get your environment ready for Microsoft Viva Topics

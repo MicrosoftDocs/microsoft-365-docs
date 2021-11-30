@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
@@ -38,7 +38,7 @@ To add data to a review set, click a search on the **Searches** tab, and then cl
 
 You can add to an existing review set or create a new review set.  If adding to a new review set, specify the name and then click **Add** to display the flyout page.
 
-![Select a review set and configure collection options](../media/AeD_AddToReviewSet.png)
+![Select a review set and configure collection options.](../media/AeD_AddToReviewSet.png)
 
 Adding data to a review set is a long-running process. This process includes gathering items from the original data sources in Microsoft 365 (for example, from mailboxes and sites), copying them to the Azure Storage location (this copying process is also called *ingestion*), and then reindexing the items. You can track the progress on the **Jobs** tab or on the **Searches** tab by monitoring the status in the **Added data to review set** column. After the review set processing is completed, click the **Review sets** tab in the case, and then click the review set to start the process of filtering, reviewing, tagging, and exporting data in the review set.
 

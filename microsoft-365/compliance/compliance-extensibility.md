@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -44,7 +44,7 @@ Many of the data connectors available in the Microsoft 365 compliance center to 
 
 For data connectors in the Microsoft 365 compliance center provided by one of Microsoft's partners, your organization will need a business relationship with the partner before you can deploy a connector.
 
-You can find licensing requirements for third-party data connectors in the [Microsoft 365 Compliance Licensing Comparison](/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx) document.
+For licensing requirements for third-party data connectors, see the "Data connectors" section in [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#data-connectors).
 
 ## APIs
 
@@ -84,7 +84,7 @@ The first set of Graph APIs for eDiscovery are available in public preview. We 
 
 For the licensing requirements for Advanced eDiscovery and the API, see the "eDiscovery" section in the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#ediscovery).
 
-### Microsoft Graph API for Teams Export (preview)
+### Microsoft Graph API for Teams Export
 
 Enterprise Information Archiving (EIA) for Microsoft Teams is a key scenario for our customers as it allows them to solve for regulatory requirements. In addition to our built-in capabilities for archiving content in Microsoft Teams, customers and partners can now use Teams Export APIs to solve for custom application and integration scenarios. The Teams Export APIs support bulk-export (up to 200 requests per second/per app/per tenant) of Teams messages and message attachments. Deleted messages are also accessible by the API for up to 30 days after they are deleted. For more information about these Teams Export APIs and how to use them in your applications, see [Export content with the Microsoft Teams Export APIs](/microsoftteams/export-teams-content).
 
@@ -93,4 +93,3 @@ For the licensing requirements for the use of the Teams Export APIs, see [Micros
 ### Microsoft Graph Connector APIs (preview)
 
 With [Microsoft Graph connectors](/microsoftsearch/connectors-overview), organizations can index third-party data so it appears in Microsoft Search results. This feature expands the types of content sources that are searchable in your Microsoft 365 productivity apps and the broader Microsoft ecosystem. The third-party data can be hosted on-premises or in public or private clouds. Starting with Advanced eDiscovery, we're enabling developer preview of built-in compliance value of Microsoft 365 connected apps. This enables compliance for apps integrating into the Microsoft 365 ecosystem to empower users with seamless compliance experiences. To learn more about to how to incorporate Microsoft Graph Connector APIs in your apps view, see [Create, update, and delete connections in the Microsoft Graph](/graph/search-index-manage-connections).
-

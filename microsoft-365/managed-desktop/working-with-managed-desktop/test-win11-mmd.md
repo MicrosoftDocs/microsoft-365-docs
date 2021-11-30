@@ -7,25 +7,13 @@ author: jaimeo
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ---
 
 # Preview and test Windows 11 with Microsoft Managed Desktop
 
  How to enroll and participate in the Windows 11 compatibility testing program within your Microsoft Managed Desktop environment. For more about Windows 11 and Microsoft Managed Desktop generally, see [Windows 11 and Microsoft Managed Desktop](../intro/win11-overview.md). 
-
-## Check device eligibility
-
-To date, more than 95% of Microsoft Managed Desktop devices meet [eligibility criteria for Windows 11](/windows/whats-new/windows-11-requirements). You can request details about the eligibility status of your devices from Microsoft Managed Desktop. To file the request, follow these steps:
-
-1. Open a new service request with the Microsoft Managed Desktop Service Engineering team. If you need more info on how to file the request, see [Admin support](admin-support.md).
-2. Use these values for the fields:
-    - Title: Windows 11 device eligibility
-    - Request type: Request for information
-    - Category: Devices
-    - Subcategory: Other
-
 
 ## Add devices to the Windows 11 test group
 

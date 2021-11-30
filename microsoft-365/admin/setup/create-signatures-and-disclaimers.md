@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -20,6 +20,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -35,6 +36,11 @@ description: "Manage email signatures, including legal disclaimers or disclosure
 ## Watch: Create a company-wide email signature
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
+
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, select **Exchange**.
+1. Select **Mail flow**.
+1. Select **Add +**, and then select **Apply disclaimers**.
+1. On the **New rule** page, complete the steps. 
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
@@ -61,7 +67,7 @@ Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850
 
 ::: moniker-end
 
-1. Select the app launcher ![The app launcher icon](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png), and then select **Admin**.
+1. Select the app launcher ![The app launcher icon.](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png), and then select **Admin**.
    
     Can't find the app you're looking for? From the app launcher, select **All apps** to see an alphabetical list of the apps available to you. From there, you can search for a specific app. 
     

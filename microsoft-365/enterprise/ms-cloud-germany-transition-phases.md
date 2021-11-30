@@ -3,11 +3,11 @@ title: "Migration phases actions and impacts for the migration from Microsoft Cl
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 05/12/2021
+ms.date: 10/21/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -24,7 +24,7 @@ description: "Summary: Understand the migration phases actions and impacts of mo
 
 Tenant migrations from Microsoft Cloud Deutschland (MCD) to the region "Germany" of Microsoft's Office 365 Global services are executed as a set of phases and their configured actions for each workload. This figure shows the ten phases of migration to the new German datacenters.
 
-[ ![The ten phases of migration to the new Germany datacenters](../media/ms-cloud-germany-migration-opt-in/migration-organization.png) ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png#lightbox)
+[![The ten phases of migration to the new Germany datacenters.](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)](../media/ms-cloud-germany-migration-opt-in/migration-organization.png#lightbox)
 
 The migration process will complete over many weeks depending on the overall size and complexity of the organization. While the migration is underway, users and administrators are able to continue utilizing the services with notable changes detailed in this documentation. The graphic and table define phases and steps during the migration.
 
@@ -67,7 +67,7 @@ Microsoft can't migrate Office 365 tenants hosted in the MCD without consent.
 
 |Step(s)|Description|Impact|
 |---|---|---|
-|**Customer Task**: Grant consent for migration|Customer grants consent for the migration so that Microsoft gains the right to migrate and to orchestrate the transition of data and services to the Office 365 Global services instance. There are two ways: <ol><li>The Office 365 tenant administrator opts-in to the Microsoft-driven migration.</li><li>Customers has renewed any subscriptions in their MCD Office 365 tenant after May 1, 2020. Microsoft notify these customers of the migration right each month, wait 30 days to give customers a chance to cancel, and then directly opt-in.</li></ol>|<ul><li>Tenant is marked as consented for migration, and Admin Center displays confirmation.</li><li>Acknowledgment is posted to the Office 365 tenant Message Center. Service configuration continues from Microsoft Cloud Deutschland endpoints.</li></ul>
+|**Customer Task**: Grant consent for migration|Customer grants consent for the migration so that Microsoft gains the right to migrate and to orchestrate the transition of data and services to the Office 365 Global services instance. There are two ways: <ol><li>The Office 365 tenant administrator opts-in to the Microsoft-driven migration.</li><li>Customers have renewed any subscriptions in their MCD Office 365 tenant after May 1, 2020. Microsoft notifies these customers of the migration right each month, wait 30 days to give customers a chance to cancel, and then directly opt-in.</li></ol>|<ul><li>Tenant is marked as consented for migration, and Admin Center displays confirmation.</li><li>Acknowledgment is posted to the Office 365 tenant Message Center. Service configuration continues from Microsoft Cloud Deutschland endpoints.</li></ul>
 |**Tenant Admin**: Monitor messages|The tenant administrator must monitor the Office 365 Message Center for updates on the migration phase status from this time on.|Customer can execute necessary tasks in time.
 |
 
@@ -75,7 +75,7 @@ Microsoft can't migrate Office 365 tenants hosted in the MCD without consent.
 
 Make sure that you are familiar with the [migration preparation steps that apply to all customers](ms-cloud-germany-transition-add-pre-work.md).
 
-In case you have set a DNS CNAME called _msoid_ in one or many DNS namespaces that you own, you have to remove the CNAME until the end of phase 8 at the latest. You can remove the CNAME _msoid_ any time before the end of phase 8. See the [prework for DNS](ms-cloud-germany-transition-add-pre-work.md#dns-entries-for-custom-domains).
+In case you have set a DNS CNAME called _msoid_ in one or many DNS namespaces that you own, you have to remove the CNAME until the end of phase 8 at the latest. You can remove the CNAME _msoid_ anytime before the end of phase 8. See the [prework for DNS](ms-cloud-germany-transition-add-pre-work.md#dns-entries-for-custom-domains).
 
 In case you are using single sign on for Office 365 and Azure in the Microsoft Cloud Deutschland instance, you must prepare and schedule your Azure subscription migration accordingly. Make sure that you understand the [prework for Microsoft Azure](ms-cloud-germany-transition-add-pre-work.md#microsoft-azure).
 
@@ -89,7 +89,7 @@ If you are using Active Directory Federation Services (AD FS), make sure to [bac
 
 ## Phase 2: Azure AD Migration
 
-In this phase the Azure Active Directory will be migrated to the new datacenter region and become active. The old Azure AD endpoints will be still available.
+In this phase, the Azure Active Directory will be migrated to the new datacenter region and become active. The old Azure AD endpoints will be still available.
 
 ### Exchange Online Hybrid - Modify AuthServer on-premises
 
@@ -121,11 +121,11 @@ Failing to complete this task may result in hybrid free-busy requests failing to
 |---|---|---|
 |Subscriptions are transferred|The Microsoft Cloud Deutschland subscription will be migrated to corresponding Office 365 Global services subscription. <ul><li>The Office 365 Global services offer of that subscription is defined by Microsoft (also known as _Offer mapping_).</li><li> Corresponding Office 365 Global services subscriptions are purchased in the Office 365 Global instance for the transferred Microsoft Cloud Deutschland subscriptions.</li><li>Legacy Microsoft Cloud Deutschland subscriptions are removed from the Office 365 services tenant on completion.</li></ul>|<ul><li>Changes to existing subscriptions will be blocked (for example, no new subscription purchases or seat count changes) during this phase.</li><li>License assignment changes will be blocked.</li><li>When subscription migration is complete, both Office 365 services and Microsoft Cloud Deutschland subscriptions will be visible in the Office 365 Admin Portal, with the status of Microsoft Cloud Deutschland subscriptions as _deprovisioned_.</li><li>Any customer processes that have dependencies on Microsoft Cloud Deutschland subscriptions or SKU GUIDs will be broken and need to be revised with the Office 365 services offering.</li><li>New subscriptions in the Office 365 services will be purchased with the new term (monthly/quarterly/yearly), and the customer will receive a prorated refund for the unused balance of the Microsoft Cloud Deutschland subscription.</li></ul>|
 |Licenses are reassigned|Users with assigned Microsoft Cloud Deutschland licenses will be assigned licenses in the Office 365 Global instance.|<ul><li>Users will be reassigned licenses that are tied to the new Office 365 services subscriptions. User licenses of all users will be automatically assigned to the new features.</li><li>The number of features (service plans) offered by Office 365 services can be larger than in the original Microsoft Cloud Deutschland offer. User licenses in Office 365 services will be equivalently assigned to similar Microsoft Cloud Deutschland features (service plans).</li></ul>|
-|**Admin task** Disable features|The admin needs to take an explicit action to disable those features, if needed.|<ul><li>Users see new unknown services in the portal</li><li>Additional functionality is available (for example, Microsoft Planner and Microsoft Flow), unless disabled by tenant admin.</li></ul> <p> For information about how to disable service plans that are assigned to users' licenses, see [Disable access to Microsoft 365 services while assigning user licenses](disable-access-to-services-while-assigning-user-licenses.md).</li></ul>|
+|**Admin task** Disable features|The admin needs to take an explicit action to disable those features, if needed.|<ul><li>Users see new unknown services in the portal</li><li>Additional functionality is available (for example, Microsoft Planner and Power Automate), unless disabled by tenant admin.</li></ul> <p> For information about how to disable service plans that are assigned to users' licenses, see [Disable access to Microsoft 365 services while assigning user licenses](disable-access-to-services-while-assigning-user-licenses.md).</li></ul>|
 |**Admin task**|Revise any customer processes that have dependencies on Microsoft Cloud Deutschland subscriptions or SKU GUIDs with the Office 365 services offering|Customer processes continue to work.|
 |
 
-**Applies to**: Microsoft Partners which are using the Office 365 Partner Portal
+**Applies to**: Microsoft Partners who are using the Office 365 Partner Portal
 
 Between Phase 2 and phase 3, Partner Portal may not be accessible. During this time, Partner may not be able to access the tenant's information on the Partner Portal. Since each migration is different, the duration of in-accessibility could be in hours.
 
@@ -242,20 +242,22 @@ Make sure the [Exchange prework](ms-cloud-germany-transition-add-pre-work.md#exc
 
 - Between the start of the migration phase 6 and the completion of the migration phase 9 (when the Message Center notice is published), you need to run the HCW again using Office 365 Worldwide settings to point your on-premises systems to the Office 365 Global services. Failing to complete this task before phase 9 [Migration Complete] may result in NDRs for mail routed between your on-premises Exchange deployment and Office 365.
 - Stop or delete any onboarding or offboarding mailbox moves, namely don't move mailboxes between Exchange on-premises and Exchange Online.  This ensures the mailbox move requests don't fail with an error. Failure to do so may result in failure of the service or Office clients.
-- Additional Send-Connectors that have been created besides the connector created by the HCW and which are targeting to Exchange Online must be updated in this phase immediately after the HCW run has been executed, otherwise they will stop working. The TLS domain must be updated for these Send-Connectors. <br> To update the TLS domain, use the following PowerShell command in your Exchange Server environment:
+- Additional Send-Connectors that have been created besides the connector created by the HCW and which are targeting to Exchange Online must be updated in this phase immediately after the HCW run has been executed, otherwise they will stop working. The TLS domain must be updated for these Send-Connectors.
 
-```powershell
-Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outlook.com"
-```
+  To update the TLS domain, use the following PowerShell command in your Exchange Server environment:
+
+  ```powershell
+  Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outlook.com"
+  ```
 
 ## Phase 7: Skype for Business Online - Transition to Microsoft Teams
 
 **Applies to:** All customers using Skype for Business Online
 
 Review the [pre-migration steps for Skype for Business Online migration](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online) and make sure you completed all steps.
-In this phase, Skype for Business will be migrated to Microsoft Teams. Existing Skype for Business customers are migrated to Office 365 Global services in Europe and then transitioned to Microsoft Teams in the region "Germany" of Office 365 services.
+In this phase, Skype for Business will be migrated to Microsoft Teams. Existing Skype for Business customers are migrated to Office 365 Global services in Europe and then transitioned to Microsoft Teams in the [region based on the signup country of the tenant](o365-data-locations.md).
 
-- Users won't be able to sign in to Skype for Business on the migration date. Ten days before migration, the customer will receive a message in the Admin center which announces when the migration will take place, and again when the migration begins.
+- Users won't be able to sign in to Skype for Business on the migration date.
 - Policy configuration is migrated.
 - Users will be migrated to Teams and will no longer have access to Skype for Business after migration.
 - Users must have the Microsoft Teams desktop client installed. Installation will happen during the 10 days via policy on the Skype for Business infrastructure, but if this fails, users will still need to download the client or connect with a supported browser.
@@ -263,7 +265,7 @@ In this phase, Skype for Business will be migrated to Microsoft Teams. Existing 
 - Users won't be able to sign in to Skype for Business between time service transitions to Office 365 services, and not until customer DNS entries are completed.
 - Contacts and existing meetings will continue to function as Skype for Business meetings.
 
-When a vanity domain has been configured for Skype for Business, the DNS entries must be updated. Please refer to [Domains in the Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/Domains) and apply the changes in your DNS configuration.
+When a vanity domain has been configured for Skype for Business, the DNS entries must be updated. Refer to [Domains in the Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/Domains) and apply the changes in your DNS configuration.
 
 If you have to connect to Skype for Business Online with PowerShell after migration phase 9 has been completed, use the following PowerShell code to connect:
 
@@ -274,7 +276,7 @@ Connect-MicrosoftTeams -Credential $userCredential
 ```
 
 ### Known limitations until finalizing Azure AD migration
-Microsoft Teams is leveraging features of Azure AD. While the migration of Azure AD is not completed, some features of Microsoft Teams are not fully available. After phase 9, when the migration of Azure AD has been finalized, the following features become fully available:
+Microsoft Teams is using features of Azure AD. While the migration of Azure AD is not completed, some features of Microsoft Teams are not fully available. After phase 9, when the migration of Azure AD has been finalized, the following features become fully available:
 
 - Apps cannot be managed in the Microsoft Teams admin center.
 - New teams can be created in the Microsoft Teams client only unless the Teams administrator has limited the permissions for users to create new teams. New teams cannot be created in the Microsoft Teams admin center.
@@ -368,7 +370,7 @@ Microsoft Azure customers must transition their Azure workloads following the st
 **Applies to:** Customers with Azure AD registered or joined devices
 
 After phase 9 has been completed, Azure AD registered and joined devices must be connected to the transitioned Azure AD instance in the new German datacenter region.
-Devices that are not re-joined to Azure AD may no longer operate at the end of phase 10. For detailed instructions and further details, please refer to [the additional information about devices](ms-cloud-germany-transition-add-devices.md).
+Devices that are not rejoined to Azure AD may no longer operate at the end of phase 10. For detailed instructions and further details, refer to [the additional information about devices](ms-cloud-germany-transition-add-devices.md).
 
 ### Azure AD Connect
 

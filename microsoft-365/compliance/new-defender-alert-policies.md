@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 search.appverid:
@@ -16,6 +16,7 @@ search.appverid:
 - MOE150
 ms.custom: 
 - seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ROBOTS: noindex,nofollow
 description: "We're releasing new alert policies for Microsoft Defender for Office 365. We're also retiring two existing alert policies that have been replaced by the new ones."
 ---
@@ -64,8 +65,8 @@ The following table identifies when the new alert policies will begin triggering
 | **Email messages containing malicious file removed after delivery** (new) | Alerts will start triggering on April 11, 2021 |
 | **Emails messages from a campaign were delivered and later removed** (new) | Alerts will start triggering on May 28, 2021|
 | **Malicious emails were delivered and later removed** (new) | Alerts will start triggering on May 28, 2021|
-| **Email messages containing phish URLs removed after delivery** (existing, will be removed)| The alert policy will be removed on May 28, 2021. See the [What you need to do to prepare for these changes](#what-you-need-to-do-to-prepare-for-these-changes) section.|
-| **Email messages containing malware removed after delivery** (existing, will be removed) | The alert policy will be removed on May 28, 2021. See the [What you need to do to prepare for these changes](#what-you-need-to-do-to-prepare-for-these-changes) section. |
+| **Email messages containing phish URLs removed after delivery** (existing, will be removed)| The alert policy was removed in June 2021. See the [What you need to do to prepare for these changes](#what-you-need-to-do-to-prepare-for-these-changes) section.|
+| **Email messages containing malware removed after delivery** (existing, will be removed) | The alert policy was removed in June 2021. See the [What you need to do to prepare for these changes](#what-you-need-to-do-to-prepare-for-these-changes) section. |
 |||
 
 The alert severity changes will be rolled out to all organizations by May 14, 2021.
@@ -80,21 +81,21 @@ The new alerts will begin firing, and triggering the AIR investigations in your 
 
   - **Email messages containing malware removed after delivery** AND **Email messages containing malicious file removed after delivery**
 
-  ![Alert pairs for new and existing alerts](../media/DefenderAlerts.png)
+  ![Alert pairs for new and existing alerts.](../media/DefenderAlerts.png)
 
    For more information about managing these alert pairs, see the [What you need to do to prepare for these changes](#what-you-need-to-do-to-prepare-for-these-changes) section.
 
 - **AIR Investigations**: Alerts will be correlated into a single AIR Investigation, with one of the alerts classified as "triggering" and the other as "repeated".
 
-  ![Alert pairs in AIR Investigations](../media/AIRAlerts.png)
+  ![Alert pairs in AIR Investigations.](../media/AIRAlerts.png)
 
 - **Incidents**: Both alerts will correlate into the same Incident
 
-  ![Alert pairs in Incidents](../media/IncidentsAlerts.png)
+  ![Alert pairs in Incidents.](../media/IncidentsAlerts.png)
 
 ## What you need to do to prepare for these changes
 
-How your organization utilizes these alerts will determine what you need to do to prepare. If you have operationalized the alerts and are using or consuming them either through an API, an alert email notification, or in the Office 365 Security & Compliance Center (`https://protection.office.com/viewalerts`) or the Microsoft security center (`https://security.microsoft.com/viewalerts`), you'll need to modify your workflows.
+How your organization utilizes these alerts will determine what you need to do to prepare. If you have operationalized the alerts and are using or consuming them either through an API, an alert email notification, or in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> or the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, you'll need to modify your workflows.
 
 **If you haven't operationalized these alerts, you can do one of the following:**
 

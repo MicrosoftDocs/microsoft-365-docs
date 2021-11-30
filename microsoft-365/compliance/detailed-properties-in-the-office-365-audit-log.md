@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -23,7 +23,7 @@ ms.custom: seo-marvel-apr2020
 
 # Detailed properties in the audit log
 
-When you export the results of an audit log search from the Security & Compliance Center, you have the option to download all the results that meet your search criteria. You do this by selecting **Export results** \> **Download all results** on the **Audit log search** page. For more information, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+When you export the results of an audit log search from the Microsoft 365 compliance center, you have the option to download all the results that meet your search criteria. You do this by selecting **Export results** \> **Download all results** on the **Audit log search** page. For more information, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
   
  When your export all results for an audit log search, the raw data from the unified audit log is copied to a comma-separated value (CSV) file that is downloaded to your local computer. This file contains additional information from each audit record in a column named **AuditData**. This column contains a multi-value property for multiple properties from the audit log record. Each of the **property: value** pairs in this multi-value property are separated by a comma. 
   
@@ -66,7 +66,7 @@ The following table describes the properties that are included (depending on the
 |Parameters|For Exchange admin activity, the name and value for all parameters that were used with the cmdlet that is identified in the Operation property.|Exchange (admin activity)|
 |RecordType|The type of operation indicated by the record. This property indicates the service or feature that the operation was triggered in. For a list of record types and their corresponding ENUM value (which is the value displayed in the **RecordType** property in an audit record), see [Audit log record type](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype).| 
 |ResultStatus|Indicates whether the action (specified in the **Operation** property) was successful or not.  <br/> For Exchange admin activity, the value is either **True** (successful) or **False** (failed).|All  <br/>|
-|SecurityComplianceCenterEventType|Indicates that the activity was a Security & Compliance Center event. All Security & Compliance Center activities will have a value of **0** for this property.|Security & Compliance Center|
+|SecurityComplianceCenterEventType|Indicates that the activity was a Microsoft 365 compliance center event. All compliance center activities will have a value of **0** for this property.|Security & Compliance Center|
 |SharingType|The type of sharing permissions that was assigned to the user that the resource was shared with. This user is identified in the **UserSharedWith** property.|SharePoint|
 |Site|The GUID of the site where the file or folder accessed by the user is located.|SharePoint|
 |SiteUrl|The URL of the site where the file or folder accessed by the user is located.|SharePoint|
@@ -89,8 +89,4 @@ The following table describes the properties that are included (depending on the
 ||||
 
 > [!NOTE]
-><sup>1</sup> For Azure Active Directory-related events, the value for an administrator isn't used in an audit record. Audit records for activities performed by administrators will indicate that a regular user (for example, **UserType: 0**) performed the activity. The **UserID** property will identify the person (regular user or administrator) who performed the activity.<br/>
-
-The properties described above are also displayed when you click **More information** when viewing the details of a specific event.
-  
-![Click More information to view the detailed properties of the audit log event record](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
+><sup>1</sup> For Azure Active Directory-related events, the value for an administrator isn't used in an audit record. Audit records for activities performed by administrators will indicate that a regular user (for example, **UserType: 0**) performed the activity. The **UserID** property will identify the person (regular user or administrator) who performed the activity.

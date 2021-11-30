@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -35,13 +35,13 @@ Here are the two types of identity models and their best fit and benefits.
 
 Here are the basic components of cloud-only identity.
 
-![Basic components of cloud-only identity](../media/about-microsoft-365-identity/cloud-only-identity.png)
+![Basic components of cloud-only identity.](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
 In this illustration, on-premises and remote users sign in with accounts in the Azure AD tenant of their Microsoft 365 tenant.
 
 Here are the basic components of hybrid identity.
 
-![Basic components of hybrid identity](../media/about-microsoft-365-identity/hybrid-identity.png)
+![Basic components of hybrid identity.](../media/about-microsoft-365-identity/hybrid-identity.png)
 
 In this illustration, on-premises and remote users sign in to their Microsoft 365 tenant with accounts in the Azure AD tenant that have been copied from their on-premises AD DS.
 
@@ -86,7 +86,7 @@ For identity for your Microsoft 365 tenant, you have determined:
 
 Here is an example a tenant with the new hybrid identity elements highlighted.
 
-![Example of hybrid identity for a tenant](../media/tenant-management-overview/tenant-management-tenant-build-step3.png)
+![Example of hybrid identity for a tenant.](../media/tenant-management-overview/tenant-management-tenant-build-step3.png)
 
 In this illustration, the tenant has:
 
@@ -103,6 +103,6 @@ On an ongoing basis, you might need to:
 
 ## Next step
 
-[![Step 4. Migrate your on-premises Office servers and data](../media/tenant-management-overview/tenant-management-step-grid-migration.png)](tenant-management-migration.md)
+[![Step 4. Migrate your on-premises Office servers and data.](../media/tenant-management-overview/tenant-management-step-grid-migration.png)](tenant-management-migration.md)
 
 Continue with [migration](tenant-management-migration.md) to migrate your on-premises Office servers and their data to Microsoft 365.

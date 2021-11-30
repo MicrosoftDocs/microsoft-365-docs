@@ -4,14 +4,16 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
-audience: 
-ms.topic: article
-ms.prod: microsoft-365-enterprise
+audience: enabler, admin
+ms.topic: landing-page
+ms.custom: intro-hub-or-landing
+ms.service: viva
+ms.subservice: viva-topics
 search.appverid: 
 ms.collection: 
     - enabler-strategic
     - m365initiative-viva-topics
-localization_priority: None
+ms.localizationpriority:  medium
 description: Learn how to find resources for Microsoft Viva Topics.
 ---
 
@@ -24,7 +26,7 @@ description: Learn how to find resources for Microsoft Viva Topics.
 </br>
 
 
-Viva Topics is an Microsoft 365 service that helps organizations to transform information to knowledge.
+Viva Topics is a Microsoft 365 service that helps organizations to transform information to knowledge.
 
 The resources on this page are designed to get you started with learning about and using Viva Topics in your organization.
 
@@ -41,15 +43,15 @@ The resources in this section help you learn more about what Viva Topics is and 
 |See resources in the Microsoft Tech Community Resource Center|[Viva Topics Tech Community](https://resources.techcommunity.microsoft.com/viva-topics/)|
 
 
-
 ## Adoption
 
-Learn more about how to use and implement Viva Topics in your organization to help you solve your business problems: 
+Learn more about how to use and implement Viva Topics in your organization to help you solve your business problems. 
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|
 |Learn how to start planning to use Viva Topics |[Get started](topics-adoption-getstarted.md)|  
 |Set up and run a trial pilot program for Viva Topics |[Run a trial](trial-topics.md)|
+|Find resources to help your organization through your adoption journey with Viva Topics |[Adoption resources](adoption-resources.md)|
 
 ## Set up and administration
 
@@ -73,6 +75,12 @@ The resources in this section help your users learn how to use and manage topics
 |Understand why topics might differ to different users|[Viva Topics security trimming](topic-experiences-security-trimming.md)|
 |Learn how to prevent specific topics from being identified and viewed|[Restrict access to topics](restrict-access-to-topics.md)|
 
+## Provide us feedback
 
+Provide feedback about your experience with Viva Topics directly to Microsoft.
+
+| If you're looking for this information: | Go to this resource: |
+|:-----|:-----|
+|How to provide feedback about Viva Topics|[Provide us feedback](topic-experiences-overview.md#provide-us-feedback)|
 
 

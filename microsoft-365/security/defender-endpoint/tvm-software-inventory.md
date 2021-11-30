@@ -2,18 +2,16 @@
 title: Software inventory in threat and vulnerability management
 description: The software inventory page for Microsoft Defender for Endpoint's threat and vulnerability management shows how many weaknesses and vulnerabilities have been detected in software.
 keywords: threat and vulnerability management, Microsoft Defender for Endpoint, Microsoft Defender for Endpoint software inventory, Microsoft Defender for Endpoint threat & vulnerability management, Microsoft Defender for Endpoint threat & vulnerability management software inventory, Microsoft Defender for Endpoint tvm software inventory, tvm software inventory
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
@@ -24,13 +22,13 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-The software inventory in threat and vulnerability management is a list of known software in your organization with official [Common Platform Enumerations (CPE)](https://nvd.nist.gov/products/cpe). Software products without an official CPE don’t have vulnerabilities published. It also includes details such as the name of the vendor, number of weaknesses, threats, and number of exposed devices.
+The software inventory in threat and vulnerability management is a list of known software in your organization with official [Common Platform Enumerations (CPE)](https://nvd.nist.gov/products/cpe). Software products without an official CPE don't have vulnerabilities published. It also includes details such as the name of the vendor, number of weaknesses, threats, and number of exposed devices.
 
 ## How it works
 
@@ -44,8 +42,8 @@ Access the Software inventory page by selecting **Software inventory** from the 
 
 View software on specific devices in the individual devices pages from the [devices list](machines-view-overview.md).
 
->[!NOTE]
->If you search for software using the Microsoft Defender for Endpoint global search, make sure to put an underscore instead of a space. For example, for the best search results you'd write "windows_10" instead of "Windows 10".
+> [!NOTE]
+> If you search for software using the Microsoft Defender for Endpoint global search, make sure to put an underscore instead of a space. For example, for the best search results you'd write "windows_10" or "windows_11" instead of "Windows 10" or "Windows 11".
 
 ## Software inventory overview
 
@@ -101,13 +99,12 @@ You can view software pages a few different ways:
 - Side panel with vendor information, prevalence of the software in the organization (including number of devices it's installed on, and exposed devices that aren't patched), whether and exploit is available, and impact to your exposure score.
 - Data visualizations showing the number of, and severity of, vulnerabilities and misconfigurations. Also, graphs with the number of exposed devices.
 - Tabs showing information such as:
-    - Corresponding security recommendations for the weaknesses and vulnerabilities identified.
-    - Named CVEs of discovered vulnerabilities.
-    - Devices that have the software installed (along with device name, domain, OS, and more).
-    - Software version list (including number of devices the version is installed on, the number of discovered vulnerabilities, and the names of the installed devices).
+  - Corresponding security recommendations for the weaknesses and vulnerabilities identified.
+  - Named CVEs of discovered vulnerabilities.
+  - Devices that have the software installed (along with device name, domain, OS, and more).
+  - Software version list (including number of devices the version is installed on, the number of discovered vulnerabilities, and the names of the installed devices).
 
-    ![Software example page for Visual Studio 2017 with the software details, weaknesses, exposed devices, and more.](images/tvm-software-page-example.png)
-	:::image type="content" alt-text="Software example page for Visual Studio 2017 with the software details, weaknesses, exposed devices, and more." source="images/tvm-software-page-example.png" lightbox="images/tvm-software-page-example.png":::
+    :::image type="content" alt-text="Software example page for Visual Studio 2017 with the software details, weaknesses, exposed devices, and more." source="images/tvm-software-page-example.png" lightbox="images/tvm-software-page-example.png":::
 
 ## Report inaccuracy
 

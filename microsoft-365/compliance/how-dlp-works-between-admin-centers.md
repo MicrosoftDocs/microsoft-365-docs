@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection: 
 - M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
@@ -30,7 +30,7 @@ In Microsoft 365, you can create a data loss prevention (DLP) policy in two diff
     
 DLP polices created in these admin centers work side by side - this topic explains how.
   
-![DLP pages in Security and Compliance Center and Exchange admin center](../media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
+![DLP pages in Security and Compliance Center and Exchange admin center.](../media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
   
 ## How DLP in the Security & Compliance Center works with DLP and mail flow rules in the Exchange admin center
 

@@ -5,7 +5,7 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
@@ -36,12 +36,14 @@ If you've decided to deploy printers by using a custom PowerShell script and hav
 
 ## Steps to get ready
 
-1. Review [Prerequisites for Microsoft Managed Desktop](prerequisites.md).
-2. Use [Readiness assessment tools](readiness-assessment-tool.md).
-3. [Prerequisites for guest accounts](guest-accounts.md)
-4. [Network configuration for Microsoft Managed Desktop](network.md)
-5. [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md)
-6. [Prepare on-premises resources access for Microsoft Managed Desktop](authentication.md)
-7. [Apps in Microsoft Managed Desktop](apps.md)
-8. [Prepare mapped drives for Microsoft Managed Desktop](mapped-drives.md)
-9. [Prepare printing resources for Microsoft Managed Desktop](printing.md) (This article)
+1. Review [prerequisites for Microsoft Managed Desktop](prerequisites.md).
+2. Run [readiness assessment tools](readiness-assessment-tool.md).
+1. Buy [Company Portal](../get-started/company-portal.md).
+1. Review [prerequisites for guest accounts](guest-accounts.md).
+1. Check [network configuration](network.md).
+1. [Prepare certificates and network profiles](certs-wifi-lan.md).
+1. [Prepare user access to data](authentication.md).
+1. [Prepare apps](apps.md).
+1. [Prepare mapped drives](mapped-drives.md).
+1. Prepare printing resources (this article).
+1. Address [device names](address-device-names.md).

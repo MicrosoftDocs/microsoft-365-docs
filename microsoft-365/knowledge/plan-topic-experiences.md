@@ -1,15 +1,15 @@
 ---
-title: "Plan for Microsoft Viva Topics"
+title: Plan for Microsoft Viva Topics
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.reviewer: nkokoye
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
-localization_priority: Normal
-description: "Learn how to plan for Plan for Microsoft Viva Topics"
+ms.localizationpriority:  medium
+description: Learn how to plan for Microsoft Viva Topics.
 ---
 
 # Plan for Microsoft Viva Topics
@@ -37,6 +37,9 @@ You must be [subscribed to Viva Topics](https://www.microsoft.com/microsoft-viva
 
 All users who are going to use Topics require a **Topic Experiences** license. Assigning licenses is covered in [Set up Microsoft Viva Topics](set-up-topic-experiences.md).
 
+> [!Important] 
+> Topics will only crawl English content.
+
 ## Topic discovery
 
 The topic discovery settings specify which SharePoint sites are used as sources for topics. This includes both classic and modern sites, as well as sites associated with Microsoft Teams and Microsoft 365 Groups. OneDrive sites are not included.
@@ -49,6 +52,8 @@ When you set up Topics, you can choose from the following options:
 - **All, except selected sites**: All sites except for the ones you specify. Sites created in future will be included as sources for topic discovery. 
 - **Only selected sites**: Only the sites that you specify. Sites created in the future will not be included as sources for topic discovery.
 - **No sites**: Do not include any SharePoint sites.
+
+We recommend selecting enough sites to include at least 20,000 documents to get the best results from Viva Topics.
 
 If you choose either **All, except selected sites** or **Only selected sites**, you can upload a .csv file with a list of sites. These options are useful if you're doing a pilot and you want to include a limited number of sites to start.
 
@@ -64,9 +69,7 @@ We recommend you create a process for users or knowledge managers to request ind
 
 ### Multi-geo
 
-If your organization has deployed [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo), the topic center is provisioned in the central location and only SharePoint sites in the central location are available to use as sources for topics. (If you select **All sites**, Viva Topics will use all site in the central location.)
-
-All processing and storage of content is done in the central location.
+If your organization has deployed [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo), Viva Topics respects data sovereignty by ensuring topics data is always stored in the correct geo location. The topic center is provisioned in the central location and content from all geo locations is processed there. The resulting discovered topics are stored in the same geo location as the source content. If the topic source data moves between geo locations, the corresponding topic properties, such as the description, moves as well.
 
 ## User permissions
 
@@ -117,7 +120,7 @@ The .csv file must contain the following parameters:
     - Partial match: You can exclude all topics that have a specific word in it.  For example, *arc* will exclude all topics with the word *arc* in it, such as *Arc circle*, *Plasma arc welding*, or *Training arc*. Note that it will not exclude topics in which the text is included as part of a word, such as *Architecture*.
 - **Stands for (optional)**: (Also known as *expansion*) If you want to exclude an acronym, type the words the acronym stands for.
 
-    ![Exclude topics in CSV template](../media/exclude-topics-csv.png) 
+    ![Exclude topics in CSV template.](../media/exclude-topics-csv.png) 
 
 You can copy the csv template below:
 
