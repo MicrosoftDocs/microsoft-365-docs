@@ -78,9 +78,9 @@ Microsoft Exchange stores the add-in manifests within your organization's tenant
 
 Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) PowerShell cmdlet.
 
-### Azure Requirements
+### Azure Requirement for Exchange admin
 
-When deploying add-in via Centralized deployment, it requires admin to have role enable in Azure AD for app registration as it registrer the apps in Azure portal under App registration tab
+When deploying add-in via Centralized deployment, it requires an Exchange admin to have role enable in Azure AD for app registration as it registrer the apps in Azure portal under App registration tab. So, it is required to enable App registration under user settings in Azure portal.
 
 ![image](https://user-images.githubusercontent.com/89943918/144132549-b9ed41e5-f1ee-46cd-981d-eb2f570869be.png)
 
