@@ -300,7 +300,7 @@ Complete the following steps to create a new policy:
     >[!IMPORTANT]
     >If you're unable to select a listed indicator, it's because they aren't enabled for your organization. To make them available to select and assign to the policy, enable the indicators in **Insider risk management** > **Settings** > **Policy indicators**.
 
-    If you've selected other policy templates, custom triggering events aren't supported. The built-in policy triggering events apply and you'll continue past this step to Step XX without defining policy attributes.
+    If you've selected other policy templates, custom triggering events aren't supported. The built-in policy triggering events apply and you'll continue to Step 23 without defining policy attributes.
 
 14. Select **Next** to continue.
 15.	If you've selected the *General data leaks* or *Data leaks by priority users* templates and have selected the **User performs an exfiltration activity and associated indicators**, you can choose custom or default thresholds for the indicator triggering events that you've selected. Choose either the **Use default thresholds (Recommended)** or **Use custom thresholds for the triggering events**.
@@ -357,7 +357,7 @@ Complete the following steps to manage an existing policy:
     >[!IMPORTANT]
     >If you're unable to select a listed indicator, it's because they aren't enabled for your organization. To make them available to select and assign to the policy, enable the indicators in **Insider risk management** > **Settings** > **Policy indicators**.
 
-    If you've selected other policy templates, custom triggering events aren't supported. The built-in policy triggering events apply and you'll continue past this step to Step XX without defining policy attributes.
+    If you've selected other policy templates, custom triggering events aren't supported. The built-in policy triggering events apply and you'll continue to Step 23 without defining policy attributes.
 
 14. Select **Next** to continue.
 15.	If you've selected the *General data leaks* or *Data leaks by priority users* templates and have selected the **User performs an exfiltration activity and associated indicators**, you can choose custom or default thresholds for the indicator triggering events that you've selected. Choose either the **Use default thresholds (Recommended)** or **Use custom thresholds for the triggering events**.
