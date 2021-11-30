@@ -39,6 +39,6 @@ Once the user is found, you can reset their password or block their account. For
 
 ## Related content
 
-[Manage Microsoft 365 user accounts ](/enterprise/manage-microsoft-365-accounts) (article)\
+[Manage Microsoft 365 user accounts ](../enterprise/manage-microsoft-365-accounts.md) (article)\
 [Reset user password](m365-lighthouse-reset-user-password.md) (article)\
 [Block user sign-in](m365-lighthouse-block-user-signin.md) (article)

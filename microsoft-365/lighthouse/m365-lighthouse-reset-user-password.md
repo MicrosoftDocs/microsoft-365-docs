@@ -65,5 +65,5 @@ Microsoft 365 Lighthouse lets you change or reset user passwords. You can reset 
 
 ## Related content
 
-[Manage Microsoft 365 user accounts](/enterprise/manage-microsoft-365-accounts)\
+[Manage Microsoft 365 user accounts](../enterprise/manage-microsoft-365-accounts.md)\
 [Block user sign-in](m365-lighthouse-block-user-signin.md)
