@@ -56,6 +56,9 @@ For step-by-step instructions for creating an app in Azure AD, see [Register an 
 
 The next step is to create a text file that contains information about employees' access to patient health records in your organization's Epic EHR system. As previously explained, you need to determine how to generate this text file from your Epic EHR system. The Epic connector workflow requires a text file with tab-separated values to map that data in the text file with required connector schema. The file format supported is a pipe- or tab- separated .txt file.
 
+> [!NOTE]
+> The maximum size of the text file that contains the auditing data is 3 GB. The maximum number of rows is 5 million. Also, be sure to only include the relevant auditing data from your healthcare EHR system.
+
 The following table lists the fields that are required to enable insider risk management scenarios. A subset of these fields is mandatory. These fields are highlighted with an asterisk (*). If any of the mandatory fields are missing in the text file, the file won't be validated and data in the file won't be imported.
 
 |Field|Category|
@@ -112,6 +115,9 @@ You can also click **Edit** to change the Azure App ID or the column header name
 
 The last step in setting up an Epic connector is to run a sample script that will upload the Epic EHR audit records data in the text file (that you created in Step 1) to the Microsoft cloud. Specifically, the script uploads the data to the Epic connector. After you run the script, the Epic connector that you created in Step 3 imports the Epic EHR audit records data to your Microsoft 365 organization where it can be accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run it automatically on a daily basis so the most current employee termination data is uploaded to the Microsoft cloud. See [(Optional) Step 6: Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
 
+> [!NOTE]
+> As previously stated, the maximum size of the text file that contains the auditing data is 3 GB. The maximum number of rows is 5 million. The script that you run in this step will take about 30 to 40 minutes to import the auditing data from large text files. Additionally, the script will divide large text files into smaller blocks of 100K rows, and then import those blocks sequentially.
+
 1. Go to window that you left open from the previous step to access the GitHub site with the sample script. Alternatively, open the bookmarked site or use the URL that you copied.
 
 2. Click the **Raw** button to display the script in text view.
@@ -150,7 +156,6 @@ Here's an example of the syntax for the Epic connector script using actual value
 If the upload is successful, the script displays the **Upload Successful** message.
 
 > [!NOTE]
-> Maximum file size supported with the above script is 3 GB, and Maximum number of records supported is 5 Million. Script will take around 30-45 minutes for ingesting files reaching maximum size limits and will create multiple smaller chunks during the process in size of 100K records per file to ingest sequentially. 
 > If you have problems running the previous command because of execution policies, see [About Execution Policies](\powershell\module\microsoft.powershell.core\about\about_execution_policies) and [Set-ExecutionPolicy](\powershell\module\microsoft.powershell.security\set-executionpolicy) for guidance about setting execution policies.
 
 ## Step 5: Monitor the Epic connector
