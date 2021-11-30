@@ -30,7 +30,7 @@ Centralized Deployment is the recommended and most feature-rich way for most cus
 
 Centralized Deployment provides the following benefits:
 
-- A Global admin can assign an add-in directly to a user, to multiple users via a group, or to everyone in the organization.
+- A Global admin and an Exchange admin, both, can assign an add-in directly to a user, to multiple users via a group, or to everyone in the organization.
 
 - When the relevant Office application starts, the add-in automatically downloads. If the add-in supports add-in commands, the add-in automatically appears in the ribbon within the Office application.
 
@@ -77,6 +77,12 @@ Centralized Deployment doesn't support the following:
 Microsoft Exchange stores the add-in manifests within your organization's tenant. The admin deploying add-ins and the users receiving those add-ins must be on a version of Exchange Online that supports OAuth authentication.
 
 Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) PowerShell cmdlet.
+
+### Azure Requirements
+
+When deploying add-in via Centralized deployment, it requires admin to have role enable in Azure AD for app registration as it registrer the apps in Azure portal under App registration tab
+
+![image](https://user-images.githubusercontent.com/89943918/144132549-b9ed41e5-f1ee-46cd-981d-eb2f570869be.png)
 
 
 ### Centralized Deployment Compatibility Checker
