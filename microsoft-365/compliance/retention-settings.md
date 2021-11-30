@@ -288,7 +288,7 @@ When you configure an auto-apply policy that uses sensitive information types an
 
 #### What happens if a Microsoft 365 group is deleted after a policy is applied
 
-When a policy for retention is applied to a Microsoft 365 group (static scope or adaptive scope), and that group is then deleted from Azure Active Directory:
+When a policy for retention (static policy scope or adaptive) is applied to a Microsoft 365 group, and that group is then deleted from Azure Active Directory:
 
 - The group-connected SharePoint site is preserved and continues to be managed by the retention policy with the **Microsoft 365 Groups** location. The site is still accessible to the people who had access to it before the group was deleted, and any new permissions must now be managed via SharePoint.
     
