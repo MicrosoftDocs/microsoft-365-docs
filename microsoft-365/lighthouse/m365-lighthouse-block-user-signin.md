@@ -41,7 +41,7 @@ You can block a user account if you think it is compromised. When you block some
 
 7. Select **Save**.
 
-## Block risky users 
+## Block risky users
 
 1. In the left navigation pane in Lighthouse, select **Users**.
 
@@ -57,6 +57,5 @@ You can block a user account if you think it is compromised. When you block some
 
 ## Related content
 
-[Manage Microsoft 365 user accounts](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-accounts)(article) (article)
-
+[Manage Microsoft 365 user accounts](/enterprise/manage-microsoft-365-accounts) (article)\
 [Reset user password](m365-lighthouse-reset-user-password.md) (article)
