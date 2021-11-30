@@ -389,9 +389,9 @@ We've got two updates for Groups this month:
 
 - [Schedule a meeting](https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5)
 - [Join a Teams meeting](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [Create an org-wide team](https://docs.microsoft.com/microsoftteams/create-an-org-wide-team)
+- [Create an org-wide team](/microsoftteams/create-an-org-wide-team.md)
 - [Create a Team with guests](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f)
-- [Join a Team as a guest](https://docs.microsoft.com/microsoftteams/guest-experience)
+- [Join a Team as a guest](/microsoftteams/guest-experience.md)
 - [Create a group email address](https://support.microsoft.com/office/3f73d218-52d6-4f88-a733-9ff37073ee4c)
 
 #### For admins and business owners
