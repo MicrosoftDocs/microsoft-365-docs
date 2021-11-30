@@ -3,7 +3,6 @@
 |:-|:-|:-|:-|:-|:-|
 |ACCESS|N/A|N/A|N/A|✔|N/A|
 |COMPANY PORTAL|N/A|✔|Planned|N/A|✔|
-|CORTANA|N/A|N/A|N/A|N/A|✔|
 |EXCEL|✔|✔|✔|✔|✔|
 |KAIZALA|✔|Planned|N/A|N/A|N/A|
 |MICROSOFT ROOMS|Planned|Planned|N/A|N/A|N/A|
@@ -20,7 +19,7 @@
 |POWERPOINT|✔|✔|✔|✔|✔|
 |PROJECT|N/A|N/A|N/A|✔|N/A|
 |PUBLISHER|N/A|N/A|N/A|✔|N/A|
-|SHAREPOINT|✔|N/A|N/A|N/A|N/A|
+|SHAREPOINT|✔|Planned|N/A|N/A|N/A|
 |SKYPE FOR BUSINESS|Planned|Planned|N/A|N/A|N/A|
 |STICKY NOTES|N/A|N/A|N/A|N/A|✔|
 |STREAM|Planned|Planned|N/A|N/A|N/A|

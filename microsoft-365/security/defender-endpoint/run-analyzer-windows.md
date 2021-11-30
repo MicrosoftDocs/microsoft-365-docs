@@ -23,8 +23,7 @@ ms.technology: m365d
 # Run the client analyzer on Windows
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 1. Download the [MDE Client Analyzer tool](https://aka.ms/mdatpanalyzer) to the Windows machine you need to investigate.
 
@@ -52,6 +51,24 @@ In addition to the above, there is also an option to [collect the analyzer suppo
 > On Windows 10, Windows Server 2019 or later OS editions, or Windows 11, the client analyzer script calls into an executable file called `MDEClientAnalyzer.exe` to run the connectivity tests to cloud service URLs.
 >
 > On Windows 8.1, Windows Server 2016 or previous OS editions, the client analyzer script calls into an executable file called `MDEClientAnalyzerPreviousVersion.exe` to run connectivity tests for Command and Control (CnC) URLs while also calling into Microsoft Monitoring Agent connectivity tool `TestCloudConnection.exe` for Cyber Data channel URLs.
+
+
+All the PowerShell scripts and modules included with the analyzer are Microsoft-signed.
+If files have been modified in any way, then the analyzer is expected to exit with the following error:
+
+![Image of client analyzer error](images/sigerror.png)
+
+
+If this error is shown, then the issuerInfo.txt output will contain detailed information about why that happened and what file was affected:
+
+![Image of issuer info](images/issuerinfo.png)
+
+
+Example contents after MDEClientAnalyzer.ps1 is modified:
+
+![Image of modified ps1 file](images/modified-ps1.png)
+
+
 
 ## Result package contents on Windows
 
@@ -135,6 +152,9 @@ By default, the unpacked MDEClientAnalyzerResult.zip file will contain the follo
   - OperationsManager.evtx
 
     Description: Export of the Microsoft Monitoring Agent event log
+
+
+
 
 ## See also
 
