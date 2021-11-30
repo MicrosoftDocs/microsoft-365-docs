@@ -19,21 +19,22 @@ ms.collection:
   - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 11/03/2021
+ms.date: 11/29/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
 # Switch to Microsoft Defender for Endpoint - Phase 2: Setup
 
 **Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-|[![Phase 1: Prepare.](images/phase-diagrams/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Phase 1: Prepare](switch-to-microsoft-defender-prepare.md)|![Phase 2: Set up.](images/phase-diagrams/setup.png)<br/>Phase 2: Set up|[![Phase 3: Onboard3.](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Phase 3: Onboard](switch-to-microsoft-defender-onboard.md)|
+|[![Phase 1: Prepare.](images/phase-diagrams/prepare.png)](switch-to-mde-phase-1.md)<br/>[Phase 1: Prepare](switch-to-mde-phase-1.md)|![Phase 2: Set up.](images/phase-diagrams/setup.png)<br/>Phase 2: Set up|[![Phase 3: Onboard3.](images/phase-diagrams/onboard.png)](switch-to-mde-phase-3.md)<br/>[Phase 3: Onboard](switch-to-mde-phase-3.md)|
 |---|---|---|
 ||*You are here!*||
 
-**Welcome to the Setup phase of [switching to Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**. This phase includes the following steps:
+**Welcome to the Setup phase of [switching to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)**. This phase includes the following steps:
 
 1. [Reinstall/enable Microsoft Defender Antivirus on your endpoints](#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).
 2. [Configure Defender for Endpoint](#configure-defender-for-endpoint).
@@ -51,7 +52,7 @@ As you're making the switch to Defender for Endpoint, you might need to take cer
 |Endpoint type|What to do|
 |---|---|
 |Windows clients (such as endpoints running Windows 10 and Windows 11)|In general, you do not need to take any action for Windows clients (unless Microsoft Defender Antivirus has been uninstalled). Here's why: <br/><br/> Microsoft Defender Antivirus should still be installed, but is most likely disabled at this point of the migration process. <br/><br/> When a non-Microsoft antivirus/antimalware solution is installed and the clients are not yet onboarded to Defender for Endpoint, Microsoft Defender Antivirus is disabled automatically. <br/><br/> Later, when the client endpoints are onboarded to Defender for Endpoint, if those endpoints are running a non-Microsoft antivirus solution, Microsoft Defender Antivirus goes into passive mode. <br/><br/> If the non-Microsoft antivirus solution is uninstalled, Microsoft Defender Antivirus goes into active mode automatically.|
-|Windows servers|On Windows Server, you'll need to reinstall Microsoft Defender Antivirus, and set it to passive mode manually. On Windows servers, when a non-Microsoft antivirus/antimalware is installed, Microsoft Defender Antivirus cannot run alongside the non-Microsoft antivirus solution. In those cases, Microsoft Defender Antivirus is disabled or uninstalled manually. <br/><br/> To reinstall or enable Microsoft Defender Antivirus on Windows Server, perform the following tasks: <br/>- [Set DisableAntiSpyware to false on Windows Server](#set-disableantispyware-to-false-on-windows-server) (only if necessary)<br/>- [Reinstall Microsoft Defender Antivirus on Windows Server](#reinstall-microsoft-defender-antivirus-on-windows-server)<br/>- [Set Microsoft Defender Antivirus to passive mode on Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)|
+|Windows servers|On Windows Server, you'll need to reinstall Microsoft Defender Antivirus, and set it to passive mode manually. On Windows servers, when a non-Microsoft antivirus/antimalware is installed, Microsoft Defender Antivirus cannot run alongside the non-Microsoft antivirus solution. In those cases, Microsoft Defender Antivirus is disabled or uninstalled manually. <br/><br/> To reinstall or enable Microsoft Defender Antivirus on Windows Server, perform the following tasks: <br/>- [Set DisableAntiSpyware to false on Windows Server](#set-disableantispyware-to-false-on-windows-server) (only if necessary)<br/>- [Reinstall Microsoft Defender Antivirus on Windows Server](#reinstall-microsoft-defender-antivirus-on-windows-server)<br/>- [Set Microsoft Defender Antivirus to passive mode on Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>If you run into issues reinstalling or re-enabling Microsoft Defender Antivirus on Windows Server, see [Troubleshooting: Microsoft Defender Antivirus is getting uninstalled on Windows Server](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server).|
 
 > [!TIP]
 > To learn more about Microsoft Defender Antivirus states with non-Microsoft antivirus protection, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
@@ -196,6 +197,6 @@ Device groups, device collections, and organizational units enable your security
 
 ## Next step
 
-**Congratulations**! You have completed the Setup phase of [switching to Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)!
+**Congratulations**! You have completed the Setup phase of [switching to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)!
 
-- [Proceed to Phase 3: Onboard to Defender for Endpoint](switch-to-microsoft-defender-onboard.md)
+- [Proceed to Phase 3: Onboard to Defender for Endpoint](switch-to-mde-phase-3.md)
