@@ -50,7 +50,7 @@ We'll review your application and make a determination. You'll then receive an e
 If you're accepted, your email will contain a license code that you'll use to activate your Defender for Business trial.
 
 > [!IMPORTANT]
-> If you're a partner, you must have each customer complete the process described in the section, [Sign up for the preview program](#sign-up-for-the-preview-program). Make sure the customer specifies your Microsoft partner name in the **Other** box.
+> If you're a partner, after you have been accepted into the preview program, you must have each customer complete the process described in the section, [Sign up for the preview program](#sign-up-for-the-preview-program). Make sure the customer specifies your Microsoft partner name in the **Other** box.
 
 
 ## Next steps
