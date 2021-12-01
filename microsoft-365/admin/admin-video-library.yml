@@ -22,7 +22,7 @@ landingContent:
   # Card (optional)
   - title: Get started
     linkLists:
-      - linkListType: overview
+      - linkListType: video
         links:
         - text: What is Microsoft 365
           url: what-is-microsoft-365.md
@@ -34,7 +34,7 @@ landingContent:
   # Card (optional)
   - title: Cloud setup
     linkLists:
-      - linkListType: linkListType
+      - linkListType: video
         links:
         - text: Sign up for a subscription
           url: admin-overview/sign-up-for-office-365.md
@@ -42,16 +42,12 @@ landingContent:
           url: setup/business-set-up.md
         - text: Secure Windows 10 PCs
           url: setup/secure-win-10-pcs.md
-        - text: Create a GoDaddy website
-          url: create-web-site.md
 
   # Card
   - title: Device setup
     linkLists:
-      - linkListType: linkListType
+      - linkListType: video
         links:
-        - text: Upgrade to Windows 10 Pro
-          url: upgrade.md
         - text: Connect PCs to Microsoft 365
           url: setup/set-up-windows-devices.md
         - text: Install Microsoft Office apps
@@ -68,35 +64,15 @@ landingContent:
   # Card
   - title: Mobile
     linkLists:
-      - linkListType: linkListType
+      - linkListType: video
         links:
-        - text: Work from anywhere
-          url: work-from-anywhere.md
         - text: Get the Admin mobile app
           url: admin-overview/admin-mobile-app.md
             
   # Card
-  - title: Collaborate
-    linkLists:
-      - linkListType: linkListType
-        links:
-        - text: Use Outlook and Teams
-          url: collab-outlook-teams.md
-        - text: Online meetings overview
-          url: overview-online-meetings.md 
-  
-  # Card
-  - title: Cloud storage
-    linkLists:
-      - linkListType: linkListType
-        links:
-        - text: Sharing overview
-          url: overview-file-sharing.md
-
-  # Card
   - title: Business Voice
     linkLists:
-      - linkListType: linkListType
+      - linkListType: video
         links:
         - text: What is Business Voice?
           url: /microsoftteams/business-voice/whats-business-voice
@@ -104,19 +80,9 @@ landingContent:
           url: /microsoftteams/business-voice/set-up-overview   
 
   # Card
-  - title: Productivity apps
-    linkLists:
-      - linkListType: linkListType
-        links:
-        - text: Track business info with Microsoft Lists
-          url: track-info-lists.md
-        - text: Plan an event
-          url: plan-event.md   
-
-  # Card
   - title: Manage services
     linkLists:
-      - linkListType: linkListType
+      - linkListType: video
         links:
         - text: What is an admin
           url: add-users/about-admin-roles.md
@@ -156,7 +122,7 @@ landingContent:
   # Card
   - title: Manage devices
     linkLists:
-      - linkListType: linkListType
+      - linkListType: video
         links:
         - text: Secure Windows 10 Pro devices
           url: devices/protection-settings-for-windows-10-pcs.md
@@ -166,7 +132,7 @@ landingContent:
   # Card
   - title: Security & compliance
     linkLists:
-      - linkListType: linkListType
+      - linkListType: video
         links:
         - text: Overview of Microsoft 365 Business Premium security
           url: security-and-compliance/secure-your-business-data.md
@@ -189,18 +155,16 @@ landingContent:
   # Card
   - title: Support
     linkLists:
-      - linkListType: linkListType
+      - linkListType: video
         links:
         - text: Get help or support
           url: get-help-support.md 
-        - text: Find docs and training
-          url: find-help-answers.md
         - text: Employee quick setup  
           url: employee-quick-setup.md  
   # Card
   - title: Switch from Google Workspace
     linkLists:
-      - linkListType: linkListType
+      - linkListType: video
         links:
           - text: Switch from Google Workspace
             url: moveto-microsoft-365/move-from-google-workspace-overview.md 
