@@ -611,7 +611,7 @@
       items: 
         - name: Learn about inactive mailboxes
           href: inactive-mailboxes-in-office-365.md
-        - name: Create and manage inactive mailboxes
+        - name: Manage inactive mailboxes
           href: create-and-manage-inactive-mailboxes.md
         - name: Change the hold duration for an inactive mailbox
           href: change-the-hold-duration-for-an-inactive-mailbox.md
