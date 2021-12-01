@@ -3,6 +3,7 @@
 |:-|:-|:-|:-|:-|:-|
 |ACCESS|N/A|N/A|N/A|✔|N/A|
 |COMPANY PORTAL|N/A|✔|Planned|N/A|✔|
+|CORTANA|N/A|N/A|N/A|N/A|✔|
 |EXCEL|✔|✔|✔|✔|✔|
 |KAIZALA|✔|Planned|N/A|N/A|N/A|
 |MICROSOFT ROOMS|Planned|Planned|N/A|N/A|N/A|
@@ -28,5 +29,5 @@
 |TO-DO|✔|✔|N/A|N/A|✔|
 |VISIO|N/A|✔|N/A|✔|N/A|
 |WHITEBOARD|✔|✔|N/A|N/A|✔|
-|WORD|✔|✔|✔|✔|✔|
+|WORD|✔|✔|✔|✔|N/A|
 |YAMMER|✔|✔|N/A|Planned|N/A|
