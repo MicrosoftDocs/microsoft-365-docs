@@ -30,6 +30,7 @@ ms.technology: mde
 - Windows Server 2019 and later
 - Windows Server 2019 core edition
 - Windows Server 2022
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -90,7 +91,7 @@ The following specifics apply to the new unified solution package for Windows Se
 - Ensure connectivity requirements as specified in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](/microsoft-365/security/defender-endpoint/configure-proxy-internet?enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) are met. They are equivalent to those for Windows Server 2019.
 - Previously, the use of the Microsoft Monitoring Agent (MMA) on Windows Server 2016 and below allowed for the OMS / Log Analytics gateway to provide connectivity to Defender cloud services. The new solution, like Microsoft Defender for Endpoint on Windows Server 2019, Windows Server 2022, and Windows 10, does not support this gateway.
 - On Windows Server 2016, verify that Microsoft Defender Antivirus is installed, is active and up to date. You can download and install the latest platform version using Windows Update. Alternatively, download the update package manually from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) or from [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).  
-- On Windows Server 2012 R2, there is no user interface for Microsoft Defender Antivirus. In addition, the user interface on Windows Server 2016 only allows for basic operations. To perform operations on a device locally, refer to [Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-atp-post-migration-other-tools). As a result, features that specifically rely on user interaction, such as where the user is prompted to make a decision or perform a specific task, may not work as expected. It is recommended to disable or not enable the user interface nor require user interaction on any managed server as it may impact protection capability.
+- On Windows Server 2012 R2, there is no user interface for Microsoft Defender Antivirus. In addition, the user interface on Windows Server 2016 only allows for basic operations. To perform operations on a device locally, refer to [Manage Microsoft Defender for Endpoint with PowerShell, WMI, and MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools). As a result, features that specifically rely on user interaction, such as where the user is prompted to make a decision or perform a specific task, may not work as expected. It is recommended to disable or not enable the user interface nor require user interaction on any managed server as it may impact protection capability.
 - Not all Attack Surface Reduction rules are available on all operating systems. See [Attack Surface Reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules).
 - To enable [Network Protection](/microsoft-365/security/defender-endpoint/network-protection), additional configuration is required:
   - `Set-MpPreference -EnableNetworkProtection Enabled`
@@ -101,10 +102,7 @@ The following specifics apply to the new unified solution package for Windows Se
   In addition, on machines with a high volume of network traffic, performance testing in your environment is highly recommended before enabling this capability broadly. You may need to account for additional resource consumption.
 - On Windows Server 2012 R2, Network Events may not populate in the timeline. This issue requires a Windows Update released as part of the [October 12, 2021 monthly rollup (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e).
 - Operating system upgrades are not supported. Offboard then uninstall before upgrading.
-- Automatic exclusions for server roles are not supported on Windows Server 2012 R2. For more information about adding exclusions, see [Virus scanning recommendations for Enterprise computers that are running currently supported versions of Windows](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc).
-
-- On Windows Server 2012 R2, Network Events may not populate in the timeline. This issue requires a Windows Update released as part of the [October 12, 2021 monthly rollup (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e).
-- Operating system upgrades are not supported. Offboard then uninstall before upgrading.
+- Automatic exclusions for *server roles* are not supported on Windows Server 2012 R2; however, built-in exclusions for operating system files are. For more information about adding exclusions, see [Virus scanning recommendations for Enterprise computers that are running currently supported versions of Windows](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc).
 
 <a name="integration-with-azure-defender"></a>
 
@@ -136,7 +134,10 @@ The installer package will check if the following components have already been i
 
 **Prerequisites for Windows Server 2016** 
 
-Verify that Microsoft Defender Antivirus is installed, is active and up to date. You can download and install the latest platform version using Windows Update. Alternatively, download the update package manually from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) or from [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64).
+Aside from fully updating the machine with the Latest Cumulative Update (LCU), verify that Microsoft Defender Antivirus is installed, is active and up to date. You can download and install the latest platform version using Windows Update. Alternatively, download the update package manually from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) or from [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64). 
+
+> [!NOTE]
+> In order to successfully update the built-in version of Windows Defender, which has a version number starting with 4.10, to the latest available platform, a servicing stack update must have been applied as well as the Latest Cumulative Update (LCU) equal to or later than September 20, 2018—KB4457127 (OS Build 14393.2515).
 
 **New update package for Microsoft Defender for Endpoint on Windows Server 2012 R2 and 2016**
 
@@ -196,7 +197,7 @@ Support for Windows Server provides deeper insight into server activities, cover
 
 ### Install Microsoft Defender for Endpoint using a script
 
-You can also use the [installer script](server-migration.md#installer-script) to help automate installation, uninstallation, and onboarding.
+You can also use the [installer script](server-migration.md#installer-script) to help automate installation, uninstallation, and onboarding. 
 
 ## Windows Server Semi-Annual Enterprise Channel and Windows Server 2019 and Windows Server 2022
 

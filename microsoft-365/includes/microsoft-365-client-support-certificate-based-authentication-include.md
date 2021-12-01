@@ -36,6 +36,6 @@
 |TO-DO|✔|✔|✔|N/A|✔|
 |VISIO|N/A|✔|N/A|✔|N/A|
 |WHITEBOARD|✔|✔|N/A|N/A|✔|
-|WORD|✔|✔|✔|✔|✔|
+|WORD|✔|✔|✔|✔|N/A|
 |WORKPLACE ANALYTICS|N/A|N/A|N/A|N/A|N/A|
 |YAMMER|✔|✔|Planned|Planned|N/A|
