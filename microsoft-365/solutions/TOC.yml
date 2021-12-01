@@ -311,10 +311,10 @@
 
     - name: Security
       items:
+      - name: Microsoft 365 Zero Trust deployment plan
+        href: ..security/microsoft-365-zero-trust
       - name: Top tasks for security teams to support working from home
         href: ../security/top-security-tasks-for-remote-work.md
-      - name: Microsoft 365 security for Business Decision Makers (BDMs)
-        href: ../security/microsoft-365-security-for-bdm.md
       - name: Identity and device access configurations
         href: ../security/office-365-security/microsoft-365-policies-configurations.md
       - name: Evaluate and pilot Microsoft 365 Defender
@@ -322,7 +322,7 @@
       - name: Respond to your first incident
         href: ../security/defender/first-incident-overview.md
       - name: Deploy Microsoft Defender for Endpoint
-        href: /microsoft-365/security/defender-endpoint/deployment-phases.md
+        href: ../security/defender-endpoint/deployment-phases.md
       - name: Switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint
         href: ../security/defender-endpoint/switch-to-mde-overview.md
       - name: Switch from a non-Microsoft protection tool to Microsoft Defender for Office 365
