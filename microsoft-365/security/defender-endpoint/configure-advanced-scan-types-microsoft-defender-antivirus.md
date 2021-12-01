@@ -21,8 +21,8 @@ ms.topic: how-to
 # Configure Microsoft Defender Antivirus scanning options
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 ## Use Microsoft Intune to configure scanning options
 
@@ -70,7 +70,7 @@ For details on configuring Microsoft Endpoint Manager (current branch), see [How
 For more information on how to use PowerShell with Microsoft Defender Antivirus, see
 
 - [Manage Microsoft Defender Antivirus with PowerShell cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Defender cmdlets](/powershell/module/defender/)
+- [Microsoft Defender Antivirus cmdlets](/powershell/module/defender/)
 
 ## Use WMI to configure scanning options
 
