@@ -127,6 +127,19 @@ Run the following command to disable the archive mailbox for all users in your o
 Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND RecipientTypeDetails -Eq "UserMailbox"} | Disable-Mailbox -Archive
 ```
 
+## Run diagnostics on archive mailboxes
+
+
+Let’s see what’s causing problems with mailbox archiving
+We can run automated checks to help you identify and more quickly resolve the problem. We just need the email address of the account for which you would like to either configure archiving or increase the archive mailbox size.
+
+
+
+https://aka.ms/PillarArchiveMailbox
+
+This test will check and identify issues about mailbox archiving;
+[Run Tests: Archive Mailbox](https://aka.ms/PillarArchiveMailbox)
+
 ## More information
 
 - When an archive mailbox is enabled, users can store messages in their archive mailbox. Users can access their archive mailboxes by using Microsoft Outlook and Outlook on the web. Using either of these client applications, users can view messages in their archive mailbox and move or copy messages between their primary mailbox and their archive mailbox. Users can also recover deleted items from the Recoverable Items folder in their archive mailbox by using the Recover Deleted Items tool.
