@@ -58,10 +58,10 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 
 ## Complete a learning module about incidents and response actions
 
-See the learning module, [Detect and respond to security issues using Microsoft Defender for Endpoint](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/), to get an overview of incidents and response actions. You'll learn about the incident queue, alerts, and response actions that you can take. This course will help you get started working with incidents in Defender for Business.
+See the learning module, [Detect and respond to security issues](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/), to get an overview of incidents and response actions. You'll learn about the incident queue, alerts, and response actions that you can take. This course will help you get started working with incidents in Defender for Business.
 
 > [!NOTE]
-> Although the learning module ([Detect and respond to security issues using Microsoft Defender for Endpoint](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/)) is for Microsoft Defender for Endpoint, the basic concepts and overall flow are similar to what you'll see in Defender for Business.
+> Although the learning module ([Detect and respond to security issues](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/)) is actually for Microsoft Defender for Endpoint, the basic concepts and overall flow are similar to what you'll see in Defender for Business.
 
 
 
