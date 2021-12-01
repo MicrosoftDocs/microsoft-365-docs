@@ -153,4 +153,4 @@ The following table summarizes the process of making an inactive mailbox for dif
 
 ## Next steps
 
-After you make a mailbox inactive, you can perform various management tasks on inactive mailboxes that include changing their hold duration, and recovering, restoring, and deleting it. For more information, see [Manage inactive mailboxes](manage-inactive-mailboxes.md). 
+After you make a mailbox inactive, you can perform various management tasks on inactive mailboxes that include changing their hold duration, and recovering, restoring, and deleting it. For more information, see [Manage inactive mailboxes](create-and-manage-inactive-mailboxes.md). 
