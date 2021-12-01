@@ -135,7 +135,7 @@ Microsoft Defender for Endpoint supports several options to onboard devices. For
 
 
 > [!IMPORTANT]
-> After a device onboards with Microsoft Defender for Endpoint, it must and be tagged with **MDE-Management** before it can enroll with Security Management for Microsoft Defender for Endpoint. For more information on device tagging in MDE, see [*Create and manage device tags*](/microsoft-365/security/defender-endpoint/machine-tag).
+> After a device onboards with Microsoft Defender for Endpoint, it must and be tagged with **MDE-Management** before it can enroll with Security Management for Microsoft Defender for Endpoint. For more information on device tagging in MDE, see [*Create and manage device tags*](/microsoft-365/security/defender-endpoint/machine-tags).
 
 
 ## Co-existence with Microsoft Endpoint Configuration Manager
