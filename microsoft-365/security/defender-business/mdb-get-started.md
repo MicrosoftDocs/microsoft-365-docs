@@ -56,12 +56,13 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 | **Settings** | Enables you to edit settings for the Microsoft 365 Defender portal and Microsoft Defender for Business. For example, you can onboard (or offboard) and your company’s devices (also referred to as endpoints). You can also define rules, such as alert suppression rules, and set up indicators to block or allow certain files or processes.  |
 | **More resources** | Navigate to other portals, such as Azure Active Directory. Keep in mind that the Microsoft 365 Defender portal should meet your needs without requiring you to navigate to other portals. |
 
-## Learn about incidents and response actions
+## Complete a learning module about incidents and response actions
 
-See the learning module, [Detect and respond to security issues using Microsoft Defender for Endpoint](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/), to get an overview of incidents and response actions. You'll learn about the incident queue, alerts, and response actions that you can take.
+See the learning module, [Detect and respond to security issues using Microsoft Defender for Endpoint](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/), to get an overview of incidents and response actions. You'll learn about the incident queue, alerts, and response actions that you can take. This course will help you get started working with incidents in Defender for Business.
 
 > [!NOTE]
 > Although the learning module ([Detect and respond to security issues using Microsoft Defender for Endpoint](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/)) is for Microsoft Defender for Endpoint, the basic concepts and overall flow are similar to what you'll see in Defender for Business.
+
 
 
 ## Next steps
