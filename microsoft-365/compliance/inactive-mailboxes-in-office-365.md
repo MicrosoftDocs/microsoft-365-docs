@@ -153,8 +153,4 @@ The following table summarizes the process of making an inactive mailbox for dif
 
 ## Next steps
 
-After you make a mailbox inactive, you can perform various management tasks on inactive mailboxes that include changing their hold duration, and recovering, restoring, and deleting it. For more information, see [Manage inactive mailboxes](create-manage-inactive-mailboxes.md). 
-
-- **Restore an inactive mailbox.** If another employee takes on the job responsibilities of a former employee, or if another person needs access to the contents of the inactive mailbox, you can restore (or merge) the contents of the inactive mailbox to an existing mailbox. When you restore an inactive mailbox, the contents are copied to another mailbox. The inactive mailbox is retained and remains an inactive mailbox. The inactive mailbox can still be searched using eDiscovery tools, its contents can be restored to another mailbox, and it can be recovered or deleted later. For step-by-step procedures, see [Restore an inactive mailbox](restore-an-inactive-mailbox.md).
-
-- **Delete an inactive mailbox.** When you no longer need to retain the contents of an inactive mailbox, you can permanently delete it by removing all holds or Microsoft 365 retention policies applied to the inactive mailbox. If a mailbox was made inactive more than 30 days ago, it will be marked for permanent deletion after you remove the hold. If the mailbox was made inactive within the last 30 days, you can make it active again after removing the hold or retention policy. For step-by-step procedures, see [Delete an inactive mailbox](delete-an-inactive-mailbox.md).
+After you make a mailbox inactive, you can perform various management tasks on inactive mailboxes that include changing their hold duration, and recovering, restoring, and deleting it. For more information, see [Manage inactive mailboxes](manage-inactive-mailboxes.md). 
