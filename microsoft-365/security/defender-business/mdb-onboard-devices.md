@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 11/23/2021
+ms.date: 12/01/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -38,7 +38,8 @@ With Microsoft Defender for Business, you have several options to choose from fo
 
 ## Types of onboarding methods
 
-The following table describes the types of onboarding methods that are supported in Defender for Business. <br/><br/>
+The following table describes the types of onboarding methods that are supported in Defender for Business. 
+<br/><br/>
 
 | Onboarding method  | Description  |
 |---------|---------|
