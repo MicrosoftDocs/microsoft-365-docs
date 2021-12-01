@@ -3,8 +3,6 @@ title: Configure Microsoft Defender for Cloud Apps integration
 ms.reviewer:
 description: Learn how to turn on the settings to enable the Microsoft Defender for Endpoint integration with Microsoft Defender for Cloud Apps.
 keywords: cloud, app, security, settings, integration, discovery, report
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -32,7 +30,7 @@ ms.technology: mde
 To benefit from Microsoft Defender for Endpoint cloud app discovery signals, turn on Microsoft Defender for Cloud Apps integration.
 
 > [!NOTE]
-> This feature will be available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on devices running Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809 (OS Build 17763.379 with [KB4489899](https://support.microsoft.com/help/4489899)) or later Windows 10 versions.
+> This feature will be available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on devices running Windows 10 and Windows 11.
 
 > See [Microsoft Defender for Endpoint integration with Microsoft Defender for Cloud Apps](/cloud-app-security/mde-integration) for detailed integration of Microsoft Defender for Endpoint with Microsoft Defender for Cloud Apps.
 
