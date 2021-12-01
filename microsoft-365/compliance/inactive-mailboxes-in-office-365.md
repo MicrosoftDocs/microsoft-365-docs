@@ -131,4 +131,4 @@ Conversely, any archive policies (MRM retention tags configured with a **MoveToA
 
 ## Next steps
 
-To make a mailbox inactive and manage it, such as changing the hold duration, recovering, restoring, and deleting it, see [Create and manage inactive mailboxes](create-and-manage-inactive-mailboxes.md).
+To make a mailbox inactive and manage it, such as recovering, restoring, and deleting it, see [Create and manage inactive mailboxes](create-and-manage-inactive-mailboxes.md).
