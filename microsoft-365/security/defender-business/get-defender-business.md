@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 11/15/2021
+ms.date: 12/01/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -30,11 +30,28 @@ Microsoft Defender for Business is available in preview! Participating in the pr
 
 ## Sign up for the preview program
 
-If you are an IT partner or a small or medium-sized business (300 or fewer employees), visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview) to apply for the preview program.
+1. Visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).
 
-## What to expect
+2. Select **Customer** or **Microsoft Partner**.
 
-After you have applied for the preview program, we'll review your application. You'll receive an email with additional information, such as our license agreement and how to activate your trial. 
+3. Review and accept the terms of the Microsoft Defender for Business Preview Agreement, and then choose **Next**.
+
+4. Fill out the form with your contact information. 
+
+   - If you are a customer who is working with a partner, in the **Other** box, fill in the company name of the partner. Then choose **Submit**.
+   - If you are a partner, make sure to indicate your partnership type and information about customers you are planning to work with.
+
+5. When you have finished filling out the form, choose **Submit**.
+
+## What to expect after applying
+
+We'll review your application and make a determination. You'll then receive an email that either includes your promo code or that explains why we're not able to offer you the trial program at this time.
+
+If you're accepted, your email will contain a license code that you'll use to activate your Defender for Business trial.
+
+> [!IMPORTANT]
+> If you're a partner, you must have each customer complete the process described in the section, [Sign up for the preview program](#sign-up-for-the-preview-program). 
+
 
 ## Next steps
 
