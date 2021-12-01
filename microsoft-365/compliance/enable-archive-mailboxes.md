@@ -148,3 +148,6 @@ Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND
   - [Default Retention Policy in Exchange Online](/exchange/security-and-compliance/messaging-records-management/default-retention-policy)
 
   - [Set up an archive and deletion policy for mailboxes in your organization](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+
+This test will check and identify issues about mailbox archiving;
+[Run Tests: Archive Mailbox](https://aka.ms/PillarArchiveMailbox)
