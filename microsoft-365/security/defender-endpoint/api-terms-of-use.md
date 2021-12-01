@@ -2,6 +2,7 @@
 title: Microsoft Defender for Endpoint API license and terms of use
 description: Description of the license and terms of use for Microsoft Defender APIs
 keywords: license, terms, apis, legal, notices, code of conduct
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
