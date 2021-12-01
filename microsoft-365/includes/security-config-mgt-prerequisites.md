@@ -16,6 +16,7 @@ Review the following sections for requirements for the Security Management for M
 
 When a device onboards to Microsoft Defender for Endpoint:
 
+
 - The device is surveyed for an existing Endpoint Manager presence, which is a mobile device management (MDM) enrollment to Intune
 - Devices without an Endpoint Manager presence will enable the Security Management feature
 - A trust is created with Azure Active Directory if one doesn't already exist
@@ -30,6 +31,7 @@ When a device that is domain joined creates a trust with Azure Active Directory,
 - Hybrid Azure Active Directory Join must be configured in your environment (either through Federation or AAD Connect Sync)
 - AAD Connect Sync must include the device objects *in scope* for synchronization with Azure Active Directory (when needed for join)
 - AAD Connect rules for sync must be modified for Server 2012 R2 (when support for Server 2012 R2 is needed)
+- All devices must register in the Azure Active Directory of the tenant that hosts Microsoft Defender for Endpoint. Cross-tenant scenarios are not supported. 
 
 ### Connectivity Requirements
 
@@ -131,7 +133,14 @@ To support Microsoft Defender for Endpoint security configuration management thr
 
 Microsoft Defender for Endpoint supports several options to onboard devices. For current guidance, see [Onboarding tools and methods for Windows devices](/microsoft-365/security/defender-endpoint/security-config-management) in the Defender for Endpoint documentation.
 
-Devices that you manage with Intune are not supported for this scenario.
+
+> [!IMPORTANT]
+> After a device onboards with Microsoft Defender for Endpoint, it must and be tagged with **MDE-Management** before it can enroll with Security Management for Microsoft Defender for Endpoint. For more information on device tagging in MDE, see [*Create and manage device tags*](/microsoft-365/security/defender-endpoint/machine-tag).
+
+
+## Co-existence with Microsoft Endpoint Configuration Manager
+When using Configuration Manager, the best path for management of security policy is using the [Configuration Manager tenant attach](/mem/configmgr/tenant-attach/endpoint-security-get-started). In some environments it may be desired to use Security Management for Microsoft Defender. When using Security Management for Microsoft Defender with Configuration Manager, endpoint security policy should be isolated to a single control plane. Controlling policy through both channels will create the opportunity for conflicts and undesired results.
+
 
 ## Create Azure AD Groups
 
