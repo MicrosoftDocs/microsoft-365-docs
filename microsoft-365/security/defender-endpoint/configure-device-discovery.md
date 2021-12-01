@@ -30,15 +30,10 @@ ms.technology: m365d
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 Discovery can be configured to be on standard or basic mode. Use the standard option to actively find devices in your network, which will better guarantee the discovery of endpoints and provide richer device classification.
 
-You can customize the list of devices that are used to perform standard discovery. You can either enable standard discovery on all the onboarded devices that also support this capability (currently - Windows 10 devices only) or select a subset or subsets of your devices by specifying their device tags.
-
-> [!IMPORTANT]
-> For preview, you'll first need to turn on the Preview features in Microsoft 365 Defender.
-> You can then access the device discovery configuration in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. The list of unmanaged devices and security recommendations will be available in both Microsoft 365 Defender and Microsoft 365 Defender portal, while the dashboard tiles will only be available in Microsoft 365 Defender portal.
+You can customize the list of devices that are used to perform standard discovery. You can either enable standard discovery on all the onboarded devices that also support this capability (currently - Windows 10 and Windows 2019 devices only) or select a subset or subsets of your devices by specifying their device tags.
 
 ## Set up device discovery
 
