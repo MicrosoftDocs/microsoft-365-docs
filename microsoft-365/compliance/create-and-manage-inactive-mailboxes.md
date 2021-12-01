@@ -1,5 +1,5 @@
 ---
-title: "Manage inactive mailboxes"
+title: "Create and manage inactive mailboxes"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,7 +20,7 @@ ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-description: "Manage inactive mailboxes that retain the contents of deleted mailboxes in Microsoft 365."
+description: "Create and manage inactive mailboxes that retain the contents of deleted mailboxes in Microsoft 365."
 ---
 
 # Create and manage inactive mailboxes
