@@ -18,6 +18,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- business-assist
 search.appverid:
 - BCS160
 - MET150
@@ -57,6 +58,9 @@ There are a few different ways you can access a mailbox once you've been given a
 > [!NOTE]
 > The permissions can be set up only within the current organization tenant. It is not possible to set up mailbox permissions with out of tenant users.
   
+> [!TIP]
+> If you need help with the steps in this topic, consider working with a Microsoft small business specialist. With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. [Learn more](https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070).
+
 ## Send email from another user's mailbox
 
 ::: moniker range="o365-worldwide"

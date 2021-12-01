@@ -22,6 +22,7 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 - AdminTemplateSet
+- business-assist
 search.appverid: MET150
 description: "Assign licenses depending on whether you want to assign product licenses to specific users or assign users licenses to a specific product."
 ms.date: 09/16/2021
@@ -79,6 +80,9 @@ When you use the **Licenses** page to assign licenses, you assign licenses for a
 6. When you're finished, select **Assign**, then select **Close**.
 
 If there's a conflict, a message displays, tells you what the problem is, and tells you how to fix it. For example, if you selected licenses that contain conflicting services, the error message says to review the services included with each license and try again.
+
+> [!TIP]
+> If you need help with the steps in this topic, consider working with a Microsoft small business specialist. With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. [Learn more](https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070).
 
 ## Change the apps and services a user has access to
 

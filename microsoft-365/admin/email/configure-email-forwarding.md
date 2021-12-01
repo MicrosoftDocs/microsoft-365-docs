@@ -18,6 +18,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- business-assist
 search.appverid:
 - BCS160
 - MET150
@@ -42,6 +43,9 @@ Before you set up email forwarding, note the following:
 - Once you set up email forwarding, only **new** emails sent to the  *from*  mailbox will be forwarded.
 
 - Email forwarding requires that the  *from*  account has a license. If you're setting up email forwarding because the user has left your organization, another option is to [convert their mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md). This way several people can access it. However, a shared mailbox cannot exceed 50GB.
+
+> [!TIP]
+> If you need help with the steps in this topic, consider working with a Microsoft small business specialist. With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. [Learn more](https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070).
 
 You must be an Exchange administrator or Global administrator in Microsoft 365 to do these steps. For more information, see the topic [About admin roles](../add-users/about-admin-roles.md).
 

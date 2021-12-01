@@ -18,6 +18,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- business-assist
 search.appverid:
 - BCS160
 - MET150
@@ -78,6 +79,9 @@ Before creating a shared mailbox, be sure to read [About shared mailboxes](about
 7. Select **Close**.
 
 You have a shared mailbox and it includes a shared calendar. Go on to the next step: [Block sign-in for the shared mailbox account](#block-sign-in-for-the-shared-mailbox-account).
+
+> [!TIP]
+> If you need help with the steps in this topic, consider working with a Microsoft small business specialist. With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. [Learn more](https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070).
 
 ## Which permissions should you use?
 

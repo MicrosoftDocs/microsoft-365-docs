@@ -21,6 +21,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - m365solution-removeemployee
+- business-assist
 search.appverid:
 - BCS160
 - MET150
@@ -45,6 +46,9 @@ To complete the steps in this series, you use these Microsoft 365 capabilities a
 |OneDrive and SharePoint |Give access to other users |
 |Outlook|Import pst files, add mailbox |
 |Active Directory|Remove users in hybrid environments |
+
+> [!TIP]
+> If you need help with the steps in this topic, consider working with a Microsoft small business specialist. With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. [Learn more](https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070).
 
 ## Solution: Remove a former employee
 

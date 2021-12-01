@@ -20,6 +20,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
 - AdminTemplateSet
+- business-assist
 search.appverid: MET150
 description: "Add file storage in your Microsoft 365 subscription. With extra file storage, you can store more content in SharePoint Online and OneDrive."
 ms.date: 04/02/2021
@@ -62,6 +63,9 @@ If you haven't yet bought extra storage for your subscription, you can do that.
 5. Select **Check out now**.
 6. On the **How does this look?** page, verify the number of gigabytes of storage you selected, review the pricing information, and then select **Next**.
 7. On the **Complete order** page, verify the total. If you need to make any changes, select **Edit order**. If the order requires a credit check, select the check box. When you're finished, select **Place order** \> **Go to Admin Home**.
+
+> [!TIP]
+> If you need help with the steps in this topic, consider working with a Microsoft small business specialist. With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. [Learn more](https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070).
 
 ## Increase or decrease storage
 

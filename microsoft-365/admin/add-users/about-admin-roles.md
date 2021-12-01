@@ -19,6 +19,7 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - adminvideo
+- business-assist
 search.appverid:
 - BCS160
 - MET150
@@ -49,6 +50,9 @@ Looking for the full list of detailed Azure AD role descriptions you can manage 
 Looking for the full list of detailed Intune role descriptions you can manage in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>?  Check out [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
 For more information on assigning roles in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, see [Assign admin roles](assign-admin-roles.md).
+
+> [!TIP]
+> If you need help with the steps in this topic, consider working with a Microsoft small business specialist. With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. [Learn more](https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070).
 
 ## Security guidelines for assigning roles
 

@@ -20,6 +20,7 @@ ms.custom:
 - commerce_billing
 - AdminTemplateSet
 - adminvideo
+- business-assist
 search.appverid: MET150
 description: "Buy business products or services from Microsoft by using an existing payment method or adding a new one in the Microsoft 365 admin center."
 ms.date: 04/02/2021
@@ -123,6 +124,9 @@ If a payment method is attached to any subscriptions or billing profiles, first 
 8. Select **Delete**.
 
 ## Troubleshoot payment methods
+
+> [!TIP]
+> If you need help with the steps in this topic, consider working with a Microsoft small business specialist. With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. [Learn more](https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070).
 
 | Issue | Troubleshooting steps |
 |:----------|:-----|

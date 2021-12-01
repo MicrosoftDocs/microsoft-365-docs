@@ -17,6 +17,7 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - AdminTemplateSet
+- business-assist
 search.appverid:
 - BCS160
 - MET150
@@ -67,6 +68,9 @@ You must have Global Admin rights to add email aliases to a user.
     
   
 7. **When the user replies, the *From* address will depend on her Outlook client. Outlook on the web will use the alias at which the email was received (we'll call this the ping-pong principle). Outlook desktop will use her primary email alias.** For example, let's say a message is sent to Sales@NodPublishers.com, and it arrives in Eliza's inbox. When Eliza replies to the message using Outlook desktop, her primary email address will appear as Eliza@NodPublishers.com, not Sales@NodPublishers.com.
+
+> [!TIP]
+> If you need help with the steps in this topic, consider working with a Microsoft small business specialist. With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. [Learn more](https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070).
     
 ## Did you get "A parameter cannot be found that matches parameter name EmailAddresses"?
 

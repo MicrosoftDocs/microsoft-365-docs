@@ -21,6 +21,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - adminvideo
+- business-assist
 search.appverid:
 - BCS160
 - MET150
@@ -93,8 +94,10 @@ If you forgot your password and can't sign in:
 
 - Or, [call Microsoft Support](../../business-video/get-help-support.md).
 
+> [!TIP]
+> If you need help with the steps in this topic, consider working with a Microsoft small business specialist. With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. [Learn more](https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070).
+
 ## Reset all business passwords for everyone in your organization at the same time
-<a name="bkmk_forgot"> </a>
 
 These steps work for a business with tens of users. If you have hundreds or thousands of users, see the next section on resetting passwords in bulk (maximum 40 users at a time).
   
@@ -109,7 +112,6 @@ These steps work for a business with tens of users. If you have hundreds or thou
 5. Enter an email address where you can receive the temporary passwords. You'll need to notify your users what their temporary passwords are.
   
 ## Reset business passwords in bulk
-<a name="bkmk_forgot"> </a>
 
 Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   

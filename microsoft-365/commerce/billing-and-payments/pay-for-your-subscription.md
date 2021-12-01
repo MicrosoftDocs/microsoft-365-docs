@@ -21,6 +21,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 - AdminTemplateSet
+- business-assist
 ms.date: 10/28/2021
 ---
 
@@ -61,6 +62,9 @@ If a credit check is required, you’re notified when you buy your subscription.
 > If you prefer, you can pay by electronic transfer between accounts. The Agency and account number are at the bottom of your invoice. You must enter your invoice number in the Transfer identification field.
 
 If you pay by invoice for your subscription, you get an email when your billing statement is ready to view. This email doesn’t contain a copy of your billing statement. However, you can choose to [receive a copy of your billing statement in email](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). Your billing statement includes details about your options for making a payment, and where to send it. If you enter a purchase order (PO) number when you buy a subscription, the number appears on your billing statement. For information about accessing billing statements, see [View your bill or invoice](view-your-bill-or-invoice.md).
+
+> [!TIP]
+> If you need help with the steps in this topic, consider working with a Microsoft small business specialist. With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. [Learn more](https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070).
 
 ## What if I have an outstanding balance?
 

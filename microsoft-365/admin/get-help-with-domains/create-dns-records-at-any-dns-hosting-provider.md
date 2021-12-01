@@ -22,6 +22,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- business-assist
 ---
 
 # Add DNS records to connect your domain
@@ -55,6 +56,9 @@ First, you need to prove you own the domain you want to add to Microsoft 365.
 4. Save the record, go back to the admin center, and then select **Verify**. It typically takes around 15 minutes for record changes to register, but sometimes it can take longer. Give it some time and a few tries to pick up the change.
 
 When Microsoft finds the correct TXT record, your domain is verified.
+
+> [!TIP]
+> If you need help with the steps in this topic, consider working with a Microsoft small business specialist. With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. [Learn more](https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070).
 
 ### Verify with an MX record
 

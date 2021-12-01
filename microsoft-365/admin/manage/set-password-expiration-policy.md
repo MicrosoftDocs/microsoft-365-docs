@@ -18,6 +18,7 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkMAC
+- business-assist
 search.appverid:
 - BCS160
 - MET150
@@ -60,6 +61,9 @@ Follow the steps below if you want to set user passwords to expire after a speci
 > [!IMPORTANT]
 > Password expiration notifications are no longer supported in the Microsoft 365 admin center or any Office apps.
   
+> [!TIP]
+> If you need help with the steps in this topic, consider working with a Microsoft small business specialist. With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. [Learn more](https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070).
+
 ## Important things you need to know about the password expiration feature
   
 People who only use the Outlook app won't be forced to reset their Microsoft 365 password until it expires in the cache. This can be several days after the actual expiration date. There's no workaround for this at the admin level.

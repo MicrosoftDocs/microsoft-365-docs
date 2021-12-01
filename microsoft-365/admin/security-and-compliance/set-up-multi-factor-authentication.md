@@ -18,6 +18,7 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - adminvideo
+- business-assist
 search.appverid:
 - BCS160
 - MET150
@@ -81,6 +82,9 @@ If you have been using [baseline Conditional Access policies](/azure/active-dire
 3. Go to the [Azure Active Directory - Properties page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
 4. At the bottom of the page, choose **Manage Security defaults**.
 5. Choose **Yes** to enable security defaults and **No** to disable security defaults, and then choose **Save**.
+
+> [!TIP]
+> If you need help with the steps in this topic, consider working with a Microsoft small business specialist. With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. [Learn more](https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070).
 
 ## Use Conditional Access policies
 

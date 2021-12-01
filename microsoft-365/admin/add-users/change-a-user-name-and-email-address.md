@@ -19,6 +19,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - adminvideo
+- business-assist
 search.appverid:
 - BCS160
 - MET150
@@ -117,6 +118,9 @@ You must be a [global admin](about-admin-roles.md) to complete these steps.
    - If they are using OneDrive, the URL to this location has changed. If they have OneNote notebooks in their OneDrive, they might need to close and reopen them in OneNote. If they have shared files from their OneDrive, the links to the files might not work and the user can reshare.
 
    - If their password changed too, they are prompted to enter the new password on their mobile device, or it won't sync.
+
+> [!TIP]
+> If you need help with the steps in this topic, consider working with a Microsoft small business specialist. With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. [Learn more](https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070).
 
 ## Change a user's display name
 

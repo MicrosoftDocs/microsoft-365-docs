@@ -18,6 +18,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - adminvideo
+- business-assist
 search.appverid:
 - MET150
 description: "Each team member needs a user account before they can sign in and access Microsoft 365 for business. Learn how to add users and assign licenses."
@@ -71,6 +72,9 @@ You must be a global, license, or a user admin to add users and assign licenses.
 4. In the **Assign product licenses** pane, select the location and the appropriate license for the user. If you don't have any licenses available, you can still add a user and buy additional licenses. Expand **Apps** and select or deselect apps to limit the apps the user has a license for. Select **Next**.
 5. In the **Optional settings** pane, expand **Roles** to make this user an admin. Expand **Profile info** to add additional information about the user.
 6. Select **Next**, review your new user's settings, make any changes you like, then select **Finish adding**, then **Close**.
+
+> [!TIP]
+> If you need help with the steps in this topic, consider working with a Microsoft small business specialist. With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. [Learn more](https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070).
 
 ## Add a user in the admin simplified view
 

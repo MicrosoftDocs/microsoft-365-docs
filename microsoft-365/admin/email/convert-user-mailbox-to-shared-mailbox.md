@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet
+- business-assist
 search.appverid:
 - BCS160
 - MET150
@@ -39,6 +40,9 @@ When you convert a user's mailbox to a shared mailbox, all of the existing email
 - Don't delete the old user's account. That's required to anchor the shared mailbox. If you've already deleted the user account, see [Convert the mailbox of a deleted user](#convert-the-mailbox-of-a-deleted-user).
 
 - The rules are intact after the mailbox is converted to a shared mailbox.
+
+> [!TIP]
+> If you need help with the steps in this topic, consider working with a Microsoft small business specialist. With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. [Learn more](https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070).
 
 ## Use the Classic Exchange admin center to convert a mailbox
  

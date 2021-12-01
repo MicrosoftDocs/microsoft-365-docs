@@ -21,6 +21,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - adminvideo
+- business-assist
 search.appverid:
 - MET150
 - MOE150
@@ -95,6 +96,9 @@ Need more detailed steps? See [Add an account](https://support.microsoft.com/off
 ## Multiple mailboxes: Admins can bulk import email, contacts, and calendars to Microsoft 365
 
 Depending on your source email system, you can choose from several bulk migration methods. Read [Ways to migrate multiple email accounts to Microsoft 365](/Exchange/mailbox-migration/mailbox-migration) to decide which method works for you.
+
+> [!TIP]
+> If you need help with the steps in this topic, consider working with a Microsoft small business specialist. With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. [Learn more](https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070).
 
 ## Related content
 

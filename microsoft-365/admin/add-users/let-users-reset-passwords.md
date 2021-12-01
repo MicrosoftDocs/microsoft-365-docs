@@ -21,6 +21,7 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - adminvideo
+- business-assist
 search.appverid:
 - BCS160
 - MET150
@@ -55,6 +56,9 @@ If you found this video helpful, check out the [complete training series for sma
 This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../../business-video/admin-center-overview.md)
 
 You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.
+
+> [!TIP]
+> If you need help with the steps in this topic, consider working with a Microsoft small business specialist. With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. [Learn more](https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070).
 
 ## Steps: Let people reset their own passwords
 

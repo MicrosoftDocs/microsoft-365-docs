@@ -21,6 +21,7 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
+- business-assist
 search.appverid:
 - BCS160
 - MET150
@@ -83,6 +84,9 @@ Follow these steps to add, set up, or continue setting up a domain.
     
 8. Select **Finish** - you're done!
 
+> [!TIP]
+> If you need help with the steps in this topic, consider working with a Microsoft small business specialist. With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use. [Learn more](https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070).
+
 ## Add or edit custom DNS records
 
 Follow the steps below to add a custom record for a website or 3rd party service.
@@ -98,6 +102,8 @@ Follow the steps below to add a custom record for a website or 3rd party service
 5. Select the type of DNS record you want to add and type the information for the new record.
     
 6. Select **Save**.
+
+
 
 ## Registrars with Domain Connect
 
