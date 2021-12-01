@@ -37,6 +37,8 @@
         href: mdb-respond-mitigate-threats.md
       - name: Review remediation actions
         href: mdb-review-remediation-actions.md
+      - name: View and use reports
+        href: mdb-reports.md
     - name: Manage settings and policies
       items: 
       - name: View and edit policies
