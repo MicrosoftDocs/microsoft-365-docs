@@ -29,5 +29,5 @@
 |TO-DO|✔|✔|N/A|N/A|✔|
 |VISIO|N/A|✔|N/A|✔|N/A|
 |WHITEBOARD|✔|✔|N/A|N/A|✔|
-|WORD|✔|✔|✔|✔|✔|
+|WORD|✔|✔|✔|✔|N/A|
 |YAMMER|✔|✔|N/A|Planned|N/A|
