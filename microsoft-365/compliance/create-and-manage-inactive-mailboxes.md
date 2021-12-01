@@ -31,9 +31,7 @@ For more information about inactive mailboxes, see [Learn about inactive mailbox
 
 ## Create an inactive mailbox
 
-Making a mailbox inactive involves two steps:
-1. Place a hold on the mailbox
-2. Delete the mailbox or corresponding user account. 
+Making a mailbox inactive requires a hold on the mailbox, and then deleting the mailbox or corresponding user account.
 
 To make a mailbox inactive, it must be assigned an Exchange Online Plan 2 license (or an Exchange Online Plan 1 license with an Exchange Online Archiving add-on license) so that a hold can be applied to the mailbox before it's deleted. After the user account is deleted, any Exchange Online license associated with the user account will be available to assign to a new user.
 
