@@ -129,28 +129,6 @@ However, if this MRM retention policy was applied to a mailbox before it went in
 
 Conversely, any archive policies (MRM retention tags configured with a **MoveToArchive** action) that are included in the MRM retention policy assigned to an inactive mailbox are ignored. That means items in an inactive mailbox that are tagged with an archive policy remain in the primary mailbox when the retention period expires. They're not moved to the archive mailbox or to the Recoverable Items folder in the archive mailbox. They will be retained indefinitely.
 
-## How to create an inactive mailbox
-
-To make a mailbox inactive, it must be assigned an Exchange Online Plan 2 license (or an Exchange Online Plan 1 license with an Exchange Online Archiving add-on license) so that a hold can be applied to the mailbox before it's deleted. After the user account is deleted, any Exchange Online license associated with the user account will be available to assign to a new user.
-
-The best way to delete a mailbox is to delete the corresponding user account in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. For information about deleting user accounts, see [Delete a user from your organization](../admin/add-users/delete-a-user.md).
-  
-> [!NOTE]
-> You can also delete the mailbox by using the **Remove-Mailbox** cmdlet in Exchange Online PowerShell. For more information, see [Delete or restore user mailboxes in Exchange Online](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes). 
-
-The following table summarizes the process of making an inactive mailbox for different retention scenarios.
-
-<br/>
-
-|To...|Do this...|Result|
-|---|---|---|
-|Retain mailbox content indefinitely after an employee leaves the organization|1. Apply Microsoft 365 retention settings with retain actions for the mailbox (a retention policy) or specific email items (one or more retention labels). <br /><br> 2. Wait for the retention settings to be applied. <br /><br> 3. Remove the user's Microsoft 365 account.|All content in the inactive mailbox that has retention settings applied, including items in the Recoverable Items folder, is retained indefinitely.|
-|Retain all mailbox content for a specific period after an employee leaves the organization and then delete the mailbox|1. Apply a Microsoft 365 retention policy to the mailbox with retention settings that retain and then delete items when the retention period expires. <br /><br> 2. Wait for the retention settings to be applied. <br /><br> 3. Remove the user's Microsoft 365 account.|When the retention period for a mailbox item expires, the item is moved to the Recoverable Items folder and then it's permanently deleted (purged) from the inactive mailbox when the deleted item retention period (for Exchange mailboxes) expires. The retention period of the Microsoft 365 retention policy is always based on the original date a mailbox item was received or created.|
-
-
-> [!NOTE]
-> If Microsoft 365 retention settings that are configured to retain, or retain and then delete content, is already applied to the mailbox or mailbox items, or a Litigation hold is already placed on a mailbox, or then all you have to do to create an inactive mailbox is delete the corresponding user account.
-
 ## Next steps
 
-After you make a mailbox inactive, you can perform various management tasks on inactive mailboxes that include changing their hold duration, and recovering, restoring, and deleting it. For more information, see [Manage inactive mailboxes](create-and-manage-inactive-mailboxes.md). 
+To make a mailbox inactive and manage it, such as changing the hold duration, recovering, restoring, and deleting it, see [Create and manage inactive mailboxes](create-and-manage-inactive-mailboxes.md).
