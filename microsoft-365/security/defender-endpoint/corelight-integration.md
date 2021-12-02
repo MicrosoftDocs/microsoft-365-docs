@@ -53,7 +53,8 @@ To enable the Corelight integration, you’ll need to take the following steps:
 
 ### Step 2: Provide permission for Corelight to send events to Microsoft 365 Defender
 
-You must be a global admin to grant Corelight permission to access resources in your organization. 
+> [!NOTE]
+> You must be a global admin to grant Corelight permission to access resources in your organization. 
 
 1. As a Tenant Global Administrator, go to:
 <https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true> to grant permission.
@@ -66,13 +67,15 @@ You must be a global admin to grant Corelight permission to access resources in 
 > [!NOTE]
 > To enable on a previous release that support sending data, you must first execute: `corelight-client configuration update --enable.adfiot 1`
 
+#### Enabling in the Corelight Sensor GUI
+
 1. In the Corelight Sensor GUI configuration section, select **Sensor** \> **Export**
-2. From the list, go to **Export to Kafka** and select the switch to turn in on
+2. From the list, go to **EXPORT TO KAFKA** and select the switch to turn it on
 
    ![Image of data sources](images/exporttokafka.png)
 
-3. Next, turn on **Export to Azure Defender for IOT**
-4. Add your tenant ID, noted in Step 1, to the configuration field
+3. Next, turn on **EXPORT TO AZURE DEFENDER FOR IOT**
+4. Enter your tenant ID, noted in Step 1, in the TENANT ID field
 
    ![Image of data sources](images/exporttodiot.png)
 
@@ -81,9 +84,11 @@ You must be a global admin to grant Corelight permission to access resources in 
    ![Image of data sources](images/corelightapply.png)
 
 > [!NOTE]
-> Note the configuration options in Kafka (other than Log Exclusion and Filters) should not be changed. Any changes made will be ignored.
+> Configuration options in Kafka (other than Log Exclusion and Filters) should not be changed. Any changes made will be ignored.
 
-Alternately, you can use the following command in the corelight-client:
+#### Enabling in the corelight-client
+
+You can turn on **EXPORT TO KAFKA** and **EXPORT TO AZURE DEFENDER FOR IOT** using the following command in the corelight-client:
 
 `corelight-client configuration update --bro.export.kafka.defender.enable true --bro.export.kafka.defender.tenant\_id <your tenant>`
 
@@ -92,7 +97,7 @@ If you're already using Kafka export, contact Corelight Support for an alternate
 To configure only sending the minimal set of logs:
 
 1. In the Corelight Sensor GUI, go to the Kafka section
-2. Go to the Zeek logs to exclude
+2. Go to Zeek logs to exclude
 3. Select **All**
 4. To delete, select **x** beside the following logs:  
     `dns  conn  files  http  ssl  ssh  x509  snmp  smtp  ftp  sip  dhcp  notice`
