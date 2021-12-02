@@ -2,8 +2,6 @@
 title: Enable SIEM integration in Microsoft Defender for Endpoint
 description: Enable SIEM integration to receive detections in your security information and event management (SIEM) solution.
 keywords: enable siem connector, siem, connector, security information and events
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
