@@ -43,7 +43,7 @@ To enable the Corelight integration, you’ll need to take the following steps:
 2. [Step 2: Provide permission for Corelight to send events to Microsoft 365 Defender](#provide-permission-for-corelight-to-send-events-to-microsoft-365-defender)
 3. [Step 3: Configure your Corelight appliance to send data to Microsoft 365 Defender](#configure-your-corelight-appliance-to-send-data-to-microsoft-365-defender)
 
-### Turn on Corelight as a data source
+### Step 1: Turn on Corelight as a data source
 
 1. In the navigation pane of the [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Settings** \> **Device discovery** \> **Data sources**.
 
@@ -51,16 +51,14 @@ To enable the Corelight integration, you’ll need to take the following steps:
 
 2. Select **Send Corelight data to M365D** and select **Save**.
 
-### Provide permission for Corelight to send events to Microsoft 365 Defender
+### Step 2: Provide permission for Corelight to send events to Microsoft 365 Defender
 
-You must be a global admin to grant Corelight permission to access resources in your organization.
-
-As a Tenant Global Administrator, go to:
+You must be a global admin to grant Corelight permission to access resources in your organization. As a Tenant Global Administrator, go to:
 <https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true> to grant permission.
 
 Next, go to [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Settings** \> **Microsoft 365 Defender**, and take note of the **Tenant ID**. You'll need this information when configuring Corelight.
 
-### Configure your Corelight appliance to send data to Microsoft 365 Defender
+### Step 3: Configure your Corelight appliance to send data to Microsoft 365 Defender
 
 **Applies to**: Corelight Sensor software v24.2 and later
 
