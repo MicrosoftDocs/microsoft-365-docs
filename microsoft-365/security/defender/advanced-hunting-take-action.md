@@ -57,10 +57,10 @@ To learn more about how these response actions are performed through Microsoft D
 ## Quarantine files
 You can deploy the *quarantine* action on files so that they are automatically quarantined when encountered. When selecting this action, you can choose between the following columns to identify which files in your query results to quarantine:
 
-- `SHA1` — In most advanced hunting tables, this is the SHA-1 of the file that was affected by the recorded action. For example, if a file was copied, this would be the copied file.
-- `InitiatingProcessSHA1` — In most advanced hunting tables, this is the file responsible for initiating the recorded action. For example, if a child process was launched, this would be the parent process. 
-- `SHA256` — This is the SHA-256 equivalent of the file identified by the `SHA1` column.
-- `InitiatingProcessSHA256` — This is the SHA-256 equivalent of the file identified by the `InitiatingProcessSHA1` column.
+- `SHA1`: In most advanced hunting tables, this column refers to the SHA-1 of the file that was affected by the recorded action. For example, if a file was copied, this affected file would be the copied file.
+- `InitiatingProcessSHA1`: In most advanced hunting tables, this column refers to the file responsible for initiating the recorded action. For example, if a child process was launched, this initiator file would be part of the parent process. 
+- `SHA256`: This column is the SHA-256 equivalent of the file identified by the `SHA1` column.
+- `InitiatingProcessSHA256`: This column is the SHA-256 equivalent of the file identified by the `InitiatingProcessSHA1` column.
 
 To learn more about how quarantine actions are taken and how files can be restored, [read about response actions on files](/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts).
 

@@ -70,7 +70,7 @@ Learn how to configure your Event Hub so that it can ingest events from Microsof
     Go **to Event Hubs \> Add** and select the pricing tier, throughput units and Auto-Inflate (requires standard pricing and under features) appropriate for the load you are expecting. For more information, see [Pricing - Event Hubs \| Microsoft Azure](https://azure.microsoft.com/pricing/details/event-hubs/)
 
     > [!NOTE]
-    > You can use an existing event hub, but the throughput and scaling are set at the namespace level so it is recommended to place an event hub in itsown namespace.
+    > You can use an existing event hub, but the throughput and scaling are set at the namespace level so it is recommended to place an event hub in its own namespace.
 
    :::image type="content" source="../../media/ebc4ca37c342ad1da75c4aee4018e51a.png" alt-text="An event hub section in Microsoft Azure portal" lightbox="../../media/ebc4ca37c342ad1da75c4aee4018e51a.png":::
 
@@ -139,7 +139,7 @@ For this Event Hub (not namespace) you will need to configure a Shared Access Po
 
     **Event-Hub Resource ID**: This value is the Event Hub Namespace Resource ID you recorded when you setup the Event Hub.
 
-    **Event-Hub name**: If you created an Event Hub inside your Event Hub Namespace, paste the Event Hub sname you recorded above.
+    **Event-Hub name**: If you created an Event Hub inside your Event Hub Namespace, paste the Event Hub name you recorded above.
 
     If you choose to let Microsoft 365 Defender to create Event Hubs per Event Types (Tables) for you, leave this field empty.
 
@@ -166,7 +166,7 @@ This will show you how many emails were received in the last hour joined across 
 
 :::image type="content" source="../../media/c305e57dc6f72fa9eb035943f244738e.png" alt-text="Advanced hunting page in Microsoft Azure portal" lightbox="../../media/c305e57dc6f72fa9eb035943f244738e.png":::
 
-Once you have verified there is data to export, you can view the Event Hub to verify that messages are incoming. This can take up to one hour.
+Once you have verified there is data to export, you can view the Event Hub page to verify that messages are incoming. This can take up to one hour.
 
 1. In Azure, go to **Event Hubs** \> Click on the **Namespace** \> **Event Hubs** \> Click on the **Event Hub**.
 1. Under **Overview**, scroll down and in the Messages graph you should see Incoming Messages. If you don't see any results, then there will be no messages
