@@ -17,7 +17,6 @@ audience: Admin
 
 <!--Proxy config-->
 
-
 ## Proxy configuration
 
 Microsoft Managed Desktop is a cloud-managed service. There are a set of endpoints the Microsoft Managed Desktop services needs to be able to reach. This section lists the endpoints that need to be allowed for the various aspects of the Microsoft Managed Desktop service. 
