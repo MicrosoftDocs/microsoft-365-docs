@@ -83,7 +83,7 @@ To enable the Corelight integration, you’ll need to take the following steps:
    ![Image of data sources](images/corelightapply.png)
 
 > [!NOTE]
-> Configuration options in Kafka (other than Log Exclusion and Filters) should not be changed. Any changes made will be ignored.
+> Configuration options in Kafka (excluding Log Exclusion and Filters) should not be changed. Any changes made will be ignored.
 
 #### Enabling in the corelight-client
 
@@ -102,7 +102,7 @@ To configure only sending the minimal set of logs:
 4. To delete, select **x** beside the following logs:  
     `dns  conn  files  http  ssl  ssh  x509  snmp  smtp  ftp  sip  dhcp  notice`
 
-    That way these logs will still flow to Microsoft. This list may be expanded over time.
+    That way these logs will still flow to Microsoft. This list may expand over time.
 
 5. Select **Apply Changes**
 
