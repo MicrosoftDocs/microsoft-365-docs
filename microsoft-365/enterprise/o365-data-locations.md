@@ -115,7 +115,7 @@ Regardless, Microsoft does not control or limit the Geo from which customers or 
 
   - Data residency for the Personal app is based on the user's mailbox location.
   
-  - Manager/Leader data region is determined by the primary region of the tenant, not individual users.
+  - The data region for Manager/Leader and Advanced is determined by the primary region of the tenant, not individual users.
 
 ## Data Center Locations
 
