@@ -2,7 +2,6 @@
 title: Manage Microsoft Defender Antivirus updates and apply baselines
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -16,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 10/19/2021
+ms.date: 11/08/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -24,7 +23,7 @@ ms.collection: M365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 
 Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Make sure to update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
@@ -77,11 +76,34 @@ For information how to update or install the platform update, see [Update for Wi
 
 All our updates contain
 
-- performance improvements;
-- serviceability improvements; and
-- integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)).
+- Performance improvements
+- Serviceability improvements
+- Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary> October-2021 (Platform: 4.18.2110.6| Engine: 1.1.18700.4)</summary>
+
+&ensp;Security intelligence update version: **1.353.3.0**<br/>
+&ensp;Released: **October 28th, 2021**<br/>
+&ensp;Platform: **4.18.2110.6**<br/>
+&ensp;Engine: **1.1.18700.4**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.18700.4
+Security intelligence update version: 1.353.3.0
+
+### What's new
+
+- Improvements to file transfer protocol (FTP) network traffic coverage
+- Fix to reduce Microsoft Defender CPU usage in Exchange Server running on Windows Server 2016
+- Fix for scan interruptions
+- Fix for alerts on blocked tampering attempts not appearing in Security Center
+- Improvements to tamper resilience in Microsoft Defender service
+
+### Known Issues
+No known issues
+<br/>
+</details><details>
 <summary> September-2021 (Platform: 4.18.2109.6 | Engine: 1.1.18600.4)</summary>
 
 &ensp;Security intelligence update version: **1.351.7.0**<br/>
@@ -91,7 +113,7 @@ All our updates contain
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
 Engine version: 1.1.18600.4
-Security intelligence update version: update
+Security intelligence update version: 1.351.7.0
 
 ### What's new
 - New delay ring for Microsoft Defender Antivirus engine and platform updates. Devices that opt into this ring will receive updates with a 48-hour delay. The new delay ring is suggested for critical environments only. See [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
@@ -120,14 +142,21 @@ No known issues
 ### Known Issues
 No known issues
 <br/>
-</details><details>
+</details>
+
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
+
+<details>
 <summary> July-2021 (Platform: 4.18.2107.4 | Engine: 1.1.18400.4)</summary>
 
 &ensp;Security intelligence update version: **1.345.13.0**<br/>
 &ensp;Released: **August 5, 2021**<br/>
 &ensp;Platform: **4.18.2107.4**<br/>
 &ensp;Engine: **1.1.18400.4**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 - Device control support added for Windows Portable Devices
@@ -137,13 +166,9 @@ No known issues
 
 ### Known Issues
 No known issues
+
 <br/>
-</details>
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.
-<details>
+</details><details>
 <summary> June-2021 (Platform: 4.18.2106.5 | Engine: 1.1.18300.4)</summary>
 
 &ensp;Security intelligence update version: **1.343.17.0**<br/>
@@ -559,6 +584,20 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2111.02</summary>
+
+&ensp;Package version: **1.1.2111.02**<br/>
+&ensp;Platform version: **4.18.2110.6**<br/>
+&ensp;Engine version: **1.1.18700.4**<br/>
+&ensp;Signature version: **1.353.613.0**<br/>
+
+### Fixes
+- Fixed an issue pertaining to localization files
+
+### Additional information
+- None
+<br/>
+</details><details>
 <summary>1.1.2110.01</summary>
 
 &ensp;Package version: **1.1.2110.01**<br/>

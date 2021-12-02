@@ -2,7 +2,6 @@
 title: Microsoft Defender Antivirus in Windows
 description: Learn how to manage, configure, and use Microsoft Defender Antivirus, built-in antimalware and antivirus protection.
 keywords: Microsoft Defender Antivirus, windows defender, antimalware, scep, system center endpoint protection, system center configuration manager, virus, malware, threat, detection, protection, security
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -86,6 +85,5 @@ It's important to keep Microsoft Defender Antivirus, or any antivirus/antimalwar
 
 ## See also
 
-- [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 - [Microsoft Defender Antivirus management and configuration](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Evaluate Microsoft Defender Antivirus protection](evaluate-microsoft-defender-antivirus.md)

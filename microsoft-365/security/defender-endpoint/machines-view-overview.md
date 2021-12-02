@@ -2,8 +2,6 @@
 title: View and organize the Microsoft Defender for Endpoint devices list
 description: Learn about the available features that you can use from the Devices list such as sorting, filtering, and exporting the list to enhance investigations.
 keywords: sort, filter, export, csv, device name, domain, last seen, internal IP, health state, active alerts, active malware detections, threat category, review alerts, network, connection, malware, type, password stealer, ransomware, exploit, threat, general malware, unwanted software
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -24,7 +22,8 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
@@ -77,9 +76,9 @@ If the exposure level says "No data available," there are a few reasons why this
 
 Select only the OS platforms you're interested in investigating.
 
-### Windows 10 versions
+### Windows versions
 
-Select only the Windows 10 versions you're interested in investigating.
+Select only the Windows versions you're interested in investigating.
 
 ### Health state
 

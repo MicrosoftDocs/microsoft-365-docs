@@ -33,20 +33,20 @@ ms.technology: m365d
 
 With the *go hunt* action, you can quickly investigate events and various entity types using powerful query-based [advanced hunting](advanced-hunting-overview.md) capabilities. This action automatically runs an advanced hunting query to find relevant information about the selected event or entity.
 
-The *go hunt* action is available in various sections of the security center whenever event or entity details are displayed. For example, you can use *go hunt* from the following sections:
+The *go hunt* action is available in various sections of the Defender for Cloud whenever event or entity details are displayed. For example, you can use *go hunt* from the following sections:
 
-- In the [incident page](investigate-incidents.md#summary), you can review details about users, devices, and many other entities associated with an incident. As you select an entity, you get additional information as well as various actions you could take on that entity. In the example below, a mailbox is selected, showing details about the mailbox as well the option to hunt for more information about the mailbox.
+- In the [incident page](investigate-incidents.md#summary), you can review details about users, devices, and many other entities associated with an incident. As you select an entity, you get additional information as well as various actions you could take on that entity. In the example below, a mailbox is selected, showing details about the mailbox as well as the option to hunt for more information about the mailbox.
 
-    ![Image showing mailbox details with the go hunt option.](../../media/mtp-ah/go-hunt-email.png)
+    :::image type="content" source="../../media/go-hunt-1-incident.png" alt-text="The **Mailboxes** page with the **Go hunt** option in the Microsoft 365 Defender portal " lightbox="../../media/go-hunt-1-incident.png":::
 
-- In the incident page, you can also access a list of entities under the evidence tab. Selecting one of those entities provides an option to quickly hunt for information about that entity.
+- In the incident page, you can also access a list of entities under the **Evidence** tab. Selecting one of those entities provides an option to quickly hunt for information about that entity.
 
-    ![Image showing selected file with the go hunt option in the Evidence tab.](../../media/mtp-ah/go-hunt-evidence-file.png)
+    :::image type="content" source="../../media/go-hunt-2-entity.png" alt-text="The Go hunt option for a piece of evidence in the **Incident** page in Microsoft 365 Defender portal" lightbox="../../media/go-hunt-2-entity.png":::
 
 
 - When viewing the timeline for a device, you can select an event in the timeline to view additional information about that event. Once an event is selected, you get the option to hunt for other relevant events in advanced hunting.
 
-    ![Image showing event details with the go hunt option.](../../media/mtp-ah/go-hunt-event.png)
+    :::image type="content" source="../../media/go-hunt-3-event.png" alt-text="The **Hunt for related events** option on an event's page in the **Timelines** tab in Microsoft 365 Defender portal" lightbox="../../media/go-hunt-3-event.png":::
 
 Selecting **Go hunt** or **Hunt for related events** passes different queries, depending on whether you've selected an entity or an event.
 

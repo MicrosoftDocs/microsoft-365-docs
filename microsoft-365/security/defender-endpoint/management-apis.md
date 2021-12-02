@@ -25,7 +25,8 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-mgt-apis-abovefoldlink)
@@ -37,7 +38,7 @@ Acknowledging that customer environments and structures can vary, Defender for E
 
 ## Endpoint onboarding and portal access
 
-Device onboarding is fully integrated into Microsoft Endpoint Manager and Microsoft Intune for client devices and Azure Defender for server devices, providing complete end-to-end experience of configuration, deployment, and monitoring. In addition, Microsoft Defender for Endpoint supports Group Policy and other third-party tools used for devices management.
+Device onboarding is fully integrated into Microsoft Endpoint Manager and Microsoft Intune for client devices and Microsoft Defender for server devices, providing complete end-to-end experience of configuration, deployment, and monitoring. In addition, Microsoft Defender for Endpoint supports Group Policy and other third-party tools used for devices management.
 
 Defender for Endpoint provides fine-grained control over what users with access to the portal can see and do through the flexibility of role-based access control (RBAC). The RBAC model supports all flavors of security teams structure:
 

@@ -2,7 +2,6 @@
 title: Apply Microsoft Defender AV protection updates to out of date endpoints
 description: Define when and how updates should be applied for endpoints that have not updated in a while.
 keywords: updates, protection, out-of-date, outdated, old, catch-up
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,7 +11,7 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
+ms.date: 10/18/2018
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
@@ -25,8 +24,8 @@ ms.collection: m365-security-compliance
 
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender Antivirus lets you define how long an endpoint can avoid an update or how many scans it can miss before it is required to update and scan itself. This is especially useful in environments where devices are not often connected to a corporate or external network, or devices that are not used on a daily basis.
 
@@ -73,7 +72,7 @@ Use the following cmdlets:
 Set-MpPreference -SignatureUpdateCatchupInterval
 ```
 
-See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)  and [Defender cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)  and [Defender Antivirus cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 ### Use Windows Management Instruction (WMI) to configure catch-up protection updates
 
@@ -151,7 +150,7 @@ Set-MpPreference -DisableCatchupQuickScan
 
 ```
 
-See [Use PowerShell cmdlets to manage Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)  and [Defender cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+See [Use PowerShell cmdlets to manage Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)  and [Defender Antivirus cmdlets](/powershell/module/defender/) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 ### Use Windows Management Instruction (WMI) to configure catch-up scans
 

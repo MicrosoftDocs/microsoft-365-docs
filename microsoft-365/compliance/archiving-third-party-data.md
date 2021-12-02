@@ -50,8 +50,10 @@ Click the link in the **Third-party data** column to go the step-by-step instruc
 |Third-party data  |Litigation hold|eDiscovery  |Retention settings  |Records management  |Communication compliance  |Insider risk management  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
 |[Bloomberg Message](archive-bloomberg-message-data.md)     |![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)||
+|[Epic EHR healthcare](import-epic-data.md) ||||||![Check mark](../media/checkmark.png)|
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
-|[Human resources (HR)](import-hr-data.md) ||||||![Check mark](../media/checkmark.png)
+|[Generic EHR healthcare](import-healthcare-data.md) ||||||![Check mark](../media/checkmark.png)|
+|[Human resources (HR)](import-hr-data.md) ||||||![Check mark](../media/checkmark.png)|
 |[ICE Chat](archive-icechat-data.md)     |![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[LinkedIn](archive-linkedin-data.md)   |![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
@@ -214,7 +216,7 @@ You can use this query in the **Keywords** box for a Content search, a search as
 
 ![Query to search for third-party data.](..\media\SearchThirdPartyData1.png)
 
-You can also use the `kind:externaldata` property:value pair to to narrow the scope of searches to third-party data. For example, to search for items imported from any third-party data source that contain the word *contoso* in the **Subject** property of the imported item, use the following query in the **Keywords** box:
+You can also use the `kind:externaldata` property:value pair to narrow the scope of searches to third-party data. For example, to search for items imported from any third-party data source that contain the word *contoso* in the **Subject** property of the imported item, use the following query in the **Keywords** box:
 
 ```powershell
 subject:contoso AND kind:externaldata
@@ -308,3 +310,4 @@ Some data connectors are available in the US Government cloud. The following sec
 Another option for importing and archiving third-party data is for your organization to work with a Microsoft Partner. If a third-party data type isn't supported by the data connectors available in the Microsoft compliance center, you can work with a partner who can provide a custom connector that will be configured to extract items from the third-party data source on a regular basis and then connect to the Microsoft cloud by a third-party API and import those items to Microsoft 365. The partner connector also converts the content of an item from the third-party data source to an email message and then imports it to a mailbox in Microsoft 365.
 
 For a list of partners that you can work with and the step-by-step process for this method, see [Work with a partner to archive third-party data in Microsoft 365](work-with-partner-to-archive-third-party-data.md).
+
