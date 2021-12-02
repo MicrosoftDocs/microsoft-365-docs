@@ -8,11 +8,13 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.custom: autoir
+ms.custom: 
+- autoir
+- admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
@@ -24,7 +26,7 @@ ms.technology: m365d
 
 Microsoft 365 Defender includes powerful [automated investigation and response capabilities](m365d-autoir.md) that can save your security operations team much time and effort. With [self-healing](m365d-autoir.md#how-automated-investigation-and-self-healing-works), these capabilities mimic the steps a security analyst would take to investigate and respond to threats, only faster, and with more ability to scale.
 
-This article describes how to configure automated investigation and response in Microsoft 365 Defender with these steps:
+This article describes how to configure automated investigation and response in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> with these steps:
 
 1. [Review the prerequisites](#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
 2. [Review or change the automation level for device groups](#review-or-change-the-automation-level-for-device-groups).
@@ -42,7 +44,7 @@ Then, after you're all set up, you can [view and manage remediation actions in t
 |Requirement|Details|
 |---|---|
 |Subscription requirements|One of these subscriptions: <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E3 with the Microsoft 365 E5 Security add-on</li><li>Microsoft 365 A3 with the Microsoft 365 A5 Security add-on</li><li>Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5</li></ul> <p> See [Microsoft 365 Defender licensing requirements](./prerequisites.md#licensing-requirements).|
-|Network requirements|<ul><li>[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) enabled</li><li>[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) configured</li><li>[Microsoft Defender for Identity integration](/cloud-app-security/mdi-integration)</li></ul>|
+|Network requirements|<ul><li>[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) enabled</li><li>[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) configured</li><li>[Microsoft Defender for Identity integration](/cloud-app-security/mdi-integration)</li></ul>|
 |Windows device requirements|<ul><li>Windows 11</li><li>Windows 10, version 1709 or later installed (See [Windows release information](/windows/release-information/))</li><li>The following threat protection services configured:<ul><li>[Microsoft Defender for Endpoint](../defender-endpoint/configure-endpoints.md)</li><li>[Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
 |Protection for email content and Office files|[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) configured|
 |Permissions|To configure automated investigation and response capabilities, you must have the Global Administrator or Security Administrator role assigned in either Azure Active Directory (<https://portal.azure.com>) or in the Microsoft 365 admin center (<https://admin.microsoft.com>). <p> To get the permissions needed to work with automated investigation and response capabilities, such as reviewing, approving, or rejecting pending actions, see [Required permissions for Action center tasks](m365d-action-center.md#required-permissions-for-action-center-tasks).|
@@ -68,7 +70,7 @@ Although certain alerts and security policies can trigger automated investigatio
 
 Security settings in Office 365 help protect email and content. To view or change these settings, follow the guidance in [Protect against threats](../office-365-security/protect-against-threats.md).
 
-1. In the Microsoft 365 Defender portal (<https://security.microsoft.com>), go to **Policies & Rules** \> **Threat policies**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Policies & Rules** \> **Threat policies**.
 
 2. Make sure all of the following policies are configured. To get help and recommendations, see [Protect against threats](/microsoft-365/security/office-365-security/protect-against-threats).
    - [Anti-malware](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
@@ -85,9 +87,9 @@ Security settings in Office 365 help protect email and content. To view or chang
 
 ## Make sure Microsoft 365 Defender is turned on
 
-:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP on.":::
+:::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="How to make sure Microsoft 365 Defender is enabled." lightbox="../../media/mtp-enable/mtp-on.png":::
 
-1. Sign in to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>
 
 2. In the navigation pane, look for **Incidents & Alerts**, **Hunting**, and **Action center** as shown in the preceding image.
    - If you see **Incidents & Alerts**, **Hunting**, and **Action center**, Microsoft 365 Defender is turned on. See the [Review or change the automation level for device groups](#review-or-change-the-automation-level-for-device-groups) section of this article.

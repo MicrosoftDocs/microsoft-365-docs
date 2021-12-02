@@ -9,7 +9,7 @@ ms.date: 04/05/2021
 audience: ITPro
 ms.topic: article
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
   - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
@@ -18,6 +18,7 @@ ms.collection:
   - m365initiative-defender-office365
 ms.custom:
   - seo-marvel-apr2020
+  - admindeeplinkDEFENDER
 description: Learn how to use DomainKeys Identified Mail (DKIM) with Microsoft 365 to ensure messages sent from your custom domain are trusted by the destination email systems.
 ms.technology: mdo
 ms.prod: m365-security
@@ -80,7 +81,7 @@ In this example, if you had only published an SPF TXT record for your domain, th
 
 ## Steps to Create, enable and disable DKIM from Microsoft 365 Defender portal
 
-All the accepted domains of your tenant will be shown in Microsoft 365 Defender portal under DKIM page. If you do not see it, add your accepted domain from [domains page](/microsoft-365/admin/setup/add-domain#add-a-domain).
+All the accepted domains of your tenant will be shown in the Microsoft 365 Defender portal under the DKIM page. If you do not see it, add your accepted domain from [domains page](/microsoft-365/admin/setup/add-domain#add-a-domain).
 Once your domain is added, follow the steps as shown below to configure DKIM.
 
 Step 1: Click on the domain you wish to configure DKIM on DKIM page (https://security.microsoft.com/dkimv2 or https://protection.office.com/dkimv2).
@@ -231,7 +232,7 @@ Once you have published the CNAME records in DNS, you are ready to enable DKIM s
 
 #### To enable DKIM signing for your custom domain in the Microsoft 365 Defender portal
 
-1. Open the Microsoft 365 Defender portal [using your work or school account](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> using your work or school account.
 
 2. Go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **DKIM** in the **Rules** section. Or, to go directly to the DKIM page, use <https://security.microsoft.com/dkimv2>.
 
@@ -331,7 +332,7 @@ Disabling the signing policy does not completely disable DKIM. After a period of
 ## Default behavior for DKIM and Microsoft 365
 <a name="DefaultDKIMbehavior"> </a>
 
-If you do not enable DKIM, Microsoft 365 automatically creates a 1024-bit DKIM public key for your Microsoft Online Email Routing Address (MOERA)/initial domain and the associated private key which we store internally in our datacenter. By default, Microsoft 365 uses a default signing configuration for domains that do not have a policy in place. This means that if you do not set up DKIM yourself, Microsoft 365 will use its default policy and keys it creates to enable DKIM for your domain.
+If you do not enable DKIM, Microsoft 365 automatically creates a 2048-bit DKIM public key for your Microsoft Online Email Routing Address (MOERA)/initial domain and the associated private key which we store internally in our datacenter. By default, Microsoft 365 uses a default signing configuration for domains that do not have a policy in place. This means that if you do not set up DKIM yourself, Microsoft 365 will use its default policy and keys it creates to enable DKIM for your domain.
 
 Also, if you disable DKIM signing on your custom domain after enabling it, after a period of time, Microsoft 365 will automatically apply the MOERA/initial domain policy for your custom domain.
 
@@ -389,10 +390,20 @@ For example, the DKIM record would look like this:
 ## Next steps: After you set up DKIM for Microsoft 365
 <a name="DKIMNextSteps"> </a>
 
-Although DKIM is designed to help prevent spoofing, DKIM works better with SPF and DMARC. Once you have set up DKIM, if you have not already set up SPF you should do so. For a quick introduction to SPF and to get it configured quickly, see [**Set up SPF in Microsoft 365 to help prevent spoofing**](set-up-spf-in-office-365-to-help-prevent-spoofing.md). For a more in-depth understanding of how Microsoft 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md). Next, see [**Use DMARC to validate email**](use-dmarc-to-validate-email.md). [Anti-spam message headers](anti-spam-message-headers.md) includes the syntax and header fields used by Microsoft 365 for DKIM checks.
+**Although DKIM is designed to help prevent spoofing, DKIM works better with SPF and DMARC.**
+
+Once you have set up DKIM, if you have not already set up SPF you should do so. For a quick introduction to SPF and to get it configured quickly, see [**Set up SPF in Microsoft 365 to help prevent spoofing**](set-up-spf-in-office-365-to-help-prevent-spoofing.md). For a more in-depth understanding of how Microsoft 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md). 
+
+Next, see [**Use DMARC to validate email**](use-dmarc-to-validate-email.md). [Anti-spam message headers](anti-spam-message-headers.md) includes the syntax and header fields used by Microsoft 365 for DKIM checks.
+
+**This test will validate** that the DKIM signing configuration has been configured correctly, and that the proper DNS entries have been published.
+
+<div class="nextstepaction">
+<p><a href="https://admin.microsoft.com/AdminPortal/?searchSolutions=DKIM#/homepage" data-linktype="external">Run Tests: DKIM</a></p>
+</div>
 
 ## More information
 
 Key rotation via PowerShell: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
 
-[Use DMARC to validate email](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)
+[Use DMARC to validate email](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)

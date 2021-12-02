@@ -6,7 +6,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: scheduler
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Setting up Scheduler for Microsoft 365."
 ---
 # Setting up Scheduler for Microsoft 365

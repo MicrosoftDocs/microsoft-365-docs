@@ -2,8 +2,8 @@
 title: Insider risk management notice templates
 description: Learn about insider risk management notice templates in Microsoft 365
 keywords: Microsoft 365, insider risk management, risk management, compliance
-localization_priority: Normal
-ms.prod: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -12,6 +12,7 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Insider risk management notice templates

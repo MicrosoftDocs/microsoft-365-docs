@@ -9,7 +9,7 @@ ms.date: 08/14/2020
 audience: ITPro
 ms.topic: overview
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: 

@@ -2,21 +2,20 @@
 title: Set up Microsoft Defender for Endpoint deployment
 description: Learn how to set up the deployment for Microsoft Defender for Endpoint
 keywords: deploy, setup, licensing validation, tenant configuration, network configuration
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
   - M365-security-compliance
   - m365solution-endpointprotect
   - m365solution-scenario
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
 ---
@@ -27,7 +26,7 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -77,7 +76,7 @@ To gain access into which licenses are provisioned to your company, and to check
 
 Onboarding to Microsoft Defender for Endpoint is easy. From the navigation menu, select any item under the Endpoints section, or any Microsoft 365 Defender feature such as Incidents, Hunting, Action center, or Threat analytics to initiate the onboarding process.
 
-From a web browser, navigate to the [Microsoft 365 Security Center](https://security.microsoft.com).
+From a web browser, navigate to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 ## Network configuration
 
@@ -158,8 +157,7 @@ Down-Level devices include Windows 7 SP1 and Windows 8.1 workstations as well as
 
 ### Proxy Service URLs
 
-URLs that include v20 in them are only needed if you have Windows 10, version 1803 or later devices. For example, `us-v20.events.data.microsoft.com` is only
-needed if the device is on Windows 10, version 1803 or later.
+URLs that include v20 in them are only needed if you have Windows 10, version 1803 or Windows 11 devices. For example, `us-v20.events.data.microsoft.com` is only needed if the device is on Windows 10, version 1803 or Windows 11.
 
 If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender for Endpoint sensor is connecting from system context, make sure anonymous traffic is permitted in the listed URLs.
 

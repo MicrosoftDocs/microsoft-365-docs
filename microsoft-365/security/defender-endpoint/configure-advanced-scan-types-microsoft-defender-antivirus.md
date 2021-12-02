@@ -2,19 +2,18 @@
 title: Configure scanning options for Microsoft Defender Antivirus
 description: You can configure Microsoft Defender AV to scan email storage files, back-up or reparse points, network files, and archived files (such as .zip files).
 keywords: advanced scans, scanning, email, archive, zip, rar, archive, reparse scanning
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
-ms.date: 09/14/2021
+ms.date: 10/19/2021
 ms.collection: M365-security-compliance
 ms.topic: how-to
 ---
@@ -22,8 +21,8 @@ ms.topic: how-to
 # Configure Microsoft Defender Antivirus scanning options
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 ## Use Microsoft Intune to configure scanning options
 
@@ -71,7 +70,7 @@ For details on configuring Microsoft Endpoint Manager (current branch), see [How
 For more information on how to use PowerShell with Microsoft Defender Antivirus, see
 
 - [Manage Microsoft Defender Antivirus with PowerShell cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md)
-- [Defender cmdlets](/powershell/module/defender/)
+- [Microsoft Defender Antivirus cmdlets](/powershell/module/defender/)
 
 ## Use WMI to configure scanning options
 

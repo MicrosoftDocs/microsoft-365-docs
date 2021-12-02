@@ -9,7 +9,7 @@ ms.date: 12/13/2017
 audience: End User
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61

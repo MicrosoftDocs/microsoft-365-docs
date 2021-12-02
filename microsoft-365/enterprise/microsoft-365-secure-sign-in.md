@@ -9,7 +9,7 @@ ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise

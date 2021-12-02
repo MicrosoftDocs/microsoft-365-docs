@@ -12,7 +12,7 @@ f1.keywords:
   - NOCSH
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -26,7 +26,7 @@ ms.technology: m365d
 # Evaluate Microsoft 365 Defender for Endpoint overview
 
 **Applies to:**
-
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Microsoft 365 Defender
 
 ![Microsoft 365 Defender evaluation and piloting process.](../../media/defender/m365-defender-eval-process.png)

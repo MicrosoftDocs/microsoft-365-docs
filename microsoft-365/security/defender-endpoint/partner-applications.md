@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -24,7 +24,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -49,7 +49,7 @@ Microsoft Defender for Endpoint seamlessly integrates with existing security sol
 Logo|Partner name|Description
 :---|:---|:---
 ![Image of AttackIQ logo.](images/attackiq-logo.png)|[AttackIQ Platform](https://go.microsoft.com/fwlink/?linkid=2103502)|AttackIQ Platform validates Defender for Endpoint is configured properly by launching continuous attacks safely on production assets
-![Image of Azure Sentinel logo.](images/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Stream alerts from Microsoft Defender for Endpoint into Azure Sentinel
+![Image of Microsoft Sentinel logo.](images/sentinel-logo.png)|[AzureSentinel](https://go.microsoft.com/fwlink/?linkid=2135705)|Stream alerts from Microsoft Defender for Endpoint into Microsoft Sentinel
 ![Image of Cymulate logo.](images/cymulate-logo.png)|[Cymulate](https://go.microsoft.com/fwlink/?linkid=2135574)|Correlate Defender for Endpoint findings with simulated attacks to validate accurate detection and effective response actions
 ![Image of Elastic security logo.](images/elastic-security-logo.png)|[Elastic Security](https://go.microsoft.com/fwlink/?linkid=2139303)|Elastic Security is a free and open solution for preventing, detecting, and responding to threats
 ![Image of IBM QRadar logo.](images/ibm-qradar-logo.png)|[IBM QRadar](https://go.microsoft.com/fwlink/?linkid=2113903)|Configure IBM QRadar to collect detections from Defender for Endpoint
@@ -106,7 +106,7 @@ Logo|Partner name|Description
 Logo|Partner name|Description
 :---|:---|:---
 ![Image of Cyren Web Filter logo.](images/cyren-logo.png)|[Cyren Web Filter](https://go.microsoft.com/fwlink/?linkid=2108221)|Enhance your Defender for Endpoint with advanced Web Filtering
-![Image of Morphisec logo.](images/morphisec-logo.png)|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)|Provides Moving Target Defense-powered advanced threat prevention. Integrates forensics data directly into WD Security Center dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information
+![Image of Morphisec logo.](images/morphisec-logo.png)|[Morphisec](https://go.microsoft.com/fwlink/?linkid=2086215)|Provides Moving Target Defense-powered advanced threat prevention. Integrates forensics data directly into WD Defender for Cloud dashboards to help prioritize alerts, determine device at-risk score and visualize full attack timeline including internal memory information
 ![Image of THOR Cloud logo.](images/nextron-thor-logo.png)|[THOR Cloud](https://go.microsoft.com/fwlink/?linkid=862988)|Provides on-demand live forensics scans using a signature base with focus on persistent threats
 
 ## SIEM integration

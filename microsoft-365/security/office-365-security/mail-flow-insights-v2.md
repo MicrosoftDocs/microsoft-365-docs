@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: overview
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Admins can learn about the insights and reports that are available in the Mail flow dashboard in the Security & Compliance Center.
 ms.custom: seo-marvel-apr2020

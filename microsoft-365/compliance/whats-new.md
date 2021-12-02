@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - MOE150
@@ -36,16 +36,93 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 >
 > And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
 
+## October 2021
+
+### App governance
+
+- [App governance add-on for Defender for Cloud Apps has released to general availability](/cloud-app-security/app-governance-manage-app-governance). App governance documentation has moved to join the Defender for Cloud Apps documentation.
+
+### Compliance & service assurance
+
+- [Service assurance](/compliance) - quarterly review content updates for certifications and statements of applicability)
+Datacenter asset management
+  - Datacenter architecture and infrastructure
+  - Datacenter business continuity and disaster recovery
+  - Datacenter environmental safeguards
+  - Datacenter physical access security
+  - Microsoft 365 SDL compliance program
+  - Microsoft 365 service engineer access control
+  - Risk assessment guide for MS Cloud
+
+### Data Loss Prevention
+
+- [Learn about Data Loss Prevention](endpoint-dlp-learn-about.md) was updated for macOS support and advanced classification; updated for creating a custom DLP policy to audit activity for all supported file types.
+- [Get started with Microsoft 365 Endpoint data loss prevention](endpoint-dlp-getting-started.md) was updated for macOS support and advanced classification.
+- [Using Endpoint data loss prevention](endpoint-dlp-using.md) was updated for macOS support and advanced classification.
+- [Data Loss Prevention policy tips reference](dlp-policy-tips-reference.md) was updated for macOS support and advanced classification.
+- [Onboard macOS devices into Microsoft 365 (preview)](device-onboarding-macos-overview.md) was updated for macOS support and advanced classification.
+- Added the following new pages for onboarding devices:
+  - [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Intune (preview)](device-onboarding-offboarding-macos-intune.md)
+  - [Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-intune-mde.md)
+  - [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro (preview)](device-onboarding-offboarding-macos-jamfpro.md)
+  - [Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-jamfpro-mde.md)
+
+### eDiscovery
+
+- [Collect cloud attachments in Advanced eDiscovery](advanced-ediscovery-cloud-attachments.md) in addition to collecting the latest version of a cloud attachment, you can collect the version that was shared in an email message or Teams chat conversation; collecting the shared version is made possible by the new capability of automatically applying a retention label to cloud attachments.
+- [Set up historical versions in Advanced eDiscovery](advanced-ediscovery-historical-versions.md) new functionality that indexes all versions of documents stored on a SharePoint site for search; this means that document versions that contain content that match a collection query are returned in the search results.
+
+### Encryption
+
+- [Use end-to-end encryption for one-to-one Microsoft Teams calls (Public preview)](/microsoftteams/teams-end-to-end-encryption) New content for the public preview.
+
+### Information governance
+
+- [Set up a connector to import Epic EHR audit data](import-epic-data.md) new connector lets you import data from Epic electronic healthcare records system to support new general patient data misuse scenario for insider risk management.
+- [Set up a connector to import healthcare EHR audit data](import-healthcare-data.md) new connector lets you import data from an electronic healthcare records system to support new general patient data misuse scenario for insider risk management.
+
+### Retention and records management
+- [Adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) are released in preview for retention policies and retention label policies.
+- You can now [automatically apply a retention label based on a sensitivity label](apply-retention-labels-automatically.md#identify-files-and-emails-that-have-a-sensitivity-label).
+- File Plan has a new [import process](file-plan-manager.md#import-retention-labels-into-your-file-plan).
+- [Common settings for retention policies and retention label policies](retention-settings.md): New article for detailed information about configuring adaptive scopes and other settings in both retention policies and retention label policies.
+
+### Sensitive Information Types
+
+- [Learn about named entities (preview)](named-entities-learn.md) new content for named entities.
+- [Use named entities in your data loss prevention policies (preview)](named-entities-use.md) new content on using named entities.
+
+### Sensitivity labels
+
+- [Default labels and default policies](mip-easy-trials.md) are rolling out to eligible customers.
+
 ## September 2021
 
 ### App governance
 
-- [Streamlined app governance get started information](https://docs.microsoft.com/microsoft-365/compliance/app-governance-get-started) has a changed workflow and added new links to public preview signup
-- [New detection alerts definition](https://docs.microsoft.com/microsoft-365/compliance/app-governance-anomaly-detection-alerts#app-made-high-volume-of-importance-mail-read-and-created-inbox-rule) added (updated; added new definition for collection alerts)
+- [Streamlined app governance get started information](app-governance-get-started.md) has a changed workflow and added new links to public preview signup
+- [New detection alerts definition](app-governance-anomaly-detection-alerts.md#app-made-high-volume-of-importance-mail-read-and-created-inbox-rule) added (updated; added new definition for collection alerts)
 
 ### Auditing
 
 - [Turn auditing on or off](turn-audit-log-search-on-or-off.md) added new section about how changes to the auditing status in an organization are themselves audited; this means that audit records are logged when auditing is turned on or turned off; you can search the Exchange admin audit log for these audit records
+
+### Communication compliance
+
+- [Communication compliance with SIEM solutions](communication-compliance-siem.md) guidance for communication compliance integration with SIEM solutions)
+
+### Compliance offerings
+
+- [Multi-Tier Cloud Security (MTCS)](/compliance/regulatory/offering-mtcs-singapore) Standard for Singapore updates for Dynamics 365 coverage
+- [Payment Card Industry (PCI)](/compliance/regulatory/offering-pci-dss) Data Security Standard (DSS) updates for SharePoint Online coverage
+- [U.S. Section 508](/compliance/regulatory/offering-section-508-vpats) new client software guidance
+- [Web Content Accessibility Guidelines](/compliance/regulatory/offering-wcag-2-1) new client software guidance
+
+### Compliance & service assurance
+
+- [Service assurance](/compliance/) quarterly review content updates for certifications and statements of applicability
+  - Data-bearing device destruction
+  - DDOS attacks
 
 ### Data connectors
 
@@ -55,6 +132,19 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 ### eDiscovery
 
 - [Use the KQL editor to build search queries](ediscovery-kql-editor.md) public preview of a new way to create search queries in Content search, Core eDiscovery, and Advanced eDiscovery; the KQL editor provides autocompletion for supported searchable properties and conditions and displays lists of supported values for standard properties and conditions; the KQL editor also provides error detection and suggestions for fixes of potential errors in search queries
+
+### Information barriers
+
+- [Get started with information barriers](information-barriers-policies.md#step-6-information-barriers-modes) new preview feature for information barriers modes
+- [Information barriers with Microsoft Teams](/microsoftteams/information-barriers-in-teams) new preview feature for information barriers modes
+- [Information barriers with OneDrive](/onedrive/information-barriers) new preview feature for information barriers modes
+- [Information barriers with SharePoint Online](/sharepoint/information-barriers) new preview feature for information barriers modes
+
+### Insider risk management
+
+- [Get started with insider risk management](insider-risk-management-configure.md#recommended-actions-preview) new preview feature for getting started recommended actions
+- [Investigate insider risk activities](insider-risk-management-activities.md#get-help-managing-your-insider-risk-alert-queue) new 'Get help managing your insider risk alert queue' guidance section
+- [Get started with insider risk management settings](insider-risk-management-settings.md#admin-notifications) new Admin notifications settings preview feature
 
 ### Retention and records management
 - [Multi-staged disposition review](disposition.md) is now generally available (GA), with new [auditing events](search-the-audit-log-in-security-and-compliance.md#disposition-review-activities). Multi-staged disposition review lets you specify up to five consecutive stages of disposition review for a retention label, and reviewers can add others users to their disposition review stage. You can also customize the email notifications and reminders.
@@ -72,7 +162,7 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 - [Expanded entries for alert insights](app-governance-anomaly-detection-alerts.md#collection-alerts). New entries were added to describe additional alert insights now available in app governance.
 
 ### Communication compliance
-- [Communication compliance feature reference](communication-compliance-feature-reference.md) added new preview feature support for modern attachments scanning in Teams private chats and channels.
+- [Communication compliance channels](communication-compliance-channels.md) added new preview feature support for modern attachments scanning in Teams private chats and channels.
 
 ### Compliance & service assurance
 
@@ -112,8 +202,8 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ### Advanced eDiscovery
 
-- [Advanced eDiscovery workflow for content in Microsoft Teams using large cases](teams-workflow-in-advanced-ediscovery.md) added an end-to-end workflow of managing Teams content in Advanced eDiscovery; includes details about the preview of the new conversation transcript functionality.
-- [Use large cases in Advanced eDiscovery](advanced-ediscovery-large-cases.md) added a preview of new large case format that extends review set and case limits and supports conversation transcripts for Teams and Yammer chat conversations.
+- [Advanced eDiscovery workflow for content in Microsoft Teams](teams-workflow-in-advanced-ediscovery.md) added an end-to-end workflow of managing Teams content in Advanced eDiscovery; includes details about the preview of the new conversation transcript functionality.
+- [Use the new case format in Advanced eDiscovery](advanced-ediscovery-new-case-format.md) added a preview of the new case format that extends review set and case limits and supports conversation transcripts for Teams and Yammer chat conversations.
 
 ### App governance
 
@@ -158,7 +248,7 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ### Privacy management
 
-- Microsoft [privacy management](privacy-management.md) has gone into public preview. Privacy management helps your organization understand and manage the personal data in your Microsoft 365 environment, remediate potential privacy risks, and fulfill subject rights requests.
+- Microsoft [privacy management](/privacy/solutions/privacymanagement/privacy-management) has gone into public preview. Privacy management helps your organization understand and manage the personal data in your Microsoft 365 environment, remediate potential privacy risks, and fulfill subject rights requests.
 
 ### Retention and records management
 - In preview: [Retention policies for Teams](create-retention-policies.md#retention-policy-for-teams-locations) now supports private channels as a new Teams location when you create or edit a retention policy
@@ -224,38 +314,3 @@ The following pages were added:
 - In preview, a new setting for **authentication context** is now available when you configure a [sensitivity label for groups and sites](sensitivity-labels-teams-groups-sites.md). This option works in conjunction with Azure AD Conditional Access policies to enforce more stringent conditions when users access SharePoint sites that have the label applied. Make sure you read the [dependencies and limitations](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) before you configure this setting.
 - [Auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) that are configured just for Exchange now support sensitivity labels that apply encryption with **Let users assign permissions** for the Do Not Forward or Encrypt-Only options.
 - [Mandatory labeling](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) is now generally available for all Office apps, across all platforms.
-
-## April 2021
-
-### Advanced eDiscovery
-
-- [Limits in Advanced eDiscovery](/microsoft-365/compliance/limits-ediscovery20#export-limits---final-export-out-of-review-set). Organizations can now export up to 5 million items or 500 MB, whichever is smaller, in a single export of items from a review set.
-
-### Data Classification
-
-- [Labeling activities that are available in Activity explorer](/microsoft-365/compliance/data-classification-activity-explorer-available-events)
-
-### Data connectors
-
-- [Set up a connector to archive Cisco Jabber on Oracle data](/microsoft-365/compliance/archive-ciscojabberonoracle-data)
-- [Set up a connector to archive Cisco Jabber on PostgreSQL data](/microsoft-365/compliance/archive-ciscojabberonpostgresql-data)
-
-### Data Loss Prevention
-
-- New topic for [Data loss prevention policy tips reference](/microsoft-365/compliance/dlp-policy-tips-reference).
-- New topic for [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp).
-- New topic for [Get started with the data loss prevention alert dashboard](/microsoft-365/compliance/dlp-alerts-dashboard-get-started).
-
-### Retention policies and retention label policies
-
-- The Microsoft 365 Groups location now supports applying the retention settings to just Microsoft 365 mailboxes or just the connected SharePoint sites by using the [Set-RetentionCompliancePolicy PowerShell](/powershell/module/exchange/set-retentioncompliancepolicy) cmdlet with the *Applications* parameter.
-
-### Sensitivity labels
-
-Outlook releases and updates:
-
-- [Different settings for the default label and mandatory labeling](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) are now supported for built-in labeling. Previously, these settings were supported only by the AIP unified labeling client.
-- [Encrypt-Only](encryption-sensitivity-labels.md#let-users-assign-permissions) is now supported by macOS, iOS, and Android.
-- [Mandatory labeling](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) is rolling out to the remaining platforms.
-- [Dynamic markings with all variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables) are supported across all Outlook clients.
-

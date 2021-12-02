@@ -11,14 +11,16 @@ ms.topic: how-to
 f1_keywords: 
   - 'ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers'
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
   - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection: 
   - M365-security-compliance
 description: Admins can learn how to remove users from the Restricted users page in the Microsoft 365 Defender portal. Users are added to the Restricted users portal for sending outbound spam, typically as a result of account compromise.
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -34,7 +36,7 @@ ms.prod: m365-security
 
 If a user exceeds one of the outbound sending limits as specified in [the service limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) or in [outbound spam policies](configure-the-outbound-spam-policy.md), the user is restricted from sending email, but they can still receive email.
 
-The user is added to the **Restricted users** page in the Microsoft 365 Defender portal. When they try to send email, the message is returned in a non-delivery report (also known as an NDR or bounce messages) with the error code [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) and the following text:
+The user is added to the **Restricted users** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. When they try to send email, the message is returned in a non-delivery report (also known as an NDR or bounce messages) with the error code [5.1.8](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-1-8-in-exchange-online) and the following text:
 
 > "Your message couldn't be delivered because you weren't recognized as a valid sender. The most common reason for this is that
 > your email address is suspected of sending spam and it's no longer allowed to send email.  Contact  your email admin for
@@ -44,7 +46,7 @@ Admins can remove users from the Restricted users page in the Microsoft 365 Defe
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Restricted users** page, use <https://security.microsoft.com/restrictedusers>.
+- You open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. To go directly to the **Restricted users** page, use <https://security.microsoft.com/restrictedusers>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -64,7 +66,7 @@ Admins can remove users from the Restricted users page in the Microsoft 365 Defe
 
 ## Use the Microsoft 365 Defender portal to remove a user from the Restricted users list
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Review** \> **Restricted users**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Review** \> **Restricted users**.
 
 2. On the **Restricted users** page, find and select the user that you want to unblock by clicking on the user.
 

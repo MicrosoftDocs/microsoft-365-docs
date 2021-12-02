@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
-localization_priority: normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 - SPO_Content

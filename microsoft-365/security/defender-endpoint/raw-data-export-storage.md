@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -25,7 +25,7 @@ ms.custom: api
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
@@ -86,7 +86,7 @@ In order to get the data types for our events properties do the following:
 
 2. Run the following query to get the data types mapping for each event:
 
-   ```
+   ```kusto
    {EventType}
    | getschema
    | project ColumnName, ColumnType
@@ -94,7 +94,7 @@ In order to get the data types for our events properties do the following:
 
 - Here is an example for Device Info event:
 
-  ![Image of event hub resource ID3.](images/machine-info-datatype-example.png)
+  ![Image of event hub resource ID3.](images/data-types-mapping-query.png)
 
 ## Related topics
 

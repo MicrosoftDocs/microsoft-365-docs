@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -28,7 +28,8 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -49,8 +50,7 @@ Cancel an already launched machine action that are not yet in final state (compl
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more,
-including how to choose permissions, see [Get
-started](apis-intro.md).
+including how to choose permissions, see [Get started](apis-intro.md).
 
 |Permission type|Permission|Permission display name|
 |---|---|---|
@@ -78,9 +78,7 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 ## Response
 
-If successful, this method returns 200, Ok response code with a Machine Action
-entity. If machine action entity with the specified id was not found - 404 Not
-Found.
+If successful, this method returns 200, OK response code with a Machine Action entity. If machine action entity with the specified id was not found - 404 Not Found.
 
 ## Example
 

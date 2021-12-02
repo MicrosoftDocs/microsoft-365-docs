@@ -9,7 +9,7 @@ ms.date: 8/2/2018
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOE150

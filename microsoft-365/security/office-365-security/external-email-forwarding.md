@@ -1,19 +1,19 @@
 ---
-title: Configuring and controlling external email forwarding, Automatic forwarding, 5.7.520 Access Denied, disable external forwarding, Your administrator has disabled external forwarding, outbound anti-spam policy
+title: Configuring and controlling external email forwarding in Microsoft 365.
 f1.keywords: 
   - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 
+ms.date: 11/17/2021
 audience: ITPro
 ms.topic: overview
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 
 ms.custom: 
   - seo-marvel-apr2020
-description: .
+description: This article covers topics including external email forwarding, Automatic forwarding, 5.7.520 Access Denied messages, disabling external forwarding, 'Your administrator has disabled external forwarding' messages, as well as outbound anti-spam policy.
 ms.technology: mdo
 ms.prod: m365-security
 ---
