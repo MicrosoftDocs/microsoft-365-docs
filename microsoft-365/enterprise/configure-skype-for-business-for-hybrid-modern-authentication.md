@@ -174,4 +174,4 @@ You should also hold down the CTRL key at the same time you right-click the icon
 
 [Link back to the Modern Authentication overview](hybrid-modern-auth-overview.md).
 
-Do you need to know how to use Modern Authentication (ADAL) for your Skype for Business clients? We've got steps [here](./hybrid-modern-auth-overview.md).
+Do you need to know how to use Modern Authentication for your Skype for Business clients? We've got steps [here](./hybrid-modern-auth-overview.md).
