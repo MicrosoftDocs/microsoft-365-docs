@@ -71,7 +71,7 @@ A global admin is required to grant permission to Corelight to access resources 
 1. In the Corelight Sensor GUI configuration section, select **Sensor** \> **Export**
 2. Go to **Export to Kafka** in the list and enable it (switch should be green)
 
-    ![Image of data sources](images/enable-corelight.png)
+    ![Image of data sources](images/exporttokafka.png)
 
 3. Next, go to the **Export to Azure Defender for IOT** section and enable it
 4. Add your tenant ID, noted in Step 1 to the configuration field
@@ -79,31 +79,42 @@ A global admin is required to grant permission to Corelight to access resources 
 > [!NOTE]
 > Note the configuration options in Kafka (other than Log Exclusion and Filters) should not be changed. Any changes made will be ignored.
 
-    ![Image of data sources](images/image1.png)
+    ![Image of data sources](images/exporttodiot.png)
 
 5. Select **Apply Changes**
 
-    ![Image of data sources](images/image2.png)
+    ![Image of data sources](images/corelightapply.png)
 
-Alternately you can do with corelight-client:
+Alternately, you can use the corelight-client by doing the following:
 
-corelight-client configuration update --bro.export.kafka.defender.enable true --bro.export.kafka.defender.tenant\_id &lt;your tenant id&gt;
+`corelight-client configuration update --bro.export.kafka.defender.enable true --bro.export.kafka.defender.tenant\_id <your tenant>`
 
 If you are already using Kafka export, contact Corelight Support for an alternate configuration.
 
-If you would prefer to send the minimal set of logs, scroll up within the Kafka section to Zeek logs to exclude. Click on All. Then delete (hit the x next to the log names in the field) the following logs:
+To configure only sending the minimal set of logs:
 
-dns conn files http ssl ssh x509 snmp smtp ftp sip dhcp notice
-
+1. In the Corelight Sensor GUI go to the Kafka section
+2. Go to the Zeek logs to exclude
+3. Select **All**
+4. To delete, select **x** beside the following logs:  
+    - dns
+    - conn
+    - files
+    - http
+    - ssl
+    - ssh
+    - x509
+    - snmp
+    - smtp
+    - ftp
+    - sip
+    - dhcp
+    - notice
 That way these logs will still flow to Microsoft. Note that this list may be expanded over time.
+5. Select **Apply Changes**.
 
-Again, *Apply Changes*.
-
-Note that you will need internet connectivity for your sensor to reach both the Defender and Corelight cloud servicess for the solution to work.
-
-Step 2 – Provide Corelight with permission to send events to M365D on behalf of your tenant - Waiting for details
-
-Step 3 – configure your Corelight appliance to send data to M365D - Waiting for details
+> [!NOTE]
+>Note that you will need internet connectivity for your sensor to reach both the Defender and Corelight cloud services for the solution to work.
 
 ## See also
 
