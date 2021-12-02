@@ -49,7 +49,7 @@ This article explains how to create an Azure AD application, get an access token
 
 2. Navigate to **Azure Active Directory** \> **App registrations** \> **New registration**. 
 
-   ![Image of Microsoft Azure and navigation to application registration.](images/atp-azure-new-app2.png)
+    :::image type="content" alt-text="Image of Microsoft Azure and navigation to application registration." source="images/atp-azure-new-app2.png" lightbox="images/atp-azure-new-app2.png":::
 
 3. In the registration form, choose a name for your application, and then select **Register**.
 
@@ -58,11 +58,11 @@ This article explains how to create an Azure AD application, get an access token
    > [!NOTE]
    > *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
 
-   ![add permission.](images/add-permission.png)
+   :::image type="content" alt-text="add permission." source="images/add-permission.png" lightbox="images/add-permission.png":::
 
    - Select **Application permissions** \> **Alert.Read.All**, and then select **Add permissions**.
 
-   ![app permission.](images/application-permissions.png)
+   :::image type="content" alt-text="app permission." source="images/application-permissions.png" lightbox="images/application-permissions.png":::
 
      You need to select the relevant permissions. 'Read All Alerts' is only an example. For instance:
 
@@ -86,7 +86,7 @@ This article explains how to create an Azure AD application, get an access token
 
 7. Write down your application ID and your tenant ID. On your application page, go to **Overview** and copy the following.
 
-   ![Image of created app id.](images/app-and-tenant-ids.png)
+   :::image type="content" alt-text="Image of created app id." source="images/app-and-tenant-ids.png" lightbox="images/app-and-tenant-ids.png":::
 
 8. **For Microsoft Defender for Endpoint Partners only**. Set your app to be multi-tenanted (available in all tenants after consent). This is **required** for third-party apps (for example, if you create an app that is intended to run in multiple customers' tenant). This is **not required** if you create a service that you want to run in your tenant only (for example, if you create an application for your own usage that will only interact with your own data). To set your app to be multi-tenanted:
 
@@ -196,7 +196,7 @@ Ensure that you got the correct token:
 1. Validate that you get a 'roles' claim with the desired permissions
 1. In the following image, you can see a decoded token acquired from an app with permissions to all of  Microsoft Defender for Endpoint's roles:
 
-![Image of token validation.](images/webapp-decoded-token.png)
+:::image type="content" alt-text="Image of token validation." source="images/webapp-decoded-token.png" lightbox="images/webapp-decoded-token.png":::
 
 ## Use the token to access Microsoft Defender for Endpoint API
 

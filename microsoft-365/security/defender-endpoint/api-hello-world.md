@@ -54,7 +54,7 @@ For the Application registration stage, you must have a **Global administrator**
 
 2. Navigate to **Azure Active Directory** \> **App registrations** \> **New registration**.
 
-   ![Image of Microsoft Azure and navigation to application registration.](images/atp-azure-new-app2.png)
+   :::image type="content" alt-text="Image of Microsoft Azure and navigation to application registration." source="images/atp-azure-new-app2.png" lightbox="images/atp-azure-new-app2.png":::
 
 3. In the registration form, choose a name for your application and then click **Register**.
 
@@ -65,11 +65,11 @@ For the Application registration stage, you must have a **Global administrator**
      > [!NOTE]
      > WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   ![Image of API access and API selection1.](images/add-permission.png)
+   :::image type="content" alt-text="Image of API access and API selection1." source="images/add-permission.png" lightbox="images/add-permission.png":::
 
    - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**
 
-   ![Image of API access and API selection2.](images/application-permissions.png)
+   :::image type="content" alt-text="Image of API access and API selection2." source="images/application-permissions.png" lightbox="images/application-permissions.png":::
 
    > [!IMPORTANT]
    > You need to select the relevant permissions. 'Read All Alerts' is only an example!
@@ -138,7 +138,7 @@ Done! You have successfully registered an application!
   - Paste in the top box.
   - Look for the "roles" section. Find the Alert.Read.All role.
 
-  ![Image jwt.ms.](images/api-jwt-ms.png)
+  :::image type="content" alt-text="Image jwt.ms." source="images/api-jwt-ms.png" lightbox="images/api-jwt-ms.png":::
 
 ### Lets get the Alerts!
 

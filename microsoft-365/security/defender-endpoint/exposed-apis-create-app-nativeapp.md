@@ -61,7 +61,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
 2. Navigate to **Azure Active Directory** \> **App registrations** \> **New registration**.
 
-   ![Image of Microsoft Azure and navigation to application registration.](images/atp-azure-new-app2.png)
+   :::image type="content" alt-text="Image of Microsoft Azure and navigation to application registration." source="images/atp-azure-new-app2.png" lightbox="images/atp-azure-new-app2.png":::
 
 3. When the **Register an application** page appears, enter your application's registration information:
    - **Name** - Enter a meaningful application name that will be displayed to users of the app.
@@ -91,11 +91,11 @@ This page explains how to create an AAD application, get an access token to Micr
    - On your application page, select **API Permissions** \> **Add permission** \> **APIs my organization uses** > type **WindowsDefenderATP** and select on **WindowsDefenderATP**.
    - **Note**: *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
 
-     ![add permission.](images/add-permission.png)
+     :::image type="content" alt-text="add permission." source="images/add-permission.png" lightbox="images/add-permission.png":::
 
    - Choose **Delegated permissions** \> **Alert.Read** > select **Add permissions**
 
-      ![application permissions.](images/application-permissions-public-client.png)
+      :::image type="content" alt-text="application permissions." source="images/application-permissions-public-client.png" lightbox="images/application-permissions-public-client.png":::
 
    - **Important note**: Select the relevant permissions. Read alerts is only an example.
 
@@ -115,7 +115,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
    - On your application page, go to **Overview** and copy the following information:
 
-   ![Image of created app id.](images/app-and-tenant-ids.png)
+    :::image type="content" alt-text="Image of created app id." source="images/app-and-tenant-ids.png" lightbox="images/app-and-tenant-ids.png":::
 
 ## Get an access token
 
@@ -172,7 +172,7 @@ Verify to make sure you got a correct token:
 - Validate you get a 'scp' claim with the desired app permissions
 - In the screenshot below you can see a decoded token acquired from the app in the tutorial:
 
-![Image of token validation.](images/nativeapp-decoded-token.png)
+:::image type="content" alt-text="Image of token validation." source="images/nativeapp-decoded-token.png" lightbox="images/nativeapp-decoded-token.png":::
 
 ## Use the token to access Microsoft Defender for Endpoint API
 
