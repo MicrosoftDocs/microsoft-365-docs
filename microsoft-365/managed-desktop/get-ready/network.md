@@ -13,10 +13,9 @@ manager: laurawi
 ms.topic: article
 audience: Admin
 ---
-
 #  Network configuration for Microsoft Managed Desktop
 
-<!--Proxy config -->
+<!--Proxy config-->
 
 
 ## Proxy configuration
