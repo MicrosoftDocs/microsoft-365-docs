@@ -39,9 +39,9 @@ With this data source enabled, all events from Corelight network appliances are 
 
 To enable the Corelight integration, you’ll need to take the following steps:
 
-1. Turn on Corelight as a data source
-2. Provide permission for Corelight to send events to Microsoft 365 Defender
-3. Configure your Corelight appliance to send data to Microsoft 365 Defender
+1. [Step 1: Turn on Corelight as a data source](Turn-on-Corelight-as-a-data-source)
+2. [Step 2: Provide permission for Corelight to send events to Microsoft 365 Defender](Provide-permission-for-Corelight-to-send-events-to-Microsoft-365-Defender)
+3. [Step 3: Configure your Corelight appliance to send data to Microsoft 365 Defender](Configure-your-Corelight-appliance-to-send-data-to-Microsoft-365-Defender)
 
 ### Turn on Corelight as a data source
 
@@ -58,7 +58,7 @@ You must be a global admin to grant Corelight permission to access resources in 
 As a Tenant Global Administrator, go to:
 <https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true> to grant permission.
 
-Next, go to [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Settings** \> **Microsoft 365 Defender**, and take note of the **Tenant ID**
+Next, go to [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Settings** \> **Microsoft 365 Defender**, and take note of the **Tenant ID**. You'll need this information when configuring Corelight.
 
 ### Configure your Corelight appliance to send data to Microsoft 365 Defender
 
