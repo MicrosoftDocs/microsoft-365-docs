@@ -96,19 +96,8 @@ To configure only sending the minimal set of logs:
 2. Go to the Zeek logs to exclude
 3. Select **All**
 4. To delete, select **x** beside the following logs:  
-    - dns
-    - conn
-    - files
-    - http
-    - ssl
-    - ssh
-    - x509
-    - snmp
-    - smtp
-    - ftp
-    - sip
-    - dhcp
-    - notice
+    `dns  conn  files  http  ssl  ssh  x509  snmp  smtp  ftp  sip  dhcp  notice`
+
 That way these logs will still flow to Microsoft. Note that this list may be expanded over time.
 5. Select **Apply Changes**.
 
