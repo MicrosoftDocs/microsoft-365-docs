@@ -40,7 +40,7 @@ Before you can set up Windows devices for Microsoft 365 Business Premium users, 
   
 If you have Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your Microsoft 365 Business Premium subscription entitles you to a Windows 10 upgrade.
   
-For more information on how to upgrade Windows devices to Windows 10 Pro Creators Update, follow the steps in this topic: [Upgrade Windows devices to Windows Pro Creators Update](../../business-video/upgrade.md).
+For more information on how to upgrade Windows devices to Windows 10 Pro Creators Update, follow the steps in this topic: [Upgrade Windows devices to Windows Pro Creators Update](https://support.microsoft.com/windows/71ecc746-0f81-a4c0-bd4b-0db8559e0796).
   
 See [Verify the device is connected to Azure AD](#verify-the-device-is-connected-to-azure-ad) to verify you have the upgrade, or to make sure the upgrade worked.
 

@@ -1,6 +1,46 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/business-video/track-info-lists.md",
+      "redirect_url": "https://support.microsoft.com/office/b5e0b7f8-136f-425f-a108-699586f8e8bd",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/upgrade.md",
+      "redirect_url": "https://support.microsoft.com/windows/71ecc746-0f81-a4c0-bd4b-0db8559e0796",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/plan-event.md",
+      "redirect_url": "https://support.microsoft.com/office/1c38ad8d-9201-42de-8a7b-1e68fcef1769",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/work-from-anywhere.md",
+      "redirect_url": "https://support.microsoft.com/office/164946c8-a47a-470e-a0b4-feb12a2eea04",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/collab-outlook-teams.md",
+      "redirect_url": "https://support.microsoft.com/office/422bf3aa-9ae8-46f1-83a2-e65720e1a34d",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/overview-file-sharing.md",
+      "redirect_url": "https://support.microsoft.com/office/72f26d6c-bf9e-432c-8b96-e3c2437f5b65",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/find-help-answers.md",
+      "redirect_url": "/microsoft-365/admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/create-web-site.md",
+      "redirect_url": "/microsoft-365/admin/setup/domains-faq",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/admin/work-with-customers/index.yml",
       "redirect_url": "/microsoft-365/admin",
       "redirect_document_id": false

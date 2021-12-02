@@ -36,7 +36,7 @@ The first step in setting up your organization with Microsoft 365 for business i
 
 - Windows devices must be running Windows 7 Professional, Windows 8 Pro, or Windows 8.1 Pro.
     
-    If you're running Windows 10 Home, then you must **purchase** Windows 10 Pro. See [upgrade Windows 10 Home to Windows 10 Pro](../../business-video/upgrade.md) for instructions. 
+    If you're running Windows 10 Home, then you must **purchase** Windows 10 Pro. See [upgrade Windows 10 Home to Windows 10 Pro](https://support.microsoft.com/windows/71ecc746-0f81-a4c0-bd4b-0db8559e0796) for instructions.
     
 - Remove devices from mobile management solutions (Mobile Iron, AirWatch, and so on). You'll enroll all the people in your organization in Microsoft 365 for business mobile management.
     

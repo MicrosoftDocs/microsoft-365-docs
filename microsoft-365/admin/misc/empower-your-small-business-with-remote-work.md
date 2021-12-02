@@ -50,7 +50,7 @@ For more information, see [Host online meetings](../../business-video/start-and-
 
 Put your business documents in the cloud and share them securely, both internally and externally.
 
-For more information, see this [Overview of sharing business files](../../business-video/overview-file-sharing.md) and [Upload and share files](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12).
+For more information, see this [Overview of sharing business files](https://support.microsoft.com/office/72f26d6c-bf9e-432c-8b96-e3c2437f5b65) and [Upload and share files](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12).
 
 ### Collaborate with customers
 

@@ -36,22 +36,22 @@ productDirectory:
     - title: Set up computers
       imageSrc: https://docs.microsoft.com/office/media/icons/device-desktop-download-blue.svg
       summary:  Install Office, set up email, migrate files...
-      url: upgrade.md
+      url: https://support.microsoft.com/windows/71ecc746-0f81-a4c0-bd4b-0db8559e0796
     # Card
     - title: Set up mobile devices
       imageSrc: https://docs.microsoft.com/office/media/icons/device-mobile-download-blue.svg
       summary: Install Office apps on mobile devices.
-      url: work-from-anywhere.md
+      url: https://support.microsoft.com/office/164946c8-a47a-470e-a0b4-feb12a2eea04
     # Card
     - title: Collaborate with other people
       imageSrc: https://docs.microsoft.com/office/media/icons/collaborate-blue.svg
       summary: Work with employees and customers in Teams.
-      url: collab-outlook-teams.md
+      url: https://support.microsoft.com/office/422bf3aa-9ae8-46f1-83a2-e65720e1a34d
     # Card
     - title: Store and share files
       imageSrc: https://docs.microsoft.com/office/media/icons/cloud-storage-folder-blue.svg
       summary: Store files securely and access from anywhere.
-      url: overview-file-sharing.md
+      url: https://support.microsoft.com/office/72f26d6c-bf9e-432c-8b96-e3c2437f5b65
     # Card
     - title: Set up Business Voice
       imageSrc: https://docs.microsoft.com/office/media/icons/call-phone-blue.svg

@@ -20,7 +20,6 @@ These infographics represent best practices for working and collaborating in Mic
 
 Find more [downloadable Office infographics](https://support.microsoft.com/office/great-ways-to-work-with-office-6fe70269-b9a4-4ef0-a96e-7a5858b3bd5a) on the [Microsoft 365 training](https://support.microsoft.com/training) site.
 
-<a name="securitytips"></a>
 ## Security tips
 
 Download this infographic with security tips for the members of your team - whether your team is a business or nonprofit organization, such as a political campaign:
@@ -29,16 +28,14 @@ Download this infographic with security tips for the members of your team - whet
 |:-----|:-----|
 |[![The help protect your campaign info graphic.](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) <br/> [Download as a PDF](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) \ [Download as a PowerPoint](../campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)| Share these best practices for keeping your organization's information secure. This infographic was created to support the staff of political campaigns because these are targeted by sophisticated hackers. You are welcome to use the PowerPoint to customize this infographic for your own organization. Related article: [How the security recommendations for Microsoft 365 affect your users](../campaigns/m365-campaigns-users.md)|
 
-<a name="sharefiles"></a>
 ## Share your business files
 
 Download an infographic to get a quick overview of ways to share your business files:
   
 | Item | Description |
 |:-----|:-----|
-|[![Thumb image for Share your business files infographic.](../media/solutions-architecture-center/m365-smbscenarios-shareyourfiles-square.png)](https://go.microsoft.com/fwlink/?linkid=2079435) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2079435) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) | Use these best practices when you share and collaborate on business files so you can keep your information secure and protected. Related article: [Overview of sharing business files](../business-video/overview-file-sharing.md)|
+|[![Thumb image for Share your business files infographic.](../media/solutions-architecture-center/m365-smbscenarios-shareyourfiles-square.png)](https://go.microsoft.com/fwlink/?linkid=2079435) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2079435) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) | Use these best practices when you share and collaborate on business files so you can keep your information secure and protected. Related article: [Overview of sharing business files](https://support.microsoft.com/office/72f26d6c-bf9e-432c-8b96-e3c2437f5b65)|
 
-<a name="onlinemeeting"></a>
 ## Host online meetings
 
 Download an infographic to get a quick overview of how to join or host an online meeting with Microsoft Teams:
@@ -47,16 +44,14 @@ Download an infographic to get a quick overview of how to join or host an online
 |:-----|:-----|
 |[![Thumb image for Host online meetings infographic.](../media/solutions-architecture-center/m365-smbscenarios-hostteammeetings-square.png)](https://go.microsoft.com/fwlink/?linkid=2078712) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2078712) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515) | A quick introduction to how to host or join an online meeting with Microsoft Teams. Related article: [Host online meetings for your business](../business-video/overview-online-meetings.md)|
 
-<a name="workfromanywhere"></a>
 ## Work from anywhere
 
 Download an infographic to get tips for working from anywhere:
 
 | Item | Description |
 |:-----|:-----|
-|[![Thumb image for Work from anywhere infographic.](../media/solutions-architecture-center/m365-smbscenarios-workfromanywhere-square.png)](https://go.microsoft.com/fwlink/?linkid=2079451) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2079451) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455) | See tips for how to set up your mobile devices to allow you to work from anywhere. Related article: [Work from anywhere](../business-video/work-from-anywhere.md)|
+|[![Thumb image for Work from anywhere infographic.](../media/solutions-architecture-center/m365-smbscenarios-workfromanywhere-square.png)](https://go.microsoft.com/fwlink/?linkid=2079451) <br/> [Download as a PDF](https://go.microsoft.com/fwlink/?linkid=2079451) \ [Download as a PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079455) | See tips for how to set up your mobile devices to allow you to work from anywhere. Related article: [Work from anywhere](https://support.microsoft.com/office/164946c8-a47a-470e-a0b4-feb12a2eea04)|
 
-<a name="surveywithforms"></a>
 ## Survey customers with Forms
 
 Download an infographic to find out how to survey customers (internal or external) with Microsoft Forms:
