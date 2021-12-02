@@ -49,7 +49,7 @@ The link to incident feature lets you add advanced hunting query results to a ne
     
     Or select **Link to an existing incident** to add the selected records to an existing one. Choose the related incident from the dropdown list of existing incidents. You can also enter the first few characters of the incident name or ID to find the existing incident. 
 
-    :::image type="content" source="../../media/link-to-incident-3-link-to-existing.png" alt-text="An example of **Alert details** section in the **Link to incident** pane in the Microsoft 365 Defender portal":::
+    :::image type="content" source="../../media/link-to-incident-3-link-to-existing.png" alt-text="An example of **Alert details** section in the **Link to incident** pane in the Microsoft 365 Defender portal" lightbox="../../media/link-to-incident-3-link-to-existing.png":::
 
 4. For either selection, provide the following details, then select **Next**:
       - **Alert title** - provide a descriptive title for the results that your incident responders can understand. This becomes the alert title.
