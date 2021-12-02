@@ -17,7 +17,7 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 10/18/2021
+ms.date: 12/02/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -132,7 +132,7 @@ For more information about releases, see [Windows 10 release information](/windo
 
 :::image type="content" source="../../media/mde-turn-tamperprotectionon.png" alt-text="Turn tamper protection on in the Microsoft 365 Defender portal.":::
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. Choose **Settings** \> **Endpoints**.
 
