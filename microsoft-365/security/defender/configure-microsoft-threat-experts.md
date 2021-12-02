@@ -48,11 +48,11 @@ If you already have Microsoft Defender for Endpoint and Microsoft 365 Defender, 
 
 3. Enter your name and email address so that Microsoft can contact you about your application.
 
-    :::image type="content" source="../../media/../../media/mte/mte-apply.png" alt-text="Microsoft Threat Experts application page in Microsoft 365 Defender portal" lightbox="../../media/mte/mte-apply.png":::
+    :::image type="content" source="../../media/mte/mte-apply.png" alt-text="Microsoft Threat Experts application page in Microsoft 365 Defender portal" lightbox="../../media/mte/mte-apply.png":::
   
 4. Read the [privacy statement](https://privacy.microsoft.com/en-us/privacystatement), then select **Submit** when you're done. You'll receive a welcome email once your application is approved.
 
-    :::image type="content" source="../../media/mte/mte-applicationconfirmation.png" alt-text="Microsoft Threat Experts application confirmation in Microsoft 365 Defender portal" lightbox="../../media/mte/mte-applicationconfirmation.png:::
+    :::image type="content" source="../../media/mte/mte-applicationconfirmation.png" alt-text="Microsoft Threat Experts application confirmation in Microsoft 365 Defender portal" lightbox="../../media/mte/mte-applicationconfirmation.png":::
 
 5. After you receive your welcome email, you'll automatically start receiving targeted attack notifications.
 
