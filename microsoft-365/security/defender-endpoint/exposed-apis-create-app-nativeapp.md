@@ -76,7 +76,9 @@ This page explains how to create an AAD application, get an access token to Micr
      |**Accounts in any organizational directory and personal Microsoft accounts**|Select this option to target the widest set of customers. <p> This option maps to Azure AD multi-tenant and personal Microsoft accounts. <p> If you registered the app as Azure AD multi-tenant and personal Microsoft accounts, you cannot change this in the UI. Instead, you must use the application manifest editor to change the supported account types.|
 
    - **Redirect URI (optional)** - Select the type of app you're building, **Web** or **Public client (mobile & desktop)**, and then enter the redirect URI (or reply URL) for your application.
+
      - For web applications, provide the base URL of your app. For example, `http://localhost:31544` might be the URL for a web app running on your local machine. Users would use this URL to sign in to a web client application.
+
      - For public client applications, provide the URI used by Azure AD to return token responses. Enter a value specific to your application, such as `myapp://auth`.
 
      To see specific examples for web applications or native applications, check out our [quickstarts](/azure/active-directory/develop/#quickstarts).
@@ -99,7 +101,7 @@ This page explains how to create an AAD application, get an access token to Micr
    > [!IMPORTANT]
    > Select the relevant permissions. Read alerts is only an example.
 
-     For instance,
+     For example:
 
      - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
      - To [isolate a device](isolate-machine.md), select 'Isolate machine' permission
@@ -114,13 +116,13 @@ This page explains how to create an AAD application, get an access token to Micr
 
 5. Write down your application ID and your tenant ID:
 
-   - On your application page, go to **Overview** and copy the following information:
+    On your application page, go to **Overview** and copy the following information:
 
     :::image type="content" alt-text="Image of created app id." source="images/app-and-tenant-ids.png" lightbox="images/app-and-tenant-ids.png":::
 
 ## Get an access token
 
-For more information on AAD tokens, see [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+For more information on AAD tokens, see [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 ### Using C\#
 

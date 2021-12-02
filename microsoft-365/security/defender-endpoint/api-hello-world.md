@@ -65,19 +65,19 @@ For the Application registration stage, you must have a **Global administrator**
      > [!NOTE]
      > WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   :::image type="content" alt-text="Image of API access and API selection1." source="images/add-permission.png" lightbox="images/add-permission.png":::
+     :::image type="content" alt-text="Image of API access and API selection1." source="images/add-permission.png" lightbox="images/add-permission.png":::
 
    - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**
 
-   :::image type="content" alt-text="Image of API access and API selection2." source="images/application-permissions.png" lightbox="images/application-permissions.png":::
+     :::image type="content" alt-text="Image of API access and API selection2." source="images/application-permissions.png" lightbox="images/application-permissions.png":::
 
-   > [!IMPORTANT]
-   > You need to select the relevant permissions. 'Read All Alerts' is only an example!
+     > [!IMPORTANT]
+     > You need to select the relevant permissions. 'Read All Alerts' is only an example!
 
-     For instance,
+     For example:
 
-     - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
-     - To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission
+     - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission.
+     - To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission.
      - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 
 5. Click **Grant consent**
@@ -89,7 +89,7 @@ For the Application registration stage, you must have a **Global administrator**
 
 6. Add a secret to the application.
 
-   - Click **Certificates & secrets**, add description to the secret and click **Add**.
+    Click **Certificates & secrets**, add description to the secret and click **Add**.
 
     > [!IMPORTANT]
     > After click Add, **copy the generated secret value**. You won't be able to retrieve after you leave!
@@ -98,7 +98,7 @@ For the Application registration stage, you must have a **Global administrator**
 
 7. Write down your application ID and your tenant ID:
 
-   - On your application page, go to **Overview** and copy the following:
+   On your application page, go to **Overview** and copy the following:
 
    ![Image of created app id.](images/app-and-tenant-ids.png)
 

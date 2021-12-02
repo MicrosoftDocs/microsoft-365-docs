@@ -60,11 +60,11 @@ This article explains how to create an Azure AD application, get an access token
 
    :::image type="content" alt-text="add permission." source="images/add-permission.png" lightbox="images/add-permission.png":::
 
-   - Select **Application permissions** \> **Alert.Read.All**, and then select **Add permissions**.
+   Select **Application permissions** \> **Alert.Read.All**, and then select **Add permissions**.
 
    :::image type="content" alt-text="app permission." source="images/application-permissions.png" lightbox="images/application-permissions.png":::
 
-     You need to select the relevant permissions. 'Read All Alerts' is only an example. For instance:
+     You need to select the relevant permissions. 'Read All Alerts' is only an example. For example:
 
      - To [run advanced queries](run-advanced-query-api.md), select the 'Run advanced queries' permission.
      - To [isolate a device](isolate-machine.md), select the 'Isolate machine' permission.
