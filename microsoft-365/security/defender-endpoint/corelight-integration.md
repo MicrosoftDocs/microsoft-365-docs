@@ -79,11 +79,11 @@ A global admin is required to grant permission to Corelight to access resources 
 > [!NOTE]
 > Note the configuration options in Kafka (other than Log Exclusion and Filters) should not be changed. Any changes made will be ignored.
 
-    ![Image of data sources](images/enable-corelight.png)
+    ![Image of data sources](images/image1.png)
 
 5. Select **Apply Changes**
 
-    ![Image of data sources](images/enable-corelight.png)
+    ![Image of data sources](images/image2.png)
 
 Alternately you can do with corelight-client:
 
