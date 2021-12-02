@@ -64,5 +64,5 @@ You can turn off the Azure subscription integration from the Microsoft Defender 
 
 ## See also
 
-- [Device discovery overview](configure-device-discover.md)
+- [Device discovery overview](configure-device-discovery.md)
 - [Device discovery FAQ](device-discovery-faq.md)
