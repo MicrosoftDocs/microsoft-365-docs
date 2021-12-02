@@ -89,7 +89,9 @@ This page explains how to create an AAD application, get an access token to Micr
 4. Allow your Application to access Microsoft Defender for Endpoint and assign it 'Read alerts' permission:
 
    - On your application page, select **API Permissions** \> **Add permission** \> **APIs my organization uses** > type **WindowsDefenderATP** and select on **WindowsDefenderATP**.
-   - **Note**: *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
+
+     > [!NOTE]
+     > *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
 
      :::image type="content" alt-text="add permission." source="images/add-permission.png" lightbox="images/add-permission.png":::
 
@@ -97,7 +99,8 @@ This page explains how to create an AAD application, get an access token to Micr
 
       :::image type="content" alt-text="application permissions." source="images/application-permissions-public-client.png" lightbox="images/application-permissions-public-client.png":::
 
-   - **Important note**: Select the relevant permissions. Read alerts is only an example.
+   > [!IMPORTANT]
+   > Select the relevant permissions. Read alerts is only an example.
 
      For instance,
 
@@ -107,7 +110,8 @@ This page explains how to create an AAD application, get an access token to Micr
 
    - Select **Grant consent**
 
-      **Note**: Every time you add permission you must select on **Grant consent** for the new permission to take effect.
+      > [!NOTE]
+      > Every time you add permission you must select on **Grant consent** for the new permission to take effect.
 
       ![Image of Grant permissions.](images/grant-consent.png)
 
