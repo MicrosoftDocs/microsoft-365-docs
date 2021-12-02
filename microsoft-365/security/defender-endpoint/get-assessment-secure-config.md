@@ -2,7 +2,6 @@
 title: Export secure configuration assessment per device
 description: Returns  an entry for every unique combination of DeviceId, ConfigurationId.
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -101,7 +100,7 @@ DeviceName|string|Fully qualified domain name (FQDN) of the device.|johnlaptop.e
 IsApplicable|bool|Indicates whether the configuration or policy is applicable|true
 IsCompliant|bool|Indicates whether the configuration or policy is properly configured|false
 IsExpectedUserImpact|bool|Indicates whether there will be user impact if the configuration will be applied|true
-OSPlatform|string|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.|Windows10
+OSPlatform|string|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 11. See tvm supported operating systems and platforms for details.|Windows10 and Windows 11
 RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers
 RecommendationReference|string|A reference to the recommendation ID related to this software.|sca-_-scid-20000
 Timestamp|string|Last time the configuration was seen on the device|2020-11-03 10:13:34.8476880
@@ -125,7 +124,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "00013ee62c6b12345b10214e1801b217b50ab455c293d",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_5d96860d69c73fdd06fc8d1679e1eb73eceb8330",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "NT kernel 6.x",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-10000",
@@ -142,7 +141,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "0002a1be533813b9a8c6de739785365bce7910",
             "rbacGroupName": "hhh",
             "deviceName": null,
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-20000",
@@ -159,7 +158,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "0002a1de123456a8c06de736785395d4ce7610",
             "rbacGroupName": "hhh",
             "deviceName": null,
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-10000",
@@ -176,7 +175,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "00044f912345bdaf756492dbe6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663d45912eed224b2be2f5ea3142726e63f16a.DomainPII_21eeb80b086e76bdfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-39",
@@ -193,7 +192,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
             "deviceId": "00044f912345daf759462bde6bd733d6a9c56ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45612eeb224d2de2f5ea3142726e63f16a.DomainPII_21eed80d086e76dbfa178eadfa25e8be9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "timestamp": "2021-01-11 09:47:58.854",
             "configurationId": "scid-6093",
