@@ -16,22 +16,22 @@ ms.collection:
 ms.custom:
 - commerce_subscriptions
 search.appverid: MET150
-description: "Learn how to review your list of  Microsoft-certified solution providers (partners) to determine what admin privileges they have, and how to remove those privileges."
+description: "Learn how to review your list of Microsoft-certified solution providers (partners) to determine what admin privileges they have, and how to remove those privileges."
 ms.date: 12/03/2021
 ---
 
 # Review partner administrative privileges
 
-If you have a Microsoft-certified cloud solution provider (reseller partner), we recommend that you conduct a quarterly review of the delegated administrative privileges (DAP) assigned to that reseller partner. Make sure that your organization wants this partner to have access to your organization’s data and make purchases on your behalf.
+If you have a Microsoft-certified cloud solution provider (reseller partner), we recommend you conduct a quarterly review of the delegated administrative privileges (DAP) assigned to them. Make sure your organization wants this partner to have access to your organization’s data and make purchases on your behalf.
 
 > [!IMPORTANT]
 > Giving DAP, which include Global admin permissions, to any partner might present a security risk. Having too many Global admins is also a security risk. [Learn more about recent activity targeting delegated privileges](https://www.microsoft.com/security/blog/2021/10/25/nobelium-targeting-delegated-administrative-privileges-to-facilitate-broader-attacks/).
 
-After you accept a DAP agreement from a reseller partner, they can assign the Global admin role for your organization to their employees. The Global admin role gives the partner’s employees access to your employees’ personal data and other sensitive information, and gives them permission to perform tenant-wide actions, such as the following:
+After you accept a DAP agreement from a reseller partner, they can assign the Global admin role for your organization to their employees. The Global admin role gives the partner’s employees access to your employees’ personal data and other sensitive information. It also gives them permission to take tenant-wide actions, such as the following actions:
 
-- changing user passwords
-- adding users with email accounts
-- adding and managing web domains associated with your organization
+- Changing user passwords
+- Adding users with email accounts
+- Adding and managing web domains associated with your organization
 
 When DAP is enabled, you have no control over the number of Global admins your partner can add. You can only grant or deny the partner DAP (Global admin) access to your account.
 
