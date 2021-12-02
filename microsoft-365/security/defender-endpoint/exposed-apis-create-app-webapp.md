@@ -193,10 +193,12 @@ See [Get token using Python](run-advanced-query-sample-python.md#get-token).
 Ensure that you got the correct token:
 
 1. Copy and paste the token you got in the previous step into [JWT](https://jwt.ms) in order to decode it.
-1. Validate that you get a 'roles' claim with the desired permissions
-1. In the following image, you can see a decoded token acquired from an app with permissions to all of  Microsoft Defender for Endpoint's roles:
 
-:::image type="content" alt-text="Image of token validation." source="images/webapp-decoded-token.png" lightbox="images/webapp-decoded-token.png":::
+1. Validate that you get a 'roles' claim with the desired permissions.
+
+   In the following image, you can see a decoded token acquired from an app with permissions to all of  Microsoft Defender for Endpoint's roles:
+
+   :::image type="content" alt-text="Image of token validation." source="images/webapp-decoded-token.png" lightbox="images/webapp-decoded-token.png":::
 
 ## Use the token to access Microsoft Defender for Endpoint API
 
