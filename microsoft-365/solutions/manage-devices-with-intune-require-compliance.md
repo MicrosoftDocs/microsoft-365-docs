@@ -42,7 +42,7 @@ Be sure to:
 
 To troubleshoot device profiles in Intune, including conflicts between policies, see [Common questions and answers with device policies and profiles in Microsoft Intune](/mem/intune/configuration/device-profile-troubleshoot).
 
-Note: If you want to start by requiring compliant PCs, but not mobile devices, see [Require compliant PCs (but not phones and tablets)](../security/office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) 
+Note: If you want to start by requiring compliant PCs, but not mobile devices, see [Require compliant PCs (but not phones and tablets)](../security/office-365-security/identity-access-policies.md) 
 
 ## Next steps
 

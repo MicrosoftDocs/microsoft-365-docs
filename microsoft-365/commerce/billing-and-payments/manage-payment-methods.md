@@ -19,6 +19,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 - AdminTemplateSet
+- adminvideo
 search.appverid: MET150
 description: "Buy business products or services from Microsoft by using an existing payment method or adding a new one in the Microsoft 365 admin center."
 ms.date: 04/02/2021
@@ -39,6 +40,12 @@ If your business account doesn't have a billing profile, any Global or Billing a
 > The option to pay with a bank account is not available in some countries or regions.
 >
 > You must use a payment method issued from the same country as your tenant.
+
+## Watch: Update your payment method
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
+
+You can easily update the payment method for your Microsoft 365 Business subscription. You can change details such as the credit card used, the name, or the address.
 
 ## Before you begin
 
