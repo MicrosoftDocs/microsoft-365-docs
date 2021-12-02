@@ -37,7 +37,7 @@ With this data source enabled, all events from Corelight network appliances are 
 
 ## Enabling the Corelight integration
 
-To enable the Corelight integration you’ll need to take the following steps:
+To enable the Corelight integration, you’ll need to take the following steps:
 
 1. Turn on Corelight as a data source
 2. Provide permission for Corelight to send events to Microsoft 365 Defender
@@ -53,20 +53,19 @@ To enable the Corelight integration you’ll need to take the following steps:
 
 ### Provide permission for Corelight to send events to Microsoft 365 Defender
 
-A global admin is required to grant permission to Corelight to access resources in your organization.
+You must be a global admin to grant Corelight permission to access resources in your organization.
 
-1. To do this, As a tenant global administrator in Azure Active Directory, go to:
-<https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true>
-2. Go to the [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Settings** \> **Microsoft 365 Defender** and take note of the **Tenant ID**
+As a Tenant Global Administrator, go to:
+<https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true> to grant permission.
+
+Next, go to [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Settings** \> **Microsoft 365 Defender**, and take note of the **Tenant ID**
 
 ### Configure your Corelight appliance to send data to Microsoft 365 Defender
 
-**Applies to** 
-
-- Corelight Sensor software v24.2 and later
+**Applies to**: Corelight Sensor software v24.2 and later
 
 > [!NOTE]
-> To enable on a prior release that supports it, first execute: corelight-client configuration update --enable.adfiot 1
+> To enable on a previous release that support sending data, you must first execute: `corelight-client configuration update --enable.adfiot 1`
 
 1. In the Corelight Sensor GUI configuration section, select **Sensor** \> **Export**
 2. Go to **Export to Kafka** in the list and enable it (switch should be green)
@@ -84,21 +83,21 @@ A global admin is required to grant permission to Corelight to access resources 
 
    ![Image of data sources](images/corelightapply.png)
 
-Alternately, you can use the corelight-client by doing the following:
+Alternately, you can use the following command in the corelight-client:
 
 `corelight-client configuration update --bro.export.kafka.defender.enable true --bro.export.kafka.defender.tenant\_id <your tenant>`
 
-If you are already using Kafka export, contact Corelight Support for an alternate configuration.
+If you're already using Kafka export, contact Corelight Support for an alternate configuration.
 
 To configure only sending the minimal set of logs:
 
-1. In the Corelight Sensor GUI go to the Kafka section
+1. In the Corelight Sensor GUI, go to the Kafka section
 2. Go to the Zeek logs to exclude
 3. Select **All**
 4. To delete, select **x** beside the following logs:  
     `dns  conn  files  http  ssl  ssh  x509  snmp  smtp  ftp  sip  dhcp  notice`
 
-That way these logs will still flow to Microsoft. Note that this list may be expanded over time.
+That way these logs will still flow to Microsoft. This list may be expanded over time.
 5. Select **Apply Changes**.
 
 > [!NOTE]
