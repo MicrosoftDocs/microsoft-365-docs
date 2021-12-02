@@ -174,6 +174,7 @@ For Limited access permissions, the required values are:
 ****
 
 |Permission|Limited access|
+|---|:--:|
 |PermissionToViewHeader|0|
 |PermissionToDownload|0|
 |PermissionToAllowSender|0|
