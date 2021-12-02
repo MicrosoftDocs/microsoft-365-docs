@@ -53,7 +53,7 @@ See the [More information](#more-information) section in this article for more d
 
 Use the **New-MailboxRestoreRequest** cmdlet with the  _SourceMailbox_ and  _TargetMailbox_ parameters to restore the contents of an inactive mailbox to an existing mailbox. For more information about using this cmdlet, see [New-MailboxRestoreRequest](/powershell/module/exchange/new-mailboxrestorerequest).
 
-Before you can restore an inactive mailbox, you have to add the LegacyExchangeDN of the inactive mailbox to the target mailbox, as an X500 proxy address of the target mailbox. This has to be done because the **New-MailboxRestoreRequest** checks to make sure that the value of the **LegacyExchangeDN** property on the source and target mailboxes is the same. After you restore the inactive mailbox, you can optionally remove the LegacyExchangeDN of the inactive mailbox from source mailbox. Be sure to wait until the mailbox restore request is complete before removing the LegacyExchangeDN.
+Before you can restore an inactive mailbox, you have to add the LegacyExchangeDN of the inactive mailbox to the target mailbox, as an X500 proxy address of the target mailbox. This has to be done because the **New-MailboxRestoreRequest** cmdlet checks to make sure the value of the **LegacyExchangeDN** property on the source and target mailboxes is the same. After you restore the inactive mailbox, you can optionally remove the LegacyExchangeDN of the inactive mailbox from source mailbox. Be sure to wait until the mailbox restore request is complete before removing the LegacyExchangeDN.
 
 Follow these steps to restore an inactive mailbox to an existing mailbox:
 
