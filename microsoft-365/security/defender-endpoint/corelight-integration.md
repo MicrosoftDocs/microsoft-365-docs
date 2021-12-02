@@ -54,18 +54,18 @@ To enable the Corelight integration, you’ll need to take the following steps:
 ### Step 2: Provide permission for Corelight to send events to Microsoft 365 Defender
 
 > [!NOTE]
-> You must be a global admin to grant Corelight permission to access resources in your organization. 
+> You must be a global admin to grant Corelight permission to access resources in your organization.
 
 1. As a Tenant Global Administrator, go to:
 <https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true> to grant permission.
-2. Go to [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Settings** \> **Microsoft 365 Defender**, and take note of the **Tenant ID**. You'll need this information when configuring Corelight.
+2. Go to [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Settings** \> **Microsoft 365 Defender**, and take note of the **Tenant ID**. You'll need this information when configuring your Corelight appliance.
 
 ### Step 3: Configure your Corelight appliance to send data to Microsoft 365 Defender
 
 **Applies to**: Corelight Sensor software v24.2 and later
 
 > [!NOTE]
-> To enable on a previous release that support sending data, you must first execute: `corelight-client configuration update --enable.adfiot 1`
+> To enable on a previous release that supports sending data, you must first execute: `corelight-client configuration update --enable.adfiot 1`
 
 #### Enabling in the Corelight Sensor GUI
 
@@ -74,12 +74,11 @@ To enable the Corelight integration, you’ll need to take the following steps:
 
    ![Image of data sources](images/exporttokafka.png)
 
-3. Next, turn on **EXPORT TO AZURE DEFENDER FOR IOT**
-4. Enter your tenant ID, noted in Step 1, in the TENANT ID field
+3. Next, turn on **EXPORT TO AZURE DEFENDER FOR IOT** and enter your tenant ID, noted in Step 1, in the TENANT ID field
 
    ![Image of data sources](images/exporttodiot.png)
 
-5. Select **Apply Changes**
+4. Select **Apply Changes**
 
    ![Image of data sources](images/corelightapply.png)
 
@@ -102,8 +101,9 @@ To configure only sending the minimal set of logs:
 4. To delete, select **x** beside the following logs:  
     `dns  conn  files  http  ssl  ssh  x509  snmp  smtp  ftp  sip  dhcp  notice`
 
-That way these logs will still flow to Microsoft. This list may be expanded over time.
-5. Select **Apply Changes**.
+    That way these logs will still flow to Microsoft. This list may be expanded over time.
+
+5. Select **Apply Changes**
 
 > [!NOTE]
 >Note that you will need internet connectivity for your sensor to reach both the Defender and Corelight cloud services for the solution to work.
