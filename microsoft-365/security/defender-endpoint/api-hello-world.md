@@ -62,7 +62,8 @@ For the Application registration stage, you must have a **Global administrator**
 
    - On your application page, click **API Permissions** \> **Add permission** \> **APIs my organization uses** > type **WindowsDefenderATP** and click on **WindowsDefenderATP**.
 
-   - **Note**: WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
+     > [!NOTE]
+     > WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
    ![Image of API access and API selection1.](images/add-permission.png)
 
@@ -70,7 +71,8 @@ For the Application registration stage, you must have a **Global administrator**
 
    ![Image of API access and API selection2.](images/application-permissions.png)
 
-   **Important note**: You need to select the relevant permissions. 'Read All Alerts' is only an example!
+   > [!IMPORTANT]
+   > You need to select the relevant permissions. 'Read All Alerts' is only an example!
 
      For instance,
 
@@ -80,7 +82,8 @@ For the Application registration stage, you must have a **Global administrator**
 
 5. Click **Grant consent**
 
-   - **Note**: Every time you add permission you must click on **Grant consent** for the new permission to take effect.
+   > [!NOTE]
+   > Every time you add permission you must click on **Grant consent** for the new permission to take effect.
 
    ![Image of Grant permissions.](images/grant-consent.png)
 
@@ -88,7 +91,8 @@ For the Application registration stage, you must have a **Global administrator**
 
    - Click **Certificates & secrets**, add description to the secret and click **Add**.
 
-    **Important**: After click Add, **copy the generated secret value**. You won't be able to retrieve after you leave!
+    > [!IMPORTANT]
+    > After click Add, **copy the generated secret value**. You won't be able to retrieve after you leave!
 
     ![Image of create app key.](images/webapp-create-key2.png)
 
