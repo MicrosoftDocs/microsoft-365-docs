@@ -22,7 +22,7 @@ You can now use SharePoint Syntex to help you automatically generate standard re
 With content assembly, you can use an existing document to create a "modern template," and then use that template to automatically generate new content using SharePoint lists as a data source.
 
 > [!NOTE]
-> You msut be a SharePoint Syntex licensed user to access and use content assembly capabilities.
+> You must be a SharePoint Syntex licensed user to access and use content assembly capabilities.
 
 ## Create a modern template
 
@@ -52,7 +52,7 @@ Follow these steps to create a modern template.
 
 6. For each placeholder you create:
    - Give the placeholder a relevant name
-   - Specify the type of input you want to associate with the placeholder. Currently, you can specify two types of input:
+   - Specify the type of input you want to associate with the placeholder. Currently, there are two types of input:
         - Manual input
         - SharePoint list
 
