@@ -100,7 +100,7 @@ This article explains how to create an Azure AD application, get an access token
 
     The consent link is formed as follows: 
 
-    ```
+    ```https
     https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=00000000-0000-0000-0000-000000000000&response_type=code&sso_reload=true
     ```
 
@@ -143,13 +143,13 @@ The following code was tested with NuGet Microsoft.IdentityModel.Clients.ActiveD
 1. Install NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
 1. Add the following:
 
-    ```
+    ```csharp
     using Microsoft.IdentityModel.Clients.ActiveDirectory;
     ```
 
 1. Copy and paste the following code in your app (don't forget to update the three variables: ```tenantId, appId, appSecret```):
 
-    ```
+    ```csharp
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
     string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
@@ -178,13 +178,13 @@ See [Get token using Python](run-advanced-query-sample-python.md#get-token).
 1. Set TENANT_ID to the Azure tenant ID of the customer that wants to use your app to access Defender for Endpoint.
 1. Run the following command:
 
-```
+```console
 curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k
 ```
 
 You will get an answer in the following form:
 
-```
+```console
 {"token_type":"Bearer","expires_in":3599,"ext_expires_in":0,"access_token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIn <truncated> aWReH7P0s0tjTBX8wGWqJUdDA"}
 ```
 
@@ -204,17 +204,18 @@ Ensure that you got the correct token:
 1. Set the authorization header in the http request you send to "Bearer {token}" (Bearer is the authorization scheme).
 1. The expiration time of the token is one hour. You can send more than one request with the same token.
 
-The following is an example of sending a request to get a list of alerts **using C#**: 
-```
-    var httpClient = new HttpClient();
+The following is an example of sending a request to get a list of alerts **using C#**:
 
-    var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.microsoft.com/api/alerts");
+```csharp
+var httpClient = new HttpClient();
 
-    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+var request = new HttpRequestMessage(HttpMethod.Get, "https://api.securitycenter.microsoft.com/api/alerts");
 
-    var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
+request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
-    // Do something useful with the response
+var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
+
+// Do something useful with the response
 ```
 
 ## See also
