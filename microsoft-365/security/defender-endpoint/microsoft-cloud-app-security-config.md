@@ -32,6 +32,7 @@ To benefit from Microsoft Defender for Endpoint cloud app discovery signals, tur
 > [!NOTE]
 > This feature will be available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on devices running Windows 10 and Windows 11.
 
+> [!TIP]
 > See [Microsoft Defender for Endpoint integration with Microsoft Defender for Cloud Apps](/cloud-app-security/mde-integration) for detailed integration of Microsoft Defender for Endpoint with Microsoft Defender for Cloud Apps.
 
 ## Enable Microsoft Defender for Cloud Apps in Microsoft Defender for Endpoint
