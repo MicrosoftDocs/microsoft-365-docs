@@ -53,10 +53,11 @@ To enable the Corelight integration, you’ll need to take the following steps:
 
 ### Step 2: Provide permission for Corelight to send events to Microsoft 365 Defender
 
-You must be a global admin to grant Corelight permission to access resources in your organization. As a Tenant Global Administrator, go to:
-<https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true> to grant permission.
+You must be a global admin to grant Corelight permission to access resources in your organization. 
 
-Next, go to [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Settings** \> **Microsoft 365 Defender**, and take note of the **Tenant ID**. You'll need this information when configuring Corelight.
+1. As a Tenant Global Administrator, go to:
+<https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true> to grant permission.
+2. Go to [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Settings** \> **Microsoft 365 Defender**, and take note of the **Tenant ID**. You'll need this information when configuring Corelight.
 
 ### Step 3: Configure your Corelight appliance to send data to Microsoft 365 Defender
 
@@ -66,20 +67,21 @@ Next, go to [https://security.microsoft.com](https://security.microsoft.com/) po
 > To enable on a previous release that support sending data, you must first execute: `corelight-client configuration update --enable.adfiot 1`
 
 1. In the Corelight Sensor GUI configuration section, select **Sensor** \> **Export**
-2. Go to **Export to Kafka** in the list and enable it (switch should be green)
+2. From the list, go to **Export to Kafka** and select the switch to turn in on
 
    ![Image of data sources](images/exporttokafka.png)
 
-3. Next, go to the **Export to Azure Defender for IOT** section and enable it
-4. Add your tenant ID, noted in Step 1 to the configuration field
-
-> [!NOTE]
-> Note the configuration options in Kafka (other than Log Exclusion and Filters) should not be changed. Any changes made will be ignored.
+3. Next, turn on **Export to Azure Defender for IOT**
+4. Add your tenant ID, noted in Step 1, to the configuration field
 
    ![Image of data sources](images/exporttodiot.png)
+
 5. Select **Apply Changes**
 
    ![Image of data sources](images/corelightapply.png)
+
+> [!NOTE]
+> Note the configuration options in Kafka (other than Log Exclusion and Filters) should not be changed. Any changes made will be ignored.
 
 Alternately, you can use the following command in the corelight-client:
 
