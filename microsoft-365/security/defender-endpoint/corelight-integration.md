@@ -91,7 +91,8 @@ You can turn on **EXPORT TO KAFKA** and **EXPORT TO AZURE DEFENDER FOR IOT** usi
 
 `corelight-client configuration update --bro.export.kafka.defender.enable true --bro.export.kafka.defender.tenant\_id <your tenant>`
 
-If you're already using Kafka export, contact Corelight Support for an alternate configuration.
+> [!IMPORTANT]
+> If you're already using Kafka export, contact Corelight Support for an alternate configuration.
 
 To configure only sending the minimal set of logs:
 
