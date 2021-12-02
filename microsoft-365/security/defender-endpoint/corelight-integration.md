@@ -33,7 +33,7 @@ ms.technology: mde
 
 Microsoft has partnered with [Corelight](https://corelight.com/integrations/iot-security), provider of the industry’s leading open network detection and response (NDR) platform, to help you discover IoT/OT devices across your organization. Using data, sent from Corelight network appliances, Microsoft 365 Defender gains increased visibility into the network activities of unmanaged devices, including communication with other unmanaged devices or external networks.
 
-With this data source enabled, all events from Corelight network appliances are sent to Microsoft 365 Defender. You can view these activities in the unmanaged devices timeline, available in the Microsoft Defender for Endpoint device inventory. For more information, see [Device discovery](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/device-discovery?view=o365-worldwide).
+With this data source enabled, all events from Corelight network appliances are sent to Microsoft 365 Defender. You can view these activities in the unmanaged devices timeline, available in the Microsoft Defender for Endpoint device inventory. For more information, see [Device discovery](device-discovery.md).
 
 ## Enabling the Corelight integration
 
@@ -71,7 +71,7 @@ A global admin is required to grant permission to Corelight to access resources 
 1. In the Corelight Sensor GUI configuration section, select **Sensor** \> **Export**
 2. Go to **Export to Kafka** in the list and enable it (switch should be green)
 
-    ![Image of data sources](images/exporttokafka.png)
+   ![Image of data sources](images/exporttokafka.png)
 
 3. Next, go to the **Export to Azure Defender for IOT** section and enable it
 4. Add your tenant ID, noted in Step 1 to the configuration field
@@ -79,11 +79,10 @@ A global admin is required to grant permission to Corelight to access resources 
 > [!NOTE]
 > Note the configuration options in Kafka (other than Log Exclusion and Filters) should not be changed. Any changes made will be ignored.
 
-    ![Image of data sources](images/exporttodiot.png)
-
+   ![Image of data sources](images/exporttodiot.png)
 5. Select **Apply Changes**
 
-    ![Image of data sources](images/corelightapply.png)
+   ![Image of data sources](images/corelightapply.png)
 
 Alternately, you can use the corelight-client by doing the following:
 
