@@ -67,7 +67,7 @@ For the Application registration stage, you must have a **Global administrator**
 
      :::image type="content" alt-text="Image of API access and API selection1." source="images/add-permission.png" lightbox="images/add-permission.png":::
 
-   - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**
+   - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**.
 
      :::image type="content" alt-text="Image of API access and API selection2." source="images/application-permissions.png" lightbox="images/application-permissions.png":::
 
@@ -80,10 +80,10 @@ For the Application registration stage, you must have a **Global administrator**
      - To [isolate a machine](isolate-machine.md), select 'Isolate machine' permission.
      - To determine which permission you need, please look at the **Permissions** section in the API you are interested to call.
 
-5. Click **Grant consent**
+5. Click **Grant consent**.
 
    > [!NOTE]
-   > Every time you add permission you must click on **Grant consent** for the new permission to take effect.
+   > Every time you add permission, you must click on **Grant consent** for the new permission to take effect.
 
    ![Image of Grant permissions.](images/grant-consent.png)
 
@@ -96,7 +96,7 @@ For the Application registration stage, you must have a **Global administrator**
 
     ![Image of create app key.](images/webapp-create-key2.png)
 
-7. Write down your application ID and your tenant ID:
+7. Write down your application ID and your tenant ID.
 
    On your application page, go to **Overview** and copy the following:
 
@@ -106,8 +106,8 @@ Done! You have successfully registered an application!
 
 ### Step 2 - Get a token using the App and use this token to access the API.
 
-- Copy the script below to PowerShell ISE or to a text editor, and save it as "**Get-Token.ps1**"
-- Running this script will generate a token and will save it in the working folder under the name "**Latest-token.txt**".
+- Copy the script below to PowerShell ISE or to a text editor, and save it as **Get-Token.ps1**.
+- Running this script will generate a token and will save it in the working folder under the name **Latest-token.txt**.
 
    ```powershell
    # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
@@ -133,10 +133,10 @@ Done! You have successfully registered an application!
 
 - Sanity Check:
   - Run the script.
-  - In your browser go to: <https://jwt.ms/>
+  - In your browser go to: <https://jwt.ms/>.
   - Copy the token (the content of the Latest-token.txt file).
   - Paste in the top box.
-  - Look for the "roles" section. Find the Alert.Read.All role.
+  - Look for the "roles" section. Find the _Alert.Read.All_ role.
 
   :::image type="content" alt-text="Image jwt.ms." source="images/api-jwt-ms.png" lightbox="images/api-jwt-ms.png":::
 

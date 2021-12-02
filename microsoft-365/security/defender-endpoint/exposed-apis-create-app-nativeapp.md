@@ -94,7 +94,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
      :::image type="content" alt-text="add permission." source="images/add-permission.png" lightbox="images/add-permission.png":::
 
-   - Choose **Delegated permissions** \> **Alert.Read** > select **Add permissions**
+   - Choose **Delegated permissions** \> **Alert.Read** > select **Add permissions**.
 
       :::image type="content" alt-text="application permissions." source="images/application-permissions-public-client.png" lightbox="images/application-permissions-public-client.png":::
 
@@ -103,18 +103,18 @@ This page explains how to create an AAD application, get an access token to Micr
 
      For example:
 
-     - To [run advanced queries](run-advanced-query-api.md), select 'Run advanced queries' permission
-     - To [isolate a device](isolate-machine.md), select 'Isolate machine' permission
+     - To [run advanced queries](run-advanced-query-api.md), select **Run advanced queries** permission.
+     - To [isolate a device](isolate-machine.md), select **Isolate machine** permission.
      - To determine which permission you need, view the **Permissions** section in the API you are interested to call.
 
-   - Select **Grant consent**
+   - Select **Grant consent**.
 
       > [!NOTE]
       > Every time you add permission you must select on **Grant consent** for the new permission to take effect.
 
       ![Image of Grant permissions.](images/grant-consent.png)
 
-5. Write down your application ID and your tenant ID:
+5. Write down your application ID and your tenant ID.
 
     On your application page, go to **Overview** and copy the following information:
 
@@ -171,19 +171,19 @@ For more information on AAD tokens, see [Azure AD tutorial](/azure/active-direct
 
 Verify to make sure you got a correct token:
 
-- Copy/paste into [JWT](https://jwt.ms) the token you got in the previous step in order to decode it
-- Validate you get a 'scp' claim with the desired app permissions
+- Copy/paste into [JWT](https://jwt.ms) the token you got in the previous step in order to decode it.
+- Validate you get a 'scp' claim with the desired app permissions.
 - In the screenshot below you can see a decoded token acquired from the app in the tutorial:
 
-:::image type="content" alt-text="Image of token validation." source="images/nativeapp-decoded-token.png" lightbox="images/nativeapp-decoded-token.png":::
+  :::image type="content" alt-text="Image of token validation." source="images/nativeapp-decoded-token.png" lightbox="images/nativeapp-decoded-token.png":::
 
 ## Use the token to access Microsoft Defender for Endpoint API
 
-- Choose the API you want to use - [Supported Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
-- Set the Authorization header in the HTTP request you send to "Bearer {token}" (Bearer is the Authorization scheme)
-- The Expiration time of the token is 1 hour (you can send more than one request with the same token)
+- Choose the API you want to use - [Supported Microsoft Defender for Endpoint APIs](exposed-apis-list.md).
+- Set the Authorization header in the HTTP request you send to "Bearer {token}" (Bearer is the Authorization scheme).
+- The Expiration time of the token is 1 hour (you can send more than one request with the same token).
 
-- Example of sending a request to get a list of alerts **using C#**
+- Example of sending a request to get a list of alerts **using C#**:
 
     ```csharp
     var httpClient = new HttpClient();
