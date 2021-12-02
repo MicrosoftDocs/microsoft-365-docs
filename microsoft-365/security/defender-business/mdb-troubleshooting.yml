@@ -8,7 +8,7 @@ metadata:
   manager: dansimp 
   audience: Admin
   ms.topic: overview
-  ms.date: 12/01/2021
+  ms.date: 12/02/2021
   ms.prod: m365-security
   ms.technology: mdb
   localization_priority: Normal
@@ -89,9 +89,9 @@ sections:
 
           While onboarding devices, something went wrong in the Microsoft 365 Defender portal. The onboarding process in Microsoft Defender for Business uses a capability called Security Management for Microsoft Defender for Endpoint. If onboarding fails, the issue is likely caused by an issue with this capability. To resolve the issue, see the following articles:
           
-          - [Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint](../defender-endpoint/troubleshoot-security-config-mgt)
+          - [Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt)
 
-          - [Run Microsoft Defender for Endpoint Client Analyzer on Windows](../defender-endpoint/troubleshoot-security-config-mgt#run-microsoft-defender-for-endpoint-client-analyzer-on-windows)
+          - [Run Microsoft Defender for Endpoint Client Analyzer on Windows](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt#run-microsoft-defender-for-endpoint-client-analyzer-on-windows)
 
 
 
