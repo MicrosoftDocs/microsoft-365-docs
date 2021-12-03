@@ -27,7 +27,7 @@ This article provides guidance on getting started with configuration profiles.
 
 ![Steps for managing devices](../media/devices/intune-mdm-step-4.png#lightbox)
 
-Configuration profiles give you the ability to configure important protection and to bring devices into compliance so they can access your resources. Previously, these kinds of configuration changes were configured by using Group Policy settings in Active Directory Domain Services. A modern security strategy includes moving security controls to the cloud where enforcement of these is not dependent on on-premises resources and access. Intune configuration profiles are the way to transition these security controls to the cloud. 
+Configuration profiles give you the ability to configure important protection and to bring devices into compliance so they can access your resources. Previously, these kinds of configuration changes were configured by using Group Policy settings in Active Directory Domain Services. A modern security strategy includes moving security controls to the cloud where enforcement of these controls is not dependent on on-premises resources and access. Intune configuration profiles are the way to transition these security controls to the cloud. 
 
 To give you an idea of the kind of configuration profiles you can create, see [Apply features and settings on your devices using device profiles in Microsoft Intune](/mem/intune/configuration/device-profiles).
 
