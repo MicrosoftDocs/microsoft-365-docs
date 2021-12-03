@@ -127,20 +127,20 @@ Now you'll need to run commands to add the URLs (collected earlier) as Service P
 
    Take note of (and screenshot for later comparison) the output of this command, which will include an SE and WS URL, but mostly consist of SPNs that begin with `00000004-0000-0ff1-ce00-000000000000/`.
 
-```powershell
-Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
-```
+   ```powershell
+   Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 | Select -ExpandProperty ServicePrincipalNames
+   ```
 
 3. If the internal **or** external SFB URLs from on-premises are missing (for example, https://lyncwebint01.contoso.com and https://lyncwebext01.contoso.com) we will need to add those specific records to this list.
 
     Be sure to replace  *the example URLs* below with your actual URLs in the Add commands!
 
-```powershell
-$x= Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000
-$x.ServicePrincipalnames.Add("https://lyncwebint01.contoso.com/")
-$x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
-Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
-```
+    ```powershell
+    $x= Get-MsolServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000
+    $x.ServicePrincipalnames.Add("https://lyncwebint01.contoso.com/")
+    $x.ServicePrincipalnames.Add("https://lyncwebext01.contoso.com/")
+    Set-MSOLServicePrincipal -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
+    ```
 
 4. Verify your new records were added by running the **Get-MsolServicePrincipal** command from step 2 again, and looking through the output. Compare the list or screenshot from before to the new list of SPNs. You might also screenshot the new list for your records. If you were successful, you'll see the two new URLs in the list. Going by our example, the list of SPNs will now include the specific URLs https://lyncwebint01.contoso.com and https://lyncwebext01.contoso.com/.
 
