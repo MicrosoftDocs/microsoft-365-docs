@@ -54,7 +54,7 @@ Follow these steps to create a modern template.
 
     To create a placeholder, select the text (such as the address), and then select the **+** button above the selected text.
  
-   ![Screenshot of the template viewer showing the plus button used to create a placeholder.](../media/content-understanding/content-assembly-create-template-3.png)
+   ![Screenshot of the template viewer showing the plus button used to create a placeholder.](../media/content-understanding/content-assembly-create-template-4.png)
 
 6. The **All placeholders** panel will open, where you will give the placeholder a relevant name and choose the type of input you want to associate with the placeholder. Currently, there are two types of input:
 
@@ -66,6 +66,8 @@ Follow these steps to create a modern template.
 On the **All placeholders** panel:
 
 1. In the **Placeholder name** field, enter a relevant name for the placeholder.
+
+   ![Screenshot of the template viewer showing the All placeholders panel for manual input.](../media/content-understanding/content-assembly-create-template-5.png)
 
 2. In the **Choose the input type for the placeholder value** section, select **Manual input only**.
 
@@ -79,15 +81,23 @@ On the **All placeholders** panel:
 
 1. In the **Placeholder name** field, enter a relevant name for the placeholder.
 
+   ![Screenshot of the template viewer showing the All placeholders panel for input from a SharePoint list.](../media/content-understanding/content-assembly-create-template-6.png)
+
 2. In the **Choose the input type for the placeholder value** section, select **Choose from a column of a list**, and then choose **Select**.
 
 3. On the **Select a list for adding a source column** page, select the list you want to use, and then select **Next**.
 
-4. On the **Select a source column from the existing list** page, select the field you want to associate with the placeholder, and then select **Save**. 
+   ![Screenshot of the Select a list for adding a source column page showing lists.](../media/content-understanding/content-assembly-create-template-7.png)
+
+4. On the **Select a source column from the existing list** page, select the column name you want to associate with the placeholder, and then select **Save**. 
+
+   ![Screenshot of the Select a source column from the existing list page showing column names.](../media/content-understanding/content-assembly-create-template-8.png)
 
     If you want to see the original page of lists again, select **Go to the list for reference**.
 
 5. When you are done, you will see that the list field has been associated with the placeholder.
+
+   ![Screenshot of the All placeholders panel showing the list field associated with the placeholder.](../media/content-understanding/content-assembly-create-template-9.png)
 
 6. If you want users to be able to add manual input in addition to choose from a list, select **Allow manual input as well**. In this case, the default for the manual input data type is *Single line of text*.
  
