@@ -154,18 +154,20 @@ The required order and values for each individual permission are described in th
 |Permission|Decimal value|Binary value|
 |---|:---:|:---:|
 |PermissionToViewHeader<sup>\*</sup>|128|10000000|
-|PermissionToDownload<sup>\*</sup>|64|01000000|
-|PermissionToAllowSender<sup>\*</sup>|32|00100000|
+|PermissionToDownload<sup>\*\*</sup>|64|01000000|
+|PermissionToAllowSender<sup>\*\*</sup>|32|00100000|
 |PermissionToBlockSender|16|00010000|
-|PermissionToRequestRelease<sup>\*\*</sup>|8|00001000|
-|PermissionToRelease<sup>\*\*</sup>|4|00000100|
+|PermissionToRequestRelease<sup>\*\*\*</sup>|8|00001000|
+|PermissionToRelease<sup>\*\*\*</sup>|4|00000100|
 |PermissionToPreview|2|00000010|
 |PermissionToDelete|1|00000001|
 |
 
-<sup>\*</sup> Currently, this value is always 0. For PermissionToViewHeader, the value 0 doesn't hide the **View message header** button in the details of the quarantined message (the button is always available).
+<sup>\*</sup> The value 0 doesn't hide the **View message header** button in the details of the quarantined message (the button is always available).
 
-<sup>\*\*</sup> Don't set both of these values to 1. Set one to 1 and the other to 0, or set both to 0.
+<sup>\*\*</sup> This setting is not used (the value 0 or 1 does nothing).
+
+<sup>\*\*\*</sup> Don't set both of these values to 1. Set one to 1 and the other to 0, or set both to 0.
 
 For Limited access permissions, the required values are:
 
@@ -174,6 +176,7 @@ For Limited access permissions, the required values are:
 ****
 
 |Permission|Limited access|
+|---|:--:|
 |PermissionToViewHeader|0|
 |PermissionToDownload|0|
 |PermissionToAllowSender|0|
