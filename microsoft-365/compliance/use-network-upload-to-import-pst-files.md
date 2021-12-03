@@ -177,7 +177,7 @@ AzCopy.exe copy "https://storageaccountid.blob.core.windows.net/PSTs?sp=racwdl&s
 After you run the command, status messages are displayed that show the progress of uploading the PST files. A final status message shows the total number of files that were successfully uploaded.
 
 > [!TIP]
-> After you successfully run the AzCopy.exe command and verify that all the parameters are correct, save a copy of the command line syntax to the same (secured) file where you copied the information you obtained in Step 1. Then you can copy and paste this command in a Command Prompt each time that you want to run the AzCopy.exe tool to upload PST files to Microsoft 365. The only value you might have to change are the ones for the source field. This depends on the source directory where the PST files are located.
+> After you successfully run the AzCopy.exe command and verify that all the parameters are correct, save a copy of the command line syntax to the same (secured) file where you copied the information you obtained in Step 1. Then you can copy and paste this command in a Command Prompt each time that you want to run the AzCopy.exe tool to upload PST files to Microsoft 365. The only value you might have to change is for the source field. This depends on the source directory where the PST files are located.
 
 ## (Optional) Step 3: View a list of the PST files uploaded to Microsoft 365
 
