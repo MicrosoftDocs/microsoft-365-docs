@@ -1251,7 +1251,7 @@
 | 9/24/2021 | [Secure Windows 10 computers](/microsoft-365/admin/setup/secure-win-10-pcs?view=o365-21vianet) | modified |
 | 9/24/2021 | [Set up mobile devices for Microsoft 365 for business users](/microsoft-365/admin/setup/set-up-mobile-devices?view=o365-21vianet) | modified |
 | 9/24/2021 | [Set up Windows devices for Microsoft 365 Business Premium users](/microsoft-365/admin/setup/set-up-windows-devices?view=o365-21vianet) | modified |
-| 9/24/2021 | [Microsoft 365 admin center - Overview](/microsoft-365/business-video/admin-center-overview?view=o365-worldwide) | modified |
+| 9/24/2021 | [Microsoft 365 admin center - Overview]([Overview of the Microsoft 365 admin center](../admin/admin-overview/admin-center-overview?view=o365-worldwide) | modified |
 | 9/24/2021 | [Sign up for Microsoft 365 Business Premium subscription](/microsoft-365/business-video/sign-up?view=o365-21vianet) | modified |
 | 9/24/2021 | [Try or buy a Microsoft 365 for business subscription](/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-21vianet) | modified |
 | 9/24/2021 | [Explanation types in Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/explanation-types-overview) | modified |
@@ -3444,7 +3444,7 @@
 | 9/24/2021 | [Secure Windows 10 computers](/microsoft-365/admin/setup/secure-win-10-pcs?view=o365-21vianet) | modified |
 | 9/24/2021 | [Set up mobile devices for Microsoft 365 for business users](/microsoft-365/admin/setup/set-up-mobile-devices?view=o365-21vianet) | modified |
 | 9/24/2021 | [Set up Windows devices for Microsoft 365 Business Premium users](/microsoft-365/admin/setup/set-up-windows-devices?view=o365-21vianet) | modified |
-| 9/24/2021 | [Microsoft 365 admin center - Overview](/microsoft-365/business-video/admin-center-overview?view=o365-worldwide) | modified |
+| 9/24/2021 | [Microsoft 365 admin center - Overview](../admin/admin-overview/admin-center-overview?view=o365-worldwide) | modified |
 | 9/24/2021 | [Sign up for Microsoft 365 Business Premium subscription](/microsoft-365/business-video/sign-up?view=o365-21vianet) | modified |
 | 9/24/2021 | [Try or buy a Microsoft 365 for business subscription](/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-21vianet) | modified |
 | 9/24/2021 | [Explanation types in Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/explanation-types-overview) | modified |
