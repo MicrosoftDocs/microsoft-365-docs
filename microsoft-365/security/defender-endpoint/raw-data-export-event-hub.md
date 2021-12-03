@@ -55,7 +55,7 @@ ms.custom: api
 
 ## The schema of the events in Azure Event Hubs
 
-```text
+```json
 {
     "records": [
                     {
@@ -85,7 +85,7 @@ To get the data types for event properties do the following:
 
 2. Run the following query to get the data types mapping for each event:
 
-   ```text
+   ```kusto
    {EventType}
    | getschema
    | project ColumnName, ColumnType 
