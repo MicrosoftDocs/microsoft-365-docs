@@ -85,7 +85,7 @@ In order to deploy an add-in via Centralized Deployement, you need to be either 
 > [!NOTE]
 >Exchange admin can deploy add-in only if **App Registrations** property is set to true in Azure Active Directory admin center as shown below:
 >
->![image](https://user-images.githubusercontent.com/89943918/144516704-8874a10d-b540-41f3-ae9d-c07a8d7e143f.png)
+> ![image](https://user-images.githubusercontent.com/89943918/144516704-8874a10d-b540-41f3-ae9d-c07a8d7e143f.png)
 
 
 ### Centralized Deployment Compatibility Checker
