@@ -49,7 +49,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## December/January 2021
 
-- [Updated Hunting and Investigation Experiences for Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/updated-hunting-and-investigation-experiences-for-microsoft/ba-p/3002015): Introducing the email summary panel for MDO experiences along with experience updates for Threat Explorer and Real-time detections  .
+- [Updated Hunting and Investigation Experiences for Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/updated-hunting-and-investigation-experiences-for-microsoft/ba-p/3002015): Introducing the email summary panel for MDO experiences along with experience updates for Threat Explorer and Real-time detections.
 
 
 ## October 2021
