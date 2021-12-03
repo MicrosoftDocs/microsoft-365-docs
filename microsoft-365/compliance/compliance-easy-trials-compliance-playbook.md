@@ -230,7 +230,7 @@ To access Advanced eDiscovery or be added as a member of an Advanced eDiscovery 
 More organizations use the Advanced eDiscovery solution in Microsoft 365 for critical eDiscovery processes. This includes responding to regulatory requests, investigations, and litigation.
 
 1. Manage Advanced eDiscovery – [learn how to configure Advanced eDiscovery, manage cases by using the Security & Compliance Center, manage a workflow in Advanced eDiscovery, and analyze Advanced eDiscovery search results](/learn/modules/manage-advanced-ediscovery).​
-1. [Create an eDiscovery case using Advance eDiscovery’s large cases capabilities​](advanced-ediscovery-large-cases.md)
+1. [Create an eDiscovery case using Advance eDiscovery's new case format​](advanced-ediscovery-new-case-format.md)
 1. [Close or delete a case](close-or-delete-case.md) - When the legal case or investigation is completed, you can close or delete. You can also reopen a closed case.
 
 ### Step 3 (optional): Settings​
