@@ -169,7 +169,7 @@ To test that HMA is working after you've enabled it, sign out of a test SFB Wind
 
 You should also check the 'Configuration Information' for Skype for Business Clients for an 'OAuth Authority'. To do this on your client computer, hold down the CTRL key at the same time you right-click the Skype for Business Icon in the Windows Notification tray. Click **Configuration Information** in the menu that appears. In the 'Skype for Business Configuration Information' window that will appear on the desktop, look for the following:
 
-![The Configuration information of a Skype for Business Client using Modern Authentication shows a Lync and EWS OAUTH Authority URL of https://login.windows.net/common/oauth2/authorize.](../media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png)
+:::image type="content" alt-text="The Configuration information of a Skype for Business Client using Modern Authentication shows a Lync and EWS OAUTH Authority URL of https://login.windows.net/common/oauth2/authorize." source="../media/4e54edf5-c8f8-4e7f-b032-5d413b0232de.png":::
 
 You should also hold down the CTRL key at the same time you right-click the icon for the Outlook client (also in the Windows Notifications tray) and click 'Connection Status'. Look for the client's SMTP address against an AuthN type of 'Bearer\*', which represents the bearer token used in OAuth.
 
