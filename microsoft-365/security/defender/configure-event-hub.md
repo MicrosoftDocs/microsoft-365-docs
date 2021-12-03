@@ -74,46 +74,46 @@ Learn how to configure your Event Hub so that it can ingest events from Microsof
 
    :::image type="content" source="../../media/ebc4ca37c342ad1da75c4aee4018e51a.png" alt-text="The event hub section in Microsoft Azure portal" lightbox="../../media/ebc4ca37c342ad1da75c4aee4018e51a.png":::
 
-1. You will also need the Resource ID of this Event Hub Namespace. Go to your Azure Event Hubs namespace page \> Properties. Copy the text under Resource ID and record it for use during the Microsoft 365 Configuration section below.
+1. You will also need the Resource ID of this Event Hubs Namespace. Go to your Azure Event Hubs namespace page \> Properties. Copy the text under Resource ID and record it for use during the Microsoft 365 Configuration section below.
 
-    :::image type="content" source="../../media/759498162a4e93cbf17c4130d704d164.png" alt-text="An event hub's properties section in Microsoft Azure portal" lightbox="../../media/759498162a4e93cbf17c4130d704d164.png":::
+    :::image type="content" source="../../media/759498162a4e93cbf17c4130d704d164.png" alt-text="Event hubs properties section in Microsoft Azure portal" lightbox="../../media/759498162a4e93cbf17c4130d704d164.png":::
 
 
-1. Once the Event Hub Namespace is created, you will need to add the App Registration Service Principal as Reader, Azure Event Hubs Data Receiver, and the user who will be logging into Microsoft 365 Defender as Contributor (you can also do this at Resource Group or Subscription level).
+1. Once the Event Hubs Namespace is created, you will need to add the App Registration Service Principal as Reader, Azure Event Hubs Data Receiver, and the user who will be logging into Microsoft 365 Defender as Contributor (you can also do this at Resource Group or Subscription level).
 
     You do this step at **Event Hubs Namespace** \> **Access Control (IAM)** \> **Add** and verify under **Role assignments**:
 
     :::image type="content" source="../../media/9c9c29137b90d5858920202d87680d16.png" alt-text="An application registration service principal section in Microsoft Azure portal" lightbox="../../media/9c9c29137b90d5858920202d87680d16.png":::
 
-## Set up Event Hub
+## Set up Event Hubs
 
 **Option 1:**
 
-You can create an Event Hub within your Namespace and **all** the Event Types (Tables) you select to export will be written into this **one** Event Hub.
+You can create an Event Hubs within your Namespace and **all** the Event Types (Tables) you select to export will be written into this **one** Event Hubs.
 
 **Option 2:**
 
-Instead of exporting all the Event Types (Tables) into one Event Hub, you can export each table into a different Event Hub inside your Event Hub Namespace (one Event Hub per Event Type).
+Instead of exporting all the Event Types (Tables) into one Event Hubs, you can export each table into different Event Hubs inside your Event Hubs Namespace (one Event Hub per Event Type).
 
 In this option, Microsoft 365 Defender will create Event Hubs for you.
 
 > [!NOTE]
-> If you are using an Event Hub Namespace that is **not** part of an Event Hub Cluster, you will only be able to choose up to 10 Event Types (Tables) to export in each Export Settings you define, due to an Azure limitation of 10 Event Hubs per Event Hub Namespace.
+> If you are using an Event Hubs Namespace that is **not** part of an Event Hub Cluster, you will only be able to choose up to 10 Event Types (Tables) to export in each Export Settings you define, due to an Azure limitation of 10 Event Hubs per Event Hubs Namespace.
 
 For example:
 
-:::image type="content" source="../../media/005c1f6c10c34420d387f594987f9ffe.png" alt-text="An event hub section in Microsoft Azure portal" lightbox="../../media/005c1f6c10c34420d387f594987f9ffe.png":::
+:::image type="content" source="../../media/005c1f6c10c34420d387f594987f9ffe.png" alt-text="An event hubs section in Microsoft Azure portal" lightbox="../../media/005c1f6c10c34420d387f594987f9ffe.png":::
 
 If you choose this option, you can skip to the [Configure Microsoft 365 Defender to send email tables](#configure-microsoft-365-defender-to-send-email-tables) section.
 
-Create an Event Hub within your Namespace by selecting **Event Hubs** \> **+ Event Hub**.
+Create Event Hubs within your Namespace by selecting **Event Hubs** \> **+ Event Hub**.
 
 The Partition Count allows for more throughput via parallelism, so it is recommended to increase this number based on the load you are expecting. Default Message Retention and Capture values of 1 and Off are recommended.
 
-:::image type="content" source="../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png" alt-text="An event hub creation section in Microsoft Azure portal" lightbox="../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png":::
+:::image type="content" source="../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png" alt-text="An event hubs creation section in Microsoft Azure portal" lightbox="../../media/1db04b8ec02a6298d7cc70419ac6e6a9.png":::
  
 
-For this Event Hub (not namespace) you will need to configure a Shared Access Policy with Send, Listen Claims. Click on your **Event Hub** \> **Shared access policies** \> **+ Add** and then give it a Policy name (not used elsewhere) and check **Send** and **Listen**.
+For these Event Hubs (not namespace) you will need to configure a Shared Access Policy with Send, Listen Claims. Click on your **Event Hub** \> **Shared access policies** \> **+ Add** and then give it a Policy name (not used elsewhere) and check **Send** and **Listen**.
 
 :::image type="content" source="../../media/1867d13f46dc6a0f4cdae6cf00df24db.png" alt-text="Shared access policies page in Microsoft Azure portal" lightbox="../../media/1867d13f46dc6a0f4cdae6cf00df24db.png":::
 
@@ -123,7 +123,7 @@ For this Event Hub (not namespace) you will need to configure a Shared Access Po
 
 1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> with an account that meets all the following role requirements:
 
-    - Contributor role at the Event Hub *Namespace* Resource level or higher for the Event Hub that you will be exporting to. Without this permission, you will get an export error when you try to save the settings.
+    - Contributor role at the Event Hubs *Namespace* Resource level or higher for the Event Hubs that you will be exporting to. Without this permission, you will get an export error when you try to save the settings.
 
     - Global Admin or Security Admin Role on the tenant tied to Microsoft 365 Defender and Azure.
 
@@ -137,21 +137,21 @@ For this Event Hub (not namespace) you will need to configure a Shared Access Po
 
     **Forward events to event hub**: Select this checkbox.
 
-    **Event-Hub Resource ID**: This value is the Event Hub Namespace Resource ID you recorded when you setup the Event Hub.
+    **Event-Hub Resource ID**: This value is the Event Hubs Namespace Resource ID you recorded when you setup the Event Hubs.
 
-    **Event-Hub name**: If you created an Event Hub inside your Event Hub Namespace, paste the Event Hub name you recorded above.
+    **Event-Hub name**: If you created an Event Hubs inside your Event Hubs Namespace, paste the Event Hubs name you recorded above.
 
     If you choose to let Microsoft 365 Defender to create Event Hubs per Event Types (Tables) for you, leave this field empty.
 
-    **Event Types**: Select the Advanced Hunting tables that you want to forward to the Event Hub and then on to your custom app. Alert tables are from Microsoft 365 Defender, Devices tables are from Microsoft Defender for Endpoint (EDR), and Email tables are from Microsoft Defender for Office 365. Email Events records all Email Transactions. The URL (Safe Links), Attachment (Safe Attachments), and Post Delivery Events (ZAP) are also recorded and can be joined to the Email Events on the NetworkMessageId field.
+    **Event Types**: Select the Advanced Hunting tables that you want to forward to the Event Hubs and then on to your custom app. Alert tables are from Microsoft 365 Defender, Devices tables are from Microsoft Defender for Endpoint (EDR), and Email tables are from Microsoft Defender for Office 365. Email Events records all Email Transactions. The URL (Safe Links), Attachment (Safe Attachments), and Post Delivery Events (ZAP) are also recorded and can be joined to the Email Events on the NetworkMessageId field.
 
     :::image type="content" source="../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png" alt-text="Streaming API settings page in Microsoft Azure portal" lightbox="../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png":::
 
 1. Make sure to click **Submit**.
 
-### Verify that the events are being exported to the Event Hub
+### Verify that the events are being exported to the Event Hubs
 
-You can verify that events are being sent to the Event Hub by running a basic Advanced Hunting query. Select **Hunting** \> **Advanced Hunting** \> **Query** and enter the following query:
+You can verify that events are being sent to the Event Hubs by running a basic Advanced Hunting query. Select **Hunting** \> **Advanced Hunting** \> **Query** and enter the following query:
 
 ```console
 EmailEvents
@@ -162,11 +162,11 @@ EmailEvents
 |count
 ```
 
-This will show you how many emails were received in the last hour joined across all the other tables. It will also show you if you are seeing events that could be exported to the event hub. If this count shows 0, then you won't see any data going out to the Event Hub.
+This will show you how many emails were received in the last hour joined across all the other tables. It will also show you if you are seeing events that could be exported to the event hubs. If this count shows 0, then you won't see any data going out to the Event Hubs.
 
 :::image type="content" source="../../media/c305e57dc6f72fa9eb035943f244738e.png" alt-text="Advanced hunting page in Microsoft Azure portal" lightbox="../../media/c305e57dc6f72fa9eb035943f244738e.png":::
 
-Once you have verified there is data to export, you can view the Event Hub page to verify that messages are incoming. This can take up to one hour.
+Once you have verified there is data to export, you can view the Event Hubs page to verify that messages are incoming. This can take up to one hour.
 
 1. In Azure, go to **Event Hubs** \> Click on the **Namespace** \> **Event Hubs** \> Click on the **Event Hub**.
 1. Under **Overview**, scroll down and in the Messages graph you should see Incoming Messages. If you don't see any results, then there will be no messages
