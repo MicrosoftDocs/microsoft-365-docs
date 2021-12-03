@@ -65,20 +65,23 @@ To enable the Corelight integration, you’ll need to take the following steps:
 **Applies to**: Corelight Sensor software v24.2 and later
 
 > [!NOTE]
-> To enable on a previous release that supports sending data, you must first execute: `corelight-client configuration update --enable.adfiot 1`
+> To enable on a previous release that supports sending data, you must first execute: `corelight-client configuration update --enable.adfiot 1`.
+
+> [!NOTE]
+>Note that you will need internet connectivity for your sensor to reach both the Defender and Corelight cloud services for the solution to work.
 
 #### Enabling in the Corelight Sensor GUI
 
-1. In the Corelight Sensor GUI configuration section, select **Sensor** \> **Export**
-2. From the list, go to **EXPORT TO KAFKA** and select the switch to turn it on
+1. In the Corelight Sensor GUI configuration section, select **Sensor** \> **Export**.
+2. From the list, go to **EXPORT TO KAFKA** and select the switch to turn it on.
 
    ![Image of data sources](images/exporttokafka.png)
 
-3. Next, turn on **EXPORT TO AZURE DEFENDER FOR IOT** and enter your tenant ID, noted in Step 1, in the TENANT ID field
+3. Next, turn on **EXPORT TO AZURE DEFENDER FOR IOT** and enter your tenant ID, noted in Step 1, in the TENANT ID field.
 
    ![Image of data sources](images/exporttodiot.png)
 
-4. Select **Apply Changes**
+4. Select **Apply Changes**.
 
    ![Image of data sources](images/corelightapply.png)
 
@@ -89,7 +92,7 @@ To enable the Corelight integration, you’ll need to take the following steps:
 
 You can turn on **EXPORT TO KAFKA** and **EXPORT TO AZURE DEFENDER FOR IOT** using the following command in the corelight-client:
 
-`corelight-client configuration update --bro.export.kafka.defender.enable true --bro.export.kafka.defender.tenant\_id <your tenant>`
+`corelight-client configuration update --bro.export.kafka.defender.enable true --bro.export.kafka.defender.tenant\_id <your tenant>`.
 
 > [!IMPORTANT]
 > If you're already using Kafka export, contact Corelight Support for an alternate configuration.
@@ -106,8 +109,6 @@ To configure only sending the minimal set of logs:
 
 5. Select **Apply Changes**
 
-> [!NOTE]
->Note that you will need internet connectivity for your sensor to reach both the Defender and Corelight cloud services for the solution to work.
 
 ## See also
 
