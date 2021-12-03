@@ -2,7 +2,6 @@
 title: Stop and quarantine file API
 description: Learn how to stop running a file on a device and delete the file in Microsoft Defender for Endpoint. See an example.
 keywords: apis, graph api, supported apis, stop and quarantine file
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -45,7 +44,7 @@ Stop execution of a file on a device and delete it.
 > [!IMPORTANT]
 > You can only take this action if:
 >
-> - The device you're taking the action on is running Windows 10, version 1703 or later
+> - The device you're taking the action on is running Windows 10, version 1703 or later, or Windows 11
 > - The file does not belong to trusted third-party publishers or is not signed by Microsoft
 > - Microsoft Defender Antivirus must at least be running on Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
