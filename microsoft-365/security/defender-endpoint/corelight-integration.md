@@ -104,10 +104,9 @@ To configure only sending the minimal set of logs:
 3. Select **All**
 4. Then select **x** beside the following logs to ensure they continue to flow to microsoft:  
     `dns  conn  files  http  ssl  ssh  x509  snmp  smtp  ftp  sip  dhcp  notice`
-
-    The logs that flow to Microsoft may expand over time.
-
 5. Select **Apply Changes**
+
+The list of logs that flow to Microsoft may expand over time.
 
 ## See also
 
