@@ -111,8 +111,12 @@ You can create as many placeholders as you think are necessary. When you are don
 If you need to edit an existing template or to delete or unpublish a template, follow these steps.
 
 1. From a Sharepoint document library, select **New** > **Edit New menu**. 
+ 
+   ![Screenshot of document library with the Edit New menu option highlighted.](../media/content-understanding/content-assembly-edit-template-1.png)
 
 2. On the **Edit New menu** panel, in the **Modern templates** section, select the published or draft template you want to edit.
+ 
+   ![Screenshot of the Edit New menu panel showing the Modern templates section.](../media/content-understanding/content-assembly-edit-template-2.png)
 
 3. Select **Edit** to open the template viewer where you can edit the template.
 
@@ -120,17 +124,20 @@ If you need to edit an existing template or to delete or unpublish a template, f
 
 You can use a modern template to quickly create similar documents without having to start from scratch. To create a document using a modern template, follow these steps:
 
-
 1. From a Sharepoint document library, select **New**, and then select the modern template you want to use.
+ 
+   ![Screenshot of document library showing the modern template choices on the New menu.](../media/content-understanding/content-assembly-create-document-1.png)
 
 2. The template opens in the template viewer.
 
-3. Fill in the placeholder values and select **Create**.
- 
-    To help reduce time and effort involved in filling values for placeholders, SharePoint Syntex provides:
+3. On the **Fill in the placeholder values** panel, enter the information, and then select **Create**.
 
-       - Suggestions to help you easily pick values when selecting values from a list.
-       - Autofill placeholder values if able to uniquely identify a record for placeholders associated with the same list.
+   ![Screenshot of document library showing the modern template choices on the New menu.](../media/content-understanding/content-assembly-create-document-2.png)
+
+   To help reduce time and effort involved in filling values for placeholders, SharePoint Syntex provides:
+
+      - Suggestions to help you easily pick values when selecting values from a list.
+      - Autofill placeholder values if able to uniquely identify a record for placeholders associated with the same list.
 
 > [!NOTE]
 > - Only Word documents – “.docx” extension, are supported for templatization.
