@@ -46,7 +46,7 @@ Incidents in Microsoft 365 Defender are the logical starting points for analysis
 
 ## Next step
 
-[![Prepare your organization and Microsoft 365 tenant.](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
+:::image type="content" source="../../media/first-incident-overview/first-incident-path.png" alt-text="**Remediate** option in **Respond to your first incident** page" lightbox="../../media/first-incident-overview/first-incident-path.png":::
 
 Make sure your organization and Microsoft 365 tenant is [prepared for incident handling](first-incident-prepare.md).
 
