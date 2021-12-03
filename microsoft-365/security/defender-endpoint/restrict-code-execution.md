@@ -2,7 +2,6 @@
 title: Restrict app execution API
 description: Use this API to create calls related to restricting an application from executing.
 keywords: apis, graph api, supported apis, collect investigation package
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -47,7 +46,7 @@ Restrict execution of all applications on the device except a predefined set.
 
 > [!IMPORTANT]
 >
-> - This action is available for devices on Windows 10, version  1709 or later.
+> - This action is available for devices on Windows 10, version  1709 or later, and on Windows 11.
 > - This feature is available if your organization uses Microsoft Defender Antivirus.
 > - This action needs to meet the Windows Defender Application Control code integrity policy formats and signing requirements. For more information, see [Code integrity policy formats and signing](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing).
 
