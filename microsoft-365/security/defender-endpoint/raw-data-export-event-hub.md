@@ -49,7 +49,7 @@ ms.custom: api
 
    In order to get your **Event Hubs resource ID**, go to your Azure Event Hubs namespace page on [Azure](https://ms.portal.azure.com/) > properties tab \> copy the text under **Resource ID**:
 
-   ![Image of event hub resource Id1.](images/event-hub-resource-id.png)
+   :::image type="content" alt-text="Image of event hub resource Id1." source="images/event-hub-resource-id.png" lightbox="images/event-hub-resource-id.png":::
 
 7. Choose the events you want to stream and click **Save**.
 
