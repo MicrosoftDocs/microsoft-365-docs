@@ -141,9 +141,9 @@ You can use a modern template to quickly create similar documents without having
 
 > [!NOTE]
 > - Only Word documents (.docx extension) are supported for templatization.
-> - The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library.
-> - You can create placeholders only for text. Currently, images, smart art, tables, and bullet lists are not supported.
-> - Once a document is created from a template, it is not associated with the template.
+ - The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library.
+ - You can create placeholders only for text. Currently, images, smart art, tables, and bullet lists are not supported.
+ - Once a document is created from a template, it is not associated with the template.
 
 
 
