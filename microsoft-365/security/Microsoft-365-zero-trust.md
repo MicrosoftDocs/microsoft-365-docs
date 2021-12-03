@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 zero trust deployment plan"
+title: "Microsoft 365 Zero Trust deployment plan"
 f1.keywords:
 - CSH
 ms.author: bcarter
@@ -15,7 +15,7 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - remotework
-description: "Implement zero trust principles, architecture, and capabilities for Microsoft 365."
+description: "Implement Zero Trust principles, architecture, and capabilities for Microsoft 365."
 ---
 
 # Microsoft 365 Zero Trust deployment plan
@@ -49,7 +49,7 @@ Microsoft 365 is built intentionally with many security and information protecti
 This illustration represents the work of deploying Zero Trust capabilities. This work is broken into units of work that can be configured together, starting from the bottom and working to the top to ensure that prerequisite work is complete.
 
 
-:::image type="content" source="../media/zero-trust/m365-zero-trust-deployment-stack.png" alt-text="Microsoft 365 zero trust deployment stack" lightbox="../media/zero-trust/m365-zero-trust-deployment-stack.png":::
+:::image type="content" source="../media/zero-trust/m365-zero-trust-deployment-stack.png" alt-text="Microsoft 365 Zero Trust deployment stack" lightbox="../media/zero-trust/m365-zero-trust-deployment-stack.png":::
 
 In this illustration:
 - Zero Trust begins with a foundation of identity and device protection. 
