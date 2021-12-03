@@ -25,9 +25,10 @@ ms.custom: seo-marvel-apr2020
 
 Modern Authentication, is a method of identity management that offers more secure user authentication and authorization, is available for Skype for Business server on-premises and Exchange server on-premises, and split-domain Skype for Business hybrids.
 
- **Important** Would you like to know more about Modern Authentication (MA) and why you might prefer to use it in your company or organization? Check [this document](hybrid-modern-auth-overview.md) for an overview. If you need to know what Skype for Business topologies are supported with MA, that's documented here!
+> [!IMPORTANT]
+> Would you like to know more about Modern Authentication (MA) and why you might prefer to use it in your company or organization? Check [this document](hybrid-modern-auth-overview.md) for an overview. If you need to know what Skype for Business topologies are supported with MA, that's documented here!
 
- **Before we begin**, I use these terms:
+**Before we begin**, I use these terms:
 
 - Modern Authentication (MA)
 
@@ -69,7 +70,8 @@ As you can see there are four different places to turn on MA! For the best user 
 
 See the [Supportability topic for Skype for Business with MA](/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported) for supported topologies.
 
- **Important** Double-check that you've met all the prerequisites before you begin. You'll find that information in [Hybrid modern authentication overview and prerequisites](hybrid-modern-auth-overview.md).
+> [!IMPORTANT]
+> Double-check that you've met all the prerequisites before you begin. You'll find that information in [Hybrid modern authentication overview and prerequisites](hybrid-modern-auth-overview.md).
 
 ## Collect all HMA-specific info you'll need
 
