@@ -205,14 +205,17 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
 You can verify cross-tenant mailbox migration configuration by running [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) cmdlet against the cross-tenant migration endpoint that you created on your target tenant.
 
-   > [!NOTE] (before preparing target(s) object(s))
-   > target tenant:
+   > [!NOTE]
+   >
+   > - target tenant:
+   > 
    > Test-MigrationServerAvailability -Endpoint "[the name of your cross-tenant migration endpoint]"
+   >
    > Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
-   > source tenant:
+   >
+   > - source tenant:
+   > 
    > Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
-   > [!NOTE] (source target object creation has to be done before, at least for the email address who will be tested)
-   > Test-MigrationServerAvailability -Endpoint "[the name of your cross-tenant migration endpoint]" -TestMailbox "[email address of a source mailbox that is part of your migration scope]"
    
 
 ### Move mailboxes back to the original source
