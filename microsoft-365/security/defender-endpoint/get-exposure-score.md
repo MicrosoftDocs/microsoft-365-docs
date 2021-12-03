@@ -2,7 +2,6 @@
 title: Get exposure score
 description: Retrieves the organizational exposure score.
 keywords: apis, graph api, supported apis, get, exposure score, organizational exposure score
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
