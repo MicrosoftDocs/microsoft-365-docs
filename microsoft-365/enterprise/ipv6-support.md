@@ -3,7 +3,7 @@ title: "IPv6 support in Microsoft 365 services"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/01/2021
+ms.date: 12/03/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -55,7 +55,7 @@ Please be aware IPv6 is not supported in Skype for Business and can no longer be
 
 ### Microsoft Teams, SIP Gateway, and IPV6
 
-Microsoft Teams Direct Routing and SIP Gateway only supports IPv4. The Microsoft Teams service and client support both IPv4 and IPv6. If you want to control communications to Microsoft Teams, use the IP address ranges in [Microsoft 365 URLs and IP address ranges](urls-and-ip-address-ranges.md).
+Microsoft Teams Direct Routing and SIP Gateway only support IPv4. The Microsoft Teams service and client support both IPv4 and IPv6. If you want to control communications to Microsoft Teams, use the IP address ranges in [Microsoft 365 URLs and IP address ranges](urls-and-ip-address-ranges.md).
   
 ### Exchange Online Protection and IPv6
 
