@@ -88,7 +88,7 @@ The large number of unmanaged network devices deployed in an organization create
 
 Network devices are not managed as standard endpoints, as Defender for Endpoint doesn't have a sensor built into the network devices themselves. These types of devices require an agentless approach where a remote scan will obtain the necessary information from the devices. To do this, a designated Microsoft Defender for Endpoint device will be used on each network segment to perform periodic authenticated scans of preconfigured network devices. Once discovered, Defender for Endpoint’s threat and vulnerability management capabilities provide integrated workflows to secure discovered switches, routers, WLAN controllers, firewalls, and VPN gateways.
 
-For more information, see [Network devices](network-devices.md)
+For more information, see [Network devices](network-devices.md).
 
 ## Device discovery Integrations
 
