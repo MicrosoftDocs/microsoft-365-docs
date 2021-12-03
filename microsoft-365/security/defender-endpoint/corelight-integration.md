@@ -102,7 +102,7 @@ To configure only sending the minimal set of logs:
 1. In the Corelight Sensor GUI, go to the Kafka section
 2. Go to **Zeek logs to exclude**
 3. Select **All**
-4. Then select **x** beside the following logs to ensure they continue to flow to microsoft:  
+4. Then select **x** beside the following logs to ensure they continue to flow to Microsoft:  
     `dns  conn  files  http  ssl  ssh  x509  snmp  smtp  ftp  sip  dhcp  notice`
 5. Select **Apply Changes**
 
