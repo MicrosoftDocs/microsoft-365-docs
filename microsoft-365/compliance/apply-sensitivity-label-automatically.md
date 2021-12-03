@@ -378,41 +378,6 @@ For more information about the PowerShell cmdlets that support auto-labeling pol
 - [Set-AutoSensitivityLabelPolicy](/powershell/module/exchange/set-autosensitivitylabelpolicy)
 - [Set-AutoSensitivityLabelRule](/powershell/module/exchange/set-autosensitivitylabelrule)
 
-## Recent enhancements for auto-labeling policies
-
-The recent enhancements for auto-labeling policies for OneDrive and SharePoint have the following improvements from the previous version:
-
-- Maximum of 100 auto-labeling policies per tenant instead of 10.
-
-- Support for all OneDrive and SharePoint sites (the default for new policies) and the ability to select available SharePoint sites instead of having to enter each site by URL. When you use the new default of **All**, all existing SharePoint sites and OneDrive accounts in your tenant and any newly created sites and accounts are automatically included in the policy. When you select **Choose sites** for SharePoint, you can still manually enter sites by their URL if needed.
-
-- When you specify individual sites in an auto-labeling policy, up to 100 sites are now supported instead of 10 sites.
-
-- Maximum of 1,000,000 matched files per auto-labeling policy in simulation mode. If more than this number of files are matched during simulation, you won't be able to turn on the policy. Reconfigure the auto-labeling policy to match a smaller number of files, and rerun simulation.
-
-- Simulation improvements:
-  - Running the auto-labeling policy in simulation mode completes within 12 hours instead of up to 48 hours.
-  - Better performance by providing up to 100 randomly sampled matched files for review for each site (OneDrive or SharePoint) instead of every matched item for review.
-  - When simulation is complete, an email notification is sent to the user configured to receive [activity alerts](alert-policies.md).
-
-- Improvements to help you review matched items:
-  - Additional metadata information for the sampled matched items.
-  - Ability to export information about the matched items, such as the SharePoint site name and file owner. You can use this information to pivot and analyze the matched files, and delegate to file owners for review if needed.
-
-> [!TIP]
-> To take advantage of the higher number of policies and sites supported, use PowerShell to efficiently create new policies and add additional sites to existing policies. For more information, see the [Use PowerShell for auto-labeling policies](#use-powershell-for-auto-labeling-policies) section on this page.
-
-### How to determine whether your tenant has the new enhancements
-
-When your tenant has the new enhancements, you'll see the following notification on the **Auto-labeling** tab:
-
-![Banner to confirm a tenant has the new enhancements.](../media/auto-labeling-updatedbanner.png)
-
-> [!NOTE]
-> If you had any auto-labeling policies that were in simulation mode when your tenant received the new enhancements, you must re-run the simulation. If this scenario applies to you, you'll be prompted to select **Restart Simulation** when you review the simulation. If you don't restart the simulation, it won't complete.
->
-> However, the enhancements still apply to any auto-labeling policies running without simulation and all new auto-labeling policies you create.
-
 ## Tips to increase labeling reach
 
 Although auto-labeling is one of the most efficient ways to classify, label, and protect Office files that your organization owns, check whether you can supplement it with any of the additional methods to increase your labeling reach:
