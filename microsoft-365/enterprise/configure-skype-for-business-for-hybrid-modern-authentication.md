@@ -87,7 +87,7 @@ After you've double-checked that you meet the [prerequisites](hybrid-modern-auth
 
 - **SFB 2015 CU5 Web Service URLs**
 
-you'll need internal and external web service URLs for all SfB 2015 pools deployed. To obtain these, run the following from Skype for Business Management Shell:
+You'll need internal and external web service URLs for all SfB 2015 pools deployed. To obtain these, run the following from Skype for Business Management Shell:
 
 ```powershell
 Get-CsService -WebServer | Select-Object PoolFqdn, InternalFqdn, ExternalFqdn | FL
