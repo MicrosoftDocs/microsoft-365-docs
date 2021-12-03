@@ -71,7 +71,7 @@ On the **All placeholders** panel:
 
 2. In the **Choose the input type for the placeholder value** section, select **Manual input only**.
 
-3. In the **Choose the data type** field, select the data type you want to associate with the placeholder. Currently, there are six data types available: single line of text, multiple lines of text, data & time, email, hyperlink, and number.
+3. In the **Choose the data type** field, select the data type you want to associate with the placeholder. Currently, there are six data types available: single line of text, multiple lines of text, date & time, email, hyperlink, and number.
 
 4. Select **Add**.
 
