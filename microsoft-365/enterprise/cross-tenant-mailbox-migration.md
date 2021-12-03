@@ -207,16 +207,15 @@ You can verify cross-tenant mailbox migration configuration by running [Test-Mig
 
    > [!NOTE]
    >
-   > - target tenant:
+   > - Target tenant:
    > 
    > Test-MigrationServerAvailability -Endpoint "[the name of your cross-tenant migration endpoint]"
    >
    > Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
    >
-   > - source tenant:
+   > - Source tenant:
    > 
-   > Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
-   
+   > Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability 
 
 ### Move mailboxes back to the original source
 
