@@ -174,4 +174,4 @@ You should also hold down the CTRL key at the same time you right-click the icon
 
 [Link back to the Modern Authentication overview](hybrid-modern-auth-overview.md).
 
-Do you need to know how to use Modern Authentication for your Skype for Business clients? We've got steps [here](./hybrid-modern-auth-overview.md).
+Do you need to know how to use Modern Authentication for your Skype for Business clients? We've got steps here: [Hybrid modern authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](./hybrid-modern-auth-overview.md).
