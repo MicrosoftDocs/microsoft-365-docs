@@ -47,7 +47,7 @@ You can view specific requirements for Office and Exchange below, or use the [Ce
 
 Centralized Deployment doesn't support the following:
 
-- Add-ins that target Word, Excel, or PowerPoint in Office 2013
+- Add-ins that target Office MSI version (except Outlook 2016)
 - An on-premises directory service
 - Add-in Deployment to an Exchange On-Prem Mailbox
 - Add-in deployment to SharePoint
@@ -140,7 +140,7 @@ Centralized Deployment supports assignments to individual users, groups, and eve
 
 Take a look at the following example where Sandra, Sheila, and the Sales Department group are assigned to an add-in. Because the West Coast Sales Department is a nested group, Bert and Fred aren't assigned to an add-in.
 
-![Diagram of sales department.](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
+![MicrosoftTeams-image](https://user-images.githubusercontent.com/89943918/144523499-6ec53cd8-a3d6-47ee-ac53-82fa1dfef0b8.png)
 
 
 ### Find out if a group contains nested groups
