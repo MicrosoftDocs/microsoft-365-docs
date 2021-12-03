@@ -2,7 +2,6 @@
 title: Run antivirus scan API
 description: Use this API to create calls related to running an antivirus scan on a device.
 keywords: apis, graph api, supported apis, remove device from isolation
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -44,7 +43,7 @@ Initiate Microsoft Defender Antivirus scan on a device.
 
 > [!IMPORTANT]
 >
-> - This action is available for devices on Windows 10, version  1709 or later.
+> - This action is available for devices on Windows 10, version  1709 or later, and on Windows 11.
 > - A Microsoft Defender Antivirus (Microsoft Defender AV) scan can run alongside other antivirus solutions, whether Microsoft Defender Antivirus is the active antivirus solution or not. Microsoft Defender Antivirus can be in Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility.md).
 
 ## Permissions
