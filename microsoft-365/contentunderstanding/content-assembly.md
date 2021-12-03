@@ -34,15 +34,15 @@ Follow these steps to create a modern template.
 
 2. Upload the existing Word document that you want to use as a basis for creating a modern template. 
 
-> [!NOTE]
-> Currently, you can upload only Word documents (“.docx” extension) to create templates. Upload Word documents from your local storage or desktop.
+   > [!NOTE]
+   > Currently, you can upload only Word documents (“.docx” extension) to create templates. Upload Word documents from your local storage or desktop.
  
    ![Screenshot of upload page where you select a document.](../media/content-understanding/content-assembly-create-template-2.png)
 
 3. After you upload the document, the document is displayed in the template viewer where you can convert this document to a template.
 
-> [!NOTE]
-> Currently, the document is displayed without formatting. This is a technical limitation that will be resolved in a future release.
+   > [!NOTE]
+   > Currently, the document is displayed without formatting. This is a technical limitation that will be resolved in a future release.
  
    ![Screenshot of the document in the template viewer.](../media/content-understanding/content-assembly-create-template-3.png)
 
@@ -133,7 +133,10 @@ You can use a modern template to quickly create similar documents without having
        - Autofill placeholder values if able to uniquely identify a record for placeholders associated with the same list.
 
 > [!NOTE]
-> - Only Word documents – “.docx” extension, are supported for templatization. <br> - 	The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library. <br> - You can create placeholders for Text. Currently, images, smart art, tables, and bullet lists are not supported, <br> - Once a document is created from a template, it is not associated with the template.
+> - Only Word documents – “.docx” extension, are supported for templatization.
+> - 	The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library.
+> - You can create placeholders for Text. Currently, images, smart art, tables, and bullet lists are not supported.
+> - Once a document is created from a template, it is not associated with the template.
 
 
 
