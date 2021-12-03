@@ -18,6 +18,9 @@ ms.collection: M365-security-compliance
 
 # Manage Microsoft Defender for Endpoint Plan 1
 
+**Applies to**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 > [!TIP]
 > If you have Microsoft 365 E3 or A3 but not Microsoft 365 E5 or A5, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) to sign up for the preview program!
 
@@ -40,7 +43,7 @@ To manage your security intelligence and product updates, see [Manage Microsoft 
 
 Defender for Endpoint offers you much flexibility and configuration options. You can adjust and fine-tune your settings to suit your organization’s needs. For example, you can use Microsoft Endpoint Manager, Group Policy, and other methods to manage your endpoint security settings. 
 
-To learn more, see [Manage Defender for Endpoint](manage-atp-post-migration.md).
+To learn more, see [Manage Defender for Endpoint](manage-mde-post-migration.md).
 
 ## Address false positives/negatives
 
