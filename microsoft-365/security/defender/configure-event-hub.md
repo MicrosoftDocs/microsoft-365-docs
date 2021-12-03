@@ -65,14 +65,14 @@ Learn how to configure your Event Hub so that it can ingest events from Microsof
 
 ## Set up Event Hub namespace
 
-1. Create an Event Hub Namespace:
+1. Create an Event Hubs Namespace:
 
     Go **to Event Hubs \> Add** and select the pricing tier, throughput units and Auto-Inflate (requires standard pricing and under features) appropriate for the load you are expecting. For more information, see [Pricing - Event Hubs \| Microsoft Azure](https://azure.microsoft.com/pricing/details/event-hubs/)
 
     > [!NOTE]
     > You can use an existing event-hub, but the throughput and scaling are set at the namespace level so it is recommended to place an event-hub in its own namespace.
 
-   :::image type="content" source="../../media/ebc4ca37c342ad1da75c4aee4018e51a.png" alt-text="The event hub section in Microsoft Azure portal" lightbox="../../media/ebc4ca37c342ad1da75c4aee4018e51a.png":::
+   :::image type="content" source="../../media/ebc4ca37c342ad1da75c4aee4018e51a.png" alt-text="The event hubs section in Microsoft Azure portal" lightbox="../../media/ebc4ca37c342ad1da75c4aee4018e51a.png":::
 
 1. You will also need the Resource ID of this Event Hubs Namespace. Go to your Azure Event Hubs namespace page \> Properties. Copy the text under Resource ID and record it for use during the Microsoft 365 Configuration section below.
 

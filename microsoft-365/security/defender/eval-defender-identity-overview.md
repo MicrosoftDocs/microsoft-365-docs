@@ -38,7 +38,7 @@ Use the following steps to enable and pilot Microsoft Defender for Identity.
 
 The following table describes the steps in the illustration.
 
-| |Step  |Description  |
+| Serial Number|Step  |Description  |
 |---------|---------|---------|
 |1|[Review architecture requirements and key concepts](eval-defender-identity-architecture.md)    | Understand the Defender for Identity architecture and be sure your environment meets the architecture prerequisites.       |
 |2|[Enable the evaluation environment](eval-defender-identity-enable-eval.md)     |   Follow the steps to set up the evaluation environment.      |

@@ -67,7 +67,7 @@ For more information, see [Prioritize incidents](incident-queue.md).
 
 You can manage incidents from the **Manage incident** pane for an incident. Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="The **Manage incident** pane of the **Incidents & alerts** section in the Microsoft 365 Defender portal" ligthbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="The **Manage incident** pane of the **Incidents & alerts** section in the Microsoft 365 Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage.png":::
 
 You can display this pane from the **Manage incident** link on the:
 

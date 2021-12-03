@@ -43,17 +43,16 @@ Use the following steps to set up your Microsoft Defender for Identity environme
 
 Sign in to the Defender for Identity portal to create your instance and then connect this instance to your Active Directory environment. 
 
-|  |Step     |More information  |
+|  Serial Number|Step     |More information  |
 |---------|---------|---------|
 |1     | Create the Defender for Identity instance        | [Quickstart: Create your Microsoft Defender for Identity instance](/defender-for-identity/install-step1)        |
 |2     | Connect the Defender for Identity instance to your Active Directory forest   | [Quickstart: Connect to your Active Directory Forest](/defender-for-identity/install-step2)  |
-| | |
 
 ## Step 2. Install and configure the sensor
 
 Next, download, install, and configure the Defender for Identity sensor on the domain controllers and AD FS servers in your on-premises environment.
 
-|  |Step     |More information  |
+| Serial Number |Step     |More information  |
 |---------|---------|---------|
 |1     | Determine how many Microsoft Defender for Identity sensors you need.        | [Plan capacity for Microsoft Defender for Identity](/defender-for-identity/capacity-planning)   |
 |2     | Download the sensor setup package  |  [Quickstart: Download the Microsoft Defender for Identity sensor setup package](/defender-for-identity/install-step3)   |
