@@ -75,15 +75,15 @@ To enable the Corelight integration, you’ll need to take the following steps:
 1. In the Corelight Sensor GUI configuration section, select **Sensor** \> **Export**.
 2. From the list, go to **EXPORT TO KAFKA** and select the switch to turn it on.
 
-   ![Image of data sources](images/exporttokafka.png)
+   ![Image of kafka export](images/exporttokafka.png)
 
 3. Next, turn on **EXPORT TO AZURE DEFENDER FOR IOT** and enter your tenant ID, noted in Step 1, in the TENANT ID field.
 
-   ![Image of data sources](images/exporttodiot.png)
+   ![Image of iot export](images/exporttodiot.png)
 
 4. Select **Apply Changes**.
 
-   ![Image of data sources](images/corelightapply.png)
+   ![Apply image ](images/corelightapply.png)
 
 > [!NOTE]
 > Configuration options in Kafka (excluding Log Exclusion and Filters) should not be changed. Any changes made will be ignored.

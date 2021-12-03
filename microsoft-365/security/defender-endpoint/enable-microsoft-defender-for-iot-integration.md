@@ -56,7 +56,7 @@ To enable Microsoft Defender for IoT, the user must have the following roles:
 
 With an Azure subscription selected, you can add a network sensor.
 
-To add a network sensor, under **Set up network sensors** choose the **Microsoft Defender for IoT** link. This brings you to the Onboard sensor setup process in the Azure portal. For more information, see [Manage sensors with Defender for IoT in the Azure portal](https://docs.microsoft.com/azure/defender-for-iot/organizations/how-to-manage-sensors-on-the-cloud).
+To add a network sensor, under **Set up network sensors** choose the **Microsoft Defender for IoT** link. This brings you to the Onboard sensor setup process in the Azure portal. For more information, see [Manage sensors with Defender for IoT in the Azure portal](/azure/defender-for-iot/organizations/how-to-manage-sensors-on-the-cloud).
 
 ## Turn off subscription integration
 
