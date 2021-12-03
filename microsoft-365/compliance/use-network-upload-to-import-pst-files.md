@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.article: article
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: 
@@ -32,7 +32,7 @@ Here are the step-by-step instructions required to use network upload to bulk-im
 
 [Step 2: Upload your PST files to Microsoft 365](#step-2-upload-your-pst-files-to-microsoft-365)
 
-[(Optional) Step 3: View a list of the PST files uploaded](#optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365)
+[(Optional) Step 3: View a list of the PST files uploaded](#optional-step-3-view-a-list-of-the-pst-files-uploaded-to-microsoft-365)
 
 [Step 4: Create the PST Import mapping file](#step-4-create-the-pst-import-mapping-file)
 
