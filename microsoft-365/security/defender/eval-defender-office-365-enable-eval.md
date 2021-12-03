@@ -53,7 +53,7 @@ Log on to your existing Microsoft Defender for Office 365 environment or tenant 
 3. Scroll down to the Add-On section (or search for "Defender") to locate the Microsoft Defender for Office 365 plans.
 4. Click Details next the plan you want to evaluate.
 
-   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="The **Details button** to click next" lightbox="../../media/mdo-eval/2_mdo-eval-license-details.png"::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="The **Details button** to click next" lightbox="../../media/mdo-eval/2_mdo-eval-license-details.png":::
 
 5. Click the *Start free trial* link.
 
@@ -111,7 +111,7 @@ Use the instructions here to activate your Microsoft Defender for Office 365 eva
 
 6. Now choose whether external email routes to Exchange Online directly, or to a third-party gateway or service, and click Next.
 
-   :::image type="content" source="../../media/mdo-eval/5_mdo-eval-activate-eval.png" alt-text="**Routing settings** pane in Microsoft Defender for Office 365" lightbox=../../media/mdo-eval/5_mdo-eval-activate-eval.png:::
+   :::image type="content" source="../../media/mdo-eval/5_mdo-eval-activate-eval.png" alt-text="**Routing settings** pane in Microsoft Defender for Office 365" lightbox="../../media/mdo-eval/5_mdo-eval-activate-eval.png":::
 
 7. If you use a third-party gateway, select the vendor name from the drop-down along with the inbound connector associated with that solution. When you've listed your answers, click Next.
 

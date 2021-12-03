@@ -92,7 +92,7 @@ Microsoft recommends enabling the components of Microsoft 365 in the order illus
 
 The following table describes this illustration.
 
-|      |Step  |Description  |
+|  Serial Number   |Step  |Description  |
 |------|---------|---------|
 |1     | [Create the evaluation environment](eval-create-eval-environment.md)       |This step ensures you have the trial license for Microsoft 365 Defender.         |
 |2     | [Enable Defender for Identity](eval-defender-identity-overview.md)        | Review the architecture requirements, enable the evaluation, and walk through tutorials for identifying and remediating different attack types.   |
@@ -101,7 +101,6 @@ The following table describes this illustration.
 |5     | [Enable Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)        |  Ensure you meet the architecture requirements, enable the evaluation, and then create the pilot environment.        |
 |6     | [Investigate and respond to threats](eval-defender-investigate-respond.md)        |   Simulate an attack and begin using incident response capabilities.      |
 |7     | [Promote the trial to production](eval-defender-promote-to-production.md)        | Promote the Microsoft 365 components to production one-by-one.        |
-| | | |
 
 This is a commonly recommended order designed to gain the value of the capabilities quickly based on how much effort is typically required to deploy and configure the capabilities. For example, Defender for Office 365 can be configured in less time than it takes to enroll devices in Defender for Endpoint. Of course, you can prioritize the components to meet your business needs and enable these in a different order.
 
