@@ -18,6 +18,7 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkMAC
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -32,6 +33,15 @@ Microsoft 365 or Office 365 subscription comes with a set of admin roles that yo
 
 The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> lets you manage Azure AD roles and Microsoft Intune roles. However, these roles are a subset of the roles available in the Azure AD portal and the Intune admin center.
 
+## Watch: What is an admin?
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
+
+1. While signed into Microsoft 365, select the app launcher. If you see the Admin button, then you're an admin.
+1. Select **Admin** to go to the Microsoft 365 admin center.
+1. In the left navigation pane, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
+1. Select the person who you want to make an admin. The user's details appear in the right dialog box.
+
 ## Before you begin
 
 Looking for the full list of detailed Azure AD role descriptions you can manage in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>? Check out Administrator role permissions in Azure Active Directory. [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
@@ -39,10 +49,6 @@ Looking for the full list of detailed Azure AD role descriptions you can manage 
 Looking for the full list of detailed Intune role descriptions you can manage in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>?  Check out [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
 For more information on assigning roles in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, see [Assign admin roles](assign-admin-roles.md).
-
-## Watch: What is an admin?
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
 
 ## Security guidelines for assigning roles
 

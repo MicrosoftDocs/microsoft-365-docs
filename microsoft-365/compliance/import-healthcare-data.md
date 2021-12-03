@@ -56,6 +56,9 @@ For step-by-step instructions for creating an app in Azure AD, see [Register an 
 
 The next step is to create a text file that contains information about employees' access to patient health records in your organization's healthcare EHR system. As previously explained, you need to determine how to generate this text file from your healthcare EHR system. The Healthcare connector workflow requires a text file with tab-separated values to map that data in the text file with required connector schema. The file format supported is a comma (.csv), pipe (.psv), or tab (.tsv) separated text file.
 
+> [!NOTE]
+> The maximum size of the text file that contains the auditing data is 3 GB. The maximum number of rows is 5 million. Also, be sure to only include the relevant auditing data from your healthcare EHR system.
+
 The following table lists the fields that are required to enable insider risk management scenarios. A subset of these fields is mandatory. These fields are highlighted with an asterisk (*). If any of the mandatory fields are missing in the text file, the file won't be validated and data in the file won't be imported.
 
 |Field|Category|
@@ -66,8 +69,8 @@ The following table lists the fields that are required to enable insider risk ma
 | Email Address (UPN) or SamAccountName*<br/>Employee User Name <br/> Employee Id <br/> Employee Last Name <sup>1</sup> <br/> Employee First Name <sup>1</sup> | These fields are used to identify employee profile information for address and name matching required to determine access to Family/Neighbor/Employee records. |
 |||
 
-> [!NOTE]
-> <sup>1</sup>This field may not be available by default in your healthcare system. You need to configure the export to ensure the text file contains this field.
+> [!NOTE] 
+> <sup>1</sup>This field may not be available by default in your healthcare EHR system. You need to configure the export to ensure the text file contains this field.
 
 ## Step 3: Create the Healthcare connector
 
@@ -125,6 +128,9 @@ You can also click **Edit** to change the Azure App ID or the column header name
 
 The last step in setting up a Healthcare connector is to run a sample script that will upload the healthcare EHR auditing data in the text file (that you created in Step 1) to the Microsoft cloud. Specifically, the script uploads the data to the Healthcare connector. After you run the script, the Healthcare connector that you created in Step 3 imports the healthcare EHR auditing data to your Microsoft 365 organization where it can be accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run it automatically on a daily basis so the most current employee termination data is uploaded to the Microsoft cloud. See [(Optional) Step 6: Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
 
+> [!NOTE]
+> As previously stated, the maximum size of the text file that contains the auditing data is 3 GB. The maximum number of rows is 5 million. The script that you run in this step will take about 30 to 40 minutes to import the auditing data from large text files. Additionally, the script will divide large text files into smaller blocks of 100K rows, and then import those blocks sequentially.
+
 1. Go to window that you left open from the previous step to access the GitHub site with the sample script. Alternatively, open the bookmarked site or use the URL that you copied.
 
 2. Click the **Raw** button to display the script in text view.
@@ -181,7 +187,7 @@ If you've haven't run the script in Step 4, a link to download the script is dis
 
 ## (Optional) Step 6: Schedule the script to run automatically
 
-To make sure the latest auditing data from your healthcare EHR system are available to tools like the insider risk management solution, we recommend that you schedule the script to run automatically on a daily basis. This also requires that you update the EHR auditing data in the text file on a similar (if not the same) schedule so that it contains the latest information about patient records access activities by your employees. The goal is to upload the most current auditing data so that the Healthcare connector can make it available to the insider risk management solution.
+To make sure the latest auditing data from your healthcare EHR system are available to tools like the insider risk management solution, we recommend that you schedule the script to run automatically on a daily basis. This also requires that you update the EHR auditing data in the same text file on a similar (if not the same) schedule so that it contains the latest information about patient records access activities by your employees. The goal is to upload the most current auditing data so that the Healthcare connector can make it available to the insider risk management solution.
 
 You can user the Task Scheduler app in Windows to automatically run the script every day.
 
@@ -209,11 +215,13 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 7. Select the **Actions** tab, click **New**, and then do the following things:
 
+   ![Action settings to create a new scheduled task for the healthcare connector script.](../media/GenericHealthCareConnectorScheduleTask1.png)
+
     1. In the **Action** dropdown list, make sure that **Start a program** is selected.
 
     2. In the **Program/script** box, click **Browse**, and go to the following location and select it so the path is displayed in the box: C:.0.exe.
 
-    3. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, `..ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Healthcare\audit\records.txt"`
+    3. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, `.\HealthcareConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Healthcare\audit\records.txt"`
 
     4. In the **Start in (optional)** box, paste the folder location of the script that you ran in Step 4. For example, C:\Healthcare\audit.
 
@@ -221,6 +229,10 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 8. In the **Create Task** window, click **Ok** to save the scheduled task. You might be prompted to enter your user account credentials.
 
-The last time the script ran and the next time it's scheduled to run is displayed. You can double-click the task to edit it.
+   The new task is displayed in the Task Scheduler Library.
 
-You can also verify the last time the script ran on the flyout page of the corresponding Healthcare connector in the compliance center.
+   ![The new task for the healthcare connector script is displayed in the Task Scheduler Library.](../media/HealthcareConnectorTaskSchedulerLibrary.png)
+
+   The last time the script ran and the next time it's scheduled to run is displayed. You can double-click the task to edit it.
+
+   You can also verify the last time the script ran on the flyout page of the corresponding Healthcare connector in the compliance center.

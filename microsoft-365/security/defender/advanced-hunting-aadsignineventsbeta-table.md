@@ -26,7 +26,7 @@ ms.technology: m365d
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> The `AADSignInEventsBeta` table is currently in beta and is being offered on a short-term basis to allow you to hunt through Azure Active Directory (AAD) sign-in events. Customers need to have an Azure Active Directory Premium P2 license to collect and view activities for this table. We will eventually move all sign-in schema information to the `IdentityLogonEvents` table.
+> The `AADSignInEventsBeta` table is currently in beta and is being offered on a short-term basis to allow you to hunt through Azure Active Directory (AAD) sign-in events. Customers need to have an Azure Active Directory Premium P2 license to collect and view activities for this table. All sign-in schema information will eventually move to the `IdentityLogonEvents` table.
 
 The `AADSignInEventsBeta` table in the advanced hunting schema contains information about Azure Active Directory interactive and non-interactive sign-ins. Learn more about sign-ins in [Azure Active Directory sign-in activity reports - preview](/azure/active-directory/reports-monitoring/concept-all-sign-ins). 
 
@@ -57,7 +57,7 @@ Use this reference to construct queries that return information from the table. 
 |`ResourceTenantId`|string|Unique identifier of the tenant of the resource accessed|
 |`DeviceName`|string|Fully qualified domain name (FQDN) of the machine|
 |`AadDeviceId`|string|Unique identifier for the device in Azure AD|
-|`OSPlatform`|string|Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10, and Windows 7.|
+|`OSPlatform`|string|Platform of the operating system running on the machine. Indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10, and Windows 7.|
 |`DeviceTrustType`|string|Indicates the trust type of the device that signed in. For managed device scenarios only. Possible values are Workplace, AzureAd, and ServerAd.|
 |`IsManaged`|int|Indicates whether the device that initiated the sign-in is a managed device (1) or not a managed device (0)|
 |`IsCompliant`|int|Indicates whether the device that initiated the sign-in is compliant (1) or non-compliant (0)|
