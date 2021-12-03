@@ -48,6 +48,10 @@ The following articles were added for device onboarding:
 - [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro (preview)](device-onboarding-offboarding-macos-jamfpro.md)
 - [Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-jamfpro-mde.md)
 
+### eDiscovery
+
+- [Use the new case format in Advanced eDiscovery](advanced-ediscovery-new-case-format.md) new case format was released to general availability and renamed from "large case format"
+
 ### Retention and records management
 - New record management settings that control whether labeled items in SharePoint and OneDrive can be deleted by users
 
