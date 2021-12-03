@@ -38,6 +38,10 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ## November 2021
 
+### Compliance Manager
+
+New content updates can be viewed in [What's new in Microsoft Compliance Manager](compliance-manager-whats-new.md).
+
 ### Device Onboarding
 
 The following articles were added for device onboarding:
