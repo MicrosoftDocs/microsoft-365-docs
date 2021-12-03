@@ -56,6 +56,7 @@ For details on configuring Microsoft Endpoint Manager (current branch), see [How
 |Policy item and location|Default setting (if not configured)|PowerShell `Set-MpPreference` parameter or WMI property for `MSFT_MpPreference` class|
 |---|---|---|
 |Email scanning <p> **Scan** \> **Turn on e-mail scanning**<p>See [Email scanning limitations](#email-scanning-limitations) (in this article)|Disabled|`-DisableEmailScanning`|
+| Script scanning | Enabled  | This policy setting allows you to configure script scanning. If you enable or do not configure this setting, script scanning will be enabled. <p>See [Defender/AllowScriptScanning](/windows/client-management/mdm/policy-csp-defender)  | 
 |Scan [reparse points](/windows/win32/fileio/reparse-points) <p> **Scan** \> **Turn on reparse point scanning**|Disabled|Not available <p>See [Reparse points](/windows/win32/fileio/reparse-points)|
 |Scan mapped network drives <p> **Scan** \> **Run full scan on mapped network drives**|Disabled|`-DisableScanningMappedNetworkDrivesForFullScan`|
 |Scan archive files (such as .zip or .rar files). <p> **Scan** \> **Scan archive files**|Enabled|`-DisableArchiveScanning` <p>The [extensions exclusion list](configure-extension-file-exclusions-microsoft-defender-antivirus.md) will take precedence over this setting.|
