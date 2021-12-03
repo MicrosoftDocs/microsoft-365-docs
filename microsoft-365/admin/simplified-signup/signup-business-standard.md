@@ -100,7 +100,7 @@ If you would like to add a domain and create a business email account, you can f
 - [Add a domain to Microsoft 365](../setup/add-domain.md)
 - [Finish setting up](../setup/setup-business-standard.md#finish-setting-up)
 
-## Terms of service update for Simplified Sign-Up mode
+## Terms of service update for Simplified Sign Up mode
 
 **Applies to: Existing subscribers of Microsoft 365 Business Standard who previously purchased using Simplified Sign-up mode**.
 
