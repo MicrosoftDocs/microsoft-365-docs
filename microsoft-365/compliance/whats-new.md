@@ -38,8 +38,32 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ## November 2021
 
+### Device Onboarding
+
+The following articles were added for device onboarding:
+
+- [Onboard macOS devices into Microsoft 365 overview (preview)](device-onboarding-macos-overview.md)
+- [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using Intune (preview)](device-onboarding-offboarding-macos-intune.md)
+- [Onboard and offboard macOS devices into Compliance solutions using Intune for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-intune-mde.md)
+- [Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro (preview)](device-onboarding-offboarding-macos-jamfpro.md)
+- [Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)](device-onboarding-offboarding-macos-jamfpro-mde.md)
+
 ### Retention and records management
 - New record management settings that control whether labeled items in SharePoint and OneDrive can be deleted by users
+
+### Sensitive Information Types
+
+Added the following new articles:
+
+- [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md)
+- [Get started with exact data match based sensitive information types](sit-get-started-exact-data-match-based-sits-overview.md)
+- [Export source data for exact data match based sensitive information type](sit-get-started-exact-data-match-export-data.md)
+- [Create the schema for exact data match based sensitive information types](sit-get-started-exact-data-match-create-schema.md)
+- [Hash and upload the sensitive information source table for exact data match sensitive information types](sit-get-started-exact-data-match-hash-upload.md)
+- [Create exact data match sensitive information type/rule package](sit-get-started-exact-data-match-create-rule-package.md)
+- [Test an exact data match sensitive information type](sit-get-started-exact-data-match-test.md)
+- [Manage your exact data match schema](sit-use-exact-data-manage-schema.md)
+- [Refresh your sensitive information source table file](sit-use-exact-data-refresh-data.md)
 
 ### Sensitivity labels
 - The scope name for [Azure Purview labels](/azure/purview/create-sensitivity-label) is now "Schematized data assets".
