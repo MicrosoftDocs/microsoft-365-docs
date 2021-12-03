@@ -117,7 +117,8 @@ Follow the instructions here: [How to configure Exchange Server on-premises to u
 
 Now you'll need to run commands to add the URLs (collected earlier) as Service Principals in SFBO.
 
- **Note** Service principal names (SPNs) identify web services and associate them with a security principal (such as an account name or group) so that the service can act on the behalf of an authorized user. Clients authenticating to a server make use of information that's contained in SPNs.
+> [!NOTE]
+> Service principal names (SPNs) identify web services and associate them with a security principal (such as an account name or group) so that the service can act on the behalf of an authorized user. Clients authenticating to a server make use of information that's contained in SPNs.
 
 1. First, connect to Azure Active Directory (Azure AD) with [these instructions](/powershell/azure/active-directory/overview).
 
