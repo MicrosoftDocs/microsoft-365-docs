@@ -139,10 +139,10 @@ You can use a modern template to quickly create similar documents without having
       - Suggestions to help you easily pick values when selecting values from a list.
       - Autofill placeholder values if able to uniquely identify a record for placeholders associated with the same list.
 
-> [!NOTES]
-> - Only Word documents – “.docx” extension, are supported for templatization.
+> [!NOTE]
+> - Only Word documents (.docx extension) are supported for templatization.
 > - The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library.
-> - You can create placeholders onlyfor text. Currently, images, smart art, tables, and bullet lists are not supported.
+> - You can create placeholders only for text. Currently, images, smart art, tables, and bullet lists are not supported.
 > - Once a document is created from a template, it is not associated with the template.
 
 
