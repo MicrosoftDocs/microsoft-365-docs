@@ -64,11 +64,10 @@ Next, download, install, and configure the Defender for Identity sensor on the d
 
 On the machines that you installed the sensor on, configure Windows event log collection and Internet proxy settings to enable and enhance detection capabilities.
 
-|  |Step     |More information  |
+| Serial Number |Step     |More information  |
 |---------|---------|---------|
 |1     | Configure Windows event log collection         | [Configure Windows Event collection](/defender-for-identity/configure-windows-event-collection)        |
 |2     | Configure Internet proxy settings        | [Configure endpoint proxy and Internet connectivity settings for your Microsoft Defender for Identity Sensor](/defender-for-identity/configure-proxy)        |
-|   |         |         |
 
 ## Step 4. Allow Defender for Identity to identify local admins on other computers
 
