@@ -48,7 +48,7 @@ In general, you can use the following procedure to configure or change Microsoft
 
 ## Group Policy settings and resources
 
-The following table in this topic lists the Group Policy settings available in Windows 10, version 1703, and provides links to the appropriate topic in this documentation library (where applicable).
+The following table lists commonly used Group Policy settings that are available in Windows 10.
 
 > [!TIP]
 > Download the Group Policy Reference Spreadsheet, which lists the policy settings for computer and user configurations that are included in the Administrative template files delivered with for Windows. You can configure refer to the spreadsheet when you edit Group Policy Objects. <br/><br/> Here are the most recent versions:
