@@ -100,15 +100,14 @@ You can turn on **EXPORT TO KAFKA** and **EXPORT TO AZURE DEFENDER FOR IOT** usi
 To configure only sending the minimal set of logs:
 
 1. In the Corelight Sensor GUI, go to the Kafka section
-2. Go to Zeek logs to exclude
+2. Go to **Zeek logs to exclude**
 3. Select **All**
-4. To delete, select **x** beside the following logs:  
+4. Then select **x** beside the following logs to ensure they continue to flow to microsoft:  
     `dns  conn  files  http  ssl  ssh  x509  snmp  smtp  ftp  sip  dhcp  notice`
 
-    That way these logs will still flow to Microsoft. This list may expand over time.
+    The logs that flow to Microsoft may expand over time.
 
 5. Select **Apply Changes**
-
 
 ## See also
 
