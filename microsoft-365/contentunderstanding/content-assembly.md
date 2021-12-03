@@ -1,5 +1,5 @@
 ---
-title: Create content using content assembly in Microsoft SharePoint Syntex
+title: Create documents using content assembly in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -15,11 +15,11 @@ ms.localizationpriority:  medium
 description: Learn how to automatically create documents and other content using content assembly in Microsoft SharePoint Syntex.
 ---
 
-# Create content using content assembly in Microsoft SharePoint Syntex
+# Create documents using content assembly in Microsoft SharePoint Syntex
 
 You can now use SharePoint Syntex to help you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, nondisclosure agreements, sales pitches, and correspondence. You can do all this quicker, more consistent, and less prone to errors by using content assembly in SharePoint Syntex.
 
-With content assembly, you can use an existing document to create a "modern template," and then use that template to automatically generate new content using SharePoint lists as a data source.
+With content assembly, you can use an existing document to create a *modern template*, and then use that template to automatically generate new content using SharePoint lists as a data source.
 
 > [!NOTE]
 > You must be a SharePoint Syntex licensed user to access and use content assembly capabilities.
@@ -30,25 +30,31 @@ Follow these steps to create a modern template.
 
 1. From a Sharepoint document library, select **New** > **Create modern template**. 
  
+   ![Screenshot of document library with the Create modern template option highlighted.](../media/content-understanding/content-assembly-create-template-1.png)
 
 2. Upload the existing Word document that you want to use as a basis for creating a modern template. 
 
 > [!NOTE]
-> Currently, you can upload only Word documents (“.docx” extension) to create templates. You can upload Word documents from your local storage or desktop.
-  
+> Currently, you can upload only Word documents (“.docx” extension) to create templates. Upload Word documents from your local storage or desktop.
+ 
+   ![Screenshot of upload page where you select a document.](../media/content-understanding/content-assembly-create-template-2.png)
 
-3. After you upload the document, the document is displayed in the template studio where you can convert this document to a template.
+3. After you upload the document, the document is displayed in the template viewer where you can convert this document to a template.
 
 > [!NOTE]
 > Currently, the document is displayed without formatting. This is a technical limitation that will be resolved in a future release.
-
+ 
+   ![Screenshot of the document in the template viewer.](../media/content-understanding/content-assembly-create-template-3.png)
 
 4. At the top-right corner of the page, select the name of the document to rename the template.
+ 
+   ![Screenshot of the template viewer showing the name of the document to select to rename.](../media/content-understanding/content-assembly-create-template-3a.png)
 
 5. Create placeholders for all dynamic text in the document that users might want to change from one document to another. For example, you might want to create a placeholder for company name, client name, address, phone number, date, and so on.
 
     To create a placeholder, select the text (such as the address), and then select the **+** button above the selected text.
  
+   ![Screenshot of the template viewer showing the plus button used to create a placeholder.](../media/content-understanding/content-assembly-create-template-3.png)
 
 6. The **All placeholders** panel will open, where you will give the placeholder a relevant name and choose the type of input you want to associate with the placeholder. Currently, there are two types of input:
 
@@ -98,7 +104,7 @@ If you need to edit an existing template or to delete or unpublish a template, f
 
 2. On the **Edit New menu** panel, in the **Modern templates** section, select the published or draft template you want to edit.
 
-3. Select **Edit** to open the template studio where you can edit the template.
+3. Select **Edit** to open the template viewer where you can edit the template.
 
 ## Create a document from a modern template
 
@@ -113,14 +119,12 @@ You can use a modern template to quickly create similar documents without having
  
     To help reduce time and effort involved in filling values for placeholders, SharePoint Syntex provides:
 
-        - Suggestions to help you easily pick values when selecting values from a list.
-        - Autofill placeholder values if able to uniquely identify a record for placeholders associated with the same list.
+       - Suggestions to help you easily pick values when selecting values from a list.
+       - Autofill placeholder values if able to uniquely identify a record for placeholders associated with the same list.
 
-Notes
-1)	Only Word documents – “.docx” extension, are supported for templatization 
-2)	The template and the document are associated with one document library. To use the template in another document library you will need to create the template again in that document library
-3)	You can create placeholders for Text. Images, smart art, tables, bullet list is not supported
-4)	Once a document is created from a template, it is not associated with the template
+> [!NOTE]
+> - Only Word documents – “.docx” extension, are supported for templatization. <br> - 	The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library. <br> - You can create placeholders for Text. Currently, images, smart art, tables, and bullet lists are not supported, <br> - Once a document is created from a template, it is not associated with the template.
+
 
 
  
