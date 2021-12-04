@@ -573,7 +573,7 @@
 | 9/27/2021 | [Troubleshooting Microsoft 365 usage analytics](/microsoft-365/admin/usage-analytics/usage-analytics-errors?view=o365-21vianet) | modified |
 | 9/27/2021 | [Microsoft 365 usage analytics](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-21vianet) | modified |
 | 9/27/2021 | [Work with customers # < 60 chars](/microsoft-365/admin/work-with-customers/index?view=o365-21vianet) | modified |
-| 9/27/2021 | [Get support](/microsoft-365/business-video/get-help-support?view=o365-21vianet) | modified |
+| 9/27/2021 | [Get support](/microsoft-365/admin/get-help-support?view=o365-21vianet) | modified |
 | 9/27/2021 | [Join a team as a guest](/microsoft-365/business-video/join-team-guest?view=o365-21vianet) | modified |
 | 9/27/2021 | [Schedule a Teams meeting with external users](/microsoft-365/business-video/schedule-guest-meeting?view=o365-21vianet) | modified |
 | 9/27/2021 | [Create a team with guests](/microsoft-365/business-video/team-with-guests?view=o365-21vianet) | modified |
@@ -599,7 +599,7 @@
 | 9/27/2021 | [View email security reports](/microsoft-365/security/office-365-security/view-email-security-reports?view=o365-21vianet) | modified |
 | 9/27/2021 | [View Defender for Office 365 reports](/microsoft-365/security/office-365-security/view-reports-for-mdo?view=o365-21vianet) | modified |
 | 9/28/2021 | [Use the KQL editor to build search queries](/microsoft-365/compliance/ediscovery-kql-editor?view=o365-21vianet) | added |
-| 9/28/2021 | [Get support](/microsoft-365/business-video/get-help-support?view=o365-21vianet) | modified |
+| 9/28/2021 | [Get support](/microsoft-365/admin/get-help-support?view=o365-21vianet) | modified |
 | 9/28/2021 | [Automatically apply a sensitivity label to content in Microsoft 365](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-21vianet) | modified |
 | 9/28/2021 | [Microsoft Privacy management (preview)](/microsoft-365/compliance/privacy-management?view=o365-21vianet) | modified |
 | 9/28/2021 | [Exchange Online monitoring for Microsoft 365](/microsoft-365/enterprise/microsoft-365-exchange-monitoring?view=o365-21vianet) | modified |
@@ -847,7 +847,7 @@
 | 9/21/2021 | [Microsoft Viva # < 60 chars](/microsoft-365/viva/index?view=o365-21vianet) | modified |
 | 9/21/2021 | [Microsoft Feedback Code of Conduct](/microsoft-365/admin/misc/feedback-code-conduct?view=o365-21vianet) | added |
 | 9/21/2021 | [Manage Industry news](/microsoft-365/admin/manage/manage-industry-news?view=o365-21vianet) | modified |
-| 9/21/2021 | [Get support](/microsoft-365/business-video/get-help-support?view=o365-21vianet) | modified |
+| 9/21/2021 | [Get support](/microsoft-365/admin/get-help-support?view=o365-21vianet) | modified |
 | 9/21/2021 | [About registration numbers and under review notifications](/microsoft-365/commerce/about-registration-numbers?view=o365-21vianet) | modified |
 | 9/21/2021 | [Troubleshoot eDiscovery hold errors](/microsoft-365/compliance/hold-distribution-errors?view=o365-21vianet) | modified |
 | 9/21/2021 | [Preparing for TLS 1.2 in Office 365 and Office 365 GCC](/microsoft-365/compliance/prepare-tls-1.2-in-office-365?view=o365-21vianet) | modified |
@@ -2281,7 +2281,7 @@
 | 9/27/2021 | [Troubleshooting Microsoft 365 usage analytics](/microsoft-365/admin/usage-analytics/usage-analytics-errors?view=o365-21vianet) | modified |
 | 9/27/2021 | [Microsoft 365 usage analytics](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-21vianet) | modified |
 | 9/27/2021 | [Work with customers # < 60 chars](/microsoft-365/admin/work-with-customers/index?view=o365-21vianet) | modified |
-| 9/27/2021 | [Get support](/microsoft-365/business-video/get-help-support?view=o365-21vianet) | modified |
+| 9/27/2021 | [Get support](/microsoft-365/admin/get-help-support?view=o365-21vianet) | modified |
 | 9/27/2021 | [Join a team as a guest](/microsoft-365/business-video/join-team-guest?view=o365-21vianet) | modified |
 | 9/27/2021 | [Schedule a Teams meeting with external users](/microsoft-365/business-video/schedule-guest-meeting?view=o365-21vianet) | modified |
 | 9/27/2021 | [Create a team with guests](/microsoft-365/business-video/team-with-guests?view=o365-21vianet) | modified |
@@ -2307,7 +2307,7 @@
 | 9/27/2021 | [View email security reports](/microsoft-365/security/office-365-security/view-email-security-reports?view=o365-21vianet) | modified |
 | 9/27/2021 | [View Defender for Office 365 reports](/microsoft-365/security/office-365-security/view-reports-for-mdo?view=o365-21vianet) | modified |
 | 9/28/2021 | [Use the KQL editor to build search queries](/microsoft-365/compliance/ediscovery-kql-editor?view=o365-21vianet) | added |
-| 9/28/2021 | [Get support](/microsoft-365/business-video/get-help-support?view=o365-21vianet) | modified |
+| 9/28/2021 | [Get support](/microsoft-365/admin/get-help-support?view=o365-21vianet) | modified |
 | 9/28/2021 | [Automatically apply a sensitivity label to content in Microsoft 365](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-21vianet) | modified |
 | 9/28/2021 | [Microsoft Privacy management (preview)](/microsoft-365/compliance/privacy-management?view=o365-21vianet) | modified |
 | 9/28/2021 | [Exchange Online monitoring for Microsoft 365](/microsoft-365/enterprise/microsoft-365-exchange-monitoring?view=o365-21vianet) | modified |
@@ -3040,7 +3040,7 @@
 | 9/21/2021 | [Microsoft Viva # < 60 chars](/microsoft-365/viva/index?view=o365-21vianet) | modified |
 | 9/21/2021 | [Microsoft Feedback Code of Conduct](/microsoft-365/admin/misc/feedback-code-conduct?view=o365-21vianet) | added |
 | 9/21/2021 | [Manage Industry news](/microsoft-365/admin/manage/manage-industry-news?view=o365-21vianet) | modified |
-| 9/21/2021 | [Get support](/microsoft-365/business-video/get-help-support?view=o365-21vianet) | modified |
+| 9/21/2021 | [Get support](/microsoft-365/admin/get-help-support?view=o365-21vianet) | modified |
 | 9/21/2021 | [About registration numbers and under review notifications](/microsoft-365/commerce/about-registration-numbers?view=o365-21vianet) | modified |
 | 9/21/2021 | [Troubleshoot eDiscovery hold errors](/microsoft-365/compliance/hold-distribution-errors?view=o365-21vianet) | modified |
 | 9/21/2021 | [Preparing for TLS 1.2 in Office 365 and Office 365 GCC](/microsoft-365/compliance/prepare-tls-1.2-in-office-365?view=o365-21vianet) | modified |
@@ -5182,7 +5182,7 @@
 | 9/27/2021 | [Troubleshooting Microsoft 365 usage analytics](/microsoft-365/admin/usage-analytics/usage-analytics-errors?view=o365-21vianet) | modified |
 | 9/27/2021 | [Microsoft 365 usage analytics](/microsoft-365/admin/usage-analytics/usage-analytics?view=o365-21vianet) | modified |
 | 9/27/2021 | [Work with customers # < 60 chars](/microsoft-365/admin/work-with-customers/index?view=o365-21vianet) | modified |
-| 9/27/2021 | [Get support](/microsoft-365/business-video/get-help-support?view=o365-21vianet) | modified |
+| 9/27/2021 | [Get support](/microsoft-365/admin/get-help-support?view=o365-21vianet) | modified |
 | 9/27/2021 | [Join a team as a guest](/microsoft-365/business-video/join-team-guest?view=o365-21vianet) | modified |
 | 9/27/2021 | [Schedule a Teams meeting with external users](/microsoft-365/business-video/schedule-guest-meeting?view=o365-21vianet) | modified |
 | 9/27/2021 | [Create a team with guests](/microsoft-365/business-video/team-with-guests?view=o365-21vianet) | modified |
@@ -5208,7 +5208,7 @@
 | 9/27/2021 | [View email security reports](/microsoft-365/security/office-365-security/view-email-security-reports?view=o365-21vianet) | modified |
 | 9/27/2021 | [View Defender for Office 365 reports](/microsoft-365/security/office-365-security/view-reports-for-mdo?view=o365-21vianet) | modified |
 | 9/28/2021 | [Use the KQL editor to build search queries](/microsoft-365/compliance/ediscovery-kql-editor?view=o365-21vianet) | added |
-| 9/28/2021 | [Get support](/microsoft-365/business-video/get-help-support?view=o365-21vianet) | modified |
+| 9/28/2021 | [Get support](/microsoft-365/admin/get-help-support?view=o365-21vianet) | modified |
 | 9/28/2021 | [Automatically apply a sensitivity label to content in Microsoft 365](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-21vianet) | modified |
 | 9/28/2021 | [Microsoft Privacy management (preview)](/microsoft-365/compliance/privacy-management?view=o365-21vianet) | modified |
 | 9/28/2021 | [Exchange Online monitoring for Microsoft 365](/microsoft-365/enterprise/microsoft-365-exchange-monitoring?view=o365-21vianet) | modified |
