@@ -46,7 +46,7 @@ Follow these steps to create a modern template.
    > [!NOTE]
    > Currently, the document is displayed without formatting. This is a technical limitation that will be resolved in a future release.
 
-4. At the top-right corner of the page, select the name of the document to rename the template.
+4. At the upper-left corner of the template viewer, select the name of the document to rename the template.
  
    ![Screenshot of the template viewer showing the name of the document to select to rename.](../media/content-understanding/content-assembly-create-template-3a.png)
 
