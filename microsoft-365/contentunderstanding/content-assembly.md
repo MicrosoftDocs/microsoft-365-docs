@@ -17,7 +17,7 @@ description: Learn how to automatically create documents and other content using
 
 # Create documents using content assembly in Microsoft SharePoint Syntex
 
-You can use SharePoint Syntex to help you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, nondisclosure agreements, sales pitches, and correspondence. You can do all this quicker, more consistent, and less prone to errors by using content assembly in SharePoint Syntex.
+You can use SharePoint Syntex to help you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, sales pitches, and correspondence. You can do all this quicker, more consistent, and less prone to errors by using content assembly in SharePoint Syntex.
 
 With content assembly, you can use an existing document to create a *modern template*, and then use that template to automatically generate new content using SharePoint lists as a data source.
 
@@ -56,7 +56,7 @@ Follow these steps to create a modern template.
  
    ![Screenshot of the template viewer showing the plus button used to create a placeholder.](../media/content-understanding/content-assembly-create-template-4.png)
 
-6. The **All placeholders** panel will open, where you will give the placeholder a relevant name and choose the type of input you want to associate with the placeholder. Currently, there are two types of input:
+6. The **All placeholders** panel will open, where you'll give the placeholder a relevant name and choose the type of input you want to associate with the placeholder. Currently, there are two types of input:
 
     - [Manual input](#associate-a-placeholder-with-manual-input)
     - [SharePoint list](#associate-a-placeholder-with-a-sharepoint-list)
@@ -95,13 +95,13 @@ On the **All placeholders** panel:
 
     If you want to see the original page of lists again, select **Go to the list for reference**.
 
-5. When you are done, you will see that the list field has been associated with the placeholder.
+5. When you're done, you'll see that the list field has been associated with the placeholder.
 
    ![Screenshot of the All placeholders panel showing the list field associated with the placeholder.](../media/content-understanding/content-assembly-create-template-9.png)
 
 6. If you want users to be able to add manual input in addition to choose from a list, select **Allow manual input as well**. In this case, the default for the manual input data type is *Single line of text*.
  
-You can create as many placeholders as you think are necessary. When you are done, you can choose to save the template as a draft or publish the template.
+You can create as many placeholders as you think are necessary. When you're done, you can choose to save the template as a draft or publish the template.
 
    - **Save draft** – Saves the template as a draft and you can access it at a later time.
    - **Publish** – Publishes the template to be used by other employees in the organization to create documents with.
