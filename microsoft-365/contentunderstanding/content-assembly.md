@@ -33,18 +33,18 @@ Follow these steps to create a modern template.
    ![Screenshot of document library with the Create modern template option highlighted.](../media/content-understanding/content-assembly-create-template-1.png)
 
 2. Upload the existing Word document that you want to use as a basis for creating a modern template. 
-
-   > [!NOTE]
-   > Currently, you can upload only Word documents (“.docx” extension) to create templates. Upload Word documents from your local storage or desktop.
  
    ![Screenshot of upload page where you select a document.](../media/content-understanding/content-assembly-create-template-2.png)
 
+   > [!NOTE]
+   > Currently, you can upload only Word documents (“.docx” extension) to create templates. Upload Word documents from your local storage or desktop.
+
 3. After you upload the document, the document is displayed in the template viewer where you can convert this document to a template.
+ 
+   ![Screenshot of the document in the template viewer.](../media/content-understanding/content-assembly-create-template-3.png)
 
    > [!NOTE]
    > Currently, the document is displayed without formatting. This is a technical limitation that will be resolved in a future release.
- 
-   ![Screenshot of the document in the template viewer.](../media/content-understanding/content-assembly-create-template-3.png)
 
 4. At the top-right corner of the page, select the name of the document to rename the template.
  
@@ -59,7 +59,7 @@ Follow these steps to create a modern template.
 6. The **All placeholders** panel will open, where you will give the placeholder a relevant name and choose the type of input you want to associate with the placeholder. Currently, there are two types of input:
 
     - [Manual input](#associate-a-placeholder-with-manual-input)
-    - [SharePoint list](#associate-a-placeholder-with-a-SharePoint-list)
+    - [SharePoint list](#associate-a-placeholder-with-a-sharePoint-list)
 
 ### Associate a placeholder with manual input 
 
@@ -106,7 +106,7 @@ You can create as many placeholders as you think are necessary. When you are don
    - **Save as draft** – Saves the template as a draft and you can access it at a later time.
    - **Publish** – Publishes the template to be used by other employees in the organization to create documents with.
 
-## Edit an existing template
+## Edit an existing modern template
 
 If you need to edit an existing template or to delete or unpublish a template, follow these steps.
 
