@@ -59,7 +59,7 @@ Follow these steps to create a modern template.
 6. The **All placeholders** panel will open, where you will give the placeholder a relevant name and choose the type of input you want to associate with the placeholder. Currently, there are two types of input:
 
     - [Manual input](#associate-a-placeholder-with-manual-input)
-    - [SharePoint list](#associate-a-placeholder-with-a-sharePoint-list)
+    - [SharePoint list](#associate-a-placeholder-with-a-sharepoint-list)
 
 ### Associate a placeholder with manual input 
 
@@ -140,10 +140,7 @@ You can use a modern template to quickly create similar documents without having
       - Autofill placeholder values if able to uniquely identify a record for placeholders associated with the same list.
 
 > [!NOTE]
-> - Only Word documents (.docx extension) are supported for templatization.
- - The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library.
- - You can create placeholders only for text. Currently, images, smart art, tables, and bullet lists are not supported.
- - Once a document is created from a template, it is not associated with the template.
+> Only Word documents (.docx extension) are supported for templatization. <br>The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library. <br>You can create placeholders only for text. Currently, images, smart art, tables, and bullet lists are not supported. <br>Once a document is created from a template, it is not associated with the template.
 
 
 
