@@ -17,7 +17,7 @@ description: Learn how to automatically create documents and other content using
 
 # Create documents using content assembly in Microsoft SharePoint Syntex
 
-You can now use SharePoint Syntex to help you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, nondisclosure agreements, sales pitches, and correspondence. You can do all this quicker, more consistent, and less prone to errors by using content assembly in SharePoint Syntex.
+You can use SharePoint Syntex to help you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, nondisclosure agreements, sales pitches, and correspondence. You can do all this quicker, more consistent, and less prone to errors by using content assembly in SharePoint Syntex.
 
 With content assembly, you can use an existing document to create a *modern template*, and then use that template to automatically generate new content using SharePoint lists as a data source.
 
@@ -32,12 +32,12 @@ Follow these steps to create a modern template.
  
    ![Screenshot of document library with the Create modern template option highlighted.](../media/content-understanding/content-assembly-create-template-1.png)
 
-2. Upload the existing Word document that you want to use as a basis for creating a modern template. 
+2. Choose an existing Word document that you want to use as a basis for creating a modern template, and then select **Open**. 
  
    ![Screenshot of upload page where you select a document.](../media/content-understanding/content-assembly-create-template-2.png)
 
    > [!NOTE]
-   > Currently, you can upload only Word documents (“.docx” extension) to create templates. Upload Word documents from your local storage or desktop.
+   > Currently, you can upload only Word documents (.docx extension) to create templates. Upload Word documents from your local storage or desktop.
 
 3. After you upload the document, the document is displayed in the template viewer where you can convert this document to a template.
  
@@ -71,7 +71,7 @@ On the **All placeholders** panel:
 
 2. In the **Choose the input type for the placeholder value** section, select **Manual input only**.
 
-3. In the **Choose the data type** field, select the data type you want to associate with the placeholder. Currently, there are six data types available: single line of text, multiple lines of text, date & time, email, hyperlink, and number.
+3. In the **Choose the data type** field, select the data type you want to associate with the placeholder. Currently, there are six options available: **Single line of text**, **Multiple lines of text**, **Number**, **Date and time**, **Email**, and **Hyperlink**.
 
 4. Select **Add**.
 
@@ -103,7 +103,7 @@ On the **All placeholders** panel:
  
 You can create as many placeholders as you think are necessary. When you are done, you can choose to save the template as a draft or publish the template.
 
-   - **Save as draft** – Saves the template as a draft and you can access it at a later time.
+   - **Save draft** – Saves the template as a draft and you can access it at a later time.
    - **Publish** – Publishes the template to be used by other employees in the organization to create documents with.
 
 ## Edit an existing modern template
@@ -140,7 +140,7 @@ You can use a modern template to quickly create similar documents without having
       - Autofill placeholder values if able to uniquely identify a record for placeholders associated with the same list.
 
 > [!NOTE]
-> Only Word documents (.docx extension) are supported for templatization. <br>The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library. <br>You can create placeholders only for text. Currently, images, smart art, tables, and bullet lists are not supported. <br>Once a document is created from a template, it is not associated with the template.
+> Currently, only Word documents (.docx extension) are supported for templatization. <br>The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library. <br>You can create placeholders only for text. Currently, images, smart art, tables, and bullet lists are not supported. <br>Once a document is created from a template, it is not associated with the template.
 
 
 
