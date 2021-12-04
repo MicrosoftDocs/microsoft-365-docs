@@ -31,7 +31,7 @@ Centralized Deployment is the recommended and most feature-rich way for most cus
 Centralized Deployment provides the following benefits:
 
 - A Global admin or an exchange admin can assign an add-in directly to a user, to multiple users via a group, or to everyone in the organization.
-- Exchange admin can deploy addin only if App Registration property is set to true in Azure Active Directory admin center as shown in below image
+- Exchange admin can deploy addin only if App Registration property is set to true in Azure Active Directory admin center as shown in below image.
 
   ![image](../../media/AAD.png)
 
@@ -151,7 +151,7 @@ Alternately, you can use the Azure Active Directory Graph API to run queries to 
 
 ### Contacting Microsoft for support
 
-If you or your users encounter problems loading the add-in while using Office apps for the web (Word, Excel, etc.), which were centrally deployed, you may need to contact Microsoft support ([learn how](../../business-video/get-help-support.md)). Provide the following information about your Microsoft 365 environment in the support ticket.
+If you or your users encounter problems loading the add-in while using Office apps for the web (Word, Excel, etc.), which were centrally deployed, you may need to contact Microsoft support ([learn how]([Get support](../get-help-support.md))). Provide the following information about your Microsoft 365 environment in the support ticket.
 
 | Platform | Debug information |
 |:-----|:-----|

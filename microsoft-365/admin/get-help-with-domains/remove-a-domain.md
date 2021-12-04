@@ -158,7 +158,7 @@ If you have hundreds or thousands of users, use PowerShell to query for all user
 > [!NOTE]
 > You can't remove the [".onmicrosoft.com"](../setup/domains-faq.yml) domain from your account. When you remove a domain, user accounts will revert back to the ".onmicrosoft.com" address as the Primary SMTP/UserprincipalName.
 
-Still not working? Your domain might need to be manually removed. [Give us a call](../../business-video/get-help-support.md) and we'll help you take care of it!
+Still not working? Your domain might need to be manually removed. [Give us a call]() and we'll help you take care [Get support](../get-help-support.md)of it!
 
 ::: moniker-end
 
@@ -167,7 +167,7 @@ Still not working? Your domain might need to be manually removed. [Give us a cal
 > [!NOTE]
 > You can't remove the [".onmicrosoft.de"](../setup/domains-faq.yml) domain from your account. When you remove a domain, user accounts will revert back to the ".onmicrosoft.de" address as the Primary SMTP/UserprincipalName.
 
-Still not working? Your domain might need to be manually removed. [Give us a call](../../business-video/get-help-support.md?view=o365-germany&preserve-view=true) and we'll help you take care of it!
+Still not working? Your domain might need to be manually removed. [Give us a call](../get-help-support.md?view=o365-germany&preserve-view=true) and we'll help you take care of it!
 
 ::: moniker-end
 
@@ -176,7 +176,7 @@ Still not working? Your domain might need to be manually removed. [Give us a cal
 > [!NOTE]
 > You can't remove the [".partner.onmschina.cn"](../setup/domains-faq.yml) domain from your account. When you remove a domain, user accounts will revert back to the ".partner.onmschina.cn" address as the Primary SMTP/UserprincipalName.
 
-Still not working? Your domain might need to be manually removed. [Give us a call](../../business-video/get-help-support.md?view=o365-21vianet&preserve-view=true) and we'll help you take care of it!
+Still not working? Your domain might need to be manually removed. [Give us a call](../get-help-support.md?view=o365-21vianet&preserve-view=true) and we'll help you take care of it!
 
 ::: moniker-end
 

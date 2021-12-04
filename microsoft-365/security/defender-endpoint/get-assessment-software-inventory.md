@@ -2,7 +2,6 @@
 title: Export software inventory assessment per device
 description: Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion.
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -95,7 +94,7 @@ EndOfSupportDate|string|The date in which support for this software has or will 
 EndOfSupportStatus|string|End of support status. Can contain these possible values: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.|Upcoming EOS
 Id|string|Unique identifier for the record.|123ABG55_573AG&mnp!
 NumberOfWeaknesses|int|Number of weaknesses on this software on this device|3
-OSPlatform|string|Platform of the operating system running on the device. These are specific operating systems with variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.|Windows10
+OSPlatform|string|Platform of the operating system running on the device. These are specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See tvm supported operating systems and platforms for details.|Windows10 and Windows 11
 RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers
 RegistryPaths|Array[string]|Registry evidence that the product is installed in the device.|[ "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Microsoft Silverlight" ]
 SoftwareFirstSeenTimestamp|string|The first time this software was seen on the device.|2019-04-07 02:06:47
@@ -122,9 +121,9 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
             "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "softwareVendor": "microsoft",
-            "softwareName": "windows_10",
+            "softwareName": "windows_10" "Windows_11",
             "softwareVersion": "10.0.17763.1637",
             "numberOfWeaknesses": 58,
             "diskPaths": [],
@@ -137,7 +136,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
             "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "softwareVendor": "microsoft",
             "softwareName": ".net_framework",
             "softwareVersion": "4.0.0.0",
@@ -154,7 +153,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
             "deviceId": "00044f68765bbaf712342dbe6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eed80d086e79bdfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "softwareVendor": "microsoft",
             "softwareName": "system_center_2012_endpoint_protection",
             "softwareVersion": "4.7.214.0",
@@ -171,7 +170,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
             "deviceId": "00044f68765ddaf71234bde6bd733d6a9c59ad4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18993b45912eeb224b2be2f5ea3142726e63f16a.DomainPII_21eeb80d086e79dbfa178aedfa25e8be9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "softwareVendor": "microsoft",
             "softwareName": "configuration_manager",
             "softwareVersion": "5.0.8634.1000",
@@ -188,7 +187,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryByMac
             "deviceId": "00044f38765bbaf712342dbe6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18993b45912eeb224b2de2f5ea3142726e63f16a.DomainPII_21eeb80d086e79bdfa178eadfa25e8be9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "softwareVendor": "microsoft",
             "softwareName": "system_center_2012_endpoint_protection",
             "softwareVersion": "4.10.209.0",

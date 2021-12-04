@@ -86,7 +86,7 @@ The following services and features are available in some [Office 365 Germany su
 
 |Item|Information|
 |-----|-----|
-|Subscriptions, billing, and technical support  <br/> |Germany-based support available in German and English. For details, see [Contact support for business products - Admin Help](../../business-video/get-help-support.md).  <br/> |
+|Subscriptions, billing, and technical support  <br/> |Germany-based support available in German and English. For details, see [Contact support for business products - Admin Help]([Get support](../get-help-support.md)).  <br/> |
 |IP Addresses and URLs  <br/> |See [Office 365 Germany endpoints](../../enterprise/microsoft-365-germany-endpoints.md).  <br/> |
 |Yammer  <br/> |Not available.  <br/> |
 |Versions of Office older than Office 2013 or Microsoft 365 Apps for enterprise<sup>1</sup> <br/> |Not supported.  <br/> |
