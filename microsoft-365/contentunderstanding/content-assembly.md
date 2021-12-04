@@ -39,7 +39,7 @@ Follow these steps to create a modern template.
    > [!NOTE]
    > Currently, you can upload only Word documents (.docx extension) to create templates. Upload Word documents from your local storage or desktop.
 
-3. After you upload the document, the document is displayed in the template viewer where you can convert this document to a template.
+3. After you upload the document, the document is displayed in the template viewer where you can convert the document to a template.
  
    ![Screenshot of the document in the template viewer.](../media/content-understanding/content-assembly-create-template-3.png)
 
