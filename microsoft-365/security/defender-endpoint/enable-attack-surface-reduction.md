@@ -122,7 +122,7 @@ The following procedures for enabling ASR rules include instructions for how to 
 
 You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rules. The following procedure uses the rule [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers) for the example.
 
-1. Open the Microsoft Endpoint Manager (MEM) admin center. In the **Home** menu, click  **Devices**, select **Configuration profile**, and then click **Create profile**.
+1. Open the Microsoft Endpoint Manager (MEM) admin center. In the **Home** menu, click  **Devices**, select **Configuration profiles**, and then click **Create profile**.
 
    > [!div class="mx-imgBorder"]
    > ![MEM Create Profile.](images/mem01-create-profile.png)
