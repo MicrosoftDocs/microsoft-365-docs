@@ -42,7 +42,7 @@ The latest versions of the following clients and platforms support certificate-b
 [!INCLUDE [Certificate-based authentication services support table](../includes/microsoft-365-client-support-certificate-based-authentication-include.md)]
 
 > [!NOTE]
-> Edge for iOS and Android supports certificate-based authentication during account add flows. Edge for Android does not support certificate-based authentication when performing authentication against web sites, which are typically intranet sites. <br><br>  In this scenario, a user navigates to a web site (usually on the intranet) where the web site requires the user to authenticate via a certificate. This does not involve modern authentication at all and does not leverage a Microsoft authentication library. 
+> Edge for iOS and Android supports certificate-based authentication during account add flows. Edge for Android does not support certificate-based authentication when performing authentication against websites, which are typically intranet sites. <br><br>  In this scenario, a user navigates to a website (usually on the intranet) where the website requires the user to authenticate via a certificate. This does not involve modern authentication at all and does not leverage a Microsoft authentication library. 
 
 ## Supported PowerShell modules
 
