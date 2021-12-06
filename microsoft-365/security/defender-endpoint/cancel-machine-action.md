@@ -2,7 +2,6 @@
 title: Cancel machine action API
 description: Learn how to cancel an already launched machine action
 keywords: apis, graph api,
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
