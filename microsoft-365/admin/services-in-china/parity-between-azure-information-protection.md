@@ -85,9 +85,9 @@ The **Microsoft Information Protection Sync Service** service principal is not a
 
 1.	Connect to the service using the [Connect-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) cmdlet and the `azurechinacloud` environment name:
 
-  ```powershell
-  Connect-azacount -environmentname azurechinacloud
-  ```
+    ```powershell
+    Connect-azacount -environmentname azurechinacloud
+    ```
 
 1. Create the **Microsoft Information Protection Sync Service** service principal manually using the [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) cmdlet and the `870c4f2e-85b6-4d43-bdda-6ed9a579b725` application ID for the Microsoft Information Protection Sync Service:
 
