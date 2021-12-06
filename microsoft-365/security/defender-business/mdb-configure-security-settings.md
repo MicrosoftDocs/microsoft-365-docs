@@ -41,7 +41,7 @@ When it comes to managing your security settings and policies, you can choose fr
 | **Use Microsoft Endpoint Manager** | If your company is using Microsoft Endpoint Manager to manage security settings and policies, you can continue using Endpoint Manager and apply security policies and settings to some or all devices. To learn more, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>Consider switching to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md). If you make the switch, you'll be prompted to delete any existing security policies in Microsoft Endpoint Manager before proceeding with the simplified configuration process in Defender for Business. Deleting your policies in Microsoft Endpoint Manager helps avoid policy conflicts later. |
 
 > [!TIP]
-> If you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).
+> If you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview). To learn more, see [Get Microsoft Defender for Business](get-defender-business.md).
 
 ## View your security settings and policies
 
