@@ -233,5 +233,5 @@ conceptualContent:
           text: Migrate to Microsoft 365 Enterprise E3
       # footerLink (optional)
       footerLink:
-        url: ../business-video/what-is-microsoft-365.md
+        url: ../admin/admin-overview/what-is-microsoft-365.md
         text: See more
