@@ -31,9 +31,9 @@ If you've just finished setting up Microsoft Defender for Business, you might be
 
 | Tutorial  | Description  |
 |---------|---------|
-| **Document drops backdoor**     | Simulate an attack that introduces file-based malware on a test device. The tutorial describes how to get and use the simulation file, and what to watch for in the Microsoft 365 Defender portal.         |
-|Row2     |         |
-|Row3     |         |
+| **Document drops backdoor**     | Simulate an attack that introduces file-based malware on a test device. The tutorial describes how to get and use the simulation file, and what to watch for in the Microsoft 365 Defender portal.    |
+| **Live Response tutorial**     | Learn how to use basic and advanced commands with Live Response. Learn how to locate a suspicious file, remediate the file, and gather information.   |
+| **Threat & Vulnerability Management (core scenarios)**     | Learn about threat and vulnerability management through three scenarios: <br/>1. Reduce your organization’s threat and vulnerability exposure. <br/>2. Request a remediation. <br/>3. Create an exception for security recommendations.        |
 
 ## How to access the tutorials
 
