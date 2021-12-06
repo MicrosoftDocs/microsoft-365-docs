@@ -42,6 +42,8 @@ With Defender for Business, you can help protect the devices and data your busin
 > [!TIP]
 > If you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).
 
+## How to use this guide
+
 **This guide is intended to**:
 
 - **Provide you with an overview of Defender for Business** so you know what’s included and how it works
