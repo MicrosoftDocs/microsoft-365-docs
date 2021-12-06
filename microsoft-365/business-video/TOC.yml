@@ -25,14 +25,8 @@
           href: connect.md
         - name: Install Microsoft Office apps
           href: install-office.md
-        - name: Set up Outlook for email
-          href: setup-outlook.md 
         - name: Import and redirect mail
           href: import-email.md
-        - name: Move your files to OneDrive
-          href: files-to-onedrive.md
-        - name: Move company files to SharePoint
-          href: files-to-sharepoint.md    
     - name: Mobile
       items: 
         - name: Work from anywhere
@@ -157,8 +151,6 @@
           href: create-sensitivity-labels.md 
     - name: Support
       items:
-        - name: Get help or support
-          href: get-help-support.md 
         - name: Find docs and training
           href: find-help-answers.md
         - name: Employee quick setup  
