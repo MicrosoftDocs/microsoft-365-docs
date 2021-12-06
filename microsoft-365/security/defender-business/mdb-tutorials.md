@@ -22,3 +22,5 @@ ms.collection:
 
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
+
+If you've just finished setting up Microsoft Defender for Business, you might be wondering where to start to learn about how Defender for Business works. This article describes tutorials that are available in Defender for Business. 
