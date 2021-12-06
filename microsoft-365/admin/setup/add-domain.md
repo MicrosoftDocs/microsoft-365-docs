@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365_Setup
@@ -20,6 +20,7 @@ ms.custom:
 - MSStore_Link
 - okr_smb
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -32,9 +33,24 @@ description: "Use the setup wizard to add your domain to Microsoft 365 in the Mi
 
  **[Check the Domains FAQ](domains-faq.yml)** if you don't find what you're looking for. 
   
- *To Add, modify or remove domains you **must** be a **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant, *Customized administrators* or *regular users* won't be able to make these changes.*  
+## Before you begin
 
- ## Add a domain
+To Add, modify or remove domains you **must** be a **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant; *Customized administrators* or *regular users* won't be able to make these changes.
+
+## Watch: Add a domain
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4dN8c?autoplay=false]
+
+Your company might need multiple domain names for different purposes. For example, you might want to add a different spelling of your company name because customers are already using it and their communications have failed to reach you.
+
+1. In the Microsoft 365 admin center, choose <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
+1. Under **Get your custom domain set up**, select **View** > **Manage** > **Add domain**.
+1. Enter the new domain name that you want to add, and then select **Next**.
+1. Sign in to your domain registrar, and then select **Next**.
+1. Choose the services for your new domain.
+1. Select **Next** > **Authorize** > **Next**, and then **Finish**. Your new domain has been added.
+
+## Add a domain
 
 Follow these steps to add, set up, or continue setting up a domain. 
 
@@ -75,8 +91,6 @@ Follow these steps to add, set up, or continue setting up a domain.
 7. If you chose to *add DNS records yourself*  , select **Next** and you'll see a page with all the records that you need to add to your registrars website to set up your domain. 
 
     If the portal doesn't recognize your registrar, you can [follow these general instructions.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
-    
-    Check our list of [host-specific instructions](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) to find your host and follow the steps to add all the records you need. 
     
     If you don't know the DNS hosting provider or domain registrar for your domain, see [Find your domain registrar or DNS hosting provider](../get-help-with-domains/find-your-domain-registrar.md).
     
@@ -134,4 +148,5 @@ If you have a website that you use with your business, it will keep working wher
 [Domains FAQ](domains-faq.yml) (article)\
 [What is a domain?](../get-help-with-domains/what-is-a-domain.md) (article)\
 [Buy a domain name in Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)\
-[Set up your domain](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) (article)
+[Add DNS records to connect your domain](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (article)\
+[Change nameservers to set up Microsoft 365 with any domain registrar](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md) (article)\

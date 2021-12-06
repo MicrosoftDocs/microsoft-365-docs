@@ -19,7 +19,7 @@ ms.collection:
 ms.custom: 
   - TopSMBIssues
   - seo-marvel-apr2020
-localization_priority: Priority
+ms.localizationpriority: high
 description: Admins can learn about the anti-spoofing features that are available in Exchange Online Protection (EOP), which can help mitigate against phishing attacks from spoofed senders and domains.
 ms.technology: mdo
 ms.prod: m365-security
@@ -44,20 +44,20 @@ The following anti-spoofing technologies are available in EOP:
 
   EOP analyzes and blocks messages that can't be authenticated by the combination of standard email authentication methods and sender reputation techniques.
 
-  ![EOP anti-spoofing checks](../../media/eop-anti-spoofing-protection.png)
+  ![EOP anti-spoofing checks.](../../media/eop-anti-spoofing-protection.png)
 
 - **Spoof intelligence insight**: Review spoofed messages from senders in internal and external domains during the last 7 days, and allow or block those senders. For more information, see [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
 
 - **Allow or block spoofed senders in the Tenant Allow/Block List**: When you override the verdict in the spoof intelligence insight, the spoofed sender becomes a manual allow or block entry that only appears on the **Spoof** tab in the Tenant Allow/Block List. You can also manually create allow or block entries for spoof senders before they're detected by spoof intelligence. For more information, see [Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list.md).
 
-- **Anti-phishing policies**: In EOP, anti-phishing policies contain the following anti-spoofing settings:
+- **Anti-phishing policies**: In EOP and Microsoft Defender for Office 365, anti-phishing policies contain the following anti-spoofing settings:
   - Turn spoof intelligence on or off.
   - Turn unauthenticated sender identification in Outlook on or off.
   - Specify the action for blocked spoofed senders.
 
   For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
 
-  **Note**: Anti-phishing policies in Microsoft Defender for Office 365 contain addition protections, including **impersonation** protection. For more information, see [Exclusive settings in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+  **Note**: Anti-phishing policies in Defender for Office 365 contain addition protections, including **impersonation** protection. For more information, see [Exclusive settings in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
 - **Spoof detections report**: For more information, see [Spoof Detections report](view-email-security-reports.md#spoof-detections-report).
 
@@ -71,13 +71,13 @@ Spoofing messages have the following negative implications for users:
 
   The following message is an example of phishing that uses the spoofed sender msoutlook94@service.outlook.com:
 
-  ![Phishing message impersonating service.outlook.com](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
+  ![Phishing message impersonating service.outlook.com.](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
 
   This message didn't come from service.outlook.com, but the attacker spoofed the **From** header field to make it look like it did. This was an attempt to trick the recipient into clicking the **change your password** link and giving up their credentials.
 
   The following message is an example of BEC that uses the spoofed email domain contoso.com:
 
-  ![Phishing message - business email compromise](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
+  ![Phishing message - business email compromise.](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
 
   The message looks legitimate, but the sender is spoofed.
 
@@ -85,7 +85,7 @@ Spoofing messages have the following negative implications for users:
 
   The following message is an example of a real password reset message from the Microsoft Security account:
 
-  ![Microsoft legitimate password reset](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
+  ![Microsoft legitimate password reset.](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
 
   The message really did come from Microsoft, but users have been conditioned to be suspicious. Because it's difficult to the difference between a real password reset message and a fake one, users might ignore the message, report it as spam, or unnecessarily report the message to Microsoft as phishing.
 
@@ -164,7 +164,7 @@ To help mailing list messages pass anti-spoofing checks, do following steps base
 
   - Create inbox rules in your email client to move messages to the Inbox. You can also ask your admins to configure overrides as described in [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md) and [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
 
-  - Create a support ticket with Microsoft 365 to create an override for the mailing list to treat it as legitimate. For more information, see [Contact support for business products - Admin Help](../../business-video/get-help-support.md).
+  - Create a support ticket with Microsoft 365 to create an override for the mailing list to treat it as legitimate. For more information, see [Contact support for business products - Admin Help](../../admin/get-help-support.md).
 
 If all else fails, you can report the message as a false positive to Microsoft. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 

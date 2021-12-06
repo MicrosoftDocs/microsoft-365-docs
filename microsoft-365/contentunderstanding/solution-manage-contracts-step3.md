@@ -1,5 +1,5 @@
 ---
-title: "Step 3. Use Power Automate to create your flow to process your contracts"
+title: Step 3. Use Power Automate to create the flow to process your contracts
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -9,12 +9,12 @@ ms.topic: article
 ms.date: 
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-localization_priority: None
+ms.localizationpriority:  medium
 ROBOTS: 
-description: "Learn how to use Power Automate to create your flow to process your contracts by using a Microsoft 365 solution."
+description: Learn how to use Power Automate to create your flow to process your contracts by using a Microsoft 365 solution.
 ---
 
-# Step 3. Use Power Automate to create your flow to process your contracts
+# Step 3. Use Power Automate to create the flow to process your contracts
 
 You've created your Contract Management channel and have attached your SharePoint document library. The next step is to create a Power Automate flow to process your contracts that your SharePoint Syntex model identifies and classifies. You can do this step by [creating a Power Automate flow in your SharePoint document library](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01).
 
@@ -122,9 +122,9 @@ The following code is the JSON used for this step in the Power Automate flow.
 ```
 
 
-## Conditional
+## Conditional context
 
-In your flow, next you need to create a condition in which your contract will be either  approved or rejected.
+In your flow, next you need to create a condition in which your contract will be either  [approved](#if-the-contract-is-approved) or [rejected](#if-the-contract-is-rejected).
 
 ![Conditional.](../media/content-understanding/condition.png)
 
@@ -147,6 +147,19 @@ When a contract has been approved, the following things occur:
 - In the flow, you create the following item to move approved contracts to the **For Payout** tab.
 
    ![Flow item to move to Pay Out.](../media/content-understanding/ready-for-payout.png)
+
+    To get the expressions for the information needed from the Teams card, use the values shown in the following table.
+ 
+    |Name     |Expression |
+    |---------|-----------|
+    | Approval state  | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['submitActionId']         |
+    | Approved by     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['responder']['displayName']        |
+    | Approval date     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['responseTime']         |
+    | Comment     | body('Post_an_Adaptive_Card_to_a_Teams_channel_and_wait_for_a_response')?['data']['acComments']         |
+    
+    The following example shows how to use the formula box in Power Automate to write an expression.
+
+   ![Screenshot in Power Automate showing an expression formula.](../media/content-understanding/expression-formula-power-automate.png)    
 
 - An adaptive card stating that the contract has been approved is created and posted to the Contract Management channel.
 
@@ -245,11 +258,11 @@ When a contract has been rejected, the following things occur:
 
 - In your flow, you check out the contract file, change the status to **Rejected**, and then check the file back in.
 
-   ![Flow status rejected.](../media/content-understanding/reject-flow.png)
+   ![Flow status rejected in contract file.](../media/content-understanding/reject-flow.png)
 
 - In your flow, you create an adaptive card stating that the contract has been rejected.
 
-   ![Flow status rejected.](../media/content-understanding/reject-flow-item.png)
+   ![Flow status shows rejected on adaptive card.](../media/content-understanding/reject-flow-item.png)
 
 The following code is the JSON used for this step in the Power Automate flow.
 

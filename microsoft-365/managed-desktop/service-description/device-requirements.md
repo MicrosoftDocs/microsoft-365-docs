@@ -4,7 +4,7 @@ description:  Summary of the minimum hardware and software requirements for devi
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
@@ -13,10 +13,10 @@ ms.topic: article
 
 # Device requirements
 
-Microsoft Managed Desktop regularly evaluates device requirements to be included in the service. This article describes the hardware and software requirements a device must meet in order to work with Microsoft Managed Desktop. You can review a list of specific devices already approved for use with the service based on these requirements. Filter for Microsoft Managed Desktop on the [Shop Windows 10 Pro business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices) site
+Microsoft Managed Desktop regularly evaluates device requirements to be included in the service. This article describes the hardware and software requirements a device must meet in order to work with Microsoft Managed Desktop. You can review a list of specific devices already approved for use with the service based on these requirements. Filter for Microsoft Managed Desktop on the [Shop Windows Pro business devices](https://www.microsoft.com/en-us/windows/business/devices) site
 
 > [!NOTE]
-> These requirements can change at any time, but we will provide 30 days notice of any hardware requirement changes. The requirements most recently changed are marked with **\***. 
+> These requirements can change at any time, but we will provide 30 days notice of any hardware requirement changes. The requirements most recently changed are marked with <b>\*</b>. 
 
 ## Check hardware requirements
 
@@ -40,7 +40,7 @@ The device must have been made by one of these manufacturers:
 
 The device must have this software preinstalled:
 
-- Windows 10 Enterprise, Pro, or Pro Workstation edition
+- <b>\*</b> Windows 10 or Windows 11: Enterprise, Pro, or Pro Workstation edition
 - the 64-bit version of Microsoft 365 Apps for enterprise 
 - All applicable device drivers
 
@@ -57,7 +57,8 @@ Devices must have these capabilities:
 For more about these capabilities and the technologies related to them that the service uses, see [Microsoft Managed Desktop technologies](../intro/technologies.md).
 
 > [!NOTE]
-> ARM processors are not supported.
+>- ARM processors are not supported.
+>- <b>\*</b> Windows 11 has additional [hardware requirements](/windows/whats-new/windows-11-requirements).
 
 Devices should meet or exceed following limits for storage and memory:
 

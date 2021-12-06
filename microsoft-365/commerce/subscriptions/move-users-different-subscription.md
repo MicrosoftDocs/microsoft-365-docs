@@ -9,7 +9,7 @@ ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -19,7 +19,7 @@ ms.custom:
 - commerce_subscriptions
 search.appverid: MET150 
 description: "Learn how to move users between subscriptions."
-ms.date: 07/01/2020
+ms.date: 07/01/2020 
 ---
 
 # Move users to a different subscription

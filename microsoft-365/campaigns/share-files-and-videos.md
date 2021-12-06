@@ -8,7 +8,7 @@ manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
@@ -31,7 +31,7 @@ description: "Share files and videos inside your campaign with Microsoft Teams a
 
 When you need to control who can view and who can edit your files, you need to store the files in a secure location, where you can make sure permissions are applied appropriately. You can use Microsoft Teams to store your files, and then share the files either inside or outside of your firm, practice, or campaign by using Microsoft Teams or by sending SharePoint links. Sending a link rather than an email attachment means that you know who is viewing and modifying the files, and they can't be viewed or modified without your permission.
 
-![Diagram of a Microsoft Teams window, showing Files tab and Get link on the menu](../media/m365-democracy-teams-sharefiles.png)
+![Diagram of a Microsoft Teams window, showing Files tab and Get link on the menu.](../media/m365-democracy-teams-sharefiles.png)
 
 With your files in Microsoft Teams and SharePoint, you can also work on the files together and review each other's changes. Use Microsoft Teams to share files inside of a firm, practice, or campaign. If you need to share externally with people outside your organization, you can add them as guests to a team or send them a secure SharePoint link.
 
@@ -63,4 +63,4 @@ To create and share videos, follow these steps.
 
 Download an infographic in [PDF](https://go.microsoft.com/fwlink/?linkid=2079435) or [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) to get a quick overview of ways to share your files.
 
-[![An illustration of sharing files with different users](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)
+[![An illustration of sharing files with different users.](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)

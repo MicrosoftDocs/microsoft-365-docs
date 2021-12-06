@@ -4,7 +4,7 @@ description:  Checks device and network settings, including required endpoints
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
@@ -49,7 +49,7 @@ The downloadable tool checks these device- and network-related items:
 
 ### Hardware
 
-Devices must meet specific hardware requirements to work with Microsoft Managed Desktop. Currently, only specific [approved devices](../service-description/device-list.md) are allowed to enroll. 
+Devices must meet specific hardware requirements to work with Microsoft Managed Desktop. For more information, see [Device requirements](../service-description/device-list.md).
 
 If your device fails any of the checks, it's not compatible with Microsoft Managed Desktop.
 

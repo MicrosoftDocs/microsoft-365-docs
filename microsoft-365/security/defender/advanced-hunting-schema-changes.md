@@ -12,12 +12,10 @@ f1.keywords:
   - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
 ---
@@ -34,9 +32,9 @@ ms.technology: m365d
 
 The [advanced hunting schema](advanced-hunting-schema-tables.md) is updated regularly to add new tables and columns. In some cases, existing columns names are renamed or replaced to improve the user experience. Refer to this article to review naming changes that could impact your queries.
 
-Naming changes are automatically applied to queries that are saved in the security center, including queries used by custom detection rules. You don't need to update these queries manually. However, you will need to update the following queries:
+Naming changes are automatically applied to queries that are saved in the Defender for Cloud, including queries used by custom detection rules. You don't need to update these queries manually. However, you will need to update the following queries:
 - Queries that are run using the API
-- Queries that are saved elsewhere outside the security center
+- Queries that are saved elsewhere outside the Defender for Cloud
 
 ## December 2020
 
@@ -50,22 +48,22 @@ Naming changes are automatically applied to queries that are saved in the securi
 
 | Column name | Original value name | New value name | Reason for change
 |--|--|--|--|
-| `DetectionSource` | MCAS |	Microsoft Cloud App Security | Rebranding |
-| `DetectionSource` | WindowsDefenderAtp|	EDR| Rebranding |
-| `DetectionSource` | WindowsDefenderAv	| Antivirus | Rebranding |
-| `DetectionSource` | WindowsDefenderSmartScreen | 	SmartScreen | Rebranding |
-| `DetectionSource` | CustomerTI |	Custom TI | Rebranding |
-| `DetectionSource` | OfficeATP	| Microsoft Defender for Office 365 | Rebranding |
-| `DetectionSource` | MTP	| Microsoft 365 Defender | Rebranding |
-| `DetectionSource` | AzureATP |	Microsoft Defender for Identity | Rebranding |
-| `DetectionSource` | CustomDetection	| Custom detection | Rebranding |
+| `DetectionSource` | Defender for Cloud Apps | Microsoft Defender for Cloud Apps | Rebranding |
+| `DetectionSource` | WindowsDefenderAtp| EDR| Rebranding |
+| `DetectionSource` | WindowsDefenderAv | Antivirus | Rebranding |
+| `DetectionSource` | WindowsDefenderSmartScreen |  SmartScreen | Rebranding |
+| `DetectionSource` | CustomerTI | Custom TI | Rebranding |
+| `DetectionSource` | OfficeATP | Microsoft Defender for Office 365 | Rebranding |
+| `DetectionSource` | MTP | Microsoft 365 Defender | Rebranding |
+| `DetectionSource` | AzureATP | Microsoft Defender for Identity | Rebranding |
+| `DetectionSource` | CustomDetection | Custom detection | Rebranding |
 | `DetectionSource` | AutomatedInvestigation |Automated investigation | Rebranding |
-| `DetectionSource` | ThreatExperts	| Microsoft Threat Experts | Rebranding |
+| `DetectionSource` | ThreatExperts | Microsoft Threat Experts | Rebranding |
 | `DetectionSource` | 3rd party TI | 3rd Party sensors | Rebranding |
-| `ServiceSource` | Microsoft Defender ATP|	Microsoft Defender for Endpoint | Rebranding |
-|`ServiceSource` |Microsoft Threat Protection	| Microsoft 365 Defender | Rebranding |
-| `ServiceSource` | Office 365 ATP	|Microsoft Defender for Office 365 | Rebranding |
-| `ServiceSource` |Azure ATP	|Microsoft Defender for Identity | Rebranding |
+| `ServiceSource` | Microsoft Defender ATP| Microsoft Defender for Endpoint | Rebranding |
+|`ServiceSource` |Microsoft Threat Protection | Microsoft 365 Defender | Rebranding |
+| `ServiceSource` | Office 365 ATP |Microsoft Defender for Office 365 | Rebranding |
+| `ServiceSource` |Azure ATP |Microsoft Defender for Identity | Rebranding |
 
 `DetectionSource` is available in the [AlertInfo](advanced-hunting-alertinfo-table.md) table. `ServiceSource` is available in the [AlertEvidence](advanced-hunting-alertevidence-table.md) and [AlertInfo](advanced-hunting-alertinfo-table.md) tables. 
 

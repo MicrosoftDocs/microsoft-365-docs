@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -30,21 +30,21 @@ This topic applies to searches that you can run using one of the following Micro
 
 When you run an eDiscovery search, the tool you're using will return an estimate of the number of items (and their total size) that match the search criteria. For example, when you run a search in the Microsoft 365 compliance center, the estimated search results are displayed on the flyout page for the selected search.
   
-![Estimate of results displayed on the search flyout page](../media/EstimatedSearchResults1.png)
+![Estimate of results displayed on the search flyout page.](../media/EstimatedSearchResults1.png)
   
 This is the same estimate of total size and number of items that is displayed in the eDiscovery Export Tool when you export results to a local computer and in the Export Summary report that's downloaded with the search results.
   
 **Estimated results in the eDiscovery Export tool**
 
-![Estimated results in eDiscovery Export tool](../media/d34312a5-0ee6-49aa-9460-7ea0015a6e66.png)
+![Estimated results in eDiscovery Export tool.](../media/d34312a5-0ee6-49aa-9460-7ea0015a6e66.png)
   
 **Estimated results in Export Summary report**
 
-![Estimated search results are included in the Export Summary report](../media/44b579da-86c2-4f33-81b5-84d604003eda.png)
+![Estimated search results are included in the Export Summary report.](../media/44b579da-86c2-4f33-81b5-84d604003eda.png)
   
 However, as you'll notice in the previous screenshot of the Export Summary report, the size and number of actual search results that are downloaded are different than the size and number of estimated search results.
   
-![Difference between estimated and downloaded search results](../media/84aef318-230f-430d-9d9e-02f21342d364.png)
+![Difference between estimated and downloaded search results.](../media/84aef318-230f-430d-9d9e-02f21342d364.png)
   
 Here are some reasons for these differences:
   

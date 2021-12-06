@@ -9,7 +9,7 @@ ms.reviewer: micurn, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: None
+ms.localizationpriority: null
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management 

@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_Enterprise
 - M365-subscription-management
@@ -27,7 +27,7 @@ Modern authentication is an umbrella term for a combination of authentication an
 - **Authentication methods**: Multi-factor Authentication; Client Certificate-based authentication.
 - **Authorization methods**: Microsoft's implementation of Open Authorization (OAuth).
 
-Modern authentication is enabled by using an authentication library, like Active Directory Authentication Library (ADAL) or Microsoft Authentication Library (MSAL). Modern authentication is what clients use to authenticate and authorize access to Microsoft 365 resources. Modern authentication uses OAuth and provides a secure mechanism for clients to access Microsoft 365 services, without requiring access to user credentials. At sign-in, the user authenticates directly with Azure Active Directory and receives an access/refresh token pair in return. The access token grants the client access to the appropriate resources in the Microsoft 365 tenant. A refresh token is used to obtain a new access or refresh token pair when the current access token expires.
+Modern authentication is enabled by using an authentication library, like [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview). Modern authentication is what clients use to authenticate and authorize access to Microsoft 365 resources. Modern authentication uses OAuth and provides a secure mechanism for clients to access Microsoft 365 services, without requiring access to user credentials. At sign-in, the user authenticates directly with Azure Active Directory and receives an access/refresh token pair in return. The access token grants the client access to the appropriate resources in the Microsoft 365 tenant. A refresh token is used to obtain a new access or refresh token pair when the current access token expires.
 
 Modern authentication supports different authentication mechanisms, like certificate-based authentication. Clients on Windows, Android, or iOS devices can use certificate-based authentication (CBA) to authenticate to Azure Active Directory using a client certificate on the device. Instead of a typical username/password, the certificate is used to obtain an access/refresh token pair from Azure Active Directory.
 
@@ -41,12 +41,11 @@ The latest versions of the following clients and platforms support certificate-b
 
 [!INCLUDE [Certificate-based authentication services support table](../includes/microsoft-365-client-support-certificate-based-authentication-include.md)]
 
->[!NOTE]
->Edge for iOS and Android supports certificate-based authentication during account add flows. Edge for iOS and Android does not support certificate-based authentication when performing authentication against web sites, which are typically intranet sites. <br><br>  In this scenario, a user navigates to a web site (usually on the intranet) where the web site requires the user to authenticate via a certificate. This does not involve modern authentication at all and does not leverage a Microsoft authentication library. This is due to a limitation with iOS: iOS prevents third-party apps from accessing the system keychain where the certificates are stored (only Apple apps and the [Safari webview controller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) can access the system keychain). <br><br> As Edge relies on the [WebKit](https://developer.apple.com/documentation/webkit) framework for rendering web sites, Edge is unable to access the system keychain and present the user with a certificate choice. This, unfortunately, is by design due to Apple's architecture.
+> [!NOTE]
+> Edge for iOS and Android supports certificate-based authentication during account add flows. Edge for iOS and Android does not support certificate-based authentication when performing authentication against web sites, which are typically intranet sites. <br><br>  In this scenario, a user navigates to a web site (usually on the intranet) where the web site requires the user to authenticate via a certificate. This does not involve modern authentication at all and does not leverage a Microsoft authentication library. This is due to a limitation with iOS: iOS prevents third-party apps from accessing the system keychain where the certificates are stored (only Apple apps and the [Safari webview controller](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) can access the system keychain). <br><br> As Edge relies on the [WebKit](https://developer.apple.com/documentation/webkit) framework for rendering web sites, Edge is unable to access the system keychain and present the user with a certificate choice. This, unfortunately, is by design due to Apple's architecture.
 
 ## Supported PowerShell modules
 
-- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
+- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 - [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
-

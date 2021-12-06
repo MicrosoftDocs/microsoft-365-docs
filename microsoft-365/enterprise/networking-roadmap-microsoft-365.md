@@ -9,7 +9,7 @@ ms.date: 08/10/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -61,7 +61,7 @@ If you are a network equipment vendor, join the [Microsoft 365 Networking Partne
 
 See how the Contoso Corporation, a fictional but representative multi-national business, [optimized their network devices and Internet connections](contoso-networking.md) for Microsoft 365 cloud services.
 
-![The Contoso Corporation](../media/contoso-overview/contoso-icon.png)
+![The Contoso Corporation.](../media/contoso-overview/contoso-icon.png)
 
 ## Next step
 

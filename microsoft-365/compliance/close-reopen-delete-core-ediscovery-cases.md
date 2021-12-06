@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -41,7 +41,7 @@ To close a case:
 
 2. Click the name of the case that you want to close.
 
-   ![Close case on case home page](../media/eDiscoveryCaseHomePage.png)
+   ![Close case on case home page.](../media/eDiscoveryCaseHomePage.png)
 
 3. On the home page, under **Status**, click **Close case**.
 
@@ -63,7 +63,7 @@ When you reopen a case, any eDiscovery holds that were in place when the case wa
 
 2. Click the name of the case that you want to reopen.
 
-   ![Reopen a closed case](../media/eDiscoveryCaseHomePageReopen.png)
+   ![Reopen a closed case.](../media/eDiscoveryCaseHomePageReopen.png)
 
 3. On the home page, under **Status**, click **Reopen case**.
 
@@ -87,13 +87,13 @@ Before you can delete a case (whether it's active or closed), you must first del
 
 To delete an eDiscovery hold:
 
-1. Go the **Holds** tab in the case that you want to delete.
+1. Go to the **Holds** tab in the case that you want to delete.
 
 2. Select the hold that you want to delete.
 
 3. On the flyout page, click **Delete**.
 
-      ![Delete an eDiscovery hold](../media/DeleteeDiscoveryHold.png)
+      ![Delete an eDiscovery hold.](../media/DeleteeDiscoveryHold.png)
 
 To delete a case:
 
@@ -103,6 +103,6 @@ To delete a case:
 
 3. On the case home page, under **Status**, click **Delete case**.
 
-      ![Delete a case](../media/eDiscoveryCaseHomePageDelete.png)
+      ![Delete a case.](../media/eDiscoveryCaseHomePageDelete.png)
 
 If the case you're trying to delete still contains eDiscovery holds, you'll receive an error message. You'll have to delete all holds associated with the case and then try again to delete the case.

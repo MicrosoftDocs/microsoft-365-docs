@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 ms.collection: 
   - M365-security-compliance
@@ -40,7 +40,7 @@ If your subscription includes Microsoft Defender for Office 365, you can use [Of
 
 - [Safe Attachments in Microsoft Defender for Office 365](set-up-safe-attachments-policies.md)
 
-- [Anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md). Note that you can temporarily increase the **Advanced phishing thresholds** in the policy from **Standard** to **Aggressive**, **More aggressive**, or **Most aggressive**.
+- [Anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md). Note that you can temporarily increase the **Advanced phishing thresholds** in the policy from **Standard** to **Aggressive**, **More aggressive**, or **Most aggressive**.
 
 Verify these Defender for Office 365 features are turned on.
 

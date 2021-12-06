@@ -1,5 +1,5 @@
 ---
-title: Safe Links
+title: Complete Safe Links overview for Microsoft Defender for Office 365
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
@@ -9,8 +9,8 @@ audience: Admin
 ms.topic: overview
 f1_keywords: 
   - '197503'
-
-localization_priority: Normal
+ms.date: 09/08/2021
+ms.localizationpriority: medium
 ms.collection: 
   - Strat_O365_IP
   - M365-security-compliance
@@ -25,7 +25,7 @@ search.appverid:
   - ZPP160
   - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: In this article, admins can learn about Safe Links protection in Defender for Office 365 to protect their organization from phishing and other attacks that use malicious URLs.
+description: Learn about Safe Links protection in Defender for Office 365 to protect an organization from phishing and other attacks that use malicious URLs. Discover Teams Safe Links, and see graphics of Safe Links messages.
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -45,14 +45,14 @@ Safe Links is a feature in [Defender for Office 365](defender-for-office-365.md)
 
 Safe Links protection is available in the following locations:
 
-- **Email messages**: Safe Links protection for links in email messages is controlled by Safe Links policies. There is no default Safe Links policy, **so to get the protection of Safe Links in email messages, you need to create one or more Safe Links policies**. For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](set-up-safe-links-policies.md).
+- **Email messages**: Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection to all recipients (users who aren't defined in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). You can also create Safe Links policies that apply to specific users, group, or domains. For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](set-up-safe-links-policies.md).
 
   For more information about Safe Links protection for email messages, see the [Safe Links settings for email messages](#safe-links-settings-for-email-messages) section later in this article.
   
   > [!NOTE]
   > Safe Links does not work on mail-enabled public folders.
 
-- **Microsoft Teams** (currently in TAP Preview): Safe Links protection for links in Teams conversations, group chats, or from channels is also controlled by Safe Links policies. There is no default Safe Links policy, **so to get the protection of Safe Links in Teams, you need to create one or more Safe Links policies**.
+- **Microsoft Teams**: Safe Links protection for links in Teams conversations, group chats, or from channels is also controlled by Safe Links policies.
 
   For more information about Safe Links protection in Teams, see the [Safe Links settings for Microsoft Teams](#safe-links-settings-for-microsoft-teams) section later in this article.
 
@@ -70,12 +70,12 @@ This article includes detailed descriptions of the following types of Safe Links
   - [Safe Links settings for Microsoft Teams](#safe-links-settings-for-microsoft-teams)
   - ["Do not rewrite the following URLs" lists in Safe Links policies](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **Global Safe Links settings**: These settings are configured globally, not in Safe Links policies. But, the settings apply only to users who are included in active Safe Links policies. These settings include:
+- **Global Safe Links settings**: These settings are configured globally, not in Safe Links policies. These settings include:
 
   - [Safe Links settings for Office 365 apps](#safe-links-settings-for-office-365-apps)
   - ["Block the following URLs" list for Safe Links](#block-the-following-urls-list-for-safe-links)
 
-The following table describes scenarios for Safe Links in Microsoft 365 and Office 365 organizations that include Defender for Office 365 (in other words, lack of licensing is never an issue in the examples).
+The following table describes scenarios for Safe Links in Microsoft 365 and Office 365 organizations that include Defender for Office 365 (note that lack of licensing is never an issue in the examples).
 
 <br>
 
@@ -94,7 +94,7 @@ The following table describes scenarios for Safe Links in Microsoft 365 and Offi
 
 Safe Links scans incoming email for known malicious hyperlinks. Scanned URLs are rewritten using the Microsoft standard URL prefix: `https://nam01.safelinks.protection.outlook.com`. After the link is rewritten, it's analyzed for potentially malicious content.
 
-After Safe Links rewrites a URL, the URL remains rewritten even if the message is *manually* forwarded or replied to (both to internal and external recipients). Additional links that are added to the forwarded or replied to message are not rewritten. However, in the case of *automatic* forwarding by Inbox rules or SMTP forwarding, the URL will not be rewritten in the message that's intended for the final recipient *unless* that recipient is also protected by Safe Links or the URL had already been rewritten in a previous communication. 
+After Safe Links rewrites a URL, the URL remains rewritten even if the message is *manually* forwarded or replied to (both to internal and external recipients). Additional links that are added to the forwarded or replied-to message are not rewritten. However, in the case of *automatic* forwarding by Inbox rules or SMTP forwarding, the URL will not be rewritten in the message that's intended for the final recipient *unless* that recipient is also protected by Safe Links, or the URL had already been rewritten in a previous communication. As long as Safe Links is enabled, URLs are still scanned prior to delivery, regardless of whether they were rewritten or not. Unwrapped URLs will also still be checked by a client-side API call to Safe Links at the time of click in Outlook for Desktop version 16.0.12513 or later.
 
 The settings in Safe Links policies that apply to email messages are described in the following list:
 
@@ -124,6 +124,8 @@ The settings in Safe Links policies that apply to email messages are described i
 
   For more information about the recommended values for Standard and Strict policy settings for Safe Links policies, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
+- **Do not rewrite URLs, do checks via SafeLinks API only**: If this setting is enabled, no URL wrapping takes place. Safe Links is called exclusively via APIs at the time of URL click by Outlook clients that support it. The recommend value is disabled.
+  
 - **Recipient filters**: You need to specify the recipient conditions and exceptions that determine who the policy applies to. You can use these properties for conditions and exceptions:
   - **The recipient is**
   - **The recipient domain is**
@@ -155,10 +157,10 @@ At a high level, here's how Safe Links protection works on URLs in email message
 
 ## Safe Links settings for Microsoft Teams
 
-> [!IMPORTANT]
-> As of March 2020, this feature is in Preview and is available only to members of the Microsoft Teams Technology Adoption Program (TAP). For information about the release schedule, check out the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams).
-
 You enable or disable Safe Links protection for Microsoft Teams in Safe Links policies. Specifically, you use the **Select the action for unknown or potentially malicious URLs within Microsoft Teams** setting. The recommended value is **On**.
+
+> [!NOTE]
+> When you turn on or turn off Safe Links protection for Teams, it might take up to 24 hours for the change to take effect.
 
 The following settings in Safe Links policies that apply to links in email messages also apply to links in Teams:
 
@@ -166,7 +168,7 @@ The following settings in Safe Links policies that apply to links in email messa
 - **Do not track user clicks**
 - **Do not allow users to click through to original URL**
 
-These settings are explained previously in [Safe Links settings for email messages](#safe-links-settings-for-email-messages).
+These settings are previously explained in [Safe Links settings for email messages](#safe-links-settings-for-email-messages).
 
 After you turn on Safe Links protection for Microsoft Teams, URLs in Teams are checked against a list of known malicious links when the protected user clicks the link (time-of-click protection). URLs are not rewritten. If a link is found to be malicious, users will have the following experiences:
 
@@ -216,7 +218,7 @@ The following Safe Links settings are available for Office 365 apps:
 
 - **Do not let users click through safe links to original URL**: Allows or blocks users from clicking through the [warning page](#warning-pages-from-safe-links) to the original URL in in the desktop versions Word, Excel, PowerPoint, and Visio. The default and recommended value is **On**.
 
-To configure the Safe Links settings for Office 365 apps, see [Configure Safe Links protection for Office 365 apps](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center).
+To configure the Safe Links settings for Office 365 apps, see [Configure Safe Links protection for Office 365 apps](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
 
 For more information about the recommended values for Standard and Strict policy settings, see [Global settings for Safe Links](recommended-settings-for-eop-and-office365.md#global-settings-for-safe-links).
 
@@ -253,7 +255,7 @@ The **Block the following URLs** list defines the links that are always blocked 
 
 When a user in an active Safe Links policy clicks a blocked link in a supported app, they're taken to the [Blocked URL warning](#blocked-url-warning) page.
 
-You configure the list of URLs in the global settings for Safe Links. For instructions, see [Configure the "Block the following URLs" list](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center).
+You configure the list of URLs in the global settings for Safe Links. For instructions, see [Configure the "Block the following URLs" list](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal).
 
 **Notes**:
 
@@ -290,7 +292,7 @@ Examples of the values that you can enter and their results are described in the
 
 Each Safe Links policy contains a **Do not rewrite the following URLs** list that you can use to specify URLs that are not rewritten by Safe Links scanning. In other words, the list allows users who are included in the policy to access the specified URLs that would otherwise be blocked by Safe Links. You can configure different lists in different Safe Links policies. Policy processing stops after the first (likely, the highest priority) policy is applied to the user. So, only one **Do not rewrite the following URLs** list is applied to a user who is included in multiple active Safe Links policies.
 
-To add entries to the list in new or existing Safe Links policies, see [Create Safe Links policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) or [Modify Safe Links policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies).
+To add entries to the list in new or existing Safe Links policies, see [Create Safe Links policies](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) or [Modify Safe Links policies](set-up-safe-links-policies.md#use-the-microsoft-365-defender-portal-to-modify-safe-links-policies).
 
 **Notes**:
 
