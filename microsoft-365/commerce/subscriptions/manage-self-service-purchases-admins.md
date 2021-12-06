@@ -9,7 +9,7 @@ ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -197,4 +197,4 @@ When you choose to cancel a self-service purchase subscription, users with licen
 
 For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.yml).
 
-If you have questions or need help with self-service purchases, [contact support](../../business-video/get-help-support.md).
+If you have questions or need help with self-service purchases, [contact support](../../admin/get-help-support.md).

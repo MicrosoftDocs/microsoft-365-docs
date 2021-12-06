@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Learn how to configure SMS text notifications for clients, customers and partners in Microsoft Bookings."
 ---
 

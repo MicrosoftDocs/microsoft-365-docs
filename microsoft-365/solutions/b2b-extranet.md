@@ -13,7 +13,7 @@ ms.collection:
 - m365solution-securecollab
 - m365initiative-externalcollab
 ms.custom: 
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: "Learn how to create a B2B extranet site or team with managed guests from a partner organization."

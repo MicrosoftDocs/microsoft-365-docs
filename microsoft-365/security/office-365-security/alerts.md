@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 
 audience: Admin
 ms.topic: hub-page
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MOE150
   - MET150
@@ -18,7 +18,9 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 description: Learn about how to use the alerts features in the Microsoft 365 Defender portal to view and manage alerts, including managing advanced alerts.
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -31,17 +33,17 @@ ms.prod: m365-security
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 
-Use the alerts features in the Microsoft 365 Defender portal to view and manage alerts for your organization, including managing advanced alerts as part of [Microsoft Cloud App Security overview](/cloud-app-security/what-is-cloud-app-security).
+Use the alerts features in the Microsoft 365 Defender portal to view and manage alerts for your organization, including managing advanced alerts as part of [Microsoft Defender for Cloud Apps overview](/cloud-app-security/what-is-cloud-app-security).
 
 ## How to get to the alerts features
 
-Alerts are in the Microsoft 365 Defender portal (<https://security.microsoft.com>). Here's how to get to the page:
+Alerts are in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. Here's how to get to the page:
 
-In the **Microsoft 365 Defender portal**, go to **Alerts**. Or, to go direct to the **Alerts** page, use <https://security.microsoft.com/alerts>.
+In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Alerts**. Or, to go direct to the **Alerts** page, use <https://security.microsoft.com/alerts>.
 
 ## Alerts features
 
-The following table describes the tools that are available under **Alerts** in the Microsoft 365 Defender portal.
+The following table describes the tools that are available under **Alerts** in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 <br>
 

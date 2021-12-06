@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -30,7 +30,7 @@ Previously, when users identified documents as trusted documents, their selectio
 
 The updated Trust Center logic is described in the following diagram:
 
-![A flow chart showing the Trust Center behavior for active content in Office documents.](../media/office-trust-center-flow.png)
+:::image type="content" source="../media/office-trust-center-flow.png" alt-text="An example of a flow chart describing Trust center Logic in Microsoft 365 Defender portal" lightbox="../media/office-trust-center-flow.png":::
 
 1. A user opens an Office document that contains active content.
 

@@ -13,7 +13,7 @@ ms.collection:
 - Adm_TOC
 ms.service: o365-administration
 ms.custom: admindeeplinkMAC
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "As a global admin you can pin up to three apps to your users' app launcher."
 ---
 

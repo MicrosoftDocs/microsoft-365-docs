@@ -7,7 +7,7 @@ ms.date: 12/01/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -17,6 +17,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
+- admindeeplinkDEFENDER
 description: "Summary: eDiscovery migration steps for the migration from Microsoft Cloud Deutschland."
 ---
 # Information about the eDiscovery experience during the migration from Microsoft Cloud Deutschland
@@ -25,7 +26,7 @@ The following sections provide additional information about the eDiscovery exper
 ## eDiscovery administration until phase 4
 Until phase 4, the Security and Compliance Center will be fully available. All content still remains in the Microsoft Cloud Germany and is manageable by the Microsoft Cloud Germany Security and Compliance Center (https://protection.office.de/).
 
-## eDiscovery experience between phase 4 until the the end of phase 9
+## eDiscovery experience between phase 4 until the end of phase 9
 From the beginning of phase 4 until phase 9 is completed, eDiscovery searches will fail or return 0 results for SharePoint Online, OneDrive for Business, and Exchange Online locations that have been migrated.
 
 > [!NOTE]
@@ -44,7 +45,7 @@ In the event that a search returns zero results or an error during migration, pl
 **Applies to:** All customers using eDiscovery
 
 In phase 9, the final steps for moving to the new German datacenter region will be completed. In this phase, all remaining service components will be migrated.
-After phase 9, using the Security and Compliance Center in Microsoft Cloud Germany (protection.office.de) is no longer supported. Please use the new [Security Center](https://security.microsoft.com/) or [Compliance Center](https://compliance.microsoft.com/) instead. All data have been migrated to the new admin portals.
+After phase 9, using the Security and Compliance Center in Microsoft Cloud Germany (protection.office.de) is no longer supported. Use the new <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> or the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> instead. All data have been migrated to the new admin portals.
 
 | Step(s) | Description | Impact |
 |:-------|:-------|:-------|

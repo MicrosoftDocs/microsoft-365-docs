@@ -14,7 +14,7 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: Learn about available options to create a secure guest sharing environment in Microsoft 365, providing guest access for improved collaboration.

@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: troubleshooting
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276

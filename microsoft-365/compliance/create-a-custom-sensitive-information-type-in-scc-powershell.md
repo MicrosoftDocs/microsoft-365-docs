@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
@@ -481,6 +481,10 @@ To upload your rule package, do the following steps:
 
 When you upload your rule package XML file, the system validates the XML and checks for known bad patterns and obvious performance issues. Here are some known issues that the validation checks for — a regular expression:
   
+- Lookbehind or lookahead assertions in the regular expression should be of fixed length only. Variable length assertions will result in errors.
+    
+  For example, "(?<=^|\s|_)" will not pass validation because the first option in this is '^' which is of zero length while the next tow options ('\s' and '_') are of length one. An alternate way to have this regular expression is "(?:^|(?<=\s|_))"
+  
 - Cannot begin or end with alternator "|", which matches everything because it's considered an empty match.
     
   For example, "|a" or "b|" will not pass validation.
@@ -509,7 +513,7 @@ When you upload your rule package XML file, the system validates the XML and che
 
 - Each Custom Sensitive Information Type can have a maximum of 2048 keywords total.
 
-- The maximum size of Keyword Dictionaries in a single tenant is 1 MB compressed. Reference the same dictionary as many times as necessary when creating custom sensitive information types. Start with creating custom keyword lists in the sensitive information type and use keyword dictionaries if you have more than 2048 keywords in a keyword list or a keyword is larger than 50 characters in length.
+- The maximum size of Keyword Dictionaries in a single tenant is 480KB compressed to comply with AD Schema limits. Reference the same dictionary as many times as necessary when creating custom sensitive information types. Start with creating custom keyword lists in the sensitive information type and use keyword dictionaries if you have more than 2048 keywords in a keyword list or a keyword is larger than 50 characters in length.
 
 - A maximum of 50 keyword dictionary based sensitive information types are allowed in a tenant.
 

@@ -1,12 +1,12 @@
 ---
-title: Set up secure collaboration with Microsoft 365
+title: Set up secure file and document sharing and collaboration with Teams in Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365solution-securecollab
@@ -16,28 +16,28 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 recommendations: false
-description: Learn how to set up secure content collaboration in Teams to protect your data based on its sensitivity.
+description: Learn best practices to set up secure file collaboration and sharing in Teams to protect your data based on its sensitivity.
 ---
 
-# Set up secure collaboration with Microsoft 365 and Microsoft Teams
+# Set up secure file sharing and collaboration with Microsoft Teams
 
-Being able to easily share information with the right people while preventing oversharing is key to an organization's success. This includes being able to share sensitive data safely with only those who should have access to it. Depending on the project, this might include sharing sensitive data with people outside your organization.
+Being able to easily share files and documents with the right people while preventing oversharing is key to an organization's success. This includes being able to share confidential or other sensitive data safely with only those who should have access to it. Depending on the project, this might include sharing sensitive data with people outside your organization.
 
 This collaboration solution guidance includes two components to help you:
 
-- Deploy Microsoft Teams with the right level of protection for each project
+- Deploy Teams with the right level of protection for each project
 - Configure external sharing with appropriate security settings for each project
 
 ![Deploy Teams with appropriate protection and configure external sharing with appropriate security settings.](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
-If versatile and easy-to-use content collaboration tools aren't available, users will often collaborate by emailing documents. This is a tedious and error-prone method of collaboration, and can increase the risk of inappropriate sharing of information. If people find sharing information too difficult, they could revert to using consumer products that are not governed by IT. This can pose an even greater risk.
+If versatile and easy-to-use file collaboration tools aren't available, users will often collaborate by emailing documents. This is a tedious and error-prone method of collaboration, and can increase the risk of inappropriate sharing of information. If people find sharing files too difficult, they could revert to using consumer products that are not governed by IT. This can pose an even greater risk.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 With Microsoft 365, you can deploy Teams with a variety of configurations that help:
 
 - Protect your intellectual property
-- Enable easy collaboration
+- Enable easy collaboration with documents and other files
 - Create a balance between security and usability that increases user satisfaction and reduces the risk of shadow IT
 
 Most organizations have a variety of information, with varying degrees of sensitivity and varying degrees of business impact if the information is inappropriately shared. Depending on the sensitivity of a given piece of information, you may want to allow sharing with:
@@ -68,11 +68,11 @@ To configure secure collaboration, you use these Microsoft 365 capabilities and 
 |Microsoft Teams|Guest access, private teams, private channels|Microsoft 365 E1, E3 and E5|
 |Microsoft 365 Compliance|Sensitivity labels|Microsoft 365 E3 and E5|
 
-## Collaboration governance
+## Collaboration governance framework for Teams and Microsoft 365
 
 Microsoft 365 provides many options for governing your collaboration solution. We recommend you use this deployment content alongside the [collaboration governance content](collaboration-governance-overview.md) to create the best collaboration solution for your organization.
 
-### Using Teams for all kinds of data
+### Securing Teams for sensitive and highly sensitive data
 
 To manage access to information with different sensitivities, we've developed [three different tiers of protection for Teams](configure-teams-three-tiers-protection.md). You can customize any of these tiers to better address the needs or your business.
 

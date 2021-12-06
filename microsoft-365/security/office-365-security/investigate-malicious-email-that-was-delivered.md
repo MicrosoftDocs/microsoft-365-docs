@@ -10,7 +10,7 @@ ms.date: 12/16/2020
 audience: ITPro
 ms.topic: article
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
   - MOE150
@@ -18,7 +18,9 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection: 
   - M365-security-compliance
 description: Learn how to use threat investigation and response capabilities to find and investigate malicious email.
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -65,11 +67,11 @@ To perform certain actions, such as viewing message headers or downloading email
 |
 
 > [!NOTE]
-> *Preview* is a role, not a role group. The Preview role must be added to an existing role group in the Microsoft 365 Defender portal  (<https://security.microsoft.com>). Go to **Permissions**, and then either edit an existing role group or add a new role group with the **Preview** role assigned.
+> *Preview* is a role, not a role group. The Preview role must be added to an existing role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. Go to **Permissions**, and then either edit an existing role group or add a new role group with the **Preview** role assigned.
 >
-> The Global Administrator role is assigned the Microsoft 365 admin center (<https://admin.microsoft.com>), and the Security Administrator and Security Reader roles are assigned in Microsoft 365 Defender (<https://security.microsoft.com>). To learn more about roles and permissions, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+> The Global Administrator role is assigned the Microsoft 365 admin center (<https://admin.microsoft.com>), and the Security Administrator and Security Reader roles are assigned in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. To learn more about roles and permissions, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
-We understand previewing and downloading email are sensitive activities, and so we auditing is enabled for these. Once an admin performs these activities on emails, audit logs are generated for the same and can be seen in the Microsoft 365 Defender portal (<https://security.microsoft.com>). Go to **Audit** \> **Search** tab, and filter on the admin name in **Users** box. The filtered results will show activity **AdminMailAccess**. Select a row to view details in the **More information** section about previewed or downloaded email.
+We understand previewing and downloading email are sensitive activities, and so we auditing is enabled for these. Once an admin performs these activities on emails, audit logs are generated for the same and can be seen in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. Go to **Audit** \> **Search** tab, and filter on the admin name in **Users** box. The filtered results will show activity **AdminMailAccess**. Select a row to view details in the **More information** section about previewed or downloaded email.
 
 ## Find suspicious email that was delivered
 
@@ -78,7 +80,7 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
 > [!NOTE]
 > Default searches in Explorer don't currently include delivered items that were removed from the cloud mailbox by zero-hour auto purge (ZAP). This limitation applies to all views (for example, the **Email \> Malware** or **Email \> Phish** views). To include items removed by ZAP, you need to add a **Delivery action** set to include **Removed by ZAP**. If you include all options, you'll see all delivery action results, including items removed by ZAP.
 
-1. Open the Microsoft 365 Defender portal <https://security.microsoft.com> and sign in using your work or school account for Office 365.
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in using your work or school account for Office 365.
 
 2. Go to **Threat Explorer** by choosing **Email & collaboration** \> **Explorer** in the left navigation. To go to **Threat Explorer** directly, use <https://security.microsoft.com/threatexplorer>.
 
