@@ -53,6 +53,12 @@
           href: setup/set-up-windows-devices.md
         - name: Set up mobile devices
           href: setup/set-up-mobile-devices.md
+        - name: Set up Outlook for Microsoft 365 for business email (video)
+          href: setup/setup-outlook.md
+        - name: Move files to OneDrive (video)
+          href: setup/files-to-onedrive.md
+        - name: Move files to SharePoint (video)
+          href: setup/files-to-sharepoint.md
         - name: Migrate your data to Microsoft 365
           href: setup/migrate-email-and-contacts-admin.md
         - name: Roll out Teams
@@ -78,7 +84,7 @@
     - name: Overview of the Microsoft 365 admin center
       items:
         - name: Admin center overview
-          href: ../business-video/admin-center-overview.md
+          href: admin-overview/admin-center-overview.md
         - name: About admin roles
           href: add-users/about-admin-roles.md
         - name: Admin mobile app

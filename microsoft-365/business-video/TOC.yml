@@ -25,14 +25,8 @@
           href: connect.md
         - name: Install Microsoft Office apps
           href: install-office.md
-        - name: Set up Outlook for email
-          href: setup-outlook.md 
         - name: Import and redirect mail
           href: import-email.md
-        - name: Move your files to OneDrive
-          href: files-to-onedrive.md
-        - name: Move company files to SharePoint
-          href: files-to-sharepoint.md    
     - name: Mobile
       items: 
         - name: Work from anywhere
@@ -95,8 +89,6 @@
       items: 
         - name: What is an admin
           href: what-is-admin.md
-        - name: Overview of the admin center
-          href: admin-center-overview.md
         - name: View, download, or print your bill
           href: view-bill.md
         - name: Buy new licenses
@@ -111,8 +103,6 @@
           href: set-up-self-serve-password-reset.md
         - name: Add a user
           href: add-user.md  
-        - name: Delete a user
-          href: delete-user.md 
         - name: Add another admin
           href: add-admin.md
         - name: Change a user name or email
@@ -123,8 +113,6 @@
           href: company-wide-signature.md 
         - name: Act on usage report
           href: act-on-report.md
-        - name: Add another domain
-          href: add-domain.md 
         - name: Set up a new business email address
           href: set-up-a-new-business-email-address.md
     - name: Manage devices
@@ -157,8 +145,6 @@
           href: create-sensitivity-labels.md 
     - name: Support
       items:
-        - name: Get help or support
-          href: get-help-support.md 
         - name: Find docs and training
           href: find-help-answers.md
         - name: Employee quick setup  
