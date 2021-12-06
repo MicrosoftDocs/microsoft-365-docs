@@ -3,8 +3,6 @@
   items: 
     - name: Get started
       items: 
-        - name: What is Microsoft 365
-          href: what-is-microsoft-365.md
         - name: Overview of setup
           href: setup-overview.md
         - name: Choose a subscription
