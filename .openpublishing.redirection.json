@@ -1,6 +1,21 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/business-video/files-to-sharepoint.md",
+      "redirect_url": "/microsoft-365/admin/setup/files-to-sharepoint",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/files-to-onedrive.md",
+      "redirect_url": "/microsoft-365/admin/setup/files-to-onedrive",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/setup-outlook.md",
+      "redirect_url": "/microsoft-365/admin/setup/setup-outlook",
+      "redirect_document_id": false
+    },
+
       "source_path": "microsoft-365/business-video/get-help-support.md",
       "redirect_url": "/microsoft-365/admin/get-help-support",
       "redirect_document_id": false
@@ -9,6 +24,7 @@
       "source_path": "microsoft-365/business-video/what-is-microsoft-365.md",
       "redirect_url": "/microsoft-365/admin/admin-overview/what-is-microsoft-365",
       "redirect_document_id": false
+	},
     {
       "source_path": "microsoft-365/admin/work-with-customers/index.yml",
       "redirect_url": "/microsoft-365/admin",
@@ -111,7 +127,7 @@
     },
     {
       "source_path": "microsoft-365/business/move-files-to-onedrive.md",
-      "redirect_url": "/microsoft-365/business-video/files-to-onedrive",
+      "redirect_url": "/microsoft-365/admin/setup/files-to-onedrive",
       "redirect_document_id": false
     },
     {
