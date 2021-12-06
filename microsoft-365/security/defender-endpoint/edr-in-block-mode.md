@@ -14,7 +14,8 @@ ms.localizationpriority: medium
 ms.custom:
   - next-gen
   - edr
-ms.date: 10/07/2021
+  - admindeeplinkDEFENDER
+ms.date: 11/29/2021
 ms.collection:
   - m365-security-compliance
   - m365initiative-defender-endpoint
@@ -24,7 +25,7 @@ ms.technology: mde
 # Endpoint detection and response (EDR) in block mode
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -66,8 +67,8 @@ The following image shows an instance of unwanted software that was detected and
 2. Choose **Settings** \> **Endpoints** \> **General** \> **Advanced features**.
 3. Scroll down, and then turn on **Enable EDR in block mode**.
 
-> [!NOTE]
-> EDR in block mode can be turned on only in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or the former Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)). You cannot use registry keys, Microsoft Intune, or Group Policy to enable or disable EDR in block mode.
+> [!IMPORTANT]
+> EDR in block mode can be turned on only in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> or the former Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)), and is applied tenant wide. You cannot set EDR in block mode to target specific device groups or users. You cannot use registry keys, Microsoft Intune, or Group Policy to enable or disable EDR in block mode.
 
 ## Requirements for EDR in block mode
 

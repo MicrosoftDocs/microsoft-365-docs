@@ -196,7 +196,7 @@ sections:
       - question: |
           Can I remove encryption from email?
         answer: |
-          Admins can set up a mail flow rule to remove encryption. You can't remove encryption using a mail flow rule from mail that is applied by another organization, unless the mail is encrypted using encrypt-only protection.
+          Admins can set up a mail flow rule to remove encryption. You can't remove encryption using a mail flow rule from mail that is applied by another organization.
 
       - question: |
           Can I send as a shared mailbox and encrypt emails?
