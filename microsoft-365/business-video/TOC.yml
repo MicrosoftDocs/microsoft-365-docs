@@ -95,8 +95,6 @@
       items: 
         - name: What is an admin
           href: what-is-admin.md
-        - name: Overview of the admin center
-          href: admin-center-overview.md
         - name: View, download, or print your bill
           href: view-bill.md
         - name: Buy new licenses
@@ -111,8 +109,6 @@
           href: set-up-self-serve-password-reset.md
         - name: Add a user
           href: add-user.md  
-        - name: Delete a user
-          href: delete-user.md 
         - name: Add another admin
           href: add-admin.md
         - name: Change a user name or email
@@ -123,8 +119,6 @@
           href: company-wide-signature.md 
         - name: Act on usage report
           href: act-on-report.md
-        - name: Add another domain
-          href: add-domain.md 
         - name: Set up a new business email address
           href: set-up-a-new-business-email-address.md
     - name: Manage devices
