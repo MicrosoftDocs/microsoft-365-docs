@@ -58,7 +58,7 @@ conceptualContent:
         - url: /office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
           itemType: overview
           text: Compare plans
-        - url: /office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
+        - url: https://go.microsoft.com/fwlink/?linkid=2164213
           itemType: reference
           text: Service description
         - url: ../admin/misc/microsoft-365-business-faqs.yml
@@ -233,5 +233,5 @@ conceptualContent:
           text: Migrate to Microsoft 365 Enterprise E3
       # footerLink (optional)
       footerLink:
-        url: ../business-video/what-is-microsoft-365.md
+        url: ../admin/admin-overview/what-is-microsoft-365.md
         text: See more
