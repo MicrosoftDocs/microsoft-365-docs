@@ -28,7 +28,7 @@ ms.custom: seo-marvel-apr2020
   
 Here are the step-by-step instructions required to use network upload to bulk-import multiple PST files to Microsoft 365 mailboxes. For frequently asked questions about using network upload to bulk-import PST files to Microsoft 365 mailboxes, see [FAQs for using network upload to import PST files](./faqimporting-pst-files-to-office-365.yml#using-network-upload-to-import-pst-files).
   
-[Step 1: Copy the SAS URL and install AzCopy](#step-1-copy-the-sas-url-and-install-azcopy)
+[Step 1: Copy the SAS URL and install AzCopy](#step-1-copy-the-sas-url-and-download-azcopy)
 
 [Step 2: Upload your PST files to Microsoft 365](#step-2-upload-your-pst-files-to-microsoft-365)
 
@@ -84,7 +84,7 @@ You have to perform Step 1 only once to import PST files to Microsoft 365 mailbo
 
 - For a high-level overview of the PST Import process, see [How the import process works](#how-the-import-process-works) section in this article.
 
-## Step 1: Copy the SAS URL and install AzCopy
+## Step 1: Copy the SAS URL and download AzCopy
 
 The first step is to download the AzCopy tool, which is the tool that you run in Step 2 to upload PST files to Microsoft 365. You also copy the SAS URL for your organization. This URL is a combination of the network URL for the Azure Storage location in the Microsoft cloud for your organization and a Shared Access Signature (SAS) key. This key provides you with the necessary permissions to upload PST files to an Azure Storage location. Be sure to take precautions to protect the SAS URL. It's unique to your organization and will be used in Step 2.
 
