@@ -57,7 +57,7 @@ If you're working with files you share inside your business, it's also a good id
 1. Create the team and invite your team to it.
 1. Upload your files.
 
-Learn more about [company file storage](files-to-sharepoint.md) and [employee file storage](files-to-onedrive.md).
+Learn more about [company file storage](fi[Move files to SharePoint](../admin/setup/files-to-sharepoint.md)) and [employee file storage]([Move files to OneDrive](../admin/setup/files-to-onedrive.md)).
 
 ## How to get it done
 
