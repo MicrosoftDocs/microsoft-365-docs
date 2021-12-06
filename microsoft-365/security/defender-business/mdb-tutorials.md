@@ -26,12 +26,14 @@ ms.collection:
 If you've just finished setting up Microsoft Defender for Business, you might be wondering where to start to learn about how Defender for Business works. This article describes tutorials that are available in Defender for Business. These tutorials are designed to help you see how Defender for Business can work for your company.
 
 ## Recommended tutorials for Microsoft Defender for Business
+
+The following table describes the recommended tutorials for Defender for Business customers:
 <br/><br/>
 
 
 | Tutorial  | Description  |
 |---------|---------|
-| **Document drops backdoor**     | Simulate an attack that introduces file-based malware on a test device. The tutorial describes how to get and use the simulation file, and what to watch for in the Microsoft 365 Defender portal.    |
+| **Document drops backdoor**     | Simulate an attack that introduces file-based malware on a test device. The tutorial describes how to get and use the simulation file, and what to watch for in the Microsoft 365 Defender portal. <br/><br/>This tutorial requires Microsoft Word to be installed on your test device.   |
 | **Live Response tutorial**     | Learn how to use basic and advanced commands with Live Response. Learn how to locate a suspicious file, remediate the file, and gather information.   |
 | **Threat & Vulnerability Management (core scenarios)**     | Learn about threat and vulnerability management through three scenarios: <br/>1. Reduce your organization’s threat and vulnerability exposure. <br/>2. Request a remediation. <br/>3. Create an exception for security recommendations.        |
 
