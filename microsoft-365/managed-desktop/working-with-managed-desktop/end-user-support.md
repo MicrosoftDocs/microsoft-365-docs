@@ -41,10 +41,10 @@ Before you request elevated access to a device, it's best to review which action
 
 ### To request elevation
 
-1. Sign in to [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to **Devices** menu.
-2. Look for the **Microsoft Managed Desktop** section, and then select **Devices** blade which contains two tabs – Devices Tab and Elevation Requests Tab. 
-3. To create a new elevation request on the Device tab, select a single device that you want to elevate, and then click on **Request elevation** from the Device actions dropdown menu. A new elevation request fly-in pane will appear with the device’s name prepopulated in that field.
-4. Alternatively, to create a new elevation request on the **Elevations Requests tab**, select **+New elevation request.**
+1. Sign in to [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Devices** menu.
+2. Look for the **Microsoft Managed Desktop** section, and then select the **Devices** blade, which contains two tabs–the **Devices** tab and the **Elevation requests** tab. 
+3. To create a new elevation request on the **Device** tab, select a single device that you want to elevate, and then select **Request elevation** from the Device actions dropdown menu. A new elevation request fly-in pane will appear with the device’s name prepopulated in that field.
+4. Alternatively, to create a new elevation request on the **Elevations requests** tab, select **+New elevation request.**
 5. Provide these details:
     - **Support ticket ID** from your own support ticketing system.
     - **Device name**(only when creating request from **Elevation Requests Tab**): Enter the device serial number and then select the device from the menu.
