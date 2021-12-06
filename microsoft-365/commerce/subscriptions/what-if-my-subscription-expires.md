@@ -26,7 +26,7 @@ ms.date: 09/16/2021
 
 If your subscription ends—either because it expires, or because you decide to cancel—your access to Microsoft 365 services, applications, and customer data go through multiple states before the subscription is fully turned off, or *deleted*. If you are aware of this progression, you'll be better equipped to return your subscription to an active state before it's too late, or—if you're leaving Microsoft 365—back up your data before it is ultimately deleted.
 
-Read through this important information before you contact [Microsoft 365 support](../../business-video/get-help-support.md).
+Read through this important information before you contact [Microsoft 365 support](../../admin/get-help-support.md).
 
 > [!NOTE]
 > For some subscriptions, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, turn off recurring billing to cancel the subscription at the end of its term.

@@ -2,7 +2,6 @@
 title: Get domain statistics API
 description: Learn how to use the Get domain statistics API to retrieve the statistics on the given domain in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, domain, domain related devices
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
