@@ -67,9 +67,13 @@ The following table describes the types of onboarding methods that are supported
    
    3. In the Command Prompt window, type the location of the script file. For example, if you copied the file to the **Desktop** folder, type `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`, and then press the Enter key.
 
+6. Proceed to [Run a detection test](#run-a-detection-test).
 
 > [!IMPORTANT]
 > If something goes wrong and your onboarding process fails, see [Microsoft Defender for Business troubleshooting](mdb-troubleshooting.yml).
+
+## Run a detection test
+
 
 ## What if I want to offboard a device?
 
@@ -79,19 +83,20 @@ The following table describes the types of onboarding methods that are supported
 
 3. Under **Device management**, choose **Offboarding**.
 
-4. Select the Windows 10 operating system.
+4. Select **Windows 10 and 11**, and then, under **Offboard a device**, in the **Deployment method** section, choose **Local script**. 
 
-5. In the **Offboard a device** section, in the **Deployment method** list, select a method, such as **Local Script**, and then choose **Download package**.
+5. In the confirmation screen, review the information, and then choose **Download** to proceed.
 
 6. Save the zipped folder to a location, such as a removable drive.
 
 7. On each device, follow these steps: 
 
-   1. Copy the configuration package to the device.
-   2. Extract its contents to a location you can find easily (such as the Desktop or to a `C:\Temp folder`). Notice that the folder contains a file called `WindowsDefenderATPOffboardingPackage_valid_until_YYYY-MM-DD.zip` (where `YYYY-MM-DD` refers to the expiry date of the package.
-   3. Select the Start menu, and then type `cmd` to find the Command Prompt app. Then run Command Prompt as an administrator.
-   4. In the Command Prompt window, type the location of the script file that you saved in step 7b. For example, if you saved it to the Desktop, you’d type `%userprofile%\Desktop\WindowsDefenderATPOffboardingPackage_valid_until_YYYY-MM-DD.cmd`.
-   5. Press the Enter key, or select **OK**.
+   1. Copy the configuration package (`WindowsDefenderATPOffboardingPackage_valid_until_YYYY-MM-DD`) that you downloaded to the device, and extract its contents. You can extract the contents to the device's **Desktop** folder. (`YYYY-MM-DD` refers to the expiry date of the package.)
+
+   2. Open Command Prompt as an administrator.
+
+   3. In the Command Prompt window, type the location of the script file. For example, if you copied the file to the **Desktop** folder, type `%userprofile%\Desktop\WindowsDefenderATPOffboardingPackage_valid_until_YYYY-MM-DD.cmd`, and then press the Enter key.
+
 
 ## Next steps
 
