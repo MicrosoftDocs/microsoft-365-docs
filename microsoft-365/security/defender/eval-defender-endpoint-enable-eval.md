@@ -1,6 +1,6 @@
 ---
 title: Enable Microsoft Defender for Endpoint evaluation
-description: Enable your Microsoft 365 Defender trial lab or pilot environment, including checking license state, and onboarding enpoints
+description: Enable your Microsoft 365 Defender trial lab or pilot environment, including checking license state, and onboarding endpoints
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: macapara
 author: mjcaparas
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -29,8 +29,8 @@ ms.technology: m365d
 This article will guide you through the steps on setting up the evaluation environment for Microsoft Defender for Endpoint using production devices. 
 
 
->[!TIP]
->Microsoft Defender for Endpoint also comes with an in-product evaluation lab where you can add pre-configured devices and run simulations to evaluate the capabilities of the platform. The lab comes with a simplified set-up experience that can help quickly demonstrate the value of Microsoft Defender for Enpdoint including guidance for many features like advanced hunting and threat analytics. For more information, see [Evaluate capabilities](/defender-endpoint/evaluation-lab.md). <br> The main difference between the guidance provided in this article and the evaluation lab is the evaluation environment uses production devices whereas the evaluation lab uses non-production devices. 
+> [!TIP]
+> Microsoft Defender for Endpoint also comes with an in-product evaluation lab where you can add pre-configured devices and run simulations to evaluate the capabilities of the platform. The lab comes with a simplified set-up experience that can help quickly demonstrate the value of Microsoft Defender for Endpoint including guidance for many features like advanced hunting and threat analytics. For more information, see [Evaluate capabilities](../defender-endpoint/evaluation-lab.md). <br> The main difference between the guidance provided in this article and the evaluation lab is the evaluation environment uses production devices whereas the evaluation lab uses non-production devices. 
 
 Use the following steps to enable the evaluation for Microsoft Defender for Endpoint.
 
@@ -59,9 +59,9 @@ You'll first need to check the license state to verify that it was properly prov
 
 After verifying that the license state has been provisioned properly, you can start onboarding devices to the service. 
 
-For the purpose of evaluating Microsoft Defender for Endpoint, we recommend choosing a couple of Windows 10 devices to conduct the evaluation on.
+For the purpose of evaluating Microsoft Defender for Endpoint, we recommend choosing a couple of Windows devices to conduct the evaluation on.
 
-You can choose to use any of the supported management tools, but Intune provides optimal integration. For more information, see [Configure Microsoft Defender for Endpoint in Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure.md#enable-microsoft-defender-for-endpoint-in-intune)
+You can choose to use any of the supported management tools, but Intune provides optimal integration. For more information, see [Configure Microsoft Defender for Endpoint in Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune).
 
 The [Plan deployment](../defender-endpoint/deployment-strategy.md) topic outlines the general steps you need to take to deploy Defender for Endpoint.  
 
@@ -75,7 +75,7 @@ The following table lists the available tools based on the endpoint that you nee
 
 Endpoint | Tool options
 :---|:---
-**Windows** | [Local script (up to 10 devices)](../defender-endpoint/configure-endpoints-script.md),  [Group Policy](../defender-endpoint/configure-endpoints-gp.md),  [Microsoft Endpoint Manager/ Mobile Device Manager](../defender-endpoint/configure-endpoints-mdm.md),  [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md),  [VDI scripts](../defender-endpoint/configure-endpoints-vdi.md),  [Integration with Azure Defender](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)
+**Windows** | [Local script (up to 10 devices)](../defender-endpoint/configure-endpoints-script.md),  [Group Policy](../defender-endpoint/configure-endpoints-gp.md),  [Microsoft Endpoint Manager/ Mobile Device Manager](../defender-endpoint/configure-endpoints-mdm.md),  [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md),  [VDI scripts](../defender-endpoint/configure-endpoints-vdi.md),  [Integration with Microsoft Defender for Cloud](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)
 **macOS** | [Local scripts](../defender-endpoint/mac-install-manually.md),  [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md),  [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md),  [Mobile Device Management](../defender-endpoint/mac-install-with-other-mdm.md)
 **Linux Server** | [Local script](../defender-endpoint/linux-install-manually.md),  [Puppet](../defender-endpoint/linux-install-with-puppet.md),  [Ansible](../defender-endpoint/linux-install-with-ansible.md)
 **iOS** | [App-based](../defender-endpoint/ios-install.md)

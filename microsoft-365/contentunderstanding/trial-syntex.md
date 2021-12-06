@@ -9,11 +9,13 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.collection:
-    - enabler-strategic
-    - m365initiative-syntex
-ms.custom: Adopt
+- enabler-strategic
+- m365initiative-syntex
+ms.custom: 
+- Adopt
+- admindeeplinkMAC
 search.appverid:
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to plan and run a trial pilot program for SharePoint Syntex in your organization.
 ---
 
@@ -34,7 +36,7 @@ You can get the trial version from one of the following sources:
 
 - The [Microsoft 365 admin center](https://admin.microsoft.com)
     1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
-    2. Go to **Billing** > **Purchase Services**.
+    2. Go to **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**Purchase Services**</a>.
     3. Scroll down to the **Add-Ons** section.
     4. On the SharePoint Syntex tile, select **Details**.
     5. Select **Get free trial**.
@@ -101,7 +103,7 @@ If you don't purchase licenses following the trial:
 - Libraries that were running models will no longer automatically classify files or extract models.
 - Any previously classified files or extracted metadata won't be affected.
 - Content centers and any document-understanding models won't be automatically deleted. These will remain available for use if you decide to purchase licenses in the future.
-- Forms-processing models will be stored in the Common Data Services (CDS) instance of the default Power Platform environment. These could be used with future licensing for SharePoint Syntex or with AI Builder capabilities in the Power Platform.
+- Forms-processing models will be stored in the Dataverse (previously named Common Data Service [CDS]) instance of the default Power Platform environment. These could be used with future licensing for SharePoint Syntex or with AI Builder capabilities in the Power Platform.
 
 ## See also
 

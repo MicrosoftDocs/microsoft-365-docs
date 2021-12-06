@@ -12,7 +12,7 @@ f1.keywords:
   - NOCSH
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -24,6 +24,10 @@ ms.technology: m365d
 ---
 
 # Experience Microsoft Defender for Endpoint (MDE) through simulated attacks
+
+**Applies to:**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+
 
 > [!TIP]
 >

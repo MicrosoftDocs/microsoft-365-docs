@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -84,7 +84,7 @@ You can apply DLP policies to data at rest, data in use, and data in motion in l
 - SharePoint Online sites
 - OneDrive accounts
 - Teams chat and channel messages
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Windows 10 devices
 - On-premises repositories
 
@@ -116,7 +116,10 @@ While in test mode, monitor the outcomes of the policy and fine-tune it so that 
 
 #### Enable the control and tune your policies
 
-Once the policy meets all your objectives, turn it on. Continue to monitor the outcomes of the policy application and tune as needed. In general, policies take effect about an hour after being turned on.
+Once the policy meets all your objectives, turn it on. Continue to monitor the outcomes of the policy application and tune as needed. 
+
+> [!NOTE]
+> In general, policies take effect about an hour after being turned on.
 
 <!--See, LINK TO topic for SLAs for location specific  details-->
 
@@ -136,7 +139,7 @@ location | include/exclude by|
 |OneDrive accounts |accounts or distribution groups |
 |Teams chat and channel messages |accounts |
 |Windows 10 devices |user or group |
-|Microsoft Cloud App Security |instance |
+|Microsoft Defender for Cloud Apps |instance |
 |On-premises repositories| repository file path|
 
 3. **Choose the conditions that must be matched for a policy to be applied to an item** - you can accept pre-configured conditions or define custom conditions. Some examples are:
@@ -211,3 +214,7 @@ To learn more about Microsoft 365 DLP, see:
 - [Learn about the data loss prevention Alerts dashboard](dlp-alerts-dashboard-learn.md)
 
 To learn how to use data loss prevention to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
+
+## Licensing and Subscriptions
+
+See the [licensing requirements for Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) for details on the subscriptions that support DLP.

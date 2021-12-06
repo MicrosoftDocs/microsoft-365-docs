@@ -10,7 +10,7 @@ ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.ArchivingHelp'
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -18,7 +18,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 description: "Learn how to use the compliance center to enable archive mailboxes to support your organization's message retention, eDiscovery, and hold requirements."
 ---
 
@@ -27,7 +29,7 @@ description: "Learn how to use the compliance center to enable archive mailboxes
 Archiving in Microsoft 365 (also called *In-Place Archiving*) provides users with additional mailbox storage space. After you turn on archive mailboxes, users can access and store messages in their archive mailboxes by using Microsoft Outlook and Outlook on the web (formerly known as Outlook Web App). Users can also move or copy messages between their primary mailbox and their archive mailbox. They can also recover deleted items from the Recoverable Items folder in their archive mailbox by using the Recover Deleted Items tool.
 
 > [!NOTE]
-> The auto-expanding archiving feature in Microsoft 365 provides additional storage in archive mailboxes. When auto-expanding  archiving is turned on, and then the initial storage quota in a user's archive mailbox is reached, Microsoft 365 automatically adds additional storage space. This means that users won't run out of mailbox storage space and you won't have to manage anything after you initially enable the archive mailbox and turn on auto-expanding archiving for your organization. For more information, see [Overview of unlimited archiving](unlimited-archiving.md).
+> The auto-expanding archiving feature in Microsoft 365 provides additional storage in archive mailboxes. When auto-expanding  archiving is turned on, and then the initial storage quota in a user's archive mailbox is reached, Microsoft 365 automatically adds additional storage space. This means that users won't run out of mailbox storage space and you won't have to manage anything after you initially enable the archive mailbox and turn on auto-expanding archiving for your organization. For more information, see [Overview of auto-expanding archiving](autoexpanding-archiving.md).
 
 ## Get the necessary permissions
 
@@ -35,7 +37,7 @@ You have to be assigned the Mail Recipients role in Exchange Online to enable or
 
 ## Enable an archive mailbox
 
-1. Go to <https://compliance.microsoft.com> and sign in.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in.
 
 2. In the left pane of the Microsoft 365 compliance center, click **Information governance**, and then click the **Archive** tab.
 
@@ -44,15 +46,15 @@ You have to be assigned the Mail Recipients role in Exchange Online to enable or
    > [!NOTE]
    > The **Archive** page shows a maximum of 500 users.
 
-4. In the list of mailboxes, select the user that you want to enable the archive mailbox for.
+3. In the list of mailboxes, select the user that you want to enable the archive mailbox for.
 
    ![Click Enable in the details pane of the selected user to enable the archive mailbox.](../media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
 
-5. In the details pane for the selected user, click **Enable**.
+4. In the details pane for the selected user, click **Enable**.
 
    A warning is displayed saying that if you enable the archive mailbox, items in the user's mailbox that are older than the archiving policy assigned to the mailbox will be moved to the new archive mailbox. The default archive policy that is part of the retention policy assigned to Exchange Online mailboxes moves items to the archive mailbox two years after the date the item was delivered to the mailbox or created by the user. For more information, see the **More info** section in this article.
 
-6. Click **Yes** to enable the archive mailbox.
+5. Click **Yes** to enable the archive mailbox.
 
    It might take a few moments to create the archive mailbox. When it's created, **Archive mailbox: enabled** is displayed in the details pane for the selected user. You might have to click **Refresh** ![Refresh icon.](../media/O365-MDM-Policy-RefreshIcon.gif) to update the information in the details pane.
 
@@ -67,7 +69,7 @@ The default archive policy assigned to users' mailboxes moves items to the archi
 
 To disable an archive mailbox:
 
-1. Go to <https://compliance.microsoft.com> and sign in.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in.
 
 2. In the left pane of the Microsoft 365 compliance center, click **Information governance**, and then click the **Archive** tab.
 
@@ -124,6 +126,16 @@ Run the following command to disable the archive mailbox for all users in your o
 ```powershell
 Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND RecipientTypeDetails -Eq "UserMailbox"} | Disable-Mailbox -Archive
 ```
+
+## Run diagnostics on archive mailboxes
+
+You can run an automated diagnostic check on a user's archive mailbox to identify any problems and suggested resolutions.
+
+To run the diagnostic check, go to [Run Tests: Archive Mailbox](https://aka.ms/PillarArchiveMailbox).
+
+![Run diagnostics on an archive mailbox.](../media/ArchiveMailboxDiagnostics.png)
+
+A flyout page opens in the Microsoft 365 admin center. Enter the email address of the mailbox you want to check and click **Run Tests**.
 
 ## More information
 

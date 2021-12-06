@@ -8,10 +8,11 @@ manager: laurawi
 audience: Admin
 ms.service: O365-seccomp
 ms.date:
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 ms.topic: article
+ms.custom: admindeeplinkMAC
 search.appverid:
 - MOE150
 - MET150
@@ -23,7 +24,7 @@ description: "When you create a sensitivity label, you can automatically assign 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> For information about automatically applying a sensitivity label in Azure Purview (preview), see [Automatically label your content in Azure Purview](/azure/purview/create-sensitivity-label).
+> For information about automatically applying a sensitivity label in Azure Purview, see [Labeling in Azure Purview](/azure/purview/create-sensitivity-label).
 
 When you create a sensitivity label, you can automatically assign that label to files and emails when it matches conditions that you specify.
 
@@ -41,39 +42,39 @@ There are two different methods for automatically applying a sensitivity label t
 
 - **Client-side labeling when users edit documents or compose (also reply or forward) emails**: Use a label that's configured for auto-labeling for files and emails (includes Word, Excel, PowerPoint, and Outlook).
 
-    This method supports recommending a label to users, as well as automatically applying a label. But in both cases, the user decides whether to accept or reject the label, to help ensure the correct labeling of content. This client-side labeling has minimal delay for documents because the label can be applied even before the document is saved. However, not all client apps support auto-labeling. This capability is supported by the Azure Information Protection unified labeling client, and [some versions of Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
+    This method supports recommending a label to users, as well as automatically applying a label. But in both cases, the user decides whether to accept or reject the label, to help ensure the correct labeling of content. This client-side labeling has minimal delay for documents because the label can be applied even before the document is saved. However, not all client apps support auto-labeling. This capability is supported by built-in labeling with [some versions of Office](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps), and also the Azure Information Protection unified labeling client.
 
     For configuration instructions, see [How to configure auto-labeling for Office apps](#how-to-configure-auto-labeling-for-office-apps) on this page.
 
 - **Service-side labeling when content is already saved (in SharePoint or OneDrive) or emailed (processed by Exchange Online)**: Use an auto-labeling policy.
+    
+    You might also hear this method referred to as auto-labeling for data at rest (documents in SharePoint and OneDrive) and data in transit (email that is sent or received by Exchange). For Exchange, it doesn't include emails at rest (mailboxes).
+    
+    Because this labeling is applied by services rather than by applications, you don't need to worry about what apps users have and what version. As a result, this capability is immediately available throughout your organization and suitable for labeling at scale. Auto-labeling policies don't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation mode to help ensure the correct labeling of content before actually applying the label.
 
-  You might also hear this method referred to as auto-labeling for data at rest (documents in SharePoint and OneDrive) and data in transit (email that is sent or received by Exchange). For Exchange, it doesn't include emails at rest (mailboxes).
+    For configuration instructions, see [How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) on this page.
+    
+    Specific to auto-labeling for SharePoint and OneDrive:
+    
+    - Office files for Word (.docx), PowerPoint (.pptx), and Excel (.xlsx) are supported.
+        - These files can be auto-labeled at rest before or after the auto-labeling policies are created. Files cannot be auto-labeled if they are part of an open session (the file is open).
+        - Currently, attachments to list items aren't supported and won't be auto-labeled.
+    - Maximum of 25,000 automatically labeled files in your tenant per day.
+    - Maximum of 100 auto-labeling policies per tenant, each targeting up to 100 sites (SharePoint or OneDrive) when they are specified individually. You can also specify all sites, and this configuration is exempt from the 100 sites maximum.
+    - Existing values for modified, modified by, and the date are not changed as a result of auto-labeling policies—for both simulation mode and when labels are applied.
+    - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the account that last modified the file. If this account is no longer in Azure Active Directory, the label won't be applied because these values can't be set.
 
-  Because this labeling is applied by services rather than by applications, you don't need to worry about what apps users have and what version. As a result, this capability is immediately available throughout your organization and suitable for labeling at scale. Auto-labeling policies don't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation mode to help ensure the correct labeling of content before actually applying the label.
-
-  For configuration instructions, see [How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) on this page.
-
-  Specific to auto-labeling for SharePoint and OneDrive:
-
-  - Office files for Word, PowerPoint, and Excel are supported. Open XML format is supported (such as .docx and .xlsx) but not Microsoft Office 97-2003 format (such as .doc and .xls).
-    - These files can be auto-labeled at rest before or after the auto-labeling policies are created. Files cannot be auto-labeled if they are part of an open session (the file is open).
-    - Currently, attachments to list items aren't supported and won't be auto-labeled.
-  - Maximum of 25,000 automatically labeled files in your tenant per day.
-  - Maximum of 100 auto-labeling policies per tenant, each targeting up to 100 sites (SharePoint or OneDrive) when they are specified individually. You can also specify all sites, and this configuration is exempt from the 100 sites maximum.
-  - Existing values for modified, modified by, and the date are not changed as a result of auto-labeling policies—for both simulation mode and when labels are applied.
-  - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the account that last modified the file.
-
-  Specific to auto-labeling for Exchange:
-
-  - Unlike manual labeling or auto-labeling with Office apps, PDF attachments as well as Office attachments (Word, Excel, and PowerPoint files) are also scanned for the conditions you specify in your auto-labeling policy. When there is a match, the email is labeled but not the attachment.
-    - For PDF files, if the label applies encryption, these files are encrypted when your tenant is [enabled for PDF attachments](ome-faq.yml#are-pdf-file-attachments-supported-).
-    - For these Office files, Open XML format is supported (such as .docx and .xlsx) but not Microsoft Office 97-2003 format (such as .doc and .xls). If the label applies encryption, these files are encrypted.
-  - If you have Exchange mail flow rules or data loss prevention (DLP) policies that apply IRM encryption: When content is identified by these rules or policies and an auto-labeling policy, the label is applied. If that label applies encryption, the IRM settings from the Exchange mail flow rules or DLP policies are ignored. However, if that label doesn't apply encryption, the IRM settings from the mail flow rules or DLP policies are applied in addition to the label.
-  - Email that has IRM encryption with no label will be replaced by a label with any encryption settings when there is a match by using auto-labeling.
-  - Incoming email is labeled when there is a match with your auto-labeling conditions:
+    Specific to auto-labeling for Exchange:
+    
+    - Unlike manual labeling or auto-labeling with Office apps, PDF attachments as well as Office attachments are also scanned for the conditions you specify in your auto-labeling policy. When there is a match, the email is labeled but not the attachment.
+        - For PDF files, if the label applies encryption, these files are encrypted by using [Office 365 Message Encryption (OME)](ome.md) when your tenant is [enabled for PDF attachments](ome-faq.yml#are-pdf-file-attachments-supported-).
+        - For these Office files, Word, PowerPoint, and Excel are supported. If the label applies encryption, they are encrypted by using [Office 365 Message Encryption (OME)](ome.md).
+    - If you have Exchange mail flow rules or data loss prevention (DLP) policies that apply IRM encryption: When content is identified by these rules or policies and an auto-labeling policy, the label is applied. If that label applies encryption, the IRM settings from the Exchange mail flow rules or DLP policies are ignored. However, if that label doesn't apply encryption, the IRM settings from the mail flow rules or DLP policies are applied in addition to the label.
+    - Email that has IRM encryption with no label will be replaced by a label with any encryption settings when there is a match by using auto-labeling.
+    - Incoming email is labeled when there is a match with your auto-labeling conditions:
     - If the label is configured for [encryption](encryption-sensitivity-labels.md), that encryption isn't applied.
-    - If the label is configured to apply [dynamic markings](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), be aware that this can result in the names of people outside your organization.
-  - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the person who sends the email. There currently isn't a way to set a Rights Manager owner for all incoming email messages that are automatically encrypted.
+    - If the label is configured to apply [dynamic markings](sensitivity-labels-office-apps.md#dynamic-markings-with-variables), be aware that this configuration can result in the names of people outside your organization.
+    - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the person who sends the email. There currently isn't a way to set a Rights Manager owner for all incoming email messages that are automatically encrypted.
 
 ## Compare auto-labeling for Office apps with auto-labeling policies
 
@@ -94,7 +95,7 @@ Use the following table to help you identify the differences in behavior for the
 |Override IRM encryption applied without a label|Yes if the user has the minimum usage right of Export |Yes (email only) |
 |Label incoming email|No |Yes|
 
-\* Auto-labeling isn't currently available in all regions. If your tenant can't support this functionality, the **Auto-labeling** tab isn't visible in the Compliance center.
+\* Auto-labeling isn't currently available in all regions because of a backend Azure dependency. If your tenant can't support this functionality, the **Auto-labeling** tab isn't visible in the compliance center. For more information, see [Azure dependency availability by country](/troubleshoot/azure/general/dependency-availability-by-country).
 
 ## How multiple conditions are evaluated when they apply to more than one label
 
@@ -118,7 +119,7 @@ The auto-labeling settings for Office apps are available when you [create or edi
 
 ![Sensitivity label scope options for files and emails.](../media/filesandemails-scope-options-sensitivity-label.png)
 
-As you move through the wizard, you see the **Auto-labeling for files and emails** page where you can choose from a list of sensitive info types or trainable classifiers:
+As you move through the configuration, you see the **Auto-labeling for files and emails** page where you can choose from a list of sensitive info types or trainable classifiers:
 
 ![Label conditions for auto-labeling in Office apps.](../media/sensitivity-labels-conditions.png)
 
@@ -145,7 +146,7 @@ Also similarly to DLP policy configuration, you can choose whether a condition m
 
 #### Custom sensitive information types with Exact Data Match
 
-You can configure a sensitivity label to use [Exact Data Match (EDM)-based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) for custom sensitive information types. However, currently, you must also specify at least one sensitive information type that doesn't use EDM. For example, one of the built-in sensitive information types, such as **Credit card number**.
+You can configure a sensitivity label to use [exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) for custom sensitive information types. However, currently, you must also specify at least one sensitive information type that doesn't use EDM. For example, one of the built-in sensitive information types, such as **Credit card number**.
 
 If you configure a sensitivity label with only EDM for your sensitive information type conditions, the auto-labeling setting is automatically turned off for the label.
 
@@ -153,9 +154,12 @@ If you configure a sensitivity label with only EDM for your sensitive informatio
 
 If you use this option, make sure you have published in your tenant at least one other sensitivity label that's configured for auto-labeling and the [sensitive info types option](#configuring-sensitive-info-types-for-a-label).
 
-When you select the **Trainable classifiers** option, select one or more of the built-in trainable classifiers from Microsoft. If you've created your own custom trainable classifiers, these are also available to select:
+When you select the **Trainable classifiers** option, select one or more of the pre-trained or custom trainable classifiers:
 
 ![Options for trainable classifiers and sensitivity labels.](../media/sensitivity-labels-classifers.png)
+
+> [!CAUTION]
+> We are deprecating the **Offensive Language** pre-trained classifier because it has been producing a high number of false positives. Don't use this classifier and if you are currently using it, we recommend you move your business processes off it and instead use the **Targeted Harassment**, **Profanity**, and **Threat** pre-trained classifiers.
 
 For more information about these classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
@@ -222,13 +226,15 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
 
 Simulation mode is unique to auto-labeling policies and woven into the workflow. You can't automatically label documents and emails until your policy has run at least one simulation.
 
+Simulation mode supports up to 1,000,000 matched files. If more than this number of files are matched from an auto-labeling policy, you can't turn on the policy to apply the labels. In this case, you must reconfigure the auto-labeling policy so that fewer files are matched, and re-run simulation. This maximum of 1,000,000 matched files applies to simulation mode only and not to an auto-labeling policy that's already turned on to apply sensitivity labels.
+
 Workflow for an auto-labeling policy:
 
 1. Create and configure an auto-labeling policy.
 
 2. Run the policy in simulation mode, which can take 12 hours to complete. The completed simulation triggers an email notification that's sent to the user configured to receive [activity alerts](alert-policies.md).
 
-3. Review the results, and if necessary, refine your policy. Rerun simulation mode and wait for it to complete again.
+3. Review the results, and if necessary, refine your policy. For example, you might need to edit the policy rules to reduce false positives, or remove some sites so that the number of matched files doesn't exceed 1,000,000. Rerun simulation mode and wait for it to complete again.
 
 4. Repeat step 3 as needed.
 
@@ -240,9 +246,10 @@ Simulation mode also lets you gradually increase the scope of your auto-labeling
 
 Finally, you can use simulation mode to provide an approximation of the time needed to run your auto-labeling policy, to help you plan and schedule when to run it without simulation mode.
 
+
 ### Creating an auto-labeling policy
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to sensitivity labels:
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, navigate to sensitivity labels:
 
     - **Solutions** > **Information protection**
 
@@ -253,11 +260,11 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     ![Auto-labeling tab.](../media/auto-labeling-tab.png)
 
     > [!NOTE]
-    > If you don't see the **Auto-labeling** tab, this functionality isn't currently available in your region.
+    > If you don't see the **Auto-labeling** tab, this functionality isn't currently available in your region because of a backend Azure dependency. For more information, see [Azure dependency availability by country](/troubleshoot/azure/general/dependency-availability-by-country).
 
-3. Select **+ Create auto-labeling policy**. This starts the New policy wizard:
+3. Select **+ Create auto-labeling policy**. This starts the New policy configuration:
 
-    ![New policy wizard for auto-labeling.](../media/auto-labeling-wizard.png)
+    ![New policy configuration for auto-labeling.](../media/auto-labeling-wizard.png)
 
 4. For the page **Choose info you want this label applied to**: Select one of the templates, such as **Financial** or **Privacy**. You can refine your search by using the **Show options for** dropdown. Or, select **Custom policy** if the templates don't meet your requirements. Select **Next**.
 
@@ -265,13 +272,9 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 6. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint, and OneDrive. If you don't want to keep the default of **All** for your chosen locations, select the link to choose specific instances. Then select **Next**.
 
-    ![Choose locations page auto-labelingwizard.](../media/locations-auto-labeling-wizard.png)
-
-    To specify individual OneDrive accounts: The URL for a user's OneDrive account is in the following format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
-
-    For example, for a user in the contoso tenant that has a user name of "rsimone": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
-
-    To verify the syntax for your tenant and identify OneDrive URLs for users, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
+    ![Choose locations page for auto-labeling configuration.](../media/locations-auto-labeling-wizard.png)
+    
+    To specify individual OneDrive accounts, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
 
 7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, select **Advanced rules**. Then select **Next**.
 
@@ -308,9 +311,9 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 10. For the **Decide if you want to test out the policy now or later** page: Select **Run policy in simulation mode** if you're ready to run the auto-labeling policy now, in simulation mode. Otherwise, select **Leave policy turned off**. Select **Next**:
 
-    ![Test out the policy auto-labeling wizard.](../media/simulation-mode-auto-labeling-wizard.png)
+    ![Test out the configured auto-labeling policy.](../media/simulation-mode-auto-labeling-wizard.png)
 
-11. For the **Summary** page: Review the configuration of your auto-labeling policy and make any changes that needed, and complete the wizard.
+11. For the **Summary** page: Review the configuration of your auto-labeling policy and make any changes that needed, and complete the configuration.
 
 Now on the **Information protection** > **Auto-labeling** page, you see your auto-labeling policy in the **Simulation** or **Off** section, depending on whether you chose to run it in simulation mode or not. Select your policy to see the details of the configuration and status (for example, **Policy simulation is still running**). For policies in simulation mode, select the **Matched items** tab to see which emails or documents matched the rules that you specified.
 
@@ -385,7 +388,7 @@ The recent enhancements for auto-labeling policies for OneDrive and SharePoint h
 
 - When you specify individual sites in an auto-labeling policy, up to 100 sites are now supported instead of 10 sites.
 
-- Maximum of 1,000,000 matched files per auto-labeling policy, although the total of 25,000 automatically labeled files in your tenant per day remains the same.
+- Maximum of 1,000,000 matched files per auto-labeling policy in simulation mode. If more than this number of files are matched during simulation, you won't be able to turn on the policy. Reconfigure the auto-labeling policy to match a smaller number of files, and rerun simulation.
 
 - Simulation improvements:
   - Running the auto-labeling policy in simulation mode completes within 12 hours instead of up to 48 hours.
@@ -413,6 +416,8 @@ When your tenant has the new enhancements, you'll see the following notification
 ## Tips to increase labeling reach
 
 Although auto-labeling is one of the most efficient ways to classify, label, and protect Office files that your organization owns, check whether you can supplement it with any of the additional methods to increase your labeling reach:
+
+- With SharePoint Syntex, you can [apply a sensitivity label to a document understanding model](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model), so that identified documents in a SharePoint library are automatically labeled.
 
 - When you use the [Azure Information Protection unified labeling client](/azure/information-protection/rms-client/aip-clientv2):
 

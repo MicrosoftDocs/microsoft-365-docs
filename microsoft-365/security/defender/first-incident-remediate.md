@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -46,7 +46,7 @@ Microsoft 365 Defender offers several remediation actions that analysts can manu
 
 ## Actions on files
 
-- **Stop and quarantine file** - This action includes stopping running processes, quarantining files, and deleting persistent data, such as any registry keys. This action takes effect on devices with Windows 10, version 1703 or later, where the file was observed in the last 30 days. 
+- **Stop and quarantine file** - This action includes stopping running processes, quarantining files, and deleting persistent data, such as any registry keys. This action takes effect on devices with Windows 11 or Windows 10, version 1703 or later, where the file was observed in the last 30 days. 
 - **Add indicators to block or allow file** - Prevent further propagation of an attack in your organization by banning potentially malicious files or suspected malware. This operation will prevent the file from being read, written, or executed on devices in your organization.
 - **Download or collect file** – This action allows analysts to download a file in a password protected .zip archive file for further analysis by the organization.
 - **Deep analysis** – This action executes a file in a secure, fully instrumented cloud environment. Deep analysis results show the file's activities, observed behaviors, and associated artifacts, such as dropped files, registry modifications, and communication with IP addresses. 
@@ -58,13 +58,13 @@ Continuing the example in [Detect, triage, and analyze incidents](first-incident
 3. Ensure the malicious file was quarantined from SharePoint
 4. Check which endpoints were affected by malware
 5. Rebuild systems
-6. Check for similar Microsoft Cloud App Security alerts for other users
+6. Check for similar Microsoft Defender for Cloud Apps alerts for other users
 7. Create a custom indicator in Microsoft Defender for Endpoint to block a Tor IP address
-8. Create a governance action in Microsoft Cloud App Security for this type of alert such as those shown in the following image:
+8. Create a governance action in Microsoft Defender for Cloud Apps for this type of alert such as those shown in the following image:
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Example of governance actions in the Microsoft Cloud App Security portal."::: 
- 
-Most of the remediation actions can be applied and tracked in Microsoft 365 Defender. 
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Example of governance actions in the Microsoft Defender for Cloud Apps portal.":::
+
+Most of the remediation actions can be applied and tracked in Microsoft 365 Defender.
 
 ## Using Playbooks
 

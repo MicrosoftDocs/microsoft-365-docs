@@ -2,15 +2,13 @@
 title: Hunt for exposed devices
 description: Learn how threat and vulnerability management can be used to help security admins, IT admins, and SecOps collaborate.
 keywords: Microsoft Defender for Endpoint-tvm scenarios, Microsoft Defender for Endpoint, tvm, tvm scenarios, reduce threat & vulnerability exposure, reduce threat and vulnerability, improve security configuration, increase Microsoft Secure Score for Devices, increase threat & vulnerability Microsoft Secure Score for Devices, Microsoft Secure Score for Devices, exposure score, security controls
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -26,7 +24,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -50,28 +48,28 @@ Advanced hunting is a query-based threat-hunting tool that lets you explore up t
 
 ## Check which devices are involved in high severity alerts
 
-1. Go to **Hunting** > **Advanced hunting** from the left-hand navigation pane of the Microsoft 365 Defender portal.
+1. Go to **Hunting** \> **Advanced hunting** from the left-hand navigation pane of the Microsoft 365 Defender portal.
 
 2. Scroll down to the TVM advanced hunting schemas to familiarize yourself with the column names.
 
 3. Enter the following queries:
 
-```kusto
-// Search for devices with High active alerts or Critical CVE public exploit
-let DeviceWithHighAlerts = AlertInfo
-| where Severity == "High"
-| project Timestamp, AlertId, Title, ServiceSource, Severity
-| join kind=inner (AlertEvidence | where EntityType == "Machine" | project AlertId, DeviceId, DeviceName) on AlertId
-| summarize HighSevAlerts = dcount(AlertId) by DeviceId;
-let DeviceWithCriticalCve = DeviceTvmSoftwareVulnerabilities
-| join kind=inner(DeviceTvmSoftwareVulnerabilitiesKB) on CveId
-| where IsExploitAvailable == 1 and CvssScore >= 7
-| summarize NumOfVulnerabilities=dcount(CveId),
-DeviceName=any(DeviceName) by DeviceId;
-DeviceWithCriticalCve
-| join kind=inner DeviceWithHighAlerts on DeviceId
-| project DeviceId, DeviceName, NumOfVulnerabilities, HighSevAlerts
-```
+    ```kusto
+    // Search for devices with High active alerts or Critical CVE public exploit
+    let DeviceWithHighAlerts = AlertInfo
+    | where Severity == "High"
+    | project Timestamp, AlertId, Title, ServiceSource, Severity
+    | join kind=inner (AlertEvidence | where EntityType == "Machine" | project AlertId, DeviceId, DeviceName) on AlertId
+    | summarize HighSevAlerts = dcount(AlertId) by DeviceId;
+    let DeviceWithCriticalCve = DeviceTvmSoftwareVulnerabilities
+    | join kind=inner(DeviceTvmSoftwareVulnerabilitiesKB) on CveId
+    | where IsExploitAvailable == 1 and CvssScore >= 7
+    | summarize NumOfVulnerabilities=dcount(CveId),
+    DeviceName=any(DeviceName) by DeviceId;
+    DeviceWithCriticalCve
+    | join kind=inner DeviceWithHighAlerts on DeviceId
+    | project DeviceId, DeviceName, NumOfVulnerabilities, HighSevAlerts
+    ```
 
 ## Related topics
 

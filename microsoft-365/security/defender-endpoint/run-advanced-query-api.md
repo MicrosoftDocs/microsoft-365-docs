@@ -1,16 +1,15 @@
 ---
 title: Advanced Hunting API
-ms.reviewer: 
+ms.reviewer:
 description: Learn to use the advanced hunting API to run advanced queries on Microsoft Defender for Endpoint. Find out about limitations and see an example.
 keywords: apis, supported apis, advanced hunting, query
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -24,9 +23,10 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Applies to:** 
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -44,7 +44,7 @@ ms.custom: api
 
 4. The maximal execution time of a single request is 10 minutes.
 
-5. 429 response will represent reaching quota limit either by number of requests or by CPU. Read response body to understand what limit has been reached. 
+5. 429 response will represent reaching quota limit either by number of requests or by CPU. Read response body to understand what limit has been reached.
 
 6. The maximum query result size of a single request cannot exceed 124 MB. If exceeded, HTTP 400 Bad Request with the message "Query execution has exceeded the allowed result size. Optimize your query by limiting the amount of results and try again" will appear.
 
@@ -100,7 +100,7 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 
 ```json
 {
-    "Query":"DeviceProcessEvents  
+    "Query":"DeviceProcessEvents
 |where InitiatingProcessFileName =~ 'powershell.exe'
 |where ProcessCommandLine contains 'appdata'
 |project Timestamp, FileName, InitiatingProcessFileName, DeviceId

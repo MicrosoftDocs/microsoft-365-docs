@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -40,7 +40,7 @@ Connect in real time on private 1:1 chats, group chats or in channel conversatio
 
 Help everyone in your organization install Microsoft Teams on their devices. For more information, see [download Microsoft Teams](https://aka.ms/downloadteams).
 
-With Microsoft Teams you can send instant messages, share files and hold meetings. You can [invite anyone to a meeting](schedule-guest-meeting.md), even if they don't have Microsoft Teams. For real-time collaboration with chat, document sharing, and calls, you can invite people outside your business to be a member of your team.
+With Microsoft Teams you can send instant messages, share files and hold meetings. You can [invite anyone to a meeting](https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5), even if they don't have Microsoft Teams. For real-time collaboration with chat, document sharing, and calls, you can invite people outside your business to be a member of your team.
 
 ### Create and organize teams
 
@@ -60,7 +60,7 @@ For a deeper dive into the functionality of Microsoft Teams...
 
 ### Secure your business as it runs remotely
 
-A highly recommended security feature is multi-factor authentication (MFA). Adding MFA for remote employees requires them to enter a security code received by a text, phone call, or authentication app when they log into Microsoft 365. If a hacker gets a hold of someone’s password through a phishing attack, they can’t use it to access your company’s accounts and data. You can add MFA protection from the Microsoft 365 Admin Center: [Set up MFA for mobile devices](set-up-mfa.md).
+A highly recommended security feature is multi-factor authentication (MFA). Adding MFA for remote employees requires them to enter a security code received by a text, phone call, or authentication app when they log into Microsoft 365. If a hacker gets a hold of someone’s password through a phishing attack, they can’t use it to access your company’s accounts and data. You can add MFA protection from the Microsoft 365 Admin Center: [Set up MFA for mobile devices](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
 
 ### Microsoft Teams templates
 

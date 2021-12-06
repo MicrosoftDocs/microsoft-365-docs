@@ -7,7 +7,7 @@ ms.date: 6/29/2018
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:

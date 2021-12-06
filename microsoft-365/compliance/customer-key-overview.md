@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -47,6 +47,7 @@ A data encryption policy (DEP) defines the encryption hierarchy. This hierarchy 
 - Teams status messages
 - User and signal information for Exchange Online
 - Exchange Online mailboxes that aren't already encrypted by mailbox DEPs
+- Unified audit log storage
 - Microsoft Information Protection:
 
   - Exact data match (EDM) data, including data file schemas, rule packages, and the salts used to hash the sensitive data. For EDM and Microsoft Teams, the multi-workload DEP encrypts new data from the time you assign the DEP to the tenant. For Exchange Online, Customer Key encrypts all existing and new data.
@@ -70,7 +71,7 @@ By default your mailboxes get encrypted using Microsoft-managed keys. When you a
 
 - If the mailbox is already encrypted using Microsoft-managed keys, the service rewraps the mailbox using the new mailbox DEP as long as a user or a system operation accesses the mailbox data.
 
-- If the mailbox is not yet encrypted using default encryption, then the service marks the mailbox for a move. The encryption takes place once the move is complete. Mailbox moves are governed based on priorities set for all of Microsoft 365. For more information, see, [Move requests in the Microsoft 365 service](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-office-365-service). If the mailboxes aren't encrypted within the specified time, contact Microsoft.
+- If the mailbox is not yet encrypted using default encryption, then the service marks the mailbox for a move. The encryption takes place once the move is complete. Mailbox moves are governed based on priorities set for all of Microsoft 365. For more information, see, [Move requests in the Microsoft 365 service](/exchange/mailbox-migration/office-365-migration-best-practices#move-requests-in-the-microsoft-365-or-office-365-service). If the mailboxes aren't encrypted within the specified time, contact Microsoft.
 
 Later, you can either refresh the DEP or assign a different DEP to the mailbox as described in [Manage Customer Key for Office 365](customer-key-manage.md). Each mailbox must have appropriate licenses to be assigned a DEP. For more information about licensing, see [Before you set up Customer Key](customer-key-set-up.md#before-you-set-up-customer-key).
 

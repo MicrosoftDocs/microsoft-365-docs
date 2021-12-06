@@ -7,7 +7,7 @@ ms.date: 9/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -56,7 +56,7 @@ In the list below you'll see the most common VPN scenarios seen in enterprise en
 
 ### 1. VPN Forced Tunnel
 
-This is the most common starting scenario for most enterprise customers. A forced VPN is used, which means 100% of traffic is directed into the corporate network regardless of the fact the endpoint resides within the corporate network or not. Any external (Internet) bound traffic such as Office 365 or Internet browsing is then hair-pinned back out of the on premises security equipment such as proxies. In the current climate with nearly 100% of users working remotely, this model therefore puts high load on the VPN infrastructure and is likely to significantly hinder performance of all corporate traffic and thus the enterprise to operate efficiently at a time of crisis.
+This is the most common starting scenario for most enterprise customers. A forced VPN is used, which means 100% of traffic is directed into the corporate network regardless of the fact the endpoint resides within the corporate network or not. Any external (Internet) bound traffic such as Office 365 or Internet browsing is then hair-pinned back out of the on-premises security equipment such as proxies. In the current climate with nearly 100% of users working remotely, this model therefore puts high load on the VPN infrastructure and is likely to significantly hinder performance of all corporate traffic and thus the enterprise to operate efficiently at a time of crisis.
 
 ![VPN Forced Tunnel model 1.](../media/vpn-split-tunneling/vpn-model-1.png)
 
@@ -80,7 +80,7 @@ This model reverses the third model in that only traffic identified as having a 
 
 ### 5. No VPN
 
-A more advanced version of model number two, whereby any internal services are published through a modern security approach or SDWAN solution such as Azure AD Proxy, MCAS, Zscaler ZPA, etc.
+A more advanced version of model number two, whereby any internal services are published through a modern security approach or SDWAN solution such as Azure AD Proxy, Defender for Cloud Apps, Zscaler ZPA, etc.
 
 ![Split Tunnel VPN model 5.](../media/vpn-split-tunneling/vpn-model-5.png)
 
@@ -254,7 +254,7 @@ Once the policy is in place, you should confirm it is working as expected. There
 
 ### Additional support logs
 
-If you need further data to troubleshoot, or are requesting assistance from Microsoft support, obtaining the following information should allow you to expedite finding a solution. Microsoft support's **TSS Windows CMD-based universal TroubleShooting Script toolset** can help you to collect the relevant logs in a simple manner. The tool and instructions on use can be found at <https://aka.ms/TssTools.>
+If you need further data to troubleshoot, or are requesting assistance from Microsoft support, obtaining the following information should allow you to expedite finding a solution. Microsoft support's **TSS Windows CMD-based universal TroubleShooting Script toolset** can help you to collect the relevant logs in a simple manner. The tool and instructions on use can be found at <https://aka.ms/TssTools>.
 
 ## HOWTO guides for common VPN platforms
 

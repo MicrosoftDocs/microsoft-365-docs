@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
   - M365-subscription-management
   - Adm_O365
@@ -17,11 +17,11 @@ search.appverid:
   - MET150
   - MOE150
   - FRP150
-description: "The Microsoft 365 admin center - learn about the features that were added this month."
 ms.custom: 
 - MACDashWhatsNew
 - AdminSurgePortfolio
 - admindeeplinkMAC
+description: "The Microsoft 365 admin center - learn about the features that were added this month."
 ---
 
 # What's new in the Microsoft 365 admin center
@@ -33,7 +33,7 @@ ms.custom:
 
 ::: moniker-end
 
-We're continuously adding new features to [the Microsoft 365 admin center](../business-video/admin-center-overview.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
+We're continuously adding new features to [the Microsoft 365 admin center]([Overview of the Microsoft 365 admin center](admin-overview/admin-center-overview.md)), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
 
 And if you'd like to know what's new with other Microsoft cloud services:
 
@@ -50,7 +50,7 @@ And if you'd like to know what's new with other Microsoft cloud services:
 
 ### Microsoft 365 admin center search
 
-You can now search for incident IDs in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 admin center</a>. You may learn about current incidents through social media, industry publications or from other admins. You can now go to the admin center to look up more details about the incident and to understand the impact to your organization. Just search for the incident ID in the admin center.
+You can now search for incident IDs in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2091030" target="_blank">Microsoft 365 admin center</a>. You may learn about current incidents through social media, industry publications or from other admins. You can now go to the admin center to look up more details about the incident and to understand the impact to your organization. Just search for the incident ID in the admin center.
 
 :::image type="content" source="../media/incident-id.png" alt-text="Screenshot: Searching for incident ID in the admin center":::
 
@@ -284,7 +284,7 @@ A few months ago, we added a setting that lets you manage the What's New message
 
 ### Docs, training, and videos (June)
 
-- [Getting started with Teams](../business-video/get-started-teams-small-business.md)
+- [Getting started with Teams](https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937)
 
 ## May 2020
 
@@ -387,12 +387,12 @@ We've got two updates for Groups this month:
 
 #### For your users
 
-- [Schedule a meeting](../business-video/schedule-guest-meeting.md)
+- [Schedule a meeting](https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5)
 - [Join a Teams meeting](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [Create an org-wide team](../business-video/org-wide-team.md)
-- [Create a Team with guests](../business-video/team-with-guests.md)
-- [Join a Team as a guest](../business-video/join-team-guest.md)
-- [Create a group email address](../business-video/group-email.md)
+- [Create an org-wide team](/microsoftteams/create-an-org-wide-team.md)
+- [Create a Team with guests](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f)
+- [Join a Team as a guest](/microsoftteams/guest-experience.md)
+- [Create a group email address](https://support.microsoft.com/office/3f73d218-52d6-4f88-a733-9ff37073ee4c)
 
 #### For admins and business owners
 
