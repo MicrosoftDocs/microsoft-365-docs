@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: bcarter
 author: brendacarter
-manager: johmar
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.prod: m365-security
@@ -14,7 +14,8 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-- remotework
+- m365solution-zerotrust
+- m365solution-overview
 description: "Implement Zero Trust principles, architecture, and capabilities for Microsoft 365."
 ---
 
@@ -77,7 +78,7 @@ Go to [Zero Trust identity and device access protection](office-365-security/mic
 
 |Includes  |Prerequisites  |Doesn't include  |
 |---------|---------|---------|
-|Recommended identity and device access policies for three tiers of protection:<br>- Starting point<br>- Enterprise (recommended)<br>- Specialized<br><br>Additional recommendations for:<br>- External users (guests<br>- Microsoft Teams<br>- SharePoint Online<br>- Microsoft Cloud App Security | Microsoft E3 or E5<br><br>Azure Active Directory in either of these modes:<br>- Cloud-only<br>- Hybrid with password hash sync (PHS) authentication<br>- Hybrid with pass-through authentication (PTA)<br>- Federated     |Device enrollment for policies that require managed devices. See “Manage endpoints with Intune” to enroll devices |
+|Recommended identity and device access policies for three tiers of protection:<br>- Starting point<br>- Enterprise (recommended)<br>- Specialized<br><br>Additional recommendations for:<br>- External users (guests<br>- Microsoft Teams<br>- SharePoint Online<br>- Microsoft Defender for Cloud Apps| Microsoft E3 or E5<br><br>Azure Active Directory in either of these modes:<br>- Cloud-only<br>- Hybrid with password hash sync (PHS) authentication<br>- Hybrid with pass-through authentication (PTA)<br>- Federated     |Device enrollment for policies that require managed devices. See “Manage endpoints with Intune” to enroll devices |
 | | | |
 
 Start by implementing the starting-point tier. These policies do not require enrolling devices into management. 
@@ -121,7 +122,7 @@ Go to [Evaluate and pilot Microsoft 365 Defender](defender/eval-overview.md) for
 
 |Includes  |Prerequisites  |Doesn't include  |
 |---------|---------|---------|
-| Set up the evaluation and pilot environment for all components:<br>- Defender for Identity<br>- Defender for Office 365<br>- Defender for Endpoint<br>- Microsoft Cloud App Security<br><br>Protect against threats<br><br> Investigate and respond to threats   | See the guidance to read about the architecture requirements for each component of Microsoft 365 Defender.        | Azure AD Identity Protection is not included in this solution guide. It is included in Step 1: Configure Zero Trust identity and device access protection.        |
+| Set up the evaluation and pilot environment for all components:<br>- Defender for Identity<br>- Defender for Office 365<br>- Defender for Endpoint<br>- Microsoft Defender for Cloud Apps<br><br>Protect against threats<br><br> Investigate and respond to threats   | See the guidance to read about the architecture requirements for each component of Microsoft 365 Defender.        | Azure AD Identity Protection is not included in this solution guide. It is included in Step 1: Configure Zero Trust identity and device access protection.        |
 |    |         |         |
 
 ## Step 5. Protect and govern sensitive data
