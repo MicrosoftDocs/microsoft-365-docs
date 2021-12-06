@@ -49,39 +49,27 @@ The following table describes the types of onboarding methods that are supported
 > [!TIP]
 > If something goes wrong while onboarding devices, see [Microsoft Defender for Business troubleshooting](mdb-troubleshooting.yml). 
 
-## How to onboard devices in Microsoft 365 Defender
-
-The following video demonstrates the onboarding process for Microsoft Defender for Endpoint. This process is similar to what you'll do in Microsoft Defender for Business. <br/><br/>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
-
-Follow these steps to onboard devices:
+## Onboard a device using a local script in Microsoft 365 Defender
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
 2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
 
-3. Select an operating system (such as **Windows 10 and 11)**, and then choose **Local script**. Follow the guidance provided for the method you selected.
+3. Select **Windows 10 and 11**, and then, under **Onboard a device**, in the **Deployment method** section, choose **Local script**. 
+
+4. Select **Download onboarding package**. We recommend saving the onboarding package to a removable drive.
+
+5. On each device, follow these steps: 
+
+   1. Copy the `WindowsDefenderATPOnboardingPackage.zip` file that you downloaded to a device, and extract its contents. You can extract the contents to the device's **Desktop** folder.
+   
+   2. Open Command Prompt as an administrator.
+   
+   3. In the Command Prompt window, type the location of the script file. For example, if you copied the file to the **Desktop** folder, type `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`, and then press the Enter key.
+
 
 > [!IMPORTANT]
 > If something goes wrong and your onboarding process fails, see [Microsoft Defender for Business troubleshooting](mdb-troubleshooting.yml).
-
-## What if I want to onboard devices gradually?
-
-If you want to onboard your company's devices in phases, follow these steps:
-
-1. Identify a set of devices to onboard.
-
-2. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
-
-3. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
-
-4. Select an operating system (such as **Windows 10 and 11)**, and then choose an onboarding method (such as **Microsoft Endpoint Manager**, **Local script**, and so on). Follow the guidance provided for the method you selected.
-
-5. Repeat this process for each set of devices you want to onboard. 
-
-> [!TIP]
-> You don't have to use the same onboarding package every time you onboard devices. For example, you can use a local script to onboard some devices, and later on, you can choose another method to onboard more devices.
 
 ## What if I want to offboard a device?
 
