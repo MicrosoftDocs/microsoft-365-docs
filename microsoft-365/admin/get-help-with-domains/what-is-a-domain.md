@@ -56,7 +56,7 @@ You can use a Microsoft domain like  *yourcompany.onmicrosoft.<span>com*  to sig
   
 ## Feeling stuck?
 
-Call Microsoft Support - [Get help setting up a domain]([Get support](../get-help-support.md))
+Call Microsoft Support - [Get help setting up a domain](../../business-video/get-help-support.md)
 
 ## Related content
 
