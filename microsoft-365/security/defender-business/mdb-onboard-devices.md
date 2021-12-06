@@ -27,8 +27,8 @@ With Microsoft Defender for Business, you have several options to choose from fo
 
 ## What to do
 
-1. [Learn about onboarding methods](#types-of-onboarding-methods).
-2. [Onboard devices in the Microsoft 365 Defender portal](#how-to-onboard-devices-in-microsoft-365-defender).
+1. [Learn about onboarding methods](#types-of-onboarding-methods), and determine whether you are using automatic onboarding or manual onboarding.
+2. If you're using automatic onboarding, proceed to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md). Or, if you are onboarding devices manually, proceed to [Onboard a device using a local script in Microsoft 365 Defender](#onboard-a-device-using-a-local-script-in-microsoft-365-defender).
 3. [Proceed to your next steps](#next-steps). 
 
 **This article also includes**:
@@ -44,7 +44,7 @@ The following table describes the types of onboarding methods that are supported
 | Onboarding method  | Description  |
 |---------|---------|
 | **Automatic onboarding** | If you were already using Microsoft Endpoint Manager before getting Defender for Business, Defender for Business will detect that. You'll be asked if you want to use the automatic onboarding process for devices that were previously onboarded to Microsoft Endpoint Manager. Automatic onboarding sets up a connection between Defender for Business and Microsoft Endpoint Manager, and then onboards devices to Defender for Business. This option enables you to onboard devices to Defender for Business quickly and efficiently.<br/><br/>**IMPORTANT**: If you choose the automatic onboarding process, *all* devices that are enrolled in Microsoft Endpoint Manager will be onboarded to Defender for Endpoint. <br/><br/>If you select automatic onboarding, skip the procedures in this article and proceed to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md).  |
-| **Local script**<br/>(*recommended during preview; useful for onboarding a few devices at a time*)  | Microsoft Defender for Business hosts a downloadable script that you can use on Windows devices. Running the script on a device creates a trust with Azure Active Directory (Azure AD) and enrolls the device with Microsoft Intune. You can use the script to onboard up to ten (10) devices that are running Windows 10 or 11. <br/><br/>To learn more about this method, see [Onboard Windows devices using a local script](../defender-endpoint/configure-endpoints-script.md). |
+| **Local script**<br/>(*recommended during preview; useful for onboarding a few devices at a time*)  | You can onboard devices manually using a local script. Microsoft Defender for Business hosts a downloadable script that you can use on Windows devices. Running the script on a device creates a trust with Azure Active Directory (Azure AD) and enrolls the device with Microsoft Intune.<br/><br/>If you select this method, proceed to [Onboard a device using a local script in Microsoft 365 Defender](#onboard-a-device-using-a-local-script-in-microsoft-365-defender). |
 
 > [!TIP]
 > If something goes wrong while onboarding devices, see [Microsoft Defender for Business troubleshooting](mdb-troubleshooting.yml). 
@@ -74,7 +74,7 @@ The following table describes the types of onboarding methods that are supported
 
 ## Run a detection test
 
-After you have onboarded a device, you can run a detection test to make sure that everything is working correctly with Defender for Business.
+After you have onboarded a device manually, you can run a detection test to make sure that everything is working correctly with Defender for Business.
 
 1. On the device, create a folder: `C:\test-MDATP-test`.
 
@@ -111,7 +111,6 @@ If you want to offboard a device, follow these steps:
    2. Open Command Prompt as an administrator.
 
    3. In the Command Prompt window, type the location of the script file. For example, if you copied the file to the **Desktop** folder, type `%userprofile%\Desktop\WindowsDefenderATPOffboardingPackage_valid_until_YYYY-MM-DD.cmd`, and then press the Enter key.
-
 
 ## Next steps
 
