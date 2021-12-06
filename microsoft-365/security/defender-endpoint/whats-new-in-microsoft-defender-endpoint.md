@@ -55,7 +55,13 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 
+## December 2021
+
+- Discover IoT Devices (preview) <br/> [Device discovery](device-discovery.md) extends its capability to help you find unmanaged IoT devices connected to your corporate network.
+- [Microsoft Defender for IoT integration](enable-microsoft-defender-for-iot-integration.md)(preview)<br/> Microsoft Defender for Endpoint can now integrate with Microsoft Defender for IoT. This integration extends your device discovery capabilities with the agentless monitoring capabilities provided by Microsoft Defender for IoT.
+
 ## November 2021
+
 - [Security configuration management](security-config-management.md) <br/> A capability for devices that aren’t managed by a Microsoft Endpoint Manager, either Microsoft Intune or Microsoft Endpoint Configuration Manager, to receive security configurations for Microsoft Defender directly from Endpoint Manager.
 
 - Enhancements to cross-platform support.
