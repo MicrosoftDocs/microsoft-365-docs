@@ -29,6 +29,8 @@
       items:
       - name: Get started using the portal
         href: mdb-get-started.md
+      - name: Try tutorials and simulations
+        href: mdb-tutorials.md
     - name: Use Microsoft Defender for Business
       items: 
       - name: View and manage devices
