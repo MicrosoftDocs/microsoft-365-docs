@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: 
@@ -14,6 +14,7 @@ ms.custom:
 - 'O365P_AddUsersCSV'
 - 'O365M_AddUsersCSV'
 - 'O365E_AddUsersCSV'
+- admindeeplinkMAC
 search.appverid:
 - MET150
 - MOP150
@@ -37,7 +38,7 @@ Each person on your team needs a user account before they can sign in and access
 
 1. Sign in to Microsoft 365 with your work or school account.
 
-2. In the admin center, choose **Users** \> **Active users**.
+2. In the admin center, choose **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 
 3. Select **Add multiple users**.
 

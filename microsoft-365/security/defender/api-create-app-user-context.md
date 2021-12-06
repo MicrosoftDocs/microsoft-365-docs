@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -112,7 +112,7 @@ $redirectUri = '' # Paste your app's redirection URI
 $authority = "https://login.windows.net/$tenantId"
 $resourceUrl = 'https://api.security.microsoft.com'
 
-$response = Get-ADALToken -Resource $resourceUrl -ClientId $cleintId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:Always
+$response = Get-ADALToken -Resource $resourceUrl -ClientId $clientId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:Always
 $response.AccessToken | clip
 
 $response.AccessToken

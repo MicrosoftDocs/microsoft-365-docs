@@ -9,7 +9,7 @@ ms.date: 05/22/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: null
 search.appverid:
 - MET150
 ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
@@ -17,6 +17,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: Understand how to transition legacy files to Office 365 Message Encryption (OME) for your organization. 
 ---
 
@@ -64,7 +65,7 @@ For more information about how to create Exchange mail flow rules, see [Define R
 
 2. Choose the **Admin** tile.
 
-3. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
+3. In the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), choose **Admin centers** \> **Exchange**.
 
 4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
 
@@ -120,7 +121,7 @@ When your email users send encrypted messages, recipients of those messages can 
 
 2. Choose the **Admin** tile.
 
-3. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
+3. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, choose **Admin centers** \> **Exchange**.
 
 4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
 

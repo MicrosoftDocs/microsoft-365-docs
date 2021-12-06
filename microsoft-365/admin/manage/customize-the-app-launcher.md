@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -58,7 +58,7 @@ You can add your own custom tiles to the app launcher that point to SharePoint s
   
 8. Select **Save changes** to create the custom tile. 
     
-    Your custom tile now appears in the app launcher on the **All** tab for you and your users. 
+    Your custom tile will appear within the next 24 hours in the app launcher on the **All** tab for you and your users. 
 
     > [!NOTE]
     > If you don't see the custom tile created in the previous steps, make sure you have an Exchange Online mailbox assigned to you and you've signed into your mailbox at least once. These steps are required for custom tiles in Microsoft 365. 
@@ -67,7 +67,7 @@ You can add your own custom tiles to the app launcher that point to SharePoint s
 
 1. In the admin center, go to the **Settings** > **Org Settings** > **Organization profile** tab.
     
-2. On the **Organization profile** page, next to   **Add custom tiles for your organization**, select **Edit**.
+2. On the **Organization profile** page, go to **Custom App launcher tiles**,  If you select the three dots next to your **Custom Tile** and Select **Edit custom tile**.
 
 3. Update the **Tile name**, **URL**, **Description**, or **Image URL** for the custom tile (see [Add a custom tile to the app launcher](#add-a-custom-tile-to-the-app-launcher)).
     

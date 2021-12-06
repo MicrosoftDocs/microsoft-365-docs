@@ -2,12 +2,11 @@
 title: Common mistakes to avoid when defining exclusions
 description: Avoid common mistakes when defining exclusions for Microsoft Defender Antivirus scans.
 keywords: exclusions, files, extension, file type, folder name, file name, scans
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,10 +14,14 @@ ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 06/15/2021
+ms.date: 10/19/2021
+ms.collection: M365-security-compliance
 ---
 
 # Common mistakes to avoid when defining exclusions
+
+**Applies to:**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 You can define an exclusion list for items that you don't want Microsoft Defender Antivirus to scan. Such excluded items could contain threats that make your device vulnerable. This article describes some common mistake that you should avoid when defining exclusions.
 
@@ -92,6 +95,17 @@ In general, do not define exclusions for the following folder locations:
 `C:\Windows\Temp\`
 
 `C:\Windows\Temp\*`
+
+#### Linux and macOS Platforms
+
+`/`
+
+`/bin`
+
+`/sbin`
+
+`/usr/lib`
+
 
 ### File extensions
 
@@ -249,12 +263,24 @@ In general, do not define exclusions for the following processes:
 
 `windbg.exe`
 
+#### Linux and macOS Platforms
+
+`bash`
+
+`sh`
+
+`python` and `python3`
+
+`java`
+
+`zsh`
+
 > [!NOTE]
 > You can choose to exclude file types, such as `.gif`, `.jpg`, `.jpeg`, or `.png` if your environment has a modern, up-to-date software with a strict update policy to handle any vulnerabilities.
 
 ## Using just the file name in the exclusion list
 
-A malware may have the same name as that of the file that you trust and want to exclude from scanning. Therefore, to avoid excluding a potential malware from scanning, use a fully qualified path to the file that you want to exclude instead of using just the file name. For example, if you want to exclude `Filename.exe` from scanning, use the complete path to the file, such as `C:\program files\contoso\Filename.exe`.
+Malware might have the same name as that of a file that you trust and want to exclude from scanning. Therefore, to avoid excluding potential malware from scanning, use a fully qualified path to the file that you want to exclude instead of using just the file name. For example, if you want to exclude `Filename.exe` from scanning, use the complete path to the file, such as `C:\program files\contoso\Filename.exe`.
 
 ## Using a single exclusion list for multiple server workloads
 

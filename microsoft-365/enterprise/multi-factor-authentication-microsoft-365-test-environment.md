@@ -9,12 +9,13 @@ ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom: 
 - TLG
 - Ent_TLGs
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: "Configure multi-factor authentication using text messages sent to a smart phone in your Microsoft 365 for enterprise test environment."
 ---
 
@@ -53,7 +54,7 @@ Enable multi-factor authentication for the User 2 account with these steps:
   
 1. Open a separate, private instance of your browser, go to the Microsoft 365 admin center ([https://portal.microsoft.com](https://portal.microsoft.com)), and then sign in with your global administrator account.
     
-2. In the left navigation, select **Users** > **Active users**.
+2. In the left navigation, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
     
 3. In the Active users pane, select **Multi-factor authentication**.
     
@@ -103,7 +104,7 @@ In this phase, you enable multi-factor authentication for the User 3 account usi
 
 Next, create a new group named MFAUsers and add the User 3 account to it.
 
-1. On the **Microsoft 365 admin center** tab, select **Groups** in the left navigation, and then select **Groups**.
+1. On the **Microsoft 365 admin center** tab, select **Groups** in the left navigation, and then select <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>.
 2. Select **Add a group**.
 3. In the **Choose a group type** pane, select **Security**, and then select **Next**.
 4. In the **Set up the basics** pane, select **Create group**, and then select **Close**.

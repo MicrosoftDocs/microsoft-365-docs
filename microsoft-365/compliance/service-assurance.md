@@ -9,7 +9,7 @@ ms.date: 6/29/2018
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MOE150
 - BCS160
@@ -90,7 +90,7 @@ Depending on your specific set-up, options included in your view might have some
 ## Get help with Service assurance
 <a name="addother"> </a>
 
-[Contact support for business products - Admin Help](../business-video/get-help-support.md).
+[Contact support for business products - Admin Help](../admin/get-help-support.md).
   
 ## Frequently Asked Questions
 <a name="addother"> </a>

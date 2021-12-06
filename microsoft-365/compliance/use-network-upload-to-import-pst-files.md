@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -311,7 +311,7 @@ After you create the import job in Step 5, Microsoft 365 analyzes the data in th
 
   - It helps address compliance needs of your organization by letting you apply Microsoft 365 compliance features to the data from the PST files that you imported. This includes:
 
-  - Enabling [archive mailboxes](enable-archive-mailboxes.md) and [auto-expanding archiving](enable-unlimited-archiving.md) to give users additional mailbox storage space to store the data that you imported.
+  - Enabling [archive mailboxes](enable-archive-mailboxes.md) and [auto-expanding archiving](enable-autoexpanding-archiving.md) to give users additional mailbox storage space to store the data that you imported.
 
   - Placing mailboxes on [Litigation Hold](./create-a-litigation-hold.md) to retain the data that you imported.
 
@@ -321,7 +321,7 @@ After you create the import job in Step 5, Microsoft 365 analyzes the data in th
 
   - Searching the [audit log](search-the-audit-log-in-security-and-compliance.md) for mailbox-related events that affect the data that you imported.
 
-  - Importing data to [inactive mailboxes](create-and-manage-inactive-mailboxes.md) to archive data for compliance purposes. 
+  - Importing data to [inactive mailboxes](inactive-mailboxes-in-office-365.md) to archive data for compliance purposes. 
 
   - Using [data loss prevention policies](dlp-learn-about-dlp.md) to prevent sensitive data from leaking outside your organization.
   

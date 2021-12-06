@@ -9,11 +9,10 @@ ms.date:
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-- m365solution-mig
 - m365initiative-compliance
 search.appverid:
 - MOE150
@@ -21,7 +20,7 @@ search.appverid:
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn how to import third-party data from  social media platforms, instant messaging platforms, and document collaboration platforms to Microsoft 365 mailboxes."
+description: "Learn how to import and archive third-party data from social media platforms, instant messaging platforms, and document collaboration platforms to Microsoft 365 mailboxes."
 ---
 
 # Archive third-party data in Microsoft 365
@@ -51,8 +50,10 @@ Click the link in the **Third-party data** column to go the step-by-step instruc
 |Third-party data  |Litigation hold|eDiscovery  |Retention settings  |Records management  |Communication compliance  |Insider risk management  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
 |[Bloomberg Message](archive-bloomberg-message-data.md)     |![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)||
+|[Epic EHR healthcare](import-epic-data.md) ||||||![Check mark](../media/checkmark.png)|
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
-|[Human resources (HR)](import-hr-data.md) ||||||![Check mark](../media/checkmark.png)
+|[Generic EHR healthcare](import-healthcare-data.md) ||||||![Check mark](../media/checkmark.png)|
+|[Human resources (HR)](import-hr-data.md) ||||||![Check mark](../media/checkmark.png)|
 |[ICE Chat](archive-icechat-data.md)     |![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[LinkedIn](archive-linkedin-data.md)   |![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
@@ -81,10 +82,10 @@ Before you can archive third-party data in Microsoft 365, you have to work with 
 |[Reuters Dealing](archive-reutersdealing-data.md)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Reuters Eikon](archive-reuterseikon-data.md)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Reuters FX](archive-reutersfx-data.md)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
-|[RingCentral](archive-ringcentral-data.md)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
+|[RingCentral](archive-ringcentral-data.md)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Salesforce Chatter](archive-salesforcechatter-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
 |[ServiceNow](archive-servicenow-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
-|[Skype for Business](archive-skypeforbusiness-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
+|[Skype for Business](archive-skypeforbusiness-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Slack eDiscovery](archive-slack-data.md)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Symphony](archive-symphony-data.md)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Text-delimited](archive-text-delimited-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
@@ -94,6 +95,7 @@ Before you can archive third-party data in Microsoft 365, you have to work with 
 |[XIP](archive-xip-data.md)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[XSLT/XML](archive-xslt-xml-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
 |[Yieldbroker](archive-yieldbroker-data.md)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
+|[YouTube](archive-youtube-data.md)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
 |[Zoom Meetings](archive-zoommeetings-data.md)     |![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 ||||||||
 
@@ -125,7 +127,9 @@ TeleMessage data connectors are also available in GCC environments in the Micros
 
 The table in this section lists the third-party data connectors available in partnership with 17a-4 LLC. The table also summarizes the compliance solutions that you can apply to third-party data after you import and archive it in Microsoft 365. See the [Overview of compliance solutions that support third-party data](#overview-of-compliance-solutions-that-support-third-party-data) section for a more detailed description of each compliance solution and how it supports third-party data.
 
-Before you can archive third-party data in Microsoft 365, you have to work with Veritas to set up their archiving service (called *DataParser*) for your organization. For more information, click the link in the **Third-party data** column to go the step-by-step instructions for creating a connector for that data type.
+Before you can archive third-party data in Microsoft 365, you have to work with 17a-4 LLC to set up their archiving service (called *DataParser*) for your organization. For more information, click the link in the **Third-party data** column to go the step-by-step instructions for creating a connector for that data type.
+
+17a-4 data connectors are also available in GCC environments in the Microsoft 365 US Government cloud. For more information, see the [Data connectors in the US Government cloud](#data-connectors-in-the-us-government-cloud) section in this article.
 
 |Third-party data  |Litigation hold|eDiscovery  |Retention settings  |Records management  |Communication compliance  |Insider risk management  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
@@ -212,7 +216,7 @@ You can use this query in the **Keywords** box for a Content search, a search as
 
 ![Query to search for third-party data.](..\media\SearchThirdPartyData1.png)
 
-You can also use the `kind:externaldata` property:value pair to to narrow the scope of searches to third-party data. For example, to search for items imported from any third-party data source that contain the word *contoso* in the **Subject** property of the imported item, use the following query in the **Keywords** box:
+You can also use the `kind:externaldata` property:value pair to narrow the scope of searches to third-party data. For example, to search for items imported from any third-party data source that contain the word *contoso* in the **Subject** property of the imported item, use the following query in the **Keywords** box:
 
 ```powershell
 subject:contoso AND kind:externaldata
@@ -261,6 +265,7 @@ Some data connectors are available in the US Government cloud. The following sec
 |Bell SMS/MMS Network Archiver | Yes | No | No |
 |Enterprise Number Archiver | Yes | No | No |
 |O2 SMS and Voice Network Archiver | Yes         | No | No |
+|Rogers Network Archiver | Yes         | No | No |
 |Signal Archiver | Yes | No | No |
 |Telegram Archiver | Yes | No | No |
 |TELUS SMS Network Archiver | Yes | No | No |
@@ -276,8 +281,33 @@ Some data connectors are available in the US Government cloud. The following sec
 |CellTrust SL2 | Yes | No | No |
 |||||
 
+### 17a-4 data connectors
+
+|Data connector  |GCC  |GCC High  |DoD  |
+|:---------|:---------|:---------|:---------|
+|BlackBerry DataParser | Yes | No | No |
+|Bloomberg DataParser  | Yes | No | No |
+|Cisco Jabber DataParser  | Yes | No | No |
+|Cisco Webex DataParser  | Yes | No | No |
+|FactSet DataParser  | Yes | No | No |
+|Fuze DataParser  | Yes | No | No |
+|FX Connect DataParser  | Yes | No | No |
+|ICE DataParser  | Yes | No | No |
+|InvestEdge DataParser  | Yes | No | No |
+|LivePerson Conversational Cloud DataParser  | Yes | No | No |
+|Quip DataParser  | Yes | No | No |
+|Refinitiv Eikon Messenger DataParser  | Yes | No | No |
+|ServiceNow DataParser  | Yes | No | No |
+|Skype for Business Server DataParser | Yes | No | No |
+|Slack DataParser | Yes | No | No |
+|SQL DataParser  | Yes | No | No |
+|Symphony DataParser | Yes | No | No |
+|Zoom DataParser | Yes | No | No |
+|||||
+
 ## Working with a Microsoft partner to archive third-party data
 
 Another option for importing and archiving third-party data is for your organization to work with a Microsoft Partner. If a third-party data type isn't supported by the data connectors available in the Microsoft compliance center, you can work with a partner who can provide a custom connector that will be configured to extract items from the third-party data source on a regular basis and then connect to the Microsoft cloud by a third-party API and import those items to Microsoft 365. The partner connector also converts the content of an item from the third-party data source to an email message and then imports it to a mailbox in Microsoft 365.
 
 For a list of partners that you can work with and the step-by-step process for this method, see [Work with a partner to archive third-party data in Microsoft 365](work-with-partner-to-archive-third-party-data.md).
+

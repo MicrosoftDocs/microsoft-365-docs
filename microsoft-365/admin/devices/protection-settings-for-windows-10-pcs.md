@@ -8,16 +8,18 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - M365-identity-device-management 
+- Adm_TOC
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
 - AdminSurgePortfolio
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -31,7 +33,7 @@ This article applies to Microsoft 365 Business Premium.
 
 After you have set set up default Windows protection settings on the Setup page, you can add new ones that apply to either all users, or a set of users. You can also edit any of the ones you have created.
 
-## Create protection settings for Windows 10 devices
+## Watch: Create protection settings for Windows 10 devices
 
 View a video on how to secure Windows 10 devices with Microsoft 365 Business Premium:
   

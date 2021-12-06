@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.IngestionHelp'
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -19,6 +19,7 @@ search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkMAC
 description: Learn how to use the Import service in the Microsoft 365 compliance center to bulk-import email data (PST files) to user mailboxes.
 ---
 
@@ -27,7 +28,7 @@ description: Learn how to use the Import service in the Microsoft 365 compliance
 > [!NOTE]
 > This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075).
 
-You can use the Import service in the Microsoft 365 compliance center to quickly bulk-import PST files to Exchange Online mailboxes in your organization. There are two ways you can import PST files to Office 365:
+You can use the Import service in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> to quickly bulk-import PST files to Exchange Online mailboxes in your organization. There are two ways you can import PST files to Office 365:
 
 - **Network upload** ![Cloud upload.](../media/54ab16ee-3822-4551-abef-3d926f4e1c01.png) - Upload the PST files over the network to a temporary Azure Storage location in the Microsoft cloud. Then you use the Office 365 Import service to import the PST data to mailboxes in your organization.
 
@@ -86,7 +87,7 @@ Here's an illustration and description of the complete PST import process. The i
 
 - Importing email data to Microsoft 365 helps address compliance needs of your organization by letting you:
 
-  - Enable [archive mailboxes](enable-archive-mailboxes.md) and [unlimited archiving](unlimited-archiving.md) to give users additional mailbox storage space.
+  - Enable [archive mailboxes](enable-archive-mailboxes.md) and [auto-expanding archiving](autoexpanding-archiving.md) to give users additional mailbox storage space.
 
   - Place mailboxes on [Litigation Hold](./create-a-litigation-hold.md) to retain content.
 
@@ -141,13 +142,13 @@ Additionally, to create import jobs in the Microsoft 365 compliance center, one 
 
 #### Where is network upload available?
 
-Network upload is currently available in these regions: United States, Canada, Brazil, the United Kingdom, France, Germany, Switzerland, Norway, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, Australia, and United Arab Emirates (UAE). Network upload will be available in more regions soon.
+Network upload is currently available in these regions: United States, Canada, Brazil, the United Kingdom, France, Germany, Switzerland, Norway, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, Australia, and United Arab Emirates (UAE). Network upload will be available in more regions in the future.
 
 #### What is the pricing for importing PST files by using network upload?
 
 Using network upload to import PST files is free.
 
-This also means that after PST files are deleted from the Azure Storage area, they're no longer displayed in the list of files for a completed import job in the Microsoft 365 admin center. Although an import job might still be listed on the **Import data to Office 365** page, the list of PST files might be empty when you view the details of older import jobs.
+This also means that after PST files are deleted from the Azure Storage area, they're no longer displayed in the list of files for a completed import job in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). Although an import job might still be listed on the **Import data to Office 365** page, the list of PST files might be empty when you view the details of older import jobs.
 
 #### What version of the PST file format is supported for importing to Office 365?
 
@@ -165,9 +166,10 @@ This also means that after PST files are deleted from the Azure Storage area, th
 
 It depends on the capacity of your network, but it typically takes several hours for each terabyte (TB) of data to be uploaded to the Azure Storage area for your organization. After the PST files are copied to the Azure Storage area, a PST file is imported to a Microsoft 365 mailbox at a rate of approximately 24 GB per day<sup>\*</sup>. If this rate doesn't meet your needs, you might consider other methods to get email data into Office 365. For more information, see [Ways to migrate multiple email accounts to Office 365](/Exchange/mailbox-migration/mailbox-migration).
 
-<sup>\*</sup> This rate is not guaranteed. Server workload and transient performance issues might decrease this rate.
-
 If different PST files are imported to different target mailboxes, the import process occurs in parallel; in other words, each PST/mailbox pair is imported simultaneously. If multiple PST files are imported to the same mailbox, they will be imported sequentially (one at a time), not simultaneously.
+
+> [!NOTE]
+> <sup>\*</sup> This rate is not guaranteed. Server workload and transient performance issues might decrease this rate.
 
 #### How does the PST import process handle duplicate email items?
 
@@ -216,7 +218,7 @@ Additionally, to create import jobs in the Microsoft 365 compliance center, one 
 
 #### Where is drive shipping available?
 
-Drive shipping is currently available in the United States, Canada, Brazil, the United Kingdom, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, Australia, and South Africa. Drive shipping will be available in more regions soon.
+Drive shipping is currently available in the United States, Canada, Brazil, the United Kingdom, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, and Australia. Drive shipping will be available in more regions in the future.
 
 > [!NOTE]
 > At this time, drive shipping to import PST files is not available in Germany and Switzerland. This FAQ will be updated when drive shipping is available in these countries.
@@ -231,10 +233,10 @@ The cost to use drive shipping to import PST files to Microsoft 365 mailboxes is
 
 #### What kind of hard drives are supported for drive shipping?
 
-Only 2.5-inch solid-state drives (SSDs) or 2.5 inch or 3.5 inch SATA II/III internal hard drives are supported for use with the Office 365 Import service. You can use hard drives up to 10 TB. For import jobs, only the first data volume on the hard drive will be processed. The data volume must be formatted with NTFS. When copying data to a hard drive, you can attach it directly using a 2.5 inch SSD or 2.5 inch or 3.5 inch SATA II/III connector or you can attach it externally using an external 2.5 inch SSD or 2.5 inch or 3.5 inch SATA II/III USB adaptor.
+Only 2.5-inch solid-state drives (SSDs) or 2.5 inch or 3.5 inch SATA II/III internal hard drives are supported for use with the Office 365 Import service. You can use hard drives up to 10 TB. For import jobs, only the first data volume on the hard drive will be processed. The data volume must be formatted with NTFS. When copying data to a hard drive, you can attach it directly using a 2.5 inch SSD or 2.5 inch or 3.5 inch SATA II/III connector or you can attach it externally using an external 2.5 inch SSD or 2.5 inch or 3.5 inch SATA II/III USB adapter.
 
 > [!IMPORTANT]
-> External hard drives that come with an built-in USB adaptor aren't supported by the Office 365 Import service. Additionally, the disk inside the casing of an external hard drive can't be used. Please don't ship external hard drives.
+> External hard drives that come with a built-in USB adapter aren't supported by the Office 365 Import service. Additionally, the disk inside the casing of an external hard drive can't be used. Please don't ship external hard drives.
 
 #### How many hard drives can I ship for a single import job?
 
@@ -250,9 +252,12 @@ After your hard drive is received at the Microsoft data center, it will take bet
 
 #### How long does it take to import a PST file to a mailbox using drive shipping?
 
-After the PST files are uploaded to the Azure Storage area, Microsoft 365 analyzes the data in the PST files (in a safe and secure manner) to identify the age of the items and the different message types included in the PST files. When this analysis is complete, you'll have the option to import all the data in the PST files or set filters to that control what data gets imported. After you start the import job, a PST file is imported to a Microsoft 365 mailbox at a rate of at least 24 GB per day. If this rate doesn't meet your needs, you might consider other methods to get email data into Microsoft 365. For more information, see [Ways to migrate multiple email accounts to Microsoft 365](/Exchange/mailbox-migration/mailbox-migration).
+After the PST files are uploaded to the Azure Storage area, Microsoft 365 analyzes the data in the PST files (in a safe and secure manner) to identify the age of the items and the different message types included in the PST files. When this analysis is complete, you'll have the option to import all the data in the PST files or set filters to that control what data gets imported. After you start the import job, a PST file is imported to a Microsoft 365 mailbox at a rate of approximately 24 GB per day.<sup>\*</sup> If this rate doesn't meet your needs, you might consider other methods to get email data into Microsoft 365. For more information, see [Ways to migrate multiple email accounts to Microsoft 365](/Exchange/mailbox-migration/mailbox-migration).
 
 If different PST files are imported to different target mailboxes, the import process occurs in parallel; in other words, each PST/mailbox pair is imported simultaneously. If multiple PST files are imported to the same mailbox, they will be imported sequentially (one at a time), not simultaneously.
+
+> [!NOTE]
+> <sup>\*</sup> This rate is not guaranteed. Server workload and transient performance issues might decrease this rate.
 
 #### After Microsoft uploads my PST files to Azure, how long are they kept in Azure before they're deleted?
 
