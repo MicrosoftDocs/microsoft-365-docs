@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -63,11 +63,11 @@ This article explains how to:
 
 2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
 
-   ![Image of Microsoft Azure and navigation to application registration](../../media/atp-azure-new-app2.png)
+   ![Image of Microsoft Azure and navigation to application registration.](../../media/atp-azure-new-app2.png)
 
 3. In the form, choose a name for your application and enter the following information for the redirect URI, then select **Register**.
 
-   ![Image of Create application window](../../media/nativeapp-create2.PNG)
+   ![Image of Create application window.](../../media/nativeapp-create2.PNG)
 
    - **Application type:** Public client
    - **Redirect URI:** https://portal.azure.com
@@ -77,11 +77,11 @@ This article explains how to:
    > [!TIP]
    > *Microsoft Threat Protection* is a former name for Microsoft 365 Defender, and will not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   ![Image of API permission selection](../../media/apis-in-my-org-tab.PNG)
+   ![Image of API permission selection.](../../media/apis-in-my-org-tab.PNG)
 
    - Choose **Delegated permissions**. Choose the relevant permissions for your scenario (for example **Incident.Read**), and then select **Add permissions**.
 
-   ![Image of API access and API selection](../../media/request-api-permissions-delegated.PNG)
+   ![Image of API access and API selection.](../../media/request-api-permissions-delegated.PNG)
 
     > [!NOTE]
     > You need to select the relevant permissions for your scenario. *Read all incidents* is just an example. To determine which permission you need, please look at the **Permissions** section in the API you want to call.
@@ -90,11 +90,11 @@ This article explains how to:
 
 5. Select **Grant admin consent**. Every time you add a permission, you must select **Grant admin consent** for it to take effect.
 
-   ![Image of Grant permissions](../../media/grant-consent-delegated.PNG)
+   ![Image of Grant permissions.](../../media/grant-consent-delegated.PNG)
 
 6. Record your application ID and your tenant ID somewhere safe. They're listed under **Overview** on your application page.
 
-   ![Image of created app id](../../media/app-and-tenant-ids.png)
+   ![Image of created app id.](../../media/app-and-tenant-ids.png)
 
 ## Get an access token
 
@@ -112,7 +112,7 @@ $redirectUri = '' # Paste your app's redirection URI
 $authority = "https://login.windows.net/$tenantId"
 $resourceUrl = 'https://api.security.microsoft.com'
 
-$response = Get-ADALToken -Resource $resourceUrl -ClientId $cleintId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:Always
+$response = Get-ADALToken -Resource $resourceUrl -ClientId $clientId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:Always
 $response.AccessToken | clip
 
 $response.AccessToken
@@ -125,7 +125,7 @@ $response.AccessToken
 
 In the following image, you can see a decoded token acquired from an app, with ```Incidents.Read.All```, ```Incidents.ReadWrite.All```, and ```AdvancedHunting.Read.All``` permissions:
 
-![Image of token validation](../../media/webapp-decoded-token.png)
+![Image of token validation.](../../media/webapp-decoded-token.png)
 
 ## Use the token to access the Microsoft 365 Defender API
 

@@ -1,7 +1,7 @@
 ---
-title: Introduction to responding to your first incident
+title: Responding to your first incident
 description: The basics of responding to your first incident in Microsoft 365 Defender.
-keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
+keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack, self-study, ramp up, ramp-up, onboard, incident responder
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -23,7 +23,7 @@ search.appverid:
   - MET150
 ms.technology: m365d
 ---
-# Introduction to responding to your first incident
+# Responding to your first incident
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -46,12 +46,23 @@ Incidents in Microsoft 365 Defender are the logical starting points for analysis
 
 ## Next step
 
-[![Prepare your organization and Microsoft 365 tenant](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
+[![Prepare your organization and Microsoft 365 tenant.](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
 
 Make sure your organization and Microsoft 365 tenant is [prepared for incident handling](first-incident-prepare.md).
 
 ## See also
 
+Incident response guidance for Microsoft 365 Defender:
+
 - [Incidents overview](incidents-overview.md)
-- [Analyze incidents](investigate-incidents.md)
+- [Investigate incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)
+
+Additional examples of first incident responses:
+
+- [Phishing email](first-incident-path-phishing.md)
+- [Identity-base attack](first-incident-path-identity.md)
+
+[Detailed incident response playbooks](/security/compass/incident-response-playbooks)
+
+

@@ -5,43 +5,32 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: micurn, nicholak
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
-- Adm_TOC
-- commerce
+- Adm_O365
 ms.custom: 
 - okr_smb
 - AdminSurgePortfolio
 - manage_licenses
-search.appverid:
-- MET150
-description: "Learn about subscriptions and licenses in Microsoft 365 for business."
+- commerce_licensing
+- AdminTemplateSet
+search.appverid: MET150
+description: "The applications and services that you receive depend on which Microsoft 365 product you purchased, such as Microsoft 365 Apps for business."
 ms.date: 07/01/2020
 ---
 
 # Understand subscriptions and licenses in Microsoft 365 for business
 
-When you buy a subscription to Microsoft 365 for business, you sign up
-for a set of apps and services that you pay for on either a monthly or
-an annual basis. The applications and services that you receive as part
-of your subscription depend on which product you purchased, such as
-Microsoft 365 Apps for business or Microsoft 365 Business Standard. You
-can see what comes with each product on the [Microsoft 365 for small and medium-sized businesses](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) page.
+When you buy a subscription to Microsoft 365 for business, you sign up for a set of apps and services that you pay for on either a monthly or an annual basis. The applications and services that you receive as part of your subscription depend on which product you purchased, such as Microsoft 365 Apps for business or Microsoft 365 Business Standard. You can see what comes with each product on the [Microsoft 365 for small and medium-sized businesses](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) page.
 
-When you buy a subscription, you specify the number of licenses that you
-need, based on how many people you have in your organization. After you
-buy a subscription, you create accounts for people in your organization,
-and then assign a license to each person. As your organizational needs
-change, you can buy more licenses to accommodate new people, or reassign
-licenses to other users when someone leaves your organization.
+When you buy a subscription, you specify the number of licenses that you need, based on how many people you have in your organization. After you buy a subscription, you create accounts for people in your organization, and then assign a license to each person. As your organizational needs change, you can buy more licenses to accommodate new people, or reassign licenses to other users when someone leaves your organization.
 
-If you have more than one subscription, you can assign licenses to
-different people for each subscription. For example, you can assign all of your users to all Microsoft 365 applications and services as part
-of a Microsoft 365 Business Standard subscription. You can also assign  a subset of users to Visio Online through a separate Visio subscription.
+If you have more than one subscription, you can assign licenses to different people for each subscription. For example, you can assign all of your users to all Microsoft 365 applications and services as part of a Microsoft 365 Business Standard subscription. You can also assign a subset of users to Visio Online through a separate Visio subscription.
 
 ## How many devices can people install Office on?
 
@@ -85,8 +74,6 @@ You don't need to assign licenses to resource mailboxes, room mailboxes, and sha
 - [Create a shared mailbox](../../admin/email/create-a-shared-mailbox.md)
 - [Remove a license from a shared mailbox](../../admin/email/remove-license-from-shared-mailbox.md)
 - [Shared Mailboxes in Exchange Online](/exchange/collaboration-exo/shared-mailboxes) for all other Microsoft 365 plans.
-- [Create and Manage Room Mailboxes](/exchange/recipients-in-exchange-online/manage-room-mailboxes)
-- [Manage Equipment Mailboxes](/exchange/recipients-in-exchange-online/manage-equipment-mailboxes)
 
 ## Who can assign licenses?
 

@@ -17,7 +17,10 @@ search.appverid:
 - MET150
 f1.keywords: NOCSH
 ms.custom: 
-localization_priority: Priority
+- admindeeplinkMAC
+- admindeeplinkTEAMS
+ms.localizationpriority: high
+recommendations: false
 description: "Learn about the options to limit or disable sharing in Microsoft 365."
 ---
 
@@ -53,19 +56,19 @@ If you want to limit sharing in a Microsoft 365 group or Microsoft Teams team, i
 If you want to prevent guest access in Teams, you can turn off guest sharing in the Teams admin center.
 
 To turn off guest sharing for Teams
-1. In the Teams admin center, expand **Org-wide settings**, and then click **Guest access**.
+1. In the Teams admin center, expand **Org-wide settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Guest access** tab</a>.
 2. Turn off **Allow guest access in Teams**.
 3. Click **Save**.
 
 If you want to prevent guest access in Microsoft 365 Groups, you can turn off the groups guest access settings in the Microsoft 365 admin center.
 
 To turn off guest sharing in Microsoft 365 Groups
-1. In the Microsoft 365 admin center, click **Settings**, and then click **Org Settings**.
-2. On the **Services** tab, click **Microsoft 365 Groups**.
+1. In the Microsoft 365 admin center, click **Settings** > **Org Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Services** tab</a>.
+2. Click **Microsoft 365 Groups**.
 3. Clear the **Let group members outside your organization access group content** and **Let group owners add people outside your organization to groups** check boxes.
 4. Click **Save changes**.
 
-    ![Screenshot of Microsoft 365 Groups sharing settings in the Microsoft 365 admin center](../media/office-365-groups-guest-settings-off.png)
+    ![Screenshot of Microsoft 365 Groups sharing settings in the Microsoft 365 admin center.](../media/office-365-groups-guest-settings-off.png)
 
 > [!NOTE]
 > If you want to prevent guest sharing for a particular group or team, you can do so by using [Microsoft PowerShell](per-group-guest-access.md) or [sensitivity labels](../compliance/sensitivity-labels-teams-groups-sites.md).
@@ -78,7 +81,7 @@ To allow sharing invitations only from specified domains
 3. Under **Collaboration restrictions**, select **Deny invitations to the specified domains** or **Allow invitations only to the specified domains**, and then type the domains that you want to use.
 4. Click **Save**.
 
-    ![Screenshot of collaboration restrictions settings in Azure Active Directory](../media/azure-ad-allow-only-specified-domains.png)
+    ![Screenshot of collaboration restrictions settings in Azure Active Directory.](../media/azure-ad-allow-only-specified-domains.png)
 
 ## SharePoint site
 
@@ -90,7 +93,7 @@ To limit site sharing to owners
 3. Select **Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site**.
 4. Click **Save**.
 
-    ![Screenshot of sharing permissions settings in a SharePoint site](../media/sharepoint-site-sharing-permissions-level-two.png)
+    ![Screenshot of sharing permissions settings in a SharePoint site.](../media/sharepoint-site-sharing-permissions-level-two.png)
 
 You can prevent users who are not members of the site from requesting access by turning off access requests.
 
@@ -109,7 +112,7 @@ To limit site sharing by domain
 5. Add the domains that you want to allow or block, and then click **Save**.
 6. Click **Save**.
 
-    ![Screenshot of allowed domains site-level setting](../media/limit-site-sharing-by-domain.png)
+    ![Screenshot of allowed domains site-level setting.](../media/limit-site-sharing-by-domain.png)
 
 ### Block access to a site
 
@@ -129,7 +132,7 @@ To limit site, file, and folder sharing to owners
 3. Select **Only site owners can share files, folders, and the site**.
 4. Click **Save**.
 
-    ![Screenshot of sharing permissions settings in a SharePoint site set to owners-only](../media/sharepoint-site-only-site-owners-can-share.png)
+    ![Screenshot of sharing permissions settings in a SharePoint site set to owners-only.](../media/sharepoint-site-only-site-owners-can-share.png)
 
 ## SharePoint guest sharing
 
@@ -140,7 +143,7 @@ To turn off SharePoint guest sharing for your organization
 2. Under **External sharing**, drag the SharePoint slider down to **Only people in your organization**.
 3. Click **Save**.
 
-    ![Screenshot of SharePoint organization-level sharing settings set to Anyone](../media/sharepoint-tenant-sharing-off.png)
+    ![Screenshot of SharePoint organization-level sharing settings set to Anyone.](../media/sharepoint-tenant-sharing-off.png)
 
 
 To turn off guest sharing for a site
@@ -149,7 +152,7 @@ To turn off guest sharing for a site
 3. On the **Policies** tab, under **External sharing** click **Edit**.
 4. Under **External sharing**, choose **Only people in your organization**, and then click **Save**.
 
-    ![Screenshot of SharePoint site-level sharing settings set to Only people in your organization](../media/sharepoint-site-external-sharing-settings-off.png)
+    ![Screenshot of SharePoint site-level sharing settings set to Only people in your organization.](../media/sharepoint-site-external-sharing-settings-off.png)
 
 You can turn off guest sharing for an individual OneDrive by clicking the user in the Microsoft 365 admin center and selecting **Manage external sharing** on the **OneDrive** tab.
 
@@ -160,7 +163,7 @@ To turn off *Anyone* links at the organization level
 2. Under **External sharing**, drag the SharePoint slider down to **New and existing guests**.
 3. Click **Save**.
 
-    ![Screenshot of SharePoint organization-level sharing settings set to New and existing guests](../media/sharepoint-guest-sharing-new-existing-guests.png)
+    ![Screenshot of SharePoint organization-level sharing settings set to New and existing guests.](../media/sharepoint-guest-sharing-new-existing-guests.png)
 
 To turn off *Anyone* links for a site
 1. In the SharePoint admin center, under **Sites**, click **Active sites**.
@@ -168,7 +171,7 @@ To turn off *Anyone* links for a site
 3. On the **Policies** tab, under **External sharing** click **Edit**.
 4. Under **External sharing**, choose **New and existing guests**, and then click **Save**.
 
-    ![Screenshot of SharePoint site-level sharing settings set to New and existing settings](../media/sharepoint-site-external-sharing-settings-new-existing-guests.png)
+    ![Screenshot of SharePoint site-level sharing settings set to New and existing settings.](../media/sharepoint-site-external-sharing-settings-new-existing-guests.png)
 
 ## *People in your organization* sharing links
 

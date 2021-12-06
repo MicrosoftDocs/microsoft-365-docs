@@ -1,10 +1,10 @@
 ---
 title: What's coming to Microsoft Secure Score
-description: Describes what new changes are coming to Microsoft Secure Score in the Microsoft 365 security center.
-keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, microsoft 365 security center, improvement actions
+description: Describes what new changes are coming to Microsoft Secure Score in the Microsoft 365 Defender portal.
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal, improvement actions
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
   - NOCSH
 ms.author: dansimp
@@ -24,15 +24,27 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
+Microsoft Secure Score can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](microsoft-365-defender.md#the-microsoft-365-defender-portal).
+
+This article lets you know about upcoming improvements to Microsoft Secure Score.
 
 ## Proposed changes
 
-We're making some changes in the near future to make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability. Your score and the maximum possible score may change.
+### Upcoming improvement action additions (December 2021)
 
-### No Planned Changes
+- Turn on Safe Attachments in block mode
+- Prevent sharing Exchange Online calendar details with external users
+- Turn on Safe Documents for Office clients
+- Turn on the common attachments filter setting for anti-malware policies
+- Ensure that there are no sender domains allowed for anti-spam policies
+- Create Safe Links policies for email messages
+- Create zero-hour auto purge policies for malware
+- Turn on Microsoft Defender for Office 365 in SharePoint, OneDrive, and Microsoft Teams
+- Create zero-hour auto purge policies for phishing messages
+- Create zero-hour auto purge policies for spam messages
+- Block abuse of exploited vulnerable signed drivers
+- Turn on scanning of removable drives during a full scan
 
-There are no planned changes at this time.
 
 ## Related resources
 

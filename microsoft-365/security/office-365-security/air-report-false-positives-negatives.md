@@ -8,11 +8,11 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 ms.prod: m365-security
 ms.date: 01/29/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -21,6 +21,7 @@ ms.collection:
 ms.topic: how-to
 ms.custom: 
 - autoir
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ---
 
@@ -48,7 +49,7 @@ You can also [Submit a file to Microsoft for malware analysis](https://www.micro
 
 ## Adjust an alert to prevent false positives from recurring
 
-If an alert is triggered by legitimate use, or the alert is inaccurate, you can [Manage alerts in the Cloud App Security portal](/cloud-app-security/managing-alerts).
+If an alert is triggered by legitimate use, or the alert is inaccurate, you can [Manage alerts in the Defender for Cloud Apps portal](/cloud-app-security/managing-alerts).
 
 If your organization is using [Microsoft Defender for Endpoint](/windows/security/threat-protection) in addition to Office 365, and a file, IP address, URL, or domain is treated as malware on a device, even though it's safe, you can [create a custom indicator with an "Allow" action for your device](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
@@ -63,17 +64,21 @@ In most cases, if a remediation action was taken on an email message, email atta
 
 With Threat Explorer, your security operations team can find an email affected by an action and potentially undo the action.
 
+<br>
+
+****
+
 |Scenario|Undo Options|Learn more|
 |---|---|---|
-|An email message was routed to a user's Junk Email folder|- Move the message to the user's Deleted Items folder<br/>- Move the message to the user's Inbox<br/>- Delete the message|[Find and investigate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md)|
-|An email message or a file was quarantined|- Release the email or file<br/>- Delete the email or file|[Manage quarantined messages as an admin](manage-quarantined-messages-and-files.md)|
+|An email message was routed to a user's Junk Email folder|<ul><li>Move the message to the user's Deleted Items folder</li><li>Move the message to the user's Inbox</li><li>Delete the message</li></ul>|[Find and investigate malicious email that was delivered in Office 365](investigate-malicious-email-that-was-delivered.md)|
+|An email message or a file was quarantined|<ul><li>Release the email or file</li><li> Delete the email or file</li></ul>|[Manage quarantined messages as an admin](manage-quarantined-messages-and-files.md)|
 |
 
 ### Undo an action in the Action center
 
 In the Action center, you can see remediation actions that were taken and potentially undo the action.
 
-1. Go to the Microsoft 365 security center (<https://security.microsoft.com>).
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 2. In the navigation pane, select **Action center**.
 3. Select the **History** tab to view the list of completed actions.
 4. Select an item. Its flyout pane opens.

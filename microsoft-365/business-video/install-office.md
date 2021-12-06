@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -36,3 +36,13 @@ Microsoft Office apps can be found on your  **Start** menu. If you don&#39;t see
 5. Get the Windows app, and then select  **Run**. Teams displays a prompt when installation is complete.
 
 The Office apps you installed now appear in your  **Start** menu.
+
+## Related content
+
+[Migrate your content to Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online.md) (article)
+
+[Install the Microsoft 365 Admin mobile app on your phone](admin-mobile.md) (video)
+
+[Get started with Microsoft Teams in your small business](https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937) (video)
+
+[Easily share files externally](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07) (video)

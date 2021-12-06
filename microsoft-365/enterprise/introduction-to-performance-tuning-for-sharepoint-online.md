@@ -7,7 +7,7 @@ ms.date: 6/22/2018
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - SPO_Content
@@ -87,11 +87,11 @@ As you would expect, you have far more control over how servers perform with on-
   
 SharePoint Server on-premises
   
-![Screenshot of server on premises](../media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
+![Screenshot of server on premises.](../media/a8e9b646-cdff-4131-976a-b5f891da44ac.png)
   
 SharePoint Online
   
-![Screenshot of server online](../media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
+![Screenshot of server online.](../media/46b27ded-d8a4-4287-b3e0-2603a764b8f8.png)
   
 With SharePoint Online, certain page requests may actually end up calling multiple servers. You could end up with a matrix of requests between servers for an individual request. These interactions are expensive from a page load perspective and will make things slow.
   

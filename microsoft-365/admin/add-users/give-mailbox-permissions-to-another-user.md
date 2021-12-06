@@ -8,21 +8,22 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- Adm_TOC
+
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
-description: "Learn how to give a user the right to access another user's mailbox. This will give the user the right to read mails and send mails from the other user's mailbox. "
+description: "Give a user the right to access another user's mailbox, which allows the user to read and send emails from the other user's mailbox."
 ---
 
 # Give mailbox permissions to another user - Admin Help
@@ -70,7 +71,7 @@ There are a few different ways you can access a mailbox once you've been given a
 
 5. Select **Add permissions**, then choose the name of the person who you want this user to be able to send as. 
     
-6. Select **Save**.
+6. Select **Add**.
  
 ::: moniker-end
 
@@ -84,7 +85,7 @@ There are a few different ways you can access a mailbox once you've been given a
 
 4. Select **Add permissions**, then choose the name of the person who you want this user to be able to send as. 
     
-5. Select **Save**.
+5. Select **Add**.
 
 ::: moniker-end
 
@@ -98,7 +99,7 @@ There are a few different ways you can access a mailbox once you've been given a
 
 4. Select **Add permissions**, then choose the name of the person who you want this user to be able to send as. 
     
-5. Select **Save**.
+5. Select **Add**.
 
 ::: moniker-end
   
@@ -116,11 +117,11 @@ There are a few different ways you can access a mailbox once you've been given a
     
 5. Select **Add permissions**, then choose the name of the user or users that you want to allow to read email from this mailbox.
 
-6. Select **Save**.
+6. Select **Add**.
 
 
 > [!NOTE]
-> **Read** and **Manage** permissions are called **Full Access** permission when granted in the Exchange admin center. Full Access permission does not grant **Send as** or **Send on Behalf**  permissions.
+> **Read** and **Manage** permissions are called **Full Access** permission when granted in the Exchange admin center. This permission allows the assigned user mailbox to read as well as manage emails in the user mailbox on which the permission is assigned. Full Access permission does not grant **Send as** or **Send on behalf**  permissions.
 
 ::: moniker-end
 
@@ -134,7 +135,7 @@ There are a few different ways you can access a mailbox once you've been given a
     
 4. Select **Add permissions**, then choose the name of the user or users that you want to allow to read email from this mailbox.
 
-5. Select **Save**.
+5. Select **Add**.
 
 ::: moniker-end
 
@@ -148,7 +149,7 @@ There are a few different ways you can access a mailbox once you've been given a
     
 4. Select **Add permissions**, then choose the name of the user or users that you want to allow to read email from this mailbox.
 
-5. Select **Save**.
+5. Select **Add**.
 
 ::: moniker-end
 
@@ -167,7 +168,7 @@ There are a few different ways you can access a mailbox once you've been given a
 
 5. Select **Add permissions**, then choose the name of the user or users that you want to allow to send email on behalf of this mailbox.
 
-6. Select **Save**.
+6. Select **Add**.
 
 ::: moniker-end
 
@@ -181,7 +182,7 @@ There are a few different ways you can access a mailbox once you've been given a
     
 4. Select **Add permissions**, then choose the name of the user or users that you want to allow to send email on behalf of this mailbox.
 
-5. Select **Save**.
+5. Select **Add**.
 
 ::: moniker-end
 
@@ -195,16 +196,14 @@ There are a few different ways you can access a mailbox once you've been given a
     
 4. Select **Add permissions**, then choose the name of the user or users that you want to allow to send email on behalf of this mailbox.
 
-5. Select **Save**.
+5. Select **Add**.
 
 ::: moniker-end
 
 
-## Send and read from Outlook and Outlook on the web for business
-
-
-Want to know how to send email from another user's mailbox? Check out the following topics:
+## Related content
   
-- [Manage another person's mail and calendar items](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5)
-    
-- [Send email from another person or group](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)
+[Manage another person's mail and calendar items](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5) (article)\   
+[Send email from another person or group](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) (article)\
+[Change a user name and email address](../add-users/change-a-user-name-and-email-address.md) (video)
+

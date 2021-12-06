@@ -7,13 +7,14 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-collaboration
 - m365solution-collabgovernance
 ms.custom: 
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: "Learn how to prevent guests from being added to a specific group"
 ---
 
@@ -61,10 +62,25 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 The verification looks like this:
     
 ![Screenshot of PowerShell window showing that guest group access has been set to false.](../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
-  
+
+If you wish to toggle the setting back to allow guest access to a particular group, run the following script, changing ```<GroupName>``` to the name of the group where you want to allow guest access.
+
+```PowerShell
+$GroupName = "<GroupName>"
+
+Connect-AzureAD
+
+$template = Get-AzureADDirectorySettingTemplate | ? {$_.displayname -eq "group.unified.guest"}
+$settingsCopy = $template.CreateDirectorySetting()
+$settingsCopy["AllowToAddGuests"]=$True
+$groupID= (Get-AzureADGroup -SearchString $GroupName).ObjectId
+$id = (get-AzureADObjectSetting -TargetType groups -TargetObjectId $groupID).id
+Set-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectorySetting $settingsCopy -id $id
+```
+
 ## Allow or block guest access based on their domain
 
-You can allow or block guests who are using a specific domain. For example, if your business (Contoso) has a partnership with another business (Fabrikam), you can add Fabrikam to your Allow list so your users can add those guests to their groups.
+You can allow or block guests who are using a specific domain. For example, if your business (Contoso) has a partnership with another business (Fabrikam), you can add Fabrikam to your allowlist so your users can add those guests to their groups.
 
 For more information, see [Allow or block invitations to B2B users from specific organizations](/azure/active-directory/b2b/allow-deny-list).
 
@@ -86,7 +102,7 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 ## Related topics
 
-[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Collaboration governance planning recommendations](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Create your collaboration governance plan](collaboration-governance-first.md)
 
