@@ -2,7 +2,6 @@
 title: Get domain-related machines API
 description: Learn how to use the Get domain-related machines API to get machines that communicated to or from a domain in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, domain, related, devices
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library

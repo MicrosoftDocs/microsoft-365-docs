@@ -78,6 +78,44 @@
     {
       "source_path": "microsoft-365/business-video/install-apps-ios.md",
       "redirect_url": "https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f",
+   },
+      "source_path": "microsoft-365/business-video/files-to-sharepoint.md",
+      "redirect_url": "/microsoft-365/admin/setup/files-to-sharepoint",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/files-to-onedrive.md",
+      "redirect_url": "/microsoft-365/admin/setup/files-to-onedrive",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/setup-outlook.md",
+      "redirect_url": "/microsoft-365/admin/setup/setup-outlook",
+      "redirect_document_id": false
+    },
+
+      "source_path": "microsoft-365/business-video/get-help-support.md",
+      "redirect_url": "/microsoft-365/admin/get-help-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/what-is-microsoft-365.md",
+      "redirect_url": "/microsoft-365/admin/admin-overview/what-is-microsoft-365",
+      "redirect_document_id": false
+	},
+  {
+      "source_path": "microsoft-365/business-video/admin-center-overview.md",
+      "redirect_url": "/microsoft-365/admin/admin-overview/admin-center-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/delete-user.md",
+      "redirect_url": "/microsoft-365/admin/add-users/remove-former-employee",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/add-domain.md",
+      "redirect_url": "/microsoft-365/admin/setup/add-domain",
       "redirect_document_id": false
     },
     {
@@ -182,7 +220,7 @@
     },
     {
       "source_path": "microsoft-365/business/move-files-to-onedrive.md",
-      "redirect_url": "/microsoft-365/business-video/files-to-onedrive",
+      "redirect_url": "/microsoft-365/admin/setup/files-to-onedrive",
       "redirect_document_id": false
     },
     {
@@ -192,7 +230,7 @@
     },
     {
       "source_path": "microsoft-365/business/microsoft-365-business-overview.md",
-      "redirect_url": "/microsoft-365/business-video/what-is-microsoft-365",
+      "redirect_url": "/microsoft-365/admin/admin-overview/what-is-microsoft-365",
       "redirect_document_id": false
     },
     {
@@ -212,7 +250,7 @@
     },
     {
       "source_path": "microsoft-365/business/microsoft-365-business-start.md",
-      "redirect_url": "/microsoft-365/business-video/what-is-microsoft-365",
+      "redirect_url": "/microsoft-365/admin/admin-overview/what-is-microsoft-365",
       "redirect_document_id": false
     },
     {
@@ -372,7 +410,7 @@
     },
     {
       "source_path": "microsoft-365/admin/contact-support-for-business-products.md",
-      "redirect_url": "/microsoft-365/business-video/get-help-support",
+      "redirect_url": "/microsoft-365/admin/get-help-support",
       "redirect_document_id": false
     },
     {
@@ -647,12 +685,12 @@
     },
     {
       "source_path": "microsoft-365/admin/admin-overview/admin-overview.md",
-      "redirect_url": "/microsoft-365/business-video/admin-center-overview",
+      "redirect_url": "/microsoft-365/admin/admin-overview/admin-center-overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/admin/microsoft-365-admin-center-preview.md",
-      "redirect_url": "/microsoft-365/business-video/admin-center-overview",
+      "redirect_url": "/microsoft-365/admin/admin-overview/admin-center-overview",
       "redirect_document_id": false
     },
     {
