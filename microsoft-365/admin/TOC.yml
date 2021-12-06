@@ -441,11 +441,11 @@
         - name: Share calendars with guest users
           href: manage/share-calendars-with-external-users.md
         - name: Create a Team with guest users
-          href: ../business-video/team-with-guests.md
+          href: https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f
         - name: Schedule a Teams meeting with guest users
-          href: ../business-video/schedule-guest-meeting.md
+          href: https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5
         - name: Join a Teams meeting with guest users
-          href: ../business-video/join-guest-meeting.md
+          href: https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508
     - name: Troubleshoot
       href: /office/troubleshoot/
     - name: Contact support
