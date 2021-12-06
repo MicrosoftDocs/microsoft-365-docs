@@ -74,8 +74,23 @@ The following table describes the types of onboarding methods that are supported
 
 ## Run a detection test
 
+After you have onboarded a device, you can run a detection test to make sure that everything is working correctly with Defender for Business.
+
+1. On the device, create a folder: `C:\test-MDATP-test`.
+
+2. Open Command Prompt as an administrator.
+
+3. In the Command Prompt window, type the following PowerShell command:
+
+   ```powershell
+   powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
+   ```
+
+After the command has run, the Command Prompt window will close automatically. If successful, the detection test will be marked as completed, and a new alert will appear in the Microsoft 365 Defender portal for the newly onboarded device in about 10 minutes.
 
 ## What if I want to offboard a device?
+
+If you want to offboard a device, follow these steps:
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
