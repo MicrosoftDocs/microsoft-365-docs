@@ -31,9 +31,9 @@ With Microsoft Defender for Business, you have several options to choose from fo
 2. If you're using automatic onboarding, proceed to [Step 5: Configure your security settings and policies in Microsoft Defender for Business](mdb-configure-security-settings.md). Or, if you are onboarding devices manually, proceed to [Onboard a device using a local script in Microsoft 365 Defender](#onboard-a-device-using-a-local-script-in-microsoft-365-defender).
 3. [Proceed to your next steps](#next-steps). 
 
-**This article also includes**:
+**This article also includes** 
 
-- [How to onboard devices gradually](#what-if-i-want-to-onboard-devices-gradually)
+- [How to run a detection test for newly onboarded devices](#run-a-detection-test)
 - [How to offboard a device](#what-if-i-want-to-offboard-a-device)
 
 ## Types of onboarding methods
