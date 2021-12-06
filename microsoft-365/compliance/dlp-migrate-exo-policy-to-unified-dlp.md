@@ -115,7 +115,7 @@ The migrated policies will now appear in the list of DLP policies in the Complia
 ## Common errors and mitigation
 |Error message  |Reason  | Mitigation/Recommended steps|
 |---------|---------|---------|
-|A compliance policy with name '<Name of the policy>' already exists in scenario(s) 'Dlp'.    |It is likely that this policy migration was done earlier and then reattempted in the same session |Refresh the session to update the list of policies available for migration. All previously migrated policies should be in "Already migrated" state.|
+|A compliance policy with name `<Name of the policy>` already exists in scenario(s) `Dlp`.    |It is likely that this policy migration was done earlier and then reattempted in the same session |Refresh the session to update the list of policies available for migration. All previously migrated policies should be in the `Already migrated` state.|
 |A compliance policy with name '<Name of the policy>' already exists in scenario(s) 'Hold'.     |A retention policy with the same name exists in the same tenant.       |- Rename the DLP policy in EAC to a different name </br> - Retry the migration for impacted policy |
 |'DLP-group@contoso.com' can’t be used as a value for the Shared By condition because it’s a distribution group or mail-enabled security group. Please use Shared by Member of predicate to detect activities by members of certain groups.     |Transport rules allow groups to be used in "sender is" condition but unified DLP does not allow it.         | Update the transport rule to remove all group email addresses from "sender is" condition and add the group to "sender is a member of" condition if required. 
 Retry the migration for the impacted policy|
