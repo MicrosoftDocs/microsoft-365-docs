@@ -274,9 +274,16 @@ To generate keys:
 
 4. Generate the private key.
 
-   ```console
-   openssl rsa -in key.pem -out privkeynopass.pem
-   ```
+   If you installed OpenSSL version 3 or later, run the following command:
+  
+  ```console
+  openssl rsa -in key.pem -out privkeynopass.pem -outform PEM -traditional
+  ```
+  
+>  Otherwise run the following command:
+>  ```console
+>  openssl rsa -in key.pem -out privkeynopass.pem -outform PEM
+>  ```
 
 5. Generate the public key.
 
