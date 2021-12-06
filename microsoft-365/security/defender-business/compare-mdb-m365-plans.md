@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: reference
-ms.date: 12/01/2021
+ms.date: 12/06/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -44,7 +44,7 @@ Microsoft offers a wide variety cloud solutions and services, including several 
 > - [Microsoft 365 Business Premium service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)
 > - [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
-The following table compares security features and capabilities in Defender for Business to Microsoft 365 Business Premium while Defender for Business is in preview.  <br/><br/>
+The following table compares security features and capabilities in Defender for Business to Microsoft 365 Business Premium while Defender for Business is in preview. When Defender for Business becomes generally available, it will be included in Microsoft 365 Business Premium. <br/><br/>
 
 | Feature/Capability | [Microsoft Defender for Business](mdb-overview.md) | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) |
 |:---|:---|:---|
