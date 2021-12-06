@@ -151,8 +151,6 @@
           href: create-sensitivity-labels.md 
     - name: Support
       items:
-        - name: Get help or support
-          href: get-help-support.md 
         - name: Find docs and training
           href: find-help-answers.md
         - name: Employee quick setup  
