@@ -34,10 +34,7 @@ With Microsoft Defender for Business, you have several options to choose from fo
 3. [Run a detection test](#run-a-detection-test) for newly onboarded devices.
 4. [See next steps](#next-steps). 
 
-**This article also includes** 
-
-- [How to run a detection test for newly onboarded devices](#run-a-detection-test)
-- [How to offboard a device](#what-if-i-want-to-offboard-a-device)
+This article also includes information about [how to offboard a device](#what-if-i-want-to-offboard-a-device).
 
 ## Types of onboarding methods
 
