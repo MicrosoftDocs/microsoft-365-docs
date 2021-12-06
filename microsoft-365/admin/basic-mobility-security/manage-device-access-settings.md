@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -28,16 +28,16 @@ Use these steps:
 
 1. Sign in to  Microsoft 365 with your global admin account.
 
-2. In your browser, type: [https://protection.office.com](https://protection.office.com/).    
+2. In your browser, type: [https://protection.office.com](https://protection.office.com/).
 
-    >[!IMPORTANT]
-    >If this is the first time you're using Basic Mobility and Security for Microsoft 365 Business Standard, activate it here: [Activate Basic Security and Mobility](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). After you've activated it, manage your devices with [Office 365 Security & Compliance](https://protection.office.com/).
+    > [!IMPORTANT]
+    > If this is the first time you're using Basic Mobility and Security for Microsoft 365 Business Standard, activate it here: [Activate Basic Security and Mobility](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). After you've activated it, manage your devices with [Office 365 Security & Compliance](https://protection.office.com/).
 
 3. Go to Data loss prevention > **Device management** > **Device policies**, and select **Manage organization-wide device access settings**.
 
 4. Select **Block**.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Basic Mobility and Security block access checkbox":::
+    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="Basic Mobility and Security block access checkbox.":::
 
 5. Select **Save**.
 

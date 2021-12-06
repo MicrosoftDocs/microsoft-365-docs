@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - Adm_TOC
@@ -16,48 +16,61 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
+- AdminTemplateSet
+- admindeeplinkMAC
+- admindeeplinkDEFENDER
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
-description: "How to protect your business email and data from cyber threats, including ransomware, phishing, and malicious attachments."
+description: "How to protect your business email and data from cyberthreats, including ransomware, phishing, and malicious attachments."
 ---
 
 # Top 10 ways to secure Microsoft 365 for business plans
 
-If you are a small or medium-size organization using one of Microsoft's business plans and your type of organization is targeted by cyber criminals and hackers, use the guidance in this article to increase the security of your organization. This guidance helps your organization achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598).
+If you are a small or medium-size organization using one of Microsoft's business plans and your type of organization is targeted by cybercriminals and hackers, use the guidance in this article to increase the security of your organization. This guidance helps your organization achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598).
+
+## Watch: Overview of security
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mzxI?autoplay=false]
+
+Microsoft 365 Business Premium provides threat protection, data protection, and device management features to help you protect your company from online threats and unauthorized access, as well as protect and manage company data on your phones, tablets, and computers.
+
+## Complete top security tasks
 
 Microsoft recommends that you complete the tasks listed in the following table that apply to your service plan.
 
 |*Number*|Task|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|---|
-|1|[Set up multi-factor authentication](secure-your-business-data.md#setup)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|2|[Train your users](secure-your-business-data.md#train)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3|[Use dedicated admin accounts](secure-your-business-data.md#admin)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|4|[Raise the level of protection against malware in mail](secure-your-business-data.md#malware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5|[Protect against ransomware](secure-your-business-data.md#ransomware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|6|[Stop auto-forwarding for email](secure-your-business-data.md#forwarding)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|7|[Use Office Message Encryption](secure-your-business-data.md#encryption)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|8|[Protect your email from phishing attacks](secure-your-business-data.md#phishing)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1|[Set up multifactor authentication](secure-your-business-data.md#setup)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|2|[Train your users](secure-your-business-data.md#train)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3|[Use dedicated admin accounts](secure-your-business-data.md#admin)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|4|[Raise the level of protection against malware in mail](secure-your-business-data.md#malware)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5|[Protect against ransomware](secure-your-business-data.md#ransomware)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|6|[Stop auto-forwarding for email](secure-your-business-data.md#forwarding)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|7|[Use Office Message Encryption](secure-your-business-data.md#encryption)||![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|8|[Protect your email from phishing attacks](secure-your-business-data.md#phishing)||![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9|[Protect against malicious attachments and files with Safe Attachments](secure-your-business-data.md#atp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10|[Protect against phishing attacks with Safe Links](secure-your-business-data.md#phishingatp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-If you have Microsoft Business Premium, the quickest way to setup security and begin collaborating safely is to follow the guidance in this library: [Microsoft 365 for smaller businesses and campaigns](../../campaigns/index.md). This guidance was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyber threats launched by sophisticated hackers.
+If you have Microsoft Business Premium, the quickest way to setup security and begin collaborating safely is to follow the guidance in this library: [Microsoft 365 for smaller businesses and campaigns](../../campaigns/index.md). This guidance was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyberthreats launched by sophisticated hackers.
 
-Before you begin, check your [Microsoft 365 Secure Score](../../security/defender/microsoft-secure-score.md) in the Microsoft 365 security center. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. With additional insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting about your organization's security health.
+Before you begin, check your [Microsoft 365 Secure Score](../../security/defender/microsoft-secure-score.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. With additional insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting about your organization's security health.
 
-![Screenshot of Microsoft Secure Score](../../media/secure-score.png)
+![Screenshot of Microsoft Secure Score.](../../media/secure-score.png)
 
-## 1: Set up multi-factor authentication
 <a name="setup"> </a>
 
-Using multi-factor authentication is one of the easiest and most effective ways to increase the security of your organization. It's easier than it sounds - when you log in, multi-factor authentication means you'll type a code from your phone to get access to Microsoft 365. This can prevent hackers from taking over if they know your password. Multi-factor authentication is also called 2-step verification. Individuals can add 2-step verification to most accounts easily, for example, to their Google or Microsoft accounts. Here's how to [add two-step verification to your personal Microsoft account](https://go.microsoft.com/fwlink/p/?linkid=2016403).
+## 1: Set up multifactor authentication
 
-For businesses using Microsoft 365, add a setting that requires your users to log in using multi-factor authentication. When you make this change, users will be prompted to set up their phone for two-factor authentication next time they log in.
-To see a training video for how to set up MFA and how users complete the set up, see [set up MFA](../../business-video/turn-on-mfa.md) and [user set up](../../business-video/set-up-mfa.md).
+Using multifactor authentication is one of the easiest and most effective ways to increase the security of your organization. It's easier than it sounds - when you log in, multifactor authentication means you'll type a code from your phone to get access to Microsoft 365. This can prevent hackers from taking over if they know your password. Multifactor authentication is also called 2-step verification. Individuals can add 2-step verification to most accounts easily, for example, to their Google or Microsoft accounts. Here's how to [add two-step verification to your personal Microsoft account](https://go.microsoft.com/fwlink/p/?linkid=2016403).
 
-To set up multi-factor authentication, you turn on Security defaults:
+For businesses using Microsoft 365, add a setting that requires your users to log in using multifactor authentication. When you make this change, users will be prompted to set up their phone for two-factor authentication next time they log in.
+To see a training video for how to set up MFA and how users complete the set up, see [set up MFA](../../business-video/turn-on-mfa.md) and [user set up](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
+
+To set up multifactor authentication, you turn on Security defaults:
 
 For most organizations, Security defaults offer a good level of additional sign-in security. For more information, see [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
@@ -71,9 +84,9 @@ You enable or disable security defaults from the **Properties** pane for Azure A
 4. At the bottom of the page, choose **Manage Security defaults**.
 5. Choose **Yes** to enable security defaults or **No** to disable security defaults, and then choose **Save**.
 
-After you set up multi-factor authentication for your organization, your users will be required to set up two-step verification on their devices. For more information, see [Set up 2-step verification for Microsoft 365](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
+After you set up multifactor authentication for your organization, your users will be required to set up two-step verification on their devices. For more information, see [Set up 2-step verification for Microsoft 365](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
 
-For full details and complete recommendations, see [Set up multi-factor authentication for users](set-up-multi-factor-authentication.md).
+For full details and complete recommendations, see [Set up multifactor authentication for users](set-up-multi-factor-authentication.md).
 
 ## 2: Train your users
 <a name="train"> </a>
@@ -97,9 +110,9 @@ Microsoft also recommends that users protect their personal email accounts by ta
 ## 3: Use dedicated admin accounts
 <a name="admin"> </a>
 
-The administrative accounts you use to administer your Microsoft 365 environment include elevated privileges. These are valuable targets for hackers and cyber criminals. Use admin accounts only for administration. Admins should have a separate user account for regular, non-administrative use and only use their administrative account when necessary to complete a task associated with their job function. Additional recommendations:
+The administrative accounts you use to administer your Microsoft 365 environment include elevated privileges. These are valuable targets for hackers and cybercriminals. Use admin accounts only for administration. Admins should have a separate user account for regular, non-administrative use and only use their administrative account when necessary to complete a task associated with their job function. Additional recommendations:
 
-- Be sure admin accounts are also set up for multi-factor authentication.
+- Be sure admin accounts are also set up for multifactor authentication.
 
 - Before using admin accounts, close out all unrelated browser sessions and apps, including personal email accounts.
 
@@ -211,11 +224,11 @@ Your organization might have configured additional options that apply a label to
 
 In Outlook for PC, select **Options** in the email, and then choose **Permissions**.
 
-![Email message encryption in Outlook](../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639a.png)
+![Email message encryption in Outlook.](../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639a.png)
 
 In Outlook.com, select **Protect** in the email. The default protection is **Do not forward**. To change this to encrypt, select **Change Permissions** \> **Encrypt**.
 
-![Email message encryption in Outlook.com](../../media/329ccf50-f6b1-4fb8-b249-60b907a82b7e.png)
+![Email message encryption in Outlook.com.](../../media/329ccf50-f6b1-4fb8-b249-60b907a82b7e.png)
 
 ### To receive encrypted email
 
@@ -232,7 +245,7 @@ If you've configured one or more custom domains for your Microsoft 365 environme
 
 We recommend that you get started with this protection by creating a policy to protect your most important users and your custom domain.
 
-![Creating an anti-phishing policy in Microsoft Defender for Office 365](../../media/security-and-compliance-center.png)
+![Creating an anti-phishing policy in Microsoft Defender for Office 365.](../../media/security-and-compliance-center.png)
 
 To create an anti-phishing policy in Defender for Office 365, view a [short training video](../../business-video/setup-anti-phishing.md), or complete the following steps:
 
@@ -267,7 +280,7 @@ For more information, see [Set up anti-phishing policies in Defender for Office 
 
 People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Microsoft Defender for Office 365 includes Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
 
-To create an Safe attachment policy, view a [short training video](../../business-video/safe-attachments.md), or complete the following steps:
+To create a Safe attachment policy, view a [short training video](../../business-video/safe-attachments.md), or complete the following steps:
 
 1. Go to <https://protection.office.com> and sign in with your admin account.
 
@@ -343,6 +356,6 @@ For more information, see [Safe Links in Microsoft Defender for Office 365](../.
 
 ## Related content
 
-[Multi-factor authentication for Microsoft 365](multi-factor-authentication-microsoft-365.md) (article)\
+[Multifactor authentication for Microsoft 365](multi-factor-authentication-microsoft-365.md) (article)\
 [Manage and monitor priority accounts](../setup/priority-accounts.md) (article)\
 [Microsoft 365 Reports in the admin center](../activity-reports/activity-reports.md) (video)

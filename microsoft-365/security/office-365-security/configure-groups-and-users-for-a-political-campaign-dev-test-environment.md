@@ -12,7 +12,7 @@ ms.collection:
   - Ent_O365
   - Strat_O365_Enterprise
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
   - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
@@ -190,11 +190,11 @@ Use these steps to verify that dynamic group membership and group-based licensin
 
 Record these values for working with the Office 365 and EMS trial subscriptions for this dev/test environment:
 
-- Your trial subscription organization name: ![Underline](../../media/Common-Images/TableLine.png)
+- Your trial subscription organization name: ![Underline.](../../media/Common-Images/TableLine.png)
 
   For example, for the trial subscription domain name of contoso.onmicrosoft.com, the organization name is "contoso".
 
-- The global administrator name: ![Underline](../../media/Common-Images/TableLine.png).onmicrosoft.com
+- The global administrator name: ![Underline.](../../media/Common-Images/TableLine.png).onmicrosoft.com
 
   Record the password for this account and the common initial password for the other user accounts in a secure location.
 

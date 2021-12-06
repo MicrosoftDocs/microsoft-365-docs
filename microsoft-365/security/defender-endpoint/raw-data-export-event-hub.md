@@ -2,15 +2,13 @@
 title: Stream Microsoft Defender for Endpoint events to Azure Event Hubs
 description: Learn how to configure Microsoft Defender for Endpoint to stream Advanced Hunting events to your Event Hub.
 keywords: raw data export, streaming API, API, Azure Event Hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -25,10 +23,9 @@ ms.custom: api
 
 
 **Applies to:**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configuresiem-abovefoldlink)
 
 ## Before you begin
 
@@ -50,25 +47,25 @@ ms.custom: api
 
 6. Type your **Event Hubs name** and your **Event Hubs resource ID**.
 
-   In order to get your **Event Hubs resource ID**, go to your Azure Event Hubs namespace page on [Azure](https://ms.portal.azure.com/) > properties tab > copy the text under **Resource ID**:
+   In order to get your **Event Hubs resource ID**, go to your Azure Event Hubs namespace page on [Azure](https://ms.portal.azure.com/) > properties tab \> copy the text under **Resource ID**:
 
-   ![Image of event hub resource Id1](images/event-hub-resource-id.png)
+   :::image type="content" alt-text="Image of event hub resource Id1." source="images/event-hub-resource-id.png" lightbox="images/event-hub-resource-id.png":::
 
 7. Choose the events you want to stream and click **Save**.
 
 ## The schema of the events in Azure Event Hubs
 
-```
+```json
 {
-	"records": [
-					{
-						"time": "<The time WDATP received the event>"
-						"tenantId": "<The Id of the tenant that the event belongs to>"
-						"category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-						"properties": { <WDATP Advanced Hunting event as Json> }
-					}
-					...
-				]
+    "records": [
+                    {
+                        "time": "<The time WDATP received the event>"
+                        "tenantId": "<The Id of the tenant that the event belongs to>"
+                        "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
+                        "properties": { <WDATP Advanced Hunting event as Json> }
+                    }
+                    ...
+                ]
 }
 ```
 
@@ -87,18 +84,19 @@ To get the data types for event properties do the following:
 1. Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com) and go to [Advanced Hunting page](https://securitycenter.windows.com/hunting-package).
 
 2. Run the following query to get the data types mapping for each event:
- 
-   ```
+
+   ```kusto
    {EventType}
    | getschema
    | project ColumnName, ColumnType 
    ```
 
-- Here is an example for Device Info event: 
+- Here is an example for Device Info event:
 
-  ![Image of event hub resource Id2](images/machine-info-datatype-example.png)
+  ![Image of event hub resource Id2.](images/machine-info-datatype-example.png)
 
 ## Related topics
+
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)
 - [Microsoft Defender for Endpoint streaming API](raw-data-export.md)
 - [Stream Microsoft Defender for Endpoint events to your Azure storage account](raw-data-export-storage.md)

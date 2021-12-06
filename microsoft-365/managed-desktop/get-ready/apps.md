@@ -4,7 +4,7 @@ description:  Explains how apps are handled, including how to package, deploy, a
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
@@ -26,7 +26,7 @@ You can also deploy additional non-Microsoft apps to your users for self-service
 
 ## Apps provided by Microsoft
 
-Included with your Microsoft Managed Desktop license are 64-bit versions of the apps in the Microsoft 365 Apps for enterprise Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business, and OneNote.) Click-to-Run versions of Microsoft Project and Visio are *not* included by default, but you can request them to be added. For more information about these apps, see [Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices](../get-started/project-visio.md).
+Included with your Microsoft Managed Desktop license are 64-bit versions of the apps in the Microsoft 365 Apps for enterprise Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Teams, and OneNote.) Click-to-Run versions of Microsoft Project and Visio are *not* included by default, but you can request them to be added. For more information about these apps, see [Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices](../get-started/project-visio.md).
 
 ### What Microsoft does to support the apps we provide
 
@@ -51,14 +51,16 @@ Review your apps, checking:
 - Apps must be ready for management by Microsoft Intune. For more about this topic, see [Windows 10 app deployment using Microsoft Intune](/intune/apps-windows-10-app-deploy) and [Add apps to Microsoft Intune](/intune/apps-add).
 - Other pre-packaging requirements such as providing license keys, agreement with license terms, and pre-setting server connections.
 
-## Steps to get ready
+## Steps to get ready for Microsoft Managed Desktop
 
-1. Review [Prerequisites for Microsoft Managed Desktop](prerequisites.md).
-2. Use [Readiness assessment tools](readiness-assessment-tool.md).
-3. [Prerequisites for guest accounts](guest-accounts.md)
-4. [Network configuration for Microsoft Managed Desktop](network.md)
-5. [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md)
-6. [Prepare on-premises resources access for Microsoft Managed Desktop](authentication.md)
-7. [Apps in Microsoft Managed Desktop](apps.md) (This article)
-8. [Prepare mapped drives for Microsoft Managed Desktop](mapped-drives.md)
-9. [Prepare printing resources for Microsoft Managed Desktop](printing.md)
+1. Review [prerequisites for Microsoft Managed Desktop](prerequisites.md).
+2. Run [readiness assessment tools](readiness-assessment-tool.md).
+1. Buy [Company Portal](../get-started/company-portal.md).
+1. Review [prerequisites for guest accounts](guest-accounts.md).
+1. Check [network configuration](network.md).
+1. [Prepare certificates and network profiles](certs-wifi-lan.md).
+1. [Prepare user access to data](authentication.md).
+1. Prepare apps (this article).
+1. [Prepare mapped drives](mapped-drives.md).
+1. [Prepare printing resources](printing.md).
+1. Address [device names](address-device-names.md).

@@ -2,12 +2,12 @@
 title: "External Domain Name System records for Office 365"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 10/21/2019
+manager: scotv
+ms.date: 11/10/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -27,9 +27,9 @@ description: A reference list of external Domain Name System records to use when
 
 # External Domain Name System records for Office 365
 
-![Domain](../media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)
+![Domain.](../media/e05b1c78-1df0-4200-ba40-6e26b7ead68f.png)
 
-**Want to see a customized list of DNS records for your Office 365 organization?** You can [find the info you need to create Office 365 DNS records](https://support.office.microsoft.com/article/Gather-the-information-you-need-to-create-Office-365-DNS-records-77f90d4a-dc7f-4f09-8972-c1b03ea85a67) for your domain in Office 365.
+**Want to see a customized list of DNS records for your Office 365 organization?** You can [find the info you need to create Office 365 DNS records](../admin/get-help-with-domains/information-for-dns-records.md) for your domain in Office 365.
 
 **Need step-by-step help to add these records at your domain's DNS host, such as GoDaddy or eNom?** [Find links to step-by-step instructions for many popular DNS hosts](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 

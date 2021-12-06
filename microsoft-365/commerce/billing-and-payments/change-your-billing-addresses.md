@@ -9,7 +9,7 @@ ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -17,6 +17,7 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_billing
+- AdminTemplateSet
 search.appverid: MET150
 description: "Learn how to update your billing addresses or the email address used to receive billing notifications for Microsoft 365 for business."
 ms.date: 04/07/2021

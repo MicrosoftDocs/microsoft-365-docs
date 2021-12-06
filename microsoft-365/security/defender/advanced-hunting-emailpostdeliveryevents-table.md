@@ -12,12 +12,10 @@ f1.keywords:
   - NOCSH
 ms.author: maccruz
 author: schmurky
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
-  - M365-security-compliance
-  - m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
 ---
@@ -33,9 +31,12 @@ ms.technology: m365d
 The `EmailPostDeliveryEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about post-delivery actions taken on email messages processed by Microsoft 365. Use this reference to construct queries that return information from this table.
 
 >[!TIP]
-> For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference available in the security center.
+> For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference available in the Defender for Cloud.
 
 To get more information about individual email messages, you can also use the [`EmailEvents`](advanced-hunting-emailevents-table.md), [`EmailAttachmentInfo`](advanced-hunting-emailattachmentinfo-table.md), and the [`EmailUrlInfo`](advanced-hunting-emailurlinfo-table.md) tables. For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
+
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
@@ -49,6 +50,8 @@ To get more information about individual email messages, you can also use the [`
 | `RecipientEmailAddress` | string | Email address of the recipient, or email address of the recipient after distribution list expansion |
 | `DeliveryLocation` | string | Location where the email was delivered: Inbox/Folder, On-premises/External, Junk, Quarantine, Failed, Dropped, Deleted items |
 | `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
+| `ThreatTypes` | string | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
+| `DetectionMethods` | string | Methods used to detect malware, phishing, or other threats found in the email |
 
 ## Supported event types
 This table captures events with the following `ActionType` values:

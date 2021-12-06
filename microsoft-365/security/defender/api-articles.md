@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -37,4 +37,4 @@ The following resources provide more information about APIs available for other 
 
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/apis-intro)
 - [Microsoft Defender for Office 365](/office/office-365-management-api/)
-- [Microsoft Cloud App Security](/cloud-app-security/api-introduction)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/api-introduction)

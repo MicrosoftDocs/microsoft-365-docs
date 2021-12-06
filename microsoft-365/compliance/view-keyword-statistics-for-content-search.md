@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.search: M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
@@ -40,7 +40,7 @@ To display statistics for a Content search or a search associated with a Core eD
 
 2. On the flyout page of the selected search, click the **Search statistics** tab.
   
-   ![The Search statistics tab](../media/SearchStatistics1.png)
+   ![The Search statistics tab.](../media/SearchStatistics1.png)
 
 The **Search statistics** tab contains for following sections that contain different types of statistics about the search.
 
@@ -48,7 +48,7 @@ The **Search statistics** tab contains for following sections that contain diffe
 
 This section displays a graphical summary of the estimated items returned by the search. This indicates the number of items that match the search criteria. This information gives you an idea about the estimated number of items returned by the search.
 
-![Search estimates for a search](../media/SearchContentReport.png)
+![Search estimates for a search.](../media/SearchContentReport.png)
 
 - **Estimated items by locations**: The total number of estimated items returned by the search. The specific number of items located in mailboxes and located in sites is also displayed.
 
@@ -60,7 +60,7 @@ This section displays a graphical summary of the estimated items returned by the
 
 This section displays statistics about the search query and the number of estimated items that matched different parts of the search query. You can use these statistics to analyze the number of items that match each component of search query. This can help you refine the search criteria and if necessary narrow the scope of the scope. You can also download a copy of this report in CSV format.
 
-![Condition report](../media/SearchContentReportNoKeywordList.png)
+![Condition report.](../media/SearchContentReportNoKeywordList.png)
 
 - **Location type**: The type of content location that the query statistics are applicable to. The value of **Exchange** indicates a mailbox location; a value of **SharePoint** indicates a site location.
 
@@ -96,11 +96,11 @@ To create a keyword list and view keyword statistics for a search:
 
 2. On the **Conditions** page of the search wizard. select the **Show keyword list** checkbox.
 
-   ![Show keywords list check box](../media/SearchKeywordsList1.png)
+   ![Show keywords list check box.](../media/SearchKeywordsList1.png)
 
 3. Type a keyword or keyword phase in a row in the keywords table. For example, type **budget** in the first row, type **security** in the second row, and type **FY2021** in the third row.
 
-   ![Type up to 20 keywords or keyword phrases in the list](../media/SearchKeywordsList2.png)
+   ![Type up to 20 keywords or keyword phrases in the list.](../media/SearchKeywordsList2.png)
 
    > [!NOTE]
    > To help reduce issues caused by large keyword lists, you're limited to a maximum of 20 rows in the keyword list of a search query.
@@ -111,7 +111,7 @@ To create a keyword list and view keyword statistics for a search:
 
 6. On the **Search statistics** tab, click the **Condition report** to display the keyword statistics for the search.
 
-    ![The statistics for each keyword are displayed](../media/SearchKeywordsList3.png)
+    ![The statistics for each keyword are displayed.](../media/SearchKeywordsList3.png)
   
     As shown in the previous screenshot, the statistics for each keyword are displayed; this includes:
 

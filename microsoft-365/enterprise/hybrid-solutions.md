@@ -1,13 +1,13 @@
 ---
 title: "Hybrid solutions"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/30/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365

@@ -2,17 +2,16 @@
 title: Get missing KBs by software ID
 description: Retrieves missing security updates by software ID
 keywords: apis, graph api, supported apis, get, list, file, information, software id, threat & vulnerability management api, Microsoft Defender for Endpoint tvm api
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
@@ -22,9 +21,10 @@ ms.custom: api
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Applies to:** 
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -36,22 +36,22 @@ Retrieves missing KBs (security updates) by software ID
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for details.
 
-Permission type |   Permission   |   Permission display name
+Permission type|Permission|Permission display name
 :---|:---|:---
-Application |Software.Read.All |   'Read Threat and Vulnerability Management Software information'
-Delegated (work or school account) | Software.Read |   'Read Threat and Vulnerability Management Software information'
+Application|Software.Read.All|'Read Threat and Vulnerability Management Software information'
+Delegated (work or school account)|Software.Read|'Read Threat and Vulnerability Management Software information'
 
 ## HTTP request
 
-```
+```http
 GET /api/Software/{Id}/getmissingkbs
 ```
 
 ## Request header
 
-Name | Type | Description
+Name|Type|Description
 :---|:---|:---
-Authorization | String | Bearer {token}. **Required**.
+Authorization|String|Bearer {token}. **Required**.
 
 ## Request body
 
@@ -67,7 +67,7 @@ If successful, this method returns 200 OK, with the specified software missing k
 
 Here is an example of the request.
 
-```
+```http
 GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge/getmissingkbs
 ```
 
