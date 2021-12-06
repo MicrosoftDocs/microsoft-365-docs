@@ -33,8 +33,11 @@ You can also manually onboard individual devices to Defender for Endpoint. You m
 
 > [!IMPORTANT]
 > This script has been optimized for use on up to 10 devices.
->
-> To deploy at scale, use [other deployment options](configure-endpoints.md). For example, you can deploy an onboarding script to more than 10 devices in production with the script available in [Onboard Windows devices using Group Policy](configure-endpoints-gp.md).
+>Local scripting is a special on-board method for evaluating Microsoft Defender for Endpoint.
+>The data reporting frequency is set higher than the other on-board method when the on-board by local script is performed.
+>This setting is for evaluation purposes and is not normally used in production deployments.
+>For this reason, there are concerns about environmental impact, so please limit the number of deployments using local scripts to 10.
+>If you are deploying to a production environment as described above, use [other deployment options](configure-endpoints.md)like  Group Policy or Microsoft Endpoint Configuration Manager.
 
 Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint. 
 
