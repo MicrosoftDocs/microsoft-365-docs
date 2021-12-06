@@ -66,7 +66,7 @@ If you need to [escalate](../service-description/user-support.md#escalation-port
 3. On the **Service requests** blade, select **+ New support request**.
 4. Provide a very brief description in the **Title** box. Then set the **Request type** to **Incident**. 
 5. Select the **Category** and **Sub-category** that best fits your issue and select **Next**.
-6. On the Details section, provide the following information:
+6. In the **Details** section, provide the following information:
     - **Description**: Add any additional details that could help our team understand the problem. If you need to attach files, you can do that by coming back to the request after you submit it.
     - **Primary contact information**: Provide info about how to contact the main person responsible for working with our team.
 7. Select the **Severity** level. For more information, see [Support request severity definitions](#sev).
