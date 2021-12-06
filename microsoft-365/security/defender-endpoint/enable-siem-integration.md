@@ -2,8 +2,6 @@
 title: Enable SIEM integration in Microsoft Defender for Endpoint
 description: Enable SIEM integration to receive detections in your security information and event management (SIEM) solution.
 keywords: enable siem connector, siem, connector, security information and events
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -23,7 +21,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
@@ -50,7 +49,7 @@ Enable security information and event management (SIEM) integration so you can p
 
 1. In the navigation pane, select **Settings** \> **Endpoints** \> **APIs** \> **SIEM**.
 
-   :::image type="content" source="../../media/enable-siemnew.png" alt-text="Image of SIEM integration from Settings menu1.":::
+   :::image type="content" source="../../media/enable-siemnew.png" lightbox="../../media/enable-siemnew.png" alt-text="Image of SIEM integration from Settings menu1.":::
 
    > [!TIP]
    > If you encounter an error when trying to enable the SIEM connector application, check the pop-up blocker settings of your browser. It might be blocking the new window being opened when you enable the capability.
@@ -60,7 +59,7 @@ Enable security information and event management (SIEM) integration so you can p
     > [!WARNING]
     > The client secret is only displayed once. Make sure you keep a copy of it in a safe place.
 
-    ![Image of SIEM integration from Settings menu2.](images/siem_details.png)
+    :::image type="content" alt-text="Image of SIEM integration from Settings menu2." source="images/siem_details.png" lightbox="images/siem_details.png":::
 
 3. Choose the SIEM type you use in your organization.
 
