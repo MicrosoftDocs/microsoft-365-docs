@@ -8,7 +8,7 @@ ms.author: jaimeo
 manager: laurawi
 audience: ITpro
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ---
 
@@ -52,5 +52,17 @@ If already have at least one Microsoft Managed Desktop device in use, follow the
 
 You can always open another service request to pause or roll back part of this deployment at any time during the rollout.
 
+## Steps to get started with Microsoft Managed Desktop
 
+1. Access [admin portal](access-admin-portal.md).
+1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md).
+1. [Adjust settings after enrollment](conditional-access.md).
+1. Deploy and assign [Intune Company Portal](company-portal.md).
+1. [Assign licenses](assign-licenses.md).
+1. [Deploy apps](deploy-apps.md).
+1. [Set up devices](set-up-devices.md).
+1. Set up [first-run experience with Autopilot and the Enrollment Status Page](esp-first-run.md).
+1. [Enable user support features](enable-support.md).
+1. [Get your users ready to use devices](get-started-devices.md).
+1. Get started with app control (this article).
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 ms.custom:
@@ -31,10 +31,10 @@ This feature is not available for Government users. Administrators should ensure
 
 ## Related content
 
-[Set up Microsoft Search](/microsoftsearch/setup-microsoft-search.md) (article)
+[Set up Microsoft Search](/microsoftsearch/setup-microsoft-search) (article)
 
 [Top 12 tasks for security teams to support working from home](../../security/top-security-tasks-for-remote-work.md) (article)
 
-[What's new in Microsoft 365](https://support.microsoft.com/en-us/office/what-s-new-in-microsoft-365-95c8d81d-08ba-42c1-914f-bca4603e1426) (article)
+[What's new in Microsoft 365](https://support.microsoft.com/office/what-s-new-in-microsoft-365-95c8d81d-08ba-42c1-914f-bca4603e1426) (article)
 
 

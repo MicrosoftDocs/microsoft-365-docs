@@ -4,7 +4,7 @@ description: Information for adding and deploying apps to Microsoft Managed Desk
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, apps, line-of-business apps, LOB apps
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
@@ -52,20 +52,21 @@ If you haven't signed up with Microsoft Store for Business, you can sign up when
 
 1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com) with your Microsoft Store for Business Admin account.
 2. Select **Shop for my group**.
-3. Use Search to find that the app that you want, and select the app.
+3. Use Search to find the app that you want, and select the app.
 4. On the product details, select **Get the App**. 
 Microsoft Store adds the app to **Your products** for your organization.
-
-**To force a sync between Intune and Microsoft Store for Business**
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Select **Tenant administration** > **Connectors and tokens** > **Microsoft Store for Business**.
-3. Select **Sync** to get the apps you've purchased from the Microsoft Store into Intune.
-
+    
 **To verify that a sync between Intune and Microsoft Store for Business is active**
 1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com) with your Microsoft Store for Business Admin account.
 2. Select **Manage**.
 3. Select **Settings** and then select **Distribute**.
 4. Under **Management tools**, verify that Intune is listed and that the status is **Active**.  
+    
+**To force a sync between Intune and Microsoft Store for Business**
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+2. Select **Tenant administration** > **Connectors and tokens** > **Microsoft Store for Business**.
+3. Select **Enabled** for **Enabling Microsoft Store for Business sync lets you access volume-purchased apps with Intune.** 
+4. Select your preferred language, then select **Sync** to get the apps you've purchased from the Microsoft Store into Intune.
 
 <span id="2" />
 
@@ -96,14 +97,17 @@ Add your users to these groups to either make the app available, install the app
 
 ## Steps to get started with Microsoft Managed Desktop
 
-1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md)
-2. [Adjust conditional access](conditional-access.md)
-3. [Assign licenses](assign-licenses.md)
-4. [Deploy Intune Company Portal](company-portal.md)
-5. [Enable Enterprise State Roaming](enterprise-state-roaming.md)
-6. [Set up devices](set-up-devices.md)
-7. [Get your users ready to use devices](get-started-devices.md)
-8. Deploy apps (this topic)
+1. Access [admin portal](access-admin-portal.md).
+1. [Add and verify admin contacts in the Admin portal](add-admin-contacts.md).
+1. [Adjust settings after enrollment](conditional-access.md).
+1. Deploy and assign [Intune Company Portal](company-portal.md).
+1. [Assign licenses](assign-licenses.md).
+1. Deploy apps (this article).
+1. [Set up devices](set-up-devices.md).
+1. Set up [first-run experience with Autopilot and the Enrollment Status Page](esp-first-run.md).
+1. [Enable user support features](enable-support.md).
+1. [Get your users ready to use devices](get-started-devices.md).
+1. [Get started with app control](get-started-app-control.md).
 
 
 <!--# Preparing apps for Microsoft Managed Desktop

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -42,7 +42,7 @@ Use this template to analyze your habits and the way you like to work to create 
 
 You can stay on top of emails and appointments with Outlook on your phone. Download the app, then launch, sign in, and set up your account.
 
-Get more details for how to [install Outlook on a phone](install-apps-android.md).
+Get more details for how to [install Outlook on a phone](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f).
 
 ## Save your files to the cloud
 
@@ -60,7 +60,7 @@ You can store your personal files in OneDrive and sync them from your phone.
 1. Open OneDrive and sign in.
 1. Follow the instructions to finish the setup and start syncing.
 
-Need a little help? Get advice on [where to store files](store-files.md), how to [use the OneDrive mobile app](https://support.microsoft.com/office/448d4051-3a43-4d2e-b1d8-de0aa03c069e) and how to [sync files and folders](https://support.microsoft.com/office/d9262485-9bf8-4ceb-bac2-e83f68cb6a97).
+Need a little help? Get advice on [where to store files](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e), how to [use the OneDrive mobile app](https://support.microsoft.com/office/448d4051-3a43-4d2e-b1d8-de0aa03c069e) and how to [sync files and folders](https://support.microsoft.com/office/d9262485-9bf8-4ceb-bac2-e83f68cb6a97).
 
 ## Open and edit your files from any device
 
@@ -68,7 +68,7 @@ Need a little help? Get advice on [where to store files](store-files.md), how to
 
 Install the Office apps on a phone or tablet and work wherever you are. Download the apps, then launch, sign in, and set up your account.
 
-Learn more about installing the Office app on: [Android](install-apps-android.md) | [iOS](install-apps-ios.md).
+Learn more about installing the Office app on: [Android](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f) | [iOS](https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f).
 
 Not sure what you can do on your phone or tablet? Read more about using the Office apps:
 

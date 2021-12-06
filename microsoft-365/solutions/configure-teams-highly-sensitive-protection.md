@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection: 
@@ -33,6 +33,13 @@ The highly sensitive tier offers the following additional protections over the b
 - A more restrictive default sharing link type
 - Only team owners can create private channels.
 - Access requests for the associated SharePoint site are turned off.
+
+## Video demonstration
+
+Watch this video for a walkthrough of the procedures described in this article.
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NzI7]
 
 ## Guest sharing
 

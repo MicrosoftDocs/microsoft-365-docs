@@ -1,14 +1,14 @@
 ---
-title: "SharePoint Syntex accessibility mode "
-ms.author: efrene
-author: efrene
+title: SharePoint Syntex accessibility mode
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
-localization_priority: Normal
-description: "Learn how to use accessibility mode when training a model in SharePoint Syntex."
+ms.localizationpriority:  medium
+description: Learn how to use accessibility mode when training a model in SharePoint Syntex.
 ---
 
 # SharePoint Syntex accessibility mode
@@ -18,13 +18,13 @@ In [SharePoint Syntex](index.md), users can turn on accessibility mode in all st
 This helps users to use their keyboards to navigate through text in the document viewer and to hear a narration of not only the selected values, but also of actions (such as labeling or removing labeling from selected text), or predicted label values as you train the model with additional example documents. 
 
 
-![Accessibility mode](../media/content-understanding/accessibility-mode.png)
+![Accessibility mode.](../media/content-understanding/accessibility-mode.png)
 
 ## Requirements
 
 To hear the audio of the narration, make sure to turn on the [Narrator App](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) in your Narrator settings on your Windows 10 system.
 
-![Turn on Narrator](../media/content-understanding/narrator-settings.png)
+![Turn on Narrator.](../media/content-understanding/narrator-settings.png)
 
 ## Labeling for keyboard users
 
@@ -52,15 +52,13 @@ As you navigate through the sample documents and label string values, Narrator w
 - In the training tab, if you select a string in the document viewer that has only been predicted, Narrator audio will state the value, and then "predicted". This occurs when training predicts a value in the file that does not match what has been labeled by the user.
 - In the training tab, if you select a string in the document viewer that has been labeled and predicted, Narrator audio will state the value, and then "labeled and predicted". This occurs when training is successful and there is a match between a predicted value and the user label.
 
-
-
 After a string is labeled or a label has been removed in the viewer, Narrator audio will warn you to save your changes before you exit.
 
 ## See Also
 
-[Create an extractor](create-an-extractor.md)</br>
+[Create an extractor](create-an-extractor.md)
 
-[Create a classifier](create-a-classifier.md)</br>
+[Create a classifier](create-a-classifier.md)
 
 
 
