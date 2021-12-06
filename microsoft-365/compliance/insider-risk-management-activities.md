@@ -3,7 +3,7 @@ title: Investigate insider risk management activities
 description: Learn about investigating insider risk management activities in Microsoft 365
 keywords: Microsoft 365, insider risk, risk management, compliance
 ms.localizationpriority: medium
-ms.prod: microsoft-365-enterprise
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -12,6 +12,7 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Investigate insider risk management activities
@@ -148,7 +149,7 @@ Use the Activity scope and Risk insight filters to display and sort activities a
 
 To use the **Activity explorer**, complete the following steps:
 
-1. In the Microsoft 365 compliance center, go to **Insider risk management** and select the **Alerts** tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
 2. On the **Alerts dashboard**, select the alert you want to triage.
 3. On the **Alerts detail pane**, select **Open expanded view**.
 4. On the page for the selected alert, select the **Activity explorer** tab.
@@ -201,4 +202,4 @@ Modern workplace users often have a wide variety of responsibilities and demands
 
 - **Focus analyst and investigator efforts on the highest risk alerts first**. Depending on your policies, you may be capturing activities and generating alerts with varying degrees of potential impact to your risk mitigation efforts. [Filter alerts](insider-risk-management-activities.md#filter-alerts-on-the-alert-dashboard) by severity and prioritize *High severity* alerts.
 - **Assign users as analysts and investigators**. Having the right user assigned to the proper roles is an important part of the insider risk alert review process. Make sure you’ve assigned the appropriate users to the *Insider Risk Management Analysts* and *Insider Risk Management Investigators* role groups.  
-- **Use automated insider risk features to help discover the highest risk activities**. Insider risk management [sequence detection](insider-risk-management-policies.md#sequence-detection-preview) and [cumulative exfiltration detection](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) features can help you quickly discover harder to find risks in your organization. Consider fine-tuning your [risk score boosters](insider-risk-management-settings.md#indicators), [file type exclusions](insider-risk-management-settings.md#file-type-exclusions), [domains](insider-risk-management-settings.md#domains-preview), and the minimum [indicator threshold settings](insider-risk-management-settings.md#indicator-level-settings-preview) for your policies.
+- **Use automated insider risk features to help discover the highest risk activities**. Insider risk management [sequence detection](insider-risk-management-policies.md#sequence-detection-preview) and [cumulative exfiltration detection](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) features can help you quickly discover harder to find risks in your organization. Consider fine-tuning your [risk score boosters](insider-risk-management-settings.md#indicators), [file type exclusions](insider-risk-management-settings.md#file-type-exclusions), [domains](insider-risk-management-settings.md#domains), and the minimum [indicator threshold settings](insider-risk-management-settings.md#indicator-level-settings-preview) for your policies.

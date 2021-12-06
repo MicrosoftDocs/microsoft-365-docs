@@ -69,7 +69,7 @@ Each billing profile includes the following information:
 
 If you have questions or need help with your Azure charges, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">create a support request with Azure support</a>.
 
-If you have questions or need help with your billing profile in Microsoft 365 admin center, [contact support](../../business-video/get-help-support.md).
+If you have questions or need help with your billing profile in Microsoft 365 admin center, [contact support](../../admin/get-help-support.md).
 
 ## Related content
 

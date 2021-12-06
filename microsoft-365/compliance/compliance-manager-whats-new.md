@@ -9,7 +9,10 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -19,6 +22,53 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 # What's new in Microsoft Compliance Manager
 
 **In this article:** Learn about recent updates in Compliance Manager.
+
+## November 2021
+
+### Zero Trust integration for the Data Protection Baseline template
+
+Zero Trust is a proactive, integrated approach to security across all layers of the digital estate that explicitly and continuously verifies every transaction, asserts least privilege, and relies on intelligence, advanced detection, and real-time response to threats. Compliance Manager's Data Protection Baseline template, included for all users, now integrates 57 new controls and 36 new actions for Zero Trust aligned across the following control families:
+
+- Zero Trust Application
+- Zero Trust App development guidance
+- Zero Trust Endpoint
+- Zero Trust Data
+- Zero Trust Identity
+- Zero Trust Infrastructure
+- Zero Trust Network
+- Zero Trust Visibility, automation, and orchestration
+
+### New assessment templates
+
+The following assessment templates are now available in preview:
+
+- ISO 27001:2013 for Azure (Preview)
+- ISO 27001:2013 for Dynamics 365 (Preview)
+- FedRAMP Moderate for Dynamics 365 (Preview)
+- FedRAMP Moderate for Azure (Preview)
+- FedRAMP High for Azure (Preview)
+- FedRAMP High for Dynamics 365 (Preview)
+- SOC 2 for Azure (Preview)
+- SOC 2 for Dynamics 365 (Preview)
+- ISO 27018:2019 for Azure (Preview)
+- ISO 27018:2019 for Dynamics 365 (Preview)
+
+## October 2021
+
+### New assessment templates
+
+We published new assessment templates, including:
+
+- Colorado Privacy Act (CPA)
+- Virginia Consumer Data Privacy Act (CDPA)
+- Egypt - Data Protection Law
+- Australia - ASD Essential 8 Maturity Level 1
+- Australia - ASD Essential 8 Maturity Level 2
+- Australia - ASD Essential 8 Maturity Level 3
+
+### Integration with privacy management
+
+Compliance Manager can now work hand in hand with privacy management, a solution that can help you safeguard the personal data your organization stores in Microsoft 365. Privacy management offers tools to help you visualize and understand your data, implement policies to manage key risk scenarios, and handle subject rights requests. When you take steps in privacy management to protect the personal data you store, this can contribute to your privacy assessments in Compliance Manager and can help you improve your compliance score. To see how privacy management and other solutions are contributing to your score, and learn about potential opportunities for further improvements, see the **Solutions** tab in Compliance Manager. You can also find more details about privacy management at [Learn about privacy management](/privacy/solutions/privacymanagement/privacy-management).
 
 ## July 2021
 

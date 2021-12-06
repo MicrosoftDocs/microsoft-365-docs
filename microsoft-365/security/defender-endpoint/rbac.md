@@ -21,6 +21,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Azure Active Directory
 - Office 365
 
@@ -32,11 +34,14 @@ Using role-based access control (RBAC), you can create roles and groups within y
 
 Large geo-distributed security operations teams typically adopt a tier-based model to assign and authorize access to security portals. Typical tiers include the following three levels:
 
-Tier|Description
-:---|:---
-Tier 1|**Local security operations team / IT team** <br> This team usually triages and investigates alerts contained within their geolocation and escalates to Tier 2 in cases where an active remediation is required.
-Tier 2|**Regional security operations team** <br> This team can see all the devices for their region and perform remediation actions.
-Tier 3|**Global security operations team** <br> This team consists of security experts and are authorized to see and perform all actions from the portal.
+Tier|Description|
+:---|:---|
+Tier 1|**Local security operations team / IT team** <br> This team usually triages and investigates alerts contained within their geolocation and escalates to Tier 2 in cases where an active remediation is required.|
+Tier 2|**Regional security operations team** <br> This team can see all the devices for their region and perform remediation actions.|
+Tier 3|**Global security operations team** <br> This team consists of security experts and are authorized to see and perform all actions from the portal.|
+
+> [!NOTE]
+> For Tier 0 assets, refer to [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) for security admins to provide more granular control of Microsoft Defender for Endpoint and Microsoft 365 Defender.  
 
 Defender for Endpoint RBAC is designed to support your tier- or role-based model of choice and gives you granular control over what roles can see, devices they can access, and actions they can take. The RBAC framework is centered around the following controls:
 
@@ -56,7 +61,7 @@ Before using RBAC, it's important that you understand the roles that can grant p
 
 When you first log in to the Microsoft 365 Defender portal, you're granted either full access or read only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Azure AD. Read only access is granted to users with a Security Reader role in Azure AD. 
 
-Someone with a Defender for Endpoint Global administrator role has unrestricted access to all devices, regardless of their device group association and the Azure AD user groups assignments
+Someone with a Defender for Endpoint Global administrator role has unrestricted access to all devices, regardless of their device group association and the Azure AD user groups assignments.
 
 > [!WARNING]
 > Initially, only those with Azure AD Global Administrator or Security Administrator rights will be able to create and assign roles in the Microsoft 365 Defender portal, therefore, having the right groups ready in Azure AD is important.
@@ -69,4 +74,5 @@ Someone with a Defender for Endpoint Global administrator role has unrestricted 
 
 ## Related topic
 
+- [RBAC roles](../office-365-security/migrate-to-defender-for-office-365-onboard.md#rbac-roles)
 - [Create and manage device groups in Microsoft Defender for Endpoint](machine-groups.md)

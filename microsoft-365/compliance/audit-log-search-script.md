@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-apr2020
-description: "Use a PowerShell script that runs the Search-UnifiedAuditLog cmdlet in Exchange Online to search the audit log. This script is optimized to return a large set (up to 50,000) of audit records. The script exports these records to a CSV file that you can view or transform using Power Query in Excel."
+description: "Use a PowerShell script that runs the Search-UnifiedAuditLog cmdlet in Exchange Online to search the audit log. This script is optimized to return a large set of audit records each time you run it. The script exports these records to a CSV file that you can view or transform using Power Query in Excel."
 ---
 
 # Use a PowerShell script to search the audit log
@@ -31,7 +31,7 @@ Security, compliance, and auditing have become a top priority for IT administrat
 
 If you need to retrieve audit logs on a regular basis, you should consider a solution that uses the Office 365 Management Activity API because it that can provide large organizations with the scalability and performance to retrieve millions of audit records on an ongoing basis. Using the audit log search tool in Microsoft 365 compliance center is a good way to quickly find audit records for specific operations that occur in shorter time range. Using longer time ranges in the audit log search tool, especially for large organizations, might return too many records to easily manage or export.
 
-When there are situations where you need to manually retrieve auditing data for a specific investigation or incident, particularly for longer date ranges in larger organizations, using the **Search-UnifiedAuditLog** cmdlet may be the best option. This article includes a PowerShell script that uses the cmdlet to retrieve up to 50,000 audit records and then export them to a CSV file that you can format using Power Query in Excel to help with your review. Using the script in this article also minimizes the chance that large audit log searches will time out in the service.
+When there are situations where you need to manually retrieve auditing data for a specific investigation or incident, particularly for longer date ranges in larger organizations, using the **Search-UnifiedAuditLog** cmdlet may be the best option. This article includes a PowerShell script that uses the cmdlet that can retrieve 50,000 audit records (each time you run the cmdlet) and then export them to a CSV file that you can format using Power Query in Excel to help with your review. Using the script in this article also minimizes the chance that large audit log searches will time out in the service.
 
 ## Before you run the script
 
@@ -51,7 +51,7 @@ When there are situations where you need to manually retrieve auditing data for 
 
 ## Step 1: Connect to Exchange Online PowerShell
 
-The first step is to connect to Exchange Online PowerShell. You can connect using modern authentication or with multi-factor authentication (MFA). For step-by-step instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+The first step is to connect to Exchange Online PowerShell. You can connect using modern authentication or with multifactor authentication (MFA). For step-by-step instructions, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## Step 2: Modify and run the script to retrieve audit records
 
@@ -163,7 +163,7 @@ After you've connected to Exchange Online PowerShell, the next step is to create
 The script displays progress messages while it's running. After the script is finished running, it creates the log file and the CSV file that contains the audit records and saves them to the folders defined by the `$logFile` and `$outputFile` variables.
 
 > [!IMPORTANT]
-> There is a 50,000 limit for the maximum number of audit records returned each time you run this script. If you run this script and it returns 50,000 results, then it's likely that audit records for activities that occurred within the date range weren't included. If this happens, we recommend that you divide the date range into smaller durations and then rerun the script for each date range. For example, if a date range of 90 days returns 50,000 results then you can rerun the script twice, once for the first 45 days in the date range and then again for the next 45 days.
+> There is a 50,000 limit for the maximum number of audit records returned each time you run the cmdlet in the script. If you run this script and it returns 50,000 results, then it's likely that audit records for activities that occurred within the date range weren't included. If this happens, we recommend that you divide the date range into smaller durations and then rerun the script for each date range. For example, if a date range of 90 days returns 50,000 results then you can rerun the script twice, once for the first 45 days in the date range and then again for the next 45 days.
 
 ## Step 3: Format and view the audit records
 

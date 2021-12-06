@@ -39,6 +39,8 @@
           href: apply-a-retention-label-to-a-model.md
         - name: Apply a sensitivity label 
           href: apply-a-sensitivity-label-to-a-model.md
+        - name: Search for metadata in libraries 
+          href: metadata-search.md
         - name: Model usage analytics
           href: model-usage-analytics.md
         - name: Leverage term store taxonomy when creating an extractor
@@ -86,28 +88,8 @@
         - name: Term store reports
           href: term-store-analytics.md
      
-    - name: REST API
-      items:
-        - name: Overview
-          href: rest-api/syntex-model-rest-api.md
-        - name: Create model
-          href: rest-api/rest-createmodel-method.md
-        - name: GetByUniqueId
-          href: rest-api/rest-getbyuniqueid-method.md
-        - name: GetByTitle
-          href: rest-api/rest-getbytitle-method.md
-        - name: Apply model
-          href: rest-api/rest-applymodel-method.md
-        - name: Get model and library information
-          href: rest-api/rest-getmodelandlibraryinfo.md
-        - name: UpdateModelSettings
-          href: rest-api/rest-updatemodelsettings-method.md        
-        - name: BatchDelete
-          href: rest-api/rest-batchdelete-method.md
-        - name: Create file classification request
-          href: rest-api/rest-createclassificationrequest.md
-        - name: Create folder classification request
-          href: rest-api/rest-createfolderclassificationrequest.md
+    - name: Extensibility
+      href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
 
 
 

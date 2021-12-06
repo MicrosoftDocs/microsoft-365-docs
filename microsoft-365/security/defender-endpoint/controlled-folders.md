@@ -2,7 +2,6 @@
 title: Protect important folders from ransomware from encrypting your files with controlled folder access
 description: Files in default folders can be protected from being changed by malicious apps. Prevent ransomware from encrypting your files.
 keywords: controlled folder access, windows 10, windows defender, ransomware, protect, files, folders
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -25,14 +24,14 @@ ms.collection: M365-security-compliance
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## What is controlled folder access?
 
-Controlled folder access helps protect your valuable data from malicious apps and threats, such as ransomware. Controlled folder access protects your data by checking apps against a list of known, trusted apps. Supported on Windows Server 2019, Windows Server 2022, and Windows 10 clients, controlled folder access can be turned on using the Windows Security App, Microsoft Endpoint Configuration Manager, or Intune (for managed devices).
+Controlled folder access helps protect your valuable data from malicious apps and threats, such as ransomware. Controlled folder access protects your data by checking apps against a list of known, trusted apps. Supported on Windows Server 2019, Windows Server 2022, Windows 10, and Windows 11 clients, controlled folder access can be turned on using the Windows Security App, Microsoft Endpoint Configuration Manager, or Intune (for managed devices).
 
 > [!NOTE]
 > Scripting engines are not trusted and you cannot allow them access to controlled protected folders. For example, PowerShell is not trusted by controlled folder access, even if you allow with [certificate and file indicators](/microsoft-365/security/defender-endpoint/indicator-certificates).
@@ -50,7 +49,7 @@ Controlled folder access works with a list of trusted apps. Apps that are includ
 
 Apps are added to the list based upon their prevalence and reputation. Apps that are highly prevalent throughout your organization and that have never displayed any behavior deemed malicious are considered trustworthy. Those apps are added to the list automatically.
 
-Apps can also be added manually to the trusted list by using Configuration Manager or Intune. Additional actions, such as [adding a file indicator](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file) for an app, can be performed from the Security Center Console.
+Apps can also be added manually to the trusted list by using Configuration Manager or Intune. Additional actions can be performed from the Microsoft 365 Defender portal. 
 
 ## Why controlled folder access is important
 
@@ -63,6 +62,7 @@ You can use [audit mode](audit-windows-defender.md) to evaluate how controlled f
 Controlled folder access is supported on the following versions of Windows:
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709) and later
+- Windows 11
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - Windows Server 2022
 
@@ -124,7 +124,7 @@ The following table shows events related to controlled folder access:
 
 You can use the Windows Security app to view the list of folders that are protected by controlled folder access.
 
-1. On your Windows 10 device, open the Windows Security app.
+1. On your Windows 10 or Windows 11 device, open the Windows Security app.
 2. Select **Virus & threat protection**.
 3. Under **Ransomware protection**, select **Manage ransomware protection**.
 4. If controlled folder access is turned off, you'll need to turn it on. Select **protected folders**.

@@ -161,10 +161,18 @@ Microsoft 365 doesn't include a public website for your business. If you want to
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
-## Related content
+## Invite users to join your subscription and organization
+
+Once you've set up your organization, you can invite other users to join your Microsoft 365 business subscription. They'll get access to all the features of the subscription.
+
+[Invite users to my subscription](../simplified-signup/admin-invite-business-standard.md)
+
+Let your users know they can follow the steps in the articles below to join your organization and subscription.
+
+- [Accept an email invitation](../simplified-signup/user-invite-business-standard.md)
+
+- [Accept an email invitation using an Outlook, Yahoo, Gmail or other account (User)](../simplified-signup/user-invite-msa-nodomain-join.md)
+
+## Related topics
 
 [Migrate data to my Microsoft 365 Business Standard subscription](../simplified-signup/migrate-data-business-standard.md)
-
-[Sign up for a Microsoft 365 Business Standard subscription](../simplified-signup/signup-business-standard.md)
-
-[Accept an invitation to a Microsoft 365 Business Standard subscription (User)](../simplified-signup/user-invite-business-standard.md)

@@ -2,7 +2,6 @@
 title: Hide the Microsoft Defender Antivirus interface
 description: You can hide virus and threat protection tile in the Windows Security app.
 keywords: ui lockdown, headless mode, hide app, hide settings, hide interface
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/23/2021
+ms.date: 10/18/2021
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
@@ -25,8 +24,8 @@ ms.collection: M365-security-compliance
 
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 You can use Group Policy to prevent users on endpoints from seeing the Microsoft Defender Antivirus interface. You can also prevent them from pausing scans.
 

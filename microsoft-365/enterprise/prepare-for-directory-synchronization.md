@@ -44,6 +44,9 @@ However, directory synchronization requires planning and preparation to ensure t
 
 Follow these steps in order for the best results.
 
+> [!NOTE]
+> Non-ASCII characters do not sync for any attributes on the AD DS user account.
+
 ## 1. Directory cleanup tasks
 
 Before you synchronize your AD DS to your Azure AD tenant, you need to clean up your AD DS.
