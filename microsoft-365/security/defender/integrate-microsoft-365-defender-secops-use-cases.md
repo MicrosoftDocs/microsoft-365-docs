@@ -51,7 +51,7 @@ SOC Oversight activities related to use case development include:
 
 To facilitate the runbook and playbook creation processes, create a use case decision tree. This figure shows an example.
 
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="The use case decision process." lightbox="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png" alt-text="An example of the page that describes the use case decision process." lightbox="../../media/integrate-microsoft-365-defender-secops/use-case-decision-process.png":::
 
 Once a high-level use case standard has been defined and approved, the next step is to create and test an actual use case. The following sections use anti-phishing and threat and vulnerability scanning scenarios as examples.
 
@@ -59,7 +59,7 @@ Once a high-level use case standard has been defined and approved, the next step
 
 The first step in creating a use case is to outline the workflow using a story board. Here’s an example of a high-level story board for a new phishing exploit notification to a Threat Intelligence team.
  
-:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="An example use case workflow for an anti-phishing campaign." lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png":::
+:::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png" alt-text="An example of the workflow of a use case for an anti-phishing campaign." lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-phishing.png":::
 
 ### Invoke the use case workflow for example 1
 
