@@ -63,9 +63,11 @@ See the learning module, [Detect and respond to security issues](/learn/modules/
 > [!NOTE]
 > Although the learning module ([Detect and respond to security issues](/learn/modules/m365-detect-respond-security-issues-defender-endpoint/)) is actually for Microsoft Defender for Endpoint, the basic concepts and overall flow are similar to what you'll see in Defender for Business.
 
-
-
 ## Next steps
+
+Now that you have an overview of Defender for Business, try one or more of the following tasks:
+
+- [Try tutorials and simulations in Microsoft Defender for Business](mdb-tutorials.md)
 
 - [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
 
