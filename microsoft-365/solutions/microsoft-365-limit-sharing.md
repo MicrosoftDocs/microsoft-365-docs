@@ -19,7 +19,7 @@ f1.keywords: NOCSH
 ms.custom: 
 - admindeeplinkMAC
 - admindeeplinkTEAMS
-localization_priority: Priority
+ms.localizationpriority: high
 recommendations: false
 description: "Learn about the options to limit or disable sharing in Microsoft 365."
 ---

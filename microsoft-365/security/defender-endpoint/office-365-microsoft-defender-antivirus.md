@@ -2,20 +2,22 @@
 title: Better together - Microsoft Defender Antivirus and Office 365 (including OneDrive) - better protection from ransomware and cyberthreats
 description: Office 365, which includes OneDrive, goes together wonderfully with Microsoft Defender Antivirus. Read this article to learn more.
 keywords: windows defender, antivirus, office 365, onedrive, restore, ransomware
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 ms.topic: article
 author: denisebmsft
 ms.author: deniseb
-ms.custom: nextgen
+ms.custom: 
+- nextgen
+- admindeeplinkDEFENDER
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
+ms.collection: M365-security-compliance
 ---
 
 # Better together: Microsoft Defender Antivirus and Office 365
@@ -24,13 +26,14 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 - Microsoft 365
 
 You might already know that:
 
-- **Microsoft Defender Antivirus protects your Windows 10 device from software threats, such as viruses, malware, and spyware**. Microsoft Defender Antivirus is your complete, ongoing protection, built into Windows 10 and ready to go. [Microsoft Defender Antivirus is your next-generation protection](./microsoft-defender-antivirus-in-windows-10.md). 
+- **Microsoft Defender Antivirus protects your Windows device from software threats, such as viruses, malware, and spyware**. Microsoft Defender Antivirus is your complete, ongoing protection, built into Windows 10 and Windows 11, and ready to go. [Microsoft Defender Antivirus is your next-generation protection](./microsoft-defender-antivirus-in-windows-10.md). 
 
 - **Office 365 includes antiphishing, antispam, and antimalware protection**. With your Office 365 subscription, you get premium email and calendars, Office apps, 1 TB of cloud storage (via OneDrive), and advanced security across all your devices. This is true for home and business users. And if you're a business user, and your organization is using Office 365 E5, you get even more protection through Microsoft Defender for Office 365 [Protect against threats with Office 365](/microsoft-365/security/office-365-security/protect-against-threats).
 
@@ -68,9 +71,9 @@ Microsoft Defender for Office 365 integrated with Microsoft Defender for Endpoin
 
     SO
 
-- Once integration is enabled, your security operations team can see a list of devices that are used by the recipients of any detected URLs or email messages, along with recent alerts for those devices, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+- Once integration is enabled, your security operations team can see a list of devices that are used by the recipients of any detected URLs or email messages, along with recent alerts for those devices, in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
-If you haven't already done so, [integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp).
+If you haven't already done so, [integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-mde).
 
 ## More good reasons to use OneDrive
 

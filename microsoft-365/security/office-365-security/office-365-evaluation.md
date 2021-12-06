@@ -4,20 +4,22 @@ description: Defender for Office 365 in evaluation mode creates Defender for O
 keywords: evaluate Office 365, Microsoft Defender for Office 365, office 365 evaluation, try office 365, Microsoft Defender, Microsoft Defender for Endpoint
 f1.keywords:
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: 04/21/2021
 audience: ITPro
 ms.topic: article
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
   - MET150
   - MOE150
 ms.collection:
   - M365-security-compliance
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -36,17 +38,17 @@ The [Microsoft Defender for Office 365](defender-for-office-365.md) evaluation e
 If you don't already have a license that supports Microsoft Defender for Office 365, you can start a [free 30-day evaluation](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA) and test the capabilities in the Microsoft 365 Defender portal at <https://security.microsoft.com>. You'll enjoy the quick set-up and you can easily turn it off if necessary.
 
 > [!NOTE]
-> If you're in the Microsoft 365 Defender portal (<https://security.microsoft.com>), you can start a Defender for Office 365 evaluation here: **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Evaluation mode** in the **Others** section.
+> If you're in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, you can start a Defender for Office 365 evaluation here: **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Evaluation mode** in the **Others** section.
 
 ## How the evaluation works
 
 Defender for Office 365 in evaluation mode creates Defender for Office 365 email policies that log verdicts, such as malware, but don't act on messages. You are not required to change your MX record configuration.
 
-With evaluation mode, [Safe Attachments](safe-attachments.md), [Safe Links](safe-links.md), and [mailbox intelligence based impersonation policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) are set up on your behalf. All Defender for Office 365 policies is created in non-enforcement mode in the background and are not visible to you.
+With evaluation mode, [Safe Attachments](safe-attachments.md), [Safe Links](safe-links.md), and [mailbox intelligence in anti-pishing policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) are set up on your behalf. All Defender for Office 365 policies is created in non-enforcement mode in the background and are not visible to you.
 
-As part of the setup, evaluation mode also configures [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). It improves filtering accuracy by preserving IP address and sender information, which are otherwise lost when mail passes through an email security gateway (ESG) in front of Defender for Office 365. Enhanced Filtering for Connectors also improves the filtering accuracy for your existing Exchange Online Protection (EOP) anti-spam and anti-phishing policies.
+As part of the setup, evaluation mode also configures [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (also known as _skip listing_). It improves filtering accuracy by preserving IP address and sender information, which are otherwise lost when mail passes through an email security gateway (ESG) in front of Defender for Office 365. Enhanced Filtering for Connectors also improves the filtering accuracy for your existing Exchange Online Protection (EOP) anti-spam and anti-phishing policies.
 
-Enhanced Filtering for Connectors improves filtering accuracy but may alter deliverability for certain messages if you have an ESG in front of Defender for Office 365, and currently do not bypass EOP filtering. The impact is limited to EOP policies; Defender for Office 365 policies set up as part of the evaluation are created in non-enforcement mode. To minimize potential production impact, you can bypass all EOP filtering by creating a mail flow rule (also known as a transport rule) to set the spam confidence level (SCL) of messages to -1. See [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl) for details.
+Enhanced Filtering for Connectors improves filtering accuracy but may alter deliverability for certain messages if you have an ESG in front of Defender for Office 365, and currently do not bypass EOP filtering. The impact is limited to EOP policies; Defender for Office 365 policies set up as part of the evaluation are created in non-enforcement mode. To minimize potential production impact, you can bypass most EOP filtering by creating a mail flow rule (also known as a transport rule) to set the spam confidence level (SCL) of messages to -1. See [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl) for details.
 
 When the evaluation mode is set up, you will have a report updated daily with up to 90 days of data quantifying the messages that would have been blocked if the policies were implemented (for example, delete, send to junk, quarantine). Reports are generated for all Defender for Office 365 and EOP detections. They are aggregated per detection technology (for example, impersonation) and can be filtered by time range. Additionally, message reports can be created on-demand to create custom pivots or to deep dive messages using Explorer.
 
@@ -87,6 +89,10 @@ You'll have a 30-day window with the evaluation to monitor and report on advance
 
 The following roles are needed:
 
+<br>
+
+****
+
 |Task|Role (in Exchange Online)|
 |---|---|
 |Get a free trial or buy Microsoft Defender for Office 365 (Plan 2)|Billing admin role OR Global admin role|
@@ -96,11 +102,11 @@ The following roles are needed:
 |View evaluation report|Security admin role OR Security reader role|
 |
 
-### Enhanced filtering
+### Enhanced Filtering for Connectors
 
-Your Exchange Online Protection policies, such as bulk and spam protection, will remain the same. However, the evaluation turns on enhanced filtering for connectors, which may impact your mail flow and Exchange Online Protection policies unless bypassed.
+Your Exchange Online Protection policies, such as bulk and spam protection, will remain the same. However, the evaluation turns on Enhanced Filtering for Connectors, which may impact your mail flow and Exchange Online Protection policies unless bypassed.
 
-Enhanced filtering for connectors allows tenants to use anti-spoofing protection. Anti-spoofing is not supported if you're using an email security gateway (ESG) without having turned on Enhanced filtering for connectors.
+Enhanced Filtering for Connectors allows tenants to use anti-spoofing protection. Anti-spoofing is not supported if you're using an email security gateway (ESG) without having turned on Enhanced Filtering for Connectors.
 
 ### URLs
 
@@ -137,7 +143,7 @@ You will be able to scope the evaluation to an inbound connector. If there's no 
 
 ## Get started with the evaluation
 
-Find the Microsoft Defender for Office 365 evaluation set-up card in the Microsoft 365 Defender portal (<https://security.microsoft.com>) from three access points:
+Find the Microsoft Defender for Office 365 evaluation set-up card in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> from three access points:
 
 - **Endpoints** \> **Vulnerability Management** \> **Dashboard** (<https://security.microsoft.com/tvm_dashboard>)
 - **Email & collaboration** \> **Policies & rules** \> **Threat policies** (<https://security.microsoft.com/threatpolicy>)

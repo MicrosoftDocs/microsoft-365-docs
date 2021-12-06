@@ -12,7 +12,7 @@ ms.collection:
   - Ent_O365
   - Strat_O365_Enterprise
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
   - MET150
 ms.custom: seo-marvel-apr2020

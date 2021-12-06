@@ -2,17 +2,16 @@
 title: Enable block at first sight to detect malware in seconds
 description: Turn on the block at first sight feature to detect and block malware within seconds.
 keywords: scan, block at first sight, malware, first sight, cloud, defender, antivirus
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Priority
+ms.localizationpriority: high
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 07/29/2021
+ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
@@ -22,7 +21,8 @@ ms.collection: M365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 This article describes an antivirus/antimalware feature known as "block at first sight", and describes how to enable block at first sight for your organization.
 
@@ -101,7 +101,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 
    - **Turn on cloud-delivered protection**: Yes
    - **Cloud-delivered protection level**: High
-   - **Defender Cloud Extended Timeout in Seconds**: 50
+   - **Microsoft Defender Antivirus Extended Timeout in Seconds**: 50
 
    :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Block at first sight settings in Endpoint Manager.":::
 
@@ -169,7 +169,7 @@ You might choose to disable block at first sight if you want to retain the prere
 
    - Set **Turn on cloud-delivered protection** to **No** or **Not configured**.
    - Set **Cloud-delivered protection level** to **Not configured**.
-   - Clear the check box for **Defender Cloud Extended Timeout In Seconds**.
+   - Clear the check box for **Microsoft Defender Antivirus Extended Timeout In Seconds**.
 
 6. Review and save your settings.
 
@@ -194,7 +194,7 @@ If you are not an enterprise admin or an IT Pro, but you have questions about bl
 
 If you have a personal device that is not managed by an organization, you might be wondering how to turn block at first sight on or off. You can use the Windows Security app to manage block at first sight.
 
-1. On your Windows 10 computer, open the Windows Security app.
+1. On your Windows 10 or Windows 11 computer, open the Windows Security app.
 
 2. Select **Virus & threat protection**.
 

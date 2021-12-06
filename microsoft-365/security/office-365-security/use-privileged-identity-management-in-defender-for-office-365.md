@@ -1,5 +1,5 @@
 ---
-title: Use Privileged Identity Management (PIM) in Microsoft Defender for Office 365.
+title: Use Azure Privileged Identity Management (PIM) in Microsoft Defender for Office 365 to limit admin access to cyber security tools.
 f1.keywords:
   - NOCSH
 ms.author: tracyp
@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 09/03/2021
 audience: ITPro
 ms.topic: article
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
   - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
@@ -17,7 +17,8 @@ ms.collection:
   - m365initiative-defender-office365
 ms.custom:
   - seo-marvel-apr2020
-description: Learn to integrate PIM in order to grant just-in-time, time limited access to users to do elevated privilege tasks in Microsoft Defender for Office 365, lowering risk to your data.
+  - admindeeplinkDEFENDER
+description: Learn to integrate Azure PIM in order to grant just-in-time, time limited access to users to do elevated privilege tasks in Microsoft Defender for Office 365, lowering risk to your data.
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -62,7 +63,7 @@ Using [Privileged Access groups](/azure/active-directory/privileged-identity-man
 
 In the Security Portal, create a custom role group that contains the permissions that we want.
 
-1. Browse to Microsoft 365 Defender portal (https://security.microsoft.com) > **Permissions & Roles** > select **Roles** under Email and Collaboration > **Create**.
+1. Browse to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> > **Permissions & Roles** > select **Roles** under Email and Collaboration > **Create**.
 2. Name your group to reflect its purpose such as 'Search and Purge PIM'.
 3. Don't add members, simply save the group and move on to the next part!
 
