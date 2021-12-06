@@ -40,7 +40,7 @@ With Defender for Business, you can help protect the devices and data your busin
 - **Integration with Microsoft 365 Lighthouse**. If you're a Managed Service Provider (MSP) using [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), more capabilities are available. During preview, integration with Defender for Business provides MSPs with a view of security incidents and alerts across customers who are onboarded to Microsoft 365 Lighthouse.
 
 > [!TIP]
-> If you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).
+> If you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview). To learn more, see [Get Microsoft Defender for Business](get-defender-business.md).
 
 ## How to use this guide
 
