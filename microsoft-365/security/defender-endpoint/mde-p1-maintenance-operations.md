@@ -43,7 +43,7 @@ To manage your security intelligence and product updates, see [Manage Microsoft 
 
 Defender for Endpoint offers you much flexibility and configuration options. You can adjust and fine-tune your settings to suit your organization’s needs. For example, you can use Microsoft Endpoint Manager, Group Policy, and other methods to manage your endpoint security settings. 
 
-To learn more, see [Manage Defender for Endpoint](manage-atp-post-migration.md).
+To learn more, see [Manage Defender for Endpoint](manage-mde-post-migration.md).
 
 ## Address false positives/negatives
 
@@ -55,4 +55,4 @@ If you’re seeing false positives/negatives in Defender for Endpoint, see [Addr
 
 ## Next steps
 
-- [See what's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-atp.md)
+- [See what's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-endpoint.md)
