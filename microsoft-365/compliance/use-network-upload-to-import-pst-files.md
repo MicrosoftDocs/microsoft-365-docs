@@ -86,7 +86,7 @@ You have to perform Step 1 only once to import PST files to Microsoft 365 mailbo
 
 ## Step 1: Copy the SAS URL and install AzCopy
 
-The first step is to download and install the AzCopy tool, which is the tool that you run in Step 2 to upload PST files to Microsoft 365. You also copy the SAS URL for your organization. This URL is a combination of the network URL for the Azure Storage location in the Microsoft cloud for your organization and a Shared Access Signature (SAS) key. This key provides you with the necessary permissions to upload PST files to your Azure Storage location. Be sure to take precautions to protect the SAS URL. It's unique to your organization and will be used in Step 2.
+The first step is to download the AzCopy tool, which is the tool that you run in Step 2 to upload PST files to Microsoft 365. You also copy the SAS URL for your organization. This URL is a combination of the network URL for the Azure Storage location in the Microsoft cloud for your organization and a Shared Access Signature (SAS) key. This key provides you with the necessary permissions to upload PST files to an Azure Storage location. Be sure to take precautions to protect the SAS URL. It's unique to your organization and will be used in Step 2.
 
 > [!IMPORTANT]
 > To import PST files using the network upload method and command syntax documented in this article, you must use the version of AzCopy that can be downloaded in step 6b in the following procedure. You can also download that same version of AzCopy from [here](https://aka.ms/downloadazcopylatest). Using a different version of AzCopy isn't supported.
@@ -114,50 +114,50 @@ The first step is to download and install the AzCopy tool, which is the tool tha
   
     1. In step 2, click **Show network upload SAS URL**. After the SAS URL is displayed, click **Copy to clipboard** and then paste it and save it to a file so you can access it later.
 
-    2. In step 3, click **Download Azure AzCopy** to download and install the AzCopy tool. In the pop-up window, click **Run** to install AzCopy.
+    2. In step 3, click **Download Azure AzCopy** to download the AzCopy tool to your local computer. This version of AzCopy is just an executable file, so there's nothing to install.
 
    > [!NOTE]
    > You can leave the **Import data** page open (in case you need to copy the SAS URL again) or click **Cancel** to close it.
 
 ## Step 2: Upload your PST files to Microsoft 365
 
-Now you're ready to use the AzCopy.exe tool to upload PST files to Microsoft 365. This tool uploads and stores PST files in an Azure Storage location in the Microsoft cloud. As previously explained, the Azure Storage location that you upload your PST files to is located in the same regional Microsoft datacenter where your organization is located. To complete this step, the PST files have to be located in a file share or file server in your organization. This is known as the source directory in this procedure. Each time you run the AzCopy tool, you can specify a different source directory.
+Now you're ready to use the AzCopy tool to upload PST files to Microsoft 365. This tool uploads and stores PST files in a Microsoft-provided Azure Storage location in the Microsoft cloud. As previously explained, the Azure Storage location that you upload your PST files to is located in the same regional Microsoft datacenter where your organization is located. To complete this step, the PST files have to be located in a file share or file server in your organization or in an Azure Storage location managed by your organization. The PST storage location is known as the source location in this procedure. Each time you run the AzCopy tool, you can specify a different source location.
 
 > [!NOTE]
 > As previously stated, each PST file that you upload to the Azure Storage location should be no larger than 20 GB. PST files larger than 20 GB may impact the performance of the PST import process that you start in Step 6. Also, each PST file must have a unique name.
 
 1. Open a Command Prompt on your local computer.
 
-2. Go to the directory where you installed the AzCopy.exe tool in Step 1. If you installed the tool in the default location, go to `%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy`.
+2. Go to the directory where you downloaded the azcopy.exe file in Step 1.
 
 3. Run the following command to upload the PST files to Microsoft 365.
 
     ```powershell
-    AzCopy.exe copy "<Source location of PST files>" "<SAS URL>"
+    azcopy.exe copy "<Source location of PST files>" "<SAS URL>"
     ```
 
     > [!IMPORTANT]
     > You can specify a directory or an Azure Storage location as the source location in the previous command; you can't specify an individual PST file. All PST files in the source location will be uploaded.
 
-    The following table describes the AzCopy.exe fields and their required values. The information you obtained in the previous step is used in the values for these fields.
+    The following table describes the azcopy.exe fields and their required values. The information you obtained in the previous step is used in the values for these fields.
 
     | Field | Description | Example |
     |:-----|:-----|:-----|
     | Source |The first field specifies the source directory in your organization that contains the PST files that will be uploaded to Microsoft 365. Alternatively, you can specify an Azure Storage location as the source location of the PST files to upload. <br/> Be sure to surround the value of this field with double-quotation marks (" ").  <br/> | `"\\FILESERVER01\PSTs"` <br/> Or  <br/>`"https://storageaccountid.blob.core.windows.net/PSTs?sp=racwdl&st=2021-09-21T07:25:53Z&se=2021-09-21T15:25:53Z&sv=2020-08-04&sr=c&sig=xxxxxx"` |
-    | Destination |Specifies the SAS URL that you obtained in Step 1.  <br/> Be sure to surround the value of this parameter with double-quotation marks (" ").<br/><br/>**Note:** If you use the SAS URL in a script or batch file, watch out for certain characters that need to be escaped. For example, you have to change `%` to `%%` and change `&` to `^&`.<br/><br/>**Tip:** (Optional) You can specify a subfolder in the Azure Storage location to upload the PST files to. You do this by adding a subfolder location (after "ingestiondata") in the SAS URL. The first example doesn't specify a subfolder. That means the PSTs are uploaded to the root (named *ingestiondata*) of the Azure Storage location. The second example uploads the PST files to a subfolder (named  *PSTFiles*) in the root of the Azure Storage location.  <br/> | `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?</br>sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> Or  <br/>  `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?</br>sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
+    | Destination |Specifies the SAS URL that you obtained in Step 1.  <br/> Be sure to surround the value of this parameter with double-quotation marks (" ").<br/><br/>**Note:** If you use the SAS URL in a script or batch file, watch out for certain characters that need to be escaped. For example, you have to change `%` to `%%` and change `&` to `^&`.<br/><br/>**Tip:** (Optional) You can specify a subfolder in the Azure Storage location to upload the PST files to. You do this by adding a subfolder location (after "ingestiondata") in the SAS URL. The first example doesn't specify a subfolder. That means the PSTs are uploaded to the root (named *ingestiondata*) of the Azure Storage location. The second example uploads the PST files to a subfolder (named  *PSTFiles*) in the root of the Azure Storage location.  <br/> | `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> Or  <br/>  `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
     | `--recursive` |This optional flag specifies the recursive mode so that the AzCopy tool copies PSTs files that are located in subfolders in the source directory that is specified by the source field. The default value for this flag is `true`. <br/>**Note:** If you include this flag, PST files in subfolders will have a different file pathname in the Azure Storage location after they're uploaded. You'll have to specify the exact file pathname in the CSV file that you create in Step 4.|`--recursive`  |
     |`--s2s-preserve-access-tier` | This optional flag is only required when the source location is a general-purpose v2 Azure Storage location that supports access tiers. For the PST Import scenario, there is no need to preserve the access tier when you copy PST files from your Azure Storage account to the Microsoft-provided Azure Storage location. In this case, you can include this flag and use a value of `false`. You don't need to use this flag when copy PST files from a classic Azure Storage account, which doesn't support access tiers.|`--s2s-preserve-access-tier=false` |
 
-For more information about the **AzCopy.exe copy** command, see [azcopy copy](/azure/storage/common/storage-ref-azcopy-copy).
+For more information about the **azcopy.exe copy** command, see [azcopy copy](/azure/storage/common/storage-ref-azcopy-copy).
 
-Here's are examples of the syntax for the AzCopy.exe tool using actual values for each parameter.
+Here's are examples of the syntax for the AzCopy tool using actual values for each parameter.
 
 ### Example 1
 
 This is an example for a source directory located on file server or local computer.
 
 ```powershell
-AzCopy.exe copy "\\FILESERVER1\PSTs" "https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"
+azcopy.exe copy "\\FILESERVER1\PSTs" "https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"
 ```
 
 ### Example 2
@@ -165,7 +165,7 @@ AzCopy.exe copy "\\FILESERVER1\PSTs" "https://3c3e5952a2764023ad14984.blob.core.
 This is an example for a source directory located in a classic Azure Storage account with subdirectories.
 
 ```powershell
-AzCopy.exe copy "https://storageaccountid.blob.core.windows.net/PSTs?sp=racwdl&st=2021-09-21T07:25:53Z&se=2021-09-21T15:25:53Z&sv=2020-08-04&sr=c&sig=xxxxxx" "https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" --recursive
+azcopy.exe copy "https://storageaccountid.blob.core.windows.net/PSTs?sp=racwdl&st=2021-09-21T07:25:53Z&se=2021-09-21T15:25:53Z&sv=2020-08-04&sr=c&sig=xxxxxx" "https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" --recursive
 ```
 
 ### Example 3
@@ -173,13 +173,13 @@ AzCopy.exe copy "https://storageaccountid.blob.core.windows.net/PSTs?sp=racwdl&s
 This is an example for a source directory located in a general-purpose v2 Azure Storage account. Access tiers aren't preserved when the PST files are uploaded.
 
 ```powershell
-AzCopy.exe copy "https://storageaccountid.blob.core.windows.net/PSTs?sp=racwdl&st=2021-09-21T07:25:53Z&se=2021-09-21T15:25:53Z&sv=2020-08-04&sr=c&sig=xxxxxx" "https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" --s2s-preserve-access-tier=false
+azcopy.exe copy "https://storageaccountid.blob.core.windows.net/PSTs?sp=racwdl&st=2021-09-21T07:25:53Z&se=2021-09-21T15:25:53Z&sv=2020-08-04&sr=c&sig=xxxxxx" "https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" --s2s-preserve-access-tier=false
 ```
 
 After you run the command, status messages are displayed that show the progress of uploading the PST files. A final status message shows the total number of files that were successfully uploaded.
 
 > [!TIP]
-> After you successfully run the **AzCopy.exe copy** command and verify that all the parameters are correct, save a copy of the command line syntax to the same (secured) file where you copied the information you obtained in Step 1. Then you can copy and paste this command in a Command Prompt each time that you want to run the AzCopy tool to upload PST files to Microsoft 365. The only value you might have to change is for the source field. This depends on the source directory where the PST files are located.
+> After you successfully run the **azcopy.exe copy** command and verify that all the parameters are correct, save a copy of the command line syntax to the same (secured) file where you copied the information you obtained in Step 1. Then you can copy and paste this command in a Command Prompt each time that you want to run the AzCopy tool to upload PST files to Microsoft 365. The only value you might have to change is for the source field. This depends on the source directory where the PST files are located.
 
 ## (Optional) Step 3: View a list of the PST files uploaded to Microsoft 365
 
@@ -364,7 +364,7 @@ Here's an illustration and description of the network upload process to import P
   
 1. **Download the PST import tool and key to private Azure Storage location:** The first step is to download the AzCopy command-line tool and an access key used to upload the PST files to an Azure Storage location in the Microsoft cloud. You obtain these from the **Import** page in the Microsoft 365 compliance center. The key (called a secure access signature (SAS) key, provides you with the necessary permissions to upload PST files to a private and secure Azure Storage location. This access key is unique to your organization and helps prevent unauthorized access to your PST files after they're uploaded to the Microsoft cloud. Importing PST files doesn't require your organization to have a separate Azure subscription. 
 
-2. **Upload the PST files to the Azure Storage location:** The next step is to use the AzCopy.exe tool (downloaded in step 1) to upload and store your PST files in an Azure Storage location that resides in the same regional Microsoft datacenter where your organization is located. To upload them, the PST files that you want to import have to be located in a file share or file server in your organization.
+2. **Upload the PST files to the Azure Storage location:** The next step is to use the azcopy.exe tool (downloaded in step 1) to upload and store your PST files in an Azure Storage location that resides in the same regional Microsoft datacenter where your organization is located. To upload them, the PST files that you want to import have to be located in a file share or file server in your organization.
 
     There's an optional step that you can perform to view the list of PST files after they're uploaded to the Azure Storage location.
 
