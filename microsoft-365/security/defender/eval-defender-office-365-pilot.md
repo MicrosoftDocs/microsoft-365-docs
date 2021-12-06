@@ -36,7 +36,7 @@ Use the following steps to setup and configure the pilot for Microsoft Defender 
 
 - [Step 1: Create pilot groups](#step-1-create-pilot-groups)
 - [Step 2: Configure protection](#step-2-configure-protection)
-- [Step 3: Try out capabilities — Get familiar with simulation, monitoring, and metrics](#step-3-try-out-capabilities--get-familiar-with-simulation-monitoring-and-metrics)
+- [Step 3: Try out capabilities — Get familiar with simulation, monitoring, and metrics](#step-3-try-out-capabilitiesget-familiar-with-simulation-monitoring-and-metrics)
 
 When you evaluate Microsoft Defender for Office 365, you may choose to pilot specific users before enabling and enforcing policies for your entire organization. Creating distribution groups can help manage the deployment processes. For example, create groups such as *Defender for Office 365 Users - Standard Protection*, *Defender for Office 365 Users - Strict Protection*, *Defender for Office 365 Users - Custom Protection*, or *Defender for Office 365 Users - Exceptions*.
 
