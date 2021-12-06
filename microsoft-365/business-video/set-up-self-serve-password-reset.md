@@ -8,13 +8,14 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- admindeeplinkMAC
 monikerRange: 'o365-worldwide'
 search.appverid:
 - BCS160
@@ -31,7 +32,7 @@ To let your users reset their own passwords without having to contact you each t
 
 ## Try it!
 
-1. In the Microsoft 365 admin center, in the left navigation pane, select **Settings** and then **Security & privacy**.
+1. In the Microsoft 365 admin center, in the left navigation pane, select **Settings** > **Org settings**, and then <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Security & privacy**</a>.
 1. Under **Let your people reset their own passwords**, select**Azure AD admin center**.
 1. In the left navigation pane, select **Users**, and then on the **Users - all users** page, select **Password reset**.
 1. Select **All** to enable self-service password reset, and then select **Save**.

@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_Enterprise
 - M365-subscription-management
@@ -58,7 +58,7 @@ Conditional Access policies are if-then statements for granting access to resour
 - Device information
 - Application information
 - Real-time and calculated risk detection
-- Microsoft Cloud App Security (MCAS)
+- Microsoft Defender for Cloud Apps
 
 When making these access decisions, the policies can take different actions:
 

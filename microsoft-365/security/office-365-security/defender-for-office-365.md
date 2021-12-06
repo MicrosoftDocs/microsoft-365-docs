@@ -1,6 +1,5 @@
 ---
 title: Microsoft Defender for Office 365
-f1.keywords:
   - CSH
 ms.author: tracyp
 author: msfttracyp
@@ -9,7 +8,7 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
   - MET150
   - MOE150
@@ -19,6 +18,7 @@ ms.collection:
   - m365initiative-defender-office365
 ms.custom:
   - seo-marvel-apr2020
+  - admindeeplinkDEFENDER
 description: Microsoft Defender for Office 365 includes Safe Attachments, Safe Links, advanced anti-phishing tools, reporting tools and threat intelligence capabilities.
 ms.technology: mdo
 ms.prod: m365-security
@@ -45,6 +45,7 @@ Microsoft Defender for Office 365 safeguards your organization against malicious
 - **[Automated investigation and response capabilities](office-365-air.md)**: Save time and effort investigating and mitigating threats.
 
 ## Interactive guide to Microsoft Defender for Office 365
+
 In this interactive guide you'll learn how to safeguard your organization with Microsoft Defender for Office 365. You'll see how Defender for Office 365 can help you define protection policies, analyze threats to your organization, and respond to attacks.
 
 [Check out the interactive guide](https://aka.ms/MSDO-IG)
@@ -61,7 +62,7 @@ If you're new to Microsoft Defender for Office 365 or learn best by *doing*, you
   - Safe Links
   - Safe Attachments
 - Defend the workloads (ex. SharePoint Online, OneDrive, and Teams)
-- Protect with Zero-Hour auto purge
+- Protect with zero-hour auto purge (ZAP).
 
 To learn by doing, [click this link](protect-against-threats.md).
 
@@ -76,7 +77,7 @@ The following table summarizes what's included in each plan.
 
 |Microsoft Defender for Office 365 Plan 1|Microsoft Defender for Office 365 Plan 2|
 |---|---|
-|Configuration, protection, and detection capabilities: <ul><li>[Safe Attachments](safe-attachments.md)</li><li>[Safe Links](safe-links.md)</li><li>[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Anti-phishing in Defender for Office 365 protection](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Real-time detections](threat-explorer.md)</li></ul>|Microsoft Defender for Office 365 Plan 1 capabilities <br>--- plus ---<br> Automation, investigation, remediation, and education capabilities:<ul><li>[Threat Trackers](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Automated investigation and response](office-365-air.md)</li><li>[Attack Simulator](attack-simulator.md)</li><li>[Campaign Views](campaigns.md)</li></ul>|
+|Configuration, protection, and detection capabilities: <ul><li>[Safe Attachments](safe-attachments.md)</li><li>[Safe Links](safe-links.md)</li><li>[Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li><li>[Anti-phishing in Defender for Office 365 protection](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Real-time detections](threat-explorer.md)</li></ul>|Microsoft Defender for Office 365 Plan 1 capabilities <br>--- plus ---<br> Automation, investigation, remediation, and education capabilities:<ul><li>[Threat Trackers](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer.md)</li><li>[Automated investigation and response](office-365-air.md)</li><li>[Attack simulation training](attack-simulation-training.md)</li><li>[Campaign Views](campaigns.md)</li></ul>|
 |
 
 - Microsoft Defender for Office 365 Plan 2 is included in Office 365 E5, Office 365 A5, Microsoft 365 E5 Security, and Microsoft 365 E5.
@@ -91,7 +92,7 @@ The following table summarizes what's included in each plan.
 
 ## Configure Microsoft Defender for Office 365 policies
 
-With Microsoft Defender for Office 365, your organization's security team can configure protection by defining policies in the Microsoft 365 Defender portal (go to <https://security.microsoft.com> \> **Email & collaboration** \> **Policies and rules**).
+With Microsoft Defender for Office 365, your organization's security team can configure protection by defining policies in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> \> **Email & collaboration** \> **Policies & rules** \> **Threat policies**).
 
 Learn more by watching [this video](https://www.youtube.com/watch?v=vivvTmWJ_3c).
 
@@ -112,7 +113,7 @@ The policies that are defined for your organization determine the behavior and p
 
 ## View Microsoft Defender for Office 365 reports
 
-Microsoft Defender for Office 365 includes [reports](view-reports-for-mdo.md) to monitor Defender for Office 365. You can access the reports in the Microsoft 365 Defender portal at **Reports** \> **Email & collaboration** \> **Email & collaboration reports** or directly at <https://security.microsoft.com/securityreports>.
+Microsoft Defender for Office 365 includes [reports](view-reports-for-mdo.md) to monitor Defender for Office 365. You can access the reports in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> at **Reports** \> **Email & collaboration** \> **Email & collaboration reports** or directly at <https://security.microsoft.com/securityreports>.
 
 Reports update in real-time, providing you with the latest insights. These reports also provide recommendations and alert you to imminent threats. Predefined reports include the following:
 
@@ -128,7 +129,7 @@ Microsoft Defender for Office 365 Plan 2 includes best-of-class [threat investig
 
 - **[Threat Explorer (or real-time detections)](threat-explorer.md)** (also referred to as Explorer) is a real-time report that allows you to identify and analyze recent threats. You can configure Explorer to show data for custom periods.
 
-- **[Attack Simulator](attack-simulator.md)** allows you to run realistic attack scenarios in your organization to identify vulnerabilities. Simulations of current types of attacks are available, including spear phishing credential harvest and attachment attacks, and password spray and brute force password attacks.
+- **[Attack simulation training](attack-simulation-training.md)** allows you to run realistic attack scenarios in your organization to identify vulnerabilities. Simulations of current types of attacks are available, including spear phishing credential harvest and attachment attacks, and password spray and brute force password attacks.
 
 ## Save time with automated investigation and response
 
@@ -173,5 +174,4 @@ New features are added to Microsoft Defender for Office 365 continually. To lear
 ## See also
 
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
 - [Automated investigation and response (AIR) in Microsoft 365 Defender](../defender/m365d-autoir.md)

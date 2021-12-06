@@ -1,13 +1,13 @@
 ---
 title: "Connect to all Microsoft 365 services in a single PowerShell window"
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: laurawi
-ms.date: 02/02/2021
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
+ms.date: 11/23/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -231,10 +231,10 @@ Connect-MicrosoftTeams
 
 ## Close the PowerShell window
 
-To close down the PowerShell window, run this command to remove the active sessions to Skype for Business Online, SharePoint Online, and Teams:
+To close down the PowerShell window, run this command to remove the active sessions to SharePoint Online and Teams:
   
 ```powershell
-Remove-PSSession $sfboSession ; Disconnect-SPOService ; Disconnect-MicrosoftTeams 
+Disconnect-SPOService ; Disconnect-MicrosoftTeams 
 ```
 
 ## See also

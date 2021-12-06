@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -29,7 +29,7 @@ A single tenant provides the most feature-rich and simplified collaboration and 
 
 Here is an example showing the default location and Azure AD tenant of a Microsoft 365 tenant.
 
-![A single Microsoft 365 tenant with its Azure AD tenant](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![A single Microsoft 365 tenant with its Azure AD tenant.](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
 ## Multiple tenants
 
@@ -44,7 +44,7 @@ There are many reasons why your organization could have multiple tenants:
 
 Here is an example of an organization that has two tenants (Tenant A and Tenant B) in the same default datacenter geo. Each tenant as a separate Azure AD tenant.
 
-![Multiple Microsoft 365 tenants with their own Azure AD tenants](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
+![Multiple Microsoft 365 tenants with their own Azure AD tenants.](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
 
 When you have multiple tenants, there are restrictions and additional considerations when managing them and providing services to your users.
 
@@ -60,13 +60,13 @@ Prior to cross-tenant mailbox migration (in preview), when moving Exchange Onlin
 
 Here are two example tenants and their mailboxes before cross-tenant mailbox migration.
 
-![Multiple Microsoft 365 tenants and their mailboxes](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-before.png)
+![Multiple Microsoft 365 tenants and their mailboxes.](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-before.png)
 
 In this illustration, two separate tenants have their own domains and set of Exchange mailboxes.
 
 Here is the target tenant (Tenant A) after cross-tenant mailbox migration.
 
-![The target tenant after cross-tenant mailbox migration](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-after.png)
+![The target tenant after cross-tenant mailbox migration.](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-after.png)
 
 In this illustration, a single tenant has both domains and both sets of Exchange mailboxes.
 
@@ -86,7 +86,7 @@ In a Multi-Geo environment, your Microsoft 365 tenant consists of a default or c
 
 Here is an example of an organization that has its default location in Europe and a satellite location in North America. Both locations share the same global Azure AD tenant for the single Microsoft 365 tenant.
 
-![Example of a multi-geo Microsoft 365 tenant](../media/tenant-management-overview/tenant-management-example-multi-geo.png)
+![Example of a multi-geo Microsoft 365 tenant.](../media/tenant-management-overview/tenant-management-example-multi-geo.png)
 
 For more information, see [Microsoft 365 Multi-Geo](../enterprise/microsoft-365-multi-geo.md).
 
@@ -98,7 +98,7 @@ Although opening a new datacenter geo does not impact you and your core data sto
 
 Here is an example in which a Microsoft 365 tenant was moved from the European Union (EU) datacenter geo to the one located in the United Kingdom (UK).
 
-![Example of moving a Microsoft 365 tenant between datacenter geos](../media/tenant-management-overview/tenant-management-example-tenant-move.png)
+![Example of moving a Microsoft 365 tenant between datacenter geos.](../media/tenant-management-overview/tenant-management-example-tenant-move.png)
 
 For more information, see [Moving core data to new Microsoft 365 datacenter geos](../enterprise/moving-data-to-new-datacenter-geos.md).
 
@@ -125,7 +125,7 @@ For your Microsoft 365 for enterprise tenants, you have determined:
 
 Here is an example of a new tenant.
 
-![Example of a new tenant](../media/tenant-management-overview/tenant-management-tenant-build-step1.png)
+![Example of a new tenant.](../media/tenant-management-overview/tenant-management-tenant-build-step1.png)
 
 In this illustration, the tenant has:
 
@@ -149,6 +149,6 @@ On an ongoing basis, you might need to:
 
 ## Next step
 
-[![Step 2. Optimize your tenant for network for access](../media/tenant-management-overview/tenant-management-step-grid-networking.png)](tenant-management-networking.md)
+[![Step 2. Optimize your tenant for network for access.](../media/tenant-management-overview/tenant-management-step-grid-networking.png)](tenant-management-networking.md)
 
 Continue with [networking](tenant-management-networking.md) to provide optimal networking from your workers to Microsoft 365 cloud services.

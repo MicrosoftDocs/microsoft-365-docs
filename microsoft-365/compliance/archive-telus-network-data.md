@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: "Admins can set up a TeleMessage connector to import and archive SMS data from the TELUS Network in Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
@@ -24,7 +24,7 @@ After SMS messages are stored in user mailboxes, you can apply Microsoft 365 com
 
 The following overview explains the process of using a connector to archive TELUS Network data in Microsoft 365.
 
-![TELUS Network archiving workflow](../media/TelusNetworkConnectorWorkflow.png)
+![TELUS Network archiving workflow.](../media/TelusNetworkConnectorWorkflow.png)
 
 1. Your organization works with TeleMessage and TELUS to set up a TELUS Network connector. For more information, see [TELUS Network Archiver](https://www.telemessage.com/office365-activation-for-telus-network-archiver/).
 

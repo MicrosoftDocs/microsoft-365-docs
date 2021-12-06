@@ -2,32 +2,30 @@
 title: Configure attack surface reduction capabilities
 description: Use Microsoft Intune, Microsoft Endpoint Configuration Manager, PowerShell cmdlets, and Group Policy to configure attack surface reduction.
 keywords: asr, attack surface reduction, windows defender, microsoft defender, antivirus, av
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
-localization_priority: Normal
+author: jweston-1
+ms.author: v-jweston
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 06/02/2021
+ms.date: 10/14/2021
 ---
 
 # Configure attack surface reduction capabilities
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
-> Want to experience Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink).
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 Defender for Endpoint includes several attack surface reduction capabilities. To learn more, see [Overview of attack surface reduction capabilities](overview-attack-surface-reduction.md). To configure attack surface reduction in your environment, follow these steps:
 
@@ -55,7 +53,7 @@ Defender for Endpoint includes several attack surface reduction capabilities. To
 
 > [!TIP]
 > In most cases, when you configure attack surface reduction capabilities, you can choose from among several methods:
-
+>
 > - Microsoft Endpoint Manager (which now includes Microsoft Intune and Microsoft Endpoint Configuration Manager)
 > - Group Policy
 > - PowerShell cmdlets
