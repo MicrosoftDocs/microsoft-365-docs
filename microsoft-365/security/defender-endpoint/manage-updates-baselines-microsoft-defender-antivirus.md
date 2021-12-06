@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 11/08/2021
+ms.date: 12/02/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -136,7 +136,6 @@ No known issues
 - Released new [performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 - Microsoft Defender Antivirus hardened against loading malicious DLLs
 - Microsoft Defender Antivirus hardened against the TrustedInstaller bypass
-- Added support for configuring per-rule [attack surface reduction rule exclusions](customize-attack-surface-reduction.md)
 - Extending file change notifications to include more data for Human-Operated Ransomware (HumOR)
 
 ### Known Issues
