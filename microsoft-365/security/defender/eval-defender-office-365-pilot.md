@@ -40,7 +40,7 @@ Use the following steps to setup and configure the pilot for Microsoft Defender 
 
 When you evaluate Microsoft Defender for Office 365, you may choose to pilot specific users before enabling and enforcing policies for your entire organization. Creating distribution groups can help manage the deployment processes. For example, create groups such as *Defender for Office 365 Users - Standard Protection*, *Defender for Office 365 Users - Strict Protection*, *Defender for Office 365 Users - Custom Protection*, or *Defender for Office 365 Users - Exceptions*.
 
-It may not be evident why 'Standard' and 'Strict' are the terms used for this, but that will become clear when you explore more about Defender for Office 365 security presets. Naming groups 'custom' and 'exceptions' speak for themselves, and though most of your users should fall under *standard* and *strict*, custom and exception groups will collect valuable data for you regarding managing risk.
+It may not be evident why 'Standard' and 'Strict' are the terms used for these groups, but that will become clear when you explore more about Defender for Office 365 security presets. Naming groups 'custom' and 'exceptions' speak for themselves, and though most of your users should fall under *standard* and *strict*, custom and exception groups will collect valuable data for you regarding managing risk.
 
 ## Step 1: Create pilot groups
 
@@ -69,9 +69,9 @@ Some capabilities in Defender for Office 365 are configured and turned on by def
 
 Some capabilities are *not yet* configured. You have three options for configuring protection:
 
-- **Assign preset security policies automatically** — [Preset security policies](../office-365-security/preset-security-policies.md) are provided as a method to quickly assign a uniform level of protection across all of the capabilities. You can choose from ***standard*** or ***strict***. A good approach is to start with preset security policies and then fine-tune the policies as you learn more about the capabilities and your own unique threat environment. The advantage here is that you protect groups of users as quickly as possible, with the ability to tweak protection afterward. (This method is recommended.)
-- **Configure baseline protection manually** — If you prefer to configure the environment yourself, you can quickly achieve a *baseline* of protection by following the guidance in [Protect against threats](../office-365-security/protect-against-threats.md). With this approach you get to learn more about the settings that are configurable. And, of course, you can fine-tune the policies later.
-- **Configure *custom* protection policies** — You can also build and assign custom protection policies as part of your evaluation. Before you start customizing policies, it's important to understand the precedence in which these protection policies are applied and enforced. Security ops will need to create some policies even if when the preset is applied, in specific in order to define security policies for Safe Links and Safe Attachments.
+- **Assign preset security policies automatically**—[Preset security policies](../office-365-security/preset-security-policies.md) are provided as a method to quickly assign a uniform level of protection across all of the capabilities. You can choose from ***standard*** or ***strict***. A good approach is to start with preset security policies and then fine-tune the policies as you learn more about the capabilities and your own unique threat environment. The advantage here is that you protect groups of users as quickly as possible, with the ability to tweak protection afterward. (This method is recommended.)
+- **Configure baseline protection manually**—If you prefer to configure the environment yourself, you can quickly achieve a *baseline* of protection by following the guidance in [Protect against threats](../office-365-security/protect-against-threats.md). With this approach, you get to learn more about the settings that are configurable. And, you can fine-tune the policies later.
+- **Configure *custom* protection policies**—You can also build and assign custom protection policies as part of your evaluation. Before you start customizing policies, it's important to understand the precedence in which these protection policies are applied and enforced. Security ops will need to create some policies even if when the preset is applied, in specific in order to define security policies for Safe Links and Safe Attachments.
 
 > [!IMPORTANT]
 > **If you need to configure custom protection policies**, you should examine the values that make up the **Standard** and **Strict** security definitions here: *[Recommended settings for EOP and Microsoft Defender for Office 365 security](../office-365-security/recommended-settings-for-eop-and-office365.md)*. Default values, as seen before  any configuration takes place are also listed. Keep a spreadsheet of where your custom build deviates.
@@ -80,7 +80,7 @@ Some capabilities are *not yet* configured. You have three options for configuri
 
 It's encouraged to begin with the *recommended baseline policies* when evaluating MDO and then refine them as needed over the course of your evaluation period.
 
-You can enable recommended EOP and Defender for Office 365 protection policies fast, and assign them to specific pilot users or defined groups as part of your evaluation. Preset policies offer a baseline **Standard** protection template or a more aggressive **Strict** protection template which can be assigned independently, or combined.
+You can enable recommended EOP and Defender for Office 365 protection policies fast, and assign them to specific pilot users or defined groups as part of your evaluation. Preset policies offer a baseline **Standard** protection template or a more aggressive **Strict** protection template, which can be assigned independently, or combined.
 
 Here is the [Preset security policies in EOP and Microsoft Defender for Office 365](../office-365-security/preset-security-policies.md) article outlining the steps.
 
@@ -104,18 +104,18 @@ Here is the [Preset security policies in EOP and Microsoft Defender for Office 3
 
 7. Add conditions to apply baseline ***EOP*** protections to specific pilot users, or groups of users, as needed, and select *Next* to continue.
 
-   Example, a Defender for Office 365 condition for pilot evaluations could be applied if the recipients are *members* of a defined *Defender for Office 365 Standard Protection* group, and then managed by simply adding accounts to, or removing account from, the group.
+   Example, a Defender for Office 365 condition for pilot evaluations could be applied if the recipients are *members* of a defined *Defender for Office 365 Standard Protection* group, and then managed by adding accounts to, or removing account from, the group.
 
    :::image type="content" source="../../media/mdo-eval/9-mdo-eval-pilot-eop-protections.png" alt-text="Examples of the policies that are considered EOP protections" lightbox="../../media/mdo-eval/9-mdo-eval-pilot-eop-protections.png":::
 
 8. Add conditions to apply baseline ***MDO*** protections to specific pilot users, or groups of users, as needed. Click *Next* to continue.
 
-   For example, a Defender for Office 365 condition for pilot evaluations could be applied if the recipients are *members* of a defined *Defender for Office 365 Standard Protection* group and then managed by simply adding / removing accounts via the group.
+   For example, a Defender for Office 365 condition for pilot evaluations could be applied if the recipients are *members* of a defined *Defender for Office 365 Standard Protection* group and then managed by adding / removing accounts via the group.
 
    :::image type="content" source="../../media/mdo-eval/10-mdo-eval-pilot-mdo-protections.png" alt-text="Examples of policies considered defensive of Office 365 protection" lightbox="../../media/mdo-eval/10-mdo-eval-pilot-mdo-protections.png":::
 
 9. Review and confirm your changes for assigning preset security policies.
-10. Preset protection policies can be managed (re-configured, re-applied, disabled, etc.) by returning to the Microsoft 365 Defender portal > Policies & rules > Threat Policies > and clicking the *Preset security policies* tile.
+10. Preset protection policies can be managed (reconfigured, re-applied, disabled, etc.) by returning to the Microsoft 365 Defender portal > Policies & rules > Threat Policies > and clicking the *Preset security policies* tile.
 
 ### Configure custom protection policies
 
@@ -123,7 +123,7 @@ The pre-defined *Standard* or *Strict* Defender for Office 365 policy templates 
 
 It's *important* to be aware of the precedence these protection policies take when applied and enforced, as [Order and precedence of email protection - Office 365](../office-365-security/how-policies-and-protections-are-combined.md) explains.
 
-The table below provides references and additional guidance for configuring and assigning custom protection policies:
+The table below provides references and more guidance for configuring and assigning custom protection policies:
 
 <br>
 
@@ -140,7 +140,7 @@ The table below provides references and additional guidance for configuring and 
 |Safe Links|Protect users from opening and sharing malicious links in email messages or Office desktop apps.|[Set up safe links policies in Defender for Office 365](../office-365-security/set-up-safe-links-policies.md)|
 |
 
-## Step 3: Try out capabilities — Get familiar with simulation, monitoring, and metrics
+## Step 3: Try out capabilities—Get familiar with simulation, monitoring, and metrics
 
 Now that your pilot is set up and configured, it's helpful to become familiar with the reporting, monitoring, and attack simulation tools that are unique to Microsoft Defender for Microsoft 365.
 
@@ -151,8 +151,8 @@ Now that your pilot is set up and configured, it's helpful to become familiar wi
 |Capability|Description|More information|
 |---|---|---|
 |Threat Explorer|Threat Explorer is a powerful near real-time tool to help Security Operations teams investigate and respond to threats and displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.|[Views in Threat Explorer and real-time detections](../office-365-security/threat-explorer-views.md)|
-|Attack Simulator|You can use Attack Simulation Training in the Microsoft 365 Defender portal to run realistic attack scenarios in your organization which help you identify and find vulnerable users before a real attack impacts your environment.|[Get started using Attack simulation training](../office-365-security/attack-simulation-training-get-started.md)|
-|Reports dashboard|On the left navigation menu, click Reports and expand the Email & collaboration heading. The Email & collaboration reports are about spotting security trends some of which will allow you to take action (through buttons like 'Go to submissions'), and others that will show trends, like Mailflow status summary, Top Malware, Spoof detections, Compromised users, Mail latency, Safe Links and Safe attachments reports. These metrics are generated automatically.|[View Reports](../office-365-security/view-email-security-reports.md)|
+|Attack Simulator|You can use Attack Simulation Training in the Microsoft 365 Defender portal to run realistic attack scenarios in your organization, which help you identify and find vulnerable users before a real attack impacts your environment.|[Get started using Attack simulation training](../office-365-security/attack-simulation-training-get-started.md)|
+|Reports dashboard|On the left navigation menu, click Reports and expand the Email & collaboration heading. The Email & collaboration reports are about spotting security trends some of which will allow you to take action (through buttons like 'Go to submissions'), and others that will show trends, like Mailflow status summary, Top Malware, Spoof detections, Compromised users, Mail latency, Safe Links, and Safe attachments reports. These metrics are generated automatically.|[View Reports](../office-365-security/view-email-security-reports.md)|
 |
 
 ## Next steps

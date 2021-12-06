@@ -1,6 +1,6 @@
 ---
 title: Responding to your first incident
-description: The basics of responding to your first incident in Microsoft 365 Defender.
+description: The basics of responding to your first incident at Microsoft 365 Defender.
 keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack, self-study, ramp up, ramp-up, onboard, incident responder
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -42,7 +42,7 @@ This incident response walkthrough shows how you, as part of a security operatio
 
 A security incident is defined by National Institute of Standards and Technology (NIST) as "an occurrence that actually or potentially jeopardizes the confidentiality, integrity, or availability of an information system; or the information the system processes, stores, or transmits; or that constitutes a violation or imminent threat of violation of security policies, security procedures, or acceptable use policies."
 
-Incidents in Microsoft 365 Defender are the logical starting points for analysis and incident response. Analyzing and remediating incidents typically makes up most of a security operations team's tasks.
+Incidents at Microsoft 365 Defender are the logical starting points for analysis and incident response. Analyzing and remediating incidents typically makes up most of a security operations team's tasks.
 
 ## Next step
 
@@ -58,7 +58,7 @@ Incident response guidance for Microsoft 365 Defender:
 - [Investigate incidents](investigate-incidents.md)
 - [Manage incidents](manage-incidents.md)
 
-Additional examples of first incident responses:
+More examples of first incident responses:
 
 - [Phishing email](first-incident-path-phishing.md)
 - [Identity-base attack](first-incident-path-identity.md)
