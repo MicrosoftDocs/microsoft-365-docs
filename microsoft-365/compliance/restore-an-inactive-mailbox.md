@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
-description: Learn how to restore (or merge) the contents of an inactive mailbox to an existing mailbox.
+description: "Learn how to restore (or merge) the contents of an inactive mailbox to an existing mailbox."
 ms.custom: seo-marvel-apr2020
 ---
 
