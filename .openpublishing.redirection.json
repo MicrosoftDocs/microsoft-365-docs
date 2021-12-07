@@ -5859,6 +5859,16 @@
       "source_path": "microsoft-365/viva/setup-microsoft-viva.md",
       "redirect_url": "/viva/setup-microsoft-viva",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/solutions/multi-national-design-principles.md",
+      "redirect_url": "/microsoft-365/solutions/design-principles",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/solutions/configure-secure-access.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/microsoft-365-policies-configurations",
+      "redirect_document_id": true
     }
   ]
 }
