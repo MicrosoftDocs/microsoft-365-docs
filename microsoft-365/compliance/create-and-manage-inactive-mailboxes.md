@@ -29,6 +29,12 @@ description: "Create and manage inactive mailboxes that retain the contents of d
 
 Inactive mailboxes let you retain former employees' email after they leave your organization and can be accessed by authorized people who have been granted [eDiscovery permissions](assign-ediscovery-permissions.md) for compliance or legal reasons. For example, administrators, compliance officers, and records managers who can then use Content Search to search and export the contents of an inactive mailbox. Inactive mailboxes can't receive email and aren't displayed in your organization's shared address book or other lists.
 
+> [!IMPORTANT]
+> Removing an Exchange license from a user account does not override any retention policies or holds in place on the mailbox. However, it places the mailbox in a tombstoned state, rather than an inactive state. The content cannot be accessed by eDiscovery tools or Content Search until a license is reapplied to the user account.
+
+> [!CAUTION]
+> If the user account is deleted while the mailbox is in a tombstoned state, all access to the mailbox content will be lost.
+
 For more information about inactive mailboxes, see [Learn about inactive mailboxes](inactive-mailboxes-in-office-365.md).
 
 ## Create an inactive mailbox
