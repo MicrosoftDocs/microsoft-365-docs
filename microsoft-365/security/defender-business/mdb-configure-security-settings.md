@@ -28,7 +28,9 @@ After you have onboarded your company's devices to Microsoft Defender for Busine
 ## What to do
 
 1. [Choose where to manage your security settings and policies](#choose-where-to-manage-security-settings-and-policies).
+
 2. [View your security settings and policies](#view-your-security-settings-and-policies). 
+
 3. [Proceed to your next steps](#next-steps).
 
 ## Choose where to manage security settings and policies
