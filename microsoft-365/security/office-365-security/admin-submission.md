@@ -172,7 +172,7 @@ The reported message will be marked as a false positive or a false negative. An 
      When you're finished, click **Apply**.
 
      > [!div class="mx-imgBorder"]
-     > ![New Filter options for admin submissions.](../../media/admin-submission-customize-columns.png)
+     > ![New Customize column options for admin submissions.](../../media/admin-submission-customize-columns.png)
 
    - To filter the entries, click **Filter**. The available filters are:
      - **Date submitted**: **Start date** and **End date**.
