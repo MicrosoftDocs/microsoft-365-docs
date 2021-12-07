@@ -108,7 +108,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
 2. On your managed Google Play page that loads subsequently, go to the search box and enter `Microsoft Defender`. Your search should display the Microsoft Defender for Endpoint app in your Managed Google Play. Click on the Microsoft Defender for Endpoint app from the Apps search result.
 
-    :::image type="content" source="images/0f79cb37900b57c3e2bb0effad1c19cb.png" alt-text="The application-adding pane of Microsoft Endpoint Manager admin center" lightbox="images/0f79cb37900b57c3e2bb0effad1c19cb.png":::
+    :::image type="content" source="images/0f79cb37900b57c3e2bb0effad1c19cb.png" alt-text="The **managed Google Play** page in Microsoft Endpoint Manager admin center" lightbox="images/0f79cb37900b57c3e2bb0effad1c19cb.png":::
 
 3. In the App description page that comes up next, you should be able to see app details on Defender for Endpoint. Review the information on the page and then select **Approve**.
 
@@ -166,7 +166,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
     1. You should now see both the permissions listed and now you can autogrant both by choosing autogrant in the **Permission state** drop-down and then select **Next**.
 
-       :::image type="content" " source="images/android-auto-grant.png" alt-text="The **Permission state** pane" lightbox="images/android-auto-grant.png":::
+       :::image type="content" source="images/android-auto-grant.png" alt-text="The **Permission state** pane" lightbox="images/android-auto-grant.png":::
 
     1. In the **Assignments** page, select the user group to which this app config policy would be assigned to. Click **Select groups to include** and selecting the applicable group and then selecting **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app.
 
