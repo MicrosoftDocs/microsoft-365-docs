@@ -74,7 +74,7 @@ There are two ways to enable the Premium Assessment Add-on trial: through the Co
 
 ### Enable trial via the Compliance trial
 
-1. In the Compliance Center, select **Trials** in the left navigation pane. Available trials will display.
+1. In the Compliance Center, select **Trials** in the left navigation pane. The available trials will display.
 1. Choose **Try now** for Compliance Manager premium assessments.
 1. You will be presented with an information page and the ability to earn more before setting up the trial.
 1. When you choose **Set up**, it might take up to two hours for changes to take effect. You will need to sign in again to see available templates.
