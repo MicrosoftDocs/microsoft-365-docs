@@ -75,14 +75,14 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 ### Notify users from within the portal
 
-1. In the Microsoft 365 Defender portal, go to the **Submissions** page at <https://security.microsoft.com/reportsubmission>.
+1. In the Microsoft 365 Defender portal, under **Actions & submissions**, go to **Submissions**.
 
 2. Select **User reported messages**, and then select the message you want to mark and notify.
 
 3. Select the **Mark as and notify** drop-down, and then select **No threats found** \> **Phishing** or **Junk**.
 
    > [!div class="mx-imgBorder"]
-   > ![Send messages from portal.](../../media/admin-review-send-message-from-portal.png)
+   > ![Send messages from portal.](../../media/unified-submission-user-reported-message.png)
 
 The reported message will be marked as a false positive or a false negative. An email notification be sent automatically from within the portal to the user who reported the message.
 
