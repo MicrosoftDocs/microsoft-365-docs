@@ -96,6 +96,8 @@ landingContent:
             url: mdb-custom-rules-firewall.md
       - linkListType: reference
         links:
+          - text: Policy order
+            url: mdb-policy-order.md
           - text: Next-generation protection settings
             url: mdb-next-gen-configuration-settings.md
           - text: Firewall settings
