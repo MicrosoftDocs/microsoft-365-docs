@@ -67,14 +67,6 @@ Trial licenses allow you to use 25 premium templates for 90 days. You will see 2
 
 There are two ways to enable the Premium Assessment Add-on trial: through the Compliance Manager dashboard or through the Microsoft 365 Compliance trial.
 
-After starting the trial by either method, you will see a summary on the dashboard that updates you on:
-
-- Number of new assessments created
-- Number of improvement actions taken
-- Points earned during the trial toward your compliance score
-- Links to available templates
-- Time left in trial
-
 ### Enable trial via the Compliance Manager dashboard
 
 1. In the Compliance Manager dashboard, select **Try now**.
@@ -86,6 +78,16 @@ After starting the trial by either method, you will see a summary on the dashboa
 1. Choose **Try now** for Compliance Manager premium assessments.
 1. You will be presented with an information page and the ability to earn more before setting up the trial.
 1. When you choose **Set up**, it might take up to two hours for changes to take effect. You will need to sign in again to see available templates.
+
+### During the trial
+
+After starting the premium assessment trial, you will see a summary on the dashboard that updates you on:
+
+- Number of new assessments created
+- Number of improvement actions taken
+- Points earned during the trial toward your compliance score
+- Links to available templates
+- Time left in trial
 
 ## Additional resources
 
