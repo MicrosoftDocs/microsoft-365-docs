@@ -208,6 +208,8 @@
                href: advanced-hunting-take-action.md
              - name: Quickly investigate with go hunt
                href: advanced-hunting-go-hunt.md
+             - name: Link query results to an incident
+               href: advanced-hunting-link-to-incident.md
              - name: Optimize & handle errors
                items: 
                 - name: Apply query best practices
