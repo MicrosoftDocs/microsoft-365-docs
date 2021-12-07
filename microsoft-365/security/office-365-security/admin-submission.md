@@ -285,4 +285,4 @@ On the **User reported messages** tab, select a message in the list, click **Sub
 - **Trigger investigation**
 
 > [!div class="mx-imgBorder"]
-> ![New Options on the Action button.](../../media/admin-submission-main-action-button.png)
+> ![New Options on the Action button.](../../media/admin-submission-main-action-button2.png)
