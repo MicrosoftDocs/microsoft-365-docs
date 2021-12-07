@@ -64,11 +64,11 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 ## Report suspicious content to Microsoft
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Submissions**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, under **Actions & submissions**, go to **Submissions**.
 
-2. On the **Submissions** page, verify that the **Submitted for analysis** tab is selected, and then click ![Ad icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+2. On the **Submissions** page, verify that the **Emails** tab is selected, select the email you want to report, and then click ![Ad icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
 
-3. Use the **Submit to Microsoft for review** flyout that appears to submit the message, URL, or email attachment as described in the following sections.
+3. Use the **Submit to Microsoft for analysis** flyout that appears to submit the email, URL, or email attachment as described in the following sections.
 
    > [!NOTE]
    > File and URL submissions are not available in the clouds that do not allow for data to leave the environment. The ability to select File or URL will be greyed out.
@@ -77,7 +77,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 1. In the Microsoft 365 Defender portal, under **Actions & submissions**, go to **Submissions**.
 
-2. Select **User reported messages**, and then select the message you want to mark and notify.
+2. Select **User reported messages** tab, and then select the message you want to mark and notify.
 
 3. Select the **Mark as and notify** drop-down, and then select **No threats found** \> **Phishing** or **Junk**.
 
@@ -97,13 +97,13 @@ The reported message will be marked as a false positive or a false negative. An 
 3. In the **Choose a recipient who had an issue** box, specify the recipient that you would like to run a policy check against. The policy check will determine if the email bypassed scanning due to user or organization policies.
 
 4. In the **Select a reason for submitting to Microsoft** section, select one of the following options:
-   - **Should not have been blocked (false positive)**
-   - **Should have been blocked**: In the **The email should have been categorized as** section that appears, select one of the following values (if you're not sure, use your best judgment):
+   - **Should not have been blocked (False positive)**
+   - **Should have been blocked (False negative)**: In the **The email should have been categorized as** section that appears, select one of the following values (if you're not sure, use your best judgment):
      - **Phish**
-     - **Spam**
      - **Malware**
+     - **Spam**
 
-5. When you're finished, click the **Submit** button.
+5. When you're finished, click **Submit**.
 
 > [!div class="mx-imgBorder"]
 > ![New URL submission example.](../../media/submission-flyout-email.png)
@@ -115,25 +115,25 @@ The reported message will be marked as a false positive or a false negative. An 
 2. In the **URL** box that appears, enter the full URL (for example, `https://www.fabrikam.com/marketing.html`).
 
 3. In the **Select a reason for submitting to Microsoft** section, select one of the following options:
-   - **Should not have been blocked (false positive)**
-   - **Should have been blocked**: In the **This URL should have been categorized as** section that appears, select **Phish** or **Malware**.
+   - **Should not have been blocked (False positive)**
+   - **Should have been blocked (False negative)**: In the **This URL should have been categorized as** section that appears, select **Phish** or **Malware**.
 
-4. When you're finished, click the **Submit** button.
+4. When you're finished, click **Submit**.
 
 > [!div class="mx-imgBorder"]
 > ![New Email submission example.](../../media/submission-url-flyout.png)
 
 ### Submit a suspected email attachment to Microsoft
 
-1. In the **Select the submission type** box, select **File** from the drop down list.
+1. In the **Select the submission type** box, select **Email attachment** from the drop down list.
 
 2. In the **File** section that appears, click **Browse files**. In the dialog that opens, find and select the file, and then click **Open**.
 
 3. In the **Select a reason for submitting to Microsoft** section, select one of the following options:
-   - **Should not have been blocked (false positive)**
-   - **Should have been blocked**: In the **This URL should have been categorized as** section that appears, **Malware** is the only choice, and is automatically selected.
+   - **Should not have been blocked (False positive)**
+   - **Should have been blocked (False negative)**: In the **This file should have been categorized as** section that appears, **Malware** is the only choice, and is automatically selected.
 
-4. When you're finished, click the **Submit** button.
+4. When you're finished, click **Submit**.
 
 > [!div class="mx-imgBorder"]
 > ![New Attachment submission example.](../../media/submission-file-flyout.png)
@@ -143,19 +143,18 @@ The reported message will be marked as a false positive or a false negative. An 
 
 ## View admin submissions to Microsoft
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Submissions**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, under **Actions & submissions**, go to **Submissions**.
 
-2. On the **Submissions** page, verify that the **Submitted for analysis** tab is selected.
+2. On the **Submissions** page, verify that the **Emails**, **URL**, or **Email attachment** tab is selected.
 
    - You can sort the entries by clicking on an available column header. Click **Customize columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
      - **Submission name**<sup>\*</sup>
      - **Sender**<sup>\*</sup>
+     - **Recipient**
      - **Date submitted**<sup>\*</sup>
-     - **Submission type**<sup>\*</sup>
      - **Reason for submitting**<sup>\*</sup>
      - **Rescan status**<sup>\*</sup>
      - **Rescan result**<sup>\*</sup>
-     - **Tags**<sup>\*</sup>
      - **Filter verdict**
      - **Delivery/Block reason**
      - **Submission ID**
@@ -166,16 +165,23 @@ The reported message will be marked as a false positive or a false negative. An 
      - **Destination**
      - **Policy action**
      - **Submitted by**
+     - **Phish simulation**
+     - **Tags**<sup>\*</sup>
+     - **Allow**
 
      When you're finished, click **Apply**.
 
+     > [!div class="mx-imgBorder"]
+     > ![New Filter options for admin submissions.](../../media/admin-submission-customize-columns.png)
+
    - To filter the entries, click **Filter**. The available filters are:
      - **Date submitted**: **Start date** and **End date**.
-     - **Submission type**: **Email**, **URL**, or **File**.
      - **Submission ID**: A GUID value that's assigned to every submission.
      - **Network Message ID**
      - **Sender**
-     - **Tags**
+     - **Recipient**
+     - **Name**
+     - **Submitted by**
 
      When you're finished, click **Apply**.
 
@@ -188,6 +194,7 @@ The reported message will be marked as a false positive or a false negative. An 
      - **Reason**
      - **Status**
      - **Rescan result**
+     - **Tags**
 
    - To export the entries, click **Export**. In the dialog that appears, save the .csv file.
 
@@ -206,7 +213,7 @@ If an override was found, the rescan should complete in several minutes. If ther
 
 If you've deployed the [Report Message add-in](enable-the-report-message-add-in.md), the [Report Phishing add-in](enable-the-report-phish-add-in.md), or people use the [built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), you can see what users are reporting on the **User reported message** tab.
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Submissions**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, under **Actions & submissions**, go to **Submissions**.
 
 2. On the **Submissions** page, select the **User reported messages** tab.
 
@@ -218,11 +225,15 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
      - **Sender**<sup>\*</sup>
      - **Reported reason**<sup>\*</sup>
      - **Rescan result**<sup>\*</sup>
-     - **Tags**<sup>\*</sup>
      - **Message reported ID**
      - **Network Message ID**
      - **Sender IP**
+     - **Reported from**
      - **Phish simulation**
+     - **Tags**<sup>\*</sup>
+     - **Marked as**<sup>\*</sup>
+     - **Marked by**
+     - **Date marked**
 
      When you're finished, click **Apply**.
 
@@ -248,8 +259,10 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
      - **Sender**
      - **Reported by**
      - **Rescan result**
+     - **Reported from**
      - **Phish simulation**
-
+     - **Tags**
+   
    - To export the entries, click **Export**. In the dialog that appears, save the .csv file.
 
 > [!NOTE]
