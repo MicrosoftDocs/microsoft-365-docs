@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 11/19/2021
+ms.date: 12/07/2021
 ms.prod: m365-security
 ms.technology: mde
 ms.localizationpriority: medium
@@ -33,7 +33,7 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 The following table describes what's included in each plan at a high level. <br/><br/>
 
-| [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) <br/>(preview) | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) <br/>(available now) |
+| [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) |
 |:---|:---|
 | [Next-generation protection](defender-endpoint-plan-1.md#next-generation-protection) <br/>(includes antimalware and antivirus) <p> [Attack surface reduction](defender-endpoint-plan-1.md#attack-surface-reduction) <p> [Manual response actions](defender-endpoint-plan-1.md#manual-response-actions) <p> [Centralized management](defender-endpoint-plan-1.md#centralized-management) <p>[Security reports](defender-endpoint-plan-1.md#reporting) <p>[APIs](defender-endpoint-plan-1.md#apis)  | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md), plus: <p> [Device discovery](device-discovery.md) <p> [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md) <p> [Automated investigation and response](automated-investigations.md) <p> [Advanced hunting](advanced-hunting-overview.md) <p> [Endpoint detection and response](overview-endpoint-detection-response.md) <p> [Microsoft Threat Experts](microsoft-threat-experts.md)  |
 | [Support for Windows 10, iOS, Android OS, and macOS devices](defender-endpoint-plan-1.md#cross-platform-support) | Support for Windows (client and server) and non-Windows platforms<br/> (macOS, iOS, Android, and Linux) |
