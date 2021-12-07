@@ -22,7 +22,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## Conditional Access with Defender for Endpoint on Android
@@ -89,12 +90,11 @@ Defender for Endpoint supports vulnerability assessment of apps in the work prof
 2. Give the policy a name; **Platform > Android Enterprise**; select the profile type.
 3. Select **Microsoft Defender for Endpoint** as the target app.
 4. In Settings page, select **Use configuration designer** and add **DefenderTVMPrivacyMode** as the key and value type as **Integer**
-   - To disable vulnerability of apps in the work profile, enter value as 1 and assign this policy to users. By default, this value is set 0.
-   - For users with key set as ‘0’, Defender will send the list of apps from the work profile to the backend service for vulnerability assessment.
+   - To disable vulnerability of apps in the work profile, enter value as `1` and assign this policy to users. By default, this value is set to `0`.
+   - For users with key set as `0`, Defender for Endpoint will send the list of apps from the work profile to the backend service for vulnerability assessment.
 5. Click **Next** and assign this profile to targeted devices/users.
 
 Turning the above privacy controls on or off will not impact the device compliance check or conditional access.
-
 
 ## Configure privacy for malware threat report
 
