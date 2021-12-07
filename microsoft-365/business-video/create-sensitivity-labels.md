@@ -35,7 +35,7 @@ Sensitivity labels allow you to classify and protect content that is sensitive t
     
     If you don't immediately see this option, first select **Show all**.
 
-2. On the **Labels** page, select **+ Create a label** to start the New sensitivity label configuration. 
+2. On the **Labels** page, select **+ Create a label** to start the new sensitivity label configuration. 
 
     For example, from the Microsoft 365 compliance center:
 
