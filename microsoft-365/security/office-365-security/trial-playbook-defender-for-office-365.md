@@ -23,23 +23,7 @@ Welcome to the Microsoft Defender for Office 365 trial playbook. This playbook w
 
 ![A graphical representation of all components of Microsoft Defender for Office 365.](../../media/mdo-trial-playbook-what-is-mdo.png)
 
-1. [Getting started](#step-1-getting-started)
-   - [Start your trial](#start-your-microsoft-defender-for-office-365-trial)
-   - [Enable users to report suspicious content](#enable-users-to-report-suspicious-content)
-   - [Review reports to understand the threat landscape](#review-reports-to-understand-the-threat-landscape)
-
-2. [Intermediate steps](#step-2-intermediate-steps)
-   - [Prioritize focus on your most targeted users](#prioritize-focus-on-your-most-targeted-users)
-   - [Avoid costly breaches by preventing user compromise](#avoid-costly-breaches-by-preventing-user-compromise)
-   - [Use Threat Explorer to investigate malicious email](#use-threat-explorer-to-investigate-malicious-email)
-   - [See campaigns targeting your organization](#see-campaigns-targeting-your-organization)
-   - [Use automation to remediate risks](#use-automation-to-remediate-risks)
-
-3. [Advanced content](#step-3-advanced-content)
-   - [Dive deep into data with query-based hunting](#dive-deep-into-data-with-query-based-hunting)
-   - [Train users to spot threats by simulating attacks](#train-users-to-spot-threats-by-simulating-attacks)
-
-[Additional resources](#additional-resources)
+These actions are recommendations from the Microsoft Defender team on key features to try in your 90-day trial.
 
 ## Step 1: Getting started
 
@@ -119,7 +103,7 @@ See the bigger picture with Campaign Views in Defender for Office 365, which giv
 
 ![Campaign details in the Microsoft 365 Defender portal.](../../media/mdo-trial-playbook-campaign-details.png)
 
-Watch this video to learn more: [Campaign VIews in Microsoft Defender for Office 365 - YouTube](https://www.youtube.com/watch?v=DvqzzYKu7cQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=14).
+Watch this video to learn more: [Campaign Views in Microsoft Defender for Office 365 - YouTube](https://www.youtube.com/watch?v=DvqzzYKu7cQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=14).
 
 ### Use automation to remediate risks
 
@@ -138,7 +122,7 @@ Respond efficiently using Automated investigation and response (AIR) to review, 
 Use Advanced hunting to write custom detection rules, proactively inspect events in your environment, and locate threat indicators. Explore raw data in your environment.
 
 - [Build custom detection rules](../defender/advanced-hunting-overview.md#get-started-with-advanced-hunting).
-- [Access hared queries](../defender/advanced-hunting-shared-queries.md) created by others.
+- [Access shared queries](../defender/advanced-hunting-shared-queries.md) created by others.
 
 ![Query-based hunting in Microsoft 365 Defender.](../../media/mdo-trial-playbook-query-based-hunting.png)
 
