@@ -129,12 +129,9 @@ Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND
 
 ## Run diagnostics on archive mailboxes
 
-> [!NOTE]
-> This feature requires a Microsoft 365 administrator account. This feature isn't available for Microsoft 365 Government, Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
-
 You can run an automated diagnostic check on a user's archive mailbox to identify any problems and suggested resolutions.
 
-To run the diagnostic check, please click the button below. 
+To run the diagnostic check, click the button below. 
 
 > [!div class="nextstepaction"]
 > [Run Tests: Archive Mailbox](https://aka.ms/PillarArchiveMailbox)
@@ -142,6 +139,9 @@ To run the diagnostic check, please click the button below.
 ![Run diagnostics on an archive mailbox.](../media/ArchiveMailboxDiagnostics.png)
 
 A flyout page opens in the Microsoft 365 admin center. Enter the email address of the mailbox you want to check and click **Run Tests**.
+
+> [!NOTE]
+> You must be a Microsoft 365 global admin to use the archive mailbox diagnostic check. Also, this feature isn't available in Microsoft 365 Government clouds, Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
 
 ## More information
 
