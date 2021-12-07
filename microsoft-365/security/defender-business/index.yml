@@ -33,6 +33,8 @@ landingContent:
             url: get-defender-business.md
           - text: Compare plans for small and medium-sized businesses
             url: compare-mdb-m365-plans.md
+          - text: Integration with Microsoft 365 Lighthouse
+            url: mdb-lighthouse-integration.md
 
 
 
