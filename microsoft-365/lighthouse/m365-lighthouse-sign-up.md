@@ -61,5 +61,6 @@ description: "For Managed Service Providers (MSPs), learn how to sign up for Mic
 
 ## Related content
 
-[Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (article)\
+[Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (article)
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Microsoft 365 Lighthouse and Microsoft Defender for Business](../security/defender-business/mdb-lighthouse-integration.md) (article)
