@@ -93,7 +93,7 @@
       "redirect_url": "/microsoft-365/admin/setup/setup-outlook",
       "redirect_document_id": false
     },
-
+   {
       "source_path": "microsoft-365/business-video/get-help-support.md",
       "redirect_url": "/microsoft-365/admin/get-help-support",
       "redirect_document_id": false
