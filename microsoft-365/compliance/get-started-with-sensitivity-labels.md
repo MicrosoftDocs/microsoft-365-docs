@@ -39,8 +39,8 @@ When you're ready to start protecting your organization's data by using sensitiv
 
 3. **Publish the labels.** After your sensitivity labels are configured, publish them by using a label policy. Decide which users and groups should have the labels and what policy settings to use. A single label is reusable—you define it once, and then you can include it in several label policies assigned to different users. So for example, you could pilot your sensitivity labels by assigning a label policy to just a few users. Then when you're ready to roll out the labels across your organization, you can create a new label policy for your labels and this time, specify all users.
 
-> [!TIP]
-> You might be eligible for default labels and a default label policy that takes care of steps 1-3 for you. For more information, see [Default labels and policies for Microsoft Information Protection](mip-easy-trials.md).
+
+> You might be eligible for the automatic creation of default labels and a default label policy that takes care of steps 1-3 for you. For more information, see [Default labels and policies for Microsoft Information Protection](mip-easy-trials.md).
 
 The basic flow for deploying and applying sensitivity labels:
 
@@ -92,7 +92,7 @@ All scenarios require you to [Create and configure sensitivity labels and their 
 |Apply and view labels in Power BI, and protect data when it's saved outside the service|[Sensitivity labels in Power BI](/power-bi/admin/service-security-sensitivity-label-overview)|
 |Monitor and understand how sensitivity labels are being used in my organization|[Learn about data classification](data-classification-overview.md)|
 |Extend sensitivity labels to third-party apps and services|[Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|
-|Extend sensitivity labels across content in Azure Blob Storage, Azure files, Azure Data Lake Storage Gen1, and Azure Data Lake Storage Gen12|[Automatically label your content in Azure Purview](/azure/purview/create-sensitivity-label) |
+|Extend sensitivity labels across content in my Azure Purview assets, such as Azure Blob Storage, Azure Files, Azure Data Lake Storage, and multi-cloud data sources|[Labeling in Azure Purview](/azure/purview/create-sensitivity-label) |
 
 
 ## End-user documentation for sensitivity labels

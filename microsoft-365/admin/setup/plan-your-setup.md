@@ -30,8 +30,12 @@ This article is for people who have subscribed to a Microsoft 365 for business p
   
 Before moving your organization to Microsoft 365, there are requirements you need to meet, info you need to have on hand, and decisions you have to make.
 
+## Overview of Microsoft 365 Business Premium setup
 
-  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg?autoplay=false]
+
+Congratulations on your decision to move your business to the cloud with Microsoft 365! Whether you have one person in your business or 20, doing a little planning will help you get the most out of Microsoft 365 Business Premium.
+
 ## Info to have on hand before you run the setup wizard
 
 When you're ready to run the setup wizard and move your domain to Microsoft 365, here's the info you'll need to have on hand:
@@ -51,7 +55,7 @@ The setup wizard walks you through installing the Microsoft 365 apps on your com
   
 If you don't complete the setup wizard, you can complete setup tasks at any time from [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) > **Setup**. From here you can migrate email and contacts from another email service, change the domain of your admin account, manage your billing information, add or remove users, reset passwords, and do other business functions. For more information about the differences between the setup wizard and the **Setup** page, see [Differences between the Microsoft 365 setup wizard and the Setup page](o365-setup-wizard-and-setup-page.md).
 
-If you get stuck at any point, call us. [We're here to help!](../../business-video/get-help-support.md)
+If you get stuck at any point, call us. [We're here to help!](../../business-video/get-help-support.md).
   
 ## When not to use the setup wizard: Active Directory synchronization and hybrid environments
 

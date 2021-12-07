@@ -2,8 +2,6 @@
 title: Performance analyzer for Microsoft Defender Antivirus
 description: Describes the procedure to tune the performance of Microsoft Defender Antivirus.
 keywords: tune, performance, microsoft defender for endpoint, defender antivirus
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -19,6 +17,10 @@ ms.technology: mde
 ---
 
 # Performance analyzer for Microsoft Defender Antivirus
+
+**Applies to**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 **What is Microsoft Defender Antivirus performance analyzer?**
 
@@ -50,7 +52,7 @@ To start recording system events, open PowerShell in administrative mode and per
 
    `New-MpPerformanceRecording -RecordTo <recording.etl>`
  
-    where `-RecordTo` parameter specifies full path location in which the trace file is saved. For more cmdlet information, see [Defender](/powershell/module/defender).
+    where `-RecordTo` parameter specifies full path location in which the trace file is saved. For more cmdlet information, see [Microsoft Defender Antivirus cmdlets](/powershell/module/defender).
 
 2. If there are processes or services thought to be affecting performance, reproduce the situation by carrying out the relevant tasks.
 
@@ -459,4 +461,3 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-
