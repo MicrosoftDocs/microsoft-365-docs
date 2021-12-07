@@ -101,7 +101,7 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows server
-  - Windows Server 2008 R2 SP1
+  - Windows Server 2008 R2 SP1 ([Requires ESU for support](/windows-server/get-started/extended-security-updates-deploy))
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server, version 1803 or later
