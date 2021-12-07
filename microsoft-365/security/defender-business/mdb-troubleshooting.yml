@@ -98,4 +98,4 @@ sections:
 additionalContent: |
  ## See also
 
- - [Microsoft Defender for Business - Frequently asked questions and answers](/security/defender/mdb-faq.yml)
+ - [Microsoft Defender for Business - Frequently asked questions and answers](mdb-faq.yml)
