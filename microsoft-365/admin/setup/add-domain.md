@@ -59,11 +59,6 @@ Follow these steps to add, set up, or continue setting up a domain.
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
 ::: moniker-end
-::: moniker range="o365-germany"
-
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
-
-::: moniker-end
 
 ::: moniker range="o365-21vianet"
 

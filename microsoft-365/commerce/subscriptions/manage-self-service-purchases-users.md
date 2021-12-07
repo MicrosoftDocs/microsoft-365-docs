@@ -36,12 +36,6 @@ You can view a list of all self-service purchased subscriptions that you bought.
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
@@ -53,12 +47,6 @@ You can view a list of all self-service purchased subscriptions that you bought.
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
 
 ::: moniker-end
 
@@ -77,12 +65,6 @@ You can view a list of all self-service purchased subscriptions that you bought.
 :: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page.
 
 ::: moniker-end
 
@@ -106,12 +88,6 @@ You can view a list of all self-service purchased subscriptions that you bought.
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
- 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
  1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenses</a> page.
@@ -127,12 +103,6 @@ You can view a list of all self-service purchased subscriptions that you bought.
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
 
 ::: moniker-end
 
