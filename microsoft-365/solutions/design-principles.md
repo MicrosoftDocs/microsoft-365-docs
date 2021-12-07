@@ -26,5 +26,8 @@ Understand the key principles you need to understand networking, identity, secur
 | ![Ed Fisher on networking design principles.](../media/solutions-architecture-center/ed-fisher-networking.jpg)    |       [Networking](networking-design-principles.md)  |   Ed Fisher, Security & Compliance Architect at Microsoft, describes how to optimize your network for cloud connectivity by avoiding the most common pitfalls in [Networking up (to the cloud)](networking-design-principles.md).       |
 |    |         |         |
 
+## Related resources
+
 Get resources for architecture design diagrams: [Microsoft 365 architecture icons and templates](architecture-icons-templates.md).
+
 Find architecture diagrams for Microsoft 365: [Microsoft cloud for IT architects illustrations](cloud-architecture-models.md)
