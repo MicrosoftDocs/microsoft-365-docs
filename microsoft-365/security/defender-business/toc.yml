@@ -49,14 +49,16 @@
         href: mdb-view-edit-policies.md
       - name: Create a new policy
         href: mdb-create-new-policy.md
+      - name: Policy order
+        href: mdb-policy-order.md
       - name: Create device groups
         href: mdb-create-edit-device-groups.md
-      - name: Manage rules for firewall policies
-        href: mdb-custom-rules-firewall.md
       - name: Next-generation protection settings
         href: mdb-next-gen-configuration-settings.md
       - name: Firewall settings
         href: mdb-firewall.md
+      - name: Manage rules for firewall policies
+        href: mdb-custom-rules-firewall.md
     - name: Reference information
       items: 
       - name: How to get help or contact support
