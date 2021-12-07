@@ -105,8 +105,8 @@ The reported message will be marked as a false positive or a false negative. An 
 
 5. When you're finished, click **Submit**.
 
-> [!div class="mx-imgBorder"]
-> ![New URL submission example.](../../media/submission-flyout-email.png)
+    > [!div class="mx-imgBorder"]
+    > ![New URL submission example.](../../media/submission-flyout-email.png)
 
 ### Send a suspect URL to Microsoft
 
@@ -120,8 +120,8 @@ The reported message will be marked as a false positive or a false negative. An 
 
 4. When you're finished, click **Submit**.
 
-> [!div class="mx-imgBorder"]
-> ![New Email submission example.](../../media/submission-url-flyout.png)
+    > [!div class="mx-imgBorder"]
+    > ![New Email submission example.](../../media/submission-url-flyout.png)
 
 ### Submit a suspected email attachment to Microsoft
 
@@ -135,8 +135,8 @@ The reported message will be marked as a false positive or a false negative. An 
 
 4. When you're finished, click **Submit**.
 
-> [!div class="mx-imgBorder"]
-> ![New Attachment submission example.](../../media/submission-file-flyout.png)
+    > [!div class="mx-imgBorder"]
+    > ![New Attachment submission example.](../../media/submission-file-flyout.png)
 
 > [!NOTE]
 > If malware filtering has replaced the message attachments with the Malware Alert Text.txt file, you need to submit the original message from quarantine that contains the original attachments. For more information on quarantine and how to release messages with malware false positives, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
@@ -217,7 +217,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
 
 2. On the **Submissions** page, select the **User reported messages** tab.
 
-   - You can sort the entries by clicking on an available column header. Click **Customize columns** to show a maximum of seven columns. The default values are marked with an asterisk (<sup>\*</sup>):
+   - You can sort the entries by clicking on an available column header. Click **Customize columns** to show the options. The default values are marked with an asterisk (<sup>\*</sup>):
 
      - **Email subject**<sup>\*</sup>
      - **Reported by**<sup>\*</sup>
