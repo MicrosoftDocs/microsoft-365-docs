@@ -23,4 +23,5 @@ ms.collection:
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-If you're using Microsoft 365 Lighthouse to manage security for small and medium-sized businesses, Microsoft Defender for Business integrates with Microsoft 365 Lighthouse. You can view security incidents across tenants in your 
+If you're using Microsoft 365 Lighthouse to manage security for small and medium-sized businesses, Microsoft Defender for Business integrates with Microsoft 365 Lighthouse. With this integration, you can view security incidents across tenants in your Microsoft 365 Lighthouse portal ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). 
+
