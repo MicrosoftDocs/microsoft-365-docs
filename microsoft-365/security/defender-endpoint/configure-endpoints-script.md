@@ -32,7 +32,7 @@ ms.technology: mde
 You can also manually onboard individual devices to Defender for Endpoint. You might want to do this first when testing the service before you commit to onboarding all devices in your network.
 
 > [!IMPORTANT]
-> This script has been optimized for use on up to 10 devices.
+> This script has been optimized for use on up to ten devices.
 >Local scripting is a special on-board method for evaluating Microsoft Defender for Endpoint.
 >The data reporting frequency is set higher than the other on-board method when the on-board by local script is performed.
 >This setting is for evaluation purposes and is not normally used in production deployments.
