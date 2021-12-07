@@ -33,7 +33,7 @@ description: "The Microsoft 365 admin center - learn about the features that wer
 
 ::: moniker-end
 
-We're continuously adding new features to [the Microsoft 365 admin center]([Overview of the Microsoft 365 admin center](admin-overview/admin-center-overview.md)), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
+We're continuously adding new features to [the Microsoft 365 admin center]([Overview of the Microsoft 365 admin center](admin-overview/admin-center-overview.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
 
 And if you'd like to know what's new with other Microsoft cloud services:
 
@@ -391,7 +391,7 @@ We've got two updates for Groups this month:
 - [Join a Teams meeting](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
 - [Create an org-wide team](/microsoftteams/create-an-org-wide-team.md)
 - [Create a Team with guests](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f)
-- [Join a Team as a guest](/microsoftteams/guest-experience.md)
+- [Join a Team as a guest](/microsoftteams/guest-experience)
 - [Create a group email address](https://support.microsoft.com/office/3f73d218-52d6-4f88-a733-9ff37073ee4c)
 
 #### For admins and business owners

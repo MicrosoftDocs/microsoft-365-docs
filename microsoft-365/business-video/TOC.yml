@@ -48,11 +48,11 @@
         - name: Create a shared calendar
           href: https://support.microsoft.com/office/353ed2c1-3ec5-449d-8c73-6931a0adab88
         - name: Create an org-wide team
-          href: /microsoftteams/create-an-org-wide-team.md
+          href: /microsoftteams/create-an-org-wide-team
         - name: Create a team with guests
           href: https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f
         - name: Join a team as a guest
-          href: /microsoftteams/guest-experience.md
+          href: /microsoftteams/guest-experience
         - name: Chat with employees and customers
           href: https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92
         - name: Online meetings overview
