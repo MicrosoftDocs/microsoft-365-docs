@@ -89,7 +89,7 @@ After starting the trial by either method, you will see a summary on the dashboa
 
 ## Additional resources
 
-**Microsoft Docs**: Get detailed information on how Compliance Manager premium assessments works and how to best implement it for your organization. Visit [Docs](compliance-manager-templates.md).​
+**Microsoft Docs**: Get detailed information on how Compliance Manager premium assessments work and how to best implement them for your organization. Visit [Docs](compliance-manager-templates.md).​
 
 **How to videos**: Check out the following videos to learn more:
 
