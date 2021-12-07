@@ -44,7 +44,7 @@ Or
 |---------|---------|---------|---------|
 |File path exclusions     |Supported         |Supported         |macOS includes a recommended list of exclusions that is on by default          |
 |Unallowed Apps     |Supported         |Supported         |         |
-|Unallowed Bluetooth apps    |Supported         |not supported         |         |
+|Unallowed Bluetooth apps    |Supported         |Not Supported         |         |
 |Browser and domain restrictions to sensitive items      |Supported         |Supported         |         |
 |Additional settings for Endpoint DLP     |Supported         |Supported         |Only the default business justifications are supported for macOS devices         |
 |Always audit file activity for devices     |Supported         |Supported         |         |
