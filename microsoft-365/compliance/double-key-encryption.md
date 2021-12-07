@@ -60,7 +60,7 @@ If your organizations have any of the following requirements, you can use DKE to
 
 **Azure Information Protection**. DKE works with sensitivity labels and requires Azure Information Protection.
 
-DKE sensitivity labels are made available to end users through the sensitivity ribbon in Office Desktop Apps. Install these prerequisites on each client computer where you want to protect and consume protected documents.
+DKE sensitivity labels are made available to end users through the sensitivity button in the AIP Unified Labeling client in Office Desktop Apps. Install these prerequisites on each client computer where you want to protect and consume protected documents.
 
 **Microsoft Office Apps for enterprise** version 2009 or later (Desktop versions of Word, PowerPoint, and Excel) on Windows.
 
@@ -543,9 +543,10 @@ Your DKE service is now registered. Continue by [creating labels using DKE](#cre
 
 ## Create sensitivity labels using DKE
 
-In the Microsoft 365 compliance center, create a new sensitivity label and apply encryption as you would otherwise. Select **Use Double Key Encryption** and enter the endpoint URL for your key.
+In the Microsoft 365 compliance center, create a new sensitivity label and apply encryption as you would otherwise. Select **Use Double Key Encryption** and enter the endpoint URL for your key. You need to include the key name you have provided within the "TestKeys" section of the appsettings.json file in the URL. 
 
-For example:
+For example: https://testingdke1.azurewebsites.net/**KEYNAME**
+
 
 > [!div class="mx-imgBorder"]
 > ![Select Use Double Key Encryption in the Microsoft 365 compliance center.](../media/dke-use-dke.png)
