@@ -71,7 +71,7 @@ The following steps with guide you how to create a multi-tenant Azure AD applica
 
 2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
 
-   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="An application's  registration section in Microsoft 365 Defender portal" lightbox="../../media/atp-azure-new-app2.png":::
+   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="An application's registration section in the Microsoft 365 Defender portal" lightbox="../../media/atp-azure-new-app2.png":::
 
 3. In the registration form:
 
@@ -260,7 +260,7 @@ A successful response will look like this:
 
 In the following image, you can see a decoded token acquired from an app, with ```Incidents.Read.All```, ```Incidents.ReadWrite.All```, and ```AdvancedHunting.Read.All``` permissions:
 
-:::image type="content" source="../../media/webapp-decoded-token.png" alt-text="**Decoded Token** pane in Microsoft 365 Defender portal" lightbox="../../media/webapp-decoded-token.png":::
+:::image type="content" source="../../media/webapp-decoded-token.png" alt-text="The Decoded Token pane in Microsoft 365 Defender portal" lightbox="../../media/webapp-decoded-token.png":::
 
 
 ## Use the token to access the Microsoft 365 Defender API

@@ -29,7 +29,8 @@ This article will guide you in the process of running a pilot for Microsoft Defe
 
 Use the following steps to setup and configure the pilot for Microsoft Defender for Endpoint. 
 
-:::image type="content" source="../../media/defender/m365-defender-endpoint-pilot-steps.png" alt-text="A page that displays steps for adding Microsoft Defender for Identity to the Defender evaluation environment" lightbox="../../media/defender/m365-defender-endpoint-pilot-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-endpoint-pilot-steps.png" alt-text="The steps for adding Microsoft Defender for Identity to the Defender evaluation environment" lightbox="../../media/defender/m365-defender-endpoint-pilot-steps.png":::
+
 - Step 1. Verify pilot group
 - Step 2. Try out capabilities
 

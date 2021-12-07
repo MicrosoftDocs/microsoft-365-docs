@@ -91,7 +91,7 @@ Here is the [Preset security policies in EOP and Microsoft Defender for Office 3
 
 3. On the Policy & Rules dashboard, click *Threat Policies*.
 
-   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png" alt-text="a.":::
+   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png" alt-text="On the Policy & Rules dashboard, click Threat Policies.":::
 
 4. From the Microsoft 365 Defender portal, expand Threat Management from the navigation menu and then select Policy from the submenu.
 5. On the Policy dashboard, click *Preset security policies*.

@@ -41,13 +41,13 @@ Defender for Identity protects your on-premises Active Directory users and/or us
 
 The following diagram illustrates the baseline architecture for Defender for Identity. 
 
-:::image type="content" source="../../media/defender/m365-defender-identity-architecture.png" alt-text="An example of architecture for Microsoft Defender for Identity in Microsoft 365 Defender portal" lightbox="../../media/defender/m365-defender-identity-architecture.png":::
+:::image type="content" source="../../media/defender/m365-defender-identity-architecture.png" alt-text="An example of identity architecture for Microsoft Defender for Identity" lightbox="../../media/defender/m365-defender-identity-architecture.png":::
 
 In this illustration:
+
 - Sensors installed on AD domain controllers parse logs and network traffic and send them to Microsoft Defender for Identity for analysis and reporting.
 -  Sensors can also parse Active Directory Federation Services (AD FS) when Azure AD is configured to use federated authentication (dotted line in illustration). 
 - Microsoft Defender for Identity shares signals to Microsoft 365 Defender for extended detection and response (XDR).
-
 
 Defender for Identity sensors can be directly installed on the following servers:
 
@@ -60,7 +60,6 @@ For a deeper look into the architecture of Defender for Identity, including inte
 ## Understand key concepts
 
 The following table identified key concepts that are important to understand when evaluating, configuring, and deploying Microsoft Defender for Identity.
-
 
 |Concept  |Description |More information  |
 |---------|---------|---------|

@@ -71,7 +71,7 @@ It should take 5 to 10 minutes to complete this project. This time estimate incl
 
 7. Record your application ID and your tenant ID somewhere safe. They're listed under **Overview** on your application page.
 
-   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="**Overview** section in Microsoft 365 Defender portal" lightbox="../../media/app-and-tenant-ids.png":::
+   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="The Overview section in Microsoft 365 Defender portal" lightbox="../../media/app-and-tenant-ids.png":::
 
 ### Get a token using the app and use the token to access the API
 
@@ -113,7 +113,7 @@ For more information on Azure Active Directory tokens, see the [Azure AD tutoria
 
     In the following image, you can see a decoded token acquired from an app, with ```Incidents.Read.All```, ```Incidents.ReadWrite.All```, and ```AdvancedHunting.Read.All``` permissions:
 
-    :::image type="content" source="../../media/api-jwt-ms.png" alt-text="**Decoded Token** section in Microsoft 365 Defender portal" lightbox="../../media/api-jwt-ms.png":::
+    :::image type="content" source="../../media/api-jwt-ms.png" alt-text="The Decoded Token section in Microsoft 365 Defender portal" lightbox="../../media/api-jwt-ms.png":::
 
 ### Get a list of recent incidents
 

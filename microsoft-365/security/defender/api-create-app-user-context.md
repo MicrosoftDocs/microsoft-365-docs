@@ -63,11 +63,11 @@ This article explains how to:
 
 2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
 
-   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="The **New registration** option in the **Manage** pane in the Microsoft 365 Defender portal" lightbox="../../media/atp-azure-new-app2.png":::
+   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="The **New registration** option in the **Manage** pane in the Azure portal" lightbox="../../media/atp-azure-new-app2.png":::
 
 3. In the form, choose a name for your application and enter the following information for the redirect URI, then select **Register**.
 
-   :::image type="content" source="../../media/nativeapp-create2.PNG" alt-text="The application registration pane in the Microsoft 365 Defender portal" lightbox="../../media/nativeapp-create2.PNG":::
+   :::image type="content" source="../../media/nativeapp-create2.PNG" alt-text="The application registration pane in the Azure portal" lightbox="../../media/nativeapp-create2.PNG":::
    
 
    - **Application type:** Public client

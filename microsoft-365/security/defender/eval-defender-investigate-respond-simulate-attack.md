@@ -122,13 +122,13 @@ One alternative is to host your AD DS domain controller and test device as virtu
 
 Here is the result.
 
-:::image type="content" source="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-endpoints-tlg.png" alt-text="An example of the page displaying details of the endpoints for your Defender evaluation environment using the simulated enterprise Test Lab Guide" lightbox="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-endpoints-tlg.png":::
+:::image type="content" source="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-endpoints-tlg.png" alt-text="An example evaluation environment using the simulated enterprise Test Lab Guide" lightbox="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-endpoints-tlg.png":::
 
 You'll simulate a sophisticated attack that leverages advanced techniques to hide from detection. The attack enumerates opened Server Message Block (SMB) sessions on domain controllers and retrieves recent IP addresses of users' devices. This category of attacks usually doesn't include files dropped on the victim's device and they occur solely in memory. They "live off the land" by using existing system and administrative tools and inject their code into system processes to hide their execution. Such behavior allows them to evade detection and persist on the device.
 
 In this simulation, our sample scenario starts with a PowerShell script. In the real world, a user might be tricked into running a script or the script might run from a remote connection to another computer from a previously infected device, which indicates that the attacker is attempting to move laterally in the network. Detection of these scripts can be difficult because administrators also often run scripts remotely to carry out various administrative activities.
 
-:::image type="content" source="../../media/mtp/mtpdiydiagram.png" alt-text="An example of Fileless PowerShell attack with process injection and SMB reconnaisance attack" lightbox="../../media/mtp/mtpdiydiagram.png":::
+:::image type="content" source="../../media/mtp/mtpdiydiagram.png" alt-text="The Fileless PowerShell attack with process injection and SMB reconnaisance attack" lightbox="../../media/mtp/mtpdiydiagram.png":::
 
 During the simulation, the attack injects shellcode into a seemingly innocent process. The scenario requires the use of notepad.exe. We chose this process for the simulation, but attackers would more likely target a long-running system process, such as svchost.exe. The shellcode then goes on to contact the attacker's command-and-control (C2) server to receive instructions on how to proceed. The script attempts executing reconnaissance queries against the domain controller (DC). Reconnaissance allows an attacker to get information about recent user login information. Once attackers have this information, they can move laterally in the network to get to a specific sensitive account
 
@@ -283,7 +283,7 @@ On the incident page, select the **Users** tab to display the list of users invo
 
 Select the user name to open the user's profile page where further investigation can be conducted. [Read more about investigating risky users](/cloud-app-security/tutorial-ueba#identify).
 
-:::image type="content" source="../../media/mtp/fig13.png" alt-text="Defender for Cloud Apps user page in Microsoft 365 Defender portal" lightbox="../../media/mtp/fig13.png":::
+:::image type="content" source="../../media/mtp/fig13.png" alt-text="The Defender for Cloud Apps user page in Microsoft 365 Defender portal" lightbox="../../media/mtp/fig13.png":::
 
 #### Automated investigation and remediation
 
@@ -318,7 +318,7 @@ After the investigation is complete and confirmed to be remediated, you resolve 
 
 From the **Incident** page, select **Manage incident**. Set the status to **Resolve incident** and select **True alert** for the classification and **Security testing** for the determination.
 
-:::image type="content" source="../../media/mtp/fig16.png" alt-text="**Manage incident** panel with ability to resolve incidents in Microsoft 365 Defender portal" lightbox="../../media/mtp/fig16.png":::
+:::image type="content" source="../../media/mtp/fig16.png" alt-text="The **Manage incident** panel with ability to resolve incidents in Microsoft 365 Defender portal" lightbox="../../media/mtp/fig16.png":::
 
 When the incident is resolved, it resolves all of the associated alerts in the Microsoft 365 Defender portal and the related portals.
 

@@ -108,11 +108,11 @@ Depending on how automated investigation and response capabilities are configure
 
 Here's an example.
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Unified Action center in Microsoft 365 Defender" lightbox="../../media/m3d-action-center-unified.png":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="The Unified Action center in Microsoft 365 Defender" lightbox="../../media/m3d-action-center-unified.png":::
 
 From the Action center, you can select pending actions and then approve or reject them in the flyout pane. Here's an example.
 
-:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="The page displaying the options to approve or reject an action" lightbox="../../media/air-actioncenter-itemselected.png":::
+:::image type="content" source="../../media/air-actioncenter-itemselected.png" alt-text="The pane displaying the options to approve or reject an action" lightbox="../../media/air-actioncenter-itemselected.png":::
 
 
 Approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner.
