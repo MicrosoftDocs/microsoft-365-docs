@@ -55,7 +55,7 @@ The setup wizard walks you through installing the Microsoft 365 apps on your com
   
 If you don't complete the setup wizard, you can complete setup tasks at any time from [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) > **Setup**. From here you can migrate email and contacts from another email service, change the domain of your admin account, manage your billing information, add or remove users, reset passwords, and do other business functions. For more information about the differences between the setup wizard and the **Setup** page, see [Differences between the Microsoft 365 setup wizard and the Setup page](o365-setup-wizard-and-setup-page.md).
 
-If you get stuck at any point, call us. [We're here to help!](../../business-video/get-help-support.md)
+If you get stuck at any point, call us. [We're here to help!](../../business-video/get-help-support.md).
   
 ## When not to use the setup wizard: Active Directory synchronization and hybrid environments
 
@@ -114,7 +114,7 @@ If you're going to use Microsoft 365 for your email account, you can bring your 
 
 ## Plan for file storage and migration
 
-Microsoft 365 provides cloud storage for individuals, small organizations, and enterprises. For guidance about what to store where, see [Where you can store documents in Microsoft 365](../../business-video/store-files.md).
+Microsoft 365 provides cloud storage for individuals, small organizations, and enterprises. For guidance about what to store where, see [Where you can store documents in Microsoft 365](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e).
   
 - **You can move hundreds of files** to [OneDrive](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB) or to a [SharePoint team site](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242). You can upload 100 files at a time. Avoid uploading files larger than 2GB, which is the maximum file size by default.
   
