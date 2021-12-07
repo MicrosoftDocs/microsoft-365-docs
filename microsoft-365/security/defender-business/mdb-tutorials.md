@@ -27,7 +27,7 @@ If you've just finished setting up Microsoft Defender for Business, you might be
 
 ## Technical preview scenarios
 
-The following table summarizes scenarios for technical preview:
+The following table summarizes scenarios to try during the preview of Defender for Business:
 <br/><br/>
 
 
