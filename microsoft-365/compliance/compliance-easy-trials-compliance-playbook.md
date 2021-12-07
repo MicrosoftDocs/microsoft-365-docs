@@ -421,7 +421,7 @@ Proactively identify and protect against privacy risks such as data hoarding, da
 
 [Learn more about privacy management for Microsoft 365](/privacy/solutions/privacymanagement/privacy-management).
 
-[Trial playbook: Privacy Management for Microsoft 365](privacy-management-trial-playbook.md)
+[Trial playbook: Privacy Management for Microsoft 365](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
 
 ## Additional resources
 
