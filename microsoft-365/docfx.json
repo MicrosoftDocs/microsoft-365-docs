@@ -90,7 +90,8 @@
         "admin/**/*.md": false,
         "business/**/*.md": false,
         "business-video/**/*.md": false,
-        "commerce/**/*.md": false
+        "commerce/**/*.md": false,
+        "lighthouse/**/*.md": false
         },
       "titleSuffix": {
         "compliance/**/*.md": "Microsoft 365 Compliance",
