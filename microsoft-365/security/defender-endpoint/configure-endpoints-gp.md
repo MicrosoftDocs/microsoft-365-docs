@@ -14,7 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 09/16/2021
+ms.date: 12/07/2021
 ms.technology: mde
 ---
 
