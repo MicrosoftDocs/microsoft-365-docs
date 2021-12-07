@@ -46,7 +46,7 @@ The following table lists the basic requirements for Defender for Endpoint Plan 
 
 | Requirement | Description |
 |:---|:---|
-| Licensing requirements | Defender for Endpoint Plan 1 <br/><br/>*If you have Microsoft 365 E3 or A3, you can join the preview program.* |
+| Licensing requirements | Defender for Endpoint Plan 1 |
 | Browser requirements | Microsoft Edge <br/> Internet Explorer version 11 <br/> Google Chrome |
 | Operating systems | Windows 10, version 1709 or later <br/>macOS: 11.5 (Big Sur), 10.15.7 (Catalina), or 10.14.6 (Mojave) <br/>iOS <br/>Android OS  |
 | Datacenter | One of the following datacenter locations: <br/>- European Union <br/>- United Kingdom <br/>- United States |
@@ -290,7 +290,7 @@ With network protection, you can help protect your organization against dangerou
 
 ### Web protection
 
-With web protection, you can protect your organization's devices from web threats and unwanted content. Your web protection includes [web threat protection](#configure-web-threat-protection) and [web content filtering](#configure-web-content-filtering) (preview). Configure both sets of capabilities. We recommend using Microsoft Endpoint Manager to configure your web protection settings.
+With web protection, you can protect your organization's devices from web threats and unwanted content. Your web protection includes [web threat protection](#configure-web-threat-protection) and [web content filtering](#configure-web-content-filtering). Configure both sets of capabilities. We recommend using Microsoft Endpoint Manager to configure your web protection settings.
 
 #### Configure web threat protection
 
@@ -323,9 +323,6 @@ With web protection, you can protect your organization's devices from web threat
 > To learn more about web threat protection, see [Protect your organization against web threats](web-threat-protection.md).
 
 #### Configure web content filtering
-
-> [!NOTE]
-> Web content filtering is currently in preview.
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) and sign in.
 
