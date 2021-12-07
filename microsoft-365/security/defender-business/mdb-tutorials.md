@@ -40,7 +40,7 @@ The following table summarizes scenarios to try during the preview of Defender f
 | View incidents in Microsoft 365 Lighthouse     | If you are a Microsoft partner using Microsoft 365 Lighthouse, you can view incidents across your customers' tenants in your Microsoft 365 Lighthouse portal. To learn more, see [Microsoft 365 Lighthouse and Microsoft Defender for Business](mdb-lighthouse-integration.md).       |
 
 
-## Recommended tutorials for Microsoft Defender for Business
+## Recommended tutorials for Defender for Business
 
 The following table describes the recommended tutorials for Defender for Business customers:
 <br/><br/>
