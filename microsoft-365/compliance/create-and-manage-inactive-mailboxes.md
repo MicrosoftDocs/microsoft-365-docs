@@ -23,7 +23,6 @@ ms.custom:
 description: "Create and manage inactive mailboxes that retain the contents of deleted mailboxes in Microsoft 365."
 ---
 
-
 > [!IMPORTANT]
 > Removing a Exchange license from a user account does not override any retention policies or holds in place on the mailbox. However, it places the mailbox in a tombstone state, rather than an inactive state. The content cannot be accessed by eDiscovery Tools or Content Searches until a license is reapplied to the user account. CAUTION If the user account is deleted while the mailbox is in a tombstone state, all access to the mailbox content will be lost.
 # Create and manage inactive mailboxes
