@@ -42,7 +42,7 @@ You can enable calendar sharing for all users in your organization in the Micros
 
 4. Choose what type of calendar information to make available to users. You can allow all information, or limit it to time only or time, subject, and location only.
 
-## External Sharing Sync Interval
+## External sharing sync interval
 
 Instant syncing for sharing outside your tenant isn't supported currently. While you can share in these configurations, syncing will happen periodically. There are two types of cross-tenant sharing:
 
