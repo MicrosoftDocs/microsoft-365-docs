@@ -49,12 +49,6 @@ Before creating a shared mailbox, be sure to read [About shared mailboxes](about
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-2. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), go to the **Teams & Groups** \> **Shared mailboxes** page.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 2. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), go to the **Teams & Groups** \> **Shared mailboxes** page.
@@ -112,12 +106,6 @@ But what if an admin simply resets the password of the shared mailbox user accou
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
