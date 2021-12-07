@@ -75,6 +75,63 @@ A standard retention label has retention settings and actions but doesn't mark c
 |Action| Retention label |Record - locked| Record - unlocked| Regulatory record |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Edit contents|Allowed | **Blocked** | Allowed | **Blocked**|
+|Edit properties, including rename|Allowed |Allowed <sup>$</sup> | Allowed | **Blocked**|
+|Delete|Allowed <sup>$</sup> |**Blocked** |**Blocked**| **Blocked**|
+|Copy|Allowed |Allowed | Allowed| Allowed|
+|Move within container <sup>$</sup>|Allowed |Allowed | Allowed| Allowed|
+|Move across containers <sup>$</sup>|Allowed |Allowed if never unlocked | **Blocked** | **Blocked**|
+|Open/Read|Allowed |Allowed | Allowed| Allowed|
+|Change label|Allowed |Allowed - container admin only | Allowed - container admin only| **Blocked**
+|Remove label|Allowed |Allowed - container admin only | Allowed - container admin only| **Blocked**
+
+Footnotes:
+
+<sup>$</sup>
+Allowed by default but can be blocked by a tenant setting for files that are larger than 0 bytes: Go to the **Records management** node in the Microsoft 365 compliance center > **Records management settings** > **Retention labels** > **Editing record properties** > **Editing record properties**.
+
+<sup>$</sup>
+Supported by OneDrive and Exchange by retaining a copy in a secured location, but blocked by SharePoint.
+
+When you apply a retention label to a list item that has a document attachment, that document doesn't inherit the retention settings and can be deleted from the list item. In comparison, if that list item was declared a record with a retention label, the document attachment would inherit the retention settings and couldn't be deleted.
+
+<sup>$</sup>
+Containers include SharePoint document libraries, OneDrive accounts, and Exchange mailboxes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|Action| Retention label |Record - locked| Record - unlocked| Regulatory record |
+|:-----|:-----|:-----|:-----|:-----|:-----|
+|Edit contents|Allowed | **Blocked** | Allowed | **Blocked**|
 |Edit properties, including rename|Allowed |Allowed <sup>1</sup> | Allowed | **Blocked**|
 |Delete|Allowed <sup>2</sup> |**Blocked** |**Blocked**| **Blocked**|
 |Copy|Allowed |Allowed | Allowed| Allowed|
