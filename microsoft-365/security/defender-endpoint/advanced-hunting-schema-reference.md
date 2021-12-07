@@ -43,7 +43,7 @@ While constructing queries, use the built-in schema reference to quickly get the
 
 To quickly access the schema reference, select the **View reference** action next to the table name in the schema representation. You can also select **Schema reference** to search for a table.
 
-![Image showing how to access in-portal schema reference.](images/ah-reference.png)
+:::image type="content" source="images/ah-reference.png" alt-text="An example of the page that illustrates how to access in-portal schema reference" lightbox="images/ah-reference.png":::
 
 ## Learn the schema tables
 

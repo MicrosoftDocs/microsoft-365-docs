@@ -83,19 +83,19 @@ Field numbers match the numbers in the images below.
 > ||Not part of the schema|deviceProduct||Static value in the ArcSight mapping - 'Microsoft Defender ATP'.|
 > ||Not part of the schema|deviceVersion||Static value in the ArcSight mapping - '2.0', used to identify the mapping versions.|
 
-:::image type="content" alt-text="Image of alert with numbers." source="images/atp-alert-page.png" lightbox="images/atp-alert-page.png":::
+:::image type="content" source="images/atp-alert-page.png" alt-text="An example of an alert with numbers" lightbox="images/atp-alert-page.png":::
 
-:::image type="content" alt-text="Image of alert details pane with numbers." source="images/atp-siem-mapping13.png":::
+:::image type="content" source="images/atp-siem-mapping13.png" alt-text="An example of alert details pane with numbers" lightbox="images/atp-siem-mapping13.png" :::
 
-:::image type="content" alt-text="Image of artifact timeline with numbers1." source="images/atp-siem-mapping3.png" lightbox="images/atp-siem-mapping3.png":::
+:::image type="content" source="images/atp-siem-mapping3.png" alt-text="An example of the artifact timeline with numbers1" lightbox="images/atp-siem-mapping3.png":::
 
-:::image type="content" alt-text="Image of artifact timeline with numbers2." source="images/atp-siem-mapping4.png" lightbox="images/atp-siem-mapping4.png":::
+:::image type="content" source="images/atp-siem-mapping4.png" alt-text="An example of the artifact timeline with numbers2" lightbox="images/atp-siem-mapping4.png":::
 
-:::image type="content" alt-text="Image machine view." source="images/atp-mapping6.png" lightbox="images/atp-mapping6.png":::
+:::image type="content" source="images/atp-mapping6.png" alt-text="An example of the image browser URL" lightbox="images/atp-mapping6.png":::
 
-:::image type="content" alt-text="Image browser URL." source="images/atp-mapping5.png" lightbox="images/atp-mapping5.png":::
+:::image type="content" source="images/atp-mapping5.png" alt-text="An example of the alert details page" lightbox="images/atp-mapping5.png":::
 
-:::image type="content" alt-text="Image actor alert." source="images/atp-mapping7.png" lightbox="images/atp-mapping7.png":::
+:::image type="content" source="images/atp-mapping7.png" alt-text="An example of the actor alert" lightbox="images/atp-mapping7.png":::
 
 ## Related topics
 

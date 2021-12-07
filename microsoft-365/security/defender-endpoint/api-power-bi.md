@@ -43,11 +43,11 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 - Click **Get Data** \> **Blank Query**
 
-  ![Image of create blank query.](images/power-bi-create-blank-query.png)
+  :::image type="content" source="images/power-bi-create-blank-query.png" alt-text="The **Blank Query** option under the **Get Data** menu item" lightbox="images/power-bi-create-blank-query.png":::
 
 - Click **Advanced Editor**
 
-  ![Image of open advanced editor.](images/power-bi-open-advanced-editor.png)
+  :::image type="content" source="images/power-bi-open-advanced-editor.png" alt-text="The **Advanced Editor** menu item" lightbox="images/power-bi-open-advanced-editor.png":::
 
 - Copy the below and paste it in the editor:
 
@@ -93,17 +93,18 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 - Click **Edit Credentials**
 
-    ![Image of edit credentials0.](images/power-bi-edit-credentials.png)
+    :::image type="content" source="images/power-bi-edit-credentials.png" alt-text="The **Edit Credentials** menu item" lightbox="images/power-bi-edit-credentials.png":::
+    
 
 - Select **Organizational account** \> **Sign in**
 
-    ![Image of set credentials1.](images/power-bi-set-credentials-organizational.png)
+    :::image type="content" source="images/power-bi-set-credentials-organizational.png" alt-text="The **Sign in** option in the **Organizational account** menu item" lightbox="images/power-bi-set-credentials-organizational.png":::
 
 - Enter your credentials and wait to be signed in
 
 - Click **Connect**
 
-    ![Image of set credentials2.](images/power-bi-set-credentials-organizational-cont.png)
+    :::image type="content" source="images/power-bi-set-credentials-organizational-cont.png" alt-text="The sign-in confirmation message in the **Organizational account** menu item" lightbox="images/power-bi-set-credentials-organizational-cont.png":::
 
 - Now the results of your query will appear as table and you can start build visualizations on top of it!
 

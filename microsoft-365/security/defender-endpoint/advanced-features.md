@@ -101,7 +101,7 @@ To turn **Allow or block** files on:
 
 1. Toggle the setting between **On** and **Off**.
  
-    :::image type="content" source="../../media/alloworblockfile.png" alt-text="Image of advanced settings for block file feature.":::
+    :::image type="content" source="../../media/alloworblockfile.png" alt-text="An example of the page that displays the **Advanced features** feature" lightbox="../../media/alloworblockfile.png":::
 
 1. Select **Save preferences** at the bottom of the page.
 
