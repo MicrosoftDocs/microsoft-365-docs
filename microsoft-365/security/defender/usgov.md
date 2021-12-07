@@ -108,8 +108,8 @@ These are the known gaps:
 
 |Feature name|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|Integrations: Microsoft Sentinel|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Alerts <br /> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In private preview|![Yes](images/svg/check-yes.svg) Alerts <br /> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In private preview|
-|Microsoft Threat Experts|![No](images/svg/check-no.svg) On engineering backlog|![No](images/svg/check-no.svg) On engineering backlog|![No](images/svg/check-no.svg) On engineering backlog|
+|Integrations: Microsoft Sentinel (Incidents & Raw data)|![Yes](../defender-endpoint/images/svg/check-yes.svg)|![Yes](../defender-endpoint/images/svg/check-yes.svg) In private preview|![Yes](../defender-endpoint/images/svg/check-yes.svg) In private preview|
+|Microsoft Threat Experts|![No](../defender-endpoint/images/svg/check-no.svg) On engineering backlog|![No](../defender-endpoint/images/svg/check-no.svg) On engineering backlog|![No](../defender-endpoint/images/svg/check-no.svg) On engineering backlog|
 
 ## Additional details
 
