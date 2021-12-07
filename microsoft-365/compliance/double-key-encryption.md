@@ -22,7 +22,8 @@ ms.custom: admindeeplinkCOMPLIANCE
 > *Applies to: Double Key Encryption for Microsoft 365, [Microsoft 365 Compliance](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 >
 > *Instructions for: [Azure Information Protection unified labeling client for Windows](/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
->
+
+
 > *Service description for: [Microsoft 365 Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 Double Key Encryption (DKE) uses two keys together to access protected content. Microsoft stores one key in Microsoft Azure, and you hold the other key. You maintain full control of one of your keys using the Double Key Encryption service. You apply protection using The Azure Information Protection unified labeling client to your highly sensitive content.
@@ -59,7 +60,7 @@ If your organizations have any of the following requirements, you can use DKE to
 
 **Azure Information Protection**. DKE works with sensitivity labels and requires Azure Information Protection.
 
-DKE sensitivity labels are made available to end users through the sensitivity ribbon in Office Desktop Apps. Install these prerequisites on each client computer where you want to protect and consume protected documents.
+DKE sensitivity labels are made available to end users through the sensitivity button in the AIP Unified Labeling client in Office Desktop Apps. Install these prerequisites on each client computer where you want to protect and consume protected documents.
 
 **Microsoft Office Apps for enterprise** version 2009 or later (Desktop versions of Word, PowerPoint, and Excel) on Windows.
 
@@ -274,9 +275,16 @@ To generate keys:
 
 4. Generate the private key.
 
-   ```console
-   openssl rsa -in key.pem -out privkeynopass.pem
-   ```
+   If you installed OpenSSL version 3 or later, run the following command:
+  
+  ```console
+  openssl rsa -in key.pem -out privkeynopass.pem -outform PEM -traditional
+  ```
+  
+>  Otherwise run the following command:
+>  ```console
+>  openssl rsa -in key.pem -out privkeynopass.pem -outform PEM
+>  ```
 
 5. Generate the public key.
 
@@ -535,9 +543,10 @@ Your DKE service is now registered. Continue by [creating labels using DKE](#cre
 
 ## Create sensitivity labels using DKE
 
-In the Microsoft 365 compliance center, create a new sensitivity label and apply encryption as you would otherwise. Select **Use Double Key Encryption** and enter the endpoint URL for your key.
+In the Microsoft 365 compliance center, create a new sensitivity label and apply encryption as you would otherwise. Select **Use Double Key Encryption** and enter the endpoint URL for your key. You need to include the key name you have provided within the "TestKeys" section of the appsettings.json file in the URL. 
 
-For example:
+For example: https://testingdke1.azurewebsites.net/**KEYNAME**
+
 
 > [!div class="mx-imgBorder"]
 > ![Select Use Double Key Encryption in the Microsoft 365 compliance center.](../media/dke-use-dke.png)
@@ -564,3 +573,15 @@ If you're an Office Insider, DKE is enabled for you. Otherwise, enable DKE for y
 If you want, once you're finished setting up DKE, you can migrate content that you've protected using HYOK labels to DKE labels. To migrate, you'll use the AIP scanner. To get started using the scanner, see [What is the Azure Information Protection unified labeling scanner?](/azure/information-protection/deploy-aip-scanner).
 
 If you don't migrate content, your HYOK protected content will remain unaffected.
+
+## Other deployment options
+
+We realize that for some customers in highly regulated industries, this standard reference implementation using software-based keys may not be sufficient to meet their enhanced compliance obligations and needs.
+We have partnered with various third-party hardware security module (HSM) vendors to bring support for enhanced key management options to the DKE service, including:
+
+ - [Entrust](https://www.entrust.com/digital-security/hsm/services/packaged-services/double-key-encryption-integration#:~:text=Entrust%20Double%20Key%20Encryption%20for%20Microsoft%20AIP%2C%20offered,trust%20for%20the%20protection%20of%20sensitive%20cryptographic%20keys.) 
+
+- [Thales](https://cpl.thalesgroup.com/cloud-security/encryption/double-key-encryption) 
+
+Reach out directly to these vendors for more information and guidance on their in-market DKE HSM solutions. 
+
