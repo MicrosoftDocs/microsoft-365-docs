@@ -1,6 +1,6 @@
 ---
 title: Microsoft cloud architecture models - enterprise resource planning
-description: These Microsoft cloud architecture posters give you information about Microsoft cloud services like Azure and Office 365.
+description: "Learn about Microsoft cloud services like Azure and Office 365 with these architecture diagrams and illustrations."
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -74,4 +74,8 @@ This series of topics illustrates several architecture approaches for mergers, a
 |[![Thumb image for Microsoft cloud tenant-to-tenant migrations.](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> Updated February 2021    |This model contains: <ul><li>A mapping of business scenarios to architecture approaches</li><li>Design considerations</li><li>Single event migration flow example</li><li>Phased migration flow example</li><li>Tenant move or split flow example</li></ul>|
 
 
+## Related resources
 
+Get resources to create your own architecture design diagrams: [Microsoft 365 architecture icons and templates](architecture-icons-templates.md).
+
+Go to the [Azure architecture center](/azure/architecture/).
