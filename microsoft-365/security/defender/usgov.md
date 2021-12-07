@@ -23,7 +23,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender for US Government customers, built in the Azure US Government environment, uses the same underlying technologies as 365 Defender in Azure Commercial.
+Microsoft 365 Defender for US Government customers, built in the Azure US Government environment, uses the same underlying technologies as Microsoft 365 Defender in Azure Commercial.
 
 This offering is available to GCC, GCC High, and DoD customers and is based on the same prevention, detection, investigation, and remediation as the commercial version. However, there are some differences in the availability of capabilities for this offering.
 
