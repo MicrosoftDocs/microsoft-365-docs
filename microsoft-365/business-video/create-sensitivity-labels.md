@@ -31,7 +31,7 @@ Sensitivity labels allow you to classify and protect content that is sensitive t
 
 ## Try it!
 
-1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Solutions** > **Information protection**
+1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Solutions** > **Information protection**.
     
     If you don't immediately see this option, first select **Show all**.
 
