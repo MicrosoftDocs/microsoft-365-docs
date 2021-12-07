@@ -63,7 +63,7 @@ Check your spam folder. If it’s not there, contact your admin or business owne
 
 ### I have a question about upgrading my account, who can I talk to?
 
-Contact our small business support experts who can help you upgrade your Microsoft 365 subscription. Learn more at [Get support]([Get support](../get-help-support.md).
+Contact our small business support experts who can help you upgrade your Microsoft 365 subscription. Learn more at [Get support](../get-help-support.md).
 
 ### What happens to my data and account when I upgrade?
 

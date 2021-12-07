@@ -57,7 +57,7 @@ If you're working with files you share inside your business, it's also a good id
 1. Create the team and invite your team to it.
 1. Upload your files.
 
-Learn more about [company file storage](fi[Move files to SharePoint](../admin/setup/files-to-sharepoint.md) and [employee file storage]([Move files to OneDrive](../admin/setup/files-to-onedrive.md).
+Learn more about [Move files to SharePoint](../admin/setup/files-to-sharepoint.md) and [Move files to OneDrive](../admin/setup/files-to-onedrive.md).
 
 ## How to get it done
 
@@ -65,5 +65,5 @@ Need a little help? Learn how to:
 
 - [Send and receive attachments](https://support.microsoft.com/office/sending-and-receiving-attachments-d32cd5ad-c7c5-49df-814d-4c17a5d3beb0)
 - [Share files and folders with OneDrive](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)
-- [Create a company-wide team](/microsoftteams/create-an-org-wide-team.md)
+- [Create a company-wide team](/microsoftteams/create-an-org-wide-team)
 - [Add guests to a team](https://support.microsoft.com/office/add-guests-to-a-team-in-teams-fccb4fa6-f864-4508-bdde-256e7384a14f)
