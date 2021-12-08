@@ -34,7 +34,7 @@ This article outlines the process to enable and pilot Microsoft Defender for Ide
 
 Use the following steps to enable and pilot Microsoft Defender for Identity.
 
-:::image type="content" source="../../media/defender/m365-defender-identity-eval-steps.png" alt-text="The steps for adding Microsoft Defender for Identity to the Defender evaluation environment" lightbox="../../media/defender/m365-defender-identity-eval-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-identity-eval-steps.png" alt-text="The steps for adding Microsoft Defender for Identity to the Microsoft Defender evaluation environment" lightbox="../../media/defender/m365-defender-identity-eval-steps.png":::
 
 The following table describes the steps in the illustration.
 

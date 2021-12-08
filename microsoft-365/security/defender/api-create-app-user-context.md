@@ -63,7 +63,7 @@ This article explains how to:
 
 2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
 
-   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="The **New registration** option in the **Manage** pane in the Azure portal" lightbox="../../media/atp-azure-new-app2.png":::
+   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="The New registration** option in the Manage pane in the Azure portal" lightbox="../../media/atp-azure-new-app2.png":::
 
 3. In the form, choose a name for your application and enter the following information for the redirect URI, then select **Register**.
 
@@ -82,7 +82,7 @@ This article explains how to:
 
    - Choose **Delegated permissions**. Choose the relevant permissions for your scenario (for example **Incident.Read**), and then select **Add permissions**.
 
-     :::image type="content" source="../../media/request-api-permissions-delegated.PNG" alt-text="The **Delegated permissions** pane in the Microsoft 365 Defender portal" lightbox="../../media/request-api-permissions-delegated.PNG":::
+     :::image type="content" source="../../media/request-api-permissions-delegated.PNG" alt-text="The Delegated permissions pane in the Microsoft 365 Defender portal" lightbox="../../media/request-api-permissions-delegated.PNG":::
 
     > [!NOTE]
     > You need to select the relevant permissions for your scenario. *Read all incidents* is just an example. To determine which permission you need, please look at the **Permissions** section in the API you want to call.
@@ -95,7 +95,7 @@ This article explains how to:
 
 6. Record your application ID and your tenant ID somewhere safe. They're listed under **Overview** on your application page.
 
-   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="The **Overview** pane in the Microsoft 365 Defender portal" lightbox="../../media/app-and-tenant-ids.png":::
+   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="The Overview pane in the Microsoft 365 Defender portal" lightbox="../../media/app-and-tenant-ids.png":::
 
 ## Get an access token
 
@@ -126,7 +126,7 @@ $response.AccessToken
 
 In the following image, you can see a decoded token acquired from an app, with ```Incidents.Read.All```, ```Incidents.ReadWrite.All```, and ```AdvancedHunting.Read.All``` permissions:
 
-:::image type="content" source="../../media/defender-endpoint/webapp-decoded-token.png" alt-text="The permissions section in the **Decoded Token** pane in the Microsoft 365 Defender portal" lightbox="../../media/defender-endpoint/webapp-decoded-token.png":::
+:::image type="content" source="../../media/defender-endpoint/webapp-decoded-token.png" alt-text="The permissions section in the Decoded Token pane in the Microsoft 365 Defender portal" lightbox="../../media/defender-endpoint/webapp-decoded-token.png":::
 
 ## Use the token to access the Microsoft 365 Defender API
 

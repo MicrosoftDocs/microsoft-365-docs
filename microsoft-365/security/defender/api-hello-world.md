@@ -43,7 +43,7 @@ It should take 5 to 10 minutes to complete this project. This time estimate incl
 
 2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
 
-   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="The **New registration** section in the Microsoft 365 Defender portal" lightbox="../../media/atp-azure-new-app2.png":::
+   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="The New registration section in the Microsoft 365 Defender portal" lightbox="../../media/atp-azure-new-app2.png":::
 
 3. In the registration form, choose a name for your application, then select **Register**. Selecting a redirect URI is optional. You won't need one to complete this example.
 
@@ -59,19 +59,19 @@ It should take 5 to 10 minutes to complete this project. This time estimate incl
 
 5. Select **Grant admin consent**. Every time you add a permission, you must select **Grant admin consent** for it to take effect.
 
-    :::image type="content" source="../../media/grant-consent.PNG" alt-text=" The Grant admin consent section in Microsoft 365 Defender portal" lightbox="../../media/grant-consent.PNG":::
+    :::image type="content" source="../../media/grant-consent.PNG" alt-text=" The Grant admin consent section in the Microsoft 365 Defender portal" lightbox="../../media/grant-consent.PNG":::
 
 6. Add a secret to the application. Select **Certificates & secrets**, add a description to the secret, then select **Add**.
 
     > [!TIP]
     > After you select **Add**, select **copy the generated secret value**. You won't be able to retrieve the secret value after you leave.
 
-    :::image type="content" source="../../media/webapp-create-key2.png" alt-text=" The add secret section in Microsoft 365 Defender portal" lightbox="../../media/webapp-create-key2.png":::
+    :::image type="content" source="../../media/webapp-create-key2.png" alt-text=" The add secret section in the Microsoft 365 Defender portal" lightbox="../../media/webapp-create-key2.png":::
     
 
 7. Record your application ID and your tenant ID somewhere safe. They're listed under **Overview** on your application page.
 
-   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="The Overview section in Microsoft 365 Defender portal" lightbox="../../media/app-and-tenant-ids.png":::
+   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="The Overview section in the Microsoft 365 Defender portal" lightbox="../../media/app-and-tenant-ids.png":::
 
 ### Get a token using the app and use the token to access the API
 
@@ -113,7 +113,7 @@ For more information on Azure Active Directory tokens, see the [Azure AD tutoria
 
     In the following image, you can see a decoded token acquired from an app, with ```Incidents.Read.All```, ```Incidents.ReadWrite.All```, and ```AdvancedHunting.Read.All``` permissions:
 
-    :::image type="content" source="../../media/api-jwt-ms.png" alt-text="The Decoded Token section in Microsoft 365 Defender portal" lightbox="../../media/api-jwt-ms.png":::
+    :::image type="content" source="../../media/api-jwt-ms.png" alt-text="The Decoded Token section in the Microsoft 365 Defender portal" lightbox="../../media/api-jwt-ms.png":::
 
 ### Get a list of recent incidents
 

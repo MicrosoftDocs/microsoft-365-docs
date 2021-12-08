@@ -57,7 +57,7 @@ Learn how to configure your Event Hub so that it can ingest events from Microsof
 
 1. Create a secret by clicking on **Certificates & secrets** \> **New client secret**:
 
-    :::image type="content" source="../../media/d2ef88d3d2310d2c60c294b569cdf02e.png" alt-text="Client secret section in the Microsoft Azure portal" lightbox="../../media/d2ef88d3d2310d2c60c294b569cdf02e.png":::
+    :::image type="content" source="../../media/d2ef88d3d2310d2c60c294b569cdf02e.png" alt-text="The Client secret section in the Microsoft Azure portal" lightbox="../../media/d2ef88d3d2310d2c60c294b569cdf02e.png":::
     
 
 > [!WARNING]
@@ -76,7 +76,7 @@ Learn how to configure your Event Hub so that it can ingest events from Microsof
 
 1. You will also need the Resource ID of this Event Hubs Namespace. Go to your Azure Event Hubs namespace page \> Properties. Copy the text under Resource ID and record it for use during the Microsoft 365 Configuration section below.
 
-    :::image type="content" source="../../media/759498162a4e93cbf17c4130d704d164.png" alt-text="Event hubs properties section in the Microsoft Azure portal" lightbox="../../media/759498162a4e93cbf17c4130d704d164.png":::
+    :::image type="content" source="../../media/759498162a4e93cbf17c4130d704d164.png" alt-text="The event hubs properties section in the Microsoft Azure portal" lightbox="../../media/759498162a4e93cbf17c4130d704d164.png":::
 
 
 1. Once the Event Hubs Namespace is created, you will need to add the App Registration Service Principal as Reader, Azure Event Hubs Data Receiver, and the user who will be logging into Microsoft 365 Defender as Contributor (you can also do this at Resource Group or Subscription level).
@@ -115,7 +115,7 @@ The Partition Count allows for more throughput via parallelism, so it is recomme
 
 For these Event Hubs (not namespace) you will need to configure a Shared Access Policy with Send, Listen Claims. Click on your **Event Hub** \> **Shared access policies** \> **+ Add** and then give it a Policy name (not used elsewhere) and check **Send** and **Listen**.
 
-:::image type="content" source="../../media/1867d13f46dc6a0f4cdae6cf00df24db.png" alt-text="Shared access policies page in the Microsoft Azure portal" lightbox="../../media/1867d13f46dc6a0f4cdae6cf00df24db.png":::
+:::image type="content" source="../../media/1867d13f46dc6a0f4cdae6cf00df24db.png" alt-text="The Shared access policies page in the Microsoft Azure portal" lightbox="../../media/1867d13f46dc6a0f4cdae6cf00df24db.png":::
 
 ## Configure Microsoft 365 Defender to send email tables
 
@@ -127,7 +127,7 @@ For these Event Hubs (not namespace) you will need to configure a Shared Access 
 
     - Global Admin or Security Admin Role on the tenant tied to Microsoft 365 Defender and Azure.
 
-      :::image type="content" source="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png" alt-text="The **Settings** page of the Microsoft 365 Defender portal" lightbox="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png":::
+      :::image type="content" source="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png" alt-text="The Settings page of the Microsoft 365 Defender portal" lightbox="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png":::
 
 1. Click on **Raw Data Export \> +Add**.
 
@@ -145,7 +145,7 @@ For these Event Hubs (not namespace) you will need to configure a Shared Access 
 
     **Event Types**: Select the Advanced Hunting tables that you want to forward to the Event Hubs and then on to your custom app. Alert tables are from Microsoft 365 Defender, Devices tables are from Microsoft Defender for Endpoint (EDR), and Email tables are from Microsoft Defender for Office 365. Email Events records all Email Transactions. The URL (Safe Links), Attachment (Safe Attachments), and Post Delivery Events (ZAP) are also recorded and can be joined to the Email Events on the NetworkMessageId field.
 
-    :::image type="content" source="../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png" alt-text="Streaming API settings page in the Microsoft Azure portal" lightbox="../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png":::
+    :::image type="content" source="../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png" alt-text="The Streaming API settings page in the Microsoft Azure portal" lightbox="../../media/3b2ad64b6ef0f88cf0175f8d57ef8b97.png":::
 
 1. Make sure to click **Submit**.
 
@@ -164,7 +164,7 @@ EmailEvents
 
 This will show you how many emails were received in the last hour joined across all the other tables. It will also show you if you are seeing events that could be exported to the event hubs. If this count shows 0, then you won't see any data going out to the Event Hubs.
 
-:::image type="content" source="../../media/c305e57dc6f72fa9eb035943f244738e.png" alt-text="Advanced hunting page in the Microsoft Azure portal" lightbox="../../media/c305e57dc6f72fa9eb035943f244738e.png":::
+:::image type="content" source="../../media/c305e57dc6f72fa9eb035943f244738e.png" alt-text="The advanced hunting page in the Microsoft Azure portal" lightbox="../../media/c305e57dc6f72fa9eb035943f244738e.png":::
 
 Once you have verified there is data to export, you can view the Event Hubs page to verify that messages are incoming. This can take up to one hour.
 
@@ -172,4 +172,4 @@ Once you have verified there is data to export, you can view the Event Hubs page
 1. Under **Overview**, scroll down and in the Messages graph you should see Incoming Messages. If you don't see any results, then there will be no messages
 for your custom app to ingest.
 
-:::image type="content" source="../../media/e88060e315d76e74269a3fc866df047f.png" alt-text="**Overview** page in the Microsoft 365 Azure portal" lightbox="../../media/e88060e315d76e74269a3fc866df047f.png":::
+:::image type="content" source="../../media/e88060e315d76e74269a3fc866df047f.png" alt-text=" The Overview page in the Microsoft 365 Azure portal" lightbox="../../media/e88060e315d76e74269a3fc866df047f.png":::

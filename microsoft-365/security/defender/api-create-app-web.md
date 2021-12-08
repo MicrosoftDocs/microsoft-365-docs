@@ -57,7 +57,7 @@ This article explains how to:
 
 2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
 
-   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="The **New registration** tab in the Microsoft 365 Defender portal" lightbox="../../media/atp-azure-new-app2.png":::
+   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="The New registration tab in the Microsoft 365 Defender portal" lightbox="../../media/atp-azure-new-app2.png":::
 
 3. In the form, choose a name for your application, then select **Register**.
 
@@ -90,7 +90,7 @@ This article explains how to:
 
 8. Record your application ID and your tenant ID somewhere safe. They're listed under **Overview** on your application page.
 
-   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="The **Overview** pane in Microsoft 365 Defender portal" lightbox="../../media/app-and-tenant-ids.png":::
+   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="The Overview pane in the Microsoft 365 Defender portal" lightbox="../../media/app-and-tenant-ids.png":::
 
 9. **For Microsoft 365 Defender Partners only**: [Follow these instructions](./api-partner-access.md) for partner access through the Microsoft 365 Defender APIs, set your app to be multi-tenant, so it can be available in all tenants once you receive admin consent. Partner access is **required** for third-party apps—for example, if you create an app that is intended to run in multiple customers' tenants. It is **not required** if you create a service that you want to run in your tenant only, such as an application for your own usage that will only interact with your own data. To set your app to be multi-tenant:
 
@@ -238,7 +238,7 @@ aadToken = jsonResponse["access_token"]
 
    In the following image, you can see a decoded token acquired from an app, with `Incidents.Read.All`, `Incidents.ReadWrite.All`, and `AdvancedHunting.Read.All` permissions:
 
-   :::image type="content" source="../../media/defender-endpoint/webapp-decoded-token.png" alt-text="The **Decoded token** pane in Microsoft 365 Defender portal" lightbox="../../media/defender-endpoint/webapp-decoded-token.png":::
+   :::image type="content" source="../../media/defender-endpoint/webapp-decoded-token.png" alt-text="The Decoded token pane in the Microsoft 365 Defender portal" lightbox="../../media/defender-endpoint/webapp-decoded-token.png":::
 
 ## Use the token to access the Microsoft 365 Defender API
 

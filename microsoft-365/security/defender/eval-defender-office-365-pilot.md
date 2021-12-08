@@ -49,19 +49,19 @@ Distribution groups can be created and defined directly in Exchange Online or sy
 1. Logon to Exchange Admin Center (EAC) using an account that has been granted Recipient Administrator role or been delegated group management permissions.
 2. From the navigation menu, expand *Recipients* and select *Groups*.
 
-   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-pilot.png" alt-text="Exchange admin center on the navigation menu (the quick launch) with an arrow pointing at Groups. Click Groups.":::
+   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-pilot.png" alt-text="The navigation menu of the Exchange admin center (the quick launch) with an arrow pointing at Groups. Click Groups" lightbox="../../media/mdo-eval/1_mdo-eval-pilot.png":::
 
 3. From the Groups dashboard, select "Add a group".
 
-   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-pilot-add-group.png" alt-text="Add groups on the Groups panel.":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-pilot-add-group.png" alt-text="The Add groups option on the Groups panel in the Microsoft 365 Defender portal" lightbox="../../media/mdo-eval/2_mdo-eval-pilot-add-group.png":::
 
 4. For group type, select *Distribution* and click Next.
 
-   :::image type="content" source="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png" alt-text="Choose a distribution group type here.":::
+   :::image type="content" source="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png" alt-text="The Choose a group type page in the Microsoft 365 Defender portal" lightbox="../../media/mdo-eval/3-mdo-eval-pilot-group-type.png":::
 
 5. Give the group a name and description and then click Next.
 
-   :::image type="content" source="../../media/mdo-eval/4_mdo-eval-pilot-set-up-basics.png" alt-text="Name and describe the group.":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-eval-pilot-set-up-basics.png" alt-text="The Set up the basics page in the Microsoft 365 Defender portal" lightbox="../../media/mdo-eval/4_mdo-eval-pilot-set-up-basics.png":::
 
 ## Step 2: Configure protection
 
@@ -91,28 +91,28 @@ Here is the [Preset security policies in EOP and Microsoft Defender for Office 3
 
 3. On the Policy & Rules dashboard, click *Threat Policies*.
 
-   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png" alt-text="On the Policy & Rules dashboard, click Threat Policies.":::
+   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png" alt-text="The Threat policies menu item in the Microsoft 365 Defender portal" lightbox="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png"::
 
 4. From the Microsoft 365 Defender portal, expand Threat Management from the navigation menu and then select Policy from the submenu.
 5. On the Policy dashboard, click *Preset security policies*.
 
-   :::image type="content" source="../../media/mdo-eval/7-mdo-eval-pilot-template-policies.png" alt-text="Click the Preset Security Policies tile.":::
+   :::image type="content" source="../../media/mdo-eval/7-mdo-eval-pilot-template-policies.png" alt-text="The Threat policies page in the Microsoft 365 Defender portal" lightbox="../../media/mdo-eval/7-mdo-eval-pilot-template-policies.png":::
 
 6. Click *Edit* to configure and assign the Standard policy and/or Strict policy.
 
-   :::image type="content" source="../../media/mdo-eval/8-mdo-eval-pilot-preset.png" alt-text="On the Preset security policies panel, click Edit.":::
+   :::image type="content" source="../../media/mdo-eval/8-mdo-eval-pilot-preset.png" alt-text="The Preset security policies page in the Microsoft 365 Defender portal" lightbox="../../media/mdo-eval/8-mdo-eval-pilot-preset.png":::
 
 7. Add conditions to apply baseline ***EOP*** protections to specific pilot users, or groups of users, as needed, and select *Next* to continue.
 
    Example, a Defender for Office 365 condition for pilot evaluations could be applied if the recipients are *members* of a defined *Defender for Office 365 Standard Protection* group, and then managed by simply adding accounts to, or removing account from, the group.
 
-   :::image type="content" source="../../media/mdo-eval/9-mdo-eval-pilot-eop-protections.png" alt-text="Add the conditions needed to apply the EOP security level to your pilot group.":::
+   :::image type="content" source="../../media/mdo-eval/9-mdo-eval-pilot-eop-protections.png" alt-text="The EOP protections apply to page in the Microsoft 365 Defender portal" lightbox="../../media/mdo-eval/9-mdo-eval-pilot-eop-protections.png":::
 
 8. Add conditions to apply baseline ***MDO*** protections to specific pilot users, or groups of users, as needed. Click *Next* to continue.
 
    For example, a Defender for Office 365 condition for pilot evaluations could be applied if the recipients are *members* of a defined *Defender for Office 365 Standard Protection* group and then managed by simply adding / removing accounts via the group.
 
-   :::image type="content" source="../../media/mdo-eval/10-mdo-eval-pilot-mdo-protections.png" alt-text="Add the conditions needed to apply the Defender for Office 365 security level to your pilot group.":::
+   :::image type="content" source="../../media/mdo-eval/10-mdo-eval-pilot-mdo-protections.png" alt-text="The Defender for Office 365 protections apply to page in the Microsoft 365 Defender portal" lightbox="../../media/mdo-eval/10-mdo-eval-pilot-mdo-protections.png":::
 
 9. Review and confirm your changes for assigning preset security policies.
 10. Preset protection policies can be managed (re-configured, re-applied, disabled, etc.) by returning to the Microsoft 365 Defender portal > Policies & rules > Threat Policies > and clicking the *Preset security policies* tile.
