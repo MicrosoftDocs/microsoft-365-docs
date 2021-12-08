@@ -38,7 +38,7 @@ Microsoft Threat Experts – Experts on Demand lets you get expert advice about 
 
 If you already have Microsoft Defender for Endpoint and Microsoft 365 Defender, you can apply for Microsoft Threat Experts – Targeted Attack Notifications through their Microsoft 365 Defender portal. Go to **Settings > Endpoints > General > Advanced features > Microsoft Threat Experts – Targeted Attack Notifications**, and select **Apply**. See [Configure Microsoft Threat Experts capabilities](./configure-microsoft-threat-experts.md) for a full description.
 
-:::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="The **Advanced features** option on the left navigation pane of the **Endpoints** page in Microsoft 365 Defender portal" lightbox="../../media/mte/mte-collaboratewithmte.png":::
+:::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="The Advanced features option on the left-navigation pane of the Endpoints page in the Microsoft 365 Defender portal" lightbox="../../media/mte/mte-collaboratewithmte.png":::
 
 Once your application is approved, you'll start receiving targeted attack notifications whenever Threat Experts detect a threat to your environment.
 
@@ -67,23 +67,23 @@ The option to **Consult a threat expert** is available in several places through
 
 - <i>**Device page actions menu**</i><BR>
 
-:::image type="content" source="../../media/mte/device-actions-mte-highlighted.png" alt-text="The **MTE-EOD** menu option in the Device page action menu in the Microsoft 365 Defender portal" lightbox="../../media/mte/device-actions-mte-highlighted.png":::
+:::image type="content" source="../../media/mte/device-actions-mte-highlighted.png" alt-text="The MTE-EOD menu option in the Device page action menu in the Microsoft 365 Defender portal" lightbox="../../media/mte/device-actions-mte-highlighted.png":::
 
 - <i>**Device inventory page flyout menu**</i><BR>
 
-:::image type="content" source="../../media/mte/device-inventory-mte-highlighted.png" alt-text="The **MTE-EOD** menu option in the **Device inventory** page in the Microsoft 365 Defender portal" lightbox="../../media/mte/device-inventory-mte-highlighted.png":::
+:::image type="content" source="../../media/mte/device-inventory-mte-highlighted.png" alt-text="The MTE-EOD menu option in the Device inventory page in the Microsoft 365 Defender portal" lightbox="../../media/mte/device-inventory-mte-highlighted.png":::
 
 - <i>**Alerts page flyout menu**</i><BR>
 
-:::image type="content" source="../../media/mte/alerts-actions-mte-highlighted.png" alt-text="The **MTE-EOD** menu option in the **Alerts** page in the Microsoft 365 Defender portal" lightbox="../../media/mte/alerts-actions-mte-highlighted.png":::
+:::image type="content" source="../../media/mte/alerts-actions-mte-highlighted.png" alt-text="The MTE-EOD menu option in the Alerts page in the Microsoft 365 Defender portal" lightbox="../../media/mte/alerts-actions-mte-highlighted.png":::
 
 - <i>**Incidents page actions menu**</i><BR>
 
-:::image type="content" source="../../media/mte/incidents-action-mte-highlighted.png" alt-text="The **MTE-EOD** menu option in the **Incidents** page in the Microsoft 365 Defender portal" lightbox="../../media/mte/incidents-action-mte-highlighted.png":::
+:::image type="content" source="../../media/mte/incidents-action-mte-highlighted.png" alt-text="The MTE-EOD menu option in the Incidents page in the Microsoft 365 Defender portal" lightbox="../../media/mte/incidents-action-mte-highlighted.png":::
 
 - <i>**Incidents inventory page**</i><BR>
 
-:::image type="content" source="../../media/mte/incidents-inventory-mte-highlighted.png" alt-text="The **MTE-EOD** menu option in the incidents inventory page in the Microsoft 365 Defender portal" lightbox="../../media/mte/incidents-inventory-mte-highlighted.png":::
+:::image type="content" source="../../media/mte/incidents-inventory-mte-highlighted.png" alt-text="The MTE-EOD menu option in the incidents inventory page in the Microsoft 365 Defender portal" lightbox="../../media/mte/incidents-inventory-mte-highlighted.png":::
 
 > [!NOTE]
 > If you have Premier Support subscription mapped to your Microsoft Defender for Office 365 license, you can track the status of your Experts on Demand cases through Microsoft Services Hub.
