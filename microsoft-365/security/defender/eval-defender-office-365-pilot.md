@@ -30,7 +30,7 @@ ms.technology: m365d
 
 This article is [Step 3 of 3](eval-defender-office-365-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Office 365. For more information about this process, see the [overview article](eval-defender-office-365-overview.md).
 
-Use the following steps to setup and configure the pilot for Microsoft Defender for Office 365.
+Use the following steps to set up and configure the pilot for Microsoft Defender for Office 365.
 
 ![Steps for creating the pilot for Microsoft Defender for Office 365.](../../media/defender/m365-defender-office-pilot.png)
 
@@ -40,13 +40,13 @@ Use the following steps to setup and configure the pilot for Microsoft Defender 
 
 When you evaluate Microsoft Defender for Office 365, you may choose to pilot specific users before enabling and enforcing policies for your entire organization. Creating distribution groups can help manage the deployment processes. For example, create groups such as *Defender for Office 365 Users - Standard Protection*, *Defender for Office 365 Users - Strict Protection*, *Defender for Office 365 Users - Custom Protection*, or *Defender for Office 365 Users - Exceptions*.
 
-It may not be evident why 'Standard' and 'Strict' are the terms used for this, but that will become clear when you explore more about Defender for Office 365 security presets. Naming groups 'custom' and 'exceptions' speak for themselves, and though most of your users should fall under *standard* and *strict*, custom and exception groups will collect valuable data for you regarding managing risk.
+It may not be evident why 'Standard' and 'Strict' are the terms used for these groups, but that will become clear when you explore more about Defender for Office 365 security presets. Naming groups 'custom' and 'exceptions' speak for themselves, and though most of your users should fall under *standard* and *strict*, custom and exception groups will collect valuable data for you regarding managing risk.
 
 ## Step 1: Create pilot groups
 
 Distribution groups can be created and defined directly in Exchange Online or synchronized from on-premises Active Directory.
 
-1. Logon to Exchange Admin Center (EAC) using an account that has been granted Recipient Administrator role or been delegated group management permissions.
+1. Sign in to the Exchange Admin Center (EAC) using an account that has been granted Recipient Administrator role or been delegated group management permissions.
 2. From the navigation menu, expand *Recipients* and select *Groups*.
 
    :::image type="content" source="../../media/mdo-eval/1_mdo-eval-pilot.png" alt-text="The navigation menu of the Exchange admin center (the quick launch) with an arrow pointing at Groups. Click Groups" lightbox="../../media/mdo-eval/1_mdo-eval-pilot.png":::
@@ -70,7 +70,7 @@ Some capabilities in Defender for Office 365 are configured and turned on by def
 Some capabilities are *not yet* configured. You have three options for configuring protection:
 
 - **Assign preset security policies automatically** — [Preset security policies](../office-365-security/preset-security-policies.md) are provided as a method to quickly assign a uniform level of protection across all of the capabilities. You can choose from ***standard*** or ***strict***. A good approach is to start with preset security policies and then fine-tune the policies as you learn more about the capabilities and your own unique threat environment. The advantage here is that you protect groups of users as quickly as possible, with the ability to tweak protection afterward. (This method is recommended.)
-- **Configure baseline protection manually** — If you prefer to configure the environment yourself, you can quickly achieve a *baseline* of protection by following the guidance in [Protect against threats](../office-365-security/protect-against-threats.md). With this approach you get to learn more about the settings that are configurable. And, of course, you can fine-tune the policies later.
+- **Configure baseline protection manually** — If you prefer to configure the environment yourself, you can quickly achieve a *baseline* of protection by following the guidance in [Protect against threats](../office-365-security/protect-against-threats.md). With this approach, you get to learn more about the settings that are configurable. And, of course, you can fine-tune the policies later.
 - **Configure *custom* protection policies** — You can also build and assign custom protection policies as part of your evaluation. Before you start customizing policies, it's important to understand the precedence in which these protection policies are applied and enforced. Security ops will need to create some policies even if when the preset is applied, in specific in order to define security policies for Safe Links and Safe Attachments.
 
 > [!IMPORTANT]
@@ -78,20 +78,20 @@ Some capabilities are *not yet* configured. You have three options for configuri
 
 ### Assign preset security policies
 
-It's encouraged to begin with the *recommended baseline policies* when evaluating MDO and then refine them as needed over the course of your evaluation period.
+It's recommended you begin with the *recommended baseline policies* when evaluating MDO and then refine them as needed over the course of your evaluation period.
 
 You can enable recommended EOP and Defender for Office 365 protection policies fast, and assign them to specific pilot users or defined groups as part of your evaluation. Preset policies offer a baseline **Standard** protection template or a more aggressive **Strict** protection template which can be assigned independently, or combined.
 
 Here is the [Preset security policies in EOP and Microsoft Defender for Office 365](../office-365-security/preset-security-policies.md) article outlining the steps.
 
-1. Log on to your Microsoft 365 tenant. Use an account with access to the Microsoft 365 Defender portal, added to Organization Management role in Office 365, or Security Administrator role in Microsoft 365.
+1. Log on to your Microsoft 365 tenant. Use an account with access to the Microsoft 365 Defender portal, added to Organization Management role in Office 365, or Security Administrator role at Microsoft 365.
 2. From the navigation menu, select *Polices & Rules* under Email & Collaboration.
 
    :::image type="content" source="../../media/mdo-eval/5_mdo-eval-pilot-policies.png" alt-text="Under Email & Collaboration on the navigation panel, click Policies & rules.":::
 
 3. On the Policy & Rules dashboard, click *Threat Policies*.
 
-   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png" alt-text="The Threat policies menu item in the Microsoft 365 Defender portal" lightbox="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png"::
+   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png" alt-text="The Threat policies menu item in the Microsoft 365 Defender portal" lightbox="../../media/mdo-eval/6-mdo-eval-pilot-threat-policies.png":::
 
 4. From the Microsoft 365 Defender portal, expand Threat Management from the navigation menu and then select Policy from the submenu.
 5. On the Policy dashboard, click *Preset security policies*.
@@ -119,7 +119,7 @@ Here is the [Preset security policies in EOP and Microsoft Defender for Office 3
 
 ### Configure custom protection policies
 
-The pre-defined *Standard* or *Strict* Defender for Office 365 policy templates give your pilot users the recommended baseline protection. However, you can also build and assign custom protection policies as part of your evaluation.
+The pre-defined *Standard* or *Strict* Defender for Office 365 policy templates gives your pilot users the recommended baseline protection. However, you can also build and assign custom protection policies as part of your evaluation.
 
 It's *important* to be aware of the precedence these protection policies take when applied and enforced, as [Order and precedence of email protection - Office 365](../office-365-security/how-policies-and-protections-are-combined.md) explains.
 
