@@ -66,7 +66,7 @@ By default, these policies are scoped to all users in the organization, but duri
 
 Other workloads are also available for protection (for example, [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md) and [Safe Links for supported Office 365 apps](safe-links.md#safe-links-settings-for-office-365-apps).
 
-During the setup of the trial, response functionality that's exclusive to Defender for Office 365 Plan 2 (for example, [AIR](office-365-air.md) and [Threat Explorer](threat-explorer.md)) is also set up for the entire organization. No policy scoping is required.
+During the setup of the trial, response functionality that's exclusive to Defender for Office 365 Plan 2 (for example, [AIR](office-365-air.md) and [Threat Explorer](threat-explorer.md) is also set up for the entire organization. No policy scoping is required.
 
 ## Licensing
 
