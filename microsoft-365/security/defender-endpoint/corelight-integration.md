@@ -61,7 +61,7 @@ To enable the Corelight integration, you’ll need to take the following steps:
 
 ### Step 3: Configure your Corelight appliance to send data to Microsoft 365 Defender
 
-**Applies to**: Corelight Sensor software v24.2 and later
+**Applies to**: Corelight Sensor software v23.2 and later
 
 > [!NOTE]
 > To enable on a previous release that supports sending data, you must first execute: `corelight-client configuration update --enable.adfiot 1`.
