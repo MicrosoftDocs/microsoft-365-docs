@@ -69,4 +69,6 @@
         href: mdb-faq.yml
       - name: Troubleshooting
         href: mdb-troubleshooting.yml
+      - name: Microsoft 365 Lighthouse
+        href: /microsoft-365/lighthouse/m365-lighthouse-overview
 
