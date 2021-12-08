@@ -81,8 +81,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 3. Select the **Mark as and notify** drop-down, and then select **No threats found** \> **Phishing** or **Junk**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Send messages from portal.](../../media/unified-submission-user-reported-message.png)
+   :::image type="content" alt-text="Send messages from portal." source="../../media/unified-submission-user-reported-message.png" lightbox="../../media/unified-submission-user-reported-message.png":::
 
 The reported message will be marked as a false positive or a false negative. An email notification be sent automatically from within the portal to the user who reported the message.
 
