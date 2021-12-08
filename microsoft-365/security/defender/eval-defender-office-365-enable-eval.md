@@ -32,7 +32,7 @@ This article is [Step 2 of 3](eval-defender-office-365-overview.md) in the proce
 
 Use the following steps to enable the evaluation for Microsoft Defender for Office 365.
 
-:::image type="content" source="../../media/defender/m365-defender-office-eval-enable-steps.png" alt-text="An example of the page that describes the steps to enable Microsoft Defender for Office 365 in the Microsoft Defender evaluation environment" lightbox="../../media/defender/m365-defender-office-eval-enable-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-office-eval-enable-steps.png" alt-text="The steps to enable the Microsoft Defender for Office 365 in the Microsoft Defender evaluation environment" lightbox="../../media/defender/m365-defender-office-eval-enable-steps.png":::
 
 
 - [Step 1: Activate trial licenses](#step-1-activate-trial-licenses)
@@ -48,20 +48,20 @@ Log on to your existing Microsoft Defender for Office 365 environment or tenant 
 1. Navigate to the administration portal.
 2. Select Purchase Services from the quick launch.
 
-   :::image type="content" source="../../media/mdo-eval/1_m365-purchase-services.png" alt-text="The  **Purchase services** option to click on the navigation pane of Office 365 in the Microsoft 365 admin center" lightbox="../../media/mdo-eval/1_m365-purchase-services.png":::
+   :::image type="content" source="../../media/mdo-eval/1_m365-purchase-services.png" alt-text="The  Purchase services option to click on the navigation pane of Office 365 in the Microsoft 365 admin center" lightbox="../../media/mdo-eval/1_m365-purchase-services.png":::
 
 3. Scroll down to the Add-On section (or search for "Defender") to locate the Microsoft Defender for Office 365 plans.
 4. Click Details next the plan you want to evaluate.
 
-   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="The **Details button** to click next" lightbox="../../media/mdo-eval/2_mdo-eval-license-details.png":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="The Details button in the Microsoft 365 admin center" lightbox="../../media/mdo-eval/2_mdo-eval-license-details.png":::
 
 5. Click the *Start free trial* link.
 
-   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text=" The **Start free trial** hyperlink" lightbox="../../media/mdo-eval/3-m365-purchase-button.png":::
+   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text=" The Start free trial hyperlink in the Microsoft 365 admin center" lightbox="../../media/mdo-eval/3-m365-purchase-button.png":::
 
 6. Confirm your request and click the *Try now* button.
 
-   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="The **Try now** button" lightbox="../../media/mdo-eval/4_mdo-trial-order.png":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="The Try now button in the Microsoft 365 admin center" lightbox="../../media/mdo-eval/4_mdo-trial-order.png":::
 
 ## Step 2: Audit and verify the public MX record
 
@@ -95,15 +95,15 @@ Use the instructions here to activate your Microsoft Defender for Office 365 eva
 1. Log on to your tenant with an account that has access to the Microsoft 365 Defender portal.
 2. Choose whether you want to make the **Microsoft 365 Defender portal** your default interface for Microsoft Defender for Office 365 administration (recommended).
 
-   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-activate-eval.png" alt-text="The **Turn on in Settings** button to use the centralized and improved Microsoft 365 Defender portal for administration." lightbox="../../media/mdo-eval/1_mdo-eval-activate-eval.png":::
+   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-activate-eval.png" alt-text="The Turn on in Settings button to use the centralized and the improved Microsoft 365 Defender portal for administration." lightbox="../../media/mdo-eval/1_mdo-eval-activate-eval.png":::
 
 3. From the navigation menu, select **Policies & Rules** under *Email & Collaboration*.
 
-   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-activate-eval.png" alt-text="The **Policies & rules** menu item to click" lightbox="../../media/mdo-eval/2_mdo-eval-activate-eval.png":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-activate-eval.png" alt-text="The Policies & rules menu item to be clicked" lightbox="../../media/mdo-eval/2_mdo-eval-activate-eval.png":::
 
 4. On the *Policy & Rules* dashboard, click **Threat Policies**.
 
-   :::image type="content" source="../../media/mdo-eval/3_mdo-eval-activate-eval.png" alt-text="The **Threat policies** menu item to click" lightbox="../../media/mdo-eval/3_mdo-eval-activate-eval.png":::
+   :::image type="content" source="../../media/mdo-eval/3_mdo-eval-activate-eval.png" alt-text="The Threat policies menu item to be clicked" lightbox="../../media/mdo-eval/3_mdo-eval-activate-eval.png":::
 
 5. Scroll down to *Additional Policies* and select the **Evaluate Defender for Office 365** tile.
 
@@ -111,17 +111,17 @@ Use the instructions here to activate your Microsoft Defender for Office 365 eva
 
 6. Now choose whether external email routes to Exchange Online directly, or to a third-party gateway or service, and click Next.
 
-   :::image type="content" source="../../media/mdo-eval/5_mdo-eval-activate-eval.png" alt-text="**Routing settings** pane in Microsoft Defender for Office 365" lightbox="../../media/mdo-eval/5_mdo-eval-activate-eval.png":::
+   :::image type="content" source="../../media/mdo-eval/5_mdo-eval-activate-eval.png" alt-text=" The Routing settings pane in the Microsoft Defender for Office 365 portal" lightbox="../../media/mdo-eval/5_mdo-eval-activate-eval.png":::
 
 7. If you use a third-party gateway, select the vendor name from the drop-down along with the inbound connector associated with that solution. When you've listed your answers, click Next.
 
-   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-activate-eval-settings.png" alt-text="**Third party or on-premises settings** pane in Microsoft Defender for Office 365" lightbox="../../media/mdo-eval/6-mdo-eval-activate-eval-settings.png":::
+   :::image type="content" source="../../media/mdo-eval/6-mdo-eval-activate-eval-settings.png" alt-text="The Third party or on-premises settings pane in the Microsoft Defender for Office 365 portal" lightbox="../../media/mdo-eval/6-mdo-eval-activate-eval-settings.png":::
 
 8. Review your settings and click the **Create Evaluation** button.
 
    |Before|After|
    |:---:|:---:|
-   |:::image type="content" source="../../media/mdo-eval/7-mdo-eval-activate-review.png" alt-text="**Review your settings** pane in Microsoft Defender for Office 365" lightbox="../../media/mdo-eval/7-mdo-eval-activate-review.png":::|:::image type="content" source="../../media/mdo-eval/8-mdo-eval-activate-complete.png" alt-text="Evaluation setup completion notification in Microsoft Defender for Office 365" lightbox="../../media/mdo-eval/8-mdo-eval-activate-complete.png":::|
+   |:::image type="content" source="../../media/mdo-eval/7-mdo-eval-activate-review.png" alt-text=" The Review your settings pane in the Microsoft Defender for Office 365 portal" lightbox="../../media/mdo-eval/7-mdo-eval-activate-review.png":::|:::image type="content" source="../../media/mdo-eval/8-mdo-eval-activate-complete.png" alt-text="The Evaluation setup completion notification in the Microsoft Defender for Office 365 portal" lightbox="../../media/mdo-eval/8-mdo-eval-activate-complete.png":::|
    |
 
 ## Next steps
