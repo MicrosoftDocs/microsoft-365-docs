@@ -53,56 +53,6 @@ If you are managing a hybrid Exchange deployment, your on-premises Exchange serv
 
 For Exchange Online customers, in order for forced TLS to work to secure all of your sent and received email, you need to set up more than one connector that requires TLS. You'll need one connector for email sent to your user mailboxes and another connector for email sent from your user mailboxes. Create these connectors in the Exchange admin center in Office 365. For instructions, see [Configure mail flow using connectors in Office 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
   
-## TLS certificate information for Exchange Online
-
-The certificate information used by Exchange Online is described in the following table. If your business partner is setting up forced TLS on their email server, you will need to provide this information to them. Be aware that for security reasons, our certificates do change from time to time. We have rolled out an update to our certificate within our datacenters. The new certificate is valid from September 3, 2018.
-  
- **Current certificate information valid from September 3, 2018**
-  
-| Attribute | Value |
-|:-----|:-----|
-|Certificate authority root issuer  <br/> |GlobalSign Root CA – R1 <br/> |
-|Certificate name  <br/> |mail.protection.outlook.com  <br/> |
-|Organization  <br/> |Microsoft Corporation  <br/> |
-|Organization unit  <br/> |  <br/> |
-|Certificate key strength  <br/> |2048  <br/> |
-   
- **Deprecated certificate information valid until September 3, 2018**
-  
-To help ensure a smooth transition, we will continue to provide the old certificate information for your reference for some time, however, you should use the current certificate information from now on.
-  
-****
-
-| Attribute | Value |
-|:-----|:-----|
-|Certificate authority root issuer  <br/> |Baltimore CyberTrust Root  <br/> |
-|Certificate name  <br/> |mail.protection.outlook.com  <br/> |
-|Organization  <br/> |Microsoft Corporation  <br/> |
-|Organization unit  <br/> |Microsoft Corporation  <br/> |
-|Certificate key strength  <br/> |2048  <br/> |
-   
-## Prepare for the new Exchange Online certificate
-
-The new certificate is issued by a different certificate authority (CA) from the previous certificate used by Exchange Online. As a result, you may need to perform some actions in order to use the new certificate.
-
-The new certificate requires connecting to the endpoints of the new CA as part of validating the certificate. Failure to do so can result in mail flow being negatively affected. If you protect your mail servers with firewalls that only let the mail servers connect with certain destinations you need to check if your server is able to validate the new certificate. To confirm that your server can use the new certificate, complete these steps:
-
-1. Connect to your local Exchange Server using Windows PowerShell and then run the following command:  
-  `certutil -URL https://crl.globalsign.com/gsorganizationvalsha2g3.crl`
-
-1. On the window that appears, choose **Retrieve**.
-
-1. When the utility completes its check it returns a status. If the status displays **OK**, then your mail server can successfully validate the new certificate. If not, you need to determine what is causing the connections to fail. Most likely, you need to update the settings of a firewall. The full list of endpoints that need to be accessed include:
-    - ocsp.globalsign.com
-    - crl.globalsign.com
-    - secure.globalsign.com   
-
-Normally, you receive updates to your root certificates automatically through Windows Update. However some deployments have additional security in place that prevents these updates from occurring automatically. In these locked-down deployments where Windows Update can't automatically update root certificates, you need to ensure that the correct root CA certificate is installed by completing these steps:
-1.  Connect to your local Exchange Server using Windows PowerShell and then run the following command:  
-  `certmgr.msc`
-
-2. Under **Trusted Root Certification Authority/Certificates**, confirm that the new certificate is listed.
-
 ## Get more information about TLS and Microsoft 365
 
 For a list of supported cipher suites, see [Technical reference details about encryption](technical-reference-details-about-encryption.md).
