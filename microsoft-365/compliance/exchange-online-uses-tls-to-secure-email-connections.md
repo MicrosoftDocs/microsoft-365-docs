@@ -68,9 +68,9 @@ The certificate information used by Exchange Online is described in the followin
 
 ## Get more information about TLS, certificates, and Microsoft 365 and download certificates
 
-[Microsoft 365 encryption chains and certificate downloads](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains)
+[Microsoft 365 encryption chains and certificate downloads](encryption-office-365-certificate-chains.md)
 
-[Microsoft 365 encryption chains and certificate downloads - DOD and GCC High](https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains-itar)
+[Microsoft 365 encryption chains and certificate downloads - DOD and GCC High](encryption-office-365-certificate-chains-itar.md)
 
 For a list of supported cipher suites, see [Technical reference details about encryption](technical-reference-details-about-encryption.md).
   
