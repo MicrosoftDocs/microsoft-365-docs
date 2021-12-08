@@ -733,3 +733,4 @@
 ## [Microsoft 365 Defender](../defender/index.yml)
 ## [Defender for Office 365](../office-365-security/index.yml)
 ## [Defender for Identity](/defender-for-identity/)
+## [Defender for Cloud Apps](/cloud-app-security/)
