@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Trust conditional access settings from other organizations"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -18,7 +18,7 @@ recommendations: false
 description: 
 ---
 
-# Title
+# Trust conditional access settings from other organizations in shared channels
 
 
 

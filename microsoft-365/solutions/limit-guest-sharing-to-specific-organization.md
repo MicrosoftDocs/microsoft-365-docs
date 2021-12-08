@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Limit guest sharing to specific organizations"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -18,7 +18,7 @@ recommendations: false
 description: 
 ---
 
-# Title
+# Limit guest sharing to specific organizations
 
 
 

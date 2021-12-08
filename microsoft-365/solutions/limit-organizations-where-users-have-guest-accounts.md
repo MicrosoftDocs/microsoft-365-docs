@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Limit organizations where users can have guest accounts"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -18,7 +18,7 @@ recommendations: false
 description: 
 ---
 
-# Title
+# Limit organizations where users can have guest accounts
 
 
 

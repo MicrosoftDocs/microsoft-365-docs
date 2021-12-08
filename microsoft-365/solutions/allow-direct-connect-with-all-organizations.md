@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Enable shared channels with all organizations"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -18,7 +18,7 @@ recommendations: false
 description: 
 ---
 
-# Title
+# Enable shared channels with all organizations
 
 
 
