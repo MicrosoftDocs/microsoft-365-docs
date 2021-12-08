@@ -69,7 +69,7 @@ If you need to [escalate](../service-description/user-support.md#escalation-port
 6. In the **Details** section, provide the following information:
     - **Description**: Add any additional details that could help our team understand the problem. If you need to attach files, you can do that by coming back to the request after you submit it.
     - **Primary contact information**: Provide info about how to contact the main person responsible for working with our team.
-7. Select the **Severity** level. For more information, see [Support request severity definitions](#sev).
+7. Select the **Severity** level. For more information, see Support request severity definitions.
 8. Provide as much information about the request as possible to help the team respond quickly. Depending on the type of request, you may be required to provide different details.
 9. Review all the information you provided for accuracy.
 10. When you're ready, select **Create**.
