@@ -117,3 +117,5 @@ landingContent:
             url: mdb-faq.yml
           - text: Troubleshooting
             url: mdb-troubleshooting.yml
+          - text: Microsoft 365 Lighthouse
+            url: /microsoft-365/lighthouse/m365-lighthouse-overview
