@@ -25,7 +25,7 @@ ms.collection: m365-security-compliance
 
 In addition to standard on-premises or hardware configurations, you can also use Microsoft Defender Antivirus in a remote desktop (RDS) or virtual desktop infrastructure (VDI) environment.
 
-See [Azure Virtual Desktop Documentation](/azure/virtual-desktop) for more details on Microsoft Remote Desktop Services and VDI support.
+For more information on Microsoft Remote Desktop Services and VDI support, see [Azure Virtual Desktop Documentation](/azure/virtual-desktop).
 
 For Azure-based virtual machines, see [Install Endpoint Protection in Microsoft Defender for Cloud](/azure/security-center/security-center-install-endpoint-protection).
 
@@ -163,7 +163,7 @@ If you would prefer to do everything manually, here's what to do to replicate th
 
 Scheduled scans run in addition to [real-time protection and scanning](configure-real-time-protection-microsoft-defender-antivirus.md).
 
-The start time of the scan itself is still based on the scheduled scan policy (**ScheduleDay**, **ScheduleTime**, and **ScheduleQuickScanTime**). Randomization will cause Microsoft Defender Antivirus to start a scan on each machine within a 4-hour window from the time set for the scheduled scan.
+The start time of the scan itself is still based on the scheduled scan policy (**ScheduleDay**, **ScheduleTime**, and **ScheduleQuickScanTime**). Randomization will cause Microsoft Defender Antivirus to start a scan on each machine within a four hour window from the time set for the scheduled scan.
 
 See [Schedule scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) for other configuration options available for scheduled scans.
 
@@ -223,7 +223,7 @@ This policy prevents a scan from running immediately after an update.
 
 ## Scan VMs that have been offline
 
-1. In your Group Policy Editor, go to to **Windows components** \> **Microsoft Defender Antivirus** \> **Scan**.
+1. In your Group Policy Editor, go to **Windows components** \> **Microsoft Defender Antivirus** \> **Scan**.
 
 2. Select **Turn on catch-up quick scan** and then edit the policy setting.
 
