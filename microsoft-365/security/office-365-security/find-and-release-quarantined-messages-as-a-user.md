@@ -216,5 +216,5 @@ When you select multiple quarantined messages in the list (up to 100) by clickin
 
 ![Bulk actions drop down list for messages in quarantine.](../../media/quarantine-user-message-bulk-actions.png)
 
-- ![Release email icon.](../../media/m365-cc-sc-check-mark-icon.png) **Release messages**: Delivers the messages to your Inbox.
+- ![Release messages icon.](../../media/m365-cc-sc-check-mark-icon.png) **Release messages**: Delivers the messages to your Inbox.
 - ![Remove from quarantine icon.](../../media/m365-cc-sc-delete-icon.png) **Delete messages**:  After you click **Yes** in the warning that appears, the messages are immediately removed from quarantine without being sent to the original recipients.
