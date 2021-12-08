@@ -102,6 +102,29 @@ We suggest starting with once a day, but you should experiment with increasing o
 
 Security intelligence packages are typically published once every three to four hours. Setting a frequency shorter than four hours isn't advised because it will increase the network overhead on your management machine for no benefit.
 
+You can also set up your single server or machine to fetch the updates on behalf of the VMs at an interval and place them in the file share for consumption.
+This is possible when the devices have the share and NTFS permissions for the read access to the share so they can grab the updates.
+
+To do this:
+ 1. Create an SMB/CIFS file share. 
+ 
+ 2. Use the following example to create a file share with the following share permissions.
+
+   ```PowerShell
+   PS c:\> Get-SmbShareAccess -Name mdatp$
+
+   Name   ScopeName AccountName AccessControlType AccessRight
+   ----   --------- ----------- ----------------- -----------
+   mdatp$ *         Everyone    Allow             Change
+   ```
+   
+> [!NOTE]
+> An NTFS permission is added for **Authenticated Users:Read:**. 
+
+For this example, the file share is:
+
+\\fileserver.fqdn\mdatp$\wdav-update
+
 ### Set a scheduled task to run the PowerShell script
 
 1. On the management machine, open the Start menu and type **Task Scheduler**. Open it and select **Create task...** on the side panel.
