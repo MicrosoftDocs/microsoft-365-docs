@@ -25,6 +25,14 @@ summary: |
 sections:
   - name: General
     questions:
+
+      - question: My setup and configuration process failed
+        answer: |
+
+          If you were using the simplified configuration process in Defender for Business and something went wrong, you can still configure your security settings and policies manually.
+
+          See [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md).
+
       - question: I need to resolve a policy conflict
         answer: |
 
@@ -41,13 +49,6 @@ sections:
 
           - [Understand next-generation configuration settings in Microsoft Defender for Business](mdb-next-gen-configuration-settings.md)
           - [Firewall settings in Microsoft Defender for Business](mdb-firewall.md)
-
-      - question: My setup and configuration process failed
-        answer: |
-
-          If you were using the simplified configuration process in Defender for Business and something went wrong, you can still configure your security settings and policies manually.
-
-          See [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md).
 
       - question: There's an integration issue between Defender for Business and Microsoft Endpoint Manager
         answer: |
@@ -84,12 +85,12 @@ sections:
 
           3. Under **Endpoint Security Profile Settings (Preview)**, set **Allow Microsoft Defender for Endpoint to enforce Endpoint Security Configurations (Preview)** to **On**.
 
-      - question: Something went wrong with onboarding devices
+      - question: Something went wrong with onboarding devices in the Microsoft 365 Defender portal
         answer: |
 
-          While onboarding devices, something went wrong in the Microsoft 365 Defender portal. This issue can occur if you are onboarding devices using a downloadable onboarding package for Microsoft Endpoint Manager, Group Policy, System Center Configuration Manager, or Mobile Device Management in Defender for Business. 
+          While onboarding devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), something might have gone wrong, and an error message is displayed. In particular, this issue can occur if you are onboarding devices using a downloadable onboarding package for Microsoft Endpoint Manager, Group Policy, System Center Configuration Manager, or Mobile Device Management in Defender for Business. 
           
-          Microsoft Defender for Business uses a capability called Security Management for Microsoft Defender for Endpoint. If onboarding fails, the issue is likely caused by an issue with this capability. To resolve the issue, see the following articles:
+          Microsoft Defender for Business uses a capability called *Security Management for Microsoft Defender for Endpoint*. If onboarding in Defender for Business fails, the cause most likely has to do with Security Management for Defender for Endpoint. To resolve the issue, see the following articles:
           
           - [Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt)
 
