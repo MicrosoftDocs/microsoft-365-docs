@@ -178,9 +178,9 @@ For example, you might have a DLP policy that helps you detect the presence of i
 
 #### For endpoints
 
-Priority for rules on endpoints is also assigned a priority according to the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on. 
+Priority for rules on endpoints is also assigned according to the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on. 
 
-When a file on an endpoint matches multiple DLP policies, the first rule that's enabled with restrictions is the one that gets enforced on the content. For example, if content matches all of the following rules, *Rule 2 is enforced because it's the highest priority, and is configured with a restriction*.
+When a file on an endpoint matches multiple DLP policies, the first rule that's enabled with restrictions is the one that gets enforced on the content. For example, if content matches all of the following rules, *Rule 2 is enforced because it's the highest priority rule that's configured with a restriction*.
   
 - Rule 1: only notifies users
 - *Rule 2: notifies users, restricts access, and allows user overrides*
