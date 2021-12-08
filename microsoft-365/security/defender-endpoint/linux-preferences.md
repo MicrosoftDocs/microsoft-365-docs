@@ -590,33 +590,7 @@ The following configuration profile contains entries for all settings described 
 }
 ```
 
-  ## How to add Tag or Group ID to the configuration profile
-
-When you run the `mdatp health` command for the first time, the value for the Tags and Group IDs will be blank. To add Tag or Group ID to the `mdatp_managed.json` file, follow the below steps:
-  
-  1- Open the configuration profile from the path `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json`.
-  2- Go down to the bottom of the file where the `cloudService` block is located.
-  3- Add the required Tag or Group ID as below example at the end of the closing curly bracket for the `cloudService`.
-  
-    },
-     "cloudService":{
-        "enabled":true,
-        "diagnosticLevel":"optional",
-        "automaticSampleSubmissionConsent":"safe",
-        "automaticDefinitionUpdateEnabled":true,
-        "proxy": "http://proxy.server:port/"
-     },
-     "edr":{
-          "groupIds":"EDROFF",
-          "tags":[]
-          }
-  }
-  
-  > [!NOTE]
-  > Don’t forget to add the comma after the closing curly bracket at the end of the `cloudService` block.
-  > Make sure that there are two closing curly brackets after adding Tag or Group ID block (please see the above example).
-  
-  ## Configuration profile validation
+## Configuration profile validation
 
 The configuration profile must be a valid JSON-formatted file. There are a number of tools that can be used to verify this. For example, if you have `python` installed on your device:
 
@@ -637,7 +611,7 @@ To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is worki
 - automatic_definition_update_enabled
 
 > [!NOTE]
-> For the mdatp_managed.json to take effect, no restart of the `mdatp` deamon is required.
+> For the mdatp_managed.json to take effect, no restart of the wdavdaemon is required.
 
 ## Configuration profile deployment
 
