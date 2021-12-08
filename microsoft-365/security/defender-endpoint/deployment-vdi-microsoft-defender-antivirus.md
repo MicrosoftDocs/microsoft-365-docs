@@ -10,7 +10,7 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2021
+ms.date: 12/08/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
@@ -25,7 +25,7 @@ ms.collection: m365-security-compliance
 
 In addition to standard on-premises or hardware configurations, you can also use Microsoft Defender Antivirus in a remote desktop (RDS) or virtual desktop infrastructure (VDI) environment.
 
-See [Azure Virtual Desktop Documentation](/azure/virtual-desktop) for more details on Microsoft Remote Desktop Services and VDI support.
+For more information on Microsoft Remote Desktop Services and VDI support, see [Azure Virtual Desktop Documentation](/azure/virtual-desktop).
 
 For Azure-based virtual machines, see [Install Endpoint Protection in Microsoft Defender for Cloud](/azure/security-center/security-center-install-endpoint-protection).
 
@@ -102,6 +102,29 @@ We suggest starting with once a day, but you should experiment with increasing o
 
 Security intelligence packages are typically published once every three to four hours. Setting a frequency shorter than four hours isn't advised because it will increase the network overhead on your management machine for no benefit.
 
+You can also set up your single server or machine to fetch the updates on behalf of the VMs at an interval and place them in the file share for consumption.
+This is possible when the devices have the share and NTFS permissions for the read access to the share so they can grab the updates.
+
+To do this:
+ 1. Create an SMB/CIFS file share. 
+ 
+ 2. Use the following example to create a file share with the following share permissions.
+
+    ```PowerShell
+    PS c:\> Get-SmbShareAccess -Name mdatp$
+
+    Name   ScopeName AccountName AccessControlType AccessRight
+    ----   --------- ----------- ----------------- -----------
+    mdatp$ *         Everyone    Allow             Change
+    ```
+   
+    > [!NOTE]
+    > An NTFS permission is added for **Authenticated Users:Read:**. 
+
+    For this example, the file share is:
+
+    \\fileserver.fqdn\mdatp$\wdav-update
+
 ### Set a scheduled task to run the PowerShell script
 
 1. On the management machine, open the Start menu and type **Task Scheduler**. Open it and select **Create task...** on the side panel.
@@ -140,7 +163,7 @@ If you would prefer to do everything manually, here's what to do to replicate th
 
 Scheduled scans run in addition to [real-time protection and scanning](configure-real-time-protection-microsoft-defender-antivirus.md).
 
-The start time of the scan itself is still based on the scheduled scan policy (**ScheduleDay**, **ScheduleTime**, and **ScheduleQuickScanTime**). Randomization will cause Microsoft Defender Antivirus to start a scan on each machine within a 4-hour window from the time set for the scheduled scan.
+The start time of the scan itself is still based on the scheduled scan policy (**ScheduleDay**, **ScheduleTime**, and **ScheduleQuickScanTime**). Randomization will cause Microsoft Defender Antivirus to start a scan on each machine within a four-hour window from the time set for the scheduled scan.
 
 See [Schedule scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) for other configuration options available for scheduled scans.
 
@@ -200,7 +223,7 @@ This policy prevents a scan from running immediately after an update.
 
 ## Scan VMs that have been offline
 
-1. In your Group Policy Editor, go to to **Windows components** \> **Microsoft Defender Antivirus** \> **Scan**.
+1. In your Group Policy Editor, go to **Windows components** \> **Microsoft Defender Antivirus** \> **Scan**.
 
 2. Select **Turn on catch-up quick scan** and then edit the policy setting.
 
