@@ -264,9 +264,11 @@ After you complete this step, be sure to copy the job ID that's generated when y
 
    2. Type a name for the HR connector.
 
-5. On the HR scenarios page, select one or more HR scenarios that you want to import data for, and then click **Next**.
+5. On the HR scenarios page, select one or more HR scenarios that you want to import data for and then click **Next**.
 
-6. On the file mapping method page, select one of the following options and then click **Next**.
+   ![Select one or more HR scenarios.](../media/HRConnectorScenarios.png)
+
+6. On the file mapping method page, select a file type if necessary, and then select one of the following options and then click **Next**.
 
    - **Upload a sample file**. If you select this option, click **Upload sample file** to upload the CSV file that you prepared in Step 1. This option allows you to quickly select column names in your CSV file from a drop-down list to map them to the data types for the HR scenarios that you previously selected.
 
