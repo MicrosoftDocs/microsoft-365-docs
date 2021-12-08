@@ -23,11 +23,11 @@ ms.collection:
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-If you've just finished setting up Microsoft Defender for Business, you might be wondering where to start to learn about how Defender for Business works. This article describes technical preview scenarios and tutorials that are available for Defender for Business. These scenarios and tutorials are designed to help you see how Defender for Business can work for your company.
+If you've just finished setting up Microsoft Defender for Business, you might be wondering where to start to learn about how Defender for Business works. This article describes preview scenarios to try, and several tutorials and simulations that are available for Defender for Business. These resources are designed to help you see how Defender for Business can work for your company.
 
-## Technical preview scenarios
+## Try these preview scenarios
 
-The following table summarizes scenarios to try during the preview of Defender for Business:
+The following table summarizes several scenarios to try during the preview of Defender for Business. 
 <br/><br/>
 
 
