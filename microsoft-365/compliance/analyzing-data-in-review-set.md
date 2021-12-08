@@ -44,7 +44,7 @@ To analyze data in a review set:
 
 You can check the progress of analysis on the **Jobs** tab of the case.
 
- After analysis is completed, you can view the analytics report, run queries within your review set on outputs of the analysis (see [Query within your review set](review-set-search.md)), and see related documents of a given document (see [Reviewing data in review set](reviewing-data-in-review-set.md)).
+ After analysis is completed, you can view the analytics report, run queries within your review set on outputs of the analysis (see [Query within your review set](review-set-search.md), and see related documents of a given document (see [Reviewing data in review set](reviewing-data-in-review-set.md).
 
 ## Using the For Review filter query
 
