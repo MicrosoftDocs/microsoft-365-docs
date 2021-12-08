@@ -95,8 +95,9 @@ sections:
           
       - question: Where can I submit feedback and ideas?
         answer: |
-          Your feedback matters and is important to us! There are a couple different ways for you to submit feedback:
+          Your feedback matters and is important to us! There are a few different ways for you to submit feedback:
 
-          - Select the Feedback icon in the upper-right corner of Lighthouse. 
+          - Go to the [Microsoft 365 Lighthouse Feedback page](https://aka.ms/m365lighthouseuservoice). You can start conversations about Lighthouse and Windows 365 features, post questions for other partners or Microsoft employees, provide feedback and feature ideas, and more.
+          - Select the Feedback icon in the upper-right corner of Lighthouse.
           - Respond to the occasional (not more than once a month) pop-up window in Lighthouse that asks you to provide feedback.
           
