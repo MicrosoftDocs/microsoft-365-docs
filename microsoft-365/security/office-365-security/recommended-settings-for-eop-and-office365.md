@@ -40,9 +40,8 @@ To automatically apply the Standard or Strict settings to users, see [Preset sec
 This article describes the default settings, and also the recommended Standard and Strict settings to help protect your users. The tables contain the settings in the Microsoft 365 Defender portal and PowerShell (Exchange Online PowerShell or standalone Exchange Online Protection PowerShell for organizations without Exchange Online mailboxes).
 
 > [!TIP]
-> The recommended Standard and Strict settings can't be changed in the GUI. If you want to change recommended values like **Enable users to protect** you have to change them by PowerShell. Most settings can be changed using the ExchangePowerShell module.  
-
-> [!TIP]
+> You can't change the recommended Standard and Strict settings in the Microsoft 365 Defender portal. To change recommended values like **Enable users to protect**, you need to use [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+>
 > The Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) module for PowerShell can help you (admins) find the current values of these settings. Specifically, the **Get-ORCAReport** cmdlet generates an assessment of anti-spam, anti-phishing, and other message hygiene settings. You can download the ORCA module at <https://www.powershellgallery.com/packages/ORCA/>.
 
 ## Anti-spam, anti-malware, and anti-phishing protection in EOP
