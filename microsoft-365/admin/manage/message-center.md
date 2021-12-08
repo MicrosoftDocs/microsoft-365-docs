@@ -37,12 +37,6 @@ To open Message center:
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-- In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to **Health** > **Message center**.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 - In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to **Health** > **Message center**.
@@ -86,16 +80,6 @@ Use the **Service**, **Tag**, and **Message state**  drop-down menus to select a
 You can select any column heading, except **Service** and **Tag**,  to sort messages in ascending or descending order.
 
 :::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Message center view sorted by Admin impact.":::
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-Use the **Views** drop-down menu to select a filtered view of messages.
-
-You can select any column heading to sort messages in ascending or descending order. For example, in this illustration the messages are sorted on the **Act by** date.
-
-![Message center view sorted by Admin impact tag.](../../media/message-center-filter-act-by.png)
 
 ::: moniker-end
 
@@ -146,24 +130,6 @@ If administration is distributed across your organization, you may not want or n
 
 4. Select **Save** to keep your changes.
   
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Select **Edit Message center preferences** at the top of Message center.
-
-2. Make sure that the toggle is set to **On** for each service that you want to monitor. Use the toggle to change the setting to **Off** for the services you want to filter out of your Message center view.
-
-3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, change the **Send a weekly digest of my messages** setting to **Off**.
-
-   Email notification for major updates is a separate control. If you want to receive email notices about major updates, verify that **Send me emails for major updates** is **On**. Change the setting to **Off** to stop getting email about major updates. 
-
-   To receive email notices about data privacy messages, verify that **Send me emails for data privacy messages** is **On**. To stop receiving these notices, change the setting to **Off**. (Data privacy messages are not included in the weekly digest.)
-
-   You can select or clear your primary email address, but you can't change it. To specify other email addresses to which the weekly email summary is sent, verify that **Send a weekly digest of my messages** is **On**. Enter the email address for a Microsoft 365 group or a distribution list if more than two people should get the digest email.
-
-4. Select **Save** to keep your changes.
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
