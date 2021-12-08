@@ -38,12 +38,6 @@ You can add users in the wizard, but you can also [add users later](../add-users
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
@@ -68,12 +62,6 @@ Go to [https://admin.microsoft.com/OLS/MySoftware.aspx](https://admin.microsoft.
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-If you're using Office 365 Germany, go to [https://portal.office.de/OLS/MySoftware.aspx](https://portal.office.de/OLS/MySoftware.aspx).
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 If you're using Office 365 operated by 21Vianet, go to [https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx](https://portal.partner.microsoftonline.cn/OLS/MySoftware.aspx).
@@ -94,7 +82,7 @@ Get the steps for your device: [Android](https://support.microsoft.com/office/6e
   
 ## Store files online
 
-Microsoft makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Office 365](../../business-video/store-files.md).
+Microsoft makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Office 365](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e).
   
 Everyone gets a **OneDrive** cloud storage location automatically when you create Microsoft accounts for them. With OneDrive, you can access files across your computers, phones, and tablets.
   

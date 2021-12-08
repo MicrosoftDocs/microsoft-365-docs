@@ -42,7 +42,7 @@ See [Overview of automated investigations](automated-investigations.md) for more
 
 ## Requirements for AIR
 
-Your organization must have Defender for Endpoint (see [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md)).
+Your organization must have Defender for Endpoint (see [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md).
 
 Currently, AIR only supports the following OS versions:
 
