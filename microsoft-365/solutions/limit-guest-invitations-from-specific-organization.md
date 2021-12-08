@@ -1,5 +1,5 @@
 ---
-title: "Limit who can invite guests from specific organizations"
+title: "Limit who can be invited by an organization"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -18,7 +18,7 @@ recommendations: false
 description: 
 ---
 
-# Limit who can invite guests from specific organizations
+# Limit who can be invited by an organization
 
 
 
@@ -33,7 +33,7 @@ description:
 1. Select the organization in the search results, and then select **Add**.
 2. The organization appears in the **Organizational settings** list. At this point, all access settings for this organization are inherited from your default settings.
 
-## Choose who can invite guests from an organization
+## Choose who can be invited as guests by an organization
 
 
 

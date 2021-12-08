@@ -89,8 +89,8 @@
           items:
           - name: Limit who can invite guests
             href: limit-who-can-invite-guests.md
-          - name: Limit who can invite people from specific organizations
-            href: limit-who-can-invite-guests-from-specific-organization.md
+          - name: Limit who can be invited by an organization
+            href: limit-guest-invitations-from-specific-organization.md
           - name: Limit guest sharing to specific organizations
             href: limit-guest-sharing-to-specific-organization.md
           - name: Limit organizations where users can be guests
