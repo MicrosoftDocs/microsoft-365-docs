@@ -42,7 +42,9 @@
          href: /cloud-app-security
     - name: Microsoft 365 Enterprise
       href: ../enterprise/index.yml
-    - name: Microsoft 365 for Business
+    - name: Microsoft Defender for Business
+      href: ./defender-business/mdb-overview.md
+    - name: Microsoft 365 for business
       href: ./index.yml
     - name: Microsoft 365 Compliance
       href: ../compliance/index.yml

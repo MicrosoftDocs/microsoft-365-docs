@@ -49,12 +49,6 @@ Shared mailboxes usually don't require a license. Follow these instructions to r
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
- 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
  1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.

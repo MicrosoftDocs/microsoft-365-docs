@@ -1,6 +1,100 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/business-video/join-guest-meeting.md",
+      "redirect_url": "https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/join-team-guest.md",
+      "redirect_url": "https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/schedule-guest-meeting.md",
+      "redirect_url": "https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/team-with-guests.md",
+      "redirect_url": "/microsoftteams/guest-experience",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/org-wide-team.md",
+      "redirect_url": "/microsoftteams/create-an-org-wide-team",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/get-started-teams-small-business.md",
+      "redirect_url": "https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/group-email.md",
+      "redirect_url": "https://support.microsoft.com/office/3f73d218-52d6-4f88-a733-9ff37073ee4c",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/shared-calendar.md",
+      "redirect_url": "https://support.microsoft.com/office/353ed2c1-3ec5-449d-8c73-6931a0adab88",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/start-and-pin-chats.md",
+      "redirect_url": "https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/securely-share-files-externally.md",
+      "redirect_url": "https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/share-files-externally.md",
+      "redirect_url": "https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/store-files.md",
+      "redirect_url": "https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/overview-bookings.md",
+      "redirect_url": "https://support.microsoft.com/office/42d4e852-8e99-4d8f-9b70-d7fc93973cb5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/set-up-mfa.md",
+      "redirect_url": "https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/install-apps-android.md",
+      "redirect_url": "https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/install-apps-ios.md",
+      "redirect_url": "https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f",
+    },
+    {
+      "source_path": "microsoft-365/business-video/files-to-sharepoint.md",
+      "redirect_url": "/microsoft-365/admin/setup/files-to-sharepoint",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/files-to-onedrive.md",
+      "redirect_url": "/microsoft-365/admin/setup/files-to-onedrive",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/setup-outlook.md",
+      "redirect_url": "/microsoft-365/admin/setup/setup-outlook",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/business-video/get-help-support.md",
       "redirect_url": "/microsoft-365/admin/get-help-support",
       "redirect_document_id": false
@@ -9,7 +103,22 @@
       "source_path": "microsoft-365/business-video/what-is-microsoft-365.md",
       "redirect_url": "/microsoft-365/admin/admin-overview/what-is-microsoft-365",
       "redirect_document_id": false
-	},
+	  },
+    {
+      "source_path": "microsoft-365/business-video/admin-center-overview.md",
+      "redirect_url": "/microsoft-365/admin/admin-overview/admin-center-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/delete-user.md",
+      "redirect_url": "/microsoft-365/admin/add-users/remove-former-employee",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/add-domain.md",
+      "redirect_url": "/microsoft-365/admin/setup/add-domain",
+      "redirect_document_id": false
+    },
     {
       "source_path": "microsoft-365/admin/work-with-customers/index.yml",
       "redirect_url": "/microsoft-365/admin",
@@ -112,7 +221,7 @@
     },
     {
       "source_path": "microsoft-365/business/move-files-to-onedrive.md",
-      "redirect_url": "/microsoft-365/business-video/files-to-onedrive",
+      "redirect_url": "/microsoft-365/admin/setup/files-to-onedrive",
       "redirect_document_id": false
     },
     {
@@ -577,12 +686,12 @@
     },
     {
       "source_path": "microsoft-365/admin/admin-overview/admin-overview.md",
-      "redirect_url": "/microsoft-365/business-video/admin-center-overview",
+      "redirect_url": "/microsoft-365/admin/admin-overview/admin-center-overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/admin/microsoft-365-admin-center-preview.md",
-      "redirect_url": "/microsoft-365/business-video/admin-center-overview",
+      "redirect_url": "/microsoft-365/admin/admin-overview/admin-center-overview",
       "redirect_document_id": false
     },
     {
