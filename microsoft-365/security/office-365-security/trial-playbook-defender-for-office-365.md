@@ -91,8 +91,6 @@ Defender for Office 365 enables you to investigate activities that put people in
 - [Check the delivery action and location](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location): This check lets you know the location of problem email messages.
 - [View the timeline of your email](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email): Simply hunting for your security operations team.
 
-![Threat Explorer in the Microsoft 365 Defender portal.](../../media/mdo-trial-playbook-threat-explorer.png)
-
 ### See campaigns targeting your organization
 
 See the bigger picture with Campaign Views in Defender for Office 365, which gives you a view of the attack campaigns targeting your organization and the impact they have on your users.
@@ -123,8 +121,6 @@ Use Advanced hunting to write custom detection rules, proactively inspect events
 
 - [Build custom detection rules](../defender/advanced-hunting-overview.md#get-started-with-advanced-hunting).
 - [Access shared queries](../defender/advanced-hunting-shared-queries.md) created by others.
-
-![Query-based hunting in Microsoft 365 Defender.](../../media/mdo-trial-playbook-query-based-hunting.png)
 
 Watch this video to learn more: [Threat hunting with Microsoft 365 Defender - YouTube](https://www.youtube.com/watch?v=l3OmH4U6XAs&list=PL3ZTgFEc7Lyt1O81TZol31YXve4e6lyQu&index=4).
 
