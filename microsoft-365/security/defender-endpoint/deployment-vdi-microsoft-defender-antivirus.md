@@ -110,20 +110,20 @@ To do this:
  
  2. Use the following example to create a file share with the following share permissions.
 
-   ```PowerShell
-   PS c:\> Get-SmbShareAccess -Name mdatp$
+    ```PowerShell
+    PS c:\> Get-SmbShareAccess -Name mdatp$
 
-   Name   ScopeName AccountName AccessControlType AccessRight
-   ----   --------- ----------- ----------------- -----------
-   mdatp$ *         Everyone    Allow             Change
-   ```
+    Name   ScopeName AccountName AccessControlType AccessRight
+    ----   --------- ----------- ----------------- -----------
+    mdatp$ *         Everyone    Allow             Change
+    ```
    
-> [!NOTE]
-> An NTFS permission is added for **Authenticated Users:Read:**. 
+    > [!NOTE]
+    > An NTFS permission is added for **Authenticated Users:Read:**. 
 
-For this example, the file share is:
+    For this example, the file share is:
 
-\\fileserver.fqdn\mdatp$\wdav-update
+    \\fileserver.fqdn\mdatp$\wdav-update
 
 ### Set a scheduled task to run the PowerShell script
 
