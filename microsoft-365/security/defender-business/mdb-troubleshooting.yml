@@ -8,7 +8,7 @@ metadata:
   manager: dansimp 
   audience: Admin
   ms.topic: overview
-  ms.date: 12/06/2021
+  ms.date: 12/08/2021
   ms.prod: m365-security
   ms.technology: mdb
   localization_priority: Normal
@@ -87,7 +87,9 @@ sections:
       - question: Something went wrong with onboarding devices
         answer: |
 
-          While onboarding devices, something went wrong in the Microsoft 365 Defender portal. The onboarding process in Microsoft Defender for Business uses a capability called Security Management for Microsoft Defender for Endpoint. If onboarding fails, the issue is likely caused by an issue with this capability. To resolve the issue, see the following articles:
+          While onboarding devices, something went wrong in the Microsoft 365 Defender portal. This issue can occur if you are onboarding devices using a downloadable onboarding package for Microsoft Endpoint Manager, Group Policy, System Center Configuration Manager, or Mobile Device Management in Defender for Business. 
+          
+          Microsoft Defender for Business uses a capability called Security Management for Microsoft Defender for Endpoint. If onboarding fails, the issue is likely caused by an issue with this capability. To resolve the issue, see the following articles:
           
           - [Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt)
 
