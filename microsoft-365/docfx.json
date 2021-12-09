@@ -62,7 +62,7 @@
     "groups": {
       "office365": {
         "dest": "o365-dest",
-        "moniker_range": "=o365-worldwide || =o365-21vianet || =o365-germany"
+        "moniker_range": "=o365-worldwide || =o365-21vianet"
       }
     },
     "overwrite": [],
