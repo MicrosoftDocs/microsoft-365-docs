@@ -295,7 +295,7 @@ Browse to **Computer Configuration** \> **Policies** \> **Administrative Templat
 
 :::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="Join microsoft maps" lightbox="images/gpo-maps-join-ms-maps.png":::
 
-:::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="Send file sample when further analysis is required" lightbox=images/send-file-sample-further-analysis-require.png":::
+:::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="Send file sample when further analysis is required" lightbox="images/send-file-sample-further-analysis-require.png":::
 
 ### Check for signature update
 
@@ -303,7 +303,7 @@ Browse to **Computer Configuration** \> **Policies** \> **Administrative Templat
 
 :::image type="content" source="images/signature-update-1.png" alt-text="Signature update" lightbox="images/signature-update-1.png":::
 
-:::image type="content" source="images/signature-update-2.png" alt-text="signature definition update."- lightbox="images/signature-update-2.png":::
+:::image type="content" source="images/signature-update-2.png" alt-text="signature definition update" lightbox="images/signature-update-2.png":::
 
 ### Configure cloud deliver timeout and protection level
 
