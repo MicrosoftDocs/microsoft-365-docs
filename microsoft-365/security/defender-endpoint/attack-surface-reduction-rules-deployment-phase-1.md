@@ -24,7 +24,7 @@ ms.collection: M365-security-compliance
 Starting to test ASR rules involves starting with the right business unit. You’ll want to start with a small group of people in a specific business unit. You can identify some ASR champions within a particular business unit who can provide real-world impact to the ASR rules and help you tune your implementation.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-rules-planning-steps.png" alt-text="An example of ASR rules planning steps" lightbox="images/asr-rules-planning-steps.png":::
+> :::image type="content" source="images/asr-rules-planning-steps.png" alt-text="The ASR rules planning steps" lightbox="images/asr-rules-planning-steps.png":::
 
 ## Start with the right business unit
 

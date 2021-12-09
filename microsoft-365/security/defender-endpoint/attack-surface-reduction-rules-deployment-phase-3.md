@@ -24,7 +24,7 @@ ms.collection: M365-security-compliance
 The implementation phase moves the ring from testing into functional state.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="An example of the procedure to implement ASR rules" lightbox="images/asr-rules-implementation-steps.png":::
+> :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="The procedure to implement ASR rules" lightbox="images/asr-rules-implementation-steps.png":::
   
 
 ## Step 1: Transition ASR Rules from Audit to Block

@@ -54,11 +54,11 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
   c. If the connection is not turned on, select the toggle to turn it on and then select **Save Preferences**.
 
-  :::image type="content" source="images/enable-intune-connection.png" alt-text="The **Advanced features** section in Microsoft 365 Defender portal" lightbox="images/enable-intune-connection.png":::
+  :::image type="content" source="images/enable-intune-connection.png" alt-text="The Advanced features section in the Microsoft 365 Defender portal" lightbox="images/enable-intune-connection.png":::
 
   d. Go to **Microsoft Endpoint Manager (Intune)** and Validate whether Microsoft Defender for Endpoint-Intune connector is enabled.
 
-  :::image type="content" source="images/validate-intune-connector.png" alt-text="The intune-connector status pane in Microsoft 365 Defender portal" lightbox="images/validate-intune-connector.png":::
+  :::image type="content" source="images/validate-intune-connector.png" alt-text="The intune-connector status pane in the Microsoft 365 Defender portal" lightbox="images/validate-intune-connector.png":::
 
 - **Enable Microsoft Defender for Endpoint on Android Connector for App Protection Policy (APP)**
   
@@ -70,7 +70,7 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
   c. Select **Save**.
 
-  :::image type="content" source="images/app-settings.png" alt-text="The application settings pane in Microsoft 365 Defender portal" lightbox="images/app-settings.png":::
+  :::image type="content" source="images/app-settings.png" alt-text="The application settings pane in the Microsoft 365 Defender portal" lightbox="images/app-settings.png":::
 
 - **Create an app protection policy** 
  
@@ -80,7 +80,7 @@ Microsoft Defender for Endpoint can be configured to send threat signals to be u
 1. Create a policy <br>
 App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. A policy can be a rule that is enforced when the user attempts to access or move "corporate" data, or a set of actions that are prohibited or monitored when the user is inside the app. 
 
-:::image type="content" source="images/create-policy.png" alt-text="The **Create policy** section in the **App protection policies** page in Microsoft 365 Defender portal" lightbox="images/create-policy.png":::
+:::image type="content" source="images/create-policy.png" alt-text="The Create policy tab in the App protection policies page in the Microsoft 365 Defender portal" lightbox="images/create-policy.png":::
 
 2. Add apps <br>
     a. Choose how you want to apply this policy to apps on different devices. Then add at least one app. <br>
@@ -92,18 +92,18 @@ Because mobile app management doesn't require device management, you can protect
 
     *Example: Outlook as a managed app*
 
-  :::image type="content" source="images/managed-app.png" alt-text="The **Public apps** pane from which you choose an application to which the policy is to be applied to, in Microsoft 365 Defender portal" lightbox="images/managed-app.png":::
+  :::image type="content" source="images/managed-app.png" alt-text="The Public apps pane from which you choose an application to which the policy is to be applied to, in the Microsoft 365 Defender portal" lightbox="images/managed-app.png":::
 
 
  3. Set sign-in security requirements for your protection policy. <br>
 Select **Setting > Max allowed device threat level** in **Device Conditions** and enter a value. Then select  **Action:  "Block Access"**. Microsoft Defender for Endpoint on Android shares this Device Threat Level.
 
-  :::image type="content" source="images/conditional-launch.png" alt-text="The **Device conditions** pane from which you configure the conditional launch settings, in Microsoft 365 Defender portal" lightbox="images/conditional-launch.png":::
+  :::image type="content" source="images/conditional-launch.png" alt-text="The Device conditions pane from which you configure the conditional launch settings, in the Microsoft 365 Defender portal" lightbox="images/conditional-launch.png":::
   
 - **Assign user groups for whom the policy needs to be applied.**<br>
   Select **Included groups**. Then add the relevant groups. 
 
-    :::image type="content" source="images/assignment.png" alt-text="The **Included groups** pane in Microsoft 365 Defender portal" lightbox="images/assignment.png":::
+    :::image type="content" source="images/assignment.png" alt-text="The Included groups pane in the Microsoft 365 Defender portal" lightbox="images/assignment.png":::
 
 
 ## End user prerequisites
@@ -122,7 +122,7 @@ Select **Setting > Max allowed device threat level** in **Device Conditions** an
 
 4.  Install the Microsoft Defender for Endpoint (Mobile) app and launch back Managed app onboarding screen.
 
-  :::image type="content" source="images/download-mde.png" alt-text="An example of the pages that illustrate the procedure of downloading MDE and launching back the app-onboarding screen" lightbox="images/download-mde.png":::
+  :::image type="content" source="images/download-mde.png" alt-text="The illustrative pages that contain the procedure of downloading MDE and launching back the app-onboarding screen" lightbox="images/download-mde.png":::
   
 
 5.  Click **Continue > Launch**. The Microsoft Defender for Endpoint app onboarding/activation flow is initiated. Follow the steps to complete onboarding. You will automatically be redirected back to Managed app onboarding screen, which now indicates that the device is healthy.

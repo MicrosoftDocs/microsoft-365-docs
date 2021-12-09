@@ -24,7 +24,7 @@ ms.collection: M365-security-compliance
 Begin your ASR  rules deployment with ring 1.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-rules-testing-steps.png" alt-text="An example of ASR rules testing steps" lightbox="images/asr-rules-testing-steps.png":::
+> :::image type="content" source="images/asr-rules-testing-steps.png" alt-text="The ASR rules testing steps" lightbox="images/asr-rules-testing-steps.png":::
   
 
 ## Step 1: Test ASR rules using Audit
@@ -41,14 +41,14 @@ You can use Microsoft Endpoint Manager (MEM) Endpoint Security to configure cust
 4. In **Platform**, select **Windows 10 and later**, and in **Profile**, select **Attack surface reduction rules**.
   
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/asr-mem-create-profile.png" alt-text="An example of the profile creation page for ASR rules" lightbox="images/asr-mem-create-profile.png":::
+    > :::image type="content" source="images/asr-mem-create-profile.png" alt-text="The profile creation page for ASR rules" lightbox="images/asr-mem-create-profile.png":::
 
 5. Click **Create**.
 6. In the **Basics** tab of the **Create profile** pane, in **Name** add a name for your policy. In **Description** add a description for your ASR rules policy.
 7. In the **Configuration settings** tab, under **Attack Surface Reduction Rules**, set all rules to **Audit mode**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/asr-mem-configuration-settings.png" alt-text="An example  of configuration of ASR rules to **Audit** mode" lightbox="images/asr-mem-configuration-settings.png":::
+    > :::image type="content" source="images/asr-mem-configuration-settings.png" alt-text="The configuration of ASR rules to Audit mode" lightbox="images/asr-mem-configuration-settings.png":::
 
     >[!Note]
     >There are variations in some ASR rules mode listings; _Blocked_ and _Enabled_ provide the same functionality.
@@ -58,12 +58,12 @@ You can use Microsoft Endpoint Manager (MEM) Endpoint Security to configure cust
 10. Review your settings in the **Review + create** pane. Click **Create** to apply the rules.
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/asr-mem-review-create.png" alt-text="An example  of activation of ASR rules policy" lightbox="images/asr-mem-review-create.png":::
+   > :::image type="content" source="images/asr-mem-review-create.png" alt-text="The Create profile page" lightbox="images/asr-mem-review-create.png":::
 
 Your new attack surface reduction policy for ASR rules is listed in **Endpoint security | Attack surface reduction**.
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/asr-mem-my-asr-rules.png" alt-text="An example of activation of ASR rules policy" lightbox="images/asr-mem-my-asr-rules.png":::
+   > :::image type="content" source="images/asr-mem-my-asr-rules.png" alt-text=" The Attack surface reduction page" lightbox="images/asr-mem-my-asr-rules.png":::
 
 ## Step 2: Understand the Attack surface reduction rules reporting page in the Microsoft 365 Defender portal
 
@@ -78,7 +78,7 @@ The ASR  rules reporting page is found in **Microsoft 365 Defender portal** > **
 Provides a 30-day timeline of detected audit and blocked events.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-01.png" alt-text="**Attack surface reduction rules detections** tab" lightbox="images/asr-defender365-01.png":::
+> :::image type="content" source="images/asr-defender365-01.png" alt-text="The Attack surface reduction rules detections tab" lightbox="images/asr-defender365-01.png":::
 
 The Attack Surface reduction rules pane provides an overview of detected events on a per-rule basis.
 
@@ -86,12 +86,12 @@ The Attack Surface reduction rules pane provides an overview of detected events 
 >There are some variations in ASR rules reports. Microsoft is in the process of updating the behavior of the ASR rules reports to provide a consistent experience.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-01b.png" alt-text="An example of attack surface reduction rules rule detections" lightbox="images/asr-defender365-01b.png"::: 
+> :::image type="content" source="images/asr-defender365-01b.png" alt-text="The Attack surface reduction rules page" lightbox="images/asr-defender365-01b.png"::: 
 
 Click **View detections** to open the **Detections** tab.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-reports-detections.png" alt-text="An example of attack surface reduction rules detections" lightbox="images/asr-defender365-reports-detections.png":::
+> :::image type="content" source="images/asr-defender365-reports-detections.png" alt-text="The Attack surface reduction rules detections" lightbox="images/asr-defender365-reports-detections.png":::
 
 The **GroupBy** and **Filter** pane provide the following options:
 
@@ -107,12 +107,12 @@ The **GroupBy** returns results set to the following groups:
 - Publisher
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-reports-detections.png" alt-text="An example of attack surface reduction rules detections GroupBy filter" lightbox="images/asr-defender365-reports-detections.png":::
+> :::image type="content" source="images/asr-defender365-reports-detections.png" alt-text="The Attack surface reduction rules detections GroupBy filter" lightbox="images/asr-defender365-reports-detections.png":::
 
 **Filter** opens the **Filter on rules** page, which enables you to scope the results to only the selected ASR rules:
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-filter.png" alt-text="An example of attack surface reduction rules detections filter on rules" lightbox="images/asr-defender365-filter.png":::
+> :::image type="content" source="images/asr-defender365-filter.png" alt-text="The Attack surface reduction rules detections filter on rules" lightbox="images/asr-defender365-filter.png":::
 
 >[!Note]
 >If you have a Microsoft Microsoft 365 Security E5 or A5, Windows E5 or A5 license, the following link opens the Microsoft Defender 365  Reports > [Attack surface reductions](https://security.microsoft.com/asr?viewid=detections) > Detections tab.
@@ -122,27 +122,27 @@ The **GroupBy** returns results set to the following groups:
 Lists – on a per-computer basis – the aggregate state of ASR rules: Off, Audit, Block.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-configurations.png" alt-text="Attack surface reduction rules **Configuration** tab and an entry in its page" lightbox="images/asr-defender365-configurations.png":::
+> :::image type="content" source="images/asr-defender365-configurations.png" alt-text="The Attack surface reduction rules Configuration tab and an entry in its page" lightbox="images/asr-defender365-configurations.png":::
 
 On the Configurations tab, you can check – on a per-device basis – which ASR rules are enabled, and in which mode, by selecting the device for which you want to review ASR rules.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-configurations.settings.png" alt-text="An example of attack surface reduction rules enabled and mode" lightbox="images/asr-defender365-configurations.settings.png":::
+> :::image type="content" source="images/asr-defender365-configurations.settings.png" alt-text="The Attack surface reduction rules enabled and mode" lightbox="images/asr-defender365-configurations.settings.png":::
 
 The **Get started** link opens the Microsoft Endpoint Manager admin center, where you can create or modify an endpoint protection policy for ASR:
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-05b-mem1.png" alt-text="The **Endpoint security** menu item on the **Overview** page" lightbox="images/asr-defender365-05b-mem1.png":::
+> :::image type="content" source="images/asr-defender365-05b-mem1.png" alt-text="The *Endpoint security menu item on the Overview page" lightbox="images/asr-defender365-05b-mem1.png":::
 
 In Endpoint security | Overview, select **Attack surface reduction**:
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-05b-mem2.png" alt-text="An example of Attack surface reduction in MEM" lightbox="images/asr-defender365-05b-mem2.png":::
+> :::image type="content" source="images/asr-defender365-05b-mem2.png" alt-text="The Attack surface reduction in MEM" lightbox="images/asr-defender365-05b-mem2.png":::
 
 The Endpoint Security | Attack surface reduction pane opens:
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-05b-mem3.png" alt-text="An example **Endpoint security Asr** pane" lightbox="images/asr-defender365-05b-mem3.png":::
+> :::image type="content" source="images/asr-defender365-05b-mem3.png" alt-text="The Endpoint security Asr pane" lightbox="images/asr-defender365-05b-mem3.png":::
 
 >[!Note]
 >If you have a Microsoft Defender 365 E5 (or Windows E5?) license, this link will open the Microsoft Defender 365  Reports > Attack surface reductions > [Configurations](https://security.microsoft.com/asr?viewid=configuration) tab.

@@ -38,7 +38,7 @@ This article provides solutions to help address the sign-on issues.
 
 **Sign in failed:** *Unexpected error, try later*
 
-:::image type="content" source="images/f9c3bad127d636c1f150d79814f35d4c.png" alt-text="An example of a sign-in failed error Unexpected error in the sign-in page of Microsoft Defender ATP portal." lightbox="images/f9c3bad127d636c1f150d79814f35d4c.png":::
+:::image type="content" source="images/f9c3bad127d636c1f150d79814f35d4c.png" alt-text="An sign-in failed error Unexpected error in the sign-in page of the Microsoft Defender ATP portal." lightbox="images/f9c3bad127d636c1f150d79814f35d4c.png":::
 
 **Message:**
 
@@ -57,7 +57,7 @@ from Google Play Store and try again.
 
 **Sign in failed:** *Invalid license, please contact administrator*
 
-:::image type="content" source="images/920e433f440fa1d3d298e6a2a43d4811.png" alt-text="An example of the page with directive contact details in the sign-in page of Microsoft Defender ATP" lightbox="images/920e433f440fa1d3d298e6a2a43d4811.png":::
+:::image type="content" source="images/920e433f440fa1d3d298e6a2a43d4811.png" alt-text="The directive contact details in the sign-in page of the Microsoft Defender ATP portal" lightbox="images/920e433f440fa1d3d298e6a2a43d4811.png":::
 
 **Message:** *Invalid license, please contact administrator*
 
@@ -82,7 +82,7 @@ Phishing websites impersonate trustworthy websites for the purpose of obtaining 
 Phishing and harmful web threats that are detected by Defender for Endpoint
 for Android are not blocked on some Xiaomi devices. The following functionality doesn't work on these devices.
 
-:::image type="content" source="images/0c04975c74746a5cdb085e1d9386e713.png" alt-text="An example of the page displaying a site-unsafe notification message" lightbox="images/0c04975c74746a5cdb085e1d9386e713.png":::
+:::image type="content" source="images/0c04975c74746a5cdb085e1d9386e713.png" alt-text="A site-unsafe notification message" lightbox="images/0c04975c74746a5cdb085e1d9386e713.png":::
 
 **Cause:**
 
@@ -91,7 +91,7 @@ Xiaomi devices include a new permission model. This prevents Defender for Endpoi
 Xiaomi devices permission: "Display pop-up windows while running in the
 background."
 
-:::image type="content" source="images/6e48e7b29daf50afddcc6c8c7d59fd64.png" alt-text=" The pop-up setting pane in Microsoft Defender ATP portal" lightbox="images/6e48e7b29daf50afddcc6c8c7d59fd64.png":::
+:::image type="content" source="images/6e48e7b29daf50afddcc6c8c7d59fd64.png" alt-text="The pop-up setting pane in the Microsoft Defender ATP portal" lightbox="images/6e48e7b29daf50afddcc6c8c7d59fd64.png":::
 
 **Solution:**
 
@@ -120,21 +120,21 @@ Users can follow these steps to enable the same permissions from the device sett
 
 2. Search for and select **Battery Optimization**.
 
-   :::image type="content" source="images/search-battery-optimisation.png" alt-text="An example of the page on which you can search and select **Battery Optimisation**" lightbox="images/search-battery-optimisation.png":::
+   :::image type="content" source="images/search-battery-optimisation.png" alt-text="The page on which you can search and select Battery Optimisation" lightbox="images/search-battery-optimisation.png":::
 
 3. In **Special app access**, select **Battery Optimization**.
 
-   :::image type="content" source="images/special-app-access.png" alt-text="An example of the **Special app access** pane from which you can select **Battery Optimisation**" lightbox="images/special-app-access.png":::
+   :::image type="content" source="images/special-app-access.png" alt-text="The Special app access pane from which you can select Battery Optimisation" lightbox="images/special-app-access.png":::
 
 4. Change the Dropdown to show **All Apps**.
 
-   :::image type="content" source="images/show-all-apps-2.png" alt-text="An example of the drop-down from which you can change the value to **All Apps** under the **Battery Optimisation** pane" lightbox="images/show-all-apps-2.png":::
+   :::image type="content" source="images/show-all-apps-2.png" alt-text="The drop-down from which you can change the value to All Apps under the Battery Optimisation pane" lightbox="images/show-all-apps-2.png":::
 
-   :::image type="content" source="images/show-all-apps-1.png" alt-text="An example of the drop-down that displays the **All Apps** option under the **Battery Optimisation** pane" lightbox="images/show-all-apps-1.png":::
+   :::image type="content" source="images/show-all-apps-1.png" alt-text="The drop-down that displays the All Apps option under the Battery Optimisation pane" lightbox="images/show-all-apps-1.png":::
 
 5. Locate “Microsoft Defender for Endpoint” and select **Don’t Optimize**.
 
-   :::image type="content" source="images/select-dont-optimise.png" alt-text="An example of the page that provides for locating **Microsoft Defender for Endpoin** and selecting **Don't Optimize**" lightbox="images/select-dont-optimise.png":::
+   :::image type="content" source="images/select-dont-optimise.png" alt-text="The page that enables location of the option Microsoft Defender for Endpoint and selection of Don't Optimize" lightbox="images/select-dont-optimise.png":::
 
 Return to the Microsoft Defender for Endpoint onboarding screen, select **Allow**, and you will be redirected to the dashboard screen.
 
@@ -148,18 +148,18 @@ If a user faces an issue which is not already addressed in the above sections or
 
 2.	Select “Help & feedback”.
 
-    :::image type="content" source="images/selecthelpandfeedback2.png" alt-text="The **Help & feedback option to select in the Microsoft Defender for Endpoint portal" lightbox="images/selecthelpandfeedback2.png":::
+    :::image type="content" source="images/selecthelpandfeedback2.png" alt-text="The Help & feedback option that can be selected in the Microsoft Defender for Endpoint portal" lightbox="images/selecthelpandfeedback2.png":::
 
 3.	Select “Send feedback to Microsoft”.
 
-    :::image type="content" alt-text="Select send feedback to Microsoft." source="images/send-feedback-to-microsoft-3.jpg":::
+    :::image type="content" alt-text="Select send feedback to Microsoft" source="images/send-feedback-to-microsoft-3.jpg":::
 
 4.	Choose from the given options. To report an issue, select “I want to report an issue”.
 
-    :::image type="content" source="images/report-issue-4.jpg" alt-text="The **I want to report an issue** option" lightbox="images/report-issue-4.jpg":::
+    :::image type="content" source="images/report-issue-4.jpg" alt-text="The I want to report an issue option" lightbox="images/report-issue-4.jpg":::
 
 5.	Provide details of the issue that you are facing and check “Send diagnostic data”. We recommend checking “Include your email address” so that the team can reach back to you with a solution or a follow-up.
 
-    :::image type="content" source="images/finalsubmit5.png" alt-text="An example of the pane on which you can add details and attach diagnostic data" lightbox="images/finalsubmit5.png":::
+    :::image type="content" source="images/finalsubmit5.png" alt-text="The pane on which you can add details and attach diagnostic data" lightbox="images/finalsubmit5.png":::
 
 6.	Click on “Submit” to successfully send the feedback.
