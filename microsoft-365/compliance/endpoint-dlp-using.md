@@ -46,8 +46,23 @@ Or
 |Unallowed Apps     |Supported         |Supported         |         |
 |Unallowed Bluetooth apps    |Supported         |Not Supported         |         |
 |Browser and domain restrictions to sensitive items      |Supported         |Supported         |         |
-|Additional settings for Endpoint DLP     |Supported         |Supported         |Only the default business justifications are supported for macOS devices         |
 |Always audit file activity for devices     |Supported         |Supported         |         |
+|Auto-quarantine files from unallowed apps     |Supported         |Not supported         |        |
+|Advanced Classification     |Supported         |Not Supported         |         |
+|Business justification in policy tips     |Supported         |Supported         |MacOS includes support for default business justifications          |
+
+
+### Endpoint DLP Windows 10 and macOS activities
+
+|Setting |Windows 10, 1809 and later  |macOS Catalina 10.15 or later (preview)  |Notes  |
+|---------|---------|---------|---------|
+|Upload to cloud service, or access by unallowed browsers     |Supported         |Supported         |          |
+|Copy from file using clipboard to other app     |Supported         |Supported         |         |
+|Copy to USB removable media    |Supported         |Supported         |         |
+|Copy to network share      |Supported         |Supported         |         |
+|Print a document     |Supported         |Supported         |         |
+|Copy to remote session     |Supported         |Not Supported         |         |
+|Copy to Bluetooth device     |Supported         |Not Supported         |         |
 
 ### Advanced classification scanning and protection
 
@@ -164,7 +179,8 @@ Restrict sensitive files that match your policies from being shared with unrestr
 
 #### Unallowed browsers
 
-You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge Chromium.
+You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, Windows end users will see a toast notification asking them to open the file through Edge Chromium. On Mac, user will be alerted that the access is blocked.
+Browsers that fully support this behavior on Windows are all versions of Edge Chromium and Chrome. On Mac they are all versions of Edge Chromium, Edge, Chrome, Safari, and Firefox.
 
 #### Service domains
 
