@@ -90,7 +90,8 @@
         "admin/**/*.md": false,
         "business/**/*.md": false,
         "business-video/**/*.md": false,
-        "commerce/**/*.md": false
+        "commerce/**/*.md": false,
+        "lighthouse/**/*.md": false
         },
       "titleSuffix": {
         "compliance/**/*.md": "Microsoft 365 Compliance",
@@ -107,14 +108,13 @@
         "compliance/**/*.md":"https://office365.uservoice.com/forums/289138-office-365-security-compliance",
         "security/**/*.md":"https://office365.uservoice.com/forums/289138-office-365-security-compliance",
         "admin/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
-        "bookings/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
-        "bookings/**/*.yml":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
+        "bookings/":"https://feedbackportal.microsoft.com/feedback/forum/e9c7c7d1-011c-ec11-b6e7-0022481f8472",
         "business/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "business-video/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "campaigns/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "commerce/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "enterprise/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
-        "lighthouse/**/*.md":"https://github.com/MicrosoftDocs/microsoft-365-docs/issues"
+        "lighthouse/":"https://feedbackportal.microsoft.com/feedback/forum/d6a21c42-fe1b-ec11-b6e7-0022481f8472"
       },
       "searchScope": {
         "security/office-365-security/**/*.md": "Defender for Office",

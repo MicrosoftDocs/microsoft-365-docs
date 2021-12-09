@@ -33,7 +33,7 @@ This article is for people who have a Microsoft 365 for business subscription.
   
 If you need help with interpreting the charges you see on your bill, see [Understand your bill or invoice](understand-your-invoice2.md) for a detailed walkthrough.
   
-**Have a problem with your bill?** [Contact support for business products](../../business-video/get-help-support.md).
+**Have a problem with your bill?** [Contact support for business products](../../admin/get-help-support.md).
 
 ## Before you begin
 
@@ -52,12 +52,6 @@ You must be a Global or Billing admin to do the steps described in this article.
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Bills & payments</a> page.
 
 ::: moniker-end
 
