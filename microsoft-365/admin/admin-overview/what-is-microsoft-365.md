@@ -37,7 +37,7 @@ When you sign up for Microsoft 365 Business Premium, you get all the same produc
 
 |Feature|Description|
 | --- | --- |
-| Protect against threats | Microsoft 365 Business Premium helps protect you against threats with Advanced Threat Protection, safe attachment and safe links protection. |
+| Protect against threats | Microsoft 365 Business Premium helps protect you against threats with advanced threat protection capabilities. These capabilities include safe attachments and safe links protection. <br/><br/>Check out [Overview of Microsoft Defender for Business](../../security/defender-business/mdb-overview.md) (preview!) for additional security and threat protection capabilities. |
 | Secure business data | Your personal data is protected on personal devices with PIN access, and restricted copy and saving. You can also add information protection to make sure that only authorized people can access sensitive information. |
 | Secure your devices | You can protect your work files on devices by restricting mobile access, such as copy and paste. You can also selectively wipe business data from enrolled mobile devices if they are lost or stolen. |
 | Additional security features | Advanced features in Microsoft 365 Business Premium are available to help you protect your business against cyber-threats and safeguard sensitive information. The capabilities include Microsoft Defender for Office 365 Plan 1, Data loss prevention policies (DLP), Exchange Online archiving, Azure Information Protection, and Intune. |
