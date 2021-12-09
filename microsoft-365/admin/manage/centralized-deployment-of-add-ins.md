@@ -30,7 +30,7 @@ Centralized Deployment is the recommended and most feature-rich way for most cus
 
 Centralized Deployment provides the following benefits:
 
-- A Global admin can assign an add-in directly to a user, to multiple users via a group, or to everyone in the organization.
+- An admin can deploy and assign an add-in directly to a user, to multiple users via a group, or to everyone in the organization (see Admin requirement section for information).
 
 - When the relevant Office application starts, the add-in automatically downloads. If the add-in supports add-in commands, the add-in automatically appears in the ribbon within the Office application.
 
@@ -47,7 +47,7 @@ You can view specific requirements for Office and Exchange below, or use the [Ce
 
 Centralized Deployment doesn't support the following:
 
-- Add-ins that target Word, Excel, or PowerPoint in Office 2013
+- Add-ins that target Office MSI version (except Outlook 2016)
 - An on-premises directory service
 - Add-in Deployment to an Exchange On-Prem Mailbox
 - Add-in deployment to SharePoint
@@ -77,6 +77,15 @@ Centralized Deployment doesn't support the following:
 Microsoft Exchange stores the add-in manifests within your organization's tenant. The admin deploying add-ins and the users receiving those add-ins must be on a version of Exchange Online that supports OAuth authentication.
 
 Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) PowerShell cmdlet.
+
+### Admin requirements
+
+In order to deploy an add-in via Centralized Deployement, you need to be either a Global admin or an Exchange admin in the organization.
+
+> [!NOTE]
+> An Exchange admin can deploy an add-in only if the **App Registrations** property is set to true in Azure Active Directory admin center as shown in the following image:
+>
+> ![image](https://user-images.githubusercontent.com/89943918/144516704-8874a10d-b540-41f3-ae9d-c07a8d7e143f.png)
 
 
 ### Centralized Deployment Compatibility Checker
@@ -131,7 +140,7 @@ Centralized Deployment supports assignments to individual users, groups, and eve
 
 Take a look at the following example where Sandra, Sheila, and the Sales Department group are assigned to an add-in. Because the West Coast Sales Department is a nested group, Bert and Fred aren't assigned to an add-in.
 
-![Diagram of sales department.](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
+![MicrosoftTeams-image](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
 
 ### Find out if a group contains nested groups
@@ -148,7 +157,7 @@ Alternately, you can use the Azure Active Directory Graph API to run queries to 
 
 ### Contacting Microsoft for support
 
-If you or your users encounter problems loading the add-in while using Office apps for the web (Word, Excel, etc.), which were centrally deployed, you may need to contact Microsoft support ([learn how](../../business-video/get-help-support.md)). Provide the following information about your Microsoft 365 environment in the support ticket.
+If you or your users encounter problems loading the add-in while using Office apps for the web (Word, Excel, etc.), which were centrally deployed, you may need to contact Microsoft support ([learn how](../../business-video/get-help-support.md). Provide the following information about your Microsoft 365 environment in the support ticket.
 
 | Platform | Debug information |
 |:-----|:-----|

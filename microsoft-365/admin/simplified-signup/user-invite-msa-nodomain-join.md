@@ -78,7 +78,7 @@ You will need to leave your previous Microsoft 365 Business subscription first. 
 
 ### I have a question about using this account. Who can I talk to?
 
-Contact our small business support experts who can help you upgrade your Microsoft 365 subscription. Learn more at [Get support](../../business-video/get-help-support.md).
+Contact our small business support experts who can help you upgrade your Microsoft 365 subscription. Learn more at [Get support](../get-help-support.md).
 
 ### The Gmail, Outlook, Yahoo or other email account that I’m using as a Microsoft Account already has some personal files in it. Can the technical administrator or business owner see these?
 
