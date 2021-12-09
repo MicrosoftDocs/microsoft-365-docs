@@ -200,7 +200,12 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
        New-OrganizationRelationship "[name of your organization relationship]" -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability RemoteOutbound -DomainNames $targetTenantId -OAuthApplicationId $appId -MailboxMovePublishedScopes $scope
    }
    ```
-
+   
+Note: TenantID fed to $sourceTenantId and $targetTenantId is the GUID and not the tenant domain name.
+To find your TenantID - https://docs.microsoft.com/en-us/onedrive/find-your-office-365-tenant-id
+Here is an example of Tenant ID
+![image](https://user-images.githubusercontent.com/74538523/145413901-e8924abf-13bd-442c-912d-932707ae8b9c.png)
+   
 ### How do I know this worked?
 
 You can verify cross-tenant mailbox migration configuration by running [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) cmdlet against the cross-tenant migration endpoint that you created on your target tenant.
