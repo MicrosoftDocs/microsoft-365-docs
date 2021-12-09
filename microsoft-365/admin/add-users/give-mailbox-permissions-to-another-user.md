@@ -18,6 +18,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
@@ -107,7 +108,7 @@ There are a few different ways you can access a mailbox once you've been given a
 
 
 > [!NOTE]
-> **Read** and **Manage** permissions are called **Full Access** permission when granted in the Exchange admin center. This permission allows the assigned user mailbox to read as well as manage emails in the user mailbox on which the permission is assigned. Full Access permission does not grant **Send as** or **Send on behalf**  permissions.
+> **Read** and **Manage** permissions are called **Full Access** permission when granted in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. This permission allows the assigned user mailbox to read as well as manage emails in the user mailbox on which the permission is assigned. Full Access permission does not grant **Send as** or **Send on behalf**  permissions.
 
 ::: moniker-end
 

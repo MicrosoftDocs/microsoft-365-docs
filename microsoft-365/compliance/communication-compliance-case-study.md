@@ -11,6 +11,7 @@ ms.topic: article
 ms.custom: 
 - admindeeplinkMAC
 - admindeeplinkCOMPLIANCE
+- admindeeplinkEXCHANGE
 f1_keywords:
 - 'ms.o365.cc.SupervisoryReview'
 ms.service: O365-seccomp
@@ -169,7 +170,7 @@ They need to create a new group to include all Contoso users, so they take the f
 
     ![Groups.](../media/communication-compliance-case-all-employees.png)
 
-3. After the new group is created, they need to add all Contoso users to the new group. They open the **Exchange admin center** [(https://outlook.office365.com/ecp)](https://outlook.office365.com/ecp) and navigate to **Exchange admin center** > **recipients** > **groups**. The Contoso IT administrators select the Membership area and the new *All Employees* group they created and select the **Edit** control to add all Contoso users to the new group in the wizard.
+3. After the new group is created, they need to add all Contoso users to the new group. They open the **Exchange admin center** [(https://outlook.office365.com/ecp)](https://outlook.office365.com/ecp) and navigate to **Exchange admin center** > **recipients** > <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>. The Contoso IT administrators select the Membership area and the new *All Employees* group they created and select the **Edit** control to add all Contoso users to the new group in the wizard.
 
     ![Exchange admin center.](../media/communication-compliance-case-eac.png)
 
