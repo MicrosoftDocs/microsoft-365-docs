@@ -1,6 +1,6 @@
 ---
 title: "Requirements for Microsoft 365 Lighthouse"
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
