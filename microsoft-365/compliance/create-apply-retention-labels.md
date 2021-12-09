@@ -115,13 +115,13 @@ To edit an existing retention label policy (the policy type is **Publish**), sel
 
 ## When retention labels become available to apply
 
-For OneDrive and SharePoint locations, published labels typically appear for users to select within one or two days. However, allow up to eight days.
+For OneDrive and SharePoint locations, published labels typically appear for users to select within one or two days. However, allow up to seven days.
 
-For Exchange and Microsoft 365 Groups locations, it can take up to eight days for published retention labels to appear for users in Outlook, and the mailbox must contain at least 10 MB of data.
+For Exchange and Microsoft 365 Groups locations, it can take up to seven days for published retention labels to appear for users in Outlook, and the mailbox must contain at least 10 MB of data.
 
 ![Diagram of when published labels take effect.](../media/retention-labels-published-timings.png)
 
-If the labels don't appear after eight days, check the **Status** of the label policy by selecting it from the **Label policies** page in the compliance center. If you see the status of **Off (Error)** and in the details for the locations see a message that it's taking longer than expected to deploy the policy (for SharePoint) or to try redeploying the policy (for OneDrive), try running [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy), a PowerShell command, to retry the policy distribution:
+If the labels don't appear after seven days, check the **Status** of the label policy by selecting it from the **Label policies** page in the compliance center. If you see the status of **Off (Error)** and in the details for the locations see a message that it's taking longer than expected to deploy the policy (for SharePoint) or to try redeploying the policy (for OneDrive), try running [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy), a PowerShell command, to retry the policy distribution:
 
 1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
 
@@ -291,7 +291,7 @@ Although the UI refers to retention policies, it's your retention labels that di
 When you edit a retention label or retention label policy, and the retention label or policy is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
 
 Some settings can't be changed after the label or policy is created and saved, which include:
-- The retention label and policy name, and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
+- Names for retention labels and their policies, the scope type (adaptive or static), and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
 - The option to mark items as a record.
 
 ### Deleting retention labels

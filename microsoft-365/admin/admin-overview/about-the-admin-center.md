@@ -52,7 +52,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 ## Admin center features and settings
 
-Here are the features and settings you'll find in the left-hand navigation of the admin center. Learn more about admin tasks in [admin help](../../business-video/admin-center-overview.md).
+Here are the features and settings you'll find in the left-hand navigation of the admin center. Learn more about admin tasks in [admin help]([Overview of the Microsoft 365 admin center](admin-center-overview.md).
 
 <br>
 
@@ -65,7 +65,7 @@ Here are the features and settings you'll find in the left-hand navigation of th
 |**Groups**|Create and manage groups in your organization, such as a Microsoft 365 group, distribution group, security group, or shared mailbox. Learn how to [create](../create-groups/create-groups.md) and [manage](../create-groups/manage-groups.md) groups.|
 |**Resources**|Create and manage resources, like a SharePoint site collection. Learn how to [create site collections](/sharepoint/create-site-collection).|
 |**Billing**|View, purchase, or cancel subscriptions for your organization. View past billing statements or view the number of assigned licenses to individual users. Learn how to [manage billing](../../commerce/index.yml).|
-|**Support**|View existing service requests or create new ones. Learn more in [Contact support for business products - Admin Help]([Get support](../get-help-support.md)).|
+|**Support**|View existing service requests or create new ones. Learn more in [Contact support for business products - Admin Help](../../business-video/get-help-support.md).|
 |**Settings**|Manage global settings for apps like email, sites, and the Office suite. Change your password policy and expiration date. Add and update domain names like contoso.com. Change your organization profile and release preferences. And choose whether partners can access your admin center.|
 |**Setup**|Manage existing domains, turn on and manage multi-factor authentication, manage admin access, migrate user mailboxes to Office 365, manage feature updates, and help users install their Office apps.|
 |**Reports**|See at a glance how your organization is using Microsoft 365 with detailed reports on email use, Office activations, and more. Learn how to use the new [activity reports](../activity-reports/activity-reports.md).|

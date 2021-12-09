@@ -28,7 +28,7 @@ description: "Within 30 days after deleting a user account, you can restore the 
 
 # Restore a user
    
-When you restore a user account within 30 days after deleting it, the account and all associated data are restored. The user can sign in with the same work or school account. Their mailbox will be fully restored. To find out how much time remains before a specific user account can no longer be restored, [contact us]([Get support](../get-help-support.md)).
+When you restore a user account within 30 days after deleting it, the account and all associated data are restored. The user can sign in with the same work or school account. Their mailbox will be fully restored. To find out how much time remains before a specific user account can no longer be restored, [contact us](../../business-video/get-help-support.md).
   
 Here are a couple of tips:
   
