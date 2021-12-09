@@ -85,15 +85,17 @@ While an applied model processes all files and folder content uploaded to the do
 
 ### Classification Date field
 
-When a SharePoint Syntex document understanding or form processing model is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
+When a SharePoint Syntex document understanding model (or a form processing model) is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
 
    ![Screenshot of a document library showing the Classification Date column.](../media/content-understanding/class-date-column.png) 
+
+When a model gets stamped with a new or updated **Classification Date**, you can use the **Send a customized email when a new file is added** flow to notify users that a file in the document library has been added or changed. 
 
 The **Classification Date** field is used by the [**When a file is classified by a content understanding model**](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) trigger to run a Power Automate flow after a Syntex content understanding model has finished processing a file or folder and updated the **Classification Date** field.
 
    ![Flow trigger.](../media/content-understanding/trigger.png)
 
-The **When a file is classified by a content understanding model** trigger can then be used to start another workflow using any extracted information from the file or folder.
+The **When a file is classified by a content understanding model** trigger can then be used to start another flow using any extracted information from the file or folder.
 
 
 

@@ -130,6 +130,18 @@ You need to tag the documents to teach the model to understand the fields and ta
 
     ![Done.](../media/content-understanding/doc-lib-done.png) 
 
+There are two flows available to process a selected file or batch of files in a library where a form processing model has been applied.
+
+- **Extract info from an image or PDF file with a form processing model** — Use to extract text from a selected image or PDF file by running a form processing model. Supports a single selected file at a time, and supports only PDF files and image files (PNG, JPG, and JPEG).
+
+- **Extract info from files with a form processing model** — Use with form processing models to read and extract information from a batch of files. Processes up to 5,000 SharePoint files at a time.
+
+### Classification Date field
+
+When a SharePoint Syntex form processing model (or a document understanding model) is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
+
+When a model gets stamped with a new or updated **Classification Date**, you can use the **Send a customized email when a new file is added** flow to notify users that a file in the document library has been added or changed. 
+
 ## See Also
   
 [Power Automate documentation](/power-automate/)
