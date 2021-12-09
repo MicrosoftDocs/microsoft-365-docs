@@ -12,7 +12,9 @@ search.appverid:
 ms.collection: Ent_O365
 f1.keywords:
 - NOCSH
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: Learn how to use PowerShell to move the contents from a source email system all at once by performing a cutover migration to Microsoft 365.
 ---
@@ -26,7 +28,7 @@ You can migrate the contents of user mailboxes from a source email system to Mic
 By reviewing the topic, [What you need to know about a cutover email migration to Microsoft 365](/Exchange/mailbox-migration/what-to-know-about-a-cutover-migration), you can get an overview of the migration process. When you're comfortable with the contents of that article, use this one to begin migrating mailboxes from one email system to another.
 
 > [!NOTE]
-> You can also use the Exchange admin center to perform a cutover migration. See [Perform a cutover migration of email to Microsoft 365](/Exchange/mailbox-migration/cutover-migration-to-office-365).
+> You can also use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> to perform a cutover migration. See [Perform a cutover migration of email to Microsoft 365](/Exchange/mailbox-migration/cutover-migration-to-office-365).
 
 ## What do you need to know before you begin?
 
