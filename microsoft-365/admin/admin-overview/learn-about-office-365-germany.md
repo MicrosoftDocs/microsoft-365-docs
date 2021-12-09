@@ -2,9 +2,9 @@
 title: "Learn about Office 365 Germany"
 f1.keywords:
 - NOCSH
-ms.author: loreenl
-author: LoreenLa
-manager: pamgreen
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
