@@ -75,13 +75,13 @@ The static proxy is also configurable through Group Policy (GP), both the settin
 
   Set it to **Enabled** and select **Disable Authenticated Proxy usage**.
 
-  ![Image of Group Policy setting1.](images/atp-gpo-proxy1.png)
+  :::image type="content" source="images/atp-gpo-proxy1.png" alt-text="The Group Policy setting1 status pane" lightbox="images/atp-gpo-proxy1.png":::
 
 - **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure connected user experiences and telemetry**:
 
   Configure the proxy
 
-  ![Image of Group Policy setting2.](images/atp-gpo-proxy2.png)
+  :::image type="content" source="images/atp-gpo-proxy2.png" alt-text="The Group Policy setting2 status pane" lightbox="images/atp-gpo-proxy2.png":::
 
 
 | Group Policy | Registry key | Registry entry | Value |
@@ -99,7 +99,7 @@ Configure the static proxy using the Group Policy found here:
 
 2. Set it to **Enabled** and define the proxy server. Note that the URL must have either http:// or https://. For supported versions for https://, see [Manage Microsoft Defender Antivirus updates](manage-updates-baselines-microsoft-defender-antivirus.md).
 
-   :::image type="content" source="images/proxy-server-mdav.png" alt-text="Proxy server for Microsoft Defender Antivirus.":::
+   :::image type="content" source="images/proxy-server-mdav.png" alt-text="The proxy server for Microsoft Defender Antivirus" lightbox="images/proxy-server-mdav.png":::
 
 3. Under the registry key `HKLM\Software\Policies\Microsoft\Windows Defender`, the policy sets the registry value `ProxyServer` as REG_SZ. 
 
@@ -171,7 +171,7 @@ The following downloadable spreadsheet lists the services and their associated U
 **** 
 |Spreadsheet of domains list|Description|
 |---|---|
-|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet.](images/mdatp-urls.png)|Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
+|:::image type="content" source="images/mdatp-urls.png" alt-text="The Microsoft Defender for Endpoint URLs spreadsheet" lightbox="images/mdatp-urls.png":::|Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
 |
 
 If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed in the above table from HTTPS scanning.

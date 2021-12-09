@@ -41,7 +41,7 @@ To enable and configure always-on protection:
 
     2. Under **Best match**, select **Edit group policy** to launch **Local Group Policy Editor**.
     
-       ![GPEdit taskbar search result.](images/gpedit-search.png)
+       :::image type="content" source="images/gpedit-search.png" alt-text="The GPEdit taskbar search result in the Control panel" lightbox="images/gpedit-search.png":::
 
 2. In the left pane of **Local Group Policy Editor**, expand the tree to **Computer Configuration** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus**.
 
