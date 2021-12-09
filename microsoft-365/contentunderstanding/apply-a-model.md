@@ -89,7 +89,7 @@ When a SharePoint Syntex document understanding model (or a form processing mode
 
    ![Screenshot of a document library showing the Classification Date column.](../media/content-understanding/class-date-column.png) 
 
-When a model gets stamped with a new or updated **Classification Date**, you can use the **Send a customized email when a new file is added** flow to notify users that a file in the document library has been added or changed. 
+You can use the **Send an email after SharePoint Syntex processes a file** flow to notify users that a new file has been processed and classified by a model in a SharePoint document library.
 
 The **Classification Date** field is used by the [**When a file is classified by a content understanding model**](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) trigger to run a Power Automate flow after a Syntex content understanding model has finished processing a file or folder and updated the **Classification Date** field.
 

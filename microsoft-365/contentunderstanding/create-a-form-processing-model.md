@@ -140,7 +140,7 @@ There are two flows available to process a selected file or batch of files in a 
 
 When a SharePoint Syntex form processing model (or a document understanding model) is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
 
-When a model gets stamped with a new or updated **Classification Date**, you can use the **Send a customized email when a new file is added** flow to notify users that a file in the document library has been added or changed. 
+You can use the **Send an email after SharePoint Syntex processes a file** flow to notify users that a new file has been processed and classified by a model in a SharePoint document library.
 
 ## See Also
   
