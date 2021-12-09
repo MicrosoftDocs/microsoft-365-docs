@@ -142,7 +142,7 @@ location | include/exclude by|
 |Microsoft Cloud App Security |instance |
 |On-premises repositories| repository file path|
 
-3. **Choose the conditions that must be matched for a policy to be applied to an item** - you can accept pre-configured conditions or define custom conditions. Some examples are:
+3. **Choose the conditions that must be matched for a policy to be applied to an item** - You can accept pre-configured conditions or define custom conditions. Some examples are:
 
 - item contains a specified kind of sensitive information that is being used in a certain context. For example, 95 social security numbers being emailed to recipient outside your org.
 - item has a specified sensitivity label
