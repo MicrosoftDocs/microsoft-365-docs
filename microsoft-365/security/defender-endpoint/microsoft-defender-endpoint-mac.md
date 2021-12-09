@@ -36,7 +36,7 @@ This topic describes how to install, configure, update, and use Defender for End
 
 ## What's new in the latest release
 
-[What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-atp.md)
+[What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-endpoint.md)
 
 [What's new in Microsoft Defender for Endpoint on Mac](mac-whatsnew.md)
 

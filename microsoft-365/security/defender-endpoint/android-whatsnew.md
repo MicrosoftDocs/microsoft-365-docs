@@ -28,6 +28,10 @@ ms.technology: mde
 
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+## Threat and Vulnerability Management
+
+On November 2, 2021, we announced the public preview of Threat and Vulnerability management on Android and iOS. For more information, see [the techcommunity post here](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/reduce-risk-across-your-environments-with-the-latest-threat-and/ba-p/2902691).
+
 ## Upcoming permission changes for Microsoft Defender for Endpoint running Android 11 or later (Nov 2021)
 
 Release Build: 1.0.3501.0301

@@ -147,8 +147,6 @@ Centralizing security information creates a single place for investigating secur
 
 :::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="The Incidents page in Microsoft 365 Defender" lightbox="../../media/converged-incidents-2.png.png":::
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="The Incidents page in Microsoft 365 Defender.":::
-
 Selecting an incident name displays a page that demonstrates the value of centralizing security information.
 
 :::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Example of the Summary page for an incident in Microsoft 365 Defender" lightbox="../../media/converged-incident-info-3.png":::

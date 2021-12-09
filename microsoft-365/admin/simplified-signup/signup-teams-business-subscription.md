@@ -62,4 +62,6 @@ When Recurring billing is on, your subscription will continue to be billed each 
 
 ### What do I do if I want to change my business name?
 
-Contact our small business support experts who can help you change your business name. Learn more at [Get support](../../business-video/get-help-support.md).
+
+Contact our small business support experts who can help you change your business name. Learn more at [Get support](../get-help-support.md).
+
