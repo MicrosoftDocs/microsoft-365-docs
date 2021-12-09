@@ -63,7 +63,9 @@ Check the following section for a list of apps and services that support this se
 ## Prerequisites
 
 > [!IMPORTANT]
-> All users must have Microsoft 365 Apps for enterprise. Support for this co-authoring feature isn't yet available with the Semi-Annual Enterprise Channel for Office updates, so if you are using this update channel, change it to Current Channel or Monthly Enterprise Channel. For more information, see [How to configure and manage update channels](/deployoffice/overview-update-channels#how-to-configure-and-manage-update-channels). 
+> This feature requires that all users have Microsoft 365 Apps for enterprise. Support for this co-authoring feature isn't yet available with the Semi-Annual Enterprise Channel for Office updates. If you are using this update channel for your Office apps, change it to Current Channel or Monthly Enterprise Channel.
+> 
+> For more information, see [How to configure and manage update channels](/deployoffice/overview-update-channels#how-to-configure-and-manage-update-channels).
 
 Make sure you understand the following prerequisites before you turn on this feature.
 
