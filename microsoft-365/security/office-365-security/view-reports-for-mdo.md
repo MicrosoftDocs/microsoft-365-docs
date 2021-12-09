@@ -114,6 +114,10 @@ On the main report page, the ![Export icon.](../../media/m365-cc-sc-download-ico
 
 The **Threat protection status** report is a single view that brings together information about malicious content and malicious email detected and blocked by [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) and Microsoft Defender for Office 365. For more information, see [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
 
+## Top senders and recipients report
+
+The **Top senders and recipients** report show the top recipients for EOP and Defender for Office 365 protection features. For more information, see [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report).
+
 ## URL protection report
 
 The **URL protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](safe-links.md). This report will not have click data from users where the Safe Links policy applied has the **Do not track user clicks** option selected.
