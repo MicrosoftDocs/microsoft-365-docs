@@ -22,8 +22,16 @@ description:
 
 
 
+## Set default to block
+
 1. Sign in to the [Azure portal](https://portal.azure.com) using a Global administrator or Security administrator account. Then open the **Azure Active Directory** service.
 2. Select **External Identities**, and then select **Cross-tenant access settings (preview)**.
+
+
+## Add an organization
+
+
+## Configure inbound to allow all users
 
 
 ## Related topics

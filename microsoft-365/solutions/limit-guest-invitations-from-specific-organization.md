@@ -50,7 +50,7 @@ description:
 
 ## Choose who can be invited as guests by an organization
 
-
+both
 
 1. Sign in to the [Azure portal](https://portal.azure.com) using a Global administrator or Security administrator account. Then open the **Azure Active Directory** service.
 2. Select **External Identities**, and then select **Cross-tenant access settings (preview)**.
