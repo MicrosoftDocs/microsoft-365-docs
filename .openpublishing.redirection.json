@@ -7,7 +7,12 @@
     },
     {
       "source_path": "microsoft-365/business-video/join-team-guest.md",
-      "redirect_url": "https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07",
+      "redirect_url": "/microsoftteams/guest-experience",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/work-from-anywhere.md",
+      "redirect_url": "https://support.microsoft.com/en-us/office/work-remotely-with-microsoft-365-164946c8-a47a-470e-a0b4-feb12a2eea04",
       "redirect_document_id": false
     },
     {
@@ -17,12 +22,22 @@
     },
     {
       "source_path": "microsoft-365/business-video/team-with-guests.md",
-      "redirect_url": "/microsoftteams/guest-experience",
+      "redirect_url": "https://support.microsoft.com/en-us/office/add-guests-to-a-team-in-teams-fccb4fa6-f864-4508-bdde-256e7384a14f",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/collab-outlook-teams.md",
+      "redirect_url": "https://support.microsoft.com/en-us/office/video-what-is-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business-video/org-wide-team.md",
       "redirect_url": "/microsoftteams/create-an-org-wide-team",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/overview-file-sharing.md",
+      "redirect_url": "https://support.microsoft.com/en-us/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65",
       "redirect_document_id": false
     },
     {
@@ -78,6 +93,7 @@
     {
       "source_path": "microsoft-365/business-video/install-apps-ios.md",
       "redirect_url": "https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business-video/files-to-sharepoint.md",
@@ -107,6 +123,11 @@
     {
       "source_path": "microsoft-365/business-video/admin-center-overview.md",
       "redirect_url": "/microsoft-365/admin/admin-overview/admin-center-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/admin-overview/learn-about-office-365-germany.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
       "redirect_document_id": false
     },
     {
@@ -2432,6 +2453,11 @@
     {
       "source_path": "microsoft-365/knowledge/set-up-knowledge-network.md",
       "redirect_url": "/microsoft-365/knowledge/set-up-topic-experiences",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/upgrade.md",
+      "redirect_url": "https://support.microsoft.com/en-us/windows/upgrade-to-windows-10-pro-71ecc746-0f81-a4c0-bd4b-0db8559e0796",
       "redirect_document_id": false
     },
     {
@@ -5837,6 +5863,16 @@
     {
       "source_path": "microsoft-365/knowledge/edit-a-topic.md",
       "redirect_url": "/viva/topics/edit-a-topic",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/secure-office-on-ios.md",
+      "redirect_url": "/microsoft-365/admin/devices/app-protection-settings-for-android-and-ios",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/view-bill.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/view-your-bill-or-invoice",
       "redirect_document_id": false
     },
     {
