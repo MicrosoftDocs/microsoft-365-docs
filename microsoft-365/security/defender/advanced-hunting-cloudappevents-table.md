@@ -45,6 +45,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Application` | string | Application that performed the recorded action |
 | `ApplicationId` | string | Unique identifier for the application |
 | `AccountObjectId` | string | Unique identifier for the account in Azure Active Directory |
+| `AccountId` | string | An identifier for the account as found by Microsoft Cloud App Security. Could be Azure Active Directory ID, user principal name, or other identifiers. |
 | `AccountDisplayName` | string | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
 | `IsAdminOperation` | string | Indicates whether the activity was performed by an administrator |
 | `DeviceType` | string | Type of device based on purpose and functionality, such as "Network device", "Workstation", "Server", "Mobile", "Gaming console", or "Printer" | 
@@ -64,8 +65,8 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `RawEventData` | string | Raw event information from the source application or service in JSON format |
 | `AdditionalFields` | dynamic | Additional information about the entity or event |
 | `AccountType` | string | Type of user account, indicating its general role and access levels, such as Regular, System, Admin, DcAdmin, System, Application | 
-| `IsExternalUser` | boolean | Indicates whether a user inside the network does not belong to the organization’s domain | 
-| `IsImpersonated` | boolean | Indicates whether the activity was performed by one user on behalf of another (impersonated) user | 
+| `IsExternalUser` | boolean | Indicates whether a user inside the network doesn't belong to the organization’s domain | 
+| `IsImpersonated` | boolean | Indicates whether the activity was performed by one user for another (impersonated) user | 
 | `IPTags` | dynamic | Customer-defined information applied to specific IP addresses and IP address ranges | 
 | `IPCategory` | string | Additional information about the IP address | 
 | `UserAgentTags` | dynamic | More information provided by Microsoft Defender for Cloud Apps in a tag in the user agent field. Can have any of the following values: Native client, Outdated browser, Outdated operating system, Robot | 

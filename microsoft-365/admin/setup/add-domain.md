@@ -140,8 +140,8 @@ If you have a website that you use with your business, it will keep working wher
 
 ## Related content
 
-[Domains FAQ](domains-faq.yml) (article)\
-[What is a domain?](../get-help-with-domains/what-is-a-domain.md) (article)\
+[Domains FAQ](domains-faq.yml) (article)
+[What is a domain?](../get-help-with-domains/what-is-a-domain.md) (article)
 [Buy a domain name in Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (article)\
-[Add DNS records to connect your domain](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (article)\
-[Change nameservers to set up Microsoft 365 with any domain registrar](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md) (article)\
+[Add DNS records to connect your domain](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (article)
+[Change nameservers to set up Microsoft 365 with any domain registrar](../get-help-with-domains/change-nameservers-at-any-domain-registrar.md) (article)
