@@ -142,7 +142,7 @@ You can protect against ransomware by creating one or more mail flow rules to bl
 
 - Block file types that could contain ransomware or other malicious code. We'll start with a common list of executables (listed in the table below). If your organization uses any of these executable types and you expect these to be sent in email, add these to the previous rule (warn users).
 
-To create a mail transport rule, view a [short training video](increase-threat-protection.md#protect-against-ransomware.md), or complete the following steps:
+To create a mail transport rule, view a [short training video](increase-threat-protection.md#protect-against-ransomware), or complete the following steps:
 
 1. Go to the [Exchange admin center](https://go.microsoft.com/fwlink/p/?linkid=2059104).
 
@@ -238,7 +238,7 @@ We recommend that you get started with this protection by creating a policy to p
 
 ![Creating an anti-phishing policy in Microsoft Defender for Office 365.](../../media/security-and-compliance-center.png)
 
-To create an anti-phishing policy in Defender for Office 365, view a [short training video](increase-threat-protection.md#protect-your-email-from-phishing-attacks.md), or complete the following steps:
+To create an anti-phishing policy in Defender for Office 365, view a [short training video](increase-threat-protection.md#protect-your-email-from-phishing-attacks), or complete the following steps:
 
 1. Go to <https://protection.office.com>.
 
@@ -307,7 +307,7 @@ We recommend that you do the following:
 
 - Add a new policy targeted to all recipients in your domain.
 
-To get to Safe Links, view a [short training video](increase-threat-protection.md#protect-against-phishing-attacks-with-safe-links.md), or complete the following steps:
+To get to Safe Links, view a [short training video](increase-threat-protection.md#protect-against-phishing-attacks-with-safe-links), or complete the following steps:
 
 1. Go to <https://protection.office.com> and sign in with your admin account.
 
