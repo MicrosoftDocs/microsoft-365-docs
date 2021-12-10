@@ -20,6 +20,7 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - AdminSurgePortfolio
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -31,6 +32,18 @@ description: "Learn how to secure Windows 10 PCs after you have set up Microsoft
 This article applies to Microsoft 365 Business Premium.
 
 After you have [set up](business-set-up.md) Microsoft 365 Business Premium, it is time to protect the Windows 10 computers in your org from theft, and malicious threats like viruses and malware.
+
+## Watch: Secure your Windows 10 PCs
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF?autoplay=false]
+
+After you set up device protection in Microsoft 365 Business, follow these steps to protect your Windows 10 computers.
+
+1. In the Microsoft 365 admin center, choose <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>.
+1. Under  **Secure your Windows computers** , select  **View**.
+1. Select  **Get started**.
+1. Under **Who should the policy apply to?**, choose whether your selections will be applied to everyone in your organization or to specific security groups.
+1. Select  **Save changes**.
 
 ## To secure your Windows 10 computers
 

@@ -23,7 +23,7 @@ ms.collection: M365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 
 Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Make sure to update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
@@ -163,7 +163,6 @@ After a new package version is released, support for the previous two versions i
 - Released new [performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 - Microsoft Defender Antivirus hardened against loading malicious DLLs
 - Microsoft Defender Antivirus hardened against the TrustedInstaller bypass
-- Added support for configuring per-rule [attack surface reduction rule exclusions](customize-attack-surface-reduction.md)
 - Extending file change notifications to include more data for Human-Operated Ransomware (HumOR)
 
 ### Known Issues
@@ -604,6 +603,20 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2112.01</summary>
+
+&ensp;Package version: **1.1.2112.01**<br/>
+&ensp;Platform version: **4.18.2110.6**<br/>
+&ensp;Engine version: **1.1.18700.4**<br/>
+&ensp;Signature version: **1.353.2283.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+<br/>
+</details><details>
 <summary>1.1.2111.02</summary>
 
 &ensp;Package version: **1.1.2111.02**<br/>
@@ -826,4 +839,3 @@ For more information, see [Microsoft Defender update for Windows operating syste
 |[Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md) | You can set protection updates to be downloaded at startup or after certain cloud-delivered protection events. |
 |[Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| You can specify settings, such as whether updates should occur on battery power, that are especially useful for mobile devices and virtual machines. |
 | [Microsoft Defender for Endpoint update for EDR Sensor](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) | You can update the EDR sensor (MsSense.exe) that is included in the new Microsoft Defender for Endpoint unified solution package released in 2021.   |
-

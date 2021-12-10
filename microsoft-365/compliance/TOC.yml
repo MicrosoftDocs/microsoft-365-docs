@@ -541,6 +541,8 @@
               href: archive-rogers-network-archiver-data.md
             - name: Signal Archiver
               href: archive-signal-archiver-data.md
+            - name: StarHub Network Archiver (preview)
+              href: archive-starhub-network-archiver-data.md
             - name: Telegram Archiver
               href: archive-telegram-archiver-data.md
             - name: TELUS Network
@@ -609,7 +611,7 @@
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: Manage inactive mailboxes
       items: 
-        - name: Overview of inactive mailboxes
+        - name: Learn about inactive mailboxes
           href: inactive-mailboxes-in-office-365.md
         - name: Create and manage inactive mailboxes
           href: create-and-manage-inactive-mailboxes.md
@@ -648,7 +650,7 @@
             href: content-search-reference.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
-          - name: Use the KQL editor to build search queries (preview)
+          - name: Use the KQL editor to build search queries
             href: ediscovery-kql-editor.md
           - name: Configure search permissions filtering
             href: permissions-filtering-for-content-search.md
@@ -726,7 +728,7 @@
             href: assign-ediscovery-permissions.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
-          - name: Use the KQL editor to build search queries (preview)
+          - name: Use the KQL editor to build search queries
             href: ediscovery-kql-editor.md
           - name: Set up compliance boundaries
             href: set-up-compliance-boundaries.md
@@ -774,9 +776,9 @@
           items:
             - name: Create and manage a case
               href: create-and-manage-advanced-ediscoveryv2-case.md
-            - name: Use large cases (preview)
-              href: advanced-ediscovery-large-cases.md
-        - name: Advanced eDiscovery workflow for Teams content (preview)
+            - name: Use the new case format
+              href: advanced-ediscovery-new-case-format.md
+        - name: Advanced eDiscovery workflow for Teams content
           href: teams-workflow-in-advanced-ediscovery.md
         - name: Manage custodians and non-custodial data sources
           href: managing-custodians.md
@@ -825,7 +827,7 @@
               href: collection-statistics-reports.md        
             - name: Build search queries for collections
               href: building-search-queries.md
-            - name: Use the KQL editor to build search queries (preview)
+            - name: Use the KQL editor to build search queries
               href: ediscovery-kql-editor.md
             - name: Keyword queries and search conditions
               href: keyword-queries-and-search-conditions.md 
