@@ -35,7 +35,7 @@ description: "Use the setup wizard to add your domain to Microsoft 365 in the Mi
   
 ## Before you begin
 
-To add, modify or remove domains you **must** be a **Domain Name Administrator** or **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant; *Customized administrators* or *regular users* won't be able to make these changes.
+To add, modify, or remove domains, you **must** be a **Domain Name Administrator** or **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant; *Customized administrators* or *regular users* won't be able to make these changes.
 
 ## Watch: Add a domain
 
