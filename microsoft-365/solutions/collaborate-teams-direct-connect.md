@@ -47,8 +47,28 @@ description: Learn how to use shared channels with people outside your organizat
 ## Configure inbound settings
 
 
+1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
+1. Select the inbound access link for the organization that you want to modify.
+1. On the **B2B direct connect** tab, choose **Customize settings**.
+1. On the **External users and groups** tab, choose **Allow access** and **All users and groups**.
+1. On the **Applications** tab, choose **Allow access** and **Select applications**.
+1. Select **Add Microsoft applications**.
+1. Select the **Office 365** application, and then choose **Select**.
+1. Select **Save** and close the **Outbound access settings** blade.
+
+
 
 ## Configure outbound settings
+
+
+1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
+1. Select the outbound access link for the organization that you want to modify.
+1. On the **B2B direct connect** tab, choose **Customize settings**.
+1. On the **External users and groups** tab, choose **Allow access** and set a **Target** of all users.
+1. On the **External applications** tab, choose **Allow access** and **Select external applications**.
+1. Select **Add Microsoft applications**.
+1. Select the **Office 365** application, and then choose **Select**.
+1. Select **Save** and close the **Outbound access settings** blade.
 
 
 
