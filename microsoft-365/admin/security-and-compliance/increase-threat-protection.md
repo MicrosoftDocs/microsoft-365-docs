@@ -211,7 +211,7 @@ We recommend that you do the following:
 
 - Add a new policy targeted to all recipients in your domain.
 
-To set up Safe Links, watch [this short training video](increase-threat-protection#protect-against-phishing-attacks-with-safe-links.md), or complete the following steps:
+To set up Safe Links, complete the following steps:
 
 1. Go to [https://protection.office.com](https://protection.office.com), and sign in with your admin account.
 
