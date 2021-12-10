@@ -40,7 +40,9 @@ Your Office 365 or Microsoft 365 environment includes protection against malware
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OA7Z?autoplay=false]
 
 1. From the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, choose **Show more**, **Admin centers**, and then **Security & Compliance**.
+
 1. Choose **Threat management**, and then **Policy**.
+
 1. From the policies available, choose **Anti-malware**.
 
 To increase malware protection in email:
