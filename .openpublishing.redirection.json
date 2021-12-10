@@ -1897,8 +1897,13 @@
     },
     {
       "source_path": "enterprise/office-365-germany-endpoints.md",
-      "redirect_url": "/microsoft-365/enterprise/microsoft-365-germany-endpoints",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "/microsoft-365/enterprise/microsoft-365-germany-endpoints.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
     },
     {
       "source_path": "enterprise/office-365-ip-web-service.md",

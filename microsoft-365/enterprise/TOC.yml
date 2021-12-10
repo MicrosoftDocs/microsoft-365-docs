@@ -74,8 +74,6 @@
               href: microsoft-365-u-s-government-gcc-high-endpoints.md
             - name: Office 365 operated by 21Vianet endpoints
               href: urls-and-ip-address-ranges-21vianet.md
-            - name: Office 365 Germany endpoints
-              href: microsoft-365-germany-endpoints.md
         - name: Content delivery networks
           href: content-delivery-networks.md
         - name: IPv6 support in Office 365 services
