@@ -280,7 +280,7 @@ Example:
 > The User Defined option setting is shown in the following figure.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-user-defined.png" alt-text="ASR rules in Group Policy" lightbox="images/asr-user-defined.png":::
+> :::image type="content" source="images/asr-user-defined.png" alt-text="The Enable option for credential security" lightbox="images/asr-user-defined.png":::
 
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**.

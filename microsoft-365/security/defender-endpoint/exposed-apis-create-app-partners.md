@@ -82,7 +82,7 @@ In the following example we will use **'Read all alerts'** permission:
 
 1. Choose **Application permissions** \> **Alert.Read.All** > select on **Add permissions**
 
-   :::image type="content" source="images/application-permissions.png" alt-text="The Add a permission option" lightbox="images/application-permissions.png":::
+   :::image type="content" source="images/application-permissions.png" alt-text="The option that allows to add a permission" lightbox="images/application-permissions.png":::
 
 2. Select **Grant consent**
 
