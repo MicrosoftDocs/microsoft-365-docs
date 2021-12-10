@@ -118,13 +118,13 @@ The administrative accounts you use to administer your Microsoft 365 environment
 
 Your Microsoft 365 environment includes protection against malware, but you can increase this protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email, view a [short training video](increase-threat-protection.md#raise-the-level-of-protection-against-malware-in-mail), or complete the following steps:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-Malware** in the **Policies** section.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-malware** in the **Policies** section.
 
-2. On the **Anti-malware** page, double-click on **Default (Default)**. The **Default** flyout appears. 
+2. On the **Anti-malware** page, double-click on **Default (Default)**. A flyout appears. 
 
 3. Select **Edit protection settings** at the bottom of the flyout. 
 
-4. In the next page, select the checkbox next to **Enable the common attachments filter**. The file types that are blocked are listed in the window directly below this option. You can add or delete file types later, if needed.
+4. In the next page, under **Protection settings**, select the checkbox next to **Enable the common attachments filter**. The file types that are blocked are listed directly below this option. To add or delete file types, select **Customize file types** at the end of the list. 
 
 5. Select **Save**. 
 

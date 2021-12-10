@@ -45,17 +45,17 @@ Your Office 365 or Microsoft 365 environment includes protection against malware
 
 To increase malware protection in email:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-Malware** in the **Policies** section.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-malware** in the **Policies** section.
 
-2. On the **Anti-malware** page, double-click on **Default (Default)**. The **Default** flyout appears. 
+2. On the **Anti-malware** page, double-click on **Default (Default)**. A flyout appears. 
 
 3. Select **Edit protection settings** at the bottom of the flyout. 
 
-4. In the next page, select the checkbox next to **Enable the common attachments filter**. The file types that are blocked are listed in the window directly below this control. Make sure that you add these file types:
+4. under **Protection settings**, select the checkbox next to **Enable the common attachments filter**. The file types that are blocked are listed directly below this control. Make sure that you add these file types:
 
    `ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif`
 
-   If necessary, you can add or delete file types later.
+   To add or delete file types, select **Customize file types** at the end of the list.
 
 6. Select **Save.**
 
