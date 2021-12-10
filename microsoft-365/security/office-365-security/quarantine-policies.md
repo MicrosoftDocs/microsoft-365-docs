@@ -26,7 +26,7 @@ Quarantine policies (formerly known as _quarantine tags_) in Exchange Online Pro
 
 Traditionally, users have been allowed or denied levels of interactivity for quarantine messages based on why the message was quarantined. For example, users can view and release messages that were quarantined by anti-spam filtering as spam or bulk, but they can't view or release messages that were quarantined as high confidence phishing or malware.
 
-For [supported protection features](#step-2-assign-a-quarantine-policy-to-supported-features), quarantine policies specify what users are allowed to do to their own messages (messages where they're a recipient) in quarantine and in _quarantine notifications_. Quarantine notifications are the replacement for end-user spam notifications. These notifications are now controlled by quarantine policies, and contain information about quarantined messages for all supported protection features (not just anti-spam policy and anti-phishing policy verdicts).
+For [supported protection features](#step-2-assign-a-quarantine-policy-to-supported-features), quarantine policies specify what users are allowed to do to their own messages (messages where they're a recipient) in quarantine and in _quarantine notifications_. [Quarantine notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md) are the replacement for end-user spam notifications. These notifications are now controlled by quarantine policies, and contain information about quarantined messages for all supported protection features (not just anti-spam policy and anti-phishing policy verdicts).
 
 Default quarantine policies that enforce the historical user capabilities are automatically assigned to actions in the supported protection features that quarantine messages. Or, you can create custom quarantine policies and assign them to the supported protection features to allow or prevent users from performing specific actions on those types of quarantined messages.
 
@@ -130,15 +130,10 @@ Now you're ready to assign the quarantine policy to a quarantine feature as desc
 
 ### Create quarantine policies in PowerShell
 
-If you'd rather use PowerShell to create quarantine policies, connect to Exchange Online PowerShell or Exchange Online Protection PowerShell and use the **New-QuarantinePolicy** cmdlet. You have two different methods to choose from:
-
-- [Use the _EndUserQuarantinePermissionsValue_ parameter](#use-the-enduserquarantinepermissionsvalue-parameter).
-- [Use the _EndUserQuarantinePermissions_ parameter](#use-the-enduserquarantinepermissions-parameter).
-
-These methods are described in the following sections.
+If you'd rather use PowerShell to create quarantine policies, connect to Exchange Online PowerShell or Exchange Online Protection PowerShell and use the **New-QuarantinePolicy** cmdlet.
 
 > [!NOTE]
-> The use of the _ESNEnabled_ parameter and the value `$true` to turn on quarantine notifications in the policy is the same for both methods. If you don't use this parameter, then quarantine notifications are turned off.
+> If you don't use the _ESNEnabled_ parameter and the value `$true`, then quarantine notifications are turned off.
 
 #### Use the EndUserQuarantinePermissionsValue parameter
 
@@ -150,86 +145,57 @@ New-QuarantinePolicy -Name "<UniqueName>" -EndUserQuarantinePermissionsValue <0 
 
 The _EndUserQuarantinePermissionsValue_ parameter uses a decimal value that's converted from a binary value. The binary value corresponds to the available end-user quarantine permissions in a specific order. For each permission, the value 1 equals True and the value 0 equals False.
 
-The required order and values for each individual permission in preset permission groups are described in the following table:
+The required order and values for each individual permission are described in the following table:
+
+<br>
+
+****
+
+|Permission|Decimal value|Binary value|
+|---|:---:|:---:|
+|PermissionToViewHeader<sup>\*</sup>|128|10000000|
+|PermissionToDownload<sup>\*\*</sup>|64|01000000|
+|PermissionToAllowSender<sup>\*\*</sup>|32|00100000|
+|PermissionToBlockSender|16|00010000|
+|PermissionToRequestRelease<sup>\*\*\*</sup>|8|00001000|
+|PermissionToRelease<sup>\*\*\*</sup>|4|00000100|
+|PermissionToPreview|2|00000010|
+|PermissionToDelete|1|00000001|
+|
+
+<sup>\*</sup> The value 0 doesn't hide the **View message header** button in the details of the quarantined message (the button is always available).
+
+<sup>\*\*</sup> This setting is not used (the value 0 or 1 does nothing).
+
+<sup>\*\*\*</sup> Don't set both of these values to 1. Set one to 1 and the other to 0, or set both to 0.
+
+For Limited access permissions, the required values are:
 
 <br>
 
 ****
 
 |Permission|Limited access|
-|---|:---:|
+|---|:--:|
+|PermissionToViewHeader|0|
+|PermissionToDownload|0|
+|PermissionToAllowSender|0|
 |PermissionToBlockSender|1|
-|PermissionToDelete|1|
-|PermissionToDownload<sup>\*</sup>|0|
+|PermissionToRequestRelease|1|
+|PermissionToRelease|0|
 |PermissionToPreview|1|
-|PermissionToRelease<sup>\*\*</sup>|0|
-|PermissionToRequestRelease<sup>\*\*</sup>|1|
-|PermissionToViewHeader<sup>\*</sup>|0|
-|Binary value|01101010|
-|Decimal value to use|106|
+|PermissionToDelete|1|
+|Binary value|00011011|
+|Decimal value to use|27|
 |
-
-<sup>\*</sup> Currently, this value is always 0. For PermissionToViewHeader, the value 0 doesn't hide the **View message header** button in the details of the quarantined message (the button is always available).
-
-<sup>\*\*</sup> Don't set both of these values to 1. Set one to 1 and the other to 0, or set both to 0.
 
 This example creates a new quarantine policy named LimitedAccess with quarantine notifications turned on that assigns the Limited access permissions as described in the previous table.
 
 ```powershell
-New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 106 -EsnEnabled $true
+New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -EsnEnabled $true
 ```
 
 For custom permissions, use the previous table to get the binary value that corresponds to the permissions you want. Convert the binary value to a decimal value and use the decimal value for the _EndUserQuarantinePermissionsValue_ parameter.
-
-For detailed syntax and parameter information, see [New-QuarantinePolicy](/powershell/module/exchange/new-quarantinepolicy).
-
-#### Use the EndUserQuarantinePermissions parameter
-
-To create a quarantine policy using the _EndUserQuarantinePermissionsValue_ parameter, do the following steps:
-
-A. Store a quarantine permissions object in a variable using the **New-QuarantinePermissions** cmdlet.
-
-<p>
-
-B. Use the variable as the _EndUserQuarantinePermissions_ value in the **New-QuarantinePolicy** command.
-
-##### Step A: Store a quarantine permissions object in a variable
-
-Use the following syntax:
-
-```powershell
-$<VariableName> = New-QuarantinePermissions [-PermissionToBlockSender <$true | $False>] [-PermissionToDelete <$true | $False>] [-PermissionToPreview <$true | $False>] [-PermissionToRelease <$true | $False>] [-PermissionToRequestRelease <$true | $False>]
-```
-
-The default value for unused parameters is `$false`, so you only need to use the parameters where you want to set value to `$true`.
-
-The following example shows how to create permission objects that correspond to the **Limited access** preset permissions group:
-
-```powershell
-$LimitedAccess = New-QuarantinePermissions -PermissionToBlockSender $true -PermissionToDelete $true -PermissionToPreview $true -PermissionToRequestRelease $true
-```
-
-To see the values that you've set, run the variable name as a command (for example, run the command `$LimitedAccess`).
-
-For custom permissions, don't set both the _PermissionToRelease_ and _PermissionToRequestRelease_ parameters to `$true`. Set one to `$true` and leave the other as `$false`, or leave both as `$false`.
-
-You can also modify an existing permissions object variable after you create but before you use it by using the **Set-QuarantinePermissions** cmdlet.
-
-For detailed syntax and parameter information, see [New-QuarantinePermissions](/powershell/module/exchange/new-quarantinepermissions) and [Set-QuarantinePermissions](/powershell/module/exchange/set-quarantinepermissions).
-
-##### Step B: Use the variable in the New-QuarantinePolicy command
-
-After you've created and stored the permissions object in a variable, use the variable for the _EndUserQuarantinePermission_ parameter value in the following **New-QuarantinePolicy** command:
-
-```powershell
-New-QuarantinePolicy -Name "<UniqueName>" -EndUserQuarantinePermissions $<VariableName> [-EsnEnabled $true]
-```
-
-This example creates a new quarantine policy with quarantine notifications turned on named LimitedAccess using the `$LimitedAccess` permissions object that was described and created in the previous step.
-
-```powershell
-New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAccess -EsnEnabled $true
-```
 
 For detailed syntax and parameter information, see [New-QuarantinePolicy](/powershell/module/exchange/new-quarantinepolicy).
 
@@ -664,7 +630,7 @@ For detailed syntax and parameter information, see [Remove-QuarantinePolicy](/po
 
 ## System alerts for quarantine release requests
 
-By default, the default alert policy named **User requested to release a quarantined message** automatically generates a medium severity alert and sends notification messages to members of the following role groups whenever a user requests the release of a quarantined message:
+By default, the default alert policy named **User requested to release a quarantined message** automatically generates an informational alert and sends notification messages to members of the following role groups whenever a user requests the release of a quarantined message:
 
 - Quarantine Administrator
 - Security Administrator

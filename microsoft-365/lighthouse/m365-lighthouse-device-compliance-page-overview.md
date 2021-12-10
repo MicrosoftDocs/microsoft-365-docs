@@ -27,13 +27,13 @@ Microsoft 365 Lighthouse lets you view insights and information related to Intun
 
 ## Overview tab  
   
-On the Overview tab, you can view device compliance status across your tenants, see monthly device compliance trends, and track whether devices have compliance policies assigned to them. You can also view information on tenant device compliance actions and requirements based on Conditional Access policies. 
+On the Overview tab, you can view device compliance status across your tenants, see monthly device compliance trends, and track whether devices have compliance policies assigned to them. You can also see how many tenants don't have any device compliance requirement enforced using conditional access policies. You can select **View more** to see more details.
 
 To get detailed device compliance information for a particular customer tenant, select a value under any of the status columns for that tenant. This will open the Devices tab so you can view device compliance details for the selected tenant.
 
 To export device compliance data to an Excel comma-separated values (.csv) file, select **Export**.
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png" alt-text="Screenshot of the Overview tab.":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png" alt-text="Screenshot of the Overview tab." lightbox="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png":::
 
 ## Devices tab
 
@@ -54,7 +54,7 @@ The Devices tab also includes the following options:
 - **Restart:** Select one or more devices from the list that have a status of Not compliant, In grace period, or Not evaluated, and then select this option to restart those devices.
 - **Search:** Enter keywords to quickly locate a specific device in the list.
  
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png" alt-text="Screenshot of the Devices tab.":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png" alt-text="Screenshot of the Devices tab." lightbox="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png":::
 
 ## Policies tab
 
@@ -70,7 +70,7 @@ The Policies tab also includes the following options:
 - **Refresh:** Select to retrieve the most current device compliance policy data.
 - **Search:** Enter keywords to quickly locate a specific device compliance policy in the list.
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-policies-tab.png" alt-text="Screenshot of the Policies tab.":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-policies-tab.png" alt-text="Screenshot of the Policies tab." lightbox="../media/m365-lighthouse-device-compliance-page-overview/devices-policies-tab.png":::
 
 ## Settings tab
 
@@ -86,7 +86,7 @@ The Settings tab also includes the following options:
 - **Refresh:** Select to retrieve the most current non-compliant settings data.
 - **Search:** Enter keywords to quickly locate a specific non-compliant setting in the list.
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png" alt-text="Screenshot of the Settings tab.":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png" alt-text="Screenshot of the Settings tab." lightbox="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png":::
 
 ## Related content
 

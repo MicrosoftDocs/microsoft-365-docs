@@ -50,7 +50,7 @@ The basic flow for deploying and applying sensitivity labels:
 
 A number of different subscriptions support sensitivity labels and the licensing requirements for users depend on the features you use.
 
-To see the options for licensing your users to benefit from Microsoft 365 compliance features, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). For sensitivity labels, see the [Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) section and related PDF download for feature-level licensing requirements.
+To see the options for licensing your users to benefit from Microsoft 365 compliance features, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). For sensitivity labels, see the [Information Protection: Sensitivity labeling](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-sensitivity-labeling) section and related [PDF download](https://go.microsoft.com/fwlink/?linkid=2139145) for feature-level licensing requirements.
 
 ## Permissions required to create and manage sensitivity labels
 
@@ -92,7 +92,7 @@ All scenarios require you to [Create and configure sensitivity labels and their 
 |Apply and view labels in Power BI, and protect data when it's saved outside the service|[Sensitivity labels in Power BI](/power-bi/admin/service-security-sensitivity-label-overview)|
 |Monitor and understand how sensitivity labels are being used in my organization|[Learn about data classification](data-classification-overview.md)|
 |Extend sensitivity labels to third-party apps and services|[Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|
-|Extend sensitivity labels across content in Azure Blob Storage, Azure files, Azure Data Lake Storage Gen1, and Azure Data Lake Storage Gen12|[Automatically label your content in Azure Purview](/azure/purview/create-sensitivity-label) |
+|Extend sensitivity labels across content in my Azure Purview assets, such as Azure Blob Storage, Azure Files, Azure Data Lake Storage, and multi-cloud data sources|[Labeling in Azure Purview](/azure/purview/create-sensitivity-label) |
 
 
 ## End-user documentation for sensitivity labels
