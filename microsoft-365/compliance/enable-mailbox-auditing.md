@@ -343,7 +343,7 @@ The value **True** indicates that mailbox audit logging is bypassed for the user
     - [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) to search the mailbox audit log for specific users.
     - [New-MailboxAuditLogSearch](/powershell/module/exchange/new-mailboxauditlogsearch) to search the mailbox audit log for specific users and to have the results sent via email to specified recipients.
 
-  - Use the <a href=" https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> in Exchange Online to do the following actions:
+  - Use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> in Exchange Online to do the following actions:
     - [Export mailbox audit logs](/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
     - [Run a non-owner mailbox access report](/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
 
