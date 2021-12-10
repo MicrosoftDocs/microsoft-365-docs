@@ -63,7 +63,7 @@ This article explains how to:
 
 2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
 
-   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="The New registration** option in the Manage pane in the Azure portal" lightbox="../../media/atp-azure-new-app2.png":::
+   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="The New registration option in the Manage pane in the Azure portal" lightbox="../../media/atp-azure-new-app2.png":::
 
 3. In the form, choose a name for your application and enter the following information for the redirect URI, then select **Register**.
 
@@ -78,7 +78,7 @@ This article explains how to:
    > [!TIP]
    > *Microsoft Threat Protection* is a former name for Microsoft 365 Defender, and will not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="Your organization's APIs'pane in the Microsoft 365 Defender portal" lightbox="../../media/apis-in-my-org-tab.PNG":::
+   :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="Your organization's APIs pane in the Microsoft 365 Defender portal" lightbox="../../media/apis-in-my-org-tab.PNG":::
 
    - Choose **Delegated permissions**. Choose the relevant permissions for your scenario (for example **Incident.Read**), and then select **Add permissions**.
 

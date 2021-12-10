@@ -41,7 +41,7 @@ The link to incident feature lets you add advanced hunting query results to a ne
 
 2. In the Results page, select the events or records that are related to a new or current investigation you are working on, then select **Link to incident**.
 
-    :::image type="content" source="../../media/link-to-incident-1b.png" alt-text="The Link to incident option of the **Results tab in the Microsoft 365 Defender portal" lightbox="../../media/link-to-incident-1b.png":::
+    :::image type="content" source="../../media/link-to-incident-1b.png" alt-text="The Link to incident option of the Results tab in the Microsoft 365 Defender portal" lightbox="../../media/link-to-incident-1b.png":::
 
 3. Find the **Alert details** section in the Link to incident pane, then select **Create new incident** to convert the events to alerts and group them to a new incident:
 

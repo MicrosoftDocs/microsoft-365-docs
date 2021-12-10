@@ -84,7 +84,7 @@ You can enable recommended EOP and Defender for Office 365 protection policies f
 
 Here is the [Preset security policies in EOP and Microsoft Defender for Office 365](../office-365-security/preset-security-policies.md) article outlining the steps.
 
-1. Log on to your Microsoft 365 tenant. Use an account with access to the Microsoft 365 Defender portal, added to Organization Management role in Office 365, or Security Administrator role at Microsoft 365.
+1. Log on to your Microsoft 365 tenant. Use an account with access to the Microsoft 365 Defender portal, added to Organization Management role in Office 365, or Security Administrator role in Microsoft 365.
 2. From the navigation menu, select *Polices & Rules* under Email & Collaboration.
 
    :::image type="content" source="../../media/mdo-eval/5_mdo-eval-pilot-policies.png" alt-text="Under Email & Collaboration on the navigation panel, click Policies & rules.":::
@@ -119,7 +119,7 @@ Here is the [Preset security policies in EOP and Microsoft Defender for Office 3
 
 ### Configure custom protection policies
 
-The pre-defined *Standard* or *Strict* Defender for Office 365 policy templates gives your pilot users the recommended baseline protection. However, you can also build and assign custom protection policies as part of your evaluation.
+The pre-defined *Standard* or *Strict* Defender for Office 365 policy templates give your pilot users the recommended baseline protection. However, you can also build and assign custom protection policies as part of your evaluation.
 
 It's *important* to be aware of the precedence these protection policies take when applied and enforced, as [Order and precedence of email protection - Office 365](../office-365-security/how-policies-and-protections-are-combined.md) explains.
 
