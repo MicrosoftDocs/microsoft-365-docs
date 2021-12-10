@@ -44,16 +44,16 @@ Microsoft recommends that you complete the tasks listed in the following table t
 
 |*Number*|Task|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|---|
-|1|[Set up multifactor authentication](secure-your-business-data.md#setup)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|2|[Train your users](secure-your-business-data.md#train)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3|[Use dedicated admin accounts](secure-your-business-data.md#admin)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|4|[Raise the level of protection against malware in mail](secure-your-business-data.md#malware)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5|[Protect against ransomware](secure-your-business-data.md#ransomware)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|6|[Stop auto-forwarding for email](secure-your-business-data.md#forwarding)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|7|[Use Office Message Encryption](secure-your-business-data.md#encryption)||![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|8|[Protect your email from phishing attacks](secure-your-business-data.md#phishing)||![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|9|[Protect against malicious attachments and files with Safe Attachments](secure-your-business-data.md#atp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10|[Protect against phishing attacks with Safe Links](secure-your-business-data.md#phishingatp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1|[Set up multifactor authentication](#1-set-up-multifactor-authentication)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|2|[Train your users](#2-train-your-users)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3|[Use dedicated admin accounts](#3-use-dedicated-admin-accounts)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|4|[Raise the level of protection against malware in mail](#4-raise-the-level-of-protection-against-malware-in-mail)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5|[Protect against ransomware](#5-protect-against-ransomware)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|6|[Stop auto-forwarding for email](#6-stop-auto-forwarding-for-email)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|7|[Use Office Message Encryption](#7-use-office-message-encryption)||![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|8|[Protect your email from phishing attacks](#8-protect-your-email-from-phishing-attacks)||![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|9|[Protect against malicious attachments and files with Safe Attachments](#9-protect-against-malicious-attachments-and-files-with-safe-attachments)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10|[Protect against phishing attacks with Safe Links](#10-protect-against-phishing-attacks-with-safe-links)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 If you have Microsoft Business Premium, the quickest way to setup security and begin collaborating safely is to follow the guidance in this library: [Microsoft 365 for smaller businesses and campaigns](../../campaigns/index.md). This guidance was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyberthreats launched by sophisticated hackers.
 
@@ -116,7 +116,7 @@ The administrative accounts you use to administer your Microsoft 365 environment
 
 ## 4: Raise the level of protection against malware in mail
 
-Your Microsoft 365 environment includes protection against malware, but you can increase this protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email, view a [short training video](increase-threat-protection#raise-the-level-of-protection-against-malware-in-mail.md), or complete the following steps:
+Your Microsoft 365 environment includes protection against malware, but you can increase this protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email, view a [short training video](increase-threat-protection.md#raise-the-level-of-protection-against-malware-in-mail), or complete the following steps:
 
 1. Go to <https://protection.office.com> and sign in with your admin account credentials.
 
@@ -142,7 +142,7 @@ You can protect against ransomware by creating one or more mail flow rules to bl
 
 - Block file types that could contain ransomware or other malicious code. We'll start with a common list of executables (listed in the table below). If your organization uses any of these executable types and you expect these to be sent in email, add these to the previous rule (warn users).
 
-To create a mail transport rule, view a [short training video](increase-threat-protection#protect-against-ransomware.md), or complete the following steps:
+To create a mail transport rule, view a [short training video](increase-threat-protection.md#protect-against-ransomware.md), or complete the following steps:
 
 1. Go to the [Exchange admin center](https://go.microsoft.com/fwlink/p/?linkid=2059104).
 
@@ -238,7 +238,7 @@ We recommend that you get started with this protection by creating a policy to p
 
 ![Creating an anti-phishing policy in Microsoft Defender for Office 365.](../../media/security-and-compliance-center.png)
 
-To create an anti-phishing policy in Defender for Office 365, view a [short training video](increase-threat-protection#protect-your-email-from-phishing-attacks.md), or complete the following steps:
+To create an anti-phishing policy in Defender for Office 365, view a [short training video](increase-threat-protection.md#protect-your-email-from-phishing-attacks.md), or complete the following steps:
 
 1. Go to <https://protection.office.com>.
 
@@ -307,7 +307,7 @@ We recommend that you do the following:
 
 - Add a new policy targeted to all recipients in your domain.
 
-To get to Safe Links, view a [short training video](increase-threat-protection#protect-against-phishing-attacks-with-safe-links.md), or complete the following steps:
+To get to Safe Links, view a [short training video](increase-threat-protection.md#protect-against-phishing-attacks-with-safe-links.md), or complete the following steps:
 
 1. Go to <https://protection.office.com> and sign in with your admin account.
 
