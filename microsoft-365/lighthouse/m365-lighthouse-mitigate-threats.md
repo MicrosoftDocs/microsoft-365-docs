@@ -1,5 +1,5 @@
 ---
-title: "Mitigate threats with Microsoft Defender Antivirus in Microsoft 365 Lighthouse"
+title: "Mitigate threats with Microsoft Defender Antivirus"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -18,7 +18,7 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about the mitigate threats with Microsoft Defender Antivirus."
 ---
 
-# Mitigate threats with Microsoft Defender Antivirus in Microsoft 365 Lighthouse
+# Mitigate threats with Microsoft Defender Antivirus
 
 > [!NOTE]
 > The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
@@ -29,7 +29,7 @@ Microsoft 365 Lighthouse lets partners investigate and mitigate threats across a
 
 - Microsoft 365 Lighthouse is deployed in the partner tenant only—not in the customer tenants, but make sure you and your customer tenants meet the requirements listed in [Microsoft 365 Lighthouse requirements](m365-lighthouse-requirements.md).
 
-- Users must be running Microsoft Defender Antivirus (included with Windows). Lighthouse does not support non-Microsoft antivirus software. For more information, see [Turn on Microsoft Defender Antivirus](https://docs.microsoft.com/mem/intune/user-help/turn-on-defender-windows).
+- Users must be running Microsoft Defender Antivirus (included with Windows). Lighthouse does not support non-Microsoft antivirus software. For more information, see [Turn on Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows).
 
 - You must be a Global Administrator in the partner tenant you're signing into.
 
@@ -81,7 +81,7 @@ A quick scan searches common locations where malware could be, such as registry 
 
 4. In the device details pane, select **Run full scan** or **Run quick scan**.
 
-You can also scan multiple devices by selecting the checkbox next to each device name in the list and then select Run full scan or Run quick scan.
+You can also scan multiple devices by selecting the checkbox next to each device name in the list and then select **Run full scan** or **Run quick scan**.
 
 ## Get updates for Microsoft Defender Antivirus
 
@@ -97,7 +97,7 @@ To update Microsoft Defender Antivirus on a single device:
 
 You can get updates for multiple devices by selecting the checkbox next to each device name in the list and then select **Update antivirus**.
 
-If you need to create a new policy, select **Update policy** from the device details pane. Lighthouse will redirect you to Microsoft Endpoint Manager (MEM). For more information about creating a policy, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy).
+If you need to create a new policy, select **Update policy** from the device details pane. Lighthouse will redirect you to Microsoft Endpoint Manager (MEM). For more information about creating a policy, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
 ## Check pending antivirus actions on a device
 
@@ -129,6 +129,6 @@ You can also restart multiple devices by selecting the checkbox next to each dev
 
 [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\
 [Threat management page overview ](m365-lighthouse-threat-management-page-overview.md) (article)\
-[Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy) (article)\
-[Turn on Microsoft Defender Antivirus](https://docs.microsoft.com/mem/intune/user-help/turn-on-defender-windows) (article)\
+[Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy) (article)\
+[Turn on Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows) (article)\
 [Microsoft Security Intelligence](https://www.microsoft.com/wdsi/threats)
