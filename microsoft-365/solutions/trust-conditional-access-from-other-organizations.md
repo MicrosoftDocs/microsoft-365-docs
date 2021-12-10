@@ -18,7 +18,7 @@ recommendations: false
 description: 
 ---
 
-# Trust conditional access settings from other organizations in shared channels
+# Trust conditional access settings from other organizations
 
 
 
