@@ -45,15 +45,13 @@ Your Office 365 or Microsoft 365 environment includes protection against malware
 
 To increase malware protection in email:
 
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in with your admin account credentials.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-Malware** in the **Policies** section.
 
-2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Anti-Malware**.
+2. On the **Anti-malware** page, double-click on **Default (Default)**. The **Default** flyout appears. 
 
-3. Double-click the default policy to edit this company-wide policy.
+3. Select **Edit protection settings** at the bottom of the flyout. 
 
-4. Select **Settings**.
-
-5. Under **Common Attachment Types Filter**, select **On**. The file types that are blocked are listed in the window directly below this control. Make sure that you add these file types:
+4. In the next page, select the checkbox next to **Enable the common attachments filter**. The file types that are blocked are listed in the window directly below this control. Make sure that you add these file types:
 
    `ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif`
 
