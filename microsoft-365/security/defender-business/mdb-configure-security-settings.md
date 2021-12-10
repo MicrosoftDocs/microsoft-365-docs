@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# Configure your security settings and policies in Microsoft Defender for Business
+# Configure your security settings and policies in Microsoft Defender for Business (preview)
 
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-After you have onboarded your company's devices to Microsoft Defender for Business, you next step is to view and if necessary, edit your security settings and policies. 
+After you have onboarded your company's devices to Microsoft Defender for Business (preview), you next step is to view and if necessary, edit your security settings and policies. 
 
 ## What to do
 
@@ -39,11 +39,11 @@ When it comes to managing your security settings and policies, you can choose fr
 
 | Option | Description |
 |:---|:---|
-| **Use the default security settings and policies in the Microsoft 365 Defender portal** (*recommended*) | Defender for Business was designed for the busy small or medium-sized business in mind. The default security settings and policies in Defender for Business are designed to protect your company's devices from day one.<br/><br/>You can use the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) to view and manage your security settings and policies.<br/><br/>To learn more, see [View or edit device policies](mdb-view-edit-policies.md). |
+| **Use the default security settings and policies in the Microsoft 365 Defender portal** (*recommended*) | Defender for Business (preview) was designed for the busy small or medium-sized business in mind. The default security settings and policies in Defender for Business are designed to protect your company's devices from day one.<br/><br/>You can use the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) to view and manage your security settings and policies.<br/><br/>To learn more, see [View or edit device policies](mdb-view-edit-policies.md). |
 | **Use Microsoft Endpoint Manager** | If your company is using Microsoft Endpoint Manager to manage security settings and policies, you can continue using Endpoint Manager and apply security policies and settings to some or all devices. To learn more, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>Consider switching to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md). If you make the switch, you'll be prompted to delete any existing security policies in Microsoft Endpoint Manager before proceeding with the simplified configuration process in Defender for Business. Deleting your policies in Microsoft Endpoint Manager helps avoid policy conflicts later. |
 
 > [!TIP]
-> If you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview). To learn more, see [Get Microsoft Defender for Business](get-defender-business.md).
+> If you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview). To learn more, see [Get Microsoft Defender for Business (preview)](get-defender-business.md).
 
 ## View your security settings and policies
 
@@ -59,11 +59,11 @@ To view your security settings and policies, use one of the procedures in the fo
 
 Proceed to one or more of the following tasks:
 
-- [Get started using Microsoft Defender for Business](mdb-get-started.md)
+- [Get started using Microsoft Defender for Business (preview)](mdb-get-started.md)
 
-- [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
+- [Manage devices in Microsoft Defender for Business (preview)](mdb-manage-devices.md)
 
-- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
+- [View and manage incidents in Microsoft Defender for Business (preview)](mdb-view-manage-incidents.md)
 
-- [View or edit policies in Microsoft Defender for Business](mdb-view-edit-policies.md)
+- [View or edit policies in Microsoft Defender for Business (preview)](mdb-view-edit-policies.md)
 
