@@ -56,7 +56,7 @@ If your organizations have any of the following requirements, you can use DKE to
 
 ## System and licensing requirements for DKE
 
-Microsoft 365 E5/A5/G5, Microsoft 365 E5/A5/G5/F5 Compliance and F5 Security & Compliance, Microsoft 365 E5/A5/G5 Information Protection and Governance, Office 365 E5/A5/G5 and EMS E5 provide the rights for a user to benefit from **Double Key Encryption for Microsoft 365**. If you don’t have a Microsoft 365 E5 license, you can sign up for a [trial](https://aka.ms/M365E5ComplianceTrial). For more information about these licenses, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Microsoft 365 E5/A5/G5, Microsoft 365 E5/A5/G5/F5 Compliance and F5 Security & Compliance, Microsoft 365 E5/A5/G5 Information Protection and Governance, Office 365 E5/A5/G5, and Microsoft EMS E5 provide the rights for a user to benefit from **Double Key Encryption for Microsoft 365**. If you don’t have a Microsoft 365 E5 license, you can sign up for a [trial](https://aka.ms/M365E5ComplianceTrial). For more information about these licenses, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 **Azure Information Protection**. DKE works with sensitivity labels and requires Azure Information Protection.
 
