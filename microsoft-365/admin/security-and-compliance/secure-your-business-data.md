@@ -20,6 +20,7 @@ ms.custom:
 - admindeeplinkMAC
 - admindeeplinkDEFENDER
 - adminvideo
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
@@ -144,7 +145,7 @@ You can protect against ransomware by creating one or more mail flow rules to bl
 
 To create a mail transport rule, view a [short training video](increase-threat-protection.md#protect-against-ransomware), or complete the following steps:
 
-1. Go to the [Exchange admin center](https://go.microsoft.com/fwlink/p/?linkid=2059104).
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
 2. In the **mail flow** category, select **rules**.
 
@@ -179,7 +180,7 @@ Hackers who gain access to a user's mailbox can exfiltrate mail by configuring t
 
 To create a mail transport rule:
 
-1. Go to the [Exchange admin center](https://go.microsoft.com/fwlink/p/?linkid=2059104).
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
 2. In the **mail flow** category, select **rules**.
 
