@@ -179,8 +179,8 @@ Restrict sensitive files that match your policies from being shared with unrestr
 
 #### Unallowed browsers
 
-You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, Windows end users will see a toast notification asking them to open the file through Edge Chromium. On Mac, user will be alerted that the access is blocked.
-Browsers that fully support this behavior on Windows are all versions of Edge Chromium and Chrome. On Mac they are all versions of Edge Chromium, Edge, Chrome, Safari, and Firefox.
+You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, Windows users will see a pop-up notification asking them to open the file through Edge VERSION NUMBER NEEDED Chromium. On macOS devices, users will be alerted that access is blocked.
+The unallowed browsers feature is supported on all versions of Edge VERSION NUMBER NEEDED and Goggle Chrome. On macOS devices they are all versions of Edge VERISON NUMBER NEEDED Chromium, Edge, Chrome, Safari, and Firefox.
 
 #### Service domains
 
