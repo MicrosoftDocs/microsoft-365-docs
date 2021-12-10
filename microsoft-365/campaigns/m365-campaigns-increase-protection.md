@@ -19,6 +19,7 @@ ms.custom:
 - MiniMaven
 - MSB365
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
@@ -252,7 +253,7 @@ For more information, see [Safe Links in Defender for Office 365](../security/of
 
 After you turn on the audit log search in the Security & Compliance Center, you can retain the admin and other user activity in the log and search it.
 
-You must be assigned the Audit Logs role in Exchange Online to turn audit log search on or off in your Microsoft 365 subscription. By default, this role is assigned to the Compliance Management and Organization Management role groups on the Permissions page in the Exchange admin center. Global admins in Microsoft 365 are members of this group by default.
+You must be assigned the Audit Logs role in Exchange Online to turn audit log search on or off in your Microsoft 365 subscription. By default, this role is assigned to the Compliance Management and Organization Management role groups on the Permissions page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. Global admins in Microsoft 365 are members of this group by default.
 
 1. To turn on the audit log search, go to the admin center at <https://admin.microsoft.com> and then choose **Security** under **Admin centers** in the left nav.
 2. On the **Microsoft 365 Security** page, choose **More resources**, and then **Open** on the **Office 365 Security & Compliance Center** card.

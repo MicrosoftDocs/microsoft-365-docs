@@ -21,6 +21,7 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 description: Learn how Office 365 global administrators can apply your organization's branding to encrypted email messages & contents of the encryption portal.
 ---
 
@@ -164,7 +165,7 @@ For information on how to create an Exchange mail flow rule that applies encrypt
 
 2. Choose the **Admin** tile.
 
-3. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, choose **Admin centers** \> **Exchange**.
+3. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, choose **Admin centers** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
 
 4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
 
