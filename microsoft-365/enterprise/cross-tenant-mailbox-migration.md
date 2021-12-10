@@ -352,7 +352,7 @@ T2Tbatch                   Syncing ExchangeRemoteMove 1
 >
 > [For an example CSV file click here](/exchange/csv-files-for-mailbox-migration-exchange-2013-help)
 
-Migration batch submission is also supported from the new <a href=" https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> when selecting the cross-tenant option.
+Migration batch submission is also supported from the new <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> when selecting the cross-tenant option.
 
 ### Update on-premises MailUsers
 

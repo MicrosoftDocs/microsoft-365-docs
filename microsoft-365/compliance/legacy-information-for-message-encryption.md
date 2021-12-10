@@ -66,7 +66,7 @@ For more information about how to create Exchange mail flow rules, see [Define R
 
 2. Choose the **Admin** tile.
 
-3. In the Microsoft 365 admin center, choose **Admin centers** \> <a href=" https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
+3. In the Microsoft 365 admin center, choose **Admin centers** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
 
 4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
 
@@ -122,7 +122,7 @@ When your email users send encrypted messages, recipients of those messages can 
 
 2. Choose the **Admin** tile.
 
-3. In the >Microsoft 365 admin center, choose **Admin centers** \> <a href=" https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
+3. In the >Microsoft 365 admin center, choose **Admin centers** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
 
 4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon.](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](/exchange/exchange-admin-center).
 

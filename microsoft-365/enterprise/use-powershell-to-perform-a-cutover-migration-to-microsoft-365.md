@@ -153,7 +153,6 @@ Get-MigrationBatch | Format-List
 ```
 
 ### Step 4: Start the cutover migration batch
-<a name="BK_Step4"> </a>
 
 To start the migration batch in Exchange Online PowerShell, run the following command. This will create a migration batch called "CutoverBatch".
 
@@ -170,7 +169,6 @@ Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
 ```
 
 ### Step 5: Route your email to Microsoft 365
-<a name="BK_Step5"> </a>
 
 Email systems use a DNS record called an MX record to figure out where to deliver emails. During the email migration process, your MX record was pointing to your source email system. Now that the email migration to Microsoft 365 is complete, it's time to point your MX record at Microsoft 365. This helps make sure that email is delivered to your Microsoft 365 mailboxes. By moving the MX record, you can also you turn off your old email system when you're ready.
 
@@ -179,7 +177,6 @@ For many DNS providers, there are specific instructions to change your MX record
 It can take up to 72 hours for the email systems of your customers and partners to recognize the changed MX record. Wait at least 72 hours before you proceed to the next task: [Step 6: Delete the cutover migration batch](use-powershell-to-perform-a-cutover-migration-to-microsoft-365.md#Bk_step6).
 
 ### Step 6: Delete the cutover migration batch
-<a name="Bk_step6"> </a>
 
 After you change the MX record and verify that all email is being routed to Microsoft 365 mailboxes, notify the users that their mail is going to Microsoft 365. After this, you can delete the cutover migration batch. Verify the following before you delete the migration batch.
 
@@ -194,12 +191,10 @@ Remove-MigrationBatch -Identity CutoverBatch
 ```
 
 ### Section 7: Assign user licenses
-<a name="BK_Step7"> </a>
 
  **Activate Microsoft 365 user accounts for the migrated accounts by assigning licenses.** If you don't assign a license, the mailbox is disabled when the grace period ends (30 days). To assign a license in the Microsoft 365 admin center, see [Assign or unassign licenses](../admin/manage/assign-licenses-to-users.md).
 
 ### Step 8: Complete post-migration tasks
-<a name="BK_Step8"> </a>
 
 - **Create an Autodiscover DNS record so users can easily get to their mailboxes.** After all on-premises mailboxes are migrated to Microsoft 365, you can configure an Autodiscover DNS record for your Microsoft 365 organization to enable users to easily connect to their new Microsoft 365 mailboxes with Outlook and mobile clients. This new Autodiscover DNS record has to use the same namespace that you're using for your Microsoft 365 organization. For example, if your cloud-based namespace is cloud.contoso.com, the Autodiscover DNS record you need to create is autodiscover.cloud.contoso.com.
 

@@ -96,7 +96,7 @@ The following list describes each column in the previous table.
    Get-RetentionPolicy <GUID> | FL
    ```
 
-   The value of the **Name** property is the name of the retention policy that's displayed on the **Retention policies** page in the <a href=" https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
+   The value of the **Name** property is the name of the retention policy that's displayed on the **Retention policies** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
 - **MailboxType**: Specifies what type of mailboxes the policy is assigned to. Values include *Primary* (mailboxes without an archive) or *PrimaryWithArchive* (mailboxes with an archive). If the value in this column is *Primary*, then you should enable the archive for the mailboxes (the **Mailbox** column indicates the number of these mailboxes) that are assigned the policy. Otherwise, an archive policy or personal archive tag won't work because there isn't an archive to move items to.
 
