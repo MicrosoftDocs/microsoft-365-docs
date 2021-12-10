@@ -38,9 +38,9 @@ Or
   > [!div class="mx-imgBorder"]
   > ![DLP settings.](../media/endpoint-dlp-1-using-dlp-settings.png)
 
-### Endpoint DLP Windows 10 and macOS settings
+### Endpoint DLP Windows 10/11 and macOS settings
 
-|Setting |Windows 10, 1809 and later  |macOS Catalina 10.15 or later (preview)  |Notes  |
+|Setting |Windows 10, 1809 and later, Windows 11  |macOS Catalina 10.15 or later (preview)  |Notes  |
 |---------|---------|---------|---------|
 |File path exclusions     |Supported         |Supported         |macOS includes a recommended list of exclusions that is on by default          |
 |Unallowed Apps     |Supported         |Supported         |         |
