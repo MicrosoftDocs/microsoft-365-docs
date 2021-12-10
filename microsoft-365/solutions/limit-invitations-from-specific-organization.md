@@ -15,7 +15,7 @@ ms.collection:
 ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
-description: 
+description: Learn how to limit which of your users can be invited as a guest or shared channel participant to a specific organization.
 ---
 
 # Limit who can be invited by an organization
@@ -40,9 +40,7 @@ description:
 ## Add an organization
 
 
-1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
-1. Select **External Identities**, and then select **Cross-tenant access settings (preview)**.
-1. Select **Organizational settings**.
+1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.1. Select **Organizational settings**.
 1. Select **Add organization**.
 1. On the **Add organization** pane, type the full domain name (or tenant ID) for the organization.
 1. Select the organization in the search results, and then select **Add**.
@@ -52,8 +50,9 @@ description:
 
 both
 
-1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
-1. Select **External Identities**, and then select **Cross-tenant access settings (preview)**.
+1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
+
+To limit who can be invited as a guest
 1. Select the outbound access link for the organization that you want to modify.
 1. On the **B2B collaboration** tab, choose **Customize settings**.
 1. Under **Access status**, choose **Allow access**.
@@ -63,6 +62,16 @@ both
 1. Choose **Select**.
 1. Select **Save** and close the **Outbound access settings** blade.
 
+
+To limit who can be invited as a shared chanel participant
+1. Select the outbound access link for the organization that you want to modify.
+1. On the **B2B direct connect** tab, choose **Customize settings**.
+1. Under **Access status**, choose **Allow access**.
+1. Under **Target**, choose **Select external users and groups**.
+1. Select the link to add users and groups.
+1. Search for and select the security group that you want to use.
+1. Choose **Select**.
+1. Select **Save** and close the **Outbound access settings** blade.
 
 ## Related topics
 

@@ -25,5 +25,9 @@ description:
 1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
 1. Select **External Identities**, and then select **Cross-tenant access settings (preview)**.
 
+
+
+1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
+
 ## Related topics
 

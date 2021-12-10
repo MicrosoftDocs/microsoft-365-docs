@@ -32,8 +32,7 @@ description:
 ## Add an organization
 
 
-1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
-1. Select **External Identities**, and then select **Cross-tenant access settings (preview)**.
+1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
 1. Select **Organizational settings**.
 1. Select **Add organization**.
 1. On the **Add organization** pane, type the full domain name (or tenant ID) for the organization.
