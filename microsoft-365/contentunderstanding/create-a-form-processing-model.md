@@ -134,13 +134,15 @@ There are two flows available to process a selected file or batch of files in a 
 
 - **Extract info from an image or PDF file with a form processing model** — Use to extract text from a selected image or PDF file by running a form processing model. Supports a single selected file at a time, and supports only PDF files and image files (PNG, JPG, and JPEG).
 
+    ![Screenshot showing the Automate menu with Extract info highlighted.](../media/content-understanding/automate-extract-info.png)  
+
 - **Extract info from files with a form processing model** — Use with form processing models to read and extract information from a batch of files. Processes up to 5,000 SharePoint files at a time.
 
 ### Classification Date field
 
 When a SharePoint Syntex form processing model (or a document understanding model) is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
 
-You can use the **Send an email after SharePoint Syntex processes a file** flow to notify users that a new file has been processed and classified by a model in a SharePoint document library.
+When a model is stamped with the **Classification Date**, you can use the **Send an email after SharePoint Syntex processes a file** flow to notify users that a new file has been processed and classified by a model in the SharePoint document library.
 
 ## See Also
   
