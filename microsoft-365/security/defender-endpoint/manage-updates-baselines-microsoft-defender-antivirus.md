@@ -84,7 +84,7 @@ All our updates contain
 <summary> November-2021 (Platform: 4.18.2111.X| Engine: 1.1.18800.4)</summary>
 
 &ensp;Security intelligence update version: **1.353.3.0**<br/>
-&ensp;Released: **December 10th, 2021**<br/>
+&ensp;Released: **December 9th, 2021**<br/>
 &ensp;Platform: **4.18.2111.X**<br/>
 &ensp;Engine: **1.1.18800.4**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
@@ -94,7 +94,8 @@ Security intelligence update version: 1.353.3.0
 
 ### What's new
 
-- None
+- Normalize HTML. We now strip valid & recognized html tags ​and leave the others untouched.
+- Implement Decaying Counters. Decaying counter Lua APIs are now available to simulate moving averages.
 
 ### Known Issues
 No known issues
