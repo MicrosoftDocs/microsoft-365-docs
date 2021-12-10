@@ -126,6 +126,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/admin/admin-overview/learn-about-office-365-germany.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/business-video/delete-user.md",
       "redirect_url": "/microsoft-365/admin/add-users/remove-former-employee",
       "redirect_document_id": false
