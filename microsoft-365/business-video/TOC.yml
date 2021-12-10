@@ -129,16 +129,8 @@
           href: turn-on-mfa.md
         - name: Set up two-factor sign-in on your phone
           href: https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14
-        - name: Turn on malware detection
-          href: anti-malware.md 
-        - name: Create email rules for ransomware
-          href: prevent-ransom-in-email.md
-        - name: Set up anti-phishing
-          href: setup-anti-phishing.md  
         - name: Manage safe attachments
           href: safe-attachments.md 
-        - name: Manage safe links
-          href: safe-links.md
         - name: Prevent data loss
           href: set-up-dlp.md 
         - name: Create sensitivity labels

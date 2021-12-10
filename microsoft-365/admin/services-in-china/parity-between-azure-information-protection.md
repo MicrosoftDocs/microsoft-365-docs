@@ -83,7 +83,7 @@ The **Microsoft Information Protection Sync Service** service principal is not a
 
 1. If you don't have the Azure Az module installed, install it or use a resource where the Azure Az module comes preinstalled, such as [Azure Cloud Shell](/azure/cloud-shell/overview). For more information, see [Install the Azure Az PowerShell module](/powershell/azure/install-az-ps).
 
-1.    Connect to the service using the [Connect-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) cmdlet and the `azurechinacloud` environment name:
+1. Connect to the service using the [Connect-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) cmdlet and the `azurechinacloud` environment name:
 
     ```powershell
     Connect-azaccount -environmentname azurechinacloud
