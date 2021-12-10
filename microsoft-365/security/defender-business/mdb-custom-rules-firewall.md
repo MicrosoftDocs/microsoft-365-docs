@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# Manage your custom rules for firewall policies in Microsoft Defender for Business
+# Manage your custom rules for firewall policies in Microsoft Defender for Business (preview)
 
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-Microsoft Defender for Business includes firewall policies that help protect your devices from unwanted network traffic. You can use custom rules to define exceptions for your firewall policies. That is, you can use custom rules to block or allow specific connections.
+Microsoft Defender for Business (preview) includes firewall policies that help protect your devices from unwanted network traffic. You can use custom rules to define exceptions for your firewall policies. That is, you can use custom rules to block or allow specific connections.
 
-To learn more about firewall policies and settings, see [Firewall in Microsoft Defender for Business](mdb-firewall.md).
+To learn more about firewall policies and settings, see [Firewall in Microsoft Defender for Business (preview)](mdb-firewall.md).
 
 **This article describes how to**:
 
@@ -97,8 +97,8 @@ To learn more about firewall policies and settings, see [Firewall in Microsoft D
 
 ## Next steps
 
-- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
+- [View and manage incidents in Microsoft Defender for Business (preview)](mdb-view-manage-incidents.md)
 
-- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
+- [Respond to and mitigate threats in Microsoft Defender for Business (preview)](mdb-respond-mitigate-threats.md)
 
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
