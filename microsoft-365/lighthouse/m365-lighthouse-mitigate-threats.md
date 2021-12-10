@@ -15,7 +15,7 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to mitigate threats with Microsoft Defender Antivirus."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn about the mitigate threats with Microsoft Defender Antivirus."
 ---
 
 # Mitigate threats with Microsoft Defender Antivirus in Microsoft 365 Lighthouse
@@ -28,7 +28,9 @@ Microsoft 365 Lighthouse lets partners investigate and mitigate threats across a
 ## Before you begin
 
 - Microsoft 365 Lighthouse is deployed in the partner tenant only—not in the customer tenants, but make sure you and your customer tenants meet the requirements listed in [Microsoft 365 Lighthouse requirements](m365-lighthouse-requirements.md).
-- Users must be running Microsoft Defender Antivirus (included with Windows). Lighthouse does not support non-Microsoft antivirus software. For more information, see [Turn on Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows).
+
+- Users must be running Microsoft Defender Antivirus (included with Windows). Lighthouse does not support non-Microsoft antivirus software. For more information, see [Turn on Microsoft Defender Antivirus](https://docs.microsoft.com/mem/intune/user-help/turn-on-defender-windows).
+
 - You must be a Global Administrator in the partner tenant you're signing into.
 
 ## Investigate active threats
@@ -36,7 +38,9 @@ Microsoft 365 Lighthouse lets partners investigate and mitigate threats across a
 To investigate a specific threat:
 
 1. In the left navigation pane in Lighthouse, select **Threat management**.
+
 2. Select the **Threats** tab.
+
 3. From the threat list, select the threat you want to investigate.
 
 The threat details pane provides the following information:
@@ -56,8 +60,11 @@ The threat details pane provides the following information:
 To investigate threats on a specific device:
 
 1. In the left navigation pane in Lighthouse, select **Threat management**.
+
 2. Select the **Antivirus protection** tab.
+
 3. Select a device from the list.
+
 4. From the device details pane, select the **Current threats** tab.
 
 Lighthouse displays all threats found on the device. To see details, select the threat.
@@ -67,48 +74,61 @@ Lighthouse displays all threats found on the device. To see details, select the 
 A quick scan searches common locations where malware could be, such as registry keys and know startup folders. A full scan searches the entire device. In most cases, a quick scan is sufficient and is the recommended option for scheduled scans.
 
 1. In the left navigation pane in Lighthouse, select **Threat management**.
+
 2. Select the **Antivirus protection** tab.
+
 3. From the device list, select a device.
+
 4. In the device details pane, select **Run full scan** or **Run quick scan**.
 
 You can also scan multiple devices by selecting the checkbox next to each device name in the list and then select Run full scan or Run quick scan.
-
-## Restart a device
-
-Some updates may require a device to restart to install correctly.
-
-1. In the left navigation pane in Lighthouse, select **Threat management**.
-2. Select the **Antivirus protection** tab.
-3. From the device list, select a device.
-4. In the device details pane, select **Reboot device**.
-
-You can also restart multiple devices by selecting the checkbox next to each device name in the list and then select **Reboot device**.
 
 ## Get updates for Microsoft Defender Antivirus
 
 To update Microsoft Defender Antivirus on a single device:
 
 1. In the left navigation pane in Lighthouse, select **Threat management**.
+
 2. Select the **Antivirus protection** tab.
+
 3. From the device list, select a device.
+
 4. In the device details pane, select **Update antivirus**.
 
 You can get updates for multiple devices by selecting the checkbox next to each device name in the list and then select **Update antivirus**.
 
-If you need to create a new policy, select **Update policy** from the device details pane. Lighthouse will redirect you to Microsoft Endpoint Manager (MEM). For more information about creating a policy, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
+If you need to create a new policy, select **Update policy** from the device details pane. Lighthouse will redirect you to Microsoft Endpoint Manager (MEM). For more information about creating a policy, see [Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy).
 
 ## Check pending antivirus actions on a device
 
 When consecutive actions are applied to a device, you’ll receive an action pending message. To check which actions are pending on a device:
 
 1. In the left navigation pane in Lighthouse, select **Threat management**.
+
 2. Select the **Antivirus protection** tab.
+
 3. From the device list, select a device.
+
 4. In the device details pane, select the **Device action statuses** tab to view pending actions.
+
+## Restart a device
+
+Some updates may require a device to restart to install correctly.
+
+1. In the left navigation pane in Lighthouse, select **Threat management**.
+
+2. Select the **Antivirus protection** tab.
+
+3. From the device list, select a device.
+
+4. In the device details pane, select **Reboot device**.
+
+You can also restart multiple devices by selecting the checkbox next to each device name in the list and then select **Reboot device**.
 
 ## Related content
 
 [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\
-[Threat management page overview](m365-lighthouse-threat-management-page-overview.md) (article)\
-[Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy) (article)\
-[Turn on Microsoft Defender Antivirus](/mem/intune/user-help/turn-on-defender-windows) (article)
+[Threat management page overview ](m365-lighthouse-threat-management-page-overview.md) (article)\
+[Create a compliance policy in Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy) (article)\
+[Turn on Microsoft Defender Antivirus](https://docs.microsoft.com/mem/intune/user-help/turn-on-defender-windows) (article)\
+[Microsoft Security Intelligence](https://www.microsoft.com/wdsi/threats)
