@@ -66,7 +66,7 @@ Before you begin, check your [Microsoft 365 Secure Score](../../security/defende
 Using multifactor authentication is one of the easiest and most effective ways to increase the security of your organization. It's easier than it sounds - when you log in, multifactor authentication means you'll type a code from your phone to get access to Microsoft 365. This extra step can prevent hackers from taking over if they know your password. Multifactor authentication is also called 2-step verification. Individuals can add 2-step verification to most accounts easily, for example, to their Google or Microsoft accounts. Here's how to [add two-step verification to your personal Microsoft account](https://go.microsoft.com/fwlink/p/?linkid=2016403).
 
 For businesses using Microsoft 365, add a setting that requires your users to log in using multifactor authentication. When you make this change, users will be prompted to set up their phone for two-factor authentication next time they log in.
-To see a training video for how to set up MFA and how users complete the set up, see [set up MFA](set-up-multi-factor-authentication.md) and [user set up](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
+To see a training video for how to set up MFA and how users complete the setup, see [set up MFA](set-up-multi-factor-authentication.md) and [user set up](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
 
 To set up multifactor authentication, you turn on Security defaults:
 
@@ -246,7 +246,7 @@ To create an anti-phishing policy in Defender for Office 365, view a [short trai
 
 4. On the Anti-phishing page, select **+ Create**. A wizard launches that steps you through defining your anti-phishing policy.
 
-5. Specify the name, description, and settings for your policy as recommended in the chart below. See [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../../security/office-365-security/set-up-anti-phishing-policies.md) for more details.
+5. Specify the name, description, and settings for your policy as recommended in the chart below. For more information, see [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../../security/office-365-security/set-up-anti-phishing-policies.md).
 
 6. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
 
@@ -299,7 +299,7 @@ For more information, see [Set up anti-phishing policies in Defender for Office 
 
 Hackers sometimes hide malicious websites in links in email or other files. Safe Links, part of Microsoft Defender for Office 365, can help protect your organization by providing time-of-click verification of web addresses (URLs) in email messages and Office documents. Protection is defined through Safe Links policies.
 
-We recommend that you do the following:
+Do the following to protect against attacks:
 
 - Modify the default policy to increase protection.
 
