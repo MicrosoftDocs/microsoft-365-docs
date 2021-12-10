@@ -45,7 +45,7 @@ Microsoft recommends that you complete the tasks listed in the following table t
 
 |*Number*|Task|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|---|
-|1|[Set up multi-factor authentication](#1-set-up-multifactor-authentication)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1|[Set up multi-factor authentication](#1-set-up-multi-factor-authentication)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[Train your users](#2-train-your-users)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |3|[Use dedicated admin accounts](#3-use-dedicated-admin-accounts)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4|[Raise the level of protection against malware in mail](#4-raise-the-level-of-protection-against-malware-in-mail)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
