@@ -110,12 +110,6 @@ sections:
           
           ::: moniker-end
           
-          ::: moniker range="o365-germany"
-          
-          1. In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.
-          
-          ::: moniker-end
-          
           ::: moniker range="o365-21vianet"
           
           1. In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.
@@ -129,12 +123,6 @@ sections:
           ::: moniker range="o365-worldwide"
           
           You cannot change the name of your initial  *.onmicrosoft.com*  domain. 
-          
-          ::: moniker-end
-          
-          ::: moniker range="o365-germany"
-          
-          You cannot change the name of your initial  *.onmicrosoft.de*  domain. 
           
           ::: moniker-end
           
@@ -152,12 +140,6 @@ sections:
           ::: moniker range="o365-worldwide"
           
           Yes. To add subdomains, you must manage your own DNS settings at your registrar's website. If you are letting Microsoft manage your DNS settings with NS records, or if you bought the domain from Microsoft, you can't add subdomains.
-          
-          ::: moniker-end
-          
-          ::: moniker range="o365-germany"
-          
-          Yes! To add subdomains, you must manage your own DNS settings at your registrar's website. If you are letting Microsoft manage your DNS settings with NS records, or if you bought the domain from Microsoft, you can't add subdomains.
           
           ::: moniker-end
           

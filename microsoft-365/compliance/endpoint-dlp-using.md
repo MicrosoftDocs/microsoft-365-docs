@@ -38,9 +38,20 @@ Or
   > [!div class="mx-imgBorder"]
   > ![DLP settings.](../media/endpoint-dlp-1-using-dlp-settings.png)
 
+### Endpoint DLP Windows 10 and macOS settings
+
+|Setting |Windows 10, 1809 and later  |macOS Catalina 10.15 or later (preview)  |Notes  |
+|---------|---------|---------|---------|
+|File path exclusions     |Supported         |Supported         |macOS includes a recommended list of exclusions that is on by default          |
+|Unallowed Apps     |Supported         |Supported         |         |
+|Unallowed Bluetooth apps    |Supported         |Not Supported         |         |
+|Browser and domain restrictions to sensitive items      |Supported         |Supported         |         |
+|Additional settings for Endpoint DLP     |Supported         |Supported         |Only the default business justifications are supported for macOS devices         |
+|Always audit file activity for devices     |Supported         |Supported         |         |
+
 ### Advanced classification scanning and protection
 
-## Get registered
+#### Get registered
 
 To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).
 
@@ -61,19 +72,6 @@ These Windows versions support advanced classification scanning and protection:
 
 > [!NOTE]
 > DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
-
-### Endpoint DLP Windows 10 and macOS settings
-
-|Setting |Windows 10, 1809 and later  |macOS Catalina 10.15 or later (preview)  |Notes  |
-|---------|---------|---------|---------|
-|File path exclusions     |Supported         |Supported         |macOS includes a recommended list of exclusions that is on by default          |
-|Unallowed Apps     |Supported         |Supported         |         |
-|Unallowed Bluetooth apps    |Supported         |not supported         |         |
-|Browser and domain restrictions to sensitive items      |Supported         |Supported         |         |
-|Additional settings for Endpoint DLP     |Supported         |Supported         |Only the default business justifications are supported for macOS devices         |
-|Always audit file activity for devices     |Supported         |Supported         |         |
-
-
 
 ### File path exclusions
 

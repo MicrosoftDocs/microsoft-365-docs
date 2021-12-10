@@ -1,6 +1,116 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/business-video/join-guest-meeting.md",
+      "redirect_url": "https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/join-team-guest.md",
+      "redirect_url": "/microsoftteams/guest-experience",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/work-from-anywhere.md",
+      "redirect_url": "https://support.microsoft.com/en-us/office/work-remotely-with-microsoft-365-164946c8-a47a-470e-a0b4-feb12a2eea04",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/schedule-guest-meeting.md",
+      "redirect_url": "https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/team-with-guests.md",
+      "redirect_url": "https://support.microsoft.com/en-us/office/add-guests-to-a-team-in-teams-fccb4fa6-f864-4508-bdde-256e7384a14f",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/collab-outlook-teams.md",
+      "redirect_url": "https://support.microsoft.com/en-us/office/video-what-is-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/org-wide-team.md",
+      "redirect_url": "/microsoftteams/create-an-org-wide-team",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/overview-file-sharing.md",
+      "redirect_url": "https://support.microsoft.com/en-us/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/get-started-teams-small-business.md",
+      "redirect_url": "https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/group-email.md",
+      "redirect_url": "https://support.microsoft.com/office/3f73d218-52d6-4f88-a733-9ff37073ee4c",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/shared-calendar.md",
+      "redirect_url": "https://support.microsoft.com/office/353ed2c1-3ec5-449d-8c73-6931a0adab88",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/start-and-pin-chats.md",
+      "redirect_url": "https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/securely-share-files-externally.md",
+      "redirect_url": "https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/share-files-externally.md",
+      "redirect_url": "https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/store-files.md",
+      "redirect_url": "https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/overview-bookings.md",
+      "redirect_url": "https://support.microsoft.com/office/42d4e852-8e99-4d8f-9b70-d7fc93973cb5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/set-up-mfa.md",
+      "redirect_url": "https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/install-apps-android.md",
+      "redirect_url": "https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/install-apps-ios.md",
+      "redirect_url": "https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/files-to-sharepoint.md",
+      "redirect_url": "/microsoft-365/admin/setup/files-to-sharepoint",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/files-to-onedrive.md",
+      "redirect_url": "/microsoft-365/admin/setup/files-to-onedrive",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/setup-outlook.md",
+      "redirect_url": "/microsoft-365/admin/setup/setup-outlook",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/business-video/get-help-support.md",
       "redirect_url": "/microsoft-365/admin/get-help-support",
       "redirect_document_id": false
@@ -9,7 +119,27 @@
       "source_path": "microsoft-365/business-video/what-is-microsoft-365.md",
       "redirect_url": "/microsoft-365/admin/admin-overview/what-is-microsoft-365",
       "redirect_document_id": false
-	},
+	  },
+    {
+      "source_path": "microsoft-365/business-video/admin-center-overview.md",
+      "redirect_url": "/microsoft-365/admin/admin-overview/admin-center-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/admin-overview/learn-about-office-365-germany.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/delete-user.md",
+      "redirect_url": "/microsoft-365/admin/add-users/remove-former-employee",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/add-domain.md",
+      "redirect_url": "/microsoft-365/admin/setup/add-domain",
+      "redirect_document_id": false
+    },
     {
       "source_path": "microsoft-365/admin/work-with-customers/index.yml",
       "redirect_url": "/microsoft-365/admin",
@@ -112,12 +242,12 @@
     },
     {
       "source_path": "microsoft-365/business/move-files-to-onedrive.md",
-      "redirect_url": "/microsoft-365/business-video/files-to-onedrive",
+      "redirect_url": "/microsoft-365/admin/setup/files-to-onedrive",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/business/sign-up.md",
-      "redirect_url": "/microsoft-365/business-video/sign-up",
+      "redirect_url": "/microsoft-365/admin/admin-overview/sign-up-for-office-365",
       "redirect_document_id": false
     },
     {
@@ -577,12 +707,12 @@
     },
     {
       "source_path": "microsoft-365/admin/admin-overview/admin-overview.md",
-      "redirect_url": "/microsoft-365/business-video/admin-center-overview",
+      "redirect_url": "/microsoft-365/admin/admin-overview/admin-center-overview",
       "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/admin/microsoft-365-admin-center-preview.md",
-      "redirect_url": "/microsoft-365/business-video/admin-center-overview",
+      "redirect_url": "/microsoft-365/admin/admin-overview/admin-center-overview",
       "redirect_document_id": false
     },
     {
@@ -2323,6 +2453,11 @@
     {
       "source_path": "microsoft-365/knowledge/set-up-knowledge-network.md",
       "redirect_url": "/microsoft-365/knowledge/set-up-topic-experiences",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/upgrade.md",
+      "redirect_url": "https://support.microsoft.com/en-us/windows/upgrade-to-windows-10-pro-71ecc746-0f81-a4c0-bd4b-0db8559e0796",
       "redirect_document_id": false
     },
     {
@@ -5731,6 +5866,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/business-video/secure-office-on-ios.md",
+      "redirect_url": "/microsoft-365/admin/devices/app-protection-settings-for-android-and-ios",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/view-bill.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/view-your-bill-or-invoice",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/knowledge/faq-topics.md",
       "redirect_url": "/viva/topics/faq-topics",
       "redirect_document_id": false
@@ -5858,6 +6003,166 @@
     {
       "source_path": "microsoft-365/viva/setup-microsoft-viva.md",
       "redirect_url": "/viva/setup-microsoft-viva",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/solutions/multi-national-design-principles.md",
+      "redirect_url": "/microsoft-365/solutions/design-principles",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/solutions/configure-secure-access.md",
+      "redirect_url": "/microsoft-365/security/office-365-security/microsoft-365-policies-configurations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business-video/anti-malware.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/increase-threat-protection#raise-the-level-of-protection-against-malware-in-mail",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/prevent-ransom-in-email.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-ransomware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/safe-links.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-phishing-attacks-with-safe-links",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/setup-anti-phishing.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-your-email-from-phishing-attacks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/setup-overview.md",
+      "redirect_url": "/microsoft-365/admin/setup/plan-your-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/choose-subscription.md",
+      "redirect_url": "/microsoft-365/admin/admin-overview/sign-up-for-office-365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/sign-up.md",
+      "redirect_url": "/microsoft-365/admin/admin-overview/sign-up-for-office-365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/set-up.md",
+      "redirect_url": "/microsoft-365/admin/setup/business-set-up",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/secure-win10-pcs.md",
+      "redirect_url": "/microsoft-365/admin/setup/secure-win-10-pcs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/connect.md",
+      "redirect_url": "/microsoft-365/admin/setup/set-up-windows-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/import-email.md",
+      "redirect_url": "/microsoft-365/admin/setup/migrate-email-and-contacts-admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/install-office.md",
+      "redirect_url": "/microsoft-365/admin/setup/install-applications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/business-voice.md",
+      "redirect_url": "/microsoftteams/business-voice/whats-business-voice",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/buy-business-voice.md",
+      "redirect_url": "/microsoftteams/business-voice/what-to-buy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/change-subscription.md",
+      "redirect_url": "/microsoft-365/commerce/try-or-buy-microsoft-365#buy-a-different-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/update-payment.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/manage-payment-methods",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/buy-licenses.md",
+      "redirect_url": "/microsoft-365/commerce/licenses/buy-licenses",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/remove-existing-licenses.md",
+      "redirect_url": "/microsoft-365/commerce/licenses/buy-licenses",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/overview-m365-security.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/secure-your-business-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/create-web-site.md",
+      "redirect_url": "/microsoft-365/admin/setup/domains-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/set-up-a-new-business-email-address.md",
+      "redirect_url": "/microsoft-365/admin/email/change-email-address",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/admin-mobile.md",
+      "redirect_url": "/microsoft-365/admin/admin-overview/admin-mobile-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/add-user.md",
+      "redirect_url": "/microsoft-365/admin/add-users/add-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/add-admin.md",
+      "redirect_url": "/microsoft-365/admin/add-users/assign-admin-roles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/reset-user-passwords.md",
+      "redirect_url": "/microsoft-365/admin/add-users/reset-passwords",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/company-wide-signature.md",
+      "redirect_url": "/microsoft-365/admin/setup/create-signatures-and-disclaimers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/change-user-name-email.md",
+      "redirect_url": "/microsoft-365/admin/add-users/change-a-user-name-and-email-address",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/act-on-report.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/activity-reports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/what-is-admin.md",
+      "redirect_url": "/microsoft-365/admin/add-users/about-admin-roles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/set-up-self-serve-password-reset.md",
+      "redirect_url": "/microsoft-365/admin/add-users/let-users-reset-passwords",
       "redirect_document_id": false
     }
   ]
