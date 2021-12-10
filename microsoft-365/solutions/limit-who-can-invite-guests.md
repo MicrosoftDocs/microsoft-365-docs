@@ -27,7 +27,7 @@ description:
 
 Create a security group that can be assigned a role.
 
-1. Sign in to the [Azure portal](https://portal.azure.com) using a Global administrator or Security administrator account. Then open the **Azure Active Directory** service.
+1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
 1. On the **Active Directory** page, select **Groups** and then select **New group**.
 1. Choose **Security** for the **Group type**.
 1. Type a **Group name.** 

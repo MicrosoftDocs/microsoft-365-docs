@@ -1,5 +1,5 @@
 ---
-title: "Enable shared channels with all organizations"
+title: "Enable shared channels with all external organizations"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -15,17 +15,17 @@ ms.collection:
 ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
-description: 
+description: Learn how to enable shared channels with all other Microsoft 365 and Azure Active Directory organizations.
 ---
 
-# Enable shared channels with all organizations
+# Enable shared channels with all external organizations
 
 
 
 ## Allow users to invite people in other organizations to participate in shared channels
 
 
-1. Sign in to the [Azure portal](https://portal.azure.com) using a Global administrator or Security administrator account. Then open the **Azure Active Directory** service.
+1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
 2. Select **External Identities**, and then select **Cross-tenant access settings (preview)**.
 3. On the **Default settings** tab, under **Inbound access settings**, select **Edit inbound defaults**.
 4. Select the **B2B direct connect** tab.
@@ -41,14 +41,13 @@ description:
 ## Allow users to participate in shared channels in other organizations
 
 
-1. Sign in to the [Azure portal](https://portal.azure.com) using a Global administrator or Security administrator account. Then open the **Azure Active Directory** service.
-2. Select **External Identities**, and then select **Cross-tenant access settings (preview)**.
-3. On the **Default settings** tab, under **Outbound access settings**, select **Edit outbound defaults**.
-4. Select the **B2B direct connect** tab.
-5. On the **Users and groups** tab, under **Access status**, choose **Allow access**.
-6. On the **External applications** tab, under **Access status**, choose **Allow access**.
-7. Select **Save**.
-8. Close the **Default settings** blade.
+1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
+1. On the **Default settings** tab, under **Outbound access settings**, select **Edit outbound defaults**.
+1. Select the **B2B direct connect** tab.
+1. On the **Users and groups** tab, under **Access status**, choose **Allow access**.
+1. On the **External applications** tab, under **Access status**, choose **Allow access**.
+1. Select **Save**.
+1. Close the **Default settings** blade.
 
 
 
