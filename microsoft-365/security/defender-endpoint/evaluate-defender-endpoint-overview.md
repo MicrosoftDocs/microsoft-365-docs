@@ -29,7 +29,7 @@ ms.technology: m365d
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Microsoft 365 Defender
 
-![Microsoft 365 Defender evaluation and piloting process.](../../media/defender/m365-defender-eval-process.png)
+  :::image type="content" source="../../media/defender/m365-defender-eval-process.png" alt-text="The evaluation and piloting process in the Microsoft 365 Defender portal" lightbox="../../media/defender/m365-defender-eval-process.png":::
 
 Comprehensive security product evaluations can be a complex process, requiring cumbersome environment and device configurations before an end-to-end attack simulation can actually be done. Adding to the complexity is the challenge of tracking where the simulation activities, alerts, and results are reflected during the evaluation.
 

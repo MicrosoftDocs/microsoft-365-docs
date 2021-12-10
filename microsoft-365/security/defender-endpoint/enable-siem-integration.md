@@ -49,7 +49,7 @@ Enable security information and event management (SIEM) integration so you can p
 
 1. In the navigation pane, select **Settings** \> **Endpoints** \> **APIs** \> **SIEM**.
 
-   :::image type="content" source="../../media/enable-siemnew.png" lightbox="../../media/enable-siemnew.png" alt-text="Image of SIEM integration from Settings menu1.":::
+   :::image type="content" source="../../media/enable-siemnew.png" alt-text="The Enable SIEM connector option" lightbox="../../media/enable-siemnew.png":::
 
    > [!TIP]
    > If you encounter an error when trying to enable the SIEM connector application, check the pop-up blocker settings of your browser. It might be blocking the new window being opened when you enable the capability.
@@ -59,7 +59,7 @@ Enable security information and event management (SIEM) integration so you can p
     > [!WARNING]
     > The client secret is only displayed once. Make sure you keep a copy of it in a safe place.
 
-    :::image type="content" alt-text="Image of SIEM integration from Settings menu2." source="images/siem_details.png" lightbox="images/siem_details.png":::
+    :::image type="content" source="images/siem_details.png" alt-text="The SIEM integration from Settings menu2" lightbox="images/siem_details.png":::
 
 3. Choose the SIEM type you use in your organization.
 
