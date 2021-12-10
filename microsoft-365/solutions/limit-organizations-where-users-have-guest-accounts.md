@@ -15,7 +15,7 @@ ms.collection:
 ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
-description: 
+description: Learn how to specify which organizations your users can have guest accounts in.
 ---
 
 # Limit organizations where users can have guest accounts
@@ -23,8 +23,18 @@ description:
 
 ## Set default to block
 
+
 1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
 1. Select **External Identities**, and then select **Cross-tenant access settings (preview)**.
+1. Select the **Default settings** tab.
+1. Under **Outbound access settings**, select **Edit outbound defaults**.
+1. Select the **B2B collaboration** tab and the **Users and groups** tab.
+1. Under **Access status**, choose **Block access**.
+1. Select the **External access** tab.
+1. Under **Access status**, choose **Block access**.
+1. Select **Save**.
+1. Close the **Default settings** blade.
+
 
 
 
@@ -40,6 +50,13 @@ description:
 
 
 ## Configure outbound to allow all users
+
+1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
+1. Select the outbound access link for the organization that you want to modify.
+1. On the **B2B collaboration** tab, choose **Customize settings**.
+1. Under **Access status**, choose **Allow access**.
+1. Under **Target**, choose to allow all users.
+1. Select **Save** and close the **Outbound access settings** blade.
 
 
 ## Related topics
