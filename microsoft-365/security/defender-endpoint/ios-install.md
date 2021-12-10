@@ -116,6 +116,11 @@ Admins can configure Microsoft Defender for Endpoint to deploy and activate sile
 1. Click Next and assign the profile to targeted users.
 1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**.
 
+Once the above configuration is done and sync-ed with the device, following will be the flow on the targeted iOS device(s):
+    - Microsoft Defender for Endpoint will be deployed and silently onboarded and device will be seen in the Defender for Endpoint portal.
+    - A provisional notification will be sent to the user device.
+    - Web Protection and other features will be activated.
+
 ## Complete onboarding and check status
 
 1. Once Defender for Endpoint on iOS has been installed on the device, you
