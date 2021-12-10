@@ -43,7 +43,6 @@ The Office apps you installed now appear in your  **Start** menu.
 
 [Install the Microsoft 365 Admin mobile app on your phone](admin-mobile.md) (video)
 
-[Get started with Microsoft Teams in your small business](get-started-teams-small-business.md) (video)
+[Get started with Microsoft Teams in your small business](https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937) (video)
 
-[Easily share files externally](share-files-externally.md) (video)
-
+[Easily share files externally](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07) (video)

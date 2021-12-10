@@ -24,7 +24,8 @@ ms.collection: M365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 As part of your organization's security team, you can configure attack surface reduction capabilities to run in audit mode to see how they'll work. In audit mode, you can enable:
@@ -36,13 +37,13 @@ As part of your organization's security team, you can configure attack surface r
 
 Audit mode lets you see a record of what *would* have happened if you had enabled the feature.
 
-You can enable audit mode when testing how the features will work. This will help make sure your line-of-business apps aren't affected. You can also get an idea of how many suspicious file modification attempts occur over a certain period of time.
+You can enable audit mode when testing how the features will work. Enabling audit mode only for testing helps to prevent audit mode from affecting your line-of-business apps. You can also get an idea of how many suspicious file modification attempts occur over a certain period of time.
 
 The features won't block or prevent apps, scripts, or files from being modified. However, the Windows Event Log will record events as if the features were fully enabled. With audit mode, you can review the event log to see what affect the feature would have had if it was enabled.
 
 To find the audited entries, go to **Applications and Services** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational**.
 
-Use Defender for Endpoint to get greater details for each event, especially for investigating attack surface reduction rules. Using the Defender for Endpoint console lets you [investigate issues as part of the alert timeline and investigation scenarios](investigate-alerts.md).
+Use Defender for Endpoint to get greater details for each event. These details are especially helpful for investigating attack surface reduction rules. Using the Defender for Endpoint console lets you [investigate issues as part of the alert timeline and investigation scenarios](investigate-alerts.md).
 
 You can enable audit mode using Group Policy, PowerShell, and configuration service providers (CSPs).
 

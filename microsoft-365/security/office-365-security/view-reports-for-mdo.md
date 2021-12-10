@@ -2,8 +2,8 @@
 title: View Defender for Office 365 reports
 f1.keywords: 
   - CSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: 
 audience: ITPro
@@ -113,6 +113,10 @@ On the main report page, the ![Export icon.](../../media/m365-cc-sc-download-ico
 ## Threat protection status report
 
 The **Threat protection status** report is a single view that brings together information about malicious content and malicious email detected and blocked by [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) and Microsoft Defender for Office 365. For more information, see [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
+
+## Top senders and recipients report
+
+The **Top senders and recipients** report show the top recipients for EOP and Defender for Office 365 protection features. For more information, see [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report).
 
 ## URL protection report
 
@@ -226,6 +230,7 @@ PowerShell reporting cmdlets:
 |Safe Links|[Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <p> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|
 |Compromised users|[Get-CompromisedUserAggregateReport](/powershell/module/exchange/get-compromiseduseraggregatereport) <p> [Get-CompromisedUserDetailReport](/powershell/module/exchange/get-compromiseduserdetailreport)|
 |Mail flow status|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
+|Spoofed users|[Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport)|
 |
 
 ## What permissions are needed to view the Defender for Office 365 reports?

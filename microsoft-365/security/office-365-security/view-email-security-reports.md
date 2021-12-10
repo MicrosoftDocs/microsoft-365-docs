@@ -33,7 +33,7 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-A variety of reports are available in the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> to help you see how email security features, such as anti-spam, anti-malware, and encryption features in Microsoft 365 are protecting your organization. If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view and download these reports as described in this article.
+A variety of reports are available in the Microsoft 365 Defender portal at <https://security.microsoft.com> to help you see how email security features, such as anti-spam, anti-malware, and encryption features in Microsoft 365 are protecting your organization. If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view and download these reports as described in this article.
 
 > [!NOTE]
 >
@@ -52,7 +52,7 @@ The **Compromised users** report shows shows the number of user accounts that we
 
 The aggregate view shows data for the last 90 days and the detail view shows data for the last 30 days.
 
-To view the report in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Compromised users** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/CompromisedUsers>.
+To view the report in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Compromised users** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/CompromisedUsers>.
 
 On the **Compromised users** page, the chart shows the following information for the specified date range:
 
@@ -156,7 +156,7 @@ On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-cre
 
 The **Mailflow status report** is a smart report that shows information about incoming and outgoing email, spam detections, malware, email identified as "good", and information about email allowed or blocked on the edge. This is the only report that contains edge protection information, and shows just how much email is blocked before being allowed into the service for evaluation by Exchange Online Protection (EOP). It's important to understand that if a message is sent to five recipients we count it as five different messages and not one message.
 
-To view the report in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Mailflow status summary** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/mailflowStatusReport>.
+To view the report in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Mailflow status summary** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/mailflowStatusReport>.
 
 ![Mailflow status summary widget on the Email & collaboration reports page.](../../media/mail-flow-status-report-widget.png)
 
@@ -369,7 +369,7 @@ On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-cre
 
 The **Submissions** report shows information about items that admins have reported to Microsoft for analysis. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
-To view the report in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Submissions** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/adminSubmissionReport>. To go to [admin submissions in the Microsoft 365 Defender portal](admin-submission.md), click **Go to Submissions**. Admins will be able to view the report for last 30 days.
+To view the report in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Submissions** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/adminSubmissionReport>. To go to [admin submissions in the Microsoft 365 Defender portal](admin-submission.md), click **Go to Submissions**. Admins will be able to view the report for last 30 days.
 
 ![Submissions widget on the Email & collaboration reports page.](../../media/submissions-report-widget.png)
 
@@ -912,7 +912,7 @@ To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **
 
 When you hover over a wedge in the pie chart, you can see the name of a kind of malware and how many messages were detected as having that malware.
 
-On the **Top malware report** page, a larger version of the pie chart is displayed on the report page.The details table below the chart shows the following information:
+On the **Top malware report** page, a larger version of the pie chart is displayed. The details table below the chart shows the following information:
 
 - **Top malware**
 - **Count**
@@ -922,6 +922,45 @@ If you click **Filter**, you can specify a date range with **Start date** and **
 On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)** and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
 ![Top malware report view.](../../media/top-malware-report-view.png)
+
+## Top senders and recipients report
+
+The **Top senders and recipient** report is available in both EOP and Defender for Office 365; however, the reports contain different data. For example, EOP customers can view information about top malware, spam, and phishing (spoofing) recipients, but not information about malware detected by [Safe Attachments](safe-attachments.md) or phishing detected by [impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+
+The **Top senders and recipients** shows the top messages senders in your organization, as well as the top recipients for messages that were detected by EOP and Defender for Office 365 protection features. By default, the report shows data for the last week, but data is available for the last 90 days.
+
+To view the report in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Top senders and recipients report** and then click **View details**. To go directly to the report, open one of the following URLs:
+
+- Defender for Office 365: <https://security.microsoft.com/reports/TopSenderRecipientsATP>
+- EOP: <https://security.microsoft.com/reports/TopSenderRecipient>
+
+![Top senders and recipients widget in the Reports dashboard.](../../media/top-senders-and-recipients-widget.png)
+
+When you hover over a wedge in the pie chart, you can see the number of messages for the sender or recipient.
+
+On the **Top senders and recipients** page, a larger version of the pie chart is displayed. The following charts are available:
+
+- **Show data for Top mail senders** (this is the default view)
+- **Show data for Top mail recipients**
+- **Show data for Top spam recipients**
+- **Show data for Top malware recipients** (EOP)
+- **Show data for Top phishing recipients**
+- **Show data for Top malware recipients (MDO)**
+- **Show data for Top phish recipients (MDO)**
+
+The data changes based on your selection.
+
+When you hover over a wedge in the pie chart, you can see the message count for that specific sender or recipient.
+
+The details table below the graph shows the senders or recipients and message counts based on the view you selected.
+
+You can filter both the chart and the details table by clicking **Filter** and selecting **Start date** and **End date**.
+
+When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+
+On the main report page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export** button is available.
+
+![Show data for Top mail senders view in the Top senders and recipients report.](../../media/top-senders-and-recipients-report-view.png)
 
 ## URL protection report
 
@@ -1027,7 +1066,7 @@ If you are not seeing data in your reports, check the filters that you're using 
 
 To manage scheduled reports that you've already created, do the following steps:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Reports** \> expand **Email & collaboration** \> select **Manage schedules**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> expand **Email & collaboration** \> select **Manage schedules**.
 
    To go directly to the **Manage schedules** page, use <https://security.microsoft.com/ManageSubscription>.
 
@@ -1078,7 +1117,7 @@ To manage scheduled reports that you've already created, do the following steps:
 
 ### Download reports
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Reports** \> expand **Email & collaboration** \> select **Reports for download**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> expand **Email & collaboration** \> select **Reports for download**.
 
    To go directly to the **Reports for download** page, use <https://security.microsoft.com/ReportsForDownload>.
 
