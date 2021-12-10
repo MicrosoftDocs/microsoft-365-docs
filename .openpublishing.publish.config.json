@@ -7,7 +7,7 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [
-        "=o365-worldwide || =o365-21vianet"
+        "o365-21vianet", "o365-worldwide"
       ],
       "open_to_public_contributors": true,
       "type_mapping": {
