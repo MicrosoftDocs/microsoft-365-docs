@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# Get Microsoft Defender for Business
+# Get Microsoft Defender for Business (preview)
 
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-Microsoft Defender for Business is available in preview! Participating in the preview program enables you to try out Defender for Business before it becomes generally available. The preview program is available to:
+Microsoft Defender for Business (preview) is available in preview! Participating in the preview program enables you to try out Defender for Business before it becomes generally available. The preview program is available to:
 
 - Microsoft partners who provide IT services to small and medium-sized businesses
 - Small and medium-sized businesses (up to 300 employees)
@@ -55,6 +55,6 @@ If you're accepted, your email will contain a license code that you'll use to ac
 
 ## Next steps
 
-- [See the setup and configuration process for Microsoft Defender for Business](mdb-setup-configuration.md)
+- [See the setup and configuration process for Microsoft Defender for Business (preview)](mdb-setup-configuration.md)
 
-- [Find out how to get help and support for Microsoft Defender for Business](mdb-get-help.md)
+- [Find out how to get help and support for Microsoft Defender for Business (preview)](mdb-get-help.md)
