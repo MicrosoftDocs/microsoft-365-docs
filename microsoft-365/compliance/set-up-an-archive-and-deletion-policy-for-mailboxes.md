@@ -19,7 +19,9 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: "Learn how to create an archiving and deletion policy in Microsoft 365 that automatically moves items to a user's archive mailbox."
 ---
 
@@ -93,7 +95,7 @@ In this step, you'll create the three custom retention tags that were previously
 
 - Alpine House Deleted Items 5 Years Delete and Allow Recovery (custom tag for the Deleted Items folder)
 
-To create new retention tags, you'll use the Exchange admin center (EAC) in your Exchange Online organization. Be sure to use the classic version of the EAC.
+To create new retention tags, you'll use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> in your Exchange Online organization. Be sure to use the classic version of the EAC.
   
 1. Go to [https://admin.protection.outlook.com/ecp/](https://admin.protection.outlook.com/ecp/) and sign in using your credentials.
   
