@@ -38,9 +38,9 @@ Or
   > [!div class="mx-imgBorder"]
   > ![DLP settings.](../media/endpoint-dlp-1-using-dlp-settings.png)
 
-### Endpoint DLP Windows 10 and macOS settings
+### Endpoint DLP Windows 10/11 and macOS settings
 
-|Setting |Windows 10, 1809 and later  |macOS Catalina 10.15 or later (preview)  |Notes  |
+|Setting |Windows 10, 1809 and later, Windows 11  |macOS Catalina 10.15 or later (preview)  |Notes  |
 |---------|---------|---------|---------|
 |File path exclusions     |Supported         |Supported         |macOS includes a recommended list of exclusions that is on by default          |
 |Unallowed Apps     |Supported         |Supported         |         |
@@ -48,6 +48,9 @@ Or
 |Browser and domain restrictions to sensitive items      |Supported         |Supported         |         |
 |Additional settings for Endpoint DLP     |Supported         |Supported         |Only the default business justifications are supported for macOS devices         |
 |Always audit file activity for devices     |Supported         |Supported         |         |
+|Auto-quarantine file from unallowed apps | Supported | Not Supported| |
+|Advanced classification | Supported | Not Supported| |
+|Business justification in policy tips | Supported | Supported| |
 
 ### Advanced classification scanning and protection
 
@@ -164,7 +167,7 @@ Restrict sensitive files that match your policies from being shared with unrestr
 
 #### Unallowed browsers
 
-You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge Chromium.
+You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Microsoft Edge.
 
 #### Service domains
 
@@ -215,7 +218,7 @@ File activity will always be audited for onboarded devices, regardless of whethe
 
 With Endpoint DLP and Edge Chromium Web browser, you can restrict unintentional sharing of sensitive items to unallowed cloud apps and services. Edge Chromium understands when an item is restricted by an Endpoint DLP policy and enforces access restrictions.
 
-When you use Endpoint DLP as a location in a properly configured DLP policy and the Edge Chromium browser, the unallowed browsers that you've defined in these settings will be prevented from accessing the sensitive items that match your DLP policy controls. Instead, users will be redirected to use Edge Chromium which, with its understanding of DLP imposed restrictions, can block or restrict activities when the conditions in the DLP policy are met.
+When you use Endpoint DLP as a location in a properly configured DLP policy and the Microsoft Edge browser, the unallowed browsers that you've defined in these settings will be prevented from accessing the sensitive items that match your DLP policy controls. Instead, users will be redirected to use Microsoft Edge which, with its understanding of DLP imposed restrictions, can block or restrict activities when the conditions in the DLP policy are met.
 
 To use this restriction, you’ll need to configure three important pieces:
 
