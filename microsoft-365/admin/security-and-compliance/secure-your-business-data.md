@@ -57,20 +57,20 @@ Microsoft recommends that you complete the tasks listed in the following table t
 
 If you have Microsoft Business Premium, the quickest way to setup security and begin collaborating safely is to follow the guidance in this library: [Microsoft 365 for smaller businesses and campaigns](../../campaigns/index.md). This guidance was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyberthreats launched by sophisticated hackers.
 
-Before you begin, check your [Microsoft 365 Secure Score](../../security/defender/microsoft-secure-score.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. With additional insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting about your organization's security health.
+Before you begin, check your [Microsoft 365 Secure Score](../../security/defender/microsoft-secure-score.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. With added insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting about your organization's security health.
 
 ![Screenshot of Microsoft Secure Score.](../../media/secure-score.png)
 
 ## 1: Set up multifactor authentication
 
-Using multifactor authentication is one of the easiest and most effective ways to increase the security of your organization. It's easier than it sounds - when you log in, multifactor authentication means you'll type a code from your phone to get access to Microsoft 365. This can prevent hackers from taking over if they know your password. Multifactor authentication is also called 2-step verification. Individuals can add 2-step verification to most accounts easily, for example, to their Google or Microsoft accounts. Here's how to [add two-step verification to your personal Microsoft account](https://go.microsoft.com/fwlink/p/?linkid=2016403).
+Using multifactor authentication is one of the easiest and most effective ways to increase the security of your organization. It's easier than it sounds - when you log in, multifactor authentication means you'll type a code from your phone to get access to Microsoft 365. This extra step can prevent hackers from taking over if they know your password. Multifactor authentication is also called 2-step verification. Individuals can add 2-step verification to most accounts easily, for example, to their Google or Microsoft accounts. Here's how to [add two-step verification to your personal Microsoft account](https://go.microsoft.com/fwlink/p/?linkid=2016403).
 
 For businesses using Microsoft 365, add a setting that requires your users to log in using multifactor authentication. When you make this change, users will be prompted to set up their phone for two-factor authentication next time they log in.
 To see a training video for how to set up MFA and how users complete the set up, see [set up MFA](set-up-multi-factor-authentication.md) and [user set up](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
 
 To set up multifactor authentication, you turn on Security defaults:
 
-For most organizations, Security defaults offer a good level of additional sign-in security. For more information, see [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+For most organizations, Security defaults offer a good level of added sign-in security. For more information, see [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 If your subscription is new, Security defaults might already be turned on for you automatically.
 
@@ -78,7 +78,7 @@ You enable or disable security defaults from the **Properties** pane for Azure A
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with global admin credentials.
 2. In the left nav choose **Show All** and under **Admin centers**, choose **Azure Active Directory**.
-3. In the **Azure Active Directory admin center** choose **Azure Active Directory** > **Properties**.
+3. In the **Azure Active Directory admin center**, choose **Azure Active Directory** > **Properties**.
 4. At the bottom of the page, choose **Manage Security defaults**.
 5. Choose **Yes** to enable security defaults or **No** to disable security defaults, and then choose **Save**.
 
@@ -90,7 +90,7 @@ For full details and complete recommendations, see [Set up multifactor authentic
 
 The Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598) provides excellent guidance on establishing a strong culture of security awareness within your organization, including training users to identify phishing attacks.
 
-In addition to this guidance, Microsoft recommends that your users take the actions described in this article: [Protect your account and devices from hackers and malware](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6). These actions include:
+In addition, Microsoft recommends that your users take the actions described in this article: [Protect your account and devices from hackers and malware](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6). These actions include:
 
 - Using strong passwords
 
@@ -138,7 +138,7 @@ You can protect against ransomware by creating one or more mail flow rules to bl
 
 - Warn users before opening Office file attachments that include macros. Ransomware can be hidden inside macros, so we'll warn users to not open these files from people they do not know.
 
-- Block file types that could contain ransomware or other malicious code. We'll start with a common list of executables (listed in the table below). If your organization uses any of these executable types and you expect these to be sent in email, add these to the previous rule (warn users).
+- Block file types that could contain ransomware or other malicious code. We'll start with a common list of executables (listed in the table below). If your organization uses any of these executable types and you expect them to be sent in email, add them to the previous rule (warn users).
 
 To create a mail transport rule, view a [short training video](increase-threat-protection.md#protect-against-ransomware), or complete the following steps:
 
@@ -150,7 +150,7 @@ To create a mail transport rule, view a [short training video](increase-threat-p
 
 4. Select **** at the bottom of the dialog box to see the full set of options.
 
-5. Apply the settings in the following table for each rule. Leave the rest of the settings at the default, unless you want to change these.
+5. Apply the settings in the following table for each rule. Leave the rest of the settings at the default, unless you want to change them.
 
 6. Select **Save**.
     
@@ -173,7 +173,7 @@ For more information, see:
 
 ## 6: Stop auto-forwarding for email
 
-Hackers who gain access to a user's mailbox can exfiltrate mail by configuring the mailbox to automatically forward email. This can happen even without the user's awareness. You can prevent this from happening by configuring a mail flow rule.
+Hackers who gain access to a user's mailbox can exfiltrate mail by configuring the mailbox to automatically forward email. This issue can happen even without the user's awareness. You can prevent this from happening by configuring a mail flow rule.
 
 To create a mail transport rule:
 
@@ -191,7 +191,7 @@ To create a mail transport rule:
 
 |Setting|Reject Auto-Forward emails to external domains|
 |---|---|
-|Name|Prevent auto forwarding of email to external domains|
+|Name|Prevent auto-forwarding of email to external domains|
 |Apply this rule if ...|The sender . . . is external/internal . . . Inside the organization|
 |Add condition|The recipient . . . is external/internal . . . Outside the organization|
 |Add condition|The message properties . . . include the message type . . . Auto-forward|
@@ -208,7 +208,7 @@ Office Message Encryption provides two protection options when sending mail:
 
 - Encrypt
 
-Your organization might have configured additional options that apply a label to email, such as Confidential.
+Your organization might have configured other options that apply a label to email, such as Confidential.
 
 ### To send protected email
 
