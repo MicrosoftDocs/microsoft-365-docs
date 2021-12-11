@@ -190,8 +190,7 @@ International call charges apply
 **Phone number:**
 
 1 800 751 3455\
-Select option 4\
-Enter code 7007
+Select "Business", then select "Microsoft 365"
    :::column-end:::
    :::column:::
 **Billing support hours:**
@@ -658,9 +657,7 @@ International call charges apply
 **Phone number:**
 
 +965 2243 1071\
-Select option 2\
-Select option 9\
-Enter code 7701
+Select "Business", then select "Microsoft 365"
 
 **Billing support hours:**
 
@@ -761,7 +758,7 @@ International call charges apply
 **Phone number:**
 
 +92 21 111 674 357\
-Select option 3
+Select "Business", then select "Microsoft 365"
 
 **Billing support hours:**
 
