@@ -23,9 +23,9 @@ The Windows and Office 365 deployment lab kit is designed to help you plan, test
 
 This kit is highly recommended for organizations preparing for Windows 8.1 upgrades to Windows 10. It also applies if you're currently using Windows 10, Microsoft 365 Apps for enterprise (formerly Office 365 ProPlus), or Office 2019. As an isolated environment, the resulting lab is ideal for exploring deployment tool updates and testing your deployment-related automation.
 
-## Windows 10 and Windows 11 versions of the lab kit are now available for free download in the Microsoft Evaluation Center. 
+**Windows 10 and Windows 11 versions of the lab kit are now available for free download in the Microsoft Evaluation Center.**
 
-[Download the Windows 10 and Office 365 deployment lab kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
+[Download the Windows 10 and Office 365 deployment lab kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit)<br>
 [Download the Windows 11 and Office 365 deployment lab kit](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
 
 ## A complete lab environment
@@ -34,7 +34,7 @@ The lab provides you with an automatically provisioned virtual lab environment, 
 
 - Windows 10 Enterprise, Version 21H1 or Windows 11 Enterprise
 - Windows 7 Enterprise
-- NEW! Microsoft Endpoint Configuration Manager, Version 2103
+- Microsoft Endpoint Configuration Manager, Version 2103
 - Windows Assessment and Deployment Kit for Windows 10
 - Microsoft Deployment Toolkit
 - Microsoft Application Virtualization (App-V)
@@ -98,7 +98,8 @@ Note: The Windows 11 version of the lab include the Windows 10, version 21H1 lab
 
 - Prepare, deploy, optimize
 
-[Download the Windows 10 and Office 365 deployment lab kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
+## Download the lab
+[Download the Windows 10 and Office 365 deployment lab kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit)<br>
 [Download the Windows 11 and Office 365 deployment lab kit](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
 
 > [!NOTE]

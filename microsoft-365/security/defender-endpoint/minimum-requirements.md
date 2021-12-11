@@ -44,7 +44,9 @@ Microsoft Defender for Endpoint requires one of the following Microsoft volume l
 - Windows 10 Enterprise E5
 - Windows 10 Education A5
 - Microsoft 365 E5 (M365 E5) which includes Windows 10 Enterprise E5 or Windows 11 Enterprise E5
-- Microsoft 365 A5 (M365 A5)
+- Microsoft 365 A5 (M365 A5) 
+- Microsoft 365 E3 (M365 E3) with Enterprise Mobility + Security E5 Add-on
+- Microsoft 365 Business Premium when purchased from a [Microsoft Cloud Solution Provider](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider)
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 Security
 - Microsoft Defender for Endpoint
@@ -99,7 +101,7 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows server
-  - Windows Server 2008 R2 SP1
+  - Windows Server 2008 R2 SP1 ([Requires ESU for support](/windows-server/get-started/extended-security-updates-deploy))
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server, version 1803 or later
@@ -110,6 +112,8 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
 Devices on your network must be running one of these editions.
 
 The hardware requirements for Defender for Endpoint on devices are the same for the supported editions.
+
+For more information on supported versions of Windows 10, see (/windows/release-health/release-information).
 
 > [!NOTE]
 > Machines running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.

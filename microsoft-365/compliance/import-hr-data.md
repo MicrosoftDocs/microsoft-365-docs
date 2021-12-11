@@ -39,27 +39,31 @@ Setting up a connector for HR data that insider risk management policies can use
 
 The first step is to create a CSV file that contains the HR data that the connector will import to Microsoft 365. This data will be used by the insider risk solution to generate potential risk indicators. Data for the following HR scenarios can be imported to Microsoft 365:
 
-- Employee resignation. Information about users who have left your organization.
+- Employee resignation. Information about employees who have left your organization.
 
-- Job level changes. Information about job level changes for users, such as promotions and demotions.
+- Job level changes. Information about job level changes for employees, such as promotions and demotions.
 
-- Performance reviews. Information about user performance.
+- Performance reviews. Information about employee performance.
 
-- Performance improvement plans. Information about performance improvement plans for users.
+- Performance improvement plans. Information about performance improvement plans for employees.
+
+- Employee profile (preview). General information about an employee.
 
 The type of HR data to import depends on the insider risk management policy and corresponding policy template that you want to implement. The following table shows which HR data type is required for each policy template:
 
 |  Policy template |  HR data type |
-|:-----------------------------------------------|:---------------------------------------------------------------------|
-| Data theft by departing users                   | Employee resignations                                                 |
-| General data leaks                              | Not applicable                                                        |
-| Data leaks by priority users                    | Not applicable                                                        |
-| Data leaks by disgruntled users                 | Job level changes, Performance reviews, Performance improvement plans |
-| General security policy violations              | Not applicable                                                        |
-| Security policy violations by departing users   | Employee resignations                                                 |
-| Security policy violations by priority users    | Not applicable                                                        |
-| Security policy violations by disgruntled users | Job level changes, Performance reviews, Performance improvement plans |
-| Offensive language in email                     | Not applicable                                                        |
+|:------------------------------|:--------------------------------|
+| Data theft by departing users | Employee resignations|
+| General data leaks                             | Not applicable|
+| Data leaks by priority users                   | Not applicable |
+| Data leaks by disgruntled users                | Job level changes, Performance reviews, Performance improvement plans|
+| General security policy violations             | Not applicable |
+| Security policy violations by departing users  | Employee resignations|
+| Security policy violations by priority users   | Not applicable|
+| Security policy violations by disgruntled users| Job level changes, Performance reviews, Performance improvement plans |
+| Offensive language in email                    | Not applicable |
+| Healthcare policy| Employee profile |
+|||
 
 For more information about policy templates for insider risk management, see [Insider risk management policies](insider-risk-management-policies.md#policy-templates).
 
@@ -70,7 +74,7 @@ After you create the CSV file with the required HR data, store it on the local c
 > [!IMPORTANT]
 > The column names described in the following sections are not required parameters, but only examples. You can use any column name in your CSV files. However, the column names you use in a CSV file *must* be mapped to the data type when you create the HR connector in Step 3. Also note that the sample CSV files in the following sections are show in NotePad view. It's much easier to view and edit CSV files in Microsoft Excel.
 
-The follow sections describe the required CSV data for each HR scenario.
+The following sections describe the required CSV data for each HR scenario.
 
 ### CSV file for employee resignation data
 
@@ -149,8 +153,43 @@ The following table describes each column in the CSV file for performance review
 | **EmailAddress**  | Specifies the user's email address (UPN).|
 | **EffectiveDate** | Specifies the date when the user was officially informed about their performance improvement plan. You must use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
 | **Remarks**| Specifies any remarks that evaluator has provided about the performance improvement plan. This is a text parameter with a limit of 200 characters. This is an optional parameter. You don't have to include it in the CSV file. |
-| **Rating**| Specifies any rating or other information related to the performance review. performance improvement plan. This is a text parameter and can contain any free form text that your organization uses to recognize the evaluation. For example, "3 Met expectations" or "2 Below average". This is a text parameter with limit of 25 characters. This is an optional parameter. You don't have to include it in the CSV file.|
+| **Rating**| Specifies any rating or other information related to the performance review. This is a text parameter and can contain any free form text that your organization uses to recognize the evaluation. For example, "3 Met expectations" or "2 Below average". This is a text parameter with limit of 25 characters. This is an optional parameter. You don't have to include it in the CSV file.|
 |||
+
+### CSV file for employee profile data (preview)
+
+> [!NOTE]
+> The capability to create an HR connector for employee profile data is in public preview. To create an HR connector that supports employee profile data, go to the **Data connectors** page in the Microsoft 365 compliance center, select the **Connectors** tab, and then click **Add a connector** > **HR (preview)**. Follow the steps to create a connector in [Step 3: Create the HR connector](#step-3-create-the-hr-connector).
+
+Here's an example of a CSV file for the data for the employee profile data.
+
+```text
+EmailAddress,UserName,EmployeeFirstName,EmployeeLastName,EmployeeAddLine1,EmployeeAddLine2,EmployeeCity,EmployeeState,EmployeeZipCode,EmployeeDept,EmployeeType,EmployeeRole
+jackq@contoso.com,jackq,jack,qualtz,50 Oakland Ave,#206,City,Florida,32104,Orthopaedic,Regular,Nurse
+```
+
+The following table describes each column in the CSV file for employee profile data.
+
+|  Column |  Description |
+|:----------|:---------------|
+| EmailAddress<sup>*</sup>    | The user principal name (UPN) or email address of the employee.|
+| EmployeeFirstName<sup>*</sup>   | First name of the employee.|
+| EmployeeLastName<sup>*</sup>   | Last name of the employee.|
+| EmployeeAddressLine1<sup>*</sup>    | Street address of the employee.|
+| EmployeeAddressLine2   | Secondary address information, such as apartment number, for employee.|
+| EmployeeCity | City of residence for employee.|
+| EmployeeState | State of residence for employee.|
+| EmployeeZipCode<sup>*</sup>  | Zip code of residence for employee. |
+| EmployeeCountry| Country of residence for employee.|
+| EmployeeDepartment | Employee's department in the organization.|
+| EmployeeType |Employment type for employee, such as Regular, Exempt, or Contractor.|
+| EmployeeRole |Employees's role, designation, or job title in the organization.|
+|||
+
+> [!NOTE]
+> <sup>*</sup> This column is mandatory. If a mandatory column is missing, the CSV file won't be validated and other data in the file won't be imported.
+
+We recommend that you create an HR connector that only imports employee profile data. For this connector, be sure to frequently refresh the employee profile data, preferably in every 15 to 20 days. Employee profile records will be deleted if they aren't updated in the past 30 days.
 
 ### Determining how many CSV files to use for HR data
 
@@ -170,7 +209,7 @@ Here are requirements for configuring a CSV file with multiple data types:
 
 - You have to add the required columns (and optional if you use them) for each data type and the corresponding column name in the header row. If a data type doesn't correspond to a column, you can leave the value blank.
 
-- To use a CSV file with multiple types of HR data, the HR connector needs to know which rows in the CSV file contain which type HR data. This is accomplished by adding an additional **HRScenario** column to the CSV file. The values in this column identify the type of HR data in each row. For example, values that correspond to the four HR scenarios could be \`Resignation\`, \`Job level change\`, \`Performance review\`, and \`Performance improvement plan\`.
+- To use a CSV file with multiple types of HR data, the HR connector needs to know which rows in the CSV file contain which type HR data. This is accomplished by adding an additional **HRScenario** column to the CSV file. The values in this column identify the type of HR data in each row. For example, values that correspond to the four HR scenarios could be \`Resignation\`, \`Job level change\`, \`Performance review\`, \`Performance improvement plan\`, and \`Employee profile\`.
 
 - If you have multiple CSV files that contain an HRScenario** column, be sure that each file uses the same column name and the same values that identify the specific HR scenarios.
 
@@ -223,11 +262,13 @@ After you complete this step, be sure to copy the job ID that's generated when y
 
    1. Type or paste the Azure AD application ID for the Azure app that you created in Step 2.
 
-   1. Type a name for the HR connector.
+   2. Type a name for the HR connector.
 
-5. On the HR scenarios page, select one or more HR scenarios that you want to import data for, and then click **Next**.
+5. On the HR scenarios page, select one or more HR scenarios that you want to import data for and then click **Next**.
 
-6. On the file mapping method page, select one of the following options and then click **Next**.
+   ![Select one or more HR scenarios.](../media/HRConnectorScenarios.png)
+
+6. On the file mapping method page, select a file type if necessary, and then select one of the following options and then click **Next**.
 
    - **Upload a sample file**. If you select this option, click **Upload sample file** to upload the CSV file that you prepared in Step 1. This option allows you to quickly select column names in your CSV file from a drop-down list to map them to the data types for the HR scenarios that you previously selected.
 
