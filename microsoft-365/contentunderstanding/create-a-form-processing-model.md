@@ -130,7 +130,9 @@ You need to tag the documents to teach the model to understand the fields and ta
 
     ![Done.](../media/content-understanding/doc-lib-done.png) 
 
-There are two flows available to process a selected file or batch of files in a library where a form processing model has been applied.
+### Use flows to extract information
+
+Two flows are available to process a selected file or batch of files in a library where a form processing model has been applied.
 
 - **Extract info from an image or PDF file with a form processing model** — Use to extract text from a selected image or PDF file by running a form processing model. Supports a single selected file at a time, and supports only PDF files and image files (PNG, JPG, and JPEG). To run the flow, select a file, and then select **Automate** > **Extract info**.
 
