@@ -136,7 +136,14 @@ There are two flows available to process a selected file or batch of files in a 
 
     ![Screenshot showing the Automate menu with Extract info highlighted.](../media/content-understanding/automate-extract-info.png)  
 
-- **Extract info from files with a form processing model** — Use with form processing models to read and extract information from a batch of files. Processes up to 5,000 SharePoint files at a time.
+- **Extract info from files with a form processing model** — Use with form processing models to read and extract information from a batch of files. Processes up to 5,000 SharePoint files at a time. When you run this flow, there are certain parameters you can set. You can:
+
+    - Choose whether to include previously processed files (the default is not to include previously processed files)
+    - Select the number of files to process (the default is 100 files)
+    - Specify the order in which to process the files (choices are by file ID, file name, file created time, or last modified time)
+    - Specify how you want the order sorted (ascending or descending order)
+
+    ![Screenshot showing the Run flow panel with parameter options highlighted.](../media/content-understanding/run-flow-panel.png)  
 
 ### Classification Date field
 
