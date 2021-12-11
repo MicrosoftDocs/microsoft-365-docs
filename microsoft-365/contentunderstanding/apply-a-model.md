@@ -97,6 +97,14 @@ The **When a file is classified by a content understanding model** trigger can t
 
 When a model is stamped with the **Classification Date**, you can use the **Send an email after SharePoint Syntex processes a file** flow to notify users that a new file has been processed and classified by a model in the SharePoint document library.
 
+To run the flow:
+
+1. Select a file, and then select **Integrate** > **Power Automate** > **Create a flow**.
+
+2. On the **Create a flow** panel, select **Send an email after SharePoint Syntex processes a file**.
+
+    ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
+
 ## See Also
 
 [Create a classifier](create-a-classifier.md)
