@@ -306,7 +306,7 @@ Unencrypted Office documents that are attached to the email automatically inheri
 
 In Word, PowerPoint, and Excel, when a user applies a sensitivity label that lets them assign permissions to a document, they are prompted to specify their choice of users and permissions when the encryption is applied.
 
-For example, with the Azure Information Protection unified labeling client, users can:
+For example, with the Azure Information Protection unified labeling client, unless [co-authoring is enabled](sensitivity-labels-coauthoring.md), users can:
 
 - Select a permission level, such as Viewer (which assigns View Only permission) or Co-Author (which assigns View, Edit, Copy, and Print permissions).
 - Select users, groups, or organizations. This can include people both inside or outside your organizations.
@@ -314,11 +314,14 @@ For example, with the Azure Information Protection unified labeling client, user
 
 ![Options for user to protect with custom permissions.](../media/sensitivity-aip-custom-permissions-dialog.png)
 
-For built-in labeling, users see the same dialog box if they select the following:
+For built-in labeling, and for the Azure Information Protection unified labeling client when [co-authoring is enabled](sensitivity-labels-coauthoring.md), users see the same dialog box if they select the following:
 
 - Windows: **File** tab > **Info** > **Protect Document** > **Restrict Access** > **Restricted Access**
 
 - macOS: **Review** tab > **Protection** > **Permissions** > **Restricted Access**
+
+> [!TIP]
+> If users were familiar with configuring custom permissions with the Azure Information Protection unified labeling client before [co-authoring was enabled](sensitivity-labels-coauthoring.md), you might find it helpful to review the mapping of permission levels to individual usage rights: [Rights included in permissions levels](/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels).
 
 ## Example configurations for the encryption settings
 
