@@ -314,7 +314,7 @@ For example, with the Azure Information Protection unified labeling client, unle
 
 ![Options for user to protect with custom permissions.](../media/sensitivity-aip-custom-permissions-dialog.png)
 
-For built-in labeling, and for the Azure Information Protection unified labeling client when [co-authoring is enabled](sensitivity-labels-coauthoring.md), users see the same dialog box if they select the following:
+For built-in labeling, and for the Azure Information Protection unified labeling client when [co-authoring is enabled](sensitivity-labels-coauthoring.md), users see the same dialog box as if they selected the following:
 
 - Windows: **File** tab > **Info** > **Protect Document** > **Restrict Access** > **Restricted Access**
 
