@@ -59,7 +59,7 @@ If you're familiar with the Microsoft Defender Security Center, this article hel
 
 Historically, the [Microsoft Defender Security Center](/windows/security/threat-protection/microsoft-defender-atp/portal-overview) has been the home for Microsoft Defender for Endpoint. Enterprise security teams have used it to monitor and help responding to alerts of potential advanced persistent threat activity or data breaches. To help reduce the number of portals, Microsoft 365 Defender will be the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure.
 
-Microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting access to managed security service providers (MSSPs)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same way [access is granted in the Microsoft Defender security center](mssp-access.md).
+Microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting access to managed security service providers (MSSPs)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same way [access is granted in the Microsoft Defender Security Center](mssp-access.md).
 
 > [!IMPORTANT]
 > What you see in Microsoft 365 Defender depends on your current subscriptions. For example, if you don't have a license for Microsoft Defender for Office 365, then the Email & Collaboration section will not be shown.
@@ -101,7 +101,7 @@ This table is a quick reference of the changes between the Microsoft Defender Se
 | Configuration management   |  No changes.  |
 
 > [!NOTE]
-> **Automatic investigation and remediation** is now a part of  incidents. You can see Automated  investigation and remediation events in the **Incident > Investigation** tab.
+> **Automatic investigation and remediation** is now a part of  incidents. You can see Automated  investigation and remediation events in the **Incident > Investigation** tab.
 
 > [!TIP]
 > Device search is done from Endpoints > Search.
@@ -116,7 +116,7 @@ This table is a quick reference of the changes between the Microsoft Defender Se
 
 ## Microsoft 365 security navigation and capabilities
 
-The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in this security center.
+The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in Microsoft 365 Defender portal. 
 
 ### Incidents and alerts
 

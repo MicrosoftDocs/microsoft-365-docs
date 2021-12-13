@@ -5,7 +5,8 @@ author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires, toresing
 audience: admin
-ms.topic: article
+ms.topic: landing-page
+ms.custom: intro-hub-or-landing
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
@@ -50,7 +51,7 @@ The resources in this section help you learn more about the two methods of data 
 
 ## Adoption
 
-Learn more about how to use and implement SharePoint Syntex in your organization to help you solve your business problems: 
+Learn more about how to use and implement SharePoint Syntex in your organization to help you solve your business problems.
 
 | If you're looking for this information: | Go to this resource: |
 |:-----|:-----|

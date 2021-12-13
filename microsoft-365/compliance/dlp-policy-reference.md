@@ -39,15 +39,15 @@ updated: 06/23/2021
 
 |Category| Template | SIT |
 |---------|---------|---------|
-|Financial| Australia Financial Data| -	[SWIFT code](sensitive-information-type-entity-definitions.md#swift-code) </br> - [Australia tax file number](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Australia bank account number](sensitive-information-type-entity-definitions.md#australia-bank-account-number) </br> - [Credit card number](sensitive-information-type-entity-definitions.md#credit-card-number)|
-|Financial| Canada Financial data |- [Credit card number](sensitive-information-type-entity-definitions.md#credit-card-number) </br> -	[Canada bank account number](sensitive-information-type-entity-definitions.md#canada-bank-account-number)|
+|Financial| Australia Financial Data| - [SWIFT code](sensitive-information-type-entity-definitions.md#swift-code) </br> - [Australia tax file number](sensitive-information-type-entity-definitions.md#australia-tax-file-number) </br> - [Australia bank account number](sensitive-information-type-entity-definitions.md#australia-bank-account-number) </br> - [Credit card number](sensitive-information-type-entity-definitions.md#credit-card-number)|
+|Financial| Canada Financial data |- [Credit card number](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [Canada bank account number](sensitive-information-type-entity-definitions.md#canada-bank-account-number)|
 |Financial| France Financial data |- [Credit card number](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [EU debit card number](sensitive-information-type-entity-definitions.md#eu-debit-card-number)|
 |Financial| Germany Financial Data |- [Credit card number](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [EU debit card number](sensitive-information-type-entity-definitions.md#eu-debit-card-number)|
 |Financial| Israel Financial Data |- [Israel bank account number](sensitive-information-type-entity-definitions.md#israel-bank-account-number) </br> - [SWIFT code](sensitive-information-type-entity-definitions.md#swift-code) </br> - [Credit card number](sensitive-information-type-entity-definitions.md#credit-card-number)|
 |Financial| Japan Financial Data |- [Japan bank account number](sensitive-information-type-entity-definitions.md#japan-bank-account-number) </br> - [Credit card number](sensitive-information-type-entity-definitions.md#credit-card-number)|
 |Financial| PCI Data Security Standard (PCI DSS)|- [Credit card number](sensitive-information-type-entity-definitions.md#credit-card-number)|
 |Financial| Saudi Arabia Anti-Cyber Crime Law|- [SWIFT code](sensitive-information-type-entity-definitions.md#swift-code) </br> - [International banking account number (IBAN)](sensitive-information-type-entity-definitions.md#international-banking-account-number-iban) |
-|Financial| Saudi Arabia Financial Data	|- [Credit card number](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [SWIFT code](sensitive-information-type-entity-definitions.md#swift-code) </br> - [International banking account number (IBAN)](sensitive-information-type-entity-definitions.md#international-banking-account-number-iban)|
+|Financial| Saudi Arabia Financial Data |- [Credit card number](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [SWIFT code](sensitive-information-type-entity-definitions.md#swift-code) </br> - [International banking account number (IBAN)](sensitive-information-type-entity-definitions.md#international-banking-account-number-iban)|
 |Financial| UK Financial Data|- [Credit card number](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [EU debit card number](sensitive-information-type-entity-definitions.md#eu-debit-card-number) </br> - [SWIFT code](sensitive-information-type-entity-definitions.md#swift-code)|
 |Financial| US Financial Data|- [Credit card number](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [U.S. bank account number](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [ABA Routing Number](sensitive-information-type-entity-definitions.md#aba-routing-number)|
 |Financial| U.S. Federal Trade Commission (FTC) Consumer Rules|- [Credit card number](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [U.S. bank account number](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [ABA Routing Number](sensitive-information-type-entity-definitions.md#aba-routing-number)|
@@ -95,14 +95,13 @@ updated: 06/23/2021
 
 A DLP policy can find and protect items that contain sensitive information across multiple locations.
 
-
 |Location  |Include/Exclude scope  |Data state  |Additional pre-requisites |
 |---------|---------|---------|---------|
 |Exchange email online |distribution group | data-in-motion| No |
 |SharePoint online sites   |sites       | data-at-rest </br> data-in-use | No|
 |OneDrive for Business accounts| account or distribution group |data-at-rest </br> data-in-use|No|
 |Teams chat and channel messages     | account or distribution group |data-in-motion </br> data-in-use |  No       |
-|Microsoft Cloud App Security (MCAS)   | cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
+|Microsoft Defender for Cloud Apps   | cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
 |Devices  |user or group         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
 |On-premises repositories (file shares and SharePoint)    |repository         | data-at-rest         | - [Learn about the Microsoft 365 data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
 
@@ -117,17 +116,17 @@ If you choose to include or exclude specific OneDrive accounts or groups, a DLP 
 DLP policies detect sensitive items by matching them to a sensitive information type (SIT), or to a sensitivity label, or a retention label. Each location supports different methods of defining sensitive content. When you combine locations in a policy, how the content can be defined can change from how it can be defined by a single location. 
 
 > [!IMPORTANT]
-> When you select multiple locations for a policy, a "no" value for a content definition category takes precedence over "yes" value. For example, when you select SharePoint sites only, the policy will support detecting sensitive items by one or more of SIT, by sensitivity label, or by retention label. But, when you select SharePoint sites ***and*** Teams chat and channel messages locations, the policy will only support detecting sensitive items by SIT. 
+> When you select multiple locations for a policy, a "no" value for a content definition category takes precedence over "yes" value. For example, when you select SharePoint sites only, the policy will support detecting sensitive items by one or more of SIT, by sensitivity label, or by retention label. But, when you select SharePoint sites ***and*** Teams chat and channel messages locations, the policy will only support detecting sensitive items by SIT.
 
-|Location|	Content can be defined by SIT|	Content can be defined sensitivity label|	Content can be defined by retention label|
+|Location| Content can be defined by SIT| Content can be defined sensitivity label| Content can be defined by retention label|
 |---------|---------|---------|---------|
-|Exchange email online|Yes|	Yes|	No|
-|SharePoint online sites|	Yes|	Yes|	Yes|
-|OneDrive for Business accounts|	Yes|	Yes|	Yes|
-|Teams Chat and Channel messages |	Yes|	No|	No|
-|Devices	|Yes |	Yes| 	No|
-|Microsoft Cloud App Security|	Yes|	Yes|	Yes|
-|On-Premises repositories|	Yes|	Yes|	No|
+|Exchange email online|Yes| Yes| No|
+|SharePoint online sites| Yes| Yes| Yes|
+|OneDrive for Business accounts| Yes| Yes| Yes|
+|Teams Chat and Channel messages | Yes| No| No|
+|Devices |Yes | Yes|  No|
+|Microsoft Defender for Cloud Apps | Yes| Yes| Yes|
+|On-Premises repositories| Yes| Yes| No|
 
 > [!NOTE]
 > DLP supports detecting sensitivity labels on emails and attachemnets See, [Use sensitivity labels as conditions in DLP policies](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
@@ -156,15 +155,17 @@ Rules are the business logic of DLP policies. They consist of:
 
 ### The priority by which rules are processed
 
-Each rule is assigned a priority in the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on. 
+#### Hosted service workloads
+
+For the hosted service workloads, like Exchange Online, SharePoint Online and OneDrive for Business, each rule is assigned a priority in the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on. 
   
 ![Rules in priority order](../media/dlp-rules-in-priority-order.png)
 
-When content is evaluated against rules, the rules are processed in priority order. If content matches multiple rules, the first rule evaluated that has the most restrictive action is enforced. For example, if content matches all of the following rules, Rule 3 is enforced because it's the highest priority, most restrictive rule:
+When content is evaluated against rules, the rules are processed in priority order. If content matches multiple rules, the first rule evaluated that has the *most* restrictive action is enforced. For example, if content matches all of the following rules, *Rule 3* is enforced because it's the highest priority, most restrictive rule:
   
 - Rule 1: only notifies users
 - Rule 2: notifies users, restricts access, and allows user overrides
-- Rule 3: notifies users, restricts access, and does not allow user overrides
+- *Rule 3: notifies users, restricts access, and does not allow user overrides*
 - Rule 4: restricts access
 
 Rules 1, 2, and 4 would be evaluated, but not applied. In this example, matches for all of the rules are recorded in the audit logs and shown in the DLP reports, even though only the most restrictive rule is applied.
@@ -174,6 +175,21 @@ You can use a rule to meet a specific protection requirement, and then use a DLP
 For example, you might have a DLP policy that helps you detect the presence of information subject to the Health Insurance Portability and Accountability Act (HIPAA). This DLP policy could help protect HIPAA data (the what) across all SharePoint Online sites and all OneDrive for Business sites (the where) by finding any document containing this sensitive information that's shared with people outside your organization (the conditions) and then blocking access to the document and sending a notification (the actions). These requirements are stored as individual rules and grouped together as a DLP policy to simplify management and reporting.
   
 ![Diagram shows that DLP policy contains locations and rules](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
+
+#### For endpoints
+
+Priority for rules on endpoints is also assigned according to the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on. 
+
+When a file on an endpoint matches multiple DLP policies, the first rule that's enabled with restrictions is the one that gets enforced on the content. For example, if content matches all of the following rules, *Rule 2 is enforced because it's the highest priority rule that's configured with a restriction*.
+  
+- Rule 1: only notifies users
+- *Rule 2: notifies users, restricts access, and allows user overrides*
+- Rule 3: notifies users, restricts access, and does not allow user overrides
+- Rule 4: restricts access
+
+Rules 1, 3, and 4 would be evaluated, but not applied. In this example, matches for all of the rules are recorded in the audit logs and shown in the DLP reports, even though only the first rule with a restriction is applied.
+
+For rules that are applied to endpoints, you can take advantage of the ability to re-order the rule priority to make sure the restrictions you want applied are applied.
 
 ### Conditions
 
@@ -270,7 +286,7 @@ The available context options change depending on which location you choose. If 
 - Content contains
 - See, [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
-##### Conditions Microsoft Cloud App Security support
+##### Conditions Microsoft Defender for Cloud Apps support
 
 - Content contains
 - Content is shared from Microsoft 365
@@ -370,7 +386,7 @@ The actions that are available in a rule are dependent on the locations that hav
 
 The devices location provides many subactivities (conditions) and actions. To learn more, see [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on). 
 
-#### Microsoft Cloud App Security:
+#### Microsoft Defender for Cloud Apps:
 
 - Restrict access or encrypt the content in Microsoft 365 locations
 - Restrict Third Party Apps
@@ -406,7 +422,7 @@ For example, if you select Exchange and Devices as locations, these actions will
 - Restrict access or encrypt the content in Microsoft 365 locations
 - Audit or restrict activities on Windows devices
 
-If you select Devices and Microsoft Cloud App Security, these actions will be available:
+If you select Devices and Microsoft Defender for Cloud Apps, these actions will be available:
 
 - Restrict access or encrypt the content in Microsoft 365 locations
 - Audit or restrict activities on Windows devices
@@ -429,9 +445,9 @@ for where they are used/expected behavior-->
 
 <!--You can use notifications and overrides to educate your users about DLP policies and help them remain compliant without blocking their work. For example, if a user tries to share a document containing sensitive information, a DLP policy can both send them an email notification and show them a policy tip in the context of the document library that allows them to override the policy if they have a business justification.-->
 
-When a user attempts an action on a sensitive item in a context that meets the conditions and exceptions of a rule, you can let them know about it through user notification emails and in context policy tip popups. These notifications are useful because they increase awareness and help educate people about your organization's DLP policies. 
+When a user attempts an action on a sensitive item in a context that meets the conditions and exceptions of a rule, you can let them know about it through user notification emails and in context policy tip popups. These notifications are useful because they increase awareness and help educate people about your organization's DLP policies.
 
-For example, content like an Excel workbook on a OneDrive for Business site that contains personally identifiable information (PII) and is shared with an guest.
+For example, content like an Excel workbook on a OneDrive for Business site that contains personally identifiable information (PII) and is shared with a guest.
 
 ![Message bar shows policy tip in Excel 2016](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
@@ -446,7 +462,7 @@ The user notifications and policy tips configuration options vary depending on t
 - SharePoint
 - OneDrive
 - Teams Chat and Channel
-- MCAS
+- Defender for Cloud Apps
 
 
 You can enable/disable user notifications for various Microsoft apps, see [Data Loss Prevention policy tips reference](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
@@ -458,9 +474,9 @@ You can enable/disable user notifications for various Microsoft apps, see [Data 
 
 and customize the email text, subject, and the policy tip text.
 
-![User notification and policy tip configuration options that are available for Exchange, SharePoint, OneDrive, Teams Chat and Channel, and MCAS](../media/dlp-user-notification-non-devices.png)
+![User notification and policy tip configuration options that are available for Exchange, SharePoint, OneDrive, Teams Chat and Channel, and Defender for Cloud Apps](../media/dlp-user-notification-non-devices.png)
 
-If you selected Devices only, you will get all the same options that are available for Exchange, SharePoint, OneDrive, Teams Chat and Channel and MCAS plus the option to customize the notification title and content that appears on the Windows 10 device.
+If you selected Devices only, you will get all the same options that are available for Exchange, SharePoint, OneDrive, Teams Chat and Channel and Defender for Cloud Apps plus the option to customize the notification title and content that appears on the Windows 10 device.
 
 ![User notification and policy tip configuration options that are available for Devices](../media/dlp-user-notification-devices.png)  
 

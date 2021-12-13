@@ -34,6 +34,9 @@ This premium assessment trial is available to organizations using Compliance Man
 
 Full access to Compliance Manager features may depend on your licensing agreement for Compliance Manager. To learn more about the free compliance trial that includes Compliance Manager, see [About the free trial for Microsoft 365 compliance](compliance-easy-trials.md).
 
+> [!NOTE]
+> Check your Microsoft 365 admin center settings to facilitate enrollment in the trial. In the Microsoft 365 admin center, go to the **Settings > Org settings > Services** page, and select **User owned apps and services**. Then check the box to let users start trials on behalf of your organization. When setup finishes in about two minutes, you can go back and uncheck the box to disable this setting. You can also start the trial without adjusting your org settings by going to the **Billing > Purchase services** page and searching for the Compliance Manager premium assessment trial.
+
 ## Template licensing
 
 Starting your one-time trial for premium assessments gives you the right to use 25 premium templates of your choice for free for 90 days. You can create as many assessments as you wish using these 25 templates.

@@ -35,7 +35,7 @@ In alignment with Microsoft's cross-domain approach to threat protection with SI
 This guide explains how to route accounts to Microsoft 365 Defender by enabling automatic redirection from the former Microsoft Defender for Endpoint portal (securitycenter.windows.com or securitycenter.microsoft.com), to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
 
 > [!NOTE]
-> Microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting access to managed security service providers (MSSPs)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same that way access is [granted in the Microsoft Defender security center](./mssp-access.md).
+> Microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting access to managed security service providers (MSSPs)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same that way access is [granted in the Microsoft Defender Security Center](./mssp-access.md).
 
 ## What to expect
 
@@ -63,8 +63,8 @@ Refer to the table below for more on links and routing.
 |---------|---------|---------|
 | Alert page | Alert page in securitycenter.windows.com | Alert page in security.microsoft.com |
 | Incident page |Incident page in securitycenter.windows.com | Incident page in security.microsoft.com |
-| Alert page in security center portal | Alert page in security.microsoft.com | Alert page in security.microsoft.com |
-| Incident page in security center portal | Incident page in security.microsoft.com | Incident page in security.microsoft.com |
+| Alert page in Defender for Cloud portal | Alert page in security.microsoft.com | Alert page in security.microsoft.com |
+| Incident page in Defender for Cloud portal | Incident page in security.microsoft.com | Incident page in security.microsoft.com |
 
 ## When does this take effect?
 

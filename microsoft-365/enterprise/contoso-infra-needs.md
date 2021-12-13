@@ -117,10 +117,10 @@ The Contoso IT department determined the following mapping of business needs to 
 |  | Improve productivity for remote and mobile workers | Microsoft 365 workloads and cloud-based data |
 |  | Increase creativity and innovation | Windows Ink, Cortana at Work, PowerPoint |
 | Security |  |  |
-|  | Identity & access management | Dedicated global administrator accounts with Azure AD Multi-Factor Authentication (MFA) and Azure AD Privileged Identity Management (PIM) <BR> MFA for all user accounts <BR> Conditional Access <BR> Security Reader <BR> Windows Hello <BR> Windows Credential Guard |
-|  | Threat protection | Advanced Threat Analytics <BR> Windows Defender <BR> Defender for Office 365 <BR> Microsoft Defender for Office 365 <BR> Microsoft 365 threat investigation and response <BR> |
-|  | Information protection | Azure Information Protection <BR> Data Loss Prevention (DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
-|  | Security management | Azure Defender  <BR> Windows Defender Security Center |
+|  | Identity & access management | Dedicated global administrator accounts with Azure AD Multi-Factor Authentication (MFA) and Azure AD Privileged Identity Management (PIM) <br> MFA for all user accounts <br> Conditional Access <br> Security Reader <br> Windows Hello <br> Windows Credential Guard |
+|  | Threat protection | Advanced Threat Analytics <br> Windows Defender <br> Defender for Office 365 <br> Microsoft Defender for Office 365 <br> Microsoft 365 threat investigation and response <br> |
+|  | Information protection | Azure Information Protection <br> Data Loss Prevention (DLP) <br> Windows Information Protection (WIP) <br> Microsoft Defender for Cloud Apps <br> Microsoft Intune |
+|  | Security management | Microsoft Defender for Cloud  <br> Windows Defender Security Center |
 | Remote and mobile access and business partners |  |  |
 |  | Better security for remote and mobile workers | Microsoft Intune |
 |  | Reduce remote access infrastructure for employees | Microsoft 365 workloads and cloud-based data |
@@ -128,7 +128,7 @@ The Contoso IT department determined the following mapping of business needs to 
 | Compliance |  |  |
 |  | Adhere to regional regulatory requirements | GDPR features in Microsoft 365 |
 | Management |  |  |
-|  | Lower IT overhead for installing client updates | Windows 10 Enterprise updates <BR> Microsoft 365 Apps for enterprise updates |
+|  | Lower IT overhead for installing client updates | Windows 10 Enterprise updates <br> Microsoft 365 Apps for enterprise updates |
 ||||
 
 ## Next step

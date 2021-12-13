@@ -24,8 +24,9 @@ ms.technology: mde
 
 
 **Applies to:**
-
 - [Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 This page will guide you through the steps you need to take to set up macOS policies in Jamf Pro.
 

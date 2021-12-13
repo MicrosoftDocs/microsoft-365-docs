@@ -22,7 +22,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -38,7 +38,7 @@ For more information about how to set up Conditional Access with Defender for En
 
 ### Jailbreak detection by Microsoft Defender for Endpoint
 
-Microsoft Defender for Endpoint has the capability of detecting unmanaged and managed devices that are jailbroken. If a device is detected to be jailbroken, a **High**-risk alert will be reported to Security Center and if Conditional Access is setup based on device risk score, then the device will be blocked from accessing corporate data.
+Microsoft Defender for Endpoint has the capability of detecting unmanaged and managed devices that are jailbroken. If a device is detected to be jailbroken, a **High**-risk alert will be reported to the Microsoft 365 Defender portal and if Conditional Access is setup based on device risk score, then the device will be blocked from accessing corporate data.
 
 ## Web Protection and VPN
 

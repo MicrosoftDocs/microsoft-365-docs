@@ -164,7 +164,7 @@ sections:
       - question: |
           I have an E5 license and enabled some ASR rules in conjunction with Defender for Endpoint. Is it possible for an ASR event to not show up at all in Defender for Endpoint's event timeline?
         answer: |
-          Whenever a notification is triggered locally by an ASR rule, a report on the event is also sent to the Defender for Endpoint portal. If you're having trouble finding the event, you can filter the events timeline using the search box. You can also view ASR events by visiting **Go to attack surface management**, from the **Configuration management** icon in the Security Center taskbar. The attack surface management page includes a tab for report detections, which includes a full list of ASR rule events reported to Defender for Endpoint.
+          Whenever a notification is triggered locally by an ASR rule, a report on the event is also sent to the Defender for Endpoint portal. If you're having trouble finding the event, you can filter the events timeline using the search box. You can also view ASR events by visiting **Go to attack surface management**, from the **Configuration management** icon in the Defender for Cloud taskbar. The attack surface management page includes a tab for report detections, which includes a full list of ASR rule events reported to Defender for Endpoint.
 
       - question: |
           I applied a rule using GPO. Now when I try to check the indexing options for the rule in Microsoft Outlook, I get a message stating, 'Access denied'.

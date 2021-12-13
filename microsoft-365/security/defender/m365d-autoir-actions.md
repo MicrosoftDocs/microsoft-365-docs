@@ -46,7 +46,7 @@ Threat protection features in Microsoft 365 Defender can result in certain remed
 
 It's important to approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner. 
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> and sign in. 
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in. 
 
 2. In the navigation pane, choose **Action center**. 
 
