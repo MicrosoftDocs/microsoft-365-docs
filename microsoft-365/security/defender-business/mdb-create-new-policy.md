@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,15 +18,15 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# Create a new policy in Microsoft Defender for Business
+# Create a new policy in Microsoft Defender for Business (preview)
 
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-Microsoft Defender for Business includes default policies that use recommended settings to protect your company's devices from day one. For example, you have **Next-generation protection** policies and **Firewall** policies that are built in using recommended security settings. But you're not limited to your default policies. You can create new policies, too, as described in this article.
+Microsoft Defender for Business (preview) includes default policies that use recommended settings to protect your company's devices from day one. For example, you have **Next-generation protection** policies and **Firewall** policies that are built in using recommended security settings. But you're not limited to your default policies. You can create new policies, too, as described in this article.
 
 > [!TIP]
-> If you want to edit an existing policy, see [View or edit policies in Microsoft Defender for Business](mdb-view-edit-policies.md).
+> If you want to edit an existing policy, see [View or edit policies in Microsoft Defender for Business (preview)](mdb-view-edit-policies.md).
 
 ## Create a new policy
 
@@ -53,7 +53,7 @@ Microsoft Defender for Business includes default policies that use recommended s
 
    To learn more about device groups, see . 
 
-8. On the **Configuration settings** tab, specify the settings for your policy, and then choose **Next**. For more information about the individual settings, see [Configuration settings for Microsoft Defender for Business](mdb-next-gen-configuration-settings.md).
+8. On the **Configuration settings** tab, specify the settings for your policy, and then choose **Next**. For more information about the individual settings, see [Configuration settings for Microsoft Defender for Business (preview)](mdb-next-gen-configuration-settings.md).
 
 9. On the **Review your policy** tab, review the general information, targeted devices, and configuration settings. 
 
@@ -64,7 +64,7 @@ Microsoft Defender for Business includes default policies that use recommended s
 
 Choose one or more of the following tasks:
 
-- [Get started using Defender for Business](mdb-get-started.md)
+- [Get started using Defender for Business (preview)](mdb-get-started.md)
 
 - [View or edit policies](mdb-view-edit-policies.md)
 
