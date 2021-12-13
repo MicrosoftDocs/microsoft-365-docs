@@ -173,5 +173,5 @@ In the Microsoft 365 admin center, you can configure per-user and service <a hre
 
 ## Related content
 
-[Turn on multifactor authentication](../../business-video/turn-on-mfa.md) (video)\
-[Turn on multifactor authentication for your phone](../../business-video/set-up-mfa.md) (video)
+[Turn on multifactor authentication](set-up-multi-factor-authentication.md) (video)\
+[Turn on multifactor authentication for your phone](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14) (video)

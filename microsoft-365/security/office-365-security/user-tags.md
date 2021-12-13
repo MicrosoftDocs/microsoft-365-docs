@@ -13,7 +13,9 @@ search.appverid:
   - MET150
 ms.collection: 
   - M365-security-compliance
-ms.custom: admindeeplinkDEFENDER
+ms.custom: 
+- admindeeplinkDEFENDER
+- admindeeplinkEXCHANGE
 description: Admins can learn how to identify specific groups of users with user tags in Microsoft Defender for Office 365 Plan 2. Tag filtering is available across alerts, reports, and investigations in Microsoft Defender for Office 365 to quickly identify the tagged users.
 ms.technology: mdo
 ms.prod: m365-security
@@ -43,7 +45,7 @@ After you apply system tags or custom tags to users, you can use those tags as f
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
 - [Campaign Views](campaigns.md)
 - [Admin and user submissions](admin-submission.md)
-- For priority accounts, you can use the [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) in the Exchange admin center (EAC).
+- For priority accounts, you can use the [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
 This article explains how to configure user tags in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. There are no cmdlets in Microsoft 365 Defender portal to manage user tags.
 
