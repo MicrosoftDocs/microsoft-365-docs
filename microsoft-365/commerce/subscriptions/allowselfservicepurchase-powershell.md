@@ -95,14 +95,15 @@ The following table lists the available products and their **ProductId**.
 | Power Automate RPA | CFQ7TTC0KXG6  |
 | Power BI Premium (standalone) | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
-| Project Plan 1 | CFQ7TTC0KXND |
-| Project Plan 3 | CFQ7TTC0KXNC |
-| Visio Plan 1 | CFQ7TTC0KXN9 |
-| Visio Plan 2 | CFQ7TTC0KXN8 |
+| Project Plan 1* | CFQ7TTC0HDB1 |
+| Project Plan 3* | CFQ7TTC0HDB0 |
+| Visio Plan 1* | CFQ7TTC0HD33 |
+| Visio Plan 2* | CFQ7TTC0HD32 |
 | Windows 365 Enterprise | CFQ7TTC0HHS9 |
 | Windows 365 Business | CFQ7TTC0J203 |
 | Windows 365 Business with Windows Hybrid Benefit | CFQ7TTC0HX99 |
 ## View or set the status for AllowSelfServicePurchase
+* Note that these IDs have changed. If you have previously blocked products using the old IDs we will automatically block these products using new IDs. No work is required.
 
 After you view the list of products available for self-service purchase, you can view or modify the setting for a specific product.
 
