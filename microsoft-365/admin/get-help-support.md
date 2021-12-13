@@ -219,4 +219,4 @@ Scan this QR code to follow us on WeChat and get the latest updates for Office 3
 
 [Find docs and training](../business-video/find-help-answers.md) (article)\
 [Employee quick setup](../business-video/employee-quick-setup.md) (article)\
-[Overview of Microsoft 365 Business Premium setup](../business-video/setup-overview.md) (video)
+[Overview of Microsoft 365 Business Premium setup](setup/plan-your-setup.md) (video)
