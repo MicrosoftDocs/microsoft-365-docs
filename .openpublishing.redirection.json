@@ -6116,6 +6116,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/business-video/secure-win-10-pro-devices.md",
+      "redirect_url": "/microsoft-365/admin/devices/protection-settings-for-windows-10-pcs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/turn-on-mfa.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/business-video/set-up-a-new-business-email-address.md",
       "redirect_url": "/microsoft-365/admin/email/change-email-address",
       "redirect_document_id": false
