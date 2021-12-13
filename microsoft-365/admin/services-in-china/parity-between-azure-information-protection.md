@@ -32,9 +32,9 @@ While our goal is to deliver all commercial features and functionality to custom
 
 The following list includes the existing gaps between AIP for Office 365 operated by 21Vianet and our commercial offerings as of January 2021:
 
-- Information Rights Management (IRM) is supported only for Microsoft 365 Apps for enterprise (build 11731.10000 or higher). Office 2010, Office 2013, and other Office 2016 versions are not supported.
+- Active Directory Rights Management Services (AD RMS) encryption is supported only in Microsoft 365 Apps for enterprise (build 11731.10000 or later). Office Professional Plus doesn't support AD RMS.
 
-- Migration from Active Directory Rights Management Services (AD RMS) to AIP is currently not available.
+- Migration from AD RMS to AIP is currently not available.
   
 - Sharing of protected emails with users in the commercial cloud is supported.
   
@@ -83,10 +83,10 @@ The **Microsoft Information Protection Sync Service** service principal is not a
 
 1. If you don't have the Azure Az module installed, install it or use a resource where the Azure Az module comes preinstalled, such as [Azure Cloud Shell](/azure/cloud-shell/overview). For more information, see [Install the Azure Az PowerShell module](/powershell/azure/install-az-ps).
 
-1.	Connect to the service using the [Connect-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) cmdlet and the `azurechinacloud` environment name:
+1. Connect to the service using the [Connect-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) cmdlet and the `azurechinacloud` environment name:
 
     ```powershell
-    Connect-azacount -environmentname azurechinacloud
+    Connect-azaccount -environmentname azurechinacloud
     ```
 
 1. Create the **Microsoft Information Protection Sync Service** service principal manually using the [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) cmdlet and the `870c4f2e-85b6-4d43-bdda-6ed9a579b725` application ID for the Microsoft Information Protection Sync Service:
