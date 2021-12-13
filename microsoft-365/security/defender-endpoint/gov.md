@@ -149,7 +149,7 @@ The following downloadable spreadsheet lists the services and their associated U
 
 Spreadsheet of domains list|Description
 :-----|:-----
-![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet.](images/mdatp-urls.png)|Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
+:::image type="content" source="images/mdatp-urls.png" alt-text="The Microsoft Defender for Endpoint URLs spreadsheet" lightbox="images/mdatp-urls.png":::|Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 
 For more information, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 

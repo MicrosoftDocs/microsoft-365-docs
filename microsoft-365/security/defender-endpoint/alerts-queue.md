@@ -41,7 +41,7 @@ On the top navigation you can:
 - Navigate between pages
 - Apply filters
 
-![Image of alerts queue.](images/alerts-queue-list.png)
+:::image type="content" source="images/alerts-queue-list.png" alt-text="The Alerts queue page" lightbox="images/alerts-queue-list.png":::
 
 ## Sort, filter, and group the alerts queue
 

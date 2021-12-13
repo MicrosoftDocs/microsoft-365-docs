@@ -106,7 +106,7 @@ The following downloadable spreadsheet lists the services and their associated U
 
 |Spreadsheet of domains list|Description|
 |---|---|
-|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet.](images/mdatp-urls.png)|Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <p> Download the spreadsheet here: [mdatp-urls.xlsx](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).
+|:::image type="content" source="images/mdatp-urls.png" alt-text="The spreadsheet for the URLs of the Microsoft Defender for Endpoint portal" lightbox="images/mdatp-urls.png":::|Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <p> Download the spreadsheet here: [mdatp-urls.xlsx](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).
 
 Microsoft Defender for Endpoint can discover a proxy server by using the following discovery methods:
 
