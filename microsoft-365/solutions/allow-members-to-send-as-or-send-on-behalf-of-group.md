@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - m365solution-collabgovernance
+ms.custom: admindeeplinkEXCHANGE
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
@@ -38,9 +39,9 @@ The **Send on Behalf** permission lets a user send email on behalf of a Microsof
     
 ## Allow members to send email as a group
 
-This section explains how to allow users to send email as a group in the [Exchange admin center](https://go.microsoft.com/fwlink/p/?linkid=2059104) (EAC) in Exchange Online.
+This section explains how to allow users to send email as a group in the<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> in Exchange Online.
   
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, go to **Recipients** \> **Groups**.
+1. In the Exchange admin center, go to **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>.
     
 2. Select **Edit**  ![Edit group icon.](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) on the group that you want to allow users to send as. 
     
@@ -56,9 +57,9 @@ This section explains how to allow users to send email as a group in the [Exchan
   
 ## Allow members to send email on behalf of a group
 
-This section explains how to allow users to send email on behalf of a group in the Exchange admin center (EAC) in Exchange Online.
+This section explains how to allow users to send email on behalf of a group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> in Exchange Online.
   
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, go to **Recipients** \> **Groups**.
+1. In the Exchange admin center, go to **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>.
     
 2. Select **Edit** ![Edit group icon.](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) on the group that you want to allow users to send as. 
     
