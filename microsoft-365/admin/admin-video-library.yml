@@ -25,7 +25,7 @@ landingContent:
       - linkListType: video
         links:
         - text: What is Microsoft 365
-          url: what-is-microsoft-365.md
+          url: admin-overview/what-is-microsoft-365.md
         - text: Overview of setup
           url: setup/plan-your-setup.md
         - text: Choose a subscription
@@ -53,13 +53,13 @@ landingContent:
         - text: Install Microsoft Office apps
           url: setup/install-applications.md
         - text: Set up Outlook for email
-          url: setup-outlook.md 
+          url: setup/setup-outlook.md
         - text: Import and redirect mail
           url: setup/migrate-email-and-contacts-admin.md
         - text: Move your files to OneDrive
-          url: files-to-onedrive.md
+          url: setup/files-to-onedrive.md
         - text: Move company files to SharePoint
-          url: files-to-sharepoint.md    
+          url: setup/files-to-sharepoint.md    
 
   # Card
   - title: Mobile
@@ -87,7 +87,21 @@ landingContent:
         - text: What is an admin
           url: add-users/about-admin-roles.md
         - text: Overview of the admin center
-          url: admin-center-overview.md
+          url: admin-overview/admin-center-overview.md
+        - text: Create a company-wide signature
+          url: setup/create-signatures-and-disclaimers.md
+        - text: Act on usage report
+          url: activity-reports/activity-reports.md
+        - text: Add another domain
+          url: setup/add-domain.md
+        - text: Set up a new business email address
+          url: email/change-email-address.md
+
+     # Card
+  - title: Manage users, licenses, and billing
+    linkLists:
+      - linkListType: video
+        links:    
         - text: View, download, or print your bill
           url: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
         - text: Buy new licenses
@@ -109,15 +123,8 @@ landingContent:
         - text: Change a user name or email
           url: add-users/change-a-user-name-and-email-address.md
         - text: Move users to a different subscription
-          url:  ../commerce/try-or-buy-microsoft-365.md
-        - text: Create a company-wide signature
-          url: setup/create-signatures-and-disclaimers.md
-        - text: Act on usage report
-          url: activity-reports/activity-reports.md
-        - text: Add another domain
-          url: add-domain.md 
-        - text: Set up a new business email address
-          url: email/change-email-address.md
+          url:  ../commerce/try-or-buy-microsoft-365.md 
+
 
   # Card
   - title: Manage devices
@@ -145,26 +152,26 @@ landingContent:
         - text: Set up anti-phishing
           url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-your-email-from-phishing-attacks
         - text: Manage safe attachments
-          url: safe-attachments.md 
+          url: security-and-compliance/increase-threat-protection.md
         - text: Manage safe links
           url: /microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-phishing-attacks-with-safe-links
         - text: Prevent data loss
-          url: set-up-dlp.md 
+          url: security-and-compliance/set-up-compliance.md
         - text: Create sensitivity labels
-          url: create-sensitivity-labels.md 
+          url: security-and-compliance/set-up-compliance.md
   # Card
   - title: Support
     linkLists:
       - linkListType: video
         links:
         - text: Get help or support
-          url: get-help-support.md 
+          url: get-help-support.md
         - text: Employee quick setup  
-          url: employee-quick-setup.md  
+          url: ../business-video/employee-quick-setup.md
   # Card
   - title: Switch from Google Workspace
     linkLists:
       - linkListType: video
         links:
           - text: Switch from Google Workspace
-            url: moveto-microsoft-365/move-from-google-workspace-overview.md 
+            url: ../business-video/moveto-microsoft-365/move-from-google-workspace-overview.md
