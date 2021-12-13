@@ -122,6 +122,13 @@ For more information on supported versions of Windows 10, see (/windows/release-
 >
 > For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
 
+When components are up-to-date on Microsoft Windows operating systems, Microsoft Defender for Endpoint support will follow the respective operating system's lifecycle. For more information, see [Lifecycle FAQ](/lifecycle/faq/general-lifecycle). New features or capabilities are typically provided only on operating systems that have not yet reached the end of their lifecycle. Security intelligence updates (definition and engine updates) and detection logic will continue to be provided until:
+
+- The end of support date (for operating systems that do not have an Extended Security Updates (ESU) program).
+- The end of ESU date (for operating systems that have an ESU program).
+
+
+
 ### Other supported operating systems
 
 - [Android](microsoft-defender-endpoint-android.md)
