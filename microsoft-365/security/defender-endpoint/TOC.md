@@ -258,6 +258,8 @@
 ### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
 #### [Configure device discovery](configure-device-discovery.md)
+#### [Microsoft Defender for IoT integration](enable-microsoft-defender-for-iot-integration.md)
+#### [Enable Corelight data integration](corelight-integration.md)
 #### [Device discovery FAQ](device-discovery-faq.md)
 
 ### [Network devices](network-devices.md)
@@ -731,3 +733,6 @@
 ## [Microsoft 365 Defender](../defender/index.yml)
 ## [Defender for Office 365](../office-365-security/index.yml)
 ## [Defender for Identity](/defender-for-identity/)
+## [Defender for Cloud Apps](/cloud-app-security/)
+## [Defender for Business](../defender-business/index.yml)
+
