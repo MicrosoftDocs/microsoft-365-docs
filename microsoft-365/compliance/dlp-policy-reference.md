@@ -191,7 +191,6 @@ Rules 1, 3, and 4 would be evaluated, but not applied. In this example, matches 
 
 For rules that are applied to endpoints, you can take advantage of the ability to re-order the rule priority to make sure the restrictions you want applied are applied.
 
-
 ### Conditions
 
 Conditions are inclusive and are where you define what you want the rule to look for and context in which those items are being used. They tell the rule &#8212; when you find an item that looks like *this* and is being used like *that* &#8212; it's a match and the rest of the actions in the policy should be taken on it. You can use conditions to assign different actions to different risk levels. For example, sensitive content shared internally might be lower risk and require fewer actions than sensitive content shared with people outside the organization.
