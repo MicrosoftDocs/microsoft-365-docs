@@ -19,12 +19,12 @@ description: "Administrators can set up a data connector to import employee data
 
 # Set up a connector to import HR data
 
-> [!IMPORTANT]
-> New version of HR connector is now available and is under Public preview. To create any new connector instance or to import newly added employee profile data scenario for Insider risk management Healthcare policy purposes, go to the Data connectors page in the Microsoft 365 compliance center, select the Connectors tab, and then click **Add a connector > HR (preview)** to start the set up. Already created HR connectors will continue to work without any disruption
-
 You can set up a data connector in the Microsoft 365 compliance center to import human resources (HR) data related to events such as a user's resignation or a change in a user's job level. The HR data can then be used by the [insider risk management solution](insider-risk-management.md) to generate risk indicators that can help you identity possible malicious activity or data theft by users inside your organization.
 
 Setting up a connector for HR data that insider risk management policies can use to generate risk indicators consists of creating a CSV file that contains that contains the HR data, creating an app in Azure Active Directory that's used for authentication, creating an HR data connector in the Microsoft 365 compliance center, and then running a script (on a scheduled basis) that ingests the HR data in CSV files to the Microsoft cloud so it's available to the insider risk management solution.
+
+> [!IMPORTANT]
+> A new version of the HR connector is now available for public preview. To create a new HR connector or to import data for the [new employee profile scenario](#csv-file-for-employee-profile-data-preview) for the healthcare policy scenario for insider risk management, go to the **Data connectors** page in the Microsoft 365 compliance center, select the **Connectors** tab, and then click **Add a connector > HR (preview)** to start the set up. Existing HR connectors will continue to work without any disruption.
 
 ## Before you begin
 
@@ -257,9 +257,9 @@ After you complete this step, be sure to copy the job ID that's generated when y
 
 1. Go to the Microsoft 365 compliance center, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors**</a>.
 
-2. On the **Data connectors** page under **HR**, click **View**.
+2. On the **Data connectors** page, click **HR (preview)**.
 
-3. On the **HR Custom** page, click **Add connector**.
+3. On the **HR (preview)** page, click **Add connector**.
 
 4. On the **Setup the connection** page, do the following and then click **Next**:
 
@@ -423,6 +423,6 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 ## Existing HR connectors
 
-On Dec 13, 2021, we released Empoloyee profile data scenario for HR connectors. If you created an HR connector before Dec 13, 2021, we will migrate all your existing instances so that it continues to import your configured HR data to the Microsoft cloud. You don't have to do anything to maintain this functionality. You can keep using the connector without any disruption.
+On December 13, 2021, we released the employee profile data scenario for HR connectors. If you created an HR connector before this date, we will migrate the existing instances or your organization's HR connectors so your HR data continues to be imported to the Microsoft cloud. You don't have to do anything to maintain this functionality. You can keep using these  connectors without disruption.
 
-If you want to implement Employee profile data, please create a new HR connector and configure it as required. After you create a new HR connector, run the script using the job ID of the new connector and CSV file(s) with the Employee profile data as described in the above.
+If you want to implement the employee profile data scenario, you create a new HR connector and configure it as required. After you create a new HR connector, run the script using the job ID of the new connector and CSV files with [employee profile data](#csv-file-for-employee-profile-data-preview) previously described in this article.
