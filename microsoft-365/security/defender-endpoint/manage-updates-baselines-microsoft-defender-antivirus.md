@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 12/10/2021
+ms.date: 12/13/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -39,8 +39,7 @@ Keeping Microsoft Defender Antivirus up to date is critical to assure your devic
 Microsoft Defender Antivirus uses [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads security intelligence updates to provide protection.
 
 > [!NOTE]
-> Updates are released under the below KB numbers:
->
+> Updates are released under the following KBs:
 > - Microsoft Defender Antivirus: KB2267602
 > - System Center Endpoint Protection: KB2461484
 
@@ -63,7 +62,6 @@ You can manage the distribution of updates through one of the following methods:
 For more information, see [Manage the sources for Microsoft Defender Antivirus protection updates](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
 
 > [!NOTE]
->
 > - Monthly updates are released in phases, resulting in multiple packages visible in your [Window Server Update Services](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
 > - This article lists changes that are included in the broad release channel. [See the latest broad channel release here](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info).
 > - To learn more about the gradual rollout process, and to see more information about the next release, see [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
@@ -93,9 +91,7 @@ Engine version: 1.1.18800.4
 Security intelligence update version: 1.353.3.0
 
 ### What's new
-
-- Normalize HTML. We now strip valid & recognized html tags ​and leave the others untouched.
-- Implement Decaying Counters. Decaying counter Lua APIs are now available to simulate moving averages.
+No new features
 
 ### Known Issues
 No known issues
