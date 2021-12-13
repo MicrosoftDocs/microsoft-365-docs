@@ -198,6 +198,8 @@
           items:
             - name: Mailbox utilization service alerts
               href: microsoft-365-mailbox-utilization-service-alerts.md
+            - name: MRS source delays service alerts
+              href: microsoft-365-mrs-source-delays-service-alerts.md
         - name: Setup guides
           href: setup-guides-for-microsoft-365.md
     - name: Multiple tenants
