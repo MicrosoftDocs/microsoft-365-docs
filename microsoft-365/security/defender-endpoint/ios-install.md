@@ -94,7 +94,12 @@ This step simplifies the onboarding process by setting up the VPN profile. For a
 1. Click Next and assign the profile to targeted users.
 1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**.
 
-## Zero-touch onboarding of Microsoft Defender for Endpoint
+## Zero-touch onboarding of Microsoft Defender for Endpoint (Preview)
+
+
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 
 Admins can configure Microsoft Defender for Endpoint to deploy and activate silently. In this flow, the user is simply notified of the installation. Defender for Endpoint is automatically installed without the need for the user to open the app. Follow the steps below to setup zero-touch or silent deployment of Defender for Endpoint on enrolled iOS devices:
 
