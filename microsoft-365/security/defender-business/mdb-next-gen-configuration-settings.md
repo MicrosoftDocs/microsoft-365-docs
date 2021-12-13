@@ -1,13 +1,13 @@
 ---
-title: Understand next-generation protection configuration settings in Microsoft Defender for Business
-description: Understand configuration settings for next-generation protection in Microsoft Defender for Business
+title: Understand next-generation protection configuration settings in Microsoft Defender for Business (preview)
+description: Understand configuration settings for next-generation protection in Microsoft Defender for Business (preview)
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# Understand next-generation configuration settings in Microsoft Defender for Business
+# Understand next-generation configuration settings in Microsoft Defender for Business (preview)
 
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
 
-Next-generation protection in Microsoft Defender for Business includes robust antivirus and antimalware protection. Your default policies are designed to protect your devices and users without hindering productivity; however, you can also customize your policies to suit your business needs. 
+Next-generation protection in Microsoft Defender for Business (preview) includes robust antivirus and antimalware protection. Your default policies are designed to protect your devices and users without hindering productivity; however, you can also customize your policies to suit your business needs. 
 
 **This article describes**:
 
@@ -48,7 +48,7 @@ The following table lists your settings and options:<br/><br/>
 | **Time of day to run a scheduled scan** | Select a time to run your regularly scheduled antivirus scans to run. |
 | **Use low performance** | This setting is turned off by default. *We recommend keeping this setting turned off.* However, you can turn this setting on to limit the device memory and resources that are used during scheduled scans. <br/><br/>**IMPORTANT** If you turn **Use low performance** on, it configures the following settings for Microsoft Defender Antivirus: <br/>- Archive files are not scanned ([AllowArchiveScanning](/windows/client-management/mdm/policy-csp-defender))<br/>- Scans are assigned a low CPU priority ([EnableLowCPUPriority](/windows/client-management/mdm/policy-csp-defender)) <br/>- If a full antivirus scan is missed, no catch-up scan will run ([DisableCatchupFullScan](/windows/client-management/mdm/policy-csp-defender)) <br/>- If a quick antivirus scan is missed, no catch-up scan will run ([DisableCatchupQuickScan](/windows/client-management/mdm/policy-csp-defender)) <br/>- Reduces the average CPU load factor during an antivirus scan from 50% to 20% ([AvgCPULoadFactor](/windows/client-management/mdm/policy-csp-defender)) |
 | **User experience**   |  |
-| **Allow users to access the Windows Security app** | Turn this setting on to enable users to open the Windows Security app on their devices. Users won’t be able to override settings that you configure in Microsoft Defender for Business, but they will be able to run a quick scan if need be, or view any detected threats. |
+| **Allow users to access the Windows Security app** | Turn this setting on to enable users to open the Windows Security app on their devices. Users won’t be able to override settings that you configure in Microsoft Defender for Business (preview), but they will be able to run a quick scan if need be, or view any detected threats. |
 | **Antivirus exclusions** | Exclusions are processes, files, or folders that are skipped by Microsoft Defender Antivirus scans. *In general, you should not need to define exclusions.* Microsoft Defender Antivirus includes many automatic exclusions that are based on known operating system behaviors and typical management files.<br/><br/>[Learn more about exclusions](../defender-endpoint/configure-exclusions-microsoft-defender-antivirus.md) |
 | **Process exclusions** | Process exclusions prevent files that are opened by specific processes from being scanned by Microsoft Defender Antivirus. <br/><br/>[Learn more about process exclusions](../defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus.md) |
 | **File extension exclusions** | File extension exclusions prevent files with specific extensions from being scanned by Microsoft Defender Antivirus.<br/><br/>[Learn more about file extension exclusions](../defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus.md) |
@@ -56,7 +56,7 @@ The following table lists your settings and options:<br/><br/>
 
 ## Additional preconfigured settings
 
-The following additional settings are preconfigured for next-generation protection in Defender for Business:
+The following additional settings are preconfigured for next-generation protection in Defender for Business (preview):
 
 - Scanning of removable drives is turned on ([AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender))
 - Daily quick scans do not have a preset time ([ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender))
@@ -65,9 +65,9 @@ The following additional settings are preconfigured for next-generation protecti
 
 ## Next steps
 
-- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
+- [View and manage incidents in Microsoft Defender for Business (preview)](mdb-view-manage-incidents.md)
 
-- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
+- [Respond to and mitigate threats in Microsoft Defender for Business (preview)](mdb-respond-mitigate-threats.md)
 
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
 
@@ -76,6 +76,6 @@ The following additional settings are preconfigured for next-generation protecti
 
 - [Visit the Microsoft 365 Defender portal](mdb-get-started.md)
 
-- [Manage firewall settings in Microsoft Defender for Business](mdb-custom-rules-firewall.md)
+- [Manage firewall settings in Microsoft Defender for Business (preview)](mdb-custom-rules-firewall.md)
 
 - [Policy CSP - Defender](/windows/client-management/mdm/policy-csp-defender)

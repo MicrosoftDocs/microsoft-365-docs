@@ -1,5 +1,5 @@
 ---
-title: Respond to and mitigate threats in Microsoft Defender for Business
+title: Respond to and mitigate threats in Microsoft Defender for Business (preview)
 description: As threats are detected, you can take actions to respond to and mitigate those threats.
 search.appverid: MET150
 author: denisebmsft
@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,7 +18,7 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# Respond to and mitigate threats in Microsoft Defender for Business
+# Respond to and mitigate threats in Microsoft Defender for Business (preview)
 
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
@@ -51,6 +51,6 @@ The Microsoft 365 Defender portal enables your security team to respond to and m
 
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
 
-- [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md)
+- [Manage devices in Microsoft Defender for Business (preview)](mdb-manage-devices.md)
 
-- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
+- [View and manage incidents in Microsoft Defender for Business (preview)](mdb-view-manage-incidents.md)
