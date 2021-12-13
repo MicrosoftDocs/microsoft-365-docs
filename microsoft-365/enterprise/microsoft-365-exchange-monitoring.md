@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 search.appverid:
