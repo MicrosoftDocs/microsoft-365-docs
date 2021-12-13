@@ -137,7 +137,7 @@ The Microsoft Defender for Endpoint Client Analyzer (MDECA) can collect traces, 
 
 ### Requirements
 
-- The client analyzer can run on supported distros of [Linux](microsoft-defender-endpoint-linux.md#system-requirements) either before of after onboarding to Microsoft Defender for Endpoint.
+- The client analyzer can run on supported distros of [Linux](microsoft-defender-endpoint-linux.md#system-requirements) either before or after onboarding to Microsoft Defender for Endpoint.
 - Download client analyzer for Linux from the latest preview edition available for download here: <https://aka.ms/XMDEClientAnalyzer>
 - If your device is behind a proxy, then you can simply pass the proxy server as an environment variable to the mde_support_tool.sh script. For example: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
