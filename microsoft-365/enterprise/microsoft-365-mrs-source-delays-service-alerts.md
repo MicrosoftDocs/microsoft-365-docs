@@ -13,8 +13,6 @@ search.appveyor:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-ms.custom: 
-- admindeeplinkEXCHANGE
 f1.keywords:
 - NOCSH
 description: "Use mailbox migration service alerts to monitor delays in mailbox migration requests in your organization."
@@ -24,13 +22,11 @@ description: "Use mailbox migration service alerts to monitor delays in mailbox 
 
 Mailbox Replication Service (MRS) source delay service alerts inform you of storage limitations or high processor utilization issues on the tenant side (migration source) that might be delaying mailbox migrations in your Microsoft 365 organization. These service alerts also includes links to Microsoft resources to help you resolve these issues.
 
-These service alerts are displayed in the Microsoft 365 admin center. To view these service alerts, go to **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Service health** > **Exchange Online** and then click the **Active issues** tab.
+These service alerts are displayed in the Microsoft 365 admin center. To view these service alerts, go to **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Service health**</a> > **Exchange Online** and then click the **Active issues** tab.
 
 ## What do these service alerts indicate?
 
 This service alert informs you of potential delays to mailbox migrations in your organization. This includes cross-forest migrations, onboarding migrations, and offboarding  migrations. The service alert contains a table that provides you with information about the current migrations in your organization.
-
-
 
 The following list describes in each column in the previous table.
 
