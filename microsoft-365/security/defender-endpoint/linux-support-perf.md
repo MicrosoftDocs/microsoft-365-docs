@@ -130,7 +130,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
 ## Diagnose performance issues using Microsoft Defender for Endpoint Client Analyzer
 
 **Applies to:**
-- Performance issues of all available MDE components such as AV and EDR  
+- Performance issues of all available Defender for Endpoint components such as AV and EDR  
 
 The Microsoft Defender for Endpoint Client Analyzer (MDECA) can collect traces, logs, and diagnostic information in order to troubleshoot performance issues on [onboarded devices](/microsoft-365/security/defender-endpoint/onboard-configure) on Linux.
 
@@ -222,12 +222,6 @@ Open a terminal or SSH into the relevant machine and run the following commands:
 > [!NOTE]
 > In case after following the above steps the performance problem persists, please contact customer support for further instructions and mitigation.
 
-## Troubleshoot on-demand AV scan performance issues
-
-**Applies to:**
-- Only performance issues related to AV
-
-This section is a placeholder where we can document the newly-introduced switches to the command-line tool for troubleshooting on-demand AV scan performance issues where archives and containers are scanned.
 
 
 ## See also
