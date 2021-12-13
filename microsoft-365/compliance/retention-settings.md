@@ -155,16 +155,16 @@ To run a query using PowerShell:
 
 2. Use either [Get-Recipient](/powershell/module/exchange/get-recipient) or [Get-Mailbox](/powershell/module/exchange/get-mailbox) with the *-Filter* parameter and your [OPATH query](/powershell/exchange/filter-properties) for the adaptive scope enclosed in curly brackets (`{`,`}`). If your attribute values are strings, enclose these values in double or single quotes.  
 
-    You can determine whether to validate using `Get-Mailbox` or `Get-Recipient` depending on which cmdlets the [OPATH properties](/powershell/exchange/filter-properties) you choose to use in your query support.
+    You can determine whether to use `Get-Mailbox` or `Get-Recipient` for validation by identifying which cmdlet is supported by the [OPATH property](/powershell/exchange/filter-properties) that you choose for your query.
 
     > [!IMPORTANT]
-    > `Get-Mailbox` does not support the *MailUser* recipient type, so `Get-Recipient` must be used to validate queries that include on premises mailboxes in a hybrid environment.
+    > `Get-Mailbox` does not support the *MailUser* recipient type, so `Get-Recipient` must be used to validate queries that include on-premises mailboxes in a hybrid environment.
 
-    For validating a **User** scope, use either:
+    To validate a **User** scope, use either:
     - `Get-Mailbox` with `-RecipientTypeDetails UserMailbox` or
     - `Get-Recipient` with `-RecipientTypeDetails UserMailbox,MailUser`
     
-    For validating a **Microsoft 365 Group** scope, use:
+    To validate a **Microsoft 365 Group** scope, use:
     - `Get-Mailbox` or `Get-Recipient` with `-RecipientTypeDetails GroupMailbox`
 
     For example, to validate a **User** scope, you could use:
