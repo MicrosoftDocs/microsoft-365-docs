@@ -212,4 +212,4 @@ Yes, see [Make the collected data anonymous](enable-usage-analytics.md#make-the-
 
 [Enable Microsoft 365 usage analytics](enable-usage-analytics.md) (article)\
 [Navigate and utilize the reports in Microsoft 365 usage analytics](navigate-and-utilize-reports.md) (article)\
-[Review usage reports in Microsoft 365](../../business-video/act-on-report.md) (video)
+[Microsoft 365 Reports in the admin center](../activity-reports/activity-reports.md) (video)
