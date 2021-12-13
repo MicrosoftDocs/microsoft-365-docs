@@ -21,6 +21,7 @@ ms.collection: M365-security-compliance
 # Specify the cloud protection level
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Microsoft Defender Antivirus
@@ -42,6 +43,7 @@ Cloud protection works together with Microsoft Defender Antivirus to deliver pro
 
 5. Expand **Cloud protection**, and then in the **Cloud-delivered protection level** list, select one of the following:
 
+    - **Not configured**: Default state.
     - **High**: Applies a strong level of detection.
     - **High plus**: Uses the **High** level and applies extra protection measures (might affect client performance).
     - **Zero tolerance**: Blocks all unknown executables.
@@ -65,6 +67,8 @@ Cloud protection works together with Microsoft Defender Antivirus to deliver pro
 4. Expand the tree to **Windows Components** \> **Microsoft Defender Antivirus** \> **MpEngine**.
 
 5. Double-click the **Select cloud protection level** setting and set it to **Enabled**. Select the level of protection:
+
+    - **Not configured**: Default state.
     - **Default blocking level** provides strong detection without increasing the risk of detecting legitimate files.
     - **Moderate blocking level** provides moderate only for high confidence detections
     - **High blocking level** applies a strong level of detection while optimizing client performance (but can also give you a greater chance of false positives).
@@ -76,7 +80,7 @@ Cloud protection works together with Microsoft Defender Antivirus to deliver pro
 7. Deploy your updated Group Policy Object. See [Group Policy Management Console](/windows/win32/srvnodes/group-policy)
 
 > [!TIP]
-> Are you using Group Policy Objects on premises? See how they translate in the cloud. [Analyze your on-premises group policy objects using Group Policy analytics in Microsoft Endpoint Manager - Preview](/mem/intune/configuration/group-policy-analytics). 
+> Are you using Group Policy Objects on premises? See how they translate in the cloud. [Analyze your on-premises group policy objects using Group Policy analytics in Microsoft Endpoint Manager - Preview](/mem/intune/configuration/group-policy-analytics).
   
 ## See also
 

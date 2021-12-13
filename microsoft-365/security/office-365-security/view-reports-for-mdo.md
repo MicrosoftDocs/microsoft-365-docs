@@ -2,8 +2,8 @@
 title: View Defender for Office 365 reports
 f1.keywords: 
   - CSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: 
 audience: ITPro
@@ -20,6 +20,7 @@ description: Admins can learn how to find and use the Defender for Office 365 re
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkDEFENDER
+- admindeeplinkEXCHANGE
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -54,7 +55,7 @@ Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 s
 >
 > Email security reports that don't require Defender for Office 365 are described in [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md).
 >
-> Reports that are related to mail flow are now in the Exchange admin center (EAC). For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
+> Reports that are related to mail flow are now in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 
 ## Safe Attachments file types report
 
@@ -113,6 +114,10 @@ On the main report page, the ![Export icon.](../../media/m365-cc-sc-download-ico
 ## Threat protection status report
 
 The **Threat protection status** report is a single view that brings together information about malicious content and malicious email detected and blocked by [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) and Microsoft Defender for Office 365. For more information, see [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
+
+## Top senders and recipients report
+
+The **Top senders and recipients** report show the top recipients for EOP and Defender for Office 365 protection features. For more information, see [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report).
 
 ## URL protection report
 
@@ -226,6 +231,7 @@ PowerShell reporting cmdlets:
 |Safe Links|[Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <p> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|
 |Compromised users|[Get-CompromisedUserAggregateReport](/powershell/module/exchange/get-compromiseduseraggregatereport) <p> [Get-CompromisedUserDetailReport](/powershell/module/exchange/get-compromiseduserdetailreport)|
 |Mail flow status|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
+|Spoofed users|[Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport)|
 |
 
 ## What permissions are needed to view the Defender for Office 365 reports?

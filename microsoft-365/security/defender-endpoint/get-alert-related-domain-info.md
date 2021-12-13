@@ -2,7 +2,6 @@
 title: Get alert related domains information
 description: Retrieve all domains related to a specific alert using Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get alert information, alert information, related domain
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -44,7 +44,9 @@ The following files can be deleted:
 > [!TIP]
 > When you use a [query with an auto-apply policy for a retention label](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties), you can exclude specific document libraries by using the following entry: `NOT(DocumentLink:"<URL to document library>")`
 
-List items are not supported by retention policies but are supported by retention labels with the exception of items in system lists. These are hidden lists used by SharePoint to manage the system and include the master page catalog, solution catalog, and data sources. When you apply a retention label to a supported list item that has a document attachment:
+List items are not supported by retention policies but are supported by retention labels with the exception of items in system lists. These are hidden lists used by SharePoint to manage the system and include the master page catalog, solution catalog, and data sources. When retention labels are applied to supported list items, they will always be retained according to the retention settings, but not deleted if they are hidden from search.
+
+When you apply a retention label to a supported list item that has a document attachment:
 - For a standard retention label (doesn't declare the item to be a record):
     - The document attachment doesn't automatically inherit the retention settings of the label, but can be labeled independently.
 - For a retention label that declares the item a record: 
@@ -53,6 +55,7 @@ List items are not supported by retention policies but are supported by retentio
 Retention settings from both retention policies and retention labels do not apply to organizing structures that include libraries, lists, and folders.
 
 For retention policies and auto-apply label policies: SharePoint sites must be indexed for the retention settings to be applied. However, if items in SharePoint document libraries are configured to not appear in search results, this configuration doesn't exclude files from the retention settings.
+
 
 ## How retention works for SharePoint and OneDrive
 
