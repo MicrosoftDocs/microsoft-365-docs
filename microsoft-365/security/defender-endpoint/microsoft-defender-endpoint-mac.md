@@ -36,7 +36,7 @@ This topic describes how to install, configure, update, and use Defender for End
 
 ## What's new in the latest release
 
-[What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-atp.md)
+[What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-endpoint.md)
 
 [What's new in Microsoft Defender for Endpoint on Mac](mac-whatsnew.md)
 
@@ -89,7 +89,7 @@ Microsoft Defender for Endpoint on Mac requires one of the following Microsoft V
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 (M365 A5)
 - Windows 10 Enterprise E5
-- Windows 11
+- Windows 11 Enterprise E5
 - Microsoft Defender for Endpoint
 
 > [!NOTE]

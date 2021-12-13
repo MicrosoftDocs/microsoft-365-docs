@@ -23,9 +23,9 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-
 - Windows Server 2012 R2
 - Windows Server 2016
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -50,7 +50,7 @@ To facilitate upgrades when Microsoft Endpoint Configuration Manager or Microsof
 4. Install Microsoft Defender for Endpoint.
 5. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft Defender Security Center](https://securitycenter.microsoft.com).
 
-To use the script, download it to an installation directory where you have also placed the installation and onboarding packages (see [Configure server endpoints](configure-server-endpoints.md)).
+To use the script, download it to an installation directory where you have also placed the installation and onboarding packages (see [Configure server endpoints](configure-server-endpoints.md).
 
 EXAMPLE: .\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd"
 
@@ -70,7 +70,7 @@ Migration steps:
    1. Remove the MMA workspace configuration for Microsoft Defender for Endpoint. See [Remove a workspace using PowerShell](/azure/azure-monitor/agents/agent-manage). This step is optional; the previous EDR sensor will stop running after the newer one becomes active (note this can take several hours).
    2. Uninstall SCEP.
    3. Install the [prerequisites](configure-server-endpoints.md#prerequisites) where applicable.
-   4. Install Microsoft Defender for Endpoint (see [Configure server endpoints](configure-server-endpoints.md)).
+   4. Install Microsoft Defender for Endpoint (see [Configure server endpoints](configure-server-endpoints.md).
    5. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft Defender Security Center](https://securitycenter.microsoft.com). 
 
    > [!TIP]

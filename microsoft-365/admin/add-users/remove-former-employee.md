@@ -46,6 +46,23 @@ To complete the steps in this series, you use these Microsoft 365 capabilities a
 |Outlook|Import pst files, add mailbox |
 |Active Directory|Remove users in hybrid environments |
 
+## Watch: Delete a user
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
+
+When an employee leaves the company, you'll need to remove them from Microsoft 365 for business. Before doing so, you should block them from accessing company files, preserve the documents they created, and perform several other admin tasks associated with removing a user.
+
+1. From the admin center, select **Users**, and choose **Active users**.
+1. Select the user you want to remove, and then select **Delete user**.
+1. Check the box to remove their license, and check the box to remove their email aliases.
+1. Check the box to give another user access to the former employee’s email, and choose **Select a user and set email options**.
+1. To remove associated email aliases, select **X** next to their aliases.
+1. Review the shared mailbox information, and select **Finish**.
+1. Confirm your options are set correctly, and choose **Assign and convert**.
+1. Review your results, and select **Close**.
+
+After you remove a user, you have up to 30 days to restore their account.
+
 ## Solution: Remove a former employee
 
 > [!IMPORTANT]
