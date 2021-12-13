@@ -201,10 +201,8 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
    }
    ```
    
-Note: TenantID fed to $sourceTenantId and $targetTenantId is the GUID and not the tenant domain name.
-To find your TenantID - https://docs.microsoft.com/en-us/onedrive/find-your-office-365-tenant-id
-Here is an example of Tenant ID
-![image](https://user-images.githubusercontent.com/74538523/145413901-e8924abf-13bd-442c-912d-932707ae8b9c.png)
+> [!NOTE]
+> The tenant ID that you enter as the $sourceTenantId and $targetTenantId is the GUID and not the tenant domain name. For an example of a tenant ID and information about finding your tenant ID, see [Find your Microsoft 365 tenant ID](/onedrive/find-your-office-365-tenant-id).
    
 ### How do I know this worked?
 
