@@ -23,6 +23,9 @@ You can set up a data connector in the Microsoft 365 compliance center to import
 
 Setting up a connector for HR data that insider risk management policies can use to generate risk indicators consists of creating a CSV file that contains that contains the HR data, creating an app in Azure Active Directory that's used for authentication, creating an HR data connector in the Microsoft 365 compliance center, and then running a script (on a scheduled basis) that ingests the HR data in CSV files to the Microsoft cloud so it's available to the insider risk management solution.
 
+> [!IMPORTANT]
+> A new version of the HR connector is now available for public preview. To create a new HR connector or to import data for the [new employee profile scenario](#csv-file-for-employee-profile-data-preview) for the healthcare policy scenario for insider risk management, go to the **Data connectors** page in the Microsoft 365 compliance center, select the **Connectors** tab, and then click **Add a connector > HR (preview)** to start the set up. Existing HR connectors will continue to work without any disruption.
+
 ## Before you begin
 
 - Determine which HR scenarios and data to import to Microsoft 365. This will help you determine how many CSV files and HR connectors you'll need to create, and how to generate and structure the CSV files. The HR data that you import is determined by the insider risk management policies that you want to implement. For more information, see Step 1.
@@ -254,9 +257,9 @@ After you complete this step, be sure to copy the job ID that's generated when y
 
 1. Go to the Microsoft 365 compliance center, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors**</a>.
 
-2. On the **Data connectors** page under **HR**, click **View**.
+2. On the **Data connectors** page, click **HR (preview)**.
 
-3. On the **HR Custom** page, click **Add connector**.
+3. On the **HR (preview)** page, click **Add connector**.
 
 4. On the **Setup the connection** page, do the following and then click **Next**:
 
@@ -420,6 +423,6 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 ## Existing HR connectors
 
-On July 20, 2020, we released additional scenarios that are supported by HR connectors. These are the HR scenarios that were previously described in this article. Any HR connector created before this date only supports the Employee resignation scenario. If you created an HR connector before July 20, 2020, we have migrated it so that it continues to migrate your HR data to the Microsoft cloud. You don't have to do anything to maintain this functionality. You can keep using the connector without any disruption.
+On December 13, 2021, we released the employee profile data scenario for HR connectors. If you created an HR connector before this date, we will migrate the existing instances or your organization's HR connectors so your HR data continues to be imported to the Microsoft cloud. You don't have to do anything to maintain this functionality. You can keep using these  connectors without disruption.
 
-If you want to implement additional HR scenarios, please create a new HR connector and configure it for the additional HR scenarios that were released. You'll also need to create one or more new CSV files that contain the data to support the additional HR scenarios. After you create a new HR connector, run the script using the job ID of the new connector and CSV file(s) with the data for your additional HR scenarios.
+If you want to implement the employee profile data scenario, you create a new HR connector and configure it as required. After you create a new HR connector, run the script using the job ID of the new connector and CSV files with [employee profile data](#csv-file-for-employee-profile-data-preview) previously described in this article.
