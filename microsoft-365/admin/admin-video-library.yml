@@ -97,8 +97,28 @@ landingContent:
         - text: Set up a new business email address
           url: email/change-email-address.md
 
+      # Card
+      - title: Manage users
+        linkLists:
+        - linkListType: video
+          links: 
+          - text: Reset user passwords
+            url: add-users/reset-passwords.md
+          - text: Set up self-service password reset
+            url: add-users/let-users-reset-passwords.md
+          - text: Add a user
+            url: add-users/add-users.md
+          - text: Delete a user
+            url: add-users/remove-former-employee.md
+          - text: Add another admin
+            url: add-users/assign-admin-roles.md
+          - text: Change a user name or email
+            url: add-users/change-a-user-name-and-email-address.md
+          - text: Move users to a different subscription
+            url:  ../commerce/try-or-buy-microsoft-365.md 
+
      # Card
-  - title: Manage users, licenses, and billing
+  - title: Manage licenses and billing
     linkLists:
       - linkListType: video
         links:    
@@ -110,20 +130,7 @@ landingContent:
           url: ../commerce/licenses/buy-licenses.md
         - text: Update your payment method
           url: ../commerce/billing-and-payments/manage-payment-methods.md
-        - text: Reset user passwords
-          url: add-users/reset-passwords.md
-        - text: Set up self-service password reset
-          url: add-users/let-users-reset-passwords.md
-        - text: Add a user
-          url: add-users/add-users.md
-        - text: Delete a user
-          url: add-users/remove-former-employee.md
-        - text: Add another admin
-          url: add-users/assign-admin-roles.md
-        - text: Change a user name or email
-          url: add-users/change-a-user-name-and-email-address.md
-        - text: Move users to a different subscription
-          url:  ../commerce/try-or-buy-microsoft-365.md 
+
 
 
   # Card
