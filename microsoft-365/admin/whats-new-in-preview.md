@@ -33,7 +33,7 @@ description: "The Microsoft 365 admin center - learn about the features that wer
 
 ::: moniker-end
 
-We're continuously adding new features to [the Microsoft 365 admin center]([Overview of the Microsoft 365 admin center](admin-overview/admin-center-overview.md)), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
+We're continuously adding new features to [the Microsoft 365 admin center]([Overview of the Microsoft 365 admin center](admin-overview/admin-center-overview.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
 
 And if you'd like to know what's new with other Microsoft cloud services:
 
@@ -389,17 +389,17 @@ We've got two updates for Groups this month:
 
 - [Schedule a meeting](https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5)
 - [Join a Teams meeting](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [Create an org-wide team](/microsoftteams/create-an-org-wide-team.md)
+- [Create an org-wide team](/microsoftteams/create-an-org-wide-team)
 - [Create a Team with guests](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f)
-- [Join a Team as a guest](/microsoftteams/guest-experience.md)
+- [Join a Team as a guest](/microsoftteams/guest-experience)
 - [Create a group email address](https://support.microsoft.com/office/3f73d218-52d6-4f88-a733-9ff37073ee4c)
 
 #### For admins and business owners
 
 - [Empower your small business with remote work](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [Running a remote small business](../business-video/sign-up.md)
-- [Sign up for Microsoft Business Basic](../business-video/sign-up.md)
-- [Setting up two-factor sign-in](../business-video/sign-up.md)
+- [Running a remote small business](admin-overview/sign-up-for-office-365.md)
+- [Sign up for Microsoft Business Basic]()
+- [Setting up two-factor sign-in](admin-overview/sign-up-for-office-365.md)
 
 ## March 2020
 
