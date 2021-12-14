@@ -397,9 +397,9 @@ We've got two updates for Groups this month:
 #### For admins and business owners
 
 - [Empower your small business with remote work](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [Running a remote small business](../business-video/sign-up.md)
-- [Sign up for Microsoft Business Basic](../business-video/sign-up.md)
-- [Setting up two-factor sign-in](../business-video/sign-up.md)
+- [Running a remote small business](admin-overview/sign-up-for-office-365.md)
+- [Sign up for Microsoft Business Basic]()
+- [Setting up two-factor sign-in](admin-overview/sign-up-for-office-365.md)
 
 ## March 2020
 
