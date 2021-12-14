@@ -237,21 +237,17 @@ If you've configured one or more custom domains for your Microsoft 365 environme
 
 We recommend that you get started with this protection by creating a policy to protect your most important users and your custom domain.
 
-![Creating an anti-phishing policy in Microsoft Defender for Office 365.](../../media/security-and-compliance-center.png)
-
 To create an anti-phishing policy in Defender for Office 365, view a [short training video](increase-threat-protection.md#protect-your-email-from-phishing-attacks), or complete the following steps:
 
-1. Go to <https://protection.office.com>.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
-2. In the Security & Compliance Center, in the left navigation pane, under **Threat management**, select **Policy**.
+2. Go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-phishing** in the **Policies** section.
 
-3. On the Policy page, select **Anti-phishing**.
+3. On the Anti-phishing page, select **+ Create**. A wizard launches that steps you through defining your anti-phishing policy.
 
-4. On the Anti-phishing page, select **+ Create**. A wizard launches that steps you through defining your anti-phishing policy.
+4. Specify the name, description, and settings for your policy as recommended in the chart below. For more information, see [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../../security/office-365-security/set-up-anti-phishing-policies.md).
 
-5. Specify the name, description, and settings for your policy as recommended in the chart below. For more information, see [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../../security/office-365-security/set-up-anti-phishing-policies.md).
-
-6. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
+5. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
 
 |Setting or option|Recommended setting|
 |---|---|
@@ -273,19 +269,15 @@ People regularly send, receive, and share attachments, such as documents, presen
 
 To create a Safe attachment policy, view a [short training video](../../business-video/safe-attachments.md), or complete the following steps:
 
-1. Go to <https://protection.office.com> and sign in with your admin account.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, and sign in with your admin account.
 
-2. In the Security & Compliance Center, in the left navigation pane, under **Threat management**, select **Policy**.
+2. Go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-malware** in the **Policies** section.
 
-3. On the Policy page, select **Safe Attachments**.
+3. Select **+ Create** to create a new policy.
 
-4. On the Safe attachments page, apply this protection broadly by selecting the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** check box.
+4. Apply the settings in the following table.
 
-5. Select **+** to create a new policy.
-
-6. Apply the settings in the following table.
-
-7. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
+5. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
 
 |Setting or option|Recommended setting|
 |---|---|
@@ -310,29 +302,19 @@ Do the following to protect against attacks:
 
 To get to Safe Links, view a [short training video](increase-threat-protection.md#protect-against-phishing-attacks-with-safe-links), or complete the following steps:
 
-1. Go to <https://protection.office.com> and sign in with your admin account.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, and sign in with your admin account.
 
-2. In the Security & Compliance Center, in the left navigation pane, under **Threat management**, select **Policy**.
+2. Go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-malware** in the **Policies** section.
 
-3. On the Policy page, select **Safe Links**.
+3. Select **+ Create** to create a new policy, or modify the default policy.
 
 To modify the default policy:
 
-1. On the Safe links page, under **Policies that apply to the entire organization**, double-click the **Default** policy.
+1. Double-click the **Default** policy. A flyout appears. 
 
-2. Under **Settings that apply to content across Office 365**, enter a URL to be blocked, such as _example.com_, and select **+**.
+2. Select **Edit protection settings** at the bottom of the flyout.
 
-3. Under **Settings that apply to content except email**, select **Office 365 applications**, **Do not track when users click safe links**, and **Do not let users click through safe links to original URL**.
-
-4. Select **Save**.
-
-To create a new policy targeted to all recipients in your domain:
-
-1. On the Safe links page, under **Policies that apply to specific recipients**, select **+** to create a new policy.
-
-2. Apply the settings listed in the following table.
-
-3. Select **Save**.
+3. After modifying the default policy, select **Save**.
 
 |Setting or option|Recommended setting|
 |---|---|
