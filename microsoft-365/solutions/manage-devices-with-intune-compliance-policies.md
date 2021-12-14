@@ -11,6 +11,8 @@ ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: 
 keywords: 
 description: 

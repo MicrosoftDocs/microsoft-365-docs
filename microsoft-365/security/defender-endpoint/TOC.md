@@ -4,7 +4,7 @@
 ### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
 ### [Compare Defender for Endpoint Plan 1 to Plan 2](defender-endpoint-plan-1-2.md)
 ### [Minimum requirements](minimum-requirements.md)
-### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-atp.md)
+### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-endpoint.md)
 ### [Preview features](preview.md)
 ### [Data storage and privacy](data-storage-privacy.md)
 ### [Overview of Microsoft Defender Security Center](use.md)
@@ -33,18 +33,16 @@
 #### [Onboarding using Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
 ## [Migration guides](migration-guides.md)
-### [Switch from non-Microsoft endpoint protection to Defender for Endpoint](switch-to-microsoft-defender-migration.md)
-#### [Phase 1: Prepare](switch-to-microsoft-defender-prepare.md)
-#### [Phase 2: Setup](switch-to-microsoft-defender-setup.md)
-#### [Phase 3: Onboard](switch-to-microsoft-defender-onboard.md)
-
-
-
-### [Manage Defender for Endpoint after migration](manage-atp-post-migration.md)
-#### [Use Intune (recommended)](manage-atp-post-migration-intune.md)
-#### [Use Configuration Manager](manage-atp-post-migration-configuration-manager.md)
-#### [Use Group Policy](manage-atp-post-migration-group-policy-objects.md)
-#### [Use PowerShell, WMI, or MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
+### [Move to Defender for Endpoint](switch-to-mde-overview.md)
+#### [Phase 1: Prepare](switch-to-mde-phase-1.md)
+#### [Phase 2: Setup](switch-to-mde-phase-2.md)
+#### [Phase 3: Onboard](switch-to-mde-phase-3.md)
+#### [Troubleshooting](switch-to-mde-troubleshooting.md)
+### [Manage Defender for Endpoint after migration](manage-mde-post-migration.md)
+#### [Use Intune (recommended)](manage-mde-post-migration-intune.md)
+#### [Use Configuration Manager](manage-mde-post-migration-configuration-manager.md)
+#### [Use Group Policy](manage-mde-post-migration-group-policy-objects.md)
+#### [Use PowerShell, WMI, or MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
 #### [Server migration scenarios](server-migration.md)
 
 ## [Configure and onboard devices]()
@@ -138,7 +136,7 @@
 ###### [Static proxy configuration](linux-static-proxy-configuration.md)
 ###### [Set preferences](linux-preferences.md)
 ###### [Detect and block Potentially Unwanted Applications](linux-pua.md)
-###### [Schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-atp.md)
+###### [Schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-mde.md)
 ###### [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md)
 
 
@@ -260,6 +258,8 @@
 ### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
 #### [Configure device discovery](configure-device-discovery.md)
+#### [Microsoft Defender for IoT integration](enable-microsoft-defender-for-iot-integration.md)
+#### [Enable Corelight data integration](corelight-integration.md)
 #### [Device discovery FAQ](device-discovery-faq.md)
 
 ### [Network devices](network-devices.md)
@@ -271,7 +271,11 @@
 #### [Configure attack surface reduction capabilities](configure-attack-surface-reduction.md)
 #### [Learn about attack surface reduction rules](attack-surface-reduction.md)
 #### [Attack surface reduction rules](attack-surface-reduction-rules.md)
-#### [Deploy attack surface reduction rules](attack-surface-reduction-rules-deployment.md)
+#### [Deploy attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment.md)
+##### [ASR rules deployment phase 1 - plan](attack-surface-reduction-rules-deployment-phase-1.md)
+##### [ASR rules deployment phase 2 - test](attack-surface-reduction-rules-deployment-phase-2.md)
+##### [ASR rules deployment phase 3 - implement](attack-surface-reduction-rules-deployment-phase-3.md)
+##### [ASR rules deployment phase 4 - operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
 #### [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
 #### [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 #### [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
@@ -729,3 +733,6 @@
 ## [Microsoft 365 Defender](../defender/index.yml)
 ## [Defender for Office 365](../office-365-security/index.yml)
 ## [Defender for Identity](/defender-for-identity/)
+## [Defender for Cloud Apps](/cloud-app-security/)
+## [Defender for Business](../defender-business/index.yml)
+

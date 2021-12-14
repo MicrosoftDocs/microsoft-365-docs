@@ -216,7 +216,7 @@ You can use this query in the **Keywords** box for a Content search, a search as
 
 ![Query to search for third-party data.](..\media\SearchThirdPartyData1.png)
 
-You can also use the `kind:externaldata` property:value pair to to narrow the scope of searches to third-party data. For example, to search for items imported from any third-party data source that contain the word *contoso* in the **Subject** property of the imported item, use the following query in the **Keywords** box:
+You can also use the `kind:externaldata` property:value pair to narrow the scope of searches to third-party data. For example, to search for items imported from any third-party data source that contain the word *contoso* in the **Subject** property of the imported item, use the following query in the **Keywords** box:
 
 ```powershell
 subject:contoso AND kind:externaldata

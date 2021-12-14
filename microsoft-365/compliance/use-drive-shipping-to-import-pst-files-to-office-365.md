@@ -449,7 +449,7 @@ To install the Azure Storage Explorer and connect to your Azure Storage area:
 
   - Search the [audit log](search-the-audit-log-in-security-and-compliance.md) for events related to this data. 
 
-  - Import data to [inactive mailboxes](create-and-manage-inactive-mailboxes.md) to archive data for compliance purposes. 
+  - Import data to [inactive mailboxes](inactive-mailboxes-in-office-365.md) to archive data for compliance purposes. 
 
   - Protect your organization against [data loss](dlp-learn-about-dlp.md) of sensitive information. 
 

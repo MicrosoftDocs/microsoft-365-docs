@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: bcarter
 author: brendacarter
-manager: johmar
+manager: dansimp
 audience: Admin
 ms.topic: tutorial
 ms.prod: m365-security
