@@ -12,7 +12,7 @@ description: "Learn about setup guides for Azure Active Directory."
 
 # Azure Active Directory setup guides
 
-Azure Active Directory (Azure AD) has a robust set of features to help you manage and secure your organization. These setup guides will help you integrate those features in a simple way. In the following sections, we’ll give a brief description of the setup guides and share links to the guides.
+Azure Active Directory (Azure AD) features help you manage and secure your organization. These setup guides will help you integrate those features in a simple way. In the following sections, we’ll give a brief description of the setup guides and share links to the guides.
 
 ## Who are these setup guides for?
 
@@ -30,19 +30,19 @@ You must be a member of the following administrator roles:
 
 - Global reader: allows you to view the setup guides but not make changes in your tenant.
 
-## Recommended deployment for Azure Active Directory  
+## Azure Active Directory deployment  
 
 The Azure Active Directory setup guide will help you set up the most common Azure AD features in a recommended order. The setup guide is split into three sections: **Initial**, **Core**, and **Advanced**. Each section recommends a set of features you should turn on.
 
 The setup guides contain a checklist of the tasks you need to complete and you can track your progress as you go through the guides. The guides will also link to the other setup guides when necessary.
 
-[Launch the Azure Active Directory setup guide](https://go.microsoft.com/fwlink/p/?linkid=2183427).
+[Open the Azure Active Directory setup guide](https://go.microsoft.com/fwlink/p/?linkid=2183427).
 
 ## Add or sync users to your Microsoft account  
 
-This guide helps you get your user accounts setup in Azure and Microsoft 365. Based on your environment and needs, you can choose to add users individually, migrate your on-premises directory with Azure AD cloud sync or Azure AD Connect, or troubleshoot existing sync issues.
+This guide helps you get your user accounts setup in Azure and Microsoft 365. Based on your environment and needs, you can choose to add users individually, migrate your on-premises directory with Azure AD cloud sync or Azure AD Connect, or troubleshoot existing sync issues.
 
-[Launch the Add or Sync users setup guide](https://docs.microsoft.com).
+[Open the Add or Sync users setup guide](https://go.microsoft.com/fwlink/?linkid=2183349).
 
 ### Licensing
 
@@ -64,7 +64,7 @@ SSPR requires one of the following licenses:
 
 - Enterprise Mobility and Security E3 or E5
 
-[Launch the self-service password reset setup guide](https://go.microsoft.com/fwlink/p/?linkid=2183284).
+[Open the self-service password reset setup guide](https://go.microsoft.com/fwlink/p/?linkid=2183284).
 
 ## Multi-factor authentication (MFA)
 
@@ -74,10 +74,10 @@ This guide provides the current MFA status and helps IT admins select the best M
 
 Conditional Access requires an Azure Active Directory P1 or P2 license, security defaults and per-user MFA are free and included with all Microsoft 365 subscriptions.
 
-Launch the multi-factor authentication (MFA) guide
+[Open the multi-factor authentication (MFA) guide](https://go.microsoft.com/fwlink/?linkid=2183506)
 
 ### The passwordless setup guide
 
 The passwordless setup guide is designed to help you determine the best passwordless method for your environment. The methods include security keys, Windows Hello for Business, and the Microsoft Authenticator app. If the recommendation is Windows Hello for Business, there's a section to guide you through the different options. The guide asks you questions to help you craft a step-by-step plan.
 
-[Launch the passwordless setup guide](https://go.microsoft.com/fwlink/?linkid=2183427).
+[Open the passwordless setup guide](https://go.microsoft.com/fwlink/?linkid=2183427).
