@@ -46,9 +46,14 @@ Contact your administrator for help.
 
 **Cause:** 
 
-You deployed and/or installed the Microsoft Defender for Endpoint for macOS package ("Download installation package"), but you might not have run the configuration script ("Download onboarding package"), or you have not assigned a license to the user.
+You deployed and/or installed the Microsoft Defender for Endpoint on macOS package ("Download installation package"), but you might not have run the configuration script ("Download onboarding package"), or you have not assigned a license to the user.
+
+This error can also occur when the Microsoft Defender for Endpoint on macOS isn't up to date. 
+
 
 **Solution:**
 
 Follow the MicrosoftDefenderATPOnboardingMacOs.py instructions documented here:
 [Client configuration](mac-install-manually.md#client-configuration)
+
+For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, the solution is to update the agent. 
