@@ -52,8 +52,8 @@ To add an organization
 
 There are two options for limiting who can be invited to an organization:
 
-- Limit who can be invited as a guest. This prevents users from being added to the other organization's Azure AD as a guest. It prevents sharing of files, folders, sites, teams, and Microsoft 365 groups.
-- Limit who can be added to an external shared channel.
+- Limit who can be invited as a guest. This prevents users from being added to the other organization's Azure AD as a guest. It prevents sharing of files, folders, sites, teams, and Microsoft 365 groups with people who aren't in the security group.
+- Limit who can be added to an external shared channel. Prevents people who aren't in the security group from being added to shared channels in the other organization.
 
 In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
 
