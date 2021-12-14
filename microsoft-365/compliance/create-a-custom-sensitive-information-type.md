@@ -92,7 +92,7 @@ To ensure high performance and lower latency, there are limitations in custom SI
 |maximum size of a keyword dictionary (post compression)| 1MB (~1,000,000 characters)|
 |maximum number of keyword dictionary based SITs in a tenant|50 |
 
-If you have a business need to create more than 500 custom SITs, please raise a support ticket.
+[!NOTE] If you have a business need to create more than 500 custom SITs, please raise a support ticket.
 
 ## Modify custom sensitive information types in the Compliance Center
 
