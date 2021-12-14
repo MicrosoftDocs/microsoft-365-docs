@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -74,9 +74,9 @@ You can turn on Customer Lockbox controls in the Microsoft 365 admin center. Whe
 
 2. Choose **Settings** > **Org Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Security & Privacy**</a>.
 
-3. Select **Customer Lockbox** > **Edit**, and then move the toggle to **On** or **Off** to turn the feature on or off.
+3. Select **Security & Privacy**, then select **Customer Lockbox** in the left column. Check the **Require approval for all data access requests** checkbox and save the changes to turn on the feature.
 
-    ![Require approval for Customer Lockbox.](../media/CustomerLockbox4.png)
+    ![Require approval for Customer Lockbox](../media/CustomerLockbox4-new.png)
 
 ## Approve or deny a Customer Lockbox request
 
@@ -255,6 +255,10 @@ Customer Lockbox requests have a default duration of 12 hours. If you don't resp
 #### What does Microsoft do when a customer rejects a Customer Lockbox request?
 
 If a customer rejects a Customer Lockbox request, no access to customer content occurs. If a user in your organization continues to experience a service issue requiring Microsoft to access customer content to resolve the issue, then the service issue might persist and Microsoft will inform the user about this.
+
+#### How do I set up alerts whenever a request has been approved?
+
+There is no built-in option to alert administrators. However, administrators can set up alerts using [Microsoft cloud App security](/cloud-app-security/getting-started-with-cloud-app-security#to-create-policies).
 
 #### Does Customer Lockbox protect against data requests from law enforcement agencies or other third parties?
 

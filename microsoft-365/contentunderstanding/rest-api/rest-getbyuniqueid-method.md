@@ -9,7 +9,7 @@ ms.topic: reference
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: Use REST API to get or update information about a SharePoint Syntex document understanding model.
 ---
 

@@ -12,7 +12,7 @@ ms.collection:
   - Ent_O365
   - Strat_O365_Enterprise
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
   - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f

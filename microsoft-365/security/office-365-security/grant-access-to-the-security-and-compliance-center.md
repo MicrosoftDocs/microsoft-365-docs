@@ -11,7 +11,7 @@ ms.topic: how-to
 f1_keywords: 
   - 'ms.o365.cc.PermissionsHelp'
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Strat_O365_IP
 search.appverid: 
   - MOE150

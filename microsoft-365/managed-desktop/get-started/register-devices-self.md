@@ -6,7 +6,7 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
@@ -109,7 +109,7 @@ You can monitor the progress of device registration on the main page. Possible s
 | Hardware hash not valid | The hardware hash you provided for this device was not formatted correctly. Double-check the hardware hash and then resubmit. |
 | Device already registered | This device is already registered to your organization. No further action required. |
 | Device claimed by another organization | This device has already been claimed by another organization. Check with your device supplier. |
-| Unexpected error | Your request could not be automatically processed. Contact Support and provide the Request ID: <requestId> |
+| Unexpected error | Your request could not be automatically processed. Contact Support and provide the Request ID: \<requestId\> |
 
 ### Check the image
 
@@ -119,7 +119,7 @@ You’re also welcome to apply the image on your own if you prefer. To get start
 
 ### Autopilot group tag
 
-When you use the Admin portal to register devices, we automatically assign the **Microsoft365Managed_Autopilot** Autopilot Group Tag.
+When you use the Admin portal to register devices, we automatically assign the Autopilot Group Tag associated with the device profile listed in [Register devices by using Partner Center](register-devices-partner.md#register-devices-by-using-partner-center).
 The service monitors all Microsoft Managed Desktop devices daily and assigns the group tag to any that don't already have it.
 
 ### Deliver the device

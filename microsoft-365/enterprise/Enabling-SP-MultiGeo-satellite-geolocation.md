@@ -13,7 +13,7 @@ ms.custom: seo-marvel-apr2020
 ms.collection: 
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 description: This article provides information for Global or SharePoint admins about enabling SharePoint Multi-Geo in satellite geo locations.
 ---
 

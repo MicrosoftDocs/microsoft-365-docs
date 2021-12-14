@@ -4,7 +4,7 @@ description: Info on configurable settings with Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, settings, configurable settings
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi

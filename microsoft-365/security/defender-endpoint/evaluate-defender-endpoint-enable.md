@@ -12,7 +12,7 @@ f1.keywords:
   - NOCSH
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -24,6 +24,9 @@ ms.technology: m365d
 ---
 
 # Pilot MDE Evaluation
+
+**Applies to:**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > [!NOTE]
 > For the purpose of guiding you through a typical deployment, this scenario will only cover the use of Microsoft Endpoint Configuration Manager. Defender for Endpoint supports the use of other onboarding tools but won't cover those scenarios in the deployment guide. For more information, see [Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md).
@@ -62,7 +65,7 @@ The following table lists the available tools based on the endpoint that you nee
 
 |Endpoint|Tool options|
 |---|---|
-|**Windows**|[Local script (up to 10 devices)](../defender-endpoint/configure-endpoints-script.md) <p> [Group Policy](../defender-endpoint/configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/ Mobile Device Manager](../defender-endpoint/configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md) <p> [VDI scripts](../defender-endpoint/configure-endpoints-vdi.md) <p> [Integration with Azure Defender](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)|
+|**Windows**|[Local script (up to 10 devices)](../defender-endpoint/configure-endpoints-script.md) <p> [Group Policy](../defender-endpoint/configure-endpoints-gp.md) <p> [Microsoft Endpoint Manager/ Mobile Device Manager](../defender-endpoint/configure-endpoints-mdm.md) <p> [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md) <p> [VDI scripts](../defender-endpoint/configure-endpoints-vdi.md) <p> [Integration with Microsoft Defender for Cloud](../defender-endpoint/configure-server-endpoints.md#integration-with-azure-defender)|
 |**macOS**|[Local scripts](../defender-endpoint/mac-install-manually.md) <p> [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md) <p> [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md) <p> [Mobile Device Management](../defender-endpoint/mac-install-with-other-mdm.md)|
 |**Linux Server**|[Local script](../defender-endpoint/linux-install-manually.md) <p> [Puppet](../defender-endpoint/linux-install-with-puppet.md) <p> [Ansible](../defender-endpoint/linux-install-with-ansible.md)|
 |**iOS**|[App-based](../defender-endpoint/ios-install.md)|

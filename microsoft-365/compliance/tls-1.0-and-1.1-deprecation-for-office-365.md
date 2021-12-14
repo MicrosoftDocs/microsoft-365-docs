@@ -3,7 +3,7 @@ title: Disabling TLS 1.0 and 1.1 for Microsoft 365
 description: Describes TLS 1.0 and 1.1 deprecation and disablement for Microsoft 365.
 author: workshay
 manager: laurawi
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MET150
 audience: ITPro

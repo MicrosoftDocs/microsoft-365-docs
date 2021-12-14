@@ -4,7 +4,7 @@ description: View risk and exposure levels for a device in your organization. An
 keywords: security, malware, Microsoft 365, M365, Microsoft 365 Defender, security center, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, device page, device profile,  machine page, machine profile
 ms.prod: m365-security
 ms.mktglfcycl: deploy
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: v-maave
 author: martyav
 manager: dansimp

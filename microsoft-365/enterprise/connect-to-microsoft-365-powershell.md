@@ -6,7 +6,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
@@ -88,15 +88,13 @@ These steps are required only one time on your computer. But you'll likely need 
 ```console
 Untrusted repository
 
-You are installing the modules from an untrusted repository. If you trust this repository, change
-its InstallationPolicy value by running the `Set-PSRepository` cmdlet.
+You are installing the modules from an untrusted repository. If you trust this repository, change its InstallationPolicy value by running the `Set-PSRepository` cmdlet.
 
 Are you sure you want to install the modules from 'PSGallery'?
 [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
 ```
 
 Answer **Yes** or **Yes to All** to continue with the installation.
-
 
 ### Step 2: Connect to Azure AD for your Microsoft 365 subscription
 

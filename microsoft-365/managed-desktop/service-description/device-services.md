@@ -4,7 +4,7 @@ description:  This topic lists device services and limitation for Microsoft Mana
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
@@ -17,7 +17,7 @@ This topic lists the services and service limitations for Microsoft Managed Desk
 
 ## Device services
 
-Microsoft will provide these services for Microsoft Managed Desktop devices. For a list of recommended Microsoft Managed Desktop program devices, filter for Microsoft Managed Desktop on the [Shop Windows 10 Pro business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices) site.
+Microsoft will provide these services for Microsoft Managed Desktop devices. For a list of recommended Microsoft Managed Desktop program devices, filter for Microsoft Managed Desktop on the [Shop Windows Pro business devices](https://www.microsoft.com/windows/business/devices) site.
 
 Service | Description
 --- | ---

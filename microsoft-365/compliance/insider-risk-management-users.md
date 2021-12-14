@@ -2,8 +2,8 @@
 title: Insider risk management Users dashboard
 description: Learn about insider risk management Users dashboard in Microsoft 365
 keywords: Microsoft 365, insider risk management, risk management, compliance
-localization_priority: Normal
-ms.prod: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -12,6 +12,7 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Insider risk management Users dashboard
@@ -63,6 +64,8 @@ Each user displayed in the **Users dashboard** has the following information:
 - **Active alerts**: The number of active alerts for all policies.
 - **Confirmed violations**: The number of cases resolved as *confirmed policy violation* for the user.
 - **Case**: The current active case for the user.
+
+To quickly locate a specific user, use **Search** at the top right of the User dashboard. When searching for users, you must use the user principal name (UPN). For example, when searching for a user named 'Tiara Hidayah' that has a UPN of 'thidayah' in your organization, you would enter 'thidayah' or some part of the UPN in **Search**.
 
 ![Insider risk management users dashboard.](../media/insider-risk-users-dashboard.png)
 

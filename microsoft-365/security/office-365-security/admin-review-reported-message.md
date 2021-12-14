@@ -7,10 +7,10 @@ author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
   - M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 description: Learn how to review messages that are reported and give feedback to your users.
 ms.technology: mdo
 ms.prod: m365-security
@@ -19,9 +19,6 @@ ms.prod: m365-security
 # Admin review for reported messages
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
-> [!NOTE]
-> The information in this article relates to a preview product that may be substantially modified before it's commercially released. This document is provided for evaluation and exploration purposes only.
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -35,7 +32,7 @@ You will only be able to mark and notify users of review results if the message 
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com/>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+- You open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 - To modify the configuration for User submissions, you need to be a member of one of the following role groups:
   - Organization Management or Security Administrator in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
@@ -47,7 +44,7 @@ You will only be able to mark and notify users of review results if the message 
 
 ## Notify users from within the portal
 
-1. In the Microsoft 365 Defender portal, go directly to the **Submissions** page: [https://security.microsoft.com/reportsubmission}(https://security.microsoft.com/reportsubmission).
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go directly to the **Submissions** page: [https://security.microsoft.com/reportsubmission](https://security.microsoft.com/reportsubmission).
 
 2. Click **User reported messages**, and then select the message you want to mark and notify.
 
@@ -60,7 +57,7 @@ The reported message will be marked as either false positive or false negative, 
 
 ## Customize the messages used to notify users
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **User reported message settings** in the **Others** section.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **User reported message settings** in the **Others** section.
 
 2. On the **User submissions** page, if you want to specify the sender display name, check the box for **Specify Office 365 email address to use as sender** under the **Email notifications for admin review results** section, and enter in the name you wish to use. The email address that will be visible in Outlook and all the replies will go there.
 

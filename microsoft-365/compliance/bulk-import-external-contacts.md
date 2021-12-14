@@ -9,11 +9,12 @@ ms.date: 6/29/2018
 audience: End User
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
+ms.custom: admindeeplinkEXCHANGE
 description: "Learn how admins can use Exchange Online PowerShell and a CSV file to bulk import external contacts to the global address list."
 ---
 
@@ -78,7 +79,7 @@ The next step is to use the CSV file that you created in Step 1 and PowerShell t
 
     It might take a while to create the new contacts, depending on how many you're importing. When the command is finished running, PowerShell displays a list of the new contacts that were created. 
     
-4. To view the new external contacts, go to the Exchange admin center (EAC), and then click **Recipients** \> **Contacts**. 
+4. To view the new external contacts, go to the Exchange admin center (EAC), and then click **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2182970" target="_blank">**Contacts**</a>. 
     
     > [!TIP]
     > For instructions for connecting to the EAC, see [Exchange admin center in Exchange Online](/exchange/exchange-admin-center). 

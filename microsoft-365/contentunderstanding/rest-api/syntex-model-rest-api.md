@@ -9,7 +9,7 @@ ms.topic: reference
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority: high
 description: Overview of the SharePoint Syntex document understanding model REST API.
 ---
 
@@ -39,7 +39,8 @@ The following REST commands are available for working with Syntex document under
 - [Get model and library information](rest-getmodelandlibraryinfo.md) – Gets information about a model and the library where it has been applied.
 - [UpdateModelSettings](rest-updatemodelsettings-method.md) – Updates available models settings (associated retention label and model description) for a SharePoint Syntex document understanding model.
 - [BatchDelete](rest-batchdelete-method.md) – Removes an applied document understanding model from one or more libraries.
-- [Create classification request](rest-createclassificationrequest.md) – Creates a request to classify a specified file or files using the applied model.
+- [Create file classification request](rest-createclassificationrequest.md) – Creates a request to classify a specified file or files using the applied model.
+- [Create folder classification request](rest-createclassificationrequest.md) – Creates a request to classify an entire folder using the applied model.
 
 ## Scenarios
 

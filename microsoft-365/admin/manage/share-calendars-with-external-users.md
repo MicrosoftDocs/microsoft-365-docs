@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -49,5 +49,5 @@ Once sharing is enabled, calendar owners can extend invitations to specific user
 ## Related content
 
 [Turn external sharing on or off for a site](/sharepoint/change-external-sharing-site) (article)\
-[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)\
-[Manage email and calendars](../email/index.yml) (link page)
+[Overview of the Microsoft 365 admin center]([Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)\
+[Manage email and calendars](/admin) (link page)

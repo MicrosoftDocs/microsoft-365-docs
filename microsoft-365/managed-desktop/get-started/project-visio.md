@@ -7,7 +7,7 @@ author: jaimeo
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
 ---

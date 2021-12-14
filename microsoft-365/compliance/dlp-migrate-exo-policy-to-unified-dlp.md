@@ -1,5 +1,5 @@
 ---
-title: "Migrate Exchange Online data loss prevention policies to Compliance center (preview)"
+title: "Migrate Exchange Online data loss prevention policies to Compliance center"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -11,7 +11,7 @@ ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
-localization_priority: normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
@@ -20,7 +20,7 @@ search.appverid:
 description: "Learn how to plan for and migrate your Exchange online data loss prevention policies into Microsoft 365 DLP."
 ---
 
-# Migrate Exchange Online data loss prevention policies to Compliance center (preview)
+# Migrate Exchange Online data loss prevention policies to Compliance center
 
 [Exchange Online data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) are being deprecated. [Much richer DLP functionality](dlp-learn-about-dlp.md), including Exchange Online DLP, is offered in the [Microsoft 365 Compliance center](https://compliance.microsoft.com/datalossprevention?viewid=policies). You can use the DLP policy migration wizard to help you bring your Exchange Online DLP policies over to the Compliance center where you'll manage them.
 
@@ -111,6 +111,17 @@ After you have evaluated all your Exchange and Compliance center DLP policies fo
 9. Review the migration report. Pay attention to any failures involving Exchange mailflow rules. You can fix them and re-migrate the associated policies.
 
 The migrated policies will now appear in the list of DLP policies in the Compliance center DLP console. 
+
+## Common errors and mitigation
+|Error message  |Reason  | Mitigation/Recommended steps|
+|---------|---------|---------|
+|A compliance policy with name `<Name of the policy>` already exists in scenario(s) `Dlp`.    |It is likely that this policy migration was done earlier and then reattempted in the same session |Refresh the session to update the list of policies available for migration. All previously migrated policies should be in the `Already migrated` state.|
+|A compliance policy with name `<Name of the policy>` already exists in scenario(s) `Hold`.     |A retention policy with the same name exists in the same tenant.       |- Rename the DLP policy in EAC to a different name. </br> - Retry the migration for the impacted policy. |
+|`DLP-group@contoso.com` can’t be used as a value for the Shared By condition because it’s a distribution group or mail-enabled security group. Please use Shared by Member of predicate to detect activities by members of certain groups.     |Transport rules allow groups to be used in the `sender is` condition but unified DLP does not allow it.         | Update the transport rule to remove all group email addresses from the `sender is` condition and add the group to the `sender is a member of` condition if required. Retry the migration for the impacted policy|
+|Could not find recipient `DLP-group@contoso.com`. If newly created please retry the operation after sometime. If deleted or expired please reset with valid values and try again.     |It is likely that the group address used in `sender is a member of` or `recipient is a member of` condition is expired or invalid.         | - Remove/replace all the invalid group email addresses in the transport rule in Exchange admin center. </br> - Retry the migration for the impacted policy.|
+|The value specified in `FromMemberOf` predicate must be mail enabled security group.     |Transport rules allow individual users to be used in the `sender is a member of` condition but unified DLP does not allow it.         | - Update the transport rule to remove all individual user email addresses from the `sender is a member of` condition and add the users to the `sender is` condition if required. </br> - Retry the migration for the impacted policy.|
+|The value specified in `SentToMemberOf` predicate must be mail enabled security group.    |Transport rules allow individual users to be used under the `recipient is a member of` condition but unified DLP does not allow it.         | - Update the transport rule to remove all individual user email addresses from the `recipient is a member of` condition and add the users to the `recipient is` condition if required. </br> - Retry the migration for the impacted policy.|
+|Using the `<Name of condition>` parameter is supported only for Exchange. Either remove this parameter or turn on only Exchange location.         | It is likely that another policy with the same name exists in Compliance center with other locations like SPO/ODB/Teams for which the mentioned condition is not supported. | Rename the DLP policy in Exchange admin center and retry the migration.|
 
 ## Testing and validation <!--PRATEEK AND AAKASH TO PROVIDE A LIST OF SUPPORTED PREDICATES AND KNOWN ISSUES BEFORE PUBLISHING-->
 

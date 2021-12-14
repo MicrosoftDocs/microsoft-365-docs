@@ -11,7 +11,7 @@ ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - M365-modern-desktop
-localization_priority: None
+ms.localizationpriority: null
 description: "Learn about Learning Tools Interoperability (LTI) Office apps in M365, and how they will help educators when integrating Office apps into their Learning Management System (LMS)."
 ---
 

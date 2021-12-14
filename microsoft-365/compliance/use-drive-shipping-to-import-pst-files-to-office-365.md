@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -65,10 +65,10 @@ For frequently asked questions about using drive shipping to import PST files to
 
 - Large PST files may impact the performance of the PST import process. So we recommend that each PST file you copy to the hard drive in Step 2 should be no larger than 20 GB.
     
-- Only 2.5-inch solid-state drives (SSDs) or 2.5-inch or 3.5-inch SATA II/III internal hard drives are supported for use with the Office 365 Import service. You can use hard drives up to 10 TB. For import jobs, only the first data volume on the hard drive will be processed. The data volume must be formatted with NTFS. When copying data to a hard drive, you can attach it directly using a 2.5-inch SSD or 2.5-inch or 3.5-inch SATA II/III connector or you can attach it externally using an external 2.5-inch SSD or 2.5-inch or 3.5-inch SATA II/III USB adaptor.
+- Only 2.5-inch solid-state drives (SSDs) or 2.5-inch or 3.5-inch SATA II/III internal hard drives are supported for use with the Office 365 Import service. You can use hard drives up to 10 TB. For import jobs, only the first data volume on the hard drive will be processed. The data volume must be formatted with NTFS. When copying data to a hard drive, you can attach it directly using a 2.5-inch SSD or 2.5-inch or 3.5-inch SATA II/III connector or you can attach it externally using an external 2.5-inch SSD or 2.5-inch or 3.5-inch SATA II/III USB adapter.
     
     > [!IMPORTANT]
-    > External hard drives that come with an built-in USB adaptor aren't supported by the Office 365 Import service. Additionally, the disk inside the casing of an external hard drive can't be used. Please don't ship external hard drives. 
+    > External hard drives that come with a built-in USB adapter aren't supported by the Office 365 Import service. Additionally, the disk inside the casing of an external hard drive can't be used. Please don't ship external hard drives. 
   
 - The hard drive that you copy the PST files to must be encrypted with BitLocker. The WAImportExport.exe tool that you run in Step 2 will help you set up BitLocker. It also generates a BitLocker encryption key that Microsoft data center personnel use to access the drive to upload the PST files to the Azure Storage area in the Microsoft cloud.
     
@@ -366,13 +366,13 @@ After PST files are uploaded to Azure, the status is changed to **Analysis in pr
   
 6. Do one of the following:
 
-    a. To trim the data that you import, click **Yes, I want to filter it before importing**.
+   1. To trim the data that you import, click **Yes, I want to filter it before importing**.
 
-    For detailed step-by-step instructions about filtering the data in the PST files and then starting the import job, see [Filter data when importing PST files to Office 365](filter-data-when-importing-pst-files.md).
+      For detailed step-by-step instructions about filtering the data in the PST files and then starting the import job, see [Filter data when importing PST files to Office 365](filter-data-when-importing-pst-files.md).
 
-    Or
+      Or
 
-    b. To import all data in the PST files, click **No, I want to import everything,** and click **Next**.
+   1. To import all data in the PST files, click **No, I want to import everything,** and click **Next**.
 
 7. If you chose to import all the data, click **Import data** to start the import job. 
 
@@ -439,7 +439,7 @@ To install the Azure Storage Explorer and connect to your Azure Storage area:
 
 - Drive shipping is an effective way to import large amounts of archival messaging data to Microsoft 365 to take advantage of the compliance features that are available to your organization. After archival data is imported to user mailboxes, you can:
 
-  - Enable [archive mailboxes](enable-archive-mailboxes.md) and [auto-expanding archiving](enable-unlimited-archiving.md) to give users more mailbox storage space for the data. 
+  - Enable [archive mailboxes](enable-archive-mailboxes.md) and [auto-expanding archiving](enable-autoexpanding-archiving.md) to give users more mailbox storage space for the data. 
 
   - Place mailboxes on [Litigation Hold](./create-a-litigation-hold.md) to retain the data. 
 
@@ -449,7 +449,7 @@ To install the Azure Storage Explorer and connect to your Azure Storage area:
 
   - Search the [audit log](search-the-audit-log-in-security-and-compliance.md) for events related to this data. 
 
-  - Import data to [inactive mailboxes](create-and-manage-inactive-mailboxes.md) to archive data for compliance purposes. 
+  - Import data to [inactive mailboxes](inactive-mailboxes-in-office-365.md) to archive data for compliance purposes. 
 
   - Protect your organization against [data loss](dlp-learn-about-dlp.md) of sensitive information. 
 

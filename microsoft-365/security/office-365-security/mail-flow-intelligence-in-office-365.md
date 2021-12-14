@@ -2,13 +2,13 @@
 title: Mail flow intelligence
 f1.keywords: 
   - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: troubleshooting
-
-localization_priority: Normal
+ms.custom: admindeeplinkEXCHANGE
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
@@ -70,7 +70,7 @@ Typically, this error means Microsoft 365 encountered a connection error when it
 
 - If no more messages should be delivered to your on-premises environment, click **Fix now** in the alert so Microsoft 365 can immediately reject the messages with invalid recipients. This will reduce the risk of exceeding your organization's quota for invalid recipients, which could impact normal message delivery. Or, you can use the following instructions to manually fix the issue:
 
-  - In the [Exchange admin center (EAC)](/Exchange/exchange-admin-center), disable or delete the connector that delivers email from Microsoft 365 to your on-premises email environment:
+  - In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, disable or delete the connector that delivers email from Microsoft 365 to your on-premises email environment:
 
     1. In the EAC, go to **Mail flow** \> **Connectors**.
 

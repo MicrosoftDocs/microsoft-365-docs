@@ -12,7 +12,7 @@ f1.keywords:
 ms.author: v-jweston
 author: jweston-1
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -79,7 +79,7 @@ To run any of the provided simulations, you need at least [one onboarded device]
 > Simulation files or scripts mimic attack activity but are actually benign and will not harm or compromise the test device.
 
 ## Next steps
-[Evaluate Microsoft Cloud App Security](eval-defender-mcas-overview.md)
+[Evaluate Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)
 
 Return to the overview for [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
 

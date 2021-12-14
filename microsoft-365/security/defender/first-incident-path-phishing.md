@@ -1,6 +1,6 @@
 ---
 title: Example of a phishing email attack
-description: Step through an example analysis of an phishing attack.
+description: Step through an example analysis of a phishing attack.
 keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -36,7 +36,7 @@ For example, an analyst was assigned a multi-stage incident.
  
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-incident.png" alt-text="Example of a multi-stage incident."::: 
 
-In the **Alerts** tab of the incident, alerts from Defender for Office 365 and Microsoft Cloud App Security are displayed. The analyst can drill down into the Defender for Office 365 alerts by selecting the email messages alerts. The details of the alert are displayed on the side pane.
+In the **Alerts** tab of the incident, alerts from Defender for Office 365 and Microsoft Defender for Cloud Apps are displayed. The analyst can drill down into the Defender for Office 365 alerts by selecting the email messages alerts. The details of the alert are displayed on the side pane.
 
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-alerts.png" alt-text="Example of an email alert.":::
  

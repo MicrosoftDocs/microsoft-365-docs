@@ -12,7 +12,9 @@ metadata:
   ms.prod: microsoft-365-enterprise
   ms.service: O365-seccomp #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
-  ms.collection: M365-subscription-management
+  ms.collection: 
+  - M365-subscription-management
+  - Adm_TOC
   author: robmazz #Required; your GitHub user alias, with correct capitalization.
   ms.author: robmazz #Required; microsoft alias of author; optional team alias.
   ms.date: 07/28/2020 #Required; mm/dd/yyyy format.

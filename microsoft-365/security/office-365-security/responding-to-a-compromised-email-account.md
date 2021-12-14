@@ -14,8 +14,10 @@ ms.collection:
 ms.custom: 
   - TopSMBIssues
   - seo-marvel-apr2020
-
-localization_priority: Priority
+  - admindeeplinkMAC
+  - admindeeplinkDEFENDER
+  - admindeeplinkEXCHANGE
+ms.localizationpriority: high
 search.appverid: 
   - MET150
 description: Learn how to recognize and respond to a compromised email account using tools available in Microsoft 365.
@@ -54,11 +56,11 @@ Users might notice and report unusual activity in their Microsoft 365 mailboxes.
 - Mail forwarding was recently added.
 - An unusual signature was recently added, such as a fake banking signature or a prescription drug signature.
 
-If a user reports any of the above symptoms, you should perform further investigation. The [Microsoft 365 Defender](https://security.microsoft.com) and the Azure portal offer tools to help you investigate the activity of a user account that you suspect may be compromised.
+If a user reports any of the above symptoms, you should perform further investigation. The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and the Azure portal offer tools to help you investigate the activity of a user account that you suspect may be compromised.
 
 - **Unified audit logs in the Microsoft 365 Defender portal**: Review all the activities for the suspected account by filtering the results for the date range spanning from immediately before the suspicious activity occurred to the current date. Do not filter on the activities during the search.
 
-- **Admin Audit logs in the EAC**: In Exchange Online, you can use the Exchange admin center (EAC) to search for and view entries in the administrator audit log. The administrator audit log records specific actions, based on Exchange Online PowerShell cmdlets, performed by administrators, and users who have been assigned administrative privileges. Entries in the administrator audit log provide you with information about what cmdlet was run, which parameters were used, who ran the cmdlet, and what objects were affected.
+- **Admin Audit logs in the EAC**: In Exchange Online, you can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC) </a> to search for and view entries in the administrator audit log. The administrator audit log records specific actions, based on Exchange Online PowerShell cmdlets, performed by administrators, and users who have been assigned administrative privileges. Entries in the administrator audit log provide you with information about what cmdlet was run, which parameters were used, who ran the cmdlet, and what objects were affected.
 
 - **Azure AD Sign-in logs and other risk reports in the Azure AD portal**: Examine the values in these columns:
   - Review IP address
@@ -94,7 +96,7 @@ Follow the procedures in [Reset a business password for someone](../../admin/add
 
 ### Step 2 Remove suspicious email forwarding addresses
 
-1. Open the Microsoft 365 admin center at <https://admin.microsoft.com>.
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
 2. Go to **Users** \> **Active users**. Find the user account in question, and select the user (row) without selecting the checkbox.
 
@@ -123,13 +125,13 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 > [!IMPORTANT]
 > You can block the suspected compromised account from signing-in until you believe it is safe to re-enable access.
 
-1. Open the Microsoft 365 admin center at <https://admin.microsoft.com> and go to **Users** \> **Active users**.
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> and go to **Users** \> **Active users**.
 
 2. Find and select the user account, click ![More icon.](../../media/ITPro-EAC-MoreOptionsIcon.png), and then select **Edit sign-in status**.
 
 3. On the **Block sign-in** pane that appears, select **Block this user from signing in**, and then click **Save changes**.
 
-4. Open the Exchange admin center (EAC) at <https://admin.exchange.microsoft.com>, and go to **Recipients** \> **Mailboxes**.
+4. Open the Exchange admin center (EAC), and go to **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">**Mailboxes**</a>.
 
 5. Find and select the user. In the mailbox details flyout that opens, do the following steps:
    - In the **Email apps** section, block all of the available settings by moving the toggle to the right ![Disable.](../../media/scc-toggle-on.png):
@@ -147,12 +149,12 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 > [!NOTE]
 > Administrative role group membership can be restored after the account has been secured.
 
-1. Open the Microsoft 365 admin center at <https://admin.microsoft.com> with a global administrator account and do the following steps:
+1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> with a global administrator account and do the following steps:
    1. Go to **Users** \> **Active users**.
    2. Find and select the user account, click ![More icon.](../../media/ITPro-EAC-MoreOptionsIcon.png), and then select **Manage roles**.
    3. Remove any administrative roles that are assigned to the account. When you're finished, click **Save changes**.
 
-2. Open the Microsoft 365 Defender portal at <https://security.microsoft.com> and do the following steps:
+2. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and do the following steps:
    1. Go to **Permissions & roles** \> **Email & collaboration roles** \> **Roles**.
    2. On the **Permissions** page, select each role group in the list and look for the user account in the **Members** section of the details flyout that appears. If the role group contains the user account, do the following steps:
       1. In the **Members** section, click **Edit**.
@@ -162,8 +164,8 @@ To unblock a mailbox from sending mail, follow the procedures in [Removing a use
 
          When you're finished, click **Done**, **Save**, and then **Close**.
 
-3. Open the EAC at <https://admin.exchange.microsoft.com> and do the following steps:
-   1. Select **Roles** \> **Admin roles**.
+3. Open the EAC and do the following steps:
+   1. Select **Roles** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183234" target="_blank">**Admin roles**</a>.
    2. On the **Admin roles** page, manually select each role group, and in the details pane, select the **Assigned** tab to verify the user accounts. If the role group contains the user account, do the following steps:
       1. Select the user account.
       2. Click the ![Delete icon.](../../media/m365-cc-sc-delete-icon.png).

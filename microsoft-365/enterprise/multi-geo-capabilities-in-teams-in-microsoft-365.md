@@ -15,7 +15,7 @@ ms.collection:
 - SPO_Content
 - m365solution-scenario
 - m365solution-spintranet
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Learn about how Teams works with Microsoft 365 Multi-Geo."
 ---
 
@@ -24,6 +24,9 @@ description: "Learn about how Teams works with Microsoft 365 Multi-Geo."
 Multi-Geo capabilities in Teams enables Teams chat data to be stored at rest in a specified geo location. Chat data consists of chat messages, including private messages, channel messages, and images used in chats.
 
 Teams uses the Preferred Data Location (PDL) for users and groups to determine where to store data. If the PDL is not set or is invalid, data is stored in the tenant's central location.
+
+> [!NOTE]
+> Multi-Geo capabilities in Teams rolled out in July 2021. Your chat and channel messages will be automatically migrated to the correct geo location over the next few quarters. Any new PDL changes will be processed after the tenant has completed the initial sync, and new PDL changes beyond that will be queued and processed in the order they are received.
 
 ## User chat
 

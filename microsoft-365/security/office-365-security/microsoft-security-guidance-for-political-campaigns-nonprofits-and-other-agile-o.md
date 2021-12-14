@@ -13,7 +13,7 @@ ms.collection:
   - Strat_O365_Enterprise
   - M365-security-compliance
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
   - MET150
 ms.custom: 

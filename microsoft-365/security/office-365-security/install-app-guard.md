@@ -9,7 +9,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
   - MOE150
@@ -78,9 +78,7 @@ To learn more about Office update channels, see [Overview of update channels for
 > [!NOTE]
 > This is not required, however, configuring optional diagnostics data will help diagnose reported issues.
 
-This step ensures that the data necessary to identify and fix problems is
-reaching Microsoft. Follow these steps to enable diagnostics on your Windows
-device:
+This step ensures that the data necessary to identify and fix problems is reaching Microsoft. Follow these steps to enable diagnostics on your Windows device:
 
 1. Open **Settings** from the Start menu.
 

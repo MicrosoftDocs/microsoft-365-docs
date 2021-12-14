@@ -9,13 +9,13 @@ ms.date: 09/29/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
-ms.custom:
+ms.custom: admindeeplinkCOMPLIANCE
 description: Learn how to use Compliance Score and Compliance Manager to improve your level of protection for personal data.
 ---
 

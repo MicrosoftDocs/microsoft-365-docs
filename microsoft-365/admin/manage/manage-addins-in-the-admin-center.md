@@ -8,11 +8,12 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
+- Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -48,26 +49,23 @@ Consider deleting an add-in if no one is using it anymore. For example, turning 
 
 You can also delete an add-in that was deployed.
 
-1. In the admin center, go to the **Settings** > **Services & add-ins** page.
+1. In the admin center, go to the **Settings** > **Integrated apps** page.
 
-    > [!NOTE]
-    > You can also deploy add-ins in the admin center through [Integrated Apps](test-and-deploy-microsoft-365-apps.md). Integrated Apps is visible to Global and Exchange administrators. If you don't see the above steps, go to the Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
+2. Select the deployed add-in and then select the **Configuration** tab.
 
-2. Select the deployed add-in.
+3. In the **Configuration** pane, go to **Advanced Settings** > **Add-ins**.
 
-3. Click on **Delete Add-In**. Remove the Add-in button on the bottom-right corner.
+4. Select the add-in from the list again.
 
-4. Validate your selections, and choose **Remove add-in**.
+5. Choose **Remove Add-In**. Remove the Add-in button on the bottom right corner.
+
+6. Validate your selections, and choose **Remove**.
 
 ## Edit add-in access
 
 Post deployment, admins can also manage user access to add-ins.
 
-1. In the admin center, go to the **Settings** > **Services & add-ins** page.
-
-    > [!NOTE]
-    > You can also deploy add-ins in the admin center through [Integrated Apps](test-and-deploy-microsoft-365-apps.md). Integrated Apps is visible to Global and Exchange administrators. If you don't see the above steps, go to the Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
-
+1. In the admin center, go to the **Settings** > **Integrated apps** page.
 
 2. Select the deployed add-in.
 
@@ -84,15 +82,11 @@ As an organization you may wish to prevent the download of new Office add-ins fr
   
 **To turn off add-in acquisition**
   
-1. In the admin center, go to the **Settings** \> [Services &amp; add-ins](https://go.microsoft.com/fwlink/p/?linkid=2053743) page.
+1. In the admin center, go to the **Settings** \> [Org settings](https://go.microsoft.com/fwlink/p/?linkid=2053743) page.
 
-    > [!NOTE]
-    > You can also deploy add-ins in the admin center through [Integrated Apps](test-and-deploy-microsoft-365-apps.md). Integrated Apps is visible to Global and Exchange administrators. If you don't see the above steps, go to the Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
-
+2. Select **User owned apps and services**.
     
-3. Select **User owned apps and services**.
-    
-4. Clear the option to let users access the Office store.
+3. Clear the option to let users access the Office store.
 
     This will prevent all users from acquiring the following add-ins from the store.
       
@@ -159,8 +153,5 @@ If the deployed add-in doesn't support add-in commands or if you want to view al
 
 ## Related content
 
-[Deploy add-ins in the admin center](./manage-deployment-of-add-ins.md) (article)\
-Learn more about creating and building [Office Add-ins](/office/dev/add-ins/overview/office-add-ins) (article)\
-[Use Centralized Deployment PowerShell cmdlets to manage add-ins](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) (article)\
-[Troubleshoot: User not seeing add-ins](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (article)\
-[Minors and acquiring add-ins from the Microsoft Store](./minors-and-acquiring-addins-from-the-store.md) (article)
+[Minors and acquiring add-ins from the Microsoft Store](./minors-and-acquiring-addins-from-the-store.md)
+

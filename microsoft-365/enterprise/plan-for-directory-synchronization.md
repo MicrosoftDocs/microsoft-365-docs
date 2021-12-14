@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: conceptual
 ms.date: 09/30/2020
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
