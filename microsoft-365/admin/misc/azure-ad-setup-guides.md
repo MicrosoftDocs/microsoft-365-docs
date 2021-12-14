@@ -36,7 +36,7 @@ The Azure Active Directory setup guide will help you set up the most common Azur
 
 The setup guides contain a checklist of the tasks you need to complete and you can track your progress as you go through the guides. The guides will also link to the other setup guides when necessary.
 
-[Launch the Azure Active Directory setup guide](https://go.microsoft.com/fwlink/p/?linkid= 2183427).
+[Launch the Azure Active Directory setup guide](https://go.microsoft.com/fwlink/p/?linkid=2183427).
 
 ## Add or sync users to your Microsoft account  
 
