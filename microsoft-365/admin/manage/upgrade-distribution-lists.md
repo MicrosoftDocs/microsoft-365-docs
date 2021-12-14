@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
@@ -36,7 +37,7 @@ You must be a global admin or Exchange admin to upgrade a distribution list grou
 
 ### Use the new EAC to upgrade one or many distribution list groups to Microsoft 365 Groups in Outlook
 
-1. Go to the new [Exchange admin center](https://admin.exchange.microsoft.com), and navigate to **Recipients** \> **Groups**.
+1. Go to the new Exchange admin center > **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">Groups</a>.
 
 2. Select the distribution list group (also called a **distribution group**) that you want to upgrade to Microsoft 365 group from the **Groups** page.
 
@@ -45,23 +46,21 @@ You must be a global admin or Exchange admin to upgrade a distribution list grou
 4. In the dialog box **Ready to upgrade?**, click **Upgrade**. The process begins immediately. Depending on the size and number of distribution list groups you're upgrading, the process can take minutes or hours.
 
 > [!NOTE]
-> A banner at the top indicates the upgrade, for example, *Distribution group(s) has been upgraded. It will take 5 minutes to reflect the changes. Filter by Microsoft 365 groups to see the upgraded distrubtion groups(s)*.
+> A banner at the top indicates the upgrade, for example, *Distribution group(s) has been upgraded. It will take 5 minutes to reflect the changes. Filter by Microsoft 365 groups to see the upgraded distribution groups(s)*.
 
 ### Use the Classic EAC to upgrade one or many distribution list groups to Microsoft 365 Groups in Outlook
 
-1. Go to the Classic <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
+1. Go to the Exchange admin center > **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>.<br/>You'll see a notice indicating you have distribution lists (also called **distribution groups**) that are eligible to be upgraded to Microsoft 365 Groups.<br/> ![Select the Get started button.](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
-2. In the Classic Exchange admin center, go to **Recipients** \> **Groups**.<br/>You'll see a notice indicating you have distribution lists (also called **distribution groups**) that are eligible to be upgraded to Microsoft 365 Groups.<br/> ![Select the Get started button.](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+1. Select one or more distribution lists (also called a **distribution group**) from the **groups** page.<br/>![Select a distribution group.](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
-3. Select one or more distribution lists (also called a **distribution group**) from the **groups** page.<br/>![Select a distribution group.](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
+1. Select the upgrade icon.<br/>![Upgrade to Microsoft 365 Groups icon.](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
-4. Select the upgrade icon.<br/>![Upgrade to Microsoft 365 Groups icon.](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+1. On the information dialog, select **Yes** to confirm the upgrade. The process begins immediately. Depending on the size and number of DLs you're upgrading, the process can take minutes or hours.<br/>If the distribution list can't be upgraded, a dialog appears saying so. See [Which distribution lists cannot be upgraded?](#which-distribution-lists-cant-be-upgraded).
 
-5. On the information dialog, select **Yes** to confirm the upgrade. The process begins immediately. Depending on the size and number of DLs you're upgrading, the process can take minutes or hours.<br/>If the distribution list can't be upgraded, a dialog appears saying so. See [Which distribution lists cannot be upgraded?](#which-distribution-lists-cant-be-upgraded).
+1. If you're upgrading multiple distribution lists, use the drop-down list to filter which distribution lists have been upgraded. If the list isn't complete, wait a while longer and then select **Refresh** to see what's been successfully upgraded.<br/>There's no notice that tells you when the upgrade process has completed for all DLs you selected. You can figure this out by looking to see what's listed under **Available for upgrade** or **Upgraded DLs**.
 
-6. If you're upgrading multiple distribution lists, use the drop-down list to filter which distribution lists have been upgraded. If the list isn't complete, wait a while longer and then select **Refresh** to see what's been successfully upgraded.<br/>There's no notice that tells you when the upgrade process has completed for all DLs you selected. You can figure this out by looking to see what's listed under **Available for upgrade** or **Upgraded DLs**.
-
-7. If you selected a DL for upgrade, but it's still appeared on the page as Available to upgrade, then it failed to upgrade. See [What to do if the upgrade doesn't work](#what-to-do-if-the-upgrade-doesnt-work).
+1. If you selected a DL for upgrade, but it's still appeared on the page as Available to upgrade, then it failed to upgrade. See [What to do if the upgrade doesn't work](#what-to-do-if-the-upgrade-doesnt-work).
 
 > [!NOTE]
 > If you're getting the groups digest emails you may notice at the bottom that it will sometimes offer to let you upgrade any eligible distribution lists that you're the owner of. See [Have a group conversation in Outlook](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22) for more information about digest emails.

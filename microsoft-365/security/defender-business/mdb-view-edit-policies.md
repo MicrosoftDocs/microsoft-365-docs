@@ -1,13 +1,13 @@
 ---
-title: View or edit policies in Microsoft Defender for Business
-description: Learn how to view, edit, create, and delete next-generation protection policies in Microsoft Defender for Business
+title: View or edit policies in Microsoft Defender for Business (preview)
+description: Learn how to view, edit, create, and delete next-generation protection policies in Microsoft Defender for Business (preview)
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 12/08/2021
+ms.date: 12/10/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,12 +18,14 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# View or edit policies in Microsoft Defender for Business
+# View or edit policies in Microsoft Defender for Business (preview)
 
 > [!IMPORTANT]
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
+> Microsoft Defender for Business is now in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. We will onboard an initial set of customers and partners in the coming weeks and will expand the preview leading up to general availability. Note that preview will launch with an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
+> 
+> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-In Microsoft Defender for Business, security settings are configured through policies. There are two main types of policies in Defender for Business:
+In Microsoft Defender for Business (preview), security settings are configured through policies. There are two main types of policies in Defender for Business (preview):
 
 - **Next-generation protection policies**, which determine how Microsoft Defender Antivirus and other threat protection features are configured
 - **Firewall policies**, which determine what network traffic is permitted to flow to and from your company's devices
@@ -62,7 +64,7 @@ In Microsoft Defender for Business, security settings are configured through pol
 
    - To keep the selected device group as it is, choose **Next**.
    - To remove a device group from the policy, select **Remove**.
-   - To set up a new device group, select **Create new group**, and then set up your device group. (To get help with this task, see [Device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).)
+   - To set up a new device group, select **Create new group**, and then set up your device group. (To get help with this task, see [Device groups in Microsoft Defender for Business (preview)](mdb-create-edit-device-groups.md).)
    - To apply the policy to another device group, select **Use existing group**.
 
    After you have specified which device groups should receive the policy, choose **Next**.
@@ -86,10 +88,10 @@ Choose one or more of the following tasks:
 
 - [Manage devices](mdb-manage-devices.md)
 
-- [Create a new policy in Microsoft Defender for Business](mdb-create-new-policy.md)
+- [Create a new policy in Microsoft Defender for Business (preview)](mdb-create-new-policy.md)
 
-- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
+- [View and manage incidents in Microsoft Defender for Business (preview)](mdb-view-manage-incidents.md)
 
-- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
+- [Respond to and mitigate threats in Microsoft Defender for Business (preview)](mdb-respond-mitigate-threats.md)
 
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
