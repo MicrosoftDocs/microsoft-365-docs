@@ -20,11 +20,13 @@ description: Learn how to limit which of your users can be invited as a guest or
 
 # Limit who can be invited by an organization
 
+If you collaborate with another organization and want to limit who can be invited to that organization as a guest or a shared channel member in Teams, you can specify who can be invited in the cross-tenant access settings in Azure Active Directory.
 
 ## Create a security group
 
+The easiest way to specify who can be invited to another organization is to use a security group. You can use a security group with a defined membership or a dynamic security group.
 
-
+To create a security group
 1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
 1. On the **Active Directory** page, select **Groups** and then select **New group**.
 1. Choose **Security** for the **Group type**.
@@ -35,22 +37,25 @@ description: Learn how to limit which of your users can be invited as a guest or
 1. Add group owners and members or a dynamic query if you're using dynamic user membership.
 1. Select **Create**. Your group is created and ready for you to add members.
 
-
-
 ## Add an organization
 
+To define collaboration rules with another organization, you have to add that organization to the Azure AD cross-tenant access settings. If you haven't already added the organization, follow this procedure to add it.
 
+To add an organization
 1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.1. Select **Organizational settings**.
 1. Select **Add organization**.
 1. On the **Add organization** pane, type the full domain name (or tenant ID) for the organization.
 1. Select the organization in the search results, and then select **Add**.
 1. The organization appears in the **Organizational settings** list. At this point, all access settings for this organization are inherited from your default settings.
 
-## Choose who can be invited as guests by an organization
+## Choose who can be invited by an organization
 
-both
+There are two options for limiting who can be invited to an organization:
 
-1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
+- Limit who can be invited as a guest. This prevents users from being added to the other organization's Azure AD as a guest. It prevents sharing of files, folders, sites, teams, and Microsoft 365 groups.
+- Limit who can be added to an external shared channel.
+
+In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
 
 To limit who can be invited as a guest
 1. Select the outbound access link for the organization that you want to modify.
