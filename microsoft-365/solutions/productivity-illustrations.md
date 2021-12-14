@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 productivity illustrations
-description: Use these illustrations, such as the Teams architecture diagram, to understand the architecture basics for implementing Microsoft 365 productivity solutions.
+description: "Learn how to implement Microsoft 365 and Microsoft Teams productivity solutions with these architecture diagrams."
 ms.author: samanro
 author: samanro
 manager: bcarter

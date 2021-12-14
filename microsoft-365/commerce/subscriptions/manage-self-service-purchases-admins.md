@@ -37,12 +37,6 @@ You can also control whether users in your organization can make self-service pu
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
@@ -59,12 +53,6 @@ You can also control whether users in your organization can make self-service pu
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenses</a> page.
 
 ::: moniker-end
 
@@ -103,12 +91,6 @@ You can assign existing licenses or purchase additional subscriptions through ex
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Purchase services** page.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Purchase services** page.
@@ -141,12 +123,6 @@ When you move users to a different subscription, the old subscription is automat
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.
@@ -169,12 +145,6 @@ When you choose to cancel a self-service purchase subscription, users with licen
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.
 
 ::: moniker-end
 

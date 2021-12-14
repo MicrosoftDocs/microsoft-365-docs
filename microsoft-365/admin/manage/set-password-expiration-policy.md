@@ -31,7 +31,7 @@ description: "Learn how an admin can set a password expiration policy for your b
 
 ## Before you begin
 
-This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?]([Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md)).
+This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?]([Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md).
 
 As an admin, you can make user passwords expire after a certain number of days, or set passwords to never expire. By default, passwords are set to never expire for your organization.
 
@@ -82,12 +82,12 @@ You can set more password policies and restrictions in Azure active directory. C
 
 ## Update password Policy
 
-The Set-MsolPasswordPolicy cmdlet updates the password policy of a specified domain or tenant. Two settings are required; the first is to indicate the length of time that a password remains valid before it must be changed and the second is to indicate the number of days before the password expiration date that will trigger when users will receive their first notification that their password will soon expire.
+The Set-MsolPasswordPolicy cmdlet updates the password policy of a specified domain or tenant and indicates the length of time that a password remains valid before it must be changed.
 
 To learn how to update password policy for a specific domain or tenant, see [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy).
 
 ## Related content
 
-[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)\
+[Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)/
 
 [Reset passwords](../add-users/reset-passwords.md) (article)

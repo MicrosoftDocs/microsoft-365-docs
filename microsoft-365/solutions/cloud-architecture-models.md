@@ -1,6 +1,6 @@
 ---
 title: Microsoft cloud architecture models - enterprise resource planning
-description: These Microsoft cloud architecture posters give you information about Microsoft cloud services like Azure and Office 365.
+description: "Learn about Microsoft cloud services like Azure and Office 365 with these architecture diagrams and illustrations."
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -46,7 +46,7 @@ What IT architects need to know about security in Microsoft cloud services and p
   
 | Item | Description |
 |:-----|:-----|
-|[![Microsoft cloud security for enterprise architects model thumbnail.](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> Updated November 2021 | This model contains: <ul><li>Microsoft and customer security responsibilities</li><li>Identity and device access</li><li>Threat protection</li><li>Information protection </ul><br/>|
+|[![Microsoft cloud security for enterprise architects model thumbnail.](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> [PDF](https://download.microsoft.com/download/6/D/F/6DFD7614-BBCF-4572-A871-E446B8CF5D79/MSFT_cloud_architecture_security.pdf) <br/> Updated December 2021 | This model contains: <ul><li>Microsoft and customer security responsibilities</li><li>Identity and device access</li><li>Threat protection</li><li>Information protection </li><li>Cloud app protection </li></ul><br/>|
    
 <a name="networking"></a>
 ### Microsoft cloud networking for IT architects
@@ -74,4 +74,8 @@ This series of topics illustrates several architecture approaches for mergers, a
 |[![Thumb image for Microsoft cloud tenant-to-tenant migrations.](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> Updated February 2021    |This model contains: <ul><li>A mapping of business scenarios to architecture approaches</li><li>Design considerations</li><li>Single event migration flow example</li><li>Phased migration flow example</li><li>Tenant move or split flow example</li></ul>|
 
 
+## Related resources
 
+Get resources to create your own architecture design diagrams: [Microsoft 365 architecture icons and templates](architecture-icons-templates.md).
+
+Go to the [Azure architecture center](/azure/architecture/).
