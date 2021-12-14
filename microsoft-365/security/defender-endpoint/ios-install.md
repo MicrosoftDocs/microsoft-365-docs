@@ -74,7 +74,7 @@ Deploy Defender for Endpoint on iOS via Intune Company Portal.
 
 Admins can configure auto-setup of VPN profile. This will automatically setup the Defender for Endpoint VPN profile without having the user to do so while onboarding. Note that VPN is used in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
 
-This step simplifies the onboarding process by setting up the VPN profile. For a zero-touch or silent onboarding experience, see the next section: [Zero-touch onboard](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint).
+This step simplifies the onboarding process by setting up the VPN profile. For a zero-touch or silent onboarding experience, see the next section: [Zero-touch onboard](#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview).
 
 1. In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** -> **Configuration Profiles** -> **Create Profile**.
 1. Choose **Platform** as **iOS/iPadOS** and **Profile type** as **VPN**. Click **Create**.
@@ -94,7 +94,12 @@ This step simplifies the onboarding process by setting up the VPN profile. For a
 1. Click Next and assign the profile to targeted users.
 1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**.
 
-## Zero-touch onboarding of Microsoft Defender for Endpoint
+## Zero-touch onboarding of Microsoft Defender for Endpoint (Preview)
+
+
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 
 Admins can configure Microsoft Defender for Endpoint to deploy and activate silently. In this flow, the user is simply notified of the installation. Defender for Endpoint is automatically installed without the need for the user to open the app. Follow the steps below to setup zero-touch or silent deployment of Defender for Endpoint on enrolled iOS devices:
 
