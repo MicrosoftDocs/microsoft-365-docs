@@ -49,7 +49,7 @@ For conditions and exceptions that examine the sender's address, you can specify
 >[!Note]
 >Starting 20th January 2021, the default sender address location will be moved to the Header address along with the availability of the -SenderAddressLocation parameter to configure desired behavior at a DLP rule level.
 
-![image](https://user-images.githubusercontent.com/53205984/145938363-040bdc22-0e7a-4a15-97dd-478d7f150f1b.png)
+![image](https://user-images.githubusercontent.com/53205984/145942298-6b435ba6-d146-44fe-a1c5-58babeaf8d7a.png)
 
 At the tenant level, you can configure a Sender Address Location to be used across all rules, unless overridden by a single rule. To revert tenant DLP policy configuration to evaluate sender address from Envelope across all rules, you can run the below command-
 
