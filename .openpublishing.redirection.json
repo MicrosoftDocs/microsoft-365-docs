@@ -247,7 +247,7 @@
     },
     {
       "source_path": "microsoft-365/business/sign-up.md",
-      "redirect_url": "/microsoft-365/business-video/sign-up",
+      "redirect_url": "/microsoft-365/admin/admin-overview/sign-up-for-office-365",
       "redirect_document_id": false
     },
     {
@@ -6014,6 +6014,166 @@
       "source_path": "microsoft-365/solutions/configure-secure-access.md",
       "redirect_url": "/microsoft-365/security/office-365-security/microsoft-365-policies-configurations",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business-video/anti-malware.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/increase-threat-protection#raise-the-level-of-protection-against-malware-in-mail",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/prevent-ransom-in-email.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-ransomware",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/safe-links.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-phishing-attacks-with-safe-links",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/setup-anti-phishing.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-your-email-from-phishing-attacks",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/setup-overview.md",
+      "redirect_url": "/microsoft-365/admin/setup/plan-your-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/choose-subscription.md",
+      "redirect_url": "/microsoft-365/admin/admin-overview/sign-up-for-office-365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/sign-up.md",
+      "redirect_url": "/microsoft-365/admin/admin-overview/sign-up-for-office-365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/set-up.md",
+      "redirect_url": "/microsoft-365/admin/setup/business-set-up",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/secure-win10-pcs.md",
+      "redirect_url": "/microsoft-365/admin/setup/secure-win-10-pcs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/connect.md",
+      "redirect_url": "/microsoft-365/admin/setup/set-up-windows-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/import-email.md",
+      "redirect_url": "/microsoft-365/admin/setup/migrate-email-and-contacts-admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/install-office.md",
+      "redirect_url": "/microsoft-365/admin/setup/install-applications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/business-voice.md",
+      "redirect_url": "/microsoftteams/business-voice/whats-business-voice",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/buy-business-voice.md",
+      "redirect_url": "/microsoftteams/business-voice/what-to-buy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/change-subscription.md",
+      "redirect_url": "/microsoft-365/commerce/try-or-buy-microsoft-365#buy-a-different-subscription",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/update-payment.md",
+      "redirect_url": "/microsoft-365/commerce/billing-and-payments/manage-payment-methods",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/buy-licenses.md",
+      "redirect_url": "/microsoft-365/commerce/licenses/buy-licenses",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/remove-existing-licenses.md",
+      "redirect_url": "/microsoft-365/commerce/licenses/buy-licenses",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/overview-m365-security.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/secure-your-business-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/create-web-site.md",
+      "redirect_url": "/microsoft-365/admin/setup/domains-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/secure-win-10-pro-devices.md",
+      "redirect_url": "/microsoft-365/admin/devices/protection-settings-for-windows-10-pcs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/turn-on-mfa.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/set-up-a-new-business-email-address.md",
+      "redirect_url": "/microsoft-365/admin/email/change-email-address",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/admin-mobile.md",
+      "redirect_url": "/microsoft-365/admin/admin-overview/admin-mobile-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/add-user.md",
+      "redirect_url": "/microsoft-365/admin/add-users/add-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/add-admin.md",
+      "redirect_url": "/microsoft-365/admin/add-users/assign-admin-roles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/reset-user-passwords.md",
+      "redirect_url": "/microsoft-365/admin/add-users/reset-passwords",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/company-wide-signature.md",
+      "redirect_url": "/microsoft-365/admin/setup/create-signatures-and-disclaimers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/change-user-name-email.md",
+      "redirect_url": "/microsoft-365/admin/add-users/change-a-user-name-and-email-address",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/act-on-report.md",
+      "redirect_url": "/microsoft-365/admin/activity-reports/activity-reports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/what-is-admin.md",
+      "redirect_url": "/microsoft-365/admin/add-users/about-admin-roles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/set-up-self-serve-password-reset.md",
+      "redirect_url": "/microsoft-365/admin/add-users/let-users-reset-passwords",
+      "redirect_document_id": false
     }
   ]
 }
