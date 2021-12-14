@@ -78,6 +78,19 @@ You can test any sensitive information type in the list. We suggest that you tes
 3. Upload a file and choose **Test**.
 4. On the **Matches results** page, review the results and choose **Finish**.
 
+## Limits in creating custom sensitive information types
+
+To ensure high performance and lower latency, there are limitations in custom SITs configurations. 
+- maximum number of custom SITs created through microsoft 365 compliance center: 500
+- maximum length of regular expression: 1024 characters
+- maximum length for a given term in a keyword list: 50 characters
+- maximum number of terms in keyword list: 2048
+- maximum number of distinct regexes per sensitive information type: 20
+- maximum size of a keyword dictionary (post compression): 1MB (~1000000 characters)
+- maximum number of keyword dictionary based SITs in a tenant: 50
+
+If you have a business need to create more than 500 custom SITs, please raise a support ticket.
+
 ## Modify custom sensitive information types in the Compliance Center
 
 1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list that you want to modify choose **Edit**.
