@@ -222,33 +222,45 @@ When you're finished, click **Next**.
 
 ### Landing page
 
-On the **Landing page** page, you configure training landing page that the users see.
+On the **Landing page** page, you configure the web page that user are taken to if they open the payload in the simulation.
 
-- **Select landing page preference**: The available values depend on your previous selections on the [Select payloads](#select-payloads) page:
+- **Select landing page preference**: The available values depend on your previous selections on the [Select payloads](#select-payloads) page as described in the following table:
 
-  - **Manually select** on the **Select payloads** page: The following values are available for **Select landing page preference**:
+  <br>
 
-    - **Use Microsoft default landing page**. This is the default value, and results in one Microsoft default template, logo, and payload indicator action that's applicable to all payloads.
+  ****
 
-      The following additional settings are available on the **Landing page** page:
+  |Selection on Select payloads page|Available values for Select landing page preference|
+  |---|---|
+  |Manually select|Use Microsoft default landing page <p> Create your own landing page <p> Use a custom URL <p> **Note**: The **Use a custom URL** value is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.|
+  |Randomize|Use Microsoft default landing page|
+  |
 
-      - **Select landing page layout**: Select one of the 5 available landing page templates.
-      - **Add logo**: Click **Browse** to select a PNG, JPEG, or GIF image to add to all payloads that are selected by Microsoft. To remove the logo, click **Remove**.
-      - **Payload indicators**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.
+  The available **Select landing page preference** values and their associated settings are described in the following list:
 
-        By default, payload indicators are not turned on, but you can select **Add payload indicators to email** to turn them on.
+  - **Use Microsoft default landing page**. This is the default value, and results in one Microsoft default template, logo, and payload indicator action that's applicable to all payloads.
 
-      Use the **Open preview panel** button at the bottom of the page to see the results. In the preview flyout that appears, you can use **Select payload to preview** to see what each payload looks like.
+    You need to configure the following additional settings on the **Landing page** page:
 
-    - **Create your own landing page**: This value results in a single payload indicator action that's applicable to the selected payloads.
+    - **Select landing page layout**: Select one of the 5 available landing page templates.
+    - **Add logo**: Click **Browse** to find and select a .png, .jpeg, or .gif file to add to all payloads that are selected by Microsoft. To remove the logo, click **Remove**.
+    - **Payload indicators**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.
 
-      The following additional settings are available on the **Landing page** page:
+      Select **Add payload indicators to email** to help users learn how to identify phishing messages.
 
-      - **Payload indicators**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.
+    You can preview the results by clicking the **Open preview panel** button in the middle of the page. In the preview flyout that appears, you can use **Select payload to preview** to see what each payload looks like.
 
-        By default, payload indicators are not turned on, but you can select **Add payload indicators to email** to turn them on.
+  - **Create your own landing page**: This value results in a single payload indicator action that's applied to the selected payloads.
 
-      - **Text** tab: A rich text editor is available to create your landing page. In addition to the typical font and formatting settings, the following settings are available:
+    You need to configure the following additional settings on the **Landing page** page:
+
+    - **Payload indicators**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.
+
+      Select **Add payload indicators to email** to help users learn how to identify phishing messages.
+
+    - Page content: Two tabs are available:
+
+      - **Text**: A rich text editor is available to create your landing page. In addition to the typical font and formatting settings, the following settings are available:
         - **Dynamic tag**: Select from the following tags:
           - **Username**
           - **Email sender name**
@@ -257,15 +269,11 @@ On the **Landing page** page, you configure training landing page that the users
           - **Email content**
         - **Use from default**: Select one of the 5 available landing page templates to start with. You can modify the text and layout in the editing area. To reset the landing page back to the default text and layout of the template, click **Reset to default**.
         - **Training link**: In the **Name training URL** dialog that appears, enter a link title for the training link, and then click **Confirm** to add the link to the landing page.
-      - **Code** tab: You can view and modify the HTML code directly.
+      - **Code**: You can view and modify the HTML code directly.
 
-      Use the **Open preview panel** button in the middle of the page to see the results. In the preview flyout that appears, you can use **Select payload to preview** to see what each payload looks like.
+      You can preview the results by clicking the **Open preview panel** button in the middle of the page. In the preview flyout that appears, you can use **Select payload to preview** to see what each payload looks like.
 
-    - **Use a custom URL**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.
-
-      The only additional setting on the **Landing page** page is **Enter the custom landing page URL** where you enter the URL value.
-
-  - **Randomize** on the **Select payloads** page: The only available value for **Select landing page preference** is **Use Microsoft default landing page**. The additional settings are the same as previously described for **Use Microsoft default landing page** in this section.
+  - **Use a custom URL**: Add the URL in the **Enter the custom landing page URL** box that appears. No other options are available on the page.
 
 When you're finished, click **Next**.
 
