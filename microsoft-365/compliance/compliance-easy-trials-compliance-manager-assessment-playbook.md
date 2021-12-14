@@ -63,7 +63,7 @@ Compliance Manager also offers 300+ regulatory or premium templates that can be 
 
 ## Step 4: Enable the premium assessment trial
 
-Trial licenses allow you to use 25 premium templates for 90 days. You will see 25 licensed templates available for your use within 4 hours of obtaining your trial license and will be able to choose those from a list of 320+ premium templates. You are not required to select all 25 templates at once.
+Trial licenses allow you to use 25 premium templates for 90 days. You will be able to choose from a list of 300+ premium templates. You are not required to select all 25 templates at once. Once selected, the licensed templates are available for your use within 4 hours of obtaining your trial license.
 
 There are two ways to enable the Premium Assessment Add-on trial: through the Compliance Manager dashboard or through the Microsoft 365 Compliance trial.
 
