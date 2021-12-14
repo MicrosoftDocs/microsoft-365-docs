@@ -25,9 +25,9 @@ description: "Help your employees learn how to set up Office apps they get with 
 
 # Employee quick setup
 
-Are you new to Microsoft 365 for business? :::image type="icon" source="../media/video-call-icon.png" border="false"::: [Watch this video](../admin/admin-overview/what-is-microsoft-365.md) to learn about it. Then follow these steps.
+Are you new to Microsoft 365 for business? :::image type="icon" source="../../media/video-call-icon.png" border="false"::: [Watch this video](../admin/admin-overview/what-is-microsoft-365.md) to learn about it. Then follow these steps.
 
-:::image type="content" source="../media/m365-employee-quick-setup.png" alt-text="Image showing quick employee setup steps.":::
+:::image type="content" source="../../media/m365-employee-quick-setup.png" alt-text="Image showing quick employee setup steps.":::
 
 ## 1. Sign in to Office
 
@@ -47,7 +47,9 @@ Are you new to Microsoft 365 for business? :::image type="icon" source="../media
 
 1. Open **Outlook** on your computer. In the Tell me field, type **account** then **Add Account**.
 
-    :::image type="content" source="../media/add-outlook-account.png" alt-text="A figure showing how to add an account to Outlook.":::
+    :::image type="content" source="../../media/add-outlook-account.png" alt-text="A figure showing how to add an account to Outlook.":::
+
+
 
 1. Type your name, email, and password then **Next**.
 
@@ -57,11 +59,11 @@ Are you new to Microsoft 365 for business? :::image type="icon" source="../media
 ## 4. Save or copy files to OneDrive
 
 - Save documents to **OneDrive** from the **Save As** menu in Office apps.
-    :::image type="content" source="../media/save-onedrive.png" alt-text="Imge that whos how to Save As to OneDrive.":::
+    :::image type="content" source="../../media/save-onedrive.png" alt-text="Imge that whos how to Save As to OneDrive.":::
 
 - Or copy files from your Desktop or Documents to **OneDrive**.
 
-    :::image type="content" source="../media/save-to-onedrive-from-docs.png" alt-text="Image showing how to save to OneDrive from Documents folder.":::
+    :::image type="content" source="../../media/save-to-onedrive-from-docs.png" alt-text="Image showing how to save to OneDrive from Documents folder.":::
 
     > [!TIP]
     > You can also store files on [sites](https://support.microsoft.com/office/d18d21a0-1f9f-4f6c-ac45-d52afa0a4a2e) in Microsoft 365.
@@ -70,7 +72,7 @@ Are you new to Microsoft 365 for business? :::image type="icon" source="../media
 
 1. Share your documents with others by choosing **Share**.
 
-    :::image type="content" source="../media/share-office-doc.png" alt-text="Share icon in an Office app.":::
+    :::image type="content" source="../../media/share-office-doc.png" alt-text="Share icon in an Office app.":::
 
 1. Type their email address, choose read or edit, include a message and **Share**.
 1. Or choose **Get sharing link** on the bottom of the screen.
