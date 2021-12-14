@@ -164,11 +164,24 @@ We recommend that you get started with this protection by creating a policy to p
 |Add trusted senders and domains|Here you can add your own domain, or any other trusted domains.|
 |Applied to|Select **The recipient domain is**. Under **Any of these**, select **Choose**. Select **+ Add**. Select the check box next to the name of the domain, for example, *contoso.<span><span>com*, in the list, and then select **Add**. Select **Done**.|
 
-## Protect against malicious attachments and files with Safe Attachments
+## Watch: Protect against malicious attachments and files with Safe Attachments
 
-People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Microsoft Defender for Office 365 includes Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
+People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Microsoft Defender for Office 365, formerly called Microsoft 365 ATP, or Advanced Threat Protection, includes Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
 
-To create an Safe Attachment policy, either watch [this short video](../../business-video/safe-attachments.md), or complete the following steps:
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtn3I?autoplay=false]
+
+1. Go to the [admin center](https://admin.microsoft.com), and select **Setup**.
+1. Scroll down to **Increase protection from advanced threats**. Select **View**, **Manage**, and then **ATP safe attachments**.
+1. Select your safe attachments rule, and then choose the **Edit** icon.
+1. Select **settings**, and then verify that Block is selected.
+1. Scroll down. Choose **Enable redirect**, and enter your email address or the address of the person you want to review the blocked attachments.
+1. Select **applied to**, and then select your domain name.
+1. Choose any additional domains you own (such as your onmicrosoft.com domain) that you would like the rule applied to. Select **add**, and then **OK**.
+1. Select **Save**.
+
+Your ATP safe attachments rule has been updated. Now that protection is in place, you won't be able to open a malicious file from Outlook, OneDrive, SharePoint, or Teams. Affected files will have red shields next to them. If someone attempts to open a blocked file, they'll receive a warning message.
+
+After your policy has been in place for a while, visit the Reports page to see what has been scanned.
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, and sign in with your admin account.
 
