@@ -23,7 +23,8 @@ ms.collection:
 > [!IMPORTANT]
 > Microsoft Defender for Business is now in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. We will onboard an initial set of customers and partners in the coming weeks and will expand the preview leading up to general availability. Note that preview will launch with an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
 > 
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
+> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
+
 Microsoft Defender for Business (preview) is available in preview! Participating in the preview program enables you to try out Defender for Business before it becomes generally available. The preview program is available to:
 
 - Microsoft partners who provide IT services to small and medium-sized businesses
