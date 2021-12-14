@@ -482,8 +482,8 @@ To upload your rule package, do the following steps:
 When you upload your rule package XML file, the system validates the XML and checks for known bad patterns and obvious performance issues. Here are some known issues that the validation checks for — a regular expression:
   
 - Lookbehind or lookahead assertions in the regular expression should be of fixed length only. Variable length assertions will result in errors.
-    
-  For example, "(?<=^|\s|_)" will not pass validation because the first option in this is '^' which is of zero length while the next tow options ('\s' and '_') are of length one. An alternate way to have this regular expression is "(?:^|(?<=\s|_))"
+
+    For example, this regex expression will not pass validation `"(?<=^|\s|_)"`  because the first option in this is `^` which has a zero length while the next two options `\s` and `_` have a length of one.  An alternate way to write this regular expression so that it will validate is `"(?:^|(?<=\s|_))"`.
   
 - Cannot begin or end with alternator "|", which matches everything because it's considered an empty match.
     
