@@ -227,6 +227,8 @@ When you're finished, click **Next**.
 
 On the **Landing page** page, you configure the web page that user are taken to if they open the payload in the simulation.
 
+Microsoft-curated landing pages are available in 12 languages: Chinese (Simplified), Chinese (Traditional), English, French, German, Italian, Japanese, Korean, Portuguese, Russian, Spanish, and Dutch.
+
 - **Select landing page preference**: The available values are:
   - **Use Microsoft default landing page**: This is the default value that has the following associated options to configure:
     - **Select landing page layout**: Select one of the available templates.
