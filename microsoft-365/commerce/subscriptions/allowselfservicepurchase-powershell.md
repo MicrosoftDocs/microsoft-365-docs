@@ -102,8 +102,11 @@ The following table lists the available products and their **ProductId**.
 | Windows 365 Enterprise | CFQ7TTC0HHS9 |
 | Windows 365 Business | CFQ7TTC0J203 |
 | Windows 365 Business with Windows Hybrid Benefit | CFQ7TTC0HX99 |
+
 ## View or set the status for AllowSelfServicePurchase
-* Note that these IDs have changed. If you have previously blocked products using the old IDs we will automatically block these products using new IDs. No work is required.
+
+>[!NOTE] 
+> These IDs have changed. If you previously blocked products using the old IDs, they are automatically blocked using the new IDs. No additional work is required.
 
 After you view the list of products available for self-service purchase, you can view or modify the setting for a specific product.
 
