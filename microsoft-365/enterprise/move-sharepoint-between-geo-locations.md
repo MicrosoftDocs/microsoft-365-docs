@@ -198,6 +198,9 @@ OneNote win32 client and UWP (Universal) App will automatically detect and seaml
 
 When the SharePoint site geo move completes, users will have access to their Microsoft 365 Group site files on the Teams app. Additionally, files shared via Teams chat from their site prior to geo move will continue to work after move is complete.
 
+SharePoint site geo move does not support moving Private Channels from one geo to another.
+  
+
 ### SharePoint Mobile App (iOS/Android)
 
 The SharePoint Mobile App is cross geo compatible and able to detect the site's new geo location.
