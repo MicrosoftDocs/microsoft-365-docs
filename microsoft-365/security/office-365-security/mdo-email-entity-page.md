@@ -15,7 +15,9 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-ms.custom: admindeeplinkDEFENDER
+ms.custom: 
+- admindeeplinkDEFENDER
+- admindeeplinkEXCHANGE
 description: Microsoft Defender for Office 365 E5 and P1 and P2 customers can now get a 360-degree view of each email with email entity page.
 ---
 # The Email entity page
@@ -106,7 +108,7 @@ Users will see enriched detonation details for known malicious attachments or UR
 
 *Email details*: Details required for a deeper understanding of email available in the *Analysis* tab.
 
-- *Exchange transport rules (also known as mail flow rules or ETRs)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. These can be only created and modified in the Exchange admin center, but if any ETR applies to a message, the ETR name and GUID will be shown here. Valuable information for tracking purposes.
+- *Exchange transport rules (also known as mail flow rules or ETRs)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. These can be only created and modified in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, but if any ETR applies to a message, the ETR name and GUID will be shown here. Valuable information for tracking purposes.
 
 - *System Overrides*: This is a means of making exceptions to the delivery location intended for a message by overriding the delivery location given by system (as per the threat and detection tech).
 
