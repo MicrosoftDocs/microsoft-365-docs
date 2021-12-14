@@ -137,6 +137,7 @@ Just like on Windows devices, you will now be able to prevent macOS apps from ac
 > Note that cross platform apps must be entered with their unique paths respective to the OS they are running on.
 
 To find the full path of Mac apps:
+
 1. On the macOS device, open **Activity Monitor**. Find and double-click the process you want to restrict
 
 2. Choose **Open Files and Ports** tab.
@@ -167,7 +168,15 @@ Restrict sensitive files that match your policies from being shared with unrestr
 
 #### Unallowed browsers
 
-You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Microsoft Edge.
+For Windows devices you add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Microsoft Edge.
+
+For macOS devices, you must add the full file path. To find the full path of Mac apps:
+
+1. On the macOS device, open **Activity Monitor**. Find and double-click the process you want to restrict
+
+2. Choose **Open Files and Ports** tab.
+  
+3. The app name is located at the end of the full path.
 
 #### Service domains
 
