@@ -302,7 +302,7 @@ In addition to confidenceLevel for each Pattern, the Entity has a recommendedCon
 
 If your compliance team uses the Microsoft 365 Compliance center to create polices policies in different locales and in different languages, you can provide localized versions of the name and description of your custom sensitive information type. When your compliance team uses Microsoft 365 in a language that you support, they'll see the localized name in the UI.
   
-![Instance count and match accuracy options.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![Instance count and match accuracy configuration.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
 The Rules element must contain a LocalizedStrings element, which contains a Resource element that references the GUID of your custom entity. In turn, each Resource element contains one or more Name and Description elements that each use the langcode attribute to provide a localized string for a specific language.
   
@@ -482,8 +482,8 @@ To upload your rule package, do the following steps:
 When you upload your rule package XML file, the system validates the XML and checks for known bad patterns and obvious performance issues. Here are some known issues that the validation checks for — a regular expression:
   
 - Lookbehind or lookahead assertions in the regular expression should be of fixed length only. Variable length assertions will result in errors.
-    
-  For example, "(?<=^|\s|_)" will not pass validation because the first option in this is '^' which is of zero length while the next tow options ('\s' and '_') are of length one. An alternate way to have this regular expression is "(?:^|(?<=\s|_))"
+
+    For example, this regex expression will not pass validation `"(?<=^|\s|_)"`  because the first option in this is `^` which has a zero length while the next two options `\s` and `_` have a length of one.  An alternate way to write this regular expression so that it will validate is `"(?:^|(?<=\s|_))"`.
   
 - Cannot begin or end with alternator "|", which matches everything because it's considered an empty match.
     
