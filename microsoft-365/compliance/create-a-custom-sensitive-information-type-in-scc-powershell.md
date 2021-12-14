@@ -302,7 +302,7 @@ In addition to confidenceLevel for each Pattern, the Entity has a recommendedCon
 
 If your compliance team uses the Microsoft 365 Compliance center to create polices policies in different locales and in different languages, you can provide localized versions of the name and description of your custom sensitive information type. When your compliance team uses Microsoft 365 in a language that you support, they'll see the localized name in the UI.
   
-![Instance count and match accuracy options.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
+![Instance count and match accuracy configuration.](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
 The Rules element must contain a LocalizedStrings element, which contains a Resource element that references the GUID of your custom entity. In turn, each Resource element contains one or more Name and Description elements that each use the langcode attribute to provide a localized string for a specific language.
   
