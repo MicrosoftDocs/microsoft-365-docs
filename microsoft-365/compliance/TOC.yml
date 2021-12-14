@@ -469,6 +469,8 @@
       items: 
         - name: Learn about records management
           href: records-management.md
+        - name: Resources for regulatory requirements
+          href: retention-regulatory-requirements.md
         - name: Declare records
           href: declare-records.md
         - name: Use record versioning
@@ -491,8 +493,6 @@
           href: auto-apply-retention-labels-scenario.md
         - name: Manage disposition of data
           href: disposition.md
-        - name: Resources for regulatory requirements
-          href: retention-regulatory-requirements.md
     - name: Archive third-party data
       items: 
         - name: Overview of archiving third-party data
