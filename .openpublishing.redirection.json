@@ -6171,6 +6171,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/business-video/set-up-dlp.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/set-up-compliance#set-up-dlp-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/create-sensitivity-labels.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/set-up-compliance#set-up-sensitivity-labels",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/safe-attachments.md",
+      "redirect_url": "/microsoft-365/admin/security-and-compliance/increase-threat-protection#protect-against-malicious-attachments-and-files-with-safe-attachments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/employee-quick-setup.md",
+      "redirect_url": "/microsoft-365/admin/setup/employee-quick-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/find-help-answers.md",
+      "redirect_url": "/microsoft-365/admin/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/plan-event.md",
+      "redirect_url": "https://support.microsoft.com/office/plan-an-event-in-microsoft-planner-1c38ad8d-9201-42de-8a7b-1e68fcef1769",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/overview-online-meetings.md",
+      "redirect_url": "/microsoft-teams/online-meetings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/track-info-lists.md",
+      "redirect_url": "/microsoft-365/admin/index",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/business-video/set-up-self-serve-password-reset.md",
       "redirect_url": "/microsoft-365/admin/add-users/let-users-reset-passwords",
       "redirect_document_id": false
