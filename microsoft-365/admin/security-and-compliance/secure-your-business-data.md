@@ -271,7 +271,7 @@ For more information, see [Set up anti-phishing policies in Defender for Office 
 
 People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Microsoft Defender for Office 365 includes Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
 
-To create a Safe attachment policy, view a [short training video](../../business-video/safe-attachments.md), or complete the following steps:
+To create a Safe attachment policy, view a [short training video](increase-threat-protection.md), or complete the following steps:
 
 1. Go to <https://protection.office.com> and sign in with your admin account.
 
