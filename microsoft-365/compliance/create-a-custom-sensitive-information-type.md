@@ -82,7 +82,7 @@ You can test any sensitive information type in the list. We suggest that you tes
 
 To ensure high performance and lower latency, there are limitations in custom SITs configurations.
 
-|Limit|value|
+|Limit|Value|
 |--------|--------|
 |maximum number of custom SITs created through the Compliance center| 500 |
 |maximum length of regular expression| 1024 characters|
