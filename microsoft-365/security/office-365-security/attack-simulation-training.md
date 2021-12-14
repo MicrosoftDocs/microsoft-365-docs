@@ -233,18 +233,18 @@ Microsoft-curated landing pages are available in 12 languages: Chinese (Simplifi
   - **Use Microsoft default landing page**: This is the default value that has the following associated options to configure:
     - **Select landing page layout**: Select one of the available templates.
     - **Add logo**: Click **Browse** to find and select a .png, .jpeg, or .gif file. To remove the logo, click **Remove**.
-    - **Add payload indicators to email**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.
+    - **Add payload indicators to email**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select technique](#select-a-social-engineering-technique) page.
 
       Select **Add payload indicators to email** to help users learn how to identify phishing messages.
 
     You can preview the results by clicking the **Open preview panel** button at the bottom of the page.
 
-  - **Use a custom URL**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.
+  - **Use a custom URL**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select technique](#select-a-social-engineering-technique) page.
 
     If you select **Use a custom URL**, you need to add the URL in the **Enter the custom landing page URL** box that appears. No other options are available on the page.
 
   - **Create your own landing page**: This value has the following associated options to configure:
-    - **Add payload indicators to email**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.
+    - **Add payload indicators to email**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select technique](#select-a-social-engineering-technique) page.
 
       Select **Add payload indicators to email** to help users learn how to identify phishing messages.
 
