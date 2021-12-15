@@ -29,7 +29,7 @@ Customers should view tenant specific data location information in your Microsof
 
 New Microsoft 365 tenants are defaulted to Geo based on the country of the transaction associated with that tenant's first subscription.
 
-Find information about the contractual commitments for the storage location of customer data at rest in the [Microsoft Online Services Terms (OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215).
+Find information about the contractual commitments for the storage location of customer data at rest in the [Online Services Privacy and Security Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).
 
 For Azure Active Directory data locations, please visit [AAD Data Map](https://go.microsoft.com/fwlink/p/?linkid=2092972).
 
@@ -115,7 +115,7 @@ Regardless, Microsoft does not control or limit the Geo from which customers or 
 
   - Data residency for the Personal app is based on the user's mailbox location.
   
-  - Manager/Leader data region is determined by the primary region of the tenant, not individual users.
+  - The data region for Manager/Leader and Advanced is determined by the primary region of the tenant, not individual users.
 
 ## Data Center Locations
 

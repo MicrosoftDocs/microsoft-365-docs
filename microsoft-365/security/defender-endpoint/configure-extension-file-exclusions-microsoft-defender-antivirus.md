@@ -13,7 +13,7 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.date: 11/15/2021
+ms.date: 12/06/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -162,7 +162,7 @@ Add-MpPreference -ExclusionExtension ".test"
 > [!TIP]
 > For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender Antivirus cmdlets](/powershell/module/defender/).
 
-### Use Windows Management Instruction (WMI) to configure file name, folder, or file extension exclusions
+### Use Windows Management Instrumentation (WMI) to configure file name, folder, or file extension exclusions
 
 Use the [Set, Add, and Remove methods of the MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) class for the following properties:
 
