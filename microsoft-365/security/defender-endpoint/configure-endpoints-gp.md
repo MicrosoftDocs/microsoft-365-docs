@@ -299,7 +299,7 @@ Browse to **Computer Configuration** \> **Policies** \> **Administrative Templat
 
 ### Check for signature update
 
-Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Signature Updates**
+Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates*
 
 :::image type="content" source="images/signature-update-1.png" alt-text="signature update.":::
 
