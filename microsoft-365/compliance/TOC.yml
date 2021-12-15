@@ -333,6 +333,8 @@
           items:
           - name: Plan for data loss prevention
             href: dlp-overview-plan-for-dlp.md
+          - name: Design a DLP policy
+            href: dlp-policy-design.md
           - name: Data loss prevention policy reference
             href: dlp-policy-reference.md 
         - name: Get started with DLP
@@ -541,8 +543,6 @@
               href: archive-rogers-network-archiver-data.md
             - name: Signal Archiver
               href: archive-signal-archiver-data.md
-            - name: StarHub Network Archiver (preview)
-              href: archive-starhub-network-archiver-data.md
             - name: Telegram Archiver
               href: archive-telegram-archiver-data.md
             - name: TELUS Network

@@ -73,7 +73,7 @@ If you select **Randomize**, there's nothing to configure on this page, so click
 If you select **Manually select**, you need to select one or more payloads from the list. The following details are displayed to help you choose:
 
 - **Payload name**
-- **Technique**: You need to select as one payload per technique that you selected on the previous page.
+- **Technique**: You need to select at least one payload per technique that you selected on the previous page.
 - **Language**: The language of the payload content. Microsoft's payload catalog (global) provides payloads in 10+ languages which can also be filtered.
 - **Click rate**: How many people have clicked on this payload.
 - **Predicted compromise rate**: Historical data for the payload across Microsoft 365 that predicts the percentage of people who will get compromised by this payload.
@@ -222,12 +222,58 @@ When you're finished, click **Next**.
 
 ### Landing page
 
-On the **Landing page** page, you configure training landing page that the users see. The following settings are available:
+On the **Landing page** page, you configure the web page that user are taken to if they open the payload in the simulation.
 
-- **Header**
-- **Body**
+- **Select landing page preference**: The available values depend on your previous selections on the [Select payloads](#select-payloads) page as described in the following table:
 
-You can accepted the default values or customize them.
+  <br>
+
+  ****
+
+  |Selection on Select payloads page|Available values for Select landing page preference|
+  |---|---|
+  |Manually select|Use Microsoft default landing page <p> Create your own landing page <p> Use a custom URL <p> **Note**: The **Use a custom URL** value is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.|
+  |Randomize|Use Microsoft default landing page|
+  |
+
+  The available **Select landing page preference** values and their associated settings are described in the following list:
+
+  - **Use Microsoft default landing page**. This is the default value, and results in one Microsoft default template, logo, and payload indicator action that's applicable to all payloads.
+
+    You need to configure the following additional settings on the **Landing page** page:
+
+    - **Select landing page layout**: Select one of the 5 available landing page templates.
+    - **Add logo**: Click **Browse** to find and select a .png, .jpeg, or .gif file to add to all payloads that are selected by Microsoft. To remove the logo, click **Remove**.
+    - **Payload indicators**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.
+
+      Select **Add payload indicators to email** to help users learn how to identify phishing messages.
+
+    You can preview the results by clicking the **Open preview panel** button in the middle of the page. In the preview flyout that appears, you can use **Select payload to preview** to see what each payload looks like.
+
+  - **Create your own landing page**: This value results in a single payload indicator action that's applied to the selected payloads.
+
+    You need to configure the following additional settings on the **Landing page** page:
+
+    - **Payload indicators**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.
+
+      Select **Add payload indicators to email** to help users learn how to identify phishing messages.
+
+    - Page content: Two tabs are available:
+
+      - **Text**: A rich text editor is available to create your landing page. In addition to the typical font and formatting settings, the following settings are available:
+        - **Dynamic tag**: Select from the following tags:
+          - **Username**
+          - **Email sender name**
+          - **Sender email address**
+          - **Email subject**
+          - **Email content**
+        - **Use from default**: Select one of the 5 available landing page templates to start with. You can modify the text and layout in the editing area. To reset the landing page back to the default text and layout of the template, click **Reset to default**.
+        - **Training link**: In the **Name training URL** dialog that appears, enter a link title for the training link, and then click **Confirm** to add the link to the landing page.
+      - **Code**: You can view and modify the HTML code directly.
+
+      You can preview the results by clicking the **Open preview panel** button in the middle of the page. In the preview flyout that appears, you can use **Select payload to preview** to see what each payload looks like.
+
+  - **Use a custom URL**: Add the URL in the **Enter the custom landing page URL** box that appears. No other options are available on the page.
 
 When you're finished, click **Next**.
 
@@ -277,7 +323,7 @@ On the **Launch details** page, configure the following additional settings for 
 - **Target repeat offenders**: By default, this setting is not selected. If you select it, configure the following setting that appears:
   - **Enter the maximum number of times a user can be targeted within this automation**: Enter a value from 1 to 10.
 - **Send simulation email based upon the user's current time zone setting from Outlook web app**: By default, this setting is not selected.
-- **Display the drive-by technique interstitial data gathered page**: This setting is available only if you selected **Drive-by URL** on the **[Select one or more social engineering techniques](#select-one-or-more-social-engineering-techniques)** page. By default, the setting is on (![Toggle on icon.](../../media/scc-toggle-on.png)).
+- **Display the drive-by technique interstitial data gathered page**: This setting is available only if you selected **Drive-by URL** on the **[Select social engineering techniques](#select-one-or-more-social-engineering-techniques)** page. By default, the setting is on (![Toggle on icon.](../../media/scc-toggle-on.png)).
 
 ## Review simulation automation
 
