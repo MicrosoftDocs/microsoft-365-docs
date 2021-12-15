@@ -22,7 +22,9 @@ The Slack eDiscovery data connector provided by Microsoft helps you to import an
 
 The following overview explains the process of using a Microsoft data connector to archive the Slack data in Microsoft 365.
 
-1. Your organization works with Slack to set up and configure a Slack site.
+![Slack eDiscovery archiving workflow.](../media/SlackMSFTConnectorWorkflow.png)
+
+1. Your organization works with Slack to set up and configure a Slack workspace.
 
 2. After the data connector is set up, messages from your organization's Slack workspaces are copied to user mailboxes in Microsoft 365. The data connector also converts the contents of a chat message to an email message format.
 
