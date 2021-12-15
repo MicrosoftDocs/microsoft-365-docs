@@ -20,11 +20,15 @@ description: Learn how to enable shared channels with all other Microsoft 365 an
 
 # Enable shared channels with all external organizations
 
+While sharing shared channels externally is enabled by default in Teams, Azure Active Directory cross-tenant access settings for [B2B direct connect](/azure/active-directory/external-identities/b2b-direct-connect-overview) must also be configured to share a channel externally. By default, these settings are set to block all organizations.
 
+You can change the B2B direct connect default settings to allow all organizations. This allows users to collaborate in shared channels without your organization having to create a separate configuration for each organization that you want to collaborate with. (Note that the organizations you collaborate with will also have to configure their B2B direct connect settings.)
 
 ## Allow users to invite people in other organizations to participate in shared channels
 
+You can allow your users to invite people from other organizations to use shared resources such as shared channels in Teams by default.
 
+To allow users to invite B2B direct connect participants by default
 1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
 1. Select **External Identities**, and then select **Cross-tenant access settings (preview)**.
 1. On the **Default settings** tab, under **Inbound access settings**, select **Edit inbound defaults**.
@@ -37,10 +41,11 @@ description: Learn how to enable shared channels with all other Microsoft 365 an
 1. Select **Save**.
 1. Close the **Default settings** blade.
 
-
 ## Allow users to participate in shared channels in other organizations
 
+You can allow your users to access resources that are hosted by an external organization - such as shared channels in Teams - by default.
 
+To allow users to access resource from other organizations by default
 1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
 1. On the **Default settings** tab, under **Outbound access settings**, select **Edit outbound defaults**.
 1. Select the **B2B direct connect** tab.
@@ -48,10 +53,6 @@ description: Learn how to enable shared channels with all other Microsoft 365 an
 1. On the **External applications** tab, under **Access status**, choose **Allow access**.
 1. Select **Save**.
 1. Close the **Default settings** blade.
-
-
-
-
 
 ## Related topics
 
