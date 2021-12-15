@@ -40,7 +40,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `Timestamp` | `datetim`e | Date and time when the event was recorded |
+| `Timestamp` | `datetime` | Date and time when the event was recorded |
 | `DeviceId` | `string` | Unique identifier for the machine in the service |
 | `DeviceName` | `string` | Fully qualified domain name (FQDN) of the machine |
 | `ActionType` | `string` | Type of activity that triggered the event. See the [in-portal schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) for details |
