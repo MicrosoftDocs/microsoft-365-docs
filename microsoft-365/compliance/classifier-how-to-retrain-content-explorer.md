@@ -21,7 +21,7 @@ description: "Learn how to provide feedback to a trainable classifier in Content
 
 A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it samples to look at. Once trained, you can use it to identify item for application of Office sensitivity labels, communications compliance policies, and retention label policies.
 
-This article shows you how to improve the performance of custom trainable classifiers and some pre-trained classifiers by providing them additional feedback.
+This article shows you how to improve the performance of custom trainable classifiers. **Please note that pre-trained classifiers cannot be retrained at tenant-level. The feedback provided in content explorer will help Microsoft in improving the performance of the classifiers. If you have a pre-trained built-in classifier in your tenant that was retrained earlier, it is recommended that you reset to the original version published by Microsoft**
 
 To learn more about the different types of classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
@@ -45,9 +45,9 @@ You'll need accounts with these permissions to use classifiers in these scenario
 ## Overall workflow
 
 > [!IMPORTANT]
-> You provide feedback in content explorer for auto-apply retention label policies to Exchange items and uses the classifier as a condition. **If you don't have a retention policy that auto-applies a retention label to Exchange items and      uses a classifier as a condition, stop here.**
+> You provide feedback in content explorer for auto-apply retention label policies that use the classifier as a condition. **If you don't have a retention policy that auto-applies a retention label uses a classifier as a condition, stop here.**
 
-As you use your classifiers, you may want to increase the precision of the classifications that they're making. You do this by evaluating the quality of the classifications made  for items it has identified as being a match or not a match. After you make 30 evaluations for a classifier it takes that feedback and automatically retrains itself.
+As you use your custom trainable classifiers, you may want to increase the precision of the classifications that they're making. You do this by evaluating the quality of the classifications made  for items it has identified as being a match or not a match. After you make 30 evaluations for a classifier it takes that feedback and automatically retrains itself.
 
 To understand more about the overall workflow of retraining a classifier, see [Process flow for retraining a classifier](classifier-learn-about.md#retraining-classifiers).
 
@@ -90,7 +90,7 @@ To understand more about the overall workflow of retraining a classifier, see [P
 ![classifier retraining results overview.](../media/classifier-retraining-overview.png)
 
 12. Review the recommended action, and the prediction comparisons of the retrained and currently published versions of the classifier.
-13. If you satisfied with the results of the retraining, choose **Re-publish**.
+13. If you are satisfied with the results of the retraining, choose **Re-publish**.
 14. If you are not satisfied with the results of the retraining, you can choose to provide additional feedback to the classifier in the Content Explorer interface and start another retraining cycle or do nothing in which case the currently published version of the classifier will continue to be used. 
 
 ## Details on republishing recommendations
@@ -99,8 +99,7 @@ Here is a little information on how we formulate the recommendation to re-publis
 
 After a retrain, we evaluate the classifier's performance on both the items with feedback as well as any items originally used to train the classifier. 
 
-- For built-in models, items used to train the classifier are the items used by Microsoft to build the model.
-- For custom models, items used in the original training the classifier are from the sites you had added for test and review.
+For custom models, items used in the original training the classifier are from the sites you had added for test and review.
 
 We compare the performance numbers on both sets of items for the retrained and published classifier to provide a recommendation on whether there was improvement to republish. 
 
