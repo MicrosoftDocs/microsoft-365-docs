@@ -86,9 +86,9 @@ The following overview explains the process of using a Microsoft data connector 
      |||
 
    > [!TIP]
-   > The member ID is displayed on the Slack profile page for each user.
+   > Member IDs for users can be obtained by clicking the ... More button in a user's profile and then selecting **Copy member ID**. Alternatively, you can use the Slack [users.list API method](https://api.slack.com/methods/users.list) to obtain the IDs for all members of a Slack team.
 
-    If you enable automatic user mapping and provide a custom mapping file, the connector will first look at the custom mapping file to map the Slack user to a Microsoft 365 mailbox. If the connector doesn't find a valid Microsoft 365 user that corresponds to the Slack user, the connector will use the *Email* property of the Slack item. If the connector doesn't find a valid Microsoft 365 user in either the custom mapping file or the *Email* property of the message item, the item won't be imported.
+   If you enable automatic user mapping and provide a custom mapping file, the connector will first look at the custom mapping file to map the Slack user to a Microsoft 365 mailbox. If the connector doesn't find a valid Microsoft 365 user that corresponds to the Slack user, the connector will use the *Email* property of the Slack item. If the connector doesn't find a valid Microsoft 365 user in either the custom mapping file or the *Email* property of the message item, the item won't be imported.
 
 2. On the **Select data types to import** wizard page, select the Slack data types you want to import. If you want to import messages from all channels, then select all options. Otherwise, select only the data types that you want to import.
 
