@@ -66,7 +66,7 @@ To enable the Corelight integration, you’ll need to take the following steps:
 
 To preview in v23 or v22.1 you must execute `corelight-client configuration update --enable.adfiot 1` to enable the configuration section in the GUI.
 
-In addition to this, the GUI validation requires that a broker is configured in the configuration section on all v23 releases.  The broker you provide is required but will not actually be used. Enter in the kafka broker field `127.0.0.1:1234`to ensure successful validation before following the steps below to enable sending data to Microsoft 365 Defender.
+In addition to this, the GUI validation requires that a broker is configured in the configuration section on all v23 releases.  The broker you provide is required but will not actually be used. Enter `127.0.0.1:1234`in the in the _kafka broker_ field to ensure successful validation before following the steps below to enable sending data to Microsoft 365 Defender.
 
 > [!NOTE]
 > You will need internet connectivity for your sensor to reach both the Defender and Corelight cloud services for the solution to work.
