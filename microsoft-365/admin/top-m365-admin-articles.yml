@@ -26,7 +26,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: About admin roles
-            url: ../admin-overview/sign-up-for-office-365.md
+            url: admin-overview/sign-up-for-office-365.md
       - linkListType: video
         links:
           - text: Get help or support
@@ -39,42 +39,42 @@ landingContent:
           - text: Add DNS records to connect your domain
             url: setup-business-basic.md
           - text: Add a domain to Microsoft 365
-            url: setup-business-standard.md
+            url: setup/setup/setup-business-standard.md
   # Card (optional)
   - title: Security
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: Set up multifactor authentication
-            url: migrate-email-and-contacts-admin.md
+            url: setup/migrate-email-and-contacts-admin.md
   # Card (optional)
   - title: Bills and subscriptions
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: Cancel your subscription
-            url: setup-business-basic.md
+            url: setup/setup-business-basic.md
           - text: Pay for your subscription
-            url: setup-business-standard.md
+            url: setup/setup-business-standard.md
           - text: Manage payment methods
-            url: setup-business-standard.md
+            url: setup/setup-business-standard.md
           - text: View your bill or invoice
-            url: setup-business-standard.md
+            url: setup/setup-business-standard.md
   # Card (optional)
   - title: Email
     linkLists:
       - linkListType: how-to-guide
         links:
           - text: Configure email forwarding in Microsoft 365
-            url: ../admin-overview/sign-up-for-office-365.md
+            url: admin-overview/sign-up-for-office-365.md
           - text: Create a shared mailbox
-            url: ../admin-overview/sign-up-for-office-365.md
+            url: admin-overview/sign-up-for-office-365.md
           - text: Give mailbox permissions to another user
-            url: ../admin-overview/sign-up-for-office-365.md
+            url: admin-overview/sign-up-for-office-365.md
           - text: Change a user name and email address
-            url: ../admin-overview/sign-up-for-office-365.md
+            url: admin-overview/sign-up-for-office-365.md
           - text: Convert a user mailbox to a shared mailbox
-            url: ../admin-overview/sign-up-for-office-365.md
+            url: admin-overview/sign-up-for-office-365.md
       - linkListType: overview
         links:
           - text: About shared mailboxes
@@ -85,13 +85,13 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Add users and assign licenses at the same time
-            url: ../admin-overview/sign-up-for-office-365.md
+            url: admin-overview/sign-up-for-office-365.md
           - text: Assign licenses to users
-            url: ../admin-overview/sign-up-for-office-365.md
+            url: admin-overview/sign-up-for-office-365.md
           - text: Set the password expiration policy for your organization
-            url: ../admin-overview/sign-up-for-office-365.md
+            url: admin-overview/sign-up-for-office-365.md
           - text: Enable users to sign in to Outlook mobile apps with a QR code
-            url: ../admin-overview/sign-up-for-office-365.md
+            url: admin-overview/sign-up-for-office-365.md
       - linkListType: overview
         links:
           - text: Compare groups
