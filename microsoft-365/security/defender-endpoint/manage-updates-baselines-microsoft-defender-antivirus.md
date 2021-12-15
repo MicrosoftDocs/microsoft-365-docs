@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 12/02/2021
+ms.date: 12/13/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -39,8 +39,7 @@ Keeping Microsoft Defender Antivirus up to date is critical to assure your devic
 Microsoft Defender Antivirus uses [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads security intelligence updates to provide protection.
 
 > [!NOTE]
-> Updates are released under the below KB numbers:
->
+> Updates are released under the following KBs:
 > - Microsoft Defender Antivirus: KB2267602
 > - System Center Endpoint Protection: KB2461484
 
@@ -63,7 +62,6 @@ You can manage the distribution of updates through one of the following methods:
 For more information, see [Manage the sources for Microsoft Defender Antivirus protection updates](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
 
 > [!NOTE]
->
 > - Monthly updates are released in phases, resulting in multiple packages visible in your [Window Server Update Services](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
 > - This article lists changes that are included in the broad release channel. [See the latest broad channel release here](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info).
 > - To learn more about the gradual rollout process, and to see more information about the next release, see [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
@@ -81,6 +79,24 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary> November-2021 (Platform: 4.18.2111.X| Engine: 1.1.18800.4)</summary>
+
+&ensp;Security intelligence update version: **1.353.3.0**<br/>
+&ensp;Released: **December 9th, 2021**<br/>
+&ensp;Platform: **4.18.2111.X**<br/>
+&ensp;Engine: **1.1.18800.4**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.18800.4
+Security intelligence update version: 1.353.3.0
+
+### What's new
+No new features
+
+### Known Issues
+No known issues
+<br/>
+</details><details>
 <summary> October-2021 (Platform: 4.18.2110.6| Engine: 1.1.18700.4)</summary>
 
 &ensp;Security intelligence update version: **1.353.3.0**<br/>
@@ -122,14 +138,21 @@ Security intelligence update version: 1.351.7.0
 ### Known Issues
 No known issues
 <br/>
-</details><details>
+</details>
+
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
+
+<details>
 <summary> August-2021 (Platform: 4.18.2108.7 | Engine: 1.1.18500.10)</summary>
 
 &ensp;Security intelligence update version: **1.349.22.0**<br/>
 &ensp;Released: **September 2, 2021**<br/>
 &ensp;Platform: **4.18.2108.7**<br/>
 &ensp;Engine: **1.1.18500.10**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 ### What's new
 - Improvements to the behavior monitoring engine
@@ -141,14 +164,7 @@ No known issues
 ### Known Issues
 No known issues
 <br/>
-</details>
-
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
-
-<details>
+</details><details>
 <summary> July-2021 (Platform: 4.18.2107.4 | Engine: 1.1.18400.4)</summary>
 
 &ensp;Security intelligence update version: **1.345.13.0**<br/>
@@ -583,6 +599,20 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>1.1.2112.01</summary>
+
+&ensp;Package version: **1.1.2112.01**<br/>
+&ensp;Platform version: **4.18.2110.6**<br/>
+&ensp;Engine version: **1.1.18700.4**<br/>
+&ensp;Signature version: **1.353.2283.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+<br/>
+</details><details>
 <summary>1.1.2111.02</summary>
 
 &ensp;Package version: **1.1.2111.02**<br/>
