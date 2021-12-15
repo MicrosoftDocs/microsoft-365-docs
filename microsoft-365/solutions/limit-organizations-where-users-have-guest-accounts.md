@@ -42,7 +42,7 @@ To block outbound B2B collaboration by default
 
 ## Add an organization
 
-Next, add the organizations where you want to allow your users to collaborate as guests.
+Next, add the organizations where you want to allow your users to collaborate as guests to the Azure AD cross-tenant access list.
 
 1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
 1. Select **Organizational settings**.
