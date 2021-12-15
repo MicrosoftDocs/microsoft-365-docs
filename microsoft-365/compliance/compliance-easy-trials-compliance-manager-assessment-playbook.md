@@ -50,14 +50,14 @@ Start working with assessments and taking improvement actions to implement contr
 
 Compliance Manager provides a comprehensive set of templates for creating assessments. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
 
-Microsoft 365 or Office 365 E1/E3 subscription includes the [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) template.​
+Microsoft 365 or Office 365 E1 or E3 subscriptions automatically include the Microsoft Data Protection Baseline template.  
 
-Microsoft 365 or Office 365 E5, E5 Compliance includes templates for:​
+Microsoft 365 E5, Office 365 E5, and E5 Compliance add-on automatically include templates for:  
 
 - Microsoft Data Protection Baseline
 - European Union GDPR
 - ISO/IEC 27001
-- NIST 800-53​
+- NIST 800-53  
 
 Compliance Manager also offers 300+ regulatory or premium templates that can be purchased as an add-on. See the list [here](compliance-manager-templates-list.md#premium-templates). With any premium templates (included with your subscription or purchased as add-on) you will receive the universal version of those templates, allowing you to manage your compliance with any product or service. You can try out these premium assessment templates during the premium assessment trial.
 
@@ -69,7 +69,7 @@ There are two ways to enable the Premium Assessment Add-on trial: through the Co
 
 ### Enable trial via the Compliance Manager dashboard
 
-1. In the Compliance Manager dashboard, select **Try now**.
+1. In the Compliance Manager dashboard, select **Try now** in the banner.
 1. Select **Yes** to get access to premium template trials.
 
 ### Enable trial via the Compliance trial
