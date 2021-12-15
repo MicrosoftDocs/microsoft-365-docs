@@ -23,8 +23,10 @@ Prebuilt models are pretrained to recognize documents and the structured informa
 
 You can also customize a prebuilt model, review it to see how it works on your documents, and customize the names to match your documents or naming conventions. 
 
+Currently, there are two prebuilt models available: sales invoices and sales receipts. Additional prebuilt models will be available in future releases.
+
 > [!NOTE]
-> Currently, there are two prebuilt models available: sales invoices and sales receipts. Additional prebuilt models will be available in future releases.
+> Sensitivity labels are not supported in these prebuilt models.
 
 ## Use a prebuilt model
 
