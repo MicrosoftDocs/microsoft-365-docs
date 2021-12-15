@@ -16,7 +16,7 @@ description: "Learn how to set up and use a Slack eDiscovery data connector prov
 
 # Set up a connector to archive Slack eDiscovery data (preview)
 
-The Slack eDiscovery data connector provided by Microsoft helps you to import and archive instant messaging data (such as messages, attachments, links, and revisions) from your organization's Slack workspaces to Microsoft 365. The data connector pulls data from the Slack API, converts it to an email message format, and then imports those items to user mailboxes in Microsoft 364. After the Slack data is imported, you can apply compliance solutions, such as Litigation hold, Advanced eDiscovery, Communication compliance, and retention settings to the Slack content. Using a Slack eDiscovery data connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
+The Slack eDiscovery data connector provided by Microsoft helps you to import and archive instant messaging data (such as messages, attachments, links, and revisions) from your organization's Slack workspaces to Microsoft 365. The data connector pulls data from the Slack API, converts it to an email message format, and then imports those items to user mailboxes in Microsoft 365. After the Slack data is imported, you can apply compliance solutions, such as Litigation hold, Advanced eDiscovery, Communication compliance, and retention settings to the Slack content. Using a Slack eDiscovery data connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
 ## Overview of archiving Slack eDiscovery data
 
@@ -76,16 +76,19 @@ The following overview explains the process of using a Microsoft data connector 
 
    - **Automatic user mapping**. Select this option to automatically map Slack user names to Microsoft 365 mailboxes. The connector does by using the value of the *Email* property, which every Slack message or item contains. This property is populated with an email address of every participant of the message. If the connector can associate the email addresses with corresponding Microsoft 365 users, the item is imported to the Microsoft 365 mailbox of those users. To use this option, you must have SSO configured for your Slack organization.
 
-   - **Custom user mapping**. You also have the option to use custom user mapping instead of (or in addition to) automatic user mapping. With this option, you have to create and then upload a CSV file that maps users' Slack login names to their Microsoft 365 email address. To do this, click **Download CSV mapping template**, populate the CSV file with the Slack login name and Microsoft 365 email address for all users in your organization, then select and upload the CSV file to the wizard. Be sure not to change the column headings in the CSV file. Here's an example of the CSV mapping file:
+   - **Custom user mapping**. You also have the option to use custom user mapping instead of (or in addition to) automatic user mapping. With this option, you have to create and then upload a CSV file that maps users' Slack member ID to their Microsoft 365 email address. To do this, click **Download CSV mapping template**, populate the CSV file with the Slack member ID and Microsoft 365 email address for all users in your organization, then select and upload the CSV file to the wizard. Be sure not to change the column headings in the CSV file. Here's an example of the CSV mapping file:
 
      |**ExternalUserId**  | **O365UserMailbox**   |
-     |:-------------------------------------------------|:-----------------------|
-     | Alex Jones                                       | alexjones@contoso.onmicrosoft.com |
-     | Pilar Pinilla| pilarp@contoso.onmicrosoft.com|
-     | Sara Davis | sarad@contoso.onmicrosoft.com|
+     |:-------------------|:-----------------------|
+     | U01MDTF0QV6        | alexjones@contoso.onmicrosoft.com |
+     | U02MDTF1RW7| pilarp@contoso.onmicrosoft.com|
+     | U03MDTF2SX8 | sarad@contoso.onmicrosoft.com|
      |||
 
-     If you enable automatic user mapping and provide a custom mapping file, the connector will first look at the custom mapping file to map the Slack user to a Microsoft 365 mailbox. If the connector doesn't find a valid Microsoft 365 user that corresponds to the Slack user, the connector will use the *Email* property of the Slack item. If the connector doesn't find a valid Microsoft 365 user in either the custom mapping file or the *Email* property of the message item, the item won't be imported.
+   > [!TIP]
+   > The member ID is displayed on the Slack profile page for each user.
+
+    If you enable automatic user mapping and provide a custom mapping file, the connector will first look at the custom mapping file to map the Slack user to a Microsoft 365 mailbox. If the connector doesn't find a valid Microsoft 365 user that corresponds to the Slack user, the connector will use the *Email* property of the Slack item. If the connector doesn't find a valid Microsoft 365 user in either the custom mapping file or the *Email* property of the message item, the item won't be imported.
 
 2. On the **Select data types to import** wizard page, select the Slack data types you want to import. If you want to import messages from all channels, then select all options. Otherwise, select only the data types that you want to import.
 
