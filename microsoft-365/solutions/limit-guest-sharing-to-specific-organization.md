@@ -21,6 +21,21 @@ description:
 # Limit guest sharing to specific organizations
 
 
+TEST: If you block B2B collab by default, can users invite guests from non-AAD domains?
+
+How does this relate to regular domain filtering?
+
+
+
+By default, users can invite people outside the organization as guests. This includes inviting them to teams in Microsoft Team, SharePoint sites, and sharing individual files and folders with them.
+
+If you only want your users to invite guests from specific organizations, you can specify these organizations in the Azure Active Directory cross-tenant access settings for [B2B collaboration](/azure/active-directory/external-identities/what-is-b2b).
+
+
+
+
+
+## Set the default B2B collaboration settings to block inviting guests
 
 1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
 1. Select **External Identities**, and then select **Cross-tenant access settings (preview)**.
