@@ -48,7 +48,7 @@ Start working with assessments and taking improvement actions to implement contr
 
 ## Step 3: Review included assessment templates
 
-Compliance Manager provides a comprehensive set of templates for creating assessments. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. See a list of templates included with your subscription [here](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance.md#which-assessments-are-included-by-default-free-of-cost).
+Compliance Manager provides a comprehensive set of templates for creating assessments. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. See a list of templates included with your subscription [here](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-assessments-are-included-by-default-free-of-cost).
 
 Compliance Manager also offers 300+ regulatory or premium templates that can be purchased as an add-on. See the list [here](compliance-manager-templates-list.md#premium-templates). With any premium templates (included with your subscription or purchased as add-on) you will receive the universal version of those templates, allowing you to manage your compliance with any product or service. You can try out these premium assessment templates during the premium assessment trial.
 
