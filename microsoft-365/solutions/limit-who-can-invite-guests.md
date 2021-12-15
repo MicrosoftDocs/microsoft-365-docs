@@ -20,13 +20,15 @@ description:
 
 # Limit who can invite guests
 
+You can limit who in your organization can invite guests. Guest accounts can be used for sharing teams, SharePoint sites, files, and folders with people outside your organization.
 
+If your business processes require that you limit who can share with guests, or if you want users to complete training before they're able to share with guests, you can limit who can share by using the Guest inviter role in Azure Active Directory.
 
+## Create a security group for people allowed to invite guests
 
-## Create a security group
+The first step is to create a security group for the users who will be allowed to invite guests. Be sure to configure this group to allow Azure AD role, and then assign it the Guest inviter role.
 
-Create a security group that can be assigned a role.
-
+To create a security group for guest inviters
 1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
 1. On the **Active Directory** page, select **Groups** and then select **New group**.
 1. Choose **Security** for the **Group type**.
@@ -38,12 +40,13 @@ Create a security group that can be assigned a role.
 1. Search for and select the **Guest inviter** role, and then choose **Select**.
 1. Select **Create**, and confirm that you want a group to which roles can be assigned. Your group is created and ready for you to add members.
 
-
-
-
 ## Configure external collaboration settings
 
+Once you've created teh security group and added the users who you want to be able to invite guests, the next step is to configure the Azure AD external collaboration settings to only allow users with the Guest inviter role to invite guests.
 
+Note that global administrators will still be allowed to invite guests regardless of this setting.
+
+To configure Azure AD to limit guest invites to the Guest inviter role
 1. In [Azure Active Directory](https://aad.portal.azure.com/), select **External identities**.
 1. Select **External collaboration settings**.
 1. Under **Guest invite settings**, choose **Only users assigned to specific admin roles can invite guests**.
@@ -51,3 +54,4 @@ Create a security group that can be assigned a role.
 
 ## Related topics
 
+[Allow only users in specific security groups to share externally in SharePoint and OneDrive](/sharepoint/manage-security-groups)
