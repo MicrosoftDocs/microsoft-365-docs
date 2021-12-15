@@ -79,13 +79,8 @@ On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-cre
 
 ## Exchange transport rule report
 
-The **Exchange transport rule** report shows the effect of mail flow rules (also known as transport rules) on incoming and outgoing messages in your organization.
-
-To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Exchange transport rule** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/ETRRuleReport>.
-
-![Exchange transport rule widget on the Email & collaboration reports page.](../../media/transport-rule-report-widget.png)
-
-On the **Exchange transport rule report** page, the available charts and data are described in the following sections.
+> [!NOTE]
+> The **Exchange transport rule report** is now available in the EAC. For more information, see [Exchange transport rule report in the new EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
 
 ### Chart breakdown by Direction
 
