@@ -37,9 +37,9 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Add DNS records to connect your domain
-            url: setup-business-basic.md
+            url: setup/setup-business-basic.md
           - text: Add a domain to Microsoft 365
-            url: setup/setup/setup-business-standard.md
+            url: setup/setup-business-standard.md
   # Card (optional)
   - title: Security
     linkLists:
