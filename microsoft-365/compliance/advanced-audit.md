@@ -60,14 +60,12 @@ Advanced Audit provides the following events:
 
 - [Send](#send)
 
-- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)<sup>*</sup>
+- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)
 
-- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)<sup>*</sup>
+- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)
 
 - [Other Advanced Audit events in Microsoft 365](#other-advanced-audit-events-in-microsoft-365)
 
-> [!NOTE]
-> <sup>*</sup> At this time, this event isn't available in Office 365 and Microsoft 365 Government GCC High and DoD environments.
 
 ### MailItemsAccessed
 
