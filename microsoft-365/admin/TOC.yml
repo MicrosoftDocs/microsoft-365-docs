@@ -1,6 +1,8 @@
 - name: Microsoft 365 admin center help
   href: index.yml
   items: 
+    - name: Top 20 admin help articles
+      href: top-m365-admin-articles.yml
     - name: Get started
       items: 
         - name: Sign up
