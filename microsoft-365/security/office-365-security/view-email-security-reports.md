@@ -20,6 +20,7 @@ description: Admins can learn how to find and use the email security reports tha
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkDEFENDER
+- admindeeplinkEXCHANGE
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -39,7 +40,7 @@ A variety of reports are available in the Microsoft 365 Defender portal at <http
 >
 > Some of the reports on the **Email & collaboration reports** page require Microsoft Defender for Office 365. For information about these reports, see [View Defender for Office 365 reports in the Microsoft 365 Defender portal](view-reports-for-mdo.md).
 >
-> Reports that are related to mail flow are now in the Exchange admin center (EAC). For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
+> Reports that are related to mail flow are now in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 
 ## Compromised users report
 
@@ -317,9 +318,7 @@ The **Mail latency report** in Defender for Office 365 contains information on t
 
 The **Spoof detections** report shows information about messages that were blocked or allowed due to spoofing. For more information about spoofing, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
 
-The aggregate view of the report allows for 45 days of filtering<sup>\*</sup>, while the detail view only allows for ten days of filtering.
-
-<sup>\*</sup> Eventually, you'll be able to use up to 90 days of filtering.
+The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for ten days of filtering.
 
 To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Spoof detections** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/SpoofMailReportV2>.
 
@@ -912,7 +911,7 @@ To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **
 
 When you hover over a wedge in the pie chart, you can see the name of a kind of malware and how many messages were detected as having that malware.
 
-On the **Top malware report** page, a larger version of the pie chart is displayed on the report page.The details table below the chart shows the following information:
+On the **Top malware report** page, a larger version of the pie chart is displayed. The details table below the chart shows the following information:
 
 - **Top malware**
 - **Count**
@@ -922,6 +921,45 @@ If you click **Filter**, you can specify a date range with **Start date** and **
 On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)** and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
 ![Top malware report view.](../../media/top-malware-report-view.png)
+
+## Top senders and recipients report
+
+The **Top senders and recipient** report is available in both EOP and Defender for Office 365; however, the reports contain different data. For example, EOP customers can view information about top malware, spam, and phishing (spoofing) recipients, but not information about malware detected by [Safe Attachments](safe-attachments.md) or phishing detected by [impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+
+The **Top senders and recipients** shows the top messages senders in your organization, as well as the top recipients for messages that were detected by EOP and Defender for Office 365 protection features. By default, the report shows data for the last week, but data is available for the last 90 days.
+
+To view the report in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Top senders and recipients report** and then click **View details**. To go directly to the report, open one of the following URLs:
+
+- Defender for Office 365: <https://security.microsoft.com/reports/TopSenderRecipientsATP>
+- EOP: <https://security.microsoft.com/reports/TopSenderRecipient>
+
+![Top senders and recipients widget in the Reports dashboard.](../../media/top-senders-and-recipients-widget.png)
+
+When you hover over a wedge in the pie chart, you can see the number of messages for the sender or recipient.
+
+On the **Top senders and recipients** page, a larger version of the pie chart is displayed. The following charts are available:
+
+- **Show data for Top mail senders** (this is the default view)
+- **Show data for Top mail recipients**
+- **Show data for Top spam recipients**
+- **Show data for Top malware recipients** (EOP)
+- **Show data for Top phishing recipients**
+- **Show data for Top malware recipients (MDO)**
+- **Show data for Top phish recipients (MDO)**
+
+The data changes based on your selection.
+
+When you hover over a wedge in the pie chart, you can see the message count for that specific sender or recipient.
+
+The details table below the graph shows the senders or recipients and message counts based on the view you selected.
+
+You can filter both the chart and the details table by clicking **Filter** and selecting **Start date** and **End date**.
+
+When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+
+On the main report page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export** button is available.
+
+![Show data for Top mail senders view in the Top senders and recipients report.](../../media/top-senders-and-recipients-report-view.png)
 
 ## URL protection report
 
