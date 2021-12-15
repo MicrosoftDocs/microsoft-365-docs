@@ -80,17 +80,14 @@ If your support phone number isn't listed above, use the sections below to find 
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 001 212 497 6305
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -99,17 +96,14 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 1 877 639 9636
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -118,18 +112,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 1 800 865 9408
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM Local\
 French: Mon-Fri 9 AM-5 PM ET
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week\
 French: Mon-Fri 9 AM-5 PM ET
    :::column-end:::
@@ -139,17 +130,14 @@ French: Mon-Fri 9 AM-5 PM ET
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 012 1447
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -158,18 +146,15 @@ Spanish: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 6676\
 Select "Business", then select "Microsoft 365"
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -178,18 +163,15 @@ Spanish: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5152\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 7 AM-3 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -198,18 +180,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 1 800 300 0069\
 Select "Business", then select "Microsoft 365"
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -218,18 +197,15 @@ Spanish: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 0123\
 Select "Business", then select "Microsoft 365"
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -238,19 +214,16 @@ Spanish: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 563 0605\
 Alternative Phone Number: 55 4738 6567\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -259,18 +232,15 @@ Spanish: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 1800 0164\
 Select "Business", then select "Microsoft 365"
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -279,18 +249,15 @@ Spanish: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 00800 051 0398\
 Select "Business", then select "Microsoft 365"
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -299,19 +266,16 @@ Spanish: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 6 AM-2 PM\
 English: Mon-Fri 6 AM-2 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 5 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -321,17 +285,14 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 1 800 865 9408
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
