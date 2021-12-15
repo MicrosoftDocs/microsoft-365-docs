@@ -100,4 +100,4 @@ Depending on your source email system, you can choose from several bulk migratio
 
 [Plan your setup of Microsoft 365 for business](plan-your-setup.md) (article)\
 [Install Office applications](install-applications.md) (link page)\
-[Overview of the Microsoft 365 admin center]([Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)
+[Overview of the Microsoft 365 admin center](Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)

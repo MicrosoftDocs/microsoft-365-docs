@@ -33,7 +33,7 @@ description: "The Microsoft 365 admin center - learn about the features that wer
 
 ::: moniker-end
 
-We're continuously adding new features to [the Microsoft 365 admin center]([Overview of the Microsoft 365 admin center](admin-overview/admin-center-overview.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
+We're continuously adding new features to [the Microsoft 365 admin center](Overview of the Microsoft 365 admin center](admin-overview/admin-center-overview.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
 
 And if you'd like to know what's new with other Microsoft cloud services:
 
@@ -397,9 +397,9 @@ We've got two updates for Groups this month:
 #### For admins and business owners
 
 - [Empower your small business with remote work](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [Running a remote small business](../business-video/sign-up.md)
-- [Sign up for Microsoft Business Basic](../business-video/sign-up.md)
-- [Setting up two-factor sign-in](../business-video/sign-up.md)
+- [Running a remote small business](admin-overview/sign-up-for-office-365.md)
+- [Sign up for Microsoft Business Basic]()
+- [Setting up two-factor sign-in](admin-overview/sign-up-for-office-365.md)
 
 ## March 2020
 
