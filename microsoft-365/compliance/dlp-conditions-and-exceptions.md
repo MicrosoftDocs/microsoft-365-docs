@@ -57,7 +57,7 @@ At the tenant level, you can configure a Sender Address Location to be used acro
 Set-PolicyConfig –SenderAddressLocation Envelope
 ```
 
-To configure sender address location at a DLP rule level, the parameter is _SenderAddressLocation_. The available values are:
+To configure the sender address location at a DLP rule level, the parameter is _SenderAddressLocation_. The available values are:
 
 - **Header**: Only examine senders in the message headers (for example, the **From**, **Sender**, or **Reply-To** fields). This is the default value.
 
