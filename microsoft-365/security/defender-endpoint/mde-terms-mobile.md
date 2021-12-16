@@ -83,7 +83,7 @@ from the commercially released version.
     a. You are not located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a “terrorist supporting” country.
     b. You are not listed on any U.S. Government list of prohibited or restricted parties.
 
-1. **SUPPORT SERVICES.** Microsoft is'nt obliged under this agreement to provide any support services for the software. Any support provided is “as is”, “with all faults”, and without warranty of any kind. You acknowledge that Apple has no obligation at all to furnish any maintenance and support services about the software.
+1. **SUPPORT SERVICES.** Microsoft isn't obliged under this agreement to provide any support services for the software. Any support provided is “as is”, “with all faults”, and without warranty of any kind. You acknowledge that Apple has no obligation at all to furnish any maintenance and support services about the software.
 
 1. **UPDATES.** The software may periodically check for updates, and download and install them for you. You may obtain updates only from Microsoft or authorized sources. Microsoft may need to update your system to provide you with updates. You agree to receive these automatic updates without any extra notice. Updates may not include or support all existing software features, services, or peripheral devices.
 
