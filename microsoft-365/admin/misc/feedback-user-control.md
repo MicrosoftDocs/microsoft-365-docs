@@ -87,6 +87,7 @@ When a user submits feedback, app information is usually collected along with ap
 - **App Language**   Language of Microsoft product that was captured on submission.
 - **Attachments**   Were any attachments (i.e screenshots, files) collected as part of the feedback? (Yes/No).
 - **TenantId**   If feedback is submitted from an Azure Active Directory account, which TenantId was associated.
+- **App module** Information about app modules that may have caused a recent crash, where applicable.
 
 ## How can I see my user's feedback?
 
