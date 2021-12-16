@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 12/13/2021
+ms.date: 12/16/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -79,19 +79,28 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary> November-2021 (Platform: 4.18.2111.X| Engine: 1.1.18800.4)</summary>
+<summary>November-2021 (Platform: 4.18.2111.5| Engine: 1.1.18800.4)</summary>
 
-&ensp;Security intelligence update version: **1.353.3.0**<br/>
+&ensp;Security intelligence update version: **1.355.2.0**<br/>
 &ensp;Released: **December 9th, 2021**<br/>
-&ensp;Platform: **4.18.2111.X**<br/>
+&ensp;Platform: **4.18.2111.5**<br/>
 &ensp;Engine: **1.1.18800.4**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
 Engine version: 1.1.18800.4
-Security intelligence update version: 1.353.3.0
+Security intelligence update version: 1.355.2.0
 
 ### What's new
-No new features
+
+- Improved CPU usage efficiency of certain intensive scenarios on Exchange servers
+- Added new device control status fields under Get-MpComputerStatus in Defender PowerShell module. For more information, see [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md).
+- Fixed bug in which `SharedSignatureRoot` value could not be removed when set with PowerShell
+- Fixed bug in which [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) failed to be enabled, even though Microsoft Defender for Endpoint indicated that tamper protection was turned on
+- Added supportability and bug fixes to performance analyzer for Microsoft Defender Antivirus tool. For more information, see [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).   
+   - PowerShell ISE support added for `New-MpPerformanceRecording`
+   - Fixed bug errors for `Get-MpPerformanceReport -TopFilesPerProcess`
+   - Fixed performance recording session leak when using `New-MpPerformanceRecording` in PowerShell 7.x, remote sessions, and PowerShell ISE
+
 
 ### Known Issues
 No known issues
