@@ -216,6 +216,7 @@ Spanish: 24 hours a day, 7 days a week
    :::column:::
 **Phone number:**\
 800 563 0605\
+
 Alternative Phone Number: 55 4738 6567\
 Local call charges apply
 
@@ -516,14 +517,15 @@ Spanish: 24 hours a day, 7 days a week
 1 800 751 3455\
 Select "Business", then select "Microsoft 365"
 
+Alternative Phone Number: 1 809 200 8794\
+(Cellular toll-free)
+
 **Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Spanish: 24 hours a day, 7 days a week\
-Alternative Phone Number: 1 809 200 8794\
-(Cellular toll-free)
+Spanish: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
 
@@ -871,7 +873,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-0800 266 1512\
+0800 266 1512
+
 Alternative Phone Number: 011 5354 2347\
 Local call charges apply
 
@@ -927,7 +930,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-800 226 826\
+800 226 826
+
 Alternative Phone Number: 123 002 000 05\
 Local call charges apply
 
@@ -1274,7 +1278,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-0800 080 650\
+0800 080 650
+
 Alternative Phone Number: 01 206 09 15 78\
 Local call charges apply
 
@@ -1333,7 +1338,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-0800 81174\
+0800 81174
+
 Alternative Phone Number: 02 200 88 84\
 Local call charges apply
 
@@ -1356,6 +1362,8 @@ English: 24 hours a day, 7 days a week
 **Phone number:**\
 0800 20 230\
 Select "Business", then select "Microsoft 365"\
+
+Alternative Phone Number: +387 33 606 100\
 International call charges apply
 
 **Billing support hours:**\
@@ -1363,8 +1371,7 @@ English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-English: 24 hours a day, 7 days a week\
-Alternative Phone Number: +387 33 606 100
+English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
 
@@ -1423,7 +1430,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-800 701 371\
+800 701 371
+
 Alternative Phone Number: 239 016 433\
 Local call charges apply
 
@@ -1443,7 +1451,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-80 34 76 23\
+80 34 76 23
+
 Alternative Phone Number: 38 48 70 67\
 Local call charges apply
 
@@ -1494,7 +1503,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-0800 98462\
+0800 98462
+
 Alternative Phone Number: 09 72 51 96 30\
 Local call charges apply
 
@@ -1512,7 +1522,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-0805 540 594\
+0805 540 594
+
 Alternative Phone Number: 01 57 32 42 97\
 Local call charges apply
 
@@ -1552,7 +1563,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-0800 589 2332\
+0800 589 2332
+
 Alternative Phone Number: 069 380 789 508\
 Local call charges apply
 
@@ -1623,7 +1635,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-+36 80 983 899\
++36 80 983 899
+
 Alternative Phone Number: +36 1 778 9292\
 Local call charges apply
 
@@ -1658,7 +1671,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-1 800 995309\
+1 800 995309
+
 Alternative Phone Number: 01 656 9837\
 Local call charges apply
 
@@ -1693,7 +1707,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-800 917 919\
+800 917 919
+
 Alternative Phone Number: 02 6943 0746\
 Local call charges apply
 
@@ -1781,7 +1796,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-+41 800 000 300\
++41 800 000 300
+
 Alternative Phone Number: +41 22 76 141 14\
 Local call charges apply
 
@@ -1820,6 +1836,9 @@ English: 24 hours a day, 7 days a week
 **Phone number:**\
 800 21094
 
+Alternative Phone Number: 24 87 15 10\
+Local call charges apply
+
 **Billing support hours:**\
 French: Mon-Fri 9 AM-5 PM\
 German: Mon-Fri 9 AM-5 PM\
@@ -1830,9 +1849,6 @@ English: Mon-Fri 9 AM-5 PM
 French: Mon-Fri 8 AM-9 PM\
 German: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
-
-Alternative Phone Number: 24 87 15 10
-Local call charges apply\
    :::column-end:::
 :::row-end:::
 
@@ -1912,7 +1928,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-0800 020 2546\
+0800 020 2546
+
 Alternative Phone Number: 020 203 5362\
 Local call charges apply
 
@@ -1948,7 +1965,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-800 31068\
+800 31068
+
 Alternative Phone Number: 22 31 07 48\
 Local call charges apply
 
@@ -1966,7 +1984,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-800 70 23 20\
+800 70 23 20
+
 Alternative Phone Number: 022 306 05 17\
 Local call charges apply
 
@@ -1986,7 +2005,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-800 208 745\
+800 208 745
+
 Alternative Phone Number: 21 366 5030\
 Local call charges apply
 
@@ -2005,7 +2025,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-0800 896 956\
+0800 896 956
+
 Alternative Phone Number: 372 741 961\
 Local call charges apply
 
@@ -2023,7 +2044,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-8 10 800 2548 1044\
+8 10 800 2548 1044
+
 Alternative Phone Number: 499 922 86 23\
 Local call charges apply
 
@@ -2078,7 +2100,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-0800 102 365\
+0800 102 365
+
 Alternative Phone Number: 026 862 2111\
 Local call charges apply
 
@@ -2112,7 +2135,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-900 814 197\
+900 814 197
+
 Alternative Phone Number: 912 718 160\
 Local call charges apply
 
@@ -2149,7 +2173,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-020 160 5899\
+020 160 5899
+
 Alternative Phone Number: 08 5176 1966\
 Local call charges apply
 
@@ -2167,7 +2192,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-0800 000 300\
+0800 000 300
+
 Alternative Phone Number: 022 76 141 14\
 Local call charges apply
 
@@ -2227,7 +2253,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-0800 032 6417\
+0800 032 6417
+
 Alternative Phone Number: 0203 450 6455\
 Local call charges apply
 
@@ -2245,7 +2272,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-800 917 919\
+800 917 919
+
 Alternative Phone Number: 02 6943 0746\
 Local call charges apply
 
@@ -3246,7 +3274,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-080 020 2883\
+080 020 2883
+
 Alternative Phone Number: 021 427 3315\
 Local call charges apply
 
@@ -3794,6 +3823,8 @@ English: 24 hours a day, 7 days a week
 **Phone number:**\
 800 988 0365
 
+Alternative Phone Number: 400 920 0365 (Mobile)
+
 **Billing support hours:**\
 Chinese (Mandarin): Mon-Fri 9 AM-6 PM\
 English: Mon-Fri 9 AM-6 PM
@@ -3801,24 +3832,26 @@ English: Mon-Fri 9 AM-6 PM
    :::column:::
 **Technical support hours:**\
 Chinese (Mandarin): Mon-Fri 9 AM-6 PM\
-English: 24 hours a day, 7 days a week\
-Alternative Phone Number: 400 920 0365 (Mobile)
+English: 24 hours a day, 7 days a week
+   :::column-end:::
+:::row-end:::
 
-**Follow us on WeChat**
+#### Follow us on WeChat
 
 ![WeChat QR code.](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
-## Contact support for Office 365 operated by 21Vianet only
-## Phone number
+#### Contact support for Office 365 operated by 21Vianet only
+
+:::row:::
+   :::column:::
+**Phone number:**\
 +86 4000 890 365
 
-**Hours**
-**Billing Support:**
-
+**Billing support hours:**\
 Chinese and English: Mon-Fri 9 AM-6 PM
-
-**Technical Support:**
-
+   :::column-end:::
+   :::column:::
+**Technical support hours:**\
 Chinese and English phone support: Mon-Fri 9 AM-9 PM\
 Chinese and English online support (through the admin center): 24 hours a day, 7 days a week
    :::column-end:::
@@ -3924,38 +3957,29 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-0120 996 680 (Office 365 Enterprise)
-
+0120 996 680 (Office 365 Enterprise)\
 0120 628 860 (Other Plans)
 
+Alternative Phone Number:\
+03 4332 5493 (Office 365 Enterprise)\
+03 4332 6257 (Other Plans)\
+Local call charges apply
+
 **Billing support hours:**\
-Japanese: Mon-Fri 9:00-17:00
-
-(Closed on weekends and public holidays)
-
-English: Mon-Fri 9:00-17:00
-
+Japanese: Mon-Fri 9:00-17:00\
+(Closed on weekends and public holidays)\
+English: Mon-Fri 9:00-17:00\
 (Closed on weekends and public holidays)
    :::column-end:::
    :::column:::
-**Technical support hours:**\
-**Office 365 Enterprise:**
+**Technical support hours:**
 
-Japanese: 24 hours a day, 7 days a week
-
+**Office 365 Enterprise:**\
+Japanese: 24 hours a day, 7 days a week\
 English: 24 hours a day, 7 days a week
 
-**Other Plans:**
-
+**Other Plans:**\
 Telephone technical support is available from 9:00-17:30 on weekdays. For high severity issues, technical support is available 24 hours a day, 7 days a week.
-
-Alternative Phone Number:
-
-Local call charges apply
-
-03 4332 5493 (Office 365 Enterprise)
-
-03 4332 6257 (Other Plans)
    :::column-end:::
 :::row-end:::
 
@@ -3983,7 +4007,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-080 495 0880\
+080 495 0880
+
 Alternative Phone Number: 02 3483 1937\
 Local call charges apply
 
@@ -4064,7 +4089,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-1800 22 0030\
+1800 22 0030
+
 Alternative Phone Number: 03 6207 4606\
 Local call charges apply
 
@@ -4187,7 +4213,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-1 800 622 1856\
+1 800 622 1856
+
 Alternative Phone Number: 6622 1855\
 Local call charges apply
 
@@ -4222,7 +4249,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-0800 666 802\
+0800 666 802
+
 Alternative Phone Number: 02 2656 7301\
 Local call charges apply
 
@@ -4409,7 +4437,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-1800 197 503\
+1800 197 503
+
 Alternative Phone Number: 02 8223 9959\
 Local call charges apply
 
@@ -4601,7 +4630,8 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-0800 194 197\
+0800 194 197
+
 Alternative Phone Number: 09 912 7298\
 Local call charges apply
 
