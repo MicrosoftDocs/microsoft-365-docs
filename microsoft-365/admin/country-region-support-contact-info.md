@@ -215,7 +215,7 @@ Spanish: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-800 563 0605\
+800 563 0605
 
 Alternative Phone Number: 55 4738 6567\
 Local call charges apply
@@ -1361,7 +1361,7 @@ English: 24 hours a day, 7 days a week
    :::column:::
 **Phone number:**\
 0800 20 230\
-Select "Business", then select "Microsoft 365"\
+Select "Business", then select "Microsoft 365"
 
 Alternative Phone Number: +387 33 606 100\
 International call charges apply
