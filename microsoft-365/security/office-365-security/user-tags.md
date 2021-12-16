@@ -58,8 +58,8 @@ To see how user tags are part of the strategy to help protect high-impact user a
 
 - You need to be assigned permissions in the Microsoft 365 Defender portal before you can do the procedures in this article:
   - To create, modify, and delete custom user tags, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
-  - To add and remove members from the Priority Account system tag, you need to be a member of the **Security Administrator** and **Exchange Admin** role groups
-  - To add and remove members from existing custom user tags, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Operator** role groups
+  - To add and remove members from the Priority Account system tag, you need to be a member of the **Security Administrator** and **Exchange Admin** role groups.
+  - To add and remove members from existing custom user tags, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Operator** role groups.
   - For read-only access to user tags, you need to be a member of the **Global Reader** or **Security Reader** role groups.
 
   For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
