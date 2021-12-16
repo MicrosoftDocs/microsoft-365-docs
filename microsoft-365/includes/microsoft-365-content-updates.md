@@ -1,5 +1,6 @@
 <!-- This file is generated automatically each week. Changes made to this file will be overwritten.-->
-
+
+
 
 
 ## Week of December 06, 2021
@@ -15,7 +16,7 @@
 | 12/6/2021 | [Migrate email and contacts to Microsoft 365](/microsoft-365/admin/setup/migrate-email-and-contacts-admin?view=o365-21vianet) | modified |
 | 12/6/2021 | [Plan your setup of Microsoft 365 for business](/microsoft-365/admin/setup/plan-your-setup?view=o365-21vianet) | modified |
 | 12/6/2021 | [Sign up for a Microsoft 365 Business Standard](/microsoft-365/admin/simplified-signup/signup-business-standard?view=o365-21vianet) | modified |
-| 12/6/2021 | [Employee quick setup-guide](/microsoft-365/business-video/employee-quick-setup?view=o365-worldwide) | modified |
+| 12/6/2021 | [Employee quick setup guide](../admin/setup/employee-quick-setup.md) | modified |
 | 12/6/2021 | [Microsoft 365 small business training # < 60 chars](/microsoft-365/business-video/index?view=o365-21vianet) | modified |
 | 12/6/2021 | [Microsoft 365 Business Premium resources # < 60 chars](/microsoft-365/business/index?view=o365-21vianet) | modified |
 | 12/6/2021 | [What is the difference between device and app management](/microsoft-365/business/ui/mam-and-mdm?view=o365-21vianet) | modified |

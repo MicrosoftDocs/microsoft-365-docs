@@ -192,6 +192,14 @@ If the list mode is set to **Allow**, then users will be able to upload sensitiv
 > [!IMPORTANT]
 > When the service restriction mode is set to "Allow", you must have at least one service domain configured before restrictions are enforced.
 
+Use the FQDN format of the service domain without the ending `.` 
+
+For example:
+
+ `www.contoso.com` 
+
+Wildcards are not supported.
+
 ### Additional settings for endpoint DLP
 
 #### Business justification in policy tips
