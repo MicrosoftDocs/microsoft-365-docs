@@ -50,7 +50,7 @@ You can use [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to conf
 
 7. Expand the **Scan** section, and review or edit your scanning settings.
 
-8. Choose **Review + save**
+8. Choose **Review + save**.
 
 > [!TIP]
 > Need help? See [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).
