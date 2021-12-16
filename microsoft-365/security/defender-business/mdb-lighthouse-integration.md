@@ -34,7 +34,7 @@ If you're using Microsoft 365 Lighthouse to manage security for small and medium
 To access the list of incidents, in Microsoft 365 Lighthouse, on the home page, find the **Security incidents** card, and then select **View all incidents**.
 
 > [!IMPORTANT]
-> During preview, Microsoft 365 Lighthouse will only pull security incidents from Defender for Business (preview) when used with a customer tenants that also have Microsoft 365 Business Premium.
+> During preview, Microsoft 365 Lighthouse will only pull security incidents from Defender for Business (preview) when used with a customer tenants that also have Microsoft 365 Business Premium. This capability is rolling out gradually across Microsoft 365 Lighthouse (preview) and Defender for Business (preview0, and might not be immediately available as a testing scenario.
 
 ## Learn more about Microsoft 365 Lighthouse
 
