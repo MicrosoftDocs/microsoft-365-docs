@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 auditing solutions"
+title: "Use customer-managed keys to encrypt your organization's auditing data"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
