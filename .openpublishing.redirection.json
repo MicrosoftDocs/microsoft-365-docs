@@ -6219,6 +6219,41 @@
       "source_path": "microsoft-365/business-video/set-up-self-serve-password-reset.md",
       "redirect_url": "/microsoft-365/admin/add-users/let-users-reset-passwords",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender/api-terms.md",
+      "redirect_url": "/legal/microsoft-365/api-terms",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/ios-terms.md",
+      "redirect_url": "/legal/microsoft-365/ios-terms",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/microsoft-message-phishing-report-terms.md",
+      "redirect_url": "/legal/microsoft-365/microsoft-message-phishing-report-terms",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/defender-for-office-365-trial-terms-and-conditions.md",
+      "redirect_url": "/legal/microsoft-365/defender-for-office-365-trial-terms-and-conditions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/android-terms.md",
+      "redirect_url": "/legal/microsoft-365/android-terms",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/api-terms-of-use.md",
+      "redirect_url": "/legal/microsoft-365/api-terms-of-use",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/mde-terms-windows.md",
+      "redirect_url": "/legal/microsoft-365/mde-terms-windows",
+      "redirect_document_id": false
     }
   ]
 }
