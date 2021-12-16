@@ -117,7 +117,7 @@ Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <Dest
 
 ### Start a SharePoint site geo move for a Microsoft 365 group-connected site
 
-To move an Office 365 Group-connected site, the Global Administrator or SharePoint Administrator must first change the Preferred Data Location (PDL) attribute for the Office 365 Group.
+To move an Microsoft 365 group-connected site, the Global Administrator or SharePoint Administrator must first change the Preferred Data Location (PDL) attribute for the Microsoft 365 group.
 
 To set the PDL for a Microsoft 365 group:
 
