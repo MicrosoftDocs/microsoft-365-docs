@@ -30,7 +30,7 @@ The following types of site can be moved between geo locations:
 
 You must be a Global Administrator or SharePoint Administrator to move a site between geo locations.
 
-There is a read-only window during the SharePoint site geo move of approximately 4-6 hours, depending on site contents.
+There is a read-only window during the SharePoint site geo move of approximately 4 to 6 hours, depending on site contents.
 
 ## Best practices
 
@@ -117,7 +117,7 @@ Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <Dest
 
 ### Start a SharePoint site geo move for a Microsoft 365 group-connected site
 
-To move an Microsoft 365 group-connected site, the Global Administrator or SharePoint Administrator must first change the Preferred Data Location (PDL) attribute for the Microsoft 365 group.
+To move a Microsoft 365 group-connected site, the Global Administrator or SharePoint Administrator must first change the Preferred Data Location (PDL) attribute for the Microsoft 365 group.
 
 To set the PDL for a Microsoft 365 group:
 
