@@ -567,7 +567,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
 8. Click the `+` sign next to **App Access** to add a new entry.
 
-   :::image type="content" source="images/tcc-add-entry.png" alt-text="The save operation for the configuration setting" lightbox="images/tcc-add-entry.png":::
+   :::image type="content" source="images/tcc-add-entry.png" alt-text="The save operation relating to the configuration setting" lightbox="images/tcc-add-entry.png":::
 
 9. Enter the following details:
 
@@ -605,7 +605,7 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 
 17. Select **Done**.
 
-    :::image type="content" source="images/809cef630281b64b8f07f20913b0039b.png" alt-text="The configuration setting contoso machine group" lightbox="images/809cef630281b64b8f07f20913b0039b.png":::
+    :::image type="content" source="images/809cef630281b64b8f07f20913b0039b.png" alt-text="The configuration setting contoso machine-group" lightbox="images/809cef630281b64b8f07f20913b0039b.png":::
 
     :::image type="content" source="images/6c8b406ee224335a8c65d06953dc756e.png" alt-text="The configuration setting illustration" lightbox="images/6c8b406ee224335a8c65d06953dc756e.png":::
 
@@ -861,7 +861,7 @@ Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint 
 
 17. Select the **Scope** tab.
 
-    :::image type="content" source="images/8d80fe378a31143db9be0bacf7ddc5a3.png" alt-text="The Scope tab for the configuration settings" lightbox="images/8d80fe378a31143db9be0bacf7ddc5a3.png":::
+    :::image type="content" source="images/8d80fe378a31143db9be0bacf7ddc5a3.png" alt-text="The Scope tab related to the configuration settings" lightbox="images/8d80fe378a31143db9be0bacf7ddc5a3.png":::
 
 18. Select the target computers.
 

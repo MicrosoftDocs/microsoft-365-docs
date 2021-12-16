@@ -127,7 +127,7 @@ In the Assessment jobs page in **Settings**, select **Add network assessment job
 To prevent device duplication in the network device inventory, make sure each IP address is configured only once across multiple assessment devices.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/images/assessment-jobs-add.png" alt-text="The Add network assessment job button" lightbox="images/images/assessment-jobs-add.png":::
+> :::image type="content" source="images/assessment-jobs-add.png" alt-text="The Add network assessment job button" lightbox="images/assessment-jobs-add.png":::
 
 Adding a network assessment job steps:
 
