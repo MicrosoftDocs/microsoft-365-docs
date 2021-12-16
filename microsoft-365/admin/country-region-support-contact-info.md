@@ -3917,8 +3917,7 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-000 800 440 2038
-
+000 800 440 2038\
 Local toll-free
 
 **Billing support hours:**\
@@ -3935,19 +3934,16 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-007 803 011 0882 (Telkom)
-
+007 803 011 0882 (Telkom)\
 001 803 442 304 (Indosat)
 
 **Billing support hours:**\
-Bahasa Indonesia: Mon-Fri 8 AM-5 PM
-
+Bahasa Indonesia: Mon-Fri 8 AM-5 PM\
 English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Bahasa Indonesia: Mon-Fri 8 AM-5 PM
-
+Bahasa Indonesia: Mon-Fri 8 AM-5 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4068,18 +4064,14 @@ English: 24 hours a day, 7 days a week
 Select "Business", then select "Microsoft 365"
 
 **Billing support hours:**\
-Cantonese: Mon-Fri 9 AM-5 PM
-
-Mandarin: Mon-Fri 9 AM-5 PM
-
+Cantonese: Mon-Fri 9 AM-5 PM\
+Mandarin: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Cantonese: Mon-Fri 9 AM-5 PM
-
-Mandarin: Mon-Fri 9 AM-5 PM
-
+Cantonese: Mon-Fri 9 AM-5 PM\
+Mandarin: Mon-Fri 9 AM-5 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4195,8 +4187,7 @@ English: 24 hours a day, 7 days a week
 :::row:::
    :::column:::
 **Phone number:**\
-1800 1441 0625 (PLDT)
-
+1800 1441 0625 (PLDT)\
 1800 8908 6422 (Globe)
 
 **Billing support hours:**\
@@ -4292,14 +4283,12 @@ English: 24 hours a day, 7 days a week
 001 800 441 2619
 
 **Billing support hours:**\
-Thai: Mon-Fri 9 AM-5 PM
-
+Thai: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Thai: Mon-Fri 9 AM-5 PM
-
+Thai: Mon-Fri 9 AM-5 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
