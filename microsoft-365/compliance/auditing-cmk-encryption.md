@@ -30,17 +30,19 @@ To implement Customer Key for auditing, you have to create a multi-workload Data
 
 Here's a high-level overview of implementing a multi-workload DEP to enable Customer Key for auditing. Use this high-level guidance as a road map and then follow the [step-by-step instructions](customer-key-set-up.md) to implement Customer Key for auditing.
 
-1. Create an Azure Key Vault.
+Create two Azure subscriptions. Customer Key requires two Azure subscriptions.
 
-2. Create your Customer Keys in the Azure Key Vault that you created in the previous step.
+1. Create an Azure Key Vault in each subscription.
 
-3. Grant access to the Azure Key Vault to the M365DataAtRestEncryption Azure Active Directory (Azure AD) app. The App ID for this app is c066d759-24ae-40e7-a56f-027002b5d3e4.
+2. Create your Customer Keys in the key vaults that you created in the previous step.
 
-4. Configure the following two settings for the Azure Key Vault that you created in step 1. These settings help prevent the inadvertent permanent deletion of your keys.
+3. Grant access to the key vaults to the M365DataAtRestEncryption Azure Active Directory (Azure AD) app. The AppID for this app is **c066d759-24ae-40e7-a56f-027002b5d3e4**.
 
-   - Mark the recovery level for the Azure Key Value subscription as *Do Not Cancel*. 
+4. Configure the following two settings for the Azure Key Vault that you created in step 1. These settings help prevent the inadvertent deletion of your keys and facilitates the key recovery process.
 
-   - Enable "Soft-Delete"
+   - Enable Soft Delete.
+
+   - Mark the recovery level for the Azure Key Value subscription as *Do Not Cancel*.
 
 5. Contact the Microsoft Data Encryption Policy Service (MDEPS) team to onboard MDEPS for your organization.
 
@@ -48,7 +50,7 @@ Here's a high-level overview of implementing a multi-workload DEP to enable Cust
 
 7. Use the [Set-M365DataAtRestEncryptionPolicyAssignment](/powershell/module/exchange/set-m365dataatrestencryptionpolicyassignment) cmdlet in Exchange Online PowerShell to assign the multi-workload DEP that you created in the previous step to your organization. After you assign the multi-workload DEP, you can't disable it.
 
-After you complete these steps, all content in your organization, including audit records, will be encrypted using the keys that were associated to the multi-workload DEP that you created in step 6.
+After you complete these steps, Microsoft 365 encrypts all data in your organization, including audit records, using the keys that are identified in the multi-workload DEP that you created in step 6.
 
 ## Offboarding
 
