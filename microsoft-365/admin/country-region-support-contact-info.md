@@ -934,11 +934,11 @@ English: 24 hours a day, 7 days a week
 
 Alternative Phone Number: 123 002 000 05\
 Local call charges apply
-
-**Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+Spanish: Mon-Fri 9 AM-5 PM
+ 
 **Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
@@ -1455,11 +1455,11 @@ English: 24 hours a day, 7 days a week
 
 Alternative Phone Number: 38 48 70 67\
 Local call charges apply
-
-**Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+English: Mon-Fri 9 AM-5 PM
+
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2029,11 +2029,11 @@ English: 24 hours a day, 7 days a week
 
 Alternative Phone Number: 372 741 961\
 Local call charges apply
-
-**Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+English: Mon-Fri 9 AM-5 PM
+
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2854,8 +2854,7 @@ English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
 **Technical support hours:**\
-Portuguese: 8 AM-9 PM
-
+Portuguese: 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4623,11 +4622,11 @@ English: 24 hours a day, 7 days a week
 
 Alternative Phone Number: 09 912 7298\
 Local call charges apply
-
-**Billing support hours:**\
-English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+English: Mon-Fri 9 AM-6 PM
+
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
