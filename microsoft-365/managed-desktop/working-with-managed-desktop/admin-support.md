@@ -49,12 +49,14 @@ While email is the recommended approach to interact with our team, you may want 
 
 ### Edit case details
 
-If you need to edit the details of a case, for example updating the primary case contact, you will need to follow these steps:
+If you need to edit the details of a case, for example updating the primary case contact or changing the severity, you will need to follow these steps:
 
 1. From the **Service requests** blade, in the **Tenant Administration** menu of [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), use the search bar or filters to find the case you're interested in editing.
 2. Select the case to open up the request's details
 3. Scroll to the bottom of the request details and select **Edit**.
 4. Update the editable information, add attachments to the case, or add a note for the Service Engineering team, then select **Save**.
+
+Once a case is resolved it can no longer be edited. If a request has been resolved for less than 24hrs you will see the option to **reactivate** instead of **Edit**, and once reactivated you can again edit the request.  
 
 ### Provide feedback
 

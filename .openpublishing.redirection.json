@@ -4501,6 +4501,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/attack-surface-reduction-rules.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md",
       "redirect_url": "/microsoft-365/security/office-365-security/report-false-positives-and-false-negatives",
       "redirect_document_id": true
