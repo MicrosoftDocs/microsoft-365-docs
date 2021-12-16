@@ -68,6 +68,24 @@ After applying the model to the document library, you can begin uploading docume
 
 The model identifies any files and folders with the model’s associated content type and lists them in your view. If your model has any extractors, the view displays columns for the data you are extracting from each file or folder.
 
+## Sync changes to one or more libraries
+
+When you publish a model to multiple document libraries and then update the model, such as adding or removing an extractor, you need to push the update to all the libraries that the model has been applied.
+
+To sync changes to all applied libraries:
+
+1. On model home page, in the **Where the model is applied** section, select **Sync all**.
+
+    ![Screenshot showing the Where the model is applied section and the Sync all button highlighted.](../media/content-understanding/sync-all-button.png) 
+
+To sync changes to one or only selected libraries:
+
+1. On model home page, in the **Where the model is applied** section, select the library or libraries you want to apply the changes to.
+
+2. Select **Sync**.
+
+    ![Screenshot showing the Where the model is applied section and the Sync button highlighted.](../media/content-understanding/sync-button.png) 
+
 ## Apply the model to files and folder content already in the document library
 
 While an applied model processes all files and folder content uploaded to the document library after it is applied, you can also do the following to run the model on files and folder content that already exist in the document library prior to the model being applied:
