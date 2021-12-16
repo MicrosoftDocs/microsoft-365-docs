@@ -219,11 +219,11 @@ Spanish: 24 hours a day, 7 days a week
 
 Alternative Phone Number: 55 4738 6567\
 Local call charges apply
-
-**Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+Spanish: Mon-Fri 9 AM-5 PM
+
 **Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
@@ -519,11 +519,11 @@ Select "Business", then select "Microsoft 365"
 
 Alternative Phone Number: 1 809 200 8794\
 (Cellular toll-free)
-
-**Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+Spanish: Mon-Fri 9 AM-5 PM
+
 **Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
@@ -877,11 +877,11 @@ English: 24 hours a day, 7 days a week
 
 Alternative Phone Number: 011 5354 2347\
 Local call charges apply
-
-**Billing support hours:**\
-Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+Spanish: Mon-Fri 9 AM-5 PM
+
 **Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
@@ -913,12 +913,12 @@ Spanish: 24 hours a day, 7 days a week
 Alternative Phone Number:\
 0800 047 4958 (Local toll-free)\
 11 4700 1999 (Local call charges apply)
-
+   :::column-end:::
+   :::column:::
 **Billing support hours:**\
 Portuguese: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
-   :::column-end:::
-   :::column:::
+
 **Technical support hours:**\
 Portuguese: 24 hours a day, 7 days a week\
 English: 24 hours a day, 7 days a week
@@ -1224,11 +1224,11 @@ English: 24 hours a day, 7 days a week
 04 451 5151\
 Select "Business", then select "Microsoft 365"\
 Local call charges apply
-
-**Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+English: Mon-Fri 9 AM-5 PM
+
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -1365,11 +1365,11 @@ Select "Business", then select "Microsoft 365"
 
 Alternative Phone Number: +387 33 606 100\
 International call charges apply
-
-**Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+English: Mon-Fri 9 AM-5 PM
+
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -1507,11 +1507,11 @@ English: 24 hours a day, 7 days a week
 
 Alternative Phone Number: 09 72 51 96 30\
 Local call charges apply
-
-**Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+English: Mon-Fri 9 AM-5 PM
+
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -1675,11 +1675,11 @@ English: 24 hours a day, 7 days a week
 
 Alternative Phone Number: 01 656 9837\
 Local call charges apply
-
-**Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+English: Mon-Fri 9 AM-5 PM
+
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -1969,11 +1969,11 @@ English: 24 hours a day, 7 days a week
 
 Alternative Phone Number: 22 31 07 48\
 Local call charges apply
-
-**Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+English: Mon-Fri 9 AM-5 PM
+
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2104,11 +2104,11 @@ English: 24 hours a day, 7 days a week
 
 Alternative Phone Number: 026 862 2111\
 Local call charges apply
-
-**Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+English: Mon-Fri 9 AM-5 PM
+
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2177,11 +2177,11 @@ English: 24 hours a day, 7 days a week
 
 Alternative Phone Number: 08 5176 1966\
 Local call charges apply
-
-**Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+English: Mon-Fri 9 AM-5 PM
+
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2257,11 +2257,11 @@ English: 24 hours a day, 7 days a week
 
 Alternative Phone Number: 0203 450 6455\
 Local call charges apply
-
-**Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+English: Mon-Fri 9 AM-5 PM
+
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3278,11 +3278,11 @@ English: 24 hours a day, 7 days a week
 
 Alternative Phone Number: 021 427 3315\
 Local call charges apply
-
-**Billing support hours:**\
-English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+English: Mon-Fri 9 AM-5 PM
+
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4085,11 +4085,11 @@ English: 24 hours a day, 7 days a week
 
 Alternative Phone Number: 03 6207 4606\
 Local call charges apply
-
-**Billing support hours:**\
-English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+English: Mon-Fri 9 AM-6 PM
+
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4208,11 +4208,11 @@ English: 24 hours a day, 7 days a week
 
 Alternative Phone Number: 6622 1855\
 Local call charges apply
-
-**Billing support hours:**\
-English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+English: Mon-Fri 9 AM-6 PM
+
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4430,11 +4430,11 @@ English: 24 hours a day, 7 days a week
 
 Alternative Phone Number: 02 8223 9959\
 Local call charges apply
-
-**Billing support hours:**\
-English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
+**Billing support hours:**\
+English: Mon-Fri 9 AM-6 PM
+
 **Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
