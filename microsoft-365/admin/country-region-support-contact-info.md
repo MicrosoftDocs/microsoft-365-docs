@@ -342,18 +342,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5145\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -362,18 +359,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5145\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -382,19 +376,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5146\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Dutch: Mon-Fri 4 AM-noon\
 English: Mon-Fri 4 AM-noon
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -403,18 +394,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 00800 051 0398\
 Select "Business", then select "Microsoft 365"
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -423,17 +411,14 @@ Spanish: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 1 877 639 0597
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -442,19 +427,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5146\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Dutch: Mon-Fri 4 AM-noon\
 English: Mon-Fri 4 AM-noon
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -463,18 +445,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800-865-9408\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -483,17 +462,14 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 1 877 308 6465
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -502,18 +478,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 377 302 1308\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -522,18 +495,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5150\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 11 AM-7 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -542,18 +512,15 @@ Spanish: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 1 800 751 3455\
 Select "Business", then select "Microsoft 365"
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week\
 Alternative Phone Number: 1 809 200 8794\
 (Cellular toll-free)
@@ -564,18 +531,15 @@ Alternative Phone Number: 1 809 200 8794\
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5145\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -584,19 +548,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 6 AM-noon\
 English: Mon-Fri 6 AM-1 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 6 AM-1 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -606,19 +567,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 3 AM-11 AM\
 English: Mon-Fri 3 AM-11 AM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 2 AM-3 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -628,17 +586,14 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 1 800 865 9408
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -647,19 +602,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French Mon-Fri 6 AM-noon\
 English: Mon-Fri 6 AM-1 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 6 AM-1 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -669,18 +621,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5145\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -689,18 +638,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 1 800 865 9408
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -710,18 +656,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5145\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -730,19 +673,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 4 AM-12 PM\
 English: Mon-Fri 4 AM-12 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 3 AM-4 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -752,17 +692,14 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 1 877 302 1308
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -771,18 +708,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5145\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -791,19 +725,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 4 AM-noon\
 English: Mon-Fri 4 AM-noon
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 3 AM-4 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -813,18 +744,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5145\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -833,18 +761,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5145\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -853,18 +778,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5145\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -873,17 +795,14 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 1 855 214 7711
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -892,18 +811,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5145\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -912,17 +828,14 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 865 9408
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -957,19 +870,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 266 1512\
 Alternative Phone Number: 011 5354 2347\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -978,17 +888,14 @@ Spanish: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 110 263
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -997,22 +904,19 @@ Spanish: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 762 1146
 
 Alternative Phone Number:\
 0800 047 4958 (Local toll-free)\
 11 4700 1999 (Local call charges apply)
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Portuguese: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Portuguese: 24 hours a day, 7 days a week\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -1022,19 +926,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 226 826\
 Alternative Phone Number: 123 002 000 05\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1043,17 +944,14 @@ Spanish: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 01 800 518 1781
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1062,18 +960,15 @@ Spanish: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 1 800 225 528\
 Select "Business", then select "Microsoft 365"
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1082,18 +977,15 @@ Spanish: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5145\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1102,19 +994,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 5 AM-1 PM\
 English: Mon-Fri 5 AM-1 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 4 AM-5 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -1124,18 +1013,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5145\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1144,18 +1030,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 6676\
 Select "Business", then select "Microsoft 365"
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1164,17 +1047,14 @@ Spanish: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 009 800 441 0088
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1183,18 +1063,15 @@ Spanish: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5145\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 11 AM-7 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1203,19 +1080,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5146\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Dutch: Mon-Fri 5 AM-1 PM\
 English: Mon-Fri 5 AM-1 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1224,17 +1098,14 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 000 411 002 7131
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1243,17 +1114,14 @@ Spanish: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 100 8763
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1331,18 +1199,15 @@ Spanish: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 08009 8462\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1351,19 +1216,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 04 451 5151\
 Select "Business", then select "Microsoft 365"\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1372,19 +1234,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5144\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 10 AM-6 PM\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: Mon-Fri 9 AM-10 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -1394,20 +1253,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 010 541 082\
 Select "Business", then select "Microsoft 365"\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Russian: Mon-Fri 10 AM-7 PM Moscow\
 English: Mon-Fri 9 AM-5 PM London
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Russian: Mon-Fri 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -1417,20 +1273,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 080 650\
 Alternative Phone Number: 01 206 09 15 78\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 German: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 German: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -1440,20 +1293,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 01 24 37 35 55\
 Select "Business", then select "Microsoft 365"\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Russian: Mon-Fri 10 AM-7 PM Moscow\
 English: Mon-Fri 9 AM-5 PM London
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Russian: Mon-Fri 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -1463,19 +1313,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 8 820 0071 0003\
 Select "Business", then select "Microsoft 365"
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Russian: Mon-Fri 10 AM-7 PM Moscow\
 English: Mon-Fri 9 AM-5 PM London
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Russian: Mon-Fri 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -1485,21 +1332,18 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 81174\
 Alternative Phone Number: 02 200 88 84\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Dutch: Mon-Fri 9 AM-5 PM\
 French: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -1509,19 +1353,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 20 230\
 Select "Business", then select "Microsoft 365"\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week\
 Alternative Phone Number: +387 33 606 100
    :::column-end:::
@@ -1531,17 +1372,14 @@ Alternative Phone Number: +387 33 606 100
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 00800 118 4446
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1550,18 +1388,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 222 225\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1570,18 +1405,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 8009 2519\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1590,20 +1422,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 701 371\
 Alternative Phone Number: 239 016 433\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Czech: Mon-Fri 9 AM-6 PM\
 English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Czech: Mon-Fri 8 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -1613,19 +1442,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 80 34 76 23\
 Alternative Phone Number: 38 48 70 67\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1634,17 +1460,14 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 0044 483
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1653,18 +1476,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +45 38 48 70 67\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1673,19 +1493,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 98462\
 Alternative Phone Number: 09 72 51 96 30\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1694,20 +1511,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0805 540 594\
 Alternative Phone Number: 01 57 32 42 97\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -1717,20 +1531,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 032 297 0124\
 Select "Business", then select "Microsoft 365"\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Russian: Mon-Fri 10 AM-7 PM Moscow\
 English: Mon-Fri 9 AM-5 PM London
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Russian: Mon-Fri 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -1740,20 +1551,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 589 2332\
 Alternative Phone Number: 069 380 789 508\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 German: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 German: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -1763,18 +1571,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5151\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 11 AM-7 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1783,18 +1588,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 00800 4414 2831\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1803,18 +1605,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5151\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1823,19 +1622,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +36 80 983 899\
 Alternative Phone Number: +36 1 778 9292\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Hungarian: Mon-Fri 8 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -1845,17 +1641,14 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 9609
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 8 AM-4 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1864,19 +1657,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 1 800 995309\
 Alternative Phone Number: 01 656 9837\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1885,18 +1675,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5151\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1905,20 +1692,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 917 919\
 Alternative Phone Number: 02 6943 0746\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Italian: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Italian: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -1928,18 +1712,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5149\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1948,18 +1729,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5151\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1968,18 +1746,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5151\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 11 AM-7 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -1988,18 +1763,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 8000 42 33\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2008,20 +1780,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +41 800 000 300\
 Alternative Phone Number: +41 22 76 141 14\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 German: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 German: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2031,18 +1800,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 8800 30 960\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2051,19 +1817,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 21094
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 9 AM-5 PM\
 German: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 8 AM-9 PM\
 German: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
@@ -2077,18 +1840,15 @@ Local call charges apply\
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 8006 2231\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2097,19 +1857,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 022 20 13 34\
 Select "Business", then select "Microsoft 365"\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2118,19 +1875,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +33 1 57 32 42 97\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2140,18 +1894,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 080 081 110\
 Select "Business", then select "Microsoft 365"
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2160,20 +1911,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 020 2546\
 Alternative Phone Number: 020 203 5362\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Dutch: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2182,18 +1930,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 94 288\
 Select "Business", then select "Microsoft 365"
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2202,19 +1947,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 31068\
 Alternative Phone Number: 22 31 07 48\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2223,20 +1965,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 70 23 20\
 Alternative Phone Number: 022 306 05 17\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Polish: Mon-Fri 8 AM-6 PM\
 English: Mon-Fri 8 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Polish: Mon-Fri 8 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2246,19 +1985,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 208 745\
 Alternative Phone Number: 21 366 5030\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Portuguese: Mon-Fri 8 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2268,19 +2004,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 896 956\
 Alternative Phone Number: 372 741 961\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2289,20 +2022,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 8 10 800 2548 1044\
 Alternative Phone Number: 499 922 86 23\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Russian: Mon-Fri 10 AM-7 PM Moscow\
 English: Mon-Fri 9 AM-5 PM London
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Russian: Mon-Fri 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2312,19 +2042,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5154\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Italian: Mon-Fri 10 AM-6 PM\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Italian: Mon-Fri 9 AM-10 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2334,17 +2061,14 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 190 095
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2353,19 +2077,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 102 365\
 Alternative Phone Number: 026 862 2111\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2374,17 +2095,14 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 080 080 922
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2393,20 +2111,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 900 814 197\
 Alternative Phone Number: 912 718 160\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2416,18 +2131,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5149\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2436,19 +2148,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 020 160 5899\
 Alternative Phone Number: 08 5176 1966\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2457,22 +2166,19 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 000 300\
 Alternative Phone Number: 022 76 141 14\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 9 AM-5 PM\
 German: Mon-Fri 9 AM-5 PM\
 Italian: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 8 AM-9 PM\
 German: Mon-Fri 8 AM-9 PM\
 Italian: Mon-Fri 8 AM-9 PM\
@@ -2484,18 +2190,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0 850 3902777
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Turkish: Mon-Fri 9 AM-6 PM\
 English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Turkish: Mon-Fri 8 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2505,18 +2208,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 502 285
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Russian: Mon-Fri 10 AM-7 PM Moscow\
 English: Mon-Fri 9 AM-5 PM London
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Russian: Mon-Fri 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2526,19 +2226,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 032 6417\
 Alternative Phone Number: 0203 450 6455\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2547,20 +2244,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 917 919\
 Alternative Phone Number: 02 6943 0746\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Italian: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Italian: Mon-Fri 9 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2639,21 +2333,18 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 021 89 10 70\
 Select "Business", then select "Microsoft 365"\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Arabic: Sun-Thu 9 AM-5 PM\
 French: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Arabic: Sun-Thu 9 AM-5 PM\
 French: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
@@ -2664,18 +2355,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +351 21 366 5030\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Portuguese: Mon-Fri 9 AM-10 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2685,19 +2373,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2707,18 +2392,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +27 21 427 3315\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2727,18 +2409,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5149\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -2747,19 +2426,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 8AM-4 PM\
 English: Mon-Fri 8 AM-4 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 7 AM-8 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2769,18 +2445,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 10 AM-6 PM\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 9 AM-10 PM\
 English: 24 hours a day, 7 days a week\
 International call charges apply
@@ -2791,18 +2464,15 @@ International call charges apply
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +351 21 366 5030\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 8 AM-4 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Portuguese: Mon-Fri 7 AM-8 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2812,20 +2482,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +225 20 24 24 90\
 Select "Business", then select "Microsoft 365"\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 8 AM-4 PM\
 English: Mon-Fri 8 AM-4 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2835,18 +2502,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week\
 International call charges apply
@@ -2857,19 +2521,16 @@ International call charges apply
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2879,18 +2540,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 11 AM-7 PM\
 English: Mon-Fri 11 AM-7 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 10 AM-11 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2900,20 +2558,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 225 20 24 24 90\
 Select "Business", then select "Microsoft 365"\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2923,19 +2578,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2945,20 +2597,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 020 24 24 90\
 Select "Business", then select "Microsoft 365"\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 8 AM-4 PM\
 English: Mon-Fri 8 AM-4 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 7 AM-8 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2968,19 +2617,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 11 AM-7 PM\
 English: Mon-Fri 11 AM-7 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 10 AM-11 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -2990,18 +2636,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 000 0325
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3011,19 +2654,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5144\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Spanish: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Spanish: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3033,20 +2673,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +974 44 119418\
 Select "Business", then select "Microsoft 365"\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3056,18 +2693,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5151\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3076,18 +2710,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +27 21 427 3315\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3096,19 +2727,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 1 PM-9 PM\
 English: Mon-Fri 1 PM-9 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 12 PM-11 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3118,19 +2746,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3140,18 +2765,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5151\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3160,19 +2782,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +234 1 271 0156\
 Select "Business", then select "Microsoft 365"\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 8 AM-4 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3181,18 +2800,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5151\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3201,18 +2817,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5153\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Portuguese: 8 AM-9 PM
 
 English: 24 hours a day, 7 days a week
@@ -3223,19 +2836,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 020 286 8800\
 Select "Business", then select "Microsoft 365"\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3244,18 +2854,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5151\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3264,18 +2871,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5151\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3284,20 +2888,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +965 2243 1071\
 Select "Business", then select "Microsoft 365"\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Arabic: Sun-Thu 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Arabic: Sun-Thu 9 AM-5 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3307,19 +2908,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 11 AM-7 PM\
 English: Mon-Fri 11 AM-7 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 10 AM-11 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3329,18 +2927,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5151\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 11 AM-7 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3349,19 +2944,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 8 AM-4 PM\
 English: Mon-Fri 8 AM-4 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 7AM-8 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3371,20 +2963,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +974 44 119418\
 Select "Business", then select "Microsoft 365"\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Arabic: Sun-Thu 8 AM-4 PM\
 English: Mon-Fri 8 AM-4 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Arabic: Sun-Thu 8 AM-4 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3394,18 +2983,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 802 044 0086
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 11 AM-7 PM\
 English: Mon-Fri 11 AM-7 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 11 AM-midnight\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3415,19 +3001,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 11 AM-7 PM\
 English: Mon-Fri 11 AM-7 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 10 AM-11 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3437,21 +3020,18 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0801 000 809\
 Select "Business", then select "Microsoft 365"\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Arabic: Sun-Thu 8 AM-4 PM\
 French: Mon-Fri 8 AM-4 PM\
 English: Mon-Fri 8 AM-4 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Arabic: Sun-Thu 8 AM-4 PM\
 French: Mon-Fri 7 AM-8 PM\
 English: 24 hours a day, 7 days a week
@@ -3462,18 +3042,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5153\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 7 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Portuguese: Mon-Fri 9 AM-7 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3483,19 +3060,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 061 292 5016\
 Select "Business", then select "Microsoft 365"\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3504,19 +3078,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3526,19 +3097,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 01 912 5070\
 Select "Business", then select "Microsoft 365"\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3547,19 +3115,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri noon-8 PM\
 English: Mon-Fri noon-8 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 11 AM-11 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3569,20 +3134,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +225 20 24 24 90\
 Select "Business", then select "Microsoft 365"\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 10 AM-6 PM\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 9 AM-10 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3592,18 +3154,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5153\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Portuguese: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3613,19 +3172,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 103 072\
 Select "Business", then select "Microsoft 365"
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 8 AM-4 PM\
 English: Mon-Fri 8 AM-4 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 7 AM-8 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3635,18 +3191,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5151\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 1 PM-9 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3655,18 +3208,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5151\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3675,20 +3225,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +974 44 119418\
 Select "Business", then select "Microsoft 365"\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3698,19 +3245,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 080 020 2883\
 Alternative Phone Number: 021 427 3315\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3719,18 +3263,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5151\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3739,18 +3280,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5151\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3759,19 +3297,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +254 20 286 8800\
 Select "Business", then select "Microsoft 365"\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3780,19 +3315,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 8 AM-4 AM\
 English: Mon-Fri 8 AM-4 AM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 7 AM-8 AM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3802,21 +3334,18 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 71 168 700\
 Select "Business", then select "Microsoft 365"\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Arabic: Sun-Thu 9 AM-5 PM\
 French: Mon-Fri 9 AM-5 PM\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Arabic: Sun-Thu 9 AM-5 PM\
 French: Mon-Fri 8 AM-9 PM\
 English: 24 hours a day, 7 days a week
@@ -3827,18 +3356,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +27 21 427 3315\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3847,18 +3373,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +27 21 427 3315\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3867,18 +3390,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +27 21 427 3315\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3911,19 +3431,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +92 21 111 674 357\
 Select "Business", then select "Microsoft 365"\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -3932,18 +3449,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 81 250
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3953,20 +3467,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +965 2221 9876\
 Select "Business", then select "Microsoft 365"\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3976,18 +3487,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 1 809 344 179
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Hebrew: Sun-Thu 9 AM-6 PM\
 English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Hebrew: Sun-Thu 9 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -3997,19 +3505,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 18 800 000\
 Select "Business", then select "Microsoft 365"
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4019,20 +3524,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +965 22219876\
 Select "Business", then select "Microsoft 365"\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4042,20 +3544,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 01 97 40 81\
 Select "Business", then select "Microsoft 365"\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4065,19 +3564,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 73332\
 Select "Business", then select "Microsoft 365"
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Arabic: Sun-Thu 11 AM-8 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4087,20 +3583,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +962 6 5503451\
 Select "Business", then select "Microsoft 365"\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4110,20 +3603,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 44 119418\
 Select "Business", then select "Microsoft 365"\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4133,18 +3623,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 844 4558
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4154,19 +3641,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 8000 444 1578\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Arabic: Sun-Thu 11 AM-8 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4176,20 +3660,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +974 44 119418\
 Select "Business", then select "Microsoft 365"\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Arabic: Sun-Thu 10 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4242,18 +3723,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 157 0011\
 Select "Business", then select "Microsoft 365"
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4262,18 +3740,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4282,18 +3757,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 1111 673\
 Select "Business", then select "Microsoft 365"
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4302,18 +3774,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4322,18 +3791,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800 988 0365
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Chinese (Mandarin): Mon-Fri 9 AM-6 PM\
 English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Chinese (Mandarin): Mon-Fri 9 AM-6 PM\
 English: 24 hours a day, 7 days a week\
 Alternative Phone Number: 400 920 0365 (Mobile)
@@ -4362,18 +3828,15 @@ Chinese and English online support (through the admin center): 24 hours a day, 7
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4382,18 +3845,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4402,20 +3862,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 3 071 3055\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Cantonese: Mon-Fri 9 AM-6 PM\
 Mandarin: Mon-Fri 9 AM-6 PM\
 English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Cantonese: Mon-Fri 9 AM-6 PM\
 Mandarin: Mon-Fri 9 AM-6 PM\
 English: 24 hours a day, 7 days a week
@@ -4426,19 +3883,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 000 800 440 2038
 
 Local toll-free
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4447,21 +3901,18 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 007 803 011 0882 (Telkom)
 
 001 803 442 304 (Indosat)
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Bahasa Indonesia: Mon-Fri 8 AM-5 PM
 
 English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Bahasa Indonesia: Mon-Fri 8 AM-5 PM
 
 English: 24 hours a day, 7 days a week
@@ -4472,14 +3923,12 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0120 996 680 (Office 365 Enterprise)
 
 0120 628 860 (Other Plans)
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Japanese: Mon-Fri 9:00-17:00
 
 (Closed on weekends and public holidays)
@@ -4489,8 +3938,7 @@ English: Mon-Fri 9:00-17:00
 (Closed on weekends and public holidays)
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 **Office 365 Enterprise:**
 
 Japanese: 24 hours a day, 7 days a week
@@ -4515,19 +3963,16 @@ Local call charges apply
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +8 800 555 1349\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Russian: Mon-Fri 10 AM-7 PM Moscow\
 English: Mon-Fri 9 AM-5 PM London
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Russian: Mon-Fri 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4537,20 +3982,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 080 495 0880\
 Alternative Phone Number: 02 3483 1937\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Korean: Mon-Fri 9 AM-6 PM\
 English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Korean: Mon-Fri 9 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4560,19 +4002,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +7 499 922 86 23\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Russian: Mon-Fri 10 AM-7 PM Moscow\
 English: Mon-Fri 9 AM-5 PM London
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Russian: Mon-Fri 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4582,18 +4021,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4602,13 +4038,11 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 111\
 Select "Business", then select "Microsoft 365"
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Cantonese: Mon-Fri 9 AM-5 PM
 
 Mandarin: Mon-Fri 9 AM-5 PM
@@ -4616,8 +4050,7 @@ Mandarin: Mon-Fri 9 AM-5 PM
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Cantonese: Mon-Fri 9 AM-5 PM
 
 Mandarin: Mon-Fri 9 AM-5 PM
@@ -4630,19 +4063,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 1800 22 0030\
 Alternative Phone Number: 03 6207 4606\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4651,18 +4081,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4671,19 +4098,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +7 499 922 86 23\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Russian: Mon-Fri 10 AM-7 PM Moscow\
 English: Mon-Fri 9 AM-5 PM London
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Russian: Mon-Fri 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4693,18 +4117,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4713,17 +4134,14 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 Telephone support not available; only online support.
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Not available by phone
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Not available by phone
    :::column-end:::
 :::row-end:::
@@ -4732,19 +4150,16 @@ Not available by phone
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 021 111 674 357\
 Select "Business", then select "Microsoft 365"\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4753,19 +4168,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 1800 1441 0625 (PLDT)
 
 1800 8908 6422 (Globe)
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4774,19 +4186,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 1 800 622 1856\
 Alternative Phone Number: 6622 1855\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4795,18 +4204,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 2423 254\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -4815,20 +4221,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 666 802\
 Alternative Phone Number: 02 2656 7301\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Chinese (Mandarin): Mon-Fri 9 AM-6 PM\
 English: Mon-Fri 9 AM-6 PM Local
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Chinese (Mandarin): Mon-Fri 9 AM-6 PM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4838,19 +4241,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +7 499 922 86 23\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Russian: Mon-Fri 10 AM-7 PM Moscow\
 English: Mon-Fri 9 AM-5 PM London
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Russian: Mon-Fri 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4860,19 +4260,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 001 800 441 2619
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Thai: Mon-Fri 9 AM-5 PM
 
 English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Thai: Mon-Fri 9 AM-5 PM
 
 English: 24 hours a day, 7 days a week
@@ -4883,19 +4280,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5155\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Portuguese: Mon-Fri 9 PM-5 AM\
 English: Mon-Fri 9 PM-5 AM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Portuguese: 24 hours a day, between Mon noon and Sat noon\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4905,19 +4299,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +7 499 922 86 23\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Russian: Mon-Fri 10 AM-7 PM Moscow\
 English: Mon-Fri 9 AM-5 PM London
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Russian: Mon-Fri 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4927,20 +4318,17 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +8 641 744 0010\
 Select "Business", then select "Microsoft 365"\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 Russian: Mon-Fri 10 AM-7 PM Moscow\
 English: Mon-Fri 9 AM-5 PM London
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 Russian: Mon-Fri 7 AM-8 PM Moscow\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -4950,17 +4338,14 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 120 852 137
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5006,18 +4391,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800-865-9408\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 6 AM-2 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5026,19 +4408,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 1800 197 503\
 Alternative Phone Number: 02 8223 9959\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5047,18 +4426,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 10 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5067,18 +4443,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 004 890 1001\
 Select "Business", then select "Microsoft 365"
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5087,19 +4460,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Sun-Fri 10 PM-6 AM\
 English: Sun-Fri 10 PM-6 AM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 9 PM-10 AM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -5109,18 +4479,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 800-865-9408\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 3 AM-12 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5129,18 +4496,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5149,18 +4513,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5169,18 +4530,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 1 PM-9 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5189,18 +4547,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 11 AM-7 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5209,18 +4564,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5229,19 +4581,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Mon-Fri 7 PM-3 AM\
 English: Mon-Fri 7 PM-3 AM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 6 PM-7 AM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
@@ -5251,19 +4600,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 0800 194 197\
 Alternative Phone Number: 09 912 7298\
 Local call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-6 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5272,18 +4618,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5292,18 +4635,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 12 PM-8 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5312,18 +4652,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5332,19 +4669,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
 
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5353,18 +4687,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 11 AM-7 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5373,18 +4704,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5393,18 +4721,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 2 PM-10 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5413,18 +4738,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5433,18 +4755,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 2 PM-10 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5453,18 +4772,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 2 PM-10 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5473,18 +4789,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5493,18 +4806,15 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5148\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 English: Mon-Fri 9 AM-5 PM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
@@ -5513,19 +4823,16 @@ English: 24 hours a day, 7 days a week
 
 :::row:::
    :::column:::
-**Phone number:**
-
+**Phone number:**\
 +1 312 843 5147\
 International call charges apply
 
-**Billing support hours:**
-
+**Billing support hours:**\
 French: Sun-Fri 8 PM-4 AM\
 English: Sun-Fri 8 PM-4 AM
    :::column-end:::
    :::column:::
-**Technical support hours:**
-
+**Technical support hours:**\
 French: Mon-Fri 7 PM-8 AM\
 English: 24 hours a day, 7 days a week
    :::column-end:::
