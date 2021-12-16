@@ -23,14 +23,14 @@ With SharePoint site geo move, you can move SharePoint sites to other geo locati
 
 The following types of site can be moved between geo locations:
 
-- Microsoft 365 group-connected sites, including those associated with Microsoft Teams
+- Microsoft 365 group-connected sites, including those sites associated with Microsoft Teams
 - Modern sites without a Microsoft 365 group association
 - Classic SharePoint sites
 - Communication sites
 
 You must be a Global Administrator or SharePoint Administrator to move a site between geo locations.
 
-There is a read-only window during the SharePoint site geo move of approximately 4 to 6 hours, depending on site contents.
+There is a read-only window during the SharePoint site geo move of approximately 4-6 hours, depending on site contents.
 
 ## Best practices
 
