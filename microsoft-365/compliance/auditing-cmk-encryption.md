@@ -44,11 +44,11 @@ Here's a high-level overview of implementing a multi-workload DEP to enable Cust
 
 5. Contact the Microsoft Data Encryption Policy Service (MDEPS) team to onboard MDEPS for your organization.
 
-6. Use the **New-M365DataAtRestEncryptionPolicy** cmdlet in Exchange Online PowerShell to create a multi-workload DEP.
+6. Use the [New-M365DataAtRestEncryptionPolicy](/powershell/module/exchange/new-m365dataatrestencryptionpolicy) cmdlet in Exchange Online PowerShell to create a multi-workload DEP.
 
-7. Use the **Set-M365DataAtRestEncryptionPolicyAssignment** cmdlet in Exchange Online PowerShell to assign the multi-workload DEP that you created in the previous step to your organization. After you assign the multi-workload DEP, the assignment can't be disabled.
+7. Use the [Set-M365DataAtRestEncryptionPolicyAssignment](/powershell/module/exchange/set-m365dataatrestencryptionpolicyassignment) cmdlet in Exchange Online PowerShell to assign the multi-workload DEP that you created in the previous step to your organization. After you assign the multi-workload DEP, you can't disable it.
 
-After you complete these steps, all content in your organization, including audit records, will be encrypted using the keys that are specified in the multi-workload DEP that you created in step 5.
+After you complete these steps, all content in your organization, including audit records, will be encrypted using the keys that were associated to the multi-workload DEP that you created in step 6.
 
 ## Offboarding
 
