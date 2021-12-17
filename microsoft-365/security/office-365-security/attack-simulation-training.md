@@ -319,7 +319,7 @@ The **Positive reinforcement notification** page is available only if you select
 
 If you clicked ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** on the **Positive reinforcement notification** page, a notification creation wizard opens.
 
-The creation steps are identical as described in [Create end-user notifications](attack-simulation-traning-end-user-notifications.md#create-end-user-notifications-in-the-microsoft-365-defender-portal).
+The creation steps are identical as described in [Create end-user notifications](attack-simulation-traning-end-user-notifications.md#create-end-user-notifications).
 
 > [!NOTE]
 > On the **Define details** page, be sure to select the value **Positive reinforcement notification** for **Select notification type**. Don't select **Simulation notification**.
