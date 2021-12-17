@@ -30,6 +30,8 @@ Tamper protection is available for devices that are running one of the following
 
 - Windows 10
 - Windows 11
+- Windows 10 Enterprise multi-session
+- Windows 11 Enterprise multi-session 
 - Windows Server 2019
 - Windows Server 2022
 - Windows Server, version 1803 or later
