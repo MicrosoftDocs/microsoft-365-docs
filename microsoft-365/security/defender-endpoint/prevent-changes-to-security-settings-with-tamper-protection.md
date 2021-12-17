@@ -17,7 +17,7 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 12/02/2021
+ms.date: 12/17/2021
 ms.collection: M365-security-compliance
 ---
 
