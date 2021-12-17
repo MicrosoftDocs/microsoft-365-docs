@@ -1,6 +1,6 @@
 ---
 title: "Deploy Microsoft 365 Lighthouse baselines"
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv

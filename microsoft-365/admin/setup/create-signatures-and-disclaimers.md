@@ -55,12 +55,6 @@ Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=202
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn/adminportal</a>.
@@ -123,5 +117,5 @@ For information about using PowerShell, see [Organization-wide message disclaime
 
 [Migrate email and contacts to Microsoft 365](migrate-email-and-contacts-admin.md) (video)\
 [User email settings](../email/office-365-user-email-settings.md) (article)\
-[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)
+[Overview of the Microsoft 365 admin center](Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)
 
