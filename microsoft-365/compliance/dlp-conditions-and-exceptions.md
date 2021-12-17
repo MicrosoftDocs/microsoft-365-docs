@@ -51,7 +51,7 @@ For conditions and exceptions that examine the sender's address, you can specify
 
 ![image](https://user-images.githubusercontent.com/53205984/145942298-6b435ba6-d146-44fe-a1c5-58babeaf8d7a.png)
 
-At the tenant level, you can configure a Sender Address Location to be used across all rules, unless overridden by a single rule. To revert tenant DLP policy configuration to evaluate sender address from Envelope across all rules, you can run the below command-
+At the tenant level, you can configure a sender address location to be used across all rules, unless overridden by a single rule. To revert tenant DLP policy configuration to evaluate the sender address from the Envelope across all rules, you can run the following command:
 
 ```PowerShell
 Set-PolicyConfig –SenderAddressLocation Envelope
