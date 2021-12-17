@@ -92,7 +92,7 @@ The following sections describe how to perform some of the most common tasks whe
 
 2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
 
-3. Under the **Manage settings**, select **Virus & threat protection settings**.
+3. Under the **Virus & threat protection settings**, select **Manage settings**.
 
 4. Under the **Exclusions** setting, select **Add or remove exclusions**.
 
