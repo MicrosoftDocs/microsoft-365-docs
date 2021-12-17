@@ -43,7 +43,7 @@ The tables in the following sections describe the conditions and exceptions that
 
 ### Senders
 
-For conditions and exceptions that examine the sender's address, you can specify where rule looks for the sender's address. The sender address used by Data Loss Prevention (DLP) to evaluate sender based conditions listed below is the Envelope address. Note that Exchange transport rules (ETR) uses the header address as the default sender address location.
+For conditions and exceptions that examine the sender's address, you can specify where the rule looks for the sender's address. The sender address, used by the DLP rule to evaluate the sender-based conditions listed below, is the Envelope address. Note that Exchange transport rules use the Header address as the default sender address location.
 <br>
 
 >[!Note]
