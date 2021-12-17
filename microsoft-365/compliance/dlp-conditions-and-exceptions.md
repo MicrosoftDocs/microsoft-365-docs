@@ -46,8 +46,8 @@ The tables in the following sections describe the conditions and exceptions that
 For conditions and exceptions that examine the sender's address, you can specify where the rule looks for the sender's address. The sender address, used by the DLP rule to evaluate the sender-based conditions listed below, is the Envelope address. Note that Exchange transport rules use the Header address as the default sender address location.
 <br>
 
->[!Note]
->Starting 20th January 2021, the default sender address location will be moved to the Header address along with the availability of the -SenderAddressLocation parameter to configure desired behavior at a DLP rule level.
+> [!NOTE]
+> Starting January 20, 2021, the default sender address location will be moved to the Header address along with the availability of the -SenderAddressLocation parameter to configure desired behavior at a DLP rule level.
 
 ![image](https://user-images.githubusercontent.com/53205984/145942298-6b435ba6-d146-44fe-a1c5-58babeaf8d7a.png)
 
