@@ -40,8 +40,8 @@ Set attack surface reduction rules for devices running any of the following edit
 - Windows Server 2022
 
 > [!Note]
-> Attack surface reduction rules in Windows Server 2012 R2 and Windows Server 2016 are available using the modern unified solution package. For more information, see: [New functionality in the modern unified solution for Windows 2012 R2 and 2016 Preview](configure-server-endpoints.md#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview) in the topic: [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md).
-See also, [Microsoft Defender for Endpoint: Defending Windows Server 2012 R2 and 2016](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292).
+> Attack surface reduction rules in Windows Server 2012 R2 and Windows Server 2016 are available using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows 2012 R2 and 2016 Preview](configure-server-endpoints.md#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview) in the topic [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md).
+See also [Microsoft Defender for Endpoint: Defending Windows Server 2012 R2 and 2016](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292).
 
 Learn how to evaluate attack surface reduction rules by [enabling audit mode](audit-windows-defender.md) to test the feature directly in your organization.
 
