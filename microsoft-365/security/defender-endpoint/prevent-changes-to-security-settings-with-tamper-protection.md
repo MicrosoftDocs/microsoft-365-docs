@@ -146,7 +146,7 @@ If you are part of your organization's security team, and your subscription incl
 
 - You must have appropriate [permissions](/microsoft-365/security/defender-endpoint/assign-portal-access) assigned, such as global admin, security admin, or security operations.
 
-- Your organization uses [Intune to manage devices](/intune/fundamentals/what-is-device-management). ([Intune licenses](/intune/fundamentals/licenses) are required; Intune is included in Microsoft 365 E5/E3, Enterprise Mobility + Security E5/E3, Microsoft 365 Business Premium, Microsoft 365 F1/F3, Microsoft 365 Government G5/G3 and Intune for Education.)
+- Your organization uses [Intune to manage devices](/intune/fundamentals/what-is-device-management). ([Intune licenses](/intune/fundamentals/licenses) are required; Intune is included in Microsoft 365 E5/E3, Enterprise Mobility + Security E5/E3, Microsoft 365 Business Premium, Microsoft 365 F1/F3, Microsoft 365 Government G5/G3, and Intune for Education.)
 
 - Your Windows devices must be running Windows 11 or Windows 10 OS [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) or later. (For more information about releases, see [Windows 10 release information](/windows/release-health/release-information).)
 
