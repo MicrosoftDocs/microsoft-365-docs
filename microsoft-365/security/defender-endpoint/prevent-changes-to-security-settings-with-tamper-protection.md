@@ -17,7 +17,7 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 12/02/2021
+ms.date: 12/17/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -51,6 +51,7 @@ With tamper protection, malicious apps are prevented from taking actions such as
 - Disabling antivirus (such as IOfficeAntivirus (IOAV))
 - Disabling cloud-delivered protection
 - Removing security intelligence updates
+- Disabling automatic actions on detected threats
 
 ### How it works
 
@@ -64,9 +65,7 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 
 ### What do you want to do?
 
-<br>
-
-****
+<br/><br/>
 
 |To perform this task...|See this section...|
 |---|---|
@@ -77,22 +76,18 @@ Tamper protection doesn't prevent you from viewing your security settings. And, 
 |View details about tampering attempts on devices|[View information about tampering attempts](#view-information-about-tampering-attempts)|
 |Review your security recommendations|[Review security recommendations](#review-your-security-recommendations)|
 |Review the list of frequently asked questions (FAQs)|[Browse the FAQs](#view-information-about-tampering-attempts)|
-|
 
 Depending on the method or management tool you use to enable tamper protection, there might be a dependency on cloud-delivered protection.
 
 The following table provides details on the methods, tools, and dependencies.
 
-<br>
-
-****
+<br/><br/>
 
 |How tamper protection is enabled|Dependency on cloud-delivered protection (MAPS)|
 |---|---|
 |Microsoft Intune|No|
 |Microsoft Endpoint Configuration Manager + Tenant Attach|No|
 |Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))|Yes|
-|
 
 ## Manage tamper protection for your organization using the Microsoft 365 Defender portal
 
@@ -111,6 +106,7 @@ Tamper protection can be turned on or off for your tenant using the Microsoft 36
 - You must have appropriate [permissions](/microsoft-365/security/defender-endpoint/assign-portal-access) assigned, such as global admin, security admin, or security operations.
 
 - Your Windows devices must be running one of the following versions of Windows:
+  
   - Windows 10
   - Windows 11
   - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
@@ -120,7 +116,6 @@ Tamper protection can be turned on or off for your tenant using the Microsoft 36
   - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 
 For more information about releases, see [Windows 10 release information](/windows/release-health/release-information).
-
 
 - Your devices must be [onboarded to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboarding).
 
