@@ -266,6 +266,71 @@ When you're finished, click **Next**.
 > [!NOTE]
 > Certain trademarks, logos, symbols, insignias and other source identifiers receive heightened protection under local, state and federal statutes and laws. Unauthorized use of such indicators can subject the users to penalties, including criminal fines. Though not an extensive list, this includes the Presidential, Vice Presidential, and Congressional seals, the CIA, the FBI, Social Security, Medicare and Medicaid, the United States Internal Revenue Service, and the Olympics. Beyond these categories of trademarks, use and modification of any third-party trademark carries an inherent amount of risk. Using your own trademarks and logos in a payload would be less risky, particularly where your organization permits the use. If you have any further questions about what is or is not appropriate to use when creating or configuring a payload, you should consult with your legal advisors.
 
+## Select end user notification
+
+On the **Select end user notification** page, select from the following notification options:
+
+- **Do not deliver notifications**: Click **Proceed** in the alert dialog that appears. If you select this option, you're taken to the [Launch details](#launch-details) page when you click **Next**.
+
+- **Microsoft default notification (recommended)**: The following additional settings are available on the page:
+  - **Select default language**: The available values are: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, and **Dutch**.
+  - By default, the only available notification to select is **Microsoft positive reinforcement notification**. The following information is available for the notification:
+    - **Notifications** (name): The value is **Microsoft default positive reinforcement notification**.
+    - **Language**: If the notification contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
+    - **Type**: The value is **Positive reinforcement**.
+    - **Delivery preferences**: Select from the following values:
+      - **Do not deliver**
+      - **Deliver after campaign ends**
+      - **Deliver during campaign**
+    - **Deliver to**: The value is **Not applicable**.
+    - **Actions**: If you click on the ![View icon.](../../media/m365-cc-sc-view-icon.png) **View** icon, the **Review notification** page appears with the following information:
+      - **Preview** tab: View the notification message. To view the message in different languages, use the **Select language** box.
+      - **Details** tab: View details about the notification:
+        - **Notification description**
+        - **Source**: For built-in notifications, the value is **Global**. For custom notifications, the value is **Tenant**.
+        - **Notification type**
+        - **Modified by**
+        - **Last modified**
+
+        When you're finished, click **Close**.
+
+  If you select this option, you're taken to the [Launch details](#launch-details) page when you click **Next**.
+
+- **Customized end user notifications**: When you click **Next**, you're taken to the **Positive reinforcement notification** page as described in the next section where you can select from existing notifications or create new notifications.
+
+When you're finished, click **Next**.
+
+### Positive reinforcement notification
+
+The **Positive reinforcement notification** page is available only if you selected **Customized end user notifications** on the previous page.
+
+- **Delivery preferences**: Select one of the following values:
+  - **Do not deliver**
+  - **Deliver after the user reports a phish and campaign ends**
+  - **Deliver immediately after the user reports a phish**
+
+- **Select a positive reinforcement notification**: You can select an existing notification or create a new notification of type **Positive reinforcement notification** to use:
+  - To select an existing notification, click in the blank area next to the notification name. If you click on the notification name, the notification is selected and a preview flyout appears. To deselect the notification, clear the check box next to the notification.
+  - To search for an existing notification, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to search for the name.
+  - To create a new notification, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new**.
+  - To modify an existing custom notification, select it and then click ![Edit notification icon.](../../media/m365-cc-sc-edit-icon.png) **Edit notification**.
+
+#### Create new notification wizard
+
+If you clicked ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** on the **Positive reinforcement notification** page, a notification creation wizard opens.
+
+The creation steps are identical as described in [Create end-user notifications](attack-simulation-traning-end-user-notifications.md#create-end-user-notifications-in-the-microsoft-365-defender-portal).
+
+> [!NOTE]
+> On the **Define details** page, be sure to select the value **Positive reinforcement notification** for **Select notification type**. Don't select **Simulation notification**.
+
+When you're finished, you're taken back to the **Positive reinforcement notification** page where the notification that you just created now appears in the **Select a positive reinforcement notification** list.
+
+- To create a new notification, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png).
+- To modify the notification or add additional translations, select the notification from the list, and then click ![Edit notification icon.](../../media/m365-cc-sc-edit-icon.png) **Edit notification** to start the notification wizard as previously described (with most values already filled in). If the notification already has translations for the 12 supported languages, you can't add more translations.
+
+Select the notification that you want to use, and then click **Next**.
+
 ## Launch details
 
 On the **Launch details** page, you choose when to launch the simulation and when to end the simulation. We'll stop capturing interaction with this simulation after the end date you specify.
