@@ -13,7 +13,7 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.date: 12/06/2021
+ms.date: 12/17/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -133,7 +133,7 @@ The format for the cmdlets is as follows:
 
 The following table lists cmdlets that you can use in the `<cmdlet>` portion of the PowerShell cmdlet:
 
-<br/>
+<br/><br/>
 
 |Configuration action|PowerShell cmdlet|
 |:---|:---|
@@ -143,7 +143,7 @@ The following table lists cmdlets that you can use in the `<cmdlet>` portion of 
 
 The following table lists values that you can use in the `<exclusion list>` portion of the PowerShell cmdlet:
 
-<br/>
+<br/><br/>
 
 |Exclusion type|PowerShell parameter|
 |---|---|
@@ -198,7 +198,7 @@ You can use the asterisk `*`, question mark `?`, or environment variables (such 
     
 The following table describes how the wildcards can be used and provides some examples.
 
-<br/>
+<br/><br/>
 
 |Wildcard|Examples|
 |---|---|
@@ -219,7 +219,7 @@ The following table describes how the wildcards can be used and provides some ex
 
 The following table lists and describes the system account environment variables.
 
-<br/>
+<br/><br/>
 
 |This system environment variable...|Redirects to this|
 |---|---|
