@@ -39,7 +39,7 @@ Microsoft Defender for Endpoint can display either Coordinated Universal Time (U
 
 Your current time zone setting is shown in the Microsoft Defender for Endpoint menu. You can change the displayed time zone in the **Time zone** menu.
 
-![Time zone settings icon2.](images/atp-time-zone-menu.png).
+:::image type="content" source="images/atp-time-zone-menu.png" alt-text="The Time zone settings-2" lightbox="images/atp-time-zone-menu.png":::
 
 ### UTC time zone
 
