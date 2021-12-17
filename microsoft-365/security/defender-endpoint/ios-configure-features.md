@@ -81,6 +81,27 @@ Microsoft Defender for Endpoint on iOS enables the App Protection Policy scenari
 
 End-users should install the latest version of the app directly from the Apple app store.
 
+## Privacy Controls
+
+> [!IMPORTANT]
+> Privacy Controls for Microsoft Defender for Endpoint on iOS is in preview. Below information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+### Configure privacy in phish alert report
+
+Customers can now enable privacy control for the phish report sent by Microsoft Defender for Endpoint on iOS. This will ensure that the domain name is not sent as part of the phish alert whenever a phish website is detected and blocked by MDE.
+
+Follow the steps below to enable privacy and not collect the domain name as part of the phish alert report.
+
+1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
+1. Give the policy a name; **Platform > iOS/iPadOS**; select the profile type.
+1. Select **Microsoft Defender for Endpoint** as the target app.
+1. In Settings page, select **Use configuration designer** and add **DefenderExcludeURLInReport** as the key and value type as **Boolean**
+   - To enable privacy and not collect the domain name, enter value as "true" and assign this policy to users. By default, this value is set to `false`.
+   - For users with key set as `true`, the phish alert will not contain the domain name information whenever a malicious site is detected and blocked by Defender for Endpoint.
+1. Click **Next** and assign this profile to targeted devices/users.
+
+Turning the above privacy controls on or off will not impact the device compliance check or conditional access.
+
 ## Configure compliance policy against jailbroken devices
 
 To protect corporate data from being accessed on jailbroken iOS devices, we recommend that you set up the following compliance policy on Intune.
