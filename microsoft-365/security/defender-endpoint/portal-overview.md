@@ -46,7 +46,8 @@ When you open the portal, you'll see:
 - (1) Navigation pane (select the horizontal lines at the top of the navigation pane to show or hide it)
 - (2) Search, Community center, Localization, Help and support, Feedback
 
- ![Microsoft Defender for Endpoint portal.](images/mdatp-portal-overview.png)
+ :::image type="content" source="images/mdatp-portal-overview.png" alt-text="The left navigation pane in the Microsoft Defender Security Center portal" lightbox="images/mdatp-portal-overview.png":::
+ 
 
 > [!NOTE]
 > Malware related detections will only appear if your devices are using Microsoft Defender Antivirus as the default real-time protection antimalware product.

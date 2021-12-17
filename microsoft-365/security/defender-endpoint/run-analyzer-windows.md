@@ -56,17 +56,17 @@ In addition to the above, there is also an option to [collect the analyzer suppo
 All the PowerShell scripts and modules included with the analyzer are Microsoft-signed.
 If files have been modified in any way, then the analyzer is expected to exit with the following error:
 
-![Image of client analyzer error](images/sigerror.png)
+:::image type="content" source="images/sigerror.png" alt-text="The client analyzer error" lightbox="images/sigerror.png":::
 
 
 If this error is shown, then the issuerInfo.txt output will contain detailed information about why that happened and what file was affected:
 
-![Image of issuer info](images/issuerinfo.png)
+:::image type="content" source="images/issuerinfo.png" alt-text="The issuer info" lightbox="images/issuerinfo.png":::
 
 
 Example contents after MDEClientAnalyzer.ps1 is modified:
 
-![Image of modified ps1 file](images/modified-ps1.png)
+:::image type="content" source="images/modified-ps1.png" alt-text="The  modified ps1 file" lightbox="images/modified-ps1.png":::
 
 
 
