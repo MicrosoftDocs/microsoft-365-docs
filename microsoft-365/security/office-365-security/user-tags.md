@@ -13,7 +13,9 @@ search.appverid:
   - MET150
 ms.collection: 
   - M365-security-compliance
-ms.custom: admindeeplinkDEFENDER
+ms.custom: 
+- admindeeplinkDEFENDER
+- admindeeplinkEXCHANGE
 description: Admins can learn how to identify specific groups of users with user tags in Microsoft Defender for Office 365 Plan 2. Tag filtering is available across alerts, reports, and investigations in Microsoft Defender for Office 365 to quickly identify the tagged users.
 ms.technology: mdo
 ms.prod: m365-security
@@ -43,7 +45,8 @@ After you apply system tags or custom tags to users, you can use those tags as f
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
 - [Campaign Views](campaigns.md)
 - [Admin and user submissions](admin-submission.md)
-- For priority accounts, you can use the [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) in the Exchange admin center (EAC).
+- [Quarantine](quarantine.md)
+- For priority accounts, you can use the [Email issues for priority accounts report](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
 This article explains how to configure user tags in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. There are no cmdlets in Microsoft 365 Defender portal to manage user tags.
 
@@ -54,8 +57,9 @@ To see how user tags are part of the strategy to help protect high-impact user a
 - You open the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com/</a>. To go directly to the **User tags** page, open <https://security.microsoft.com/securitysettings/userTags>.
 
 - You need to be assigned permissions in the Microsoft 365 Defender portal before you can do the procedures in this article:
-  - To create, modify, and delete user tags, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
-  - To add and remove members from existing user tags, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Operator** role groups
+  - To create, modify, and delete custom user tags, you need to be a member of the **Organization Management** or **Security Administrator** role groups.
+  - To add and remove members from the Priority Account system tag, you need to be a member of the **Security Administrator** and **Exchange Admin** role groups.
+  - To add and remove members from existing custom user tags, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Operator** role groups.
   - For read-only access to user tags, you need to be a member of the **Global Reader** or **Security Reader** role groups.
 
   For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
