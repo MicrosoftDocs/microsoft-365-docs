@@ -51,6 +51,7 @@ With tamper protection, malicious apps are prevented from taking actions such as
 - Disabling antivirus (such as IOfficeAntivirus (IOAV))
 - Disabling cloud-delivered protection
 - Removing security intelligence updates
+- Disabling automatic actions on detected threats
 
 ### How it works
 
