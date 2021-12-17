@@ -21,8 +21,8 @@ ms.collection: M365-security-compliance
 # Microsoft Defender Antivirus in the Windows Security app
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 In Windows 10, version 1703 and later, the Windows Defender app is part of the Windows Security.
 
