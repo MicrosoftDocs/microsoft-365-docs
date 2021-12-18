@@ -35,9 +35,9 @@ On November 2, 2021, we announced the public preview of Threat and Vulnerability
 
 ## 1.1.23250104
 
-- Performance optimizations - Test battery performance with this version and let us know your feedback
-- **Zero-touch onboard for enrolled iOS devices** - With this version, we are adding preview of Zero-touch onboard for devices enrolled through Microsoft Endpoint Manager (Intune). See this [documentation](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview) for more details on setup and configuration.
-- **Privacy Controls** - Configure privacy controls for phish alert report. See [Configure iOS features](ios-configure-features.md) for details on configuration.
+- Performance optimizations - Test battery performance with this version and let us know your feedback.
+- **Zero-touch onboard for enrolled iOS devices** - With this version, the preview of Zero-touch onboard for devices enrolled through Microsoft Endpoint Manager (Intune) has been added. For more information, see this [documentation](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview) for more details on setup and configuration.
+- **Privacy Controls** - Configure privacy controls for phish alert report. For more information, see [Configure iOS features](ios-configure-features.md).
 
 ## 1.1.23010101
 
