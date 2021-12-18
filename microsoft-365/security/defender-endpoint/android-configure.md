@@ -110,8 +110,8 @@ Use the following steps to turn it on for targeted users:
 
 1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Devices** > **Configuration profiles** > **Create profile** and enter the following settings:
 
-   - **Platform**: Select Android device administrator
-   - **Profile**: Select “Custom” and click Create
+   - **Platform**: Select Android device administrator.
+   - **Profile**: Select "Custom" and click **Create**.
 
 2. In the **Basics** section, specify a name and description of the profile.
 
@@ -120,7 +120,7 @@ Use the following steps to turn it on for targeted users:
    - **Name**: Enter a unique name and description for this OMA-URI setting so you can find it easily later.
    - OMA-URI: **./Vendor/MSFT/DefenderATP/DefenderExcludeURLInReport**
    - Data type: Select Integer in the drop-down list.
-   - Value: Enter 1 to enable privacy setting (By default, the value is 0)
+   - Value: Enter 1 to enable privacy setting. The default value is 0.
 
 4. Click **Next** and assign this profile to targeted devices/users.
 
@@ -128,13 +128,13 @@ Using this privacy control will not impact the device compliance check or condit
 
 ### Configure privacy for phishing alert report on Android Enterprise work profile
 
-In case you want to turn on privacy for targeted users in the work profile, you can use the following steps:
+Use the following steps to turn on privacy for targeted users in the work profile:
 
 1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
-2. Give the policy a name; **Platform > Android Enterprise**; select the profile type.
+2. Give the policy a name, **Platform > Android Enterprise**, select the profile type.
 3. Select **Microsoft Defender for Endpoint** as the target app.
-4. In Settings page, select **Use configuration designer** and add **DefenderExcludeURLInReport** as the key and value type as **Integer**
-   - Enter **1 to enable privacy** (By default, the value is 0)
+4. In Settings page, select **Use configuration designer** and add **DefenderExcludeURLInReport** as the key and value type as **Integer**.
+   - Enter **1 to enable privacy**. The default value is 0.
 5. Click **Next** and assign this profile to targeted devices/users.
 
 Turning the above privacy controls on or off will not impact the device compliance check or conditional access.
@@ -149,8 +149,8 @@ Use the following steps to turn it on for targeted users:
 
 1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Devices** > **Configuration profiles** > **Create profile** and enter the following settings:
 
-   - **Platform**: Select Android device administrator
-   - **Profile**: Select “Custom” and click Create
+   - **Platform**: Select Android device administrator.
+   - **Profile**: Select "Custom" and click **Create**.
 
 2. In the **Basics** section, specify a name and description of the profile.
 
@@ -159,7 +159,7 @@ Use the following steps to turn it on for targeted users:
    - **Name**: Enter a unique name and description for this OMA-URI setting so you can find it easily later.
    - OMA-URI: **./Vendor/MSFT/DefenderATP/DefenderExcludeAppInReport**
    - Data type: Select Integer in the drop-down list.
-   - Value: Enter 1 to enable privacy setting (By default, the value is 0)
+   - Value: Enter 1 to enable privacy setting. The default value is 0.
 
 4. Click **Next** and assign this profile to targeted devices/users.
 
@@ -167,13 +167,13 @@ Using this privacy control will not impact the device compliance check or condit
 
 ### Configure privacy for malware alert report on Android Enterprise work profile
 
-In case you want to turn on privacy for targeted users in the work profile, you can use the following steps:
+Use the following steps to turn on privacy for targeted users in the work profile:
 
 1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
-2. Give the policy a name; **Platform > Android Enterprise**; select the profile type.
+2. Give the policy a name, **Platform > Android Enterprise**, select the profile type.
 3. Select **Microsoft Defender for Endpoint** as the target app.
 4. In Settings page, select **Use configuration designer** and add **DefenderExcludeAppInReport** as the key and value type as **Integer**
-   - Enter **1 to enable privacy** (By default, the value is 0)
+   - Enter **1 to enable privacy**. The default value is 0.
 5. Click **Next** and assign this profile to targeted devices/users.
 
 Using this privacy control will not impact the device compliance check or conditional access. For example, devices with a malicious app will always have a risk level of "Medium".
