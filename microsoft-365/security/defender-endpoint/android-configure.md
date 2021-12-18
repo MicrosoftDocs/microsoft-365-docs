@@ -102,7 +102,9 @@ Turning the above privacy controls on or off will not impact the device complian
 
 ## Configure privacy for phishing alert report
 
-Privacy control for phish report can be used to disable the collection of domain name or website information in the phish threat report. This gives organizations the flexibility to choose whether they want to collect the domain name when a malicious or phish website is detected and blocked by Defender for Endpoint. *This feature is currently only available for devices enrolled in **Android Device Administrator** mode.*
+Privacy control for phish report can be used to disable the collection of domain name or website information in the phish threat report. This gives organizations the flexibility to choose whether they want to collect the domain name when a malicious or phish website is detected and blocked by Defender for Endpoint.
+
+### Configure privacy for phishing alert report on Android Device Administrator enrolled devices:
 
 Use the following steps to turn it on for targeted users:
 
@@ -124,9 +126,24 @@ Use the following steps to turn it on for targeted users:
 
 Using this privacy control will not impact the device compliance check or conditional access.
 
+### Configure privacy for phishing alert report on Android Enterprise work profile
+
+In case you want to turn on privacy for targeted users in the work profile, you can use the following steps:
+
+1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
+2. Give the policy a name; **Platform > Android Enterprise**; select the profile type.
+3. Select **Microsoft Defender for Endpoint** as the target app.
+4. In Settings page, select **Use configuration designer** and add **DefenderExcludeURLInReport** as the key and value type as **Integer**
+   - Enter **1 to enable privacy** (By default, the value is 0)
+5. Click **Next** and assign this profile to targeted devices/users.
+
+Turning the above privacy controls on or off will not impact the device compliance check or conditional access.
+
 ## Configure privacy for malware threat report
 
-Privacy control for malware threat report can be used to disable the collection of app details (name and package information) from the malware threat report. This gives organizations the flexibility to choose whether they want to collect the app name when a malicious app is detected. *This feature is currently only available for devices enrolled in **Android Device Administrator** mode.*
+Privacy control for malware threat report can be used to disable the collection of app details (name and package information) from the malware threat report. This gives organizations the flexibility to choose whether they want to collect the app name when a malicious app is detected.
+
+### Configure privacy for malware alert report on Android Device Administrator enrolled devices:
 
 Use the following steps to turn it on for targeted users:
 
@@ -145,6 +162,19 @@ Use the following steps to turn it on for targeted users:
    - Value: Enter 1 to enable privacy setting (By default, the value is 0)
 
 4. Click **Next** and assign this profile to targeted devices/users.
+
+Using this privacy control will not impact the device compliance check or conditional access. For example, devices with a malicious app will always have a risk level of "Medium".
+
+### Configure privacy for malware alert report on Android Enterprise work profile
+
+In case you want to turn on privacy for targeted users in the work profile, you can use the following steps:
+
+1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** > **App configuration policies** > **Add** > **Managed devices**.
+2. Give the policy a name; **Platform > Android Enterprise**; select the profile type.
+3. Select **Microsoft Defender for Endpoint** as the target app.
+4. In Settings page, select **Use configuration designer** and add **DefenderExcludeAppInReport** as the key and value type as **Integer**
+   - Enter **1 to enable privacy** (By default, the value is 0)
+5. Click **Next** and assign this profile to targeted devices/users.
 
 Using this privacy control will not impact the device compliance check or conditional access. For example, devices with a malicious app will always have a risk level of "Medium".
 
