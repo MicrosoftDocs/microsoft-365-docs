@@ -142,7 +142,9 @@ If you have a website that you use with your business, it will keep working wher
 
 Each Microsoft 365 organization can have up to three onmicrosoft.com domains.
 
-[!NOTE] You must be a Global admin or a Domain Name admin to add a domain.
+> [!NOTE]
+> You must be a Global admin or a Domain Name admin to add a domain.
+
 
 To add an onmicrosoft.com domain:
 
