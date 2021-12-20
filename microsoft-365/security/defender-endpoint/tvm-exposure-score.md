@@ -37,7 +37,7 @@ Your exposure score is visible in the [Threat and vulnerability management dashb
 
 The card gives you a high-level view of your exposure score trend over time. Any spikes in the chart give you a visual indication of a high cybersecurity threat exposure that you can investigate further.
 
-![Exposure score card.](images/tvm_exp_score.png)
+:::image type="content" source="images/tvm_exp_score.png" alt-text="The Exposure scorecard" lightbox="images/tvm_exp_score.png":::
 
 ## How it works
 
