@@ -65,7 +65,6 @@ To configure the sender address location at a DLP rule level, the parameter is _
 
 - **Header or envelope** (`HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
 <br>
-****
 
 |condition or exception in DLP|condition/exception parameters in Microsoft 365 PowerShell|property type|description|
 |---|---|---|---|
