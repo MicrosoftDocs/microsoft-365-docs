@@ -40,7 +40,7 @@ For information about governing your data, see [Microsoft Information Governance
 
 ## Licensing
 
-MIP capabilities are included with Microsoft 365 Compliance. The licensing requirements can vary even within each of the capabilities listed. To identify your licensing options, see the [Information Protection: Sensitivity labeling](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-sensitivity-labeling) section from the Microsoft 365 licensing guidance for security & compliance.
+MIP capabilities are included with Microsoft 365 Compliance. The licensing requirements can vary even within capabilities, depending on configuration options. To identify licensing requirements and options, see the [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## Know your data
 
@@ -51,7 +51,7 @@ Knowing where your sensitive data resides is often the biggest challenge for man
 
 |Step|Description|More information|
 |:---|:----------|:---------------|
-|1| Describe the categories of sensitive information you want to protect. <br /><br /> You already have an idea of what types of information is most valuable to your org and what types are not. Work with stakeholders to describe these categories because these are your starting place. | [Learn about sensitive information types](sensitive-information-type-learn-about.md) <p> [Learn about trainable classifiers.md](classifier-learn-about.md)|
+|1| Describe the categories of sensitive information you want to protect. <br /><br /> You already have an idea of what types of information is most valuable to your org and what types are not. Work with stakeholders to describe these categories because these are your starting place. | [Learn about sensitive information types](sensitive-information-type-learn-about.md) <p> [Learn about trainable classifiers](classifier-learn-about.md)|
 |2| Discover and classify sensitive data. <br /><br /> Sensitive data in items can be found by using many different methods that include default DLP policies, manual labeling by users, and automated pattern recognition using sensitive information types or machine learning. | [Learn about data classification](data-classification-overview.md) <p> [Video: Data classification in the compliance center](https://www.microsoft.com/videoplayer/embed/RE4vx8x)|
 |3| View your sensitive items.  <br /><br /> Use content explorer and activity explorer for a deeper analysis of sensitive items and the actions that users are taking on these items.| [Get started with content explorer](data-classification-content-explorer.md) <p> [Get started with activity explorer](data-classification-activity-explorer.md)|
 
