@@ -47,7 +47,7 @@ Here are some common reasons for queueing messages to external recipients. Howev
 
 Each service alert contains high-level recommendations for remediating the issue. The service alert also indicates the the number of messages queued at the time of alert, the domain where the messages are queued to, and the SMTP error code associated with most of the queued messages.
 
-For more information for determining the root cause for these service alerts, see [Mail Flow Intelligence in Office 365](../security/office-365-security/mail-flow-intelligence-in-office-365.md). This article also includes suggested actions to fix the root cause.
+For more information for determining the root cause for these service alerts, see [Mail flow intelligence in Exchange Online](../security/office-365-security/mail-flow-intelligence-in-office-365.md). This article also includes suggested actions to fix the root cause.
 
 > [!NOTE]
 > Microsoft can't account for every SMTP error code provided by third-party vendors. Therefore, admins may be required to investigate errors codes that are specific to their MTA or journaling solutions used by their organization.
@@ -56,7 +56,7 @@ For more information for determining the root cause for these service alerts, se
 
 If your organization has recently created or changed mail flow connectors in your on-premises or Exchange Online organization, see the following articles for more information.
 
-- [Use connectors to configure mail flow](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
+- [Configure mail flow using connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
 
 - [Set up connectors to route mail](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)
 
