@@ -27,7 +27,7 @@ description: "Learn about using Centralized add-ins to deploy add-ins to users a
 
 # Manage add-ins in the admin center
 
-Office add-ins help you personalize your documents and streamline the way you access information on the web see [Start using your Office add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862). 
+Office add-ins help you personalize your documents and streamline the way you access information on the web. See [Start using your Office add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862). 
 
 After an admin deploys add-ins for users in an organization, the admin can turn add-ins off or on, edit, delete, and manage access to the add-ins.
 
