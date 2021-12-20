@@ -194,9 +194,9 @@
         - name: Exchange Online monitoring
           href: microsoft-365-exchange-monitoring.md
           items:
-            - name: Mailbox utilization service alerts
+            - name: Service alerts - Mailbox utilization
               href: microsoft-365-mailbox-utilization-service-alerts.md
-            - name: MRS source delays service alerts
+            - name: Service alerts - MRS source delays
               href: microsoft-365-mrs-source-delays-service-alerts.md
         - name: Setup guides
           href: setup-guides-for-microsoft-365.md
