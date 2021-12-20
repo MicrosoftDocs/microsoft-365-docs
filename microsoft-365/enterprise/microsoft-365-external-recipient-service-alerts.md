@@ -21,7 +21,7 @@ f1.keywords:
 description: "Use external recipients service alerts to monitor mailboxes on hold that are reaching their mailbox quota."
 ---
 
-# Service alerts for messages pending delivery to external recipients
+# Service alerts for messages pending delivery to external recipients in Exchange Online monitoring
 
 The service alerts inform admins of mail queuing to external recipients outside of Exchange Online. These alerts may require remediation actions that are outside of Microsoft, but they can provide you with information needed to remediate.
 
