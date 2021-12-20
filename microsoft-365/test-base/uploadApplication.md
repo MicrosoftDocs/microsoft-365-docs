@@ -73,7 +73,7 @@ The steps below provides a guide on how to fill out your package details:
 
     - To test your package only against Windows Client operating systems, select the applicable Windows Client OS versions from the menu list.
     - To test your package only against Windows Server operating systems, select the applicable Windows Server OS versions from the menu list.
-    - To test your package only against Windows Client and Windows Server operating systems, select all applicable operating systems from the menu list.
+    - To test your package against Windows Client and Windows Server operating systems, select all applicable operating systems from the menu list.
 
     > [!NOTE]
     > If you select to test your package against both Server and Client OSes, please make sure that the package is compatible and can run on both OSes
