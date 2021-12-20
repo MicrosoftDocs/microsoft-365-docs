@@ -33,6 +33,12 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 
 On November 2, 2021, we announced the public preview of Threat and Vulnerability management on Android and iOS. For more details, see [the techcommunity post here](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/reduce-risk-across-your-environments-with-the-latest-threat-and/ba-p/2902691).
 
+## 1.1.23250104
+
+- Performance optimizations - Test battery performance with this version and let us know your feedback.
+- **Zero-touch onboard for enrolled iOS devices** - With this version, the preview of Zero-touch onboard for devices enrolled through Microsoft Endpoint Manager (Intune) has been added. For more information, see this [documentation](ios-install.md#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview) for more details on setup and configuration.
+- **Privacy Controls** - Configure privacy controls for phish alert report. For more information, see [Configure iOS features](ios-configure-features.md).
+
 ## 1.1.23010101
 
 - Bug fixes and performance improvements 
