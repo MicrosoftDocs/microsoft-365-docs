@@ -6,7 +6,9 @@ manager: pamgreen
 ms.reviewer: ssquires, toresing
 audience: admin
 ms.topic: landing-page
-ms.custom: intro-hub-or-landing
+ms.custom: 
+    - intro-hub-or-landing
+    - intro-overview
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
