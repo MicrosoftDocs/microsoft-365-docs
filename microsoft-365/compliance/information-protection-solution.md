@@ -32,7 +32,7 @@ Microsoft Information Protection (MIP) provides a framework, process, and capabi
 
 Use Microsoft Information Protection to help you discover, classify, protect, and govern sensitive information wherever it lives or travels.
 
-![MIP solution overview](../media/mip-solution-overview.png)
+![MIP solution overview](../media/mip-solution-overview-extended.png)
 
 Watch the following Ignite session to see how these capabilities support and build on each other: [Know your data, protect your data, and prevent data loss with Microsoft Information Protection](https://myignite.microsoft.com/archives/IG20-OD273).
 
