@@ -61,6 +61,7 @@ With Defender for Business (preview), you can help protect the devices and data 
 
 - **Help you get started using Defender for Business (preview)**, starting with the Microsoft 365 Defender portal 
    - [Navigate the Microsoft 365 Defender portal](mdb-get-started.md)
+   - [Try preview scenarios, tutorials, and simulations](mdb-tutorials.md)
 
 - **Provide guidance on managing devices and security policies and settings**
    - [Manage devices](mdb-manage-devices.md)
