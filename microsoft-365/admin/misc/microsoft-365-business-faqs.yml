@@ -50,8 +50,7 @@ sections:
           
           **Other entitlements**:
           
-          - Microsoft 365 Business Premium customers also have access to Windows Virtual Desktop and Office Shared Computer Activation capabilities. Read the [Microsoft 365 Business Premium blog](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) to learn more. See also the [Microsoft 365 for business service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
-          
+          - Microsoft 365 Business Premium customers also have access to Windows Virtual Desktop and Office Shared Computer Activation capabilities. Read the [Microsoft 365 Small and Medium Business blog](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) to learn more. See also the [Microsoft 365 for business service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description).          
       - question: Who should consider adopting Microsoft 365 Business Premium?
         answer: |
           Microsoft 365 Business Premium is a comprehensive, cloud-based security solution that lets you:
