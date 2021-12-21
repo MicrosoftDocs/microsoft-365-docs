@@ -144,6 +144,8 @@
   items:
     - name: Know your data, protect your data, prevent data loss
       href: information-protection.md
+    - name: Deploy a MIP solution
+      href: information-protection-solution.md
     - name: Default labels and policies for Microsoft Information Protection
       href: mip-easy-trials.md
     - name: Sensitive information types
@@ -333,6 +335,8 @@
           items:
           - name: Plan for data loss prevention
             href: dlp-overview-plan-for-dlp.md
+          - name: Design a DLP policy
+            href: dlp-policy-design.md
           - name: Data loss prevention policy reference
             href: dlp-policy-reference.md 
         - name: Get started with DLP
@@ -509,6 +513,8 @@
               href: archive-symphony-data.md
             - name: Text-delimited
               href: archive-text-delimited-data.md
+            - name: Twitter (preview)
+              href: archive-veritas-twitter-data.md
             - name: Webex Teams
               href: archive-webexteams-data.md
             - name: Webpages
@@ -648,7 +654,7 @@
             href: content-search-reference.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
-          - name: Use the KQL editor to build search queries (preview)
+          - name: Use the KQL editor to build search queries
             href: ediscovery-kql-editor.md
           - name: Configure search permissions filtering
             href: permissions-filtering-for-content-search.md
@@ -726,7 +732,7 @@
             href: assign-ediscovery-permissions.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
-          - name: Use the KQL editor to build search queries (preview)
+          - name: Use the KQL editor to build search queries
             href: ediscovery-kql-editor.md
           - name: Set up compliance boundaries
             href: set-up-compliance-boundaries.md
@@ -825,7 +831,7 @@
               href: collection-statistics-reports.md        
             - name: Build search queries for collections
               href: building-search-queries.md
-            - name: Use the KQL editor to build search queries (preview)
+            - name: Use the KQL editor to build search queries
               href: ediscovery-kql-editor.md
             - name: Keyword queries and search conditions
               href: keyword-queries-and-search-conditions.md 
