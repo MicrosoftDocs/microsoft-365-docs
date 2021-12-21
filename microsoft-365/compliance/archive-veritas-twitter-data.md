@@ -14,19 +14,19 @@ ms.collection: M365-security-compliance
 description: "Admins can set up a connector to import and archive Twitter data from Veritas to Microsoft 365. This connector lets you archive data from third-party data sources in Microsoft 365. After your archive this data, you can use compliance features such as legal hold, eDiscovery, and retention policies to manage third-party data."
 ---
 
-# Set up a connector to archive Twitter data
+# Set up a connector to archive Twitter data (preview)
 
-Use a Veritas connector in the Microsoft 365 compliance center to import and archive data from Twitter to user mailboxes in your Microsoft 365 organization. Veritas provides a connector that is configured to capture items from a third-party data source and import those items to Microsoft 365. The connector converts content such as chats, attachments, tasks, notes, and posts from Twitter to an email message format and then imports those items to the user mailboxes in Microsoft 365.
+Use a Veritas connector in the Microsoft 365 compliance center to import and archive data from the Twitter platform to user mailboxes in your Microsoft 365 organization. Veritas provides a [Twitter](https://www.veritas.com/insights/merge1/twitter) connector that is configured to capture items from a third-party data source and import those items to Microsoft 365. The connector converts content such as tweets, retweets, and comments from Twitter to an email message format and then imports those items to the user mailboxes in Microsoft 365.
 
 After Twitter data is stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, eDiscovery, retention policies and retention labels. Using a Twitter connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
 ## Overview of archiving Twitter data
 
-The following overview explains the process of using a connector to archive the Twitter data in Microsoft 365.
+The following overview explains the process of using a connector to archive Twitter data in Microsoft 365.
 
-![Archiving workflow for Twitter data.](../media/YouTubeConnectorWorkflow.png)
+![Archiving workflow for Twitter data.](../media/VeritasTwitterConnectorWorkflow.png)
 
-1. Your organization works with Twitter to set up and configure a Twitter site.
+1. Your organization works with Twitter to set up and configure a Twitter site. Your organization also works with Veritas to set up a Merge1 site.
 
 2. Once every 24 hours, Twitter items are copied to the Veritas Merge1 site. The connector also converts Twitter items to an email message format.
 
@@ -38,7 +38,7 @@ The following overview explains the process of using a connector to archive the 
 
 - Create a Merge1 account for Microsoft connectors. To create this account, contact [Veritas Customer Support](https://www.veritas.com/form/requestacall/ms-connectors-contact). You need to sign into this account when you create the connector in Step 1.
 
-- Create a Twitter application to fetch data from your Twitter account. For step-by step instructions about creating the application, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20YouTube%20User%20Guide.pdf).
+- Create a Twitter application at <https://developer.twitter.com> to fetch data from your Twitter account. For step-by step instructions about creating the application, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Twitter%20User%20Guide.pdf).
 
 - The user who creates the YouTube connector in Step 1 (and completes it in Step 3) must be assigned to the Mailbox Import Export role in Exchange Online. This role is required to add connectors on the **Data connectors** page in the Microsoft 365 compliance center. By default, this role is not assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
@@ -58,7 +58,7 @@ The first step is to access to the **Data Connectors** page in the Microsoft 365
 
 ## Step 2: Configure the Twitter on the Veritas Merge1 site
 
-The second step is to configure the Twitter connector on the Veritas Merge1 site. For information about how to configure the Twitter connector, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20YouTube%20User%20Guide.pdf).
+The second step is to configure the Twitter connector on the Veritas Merge1 site. For information about how to configure the Twitter connector, see [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Twitter%20User%20Guide.pdf).
 
 After you click **Save & Finish,** the **User mapping** page in the connector wizard in the Microsoft 365 compliance center is displayed.
 
@@ -66,7 +66,7 @@ After you click **Save & Finish,** the **User mapping** page in the connector wi
 
 To map users and complete the connector setup in the Microsoft 365 compliance center, follow these steps:
 
-1. On the **Map Twitter users to Microsoft 365 users** page, enable automatic user mapping. The Twitter items include a property called *Email*, which contains email addresses for users in your organization. If the connector can associate this address with a Microsoft 365 user, the items are imported to that user’s mailbox.
+1. On the **Map Twitter users to Microsoft 365 users** page, enable automatic user mapping. The Twitter items include a property called *Email*, which contains email addresses for users in your organization. If the connector can associate this address with a Microsoft 365 user, the items are imported to that user's mailbox.
 
 2. Click **Next**, review your settings, and then go to the **Data connectors** page to see the progress of the import process for the new connector.
 
