@@ -99,7 +99,7 @@ Tamper protection can be turned on or off for your tenant using the Microsoft 36
 
 - When you use the Microsoft 365 Defender portal to manage tamper protection, you do not have to use Intune or the tenant attach method.
 
-- When you manage tamper protection in the Microsoft Defender Security Center, the setting is applied tenant wide, affecting all of your devices that are running Windows 10, Windows 11, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 or Windows Server 2022. To fine-tune tamper protection (such as having tamper protection on for some devices but off for others), use either [Intune](#manage-tamper-protection-for-your-organization-using-intune) or [Configuration Manager with tenant attach](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006).
+- When you manage tamper protection in the Microsoft Defender Security Center, the setting is applied tenant wide, affecting all of your devices that are running Windows 10, Windows 10 Enterprise multi-session, Windows 11, Windows 11 Enterprise multi-session, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 or Windows Server 2022. To fine-tune tamper protection (such as having tamper protection on for some devices but off for others), use either [Intune](#manage-tamper-protection-for-your-organization-using-intune) or [Configuration Manager with tenant attach](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006).
 
 - If you have a hybrid environment, tamper protection settings configured in Intune take precedence over settings configured in the Microsoft 365 Defender portal.
 
@@ -111,6 +111,8 @@ Tamper protection can be turned on or off for your tenant using the Microsoft 36
   
   - Windows 10
   - Windows 11
+  - Windows 10 Enterprise multi-session
+  - Windows 11 Enterprise multi-session 
   - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
   - Windows Server 2022
   - Windows Server, version [1803](/windows/release-health/status-windows-10-1803) or later
@@ -184,10 +186,10 @@ On Windows Server 2016, the Settings app will not accurately reflect the status 
 
 ## Manage tamper protection for your organization with Configuration Manager, version 2006
 
-If you're using [version 2006 of Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), you can manage tamper protection settings on Windows 10, Windows 11, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2022 by using a method called *tenant attach*. Tenant attach enables you to sync your on-premises-only Configuration Manager devices into the Microsoft Endpoint Manager admin center, and then deliver endpoint security configuration policies to on-premises collections & devices.
+If you're using [version 2006 of Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), you can manage tamper protection settings on Windows 10, Windows 10 Enterprise multi-session, Windows 11, Windows 11 Enterprise multi-session, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2022 by using a method called *tenant attach*. Tenant attach enables you to sync your on-premises-only Configuration Manager devices into the Microsoft Endpoint Manager admin center, and then deliver endpoint security configuration policies to on-premises collections & devices.
 
 > [!NOTE]
-> The procedure can be used to extend tamper protection to devices running Windows 10, Windows 11, Windows Server 2019, and Windows Server 2022. Make sure to review the prerequisites and other information in the resources mentioned in this procedure.
+> The procedure can be used to extend tamper protection to devices running Windows 10, Windows 10 Enterprise multi-session, Windows 11, Windows 11 Enterprise multi-session, Windows Server 2019, and Windows Server 2022. Make sure to review the prerequisites and other information in the resources mentioned in this procedure.
 
 1. Set up tenant attach. To learn more, see [Microsoft Endpoint Manager tenant attach: Device sync and device actions](/mem/configmgr/tenant-attach/device-sync-actions).
 
@@ -249,9 +251,13 @@ To learn more about Threat & Vulnerability Management, see [Threat & Vulnerabili
 ### On which versions of Windows can I configure tamper protection?
 
 Windows 10 OS [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), or later together with [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint).
+  
+Windows 10 Enterprise multi-session
 
 Windows 11
 
+Windows 11 Enterprise multi-session
+  
 If you are using Configuration Manager, version 2006, with tenant attach, tamper protection can be extended to Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2022. See [Tenant attach: Create and deploy endpoint security Antivirus policy from the admin center (preview)](/mem/configmgr/tenant-attach/deploy-antivirus-policy).
 
 ### Will tamper protection affect non-Microsoft antivirus registration in the Windows Security app?
