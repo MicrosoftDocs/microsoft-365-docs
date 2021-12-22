@@ -78,8 +78,16 @@ If you are using Microsoft Endpoint Manager (or Microsoft Intune) to manage devi
 | [Monitoring for incoming and outgoing files](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)     | To set up monitoring for incoming and outgoing files, you can set the [RealTimeScanDirection](/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection) setting. By default, this feature is set to monitor all files.         |
 | [Scan network files](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) | By default, this setting is not enabled and network files are not scanned. To change this setting, enable [AllowScanningNetworkFiles](/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles). |
 | [Scan email messages](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) | By default, this setting is not enabled and email messages are not scanned by Defender for Business. To change this setting, enable [AllowEmailScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning). |
-| [Number of days (0-90) to keep quarantined malware](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) | By default, this setting is set to 0 days, and artifacts that are sent to quarantine are not automatically removed. To change this setting, modify your [DaysToRetainCleanedMalware](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) settings. |
-
+| [Number of days (0-90) to keep quarantined malware](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) | By default, this setting is set to 0 days, and artifacts that are sent to quarantine are not automatically removed. To change this setting, modify the [DaysToRetainCleanedMalware](/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware) setting. |
+| [Submit samples consent](/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) | If a suspicious or malicious file is detected, a sample is sent to the cloud service for analysis while Microsoft Defender Antivirus blocks the file. As soon as a determination is made, which happens quickly, the file is either released or blocked by Microsoft Defender Antivirus. By default, Defender for Business sends safe samples automatically. Examples of safe samples include `.bat`, `.scr`, `.dll`, and `.exe` files that do not contain personally identifiable information (PII). If a file does contain PII, the user receives a request to allow the sample submission to proceed.<br/><br/>[Learn more about cloud protection and sample submission](../defender-endpoint/cloud-protection-microsoft-antivirus-sample-submission.md) |
+| Use low CPU priority for scheduled scans |   |
+| Disable catch-up full scan |   |
+| Disable catchup quick scan |   |
+| CPU usage limit per scan |   |
+| Scan removable drives |   |
+| Run daily quick scan at |   |
+| Check for signature updates before running scan |   |
+| How often (0-24 hours) to check for security intelligence updates |   |
 
 
 ## Next steps
