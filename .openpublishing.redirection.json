@@ -1897,8 +1897,68 @@
     },
     {
       "source_path": "enterprise/office-365-germany-endpoints.md",
-      "redirect_url": "/microsoft-365/enterprise/microsoft-365-germany-endpoints",
-      "redirect_document_id": true
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-germany-endpoints.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-migration-opt-in.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-adfs.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-csp.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-devices.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-pre-work.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-azure-ad.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-experience.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-phases.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-experience.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-scc.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
     },
     {
       "source_path": "enterprise/office-365-ip-web-service.md",
@@ -6218,6 +6278,41 @@
     {
       "source_path": "microsoft-365/business-video/set-up-self-serve-password-reset.md",
       "redirect_url": "/microsoft-365/admin/add-users/let-users-reset-passwords",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender/api-terms.md",
+      "redirect_url": "/legal/microsoft-365/api-terms",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/ios-terms.md",
+      "redirect_url": "/legal/microsoft-365/ios-terms",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/microsoft-message-phishing-report-terms.md",
+      "redirect_url": "/legal/microsoft-365/microsoft-message-phishing-report-terms",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/defender-for-office-365-trial-terms-and-conditions.md",
+      "redirect_url": "/legal/microsoft-365/defender-for-office-365-trial-terms-and-conditions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/android-terms.md",
+      "redirect_url": "/legal/microsoft-365/android-terms",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/api-terms-of-use.md",
+      "redirect_url": "/legal/microsoft-365/api-terms-of-use",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/mde-terms-windows.md",
+      "redirect_url": "/legal/microsoft-365/mde-terms-windows",
       "redirect_document_id": false
     }
   ]
