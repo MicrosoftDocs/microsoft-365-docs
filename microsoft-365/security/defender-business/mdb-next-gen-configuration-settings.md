@@ -31,7 +31,7 @@ Next-generation protection in Microsoft Defender for Business (preview) includes
 
 - [Next-generation protection settings and options](#next-generation-protection-settings-and-options)
 - [Additional preconfigured settings in Defender for Business (preview)](#additional-preconfigured-settings) 
-- [Additional settings you can configure in Microsoft Endpoint Manager](#additional-settings-you-can-configure-in-microsoft-endpoint-manager)
+- [Settings you can configure in Microsoft Endpoint Manager](#additional-settings-you-can-configure-in-microsoft-endpoint-manager)
 
 ## Next-generation protection settings and options
 
@@ -66,7 +66,7 @@ The following additional security settings are preconfigured in Defender for Bus
 - Security intelligence updates are checked before an antivirus scan runs ([CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan))
 - Security intelligence checks occur every four hours ([SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval))
 
-## Additional settings you can configure in Microsoft Endpoint Manager
+## Settings you can configure in Microsoft Endpoint Manager
 
 If you are using Microsoft Endpoint Manager (or Microsoft Intune) to manage devices and security settings, you can set or change the settings in the following table:
 <br/><br/>
