@@ -51,7 +51,7 @@ Allow files, URLs, and senders in the Submissions section of Microsoft 365 Defen
 7. When you're finished, click the **Submit** button.
 
 > [!div class="mx-imgBorder"]
-> ![False positive submission example.](../../media/admin-submission-allow-messages.png)
+> :::image type="content" source="../../media/admin-submission-allow-messages.png" alt-text="The False positive submission example" lightbox="../../media/admin-submission-allow-messages.png":::
 
 ## Create spoofed sender allow entries using Microsoft 365 Defender
 
