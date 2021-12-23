@@ -69,9 +69,9 @@ The following table describes the types of onboarding methods that are supported
 
 5. Follow the guidance in one of the following articles:
 
-   - Windows devices: [Onboard Windows devices using a local script: Onboard devices](../defender-endpoint/configure-endpoints-script.md#onboard-devices)
-   - macOS devices: [Manual deployment for Microsoft Defender for Endpoint on macOS: Client configuration](../defender-endpoint/mac-install-manually.md#client-configuration)
-   - Linux devices: [Deploy Microsoft Defender for Endpoint on Linux manually: Client configuration](../defender-endpoint/linux-install-manually.md#client-configuration)
+   - Windows devices: [Onboard Windows devices using a local script](../defender-endpoint/configure-endpoints-script.md#onboard-devices)
+   - macOS devices: [Manual deployment for Microsoft Defender for Endpoint on macOS](../defender-endpoint/mac-install-manually.md#client-configuration)
+   - Linux devices: [Deploy Microsoft Defender for Endpoint on Linux manually](../defender-endpoint/linux-install-manually.md#client-configuration)
 
 6. Proceed to [Run a detection test](#run-a-detection-test).
 
