@@ -26,7 +26,7 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-> [!Important]
+> [!IMPORTANT]
 > The Microsoft Defender for Endpoint SIEM REST API is being retired on March 1, 2022, as the Microsoft Defender for Endpoint Alert API and the Microsoft 365 Defender Incident API that replace it provide richer metadata - including up-to-date status of the alert, evidence entities related to the alert, comments entered by analysts, and they support updating the status, assignedTo, classification, and determination fields programmatically. **Effective immediately, no new customer onboarding to the SIEM REST API will be supported.**
 
 Enable security information and event management (SIEM) integration so you can pull detections from Microsoft 365 Defender. Pull detections using your SIEM solution or by connecting directly to the detections REST API.
