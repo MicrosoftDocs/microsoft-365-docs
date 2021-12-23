@@ -40,7 +40,7 @@ To use the **MSCommerce** PowerShell module, you need:
 - A Windows 10 or later Operating system.
 - PowerShell 5 or below. Currently, PowerShell 6.x/7.x isn't supported with this module.
 - Global or Billing Admin role for your tenant to to change the Commerce Product Policies.
-- Global reader to only read Commerce Product Policies.
+- Global reader to only read MSCommerce Product Policies.
 
 ## Install the MSCommerce PowerShell module
 
