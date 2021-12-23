@@ -30,7 +30,7 @@ Next-generation protection in Microsoft Defender for Business (preview) includes
 **This article describes**:
 
 - [Next-generation protection settings and options](#next-generation-protection-settings-and-options)
-- [Other preconfigured settings in Defender for Business (preview)](#additional-preconfigured-settings-in-defender-for-business) 
+- [Other preconfigured settings in Defender for Business (preview)](#other-preconfigured-settings-in-defender-for-business) 
 - [Settings you can configure in Microsoft Endpoint Manager](#settings-you-can-configure-in-microsoft-endpoint-manager)
 
 ## Next-generation protection settings and options
