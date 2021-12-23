@@ -267,11 +267,7 @@
 ### [Host firewall reporting in Microsoft Defender for Endpoint](host-firewall-reporting.md)
 
 ### [Attack surface reduction]()
-#### [Overview of attack surface reduction](overview-attack-surface-reduction.md)
-#### [Configure attack surface reduction capabilities](configure-attack-surface-reduction.md)
-#### [Use audit mode for attack surface reduction](audit-windows-defender.md)
-#### [View attack surface reduction events](event-views.md)
-#### [Attack surface reduction FAQ](attack-surface-reduction-faq.yml)
+#### [Understand and use attack surface reduction](overview-attack-surface-reduction.md)
 #### [Attack surface reduction (ASR) rules]()
 ##### [Learn about ASR rules](attack-surface-reduction.md)
 ##### [Deploy ASR rules](attack-surface-reduction-rules-deployment.md)
@@ -283,6 +279,7 @@
 ##### [Evaluate ASR rules](evaluate-attack-surface-reduction.md)
 ##### [Enable ASR rules](enable-attack-surface-reduction.md)
 ##### [Customize ASR rules](customize-attack-surface-reduction.md)
+#### [Attack surface reduction FAQ](attack-surface-reduction-faq.yml)
 
 ### Next-generation protection
 #### [Next-generation protection overview](next-generation-protection.md)
