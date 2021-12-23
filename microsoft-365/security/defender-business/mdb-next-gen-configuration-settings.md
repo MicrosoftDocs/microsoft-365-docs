@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 12/21/2021
+ms.date: 12/23/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
