@@ -84,9 +84,9 @@ If you were already using Microsoft Intune before getting Defender for Business 
 
 ## Run a detection test
 
-After you have onboarded a device manually, you can run a detection test to make sure that everything is working correctly with Defender for Business (preview).
+After you have onboarded a Windows device manually, you can run a detection test to make sure that everything is working correctly with Defender for Business (preview).
 
-1. On the device, create a folder: `C:\test-MDATP-test`.
+1. On the Windows device, create a folder: `C:\test-MDATP-test`.
 
 2. Open Command Prompt as an administrator.
 
@@ -108,7 +108,7 @@ If you want to offboard a device, follow these steps:
 
 3. Under **Device management**, choose **Offboarding**.
 
-4. Select **Windows 10 and 11**, and then, under **Offboard a device**, in the **Deployment method** section, choose **Local script**. 
+3. Select an operating system, such as **Windows 10 and 11**, and then, under **Offboard a device**, in the **Deployment method** section, choose **Local script**. 
 
 5. In the confirmation screen, review the information, and then choose **Download** to proceed.
 
