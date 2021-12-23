@@ -108,19 +108,18 @@ If you want to offboard a device, follow these steps:
 
 3. Under **Device management**, choose **Offboarding**.
 
-3. Select an operating system, such as **Windows 10 and 11**, and then, under **Offboard a device**, in the **Deployment method** section, choose **Local script**. 
+4. Select an operating system, such as **Windows 10 and 11**, and then, under **Offboard a device**, in the **Deployment method** section, choose **Local script**. 
 
 5. In the confirmation screen, review the information, and then choose **Download** to proceed.
 
-6. Save the zipped folder to a location, such as a removable drive.
+6. Select **Download offboarding package**. We recommend saving the offboarding package to a removable drive.
 
-7. On each device, follow these steps: 
+7. Follow the guidance in one of the following articles:
 
-   1. Copy the configuration package (`WindowsDefenderATPOffboardingPackage_valid_until_YYYY-MM-DD`) that you downloaded to the device, and extract its contents. You can extract the contents to the device's **Desktop** folder. (`YYYY-MM-DD` refers to the expiry date of the package.)
+   - Windows devices: [Offboard Windows devices using a local script](../defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script)
+   - macOS devices: [Uninstalling on macOS](../defender-endpoint/mac-resources.md#uninstalling)
+   - Linux devices: [Uninstalling on Linux](../defender-endpoint/linux-resources.md#uninstall)
 
-   2. Open Command Prompt as an administrator.
-
-   3. In the Command Prompt window, type the location of the script file. For example, if you copied the file to the **Desktop** folder, type `%userprofile%\Desktop\WindowsDefenderATPOffboardingPackage_valid_until_YYYY-MM-DD.cmd`, and then press the Enter key.
 
 ## Next steps
 
