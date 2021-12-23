@@ -73,7 +73,7 @@ The following table describes the types of onboarding methods that are supported
    - macOS devices: [Manual deployment for Microsoft Defender for Endpoint on macOS](../defender-endpoint/mac-install-manually.md#client-configuration)
    - Linux devices: [Deploy Microsoft Defender for Endpoint on Linux manually](../defender-endpoint/linux-install-manually.md#client-configuration)
 
-6. Proceed to [Run a detection test](#run-a-detection-test).
+6. Proceed to [Run a detection test](#run-a-detection-test) for Windows devices.
 
 > [!IMPORTANT]
 > If something goes wrong and your onboarding process fails, see [Microsoft Defender for Business (preview) troubleshooting](mdb-troubleshooting.yml).
@@ -120,6 +120,8 @@ If you want to offboard a device, follow these steps:
    - macOS devices: [Uninstalling on macOS](../defender-endpoint/mac-resources.md#uninstalling)
    - Linux devices: [Uninstalling on Linux](../defender-endpoint/linux-resources.md#uninstall)
 
+> [!IMPORTANT]
+> Offboarding a device causes the devices to stop sending data to Defender for Business (preview). However, data received prior to offboarding is retained for up to six (6) months.
 
 ## Next steps
 
