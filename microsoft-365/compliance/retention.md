@@ -274,7 +274,7 @@ When you submit retention policies for workloads and label policies to automatic
 
 - [How long it takes for retention policies to take effect](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)
 
-- [How long it takes for retention labels to take effect](apply-retention-labels-automatically?view=o365-worldwide#how-long-it-takes-for-retention-labels-to-take-effect )
+- [How long it takes for retention labels to take effect](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect)
 
 Similarly, allow up to 7 days for retention labels to be visible in apps after you publish the labels:
 
