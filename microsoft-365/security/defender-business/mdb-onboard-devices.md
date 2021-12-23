@@ -114,7 +114,9 @@ If you want to offboard a device, follow these steps:
 
 6. Select **Download offboarding package**. We recommend saving the offboarding package to a removable drive.
 
-7. Run the script on each device that you want to offboard. Need help with this task? See the following resources:
+7. Run the script on each device that you want to offboard. 
+
+   Need help with this task? See the following resources:   
 
    - Windows devices: [Offboard Windows devices using a local script](../defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script)
    - macOS devices: [Uninstalling on macOS](../defender-endpoint/mac-resources.md#uninstalling)
