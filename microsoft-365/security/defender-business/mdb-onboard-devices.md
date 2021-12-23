@@ -67,7 +67,7 @@ The following table describes the types of onboarding methods that are supported
 
 4. Select **Download onboarding package**. We recommend saving the onboarding package to a removable drive.
 
-5. Follow the guidance in one of the following articles:
+5. Follow the guidance in the following articles:
 
    - Windows devices: [Onboard Windows devices using a local script](../defender-endpoint/configure-endpoints-script.md#onboard-devices)
    - macOS devices: [Manual deployment for Microsoft Defender for Endpoint on macOS](../defender-endpoint/mac-install-manually.md#client-configuration)
