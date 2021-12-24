@@ -255,7 +255,7 @@ The device configuration profile is now assigned to the selected user group.
 
     :::image type="content" source="images/MDE_new.png" alt-text="Th display of a Microsoft Defender for Endpoint application on a mobile device" lightbox="images/MDE_new.png":::
 
-4. At this stage the device is successfully onboarded onto Defender for Endpoint on Android. You can verify this on the [Microsoft Defender Security Center](https://securitycenter.microsoft.com) by navigating to the **Devices** page.
+4. At this stage the device is successfully onboarded onto Defender for Endpoint on Android. You can verify this on the [Microsoft 365 Defender portal](https://security.microsoft.com) by navigating to the **Device Inventory** page.
 
     :::image type="content" source="images/9fe378a1dce0f143005c3aa53d8c4f51.png" alt-text="The Microsoft Defender for Endpoint portal" lightbox="images/9fe378a1dce0f143005c3aa53d8c4f51.png":::
 
