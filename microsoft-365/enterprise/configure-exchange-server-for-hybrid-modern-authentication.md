@@ -172,6 +172,8 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $true
 
 > [!NOTE]
 > In case EXCH is in hybrid with **multiple tenants**, there are multiple AuthServer objects present in EXCH with domains corresponding to each tenant.  The **IsDefaultAuthorizationEndpoint** flag should be set to true (using the **IsDefaultAuthorizationEndpoint** cmdlet) for any one of these AuthServer objects. This flag can't be set to true for all the Authserver objects and HMA would be enabled even if one of these AuthServer object's **IsDefaultAuthorizationEndpoint** flag is set to true.
+> 
+> For **DomainName** parameter, use Tenant Domain value which is usually of the form contoso.onmicrosoft.com 
 
 ## Verify
 
