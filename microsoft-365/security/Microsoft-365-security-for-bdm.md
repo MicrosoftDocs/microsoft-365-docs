@@ -127,7 +127,7 @@ Microsoft 365 information protection capabilities can help you discover what inf
 
 The following diagram illustrates these capabilities.
 
-:::image type="content" source="../media/m365-security-bdm-illustrations-assume-breach.png" alt-text="The recommended capabilities for protecting against unknown threats" lightbox="../media/m365-security-bdm-illustrations-assume-breach.png":::
+:::image type="content" source="../media/m365-security-bdm-illustrations-assume-breach.png" alt-text="The capabilities recommended for protecting against unknown threats" lightbox="../media/m365-security-bdm-illustrations-assume-breach.png":::
 
 ## Continuous monitoring and auditing
 

@@ -75,7 +75,7 @@ Tracked queries leverage your saved queries to periodically assess Microsoft 365
 
 Saved queries are also found in the Trackers section. You can use Saved queries to store the common Explorer searches that you want to get back to quicker and repeatedly, without having to re-create the search every time.
 
-:::image type="content" source="../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png" alt-text="The example of tracked queries with one selected" lightbox="../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png":::
+:::image type="content" source="../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png" alt-text="The list of tracked queries with one selected" lightbox="../../media/188cf3ff-58f1-41ea-81aa-76158d8f40c3.png":::
 
 You can always save a Noteworthy tracker query or any of your own Explorer queries using the **Save query** button at the top of the Explorer page. Anything saved there will show up in the **Saved queries** list on the Tracker page.
 

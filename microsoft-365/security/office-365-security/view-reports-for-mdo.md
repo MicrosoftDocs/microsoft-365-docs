@@ -135,7 +135,7 @@ The available views on the **URL protection** report page are described in the f
 
 ### View data by URL click protection action
 
-:::image type="content" source="../../media/url-threat-protection-report-url-click-protection-action-view.png" alt-text="The URL click protection action view in the URL protection report" lightbox="../../media/url-threat-protection-report-url-click-protection-action-view.png":::
+:::image type="content" source="../../media/url-threat-protection-report-url-click-protection-action-view.png" alt-text="The view namely URL click protection action in the URL protection report" lightbox="../../media/url-threat-protection-report-url-click-protection-action-view.png":::
 
 The **View data by URL click protection action** view shows the number of URL clicks by users in the organization and the results of the click:
 

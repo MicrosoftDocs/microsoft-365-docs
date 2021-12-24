@@ -337,7 +337,7 @@ The clicked URL is being scanned by Safe Links. You might need to wait a few mom
 
 The original notification page looked like this:
 
-:::image type="content" source="../../media/04368763-763f-43d6-94a4-a48291d36893.png" alt-text="The link is being scanned" notification" lightbox="../../media/04368763-763f-43d6-94a4-a48291d36893.png":::
+:::image type="content" source="../../media/04368763-763f-43d6-94a4-a48291d36893.png" alt-text="The link is being scanned notification" lightbox="../../media/04368763-763f-43d6-94a4-a48291d36893.png":::
 
 ### Suspicious message warning
 

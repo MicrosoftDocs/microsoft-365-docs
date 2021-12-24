@@ -26,7 +26,7 @@ ms.prod: m365-security
 
 The **Auto-forwarded messages** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com) displays information about messages that are automatically forwarded from your organization to recipients in external domains.
 
-:::image type="content" source="../../media/mfi-auto-forwarded-messages.png" alt-text="The Auto-forwarded messages widget in the Security & Compliance Center" lightbox="../../media/mfi-auto-forwarded-messages.png":::
+:::image type="content" source="../../media/mfi-auto-forwarded-messages.png" alt-text="The widget namely Auto-forwarded messages in the Security & Compliance Center" lightbox="../../media/mfi-auto-forwarded-messages.png":::
 
 ## Auto-forwarded messages details
 
