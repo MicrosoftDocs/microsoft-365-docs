@@ -273,7 +273,6 @@ For more information about how retention policies and retention labels work toge
 When you submit retention policies for workloads and label policies to automatically apply a retention label, allow up to 7 days for the retention settings to be applied to content:
 
 - [How long it takes for retention policies to take effect](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)
-
 - [How long it takes for retention labels to take effect](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect)
 
 Similarly, allow up to 7 days for retention labels to be visible in apps after you publish the labels:
