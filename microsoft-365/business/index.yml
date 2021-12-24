@@ -150,7 +150,7 @@ conceptualContent:
         - url: ./set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
           itemType: how-to-guide
           text: Set up email retention
-        - url: ../business-video/create-sensitivity-labels.md
+        - url: ../admin/security-and-compliance/set-up-compliance.md
           itemType: video
           text: Create and use sensitivity labels
       # footerLink (optional)

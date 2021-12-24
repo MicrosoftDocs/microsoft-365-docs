@@ -42,6 +42,14 @@ You can enable calendar sharing for all users in your organization in the Micros
 
 4. Choose what type of calendar information to make available to users. You can allow all information, or limit it to time only or time, subject, and location only.
 
+## External sharing sync interval
+
+Instant syncing for sharing outside your tenant isn't supported currently. While you can share in these configurations, syncing will happen periodically. There are two types of cross-tenant sharing:
+
+1. **Microsoft 365 to another Microsoft 365 user (if external sharing is enabled)**: A fully shared calendar is created, but the sync will happen approximately every three hours. Instant syncing will eventually be enabled for this setup.
+
+2. **Microsoft 365 to an Outlook.com user**: If external sharing is disabled, sharing to another Microsoft 365 user also falls into this group. An ICS URL is generated when sharing, which the recipient can use to add to any calendar service. With an ICS subscription, the recipient’s calendar service chooses when to sync the ICS subscription to receive new updates. If the recipient is an Outlook.com or a Microsoft 365 user, the sync will happen approximately every three hours.
+
 ## Invite people to access calendars
 
 Once sharing is enabled, calendar owners can extend invitations to specific users. For instructions, see [Sharing your calendar in Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5).
@@ -49,5 +57,6 @@ Once sharing is enabled, calendar owners can extend invitations to specific user
 ## Related content
 
 [Turn external sharing on or off for a site](/sharepoint/change-external-sharing-site) (article)\
-[Overview of the Microsoft 365 admin center]([Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)\
+[Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)\
 [Manage email and calendars](/admin) (link page)
+

@@ -60,6 +60,23 @@ To see malware detected in email sorted by Microsoft 365 technology, use the [**
 
    The report refreshes to show the results that malware detected in email, using the technology option you selected. From here, you can conduct further analysis.
 
+### Report a message as clean in Explorer
+
+You can use the **Report clean** option in Explorer to report a message as false positive. 
+
+1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Explorer**, and then, in the **View** drop down list, verify that **Phish** is selected.
+
+2. Verify that you're on the **Email** tab, and then from the list of reported messages, select the one you'd like to report as clean. 
+
+3. Click **Actions** to expand the list of options.
+
+4. Scroll down the list of options to go to the **Start new submission** section, and then select **Report clean**. A flyout appears.
+
+   > [!div class="mx-imgBorder"]
+   > ![Report clean option in Explorer.](../../media/report-clean-option-explorer.png) 
+
+5. Toggle the slider to **On**. From the drop down list, specify the number of days you want the message to be removed, add a note if needed, and then select **Submit**. 
+
 ## View phishing URL and click verdict data
 
 You can view phishing attempts through URLs in email, including a list of URLs that were allowed, blocked, and overridden. To identify URLs that were clicked, [Safe Links](safe-links.md) must be configured. Make sure that you set up [Safe Links policies](set-up-safe-links-policies.md) for time-of-click protection and logging of click verdicts by Safe Links.

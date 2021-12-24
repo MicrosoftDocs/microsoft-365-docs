@@ -33,7 +33,7 @@ Consistent, regular review of reports is an essential aspect of maintaining your
 
 ## Hunting
 
-One of the most powerful features of [Microsoft 365 Defender](https://securitycenter.microsoft.com) is advanced hunting. If you're not familiar with advanced hunting, see: [Proactively hunt for threats with advanced hunting](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview).
+One of the most powerful features of [Microsoft 365 Defender](https://security.microsoft.com) is advanced hunting. If you're not familiar with advanced hunting, see: [Proactively hunt for threats with advanced hunting](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview).
 
 > [!div class="mx-imgBorder"]
 > ![Microsoft 365 Defender Advanced hunting](images/asr-defender365-advanced-hunting2.png)
