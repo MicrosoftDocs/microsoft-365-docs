@@ -333,7 +333,7 @@ Note that several warning pages have been updated. If you're not already seeing 
 
 The clicked URL is being scanned by Safe Links. You might need to wait a few moments before trying the link again.
 
-:::image type="content" source="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png" alt-text="The link is being scanned notification" lightbox="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png":::
+:::image type="content" source="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png" alt-text="The notification that the link is being scanned" lightbox="../../media/ee8dd5ed-6b91-4248-b054-12b719e8d0ed.png":::
 
 The original notification page looked like this:
 
