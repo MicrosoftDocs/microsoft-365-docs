@@ -86,15 +86,15 @@ Once your domain is added, follow the steps as shown below to configure DKIM.
 
 Step 1: Click on the domain you wish to configure DKIM on DKIM page (https://security.microsoft.com/dkimv2 or https://protection.office.com/dkimv2).
 
-![DKIM page in the Microsoft 365 Defender portal with a domain selected.](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
+:::image type="content" source="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png" alt-text="The DKIM page in the Microsoft 365 Defender portal with a domain selected" lightbox="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png":::
 
 Step 2: Click on Create DKIM keys.
 
-![Domain details flyout with the Create DKIM keys button.](../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
+:::image type="content" source="../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png" alt-text="The Domain details flyout with the Create DKIM keys button" lightbox="../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png":::
 
 Step 3: Copy the CNAMES shown in the pop up window
 
-![Publish CNAMEs pop up window that contains the two CNAME records to copy.](../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
+:::image type="content" source="../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png" alt-text="The Publish CNAMEs pop-up window that contains the two CNAME records to copy" lightbox="../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png":::
 
 Step 4: Publish the copied CNAME records to your DNS service provider.
 
@@ -109,7 +109,7 @@ TTL: 3600 (or your provider default)
 
 Step 5: Return to DKIM page to enable DKIM.
 
-![Slide the toggle to Enabled to enable DKIM.](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
+:::image type="content" source="../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png" alt-text="The toggle to enable DKIM" lightbox="../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png":::
 
 If you see CNAME record doesn't exist error, it might be due to:
 
@@ -249,7 +249,7 @@ Once you have published the CNAME records in DNS, you are ready to enable DKIM s
 #### To enable DKIM signing for your custom domain by using PowerShell
 
 > [!IMPORTANT]
-> :::image type="content" source="../../media/dkim.png" alt-text="The 'No DKIM keys saved for this domain.' error.":::
+> :::image type="content" source="../../media/dkim.png" alt-text="The No DKIM keys saved for this domain error" lightbox="../../media/dkim.png":::
 > If you are configuring DKIM for the first time and see the error 'No DKIM keys saved for this domain' complete the command in step 2 below (for example, `Set-DkimSigningConfig -Identity contoso.com -Enabled $true`) to see the key.
 
 1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).

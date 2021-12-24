@@ -27,7 +27,8 @@ This article is organized by priority of work, starting with protecting those ac
 
 Microsoft provides you with the Secure Score tool within your tenant to automatically analyze your security posture based on your regular activities, assign a score, and provide security improvement recommendations. Before taking the actions recommended in this article, take note of your current score and recommendations. The actions recommended in this article will increase your score. The goal is not to achieve the max score, but to be aware of opportunities to protect your environment in a way that does not negatively affect productivity for your users. See [Microsoft Secure Score](defender/microsoft-secure-score.md).
 
-![Follow these steps to mitigate risks to your business.](../media/security/security-for-bdms-overview.png)
+:::image type="content" source="../media/security/security-for-bdms-overview.png" alt-text="The steps to mitigate risks to your business" lightbox="../media/security/security-for-bdms-overview.png":::
+
 
 One more thing before we get started . . . be sure to [turn on the audit log](../compliance/search-the-audit-log-in-security-and-compliance.md). You'll need this data later, in the event you need to investigate an incident or a breach. 
 
@@ -43,7 +44,8 @@ As a first step, we recommend ensuring critical accounts in the environment are 
 |Configure and use Privileged Access Workstations (PAW) to administer services. Do not use the same workstations for browsing the Internet and checking email not related to your administrative account.|  ![green check mark.](../media/green-check-mark.png)|![green check mark.](../media/green-check-mark.png) | 
 
 The following diagram illustrates these capabilities.
-![Recommended capabilities for protecting privileged accounts.](../media/m365-security-bdm-illustrations-privileged-accounts.png)
+
+:::image type="content" source="../media/m365-security-bdm-illustrations-privileged-accounts.png" alt-text="The recommended capabilities for protecting privileged accounts" lightbox="../media/m365-security-bdm-illustrations-privileged-accounts.png":::
 
 Additional recommendations:
 - Ensure accounts that are synchronized from on-premises are not assigned admin roles for cloud services. This helps prevent an attacker from applying on-premises accounts to gain administrative access to cloud services. 
@@ -74,7 +76,8 @@ Known threats include malware, compromised accounts, and phishing. Some protecti
 |**Block connections from countries that you don't do business with**. Create an Azure AD conditional access policy to block any connections coming from these countries, effectively creating a geo firewall around your tenant.| |![green check mark.](../media/green-check-mark.png)|
 
 The following diagram illustrates these capabilities.
-![Recommended capabilities for protecting against known threats.](../media/m365-security-bdm-illustrations-known-threats.png)
+
+:::image type="content" source="../media/m365-security-bdm-illustrations-known-threats.png" alt-text="The recommended capabilities for protecting against known threats" lightbox="../media/m365-security-bdm-illustrations-known-threats.png":::
 
 ## Protect against unknown threats
 
@@ -88,7 +91,8 @@ After adding extra protections to your privileged accounts and protecting agains
 |**Use Microsoft Defender for Cloud Apps** to discover SaaS apps and begin to use behavior analytics and anomaly detection. |         |![green check mark.](../media/green-check-mark.png) |
 
 The following diagram illustrates these capabilities.
-![Recommended capabilities for protecting against unknown threats.](../media/m365-security-bdm-illustrations-unknown-threats.png)
+
+:::image type="content" source="../media/m365-security-bdm-illustrations-unknown-threats.png" alt-text="The recommended capabilities for protecting against unknown threats" lightbox="../media/m365-security-bdm-illustrations-unknown-threats.png":::
 
 Additional recommendations:
 - Secure partner channel communications like Emails using TLS.
@@ -122,7 +126,8 @@ Microsoft 365 information protection capabilities can help you discover what inf
 |**Use [AIP Scanner](/azure/information-protection/deploy-aip-scanner) to identify and classify information across servers and file shares**. Use the AIP reporting tool to view the results and take appropriate actions.|         |![green check mark.](../media/green-check-mark.png)|
 
 The following diagram illustrates these capabilities.
-![Recommended capabilities for protecting against breach.](../media/m365-security-bdm-illustrations-assume-breach.png)
+
+:::image type="content" source="../media/m365-security-bdm-illustrations-assume-breach.png" alt-text="The recommended capabilities for protecting against unknown threats" lightbox="../media/m365-security-bdm-illustrations-assume-breach.png":::
 
 ## Continuous monitoring and auditing
 
@@ -140,7 +145,8 @@ Last but not least, Continuous Monitoring and Auditing of the Microsoft 365 envi
 |Use **Microsoft Defender for Cloud** to monitor for threats across hybrid and cloud workloads. Microsoft Defender for Cloud includes a free tier of capabilities and a standard tier of capabilities that are paid for based on resource hours or transactions.|         |         |
 
 The following diagram illustrates these capabilities.
-![Recommended capabilities for continuous monitoring and auditing.](../media/m365-security-bdm-illustrations-monitoring-auditing.png)
+
+:::image type="content" source="../media/m365-security-bdm-illustrations-monitoring-auditing.png" alt-text="The recommended capabilities for continuous monitoring and auditing" lightbox="../media/m365-security-bdm-illustrations-monitoring-auditing.png":::
 
 Top recommended monitoring actions:
 
