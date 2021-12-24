@@ -278,7 +278,7 @@ When you submit retention policies for workloads and label policies to automatic
 
 Similarly, allow up to 7 days for retention labels to be visible in apps after you publish the labels:
 
-- [When retention labels become available to apply](create-apply-retention-label.md#when-retention-labels-become-available-to-apply)
+- [When retention labels become available to apply](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply)
 
 Often, the policies will take effect and labels will be visible quicker than 7 days. But with many potential variables that can impact this process, it's best to plan for the maximum of 7 days.
 
