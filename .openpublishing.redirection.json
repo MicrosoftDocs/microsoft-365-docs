@@ -4566,6 +4566,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/configure-attack-surface-reduction.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/audit-windows-defender.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/event-views.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md",
       "redirect_url": "/microsoft-365/security/office-365-security/report-false-positives-and-false-negatives",
       "redirect_document_id": true
