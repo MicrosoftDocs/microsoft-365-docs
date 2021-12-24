@@ -64,9 +64,9 @@ For messages in the Inbox or any other email folder except Junk Email, use the f
 
 1. Select the **More actions** ellipses on the top-right corner of the selected message, select **Report message** from the dropdown menu, and then select **Junk** or **Phishing**.
 
-   ![Report Message - More actions.](../../media/report-message-more-actions.png)
+   :::image type="content" source="../../media/report-message-more-actions.png" alt-text="The More actions icon" lightbox="../../media/report-message-more-actions.png":::
 
-   ![Report Message - Junk and Phishing.](../../media/report-message-junk-phishing.png)
+   :::image type="content" source="../../media/report-message-junk-phishing.png" alt-text="The Junk and Phishing option in the Report Message pane" lightbox="../../media/report-message-junk-phishing.png":::
 
 2. The selected messages will be sent to Microsoft for analysis and:
    - Moved to the Junk Email folder if they were reported as spam.
@@ -76,9 +76,9 @@ For messages in the Inbox or any other email folder except Junk Email, use the f
 
 1. Select the **More actions** ellipses on the top-right corner of the selected message, select **Report message** from the dropdown menu, and then select **Not Junk**.
 
-   ![Report Message - More actions.](../../media/report-message-more-actions.png)
+   :::image type="content" source="../../media/report-message-more-actions.png" alt-text="The icon that provides more actions" lightbox="../../media/report-message-more-actions.png":::
 
-   ![Report Message - Not junk.](../../media/report-message-not-junk.png)
+   :::image type="content" source="../../media/report-message-not-junk.png" alt-text="The Not Junk option under the Report Message pane" lightbox="../../media/report-message-not-junk.png":::
 
 2. The selected message will be sent to Microsoft for analysis and moved to Inbox or any other specified folder.
 
