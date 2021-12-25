@@ -14,7 +14,7 @@ audience: Admin
 
 # Prerequisites for Microsoft Managed Desktop
 
-<!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/prereq-azure); do not delete.-->
+<!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/prereq-azure). DO NOT DELETE.-->
 <!--from Prerequisites -->
 
 This topic outlines the infrastructure requirements you must meet to assure success with Microsoft Managed Desktop.

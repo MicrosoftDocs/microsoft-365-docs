@@ -99,7 +99,7 @@ It may help save triage time for analysts and investigators to immediately dismi
 
 To dismiss an insider risk alert, complete the following steps:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to **Insider risk management** and select the **Alerts** tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
 2. On the **Alerts dashboard**, select the alert (or alerts) with a *Needs review* status that you want to dismiss.
 3. On the Alerts command bar, select **Dismiss alerts**.
 4. On the **Dismiss alerts** detail pane, you can review the user and policy details associated with the selected alerts.
@@ -109,7 +109,7 @@ To dismiss an insider risk alert, complete the following steps:
 
 To triage an insider risk alert, complete the following steps:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to **Insider risk management** and select the **Alerts** tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
 2. On the **Alerts dashboard**, select the alert you want to triage.
 3. On the **Alert detail** page, you can review information about the alert and you can confirm the alert and create a new case, confirm the alert and add to an existing case, or to dismiss the alert. This page also includes the current status for the alert and the alert risk severity level, listed as High, Medium, or Low. The severity level may increase or decrease over time if the alert is not triaged.
 
@@ -149,7 +149,7 @@ Use the Activity scope and Risk insight filters to display and sort activities a
 
 To use the **Activity explorer**, complete the following steps:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to **Insider risk management** and select the **Alerts** tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
 2. On the **Alerts dashboard**, select the alert you want to triage.
 3. On the **Alerts detail pane**, select **Open expanded view**.
 4. On the page for the selected alert, select the **Activity explorer** tab.
@@ -167,7 +167,7 @@ When selecting an activity's events from the activity timeline, the number of ac
 
 As alert is reviewed and triaged, you can create a new case to further investigate the risk activity. To create a case for an alert, follow these steps:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to **Insider risk management** and select the **Alerts** tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
 2. On the **Alerts dashboard**, select the alert you want to confirm and create a new case for.
 3. On the **Alerts details pane**, select **Actions** > **Confirm alerts & create case**.
 4. On the **Confirm alert and create insider risk case** dialog, enter a name for the case, select users to add as contributors, and add comments as applicable. Comments are automatically added to the case as a case note.

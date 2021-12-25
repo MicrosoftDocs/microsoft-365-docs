@@ -21,8 +21,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-minreqs-abovefoldlink)
@@ -101,7 +100,7 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
 - Windows 10 Pro
 - Windows 10 Pro Education
 - Windows server
-  - Windows Server 2008 R2 SP1
+  - Windows Server 2008 R2 SP1 ([Requires ESU for support](/windows-server/get-started/extended-security-updates-deploy))
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server, version 1803 or later
@@ -112,6 +111,8 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
 Devices on your network must be running one of these editions.
 
 The hardware requirements for Defender for Endpoint on devices are the same for the supported editions.
+
+For more information on supported versions of Windows 10, see (/windows/release-health/release-information).
 
 > [!NOTE]
 > Machines running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.
