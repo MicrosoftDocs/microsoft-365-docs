@@ -262,6 +262,8 @@
                   href: advanced-hunting-devicetvmsecureconfigurationassessment-table.md
                 - name: DeviceTvmSecureConfigurationAssessmentKB
                   href: advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
+                - name: DeviceTvmSoftwareEvidenceBeta
+                  href: advanced-hunting-devicetvmsoftwareevidencebeta-table.md
                 - name: DeviceTvmSoftwareInventory
                   href: advanced-hunting-devicetvmsoftwareinventory-table.md
                 - name: DeviceTvmSoftwareVulnerabilities
