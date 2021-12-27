@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 12/10/2021
+ms.date: 12/13/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -21,7 +21,9 @@ ms.collection:
 # The simplified configuration process in Microsoft Defender for Business (preview)
 
 > [!IMPORTANT]
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
+> Microsoft Defender for Business is now in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. We will onboard an initial set of customers and partners in the coming weeks and will expand the preview leading up to general availability. Note that preview will launch with an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
+> 
+> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
 Microsoft Defender for Business (preview) features a simplified configuration process, designed especially for small and medium-sized businesses. This experience takes the guesswork out of onboarding and managing devices, with a wizard-like experience and default policies that are designed to protect your company's devices from day one. **We recommend using the simplified configuration process; however, you're not limited to this option**.
 

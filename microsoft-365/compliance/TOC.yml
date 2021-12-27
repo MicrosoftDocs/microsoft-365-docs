@@ -144,6 +144,8 @@
   items:
     - name: Know your data, protect your data, prevent data loss
       href: information-protection.md
+    - name: Deploy a MIP solution
+      href: information-protection-solution.md
     - name: Default labels and policies for Microsoft Information Protection
       href: mip-easy-trials.md
     - name: Sensitive information types
@@ -333,6 +335,8 @@
           items:
           - name: Plan for data loss prevention
             href: dlp-overview-plan-for-dlp.md
+          - name: Design a DLP policy
+            href: dlp-policy-design.md
           - name: Data loss prevention policy reference
             href: dlp-policy-reference.md 
         - name: Get started with DLP
@@ -509,6 +513,8 @@
               href: archive-symphony-data.md
             - name: Text-delimited
               href: archive-text-delimited-data.md
+            - name: Twitter (preview)
+              href: archive-veritas-twitter-data.md
             - name: Webex Teams
               href: archive-webexteams-data.md
             - name: Webpages
@@ -541,8 +547,6 @@
               href: archive-rogers-network-archiver-data.md
             - name: Signal Archiver
               href: archive-signal-archiver-data.md
-            - name: StarHub Network Archiver (preview)
-              href: archive-starhub-network-archiver-data.md
             - name: Telegram Archiver
               href: archive-telegram-archiver-data.md
             - name: TELUS Network

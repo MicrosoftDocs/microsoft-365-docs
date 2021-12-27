@@ -19,6 +19,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-overview
   - m365solution-evalutatemtp
+ms.custom: admindeeplinkEXCHANGE
 ms.topic: how-to
 ms.technology: m365d
 ---
