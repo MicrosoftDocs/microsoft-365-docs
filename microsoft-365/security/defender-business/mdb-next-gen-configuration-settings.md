@@ -31,7 +31,7 @@ Next-generation protection in Microsoft Defender for Business (preview) includes
 
 - [Next-generation protection settings and options](#next-generation-protection-settings-and-options)
 - [Other preconfigured settings in Defender for Business (preview)](#other-preconfigured-settings-in-defender-for-business) 
-- [Settings you can configure in Microsoft Endpoint Manager](#settings-you-can-configure-in-microsoft-endpoint-manager)
+- [Defender for Business default settings and Microsoft Endpoint Manager](#defender-for-business-default-settings-and-microsoft-endpoint-manager)
 
 ## Next-generation protection settings and options
 
@@ -70,7 +70,6 @@ The following security settings are preconfigured in Defender for Business (prev
 
 The following table describes settings that are preconfigured for Defender for Business (preview) and how those settings correspond to what you might see in Microsoft Endpoint Manager (or Microsoft Intune). If you're using the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md) (preview), you do not need to edit these settings.
 <br/><br/>
-
 
 | Setting  | Description  |
 |---------|---------|
