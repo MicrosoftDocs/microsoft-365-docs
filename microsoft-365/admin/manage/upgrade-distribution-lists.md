@@ -184,7 +184,7 @@ There are some cases in which though DL is eligible but could not be upgraded. T
 
 - DLs with **MemberJoinRestriction** or **MemberDepartRestriction** set to **Closed**, could not be upgraded
 
-- The Microsoft 365 Group creation is allowed only to few users, using the steps from [this article](https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups). In this scenario, if the owner of distribution list is not allowed to create Microsoft 365 Group, the distribution list will not upgrade to Microsoft 365 Group. 
+- The Microsoft 365 Group creation is allowed only to few users, using the steps from [this article](/microsoft-365/solutions/manage-creation-of-groups). In this scenario, if the owner of distribution list is not allowed to create Microsoft 365 Group, the distribution list will not upgrade to Microsoft 365 Group. 
 Workaround: Use one of the following workaround for the above scenario:
 1)	Ensure all the users mentioned as owners of the DL are allowed to create M365 Group, i.e. are member of the security group that is allowed to M365 Group.
 OR
