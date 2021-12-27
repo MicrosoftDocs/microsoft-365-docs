@@ -54,7 +54,7 @@ Microsoft Defender for Business (preview) includes default policies that use rec
    - When you set up your device group, you specify certain criteria, such as the operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. 
    - All device groups, including the default and custom device groups that you define, are stored in Azure Active Directory (Azure AD).
 
-   To learn more about device groups, see . 
+   To learn more about device groups, see [Device groups in Defender for Business (preview)](mdb-create-edit-device-groups.md).
 
 8. On the **Configuration settings** tab, specify the settings for your policy, and then choose **Next**. For more information about the individual settings, see [Configuration settings for Microsoft Defender for Business (preview)](mdb-next-gen-configuration-settings.md).
 
