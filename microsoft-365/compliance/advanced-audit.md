@@ -66,7 +66,6 @@ Advanced Audit provides the following events:
 
 - [Other Advanced Audit events in Microsoft 365](#other-advanced-audit-events-in-microsoft-365)
 
-
 ### MailItemsAccessed
 
 The MailItemsAccessed event is a mailbox auditing action and is triggered when mail data is accessed by mail protocols and mail clients. This event can help investigators identify data breaches and determine the scope of messages that may have been compromised. If an attacker gained access to email messages, the MailItemsAccessed action will be triggered even if there is no explicit signal that messages were actually read (in other words, the type of access such as a bind or sync is recorded in the audit record).
