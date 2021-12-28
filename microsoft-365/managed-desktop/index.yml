@@ -12,6 +12,7 @@ metadata:
   author: jaimeo #Required; your GitHub user alias, with correct capitalization.
   ms.author: jaimeo #Required; microsoft alias of author; optional team alias.
   ms.date: 12/04/2020 #Required; mm/dd/yyyy format.
+  ms.custom: intro-hub-or-landing
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
