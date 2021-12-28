@@ -159,24 +159,24 @@ The email summary panel is a summarized view of the full email entity page. It c
 
 The email summary panel is divided into the following sections:  
 
-- Delivery details: Contains information about threats and corresponding confidence level, detection technologies, and original and latest delivery location.
+- *Delivery details*: Contains information about threats and corresponding confidence level, detection technologies, and original and latest delivery location.
 
-- Email details: Contains information about email properties like sender name, sender address, time received, authentication details, and other several other details.
+- *Email details*: Contains information about email properties like sender name, sender address, time received, authentication details, and other several other details.
 
-- URLs: By default, you will see 3 URLs and their corresponding threats. You can always click **View all URLs** to expand and see all URLs and export them.  
+- *URLs*: By default, you will see 3 URLs and their corresponding threats. You can always click **View all URLs** to expand and see all URLs and export them.  
 
-- Attachments: By default, you will see 3 attachments. You can always click **View all attachments** to expand and see all attachments. 
+- *Attachments*: By default, you will see 3 attachments. You can always click **View all attachments** to expand and see all attachments. 
 
-In addition to the above, you will also see sections specific to few experiences which are integrated with the Summary panel: 
+In addition to the above sections, you will also see sections specific to few experiences which are integrated with the summary panel: 
 
 - Submissions: 
 
-    - Result details 
+    - *Result details* 
 
-    - Submission details 
+    - *Submission details* 
 
 - Quarantine:  
 
-    - Quarantine details 
+    - *Quarantine details* 
 
-    - Quarantine actions 
+    - *Quarantine actions* 
