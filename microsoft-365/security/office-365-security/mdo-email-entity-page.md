@@ -147,3 +147,36 @@ Users will see enriched detonation details for known malicious attachments or UR
   - None: Indicates that no DMARC TXT record exists for the sending domain in DNS.
 
 *Composite Authentication*: This is a value used by Microsoft 365 to combine email authentication like SPF, DKIM, and DMARC, to determine if the message is authentic. It uses the *From:* domain of the mail as the basis of evaluation.
+
+### Email summary panel
+
+The email summary panel is a summarized view of the full email entity page. It contains standardized details about the email (e.g., detections), as well as context-specific information (e.g., for Quarantine or Submissions metadata). The email summary panel replaces the traditional Real-time Detections, Threat Explorer, Submissions, and Reporting flyouts.
+
+[image]
+
+> [!NOTE]
+> To view all the components, click on the **Open Email entity** link to open the full email entity page.  
+
+The email summary panel is divided into the following sections:  
+
+- Delivery details: Contains information about threats and corresponding confidence level, detection technologies, and original and latest delivery location.
+
+- Email details: Contains information about email properties like sender name, sender address, time received, authentication details, and other several other details.
+
+- URLs: By default, you will see 3 URLs and their corresponding threats. You can always click **View all URLs** to expand and see all URLs and export them.  
+
+- Attachments: By default, you will see 3 attachments. You can always click **View all attachments** to expand and see all attachments. 
+
+In addition to the above, you will also see sections specific to few experiences which are integrated with the Summary panel: 
+
+- Submissions: 
+
+    - Result details 
+
+    - Submission details 
+
+- Quarantine:  
+
+    - Quarantine details 
+
+    - Quarantine actions 
