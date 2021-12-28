@@ -39,11 +39,12 @@ For information on other tables in the advanced hunting schema, see [the advance
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
 | `DeviceId` | `string` | Unique identifier for the machine in the service |
-| `SoftwareName` | `string` | Name of the software product |
 | `SoftwareVendor` | `string` | Name of the software publisher |
+| `SoftwareName` | `string` | Name of the software product |
 | `SoftwareVersion` | `string` | Version number of the software product |
-| `DiskPaths` | `string` | Disk paths where file-level evidence indicating the existence of the software on a device was detected |
-| `RegistryPaths` | `string` | Registry paths where evidence indicating the existence of the software on a device was detected |
+| `RegistryPaths` | `dynamic` | Registry paths where evidence indicating the existence of the software on a device was detected |
+| `DiskPaths` | `dynamic` | Disk paths where file-level evidence indicating the existence of the software on a device was detected |
+
 
 
 
