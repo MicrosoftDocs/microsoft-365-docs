@@ -7,8 +7,8 @@ ms.reviewer: ssquires, toresing
 audience: admin
 ms.topic: landing-page
 ms.custom: 
-    - intro-hub-or-landing
-    - intro-overview
+- intro-overview
+- intro-get-started
 ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
