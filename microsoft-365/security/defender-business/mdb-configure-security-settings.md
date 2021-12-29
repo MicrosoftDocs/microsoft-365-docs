@@ -31,15 +31,15 @@ There are other settings you can configure in Defender for Business (preview) as
 
 ## What to do
 
+1. [Get a quick overview of default security policies in Defender for Business](#default-policies-in-defender-for-business)
 
+2. [Choose where to manage your security policies and devices](#choose-where-to-manage-security-policies-and-devices).
 
-1. [Choose where to manage your security settings and policies](#choose-where-to-manage-security-settings-and-policies).
+3. [View your security policies](#view-your-security-policies). 
 
-2. [View your security settings and policies](#view-your-security-settings-and-policies). 
+4. 
 
-3. 
-
-4. [Proceed to your next steps](#next-steps).
+5. [Proceed to your next steps](#next-steps).
 
 ## Default policies in Defender for Business
 
@@ -50,7 +50,7 @@ Defender for Business (preview) includes default policies that use recommended s
 
 You can apply your default policies to Windows client devices during your initial setup process. You can also define new policies and edit existing policies to suit your business needs. 
 
-## Choose where to manage security settings and policies
+## Choose where to manage security policies and devices
 
 Defender for Business (preview) features a [simplified configuration process](mdb-simplified-configuration.md) that helps streamline the setup and configuration process. If you select the simplified configuration process, you can view and manage your security policies in the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)). However, you're not limited to this option. If you've been using Microsoft Endpoint Manager (which includes Microsoft Intune), or a non-Microsoft productivity solution to manage your security policies and devices, you can keep using your current solution.
 
@@ -64,9 +64,9 @@ When it comes to managing your security settings and policies, you can choose fr
 > [!TIP]
 > If you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview). To learn more, see [Get Microsoft Defender for Business (preview)](get-defender-business.md).
 
-## View your security settings and policies
+## View your security policies
 
-To view your security settings and policies, use one of the procedures in the following table:
+To view your security policies, use one of the procedures in the following table:
 <br/><br/>
 
 | Portal | Procedure |
@@ -74,22 +74,11 @@ To view your security settings and policies, use one of the procedures in the fo
 | Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) | 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. <br/><br/>2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system and policy type.<br/><br/>3. Select an operating system tab (such as **Windows clients**).<br/><br/>4. Expand a category (such as **Next-generation protection** or **Firewall**) to view your list of policies.<br/><br/>5. Select a policy to view more details about the policy. To make changes or to learn more about policy settings, see the following articles: <br/>- [View or edit device policies](mdb-view-edit-policies.md)<br/>- [Understand next-generation configuration settings](mdb-next-gen-configuration-settings.md)<br/>- [Firewall settings](mdb-firewall.md)  |
 | Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) | 1. Go to [https://endpoint.microsoft.com](https://endpoint.microsoft.com) and sign in. You're now in the Microsoft Endpoint Manager admin center.<br/><br/>2. Select **Endpoint security**.<br/><br/>3. Select a category, such as **Antivirus**, **Firewall**, **Endpoint detection and response**, or **Attack surface reduction** to view policies in that category. <br/><br/>To get help managing your security settings in Microsoft Endpoint Manager, start with [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security). |
 
-## Other settings to review in the Microsoft 365 Defender portal
+## View and edit other settings in the Microsoft 365 Defender portal
 
-In addition to security policies that are applied to devices, there are other settings you can configure in Defender for Business (preview). For example, you specify the time zone to use, and you can onboard (or offboard) devices. 
+In addition to security policies that are applied to devices, there are other settings you can view and edit in Defender for Business (preview). For example, you specify the time zone to use, and you can onboard (or offboard) devices. 
 
-### Access your settings in the Microsoft 365 Defender portal
-
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)), and sign in.
-
-2. Select **Settings**, and then select a category (such as **Security center**, **Microsoft 365 Defender**, or **Endpoints**).
-
-3. In the list of settings, select an item to view or edit.
-
-> [!NOTE]
-> You might see more settings in your tenant than are listed in this article. We are highlighting the settings that you should review in Defender for Business (preview).
-
-### Review settings for Defender for Business
+### Settings to review for Defender for Business
 
 The following table describes settings to view (and if necessary, edit) in Defender for Business (preview).
 
@@ -103,6 +92,17 @@ The following table describes settings to view (and if necessary, edit) in Defen
 | **Endpoints**  | **Email notifications** | Set up or edit your email notification rules. When vulnerabilities are detected or an alert is created, the recipients specified in your email notification rules will receive an email. [Learn more about email notifications](mdb-email-notifications.md). |
 | **Endpoints** > **Device management**  | **Onboarding** | Onboard devices to Defender for Business by using a downloadable script. To learn more, see [Onboard a device using a local script in Defender for Business](mdb-onboard-devices.md#onboard-a-device-using-a-local-script-in-defender-for-business).   |  
 | **Endpoints** > **Device management**  | **Offboarding** | Offboard (remove) devices from Defender for Business (preview). When you offboard a device, it no longer sends data to Defender for Business (preview), but data received prior to offboarding is retained. To learn more, see [Offboard a device](mdb-onboard-devices.md#what-if-i-want-to-offboard-a-device).  |
+
+### Access your settings in the Microsoft 365 Defender portal
+
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)), and sign in.
+
+2. Select **Settings**, and then select a category (such as **Security center**, **Microsoft 365 Defender**, or **Endpoints**).
+
+3. In the list of settings, select an item to view or edit.
+
+> [!NOTE]
+> You might see more settings in your tenant than are listed in this article. We are highlighting the settings that you should review in Defender for Business (preview).
 
 
 ## Next steps
