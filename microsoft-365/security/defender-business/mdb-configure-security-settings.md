@@ -78,6 +78,9 @@ To view your list of security policies, use one of the procedures in the followi
 
 In addition to security policies that are applied to devices, there are other settings you can view and edit in Defender for Business (preview). For example, you specify the time zone to use, and you can onboard (or offboard) devices. 
 
+> [!NOTE]
+> You might see more settings in your tenant than are listed in this article. We are highlighting the settings that you should review in Defender for Business (preview).
+
 ### Settings to review for Defender for Business
 
 The following table describes settings to view (and if necessary, edit) in Defender for Business (preview).
@@ -101,8 +104,6 @@ The following table describes settings to view (and if necessary, edit) in Defen
 
 3. In the list of settings, select an item to view or edit.
 
-> [!NOTE]
-> You might see more settings in your tenant than are listed in this article. We are highlighting the settings that you should review in Defender for Business (preview).
 
 ## Next steps
 
