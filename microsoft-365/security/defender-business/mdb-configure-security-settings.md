@@ -54,7 +54,7 @@ You can apply your default policies to Windows client devices during your initia
 
 Defender for Business (preview) features a [simplified configuration process](mdb-simplified-configuration.md) that helps streamline the setup and configuration process. If you select the simplified configuration process, you can view and manage your security policies in the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)). However, you're not limited to this option. If you've been using Microsoft Endpoint Manager (which includes Microsoft Intune), or a non-Microsoft productivity solution to manage your security policies and devices, you can keep using your current solution.
 
-When it comes to managing your security settings and policies, you can choose from several options, as described in the following table: <br/><br/>
+The following table can help you choose where to manage your security policies and devices. <br/><br/>
 
 | Option | Description |
 |:---|:---|
@@ -103,7 +103,6 @@ The following table describes settings to view (and if necessary, edit) in Defen
 
 > [!NOTE]
 > You might see more settings in your tenant than are listed in this article. We are highlighting the settings that you should review in Defender for Business (preview).
-
 
 ## Next steps
 
