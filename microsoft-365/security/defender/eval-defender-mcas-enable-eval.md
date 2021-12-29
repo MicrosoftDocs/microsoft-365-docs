@@ -32,10 +32,10 @@ This article is [Step 2 of 2](eval-defender-mcas-overview.md) in the process of 
 
 This article walks you through the process of accessing the Defender for Cloud Apps portal and configuring the necessary integration to collect cloud app traffic data.
 
-To discover cloud apps used in your environment, you can do one or both of the following:
+To discover cloud apps used in your environment, you can do implement or both of the following ways:
 
 - Get up and running quickly with Cloud Discovery by integrating with Microsoft Defender for Endpoint. This native integration enables you to immediately start collecting data on cloud traffic across your Windows 10 and Windows 11 devices, on and off your network.
-- To discover all cloud apps accessed by all devices connected to your network, deploy the Defender for Cloud Apps log collector on your firewalls and other proxies. This collects data from your endpoints and sends it to Defender for Cloud Apps for analysis. Defender for Cloud Apps natively integrates with some third-party proxies for even more capabilities.
+- To discover all cloud apps accessed by all devices connected to your network, deploy the Defender for Cloud Apps log collector on your firewalls and other proxies. This deployment helps collect data from your endpoints and sends it to Defender for Cloud Apps for analysis. Defender for Cloud Apps natively integrates with some third-party proxies for even more capabilities.
 
 This article includes guidance for both methods.
 
@@ -54,7 +54,7 @@ Use the following steps to set up Microsoft Defender for Cloud Apps.
 
 To verify licensing and to connect to the Defender for Cloud Apps portal, see [Quickstart: Get started with Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security).
 
-If you're not immediately able to connect to the portal, you might need to add the IP address to the allow list of your firewall. See [Basic setup for Defender for Cloud Apps](/cloud-app-security/general-setup).
+If you're not immediately able to connect to the portal, you might need to add the IP address to the allowlist of your firewall. See [Basic setup for Defender for Cloud Apps](/cloud-app-security/general-setup).
 
 If you're still having trouble, review [Network requirements](/cloud-app-security/network-requirements).
 
@@ -64,7 +64,7 @@ If you're still having trouble, review [Network requirements](/cloud-app-securit
 
 Microsoft Defender for Cloud Apps integrates with Microsoft Defender for Endpoint natively. The integration simplifies roll out of Cloud Discovery, extends Cloud Discovery capabilities beyond your corporate network, and enables device-based investigation. This integration reveals cloud apps and services being accessed from IT-managed Windows 10 and Windows 11 devices.
 
-If you've already set up Microsoft Defender for Endpoint, configuring integration with Defender for Cloud Apps is a toggle in Microsoft 365 Defender. After integration is turned on, you can return to the Defender for Cloud Apps portal and view rich data in the Cloud Discovery Dashboard.
+If you've already set up Microsoft Defender for Endpoint, configuring integration with Defender for Cloud Apps is a toggle at Microsoft 365 Defender. After integration is turned on, you can return to the Defender for Cloud Apps portal and view rich data in the Cloud Discovery Dashboard.
 
 To accomplish these tasks, see [Microsoft Defender for Endpoint integration with Microsoft Defender for Cloud Apps](/cloud-app-security/mde-integration).
 
