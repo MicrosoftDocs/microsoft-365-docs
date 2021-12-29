@@ -6,16 +6,16 @@ f1.keywords:
 - NOCSH
 manager: dougeby
 audience: ITPro
+description: Use Intune and Autopilot to enroll devices into management to ensure the apps running on them are compliant and to prevent corporate data leaks.
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-scenario
+- enroll devices into management
+- enroll devices with Intune
+- Intune mobile device platforms
 ms.custom: 
 keywords: 
-description: 
 ---
 
 # Step 2. Enroll devices into management with Intune
