@@ -39,13 +39,13 @@ To deploy the Windows security baselines for Intune, available for Windows 10 an
 
 For now, just deploy the most appropriate MDM security baseline. See [Manage security baseline profiles in Microsoft Intune ](/mem/intune/protect/security-baselines-configure)to create the profile and choose the baseline version.
 
-Later, when Microsoft Defender for Endpoint is set up and you’ve connected Intune, deploy the Defender for Endpoint baselines. This is covered in the next article in this series: [Step 6. Monitor device risk and compliance to security baselines](manage-devices-with-intune-monitor-risk.md).
+Later, when Microsoft Defender for Endpoint is set up and you’ve connected Intune, deploy the Defender for Endpoint baselines. This topic is covered in the next article in this series: [Step 6. Monitor device risk and compliance to security baselines](manage-devices-with-intune-monitor-risk.md).
 
 It is important to understand that these security baselines are not CIS or NIST compliant but closely mirror their recommendations. For more information, see [Are the Intune security baselines CIS or NIST compliant](/mem/intune/protect/security-baselines)?
 
 ## Customize configuration profiles for your organization
 
-In addition to deploying the pre-configured baselines, many enterprise-scale organizations implement configuration profiles for more granular control. This helps reduce the dependency on Group Policy Objects in the on-premises Active Directory environment and move security controls to the cloud. 
+In addition to deploying the pre-configured baselines, many enterprise-scale organizations implement configuration profiles for more granular control. This configuration helps reduce the dependency on Group Policy Objects in the on-premises Active Directory environment and move security controls to the cloud. 
 
 The many settings you can configure by using configuration profiles can be grouped into four categories, as illustrated below.
 
