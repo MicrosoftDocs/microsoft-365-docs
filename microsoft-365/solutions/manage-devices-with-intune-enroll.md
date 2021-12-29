@@ -26,7 +26,7 @@ Whether a device is a personally owned BYOD device or a corporate-owned and full
 
 The device enrollment process establishes a relationship between the user, the device, and the Microsoft Intune service. Using Microsoft Intune as a standalone service enables you to use a single web-based administration console to manage Windows PCs, macOS, and the most popular mobile device platforms.
 
-This article recommends methods for enrolling devices into management using Intune. For more information about these methods and how to deploy each one, see [Deployment guidance: Enroll devices in Microsoft Intune](/microsoft-365/security/defender/eval-overview?view=o365-worldwide).
+This article recommends methods for enrolling devices into management using Intune. For more information about these methods and how to deploy each one, see [Deployment guidance: Enroll devices in Microsoft Intune](/microsoft-365/security/defender/eval-overview).
 
 ![Steps for managing devices](../media/devices/intune-mdm-steps-1.png#lightbox)
 
