@@ -88,10 +88,10 @@ The following table describes settings to view (and if necessary, edit) in Defen
 |:---|:---|:---|
 | **Security center** | **Time zone** | Select the time zone to be used for the dates and times displayed in incidents, detected threats, and automated investigation & remediation. You can either use UTC or your local time zone (*recommended*).  |
 | **Microsoft 365 Defender** | **Account** | View details, such where your data is stored, your tenant ID, and your company (org) ID. |
-|  | **Preview features**  | Turn on preview features to try upcoming features and new capabilities. You can be among the first to preview new features and provide feedback. |
+| **Microsoft 365 Defender**  | **Preview features**  | Turn on preview features to try upcoming features and new capabilities. You can be among the first to preview new features and provide feedback. |
 | **Endpoints**  | **Email notifications** | Set up or edit your email notification rules. When vulnerabilities are detected or an alert is created, the recipients specified in your email notification rules will receive an email. [Learn more about email notifications](mdb-email-notifications.md). |
-| **Endpoints** > **Device management**  | **Onboarding** | Onboard devices to Defender for Business by using a downloadable script. To learn more, see [Onboard a device using a local script in Defender for Business](mdb-onboard-devices.md#onboard-a-device-using-a-local-script-in-defender-for-business).   |  
-| **Endpoints** > **Device management**  | **Offboarding** | Offboard (remove) devices from Defender for Business (preview). When you offboard a device, it no longer sends data to Defender for Business (preview), but data received prior to offboarding is retained. To learn more, see [Offboard a device](mdb-onboard-devices.md#what-if-i-want-to-offboard-a-device).  |
+| **Endpoints**   | **Device management** > **Onboarding** | Onboard devices to Defender for Business by using a downloadable script. To learn more, see [Onboard a device using a local script in Defender for Business](mdb-onboard-devices.md#onboard-a-device-using-a-local-script-in-defender-for-business).   |  
+| **Endpoints**  |  **Device management** > **Offboarding** | Offboard (remove) devices from Defender for Business (preview). When you offboard a device, it no longer sends data to Defender for Business (preview), but data received prior to offboarding is retained. To learn more, see [Offboard a device](mdb-onboard-devices.md#what-if-i-want-to-offboard-a-device).  |
 
 ### Access your settings in the Microsoft 365 Defender portal
 
