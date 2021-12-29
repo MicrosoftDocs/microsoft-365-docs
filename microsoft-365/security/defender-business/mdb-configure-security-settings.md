@@ -66,7 +66,7 @@ The following table can help you choose where to manage your security policies a
 
 ## View your security policies
 
-To view your security policies, use one of the procedures in the following table:
+To view your list of security policies, use one of the procedures in the following table:
 <br/><br/>
 
 | Portal | Procedure |
