@@ -16,6 +16,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
+ms.custom: intro-overview
 ---
 
 # Overview of Microsoft Defender for Business (preview)
