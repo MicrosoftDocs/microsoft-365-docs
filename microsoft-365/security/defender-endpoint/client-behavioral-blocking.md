@@ -1,6 +1,6 @@
 ---
 title: Client behavioral blocking
-description: Client behavioral blocking is part of behavioral blocking and containment capabilities in Microsoft Defender for Endpoint
+description: Client behavioral blocking is part of behavioral blocking and containment capabilities at Microsoft Defender for Endpoint
 keywords: behavioral blocking, rapid protection, client behavior, Microsoft Defender for Endpoint
 ms.pagetype: security
 author: denisebmsft

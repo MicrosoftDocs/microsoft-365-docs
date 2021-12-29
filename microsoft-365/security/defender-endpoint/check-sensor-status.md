@@ -1,5 +1,5 @@
 ---
-title: Check the health state of the sensor in Microsoft Defender for Endpoint
+title: Check the health state of the sensor at Microsoft Defender for Endpoint
 description: Check the sensor health on devices to identify which ones are misconfigured, inactive, or aren't reporting sensor data.
 keywords: sensor, sensor health, misconfigured, inactive, no sensor data, sensor data, impaired communications, communication
 ms.prod: m365-security
@@ -17,7 +17,7 @@ ms.date: 04/24/2018
 ms.technology: mde
 ---
 
-# Check sensor health state in Microsoft Defender for Endpoint
+# Check sensor health state at Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
