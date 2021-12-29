@@ -13,7 +13,8 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-- M365-Lighthouse                         
+- M365-Lighthouse   
+- intro-get-started                      
 search.appverid: MET150
 description: "For Managed Service Providers (MSPs), learn how to sign up for Microsoft 365 Lighthouse."
 ---

@@ -7,6 +7,7 @@ author: jaimeo
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
+ms.custom: intro-get-started
 ms.localizationpriority: medium
 ---
 
