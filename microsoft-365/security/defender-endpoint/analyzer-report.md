@@ -42,10 +42,10 @@ Use the following example to understand the report.
 
     :::image type="content" source="images/85f56004dc6bd1679c3d2c063e36cb80.png" alt-text="The Check Results Summary page" lightbox="images/85f56004dc6bd1679c3d2c063e36cb80.png":::
 
--   On **Check Results Summary** you'll have an aggregated count for error,
+-   On **Check Results Summary**, you'll have an aggregated count for error,
     warning, or informational events detected by the analyzer.
 
--   On **Detailed Results** you'll see a list (sorted by severity) with
+-   On **Detailed Results**, you'll see a list (sorted by severity) with
     the results and the guidance based on the observations made by the analyzer.
 
 ## Open a support ticket to Microsoft and include the Analyzer results

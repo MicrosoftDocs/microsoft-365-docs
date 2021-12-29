@@ -17,7 +17,7 @@ ms.date: 01/14/2020
 ms.technology: mde
 ---
 
-# Understand the advanced hunting schema in Microsoft Defender for Endpoint
+# Understand the advanced hunting schema at Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ While constructing queries, use the built-in schema reference to quickly get the
 
 - **Tables description**: Type of data contained in the table and the source of that data.
 - **Columns**: All the columns in the table.
-- **Action types**: Possible values in the `ActionType` column representing the event types supported by the table. This is provided only for tables that contain event information.
+- **Action types**: Possible values in the `ActionType` column representing the event types supported by the table. These values are provided only for tables that contain event information.
 - **Sample query**: Example queries that feature how the table can be utilized.
 
 ### Access the schema reference
@@ -76,7 +76,7 @@ Table and column names are also listed within the Microsoft Defender Security Ce
 |
 
 > [!TIP]
-> Use [advanced hunting in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) to hunt for threats using data from Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity. [Turn on Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
+> Use [advanced hunting at Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) to hunt for threats using data from Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity. [Turn on Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
 
 Learn more about how to move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
 

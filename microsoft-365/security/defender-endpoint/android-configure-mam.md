@@ -32,11 +32,11 @@ ms.technology: mde
 
 Microsoft Defender for Endpoint on Android, which already protects enterprise users on Mobile Device Management (MDM) scenarios, now extends support to Mobile App Management (MAM), for devices that are not enrolled using Intune mobile device management (MDM). It also extends this support to customers who use other enterprise mobility management solutions, while still using Intune for mobile application management (MAM).This capability allows you to manage and protect your organization's data within an application.
 
-Microsoft Defender for Endpoint on Android threat information is leveraged by Intune App Protection Policies to protect these apps. App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. A managed application has app protection policies applied to it and can be managed by Intune.  
+Microsoft Defender for Endpoint on Android threat information is applied by Intune App Protection Policies to protect these apps. App protection policies (APP) are rules that ensure an organization's data remains safe or contained in a managed app. A managed application has app protection policies applied to it and can be managed by Intune.  
 
 Microsoft Defender for Endpoint on Android supports both the configurations of MAM
 - **Intune MDM + MAM**: IT administrators can only manage apps using App Protection Policies on devices that are enrolled with Intune mobile device management (MDM).
-- **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using [App Protection Policies](/mem/intune/app/app-protection-policy) on devices not enrolled with Intune MDM. This means apps can be managed by Intune on devices enrolled with third-party EMM providers. 
+- **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using [App Protection Policies](/mem/intune/app/app-protection-policy) on devices not enrolled with Intune MDM. This provision means that apps can be managed by Intune on devices enrolled with third-party EMM providers. 
 To manage apps using in both the above configurations customers should use Intune in the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
 
 To enable this capability an administrator needs to configure the connection between Microsoft Defender for Endpoint and Intune, create the app protection policy, and apply the policy on targeted devices and applications. 
@@ -84,7 +84,7 @@ App protection policies (APP) are rules that ensure an organization's data remai
 
 2. Add apps <br>
     a. Choose how you want to apply this policy to apps on different devices. Then add at least one app. <br>
-    Use this option to specify whether this policy applies to unmanaged devices. In case of Android, you can specify the policy applies to Android Enterprise, Device Admin, or Unmanaged devices. You can also choose to target your policy to apps on devices of any management state.
+    Use this option to specify whether this policy applies to unmanaged devices. In Android, you can specify the policy applies to Android Enterprise, Device Admin, or Unmanaged devices. You can also choose to target your policy to apps on devices of any management state.
 Because mobile app management doesn't require device management, you can protect company data on both managed and unmanaged devices. The management is centered on the user identity, which removes the requirement for device management. Companies can use app protection policies with or without MDM at the same time. For example, consider an employee that uses both a phone issued by the company, and their own personal tablet. The company phone is enrolled in MDM and protected by app protection policies while the personal device is protected by app protection policies only.
 
     b. Select Apps<br>
@@ -106,13 +106,13 @@ Select **Setting > Max allowed device threat level** in **Device Conditions** an
     :::image type="content" source="images/assignment.png" alt-text="The Included groups pane in the Microsoft 365 Defender portal" lightbox="images/assignment.png":::
 
 
-## End user prerequisites
-- The broker app needs to be installed
+## End-user prerequisites
+- The broker app must be installed
     - Intune Company Portal
     
-- Users have the required licenses for the managed app and has the app installed
+- Users have the required licenses for the managed app and have the app installed
 
-### End user onboarding 
+### End-user onboarding 
 
 1. Sign in to a managed application, for example, Outlook. The device is registered and the application protection policy is synchronized to the device. The application protection policy recognizes the device's health state.  
 

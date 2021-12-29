@@ -1,7 +1,7 @@
 ---
-title: Configure advanced features in Microsoft Defender for Endpoint
-description: Turn on advanced features such as block file in Microsoft Defender for Endpoint.
-keywords: advanced features, settings, block file, automated investigation, auto-resolve, skype, microsoft defender for identity, office 365, azure information protection, intune
+title: Configure advanced features at Microsoft Defender for Endpoint
+description: Turn on advanced features such as block file at Microsoft Defender for Endpoint.
+keywords: advanced features, settings, block file, automated investigation, auto resolve, skype, microsoft defender for identity, office 365, azure information protection, intune
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -61,11 +61,11 @@ Enabling this feature allows you to run unsigned scripts in a live response sess
 
 Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software, which might be unexpected or unwanted.
 
-Turn on this feature so that potentially unwanted applications (PUA) are remediated on all devices in your tenant even if PUA protection is not configured on the devices. This will help protect users from inadvertently installing unwanted applications on their device. When turned off, remediation is dependent on the device configuration.
+Turn on this feature so that potentially unwanted applications (PUA) are remediated on all devices in your tenant even if PUA protection is not configured on the devices. This activation of the feature helps to protect users from inadvertently installing unwanted applications on their device. When turned off, remediation is dependent on the device configuration.
 
 ## Restrict correlation to within scoped device groups
 
-This configuration can be used for scenarios where local SOC operations would like to limit alert correlations only to device groups that they can access. By turning on this setting, an incident composed of alerts that cross device groups will no longer be considered a single incident. The local SOC can then take action on the incident because they have access to one of the device groups involved. However, global SOC will see several different incidents by device group instead of one incident. We don't recommend turning on this setting unless doing so outweighs the benefits of incident correlation across the entire organization.
+This configuration can be used for scenarios where local SOC operations would like to limit alert correlations only to device groups that they can access. By turning on this setting, an incident composed of alerts that cross-device groups will no longer be considered a single incident. The local SOC can then take action on the incident because they have access to one of the device groups involved. However, global SOC will see several different incidents by device group instead of one incident. We don't recommend turning on this setting unless doing so outweighs the benefits of incident correlation across the entire organization.
 
 > [!NOTE]
 > Changing this setting impacts future alert correlations only.
@@ -76,7 +76,7 @@ Endpoint detection and response (EDR) in block mode provides protection from mal
 
 ## Autoresolve remediated alerts
 
-For tenants created on or after Windows 10, version 1809, the automated investigation, and remediation capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated". If you don't want to have alerts auto-resolved, you'll need to manually turn off the feature.
+For tenants created on or after Windows 10, version 1809, the automated investigation, and remediation capability is configured by default to resolve alerts where the automated analysis result status is "No threats found" or "Remediated". If you don't want to have alerts auto resolved, you'll need to manually turn off the feature.
 
 > [!TIP]
 > For tenants created prior to that version, you'll need to manually turn this feature on from the [Advanced features](https://security.microsoft.com//preferences2/integration) page.
@@ -123,7 +123,7 @@ During some kinds of cyber attacks, bad actors try to disable security features,
 
 Tamper protection essentially locks Microsoft Defender Antivirus and prevents your security settings from being changed through apps and methods.
 
-This feature is available if your organization uses Microsoft Defender Antivirus and Cloud-based protection is enabled. For more information, see [Use next-generation technologies in Microsoft Defender Antivirus through cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md).
+This feature is available if your organization uses Microsoft Defender Antivirus and Cloud-based protection is enabled. For more information, see [Use next-generation technologies at Microsoft Defender Antivirus through cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md).
 
 Keep tamper protection turned on to prevent unwanted changes to your security solution and its essential features.
 
@@ -139,7 +139,7 @@ For more information, see [Investigate a user account](investigate-user.md).
 
 ## Skype for Business integration
 
-Enabling the Skype for Business integration gives you the ability to communicate with users using Skype for Business, email, or phone. This can be handy when you need to communicate with the user and mitigate risks.
+Enabling the Skype for Business integration gives you the ability to communicate with users using Skype for Business, email, or phone. This activation can be handy when you need to communicate with the user and mitigate risks.
 
 > [!NOTE]
 > When a device is being isolated from the network, there's a pop-up where you can choose to enable Outlook and Skype communications which allows communications to the user while they are disconnected from the network. This setting applies to Skype and Outlook communication when devices are in isolation mode.
@@ -182,7 +182,7 @@ Forwards Microsoft Defender for Endpoint signals to Microsoft Secure Score in th
 
 ### Enable the Microsoft Defender for Endpoint integration from the Microsoft Defender for Identity portal
 
-To receive contextual device integration in Microsoft Defender for Identity, you'll also need to enable the feature in the Microsoft Defender for Identity portal.
+To receive contextual device integration at Microsoft Defender for Identity, you'll also need to enable the feature in the Microsoft Defender for Identity portal.
 
 1. Log in to the [Microsoft Defender for Identity portal](https://portal.atp.azure.com/) with a Global Administrator or Security Administrator role.
 
@@ -209,7 +209,7 @@ Defender for Endpoint can be integrated with [Microsoft Intune](/intune/what-is-
 > [!IMPORTANT]
 > You'll need to enable the integration on both Intune and Defender for Endpoint to use this feature. For more information on specific steps, see [Configure Conditional Access in Defender for Endpoint](configure-conditional-access.md).
 
-This feature is only available if you've the following:
+This feature is only available if you've the following prerequisites:
 
 - A licensed tenant for Enterprise Mobility + Security E3, and Windows E5 (or Microsoft 365 Enterprise E5)
 - An active Microsoft Intune environment, with Intune-managed Windows devices [Azure AD-joined](/azure/active-directory/devices/concept-azure-ad-join/).
