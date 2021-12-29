@@ -1,7 +1,7 @@
 ---
 title: CloudAppEvents table in the advanced hunting schema
 description: Learn about events from cloud apps and services in the CloudAppEvents table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, CloudAppEvents, Cloud App Security, MCAS
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, CloudAppEvents, Defender for Cloud Apps
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -45,7 +45,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Application` | `string` | Application that performed the recorded action |
 | `ApplicationId` | `string` | Unique identifier for the application |
 | `AccountObjectId` | `string` | Unique identifier for the account in Azure Active Directory |
-| `AccountId` | `string` | An identifier for the account as found by Microsoft Cloud App Security. Could be Azure Active Directory ID, user principal name, or other identifiers. |
+| `AccountId` | `string` | An identifier for the account as found by Microsoft Defender for Cloud Apps. Could be Azure Active Directory ID, user principal name, or other identifiers. |
 | `AccountDisplayName` | `string` | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
 | `IsAdminOperation` | `string` | Indicates whether the activity was performed by an administrator |
 | `DeviceType` | `string` | Type of device based on purpose and functionality, such as "Network device", "Workstation", "Server", "Mobile", "Gaming console", or "Printer" | 
