@@ -22,8 +22,6 @@ description: "Learn about Customer Lockbox requests that allow you to control ho
 
 # Customer Lockbox in Office 365
 
-
-
 This article provides deployment and configuration guidance for Customer Lockbox. Customer Lockbox supports requests to access data in Exchange Online, SharePoint Online, and OneDrive for Business. To recommend support for other services, submit a request at [Office 365 UserVoice](https://office365.uservoice.com/).
 
 To see the options for licensing your users to benefit from Microsoft 365 compliance offerings, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
@@ -103,47 +101,52 @@ You can turn on Customer Lockbox controls in the Microsoft 365 admin center. Whe
 
 ## Auditing Customer Lockbox requests
 
-Audit records that correspond to the Customer Lockbox requests are logged in the audit log. You can access these logs by using the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Security & Compliance Center. Actions related to accepting or denying a Customer Lockbox request and actions performed by Microsoft engineers (when access requests are approved) are also logged in the audit log. You can search for and review these audit records.
+Audit records that correspond to the Customer Lockbox requests are logged in the audit log. You can access these logs by using the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft 365 compliance center. Actions related to accepting or denying a Customer Lockbox request and actions performed by Microsoft engineers (when access requests are approved) are also logged in the audit log. You can search for and review these audit records.
 
 ### Search the audit log for activity related to Customer Lockbox requests
 
-Before you can use the audit log to track requests for Customer Lockbox, there are some steps you need to take to set up audit logging. For more information, see [Search the audit log in the Security & Compliance Center](/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin). Once you've completed setup, use these steps to create an audit log search query to return audit records related to Customer Lockbox:
+Before you can use the audit log to track requests for Customer Lockbox, there are some steps you need to take to set up audit logging, including assigning permissions to search the audit log. For more information, see [Set up Basic Audit in Microsoft 365](set-up-basic-audit.md). Once you've completed the setup, use these steps to create an audit log search query to return audit records related to Customer Lockbox:
 
-1. Go to [Security & compliance](https://protection.office.com).
+1. Go to <https://compliance.microsoft.com>.
   
-2. Sign in using your work or school account.
+2. Sign in using using an account that has been assigned the appropriate permissions to search the audit log.
 
-3. In the left pane of the Security & Compliance Center, choose **Search & investigation** > **Audit log search**.
+3. In the left pane of the compliance center, choose **Audit**.
 
-    The **Audit log search** page displays.
+    The **Search** tab on the **Audit** page is displayed.
 
     ![Audit log search page.](../media/auditlogsearch1.png)
   
 4. Configure the following search criteria:
 
-    1. **Activities** - Leave this field blank so that the search returns audit records for all activities. This is necessary to return any audit records related to Customer Lockbox requests and corresponding activity performed by Microsoft engineers.
+   1. **Start date** and **End date**. Select a date and time range to display the events that occurred within that period.  
 
-    1. **Start date** and **End date** - Select a date and time range to display the events that occurred within that period.
+   2. **Activities**. Leave this field blank so that the search returns audit records for all activities. This is necessary to return any audit records related to Customer Lockbox requests and corresponding activity performed by Microsoft engineers.
 
-    1. **Users** - Leave this field blank.
+   3. **Users**. Leave this field blank.
 
-    1. **File, folder, or site** - Leave this field blank.
+   4. **File, folder, or site**. Leave this field blank.
 
 5. Click **Search** to run the search using your search criteria.
 
-    The search results are loaded, and after a few moments they are displayed under **Results** on the **Audit log search** page.
+    The search results are loaded, and after a few moments they are displayed. More search results will be added to the page until the search is complete.
 
-6. Click **Filter results** on the search results page, and do one of the following things:
+6. Click the header in the **Activity** column to sort the results alphabetically using the values in the **Activity** column.
 
-   - To display audit records related to an approver in your organization approving or denying a Customer Lockbox request: In the box under the **Activity** column, type **Set-AccessToCustomerDataRequest**.
+7. Scroll down and look for audit records with an activity of **Set-AccessToCustomerDataRequest**. Records with this activity are related to an approver in your organization approving or denying a Customer Lockbox request. Look for the value of **Microsoft Operator**.
 
-   - To display audit records related to a Microsoft engineer performing actions in response to an approved Customer Lockbox request: In the box under the **User** column, type **Microsoft Operator**. The **Activity** column displays the action performed by the engineer.
+8. Alternatively, click the the header in the **User** column to sort the results alphabetically using the values in the **User** column. Look for the value of **Microsoft Operator**, which indicates activities performed by a Microsoft engineer in response to an approved Customer Lockbox request. The **Activity** column displays the action performed by the engineer. Look for the value of **Microsoft Operator**.
 
       ![Filter on "Microsoft Operator" to display audit records](../media/CustomerLockbox10.png)
 
-7. In the list of results, click an audit record to display it.
+9. In the list of results, click an audit record to display it.
 
-### Audit record for a Customer Lockbox access request
+### Export the audit log search results
+
+
+
+
+## Audit record for a Customer Lockbox access request
 
 When a person in your organization approves or denies a Customer Lockbox request, an audit record is logged in the audit log. This record contains the following information.
 
