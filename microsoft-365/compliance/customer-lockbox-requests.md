@@ -109,7 +109,7 @@ Before you can use the audit log to track requests for Customer Lockbox, there a
 
 1. Go to <https://compliance.microsoft.com>.
   
-2. Sign in using using an account that has been assigned the appropriate permissions to search the audit log.
+2. Sign in using an account that has been assigned the appropriate permissions to search the audit log.
 
 3. In the left pane of the compliance center, choose **Audit**.
 
@@ -135,7 +135,7 @@ Before you can use the audit log to track requests for Customer Lockbox, there a
 
 7. Scroll down and look for audit records with an activity of **Set-AccessToCustomerDataRequest**. Records with this activity are related to an approver in your organization approving or denying a Customer Lockbox request. Look for the value of **Microsoft Operator**.
 
-8. Alternatively, click the the header in the **User** column to sort the results alphabetically using the values in the **User** column. Look for the value of **Microsoft Operator**, which indicates activities performed by a Microsoft engineer in response to an approved Customer Lockbox request. The **Activity** column displays the action performed by the engineer. Look for the value of **Microsoft Operator**.
+8. Alternatively, click the header in the **User** column to sort the results alphabetically using the values in the **User** column. Look for the value of **Microsoft Operator**, which indicates activities performed by a Microsoft engineer in response to an approved Customer Lockbox request. The **Activity** column displays the action performed by the engineer. Look for the value of **Microsoft Operator**.
 
       ![Filter on "Microsoft Operator" to display audit records](../media/CustomerLockbox10.png)
 
@@ -143,8 +143,33 @@ Before you can use the audit log to track requests for Customer Lockbox, there a
 
 ### Export the audit log search results
 
+You can also export the audit log search results to a CSV file and then open the file in Excel to use the filtering and sorting capabilities to make it easier to find and view audit records related to a Customer Lockbox access request.
 
+To export audit records, use the previous steps to search the audit log. At the top of the search results page, select **Export > Download all results**. When the export process is complete, you can download the CSV file to your local computer. For instructions, see [Export, configure, and view audit log records](export-view-audit-log-records.md).
 
+After you download the file, you can open it in Excel and then filter on the **Operations** to display audit records for **Set-AccessToCustomerDataRequest** activities or filter on the **UserIds** column to display audit records for activities performed by Microsoft engineers.
+
+### Use PowerShell to search and export audit records
+
+An alternative to using the audit search tool in the Microsoft 365 compliance center is to run the [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) cmdlet in Exchange Online PowerShell. One advantage of using PowerShell is that you can specifically search for **Set-AccessToCustomerDataRequest** activities or activities performed by Microsoft engineers related to a Customer Lockbox request.
+
+After you [connect to Exchange Online Powershell](/powershell/exchange/connect-to-exchange-online-powershell), run one of the following commands. Replace the placeholders with a specific date range.
+
+#### Search for Set-AccessToCustomerDataRequest activities
+
+```powershell
+Search-UnifiedAuditLog -StartDate xx/xx/xxxx -EndDate xx/xx/xxxx -Operations Set-AccessToCustomerDataRequest
+```
+
+#### Search for activities performed by Microsoft engineers
+
+```powershell
+Search-UnifiedAuditLog -StartDate xx/xx/xxxx -EndDate xx/xx/xxxx -UserIds "Microsoft Operator"
+```
+
+For more information, see [Use PowerShell to search and export audit log records](export-view-audit-log-records.md#use-powershell-to-search-and-export-audit-log-records).
+
+We've also provided a PowerShell script that you can use to search the audit log and export the results to a CSV file. For more information, see [Use a PowerShell script to search the audit log](audit-log-search-script.md).
 
 ## Audit record for a Customer Lockbox access request
 
@@ -171,7 +196,7 @@ The actions performed by a Microsoft engineer after a Customer Lockbox request i
 
 | Audit record property| Description|
 |:---------- |:----------|
-| Date       | Date time when the action was performed. Note that the time that this action was performed will be within 4 hours of when the Customer Lockbox request was approved.              |
+| Date       | Date time when the action was performed. The time that this action was performed will be within 4 hours of when the Customer Lockbox request was approved.              |
 | IP address | The IP Address of the machine Microsoft engineer used. |
 | User       | Microsoft Operator; this value indicates that this record is related to a Customer Lockbox request.                                  |
 | Activity   | Name of the activity performed by the Microsoft engineer.|
@@ -185,7 +210,7 @@ Customer Lockbox is currently supported in Exchange Online, SharePoint Online, a
 
 #### Is Customer Lockbox available to all customers?
 
-Customer Lockbox is included with the Microsoft 365 or Office 365 E5 subscriptions and can be added to other plans with an Information Protection and Compliance or an Advanced Compliance add-on subscription. Please see [Plans and pricing](https://products.office.com/business/office-365-enterprise-e5-business-software) for more information.
+Customer Lockbox is included with the Microsoft 365 or Office 365 E5 subscriptions and can be added to other plans with an Information Protection and Compliance or an Advanced Compliance add-on subscription. See [Plans and pricing](https://products.office.com/business/office-365-enterprise-e5-business-software) for more information.
 
 #### What is customer content?
 
