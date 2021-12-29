@@ -51,7 +51,7 @@ The following diagram illustrates building blocks to achieve a Zero Trust securi
 In this illustration: 
 
 
-|  |Step |Description  |Licensing requirements  |
+|&nbsp;|Step |Description  |Licensing requirements  |
 |---------|---------|---------|---------|
 |1     | Configure starting-point Zero Trust identity and device access policies       | Work with your identity administrator to [Implement Level 2 App Protection Policies (APP) data protection](manage-devices-with-intune-app-protection.md). These policies do not require that you manage devices. You configure the APP policies in Intune. Your identity admin configures a Conditional Access policy to require approved apps.          |E3, E5, F1, F3, F5    |
 |2     | Enroll devices into management       | This task requires more planning and time to implement. While you have a choice of tools and methods to accomplish this, [Step 3—Enroll devices into management](manage-devices-with-intune-enroll.md) guides you through the process using Intune with Autopilot and automated enrollment.      | E3, E5, F1, F3, F5        |
