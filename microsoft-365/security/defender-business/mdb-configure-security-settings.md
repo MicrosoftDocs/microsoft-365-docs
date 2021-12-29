@@ -35,9 +35,9 @@ There are other settings you can configure in Defender for Business (preview) as
 
 2. [Choose where to manage your security policies and devices](#choose-where-to-manage-security-policies-and-devices).
 
-3. [View your security policies](#view-your-security-policies). 
+3. [View your security policies](#view-your-security-policies).
 
-4. 
+4. [View and edit other settings in the Microsoft 365 Defender portal](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal) 
 
 5. [Proceed to your next steps](#next-steps).
 
