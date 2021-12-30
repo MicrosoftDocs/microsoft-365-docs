@@ -145,7 +145,7 @@ The following table lists the available products and their **ProductId**.
 
 • Enjoy around-the-clock support from Microsoft.
 
-## Purchase Project and Visio Plans through Microsoft 365 link
+## Microsoft 365 links to purchase Project and Visio plans
 
 > **Project Plan 1** Can be purchased by using this [Microsoft 365 link](https://www.microsoft.com/microsoft-365/project/project-plan-1?activetab=pivot:overviewtab)
 > 
