@@ -101,7 +101,7 @@ You can turn on Customer Lockbox controls in the Microsoft 365 admin center. Whe
 
 ## Auditing Customer Lockbox requests
 
-Audit records that correspond to the Customer Lockbox requests are logged in the audit log. You can access these logs by using the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft 365 compliance center. Actions related to accepting or denying a Customer Lockbox request and actions performed by Microsoft engineers (when access requests are approved) are also logged in the audit log. You can search for and review these audit records.
+Audit records that correspond to Customer Lockbox requests are logged in the Microsoft 365 audit log. You can access these logs by using the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Microsoft 365 compliance center. Actions related to accepting or denying a Customer Lockbox request and actions performed by Microsoft engineers (when access requests are approved) are also logged in the audit log. You can search for and review these audit records.
 
 ### Search the audit log for activity related to Customer Lockbox requests
 
@@ -129,13 +129,13 @@ Before you can use the audit log to track requests for Customer Lockbox, there a
 
 5. Click **Search** to run the search using your search criteria.
 
-    The search results are loaded, and after a few moments they are displayed. More search results will be added to the page until the search is complete.
+    The search results are displayed after a few moments. More search results will be added to the page until the search is complete.
 
-6. Click the header in the **Activity** column to sort the results alphabetically using the values in the **Activity** column.
+6. Click the header in the **Activity** column to sort the results alphabetically based on the values in the **Activity** column.
 
-7. Scroll down and look for audit records with an activity of **Set-AccessToCustomerDataRequest**. Records with this activity are related to an approver in your organization approving or denying a Customer Lockbox request. Look for the value of **Microsoft Operator**.
+7. Scroll down and look for audit records with an activity of **Set-AccessToCustomerDataRequest**. Records with this activity are related to an approver in your organization approving or denying a Customer Lockbox request.
 
-8. Alternatively, click the header in the **User** column to sort the results alphabetically using the values in the **User** column. Look for the value of **Microsoft Operator**, which indicates activities performed by a Microsoft engineer in response to an approved Customer Lockbox request. The **Activity** column displays the action performed by the engineer. Look for the value of **Microsoft Operator**.
+8. Alternatively, click the header in the **User** column to sort the results alphabetically using the values in the **User** column. Look for the value of **Microsoft Operator**, which indicates activities performed by a Microsoft engineer in response to an approved Customer Lockbox request. The **Activity** column displays the action performed by the engineer.
 
       ![Filter on "Microsoft Operator" to display audit records](../media/CustomerLockbox10.png)
 
@@ -145,9 +145,12 @@ Before you can use the audit log to track requests for Customer Lockbox, there a
 
 You can also export the audit log search results to a CSV file and then open the file in Excel to use the filtering and sorting capabilities to make it easier to find and view audit records related to a Customer Lockbox access request.
 
-To export audit records, use the previous steps to search the audit log. At the top of the search results page, select **Export > Download all results**. When the export process is complete, you can download the CSV file to your local computer. For instructions, see [Export, configure, and view audit log records](export-view-audit-log-records.md).
+To export audit records, use the previous steps to search the audit log. When the search is complete, select **Export > Download all results** at the top of the search results page. When the export process is complete, you can download the CSV file to your local computer. For more detailed instructions, see [Export, configure, and view audit log records](export-view-audit-log-records.md).
 
-After you download the file, you can open it in Excel and then filter on the **Operations** to display audit records for **Set-AccessToCustomerDataRequest** activities or filter on the **UserIds** column to display audit records for activities performed by Microsoft engineers.
+After you download the file, you can open it in Excel and then filter on the **Operations** column to display audit records for **Set-AccessToCustomerDataRequest** activities. You can also filter on the **UserIds** column (using the value **Microsoft Operator**) to display audit records for activities performed by Microsoft engineers.
+
+> [!NOTE]
+> When viewing audit records in the CSV file, additional information is contained in the **AuditData** column. The information in this column is contained in a JSON object, which contains multiple properties that are configured as *property:value* pairs separated by commas. You can use the JSON transform feature in the Power Query Editor in Excel to split each property in the JSON object in the **AuditData** column into multiple columns so that each property has its own column. This makes it easier to interpret this information. For detail instructions, see [Format the exported audit log using the Power Query Editor](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor).
 
 ### Use PowerShell to search and export audit records
 
@@ -173,7 +176,7 @@ We've also provided a PowerShell script that you can use to search the audit log
 
 ### Audit record for a Customer Lockbox request
 
-When a person in your organization approves or denies a Customer Lockbox request, an audit record is logged in the audit log. This record contains the following information.
+When a person in your organization approves or denies a Customer Lockbox request, the audit record is logged in the audit log contains the following information.
 
 | Audit record property| Description|
 |:---------- |:----------|
@@ -183,7 +186,7 @@ When a person in your organization approves or denies a Customer Lockbox request
 | Activity   | Set-AccessToCustomerDataRequest; this is the auditing activity that is logged when you approve or deny a Customer Lockbox request.                                |
 | Item       | The Guid of the Customer Lockbox request                             |
 
-The following screenshot shows an example of an audit log record that corresponds to an approved Customer Lockbox request. If a Customer Lockbox request was denied, then the value of **ApprovalDecision** parameter would be **Deny**.
+The following screenshot shows an example of an audit record that corresponds to an approved Customer Lockbox request. If a Customer Lockbox request was denied, then the value of **ApprovalDecision** parameter would be **Deny**.
 
 ![Audit record for an approved Customer Lockbox request.](../media/CustomerLockbox9.png)
 
