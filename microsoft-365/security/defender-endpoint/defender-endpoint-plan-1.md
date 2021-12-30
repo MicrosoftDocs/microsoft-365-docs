@@ -14,6 +14,7 @@ ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
+ms.custom: intro-overview
 ---
 
 # Overview of Microsoft Defender for Endpoint Plan 1
