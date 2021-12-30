@@ -282,6 +282,7 @@ Some data connectors are available in the US Government cloud. The following sec
 |Slack eDiscovery| Yes | No | No |
 |Symphony| Yes | No | No |
 |Text-delimited| Yes | No | No |
+|Twitter| Yes | No | No |
 |Webex Teams| Yes | No | No |
 |Webpages| Yes | No | No |
 |Workplace from Facebook| Yes | No | No |
