@@ -57,3 +57,6 @@ The **OneDrive for Business usage** report can be viewed for trends over the las
 |Active files  <br/> | The number of active files within the time period.<br/> NOTE: If files were removed during the specified time period for the report, the number of active files shown in the report may be larger than the current number of files in the OneDrive. >  Deleted users will continue to appear in reports for 180 days.  <br/> |
 |Storage used (MB)  <br/> |The amount of storage the OneDrive uses in MB. |
 |||
+
+> [!NOTE]
+> The OneDrive for Business usage report is only available for OneDrive for Business that are associated with users who have licenses.
