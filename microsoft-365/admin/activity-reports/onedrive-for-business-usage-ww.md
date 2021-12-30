@@ -59,4 +59,4 @@ The **OneDrive for Business usage** report can be viewed for trends over the las
 |||
    
 > [!NOTE]
-> The Email activity report is only available for mailboxes that are associated with users who have licenses.
+> The OneDrive for Business usage report is only available for OneDrive for Business that are associated with users who have licenses.
