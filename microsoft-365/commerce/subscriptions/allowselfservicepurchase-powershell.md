@@ -147,14 +147,13 @@ The following table lists the available products and their **ProductId**.
 
 ## Microsoft 365 links to purchase Project and Visio plans
 
-> **Project Plan 1** Can be purchased by using this [Microsoft 365 link](https://www.microsoft.com/microsoft-365/project/project-plan-1?activetab=pivot:overviewtab)
-> 
-> **Project Plan 3** Can be purchased by using this [Microsoft 365 link](https://www.microsoft.com/microsoft-365/project/project-plan-3?activetab=pivot:overviewtab)
-> 
-> **Visio Plan 1** Can be purchased by using this [Microsoft 365 link](https://www.microsoft.com/microsoft-365/visio/visio-plan-1?activetab=pivot:overviewtab)
-> 
-> **Visio Plan 2** Can be purchased by using this [Microsoft 365 link](https://www.microsoft.com/microsoft-365/visio/visio-plan-2?activetab=pivot:overviewtab)
-> 
+**Project Plan 1** can be purchased by using this [Microsoft 365 link](https://www.microsoft.com/microsoft-365/project/project-plan-1?activetab=pivot:overviewtab).
+
+**Project Plan 3** can be purchased by using this [Microsoft 365 link](https://www.microsoft.com/microsoft-365/project/project-plan-3?activetab=pivot:overviewtab).
+
+**Visio Plan 1** can be purchased by using this [Microsoft 365 link](https://www.microsoft.com/microsoft-365/visio/visio-plan-1?activetab=pivot:overviewtab).
+
+**Visio Plan 2** Can be purchased by using this [Microsoft 365 link](https://www.microsoft.com/microsoft-365/visio/visio-plan-2?activetab=pivot:overviewtab).
 
 ## View or set the status for AllowSelfServicePurchase
 
