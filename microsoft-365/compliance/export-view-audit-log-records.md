@@ -36,7 +36,7 @@ The first step is to search the audit log and then export the results in a comma
 
    This option exports all the audit records from the audit log search you ran in step 1, and adds the raw data from the audit log to a CSV file. It takes a while to prepare the download file for a large search. Large files will result when searching for all activities or using a wide date range.
 
-3. When the export process is complete, you can download the CSV file to your local computer.
+3. After the export process is complete, a message is displayed at the top of the window that prompts you to open the CSV file and save it to your local computer. You can also access the CSV file in the Downloads folder.
 
    > [!NOTE]
    > You can download a maximum of 50,000 entries to a CSV file from a single audit log search. If 50,000 entries are downloaded to the CSV file, you can probably assume there are more than 50,000 events that met the search criteria. To export more than this limit, try using a narrower date range to reduce the number of audit log records. You might have to run multiple searches with smaller date ranges to export more than 50,000 entries.
