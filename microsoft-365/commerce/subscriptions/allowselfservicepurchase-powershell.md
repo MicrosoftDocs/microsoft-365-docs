@@ -126,9 +126,9 @@ The following table lists the available products and their **ProductId**.
 
 • Choose from dozens of professional templates, starter diagrams, and shapes.
 
-• Access and edit Visio files directly inside Microsoft Teams.*
+• Access and edit Visio files directly inside Microsoft Teams.
 
-• Embed Visio diagrams into Power BI reports for unified perspectives.*
+• Embed Visio diagrams into Power BI reports for unified perspectives.
 
 • Store and share your work on the web and access it from almost anywhere.
 
