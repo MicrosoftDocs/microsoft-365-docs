@@ -153,7 +153,7 @@ After you download the file, you can open it in Excel and then filter on the **O
 
 An alternative to using the audit search tool in the Microsoft 365 compliance center is to run the [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) cmdlet in Exchange Online PowerShell. One advantage of using PowerShell is that you can specifically search for **Set-AccessToCustomerDataRequest** activities or activities performed by Microsoft engineers related to a Customer Lockbox request.
 
-After you [connect to Exchange Online Powershell](/powershell/exchange/connect-to-exchange-online-powershell), run one of the following commands. Replace the placeholders with a specific date range.
+After you [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), run one of the following commands. Replace the placeholders with a specific date range.
 
 #### Search for Set-AccessToCustomerDataRequest activities
 
@@ -167,11 +167,11 @@ Search-UnifiedAuditLog -StartDate xx/xx/xxxx -EndDate xx/xx/xxxx -Operations Set
 Search-UnifiedAuditLog -StartDate xx/xx/xxxx -EndDate xx/xx/xxxx -UserIds "Microsoft Operator"
 ```
 
-For more information, see [Use PowerShell to search and export audit log records](export-view-audit-log-records.md#use-powershell-to-search-and-export-audit-log-records).
+For more information and examples, see [Use PowerShell to search and export audit log records](export-view-audit-log-records.md#use-powershell-to-search-and-export-audit-log-records).
 
 We've also provided a PowerShell script that you can use to search the audit log and export the results to a CSV file. For more information, see [Use a PowerShell script to search the audit log](audit-log-search-script.md).
 
-## Audit record for a Customer Lockbox access request
+### Audit record for a Customer Lockbox request
 
 When a person in your organization approves or denies a Customer Lockbox request, an audit record is logged in the audit log. This record contains the following information.
 
@@ -187,9 +187,6 @@ The following screenshot shows an example of an audit log record that correspond
 
 ![Audit record for an approved Customer Lockbox request.](../media/CustomerLockbox9.png)
 
-> [!TIP]
-> To display more detailed information in an audit record, click **More information**.
-
 ### Audit record for an action performed by a Microsoft engineer
 
 The actions performed by a Microsoft engineer after a Customer Lockbox request is approved (and that may result in accessing customer content) are logged in the audit log. These records contain the following information.
@@ -198,7 +195,7 @@ The actions performed by a Microsoft engineer after a Customer Lockbox request i
 |:---------- |:----------|
 | Date       | Date time when the action was performed. The time that this action was performed will be within 4 hours of when the Customer Lockbox request was approved.              |
 | IP address | The IP Address of the machine Microsoft engineer used. |
-| User       | Microsoft Operator; this value indicates that this record is related to a Customer Lockbox request.                                  |
+| User       | Microsoft Operator; this value indicates the record is related to a Customer Lockbox request.                                  |
 | Activity   | Name of the activity performed by the Microsoft engineer.|
 | Item       | \<empty\>                                             |
 
@@ -232,7 +229,7 @@ Customer content is the data created by users of Microsoft 365 services and appl
 
 - Inferences, and all subsequent inferences, if customer content remains
 
-For additional information about customer content in Office 365, see the [Office 365 Trust Center](https://products.office.com/business/office-365-trust-center-privacy/).
+For more information about customer content in Office 365, see the [Office 365 Trust Center](https://products.office.com/business/office-365-trust-center-privacy/).
 
 #### Who is notified when there is a request to access my content?
 
@@ -298,13 +295,13 @@ See the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/default.a
 
 Microsoft implements extensive preventive measures through access control systems, and detective measures to identify and address attempts to circumvent these access control systems. Microsoft 365 operates with the principles of least privilege and just-in-time access. Therefore, no Microsoft personnel have permission to access customer content on an ongoing basis. If permission is granted, it is for a limited duration. 
 
-Microsoft 365 uses an access control system called *Lockbox* to process requests for permissions that grant the ability to perform operational and administrative functions within the service. An operator must request access to customer content using Lockbox, which then requires a second person to take action on the request (e.g., approve it) before access is granted. That second person can't be the requestor and must be designated to approve access to customer content. Only if the request is approved does the operator acquire temporary access to customer content. After the elevation period expires, Lockbox revokes access.
+Microsoft 365 uses an access control system called *Lockbox* to process requests for permissions that grant the ability to perform operational and administrative functions within the service. An operator must request access to customer content using Lockbox, which then requires a second person to take action on the request (for example, approve it) before access is granted. That second person can't be the requestor and must be designated to approve access to customer content. Only if the request is approved does the operator acquire temporary access to customer content. After the elevation period expires, Lockbox revokes access.
 
-Please refer to the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products) for more details about Microsoft general security practices.
+Refer to the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products) for more details about Microsoft general security practices.
 
 #### Under what circumstances do Microsoft engineers need access to my content?
 
-The most common scenario where Microsoft engineers need access customer content is when the customer makes a support request requiring access for troubleshooting. A foundational principle of Microsoft 365 is that the service operates without Microsoft access to customer content. Nearly all service operations performed by Microsoft are fully automated and human involvement is highly controlled and abstracted away from customer content. The goal for Microsoft 365 is access to customer content to support the service isn't needed until the customer approves a specific request for Microsoft access.
+The most common scenario where Microsoft engineers need access customer content is when the customer makes a support request that requires access for troubleshooting. A foundational principle of Microsoft 365 is that the service operates without Microsoft access to customer content. Nearly all service operations performed by Microsoft are fully automated and human involvement is highly controlled and abstracted away from customer content. The goal for Microsoft 365 is access to customer content to support the service isn't needed until the customer approves a specific request for Microsoft access.
 
 #### I already thought my data was secure with the Microsoft cloud, so why do I need Customer Lockbox?
 
