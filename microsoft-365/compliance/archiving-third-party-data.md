@@ -58,7 +58,8 @@ Click the link in the **Third-party data** column to go the step-by-step instruc
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[LinkedIn](archive-linkedin-data.md)   |![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
 |[Physical badging](import-physical-badging-data.md) ||||||![Check mark](../media/checkmark.png)|
-|[Twitter](archive-twitter-data-with-sample-connector.md)     |![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
+|[Slack eDiscovery](archive-slack-data-microsoft.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
+|[Twitter](archive-twitter-data-with-sample-connector.md)     |![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
 ||||||||
 
 ### Veritas data connectors
@@ -89,6 +90,7 @@ Before you can archive third-party data in Microsoft 365, you have to work with 
 |[Slack eDiscovery](archive-slack-data.md)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Symphony](archive-symphony-data.md)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Text-delimited](archive-text-delimited-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
+|[Twitter](archive-veritas-twitter-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
 |[Webex Teams](archive-webexteams-data.md)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Webpages](archive-webpagecapture-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
 |[Workplace from Facebook](archive-workplacefromfacebook-data.md)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
