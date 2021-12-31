@@ -258,7 +258,42 @@ For more information about creating eDiscovery search queries, see [Keyword quer
 
 Some data connectors are available in the US Government cloud. The following sections indicate the specific government environments that support third-party data connectors. For more information about US Government clouds, see [Microsoft 365 US Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy).
 
-### Telemessage data connectors
+### Veritas data connectors in the US Government cloud (preview)
+
+|Data connector  |GCC  |GCC High  |DoD  |
+|:---------|:---------|:---------|:---------|
+|CellTrust| Yes | No | No |
+|Cisco Jabber on MS SQL| Yes | No | No |
+|Cisco Jabber on Oracle| Yes | No | No |
+|Cisco Jabber on PostgreSQL| Yes | No | No |
+|EML| Yes | No | No |
+|FX Connect| Yes | No | No |
+|Jive| Yes | No | No |
+|MS SQL Database| Yes | No | No |
+|Pivot| Yes | No | No |
+|Redtail Speak| Yes | No | No |
+|Reuters Dealing| Yes | No | No |
+|Reuters Eikon| Yes | No | No |
+|Reuters FX| Yes | No | No |
+|RingCentral| Yes | No | No |
+|Salesforce Chatter| Yes | No | No |
+|ServiceNow| Yes | No | No |
+|Skype for Business| Yes | No | No |
+|Slack eDiscovery| Yes | No | No |
+|Symphony| Yes | No | No |
+|Text-delimited| Yes | No | No |
+|Twitter| Yes | No | No |
+|Webex Teams| Yes | No | No |
+|Webpages| Yes | No | No |
+|Workplace from Facebook| Yes | No | No |
+|XIP| Yes | No | No |
+|XSLT/XML| Yes | No | No |
+|Yieldbroker| Yes | No | No |
+|YouTube| No | No | No |
+|Zoom Meetings| Yes | No | No |
+|||||
+
+### TeleMessage data connectors in the US Government cloud
 
 |Data connector  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
@@ -276,14 +311,7 @@ Some data connectors are available in the US Government cloud. The following sec
 |WhatsApp Archiver | Yes | No | No |
 |||||
 
-### CellTrust data connectors
-
-|Data connector  |GCC  |GCC High  |DoD  |
-|:---------|:---------|:---------|:---------|
-|CellTrust SL2 | Yes | No | No |
-|||||
-
-### 17a-4 data connectors
+### 17a-4 data connectors in the US Government cloud
 
 |Data connector  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
@@ -305,6 +333,13 @@ Some data connectors are available in the US Government cloud. The following sec
 |SQL DataParser  | Yes | No | No |
 |Symphony DataParser | Yes | No | No |
 |Zoom DataParser | Yes | No | No |
+|||||
+
+### CellTrust data connectors in the US Government cloud
+
+|Data connector  |GCC  |GCC High  |DoD  |
+|:---------|:---------|:---------|:---------|
+|CellTrust SL2 | Yes | No | No |
 |||||
 
 ## Working with a Microsoft partner to archive third-party data
