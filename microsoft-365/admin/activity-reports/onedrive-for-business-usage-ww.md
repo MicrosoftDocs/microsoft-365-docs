@@ -59,4 +59,4 @@ The **OneDrive for Business usage** report can be viewed for trends over the las
 |||
    
 > [!NOTE]
-> The OneDrive for Business usage report is only available for OneDrive for Business that are associated with users who have licenses.
+> The report only includes users who have valid OneDrive for Business license.
