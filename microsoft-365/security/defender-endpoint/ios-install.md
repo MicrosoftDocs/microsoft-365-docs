@@ -70,11 +70,11 @@ Deploy Defender for Endpoint on iOS via Intune Company Portal.
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager Admin Center3.](images/ios-deploy-3.png)
 
-## Complete deployment for supervised device
+## Complete deployment for supervised devices
 
-The Microsoft Defender for Endpoint on iOS app has specialized ability on supervised iOS/iPadOS devices, given the increased management capabilities provided by the platform on these types of devices and can provide Web Protection **without setting up a local VPN on the device**. This gives end-users a seamless experience while still being protected from phishing and other web-based attacks.
+The Microsoft Defender for Endpoint on iOS app has specialized ability on supervised iOS/iPadOS devices, given the increased management capabilities provided by the platform on these types of devices. It can also provide Web Protection **without setting up a local VPN on the device**. This gives end-users a seamless experience while still being protected from phishing and other web-based attacks.
 
-For configuring Web Protection with enhanced Anti-phishing capabilities, you will need to deploy a custom profile on the supervised iOS devices. Follow the steps below:
+To configure Web Protection with enhanced Anti-phishing capabilities, you will need to deploy a custom profile on the supervised iOS devices. Follow the steps below:
 
 - Download the config profile from [https://aka.ms/mdeiosprofilesupervised](https://aka.ms/mdeiosprofilesupervised)
 - Navigate to **Devices** -> **iOS/iPadOS** -> **Configuration profiles** -> **Create Profile**
@@ -85,8 +85,8 @@ For configuring Web Protection with enhanced Anti-phishing capabilities, you wil
 
 
     
-- Provide a name of the profile. When prompted to import a Configuration profile file, select the one downloaded above.
-- In the **Assignment** section, select the device group to which you want to apply this profile. As a best practice, this should be applied to all managed iOS devices. Click **Next**.
+- Provide a name of the profile. When prompted to import a Configuration profile file, select the one downloaded from the previous step.
+- In the **Assignment** section, select the device group to which you want to apply this profile. As a best practice, this should be applied to all managed iOS devices. Select **Next**.
 - On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list of configuration profiles.
 
 ### Configure Supervised Mode via Intune
@@ -96,7 +96,7 @@ Next, configure the supervised mode for Defender for Endpoint app through an App
    > [!NOTE]
    > This app configuration policy for supervised devices is applicable only to managed devices and should be targeted for ALL managed iOS devices as a best practice.
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** \> **App configuration policies** \> **Add**. Click on **Managed devices**.
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** \> **App configuration policies** \> **Add**. Select **Managed devices**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager Admin Center4.](images/ios-deploy-4.png)
@@ -117,7 +117,7 @@ Next, configure the supervised mode for Defender for Endpoint app through an App
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager Admin Center6.](images/ios-deploy-6.png)
 
-1. Click **Next** to open the **Scope tags** page. Scope tags are optional. Click **Next** to continue.
+1. Select **Next** to open the **Scope tags** page. Scope tags are optional. Select **Next** to continue.
 
 1. On the **Assignments** page, select the groups that will receive this profile. For this scenario, it is best practice to target **All Devices**. For more information on assigning profiles, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).
 
@@ -134,8 +134,9 @@ Next, configure the supervised mode for Defender for Endpoint app through an App
 
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager Admin Center7.](images/ios-deploy-7.png)
-    - Provide a name of the profile. When prompted to import a Configuration profile file, select the one downloaded above.
-    - In the **Assignment** section, select the device group to which you want to apply this profile. As a best practice, this should be applied to all managed iOS devices. Click **Next**.
+    
+    - Provide a name of the profile. When prompted to import a Configuration profile file, select the one downloaded from the previous step.
+    - In the **Assignment** section, select the device group to which you want to apply this profile. As a best practice, this should be applied to all managed iOS devices. Select **Next**.
     - On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list of configuration profiles.
 
 
