@@ -99,7 +99,7 @@ This helps reduce potential issues that could arise while rolling out the servic
 
 - [Configure Android features](android-configure.md)
 - [Configure iOS features](ios-configure-features.md)
-- [Configure supervised mode for supervised iOS devices](ios-install.md#configure-microsoft-defender-for-endpoint-for-supervised-mode)
+- [Configure Web Protection without VPN for supervised iOS devices](ios-install.md#complete-deployment-for-supervised-device)
 
 ## Resources
 
