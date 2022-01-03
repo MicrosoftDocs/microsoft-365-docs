@@ -25,24 +25,24 @@ This article describes some basic scenarios you could use as templates for imple
 
 ## Protect credit card numbers
 
-Contoso Bank would like to classify only credit cards issued by them as sensitive. The credit cards issued by them start with a set of 6-digit patterns. They would like to customize the OOB credit card definition to only detect the credit card numbers starting with these 6-digit patterns.
+Contoso Bank would like to classify only credit cards issued by them as sensitive. The credit cards issued by them start with a set of six-digit patterns. They would like to customize the OOB credit card definition to only detect the credit card numbers starting with these six-digit patterns.
 
 **Suggested solution**
 
-1. Create a copy of the credit card SIT​
-1. Edit the high confidence pattern​
-1. Add starts with additional check and add the list of bin digits(formatted & unformatted). For example to ensure that only credit cards starting with 411111 & 433512 should be considered valid, add the following to the list 4111 11, 4111-11, 411111, 4335 12, 4335-12, 433512​
+1. Create a copy of the credit card SIT
+1. Edit the high confidence pattern
+1. Add 'starts with' check and add the list of bin digits(formatted & unformatted). For example to ensure that only credit cards starting with 411111 & 433512 should be considered valid, add the following to the list 4111 11, 4111-11, 411111, 4335 12, 4335-12, 433512
 1. Repeat step 2 & 3 for low confidence pattern
 
 ## Test numbers similar to Social Security numbers
 
-Contoso has identified a few 9-digit test numbers which trigger the SSN policy. They would like to exclude these numbers from the list of valid matches for SSN.
+Contoso has identified a few nine-digit test numbers that trigger the SSN policy. They would like to exclude these numbers from the list of valid matches for SSN.
 
 **Suggested solution**
 
-1. Create a copy of the SSN​
-1. Edit the high confidence pattern​
-1. Add the numbers to be excluded in the exclude specific values additional check. For example, to exclude 239-23-532 & 23923532, just adding 23923532 will suffice​
+1. Create a copy of the SSN
+1. Edit the high confidence pattern
+1. 1. Add the numbers to be excluded in the 'exclude specific values' additional check. For example, to exclude 239-23-532 & 23923532, just adding 23923532 will suffice
 1. Repeat step 2 & 3 for other confidence patterns as well
 
 ## Phone numbers in signature trigger match
@@ -51,7 +51,7 @@ Phone numbers in signature trigger a match for Australia company number policy.
 
 **Suggested solution**
 
-Add a not group in supporting elements using a keyword list containing commonly used keywords in signature of email like “Phone”, “Mobile”, “email”, “Thanks and regards” etc. Keep the proximity of this keyword list to a smaller value like 50 characters for better accuracy.
+Add a 'not' group in supporting elements using a keyword list containing commonly used keywords in signature of email like “Phone”, “Mobile”, “email”, “Thanks and regards” etc. Keep the proximity of this keyword list to a smaller value like 50 characters for better accuracy.
 
 ## Unable to trigger ABA routing policy
 
@@ -59,7 +59,7 @@ DLP policy is unable to trigger ABA routing number policy in large excel files b
 
 **Suggested solution**
 
-Create a copy of the built in SIT and edit it to change the proximity of the keyword list from “300 characters” to “Anywhere in the document”. ​
+Create a copy of the built in SIT and edit it to change the proximity of the keyword list from “300 characters” to “Anywhere in the document”.
 
 > [!TIP]
 > You may edit the keyword list to include/exclude keywords that are relevant to your organization.
@@ -70,7 +70,7 @@ Contoso Bank have noticed some of their employees share Credit card numbers with
 
 **Suggested solution**
 
-1. Create a copy of the Credit card SIT​
-1. Add a new pattern​
-1. In the primary element, select regular expression​
+1. Create a copy of the Credit card SIT
+1. Add a new pattern
+1. In the primary element, select regular expression
 1. Define the regular expression which includes ‘/’ as part of the regular expression and then choose validator and select luhncheck or func_credit_card to ensure the regex also passes the LuhnCheck.
