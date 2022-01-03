@@ -20,6 +20,7 @@ ms.collection:
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkDEFENDER
+- admindeeplinkEXCHANGE
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -163,7 +164,7 @@ Your Microsoft Defender for Office 365 evaluation report is generated once per d
 
 ### Exchange mail flow rules (optional)
 
-If you have an existing gateway, enabling evaluation mode will activate Enhanced Filtering for Connectors. This feature improves filtering accuracy by altering the incoming sender IP address. This feature might change the filter verdicts, and if you are not bypassing Exchange Online Protection, this may alter deliverability for certain messages. In this case, you might want to temporarily bypass filtering to analyze impact. To bypass filtering, open the Exchange admin center (EAC) at <https://admin.exchange.microsoft.com> and create a mail flow rule that sets the SCL of messages to -1 (if you don't already have one). For instructions, see [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+If you have an existing gateway, enabling evaluation mode will activate Enhanced Filtering for Connectors. This feature improves filtering accuracy by altering the incoming sender IP address. This feature might change the filter verdicts, and if you are not bypassing Exchange Online Protection, this may alter deliverability for certain messages. In this case, you might want to temporarily bypass filtering to analyze impact. To bypass filtering, open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> and create a mail flow rule that sets the SCL of messages to -1 (if you don't already have one). For instructions, see [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 ## Evaluate capabilities
 

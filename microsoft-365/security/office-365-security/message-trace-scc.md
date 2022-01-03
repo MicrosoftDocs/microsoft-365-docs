@@ -13,6 +13,7 @@ ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom: 
   - seo-marvel-apr2020
   - admindeeplinkDEFENDER
+  - admindeeplinkEXCHANGE
 description: Admins can use the message trace link in the Microsoft 365 Defender portal to find out what happened to messages.
 ms.technology: mdo
 ms.prod: m365-security
@@ -32,7 +33,7 @@ Message trace in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139"
 You can use the information from message trace to efficiently answer user questions about what happened to messages, troubleshoot mail flow issues, and validate policy changes.
 
 > [!NOTE]
-> Message trace in the Microsoft 365 Defender portal is just a pass through to Message trace in the Exchange admin center. For more information, see [Message trace in the modern Exchange admin center](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
+> Message trace in the Microsoft 365 Defender portal is just a pass through to Message trace in the Exchange admin center. For more information, see [Message trace in the modern <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
 
 ## What do you need to know before you begin?
 

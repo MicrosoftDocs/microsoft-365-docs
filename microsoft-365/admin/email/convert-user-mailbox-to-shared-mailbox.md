@@ -16,6 +16,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150

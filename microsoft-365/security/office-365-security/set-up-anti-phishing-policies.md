@@ -121,7 +121,7 @@ The following spoof settings are available in anti-phishing policies in EOP and 
 
 The unauthenticated sender notifications are part of the [Spoof settings](#spoof-settings) that are available in anti-phishing policies in EOP and Defender for Office 365 as described in the previous section. The following settings are available only when spoof intelligence is turned on:
 
-- **Show (?) for unauthenticated senders for spoof**: This notification adds a question mark is added to the sender's photo in the From box if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-validation-and-authentication.md#composite-authentication). When this setting is turned off, the question mark isn't added to the sender's photo.
+- **Show (?) for unauthenticated senders for spoof**: This notification adds a question mark to the sender's photo in the From box if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-validation-and-authentication.md#composite-authentication). When this setting is turned off, the question mark isn't added to the sender's photo.
 
 - **Show "via" tag?**: This notification adds the via tag (chris@contoso.com <u>via</u> fabrikam.com) in the From box if the domain in the From address (the message sender that's displayed in email clients) is different from the domain in the DKIM signature or the **MAIL FROM** address. For more information about these addresses, see [An overview of email message standards](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
