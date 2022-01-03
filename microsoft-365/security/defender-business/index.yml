@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Microsoft Defender for Business
-summary: Microsoft Defender for Business documentation
+summary: Microsoft Defender for Business is now in preview, and will roll out gradually to customers and IT Partners who sign up to request it. We will onboard an initial set of customers and partners in the coming weeks and will expand the preview leading up to general availability. Note that preview will launch with an initial set of scenarios, and we will be adding capabilities regularly.
 metadata:
   title: Microsoft Defender for Business documentation
   description: Get an overview and setup information for Microsoft Defender for Business
@@ -11,9 +11,10 @@ metadata:
   ms.collection: 
   - SMB
   - M365-security-compliance
+  ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
-  ms.date: 12/08/2021
+  ms.date: 12/13/2021
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 

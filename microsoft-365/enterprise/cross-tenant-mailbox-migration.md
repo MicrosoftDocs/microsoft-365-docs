@@ -13,6 +13,7 @@ ms.reviewer: georgiah
 ms.custom:
 - it-pro
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
 ---
@@ -194,7 +195,10 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
        New-OrganizationRelationship "[name of your organization relationship]" -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability RemoteOutbound -DomainNames $targetTenantId -OAuthApplicationId $appId -MailboxMovePublishedScopes $scope
    }
    ```
-
+   
+> [!NOTE]
+> The tenant ID that you enter as the $sourceTenantId and $targetTenantId is the GUID and not the tenant domain name. For an example of a tenant ID and information about finding your tenant ID, see [Find your Microsoft 365 tenant ID](/onedrive/find-your-office-365-tenant-id).
+   
 ### How do I know this worked?
 
 You can verify cross-tenant mailbox migration configuration by running [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) cmdlet against the cross-tenant migration endpoint that you created on your target tenant.
@@ -345,7 +349,7 @@ T2Tbatch                   Syncing ExchangeRemoteMove 1
 >
 > [For an example CSV file click here](/exchange/csv-files-for-mailbox-migration-exchange-2013-help)
 
-Migration batch submission is also supported from the new Exchange Admin Center when selecting the cross-tenant option.
+Migration batch submission is also supported from the new <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> when selecting the cross-tenant option.
 
 ### Update on-premises MailUsers
 
