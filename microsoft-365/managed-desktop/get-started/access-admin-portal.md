@@ -49,7 +49,7 @@ If you need help with assigning Azure Active Directory roles, see [Azure AD buil
 |Microsoft Managed Desktop Service Administrator  | When assigned to a user, this role gives the admin **read and write permissions to Microsoft Managed Desktop features not related to security** in the Microsoft Managed Desktop Admin portal.  |
 |Microsoft Managed Desktop Service Reader | When assigned to a user, this role gives the admin **read-only permissions to Microsoft Managed Desktop features not related to security** in the Microsoft Managed Desktop Admin portal. |
 |Microsoft Managed Desktop Security Manager |When assigned to a user, this role gives that admin **read and write permissions only for security related features** in the Microsoft Managed Desktop Admin portal.   |
-|Microsoft Managed Desktop Support Partner |When assigned to a user, this role gives that admin **read and write permissions only for creating and managing elevation requests, and support partner engaged escalation requests** in the Microsoft Managed Desktop Admin portal.   |
+|Microsoft Managed Desktop Support Partner |When assigned to a user, this role gives the admin **read and write permissions only for creating and managing elevation requests and support partner engaged escalation requests** in the Microsoft Managed Desktop Admin portal.   |
 
 > [!NOTE]
 > Security features include security-related communications, management of security contacts, management of security-related support requests, and access to security related reports. 
