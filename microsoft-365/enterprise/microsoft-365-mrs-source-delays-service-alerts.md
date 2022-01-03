@@ -26,17 +26,30 @@ These service alerts are displayed in the Microsoft 365 admin center. To view th
 
 ## What do these service alerts indicate?
 
-This service alert informs you of potential delays to mailbox migrations in your organization. This includes cross-forest migrations, onboarding migrations, and offboarding  migrations. The service alert contains a table that provides you with information about the current migrations in your organization.
+This service alert informs you of potential delays to mailbox migrations in your organization. This includes cross-forest migrations, onboarding migrations, and offboarding  migrations. The service alert contains a table with information about the current migrations in your organization. Here's an example of the table with information about migration delays.
 
-The following list describes in each column in the previous table.
+|BatchName |ExchangeGuid |RequestGuid |DelayReason |QueuedHours |DelayInHours |SourceServer |RemoteDatabaseName |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|MRS Migration|246c21f7-ca3c-4bba-ab5d-23456558c52a|3d7fab16-7d8e-4c81-a849-e0795054292a|DiskLatency|35.2|27.3|RD1GBL01EXCH003|GBL01EDAG001-db002|
+|MRS Tenant Monitoring|21e9a608-78c3-44ef-a4dd-d5e7222aae82|9974aeb4-2aa4-4a2c-aeb6-d94d78cc25c9|DiskLatency|0.4|0.9|RD1GBL01EXCH010|GBL01EDAG010-db003|
+||||||||||
+
+The following list describes each column in the previous example.
 
 - **BatchName**: Unique name for the migration job.
+
 - **ExchangeGuid**: The globally unique identifier (GUID) of the user mailbox that's being migrated.
+
 - **RequestGuid**: The GUID of the migration request.
+
 - **DelayReason**: The reason for the delayed migration.
+
 - **QueueHours**: The duration the migration has been queued and waiting.
-- **DelayInHours**: THe duration the migration has been delayed.
+
+- **DelayInHours**: The duration the migration has been delayed.
+
 - **SourceServer**: The on-premises server the migration originates from.
+
 - **RemoteDatabaseName**: The database name the migration originates from.
 
 ## More information
