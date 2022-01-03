@@ -309,7 +309,7 @@ To add entries to the list in new or existing Safe Links policies, see [Create S
 - Do not specify http:// or https:// (i.e., contoso.com) in order to exclude both http and https versions.
 - `*.contoso.com` does NOT cover contoso.com, so you'd need to exclude both to cover both the specified domain and any child domains.
 - `contoso.com/*` DOES cover just contoso.com, so there's no need to exclude both `contoso.com` and `contoso.com/*`, rather just `contoso.com/*` would suffice.
-- To exclude all iterations of a domain, it takes two exclusion entries:  `contoso.com/*` and `*.contoso.com/*` (these combine to exclude both http/https, the main domain contoso.com and/or any child domains, as well as any or not ending part (e.g., contoso.com and contoso.com/vdir1 are covered).
+- To exclude all iterations of a domain, two exclusion entries are needed; `contoso.com/*` and `*.contoso.com/*`. These combine to exclude both HTTP and HTTPS, the main domain contoso.com and any child domains, as well as any or not ending part (for example, both contoso.com and contoso.com/vdir1 are covered).
 
 ### Entry syntax for the "Do not rewrite the following URLs" list
 
