@@ -168,7 +168,7 @@ Check for the latest virus and spyware security intelligence before running a sc
 
 **Policy location:** \Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Attack Surface Reduction
 
-Get the current list of attack surface reduction GUIDs from [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
+Get the current list of attack surface reduction GUIDs from [Attack surface reduction rules deployment phase 3: implement](attack-surface-reduction-rules-deployment-phase-3.md)
 
 1. Open the **Configure Attack Surface Reduction** policy.
 
