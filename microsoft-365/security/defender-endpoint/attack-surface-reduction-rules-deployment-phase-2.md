@@ -161,7 +161,7 @@ This tab provides a method to select detected entities (for example, false posit
 
 ### Use PowerShell as an alternative method to enable ASR rules
 
-You can use PowerShell - as an altenrative to MEM - to enable ASR rules in audit mode to view a record of apps that would have been blocked if the feature was fully enabled. You can also get an idea of how often the rules will fire during normal use.
+You can use PowerShell - as an alternative to MEM - to enable ASR rules in audit mode to view a record of apps that would have been blocked if the feature was fully enabled. You can also get an idea of how often the rules will fire during normal use.
 
 To enable an attack surface reduction rule in audit mode, use the following PowerShell cmdlet:
 
