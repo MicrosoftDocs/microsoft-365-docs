@@ -11,7 +11,9 @@ metadata:
   ms.service: o365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   ms.collection: collection
-  ms.custom: AdminSurgePortfolio
+  ms.custom: 
+  - AdminSurgePortfolio
+  - intro-hub-or-landing
   author: efrene #Required; your GitHub user alias, with correct capitalization.
   ms.author: efrene #Required; microsoft alias of author; optional team alias.
   ms.date: 8/25/2021 #Required; mm/dd/yyyy format.
