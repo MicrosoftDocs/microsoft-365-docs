@@ -63,3 +63,14 @@ Create a copy of the built in SIT and edit it to change the proximity of the key
 
 > [!TIP]
 > You may edit the keyword list to include/exclude keywords that are relevant to your organization.
+
+## Unable to detect credit card numbers with unusual delimiters
+
+Contoso Bank have noticed some of their employees share Credit card numbers with ‘/’ as a delimiter, for example 4111/1111/1111/1111, which is not detected by the out of the box credit card definition. Contoso would like to define their own regex and validate it using LuhnCheck.
+
+**Suggested solution**
+
+1. Create a copy of the Credit card SIT​
+1. Add a new pattern​
+1. In the primary element, select regular expression​
+1. Define the regular expression which includes ‘/’ as part of the regular expression and then choose validator and select luhncheck or func_credit_card to ensure the regex also passes the LuhnCheck.
