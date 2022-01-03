@@ -50,13 +50,16 @@ To get these preconfigured labels and policies:
     
 2. If you are eligible for the Microsoft Information Protection default labels and policies, you'll see the following information, where you can activate the default labels and policies. For example:
     
-    :::image type="content" alt-text="Microsoft Information Protection activation for preconfigured labels and policies." source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
+    <img width="1048" alt="Microsoft Information Protection activation for preconfigured labels and policies" src="https://user-images.githubusercontent.com/93217776/147989674-4b5bafc6-cd02-4d53-a239-6d1c9f5b60d2.png">
+
     
     If you don't see this information displayed with the activation option, you're not currently eligible for the automatic creation of sensitivity labels and policies. You can try checking back later to see if this status has changed, or you can use the settings information that follows to manually create the same labels and policies.
 
 3. Now enable sensitivity labels for SharePoint and OneDrive. This additional step is a prerequisite to use sensitivity labels in Office for the web, and auto-labeling policies for SharePoint and OneDrive.
-
-    Select the **Labels** tab, and then **Turn on now**.
+   
+    At the top of the Information Protection **Overview** tab, you will find this banner if sensitivity labels for SharePoint and OneDrive have not been enabled. 
+    <img width="1048" alt="Enable sensitivity labels for SharePoint and OneDrive banner" src="https://user-images.githubusercontent.com/93217776/147988468-a691d9b3-cdcb-4858-a97d-8d466a5c4662.png">
+    Select **Turn on now**.
     
     For full instructions, see [How to enable sensitivity labels for SharePoint and OneDrive (opt-in)](sensitivity-labels-sharepoint-onedrive-files.md#how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in).
 
