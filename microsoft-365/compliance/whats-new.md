@@ -36,6 +36,12 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 >
 > And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
 
+## December 2021
+
+### Compliance and service assurance
+
+- [Azure, Dynamics 365, and Windows breach notification under the GDPR](regulatory/gdpr-breach-azure-dynamics-windows.md) - updated to clarify that customers don't need to use a pay service such as Defender for Cloud to receive security and privacy notifications.
+
 ## November 2021
 
 ### Compliance Manager
@@ -307,29 +313,3 @@ The following pages were added:
 - Mandatory labeling is now extended to [Power BI (in preview)](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)
 - For [co-authoring for files encrypted with sensitivity labels]( sensitivity-labels-coauthoring.md): Rolling out support for DLP policies that use sensitivity labels as conditions and unencrypted attachments for emails
 - Auditing events for Outlook is now available for macOS, iOS, and Android, and rolling out for Outlook on the web
-
-## June 2021
-
-### Customer Key
-
-- [Service encryption with Customer Key](customer-key-overview.md) (Customer Key tenant level DEPs now encrypt sensitivity label configuration for Microsoft Information Protection.)
-
-### Data connectors
-
-- We have released [17 new data connectors in partnership with 17a-4 LLC](archiving-third-party-data.md#17a-4-data-connectors) and [one new connector in partnership with CellTrust](archiving-third-party-data.md#celltrust-data-connectors). We have also released additional data connectors in partnership with [Veritas](archiving-third-party-data.md#veritas-data-connectors) and [TeleMessage](archiving-third-party-data.md#telemessage-data-connectors). To date, this makes a total of 65 available data connectors to import and archive third-party data to Microsoft 365.
-
-### eDiscovery
-
-- [Query and filter content in a review set](review-set-search.md) (new query and filtering capability in a new UX format to filter and search for content in a review set)
-- [Tag documents in a review set in Advanced eDiscovery](tagging-documents.md) (new tag functionality and UX to make tagging documents in a review set faster and easier; includes new capability of tagging documents by using a query and using filters to quickly find or exclude review set items based on how an item is tagged)
-- [Set up compliance boundaries for eDiscovery investigations](set-up-compliance-boundaries.md) (Microsoft has removed the requirement to contact MS Support to request that a compliance attribute is synced to OneDrive accounts; now a Mailbox search permissions filter is used to enforce the compliance boundaries for OneDrive)
-
-### Sensitivity labels
-
-- The sensitivity label policy wizard now supports [Outlook-specific options for default label and mandatory labeling](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) as an easier configuration than the (still supported) PowerShell advanced settings.
-- Support for [dynamic markings with variables](sensitivity-labels-office-apps.md#dynamic-markings-with-variables ) is now rolling out for Word, Excel, and PowerPoint on the web
-- For [auto-labeling policies](apply-sensitivity-label-automatically.md) for Exchange, if the label is configured for encryption, that encryption isn't applied. Additionally for Exchange auto-labeling policies, you can now configure exceptions and the following new conditions: subject, recipient address, or sender address matches patterns; recipient address contains words; sender domain is, recipient is a member of; sender is.
-- When you use sensitivity labels with teams, groups, and sites, you can use Set-SPOTenant with the BlockSendLabelMismatchEmail parameter  to prevent the automatically generated email when the audit event **Detected document sensitivity mismatch** is logged.  For more information, see [Auditing sensitivity label activities](sensitivity-labels-teams-groups-sites.md#auditing-sensitivity-label-activities).
-- The [authentication context setting](sensitivity-labels-teams-groups-sites.md#more-information-about-the-dependencies-for-the-authentication-context-option) is now fully rolled out in preview for sensitivity labels. Additionally, this configuration is now supported by Microsoft Teams.
-- Files that are labeled and encrypted by a service principle name (such as Microsoft Cloud App Security) and then uploaded to SharePoint and OneDrive can now be opened in Office for the web when you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
-- [Co-authoring and AutoSave](sensitivity-labels-coauthoring.md) is no longer restricted to test tenants and now supported in production when you use version 2105: June 18 for Windows, and version 16.50+ for macOS. Note that this feature is still not supported by iOS and Android, and remains in preview.
