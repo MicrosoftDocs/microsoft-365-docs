@@ -10,12 +10,12 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-scenario
+- endpoint dlp
+- data loss prevention
+- dlp policies
 ms.custom: 
 keywords: 
-description: 
+description: Implement Endpoint DLP by working with your information protection and governance team to create DLP policies for your organization.    
 ---
 
 # Step 7. Implement data loss prevention (DLP) with information protection capabilities

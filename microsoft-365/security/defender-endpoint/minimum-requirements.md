@@ -112,6 +112,9 @@ Devices on your network must be running one of these editions.
 
 The hardware requirements for Defender for Endpoint on devices are the same for the supported editions.
 
+> Cores: 2 minimum, 4 preferred
+> Memory: 1 GB minimum, 4 preferred
+
 For more information on supported versions of Windows 10, see (/windows/release-health/release-information).
 
 > [!NOTE]
@@ -120,6 +123,8 @@ For more information on supported versions of Windows 10, see (/windows/release-
 > Virtual Machines running Windows 10 Enterprise 2016 LTSB may encounter performance issues if run on non-Microsoft virtualization platforms.
 >
 > For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
+
+
 
 ### Other supported operating systems
 
