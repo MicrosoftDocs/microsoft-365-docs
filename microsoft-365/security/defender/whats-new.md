@@ -42,7 +42,7 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
 ## December 2021
-- (Preview) `DeviceTvmSoftwareEvidentBeta` table was added in advanced hunting to allow you to view evidence of where a specific software was detected on a device. 
+- (GA) The `DeviceTvmSoftwareEvidenceBeta` table was added on a short-term basis in advanced hunting to allow you to view evidence of where a specific software was detected on a device. 
  
 ## November 2021
 
