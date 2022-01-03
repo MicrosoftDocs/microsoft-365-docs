@@ -99,7 +99,7 @@ This helps reduce potential issues that could arise while rolling out the servic
 
 - [Configure Android features](android-configure.md)
 - [Configure iOS features](ios-configure-features.md)
-- [Configure Web Protection without VPN for supervised iOS devices](ios-install.md#complete-deployment-for-supervised-device)
+- [Configure Web Protection without VPN for supervised iOS devices](ios-install.md#complete-deployment-for-supervised-devices)
 
 ## Resources
 
