@@ -25,7 +25,7 @@ ms.custom:
 
 # Search the audit log in the compliance center
 
-Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the audit log search tool in Microsoft 365 compliance center to search the unified audit log to view user and administrator activity in your organization. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. User's in your organization can use the audit log search tool to search for, view, and export (to a CSV file) the audit records for these operations.
+Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the audit log search tool in Microsoft 365 compliance center to search the unified audit log to view user and administrator activity in your organization. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Users in your organization can use the audit log search tool to search for, view, and export (to a CSV file) the audit records for these operations.
 
 ## Microsoft 365 services that support auditing
 
@@ -965,6 +965,13 @@ If a Forms activity is performed by a coauthor or an anonymous responder, it wil
 |Enabled people in my organization collaboration<sup>*</sup>|EnableSameOrgCollaboration|Form owner turns on the setting allowing users in the current organization to view and edit the form.|
 |Enabled specific people collaboration<sup>*</sup>|EnableSpecificCollaboaration|Form owner turns on the setting allowing only specific people or specific groups in the current organization to view and edit the form.|
 |Connected to Excel workbook<sup>*</sup>|ConnectToExcelWorkbook|Connected the form to an Excel workbook. <br><br>Property ExcelWorkbookLink:string indicates the associated Excel workbook ID of the current form.|
+|Created a collection|CollectionCreated|Form owner created a collection.|
+|Updated a collection|CollectionUpdated|Form owner updated a collection property.|
+|Deleted collection from the Recycle Bin|CollectionHardDeleted|Form owner hard-deleted a collection from the Recycle Bin.|
+|Moved collection to the Recycle Bin|CollectionSoftDeleted|Form owner moved a collection to the Recycle Bin.|
+|Renamed a collection|CollectionRenamed|Form owner changed the name of a collection.|
+|Moved a form into collection|MovedFormIntoCollection|Form owner moved a form into a collection.|
+|Moved a form out of collection|MovedFormOutofCollection|Form owner moved a form out of a collection.|
 ||||
 
 #### Forms activities performed by coauthors and anonymous responders

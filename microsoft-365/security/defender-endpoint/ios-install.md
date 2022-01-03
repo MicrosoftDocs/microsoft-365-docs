@@ -23,7 +23,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -50,7 +51,7 @@ Deploy Defender for Endpoint on iOS via Intune Company Portal.
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager Admin Center1.](images/ios-deploy-1.png)
 
-1. On the **Add app** page, click on **Search the App Store** and type **Microsoft Defender Endpoint** in the search bar. In the search results section, click on *Microsoft Defender Endpoint* and click **Select**.
+1. On the **Add app** page, click on **Search the App Store** and type **Microsoft Defender for Endpoint** in the search bar. In the search results section, click on *Microsoft Defender for Endpoint* and click **Select**.
 
 1. Select **iOS 11.0** as the Minimum operating system. Review the rest of information about the app and click **Next**.
 
@@ -73,6 +74,8 @@ Deploy Defender for Endpoint on iOS via Intune Company Portal.
 
 Admins can configure auto-setup of VPN profile. This will automatically setup the Defender for Endpoint VPN profile without having the user to do so while onboarding. Note that VPN is used in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
 
+This step simplifies the onboarding process by setting up the VPN profile. For a zero-touch or silent onboarding experience, see the next section: [Zero-touch onboard](#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview).
+
 1. In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** -> **Configuration Profiles** -> **Create Profile**.
 1. Choose **Platform** as **iOS/iPadOS** and **Profile type** as **VPN**. Click **Create**.
 1. Type a name for the profile and click **Next**.
@@ -86,10 +89,42 @@ Admins can configure auto-setup of VPN profile. This will automatically setup th
     - Type of Automatic VPN = On-demand VPN
     - Click **Add** for **On Demand Rules** and select **I want to do the following = Establish VPN**, **I want to restrict to = All domains**.
 
-    ![A screen shot of VPN profile configuration.](images/ios-deploy-8.png)
+    ![A screen shot of VPN profile configuration settings](images/ios-deploy-8.png)
 
 1. Click Next and assign the profile to targeted users.
 1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**.
+
+## Zero-touch onboarding of Microsoft Defender for Endpoint (Preview)
+
+
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+
+Admins can configure Microsoft Defender for Endpoint to deploy and activate silently. In this flow, the user is simply notified of the installation. Defender for Endpoint is automatically installed without the need for the user to open the app. Follow the steps below to setup zero-touch or silent deployment of Defender for Endpoint on enrolled iOS devices:
+
+1. In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** > **Configuration Profiles** > **Create Profile**.
+1. Choose **Platform** as **iOS/iPadOS** and **Profile type** as **VPN**. Select **Create**.
+1. Type a name for the profile and select **Next**.
+1. Select **Custom VPN** for Connection Type and in the **Base VPN** section, enter the following:
+    - Connection Name = Microsoft Defender for Endpoint
+    - VPN server address = 127.0.0.1
+    - Auth method = "Username and password"
+    - Split Tunneling = Disable
+    - VPN identifier = com.microsoft.scmx
+    - In the key-value pairs, enter the key **SilentOnboard** and set the value to **True**.
+    - Type of Automatic VPN = On-demand VPN
+    - Select **Add** for **On Demand Rules** and select **I want to do the following = Establish VPN**, **I want to restrict to = All domains**.
+
+    ![A screen shot of VPN profile configuration.](images/ios-deploy-9.png)
+
+1. Select **Next** and assign the profile to targeted users.
+1. In the *Review + Create* section, verify that all the information entered is correct and then select **Create**.
+
+Once the above configuration is done and synced with the device, the following actions take place on the targeted iOS device(s):
+    - Microsoft Defender for Endpoint will be deployed and silently onboarded and the device will be seen in the Defender for Endpoint portal.
+    - A provisional notification will be sent to the user device.
+    - Web Protection and other features will be activated.
 
 ## Complete onboarding and check status
 
@@ -124,7 +159,7 @@ Intune allows you to configure the Defender for iOS app through an App Configura
 1. In the *Create app configuration policy* page, provide the following information:
     - Policy Name
     - Platform: Select iOS/iPadOS
-    - Targeted app: Select **Microsoft Defender Endpoint** from the list
+    - Targeted app: Select **Microsoft Defender for Endpoint** from the list
 
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager Admin Center5.](images/ios-deploy-5.png)

@@ -19,11 +19,15 @@ ms.custom: admindeeplinkDEFENDER
 
 # Device Control Printer Protection
 
+**Applies to**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 Microsoft Defender for Endpoint Device Control Printer Protection blocks people from printing via non-corporate printers or non-approved USB printer.
 
 ## Licensing
 
-Before you get started with Printer Protection, you should [confirm your Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1). To access and use Printer Protection, you must have the following:
+Before you get started with Printer Protection, you should [confirm your Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1). To access and use Printer Protection, you must have the following:
 
 - Microsoft 365 E3 for functionality/policy deployment
 - Microsoft 365 E5 for reporting
@@ -131,18 +135,18 @@ If the device isn't Intune joined, you can also deploy the policy via Group Poli
 
 ## View Device Control Printer Protection data in Microsoft Defender for Endpoint portal
 
-The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> shows printing blocked by the Device Control Printer Protection policy above.
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> shows printing blocked by the Device Control Printer Protection policy above.
 
 ```kusto
 DeviceEvents
-| where ActionType == 'PrintJobBlocked'
-| extend parsed=parse_json(AdditionalFields)
-| extend PrintedFile=tostring(parsed.JobOrDocumentName)
-| extend PrintPortName=tostring(parsed.PortName)
-| extend PrinterName=tostring(parsed.PrinterName)
-| extend Policy=tostring(parsed.RestrictionReason) 
-| project Timestamp, DeviceId, DeviceName, ActionType, InitiatingProcessAccountName, Policy, PrintedFile, PrinterName, PrintPortName, AdditionalFields
-| order by Timestamp desc
+| where ActionType == 'PrintJobBlocked'
+| extend parsed=parse_json(AdditionalFields)
+| extend PrintedFile=tostring(parsed.JobOrDocumentName)
+| extend PrintPortName=tostring(parsed.PortName)
+| extend PrinterName=tostring(parsed.PrinterName)
+| extend Policy=tostring(parsed.RestrictionReason) 
+| project Timestamp, DeviceId, DeviceName, ActionType, InitiatingProcessAccountName, Policy, PrintedFile, PrinterName, PrintPortName, AdditionalFields
+| order by Timestamp desc
 ```
 
  :::image type="content" source="../../media/device-control-advanced-hunting.png" alt-text="advanced hunting.":::
@@ -167,15 +171,3 @@ DeviceEvents
 ```
 
  :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="advanced hunting":::
-
-
-
-
-
-
-
-
- 
- 
- 
- 

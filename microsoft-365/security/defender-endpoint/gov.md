@@ -21,7 +21,8 @@ ms.technology: mde
 # Microsoft Defender for Endpoint for US Government customers
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Microsoft Defender for Endpoint for US Government customers, built in the Azure US Government environment, uses the same underlying technologies as Defender for Endpoint in Azure Commercial.
 
@@ -57,7 +58,7 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 |GCC|GCC High|DoD|
 |---|---|---|
 |Microsoft Defender for Endpoint Server GCC|Microsoft Defender for Endpoint Server for GCC High|Microsoft Defender for Endpoint Server for DOD|
-|Azure Defender for Servers|Azure Defender for Servers - Government|Azure Defender for Servers - Government|
+|Microsoft Defender for servers|Microsoft Defender for servers - Government|Microsoft Defender for servers - Government|
 |
 
 ## Portal URLs
@@ -123,9 +124,9 @@ iOS|![No.](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg
 >
 > <sup>3</sup> When using [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) you'll need to choose "Azure US Government" under "Azure Cloud" if using the [setup wizard](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard), or if using a [command line](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) or a [script](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) - set the "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" parameter to 1. <br /> The minimum MMA supported version is 10.20.18029 (March 2020).
 
-### OS versions when using Microsoft Defender for Cloud
+### OS versions when using Microsoft Defender for servers
 
-The following OS versions are supported when using [Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp):
+The following OS versions are supported when using [Microsoft Defender for servers](/azure/security-center/security-center-wdatp):
 
 <br />
 
@@ -144,7 +145,7 @@ Windows Server 2008 R2 SP1|![Yes.](images/svg/check-yes.svg)|![Yes](images/svg/c
 
 If a proxy or firewall is blocking all traffic by default and allowing only specific domains through, add the domains listed in the downloadable sheet to the allowed domains list.
 
-The following downloadable spreadsheet lists the services and their associated URLs your network must be able to connect to. Verify there are no firewall or network filtering rules that would deny access to these URLs, or create an *allow* rule specifically for them.
+The following downloadable spreadsheet lists the services and their associated URLs your network must be able to connect to. Verify there are no firewall or network-filtering rules that would deny access to these URLs, or create an *allow* rule specifically for them.
 
 Spreadsheet of domains list|Description
 :-----|:-----
@@ -186,7 +187,5 @@ These are the known gaps:
 |---|:---:|:---:|:---:|
 |Network assessments|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
 |Network discovery|![Yes](images/svg/check-yes.svg)|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
+|Reports: Attack surface reduction, Device Control, Device health, Firewall|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
 |Web content filtering|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|![No](images/svg/check-no.svg) In development|
-|Integrations: Azure Sentinel|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg) Alerts <br /> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In private preview|![Yes](images/svg/check-yes.svg) Alerts <br /> ![Yes](images/svg/check-yes.svg) Incidents & Raw data: In private preview|
-|Integrations: Microsoft Power Automate & Azure Logic Apps|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|![Yes](images/svg/check-yes.svg)|
-|Microsoft Threat Experts|![No](images/svg/check-no.svg) On engineering backlog|![No](images/svg/check-no.svg) On engineering backlog|![No](images/svg/check-no.svg) On engineering backlog|

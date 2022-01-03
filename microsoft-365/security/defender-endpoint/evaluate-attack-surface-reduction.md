@@ -22,7 +22,7 @@ ms.collection: m365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
@@ -35,12 +35,13 @@ Set attack surface reduction rules for devices running any of the following edit
 - Windows 10 Enterprise, [version 1709](/windows/whats-new/whats-new-windows-10-version-1709) or later
 - Windows Server, [version 1803 (Semi-Annual Channel)](/windows-server/get-started/whats-new-in-windows-server-1803) or later
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
--  [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
-- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) 
+- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 - Windows Server 2022
 
-> [!WARNING]
-> Enabling attack service reduction rules on Windows Server 2016 might lead to unexpected results, and impact server performance. We do not recommend enabling or deploying attack surface reduction rules to unsupported platforms.
+> [!Note]
+> Attack surface reduction rules in Windows Server 2012 R2 and Windows Server 2016 are available using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows 2012 R2 and 2016 Preview](configure-server-endpoints.md#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview) in the topic [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md).
+See also [Microsoft Defender for Endpoint: Defending Windows Server 2012 R2 and 2016](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292).
 
 Learn how to evaluate attack surface reduction rules by [enabling audit mode](audit-windows-defender.md) to test the feature directly in your organization.
 
@@ -57,7 +58,7 @@ To enable an attack surface reduction rule in audit mode, use the following Powe
 Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions AuditMode
 ```
 
-Where `<rule ID>` is a [GUID value of the attack surface reduction rule](attack-surface-reduction-rules.md).
+Where `<rule ID>` is a [GUID value of the attack surface reduction rule](attack-surface-reduction-rules-reference.md).
 
 To enable all the added attack surface reduction rules in audit mode, use the following PowerShell cmdlet:
 

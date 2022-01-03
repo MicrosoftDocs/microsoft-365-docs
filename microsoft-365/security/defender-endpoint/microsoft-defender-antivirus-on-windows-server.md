@@ -22,8 +22,7 @@ ms.collection: M365-security-compliance
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender Antivirus is available in the following editions/versions of Windows Server:
 
@@ -76,7 +75,7 @@ If the GUI is not installed on your server, and you want to install it, either t
 
 The following PowerShell cmdlet will enable the interface:
 
-```PowerShell
+```powershell
 Install-WindowsFeature -Name Windows-Defender-GUI
 ```
 
@@ -94,7 +93,7 @@ If you need to install or reinstall Microsoft Defender Antivirus on Windows Serv
 
 To use PowerShell to install Microsoft Defender Antivirus, run the following cmdlet:
 
-```PowerShell
+```powershell
 Install-WindowsFeature -Name Windows-Defender
 ```
 
@@ -104,13 +103,13 @@ Event messages for the antimalware engine included with Microsoft Defender Antiv
 
 Once Microsoft Defender Antivirus is installed, your next step is to verify that it's running. On your Windows Server endpoint, run the following PowerShell cmdlet:
 
-```PowerShell
+```powershell
 Get-Service -Name windefend
 ```
 
 To verify that firewall protection is turned on, run the following PowerShell cmdlet:
 
-```PowerShell
+```powershell
 Get-Service -Name mpssvc
 ```
 
@@ -214,7 +213,7 @@ You can set Microsoft Defender Antivirus to passive mode by setting the followin
 
 To turn off the Microsoft Defender Antivirus GUI, use the following PowerShell cmdlet:
 
-```PowerShell
+```powershell
 Uninstall-WindowsFeature -Name Windows-Defender-GUI
 ```
 

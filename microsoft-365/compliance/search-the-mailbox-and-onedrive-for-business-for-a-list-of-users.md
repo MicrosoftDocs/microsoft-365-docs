@@ -96,17 +96,13 @@ When you run the script in this step, it will prompt you for the following infor
   $searchName = Read-Host "Enter the name for the new search"
   $searchQuery = Read-Host "Enter the search query you want to use"
   $emailAddresses = Get-Content $inputfile | where {$_ -ne ""}  | foreach{ $_.Trim() }
-  # Connect to Office 365
+  # Connect to Security & Compliance Center PowerShell
   if (!$s -or !$a)
   {
-      $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://ps.compliance.protection.outlook.com/powershell-liveid" -Credential $credentials -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
-      $a = Import-PSSession $s -AllowClobber
-      if (!$s)
-      {
-          Write-Error "Could not create PowerShell session."
-          return;
-      }
+      Import-Module ExchangeOnlineManagement
+      Connect-IPPSSession
   }
+  
   # Load the SharePoint assemblies from the SharePoint Online Management Shell
   # To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
   if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)

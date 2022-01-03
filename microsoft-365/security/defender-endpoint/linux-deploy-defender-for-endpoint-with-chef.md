@@ -18,6 +18,10 @@ ms.technology: mde
 
 # Deploy Defender for Endpoint on Linux with Chef
 
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 Before you begin: Install unzip if it's not already installed.
 
 The Chef components are already installed and a Chef repository exists (chef generate repo \<reponame\>) to store the cookbook that will be used to deploy to Defender for Endpoint on Chef managed Linux servers.

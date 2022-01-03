@@ -44,7 +44,7 @@ To analyze data in a review set:
 
 You can check the progress of analysis on the **Jobs** tab of the case.
 
- After analysis is completed, you can view the analytics report, run queries within your review set on outputs of the analysis (see [Query within your review set](review-set-search.md)), and see related documents of a given document (see [Reviewing data in review set](reviewing-data-in-review-set.md)).
+ After analysis is completed, you can view the analytics report, run queries within your review set on outputs of the analysis (see [Query within your review set](review-set-search.md), and see related documents of a given document (see [Reviewing data in review set](reviewing-data-in-review-set.md).
 
 ## Using the For Review filter query
 
@@ -71,7 +71,7 @@ The following list describes the result of the filter query in terms of what con
 For more information about inclusive types and document uniqueness, see [Email threading in Advanced eDiscovery](email-threading-in-advanced-ediscovery.md).
 
 > [!NOTE]
-> During the [public preview of the large case format in Advanced eDiscovery](advanced-ediscovery-large-cases.md), the **For Review** filter query did not return Teams or Yammer conversations for review sets (in cases that use the large case format) created before November 4, 2021. This issue has been resolved. That means if you reapply the **For Review** query to a review set in a case that uses the large case format, more items that match the filter query may be displayed because all Teams or Yammer conversations are included.
+> During the public preview of [the new case format](advanced-ediscovery-new-case-format.md) in Advanced eDiscovery, the **For Review** filter query did not return Teams or Yammer conversations for review sets (in cases that use the large case format) created before November 4, 2021. This issue has been resolved. That means if you reapply the **For Review** query to a review set in a case that uses the large case format, more items that match the filter query may be displayed because all Teams or Yammer conversations are included.
 
 ## Analytics report
 
