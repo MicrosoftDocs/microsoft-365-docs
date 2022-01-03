@@ -35,7 +35,7 @@ In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blan
 - **Security groups** are used for granting access to resources such as SharePoint sites.
 - **Mail-enabled security groups** are used for granting access to resources such as SharePoint, and emailing notifications to those users.
 - **Shared mailboxes** are used when multiple people need access to the same mailbox, such as a company information or support email address.
-- **Dynamic distribution groups** are  created to expedite the mass sending of email messages and other information within a organization.
+- **Dynamic distribution groups** are  created to expedite the mass sending of email messages and other information within an organization.
 
 Some groups allow dynamic membership or email.
 
