@@ -33,6 +33,11 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 
 On November 2, 2021, we announced the public preview of Threat and Vulnerability management on Android and iOS. For more details, see [the techcommunity post here](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/reduce-risk-across-your-environments-with-the-latest-threat-and/ba-p/2902691).
 
+## 1.1.24210103
+
+- Resolved internet connectivity issues on supervised devices. For more information, see [Deploy Defender for Endpoint on enrolled iOS devices](ios-install.md).
+- Bug fixes.
+
 ## 1.1.23250104
 
 - Performance optimizations - Test battery performance with this version and let us know your feedback.
