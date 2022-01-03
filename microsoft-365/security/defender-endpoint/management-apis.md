@@ -3,8 +3,6 @@ title: Overview of management and APIs
 ms.reviewer:
 description: Learn about the management tools and API categories in Microsoft Defender for Endpoint
 keywords: onboarding, api, siem, rbac, access, portal, integration, investigation, response, entities, entity, user context, application context, streaming
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library

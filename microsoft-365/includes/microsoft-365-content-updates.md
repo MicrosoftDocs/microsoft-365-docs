@@ -3,6 +3,374 @@
 
 
 
+## Week of November 29, 2021
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 11/29/2021 | [Archive third-party data](/microsoft-365/compliance/archiving-third-party-data?view=o365-21vianet) | modified |
+| 11/29/2021 | [Document metadata fields in Advanced eDiscovery](/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery?view=o365-21vianet) | modified |
+| 11/29/2021 | [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations?view=o365-21vianet) | modified |
+| 11/29/2021 | [ASR rules deployment phase 1 - plan](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-phase-1?view=o365-21vianet) | modified |
+| 11/29/2021 | [ASR rules deployment phase 2 - test](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-phase-2?view=o365-21vianet) | modified |
+| 11/29/2021 | [ASR rules deployment phase 3 - implement](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-phase-3?view=o365-21vianet) | modified |
+| 11/29/2021 | [ASR rules deployment phase 4 - operationalize](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-phase-4?view=o365-21vianet) | modified |
+| 11/29/2021 | [Deploy attack surface reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment?view=o365-21vianet) | modified |
+| 11/29/2021 | [Configure and manage Microsoft Threat Experts capabilities](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts?view=o365-21vianet) | modified |
+| 11/29/2021 | [Configure alert notifications that are sent to MSSPs](/microsoft-365/security/defender-endpoint/configure-mssp-notifications?view=o365-21vianet) | modified |
+| 11/29/2021 | [Configure managed security service provider support](/microsoft-365/security/defender-endpoint/configure-mssp-support?view=o365-21vianet) | modified |
+| 11/29/2021 | [Configure and validate Microsoft Defender Antivirus network connections](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus?view=o365-21vianet) | modified |
+| 11/29/2021 | [Configure Microsoft Defender Antivirus notifications](/microsoft-365/security/defender-endpoint/configure-notifications-microsoft-defender-antivirus?view=o365-21vianet) | modified |
+| 11/29/2021 | [Configure exclusions for files opened by specific processes](/microsoft-365/security/defender-endpoint/configure-process-opened-file-exclusions-microsoft-defender-antivirus?view=o365-21vianet) | modified |
+| 11/29/2021 | [Enable and configure Microsoft Defender Antivirus protection features](/microsoft-365/security/defender-endpoint/configure-protection-features-microsoft-defender-antivirus?view=o365-21vianet) | modified |
+| 11/29/2021 | [Configure device proxy and Internet connection settings](/microsoft-365/security/defender-endpoint/configure-proxy-internet?view=o365-21vianet) | modified |
+| 11/29/2021 | [Enable and configure Microsoft Defender Antivirus protection capabilities](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus?view=o365-21vianet) | modified |
+| 11/29/2021 | [Configure remediation for Microsoft Defender Antivirus detections](/microsoft-365/security/defender-endpoint/configure-remediation-microsoft-defender-antivirus?view=o365-21vianet) | modified |
+| 11/29/2021 | [Onboard Windows servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints?view=o365-21vianet) | modified |
+| 11/29/2021 | [Configure Microsoft Defender Antivirus exclusions on Windows Server](/microsoft-365/security/defender-endpoint/configure-server-exclusions-microsoft-defender-antivirus?view=o365-21vianet) | modified |
+| 11/29/2021 | [Integrate your SIEM tools with Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-siem?view=o365-21vianet) | modified |
+| 11/29/2021 | [Create a custom gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/configure-updates?view=o365-21vianet) | modified |
+| 11/29/2021 | [Configure vulnerability email notifications in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-vulnerability-email-notifications?view=o365-21vianet) | modified |
+| 11/29/2021 | [Connected applications in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/connected-applications?view=o365-21vianet) | modified |
+| 11/29/2021 | [Contact Microsoft Defender for Endpoint support](/microsoft-365/security/defender-endpoint/contact-support?view=o365-21vianet) | modified |
+| 11/29/2021 | [Protect important folders from ransomware from encrypting your files with controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders?view=o365-21vianet) | modified |
+| 11/29/2021 | [Create alert from event API](/microsoft-365/security/defender-endpoint/create-alert-by-reference?view=o365-21vianet) | modified |
+| 11/29/2021 | [Customize attack surface reduction rules](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction?view=o365-21vianet) | modified |
+| 11/29/2021 | [Customize controlled folder access](/microsoft-365/security/defender-endpoint/customize-controlled-folders?view=o365-21vianet) | modified |
+| 11/29/2021 | [Customize exploit protection](/microsoft-365/security/defender-endpoint/customize-exploit-protection?view=o365-21vianet) | modified |
+| 11/29/2021 | [Run and customize scheduled and on-demand scans.](/microsoft-365/security/defender-endpoint/customize-run-review-remediate-scans-microsoft-defender-antivirus?view=o365-21vianet) | modified |
+| 11/29/2021 | [Data collection for advanced troubleshooting on Windows](/microsoft-365/security/defender-endpoint/data-collection-analyzer?view=o365-21vianet) | modified |
+| 11/29/2021 | [Verify data storage location and update data retention settings](/microsoft-365/security/defender-endpoint/data-retention-settings?view=o365-21vianet) | modified |
+| 11/29/2021 | [Endpoint detection and response in block mode](/microsoft-365/security/defender-endpoint/edr-in-block-mode?view=o365-21vianet) | modified |
+| 11/29/2021 | [Turn on network protection](/microsoft-365/security/defender-endpoint/enable-network-protection?view=o365-21vianet) | modified |
+| 11/29/2021 | [Create indicators for IPs and URLs/domains](/microsoft-365/security/defender-endpoint/indicator-ip-domain?view=o365-21vianet) | modified |
+| 11/29/2021 | [Manage indicators](/microsoft-365/security/defender-endpoint/indicator-manage?view=o365-21vianet) | modified |
+| 11/29/2021 | [Use sensitivity labels to prioritize incident response](/microsoft-365/security/defender-endpoint/information-protection-investigation?view=o365-21vianet) | modified |
+| 11/29/2021 | [Start Investigation API](/microsoft-365/security/defender-endpoint/initiate-autoir-investigation?view=o365-21vianet) | modified |
+| 11/29/2021 | [Investigate Microsoft Defender for Endpoint alerts](/microsoft-365/security/defender-endpoint/investigate-alerts?view=o365-21vianet) | modified |
+| 11/29/2021 | [Investigate connection events that occur behind forward proxies](/microsoft-365/security/defender-endpoint/investigate-behind-proxy?view=o365-21vianet) | modified |
+| 11/29/2021 | [Investigate Microsoft Defender for Endpoint domains](/microsoft-365/security/defender-endpoint/investigate-domain?view=o365-21vianet) | modified |
+| 11/29/2021 | [Investigate Microsoft Defender for Endpoint files](/microsoft-365/security/defender-endpoint/investigate-files?view=o365-21vianet) | modified |
+| 11/29/2021 | [Investigate incidents in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/investigate-incidents?view=o365-21vianet) | modified |
+| 11/29/2021 | [Investigate an IP address associated with an alert](/microsoft-365/security/defender-endpoint/investigate-ip?view=o365-21vianet) | modified |
+| 11/29/2021 | [Investigate devices in the Defender for Endpoint Devices list](/microsoft-365/security/defender-endpoint/investigate-machines?view=o365-21vianet) | modified |
+| 11/29/2021 | [Investigate a user account in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/investigate-user?view=o365-21vianet) | modified |
+| 11/29/2021 | [Investigation resource type](/microsoft-365/security/defender-endpoint/investigation?view=o365-21vianet) | modified |
+| 11/29/2021 | [Configure Microsoft Defender for Endpoint on iOS features](/microsoft-365/security/defender-endpoint/ios-configure-features?view=o365-21vianet) | modified |
+| 11/29/2021 | [Deploy Microsoft Defender for Endpoint on iOS features](/microsoft-365/security/defender-endpoint/ios-install-unmanaged?view=o365-21vianet) | modified |
+| 11/29/2021 | [App-based deployment for Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/ios-install?view=o365-21vianet) | modified |
+| 11/29/2021 | [Privacy information - Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/ios-privacy?view=o365-21vianet) | modified |
+| 11/29/2021 | [Microsoft Defender for Endpoint on iOS Application license terms](/microsoft-365/security/defender-endpoint/ios-terms?view=o365-21vianet) | modified |
+| 11/29/2021 | [Troubleshoot issues and find answers on FAQs related to Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/ios-troubleshoot?view=o365-21vianet) | modified |
+| 11/29/2021 | [What's new in Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/ios-whatsnew?view=o365-21vianet) | modified |
+| 11/29/2021 | [Isolate machine API](/microsoft-365/security/defender-endpoint/isolate-machine?view=o365-21vianet) | modified |
+| 11/29/2021 | [Enable the limited periodic Microsoft Defender Antivirus scanning feature](/microsoft-365/security/defender-endpoint/limited-periodic-scanning-microsoft-defender-antivirus?view=o365-21vianet) | modified |
+| 11/29/2021 | [How to Deploy Defender for Endpoint on Linux with Chef](/microsoft-365/security/defender-endpoint/linux-deploy-defender-for-endpoint-with-chef?view=o365-21vianet) | modified |
+| 11/29/2021 | [Configure and validate exclusions for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-exclusions?view=o365-21vianet) | modified |
+| 11/29/2021 | [Enable the Report Message or the Report Phishing add-ins](/microsoft-365/security/office-365-security/enable-the-report-message-add-in?view=o365-21vianet) | modified |
+| 11/29/2021 | [Report false positives and false negatives in Outlook](/microsoft-365/security/office-365-security/report-false-positives-and-false-negatives?view=o365-21vianet) | modified |
+| 11/29/2021 | [Manage Microsoft Defender for Endpoint using Configuration Manager](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-configuration-manager?view=o365-21vianet) | renamed |
+| 11/29/2021 | [Manage Microsoft Defender for Endpoint using Group Policy Objects](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-group-policy-objects?view=o365-21vianet) | renamed |
+| 11/29/2021 | [Manage Microsoft Defender for Endpoint using Intune](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-intune?view=o365-21vianet) | renamed |
+| 11/29/2021 | [Manage Microsoft Defender for Endpoint using PowerShell, WMI, and MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools?view=o365-21vianet) | renamed |
+| 11/29/2021 | [Manage Microsoft Defender for Endpoint post migration](/microsoft-365/security/defender-endpoint/manage-mde-post-migration?view=o365-21vianet) | renamed |
+| 11/29/2021 | [Make the switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/switch-to-mde-overview?view=o365-21vianet) | renamed |
+| 11/29/2021 | [Switch to Microsoft Defender for Endpoint - Prepare](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-1?view=o365-21vianet) | renamed |
+| 11/29/2021 | [Switch to Microsoft Defender for Endpoint - Setup](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2?view=o365-21vianet) | renamed |
+| 11/29/2021 | [Switch to Microsoft Defender for Endpoint - Onboard](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-3?view=o365-21vianet) | renamed |
+| 11/29/2021 | [Troubleshooting issues when switching to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/switch-to-mde-troubleshooting?view=o365-21vianet) | added |
+| 11/29/2021 | [Manage active content in Office documents for IT admins](/microsoft-365/security/active-content-in-trusted-docs?view=o365-21vianet) | modified |
+| 11/29/2021 | [Use the command line to manage Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus?view=o365-21vianet) | modified |
+| 11/29/2021 | [Address false positives/negatives in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives?view=o365-21vianet) | modified |
+| 11/29/2021 | [Microsoft Defender for Endpoint evaluation lab](/microsoft-365/security/defender-endpoint/evaluation-lab?view=o365-21vianet) | modified |
+| 11/29/2021 | [Manage Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/mde-p1-maintenance-operations?view=o365-21vianet) | modified |
+| 11/29/2021 | [Migration guides to make the switch to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/migration-guides?view=o365-21vianet) | modified |
+| 11/29/2021 | [Advanced hunting query best practices in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-best-practices?view=o365-21vianet) | modified |
+| 11/29/2021 | [Advanced hunting example for Microsoft Defender for Office 365](/microsoft-365/security/defender/advanced-hunting-example?view=o365-21vianet) | modified |
+| 11/29/2021 | [Find ransomware with advanced hunting](/microsoft-365/security/defender/advanced-hunting-find-ransomware?view=o365-21vianet) | modified |
+| 11/29/2021 | [Get relevant info about an entity with go hunt](/microsoft-365/security/defender/advanced-hunting-go-hunt?view=o365-21vianet) | modified |
+| 11/29/2021 | [Link query results to an incident](/microsoft-365/security/defender/advanced-hunting-link-to-incident?view=o365-21vianet) | modified |
+| 11/29/2021 | [Migrate advanced hunting queries from Microsoft Defender for Endpoint](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde?view=o365-21vianet) | modified |
+| 11/29/2021 | [Learn the advanced hunting query language in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-query-language?view=o365-21vianet) | modified |
+| 11/29/2021 | [Microsoft 365 Defender incidents APIs and the incidents resource type](/microsoft-365/security/defender/api-incident?view=o365-21vianet) | modified |
+| 11/29/2021 | [Microsoft 365 solution and architecture center # < 60 chars](/microsoft-365/solutions/index?view=o365-21vianet) | modified |
+| 11/29/2021 | [Step 1. Implement App Protection Policies](/microsoft-365/solutions/manage-devices-with-intune-app-protection?view=o365-21vianet) | modified |
+| 11/29/2021 | [Step 7. Implement data loss prevention (DLP) with information protection capabilities](/microsoft-365/solutions/manage-devices-with-intune-dlp-mip?view=o365-21vianet) | modified |
+| 11/29/2021 | [Step 6. Monitor device risk and compliance to security baselines](/microsoft-365/solutions/manage-devices-with-intune-monitor-risk?view=o365-21vianet) | modified |
+| 11/30/2021 | [Set up a connector to import Epic EHR data](/microsoft-365/compliance/import-epic-data?view=o365-21vianet) | modified |
+| 11/30/2021 | [Set up a connector to import generic healthcare audit data](/microsoft-365/compliance/import-healthcare-data?view=o365-21vianet) | modified |
+| 11/30/2021 | [Learn about retention policies & labels to automatically retain or delete content](/microsoft-365/compliance/retention?view=o365-21vianet) | modified |
+| 11/30/2021 | [Switch to Microsoft Defender for Endpoint - Prepare](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-1?view=o365-21vianet) | modified |
+| 11/30/2021 | [Switch to Microsoft Defender for Endpoint - Setup](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2?view=o365-21vianet) | modified |
+| 11/30/2021 | [Switch to Microsoft Defender for Endpoint - Onboard](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-3?view=o365-21vianet) | modified |
+| 11/30/2021 | [Troubleshooting issues when switching to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/switch-to-mde-troubleshooting?view=o365-21vianet) | modified |
+| 11/30/2021 | [Case study - Contoso quickly configures an inappropriate content policy for Microsoft Teams, Exchange, and Yammer communications](/microsoft-365/compliance/communication-compliance-case-study?view=o365-21vianet) | modified |
+| 11/30/2021 | [Get started with communication compliance](/microsoft-365/compliance/communication-compliance-configure?view=o365-21vianet) | modified |
+| 11/30/2021 | [Investigate and remediate communication compliance alerts](/microsoft-365/compliance/communication-compliance-investigate-remediate?view=o365-21vianet) | modified |
+| 11/30/2021 | [Create retention labels and apply them in apps to retain or delete content](/microsoft-365/compliance/create-apply-retention-labels?view=o365-21vianet) | modified |
+| 11/30/2021 | [Advanced indexing of custodian data](/microsoft-365/compliance/indexing-custodian-data?view=o365-21vianet) | modified |
+| 11/30/2021 | [Investigate insider risk management activities](/microsoft-365/compliance/insider-risk-management-activities?view=o365-21vianet) | modified |
+| 11/30/2021 | [Insider risk management cases](/microsoft-365/compliance/insider-risk-management-cases?view=o365-21vianet) | modified |
+| 11/30/2021 | [Get started with insider risk management](/microsoft-365/compliance/insider-risk-management-configure?view=o365-21vianet) | modified |
+| 11/30/2021 | [Insider risk management notice templates](/microsoft-365/compliance/insider-risk-management-notices?view=o365-21vianet) | modified |
+| 11/30/2021 | [Plan for insider risk management](/microsoft-365/compliance/insider-risk-management-plan?view=o365-21vianet) | modified |
+| 11/30/2021 | [Insider risk management policies](/microsoft-365/compliance/insider-risk-management-policies?view=o365-21vianet) | modified |
+| 11/30/2021 | [Insider risk management settings](/microsoft-365/compliance/insider-risk-management-settings?view=o365-21vianet) | modified |
+| 11/30/2021 | [Insider risk management Users dashboard](/microsoft-365/compliance/insider-risk-management-users?view=o365-21vianet) | modified |
+| 11/30/2021 | [Learn about retention for SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint?view=o365-21vianet) | modified |
+| 11/30/2021 | [Learn about retention for Teams](/microsoft-365/compliance/retention-policies-teams?view=o365-21vianet) | modified |
+| 11/30/2021 | [Configure retention settings to automatically retain or delete content](/microsoft-365/compliance/retention-settings?view=o365-21vianet) | modified |
+| 11/30/2021 | Adoption resources for Microsoft Viva Topics | removed |
+| 11/30/2021 | Create a new topic in Microsoft Viva Topics | removed |
+| 11/30/2021 | Edit an existing topic in Microsoft Viva Topics | removed |
+| 11/30/2021 | Frequently asked questions about Microsoft Viva Topics | removed |
+| 11/30/2021 | Get started with Microsoft Viva Topics | removed |
+| 11/30/2021 | Introduction to Microsoft Viva Topics | removed |
+| 11/30/2021 | Manage topics in the topic center in Microsoft Viva Topics | removed |
+| 11/30/2021 | Plan for Microsoft Viva Topics | removed |
+| 11/30/2021 | Restrict access to topics in Microsoft Viva Topics | removed |
+| 11/30/2021 | Save a topic as a draft in Microsoft Viva Topics | removed |
+| 11/30/2021 | Manage topics at scale in Microsoft Viva Topics | removed |
+| 11/30/2021 | Use Microsoft Search to find topics in Microsoft Viva Topics | removed |
+| 11/30/2021 | Set up Microsoft Viva Topics | removed |
+| 11/30/2021 | Use SharePoint taxonomy terms to create topics in Microsoft Viva Topics | removed |
+| 11/30/2021 | Topic center overview in Microsoft Viva Topics | removed |
+| 11/30/2021 | Change the name of the topic center in Microsoft Viva Topics | removed |
+| 11/30/2021 | Topic discovery and curation in Microsoft Viva Topics | removed |
+| 11/30/2021 | Manage topic discovery in Microsoft Viva Topics | removed |
+| 11/30/2021 | Get your environment ready for Microsoft Viva Topics | removed |
+| 11/30/2021 | Manage topic visibility in Microsoft Viva Topics | removed |
+| 11/30/2021 | Microsoft Viva Topics overview | removed |
+| 11/30/2021 | Roles in Microsoft Viva Topics | removed |
+| 11/30/2021 | Security and privacy in Microsoft Viva Topics | removed |
+| 11/30/2021 | Security trimming in Microsoft Viva Topics | removed |
+| 11/30/2021 | Manage topic permissions in Microsoft Viva Topics | removed |
+| 11/30/2021 | Get started driving adoption of Microsoft Viva Topics | removed |
+| 11/30/2021 | Run a trial of Microsoft Viva Topics | removed |
+| 11/30/2021 | Configure Cornerstone OnDemand as a content source for Microsoft Viva Learning | removed |
+| 11/30/2021 | Configure Go1 as a content source for Microsoft Viva Learning | removed |
+| 11/30/2021 | Add learning management systems for Microsoft Viva Learning | removed |
+| 11/30/2021 | Add other content providers for Microsoft Viva Learning | removed |
+| 11/30/2021 | Configure Saba as a content source for Microsoft Viva Learning | removed |
+| 11/30/2021 | Add SharePoint as a learning content source for Microsoft Viva Learning | removed |
+| 11/30/2021 | Configure Skillsoft as a content source for Microsoft Viva Learning | removed |
+| 11/30/2021 | Configure SAP SuccessFactors as a content source for Microsoft Viva Learning | removed |
+| 11/30/2021 | Configure Udemy as a content source for Microsoft Viva Learning | removed |
+| 11/30/2021 | Manage content sources for Microsoft Viva Learning in the Microsoft 365 admin center | removed |
+| 11/30/2021 | Help and support | removed |
+| 11/30/2021 | Introduction to Microsoft Viva Learning | removed |
+| 11/30/2021 | Overview of Microsoft Viva Learning | removed |
+| 11/30/2021 | Set up Microsoft Viva Learning in the Teams admin center | removed |
+| 11/30/2021 | Understand terms and conditions | removed |
+| 11/30/2021 | Manage content in the admin tab | removed |
+| 11/30/2021 | [Manage quarantined messages and files as an admin](/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files?view=o365-21vianet) | modified |
+| 11/30/2021 | [Set your test tasks](/microsoft-365/test-base/testtask?view=o365-21vianet) | modified |
+| 11/30/2021 | Microsoft Viva # < 60 chars | removed |
+| 11/30/2021 | Set up Microsoft Viva) | removed |
+| 11/30/2021 | [Block user sign-in](/microsoft-365/lighthouse/m365-lighthouse-block-user-signin?view=o365-21vianet) | added |
+| 11/30/2021 | [Reset user password](/microsoft-365/lighthouse/m365-lighthouse-reset-user-password?view=o365-21vianet) | added |
+| 11/30/2021 | [Search for users](/microsoft-365/lighthouse/m365-lighthouse-search-for-users?view=o365-21vianet) | added |
+| 12/1/2021 | [Sign up for Microsoft 365 Apps for business](/microsoft-365/admin/setup/signup--apps-business?view=o365-21vianet) | added |
+| 12/1/2021 | [Sign up for Microsoft Teams as part of a business subscription](/microsoft-365/admin/simplified-signup/signup-teams-business-subscription?view=o365-21vianet) | added |
+| 12/1/2021 | [Set up Microsoft 365 Business Standard with a new or existing domain](/microsoft-365/admin/setup/setup-business-standard?view=o365-21vianet) | modified |
+| 12/1/2021 | [Invite users to Microsoft 365 Business Standard subscription](/microsoft-365/admin/simplified-signup/admin-invite-business-standard?view=o365-21vianet) | modified |
+| 12/1/2021 | [Sign up for a Microsoft 365 Business Standard](/microsoft-365/admin/simplified-signup/signup-business-standard?view=o365-21vianet) | modified |
+| 12/1/2021 | [Manage sensitivity labels in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-21vianet) | modified |
+| 12/1/2021 | [Learn about sensitivity labels](/microsoft-365/compliance/sensitivity-labels?view=o365-21vianet) | modified |
+| 12/1/2021 | [Manage your tenant list](/microsoft-365/lighthouse/m365-lighthouse-manage-tenant-list?view=o365-21vianet) | modified |
+| 12/1/2021 | [Archive third-party data](/microsoft-365/compliance/archiving-third-party-data?view=o365-21vianet) | modified |
+| 12/1/2021 | [Give mailbox permissions to another user - Admin Help](/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user?view=o365-21vianet) | modified |
+| 12/1/2021 | [Determine if Centralized Deployment of add-ins works for your organization](/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-21vianet) | modified |
+| 12/1/2021 | [Add more SharePoint storage to your subscription](/microsoft-365/commerce/add-storage-space?view=o365-21vianet) | modified |
+| 12/1/2021 | [IPv6 support in Microsoft 365 services](/microsoft-365/enterprise/ipv6-support?view=o365-21vianet) | modified |
+| 12/1/2021 | [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-21vianet) | modified |
+| 12/1/2021 | [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](/microsoft-365/security/defender-endpoint/security-config-management?view=o365-21vianet) | modified |
+| 12/1/2021 | [Safe Documents in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/safe-docs?view=o365-21vianet) | modified |
+| 12/1/2021 | [Microsoft 365 solutions for the healthcare industry](/microsoft-365/solutions/healthcare-overview?view=o365-21vianet) | added |
+| 12/1/2021 | [What's new in Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-whatsnew?view=o365-21vianet) | modified |
+| 12/2/2021 | [Sign up for a Microsoft 365 Business Standard](/microsoft-365/admin/simplified-signup/signup-business-standard?view=o365-21vianet) | modified |
+| 12/2/2021 | [Create and manage inactive mailboxes](/microsoft-365/compliance/create-and-manage-inactive-mailboxes?view=o365-21vianet) | modified |
+| 12/2/2021 | [Learn about inactive mailboxes](/microsoft-365/compliance/inactive-mailboxes-in-office-365?view=o365-21vianet) | modified |
+| 12/2/2021 | [Microsoft Information Governance in Microsoft 365](/microsoft-365/compliance/manage-information-governance?view=o365-21vianet) | modified |
+| 12/2/2021 | [Configure retention settings to automatically retain or delete content](/microsoft-365/compliance/retention-settings?view=o365-21vianet) | modified |
+| 12/2/2021 | [Use drive shipping to import your organization's PST files](/microsoft-365/compliance/use-drive-shipping-to-import-pst-files-to-office-365?view=o365-21vianet) | modified |
+| 12/2/2021 | [Use network upload to import your organization's PST files](/microsoft-365/compliance/use-network-upload-to-import-pst-files?view=o365-21vianet) | modified |
+| 12/2/2021 | [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations?view=o365-21vianet) | modified |
+| 12/2/2021 | [Microsoft 365 Security for Business Decision Makers (BDMs)](/microsoft-365/security/microsoft-365-security-for-bdm?view=o365-21vianet) | modified |
+| 12/2/2021 | [Microsoft 365 Zero Trust deployment plan](/microsoft-365/security/microsoft-365-zero-trust?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get alerts API](/microsoft-365/security/defender-endpoint/alerts?view=o365-21vianet) | modified |
+| 12/2/2021 | [Hello World for Microsoft Defender for Endpoint API](/microsoft-365/security/defender-endpoint/api-hello-world?view=o365-21vianet) | modified |
+| 12/2/2021 | [Microsoft Defender for Endpoint API release notes](/microsoft-365/security/defender-endpoint/api-release-notes?view=o365-21vianet) | modified |
+| 12/2/2021 | [Microsoft Defender for Endpoint API license and terms of use](/microsoft-365/security/defender-endpoint/api-terms-of-use?view=o365-21vianet) | modified |
+| 12/2/2021 | [Access the Microsoft Defender for Endpoint APIs](/microsoft-365/security/defender-endpoint/apis-intro?view=o365-21vianet) | modified |
+| 12/2/2021 | [Batch Update alert entities API](/microsoft-365/security/defender-endpoint/batch-update-alerts?view=o365-21vianet) | modified |
+| 12/2/2021 | [Common Microsoft Defender for Endpoint API errors](/microsoft-365/security/defender-endpoint/common-errors?view=o365-21vianet) | modified |
+| 12/2/2021 | [Configure Conditional Access in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/configure-conditional-access?view=o365-21vianet) | modified |
+| 12/2/2021 | [Create alert from event API](/microsoft-365/security/defender-endpoint/create-alert-by-reference?view=o365-21vianet) | modified |
+| 12/2/2021 | [Delete Indicator API.](/microsoft-365/security/defender-endpoint/delete-ti-indicator-by-id?view=o365-21vianet) | modified |
+| 12/2/2021 | [Use Microsoft Defender for Endpoint APIs](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp?view=o365-21vianet) | modified |
+| 12/2/2021 | [Create an app to access Microsoft Defender for Endpoint without a user](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp?view=o365-21vianet) | modified |
+| 12/2/2021 | [Supported Microsoft Defender for Endpoint APIs](/microsoft-365/security/defender-endpoint/exposed-apis-list?view=o365-21vianet) | modified |
+| 12/2/2021 | [File resource type](/microsoft-365/security/defender-endpoint/files?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get alert information by ID API](/microsoft-365/security/defender-endpoint/get-alert-info-by-id?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get alert related domains information](/microsoft-365/security/defender-endpoint/get-alert-related-domain-info?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get alert related files information](/microsoft-365/security/defender-endpoint/get-alert-related-files-info?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get alert-related IPs' information](/microsoft-365/security/defender-endpoint/get-alert-related-ip-info?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get alert related machine information](/microsoft-365/security/defender-endpoint/get-alert-related-machine-info?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get alert related user information](/microsoft-365/security/defender-endpoint/get-alert-related-user-info?view=o365-21vianet) | modified |
+| 12/2/2021 | [List alerts API](/microsoft-365/security/defender-endpoint/get-alerts?view=o365-21vianet) | modified |
+| 12/2/2021 | [Export assessment methods and properties per device](/microsoft-365/security/defender-endpoint/get-assessment-methods-properties?view=o365-21vianet) | modified |
+| 12/2/2021 | [Export secure configuration assessment per device](/microsoft-365/security/defender-endpoint/get-assessment-secure-config?view=o365-21vianet) | modified |
+| 12/2/2021 | [Export software inventory assessment per device](/microsoft-365/security/defender-endpoint/get-assessment-software-inventory?view=o365-21vianet) | modified |
+| 12/2/2021 | [Export software vulnerabilities assessment per device](/microsoft-365/security/defender-endpoint/get-assessment-software-vulnerabilities?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get domain-related alerts API](/microsoft-365/security/defender-endpoint/get-domain-related-alerts?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get domain-related machines API](/microsoft-365/security/defender-endpoint/get-domain-related-machines?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get domain statistics API](/microsoft-365/security/defender-endpoint/get-domain-statistics?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get file information API](/microsoft-365/security/defender-endpoint/get-file-information?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get file-related alerts API](/microsoft-365/security/defender-endpoint/get-file-related-alerts?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get file-related machines API](/microsoft-365/security/defender-endpoint/get-file-related-machines?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get file statistics API](/microsoft-365/security/defender-endpoint/get-file-statistics?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get installed software](/microsoft-365/security/defender-endpoint/get-installed-software?view=o365-21vianet) | modified |
+| 12/2/2021 | [List Investigations API](/microsoft-365/security/defender-endpoint/get-investigation-collection?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get Investigation object API](/microsoft-365/security/defender-endpoint/get-investigation-object?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get IP related alerts API](/microsoft-365/security/defender-endpoint/get-ip-related-alerts?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get IP statistics API](/microsoft-365/security/defender-endpoint/get-ip-statistics?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get machine by ID API](/microsoft-365/security/defender-endpoint/get-machine-by-id?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get machine logon users API](/microsoft-365/security/defender-endpoint/get-machine-log-on-users?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get machine related alerts API](/microsoft-365/security/defender-endpoint/get-machine-related-alerts?view=o365-21vianet) | modified |
+| 12/2/2021 | [List machines API](/microsoft-365/security/defender-endpoint/get-machines?view=o365-21vianet) | modified |
+| 12/2/2021 | [List Indicators API](/microsoft-365/security/defender-endpoint/get-ti-indicators-collection?view=o365-21vianet) | modified |
+| 12/2/2021 | [Import Indicators API](/microsoft-365/security/defender-endpoint/import-ti-indicators?view=o365-21vianet) | modified |
+| 12/2/2021 | [Start Investigation API](/microsoft-365/security/defender-endpoint/initiate-autoir-investigation?view=o365-21vianet) | modified |
+| 12/2/2021 | [Investigation resource type](/microsoft-365/security/defender-endpoint/investigation?view=o365-21vianet) | modified |
+| 12/2/2021 | [Machine resource type](/microsoft-365/security/defender-endpoint/machine?view=o365-21vianet) | modified |
+| 12/2/2021 | [Manage Microsoft Defender Antivirus updates and apply baselines](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus?view=o365-21vianet) | modified |
+| 12/2/2021 | [Overview of management and APIs](/microsoft-365/security/defender-endpoint/management-apis?view=o365-21vianet) | modified |
+| 12/2/2021 | [Configure Microsoft Defender for Cloud Apps integration](/microsoft-365/security/defender-endpoint/microsoft-cloud-app-security-config?view=o365-21vianet) | modified |
+| 12/2/2021 | [Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac?view=o365-21vianet) | modified |
+| 12/2/2021 | [Supported managed security service providers](/microsoft-365/security/defender-endpoint/mssp-list?view=o365-21vianet) | modified |
+| 12/2/2021 | [Submit or Update Indicator API](/microsoft-365/security/defender-endpoint/post-ti-indicator?view=o365-21vianet) | modified |
+| 12/2/2021 | [Advanced Hunting API](/microsoft-365/security/defender-endpoint/run-advanced-query-api?view=o365-21vianet) | modified |
+| 12/2/2021 | [Indicator resource type](/microsoft-365/security/defender-endpoint/ti-indicator?view=o365-21vianet) | modified |
+| 12/2/2021 | [Update alert entity API](/microsoft-365/security/defender-endpoint/update-alert?view=o365-21vianet) | modified |
+| 12/2/2021 | [Create safe sender lists](/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365?view=o365-21vianet) | modified |
+| 12/2/2021 | [Terms of use for the Microsoft Defender for Office 365 trial](/microsoft-365/security/office-365-security/defender-for-office-365-trial-terms-and-conditions?view=o365-21vianet) | modified |
+| 12/2/2021 | [Common Zero Trust identity and device access policies - Microsoft 365 for enterprise \| Microsoft Docs](/microsoft-365/security/office-365-security/identity-access-policies?view=o365-21vianet) | modified |
+| 12/2/2021 | [Sending mail to Microsoft 365](/microsoft-365/security/office-365-security/sending-mail-to-office-365?view=o365-21vianet) | modified |
+| 12/2/2021 | [Microsoft cloud architecture models - enterprise resource planning](/microsoft-365/solutions/cloud-architecture-models?view=o365-21vianet) | modified |
+| 12/2/2021 | [Enable archive mailboxes in the Microsoft 365 compliance center](/microsoft-365/compliance/enable-archive-mailboxes?view=o365-21vianet) | modified |
+| 12/2/2021 | [Microsoft 365 Client App Support: Certificate-based Authentication](/microsoft-365/enterprise/microsoft-365-client-support-certificate-based-authentication?view=o365-21vianet) | modified |
+| 12/2/2021 | [Network configuration for Microsoft Managed Desktop](/microsoft-365/managed-desktop/get-ready/network?view=o365-21vianet) | modified |
+| 12/2/2021 | [Prerequisites for Microsoft Managed Desktop](/microsoft-365/managed-desktop/get-ready/prerequisites?view=o365-21vianet) | modified |
+| 12/2/2021 | [Address false positives/negatives in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives?view=o365-21vianet) | modified |
+| 12/2/2021 | [Protect security settings with tamper protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection?view=o365-21vianet) | modified |
+| 12/2/2021 | [Switch to Microsoft Defender for Endpoint - Onboard](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-3?view=o365-21vianet) | modified |
+| 12/2/2021 | [Configure spam filter policies](/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-21vianet) | modified |
+| 12/2/2021 | [Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-mde?view=o365-21vianet) | modified |
+| 12/2/2021 | [Quarantined email messages](/microsoft-365/security/office-365-security/quarantine-email-messages?view=o365-21vianet) | modified |
+| 12/2/2021 | [Quarantine policies](/microsoft-365/security/office-365-security/quarantine-policies?view=o365-21vianet) | modified |
+| 12/2/2021 | [Microsoft recommendations for EOP and Defender for Office 365 security settings](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get started with communication compliance](/microsoft-365/compliance/communication-compliance-configure?view=o365-21vianet) | modified |
+| 12/2/2021 | [Plan for communication compliance](/microsoft-365/compliance/communication-compliance-plan?view=o365-21vianet) | modified |
+| 12/2/2021 | [Get started with insider risk management](/microsoft-365/compliance/insider-risk-management-configure?view=o365-21vianet) | modified |
+| 12/2/2021 | [Plan for insider risk management](/microsoft-365/compliance/insider-risk-management-plan?view=o365-21vianet) | modified |
+| 12/3/2021 | [Review partner administrative privileges](/microsoft-365/commerce/review-partner-admin-privileges?view=o365-21vianet) | added |
+| 12/3/2021 | [How to schedule scans with Microsoft Defender for Endpoint (Linux)](/microsoft-365/security/defender-endpoint/linux-schedule-scan-mde?view=o365-21vianet) | renamed |
+| 12/3/2021 | [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint?view=o365-21vianet) | renamed |
+| 12/3/2021 | [Learn about trainable classifiers](/microsoft-365/compliance/classifier-learn-about?view=o365-21vianet) | modified |
+| 12/3/2021 | [Other endpoints not included in the Office 365 IP Address and URL Web service](/microsoft-365/enterprise/additional-office365-ip-addresses-and-urls?view=o365-21vianet) | modified |
+| 12/3/2021 | [How to configure Skype for Business on-premises to use Hybrid Modern Authentication](/microsoft-365/enterprise/configure-skype-for-business-for-hybrid-modern-authentication?view=o365-21vianet) | modified |
+| 12/3/2021 | [Hybrid Modern Authentication overview and prerequisites for use with on-premises Skype for Business and Exchange servers](/microsoft-365/enterprise/hybrid-modern-auth-overview?view=o365-21vianet) | modified |
+| 12/3/2021 | [IPv6 support in Microsoft 365 services](/microsoft-365/enterprise/ipv6-support?view=o365-21vianet) | modified |
+| 12/3/2021 | [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations?view=o365-21vianet) | modified |
+| 12/3/2021 | [Microsoft 365 Lighthouse Device compliance page overview](/microsoft-365/lighthouse/m365-lighthouse-device-compliance-page-overview?view=o365-21vianet) | modified |
+| 12/3/2021 | [Microsoft 365 Zero Trust deployment plan](/microsoft-365/security/microsoft-365-zero-trust?view=o365-21vianet) | modified |
+| 12/3/2021 | [Add or Remove Machine Tags API](/microsoft-365/security/defender-endpoint/add-or-remove-machine-tags?view=o365-21vianet) | modified |
+| 12/3/2021 | [API Explorer in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/api-explorer?view=o365-21vianet) | modified |
+| 12/3/2021 | [Microsoft Defender for Endpoint Flow connector](/microsoft-365/security/defender-endpoint/api-microsoft-flow?view=o365-21vianet) | modified |
+| 12/3/2021 | [Cancel machine action API](/microsoft-365/security/defender-endpoint/cancel-machine-action?view=o365-21vianet) | modified |
+| 12/3/2021 | [Collect investigation package API](/microsoft-365/security/defender-endpoint/collect-investigation-package?view=o365-21vianet) | modified |
+| 12/3/2021 | [Connected applications in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/connected-applications?view=o365-21vianet) | modified |
+| 12/3/2021 | [Enable SIEM integration in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/enable-siem-integration?view=o365-21vianet) | modified |
+| 12/3/2021 | [OData queries with Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/exposed-apis-odata-samples?view=o365-21vianet) | modified |
+| 12/3/2021 | [Fetch alerts from MSSP customer tenant](/microsoft-365/security/defender-endpoint/fetch-alerts-mssp?view=o365-21vianet) | modified |
+| 12/3/2021 | [Find devices by internal IP API](/microsoft-365/security/defender-endpoint/find-machines-by-ip?view=o365-21vianet) | modified |
+| 12/3/2021 | [Find devices by tag API](/microsoft-365/security/defender-endpoint/find-machines-by-tag?view=o365-21vianet) | modified |
+| 12/3/2021 | [List all recommendations](/microsoft-365/security/defender-endpoint/get-all-recommendations?view=o365-21vianet) | modified |
+| 12/3/2021 | [Get all vulnerabilities by machine and software](/microsoft-365/security/defender-endpoint/get-all-vulnerabilities-by-machines?view=o365-21vianet) | modified |
+| 12/3/2021 | [Get all vulnerabilities](/microsoft-365/security/defender-endpoint/get-all-vulnerabilities?view=o365-21vianet) | modified |
+| 12/3/2021 | [Get device secure score](/microsoft-365/security/defender-endpoint/get-device-secure-score?view=o365-21vianet) | modified |
+| 12/3/2021 | [Get discovered vulnerabilities](/microsoft-365/security/defender-endpoint/get-discovered-vulnerabilities?view=o365-21vianet) | modified |
+| 12/3/2021 | [Get exposure score](/microsoft-365/security/defender-endpoint/get-exposure-score?view=o365-21vianet) | modified |
+| 12/3/2021 | [Get live response results](/microsoft-365/security/defender-endpoint/get-live-response-result?view=o365-21vianet) | modified |
+| 12/3/2021 | [List exposure score by device group](/microsoft-365/security/defender-endpoint/get-machine-group-exposure-score?view=o365-21vianet) | modified |
+| 12/3/2021 | [Get MachineAction object API](/microsoft-365/security/defender-endpoint/get-machineaction-object?view=o365-21vianet) | modified |
+| 12/3/2021 | [List machineActions API](/microsoft-365/security/defender-endpoint/get-machineactions-collection?view=o365-21vianet) | modified |
+| 12/3/2021 | [List devices by software](/microsoft-365/security/defender-endpoint/get-machines-by-software?view=o365-21vianet) | modified |
+| 12/3/2021 | [List devices by vulnerability](/microsoft-365/security/defender-endpoint/get-machines-by-vulnerability?view=o365-21vianet) | modified |
+| 12/3/2021 | [Get missing KBs by device ID](/microsoft-365/security/defender-endpoint/get-missing-kbs-machine?view=o365-21vianet) | modified |
+| 12/3/2021 | [Get missing KBs by software ID](/microsoft-365/security/defender-endpoint/get-missing-kbs-software?view=o365-21vianet) | modified |
+| 12/3/2021 | [Get package SAS URI API](/microsoft-365/security/defender-endpoint/get-package-sas-uri?view=o365-21vianet) | modified |
+| 12/3/2021 | [Get recommendation by Id](/microsoft-365/security/defender-endpoint/get-recommendation-by-id?view=o365-21vianet) | modified |
+| 12/3/2021 | [List devices by recommendation](/microsoft-365/security/defender-endpoint/get-recommendation-machines?view=o365-21vianet) | modified |
+| 12/3/2021 | [List vulnerabilities by recommendation](/microsoft-365/security/defender-endpoint/get-recommendation-vulnerabilities?view=o365-21vianet) | modified |
+| 12/3/2021 | [List all remediation activities](/microsoft-365/security/defender-endpoint/get-remediation-all-activities?view=o365-21vianet) | modified |
+| 12/3/2021 | [List exposed devices of one remediation activity](/microsoft-365/security/defender-endpoint/get-remediation-exposed-devices-activities?view=o365-21vianet) | modified |
+| 12/3/2021 | [Remediation activity methods and properties](/microsoft-365/security/defender-endpoint/get-remediation-methods-properties?view=o365-21vianet) | modified |
+| 12/3/2021 | [Get one remediation activity by ID](/microsoft-365/security/defender-endpoint/get-remediation-one-activity?view=o365-21vianet) | modified |
+| 12/3/2021 | [Get security recommendations](/microsoft-365/security/defender-endpoint/get-security-recommendations?view=o365-21vianet) | modified |
+| 12/3/2021 | [Get software by ID](/microsoft-365/security/defender-endpoint/get-software-by-id?view=o365-21vianet) | modified |
+| 12/3/2021 | [List software version distribution](/microsoft-365/security/defender-endpoint/get-software-ver-distribution?view=o365-21vianet) | modified |
+| 12/3/2021 | [List software](/microsoft-365/security/defender-endpoint/get-software?view=o365-21vianet) | modified |
+| 12/3/2021 | [Get user-related alerts API](/microsoft-365/security/defender-endpoint/get-user-related-alerts?view=o365-21vianet) | modified |
+| 12/3/2021 | [Get user-related machines API](/microsoft-365/security/defender-endpoint/get-user-related-machines?view=o365-21vianet) | modified |
+| 12/3/2021 | [List vulnerabilities by software](/microsoft-365/security/defender-endpoint/get-vuln-by-software?view=o365-21vianet) | modified |
+| 12/3/2021 | [Get vulnerability by ID](/microsoft-365/security/defender-endpoint/get-vulnerability-by-id?view=o365-21vianet) | modified |
+| 12/3/2021 | [Microsoft Defender for Endpoint documentation # < 60 chars](/microsoft-365/security/defender-endpoint/index?view=o365-21vianet) | modified |
+| 12/3/2021 | [Isolate machine API](/microsoft-365/security/defender-endpoint/isolate-machine?view=o365-21vianet) | modified |
+| 12/3/2021 | [How to schedule an update of the Microsoft Defender for Endpoint (Linux)](/microsoft-365/security/defender-endpoint/linux-update-mde-linux?view=o365-21vianet) | modified |
+| 12/3/2021 | [List software by recommendation](/microsoft-365/security/defender-endpoint/list-recommendation-software?view=o365-21vianet) | modified |
+| 12/3/2021 | [machineAction resource type](/microsoft-365/security/defender-endpoint/machineaction?view=o365-21vianet) | modified |
+| 12/3/2021 | [Manage Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/mde-p1-maintenance-operations?view=o365-21vianet) | modified |
+| 12/3/2021 | [Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac?view=o365-21vianet) | modified |
+| 12/3/2021 | [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint?view=o365-21vianet) | modified |
+| 12/3/2021 | [Offboard machine API](/microsoft-365/security/defender-endpoint/offboard-machine-api?view=o365-21vianet) | modified |
+| 12/3/2021 | [Partner applications in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/partner-applications?view=o365-21vianet) | modified |
+| 12/3/2021 | [Microsoft Defender for Endpoint preview features](/microsoft-365/security/defender-endpoint/preview?view=o365-21vianet) | modified |
+| 12/3/2021 | [Pull Microsoft Defender for Endpoint detections using REST API](/microsoft-365/security/defender-endpoint/pull-alerts-using-rest-api?view=o365-21vianet) | modified |
+| 12/3/2021 | [Stream Microsoft Defender for Endpoint events to Azure Event Hubs](/microsoft-365/security/defender-endpoint/raw-data-export-event-hub?view=o365-21vianet) | modified |
+| 12/3/2021 | [Stream Microsoft Defender for Endpoint events to your Storage account](/microsoft-365/security/defender-endpoint/raw-data-export-storage?view=o365-21vianet) | modified |
+| 12/3/2021 | [Stream Microsoft Defender for Endpoint event](/microsoft-365/security/defender-endpoint/raw-data-export?view=o365-21vianet) | modified |
+| 12/3/2021 | [Recommendation methods and properties](/microsoft-365/security/defender-endpoint/recommendation?view=o365-21vianet) | modified |
+| 12/3/2021 | [Restrict app execution API](/microsoft-365/security/defender-endpoint/restrict-code-execution?view=o365-21vianet) | modified |
+| 12/3/2021 | [Advanced Hunting with PowerShell API Basics](/microsoft-365/security/defender-endpoint/run-advanced-query-sample-powershell?view=o365-21vianet) | modified |
+| 12/3/2021 | [Advanced Hunting with Python API Guide](/microsoft-365/security/defender-endpoint/run-advanced-query-sample-python?view=o365-21vianet) | modified |
+| 12/3/2021 | [Run antivirus scan API](/microsoft-365/security/defender-endpoint/run-av-scan?view=o365-21vianet) | modified |
+| 12/3/2021 | [Run live response commands on a device](/microsoft-365/security/defender-endpoint/run-live-response?view=o365-21vianet) | modified |
+| 12/3/2021 | [Score methods and properties](/microsoft-365/security/defender-endpoint/score?view=o365-21vianet) | modified |
+| 12/3/2021 | [Set device value API](/microsoft-365/security/defender-endpoint/set-device-value?view=o365-21vianet) | modified |
+| 12/3/2021 | [Software methods and properties](/microsoft-365/security/defender-endpoint/software?view=o365-21vianet) | modified |
+| 12/3/2021 | [Specify the cloud protection level for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/specify-cloud-protection-level-microsoft-defender-antivirus?view=o365-21vianet) | modified |
+| 12/3/2021 | [Stop and quarantine file API](/microsoft-365/security/defender-endpoint/stop-and-quarantine-file?view=o365-21vianet) | modified |
+| 12/3/2021 | [Understand threat intelligence concepts in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/threat-indicator-concepts?view=o365-21vianet) | modified |
+| 12/3/2021 | [Troubleshoot SIEM tool integration issues in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/troubleshoot-siem?view=o365-21vianet) | modified |
+| 12/3/2021 | [Update machine entity API](/microsoft-365/security/defender-endpoint/update-machine-method?view=o365-21vianet) | modified |
+| 12/3/2021 | [User resource type](/microsoft-365/security/defender-endpoint/user?view=o365-21vianet) | modified |
+| 12/3/2021 | [Vulnerability methods and properties](/microsoft-365/security/defender-endpoint/vulnerability?view=o365-21vianet) | modified |
+| 12/3/2021 | [What's new in Microsoft 365 Defender](/microsoft-365/security/defender/whats-new?view=o365-21vianet) | modified |
+| 12/3/2021 | [Safe Attachments](/microsoft-365/security/office-365-security/safe-attachments?view=o365-21vianet) | modified |
+| 12/3/2021 | [What's new in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/whats-new-in-defender-for-office-365?view=o365-21vianet) | modified |
+| 12/3/2021 | [Top 12 tasks for security teams to support working from home](/microsoft-365/security/top-security-tasks-for-remote-work?view=o365-21vianet) | modified |
+| 12/3/2021 | [Step 1. Implement App Protection Policies](/microsoft-365/solutions/manage-devices-with-intune-app-protection?view=o365-21vianet) | modified |
+| 12/3/2021 | [Step 3. Set up compliance policies for devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-compliance-policies?view=o365-21vianet) | modified |
+| 12/3/2021 | [Step 5. Deploy device profiles in Microsoft Intune](/microsoft-365/solutions/manage-devices-with-intune-configuration-profiles?view=o365-21vianet) | modified |
+| 12/3/2021 | [Step 7. Implement data loss prevention (DLP) with information protection capabilities](/microsoft-365/solutions/manage-devices-with-intune-dlp-mip?view=o365-21vianet) | modified |
+| 12/3/2021 | [Step 2. Enroll devices into management with Intune](/microsoft-365/solutions/manage-devices-with-intune-enroll?view=o365-21vianet) | modified |
+| 12/3/2021 | [Step 6. Monitor device risk and compliance to security baselines](/microsoft-365/solutions/manage-devices-with-intune-monitor-risk?view=o365-21vianet) | modified |
+| 12/3/2021 | [Manage devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-overview?view=o365-21vianet) | modified |
+| 12/3/2021 | [Step 4. Require healthy and compliant devices with Intune](/microsoft-365/solutions/manage-devices-with-intune-require-compliance?view=o365-21vianet) | modified |
+
+
 ## Week of November 22, 2021
 
 
@@ -277,11 +645,11 @@
 | 11/24/2021 | [Configure and validate exclusions for Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-exclusions?view=o365-21vianet) | modified |
 | 11/24/2021 | [Log in to Jamf Pro](/microsoft-365/security/defender-endpoint/mac-install-jamfpro-login?view=o365-21vianet) | modified |
 | 11/24/2021 | [View and organize the Microsoft Defender for Endpoint devices list](/microsoft-365/security/defender-endpoint/machines-view-overview?view=o365-21vianet) | modified |
-| 11/24/2021 | [Manage Microsoft Defender for Endpoint alerts](/microsoft-365/security/defender-endpoint/manage-alerts?view=o3manage-mde-post-migration
-| 11/24/2021 | [Manage Microsoft Defender for Endpoint using Configuration Manager](/microsoft-365/security/defender-endpointmanage-mde-post-migrationn-configuration-manager?view=o365-21vianet) | modified |
-| 11/24/2021 | [Manage Microsoft Defender for Endpoint using Group Policy Objects](/microsoft-365/security/defemanage-mde-post-migrationpost-migration-group-policy-objects?view=o365-21vianet) | modified |
-| 11/24/2021 | [Manage Microsoft Defender for Endpoint using Intune](/microsoft-365/security/defender-endpoint/manage-atp-post-migration-imanage-mde-post-migration | modified |
-| 11/24/2021 | [Manage Microsoft Defender for Endpoint using PowerShell, WMI, and MPCmdRun.exe](/microsoft-365/semanage-mde-post-migrationmanage-atp-post-migration-other-tools?view=o365-21vianet) | modified |
+| 11/24/2021 | [Manage Microsoft Defender for Endpoint alerts](/microsoft-365/security/defender-endpoint/manage-alerts?view=o365-21vianet) | modified |
+| 11/24/2021 | [Manage Microsoft Defender for Endpoint using Configuration Manager](/microsoft-365/security/defender-endpoint/manage-atp-post-migration-configuration-manager?view=o365-21vianet) | modified |
+| 11/24/2021 | [Manage Microsoft Defender for Endpoint using Group Policy Objects](/microsoft-365/security/defender-endpoint/manage-atp-post-migration-group-policy-objects?view=o365-21vianet) | modified |
+| 11/24/2021 | [Manage Microsoft Defender for Endpoint using Intune](/microsoft-365/security/defender-endpoint/manage-atp-post-migration-intune?view=o365-21vianet) | modified |
+| 11/24/2021 | [Manage Microsoft Defender for Endpoint using PowerShell, WMI, and MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-atp-post-migration-other-tools?view=o365-21vianet) | modified |
 | 11/24/2021 | [Manage Microsoft Defender for Endpoint post migration](/microsoft-365/security/defender-endpoint/manage-atp-post-migration?view=o365-21vianet) | modified |
 | 11/24/2021 | [Review remediation actions following automated investigations](/microsoft-365/security/defender-endpoint/manage-auto-investigation?view=o365-21vianet) | modified |
 | 11/24/2021 | [Manage automation file uploads](/microsoft-365/security/defender-endpoint/manage-automation-file-uploads?view=o365-21vianet) | modified |
@@ -370,10 +738,10 @@
 | 11/24/2021 | [Specify the cloud protection level for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/specify-cloud-protection-level-microsoft-defender-antivirus?view=o365-21vianet) | modified |
 | 11/24/2021 | [Stop and quarantine file API](/microsoft-365/security/defender-endpoint/stop-and-quarantine-file?view=o365-21vianet) | modified |
 | 11/24/2021 | [Supported Microsoft Defender for Endpoint response APIs](/microsoft-365/security/defender-endpoint/supported-response-apis?view=o365-21vianet) | modified |
-| 11/24/2021 | [Make the switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/switch-to-mde-overview?view=o365-21vianet) | modified |
-| 11/24/2021 | [Switch to Microsoft Defender for Endpoint - Onboard](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-3?view=o365-21vianet) | modified |
-| 11/24/2021 | [Switch to Microsoft Defender for Endpoint - Prepare](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-1?view=o365-21vianet) | modified |
-| 11/24/2021 | [Switch to Microsoft Defender for Endpoint - Setup](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2?view=o365-21vianet) | modified |
+| 11/24/2021 | [Make the switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-migration?view=o365-21vianet) | modified |
+| 11/24/2021 | [Switch to Microsoft Defender for Endpoint - Onboard](/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-onboard?view=o365-21vianet) | modified |
+| 11/24/2021 | [Switch to Microsoft Defender for Endpoint - Prepare](/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-prepare?view=o365-21vianet) | modified |
+| 11/24/2021 | [Switch to Microsoft Defender for Endpoint - Setup](/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-setup?view=o365-21vianet) | modified |
 | 11/24/2021 | [Techniques in the device timeline](/microsoft-365/security/defender-endpoint/techniques-device-timeline?view=o365-21vianet) | modified |
 | 11/24/2021 | [Understand the analyst report section in threat analytics.](/microsoft-365/security/defender-endpoint/threat-analytics-analyst-reports?view=o365-21vianet) | modified |
 | 11/24/2021 | [Track and respond to emerging threats with Microsoft Defender for Endpoint threat analytics](/microsoft-365/security/defender-endpoint/threat-analytics?view=o365-21vianet) | modified |
@@ -537,7 +905,7 @@
 | 11/15/2021 | [Enable attack surface reduction rules](/microsoft-365/security/defender-endpoint/enable-attack-surface-reduction?view=o365-21vianet) | modified |
 | 11/15/2021 | [Host firewall reporting in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/host-firewall-reporting?view=o365-21vianet) | modified |
 | 11/15/2021 | [Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-support-events?view=o365-21vianet) | modified |
-| 11/15/2021 | [Manual deployment for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-install-manumanage-mde-post-migration| modified |
+| 11/15/2021 | [Manual deployment for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-install-manually?view=o365-21vianet) | modified |
 | 11/15/2021 | [Manage Microsoft Defender for Endpoint using PowerShell, WMI, and MPCmdRun.exe](/microsoft-365/security/defender-endpoint/manage-atp-post-migration-other-tools?view=o365-21vianet) | modified |
 | 11/15/2021 | [Review remediation actions following automated investigations](/microsoft-365/security/defender-endpoint/manage-auto-investigation?view=o365-21vianet) | modified |
 | 11/15/2021 | [Network device discovery and vulnerability management](/microsoft-365/security/defender-endpoint/network-devices?view=o365-21vianet) | modified |
@@ -547,8 +915,8 @@
 | 11/15/2021 | [Protect security settings with tamper protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection?view=o365-21vianet) | modified |
 | 11/15/2021 | [Microsoft Defender for Endpoint Device Control Printer Protection](/microsoft-365/security/defender-endpoint/printer-protection?view=o365-21vianet) | modified |
 | 11/15/2021 | [Set up Microsoft Defender for Endpoint deployment](/microsoft-365/security/defender-endpoint/production-deployment?view=o365-21vianet) | modified |
-| 11/15/2021 | [Switch to Microsoft Defender for Endpoint - Onboard](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-3?view=o365-21vianet) | modified |
-| 11/15/2021 | [Switch to Microsoft Defender for Endpoint - Prepare](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-1?view=o365-21vianet) | modified |
+| 11/15/2021 | [Switch to Microsoft Defender for Endpoint - Onboard](/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-onboard?view=o365-21vianet) | modified |
+| 11/15/2021 | [Switch to Microsoft Defender for Endpoint - Prepare](/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-prepare?view=o365-21vianet) | modified |
 | 11/15/2021 | [Report and troubleshoot Microsoft Defender for Endpoint ASR Rules](/microsoft-365/security/defender-endpoint/troubleshoot-asr-rules?view=o365-21vianet) | modified |
 | 11/15/2021 | [Troubleshoot problems with Network protection](/microsoft-365/security/defender-endpoint/troubleshoot-np?view=o365-21vianet) | modified |
 | 11/15/2021 | [Dashboard insights - threat and vulnerability management](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights?view=o365-21vianet) | modified |
@@ -869,7 +1237,7 @@
 | 11/18/2021 | [Run and customize on-demand scans in Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/run-scan-microsoft-defender-antivirus?view=o365-21vianet) | modified |
 | 11/18/2021 | [Schedule antivirus scans using PowerShell](/microsoft-365/security/defender-endpoint/schedule-antivirus-scans-powershell?view=o365-21vianet) | modified |
 | 11/18/2021 | [Server migration scenarios for the new version of Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration?view=o365-21vianet) | modified |
-| 11/18/2021 | [Switch to Microsoft Defender for Endpoint - Onboard](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-3?view=o365-21vianet) | modified |
+| 11/18/2021 | [Switch to Microsoft Defender for Endpoint - Onboard](/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-onboard?view=o365-21vianet) | modified |
 | 11/18/2021 | [Integrate Microsoft Defender for Endpoint with other Microsoft solutions](/microsoft-365/security/defender-endpoint/threat-protection-integration?view=o365-21vianet) | modified |
 | 11/18/2021 | [Indicator resource type](/microsoft-365/security/defender-endpoint/ti-indicator?view=o365-21vianet) | modified |
 | 11/18/2021 | [Report and troubleshoot Microsoft Defender for Endpoint ASR Rules](/microsoft-365/security/defender-endpoint/troubleshoot-asr-rules?view=o365-21vianet) | modified |
@@ -1095,346 +1463,3 @@
 | 11/19/2021 | [Quarantine notifications (end-user spam notifications) in Microsoft 365](/microsoft-365/security/office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages?view=o365-21vianet) | modified |
 
 
-## Week of October 25, 2021
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 10/25/2021 | [Manage a group in the admin center](/microsoft-365/admin/create-groups/manage-groups?view=o365-21vianet) | modified |
-| 10/25/2021 | [Remove license from shared mailbox](/microsoft-365/admin/email/remove-license-from-shared-mailbox?view=o365-21vianet) | modified |
-| 10/25/2021 | [Encryption in Microsoft 365](/microsoft-365/compliance/encryption?view=o365-21vianet) | modified |
-| 10/25/2021 | [Investigating partially indexed items in eDiscovery](/microsoft-365/compliance/investigating-partially-indexed-items-in-ediscovery?view=o365-21vianet) | modified |
-| 10/25/2021 | [How to configure Exchange Server on-premises to use Hybrid Modern Authentication](/microsoft-365/enterprise/configure-exchange-server-for-hybrid-modern-authentication?view=o365-21vianet) | modified |
-| 10/25/2021 | [Managing Office 365 endpoints](/microsoft-365/enterprise/managing-office-365-endpoints?view=o365-21vianet) | modified |
-| 10/25/2021 | [Post-migration activities for the migration from Microsoft Cloud Deutschland](/microsoft-365/enterprise/ms-cloud-germany-transition-add-experience?view=o365-21vianet) | modified |
-| 10/25/2021 | [Microsoft Defender for Endpoint detections API fields](/microsoft-365/security/defender-endpoint/api-portal-mapping?view=o365-21vianet) | modified |
-| 10/25/2021 | [Batch Update alert entities API](/microsoft-365/security/defender-endpoint/batch-update-alerts?view=o365-21vianet) | modified |
-| 10/25/2021 | [Advanced Hunting with PowerShell API Guide](/microsoft-365/security/defender-endpoint/exposed-apis-full-sample-powershell?view=o365-21vianet) | modified |
-| 10/25/2021 | [Find device information by internal IP API](/microsoft-365/security/defender-endpoint/find-machine-info-by-ip?view=o365-21vianet) | modified |
-| 10/25/2021 | [Get CVE-KB map API](/microsoft-365/security/defender-endpoint/get-cvekbmap-collection?view=o365-21vianet) | modified |
-| 10/25/2021 | [Get KB collection API](/microsoft-365/security/defender-endpoint/get-kbinfo-collection?view=o365-21vianet) | modified |
-| 10/25/2021 | [Get RBAC machine groups collection API](/microsoft-365/security/defender-endpoint/get-machinegroups-collection?view=o365-21vianet) | modified |
-| 10/25/2021 | [Get machines security states collection API](/microsoft-365/security/defender-endpoint/get-machinesecuritystates-collection?view=o365-21vianet) | modified |
-| 10/25/2021 | [Get user information API](/microsoft-365/security/defender-endpoint/get-user-information?view=o365-21vianet) | modified |
-| 10/25/2021 | [Import Indicators API](/microsoft-365/security/defender-endpoint/import-ti-indicators?view=o365-21vianet) | modified |
-| 10/25/2021 | [Troubleshoot issues and find answers on FAQs related to Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/ios-troubleshoot?view=o365-21vianet) | modified |
-| 10/25/2021 | [Investigate anomaly detection alerts](/microsoft-365/compliance/app-governance-anomaly-detection-alerts?view=o365-21vianet) | modified |
-| 10/25/2021 | [Get Started with app governance](/microsoft-365/compliance/app-governance-get-started?view=o365-21vianet) | modified |
-| 10/25/2021 | [Working with assessment templates in Microsoft Compliance Manager](/microsoft-365/compliance/compliance-manager-templates?view=o365-21vianet) | modified |
-| 10/25/2021 | [Configure retention settings to automatically retain or delete content](/microsoft-365/compliance/retention-settings?view=o365-21vianet) | modified |
-| 10/25/2021 | [Change history for Microsoft Managed Desktop documentation](/microsoft-365/managed-desktop/change-history-managed-desktop?view=o365-21vianet) | modified |
-| 10/25/2021 | [Alerts queue in Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/alerts-queue-endpoint-detection-response?view=o365-21vianet) | modified |
-| 10/25/2021 | [View and organize the Microsoft Defender for Endpoint Alerts queue](/microsoft-365/security/defender-endpoint/alerts-queue?view=o365-21vianet) | modified |
-| 10/25/2021 | [Microsoft Defender for Endpoint APIs connection to Power BI](/microsoft-365/security/defender-endpoint/api-power-bi?view=o365-21vianet) | modified |
-| 10/25/2021 | [Visit the Action center to see remediation actions](/microsoft-365/security/defender-endpoint/auto-investigation-action-center?view=o365-21vianet) | modified |
-| 10/25/2021 | [Configure and validate exclusions based on extension, name, or location](/microsoft-365/security/defender-endpoint/configure-extension-file-exclusions-microsoft-defender-antivirus?view=o365-21vianet) | modified |
-| 10/25/2021 | [Enable and configure Microsoft Defender Antivirus protection capabilities](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus?view=o365-21vianet) | modified |
-| 10/25/2021 | [Onboard Windows servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints?view=o365-21vianet) | modified |
-| 10/25/2021 | [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-21vianet) | modified |
-| 10/25/2021 | [Protect your organization's data with device control](/microsoft-365/security/defender-endpoint/device-control-report?view=o365-21vianet) | modified |
-| 10/25/2021 | [Microsoft Defender for Endpoint device timeline event flags](/microsoft-365/security/defender-endpoint/device-timeline-event-flag?view=o365-21vianet) | modified |
-| 10/25/2021 | [Enable attack surface reduction rules](/microsoft-365/security/defender-endpoint/enable-attack-surface-reduction?view=o365-21vianet) | modified |
-| 10/25/2021 | [Use sensitivity labels to prioritize incident response](/microsoft-365/security/defender-endpoint/information-protection-investigation?view=o365-21vianet) | modified |
-| 10/25/2021 | [Investigate Microsoft Defender for Endpoint alerts](/microsoft-365/security/defender-endpoint/investigate-alerts?view=o365-21vianet) | modified |
-| 10/25/2021 | [Investigate connection events that occur behind forward proxies](/microsoft-365/security/defender-endpoint/investigate-behind-proxy?view=o365-21vianet) | modified |
-| 10/25/2021 | [Investigate Microsoft Defender for Endpoint domains](/microsoft-365/security/defender-endpoint/investigate-domain?view=o365-21vianet) | modified |
-| 10/25/2021 | [Investigate Microsoft Defender for Endpoint files](/microsoft-365/security/defender-endpoint/investigate-files?view=o365-21vianet) | modified |
-| 10/25/2021 | [Investigate an IP address associated with an alert](/microsoft-365/security/defender-endpoint/investigate-ip?view=o365-21vianet) | modified |
-| 10/25/2021 | [Investigate devices in the Defender for Endpoint Devices list](/microsoft-365/security/defender-endpoint/investigate-machines?view=o365-21vianet) | modified |
-| 10/25/2021 | [Investigate a user account in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/investigate-user?view=o365-21vianet) | modified |
-| 10/25/2021 | [Deploy Microsoft Defender for Endpoint on Linux manually](/microsoft-365/security/defender-endpoint/linux-install-manually?view=o365-21vianet) | modified |
-| 10/25/2021 | [Deploy Microsoft Defender for Endpoint on Linux with Ansible](/microsoft-365/security/defender-endpoint/linux-install-with-ansible?view=o365-21vianet) | modified |
-| 10/25/2021 | [Deploy Microsoft Defender for Endpoint on Linux with Puppet](/microsoft-365/security/defender-endpoint/linux-install-with-puppet?view=o365-21vianet) | modified |
-| 10/25/2021 | [What's new in Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-whatsnew?view=o365-21vianet) | modified |
-| 10/25/2021 | [Live response command examples](/microsoft-365/security/defender-endpoint/live-response-command-examples?view=o365-21vianet) | modified |
-| 10/25/2021 | [Investigate entities on devices using live response in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/live-response?view=o365-21vianet) | modified |
-| 10/25/2021 | [Manual deployment for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-install-manually?view=o365-21vianet) | modified |
-| 10/25/2021 | [View and organize the Microsoft Defender for Endpoint devices list](/microsoft-365/security/defender-endpoint/machines-view-overview?view=o365-21vianet) | modified |
-| 10/25/2021 | [Manage Microsoft Defender for Endpoint alerts](/microsoft-365/security/defender-endpoint/manage-alerts?view=o365-21vianet) | modified |
-| 10/25/2021 | [Review remediation actions following automated investigations](/microsoft-365/security/defender-endpoint/manage-auto-investigation?view=o365-21vianet) | modified |
-| 10/25/2021 | [Microsoft Defender Antivirus compatibility with other security products](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility?view=o365-21vianet) | modified |
-| 10/25/2021 | [Microsoft Defender for Endpoint on iOS](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-ios?view=o365-21vianet) | modified |
-| 10/25/2021 | [Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac?view=o365-21vianet) | modified |
-| 10/25/2021 | [Overview of endpoint detection and response capabilities](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response?view=o365-21vianet) | modified |
-| 10/25/2021 | [Take response actions on a file in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/respond-file-alerts?view=o365-21vianet) | modified |
-| 10/25/2021 | [Take response actions on a device in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/respond-machine-alerts?view=o365-21vianet) | modified |
-| 10/25/2021 | [Microsoft Defender Security Center Security operations dashboard](/microsoft-365/security/defender-endpoint/security-operations-dashboard?view=o365-21vianet) | modified |
-| 10/25/2021 | [Server migration scenarios for the new version of Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration?view=o365-21vianet) | modified |
-| 10/25/2021 | [View and organize the Incidents queue](/microsoft-365/security/defender-endpoint/view-incidents-queue?view=o365-21vianet) | modified |
-| 10/25/2021 | [Investigate alerts in Microsoft 365 Defender](/microsoft-365/security/defender/investigate-alerts?view=o365-21vianet) | modified |
-| 10/25/2021 | [Investigate incidents in Microsoft 365 Defender](/microsoft-365/security/defender/investigate-incidents?view=o365-21vianet) | modified |
-| 10/25/2021 | [Manage incidents in Microsoft 365 Defender](/microsoft-365/security/defender/manage-incidents?view=o365-21vianet) | modified |
-| 10/25/2021 | [About the Microsoft Defender for Office 365 trial](/microsoft-365/security/office-365-security/about-defender-for-office-365-trial?view=o365-21vianet) | modified |
-| 10/25/2021 | [Connect your DNS records at IONOS by 1&1 to Microsoft 365](/microsoft-365/admin/dns/create-dns-records-at-1-1-internet?view=o365-21vianet) | modified |
-| 10/25/2021 | [Connect your DNS records at 123-reg.co.uk to Microsoft 365](/microsoft-365/admin/dns/create-dns-records-at-123-reg-co-uk?view=o365-21vianet) | modified |
-| 10/25/2021 | [Connect your DNS records at Amazon Web Services (AWS) to Microsoft 365](/microsoft-365/admin/dns/create-dns-records-at-aws?view=o365-21vianet) | modified |
-| 10/25/2021 | [Connect your DNS records at Cloudflare to Microsoft 365](/microsoft-365/admin/dns/create-dns-records-at-cloudflare?view=o365-21vianet) | modified |
-| 10/25/2021 | [Connect your DNS records at GoDaddy to Microsoft 365](/microsoft-365/admin/dns/create-dns-records-at-godaddy?view=o365-21vianet) | modified |
-| 10/25/2021 | [Connect your DNS records at Namecheap to Microsoft 365](/microsoft-365/admin/dns/create-dns-records-at-namecheap?view=o365-21vianet) | modified |
-| 10/25/2021 | [Connect your DNS records at Network Solutions to Microsoft 365](/microsoft-365/admin/dns/create-dns-records-at-network-solutions?view=o365-21vianet) | modified |
-| 10/25/2021 | [Connect your DNS records at OVH to Microsoft 365](/microsoft-365/admin/dns/create-dns-records-at-ovh?view=o365-21vianet) | modified |
-| 10/25/2021 | [Connect your DNS records at web.com to Microsoft 365](/microsoft-365/admin/dns/create-dns-records-at-web-com?view=o365-21vianet) | modified |
-| 10/25/2021 | [Connect your DNS records at Wix to Microsoft 365](/microsoft-365/admin/dns/create-dns-records-at-wix?view=o365-21vianet) | modified |
-| 10/26/2021 | [Learn about how to provide feedback to Microsoft](/microsoft-365/admin/misc/feedback-provide-microsoft?view=o365-21vianet) | added |
-| 10/26/2021 | [Microsoft Home Use Program frequently-asked questions (FAQ)](/microsoft-365/commerce/microsoft-home-use-program-faq?view=o365-21vianet) | modified |
-| 10/26/2021 | [Get Started with app governance](/microsoft-365/compliance/app-governance-get-started?view=o365-21vianet) | modified |
-| 10/26/2021 | [Search the audit log in the Microsoft 365 compliance center](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-21vianet) | modified |
-| 10/26/2021 | [Use SharePoint taxonomy terms to create topics in Microsoft Viva Topics](/microsoft-365/knowledge/sharepoint-taxonomy) | modified |
-| 10/26/2021 | [Configure Cornerstone OnDemand as a content source for Microsoft Viva Learning](/microsoft-365/learning/configure-cornerstone-content-source?view=o365-21vianet) | modified |
-| 10/26/2021 | [Configure Go1 as a content source for Microsoft Viva Learning](/microsoft-365/learning/configure-go1-content-source?view=o365-21vianet) | modified |
-| 10/26/2021 | [Add other content providers for Microsoft Viva Learning](/microsoft-365/learning/configure-other-content-sources?view=o365-21vianet) | modified |
-| 10/26/2021 | [Configure Saba as a content source for Microsoft Viva Learning](/microsoft-365/learning/configure-saba-content-source?view=o365-21vianet) | modified |
-| 10/26/2021 | [Configure Skillsoft as a content source for Microsoft Viva Learning](/microsoft-365/learning/configure-skillsoft-content-source?view=o365-21vianet) | modified |
-| 10/26/2021 | [Configure SAP SuccessFactors as a content source for Microsoft Viva Learning](/microsoft-365/learning/configure-successfactors-content-source?view=o365-21vianet) | modified |
-| 10/26/2021 | [Configure Udemy as a content source for Microsoft Viva Learning](/microsoft-365/learning/configure-udemy-content-source?view=o365-21vianet) | modified |
-| 10/26/2021 | [Configure learning content sources for Microsoft Viva Learning (Preview) in the Microsoft 365 admin center](/microsoft-365/learning/content-sources-365-admin-center?view=o365-21vianet) | modified |
-| 10/26/2021 | [Set preferences for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-preferences?view=o365-21vianet) | modified |
-| 10/26/2021 | [Server migration scenarios for the new version of Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration?view=o365-21vianet) | modified |
-| 10/26/2021 | [Shared devices](/microsoft-365/managed-desktop/service-description/shared-devices?view=o365-21vianet) | added |
-| 10/26/2021 | [Learn about retention for SharePoint and OneDrive](/microsoft-365/compliance/retention-policies-sharepoint?view=o365-21vianet) | modified |
-| 10/26/2021 | [Configure retention settings to automatically retain or delete content](/microsoft-365/compliance/retention-settings?view=o365-21vianet) | modified |
-| 10/26/2021 | [Get started with Microsoft Viva Topics](/microsoft-365/knowledge/get-started-with-viva-topics) | modified |
-| 10/26/2021 | [Introduction to Microsoft Viva Topics](/microsoft-365/knowledge/index) | modified |
-| 10/26/2021 | [Microsoft Managed Desktop app requirements](/microsoft-365/managed-desktop/service-description/mmd-app-requirements?view=o365-21vianet) | modified |
-| 10/27/2021 | [Connect your DNS records at Amazon Web Services (AWS) to Microsoft 365](/microsoft-365/admin/dns/create-dns-records-at-aws?view=o365-21vianet) | modified |
-| 10/27/2021 | [Connect your DNS records at Cloudflare to Microsoft 365](/microsoft-365/admin/dns/create-dns-records-at-cloudflare?view=o365-21vianet) | modified |
-| 10/27/2021 | [Connect your DNS records at Network Solutions to Microsoft 365](/microsoft-365/admin/dns/create-dns-records-at-network-solutions?view=o365-21vianet) | modified |
-| 10/27/2021 | [Connect your DNS records at web.com to Microsoft 365](/microsoft-365/admin/dns/create-dns-records-at-web-com?view=o365-21vianet) | modified |
-| 10/27/2021 | [Connect your DNS records at Wix to Microsoft 365](/microsoft-365/admin/dns/create-dns-records-at-wix?view=o365-21vianet) | modified |
-| 10/27/2021 | [Learn about Microsoft 365 Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-21vianet) | modified |
-| 10/27/2021 | [Set up a connector to import HR data](/microsoft-365/compliance/import-hr-data?view=o365-21vianet) | modified |
-| 10/27/2021 | [Set up a connector to import physical badging data](/microsoft-365/compliance/import-physical-badging-data?view=o365-21vianet) | modified |
-| 10/27/2021 | [Protect important folders from ransomware from encrypting your files with controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders?view=o365-21vianet) | modified |
-| 10/27/2021 | [Enable attack surface reduction rules](/microsoft-365/security/defender-endpoint/enable-attack-surface-reduction?view=o365-21vianet) | modified |
-| 10/27/2021 | [View attack surface reduction events](/microsoft-365/security/defender-endpoint/event-views?view=o365-21vianet) | modified |
-| 10/27/2021 | [Run the client analyzer on macOS or Linux](/microsoft-365/security/defender-endpoint/run-analyzer-macos-linux?view=o365-21vianet) | modified |
-| 10/27/2021 | [Activity Reports in the Microsoft 365 admin center](/microsoft-365/admin/activity-reports/activity-reports?view=o365-21vianet) | modified |
-| 10/27/2021 | [Microsoft 365 Reports in the admin center - Microsoft browser usage](/microsoft-365/admin/activity-reports/browser-usage-report?view=o365-21vianet) | modified |
-| 10/27/2021 | [Microsoft 365 Reports in the admin center - Email activity](/microsoft-365/admin/activity-reports/email-activity-ww?view=o365-21vianet) | modified |
-| 10/27/2021 | [Microsoft 365 Reports in the admin center - Email apps usage](/microsoft-365/admin/activity-reports/email-apps-usage-ww?view=o365-21vianet) | modified |
-| 10/27/2021 | [Microsoft 365 Reports in the admin center - Forms activity](/microsoft-365/admin/activity-reports/forms-activity-ww?view=o365-21vianet) | modified |
-| 10/27/2021 | [Microsoft 365 Reports in the admin center - Dynamics 365 Customer Voice activity](/microsoft-365/admin/activity-reports/forms-pro-activity-ww?view=o365-21vianet) | modified |
-| 10/27/2021 | [Microsoft 365 Reports in the admin center - Microsoft Office activations](/microsoft-365/admin/activity-reports/microsoft-office-activations-ww?view=o365-21vianet) | modified |
-| 10/27/2021 | [Microsoft 365 Reports in the admin center - Microsoft Teams device usage](/microsoft-365/admin/activity-reports/microsoft-teams-device-usage-preview?view=o365-21vianet) | modified |
-| 10/27/2021 | [Microsoft Teams device usage](/microsoft-365/admin/activity-reports/microsoft-teams-device-usage?view=o365-21vianet) | modified |
-| 10/27/2021 | [Microsoft 365 Reports in the admin center - Microsoft Teams user activity](/microsoft-365/admin/activity-reports/microsoft-teams-user-activity-preview?view=o365-21vianet) | modified |
-| 10/27/2021 | [Microsoft 365 admin center reports - Microsoft Teams user activity](/microsoft-365/admin/activity-reports/microsoft-teams-user-activity?view=o365-21vianet) | modified |
-| 10/27/2021 | [Microsoft 365 Reports in the admin center - Microsoft 365 Apps usage](/microsoft-365/admin/activity-reports/microsoft365-apps-usage-ww?view=o365-21vianet) | modified |
-| 10/27/2021 | [Microsoft 365 Reports in the admin center - Microsoft 365 groups](/microsoft-365/admin/activity-reports/office-365-groups-ww?view=o365-21vianet) | modified |
-| 10/27/2021 | [Microsoft 365 Reports in the admin center - OneDrive for Business activity](/microsoft-365/admin/activity-reports/onedrive-for-business-activity-ww?view=o365-21vianet) | modified |
-| 10/27/2021 | [Microsoft 365 Reports in the admin center - OneDrive for Business usage](/microsoft-365/admin/activity-reports/onedrive-for-business-usage-ww?view=o365-21vianet) | modified |
-| 10/27/2021 | [Microsoft 365 Reports in the admin center - SharePoint activity](/microsoft-365/admin/activity-reports/sharepoint-activity-ww?view=o365-21vianet) | modified |
-| 10/27/2021 | [Microsoft 365 Reports in the admin center - SharePoint site usage](/microsoft-365/admin/activity-reports/sharepoint-site-usage-ww?view=o365-21vianet) | modified |
-| 10/27/2021 | [Microsoft 365 Reports in the admin center - Yammer activity report](/microsoft-365/admin/activity-reports/yammer-activity-report-ww?view=o365-21vianet) | modified |
-| 10/27/2021 | [Microsoft 365 Reports in the admin center - Yammer device usage report](/microsoft-365/admin/activity-reports/yammer-device-usage-report-ww?view=o365-21vianet) | modified |
-| 10/27/2021 | [Microsoft 365 Reports in the admin center - Yammer groups activity report](/microsoft-365/admin/activity-reports/yammer-groups-activity-report-ww?view=o365-21vianet) | modified |
-| 10/27/2021 | [Determine if Centralized Deployment of add-ins works for your organization](/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-21vianet) | modified |
-| 10/27/2021 | [Test and deploy Microsoft 365 Apps by partners in the Integrated apps portal](/microsoft-365/admin/manage/test-and-deploy-microsoft-365-apps?view=o365-21vianet) | modified |
-| 10/27/2021 | Business Assist for Microsoft 365 | removed |
-| 10/27/2021 | [Increase threat protection for Microsoft 365 for Business](/microsoft-365/admin/security-and-compliance/increase-threat-protection?view=o365-21vianet) | modified |
-| 10/27/2021 | [Sign up for a Microsoft 365 Business Standard](/microsoft-365/admin/simplified-signup/signup-business-standard?view=o365-21vianet) | modified |
-| 10/27/2021 | Stop auto-forwarding emails | removed |
-| 10/27/2021 | [Create and publish sensitivity labels](/microsoft-365/compliance/create-sensitivity-labels?view=o365-21vianet) | modified |
-| 10/27/2021 | [Create an extractor Microsoft SharePoint Syntex](/microsoft-365/contentunderstanding/create-an-extractor) | modified |
-| 10/27/2021 | [Introduction to Microsoft Viva Topics](/microsoft-365/knowledge/index) | modified |
-| 10/27/2021 | [Device discovery frequently asked questions](/microsoft-365/security/defender-endpoint/device-discovery-faq?view=o365-21vianet) | modified |
-| 10/27/2021 | [Find ransomware with advanced hunting](/microsoft-365/security/defender/advanced-hunting-find-ransomware?view=o365-21vianet) | modified |
-| 10/27/2021 | [Microsoft 365 Defender APIs license and terms of use](/microsoft-365/security/defender/api-terms?view=o365-21vianet) | modified |
-| 10/27/2021 | [Recover from a ransomware attack](/microsoft-365/security/office-365-security/recover-from-ransomware?view=o365-21vianet) | modified |
-| 10/27/2021 | [Step 5. Protect information](/microsoft-365/solutions/ransomware-protection-microsoft-365-information?view=o365-21vianet) | modified |
-| 10/27/2021 | [Deploy ransomware protection for your Microsoft 365 tenant](/microsoft-365/solutions/ransomware-protection-microsoft-365?view=o365-21vianet) | modified |
-| 10/27/2021 | [Microsoft Viva # < 60 chars](/microsoft-365/viva/index?view=o365-21vianet) | modified |
-| 10/28/2021 | [Redirection of users from the Office 365 Security and Compliance center to the Microsoft 365 compliance center](/microsoft-365/compliance/microsoft-365-compliance-center-redirection?view=o365-21vianet) | modified |
-| 10/28/2021 | [Connect your DNS records at Amazon Web Services (AWS) to Microsoft 365](/microsoft-365/admin/dns/create-dns-records-at-aws?view=o365-21vianet) | modified |
-| 10/28/2021 | [Connect your DNS records at Cloudflare to Microsoft 365](/microsoft-365/admin/dns/create-dns-records-at-cloudflare?view=o365-21vianet) | modified |
-| 10/28/2021 | [Connect your DNS records at Wix to Microsoft 365](/microsoft-365/admin/dns/create-dns-records-at-wix?view=o365-21vianet) | modified |
-| 10/28/2021 | [Deploy Microsoft Defender for Endpoint on Linux manually](/microsoft-365/security/defender-endpoint/linux-install-manually?view=o365-21vianet) | modified |
-| 10/28/2021 | [CloudAppEvents table in the advanced hunting schema](/microsoft-365/security/defender/advanced-hunting-cloudappevents-table?view=o365-21vianet) | modified |
-| 10/28/2021 | [What's new in Microsoft 365 Defender](/microsoft-365/security/defender/whats-new?view=o365-21vianet) | modified |
-| 10/28/2021 | [Step 2. Deploy attack detection and response](/microsoft-365/solutions/ransomware-protection-microsoft-365-attack-detection-response?view=o365-21vianet) | modified |
-| 10/28/2021 | [Step 4. Protect devices](/microsoft-365/solutions/ransomware-protection-microsoft-365-devices?view=o365-21vianet) | modified |
-| 10/28/2021 | [Step 3. Protect identities](/microsoft-365/solutions/ransomware-protection-microsoft-365-identities?view=o365-21vianet) | modified |
-| 10/28/2021 | [Step 5. Protect information](/microsoft-365/solutions/ransomware-protection-microsoft-365-information?view=o365-21vianet) | modified |
-| 10/28/2021 | [Step 1. Configure security baselines](/microsoft-365/solutions/ransomware-protection-microsoft-365-security-baselines?view=o365-21vianet) | modified |
-| 10/28/2021 | [Deploy ransomware protection for your Microsoft 365 tenant](/microsoft-365/solutions/ransomware-protection-microsoft-365?view=o365-21vianet) | modified |
-| 10/28/2021 | [Learn about named entities (preview)](/microsoft-365/compliance/named-entities-learn?view=o365-21vianet) | added |
-| 10/28/2021 | [Use named entities in your data loss prevention policies (preview)](/microsoft-365/compliance/named-entities-use?view=o365-21vianet) | added |
-| 10/28/2021 | [Payload automations for Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-payload-automations?view=o365-21vianet) | added |
-| 10/28/2021 | [Simulation automations for Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-simulation-automations?view=o365-21vianet) | added |
-| 10/28/2021 | Payment information for Algeria | removed |
-| 10/28/2021 | Payment information for Angola | removed |
-| 10/28/2021 | Payment information for Argentina | removed |
-| 10/28/2021 | Payment information for Armenia | removed |
-| 10/28/2021 | Payment information for Australia | removed |
-| 10/28/2021 | Payment information for Austria | removed |
-| 10/28/2021 | Payment information for Azerbaijan | removed |
-| 10/28/2021 | Payment information for Bahamas | removed |
-| 10/28/2021 | Payment information for Bahrain | removed |
-| 10/28/2021 | Payment information for Bangladesh | removed |
-| 10/28/2021 | Payment information for Barbados | removed |
-| 10/28/2021 | Payment information for Belarus | removed |
-| 10/28/2021 | Payment information for Belgium | removed |
-| 10/28/2021 | Payment information for Belize | removed |
-| 10/28/2021 | Payment information for Bermuda | removed |
-| 10/28/2021 | Payment information for Bolivia | removed |
-| 10/28/2021 | Payment information for Bosnia and Herzegovina | removed |
-| 10/28/2021 | Payment information for Botswana | removed |
-| 10/28/2021 | Payment information for Brazil | removed |
-| 10/28/2021 | Payment information for Brunei | removed |
-| 10/28/2021 | Payment information for Bulgaria | removed |
-| 10/28/2021 | Payment information for Cameroon | removed |
-| 10/28/2021 | Payment information for Canada | removed |
-| 10/28/2021 | Payment information for Cape Verde | removed |
-| 10/28/2021 | Payment information for Cayman Islands | removed |
-| 10/28/2021 | Payment information for Chile | removed |
-| 10/28/2021 | Payment information for China | removed |
-| 10/28/2021 | Payment information for Colombia | removed |
-| 10/28/2021 | Payment information for Costa Rica | removed |
-| 10/28/2021 | Payment information for Côte d'Ivoire | removed |
-| 10/28/2021 | Payment information for Croatia | removed |
-| 10/28/2021 | Payment information for Curacao | removed |
-| 10/28/2021 | Payment information for Cyprus | removed |
-| 10/28/2021 | Payment information for Czech Republic | removed |
-| 10/28/2021 | Payment information for Democratic Republic of Congo | removed |
-| 10/28/2021 | Payment information for Denmark | removed |
-| 10/28/2021 | Payment information for Dominican Republic | removed |
-| 10/28/2021 | Payment information for Ecuador | removed |
-| 10/28/2021 | Payment information for Egypt | removed |
-| 10/28/2021 | Payment information for El Salvador | removed |
-| 10/28/2021 | Payment information for Estonia | removed |
-| 10/28/2021 | Payment information for Ethiopia | removed |
-| 10/28/2021 | Payment information for Faroe Islands | removed |
-| 10/28/2021 | Payment information for Fiji | removed |
-| 10/28/2021 | Payment information for Finland | removed |
-| 10/28/2021 | Payment information for France | removed |
-| 10/28/2021 | Payment information for French Guiana | removed |
-| 10/28/2021 | Payment information for Georgia | removed |
-| 10/28/2021 | Payment information for Germany | removed |
-| 10/28/2021 | Payment information for Ghana | removed |
-| 10/28/2021 | Payment information for Greece | removed |
-| 10/28/2021 | Payment information for Grenada | removed |
-| 10/28/2021 | Payment information for Guadeloupe | removed |
-| 10/28/2021 | Payment information for Guam | removed |
-| 10/28/2021 | Payment information for Guatemala | removed |
-| 10/28/2021 | Payment information for Guyana | removed |
-| 10/28/2021 | Payment information for Haiti | removed |
-| 10/28/2021 | Payment information for Honduras | removed |
-| 10/28/2021 | Payment information for Hong Kong | removed |
-| 10/28/2021 | Payment information for Hungary | removed |
-| 10/28/2021 | Payment information for Iceland | removed |
-| 10/28/2021 | Payment information for India | removed |
-| 10/28/2021 | Payment information for Indonesia | removed |
-| 10/28/2021 | Payment information for Iraq | removed |
-| 10/28/2021 | Payment information for Ireland | removed |
-| 10/28/2021 | Payment information for Israel | removed |
-| 10/28/2021 | Payment information for Italy | removed |
-| 10/28/2021 | Payment information for Jamaica | removed |
-| 10/28/2021 | Payment information for Japan | removed |
-| 10/28/2021 | Payment information for Jordan | removed |
-| 10/28/2021 | Payment information for Kazakhstan | removed |
-| 10/28/2021 | Payment information for Kenya | removed |
-| 10/28/2021 | Payment information for Korea | removed |
-| 10/28/2021 | Payment information for Kuwait | removed |
-| 10/28/2021 | Payment information for Kyrgyzstan | removed |
-| 10/28/2021 | Payment information for Latvia | removed |
-| 10/28/2021 | Payment information for Lebanon | removed |
-| 10/28/2021 | Payment information for Libya | removed |
-| 10/28/2021 | Payment information for Liechtenstein | removed |
-| 10/28/2021 | Payment information for Lithuania | removed |
-| 10/28/2021 | Payment information for Luxembourg | removed |
-| 10/28/2021 | Payment information for Macao | removed |
-| 10/28/2021 | Payment information for Macedonia, Former Yugoslav Republic of | removed |
-| 10/28/2021 | Payment information for Malaysia | removed |
-| 10/28/2021 | Payment information for Malta | removed |
-| 10/28/2021 | Payment information for Mauritius | removed |
-| 10/28/2021 | Payment information for Mexico | removed |
-| 10/28/2021 | Payment information for Moldova | removed |
-| 10/28/2021 | Payment information for Monaco | removed |
-| 10/28/2021 | Payment information for Mongolia | removed |
-| 10/28/2021 | Payment information for Montenegro | removed |
-| 10/28/2021 | Payment information for Morocco | removed |
-| 10/28/2021 | Payment information for Namibia | removed |
-| 10/28/2021 | Payment information for Nepal | removed |
-| 10/28/2021 | Payment information for Netherlands | removed |
-| 10/28/2021 | Payment information for New Zealand | removed |
-| 10/28/2021 | Payment information for Nicaragua | removed |
-| 10/28/2021 | Payment information for Nigeria | removed |
-| 10/28/2021 | Payment information for Norway | removed |
-| 10/28/2021 | Payment information for Oman | removed |
-| 10/28/2021 | Payment information for Pakistan | removed |
-| 10/28/2021 | Payment information for Palestinian Authority | removed |
-| 10/28/2021 | Payment information for Panama | removed |
-| 10/28/2021 | Payment information for Paraguay | removed |
-| 10/28/2021 | Payment information for Peru | removed |
-| 10/28/2021 | Payment information for Philippines | removed |
-| 10/28/2021 | Payment information for Poland | removed |
-| 10/28/2021 | Payment information for Portugal | removed |
-| 10/28/2021 | Payment information for Puerto Rico | removed |
-| 10/28/2021 | Payment information for Qatar | removed |
-| 10/28/2021 | Payment information for Romania | removed |
-| 10/28/2021 | Payment information for Russia | removed |
-| 10/28/2021 | Payment information for Rwanda | removed |
-| 10/28/2021 | Payment information for Saint Kitts and Nevis | removed |
-| 10/28/2021 | Payment information for Saint Lucia | removed |
-| 10/28/2021 | Payment information for Saint Vincent and the Grenadines | removed |
-| 10/28/2021 | Payment information for Saudi Arabia | removed |
-| 10/28/2021 | Payment information for Senegal | removed |
-| 10/28/2021 | Payment information for Serbia | removed |
-| 10/28/2021 | Payment information for Singapore | removed |
-| 10/28/2021 | Payment information for Slovakia | removed |
-| 10/28/2021 | Payment information for Slovenia | removed |
-| 10/28/2021 | Payment information for South Africa | removed |
-| 10/28/2021 | Payment information for Spain | removed |
-| 10/28/2021 | Payment information for Sri Lanka | removed |
-| 10/28/2021 | Payment information for Suriname | removed |
-| 10/28/2021 | Payment information for Sweden | removed |
-| 10/28/2021 | Payment information for Switzerland | removed |
-| 10/28/2021 | Payment information for Taiwan | removed |
-| 10/28/2021 | Payment information for Tajikistan | removed |
-| 10/28/2021 | Payment information for Tanzania | removed |
-| 10/28/2021 | Payment information for Thailand | removed |
-| 10/28/2021 | Payment information for Trinidad and Tobago | removed |
-| 10/28/2021 | Payment information for Tunisia | removed |
-| 10/28/2021 | Payment information for Turkey | removed |
-| 10/28/2021 | Payment information for Turkmenistan | removed |
-| 10/28/2021 | Payment information for Uganda | removed |
-| 10/28/2021 | Payment information for Ukraine | removed |
-| 10/28/2021 | Payment information for United Arab Emirates | removed |
-| 10/28/2021 | Payment information for United Kingdom | removed |
-| 10/28/2021 | Payment information for United States | removed |
-| 10/28/2021 | Payment information for Uruguay | removed |
-| 10/28/2021 | Payment information for Uzbekistan | removed |
-| 10/28/2021 | Payment information for Venezuela | removed |
-| 10/28/2021 | Payment information for Vietnam | removed |
-| 10/28/2021 | Payment information for Virgin Islands, US | removed |
-| 10/28/2021 | Payment information for Yemen | removed |
-| 10/28/2021 | Payment information for Zambia | removed |
-| 10/28/2021 | Payment information for Zimbabwe | removed |
-| 10/28/2021 | [Automatically apply a retention label to retain or delete content](/microsoft-365/compliance/apply-retention-labels-automatically?view=o365-21vianet) | modified |
-| 10/28/2021 | [Learn about sensitive information types](/microsoft-365/compliance/sensitive-information-type-learn-about?view=o365-21vianet) | modified |
-| 10/28/2021 | [Manage sensitivity labels in Office apps](/microsoft-365/compliance/sensitivity-labels-office-apps?view=o365-21vianet) | modified |
-| 10/28/2021 | [Use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites?view=o365-21vianet) | modified |
-| 10/28/2021 | [Cross-tenant mailbox migration](/microsoft-365/enterprise/cross-tenant-mailbox-migration?view=o365-21vianet) | modified |
-| 10/28/2021 | [Configure SAP SuccessFactors as a content source for Microsoft Viva Learning](/microsoft-365/learning/configure-successfactors-content-source?view=o365-21vianet) | modified |
-| 10/28/2021 | [Network configuration for Microsoft Managed Desktop](/microsoft-365/managed-desktop/get-ready/network?view=o365-21vianet) | modified |
-| 10/28/2021 | [Microsoft Defender for Endpoint Device Control Removable Storage Access Control, removable storage media](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control?view=o365-21vianet) | modified |
-| 10/28/2021 | [Pilot Microsoft Defender for Office 365, use the evaluation in your production environment](/microsoft-365/security/defender/eval-defender-office-365-pilot?view=o365-21vianet) | modified |
-| 10/28/2021 | [Manage submissions](/microsoft-365/security/office-365-security/admin-submission?view=o365-21vianet) | modified |
-| 10/28/2021 | [Attack simulation training deployment considerations and FAQ](/microsoft-365/security/office-365-security/attack-simulation-training-faq?view=o365-21vianet) | modified |
-| 10/28/2021 | [Get started using Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-21vianet) | modified |
-| 10/28/2021 | [Insights and reports Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-insights?view=o365-21vianet) | modified |
-| 10/28/2021 | [Create custom payloads for Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-payloads?view=o365-21vianet) | modified |
-| 10/28/2021 | [Simulate a phishing attack with Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-21vianet) | modified |
-| 10/28/2021 | Attack Simulator in the Security & Compliance Center | removed |
-| 10/28/2021 | [Configure Cornerstone OnDemand as a content source for Microsoft Viva Learning](/microsoft-365/learning/configure-cornerstone-content-source?view=o365-21vianet) | modified |
-| 10/28/2021 | [Configure Go1 as a content source for Microsoft Viva Learning](/microsoft-365/learning/configure-go1-content-source?view=o365-21vianet) | modified |
-| 10/28/2021 | [Add other content providers for Microsoft Viva Learning](/microsoft-365/learning/configure-other-content-sources?view=o365-21vianet) | modified |
-| 10/28/2021 | [Configure Saba as a content source for Microsoft Viva Learning](/microsoft-365/learning/configure-saba-content-source?view=o365-21vianet) | modified |
-| 10/28/2021 | [Add SharePoint as a learning content source for Microsoft Viva Learning](/microsoft-365/learning/configure-sharepoint-content-source?view=o365-21vianet) | modified |
-| 10/28/2021 | [Configure Skillsoft as a content source for Microsoft Viva Learning](/microsoft-365/learning/configure-skillsoft-content-source?view=o365-21vianet) | modified |
-| 10/28/2021 | [Configure Udemy as a content source for Microsoft Viva Learning](/microsoft-365/learning/configure-udemy-content-source?view=o365-21vianet) | modified |
-| 10/28/2021 | [Manage content sources for Microsoft Viva Learning in the Microsoft 365 admin center](/microsoft-365/learning/content-sources-365-admin-center?view=o365-21vianet) | modified |
-| 10/28/2021 | [Introduction to Microsoft Viva Learning](/microsoft-365/learning/index?view=o365-21vianet) | modified |
-| 10/28/2021 | [Overview of Microsoft Viva Learning](/microsoft-365/learning/overview-viva-learning?view=o365-21vianet) | modified |
-| 10/28/2021 | Set up Microsoft Viva Learning (Preview) in the Teams admin center | removed |
-| 10/28/2021 | [Understand terms and conditions](/microsoft-365/learning/terms-and-conditions?view=o365-21vianet) | modified |

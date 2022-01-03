@@ -21,7 +21,7 @@ ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 11/30/2021
+ms.date: 12/02/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ---
 
@@ -47,7 +47,7 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 ## Onboard devices to Microsoft Defender for Endpoint
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. Choose **Settings** \> **Endpoints** \> **Onboarding** (under **Device management**).
 
@@ -60,14 +60,17 @@ ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 
 ### Onboarding methods
 
+> [!IMPORTANT]
+> If you are using Microsoft Defender for Cloud, see [Integration with Microsoft Defender for Cloud](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud).
+
 Deployment methods vary, depending on operating system and preferred methods. The following table lists resources to help you onboard to Defender for Endpoint:
 
 |Operating systems  |Methods  |
 |---------|---------|
-|Windows 10 or later<br/><br/>Windows Server 2019 or later<br/><br/>Windows Server, version 1803 or later<br/><br/>Windows Server 2012 R2 and 2016<sup>[[1](#fn1)]<sup>  |   [Local script (up to 10 devices)](configure-endpoints-script.md)<br><br/>   [Group Policy](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft Endpoint Manager/ Mobile Device Management (Intune)](configure-endpoints-mdm.md)<br>    [VDI scripts](configure-endpoints-vdi.md) <br><br> **NOTE**: A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, Microsoft Endpoint Configuration Manager, or Intune.
-|Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)  or [Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) <br><br> **NOTE**: Microsoft Monitoring Agent is now Azure Log Analytics agent. To learn more, see [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).  
+|Windows 10 or later<br/><br/>Windows Server 2019 or later<br/><br/>Windows Server, version 1803 or later<br/><br/>Windows Server 2012 R2 and 2016<sup>[[1](#fn1)]<sup>  |   [Local script (up to 10 devices)](configure-endpoints-script.md)<br><br/>   [Group Policy](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft Endpoint Manager/ Mobile Device Management (Intune)](configure-endpoints-mdm.md)<br>    [VDI scripts](configure-endpoints-vdi.md) <br><br> **NOTE**: A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, Microsoft Endpoint Configuration Manager, or Intune. |
+|Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)  or [Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) <br><br> **NOTE**: Microsoft Monitoring Agent is now Azure Log Analytics agent. To learn more, see [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).  |
 |Windows 8.1 Enterprise<br/><br/>Windows 8.1 Pro<br/><br/>Windows 7 SP1 Pro<br/><br/>Windows 7 SP1| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **NOTE**: Microsoft Monitoring Agent is now Azure Log Analytics agent. To learn more, see [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).  
-| macOS (see [System requirements](microsoft-defender-endpoint-mac.md)) | [Local script](mac-install-manually.md)<br/><br/>[Microsoft Endpoint Manager](mac-install-with-intune.md)<br/><br/>[JAMF Pro](mac-install-with-jamf.md)<br/><br/>[Mobile Device Management](mac-install-with-other-mdm.md)   |
+| macOS (see [System requirements](microsoft-defender-endpoint-mac.md) | [Local script](mac-install-manually.md)<br/><br/>[Microsoft Endpoint Manager](mac-install-with-intune.md)<br/><br/>[JAMF Pro](mac-install-with-jamf.md)<br/><br/>[Mobile Device Management](mac-install-with-other-mdm.md)   |
 | Linux (see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements)) |  [Local script](linux-install-manually.md) <br><br/> [Puppet](linux-install-with-puppet.md) <br><br/> [Ansible](linux-install-with-ansible.md)|  
 | iOS | [Microsoft Endpoint Manager](ios-install.md)     |
 |Android  | [Microsoft Endpoint Manager](android-intune.md)  | 
@@ -85,7 +88,7 @@ To verify that your onboarded devices are properly connected to Defender for End
 |Operating system|Guidance|
 |---|---|
 |Windows 10 or later<br/><br/>Windows Server 2022<br/><br/>Windows Server 2019<br/><br/>Windows Server, version 1803, or later<br/><br/>Windows Server 2016<br/><br/>Windows Server 2012 R2|See [Run a detection test](run-detection-test.md).<br/><br/>Visit the Defender for Endpoint demo scenarios site (<https://demo.wd.microsoft.com>) and try one or more of the scenarios. For example, try the **Cloud-delivered protection** demo scenario.|
-|macOS (see [System requirements](microsoft-defender-endpoint-mac.md))|Download and use the DIY app at <https://aka.ms/mdatpmacosdiy>. <br/><br/> For more information, see [Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).|
+|macOS (see [System requirements](microsoft-defender-endpoint-mac.md)|Download and use the DIY app at <https://aka.ms/mdatpmacosdiy>. <br/><br/> For more information, see [Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).|
 |Linux (see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements))|1. Run the following command, and look for a result of **1**: `mdatp health --field real_time_protection_enabled`.<br/><br/>2. Open a Terminal window, and run the following command: `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`.<br/><br/>3. Run the following command to list any detected threats: `mdatp threat list`.<br/><br/>For more information, see [Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).|
 
 

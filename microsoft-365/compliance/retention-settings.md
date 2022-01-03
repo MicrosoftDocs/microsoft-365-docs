@@ -215,7 +215,7 @@ The **Exchange email** location supports retention for users' email, calendar, a
 
 Resource mailboxes, contacts, and Microsoft 365 group mailboxes aren't supported for Exchange email. For Microsoft 365 group mailboxes, select the **Microsoft 365 Groups** location instead. Although the Exchange location initially allows a group mailbox to be selected for a static scope, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for this location.
 
-Depending on your policy configuration, [inactive mailboxes](create-and-manage-inactive-mailboxes.md) might be included or not:
+Depending on your policy configuration, [inactive mailboxes](inactive-mailboxes-in-office-365.md) might be included or not:
 
 - Static policy scopes include inactive mailboxes when you use the default **All recipients** configuration but aren't supported for [specific inclusions or exclusions](#a-policy-with-specific-inclusions-or-exclusions). However, if you include or exclude a recipient that has an active mailbox at the time the policy is applied and the mailbox later goes inactive, the retention settings continue to be applied or excluded.
 
