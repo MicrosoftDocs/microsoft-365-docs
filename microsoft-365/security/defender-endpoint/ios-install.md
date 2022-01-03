@@ -144,7 +144,8 @@ Next, configure the supervised mode for Defender for Endpoint app through an App
 
 For unsupervised devices, a VPN is used in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
 
-Note that for supervised devices, a VPN is not needed for Web Protection capability and requires admins to setup a configuration profile on supervised devices. To configure for supervised devices, follow the steps in the [Complete deployment for supervised devices](#complete-deployment-for-supervised-devices) section.
+>[!NOTE]
+>For supervised devices, a VPN is not needed for Web Protection capability and requires admins to setup a configuration profile on supervised devices. To configure for supervised devices, follow the steps in the [Complete deployment for supervised devices](#complete-deployment-for-supervised-devices) section.
 
 Admins can configure auto-setup of VPN profile. This will automatically setup the Defender for Endpoint VPN profile without having the user to do so while onboarding. 
 
