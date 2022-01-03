@@ -42,7 +42,7 @@ Some groups allow dynamic membership or email.
 ||Microsoft 365 Groups|Distribution groups|Security groups|Mail-enabled security groups|Shared mailboxes|Dynamic distribution groups|
 |:----|:----|:----|:----|:----|:----|:----|
 |**Mail-enabled**|Yes|Yes|No|Yes|Yes|Yes|
-|**Dynamic membership in Azure AD**|Yes|No|Yes|No|No|Yes|
+|**Dynamic membership in Azure AD**|Yes|No|Yes|No|No|No|
 
 All of these group types can be used with Power Automate.
 
@@ -74,7 +74,7 @@ Microsoft 365 Groups can't be members of distribution groups.
 
 ## Dynamic distribution groups 
 
-Dynamic distribution groups are mail-enabled Active Directory group objects that are created to expedite the mass sending of email messages and other information within a Microsoft Exchange organization.
+[Dynamic distribution groups](/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) are mail-enabled groups that are used to send mail to people with specific attributes, such as department or location. These attributes are defined in the Exchange admin center rather than Azure AD.
 
 Unlike regular distribution groups that contain a defined set of members, the membership list for dynamic distribution groups is calculated each time a message is sent to the group, based on the filters and conditions that you define. When an email message is sent to a dynamic distribution group, it's delivered to all recipients in the organization that match the criteria defined for that group.
 
