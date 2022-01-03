@@ -11,7 +11,9 @@ ms.service: O365-seccomp
 ms.collection:
 - m365-security-compliance
 - m365initiative-compliance
-ms.custom: admindeeplinkDEFENDER
+ms.custom: 
+- admindeeplinkDEFENDER
+- intro-get-started
 ms.localizationpriority: medium
 description: "Learn about tasks that will help you quickly get started with compliance in Microsoft 365."
 ---

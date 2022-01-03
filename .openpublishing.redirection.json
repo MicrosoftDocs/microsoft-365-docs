@@ -1121,6 +1121,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/csv-file-for-an-id-list-content-search.md",
+      "redirect_url": "/microsoft-365/compliance/content-search",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/compliance/reports-in-security-and-compliance.md",
       "redirect_url": "/microsoft-365/admin/activity-reports/activity-reports",
       "redirect_document_id": false
@@ -1897,8 +1902,68 @@
     },
     {
       "source_path": "enterprise/office-365-germany-endpoints.md",
-      "redirect_url": "/microsoft-365/enterprise/microsoft-365-germany-endpoints",
-      "redirect_document_id": true
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-germany-endpoints.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-migration-opt-in.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-adfs.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-csp.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-devices.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-pre-work.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-azure-ad.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-experience.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-phases.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-experience.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-scc.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
     },
     {
       "source_path": "enterprise/office-365-ip-web-service.md",
@@ -4503,6 +4568,21 @@
     {
       "source_path": "microsoft-365/security/defender-endpoint/attack-surface-reduction-rules.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/configure-attack-surface-reduction.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/audit-windows-defender.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/event-views.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction",
       "redirect_document_id": false
     },
     {
