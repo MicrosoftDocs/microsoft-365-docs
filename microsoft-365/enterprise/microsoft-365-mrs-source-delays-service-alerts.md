@@ -28,7 +28,7 @@ These service alerts are displayed in the Microsoft 365 admin center. To view th
 
 This service alert informs you of potential delays to mailbox migrations in your organization. This includes cross-forest migrations, onboarding migrations, and offboarding  migrations. The service alert contains a table with information about the current migrations in your organization. Here's an example of the table with information about migration delays.
 
-|BatchName |ExchangeGuid |RequestGuid |DelayReason |QueuedHours |DelayInHours |SourceServer |RemoteDatabaseName |
+| BatchName | ExchangeGuid | RequestGuid | DelayReason |QueuedHours | DelayInHours | SourceServer | RemoteDatabaseName |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
 |MRS Migration|246c21f7-ca3c-4bba-ab5d-23456558c52a|3d7fab16-7d8e-4c81-a849-e0795054292a|DiskLatency|35.2|27.3|RD1GBL01EXCH003|GBL01EDAG001-db002|
 |MRS Tenant Monitoring|21e9a608-78c3-44ef-a4dd-d5e7222aae82|9974aeb4-2aa4-4a2c-aeb6-d94d78cc25c9|DiskLatency|0.4|0.9|RD1GBL01EXCH010|GBL01EDAG010-db003|
