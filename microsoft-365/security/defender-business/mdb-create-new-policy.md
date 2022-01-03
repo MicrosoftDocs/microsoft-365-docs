@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 12/10/2021
+ms.date: 12/27/2021
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -21,7 +21,10 @@ ms.collection:
 # Create a new policy in Microsoft Defender for Business (preview)
 
 > [!IMPORTANT]
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
+> Microsoft Defender for Business is now in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. We will onboard an initial set of customers and partners in the coming weeks and will expand the preview leading up to general availability. Note that preview will launch with an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
+> 
+> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
+
 
 Microsoft Defender for Business (preview) includes default policies that use recommended settings to protect your company's devices from day one. For example, you have **Next-generation protection** policies and **Firewall** policies that are built in using recommended security settings. But you're not limited to your default policies. You can create new policies, too, as described in this article.
 
@@ -51,7 +54,7 @@ Microsoft Defender for Business (preview) includes default policies that use rec
    - When you set up your device group, you specify certain criteria, such as the operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. 
    - All device groups, including the default and custom device groups that you define, are stored in Azure Active Directory (Azure AD).
 
-   To learn more about device groups, see . 
+   To learn more about device groups, see [Device groups in Defender for Business (preview)](mdb-create-edit-device-groups.md).
 
 8. On the **Configuration settings** tab, specify the settings for your policy, and then choose **Next**. For more information about the individual settings, see [Configuration settings for Microsoft Defender for Business (preview)](mdb-next-gen-configuration-settings.md).
 

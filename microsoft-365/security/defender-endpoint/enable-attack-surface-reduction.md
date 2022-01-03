@@ -122,7 +122,7 @@ The following procedures for enabling ASR rules include instructions for how to 
 
 ## MEM
 
-You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rules. The following procedure uses the rule [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers) for the example.
+You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rules. The following procedure uses the rule [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers) for the example.
 
 1. Open the Microsoft Endpoint Manager (MEM) admin center. In the **Home** menu, click  **Devices**, select **Configuration profiles**, and then click **Create profile**.
 
@@ -153,7 +153,7 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
 
    - In **Name**, type a name for the rule.
    - In **Description**, type a brief description.
-   - In **OMA-URI**, type or paste the specific OMA-URI link for the rule that you are adding. Refer to the MEM section earlier in this article for the OMA-URI to use for this example rule. For Azure Site Recovery rule GUIDS, see [Per rule descriptions](attack-surface-reduction-rules.md#per-rule-descriptions) in the topic: Attack surface reduction rules.
+   - In **OMA-URI**, type or paste the specific OMA-URI link for the rule that you are adding. Refer to the MEM section earlier in this article for the OMA-URI to use for this example rule. For attack surface reduction rule GUIDS, see [Per rule descriptions](attack-surface-reduction-rules-reference.md#per-rule-descriptions) in the topic: Attack surface reduction rules.
    - In **Data type**, select **String**.
    - In **Value**, type or paste the GUID value, the \= sign and the State value with no spaces (_GUID=StateValue_). Where:
      
@@ -209,7 +209,7 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) configuration service provider (CSP) to individually enable and set the mode for each rule.
 
-The following is a sample for reference, using GUID values for [attack surface reduction rules](attack-surface-reduction-rules.md).
+The following is a sample for reference, using GUID values for [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md).
 
 `OMA-URI path: ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules`
 
@@ -285,7 +285,7 @@ Example:
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**.
 
-2. Type one of the following cmdlets. (Refer to [Attack surface reduction rules](attack-surface-reduction-rules.md) for more details, such as rule ID.)
+2. Type one of the following cmdlets. (Refer to [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md) for more details, such as rule ID.)
 
     ```PowerShell
     Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Enabled
@@ -343,6 +343,6 @@ Example:
 
 ## Related articles
 
-- [Attack surface reduction rules](attack-surface-reduction-rules.md)
+- [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 - [Evaluate attack surface reduction](evaluate-attack-surface-reduction.md)
 - [Attack surface reduction FAQ](attack-surface-reduction.md)
