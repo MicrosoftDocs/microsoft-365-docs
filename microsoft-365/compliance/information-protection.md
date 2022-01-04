@@ -17,31 +17,32 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 recommendations: false
-description: "Implement Microsoft Information Protection (MIP) to help you protect sensitive information wherever it lives or travels."
+description: "Implement Microsoft Information Protection (MIP) capabilities to help you protect sensitive information wherever it lives or travels."
 ---
 
 # Microsoft Information Protection in Microsoft 365
 
 >*[Licensing for Microsoft 365 Security & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Implement Microsoft Information Protection (MIP) to help you discover, classify, and protect sensitive information wherever it lives or travels.
+Implement capabilities from Microsoft Information Protection (MIP) to help you discover, classify, and protect sensitive information wherever it lives or travels.
 
 MIP capabilities are included with Microsoft 365 Compliance and give you the tools to [know your data](#know-your-data), [protect your data](#protect-your-data), and [prevent data loss](#prevent-data-loss).
 
 ![Image of how MIP helps you discover, classify, and protect sensitive data.](../media/powered-by-intelligent-platform.png)
 
+For prescriptive guidance to deploy a MIP solution for your organization, see [Deploy a Microsoft Information Protection solution](information-protection-solution.md).
+
 For information about governing your data, see [Microsoft Information Governance in Microsoft 365](manage-Information-governance.md).
 
 ## Know your data
 
-To understand your data landscape and identify important data across your hybrid environment, use the following capabilities:
+To understand your data landscape and identify sensitive data across your hybrid environment, use the following capabilities:
 
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|:--------------------|
 |[Sensitive information types](sensitive-information-type-learn-about.md)| Identifies sensitive data by using built-in or custom regular expressions or a function. Corroborative evidence includes keywords, confidence levels, and proximity.| [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md)|
 |[Trainable classifiers](classifier-learn-about.md)| Identifies sensitive data by using examples of the data you're interested in rather than identifying elements in the item (pattern matching). You can use built-in classifiers or train a classifier with your own content.| [Get started with trainable classifiers](classifier-get-started-with.md) |
 |[Data classification](data-classification-overview.md) | A graphical identification of items in your organization that have a sensitivity label, a retention label, or have been classified. You can also use this information to gain insights into the actions that your users are taking on these items. | [Get started with content explorer](data-classification-content-explorer.md) <p> [Get started with activity explorer](data-classification-activity-explorer.md) |
-|[Azure Purview](/azure/purview/overview) |Identifies sensitive data and applies automatic labeling to any content in Azure Purview assets, such as Azure Blob Storage, Azure Files, Azure Data Lake Storage, and multi-cloud data sources. |[Labeling in Azure Purview](/azure/purview/create-sensitivity-label) |
 
 ## Protect your data
 
@@ -58,6 +59,7 @@ To apply flexible protection actions that include encryption, access restriction
 [Rights Management connector](/azure/information-protection/deploy-rms-connector) |Protection-only for existing on-premises deployments that use Exchange or SharePoint Server, or file servers that run Windows Server and File Classification Infrastructure (FCI). | [Steps to deploy the RMS connector](/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
 |[Azure Information Protection unified labeling scanner](/azure/information-protection/deploy-aip-scanner)| Discovers, labels, and protects sensitive information that resides in data stores that are on premises. | [Configuring and installing the Azure Information Protection unified labeling scanner](/azure/information-protection/deploy-aip-scanner-configure-install)|
 |[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)| Discovers, labels, and protects sensitive information that resides in data stores that are in the cloud. | [Discover, classify, label, and protect regulated and sensitive data stored in the cloud](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|[Azure Purview](/azure/purview/overview) |Identifies sensitive data and applies automatic labeling to content in Azure Purview assets. These include files in storage such as Azure Data Lake and Azure Files, and schematized data such as columns in Azure SQL DB, and Cosmos DB. |[Labeling in Azure Purview](/azure/purview/create-sensitivity-label) |
 |[Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|Extends sensitivity labels to third-party apps and services. <p> Example scenario: [Set and get a sensitivity label (C++)](/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft Information Protection (MIP) SDK setup and configuration](/information-protection/develop/setup-configure-mip)|
 
 
