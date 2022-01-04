@@ -62,11 +62,11 @@ Alternatively to using the default roles, you can create a new role group and ad
 
 > [!NOTE]
 > Now in preview, you can use the following role groups:
-> - **Microsoft Information Protection Administrator**
-> - **Microsoft Information Protection Policy Administrators**
-> - **Microsoft Information Protection Analysts**
-> - **Microsoft Information Protection Investigators**
-> - **Microsoft Information Protection Readers**
+> - **Information Protection Administrator**
+> - **Information Protection Policy Administrators**
+> - **Information Protection Analysts**
+> - **Information Protection Investigators**
+> - **Information Protection Readers**
 >
 > For an explanation of each one, and the new roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane.
 
