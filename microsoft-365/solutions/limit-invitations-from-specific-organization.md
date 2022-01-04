@@ -24,7 +24,7 @@ If you collaborate with another organization and want to limit who can be invite
 
 ## Create a security group
 
-The easiest way to specify who can be invited to another organization is to use a security group. You can use a security group with a defined membership or a dynamic security group.
+The easiest way to specify who can be invited to another organization is to use a security group. You can use a security group with a defined membership or a dynamic security group. You can use an existing security group or create a new one for this purpose.
 
 To create a security group
 1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
@@ -53,7 +53,7 @@ To add an organization
 There are two options for limiting who can be invited to an organization:
 
 - Limit who can be invited as a guest. This prevents users from being added to the other organization's Azure AD as a guest. It prevents sharing of files, folders, sites, teams, and Microsoft 365 groups with people who aren't in the security group.
-- Limit who can be added to an external shared channel. Prevents people who aren't in the security group from being added to shared channels in the other organization.
+- Limit who can be added to an external shared channel. This prevents people who aren't in the security group from being added to shared channels in the other organization.
 
 In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
 
@@ -79,4 +79,8 @@ To limit who can be invited as a shared chanel participant
 1. Select **Save** and close the **Outbound access settings** blade.
 
 ## Related topics
+
+[B2B direct connect overview](/azure/active-directory/external-identities/b2b-direct-connect-overview)
+
+[Configure cross-tenant access settings for B2B direct connect](/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-direct-connect)
 
