@@ -76,6 +76,9 @@ The following scenarios describe limitations in the decryption of files attached
 
 In both these scenarios, email messages with encrypted file attachments can be returned by an eDiscovery search if an email property (such as sent date, sender, recipient, or subject) matches the search query.
 
+> [!NOTE]
+> Decryption does not work for locally encrypted and uploaded files(e.g. AIP Client), only for files encrypted within the ODB/SPO Service.
+
 ## Requirements for decryption in eDiscovery
 
 You have to be assigned the RMS Decrypt role to preview, review, and export files encrypted with Microsoft encryption technologies. You also have to be assigned this role to review and query encrypted files that are added to a review set in Advanced eDiscovery.
