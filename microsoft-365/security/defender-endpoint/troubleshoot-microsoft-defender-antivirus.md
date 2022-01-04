@@ -1359,7 +1359,7 @@ Controlled Folder Access has blocked an untrusted process from potentially modif
 <dt>Level: &lt;Level&gt;, for example: win:Warning</dt>
 <dt>TimeCreated: &lt;SystemTime&gt;, time when the event was created</dt>
 <dt>EventRecordID: &lt;EventRecordID&gt;, index number of the event in the event log</dt>
-<dt>Execution ProcessID: &lt;Execution ProcessID&gt;, process ID number that generated the event</dt>
+<dt>Execution ProcessID: &lt;Execution ProcessID&gt;, process that generated the event</dt>
 <dt>Channel: &lt;Event channel&gt;, for example: Microsoft-Windows-Windows Defender/Operational</dt>
 <dt>Computer: &lt;Computer name&gt;</dt>
 <dt>Security UserID: &lt;Security UserID&gt;</dt>
