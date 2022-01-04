@@ -97,7 +97,7 @@ You can start your trial from within Compliance Manager and find out about recom
 1. Select one or more options on the **Industry** and **Country** screens that apply to you. These selections are only used to recommend assessments and will not be stored or affect your tenant settings. Industries are grouped by category, for example financial, manufacturing, or real estate, and countries are listed under their world regions.
 1. Compliance Manager will display templates that may be applicable to your needs. **Choose assessments** here that you wish to use to get an easy start on setup.
 
-To learn more about working with assessments, see the [Assessments page](#assessments-page) section.
+To learn more about getting started with assessments, see the [Assessments page](#assessments-page) section.
 
 ## Settings for automated testing and user history
 
