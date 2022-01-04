@@ -73,9 +73,9 @@ The following table lists commonly used Group Policy settings that are available
 |MAPS|Configure local setting override for reporting to Microsoft MAPS|[Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |MpEngine|Configure extended cloud check|[Configure the cloud block timeout period](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)|
 |MpEngine|Select cloud protection level|[Specify the cloud-delivered protection level](specify-cloud-protection-level-microsoft-defender-antivirus.md)|
-|Network inspection system|Specify additional definition sets for network traffic inspection|[Specify additional definition sets for network traffic inspection](specify-additional-definitions-network-traffic-inspection-mdav.md)|
-|Network inspection system|Turn on definition retirement|[Configure definition retirement](turn-on-definition-retirement.md)|
-|Network inspection system|Turn on protocol recognition|[Turn on protocol recognition](turn-on-protocol-recognition.md)|
+|Network inspection system|Specify additional definition sets for network traffic inspection| Not used (deprecated) |
+|Network inspection system|Turn on definition retirement| Not used (deprecated)|
+|Network inspection system|Turn on protocol recognition| Not used (deprecated)|
 |Quarantine|Configure local setting override for the removal of items from Quarantine folder|[Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
 |Quarantine|Configure removal of items from Quarantine folder|[Configure remediation for Microsoft Defender Antivirus scans](configure-remediation-microsoft-defender-antivirus.md)|
 |Real-time protection|Configure local setting override for monitoring file and program activity on your computer|[Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
