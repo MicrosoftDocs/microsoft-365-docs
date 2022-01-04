@@ -60,6 +60,16 @@ By default, global administrators for your tenant have access to this admin cent
 
 Alternatively to using the default roles, you can create a new role group and add either **Sensitivity Label Administrator** or **Organization Configuration** roles to this group. For a read-only role, use **Sensitivity Label Reader**. 
 
+> [!NOTE]
+> Now in preview, you can use the following role groups:
+> - **Microsoft Information Protection Administrator**
+> - **Microsoft Information Protection Policy Administrators**
+> - **Microsoft Information Protection Analysts**
+> - **Microsoft Information Protection Investigators**
+> - **Microsoft Information Protection Readers**
+>
+> For an explanation of each one, and the new roles that they contain, select a role group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> > **Permissions & roles** > **Compliance center** > **Roles**, and then review the description in the flyout pane.
+
 For instructions to add users to the default roles or create your own role groups, see [Permissions in the Microsoft 365 compliance center](microsoft-365-compliance-center-permissions.md).
 
 These permissions are required only to create and configure sensitivity labels and their label policies. They are not required to apply the labels in apps or services. If additional permissions are needed for specific configurations that relate to sensitivity labels, those permissions will be listed in their respective documentation instructions.
