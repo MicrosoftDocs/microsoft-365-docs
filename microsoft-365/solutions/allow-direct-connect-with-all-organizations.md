@@ -24,9 +24,11 @@ While sharing shared channels externally is enabled by default in Teams, Azure A
 
 You can change the B2B direct connect default settings to allow all organizations. This allows users to collaborate in shared channels without your organization having to create a separate configuration for each organization that you want to collaborate with. (Note that the organizations you collaborate with will also have to configure their B2B direct connect settings.)
 
+If your organization doesn't have a requirement to restrict collaboration with other organizations, enabling all organizations by default can save you time and complexity in managing each organization separately.
+
 ## Allow users to invite people in other organizations to participate in shared channels
 
-You can allow your users to invite people from other organizations to use shared resources such as shared channels in Teams by default.
+You can allow your users to invite people from other organizations to use shared resources - such as shared channels in Teams - by default.
 
 To allow users to invite B2B direct connect participants by default
 1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
@@ -55,4 +57,8 @@ To allow users to access resource from other organizations by default
 1. Close the **Default settings** blade.
 
 ## Related topics
+
+[B2B direct connect overview](/azure/active-directory/external-identities/b2b-direct-connect-overview)
+
+[Configure cross-tenant access settings for B2B direct connect](/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-direct-connect)
 
