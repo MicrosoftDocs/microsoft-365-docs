@@ -40,12 +40,16 @@ The options **Require device to be marked compliant** and **Require Hybrid Azure
 - People with third party or consumer email addresses
 - People from Microsoft 365 or Azure AD organizations that don't manage devices
 
+To require conditional access for people outside your organization, do the following:
 
-- Choose which conditional access claims you want to trust from other organizations
-- Configure a conditional access policy to require conditional access from people outside the organization
+1. [Trust conditional access settings from other organizations](#trust-conditional-access-settings-from-other-organizations)
+1. [Set up conditional access for people outside your organization](#set-up-conditional-access-for-people-outside-your-organization)
 
+## Trust conditional access settings from other organizations
 
-## Trust conditional access settings from all Azure Active Directory organizations
+Choose which conditional access claims you want to trust from other organizations
+
+### Trust conditional access settings from all Azure Active Directory organizations
 
 Once you've 
 
@@ -58,7 +62,7 @@ Once you've
 1. Select **Save** and close the **Default settings** blade.
 
 
-## Trust conditional access settings from a specific organization
+### Trust conditional access settings from a specific organization
 
 
 
@@ -73,7 +77,7 @@ We recommend only choosing multifactor authentication
 
 
 
-## Set up conditional access for people outside the organization
+## Set up conditional access for people outside your organization
 
 Setting up a conditional access policy for people outside your organization affects the following:
 
