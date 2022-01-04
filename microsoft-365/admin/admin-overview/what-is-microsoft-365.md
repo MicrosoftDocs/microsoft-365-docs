@@ -15,6 +15,7 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - adminvideo
+- intro-overview
 search.appverid:
 - MET150
 description: "Learn about Microsoft 365 Business Premium, a subscription service that takes care of IT part for you."
