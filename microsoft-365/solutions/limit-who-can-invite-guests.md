@@ -26,7 +26,7 @@ If your business processes require that you limit who can share with guests, or 
 
 ## Create a security group for people allowed to invite guests
 
-The first step is to create a security group for the users who will be allowed to invite guests. Be sure to configure this group to allow Azure AD role, and then assign it the Guest inviter role.
+The first step is to create a security group for the users who will be allowed to invite guests. Be sure to configure this group to allow an Azure AD role, and then assign it the Guest inviter role.
 
 To create a security group for guest inviters
 1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
@@ -42,9 +42,9 @@ To create a security group for guest inviters
 
 ## Configure external collaboration settings
 
-Once you've created teh security group and added the users who you want to be able to invite guests, the next step is to configure the Azure AD external collaboration settings to only allow users with the Guest inviter role to invite guests.
+Once you've created the security group and added the users who you want to be able to invite guests, the next step is to configure the Azure AD external collaboration settings to only allow users with the Guest inviter role to invite guests.
 
-Note that global administrators will still be allowed to invite guests regardless of this setting.
+Note that global administrators can always invite guests regardless of this setting.
 
 To configure Azure AD to limit guest invites to the Guest inviter role
 1. In [Azure Active Directory](https://aad.portal.azure.com/), select **External identities**.
@@ -55,3 +55,5 @@ To configure Azure AD to limit guest invites to the Guest inviter role
 ## Related topics
 
 [Allow only users in specific security groups to share externally in SharePoint and OneDrive](/sharepoint/manage-security-groups)
+
+[Enable B2B external collaboration and manage who can invite guests](/azure/active-directory/external-identities/delegate-invitations)
