@@ -62,8 +62,8 @@ Alternatively to using the default roles, you can create a new role group and ad
 
 > [!NOTE]
 > Now in preview, you can use the following role groups:
-> - **Information Protection Administrator**
-> - **Information Protection Policy Administrators**
+> - **Information Protection**
+> - **Information Protection Admins**
 > - **Information Protection Analysts**
 > - **Information Protection Investigators**
 > - **Information Protection Readers**
