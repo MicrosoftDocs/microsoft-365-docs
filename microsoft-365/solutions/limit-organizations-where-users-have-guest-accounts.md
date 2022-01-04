@@ -50,7 +50,9 @@ To add an organization
 1. Select **Add organization**.
 1. On the **Add organization** pane, type the full domain name (or tenant ID) for the organization.
 1. Select the organization in the search results, and then select **Add**.
-1. The organization appears in the **Organizational settings** list. At this point, all access settings for this organization are inherited from your default settings.
+1. The organization appears in the **Organizational settings** list.
+
+At this point, all access settings for this organization are inherited from your default settings.
 
 ## Configure the organization's outbound setting to allow all users
 
@@ -66,9 +68,10 @@ To allow users to B2B collaboration guests in an organization
 
 ## Related topics
 
-
 [B2B direct connect overview](/azure/active-directory/external-identities/b2b-direct-connect-overview)
 
 [Configure cross-tenant access settings for B2B direct connect](/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-direct-connect)
 
 [Limit who can be invited by an organization](limit-invitations-from-specific-organization.md)
+
+[Limit guest sharing to specific organizations](limit-guest-sharing-to-specific-organization.md)

@@ -85,3 +85,5 @@ To limit who can be invited as a shared chanel participant
 [Configure cross-tenant access settings for B2B direct connect](/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-direct-connect)
 
 [Limit organizations where users can have guest accounts](limit-organizations-where-users-have-guest-accounts.md)
+
+[Limit guest sharing to specific organizations](limit-guest-sharing-to-specific-organization.md)
