@@ -17,7 +17,7 @@ ms.assetid:
 ms.collection: 
   - M365-security-compliance
 description: Admins can learn about the mail flow reports that are available in the Reports dashboard in the Security & Compliance Center.
-ms.custom: 
+ms.custom: admindeeplinkEXCHANGE
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -33,7 +33,7 @@ ms.prod: m365-security
 
 > [!NOTE]
 >
-> Most of the reports in this article are also available in the Microsoft 365 Defender portal or the Exchange admin center (EAC). For more information, see the following topics:
+> Most of the reports in this article are also available in the Microsoft 365 Defender portal or the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. For more information, see the following topics:
 >
 > - [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 > - [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md)
@@ -51,14 +51,8 @@ If you have the [necessary permissions](#what-permissions-are-needed-to-view-the
 
 ## Exchange transport rule report
 
-The **Exchange transport rule report** shows the effect of mail flow rules (also known as transport rules) on incoming and outgoing messages in your organization.
-
-To view the report, open the Security & Compliance Center at <https://protection.office.com>, go to **Reports** \> **Dashboard** and select **Exchange Transport rule**. To go directly to the report, open <https://security.microsoft.com/reports/ETRRuleReport>.
-
-![Exchange transport rule widget in the Reports dashboard.](../../media/scc-transport-rule-report-widget.png)
-
 > [!NOTE]
-> Clicking on the widget for this report in the Security & Compliance Center (protection.office.com) now takes you to the full report in the Microsoft 365 Defender portal (security.microsoft.com). For details about the report, see [Exchange transport rule report](view-email-security-reports.md#exchange-transport-rule-report).
+> The **Exchange transport rule report** is now available in the EAC. For more information, see [Exchange transport rule report in the new EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
 
 ## Forwarding report
 
@@ -83,62 +77,17 @@ To view the report, open the [Security & Compliance Center](https://protection.o
 
 ## Top senders and recipients report
 
-The **Top senders and recipients** report is a pie chart showing your top email senders and recipients.
+The **Top senders and recipients** shows the top messages senders in your organization, as well as the top recipients for messages that were detected by EOP and Defender for Office 365 protection features.
 
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Top senders and recipients**. To go directly to the report, open <https://protection.office.com/reportv2?id=TopSenderRecipientsATP>.
+To view the report, open the Security & Compliance Center at <https://protection.office.com>, go to **Reports** \> **Dashboard** and select **Top senders and recipients**. To go directly to the report, open one of the following URLs:
 
-![Top senders and recipients widget in the Reports dashboard.](../../media/top-senders-and-recipients-widget.png)
+- Defender for Office 365: <https://protection.office.com/TopSenderRecipientsATP>
+- EOP: <https://protection.office.com/TopSenderRecipients>
 
-### Report view for the Top senders and recipient report
+![Top senders and recipients widget in the Reports dashboard.](../../media/scc-top-senders-and-recipients-widget.png)
 
-The following charts are available in the report view:
-
-- **Show data for \> Top mail senders**
-- **Show data for \> Top mail recipients**
-- **Show data for \> Top spam recipients**
-- **Show data for \> Top malware recipients** (EOP)
-- **Show data for \> Top malware recipients (Defender for Office 365)**
-
-The composition of the pie chart changes based on these selections.
-
-When you hover over a wedge in the pie chart, you can see a count of messages sent or received.
-
-If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.
-
-![Pie chart in Report view in the Top senders and recipients report.](../../media/top-senders-and-recipients-report-view.png)
-
-### Details table view for the Top senders and recipient report
-
-If you click **View details table**, the information that's shown depends on the chart you were looking at:
-
-- **Show data for \> Top mail senders**
-
-  - **Top mail senders**
-  - **Count**
-
-- **Show data for \> Top mail recipients**
-
-  - **Top mail recipients**
-  - **Count**
-
-- **Show data for \> Top spam recipients**
-
-  - **Top spam recipients**
-  - **Count**
-
-- **Show data for \> Top malware recipients** (EOP)
-
-  - **Top malware recipients**
-  - **Count**
-
-- **Show data for \> Top malware recipients (Defender for Office 365)**
-
-  - **Top malware recipients (Defender for Office 365)**
-  - **Count**
-
-If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.
-
-To go back to the report view, click **View report**.
+> [!NOTE]
+> Although clicking on the widget for this report in the Security & Compliance Center takes you to a protection.office.com page, the page content is from the Microsoft 365 Defender portal. For details about the report, see [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report).
 
 ## What permissions are needed to view these reports?
 
