@@ -333,9 +333,9 @@ Auto-policies run continuously until they are deleted. For example, new and modi
 
 After your auto-labeling policy is turned on, you can view the labeling progress for files in your chosen SharePoint and OneDrive locations. Emails are not included in the labeling progress because they are automatically labeled as they are sent.
 
-The labeling progress includes the files to be labeled, files labeled (past 7 days), and files labeled (total). Because of the maximum of labeling 25,000 files a day, this information provides you with visibility into the current labeling progress for your policy and how many files are still to be labeled.
+The labeling progress includes the files to be labeled by the policy, the files labeled in the last 7 days, and the total files labeled. Because of the maximum of labeling 25,000 files a day, this information provides you with visibility into the current labeling progress for your policy and how many files are still to be labeled.
 
-This information updates every 48 hours, so you can expect to see the most current data about every other day. When you select an auto-labeling policy to review the label progress by the top 10 sites, this information can be more current than the aggregated policy information displayed on the **Auto-labeling** main page.
+This progress information updates every 48 hours, so you can expect to see the most current data about every other day. When you select an auto-labeling policy to review the label progress by the top 10 sites, this information can be more current than the aggregated policy information displayed on the **Auto-labeling** main page.
 
 You can also see the results of your auto-labeling policy by using [content explorer](data-classification-content-explorer.md) when you have the appropriate [permissions](data-classification-content-explorer.md#permissions):
 
