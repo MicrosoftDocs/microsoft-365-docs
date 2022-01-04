@@ -64,6 +64,9 @@ For more information about these settings, see the "Configure encryption setting
 
 Documents encrypted with the previous settings can still be returned by an eDiscovery search. This may happen when a document property (such as the title, author, or modified date) matches the search criteria. Although these documents might be included in search results, they can't be previewed or reviewed. These documents will also remain encrypted when they're exported in Advanced eDiscovery.
 
+> [!IMPORTANT]
+> Decryption does not work for locally encrypted and uploaded files(e.g. AIP Client), only for files encrypted within the ODB/SPO Service.
+
 ## Decryption limitations with email attachments
 
 The following scenarios describe limitations in the decryption of files attached to email messages. These scenario descriptions also include workarounds to mitigate these limitations.
@@ -75,9 +78,6 @@ The following scenarios describe limitations in the decryption of files attached
 - Similarly, cloud attachments (files stored in a SharePoint site or OneDrive account) that are copied to an email message (by using the **Attach as copy** option in Outlook) can't be decrypted by eDiscovery. This is also because the encryption that applied by a sensitivity label is applied when the email message is sent. Searching the sender's mailbox for the unencrypted instance of the copy of the cloud attachment is also the workaround for this limitation.
 
 In both these scenarios, email messages with encrypted file attachments can be returned by an eDiscovery search if an email property (such as sent date, sender, recipient, or subject) matches the search query.
-
-> [!NOTE]
-> Decryption does not work for locally encrypted and uploaded files(e.g. AIP Client), only for files encrypted within the ODB/SPO Service.
 
 ## Requirements for decryption in eDiscovery
 
