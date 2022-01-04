@@ -35,7 +35,7 @@ Microsoft Intune is a cloud-based service that focuses on mobile device manageme
 
 - **MAM:** Remote workers might not want you to have full control on their personal devices, also known as bring-your-own device (BYOD) devices. You can give your hybrid workers options and still protect your organization. For example, hybrid workers can enroll their devices if they want full access to your organization resources. Or, if these users only want access to email or Microsoft Teams, then use app protection policies that require multi-factor authentication (MFA) to use these apps.
 
-For more information, see the [Manage endpoints with Intune and Microsoft 365](manage-devices-with-intune-overview.md) foundation solution.md.
+For more information, see the [Manage endpoints with Intune and Microsoft 365](manage-devices-with-intune-overview.md) foundation solution.
 
 ## Configuration Manager
 
