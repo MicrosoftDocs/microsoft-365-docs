@@ -93,8 +93,8 @@ To help you get started with Compliance Manager, you may start a free trial of p
 You can start your trial from within Compliance Manager and find out about recommended templates by following these steps.
 
 1. Select **Start trial** from the Compliance Manager dashboard. You can also use the **Add recommended assessments** link on the assessments page to open the wizard.
-1. Activate your trial and proceed to identify your organization. This step helps you find the most relevant templates for your organization. 
-1. Select one or more options on the **Industry** and **Country** screens that apply to you. These selections are only used to recommend assessments and will not be stored or affect your tenant settings. Industries are grouped by category, for example financial, manufacturing, or real estate, and countries are listed under their world regions.
+1. Activate your trial and proceed to identify your organization. This step helps you find the most relevant templates for your organization. Information provided here is only used to recommend assessments and will not be stored or affect your tenant settings.
+1. Select one or more options on the **Industry** and **Country** screens that apply to you.  Industries are grouped by category, for example financial, manufacturing, or real estate, and countries are listed under their world regions.
 1. Compliance Manager will display templates that may be applicable to your needs. **Choose assessments** here that you wish to use to get an easy start on setup.
 
 To learn more about getting started with assessments, see the [Assessments page](#assessments-page) section.
