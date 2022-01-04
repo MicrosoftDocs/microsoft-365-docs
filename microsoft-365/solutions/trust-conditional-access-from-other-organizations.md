@@ -27,35 +27,27 @@ You'll first need to configure Conditional Access for guest users on all cloud a
 
 
 
+
 - Trust multifactor authentication from other Azure AD tenants
 - Trust compliant devices
 - Trust hybrid Azure AD joined devices
 
-## Set up conditional access for people outside the organization
 
-- People using guest accounts (Azure AD B2B collaboration users)
-- External participants in Teams shared channels (Azure AD B2B direct connect users)
+Multifactor authentication can be used with any external account. If your organization doesn't trust multifactor authentication from other Azure AD organizations, users from those organizations will have to perform multifactor authentication when accessing resources in your organization. People with third party email addresses (not hosted by Microsoft) will always be prompted for multifactor authentication.
 
-> [!IMPORTANT]
-> While multifactor authentication can be used with any external account, options such as **Require device to be marked compliant** and **Require Hybrid Azure AD joined device** may not be good options for people outside your organization unless their devices are managed by your organization.
+The options **Require device to be marked compliant** and **Require Hybrid Azure AD joined device** require devices that are managed in Azure AD. If you choose to enable these options, people outside your organization must be using devices that are managed by your organization or by an organization that you trust. People without managed devices will be blocked, including:
 
-To set up multi-factor authentication for guests
-
-1. Go to [Azure conditional access policies](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
-1. On the **Conditional Access | Policies** blade, click **New policy**.
-1. In the **Name** field, type a name.
-1. Under **Assignments**, click **Users and groups**.
-1. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box.
-1. Under **Assignments**, click **Cloud apps or actions**.
-1. On the **Cloud apps or actions** blade, select **All cloud apps** on the **Include** tab.
-1. Under **Access controls**, click **Grant**.
-1. On the **Grant** blade, select the options that you want to require for people outside your organization, and then click **Select**.
-1. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
+- People with third party or consumer email addresses
+- People from Microsoft 365 or Azure AD organizations that don't manage devices
 
 
+- Choose which conditional access claims you want to trust from other organizations
+- Configure a conditional access policy to require conditional access from people outside the organization
 
 
 ## Trust conditional access settings from all Azure Active Directory organizations
+
+Once you've 
 
 1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
 1. Select **External Identities**, and then select **Cross-tenant access settings (preview)**.
@@ -68,6 +60,9 @@ To set up multi-factor authentication for guests
 
 ## Trust conditional access settings from a specific organization
 
+
+
+We recommend only choosing multifactor authentication 
 1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
 1. Select **External Identities**, and then select **Cross-tenant access settings (preview)**.
 1. Select the **Inbound access** settings for the organization where you want to trust conditional access settings.
@@ -75,6 +70,30 @@ To set up multi-factor authentication for guests
 1. Select the **Customize settings** option.
 1. Choose which claims you want your conditional access policies to accept from other organizations.
 1. Select **Save** and close the **Default settings** blade.
+
+
+
+## Set up conditional access for people outside the organization
+
+Setting up a conditional access policy for people outside your organization affects the following:
+
+- People using guest accounts (Azure AD B2B collaboration users)
+- External participants in Teams shared channels (Azure AD B2B direct connect users)
+
+
+To set up conditional access for people outside your organization
+1. Go to [Azure conditional access policies](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
+1. On the **Conditional Access | Policies** blade, click **New policy**.
+1. In the **Name** field, type a name.
+1. Under **Assignments**, click **Users and groups**.
+1. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box.
+1. Under **Assignments**, click **Cloud apps or actions**.
+1. On the **Cloud apps or actions** blade, select **All cloud apps** on the **Include** tab.
+1. Under **Access controls**, click **Grant**.
+1. On the **Grant** blade, select the options that you want to require for people outside your organization, and then click **Select**.
+1. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
+
+
 
 
 ## Related topics
