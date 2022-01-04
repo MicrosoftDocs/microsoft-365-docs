@@ -78,14 +78,26 @@ Users with Azure AD identities who don't have Office 365 or Microsoft 365 subscr
 
 The table below shows the functions allowed by each role in Compliance Manager. The table also shows how each [Azure AD role](/azure/active-directory/roles/permissions-reference) maps to Compliance Manager roles. Users will need at least the Compliance Manager reader role, or Azure AD global reader role, to access Compliance Manager.
 
-
 | User can: | Compliance Manager role | Azure AD role | 
 | :------------- | :-------------: | :------------: |
-| **Read but not edit data**| Compliance Manager Reader  | Azure AD Global reader, Security reader | 
-| **Edit data**| Compliance Manager Contribution | Compliance Administrator | 
-| **Edit test results**| Compliance Manager Assessor | Compliance Administrator | 
-| **Manage assessments, and template and tenant data**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  | 
-| **Assign users**| Global Administrator | Global Administrator | 
+| **Read but not edit data**| Compliance Manager Reader  | Azure AD Global reader, Security reader |
+| **Edit data**| Compliance Manager Contribution | Compliance Administrator |
+| **Edit test results**| Compliance Manager Assessor | Compliance Administrator |
+| **Manage assessments, and template and tenant data**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  |
+| **Assign users**| Global Administrator | Global Administrator |
+
+## Set up premium assessments trial
+
+To help you get started with Compliance Manager, you may start a free trial of premium assessments. This will allow you to select and try out templates from Compliance Manager's full collection of assessment templates, which help you measure your compliance with regulations and industry standards from around the world. To learn more about the premium assessment trial, see [About the free trial for Microsoft Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessments.md).
+
+You can start your trial from within Compliance Manager and find out about recommended templates by following these steps.
+
+1. Select **Start trial** from the Compliance Manager dashboard. You can also use the **Add recommended assessments** link on the assessments page to open the wizard.
+1. Activate your trial and proceed to identify your organization. This step helps you find the most relevant templates for your organization. 
+1. Select one or more options on the **Industry** and **Country** screens that apply to you. These selections are only used to recommend assessments and will not be stored or affect your tenant settings. Industries are grouped by category, for example financial, manufacturing, or real estate, and countries are listed under their world regions.
+1. Compliance Manager will display templates that may be applicable to your needs. **Choose assessments** here that you wish to use to get an easy start on setup.
+
+To learn more about working with assessments, see the [Assessments page](#assessments-page) section.
 
 ## Settings for automated testing and user history
 
@@ -247,14 +259,6 @@ To remove filters:
 
 - At the **Applied filters** heading above your compliance score, select the **X** next to the individual filter you want to remove; or
 - Select **Filter** on the upper-right side of your dashboard, then on the **Filters** flyout pane, select **Clear filters**.
-
-### Start your premium assessments trial
-
-When getting started with Compliance Manager, you may see the option on your dashboard to start a free trial of premium assessments. This will allow you to select and try out templates from Compliance Manager's full collection of assessment templates, which help you measure your compliance with regulations and industry standards from around the world.
-
-Starting a trial from the dashboard prompt, or from **Add recommended assessments** on the assessments page, will open a wizard that helps you select the most relevant templates for your organization. You will be prompted to select one or more options on the **Industry** and **Country** screens that apply to you. These selections are only used to recommend assessments and will not be stored or affect your tenant settings. Industries are grouped by category, for example financial, manufacturing, or real estate, and countries are listed under their world regions. Once you make your selections and proceed, Compliance Manager will display templates that may be applicable to your needs. Select any from the list that you wish to use to get an easy start on setup.
-
-To learn more about the premium assessment trial, see [About the free trial for Microsoft Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessments.md).
 
 ## Improvement actions page
 
