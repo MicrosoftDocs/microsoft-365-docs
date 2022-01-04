@@ -232,7 +232,7 @@ This section gives you a more detailed view of your score in two different ways:
 - **Categories**: shows the percentage of your overall score within data protection categories, such as "protect information" or "manage devices."
 - **Assessments**: shows the percentage of your progress in managing assessments for particular compliance and data protection standards, regulations, or laws, such as GDPR or NIST 800-53.
 
-### Filter your dashboard view
+### Filtering your dashboard view
 
 You can filter your dashboard view to see only the items related to particular regulations and standards, solutions, type of action, assessment groups, or data protection categories. Filtering your view in this way will also filter the score on your dashboard, showing how many points you've achieved out of total possible points based on your filter criteria.
 
