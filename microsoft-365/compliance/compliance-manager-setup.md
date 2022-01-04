@@ -232,7 +232,7 @@ This section gives you a more detailed view of your score in two different ways:
 - **Categories**: shows the percentage of your overall score within data protection categories, such as "protect information" or "manage devices."
 - **Assessments**: shows the percentage of your progress in managing assessments for particular compliance and data protection standards, regulations, or laws, such as GDPR or NIST 800-53.
 
-### Filtering your dashboard view
+### Filter your dashboard view
 
 You can filter your dashboard view to see only the items related to particular regulations and standards, solutions, type of action, assessment groups, or data protection categories. Filtering your view in this way will also filter the score on your dashboard, showing how many points you've achieved out of total possible points based on your filter criteria.
 
@@ -247,6 +247,14 @@ To remove filters:
 
 - At the **Applied filters** heading above your compliance score, select the **X** next to the individual filter you want to remove; or
 - Select **Filter** on the upper-right side of your dashboard, then on the **Filters** flyout pane, select **Clear filters**.
+
+### Start your premium assessments trial
+
+When getting started with Compliance Manager, you may see the option on your dashboard to start a free trial of premium assessments. This will allow you to select and try out templates from Compliance Manager's full collection of assessment templates, which help you measure your compliance with regulations and industry standards from around the world.
+
+Starting a trial from the dashboard prompt will open a wizard that helps you select the most relevant templates for your organization. You will be prompted to select one or more options on the **Industry** and **Country** screens that apply to you. These selections are only used to recommend assessments and will not be stored or affect your tenant settings. Industries are grouped by category, for example financial, manufacturing, or real estate, and countries are listed under their world regions. Once you make your selections and proceed, Compliance Manager will display templates that may be applicable to your needs. Select any from the list that you wish to use to get an easy start on setup.
+
+To learn more about the premium assessment trial, see [About the free trial for Microsoft Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessments.md).
 
 ## Improvement actions page
 
