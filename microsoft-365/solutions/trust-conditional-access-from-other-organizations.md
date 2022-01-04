@@ -20,7 +20,6 @@ description: Learn how to require people outside your organization to pass condi
 
 # Require conditional access for people outside your organization
 
-
 Configure whether your Conditional Access policies will accept claims from other Azure AD organizations when external users access your resources. The default settings apply to all external Azure AD organizations except those with organization-specific settings.
 
 You'll first need to configure Conditional Access for guest users on all cloud apps if you want to require multi-factor authentication or require a device to be compliant or hybrid Azure AD joined.
@@ -28,7 +27,7 @@ You'll first need to configure Conditional Access for guest users on all cloud a
 
 
 
-- Trust multifactor authentication from Azure AD tenants
+- Trust multifactor authentication from other Azure AD tenants
 - Trust compliant devices
 - Trust hybrid Azure AD joined devices
 
@@ -37,8 +36,8 @@ You'll first need to configure Conditional Access for guest users on all cloud a
 - People using guest accounts (Azure AD B2B collaboration users)
 - External participants in Teams shared channels (Azure AD B2B direct connect users)
 
-Important
-While multifactor authentication can be used with any guest account, options such as **Require device to be marked compliant** and **Require Hybrid Azure AD joined device** may not be good options for guest accounts unless guest devices are managed by your organization.
+> [!IMPORTANT]
+> While multifactor authentication can be used with any external account, options such as **Require device to be marked compliant** and **Require Hybrid Azure AD joined device** may not be good options for people outside your organization unless their devices are managed by your organization.
 
 To set up multi-factor authentication for guests
 
@@ -50,7 +49,7 @@ To set up multi-factor authentication for guests
 1. Under **Assignments**, click **Cloud apps or actions**.
 1. On the **Cloud apps or actions** blade, select **All cloud apps** on the **Include** tab.
 1. Under **Access controls**, click **Grant**.
-1. On the **Grant** blade, select the options that you want to require for guest users, and then click **Select**.
+1. On the **Grant** blade, select the options that you want to require for people outside your organization, and then click **Select**.
 1. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
 
 
