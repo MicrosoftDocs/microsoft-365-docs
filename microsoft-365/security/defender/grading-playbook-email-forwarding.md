@@ -78,7 +78,9 @@ Email forwarding rule allows users to set up a rule to forward email messages se
 
 ### What is a suspicious email forwarding rule?
 
-Adversaries might set up email rules to hide incoming emails in the compromised user mailbox in order to hide their malicious activities from the user. They might also set rules in the compromised user mailbox to delete emails, move the emails into another less noticeable folder, like RSS folder, or forward emails to an external account.  Some rules might move all the emails to another folder and mark them as “read”, while some rules might move only mails which contain specific keywords in the email message or subject. For example, the inbox rule might be set to look for keywords like “invoice”, “phish”, “do not reply”, “suspicious email”, or “spam” among others, and move them to an external email account. Attackers might also use the compromised user mailbox to distribute spam, phishing emails, or malware.
+Adversaries might set up email rules to hide incoming emails in the compromised user mailbox in order to hide their malicious activities from the user. They might also set rules in the compromised user mailbox to delete emails, move the emails into another less noticeable folder, like RSS folder, or forward emails to an external account.  
+
+Some rules might move all the emails to another folder and mark them as “read”, while some rules might move only mails which contain specific keywords in the email message or subject. For example, the inbox rule might be set to look for keywords like “invoice”, “phish”, “do not reply”, “suspicious email”, or “spam” among others, and move them to an external email account. Attackers might also use the compromised user mailbox to distribute spam, phishing emails, or malware.
  
 Microsoft Defender for Office 365 can now detect and alert on suspicious email forwarding rules, giving you the ability to find and delete hidden rules at the source.
 For more information, read the following blogs:
@@ -102,11 +104,11 @@ The researcher or SOC analyst must have access to the Microsoft 365 Defender inc
 
 To review the specific alert, open the Alert page to see the “Activity list” section as show below.
  
-"List of activities related to the alert" figure
+TO BE ADDED: "List of activities related to the alert" figure
 
 Click on the  “Activity”  to view details of that activity in the sidebar.
  
-"Details of the activity" figure
+TO BE ADDED: "Details of the activity" figure
 
 As shown in the image above, “Reason” contains the following information related to this alert.
 
@@ -152,7 +154,7 @@ For more information, read the following articles:
 
 The diagram below illustrates the workflow to identify malicious/suspicious email forwarding activities.
 
-"Alert investigation workflow" figure
+TO BE ADDED: "Alert investigation workflow" figure
 
 You can investigate this alert using any of the two methods, based on the availability of features in your Microsoft 365 Defender portal. You may choose to follow the entire process or a part of the process as per your convenience.
 
@@ -161,7 +163,7 @@ You can investigate this alert using any of the two methods, based on the availa
 Threat Explorer provides an interactive investigation experience for email related threats. You can use Threat Explorer to determine whether this activity is suspicious or not. You can use the following indicators from the alert information:
 1. SRL/RL: Use the (Suspicious) Recipients List to find these details:
  
-   "List of recipients" figure
+   TO BE ADDED: "List of recipients" figure
 
    a. Who else has forwarded emails to these recipients?
 
@@ -169,7 +171,7 @@ Threat Explorer provides an interactive investigation experience for email relat
 
    c. How frequently are emails forwarded to these recipients?
  
-   "Network Message ID" figure
+   TO BE ADDED: "Network Message ID" figure
 
 2. MTI: Use the Message Trace ID/Network Message ID to find these details:
 
@@ -191,14 +193,17 @@ Based on answers to the questions above, you should be able to determine whether
 
 If you have access to the following tables in Advance Hunting, use the   advanced hunting queries (AHQs) provided below to gather information related to the alert and determine whether or not the activity is suspicious.
 
-a.	EmailEvents - This table contains information related to email flow.
-b.	EmailUrlInfo - This table contains information related to URLs in emails.
-c.	CloudAppEvents -This table contains audit log of user activities.
-d.	IdentityLogonEvents - This table contains login information for all users.
+- EmailEvents - This table contains information related to email flow.
 
-"Advanced hunting page" figure
+- EmailUrlInfo - This table contains information related to URLs in emails.
 
-Use the following advanced hunting queries (AHQs) to gather information related to the following questions.
+- CloudAppEvents -This table contains audit log of user activities.
+
+- IdentityLogonEvents - This table contains login information for all users.
+
+TO BE ADDED: "Advanced hunting page" figure
+
+Use the following AHQs to gather information related to the following questions.
 
 >[!Note]
 >Certain parameters are unique to your organization or network. Fill in these specific parameters as instructed in each query.
@@ -275,7 +280,9 @@ Use the following advanced hunting queries (AHQs) to gather information related 
 In addition to the AHQs mentioned above, you can find suspicious forwarding rules using the Exchange admin center, based on the rule type (FT value in alert).
 
 1. ETR: Exchange transport rules are listed in the “Rules” section. Verify that all rules are as expected.
+
 2. SMTP: You can see mailbox forwarding rules by selecting the sender’s mailbox >  Manage mail flow settings > Email forwarding >Edit.
+
 3. InboxRule:  InboxRules are configured via e-mail client. You can use Get-InboxRule cmdlet to list inbox rules created by users.
 
 ### Additional investigation
