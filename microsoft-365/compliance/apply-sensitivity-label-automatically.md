@@ -327,6 +327,8 @@ You can modify your policy directly from this interface:
 
     When you're ready to run the policy without simulation, select the **Turn on policy** option.
 
+### Monitoring your auto-labeling policy
+
 After your auto-labeling policy is turned on, you can view the labeling progress for files in your chosen SharePoint and OneDrive locations. Emails are not included in the labeling progress because they are automatically labeled as they are sent.
 
 The labeling progress includes the files to be labeled, files labeled (past 7 days), and files labeled (total). Because of the maximum of labeling 25,000 files a day, this information provides you with visibility into the current labeling progress for your policy and how many files are still to be labeled.
