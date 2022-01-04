@@ -333,7 +333,7 @@ The labeling progress includes the files to be labeled, files labeled (past 7 da
 
 This information updates every 48 hours, so you can expect to see the most current data about every other day. When you select an auto-labeling policy to review the label progress by the top 10 sites, this information can be more current than the aggregated policy information displayed on the **Auto-labeling** main page.
 
-Auto-policies run continuously until they are deleted. For example, new and modified documents will be included with the current policy settings.
+Auto-policies run continuously until they are deleted. For example, new and modified files will be included with the current policy settings.
 
 You can also see the results of your auto-labeling policy by using [content explorer](data-classification-content-explorer.md) when you have the appropriate [permissions](data-classification-content-explorer.md#permissions):
 
