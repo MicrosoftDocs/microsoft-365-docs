@@ -15,39 +15,39 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Common implementation scenarios for sensitive information types
+description: How to implement common sensitive information types use case scenarios
 ms.custom: seo-marvel-apr2020
 ---
 
 # Common usage scenarios for sensitive information types
 
-This article describes some basic scenarios you could use as templates for implementing sensitive information types to protect your organization.
+This article describes how to implement some common sensitive information type (SIT) use case scenarios. You can use these procedures as examples and adapt them to your specific needs.
 
 ## Protect credit card numbers
 
-Contoso Bank would like to classify only credit cards issued by them as sensitive. The credit cards issued by them start with a set of six-digit patterns. They would like to customize the OOB credit card definition to only detect the credit card numbers starting with these six-digit patterns.
+Contoso Bank needs to classify the credit card numbers that they issue as sensitive. Their credit cards start with a set of six-digit patterns. They would like to customize the out of the box credit card definition to only detect the credit card numbers starting with their six-digit patterns.
 
 **Suggested solution**
 
-1. Create a copy of the credit card SIT
-1. Edit the high confidence pattern
-1. Add 'starts with' check and add the list of bin digits(formatted & unformatted). For example to ensure that only credit cards starting with 411111 & 433512 should be considered valid, add the following to the list 4111 11, 4111-11, 411111, 4335 12, 4335-12, 433512
-1. Repeat step 2 & 3 for low confidence pattern
+1. Create a copy of the credit card SIT <!-- TODD LINK OUT TO PROCEDURE ON HOW TO DO THIS-->
+1. Edit the high confidence pattern <!-- TODD LINK OUT TO PROCEDURE ON HOW TO DO THIS-->
+1. Add 'starts with' check and add the list of bin digits (formatted & unformatted). For example to ensure that only credit cards starting with 411111 & 433512 should be considered valid, add the following to the list 4111 11, 4111-11, 411111, 4335 12, 4335-12, 433512 <!-- TODD LINK OUT TO PROCEDURE ON HOW TO DO THIS AND ILLUSTRATE WITH A SCREENSHOT-->
+1. Repeat step 2 & 3 for the low confidence pattern
 
 ## Test numbers similar to Social Security numbers
 
-Contoso has identified a few nine-digit test numbers that trigger the SSN policy. They would like to exclude these numbers from the list of valid matches for SSN.
+Contoso has identified a few nine-digit test numbers that trigger false positive matches in the Social Security Number (SSN) data loss prevention (DLP) policy. They would like to exclude these numbers from the list of valid matches for SSN.
 
 **Suggested solution**
 
-1. Create a copy of the SSN
-1. Edit the high confidence pattern
+1. Create a copy of the SSN SIT <!-- TODD LINK OUT TO PROCEDURE ON HOW TO DO THIS-->
+1. Edit the high confidence pattern<!-- TODD LINK OUT TO PROCEDURE ON HOW TO DO THIS-->
 1. 1. Add the numbers to be excluded in the 'exclude specific values' additional check. For example, to exclude 239-23-532 & 23923532, just adding 23923532 will suffice
 1. Repeat step 2 & 3 for other confidence patterns as well
 
 ## Phone numbers in signature trigger match
 
-Phone numbers in signature trigger a match for Australia company number policy.
+Phone numbers in signature trigger a match for Australia company number DLP policy.
 
 **Suggested solution**
 
