@@ -11,7 +11,9 @@ ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection: M365-subscription-management
-ms.custom: it-pro
+ms.custom: 
+- it-pro
+- intro-overview
 description: Provides an introduction to the components, plans, and deployment paths for Microsoft 365 for enterprise.
 ---
 
