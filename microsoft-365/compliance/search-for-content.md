@@ -29,8 +29,6 @@ The first step is to starting using the Content search tool to choose content lo
 
 - [Configure search permissions filtering](permissions-filtering-for-content-search.md) so that an eDiscovery manager can only search subset of mailboxes or sites in your organization
 
-- [Run an ID list search](csv-file-for-an-id-list-content-search.md) to search for specific email messages
-
 - [Search cloud-based mailboxes](search-cloud-based-mailboxes-for-on-premises-users.md) for on-premises users in Microsoft 365
 
 - [View keyword statistics](view-keyword-statistics-for-content-search.md) for the results of a search and then refine the query if necessary
