@@ -637,7 +637,7 @@
           href: retention-regulatory-requirements.md
         - name: Declare records by using retention labels
           href: declare-records.md
-        - name: Use record versioning in SharePoint
+        - name: Use record versioning for files
           href: record-versioning.md
         - name: Get started with records management
           href: get-started-with-records-management.md
