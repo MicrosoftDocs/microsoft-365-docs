@@ -1,10 +1,9 @@
 ### YamlMime:Landing
 
-title: Top 20 admin help articles this month # < 60 chars
-summary: Curious which help articles are most popular with admins? Check out this collection of the 20 most-viewed help articles, updated monthly. # < 160 chars
-
+title: Top 20 most-viewed admin help articles this month # < 60 chars
+summary: Curious which help articles are most popular with admins? Check out this collection of the 20 most-viewed help articles, updated monthly. Last updated 1/5/2022 # < 160 chars
 metadata:
-  title: Top 20 admin help articles this month # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Top 20 most-viewed admin help articles this month # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Check out this collection of top 20 help articles that are most popular with admins, updated monthly. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
@@ -63,6 +62,10 @@ landingContent:
   # Card (optional)
   - title: Email
     linkLists:
+      - linkListType: overview
+        links:
+      - text: About shared mailboxes
+        url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
       - linkListType: how-to-guide
         links:
           - text: Configure email forwarding in Microsoft 365
@@ -75,13 +78,14 @@ landingContent:
             url: admin-overview/sign-up-for-office-365.md
           - text: Convert a user mailbox to a shared mailbox
             url: admin-overview/sign-up-for-office-365.md
-      - linkListType: overview
-        links:
-          - text: About shared mailboxes
-            url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
+
   # Card (optional)
   - title: Users, groups, and passwords
     linkLists:
+      - linkListType: overview
+        links:
+        - text: Compare groups
+          url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
       - linkListType: how-to-guide
         links:
           - text: Add users and assign licenses at the same time
@@ -92,7 +96,3 @@ landingContent:
             url: admin-overview/sign-up-for-office-365.md
           - text: Enable users to sign in to Outlook mobile apps with a QR code
             url: admin-overview/sign-up-for-office-365.md
-      - linkListType: overview
-        links:
-          - text: Compare groups
-            url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
