@@ -331,8 +331,8 @@ Your auto-policies run continuously until they are deleted. For example, new and
 
 You can also see the results of your auto-labeling policy by using [content explorer](data-classification-content-explorer.md) when you have the appropriate [permissions](data-classification-content-explorer.md#permissions):
 
-- **Content Explorer List Viewer** and **Data Classification List Viewer** (currently in preview) lets you see a file's label but not the file's contents.
-- **Content Explorer Content Viewer** and **Data Classification List Viewer** (currently in preview) lets you see the file's contents.
+- **Content Explorer List Viewer** or **Data Classification List Viewer** (currently in preview) lets you see a file's label but not the file's contents.
+- **Content Explorer Content Viewer** or **Data Classification List Viewer** (currently in preview) lets you see the file's contents.
 
 > [!TIP]
 > You can also use content explorer to identify locations that have documents with sensitive information, but are unlabeled. Using this information, consider adding these locations to your auto-labeling policy, and include the identified sensitive information types as rules.
