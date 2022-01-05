@@ -45,7 +45,7 @@ For more information, see this [overview of Configuration Manager](/mem/configmg
 
 ## Co-management
 
-Co-management combines your existing on-premises Configuration Manager investment with the cloud using Intune and other Microsoft 365 cloud services. You choose whether Configuration Manager or Intune is the management authority for different workload. 
+Co-management combines your existing on-premises Configuration Manager investment with the cloud using Intune and other Microsoft 365 cloud services. You choose whether Configuration Manager or Intune is the management authority for different workloads. 
 
 Co-management uses Intune-based cloud features, including Conditional Access and enforcing device compliance. You keep some tasks on-premises, while running other tasks in the cloud.
 
