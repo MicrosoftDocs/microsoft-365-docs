@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Admin Training Video Library # < 60 chars
+title: Admin training video library # < 60 chars
 summary: Learn how to set up and manage Microsoft 365 for your business with short videos. # < 160 chars
 
 metadata:
-  title: Admin Training Video Library # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Admin training video library # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn how to set up and manage Microsoft 365 for your business with short videos. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.prod: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
