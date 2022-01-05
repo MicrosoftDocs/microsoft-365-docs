@@ -21,9 +21,13 @@ description: Learn how to use shared channels with people outside your organizat
 
 # Collaborate with external participants in a channel
 
+If you want to allow your users to collaborate with people outside your organization in shared channels, you need to configure B2B direct connect for each organization that you want to collaborate with. (Alternatively, you can [Enable shared channels with all external organizations](/microsoft-365/solutions/allow-direct-connect-with-all-organizations).)
 
 ## Enable shared channels in Teams
 
+Shared channels is enabled by default in Teams. Follow this procedure to confirm the settings.
+
+To configure shared channels
 1. In the [Teams admin center](https://admin.teams.microsoft.com/), expand **Teams**, and then select **Teams policies**.
 1. Select the policy for which you want to enable shared channels, and then select **Edit**.
 1. Select the options you want to enable:
@@ -32,7 +36,15 @@ description: Learn how to use shared channels with people outside your organizat
     - To allow users to be invited to shared channels in other organizations, turn **Can be invited to external shared channels** on.
 1. Select **Apply**.
 
-## Add an organization
+## Configure cross-tenant access settings in Azure AD
+
+Azure AD B2B direct connect is disabled by default. To enable collaboration in shared channels with people from other organizations, you must:
+
+1. [Add an organization](#add-an-organization)
+1. [Configure inbound settings](#configure-inbound-settings) for the organization to allow users from the organization to be invited to your shared channels.
+1. [Configure outbound settings](#configure-outbound-settings) for the organization to allow your users to be invited to the other organization's shared channels.
+
+### Add an organization
 
 
 1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
@@ -44,7 +56,7 @@ description: Learn how to use shared channels with people outside your organizat
 1. The organization appears in the **Organizational settings** list. At this point, all access settings for this organization are inherited from your default settings.
 
 
-## Configure inbound settings
+### Configure inbound settings
 
 
 1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
@@ -58,7 +70,7 @@ description: Learn how to use shared channels with people outside your organizat
 
 
 
-## Configure outbound settings
+### Configure outbound settings
 
 
 1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
@@ -74,14 +86,11 @@ description: Learn how to use shared channels with people outside your organizat
 
 ## See also
 
-[Best practices for sharing files and folders with unauthenticated users](best-practices-anonymous-sharing.md)
+[B2B direct connect overview](/azure/active-directory/external-identities/b2b-direct-connect-overview)
 
-[Limit accidental exposure to files when sharing with guests](share-limit-accidental-exposure.md)
+[Configure cross-tenant access settings for B2B direct connect](/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-direct-connect)
 
-[Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)
+[Limit who can be invited by an organization](limit-invitations-from-specific-organization.md)
 
 [Create a B2B extranet with managed guests](b2b-extranet.md)
 
-[SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)
-
-[Sharing options are greyed out when sharing from SharePoint or OneDrive](/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)
