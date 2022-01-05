@@ -633,8 +633,6 @@
       items: 
         - name: Learn about records management
           href: records-management.md
-        - name: Resources for regulatory requirements
-          href: retention-regulatory-requirements.md
         - name: Declare records
           href: declare-records.md
         - name: Use record versioning
@@ -657,6 +655,8 @@
           href: auto-apply-retention-labels-scenario.md
         - name: Manage disposition of data
           href: disposition.md
+        - name: Resources for regulatory requirements
+          href: retention-regulatory-requirements.md
 - name: Manage app governance
   items: 
     - name: Protect and govern your apps
