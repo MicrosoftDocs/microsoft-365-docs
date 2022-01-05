@@ -42,6 +42,16 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 - [Azure, Dynamics 365, and Windows breach notification under the GDPR](regulatory/gdpr-breach-azure-dynamics-windows.md) - updated to clarify that customers don't need to use a pay service such as Defender for Cloud to receive security and privacy notifications.
 
+### eDiscovery
+
+- [Advanced eDiscovery workflow for content in Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#reference-guide) - updated with a new downloadable quick reference guide for managing Teams content in Advanced eDiscovery.
+
+### Information governance
+
+- [Enable archive mailboxes in the compliance center](enable-archive-mailboxes.md#run-diagnostics-on-archive-mailboxes) - added section about new diagnostics tool for archive mailboxes
+- [Use network upload to import your organization's PST files to Microsoft 365](use-network-upload-to-import-pst-files.md#step-2-upload-your-pst-files-to-microsoft-365) - PST import now supports AzCopy v10
+- [Restore an inactive mailbox](restore-an-inactive-mailbox.md) - revised procedure to restore an inactive mailbox by first adding LegacyExchangeDN of inactive mailbox to target mailbox
+
 ### Information protection
 
 - [Deploy a MIP solution](information-protection-solution.md): New step-by-step guidance for customers looking for a prescriptive roadmap to deploy Microsoft Information Protection (MIP).
