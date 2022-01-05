@@ -571,8 +571,8 @@
               href: retention-policies-exchange.md
             - name: Common settings for retention
               href: retention-settings.md
-            - name: Limits for retention and deletion
-              href: retention-limits.md
+        - name: Limits for retention and deletion
+          href: retention-limits.md
     - name: Information governance
       items: 
         - name: Learn about information governance
