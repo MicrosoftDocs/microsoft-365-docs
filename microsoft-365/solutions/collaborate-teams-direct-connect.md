@@ -46,7 +46,9 @@ Azure AD B2B direct connect is disabled by default. To enable collaboration in s
 
 ### Add an organization
 
+Add each organization with which you want to participate in shared channels.
 
+To add an organization
 1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
 1. Select **External Identities**, and then select **Cross-tenant access settings (preview)**.
 1. Select **Organizational settings**.
@@ -55,10 +57,11 @@ Azure AD B2B direct connect is disabled by default. To enable collaboration in s
 1. Select the organization in the search results, and then select **Add**.
 1. The organization appears in the **Organizational settings** list. At this point, all access settings for this organization are inherited from your default settings.
 
-
 ### Configure inbound settings
 
+Follow this procedure for each organization where you want to invite external participants.
 
+To configure inbound settings for an organization
 1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
 1. Select the inbound access link for the organization that you want to modify.
 1. On the **B2B direct connect** tab, choose **Customize settings**.
@@ -68,11 +71,11 @@ Azure AD B2B direct connect is disabled by default. To enable collaboration in s
 1. Select the **Office 365** application, and then choose **Select**.
 1. Select **Save** and close the **Outbound access settings** blade.
 
-
-
 ### Configure outbound settings
 
+Follow this procedure for each organization where you want your users to be able to participate in external shared channels.
 
+To configure outbound settings for an organization
 1. In [Azure Active Directory](https://aad.portal.azure.com), select **External Identities**, and then select **Cross-tenant access settings (preview)**.
 1. Select the outbound access link for the organization that you want to modify.
 1. On the **B2B direct connect** tab, choose **Customize settings**.
@@ -81,8 +84,6 @@ Azure AD B2B direct connect is disabled by default. To enable collaboration in s
 1. Select **Add Microsoft applications**.
 1. Select the **Office 365** application, and then choose **Select**.
 1. Select **Save** and close the **Outbound access settings** blade.
-
-
 
 ## See also
 
