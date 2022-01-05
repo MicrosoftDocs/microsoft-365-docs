@@ -40,11 +40,11 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ### Compliance and service assurance
 
-- [Azure, Dynamics 365, and Windows breach notification under the GDPR](regulatory/gdpr-breach-azure-dynamics-windows.md) - updated to clarify that customers don't need to use a pay service such as Defender for Cloud to receive security and privacy notifications.
+- [Azure, Dynamics 365, and Windows breach notification under the GDPR](regulatory/gdpr-breach-azure-dynamics-windows.md) - updated to clarify that customers don't need to use a pay service such as Defender for Cloud to receive security and privacy notifications
 
 ### eDiscovery
 
-- [Advanced eDiscovery workflow for content in Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#reference-guide) - updated with a new downloadable quick reference guide for managing Teams content in Advanced eDiscovery.
+- [Advanced eDiscovery workflow for content in Microsoft Teams](teams-workflow-in-advanced-ediscovery.md#reference-guide) - updated with a new downloadable quick reference guide for managing Teams content in Advanced eDiscovery
 
 ### Information governance
 
@@ -54,16 +54,16 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ### Information protection
 
-- [Deploy a MIP solution](information-protection-solution.md): New step-by-step guidance for customers looking for a prescriptive roadmap to deploy Microsoft Information Protection (MIP).
+- [Deploy a MIP solution](information-protection-solution.md) - New step-by-step guidance for customers looking for a prescriptive roadmap to deploy Microsoft Information Protection (MIP)
 
 ### Retention and records management
 
-- New guidance for [How long it takes for retention policies to take effect](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect).
-- New tenant settings rolling out: A records management setting that prevents the editing of properties for labeled SharePoint items that are marked as a record and locked, and other setting to prevent users from unlocking items that are marked as a record.
+- New guidance for [How long it takes for retention policies to take effect](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)
+- New tenant settings rolling out: A records management setting that prevents the editing of properties for labeled SharePoint items that are marked as a record and locked, and other setting to prevent users from unlocking items that are marked as a record
 
 ### Sensitivity labels
 
-- Mandatory labeling and a default label for Power BI are now generally available (GA).
+- Mandatory labeling and a default label for Power BI are now generally available (GA)
 
 ## November 2021
 
