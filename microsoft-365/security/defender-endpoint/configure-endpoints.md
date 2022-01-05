@@ -49,6 +49,11 @@ Windows device | Onboarding tool or method
 
 (<a id="fn1">1</a>) Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016).
 
+
+>[!IMPORTANT]
+>In order to be eligible to purchase Microsoft Defender for Endpoint Server SKU, you must have already purchased a combined minimum of any of the following, Windows E5/A5, Microsoft 365 E5/A5 or Microsoft 365 E5 Security subscription licenses.  For more information on licensing, see the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).  
+
+
 Topic|Description
 :---|:---
 [Onboard devices using Group Policy](configure-endpoints-gp.md)|Use Group Policy to deploy the configuration package on devices.

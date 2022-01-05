@@ -86,6 +86,9 @@ To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **
 :::image type="content" source="../../media/transport-rule-report-widget.png" alt-text="The Exchange transport rule widget on the Email & collaboration reports page" lightbox="../../media/transport-rule-report-widget.png":::
 
 On the **Exchange transport rule report** page, the available charts and data are described in the following sections.
+> [!NOTE]
+> The **Exchange transport rule report** is now available in the EAC. For more information, see [Exchange transport rule report in the new EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
+
 
 ### Chart breakdown by Direction
 
@@ -535,11 +538,11 @@ In the **View data by Email \> Spam** and **Chart breakdown by Detection Technol
 - **URL malicious reputation**
 - **Advanced filter**
 - **General filter**
-- **Mixed analysis detection**
-- **Fingerprint matching**
+- **Mixed analysis detection**: Multiple filters contributed to the verdict for the message.
+- **Fingerprint matching**: The message was marked as bad due to previous messages.
 - **Domain reputation**
-- **Bulk**
-- **IP reputation**
+- **Bulk**: Items detected as exceeding the bulk setting for the user.
+- **IP reputation**: The message was considered spam based on the sending IP address reputation.
 
 In the details table below the chart, the following information is available:
 

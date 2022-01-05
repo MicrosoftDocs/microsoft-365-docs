@@ -58,7 +58,7 @@ To view the report, open the Security & Compliance Center at <https://protection
 :::image type="content" source="../../media/scc-transport-rule-report-widget.png" alt-text="The Exchange transport rule widget in the Reports dashboard" lightbox="../../media/scc-transport-rule-report-widget.png":::
 
 > [!NOTE]
-> Clicking on the widget for this report in the Security & Compliance Center (protection.office.com) now takes you to the full report in the Microsoft 365 Defender portal (security.microsoft.com). For details about the report, see [Exchange transport rule report](view-email-security-reports.md#exchange-transport-rule-report).
+> The **Exchange transport rule report** is now available in the EAC. For more information, see [Exchange transport rule report in the new EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
 
 ## Forwarding report
 
