@@ -64,8 +64,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-      - text: About shared mailboxes
-        url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
+          - text: About shared mailboxes
+            url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
       - linkListType: how-to-guide
         links:
           - text: Configure email forwarding in Microsoft 365
