@@ -54,6 +54,166 @@
           href: device-onboarding-offboarding-macos-jamfpro.md
         - name: Onboard and offboard macOS devices into Compliance solutions using JAMF Pro for Microsoft Defender for Endpoint customers (preview)
           href: device-onboarding-offboarding-macos-jamfpro-mde.md
+    - name: Archive third-party data
+      items: 
+        - name: Overview of archiving third-party data
+          href: archiving-third-party-data.md
+        - name: Microsoft data connectors
+          items:  
+            - name: Bloomberg Message
+              href: archive-bloomberg-message-data.md 
+            - name: Epic EHR healthcare data (preview)
+              href: import-epic-data.md
+            - name: Facebook Business 
+              href: archive-facebook-data-with-sample-connector.md
+            - name: Generic EHR healthcare data (preview)
+              href: import-healthcare-data.md
+            - name: HR data 
+              href: import-hr-data.md
+            - name: ICE Chat
+              href: archive-icechat-data.md 
+            - name: Instant Bloomberg
+              href: archive-instant-bloomberg-data.md
+            - name: LinkedIn
+              href: archive-linkedin-data.md
+            - name: Physical badging data
+              href: import-physical-badging-data.md
+            - name: Slack eDiscovery (preview)
+              href: archive-slack-data-microsoft.md
+            - name: Twitter
+              href: archive-twitter-data-with-sample-connector.md
+        - name: Veritas data connectors
+          items:  
+            - name: CellTrust
+              href: archive-celltrust-data.md          
+            - name: Cisco Jabber on MS SQL
+              href: archive-ciscojabberonmssql-data.md
+            - name: Cisco Jabber on Oracle
+              href: archive-ciscojabberonoracle-data.md
+            - name: Cisco Jabber on PostgreSQL
+              href: archive-ciscojabberonpostgresql-data.md
+            - name: EML
+              href: archive-eml-data.md
+            - name: FX Connect
+              href: archive-fxconnect-data.md
+            - name: Jive
+              href: archive-jive-data.md
+            - name: MS SQL Database
+              href: archive-mssqldatabaseimporter-data.md
+            - name: Pivot
+              href: archive-pivot-data.md
+            - name: Redtail Speak
+              href: archive-redtailspeak-data.md
+            - name: Reuters Dealing
+              href: archive-reutersdealing-data.md
+            - name: Reuters Eikon
+              href: archive-reuterseikon-data.md
+            - name: Reuters FX
+              href: archive-reutersfx-data.md
+            - name: RingCentral
+              href: archive-ringcentral-data.md   
+            - name: Salesforce Chatter
+              href: archive-salesforcechatter-data.md
+            - name: ServiceNow
+              href: archive-servicenow-data.md
+            - name: Skype for Business
+              href: archive-skypeforbusiness-data.md
+            - name: Slack eDiscovery
+              href: archive-slack-data.md    
+            - name: Symphony
+              href: archive-symphony-data.md
+            - name: Text-delimited
+              href: archive-text-delimited-data.md
+            - name: Twitter (preview)
+              href: archive-veritas-twitter-data.md
+            - name: Webex Teams
+              href: archive-webexteams-data.md
+            - name: Webpages
+              href: archive-webpagecapture-data.md
+            - name: Workplace from Facebook
+              href: archive-workplacefromfacebook-data.md    
+            - name: XIP
+              href: archive-xip-data.md
+            - name: XSLT/XML 
+              href: archive-xslt-xml-data.md
+            - name: Yieldbroker
+              href: archive-yieldbroker-data.md
+            - name: YouTube
+              href: archive-youtube-data.md
+            - name: Zoom Meetings
+              href: archive-zoommeetings-data.md
+        - name: TeleMessage data connectors
+          items:  
+            - name: Android Archiver
+              href: archive-android-archiver-data.md
+            - name: AT&T SMS/MMS Network Archiver
+              href: archive-att-network-archiver-data.md
+            - name: Bell SMS/MMS Network Archiver
+              href: archive-bell-network-data.md
+            - name: Enterprise Number Archiver
+              href: archive-enterprise-number-data.md
+            - name: O2 Telefonica SMS and Voice Network Archiver
+              href: archive-o2-network-data.md
+            - name: Rogers Network Archiver
+              href: archive-rogers-network-archiver-data.md
+            - name: Signal Archiver
+              href: archive-signal-archiver-data.md
+            - name: Telegram Archiver
+              href: archive-telegram-archiver-data.md
+            - name: TELUS Network
+              href: archive-telus-network-data.md
+            - name: Verizon SMS/MMS Network Archiver
+              href: archive-verizon-network-data.md
+            - name: WeChat Archiver
+              href: archive-wechat-data.md
+            - name: WhatsApp Archiver
+              href: archive-whatsapp-data.md
+        - name: 17a-4 data connectors
+          items:
+            - name: BlackBerry DataParser 
+              href: archive-17a-4-blackberry-data.md
+            - name: Bloomberg DataParser 
+              href: archive-17a-4-bloomberg-data.md
+            - name: Cisco Jabber DataParser 
+              href: archive-17a-4-cisco-jabber-data.md
+            - name: Cisco Webex DataParser 
+              href: archive-17a-4-webex-teams-data.md
+            - name: FactSet DataParser 
+              href: archive-17a-4-factset-data.md
+            - name: Fuze DataParser 
+              href: archive-17a-4-fuze-data.md
+            - name: FX Connect DataParser 
+              href: archive-17a-4-fxconnect-data.md
+            - name: ICE DataParser 
+              href: archive-17a-4-ice-im-data.md
+            - name: InvestEdge DataParser 
+              href: archive-17a-4-investedge-data.md
+            - name: LivePerson Conversational Cloud DataParser 
+              href: archive-17a-4-liveperson-data.md
+            - name: Quip DataParser 
+              href: archive-17a-4-quip-data.md
+            - name: Refinitiv Eikon Messenger DataParser 
+              href: archive-17a-4-refinitiv-messenger-data.md
+            - name: ServiceNow DataParser 
+              href: archive-17a-4-servicenow-data.md
+            - name: Skype for Business Server DataParser
+              href: archive-17a-4-skype-for-business-server-data.md
+            - name: Slack DataParser 
+              href: archive-17a-4-slack-data.md
+            - name: SQL DataParser 
+              href: archive-17a-4-sql-database-data.md
+            - name: Symphony DataParser 
+              href: archive-17a-4-symphony-data.md
+            - name: Zoom DataParser 
+              href: archive-17a-4-zoom-data.md
+        - name: CellTrust connectors
+          items:
+            - name: CellTrust SL2 
+              href: archive-data-from-celltrustsl2.md
+        - name: Work with a partner to archive third-party data
+          href: work-with-partner-to-archive-third-party-data.md
+        - name: Search for third-party data
+          href: use-content-search-to-search-third-party-data-that-was-imported.md
 - name: Manage insider risks
   items:
     - name: Microsoft 365 insider risk solutions
