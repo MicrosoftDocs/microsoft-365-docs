@@ -7,15 +7,17 @@ f1.keywords:
 manager: dougeby
 audience: ITPro
 ms.topic: article
+description: Configure mobile app protection with App Protection policies (APP) to prevent specified corporate data from being copied and pasted to other apps. 
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-scenario
+- Intune App Protection policies
+- APP
+- mobile application management
+- MAM
+- set up mobile ap protection
 ms.custom: 
 keywords: 
-description: 
 ---
 
 # Step 1. Implement App Protection Policies
