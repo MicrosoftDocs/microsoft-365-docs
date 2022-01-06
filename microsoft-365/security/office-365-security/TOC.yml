@@ -162,6 +162,8 @@
          href: attack-simulation-training-simulation-automations.md
        - name: Payload automations in Attack simulation training
          href: attack-simulation-training-payload-automations.md
+       - name: End-user notifications for Attack simulation training
+         href: attack-simulation-traning-end-user-notifications.md
        - name: Insights and reporting in Attack simulation training
          href: attack-simulation-training-insights.md
        - name: Attack simulation training deployment considerations and FAQ
@@ -386,3 +388,5 @@
          href: /defender-for-identity
        - name: Defender for Cloud Apps
          href: /cloud-app-security
+       - name: Defender for Business
+         href: ../defender-business/index.yml

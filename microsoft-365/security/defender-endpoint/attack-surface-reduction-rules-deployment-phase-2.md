@@ -1,5 +1,5 @@
 ---
-title: Attack surface reduction rules deployment phase 2 - test
+title: ASR rules deployment phase 2 - test
 description: Provides guidance to test your attack surface reduction rules deployment.
 keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
@@ -159,12 +159,45 @@ This tab provides a method to select detected entities (for example, false posit
 > [!Note]
 >If you have a Microsoft Defender 365 E5 (or Windows E5?) license, this link will open the Microsoft Defender 365  Reports > Attack surface reductions > [Exclusions](https://security.microsoft.com/asr?viewid=exclusions) tab.
 
+### Use PowerShell as an alternative method to enable ASR rules
+
+You can use PowerShell - as an alternative to MEM - to enable ASR rules in audit mode to view a record of apps that would have been blocked if the feature was fully enabled. You can also get an idea of how often the rules will fire during normal use.
+
+To enable an attack surface reduction rule in audit mode, use the following PowerShell cmdlet:
+
+```PowerShell
+Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions AuditMode
+```
+
+Where `<rule ID>` is a [GUID value of the attack surface reduction rule](attack-surface-reduction-rules-reference.md).
+
+To enable all the added attack surface reduction rules in audit mode, use the following PowerShell cmdlet:
+
+```PowerShell
+(Get-MpPreference).AttackSurfaceReductionRules_Ids | Foreach {Add-MpPreference -AttackSurfaceReductionRules_Ids $_ -AttackSurfaceReductionRules_Actions AuditMode}
+```
+
+> [!TIP]
+> If you want to fully audit how attack surface reduction rules will work in your organization, you'll need to use a management tool to deploy this setting to devices in your network(s).
+
+You can also use Group Policy, Intune, or mobile device management (MDM) configuration service providers (CSPs) to configure and deploy the setting. Learn more in the main [Attack surface reduction rules](attack-surface-reduction.md) article.
+
+## Use Windows Event Viewer Review as an alternative to the attack surface reduction rules reporting page in the Microsoft 365 Defender portal
+
+To review apps that would have been blocked, open Event Viewer and filter for Event ID 1121 in the Microsoft-Windows-Windows Defender/Operational log. The following table lists all network protection events.
+
+Event ID | Description
+-|-
+ 5007 | Event when settings are changed
+ 1121 | Event when an attack surface reduction rule fires in block mode
+ 1122 | Event when an attack surface reduction rule fires in audit mode
+
 ## Additional topics in this deployment collection
 
-[Attack surface reduction rules deployment guide - overview](attack-surface-reduction-rules-deployment.md)
+[ASR rules deployment guide - overview](attack-surface-reduction-rules-deployment.md)
 
-[Attack surface reduction rules deployment phase 1 - plan](attack-surface-reduction-rules-deployment-phase-1.md)
+[ASR rules deployment phase 1 - plan](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[Attack surface reduction rules deployment phase 3 - implement](attack-surface-reduction-rules-deployment-phase-3.md)
+[ASR rules deployment phase 3 - implement](attack-surface-reduction-rules-deployment-phase-3.md)
 
-[Attack surface reduction rules deployment phase 4 - operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
+[ASR rules deployment phase 4 - operationalize](attack-surface-reduction-rules-deployment-phase-4.md)

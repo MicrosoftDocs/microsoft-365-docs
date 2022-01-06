@@ -28,6 +28,11 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+## 101.49.25 (20.121092.14925.0)
+
+- Added a new switch to the command-line tool to control whether archives are scanned during on-demand scans. This can be configured through `mdatp config scan-archives --value [enabled/disabled]`. By default, this is set to `enabled`.
+- Bug fixes
+
 ## 101.47.27 (20.121082.14727.0)
 
 - Fix for a system freeze occurring on shutdown on macOS Mojave and macOS Catalina

@@ -2,8 +2,7 @@
 title: Find devices by tag API
 description: Find all devices that contain specifc tag
 keywords: apis, supported apis, get, device, find, find device, by tag, tag
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
