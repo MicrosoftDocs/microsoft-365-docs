@@ -4,6 +4,7 @@
 |ACCESS|N/A|N/A|N/A|Planned|N/A|
 |AZURE ACTIVE DIRECTORY ADMIN|N/A|N/A|N/A|Planned|N/A|
 |COMPANY PORTAL|Planned|Planned|Planned|N/A|Planned|
+|CORTANA|N/A|N/A|N/A|N/A|Planned|
 |EXCEL|✔|✔|✔|✔|N/A|
 |EXCHANGE ADMIN|N/A|N/A|N/A|✔|N/A|
 |FORMS|N/A|N/A|N/A|N/A|N/A|

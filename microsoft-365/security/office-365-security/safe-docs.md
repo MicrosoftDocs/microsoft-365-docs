@@ -13,12 +13,12 @@ search.appverid:
 ms.assetid:
 ms.collection:
   - M365-security-compliance
-description: Learn about Safe Documents in Microsoft 365 E5 or Microsoft 365 E5 Security.
+description: Learn about Safe Documents in Microsoft 365 E5/A5 or Microsoft 365 E5/A5 Security.
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Safe Documents in Microsoft 365 E5
+# Safe Documents in Microsoft 365 E5/A5
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 

@@ -58,7 +58,8 @@ Click the link in the **Third-party data** column to go the step-by-step instruc
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[LinkedIn](archive-linkedin-data.md)   |![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
 |[Physical badging](import-physical-badging-data.md) ||||||![Check mark](../media/checkmark.png)|
-|[Twitter](archive-twitter-data-with-sample-connector.md)     |![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
+|[Slack eDiscovery](archive-slack-data-microsoft.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
+|[Twitter](archive-twitter-data-with-sample-connector.md)     |![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
 ||||||||
 
 ### Veritas data connectors
@@ -89,6 +90,7 @@ Before you can archive third-party data in Microsoft 365, you have to work with 
 |[Slack eDiscovery](archive-slack-data.md)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Symphony](archive-symphony-data.md)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Text-delimited](archive-text-delimited-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
+|[Twitter](archive-veritas-twitter-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
 |[Webex Teams](archive-webexteams-data.md)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Webpages](archive-webpagecapture-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
 |[Workplace from Facebook](archive-workplacefromfacebook-data.md)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
@@ -202,39 +204,6 @@ You can use [Communication compliance](communication-compliance.md) to examine t
 
 Signals from third-party data, like selective HR data, can be used by the [Insider risk management](insider-risk-management.md) solution to minimize internal risks by letting you to detect, investigate, and act on risky activities in your organization. For example, data imported by the HR data connector is used as risk indicators to help detect departing employee data theft.
 
-## Role group membership required to create data connectors
-
-To create third-party data connectors, users in your organization must be a member of one of the following role groups in the Microsoft 365 compliance center:
-
-- Communication Compliance
-
-- Communication Compliance Administrators
-
-- Compliance Administrator
-
-- Compliance Data Administrator
-
-- Compliance Manager Administrators
-
-- Compliance Manager Assessors
-
-- Compliance Manager Contributors
-
-- Insider Risk Management
-
-- Insider Risk Management Admins
-
-- Organization Management
-
-> [!NOTE]
-> Starting on November 30, 2021, you don't have to be assigned the Mailbox Import Export role in Exchange Online to create data connectors. After this date, you only need to be a member of one of the previous role groups in the Microsoft 365 compliance center to create a data connector.
-
-For more information about Microsoft 365 compliance center role groups and how to add users to a compliance role group, see:
-
-- [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
-
-- The "Add users to a compliance role group" section in [Permissions in the Microsoft 365 compliance center](microsoft-365-compliance-center-permissions.md#add-users-to-a-compliance-role-group)
-
 ## Using eDiscovery tools to search for third-party data
 
 After you use data connectors to import and archive third-party data in user mailboxes, you can use Microsoft 365 eDiscovery tools to search for third-party data. You can also eDiscovery tools to create query-based holds associated with Core eDiscovery and Advanced eDiscovery cases to preserve third-party data. For more information about eDiscovery tools, see [eDiscovery solutions in Microsoft 365](ediscovery.md).
@@ -289,7 +258,42 @@ For more information about creating eDiscovery search queries, see [Keyword quer
 
 Some data connectors are available in the US Government cloud. The following sections indicate the specific government environments that support third-party data connectors. For more information about US Government clouds, see [Microsoft 365 US Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy).
 
-### Telemessage data connectors
+### Veritas data connectors in the US Government cloud (preview)
+
+|Data connector  |GCC  |GCC High  |DoD  |
+|:---------|:---------|:---------|:---------|
+|CellTrust| Yes | No | No |
+|Cisco Jabber on MS SQL| Yes | No | No |
+|Cisco Jabber on Oracle| Yes | No | No |
+|Cisco Jabber on PostgreSQL| Yes | No | No |
+|EML| Yes | No | No |
+|FX Connect| Yes | No | No |
+|Jive| Yes | No | No |
+|MS SQL Database| Yes | No | No |
+|Pivot| Yes | No | No |
+|Redtail Speak| Yes | No | No |
+|Reuters Dealing| Yes | No | No |
+|Reuters Eikon| Yes | No | No |
+|Reuters FX| Yes | No | No |
+|RingCentral| Yes | No | No |
+|Salesforce Chatter| Yes | No | No |
+|ServiceNow| Yes | No | No |
+|Skype for Business| Yes | No | No |
+|Slack eDiscovery| Yes | No | No |
+|Symphony| Yes | No | No |
+|Text-delimited| Yes | No | No |
+|Twitter| Yes | No | No |
+|Webex Teams| Yes | No | No |
+|Webpages| Yes | No | No |
+|Workplace from Facebook| Yes | No | No |
+|XIP| Yes | No | No |
+|XSLT/XML| Yes | No | No |
+|Yieldbroker| Yes | No | No |
+|YouTube| No | No | No |
+|Zoom Meetings| Yes | No | No |
+|||||
+
+### TeleMessage data connectors in the US Government cloud
 
 |Data connector  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
@@ -307,14 +311,7 @@ Some data connectors are available in the US Government cloud. The following sec
 |WhatsApp Archiver | Yes | No | No |
 |||||
 
-### CellTrust data connectors
-
-|Data connector  |GCC  |GCC High  |DoD  |
-|:---------|:---------|:---------|:---------|
-|CellTrust SL2 | Yes | No | No |
-|||||
-
-### 17a-4 data connectors
+### 17a-4 data connectors in the US Government cloud
 
 |Data connector  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
@@ -338,9 +335,15 @@ Some data connectors are available in the US Government cloud. The following sec
 |Zoom DataParser | Yes | No | No |
 |||||
 
+### CellTrust data connectors in the US Government cloud
+
+|Data connector  |GCC  |GCC High  |DoD  |
+|:---------|:---------|:---------|:---------|
+|CellTrust SL2 | Yes | No | No |
+|||||
+
 ## Working with a Microsoft partner to archive third-party data
 
 Another option for importing and archiving third-party data is for your organization to work with a Microsoft Partner. If a third-party data type isn't supported by the data connectors available in the Microsoft compliance center, you can work with a partner who can provide a custom connector that will be configured to extract items from the third-party data source on a regular basis and then connect to the Microsoft cloud by a third-party API and import those items to Microsoft 365. The partner connector also converts the content of an item from the third-party data source to an email message and then imports it to a mailbox in Microsoft 365.
 
 For a list of partners that you can work with and the step-by-step process for this method, see [Work with a partner to archive third-party data in Microsoft 365](work-with-partner-to-archive-third-party-data.md).
-

@@ -72,7 +72,7 @@ For a brand new device running Windows 10 Pro Creators Update, or for a device t
 
  **Connect users to Azure AD:**
   
-1. In your user's Windows PC, that is running Windows 10 Pro, version 1703 (Creators Update) (see [pre-requisites](../security-and-compliance/pre-requisites-for-data-protection.md)), click the Windows logo, and then the Settings icon.
+1. In your user's Windows PC, that is running Windows 10 Pro, version 1703 (Creators Update) (see [pre-requisites](../security-and-compliance/pre-requisites-for-data-protection.md), click the Windows logo, and then the Settings icon.
   
    ![In the Start menu, click Windows Settings icon.](../../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
   

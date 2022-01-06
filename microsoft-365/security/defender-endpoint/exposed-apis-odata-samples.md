@@ -3,7 +3,6 @@ title: OData queries with Microsoft Defender for Endpoint
 ms.reviewer: 
 description: Use these examples of Open Data Protocol (OData) queries to help with data access protocols in Microsoft Defender for Endpoint.
 keywords: apis, supported apis, odata, query
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -270,7 +269,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScor
             "computerDnsName": "mymachine1.contoso.com",
             "firstSeen": "2018-08-02T14:55:03.7791856Z",
             "lastSeen": "2021-01-25T07:27:36.052313Z",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osProcessor": "x64",
             "version": "1901",
             "lastIpAddress": "10.166.113.46",

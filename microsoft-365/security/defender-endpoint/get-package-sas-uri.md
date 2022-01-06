@@ -2,8 +2,7 @@
 title: Get package SAS URI API
 description: Use this API to get a URI that allows downloading an investigation package.
 keywords: apis, graph api, supported apis, get package, sas, uri
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -37,7 +36,7 @@ Get a URI that allows downloading of an [Investigation package](collect-investig
 
 > [!IMPORTANT]
 >
-> - These actions are only available for devices on Windows 10, version  1703 or later.
+> - These actions are only available for devices on Windows 10, version  1703 or later, and on Windows 11.
 
 ## Limitations
 

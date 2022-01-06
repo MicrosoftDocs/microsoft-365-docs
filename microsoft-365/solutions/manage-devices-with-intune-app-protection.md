@@ -7,13 +7,17 @@ f1.keywords:
 manager: dougeby
 audience: ITPro
 ms.topic: article
+description: Configure mobile app protection with App Protection policies (APP) to prevent specified corporate data from being copied and pasted to other apps. 
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
+- Intune App Protection policies
+- APP
+- mobile application management
+- MAM
+- set up mobile ap protection
 ms.custom: 
 keywords: 
-description: 
 ---
 
 # Step 1. Implement App Protection Policies
@@ -33,7 +37,7 @@ If you have custom Line of Business applications that need protection, currently
 
 ## Configuring mobile app protection
 
-This guidance is tightly coordinated with the recommended [Zero Trust identity and device access policies](../security/office-365-security/microsoft-365-policies-configurations.md). After you create the Mobile App protection policies in Intune, work with your identity team to configure the conditional access policies in Azure AD that enforces mobile app protection. 
+This guidance is tightly coordinated with the recommended [Zero Trust identity and device access policies](../security/office-365-security/microsoft-365-policies-configurations.md). After you create the Mobile App protection policies in Intune, work with your identity team to configure the conditional access policy in Azure AD that enforces mobile app protection. 
 
 This illustration highlights the two policies (also described in the table below the illustration).
 

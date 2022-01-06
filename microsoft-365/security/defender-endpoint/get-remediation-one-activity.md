@@ -2,7 +2,6 @@
 title: Get one remediation activity by ID
 description: Returns information for the specified remediation activity.
 keywords: apis, remediation, remediation api, get, remediation tasks, remediation by ID,
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -71,7 +70,7 @@ nameId|String|Related product name|Microsoft Silverlight
 Priority|String|Priority the creator set for this remediation activity (High\Medium\Low)|High
 productId|String|Related product ID|microsoft-_-silverlight
 productivityImpactRemediationType|String|A few configuration changes could be requested only for devices that don't affect users. This value indicates the selection between "all exposed devices" or "only devices with no user impact."|AllExposedAssets
-rbacGroupNames|String|Related device group names|[ "Windows Servers", "Windows 10" ]
+rbacGroupNames|String|Related device group names|[ "Windows Servers", "Windows 11", "Windows 10" ]
 recommendedProgram|String|Recommended program to upgrade to|Null
 recommendedVendor|String|Recommended vendor to upgrade to|Null
 recommendedVersion|String|Recommended version to update/upgrade to|Null
