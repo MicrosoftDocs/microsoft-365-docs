@@ -19,7 +19,6 @@ ms.collection:
   - m365initiative-defender-office365
 ms.custom: 
   - seo-marvel-apr2020
-  - admindeeplinkDEFENDER
 description: Learn about threat investigation and response capabilities in Microsoft Defender for Office 365 Plan.
 ms.technology: mdo
 ms.prod: m365-security
@@ -35,16 +34,16 @@ ms.prod: m365-security
 
 Threat investigation and response capabilities in [Microsoft Defender for Office 365](defender-for-office-365.md) help security analysts and administrators protect their organization's Microsoft 365 for business users by:
 
-- Making it easy to identify, monitor, and understand cyberattacks
-- Helping to quickly address threats in Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams
-- Providing insights and knowledge to help security operations prevent cyberattacks against their organization
-- Employing [automated investigation and response in Office 365](automated-investigation-response-office.md) for critical email-based threats
+- Making it easy to identify, monitor, and understand cyberattacks.
+- Helping to quickly address threats in Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams.
+- Providing insights and knowledge to help security operations prevent cyberattacks against their organization.
+- Employing [automated investigation and response in Office 365](automated-investigation-response-office.md) for critical email-based threats.
 
 Threat investigation and response capabilities provide insights into threats and related response actions that are available in the Microsoft 365 Defender portal. These insights can help your organization's security team protect users from email- or file-based attacks. The capabilities help monitor signals and gather data from multiple sources, such as user activity, authentication, email, compromised PCs, and security incidents. Business decision makers and your security operations team can use this information to understand and respond to threats against your organization and protect your intellectual property.
 
 ## Get acquainted with threat investigation and response tools
 
-Threat investigation and response capabilities surface in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, as a set of tools and response workflows, including the following:
+Threat investigation and response capabilities in the Microsoft 365 Defender portal at <https://security.microsoft.com> are a set of tools and response workflows that include:
 
 - [Explorer](#explorer)
 - [Incidents](#incidents)
@@ -57,7 +56,7 @@ Use [Explorer (and real-time detections)](threat-explorer.md) to analyze threats
 
 ![Threat explorer.](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
 
-To view and use this report, in the Microsoft 365 Defender portal, go to **Email & collaboration** > **Explorer**.
+To view and use this report in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
 
 ### Incidents
 
@@ -65,7 +64,7 @@ Use the Incidents list (this is also called Investigations) to see a list of in 
 
 ![List of current Threat Incidents in Office 365.](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
 
-To view the list of current incidents for your organization, in the Microsoft 365 Defender portal, go to **Incidents & alerts** > **Incidents**.
+To view the list of current incidents for your organization in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Incidents & alerts** \> **Incidents**. Or, to go directly to the **Incidents** page, use <https://security.microsoft.com/incidents>.
 
 ![In the Security & Compliance Center, choose Threat management \> Review.](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
@@ -73,7 +72,7 @@ To view the list of current incidents for your organization, in the Microsoft 36
 
 Use Attack simulation training to set up and run realistic cyberattacks in your organization, and identify vulnerable people before a real cyberattack affects your business. To learn more, see [Simulate a phishing attack](attack-simulation-training.md).
 
-To view and use this feature in the Microsoft 365 Defender portal, go to **Email & collaboration** > **Attack simulation training**.
+To view and use this feature in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** > **Attack simulation training**. Or, to go directly to the **Attack simulation training** page, use <https://security.microsoft.com/attacksimulator?viewid=overview>.
 
 ### Automated investigation and response
 

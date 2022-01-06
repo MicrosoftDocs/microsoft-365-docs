@@ -17,7 +17,6 @@ ms.collection:
   - m365initiative-defender-office365
 ms.custom:
   - seo-marvel-apr2020
-  - admindeeplinkDEFENDER
 description: Learn to integrate Azure PIM in order to grant just-in-time, time limited access to users to do elevated privilege tasks in Microsoft Defender for Office 365, lowering risk to your data.
 ms.technology: mdo
 ms.prod: m365-security
@@ -61,11 +60,12 @@ Using [Privileged Access groups](/azure/active-directory/privileged-identity-man
 
 ### Create a role group requiring the permissions we need
 
-In the Security Portal, create a custom role group that contains the permissions that we want.
+In the Microsoft 365 Defender portal, create a custom role group that contains the permissions that we want.
 
-1. Browse to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> > **Permissions & Roles** > select **Roles** under Email and Collaboration > **Create**.
-2. Name your group to reflect its purpose such as 'Search and Purge PIM'.
-3. Don't add members, simply save the group and move on to the next part!
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Permissions & Roles**, and then select **Roles** under **Email and Collaboration**. To go directly to the **Permissions** page, use <https://security.microsoft.com/emailandcollabpermissions>.
+2. On the **Permissions** page, click ![Create icon.](../../media/m365-cc-sc-create-icon.png) **Create**.
+3. Name your group to reflect its purpose such as 'Search and Purge PIM'.
+4. Don't add members, simply save the group and move on to the next part!
 
 ### Create the security group in Azure AD for elevated permissions
 
@@ -78,7 +78,7 @@ In the Security Portal, create a custom role group that contains the permissions
 7. Configure the **Settings** within the group's Privileged Access pane. Choose to **Edit** the settings for the role of **Member**.
 8. Change the activation time to suit your organization. In this example require *Azure MFA*, *justification*, and *ticket information* before selecting **Update**.
 
-### Nest the newly created security group into the role group.
+### Nest the newly created security group into the role group
 
 1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the following:
 
