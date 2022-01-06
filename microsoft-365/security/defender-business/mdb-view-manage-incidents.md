@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 12/13/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -32,6 +32,11 @@ As threats are detected and alerts are triggered, incidents are created. Your co
 - [How to monitor your incidents and alerts](#monitor-your-incidents--alerts)
 - [Alert severity](#alert-severity)
 - [Next steps](#next-steps)
+
+>
+> **Got a minute?**
+>![take our survey](/office/media/icons/sign-up-blue.png)  Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
 
 ## Monitor your incidents & alerts
 
