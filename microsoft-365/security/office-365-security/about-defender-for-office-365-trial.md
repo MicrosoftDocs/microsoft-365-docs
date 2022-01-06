@@ -100,7 +100,7 @@ After you start the trial, it might take up to 2 hours for the changes and updat
 
 ## Availability
 
-The Defender for Office 365 trial is gradually rolling out to existing customers who meet specific criteria and who don't have existing Defender for Office 365 Plan Plan 2 licenses (included in their subscription or as an add-on).
+The Defender for Office 365 trial is gradually rolling out to existing customers who meet specific criteria and who don't have existing Defender for Office 365 Plan 2 licenses (included in their subscription or as an add-on).
 
 ## Terms and conditions
 

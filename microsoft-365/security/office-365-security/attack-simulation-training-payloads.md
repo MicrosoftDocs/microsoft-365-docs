@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
-ms.custom: admindeeplinkDEFENDER
+ms.custom:
 description: Admins can learn how to create custom payloads for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.technology: mdo
 ---
@@ -24,7 +24,7 @@ In Attack simulation training, a _payload_ is the phishing email message and web
 
 This article describes how to create your own payloads in Attack simulation training. You can create custom payloads in the following locations:
 
-- The **Payloads** tab: In the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>, go to **Email & collaboration** \> **Attack simulation training** \> **Payloads** tab. To go directly to the **Payloads** tab, use <https://security.microsoft.com/attacksimulator?viewid=payload>.
+- The **Payloads** tab: In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Payloads** tab. To go directly to the **Payloads** tab, use <https://security.microsoft.com/attacksimulator?viewid=payload>.
 - During simulation creation: You can create custom payloads on the **Select a payload** page (the third page) of the simulation creation wizard. For more information, see [Simulate a phishing attack in Defender for Office 365](attack-simulation-training.md).
 
 For getting started information about Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
