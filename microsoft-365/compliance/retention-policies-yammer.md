@@ -36,7 +36,10 @@ For other workloads, see:
 
 ## What's included for retention and deletion
 
-Yammer user messages and community messages can be deleted by using retention policies for Yammer, and in addition to the text in the messages, the following items can be retained for compliance reasons: Hypertext links and links to other Yammer messages.
+Yammer user messages and community messages can be deleted by using retention policies for Yammer, and in addition to the text in these messages, the following items can be retained for compliance reasons: Hypertext links and links to other Yammer messages.
+
+> [!NOTE]
+> As explained in the following section, user messages include private messages for an individual user, and any community messages associated with that user.
 
 User messages include all the names of the people in the conversation, and community messages include the community name and the message title (if supplied).
 
@@ -50,7 +53,7 @@ Use this section to understand how your compliance requirements are met by backe
 
 You can use a retention policy to retain data from community messages and user messages in Yammer, and delete these messages. Behind the scenes, Exchange mailboxes are used to store data copied from these messages. Data from Yammer user messages is stored in a hidden folder in the mailbox of each user included in the user message, and a similar hidden folder in a group mailbox is used for community messages.
 
-Copies of community messages can also be stored in the hidden folder of user mailboxes when they @ mention users or notify the user of a reply. Although these messages originate as a community message, a retention policy for Yammer user messages will often include copies of community messages.
+Copies of community messages can also be stored in the hidden folder of user mailboxes when they @ mention users or notify the user of a reply. Although these messages originate as a community message, a retention policy for Yammer user messages will often include copies of community messages. As a result, user messages are not restricted to private messages.
 
 These hidden folders are not designed to be directly accessible to users or administrators, but instead, store data that compliance administrators can search with eDiscovery tools.
 
