@@ -48,6 +48,8 @@
   items:
     - name: Threat management page overview
       href: m365-lighthouse-threat-management-page-overview.md
+    - name: Mitigate threats with Microsoft Defender Antivirus
+      href: m365-lighthouse-mitigate-threats.md
 - name: Get help and support
   items: 
     - name: Get help and support

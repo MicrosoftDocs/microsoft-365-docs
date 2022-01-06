@@ -16,7 +16,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 # Contact support for Malaysia
 
-[Find another country or region](../../business-video/get-help-support.md).
+[Find another country or region](../get-help-support.md).
 
 ## Phone number
 1800 22 0030

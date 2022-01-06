@@ -17,7 +17,8 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 description: Use Explorer and Real-time detections in the Microsoft 365 Defender portal to investigate and respond to threats efficiently.
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -545,7 +546,7 @@ To view and use Explorer or Real-time detections, you must have appropriate perm
   - Security Administrator (this can be assigned in the Azure Active Directory admin center (<https://aad.portal.azure.com>)
   - Security Reader
 
-- For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center (<https://admin.protection.outlook.com/ecp/>) or [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
+- For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center (EAC) or [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
 
   - Organization Management
   - View-Only Organization Management
