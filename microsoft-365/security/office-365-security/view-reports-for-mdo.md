@@ -19,8 +19,6 @@ ms.collection:
 description: Admins can learn how to find and use the Defender for Office 365 reports that are available in the Microsoft 365 Defender portal.
 ms.custom: 
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
-- admindeeplinkEXCHANGE
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -39,15 +37,13 @@ Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 s
 
 ### View reports
 
-1. Go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. To go directly to the **Email & collaboration reports** page, open <https://security.microsoft.com/emailandcollabreport>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. To go directly to the **Email & collaboration reports** page, use <https://security.microsoft.com/emailandcollabreport>.
 
 1. Choose the report you want to view, and then select **View details**.  
 
 ### Download reports
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Reports** > **Email & collaboration**.
-
-2. Select **Reports for download**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** > **Email & collaboration** \> **Reports for download**. To go directly to the **Reports for download** page, use <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
 
 ![Email & collaboration reports page in the Microsoft 365 Defender portal.](../../media/email-collaboration-download-reports.png)
 
@@ -55,7 +51,7 @@ Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 s
 >
 > Email security reports that don't require Defender for Office 365 are described in [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md).
 >
-> Reports that are related to mail flow are now in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
+> Reports that are related to mail flow are now in the Exchange admin center (EAC). For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 
 ## Safe Attachments file types report
 
@@ -73,7 +69,9 @@ The **Mail latency report** shows you an aggregate view of the mail delivery and
 
 Client side and network latency are not included.
 
-To view the report, open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Mail latency report** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/mailLatencyReport>.
+To view the report, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. To go directly to the **Email & collaboration reports** page, use <https://security.microsoft.com/emailandcollabreport>.
+
+On the **Email & collaboration reports** page, find **Mail latency report** and then click **View details**. To go directly to the report, use <https://security.microsoft.com/mailLatencyReport>.
 
 ![Mail latency report widget on the Email & collaboration reports page.](../../media/mail-latency-report-widget.png)
 
