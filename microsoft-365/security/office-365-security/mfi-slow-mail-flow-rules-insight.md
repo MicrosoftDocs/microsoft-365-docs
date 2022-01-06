@@ -13,7 +13,6 @@ ms.localizationpriority: medium
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom: 
   - seo-marvel-apr2020
-  - admindeeplinkEXCHANGE
 description: Admins can learn how to use the Fix slow mail flow rules insight in the Security & Compliance Center to identify and fix inefficient or broken mail flow rules (also known as transport rules) in their organization.
 ms.technology: mdo
 ms.prod: m365-security
@@ -44,7 +43,7 @@ You can use this notification to help you to identify and fine-tune mail flow ru
 
 When you click **View details** on the widget, a flyout appears with more information:
 
-- **Rule**: You can hover over the summary to see all of the conditions, exceptions, and actions of the rule. You can click on the summary to edit the rule in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a>.
+- **Rule**: You can hover over the summary to see all of the conditions, exceptions, and actions of the rule. You can click on the summary to edit the rule in the Exchange admin center (EAC) at <https://admin.exchange.microsoft.com/#/transportrules>.
 - **Number of messages evaluated**: You can click **View sample messages** to see the [message trace](message-trace-scc.md) results for a sample of the messages that were affected by the rule.
 - **Average time spent on each message**
 - **Median time spent on a message**: The middle value that separates the upper half from the lower half of time data.
