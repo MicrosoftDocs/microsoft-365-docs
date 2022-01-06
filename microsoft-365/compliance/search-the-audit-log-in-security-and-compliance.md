@@ -992,7 +992,7 @@ The following table describes the auditing activities and information in the aud
 
 ### Sensitivity label activities
 
-The following table lists events that result from labeling activities for SharePoint Online and Teams sites.
+The following table lists events that result from using [sensitivity labels](sensitivity-labels.md).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
