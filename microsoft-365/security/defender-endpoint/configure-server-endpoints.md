@@ -256,10 +256,15 @@ You can use the [installer script](server-migration.md#installer-script) to help
 8. Go to the **Actions** tab and select **New...** Ensure that **Start a program** is selected in the **Action** field. The [installer script](server-migration.md#installer-script) handles the installation, and immediately perform the onboarding step after installation completes. Select *C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe* then provide the arguments:
 
     ```console
-     -ExecutionPolicy ByPass \\servername-or-dfs-space\share-name\install.ps1 -OnboardingScript \\servername-or-dfs-space\share-name\windowsdefenderatponboardingscript.cmd
+     -ExecutionPolicy Allsigned \\servername-or-dfs-space\share-name\install.ps1 -OnboardingScript \\servername-or-dfs-space\share-name\windowsdefenderatponboardingscript.cmd
     ```  
 
+     >[!NOTE]
+    >The preferred execution policy setting is `Allsigned`. When using `Allsigned`, you might encounter a message about trusting the publisher. Select "Run once" or "Always run" to indicate that you trust the publisher.  You can also use `RemoteSigned` as an option. 
+
     Replace \\servername-or-dfs-space\share-name with the UNC path, using the file server's fully qualified domain name (FQDN), of the shared *install.ps1* file. The installer package md4ws.msi must be placed in the same directory.
+
+   
 
     For scenarios where you want Microsoft Defender Antivirus to co-exist with non-Microsoft antimalware solutions, add the $Passive parameter to set passive mode during installation.
 
