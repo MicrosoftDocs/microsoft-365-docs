@@ -2,7 +2,6 @@
 title: Investigation resource type
 description: Microsoft Defender for Endpoint Investigation entity.
 keywords: apis, graph api, supported apis, get, alerts, investigations
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library

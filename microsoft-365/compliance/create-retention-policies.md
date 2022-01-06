@@ -205,3 +205,25 @@ Use the following instructions for retention policies that apply to any of these
     You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content) on this page.
 
 6. Complete the configuration and save your settings.
+
+## How long it takes for retention policies to take effect
+
+When you create and submit a retention policy, it can take up to seven days for the retention policy to be applied:
+  
+![Diagram of when retention policy take effect.](../media/retention-policy-timings.png)
+
+First, the retention policy needs to be distributed to the locations that you selected, and then applied to content. You can always check the distribution status of the retention policy by selecting it from the **Retention policies** page in the compliance center. From the flyout pane, if you see the status of **Off (Error)** and in the details for the locations see a message that it's taking longer than expected to deploy the policy (for SharePoint) or to try redeploying the policy (for OneDrive), try running the [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell command to retry the policy distribution:
+
+1. [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+
+2. Run the following command:
+    
+    ```PowerShell
+    Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+    ```
+
+## Updating retention policies
+
+When settings from the retention policy are already applied to content, a change in configuration to the policy will be automatically applied to this content in addition to content that's newly identified.
+
+Some settings can't be changed after the policy is created and saved, which include the name of the retention policy, the scope type (adaptive or static), and the retention settings except the retention period.

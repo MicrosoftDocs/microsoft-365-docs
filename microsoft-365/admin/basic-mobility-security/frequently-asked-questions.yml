@@ -16,6 +16,7 @@ metadata:
   - Adm_TOC
   ms.custom:
   - AdminSurgePortfolio
+  - admindeeplinkEXCHANGE
   search.appverid:
   - MET150
   description: "Frequently-asked questions about Basic Mobility and Security."
@@ -88,7 +89,7 @@ sections:
         answer: |
           If you’re already using Exchange ActiveSync policies to manage mobile devices, you can start using Basic Mobility and Security by following the steps to set up Basic Mobility and Security. For more information, see [Protect user and device access](../../compliance/protect-access-to-data-and-services.md) and [Set up Basic Mobility and Security](set-up.md).
           
-          When you apply the policies that you create in Basic Mobility and Security to groups of users, these policies override Exchange ActiveSync mobile device mailbox policies and device access rules that you’ve previously created in the Exchange admin center for those users.
+          When you apply the policies that you create in Basic Mobility and Security to groups of users, these policies override Exchange ActiveSync mobile device mailbox policies and device access rules that you've previously created in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> for those users.
           
           After a device is enrolled in Basic Mobility and Security, any Exchange ActiveSync mobile device mailbox policy or device access rule applied to the device is ignored.
           
