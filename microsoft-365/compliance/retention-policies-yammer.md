@@ -62,15 +62,17 @@ These hidden folders are not designed to be directly accessible to users or admi
 > 
 > However, a copy of the original message is still available in the hidden folder of the community group mailbox, and accessible with eDiscovery searches for compliance purposes.
 
-Yammer messages are not affected by retention policies that are configured for Exchange mailboxes. Even though Yammer messages are stored in Exchange, this Yammer data is included only by a retention policy that's configured for the **Yammer community messages** and **Yammer user messages** locations.
+Even though they are stored in Exchange, Yammer messages are only included in a retention policy that's configured for the **Yammer community messages** or **Yammer user messages** locations.
 
 > [!NOTE]
 > If a user is included in an active retention policy that retains Yammer data and you a delete a mailbox of a user who is included in this policy, to retain the Yammer data, the mailbox is converted into an [inactive mailbox](inactive-mailboxes-in-office-365.md). If you don't need to retain this Yammer data for the user, exclude the user account from the retention policy before you delete their mailbox.
 
 After a retention policy is configured for Yammer messages, a timer job from the Exchange service periodically evaluates items in the hidden folder where these Yammer messages are stored. The timer job takes up to seven days to run. When these items have expired their retention period, they are moved to the SubstrateHolds folder—a hidden folder that's in every user or group mailbox to store "soft-deleted" items before they are permanently deleted.
 
-> [!NOTE]
-> Because of the [first principle of retention](retention.md#the-principles-of-retention-or-what-takes-precedence), permanent deletion is always suspended if the same item must be retained because of another retention policy, or it is under eDiscovery holds for legal or investigative reasons.
+> [!IMPORTANT]
+> Because of the [first principle of retention](retention.md#the-principles-of-retention-or-what-takes-precedence) and since Yammer messages are stored in Exchange Online mailboxes, permanent deletion from the SubstrateHolds folder is always suspended if the mailbox is affected by another retention policy (including policies applied to the Exchange location), litigation hold, delay hold, or if an eDiscovery hold is applied to the mailbox for legal or investigative reasons.
+>
+> While the mailbox is included in an applicable hold, Yammer messages that have been deleted will no longer be visible in Yammer but will continue to be discoverable with eDiscovery.
 
 After a retention policy is configured for Yammer messages, the paths the content takes depend on whether the retention policy is to retain and then delete, to retain only, or delete only.
 
