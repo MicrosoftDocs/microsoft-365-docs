@@ -25,7 +25,14 @@ ms.collection:
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-The Microsoft 365 Defender portal enables your security team to respond to and mitigate detected threats.
+The Microsoft 365 Defender portal enables your security team to respond to and mitigate detected threats. This article walks you through an example of how you can use Defender for Business (preview).
+
+>
+> **Got a minute?**
+>![take our survey](/office/media/icons/sign-up-blue.png)  Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
+
+## View detected threats
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
