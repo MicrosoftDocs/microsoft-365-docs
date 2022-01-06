@@ -55,13 +55,13 @@ Microsoft Defender for Endpoint requires one of the following Microsoft volume l
 > Microsoft Defender for Endpoint is also available for purchase from a Cloud Solution Provider (CSP).
 > RDSH VMs do not require a separate Defender for Endpoint license.
 
-Microsoft Defender for Endpoint for servers requires one of the following licensing options:
+Microsoft Defender for Endpoint on servers requires one of the following licensing options:
 
 - [Microsoft Defender for Cloud with enhanced security features enabled](/azure/security-center/enable-enhanced-security)
-- Microsoft Defender for Endpoint for Server (one per covered server)
+- Microsoft Defender for Endpoint (Server SKU) (one per covered server)
 
 > [!NOTE]
-> Customers may acquire server licenses (one per covered server Operating System Environment (OSE)) for Microsoft Defender for Endpoint for Servers if they have a combined minimum of 50 licenses for one or more of the following user licenses:
+> Customers may acquire server licenses (one per covered server Operating System Environment (OSE)) for Microsoft Defender for Endpoint on servers if they have a combined minimum of 50 licenses for one or more of the following user licenses:
 >
 > - Microsoft Defender for Endpoint
 > - Windows E5/A5
