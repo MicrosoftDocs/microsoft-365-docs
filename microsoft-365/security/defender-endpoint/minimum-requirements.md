@@ -21,8 +21,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-minreqs-abovefoldlink)
@@ -56,13 +55,13 @@ Microsoft Defender for Endpoint requires one of the following Microsoft volume l
 > Microsoft Defender for Endpoint is also available for purchase from a Cloud Solution Provider (CSP).
 > RDSH VMs do not require a separate Defender for Endpoint license.
 
-Microsoft Defender for Endpoint for servers requires one of the following licensing options:
+Microsoft Defender for Endpoint on servers requires one of the following licensing options:
 
 - [Microsoft Defender for Cloud with enhanced security features enabled](/azure/security-center/enable-enhanced-security)
-- Microsoft Defender for Endpoint for Server (one per covered server)
+- Microsoft Defender for Endpoint Server SKU (one per covered server)
 
 > [!NOTE]
-> Customers may acquire server licenses (one per covered server Operating System Environment (OSE)) for Microsoft Defender for Endpoint for Servers if they have a combined minimum of 50 licenses for one or more of the following user licenses:
+> Customers may acquire server licenses (one per covered server Operating System Environment (OSE)) to run Microsoft Defender for Endpoint on servers if they have a combined minimum of 50 licenses for one or more of the following user licenses:
 >
 > - Microsoft Defender for Endpoint
 > - Windows E5/A5
@@ -113,6 +112,9 @@ Devices on your network must be running one of these editions.
 
 The hardware requirements for Defender for Endpoint on devices are the same for the supported editions.
 
+> Cores: 2 minimum, 4 preferred
+> Memory: 1 GB minimum, 4 preferred
+
 For more information on supported versions of Windows 10, see (/windows/release-health/release-information).
 
 > [!NOTE]
@@ -121,6 +123,8 @@ For more information on supported versions of Windows 10, see (/windows/release-
 > Virtual Machines running Windows 10 Enterprise 2016 LTSB may encounter performance issues if run on non-Microsoft virtualization platforms.
 >
 > For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
+
+
 
 ### Other supported operating systems
 
