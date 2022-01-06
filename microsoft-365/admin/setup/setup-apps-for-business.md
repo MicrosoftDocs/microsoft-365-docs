@@ -38,12 +38,6 @@ You can add users in the wizard, but you can also [add users later](../add-users
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
@@ -65,12 +59,6 @@ Once you've created accounts for other people in your business, you and your tea
 ::: moniker range="o365-worldwide"
 
 Go to [https://admin.microsoft.com/OLS/MySoftware.aspx](https://admin.microsoft.com/OLS/MySoftware.aspx).
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-If you're using Office 365 Germany, go to [https://portal.office.de/OLS/MySoftware.aspx](https://portal.office.de/OLS/MySoftware.aspx).
 
 ::: moniker-end
 

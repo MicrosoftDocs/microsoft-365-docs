@@ -43,7 +43,7 @@ Start by [checking the current health of your services](../enterprise/view-servi
 
 Save time by starting your service request online. We'll help you find a solution or connect you to technical support.
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, then you aren't an admin. For more information, see [Who has admin permissions in my business?]([Overview of the Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md)).
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, you aren't an admin. For more information, see [Who has admin permissions in my business?](../admin/admin-overview/admin-center-overview.md#who-has-admin-permissions-in-my-business).
 2. On the bottom right side of the page, select **Help & support**.
 3. Type a question or keyword into the text box. If you get a drop-down list, select the one closest to your question, or continue typing your question, then press **Enter**.
 4. If the results don't help, at the bottom, select **Contact Support**.
@@ -215,36 +215,8 @@ Scan this QR code to follow us on WeChat and get the latest updates for Office 3
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-This article applies to customers of Office 365 Germany, which has domains ending onmicrosoft.de. For more information, see [Learn about Office 365 Germany](../admin/admin-overview/learn-about-office-365-germany.md).
-
-As an admin for Office 365 Germany, you get free access to our knowledgeable support agents for help resolving technical issues, as well as for pre-sales, account, and billing support. You can also contact us on behalf of Office 365 Germany users in your organization.
-
-> [!NOTE]
-> All of the support options below are for Microsoft Cloud Germany. For more information about how Microsoft uses the data that you provide when you contact Microsoft support, please see the [privacy statement](https://go.microsoft.com/fwlink/p/?LinkId=512132).
-
-## Get assisted support
-
-Assisted support options are for admins of Office 365 Germany subscribed organizations only. If you use Office 365 Germany at work or school, but you're not an admin, you can still get support in the community forums, or by contacting your admin or IT department.
-
-- **Open an online request.** Save time by starting your service request online. In the admin center, choose **Support** \> **New service request.** We'll help you find a solution or connect you to an expert who will contact you by email or phone.
-
-- **Call support.** We're here to talk. Admins, have your account details ready when you call support.
-
-| Region | Phone number | Hours |
-|-----------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Germany | 0800&nbsp;589&nbsp;2330 | Billing Support: <ul><li>German: Mon-Fri 9-5 Berlin</li><li>English: Mon-Fri 9-5 Berlin</li></ul><br />Technical Support: <ul><li>German: 24 hours a day, 7 days a week</li><li>English: 24 hours a day, 7 days a week</li></ul><br />Alternative Phone Number: 069 380 789 305 (Local call charges apply) |
-| All other markets within the European Economic Area | +49&nbsp;69&nbsp;380&nbsp;789&nbsp;305 | Billing Support: <ul><li>German: Mon-Fri 9-5 Berlin(UTC+1)</li><li>English: Mon-Fri 9-5 Berlin (UTC +1)</li></ul><br />Technical Support: <ul><li>German: 24 hours a day, 7 days a week</li><li>English: 24 hours a day, 7 days a week</li></ul><br />Telephone support is available via international call to Germany. International call charges apply. Call charges can be avoided by submitting a support ticket through the admin center. |
-
-## Let our community help
-
-You can also [search the Microsoft 365 for business community forums](https://go.microsoft.com/fwlink/p/?LinkId=518605) to find known issues and trending topics, or to post a new question. The community forums are monitored by trained Microsoft support agents who can help resolve your issue.
-
-::: moniker-end
-
 ## Related content
 
-[Find docs and training](../business-video/find-help-answers.md) (article)\
-[Employee quick setup](../business-video/employee-quick-setup.md) (article)\
-[Overview of Microsoft 365 Business Premium setup](../business-video/setup-overview.md) (video)
+[Find docs and training](index.yml) (link page)\
+[Employee quick setup](setup/employee-quick-setup.md) (article)\
+[Overview of Microsoft 365 Business Premium setup](setup/plan-your-setup.md) (video)

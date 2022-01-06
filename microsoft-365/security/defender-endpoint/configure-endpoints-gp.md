@@ -14,7 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 09/16/2021
+ms.date: 12/07/2021
 ms.technology: mde
 ---
 
@@ -168,7 +168,7 @@ Check for the latest virus and spyware security intelligence before running a sc
 
 **Policy location:** \Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Attack Surface Reduction
 
-Get the current list of attack surface reduction GUIDs from [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
+Get the current list of attack surface reduction GUIDs from [Attack surface reduction rules deployment phase 3: implement](attack-surface-reduction-rules-deployment-phase-3.md)
 
 1. Open the **Configure Attack Surface Reduction** policy.
 
@@ -182,9 +182,9 @@ Get the current list of attack surface reduction GUIDs from [Customize attack su
 
    ![Image of attack surface reduction configuration.](images/asr-guid.png)
 
-Policy|Setting
----|---
-Configure Controlled folder access| Enabled, Audit Mode
+Policy|Location|Setting
+---|---|---
+Configure Controlled folder access| \Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Controlled Folder Access| Enabled, Audit Mode
 
 ## Run a detection test to verify onboarding
 
