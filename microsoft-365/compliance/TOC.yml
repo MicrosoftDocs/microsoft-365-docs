@@ -144,6 +144,8 @@
   items:
     - name: Know your data, protect your data, prevent data loss
       href: information-protection.md
+    - name: Deploy a MIP solution
+      href: information-protection-solution.md
     - name: Default labels and policies for Microsoft Information Protection
       href: mip-easy-trials.md
     - name: Sensitive information types
@@ -333,6 +335,8 @@
           items:
           - name: Plan for data loss prevention
             href: dlp-overview-plan-for-dlp.md
+          - name: Design a DLP policy
+            href: dlp-policy-design.md
           - name: Data loss prevention policy reference
             href: dlp-policy-reference.md 
         - name: Get started with DLP
@@ -465,6 +469,8 @@
               href: archive-linkedin-data.md
             - name: Physical badging data
               href: import-physical-badging-data.md
+            - name: Slack eDiscovery (preview)
+              href: archive-slack-data-microsoft.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
         - name: Veritas data connectors
@@ -509,6 +515,8 @@
               href: archive-symphony-data.md
             - name: Text-delimited
               href: archive-text-delimited-data.md
+            - name: Twitter (preview)
+              href: archive-veritas-twitter-data.md
             - name: Webex Teams
               href: archive-webexteams-data.md
             - name: Webpages
@@ -664,8 +672,6 @@
             href: search-for-and-delete-messages-in-your-organization.md
           - name: Search for Teams chat data for on-premises users
             href: search-cloud-based-mailboxes-for-on-premises-users.md
-          - name: Prepare a CSV file for an ID list search
-            href: csv-file-for-an-id-list-content-search.md
           - name: Retry a failed search
             href: retry-failed-content-search.md
           - name: Preserve Bcc recipients for search

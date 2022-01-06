@@ -17,14 +17,14 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-ROBOTS: NOINDEX
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Admins can learn about the trial mode of Microsoft Defender for Office 365"
 ---
 
 # About the Microsoft Defender for Office 365 trial
 
 > [!IMPORTANT]
-> Get started quickly with our easy to use [Microsoft Defender for Office 365 playbook](https://download.microsoft.com/download/8/8/8/888e96ce-eb6a-487a-babc-a7e4ae1cd151/MDO%20Trial%20Playbook.pdf). This playbook will help you make the most of your free trial by showing you how to safeguard your organization with Microsoft Defender for Office 365.
+> Get started quickly with our easy to use [Trial playbook for Microsoft Defender for Office 365](trial-playbook-defender-for-office-365.md). This playbook will help you make the most of your free trial by showing you how to safeguard your organization with Microsoft Defender for Office 365.
 
 Microsoft Defender for Office 365 safeguards your organization against malicious threats that are posed by email messages, links (URLs), and collaboration tools. Defender for Office 365 includes:
 
@@ -100,7 +100,7 @@ After you start the trial, it might take up to 2 hours for the changes and updat
 
 ## Availability
 
-The Defender for Office 365 trial is gradually rolling out to existing customers who meet specific criteria and who don't have existing Defender for Office 365 Plan Plan 2 licenses (included in their subscription or as an add-on).
+The Defender for Office 365 trial is gradually rolling out to existing customers who meet specific criteria and who don't have existing Defender for Office 365 Plan 2 licenses (included in their subscription or as an add-on).
 
 ## Terms and conditions
 
