@@ -63,7 +63,7 @@ The comparison bar chart is the **Overview** tab. Hover over the chart to view t
 
 ![Bar graph of similar organization's scores.](../../media/secure-score/secure-score-comparison-screenshot.png)
 
-- **Organizations like yours**: This is an average score of other tenants in same region (provided we have at least five or more tenants to compare) with a similar organization size to yours.
+**Organizations like yours** is an average score of other tenants in same region (provided we have at least five or more tenants to compare) with a similar organization size to yours.
 
 #### Comparison trend
 
