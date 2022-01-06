@@ -6,16 +6,17 @@ f1.keywords:
 - NOCSH
 manager: dougeby
 audience: ITPro
+description: Learn how to connect Microsoft Intune to Defender for Endpoint and monitor device risk as a condition for access.
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-scenario
+- Connect Intune to Defender
+- monitor device risk
+- monitor device compliance
+- deploy security baselines
 ms.custom: 
 keywords: 
-description: 
 ---
 
 # Step 6. Monitor device risk and compliance to security baselines
