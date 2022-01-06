@@ -84,7 +84,7 @@ These details are specific to email attachments and URLs. Users can see these de
 
 Users will see enriched detonation details for known malicious attachments or URLs found in their emails, which got detonated for their specific tenant. It will comprise of Detonation chain, Detonation summary, Screenshot, and Observed behavior details to help customers understand why the attachment or URL was deemed malicious and detonated.
 
-1. *Detonation chain*. A single file or URL detonation can trigger multiple detonations. The Detonation chain tracks the path of detonations, including the original malicious file or URL that caused the verdict, and all other files or URLs effected by the detonation. These URLs or attached files may not be directly present in the email, but including that analysis is important to determining why the file or URL was found to be malicious.  
+1. *Detonation chain*. A single file or URL detonation can trigger multiple detonations. The Detonation chain tracks the path of detonations, including the original malicious file or URL that caused the verdict, and all other files or URLs affected by the detonation. These URLs or attached files may not be directly present in the email, but including that analysis is important to determining why the file or URL was found to be malicious.  
 
     > [!NOTE]
     > This may show just the top level item if none of the entities linked to it were found to be problematic, or were detonated.
@@ -126,7 +126,7 @@ Users will see enriched detonation details for known malicious attachments or UR
 
 - Sender Policy Framework (**SPF**):  Describes results for SPF check for the message. Possible values can be:
   - Pass (IP address): The SPF check for the message passed and includes the sender's IP address. The client is authorized to send or relay email on behalf of the sender's domain.
-  - Fail (IP address): The SPF check for the message failed and includes the sender's IP address. This is sometimes called hard fail.
+  - Fail (IP address): The SPF check for the message failed, and includes the sender's IP address. This is sometimes called hard fail.
   - Softfail (reason): The SPF record designated the host as not being allowed to send but is in transition.
   - Neutral: The SPF record explicitly states that it does not assert whether the IP address is authorized to send.
   - None: The domain doesn't have an SPF record, or the SPF record doesn't evaluate to a result.

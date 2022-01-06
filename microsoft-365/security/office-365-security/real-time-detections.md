@@ -63,11 +63,11 @@ The experience for Threat Explorer and Real-time detections is updated to align 
 > [!NOTE]
 > Toggling impacts only your account and does not impact anyone else within your tenant. 
 
-Threat Explorer and Real time detections is divided into the following views:
+Threat Explorer and Real-time detections is divided into the following views:
 
-- *All email*: Shows all email analyzed by Defender for office 365 and contains both good and malicious emails. This feature is only present in Threat Explorer and is not available for Real-time detections. By default, it is set to show data for 2 days, which can be expanded up to 30 days. This is also the default view for Threat Explorer.  
+- *All email*: Shows all email analyzed by Defender for office 365 and contains both good and malicious emails. This feature is only present in Threat Explorer and is not available for Real-time detections. By default, it is set to show data for two days, which can be expanded up to 30 days. This is also the default view for Threat Explorer.  
 
-- *Malware view*: Shows emails on which a malware threat was identified. This is the default view for Real-time detections, and shows data for 2 days (can be expanded to 30 days).  
+- *Malware view*: Shows emails on which a malware threat was identified. This is the default view for Real-time detections, and shows data for two days (can be expanded to 30 days).  
 
 - *Phish view*: Shows emails on which a phish threat was identified.
 
@@ -79,7 +79,7 @@ Here are the common components within these experiences:
 
     - You can use the various filters to view the data based on email or file attributes.  
 
-    - By default, the time filter is applied to the records, and is applied for 2 days.  
+    - By default, the time filter is applied to the records, and is applied for two days.  
 
     - If you are applying multiple filters, they are applied in ‘AND’ mode and you can use the advanced filter to change it to ‘OR’ mode.  
 
@@ -137,7 +137,7 @@ Here are the common components within these experiences:
     > [!div class="mx-imgBorder"]
     > ![Export chart data](../../media/explorer-new-experience-export-chart-data.png)
 
-In addition to these features, you will also get updated experiences like *Top URLs*, *Top clicks*, *Top targeted users*, and *Email origin*. *Top URLs*, *Top clicks* and *Top targeted users* can be further filtered based on the filter that you apply within Explorer. 
+In addition to these features, you will also get updated experiences like *Top URLs*, *Top clicks*, *Top targeted users*, and *Email origin*. *Top URLs*, *Top clicks*, and *Top targeted users* can be further filtered based on the filter that you apply within Explorer. 
 
 ## Required licenses and permissions
 
