@@ -40,7 +40,7 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ### Compliance and service assurance
 
-- [Azure, Dynamics 365, and Windows breach notification under the GDPR](compliance/regulatory/gdpr-breach-notification) - updated to clarify that customers don't need to use a pay service such as Defender for Cloud to receive security and privacy notifications
+- [Azure, Dynamics 365, and Windows breach notification under the GDPR](/compliance/regulatory/gdpr-breach-notification) - updated to clarify that customers don't need to use a pay service such as Defender for Cloud to receive security and privacy notifications
 
 ### eDiscovery
 
