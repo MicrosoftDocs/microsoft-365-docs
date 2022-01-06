@@ -24,8 +24,9 @@ ms.technology: mde
 
 
 **Applies to:**
-
 - [Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 This page will guide you through the steps you need to take to set up macOS policies in Jamf Pro.
 
@@ -45,7 +46,7 @@ You'll need to take the following steps:
 
 ## Step 1: Get the Microsoft Defender for Endpoint onboarding package
 
-1. In [Microsoft Defender Security Center](https://securitycenter.microsoft.com), navigate to **Settings > Onboarding**.
+1. In [Microsoft 365 Defender](https://security.microsoft.com), navigate to **Settings > Onboarding**.
 
 2. Select macOS as the operating system and Mobile Device Management / Microsoft Intune as the deployment method.
 

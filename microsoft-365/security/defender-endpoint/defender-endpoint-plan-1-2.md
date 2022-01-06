@@ -8,9 +8,9 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 11/19/2021
+ms.date: 01/03/2022
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH  
@@ -19,16 +19,21 @@ ms.collection: M365-security-compliance
 
 # Microsoft Defender for Endpoint Plan 1 and Plan 2
 
-Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. Defender for Endpoint provides advanced threat protection that includes antivirus, antimalware, ransomware mitigation, and more, together with centralized management and reporting. Soon, two plans will be available:   
+**Applies to**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. Defender for Endpoint provides advanced threat protection that includes antivirus, antimalware, ransomware mitigation, and more, together with centralized management and reporting. Two plans are available:   
  
-- [Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md), currently in preview; and 
-- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md), available now, and known as [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
+- [Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md); and 
+- [Microsoft Defender for Endpoint Plan 2](microsoft-defender-endpoint.md), formerly known as [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
 
 ## Compare Defender for Endpoint plans
 
 The following table describes what's included in each plan at a high level. <br/><br/>
 
-| [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) <br/>(preview) | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) <br/>(available now) |
+| [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](microsoft-defender-endpoint.md) |
 |:---|:---|
 | [Next-generation protection](defender-endpoint-plan-1.md#next-generation-protection) <br/>(includes antimalware and antivirus) <p> [Attack surface reduction](defender-endpoint-plan-1.md#attack-surface-reduction) <p> [Manual response actions](defender-endpoint-plan-1.md#manual-response-actions) <p> [Centralized management](defender-endpoint-plan-1.md#centralized-management) <p>[Security reports](defender-endpoint-plan-1.md#reporting) <p>[APIs](defender-endpoint-plan-1.md#apis)  | [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md), plus: <p> [Device discovery](device-discovery.md) <p> [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md) <p> [Automated investigation and response](automated-investigations.md) <p> [Advanced hunting](advanced-hunting-overview.md) <p> [Endpoint detection and response](overview-endpoint-detection-response.md) <p> [Microsoft Threat Experts](microsoft-threat-experts.md)  |
 | [Support for Windows 10, iOS, Android OS, and macOS devices](defender-endpoint-plan-1.md#cross-platform-support) | Support for Windows (client and server) and non-Windows platforms<br/> (macOS, iOS, Android, and Linux) |

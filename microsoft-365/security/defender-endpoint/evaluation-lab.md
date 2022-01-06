@@ -23,7 +23,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
@@ -100,7 +100,7 @@ After the lab setup process is complete, you can add devices and run simulations
 
 ## Add devices
 
-When you add a device to your environment, Defender for Endpoint sets up a well-configured device with connection details. You can add Windows 10, Windows 11, Windows Server 2019, or Windows Server 2022 devices.
+When you add a device to your environment, Defender for Endpoint sets up a well-configured device with connection details. You can add Windows 10, Windows 11, Windows Server 2019, Windows Server 2016, and Linux (Ubuntu).
 
 The device will be configured with the most up-to-date version of the OS and Office 2019 Standard as well as other apps such as Java, Python, and SysIntenals.
 
@@ -129,7 +129,7 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
 1. From the dashboard, select **Add device**.
 
-2. Choose the type of device to add. You can choose to add Windows 10, Windows 11, Windows Server 2019, or Windows Server 2022.
+2. Choose the type of device to add. You can choose to add Windows 10, Windows 11, Windows Server 2019, Windows Server 2016, and Linux (Ubuntu).
 
     :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="lab setup with device options.":::
 

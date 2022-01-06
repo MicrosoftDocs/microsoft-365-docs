@@ -36,7 +36,7 @@ description: "Learn to import contacts, calendars, and emails from Gmail or anot
 
 Import or migrate email from Gmail or another email provider to Microsoft 365.
   
- **Want help with this?**  [Contact Microsoft 365 for business support](../../business-video/get-help-support.md) . 
+ **Want help with this?**  [Contact Microsoft 365 for business support](../../business-video/get-help-support.md). 
   
 You need to use a version of Outlook that is installed on your desktop for this task. Outlook is included in most Microsoft 365 [plans](https://go.microsoft.com/fwlink/p/?LinkId=723731).
   
@@ -100,4 +100,4 @@ Depending on your source email system, you can choose from several bulk migratio
 
 [Plan your setup of Microsoft 365 for business](plan-your-setup.md) (article)\
 [Install Office applications](install-applications.md) (link page)\
-[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)
+[Overview of the Microsoft 365 admin center](Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)
