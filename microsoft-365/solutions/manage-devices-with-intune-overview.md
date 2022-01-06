@@ -7,15 +7,16 @@ f1.keywords:
 manager: dougeby
 audience: ITPro
 ms.topic: article
+description: Enroll your endpoint devices in Microsoft Intune as part of your Zero Trust security architecture, protecting against ransomware while building in protection for remote workers. 
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- M365-security-compliance
-- m365solution-managedevices
-- m365solution-overview
+- enroll devices into Intune
+- manage device endpoints
+- zero trust deployment stack
+- device management with zero trust
 ms.custom: 
 keywords: 
-description: 
 ---
 
 # Manage devices with Intune Overview
@@ -30,9 +31,9 @@ While Microsoft 365 includes several tools and methodologies for managing and pr
 On the other hand, if your environment includes plans for co-management including Microsoft Endpoint Configuration Manager, see [Co-management documentation](/mem/configmgr/comanage/) to develop the best path for your organization. If your environment includes plans for Windows 365 Cloud PC, see [Windows 365 Enterprise documentation](/windows-365/enterprise/) to develop the best path for your organization. 
 
 ## Why manage endpoints?
-The modern enterprise has an incredible diversity of endpoints accessing their data. This creates a massive attack surface, and as a result, endpoints can easily become the weakest link in your Zero Trust security strategy. 
+The modern enterprise has an incredible diversity of endpoints accessing their data. This setup creates a massive attack surface, and as a result, endpoints can easily become the weakest link in your Zero Trust security strategy. 
 
-Mostly driven by necessity as the world shifted to a remote or hybrid work model, users are working from anywhere, from any device, more than any time in history. Attackers are quickly adjusting their tactics to take advantage of this change. Many organizations face constrained resources as they navigate these new business challenges. Virtually overnight, companies have accelerated digital transformation. Simply stated, the way people work has changed — we no longer expect to access the myriad of corporate resources only from the office and on company-owned devices.
+Mostly driven by necessity as the world shifted to a remote or hybrid work model, users are working from anywhere, from any device, more than anytime in history. Attackers are quickly adjusting their tactics to take advantage of this change. Many organizations face constrained resources as they navigate these new business challenges. Virtually overnight, companies have accelerated digital transformation. Simply stated, the way people work has changed — we no longer expect to access the myriad of corporate resources only from the office and on company-owned devices.
 
 Gaining visibility into the endpoints accessing your corporate resources is the first step in your Zero Trust device strategy. Typically, companies are proactive in protecting PCs from vulnerabilities and attack while mobile devices often go unmonitored and without protections. To ensure you’re not exposing your data to risk, we need to monitor every endpoint for risks and employ granular access controls to deliver the appropriate level of access based on organizational policy. For example, if a personal device is jailbroken, you can block access to ensure that enterprise applications are not exposed to known vulnerabilities.
 
@@ -50,13 +51,13 @@ The following diagram illustrates building blocks to achieve a Zero Trust securi
 In this illustration: 
 
 
-|  |Step |Description  |Licensing requirements  |
+|&nbsp;|Step |Description  |Licensing requirements  |
 |---------|---------|---------|---------|
 |1     | Configure starting-point Zero Trust identity and device access policies       | Work with your identity administrator to [Implement Level 2 App Protection Policies (APP) data protection](manage-devices-with-intune-app-protection.md). These policies do not require that you manage devices. You configure the APP policies in Intune. Your identity admin configures a Conditional Access policy to require approved apps.          |E3, E5, F1, F3, F5    |
 |2     | Enroll devices into management       | This task requires more planning and time to implement. While you have a choice of tools and methods to accomplish this, [Step 3—Enroll devices into management](manage-devices-with-intune-enroll.md) guides you through the process using Intune with Autopilot and automated enrollment.      | E3, E5, F1, F3, F5        |
 |3     | Configure compliance policies        |  You want to be sure devices that are accessing your apps and data meet minimum requirements, for example they’re password or pin-protected and the operating system is up to date. Compliance policies are the way to define the requirements that devices must meet. [Step 3. Set up compliance policies](manage-devices-with-intune-compliance-policies.md) helps you configure these policies.        |   E3, E5, F3, F5      |
 |4     | Configure Enterprise (recommended) Zero Trust identity and device access policies        |Now that your devices are enrolled, you can work with your identity admin to [tune Conditional Access policies to require healthy and compliant devices](manage-devices-with-intune-require-compliance.md).          | E3, E5, F3, F5        |
-|5     |Deploy configuration profiles      | As opposed to device compliance policies that simply mark a device as compliant or not based on criteria you configure, configuration profiles actually change the configuration of settings on a device. You can use configuration policies to harden devices against cyber threats. See [Step 5. Deploy configuration profiles](manage-devices-with-intune-configuration-profiles.md).        | E3, E5, F3, F5        |
+|5     |Deploy configuration profiles      | As opposed to device compliance policies that simply mark a device as compliant or not based on criteria you configure, configuration profiles actually change the configuration of settings on a device. You can use configuration policies to harden devices against cyberthreats. See [Step 5. Deploy configuration profiles](manage-devices-with-intune-configuration-profiles.md).        | E3, E5, F3, F5        |
 |6     |Monitor device risk and compliance to security baselines         | In this step, you connect Intune to Microsoft Defender for Endpoint. With this integration, you can then monitor device risk as a condition for access. Devices that are found to be in a risky state will be blocked. You can also monitor compliance to security baselines. See [Step 6. Monitor device risk and compliance to security baselines](manage-devices-with-intune-monitor-risk.md).       | E5, F5        |
 |7     |Implement data loss prevention (DLP) with information protection capabilities   | If your organization has put the work into identifying sensitive data and labeling documents, you can work with your information protection admin to [protect sensitive information and documents on your devices](manage-devices-with-intune-dlp-mip.md).         | E5, F5 compliance add on        |
 | | | | |
