@@ -36,6 +36,11 @@ In Microsoft Defender for Business (preview), security settings are configured t
 - [Edit an existing policy](#edit-an-existing-policy)
 - [Create a new policy](#create-a-new-policy)
 
+>
+> **Got a minute?**
+>![take our survey](/office/media/icons/sign-up-blue.png)  Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
+
 ## View your existing policies
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
