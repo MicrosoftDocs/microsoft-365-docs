@@ -265,6 +265,8 @@ Create a new Group Policy or group these settings in with the other policies. Th
 
 Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Real-time Protection**.
 
+ Since the value for "Scan incoming and outgoing files" (default) is 0, the group policy for the "Configure monitoring for incoming and outgoing file and program activity" for "bi-directional (full on-access)" setting changes to disabled.
+
 :::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="configure monitoring for incoming outgoing file activity.":::
 
 ### Configure Windows Defender SmartScreen settings
