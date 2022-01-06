@@ -2,8 +2,8 @@
 title: "Network connectivity in the Microsoft 365 Admin Center"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 09/21/2020
+manager: scotv
+ms.date: 12/06/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -225,10 +225,10 @@ You require a  license that provides access to the Microsoft 365 admin center.
 
 ## Related topics
 
-[Microsoft 365 network insights (preview)](office-365-network-mac-perf-insights.md)
+[Microsoft 365 network insights](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365 network assessment (preview)](office-365-network-mac-perf-score.md)
+[Microsoft 365 network assessment](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 connectivity test tool (preview)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 connectivity test tool](office-365-network-mac-perf-onboarding-tool.md)
 
-[Microsoft 365 Network Connectivity Location Services (preview)](office-365-network-mac-location-services.md)
+[Microsoft 365 Network Connectivity Location Services](office-365-network-mac-location-services.md)

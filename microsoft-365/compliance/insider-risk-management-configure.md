@@ -146,7 +146,7 @@ Complete the following steps to enable insider risk analytics:
 
 After reviewing the analytics insights, choose the insider risk policies and configure the associated prerequisites that best meet your organization's insider risk mitigation strategy.
 
-## Step 4 (required): Configure prerequisites for policies
+## Step 4 (recommended): Configure prerequisites for policies
 
 Most insider risk management policies have prerequisites that must be configured for policy indicators to generate relevant activity alerts. Configure the appropriate prerequisites depending on the policies you plan to configure for your organization.
 
