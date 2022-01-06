@@ -23,7 +23,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -56,7 +56,7 @@ CentOS 7.2 or higher|Yes|Yes|Yes|Yes|Yes
 Ubuntu 16.04 LTS or higher LTS|Yes|Yes|Yes|Yes|Yes
 Oracle Linux 7.2 or higher|Yes|Yes|Yes|Yes|Yes
 SUSE Linux Enterprise Server 12 or higher|Yes|Yes|Yes|Yes|Yes
-Linux Debian 9 or higher (in preview)|Yes|Yes|Yes|Yes|Yes
+Linux Debian 9 or higher|Yes|Yes|Yes|Yes|Yes
 Android 6.0 or higher (in preview)|Yes|Yes|Not supported|Not supported|Not supported
 iOS 12.0 or higher (in preview)|Yes|Not supported|Not supported|Not supported|Not supported
 
