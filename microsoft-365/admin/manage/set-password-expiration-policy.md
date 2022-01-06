@@ -31,7 +31,7 @@ description: "Learn how an admin can set a password expiration policy for your b
 
 ## Before you begin
 
-This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [See Who is an admin to learn about admin accounts](../admin-overview/admin-center-overview.md).
+This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. See [Who is an admin](../admin-overview/admin-center-overview.md) to learn about admin accounts.
 
 As an admin, you can make user passwords expire after a certain number of days, or set passwords to never expire. By default, passwords are set to never expire for your organization.
 
