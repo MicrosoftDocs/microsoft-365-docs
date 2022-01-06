@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 12/13/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -31,6 +31,11 @@ In Microsoft Defender for Business (preview), you can manage devices as follows:
 - [Take action on a device](#take-action-on-a-device-that-has-threat-detections) that has threat detections
 - [Onboard a device to Defender for Business (preview)](#onboard-a-device)  
 - [Offboard a device from Defender for Business (preview)](#offboard-a-device)
+
+>
+> **Got a minute?**
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
 
 ## View the list of onboarded devices
 
