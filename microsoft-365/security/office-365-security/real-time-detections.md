@@ -59,14 +59,14 @@ For more information, see [Email security with Explorer](email-security-in-micro
 
 ## Updated experience for Explorer and Real-time detections
 
-The experience for Threat Explorer and Real-time detections is updated to align with modern accessibility standards, and to optimize the workflows. For a short while, you will be able to toggle between the old experience and the new one.  
+The experience for Threat Explorer and Real-time detections is updated to align with modern accessibility standards, and to optimize the workflow. For a short while, you will be able to toggle between the old experience and the new one.  
 
 > [!NOTE]
-> Toggling impacts only your account and does not impact anybody else within your tenant. 
+> Toggling impacts only your account and does not impact anyone else within your tenant. 
 
 Threat Explorer and Real time detections is divided into the following views:
 
-- *All email*: Shows all email analyzed by Defender for office 365 and contains both good and malicious emails. This feature is only present in Threat Explorer and is not available for Real-time detections. By default, All email is set to show data for 2 days, which can be expanded up to 30 days. This is also the default view for Threat Explorer.  
+- *All email*: Shows all email analyzed by Defender for office 365 and contains both good and malicious emails. This feature is only present in Threat Explorer and is not available for Real-time detections. By default, it is set to show data for 2 days, which can be expanded up to 30 days. This is also the default view for Threat Explorer.  
 
 - *Malware view*: Shows emails on which a malware threat was identified. This is the default view for Real-time detections, and shows data for 2 days (can be expanded to 30 days).  
 
@@ -78,24 +78,26 @@ Here are the common components within these experiences:
 
 - Filters 
 
-    - You can use the various filters to slice and dice the data based on email or file attributes.  
+    - You can use the various filters to view the data based on email or file attributes.  
 
     - By default, the time filter is applied to the records, and is applied for 2 days.  
 
     - If you are applying multiple filters, they are applied in ‘AND’ mode and you can use the advanced filter to change it to ‘OR’ mode.  
 
-    - You can use comma as the delimiter to add multiple values for the same filter (see an example below).  
+    - You can use comma as the delimiter to add multiple values for the same filter.  
 
-[image]
+    > [!div class="mx-imgBorder"]
+    > ![Explorer filters](../../media/explorer-new-experience-filters.png)
 
 - Charts 
 
-    - Charts provide a visual, aggregate view of the grid data based on few out of the box pivots. You can use different pivots to view the data by different dimensions.  
+    - Charts provide a visual, aggregate view of data based on filters. You can use different filters to view the data by different dimensions.  
 
     > [!NOTE]
-    > You may see no results in chart view even if you are seeing an entry in the grid view. This happens if the pivot does not produce any data. For example, if you have applied the pivot malware family, but the underlying data does not have any malicious emails, then you may see the message no data available for this scenario.  
+    > You may see no results in chart view even if you are seeing an entry in the list view. This happens if the filter does not produce any data. For example, if you have applied the filter malware family, but the underlying data does not have any malicious emails, then you may see the message no data available for this scenario.  
 
-[image]
+    > [!div class="mx-imgBorder"]
+    > ![Explorer chart view](../../media/explorer-new-experience-export-chart-data.png)
 
 - Results grid  
 
@@ -103,16 +105,17 @@ Here are the common components within these experiences:
 
     - Based on the configuration set in your tenant, data will be shown in UTC or local timezone, with the timezone information available in the first column.  
 
-    - You can navigate to the individual email entity page from the grid view by clicking the icon in the grid below. 
+    - You can navigate to the individual email entity page from the list view by clicking the **Open in new window** icon**. 
 
     - You can also customize your columns to add or remove columns to optimize your view.
 
     > [!Note]
-    > You can toggle between the *Grid view* and the *List view* to maximize your result set.  
+    > You can toggle between the *Chart View* and the *List View* to maximize your result set.  
 
-[image]
+    > [!div class="mx-imgBorder"]
+    > ![Explorer grid view](../../media/explorer-new-experience-list-chart-view.png)
 
-- Detailed flyouts  
+- Detailed flyout  
 
     - You can click on hyperlinks to get to the email summary panel (entries in Subject column), recipient, or IP flyout.  
 
@@ -120,9 +123,7 @@ Here are the common components within these experiences:
 
     - The individual entity flyouts like IP, recipient, and URL would reflect the same information, but presented in a single tab-based view, with the ability to expand and collapse the different sections based on requirement.  
 
-    - For flyouts like URLs, you can click on *View All Email* or *View all clicks* to view the full set of emails/clicks containing that URL as well as export the result set.  
-
-[image]
+    - For flyouts like URLs, you can click **View all Email** or **View all Clicks** to view the full set of emails/clicks containing that URL as well as export the result set.  
 
 - Actions 
 
@@ -130,13 +131,14 @@ Here are the common components within these experiences:
 
 - Export 
 
-    - You can click on *Export Chart data* to export the chart details. Similarly, click *Export email list* to export email details.   
+    - You can click **Export Chart data** to export the chart details. Similarly, click **Export email list** to export email details.
 
-    - You can export up to 200K records for email list. However, for better system performance and reduced download time, we recommend you reduce the result set by using the various email filters.
+    - You can export up to 200K records for email list. However, for better system performance and reduced download time, you should use various email filters.
 
-[image]
+    > [!div class="mx-imgBorder"]
+    > ![Export chart data](../../media/explorer-new-experience-export-chart-data.png)
 
-In addition to these features, you will also get updated experiences like *Top URLs*, *Top clicks*, *Top targeted users*, and *Email origin*. *Top URLs*, *Top clicks* and *Top targeted users* can be further filtered based on the filter that you apply within Explorer. For example, if you are applying the filter Tags = Priority account, then you will see Top targeted users scoped to only priority accounts.  
+In addition to these features, you will also get updated experiences like *Top URLs*, *Top clicks*, *Top targeted users*, and *Email origin*. *Top URLs*, *Top clicks* and *Top targeted users* can be further filtered based on the filter that you apply within Explorer. 
 
 ## Required licenses and permissions
 
