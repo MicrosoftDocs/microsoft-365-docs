@@ -46,6 +46,7 @@ For more details on how to get started, visit the Defender for Endpoint on macOS
 >
 > - Data loss prevention
 > - Live response
+> - Security Management for Microsoft Defender for Endpoint
 
 ## Microsoft Defender for Endpoint on Linux
 
@@ -54,18 +55,13 @@ Microsoft Defender for Endpoint on Linux offers preventative (AV), endpoint dete
 
 For more details on how to get started, visit the Microsoft Defender for Endpoint on Linux [documentation](microsoft-defender-endpoint-linux.md).
 
-> [!NOTE]
-> The following capabilities are not currently supported on Linux endpoints:
->
-> - Data loss prevention
-> - Live response
 
 > [!NOTE]
 > The following capabilities are not currently supported on Linux endpoints:
 >
 > - Data loss prevention
 > - Live response
-> - SIEM
+> - Security Management for Microsoft Defender for Endpoint
 
 ## Microsoft Defender for Endpoint on Android
 
