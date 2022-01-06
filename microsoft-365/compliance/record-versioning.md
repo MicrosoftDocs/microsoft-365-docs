@@ -25,6 +25,8 @@ description: "Learn about records to help you implement a records management sol
 
 > [!NOTE]
 > Because regulatory records block editing, record versioning is not available for regulatory records.
+>
+> You can also prevent record versioning for your tenant, even if you're not using regulatory records: Go to the **Records management** node in the Microsoft 365 compliance center > **Records management settings** > **Retention labels** > **Configure record versioning** and then turn off the setting for **Enable record versioning**.
 
 The ability to mark a document as a [record](records-management.md#records) and restrict actions that can be performed on the record is an essential goal for any records management solution. However, collaboration might also be needed for people to create subsequent versions.
 
@@ -48,14 +50,14 @@ Record versioning is automatically available for any document that has a retenti
 While the document is unlocked, any user with standard edit permissions can edit the file. However, users can't delete the file, because it's still a record. When editing is complete, a  user can then toggle the **Record status** from **Unlocked** to **Locked**, which prevents further edits while in this status.
 <br/><br/>
 
-![Record status property on document tagged as a record.](../media/recordversioning8.png)
+:::image type="content" alt-text="Record status property on document tagged as a record." source="../media/recordversioning8.png" lightbox="../media/recordversioning8.png":::
 
 ## Locking and unlocking a record
 
 After a retention label that marks content as a record is applied to a document, any user with Contribute permissions or a narrower permission level can unlock a record or lock an unlocked record.
 <br/><br/>
 
-![Record status shows record document is unlocked.](../media/recordversioning9.png)
+:::image type="content" alt-text="Record status shows record document is unlocked." source="../media/recordversioning9.png" lightbox="../media/recordversioning9.png":::
 
 When a user unlocks a record, the following actions occur:
 
@@ -76,7 +78,7 @@ When a user locks a record, the original document again can't be edited. But it 
 Each time a user unlocks a record, the latest version is copied to the Preservation Hold library, and that version contains the value of **Record** in the **Comments** field of the version history.
 <br/><br/>
 
-![Record shown in the Preservation Hold library.](../media/recordversioning10.png)
+:::image type="content" alt-text="Record shown in the Preservation Hold library." source="../media/recordversioning10.png" lightbox="../media/recordversioning10.png":::
 
 To view the version history, select a document in the document library and then click **Version history** in the item menu.
 
