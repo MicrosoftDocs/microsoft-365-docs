@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: article
-ms.date: 12/16/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -26,6 +26,11 @@ ms.collection:
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
 If you've just finished setting up Microsoft Defender for Business (preview), you might be wondering where to start to learn about how Defender for Business (preview) works. This article describes preview scenarios to try, and several tutorials and simulations that are available for Defender for Business (preview). These resources are designed to help you see how Defender for Business (preview) can work for your company.
+
+>
+> **Got a minute?**
+>![take our survey](/office/media/icons/sign-up-blue.png)  Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
 
 ## Try these preview scenarios
 
