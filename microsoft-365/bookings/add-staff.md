@@ -97,7 +97,7 @@ Here's an example PowerShell command to add Allie Bellew to the Contoso daycare 
 2. Then run this command:
 
     ```powershell
-    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    Add-RecipientPermission -Identity "daycare@contoso.com" -Trustee "Allie Bellew" -AccessRights SendAs -Confirm:$false
     ```
 
 **Allie Bellew** now has administrator access, but doesn't appear as bookable staff in Bookings.
