@@ -152,10 +152,11 @@ Users will see enriched detonation details for known malicious attachments or UR
 
 The email summary panel is a summarized view of the full email entity page. It contains standardized details about the email (e.g., detections), as well as context-specific information (e.g., for Quarantine or Submissions metadata). The email summary panel replaces the traditional Real-time Detections, Threat Explorer, Submissions, and Reporting flyouts.
 
-[image]
+> [!div class="mx-imgBorder"]
+> ![Open the email entity link.](../../media/open-email-entity-mdo.png)
 
 > [!NOTE]
-> To view all the components, click on the **Open Email entity** link to open the full email entity page.  
+> To view all the components, click on the **Open email entity** link to open the full email entity page.  
 
 The email summary panel is divided into the following sections:  
 
@@ -171,12 +172,22 @@ In addition to the above sections, you will also see sections specific to few ex
 
 - Submissions: 
 
-    - *Result details* 
+    - *Submission details*: Contains information about the specific submissions such as:
+        - Date submitted
+        - Subject
+        - Submission type
+        - Reason for submitting
+        - Submission ID
+        - Submitted by
 
-    - *Submission details* 
+    - *Result details*: Messages that are submitted are reviewed. You can see the result of your submission as well as any recommended next steps.
 
 - Quarantine:  
 
-    - *Quarantine details* 
+    - *Quarantine details*: Contains quarantine-specific details. For more information, see [Manage quarantined messages](manage-quarantined-messages-and-files.md#view-quarantined-message-details).
 
-    - *Quarantine actions* 
+        - Expires: The date/time when the message will be automatically and permanently deleted from quarantine.
+        - Released to: All email addresses (if any) to which the message has been released.
+        - Not yet released to: All email addresses (if any) to which the message has not yet been released.
+
+    - *Quarantine actions*: For more information on different quarantine actions, see [Manage quarantined messages](manage-quarantined-messages-and-files.md#take-action-on-quarantined-email).
