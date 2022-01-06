@@ -14,7 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 09/16/2021
+ms.date: 12/07/2021
 ms.technology: mde
 ---
 
@@ -182,9 +182,9 @@ Get the current list of attack surface reduction GUIDs from [Attack surface redu
 
    ![Image of attack surface reduction configuration.](images/asr-guid.png)
 
-Policy|Setting
----|---
-Configure Controlled folder access| Enabled, Audit Mode
+Policy|Location|Setting
+---|---|---
+Configure Controlled folder access| \Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Controlled Folder Access| Enabled, Audit Mode
 
 ## Run a detection test to verify onboarding
 
