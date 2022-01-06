@@ -16,8 +16,6 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: 
-- admindeeplinkDEFENDER
-- admindeeplinkEXCHANGE
 description: Microsoft Defender for Office 365 E5 and P1 and P2 customers can now get a 360-degree view of each email with email entity page.
 ---
 # The Email entity page
@@ -32,7 +30,7 @@ Admins of Microsoft Defender for Office 365 E5, and Defender for Office P1 and P
 
 ## Reach the email entity page
 
-The email entity page is available in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> at **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
+The email entity page is available in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
 
 In **Explorer**, select the subject of an email you're investigating. A gold bar will display at the top of the email fly-out for that mail. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Select to view the new page.
 
@@ -108,7 +106,7 @@ Users will see enriched detonation details for known malicious attachments or UR
 
 *Email details*: Details required for a deeper understanding of email available in the *Analysis* tab.
 
-- *Exchange transport rules (also known as mail flow rules or ETRs)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. These can be only created and modified in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, but if any ETR applies to a message, the ETR name and GUID will be shown here. Valuable information for tracking purposes.
+- *Exchange transport rules (also known as mail flow rules or ETRs)*: These rules are applied to a message at the transport layer and take precedence over phish and spam verdicts. Mail flow rules are created and modified in the Exchange admin center at <https://admin.exchange.microsoft.com/#/transportrules>, but if any mail flow rule applies to a message, the rule name and GUID will be shown here. Valuable information for tracking purposes.
 
 - *System Overrides*: This is a means of making exceptions to the delivery location intended for a message by overriding the delivery location given by system (as per the threat and detection tech).
 
