@@ -61,9 +61,9 @@ There are two places to see how your score compares to organizations that are si
 
 The comparison bar chart is the **Overview** tab. Hover over the chart to view the score and score opportunity. The comparison data is anonymized so we don’t know exactly which others tenants are in the mix.
 
-![Bar graph of similar organization's scores.](../../media/secure-score/secure-score-comparison-screenshot.png)
-
 **Organizations like yours** is an average score of other tenants in same region (provided we have at least five or more tenants to compare) with a similar organization size to yours.
+
+![Bar graph of similar organization's scores.](../../media/secure-score/secure-score-comparison-screenshot.png)
 
 #### Comparison trend
 
