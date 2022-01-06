@@ -47,7 +47,7 @@ A variety of reports are available in the Microsoft 365 Defender portal at <http
 > [!NOTE]
 > This report is available in Microsoft 365 organizations with Exchange Online mailboxes. It's not available in standalone Exchange Online Protection (EOP) organizations.
 
-The **Compromised users** report shows shows the number of user accounts that were marked as **Suspicious** or **Restricted** within the last 7 days. Accounts in either of these states are problematic or even compromised. With frequent use, you can use the report to spot spikes, and even trends, in suspicious or restricted accounts. For more information about compromised users, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).
+The **Compromised users** report shows the number of user accounts that were marked as **Suspicious** or **Restricted** within the last 7 days. Accounts in either of these states are problematic or even compromised. With frequent use, you can use the report to spot spikes, and even trends, in suspicious or restricted accounts. For more information about compromised users, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).
 
 ![Compromised users widget on the Email & collaboration reports page.](../../media/compromised-users-report-widget.png)
 
@@ -79,13 +79,8 @@ On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-cre
 
 ## Exchange transport rule report
 
-The **Exchange transport rule** report shows the effect of mail flow rules (also known as transport rules) on incoming and outgoing messages in your organization.
-
-To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Exchange transport rule** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/ETRRuleReport>.
-
-![Exchange transport rule widget on the Email & collaboration reports page.](../../media/transport-rule-report-widget.png)
-
-On the **Exchange transport rule report** page, the available charts and data are described in the following sections.
+> [!NOTE]
+> The **Exchange transport rule report** is now available in the EAC. For more information, see [Exchange transport rule report in the new EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
 
 ### Chart breakdown by Direction
 
@@ -242,7 +237,7 @@ On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-cre
 
 ### Mailflow view for the Mailflow status report
 
-The **Mailflow** view shows you how Microsoft's email threat protection features filter incoming and outgoing email in your organization. This view uses a a horizontal flow diagram (known as a _Sankey_ diagram) to provide details on the total email count, and how the configured threat protection features, including edge protection, anti-malware, anti-phishing, anti-spam, and anti-spoofing affect this count.
+The **Mailflow** view shows you how Microsoft's email threat protection features filter incoming and outgoing email in your organization. This view uses a horizontal flow diagram (known as a _Sankey_ diagram) to provide details on the total email count, and how the configured threat protection features, including edge protection, anti-malware, anti-phishing, anti-spam, and anti-spoofing affect this count.
 
 ![Mailflow view in the Mailflow status report.](../../media/mail-flow-status-report-mailflow-view.png)
 
@@ -535,11 +530,11 @@ In the **View data by Email \> Spam** and **Chart breakdown by Detection Technol
 - **URL malicious reputation**
 - **Advanced filter**
 - **General filter**
-- **Mixed analysis detection**
-- **Fingerprint matching**
+- **Mixed analysis detection**: Multiple filters contributed to the verdict for the message.
+- **Fingerprint matching**: The message was marked as bad due to previous messages.
 - **Domain reputation**
-- **Bulk**
-- **IP reputation**
+- **Bulk**: Items detected as exceeding the bulk setting for the user.
+- **IP reputation**: The message was considered spam based on the sending IP address reputation.
 
 In the details table below the chart, the following information is available:
 
