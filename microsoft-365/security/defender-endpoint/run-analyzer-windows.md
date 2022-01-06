@@ -23,8 +23,7 @@ ms.technology: m365d
 # Run the client analyzer on Windows
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 1. Download the [MDE Client Analyzer tool](https://aka.ms/mdatpanalyzer) to the Windows machine you need to investigate.
 

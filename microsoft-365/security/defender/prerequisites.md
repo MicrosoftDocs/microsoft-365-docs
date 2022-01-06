@@ -65,11 +65,8 @@ You must be a **global administrator** or a **security administrator** in Azure 
 Access Microsoft 365 Defender in the Microsoft 365 Defender portal using Microsoft Edge, Internet Explorer 11, or any HTML 5 compliant web browser.
 
 ## Availability to US GCC, GCC High, and other US government institutions
-Currently, Microsoft 365 Defender is *not* available to:
-- US Government Community Cloud High (GCC High)
-- US Department of Defense
-- All US government institutions with commercial licenses
 
+For information related to US Government customers, see [Microsoft 365 Defender for US Government customers](usgov.md).
 
 Currently, the Microsoft Defender for Office 365 integration into the unified Microsoft 365 Defender features are not available to customers in the following Office 365 datacenter locations:
 

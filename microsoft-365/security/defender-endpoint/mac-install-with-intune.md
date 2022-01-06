@@ -25,6 +25,8 @@ ms.technology: mde
 **Applies to:**
 
 - [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 This topic describes how to deploy Microsoft Defender for Endpoint on macOS through Intune. A successful deployment requires the completion of all of the following steps:
 
