@@ -32,6 +32,11 @@ In Microsoft Defender for Business (preview), you can manage devices as follows:
 - [Onboard a device to Defender for Business (preview)](#onboard-a-device)  
 - [Offboard a device from Defender for Business (preview)](#offboard-a-device)
 
+>
+> **Got a minute?**
+>![take our survey](/office/media/icons/sign-up-blue.png)  Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
+
 ## View the list of onboarded devices
 
 :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Screenshot of device inventory":::
