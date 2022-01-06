@@ -746,6 +746,9 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
         Note that **Identifier**, **Socket Filter** and **Socket Filter Designated Requirement** exact values as specified above.
 
         ![Image of configuration setting mdatpmdav.](images/netext-create-profile.png)
+        
+ > [!NOTE]
+ > Jamf supports built-in content filter settings which can be set directly through the interface.
 
 3. Select the **Scope** tab.
 
