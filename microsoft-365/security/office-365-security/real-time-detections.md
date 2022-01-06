@@ -83,7 +83,7 @@ Here are the common components within these experiences:
 
     - If you are applying multiple filters, they are applied in ‘AND’ mode and you can use the advanced filter to change it to ‘OR’ mode.  
 
-    - You can use comma as the delimiter to add multiple values for the same filter.  
+    - You can use comma to add multiple values for the same filter.  
 
     > [!div class="mx-imgBorder"]
     > ![Explorer filters](../../media/explorer-new-experience-filters.png)
@@ -104,7 +104,7 @@ Here are the common components within these experiences:
 
     - Based on the configuration set in your tenant, data will be shown in UTC or local timezone, with the timezone information available in the first column.  
 
-    - You can navigate to the individual email entity page from the list view by clicking the **Open in new window** icon**. 
+    - You can navigate to the individual email entity page from the list view by clicking the **Open in new window** icon. 
 
     - You can also customize your columns to add or remove columns to optimize your view.
 
@@ -122,7 +122,7 @@ Here are the common components within these experiences:
 
     - The individual entity flyouts like IP, recipient, and URL would reflect the same information, but presented in a single tab-based view, with the ability to expand and collapse the different sections based on requirement.  
 
-    - For flyouts like URLs, you can click **View all Email** or **View all Clicks** to view the full set of emails/clicks containing that URL as well as export the result set.  
+    - For flyouts like URLs, you can click **View all Email** or **View all Clicks** to view the full set of emails/clicks containing that URL, as well as export the result set.  
 
 - Actions 
 
@@ -130,7 +130,7 @@ Here are the common components within these experiences:
 
 - Export 
 
-    - You can click **Export Chart data** to export the chart details. Similarly, click **Export email list** to export email details.
+    - You can click **Export chart data** to export the chart details. Similarly, click **Export email list** to export email details.
 
     - You can export up to 200K records for email list. However, for better system performance and reduced download time, you should use various email filters.
 
