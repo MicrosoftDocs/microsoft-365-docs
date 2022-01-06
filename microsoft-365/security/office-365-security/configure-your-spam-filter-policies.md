@@ -498,7 +498,7 @@ For detailed syntax and parameter information, see [Set-HostedContentFilterRule]
 
 ### Use PowerShell to enable or disable spam filter rules
 
-Enabling or disabling a spam filter rule in PowerShell enables or disables the whole anti-spam policy (the spam filter rule and the assigned spam filter policy). You can't enable or disable the default anti-spam policy (it's always always applied to all recipients).
+Enabling or disabling a spam filter rule in PowerShell enables or disables the whole anti-spam policy (the spam filter rule and the assigned spam filter policy). You can't enable or disable the default anti-spam policy (it's always applied to all recipients).
 
 To enable or disable a spam filter rule in PowerShell, use this syntax:
 

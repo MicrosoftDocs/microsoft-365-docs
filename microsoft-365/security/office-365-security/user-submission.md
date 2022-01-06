@@ -50,7 +50,7 @@ Use the following articles to configure the prerequisites required so user repor
 
 - [Create an anti-spam policy](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) that includes the custom mailbox where ZAP for spam and ZAP for phishing are turned off (**Zero-hour auto purge** section \> **Enabled zero-hour auto purge (ZAP)** is not selected).
 
-If you have Microsoft Defender for Office 365, you should also configure the the following settings so that our advanced filtering does not impact the users reporting messages:
+If you have Microsoft Defender for Office 365, you should also configure the following settings so that our advanced filtering does not impact the users reporting messages:
 
 - [Create a Safe Links policy](set-up-safe-links-policies.md) that includes the custom mailbox where Safe Links scanning is turned off (**Select the action for unknown potentially malicious URLs in messages** section \> **Off**).
 
