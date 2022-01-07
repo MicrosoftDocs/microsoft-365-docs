@@ -135,7 +135,7 @@ For more information, see [Integration with Microsoft Defender for Cloud](azure-
 
 **Prerequisites for Windows Server 2012 R2**
 
-If you have fully updated your machines with the latest [monthly rollup](/troubleshoot/windows-client/deployment/standard-terminology-software-updates.md#monthly-rollup) package, there are **no** additional prerequisites.
+If you have fully updated your machines with the latest [monthly rollup](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e) package, there are **no** additional prerequisites.
 
 
 The installer package will check if the following components have already been installed via an update:
