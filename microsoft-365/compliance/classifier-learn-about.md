@@ -103,8 +103,6 @@ Pre-trained classifiers can scan content in these languages:
 •	Portuguese
 •	Spanish
 
-### 
-
 ### Custom classifiers
 
 When the pre-trained classifiers don't meet your needs, you can create and train your own classifiers. There's significantly more work involved with creating your own, but they'll be much better tailored to your organizations needs.
