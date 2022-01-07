@@ -6336,6 +6336,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/get-user-information.md",
+      "redirect_url": "microsoft-365/security/defender-endpoint/management-apis",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/api-terms-of-use.md",
       "redirect_url": "/legal/microsoft-365/api-terms-of-use",
       "redirect_document_id": false
