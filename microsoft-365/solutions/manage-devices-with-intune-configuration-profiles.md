@@ -13,7 +13,9 @@ ms.localizationpriority: high
 ms.collection:
 - Configuration profiles
 - Windows security baselines for Intune
-- customize configuration profiles
+- customize configuration profiles- 
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: 
 keywords: 
 ---
