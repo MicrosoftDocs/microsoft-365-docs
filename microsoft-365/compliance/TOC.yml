@@ -938,12 +938,12 @@
   items: 
     - name: How to identify the type of hold placed on a mailbox
       href: identify-a-hold-on-an-exchange-online-mailbox.md
-    - name: Create a Litigation Hold
-      href: create-a-litigation-hold.md
     - name: Delete items in the Recoverable Items folder of mailboxes on hold
       href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
     - name: Increase the Recoverable Items quota for mailboxes on hold
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+    - name: Create a Litigation hold
+      href: create-a-litigation-hold.md
     - name: Preserve Bcc and expanded distribution group recipients
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Manage auditing and alert policies
