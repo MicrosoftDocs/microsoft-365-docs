@@ -130,6 +130,10 @@ Pre-trained classifiers can scan content in these languages:
 
 When the pre-trained classifiers don't meet your needs, you can create and train your own classifiers. There's significantly more work involved with creating your own, but they'll be much better tailored to your organizations needs.
 
+To start creating a custom trainable classifier by feeding it examples that are definitely in the category. Once it processes those examples, you test it by giving it a mix of both matching and non-matching examples. The classifier then makes predictions as to whether any given item falls into the category you're building. You then confirm its results, sorting out the true positives, true negatives, false positives, and false negatives to help increase the accuracy of its predictions. 
+
+When you publish the classifier, it sorts through items in locations like SharePoint Online, Exchange, and OneDrive, and classifies the content. After you publish the classifier, you can continue to train it using a feedback process that is similar to the initial training process.
+
 For example you could create trainable classifiers for:
 
 - Legal documents - such as attorney client privilege, closing sets, statement of work
