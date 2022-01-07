@@ -469,6 +469,8 @@
           href: set-up-irm-in-sp-admin-center.md
         - name: Technical reference
           href: technical-reference-details-about-encryption.md
+        - name: Microsoft 365 encryption chains
+          href: encryption-office-365-certificate-chains.md
         - name: TLS 1.0 and 1.1 deprecation for Office 365
           href: tls-1.0-and-1.1-deprecation-for-office-365.md
         - name: TLS 1.0 and 1.1 deprecation in Office 365 GCC High and DoD
