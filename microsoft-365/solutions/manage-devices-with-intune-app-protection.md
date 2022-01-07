@@ -15,7 +15,9 @@ ms.collection:
 - APP
 - mobile application management
 - MAM
-- set up mobile ap protection
+- set up mobile ap protection 
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: 
 keywords: 
 ---
