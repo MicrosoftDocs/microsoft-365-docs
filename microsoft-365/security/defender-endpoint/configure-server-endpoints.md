@@ -91,7 +91,7 @@ If you have previously onboarded your servers using MMA, follow the guidance pro
 >[!NOTE]
 >While this method of onboarding Windows Server 2012 R2 and Windows Server 2016 is in preview, you can choose to continue to use the previous onboarding method using Microsoft Monitoring Agent (MMA). For more information, see [Install and configure endpoints using MMA](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma).
 
-#### Known issues and limitations for the new, unified solution package for Windows Server 2012 R2 and 2016
+#### Known issues and limitations on the new, unified solution package for Windows Server 2012 R2 and 2016
 
 The following specifics apply to the new unified solution package for Windows Server 2012 R2 and 2016:
 
