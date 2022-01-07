@@ -83,7 +83,7 @@ Here are the common components within these experiences:
 
     - If you are applying multiple filters, they are applied in ‘AND’ mode and you can use the advanced filter to change it to ‘OR’ mode.  
 
-    - You can use comma to add multiple values for the same filter.  
+    - You can use commas to add multiple values for the same filter.  
 
     > [!div class="mx-imgBorder"]
     > ![Explorer filters](../../media/explorer-new-experience-filters.png)
