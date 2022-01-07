@@ -4586,6 +4586,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/evaluate-attack-surface-reduction.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-phase-2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/customize-attack-surface-reduction.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-phase-3",
+      "redirect_document_id": false
+    },    
+    {
       "source_path": "microsoft-365/security/office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md",
       "redirect_url": "/microsoft-365/security/office-365-security/report-false-positives-and-false-negatives",
       "redirect_document_id": true
@@ -6326,6 +6336,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/get-user-information.md",
+      "redirect_url": "microsoft-365/security/defender-endpoint/management-apis",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/api-terms-of-use.md",
       "redirect_url": "/legal/microsoft-365/api-terms-of-use",
       "redirect_document_id": false
@@ -6333,6 +6348,16 @@
     {
       "source_path": "microsoft-365/security/defender-endpoint/mde-terms-windows.md",
       "redirect_url": "/legal/microsoft-365/mde-terms-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-business/mdb-view-edit-policies.md",
+      "redirect_url": "/microsoft-365/security/defender-business/mdb-view-edit-create-policies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-business/mdb-create-new-policy.md",
+      "redirect_url": "/microsoft-365/security/defender-business/mdb-view-edit-create-policies",
       "redirect_document_id": false
     }
   ]

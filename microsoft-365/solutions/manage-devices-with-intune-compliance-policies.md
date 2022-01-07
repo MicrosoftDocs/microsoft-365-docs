@@ -12,7 +12,9 @@ ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - Create compliance policies
-- Intune device compliance policy
+- Intune device compliance policy- 
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: 
 keywords: 
 ---

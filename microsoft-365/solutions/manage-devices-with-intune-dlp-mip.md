@@ -12,7 +12,9 @@ ms.localizationpriority: high
 ms.collection:
 - endpoint dlp
 - data loss prevention
-- dlp policies
+- dlp policies 
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: 
 keywords: 
 description: Implement Endpoint DLP by working with your information protection and governance team to create DLP policies for your organization.    
