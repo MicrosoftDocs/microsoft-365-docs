@@ -40,6 +40,8 @@ Defender for Endpoint extends support to also include the Windows Server operati
 
 This topic describes how to onboard specific Windows servers to Microsoft Defender for Endpoint.
 
+
+
 For a practical guidance on what needs to be in place for licensing and infrastructure, see [Protecting Windows Servers with Defender for Endpoint](https://techcommunity.microsoft.com/t5/What-s-New/Protecting-Windows-Server-with-Windows-Defender-ATP/m-p/267114#M128).
 
 For guidance on how to download and use Windows Security Baselines for Windows servers, see [Windows Security Baselines](/windows/device-security/windows-security-baselines).
@@ -60,6 +62,11 @@ You'll need to complete the following general steps to successfully onboard serv
 
 - Download the onboarding package
 - Follow the onboarding steps for the corresponding tool
+
+>[!IMPORTANT]
+>In order to be eligible to purchase Microsoft Defender for Endpoint Server SKU, you must have already purchased a combined minimum of any of the following, Windows E5/A5, Microsoft 365 E5/A5 or Microsoft 365 E5 Security subscription licenses.  For more information on licensing, see the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering/MicrosoftDefenderforEndpointServer/all).  
+
+
 
 ### New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview
 
@@ -124,7 +131,7 @@ For more information, see [Integration with Microsoft Defender for Cloud](azure-
 
 **Prerequisites for Windows Server 2012 R2**
 
-If you have fully updated your machines with the latest [monthly rollup](/troubleshoot/windows-client/deployment/standard-terminology-software-updates.md#monthly-rollup) package, there are **no** additional prerequisites.
+If you have fully updated your machines with the latest [monthly rollup](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e) package, there are **no** additional prerequisites.
 
 
 The installer package will check if the following components have already been installed via an update:

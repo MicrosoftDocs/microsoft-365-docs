@@ -98,6 +98,8 @@
           href: deploy-supported-services.md
         - name: Turning on Microsoft 365 Defender FAQs
           href: m365d-enable-faq.md              
+        - name: Train your security staff
+          href: microsoft-365-defender-train-security-staff.md              
     - name: Protect against threats
       items: 
       - name: Microsoft Secure Score
