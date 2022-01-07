@@ -43,9 +43,28 @@ The tables in the following sections describe the conditions and exceptions that
 
 ### Senders
 
-<br>
+If you use the sender address as a condition or exception the actual field where the value is looked for varies depending on the type of rule you use. For DLP based rules, the Envelope address is used as the sender address. For Exchange transport rules the Header address is used as the sender address.
+<!-- REMOVE COMMENTS ON 1/20/2022
+> [!NOTE]
+> Starting January 20, 2022, the default sender address location will be moved to the Header address along with the availability of the -SenderAddressLocation parameter to configure desired behavior at a DLP rule level.
 
-****
+![image](https://user-images.githubusercontent.com/53205984/145942298-6b435ba6-d146-44fe-a1c5-58babeaf8d7a.png)
+
+At the tenant level, you can configure a sender address location to be used across all rules, unless overridden by a single rule. To revert tenant DLP policy configuration to evaluate the sender address from the Envelope across all rules, you can run the following command:
+
+```PowerShell
+Set-PolicyConfig –SenderAddressLocation Envelope
+```
+
+To configure the sender address location at a DLP rule level, the parameter is _SenderAddressLocation_. The available values are:
+
+- **Header**: Only examine senders in the message headers (for example, the **From**, **Sender**, or **Reply-To** fields). This is the default value.
+
+- **Envelope**: Only examine senders from the message envelope (the **MAIL FROM** value that was used in the SMTP transmission, which is typically stored in the **Return-Path** field).
+
+- **Header or envelope** (`HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
+<br>
+-->
 
 |condition or exception in DLP|condition/exception parameters in Microsoft 365 PowerShell|property type|description|
 |---|---|---|---|
