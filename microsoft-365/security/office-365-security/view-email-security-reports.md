@@ -19,7 +19,6 @@ ms.collection:
 description: Admins can learn how to find and use the email security reports that are available in the Microsoft 365 Defender portal.
 ms.custom: 
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -39,14 +38,14 @@ A variety of reports are available in the Microsoft 365 Defender portal at <http
 >
 > Some of the reports on the **Email & collaboration reports** page require Microsoft Defender for Office 365. For information about these reports, see [View Defender for Office 365 reports in the Microsoft 365 Defender portal](view-reports-for-mdo.md).
 >
-> Reports that are related to mail flow are now in the Exchange admin center (EAC). For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
+> Reports that are related to mail flow are now in the Exchange admin center. For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
 
 ## Compromised users report
 
 > [!NOTE]
 > This report is available in Microsoft 365 organizations with Exchange Online mailboxes. It's not available in standalone Exchange Online Protection (EOP) organizations.
 
-The **Compromised users** report shows shows the number of user accounts that were marked as **Suspicious** or **Restricted** within the last 7 days. Accounts in either of these states are problematic or even compromised. With frequent use, you can use the report to spot spikes, and even trends, in suspicious or restricted accounts. For more information about compromised users, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).
+The **Compromised users** report shows the number of user accounts that were marked as **Suspicious** or **Restricted** within the last 7 days. Accounts in either of these states are problematic or even compromised. With frequent use, you can use the report to spot spikes, and even trends, in suspicious or restricted accounts. For more information about compromised users, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).
 
 ![Compromised users widget on the Email & collaboration reports page.](../../media/compromised-users-report-widget.png)
 
@@ -78,13 +77,8 @@ On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-cre
 
 ## Exchange transport rule report
 
-The **Exchange transport rule** report shows the effect of mail flow rules (also known as transport rules) on incoming and outgoing messages in your organization.
-
-To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Exchange transport rule** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/ETRRuleReport>.
-
-![Exchange transport rule widget on the Email & collaboration reports page.](../../media/transport-rule-report-widget.png)
-
-On the **Exchange transport rule report** page, the available charts and data are described in the following sections.
+> [!NOTE]
+> The **Exchange transport rule report** is now available in the EAC. For more information, see [Exchange transport rule report in the new EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
 
 ### Chart breakdown by Direction
 
@@ -241,7 +235,7 @@ On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-cre
 
 ### Mailflow view for the Mailflow status report
 
-The **Mailflow** view shows you how Microsoft's email threat protection features filter incoming and outgoing email in your organization. This view uses a a horizontal flow diagram (known as a _Sankey_ diagram) to provide details on the total email count, and how the configured threat protection features, including edge protection, anti-malware, anti-phishing, anti-spam, and anti-spoofing affect this count.
+The **Mailflow** view shows you how Microsoft's email threat protection features filter incoming and outgoing email in your organization. This view uses a horizontal flow diagram (known as a _Sankey_ diagram) to provide details on the total email count, and how the configured threat protection features, including edge protection, anti-malware, anti-phishing, anti-spam, and anti-spoofing affect this count.
 
 ![Mailflow view in the Mailflow status report.](../../media/mail-flow-status-report-mailflow-view.png)
 
@@ -317,9 +311,7 @@ The **Mail latency report** in Defender for Office 365 contains information on t
 
 The **Spoof detections** report shows information about messages that were blocked or allowed due to spoofing. For more information about spoofing, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
 
-The aggregate view of the report allows for 45 days of filtering<sup>\*</sup>, while the detail view only allows for ten days of filtering.
-
-<sup>\*</sup> Eventually, you'll be able to use up to 90 days of filtering.
+The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for ten days of filtering.
 
 To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Spoof detections** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/SpoofMailReportV2>.
 
@@ -536,11 +528,11 @@ In the **View data by Email \> Spam** and **Chart breakdown by Detection Technol
 - **URL malicious reputation**
 - **Advanced filter**
 - **General filter**
-- **Mixed analysis detection**
-- **Fingerprint matching**
+- **Mixed analysis detection**: Multiple filters contributed to the verdict for the message.
+- **Fingerprint matching**: The message was marked as bad due to previous messages.
 - **Domain reputation**
-- **Bulk**
-- **IP reputation**
+- **Bulk**: Items detected as exceeding the bulk setting for the user.
+- **IP reputation**: The message was considered spam based on the sending IP address reputation.
 
 In the details table below the chart, the following information is available:
 
@@ -912,7 +904,7 @@ To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **
 
 When you hover over a wedge in the pie chart, you can see the name of a kind of malware and how many messages were detected as having that malware.
 
-On the **Top malware report** page, a larger version of the pie chart is displayed on the report page.The details table below the chart shows the following information:
+On the **Top malware report** page, a larger version of the pie chart is displayed. The details table below the chart shows the following information:
 
 - **Top malware**
 - **Count**
@@ -922,6 +914,45 @@ If you click **Filter**, you can specify a date range with **Start date** and **
 On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](#schedule-report)** and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](#export-report)** buttons are available.
 
 ![Top malware report view.](../../media/top-malware-report-view.png)
+
+## Top senders and recipients report
+
+The **Top senders and recipient** report is available in both EOP and Defender for Office 365; however, the reports contain different data. For example, EOP customers can view information about top malware, spam, and phishing (spoofing) recipients, but not information about malware detected by [Safe Attachments](safe-attachments.md) or phishing detected by [impersonation protection](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+
+The **Top senders and recipients** shows the top messages senders in your organization, as well as the top recipients for messages that were detected by EOP and Defender for Office 365 protection features. By default, the report shows data for the last week, but data is available for the last 90 days.
+
+To view the report in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Top senders and recipients report** and then click **View details**. To go directly to the report, open one of the following URLs:
+
+- Defender for Office 365: <https://security.microsoft.com/reports/TopSenderRecipientsATP>
+- EOP: <https://security.microsoft.com/reports/TopSenderRecipient>
+
+![Top senders and recipients widget in the Reports dashboard.](../../media/top-senders-and-recipients-widget.png)
+
+When you hover over a wedge in the pie chart, you can see the number of messages for the sender or recipient.
+
+On the **Top senders and recipients** page, a larger version of the pie chart is displayed. The following charts are available:
+
+- **Show data for Top mail senders** (this is the default view)
+- **Show data for Top mail recipients**
+- **Show data for Top spam recipients**
+- **Show data for Top malware recipients** (EOP)
+- **Show data for Top phishing recipients**
+- **Show data for Top malware recipients (MDO)**
+- **Show data for Top phish recipients (MDO)**
+
+The data changes based on your selection.
+
+When you hover over a wedge in the pie chart, you can see the message count for that specific sender or recipient.
+
+The details table below the graph shows the senders or recipients and message counts based on the view you selected.
+
+You can filter both the chart and the details table by clicking **Filter** and selecting **Start date** and **End date**.
+
+When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
+
+On the main report page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **Export** button is available.
+
+![Show data for Top mail senders view in the Top senders and recipients report.](../../media/top-senders-and-recipients-report-view.png)
 
 ## URL protection report
 

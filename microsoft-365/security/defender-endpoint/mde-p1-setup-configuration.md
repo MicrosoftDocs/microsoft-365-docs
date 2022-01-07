@@ -7,9 +7,9 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 12/07/2021
+ms.date: 01/03/2022
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
@@ -183,8 +183,8 @@ Attack surface reduction rules are available on devices running Windows. We reco
 > [!TIP]
 > To learn more about attack surface reduction rules, see the following resources:
 > - [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md)
-> - [View the list of attack surface reduction rules](attack-surface-reduction-rules.md)
-> - [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
+> - [View the list of attack surface reduction rules](attack-surface-reduction-rules-reference.md)
+> - [Attack surface reduction rules deployment phase 3: implement](attack-surface-reduction-rules-deployment-phase-3.md)
 
 ### Ransomware mitigation
 

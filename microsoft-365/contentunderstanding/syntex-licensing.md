@@ -24,7 +24,7 @@ To use SharePoint Syntex, your organization must have a subscription to SharePoi
  
 ## Tasks requiring a license
  
-The following tasks require a SharePoint Syntex license for the user performing them:
+The following tasks require a [SharePoint Syntex license](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex) for the user performing them:
  
 - Applying a document understanding model to a library. (Unlicensed users can be granted access to a content center and can create document understanding models there but can't apply them to a document library.)
 - Creating a form processing model via the entry point in a library
