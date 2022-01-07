@@ -15,6 +15,8 @@ ms.collection:
 - monitor device risk
 - monitor device compliance
 - deploy security baselines
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: 
 keywords: 
 ---

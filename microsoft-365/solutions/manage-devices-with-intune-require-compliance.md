@@ -14,6 +14,8 @@ ms.collection:
 - Conditional access policy
 - Microsoft Intune
 - Intune device management 
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: 
 ---
 
