@@ -19,7 +19,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Explorer and Real-time detections basics
+# Explorer and Real-time detections
 
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
@@ -34,7 +34,7 @@ In this article:
 > [!NOTE]
 > This is part of a **3-article series** on **Explorer (also known as Threat Explorer)**, **email security**, and **Explorer and Real-time detections basics** (such as differences between the tools, and permissions needed to operate them). The other two articles in this series are [Threat hunting in Explorer](threat-hunting-in-threat-explorer.md) and [Email security with Explorer](email-security-in-microsoft-defender.md).
 
-This article explains the difference between Explorer and real-time detections reporting, and the licenses and permissions that are required.
+This article explains the difference between Explorer and real-time detections reporting, updated experience with Explorer and real-time detections where you can toggle between old and new experiences, and the licenses and permissions that are required.
 
 If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [permissions](#required-licenses-and-permissions), you can use **Explorer** (also known as **Threat Explorer**) or **Real-time detections** to detect and remediate threats.
 
@@ -75,7 +75,7 @@ Threat Explorer and Real-time detections is divided into the following views:
 
 Here are the common components within these experiences:
 
-- Filters 
+- Filters
 
     - You can use the various filters to view the data based on email or file attributes.  
 
@@ -88,7 +88,7 @@ Here are the common components within these experiences:
     > [!div class="mx-imgBorder"]
     > ![Explorer filters](../../media/explorer-new-experience-filters.png)
 
-- Charts 
+- Charts
 
     - Charts provide a visual, aggregate view of data based on filters. You can use different filters to view the data by different dimensions.  
 
@@ -124,11 +124,11 @@ Here are the common components within these experiences:
 
     - For flyouts like URLs, you can click **View all Email** or **View all Clicks** to view the full set of emails/clicks containing that URL, as well as export the result set.  
 
-- Actions 
+- Actions
 
     - From Threat Explorer, you can trigger remediation actions like *Delete an email*. For more information on remediation, remediation limits, and tracking remediation see [Remediate malicious email](remediate-malicious-email-delivered-office-365.md).  
 
-- Export 
+- Export
 
     - You can click **Export chart data** to export the chart details. Similarly, click **Export email list** to export email details.
 
