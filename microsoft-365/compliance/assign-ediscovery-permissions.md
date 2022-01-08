@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
@@ -19,8 +19,7 @@ ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: "Assign the permissions required to perform eDiscovery-related tasks using the Microsoft 365 compliance center."
 ms.custom: 
 - seo-marvel-apr2020
-- admindeeplinkMAC
-- admindeeplinkEXCHANGE
+- admindeeplinkCOMPLIANCE
 ---
 
 # Assign eDiscovery permissions in the Microsoft 365 compliance center
@@ -54,7 +53,7 @@ The primary eDiscovery-related role group in Microsoft 365 compliance center is 
   
 ## Assign eDiscovery permissions
 
-1. Go to <https://compliance.microsoft.com> and sign in using an account that can assign permissions.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in using an account that can assign permissions.
   
 2. In the left pane, select **Permissions**.
 
