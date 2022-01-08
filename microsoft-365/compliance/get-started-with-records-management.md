@@ -26,13 +26,11 @@ description: Need a records management solution for Microsoft 365 that manages h
 
 Ready to start managing your organization's high-value content for legal, business, or regulatory obligations by using a records management solution in Microsoft 365? Use the following guidance to get started:
 
-1. **Understand how retention and deletion works** in Microsoft 365, and identify whether you need to use retention policies to supplement retention labels that manage documents and emails at the item level: [Learn about retention](retention.md)
-    
-    If necessary, [create retention policies](create-retention-policies.md) for baseline governance of data across Microsoft 365 workloads.
+1. **Understand the records management solution** and what actions are allowed or blocked when documents and emails are declared records: [Learn about records management](records-management.md).
 
-2. **Understand the records management solution** and how retention labels can be used to allow or block actions when documents and emails are declared records: [Learn about records management](records-management.md).
+2. **Understand retention labels and how retention works** for SharePoint and Exchange, because retention labels are used to declare records: [Learn about retention policies and retention labels](retention.md)
 
-3. **Create your file plan for retention and deletion settings and actions, and when items should be marked as records** by importing an existing plan if you have one, or create new retention labels: [Use file plan to create and manage retention labels](file-plan.md).
+3. **Create your file plan for retention settings and actions** by [importing an existing plan](file-plan-manager.md#import-retention-labels-into-your-file-plan) if you have one, or create [new retention labels that declare records](declare-records.md).
 
 4. **Publish and apply your retention labels**. Retention labels are reusable building blocks that can be used in multiple policies and can be incorporated into user workflows:
 
@@ -59,6 +57,9 @@ These permissions are required only to create, configure, and apply retention la
 
 Use the following table to help you map your business requirements to the scenarios that are supported by records management.
 
+> [!NOTE]
+> Because records management uses retention labels to mark an item as a record, many scenarios in this table are also listed as [common scenarios for retention policies and retention labels](get-started-with-retention.md#common-scenarios-for-retention-policies-and-retention-labels).
+
 |I want to ...|Documentation|
 |----------------|---------------|
 |Declare a record |[Declare records by using retention labels](declare-records.md)|
@@ -75,10 +76,10 @@ Use the following table to help you map your business requirements to the scenar
 |Have proof of disposition for content that is permanently deleted at the end of its retention period|[Disposition of records](disposition.md#disposition-of-records) |
 | Monitor how and where retain and delete settings are applied to items | [Monitoring retention labels](retention.md#monitoring-retention-labels) |
 
-## End-user documentation for records management
+## End-user documentation for records
 
-If you're using retention policies for baseline data governance, they typically work unobtrusively in the background without user interaction. As a result, they need little documentation for users. Retention policies for Teams inform users when their messages have been deleted with a link to [Teams messages about retention policies](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+Retention labels that are used for records management have a UI presence in Microsoft 365 apps. Make sure you provide guidance for end users and your help desk before you deploy retention labels to your production network.
 
-In comparison, retention labels have a UI presence in Microsoft 365 apps, so make sure you provide guidance for end users and your help desk before these labels are deployed to your production network. To help users apply retention labels in SharePoint and OneDrive, and information about unlocking records for editing, see [Apply retention labels to files in SharePoint or OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df).
+To help users apply retention labels in SharePoint and OneDrive, which includes information about unlocking records for editing, see [Apply retention labels to files in SharePoint or OneDrive](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df).
 
-However, the most effective end-user documentation will be customized guidance and instructions you provide for the retention label names and configurations you choose. See the following page and downloads that you can use to help train your users: [End User Training for Retention Labels](https://microsoft.github.io/ComplianceCxE/enduser/retention/).
+However, the most effective end-user documentation will be customized guidance and instructions you provide for the retention label names and configurations you choose. See the following blog post for a download package that you can use to train users and drive adoption: [End User Training for Retention Labels in M365 – How to Accelerate Your Adoption](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
