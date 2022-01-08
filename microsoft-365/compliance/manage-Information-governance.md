@@ -23,7 +23,7 @@ description: "Implement Microsoft Information Governance capabilities to govern 
 
 Use Microsoft Information Governance (sometimes abbreviated to MIG) capabilities to govern your data for compliance or regulatory requirements.
 
-From a [licensing perspective](#licesning-requirements), there can be considerable overlap between information governance, records management, and data connectors. All three areas support retention and deletion of data in Microsoft 365. But they each have their own node in the Microsoft 365 compliance center. Use the following graphic to help you identify the main configurable components for these three different solutions:
+From a [licensing perspective](#licensing-requirements), there can be considerable overlap between information governance, records management, and data connectors. All three areas support retention and deletion of data in Microsoft 365. But they each have their own node in the Microsoft 365 compliance center. Use the following graphic to help you identify the main configurable components for these three different solutions:
 
 ![Main components to manage for Microsoft Information Goevernance.](../media/information-governance-components.png)
 
