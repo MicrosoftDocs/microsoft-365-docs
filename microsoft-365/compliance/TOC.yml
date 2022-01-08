@@ -624,13 +624,15 @@
     - name: Records management
       items: 
         - name: Learn about records management
-          href: records-management.md
-        - name: Resources for regulatory requirements
-          href: retention-regulatory-requirements.md
-        - name: Declare records by using retention labels
-          href: declare-records.md
-        - name: Use record versioning for files
-          href: record-versioning.md
+          items:
+            - name: Learn about records management
+              href: records-management.md
+            - name: Resources for regulatory requirements
+              href: retention-regulatory-requirements.md
+            - name: Declare records by using retention labels
+              href: declare-records.md
+            - name: Use record versioning for files
+              href: record-versioning.md
         - name: Get started with records management
           href: get-started-with-records-management.md
         - name: Create and manage retention labels with file plan
