@@ -178,7 +178,7 @@ The **onboarding package** contains the following files:
 
 Use the following steps to download the packages: 
 
-1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
+1. In Microsoft 365 Defender, go to **Settings > Device Management > Onboarding**.
 
 2. Select **Windows Server 2012 R2 and 2016**.
 
@@ -308,7 +308,7 @@ The onboarding package for Windows Server 2019 and Windows Server 2022 through M
 
 ### Download package
 
-1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
+1. In Microsoft 365 Defender, go to **Settings > Device Management > Onboarding**.
 
 2. Select **Windows Server 1803 and 2019**.
 

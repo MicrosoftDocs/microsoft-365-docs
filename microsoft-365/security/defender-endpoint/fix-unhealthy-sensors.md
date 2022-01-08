@@ -39,7 +39,7 @@ An inactive device is not necessarily flagged due to an issue. The following act
 If the device has not been in use for more than seven days for any reason, it will remain in an 'Inactive' status in the portal.
 
 ### Device was reinstalled or renamed
-A reinstalled or renamed device will generate a new device entity in the Microsoft Defender Security Center. The previous device entity will remain with an 'Inactive' status in the portal. If you reinstalled a device and deployed the Defender for Endpoint package, search for the new device name to verify that the device is reporting normally.
+A reinstalled or renamed device will generate a new device entity in Microsoft 365 Defender. The previous device entity will remain with an 'Inactive' status in the portal. If you reinstalled a device and deployed the Defender for Endpoint package, search for the new device name to verify that the device is reporting normally.
 
 ### Device was offboarded
 If the device was offboarded, it will still appear in devices list. After seven days, the device health state should change to inactive.
