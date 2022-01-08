@@ -3,7 +3,9 @@ title: "Step 7. Implement data loss prevention (DLP) with information protection
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- Endpoint dlp
+- data loss prevention
+- dlp policies
 manager: dougeby
 audience: ITPro
 ms.topic: article
