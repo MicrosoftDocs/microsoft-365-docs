@@ -1,5 +1,5 @@
 ---
-title: "Get started with retention policies and retention labels"
+title: "Get started with informance governance in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,32 +18,43 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
-description: Ready to start implementing retention policies and retention labels to govern your organization's data, but not sure where to start? Read some practical guidance to get started.
+description: Ready to start governing your organization's data, but not sure where to start? Read some prescriptive guidance to get started.
 ---
 
-# Get started with retention policies and retention labels
+# Get started with information governance
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Ready to start governing your organization's data by retaining the content that you need to keep, and deleting the content that you don't? Use the following guidance to get started:
 
-1. **Understand how retention works** in Microsoft 365, and then identify whether you need to use retention policies or retention labels, or a combination: [Learn about retention](retention.md)
-
-2. **Identify the retention settings and actions** that are required by your organization policies or industry regulations.
+1. **Understand how retention and deletion works** in Microsoft 365, and then identify the workloads that need a retention policy and whether you need to create retention labels for exceptions: [Learn about retention](retention.md)
     
-    As part of this assessment, determine whether you will use [records management](records-management.md).
+    > [!NOTE]
+    > If you need lifecycle management of high-value items for business, legal, or regulatory record-keeping requirements: Use retention labels with [records management](records-management.md) rather than data governmance.
 
-3. **Create retention policies and retention labels**, based on the retention settings and actions that you identified.
+2. **Create retention policies** for the workloads you identified, specifying retention settings and actions that are required by your organization policies or industry regulations: [Create retention policies](create-retention-policies.md)
     
-    For retention labels, you might find it useful to use [file plan](file-plan-manager.md) to define and refine your retention labels in a spreadsheet. Then, import that spreadsheet to create your labels.
+    If needed, [create and apply retention labels for your exceptions](create-retention-labels-information-governance).
+
+3. **Enable mailbox archiving** to provide users with additional mailbox storage space: [Enable archive mailboxes in the compliance center](enable-archive-mailboxes.md)
     
-3. **Publish and apply your retention labels**. While retention policies are designed for "set it and forget it" configuration, retention labels are reusable building blocks that can be used in multiple policies and can be incorporated into user workflows. See the list of [common scenarios](#common-scenarios-for-retention-policies-and-retention-labels) to help you identify how retention labels can be used. 
+    If required to support archive mailboxes:
+    
+    - [Enable auto-expanding archiving](enable-autoexpanding-archiving.md) for mailboxes that need more than 100 GB storage.
+    
+    - Use [retention tags with a retention policy from messaging records management (MRM)](set-up-an-archive-and-deletion-policy-for-mailboxes.md) if you need to automatically move emails from a user's primary mailbox to their archive mailbox, or if you need to specify retention and deletion settings for specific folders rather than the whole mailbox.
 
-## Subscription and licensing requirements for retention policies and retention labels
+4. **Understand and manage inactive mailboxes** that retain mailbox content after employees leave the organization: [Learn about inactive mailboxes](inactive-mailboxes-in-office-365.md)
 
-A number of different subscriptions support retention policies and retention labels and the licensing requirements for users depend on the features you use.
+5. If you have PST files that contain data you want to govern: **Import PST files to online mailboxes** by using network upload or drive shipping: [Overview of importing your organization's PST files](importing-pst-files-to-office-365.md)
 
-To see the options for licensing your users to benefit from Microsoft 365 compliance features, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). For retention, see the [Information Governance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance) section and related PDF download for feature-level licensing requirements.
+Independently from these steps, **Use connectors to archive third-party-data** that includes data from social media platforms, instant messaging platforms, and document collaboration platforms. When this data is imported to online mailboxes, it supports not just data governance from Microsoft 365 Compliance, but also other compliance solutions such as communication compliance, insider risk management, and eDiscovery. For more information, see [Archive third-party data in Microsoft 365](archiving-third-party-data.md). 
+
+## Subscription and licensing requirements for information governance
+
+A number of different subscriptions support retention policies, retention labels, mailbox archiving, inactive mailboxes, and the data connectors.
+
+To see the options for licensing your users to benefit from Microsoft 365 compliance features, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). For the features listed on this page, see the [Information Governance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance) section and related PDF download for feature-level licensing requirements.
 
 ## Permissions required to create and manage retention policies and retention labels
 
@@ -55,25 +66,16 @@ For instructions to add users to the default roles or create your own role group
 
 These permissions are required only to create, configure, and apply retention policies and retention labels. The person configuring these policies and labels doesn't require access to the content.
 
-## Common scenarios for retention policies and retention labels
+## Common scenarios for information governance
 
-Use the following table to help you map your business requirements to retention scenarios supported by retention policies and retention labels.
+Use the following table to help you map your business requirements to information governance scenarios.
 
 |I want to ...|Documentation|
 |----------------|---------------|
 |Efficiently set retain and delete actions by Microsoft 365 service: <br />-  Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 Groups <br />- Skype for Business  <br />- Microsoft Teams <br />- Yammer network |[Create and configure retention policies](create-retention-policies.md)|
-|Let admins and users manually apply retain and delete actions for documents and emails: <br />-  SharePoint <br />- OneDrive <br />- Outlook and Outlook on the web|[Create retention labels and apply them in apps](create-apply-retention-labels.md)|
-|Let site admins set default retain and delete actions for all content in a SharePoint library, folder, or document set|[Create retention labels and apply them in apps](create-apply-retention-labels.md)|
-|Let users automatically apply retain and delete actions to emails by using Outlook rules|[Create retention labels and apply them in apps](create-apply-retention-labels.md)|
-|Let admins apply retain and delete actions to a document understanding model, so that these are automatically applied to identified documents in a SharePoint library|[Create retention labels and apply them in apps](create-apply-retention-labels.md)|
-|Automatically apply retain and delete actions to documents and emails |[Apply a retention label to content automatically](apply-retention-labels-automatically.md)|
-|Start the retention period when an event occurs, such as:  <br />- Employees leave the organization <br />- Contracts expire <br />- End of product lifetime| [Start retention when an event occurs](event-driven-retention.md)|
-|Restrict changes to policies to help meet regulatory requirements or safeguard against rogue administrators| [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md)
-|Make sure somebody reviews and approves before content is deleted at the end of its retention period|[Disposition reviews](disposition.md#disposition-reviews) |
-| Monitor how and where retain and delete settings are applied to items | [Monitoring retention labels](retention.md#monitoring-retention-labels) |
-|Use a single records management solution for documents and emails |[Learn about records management](records-management.md) |
 
-If you use retention labels for records management, there are additional scenarios that are unique to retention labels that mark content as a record. See [Common scenarios for records management](get-started-with-records-management.md#common-scenarios-for-records-management).
+
+
 
 ## End-user documentation for retention
 
