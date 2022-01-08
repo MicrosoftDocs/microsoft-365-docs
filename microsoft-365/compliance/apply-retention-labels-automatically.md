@@ -58,7 +58,7 @@ Use the following instructions for the two admin steps.
 
 ## Before you begin
 
-The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see the permissions information for [records management](get-started-with-records-management.md#permission) or [information governance](get-started-with-retention.md#permissions-required-for-retention-policies-and-retention-labels), depending on the solution you're using.
+The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see the permissions information for [records management](get-started-with-records-management.md#permissions) or [information governance](get-started-with-retention.md#permissions-for-retention-policies-and-retention-labels), depending on the solution you're using.
 
 Make sure you have [created the retention labels](file-plan-manager.md#create-retention-labels) you want to apply to items.
 
