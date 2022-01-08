@@ -1,7 +1,8 @@
 ---
 title: "Microsoft 365 Zero Trust deployment plan"
 f1.keywords:
-- CSH
+- deploy zero trust
+- zero trust strategy
 ms.author: bcarter
 author: brendacarter
 manager: dansimp
@@ -19,6 +20,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-zerotrust
 - m365solution-overview
+f1.keywords: 
 ---
 
 # Microsoft 365 Zero Trust deployment plan
