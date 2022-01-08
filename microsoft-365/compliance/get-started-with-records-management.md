@@ -39,13 +39,15 @@ Ready to start managing your organization's high-value content for legal, busine
     - [Create retention labels and apply them in apps](create-apply-retention-labels.md)
     - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
-## Subscription and licensing requirements for records management
+Independently from these steps, **Use connectors to archive third-party-data** that includes data from social media platforms, instant messaging platforms, and document collaboration platforms. When this data is imported to online mailboxes, it supports not just records management from Microsoft 365 Compliance, but also other compliance solutions such as communication compliance, insider risk management, and eDiscovery. For more information, see [Archive third-party data in Microsoft 365](archiving-third-party-data.md).
+
+## Subscription and licensing requirements
 
 A number of different subscriptions support records management and the licensing requirements for users depend on the features you use.
 
 To see the options for licensing your users to benefit from Microsoft 365 compliance features, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). For records management, see the [Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) section and related PDF download for feature-level licensing requirements.
 
-## Permissions required for records management
+## Permissions
 
 Members of your compliance team who are responsible for records management need permissions to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>. By default, the tenant admin (global administrator) has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To grant permissions for this limited administration, we recommend that you add users to the **Records Management** admin role group, which grants permissions for all features related to records management, including [disposition review and verification](disposition.md).
 
@@ -55,7 +57,7 @@ For instructions to add users to the default roles or create your own role group
 
 These permissions are required only to create, configure, and apply retention labels that declare records, and manage disposition. The person configuring these labels doesn't require access to the content.
 
-## Common scenarios for records management
+## Common scenarios
 
 Use the following table to help you map your business requirements to the scenarios that are supported by records management.
 
@@ -75,7 +77,7 @@ Use the following table to help you map your business requirements to the scenar
 |Have proof of disposition for content that is permanently deleted at the end of its retention period|[Disposition of records](disposition.md#disposition-of-records) |
 | Monitor how and where retain and delete settings are applied to items | [Monitoring retention labels](retention.md#monitoring-retention-labels) |
 
-## End-user documentation for records management
+## End-user documentation
 
 If you're using retention policies for baseline data governance, they typically work unobtrusively in the background without user interaction. As a result, they need little documentation for users. Retention policies for Teams inform users when their messages have been deleted with a link to [Teams messages about retention policies](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
 
