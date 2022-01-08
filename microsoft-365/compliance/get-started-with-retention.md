@@ -34,7 +34,7 @@ Ready to start governing your organization's data by retaining the content that 
 
 2. **Create retention policies** for the workloads you identified, specifying retention settings and actions that are required by your organization policies or industry regulations: [Create retention policies](create-retention-policies.md)
     
-    If needed, [create and apply retention labels for your exceptions](create-retention-labels-information-governance).
+    If needed, [create and apply retention labels for your exceptions](create-retention-labels-information-governance.md).
 
 3. **Enable mailbox archiving** to provide users with additional mailbox storage space: [Enable archive mailboxes in the compliance center](enable-archive-mailboxes.md)
     

@@ -32,7 +32,7 @@ Ready to start managing your organization's high-value content for legal, busine
 
 2. **Understand the records management solution** and how retention labels can be used to allow or block actions when documents and emails are declared records: [Learn about records management](records-management.md).
 
-3. **Create your file plan for retention and deletion settings and actions, and when items should be marked as records** by importing an existing plan if you have one, or create new retention labels: [Use file plan to create and manage retention labels](file-plan.md).
+3. **Create your file plan for retention and deletion settings and actions, and when items should be marked as records** by importing an existing plan if you have one, or create new retention labels: [Use file plan to create and manage retention labels](file-plan-manager.md).
 
 4. **Publish and apply your retention labels**. Retention labels are reusable building blocks that can be used in multiple policies and can be incorporated into user workflows:
 
