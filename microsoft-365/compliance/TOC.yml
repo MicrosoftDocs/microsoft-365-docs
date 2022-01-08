@@ -609,9 +609,9 @@
               href: restore-an-inactive-mailbox.md
             - name: Delete an inactive mailbox
               href: delete-an-inactive-mailbox.md
-        - name: Import mailbox data
+        - name: Import PST files
           items: 
-            - name: Overview of importing PST files
+            - name: Learn about importing PST files
               href: importing-pst-files-to-office-365.md
             - name: Use network upload to import PST files
               href: use-network-upload-to-import-pst-files.md
@@ -623,7 +623,7 @@
               href: faqimporting-pst-files-to-office-365.yml
     - name: Records management
       items: 
-        - name: Learn about records management
+        - name: Understand records management
           items:
             - name: Learn about records management
               href: records-management.md
@@ -639,7 +639,7 @@
           href: file-plan-manager.md
         - name: Start retention when an event occurs
           href: event-driven-retention.md
-        - name: Apply retention labels in apps
+        - name: Publish & apply retention labels in apps
           href: create-apply-retention-labels.md
         - name: Automataically apply retention labels to content
           href: apply-retention-labels-automatically.md

@@ -1,5 +1,5 @@
 ---
-title: "Overview of importing your organization's PST files"
+title: "Learn about importing your organization's PST files"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -23,7 +23,7 @@ ms.custom:
 description: Learn how to use the Import service in the Microsoft 365 compliance center to bulk-import email data (PST files) to user mailboxes.
 ---
 
-# Overview of importing your organization's PST files
+# Learn about importing your organization's PST files
 
 > [!NOTE]
 > This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075).
