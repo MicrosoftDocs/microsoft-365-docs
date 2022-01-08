@@ -29,14 +29,14 @@ Whereas retention policies automatically apply to all items at the container lev
 
 Because of the [principles of retention](retention.md#the-principles-of-retention-or-what-takes-precedence), you can use retention labels to supplement a retention policy for specific SharePoint, OneDrive, or Exchange items that need to be retained longer, or deleted sooner than the specified settings in a retention policy for the same location.
 
-For example: The majority of content on your SharePoint sites need to be retained for three years, which is covered with a retention policy. But you have some contract documents that must be retained for seven years. These exceptions can be addressed with retention labels.
+For example: The majority of content on your SharePoint sites need to be retained for three years, which is covered with a retention policy. But you have some contract documents that must be retained for seven years. These exceptions can be addressed with retention labels. After assigning the retention policy to all SharePoint sites, you apply the retention labels to the contract documents. All SharePoint items will be retained for three years, and just the contract documents will be retained for seven years.
 
 Retention labels also support more capabilities than retention policies. For more information, see [Compare capabilities for retention policies and retention labels](retention.md#compare-capabilities-for-retention-policies-and-retention-labels).
 
 Use the following information to help you create retention labels to supplement retention policies as part of your information governance strategy.
 
 > [!NOTE]
-> Create retention labels from the **Records management** solution rather than **Information governance** if you need to use retention labels for the lifecycle management of high-value items for business, legal, or regulatory record-keeping requirements. For more information, see [Use file plan to create and manage retention labels](file-plan-manager.md).
+> Create retention labels from the **Records management** solution rather than **Information governance** if you need to use retention labels for the lifecycle management of high-value items for business, legal, or regulatory record-keeping requirements. For example, you want to use event-based retention or disposition review. For instructions, see [Use file plan to create and manage retention labels](file-plan-manager.md).
 
 ## Before you begin
 

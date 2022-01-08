@@ -227,3 +227,9 @@ First, the retention policy needs to be distributed to the locations that you se
 When settings from the retention policy are already applied to content, a change in configuration to the policy will be automatically applied to this content in addition to content that's newly identified.
 
 Some settings can't be changed after the policy is created and saved, which include the name of the retention policy, the scope type (adaptive or static), and the retention settings except the retention period.
+
+## Next steps
+
+If some items for Exchange, SharePoint, OneDrive, or Microsoft 365 Groups need different retention settings from the retention policy settings you've configured, [create retention labels for these exceptions](create-retention-labels-information-governance.md).
+
+However, if you're looking for lifecycle management of high-value items for business, legal, or regulatory record-keeping requirements, [use file plan to create and manage retention labels](file-plan-manager.md).

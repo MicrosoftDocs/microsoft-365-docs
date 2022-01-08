@@ -1,5 +1,5 @@
 ---
-title: "Example MRM archive and deletion policy for mailboxes in your organization"
+title: "Set up an archive and deletion policy (MRM) for mailboxes in your organization"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -22,16 +22,16 @@ ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: "Walkthrough example of how to create a Messaging Records Management (MRM) archiving and deletion policy to automatically move items to a user's archive mailbox."
+description: "How to create a Messaging Records Management (MRM) archiving and deletion policy to automatically move items to a user's archive mailbox."
 ---
 
-# Example Messaging Records Management (MRM) archive and deletion policy for mailboxes in your organization
+# Set up an archive and deletion policy for mailboxes in your organization
 
 Microsoft 365 compliance admins can create an archiving and deletion policy that automatically moves items to a user's [archive mailbox](archive-maiboxes.md) and automatically deletes items from the mailbox.
 
-The admin does this by creating a Messaging Records Management (MRM) retention policy that's assigned to mailboxes, and moves items to a user's archive mailbox after a certain period of time and that also deletes items from the mailbox after they reach a certain age limit. 
+You do this by by creating a Messaging Records Management (MRM) retention policy that's assigned to mailboxes, and moves items to a user's archive mailbox after a certain period of time and that also deletes items from the mailbox after they reach a certain age limit. 
 
-The actual rules that determine what items are moved or deleted and when that happens are called retention tags. Using MRM, retention tags are linked to an MRM retention policy, that in turn is assigned to a user's mailbox. A retention tag applies retention settings to individual messages and folders in a user's mailbox. It defines how long a message remains in the mailbox and what action is taken when the message reaches the specified retention age. When a message reaches its retention age, it's either moved to the user's archive mailbox or it's deleted.
+The actual rules that determine what items are moved or deleted and when that happens are called retention tags. Retention tags are linked to an MRM retention policy, that in turn is assigned to a user's mailbox. A retention tag applies retention settings to individual messages and folders in a user's mailbox. It defines how long a message remains in the mailbox and what action is taken when the message reaches the specified retention age. When a message reaches its retention age, it's either moved to the user's archive mailbox or it's deleted.
   
 The steps in this article set up an archiving and retention policy for a fictitious organization named Alpine House. Setting up this policy includes the following tasks:
   
