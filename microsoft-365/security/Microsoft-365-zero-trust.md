@@ -20,7 +20,6 @@ ms.collection:
 - M365-security-compliance
 - m365solution-zerotrust
 - m365solution-overview
-f1.keywords: 
 ---
 
 # Microsoft 365 Zero Trust deployment plan
