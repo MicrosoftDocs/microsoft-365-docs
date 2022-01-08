@@ -587,6 +587,8 @@
           href: create-retention-labels-information-governance.md
         - name: Archive mailbox data
           items: 
+            - name: Learn about archive mailboxes
+              href: archive-mailboxes.md
             - name: Enable archive mailboxes
               href: enable-archive-mailboxes.md
             - name: Learn about auto-expanding archiving

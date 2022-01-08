@@ -32,7 +32,7 @@ To keep what you need and delete what you don't:
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|:--------------------|:-----------------------------|
 |[Retention policies for Microsoft 365 workloads, with retention labels for exceptions](retention.md) | Retain or delete content with policy management for email, documents, Teams and Yammer messages | [Create and configure retention policies](create-retention-policies.md) <br /><br /> [Create retention labels for exceptions to your retention policies](create-retention-labels-information-governance.md)|
-|Archive mailbox data| Provides users with additional mailbox storage space | [Enable archive mailboxes](enable-archive-mailboxes.md) |
+|[Archive mailboxes](archive-mailboxes.md)| Provides users with additional mailbox storage space | [Enable archive mailboxes](enable-archive-mailboxes.md) |
 |[Inactive mailboxes](inactive-mailboxes-in-office-365.md)| Retain mailbox content after employees leave the organization so that this content remains accessible to administrators, compliance officers, and records managers | [Create and manage inactive mailboxes](create-and-manage-inactive-mailboxes.md)|
 |[Import service for PST files](importing-pst-files-to-office-365.md)| Bulk-import PST files to Exchange Online mailboxes to retain and search email messages for compliance or regulatory requirements | [Use network upload to import your organization's PST files to Microsoft 365](use-network-upload-to-import-pst-files.md)|
 

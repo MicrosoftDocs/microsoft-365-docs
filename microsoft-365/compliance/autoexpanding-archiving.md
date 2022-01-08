@@ -107,6 +107,8 @@ This section explains the functionality between auto-expanding archiving and oth
 
 - **Import service:** You can use the Office 365 Import service to import PST files to a user's auto-expanded archive. You can import up to 100 GB of data from PST files to the user's archive mailbox.
 
-## More information
+## Next steps
 
 For more technical details about auto-expanding archiving, see [Microsoft 365: Auto-Expanding Archives FAQ](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784).
+
+If you're ready to enable auto-expanding archiving, see [Enable auto-expanding archiving](enable-autoexpanding-archiving.md).
