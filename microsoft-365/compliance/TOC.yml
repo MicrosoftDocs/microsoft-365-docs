@@ -595,7 +595,7 @@
               href: autoexpanding-archiving.md
             - name: Enable auto-expanding archiving
               href: enable-autoexpanding-archiving.md
-            - name: Set up an archive and deletion policy for mailboxes (MRM)
+            - name: Customize an archive and deletion policy for mailboxes (MRM)
               href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
         - name: Manage inactive mailboxes
           items: 

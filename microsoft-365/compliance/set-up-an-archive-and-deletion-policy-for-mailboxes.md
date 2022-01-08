@@ -1,5 +1,5 @@
 ---
-title: "Set up an archive and deletion policy (MRM) for mailboxes in your organization"
+title: "Customize an archive and deletion policy (MRM) for mailboxes in your organization"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -22,10 +22,10 @@ ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: "How to create a Messaging Records Management (MRM) archiving and deletion policy to automatically move items to a user's archive mailbox."
+description: "How to create a custom Messaging Records Management (MRM) archiving and deletion policy to automatically move items to a user's archive mailbox."
 ---
 
-# Set up an archive and deletion policy for mailboxes in your organization
+# Customize an archive and deletion policy for mailboxes in your organization
 
 Microsoft 365 compliance admins can create an archiving and deletion policy that automatically moves items to a user's [archive mailbox](archive-mailboxes.md) and automatically deletes items from the mailbox.
 
