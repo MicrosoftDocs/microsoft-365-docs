@@ -3,7 +3,9 @@ title: "Step 5. Deploy device profiles in Microsoft Intune"
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- configuration profiles
+- Windows security baselines for Intune
+- customize configuration profiles
 manager: dougeby
 audience: ITPro
 description: Get started with configuration profiles to enforce secure settings on devices using Intune to transition these security controls to the cloud.
@@ -13,7 +15,9 @@ ms.localizationpriority: high
 ms.collection:
 - Configuration profiles
 - Windows security baselines for Intune
-- customize configuration profiles
+- customize configuration profiles- 
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: 
 keywords: 
 ---
