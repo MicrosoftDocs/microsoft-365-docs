@@ -14,7 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 09/16/2021
+ms.date: 12/07/2021
 ms.technology: mde
 ---
 
@@ -182,9 +182,9 @@ Get the current list of attack surface reduction GUIDs from [Attack surface redu
 
    ![Image of attack surface reduction configuration.](images/asr-guid.png)
 
-Policy|Setting
----|---
-Configure Controlled folder access| Enabled, Audit Mode
+Policy|Location|Setting
+---|---|---
+Configure Controlled folder access| \Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Controlled Folder Access| Enabled, Audit Mode
 
 ## Run a detection test to verify onboarding
 
@@ -265,6 +265,8 @@ Create a new Group Policy or group these settings in with the other policies. Th
 
 Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Real-time Protection**.
 
+ Since the value for "Scan incoming and outgoing files" (default) is 0, the group policy for the "Configure monitoring for incoming and outgoing file and program activity" for "bi-directional (full on-access)" setting changes to disabled.
+
 :::image type="content" source="images/config-monitor-incoming-outgoing-file-act.png" alt-text="configure monitoring for incoming outgoing file activity.":::
 
 ### Configure Windows Defender SmartScreen settings
@@ -299,7 +301,7 @@ Browse to **Computer Configuration** \> **Policies** \> **Administrative Templat
 
 ### Check for signature update
 
-Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Signature Updates**
+Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.
 
 :::image type="content" source="images/signature-update-1.png" alt-text="signature update.":::
 
