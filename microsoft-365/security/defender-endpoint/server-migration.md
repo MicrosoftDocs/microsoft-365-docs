@@ -71,7 +71,7 @@ Migration steps:
    2. Uninstall SCEP.
    3. Install the [prerequisites](configure-server-endpoints.md#prerequisites) where applicable.
    4. Install Microsoft Defender for Endpoint (see [Configure server endpoints](configure-server-endpoints.md).
-   5. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft 365 Defender](security.microsoft.com). 
+   5. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft 365 Defender](https://security.microsoft.com). 
 
    > [!TIP]
    > You can use the [installer script](server-migration.md#installer-script) as part of your application to automate the above steps.
@@ -118,7 +118,7 @@ Value: 0
 3. Uninstall System Center Endpoint Protection (Windows Server 2012 R2).
 4. Install the [prerequisites](configure-server-endpoints.md#prerequisites) where applicable. 
 5. Install Microsoft Defender for Endpoint (see [Configure server endpoints](configure-server-endpoints.md).)
-6. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft 365 Defender](security.microsoft.com). 
+6. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft 365 Defender](https://security.microsoft.com). 
 7. Apply updates.
 8. Create and apply policies using Group Policy, PowerShell, or a 3rd party management solution.
 
