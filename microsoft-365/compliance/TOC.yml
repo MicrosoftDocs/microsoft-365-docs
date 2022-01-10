@@ -218,7 +218,7 @@
           href: classifier-how-to-retrain-content-explorer.md
     - name: Data classification
       items: 
-        - name: Understand data classification
+        - name: Learn about data classification
           href: data-classification-overview.md
         - name: Get started with content explorer
           href: data-classification-content-explorer.md
