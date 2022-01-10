@@ -101,7 +101,7 @@ On the **All placeholders** panel:
 
    ![Screenshot of the All placeholders panel showing the list field associated with the placeholder.](../media/content-understanding/content-assembly-create-template-9.png)
 
-6. If you want users to be able to add inputs manually, in addition to choosing from a list, select **Allow authors to add new choicesl**. In this case, the default for the manual input data type is *Single line of text*. Also the values input by the authors will only be used to generate the document. They will not be added to the SharePoint list.
+6. If you want users to be able to add inputs manually, in addition to choosing from a list, select **Allow authors to add new choices**. In this case, the default for the manual input data type is *Single line of text*. Also the values input by the authors will only be used to generate the document. They will not be added to the SharePoint list.
  
 You can create as many placeholders as you think are necessary. When you're done, you can choose to save the template as a draft or publish the template.
 
