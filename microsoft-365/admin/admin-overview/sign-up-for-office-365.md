@@ -23,6 +23,7 @@ ms.custom:
 - commerce_signup
 - AdminTemplateSet
 - adminvideo
+- intro-get-started
 search.appverid:
 - MET150
 ROBOTS: NOINDEX

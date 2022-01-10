@@ -144,6 +144,8 @@
   items:
     - name: Know your data, protect your data, prevent data loss
       href: information-protection.md
+    - name: Deploy a MIP solution
+      href: information-protection-solution.md
     - name: Default labels and policies for Microsoft Information Protection
       href: mip-easy-trials.md
     - name: Sensitive information types
@@ -307,6 +309,8 @@
           href: set-up-irm-in-sp-admin-center.md
         - name: Technical reference
           href: technical-reference-details-about-encryption.md
+        - name: Microsoft 365 encryption chains
+          href: encryption-office-365-certificate-chains.md
         - name: TLS 1.0 and 1.1 deprecation for Office 365
           href: tls-1.0-and-1.1-deprecation-for-office-365.md
         - name: TLS 1.0 and 1.1 deprecation in Office 365 GCC High and DoD
@@ -333,6 +337,8 @@
           items:
           - name: Plan for data loss prevention
             href: dlp-overview-plan-for-dlp.md
+          - name: Design a DLP policy
+            href: dlp-policy-design.md
           - name: Data loss prevention policy reference
             href: dlp-policy-reference.md 
         - name: Get started with DLP
@@ -465,6 +471,8 @@
               href: archive-linkedin-data.md
             - name: Physical badging data
               href: import-physical-badging-data.md
+            - name: Slack eDiscovery (preview)
+              href: archive-slack-data-microsoft.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
         - name: Veritas data connectors
@@ -509,6 +517,8 @@
               href: archive-symphony-data.md
             - name: Text-delimited
               href: archive-text-delimited-data.md
+            - name: Twitter (preview)
+              href: archive-veritas-twitter-data.md
             - name: Webex Teams
               href: archive-webexteams-data.md
             - name: Webpages
@@ -644,12 +654,12 @@
         - name: Search for content
           href: content-search.md
           items: 
-          - name: Feature reference for Content search
-            href: content-search-reference.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
           - name: Use the KQL editor to build search queries
             href: ediscovery-kql-editor.md
+          - name: Search for Teams chat data for on-premises users
+            href: search-cloud-based-mailboxes-for-on-premises-users.md
           - name: Configure search permissions filtering
             href: permissions-filtering-for-content-search.md
           - name: Preview eDiscovery search results
@@ -662,16 +672,14 @@
             href: export-a-content-search-report.md
           - name: Search for and delete email messages
             href: search-for-and-delete-messages-in-your-organization.md
-          - name: Search for Teams chat data for on-premises users
-            href: search-cloud-based-mailboxes-for-on-premises-users.md
-          - name: Prepare a CSV file for an ID list search
-            href: csv-file-for-an-id-list-content-search.md
           - name: Retry a failed search
             href: retry-failed-content-search.md
           - name: Preserve Bcc recipients for search
             href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
         - name: Content search reference
           items: 
+          - name: Feature reference for Content search
+            href: content-search-reference.md
           - name: eDiscovery search limits
             href: limits-for-content-search.md
           - name: Content stored in mailboxes for eDiscovery
@@ -930,12 +938,12 @@
   items: 
     - name: How to identify the type of hold placed on a mailbox
       href: identify-a-hold-on-an-exchange-online-mailbox.md
-    - name: Create a Litigation Hold
-      href: create-a-litigation-hold.md
     - name: Delete items in the Recoverable Items folder of mailboxes on hold
       href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
     - name: Increase the Recoverable Items quota for mailboxes on hold
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+    - name: Create a Litigation hold
+      href: create-a-litigation-hold.md
     - name: Preserve Bcc and expanded distribution group recipients
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Manage auditing and alert policies
@@ -948,12 +956,12 @@
           href: set-up-basic-audit.md
         - name: Search the audit log
           href: search-the-audit-log-in-security-and-compliance.md
+        - name: Export, configure, and view audit log records
+          href: export-view-audit-log-records.md
         - name: Use a PowerShell script to search the audit log
           href: audit-log-search-script.md
         - name: Detailed properties in the audit log
           href: detailed-properties-in-the-office-365-audit-log.md
-        - name: Export, configure, and view audit log records
-          href: export-view-audit-log-records.md
         - name: Turn auditing on or off
           href: turn-audit-log-search-on-or-off.md
         - name: Use the audit log to investigate common issues
