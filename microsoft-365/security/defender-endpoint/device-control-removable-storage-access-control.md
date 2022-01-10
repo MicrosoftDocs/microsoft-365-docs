@@ -232,18 +232,20 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
     - Data Type: Int
       `DefaultEnforcementAllow = 1
       `DefaultEnforcementDeny = 2
-    - Once you deploy this setting, you will see ‘Default Allow’ or ‘Default Deny’
-      ![image](https://user-images.githubusercontent.com/81826151/148609590-c67cfab8-8e2c-49f8-be2b-96444e9dfc2c.png)
+    - Once you deploy this setting, you will see **Default Allow** or **Default Deny**
+
+    :::image type="content" source="images/148609590-c67cfab8-8e2c-49f8-be2b-96444e9dfc2c.png" alt-text="Default Enforcement Allow PowerShell code":::
 
     
 4. Enable or Disable Removable Storage Access Control: you can set this value to temporarily disable Removable Storage Access Control
-   - OMA-URI: ./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled
+   - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
    - Data Type: Int
      `Disable: 0
      `Enable: 1
-   - Once you deploy this setting, you will see ‘Enabled’ or ‘Disabled’
+   - Once you deploy this setting, you will see **Enabled** or **Disabled**
      `Disabled means this machine does not have Removable Storage Access Control policy running
-      ![image](https://user-images.githubusercontent.com/81826151/148609770-3e555883-f26f-45ab-9181-3fb1ff7a38ac.png)
+
+    :::image type="content" source="images/148609770-3e555883-f26f-45ab-9181-3fb1ff7a38ac.png" alt-text="Removeable Storage Access Control in PowerShell code":::
 
     
     
