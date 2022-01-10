@@ -134,7 +134,7 @@ The new and improved Microsoft 365 Defender portal <https://security.microsoft.c
 > The new Microsoft 365 Defender portal replaces the following admin centers:
 >
 > - Security & Compliance Center (<https://protection.office.com>)
-> - Microsoft 365 Defender (<https://security.microsoft.com)
+> - Microsoft 365 Defender (<https://security.microsoft.com>)
 >
 > In addition to the URL changing, there's a new look and feel, designed to give your security team a more streamlined experience, with visibility to more threat detections in one place.
 
