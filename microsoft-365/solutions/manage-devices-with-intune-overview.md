@@ -15,6 +15,8 @@ ms.collection:
 - manage device endpoints
 - zero trust deployment stack
 - device management with zero trust
+- m365solution-managedevices
+- m365solution-overview
 ms.custom: 
 keywords: 
 ---
