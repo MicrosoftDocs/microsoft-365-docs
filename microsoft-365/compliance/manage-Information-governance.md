@@ -48,7 +48,7 @@ Lifecycle management of high-value items for legal, business, or regulatory obli
 
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|---------------------|:----------------------------|
-|[Records management](records-management.md)| A single solution for email and documents that incorporates retention schedules and requirements to support the full lifecycle of your content with records declaration, retention, and defensible disposition |[Get started with records management](get-started-with-records-management.md) |
+|[Records management](records-management.md)| A single solution for email and documents that incorporates flexible retention and deletion schedules and requirements to support the full lifecycle of your content with records declaration and defensible disposition when needed |[Get started with records management](get-started-with-records-management.md) |
 
 ## Archive third-party data
 
