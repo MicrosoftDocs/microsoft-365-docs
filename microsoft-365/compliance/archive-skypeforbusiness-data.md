@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: "Learn how to set up and use a connector in the Microsoft 365 compliance center to import and archive data from Skype for Business to Microsoft 365."
 ---
@@ -24,7 +24,7 @@ After Skype for Business data is stored in user mailboxes, you can apply Microso
 
 The following overview explains the process of using a connector to archive the Skype for Business data in Microsoft 365.
 
-![Archiving workflow for Skype for Business data](../media/SkypeforBusinessConnectorWorkflow.png)
+![Archiving workflow for Skype for Business data.](../media/SkypeforBusinessConnectorWorkflow.png)
 
 1. Your organization works with Skype for Business to set up and configure a Skype for Business site.
 
@@ -39,6 +39,8 @@ The following overview explains the process of using a connector to archive the 
 - Create a Merge1 account for Microsoft connectors. To do this, contact [Veritas Customer Support](https://www.veritas.com/form/requestacall/ms-connectors-contact.html). You need to sign into this account when you create the connector in Step 1.
 
 - The user who creates the Skype for Business connector in Step 1 (and completes it in Step 3) must be assigned to the Mailbox Import Export role in Exchange Online. This role is required to add connectors on the **Data connectors** page in the Microsoft 365 compliance center. By default, this role is not assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
+
+- This Veritas data connector is in public preview in GCC environments in the Microsoft 365 US Government cloud. Third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Microsoft 365 infrastructure and therefore are not covered by the Microsoft 365 compliance and data protection commitments. Microsoft makes no representation that use of this product to connect to third-party applications implies that those third-party applications are FEDRAMP compliant.
 
 ## Step 1: Set up the Skype for Business connector
 

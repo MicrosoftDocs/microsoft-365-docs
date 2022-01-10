@@ -7,7 +7,7 @@ ms.date: 4/7/2020
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - SPO_Content
@@ -70,15 +70,15 @@ This is the out-of-the-box navigation used by default and is the most straightfo
 
 Under **Site Settings** > **Look and Feel** > **Navigation**, you can validate if structural navigation is selected for either global navigation or current navigation. Selecting **Show pages** will have negative impact on performance.
 
-![Structural navigation with Show Subsites selected](../media/SPONavOptionsStructuredShowSubsites.png)
+![Structural navigation with Show Subsites selected.](../media/SPONavOptionsStructuredShowSubsites.png)
 
 Caching can be enabled or disabled at the site collection level and at the site level, and is enabled for both by default. To enable at the site collection level, under **Site Settings** > **Site Collection Administration** > **Site Collection Navigation**, check the box for **Enable caching**.
 
-![Enable caching at site level](../media/structural-nav/structural-nav-caching-site-coll.png)
+![Enable caching at site level.](../media/structural-nav/structural-nav-caching-site-coll.png)
 
 To enable at the site level, under **Site Settings** > **Navigation**, check the box for **Enable caching**.
 
-![Enable caching at site level](../media/structural-nav/structural-nav-caching-site.png)
+![Enable caching at site level.](../media/structural-nav/structural-nav-caching-site.png)
 
 ## Using managed navigation and metadata in SharePoint Online
 
@@ -98,7 +98,7 @@ There are several articles on docs.microsoft.com about the details of managed na
 
 In order to implement managed navigation, you set up terms with URLs corresponding to the navigation structure of the site. Managed navigation can even be manually curated to replace structural navigation in many cases. For example:
 
-![SharePoint Online site structure](../media/SPONavOptionsListOfSites.png))
+![SharePoint Online site structure.](../media/SPONavOptionsListOfSites.png))
 
 ## Using Search-driven client-side scripting
 
@@ -123,7 +123,7 @@ This approach involves creating a custom master page and replacing the out-of-th
 1. Navigate to the Site Settings page.
 2. Open the master page gallery by clicking **Master Pages**.
 3. From here you can navigate through the library and download the file `seattle.master`.
-4. Edit the code using a text editor and delete the code block in the following screen shot.<br/>![Delete the code block shown](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
+4. Edit the code using a text editor and delete the code block in the following screen shot.<br/>![Delete the code block shown.](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
 5. Remove the code between the `<SharePoint:AjaxDelta id="DeltaTopNavigation">` and `<\SharePoint:AjaxDelta>` tags and replace it with the following snippet:<br/>
 
 ```javascript

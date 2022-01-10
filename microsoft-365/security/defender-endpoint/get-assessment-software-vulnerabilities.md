@@ -1,15 +1,14 @@
 ---
 title: Export software vulnerabilities assessment per device
-description: The API response is per device and contains vulnerable software installed on your exposed devices as well as any known vulnerabilities in these software products. This table also includes operating system information, CVE IDs, and vulnerability severity information.
+description: The API response is per device and contains vulnerable software installed on your exposed devices and any known vulnerabilities in these software products. This table also includes operating system information, CVE IDs, and vulnerability severity information.
 keywords: api, apis, export assessment, per device assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: v-jweston
 author: jweston-1
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -24,29 +23,29 @@ ms.custom: api
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Returns all known software vulnerabilities and their details for all devices, on a per-device basis.
 
-There are different API calls to get different types of data. Because the amount of data can be very large, there are two ways it can be retrieved:
+Different API calls get different types of data. Because the amount of data can be large, there are two ways it can be retrieved:
 
-1. [Export software vulnerabilities assessment **JSON response**](#1-export-software-vulnerabilities-assessment-json-response)  The API pulls all data in your organization as Json responses. This method is best for _small organizations with less than 100 K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
+1. [Export software vulnerabilities assessment **JSON response**](#1-export-software-vulnerabilities-assessment-json-response)  The API pulls all data in your organization as Json responses. This method is best for _small organizations with less than 100-K devices_. The response is paginated, so you can use the \@odata.nextLink field from the response to fetch the next results.
 
-2. [Export software vulnerabilities assessment **via files**](#2-export-software-vulnerabilities-assessment-via-files) This API solution enables pulling larger amounts of data faster and more reliably. Via-files is recommended for large organizations, with more than 100 K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
+2. [Export software vulnerabilities assessment **via files**](#2-export-software-vulnerabilities-assessment-via-files) This API solution enables pulling larger amounts of data faster and more reliably. Via-files is recommended for large organizations, with more than 100-K devices. This API pulls all data in your organization as download files. The response contains URLs to download all the data from Azure Storage. This API enables you to download all your data from Azure Storage as follows:
    - Call the API to get a list of download URLs with all your organization data.
    - Download all the files using the download URLs and process the data as you like.
 
 3. [Delta export software vulnerabilities assessment **JSON response**](#3-delta-export-software-vulnerabilities-assessment-json-response)  Returns a table with an entry for every unique combination of: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId, and EventTimestamp.
 The API pulls data in your organization as Json responses. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results.
 
-   Unlike the full "software vulnerabilities assessment (JSON response)" - which is used to obtain an entire snapshot of the software vulnerabilities assessment of your organization by device - the delta export API call is used to fetch only the changes that have happened between a selected date and the current date (the "delta" API call). Instead of getting a full export with a large amount of data every time, you'll only get specific information on new, fixed, and updated vulnerabilities. Delta export JSON response API call can also be used to calculate different KPIs such as "how many vulnerabilities were fixed?" or "how many new vulnerabilities were added to my organization?"
+   The full "software vulnerabilities assessment (JSON response)" is used to obtain an entire snapshot of the software vulnerabilities assessment of your organization by device. However, the delta export API call is used to fetch only the changes that have happened between a selected date and the current date (the "delta" API call). Instead of getting a full export with a large amount of data every time, you'll only get specific information on new, fixed, and updated vulnerabilities. Delta export JSON response API call can also be used to calculate different KPIs such as "how many vulnerabilities were fixed?" or "how many new vulnerabilities were added to my organization?"
 
-   Because the Delta export JSON response API call for software vulnerabilities returns data for only a targeted date range, it is not considered a _full export_.
+   Because the Delta export JSON response API call for software vulnerabilities returns data for only a targeted date range, it isn't considered a _full export_.
 
-Data that is collected (using either _Json response_ or _via files_) is the current snapshot of the current state, and does not contain historic data. In order to collect historic data, customers must save the data in their own data storages.
+Data that is collected (using either _Json response_ or _via files_) is the current snapshot of the current state. It doesn't contain historic data. To collect historic data, customers must save the data in their own data storages.
 
 > [!NOTE]
 > Unless indicated otherwise, all export assessment methods listed are **_full export_** and **_by device_** (also referred to as **_per device_**).
@@ -80,7 +79,7 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 ### 1.4 Parameters
 
 - pageSize (default = 50,000): Number of results in response.
-- $top: Number of results to return (doesn't return @odata.nextLink and therefore doesn't pull all the data).
+- $top: Number of results to return (doesn't return @odata.nextLink and so doesn't pull all the data).
 
 ### 1.5 Properties
 
@@ -88,7 +87,7 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 >
 > - Each record is approximately 1 KB of data. You should take this into account when choosing the correct pageSize parameter for you.
 > - Some additional columns might be returned in the response. These columns are temporary and might be removed, please use only the documented columns.
-> - The properties defined in the following table are listed alphabetically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
+> - The properties defined in the following table are listed alphabetically, by property ID. When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
 
 <br>
 
@@ -96,25 +95,25 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 Property (ID)|Data type|Description|Example of a returned value
 :---|:---|:---|:---
-CveId|string|Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system.|CVE-2020-15992
-CvssScore|string|The CVSS score of the CVE.|6.2
-DeviceId|string|Unique identifier for the device in the service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|string|Fully qualified domain name (FQDN) of the device.|johnlaptop.europe.contoso.com
+CveId|String|Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system.|CVE-2020-15992
+CvssScore|String|The CVSS score of the CVE.|6.2
+DeviceId|String|Unique identifier for the device in the service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName|String|Fully qualified domain name (FQDN) of the device.|johnlaptop.europe.contoso.com
 DiskPaths|Array\[string\]|Disk evidence that the product is installed on the device.|[ "C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe" ]
-ExploitabilityLevel|string|The exploitability level of this vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit
-FirstSeenTimestamp|string|First time the CVE of this product was seen on the device.|2020-11-03 10:13:34.8476880
-Id|string|Unique identifier for the record.|123ABG55_573AG&mnp!
-LastSeenTimestamp|string|Last time the CVE was seen on the device.|2020-11-03 10:13:34.8476880
-OSPlatform|string|Platform of the operating system running on the device. This property indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.|Windows10
-RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers
-RecommendationReference|string|A reference to the recommendation ID related to this software.|va-_-microsoft-_-silverlight
-RecommendedSecurityUpdate (optional)|string|Name or description of the security update provided by the software vendor to address the vulnerability.|April 2020 Security Updates
-RecommendedSecurityUpdateId (optional)|string|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles|4550961
+ExploitabilityLevel|String|The exploitability level of this vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit
+FirstSeenTimestamp|String|First time the CVE of this product was seen on the device.|2020-11-03 10:13:34.8476880
+Id|String|Unique identifier for the record.|123ABG55_573AG&mnp!
+LastSeenTimestamp|String|Last time the CVE was seen on the device.|2020-11-03 10:13:34.8476880
+OSPlatform|String|Platform of the operating system running on the device. This property indicates specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See tvm supported operating systems and platforms for details.|Windows10 and Windows 11
+RbacGroupName|String|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers
+RecommendationReference|String|A reference to the recommendation ID related to this software.|va-_-microsoft-_-silverlight
+RecommendedSecurityUpdate (optional)|String|Name or description of the security update provided by the software vendor to address the vulnerability.|April 2020 Security Updates
+RecommendedSecurityUpdateId (optional)|String|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles|4550961
 RegistryPaths|Array\[string\]|Registry evidence that the product is installed in the device.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight" ]
-SoftwareName|string|Name of the software product.|chrome
-SoftwareVendor|string|Name of the software vendor.|google
-SoftwareVersion|string|Version number of the software product.|81.0.4044.138
-VulnerabilitySeverityLevel|string|Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.|Medium
+SoftwareName|String|Name of the software product.|Chrome
+SoftwareVendor|String|Name of the software vendor.|Google
+SoftwareVersion|String|Version number of the software product.|81.0.4044.138
+VulnerabilitySeverityLevel|String|Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.|Medium
 |
 
 ### 1.6 Examples
@@ -136,7 +135,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "deviceId": "00044f612345daf756462bde6bd733b9a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45912eed224b2de2f5ea3142726e63f16a.DomainPII_21eeb80d089e79bdfa178eabfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -159,7 +158,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "deviceId": "00044f912345daf756462bde6db733b6a9c59ad4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45912eed224b2be2f5ea3142726e63f16a.DomainPII_21eeb80b086e79bdfa178eabfa25e8de6acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -184,7 +183,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "deviceId": "00044f912345daf756462bde6db733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45912eed224b2be2f5ea3142726e63f16a.DomainPII_21eed80b089e79bdfa178eadfa25e8be6acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -209,7 +208,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "deviceId": "00044f91234daf759492dbe6bd733b6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_189663d45612eed224b2be2f5ea3142729e63f16a.DomainPII_21eed80b086e79bdfa178eadfa25e8de6acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -234,11 +233,11 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "deviceId": "00044f912345daf756462dbe6db733d6a9c59ab4",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_18663b45912eeb224d2be2f5ea3142729e63f16a.DomainPII_21eeb80d086e79bdfa178eadfa25e8de6acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.17763.1637",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
-            "softwareName": "windows_10",
+            "softwareName": "windows_10" "Windows_11",
             "softwareVersion": "10.0.17763.1637",
             "cveId": null,
             "vulnerabilitySeverityLevel": null,
@@ -250,7 +249,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitie
             "lastSeenTimestamp": "2020-12-30 14:17:26",
             "firstSeenTimestamp": "2020-12-30 11:07:15",
             "exploitabilityLevel": "NoExploit",
-            "recommendationReference": "va-_-microsoft-_-windows_10"
+            "recommendationReference": "va-_-microsoft-_-windows_10" "va-_-microsoft-_-windows_11"
         }
     ],
     "@odata.nextLink": "https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilitiesByMachine?pagesize=5&$skiptoken=eyJFeHBvcnREZWZpbml0aW9uIjp7IlRpbWVQYXRoIjoiMjAyMS0wMS0xMS8xMTAxLyJ9LCJFeHBvcnRGaWxlSW5kZXgiOjAsIkxpbmVTdG9wcGVkQXQiOjV9"
@@ -304,7 +303,7 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 Property (ID)|Data type|Description|Example of a returned value
 :---|:---|:---|:---
 Export files|array\[string\]|A list of download URLs for files holding the current snapshot of the organization.|["https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|string|The time that the export was generated.|2021-05-20T08:00:00Z
+GeneratedTime|String|The time that the export was generated.|2021-05-20T08:00:00Z
 |
 
 ### 2.6 Examples
@@ -336,7 +335,7 @@ GET https://api-us.securitycenter.contoso.com/api/machines/SoftwareVulnerabiliti
 Returns a table with an entry for every unique combination of DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId. The API pulls data in your organization as Json responses. The response is paginated, so you can use the @odata.nextLink field from the response to fetch the next results. Unlike the full software vulnerabilities assessment (JSON response) (which is used to obtain an entire snapshot of the software vulnerabilities assessment of your organization by device) the delta export JSON response API call is used to fetch only the changes that have happened between a selected date and the current date (the "delta" API call). Instead of getting a full export with a large amount of data every time, you'll only get specific information on new, fixed, and updated vulnerabilities. Delta export JSON response API call can also be used to calculate different KPIs such as "how many vulnerabilities were fixed?" or "how many new vulnerabilities were added to my organization?"
 
 > [!NOTE]
-> It is highly recommended you use the full export software vulnerabilities assessment by device API call at least once a week, and this additional export software vulnerabilities changes by device (delta) API call all the other days of the week.  Unlike the other Assessments JSON response APIs, the "delta export" is not a full export. The delta export includes only the changes that have happened between a selected date and the current date (the "delta" API call).
+> It is highly recommended you use the full export software vulnerabilities assessment by device API call at least once a week, and this additional export software vulnerabilities changes by device (delta) API call all the other days of the week. Unlike the other Assessments JSON response APIs, the "delta export" is not a full export. The delta export includes only the changes that have happened between a selected date and the current date (the "delta" API call).
 
 #### 3.1.1 Limitations
 
@@ -363,16 +362,16 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 
 - sinceTime (required): The data between a selected time and today.
 - pageSize (default = 50,000): number of results in response.
-- $top: number of results to return (doesn't return @odata.nextLink and therefore doesn't pull all the data).
+- $top: number of results to return (doesn't return @odata.nextLink and so doesn't pull all the data).
 
 ### 3.5 Properties
 
-Each returned record contains all the data from the full export software vulnerabilities assessment by device API, plus two additional fields:  _**EventTimestamp**_ and _**Status**_.
+Each returned record contains all the data from the full export software vulnerabilities assessment by device API, plus two more fields:  _**EventTimestamp**_ and _**Status**_.
 
 > [!NOTE]
 >
 > - Some additional columns might be returned in the response. These columns are temporary and might be removed, so please use only the documented columns.
-> - The properties defined in the following table are listed alphabetically, by property ID.  When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
+> - The properties defined in the following table are listed alphabetically, by property ID. When running this API, the resulting output will not necessarily be returned in the same order listed in this table.
 
 <br>
 
@@ -380,32 +379,32 @@ Each returned record contains all the data from the full export software vulnera
 
 Property (ID)|Data type|Description|Example of returned value
 :---|:---|:---|:---
-CveId |string|Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system.|CVE-2020-15992  
-CvssScore|string|The CVSS score of the CVE.|6.2  
-DeviceId|string|Unique identifier for the device in the service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
-DeviceName|string|Fully qualified domain name (FQDN) of the device.|johnlaptop.europe.contoso.com  
+CveId |String|Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system.|CVE-2020-15992  
+CvssScore|String|The CVSS score of the CVE.|6.2  
+DeviceId|String|Unique identifier for the device in the service.|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
+DeviceName|String|Fully qualified domain name (FQDN) of the device.|johnlaptop.europe.contoso.com  
 DiskPaths|Array[string]|Disk evidence that the product is installed on the device.|["C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe"]  
 EventTimestamp|String|The time this delta event was found.|2021-01-11T11:06:08.291Z
-ExploitabilityLevel|string|The exploitability level of this vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit  
-FirstSeenTimestamp|string|First time the CVE of this product was seen on the device.|2020-11-03 10:13:34.8476880  
-Id|string|Unique identifier for the record.|123ABG55_573AG&mnp!  
-LastSeenTimestamp|string|Last time the CVE was seen on the device.|2020-11-03 10:13:34.8476880  
-OSPlatform|string|Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. See tvm supported operating systems and platforms for details.|Windows10  
-RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers  
+ExploitabilityLevel|String|The exploitability level of this vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit  
+FirstSeenTimestamp|String|First time the CVE of this product was seen on the device.|2020-11-03 10:13:34.8476880  
+Id|String|Unique identifier for the record.|123ABG55_573AG&mnp!  
+LastSeenTimestamp|String|Last time the CVE was seen on the device.|2020-11-03 10:13:34.8476880  
+OSPlatform|String|Platform of the operating system running on the device; specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See tvm supported operating systems and platforms for details.|Windows10 and Windows 11 
+RbacGroupName|String|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers  
 RecommendationReference|string|A reference to the recommendation ID related to this software.|va--microsoft--silverlight  
-RecommendedSecurityUpdate |string|Name or description of the security update provided by the software vendor to address the vulnerability.|April 2020 Security Updates  
-RecommendedSecurityUpdateId |string|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles|4550961  
+RecommendedSecurityUpdate |String|Name or description of the security update provided by the software vendor to address the vulnerability.|April 2020 Security Updates  
+RecommendedSecurityUpdateId |String|Identifier of the applicable security updates or identifier for the corresponding guidance or knowledge base (KB) articles|4550961  
 RegistryPaths |Array[string]|Registry evidence that the product is installed in the device.|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome" ]  
-SoftwareName|string|Name of the software product.|chrome  
-SoftwareVendor|string|Name of the software vendor.|google  
-SoftwareVersion|string|Version number of the software product.|81.0.4044.138  
+SoftwareName|String|Name of the software product.|Chrome  
+SoftwareVendor|String|Name of the software vendor.|Google  
+SoftwareVersion|String|Version number of the software product.|81.0.4044.138  
 Status|String|**New** (for a new vulnerability introduced on a device)  (1) **Fixed** (if this vulnerability doesn't exist anymore on the device, which means it was remediated). (2) **Updated** (if a vulnerability on a device has changed. The possible changes are: CVSS score, exploitability level, severity level, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). |Fixed
-VulnerabilitySeverityLevel|string|Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape.|Medium
+VulnerabilitySeverityLevel|String|Severity level that is assigned to the security vulnerability. It's based on the CVSS score and dynamic factors influenced by the threat landscape.|Medium
 |
 
 #### Clarifications
 
-- If the software was updated from version 1.0 to version 2.0, and both versions are exposed to CVE-A, you will receive 2 separate events:
+- If the software was updated from version 1.0 to version 2.0, and both versions are exposed to CVE-A, you'll receive two separate events:
    1. Fixed: CVE-A on version 1.0 was fixed.
    1. New: CVE-A on version 2.0 was added.
 
@@ -432,7 +431,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
             "deviceId": "008198251234544f7dfa715e278b4cec0c19c171",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_1c8fee370690ca24b6a0d3f34d193b0424943a8b8.DomainPII_0dc1aee0fa366d175e514bd91a9e7a5b2b07ee8e.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.19042.685",
             "osArchitecture": "x64",
             "softwareVendor": "google",
@@ -461,7 +460,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
             "deviceId": "00e56c91234533860738ecf488eec8abf296e41e",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_82c13a8ad8cf3dbaf7bf34fada9fa3aebc124116.DomainPII_21eeb80d086e79dbfa178eadfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.18363.1256",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -488,7 +487,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
             "deviceId": "01aa8c73065bb12345918693f3f94ce322107d24",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_42684eb981bea2d670027e7ad2caafd3f2b381a3.DomainPII_21eed80b086e76dbfa178eabfa25e8de9acfa346.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.19042.685",
             "osArchitecture": "x64",
             "softwareVendor": "mozilla",
@@ -517,7 +516,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
             "deviceId": "029f0fcb13245fbd2decd1a336702131422d392e",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_a5706750acba75f15d69cd17f4a7fcd268d6422c.DomainPII_f290e982685f7e8eee168b4332e0ae5d2a069cd6.corp.contoso.com",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.19042.685",
             "osArchitecture": "x64",
             "softwareVendor": "microsoft",
@@ -544,7 +543,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareVulnerabilityC
             "deviceId": "038df381234510d357ac19b0113ef922e4e212b3",
             "rbacGroupName": "hhh",
             "deviceName": "ComputerPII_365f5c0bb7202c163937dad3d017969b2d760eb4.DomainPII_29596a43a2ef2bbfa00f6a16c0cb1d108bc63e32.DomainPII_3c5fefd2e6fda2f36257359404f6c1092aa6d4b8.net",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "osVersion": "10.0.18363.1256",
             "osArchitecture": "x64",
             "softwareVendor": "google",

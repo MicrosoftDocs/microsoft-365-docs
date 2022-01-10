@@ -9,7 +9,7 @@ audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
 ms.reviewer: mapatel
@@ -41,7 +41,7 @@ Tab 1 - Enter basic information. Provide the name and version of your applicatio
 *Note that the Out-of-Box (OOB) option is required by default.*
 
 
-![Select the functional testing tab](Media/functional_testing_tab1.png)
+![Select the functional testing tab.](Media/functional_testing_tab1.png)
 
 Tab 2 - Upload the components of your package by uploading a zip file with your entire test (binaries, dependencies, scripts etc). 
 
@@ -51,7 +51,7 @@ Tab 3 - Configure the Out-of-Box and Functional test tasks. Here, choose the pat
 
 Currently, you can upload between 1 and 8 scripts for your functional tests. (Kindly comment on this post if you need more scripts!)
 
-![Upload up to 8 scripts with functional tests](Media/functional_testing_tab3.png)
+![Upload up to 8 scripts with functional tests.](Media/functional_testing_tab3.png)
 
 (Optional) Configure a restart after installation. Some applications require a restart after installation. 
 
@@ -59,7 +59,7 @@ Select ```Reboot After Execution``` for the specific Script in the Tasks tab if 
 
 Tab 4 - Choose when the Windows update gets installed: The application of the Windows Update patch is done before any script of your choice. It is recommended that you install a Windows update after the application's installation to closely mimic your real-world application use scenarios.
 
-![The Windows update can get installed after a specific script](Media/functional_testing_tab4.png)
+![The Windows update can get installed after a specific script.](Media/functional_testing_tab4.png)
 
 Tab 5 - Review and create the package. Once you have completed the steps listed above, select ```Create``` to finish the uploading process.
 

@@ -2,14 +2,13 @@
 title: machineAction resource type
 description: Learn about the methods and properties of the MachineAction resource type in Microsoft Defender for Endpoint.
 keywords: apis, supported apis, get, machineaction, recent
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -22,7 +21,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -59,16 +59,23 @@ ms.technology: mde
 |Property|Type|Description|
 |---|---|---|
 |ID|Guid|Identity of the [Machine Action](machineaction.md) entity.|
-|type|Enum|Type of the action. Possible values are: "RunAntiVirusScan", "Offboard", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution" and "UnrestrictCodeExecution"|
+|type|Enum|Type of the action. Possible values are: "RunAntiVirusScan", "Offboard", "Live Response", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution", and "UnrestrictCodeExecution".|
 |scope|string|Scope of the action. "Full" or "Selective" for Isolation, "Quick" or "Full" for Anti-Virus scan.|
 |requestor|String|Identity of the person that executed the action.|
+|externalID|String|Id the customer can submit in the request for custom correlation.|
+|requestSource|string|The name of the user/application that submitted the action.|
+|commands|array|Commands to run. Allowed values are PutFile, RunScript, GetFile.|
+|cancellationRequestor|String|Identity of the person that canceled the action.|
 |requestorComment|String|Comment that was written when issuing the action.|
-|status|Enum|Current status of the command. Possible values are: "Pending", "InProgress", "Succeeded", "Failed", "TimeOut" and "Canceled".|
+|cancellationComment|String|Comment that was written when canceling the action.|
+|status|Enum|Current status of the command. Possible values are: "Pending", "InProgress", "Succeeded", "Failed", "TimeOut", and "Cancelled".|
 |machineId|String|ID of the [machine](machine.md) on which the action was executed.|
-|machineId|String|Name of the [machine](machine.md) on which the action was executed.|
+|computerDnsName|String|Name of the [machine](machine.md) on which the action was executed.|
 |creationDateTimeUtc|DateTimeOffset|The date and time when the action was created.|
-|lastUpdateTimeUtc|DateTimeOffset|The last date and time when the action status was updated.|
-|relatedFileInfo|Class|Contains two Properties. string `fileIdentifier`, Enum `fileIdentifierType` with the possible values: "Sha1", "Sha256" and "Md5".|
+|cancellationDateTimeUtc|DateTimeOffset|The date and time when the action was canceled.|
+|lastUpdateDateTimeUtc|DateTimeOffset|The last date and time when the action status was updated.|
+|title|String|Machine action title.|
+|relatedFileInfo|Class|Contains two Properties. string `fileIdentifier`, Enum `fileIdentifierType` with the possible values: "Sha1", "Sha256", and "Md5".|
 
 ## Json representation
 

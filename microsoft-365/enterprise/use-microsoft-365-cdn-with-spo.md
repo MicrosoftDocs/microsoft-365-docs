@@ -7,7 +7,7 @@ ms.date: 07/13/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -32,7 +32,7 @@ You can use the built-in Office 365 Content Delivery Network (CDN) to host stati
 
 The Office 365 CDN is composed of multiple CDNs that allow you to host static assets in multiple locations, or _origins_, and serve them from global high-speed networks. Depending on the kind of content you want to host in the Office 365 CDN, you can add **public** origins, **private** origins or both. See [Choose whether each origin should be public or private](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate) for more information on the difference between public and private origins.
 
-![Office 365 CDN conceptual diagram](../media/O365-CDN/o365-cdn-flow-transparent.png "Office 365 CDN conceptual diagram")
+![Office 365 CDN conceptual diagram.](../media/O365-CDN/o365-cdn-flow-transparent.png "Office 365 CDN conceptual diagram")
 
 If you are already familiar with the way that CDNs work, you only need to complete a few steps to enable the Office 365 CDN for your tenant. This topic describes how. Read on for information about how to get started hosting your static assets.
 
@@ -915,7 +915,7 @@ The following is an overview of which links are automatically rewritten by the S
 
 The following diagram illustrates the workflow when SharePoint receives a request for a page containing assets from a public origin.
 
-![Workflow diagram: Retrieving Office 365 CDN assets from a public origin](../media/O365-CDN/o365-cdn-public-steps-transparent.png "Workflow: Retrieving Office 365 CDN assets from a public origin")
+![Workflow diagram: Retrieving Office 365 CDN assets from a public origin.](../media/O365-CDN/o365-cdn-public-steps-transparent.png "Workflow: Retrieving Office 365 CDN assets from a public origin")
 
 > [!TIP]
 > If you want to disable auto-rewriting for specific URLs on a page, you can check out the page and add the query string parameter **?NoAutoReWrites=true** to the end of each link you want to disable.
@@ -951,7 +951,7 @@ Access to assets in private origins is protected by dynamically generated tokens
 
 The following diagram illustrates the workflow when SharePoint receives a request for a page containing assets from a private origin.
 
-![Workflow diagram: Retrieving Office 365 CDN assets from a private origin](../media/O365-CDN/o365-cdn-private-steps-transparent.png "Workflow: Retrieving Office 365 CDN assets from a private origin")
+![Workflow diagram: Retrieving Office 365 CDN assets from a private origin.](../media/O365-CDN/o365-cdn-private-steps-transparent.png "Workflow: Retrieving Office 365 CDN assets from a private origin")
 
 #### Token-based authorization in private origins
 
@@ -977,10 +977,12 @@ It is important to note that SharePoint Online does not support item-level permi
 |User 3     |Does not have access to folder1, but is granted explicit permission to access image1.jpg in SharePoint Online         |Can access the asset image1.jpg directly from SharePoint Online, but not from the CDN         |
 |User 4     |Has access to folder1, but has been explicitly denied access to image1.jpg in SharePoint Online         |Cannot access the asset from SharePoint Online, but can access the asset from the CDN despite being denied access to the file in SharePoint Online         |
 
-<a name="CDNTroubleshooting"> </a>
+<a name="CDNTroubleshooting"></a>
+
 ## Troubleshooting the Office 365 CDN
 
-<a name="CDNConfirm"> </a>
+<a name="CDNConfirm"></a>
+
 ### How do I confirm that assets are being served by the CDN?
 
 Once you have added links to CDN assets to a page, you can confirm that the asset is being served from the CDN by browsing to the page, right clicking on the image once it has rendered and reviewing the image URL.

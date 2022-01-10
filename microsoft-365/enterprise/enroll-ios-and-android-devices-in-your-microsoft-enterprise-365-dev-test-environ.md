@@ -9,7 +9,7 @@ ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
@@ -27,7 +27,7 @@ Enrolling iOS/iPadOS and Android devices in your test environment involves three
 - [Phase 2: Enroll your iOS/iPadOS and Android devices](#phase-2-enroll-your-ios-and-android-devices)
 - [Phase 3: Manage your iOS/iPadOS and Android devices remotely](#phase-3-manage-your-ios-and-android-devices-remotely)
 
-![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
 > For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).

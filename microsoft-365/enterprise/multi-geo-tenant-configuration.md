@@ -13,7 +13,7 @@ ms.collection:
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-localization_priority: Normal
+ms.localizationpriority: medium
 description: In this article, learn how to add satellite locations and configure your tenant for Microsoft 365 Multi-Geo.
 ---
 
@@ -35,7 +35,7 @@ You must add a satellite location for each geo location where you want to store 
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
-![Screenshot of geo locations page in the SharePoint admin center](../media/sharepoint-multi-geo-admin-center.png)
+![Screenshot of geo locations page in the SharePoint admin center.](../media/sharepoint-multi-geo-admin-center.png)
 
 To add a satellite location
 
@@ -96,7 +96,7 @@ The procedures in this section require the [Microsoft Azure Active Directory Mod
 
     `(Get-MsolUser -userprincipalName Robyn.Buckley@Contoso.com).PreferredDatalocation`
 
-![Screenshot of PowerShell window showing set-msoluser](../media/multi-geo-tenant-configuration-image3.png)
+![Screenshot of PowerShell window showing set-msoluser.](../media/multi-geo-tenant-configuration-image3.png)
 
 We recommend that you include setting the user's Preferred Data Location as a part of your standard user creation workflow.
 

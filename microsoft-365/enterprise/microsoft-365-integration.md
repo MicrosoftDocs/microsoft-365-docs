@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: 
@@ -49,11 +49,11 @@ See [manage Microsoft 365 accounts](manage-microsoft-365-accounts.md) for a list
 
 If you have existing user accounts in AD DS, you don't want to re-create all of those accounts in Microsoft 365 and risk introducing differences or errors between the environments. Directory synchronization helps you mirror those accounts between your on-premises and online environments. With directory synchronization, your users don't have to remember new information for each environment, and you don't have to create or update accounts twice. You will need to [prepare your on-premises directory](prepare-for-directory-synchronization.md) for directory synchronization.
   
-![Use directory synchronization to keep on-premises and online user account information synchronized](../media/microsoft-365-integration/directory-synchronization.png)
+![Use directory synchronization to keep on-premises and online user account information synchronized.](../media/microsoft-365-integration/directory-synchronization.png)
   
 If you want users to be able to log on to Microsoft 365 with their on-premises credentials, you can also configure SSO. With SSO, Microsoft 365 is configured to trust the on-premises environment for user authentication.
   
-![With single sign-on, the same account is available in both the on-premises and online environments](../media/microsoft-365-integration/single-sign-on.png)
+![With single sign-on, the same account is available in both the on-premises and online environments.](../media/microsoft-365-integration/single-sign-on.png)
 
 ### Directory synchronization with or without password hash synchronization or pass-through authentication (PTA)
 

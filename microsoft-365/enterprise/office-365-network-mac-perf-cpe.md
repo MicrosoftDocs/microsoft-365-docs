@@ -2,12 +2,12 @@
 title: "Microsoft 365 informed network routing"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 03/10/2021
+manager: scotv
+ms.date: 12/06/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -16,12 +16,9 @@ ms.collection:
 description: "Microsoft 365 informed network routing"
 ---
 
-# Microsoft 365 informed network routing (preview)
+# Microsoft 365 informed network routing
 
 Informed network routing is a feature that integrates various Microsoft 365 applications with third party software defined network (SD-WAN) solutions in order to optimize and improve your network connectivity to Microsoft service endpoints. Optimized SD-WAN connectivity may result in improved user experiences and performance.
-
->[!IMPORTANT]
->Microsoft 365 informed network routing is currently in preview status. For more information on this preview including guidance for receiving assistance, see [Microsoft 365 informed network routing Public Preview](https://go.microsoft.com/fwlink/?linkid=2151565).
 
 ## Overview
 
@@ -60,7 +57,7 @@ Application experience data (reflected through network quality metrics) is colle
 
 Enabling informed network routing requires multiple steps, some of which will need to be performed within the configuration interface of your SD-WAN solution. Consult your SD-WAN solution vendor for guidance on how to initiate the process of enabling informed network routing within the SD-WAN solution before proceeding with configuration in the Microsoft 365 admin center.
 
-Once you are ready to enable informed network routing in the Microsoft 365 admin center, ensure you have the necessary global administrator permissions.
+Once you are ready to enable informed network routing in the Microsoft 365 admin center, ensure you have the necessary **User Admin**, or **Global admin** permissions.
 
 >[!IMPORTANT]
 >In order to provide the necessary tenant-level applications permissions consent for the selected SD-WAN solution to access the informed network routing data sharing channel, you must perform the following steps as a global administrator.
@@ -70,11 +67,11 @@ Once you are ready to enable informed network routing in the Microsoft 365 admin
 
 In the [Microsoft 365 admin center](https://admin.microsoft.com/), select **Health > Network connectivity** in the left-hand navigation pane.
 
-This section of the admin center provides aggregated network connectivity metrics for your organization and guidance on how to improve your connectivity. See [Network connectivity in the Microsoft 365 Admin Center (preview)](office-365-network-mac-perf-overview.md) for additional information on these features available within the admin center.
+This section of the admin center provides aggregated network connectivity metrics for your organization and guidance on how to improve your connectivity. See [Network connectivity in the Microsoft 365 Admin Center](office-365-network-mac-perf-overview.md) for additional information on these features available within the admin center.
 
 Select **Settings > SD-WAN solution** to open the informed network routing configuration pane. The other options that appear under **Settings** are applicable to the general network connectivity guidance in the admin center and are not required to enable informed network routing.
 
-In the configuration pane, select **Add your SD-WAN solution (Preview)**.
+In the configuration pane, select **Add your SD-WAN solution**.
 
 ### Step 2: Select your SD-WAN solution and data storage location
 
@@ -90,7 +87,7 @@ Select **Next**.
 
 ### Step 4: Grant permissions to the SD-WAN solution
 
-This step will initiate a permissions grant request with Azure Active Directory (Azure AD). You will be requested to grant tenant-level permissions that allow your selected SD-WAN solution access to the informed network routing data storage and the service health information associated with your tenant. This action requires global administrator role permissions.
+This step will initiate a permissions grant request with Azure Active Directory (Azure AD). You will be requested to grant tenant-level permissions that allow your selected SD-WAN solution access to the informed network routing data storage and the service health information associated with your tenant. This action requires **Azure AD DC admin**, or **Global admin** role permissions.
 
 Select the **Give permission to this application** link and follow the Azure AD requests.
 
@@ -157,15 +154,12 @@ Your settings have now been reset and informed network routing has been disabled
 
 Data exchanged between Microsoft and the SD-WAN solution provider is stored in the data storage location selected during the initial enablement of informed network routing. The data storage location options represent geographical areas containing Microsoft Azure regions where the data is stored.
 
->[!NOTE]
->During the Preview phase, the only available data storage location is **North America**. Additional data storage locations will become available prior to the general availability of informed network routing.
-
 Data is retained in this location for up to 30 days. When disabled, all remaining data is removed within this 30-day retention window.
 
 Data in this location is exchanged with the selected SD-WAN solution, and the location of the configured SD-WAN solution may not be within the same region. Customers should work with their SD-WAN solution provider to evaluate any data storage location requirements prior to production deployment.
 
 ## Related topics
 
-[Network connectivity in the Microsoft 365 admin center (preview)](office-365-network-mac-perf-overview.md)
+[Network connectivity in the Microsoft 365 admin center](office-365-network-mac-perf-overview.md)
 
-[Microsoft 365 Network Connectivity Location Services (preview)](office-365-network-mac-location-services.md)
+[Microsoft 365 Network Connectivity Location Services](office-365-network-mac-location-services.md)

@@ -7,7 +7,7 @@ ms.date: 12/29/2016
 audience: End User
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 search.appverid:
 - MET150
@@ -35,7 +35,7 @@ Although you don't have control over network performance itself, it helps to und
 
 ### Major factors that affect network performance
 
-![Network Performance Factors](../media/62a94322-3f1a-4d2d-bbdc-2aa0722d2d96.png)
+![Network Performance Factors.](../media/62a94322-3f1a-4d2d-bbdc-2aa0722d2d96.png)
 
  **Bandwidth and latency**: The two most important measures of network performance are bandwidth and latency:
 

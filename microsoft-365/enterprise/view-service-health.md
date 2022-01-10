@@ -6,7 +6,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords:
 - CSH
 ms.custom:
@@ -47,7 +47,7 @@ If you are unable to sign in to the admin center, you can use the [service statu
 
 3. On the **Service health** page, the health state of each cloud service is shown in a table format.
 
-   ![View of current issues in service health](../media/shd-landing-page.png)
+   ![View of current issues in service health.](../media/shd-landing-page.png)
 
 The **All services** tab (the default view) shows all services, their current health state, and any active incidents or advisories. An icon and status in the **Health** column indicate the state of each service.
 
@@ -81,7 +81,7 @@ You can also subscribe to email notifications for individual events instead of e
 
 On the **All services** view, select the issue title to see the issue detail page, which shows more information about the issue, including a feed of all the messages posted while we work on a solution.
 
-[![Screenshot showing the service advisory](../media/service-health-advisory.png)](../media/service-health-advisory.png#lightbox)
+[![Screenshot showing the service advisory.](../media/service-health-advisory.png)](../media/service-health-advisory.png#lightbox)
 
 The advisory or incident summary provides the following information:
 
@@ -94,7 +94,7 @@ The advisory or incident summary provides the following information:
 - **User Impact** - A brief description of the impact this issue has on the end user.
 - **All Updates** - We post frequent messages to let you know the progress that we're making in applying a solution.
 
-![A screenshot showing issue details](../media/service-health-advisory-detail.png)
+![A screenshot showing issue details.](../media/service-health-advisory-detail.png)
 
 ### Translate service health details
 
@@ -111,8 +111,8 @@ Most of the time, services will appear as healthy with no further information. W
 
 | Icon | Description |
 |:-----|:-----|
-|![Information icon for advisory](../media/a7f5fd21-c760-4948-9bc1-50f7c8070e28.png)|If a service has an advisory shown, we are aware of a problem that is affecting some users, but the service is still available. In an advisory, there is often a workaround to the problem and the problem may be intermittent or is limited in scope and user impact.  <br/> |
-|![Exclamation point icon for incident](../media/a636db57-6083-44dc-bbd5-556850804f17.png)|If a service has an active incident shown, it's a critical issue and the service or a major function of the service is unavailable. For example, users may be unable to send and receive email or unable to sign-in. Incidents will have noticeable impact to users. When there is an incident in progress, we will provide updates regarding the investigation, mitigation efforts, and confirmation of resolution in the Service health dashboard.  <br/> |
+|![Information icon for advisory.](../media/a7f5fd21-c760-4948-9bc1-50f7c8070e28.png)|If a service has an advisory shown, we are aware of a problem that is affecting some users, but the service is still available. In an advisory, there is often a workaround to the problem and the problem may be intermittent or is limited in scope and user impact.  <br/> |
+|![Exclamation point icon for incident.](../media/a636db57-6083-44dc-bbd5-556850804f17.png)|If a service has an active incident shown, it's a critical issue and the service or a major function of the service is unavailable. For example, users may be unable to send and receive email or unable to sign-in. Incidents will have noticeable impact to users. When there is an incident in progress, we will provide updates regarding the investigation, mitigation efforts, and confirmation of resolution in the Service health dashboard.  <br/> |
 
 ### Status definitions
 

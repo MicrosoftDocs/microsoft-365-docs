@@ -1,8 +1,7 @@
 ---
 title: Cancel machine action API
 description: Learn how to cancel an already launched machine action
-keywords: apis, graph api, 
-search.product: eADQiWindows 10XVcnh
+keywords: apis, graph api,
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -12,12 +11,12 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+ms.collection:
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.topic: article
 MS.technology: mde
 ms.custom: api
@@ -28,7 +27,8 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2146631)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -49,21 +49,18 @@ Cancel an already launched machine action that are not yet in final state (compl
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more,
-including how to choose permissions, see [Get
-started](apis-intro.md).
+including how to choose permissions, see [Get started](apis-intro.md).
 
 |Permission type|Permission|Permission display name|
 |---|---|---|
 |Application|Machine.CollectForensics <br> Machine.Isolate <br> Machine.RestrictExecution <br> Machine.Scan <br> Machine.Offboard <br> Machine.StopAndQuarantine <br> Machine.LiveResponse|Collect forensics <br>Isolate machine<br>Restrict code execution<br>  Scan machine<br>  Offboard machine<br> Stop And Quarantine<br> Run live response on a specific machine|
 |Delegated (work or school account)|Machine.CollectForensics<br> Machine.Isolate  <br>Machine.RestrictExecution<br> Machine.Scan<br> Machine.Offboard<br> Machine.StopAndQuarantineMachine.LiveResponse|Collect forensics<br> Isolate machine<br>  Restrict code execution<br> Scan machine<br>Offboard machine<br> Stop And Quarantine<br> Run live response on a specific machine|
 
-
 ## HTTP request
 
+```http
+POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactionid>/cancel
 ```
-POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactionid>/cancel  
-```
-
 
 ## Request headers
 
@@ -80,9 +77,7 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 ## Response
 
-If successful, this method returns 200, Ok response code with a Machine Action
-entity. If machine action entity with the specified id was not found - 404 Not
-Found.
+If successful, this method returns 200, OK response code with a Machine Action entity. If machine action entity with the specified id was not found - 404 Not Found.
 
 ## Example
 

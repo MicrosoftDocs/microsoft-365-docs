@@ -8,8 +8,10 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.collection: M365-subscription-management
-localization_priority: Normal
+ms.collection: 
+- M365-subscription-management
+- Adm_TOC
+ms.localizationpriority: medium
 ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven

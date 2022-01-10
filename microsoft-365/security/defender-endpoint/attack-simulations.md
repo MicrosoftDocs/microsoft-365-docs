@@ -9,8 +9,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: maccruz
-author: lomayor
-localization_priority: Normal
+author: dansimp
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -24,7 +24,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -45,14 +46,14 @@ Read the walkthrough document provided with each attack scenario. Each document 
 
 ## Run a simulation
 
-1. In **Endpoints** > **Evaluation & tutorials** > **Tutorials & simulations**, select which of the available attack scenarios you would like to simulate:
+1. In **Endpoints** \> **Evaluation & tutorials** \> **Tutorials & simulations**, select which of the available attack scenarios you would like to simulate:
    - **Scenario 1: Document drops backdoor** - simulates delivery of a socially engineered lure document. The document launches a specially crafted backdoor that gives attackers control.
    - **Scenario 2: PowerShell script in fileless attack** - simulates a fileless attack that relies on PowerShell, showcasing attack surface reduction and device learning detection of malicious memory activity.
    - **Scenario 3: Automated incident response** - triggers automated investigation, which automatically hunts for and remediates breach artifacts to scale your incident response capacity.
 
 2. Download and read the corresponding walkthrough document provided with your selected scenario.
 
-3. Download the simulation file or copy the simulation script by navigating to **Evaluation & tutorials** > **Tutorials & simulations**. You can choose to download the file or script on the test device but it's not mandatory.
+3. Download the simulation file or copy the simulation script by navigating to **Evaluation & tutorials** \> **Tutorials & simulations**. You can choose to download the file or script on the test device but it's not mandatory.
 
 4. Run the simulation file or script on the test device as instructed in the walkthrough document.
 
@@ -64,4 +65,4 @@ Read the walkthrough document provided with each attack scenario. Each document 
 ## Related topics
 
 - [Onboard devices](onboard-configure.md)
-- [Onboard Windows 10 devices](configure-endpoints.md)
+- [Onboard Windows devices](configure-endpoints.md)

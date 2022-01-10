@@ -10,7 +10,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
@@ -19,9 +19,6 @@ description: "Use collections in Advanced eDiscovery to search for and collect c
 ---
 
 # Learn about collections in Advanced eDiscovery
-
-> [!NOTE]
-> We're rolling out a new collections experience in Advanced eDiscovery, which is described in this article. This rollout will take a number of weeks before it's available to all organizations. If the new collections experience isn't available in your organization, you can still collect case content with the [Advanced eDiscovery search tool](create-search-to-collect-data.md).
 
 When organizations are faced with gathering the communications and content that may be relevant to an investigation or potential litigation, they face a significant challenge under the best of circumstances. In today’s modern workplace, the volume, variety, and velocity of content is enabling innovation and remote work, while also expanding the requirements and process for managing collections for eDiscovery investigations.
 
@@ -39,7 +36,7 @@ With the release of collections in an Advanced eDiscovery, the **Searches** tab 
 
 To get started using collections in Advanced eDiscovery, here's a basic workflow and descriptions of each step in the process.
 
-![Collections workflow in Advanced eDiscovery](../media/CollectionsWorkflow.png)
+![Collections workflow in Advanced eDiscovery.](../media/CollectionsWorkflow.png)
 
 1. **Create and run a draft collection**. The first step is to create a draft collection and define the custodial and non-custodial data sources to search. You can also search other data sources that haven't been added to the case. After you add the data sources, you configure the search query to search the data sources for content relevant to the case. You can keywords, properties, and conditions to build search queries that return content that's likely most relevant to the case. For more information, see [Create a draft collection](create-draft-collection.md).
 

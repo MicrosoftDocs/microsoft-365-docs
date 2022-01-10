@@ -4,7 +4,7 @@ description:  Configuration guidelines for guest accounts and how to adjust them
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
@@ -16,15 +16,21 @@ audience: Admin
 
 ## External collaboration settings
 
-Microsoft Managed Desktop requires the following settings in your Azure AD organization for guest account access. You can adjust these settings at the [Azure portal](https://portal.azure.com) under **External Identities / External collaboration settings**:
+Microsoft Managed Desktop recommends the following configuration in your Azure AD organization for guest account access. You can adjust these settings at the [Azure portal](https://portal.azure.com) under **External Identities / External collaboration settings**:
 
--   For **Guest invite restrictions** set to **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions**
--   For **Collaboration restrictions**, choose any of these options:
+-   For **Guest user access**, set to **Guest users have limited access to properties and memberships of directory objects**
+-   For **Guest invite settings**, set to **Member users and users assigned to specific admin roles can invite guest users including guests with member permissions**
+
+Microsoft Managed Desktop requires the following configuration in your Azure AD organization for guest account access. You can adjust this setting at the [Azure portal](https://portal.azure.com) under **External Identities / External collaboration settings**:
+
+-   **Collaboration restrictions**, choose any of these options:
     -   If you select **Allow invitations to be sent to any domain (most inclusive)**, no other configuration required.
     -   If you select **Deny invitations to the specified domains**, make sure that Microsoft.com isn’t listed in the target domains.
     -   If you select **Allow invitations only to the specified domains (most restrictive)**, make sure that Microsoft.com *is* listed in the target domains.
 
 If you set restrictions that interact with these settings, make sure to exclude the Azure Active Directory **Modern Workplace Service Accounts**. For example, if you have a conditional access policy that prevents guest accounts from accessing the Intune portal, exclude the **Modern Workplace Service Accounts** group from this policy.
+
+For more information, see [Enable B2B external collaboration and manage who can invite guests](/azure/active-directory/external-identities/delegate-invitations#to-configure-external-collaboration-settings).
 
 ## Unlicensed Intune admin
 

@@ -3,7 +3,7 @@ title: Scenarios and use cases for Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.reviewer: laurieellis
+ms.reviewer: lauris
 ms.date: 
 audience: admin
 ms.topic: article
@@ -13,7 +13,7 @@ ms.collection:
     - m365initiative-syntex
 ms.custom: Adopt
 search.appverid: 
-localization_priority: Normal
+ms.localizationpriority:  medium
 description: Find scenarios about how to use SharePoint Syntex in your organization.
 ---
 
@@ -41,7 +41,7 @@ For example, you can set up a process using SharePoint Syntex and Power Automate
     - An invoice is past its due date.
     - An invoice is for an amount that's larger than your automatic approval amount.
 
-![Track and monitor invoices with SharePoint Syntex and Power Automate](../media/content-understanding/process-invoices-flow.png)
+![Track and monitor invoices with SharePoint Syntex and Power Automate.](../media/content-understanding/process-invoices-flow.png)
 
 When you automate this scenario, you can:
 
@@ -58,7 +58,7 @@ As another example, you can set up a process to identify contracts your company 
 1. When the model is complete, apply the model to a library where you can upload contracts.
 1. Apply a retention label to the date field, so that contracts are retained in the library for the required length of time.
 
-![Track and monitor contracts with SharePoint Syntex and retention labels](../media/content-understanding/process-contracts-flow.png)
+![Track and monitor contracts with SharePoint Syntex and retention labels.](../media/content-understanding/process-contracts-flow.png)
 
 When you automate this scenario, you can:
 

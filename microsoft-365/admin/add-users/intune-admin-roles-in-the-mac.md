@@ -8,11 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet

@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -63,7 +63,7 @@ If your organization uses Active Directory that synchronizes with Microsoft Azur
 6. For each disabled subscription, repeat steps 3 through 5 until all subscriptions are deleted.
 
 > [!NOTE]
-> If you're unable to immediately delete a disabled subscription, [contact support](../business-video/get-help-support.md).
+> If you're unable to immediately delete a disabled subscription, [contact support](../admin/get-help-support.md).
 
 ## Step 4: Disable multi-factor authentication
 

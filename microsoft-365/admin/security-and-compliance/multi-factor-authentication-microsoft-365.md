@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -92,7 +92,7 @@ You can also use Conditional Access policies for more advanced capabilities, suc
 
 You configure Conditional Access policies from the **Security** pane for Azure AD in the Azure portal.
 
-![Picture of menu option for Conditional Access](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
+![Picture of menu option for Conditional Access.](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
 You can use Conditional Access policies with:
 
@@ -139,7 +139,7 @@ You should be using either security defaults or Conditional Access policies to r
 
 You enable MFA for individual user accounts from the <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a> pane of the Microsoft 365 admin center.
 
-![Picture of Multi factor authentication option on Active users page](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
+![Picture of Multi factor authentication option on Active users page.](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
 After being enabled, the next time the user signs in, they will be prompted to register for MFA and to choose and test the additional verification method.
 
@@ -173,5 +173,5 @@ In the Microsoft 365 admin center, you can configure per-user and service <a hre
 
 ## Related content
 
-[Turn on multifactor authentication](../../business-video/turn-on-mfa.md) (video)\
-[Turn on multifactor authentication for your phone](../../business-video/set-up-mfa.md) (video)
+[Turn on multifactor authentication](set-up-multi-factor-authentication.md) (video)\
+[Turn on multifactor authentication for your phone](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14) (video)

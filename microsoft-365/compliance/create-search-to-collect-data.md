@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
@@ -24,7 +24,7 @@ ms.custom: seo-marvel-mar2020
 
 On the **Searches** tab in your case, you can create a new search by clicking **New search** and following the wizard.
 
-![The search wizard in an Advanced eDiscovery case](../media/AeDSearch1.png)
+![The search wizard in an Advanced eDiscovery case.](../media/AeDSearch1.png)
 
 ## Name the search and give it a description
 

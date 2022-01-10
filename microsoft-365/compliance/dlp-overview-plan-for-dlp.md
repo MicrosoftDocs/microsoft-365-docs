@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
@@ -108,7 +108,7 @@ Your implementation plan should include:
 
 Documenting how your organization is going to get from its starting state to the desired end state is essential to communicating with your stakeholders and setting the project scope. Here is a set of steps that are commonly used to deploy DLP. You'll want more detail than this, but you can use this to frame your DLP adoption path.
 
-![graphic showing common order for deploying DLP](../media/dlp-deployment-planning.png)
+![graphic showing common order for deploying DLP.](../media/dlp-deployment-planning.png)
 
 #### Sensitive item discovery
 
@@ -140,7 +140,7 @@ The items that contain your organizations sensitive information are used every d
 - OneDrive accounts
 - Teams chat and channel messages
 - Windows 10 Devices
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - On-premises repositories
 
 **Example** Your organizations' internal auditors are tracking a set of credit card numbers. They keep a spreadsheet of them in a secure SharePoint site. Several of the employees make copies and save them to their work OneDrive for Business site, which is synced to their Windows 10 device. One of them pastes a list of 14 of them in an email and tries to send it to the outside auditors for review. You'd want to apply the policy to the secure SharePoint site, all the internal auditors OneDrive for Business accounts, their Windows 10 devices, and Exchange email.
@@ -172,15 +172,15 @@ If you're creating DLP policies with a large potential impact, we recommend foll
     
 3. **Start full enforcement on the policies** so that the actions in the rules are applied and the content's protected. Continue to monitor the DLP reports and any incident reports or notifications to make sure that the results are what you intend. 
 
-    ![Options for using test mode and turning on policy](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+    ![Options for using test mode and turning on policy.](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
 
     You can turn off a DLP policy at any time, which affects all rules in the policy. However, each rule can also be turned off individually by toggling its status in the rule editor.
 
-    ![Options for turning off a rule in a policy](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+    ![Options for turning off a rule in a policy.](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
     You can also change the priority of multiple rules in a policy. To do that, open a policy for editing. In a row for a rule, choose the ellipses (**...**), and then choose an option, such as **Move down** or **Bring to last**.
 
-    ![Set rule priority](../media/dlp-set-rule-priority.png)
+    ![Set rule priority.](../media/dlp-set-rule-priority.png)
 
 #### End-user training
 

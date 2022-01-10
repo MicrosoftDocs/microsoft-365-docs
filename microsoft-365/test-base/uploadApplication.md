@@ -3,13 +3,13 @@ title: 'Upload your package'
 description: How to upload your application, binaries and dependencies onto Test Base
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: rshastri
 manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
 ms.reviewer: mapatel
@@ -71,9 +71,9 @@ The steps below provides a guide on how to fill out your package details:
 
     In the multi-select dropdown, select the OS version(s) of Windows your package will be installed on.
 
-    - To test your package only against Windows client operating systems, select the applicable Windows 11 OS versions from the menu list.
+    - To test your package only against Windows Client operating systems, select the applicable Windows Client OS versions from the menu list.
     - To test your package only against Windows Server operating systems, select the applicable Windows Server OS versions from the menu list.
-    - To test your package only against Windows client and Windows Server operating systems, select all applicable operating systems from the menu list.
+    - To test your package against Windows Client and Windows Server operating systems, select all applicable operating systems from the menu list.
 
     > [!NOTE]
     > If you select to test your package against both Server and Client OSes, please make sure that the package is compatible and can run on both OSes

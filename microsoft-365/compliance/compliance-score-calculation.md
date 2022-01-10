@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
@@ -114,4 +114,4 @@ Each action has an assigned value in Compliance Manager based on the risk it rep
 | Corrective mandatory | 3 |
 | Corrective discretionary | 1 |
   
-![Compliance Manager action point values](../media/compliance-score-action-scoring.png "Compliance Manager action point values")
+![Compliance Manager action point values.](../media/compliance-score-action-scoring.png "Compliance Manager action point values")

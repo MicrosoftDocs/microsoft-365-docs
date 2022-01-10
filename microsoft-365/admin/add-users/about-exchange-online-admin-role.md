@@ -8,12 +8,14 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
+
+ms.custom: 
+- AdminSurgePortfolio
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
@@ -25,7 +27,7 @@ description: "Exchange online admins manage your organization's email and mailbo
 
 # About the Exchange Online admin role
 
-To help you administer Microsoft 365, you can [assign](assign-admin-roles.md) users permissions to manage your organization's email and mailboxes from the [Exchange admin center](/exchange/exchange-admin-center). You do this by assigning them to the Exchange admin role.
+To help you administer Microsoft 365, you can [assign](assign-admin-roles.md) users permissions to manage your organization's email and mailboxes from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. You do this by assigning them to the Exchange admin role.
   
  **Tip**: When you assign someone to the Exchange admin role, also assign them to the Service admin role. This way they can see important information in the Microsoft 365 admin center, such as the health of the Exchange Online service, and change and release notifications.
 

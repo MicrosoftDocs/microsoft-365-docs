@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -31,7 +31,7 @@ This article is part of a larger series of articles about Office 365 Message Enc
 
 Exchange Online includes Information Rights Management (IRM) functionality that provides online and offline protection of email messages and attachments. By default, Exchange Online uses Azure Information Protection. However, your organization may have configured Exchange Online IRM to use on-premises Active Directory Rights Management Service (AD RMS). AD RMS support in Exchange Online is retiring. Instead, Azure Information Protection will replace AD RMS entirely.
 
-To assess whether this deprecation impacts your organization, see [How to migrate AD RMS to Azure RMS in Exchange Online](https://support.microsoft.com/help/5001237). This article provides recommendations on migration options.
+To assess whether this deprecation impacts your organization, see [How to migrate AD RMS to Azure RMS in Exchange Online](/exchange/troubleshoot/administration/migrate-ad-rms-to-azure). This article provides recommendations on migration options.
 
 ## Side-by-side comparison of OME features and capabilities
 

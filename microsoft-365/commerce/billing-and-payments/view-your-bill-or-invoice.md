@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: GEA150
 ms.collection: 
 - M365-subscription-management
@@ -22,6 +22,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 - AdminTemplateSet
+- adminvideo
 description: "Find your invoice or billing statement in the Microsoft 365 admin center. You can also save and print a copy of your bill."
 ms.date: 07/31/2020
 ---
@@ -32,23 +33,25 @@ This article is for people who have a Microsoft 365 for business subscription.
   
 If you need help with interpreting the charges you see on your bill, see [Understand your bill or invoice](understand-your-invoice2.md) for a detailed walkthrough.
   
-**Have a problem with your bill?** [Contact support for business products](../../business-video/get-help-support.md).
+**Have a problem with your bill?** [Contact support for business products](../../admin/get-help-support.md).
 
 ## Before you begin
 
 You must be a Global or Billing admin to do the steps described in this article.
   
+## Watch: View, download, or print your bill
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo?autoplay=false]
+
+1. In the Microsoft 365 admin center, select **Billing** in the left navigation pane, and then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">**Invoices** tab</a>.
+1. Select an invoice to view it. If you don't see an invoice, select **Filter by: Last 6 months** from the drop-down list.
+1. To view the invoice details, select **Download PDF** in the top-right corner of the invoice.
+
 ## View a bill or invoice
 
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Bills & payments</a> page.
 
 ::: moniker-end
 
@@ -92,10 +95,19 @@ You can choose to receive a copy of your billing statement as an email attachmen
 
 ### To receive your billing statement in email
 
+::: moniker range="o365-worldwide"
+
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
-    - If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing notifications</a> page.
-    - If you're using Office 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Billing notifications</a> page.
-1. Under **Receive billing statement as email attachment?** switch the toggle to **On**.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Billing notifications</a> page.
+    
+::: moniker-end
+
+2. Under **Receive billing statement as email attachment?** switch the toggle to **On**.
 
     You can stop receiving the billing statement emails at any time by switching the toggle to **Off**.
 

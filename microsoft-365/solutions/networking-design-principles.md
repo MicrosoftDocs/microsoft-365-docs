@@ -7,7 +7,7 @@ manager: bcarter
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-identity-device-management
 - M365-security-compliance
@@ -21,15 +21,11 @@ In this article, [Ed Fisher](https://www.linkedin.com/in/edfisher/), Security & 
 
 ## About the author
 
-![Ed Fisher photo](../media/solutions-architecture-center/ed-fisher-networking.jpg) 
+![Ed Fisher photo.](../media/solutions-architecture-center/ed-fisher-networking.jpg) 
 
 I am currently a Principal Technical Specialist in our Retail and Consumer Goods team, focusing on Security & Compliance. I have worked with customers moving to Office 365 for the past ten years. I’ve worked with smaller shops with a handful of locations to government agencies and enterprises with millions of users distributed around the world, and many other customers in between, with the majority having tens of thousands of users, multiple locations in various parts of the world, the need for a higher degree of security, and a multitude of compliance requirements. I have helped hundreds of enterprises and millions of users move to the cloud safely and securely.
 
 With a background over the past 25 years that includes security, infrastructure, and network engineering, and having moved two of my previous employers to Office 365 before joining Microsoft, I’ve been on your side of the table plenty of times, and do remember what that’s like. While no two customers are ever the same, most have similar needs, and when consuming a standardized service such as any SaaS or PaaS platform, the best approaches tend to be the same.
-
-## It’s not the network—it’s how you’re (mis)using it!
-
-No matter how many times it happens, it never fails to amaze me how *creative* security teams and networking teams try to get with how they think they should connect to Microsoft cloud services. There’s always some security policy, compliance standard, or better way they insist on using, without being willing to engage in a conversation about what it is they're trying to accomplish, or *how* they're better, easier, more cost-effective, and more performant ways of doing so.
 
 ## It’s not the network — it’s how you’re (mis)using it!
 

@@ -8,11 +8,11 @@ audience: admin
 ms.topic: article
 ms.date: 
 ms.prod: microsoft-365-enterprise
-ms.collection: 
-    m365solution-managecontracts
-    m365solution-overview
+ms.collection:
+- m365solution-managecontracts
+- m365solution-overview
 search.appverid: 
-localization_priority: None
+ms.localizationpriority:  medium
 ROBOTS: 
 description: Learn how to manage contracts using a Microsoft 365 solution of SharePoint Syntex, SharePoint Lists, Microsoft Teams, and Power Automate.
 ---
@@ -21,7 +21,11 @@ description: Learn how to manage contracts using a Microsoft 365 solution of Sha
 
 This article describes how to create a contracts management solution for your organization by using SharePoint Syntex and components of Microsoft 365. It provides you with a framework to help you plan and create a solution that fits your unique business needs. Even though this solution talks about contract management, you can adapt it to create other document management solutions, such as for statements of work or invoices.
 
-*This content set documents a Microsoft 365 solution developed by Thomas Molbach with the Modern Work Solution Strategy Team at Microsoft.*
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWJUR0]
+
+</br>
 
 ## Identify the business problem
 
@@ -79,10 +83,16 @@ This solution relies on the following functionality, all available as part of a 
 - Microsoft Teams
 - Power Automate
 
+### Learn how to use SharePoint Syntex
+
+New to SharePoint Syntex? Learn how to use SharePoint Syntex to manage content using AI.
+
+The [Get started with SharePoint Syntex](/learn/paths/syntex-get-started) learning path will teach how you can use document understanding and form processing models to classify documents, extract text, and label your documents for quick and easy knowledge management.
+
 ## Create the solution
 
 The next sections will go into detail about how to configure your contracts management solution. It's divided into three steps:
 
 - [Step 1. Use SharePoint Syntex to identify contract files and extract data](solution-manage-contracts-step1.md)
 - [Step 2. Use Microsoft Teams to create your contract management channel](solution-manage-contracts-step2.md)
-- [Step 3. Use Power Automate to create your flow to process your contracts](solution-manage-contracts-step3.md)
+- [Step 3. Use Power Automate to create the flow to process your contracts](solution-manage-contracts-step3.md)

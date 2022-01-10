@@ -11,18 +11,18 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
-localization_priority: Priority
+ms.localizationpriority:  medium
 description: Learn how to create an extractor in Microsoft SharePoint Syntex.
 ---
 
 # Create an extractor in Microsoft SharePoint Syntex
 
 
-</br>
+<br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CL2G]
 
-</br> 
+<br/> 
 
 Before or after you create a classifier model to automate identification and classification of specific document types, you can optionally choose to add extractors to your model to pull out specific information from these documents. For example, you might want your model not only to identify all *Contract Renewal* documents added to your document library, but also to display the *Service Start date* for each document as a column value in the document library.
 
@@ -34,9 +34,12 @@ You need to create an extractor for each entity in the document that you want to
 ## Name your extractor
 
 1. From the model home page, in the **Create and train extractors** tile, click **Train extractor**.
+
 2. On the **New entity extractor** screen, type the name of your extractor in the **New extractor name** field. For example, name it **Service Start Date** if you want to extract the service start date from each Contract Renewal document. You can also choose to reuse a previously created column (for example, a managed metadata column).
-> [!NOTE]
-> If you create a new extractor, then select **New column type** and choose **Single line of text**, the maximum character limit is 255. Any characters that you type exceeding the limit get truncated. 
+
+    > [!NOTE]
+    > For extractors with the column type **Single line of text**, the maximum character limit is 255. Any characters that you type exceeding the limit get truncated.
+
 3. When you're done, click **Create**.
 
 ## Add a label
@@ -49,7 +52,7 @@ Creating the extractor opens the extractor page. Here you see a list of your sam
 2. Select **Next file** to auto save and open the next file in the list in the viewer. Or select **Save** and then select another file from the **Labeled examples** list.
 3. In the viewer, repeat steps 1 and 2, then repeat until you saved the label in all five files.
 
-    ![Advanced settings](../media/content-understanding/select-service-start-date.png) 
+    ![Advanced settings.](../media/content-understanding/select-service-start-date.png) 
 
  
 Once you labeled five files, a notification banner displays informing you to move to training. You can choose to more label more documents or advance to training. 
@@ -94,11 +97,11 @@ For the *Service Start Date* sample, it is more efficient to use the pre-built e
 
 1. In the **Explanation section**, select **New**, and then select **From explanation library**.
 2. From the explanation library, select **Date**. You can view all variations of date that are recognized.
-3. Select **Add**.</br>
+3. Select **Add**.
 
     ![Explanation library.](../media/content-understanding/explanation-library.png) 
 
-4. On the **Create an explanation** page, the *Date* information from the explanation library auto fills the fields. Select **Save**.</br>
+4. On the **Create an explanation** page, the *Date* information from the explanation library auto fills the fields. Select **Save**.
 
     ![Date.](../media/content-understanding/date-explanation-library.png) 
 

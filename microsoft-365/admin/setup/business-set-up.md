@@ -11,11 +11,12 @@ f1_keywords:
 - 'O365E_M365SetupBanner'
 - 'BCS365_M365SetupBanner'
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Adm_O365
 - M365-subscription-management
 - TRN_SMB
+- Adm_TOC
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -25,6 +26,7 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-mar
 - AdminSurgePortfolio
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -40,9 +42,16 @@ Watch this video for an overview of Microsoft 365 Business Premium setup.<br><br
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
+## Watch: Set up Microsoft 365 Business Premium
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ?autoplay=false]
+
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, and select  **Go to setup**. The setup wizard will start.
+1. After your setup is complete, return to the Microsoft admin center. In the admin center you can continue setting up features like Windows 10 policies, DLP, etc. on the  **Setup**  page.
+
 ## Add your domain, users, and set up policies
 
-When you purchase Microsoft 365 Business Premium, you have the option of using a domain you own, or buying one during the [sign-up](../../business-video/sign-up.md).
+When you purchase Microsoft 365 Business Premium, you have the option of using a domain you own, or buying one during the [sign-up](../admin-overview/sign-up-for-office-365.md).
 
 - If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).
 
@@ -78,7 +87,7 @@ You can add users in the wizard, but you can also [add users later](../add-users
 
 Any users you add in the wizard get automatically assigned a Microsoft 365 Business Premium license.
 
-![Screenshot of the Add new users page in the wizard](../../media/addnewuserspage.png)
+![Screenshot of the Add new users page in the wizard.](../../media/addnewuserspage.png)
 
 1. If your Microsoft 365 Business Premium subscription has existing users (for example, if you used Azure AD Connect), you get an option to assign licenses to them now. Go ahead and add licenses to them as well.
 

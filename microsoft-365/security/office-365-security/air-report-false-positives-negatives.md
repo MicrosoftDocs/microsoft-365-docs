@@ -12,7 +12,7 @@ author: JoeDavies-MSFT
 ms.author: josephd
 ms.prod: m365-security
 ms.date: 01/29/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -48,7 +48,7 @@ You can also [Submit a file to Microsoft for malware analysis](https://www.micro
 
 ## Adjust an alert to prevent false positives from recurring
 
-If an alert is triggered by legitimate use, or the alert is inaccurate, you can [Manage alerts in the Cloud App Security portal](/cloud-app-security/managing-alerts).
+If an alert is triggered by legitimate use, or the alert is inaccurate, you can [Manage alerts in the Defender for Cloud Apps portal](/cloud-app-security/managing-alerts).
 
 If your organization is using [Microsoft Defender for Endpoint](/windows/security/threat-protection) in addition to Office 365, and a file, IP address, URL, or domain is treated as malware on a device, even though it's safe, you can [create a custom indicator with an "Allow" action for your device](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
@@ -77,11 +77,10 @@ With Threat Explorer, your security operations team can find an email affected b
 
 In the Action center, you can see remediation actions that were taken and potentially undo the action.
 
-1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>).
-2. In the navigation pane, select **Action center**.
-3. Select the **History** tab to view the list of completed actions.
-4. Select an item. Its flyout pane opens.
-5. In the flyout pane, select **Undo**. (Only actions that can be undone will have an **Undo** button.)
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the Action center by selecting **Action center**. To go directly to the Action center, use <https://security.microsoft.com/action-center/>.
+2. In the Action center, select the **History** tab to view the list of completed actions.
+3. Select an item. Its flyout pane opens.
+4. In the flyout pane, select **Undo**. (Only actions that can be undone will have an **Undo** button.)
 
 ## See also
 

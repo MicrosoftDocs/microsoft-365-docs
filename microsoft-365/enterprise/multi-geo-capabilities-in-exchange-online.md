@@ -10,7 +10,7 @@ ms.service: o365-solutions
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about multi-geo capabilities in Exchange Online, such as feature limitations and mailbox placement.
 ---
 

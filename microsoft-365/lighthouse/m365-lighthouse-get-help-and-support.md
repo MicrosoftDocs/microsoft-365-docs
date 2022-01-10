@@ -7,7 +7,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -25,10 +25,10 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Several options are available if you need help. Start by checking the current health of customer tenant services:
 
-1. In the left navigation pane of Microsoft 365 Lighthouse, select **Service health**.
+1. In the left navigation pane of Lighthouse, select **Service health**.
 2. View detailed information about current and past issues.
 
-To check the current health of the Microsoft 365 Lighthouse tenant services:
+To check the current health of the Lighthouse tenant services:
 
 1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 2. In the left navigation pane, select **Health** > **Service health**.
@@ -38,7 +38,7 @@ To check the current health of the Microsoft 365 Lighthouse tenant services:
 If you're experiencing an issue that isn't listed in either of the Service health dashboards, follow the instructions in this article to view self-help options or to create a service request.
 
 > [!NOTE]
-> Support is limited to English while Microsoft 365 Lighthouse is in Preview.
+> Support is limited to English while Lighthouse is in Preview.
 
 ## Before you begin
 
@@ -48,7 +48,7 @@ If you're experiencing an issue that isn't listed in either of the Service healt
 
 ## Access help and support
 
-1.  In Microsoft 365 Lighthouse, select the **?** icon at the top of the portal to open the **Help** pane, and then do one of the following:
+1.  In Lighthouse, select the **?** icon at the top of the portal to open the **Help** pane, and then do one of the following:
     
     -  If you're on the page of the portal where the issue occurred, select **Show diagnostics**.
 
@@ -64,7 +64,7 @@ If you're experiencing an issue that isn't listed in either of the Service healt
     > [!NOTE]
     > If the **How can we help?** pane doesn't open, you'll need to reach out to someone in your partner tenant who has Global Administrator permissions and ask them to help.
 
-3.  In the **How can we help?** pane, enter a description of your issue, and then press **Enter**. We recommend including the full product name *Microsoft 365 lighthouse* in your description to ensure the search results include relevant help articles.
+3.  In the **How can we help?** pane, enter a description of your issue, and then press **Enter**. We recommend including the full product name *Microsoft 365 Lighthouse* in your description to ensure the search results include relevant help articles.
 
 4.  Check out the list of recommended articles to see if any of them help resolve your issue.
 

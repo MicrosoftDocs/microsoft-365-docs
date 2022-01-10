@@ -8,7 +8,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -43,7 +43,7 @@ Follow the instructions in [Pass-through authentication](pass-through-auth-m365-
 
 Here is the resulting configuration.
 
-![The simulated enterprise with pass-through authentication test environment](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
+![The simulated enterprise with pass-through authentication test environment.](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
  
 ## Phase 2: Configure Azure AD seamless single sign-on
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 monikerRange: 'o365-worldwide'
 ms.collection: 
 - M365-subscription-management 
@@ -158,4 +158,4 @@ Share your thoughts about Productivity Score and your ideas about how to improve
 
 [Monitor Microsoft 365 activity by using reports](../../admin/activity-reports/activity-reports.md) (article)\
 [Enable Microsoft 365 usage analytics](../../admin/usage-analytics/enable-usage-analytics.md) (article)\
-[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)
+[Overview of the Microsoft 365 admin center](Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)
