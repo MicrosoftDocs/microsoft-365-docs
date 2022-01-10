@@ -33,7 +33,7 @@ Microsoft has been on a journey to extend its industry leading endpoint security
 
 Organizations face threats across a variety of platforms and devices. Our teams have committed to building security solutions not just *for* Microsoft, but also *from* Microsoft to enable our customers to protect and secure their heterogenous environments. We're listening to customer feedback and partnering closely with our customers to build solutions that meet their needs.
 
-With Microsoft Defender for Endpoint, customers benefit from a unified view of all threats and alerts in the Microsoft Defender Security Center, across Windows and non-Windows platforms, enabling them to get a full picture of what's happening in their environment, which empowers them to more quickly assess and respond to threats.
+With Microsoft Defender for Endpoint, customers benefit from a unified view of all threats and alerts in the Microsoft 365 Defender portal, across Windows and non-Windows platforms, enabling them to get a full picture of what's happening in their environment, which empowers them to more quickly assess and respond to threats.
 
 ## Microsoft Defender for Endpoint on macOS
 
