@@ -22,7 +22,7 @@ You can use SharePoint Syntex to help you automatically generate standard repeti
 With content assembly, you can use an existing document to create a *modern template*, and then use that template to automatically generate new content using SharePoint lists or user inputs as a data source.
 
 > [!NOTE]
-> You must be a licensed SharePoint Syntex user to access and use content assembly capabilities. You must also have permissions to manage SharePoint lists.
+> You must be a licensed SharePoint Syntex user to access and use content assembly capabilities. You also must have permissions to manage SharePoint lists.
 
 ## Create a modern template
 
