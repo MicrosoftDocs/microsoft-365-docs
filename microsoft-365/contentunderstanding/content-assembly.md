@@ -58,10 +58,10 @@ Follow these steps to create a modern template.
  
    ![Screenshot of the template viewer showing a field highlighted and the All placeholders panel.](../media/content-understanding/content-assembly-create-template-4a.png)
 
-Currently, there are two ways for how users can fill in a placeholder:
+    Currently, there are two ways for to users to fill in a placeholder:
 
-    - [Manual input: **Enter text or select a date**](#associate-a-placeholder-with-manual-input)
-    - [SharePoint list: **Select from choices in a column from a list or library**](#associate-a-placeholder-with-a-sharepoint-list)
+       - [Manual input - **Enter text or select a date**](#associate-a-placeholder-with-manual-input)
+       - [SharePoint list - **Select from choices in a column from a list or library**](#associate-a-placeholder-with-a-sharepoint-list)
 
 ### Associate a placeholder with manual input 
 
