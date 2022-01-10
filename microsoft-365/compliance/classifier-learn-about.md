@@ -18,7 +18,7 @@ ms.custom: admindeeplinkMAC
 search.appverid: 
 - MOE150
 - MET150
-description: "A Microsoft 365 trainable classifier is a tool you can use to recognize various types of content for labeling or policy application by giving it positive and negative samples to look at."
+description: "Trainable classifiers can recognize various types of content for labeling or policy application by giving it positive and negative samples to look at."
 ---
 
 # Learn about trainable classifiers
@@ -27,7 +27,7 @@ Classifying and labeling content so it can be protected and handled properly is 
 
 ## Manually
 
-This method requires human judgment and action. An admin may either use the pre-existing labels and sensitive information types or create their own and then publish them. Users and admins apply them to content as they encounter it. You can then protect the content and manage its disposition.
+Manual classification requires human judgment and action. Users and admins apply them to content as they encounter it. You can use either use the pre-existing labels and sensitive information types or use custom created ones.  You can then protect the content and manage its disposition.
 
 ## Automated pattern-matching
 
@@ -42,7 +42,7 @@ Sensitivity and retention labels can then be automatically applied to make the c
 
 ## Classifiers
 
-This classification method is particularly well suited to content that isn't easily identified by either the manual or automated pattern matching methods. This method of classification is more about using a classifier to identify an item based on what the item is, not by elements that are in the item (pattern matching). A classifier learns how to identify a type of content by looking at hundreds of examples of the content you're interested in classifying.
+This classification method is well suited to content that isn't easily identified by either the manual or automated pattern-matching methods. This method of classification is more about using a classifier to identify an item based on what the item is, not by elements that are in the item (pattern matching). A classifier learns how to identify a type of content by looking at hundreds of examples of the content you're interested in classifying.
 
 ### Where you can use classifiers
 
@@ -73,13 +73,13 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 
 - **Agreements**: Detects content related to legal agreements such as non-disclosure agreements, statements of work, loan and lease agreements, employment and non-compete agreements. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml.
 - **Discrimination**: Detects explicit discriminatory language and is particularly sensitive to discriminatory language against the African American/Black communities when compared to other communities.
-- **Finance**: Detects content in corporate finance, accounting, economy, banking and investment categories. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
+- **Finance**: Detects content in corporate finance, accounting, economy, banking, and investment categories. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
 - **Harassment**: Detects a specific category of offensive language text items related to offensive conduct targeting one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, disability.
 - **Healthcare**: Detects content in medical and healthcare administration aspects such as medical services, diagnoses, treatment, claims etc. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
 - **HR**: Detects content in human resources related categories of recruitment, interviewing, hiring, training, evaluating, warning and termination. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
 - **IP**: Detects content in Intellectual Property related categories such as trade secrets and similar confidential information. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla.
-- **IT**: Detects content in Information Technology and Cybersecurity categories such as network settings, information security, hardware and software. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla. 
-- **Legal Affairs**: Detects content in legal affairs related categories such as litigation, legal process, legal obligation, legal terminology, law and legislation. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml. 
+- **IT**: Detects content in Information Technology and Cybersecurity categories such as network settings, information security, hardware, and software. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla. 
+- **Legal Affairs**: Detects content in legal affairs-related categories such as litigation, legal process, legal obligation, legal terminology, law, and legislation. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml. 
 - **Procurement**: Detects content in categories of bidding, quoting, purchasing and paying for supply of goods and services. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla. 
 - **Profanity**: Detects a specific category of offensive language text items that contain expressions that embarrass most people.
 - **Tax**: Detects Tax relation content such as tax planning, tax forms, tax filing, tax regulations. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla.
