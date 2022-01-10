@@ -61,7 +61,7 @@ Follow these steps to create a modern template.
 Currently, there are two ways for users to fill in a placeholder:
 
 - [Enter text or select a date](#associate-a-placeholder-by-entering-text-or-selecting-a-date)
-- [Select from choices in a column of a list or library](#associate-a-placeholder-by-selecting-choices-in-a-column-of-a-list-or-library)
+- [Select from choices in a column of a list or library](#associate-a-placeholder-by-selecting-from-choices-in-a-column-of-a-list-or-library)
 
 ### Associate a placeholder by entering text or selecting a date 
 
