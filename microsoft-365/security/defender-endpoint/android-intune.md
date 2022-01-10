@@ -86,7 +86,7 @@ Learn how to deploy Defender for Endpoint on Android on Intune Company Portal - 
 
 2. Tap the Microsoft Defender for Endpoint app icon and follow the on-screen instructions to complete onboarding the app. The details include end-user acceptance of Android permissions required by Defender for Endpoint on Android.
 
-3. Upon successful onboarding, the device will start showing up on the Devices list in Microsoft Defender Security Center.
+3. Upon successful onboarding, the device will start showing up on the Devices list in the Microsoft 365 Defender portal.
 
     :::image type="content" alt-text="Image of device in Defender for Endpoint portal." source="images/9fe378a1dce0f143005c3aa53d8c4f51.png" lightbox="images/9fe378a1dce0f143005c3aa53d8c4f51.png":::
 

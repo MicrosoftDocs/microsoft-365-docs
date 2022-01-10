@@ -719,7 +719,7 @@ Alternatively, you can download [kext.mobileconfig](https://github.com/microsoft
 
 ## Step 9: Configure Network Extension
 
-As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft 365 Defender portal. The following policy allows the network extension to perform this functionality.
 
 These steps are applicable of macOS 10.15 (Catalina) or newer.
 
