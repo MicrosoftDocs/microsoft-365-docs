@@ -3,7 +3,10 @@ title: "Manage devices with Intune"
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- enroll devices into Intune
+- manage device endpoints
+- zero trust deployment stack
+- device management with zero trust
 manager: dougeby
 audience: ITPro
 ms.topic: article
