@@ -44,7 +44,7 @@ Follow these steps to create a modern template.
    ![Screenshot of the document in the template viewer.](../media/content-understanding/content-assembly-create-template-3.png)
 
    
-4. At the upper-left corner of the template studio, select the name for the template. The default name is the name of the document used to create the template
+4. At the upper-left corner of the template studio, select the name for the template. The default name is the name of the document used to create the template. If you want to change the name of the template, select the default name, and then select **Rename the template**.
  
    ![Screenshot of the template viewer showing the name of the document to select to rename.](../media/content-understanding/content-assembly-create-template-3a.png)
 
@@ -60,8 +60,8 @@ Follow these steps to create a modern template.
 
     Currently, there are two ways for to users to fill in a placeholder:
 
-       - [Manual input - **Enter text or select a date**](#associate-a-placeholder-with-manual-input)
-       - [SharePoint list - **Select from choices in a column from a list or library**](#associate-a-placeholder-with-a-sharepoint-list)
+       - [Enter text or select a date](#associate-a-placeholder-with-manual-input)
+       - [Select from choices in a column from a list or library](#associate-a-placeholder-with-a-sharepoint-list)
 
 ### Associate a placeholder with manual input 
 
