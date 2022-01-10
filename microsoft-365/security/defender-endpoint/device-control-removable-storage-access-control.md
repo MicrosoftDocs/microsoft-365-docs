@@ -175,7 +175,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
      
     :::image type="content" source="images/148608318-5cda043d-b996-4146-9642-14fccabcb017.png" alt-text="Device Control settings":::
     
-   - Once you deploy this setting, you will see ‘Enabled’ or ‘Disabled’ - Disabled means this machine does not have Removable Storage Access Control policy running.
+   - Once you deploy this setting, you will see ‘Enabled’ or ‘Disabled’ - Disabled means this machine does not have Removable Storage Access Control policy running.   
 
     :::image type="content" source="images/148609685-4c05f002-5cbe-4aab-9245-83e730c5449e.png" alt-text="Enabled or Disabled device control in PowerShell code":::
  
