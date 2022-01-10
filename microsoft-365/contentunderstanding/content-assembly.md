@@ -85,7 +85,7 @@ On the **All placeholders** panel:
 
    ![Screenshot of the template viewer showing the All placeholders panel for input from a SharePoint list.](../media/content-understanding/content-assembly-create-template-6.png)
 
-2. In the **How authors fill in this placeholder ** section, select **Select from choices in a coulmn of a list or library**, and then choose **Select**.
+2. In the **How authors fill in this placeholder** section, select **Select from choices in a column of a list or library**, and then choose **Select**.
 
 3. On the **Select a list for adding a source column** page, select the list you want to use, and then select **Next**.
 
