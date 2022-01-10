@@ -71,7 +71,7 @@ On the **All placeholders** panel:
 
    ![Screenshot of the template viewer showing the All placeholders panel for manual input.](../media/content-understanding/content-assembly-create-template-5.png)
 
-2. In the **How authors fill in this placeholder** section, select **Enter text or select date**.
+2. In the **How authors fill in this placeholder** section, select **Enter text or select a date**.
 
 3. In the **Type of info** field, select the data type you want to associate with the placeholder. Currently, there are six options available: **Single line of text**, **Multiple lines of text**, **Number**, **Date and time**, **Email**, and **Hyperlink**.
 
