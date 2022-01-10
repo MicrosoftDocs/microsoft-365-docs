@@ -178,7 +178,7 @@ The **onboarding package** contains the following files:
 
 Use the following steps to download the packages: 
 
-1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
+1. In Microsoft 365 Defender, go to **Settings > Device Management > Onboarding**.
 
 2. Select **Windows Server 2012 R2 and 2016**.
 
@@ -272,7 +272,7 @@ You can use the [installer script](server-migration.md#installer-script) to help
 
 10. To link the GPO to an Organization Unit (OU), right-click and select **Link an existing GPO**. In the dialogue box that is displayed, select the Group Policy Object that you wish to link. Click **OK**.
 
-For additional configuration setttings, see [Configure sample collection settings](configure-endpoints-gp.md#configure-sample-collection-settings) and [Other recommended configuration settings](configure-endpoints-gp.md#other-recommended-configuration-settings).
+For additional configuration settings, see [Configure sample collection settings](configure-endpoints-gp.md#configure-sample-collection-settings) and [Other recommended configuration settings](configure-endpoints-gp.md#other-recommended-configuration-settings).
 
 ### STEP 3: Complete the onboarding steps
 
@@ -308,7 +308,7 @@ The onboarding package for Windows Server 2019 and Windows Server 2022 through M
 
 ### Download package
 
-1. In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.
+1. In Microsoft 365 Defender, go to **Settings > Device Management > Onboarding**.
 
 2. Select **Windows Server 1803 and 2019**.
 
