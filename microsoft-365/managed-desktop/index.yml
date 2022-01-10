@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Microsoft Managed Desktop documentation # < 60 chars
-summary: Microsoft Managed Desktop is a unique ITaaS solution that combines endpoint management and security monitoring in a way gives users a secure and productive device experience that IT pros can trust. # < 160 chars
+summary: Microsoft Managed Desktop is a unique ITaaS solution that combines endpoint management and security monitoring in a way that gives users a secure and productive device experience that IT pros can trust. # < 160 chars
 
 metadata:
   title: Microsoft Managed Desktop documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -12,6 +12,7 @@ metadata:
   author: jaimeo #Required; your GitHub user alias, with correct capitalization.
   ms.author: jaimeo #Required; microsoft alias of author; optional team alias.
   ms.date: 12/04/2020 #Required; mm/dd/yyyy format.
+  ms.custom: intro-hub-or-landing
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 

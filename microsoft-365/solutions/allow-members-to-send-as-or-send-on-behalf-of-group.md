@@ -6,16 +6,18 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
 - m365solution-collabgovernance
+ms.custom: admindeeplinkEXCHANGE
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
+recommendations: false
 description: "Learn how to allow group members to send email as a Microsoft 365 group or send email on behalf of a Microsoft 365 group."
 ---
 
@@ -37,43 +39,43 @@ The **Send on Behalf** permission lets a user send email on behalf of a Microsof
     
 ## Allow members to send email as a group
 
-This section explains how to allow users to send email as a group in the [Exchange admin center](https://go.microsoft.com/fwlink/p/?linkid=2059104) (EAC) in Exchange Online.
+This section explains how to allow users to send email as a group in the<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> in Exchange Online.
   
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, go to **Recipients** \> **Groups**.
+1. In the Exchange admin center, go to **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>.
     
-2. Select **Edit**  ![Edit group icon](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) on the group that you want to allow users to send as. 
+2. Select **Edit**  ![Edit group icon.](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) on the group that you want to allow users to send as. 
     
 3. Select **group delegation**.
     
 4. In the **Send As** section, select the **+** sign to add the users that you want to send as the Group. 
     
-    ![Screenshot of send as dialog box](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![Screenshot of send as dialog box.](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. Type to search or pick a user from the list. Select **OK** and **Save**.
     
-    ![Type to search or pick a user from the list](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![Type to search or pick a user from the list.](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
   
 ## Allow members to send email on behalf of a group
 
-This section explains how to allow users to send email on behalf of a group in the Exchange admin center (EAC) in Exchange Online.
+This section explains how to allow users to send email on behalf of a group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> in Exchange Online.
   
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, go to **Recipients** \> **Groups**.
+1. In the Exchange admin center, go to **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>.
     
-2. Select **Edit** ![Edit group icon](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) on the group that you want to allow users to send as. 
+2. Select **Edit** ![Edit group icon.](../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) on the group that you want to allow users to send as. 
     
 3. Select **group delegation**.
     
 4. In the Send on Behalf section, select the **+** sign to add the users that you want to send as the Group. 
     
-    ![Screenshot of send on behalf of dialog](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![Screenshot of send on behalf of dialog.](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. Type to search or pick a user from the list. Select **OK** and **Save**.
     
-    ![Type to search or pick a user from the list](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    ![Type to search or pick a user from the list.](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
 ## Related articles
 
-[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Collaboration governance planning recommendations](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Create your collaboration governance plan](collaboration-governance-first.md)
 

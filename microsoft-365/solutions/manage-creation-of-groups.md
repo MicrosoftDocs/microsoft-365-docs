@@ -8,7 +8,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -16,6 +16,7 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
+recommendations: false
 description: "Learn how to control which users can create Microsoft 365 Groups."
 ---
 
@@ -23,7 +24,7 @@ description: "Learn how to control which users can create Microsoft 365 Groups."
 
 By default, all users can create Microsoft 365 groups. This is the recommended approach because it allows users to start collaborating without requiring assistance from IT.
 
-If your business requires that you restrict who can create groups, you can restrict Microsoft 365 Group creation to the members of a particular Microsoft 365 group or security group.
+If your business requires that you restrict who can create groups, you can restrict Microsoft 365 Groups creation to the members of a particular Microsoft 365 group or security group.
 
 If you're concerned about users creating teams or groups that don't comply with your business standards, consider requiring users to complete a training course and then adding them to the group of allowed users.
 
@@ -38,21 +39,21 @@ When you limit who can create a group, it affects all services that rely on grou
 - Power BI (classic)
 - Project for the web / Roadmap
 
-The steps in this article won't prevent members of certain roles from creating Groups. Office 365 Global admins can create Groups via any means, such as the Microsoft 365 admin center, Planner, Teams, Exchange, and SharePoint Online. Other roles can create Groups via limited means, listed below.
+The steps in this article won't prevent members of certain roles from creating Groups. Office 365 Global admins can create Groups via the Microsoft 365 admin center, Planner, Exchange, and SharePoint Online. Other roles can create Groups via limited means, listed below.
 
-- Exchange Administrator: Exchange Admin center, Azure AD
-- Partner Tier 1 Support: Microsoft 365 Admin center, Exchange Admin center, Azure AD
-- Partner Tier 2 Support: Microsoft 365 Admin center, Exchange Admin center, Azure AD
+- Exchange Administrator: Exchange admin center, Azure AD
+- Partner Tier 1 Support: Microsoft 365 admin center, Exchange admin center, Azure AD
+- Partner Tier 2 Support: Microsoft 365 admin center, Exchange admin center, Azure AD
 - Directory Writers: Azure AD
-- SharePoint Administrator: SharePoint Admin center, Azure AD
-- Teams Service Administrator: Teams Admin center, Azure AD
-- User Administrator: Microsoft 365 Admin center, Azure AD
+- SharePoint Administrator: SharePoint admin center, Azure AD
+- Teams Service Administrator: Teams admin center, Azure AD
+- User Administrator: Microsoft 365 admin center, Azure AD
 
 If you're a member of one of these roles, you can create Microsoft 365 Groups for restricted users, and then assign the user as the owner of the group.
 
 ## Licensing requirements
 
-To manage who creates groups, the following people need Azure AD Premium licenses or Azure AD Basic EDU licenses assigned to them:
+To manage who creates groups, the following people need Azure AD Premium licenses assigned to them:
 
 - The admin who configures these group creation settings
 - The members of the group who are allowed to create groups
@@ -60,7 +61,7 @@ To manage who creates groups, the following people need Azure AD Premium license
 > [!NOTE]
 > See [Assign or remove licenses in the Azure Active Directory portal](/azure/active-directory/fundamentals/license-users-groups) for more details about how to assign Azure licenses.
 
-The following people don't need Azure AD Premium or Azure AD Basic EDU licenses assigned to them:
+The following people don't need Azure AD Premium licenses assigned to them:
 
 - People who are members of Microsoft 365 groups and who don't have the ability to create other groups.
 
@@ -98,7 +99,7 @@ Replace *\<GroupName\>* with the name of the group that you created. For example
 
 Save the file as GroupCreators.ps1.
 
-In the PowerShell window, navigate to the location where you saved the file (type "CD <FileLocation>").
+In the PowerShell window, navigate to the location where you saved the file (type "CD \<FileLocation\>").
 
 Run the script by typing:
 
@@ -127,8 +128,7 @@ $settingsCopy["EnableGroupCreation"] = $AllowGroupCreation
 if($GroupName)
 {
   $settingsCopy["GroupCreationAllowedGroupId"] = (Get-AzureADGroup -SearchString $GroupName).objectid
-}
- else {
+} else {
 $settingsCopy["GroupCreationAllowedGroupId"] = $GroupName
 }
 Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCopy
@@ -163,7 +163,7 @@ Try the same procedure again with a member of the group.
 
 ## Related topics
 
-[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Collaboration governance planning recommendations](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Create your collaboration governance plan](collaboration-governance-first.md)
 

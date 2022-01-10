@@ -2,14 +2,17 @@
 title: "Microsoft Compliance Configuration Analyzer for Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: chvukosw
-author: chvukosw
+ms.author: v-jgriffee
+author: jmgriffee
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.localizationpriority: medium
+ms.collection: 
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -24,7 +27,7 @@ description: "Understand how to use Microsoft Compliance Configuration Analyzer 
 
 The Microsoft Compliance Configuration Analyzer (MCCA) is a preview tool that can help you get started with [Microsoft Compliance Manager](compliance-manager.md). MCCA is a PowerShell-based utility that will fetch your organization’s current configurations and validate them against Microsoft 365 recommended best practices. These best practices are based on a set of controls that include key regulations and standards for data protection and data governance.
 
-MCCA can help you quickly see which improvement actions in Compliance Manger apply to your current Microsoft 365 environment. Each action identified by MCCA will give you recommendations for implementation, with direct links to Compliance Manager and the applicable solution to start taking corrective action.
+MCCA can help you quickly see which improvement actions in Compliance Manager apply to your current Microsoft 365 environment. Each action identified by MCCA will give you recommendations for implementation, with direct links to Compliance Manager and the applicable solution to start taking corrective action.
 
 An additional resource for understanding MCCA is by visiting the [README instructions on GitHub](https://github.com/OfficeDev/MCCA#overview). This page provides detailed information about prerequisites and gives full installation instructions. You don’t need a GitHub account to access this page.
 
@@ -34,22 +37,23 @@ An additional resource for understanding MCCA is by visiting the [README instruc
 
 You can install the MCCA tool using Windows PowerShell. Once you download and install the tool, you don’t need to repeat those steps in order to run reports. Each time you open MCCA, it will ask you for your login credentials, and it will generate a new, updated report.
 
-#### Step 1: Install Windows PowerShell
+### Step 1: Install Windows PowerShell
+
 To begin, you'll need the Exchange Online PowerShell module (v2.0.3 or higher) that's available in the PowerShell gallery. [Get installation instructions](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.3).
 
-#### Step 2: Install MCCA
+### Step 2: Install MCCA
 
 To install MCCA, start by using PowerShell in administrator mode. Follow the steps below:
 
 1. Select the Windows **Start** button.
-2. Type **PowerShell**, right-click on **Windows PowerShell**, then select **Run as administrator**.
+1. Type **PowerShell**, right-click on **Windows PowerShell**, then select **Run as administrator**.
 1. At the command prompt, type:
 
     ```powershell
     Install-Module -Name MCCAPreview
     ```
 
-#### Step 3: Run a report
+### Step 3: Run a report
 
 After you install MCCA, you can run MCCA and generate a report. To run a report:
 
@@ -60,7 +64,7 @@ After you install MCCA, you can run MCCA and generate a report. To run a report:
     Get-MCCAReport
     ```
 
-   If you're a GCC High customer, you'll need to provide an additional input parameter to run the report:
+    If you're a GCC High customer, you'll need to provide an additional input parameter to run the report:
 
     ```powershell
     Get-MCCAReport -ExchangeEnvironmentName O365USGovGCCHigh
@@ -121,7 +125,7 @@ Your report will also be customized based on your role.
 
 The table below shows which roles have access to which sections of the report. Other roles within your organization (not listed in the table below) may not be able to run the tool, or they may run the tool and have limited access to information in the final report.
 
-![MCCA - roles](../media/compliance-manager-mcca-roles.png "MCCA roles")
+![MCCA - roles.](../media/compliance-manager-mcca-roles.png "MCCA roles")
 
 Exceptions:
 1. Users won't be able to generate report for IP apart from “Use IRM for Exchange Online” section.
@@ -134,7 +138,7 @@ Exceptions:
 
 The **Solutions Summary** section of the report gives an overview of improvement actions that your organization can take in Compliance Manager to help improve your compliance posture.
 
-![MCCA - solutions summary](../media/compliance-manager-mcca-solutions.png "MCCA Solutions Summary screen")
+![MCCA - solutions summary.](../media/compliance-manager-mcca-solutions.png "MCCA Solutions Summary screen")
 
 MCCA evaluates your current configurations against the recommended improvement actions in Compliance Manager. Any improvement action identified by the MCCA tool as needing attention will be listed in this section.
 
@@ -162,4 +166,4 @@ Select the dropdown next to the **Recommendation** label to the right of the imp
 
 For more detailed information on installing, setting up, and using MCCA, see the [README instructions on GitHub](https://github.com/OfficeDev/MCCA#overview) (no GitHub account required).
 
-For more information on Windows PowerShell, start at [How to use the PowerShell documentation](/powershell/scripting/how-to-use-docs?view=powershell-7). See also [Starting Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7).
+For more information on Windows PowerShell, start at [How to use the PowerShell documentation](/powershell/scripting/how-to-use-docs). See also [Starting Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell).

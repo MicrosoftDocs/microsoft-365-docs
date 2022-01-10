@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
   - M365-subscription-management
   - Adm_O365
@@ -17,10 +17,11 @@ search.appverid:
   - MET150
   - MOE150
   - FRP150
-description: "The Microsoft 365 admin center - learn about the features that were added this month."
 ms.custom: 
 - MACDashWhatsNew
 - AdminSurgePortfolio
+- admindeeplinkMAC
+description: "The Microsoft 365 admin center - learn about the features that were added this month."
 ---
 
 # What's new in the Microsoft 365 admin center
@@ -32,7 +33,7 @@ ms.custom:
 
 ::: moniker-end
 
-We're continuously adding new features to [the Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
+We're continuously adding new features to [the Microsoft 365 admin center](Overview of the Microsoft 365 admin center](admin-overview/admin-center-overview.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
 
 And if you'd like to know what's new with other Microsoft cloud services:
 
@@ -43,7 +44,84 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [What's new in Microsoft 365 Defender](../security/mtp/whats-new.md)
 - [What's new in the SharePoint admin center](/sharepoint/what-s-new-in-admin-center)
 - [Office updates](/OfficeUpdates/)
-- [How to check Windows release health](https://docs.microsoft.com/windows/deployment/update/check-release-health)
+- [How to check Windows release health](/windows/deployment/update/check-release-health)
+
+## July 2021
+
+### Microsoft 365 admin center search
+
+You can now search for incident IDs in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2091030" target="_blank">Microsoft 365 admin center</a>. You may learn about current incidents through social media, industry publications or from other admins. You can now go to the admin center to look up more details about the incident and to understand the impact to your organization. Just search for the incident ID in the admin center.
+
+:::image type="content" source="../media/incident-id.png" alt-text="Screenshot: Searching for incident ID in the admin center":::
+
+### Support ticket insight for Premier organizations
+
+We've added 2 graphs called **Volume trend** and **Volume trend by product** to give you visual insights about your support volume.
+
+The liner graph under **Volume trend** tab highlights the trend if support cases are increasing or decreasing for your organization month over month. You can hover on the graph to check the number of support cases created in each month.
+
+:::image type="content" source="../media/SuppInsight-voltrnd.PNG" alt-text="Screenshot: Graph that highlights the trend if support cases are increasing or decreasing for your organization month over month":::
+
+The **Volume trend by product** graph shows the top 3 products of each month with the highest support cases. We've enabled filtering in the table and you can now filter the results by **Product**, **Severity**, and **Date**.
+
+:::image type="content" source="../media/SuppInsight-voltrndproduct.PNG" alt-text="Screenshot: Graph shows the top 3 products of each month with the highest support cases":::
+
+We've also added 2 new fields, **Severity** and **Closed Date** in the **View Service Request** table to give you more insights about your tickets.
+
+:::image type="content" source="../media/SuppInsight-date-sev.PNG" alt-text="Screenshot: Table that shows support ticket sorting by severity and date.":::
+
+To check out these updates in <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 admin center</a>, go to **Support** > **View Service requests** in left navigation pane.
+
+## June 2021
+
+### Microsoft 365 admin center search
+
+We've added a couple of new categories to Search functionality.
+
+- You can now search for Microsoft 365 admin roles in global search and quickly view and manage role assignments from any page. For example, search for **Intune administrator**.
+
+- You can now find simplified setup experiences through global search. This can help you and your team quickly get started with how to use new features. For example, search for **set password to never expire**.
+
+To learn more about search in the admin center, see [Search in the Microsoft 365 admin center](manage/search-in-the-mac.md).
+
+## May 2021
+
+### Admin mobile app
+
+### Keep track of support ticket updates using the Admin mobile app
+
+For all the service requests created in your tenant you can now keep track of the ticket status, view ticket details and provide / request additional information by adding notes & attachments.
+
+:::image type="content" source="../media/Keep-track-support-ticket-updates2.PNG" alt-text="Screenshot: Track support ticket updates":::
+
+### Stay on top of all the major updates to the app and your Microsoft 365 subscription
+
+- Stay on top of all the major updates to your Microsoft 365 subscription through Message Center push notifications (now enabled by default).
+
+- Keep track of the latest features available in the app using the **What's New** section. Go to **Settings** > **What’s new?**
+
+:::image type="content" source="../media/Stay-on-top-of-updates.PNG" alt-text="Screenshot: Track major updates and features":::
+
+## April 2021
+
+### Admin mobile app
+
+### Manage licenses and bills from the Admin mobile app
+
+- You can now view all available and assigned licenses for your subscriptions. You can also assign or un-assign licenses to users, and add or remove licenses.
+- You can now view detailed invoices in the app.
+- These updates are available on both [Android](https://go.microsoft.com/fwlink/p/?linkid=2159786) and [iOS](https://go.microsoft.com/fwlink/p/?linkid=2159787) devices.
+
+:::image type="content" source="../media/assign-license-mobile-app2.png" alt-text="Screenshot: Admin mobile app assign license page":::
+:::image type="content" source="../media/license-screen-mobile-app2.png" alt-text="Screenshot: Admin mobile app screen with users and their licenses":::
+:::image type="content" source="../media/invoice-summary-mobile-app.png" alt-text="Screenshot: Admin mobile app invoice summary page":::
+
+### Updated Message center feed in the Admin mobile app
+
+- You now have a more flexible reading experience of the Message center feed. You now have the ability to filter messages based on service or tags and mark messages as favorite. Bulk actions for marking messages as read, unread or archived has also been added.
+- These updates are available on both [Android](https://go.microsoft.com/fwlink/p/?linkid=2159786) and [iOS](https://go.microsoft.com/fwlink/p/?linkid=2159787) devices.
+
+:::image type="content" source="../media/mc-feed-mobile-app.png" alt-text="Screenshot: Admin mobile app Message center feed page":::
 
 ## Ignite 2021 (March)
 
@@ -57,11 +135,11 @@ We’ve revamped the Message center to help you discover relevant messages and a
 
 :::image type="content" source="../media/message-center.png" alt-text="Screenshot: Message center home page showing inbox and messages":::
 
-To learn more about the new features, check out [Manage messages in Message center](manage/manage-messages.md).
+To learn more about the new features, check out [Message center](manage/message-center.md).
 
 ### What's new features
 
-We've made improvements to how you view the "What's new" features for users in the Office apps. You can now see the rich content in the Whats' new pane that your users can see. You can also learn more about the feature before you decide to let your users know about the feature. For more info, check out [Manage which Office‎ features appear in What's New](manage/show-hide-new-features.md).
+We've made improvements to how you view the "What's new" features for users in the Office apps. You can now see the rich content in the What's new pane that your users can see. You can also learn more about the feature before you decide to let your users know about the feature. For more info, check out [Manage which Office features appear in What's New](manage/show-hide-new-features.md).
 
 :::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Screenshot: Office apps what's new page showing improvements to Power BI":::
 
@@ -86,18 +164,18 @@ We've developed a set of features for multi-tenant admins like you to get your j
 
 ### Monitor your most important accounts
 
-You can monitor and track failed or delayed email messages sent to your users who have a high business impact, like your CEO. You track priority accounts by adding users to your priority accounts list in the Microsoft 365 admin center. Add executives, leaders, managers, or other users who have access to sensitive or high priority information.
+You can monitor and track failed or delayed email messages sent to your users who have a high business impact, like your CEO. You track priority accounts by adding users to your priority accounts list in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Add executives, leaders, managers, or other users who have access to sensitive or high priority information.
 
 Priority accounts are only available to organizations that meet both of the following requirements:
 
 - Office 365 E3 or Microsoft 365 E3, or Office 365 E5 or Microsoft 365 E5.
 - At least 10,000 licenses and at least 50 monthly active Exchange Online users.
 
-![Setup page for the feature: Monitor your most important accounts](../media/MAC-WN-PriorityAccounts.png)
+![Setup page for the feature: Monitor your most important accounts.](../media/MAC-WN-PriorityAccounts.png)
 
 There are two ways to get started:
 
-- Go to **Users**, and then in the "more actions" menu select **Manage priority accounts** to add users to the list.
+- Go to **Users**, and then in the three dots (more actions) menu select **Manage priority accounts** to add users to the list.
 - Go to **Setup**, find the setup task **Monitor your most important accounts**, and then select **Get started**.
 
 For more info on priority accounts, check out [Monitoring priority accounts](./setup/priority-accounts.md).
@@ -110,7 +188,7 @@ We've started rolling out a new Search experience for the admin center, and we c
 - The Search box moved to the header area where it says "Microsoft 365 admin center" so you now search from any page, not just the Home page. We've even got a shortcut: **Alt+S**.
 - Search is smarter and will give you better results, even faster. Try typing "2fa" to get started.
 - Search results are organized by the type of item or action you can take.
-  - **Users**: Select the user's name and you can edit that user right there. If you select the "more actions" menu next to their name, you can reset their password. You can search by display name, last name, first name, username or primary email address, and email aliases. But to get an exact match, search by primary email address or username.
+  - **Users**: Select the user's name and you can edit that user right there. If you select the three dots (more actions) menu next to their name, you can reset their password. You can search by display name, last name, first name, username or primary email address, and email aliases. But to get an exact match, search by primary email address or username.
   - **Groups**: Edit the group from any page, add members, assign owners.
   - **Actions**: Similar to how you can search for a user and then reset their password, you can also search "reset password" from any page and then reset one or more passwords for users.
   - **Navigation**: Results under Navigation can quickly help you get to a page in the admin center quickly. For example, searching "roles" will take you to the Roles page for Azure AD roles.
@@ -152,7 +230,7 @@ We're continuously looking at and updating the content and tools to keep up with
 - Fix DKIM setup issues
 - Diagnose Intune user enrollment errors
 
-And we are rolling out the new and improved support experience you already see in the Microsoft 365 admin center to some of the other admin centers. Teams Admin Center and Security and Compliance Admin Centers already have this new experience. And soon, **Exchange admin center**, **SharePoint admin center**, and **Office.com** will be updated along with this new help experience for admins.
+And we are rolling out the new and improved support experience you already see in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 admin center</a> to some of the other admin centers. Teams admin center and Security and Compliance admin centers already have this new experience. And soon, **Exchange admin center**, **SharePoint admin center**, and **Office.com** will be updated along with this new help experience for admins.
 
 ### Manage changes with Microsoft Planner
 
@@ -192,7 +270,7 @@ There has been a lot of work done in the subscriptions management to make the pa
 
 Domain management can be complicated, and we've released a new feature to make that easier. Go to Settings > Domains and then select a domain to get more information about your domain and the domain's health.
 
-:::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="Domains details page for contoso.com":::
+:::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="Domains details page for contoso.com.":::
 
 ### Docs, training, and videos (July 2020)
 
@@ -202,11 +280,11 @@ Domain management can be complicated, and we've released a new feature to make t
 
 ### Keeping up with Office What's New management
 
-A few months ago, we added a setting that lets you manage the [What's New messages that show up in a user's Office apps](#office-whats-new-management). This month, we released a new Home page card that will help you act quickly and keep track of the **What's New** messages that you want shown to the users in your organization.
+A few months ago, we added a setting that lets you manage the What's New messages that show up in a user's Office apps. This month, we released a new Home page card that will help you act quickly and keep track of the **What's New** messages that you want shown to the users in your organization.
 
 ### Docs, training, and videos (June)
 
-- [Getting started with Teams](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
+- [Getting started with Teams](https://support.microsoft.com/office/6723dc43-dbc0-46e6-af49-8a2d1c5cb937)
 
 ## May 2020
 
@@ -214,7 +292,7 @@ A few months ago, we added a setting that lets you manage the [What's New messag
 
 On May 12, we announced the availability of a new update channel for Office:  Monthly Enterprise Channel. This update channel provides your users with new Office features once a month, on the second Tuesday of the month.
 
-If you allow your users to self-install Office from the portal, you can select Monthly Enterprise Channel for them. To do this, sign in to the Microsoft 365 admin center and go to **Show all** >**Settings** > **Org settings** > **Services** > **Office software download settings**. If you select **Once a month (Monthly Enterprise Channel)**, then any new self-installs of Office will be configured to use Monthly Enterprise Channel.
+If you allow your users to self-install Office from the portal, you can select Monthly Enterprise Channel for them. To do this, sign in to the Microsoft 365 admin center and go to **Show all** >**Settings** > **Org settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Services**</a> > **Office software download settings**. If you select **Once a month (Monthly Enterprise Channel)**, then any new self-installs of Office are configured to use Monthly Enterprise Channel.
 
 In conjunction with the release of Monthly Enterprise Channel, we’re also revising the names of the existing update channels. For example, Monthly Channel is being renamed to Current Channel. The new names take effect on June 9, 2020.
 
@@ -222,7 +300,7 @@ For more information, see [Changes to update channels for Microsoft 365 Apps](/D
 
 ### New admin roles
 
-We've added some new Azure Active Directory admin roles to the Microsoft 365 admin center.
+We've added some new Azure Active Directory admin roles to the <<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 - Hybrid identity admin role gives users permission to manage cloud provisioning and authentication services.
 - Network admin role lets users manage network locations and review network insights for Microsoft 365 Software as a Service apps.
@@ -236,7 +314,7 @@ We've heard from a lot of admins that they need to share information about group
 
 ### Microsoft 365 solution and architecture center
 
-Just this month, we released a new site on [https://docs.microsoft.com]() called the [Microsoft 365 solution and architecture center](../solutions/index.yml), which brings together the technical guidance you need to understand, plan, and implement integrated Microsoft 365 solutions for secure and compliant collaboration. In this center, you'll find:
+Just this month, we released a new site on docs.microsoft.com called the [Microsoft 365 solution and architecture center](../solutions/index.yml), which brings together the technical guidance you need to understand, plan, and implement integrated Microsoft 365 solutions for secure and compliant collaboration. In this center, you'll find:
 
 - Foundational solution guidance
 - Workload solutions and scenario guidance
@@ -255,9 +333,9 @@ Just this month, we released a new site on [https://docs.microsoft.com]() called
 
 [April 2020](#april-2020)
 
-Well, we did it! We've taken the second step towards a unified roles experience and you can now manage Intune roles in the Microsoft 365 admin center. You can also leverage features such as the ability to search for roles and view role permissions. This means you don’t need two separate tools to manage roles for Microsoft 365 and Intune. When you sign into the Microsoft 365 admin center, you’ll see that there are two pivots on the Roles page, one for Azure AD and one for Intune.
+Well, we did it! We've taken the second step towards a unified roles experience and you can now manage Intune roles in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. You can also leverage features such as the ability to search for roles and view role permissions. This means you don’t need two separate tools to manage roles for Microsoft 365 and Intune. When you sign into the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, you’ll see that there are two pivots on the Roles page, one for Azure AD and one for Intune.
 
-![Roles page with the Intune pivot selected](../media/MAC-WN-IntuneRoles.png)
+![Roles page with the Intune pivot selected.](../media/MAC-WN-IntuneRoles.png)
 
 ### Sync Message Center posts to Planner
 
@@ -267,11 +345,11 @@ Starting in May, admins who are in Targeted release will start seeing the "Plann
 
 ### "Need help?" launched in Teams admin center & Security and Compliance centers
 
-The Teams admin center, Security center, and Compliance center are now using the same "Need help?" feature that the Microsoft 365 admin center uses for finding help and contacting support. We've received a lot of feedback from admins that you wanted the same level of help and support and we're happy to bring that to you. Try it out and give us your feedback!
+The Teams admin center, Security center, and Compliance center are now using the same "Need help?" feature that the <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 admin center</a> uses for finding help and contacting support. We've received a lot of feedback from admins that you wanted the same level of help and support and we're happy to bring that to you. Try it out and give us your feedback!
 
 #### Need chat?
 
-Our support agents have been working from home while still taking customer cases and limitations on internet bandwidth while working from home can impact customer call quality. In order to continue supporting you, we have launched live chat support option for commercial customers in the Microsoft 365 admin center.
+Our support agents have been working from home while still taking customer cases and limitations on internet bandwidth while working from home can impact customer call quality. In order to continue supporting you, we have launched live chat support option for commercial customers in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 admin center</a>.
 
 While creating a service request, you'll now see chat as an option, in addition to phone and email. Select chat as a preferred channel of communication and create the request. Once you've created the  request, you can start the chat when you are ready to chat with Microsoft agents.
 
@@ -309,19 +387,19 @@ We've got two updates for Groups this month:
 
 #### For your users
 
-- [Schedule a meeting](https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
+- [Schedule a meeting](https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5)
 - [Join a Teams meeting](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [Create an org-wide team](https://support.microsoft.com/office/037bb27a-bcc9-48fe-8d72-44d9482420a3)
-- [Create a Team with guests](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)
-- [Join a Team as a guest](https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824)
-- [Create a group email address](https://support.microsoft.com/office/ded875f9-a9de-437f-b559-2ae4f235bb2b)
+- [Create an org-wide team](/microsoftteams/create-an-org-wide-team)
+- [Create a Team with guests](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f)
+- [Join a Team as a guest](/microsoftteams/guest-experience)
+- [Create a group email address](https://support.microsoft.com/office/3f73d218-52d6-4f88-a733-9ff37073ee4c)
 
 #### For admins and business owners
 
 - [Empower your small business with remote work](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [Running a remote small business](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Sign up for Microsoft Business Basic](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Setting up two-factor sign-in](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Running a remote small business](admin-overview/sign-up-for-office-365.md)
+- [Sign up for Microsoft Business Basic]()
+- [Setting up two-factor sign-in](admin-overview/sign-up-for-office-365.md)
 
 ## March 2020
 
@@ -335,11 +413,11 @@ We received a lot of feedback from admins about the how hard it is to assign lic
 
 With the uptick in Teams usage, some orgs will get a pinned dashboard card that makes turning Teams on more discoverable. The card also has links to training and docs to help your org transition to remote work. Just go to the **Home** page to see the new card.
 
-![Microsoft Teams home page card](../media/MAC-WN-TeamsCard.PNG)
+![Microsoft Teams home page card.](../media/MAC-WN-TeamsCard.PNG)
 
 ### Customize your organization's SharePoint mobile app theme
 
-Using the Microsoft 365 admin center, you can now customize your organization's theme in SharePoint mobile app for iOS and SharePoint mobile app for Android. This feature conveniently provides a mobile intranet app experience that can match your SharePoint Online for employees on the go. Theme customization includes your logo image, navigation bar color, text and icon colors, and accent colors, making for easy recognition.
+Using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, you can now customize your organization's theme in SharePoint mobile app for iOS and SharePoint mobile app for Android. This feature conveniently provides a mobile intranet app experience that can match your SharePoint Online for employees on the go. Theme customization includes your logo image, navigation bar color, text and icon colors, and accent colors, making for easy recognition.
 
 ![Diagram mapping the admin center settings to the mobile app.](../media/MAC-WN-CustThemeSP.png)
 
@@ -375,11 +453,11 @@ We received a lot of feedback from partners and admins about the challenges of m
 > [!TIP]
 > You don't have to do anything to make the organization switcher appear as long as you are the Partner of record for at least one organization.
 
-1. In the Microsoft 365 admin center, select the org name.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, select the org name.
 ![Screen capture: top of the Home page showing organization profile name with the switcher icon.](../media/MAC-Organization-switcher.png)
 
 2. In the organization switcher, select the org you want to manage.
-![Screen capture: My organizations tenant switcher with Consolidated Messenger tenant highlighted](../media/MAC-OrgSwitcherSelected.png)
+![Screen capture: My organizations tenant switcher with Consolidated Messenger tenant highlighted.](../media/MAC-OrgSwitcherSelected.png)
 
 That's literally it!!!
 
@@ -395,46 +473,3 @@ A couple of changes in the groups area this month:
 - **What's new in Microsoft 365 video series**: This month, we're focused on custom search capabilities for SharePoint Online, the Office "What's New" management feature that lets you show or hide specific features from end-users via the in-app help pane, the latest security and compliance updates in Yammer, and more. Here's the latest episode: [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
 - **Docs move**: We combined the Office 365 admin web articles with the Microsoft 365 content and you might've noticed the new URL. For example, this article used to be hosted at: **docs.microsoft.com/Office365/Admin/whats-new-in-preview**, but the URL is now: **docs.microsoft.com/microsoft-365/admin/whats-new-in-preview**. If you've bookmarked pages, you should update your links; however, content links will be redirected to the new content repo.
-
-## January 2020 - Happy New Year
-
-> [!NOTE]
-> Did you know that there's a [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096) video series on YouTube? It highlights the latest features that we've rolled out to users. Every month, we'll start linking to the latest episode in the [Videos, training, and docs](#videos-training-and-docs) section. <br> <br> Here's the latest episode: [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
-
-### Dark mode
-
-When we first rolled out dark mode, it was only available on the Home page. Dark mode is now out of preview and is in Targeted release across most pages in the admin center.
-
-1. First, you'll need to turn on Targeted Release: Go to **Settings** \> **Settings** \> **Organization profile** \> **Release preferences**.
-1. And then to turn on dark mode, go to the **Home** page, and then select the **Dark mode** button. (It's next to the **Search** field and this article's **What's new** link.)
-1. For any page that has dark mode available, the button is at the top of the page, next to **The new admin center** toggle.
-
-### Office What's New management
-
-Admins want control over how Microsoft communicates "What's New" to their users in the Office apps - and you now have that control. Go to **Settings** \> **Office What's New management Preview**. Select a feature to view its details, and then you can select the **Hide from users** button if you don't want your users to see a particular "what's new" message. For example, your organization might be waiting to let users know about a feature until everyone in your org is trained on it.
-
-![Screen capture of Office What's New preview with a feature's details pane open.](../media/whatsnew-officemgmt-preview.png)
-
-This feature was first released to preview in November, but there have been a few feature updates that you should know about: [Office What's New management preview updates now available](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-preview/ba-p/1020438)
-
-### Partners
-
-Howdy, Partners! (Couldn't help myself.) We've got an update for you this month, as well. There's a new feature that allows Partners to give CSP customers the option to accept their Microsoft Customer Agreement (MCA) in the **Billing accounts** section of the admin center. In this new experience:
-
-1. The customer receives an invitation email with a link to accept the partner relationship and the MCA.
-2. After the customer signs in, they can view and accept the MCA and partner permissions - right from the admin center.
-
-### Resource mailboxes
-
-The Resource mailboxes list has been updated to the new style. In the Microsoft 365 admin center, go to **Resources** \> **Rooms & equipment**.
-
-### Videos, training, and docs (January)
-
-Check out the small business admin training that we released in January:
-
-- [Create your business website](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9)
-- [Find answers and help](https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988)
-- [Get help or support](https://support.microsoft.com/office/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
-- [Delete a user](https://support.microsoft.com/office/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
-- [Choose a Microsoft subscription](https://support.microsoft.com/office/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [Overview of Microsoft 365 for business security](https://support.microsoft.com/office/3274b159-a825-46d7-9421-7d6e209389d1)

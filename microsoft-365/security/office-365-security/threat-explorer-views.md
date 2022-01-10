@@ -9,12 +9,12 @@ ms.date: 05/15/2020
 audience: ITPro
 ms.topic: article
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
-description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Security & Compliance Center.
+description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Microsoft 365 Defender portal.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -29,9 +29,9 @@ ms.prod: m365-security
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-![Threat Explorer](../../media/ThreatExplorerFirstOpened.png)
+![Threat Explorer.](../../media/explorer.png)
 
-[Threat Explorer](threat-explorer.md) (and the real-time detections report) is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats in the Security & Compliance Center. Explorer (and the real-time detections report) displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.
+[Threat Explorer](threat-explorer.md) (and the real-time detections report) is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats in the Microsoft 365 Defender portal. Explorer (and the real-time detections report) displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.
 
 - If you have [Microsoft Defender for Office 365](defender-for-office-365.md) Plan 2, then you have Explorer.
 - If you have Microsoft Defender for Office 365 Plan 1, then you have real-time detections.
@@ -54,7 +54,7 @@ When you first open Explorer (or the real-time detections report), the default v
 
 Use the **View** menu to change what information is displayed. Tooltips help you determine which view to use.
 
-![Threat Explorer View menu](../../media/ThreatExplorerViewMenu.png)
+![Threat Explorer View menu.](../../media/all-email.png)
 
 Once you have selected a view, you can apply filters and set up queries to conduct further analysis. The following sections provide a brief overview of the various views available in Explorer (or real-time detections).
 
@@ -62,53 +62,53 @@ Once you have selected a view, you can apply filters and set up queries to condu
 
 To view this report, in Explorer (or real-time detections), choose **View** \> **Email** \> **Malware**. This view shows information about email messages that were identified as containing malware.
 
-![View data about email identified as malware](../../media/ExplorerEmailMalwareMenu.png)
+![View data about email identified as malware.](../../media/detection-technology.png)
 
 Click **Sender** to open your list of viewing options. Use this list to view data by sender, recipients, sender domain, subject, detection technology, protection status, and more.
 
 For example, to see what actions were taken on detected email messages, choose **Protection status** in the list. Select an option, and then click the Refresh button to apply that filter to your report.
 
-![Threat Protection Status options for Threat Explorer](../../media/ThreatExplorerProtectionStatusOptions.png)
+![Threat Protection Status options for Threat Explorer.](../../media/ThreatExplorerProtectionStatusOptions.png)
 
 Below the chart, view more details about specific messages. When you select an item in the list, a fly-out pane opens, where you can learn more about the item you selected.
 
-![Threat Explorer with flyout opened](../../media/ThreatExplorerMalwareItemSelectedFlyout.png)
+![Threat Explorer with flyout opened.](../../media/ThreatExplorerMalwareItemSelectedFlyout.png)
 
 ## Email > Phish
 
 To view this report, in Explorer (or real-time detections), choose **View** \> **Email** \> **Phish**. This view shows email messages identified as phishing attempts.
 
-![View data about email identified as phishing attempts](../../media/ThreatExplorerEmailPhish.png)
+![View data about email identified as phishing attempts.](../../media/phish.png)
 
 Click **Sender** to open your list of viewing options. Use this list to view data by sender, recipients, sender domain, sender IP, URL domain, click verdict, and more.
 
 For example, to see what actions were taken when people clicked on URLs that were identified as phishing attempts, choose **Click verdict** in the list, select one or more options, and then click the Refresh button.
 
-![Click verdict options for the Phish report](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+![Click verdict options for the Phish report.](../../media/click-verdict.png)
 
 Below the chart, view more details about specific messages, URL clicks, URLs, and email origin.
 
-![URLs detected as phish in email messages](../../media/ThreatExplorerEmailPhishURLs.png)
+![URLs detected as phish in email messages.](../../media/ThreatExplorerEmailPhishURLs.png)
 
 When you select an item in the list, such as a URL that was detected, a fly-out pane opens, where you can learn more about the item you selected.
 
-![Details about a detected URL](../../media/ThreatExplorerEmailPhishURLDetails.png)
+![Details about a detected URL.](../../media/ThreatExplorerEmailPhishURLDetails.png)
 
 ## Email > Submissions
 
 To view this report, in Explorer (or real-time detections), choose **View** \> **Email** \> **Submissions**. This view shows email that users have reported as junk, not junk, or phishing email.
 
-![Email messages reported by users](../../media/ThreatExplorerEmailUserReportedViewOptions.png)
+![Email messages reported by users.](../../media/ThreatExplorerEmailUserReportedViewOptions.png)
 
 Click **Sender** to open your list of viewing options. Use this list to view information by sender, recipients, report type (the user's determination that the email was junk, not junk, or phish), and more.
 
 For example, to view information about email messages that were reported as phishing attempts, click **Sender** \> **Report type**, select **Phish**, and then click the Refresh button.
 
-![Phish selected for Report Type filter](../../media/ThreatExplorerEmailUserReportedPhishSelected.png)
+![Phish selected for Report Type filter.](../../media/ThreatExplorerEmailUserReportedPhishSelected.png)
 
 Below the chart, view more details about specific email messages, such as subject line, the sender's IP address, the user that reported the message as junk, not junk, or phish, and more.
 
-![Messages that were reported as phishing attempts](../../media/ThreatExplorerEmailPhishUserReportedPhishDetails.png)
+![Messages that were reported as phishing attempts.](../../media/ThreatExplorerEmailPhishUserReportedPhishDetails.png)
 
 Select an item in the list to view additional details.
 
@@ -121,7 +121,7 @@ To view this report, in Explorer, choose **View** \> **Email** \> **All mail**. 
 
 To apply a filter, choose **Sender**, select an item in the list, and then click the Refresh button. In our example, we used **Detection technology** as a filter (there are several options available). View information by sender, sender's domain, recipients, subject, attachment filename, malware family, protection status (actions taken by your threat protection features and policies in Office 365), detection technology (how the malware was detected), and more.
 
-![View data about detected email by detection technology](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png)
+![View data about detected email by detection technology.](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png)
 
 Below the chart, view more details about specific email messages, such as subject line, recipient, sender, status, and so on.
 
@@ -131,7 +131,7 @@ To view this report, in Explorer (or real-time detections), choose **View** \> *
 
 View information by malware family, detection technology (how the malware was detected), and workload (OneDrive, SharePoint, or Teams).
 
-![View data about detected malware](../../media/d11dc568-b091-4159-b261-df13d76b520b.png)
+![View data about detected malware.](../../media/malware-family.png)
 
 Below the chart, view more details about specific files, such as attachment filename, workload, file size, who last modified the file, and more.
 
@@ -139,19 +139,19 @@ Below the chart, view more details about specific files, such as attachment file
 
 With Explorer (and real-time detections), you can apply a filter in a click. Click an item in the legend, and that item becomes a filter for the report. For example, suppose we are looking at the Malware view in Explorer:
 
-![Go to Threat management \> Explorer](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![Go to Threat management \> Explorer.](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
 Clicking **ATP Detonation** in this chart results in a view like this:
 
-![Explorer filtered to display only Defender for Office 365 Detonation results](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
+![Explorer filtered to display only Defender for Office 365 Detonation results.](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
 In this view, we are now looking at data for files that were detonated by [Safe Attachments](safe-attachments.md). Below the chart, we can see details about specific email messages that had attachments that were detected by Safe Attachments.
 
-![Specific details about email messages with detected attachments](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
+![Specific details about email messages with detected attachments.](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
 
 Selecting one or more items activates the **Actions** menu, which offers several choices from which to choose for the selected item(s).
 
-![Selecting an item activates the Actions menu](../../media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png)
+![Selecting an item activates the Actions menu.](../../media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png)
 
 The ability to filter in a click and navigate to specific details can save you a lot of time in investigating threats.
 

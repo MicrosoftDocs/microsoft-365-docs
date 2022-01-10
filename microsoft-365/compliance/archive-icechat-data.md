@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: "Admins can set up a connector to import and archive data from the ICE Chat tool into Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
@@ -24,13 +24,13 @@ After ICE chat data is stored in user mailboxes, you can apply Microsoft 365 com
 
 The following overview explains the process of using a connector to archive ICE chat data in Microsoft 365.
 
-![ICE Chat archiving workflow](../media/ICEChatConnectorWorkflow.png)
+![ICE Chat archiving workflow.](../media/ICEChatConnectorWorkflow.png)
 
 1. Your organization works with ICE Chat to set up an ICE Chat SFTP site. You'll also work with ICE Chat to configure ICE Chat to copy chat messages to your ICE Chat SFTP site.
 
 2. Once every 24 hours, chat messages from ICE Chat are copied to your ICE Chat SFTP site.
 
-3. The ICE Chat connector that you create in the Microsoft 365 compliance center connects to the ICE Chat SFTP site every day and transfers the chat messages from the previous 24 hours to a secure Azure Storage location in the Microsoft Cloud. The connector also converts the content of a chat massage to an email message format.
+3. The ICE Chat connector that you create in the Microsoft 365 compliance center connects to the ICE Chat SFTP site every day and transfers the chat messages from the previous 24 hours to a secure Azure Storage location in the Microsoft cloud. The connector also converts the content of a chat massage to an email message format.
 
 4. The connector imports chat message items to the mailboxes of specific users. A new folder named **ICE Chat** is created in the user mailboxes and the chat message items are imported to that folder. The connector does by using the value of the *SenderEmail* and *RecipientEmail* properties. Every chat message contains these properties, which are populated with email address of the sender and every recipient/participant of the chat message.
 
@@ -70,11 +70,11 @@ The first step is to obtain a copy of the public keys for Pretty Good Privacy (P
 
 5. On the **Add credentials for content source** page, click **I want to use PGP and SSH public keys provided by Microsoft**.
 
-   ![Select the option to use public keys](../media/ICEChatPublicKeysOption.png)
+   ![Select the option to use public keys.](../media/ICEChatPublicKeysOption.png)
 
 6. Under step 1, click the **Download SSH key**, **Download PGP key**, and **Download IP address** links to save a copy of each file to your local computer.
 
-   ![Links to download public keys and IP address](../media/ICEChatPublicKeyDownloadLinks.png)
+   ![Links to download public keys and IP address.](../media/ICEChatPublicKeyDownloadLinks.png)
 
    These files contain the following items that are used to configure the ICE Chat SFTP site in Step 2:
 
@@ -145,11 +145,11 @@ To obtain the IP address:
 
 5. On the **Add credentials for content source** page, click **I want to use PGP and SSH private keys**.
 
-   ![Select the option to use private keys](../media/ICEChatPrivateKeysOption.png)
+   ![Select the option to use private keys.](../media/ICEChatPrivateKeysOption.png)
 
 6. Under step 1, click **Download IP address** to save a copy of the IP address file to your local computer.
 
-   ![Download the IP address](../media/ICEChatConnectorIPAddress.png)
+   ![Download the IP address.](../media/ICEChatConnectorIPAddress.png)
 
 7. Click **Cancel** to close the wizard. You come back to this wizard in Step 2 to create the connector.
 

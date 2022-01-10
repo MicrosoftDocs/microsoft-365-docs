@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -43,7 +43,7 @@ It should take 5 to 10 minutes to complete this project. This time estimate incl
 
 2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
 
-   ![Image of Microsoft Azure and navigation to application registration](../../media/atp-azure-new-app2.png)
+   ![Image of Microsoft Azure and navigation to application registration.](../../media/atp-azure-new-app2.png)
 
 3. In the registration form, choose a name for your application, then select **Register**. Selecting a redirect URI is optional. You won't need one to complete this example.
 
@@ -51,26 +51,26 @@ It should take 5 to 10 minutes to complete this project. This time estimate incl
 
    > [!TIP]
    > *Microsoft Threat Protection* is a former name for Microsoft 365 Defender, and will not appear in the original list. You need to start writing its name in the text box to see it appear.
-   ![Image of API permission selection](../../media/apis-in-my-org-tab.PNG)
+   ![Image of API permission selection.](../../media/apis-in-my-org-tab.PNG)
 
    - Choose **Application permissions** > **Incident.Read.All** and select **Add permissions**.
 
-   ![Image of API access and API selection](../../media/request-api-permissions.PNG)
+   ![Image of API access and API selection.](../../media/request-api-permissions.PNG)
 
 5. Select **Grant admin consent**. Every time you add a permission, you must select **Grant admin consent** for it to take effect.
 
-    ![Image of Grant permissions](../../media/grant-consent.PNG)
+    ![Image of Grant permissions.](../../media/grant-consent.PNG)
 
 6. Add a secret to the application. Select **Certificates & secrets**, add a description to the secret, then select **Add**.
 
     > [!TIP]
     > After you select **Add**, select **copy the generated secret value**. You won't be able to retrieve the secret value after you leave.
 
-    ![Image of create app key](../../media/webapp-create-key2.png)
+    ![Image of create app key.](../../media/webapp-create-key2.png)
 
 7. Record your application ID and your tenant ID somewhere safe. They're listed under **Overview** on your application page.
 
-   ![Image of created app id](../../media/app-and-tenant-ids.png)
+   ![Image of created app id.](../../media/app-and-tenant-ids.png)
 
 ### Get a token using the app and use the token to access the API
 
@@ -112,7 +112,7 @@ For more information on Azure Active Directory tokens, see the [Azure AD tutoria
 
     In the following image, you can see a decoded token acquired from an app, with ```Incidents.Read.All```, ```Incidents.ReadWrite.All```, and ```AdvancedHunting.Read.All``` permissions:
 
-    ![Image jwt.ms](../../media/api-jwt-ms.png)
+    ![Image jwt.ms.](../../media/api-jwt-ms.png)
 
 ### Get a list of recent incidents
 

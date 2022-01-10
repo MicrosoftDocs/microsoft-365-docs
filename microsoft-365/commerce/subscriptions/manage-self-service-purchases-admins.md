@@ -5,21 +5,22 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom: 
 - AdminSurgePortfolio
 - okr_smb
-- commerce 
+- commerce_ssp
 search.appverid:
 - MET150
 description: "Admins can learn how to manage self-service purchases made by users in their organization."
+ms.date: 03/26/2021
 ---
 
 # Manage self-service purchases (Admin)
@@ -36,16 +37,9 @@ You can also control whether users in your organization can make self-service pu
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.
-
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
 ::: moniker-end
 
 2. On the **Products** tab, select the filter icon, then select **Self-service**.
@@ -62,14 +56,9 @@ You can also control whether users in your organization can make self-service pu
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Licenses** page.
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Licenses** page.
+ 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenses</a> page.
 
 ::: moniker-end
 
@@ -99,12 +88,6 @@ You can assign existing licenses or purchase additional subscriptions through ex
 ::: moniker range="o365-worldwide"
 
 1. In the admin center go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Purchase services** page.
 
 ::: moniker-end
 
@@ -140,12 +123,6 @@ When you move users to a different subscription, the old subscription is automat
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.
@@ -171,12 +148,6 @@ When you choose to cancel a self-service purchase subscription, users with licen
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Your products** page.
@@ -194,6 +165,6 @@ When you choose to cancel a self-service purchase subscription, users with licen
 
 ## Need help? Contact us.
 
-For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.md).
+For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.yml).
 
-If you have questions or need help with self-service purchases, [contact support](../../admin/contact-support-for-business-products.md).
+If you have questions or need help with self-service purchases, [contact support](../../admin/get-help-support.md).

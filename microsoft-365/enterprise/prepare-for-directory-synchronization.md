@@ -1,13 +1,13 @@
 ---
 title: "Prepare for directory synchronization to Microsoft 365"
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom: 
@@ -43,6 +43,9 @@ For more information about the advantages of using directory synchronization, se
 However, directory synchronization requires planning and preparation to ensure that your Active Directory Domain Services (AD DS) synchronizes to the Azure AD tenant of your Microsoft 365 subscription with a minimum of errors.
 
 Follow these steps in order for the best results.
+
+> [!NOTE]
+> Non-ASCII characters do not sync for any attributes on the AD DS user account.
 
 ## 1. Directory cleanup tasks
 
@@ -117,7 +120,7 @@ The attributes that you need to prepare are listed here:
   - Maximum number of characters per value: 256
   - The attribute value must not contain a space.
   - The attribute value must be unique within the directory.
-  - Invalid characters: \< \> ( ) ; , [ ] " '
+  - Invalid characters: \< \> ( ) ; , [ ] "
 
     Note that the invalid characters apply to the characters following the type delimiter and ":", such that SMTP:User@contso.com is allowed, but SMTP:user:M@contoso.com is not.
 
@@ -175,7 +178,7 @@ It's best to align these attributes to reduce confusion. To meet the requirement
 
 You may need to add an alternative UPN suffix to associate the user's corporate credentials with the Microsoft 365 environment. A UPN suffix is the part of a UPN to the right of the @ character. UPNs that are used for single sign-on can contain letters, numbers, periods, dashes, and underscores, but no other types of characters.
 
-For more information on how to add an alternative UPN suffix to Active Directory, see [Prepare for directory synchronization]( https://go.microsoft.com/fwlink/p/?LinkId=525430).
+For more information on how to add an alternative UPN suffix to Active Directory, see [Prepare for directory synchronization](https://go.microsoft.com/fwlink/p/?LinkId=525430).
 
 ## 5. Match the AD DS UPN with the Microsoft 365 UPN
 

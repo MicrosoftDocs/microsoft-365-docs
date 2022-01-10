@@ -5,13 +5,14 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 ms.date: 
+manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150

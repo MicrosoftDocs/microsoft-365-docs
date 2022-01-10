@@ -7,7 +7,7 @@ ms.date: 6/29/2018
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -98,8 +98,6 @@ These topics contain detailed Office 365 network reference information.
 - [IPv6 support in Office 365 services](ipv6-support.md)
     
 - [Office 365 Network Connectivity Principles](./microsoft-365-network-connectivity-principles.md)
-    
-- [Office 365 video networking Frequently Asked Questions (FAQ)](office-365-video-networking-faq.md)
     
 - [Plan for network devices that connect to Office 365 services](plan-for-network-devices.md)
     

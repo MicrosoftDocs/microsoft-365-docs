@@ -8,8 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.date: 4/30/2019
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -22,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 # Compare versions of OME
 
 > [!IMPORTANT]
-> On February 28, 2021, Microsoft will deprecate support for AD RMS in Exchange Online. If you've deployed a hybrid environment where your Exchange mailboxes are online and you're using IRM with Active Directory RMS on-premises, you'll need to migrate to Azure. Organizations that have deployed into the GCC Moderate environment are also affected. See "Overview of AD RMS deprecation in Exchange Online" in this article for information.
+> On February 28, 2021, Microsoft deprecated support for AD RMS in Exchange Online. If you've deployed a hybrid environment where your Exchange mailboxes are online and you're using IRM with Active Directory RMS on-premises, you'll need to migrate to Azure. Organizations that have deployed into the GCC Moderate environment are also affected. See "Overview of AD RMS deprecation in Exchange Online" in this article for information.
 
 The rest of this article compares legacy Office 365 Message Encryption (OME) to the new OME capabilities and Office 365 Advanced Message Encryption. The new capabilities are a merger and newer version of both OME and Information Rights Management (IRM). Unique characteristics of deploying into GCC High are also outlined. The two can coexist in your organization. For information on how the new capabilities work, see [Office 365 Message Encryption (OME)](ome.md).
 
@@ -32,7 +31,7 @@ This article is part of a larger series of articles about Office 365 Message Enc
 
 Exchange Online includes Information Rights Management (IRM) functionality that provides online and offline protection of email messages and attachments. By default, Exchange Online uses Azure Information Protection. However, your organization may have configured Exchange Online IRM to use on-premises Active Directory Rights Management Service (AD RMS). AD RMS support in Exchange Online is retiring. Instead, Azure Information Protection will replace AD RMS entirely.
 
-To assess whether this deprecation impacts your organization, see [How to migrate AD RMS to Azure RMS in Exchange Online](https://support.microsoft.com/help/5001237). This article provides recommendations on migration options.
+To assess whether this deprecation impacts your organization, see [How to migrate AD RMS to Azure RMS in Exchange Online](/exchange/troubleshoot/administration/migrate-ad-rms-to-azure). This article provides recommendations on migration options.
 
 ## Side-by-side comparison of OME features and capabilities
 

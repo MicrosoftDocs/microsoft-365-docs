@@ -5,21 +5,22 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
-search.appverid:
-- MET150
-description: "Learn how to update your billing addresses for Microsoft 365 for business. You can also update the email address used to receive billing notifications."
-
+- commerce_billing
+- AdminTemplateSet
+search.appverid: MET150
+description: "Learn how to update your billing addresses or the email address used to receive billing notifications for Microsoft 365 for business."
+ms.date: 04/07/2021
 ---
 
 # Change your billing addresses
@@ -40,13 +41,7 @@ To learn more about your bill or invoice, see [View your bill or invoice](view-y
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Billing accounts** page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">**Billing accounts**</a> page.
 
 ::: moniker-end
 
@@ -68,12 +63,6 @@ To learn more about your bill or invoice, see [View your bill or invoice](view-y
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Billing** > **Payment methods** page.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Billing** > **Payment methods** page.
@@ -91,12 +80,6 @@ To learn more about your bill or invoice, see [View your bill or invoice](view-y
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
 
 ::: moniker-end
 
@@ -138,12 +121,6 @@ You can also change the alternate email address of other global and billing admi
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing notifications</a> page.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Billing notifications</a> page.
@@ -156,7 +133,7 @@ You can also change the alternate email address of other global and billing admi
 
 ## Related content
 
-[View your bill or invoice](view-your-bill-or-invoice.md)\
-[Understand your bill or invoice](understand-your-invoice2.md)\
-[Pay for your subscription](pay-for-your-subscription.md)\
-[Subscriptions and billing - Admin Help](../index.yml)
+[View your bill or invoice](view-your-bill-or-invoice.md) (article)\
+[Understand your bill or invoice](understand-your-invoice2.md) (article)\
+[Pay for your subscription](pay-for-your-subscription.md) (article)\
+[Subscriptions and billing - Admin Help](../index.yml) (link page)

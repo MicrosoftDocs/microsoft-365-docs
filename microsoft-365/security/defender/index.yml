@@ -11,10 +11,11 @@ metadata:
   ms.subservice: subservice
   ms.topic: landing-page # Required
   ms.collection: m365-security-compliance
+  ms.custom: intro-hub-or-landing
   author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
   ms.author: macapara #Required; microsoft alias of author; optional team alias.
   ms.date: 09/13/2019 #Required; mm/dd/yyyy format.
-  localization_priority: Priority
+  ms.localizationpriority: high
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -27,21 +28,87 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is Microsoft 365 Defender?
-            url:  ../defender/microsoft-365-defender.md
-          - text: Microsoft 365 security center
-            url: ../defender/overview-security-center.md
+            url: microsoft-365-defender.md
+      - linkListType: whats-new
+        links:
+          - text: What's new in Microsoft 365 Defender
+            url: ../defender/whats-new.md
+      - linkListType: video
+        links:
+          - text: Overview video
+            url: https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww
+          
 
-# Card (optional)
-  - title: Microsoft 365 security center
+# Card
+  - title: Evaluate capabilities
+    linkLists:
+      - linkListType: get-started
+        links:
+        - text: Create a trial lab
+          url: eval-overview.md 
+        - text: Run pilot project in production
+          url: eval-overview.md
+ 
+# Card
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+        - text: Get started with Microsoft 365 Defender
+          url: get-started.md 
+      - linkListType: deploy
+        links:
+        - text: Turn on Microsoft 365 Defender
+          url: m365d-enable.md
+        - text: Deploy supported services
+          url: deploy-supported-services.md
+# Card
+  - title: Microsoft Defender for Identity
     linkLists:
       - linkListType: overview
         links:
-          - text: Overview of the Microsoft 365 security center
-            url: overview-security-center.md
-          - text: Microsoft Defender for Endpoint in the Microsoft 365 security center
+          - text: What is Microsoft Defender for Identity?
+            url: /defender-for-identity/what-is
+          - text: Microsoft Defender for Identity architecture
+            url: /defender-for-identity/architecture
+
+   # Card
+  - title: Microsoft Defender for Office 365
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft Defender for Office 365?
+            url: ../office-365-security/defender-for-office-365.md
+          - text: Microsoft Defender for Office 365 service description
+            url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
+          - text: Microsoft Defender for Office 365 in Microsoft 365 Defender
+            url: microsoft-365-security-center-mdo.md
+          - text: Redirecting Microsoft Defender for Office 365 in Microsoft 365 Defender
+            url: microsoft-365-security-mdo-redirection.md
+            
+  # Card
+  - title: Microsoft Defender for Endpoint
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft Defender for Endpoint?
+            url: ../defender-endpoint/microsoft-defender-endpoint.md
+          - text: Defender for Endpoint in Microsoft 365 Defender
             url: microsoft-365-security-center-mde.md
-          - text: Microsoft Defender for Office 365 in the Microsoft 365 security center
-            url: ../defender/microsoft-365-security-center-mdo.md
+          - text: Redirecting Defender for Endpoint in Microsoft 365 Defender
+            url: ../defender/microsoft-365-security-mde-redirection.md
+
+            
+   # Card
+  - title: Microsoft Defender for Cloud Apps
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft Defender for Cloud Apps?
+            url: /cloud-app-security/what-is-cloud-app-security
+          - text: Get started with Microsoft Defender for Cloud Apps
+            url: /cloud-app-security/getting-started-with-cloud-app-security
+
 # Card
   - title: Manage incidents and alerts
     linkLists:
@@ -49,7 +116,17 @@ landingContent:
         links:
           - text: Investigate incidents
             url: investigate-incidents.md
+          - text: Track and respond to emerging threats
+            url: threat-analytics.md
           - text: Automated investigation and response
             url: m365d-autoir.md
           - text: Hunt for threats
             url: advanced-hunting-overview.md
+
+# Card
+  - title: Reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Microsoft 365 Defender APIs
+            url: api-overview.md

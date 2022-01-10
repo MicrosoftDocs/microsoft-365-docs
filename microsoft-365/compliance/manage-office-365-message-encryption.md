@@ -8,7 +8,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.date: 5/8/2019
 search.appverid:
 - MET150
@@ -62,7 +62,7 @@ If the recipient of a message encrypted by OME doesn't use Outlook, regardless o
 2. Run the Set-OMEConfiguration cmdlet with the OTPEnabled parameter:
 
    ```powershell
-   Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -OTPEnabled <$true|$false>
+   Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter"> -OTPEnabled <$true|$false>
    ```
 
    For example, to disable one-time pass codes:

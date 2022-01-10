@@ -5,23 +5,22 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- commerce
-- Adm_NonTOC
 ms.custom:
 - TopSMBIssues
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
-ROBOTS: NOINDEX
+- commerce_licensing
+search.appverid: MET150
 description: "Learn how to add licenses to or extend your subscription with a product key."
+ROBOTS: NOINDEX
+ms.date: 04/07/2021
 ---
 
 # Add licenses to or extend a subscription paid for using a product key
@@ -36,12 +35,6 @@ Prepaid licenses are issued to you as a 25-character alphanumeric code. After yo
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
@@ -62,12 +55,6 @@ Prepaid licenses are issued to you as a 25-character alphanumeric code. After yo
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"

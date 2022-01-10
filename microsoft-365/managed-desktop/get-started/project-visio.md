@@ -5,7 +5,9 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Microsoft Project, Microsoft
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
-ms.localizationpriority: normal
+manager: laurawi
+ms.topic: article
+ms.localizationpriority: medium
 ms.date: 03/07/2019
 ms.collection: M365-modern-desktop
 ---

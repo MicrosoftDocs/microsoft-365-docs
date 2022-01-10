@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -32,9 +32,14 @@ ms.technology: m365d
 
 Your feedback helps us get better in protecting your environment from advanced attacks. Share your experience, impressions, and  requests by providing feedback.
 
+Check out this video to see how easy it is to provide feedback.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LWeP]
+
+
 1. From any part of the portal, select **Give feedback**. 
 
-    ![Image of feedback button](../../media/feedback.png)
+    ![Image of feedback button.](../../media/feedback.png)
 
 2. Rate your experience and provide details on what you liked or where improvement can be made. You can also choose to be contacted about the feedback. 
 

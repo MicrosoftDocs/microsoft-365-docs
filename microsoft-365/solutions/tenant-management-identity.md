@@ -6,8 +6,8 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
-ms.collection: 
+ms.localizationpriority: medium
+ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
@@ -34,14 +34,14 @@ Here are the two types of identity models and their best fit and benefits.
 ||||||
 
 Here are the basic components of cloud-only identity.
- 
-![Basic components of cloud-only identity](../media/about-microsoft-365-identity/cloud-only-identity.png)
+
+![Basic components of cloud-only identity.](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
 In this illustration, on-premises and remote users sign in with accounts in the Azure AD tenant of their Microsoft 365 tenant.
 
 Here are the basic components of hybrid identity.
 
-![Basic components of hybrid identity](../media/about-microsoft-365-identity/hybrid-identity.png)
+![Basic components of hybrid identity.](../media/about-microsoft-365-identity/hybrid-identity.png)
 
 In this illustration, on-premises and remote users sign in to their Microsoft 365 tenant with accounts in the Azure AD tenant that have been copied from their on-premises AD DS.
 
@@ -49,9 +49,8 @@ In this illustration, on-premises and remote users sign in to their Microsoft 36
 
 Depending on your business needs and technical requirements, the hybrid identity model and directory synchronization is the most common choice for enterprise customers who are adopting Microsoft 365. Directory synchronization allows you to manage identities in your AD DS and all updates to user accounts, groups, and contacts are synchronized to the Azure AD tenant of your Microsoft 365 tenant.
 
->[!Note]
->When AD DS user accounts are synchronized for the first time, they are not automatically assigned a Microsoft 365 license and cannot access Microsoft 365 services, such as email. You must first assign them a usage location. Then, assign a license to these user accounts, either individually or dynamically through group membership.
->
+> [!NOTE]
+> When AD DS user accounts are synchronized for the first time, they are not automatically assigned a Microsoft 365 license and cannot access Microsoft 365 services, such as email. You must first assign them a usage location. Then, assign a license to these user accounts, either individually or dynamically through group membership.
 
 Here are the two types of authentication when using the hybrid identity model.
 
@@ -87,13 +86,13 @@ For identity for your Microsoft 365 tenant, you have determined:
 
 Here is an example a tenant with the new hybrid identity elements highlighted.
 
-![Example of hybrid identity for a tenant](../media/tenant-management-overview/tenant-management-tenant-build-step3.png)
+![Example of hybrid identity for a tenant.](../media/tenant-management-overview/tenant-management-tenant-build-step3.png)
 
 In this illustration, the tenant has:
 
 - An AD DS forest that is being synchronized with the Azure AD tenant using a DirSync server and Azure AD Connect.
 - A copy of the AD DS user accounts and other objects from the AD DS forest.
-- A set of Conditional Access policies to enforce secure user sign-ins and access based on the user account. 
+- A set of Conditional Access policies to enforce secure user sign-ins and access based on the user account.
 
 ## Ongoing maintenance for identity
 
@@ -104,6 +103,6 @@ On an ongoing basis, you might need to:
 
 ## Next step
 
-[![Step 4. Migrate your on-premises Office servers and data](../media/tenant-management-overview/tenant-management-step-grid-migration.png)](tenant-management-migration.md)
+[![Step 4. Migrate your on-premises Office servers and data.](../media/tenant-management-overview/tenant-management-step-grid-migration.png)](tenant-management-migration.md)
 
 Continue with [migration](tenant-management-migration.md) to migrate your on-premises Office servers and their data to Microsoft 365.

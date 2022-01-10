@@ -1,5 +1,5 @@
 ---
-title: "Create a communications site"
+title: "Create a SharePoint communications site"
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -8,7 +8,7 @@ manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
@@ -22,10 +22,10 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Create a communications site for your campaign or business."
+description: "Learn why and how to create a SharePoint communications site for your campaign or business with Microsoft 365."
 ---
 
-# Create a communications site
+# Create a communications site in SharePoint
 
 A great way to communicate priorities, share strategy documents, and highlight upcoming events is to use a communications site in SharePoint. Communications sites are for sharing things broadly across your whole business or campaign; it's your internal strategy site.
 
@@ -39,13 +39,13 @@ Include the following elements in your Communications site:
 4. Add events to an **Events web part** so everyone can see what's coming up.
 5. Add photos that people can use or share to an **Image gallery web part**.
 
-![Diagram of a SharePoint Communications page with space for common elements that a campaign would need](../media/m365-democracy-comms-site.png)
+![Diagram of a SharePoint Communications page with space for common elements that a campaign would need.](../media/m365-democracy-comms-site.png)
 
 ## Infographic: Create a Communications Site infographic
 
 The following links for PowerPoint and PDF can be downloaded and printed in tabloid format (also known as ledger, 11 x 17, or A3).
 
-[![Image for communications site infographic](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
+[![Image for communications site infographic.](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
 
 [PDF](downloads/M365CampaignsCreateCommunicationSite.pdf) | [PowerPoint](downloads/M365CampaignsCreateCommunicationSite.pptx)
 

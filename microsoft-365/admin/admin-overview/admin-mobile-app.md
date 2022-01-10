@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -18,6 +18,8 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - okr_smb
+- admindeeplinkMAC
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -45,16 +47,23 @@ If you're an admin and you're responsible for more than one Microsoft 365 organi
   
 > [!IMPORTANT]
 > If you're having issues using the Admin mobile app on iOS or Android, email us at [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to let us know.
+
+## Watch: Install the admin mobile app
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
+
+1. To get the Microsoft 365 Admin mobile app, search for  **Microsoft 365 Admin**  in the app store for your device and install it.
+2. Sign in with your global admin email address, and view the dashboard to see service health, monitor user licenses, and see messages and service requests.
+
+## Before you begin
+
+You must be an administrator in a Microsoft 365 organization to use the admin mobile app.
   
 ## Download the admin mobile app
 
 [Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) 
 
 [Google Play Store](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp).
-  
-## Watch: Install the admin mobile app
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
 ## Frequently asked questions
 
@@ -110,7 +119,11 @@ From the left navigation menu, go to **Settings** > **Notifications**. You can m
 ### What do I do if my question isn't answered?
 
 Email [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to report an issue with the app. Or you can give feedback at the bottom of this article.
-  
-## See also
 
-[Microsoft 365 for business training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+## Next steps
+
+Once you've downloaded the admin mobile, you can add users to get you started.
+  
+## Related content
+
+[Microsoft 365 for business training videos](../../business-video/index.yml)

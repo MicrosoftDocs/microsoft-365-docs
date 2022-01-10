@@ -7,7 +7,7 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
@@ -40,7 +40,7 @@ If you opt in to using the location service, we use the minimum settings necessa
 
 Microsoft Managed Desktop enables the **Location privacy** setting in **Windows settings** to **Allow access to location on this device**. The user interface looks like this:
 
- :::image type="content" source="../../media/MMD-location-services-UI.png" alt-text="Location settings in Windows settings":::
+ :::image type="content" source="../../media/MMD-location-services-UI.png" alt-text="Location settings in Windows settings.":::
 
 > [!NOTE]
 > If you opt in to using the location service, this applies only to the Windows operating system itself. Apps are not allowed to use location services. Each user can choose whether to allow apps to access their location.
