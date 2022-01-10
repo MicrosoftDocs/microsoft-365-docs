@@ -327,7 +327,15 @@ You can modify your policy directly from this interface:
 
     When you're ready to run the policy without simulation, select the **Turn on policy** option.
 
-Your auto-policies run continuously until they are deleted. For example, new and modified documents will be included with the current policy settings.
+Auto-policies run continuously until they are deleted. For example, new and modified files will be included with the current policy settings.
+
+### Monitoring your auto-labeling policy
+
+After your auto-labeling policy is turned on, you can view the labeling progress for files in your chosen SharePoint and OneDrive locations. Emails are not included in the labeling progress because they are automatically labeled as they are sent.
+
+The labeling progress includes the files to be labeled by the policy, the files labeled in the last 7 days, and the total files labeled. Because of the maximum of labeling 25,000 files a day, this information provides you with visibility into the current labeling progress for your policy and how many files are still to be labeled.
+
+When you first turn on your policy, you will initially see a value of 0 for files to be labeled until the latest data is retrieved. This progress information updates every 48 hours, so you can expect to see the most current data about every other day. When you select an auto-labeling policy, you can see more details about the policy in a flyout pane, which includes the labeling progress by the top 10 sites. The information on this flyout pane might be more current than the aggregated policy information displayed on the **Auto-labeling** main page.
 
 You can also see the results of your auto-labeling policy by using [content explorer](data-classification-content-explorer.md) when you have the appropriate [permissions](data-classification-content-explorer.md#permissions):
 
