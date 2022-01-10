@@ -9,7 +9,7 @@ ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: None
+ms.localizationpriority: null
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 description: "Learn how to use the AllowSelfServicePurchase PowerShell cmdlet to turn self-service purchase on or off."
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 03/18/2021
+ms.date: 07/16/2021
 ---
 
 # Use AllowSelfServicePurchase for the MSCommerce PowerShell module
@@ -95,12 +95,18 @@ The following table lists the available products and their **ProductId**.
 | Power Automate RPA | CFQ7TTC0KXG6  |
 | Power BI Premium (standalone) | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
-| Project Plan 1 | CFQ7TTC0KXND |
-| Project Plan 3 | CFQ7TTC0KXNC |
-| Visio Plan 1 | CFQ7TTC0KXN9 |
-| Visio Plan 2 | CFQ7TTC0KXN8 |
+| Project Plan 1* | CFQ7TTC0HDB1 |
+| Project Plan 3* | CFQ7TTC0HDB0 |
+| Visio Plan 1* | CFQ7TTC0HD33 |
+| Visio Plan 2* | CFQ7TTC0HD32 |
+| Windows 365 Enterprise | CFQ7TTC0HHS9 |
+| Windows 365 Business | CFQ7TTC0J203 |
+| Windows 365 Business with Windows Hybrid Benefit | CFQ7TTC0HX99 |
 
 ## View or set the status for AllowSelfServicePurchase
+
+>[!NOTE] 
+> These IDs have changed. If you previously blocked products using the old IDs, they are automatically blocked using the new IDs. No additional work is required.
 
 After you view the list of products available for self-service purchase, you can view or modify the setting for a specific product.
 
@@ -133,6 +139,14 @@ $product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | wh
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Enabled $false
 ```
 
+If there are multiple values for the product, you can run the command individually for each value as shown in the following example:
+
+```powershell
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Enabled $false
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Enabled $false
+```
+
+
 ## Troubleshooting
 
 ### Problem
@@ -145,7 +159,13 @@ This may be due to an older version of Transport Layer Security (TLS). To connec
 
 ### Solution
 
-Upgrade to TLS 1.2: [https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](/mem/configmgr/core/plan-design/security/enable-tls-1-2)
+Upgrade to TLS 1.2. The following syntax updates the ServicePointManager Security Protocol to TLS1.2:
+
+```powershell
+ [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+```
+
+To learn more, see [How to enable TLS 1.2](/mem/configmgr/core/plan-design/security/enable-tls-1-2).
 
 <!--
 ## Uninstall the MSCommerce module

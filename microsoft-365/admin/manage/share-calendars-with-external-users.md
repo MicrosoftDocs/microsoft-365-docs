@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- AdminTemplateSet
 search.appverid:
 - BCS160
 - MET150
@@ -35,13 +36,19 @@ You can enable calendar sharing for all users in your organization in the Micros
   
 ## Enable calendar sharing using the Microsoft 365 admin center
 
-1. In the admin center, go to **Settings** \> **Org Settings**.
-
-2. On the **Services** tab, select **Calendar**.
+1. In the admin center, go to **Settings** \> **Org settings**, and on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Services** tab</a>, select **Calendar**.
   
 3. On the **Calendar** page, choose whether you want to let users share their calendars with people outside of your organization who have Microsoft 365 or Exchange. Choose whether you want to allow anonymous users (users without credentials) to access calendars via an email invitation.
 
 4. Choose what type of calendar information to make available to users. You can allow all information, or limit it to time only or time, subject, and location only.
+
+## External sharing sync interval
+
+Instant syncing for sharing outside your tenant isn't supported currently. While you can share in these configurations, syncing will happen periodically. There are two types of cross-tenant sharing:
+
+1. **Microsoft 365 to another Microsoft 365 user (if external sharing is enabled)**: A fully shared calendar is created, but the sync will happen approximately every three hours. Instant syncing will eventually be enabled for this setup.
+
+2. **Microsoft 365 to an Outlook.com user**: If external sharing is disabled, sharing to another Microsoft 365 user also falls into this group. An ICS URL is generated when sharing, which the recipient can use to add to any calendar service. With an ICS subscription, the recipient’s calendar service chooses when to sync the ICS subscription to receive new updates. If the recipient is an Outlook.com or a Microsoft 365 user, the sync will happen approximately every three hours.
 
 ## Invite people to access calendars
 
@@ -50,5 +57,6 @@ Once sharing is enabled, calendar owners can extend invitations to specific user
 ## Related content
 
 [Turn external sharing on or off for a site](/sharepoint/change-external-sharing-site) (article)\
-[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)\
-[Manage email and calendars](../email/index.yml) (link page)
+[Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)\
+[Manage email and calendars](/admin) (link page)
+

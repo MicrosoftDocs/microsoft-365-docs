@@ -9,7 +9,7 @@ ms.date: 04/05/2021
 ms.reviewer: gigarrub
 audience: ITPro
 ms.topic: conceptual
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Follow the path of an incoming message through the threat filtering stack in Microsoft Defender for Office 365.
 ms.technology: mdo
 ms.prod: m365-security
@@ -45,7 +45,7 @@ Edge blocks are designed to be automatic. In the case of false positive, senders
 
 Features in sender intelligence are critical for catching spam, bulk, impersonation, and unauthorized spoof messages, and also factor into phish detection. Most of these features are individually configurable.
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="Phase 2 of filtering in MDO is Sender intelligence.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase2.png" alt-text="Phase 2 of filtering in Defender for Office 365 is Sender intelligence.":::
 
 1. **Account compromise detection** triggers and alerts are raised when an account has anomalous behavior, consistent with compromise. In some cases, the user account is blocked and prevented from sending any further email messages until the issue is resolved by an organization's security operations team.
 
@@ -107,11 +107,11 @@ The last stage takes place after mail or file delivery, acting on mail that is i
 
 1. **Safe Links** is Defender for Office 365's time-of-click protection. Every URL in every message is wrapped to point to Microsoft Safe Links servers. When a URL is clicked it is checked against the latest reputation, before the user is redirected to the target site. The URL is asynchronously sandboxed to update its reputation.
 
-2. **Zero-Hour Auto-purge (ZAP) for phishing** retroactively detects and neutralizes malicious phishing messages that have already been delivered to Exchange Online mailboxes.
+2. **Zero-hour auto purge (ZAP) for phishing** retroactively detects and neutralizes malicious phishing messages that have already been delivered to Exchange Online mailboxes.
 
 3. **ZAP for malware** retroactively detects and neutralizes malicious malware messages that have already been delivered to Exchange Online mailboxes.
 
-4. **ZAP for phishing** retroactively detects and neutralizes malicious spam messages that have already been delivered to Exchange Online mailboxes.
+4. **ZAP for spam** retroactively detects and neutralizes malicious spam messages that have already been delivered to Exchange Online mailboxes.
 
 5. **Campaign Views** let administrators see the big picture of an attack, faster and more completely, than any team could without automation. Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malware data across the entire service to help identify campaigns, and then allows admins to investigate them from start to end, including targets, impacts, and flows, that are also available in a downloadable campaign write-up.
 
@@ -125,9 +125,9 @@ The last stage takes place after mail or file delivery, acting on mail that is i
 
 ## The filtering stack diagram
 
-The final diagram (as with all parts of the diagram composing it) *is subject to change as the product grows and develops*. Bookmark this page and use the **feedback** option you'll find at the bottom if you need to ask after updates. For your records, this is the the stack with all the phases in order:
+The final diagram (as with all parts of the diagram composing it) *is subject to change as the product grows and develops*. Bookmark this page and use the **feedback** option you'll find at the bottom if you need to ask after updates. For your records, this is the stack with all the phases in order:
 
-:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="All the phases of filtering in MDO in order, 1 to 4.":::
+:::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="All the phases of filtering in Defender for Office 365 in order, 1 to 4.":::
 
 ## More information
 

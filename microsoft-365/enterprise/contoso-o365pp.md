@@ -1,14 +1,14 @@
 ---
 title: "Microsoft 365 Apps for enterprise deployment for Contoso"
-author: JoeDavies-MSFT
+author: kelleyvice-msft
 f1.keywords:
 - NOCSH
-ms.author: josephd
+ms.author: kvice
 manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-modern-desktop
 - Strat_O365_Enterprise
@@ -70,7 +70,7 @@ Because Contoso chose to automatically update devices from the cloud, there was 
 
 Here is the Contoso Microsoft 365 Apps for enterprise installation and ongoing updates deployment architecture.
 
-![The Contoso deployment infrastructure for Microsoft 365 Apps for enterprise](../media/contoso-o365pp/contoso-o365pp-fig1.png)
+![The Contoso deployment infrastructure for Microsoft 365 Apps for enterprise.](../media/contoso-o365pp/contoso-o365pp-fig1.png)
  
 ## Next step
 

@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
@@ -33,8 +33,6 @@ You can add and manage custodians in Advanced eDiscovery cases in four steps:
 
 4. Review the custodians and complete the process.
 
-   [ ![Sources tab in Advanced eDiscovery case](../media/AeD-Sources-Tab.png) ](../media/AeD-Sources-Tab.png#lightbox)
-
 ## Make sure you have the necessary permissions
 
 To add custodians to a case, you must be a member of the eDiscovery Manager role group. This provides you with the necessary permissions to add custodians to a case and place a hold on the custodial data sources. For more information, see [Assign eDiscovery permissions](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions).
@@ -43,11 +41,11 @@ To add custodians to a case, you must be a member of the eDiscovery Manager role
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in with a user account that has been assigned the appropriate eDiscovery permissions.
 
-2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **eDiscovery > Advanced**.
+2. In the left navigation pane of the Microsoft 365 compliance center, select **eDiscovery** > **Advanced eDiscovery**, and select the [**Cases**](https://go.microsoft.com/fwlink/p/?linkid=2173764) tab.
 
-3. On the **Advanced eDiscovery** page, click the **Cases** tab, and then select the case that you want to add custodians to.
+3. Select the case that you want to add custodians to.
 
-4. Click the **Data sources** tab and then click **Add data source** > **Add new custodians**.
+4. Select the **Data sources** tab, and then select **Add data source** > **Add new custodians**.
 
 5. Add one or more users in your organization as custodians to the case by typing the first part of a person's name or alias. After you find the correct person, select their name to add them to the list.
 
@@ -63,7 +61,7 @@ To deselect the primary mailbox and OneDrive account for a custodian:
 
 2. Select **Clear** next to **Mailbox** or **OneDrive** to remove a custodian's mailbox or OneDrive account from being associated as a data location for this custodian.
 
-   ![Configure locations to associate to a custodian](../media/ConfigureCustodianLocations.png)
+   ![Configure locations to associate to a custodian.](../media/ConfigureCustodianLocations.png)
 
 To associate other mailboxes, sites, Teams, or Yammer groups to a specific custodian:
 
@@ -78,7 +76,7 @@ To associate other mailboxes, sites, Teams, or Yammer groups to a specific custo
    - **Yammer**:  Use to assign the Yammer groups the custodian is currently a member of. Select the groups to assign to the custodian and then click **Add**. After you add a team, the system automatically identifies and locates the SharePoint site and group mailbox associated to that group and assigns them to the custodian.
 
    > [!NOTE]
-   > You can use the **Exchange** and **SharePoint** location pickers to associate other teams or Yammer groups (that a custodian is not a member of) to a custodian. To do this, you have to add both the mailbox and site associated with each team or Yammer group.
+   > You can use the **Exchange** and **SharePoint** location pickers to associate any mailbox or site in your organization to a custodian. , This includes associating the mailbox and site for a Microsoft Team or Yammer group that a custodian is not a member of. To do this, you have to add both the mailbox and site associated with each team or Yammer group.
 
 2. You can view the total number of mailboxes, sites, Teams, and Yammer groups assigned to each custodian by expanding each custodian in the table. When you've finalized the assigned data locations for each custodian, these associations will be maintained and used during the collection, processing, and review stages in the Advanced eDiscovery workflow.
 
@@ -109,4 +107,4 @@ Before you actually add the custodians to the case, you can review the list of c
 
    The new custodians are added to the case and displayed on the **Data sources** tab.
 
-   [ ![Custodians listed on the Data sources tab](../media/DataSourcesTab.png) ](../media/DataSourcesTab.png#lightbox)
+   [ ![Custodians listed on the Data sources tab.](../media/DataSourcesTab.png) ](../media/DataSourcesTab.png#lightbox)

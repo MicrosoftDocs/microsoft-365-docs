@@ -1,5 +1,5 @@
 ---
-title: "Learn about Microsoft 365 data loss prevention on-premises scanner (preview)"
+title: "Learn about Microsoft 365 data loss prevention on-premises scanner"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - m365solution-mip
@@ -21,7 +21,7 @@ search.appverid:
 description: "Microsoft 365 data loss prevention on-premises scanner extends monitoring of file activities and protective actions for those files to on-premises file shares and SharePoint folders and document libraries. Files are scanned and protected by Azure Information Protection (AIP) scanner"
 ---
 
-# Learn about the Microsoft 365 data loss prevention on-premises scanner (preview)
+# Learn about the Microsoft 365 data loss prevention on-premises scanner
 
 Microsoft data loss prevention on-premises scanner is part of the Microsoft 365 data loss prevention (DLP) suite of features that you can use to discover and protect sensitive items across Microsoft 365 services. For more information about all of Microsoft’s DLP offerings, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
 

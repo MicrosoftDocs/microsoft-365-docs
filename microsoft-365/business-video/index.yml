@@ -14,8 +14,8 @@ metadata:
   author: twerner #Required; your GitHub user alias, with correct capitalization.
   ms.author: twernermsft #Required; microsoft alias of author; optional team alias.
   ms.date: 12/16/2020 #Required; mm/dd/yyyy format.
-  localization_priority: Priority
-  ms.custom: AdminSurgePortfolio
+  ms.localizationpriority: high
+
 
 
 # productDirectory section (optional)
@@ -26,7 +26,7 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
       summary: Plan your move to Microsoft 365 for business.
-      url: what-is-microsoft-365.md
+      url: ../admin/admin-overview/what-is-microsoft-365.md
     # Card
     - title: Set up Microsoft 365 for business
       imageSrc: https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg
@@ -61,7 +61,7 @@ productDirectory:
     - title: Set up business apps
       imageSrc: https://docs.microsoft.com/office/media/icons/task-list-planning-blue.svg
       summary: Set up and learn about Bookings, Lists, Tasks…
-      url: overview-bookings.md
+      url: https://support.microsoft.com/office/42d4e852-8e99-4d8f-9b70-d7fc93973cb5
     # Card
     - title: Manage your subscription
       imageSrc: https://docs.microsoft.com/office/media/icons/settings.svg
@@ -81,7 +81,7 @@ productDirectory:
     - title: Get support
       imageSrc: https://docs.microsoft.com/office/media/icons/headset-blue.svg
       summary: Get help with Microsoft 365 for business.
-      url: get-help-support.md
+      url: ../admin/get-help-support.md
 
 # additionalContent section (optional)
 # Card with summary style

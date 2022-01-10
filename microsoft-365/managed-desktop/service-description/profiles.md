@@ -7,7 +7,7 @@ author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
@@ -24,7 +24,7 @@ You can assign different pre-set configurations ("device profiles") to devices, 
 
 You can think of device profiles as being part of a hierarchy of device configuration options.
 
-:::image type="content" source="../../media/mmd-profile-options-heirarchy.png" alt-text="Device configurations shown as a pyramid. Description follows":::
+:::image type="content" source="../../media/mmd-profile-options-heirarchy.png" alt-text="Device configurations shown as a pyramid. Description follows.":::
 
 Fundamentally, every Microsoft Managed Desktop device has a foundation that includes a standard security baseline, compliance policies, Windows Update settings, and groups. To work with Microsoft Managed Desktop, every device must include all of these elements, which can't be changed by admins without a request to Microsoft Managed Desktop.
 

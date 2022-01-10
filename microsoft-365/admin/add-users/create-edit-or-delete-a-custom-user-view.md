@@ -8,11 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
-- Adm_TOC
+
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -81,12 +81,6 @@ You can also filter by additional user profile details used in your organization
   
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a>. 
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a>.  
@@ -105,12 +99,6 @@ You can also filter by additional user profile details used in your organization
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a>. 
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a>. 
@@ -126,7 +114,7 @@ You can also filter by additional user profile details used in your organization
 
 ## Related content
 
-[Overview of the Microsoft 365 admin center](../../business-video/admin-center-overview.md) (video)\
+[Overview of the Microsoft 365 admin center](Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)\
 [About admin roles](../add-users/about-admin-roles.md) (video)\
 [Customize the Microsoft 365 theme for your organization](../setup/customize-your-organization-theme.md) (article)
 

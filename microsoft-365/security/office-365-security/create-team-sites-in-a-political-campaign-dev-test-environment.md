@@ -12,7 +12,7 @@ ms.collection:
   - Ent_O365
   - Strat_O365_Enterprise
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
   - MET150
 ms.custom: seo-marvel-apr2020
@@ -48,7 +48,7 @@ In this phase, you create the labels for the different levels of security for Sh
 
 3. From the **Home** page of the Microsoft 365 compliance center, go to the **Solutions** section \> **Information protection**. To go directly to the **Information protection** page, use <https://compliance.microsoft.com//informationprotection>.
 
-4. On the **Information protection** page, verify that the **Label** tag is selected, and then click  ![Create a label icon](../../media/m365-cc-sc-create-icon.png) **Create a label**.
+4. On the **Information protection** page, verify that the **Label** tag is selected, and then click  ![Create a label icon.](../../media/m365-cc-sc-create-icon.png) **Create a label**.
 
 5. The **New sensitivity label** wizard opens. On the **Name & description** step, enter the following values:
    - **Name**: Type **Internal**.

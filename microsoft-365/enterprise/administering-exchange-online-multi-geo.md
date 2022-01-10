@@ -10,7 +10,7 @@ ms.service: o365-solutions
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
-localization_priority: normal
+ms.localizationpriority: medium
 description: Learn how to administer Exchange Online multi-geo settings in your Microsoft 365 environment with PowerShell.
 ---
 

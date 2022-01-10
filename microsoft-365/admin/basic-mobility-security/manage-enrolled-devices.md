@@ -8,16 +8,17 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- admindeeplinkMAC
 search.appverid:
 - MET150
-description: "Basic Mobility and Security can help you secure and manage mobile devices."
+description: "Basic Mobility and Security can help you secure and manage your organizations mobile devices."
 ---
 
 # Manage devices enrolled in Mobile Device Management in Microsoft 365
@@ -34,7 +35,7 @@ To get to the device management panel, follow these steps:
 
 2. Type Mobile Device Management into the search field, and select **Mobile Device Management** from the list of results.
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Mobile device management option":::
+    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Mobile device management option.":::
 
 3. Select  **Let's get started**.
 
@@ -48,7 +49,7 @@ After you've got Basic Mobility and Security set up, here are some ways you can 
 |Block unsupported devices from accessing Exchange email using Exchange ActiveSync |In the Device Management panel, select  **Block**. |
 |Set up device policies like password requirements and security settings |In the Device Management panel, select **Device security policies** > **Add +**. For more info, see [Create device security policies in Basic Mobility and Security](create-device-security-policies.md).|
 |View list of blocked devices  |In the Device Management panel, under  **Select a view**  select  **Blocked**. |
-|Unblock noncompliant or unsupported device for a user or group of users  |Pick one of the following to unblock devices:<br/>- Remove the user or users from the security group the policy has been applied to. Go to Microsoft 365 admin center > **Groups**, and then select group name. Select **Edit members and admins**.<br/>- Remove the security group the users are a member of from the device policy. Go to Security & Compliance Center > **Security policies** > **Device security policies**. Select device policy name, and then select **Edit** > **Deployment**.<br/>- Unblock all noncompliant devices for a device policy. Go to Security & Compliance Center > **Security policies** > **Device security policies**. Select device policy name and then select **Edit** > **Access requirements**. Select  **Allow access and report violation**.<br/>- To unblock a noncompliant or unsupported device for a user or a group of users, go to Security & Compliance Center > **Security policies** > **Device management** > **Manage device access settings**. Add a security group with the members you want to exclude from being blocked access to Microsoft 365. For more info, see [Create, edit, or delete a security group in the Microsoft 365 admin center](../../admin/email/create-edit-or-delete-a-security-group.md).|
+|Unblock noncompliant or unsupported device for a user or group of users  |Pick one of the following to unblock devices:<br/>- Remove the user or users from the security group the policy has been applied to. Go to Microsoft 365 admin center > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a>, and then select group name. Select **Edit members and admins**.<br/>- Remove the security group the users are a member of from the device policy. Go to Security & Compliance Center > **Security policies** > **Device security policies**. Select device policy name, and then select **Edit** > **Deployment**.<br/>- Unblock all noncompliant devices for a device policy. Go to Security & Compliance Center > **Security policies** > **Device security policies**. Select device policy name and then select **Edit** > **Access requirements**. Select  **Allow access and report violation**.<br/>- To unblock a noncompliant or unsupported device for a user or a group of users, go to Security & Compliance Center > **Security policies** > **Device management** > **Manage device access settings**. Add a security group with the members you want to exclude from being blocked access to Microsoft 365. For more info, see [Create, edit, or delete a security group in the Microsoft 365 admin center](../../admin/email/create-edit-or-delete-a-security-group.md).|
 |Remove users so their devices are no longer managed by Basic Mobility and Security |To remove the user, edit the security group that has device management policies for Basic Mobility and Security. For more info, see  [Create, edit, or delete a security group in the Microsoft 365 admin center](../../admin/email/create-edit-or-delete-a-security-group.md).<br/>To remove Basic Mobility and Security from all your Microsoft 365 users, see [Turn off Basic Mobility and Security](turn-off.md).|
 
 Live (v14)

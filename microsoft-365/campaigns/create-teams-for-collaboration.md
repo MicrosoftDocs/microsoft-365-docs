@@ -1,5 +1,5 @@
 ---
-title: "Create teams for collaboration"
+title: "Create a team in Microsoft Teams so your small business or campaign can collaborate"
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -8,7 +8,7 @@ manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
@@ -22,10 +22,10 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Create a collaboration space for your team with Microsoft Teams."
+description: "Learn why and how to create a team in Microsoft Teams so your small business or campaign can collaborate."
 ---
 
-# Create teams for collaboration in Microsoft Teams
+# Create a team in Microsoft Teams so your small business or campaign can collaborate
 
 Microsoft Teams is a collaboration app that helps your staff stay organized and have conversations, from any device. You can use Microsoft Teams to have instant conversations with members of your staff or guests outside your organization. You can also make phone calls, host meetings, and share files.
 
@@ -42,7 +42,7 @@ For example, a business, legal firm, or healthcare practice could create the fol
 1. **Individual teams:** Set up teams for smaller groups to collaborate about their day to day work.
 1. **An external communications team or teams:** Coordinate with your vendors, partners, or clients without allowing them into anything sensitive. Set up different channels for specific groups.
 
-![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a business](../media/m365-democracy-teams-business-collab.png)
+![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a business.](../media/m365-democracy-teams-business-collab.png)
 
 And campaigns could create the following teams to communicate and collaborate securely:
 
@@ -50,7 +50,7 @@ And campaigns could create the following teams to communicate and collaborate se
 2. **A general campaign team:** This is for everyone to use for day to day communications and work. Individuals, groups, or committees can set up channels in this team to do their work. For example, the event planning people can set up a channel to chat and coordinate logistics for campaign events.
 3. **A partners team:** Coordinate with your vendors, partners, or volunteers without allowing them into anything sensitive.
 
-![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a campaign](../media/m365-democracy-teams-collab.png)
+![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a campaign.](../media/m365-democracy-teams-collab.png)
 
 When you create a team, here's what else gets created:
 

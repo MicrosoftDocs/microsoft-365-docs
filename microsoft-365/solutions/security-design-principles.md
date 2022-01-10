@@ -7,7 +7,7 @@ manager: bcarter
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-identity-device-management
 - M365-security-compliance
@@ -22,7 +22,7 @@ In this article, [Kozeta Garrett](https://www.linkedin.com/in/kozeta-garrett-530
 
 ## About the author
 
-![Kozeta Garrett photo](../media/solutions-architecture-center/kozeta-garrett-security.jpg)
+![Kozeta Garrett photo.](../media/solutions-architecture-center/kozeta-garrett-security.jpg)
 
 In my role as a Cloud Security Architect, I've worked with multiple organizations to provide strategic and technical guidance focusing on designing and implementing security architecture for customers migrating to Microsoft 365 and Azure, developing enterprise security solutions, and helping transform security architecture and culture for business resilience. My experience includes incident detection and response, malware analysis, penetration testing, and recommending improvements to IT security and defense posture. I'm very passionate about leading transformations that result in security as an enabler for the business, including modernization efforts.
 
@@ -62,7 +62,7 @@ The ‘simple is better’ approach works for security too. Instead of going aft
 
 As I come from a long cybersecurity background and experience, I tend to prefer starting with the most secure configuration out of the box and allowing organizations to relax security configurations based on their operational and security needs. However, this can come at a hefty price of lost functionality and poor user experience. As many organizations have learned, if security is too hard for users, they'll find a way to work around you, including using unmanaged cloud services. As hard as it is for me to accept, I've come to realize that the delicate functionality-security balance must be achieved.
 
-Organizations that realize users will do whatever it takes to get their jobs done acknowledge that the "Shadow IT battle" isn't worth fighting. They recognize that IT employees are the biggest offenders when it comes to Shadow IT and the use of non-approved SaaS applications for their job. They've shifted their strategy to encourage its use (instead of suppressing) and focusing on mitigating the risks exposure it could create. These organization’s security teams don't insist that everything gets blocked, logged, and sent through a reverse proxy or a VPN. Rather, these security teams double down their efforts to protect valuable and sensitive data from being exposed to the wrong parties or malicious apps. They work to protect the integrity of the data. They're making full use of more advanced cloud information protection capabilities, including encryption, secure multi-factor authentication, automated risk and compliance, and Cloud App Security Broker (CASB) capabilities while allowing and even encouraging the protected sharing across multiple platforms. They're turning shadow IT into inspiring creativity, productivity, and collaboration, which allows their business to stay on the competitive edge.
+Organizations that realize users will do whatever it takes to get their jobs done acknowledge that the "Shadow IT battle" isn't worth fighting. They recognize that IT employees are the biggest offenders when it comes to Shadow IT and the use of non-approved SaaS applications for their job. They've shifted their strategy to encourage its use (instead of suppressing) and focusing on mitigating the risks exposure it could create. These organization’s security teams don't insist that everything gets blocked, logged, and sent through a reverse proxy or a VPN. Rather, these security teams double down their efforts to protect valuable and sensitive data from being exposed to the wrong parties or malicious apps. They work to protect the integrity of the data. They're making full use of more advanced cloud information protection capabilities, including encryption, secure multi-factor authentication, automated risk and compliance, and cloud access security broker (CASB) capabilities while allowing and even encouraging the protected sharing across multiple platforms. They're turning shadow IT into inspiring creativity, productivity, and collaboration, which allows their business to stay on the competitive edge.
 
 ## Adopt a methodical approach
 

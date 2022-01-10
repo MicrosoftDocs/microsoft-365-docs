@@ -1,21 +1,21 @@
 ---
-title: Manage Windows Defender in your business
+title: Manage Microsoft Defender Antivirus in your business
 description: Learn how to use Group Policy, Configuration Manager, PowerShell, WMI, Intune, and the command line to manage Microsoft Defender AV
 keywords: group policy, gpo, config manager, sccm, scep, powershell, wmi, intune, defender, antivirus, antimalware, security, protection
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/06/2021
-ms.reviewer: 
+ms.date: 10/18/2021
+ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.topic: article
+ms.collection: M365-security-compliance
 ---
 
 # Manage Microsoft Defender Antivirus in your business
@@ -25,7 +25,10 @@ ms.topic: article
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Microsoft Defender Antivirus
 
 You can manage and configure Microsoft Defender Antivirus with the following tools:
 
@@ -38,10 +41,10 @@ You can manage and configure Microsoft Defender Antivirus with the following too
 
 The following articles provide further information, links, and resources for using these tools to manage and configure Microsoft Defender Antivirus.
 
-| Article | Description |
+|Article|Description|
 |:---|:---|
-|[Manage Microsoft Defender Antivirus with Microsoft Intune and Microsoft Endpoint Configuration Manager](use-intune-config-manager-microsoft-defender-antivirus.md)|Information about using Intune and Configuration Manager to deploy, manage, report, and configure Microsoft Defender Antivirus |
-|[Manage Microsoft Defender Antivirus with Group Policy settings](use-group-policy-microsoft-defender-antivirus.md)|List of all Group Policy settings located in ADMX templates |
-|[Manage Microsoft Defender Antivirus with PowerShell cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md)|Instructions for using PowerShell cmdlets to manage Microsoft Defender Antivirus, plus links to documentation for all cmdlets and allowed parameters |
-|[Manage Microsoft Defender Antivirus with Windows Management Instrumentation (WMI)](use-wmi-microsoft-defender-antivirus.md)| Instructions for using WMI to manage Microsoft Defender Antivirus, plus links to documentation for the WMIv2 APIs (including all classes, methods, and properties) |
-|[Manage Microsoft Defender Antivirus with the mpcmdrun.exe command-line tool](command-line-arguments-microsoft-defender-antivirus.md)|Instructions on using the dedicated command-line tool to manage and use Microsoft Defender Antivirus |
+|[Manage Microsoft Defender Antivirus with Microsoft Intune and Microsoft Endpoint Configuration Manager](use-intune-config-manager-microsoft-defender-antivirus.md)|Information about using Intune and Configuration Manager to deploy, manage, report, and configure Microsoft Defender Antivirus|
+|[Manage Microsoft Defender Antivirus with Group Policy settings](use-group-policy-microsoft-defender-antivirus.md)|List of all Group Policy settings located in ADMX templates|
+|[Manage Microsoft Defender Antivirus with PowerShell cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md)|Instructions for using PowerShell cmdlets to manage Microsoft Defender Antivirus, plus links to documentation for all cmdlets and allowed parameters|
+|[Manage Microsoft Defender Antivirus with Windows Management Instrumentation (WMI)](use-wmi-microsoft-defender-antivirus.md)|Instructions for using WMI to manage Microsoft Defender Antivirus, plus links to documentation for the WMIv2 APIs (including all classes, methods, and properties)|
+|[Manage Microsoft Defender Antivirus with the MpCmdRun.exe command-line tool](command-line-arguments-microsoft-defender-antivirus.md)|Instructions on using the dedicated command-line tool to manage and use Microsoft Defender Antivirus|

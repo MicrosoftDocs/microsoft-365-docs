@@ -4,7 +4,7 @@ description:  Detailed actions to take for each issue the tool finds
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
@@ -33,7 +33,7 @@ You can access Intune settings at the Microsoft Endpoint Manager [admin center](
 
 ### Autopilot deployment profile
 
-You shouldn't have any existing Autopilot profiles that target assigned or dynamic groups with Microsoft Managed Desktop devices. Microsoft Managed Desktop uses Autopilot to provision new devices.
+You shouldn't have any existing Autopilot profiles that target assigned or dynamic groups with Microsoft Managed Desktop devices. Microsoft Managed Desktop uses Autopilot to provision new devices. If you have an existing Autopilot deployment profile, the "Convert all targeted devices to Autopilot" setting must be set to "No" for the managed desktop readiness test for Autopilot to succeed.
 
 **Not ready**
 
@@ -63,6 +63,14 @@ At least one certificate connector has an error. If you need this connector for 
 
 You have at least one certificate connector and no errors are reported. However, in preparation for deployment, you might need to create a profile to reuse the connector for Microsoft Managed Desktop devices. For more information, see [Prepare certificates and network profiles for Microsoft Managed Desktop](certs-wifi-lan.md).
 
+### Company Portal
+
+Microsoft Managed Desktop requires that IT administrators install Intune Company Portal for their users with Microsoft Managed Desktop devices. 
+
+**Not ready**
+
+You do not have Company Portal installed for your users. Purchase Company Portal and force a sync between Intune and Microsoft Store for Business. For more information, see [Install Intune Company Portal on devices](../get-started/company-portal.md).
+
 
 ### Conditional access policies
 
@@ -91,13 +99,9 @@ The Intune Administrator role doesn't have sufficient permissions for this check
 
 Intune Device Compliance policies in your Azure AD organization might impact Microsoft Managed Desktop devices.
 
-**Not ready**
-
-You have at least one compliance policy that targets all users. Microsoft Managed Desktop includes compliance policies that will target your Microsoft Managed Desktop devices.  Change the policy to target a specific Azure AD group that does not include any Microsoft Managed Desktop users or devices. For steps, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
-
 **Advisory**
 
-Make sure that any compliance policies you have don't target any Microsoft Managed Desktop users. For steps, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
+You have at least one compliance policy that applies all users. Microsoft Managed Desktop also includes compliance policies that will apply to your Microsoft Managed Desktop devices. Review all of the compliance policies created by your organization that apply to Microsoft Managed Desktop devices to ensure there are no conflicts. For steps, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy).
 
 
 
@@ -107,7 +111,7 @@ Intune Device Configuration profiles in your Azure AD organization must not targ
 
 **Not ready**
 
-You have at least one configuration profile that targets all users, all devices, or both. Reset the profile to target a specific Azure AD group that does not include any Microsoft Managed Desktop devices. For steps, see [Create a profile with custom settings in Microsoft Intune](/mem/intune/configuration/custom-settings-configure).
+You have at least one configuration profile that applies to all users, all devices, or both. Reset the profile to apply to a specific Azure AD group that does not include any Microsoft Managed Desktop devices. For steps, see [Create a profile with custom settings in Microsoft Intune](/mem/intune/configuration/custom-settings-configure).
 
 **Advisory**
 
@@ -201,6 +205,13 @@ You have a security baseline profile that targets all users, all devices, or bot
 
 Make sure that any security baseline policies you have exclude Microsoft Managed Desktop devices. For steps, see [Use security baselines to configure Windows 10 devices in Intune](/mem/intune/protect/security-baselines). During enrollment, we apply a new security baseline to all Microsoft Managed Desktop devices. The **Modern Workplace Devices -All** Azure AD group is a dynamic group that we create when you enroll in Microsoft Managed Desktop, so you'll have to come back to exclude this group after enrollment. 
 
+### Unlicensed admins
+
+This setting must be enabled to avoid a "lack of permissions" error when we interact with your Azure AD organization. 
+
+**Not ready**
+
+**Allow access to unlicensed admins** should be enabled. For steps, see [Prerequisites for guest accounts](/microsoft-365/managed-desktop/get-ready/guest-accounts).
 
 ### Windows apps
 
@@ -217,13 +228,9 @@ You can ask your Microsoft account representative for a query in Microsoft Endpo
 
 Microsoft Managed Desktop requires Windows Hello for Business to be enabled.
 
-**Not ready**
-
-Windows Hello for Business is disabled. Enable it by following the steps in [Create a Windows Hello for Business policy](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)
-
 **Advisory**
 
-Windows Hello for Business is not set up. Enable it by following the steps in [Create a Windows Hello for Business policy](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy).
+Windows Hello for Business is either disabled or not set up. Enable it by following the steps in [Create a Windows Hello for Business policy](/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy).
 
 
 ### Windows 10 update rings
@@ -251,14 +258,13 @@ Windows 10 devices in your Azure AD organization must be able to automatically e
 
 Make sure the **MDM User scope** is set to **Some** or **All**, not **None**. If you choose **Some**, come back after enrollment and select the **Modern Workplace -All** Azure AD group for **Groups** or an equivalent group targeting all of your Microsoft Managed Desktop users.  See [Set up enrollment for Windows devices by using Microsoft Intune](/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment).
 
-
 ### Ad hoc subscriptions
 
 Advises how to check a setting that (if set to "false") might prevent Enterprise State Roaming from working correctly.
 
 **Advisory**
 
-Ensure that **AllowAdHocSubscriptions** is set to **True**. Otherwise, Enterprise State Roaming might not work. For more information, see [Set-MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0).
+Ensure that **AllowAdHocSubscriptions** is set to **True**. Otherwise, Enterprise State Roaming might not work. For more information, see [Set-MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings).
 
 
 ### Enterprise State Roaming
@@ -268,6 +274,22 @@ Enterprise State Roaming should be enabled.
 **Advisory**
 
 Make sure that Enterprise State Roaming is enabled for **All** or for **Selected** groups. For more information, see [Enable Enterprise State Roaming in Azure Active Directory](/azure/active-directory/devices/enterprise-state-roaming-enable).
+
+### Guest invitation settings
+
+Microsoft Managed Desktop recommends adjusting guest invitation settings, since the default setting allows all users and guests in your directory to invite guests.
+
+**Advisory**
+
+**Member users and users assigned to specific admin roles can invite guest users including guests with member permissions** should be enabled. For steps, see [Prerequisites for guest accounts](/microsoft-365/managed-desktop/get-ready/guest-accounts).
+
+### Guest user access
+
+Microsoft Managed Desktop recommends adjusting guest user access, since the default setting allows all guest users in your directory to have the same access as members.
+
+**Advisory**
+
+**Guest users have limited access to properties and memberships of directory objects** should be enabled. For steps, see [Prerequisites for guest accounts](/microsoft-365/managed-desktop/get-ready/guest-accounts).
 
 ### Licenses
 

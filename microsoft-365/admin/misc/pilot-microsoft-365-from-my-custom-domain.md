@@ -8,10 +8,13 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - Adm_O365
+- Adm_TOC
 ms.custom:
+- admindeeplinkMAC
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
@@ -84,7 +87,7 @@ Microsoft 365 uses Exchange Online Protection (EOP) for spam protection. EOP mig
 
 ### Step 5: Create user accounts and set the primary reply-to address
 
-1. In the Microsoft 365 admin center left navigation, select **Users** > **Active Users**.
+1. In the Microsoft 365 admin center left navigation, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 
 2. Create two test accounts by adding two existing users.
 
@@ -129,7 +132,7 @@ Make sure you have completed the following in Microsoft 365 or Office 365:
 
 ### 2. Set up a connector from Microsoft 365 or Office 365 to your email server
 
-To create a connector in Microsoft 365 or Office 365, click **Admin**, and then click **Exchange** to go to the Exchange admin center. Next, click **mail flow**, and click **connectors**.
+To create a connector in Microsoft 365 or Office 365, select **Admin** > **Exchange** to go to the Exchange admin center. Next, select **mail flow** > <a href="https://go.microsoft.com/fwlink/?linkid=2183136" target="_blank">**Connectors**</a>.
 
 Set up connectors using the wizard.
 

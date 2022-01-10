@@ -7,7 +7,7 @@ ms.date: 06/04/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - SPO_Content
@@ -38,7 +38,7 @@ The **Page Diagnostics for SharePoint tool** is a browser extension for the new 
 
 When you run the Page Diagnostics for SharePoint tool on a SharePoint Online page, you can click the **Diagnostic Tests** tab to see a list of assets not being hosted by the CDN. These assets will be listed under the heading **Content Delivery Network (CDN) check** as shown in the screenshot below.
 
-![Page diagnostics](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
+![Page diagnostics.](../media/page-diagnostics-for-spo/pagediag-results-general.PNG)
 
 >[!NOTE]
 >The Page Diagnostics tool only works for SharePoint Online, and cannot be used on a SharePoint system page.
@@ -73,7 +73,7 @@ Set-SPOTenantCdnEnabled -CdnType Both -Enable $true
 
 Output of these cmdlets should look like the following:
 
-![Output of Set-SPOTenantCdnEnabled](../media/O365-CDN/o365-cdn-enable-output.png)
+![Output of Set-SPOTenantCdnEnabled.](../media/O365-CDN/o365-cdn-enable-output.png)
 
 ## See also
 

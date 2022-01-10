@@ -9,11 +9,10 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
-- m365solution-mig
 - m365initiative-compliance
 search.appverid: 
 - MOE150
@@ -59,7 +58,7 @@ Use the following sections to learn more about how retention policies and retent
 
 ## How retention settings work with content in place
 
-When content has retention settings assigned to it, that content remains in its original location. People can continue to work with their documents or mail as if nothing's changed. But if they edit or delete content that's included in the retention policy, a copy of the content is automatically retained.
+When content has retention settings assigned to it, that content remains in its original location. Most of the time, people continue to work with their documents or mail as if nothing's changed. But if they edit or delete content that's included in the retention policy, a copy of the content is automatically retained.
   
 - For SharePoint and OneDrive sites: The copy is retained in the **Preservation Hold** library.
 
@@ -68,7 +67,7 @@ When content has retention settings assigned to it, that content remains in its 
 - For Teams and Yammer messages: The copy is retained in a hidden folder named **SubstrateHolds** as a subfolder in the Exchange **Recoverable Items** folder.
 
 > [!NOTE]
-> The Preservation Hold library consumes storage that isn't exempt from a site's storage quota. You might need to increase your storage when you use retention settings for SharePoint and Microsoft 365 groups.
+> Because the Preservation Hold library is included in the site's storage quota, you might need to increase your storage when you use retention settings for SharePoint and Microsoft 365 groups.
 > 
 These secure locations and the retained content are not visible to most people. In most cases, people do not even need to know that their content is subject to retention settings.
 
@@ -110,6 +109,7 @@ Retention policies can be applied to the following locations:
 - Exchange public folders
 - Teams channel messages
 - Teams chats
+- Teams private channel messages
 - Yammer community messages
 - Yammer user messages
 
@@ -137,12 +137,12 @@ With retention labels, you can:
   
 - **Enable people in your organization to apply a retention label manually** to content in Outlook and Outlook on the web, OneDrive, SharePoint, and Microsoft 365 groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate retention settings applied. 
     
-- **Apply retention labels to content automatically** if it matches specific conditions, such as when the content contains: 
+- **Apply retention labels to content automatically** if it matches specific conditions, that include cloud attachments that are shared in email or Teams, or when the content contains: 
     - Specific types of sensitive information.
     - Specific keywords that match a query you create.
     - Pattern matches for a trainable classifier.
 
-- **Start the retention period from when the content was labeled** for documents in SharePoint sites and OneDrive accounts, and to email items with the exception of calendar items. If you apply a retention label with this configuration to a calendar item, the retention period starts from when it is sent.
+- **Start the retention period from when the content was labeled** for documents in SharePoint sites and OneDrive accounts, and for email items.
 
 - **Start the retention period when an event occurs**, such as employees leave the organization, or contracts expire.
 
@@ -152,15 +152,13 @@ Additionally, retention labels support [records management](records-management.m
 
 Retention labels, unlike [sensitivity labels](sensitivity-labels.md), do not persist if the content is moved outside Microsoft 365.
 
-There is no limit to the number of retention labels that are supported for a tenant. However, 10,000 is the maximum number of policies that are supported for a tenant and these include the policies that apply the labels (retention label policies and auto-apply retention policies), as well as retention policies.
-
 #### Classifying content without applying any actions
 
 Although the main purpose of retention labels is to retain or delete content, you can also use retention labels without turning on any retention or other actions. In this case, you can use a retention label simply as a text label, without enforcing any actions.
   
 For example, you can create and apply a retention label named "Review later" with no actions, and then use that label to find that content later.
   
-![Label settings to classify-only](../media/retention-label-retentionoff.png)
+![Label settings to classify-only.](../media/retention-label-retentionoff.png)
 
 #### Using a retention label as a condition in a DLP policy
 
@@ -176,23 +174,22 @@ When you publish retention labels, they're included in a **retention label polic
 
 2. Retention label policies specify the locations to publish the retention labels. The same location can be included in multiple retention label policies.
 
-![How retention labels can be added to label policies that specify locations](../media/retention-labels-and-policies.png)
+![How retention labels can be added to label policies that specify locations.](../media/retention-labels-and-policies.png)
 
 You can also create one or more **auto-apply retention label policies**, each with a single retention label. With this policy, a retention label is automatically applied when conditions that you specify in the policy are met.
 
 #### Retention label policies and locations
 
-Different types of retention labels can be published to different locations, depending on what the retention label does.
+Retention labels can be published to different locations, depending on what the retention label does.
   
 | If the retention label is… | Then the label policy can be applied to… |
 |:-----|:-----|
-|Published to admins and end users  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
-|Auto-applied based on sensitive information types or trainable classifiers  <br/> |Exchange (all mailboxes only), SharePoint, OneDrive  <br/> |
-|Auto-applied based on a query  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
-   
-In Exchange, retention labels that you auto-apply are applied only to messages newly sent (data in transit), not to all items currently in the mailbox (data at rest). Also, auto-apply retention labels for sensitive information types and trainable classifiers apply to all mailboxes; you can't select specific mailboxes.
-  
-Exchange public folders, Skype, Teams and Yammer messages do not support retention labels. To retain and delete contain from these locations, use retention policies instead.
+|Published to admins and end users  |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  |
+|Auto-applied based on sensitive information types or trainable classifiers  |Exchange, SharePoint, OneDrive  |
+|Auto-applied based on keywords or a query  |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  |
+|Auto-applied to cloud attachments  |SharePoint, OneDrive, Microsoft 365 Groups  |
+
+Exchange public folders, Skype, Teams and Yammer messages do not support retention labels. To retain and delete content from these locations, use retention policies instead.
 
 #### Only one retention label at a time
 
@@ -207,7 +204,7 @@ For standard retention labels (they don't mark items as a [record or regulatory 
 
 - Admins and end users can manually change or remove an existing retention label that's applied on content. 
 
-- When content already has a retention label applied, the existing label won't be automatically removed or replaced by another retention label with one possible exception: The existing label was applied as a default label.
+- When content already has a retention label applied, the existing label won't be automatically removed or replaced by another retention label with one possible exception: The existing label was applied as a default label. When you use a default label, there are some scenarios when it can be replaced by another default label, or automatically removed. 
     
     For more information about the label behavior when it's applied by using a default label:
     - Default label for SharePoint: [Label behavior when you use a default label for SharePoint](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
@@ -232,7 +229,7 @@ After retention labels are applied to content, either by users or auto-applied, 
 
 When you create a content search, choose the **Retention label** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
-![Retention label condition](../media/retention-label-condition.png)
+![Retention label condition.](../media/retention-label-condition.png)
 
 
 ## Compare capabilities for retention policies and retention labels
@@ -244,9 +241,9 @@ Use the following table to help you identify whether to use a retention policy o
 |Retention settings that can retain and then delete, retain-only, or delete-only |Yes |Yes |
 |Workloads supported: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes | <br /> Yes, except public folders <br /> Yes <br /> Yes <br /> Yes <br /> No <br /> No <br /> No |
 |Retention applied automatically | Yes | Yes |
-|Retention applied based on conditions <br /> - sensitive info types, KQL queries and keywords, trainable classifiers| No | Yes |
+|Retention applied based on conditions <br /> - sensitive info types, KQL queries and keywords, trainable classifiers, cloud attachments| No | Yes |
 |Retention applied manually | No | Yes |
-|UI presence for end users | No | Yes |
+|End-user interaction | No | Yes |
 |Persists if the content is moved | No | Yes, within your Microsoft 365 tenant |
 |Declare item as a record| No | Yes |
 |Start the retention period when labeled or based on an event | No | Yes |
@@ -271,6 +268,76 @@ You don't have to choose between using retention policies only or retention labe
 
 For more information about how retention policies and retention labels work together and how to determine their combined outcome, see the next section that explains the principles of retention and what takes precedence.
 
+## How long it takes for retention settings to apply
+
+When you submit retention policies for workloads and label policies to automatically apply a retention label, allow up to 7 days for the retention settings to be applied to content:
+
+- [How long it takes for retention policies to take effect](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)
+- [How long it takes for retention labels to take effect](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect)
+
+Similarly, allow up to 7 days for retention labels to be visible in apps after you publish the labels:
+
+- [When retention labels become available to apply](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply)
+
+Often, the policies will take effect and labels will be visible quicker than 7 days. But with many potential variables that can impact this process, it's best to plan for the maximum of 7 days.
+
+## Adaptive or static policy scopes for retention
+
+> [!NOTE]
+> Adaptive policy scopes as a new feature is currently in preview and subject to change. The alternative option is a static scope, which provides the same behavior before adaptive scopes were introduced and can be used if adaptive scopes don't meet your business requirements.
+
+When you create a retention policy or retention label policy, you must choose between adaptive and static to define the scope of the policy.
+
+- An **adaptive scope** uses a query that you specify, so the membership isn't static but dynamic by running daily against the attributes or properties that you specify for the selected locations. You can use multiple adaptive scopes with a single policy.
+    
+    Example: Emails and OneDrive documents for executives require a longer retention period than standard users. You create a retention policy with an adaptive scope that uses the Azure AD attribute job title of "Executive", and then select the Exchange email and OneDrive accounts locations for the policy. There's no need to specify email addresses or OneDrive URLs for these users because the adaptive scope automatically retrieves these values. For new executives, there's no need to reconfigure the retention policy because these new users with their corresponding values for email and OneDrive are automatically picked up.
+
+- A **static scope** doesn't use queries and is limited in configuration in that it can apply to all instances for a specified location, or use inclusion and exclusions for specific instances for that location. These three choices are sometimes referred to as "org-wide", "includes", and "excludes" respectively.
+    
+    Example: Emails and OneDrive documents for executives require a longer retention period than standard users. You create a retention policy with a static scope that selects the Exchange email and OneDrive accounts locations for the policy. For the Exchange email location, you're able to identify a group that contains just the executives, so you specify this group for the retention policy, and the group membership with the respective email addresses is retrieved when the policy is created. For the OneDrive accounts location, you must identify and then specify individual OneDrive URLs for each executive. For new executives, you must reconfigure the retention policy to add the new email addresses and OneDrive URLs. You must also update the OneDrive URLs anytime there is a change in an executive's UPN.
+    
+    OneDrive URLs are particularly challenging to reliably specify because by default, these URLs aren't created until the user accesses their OneDrive for the first time. And if a user's UPN changes, which you might not know about, their OneDrive URL automatically changes.
+
+Advantages of using adaptive scopes:
+
+- No limits on the [number of items per policy](retention-limits.md#maximum-number-of-items-per-policy). Although adaptive policies are still subject to the [maximum number of policies per tenant](retention-limits.md#maximum-number-of-policies-per-tenant) limitations, the more flexible configuration will likely result in far fewer policies.
+
+- More powerful targeting for your retention requirements. For example, you can assign different retention settings to users according to their geographical location by using existing Azure AD attributes without the administrative overhead of creating and maintaining groups for this purpose.
+
+- Query-based membership provides resilience against business changes that might not be reliably reflected in group membership or external processes that rely on cross-department communication.
+
+- A single retention policy can include locations for both Microsoft Teams and Yammer, whereas when you use a static scope, these locations require their own retention policy.
+    
+- You can apply specific retention settings to just inactive mailboxes. This configuration isn't possible with a static scope because at the time the policy is assigned, static scopes don't support the specific inclusion of recipients with inactive mailboxes.
+
+Advantages of using static scopes:
+
+- Simpler configuration if you want all instances automatically selected for a workload.
+    
+    For "includes" and "excludes", this choice can be a simpler configuration initially if the numbers of instances that you have to specify are low and do not change. However, when these number of instances start to increase and you have frequent changes in your organization that require you to reconfigure your policies, adaptive scopes can be simpler to configure and much easier to maintain.
+
+- The **Skype for Business** and **Exchange public folders** locations don't support adaptive scopes. For those locations, you must use a static scope. 
+
+For configuration information, see [Configuring adaptive scopes](retention-settings.md#configuration-information-for-adaptive-scopes).
+
+To watch a recorded webinar (requires registration), visit [Deep Dive on Adaptive Scopes](https://mipc.eventbuilder.com/event/45703).
+
+> [!IMPORTANT]
+> Currently, adaptive scopes don't support [Preservation Lock to restrict changes to retention policies and retention label policies](#use-preservation-lock-to-restrict-changes-to-policies).
+
+## Policy lookup
+
+> [!NOTE]
+> Policy lookup is currently in preview and subject to change.
+
+You can configure multiple retention policies for Microsoft 365 locations, as well as multiple retention label policies that you publish or auto-apply. To find the policies for retention that are assigned to specific users, sites, and Microsoft 365 groups, use **Policy lookup** from the **Information governance** solution in the Microsoft 365 compliance center:
+
+![Policy lookup to find the policies for retention that are assigned to specific users, sites, and Microsoft 365 groups ](../media/policy-lookup.png)
+
+You must specify the exact email address for a user, exact URL for a site, or exact email address for a Microsoft 365 group.
+
+The option for sites includes OneDrive accounts. For information how to specify the URL for a user's OneDrive account, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
+
 ## The principles of retention, or what takes precedence?
 
 Unlike retention labels, you can apply more than one retention policy to the same content. Each retention policy can result in a retain action and a delete action. Additionally, that item could also be subject to these actions from a retention label.
@@ -279,62 +346,79 @@ In this scenario, when items can be subject to multiple retention settings that 
 
 The outcome isn't which single retention policy or single retention label wins, but how long an item is retained (if applicable) and when an item is deleted (if applicable). These two actions are calculated independently from each other, from all the retention settings applied to an item.
 
-For example, an item might be subject to one retention policy that is configured for a delete-only action, and another retention policy that is configured to retain and then delete. Consequently, this item has just one retain action but two delete actions. The retention and deletion actions could be in conflict with one another and the two deletion actions might have a conflicting date. To work out the outcome, you must apply the principles of retention.
+For example, an item might be subject to one retention policy that is configured for a delete-only action, and another retention policy that is configured to retain and then delete. Consequently, this item has just one retain action but two delete actions. The retention and deletion actions could be in conflict with one another and the two deletion actions might have a conflicting date. The principles of retention explain the outcome.
 
-At a high level, you can be assured that retention always takes precedence over deletion, and the longest retention period wins. These two simple rules always decide how long an item will be retained.
+At a high level, you can be assured that retention always takes precedence over permanent deletion, and the longest retention period wins. These two simple rules always decide how long an item will be retained.
 
-There are a few more factors that determine when an item will be deleted, which include the delete action from a retention label always takes precedence over the delete action from a retention policy.
+There are a few more factors that determine when an item will be permanently deleted, which include the delete action from a retention label always takes precedence over the delete action from a retention policy.
 
 Use the following flow to understand the retention and deletion outcomes for a single item, where each level acts as a tie-breaker for conflicts, from top to bottom. If the outcome is determined by the first level because there are no further conflicts, there's no need to progress to the next level, and so on.
 
 > [!IMPORTANT]
-> If you are using retention labels: Before using this flow to determine the outcome of multiple retention settings on the same item, make sure you know [which retention label is applied](#only-one-retention-label-at-a-time).
+> If you are using retention labels: Before applying the principles to determine the outcome of multiple retention settings on the same item, make sure you know [which retention label is applied](#only-one-retention-label-at-a-time).
 
-![Diagram of the principles of retention](../media/principles-of-retention.png)
-  
-Explanation for the four different levels:
-  
-1. **Retention wins over deletion.** Content won't be permanently deleted when it also has retention settings to retain it.  
-    
-    Example: An email message is subject to a retention policy for Exchange that is configured to delete items after three years and it also has a retention label applied that is configured to retain items for five years.
-    
-    The email message is retained for five years because this retention action takes precedence over deletion. The email message is deleted at the end of the five years because of the deferred delete action.
+![Diagram of the principles of retention.](../media/principles-of-retention.png)
 
-2. **The longest retention period wins.** If content is subject to multiple retention settings that retain content for different periods of time, the content will be retained until the end of the longest retention period.
+Before explaining each principle in more detail, it's important to understand the difference between the retention period for the item vs. the specified retention period in the retention policy or retention label. That's because although the default configuration is to start the retention period when an item is created, so that the end of the retention period is fixed for the item, files also support the configuration to start the retention period from when the file is last modified. With this alternative configuration, every time the file is modified, the start of the retention period is reset, which extends the end of the retention period for the item. Retention labels also support starting the retention period when labeled and at the start of an event.
+
+To apply the principles in action with a series of Yes and No questions, you can also use the [retention flowchart](retention-flowchart.md).
+
+Explanation for the four different principles:
+  
+1. **Retention wins over deletion.** Content won't be permanently deleted when it also has retention settings to retain it. While this principle ensures that content is preserved for compliance reasons, the delete process can still be initiated (user-initiated or system-initiated) and consequently, might remove the content from users' main view. However, permanent deletion is suspended. For more information about how and where content is retained, use the following links for each workload:
     
-    Example: Documents in the Marketing SharePoint site are subject to two retention policies. The first retention policy is configured for all SharePoint sites to retain items for five years. The second retention policy is configured for specific SharePoint sites to retain items for ten years.
+    - [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)
+    - [How retention works with Microsoft Teams](retention-policies-teams.md#how-retention-works-with-microsoft-teams)
+    - [How retention works with Yammer](retention-policies-yammer.md#how-retention-works-with-yammer)
+    - [How retention works for Exchange](retention-policies-exchange.md#how-retention-works-for-exchange)
     
-    Documents in this Marketing SharePoint site are retained for ten years because that's the longest retention period.
+    **Example for this first principle**: An email message is subject to a retention policy for Exchange that is configured to delete items three years after they are created, and it also has a retention label applied that is configured to retain items five years after they are created.
+    
+    The email message is retained for five years because this retention action takes precedence over deletion. The email message is permanently deleted at the end of the five years because of the delete action that was suspended while the retention action was in effect.
+
+2. **The longest retention period wins.** If content is subject to multiple retention settings that retain content for different periods of time, the content will be retained until the end of the longest retention period for the item.
+    
+    > [!NOTE]
+    > It's possible for a retention period of 5 years in a retention policy or label wins over a retention period of 7 years in a retention policy or label, because the 5-year period is configured to start based on when the file is last modified, and the 7-year period is configured to start from when the file is created.
+    
+    **Example for this second principle**: Documents in the Marketing SharePoint site are subject to two retention policies. The first retention policy is configured for all SharePoint sites to retain items for five years after they are created. The second retention policy is configured for specific SharePoint sites to retain items for ten years after they are created.
+    
+    Documents in this Marketing SharePoint site are retained for ten years because that's the longest retention period for the item.
 
 3. **Explicit wins over implicit for deletions.** With conflicts now resolved for retention, only conflicts for deletions remain: 
     
     1. A retention label (however it was applied) provides explicit retention in comparison with retention policies, because the retention settings are applied to an individual item rather than implicitly assigned from a container. This means that a delete action from a retention label always takes precedence over a delete action from any retention policy.
         
-        Example: A document is subject to two retention policies that have a delete action of five years and ten years respectively, and also a retention label that has a delete action of seven years.
+        **Example for this third principle (label)**: A document is subject to two retention policies that have a delete action of five years and ten years respectively, and also a retention label that has a delete action of seven years.
         
-        The document is deleted after seven years because the delete action from the retention label takes precedence.
+        The document is permanently deleted after seven years because the delete action from the retention label takes precedence.
     
-    2. When you have retention policies only: If a retention policy for a location is scoped to use an include configuration (such as specific users for Exchange email) that retention policy takes precedence over unscoped retention policies for the same location.
+    2. When you have retention policies only: If a retention policy for a location uses an adaptive scope or a static scope that includes specific instances (such as specific users for Exchange email) that retention policy takes precedence over a static scope that is configured for all instances for the same location.
         
-        An unscoped retention policy is where a location is selected without specifying specific instances. For example, **Exchange email** and the default setting of **All recipients** is an unscoped retention policy. Or, **SharePoint sites** and the default setting of **All sites**. When retention policies are scoped, they have equal precedence at this level.
+        A static scope that is configured for all instances for a location is sometimes referred to as an "org-wide policy". For example, **Exchange email** and the default setting of **All recipients**. Or, **SharePoint sites** and the default setting of **All sites**. When retention policies aren't org-wide but have been configured with an adaptive scope or a static scope that includes specific instances, they have equal precedence at this level.
         
-        Example 1: An email message is subject to two retention policies. The first retention policy is unscoped and deletes items after ten years. The second retention policy is scoped to specific mailboxes and deletes items after five years.
+        **Example 1 for this third principle (policies)**: An email message is subject to two retention policies. The first retention policy is unscoped and deletes items after ten years. The second retention policy is scoped to specific mailboxes and deletes items after five years.
         
-        The email message is deleted after five years because the deletion action from the scoped retention policy takes precedence over the unscoped retention policy.
+        The email message is permanently deleted after five years because the deletion action from the scoped retention policy takes precedence over the org-wide retention policy.
         
-        Example 2: A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to include this user's OneDrive account and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years.
+        **Example 2 for this third principle (policies)**: A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to include this user's OneDrive account and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years.
         
-        When this document will be deleted can't be determined at this level because both retention policies are scoped.
+        When this document will be permanently deleted can't be determined at this level because both retention policies are scoped to include specific instances.
 
-4. **The shortest deletion period wins.** Applicable to determine when items will be deleted from retention policies and the outcome couldn't be resolved from the previous level: Content is deleted at the end of the shortest retention period.
+4. **The shortest deletion period wins.** Applicable to determine when items will be deleted from retention policies and the outcome couldn't be resolved from the previous level: Content is permanently deleted at the end of the shortest retention period for the item.
     
-    Example: A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to include this user's OneDrive account and has a delete action after 10 years. The second retention policy is scoped to include this user's OneDrive account and has a delete action after seven years.
+    > [!NOTE]
+    > It's possible that a retention policy that has a retention period of 7 years wins over a retention policy of 5 years because the first policy is configured to start the retention period based on when the file is created, and the second retention policy from when the file is last modified.
     
-    This document will be deleted after seven years because that's the shortest retention period for these two scoped retention policies.
+    **Example for this fourth principle**: A document in a user's OneDrive account is subject to two retention policies. The first retention policy is scoped to include this user's OneDrive account and has a delete action of 10 years after the file is created. The second retention policy is scoped to include this user's OneDrive account and has a delete action of seven years after the file is created.
+    
+    This document will be permanently deleted after seven years because that's the shortest retention period for the item from these two scoped retention policies.
 
-Note that items subject to eDiscovery hold also fall under the first principle of retention; they cannot be deleted by any retention policy or retention label. When that hold is released, the principles of retention continue to apply to them. For example, they could then be subject to an unexpired retention period or a deferred delete action.
+Items subject to eDiscovery hold also fall under the first principle of retention; they cannot be permanently deleted by any retention policy or retention label. When that hold is released, the principles of retention continue to apply to them. For example, they could then be subject to an unexpired retention period or a delete action.
 
-More complex examples that combine retain and delete actions:
+### Principles of retention examples that combine retain and delete actions
+
+The following examples are more complex to illustrate the principles of retention when different retain and delete actions are combined. To make the examples easier to follow, all retention policies and labels use the default setting of starting the retention period when the item is created so the end of the retention period is the same for the item.
 
 1. An item has the following retention settings applied to it:
     
@@ -342,17 +426,17 @@ More complex examples that combine retain and delete actions:
     - A retention policy that retains for three years and then deletes
     - A retention label that retains-only for seven years
     
-    **Outcome**: The item is retained for seven years because retention takes precedence over deletion and seven years is the longest retention period. At the end of this retention period, the item is deleted because of the delete action from the retention policies that was deferred while the item was retained.
+    **Outcome**: The item is retained for seven years because retention takes precedence over deletion and seven years is the longest retention period for the item. At the end of this retention period, the item is permanently deleted because of the delete action from the retention policies.
     
-    Although the two retention policies have different dates for the delete actions, the earliest the item can be deleted is at the end of the longest retention period, which is longer than both deletion dates. In this example, there is no conflict to resolve for the deletion dates so all conflicts are resolved by the second level.
+    Although the two retention policies have different dates for the delete actions, the earliest that the item can be permanently deleted is at the end of the longest retention period, which is longer than both deletion dates. 
 
 2.  An item has the following retention settings applied to it:
     
-    - An unscoped retention policy that deletes-only after ten years
-    - A scoped retention policy that retains for five years and then deletes
+    - An org-wide retention policy that deletes-only after ten years
+    - A retention policy scoped with specific instances that retains for five years and then deletes
     - A retention label that retains for three years and then deletes
     
-    **Outcome**: The item is retained for five years because that's the longest retention period. At the end of that retention period, the item is deleted because of the delete action of three years from the retention label that was deferred while the item was retained. Deletion from retention labels takes precedence over deletion from all retention policies. In this example, all conflicts are resolved by the third level.
+    **Outcome**: The item is retained for five years because that's the longest retention period for the item. At the end of that retention period, the item is permanently deleted because of the delete action of three years from the retention label. Deletion from retention labels takes precedence over deletion from all retention policies. In this example, all conflicts are resolved by the third level.
 
 ## Use Preservation Lock to restrict changes to policies
 
@@ -364,15 +448,35 @@ You apply Preservation Lock after the retention policy or retention label policy
 
 ## Releasing a policy for retention
 
-Providing your policies for retention don't have a Preservation Lock, you can delete your policies at any time, which effectively turns off the previously applied retention settings. You can also keep the policy, but change the location status to off, or disable the policy. If your policy is configured to include specific sites for SharePoint or accounts for OneDrive, you can also edit the policy to remove one or more of these entries to release the policy for those sites or accounts.
- 
-When you do any of these actions, any SharePoint or OneDrive content that's subject to retention from the policy continues to be retained for 30 days to prevent inadvertent data loss. During this 30-day grace period deleted files are still retained (files continue to be added to the Preservation Hold library), but the timer job that periodically cleans up the Preservation Hold library is suspended for these files so you can restore them if necessary.
+Providing your policies for retention don't have a Preservation Lock, you can delete your policies at any time, which effectively turns off the retention settings for a retention policy, and retention labels can no longer be applied from retention label policies. Any previously applied retention labels remain with their configured retention settings and for these labels, you can still update the retention period when it's not based on when items were labeled.
 
-An exception to this 30-day grace period is when you update the policy to exclude one or more sites for SharePoint or accounts for OneDrive; in this case, the timer job deletes files for these locations in the Preservation Hold library without the 30-day delay.
+You can also keep a policy, but change the location status to off, or disable the policy. Another option is to reconfigure the policy so it no longer includes specific users, sites, groups, and so on. 
 
-For more information about the Preservation Hold library, see [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
+Additional information for specific locations:
 
-Because of the behavior during the grace period, if you re-enable the policy or change the location status back to on within 30 days, the policy resumes without any permanent data loss during this time.
+- **SharePoint sites and OneDrive accounts:**
+    
+    When you release a retention policy for SharePoint sites and OneDrive accounts, any content that's subject to retention from the policy continues to be retained for 30 days to prevent inadvertent data loss. During this 30-day grace period deleted files are still retained (files continue to be added to the Preservation Hold library), but the timer job that periodically cleans up the Preservation Hold library is suspended for these files so you can restore them if necessary.
+    
+    An exception to this 30-day grace period is when you update the policy to exclude one or more sites for SharePoint or accounts for OneDrive; in this case, the timer job deletes files for these locations in the Preservation Hold library without the 30-day delay.
+    
+    For more information about the Preservation Hold library, see [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
+    
+    Because of the behavior during the grace period, if you re-enable the policy or change the location status back to on within 30 days, the policy resumes without any permanent data loss during this time.
+
+- **Exchange email and Microsoft 365 Groups**
+    
+    When you release a retention policy for mailboxes that are [inactive](inactive-mailboxes-in-office-365.md) at the time the policy is released:
+    
+    - If the retention policy is explicitly applied to a mailbox, the retention settings no longer apply. With no retention settings applied, an inactive mailbox becomes eligible for automatic deletion in the usual way.
+        
+        An explicit retention policy requires either an adaptive policy scope, or a static policy scope with an include configuration that specified an active mailbox at the time the policy was applied and later became inactive
+    
+    - If the retention policy is implicitly applied to a mailbox and the configured retention action is to retain, the retention policy continues to apply and an inactive mailbox never becomes eligible for automatic deletion. When the retain action no longer applies because the retention period has expired, the Exchange admin can now [manually delete the inactive mailbox](delete-an-inactive-mailbox.md)
+        
+        An implicit retention policy requires a static policy scope with the **All recipients** (for Exchange email) or **All groups** (for Microsoft 365 Groups) configuration.
+    
+    For more information about inactive mailboxes that have retention policies applied, see [Inactive mailboxes and Microsoft 365 retention](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-microsoft-365-retention).
 
 ## Auditing retention configuration and actions
 
@@ -380,7 +484,7 @@ When [auditing is enabled](turn-audit-log-search-on-or-off.md), auditing events 
 
 ### Auditing retention configuration
 
-Administrator configuration for retention policies and retention labels are logged as auditing events when a retention policy or label is created, reconfigured, or deleted.
+Administrator configuration for retention policies and retention labels is logged as auditing events when a retention policy or label is created, reconfigured, or deleted.
 
 For the full list of auditing events, see [Retention policy and retention label activities](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities).
 
@@ -399,6 +503,9 @@ Retention actions that are logged as auditing events are available only for rete
 
 - When a labeled item in SharePoint, OneDrive, or Exchange is marked as a record or regulatory record, and it is permanently deleted:
     - From **File and page activities**, select **Deleted file marked as a record**
+
+- When a disposition reviewer takes action for an item that's reached the end of its retention period:
+    -  From **Disposition review activities**, select **Approved disposal**, **Extended retention period**, **Relabeled item**, or **Added reviewers**
 
 ## PowerShell cmdlets for retention policies and retention labels
 
@@ -424,7 +531,7 @@ To use the retention cmdlets, you must first [connect to the Office 365 Security
 
 - [Remove-RetentionCompliancePolicy](/powershell/module/exchange/remove-retentioncompliancepolicy)
 
-- [Set-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/set-recordreviewnotificationtemplateconfig )
+- [Set-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/set-recordreviewnotificationtemplateconfig)
 
 - [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy)
 
@@ -473,11 +580,21 @@ If you are using older eDiscovery tools to preserve data, see the following reso
 
 If you need to proactively retain or delete content in Microsoft 365 for information governance, we recommend that you use retention policies and retention labels instead of the following older features.
 
-If you currently use these older features, they will continue to work side-by-side with retention policies and retention labels. However, we recommend that going forward, you use retention policies and retention labels instead. They provide you with a single mechanism to centrally manage both retention and deletion of content across Microsoft 365.
+If you currently use these older features, they will continue to work side by side with Microsoft 365 retention policies and retention labels. However, we recommend that going forward, you use Microsoft 365 retention policies and retention labels to benefit from a single solution to manage both retention and deletion of content across multiple workloads in Microsoft 365.
 
 **Older features from Exchange Online:**
 
 - [Retention tags and retention policies](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies), also known as [messaging records management (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management) (deletion only)
+    
+    However, if you use the following MRM features, be aware that they aren't currently supported by Microsoft 365 retention policies:
+    
+    - An archive policy for [archive mailboxes](enable-archive-mailboxes.md) to automatically move emails from a user's primary mailbox to their archive mailbox after a specified period of time. An archive policy (with any settings) can be used in conjunction with a Microsoft 365 retention policy that applies to a user's primary and archive mailbox.
+    
+    - Retention policies applied by an admin to specific folders within a mailbox. A Microsoft 365 retention policy applies to all folders in the mailbox. However, an admin can configure different retention settings by using retention labels that a user can apply to folders in Outlook as a [default retention label](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder).
+
+- [Litigation hold](create-a-litigation-hold.md) (retention only)
+    
+   Although Litigation holds are still supported, we recommend you use Microsoft 365 retention or eDiscovery holds, [as appropriate](#when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds). 
 
 **Older features from SharePoint and OneDrive:**
 

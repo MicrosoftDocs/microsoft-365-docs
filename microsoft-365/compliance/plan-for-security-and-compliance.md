@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
@@ -27,7 +27,7 @@ Managing security and compliance is a partnership. You are responsible for prote
 
 Orient yourself to the information protection capabilities in the Information Protection for Office 365 poster. 
   
-[Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md?view=o365-worldwide)
+[Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md)
   
 ## Step 2: Check your Secure Score
 
@@ -77,4 +77,4 @@ Configure your security and compliance settings in these admin centers and dashb
 |:-----|:-----|:-----|
 |Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 admin center  <br/>  Security &amp; Compliance Center  <br/>  Exchange admin center  <br/>  SharePoint admin center and OneDrive for Business admin center  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft Mobile Application Management  <br/>  Microsoft Intune  <br/> |
-|Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud App Security  <br/> |
+|Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Defender for Cloud Apps  <br/> |

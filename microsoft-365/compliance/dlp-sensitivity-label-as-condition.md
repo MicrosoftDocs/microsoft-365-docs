@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
@@ -34,7 +34,7 @@ You can use [sensitivity labels](sensitivity-labels.md) as a condition in DLP po
 Sensitivity labels appear as an option in the **Content contains** list.
 
 > [!div class="mx-imgBorder"]
-> ![sensitivity label as a condition](../media/dlp-sensitivity-label-as-a-condition.png)
+> ![sensitivity label as a condition.](../media/dlp-sensitivity-label-as-a-condition.png)
 
 > [!IMPORTANT]
 > **Sensitivity Labels** as a condition will not be available if you have selected **Teams chat and channel messages** as a location to apply the DLP policy.

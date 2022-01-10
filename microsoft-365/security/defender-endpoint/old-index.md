@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -17,6 +17,10 @@ ms.topic: conceptual
 ---
  
 # Threat Protection
+
+**Applies to**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) is a unified platform for preventative protection, post-breach detection, automated investigation, and response. Defender for Endpoint protects endpoints from cyber threats, detects advanced attacks and data breaches, automates security incidents, and improves security posture.
 
 > [!TIP]
@@ -44,8 +48,7 @@ ms.topic: conceptual
 
 <a name="tvm"></a>
 
-
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4obJq]
 
 **[Threat & vulnerability management](next-gen-threat-and-vuln-mgt.md)**<br>
 This built-in capability uses a game-changing risk-based approach to the discovery, prioritization, and remediation of endpoint vulnerabilities and misconfigurations.
@@ -129,9 +132,9 @@ Integrate Microsoft Defender for Endpoint into your existing workflows.
 - Intune
 - Microsoft Defender for Office 365
 - Microsoft Defender for Identity
-- Azure Defender
+- Microsoft Defender for Cloud
 - Skype for Business
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 
 <a name="mtp"></a>
 **[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**<br>

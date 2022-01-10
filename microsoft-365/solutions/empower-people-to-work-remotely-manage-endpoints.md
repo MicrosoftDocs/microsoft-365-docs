@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -25,7 +25,7 @@ With hybrid workers, you need to support a growing number of personal devices. E
 
 [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) provides services and tools for managing mobile devices, desktop computers, virtual machines, embedded devices, and servers by combining the following services you may already know and be using.
 
-![The components of endpoint management for Microsoft 365](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
+![The components of endpoint management for Microsoft 365.](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
 ## Microsoft Intune
 
@@ -35,7 +35,7 @@ Microsoft Intune is a cloud-based service that focuses on mobile device manageme
 
 - **MAM:** Remote workers might not want you to have full control on their personal devices, also known as bring-your-own device (BYOD) devices. You can give your hybrid workers options and still protect your organization. For example, hybrid workers can enroll their devices if they want full access to your organization resources. Or, if these users only want access to email or Microsoft Teams, then use app protection policies that require multi-factor authentication (MFA) to use these apps.
 
-For more information, see this [overview of Microsoft Intune](/intune/fundamentals/what-is-intune).
+For more information, see the [Manage endpoints with Intune and Microsoft 365](manage-devices-with-intune-overview.md) foundation solution.
 
 ## Configuration Manager
 
@@ -88,6 +88,6 @@ You are using the suite of Endpoint Manager features and capabilities to manage 
 
 ## Next step
 
-[![Step 5: Deploy remote worker productivity apps and services](../media/empower-people-to-work-remotely/remote-workers-step-grid-5.png)](empower-people-to-work-remotely-teams-productivity-apps.md)
+[![Step 5: Deploy remote worker productivity apps and services.](../media/empower-people-to-work-remotely/remote-workers-step-grid-5.png)](empower-people-to-work-remotely-teams-productivity-apps.md)
 
 Continue with [Step 5](empower-people-to-work-remotely-teams-productivity-apps.md) to get your hybrid workers using Microsoft 365 productivity apps such as Microsoft Teams.
