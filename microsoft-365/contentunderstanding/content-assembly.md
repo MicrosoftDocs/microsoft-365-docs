@@ -22,8 +22,7 @@ You can use SharePoint Syntex to help you automatically generate standard repeti
 With content assembly, you can use an existing document to create a *modern template*, and then use that template to automatically generate new content using SharePoint lists or user inputs as a data source.
 
 > [!NOTE]
-> You must be a SharePoint Syntex licensed user to access and use content assembly capabilities.
-> You should have permissions to manage lists
+> You must be a licensed SharePoint Syntex user to access and use content assembly capabilities. You should also have permissions to manage lists.
 
 ## Create a modern template
 
@@ -117,7 +116,7 @@ If you need to edit an existing template or to delete or unpublish a template, f
  
    ![Screenshot of the Edit New menu panel showing the Modern templates section.](../media/content-understanding/content-assembly-edit-template-2.png)
 
-3. Select **Edit** to open the template viewer where you can edit the template.
+3. Select **Edit** to open the template studio where you can edit the template.
 
 ## Create a document from a modern template
 
@@ -127,7 +126,7 @@ You can use a modern template to quickly create similar documents without having
  
    ![Screenshot of document library showing the modern template choices on the New menu.](../media/content-understanding/content-assembly-create-document-1.png)
 
-2. The template opens in the template viewer.
+2. The template opens in the template studio.
 
 3. On the **Create a new document from this template** panel, enter the information, and then select **Create Document**.
 
