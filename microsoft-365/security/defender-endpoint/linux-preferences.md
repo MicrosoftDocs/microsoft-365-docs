@@ -1,4 +1,4 @@
----
+﻿---
 title: Set preferences for Microsoft Defender for Endpoint on Linux
 ms.reviewer:
 description: Describes how to configure Microsoft Defender for Endpoint on Linux in enterprises.
@@ -24,7 +24,7 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -61,7 +61,7 @@ The *antivirusEngine* section of the configuration profile is used to manage the
 
 #### Enable / disable real-time protection
 
-Determines whether real-time protection (scan files as they are accessed) is enabled or not.
+Determines whether real-time protection (scan files as they are accessed) is enabled.
 
 <br>
 
@@ -95,6 +95,22 @@ Determines whether the antivirus engine runs in passive mode or not. In passive 
 |**Possible values**|false (default) <p> true|
 |**Comments**|Available in Defender for Endpoint version 100.67.60 or higher.|
 |
+
+
+#### Enable/disable behavior-monitoring 
+
+Determines whether behavior monitoring and blocking capability is enabled on the device or not. To improve effectiveness of security protection, we recommend keeping this feature turned on.
+
+<br>
+
+****
+
+|Description|Value|
+|---|---|
+|**Key**|behaviorMonitoring|
+|**Data type**|String|
+|**Possible values**|disabled <p> enabled (default)|
+|**Comments**|Available in Defender for Endpoint version 101.45.00 or higher.|
   
 #### Run a scan after definitions are updated
 
@@ -108,9 +124,41 @@ Specifies whether to start a process scan after new security intelligence update
 |---|---|
 |**Key**|scanAfterDefinitionUpdate|
 |**Data type**|Boolean|
-|**Possible values**|false (default) <p> true|
-|**Comments**|Available in Defender for Endpoint version 101.41.51 or higher.|
+|**Possible values**|true (default) <p> false|
+|**Comments**|Available in Defender for Endpoint version 101.45.00 or higher.|
 |
+
+#### Scan archives (on-demand antivirus scans only)
+
+Specifies whether to scan archives during on-demand antivirus scans.
+
+<br>
+
+****
+
+|Description|Value|
+|---|---|
+|**Key**|scanArchives|
+|**Data type**|Boolean|
+|**Possible values**|true (default) <p> false|
+|**Comments**|Available in Microsoft Defender for Endpoint version 101.45.00 or higher.|
+|||
+
+#### Degree of parallelism for on-demand scans
+
+Specifies the degree of parallelism for on-demand scans. This corresponds to the number of threads used to perform the scan and impacts the CPU usage, as well as the duration of the on-demand scan.
+
+<br>
+
+****
+
+|Description|Value|
+|---|---|
+|**Key**|maximumOnDemandScanThreads|
+|**Data type**|Integer|
+|**Possible values**|2 (default). Allowed values are integers between 1 and 64.|
+|**Comments**|Available in Microsoft Defender for Endpoint version 101.45.00 or higher.|
+|||
   
 
 #### Exclusion merge policy
@@ -443,12 +491,14 @@ The following configuration profile will:
 - Enable automatic security intelligence updates
 - Enable cloud-delivered protection
 - Enable automatic sample submission at `safe` level
+- Enable behavior-monitoring
 
 ### Sample profile
 
 ```JSON
 {
    "antivirusEngine":{
+      "behaviorMonitoring":"enabled",
       "enableRealTimeProtection":true,
       "threatTypeSettings":[
          {
@@ -479,10 +529,12 @@ The following configuration profile contains entries for all settings described 
 ```JSON
 {
    "antivirusEngine":{
+      "behaviorMonitoring":"enabled",
       "enableRealTimeProtection":true,
-      "maximumOnDemandScanThreads":1,
+      "scanAfterDefinitionUpdate":true,
+      "scanArchives":true,
+      "maximumOnDemandScanThreads":2,
       "passiveMode":false,
-      "scanAfterDefinitionUpdate":false,
       "exclusionsMergePolicy":"merge",
       "exclusions":[
          {
@@ -538,7 +590,34 @@ The following configuration profile contains entries for all settings described 
 }
 ```
 
-## Configuration profile validation
+  ## Add tag or group ID to the configuration profile
+
+When you run the `mdatp health` command for the first time, the value for the tag and group ID will be blank. To add tag or group ID to the `mdatp_managed.json` file, follow the below steps:
+  
+  1. Open the configuration profile from the path `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json`.
+  2. Go down to the bottom of the file, where the `cloudService` block is located.
+  3. Add the required tag or group ID as following example at the end of the closing curly bracket for the `cloudService`.
+
+  ```JSON
+    },
+     "cloudService":{
+        "enabled":true,
+        "diagnosticLevel":"optional",
+        "automaticSampleSubmissionConsent":"safe",
+        "automaticDefinitionUpdateEnabled":true,
+        "proxy": "http://proxy.server:port/"
+     },
+     "edr":{
+          "groupIds":"GroupIdExample",
+          "tags":"MDETagExample"
+          }
+  }
+  ```
+
+  > [!NOTE]
+  > Don’t forget to add the comma after the closing curly bracket at the end of the `cloudService` block. Also, make sure that there are two closing curly brackets after adding Tag or Group ID block (please see the above example).
+  
+  ## Configuration profile validation
 
 The configuration profile must be a valid JSON-formatted file. There are a number of tools that can be used to verify this. For example, if you have `python` installed on your device:
 
@@ -559,7 +638,7 @@ To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is worki
 - automatic_definition_update_enabled
 
 > [!NOTE]
-> For the mdatp_managed.json to take effect, no restart of the wdavdaemon is required.
+> For the mdatp_managed.json to take effect, no restart of the `mdatp` deamon is required.
 
 ## Configuration profile deployment
 

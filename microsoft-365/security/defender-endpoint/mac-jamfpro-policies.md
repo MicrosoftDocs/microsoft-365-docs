@@ -24,8 +24,9 @@ ms.technology: mde
 
 
 **Applies to:**
-
 - [Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 This page will guide you through the steps you need to take to set up macOS policies in Jamf Pro.
 
@@ -45,7 +46,7 @@ You'll need to take the following steps:
 
 ## Step 1: Get the Microsoft Defender for Endpoint onboarding package
 
-1. In [Microsoft Defender Security Center](https://securitycenter.microsoft.com), navigate to **Settings > Onboarding**.
+1. In [Microsoft 365 Defender](https://security.microsoft.com), navigate to **Settings > Onboarding**.
 
 2. Select macOS as the operating system and Mobile Device Management / Microsoft Intune as the deployment method.
 
@@ -63,7 +64,7 @@ You'll need to take the following steps:
 
    ![Image of WindowsDefenderATPOnboarding file.](images/plist-onboarding-file.png)
 
-2. In the Jamf Pro dashboard, select **New**.
+2. Sign in to Jamf Pro, navigate to **Computers** > **Configuration Profiles**, and select **New**.
 
     ![Image of creating a new Jamf Pro dashboard.](images/jamf-pro-configure-profile.png)
 
@@ -77,7 +78,7 @@ You'll need to take the following steps:
    - Distribution Method: Install Automatically
    - Level: Computer Level
 
-4. In **Application & Custom Settings** select **Configure**.
+4.  Navigate to the **Application & Custom Settings** page and select **Upload** > **Add**.
 
     ![Image of configurate app and custom settings.](images/jamfpro-mac-profile.png)
 
@@ -107,7 +108,7 @@ You'll need to take the following steps:
 
 10. Select **Save**.
 
-    ![Image of  deployment target computers.](images/jamfpro-deployment-target.png)
+    ![Image of deployment target computers.](images/jamfpro-deployment-target.png)
 
     ![Image of target computers selected.](images/jamfpro-target-selected.png)
 
@@ -119,10 +120,9 @@ You'll need to take the following steps:
 
 ## Step 3: Configure Microsoft Defender for Endpoint settings
 
-You can either use JAMF Pro GUI to edit individual settings of the Microsoft Defender configuration,
-or use the legacy method by creating a configuration Plist in a text editor, and uploading it to JAMF Pro.
+You can either use JAMF Pro GUI to edit individual settings of the Microsoft Defender for Endpoint configuration, or use the legacy method by creating a configuration Plist in a text editor, and uploading it to JAMF Pro.
 
-Note that you must use exact `com.microsoft.wdav` as the **Preference Domain**, Microsoft Defender uses only this name and `com.microsoft.wdav.ext` to load its managed settings!
+Note that you must use exact `com.microsoft.wdav` as the **Preference Domain**, Microsoft Defender for Endpoint uses only this name and `com.microsoft.wdav.ext` to load its managed settings!
 
 (The `com.microsoft.wdav.ext` version may be used in rare cases when you prefer to use GUI method, but also need to configure a setting that has not been added to the schema yet.)
 
@@ -152,7 +152,7 @@ Note that you must use exact `com.microsoft.wdav` as the **Preference Domain**, 
 
     ![Upload schema.](images/a6f9f556037c42fabcfdcb1b697244cf.png)
 
-5. You can see all supported Microsoft Defender configuration settings below, under **Preference Domain Properties**. Click **Add/Remove properties** to select the settings that you want to be managed, and click **Ok** to save your changes. (Settings left unselected will not be included into the managed configuration, an end user will be able to configure those settings on their machines.)
+5. You can see all supported Microsoft Defender for Endpoint configuration settings below, under **Preference Domain Properties**. Click **Add/Remove properties** to select the settings that you want to be managed, and click **Ok** to save your changes. (Settings left unselected will not be included into the managed configuration, an end user will be able to configure those settings on their machines.)
 
     ![Select managed settings.](images/817b3b760d11467abe9bdd519513f54f.png)
 
@@ -176,7 +176,7 @@ Note that you must use exact `com.microsoft.wdav` as the **Preference Domain**, 
 
     ![Configuration settings - done.](images/dd55405106da0dfc2f50f8d4525b01c8.png)
 
-Microsoft Defender adds new settings over time. These new settings will be added to the schema, and a new version will be published to Github.
+Microsoft Defender for Endpoint adds new settings over time. These new settings will be added to the schema, and a new version will be published to Github.
 All you need to do to have updates is to download an updated schema, edit existing configuration profile, and **Edit schema** at the **Application & Custom Settings** tab.
 
 ### Legacy method
@@ -746,6 +746,9 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
         Note that **Identifier**, **Socket Filter** and **Socket Filter Designated Requirement** exact values as specified above.
 
         ![Image of configuration setting mdatpmdav.](images/netext-create-profile.png)
+        
+ > [!NOTE]
+ > Jamf supports built-in content filter settings which can be set directly through the interface.
 
 3. Select the **Scope** tab.
 

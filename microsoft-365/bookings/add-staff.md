@@ -24,6 +24,9 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
 
 ## Steps
 
+> [!NOTE]
+> These steps are not yet available in the new Bookings experience.
+
 1. Go to the [Manage staff page](https://outlook.office.com/bookings/staff) and select **Add staff**
 
 2. Select the **Add Staff** button.
@@ -94,7 +97,7 @@ Here's an example PowerShell command to add Allie Bellew to the Contoso daycare 
 2. Then run this command:
 
     ```powershell
-    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    Add-RecipientPermission -Identity "daycare@contoso.com" -Trustee "Allie Bellew" -AccessRights SendAs -Confirm:$false
     ```
 
 **Allie Bellew** now has administrator access, but doesn't appear as bookable staff in Bookings.

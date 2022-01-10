@@ -16,7 +16,8 @@ ms.localizationpriority: medium
 search.appverid:
   - MET150
 description: Learn how to recognize and remediate the illicit consent grants attack in Microsoft 365.
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -37,7 +38,7 @@ In an illicit consent grant attack, the attacker creates an Azure-registered app
 These attacks leverage an interaction model which presumes the entity that is calling the information is automation and not a human.
 
 > [!IMPORTANT]
-> Do you suspect you're experiencing problems with illicit consent-grants from an app, right now? Microsoft Cloud App Security (MCAS) has tools to detect, investigate, and remediate your OAuth apps. This MCAS article has a tutorial that outlines how to go about [investigating risky OAuth apps](/cloud-app-security/investigate-risky-oauth). You can also set [OAuth app policies](/cloud-app-security/app-permission-policy) to investigate app-requested permissions, which users are authorizing these apps, and widely approve or ban these permissions requests.
+> Do you suspect you're experiencing problems with illicit consent-grants from an app, right now? Microsoft Defender for Cloud Apps has tools to detect, investigate, and remediate your OAuth apps. This Defender for Cloud Apps article has a tutorial that outlines how to go about [investigating risky OAuth apps](/cloud-app-security/investigate-risky-oauth). You can also set [OAuth app policies](/cloud-app-security/app-permission-policy) to investigate app-requested permissions, which users are authorizing these apps, and widely approve or ban these permissions requests.
 
 ## What does an illicit consent grant attack look like in Microsoft 365?
 
@@ -45,7 +46,7 @@ You need to search the **audit log** to find signs, also called Indicators of Co
 
 ### Steps for finding signs of this attack
 
-1. Open the **Microsoft 365 Defender portal** at <https://security.microsoft.com> and then select **Audit**. Or, to go directly to the **Audit** page, use <https://security.microsoft.com/auditlogsearch>.
+1. Open the Microsoft 365 Defender portal at <https://security.microsoft.com> and then select **Audit**. Or, to go directly to the **Audit** page, use <https://security.microsoft.com/auditlogsearch>.
 
 2. On the **Audit** page, verify that the **Search** tab is selected, and then configure the following settings:
    - **Date and time range**

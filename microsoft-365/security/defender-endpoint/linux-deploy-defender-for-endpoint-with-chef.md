@@ -6,7 +6,7 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-lsaldanha
+ms.author: dansimp
 author: lovina-saldanha
 ms.localizationpriority: medium
 manager: dansimp
@@ -17,6 +17,10 @@ ms.technology: mde
 ---
 
 # Deploy Defender for Endpoint on Linux with Chef
+
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Before you begin: Install unzip if it's not already installed.
 

@@ -41,16 +41,19 @@ Before you request elevated access to a device, it's best to review which action
 
 ### To request elevation
 
-1. Go to the portal at [https://aka.ms/mmdelevationrequest](https://aka.ms/mmdelevationrequest) and sign in with your Azure Active Directory credentials.
-2. Select **New elevation request**.
-3. Provide these details:
+1. Sign in to [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Devices** menu.
+2. Look for the **Microsoft Managed Desktop** section, and then select the **Devices** blade, which contains two tabs–the **Devices** tab and the **Elevation requests** tab. 
+3. To create a new elevation request on the **Device** tab, select a single device that you want to elevate, and then select **Request elevation** from the Device actions dropdown menu. A new elevation request fly-in pane will appear with the device’s name prepopulated in that field.
+4. Alternatively, to create a new elevation request on the **Elevations requests** tab, select **+New elevation request.**
+5. Provide these details:
     - **Support ticket ID** from your own support ticketing system.
-    - **Device name**: Enter the device serial number and then select the device from the menu.
+    - **Device name**(only when creating request from the **Elevation requests** tab): Enter the device serial number and then select the device from the menu.
     - **Category**: Select the category that best fits your issue. If no option seems close, then select **Other**. It's best to select a category if at all possible.
-    - **Subcategory**: Select the one that best fits the issue. If no option seems close, then select **Other**.
     - **Title**: Provide a short description of the issue on the device.
     - **Plan of action**: Provide the troubleshooting steps you plan to take once elevation is granted. 
-4. Select **Submit**.
+6. Select **Submit**.
+7. The list and details of all active and closed requests can be seen on the **Elevation requests** Tab.
+
 
 
 ## Escalation requests
@@ -58,15 +61,15 @@ Before you request elevated access to a device, it's best to review which action
 
 If you need to [escalate](../service-description/user-support.md#escalation-portal) an issue to Microsoft, follow these steps:
 
-1. Go to the portal at [https://aka.ms/mmdelevationrequest](https://aka.ms/mmdelevationrequest) and sign in with your Azure Active Directory credentials.
-2. Select **Escalation requests**, and then select **New escalation request**.
-3. Provide these details:
-    - **Category**: Select the category that best fits your issue.
-    - **Title**: Provide a very brief description.
+1. Sign in to [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) and navigate to the **Tenant administration** menu.
+2. Look for the Microsoft Managed Desktop section, and then select **Service requests**.
+3. On the **Service requests** blade, select **+ New support request**.
+4. Provide a very brief description in the **Title** box. Then set the **Request type** to **Incident**. 
+5. Select the **Category** and **Sub-category** that best fits your issue and select **Next**.
+6. In the **Details** section, provide the following information:
     - **Description**: Add any additional details that could help our team understand the problem. If you need to attach files, you can do that by coming back to the request after you submit it.
     - **Primary contact information**: Provide info about how to contact the main person responsible for working with our team.
-4. Select **Submit**.
-5. Revisit the ticket in the same portal to interact with our team.
-
-> [!NOTE]
-> Only Severity C issues can be escalated through this path. For other issues, contact your IT admin to file the request through the Admin portal.
+7. Select the **Severity** level. For more information, see Support request severity definitions.
+8. Provide as much information about the request as possible to help the team respond quickly. Depending on the type of request, you may be required to provide different details.
+9. Review all the information you provided for accuracy.
+10. When you're ready, select **Create**.

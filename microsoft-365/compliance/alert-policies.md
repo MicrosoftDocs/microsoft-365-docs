@@ -17,6 +17,8 @@ search.appverid:
 - MOE150
 ms.custom: 
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
+- admindeeplinkDEFENDER
 description: "Create alert policies in the Microsoft 365 compliance center or the Microsoft 365 Defender portal to monitor potential threats, data loss, and permissions issues."
 ---
 
@@ -56,13 +58,13 @@ To view and create alert policies:
 
 ### Microsoft 365 compliance center
 
-Go to <https://compliance.microsoft.com> and then select **Policies** > **Alert** > **Alert policies**. Alternatively, you can go directly to <https://compliance.microsoft.com/alertpolicies>.
+Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, and then select **Policies** > **Alert** > **Alert policies**.
 
 ![In the compliance center, select Policies,and under Alert, select Alert policies to view and create alert policies.](../media/LaunchAlertPoliciesMCC.png)
 
 ### Microsoft 365 Defender portal
 
-Go to <https://security.microsoft.com> and under **Email & collaboration** select **Policies & rules** > **Alert policy**. Alternatively, you can go directly to <https://security.microsoft.com/alertpolicies>.
+Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and under **Email & collaboration** select **Policies & rules** > **Alert policy**. Alternatively, you can go directly to <https://security.microsoft.com/alertpolicies>.
 
 ![In the Defender portal, select Policies & rules under Email & collaboration, and then select Alert policy to view and create alert policies.](../media/LaunchAlertPoliciesDefenderPortal.png)
 
@@ -124,13 +126,14 @@ The table also indicates the Office 365 Enterprise and Office 365 US Government 
 |:-----|:-----|:-----|:-----|
 |**A potentially malicious URL click was detected**|Generates an alert when a user protected by [Safe Links](../security/office-365-security/safe-links.md) in your organization clicks a malicious link. This event is triggered when URL verdict changes are identified by Microsoft Defender for Office 365 or when users override the Safe Links pages (based on your organization's Microsoft 365 for business Safe Links policy). This alert policy has a **High** severity setting. For Defender for Office 365 P2, E5, G5 customers, this alert automatically triggers [automated investigation and response in Office 365](../security/office-365-security/office-365-air.md). For more information on events that trigger this alert, see [Set up Safe Links policies](../security/office-365-security/set-up-safe-links-policies.md).|Threat management|E5/G5 or Defender for Office 365 P2 add-on subscription|
 |**Admin Submission result completed**|Generates an alert when an [Admin Submission](../security/office-365-security/admin-submission.md) completes the rescan of the submitted entity. An alert will be triggered every time a rescan result is rendered from an Admin Submission. These alerts are meant to remind you to [review the results of previous submissions](https://compliance.microsoft.com/reportsubmission), submit user reported messages to get the latest policy check and rescan verdicts, and help you determine if the filtering policies in your organization are having the intended impact. This policy has a **Informational** severity setting.|Threat management|E1/F1, E3/F3, or E5|
-|**Admin triggered manual investigation of email**|Generates an alert when an admin triggers the manual investigation of an email from Threat Explorer. For more information, see [Example: A security administrator triggers an investigation from Threat Explorer](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). This alert notifies your organization that the investigation was started. The alert provides information about who triggered it and includes a link to the investigation. This policy has an **Informational** severity setting.|Threat management| E5/G5 or Microsoft Defender for Office 365 P2 add-on subscription| 
+|**Admin triggered manual investigation of email**|Generates an alert when an admin triggers the manual investigation of an email from Threat Explorer. For more information, see [Example: A security administrator triggers an investigation from Threat Explorer](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). This alert notifies your organization that the investigation was started. The alert provides information about who triggered it and includes a link to the investigation. This policy has an **Informational** severity setting.|Threat management| E5/G5 or Microsoft Defender for Office 365 P2 add-on subscription|
+|**Admin triggered user compromise investigation**|Generates an alert when an admin triggers the manual user compromise investigation of either an email sender or recipient from Threat Explorer. For more information, see [Example: A security administrator triggers an investigation from Threat Explorer](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer), which shows the related manual triggering of an investigation on an email. This alert notifies your organization that the user compromise investigation was started. The alert provides information about who triggered it and includes a link to the investigation. This policy has a **Medium** severity setting.|Threat management| E5/G5 or Microsoft Defender for Office 365 P2 add-on subscription|
 |**Creation of forwarding/redirect rule**|Generates an alert when someone in your organization creates an inbox rule for their mailbox that forwards or redirects messages to another email account. This policy only tracks inbox rules that are created using Outlook on the web (formerly known as Outlook Web App) or Exchange Online PowerShell. This policy has a **Informational** severity setting. For more information about using inbox rules to forward and redirect email in Outlook on the web, see [Use rules in Outlook on the web to automatically forward messages to another account](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).|Threat management|E1/F1/G1, E3/F3/G3, or E5/G5|
-|**eDiscovery search started or exported**|Generates an alert when someone uses the Content search tool in the Security and compliance center. An alert is triggered when the following content search activities are performed: <br/><br/>* A content search is started<br/>* The results of a content search are exported<br/>* A content search report is exported<br/><br/>Alerts are also triggered when the previous content search activities are performed in association with an eDiscovery case. This policy has a **Informational** severity setting. For more information about content search activities, see [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).|Threat management|E1/F1/G1, E3/F3/G3, or E5/G5|
+|**eDiscovery search started or exported**|Generates an alert when someone uses the Content search tool in the Security and compliance center. An alert is triggered when the following content search activities are performed: <br><br> <li> A content search is started <li> The results of a content search are exported <li> A content search report is exported <br><br> Alerts are also triggered when the previous content search activities are performed in association with an eDiscovery case. This policy has a **Informational** severity setting. For more information about content search activities, see [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).|Threat management|E1/F1/G1, E3/F3/G3, or E5/G5|
 |**Elevation of Exchange admin privilege**|Generates an alert when someone is assigned administrative permissions in your Exchange Online organization. For example, when a user is added to the Organization Management role group in Exchange Online. This policy has a **Low** severity setting.|Permissions|E1/F1/G1, E3/F3/G3, or E5/G5|
 |**Email messages containing malicious file removed after delivery**|Generates an alert when any messages containing a malicious file are delivered to mailboxes in your organization. If this event occurs, Microsoft removes the infected messages from Exchange Online mailboxes using [Zero-hour auto purge](../security/office-365-security/zero-hour-auto-purge.md). This policy has an **Informational** severity setting and automatically triggers [automated investigation and response in Office 365](../security/office-365-security/office-365-air.md). For more information on this new policy, see [New alert policies in Microsoft Defender for Office 365](new-defender-alert-policies.md).|Threat management|E5/G5 or Microsoft Defender for Office 365 P2 add-on subscription|
 |**Email messages containing malicious URL removed after delivery**|Generates an alert when any messages containing a malicious URL are delivered to mailboxes in your organization. If this event occurs, Microsoft removes the infected messages from Exchange Online mailboxes using [Zero-hour auto purge](../security/office-365-security/zero-hour-auto-purge.md). This policy has an **Informational** severity setting and automatically triggers [automated investigation and response in Office 365](../security/office-365-security/office-365-air.md). For more information on this new policy, see [New alert policies in Microsoft Defender for Office 365](new-defender-alert-policies.md).|Threat management|E5/G5 or Defender for Office 365 P2 add-on subscription|
-|**Email messages from a campaign were delivered and later removed**|Generates an alert when any messages associated with a [Campaign](../security/office-365-security/campaigns.md) are delivered to mailboxes in your organization. If this event occurs, Microsoft removes the infected messages from Exchange Online mailboxes using [Zero-hour auto purge](../security/office-365-security/zero-hour-auto-purge.md). This policy has an **Informational** severity setting and automatically triggers [automated investigation and response in Office 365](../security/office-365-security/office-365-air.md). For more information on this new policy, see [New alert policies in Microsoft Defender for Office 365](new-defender-alert-policies.md).|Threat management|E5/G5 or Defender for Office 365 P2 add-on subscription|
+|**Email messages from a campaign removed after delivery**|Generates an alert when any messages associated with a [Campaign](../security/office-365-security/campaigns.md) are delivered to mailboxes in your organization. If this event occurs, Microsoft removes the infected messages from Exchange Online mailboxes using [Zero-hour auto purge](../security/office-365-security/zero-hour-auto-purge.md). This policy has an **Informational** severity setting and automatically triggers [automated investigation and response in Office 365](../security/office-365-security/office-365-air.md). For more information on this new policy, see [New alert policies in Microsoft Defender for Office 365](new-defender-alert-policies.md).|Threat management|E5/G5 or Defender for Office 365 P2 add-on subscription|
 |**Email messages removed after delivery**|Generates an alert when any malicious messages that do not contain a malicious entity (URL or File), or associated with a Campaign, are delivered to mailboxes in your organization. If this event occurs, Microsoft removes the infected messages from Exchange Online mailboxes using [Zero-hour auto purge](../security/office-365-security/zero-hour-auto-purge.md). This policy has an **Informational** severity setting and automatically triggers [automated investigation and response in Office 365](../security/office-365-security/office-365-air.md). For more information on this new policy, see [New alert policies in Microsoft Defender for Office 365](new-defender-alert-policies.md).|Threat management|E5/G5 or Defender for Office 365 P2 add-on subscription|
 |**Email reported by user as malware or phish**|Generates an alert when users in your organization  report messages as phishing email using the Report Message add-in. This policy has an **Low** severity setting. For more information about this add-in, see [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). For Defender for Office 365 P2, E5, G5 customers, this alert automatically triggers [automated investigation and response in Office 365](../security/office-365-security/office-365-air.md).|Threat management|E1/F1/G1, E3/F3/G3, or E5/G5|
 |**Email sending limit exceeded**|Generates an alert when someone in your organization has sent more mail than is allowed by the outbound spam policy. This is usually an indication the user is sending too much email or that the account may be compromised. This policy has a **Medium** severity setting. If you get an alert generated by this alert policy, it's a good idea to [check whether the user account is compromised](../security/office-365-security/responding-to-a-compromised-email-account.md).|Threat management|E1/F1/G1, E3/F3/G3, or E5/G5|
@@ -148,12 +151,15 @@ The table also indicates the Office 365 Enterprise and Office 365 US Government 
 |**Phish delivered due to tenant or user override**<sup>1</sup>|Generates an alert when Microsoft  detects an admin or user override allowed the delivery of a phishing message to a mailbox. Examples of overrides include an inbox or mail flow rule that allows messages from a specific sender or domain, or an anti-spam policy that allows messages from specific senders or domains. This policy has a **High** severity setting.|Threat management|E5/G5 or Defender for Office 365 P2 add-on subscription|
 |**Suspicious email forwarding activity**|Generates an alert when someone in your organization has autoforwarded email to a suspicious external account. This is an early warning for behavior that may indicate the account is compromised, but not severe enough to restrict the user. This policy has a **High** severity setting. Although it's rare, an alert generated by this policy may be an anomaly. It's a good idea to [check whether the user account is compromised](../security/office-365-security/responding-to-a-compromised-email-account.md).|Threat management|E1/F1/G1, E3/F3/G3, or E5/G5|
 |**Suspicious email sending patterns detected**|Generates an alert when someone in your organization has sent suspicious email and is at risk of being restricted from sending email. This is an early warning for behavior that may indicate that the account is compromised, but not severe enough to restrict the user. This policy has a **Medium** severity setting. Although it's rare, an alert generated by this policy may be an anomaly. However, it's a good idea to [check whether the user account is compromised](../security/office-365-security/responding-to-a-compromised-email-account.md).|Threat management|E1/F1/G1, E3/F3/G3, or E5/G5  |
+|**Tenant Allow/Block List entry is about to expire**|Generates an alert when a Tenant Allow/Block List entry is about to be removed. This event is triggered three days prior to expiration date, which is based when the entry was created or last updated. This alert policy has an **Informational** severity setting. This is to inform admins of upcoming changes in the filters since the allow or block could be going away. For blocks, you can extend the expiration date to keep the block in place. For allows, you need to resubmit the item so that our analysts can take another look. However, if the allow has already been graded as a false positive, then the entry will only expire when the system filters have been updated to naturally allow the entry. For more information on events that trigger this alert, see [Manage the Tenant Allow/Block list](../security/office-365-security/tenant-allow-block-list.md).|Threat management|E5/G5 or Defender for Office 365 P2 add-on subscription|
 |**Tenant restricted from sending email**|Generates an alert when most of the email traffic from your organization has been detected as suspicious and Microsoft has restricted your organization from sending email. Investigate any potentially compromised user and admin accounts, new connectors, or open relays, and then contact Microsoft Support to unblock your organization. This policy has a **High** severity setting. For more information about why organizations are blocked, see [Fix email delivery issues for error code 5.7.7xx in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-700-through-5-7-750).|Threat management|E1/F1/G1, E3/F3/G3, or E5/G5|
+|**Tenant restricted from sending unprovisioned email**|Generates an alert when too much email is being sent from unregistered domains (also known as *unprovisioned* domains). Office 365 allows a reasonable amount of email from unregistered domains, but you should configure every domain that you use to send email as an accepted domain. This alert indicates that all users in the organization can no longer send email. This policy has a **High** severity setting. For more information about why organizations are blocked, see [Fix email delivery issues for error code 5.7.7xx in Exchange Online](/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/fix-error-code-5-7-700-through-5-7-750).|Threat management|E1/F1/G1, E3/F3/G3, or E5/G5|
 |**Unusual external user file activity**|Generates an alert when an unusually large number of activities are performed on files in SharePoint or OneDrive by users outside of your organization. This includes activities such as accessing files, downloading files, and deleting files. This policy has a **High** severity setting.|Information governance|E5/G5, Microsoft Defender for Office 365 P2, or Microsoft 365 E5 add-on subscription|
 |**Unusual volume of external file sharing**|Generates an alert when an unusually large number of files in SharePoint or OneDrive are shared with users outside of your organization. This policy has a **Medium** severity setting.|Information governance|E5/G5, Defender for Office 365 P2, or Microsoft 365 E5 add-on subscription|
 |**Unusual volume of file deletion**|Generates an alert when an unusually large number of files are deleted in SharePoint or OneDrive within a short time frame. This policy has a **Medium** severity setting.|Information governance|E5/G5, Defender for Office 365 P2, or Microsoft 365 E5 add-on subscription|
 |**Unusual increase in email reported as phish**|Generates an alert when there's a significant increase in the number of people in your organization using the Report Message add-in in Outlook to report messages as phishing mail. This policy has a **Medium** severity setting. For more information about this add-in, see [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).|Threat management|E5/G5 or Defender for Office 365 P2 add-on subscription|
 |**User impersonation phish delivered to inbox/folder**<sup>1,</sup><sup>2</sup>|Generates an alert when Microsoft detects that an admin or user override has allowed the delivery of a user impersonation phishing message to the inbox (or other user-accessible folder) of a mailbox. Examples of overrides include an inbox or mail flow rule that allows messages from a specific sender or domain, or an anti-spam policy that allows messages from specific senders or domains. This policy has a **Medium** severity setting.|Threat management|E5/G5 or Defender for Office 365 P2 add-on subscription|
+|**User requested to release a quarantined message**|Generates an alert when a user requests release for a quarantined message. To request the release of quarantined messages, the **Allow recipients to request a message to be released from quarantine** (_PermissionToRequestRelease_) permission is required in the quarantine policy (for example, from the **Limited access** preset permissions group). For more information, see [Allow recipients to request a message to be released from quarantine permission](../security/office-365-security/quarantine-policies.md#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission). This policy has an **Informational** severity setting.|Threat management|E1/F1/G1, E3/F3/G3, or E5/G5|
 |**User restricted from sending email**|Generates an alert when someone in your organization is restricted from sending outbound mail. This typically results when an account is compromised, and the user is listed on the **Restricted Users** page in the Microsoft 365 compliance center. (To access this page, go to **Threat management > Review > Restricted Users**). This policy has a **High** severity setting. For more information about restricted users, see [Removing a user, domain, or IP address from a block list after sending spam email](/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam).|Threat management|E1/F1/G1, E3/F3/G3, or E5/G5|
 |**User restricted from sharing forms and collecting responses**|Generates an alert when someone in your organization has been restricted from sharing forms and collecting responses using Microsoft Forms due to detected repeated phishing attempt behavior. This policy has a **High** severity setting.|Threat management|E1, E3/F3, or E5|
 
@@ -162,9 +168,11 @@ The table also indicates the Office 365 Enterprise and Office 365 US Government 
 
 The unusual activity monitored by some of the built-in policies is based on the same process as the alert threshold setting that was previously described. Microsoft establishes a baseline value that defines the normal frequency for "usual" activity. Alerts are then triggered when the frequency of activities tracked by the built-in alert policy greatly exceeds the baseline value.
 
-## Viewing alerts
+<a name="viewing-alerts"></a>
 
-When an activity performed by users in your organization matches the settings of an alert policy, an alert is generated and displayed on the **Alerts** page in the compliance center or the Defender portal. Depending on the settings of an alert policy, an email notification is also sent to a list of specified users when an alert is triggered. For each alert, the dashboard on the **Alerts** page displays the name of the corresponding alert policy, the severity and category for the alert (defined in the alert policy), and the number of times an activity has occurred that resulted in the alert being generated. This value is based on the threshold setting of the alert policy. The dashboard also shows the status for each alert. For more information about using the status property to manage alerts, see [Managing alerts](#managing-alerts).
+## View alerts
+
+When an activity performed by users in your organization matches the settings of an alert policy, an alert is generated and displayed on the **Alerts** page in the compliance center or the Defender portal. Depending on the settings of an alert policy, an email notification is also sent to a list of specified users when an alert is triggered. For each alert, the dashboard on the **Alerts** page displays the name of the corresponding alert policy, the severity and category for the alert (defined in the alert policy), and the number of times an activity has occurred that resulted in the alert being generated. This value is based on the threshold setting of the alert policy. The dashboard also shows the status for each alert. For more information about using the status property to manage alerts, see [Managing alerts](#manage-alerts).
 
 To view alerts:
 
@@ -176,7 +184,7 @@ To view alerts:
 
 ### Microsoft 365 Defender portal
 
-Go to <https://security.microsoft.com> and then select **Incidents & alerts** > **Alerts**. Alternatively, you can go directly to <https://security.microsoft.com/alerts>.
+Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and then select **Incidents & alerts** > **Alerts**. Alternatively, you can go directly to <https://security.microsoft.com/alerts>.
 
 ![In the Microsoft 365 Defender portal, select Incidents & alerts and then select Alerts.](../media/ViewAlertsDefenderPortal.png)
 
@@ -194,7 +202,7 @@ You can use the following filters to view a subset of all the alerts on the **Al
 
 - **Tags.** Use this filter to show alerts from one or more user tags. Tags are reflected based on tagged mailboxes or users that appear in the alerts. See [User tags in Office 356 ATP](../security/office-365-security/user-tags.md) to learn more.
 
-- **Source.** Use this filter to show alerts triggered by alert policies in the compliance center or alerts triggered by Office 365 Cloud App Security policies, or both. For more information about Office 365 Cloud App Security alerts, see [Viewing Cloud App Security alerts](#viewing-cloud-app-security-alerts).
+- **Source.** Use this filter to show alerts triggered by alert policies in the compliance center or alerts triggered by Office 365 Cloud App Security policies, or both. For more information about Office 365 Cloud App Security alerts, see [Viewing Defender for Cloud Apps alerts](#viewing-cloud-app-security-alerts).
 
 > [!IMPORTANT]
 > Filtering and sorting by user tags is currently in public preview.
@@ -213,7 +221,6 @@ The length of the aggregation interval depends on your Office 365 or Microsoft 3
 |E5 Compliance add-on or E5 Discovery and Audit add-on|1 minute|
 |Office 365 or Microsoft 365 E1/F1/G1 or E3/F3/G3|15 minutes|
 |Defender for Office 365 Plan 1 or Exchange Online Protection|15 minutes|
-
 
 When events that match the same alert policy occur within the aggregation interval, details about the subsequent event are added to the original alert. For all events, information about aggregated events is displayed in the details field and the number of times an event occurred with the aggregation interval is displayed in the activity/hit count field. You can view more information about all aggregated events instances by viewing the activity list.
 
@@ -254,6 +261,8 @@ To see which category a default alert policy is assigned to, see the table in [D
 |DLP Compliance Management||![Check mark.](../media/checkmark.png)|||||
 |Export|||||||
 |Hold|||||||
+|Information Protection Analyst||![Check mark.](../media/checkmark.png)|||||
+|Information Protection Investigator||![Check mark.](../media/checkmark.png)|||||
 |Manage Alerts||||||![Check mark.](../media/checkmark.png)|
 |Organization Configuration||||||![Check mark.](../media/checkmark.png)|
 |Preview|||||||
@@ -275,21 +284,22 @@ To see which category a default alert policy is assigned to, see the table in [D
 |View-Only Record Management|![Check mark](../media/checkmark.png)||||||
 |View-Only Retention Management|![Check mark](../media/checkmark.png)||||||
 
-
 > [!TIP]
 > To view the roles that are assigned to each of the default role groups, run the following commands in Security & Compliance Center PowerShell:
-> 
+>
 > ```powershell
 > $RoleGroups = Get-RoleGroup
 > ```
-> 
+>
 > ```powershell
 > $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
 > ```
 >
 > You can also view the roles assigned to a role group in the Microsoft 365 compliance center or the Microsoft 365 Defender portal. Go to the **Permissions** page, and select a role group. The assigned roles are listed on the flyout page.
 
-## Managing alerts
+<a name="manage-alerts"></a>
+
+## Manage alerts
 
 After alerts have been generated and displayed on the **Alerts** page in the compliance center, you can triage, investigate, and resolve them. The same [RBAC permissions](#rbac-permissions-required-to-view-alerts) that give users access to alerts also give them the ability to manage alerts.
 
@@ -315,19 +325,21 @@ Here are some tasks you can perform to manage alerts.
 
 - **Resolve alerts.** You can mark an alert as resolved on the flyout page for an alert (which sets the status of the alert to **Resolved**). Unless you change the filter, resolved alerts aren't displayed on the **Alerts** page.
 
-## Viewing Cloud App Security alerts
+<a name="viewing-cloud-app-security-alerts"></a>
 
-Alerts that are triggered by Office 365 Cloud App Security policies are now displayed on the **Alerts** page in the compliance center. This includes alerts that are triggered by activity policies and alerts that are triggered by anomaly detection policies in Office 365 Cloud App Security. This means you can view all alerts in the compliance center. Office 365 Cloud App Security is only available for organizations with an Office 365 Enterprise E5 or Office 365 US Government G5 subscription. For more information, see [Overview of Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
+## View Defender for Cloud Apps alerts
 
-Organizations that have Microsoft Cloud App Security as part of an Enterprise Mobility + Security E5 subscription or as a standalone service can also view Cloud App Security alerts that are related to Microsoft 365 apps and services in the Microsoft 365 compliance center or the Microsoft 365 Defender portal.
+Alerts that are triggered by Office 365 Cloud App Security policies are now displayed on the **Alerts** page in the compliance center. This includes alerts that are triggered by activity policies and alerts that are triggered by anomaly detection policies in Office 365 Cloud App Security. This means you can view all alerts in the compliance center. Office 365 Cloud App Security is only available for organizations with an Office 365 Enterprise E5 or Office 365 US Government G5 subscription. For more information, see [Overview of Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security).
 
-To display only Cloud App Security alerts in the compliance center or the Defender portal, use the **Source** filter and select **Cloud App Security**.
+Organizations that have Microsoft Defender for Cloud Apps as part of an Enterprise Mobility + Security E5 subscription or as a standalone service can also view Defender for Cloud Apps alerts that are related to Microsoft 365 apps and services in the Microsoft 365 compliance center or the Microsoft 365 Defender portal.
 
-![Use the Source filter to display only Cloud App Security alerts.](../media/FilterCASAlerts.png)
+To display only Defender for Cloud Apps alerts in the compliance center or the Defender portal, use the **Source** filter and select **Defender for Cloud Apps**.
 
-Similar to an alert triggered by an alert policy in the compliance center, you can select a Cloud App Security alert to display a flyout page with details about the alert. The alert includes a link to view the details and manage the alert in the Cloud App Security portal and a link to the corresponding Cloud App Security policy that triggered the alert. See [Monitor alerts in Cloud App Security](/cloud-app-security/monitor-alerts).
+![Use the Source filter to display only Defender for Cloud Apps alerts.](../media/FilterCASAlerts.png)
 
-![Alert details contain links to the Cloud App Security portal.](../media/CASAlertDetail.png)
+Similar to an alert triggered by an alert policy in the compliance center, you can select a Defender for Cloud Apps alert to display a flyout page with details about the alert. The alert includes a link to view the details and manage the alert in the Defender for Cloud Apps portal and a link to the corresponding Defender for Cloud Apps policy that triggered the alert. See [Monitor alerts in Defender for Cloud Apps](/cloud-app-security/monitor-alerts).
+
+![Alert details contain links to the Defender for Cloud Apps portal.](../media/CASAlertDetail.png)
 
 > [!IMPORTANT]
-> Changing the status of a Cloud App Security alert in the compliance center won't update the resolution status for the same alert in the Cloud App Security portal. For example, if you mark the status of the alert as **Resolved** in the compliance center, the status of the alert in the Cloud App Security portal is unchanged. To resolve or dismiss a Cloud App Security alert, manage the alert in the Cloud App Security portal.
+> Changing the status of a Defender for Cloud Apps alert in the compliance center won't update the resolution status for the same alert in the Defender for Cloud Apps portal. For example, if you mark the status of the alert as **Resolved** in the compliance center, the status of the alert in the Defender for Cloud Apps portal is unchanged. To resolve or dismiss a Defender for Cloud Apps alert, manage the alert in the Defender for Cloud Apps portal.
