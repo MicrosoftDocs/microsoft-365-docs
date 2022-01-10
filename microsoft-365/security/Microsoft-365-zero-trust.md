@@ -1,11 +1,13 @@
 ---
 title: "Microsoft 365 Zero Trust deployment plan"
 f1.keywords:
-- CSH
+- deploy zero trust
+- zero trust strategy
 ms.author: bcarter
 author: brendacarter
 manager: dansimp
 audience: Admin
+description: Learn how to deploy Microsoft 365 Zero Trust security into your environment to defend against threats and protect sensitive data.
 ms.topic: tutorial
 ms.prod: m365-security
 ms.technology: m365d
@@ -13,10 +15,11 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
+- deploy zero trust
+- zero trust strategy
 - M365-security-compliance
 - m365solution-zerotrust
 - m365solution-overview
-description: "Implement Zero Trust principles, architecture, and capabilities for Microsoft 365."
 ---
 
 # Microsoft 365 Zero Trust deployment plan
