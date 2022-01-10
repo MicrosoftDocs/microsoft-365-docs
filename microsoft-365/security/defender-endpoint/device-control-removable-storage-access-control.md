@@ -177,9 +177,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
     
    - Once you deploy this setting, you will see ‘Enabled’ or ‘Disabled’ - Disabled means this machine does not have Removable Storage Access Control policy running
 
-    ![image](https://user-images.githubusercontent.com/81826151/148609685-4c05f002-5cbe-4aab-9245-83e730c5449e.png)
-
-    
+    :::image type="content" source="images/148609685-4c05f002-5cbe-4aab-9245-83e730c5449e.png" alt-text="Enabled or Disabled device control in PowerShell code":::
  
     
 ## Deploying and managing policy via Intune OMA-URI
