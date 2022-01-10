@@ -22,7 +22,7 @@ You can use SharePoint Syntex to help you automatically generate standard repeti
 With content assembly, you can use an existing document to create a *modern template*, and then use that template to automatically generate new content using SharePoint lists or user inputs as a data source.
 
 > [!NOTE]
-> You must be a licensed SharePoint Syntex user to access and use content assembly capabilities. You should also have permissions to manage lists.
+> You must be a licensed SharePoint Syntex user to access and use content assembly capabilities. You must also have permissions to manage SharePoint lists.
 
 ## Create a modern template
 
@@ -54,10 +54,14 @@ Follow these steps to create a modern template.
  
    ![Screenshot of the template viewer showing the plus button used to create a placeholder.](../media/content-understanding/content-assembly-create-template-4.png)
 
-6. The **All placeholders** panel will open, where you'll give the placeholder a relevant name and choose the type of input you want to associate with the placeholder. Currently, there are two types of input:
+6. The **All placeholders** panel will open, where you'll give the placeholder a relevant name and choose the type of input you want to associate with the placeholder.
+ 
+   ![Screenshot of the template viewer showing a field highlighted and the All placeholders panel.](../media/content-understanding/content-assembly-create-template-4a.png)
 
-    - [Manual input](#associate-a-placeholder-with-manual-input)
-    - [SharePoint list](#associate-a-placeholder-with-a-sharepoint-list)
+Currently, there are two ways for how users can fill in a placeholder:
+
+    - [Manual input: **Enter text or select a date**](#associate-a-placeholder-with-manual-input)
+    - [SharePoint list: **Select from choices in a column from a list or library**](#associate-a-placeholder-with-a-sharepoint-list)
 
 ### Associate a placeholder with manual input 
 
@@ -128,7 +132,7 @@ You can use a modern template to quickly create similar documents without having
 
 2. The template opens in the template studio.
 
-3. On the **Create a new document from this template** panel, enter the information, and then select **Create Document**.
+3. On the **Create a new document from this template** panel, enter the information, and then select **Create document**.
 
    ![Screenshot of document library showing the modern template choices on the New menu.](../media/content-understanding/content-assembly-create-document-2.png)
 
