@@ -17,7 +17,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Activity explorer rounds out the functionality of the data classification feature by letting you see and filter on the actions users are taking on your labeled content."
+description: "Activity explorer lets you see and filter on the actions users are taking on your labeled content."
 ---
 
 # Get started with activity explorer
@@ -52,7 +52,26 @@ Every account that accesses and uses data classification must have a license ass
 
 ### Permissions
 
- In order to get access to the activity explorer tab, an account must be explicitly assigned membership in any one of these role groups or explicitly granted the role.
+An account must be explicitly assigned membership in any one of these role groups or explicitly granted the role.
+
+### Roles and Role Groups in preview
+
+There are roles and role groups in preview that you can test out to fine-tune your access controls.
+
+Here's a list of Microsoft Information Protection (MIP) roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Information Protection Admin
+- Information Protection Analyst
+- Information Protection Investigator
+- Information Protection Reader
+
+Here's a list of MIP role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Information Protection
+- Information Protection Admins
+- Information Protection Analysts
+- Information Protection Investigators
+- Information Protection Readers
 
 <!--
 > [!IMPORTANT]
@@ -75,7 +94,7 @@ Every account that accesses and uses data classification must have a license ass
 
 Activity explorer gathers activity information from the audit logs on multiple sources of activities. For more detailed information on what labeling activity makes it to Activity explorer, see [Labeling events available in Activity explorer](data-classification-activity-explorer-available-events.md).
 
-**Sensitivity label activities** and **Retention labeling activities** from Office native applications, Azure Information Protection add-in, SharePoint Online, Exchange Online (sensitivity labels only) and OneDrive. Some examples are:
+**Sensitivity label activities** and **Retention labeling activities** from Office native applications, Azure Information Protection add-in, SharePoint Online, Exchange Online (sensitivity labels only), and OneDrive. Some examples are:
 
 - label applied
 - label changed (upgraded, downgraded, or removed)
@@ -101,7 +120,7 @@ Activity explorer also gathers **DLP policy matches** events from Exchange Onlin
 - copied to network share
 - accessed by unallowed app 
 
-The value of understanding what actions are being taken with your sensitive labeled content is that you can see if the controls that you have already put into place, such as [data loss prevention](dlp-learn-about-dlp.md) are effective or not. If not, or if you discover something unexpected, such as a large number of items that are labeled `highly confidential` and are downgraded `general`, you can manage your various policies and take new actions to restrict the undesired behavior.
+Understanding what actions are being taken with your sensitive labeled content helps you see if the controls that you have in place, such as [data loss prevention](dlp-learn-about-dlp.md) policies are effective or not. If not, or if you discover something unexpected, such as a large number of items that are labeled `highly confidential` and are downgraded `general`, you can manage your various policies and take new actions to restrict the undesired behavior.
 
 > [!NOTE]
 > Activity explorer doesn't currently monitor retention activities for Exchange Online.
