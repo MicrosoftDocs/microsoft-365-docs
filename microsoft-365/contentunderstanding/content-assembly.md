@@ -132,7 +132,7 @@ You can use a modern template to quickly create similar documents without having
 
 2. The template opens in the template studio.
 
-3. On the **Create a new document from this template** panel, enter the information, and then select **Create document**.
+3. On the **Create a document from a template** panel, enter the information, and then select **Create document**.
 
    ![Screenshot of document library showing the modern template choices on the New menu.](../media/content-understanding/content-assembly-create-document-2.png)
 
