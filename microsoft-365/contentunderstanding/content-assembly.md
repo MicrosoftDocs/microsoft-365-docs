@@ -60,10 +60,10 @@ Follow these steps to create a modern template.
 
 Currently, there are two ways for to users to fill in a placeholder:
 
-- [Enter text or select a date](#associate-a-placeholder-with-manual-input)
-- [Select from choices in a column from a list or library](#associate-a-placeholder-with-a-sharepoint-list)
+- [Enter text or select a date](#associate-a-placeholder-by-entering-text-or-selecting-a-date)
+- [Select from choices in a column of a list or library](#associate-a-placeholder-by-selecting-choices-in-a-column-of-a-list-or-library)
 
-### Associate a placeholder with manual input 
+### Associate a placeholder by entering text or selecting a date 
 
 On the **All placeholders** panel:
 
@@ -77,7 +77,7 @@ On the **All placeholders** panel:
 
 4. Select **Add**.
 
-### Associate a placeholder with a SharePoint list
+### Associate a placeholder by selecting from choices in a column of a list or library
 
 On the **All placeholders** panel:
 
