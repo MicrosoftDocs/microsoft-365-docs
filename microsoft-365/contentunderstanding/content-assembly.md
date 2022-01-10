@@ -17,12 +17,13 @@ description: Learn how to automatically create documents and other content using
 
 # Create documents using content assembly in Microsoft SharePoint Syntex
 
-You can use SharePoint Syntex to help you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, sales pitches, and correspondence. You can do all this quicker, more consistent, and less prone to errors by using content assembly in SharePoint Syntex.
+You can use SharePoint Syntex to help you automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, sales pitches, and correspondence. You can do all this quicker, more consistentently, and less prone to errors by using content assembly in SharePoint Syntex.
 
-With content assembly, you can use an existing document to create a *modern template*, and then use that template to automatically generate new content using SharePoint lists as a data source.
+With content assembly, you can use an existing document to create a *modern template*, and then use that template to automatically generate new content using SharePoint lists or user inputs as a data source.
 
 > [!NOTE]
 > You must be a SharePoint Syntex licensed user to access and use content assembly capabilities.
+> You should have permissions to manage lists
 
 ## Create a modern template
 
@@ -39,14 +40,12 @@ Follow these steps to create a modern template.
    > [!NOTE]
    > Currently, you can upload only Word documents (.docx extension) to create templates. Upload Word documents from your local storage or desktop.
 
-3. After you upload the document, the document is displayed in the template viewer where you can convert the document to a template.
+3. After you upload the document, the document is displayed in the template studio where you can convert the document to a template.
  
    ![Screenshot of the document in the template viewer.](../media/content-understanding/content-assembly-create-template-3.png)
 
-   > [!NOTE]
-   > Currently, the document is displayed without formatting. This is a technical limitation that will be resolved in a future release.
-
-4. At the upper-left corner of the template viewer, select the name of the document to rename the template.
+   
+4. At the upper-left corner of the template studio, select the name for the template. The default name is the name of the document used to create the template
  
    ![Screenshot of the template viewer showing the name of the document to select to rename.](../media/content-understanding/content-assembly-create-template-3a.png)
 
@@ -65,13 +64,13 @@ Follow these steps to create a modern template.
 
 On the **All placeholders** panel:
 
-1. In the **Placeholder name** field, enter a relevant name for the placeholder.
+1. In the **Name** field, enter a relevant name for the placeholder.
 
    ![Screenshot of the template viewer showing the All placeholders panel for manual input.](../media/content-understanding/content-assembly-create-template-5.png)
 
-2. In the **Choose the input type for the placeholder value** section, select **Manual input only**.
+2. In the **How authors fill in this placeholder** section, select **Enter text or select date**.
 
-3. In the **Choose the data type** field, select the data type you want to associate with the placeholder. Currently, there are six options available: **Single line of text**, **Multiple lines of text**, **Number**, **Date and time**, **Email**, and **Hyperlink**.
+3. In the **Type of info** field, select the data type you want to associate with the placeholder. Currently, there are six options available: **Single line of text**, **Multiple lines of text**, **Number**, **Date and time**, **Email**, and **Hyperlink**.
 
 4. Select **Add**.
 
@@ -79,11 +78,11 @@ On the **All placeholders** panel:
 
 On the **All placeholders** panel:
 
-1. In the **Placeholder name** field, enter a relevant name for the placeholder.
+1. In the **Name** field, enter a relevant name for the placeholder.
 
    ![Screenshot of the template viewer showing the All placeholders panel for input from a SharePoint list.](../media/content-understanding/content-assembly-create-template-6.png)
 
-2. In the **Choose the input type for the placeholder value** section, select **Choose from a column of a list**, and then choose **Select**.
+2. In the **How authors fill in this placeholder ** section, select **Select from choices in a coulmn of a list or library**, and then choose **Select**.
 
 3. On the **Select a list for adding a source column** page, select the list you want to use, and then select **Next**.
 
@@ -93,13 +92,13 @@ On the **All placeholders** panel:
 
    ![Screenshot of the Select a source column from the existing list page showing column names.](../media/content-understanding/content-assembly-create-template-8.png)
 
-    If you want to see the original page of lists again, select **Go to the list for reference**.
+    If you want to see the original page of lists again, select **Go to (list name)** link at the bottom of the list.
 
 5. When you're done, you'll see that the list field has been associated with the placeholder.
 
    ![Screenshot of the All placeholders panel showing the list field associated with the placeholder.](../media/content-understanding/content-assembly-create-template-9.png)
 
-6. If you want users to be able to add manual input in addition to choose from a list, select **Allow manual input as well**. In this case, the default for the manual input data type is *Single line of text*.
+6. If you want users to be able to add inputs manually, in addition to choosing from a list, select **Allow authors to add new choicesl**. In this case, the default for the manual input data type is *Single line of text*. Also the values input by the authors will only be used to generate the document. They will not be added to the SharePoint list.
  
 You can create as many placeholders as you think are necessary. When you're done, you can choose to save the template as a draft or publish the template.
 
@@ -130,7 +129,7 @@ You can use a modern template to quickly create similar documents without having
 
 2. The template opens in the template viewer.
 
-3. On the **Fill in the placeholder values** panel, enter the information, and then select **Create**.
+3. On the **Create a new document from this template** panel, enter the information, and then select **Create Document**.
 
    ![Screenshot of document library showing the modern template choices on the New menu.](../media/content-understanding/content-assembly-create-document-2.png)
 
