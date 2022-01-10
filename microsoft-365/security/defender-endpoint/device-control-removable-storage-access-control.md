@@ -167,16 +167,19 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
 4. Default enforcement: allows you to set default access (Deny or Allow) to removable media if there is no policy. For example, you only have policy (either Deny or Allow) for RemovableMediaDevices, but do not have any policy for CdRomDevices or WpdDevices, and you set default Deny through this policy, Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked. 
 
-   - Once you deploy this setting, you will see ‘Default Allow’ or ‘Default Deny’
-    ![image](https://user-images.githubusercontent.com/81826151/148609579-a7df650b-7792-4085-b552-500b28a35885.png)
+   - Once you deploy this setting, you will see **Default Allow** or **Default Deny**
+
+    :::image type="content" source="images/148609579-a7df650b-7792-4085-b552-500b28a35885.png" alt-text="Default Allow or Default Deny PowerShell code":::
 
 5. Enable or Disable Removable Storage Access Control: you can set this value to temporarily disable Removable Storage Access Control
      
-    ![image](https://user-images.githubusercontent.com/81826151/148608318-5cda043d-b996-4146-9642-14fccabcb017.png)
+    :::image type="content" source="images/148608318-5cda043d-b996-4146-9642-14fccabcb017.png" alt-text="Device Control settings":::
     
    - Once you deploy this setting, you will see ‘Enabled’ or ‘Disabled’ - Disabled means this machine does not have Removable Storage Access Control policy running
 
     ![image](https://user-images.githubusercontent.com/81826151/148609685-4c05f002-5cbe-4aab-9245-83e730c5449e.png)
+
+    
  
     
 ## Deploying and managing policy via Intune OMA-URI
