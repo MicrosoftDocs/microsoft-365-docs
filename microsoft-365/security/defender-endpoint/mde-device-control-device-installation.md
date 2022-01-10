@@ -24,7 +24,7 @@ ms.technology: mde
 Microsoft Defender for Endpoint Device Control Removable Storage Access Control enables you to do the following task:
 
 - Prevent people from installing specific devices.
-- Allow people from installing specific devices but prevent others.
+- Allow people to install specific devices but prevent other devices.
 
 > [!NOTE]
 > To find the difference between Device Installation and Removable storage access control, see [Microsoft Defender for Endpoint Device Control Removable Storage Protection](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection?view=o365-worldwide&preserve-view=true).
