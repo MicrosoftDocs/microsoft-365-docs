@@ -14,6 +14,8 @@ ms.collection:
 - enroll devices into management
 - enroll devices with Intune
 - Intune mobile device platforms
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: 
 keywords: 
 ---
