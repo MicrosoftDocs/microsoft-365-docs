@@ -41,7 +41,7 @@ If you're a Defender for Endpoint customer, you need to apply for **Microsoft Th
 
 ## Apply for Microsoft Threat Experts - Targeted Attack Notifications service
 
-If you're already a Defender for Endpoint customer, you can apply through the Microsoft Defender Security Center.
+If you're already a Defender for Endpoint customer, you can apply through the Microsoft 365 Defender portal.
 
 1. From the navigation pane, go to **Settings > General > Advanced features > Microsoft Threat Experts - Targeted Attack Notifications**.
 
@@ -89,7 +89,7 @@ This is available as a subscription service. If you're already a Defender for En
 
 ## Consult a Microsoft threat expert about suspicious cybersecurity activities in your organization
 
-You can partner with Microsoft Threat Experts who can be engaged directly from within the Microsoft Defender Security Center for timely and accurate response. Experts provide insights to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised device, or a threat intelligence context that you see on your portal dashboard.
+You can partner with Microsoft Threat Experts who can be engaged directly from within the Microsoft 365 Defender portal for timely and accurate response. Experts provide insights to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised device, or a threat intelligence context that you see on your portal dashboard.
 
 > [!NOTE]
 >
