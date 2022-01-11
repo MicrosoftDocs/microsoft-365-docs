@@ -38,6 +38,8 @@ Below is the complete list of templates in Compliance Manager. Template names ma
 
 Each template (apart from the baseline) is available in at least one version designed for use with a specific product, such as Microsoft 365, along with a universal version that you can use to assess other products of your choice. To learn more about template options, see [Learn about assessment templates](compliance-manager-templates.md).
 
+You can also select individual templates in Compliance Manager to view more information about them, including a description of the regulation and properties of the template. Read the **About** section for a summary.
+
 ### Where to find your templates
 
 To review the templates available to your organization, go to your **Assessment templates** page. Learn more about [how to view and manage your templates](compliance-manager-templates.md#view-and-manage-templates).

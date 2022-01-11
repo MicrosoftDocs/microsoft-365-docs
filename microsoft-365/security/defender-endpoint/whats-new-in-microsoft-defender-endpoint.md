@@ -57,6 +57,8 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 ## December 2021
 
+- Threat and vulnerability management can help identify Log4j vulnerabilities in applications and components. [Learn more](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM).
+
 - Discover IoT devices (preview): [Device discovery](device-discovery.md) now has the ability to help you find unmanaged IoT devices connected to your corporate network. This gives you a single unified view of your IoT inventory alongside the rest of your IT devices (workstations, servers, and mobile).
 
 - [Microsoft Defender for IoT integration (preview)](enable-microsoft-defender-for-iot-integration.md): This integration enhances your device discovery capabilities with the agentless monitoring capabilities provided by Microsoft Defender for IoT. This provides increased visibility to help locate, identify, and secure the IoT devices in your network.
@@ -112,7 +114,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 
 ## March 2021
-- [Manage tamper protection using the Microsoft Defender Security Center](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> You can manage tamper protection settings on Windows 10, Windows Server 2016, Windows Server 2019, and Windows Server 2022 by using a method called *tenant attach*.
+- [Manage tamper protection using the Microsoft 365 Defender portal](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> You can manage tamper protection settings on Windows 10, Windows Server 2016, Windows Server 2019, and Windows Server 2022 by using a method called *tenant attach*.
 
 
 ## January 2021
