@@ -32,7 +32,7 @@ If you need exceptions for individual emails or documents, such as a longer rete
 For more information about retention policies and retention labels, and how retention works in Microsoft 365, see [Learn about retention policies and retention labels](retention.md). 
 
 > [!NOTE]
-> If you need lifecycle management of high-value items for business, legal, or regulatory record-keeping requirements: Use retention labels with [records management](records-management.md) rather than retention labels with information governance.
+> If you need lifecycle management of high-value items for business, legal, or regulatory record-keeping requirements, use retention labels with [records management](records-management.md) rather than retention labels with information governance.
 
 Other information governance capabilities to help you keep what you need, delete what you don't:
 

@@ -30,7 +30,7 @@ Ready to start governing your organization's data by retaining the content that 
 1. **Understand how retention and deletion works** in Microsoft 365, and then identify the workloads that need a retention policy and whether you need to create retention labels for exceptions: [Learn about retention](retention.md)
     
     > [!NOTE]
-    > If you need lifecycle management of high-value items for business, legal, or regulatory record-keeping requirements: Use retention labels with [records management](records-management.md) rather than information governmance.
+    > If you need lifecycle management of high-value items for business, legal, or regulatory record-keeping requirements: Use retention labels with [records management](records-management.md) rather than information governance.
 
 2. **Create retention policies** for the workloads you identified, specifying retention settings and actions that are required by your organization policies or industry regulations: [Create retention policies](create-retention-policies.md)
     
