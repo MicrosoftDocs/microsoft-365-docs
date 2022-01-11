@@ -50,7 +50,7 @@ Follow these steps to create a modern template.
 
 5. Create placeholders for all dynamic text in the document that users might want to change from one document to another. For example, you might want to create a placeholder for company name, client name, address, phone number, date, and so on.
 
-    To create a placeholder, simply select the text (such as the address). The **All placeholders** panel will open, where you'll give the placeholder a relevant name and choose the type of input you want to associate with the placeholder.
+    To create a placeholder, select the text (such as the date). The **All placeholders** panel will open, where you'll give the placeholder a relevant name and choose the type of input you want to associate with the placeholder.
  
    ![Screenshot of the template viewer showing a field highlighted and the All placeholders panel.](../media/content-understanding/content-assembly-create-template-4a.png)
 
@@ -130,7 +130,7 @@ You can use a modern template to quickly create similar documents without having
 
 3. On the **Create a document from a template** panel, enter the information, and then select **Create document**.
 
-   ![Screenshot of document library showing the modern template choices on the New menu.](../media/content-understanding/content-assembly-create-document-2.png)
+   ![Screenshot of document library showing the Create a document from a template panel.](../media/content-understanding/content-assembly-create-document-2.png)
 
    To help reduce time and effort involved in filling values for placeholders, SharePoint Syntex provides:
 
@@ -138,7 +138,7 @@ You can use a modern template to quickly create similar documents without having
       - Autofill placeholder values if able to uniquely identify a record for placeholders associated with the same list.
 
 > [!NOTE]
-> Currently, only Word documents (.docx extension) are supported for templatization. Before uploading the document please ensure that the document does not have "Track changes" enabled or comments <br>The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library. <br>You can create placeholders only for text. Currently, images, smart art, tables, and bullet lists are not supported. <br>Once a document is created from a template, it is not associated with the template.
+> Currently, only Microsoft Word documents (.docx extension) are supported for templatization. Before uploading the document, ensure that the Word document does not have **Track changes** enabled or comments. <br>The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library. <br>You can create placeholders only for text. Currently, images, smart art, tables, and bullet lists are not supported. <br>Once a document is created from a template, it is not associated with the template.
 
 
 
