@@ -81,7 +81,7 @@ When a disposition review is triggered at the end of the retention period, the r
 
 You can customize the notification email that reviewers receive, including instructions in different languages. For multi-language support, you must specify the translations yourself and this custom text is displayed to all reviewers irrespective of their locale.
 
-Users receive an initial email notification per label at the end of the item's retention period, with a reminder per label once a week of all disposition reviews that they are assigned. They can click the link in the notification and reminder emails to go to the **Disposition** page in the Microsoft 365 compliance center to review the content and take an action. Alternately, the reviewers can go directly to the **Disposition** page in the compliance center. Then:
+Users receive an initial email notification per label at the end of the item's retention period, with a reminder per label once a week of all disposition reviews that they are assigned. They can click the link in the notification and reminder emails to go directly to the **Records management** > **Disposition** page in the Microsoft 365 compliance center to review the content and take an action. Alternately, the reviewers can navigate to this **Disposition** page in the compliance center. Then:
 
 - Reviewers see only the disposition reviews that are assigned to them, whereas administrators who are added to the selected security group for records manager see all disposition reviews.
 
@@ -150,7 +150,7 @@ Example default email notification sent to a reviewer:
 
 You can customize the email messages that are sent to disposition reviewers for the initial notification and then reminders.
 
-From any of the Disposition pages in the compliance center, select **Records management settings**:  
+From any of the Records management pages in the compliance center, select **Records management settings**:  
 
 ![Records management settings.](../media/record-management-settings.png)
 
