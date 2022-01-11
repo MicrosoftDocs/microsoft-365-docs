@@ -28,7 +28,7 @@ description: "Learn how to verify your email and domain ownership to take over a
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
 
-If you are an admin and want to take over an unmanaged tenant created by a self-service user signup, you can do this with an internal admin takeover.
+If you are an admin and want to take over an unmanaged tenant created by a self-service user signup, you can do that with an internal admin takeover.
 
 > [!NOTE]
 > A self-service sign up for any cloud service that uses Azure AD will add the user to an unmanaged or "shadow" Azure AD directory and create an unmanaged tenant. An unmanaged tenant is a directory without a global administrator. To determine whether a tenant is managed or unmanaged, please see [Determining Tenant Type](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type). 
@@ -56,7 +56,7 @@ If you are an admin and want to take over an unmanaged tenant created by a self-
 
 2. Select **Yes, I want to be the admin**.
 
-3. Verify that you own the domain you want to take over by adding a TXT record to your domain registrar. The wizard will give you the TXT record to add, as well as provide a link to your registrar's website, and a link to step-by-step instructions.
+3. Verify that you own the domain you want to take over by adding a TXT record to your domain registrar. The wizard will give you the TXT record to add, and provide a link to your registrar's website, and a link to step-by-step instructions.
     
 4. Once you've added the TXT record to your registrar site, return to the wizard and select **Okay, I've added the record**.
     
@@ -65,7 +65,7 @@ If you are an admin and want to take over an unmanaged tenant created by a self-
   
 ## Related content
 
-YouTube: [3 steps to do an IT Admin Takeover for Power BI and Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk) (video)\
+YouTube: [Three steps to do an IT Admin Takeover for Power BI and Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk) (video)\
 [Admin takeover in Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (article)\
 [Using self-service sign up in your organization](self-service-sign-up.md) (article)\
 [Understanding the Power BI service administrator role](/power-bi/service-admin-role) (article)

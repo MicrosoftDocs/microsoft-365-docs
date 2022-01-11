@@ -101,12 +101,12 @@ sections:
               - public services
               - department appointments
           
-          - Education -- K-12
+          - Education--K-12
               - parent-teacher conferences
               - school town hall
               - student-counselor visits
           
-          - Education -- Higher Ed
+          - Education--Higher Ed
               - office hours
               - tutoring
               - student services
@@ -182,7 +182,7 @@ sections:
       - question: |
           How does Bookings work across time zones?
         answer: |
-          All times are in the business time zone (your local time zone) by default. Any setting that you configure for a Bookings calendar, such as working hours, will appear in this time zone. The Self-service page has the ability to display all the appointment times in the end-user's time zone, which can be turned off if desired. If **Always show time slots in business time zone** remains unchecked on the Bookings page tab, then people visiting the page will see time slots in their own local time zones.
+          All times are in the business time zone (your local time zone) by default. Any setting that you configure for a Bookings calendar, such as working hours, will appear in this time zone. The Self-service page has the ability to display all the appointment times in the end user's time zone, which can be turned off if desired. If **Always show time slots in business time zone** remains unchecked on the Bookings page tab, then people visiting the page will see time slots in their own local time zones.
           
           :::image type="content" source="media/bookings-faq-region.png" alt-text="Bookings region and time zone settings":::
           
@@ -209,7 +209,7 @@ sections:
           Emails are triggered based on settings in the Services tab in the Bookings Web app. A booking made by the customer on the Self-service page, or on the Calendar tab in the Bookings Web app, will trigger a confirmation and/or a reminder email. The same thing will happen when someone makes a change to the booking via the **Manage booking** button in the confirmation email or within the Web app. Reminder emails are sent at a specified time period prior to an appointment, as detailed in the Services tab in the Bookings Web app.
 
       - question: |
-          Can I book classroom-style appointments that are 1:many instead of 1:1?
+          Can I book classroom-style appointments that are 1: many instead of 1:1?
         answer: |
           Yes, we have a group bookings functionality that allows multiple people to book the same appointment at the same time (such as for a fitness class). This functionality is described in detail [here](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120).
           
@@ -223,12 +223,12 @@ sections:
       - question: |
           How frequently does the Home page update?
         answer: |
-          The latest data linked to your Home page is retrieved  whenever the Web app is loaded. For further details on the type of information tracked by Bookings, see this [support article](metrics-and-activity-tracking.md).
+          The latest data linked to your Home page is retrieved  whenever the Web app is loaded. For more information on the type of information tracked by Bookings, see this [support article](metrics-and-activity-tracking.md).
           
       - question: |
           Can I turn off the email notifications for Time Off?
         answer: |
-          Recording Time Off within the Bookings Web app will always trigger a notification email to staff members. If any staff members are confused about the notification, we recommend you add more detail in the notes or title of the Time Off notification, to better inform staff about what is occurring on the admin side.
+          Recording Time Off within the Bookings Web app will always trigger a notification email to staff members. If any staff members are confused about the notification, we recommend you add more detail in the notes or title of the Time-Off notification, to better inform staff about what is occurring on the admin side.
 
       - question: |
           Can Bookings calendars be cloned or duplicated, and can they be templatized for easy scaling?
@@ -248,7 +248,7 @@ sections:
       - question: |
           What options are available for embedding a consent form or disclosure for those booking an appointment?
         answer: |
-          We recommend enabling the **Customer data usage consent** check box in the Booking page and customizing the wording to properly convey your organization's disclosure or consent requirements. Another option is to add a custom field to the service that includes a link to the consent form, and require customers to confirm that they have completed the form before they can proceed with making an appointment. You can also add the consent form URL as additional notes in confirmation and reminder emails, but this will not prevent users from booking an appointment.
+          We recommend enabling the **Customer data usage consent** check box in the Booking page and customizing the wording to properly convey your organization's disclosure or consent requirements. Another option is to add a custom field to the service that includes a link to the consent form, and require customers to confirm that they have completed the form before they can proceed with making an appointment. You can also add the consent form URL as another notes in confirmation and reminder emails, but this will not prevent users from booking an appointment.
 
       - question: |
           What changes can be made to the staff selection capability on the Self-service booking page?
@@ -258,7 +258,7 @@ sections:
       - question: |
           Can Bookings support many concurrent booking requests and Self-service page visits?
         answer: |
-          Booking can support a large quantity of visitors and bookings at one time. If the page experiences a very large volume of traffic, users will receive a “server busy” error. Appointment availability is updated when the page is loaded, as well as when a booking is made. If multiple people are trying to book the same appointment at one time, Bookings will only let one person book that time and give a notification message to the other potential customers, and prompt them to find a different time.
+          Booking can support a large quantity of visitors and bookings at one time. If the page experiences a large volume of traffic, users will receive a “server busy” error. Appointment availability is updated when the page is loaded, and when a booking is made. If multiple people are trying to book the same appointment at one time, Bookings will only let one person book that time and give a notification message to the other potential customers, and prompt them to find a different time.
 
   - name: Privacy
     questions:
@@ -287,7 +287,7 @@ sections:
       - question: |
           Is there the ability to customize email addresses for customer replies?
         answer: |
-          There is the ability to define which email address customer send their replies to. This setting is on the **Business information** tab. The Bookings mailbox name itself can also be changed within Exchange, through usual Exchange mailbox renaming processes.
+          There is the ability to define which email address customer sends their replies to. This setting is on the **Business information** tab. The Bookings mailbox name itself can also be changed within Exchange, through usual Exchange mailbox-renaming processes.
 
       - question: |
           We would like for the customer to accept our terms and conditions during the booking process. Is that possible?
@@ -301,17 +301,17 @@ sections:
         answer: |
           The following command can be used to retrieve information of all Bookings mailboxes and users who have access to them.
           
-          `Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited | Get-MailboxPermission |Select-Object Identity,User,AccessRights | Where-Object {($_.user -like '*@*')}`
+          `Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize: Unlimited | Get-MailboxPermission |Select-Object Identity, User,AccessRights | Where-Object {($_.user -like '*@*')}`
           
   - name: Technical Questions
     questions:
       - question: |
           If a user schedules an appointment for a service consisting of an online meeting, how do they receive the Microsoft Teams link to the meeting if they leave the optional email address field empty?
         answer: |
-          If the system does not have the customer's email information, there is no way for the confirmation mail to be delivered to the customer, and thus they will not receive a Teams link. The solution is to set the email address as a required field, which you can do on the Services tab of Bookings. Note that whenever you create a new service in Bookings, the customer email field is set as a required field by default.
+          If the system does not have the customer's email information, there is no way for the confirmation mail to be delivered to the customer, and thus they will not receive a Teams link. The solution is to set the email address as a required field, which you can do on the Services tab of Bookings. Remember that whenever you create a new service in Bookings, the customer email field is set as a required field by default.
 
       - question: |
-          How are staff assigned to appointments when “Anyone” is selected, or when customers do not have the ability to choose a staff member for the appointment?
+          How is staff assigned to appointments when “Anyone” is selected, or when customers do not have the ability to choose a staff member for the appointment?
         answer: |
           Staff are assigned randomly in these scenarios, out of all staff members available at the time of the appointment being booked. Currently there is no way to ensure equal distribution of randomly assigned appointments across all members of the staff, or to cap the number of assigned appointments to each staff member. If there is load-balancing that needs to be done across your staff after a number of random assignments, it can be done manually in the Calendar tab within the Bookings page.
 
@@ -352,7 +352,7 @@ sections:
              > This setting shares your free/busy information with Bookings and with other users in your organization. It does not include any other information, such as what type of appointment you have scheduled, who you have scheduled the appointment with, or the location.
           
              > [!div class="mx-imgBorder"]
-             > ![Image of calendar sharing screen with Can view when I'm busy enabled](../media/bookings-view-busy.png)
+             > ![Image of calendar-sharing screen with Can view when I'm busy enabled](../media/bookings-view-busy.png)
           
           1. Select **Done**.
           

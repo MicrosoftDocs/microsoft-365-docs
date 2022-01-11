@@ -35,7 +35,7 @@ With Advanced eDiscovery, legal teams can create and customize their legal hold 
 
 1. **Issuance notice:** A legal hold notice is issued (or initiated) by a notification from the legal department to custodians who may have relevant information about the case matter. This notice instructs the custodians to preserve any information that may be needed for discovery.
 
-2. **Re-Issuance notice:** During a case, custodians may be required to preserve additional content (or less content) than was previously requested. For this scenario, you can update the existing hold notice and reissue it to custodians.
+2. **Re-Issuance notice:** During a case, custodians may be required to preserve more content (or less content) than was previously requested. For this scenario, you can update the existing hold notice and reissue it to custodians.
 
 3. **Release notice:** Once a matter is resolved and the custodian is no longer subject to a preservation requirement, the custodian can be released from the case. Additionally, you can notify the custodian that they are no longer required to preserve content, and provide instructions about how to resume their normal work activity and their data.
 
