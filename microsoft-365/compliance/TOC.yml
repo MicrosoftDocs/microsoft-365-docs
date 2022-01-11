@@ -578,7 +578,7 @@
     - name: Information governance
       items: 
         - name: Learn about information governance
-          href: get-started-with-retention.md
+          href: information-governance.md
         - name: Get started with information governance
           href: get-started-with-retention.md
         - name: Create retention policies

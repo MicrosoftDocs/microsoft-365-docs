@@ -48,7 +48,7 @@ Ready to start governing your organization's data by retaining the content that 
 
 5. If you have PST files that contain data you want to govern: **Import PST files to online mailboxes** by using network upload or drive shipping: [Learn about importing your organization's PST files](importing-pst-files-to-office-365.md)
 
-Independently from these steps, **Use connectors to archive third-party-data** that includes data from social media platforms, instant messaging platforms, and document collaboration platforms. When this data is imported to online mailboxes, it supports not just data governance from Microsoft 365 Compliance, but also other compliance solutions such as communication compliance, insider risk management, and eDiscovery. For more information, see [Archive third-party data in Microsoft 365](archiving-third-party-data.md).
+Independently from these steps, **use connectors to archive third-party-data** that includes data from social media platforms, instant messaging platforms, and document collaboration platforms. When this data is imported to online mailboxes, it supports not just data governance from Microsoft 365 Compliance, but also other compliance solutions such as communication compliance, insider risk management, and eDiscovery. For more information, see [Archive third-party data in Microsoft 365](archiving-third-party-data.md).
 
 ## Subscription and licensing requirements
 
