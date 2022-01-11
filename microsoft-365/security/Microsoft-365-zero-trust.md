@@ -138,4 +138,6 @@ Microsoft Information Protection provides a framework, process, and capabilities
 :::image type="content" source="../media/zero-trust/mip-solution-overview.png" alt-text="The Microsoft Information Protection framework" lightbox="../media/zero-trust/mip-solution-overview.png":::
 
 
-For more information, see [Microsoft Information Protection in Microsoft 365](../compliance/information-protection.md). 
+For more information on how to plan and deploy information protection, see [Deploy a Microsoft Information Protection solution](../compliance/information-protection-solution.md). 
+
+If you're deploying information protection for data privacy regulations, this solution guide provides a recommended framework for the entire process: [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md).
