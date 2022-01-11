@@ -42,7 +42,7 @@ Ready to start governing your organization's data by retaining the content that 
     
     - [Enable auto-expanding archiving](enable-autoexpanding-archiving.md) for mailboxes that need more than 100 GB storage.
     
-    - Use [retention tags with a retention policy from messaging records management (MRM)](set-up-an-archive-and-deletion-policy-for-mailboxes.md) if you need to automatically move emails from a user's primary mailbox to their archive mailbox, or if you need to specify retention and deletion settings for specific folders rather than the whole mailbox.
+    - Use [retention tags with a retention policy from messaging records management (MRM)](set-up-an-archive-and-deletion-policy-for-mailboxes.md) if you need to customize how emails are automatically moved from a user's primary mailbox to their archive mailbox, or if you need to specify retention and deletion settings for specific folders rather than the whole mailbox.
 
 4. **Understand and manage inactive mailboxes** that retain mailbox content after employees leave the organization: [Learn about inactive mailboxes](inactive-mailboxes-in-office-365.md)
 
