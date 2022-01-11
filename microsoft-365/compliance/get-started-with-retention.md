@@ -1,5 +1,5 @@
 ---
-title: "Get started with informance governance in Microsoft 365"
+title: "Get started with information governance in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
