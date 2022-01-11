@@ -1,6 +1,8 @@
 - name: Microsoft 365 admin center help
   href: index.yml
   items: 
+    - name: Admin training video library
+      href: admin-video-library.yml
     - name: Get started
       items: 
         - name: Sign up
