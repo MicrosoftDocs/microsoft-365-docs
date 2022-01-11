@@ -39,6 +39,9 @@ Before you get started with DLP on-premises scanner, you should confirm your [Mi
 
 For full licensing details see: [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
+> [!IMPORTANT]
+> All users that contribute to the scanned location either by adding files or consuming files need to have a license.  Not just the scanner user.
+
 ### Permissions
 
 Data from DLP on-premises scanner can be viewed in [Activity explorer](data-classification-activity-explorer.md). There are four roles that grant permission to activity explorer, the account you use for accessing the data must be a member of any one of them.
