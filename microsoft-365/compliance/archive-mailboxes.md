@@ -30,9 +30,7 @@ Users can access and store messages in their archive mailboxes by using Outlook 
 
 ## Managing archive mailboxes with Messaging Records Management (MRM)
 
-Messages can also be moved to the archive mailbox by the [default Exchange retention policy](/exchange/security-and-compliance/messaging-records-management/default-retention-policy) (also called Messaging Records Management or MRM policy) that is automatically assigned to every mailbox. 
-
-When an archive mailbox is enabled, the default Exchange retention policy from MRM automatically does the following:
+Messages can also be moved to the archive mailbox by the [default Exchange retention policy](/exchange/security-and-compliance/messaging-records-management/default-retention-policy) from Messaging Records Management (MRM). This default policy is automatically assigned to every mailbox and does the following:
 
   - Moves items that are two years or older from a user's primary mailbox to their archive mailbox.
 
