@@ -36,7 +36,7 @@ These recommendations require your users to use modern email clients, including 
 
 ## Update common policies to include email
 
-To protect email, the following diagram illustrates which policies to update from the the common identity and device access policies.
+To protect email, the following diagram illustrates which policies to update from the common identity and device access policies.
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png" alt-text="Summary of policy updates for protecting access to Exchange." lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png":::
 

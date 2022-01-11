@@ -56,19 +56,20 @@ To enable the Corelight integration, you’ll need to take the following steps:
 > [!NOTE]
 > You must be a global admin to grant Corelight permission to access resources in your organization.
 
-1. As a Tenant Global Administrator, go to:
-<https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true> to grant permission.
+1. As a Tenant Global Administrator, go to this [link](<https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true>) to grant permission.
 2. Go to [https://security.microsoft.com](https://security.microsoft.com/) portal, select **Settings** \> **Microsoft 365 Defender**, and take note of the **Tenant ID**. You'll need this information when configuring your Corelight appliance.
 
 ### Step 3: Configure your Corelight appliance to send data to Microsoft 365 Defender
 
-**Applies to**: Corelight Sensor software v24.2 and later
+> [!NOTE]
+>  The integration will be public in Corelight Sensor software v24 and later. 
+
+To preview in v23 or v22.1 you must execute `corelight-client configuration update --enable.adfiot 1` to enable the configuration section in the GUI.
+
+In addition to this, the GUI validation requires that a broker is configured in the configuration section on all v23 releases.  The broker you provide is required but won't actually be used. Enter `127.0.0.1:1234` in the _kafka broker_ field to ensure successful validation before following the steps below to enable sending data to Microsoft 365 Defender.
 
 > [!NOTE]
-> To enable on a previous release that supports sending data, you must first execute: `corelight-client configuration update --enable.adfiot 1`.
-
-> [!NOTE]
->Note that you will need internet connectivity for your sensor to reach both the Defender and Corelight cloud services for the solution to work.
+> You will need internet connectivity for your sensor to reach both the Defender and Corelight cloud services for the solution to work.
 
 #### Enabling in the Corelight Sensor GUI
 

@@ -54,7 +54,7 @@ Then, after you're all set up, you can [view and manage remediation actions in t
 
 Whether automated investigations run, and whether remediation actions are taken automatically or only upon approval for your devices depend on certain settings, such as your organization's device group policies. Review the configured automation level for your device group policies.
 
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. Go to **Settings** > **Permissions** > **Device groups**.
 
@@ -93,7 +93,7 @@ Security settings in Office 365 help protect email and content. To view or chang
 
 2. In the navigation pane, look for **Incidents & Alerts**, **Hunting**, and **Action center** as shown in the preceding image.
    - If you see **Incidents & Alerts**, **Hunting**, and **Action center**, Microsoft 365 Defender is turned on. See the [Review or change the automation level for device groups](#review-or-change-the-automation-level-for-device-groups) section of this article.
-   - If you do *not* see **Incidents**, **Action center**, or **Hunting**, Microsoft 365 Defender might not be turned on. In this case, [visit the Action center](m365d-action-center.md)).
+   - If you do *not* see **Incidents**, **Action center**, or **Hunting**, Microsoft 365 Defender might not be turned on. In this case, [visit the Action center](m365d-action-center.md).
 
 3. In the navigation pane, choose **Settings** > **Microsoft 365 Defender**. Confirm that Microsoft 365 Defender is turned on.
 
