@@ -29,7 +29,7 @@ Microsoft 365 lets administrators use data connectors to import and archive thir
 
 Watch this interactive guide that demonstrates how to create data connectors to archive third-party data and examples of applying compliance solutions to data after it's imported to Microsoft 365.
 
-> [!VIDEO https://aka.ms/DataConnectorsInteractiveGuide]
+> [!VIDEO https://mslearn.cloudguides.com/guides/Archive%20data%20from%20non-Microsoft%20sources%20in%20Microsoft%20365]
 
 ## Third-party data connectors
 
