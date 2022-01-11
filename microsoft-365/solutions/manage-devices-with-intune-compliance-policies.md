@@ -3,7 +3,8 @@ title: "Step 3. Set up compliance policies for devices with Intune"
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- Create compliance policies
+- Intune device compliance policy
 manager: dougeby
 audience: ITPro
 description: Learn how to create device compliance policies that specify the minimum requirements for a device to access your environment.

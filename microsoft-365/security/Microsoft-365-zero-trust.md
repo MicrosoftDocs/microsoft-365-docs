@@ -1,7 +1,8 @@
 ---
 title: "Microsoft 365 Zero Trust deployment plan"
 f1.keywords:
-- CSH
+- deploy zero trust
+- zero trust strategy
 ms.author: bcarter
 author: brendacarter
 manager: dansimp
@@ -142,4 +143,4 @@ Microsoft Information Protection provides a framework, process, and capabilities
 
 ![Microsoft Information Protection (MIP) framework](../media/zero-trust/mip-solution-overview.png)
 
-For more information, see [Microsoft Information Protection in Microsoft 365](../compliance/information-protection.md). 
+For more information, see [Deploy a Microsoft Information Protection solution](../compliance/information-protection-solution.md). 
