@@ -39,11 +39,7 @@ The best way for technology partners to certify that their integration works is 
 
 Once the Microsoft Defender for Endpoint team has reviewed and approves the integration, we will direct you to be included as a partner at the Microsoft Intelligent Security Association.
 
-## Step 3: Become a  Microsoft Intelligent Security Association member
-
-[Microsoft Intelligent Security Association](https://www.microsoft.com/security/partnerships/intelligent-security-association) is a program specifically for Microsoft security partners to help enrich your security products and improve customer discoverability of your integrations to Microsoft security products.
-
-## Step 4: Get listed in the Microsoft Defender for Endpoint partner application portal
+## Step 3: Get listed in the Microsoft Defender for Endpoint partner application portal
 
 Microsoft Defender for Endpoint supports third-party applications discovery and integration using the in-product [partner page](partner-applications.md) that is embedded within the Microsoft Defender for Endpoint management portal.
 
