@@ -34,7 +34,7 @@ For more information about retention policies and retention labels, and how rete
 > [!NOTE]
 > If you need lifecycle management of high-value items for business, legal, or regulatory record-keeping requirements, use retention labels with [records management](records-management.md) rather than retention labels with information governance.
 
-Other information governance capabilities to help you keep what you need, delete what you don't:
+Other information governance capabilities to help you keep what you need and delete what you don't:
 
 - **Mailbox archiving** to provide users with additional mailbox storage space, and auto-expanding archiving for mailboxes that need more than 100 GB storage. A default archiving policy automatically moves email to the archive mailbox, and if required, you can customize this policy. For more information about mailbox archiving, see [Learn about archive mailboxes](archive-mailboxes.md).
     
