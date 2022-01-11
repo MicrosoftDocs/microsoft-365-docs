@@ -3,7 +3,10 @@ title: "Step 6. Monitor device risk and compliance to security baselines"
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- connect Intune to Defender
+- monitor device risk
+- monitor device compliance
+- deploy security baselines
 manager: dougeby
 audience: ITPro
 description: Learn how to connect Microsoft Intune to Defender for Endpoint and monitor device risk as a condition for access.
