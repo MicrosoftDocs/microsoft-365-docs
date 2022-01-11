@@ -104,7 +104,7 @@ You can create as many placeholders as you think are necessary. When you're done
    - **Save draft** – Saves the template as a draft and you can access it at a later time.
    - **Publish** – Publishes the template to be used by other employees in the organization to create documents with.
 
-## Edit an existing modern template
+## Edit a modern template
 
 If you need to edit an existing template or to delete or unpublish a template, follow these steps.
 
@@ -116,7 +116,7 @@ If you need to edit an existing template or to delete or unpublish a template, f
  
    ![Screenshot of the Edit New menu panel showing the Modern templates section.](../media/content-understanding/content-assembly-edit-template-2.png)
 
-3. Select **Edit** to open the template studio where you can edit the template.
+3. Select **Edit** to open the template studio where you can edit the template. You can also choose to delete or unpublish the template.
 
 ## Create a document from a modern template
 
