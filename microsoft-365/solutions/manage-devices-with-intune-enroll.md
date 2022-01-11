@@ -3,7 +3,9 @@ title: "Step 2. Enroll devices into management with Intune"
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- enroll devices into management
+- enroll devices with Intune
+- Intune mobile device platforms
 manager: dougeby
 audience: ITPro
 description: Use Intune and Autopilot to enroll devices into management to ensure the apps running on them are compliant and to prevent corporate data leaks.
@@ -14,6 +16,8 @@ ms.collection:
 - enroll devices into management
 - enroll devices with Intune
 - Intune mobile device platforms
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: 
 keywords: 
 ---
