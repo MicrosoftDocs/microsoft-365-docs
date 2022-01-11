@@ -50,11 +50,7 @@ Follow these steps to create a modern template.
 
 5. Create placeholders for all dynamic text in the document that users might want to change from one document to another. For example, you might want to create a placeholder for company name, client name, address, phone number, date, and so on.
 
-    To create a placeholder, select the text (such as the address), and then select the **+** button above the selected text.
- 
-   ![Screenshot of the template viewer showing the plus button used to create a placeholder.](../media/content-understanding/content-assembly-create-template-4.png)
-
-6. The **All placeholders** panel will open, where you'll give the placeholder a relevant name and choose the type of input you want to associate with the placeholder.
+    To create a placeholder, simply select the text (such as the address). The **All placeholders** panel will open, where you'll give the placeholder a relevant name and choose the type of input you want to associate with the placeholder.
  
    ![Screenshot of the template viewer showing a field highlighted and the All placeholders panel.](../media/content-understanding/content-assembly-create-template-4a.png)
 
@@ -142,7 +138,7 @@ You can use a modern template to quickly create similar documents without having
       - Autofill placeholder values if able to uniquely identify a record for placeholders associated with the same list.
 
 > [!NOTE]
-> Currently, only Word documents (.docx extension) are supported for templatization. <br>The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library. <br>You can create placeholders only for text. Currently, images, smart art, tables, and bullet lists are not supported. <br>Once a document is created from a template, it is not associated with the template.
+> Currently, only Word documents (.docx extension) are supported for templatization. Before uploading the document please ensure that the document does not have "Track changes" enabled or comments <br>The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library. <br>You can create placeholders only for text. Currently, images, smart art, tables, and bullet lists are not supported. <br>Once a document is created from a template, it is not associated with the template.
 
 
 
