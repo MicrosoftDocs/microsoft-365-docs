@@ -80,25 +80,26 @@ The following table lists the supported operating systems for rules that are  cu
 > - Unless otherwise indicated, the minimum Windows&nbsp;10 build is version 1709 (RS3, build 16299) or later; the minimum Windows&nbsp;Server build is version is 1809 or later.
 >
 
-|Rule name|Windows&nbsp;10|Windows&nbsp;Server 2019|Windows&nbsp;Server|Windows&nbsp;Server 2016|Windows&nbsp;Server 2012 R2|
-|---|:---:|:---:|:---:|:---:|:---:|
-|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y version 1803 (Semi-Annual Channel) or later |  |  |
-|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y version 1809 or later | Y | Y  <br><br> |  |  |
-|[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y <br><br> |  |  |
-|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y version 1803 or later | Y <br><br> | Y <br><br> |  |  |
-|[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | Y | Y <br><br> | Y <br><br> |  |  |
-|[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y version 1803 or later | Y <br><br> | Y <br><br> |  |  |
-|[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | Y | Y <br><br> | Y <br><br> |  |  |
-|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | Y <br><br> | Y <br><br> |  |  |
-|[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | Y | Y <br><br> | Y <br><br> |  |  |
-|[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y <br><br> | Y <br><br> |  |  |
-|[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | Y | Y <br><br> | Y <br><br> |  |  |
-|[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) <br><br> \* _File and folder exclusions not supported._ | Y version 1903 (build 18362) or later| Y | Y <br><br> version 1903 (build 18362) or later |  |  |
-|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y version 1803 or later | Y <br><br> | Y <br><br>  |  |  |
-|[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y <br><br> | Y <br><br> |  |  |
-|[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y | Y <br><br> | Y <br><br> |  |  |
-|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y version 1803 or later | Y <br><br> | Y <br><br> |  |  |
-| **Rule name** |  **Windows&nbsp;10** | **Windows&nbsp;Server 2019** | **Windows&nbsp;Server** | **Windows&nbsp;Server 2016** | **Windows&nbsp;Server 2012 R2** |
+|Rule name|Windows&nbsp;10|Windows&nbsp;Server 2019|Windows&nbsp;Server|
+|---|:---:|:---:|:---:|
+|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y version 1803 (Semi-Annual Channel) or later | 
+|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y version 1809 or later | Y | Y  <br><br> |
+|[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y <br><br> |
+|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y version 1803 or later | Y <br><br> | Y <br><br> |
+|[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | Y | Y <br><br> | Y <br><br> |
+|[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y version 1803 or later | Y <br><br> | Y <br><br> |
+|[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | Y | Y <br><br> | Y <br><br> |
+|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | Y <br><br> | Y <br><br> |
+|[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | Y | Y <br><br> | Y <br><br> |
+|[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y <br><br> | Y <br><br> |
+|[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | Y | Y <br><br> | Y <br><br> |
+|[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) <br><br> \* _File and folder exclusions not supported._ | Y version 1903 (build 18362) or later| Y | Y <br><br> version 1903 (build 18362) or later |
+|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y version 1803 or later | Y <br><br> | Y <br><br>  |
+|[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y <br><br> | Y <br><br> |
+|[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y | Y <br><br> | Y <br><br> |
+|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y version 1803 or later | Y <br><br> | Y <br><br> |
+| **Rule name** |  **Windows&nbsp;10** | **Windows&nbsp;Server 2019** | **Windows&nbsp;Server** | 
+|  |  |  |  |
 
 ## Supported configuration management systems
 
@@ -122,6 +123,7 @@ Links to information about configuration management system versions referenced i
 |[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y |   |Y <br><br> CB 1802  | Y  | Y  |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y |   | Y <br><br> CB 1710  | Y  |  Y |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y |   | Y <br><br> CB 1802 | Y  | Y  |
+|  |  |  |  |  |  |
 
   (<a id="fn1">1</a>) You can configure attack surface reduction rules on a per-rule basis by using any rule's GUID.
 
