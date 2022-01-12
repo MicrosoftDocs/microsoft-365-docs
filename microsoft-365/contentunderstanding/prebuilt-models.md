@@ -34,11 +34,17 @@ Follow these steps to use a prebuilt model to classify documents.
 
 1. From the **Models** page, select **Create a model**.
 
+    ![Screenshot of the Models page showing the Create a model button.](../media/content-understanding/prebuilt-create-model-button.png) 
+
 2. On the **Create a model** panel, in the **Name** field, type the name of the model.
 
     ![Screenshot of the New document understanding model panel showing the model types available.](../media/content-understanding/prebuilt-create-panel.png) 
 
-3. In the **Model type** section, select one of the prebuilt models. 
+3. In the **Model type** section, select one of the prebuilt models:
+   - **Invoice processing prebuilt**
+   - **Receipt processing prebuilt**
+
+   If you want to create a traditional, untrained document understanding model, select **Custom document understanding**.
 
 4. Select **Create**.
 
