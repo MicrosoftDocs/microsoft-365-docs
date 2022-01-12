@@ -47,11 +47,11 @@ Contoso has identified a few nine-digit test numbers that trigger false positive
 
 ## Phone numbers in signature trigger match
 
-Phone numbers in signature trigger a match for Australia company number DLP policy.
+Australia based Contoso finds that phone numbers in email signatures are triggering a match for their Australia company number DLP policy.
 
 **Suggested solution**
 
-Add a 'not' group in supporting elements using a keyword list containing commonly used keywords in signature of email like “Phone”, “Mobile”, “email”, “Thanks and regards” etc. Keep the proximity of this keyword list to a smaller value like 50 characters for better accuracy.
+Add a 'not' group in supporting elements using a keyword list containing commonly used keywords in signature of email like “Phone”, “Mobile”, “email”, “Thanks and regards” etc. Keep the proximity of this keyword list to a smaller value like 50 characters for better accuracy. <!-- TODD, LINK OUT TO OR WRITE UP THESE PROCEDURES-->
 
 ## Unable to trigger ABA routing policy
 
