@@ -81,6 +81,8 @@ Use the following table to help you map your business requirements to the most c
 |Efficiently retain or delete data for Microsoft 365 services: <br />-  Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 Groups <br />- Teams <br />- Yammer <br />- Skype for Business |[Create and configure retention policies](create-retention-policies.md)|
 |Provide users with additional mailbox storage |[Enable archive mailboxes in the compliance center](enable-archive-mailboxes.md)|
 |Retain mailbox data after employees leave the organization |[Create and manage inactive mailboxes](create-and-manage-inactive-mailboxes.md)|
+|Upload mailbox data from PST files |[Use network upload to import PST files](use-network-upload-to-import-pst-files.md)|
+
 
 If you have a scenario that requires lifecycle management for individual items, see the [common scenarios for records management](get-started-with-records-management.md#common-scenarios). 
 
