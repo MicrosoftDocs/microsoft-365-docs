@@ -98,7 +98,6 @@ The following table lists the supported operating systems for rules that are  cu
 |[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y <br><br> | Y <br><br> |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | Y | Y <br><br> | Y <br><br> |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y version 1803 or later | Y <br><br> | Y <br><br> |
-| **Rule name** |  **Windows&nbsp;10** | **Windows&nbsp;Server 2019** | **Windows&nbsp;Server** | 
 |  |  |  |  |
 
 ## Supported configuration management systems
