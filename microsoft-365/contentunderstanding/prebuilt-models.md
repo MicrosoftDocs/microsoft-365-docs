@@ -60,7 +60,7 @@ Follow these steps to create a prebuilt model to classify documents in SharePoin
 
 3. On the **Add a file from the training files library** page, select the file, and then select **Add**.
 
-    ![Screenshot of the Add a file from the training files library page.](../media/content-understanding/prebuilt-add-file-from-training-file-library.png) 
+    ![Screenshot of the Add a file from the training files library page.](../media/content-understanding/prebuilt-add-file-from-training-library.png) 
 
 6. More TBD.
 
