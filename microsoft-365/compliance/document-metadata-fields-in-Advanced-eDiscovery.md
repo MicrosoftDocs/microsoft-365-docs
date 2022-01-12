@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date:
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
@@ -68,8 +68,8 @@ The following table lists the metadata fields for documents in a review set in a
 |Document date created|CreatedTime|Doc_date_created|Create date from document metadata.|
 |DocIndex*|||The index in the family. **-1** or **0** means it is the root.|
 |Document keywords||Doc_keywords|Keywords from the document metadata.|
-|Document modified by||Doc_modified_by|Last modified date by from document metadata.|
-|Document Revision|Doc_Version|Doc_Version|Revision from the document metadata.|
+|Document modified by||Doc_modified_by|The user who last modified the document from document metadata.|
+|Document revision|Doc_Version|Doc_Version|Revision from the document metadata.|
 |Document subject||Doc_subject|Subject from the document metadata.|
 |Document template||Doc_template|Template from the document metadata.|
 |DocLastSavedBy||Doc_last_saved_by|The name of the user who last saved the document.|

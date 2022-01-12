@@ -18,7 +18,7 @@ ms.collection:
   - m365initiative-defender-office365
 ms.custom:
   - seo-marvel-apr2020
-  - admindeeplinkDEFENDER
+  - intro-overview
 description: Microsoft Defender for Office 365 includes Safe Attachments, Safe Links, advanced anti-phishing tools, reporting tools and threat intelligence capabilities.
 ms.technology: mdo
 ms.prod: m365-security
@@ -92,7 +92,7 @@ The following table summarizes what's included in each plan.
 
 ## Configure Microsoft Defender for Office 365 policies
 
-With Microsoft Defender for Office 365, your organization's security team can configure protection by defining policies in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> \> **Email & collaboration** \> **Policies & rules** \> **Threat policies**).
+With Microsoft Defender for Office 365, your organization's security team can configure protection by defining policies in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Policies & rules** \> **Threat policies**. Or, you can go directly to the **Threat policies** page by using <https://security.microsoft.com/threatpolicy>.
 
 Learn more by watching [this video](https://www.youtube.com/watch?v=vivvTmWJ_3c).
 
@@ -113,7 +113,7 @@ The policies that are defined for your organization determine the behavior and p
 
 ## View Microsoft Defender for Office 365 reports
 
-Microsoft Defender for Office 365 includes [reports](view-reports-for-mdo.md) to monitor Defender for Office 365. You can access the reports in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> at **Reports** \> **Email & collaboration** \> **Email & collaboration reports** or directly at <https://security.microsoft.com/securityreports>.
+Microsoft Defender for Office 365 includes [reports](view-reports-for-mdo.md) to monitor Defender for Office 365. You can access the reports in theMicrosoft 365 Defender portal at <https://security.microsoft.com> at **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. Or, you can go directly to the **Email and collaboration reports** page using <https://security.microsoft.com/securityreports>.
 
 Reports update in real-time, providing you with the latest insights. These reports also provide recommendations and alert you to imminent threats. Predefined reports include the following:
 

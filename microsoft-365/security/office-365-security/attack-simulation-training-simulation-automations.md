@@ -53,7 +53,7 @@ On the **Select social engineering techniques** page, select one or more of the 
 - **Malware attachment**: Adds a malicious attachment to a message. When the user opens the attachment, arbitrary code is run that will help the attacker compromise the target's device.
 - **Link in attachment**: A type of credential harvest hybrid. An attacker inserts a URL into an email attachment. The URL within the attachment follows the same technique as credential harvest.
 - **Link to malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user will contain a link to this malicious file. Opening the file and help the attacker compromise the target's device.
-- **Drive-by URL**: The malicious URL in the message takes the user to a familiar-looking website that silently runs and/or installs code code on the user's device.
+- **Drive-by URL**: The malicious URL in the message takes the user to a familiar-looking website that silently runs and/or installs code on the user's device.
 
 If you click the **View details** link in the description, a details flyout opens that describes the technique and the simulation steps that result from the technique.
 
@@ -276,6 +276,71 @@ On the **Landing page** page, you configure the web page that user are taken to 
   - **Use a custom URL**: Add the URL in the **Enter the custom landing page URL** box that appears. No other options are available on the page.
 
 When you're finished, click **Next**.
+
+## Select end user notification
+
+On the **Select end user notification** page, select from the following notification options:
+
+- **Do not deliver notifications**: Click **Proceed** in the alert dialog that appears. If you select this option, you're taken to the [Simulation schedule](#simulation-schedule) page when you click **Next**.
+
+- **Microsoft default notification (recommended)**: The following additional settings are available on the page:
+  - **Select default language**: The available values are: **Chinese (Simplified)**, **Chinese (Traditional)**, **English**, **French**, **German**, **Italian**, **Japanese**, **Korean**, **Portuguese**, **Russian**, **Spanish**, and **Dutch**.
+  - By default, the only available notification to select is **Microsoft positive reinforcement notification**. The following information is available for the notification:
+    - **Notifications** (name): The value is **Microsoft default positive reinforcement notification**.
+    - **Language**: If the notification contains multiple translations, the first two languages are shown directly. To see the remaining languages, hover over the numeric icon (for example, **+10**).
+    - **Type**: The value is **Positive reinforcement**.
+    - **Delivery preferences**: Select from the following values:
+      - **Do not deliver**
+      - **Deliver after campaign ends**
+      - **Deliver during campaign**
+    - **Deliver to**: The value is **Not applicable**.
+    - **Actions**: If you click on the ![View icon.](../../media/m365-cc-sc-view-icon.png) **View** icon, the **Review notification** page appears with the following information:
+      - **Preview** tab: View the notification message. To view the message in different languages, use the **Select language** box.
+      - **Details** tab: View details about the notification:
+        - **Notification description**
+        - **Source**: For built-in notifications, the value is **Global**. For custom notifications, the value is **Tenant**.
+        - **Notification type**
+        - **Modified by**
+        - **Last modified**
+
+        When you're finished, click **Close**.
+
+  If you select this option, you're taken to the [Simulation schedule](#simulation-schedule) page when you click **Next**.
+
+- **Customized end user notifications**: When you click **Next**, you're taken to the **Positive reinforcement notification** page as described in the next section where you can select from existing notifications or create new notifications.
+
+When you're finished, click **Next**.
+
+### Positive reinforcement notification
+
+The **Positive reinforcement notification** page is available only if you selected **Customized end user notifications** on the previous page.
+
+- **Delivery preferences**: Select one of the following values:
+  - **Do not deliver**
+  - **Deliver after the user reports a phish and campaign ends**
+  - **Deliver immediately after the user reports a phish**
+
+- **Select a positive reinforcement notification**: You can select an existing notification or create a new notification of type **Positive reinforcement notification** to use:
+  - To select an existing notification, click in the blank area next to the notification name. If you click on the notification name, the notification is selected and a preview flyout appears. To deselect the notification, clear the check box next to the notification.
+  - To search for an existing notification, use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** box to search for the name.
+  - To create a new notification, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new**.
+  - To modify an existing custom notification, select it and then click ![Edit notification icon.](../../media/m365-cc-sc-edit-icon.png) **Edit notification**.
+
+#### Create new notification wizard
+
+If you clicked ![Create new icon.](../../media/m365-cc-sc-create-icon.png) **Create new** on the **Positive reinforcement notification** page, a notification creation wizard opens.
+
+The creation steps are identical as described in [Create end-user notifications](attack-simulation-traning-end-user-notifications.md#create-end-user-notifications).
+
+> [!NOTE]
+> On the **Define details** page, be sure to select the value **Positive reinforcement notification** for **Select notification type**. Don't select **Simulation notification**.
+
+When you're finished, you're taken back to the **Positive reinforcement notification** page where the notification that you just created now appears in the **Select a positive reinforcement notification** list.
+
+- To create a new notification, click ![Create new icon.](../../media/m365-cc-sc-create-icon.png).
+- To modify the notification or add additional translations, select the notification from the list, and then click ![Edit notification icon.](../../media/m365-cc-sc-edit-icon.png) **Edit notification** to start the notification wizard as previously described (with most values already filled in). If the notification already has translations for the 12 supported languages, you can't add more translations.
+
+Select the notification that you want to use, and then click **Next**.
 
 ## Simulation schedule
 

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -59,6 +59,11 @@ The following table describes each experience:
 Defender for Business (preview) is designed to provide strong protection while saving you time and effort in configuring your security settings. The streamlined experience in the Microsoft 365 Defender portal makes it simple to onboard devices and manage them. In addition, default policies are included so that your company's devices are protected as soon as they are onboarded. You can keep your default settings as they are, or make changes to suit your business needs. You can also add new policies to manage devices as needed.
 
 ## Next steps
+
+>
+> **Got a minute?**
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
 
 - [Set up and configure Microsoft Defender for Business (preview)](mdb-setup-configuration.md)
 
