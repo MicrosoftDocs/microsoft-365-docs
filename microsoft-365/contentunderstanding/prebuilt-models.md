@@ -28,9 +28,9 @@ Currently, there are two prebuilt models available: sales invoices and sales rec
 > [!NOTE]
 > You can use retention labels in these prebuilt models. However, sensitivity labels are not supported at this time.
 
-## Use a prebuilt model
+## Create a prebuilt model
 
-Follow these steps to use a prebuilt model to classify documents.
+Follow these steps to create a prebuilt model to classify documents in SharePoint Syntex.
 
 1. From the **Models** page, select **Create a model**.
 
