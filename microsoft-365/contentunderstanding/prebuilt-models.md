@@ -62,7 +62,13 @@ Follow these steps to create a prebuilt model to classify documents in SharePoin
 
     ![Screenshot of the Add a file from the training files library page.](../media/content-understanding/prebuilt-add-file-from-training-library.png) 
 
-6. More TBD.
+6. On the **Files to analyze the model** page, select **Next**.
+
+## Select extractors for your model
+
+On the extractor details page, you will see the sample file and the list of extractors that are in the file.
+
+   ![Screenshot of the Add a file from the training files library page.](../media/content-understanding/prebuilt-extractor-details-page.png) 
 
 
 
