@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 12/13/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,6 +16,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
+ms.custom: intro-overview
 ---
 
 # Overview of Microsoft Defender for Business (preview)
@@ -30,6 +31,9 @@ Microsoft Defender for Business (preview) is a new endpoint security solution th
 This article describes what's included in Defender for Business (preview), with links to learn more about these features and capabilities.
 
 :::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender for Business (preview) features and capabilities.":::
+
+> [!NOTE]
+> Not all capabilities are available during preview.
 
 With Defender for Business (preview), you can help protect the devices and data your business uses with:
 
@@ -58,6 +62,7 @@ With Defender for Business (preview), you can help protect the devices and data 
 
 - **Help you get started using Defender for Business (preview)**, starting with the Microsoft 365 Defender portal 
    - [Navigate the Microsoft 365 Defender portal](mdb-get-started.md)
+   - [Try preview scenarios, tutorials, and simulations](mdb-tutorials.md)
 
 - **Provide guidance on managing devices and security policies and settings**
    - [Manage devices](mdb-manage-devices.md)
@@ -65,6 +70,11 @@ With Defender for Business (preview), you can help protect the devices and data 
    - [Manage custom rules for firewall policies](mdb-custom-rules-firewall.md)  
 
 ## Next steps
+
+>
+> **Got a minute?**
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
 
 - [Learn more about the simplified configuration process in Microsoft Defender for Business (preview)](mdb-simplified-configuration.md)
 

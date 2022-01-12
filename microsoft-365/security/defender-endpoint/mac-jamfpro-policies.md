@@ -64,7 +64,7 @@ You'll need to take the following steps:
 
    ![Image of WindowsDefenderATPOnboarding file.](images/plist-onboarding-file.png)
 
-2. In the Jamf Pro dashboard, select **New**.
+2. Sign in to Jamf Pro, navigate to **Computers** > **Configuration Profiles**, and select **New**.
 
     ![Image of creating a new Jamf Pro dashboard.](images/jamf-pro-configure-profile.png)
 
@@ -78,7 +78,7 @@ You'll need to take the following steps:
    - Distribution Method: Install Automatically
    - Level: Computer Level
 
-4. In **Application & Custom Settings** select **Configure**.
+4.  Navigate to the **Application & Custom Settings** page and select **Upload** > **Add**.
 
     ![Image of configurate app and custom settings.](images/jamfpro-mac-profile.png)
 
@@ -719,7 +719,7 @@ Alternatively, you can download [kext.mobileconfig](https://github.com/microsoft
 
 ## Step 9: Configure Network Extension
 
-As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft 365 Defender portal. The following policy allows the network extension to perform this functionality.
 
 These steps are applicable of macOS 10.15 (Catalina) or newer.
 
@@ -746,6 +746,9 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
         Note that **Identifier**, **Socket Filter** and **Socket Filter Designated Requirement** exact values as specified above.
 
         ![Image of configuration setting mdatpmdav.](images/netext-create-profile.png)
+        
+ > [!NOTE]
+ > Jamf supports built-in content filter settings which can be set directly through the interface.
 
 3. Select the **Scope** tab.
 
