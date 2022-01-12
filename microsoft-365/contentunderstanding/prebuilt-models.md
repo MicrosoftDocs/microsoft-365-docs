@@ -23,7 +23,7 @@ Prebuilt models are pretrained to recognize documents and the structured informa
 
 You can also customize a prebuilt model, review it to see how it works on your documents, and customize the names to match your documents or naming conventions. 
 
-Currently, there are two prebuilt models available: sales invoices and sales receipts. Additional prebuilt models will be available in future releases.
+Currently, there are two prebuilt models available: invoice and receipt. Additional prebuilt models will be available in future releases.
 
 > [!NOTE]
 > You can use retention labels in these prebuilt models. However, sensitivity labels are not supported at this time.
@@ -44,11 +44,19 @@ Follow these steps to create a prebuilt model to classify documents in SharePoin
    - **Invoice processing prebuilt**
    - **Receipt processing prebuilt**
 
-   If you want to create a traditional, untrained document understanding model, select **Custom document understanding**.
+   If you want to create a traditional, untrained document understanding model instead of a prebuilt model, select **Custom document understanding**.
 
 4. Select **Create**.
 
-5. On the **Files to analyze the model** page, select a file (invoice or receipt) to analyze and select detected distractors.
+## Add a file to analyze the prebuilt model
+
+1. On the **Models** page, in the **Add a file to analyze** section, select **Add file**.
+
+    ![Screenshot of the new models page showing the Add a file to analyze section.](../media/content-understanding/prebuilt-add-file-to-analyze.png) 
+
+1. **Files to analyze the model** page, select a file (invoice or receipt) to analyze and select detected distractors.
+
+2. 
 
 6. More TBD.
 
