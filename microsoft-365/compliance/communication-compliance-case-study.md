@@ -11,6 +11,7 @@ ms.topic: article
 ms.custom: 
 - admindeeplinkMAC
 - admindeeplinkCOMPLIANCE
+- admindeeplinkEXCHANGE
 f1_keywords:
 - 'ms.o365.cc.SupervisoryReview'
 ms.service: O365-seccomp
@@ -114,7 +115,7 @@ The quickest way to access the solution is to sign in directly to the **Communic
 
 ### Starting from the Microsoft 365 compliance center
 
-Another easy way for Contoso IT administrators and compliance specialists to access the communication compliance solution is to sign in directly to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>. After signing in, users simply need to select the **Show all** control to display all the compliance solutions and then select the **Communication compliance** solution to get started.
+Another easy way for Contoso IT administrators and compliance specialists to access the communication compliance solution is to sign in directly to the [Microsoft 365 compliance center](https://compliance.microsoft.com). After signing in, users simply need to select the **Show all** control to display all the compliance solutions and then select the **Communication compliance** solution to get started.
 
 ![Compliance center.](../media/communication-compliance-case-center.png)
 
@@ -126,7 +127,7 @@ Contoso IT administrators and compliance specialists could also choose to access
 
 ### Starting from the Microsoft 365 admin center
 
-To access communication compliance when starting from the Microsoft 365 admin center, Contoso IT administrators and compliance specialists sign in to the Microsoft 365 admin center [(https://admin.microsoft.com)](https://admin.microsoft.com) and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
+To access communication compliance when starting from the Microsoft 365 admin center, Contoso IT administrators and compliance specialists sign in to the Microsoft 365 admin center [(https://admin.microsoft.com)](https://admin.microsoft.com) and go to [Microsoft 365 compliance center](https://compliance.microsoft.com)
 
 ![Communication compliance link.](../media/communication-compliance-case-compliance-link.png)
 
@@ -169,7 +170,7 @@ They need to create a new group to include all Contoso users, so they take the f
 
     ![Groups.](../media/communication-compliance-case-all-employees.png)
 
-3. After the new group is created, they need to add all Contoso users to the new group. They open the **Exchange admin center** [(https://outlook.office365.com/ecp)](https://outlook.office365.com/ecp) and navigate to **Exchange admin center** > **recipients** > **groups**. The Contoso IT administrators select the Membership area and the new *All Employees* group they created and select the **Edit** control to add all Contoso users to the new group in the wizard.
+3. After the new group is created, they need to add all Contoso users to the new group. They open the **Exchange admin center** [(https://outlook.office365.com/ecp)](https://outlook.office365.com/ecp) and navigate to **Exchange admin center** > **recipients** > <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>. The Contoso IT administrators select the Membership area and the new *All Employees* group they created and select the **Edit** control to add all Contoso users to the new group in the wizard.
 
     ![Exchange admin center.](../media/communication-compliance-case-eac.png)
 

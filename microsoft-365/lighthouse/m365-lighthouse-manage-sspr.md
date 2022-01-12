@@ -31,7 +31,7 @@ The following conditions must be met before a tenant will appear in the list:
 
 - The customer tenant must have an Azure AD Premium license for each user. For more information on which licenses support SSPR, see [Licensing requirements for Azure Active Directory self-service password reset](/azure/active-directory/authentication/concept-sspr-licensing).
 
-- The customer tenant must be active within Lighthouse. To learn how to determine if a tenant is active, see [Microsoft 365 Lighthouse tenant list overview](m365-lighthouse-tenant-list-overview.md).
+- The customer tenant must be active within Lighthouse. To learn how to determine if a tenant is active, see [Microsoft 365 Lighthouse Tenants page overview](m365-lighthouse-tenants-page-overview.md).
 
 ## View SSPR tenant status
 

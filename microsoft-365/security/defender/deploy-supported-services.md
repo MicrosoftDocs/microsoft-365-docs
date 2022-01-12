@@ -44,7 +44,7 @@ A Microsoft 365 E5, E5 Security, A5, or A5 Security license or a valid combinati
 | Microsoft Defender for Endpoint | Endpoint protection suite built around powerful behavioral sensors, cloud analytics, and threat intelligence |
 |Microsoft Defender for Office 365 | Advanced protection for your apps and data in Office 365, including email and other collaboration tools |
 | Microsoft Defender for Identity | Defend against advanced threats, compromised identities, and malicious insiders using correlated Active Directory signals |
-| Microsoft Cloud App Security | Identify and combat cyberthreats across your Microsoft and third-party cloud services |
+| Microsoft Defender for Cloud Apps | Identify and combat cyberthreats across your Microsoft and third-party cloud services |
 
 ## Deployed services and functionality
 Microsoft 365 Defender provides better visibility, correlation, and remediation as you deploy more supported services.
@@ -65,7 +65,7 @@ The table below lists how each supported service provides additional data, oppor
 | Microsoft Defender for Endpoint | - Endpoint states and raw events<br />- Endpoint detections and alerts, including antivirus, EDR, attack surface reduction<br />- Info on files and other entities observed on endpoints | Endpoints |
 |Microsoft Defender for Office 365 | - Mail and mailbox states and raw events<br />- Email, attachment, and link detections | - Mailboxes<br />- Microsoft 365 accounts |
 | Microsoft Defender for Identity | - Active Directory signals, including authentication events<br />- Identity-related behavioral detections | Identities |
-| Microsoft Cloud App Security | - Detection of unsanctioned cloud apps and services (shadow IT)<br />- Exposure of data to cloud apps<br />- Threat activity associated with cloud apps | Cloud apps |
+| Microsoft Defender for Cloud Apps | - Detection of unsanctioned cloud apps and services (shadow IT)<br />- Exposure of data to cloud apps<br />- Threat activity associated with cloud apps | Cloud apps |
 
 ## Deploy the services
 Deploying each service typically requires provisioning to your tenant and some initial configuration. See the following table to understand how each of these services are deployed.
@@ -75,7 +75,7 @@ Deploying each service typically requires provisioning to your tenant and some i
 | Microsoft Defender for Endpoint | [Microsoft Defender for Endpoint deployment guide](../defender-endpoint/deployment-phases.md) | *See provisioning instructions* |
 |Microsoft Defender for Office 365 | *None, provisioned with Office 365* | [Configure Microsoft Defender for Office 365 policies](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) |
 | Microsoft Defender for Identity | [Quickstart: Create your Microsoft Defender for Identity instance](/azure-advanced-threat-protection/install-atp-step1) | *See provisioning instructions* |
-| Microsoft Cloud App Security | *None* | [Quickstart: Get started with Microsoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security) |
+| Microsoft Defender for Cloud Apps | *None* | [Quickstart: Get started with Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security) |
 
 Once you’ve deployed the supported services, [turn on Microsoft 365 Defender](m365d-enable.md).
 
@@ -85,5 +85,5 @@ Once you’ve deployed the supported services, [turn on Microsoft 365 Defender](
 - [Turn on Microsoft 365 Defender](m365d-enable.md)
 - [Microsoft Defender for Endpoint overview](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Microsoft Defender for Office 365 overview](../office-365-security/defender-for-office-365.md)
-- [Microsoft Cloud App Security overview](/cloud-app-security/what-is-cloud-app-security)
+- [Microsoft Defender for Cloud Apps overview](/cloud-app-security/what-is-cloud-app-security)
 - [Microsoft Defender for Identity overview](/azure-advanced-threat-protection/what-is-atp)

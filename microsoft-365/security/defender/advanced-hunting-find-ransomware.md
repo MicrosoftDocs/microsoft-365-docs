@@ -231,7 +231,7 @@ The consolidated query returns the following results:
 - **TotalEvidenceCount**—number of observed signs
 - **UniqueEvidenceCount**—number of types of observed signs
 
-![Image of the query results for ransomware activity.](../../media/advanced-hunting-ransomware-query.png)
+:::image type="content" source="../../media/advanced-hunting-ransomware-query.png" alt-text="An example of a consolidated query for a ransomware activity in the Microsoft 365 Defender portal":::
 
 *Query results showing affected devices and counts of various signs of ransomware activity*
 
@@ -276,12 +276,12 @@ Microsoft Azure:
 - [Backup and restore plan to protect against ransomware](/security/compass/backup-plan-to-protect-against-ransomware)
 - [Help protect from ransomware with Microsoft Azure Backup](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 minute video)
 - [Recovering from systemic identity compromise](/azure/security/fundamentals/recover-from-identity-compromise)
-- [Advanced multistage attack detection in Azure Sentinel](/azure/sentinel/fusion#ransomware)
-- [Fusion Detection for Ransomware in Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
+- [Advanced multistage attack detection in Microsoft Sentinel](/azure/sentinel/fusion#ransomware)
+- [Fusion Detection for Ransomware in Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)
 
-Microsoft Cloud App Security:
+Microsoft Defender for Cloud Apps:
 
--  [Create anomaly detection policies in Cloud App Security](/cloud-app-security/anomaly-detection-policy)
+-  [Create anomaly detection policies in Defender for Cloud Apps](/cloud-app-security/anomaly-detection-policy)
 
 Microsoft Security team blog posts:
 

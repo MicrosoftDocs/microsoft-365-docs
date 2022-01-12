@@ -22,7 +22,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -77,7 +78,7 @@ Phishing websites impersonate trustworthy websites for obtaining your personal o
 
 ## Malicious site detected
 
-Microsoft Defender for Endpoint protects you against phishing or other web-based attacks. If a malicious site is detected, the connection is blocked and an alert is sent to the organization's Security Center portal. The alert includes the domain name of the connection, remote IP address and the device details.
+Microsoft Defender for Endpoint protects you against phishing or other web-based attacks. If a malicious site is detected, the connection is blocked and an alert is sent to the organization's Microsoft 365 Defender portal. The alert includes the domain name of the connection, remote IP address and the device details.
 
 In addition, a notification is shown on the iOS device. Tapping on the notification opens the following screen for the user to review the details.
 
@@ -94,6 +95,12 @@ After onboarding, it takes few hours for device to show up in the Device invento
 ## Data and Privacy
 
 For details about data collected and privacy, see [Privacy Information - Microsoft Defender for Endpoint on iOS](ios-privacy.md).
+
+## Connectivity issue on cellular network
+
+If you are facing internet connectivity issues on cellular network, check if Microsoft Defender for Endpoint has cellular data enabled: Open Settings app > MS Defender > ensure that "Cellular data" is enabled for MS Defender.
+
+If you still have connectivity issues, check if turning on/off Airplane mode helps resolve the issue. If the issue persists, [send us logs](ios-troubleshoot.md#send-in-app-feedback).
 
 ## Issues on supervised devices with content filter profile installed
 
@@ -113,6 +120,3 @@ If a user faces an issue which is not already addressed in the above sections or
   - Choose from the given options. To report an issue, select **I don't like something**.
   - Provide details of the issue that you are facing and check **Send diagnostic data**. We recommend that you include your email address so that the team can contact you for a solution or a follow-up.
   - Tap **Submit** to successfully send the feedback.
-
-
-

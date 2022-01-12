@@ -18,9 +18,11 @@ ms.collection:
 - m365solution-scenario
 - m365scenario-fpfn
 ms.topic: how-to
-ms.date: 10/19/2021
+ms.date: 12/02/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
-ms.custom: FPFN
+ms.custom: 
+- FPFN
+- admindeeplinkDEFENDER
 ---
 
 # Address false positives/negatives in Microsoft Defender for Endpoint
@@ -29,7 +31,7 @@ ms.custom: FPFN
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146806)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 In endpoint protection solutions, a false positive is an entity, such as a file or a process, that was detected and identified as malicious, even though the entity isn't actually a threat. A false negative is an entity that was not detected as a threat, even though it actually is malicious. False positives/negatives can occur with any threat protection solution, including [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md).
 
@@ -60,7 +62,7 @@ Managing your alerts and classifying true/false positives helps to train your th
 
 Before you classify or suppress an alert, determine whether the alert is accurate, a false positive, or benign.
 
-1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. In the navigation pane, choose **Alerts queue**.
 
@@ -80,7 +82,7 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 
 Alerts can be classified as false positives or true positives in Microsoft 365 Defender. Classifying alerts helps train Microsoft Defender for Endpoint so that, over time, you'll see more true alerts and fewer false alerts.
 
-1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. Select **Alerts queue**, and then select an alert.
 
@@ -95,7 +97,7 @@ Alerts can be classified as false positives or true positives in Microsoft 365 D
 
 If you have alerts that are either false positives or that are true positives but for unimportant events, you can suppress those alerts in Microsoft 365 Defender. Suppressing alerts helps reduce noise in your security operations dashboard.
 
-1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. In the navigation pane, select **Alerts queue**.
 
@@ -132,7 +134,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Review completed actions
 
-1. In the left navigation pane of the Microsoft 365 Defender portal, click **Action center**.
+1. In the left navigation pane of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, click **Action center**.
 
 2. Select the **History** tab to view a list of actions that were taken.
 
@@ -148,7 +150,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 
 ### Undo multiple actions at one time
 
-1. In the left navigation pane of the Microsoft 365 Defender portal, click **Action center**.
+1. In the left navigation pane of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, click **Action center**.
 
 2. On the **History** tab, select the actions that you want to undo.
 
@@ -159,7 +161,7 @@ When you're done reviewing and undoing actions that were taken as a result of fa
 > [!div class="mx-imgBorder"]
 > ![Quarantine file.](images/autoir-quarantine-file-1.png)
 
-1. In the left navigation pane of the Microsoft 365 Defender portal, click **Action center**.
+1. In the left navigation pane of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, click **Action center**.
 
 2. On the **History** tab, select a file that has the Action type **Quarantine file**.
 
@@ -203,7 +205,7 @@ The procedures in this section describe how to define exclusions and indicators.
 
 ### Exclusions for Microsoft Defender Antivirus
 
-In general, you should not need to define exclusions for Microsoft Defender Antivirus. Make sure that you define exclusions sparingly, and that you only include the files, folders, processes, and process-opened files that are resulting in false positives. In addition, make sure to review your defined exclusions regularly. We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to define or edit your antivirus exclusions; however, you can use other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy) (see [Manage Microsoft Defender for Endpoint](manage-atp-post-migration.md)).
+In general, you should not need to define exclusions for Microsoft Defender Antivirus. Make sure that you define exclusions sparingly, and that you only include the files, folders, processes, and process-opened files that are resulting in false positives. In addition, make sure to review your defined exclusions regularly. We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to define or edit your antivirus exclusions; however, you can use other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy) (see [Manage Microsoft Defender for Endpoint](manage-mde-post-migration.md).
 
 > [!TIP]
 > Need help with antivirus exclusions? See [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md).
@@ -283,7 +285,7 @@ When you [create an "allow" indicator for an application certificate](/microsoft
 
 Before you create indicators for application certificates, make sure the following requirements are met:
 
-- Microsoft Defender Antivirus is configured with cloud-based protection enabled (see [Manage cloud-based protection](deploy-manage-report-microsoft-defender-antivirus.md))
+- Microsoft Defender Antivirus is configured with cloud-based protection enabled (see [Manage cloud-based protection](deploy-manage-report-microsoft-defender-antivirus.md)
 - Antimalware client version is 4.18.1901.x or later
 - Devices are running Windows 10, version 1703 or later, or Windows 11; Windows Server 2016, or Windows Server 2019, or Windows Server 2022
 - Virus and threat protection definitions are up to date
@@ -347,7 +349,7 @@ Check your cloud-delivered protection level for Microsoft Defender Antivirus. By
 > [!TIP]
 > To learn more about configuring your cloud-delivered protection, see [Specify the cloud-delivered protection level](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).
 
-We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to edit or set your cloud-delivered protection settings; however, you can use other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy) (see [Manage Microsoft Defender for Endpoint](manage-atp-post-migration.md)).
+We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to edit or set your cloud-delivered protection settings; however, you can use other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy) (see [Manage Microsoft Defender for Endpoint](manage-mde-post-migration.md).
 
 #### Use Microsoft Endpoint Manager to review and edit cloud-delivered protection settings (for existing policies)
 
@@ -391,7 +393,7 @@ Potentially unwanted applications (PUA) are a category of software that can caus
 
 Depending on the apps your organization is using, you might be getting false positives as a result of your PUA protection settings. If necessary, consider running PUA protection in audit mode for a while, or apply PUA protection to a subset of devices in your organization. PUA protection can be configured for the Microsoft Edge browser and for Microsoft Defender Antivirus.
 
-We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to edit or set PUA protection settings; however, you can use other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy) (see [Manage Microsoft Defender for Endpoint](manage-atp-post-migration.md)).
+We recommend using [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to edit or set PUA protection settings; however, you can use other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy) (see [Manage Microsoft Defender for Endpoint](manage-mde-post-migration.md).
 
 #### Use Microsoft Endpoint Manager to edit PUA protection (for existing configuration profiles)
 
@@ -443,7 +445,7 @@ Depending on the [level of automation](/microsoft-365/security/defender-endpoint
 
 If you have worked through all the steps in this article and still need help, contact technical support.
 
-1. Go to Microsoft 365 Defender (<https://security.microsoft.com>) and sign in.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> and sign in.
 
 2. In the upper right corner, select the question mark (**?**), and then select **Microsoft support**.
 
@@ -451,6 +453,6 @@ If you have worked through all the steps in this article and still need help, co
 
 ## See also
 
-[Manage Microsoft Defender for Endpoint](manage-atp-post-migration.md)
+[Manage Microsoft Defender for Endpoint](manage-mde-post-migration.md)
 
 [Overview of Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/use)

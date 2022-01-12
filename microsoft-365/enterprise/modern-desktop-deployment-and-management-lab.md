@@ -1,11 +1,11 @@
 ---
-title: Windows 10 and Office 365 deployment lab kit
+title: Windows and Office 365 deployment lab kit
 f1.keywords:
 - NOCSH
 ms.author: greglin
 author: greg-lindsay
-manager: laurawi
-ms.date: 04/26/2021
+manager: dougeby
+ms.date: 11/18/2021
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,32 +14,33 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom:
-description: Learn about and where to access the Windows and Office Deployment Lab Kit.
+description: Learn about where to access the Windows and Office Deployment Lab Kit.
 ---
 
-# Windows 10 and Office 365 deployment lab kit
+# Windows and Office 365 deployment lab kit
 
-The Windows 10 and Office 365 deployment lab kit is designed to help you plan, test, and validate your deployment and management of desktops running Windows 10 Enterprise and Microsoft 365 Apps for enterprise. The labs in the kit cover using Microsoft Endpoint Configuration Manager, Desktop Analytics, the Office Customization Tool, OneDrive, Windows Autopilot, and more.
+The Windows and Office 365 deployment lab kit is designed to help you plan, test, and validate your deployment and management of desktops running Windows 10 Enterprise or Windows 11 Enterprise and Microsoft 365 Apps for enterprise. The labs in the kit cover using Microsoft Endpoint Configuration Manager, Desktop Analytics, the Office Customization Tool, OneDrive, Windows Autopilot, and more.
 
 This kit is highly recommended for organizations preparing for Windows 8.1 upgrades to Windows 10. It also applies if you're currently using Windows 10, Microsoft 365 Apps for enterprise (formerly Office 365 ProPlus), or Office 2019. As an isolated environment, the resulting lab is ideal for exploring deployment tool updates and testing your deployment-related automation.
 
-[Download the Windows 10 and Office 365 deployment lab kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
+**Windows 10 and Windows 11 versions of the lab kit are now available for free download in the Microsoft Evaluation Center.**
+
+[Download the Windows 10 and Office 365 deployment lab kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit)<br>
+[Download the Windows 11 and Office 365 deployment lab kit](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
 
 ## A complete lab environment
 
-The kit provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, a domain controller, an Internet gateway, and a fully configured Configuration Manager instance. The kit contains the latest evaluation versions of the following products:
+The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, a domain controller, an internet gateway, and a fully configured Configuration Manager instance. The labs include evaluation versions of the following products:
 
-- NEW! Windows 10 Enterprise, Version 21H1
-- Windows 7 Enterprise
-- NEW! Microsoft Endpoint Configuration Manager, Version 2103
-- Windows Assessment and Deployment Kit for Windows 10
-- Microsoft Deployment Toolkit
-- Microsoft Application Virtualization (App-V)
-- Microsoft BitLocker Administration and Monitoring
-- Windows Server
-- Microsoft SQL Server
 
-The resulting lab is designed to be connected to trials for:
+|Windows 10 Lab  |Windows 11 Lab  |
+|---------|---------|
+|Windows 10 Enterprise, Version 21H1      | Windows 11 Enterprise        |
+|Microsoft Endpoint Configuration Manager, Version 2103     |  Microsoft Endpoint Configuration Manager, Version 2107      | 
+|Windows Assessment and Deployment Kit for Windows 10     |  Windows Assessment and Deployment Kit for Windows 11      | 
+|Windows Server 2019     |  Windows Server 2022      | 
+
+The labs are also designed to be connected to trials for:
 
 - Microsoft 365 E5
 - Microsoft 365 Apps for enterprise
@@ -48,6 +49,8 @@ The resulting lab is designed to be connected to trials for:
 ## Step-by-step labs
 
 Detailed lab guides take you through multiple deployment and management scenarios. The labs have been updated for the latest versions of Intune and Configuration Manager.
+
+Note: The Windows 11 version of the lab includes the Windows 10 lab guide. A Windows 11 version of the lab guide will be available soon. 
 
 ### Plan and prepare infrastructure
 
@@ -94,18 +97,18 @@ Detailed lab guides take you through multiple deployment and management scenario
 
 - Prepare, deploy, optimize
 
-## Where to find the Windows 10 and Office 365 deployment lab kit
-
-[Download the Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
+## Download the lab
+[Download the Windows 10 and Office 365 deployment lab kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit)<br>
+[Download the Windows 11 and Office 365 deployment lab kit](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
 
 > [!NOTE]
-> Please use a broadband Internet connection to download this content and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The lab expires November 6, 2021. A new version will be published prior to expiration.
+> Please use a broadband internet connection to download this content and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows 10 lab expires February 15, 2022. The Windows 11 lab expires March 10, 2022. New versions will be published prior to expiration.
 
 ## Additional guidance
 
+- [Windows client deployment resources and documentation](/windows/deployment)
 - [Desktop Deployment series videos from Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
 - [Microsoft Endpoint Configuration Manager OS Deployment](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
-- [Plan for Windows 10 deployment](/windows/deployment/planning/index)
 - [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps)
 - [Getting Started with Intune](/intune/get-started-evaluation)
 
@@ -114,5 +117,5 @@ Detailed lab guides take you through multiple deployment and management scenario
 - [Introducing Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
 - [Office 365 for business](https://products.office.com/business/office)
 - [Introducing Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-- [Windows 10 for enterprise](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
-- [Windows 10 for small and medium business](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)
+- [Windows for business](https://www.microsoft.com/windows/business)
+

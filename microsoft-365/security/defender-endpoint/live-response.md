@@ -21,7 +21,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -340,6 +340,7 @@ Select the **Command log** tab to see the commands used on the device during a s
 
 - Live response sessions are limited to 25 live response sessions at a time.
 - Live response session inactive timeout value is 30 minutes.
+- Getfile command inactive timeout value is 30 minutes. It is considered inactive while the command is running in the background.
 - A user can initiate up to 10 concurrent sessions.
 - A device can only be in one session at a time.
 - The following file size limits apply:

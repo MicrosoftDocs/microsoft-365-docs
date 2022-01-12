@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 audience: Admin
-ms.topic: conceptual
+ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: high
 search.appverid:
@@ -186,3 +186,5 @@ Monitoring focuses on service metadata and user content is not monitored.
 - [Using Priority Accounts in Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/using-priority-accounts-in-microsoft-365/ba-p/1873314)
 
 - [Service alerts for mailbox utilization in Exchange Online monitoring](microsoft-365-mailbox-utilization-service-alerts.md)
+
+- [Service alerts for MRS source delays in Exchange Online monitoring](microsoft-365-mrs-source-delays-service-alerts.md)
