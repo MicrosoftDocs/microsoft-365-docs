@@ -11,6 +11,9 @@ ms.service: O365-seccomp
 ms.collection:
 - m365-security-compliance
 - m365initiative-compliance
+ms.custom: 
+- admindeeplinkDEFENDER
+- intro-get-started
 ms.localizationpriority: medium
 description: "Learn about tasks that will help you quickly get started with compliance in Microsoft 365."
 ---
@@ -42,7 +45,7 @@ For step-by-step guidance to get started with Compliance Manager, see [Get start
 > [!IMPORTANT]
 > Security and compliance are tightly integrated for most organizations. It’s important that your organization addresses basic security, threat protection, and identity and access management areas to help provide a defense in-depth approach to both security and compliance.
 >
-> Check your [Microsoft 365 Secure Score](../security/defender/microsoft-secure-score.md) in the Microsoft 365 security center and completing the tasks outlined in the following articles:
+> Check your [Microsoft 365 Secure Score](../security/defender/microsoft-secure-score.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and completing the tasks outlined in the following articles:
 >
 > - [Security roadmap - Top priorities for the first 30 days, 90 days, and beyond](../security/office-365-security/security-roadmap.md)
 > - [Top 12 tasks for security teams to support working from home](../security/top-security-tasks-for-remote-work.md)

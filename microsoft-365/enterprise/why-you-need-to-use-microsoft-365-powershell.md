@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: Ent_O365
 f1.keywords:
 - CSH
-ms.custom:
+ms.custom: admindeeplinkEXCHANGE
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: "Summary: Understand why you must use PowerShell to manage Microsoft 365, in some cases more efficiently and in other cases by necessity."
 ---
@@ -251,7 +251,7 @@ The Microsoft 365 admin center provides several ways to filter your data to easi
 
 ![Example of doing an advanced search in the Microsoft 365 admin center for the list of mailboxes for all the users who live in the city of Bloomington.](../media/o365-powershell-advanced-search.png)
 
-The Exchange Admin center also lets you combine filter criteria. For example, you can find the mailboxes for all the people who live in Bloomington and work in the Finance department.
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> also lets you combine filter criteria. For example, you can find the mailboxes for all the people who live in Bloomington and work in the Finance department.
 
 But there are limitations to what you can do in the Exchange Admin center. For example, you couldn't as easily find the mailboxes of people who live in Bloomington *or* San Diego, or the mailboxes for all people who don't live in Bloomington.
 
@@ -373,7 +373,7 @@ Suppose you'd like to make a report that shows the following information for all
 
 - Whether the user is enabled for Skype for Business Online
 
-You can't easily produce such a report in the Microsoft 365 admin center. Instead, you would have to create a separate document to store the information, such as an Excel worksheet. Then, get all the user names and licensing information from the Microsoft 365 admin center, get mailbox information from the Exchange Admin center, get Skype for Business Online information from the Skype for Business Online Admin center, and then combine that information.
+You can't easily produce such a report in the Microsoft 365 admin center. Instead, you would have to create a separate document to store the information, such as an Excel worksheet. Then, get all the user names and licensing information from the Microsoft 365 admin center, get mailbox information from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, get Skype for Business Online information from the Skype for Business Online Admin center, and then combine that information.
 
 The alternative is to use a PowerShell script to compile the report for you.
 

@@ -24,19 +24,17 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-The Defender for Endpoint sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Defender for Endpoint service.
-
-The embedded Defender for Endpoint sensor runs in system context using the LocalSystem account. The sensor uses Microsoft Windows HTTP Services (WinHTTP) to enable communication with the Defender for Endpoint cloud service.
+The Defender for Endpoint sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Defender for Endpoint service. The embedded Defender for Endpoint sensor runs in system context using the LocalSystem account. The sensor uses Microsoft Windows HTTP Services (WinHTTP) to enable communication with the Defender for Endpoint cloud service.
 
 > [!TIP]
 > For organizations that use forward proxies as a gateway to the Internet, you can use network protection to [investigate connection events that occur behind forward proxies](investigate-behind-proxy.md).
 
-The WinHTTP configuration setting is independent of the Windows Internet (WinINet) browsing proxy settings and can only discover a proxy server by using the following discovery methods:
+The WinHTTP configuration setting is independent of the Windows Internet (WinINet) browsing proxy settings (see, [WinINet vs. WinHTTP](/windows/win32/wininet/wininet-vs-winhttp)) and can only discover a proxy server by using the following discovery methods:
 
 - Auto-discovery methods:
 
@@ -53,6 +51,9 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
   
   - WinHTTP configured using netsh command: Suitable only for desktops in a stable topology (for example: a desktop in a corporate network behind the same proxy)
 
+> [!NOTE]
+> Defender antivirus and EDR proxies can be set independently.  In the sections that follow, be aware of those distinctions.
+
 ## Configure the proxy server manually using a registry-based static proxy
 
 Configure a registry-based static proxy for Defender for Endpoint detection and response (EDR) sensor to report diagnostic data and communicate with Defender for Endpoint services if a computer is not permitted to connect to the Internet.
@@ -68,7 +69,7 @@ Configure a registry-based static proxy for Defender for Endpoint detection and 
 >
 > These updates improve the connectivity and reliability of the CnC (Command and Control) channel.
 
-The static proxy is also configurable through Group Policy (GP). The group policy can be found under:
+The static proxy is also configurable through Group Policy (GP), both the settings under group policy values need to be set to configure the proxy server to be used for EDR. The group policy can be found under:
 
 - **Administrative Templates > Windows Components > Data Collection and Preview Builds > Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**.
 
@@ -100,9 +101,9 @@ Configure the static proxy using the Group Policy found here:
 
    :::image type="content" source="images/proxy-server-mdav.png" alt-text="Proxy server for Microsoft Defender Antivirus.":::
 
-3. Under the registry key `HKLM\Software\Policies\Microsoft\Windows Defender`, the policy sets the registry value `ProxyServer` as REG_SZ. 
+3. Under the registry key `HKLM\Software\Policies\Microsoft\Windows Defender`, the policy sets the registry value `ProxyServer` as REG_SZ. 
 
-   The registry value `ProxyServer` takes the following string format:
+   The registry value `ProxyServer` takes the following string format:
 
     ```text
     <server name or ip>:<port>
@@ -123,6 +124,12 @@ Configure the static proxy using the Group Policy found here:
 > - ProxyBypass 
 > - ProxyPacUrl 
 > - ProxyServer 
+
+> [!NOTE]
+> To use proxy correctly, configure these three different proxy settings:
+>  - Microsoft Defender for Endpoint (MDE)
+>  - AV (Antivirus)
+>  - Endpoint Detection and Response (EDR)
 
 ## Configure the proxy server manually using netsh command
 
@@ -175,9 +182,12 @@ In your firewall, open all the URLs where the geography column is WW. For rows w
 >
 > URLs that include v20 in them are only needed if you have Windows devices running version 1803 or later. For example, `us-v20.events.data.microsoft.com` is needed for a Windows device running version 1803 or later and onboarded to US Data Storage region.
 >
-> If you are using Microsoft Defender Antivirus in your environment, see [Configure network connections to the Microsoft Defender Antivirus cloud service](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
+> The above spreadsheet relates to MDE EDR, if you are using Microsoft Defender Antivirus in your environment, see [Configure network connections to the Microsoft Defender Antivirus cloud service](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
 
 If a proxy or firewall is blocking anonymous traffic, as Defender for Endpoint sensor is connecting from system context, make sure anonymous traffic is permitted in the previously listed URLs.
+
+> [!NOTE]
+> Microsoft does not provide a proxy server. These URLs are accessible via the proxy server that you configure.
 
 ### Microsoft Monitoring Agent (MMA) - proxy and firewall requirements for older versions of Windows client or Windows Server
 
@@ -194,8 +204,8 @@ The information below list the proxy and firewall configuration information requ
 |*.blob.core.windows.net|Port 443|Outbound|Yes|
 |*.azure-automation.net|Port 443|Outbound|Yes|
 
->[!NOTE]
->*These connectivity requirements also apply to the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to onboard these operating systems with the new unified solution are at [Onboard Windows servers](configure-server-endpoints.md), or to migrate to the new unfiied solution at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
+> [!NOTE]
+> *These connectivity requirements also apply to the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to onboard these operating systems with the new unified solution are at [Onboard Windows servers](configure-server-endpoints.md), or to migrate to the new unified solution at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
 > [!NOTE]
 > As a cloud-based solution, the IP range can change. It's recommended you move to DNS resolving setting.
@@ -204,7 +214,7 @@ The information below list the proxy and firewall configuration information requ
 
  See the following guidance to eliminate the wildcard (*) requirement for your specific environment when using the Microsoft Monitoring Agent (MMA) for previous versions of Windows.
 
-1.	Onboard a previous operating system with the Microsoft Monitoring Agent (MMA) into Defender for Endpoint (for more information, see [Onboard previous versions of Windows on Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) and [Onboard Windows servers](configure-server-endpoints.md).
+1. Onboard a previous operating system with the Microsoft Monitoring Agent (MMA) into Defender for Endpoint (for more information, see [Onboard previous versions of Windows on Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) and [Onboard Windows servers](configure-server-endpoints.md).
 
 2. Ensure the machine is successfully reporting into the Microsoft 365 Defender portal.
 
@@ -219,7 +229,7 @@ The wildcards (\*) used in \*.ods.opinsights.azure.com, \*.oms.opinsights.azure.
 The \*.blob.core.windows.net URL endpoint can be replaced with the URLs shown in the "Firewall Rule: \*.blob.core.windows.net" section of the test results.
 
 > [!NOTE]
-> In the case of onboarding via Azure Defender, multiple workspaces maybe used. You will need to perform the TestCloudConnection.exe procedure above on an onboarded machine from each workspace (to determine if there are any changes to the *.blob.core.windows.net URLs between the workspaces).
+> In the case of onboarding via Microsoft Defender for Cloud, multiple workspaces maybe used. You will need to perform the TestCloudConnection.exe procedure above on an onboarded machine from each workspace (to determine if there are any changes to the *.blob.core.windows.net URLs between the workspaces).
 
 ## Verify client connectivity to Microsoft Defender for Endpoint service URLs
 
@@ -265,7 +275,7 @@ If at least one of the connectivity options returns a (200) status, then the Def
 However, if the connectivity check results indicate a failure, an HTTP error is displayed (see HTTP Status Codes). You can then use the URLs in the table shown in [Enable access to Defender for Endpoint service URLs in the proxy server](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). The URLs you'll use will depend on the region selected during the onboarding procedure.
 
 > [!NOTE]
-> The Connectivity Analyzer tool cloud connectivity checks are not compatible with Attack Surface Reduction rule [Block process creations originating from PSExec and WMI commands](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands). You will need to temporarily disable this rule to run the connectivity tool. Alternatively, you can temporarily add [ASR exclusions](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction.md#exclude-files-and-folders) when running the analyzer.
+> The Connectivity Analyzer tool cloud connectivity checks are not compatible with Attack Surface Reduction rule [Block process creations originating from PSExec and WMI commands](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands). You will need to temporarily disable this rule to run the connectivity tool. Alternatively, you can temporarily add [ASR exclusions](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules) when running the analyzer.
 >
 > When the TelemetryProxyServer is set, in Registry or via Group Policy, Defender for Endpoint will fall back to direct if it can't access the defined proxy.
 
