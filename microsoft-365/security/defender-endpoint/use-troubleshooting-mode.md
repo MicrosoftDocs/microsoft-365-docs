@@ -90,25 +90,7 @@ When Microsoft Defender Antivirus real-time protection is turned on, application
 
 5. After disabling RTP, check to see if the application is slow. 
 
-## Scenario 4: Potentially unwanted app (PUA) is blocked by Windows Defender
-
-When a legitimate third-party application (for example, FileZilla) is detected as a potentially unwanted app, and blocked from running, turn off PUA blocks so that the application can run properly. 
-
-1. Request SOC admin to turn on troubleshooting mode for the device. 
-
-2. To turn off PUA detections, first turn off tamper protection. For more information, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md).
-
-3. Once tamper protection is disabled, log in to the device.
-
-4. Launch an elevated PowerShell command prompt.  
-
-    - Set-mppreference -PUAProtection Disabled 
-
-5. After disabling PUA, check to see if the application is now able to run properly. 
-
-For more information, see [Block potentially unwanted applications with Microsoft Defender Antivirus](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md).
-
-## Scenario 5: Microsoft Office plugin blocked by Attack Surface Reduction
+## Scenario 4: Microsoft Office plugin blocked by Attack Surface Reduction
 
 Attack Surface Reduction (ASR) is not allowing Microsoft Office plugin to work properly because **Block all Office applications from creating child processes** is set to block mode. 
 
@@ -122,7 +104,7 @@ Attack Surface Reduction (ASR) is not allowing Microsoft Office plugin to work p
 
 For more information, see [Overview of attack surface reduction](overview-attack-surface-reduction.md). 
 
-## Scenario 6: Domain blocked by Network Protection
+## Scenario 5: Domain blocked by Network Protection
 
 Network Protection is blocking Microsoft domain, preventing users from accessing it. 
 
