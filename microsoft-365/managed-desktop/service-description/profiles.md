@@ -46,7 +46,7 @@ The following table summarizes the settings and their default values for each se
 |Feature|Sensitive Data|Power User|Standard|
 |---|:---:|:---:|:---:|
 |**Block External Storage**|Yes|Yes|No|
-|**[Cloud Block Level](/graph/api/resources/intune-deviceconfig-defendercloudblockleveltype)**|High|High|High|
+|**[Cloud Block Level](/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel)**|High|High|High|
 |**Disable Microsoft Accounts**|Yes|Yes|No|
 |**Disable personal OneDrive**|Yes|Yes|No|
 |**Switch to secure desktop for elevation**|No|Yes|No|

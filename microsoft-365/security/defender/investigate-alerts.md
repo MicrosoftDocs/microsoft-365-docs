@@ -49,11 +49,9 @@ You can filter alerts according to these criteria:
 
 - Severity
 - Status
-- Category
-- Detection source
-- Tags
-- Policy
+- Service sources
 - Impacted assets
+- Automated investigation state
 
 ## Required roles for Defender for Office 365 alerts
 
