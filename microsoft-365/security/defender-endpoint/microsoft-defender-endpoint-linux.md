@@ -95,7 +95,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
  > [!NOTE]
  > After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that that are listed in this section are provided for technical upgrade support only.
 
-    List of versions:
+  List of versions:
 
     - 2.6.32-754.2.1.el6.x86_64 
     - 2.6.32-754.17.1.el6.x86_64
