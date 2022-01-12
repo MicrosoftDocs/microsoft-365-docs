@@ -48,15 +48,19 @@ Follow these steps to create a prebuilt model to classify documents in SharePoin
 
 4. Select **Create**.
 
-## Add a file to analyze the prebuilt model
+## Analyze the prebuilt model
 
 1. On the **Models** page, in the **Add a file to analyze** section, select **Add file**.
 
     ![Screenshot of the new models page showing the Add a file to analyze section.](../media/content-understanding/prebuilt-add-file-to-analyze.png) 
 
-1. **Files to analyze the model** page, select a file (invoice or receipt) to analyze and select detected distractors.
+2. On the **Files to analyze the model** page, select **Add** to find the file you want to use.
 
-2. 
+    ![Screenshot of the Files to analyze the model page showing the Add button.](../media/content-understanding/prebuilt-add-file-button.png) 
+
+3. On the **Add a file from the training files library** page, select the file, and then select **Add**.
+
+    ![Screenshot of the Add a file from the training files library page.](../media/content-understanding/prebuilt-add-file-from-training-file-library.png) 
 
 6. More TBD.
 
