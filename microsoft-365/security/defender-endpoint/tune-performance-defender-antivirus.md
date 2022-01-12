@@ -96,7 +96,7 @@ Microsoft Defender Antivirus performance analyzer has the following prerequisite
 
 - Supported Windows versions: Windows 10, Windows 11, and Windows Server 2016 and above
 - Platform Version: 4.18.2108.7+
-- PowerShell Version: PowerShell Version 5.1
+- PowerShell Version: PowerShell Version 5.1, PowerShell ISE
 
 ## PowerShell reference
 There are two new PowerShell cmdlets used to tune performance of Microsoft Defender Antivirus: 

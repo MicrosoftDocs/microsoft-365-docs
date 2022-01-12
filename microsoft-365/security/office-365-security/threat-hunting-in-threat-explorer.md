@@ -29,7 +29,7 @@ In this article:
 - [Improvements to threat hunting experience](#improvements-to-threat-hunting-experience)
 
 > [!NOTE]
-> This is part of a **3-article series** on **Threat Explorer (Explorer)**, **email security**, and **Explorer and Real-time detections basics** (such as differences between the tools, and permissions needed to operate them). The other two articles in this series are [Email security with Threat Explorer](email-security-in-microsoft-defender.md) and [Threat Explorer and Real-time detections basics](real-time-detections.md).
+> This is part of a **3-article series** on **Threat Explorer (Explorer)**, **email security**, and **Explorer and Real-time detections** (such as differences between the tools, and permissions needed to operate them). The other two articles in this series are [Email security with Threat Explorer](email-security-in-microsoft-defender.md) and [Threat Explorer and Real-time detections](real-time-detections.md).
 
 
 **Applies to**

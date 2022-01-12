@@ -121,7 +121,7 @@ You can use the [Malware Protection Command-Line Utility](command-line-arguments
 ### Set Microsoft Defender Antivirus to passive mode on Windows Server
 
 > [!TIP]
-> You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2012 R2 and 2016. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint).
+> You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2012 R2 and 2016. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
 
 1. Open Registry Editor, and then navigate to
 
@@ -136,6 +136,10 @@ You can use the [Malware Protection Command-Line Utility](command-line-arguments
 
 > [!NOTE]
 > After onboarding to Defender for Endpoint, you might have to set Microsoft Defender Antivirus to passive mode on Windows Server. To validate that passive mode was set as expected, search for *event 5007* in the **Microsoft-Windows-Windows Defender Operational** log (located at `C:\Windows\System32\winevt\Logs`), and confirm that either the  **ForceDefenderPassiveMode** or **PassiveMode** registry keys were set by to **0x1**.
+
+### Are you using Windows Server 2012 R2 or Windows Server 2016?
+
+You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2012 R2 and 2016 using the method above. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
 
 ## Configure Defender for Endpoint
 

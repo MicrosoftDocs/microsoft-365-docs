@@ -64,7 +64,7 @@ You'll need to take the following steps:
 
    :::image type="content" source="images/plist-onboarding-file.png" alt-text="The  Windows Defender ATP Onboarding file" lightbox="images/plist-onboarding-file.png":::
 
-2. In the Jamf Pro dashboard, select **New**.
+2. Sign in to Jamf Pro, navigate to **Computers** > **Configuration Profiles**, and select **New**.
 
    :::image type="content" source="images/jamf-pro-configure-profile.png" alt-text="The page on which you create a new Jamf Pro dashboard" lightbox="images/jamf-pro-configure-profile.png":::
 
@@ -78,7 +78,7 @@ You'll need to take the following steps:
    - Distribution Method: Install Automatically
    - Level: Computer Level
 
-4. In **Application & Custom Settings** select **Configure**.
+4.  Navigate to the **Application & Custom Settings** page and select **Upload** > **Add**.
 
    :::image type="content" source="images/jamfpro-mac-profile.png" alt-text="The configurate app and custom settings" lightbox="images/jamfpro-mac-profile.png":::
 
@@ -720,7 +720,7 @@ Alternatively, you can download [kext.mobileconfig](https://github.com/microsoft
 
 ## Step 9: Configure Network Extension
 
-As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft 365 Defender portal. The following policy allows the network extension to perform this functionality.
 
 These steps are applicable of macOS 10.15 (Catalina) or newer.
 

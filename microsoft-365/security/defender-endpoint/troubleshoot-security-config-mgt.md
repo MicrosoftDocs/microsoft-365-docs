@@ -198,5 +198,8 @@ For Security Management for Microsoft Defender for Endpoint on Windows Server 20
 
 7.  Select **Save** to save the new rule.
 
+> [!NOTE]
+> After this rule change is performed, a full synchronization of your Active Directory will be required. For large environments, it is recommended to schedule this rule change and full sync during on-premise Active Directory quiet periods.
+
 ## Related topic
 - [Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration)

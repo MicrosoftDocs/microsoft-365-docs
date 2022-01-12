@@ -14,7 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 09/16/2021
+ms.date: 12/07/2021
 ms.technology: mde
 ---
 
@@ -182,9 +182,9 @@ Get the current list of attack surface reduction GUIDs from [Attack surface redu
 
    :::image type="content" source="images/asr-guid.png" alt-text="The Attack surface reduction configuration" lightbox="images/asr-guid.png":::
 
-Policy|Setting
----|---
-Configure Controlled folder access| Enabled, Audit Mode
+Policy|Location|Setting
+---|---|---
+Configure Controlled folder access| \Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Controlled Folder Access| Enabled, Audit Mode
 
 ## Run a detection test to verify onboarding
 
@@ -299,7 +299,7 @@ Browse to **Computer Configuration** \> **Policies** \> **Administrative Templat
 
 ### Check for signature update
 
-Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Signature Updates**
+Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.
 
 :::image type="content" source="images/signature-update-1.png" alt-text="Signature update" lightbox="images/signature-update-1.png":::
 
