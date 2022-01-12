@@ -40,14 +40,13 @@ Here's a high-level overview of implementing a multi-workload DEP to enable Cust
 
 5. [Create a Customer Key in each key vault that you created in the previous step](customer-key-set-up.md#add-a-key-to-each-key-vault-either-by-creating-or-importing-a-key). You can create new keys or import existing ones.
 
-4. Grant access to the key vaults to the M365DataAtRestEncryption Azure Active Directory (Azure AD) app. The AppID for this app is **c066d759-24ae-40e7-a56f-027002b5d3e4**.
+6. Grant access to the key vaults to the M365DataAtRestEncryption Azure Active Directory (Azure AD) app. The AppID for this app is **c066d759-24ae-40e7-a56f-027002b5d3e4**.
 
+7. Contact the Microsoft Data Encryption Policy Service (MDEPS) team to onboard MDEPS for your organization. If your organization already has MDEPS support for other workloads (such as Exchange or SharePoint) they you only have to request the onboarding for multiple workloads.
 
-6. Contact the Microsoft Data Encryption Policy Service (MDEPS) team to onboard MDEPS for your organization. If your organization already has MDEPS support for other workloads (such as Exchange or SharePoint) they you only have to request the onboarding for multiple workloads.
+8. Use the [New-M365DataAtRestEncryptionPolicy](/powershell/module/exchange/new-m365dataatrestencryptionpolicy) cmdlet in Exchange Online PowerShell to create a multi-workload DEP.
 
-7. Use the [New-M365DataAtRestEncryptionPolicy](/powershell/module/exchange/new-m365dataatrestencryptionpolicy) cmdlet in Exchange Online PowerShell to create a multi-workload DEP.
-
-8. Use the [Set-M365DataAtRestEncryptionPolicyAssignment](/powershell/module/exchange/set-m365dataatrestencryptionpolicyassignment) cmdlet in Exchange Online PowerShell to assign the multi-workload DEP that you created in the previous step to your organization. After you assign the multi-workload DEP, you can't disable it.
+9. Use the [Set-M365DataAtRestEncryptionPolicyAssignment](/powershell/module/exchange/set-m365dataatrestencryptionpolicyassignment) cmdlet in Exchange Online PowerShell to assign the multi-workload DEP that you created in the previous step to your organization. After you assign the multi-workload DEP, you can't disable it.
 
 After you complete these steps, Microsoft 365 encrypts all data in your organization, including audit records, using the keys that are identified in the multi-workload DEP that you created in step 6.
 
