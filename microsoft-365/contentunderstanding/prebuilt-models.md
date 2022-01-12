@@ -70,6 +70,11 @@ On the extractor details page, you will see the sample file and the list of extr
 
    ![Screenshot of the Add a file from the training files library page.](../media/content-understanding/prebuilt-extractor-details-page.png) 
 
+You can use the controls at the bottom of the page to zoom in or out as needed to read the fields. 
+
+   ![Screenshot of the zoom controls at the bottom of the extractor details page.](../media/content-understanding/prebuilt-extractor-page-zoom-control.png) 
+
+The fields that are highlighted in green are the items that were detected by the model by the model when it analyzed the file. The fields highlighted in blue
 
 
 
