@@ -35,7 +35,7 @@ The **Send on Behalf** permission lets a user send email on behalf of a Microsof
 > You can configure **Send as** or **Send on behalf** for a given user, but not both. If you configure both, it will default to **Send as**.
 
 > [!NOTE]
-> **Send as** and **Send on behalf** are not supported on Outlook for Mac.
+> **Send as** and **Send on behalf** are not supported on Outlook for Mac in hybrid Exchange configurations.
     
 ## Allow members to send email as a group
 
