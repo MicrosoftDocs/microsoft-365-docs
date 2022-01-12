@@ -46,7 +46,7 @@ You can also manage custom detections that apply to data from specific Microsoft
 To manage required permissions, a **global administrator** can:
 
 - Assign the **security administrator** or **security operator** role in [Microsoft 365 admin center](https://admin.microsoft.com/) under **Roles** > **Security admin**.
-- Check RBAC settings for Microsoft Defender for Endpoint in [Microsoft Defender Security Center](https://securitycenter.windows.com/) under **Settings** > **Permissions** > **Roles**. Select the corresponding role to assign the **manage security settings** permission.
+- Check RBAC settings for Microsoft Defender for Endpoint in [Microsoft 365 Defender](https://security.microsoft.com/) under **Settings** > **Permissions** > **Roles**. Select the corresponding role to assign the **manage security settings** permission.
 
 > [!NOTE]
 > To manage custom detections, **security operators** will need the **manage security settings** permission in Microsoft Defender for Endpoint if RBAC is turned on.
@@ -187,7 +187,7 @@ You can view the list of existing custom detection rules, check their previous r
 
 ### View existing rules
 
-To view all existing custom detection rules, navigate to **Hunting** > **Custom detections**. The page lists all the rules with the following run information:
+To view all existing custom detection rules, navigate to **Hunting** > **Custom detection rules**. The page lists all the rules with the following run information:
 
 - **Last run**—when a rule was last run to check for query matches and generate alerts
 - **Last run status**—whether a rule ran successfully
@@ -196,9 +196,9 @@ To view all existing custom detection rules, navigate to **Hunting** > **Custom 
 
 ### View rule details, modify rule, and run rule
 
-To view comprehensive information about a custom detection rule, go to **Hunting** > **Custom detections** and then select the name of rule. You can then view general information about the rule, including information its run status and scope. The page also provides the list of triggered alerts and actions.
+To view comprehensive information about a custom detection rule, go to **Hunting** > **Custom detection rules** and then select the name of rule. You can then view general information about the rule, including information its run status and scope. The page also provides the list of triggered alerts and actions.
 
-![Custom detection rule details page.](../../media/custom-detection-details.png)<br>
+![Custom detection rule details page.](../../media/custom-detect-rules-view.png)<br>
 *Custom detection rule details*
 
 You can also take the following actions on the rule from this page:

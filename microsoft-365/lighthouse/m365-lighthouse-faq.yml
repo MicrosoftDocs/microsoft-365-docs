@@ -63,7 +63,7 @@ sections:
           
       - question: Why do I see data for some customer tenants but not others?
         answer: |
-          For customer tenant data to show up in Lighthouse, partners must establish Delegated Admin Privileges (DAP) with customers through Partner Center. For more information, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Microsoft 365 Business Premium or Microsoft 365 E3 subscription and fewer than 500 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+          For customer tenant data to show up in Lighthouse, partners must establish Delegated Admin Privileges (DAP) with customers through Partner Center. For more information, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Microsoft 365 Business Premium or Microsoft 365 E3 subscription and fewer than 500 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and [Microsoft 365 Lighthouse Tenants page overview](m365-lighthouse-tenants-page-overview.md).
           
       - question: What if I don't want to see certain tenants in Microsoft 365 Lighthouse?
         answer: |
@@ -75,7 +75,7 @@ sections:
               > [!NOTE]
               > Once you inactivate a tenant, you can't take action on the tenant until inactivation is complete. It may take up to 48 hours for inactivation to complete.
           
-          To learn more about tenants, see [Microsoft 365 Lighthouse tenant list overview](m365-lighthouse-tenant-list-overview.md).
+          To learn more about tenants, see [Microsoft 365 Lighthouse tenants page overview](m365-lighthouse-tenants-page-overview.md).
 
       - question: Will Microsoft 365 Lighthouse work if my customer tenants have other subscriptions besides Microsoft 365 Business Premium or Microsoft 365 E3?
         answer: |
@@ -95,5 +95,9 @@ sections:
           
       - question: Where can I submit feedback and ideas?
         answer: |
-          Your feedback matters and is important to us! Submit your feedback or feature ideas through the [Microsoft Endpoint Manager Intune Feedback page](https://go.microsoft.com/fwlink/?linkid=2151507). You can start conversations about Lighthouse and Windows 365 features, ask questions to other partners or Microsoft employees, provide feature feedback, and more.
+          Your feedback matters and is important to us! There are a few different ways for you to submit feedback:
+
+          - Go to the [Microsoft 365 Lighthouse Feedback page](https://aka.ms/m365lighthouseuservoice). You can start conversations about Lighthouse and Windows 365 features, post questions for other partners or Microsoft employees, provide feedback and feature ideas, and more.
+          - Select the Feedback icon in the upper-right corner of Lighthouse.
+          - Respond to the occasional (not more than once a month) pop-up window in Lighthouse that asks you to provide feedback.
           

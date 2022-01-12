@@ -32,9 +32,12 @@
     href: memory.md
   - name: CPU Regression Analysis
     href: cpu.md 
+  - name: SDK & API
+    href: sdkapi.md
 - name: Reference
   items:
   - name: Frequently Asked Questions
     href: faq.md
+
 
 

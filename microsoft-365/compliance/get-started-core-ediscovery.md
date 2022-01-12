@@ -13,6 +13,7 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
@@ -51,7 +52,7 @@ Licensing for Core eDiscovery requires the appropriate organization subscription
 
 For information about licensing:
 
-- Download and see the "eDiscovery and auditing" section in the [Microsoft 365 Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
+- Download and see the eDiscovery and auditing section in the [Microsoft 365 Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
 
 - See the [Security & Compliance Center service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
@@ -61,9 +62,9 @@ To access Core eDiscovery or be added as a member of a Core eDiscovery case, a u
 
 Complete the following steps to add users to the eDiscovery Manager role group:
 
-1. Go to <https://compliance.microsoft.com/permissions> and sign in using the credentials for an admin account in your Microsoft 365 or Office 365 organization.
+1. Go to the Microsoft 365 compliance center and sign in using the credentials for an admin account in your Microsoft 365 or Office 365 organization.
 
-2. On the **Permissions** page, select the **eDiscovery Manager** role group.
+2. On the <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a> page, select the **eDiscovery Manager** role group.
 
 3. On the eDiscovery Manager flyout page, click **Edit** next to the **eDiscovery Manager** section.
 
@@ -99,9 +100,9 @@ For more information about eDiscovery permissions and a description of each role
 
 The next step is to create a case and start using Core eDiscovery. Complete the following steps to create a case and add members. The user who creates the case is automatically added as a member.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in using the credentials for a user account that has been assigned the appropriate eDiscovery permissions. Members of the Organization Management role group can also create Core eDiscovery cases.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in using the credentials for a user account that has been assigned the appropriate eDiscovery permissions. Members of the Organization Management role group can also create Core eDiscovery cases.
 
-2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **eDiscovery > Core**.
+2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a>.
 
 3. On the **Core eDiscovery** page, click **Create a case**.
 

@@ -1,6 +1,6 @@
 ---
 title: "Deploy Microsoft 365 Lighthouse baselines"
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
@@ -29,7 +29,7 @@ Microsoft 365 Lighthouse baselines let you deploy standard managed-tenant config
 - Require MFA for end users
 - Block Legacy Authentication
 - Set up Device Enrollment in Microsoft Endpoint Manager – Azure AD Join
-- Configure Defender Anti-virus policy for Windows devices
+- Configure Defender Antivirus policy for Windows devices
 - Configure Compliance Policy for Windows devices
 
 ## Before you begin

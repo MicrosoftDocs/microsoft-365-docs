@@ -18,7 +18,10 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
+- admindeeplinkEXCHANGE
 description: "Learn how to use the compliance center to enable archive mailboxes to support your organization's message retention, eDiscovery, and hold requirements."
 ---
 
@@ -31,11 +34,11 @@ Archiving in Microsoft 365 (also called *In-Place Archiving*) provides users wit
 
 ## Get the necessary permissions
 
-You have to be assigned the Mail Recipients role in Exchange Online to enable or disable archive mailboxes. By default, this role is assigned to the Recipient Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. If you don't see the **Archive** page in the Microsoft 365 compliance center, ask your administrator to assign you the necessary permissions.
+You have to be assigned the Mail Recipients role in Exchange Online to enable or disable archive mailboxes. By default, this role is assigned to the Recipient Management and Organization Management role groups on the **Permissions** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. If you don't see the **Archive** page in the Microsoft 365 compliance center, ask your administrator to assign you the necessary permissions.
 
 ## Enable an archive mailbox
 
-1. Go to <https://compliance.microsoft.com> and sign in.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in.
 
 2. In the left pane of the Microsoft 365 compliance center, click **Information governance**, and then click the **Archive** tab.
 
@@ -44,15 +47,15 @@ You have to be assigned the Mail Recipients role in Exchange Online to enable or
    > [!NOTE]
    > The **Archive** page shows a maximum of 500 users.
 
-4. In the list of mailboxes, select the user that you want to enable the archive mailbox for.
+3. In the list of mailboxes, select the user that you want to enable the archive mailbox for.
 
    ![Click Enable in the details pane of the selected user to enable the archive mailbox.](../media/8b53cdec-d5c9-4c28-af11-611f95c37b34.png)
 
-5. In the details pane for the selected user, click **Enable**.
+4. In the details pane for the selected user, click **Enable**.
 
    A warning is displayed saying that if you enable the archive mailbox, items in the user's mailbox that are older than the archiving policy assigned to the mailbox will be moved to the new archive mailbox. The default archive policy that is part of the retention policy assigned to Exchange Online mailboxes moves items to the archive mailbox two years after the date the item was delivered to the mailbox or created by the user. For more information, see the **More info** section in this article.
 
-6. Click **Yes** to enable the archive mailbox.
+5. Click **Yes** to enable the archive mailbox.
 
    It might take a few moments to create the archive mailbox. When it's created, **Archive mailbox: enabled** is displayed in the details pane for the selected user. You might have to click **Refresh** ![Refresh icon.](../media/O365-MDM-Policy-RefreshIcon.gif) to update the information in the details pane.
 
@@ -67,7 +70,7 @@ The default archive policy assigned to users' mailboxes moves items to the archi
 
 To disable an archive mailbox:
 
-1. Go to <https://compliance.microsoft.com> and sign in.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in.
 
 2. In the left pane of the Microsoft 365 compliance center, click **Information governance**, and then click the **Archive** tab.
 
@@ -124,6 +127,22 @@ Run the following command to disable the archive mailbox for all users in your o
 ```powershell
 Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND RecipientTypeDetails -Eq "UserMailbox"} | Disable-Mailbox -Archive
 ```
+
+## Run diagnostics on archive mailboxes
+
+You can run an automated diagnostic check on a user's archive mailbox to identify any problems and suggested resolutions.
+
+To run the diagnostic check, click the button below. 
+
+> [!div class="nextstepaction"]
+> [Run Tests: Archive Mailbox](https://aka.ms/PillarArchiveMailbox)
+
+![Run diagnostics on an archive mailbox.](../media/ArchiveMailboxDiagnostics.png)
+
+A flyout page opens in the Microsoft 365 admin center. Enter the email address of the mailbox you want to check and click **Run Tests**.
+
+> [!NOTE]
+> You must be a Microsoft 365 global admin to use the archive mailbox diagnostic check. Also, this feature isn't available in Microsoft 365 Government clouds, Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
 
 ## More information
 

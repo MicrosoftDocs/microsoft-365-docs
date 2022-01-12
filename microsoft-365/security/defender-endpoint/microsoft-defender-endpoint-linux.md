@@ -24,7 +24,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -64,19 +64,65 @@ In general you need to take the following steps:
 
 If you experience any installation failures, refer to [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
 
+> [!NOTE]
+> It is not supported to install Microsoft Defender for Endpoint in any other location other than the default install path. 
+
 ### System requirements
 
 - Supported Linux server distributions and x64 (AMD64/EM64T) versions:
 
-  - Red Hat Enterprise Linux 7.2 or higher
+  - Red Hat Enterprise Linux 6.7 or higher
+  - Red Hat Enterprise Linux 7.2 or higher 
+  - CentOS 6.7 or higher 
   - CentOS 7.2 or higher
   - Ubuntu 16.04 LTS or higher LTS
   - Debian 9 or higher
   - SUSE Linux Enterprise Server 12 or higher
   - Oracle Linux 7.2 or higher
+  - Amazon Linux 2
+  - Fedora 33 or higher
 
     > [!NOTE]
     > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
+
+
+    For Red Hat Enterprise Linux 6 and CentOS 6, the list of supported kernel versions are:
+       - For 6.7: 2.6.32-573.* 
+       - For 6.8: 2.6.32-642.* 
+       - For 6.9: 2.6.32-696.* 
+       - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.41.2:
+
+ > [!NOTE]
+ > After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that that are listed in this section are provided for technical upgrade support only.
+
+    List of versions:
+
+    - 2.6.32-754.2.1.el6.x86_64 
+    - 2.6.32-754.17.1.el6.x86_64
+    - 2.6.32-754.29.1.el6.x86_64
+    - 2.6.32-754.3.5.el6.x86_64 
+    - 2.6.32-754.18.2.el6.x86_64
+    - 2.6.32-754.29.2.el6.x86_64
+    - 2.6.32-754.6.3.el6.x86_64 
+    - 2.6.32-754.22.1.el6.x86_64
+    - 2.6.32-754.30.2.el6.x86_64
+    - 2.6.32-754.9.1.el6.x86_64 
+    - 2.6.32-754.23.1.el6.x86_64
+    - 2.6.32-754.33.1.el6.x86_64
+    - 2.6.32-754.10.1.el6.x86_64
+    - 2.6.32-754.24.2.el6.x86_64
+    - 2.6.32-754.35.1.el6.x86_64
+    - 2.6.32-754.11.1.el6.x86_64
+    - 2.6.32-754.24.3.el6.x86_64
+    - 2.6.32-754.39.1.el6.x86_64
+    - 2.6.32-754.12.1.el6.x86_64
+    - 2.6.32-754.25.1.el6.x86_64
+    - 2.6.32-754.41.2.el6.x86_64
+    - 2.6.32-754.14.2.el6.x86_64
+    - 2.6.32-754.27.1.el6.x86_64
+    - 2.6.32-754.15.3.el6.x86_64
+    - 2.6.32-754.28.1.el6.x86_64       
+
 
 - Minimum kernel version 3.10.0-327
 

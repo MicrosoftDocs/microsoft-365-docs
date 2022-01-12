@@ -26,13 +26,13 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](overview-security-center.md).
+Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](microsoft-365-defender.md).
 
 To help you find the information you need more quickly, Microsoft improvement actions are organized into groups:
 
 - Identity (Azure Active Directory accounts & roles)
 - Device (Microsoft Defender for Endpoint, known as [Microsoft Secure Score for Devices](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
-- Apps (email and cloud apps, including Office 365 and Microsoft Cloud App Security)
+- Apps (email and cloud apps, including Office 365 and Microsoft Defender for Cloud Apps)
 
 >[!NOTE]
 >In the recent release of Microsoft Secure Score, an improved scoring model has been released which made Microsoft Secure Score temporarily incompatible with Identity Secure Score and the Graph API. [View details](microsoft-secure-score-whats-new.md)

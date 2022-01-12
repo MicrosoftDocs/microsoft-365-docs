@@ -2,7 +2,6 @@
 title: Microsoft Defender Antivirus on Windows Server
 description: Learn how to enable and configure Microsoft Defender Antivirus on Windows Server 2016, Windows Server 2019, and Windows Server 2022.
 keywords: windows defender, server, scep, system center endpoint protection, server 2016, current branch, server 2012
-search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -14,7 +13,7 @@ ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 10/13/2021
+ms.date: 10/18/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -23,8 +22,7 @@ ms.collection: M365-security-compliance
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender Antivirus is available in the following editions/versions of Windows Server:
 
@@ -34,7 +32,7 @@ Microsoft Defender Antivirus is available in the following editions/versions of 
 - Windows Server 2016
 - Windows Server 2012 R2 (Requires Microsoft Defender for Endpoint)
 
-In some instances, Microsoft Defender Antivirus is referred to as *Endpoint Protection*; however, the protection engine is the same. Although the functionality, configuration, and management are largely the same for [Microsoft Defender Antivirus on Windows 10](microsoft-defender-antivirus-windows.md), there are a few key differences on Windows Server:
+In some instances, Microsoft Defender Antivirus is referred to as *Endpoint Protection*; however, the protection engine is the same. Although the functionality, configuration, and management are largely the same for [Microsoft Defender Antivirus on Windows 10](microsoft-defender-antivirus-windows.md) and Windows 11, there are a few key differences on Windows Server:
 
 - On Windows Server, [automatic exclusions](configure-server-exclusions-microsoft-defender-antivirus.md) are applied based on your defined Server Role.
 
@@ -58,10 +56,8 @@ By default, Microsoft Defender Antivirus is installed and functional on Windows 
 
 If the GUI is not installed on your server, and you want to install it, either the **Add Roles and Features** wizard or PowerShell cmdlets.
 
-
-
 > [!NOTE]
-> This option is not available for Windows Server 2012 R2. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint).
+> This option is not available for Windows Server 2012 R2. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
 
 ### Turn on the GUI using the Add Roles and Features Wizard
 
@@ -79,7 +75,7 @@ If the GUI is not installed on your server, and you want to install it, either t
 
 The following PowerShell cmdlet will enable the interface:
 
-```PowerShell
+```powershell
 Install-WindowsFeature -Name Windows-Defender-GUI
 ```
 
@@ -97,7 +93,7 @@ If you need to install or reinstall Microsoft Defender Antivirus on Windows Serv
 
 To use PowerShell to install Microsoft Defender Antivirus, run the following cmdlet:
 
-```PowerShell
+```powershell
 Install-WindowsFeature -Name Windows-Defender
 ```
 
@@ -107,13 +103,13 @@ Event messages for the antimalware engine included with Microsoft Defender Antiv
 
 Once Microsoft Defender Antivirus is installed, your next step is to verify that it's running. On your Windows Server endpoint, run the following PowerShell cmdlet:
 
-```PowerShell
+```powershell
 Get-Service -Name windefend
 ```
 
 To verify that firewall protection is turned on, run the following PowerShell cmdlet:
 
-```PowerShell
+```powershell
 Get-Service -Name mpssvc
 ```
 
@@ -217,19 +213,19 @@ You can set Microsoft Defender Antivirus to passive mode by setting the followin
 
 To turn off the Microsoft Defender Antivirus GUI, use the following PowerShell cmdlet:
 
-```PowerShell
+```powershell
 Uninstall-WindowsFeature -Name Windows-Defender-GUI
 ```
 
 ### Are you using Windows Server 2012 R2 or Windows Server 2016?
 
-You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2012 R2 and and Windows Server 2016. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint).
+You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2012 R2 and and Windows Server 2016. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
 
 <br/><br/>
 
 | Procedure | Description |
 |---|---|
-| Disable Microsoft Defender Antivirus using Group Policy | In your Local Group Policy Editor, navigate to **Windows Defender**, and then select **Turn off Windows Defender Antivirus**. |
+| Disable Microsoft Defender Antivirus using Group Policy | In your Local Group Policy Editor, navigate to **Administrative Template** > **Windows Component** > **Endpoint Protection** > **Disable Endpoint Protection**, and then select **Enabled** > **OK**. |
 | Disable Microsoft Defender Antivirus using a registry key | To use the the [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) registry key, navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`, and set or create a DWORD entry called `DisableAntiSpyware`. Set its value to `1` (which sets the registry key's value to *true*). |
 | Disable Microsoft Defender Antivirus using PowerShell | Use the following PowerShell cmdlet: `Set-MpPreference -DisableRealtimeMonitoring $true` |
 | Uninstall Microsoft Defender Antivirus using PowerShell | Use the following PowerShell cmdlet: `Uninstall-WindowsFeature -Name Windows-Defender` |

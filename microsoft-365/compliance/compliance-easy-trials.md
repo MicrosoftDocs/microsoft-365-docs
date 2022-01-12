@@ -13,14 +13,14 @@ ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
-description: "About the Microsoft 365 compliance free trials."
+description: "About the compliance solutions trials."
 ---
 
-# About the free trial for Microsoft 365 compliance
+# About the compliance solutions trial
 
 Microsoft compliance solutions help protect your organization from internal threats rising from inappropriate permissions on files and emails, and helps your organization to comply with regulatory and policy requirements.
 
-The Microsoft 365 compliance solutions trial is the easiest way to try the capabilities of Microsoft compliance solutions, and setting it up only takes a couple of minutes. After the trial setup is complete, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
+The Microsoft 365 compliance solutions trial is the easiest way to try all the capabilities of Microsoft compliance solutions, and setting it up only takes a couple of minutes. After the trial setup is complete, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
 
 ## Terms and conditions
 
@@ -48,33 +48,27 @@ You can extend the trial within the last 15 days of the trial period. You are li
 
 Admins can disable the trial at any point by going to the compliance card.
 
-If you decide not to enroll in a feature that is part of the compliance solutions trial, your trial data will be maintained for a period of time, usually 180 days, before being permanently deleted. You may continue to access the data gathered during the trial until that time.
+If you decide not to enroll in a feature that is part of the compliance solutions trial, unless stated otherwise for the solution, your trial data will be maintained for a period of time, usually 180 days, before being permanently deleted. You may continue to access the data gathered during the trial until that time.
 
 ## Availability
 
 The Microsoft 365 compliance solutions trial is gradually rolling out to existing customers who meet specific criteria (including geography) who don't already have a Microsoft E5 license package.
 
-## Learn more about compliance
+## Learn more about compliance solutions
 
 Wondering what you can experience in your free trial? The compliance solutions trial includes the following solutions:
-
-<!--
-- **application governance**
-
-    Application governance is an add-on for Microsoft Cloud App Security that monitors OAuth apps running in your Microsoft 365 tenant for excessive permissions and inappropriate access to files and email. [Learn more](app-governance-manage-app-governance.md)
--->
 
 - **Audit**
 
     Advanced Audit helps organizations to conduct forensic and compliance investigations by increasing audit log retention required to conduct an investigation, providing access to crucial events that help determine scope of compromise, and faster access to Office 365 Management Activity API. [Learn more about Audit](advanced-audit.md)
 
+- **Communication Compliance**
+
+    Communication Compliance helps you overcome modern compliance challenges associated with internal and external communications by helping you automatically capture inappropriate messages, investigate possible policy violations, and take steps to remediate. Learn more about [Communication Compliance](communication-compliance.md)
+
 - **Compliance Manager**
 
     Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors. [Learn more about Compliance Manager](compliance-manager.md)
-
-- **Data Loss Prevention**
-
-    To comply with business standards and industry regulations, organizations need to protect sensitive info to prevent its inadvertent disclosure. Set up data loss prevention policies to identify, monitor, and automatically protect sensitive info across Microsoft 365. [Learn more about Data Loss Prevention](dlp-learn-about-dlp.md)
 
 - **eDiscovery**
 
@@ -82,7 +76,23 @@ Wondering what you can experience in your free trial? The compliance solutions t
 
 - **Information Protection**
 
-    Implement Microsoft Information Protection and sensitivity labels, to help you discover, classify, and protect your sensitive content wherever it lives or travels. [Learn more about Information Protection](information-protection.md)
+    Implement Microsoft Information Protection with [sensitivity labels](sensitivity-labels.md) and [data loss prevention policies](dlp-learn-about-dlp.md) to help you discover, classify, and protect your sensitive content wherever it lives or travels.
+    
+    The Information Protection trial provides you with default labels, auto-labeling for documents and emails, and data loss prevention to protect credit card numbers shared in Teams and by devices. The default policies we create for you get you up and running quickly, but you can fully customize them as you want.
+    
+    When the trial ends, you'll receive an email that informs you:
+    
+    - All files and emails labeled during your trial stay labeled. You can manually remove the labels.
+    
+    - You'll be downgraded to your previous Microsoft E3 license package that doesn't support auto-labeling and data loss prevention. Your existing policies will stay turned on unless you turn them off.
+    
+    - Any auto-labeling policies cannot be edited after the trial ends, but can be deleted.
+    
+    - If you edit DLP policies that include either the Teams or Devices locations after the trial ends, those locations will be removed from the policy.
+    
+    For more information about each of these preconfigured features and how they will impact users, see [Learn about the free trial for Microsoft Information Protection](mip-easy-trials.md).
+    
+    For more information about the full range of features for Microsoft Information Protection, see [Microsoft Information Protection in Microsoft 365](information-protection.md).
 
 - **Insider Risk Management**
 
@@ -91,7 +101,7 @@ Wondering what you can experience in your free trial? The compliance solutions t
 <!--
 - **privacy management**
 
-    Privacy management helps your organization understand and manage the personal data in your Microsoft 365 environment, remediate potential privacy risks, and fulfill subject rights requests. [Learn more](privacy-management.md)
+    Privacy management helps your organization understand and manage the personal data in your Microsoft 365 environment, remediate potential privacy risks, and fulfill subject rights requests. [Learn more](/privacy/solutions/privacymanagement/privacy-management)
 -->
 
 - **Records Management**

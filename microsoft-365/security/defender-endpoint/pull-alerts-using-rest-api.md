@@ -2,8 +2,6 @@
 title: Pull Microsoft Defender for Endpoint detections using REST API
 description: Learn how to call a Microsoft Defender for Endpoint API endpoint to pull detections in JSON format using the SIEM REST API.
 keywords: detections, pull detections, rest api, request, response
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -25,7 +23,8 @@ ms.custom: api
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink)
@@ -59,7 +58,7 @@ The _Client credential flow_ uses client credentials to authenticate against the
 Use the following method in the Microsoft Defender for Endpoint API to pull detections in JSON format.
 
 > [!NOTE]
-> Microsoft Defender Security Center merges similar alert detections into a single alert. This API pulls alert detections in its raw form based on the query parameters you set, enabling you to apply your own grouping and filtering.
+> Microsoft 365 Defender merges similar alert detections into a single alert. This API pulls alert detections in its raw form based on the query parameters you set, enabling you to apply your own grouping and filtering.
 
 ## Before you begin
 
@@ -131,7 +130,7 @@ ago|string|Pulls alerts in the following time range: from `(current_time - ago)`
 limit|int|Defines the number of alerts to be retrieved. Most recent alerts will be retrieved based on the number defined.<p> **NOTE**: When not specified, all alerts available in the time range will be retrieved.
 machinegroups|string|Specifies device groups to pull alerts from. <p> **NOTE**: When not specified, alerts from all device groups will be retrieved. <p> Example: <br><br> `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines`
 DeviceCreatedMachineTags|string|Single device tag from the registry.
-CloudCreatedMachineTags|string|Device tags that were created in Microsoft Defender Security Center.
+CloudCreatedMachineTags|string|Device tags that were created in Microsoft 365 Defender.
 
 ### Request example
 
