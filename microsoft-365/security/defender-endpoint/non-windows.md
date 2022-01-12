@@ -50,7 +50,7 @@ For more details on how to get started, visit the Defender for Endpoint on macOS
 
 ## Microsoft Defender for Endpoint on Linux
 
-Microsoft Defender for Endpoint on Linux offers preventative (AV), endpoint detection and response (EDR), and vulnerability management capabilities for Linux servers. This includes a full command line experience to configure and manage the agent, initiate scans, and manage threats. We support recent versions of the six most common Linux Server distributions: RHEL 7.2+, CentOS Linux 7.2+, Ubuntu 16 LTS, or higher LTS, SLES 12+, Debian 9+, and Oracle Linux 7.2. Microsoft Defender for Endpoint on Linux can be deployed and configured using Puppet, Ansible, or using your existing Linux configuration management tool. For information about the key features and benefits, read our
+Microsoft Defender for Endpoint on Linux offers preventative antivirus (AV), endpoint detection and response (EDR), and vulnerability management capabilities for Linux servers. This includes a full command line experience to configure and manage the agent, initiate scans, and manage threats. We support recent versions of the six most common Linux Server distributions: RHEL 7.2+, CentOS Linux 7.2+, Ubuntu 16 LTS, or higher LTS, SLES 12+, Debian 9+, and Oracle Linux 7.2. Microsoft Defender for Endpoint on Linux can be deployed and configured using Puppet, Ansible, or using your existing Linux configuration management tool. For information about the key features and benefits, read our
 [announcements](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Linux).
 
 For more details on how to get started, visit the Microsoft Defender for Endpoint on Linux [documentation](microsoft-defender-endpoint-linux.md).
