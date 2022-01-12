@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 12/16/2021
+ms.date: 01/06/2022
 ms.collection: M365-security-compliance
 ---
 
@@ -608,6 +608,20 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220105.1</summary>
+
+&ensp;Package version: **20220105.1**<br/>
+&ensp;Platform version: **4.18.2111.5**<br/>
+&ensp;Engine version: **1.1.18800.4**<br/>
+&ensp;Signature version: **1.355.1482.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+<br/>
+</details><details>
 <summary>1.1.2112.01</summary>
 
 &ensp;Package version: **1.1.2112.01**<br/>
