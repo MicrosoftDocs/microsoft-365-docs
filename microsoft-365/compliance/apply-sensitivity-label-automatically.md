@@ -205,7 +205,7 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
 
 - Simulation mode:
   - Auditing for Microsoft 365 must be turned on. If you need to turn on auditing or you're not sure whether auditing is already on, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
-  - To view file or email contents in the source view, you must have the **Content Explorer Content Viewer** role. Global admins don't have this role by default. If you don't have this permission, you don't see the preview pane when you select an item from the **Matched Items** tab.
+  - To view file or email contents in the source view, you must have the **Data Classification Content Viewer** role, which is included in the **Content Explorer Content Viewer** role group, or **Information Protection** and **Information Protection Investigators** role groups (currently in preview). Without the required role, you don't see the preview pane when you select an item from the **Matched Items** tab. Global admins don't have this role by default.
 
 - To auto-label files in SharePoint and OneDrive:
   - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -327,12 +327,20 @@ You can modify your policy directly from this interface:
 
     When you're ready to run the policy without simulation, select the **Turn on policy** option.
 
-Your auto-policies run continuously until they are deleted. For example, new and modified documents will be included with the current policy settings.
+Auto-policies run continuously until they are deleted. For example, new and modified files will be included with the current policy settings.
+
+### Monitoring your auto-labeling policy
+
+After your auto-labeling policy is turned on, you can view the labeling progress for files in your chosen SharePoint and OneDrive locations. Emails are not included in the labeling progress because they are automatically labeled as they are sent.
+
+The labeling progress includes the files to be labeled by the policy, the files labeled in the last 7 days, and the total files labeled. Because of the maximum of labeling 25,000 files a day, this information provides you with visibility into the current labeling progress for your policy and how many files are still to be labeled.
+
+When you first turn on your policy, you will initially see a value of 0 for files to be labeled until the latest data is retrieved. This progress information updates every 48 hours, so you can expect to see the most current data about every other day. When you select an auto-labeling policy, you can see more details about the policy in a flyout pane, which includes the labeling progress by the top 10 sites. The information on this flyout pane might be more current than the aggregated policy information displayed on the **Auto-labeling** main page.
 
 You can also see the results of your auto-labeling policy by using [content explorer](data-classification-content-explorer.md) when you have the appropriate [permissions](data-classification-content-explorer.md#permissions):
 
-- **Content Explorer List Viewer** lets you see a file's label but not the file's contents.
-- **Content Explorer Content Viewer** lets you see the file's contents.
+- **Content Explorer List Viewer** role group lets you see a file's label but not the file's contents.
+- **Content Explorer Content Viewer** role group, and **Information Protection** and **Information Protection Investigators** role groups (currently in preview) let you see the file's contents.
 
 > [!TIP]
 > You can also use content explorer to identify locations that have documents with sensitive information, but are unlabeled. Using this information, consider adding these locations to your auto-labeling policy, and include the identified sensitive information types as rules.

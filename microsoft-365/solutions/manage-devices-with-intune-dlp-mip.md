@@ -3,7 +3,9 @@ title: "Step 7. Implement data loss prevention (DLP) with information protection
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- Endpoint dlp
+- data loss prevention
+- dlp policies
 manager: dougeby
 audience: ITPro
 ms.topic: article
@@ -12,7 +14,9 @@ ms.localizationpriority: high
 ms.collection:
 - endpoint dlp
 - data loss prevention
-- dlp policies
+- dlp policies 
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: 
 keywords: 
 description: Implement Endpoint DLP by working with your information protection and governance team to create DLP policies for your organization.    
