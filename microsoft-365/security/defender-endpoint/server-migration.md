@@ -38,7 +38,7 @@ These instructions apply to the new unified solution and installer package of Mi
 > Operating system upgrades with Microsoft Defender for Endpoint installed are not supported. Please offboard then uninstall before proceeding with an upgrade.
 
 > [!NOTE]
-> During preview, full Microsoft Endpoint Configuration Manager automation and integration to perform an automated upgrade will be available in the 2111 release of MECM. From the 2107 release, you CAN use the Endpoint Protection node for configuration as well as Group Policy, PowerShell, Microsoft Endpoint Manager tenant attach or local configuration. In addition, you can leverage existing functionality in Microsoft Endpoint Configuration Manager to automate manual upgrade steps; methods for which are described below.
+> During preview, full Microsoft Endpoint Configuration Manager automation and integration to perform an automated upgrade will be available in a later release of MECM. From the 2107 release, you CAN use the Endpoint Protection node for configuration as well as Group Policy, PowerShell, Microsoft Endpoint Manager tenant attach or local configuration. In addition, you can leverage existing functionality in Microsoft Endpoint Configuration Manager to automate manual upgrade steps; methods for which are described below.
 
 ## Installer script
 
@@ -71,7 +71,7 @@ Migration steps:
    2. Uninstall SCEP.
    3. Install the [prerequisites](configure-server-endpoints.md#prerequisites) where applicable.
    4. Install Microsoft Defender for Endpoint (see [Configure server endpoints](configure-server-endpoints.md).
-   5. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft Defender Security Center](https://securitycenter.microsoft.com). 
+   5. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft 365 Defender](https://security.microsoft.com). 
 
    > [!TIP]
    > You can use the [installer script](server-migration.md#installer-script) as part of your application to automate the above steps.
@@ -118,7 +118,7 @@ Value: 0
 3. Uninstall System Center Endpoint Protection (Windows Server 2012 R2).
 4. Install the [prerequisites](configure-server-endpoints.md#prerequisites) where applicable. 
 5. Install Microsoft Defender for Endpoint (see [Configure server endpoints](configure-server-endpoints.md).)
-6. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft Defender Security Center](https://securitycenter.microsoft.com). 
+6. Apply the onboarding script **for use with Group Policy** downloaded from [Microsoft 365 Defender](https://security.microsoft.com). 
 7. Apply updates.
 8. Create and apply policies using Group Policy, PowerShell, or a 3rd party management solution.
 
