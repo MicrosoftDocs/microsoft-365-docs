@@ -214,8 +214,6 @@ SITs have a pre-defined [**confidence level**](https://www.microsoft.com/videopl
 
 #### Instance count supported values for SIT
 
-SITs also have a pre-defined range of instances of a SIT that must be found to match the rule, for example, if the  range is set from one to nine, the SIT must occur at least once and up to nine times for the rule to match.
-
 For a scanned item to satisfy rule criteria, the number of instances of a SIT in any single item must fall between the min and max values. This is called the **Instance count**.
 
 - **Min** field: the lower limit (minimum number) of instances of a SIT that must be found in an item to trigger a match. The min field supports values of:
