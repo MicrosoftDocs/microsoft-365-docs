@@ -75,11 +75,19 @@ The entity fields that are highlighted in green are the items that were detected
 > [!TIP]
 > You can use the scroll wheel on your mouse or the controls at the bottom of the document area to zoom in or out as needed to read the fields.
 
-### Select an extractor field name
+### Select an extractor entity
 
-You can select and apply an extractor field both in the document area and on the **Extractors** panel, depending on your preference.
+You can select and apply an extractor field in two ways, depending on your preference.
+ 
+- To select an entity from the document area, select the entity field.
 
-When you select an extractor field name, a **Select distractor?** box is displayed. The box shows the extractor name, the original value, and the option to select it as an extractor. For certain data types such as numbers or dates, it will also show an extracted value.
+    ![Screenshot of the document area showing how to select an entity field.](../media/content-understanding/prebuilt-document-area-select-field.png) 
+
+- To select an entity from the **Extractors** panel, select the check box to the right of the entity name.
+
+    ![Screenshot of the Extractors panel showing how to select an entity field.](../media/content-understanding/prebuilt-extractors-panel-select-field.png) 
+
+When you select an extractor field name, a **Select extractor?** box is displayed in the document area. The box shows the extractor name, the original value, and the option to select it as an extractor. For certain data types such as numbers or dates, it will also show an extracted value.
 
    ![Screenshot of the Select distractor box on the extractor details page.](../media/content-understanding/prebuilt-select-distractor-box.png) 
 
