@@ -121,6 +121,12 @@ sc query Windefend
 
 The `sc query` command returns information about the Microsoft Defender Antivirus service. When Microsoft Defender Antivirus is running, the `STATE` value displays `RUNNING`.
 
+To view all the Non running services, run the following Powershell cmdlet:
+
+```console
+sc query state= all
+```
+
 ## Update antimalware Security intelligence
 
 To get updated antimalware security intelligence, you must have the Windows Update service running. If you use an update management service, like Windows Server Update Services (WSUS), make sure that updates for Microsoft Defender Antivirus Security intelligence are approved for the computers you manage.
