@@ -66,41 +66,61 @@ Follow these steps to create a prebuilt model to classify documents in SharePoin
 
 ## Select extractors for your model
 
-On the extractor details page, you will see the document area and the **Extractors** panel that shows the list of extractors that have been identified in the document.
+On the extractor details page, you will see the document area on the right and the **Extractors** panel on the left. The **Extractors** panel shows the list of extractors that have been identified in the document.
 
    ![Screenshot of the Add a file from the training files library page.](../media/content-understanding/prebuilt-extractor-details-page.png) 
 
-The entity fields that are highlighted in green are the items that were detected by the model by the model when it analyzed the file. When you select an entity to extract, the highlighted field will change to blue. If you later decide not to include the entity, the highlighted field will change to gray. The highlights in the document make it easy to see the current state of the fields.
+The entity fields that are highlighted in green in the document area are the items that were detected by the model when it analyzed the file. When you select an entity to extract, the highlighted field will change to blue. If you later decide not to include the entity, the highlighted field will change to gray. The highlights make it easier to see the current state of the extractors you have selected.
 
 > [!TIP]
-> You can use the scroll wheel on your mouse or the controls at the bottom of the document area to zoom in or out as needed to read the fields.
+> You can use the scroll wheel on your mouse or the controls at the bottom of the document area to zoom in or out as needed to read the entity fields.
 
 ### Select an extractor entity
 
-You can select and apply an extractor field in two ways, depending on your preference.
+You can select an extractor in two ways, depending on your preference.
  
-- To select an entity from the document area, select the entity field.
+- To select an extractor from the document area, select the entity field.
 
     ![Screenshot of the document area showing how to select an entity field.](../media/content-understanding/prebuilt-document-area-select-field.png) 
 
-- To select an entity from the **Extractors** panel, select the check box to the right of the entity name.
+- To select an extractor from the **Extractors** panel, select the check box to the right of the entity name.
 
     ![Screenshot of the Extractors panel showing how to select an entity field.](../media/content-understanding/prebuilt-extractors-panel-select-field.png) 
 
-When you select an extractor field name, a **Select extractor?** box is displayed in the document area. The box shows the extractor name, the original value, and the option to select it as an extractor. For certain data types such as numbers or dates, it will also show an extracted value.
+When you select an extractor, a **Select extractor?** box is displayed in the document area. The box shows the extractor name, the original value, and the option to select it as an extractor. For certain data types such as numbers or dates, it will also show an extracted value.
 
    ![Screenshot of the Select distractor box on the extractor details page.](../media/content-understanding/prebuilt-select-distractor-box.png) 
 
 The original value is what is actually in the document. The extracted value is what will be written into the column in SharePoint. When the model is applied to a library, you can use column formatting to specify how you want it to look in the document.
 
+Select the extractors you want to you use. 
 
+## Apply the extractors to the model
 
-> [!TIP]
-> You can use the scroll wheel on your mouse or the controls at the bottom of the document area to zoom in or out as needed to read the fields.
+When you have selected the extractors you want to use, you can apply them in two ways, depending on your preference.
 
+- To apply the extractors from the document area, select **Apply**.
 
-When you select a field in the table
+    ![Screenshot of the document area showing how to select an entity field.](../media/content-understanding/prebuilt-document-area-select-field.png) 
 
+- To apply the extractors from the **Extractors** panel, select **Save and exit**.
 
-![Screenshot of the zoom controls at the bottom of the extractor details page.](../media/content-understanding/prebuilt-extractor-page-zoom-control.png) 
+    ![Screenshot of the Extractors panel showing how to select an entity field.](../media/content-understanding/prebuilt-extractors-panel-select-field.png) 
 
+## Rename an extractor
+
+You can rename an extractor either from the model home page or from the **Extractors** panel.
+
+To rename a distractor from model home page:
+
+1. In the **Extractors** section, select the extractor you want to rename, and then select **Rename**.
+
+    ![Screenshot of the document area showing how to select an entity field.](../media/content-understanding/prebuilt-model-page-rename-extractor.png) 
+
+2. On the **Rename entity extractor** panel, enter the new name of the extractor.
+
+To rename a distractor the **Extractors** panel:
+
+1. Select the extractor you want to rename, and then select **Rename**.
+
+    ![Screenshot of the Extractors panel showing how to select an entity field.](../media/content-understanding/prebuilt-extractors-panel-select-field.png) 
