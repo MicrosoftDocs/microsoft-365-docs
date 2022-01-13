@@ -208,9 +208,13 @@ Conditions are inclusive and are where you define what you want the rule to look
 
 depending on the [location(s)](#location-support-for-how-content-can-be-defined) you choose to apply the policy to. 
 
+The rule will only look for the presence of any **sensitivity labels** and **retention labels** you pick. 
+
 SITs have a pre-defined [**confidence level**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) which you can alter if needed. For more information, see [More on confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels). 
 
 #### Instance count supported values for SIT
+
+SITs also have a pre-defined range of instances of a SIT that must be found to match the rule, for example, if the  range is set from one to nine, the SIT must occur at least once and up to nine times for the rule to match.
 
 For a scanned item to satisfy rule criteria, the number of instances of a SIT in any single item must fall between the min and max values. This is called the **Instance count**.
 
@@ -221,12 +225,6 @@ For a scanned item to satisfy rule criteria, the number of instances of a SIT in
     - Any - Use ‘Any’ when you want the instance count criteria to be satisfied when an undefined number of instances of a SIT are found in a scanned item and that number of instances meets or exceeds the minimum number of instances value. In other words, the instance count criteria are met as long as the min value is met.
 
 For example, if you want the rule to trigger a match when more than 500 instances of a SIT are found in a single item, set the **min** value to `500` and the **max** value to `Any`.
-
-
-
-SITs also have a pre-defined range of occurrences of a SIT that must be found to match the rule, for example, if the  range is set from one to nine, the SIT must occur at least once and up to nine times for the rule to match.
-
-The rule will only look for the presence of any **sensitivity labels** and **retention labels** you pick. 
 
 #### Condition context
 
