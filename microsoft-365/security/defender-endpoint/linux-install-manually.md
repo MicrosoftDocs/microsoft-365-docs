@@ -112,12 +112,6 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
     ```
 
-- Download and make usable all the metadata for the currently enabled yum repositories:
-
-    ```bash
-    yum makecache
-    ```
-
 ### SLES and variants
 
 > [!NOTE]
