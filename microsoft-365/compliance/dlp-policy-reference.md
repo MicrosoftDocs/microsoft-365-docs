@@ -208,9 +208,12 @@ Conditions are inclusive and are where you define what you want the rule to look
 
 depending on the [location(s)](#location-support-for-how-content-can-be-defined) you choose to apply the policy to. 
 
-SITs have a pre-defined [**confidence level**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) which you can alter if needed. For more information, see [More on confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels). SITs also have a pre-defined range of occurrences of a SIT that must be found to match the rule, for example, if the **Instance count** range is set from one to nine, the SIT must occur at least once and up to nine times for the rule to match.
-
 The rule will only look for the presence of any **sensitivity labels** and **retention labels** you pick. 
+
+SITs have a pre-defined [**confidence level**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) which you can alter if needed. For more information, see [More on confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels). 
+
+> [!IMPORTANT]
+> SITs have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
 
 #### Condition context
 
