@@ -883,6 +883,10 @@ The following templates contain entries for all settings described in this docum
 ### Intune full profile
 
 ```XML
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+    <dict>
         <key>PayloadUUID</key>
         <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
         <key>PayloadType</key>
@@ -1032,6 +1036,8 @@ The following templates contain entries for all settings described in this docum
                 </dict>
             </dict>
         </array>
+    </dict>
+</plist>
 ```
 
 ## Property list validation
