@@ -5,7 +5,7 @@ keywords: Microsoft Managed Desktop, Microsoft 365, Microsoft Project, Microsoft
 ms.service: m365-md
 author: tiaraquan
 ms.author: tiaraquan
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 03/07/2019

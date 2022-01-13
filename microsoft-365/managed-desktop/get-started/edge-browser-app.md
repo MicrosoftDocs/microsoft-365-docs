@@ -5,7 +5,7 @@ keywords: browser, Microsoft Managed Desktop, Microsoft 365, service, documentat
 ms.service: m365-md
 author: tiaraquan
 ms.author: tiaraquan
-manager: laurawi
+manager: dougeby
 audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium

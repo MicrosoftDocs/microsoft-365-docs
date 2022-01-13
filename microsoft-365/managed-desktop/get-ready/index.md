@@ -6,7 +6,7 @@ ms.service: m365-md
 author: tiaraquan
 ms.localizationpriority: medium
 ms.author: tiaraquan
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
 ---

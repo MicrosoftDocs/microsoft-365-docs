@@ -7,7 +7,7 @@ author: tiaraquan
 ms.author: tiaraquan
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ---
 

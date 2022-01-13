@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ms.custom: intro-overview
 ms.author: tiaraquan
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ---
 

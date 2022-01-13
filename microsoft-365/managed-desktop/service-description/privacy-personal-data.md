@@ -5,7 +5,7 @@ keywords: GDPR, retention, deletion, storage, retention, processing, security, a
 ms.service: m365-md
 ms.sitesec: library
 author: tiaraquan
-manager: laurawi
+manager: dougeby
 f1.keywords:
 - NOCSH
 ms.author: tiaraquan

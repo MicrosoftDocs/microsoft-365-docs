@@ -9,7 +9,7 @@ ms.topic: article
 audience: ITPro
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ---
 
 # Access the admin portal

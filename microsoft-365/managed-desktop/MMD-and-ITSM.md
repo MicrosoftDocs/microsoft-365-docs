@@ -5,7 +5,7 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, ITIS
 ms.service: m365-md
 author: tiaraquan
 ms.author: tiaraquan
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ---
