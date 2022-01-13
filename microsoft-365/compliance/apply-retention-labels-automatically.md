@@ -1,3 +1,4 @@
+---
 title: "Automatically apply a retention label to retain or delete content"
 f1.keywords:
 - NOCSH
