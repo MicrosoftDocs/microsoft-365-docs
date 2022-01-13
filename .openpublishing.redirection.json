@@ -4536,6 +4536,10 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/business-video/index.yml",
+      "redirect_url": "/microsoft-365/admin/admin-video-library",
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/get-assessmnt-1methods-properties.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/get-assessment-methods-properties",
       "redirect_document_id": true
