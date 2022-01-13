@@ -224,7 +224,7 @@ For a scanned item to satisfy rule criteria, the number of instances of a SIT in
     - 1 to 500  - Use this when you want to set a specific upper limit that is 500 or less on the number of instances of a SIT in an item.
     - Any - Use ‘Any’ when you want the instance count criteria to be satisfied when an undefined number of instances of a SIT are found in a scanned item and that number of instances meets or exceeds the minimum number of instances value. In other words, the instance count criteria are met as long as the min value is met.
 
-For example, if you want the rule to trigger a match when more than 500 instances of a SIT are found in a single item, set the **min** value to `500` and the **max** value to `Any`.
+For example, if you want the rule to trigger a match when at least 500 instances of a SIT are found in a single item, set the **min** value to `500` and the **max** value to `Any`.
 
 #### Condition context
 
