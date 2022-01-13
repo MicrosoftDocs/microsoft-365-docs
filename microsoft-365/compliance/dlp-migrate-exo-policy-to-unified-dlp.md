@@ -135,12 +135,13 @@ Test and review your policies.
 To ensure that the migrated policies behave as expected, you can export the reports from both admin centers and do a comparison of the policy matches.
 
 1. Connect to [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
-2. Export the [EAC DLP report](/powershell/module/exchange/get-maildetaildlppolicyreport?view=exchange-ps). You can copy this cmdlet and insert the appropriate values:
+2. Export the [EAC DLP report](/powershell/module/exchange/get-maildetaildlppolicyreport). You can copy this cmdlet and insert the appropriate values:
 
 ```powershell
 Get-MailDetailDlpPolicyReport -StartDate <dd/mm/yyyy -EndDate <dd/mm/yyyy> -PageSize 5000 | select Date, MessageId, DlpPolicy, TransportRule -Unique | Export-CSV <"C:\path\filename.csv"> 
 ```
-3. Export the [Unified DLP report](/powershell/module/exchange/get-dlpdetailreport?view=exchange-ps). You can copy this cmdlet and insert the appropriate values:
+
+3. Export the [Unified DLP report](/powershell/module/exchange/get-dlpdetailreport). You can copy this cmdlet and insert the appropriate values:
 
 ```powershell
 Get-DlpDetailReport -StartDate <dd/mm/yyyy> -EndDate <dd/mm/yyyy> -PageSize 5000 | select Date, Location, DlpCompliancePolicy, DlpComplianceRule -Unique | Export-CSV <"C:\path\filename.csv">  
