@@ -4,11 +4,11 @@ description: How to deploy Microsoft 365 Apps, how they are updated, and how set
 keywords: change history
 ms.service: m365-md
 ms.sitesec: library
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ---
