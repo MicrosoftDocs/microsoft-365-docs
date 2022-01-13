@@ -3,8 +3,8 @@ title: User support
 description:  Explains the options for customer-led and partner-led support.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
+author: tiaraquan
+ms.author: tiaraquan
 manager: laurawi
 ms.topic: article
 ms.localizationpriority: medium

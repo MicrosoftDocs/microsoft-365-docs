@@ -2,10 +2,10 @@
 title: Validate new devices
 description: Before ordering devices, obtain one of each model and test it
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi

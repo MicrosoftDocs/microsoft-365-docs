@@ -3,8 +3,8 @@ title: Set up devices for Microsoft Managed Desktop
 description:  How to get new devices or reuse existing ones that qualify
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
+author: tiaraquan
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi

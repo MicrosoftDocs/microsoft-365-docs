@@ -3,10 +3,10 @@ title: Microsoft Managed Desktop device services
 description:  This topic lists device services and limitation for Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
+ms.author: tiaraquan
 manager: laurawi
 ms.topic: article
 ---

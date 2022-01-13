@@ -3,10 +3,10 @@ title: Device deployment groups
 description: The deployment groups used to manage updates and other changes
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
+ms.author: tiaraquan
 manager: laurawi
 ms.topic: article
 ---

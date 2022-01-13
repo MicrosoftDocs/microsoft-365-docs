@@ -3,10 +3,10 @@ title: Manage apps in Microsoft Managed Desktop
 description: Info about how to update line-of-business apps that are deployed to Microsoft Managed Desktop devices
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 manager: laurawi
 ms.topic: article
 ms.localizationpriority: medium

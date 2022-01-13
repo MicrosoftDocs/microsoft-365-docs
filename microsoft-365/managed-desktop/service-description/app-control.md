@@ -3,8 +3,8 @@ title: App control
 description:  How to use app control and trust with applications
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
+author: tiaraquan
+ms.author: tiaraquan
 manager: laurawi
 audience: ITpro
 ms.topic: article

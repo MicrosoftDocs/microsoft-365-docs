@@ -2,10 +2,10 @@
 title: Device names
 description: How Microsoft Managed Desktop manages device names
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi

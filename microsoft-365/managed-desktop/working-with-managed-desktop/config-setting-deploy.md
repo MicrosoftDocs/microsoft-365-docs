@@ -3,10 +3,10 @@ title: Deploy configurable settings in Microsoft Managed Desktop
 description:  Deploy and track configurable settings changes in Microsoft Managed Desktop.  
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, deploy, staged deployment, configurable settings
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
+ms.author: tiaraquan
 manager: laurawi
 ms.topic: article
 ---

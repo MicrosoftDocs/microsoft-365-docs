@@ -3,9 +3,9 @@ title: Get ready for enrollment in Microsoft Managed Desktop
 description:  Steps to take to prepare your organization for enrollment
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
-ms.author: jaimeo
+ms.author: tiaraquan
 manager: laurawi
 ms.topic: article
 audience: Admin

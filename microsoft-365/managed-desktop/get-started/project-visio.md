@@ -3,8 +3,8 @@ title: Install Microsoft Project or Microsoft Visio on Microsoft Managed Desktop
 description: Info on installing Microsoft Project or Microsoft Visio on Microsoft Managed Desktop devices 
 keywords: Microsoft Managed Desktop, Microsoft 365, Microsoft Project, Microsoft Visio
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
+author: tiaraquan
+ms.author: tiaraquan
 manager: laurawi
 ms.topic: article
 ms.localizationpriority: medium

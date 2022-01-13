@@ -3,8 +3,8 @@ title: Access the Admin portal
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 description: How to find and use the Admin portal, including controlling access to it.
 ms.service: m365-md
-ms.author: jaimeo
-author: jaimeo
+ms.author: tiaraquan
+author: tiaraquan
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: medium

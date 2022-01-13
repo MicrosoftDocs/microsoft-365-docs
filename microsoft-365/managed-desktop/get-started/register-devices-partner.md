@@ -2,10 +2,10 @@
 title: Steps for Partners to register devices
 description: How Partners can register devices so they can be managed by Microsoft Managed Desktop
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: laurawi
