@@ -66,17 +66,32 @@ Follow these steps to create a prebuilt model to classify documents in SharePoin
 
 ## Select extractors for your model
 
-On the extractor details page, you will see the sample file and the list of extractors that are in the file.
+On the extractor details page, you will see the sample file and the list of extractors that are identified in the file.
 
    ![Screenshot of the Add a file from the training files library page.](../media/content-understanding/prebuilt-extractor-details-page.png) 
 
+The fields that are highlighted in green are the items that were detected by the model by the model when it analyzed the file. When you select an entity to extract, the highlighted field will change to blue. If you later decide not to include the entity, the highlighted field will change to gray. The highlights in the document make it easy to see what the state of the field is.
+
+When you select a name in the
+
+Select a extractor field name
+
+You can use either the document area of the **Extractors panel** to select and apply a field name.
+
+When you select a field name either in the document or on the **Extractors** panel, a **Select distractor?** box is displayed over the document. The box shows the extractor name, the original value, and the option to select it as an extractor. For certain data types such as numbers or dates, it will also show an extracted value.
+
+   ![Screenshot of the Select distractor box on the extractor details page.](../media/content-understanding/prebuilt-select-distractor-box.png) 
+
+The original value is what is actually in the document. The extracted value is what will be actually written into the column. When the model is applied to a library, you can using column formatting in SharePoint to specify how it gets written into the document.
+
+
+
 > [!TIP]
-> You can use your mouse control or the controls at the bottom of the page to zoom in or out as needed to read the fields.
+> You can use the scroll wheel on your mouse or the controls at the bottom of the document to zoom in or out as needed to read the fields.
 
-
-The fields that are highlighted in green are the items that were detected by the model by the model when it analyzed the file. The fields highlighted in blue
 
 When you select a field in the table
+
 
 ![Screenshot of the zoom controls at the bottom of the extractor details page.](../media/content-understanding/prebuilt-extractor-page-zoom-control.png) 
 
