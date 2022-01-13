@@ -11,15 +11,11 @@ author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-  - M365-security-compliance
-  - m365solution-migratetomdatp
-  - m365solution-overview
-  - m365solution-mcafeemigrate
-  - m365solution-symantecmigrate
+ms.collection: 
+- m365solution-scenario
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 11/30/2021
+ms.date: 01/11/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
 ---
