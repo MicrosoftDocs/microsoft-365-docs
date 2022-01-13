@@ -77,7 +77,7 @@ The entity fields that are highlighted in green in the document area are the ite
 
 ### Select an extractor entity
 
-You can select an extractor in two ways, depending on your preference.
+You can select an extractor either from the document area or from the **Extractors** panel, depending on your preference.
  
 - To select an extractor from the document area, select the entity field.
 
@@ -97,7 +97,7 @@ Select the extractors you want to you use.
 
 ## Apply the extractors to the model
 
-When you have selected the extractors you want to use, you can apply them in two ways, depending on your preference.
+When you have selected the extractors you want to use, you can apply them either from the document area or from the **Extractors** panel.
 
 - To apply the extractors from the document area, select **Apply**.
 
@@ -117,10 +117,12 @@ To rename a distractor from model home page:
 
     ![Screenshot of the document area showing how to select an entity field.](../media/content-understanding/prebuilt-model-page-rename-extractor.png) 
 
-2. On the **Rename entity extractor** panel, enter the new name of the extractor.
+2. On the **Rename entity extractor** panel, enter the new name of the extractor, and then select **Rename**.
 
 To rename a distractor the **Extractors** panel:
 
 1. Select the extractor you want to rename, and then select **Rename**.
 
-    ![Screenshot of the Extractors panel showing how to select an entity field.](../media/content-understanding/prebuilt-extractors-panel-select-field.png) 
+    ![Screenshot of the Extractors panel showing how to select an entity field.](../media/content-understanding/prebuilt-extractors-panel-rename-field.png) 
+
+2. In the **Rename extractor** box, enter the new name of the extractor, and then select **Rename**.
