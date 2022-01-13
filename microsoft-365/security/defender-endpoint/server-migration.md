@@ -40,6 +40,7 @@ These instructions apply to the new unified solution and installer package of Mi
 > [!NOTE]
 > During preview, full Microsoft Endpoint Configuration Manager automation and integration to perform an automated upgrade will be available in a later release of MECM. From the 2107 release with the latest hotfix rollup, you CAN use the Endpoint Protection node for configuration as well as Group Policy, PowerShell, Microsoft Endpoint Manager tenant attach or local configuration. In addition, you can leverage existing functionality in Microsoft Endpoint Configuration Manager to automate manual upgrade steps; methods for which are described below.
 
+
 ## Installer script
 
 To facilitate upgrades when Microsoft Endpoint Configuration Manager or Microsoft Defender for Cloud are not in use or not yet available to perform the upgrade, you can use this [upgrade script](https://github.com/microsoft/mdefordownlevelserver). It can help automate the following required steps:
