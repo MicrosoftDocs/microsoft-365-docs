@@ -101,10 +101,7 @@ When you have selected the extractors you want to use, you can apply them either
 
 - To apply the extractors from the document area, select **Apply**.
 
-
 - To apply the extractors from the **Extractors** panel, select **Save and exit**.
-
-    ![Screenshot of the Extractors panel showing how to select an entity field.](../media/content-understanding/prebuilt-extractors-panel-select-field.png) 
 
 ## Rename an extractor
 
