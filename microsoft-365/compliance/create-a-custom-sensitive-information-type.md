@@ -80,6 +80,38 @@ Use this procedure to create a new sensitive information type that you fully def
 
 13. On the **Data classification** page, you'll see all the sensitive information types listed. Choose **Refresh** and then browse for or use the search tool to find the sensitive information type you created.
 
+### Copy and modify a sensitive information type
+
+Use this procedure to create a new sensitive information type that is based on an existing sensitive information type. 
+
+1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type that you want to copy.
+
+2. In the flyout, choose **Copy**.
+
+3. Choose **Refresh** in the list of sensitive information types and either browse or search for the copy you just made. Partial sting searches work, so you could just search for `copy` and search would return all the sensitive information types with the word `copy` in the name. 
+
+4. Fill in values for **Name** and **Description** and choose **Next**.
+
+5. Choose your sensitive information type copy and choose **Edit**. 
+
+6. Give your new sensitive information type a new **Name** and **Description**.
+
+7. You can choose to edit or remove the existing patterns and add new ones. Choose the default confidence level for the new pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
+
+8. Choose and define **Primary element**. The primary element can be a **Regular expression**, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. See, [What the DLP functions look for](what-the-dlp-functions-look-for.md).
+
+9. Fill in a value for **Character proximity**.
+
+10. (Optional) If you have **Supporting elements** or any [**Additional checks**](#more-information-on-additional-checks) add them. If needed you can group your **Supporting elements**.
+
+11. Choose **Create**.
+
+12. Choose **Next**.
+
+13. Choose the **recommended confidence level** for this sensitive information type.
+
+14. Check your setting and choose **Submit**.
+
 ## Test a sensitive information type
 
 You can test any sensitive information type in the list. We suggest that you test every sensitive information type that you create before using it in a policy.
@@ -148,38 +180,6 @@ For example, if you want the rule to trigger a match when at least 500 unique in
 1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list that you want to remove.
 
 2. In the fly-out that opens, choose **Delete**.
-
-## Copy and modify a sensitive information type
-
-Use this procedure to create a new sensitive information type that is based on an existing sensitive information type. 
-
-1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type that you want to copy.
-
-2. In the flyout, choose **Copy**.
-
-3. Choose **Refresh** in the list of sensitive information types and either browse or search for the copy you just made. Partial sting searches work, so you could just search for `copy` and search would return all the sensitive information types with the word `copy` in the name. 
-
-4. Fill in values for **Name** and **Description** and choose **Next**.
-
-5. Choose your sensitive information type copy and choose **Edit**. 
-
-6. Give your new sensitive information type a new **Name** and **Description**.
-
-7. You can choose to edit or remove the existing patterns and add new ones. Choose the default confidence level for the new pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
-
-8. Choose and define **Primary element**. The primary element can be a **Regular expression**, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. See, [What the DLP functions look for](what-the-dlp-functions-look-for.md).
-
-9. Fill in a value for **Character proximity**.
-
-10. (Optional) If you have **Supporting elements** or any [**Additional checks**](#more-information-on-additional-checks) add them. If needed you can group your **Supporting elements**.
-
-11. Choose **Create**.
-
-12. Choose **Next**.
-
-13. Choose the **recommended confidence level** for this sensitive information type.
-
-14. Check your setting and choose **Submit**.
 
 > [!NOTE]
 > These SITs can't be copied:
