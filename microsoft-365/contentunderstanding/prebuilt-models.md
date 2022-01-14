@@ -19,7 +19,7 @@ description: Learn how to create and configure a prebuilt model in SharePoint Sy
 
 # Use a prebuilt model to classify documents in Microsoft SharePoint Syntex
 
-Prebuilt models are pretrained to recognize documents and the structured information in the documents. You can immediately apply prebuilt models to libraries as they are. They don't need additional training or labeling.
+Prebuilt models are pretrained to recognize documents and the structured information in the documents. You can immediately apply prebuilt models to libraries as they are. They don't require additional training or labeling.
 
 You can also customize a prebuilt model, review it to see how it works on your documents, and customize the names to match your documents or naming conventions. 
 
@@ -83,7 +83,7 @@ You can select an extractor either from the document area or from the **Extracto
 
     ![Screenshot of the document area showing how to select an entity field.](../media/content-understanding/prebuilt-document-area-select-field.png) 
 
-- To select an extractor from the **Extractors** panel, select the check box to the right of the entity name.
+- To select an extractor from the **Extractors** panel, select the checkbox to the right of the entity name.
 
     ![Screenshot of the Extractors panel showing how to select an entity field.](../media/content-understanding/prebuilt-extractors-panel-select-field.png) 
 
@@ -107,7 +107,7 @@ When you have selected the extractors you want to use, you can apply them either
 
 You can rename an extractor either from the model home page or from the **Extractors** panel.
 
-To rename a extractor from model home page:
+To rename an extractor from the model home page:
 
 1. In the **Extractors** section, select the extractor you want to rename, and then select **Rename**.
 
@@ -115,7 +115,7 @@ To rename a extractor from model home page:
 
 2. On the **Rename entity extractor** panel, enter the new name of the extractor, and then select **Rename**.
 
-To rename a extractor the **Extractors** panel:
+To rename an extractor from the **Extractors** panel:
 
 1. Select the extractor you want to rename, and then select **Rename**.
 
