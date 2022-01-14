@@ -100,7 +100,7 @@ Some improvement actions in Compliance Manager are also monitored by [Microsoft 
 
 Automatic testing is turned on by default for organizations new to Compliance Manager. When you first deploy Microsoft 365 or Office 365, it takes approximately seven days for Secure Score to fully collect data and factor it into your compliance score.  When automated testing is turned on, the action’s test date won’t be updated, but its test status will update. When new assessments are created, scores automatically include Microsoft control scores and Secure Score integration.
 
-Along with the improvement actions that are monitored by Secure Score, continuous compliance assessment (CCA) now supports automated testing for over 40 additional actions. It also provides test result information for review, such as the testing logic and evidence. This feature works alongside existing integrations with Microsoft 365 Secure Score, and any automated actions you've previously configured will continue to work as-is.
+Along with the improvement actions that are monitored by Secure Score, continuous compliance assessment (CCA) now supports automated testing for over 35 additional actions. It also provides test result information for review, such as the testing logic and evidence. This feature works alongside existing integrations with Microsoft 365 Secure Score, and any automated actions you've previously configured will continue to work as-is.
 
 The global administrator for your organization can change the settings for automated testing at any time. You can turn off automated testing for common improvement actions, or turn it on for individual actions. Follow the instructions below to change your automated testing settings.
 
