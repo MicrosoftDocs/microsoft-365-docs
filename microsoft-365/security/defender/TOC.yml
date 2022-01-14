@@ -168,6 +168,8 @@
                    href: investigate-alerts.md    
                  - name: Alert grading playbooks
                    items: 
+                    - name: Overview
+                      href: alert-grading-playbooks.md
                     - name: Suspicious email forwarding
                       href: grading-playbook-email-forwarding.md
                     - name: Suspicious inbox forwarding rule

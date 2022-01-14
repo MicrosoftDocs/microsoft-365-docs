@@ -1,6 +1,6 @@
 ---
-title: Investigate suspicious inbox manipulation rule
-description: Investigate suspicious inbox manipulation rule.
+title: Investigate suspicious inbox manipulation rules
+description: Investigate suspicious inbox manipulation rules.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,7 +22,7 @@ search.appverid:
   - MOE150
 ms.technology: m365d
 ---
-# Investigate suspicious inbox manipulation rule
+# Investigate suspicious inbox manipulation rules
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
