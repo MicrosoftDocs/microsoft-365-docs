@@ -252,7 +252,7 @@ When you add a condition, you can select an operator that is relevant to type of
 |Doesn't contain any of|`-property:value` <p> `NOT property:value`|Used with conditions for properties that specify a string value. Returns items that don't contain any part of the specified string value.|
 |Doesn't equal any of|`-property=value` <p> `NOT property=value`|Used with conditions for properties that specify a string value. Returns items that don't contain the specific string.|
 |Equals|`size=value`|Returns items that are equal to the specified size.<sup>1</sup>|
-|Equals any of|`(property=value) OR (property=value)`|Used with conditions for properties that specify a string value. Returns items that are an exact match of one or more specified string values.|
+|Equals any of|`(property=value) OR (property=value)`|Used with conditions for properties that specify a string value. Returns items that are a match of one or more specified string values.|
 |Greater|`size>value`|Returns items where the specified property is greater than the specified value.<sup>1</sup>|
 |Greater or equal|`size>=value`|Returns items where the specified property is greater than or equal to the specified value.<sup>1</sup>|
 |Less|`size<value`|Returns items that are greater than or equal to the specific value.<sup>1</sup>|
@@ -273,6 +273,8 @@ Keep the following in mind when using search conditions.
 - If you add more than one condition for the same property, those conditions are logically connected by the **OR** operator. That means items that satisfy the keyword query and any one of the conditions are returned. So, groups of the same conditions are connected to each other by the **OR** operator and then sets of unique conditions are connected by the **AND** operator.
 
 - If you add multiple values (separated by commas or semi-colons) to a single condition, those values are connected by the **OR** operator. That means items are returned if they contain any of the specified values for the property in the condition.
+
+- Any condition that uses an operator with **Contains** and **Equals** logic will return similar search results for simple string searches. A simple string search is a string in the condition that doesn't include a wildcard). For example, a condition that uses **Equals any of** will return the same items as an condition that uses **Contains any of**.
 
 - The search query that is created by using the keywords box and conditions is displayed on the **Search** page, in the details pane for the selected search. In a query, everything to the right of the notation  `(c:c)` indicates conditions that are added to the query.
 
@@ -445,5 +447,3 @@ For more information about character limits, see [eDiscovery search limits](limi
 - You can export items based on message type. For example, to export Skype conversations and chats in Microsoft Teams, use the syntax `kind:im`. To return only email messages, you would use `kind:email`. To return chats, meetings, and calls in Microsoft Teams, use `kind:microsoftteams`.
 
 - As previously explained, when searching sites you have to add the trailing `/` to the end of the URL when using the `path` property to return only items in a specified site. If you don't include the trailing `/`, items from a site with a similar path name will also be returned. For example, if you use `path:sites/HelloWorld` then items from sites named `sites/HelloWorld_East` or `sites/HelloWorld_West` would also be returned. To return items only from the HelloWorld site, you have to use `path:sites/HelloWorld/`.
-
-- **Contains** and **Equals** have similar behavior for simple string searches.
