@@ -317,6 +317,8 @@
           href: tls-1-2-in-office-365-gcc.md
         - name: TLS 1.2 in Office 365
           href: prepare-tls-1.2-in-office-365.md
+        - name: Office TLS Certificate Changes
+          href: encryption-office-365-tls-certificates-changes.md 
     - name: Data loss prevention (DLP)
       items: 
         - name: Learn about DLP
