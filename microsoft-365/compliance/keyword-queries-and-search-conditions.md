@@ -274,7 +274,7 @@ Keep the following in mind when using search conditions.
 
 - If you add multiple values (separated by commas or semi-colons) to a single condition, those values are connected by the **OR** operator. That means items are returned if they contain any of the specified values for the property in the condition.
 
-- Any condition that uses an operator with **Contains** and **Equals** logic will return similar search results for simple string searches. A simple string search is a string in the condition that doesn't include a wildcard). For example, a condition that uses **Equals any of** will return the same items as an condition that uses **Contains any of**.
+- Any condition that uses an operator with **Contains** and **Equals** logic will return similar search results for simple string searches. A simple string search is a string in the condition that doesn't include a wildcard). For example, a condition that uses **Equals any of** will return the same items as a condition that uses **Contains any of**.
 
 - The search query that is created by using the keywords box and conditions is displayed on the **Search** page, in the details pane for the selected search. In a query, everything to the right of the notation  `(c:c)` indicates conditions that are added to the query.
 
