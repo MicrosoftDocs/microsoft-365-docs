@@ -530,7 +530,7 @@ In the **View data by Email \> Spam** and **Chart breakdown by Detection Technol
 - **General filter**
 - **Mixed analysis detection**: Multiple filters contributed to the verdict for the message.
 - **Fingerprint matching**: The message was marked as bad due to previous messages.
-- **Domain reputation**
+- **Domain reputation**: This message was considered spam based on the sender domain reputation.
 - **Bulk**: Items detected as exceeding the bulk setting for the user.
 - **IP reputation**: The message was considered spam based on the sending IP address reputation.
 
