@@ -451,7 +451,7 @@
           href: faqimporting-pst-files-to-office-365.yml
     - name: Archive third-party data
       items: 
-        - name: Overview of archiving third-party data
+        - name: Learn about connectors for third-party data
           href: archiving-third-party-data.md
         - name: Microsoft data connectors
           items:  
