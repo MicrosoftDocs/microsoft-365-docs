@@ -75,6 +75,7 @@ Currently, the Microsoft Defender for Office 365 integration into the unified Mi
 - Norway 
 - Singapore 
 - South Africa
+- Sweden
 - Switzerland 
 - United Arab Emirates 
 

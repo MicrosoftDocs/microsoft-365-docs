@@ -34,8 +34,8 @@ The **Send on Behalf** permission lets a user send email on behalf of a Microsof
 > [!IMPORTANT]
 > You can configure **Send as** or **Send on behalf** for a given user, but not both. If you configure both, it will default to **Send as**.
 
-> [!TIP]
-> See [Send email from or on behalf of a Microsoft 365 group](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) to learn how to use Outlook and Outlook on the Web to send email from a group.
+> [!NOTE]
+> **Send as** and **Send on behalf** are not supported on Outlook for Mac in hybrid Exchange configurations.
     
 ## Allow members to send email as a group
 
@@ -74,6 +74,8 @@ This section explains how to allow users to send email on behalf of a group in t
     ![Type to search or pick a user from the list.](../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
 
 ## Related articles
+
+[Send email from or on behalf of a Microsoft 365 group](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)
 
 [Collaboration governance planning recommendations](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 

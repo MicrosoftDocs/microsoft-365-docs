@@ -14,7 +14,6 @@ audience: ITPro
 ms.collection:
   - M365-security-compliance
   - m365solution-endpointprotect
-  - m365solution-overview
 ms.topic: article
 ms.technology: mde
 ---
