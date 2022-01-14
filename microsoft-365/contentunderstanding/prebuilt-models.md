@@ -95,7 +95,7 @@ The original value is what is actually in the document. The extracted value is w
 
 Continue to select additional extractors you want to you use. 
 
-## Apply the extractors to the model
+## Apply extractors to the model
 
 When you have selected the extractors you want to use, you can apply them either from the document area or from the **Extractors** panel.
 
