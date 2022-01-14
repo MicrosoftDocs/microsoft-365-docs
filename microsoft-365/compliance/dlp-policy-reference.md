@@ -366,6 +366,7 @@ The actions that are available in a rule are dependent on the locations that hav
 - Add the sender's manager as recipient
 - Removed O365 Message Encryption and rights protection
 - Prepend Email Subject
+- Modify Email Subject
 - Add HTML Disclaimer
 
 #### SharePoint sites location actions:
