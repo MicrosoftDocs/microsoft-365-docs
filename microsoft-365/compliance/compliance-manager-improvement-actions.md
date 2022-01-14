@@ -109,7 +109,7 @@ The available fields are as follows:
 
 ### Update testing source
 
-By default, Compliance Manager will automate as much testing as possible for improvement actions. If needed, you can update the testing source for an improvement action with the **Testing source** dropdown on the left side of the screen. Options include **Manual**, **Automatic**, and **Parent**.
+By default, Compliance Manager will automate as much testing as possible for improvement actions. If needed, you can update the testing source for an individual improvement action with the **Testing source** dropdown on the left side of its screen. Options include **Manual**, **Automatic**, and **Parent**. You can also change your overall preferences for automated testing on Compliance Manager's **Settings** page ([learn more](compliance-manager-setup.md#to-manage-your-automated-testing-settings)).
 
 ## Review standards and regulations
 
