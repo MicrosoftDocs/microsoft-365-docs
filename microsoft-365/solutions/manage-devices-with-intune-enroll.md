@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- enroll devices into management
-- enroll devices with Intune
-- Intune mobile device platforms
+- M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
 ms.custom: 
