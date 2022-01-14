@@ -3,11 +3,11 @@ title: Prepare on-premises resources access for Microsoft Managed Desktop
 description:  Important steps to make sure an Azure AD can communicate with on-premises AD to provide authentication
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 audience: Admin
 ---
