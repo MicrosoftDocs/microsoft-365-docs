@@ -89,11 +89,11 @@ You can select an extractor either from the document area or from the **Extracto
 
 When you select an extractor, a **Select extractor?** box is displayed in the document area. The box shows the extractor name, the original value, and the option to select it as an extractor. For certain data types such as numbers or dates, it will also show an extracted value.
 
-   ![Screenshot of the Select distractor box on the extractor details page.](../media/content-understanding/prebuilt-select-distractor-box.png) 
+   ![Screenshot of the Select extractor box on the extractor details page.](../media/content-understanding/prebuilt-select-distractor-box.png) 
 
 The original value is what is actually in the document. The extracted value is what will be written into the column in SharePoint. When the model is applied to a library, you can use column formatting to specify how you want it to look in the document.
 
-Select the extractors you want to you use. 
+Continue to select additional extractors you want to you use. 
 
 ## Apply the extractors to the model
 
@@ -101,7 +101,6 @@ When you have selected the extractors you want to use, you can apply them either
 
 - To apply the extractors from the document area, select **Apply**.
 
-    ![Screenshot of the document area showing how to select an entity field.](../media/content-understanding/prebuilt-document-area-select-field.png) 
 
 - To apply the extractors from the **Extractors** panel, select **Save and exit**.
 
@@ -111,7 +110,7 @@ When you have selected the extractors you want to use, you can apply them either
 
 You can rename an extractor either from the model home page or from the **Extractors** panel.
 
-To rename a distractor from model home page:
+To rename a extractor from model home page:
 
 1. In the **Extractors** section, select the extractor you want to rename, and then select **Rename**.
 
@@ -119,7 +118,7 @@ To rename a distractor from model home page:
 
 2. On the **Rename entity extractor** panel, enter the new name of the extractor, and then select **Rename**.
 
-To rename a distractor the **Extractors** panel:
+To rename a extractor the **Extractors** panel:
 
 1. Select the extractor you want to rename, and then select **Rename**.
 
