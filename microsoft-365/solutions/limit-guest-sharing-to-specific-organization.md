@@ -44,7 +44,7 @@ To block inbound B2B collaboration by default
 1. Select **Save**.
 1. Close the **Default settings** blade.
 
-### Add an organization
+### Add the organization where you want to allow guest invitations
 
 Next, add the organizations where you want to allow your users to invite guests to the Azure AD cross-tenant access list.
 
@@ -73,7 +73,7 @@ Once you have added the organization, you need to update the organization's inbo
 
 Even after you've limited B2B collaboration to certain organizations, people can still share files and folders with people in other organizations - they just won't be given a guest account in your directory.
 
-If you wish to prevent sharing entirely with other organizations, you have to disable the one-time passcode feature in Azure AD. This will prevent people outside your organization from being sent a one-time passcode for authentication.
+If you wish to prevent sharing entirely with other organizations, you have to disable the one-time passcode feature in Azure AD. This will prevent people outside your organization from being sent a one-time passcode for authentication to shared files or folders.
 
 To disable the email one-time passcode feature
 1. Sign in to the [Azure portal](https://portal.azure.com/) as an Azure AD global administrator.
