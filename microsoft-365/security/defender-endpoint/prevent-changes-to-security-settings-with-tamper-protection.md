@@ -137,17 +137,17 @@ For more information about releases, see [Windows 10 release information](/windo
 
 3. Go to **General** \> **Advanced features**, and then turn tamper protection on.
 
-## Manage tamper protection for your organization using Intune
+## Manage tamper protection for your organization using Microsoft Endpoint Manager
 
-If you are part of your organization's security team, and your subscription includes [Intune](/intune/fundamentals/what-is-intune), you can turn tamper protection on (or off) for your organization in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). Use Intune when you want to fine-tune tamper protection settings. For example, if you want to enable tamper protection on some devices, but not all, use Intune.
+If your organization uses Microsoft Endpoint Manager (MEM) you can turn tamper protection on (or off) for your organization in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). Use Intune when you want to fine-tune tamper protection settings. For example, if you want to enable tamper protection on some devices, but not all, use Intune.
 
-### Requirements for managing tamper protection in Intune
+### Requirements for managing tamper protection in Endpoint Manager
 
 - Your devices must be [onboarded to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboarding).
 
 - You must have appropriate [permissions](/microsoft-365/security/defender-endpoint/assign-portal-access) assigned, such as global admin, security admin, or security operations.
 
-- Your organization uses [Intune to manage devices](/intune/fundamentals/what-is-device-management). ([Intune licenses](/intune/fundamentals/licenses) are required; Intune is included in Microsoft 365 E5/E3, Enterprise Mobility + Security E5/E3, Microsoft 365 Business Premium, Microsoft 365 F1/F3, Microsoft 365 Government G5/G3, and Intune for Education.)
+- Your organization uses [Microsoft Endpoint Manager to manage devices](/mem/endpoint-manager-getting-started). (Microsoft Endpoint Manager (MEM) licenses are required; MEM is included in Microsoft 365 E3/E5, Enterprise Mobility + Security E3/E5, Microsoft 365 Business Premium, Microsoft 365 F1/F3, Microsoft 365 Government G3/G5, and corresponding education licenses.)
 
 - Your Windows devices must be running Windows 11 or Windows 10 OS [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) or later. (For more information about releases, see [Windows 10 release information](/windows/release-health/release-information).)
 
@@ -159,34 +159,18 @@ If you are part of your organization's security team, and your subscription incl
 
 ![Turn tamper protection on with Intune.](images/turnontamperprotect-MEM.png)
 
-1. Go to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com) and sign in.
+1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint security** \> **Antivirus**, and then choose **+ Create Policy**.
 
-2. Select **Devices** \> **Configuration Profiles**.
+   - In the **Platform** list, select **Windows 10 and later**.
+   - In the **Profile** list, select **Windows Security experience**.
 
-3. Create a profile that includes the following settings:
+2. Create a profile that includes the following setting:
 
-    - **Platform: Windows 10 and later**
-    - **Profile type: Endpoint protection**
-    - **Category: Microsoft 365 Defender**
-    - **Tamper Protection: Enabled**
+    - **Enable tamper protection to prevent Microsoft Defender being disabled: Enable**
 
-4. Assign the profile to one or more groups.
-
-### Are you using Windows Server 2016, or Windows version 1709, 1803, or 1809?
-
-If you are using Windows Server 2016, Windows 10 version 1709, 1803, or [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. Instead, you can use PowerShell to determine whether tamper protection is enabled.
-
-On Windows Server 2016, the Settings app will not accurately reflect the status of real-time protection when tamper protection is enabled.
-
-#### Use PowerShell to determine whether tamper protection and real-time protection are turned on
-
-1. Open the Windows PowerShell app.
-
-2. Use the [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?preserve-view=true&view=win10-ps) PowerShell cmdlet.
-
-3. In the list of results, look for `IsTamperProtected` or `RealTimeProtectionEnabled`. (A value of *true* means tamper protection is enabled.)
-
-## Manage tamper protection for your organization with Configuration Manager, version 2006
+3. Assign the profile to one or more groups.
+ 
+### Manage tamper protection for your organization with Configuration Manager, version 2006
 
 If you're using [version 2006 of Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006), you can manage tamper protection settings on Windows 10, Windows 10 Enterprise multi-session, Windows 11, Windows 11 Enterprise multi-session, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2022 by using a method called *tenant attach*. Tenant attach enables you to sync your on-premises-only Configuration Manager devices into the Microsoft Endpoint Manager admin center, and then deliver endpoint security configuration policies to on-premises collections & devices.
 
@@ -202,7 +186,7 @@ If you're using [version 2006 of Configuration Manager](/mem/configmgr/core/plan
 
 3. Deploy the policy to your device collection.
 
-### Need help with this method?
+#### Need help with this method?
 
 See the following resources:
 
@@ -229,6 +213,20 @@ Here's what you see in the Windows Security app:
 2. Select **Virus & threat protection** \> **Virus & threat protection settings**.
 
 3. Set **Tamper Protection** to **On** or **Off**.
+
+## Are you using Windows Server 2016, or Windows version 1709, 1803, or 1809?
+
+If you are using Windows Server 2016, Windows 10 version 1709, 1803, or [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), you won't see **Tamper Protection** in the Windows Security app. Instead, you can use PowerShell to determine whether tamper protection is enabled.
+
+On Windows Server 2016, the Settings app will not accurately reflect the status of real-time protection when tamper protection is enabled.
+
+#### Use PowerShell to determine whether tamper protection and real-time protection are turned on
+
+1. Open the Windows PowerShell app.
+
+2. Use the [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus?preserve-view=true&view=win10-ps) PowerShell cmdlet.
+
+3. In the list of results, look for `IsTamperProtected` or `RealTimeProtectionEnabled`. (A value of *true* means tamper protection is enabled.)
 
 ## View information about tampering attempts
 
