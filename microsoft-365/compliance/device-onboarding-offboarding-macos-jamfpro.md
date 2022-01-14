@@ -10,10 +10,10 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: 
-- M365-security-compliance 
+ms.collection:
+- M365-security-compliance
 search.appverid:
-- MET150 
+- MET150
 description: Learn how to onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro (preview)
 ---
 
@@ -37,7 +37,7 @@ To get access to this feature, you must register your tenant with Microsoft. See
 
 - Make sure your [macOS devices are Azure AD joined](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Azure_AD_Integration.html)
 - Make sure your [macOS devices are managed through JAMF pro](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/)
-- Install the v95+ Edge browser on your macOS devices 
+- Install the v95+ Edge browser on your macOS devices
 
 ## Onboard devices into Microsoft 365 Compliance solutions using JAMF Pro
 
@@ -49,7 +49,7 @@ To get access to this feature, you must register your tenant with Microsoft. See
 |accessibility |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 |Network filter| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)
-|System extensions |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/systext.mobileconfig)
+|System extensions |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/sysext.mobileconfig)
 |MDE preference     |[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/schema.json)|
 |MAU preference|[com.microsoft.autoupdate2.plist](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.plist)|
 |Installation package     |downloaded from the compliance portal **Installation package**, file name *\*wdav.pkg*\* |
@@ -68,13 +68,13 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 ### Get the device onboarding package
 
 1. In **Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
- 
+
 1. For **Select operating system to start onboarding process** choose **macOS**
- 
+
 1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**
- 
+
 1. Choose **Download onboarding package**
- 
+
 1. Extract the contents of the device onboarding package. In the JAMF folder, you should see the *DeviceComplainceOnboarding.plist* file.
 
 ### Create a JAMF Pro configuration profile for the onboarding package
@@ -119,7 +119,7 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 1. Choose **Save**.
 
 1. Under **Preference Domain Properties** choose these settings
-    - Features 
+    - Features
         - Use System Extensions: `enabled` - required for network extensions on Catalina
         - Use Data Loss Prevention: `enabled`
     - Antivirus engine > Passive mode: `true|false`. Use `true`if deploying DLP only. Use `false` or do not assign a value if deploying DLP and Microsoft Defender for Endpoint (MDE).
@@ -128,7 +128,7 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 
 1. Choose the groups to deploy this configuration profile to.
 
-1. Choose **Save**. 
+1. Choose **Save**.
 
 
 ### Create and deploy a configuration profile for Microsoft AutoUpdate (MAU)
@@ -201,11 +201,11 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 ### Get the installation package
 
 1. In **Compliance center** open **Settings** > **Device Onboarding** and choose **Onboarding**.
- 
+
 1. For **Select operating system to start onboarding process** choose **macOS**
- 
+
 1. For **Deployment method** choose **Mobile Device Management/Microsoft Intune**
- 
+
 1. Choose **Download installation package**. This will give you the *wdav.pkg* file.
 
 
@@ -245,7 +245,7 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 
 1. Choose **Add**.
 
-1. Choose **Save**. 
+1. Choose **Save**.
 
 1. Choose the **Scope** tab.
 
@@ -257,7 +257,7 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 
 1. Choose **Done**.
 
-### Check the macOS device 
+### Check the macOS device
 
 1. Restart the macOS device.
 
