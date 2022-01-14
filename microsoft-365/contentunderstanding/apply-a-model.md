@@ -103,17 +103,25 @@ While an applied model processes all files and folder content uploaded to the do
 
 ### Classification Date field
 
-When a SharePoint Syntex document understanding or form processing model is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
+When a SharePoint Syntex document understanding model (or a form processing model) is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
 
    ![Screenshot of a document library showing the Classification Date column.](../media/content-understanding/class-date-column.png) 
 
-The **Classification Date** field is used by the [**When a file is classified by a content understanding model**](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) trigger to run a Power Automate flow after a Syntex content understanding model has finished processing a file or folder and updated the **Classification Date** field.
+The **Classification Date** field is used by the [**When a file is classified by a content understanding model**](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) trigger to run a Power Automate flow after a model has finished processing the contents of a file or folder and has updated the **Classification Date** field.
 
    ![Flow trigger.](../media/content-understanding/trigger.png)
 
-The **When a file is classified by a content understanding model** trigger can then be used to start another workflow using any extracted information from the file or folder.
+The **When a file is classified by a content understanding model** trigger can then be used to start a flow using any extracted information from the file or folder.
 
+As an example, when a model is stamped with the **Classification Date**, you can use the **Send an email after SharePoint Syntex processes a file** flow to notify users that a new file has been processed and classified by a model in the SharePoint document library.
 
+To run the flow:
+
+1. Select a file, and then select **Integrate** > **Power Automate** > **Create a flow**.
+
+2. On the **Create a flow** panel, select **Send an email after SharePoint Syntex processes a file**.
+
+    ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
 
 ## See Also
 
