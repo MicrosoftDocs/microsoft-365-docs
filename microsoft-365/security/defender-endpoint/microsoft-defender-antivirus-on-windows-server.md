@@ -13,7 +13,7 @@ ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 10/18/2021
+ms.date: 01/14/2022
 ms.collection: M365-security-compliance
 ---
 
