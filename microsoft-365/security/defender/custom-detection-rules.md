@@ -109,7 +109,7 @@ DeviceEvents
 
 With the query in the query editor, select **Create detection rule** and specify the following alert details:
 
-- **Detection name**—name of the detection rule and this needs to be unique.
+- **Detection name**—name of the detection rule; this name needs to be unique.
 - **Frequency**—interval for running the query and taking action. [See additional guidance below](#rule-frequency)
 - **Alert title**—title displayed with alerts triggered by the rule; this title needs to be unique.
 - **Severity**—potential risk of the component or activity identified by the rule
