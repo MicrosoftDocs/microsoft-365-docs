@@ -37,7 +37,7 @@ Cyberforensic investigations often rely on time stamps to piece together the seq
 
 Microsoft Defender for Endpoint can display either Coordinated Universal Time (UTC) or local time.
 
-Your current time zone setting is shown in the Microsoft Defender Settings. You can change the displayed time zone in the **Time zone** menu Under **Settings > Security center**
+Your current time zone setting is shown in the Microsoft Defender settings. You can change the displayed time zone in the **Time zone** menu Under **Settings > Security center**.
 
 ### UTC time zone
 
