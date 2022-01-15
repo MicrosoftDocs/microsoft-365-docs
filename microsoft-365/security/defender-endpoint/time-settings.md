@@ -61,7 +61,7 @@ To set the time zone:
 
 1. Click the **Settings* menu in MIcrosoft 365 Defender Portal[https://security.microsoft.com/] ![Time zone settings icon3.](images/atp-time-zone.png).
 2. Select the **Security center**
-3. Select **Timezone** and Set the Time zone to either UTC or your local time zone.
+3. Select **Timezone** and set the time zone to either UTC or your local time zone.
 
 ### Regional settings
 
