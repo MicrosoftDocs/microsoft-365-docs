@@ -111,7 +111,7 @@ With the query in the query editor, select **Create detection rule** and specify
 
 - **Detection name**—name of the detection rule and this needs to be unique.
 - **Frequency**—interval for running the query and taking action. [See additional guidance below](#rule-frequency)
-- **Alert title**—title displayed with alerts triggered by the rule and this needs to be unique.
+- **Alert title**—title displayed with alerts triggered by the rule; this title needs to be unique.
 - **Severity**—potential risk of the component or activity identified by the rule
 - **Category**—threat component or activity identified by the rule
 - **MITRE ATT&CK techniques**—one or more attack techniques identified by the rule as documented in the [MITRE ATT&CK framework](https://attack.mitre.org/). This section is hidden for certain alert categories, including malware, ransomware, suspicious activity, and unwanted software
