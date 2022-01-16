@@ -40,7 +40,7 @@ Before you get started with DLP on-premises scanner, you should confirm your [Mi
 For full licensing details see: [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 > [!IMPORTANT]
-> All users that contribute to the scanned location either by adding files or consuming files need to have a license.  Not just the scanner user.
+> All users who contribute to the scanned location either by adding files or consuming files need to have a license, not just the scanner user.
 
 ### Permissions
 
