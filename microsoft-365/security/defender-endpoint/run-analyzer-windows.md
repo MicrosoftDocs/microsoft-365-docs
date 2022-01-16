@@ -50,7 +50,7 @@ In addition to the above, there is also an option to [collect the analyzer suppo
 > [!NOTE]
 > On Windows 10/11, Windows Server 2019/2022, or Windows Server 2012R2/2016 with the [modern unified solution](configure-server-endpoints.md#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview) installed, the client analyzer script calls into an executable file called `MDEClientAnalyzer.exe` to run the connectivity tests to cloud service URLs.
 >
-> On Windows 8.1, Windows Server 2016 or previous OS editions based on MMA agent, the client analyzer script calls into an executable file called `MDEClientAnalyzerPreviousVersion.exe` to run connectivity tests for Command and Control (CnC) URLs while also calling into Microsoft Monitoring Agent connectivity tool `TestCloudConnection.exe` for Cyber Data channel URLs.
+> On Windows 8.1, Windows Server 2016 or any previous OS edition where Microsoft Monitoring Agent (MMA) is used for onboarding, the client analyzer script calls into an executable file called `MDEClientAnalyzerPreviousVersion.exe` to run connectivity tests for Command and Control (CnC) URLs while also calling into Microsoft Monitoring Agent connectivity tool `TestCloudConnection.exe` for Cyber Data channel URLs.
 
 
 All the PowerShell scripts and modules included with the analyzer are Microsoft-signed.
