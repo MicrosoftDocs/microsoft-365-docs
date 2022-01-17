@@ -103,7 +103,7 @@ This table displays the wildcard domains that are advertised to Internet circuit
 
 |**Wildcard domain advertised to Internet circuits only**|**Sub-FQDN advertised to ExpressRoute and Internet circuits**|
 |:-----|:-----|
-|\*.office.com  <br/> |\*.outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> <div style="display: inline">www.office.com</div>  <br/> |
+|\*.office.com  <br/> |\*.outlook.office.com  <br/> home.office.com  <br/> outlook.office.com  <br/> portal.office.com  <br/> www.office.com  <br/> |
 |\*.office.net  <br/> |agent.office.net  <br/> |
 |\*.office365.com  <br/> |outlook.office365.com  <br/> smtp.office365.com  <br/> |
 |\*.outlook.com  <br/> |\*.protection.outlook.com  <br/> \*.mail.protection.outlook.com  <br/> autodiscover-\<tenant\>.outlook.com  <br/> |
