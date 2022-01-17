@@ -57,6 +57,9 @@ Before you can initiate a session on a device, make sure you fulfill the followi
     - [Version 1709 (RS 3)](/windows/whats-new/whats-new-windows-10-version-1709) with [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)
 
   - **macOS** - Only applicable for Public Preview, minimum required version: 101.43.84 
+
+  > [!NOTE]
+  > Currently, only Intel based chipsets are supported.
   
   - **Linux** - Only applicable for Public Preview, minimum required version: 101.45.13 
     
