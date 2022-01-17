@@ -58,7 +58,7 @@ You'll be prompted to download the advanced client test application from the web
 
 ### Start the advanced tests client application
 
-Once the client application starts, the web page will update to show this result. Test data will start to be received to the web page. The page updates each time new data is received and you can review the data as it arrives.
+Once the client application starts, the web page will update to show this result. Test data will start to be received to the web page. The page updates each time new-data is received and you can review the data as it arrives.
 
 ### Advanced tests completed and test report upload
 
@@ -154,7 +154,7 @@ This is provided for information only and does not contribute to any network ins
 
 The in-use DNS Recursive Resolver is identified by making a specific DNS request and then asking the DNS Name Server for the IP Address that it received the same request from. This IP Address is the DNS Recursive Resolver and it will be looked up in IP Address location databases to find the location. The distance from the user office location to the DNS Recursive Resolver server location is then calculated. This is shown as a network insight if the distance is greater than **500 miles** (800 kilometers).
 
-The location looked up from the network egress IP Address may not be accurate and this would lead to a false result from this test. To validate if this error is occurring for a specific IP Address you can use publicly accessible network IP Address location web sites.
+The location looked up from the network egress IP Address may not be accurate and this would lead to a false result from this test. To validate if this error is occurring for a specific IP Address, you can use publicly accessible network IP Address location web sites.
 
 This network insight will specifically impact the selection of the Exchange Online service front door. To address this insight local and direct network egress should be a pre-requisite and then DNS Recursive Resolver should be located close to that network egress.
 
@@ -188,11 +188,11 @@ The in-use SharePoint service front door is identified in the same way that the 
 
 #### Download speed
 
-We measure the download speed for a 15Mb file from the SharePoint service front door. The result is shown in megabytes per second to indicate what size file in megabytes can be downloaded from SharePoint or OneDrive in **one second**. The number should be similar to one tenth of the minimum circuit bandwidth in megabits per second. For example if you have a 100mbps internet connection, you may expect 10 megabytes per second (10MBps).
+We measure the download speed for a 15-Mb file from the SharePoint service front door. The result is shown in megabytes per second to indicate what size file in megabytes can be downloaded from SharePoint or OneDrive in **one second**. The number should be similar to one tenth of the minimum circuit bandwidth in megabits per second. For example if you have a 100mbps internet connection, you may expect 10 megabytes per second (10 MBps).
 
 #### Buffer bloat
 
-During the 15Mb download we measure the TCP latency to the SharePoint service front door. This is the latency under load and it is compared to the latency when not under load. The increase in latency when under load is often attributable to consumer network device buffers being loaded (or bloated). A network insight is shown for any bloat of 1,000 or more.
+During the 15 Mb download we measure the TCP latency to the SharePoint service front door. This is the latency under load and it is compared to the latency when not under load. The increase in latency when under load is often attributable to consumer network device buffers being loaded (or bloated). A network insight is shown for any bloat of 1,000 or more.
 
 #### Service front door recorded in the client DNS
 
@@ -204,11 +204,11 @@ This section shows test results related to Microsoft Teams.
 
 #### Media connectivity (audio, video, and application sharing)
 
-This tests for UDP connectivity to the Microsoft Teams service front door. If this is blocked then Microsoft Teams may still work using TCP, but audio and video will be impaired. Read more about these UDP network measurements, which also apply to Microsoft Teams at [Media Quality and Network Connectivity Performance in Skype for Business Online](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance).
+This tests for UDP connectivity to the Microsoft Teams service front door. If this is blocked, then Microsoft Teams may still work using TCP, but audio and video will be impaired. Read more about these UDP network measurements, which also apply to Microsoft Teams at [Media Quality and Network Connectivity Performance in Skype for Business Online](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance).
 
 #### Packet loss
 
-Shows the UDP packet loss measured in a 10 second test audio call from the client to the Microsoft Teams service front door. This should be lower than **1.00%** for a pass.
+Shows the UDP packet loss measured in a 10-second test audio call from the client to the Microsoft Teams service front door. This should be lower than **1.00%** for a pass.
 
 #### Latency
 
@@ -222,7 +222,7 @@ Shows the measured UDP jitter, which should be lower than **30ms**.
 
 We test for HTTP connectivity from the user office location to all of the required Microsoft 365 network endpoints. These are published at [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md). A network insight is shown for any required network endpoints, which cannot be connected to.
 
-Connectivity may be blocked by a proxy server, a firewall, or another network security device on the enterprise network perimeter. Connectivity to TCP port 80 is tested with an HTTP request and connectivity to TCP port 443 is tested with an HTTPS request. If there is no response the FQDN is marked as a failure. If there is an HTTP response code 407 the FQDN is marked as a failure. If there is an HTTP response code 403 then we check the Server attribute of the response and if it appears to be a proxy server we mark this as a failure. You can simulate the tests we perform with the Windows command-line tool curl.exe.
+Connectivity may be blocked by a proxy server, a firewall, or another network security device on the enterprise network perimeter. Connectivity to TCP port 80 is tested with an HTTP request and connectivity to TCP port 443 is tested with an HTTPS request. If there is no response the FQDN is marked as a failure. If there is an HTTP response code 407 the FQDN is marked as a failure. If there is an HTTP response code 403, then we check the Server attribute of the response and if it appears to be a proxy server we mark this as a failure. You can simulate the tests we perform with the Windows command-line tool curl.exe.
 
 We test the SSL certificate at each required Microsoft 365 network endpoint that is in the optimize or allow category as defined at [https://aka.ms/o365ip](./urls-and-ip-address-ranges.md). If any tests do not find a Microsoft SSL certificate, then the encrypted network connected must have been intercepted by an intermediary network device. A network insight is shown on any intercepted encrypted network endpoints.
 
@@ -254,7 +254,7 @@ Here are answers to some of our frequently asked questions.
 
 The advanced test client requires .NET Core 3.1 Desktop Runtime. If you run the advanced test client without that installed you will be directed to [the .NET Core 3.1 installer page](https://dotnet.microsoft.com/download/dotnet-core/3.1). Be sure to install the Desktop Runtime and not the SDK, or the ASP.NET Core Runtime, which are higher up on the page. Administrator permissions on the machine are required to install .NET Core.
 
-The advanced test client uses SignalR to communicate to the web page. For this you must ensure that TCP port 443 connectivity to connectivity.service.signalr.net is open. This URL is not published in the https://aka.ms/o365ip because that connectivity is not required for an Microsoft 365 client application user.
+The advanced test client uses SignalR to communicate to the web page. For this you must ensure that TCP port 443 connectivity to connectivity.service.signalr.net is open. This URL is not published in the https://aka.ms/o365ip because that connectivity is not required for a Microsoft 365 client application user.
 
 ### What is Microsoft 365 service front door?
 

@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-To provide an additional level of security for sign-ins, clients may be configured to use multi-factor authentication (MFA), which uses both a user password and another user verification method based on:
+To provide an extra level of security for sign-ins, clients may be configured to use multi-factor authentication (MFA), which uses both a user password and another user verification method based on:
 
 - Something  in their possession that is not easily duplicated, such as a smart phone.
 - Something the user has uniquely and biologically, such as their fingerprints, face, or other biometric attribute
