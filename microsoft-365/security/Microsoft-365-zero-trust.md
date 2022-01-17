@@ -15,11 +15,9 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- deploy zero trust
-- zero trust strategy
-- M365-security-compliance
 - m365solution-zerotrust
 - m365solution-overview
+- M365-security-compliance
 ---
 
 # Microsoft 365 Zero Trust deployment plan

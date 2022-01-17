@@ -21,7 +21,7 @@ ms.technology: mde
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender for Endpoint Device Control Removable Storage Access Control enables you to do the following task:
+Microsoft Defender for Endpoint Device Control Device Installation enables you to do the following task:
 
 - Prevent people from installing specific devices.
 - Allow people to install specific devices but prevent other devices.

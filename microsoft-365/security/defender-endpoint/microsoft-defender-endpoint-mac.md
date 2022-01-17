@@ -73,7 +73,7 @@ The three most recent major releases of macOS are supported.
 > [!IMPORTANT]
 > On macOS 11 (Big Sur) and above, Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [New configuration profiles for macOS Catalina and newer versions of macOS](mac-sysext-policies.md).
 
-- 12 (Monterey), 11 (Big Sur), 10.15 (Catalina), 10.14 (Mojave)
+- 12 (Monterey), 11 (Big Sur), 10.15 (Catalina)
 - Disk space: 1GB
 
 Beta versions of macOS are not supported.
