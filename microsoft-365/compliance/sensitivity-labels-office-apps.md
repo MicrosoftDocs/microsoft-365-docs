@@ -122,7 +122,7 @@ If both of these conditions are met but you need to turn off the built-in labels
 
 2. Set **Use the Sensitivity feature in Office to apply and view sensitivity labels** to **0**. 
  
-Deploy this setting by using Group Policy, or by using the [Office cloud policy service](/DeployOffice/overview-office-cloud-policy-service). The setting takes effect when Windows Office apps restart. 
+Deploy this setting by using Group Policy, or by using the [Office cloud policy service](/DeployOffice/overview-office-cloud-policy-service). The setting takes effect when these Office apps restart. 
 
 Because this setting is specific to Windows Office apps, it has no impact on other apps on Windows that support sensitivity labels (such as Power BI) or other platforms (such as macOS, mobile devices, and Office for the web). If you don't want some or all users to see and use sensitivity labels across all apps, all platforms, don't assign a sensitivity label policy to those users. 
 
