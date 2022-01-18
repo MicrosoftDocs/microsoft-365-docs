@@ -4536,6 +4536,10 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/business-video/index.yml",
+      "redirect_url": "/microsoft-365/admin/admin-video-library",
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/get-assessmnt-1methods-properties.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/get-assessment-methods-properties",
       "redirect_document_id": true
@@ -4670,6 +4674,21 @@
       "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows",
       "redirect_document_id": false
     },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/evaluate-defender-endpoint-enable.md",
+      "redirect_url": "/microsoft-365/security/defender/eval-defender-endpoint-enable-eval",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/evaluate-defender-endpoint-overview.md",
+      "redirect_url": "/microsoft-365/security/defender/eval-create-eval-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/evaluate-defender-endpoint-pilot.md",
+      "redirect_url": "/microsoft-365/security/defender/eval-defender-endpoint-pilot",
+      "redirect_document_id": false
+    },     
     {
       "source_path": "microsoft-365/compliance/insider-risk-management-alerts.md",
       "redirect_url": "/microsoft-365/compliance/insider-risk-management-activities",
