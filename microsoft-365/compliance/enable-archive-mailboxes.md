@@ -2,8 +2,8 @@
 title: "Enable archive mailboxes for Microsoft 365 Compliance"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: article
