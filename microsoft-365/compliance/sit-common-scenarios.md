@@ -42,7 +42,7 @@ Contoso has identified a few nine-digit test numbers that trigger false positive
 
 1. Create a copy of the SSN SIT <!-- TODD LINK OUT TO PROCEDURE ON HOW TO DO THIS-->
 1. Edit the high confidence pattern<!-- TODD LINK OUT TO PROCEDURE ON HOW TO DO THIS-->
-1. 1. Add the numbers to be excluded in the 'exclude specific values' additional check. For example, to exclude 239-23-532 & 23923532, just adding 23923532 will suffice
+1. Add the numbers to be excluded in the 'exclude specific values' additional check. For example, to exclude 239-23-532 & 23923532, just adding 23923532 will suffice
 1. Repeat step 2 & 3 for other confidence patterns as well
 
 ## Phone numbers in signature trigger match
