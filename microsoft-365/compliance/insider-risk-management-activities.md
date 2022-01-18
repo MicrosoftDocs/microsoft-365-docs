@@ -175,18 +175,6 @@ As alert is reviewed and triaged, you can create a new case to further investiga
 
 After the case is created, investigators and analysts can manage and act on the case. For more information, see the [Insider risk management case](insider-risk-management-cases.md) article.
 
-## Alert and case retention and item limits
-
-As alerts age, their value to minimize risky activity often diminishes for most organizations. There is little value spending time reviewing and acting on alerts that are several months old in most scenarios. Conversely, active cases are always valuable to organizations and should not have an automatic expiration date.
-
-To help minimize the number of older alerts that provide limited current value, the following retention and limits apply for insider risk management alerts and cases:
-
-| **Item** | **Retention/Limit** |
-| -------- | ------------------- |
-| Alerts | 120 days from alert creation |
-| Active cases | Indefinite, never expire |
-| Maximum number of active cases | 100 |
-
 ## Get help managing your insider risk alert queue
 
 Reviewing, investigating, and acting on insider risk alerts are important parts of minimizing insider risks in your organization. Quickly taking action to minimize the impact of these risks can potentially save time, money, and regulatory or legal ramifications for your organization. In this remediation process, the first step of reviewing alerts can seem like the most difficult task for many analysts and investigators. Depending on your circumstances, you may be facing some minor obstacles when acting on insider risk alerts. Review the following recommendations and learn how to optimize the alert review process.
