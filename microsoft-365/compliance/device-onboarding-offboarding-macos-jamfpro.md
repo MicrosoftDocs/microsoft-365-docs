@@ -174,7 +174,7 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 
 1. In **System extensions** profile, enter these values:
     - Display Name: `Microsoft Corp. System Extensions`
-    - System Extenstion Types: `Allowed System Extensions`
+    - System Extension Types: `Allowed System Extensions`
     - Team Identifier: `UBF8T346G9`
     - Allowed System Extensions: `com.microsoft.wdav.epsext`, and `com.microsoft.wdav.netext`
 
