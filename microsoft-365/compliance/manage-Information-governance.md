@@ -50,7 +50,7 @@ Lifecycle management of high-value items for legal, business, or regulatory obli
 |:------|:------------|---------------------|:----------------------------|
 |[Records management](records-management.md)| A single solution for email and documents that incorporates flexible retention and deletion schedules and requirements to support the full lifecycle of your content with records declaration and defensible disposition when needed |[Get started with records management](get-started-with-records-management.md) |
 
-## Archive third-party data
+## Connectors for third-party data
 
 Extend your compliance tools to imported and archived third-party data from social media platforms, instant messaging platforms, and document collaboration platforms:
 
