@@ -146,7 +146,8 @@ You can use a *published* modern template to quickly create similar documents wi
       - Autofill placeholder values if able to uniquely identify a record for placeholders associated with the same list.
 
 > [!NOTE]
-> - Currently, only Microsoft Word documents (.docx extension) are supported for creating a template. Before uploading the document, ensure that the Word document doesn't have **Track changes** enabled or comments. If your document contains placeholders for images, ensure that they are not text-wrapped. <br>- The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library. <br>- You can create placeholders only for text. Currently, images, smart art, tables, and bullet lists are not supported. <br>- Once a document is created from a template, it is not associated with the template.
+> - Currently, only Microsoft Word documents (.docx extension) are supported for creating a template. Before uploading the document, ensure that the Word document doesn't have **Track changes** enabled or comments. If your document contains placeholders for images, ensure that they are not text-wrapped.
+- The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library. <br>- You can create placeholders only for text. Currently, images, smart art, tables, and bullet lists are not supported. <br>- Once a document is created from a template, it is not associated with the template.
 
 
 
