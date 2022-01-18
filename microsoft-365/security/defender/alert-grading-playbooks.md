@@ -37,6 +37,6 @@ Intro text
 
 ## Alert grading playbooks
 
-- [Suspicious email forwarding activity](grading-playbook-email-forwarding.md)
-- [Suspicious inbox manipulation rules](grading-playbook-inbox-manipulation-rule.md)
-- [Suspicious inbox forwarding rules](grading-playbook-inbox-forwarding-rule.md)
+- [Suspicious email forwarding activity](alert-grading-playbook-email-forwarding.md)
+- [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rule.md)
+- [Suspicious inbox forwarding rules](alert-grading-playbook-inbox-forwarding-rule.md)

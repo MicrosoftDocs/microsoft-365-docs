@@ -171,11 +171,11 @@
                     - name: Overview
                       href: alert-grading-playbooks.md
                     - name: Suspicious email forwarding
-                      href: grading-playbook-email-forwarding.md
+                      href: alert-grading-playbook-email-forwarding.md
                     - name: Suspicious inbox forwarding rule
-                      href: grading-playbook-inbox-forwarding-rule.md
+                      href: alert-grading-playbook-inbox-forwarding-rule.md
                     - name: Suspicious inbox manipulation rule
-                      href: grading-playbook-inbox-manipulation-rule.md
+                      href: alert-grading-playbook-inbox-manipulation-rule.md
                  - name: Users 
                    href: investigate-users.md                  
               - name: Incident response playbooks
