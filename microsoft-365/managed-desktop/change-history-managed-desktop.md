@@ -4,13 +4,13 @@ description: This article lists new and updated articles for Microsoft Managed D
 keywords: change history
 ms.service: m365-md
 ms.sitesec: library
-author: jaimeo
+author: tiaraquan
 ms.topic: article
 audience: ITPro
-manager: laurawi
+manager: dougeby
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.article: article
 ms.localizationpriority: medium
 ---
