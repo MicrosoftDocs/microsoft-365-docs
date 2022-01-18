@@ -33,7 +33,7 @@ Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/finance"
 Request-PnPSyntexClassifyAndExtract -List "Documents"
 ```
 
-For lower priority processing, you might also consider using the -OffPeak paramater, which will queue files for processing outside of business hours where your tenant is located. See [Request-PnPSyntexClassifyAndExtract](https://pnp.github.io/powershell/cmdlets/Request-PnPSyntexClassifyAndExtract.html) for more details.
+For lower priority processing, you might also consider using the -OffPeak parameter, which will queue files for processing outside of business hours where your tenant is located. See [Request-PnPSyntexClassifyAndExtract](https://pnp.github.io/powershell/cmdlets/Request-PnPSyntexClassifyAndExtract.html) for more details.
 
 ## Request processing of all items in a library
 
