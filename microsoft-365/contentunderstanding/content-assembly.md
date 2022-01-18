@@ -44,7 +44,7 @@ Follow these steps to create a modern template.
    ![Screenshot of the document in the template viewer.](../media/content-understanding/content-assembly-create-template-3.png)
 
    
-4. At the upper-left corner of the template studio, select the name for the template. The default name is the name of the document used to create the template. If you want to change the name of the template, select the default name, and then select **Rename the template**.
+4. At the upper-left corner of the template studio, select the name for the template. The default name is the name of the document used to create the template. If you want to rename the template, select the default name or the pencil icon next to the name, type the new name, and select **Enter**.
  
    ![Screenshot of the template viewer showing the name of the document to select to rename.](../media/content-understanding/content-assembly-create-template-3a.png)
 
@@ -120,7 +120,7 @@ If you need to edit an existing template or to delete or unpublish a template, f
 
 ## Create a document from a modern template
 
-You can use a modern template to quickly create similar documents without having to start from scratch. To create a document using a modern template, follow these steps:
+You can use a *published* modern template to quickly create similar documents without having to start from scratch. To create a document using a published template, follow these steps:
 
 1. From a Sharepoint document library, select **New**, and then select the modern template you want to use.
  
