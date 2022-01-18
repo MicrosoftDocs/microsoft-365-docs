@@ -184,7 +184,6 @@
 
 ###### [Privacy](ios-privacy.md)
 
-##### [Microsoft Defender for Endpoint application license terms](mde-terms-mobile.md) 
 
 ### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
 
