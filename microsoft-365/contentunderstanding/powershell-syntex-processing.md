@@ -1,3 +1,20 @@
+---
+title: Use PowerShell to request processing by a document understanding model
+ms.author: jaeccles
+author: jameseccles
+ms.reviewer: ssquires
+manager: serdars
+audience: admin
+ms.topic: article
+ms.prod: microsoft-365-enterprise
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
+search.appverid: MET150
+ms.localizationpriority: normal
+description: "Learn how to use PowerShell to request processing by a SharePoint Syntex document understanding model."
+---
+
 # Use PowerShell to request processing by a document understanding model
 
 > [!IMPORTANT]
