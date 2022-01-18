@@ -42,7 +42,7 @@ Connect-PnPOnline -Url "https://contoso.sharepoint.com/sites/yourContentCenter"
 Get-PnPSiteTemplate -Out MyModels.pnp -Configuration .\extract.json
 ```
 
-The extract.json defines which models you want to export, allowing to specify model by name or id and optionally configuring to not extract training data
+The extract.json defines which models you want to export, allowing to specify model by name or ID and optionally configuring to not extract training data
 
 ### Example- Specify model by name
 
@@ -63,7 +63,7 @@ The extract.json defines which models you want to export, allowing to specify mo
 }
 ```
 
-### Example- Specify model by id
+### Example- Specify model by ID
 
 ```json
 {
