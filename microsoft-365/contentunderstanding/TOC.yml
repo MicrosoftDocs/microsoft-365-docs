@@ -79,13 +79,13 @@
           items:
             - name: Overview
               href: powershell-syntex-intro.md
-            - name: Export and import document understanding models with PowerShell
+            - name: Export and import models
               href: powershell-syntex-import-export.md
-            - name: Publish document understanding models with PowerShell
+            - name: Publish models
               href: powershell-syntex-publishing.md
-            - name: Use PowerShell to request processing by a document understanding model
+            - name: Request processing by a model
               href: powershell-syntex-processing.md
-            - name: Work with document understanding model explanations with PowerShell
+            - name: Work with model explanations
               href: powershell-syntex-explanations.md
         
     - name: Content services
