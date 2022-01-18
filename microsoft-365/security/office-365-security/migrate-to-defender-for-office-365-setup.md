@@ -99,7 +99,7 @@ The SCL=-1 mail flow rule is important during the migration for the following re
 
   Before or during the cutover of your MX record to Microsoft 365, you'll disable this rule to turn on the full protection of the Microsoft 365 protection stack for all recipients in your organization.
 
-For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](https://docs.microsoft.comexchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 **Notes**:
 
