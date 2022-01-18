@@ -149,10 +149,10 @@ Investigate the email forwarding activity. For instance, check the type of email
 
 For more information, read the following articles:
 
-- [Auto-forwarded messages insight - Office 365](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide)
-- [New users forwarding email insight - Office 365](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/mfi-new-users-forwarding-email?view=o365-worldwide)
-- [Responding to a Compromised Email Account - Office 365](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account?view=o365-worldwide)
-- [Report false positives and false negatives in Outlook - Office 365](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/report-false-positives-and-false-negatives?view=o365-worldwide)
+- [Auto-forwarded messages insight - Office 365](/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide)
+- [New users forwarding email insight - Office 365](/microsoft-365/security/office-365-security/mfi-new-users-forwarding-email?view=o365-worldwide)
+- [Responding to a Compromised Email Account - Office 365](/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account?view=o365-worldwide)
+- [Report false positives and false negatives in Outlook - Office 365](/microsoft-365/security/office-365-security/report-false-positives-and-false-negatives?view=o365-worldwide)
 
 This figure illustrates the workflow to identify malicious/suspicious email forwarding activities.
 
