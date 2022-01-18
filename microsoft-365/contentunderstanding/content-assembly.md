@@ -118,11 +118,11 @@ If you need to edit an existing template or to delete or unpublish a template, f
 
 3. To edit a published template or a draft template:
 
-   - For **Published templates**: Select **Edit** to open the template studio where you can edit the published template. You can also choose to delete or unpublish the template. 
+   - For **Published templates**, select **Edit** to open the template studio where you can edit the published template. You can also choose to delete or unpublish the template. 
  
       ![Screenshot of the Modern templates section showing the published templates.](../media/content-understanding/content-assembly-edit-published.png)
 
-   - For **Draft templates**: Select **Edit** to open the template studio where you can edit the draft template. You can also choose to delete or publish the template.
+   - For **Draft templates**, select **Edit** to open the template studio where you can edit the draft template. You can also choose to delete or publish the template.
  
       ![Screenshot of the Modern templates section showing the draft templates.](../media/content-understanding/content-assembly-edit-draft.png)
 
