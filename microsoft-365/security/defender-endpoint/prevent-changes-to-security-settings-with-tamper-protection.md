@@ -1,6 +1,6 @@
 ---
 title: Protect security settings with tamper protection
-ms.reviewer: pahuijbr, hayhov, oogunrinde
+ms.reviewer: mattcall, pahuijbr, hayhov, oogunrinde
 manager: dansimp
 description: Use tamper protection to prevent malicious apps from changing important security settings.
 keywords: malware, defender, antivirus, tamper protection
@@ -17,7 +17,7 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 01/14/2022
+ms.date: 01/18/2022
 ms.collection: M365-security-compliance
 ---
 
@@ -113,17 +113,17 @@ Tamper protection can be turned on or off for your tenant using the Microsoft 36
   - Windows 11
   - Windows 10 Enterprise multi-session
   - Windows 11 Enterprise multi-session 
-  - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+  - Windows Server 2019
   - Windows Server 2022
-  - Windows Server, version [1803](/windows/release-health/status-windows-10-1803) or later
-  - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
-  - [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
+  - Windows Server, version 1803 or later
+  - Windows Server 2016
+  - Windows Server 2012 R2
 
 For more information about releases, see [Windows 10 release information](/windows/release-health/release-information).
 
 - Your devices must be [onboarded to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboarding).
 
-- Your devices must be using anti-malware platform version 4.18.2010.7 (or above) and anti-malware engine version 1.1.17600.5 (or above). ([Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).)
+- Your devices must be using anti-malware platform version `4.18.2010.7` (or above) and anti-malware engine version `1.1.17600.5` (or above). ([Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).)
 
 - [Cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) must be turned on.
 
@@ -149,11 +149,11 @@ If your organization uses Microsoft Endpoint Manager (MEM) you can turn tamper p
 
 - Your organization uses [Microsoft Endpoint Manager to manage devices](/mem/endpoint-manager-getting-started). (Microsoft Endpoint Manager (MEM) licenses are required; MEM is included in Microsoft 365 E3/E5, Enterprise Mobility + Security E3/E5, Microsoft 365 Business Premium, Microsoft 365 F1/F3, Microsoft 365 Government G3/G5, and corresponding education licenses.)
 
-- Your Windows devices must be running Windows 11 or Windows 10 OS [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) or later. (For more information about releases, see [Windows 10 release information](/windows/release-health/release-information).)
+- Your Windows devices must be running Windows 11 or Windows 10 [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019), or later. (For more information about releases, see [Windows 10 release information](/windows/release-health/release-information).)
 
 - You must be using Windows security with [security intelligence](https://www.microsoft.com/wdsi/definitions) updated to version 1.287.60.0 (or above).
 
-- Your devices must be using anti-malware platform version 4.18.1906.3 (or above) and anti-malware engine version 1.1.15500.X (or above). ([Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).)
+- Your devices must be using anti-malware platform version 4.18.1906.3 (or above) and anti-malware engine version `1.1.15500.X` (or above). ([Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).)
 
 ### Turn tamper protection on (or off) in Intune
 
@@ -236,15 +236,15 @@ When a tampering attempt is detected, an alert is raised in the [Microsoft 365 D
 
 ![Microsoft 365 Defender.](images/tamperattemptalert.png)
 
-Using [endpoint detection and response](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) and [advanced hunting](/microsoft-365/security/defender-endpoint/advanced-hunting-overview) capabilities in Microsoft Defender for Endpoint, your security operations team can investigate and address such attempts.
+Using [endpoint detection and response](overview-endpoint-detection-response.md) and [advanced hunting](advanced-hunting-overview.md) capabilities in Microsoft Defender for Endpoint, your security operations team can investigate and address such attempts.
 
 ## Review your security recommendations
 
-Tamper protection integrates with [Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) capabilities. [Security recommendations](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) include making sure tamper protection is turned on. For example, you can search on *tamper*. In the results, you can select **Turn on Tamper Protection** to learn more and turn it on.
+Tamper protection integrates with [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md) capabilities. [Security recommendations](tvm-security-recommendation.md) include making sure tamper protection is turned on. For example, you can search on *tamper*. In the results, you can select **Turn on Tamper Protection** to learn more and turn it on.
 
 ![Turn on tamper protection.](images/tamperprotectsecurityrecos.png)
 
-To learn more about Threat & Vulnerability Management, see [Threat & Vulnerability Management in Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center).
+To learn more about Threat & Vulnerability Management, see [Threat & Vulnerability Management in Microsoft 365 Defender](tvm-dashboard-insights.md#threat--vulnerability-management-in-microsoft-defender-security-center).
 
 ## Frequently asked questions
 
