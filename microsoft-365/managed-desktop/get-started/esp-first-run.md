@@ -3,9 +3,9 @@ title: First-run experience with Autopilot and the Enrollment Status Page
 description: How to deploy the ESP experience, the settings used, and configuration changes
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium

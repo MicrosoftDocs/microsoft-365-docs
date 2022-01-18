@@ -9,8 +9,8 @@ metadata:
   keywords: device, app, management
   ms.service: m365-md #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
-  author: jaimeo #Required; your GitHub user alias, with correct capitalization.
-  ms.author: jaimeo #Required; microsoft alias of author; optional team alias.
+  author: tiaraquan #Required; your GitHub user alias, with correct capitalization.
+  ms.author: tiaraquan #Required; microsoft alias of author; optional team alias.
   ms.date: 12/04/2020 #Required; mm/dd/yyyy format.
   ms.custom: intro-hub-or-landing
 
