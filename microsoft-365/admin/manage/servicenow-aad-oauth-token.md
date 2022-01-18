@@ -163,49 +163,37 @@ These steps are required to set up the integration between your ServiceNow insta
 
 1. \[ServiceNow Admin\] Select **Agree** to the consent prompt to continue.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image11.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image11.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-1.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-1.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
-1. \[ServiceNow Admin\] Set up the Outbound OAuth Provider.
+1. \[ServiceNow Admin\] Configure the environment and setup type.
+    If this installation is on a test environment, select the option This is a test environment. You will be able to quickly disable this option after the setup and all of your tests are completed later.
+    If your instance allows Basic Authentication for inbound connections, select Yes and refer to the [Basic Auth setup process](servicenow-basic-authentication.md). Otherwise, select **No** and click **Start setup**. 
+      :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-2.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-2.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
-    Select the OAuth profile for Outbound OAuth Provider created in [Prerequisites (AAD OAuth Token) step \#4](#prerequisites-aad-oauth-token), and then select **Next**.
+1. \[ServiceNow Admin\] Enter your Microsoft 365 tenant domain.
+     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-3.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-3.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image12.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image12.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+1. \[ServiceNow Admin\] Configure Outbound OAuth provider.
+    1. Configure Outbound OAuth provider.
+    1. After completing the instructions in the prerequisites section, click Done. Otherwise, follow the instructions in the wizard to create the necessary application registration in AAD.
+    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-4.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-4.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+    1. Register the ServiceNow OAuth App.
+    1. After completing the instructions in the prerequisites section, select the newly-created OAuth application registration and click Next. Otherwise, follow the instructions to create the entity in ServiceNow and then select the new application registration.
+     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-5.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-5.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
-1. \[ServiceNow Admin\] Set up the Inbound OAuth Provider.
-
-    1. Uncheck **Skip current step**.
-
-    1. Check **External OIDC Auth Token**.
-
-    1. Select the OAuth Client created in [Prerequisites (AAD OAuth Token) step \#5](#prerequisites-aad-oauth-token), and then select **Next**.
-
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image28.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image28.png" alt-text="Graphical user interface, text, application Description automatically generated":::
-
-1. \[ServiceNow Admin\] Set up the Inbound Call Integration User.
-
-    1. Uncheck **Skip current step**.
-
-    1. Enter the **Client ID** of the application that was created in [Prerequisites (AAD OAuth Token) step \#3](#prerequisites-aad-oauth-token), and then select **Next**.
-
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image39.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image39.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
-
-1. \[ServiceNow Admin\] Set up the Repository ID.
-
-    Specify the repository ID, and then select **Next**.
-
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image15.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image15.png" alt-text="Graphical user interface, text, application Description automatically generated":::
-
-1. \[ServiceNow Admin\] Set up Application Settings.
-
-    Select the following settings, and then select **Next**.
-
-    - SSO with Microsoft 365: Check whether the ServiceNow instance is set up as SSO with Microsoft 365 tenants, otherwise uncheck it.
-
-    - Microsoft 365 admin email: The email of Microsoft 365 admin user who is contacted when Microsoft 365 support cases are created.
-
-    - Test Environment: Check the box to indicate a test phase to avoid Microsoft support agents contacting you to address the issue. If you’re ready to move forward officially with Microsoft 365 support integration, uncheck the box.
-
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image16.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image16.png" alt-text="Graphical user interface, text, application Description automatically generated":::
+1. \[ServiceNow Admin\] Configure Inbound settings.
+    1. Configure the Inbound AAD App.
+    1. After completing the instructions in the prerequisites section, click Done to go to the next step. Otherwise, follow the instructions to create the AAD App Registration for inbound connectivity.
+    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-6.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-6.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+    1. Configure the ServiceNow External OpenID Connect Provider (OIDC Provider).
+    1. After completing the instructions in the prerequisites section, select the newly-created entity and click Done. Otherwise, follow the instructions to create the entity in ServiceNow and then select the new External OIDC Provider app registration.
+    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-7.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-7.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+    1. Configure the AAD App Registration for Inbound Integration User.
+    1. After completing the instructions in the prerequisites section, click Done to go to the next step. Otherwise, follow the instructions to create the AAD App Registration for inbound REST user (integration user).
+    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-8.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-8.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+    1. Configure the Integration User.
+    1. After completing the instructions in the prerequisites section, select the newly-created entity and click Next. Otherwise follow the instructions to create the integration user in ServiceNow then select the entity.
+    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-9.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-9.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 1. \[Microsoft 365 Tenant Admin\] Complete the integration.
 
@@ -213,15 +201,15 @@ These steps are required to set up the integration between your ServiceNow insta
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image40.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image40.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
-1. Go to **Microsoft 365 Admin Portal &gt; Settings &gt; Org settings &gt; Organization profiles**.
+    1. Go to **Microsoft 365 Admin Portal &gt; Settings &gt; Org settings &gt; Organization profiles**.
 
-1. Configure the support integration settings:
+    1. Configure the support integration settings:
 
     Select the **Basic information** tab > **Internal support tool** > **ServiceNow**, and enter the **Outbound App ID** value in the **Application ID to issue OAuth token** field. This Outbound App ID is on Step 6 – Complete the Integration, which was created in [Prerequisite (AAD OAuth Token) step \#1](#prerequisites-aad-oauth-token).
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
-1. On the **Repositories** tab, select **New repository** and update it with the following settings:
+    1. On the **Repositories** tab, select **New repository** and update it with the following settings:
 
     - Repository: The **Repository ID** value from "Step 6 – Complete the Integration".
 
@@ -239,11 +227,13 @@ These steps are required to set up the integration between your ServiceNow insta
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image31.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image31.png" alt-text="Graphical user interface, application Description automatically generated":::
 
-1. Go back to ServiceNow.
+    1. Go back to ServiceNow.
 
-1. Select **Next** to complete the integration.
+    1. Select **Next** to complete the integration.
 
-    :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image32.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image32.png" alt-text="Graphical user interface, application Description automatically generated":::
+   :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-10.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-10.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+    The Microsoft 365 support integration app will execute tests to ensure the integration is working. If there is a problem with the configuration, an error message will explain what needs to be fixed. Otherwise, the application is ready.
+    :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-11.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-11.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 1. \[ServiceNow Admin\] Enable Microsoft support integration for an existing user.
 
