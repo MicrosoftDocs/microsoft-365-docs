@@ -172,7 +172,7 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
     - Distribution method: `install automatically`
     - Level: `computer level`
 
-1. In **System extentions** profile, enter these values:
+1. In **System extensions** profile, enter these values:
     - Display Name: `Microsoft Corp. System Extensions`
     - System Extenstion Types: `Allowed System Extensions`
     - Team Identifier: `UBF8T346G9`
