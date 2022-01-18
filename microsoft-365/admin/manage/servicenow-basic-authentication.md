@@ -198,4 +198,4 @@ These steps are required to set up the integration between your ServiceNow insta
 
 1. \[OPTIONAL\] [The user with role x_mioms_m365_assis.administrator link] Link Microsoft 365 Admin account.
     If any user has the role x_mioms_m365_assis.administrator and is using different Microsoft 365 accounts to manage a Microsoft 365 support case, they must go to Microsoft 365 support > Link Account to set up their Microsoft 365 admin email.
-    :::image type=“content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="Graphical user interface, text, application Description automatically generated":::
+    :::image type="content" source="../../media/ServiceNow-guide/ServiceNow-guide-image21.png" alt-text="Graphical user interface, text, application Description automatically generated":::
