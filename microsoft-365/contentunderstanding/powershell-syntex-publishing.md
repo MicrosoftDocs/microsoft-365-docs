@@ -1,3 +1,20 @@
+---
+title: Publish document understanding models with PowerShell
+ms.author: jaeccles
+author: jameseccles
+ms.reviewer: ssquires
+manager: serdars
+audience: admin
+ms.topic: article
+ms.prod: microsoft-365-enterprise
+ms.collection: 
+    - enabler-strategic
+    - m365initiative-syntex
+search.appverid: MET150
+ms.localizationpriority: normal
+description: "Learn how to publish a SharePoint Syntex document understanding models with PowerShell."
+---
+
 # Publish document understanding models with PowerShell
 
 > [!IMPORTANT]
