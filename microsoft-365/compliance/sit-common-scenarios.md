@@ -40,8 +40,8 @@ Contoso has identified a few nine-digit test numbers that trigger false positive
 
 **Suggested solution**
 
-1. Create a copy of the SSN SIT <!-- TODD LINK OUT TO PROCEDURE ON HOW TO DO THIS-->
-1. Edit the high confidence pattern<!-- TODD LINK OUT TO PROCEDURE ON HOW TO DO THIS-->
+1. Create a copy of the SSN SIT. Use the steps to [copy and modify a sensitive information type](create-a-custom-sensitive-information-type.md#copy-and-modify-a-sensitive-information-type) to copy the SSN SIT.
+1. Edit the high confidence pattern. Follow the steps in [edit or delete the sensitive information type pattern](sit-get-started-exact-data-match-create-rule-package.md#edit-or-delete-the-sensitive-information-type-pattern).
 1. Add the numbers to be excluded in the 'exclude specific values' additional check. For example, to exclude 239-23-532 & 23923532, just adding 23923532 will suffice
 1. Repeat step 2 & 3 for other confidence patterns as well
 
