@@ -60,7 +60,7 @@ The updated Trust Center logic is described in the following diagram:
 
 ## What is a trusted document?
 
-Trusted documents are Office documents that open without any security prompts for macros, ActiveX controls, and other types of active content in the document. Protected View or Application Guard is not used to open the document. When users open a Trusted Document, and all active content is enabled. Even if the document contains new active content or updates to existing active content, users won't receive security prompts the next time they open the document.
+Trusted documents are Office documents that open without any security prompts for macros, ActiveX controls, and other types of active content in the document. Protected View or Application Guard is not used to open the document. When users open a Trusted Document, and all active content is enabled. Even if the document contains new active content or updates to existing active content, users won't receive security prompts the next time they open the document.
 
 Because of this behavior, users should clearly trust documents only if they trust the document source.
 
