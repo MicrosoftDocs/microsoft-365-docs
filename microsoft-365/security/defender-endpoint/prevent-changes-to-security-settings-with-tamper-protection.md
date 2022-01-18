@@ -17,7 +17,7 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 12/23/2021
+ms.date: 01/14/2022
 ms.collection: M365-security-compliance
 ---
 
@@ -143,6 +143,8 @@ If you are part of your organization's security team, and your subscription incl
 
 ### Requirements for managing tamper protection in Intune
 
+- Your devices must be [onboarded to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboarding).
+
 - You must have appropriate [permissions](/microsoft-365/security/defender-endpoint/assign-portal-access) assigned, such as global admin, security admin, or security operations.
 
 - Your organization uses [Intune to manage devices](/intune/fundamentals/what-is-device-management). ([Intune licenses](/intune/fundamentals/licenses) are required; Intune is included in Microsoft 365 E5/E3, Enterprise Mobility + Security E5/E3, Microsoft 365 Business Premium, Microsoft 365 F1/F3, Microsoft 365 Government G5/G3, and Intune for Education.)
@@ -191,11 +193,11 @@ If you're using [version 2006 of Configuration Manager](/mem/configmgr/core/plan
 > [!NOTE]
 > The procedure can be used to extend tamper protection to devices running Windows 10, Windows 10 Enterprise multi-session, Windows 11, Windows 11 Enterprise multi-session, Windows Server 2019, and Windows Server 2022. Make sure to review the prerequisites and other information in the resources mentioned in this procedure.
 
-1. Set up tenant attach. To learn more, see [Microsoft Endpoint Manager tenant attach: Device sync and device actions](/mem/configmgr/tenant-attach/device-sync-actions).
+1. Set up tenant attach. To learn more, see [Get started: Create and deploy endpoint security policies from the admin center](/mem/configmgr/tenant-attach/endpoint-security-get-started).
 
 2. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint security** \> **Antivirus**, and then choose **+ Create Policy**.
 
-   - In the **Platform** list, select **Windows 10 and Windows Server (ConfigMgr)** or **Windows 11 and Windows Server (ConfigMgr)**.
+   - In the **Platform** list, select **Windows 10, Windows 11, and Windows Server (ConfigMgr)**.
    - In the **Profile** list, select **Windows Security experience (preview)**.
 
 3. Deploy the policy to your device collection.
