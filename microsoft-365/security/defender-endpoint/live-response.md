@@ -59,7 +59,7 @@ Before you can initiate a session on a device, make sure you fulfill the followi
   - **macOS** - Only applicable for Public Preview, minimum required version: 101.43.84 
 
   > [!NOTE]
-  > Currently, only Intel based chipsets are supported.
+  > Currently, only Intel-based chipsets are supported.
   
   - **Linux** - Only applicable for Public Preview, minimum required version: 101.45.13 
     
