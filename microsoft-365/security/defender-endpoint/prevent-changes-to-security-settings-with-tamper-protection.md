@@ -155,9 +155,9 @@ If your organization uses Microsoft Endpoint Manager (MEM) you can turn tamper p
 
 - Your devices must be using anti-malware platform version 4.18.1906.3 (or above) and anti-malware engine version `1.1.15500.X` (or above). ([Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).)
 
-### Turn tamper protection on (or off) in Intune
+### Turn tamper protection on (or off) in Microsoft Endpoint Manager
 
-![Turn tamper protection on with Intune.](images/turnontamperprotect-MEM.png)
+![Turn tamper protection on with Endpoint Manager.](images/turnontamperprotect-MEM.png)
 
 1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint security** \> **Antivirus**, and then choose **+ Create Policy**.
 
