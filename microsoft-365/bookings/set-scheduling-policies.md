@@ -34,9 +34,9 @@ This table explains the various scheduling policies available on the booking pag
 
 1. In the navigation pane, select **Booking page**.
 
-1. Select your policies under the **Scheduling policy** section.
+1. Select your policies under the **Default scheduling policy** section.
 
-1. Select **Save and publish**.
+1. Select **Save** at the top of the page.
 
 ## Publish the booking page
 

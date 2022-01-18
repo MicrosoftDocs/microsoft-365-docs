@@ -28,7 +28,7 @@ For more information about how to personalize and customize your booking page, s
 
 1. Sign in to Microsoft 365 and go to **Bookings**.
 
-1. Go to **Services** and either edit an existing service or **Add a service**.
+1. Go to **Settings** > **Services** and either edit an existing service or **Add new service**.
 
 1. Scroll down to the **Custom fields** section, and then select **Modify**.
 

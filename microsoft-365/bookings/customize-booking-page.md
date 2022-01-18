@@ -49,15 +49,11 @@ Once you publish your booking page, customers will see your booking page where t
 
 ## Publish the booking page
 
-Watch this video or follow the steps below to publish or unpublish your booking page.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuYil]
-
 1. In Microsoft 365, select the app launcher, and then select **Bookings**.
 
-1. In the navigation pane, select **Booking page**.
+1. In the navigation pane, select **Settings** > **Booking page**.
 
-1. Verify your scheduling policies are correct. See [Set your scheduling policies](set-scheduling-policies.md) for more information.
+1. Verify your default scheduling policies are correct. See [Set your scheduling policies](set-scheduling-policies.md) for more information.
 
 1. Select **Save and publish**. You'll see a confirmation message.
 
