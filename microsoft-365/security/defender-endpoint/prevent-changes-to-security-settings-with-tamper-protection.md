@@ -244,7 +244,7 @@ Tamper protection integrates with [Threat & Vulnerability Management](next-gen-t
 
 ![Turn on tamper protection.](images/tamperprotectsecurityrecos.png)
 
-To learn more about Threat & Vulnerability Management, see [Threat & Vulnerability Management in Microsoft 365 Defender](tvm-dashboard-insights.md#threat--vulnerability-management-in-microsoft-defender-security-center).
+To learn more about Threat & Vulnerability Management, see [Dashboard insights - threat and vulnerability management](tvm-dashboard-insights.md#dashboard-insights---threat-and-vulnerability-management).
 
 ## Frequently asked questions
 
