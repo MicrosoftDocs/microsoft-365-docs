@@ -59,6 +59,10 @@ To use security management for Microsoft Defender for Endpoint, you need:
 
   *Any subscription* that grants Microsoft Defender for Endpoint licenses also grants your tenant access to the Endpoint security node of the Microsoft Endpoint Manager admin center. The Endpoint security node is where you'll configure and deploy policies to manage Microsoft Defender for Endpoint for your devices and monitor device status.
 
+>[!NOTE]
+> Currently, if a Microsoft Defender for Endpoint subscription is obtained through Azure Security Center/Defender for cloud, this Microsoft Defender for Endpoint license is not a qualifying license for this feature. 
+
+
 ## Architecture
 
 The following diagram is a conceptual representation of the Microsoft Defender for Endpoint security configuration management solution.

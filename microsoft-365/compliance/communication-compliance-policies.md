@@ -113,6 +113,9 @@ You have the option of including sensitive information types as part of your com
 - Privacy
 - Custom information type
 
+> [!IMPORTANT]
+> SITs have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+
 To learn more about sensitive information details and the patterns included in the default types, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
 
 ### Custom keyword dictionaries
