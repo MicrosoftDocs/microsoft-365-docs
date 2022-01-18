@@ -116,7 +116,15 @@ If you need to edit an existing template or to delete or unpublish a template, f
  
    ![Screenshot of the Edit New menu panel showing the Modern templates section.](../media/content-understanding/content-assembly-edit-template-2.png)
 
-3. Select **Edit** to open the template studio where you can edit the template. You can also choose to delete or unpublish the template.
+3. To edit a published template or a draft template:
+
+   - For **published templates**: Select **Edit** to open the template studio where you can edit the template. You can also choose to delete or unpublish the template. 
+ 
+      ![Screenshot of the Modern templates section showing the published templates.](../media/content-understanding/content-assembly-edit-published.png)
+
+   - For **draft templates**: Select **Edit** to open the template studio where you can edit the draft template. You can also choose to delete or publish the template.
+ 
+      ![Screenshot of the Modern templates section showing the draft templates.](../media/content-understanding/content-assembly-edit-draft.png)
 
 ## Create a document from a modern template
 
@@ -138,7 +146,7 @@ You can use a *published* modern template to quickly create similar documents wi
       - Autofill placeholder values if able to uniquely identify a record for placeholders associated with the same list.
 
 > [!NOTE]
-> Currently, only Microsoft Word documents (.docx extension) are supported for creating a template. Before uploading the document, ensure that the Word document doesn't have **Track changes** enabled or comments. If your docuemnt contains images ensure that they are not text wrapped <br>The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library. <br>You can create placeholders only for text. Currently, images, smart art, tables, and bullet lists are not supported. <br>Once a document is created from a template, it is not associated with the template.
+> Currently, only Microsoft Word documents (.docx extension) are supported for creating a template. Before uploading the document, ensure that the Word document doesn't have **Track changes** enabled or comments. If your document contains images, ensure that images are not text-wrapped. <br>The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library. <br>You can create placeholders only for text. Currently, images, smart art, tables, and bullet lists are not supported. <br>Once a document is created from a template, it is not associated with the template.
 
 
 
