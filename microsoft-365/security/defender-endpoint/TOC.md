@@ -76,7 +76,6 @@
 #### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 #### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
 
-#### [Application license terms](mde-terms-windows.md)
 
 
 ### [Microsoft Defender for Endpoint on other Operating Systems]()
@@ -118,7 +117,7 @@
 
 ##### [Privacy](mac-privacy.md)
 ##### [Resources](mac-resources.md)
-##### [Application license terms](mde-terms-mac.md)
+
 
 #### [Microsoft Defender for Endpoint on Linux]()
 ##### [Overview of Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
@@ -185,7 +184,6 @@
 
 ###### [Privacy](ios-privacy.md)
 
-##### [Microsoft Defender for Endpoint application license terms](mde-terms-mobile.md) 
 
 ### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
 
@@ -267,21 +265,18 @@
 ### [Host firewall reporting in Microsoft Defender for Endpoint](host-firewall-reporting.md)
 
 ### [Attack surface reduction]()
-#### [Overview of attack surface reduction](overview-attack-surface-reduction.md)
-#### [Configure attack surface reduction capabilities](configure-attack-surface-reduction.md)
-#### [Learn about attack surface reduction rules](attack-surface-reduction.md)
-#### [Attack surface reduction rules](attack-surface-reduction-rules.md)
-#### [Deploy attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment.md)
-##### [ASR rules deployment phase 1 - plan](attack-surface-reduction-rules-deployment-phase-1.md)
-##### [ASR rules deployment phase 2 - test](attack-surface-reduction-rules-deployment-phase-2.md)
-##### [ASR rules deployment phase 3 - implement](attack-surface-reduction-rules-deployment-phase-3.md)
-##### [ASR rules deployment phase 4 - operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
-#### [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
-#### [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
-#### [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
+#### [Understand and use attack surface reduction](overview-attack-surface-reduction.md)
+#### [Attack surface reduction (ASR) rules]()
+##### [Learn about ASR rules](attack-surface-reduction.md)
+##### [ASR rules deployment guide]()
+###### [ASR rules deployment overview](attack-surface-reduction-rules-deployment.md)
+###### [Phase 1: Plan](attack-surface-reduction-rules-deployment-phase-1.md)
+###### [Phase 2: Test](attack-surface-reduction-rules-deployment-phase-2.md)
+###### [Phase 3: Implement](attack-surface-reduction-rules-deployment-phase-3.md)
+###### [Phase 4: Operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
+##### [ASR rules reference](attack-surface-reduction-rules-reference.md)
+##### [Enable ASR rules alternate congiguration methods](enable-attack-surface-reduction.md)
 #### [Attack surface reduction FAQ](attack-surface-reduction-faq.yml)
-#### [View attack surface reduction events](event-views.md)
-#### [Use audit mode for attack surface reduction](audit-windows-defender.md)
 
 ### Next-generation protection
 #### [Next-generation protection overview](next-generation-protection.md)

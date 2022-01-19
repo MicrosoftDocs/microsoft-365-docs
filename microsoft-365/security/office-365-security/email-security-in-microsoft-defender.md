@@ -15,7 +15,6 @@ ms.collection:
 description: View and investigate malware phishing attempts.
 ms.custom: 
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -29,7 +28,7 @@ In this article:
 - [Start automated investigation and response](#start-automated-investigation-and-response)
 
 > [!NOTE]
-> This is part of a **3-article series** on **Threat Explorer (Explorer)**, **email security**, and **Explorer and Real-time detections basics** (such as differences between the tools, and permissions needed to operate them). The other two articles in this series are [Threat hunting in Threat Explorer](threat-hunting-in-threat-explorer.md) and [Threat Explorer and Real-time detections basics](real-time-detections.md).
+> This is part of a **3-article series** on **Threat Explorer (Explorer)**, **email security**, and **Explorer and Real-time detections** (such as differences between the tools, and permissions needed to operate them). The other two articles in this series are [Threat hunting in Threat Explorer](threat-hunting-in-threat-explorer.md) and [Threat Explorer and Real-time detections](real-time-detections.md).
 
 This article explains how to view and investigate malware and phishing attempts that are detected in email by Microsoft 365 security features.
 
@@ -42,7 +41,9 @@ This article explains how to view and investigate malware and phishing attempts 
 
 To see malware detected in email sorted by Microsoft 365 technology, use the [**Email \> Malware**](threat-explorer-views.md#email--malware) view of Explorer (or Real-time detections). Malware is the default view, so it might be selected as soon as you open Explorer.
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, choose **Email & collaboration** \> **Explorer** (or **Real-time detections**; This example uses Explorer).
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration**, and then choose **Explorer** or **Real-time detections**. To go directly to the page, use <https://security.microsoft.com/threatexplorer> or <https://security.microsoft.com/realtimereports>.
+
+   This example uses **Explorer**.
 
    From here, start at the View, choose a particular frame of time to investigate (if needed), and focus your filters, as per the [Explorer walk- through](threat-hunting-in-threat-explorer.md#threat-explorer-walk-through).
 
@@ -81,8 +82,9 @@ You can use the **Report clean** option in Explorer to report a message as false
 
 You can view phishing attempts through URLs in email, including a list of URLs that were allowed, blocked, and overridden. To identify URLs that were clicked, [Safe Links](safe-links.md) must be configured. Make sure that you set up [Safe Links policies](set-up-safe-links-policies.md) for time-of-click protection and logging of click verdicts by Safe Links.
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, choose **Email & collaboration** \> **Explorer** (or **Real-time detections**; This example uses Explorer).
-, choose **Email & collaboration** \> **Explorer** (or **Real-time detections**; This example uses Explorer).
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration**, and then choose **Explorer** or **Real-time detections**. To go directly to the page, use <https://security.microsoft.com/threatexplorer> or <https://security.microsoft.com/realtimereports>.
+
+   This example uses **Explorer**.
 
 2. In the **View** drop down list, choose **Email** \> **Phish**.
 
