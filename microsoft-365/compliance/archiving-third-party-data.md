@@ -1,5 +1,5 @@
 ---
-title: "Archive third-party data"
+title: "Use data connectors to import and archive third-party data in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -23,9 +23,13 @@ ms.custom:
 description: "Learn how to import and archive third-party data from social media platforms, instant messaging platforms, and document collaboration platforms to Microsoft 365 mailboxes."
 ---
 
-# Archive third-party data in Microsoft 365
+# Learn about connectors for third-party data
 
-Microsoft 365 lets administrators use data connectors to import and archive third-party data from social media platforms, instant messaging platforms, and document collaboration platforms, to mailboxes in your Microsoft 365 organization. One primary benefit of using data connectors to import and archive third-party data in Microsoft 365 is that you can apply various Microsoft 365 compliance solutions to that after it's been imported. This helps you ensure that your organization's non-Microsoft data is in compliance with the regulations and standards that affect your organization.
+Microsoft 365 lets administrators use data connectors to import and archive non-Microsoft, third-party data from social media platforms, instant messaging platforms, and document collaboration platforms, to mailboxes in your Microsoft 365 organization. One primary benefit of using data connectors to import and archive third-party data in Microsoft 365 is that you can apply various Microsoft 365 compliance solutions to the data after it's been imported. This helps you ensure that your organization's non-Microsoft data is in compliance with the regulations and standards that affect your organization.
+
+Watch this interactive guide that demonstrates how to create data connectors to import and archive third-party data and examples of applying compliance solutions to data after it's imported to Microsoft 365.
+
+> [!VIDEO https://mslearn.cloudguides.com/guides/Archive%20data%20from%20non-Microsoft%20sources%20in%20Microsoft%20365]
 
 ## Third-party data connectors
 
@@ -58,7 +62,8 @@ Click the link in the **Third-party data** column to go the step-by-step instruc
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[LinkedIn](archive-linkedin-data.md)   |![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
 |[Physical badging](import-physical-badging-data.md) ||||||![Check mark](../media/checkmark.png)|
-|[Twitter](archive-twitter-data-with-sample-connector.md)     |![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
+|[Slack eDiscovery](archive-slack-data-microsoft.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
+|[Twitter](archive-twitter-data-with-sample-connector.md)     |![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
 ||||||||
 
 ### Veritas data connectors
@@ -89,6 +94,7 @@ Before you can archive third-party data in Microsoft 365, you have to work with 
 |[Slack eDiscovery](archive-slack-data.md)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Symphony](archive-symphony-data.md)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Text-delimited](archive-text-delimited-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
+|[Twitter](archive-veritas-twitter-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
 |[Webex Teams](archive-webexteams-data.md)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Webpages](archive-webpagecapture-data.md)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
 |[Workplace from Facebook](archive-workplacefromfacebook-data.md)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
@@ -256,7 +262,42 @@ For more information about creating eDiscovery search queries, see [Keyword quer
 
 Some data connectors are available in the US Government cloud. The following sections indicate the specific government environments that support third-party data connectors. For more information about US Government clouds, see [Microsoft 365 US Government](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/microsoft-365-government-how-to-buy).
 
-### Telemessage data connectors
+### Veritas data connectors in the US Government cloud (preview)
+
+|Data connector  |GCC  |GCC High  |DoD  |
+|:---------|:---------|:---------|:---------|
+|CellTrust| Yes | No | No |
+|Cisco Jabber on MS SQL| Yes | No | No |
+|Cisco Jabber on Oracle| Yes | No | No |
+|Cisco Jabber on PostgreSQL| Yes | No | No |
+|EML| Yes | No | No |
+|FX Connect| Yes | No | No |
+|Jive| Yes | No | No |
+|MS SQL Database| Yes | No | No |
+|Pivot| Yes | No | No |
+|Redtail Speak| Yes | No | No |
+|Reuters Dealing| Yes | No | No |
+|Reuters Eikon| Yes | No | No |
+|Reuters FX| Yes | No | No |
+|RingCentral| Yes | No | No |
+|Salesforce Chatter| Yes | No | No |
+|ServiceNow| Yes | No | No |
+|Skype for Business| Yes | No | No |
+|Slack eDiscovery| Yes | No | No |
+|Symphony| Yes | No | No |
+|Text-delimited| Yes | No | No |
+|Twitter| Yes | No | No |
+|Webex Teams| Yes | No | No |
+|Webpages| Yes | No | No |
+|Workplace from Facebook| Yes | No | No |
+|XIP| Yes | No | No |
+|XSLT/XML| Yes | No | No |
+|Yieldbroker| Yes | No | No |
+|YouTube| No | No | No |
+|Zoom Meetings| Yes | No | No |
+|||||
+
+### TeleMessage data connectors in the US Government cloud
 
 |Data connector  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
@@ -274,14 +315,7 @@ Some data connectors are available in the US Government cloud. The following sec
 |WhatsApp Archiver | Yes | No | No |
 |||||
 
-### CellTrust data connectors
-
-|Data connector  |GCC  |GCC High  |DoD  |
-|:---------|:---------|:---------|:---------|
-|CellTrust SL2 | Yes | No | No |
-|||||
-
-### 17a-4 data connectors
+### 17a-4 data connectors in the US Government cloud
 
 |Data connector  |GCC  |GCC High  |DoD  |
 |:---------|:---------|:---------|:---------|
@@ -303,6 +337,13 @@ Some data connectors are available in the US Government cloud. The following sec
 |SQL DataParser  | Yes | No | No |
 |Symphony DataParser | Yes | No | No |
 |Zoom DataParser | Yes | No | No |
+|||||
+
+### CellTrust data connectors in the US Government cloud
+
+|Data connector  |GCC  |GCC High  |DoD  |
+|:---------|:---------|:---------|:---------|
+|CellTrust SL2 | Yes | No | No |
 |||||
 
 ## Working with a Microsoft partner to archive third-party data

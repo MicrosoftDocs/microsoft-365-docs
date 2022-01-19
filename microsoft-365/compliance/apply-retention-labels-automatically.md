@@ -186,6 +186,9 @@ After you select a policy template, you can add or remove any types of sensitive
 
 For more information about these options, see the following guidance from the DLP documentation [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
+> [!IMPORTANT]
+> Sensitive information types have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
+
 To consider when using sensitive information types to auto-apply retention labels:
 
 - If you use custom sensitive information types, these can't auto-label existing items in SharePoint and OneDrive.

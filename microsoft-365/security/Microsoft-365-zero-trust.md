@@ -1,11 +1,13 @@
 ---
 title: "Microsoft 365 Zero Trust deployment plan"
 f1.keywords:
-- CSH
+- deploy zero trust
+- zero trust strategy
 ms.author: bcarter
 author: brendacarter
 manager: dansimp
 audience: Admin
+description: Learn how to deploy Microsoft 365 Zero Trust security into your environment to defend against threats and protect sensitive data.
 ms.topic: tutorial
 ms.prod: m365-security
 ms.technology: m365d
@@ -13,10 +15,9 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
-- M365-security-compliance
 - m365solution-zerotrust
 - m365solution-overview
-description: "Implement Zero Trust principles, architecture, and capabilities for Microsoft 365."
+- M365-security-compliance
 ---
 
 # Microsoft 365 Zero Trust deployment plan
@@ -140,4 +141,6 @@ Microsoft Information Protection provides a framework, process, and capabilities
 
 ![Microsoft Information Protection (MIP) framework](../media/zero-trust/mip-solution-overview.png)
 
-For more information, see [Microsoft Information Protection in Microsoft 365](../compliance/information-protection.md). 
+For more information on how to plan and deploy information protection, see [Deploy a Microsoft Information Protection solution](../compliance/information-protection-solution.md). 
+
+If you're deploying information protection for data privacy regulations, this solution guide provides a recommended framework for the entire process: [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md).
