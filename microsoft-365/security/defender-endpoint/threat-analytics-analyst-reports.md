@@ -22,6 +22,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -96,4 +97,3 @@ Advanced hunting queries in the analyst reports have been vetted by Microsoft an
 - [Threat analytics overview](threat-analytics.md)
 - [Proactively find threats with advanced hunting](advanced-hunting-overview.md)
 - [Custom detection rules](custom-detection-rules.md)
-- 
