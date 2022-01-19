@@ -87,7 +87,8 @@ After you try to add a domain to your account, you might receive a message that 
 
     If other users are using the domain, you must remove them. Choose from the options to **Automatically remove**, manually move the users to your domain, or remove the users completely.
 
-    > [!NOTE] Check back as it can take some time for the domain to be removed from the account. Removal is complete when the domain disappears from the account.
+   > [!NOTE]
+   > Check back as it can take some time for the domain to be removed from the account. Removal is complete when the domain disappears from the account.
 
 1. Sign out of the account.
 
