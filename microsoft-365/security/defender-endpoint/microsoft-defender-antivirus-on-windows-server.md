@@ -13,7 +13,7 @@ ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 10/18/2021
+ms.date: 01/14/2022
 ms.collection: M365-security-compliance
 ---
 
@@ -57,7 +57,7 @@ By default, Microsoft Defender Antivirus is installed and functional on Windows 
 If the GUI is not installed on your server, and you want to install it, either the **Add Roles and Features** wizard or PowerShell cmdlets.
 
 > [!NOTE]
-> This option is not available for Windows Server 2012 R2. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint).
+> This option is not available for Windows Server 2012 R2. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
 
 ### Turn on the GUI using the Add Roles and Features Wizard
 
@@ -120,6 +120,12 @@ sc query Windefend
 ```
 
 The `sc query` command returns information about the Microsoft Defender Antivirus service. When Microsoft Defender Antivirus is running, the `STATE` value displays `RUNNING`.
+
+To view all the services that are not running, run the following Powershell cmdlet:
+
+```console
+sc query state= all
+```
 
 ## Update antimalware Security intelligence
 
@@ -219,7 +225,7 @@ Uninstall-WindowsFeature -Name Windows-Defender-GUI
 
 ### Are you using Windows Server 2012 R2 or Windows Server 2016?
 
-You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2012 R2 and and Windows Server 2016. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-microsoft-defender-for-endpoint).
+You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2012 R2 and and Windows Server 2016. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
 
 <br/><br/>
 

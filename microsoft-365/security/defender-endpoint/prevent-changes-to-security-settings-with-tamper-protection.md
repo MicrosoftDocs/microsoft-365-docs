@@ -17,7 +17,7 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 12/23/2021
+ms.date: 01/14/2022
 ms.collection: M365-security-compliance
 ---
 
@@ -99,7 +99,7 @@ Tamper protection can be turned on or off for your tenant using the Microsoft 36
 
 - When you use the Microsoft 365 Defender portal to manage tamper protection, you do not have to use Intune or the tenant attach method.
 
-- When you manage tamper protection in the Microsoft Defender Security Center, the setting is applied tenant wide, affecting all of your devices that are running Windows 10, Windows 10 Enterprise multi-session, Windows 11, Windows 11 Enterprise multi-session, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 or Windows Server 2022. To fine-tune tamper protection (such as having tamper protection on for some devices but off for others), use either [Intune](#manage-tamper-protection-for-your-organization-using-intune) or [Configuration Manager with tenant attach](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006).
+- When you manage tamper protection in the Microsoft 365 Defender portal, the setting is applied tenant wide, affecting all of your devices that are running Windows 10, Windows 10 Enterprise multi-session, Windows 11, Windows 11 Enterprise multi-session, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019 or Windows Server 2022. To fine-tune tamper protection (such as having tamper protection on for some devices but off for others), use either [Intune](#manage-tamper-protection-for-your-organization-using-intune) or [Configuration Manager with tenant attach](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006).
 
 - If you have a hybrid environment, tamper protection settings configured in Intune take precedence over settings configured in the Microsoft 365 Defender portal.
 
@@ -142,6 +142,8 @@ For more information about releases, see [Windows 10 release information](/windo
 If you are part of your organization's security team, and your subscription includes [Intune](/intune/fundamentals/what-is-intune), you can turn tamper protection on (or off) for your organization in the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)). Use Intune when you want to fine-tune tamper protection settings. For example, if you want to enable tamper protection on some devices, but not all, use Intune.
 
 ### Requirements for managing tamper protection in Intune
+
+- Your devices must be [onboarded to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboarding).
 
 - You must have appropriate [permissions](/microsoft-365/security/defender-endpoint/assign-portal-access) assigned, such as global admin, security admin, or security operations.
 
@@ -191,11 +193,11 @@ If you're using [version 2006 of Configuration Manager](/mem/configmgr/core/plan
 > [!NOTE]
 > The procedure can be used to extend tamper protection to devices running Windows 10, Windows 10 Enterprise multi-session, Windows 11, Windows 11 Enterprise multi-session, Windows Server 2019, and Windows Server 2022. Make sure to review the prerequisites and other information in the resources mentioned in this procedure.
 
-1. Set up tenant attach. To learn more, see [Microsoft Endpoint Manager tenant attach: Device sync and device actions](/mem/configmgr/tenant-attach/device-sync-actions).
+1. Set up tenant attach. To learn more, see [Get started: Create and deploy endpoint security policies from the admin center](/mem/configmgr/tenant-attach/endpoint-security-get-started).
 
 2. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint security** \> **Antivirus**, and then choose **+ Create Policy**.
 
-   - In the **Platform** list, select **Windows 10 and Windows Server (ConfigMgr)** or **Windows 11 and Windows Server (ConfigMgr)**.
+   - In the **Platform** list, select **Windows 10, Windows 11, and Windows Server (ConfigMgr)**.
    - In the **Profile** list, select **Windows Security experience (preview)**.
 
 3. Deploy the policy to your device collection.
