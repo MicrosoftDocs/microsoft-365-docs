@@ -1,5 +1,5 @@
 ---
-title: "How SMTP DNS-based Authentication of Named Entities (DANE) works"
+title: "How SMTP DNS-based Authentication of Named Entities (DANE) works to secure email communications"
 f1.keywords:
 - NOCSH
 ms.author: v-mathavale
@@ -11,21 +11,20 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
-description: "Learn how SMTP DNS-based Authentication of Named Entities (DANE) works to secure email communication between mail servers."
+description: "Learn how SMTP DNS-based Authentication of Named Entities (DANE) works to secure email communications between mail servers."
 ---
 
-# How SMTP DANE works
+# How SMTP DNS-based Authentication of Named Entities (DANE) works
 
-The SMTP protocol is the main protocol used to transfer messages between mail servers and is, by default, not secure. The Transport Layer Security (TLS) protocol was introduced years ago to support encrypted transmission of messages over SMTP. It is commonly used opportunistically rather than as a requirement, leaving a lot of email traffic in clear text, vulnerable to interception by nefarious actors. Furthermore, SMTP determines the IP addresses of destination servers through the public DNS infrastructure, which is susceptible to spoofing and Man-in-the-Middle (MITM) attacks. This has led to many new standards being created to increase security for sending and receiving email, one of those is DNS-based Authentication of Named Entities (DANE).
+The SMTP protocol is the main protocol used to transfer messages between mail servers and is, by default, not secure. The Transport Layer Security (TLS) protocol was introduced years ago to support encrypted transmission of messages over SMTP. It's commonly used opportunistically rather than as a requirement, leaving much email traffic in clear text, vulnerable to interception by nefarious actors. Furthermore, SMTP determines the IP addresses of destination servers through the public DNS infrastructure, which is susceptible to spoofing and Man-in-the-Middle (MITM) attacks. This has led to many new standards being created to increase security for sending and receiving email, one of those is DNS-based Authentication of Named Entities (DANE).
   
-DANE for SMTP [RFC 7672](https://tools.ietf.org/html/rfc7672) uses the presence of a TLS Authentication (TLSA) record in a domain's DNS record set to signal that a domain and its mail server(s) support DANE. If there's no TLSA record present, DNS resolution for mail flow will work as usual without any DANE checks being attempted. The TLSA record securely signals TLS support and publishes the DANE policy for the domain. So, sending mail servers can successfully authenticate legitimate receiving mail servers using SMTP DANE. This makes it resistant to downgrade and MITM attacks. DANE has direct dependencies on DNSSEC, which works by digitally signing records for DNS lookups using public key cryptography. DNSSEC checks occur on recursive DNS resolvers, the DNS servers that make DNS queries for clients. DNSSEC ensures that DNS records aren't tampered with and are authentic.  
+DANE for SMTP [RFC 7672](https://tools.ietf.org/html/rfc7672) uses the presence of a Transport Layer Security Authentication (TLSA) record in a domain's DNS record set to signal that a domain and its mail server(s) support DANE. If there's no TLSA record present, DNS resolution for mail flow will work as usual without any DANE checks being attempted. The TLSA record securely signals TLS support and publishes the DANE policy for the domain. So, sending mail servers can successfully authenticate legitimate receiving mail servers using SMTP DANE. This makes it resistant to downgrade and MITM attacks. DANE has direct dependencies on DNSSEC, which works by digitally signing records for DNS lookups using public key cryptography. DNSSEC checks occur on recursive DNS resolvers, the DNS servers that make DNS queries for clients. DNSSEC ensures that DNS records aren't tampered with and are authentic.  
 
-Once the MX, A/AAAA and DNSSEC-related resource records for a domain have had their authenticity validated (the whole chain of records is authentic) and have been returned to the DNS recursive resolver, the sending mail server will also query for the presence of a TLSA record corresponding to the MX host entry/entries. If the TLSA record is present and proven authentic using another DNSSEC check, the DNS recursive resolver will return the TLSA record to the sending mail server. 
+First the MX, A/AAAA, and DNSSEC-related resource records for a domain are validated for their authenticity - the whole chain of records is authentic and are returned to the DNS recursive resolver. Then, the sending mail server will query for the presence of a TLSA record corresponding to the MX host entry/entries. If the TLSA record is present and proven authentic using another DNSSEC check, the DNS recursive resolver will return the TLSA record to the sending mail server. 
 
-After the authentic TLSA record has been received by the sending mail server, the sending mail server establishes an SMTP connection to the MX host associated with the authentic TLSA record. The sending mail server will try to setup TLS and compare the server's TLS certificate with the data in the TLSA record to validate that the destination mail server connected to the sender is the legitimate receiving mail server. The message will be transmitted (using TLS) if authentication succeeds. When authentication fails or if TLS is not supported by the destination server, Exchange Online will retry the entire validation process beginning with a DNS query for the same destination domain again after 15 minutes, then 15 minutes after that, then every hour for the next 24 hours. If authentication continues to fail after the 24 hours of retrying has passed, the message will expire and an NDR with error details will be generated and sent to the sender. 
+After receiving the authentic TLSA record, the sending mail server establishes an SMTP connection to the MX host associated with the authentic TLSA record. The sending mail server will try to setup TLS and compare the server's TLS certificate with the data in the TLSA record to validate that the destination mail server connected to the sender is the legitimate receiving mail server. The message will be transmitted (using TLS) if authentication succeeds. When authentication fails or if TLS is not supported by the destination server, Exchange Online will retry the entire validation process beginning with a DNS query for the same destination domain again after 15 minutes, then 15 minutes thereafter, then every hour for the next 24 hours. If authentication continues to fail after the 24 hours of retrying has passed, the message will expire and an NDR with error details will be generated and sent to the sender. 
 
 ## What are the components of DANE?
 
@@ -48,9 +47,9 @@ There are four configurable fields unique to the TLSA record type:
 |2     |DANE-TA         |Use server’s private key from the X.509 tree that must be validated by a trust anchor in the chain of trust. The TLSA record specifies the trust anchor to be used for validating the TLS certificates for the domain.         |
 |3     |DANE-EE         |Only match against the destination server’s certificate.           |
 
-<sup>1</sup>  Exchange Online follows RFC implementation guidance that Certificate Usage Field values of 0 or 1 should not be used when DANE is implemented with SMTP. When a TLSA record that has a Certificate Usage field value of 0 or 1 is returned to Exchange Online, Exchange Online will treat it as not usable. If all TLSA records are found unusable, Exchange Online will not perform the DANE validation steps for 0 or 1 when sending the email. Instead, because of the presence of a TLSA record, Exchange Online will simply enforce the use of TLS for sending the email, sending the email if the destination email server supports TLS or dropping the email and generating an NDR if the destination email server does not support TLS.     
+<sup>1</sup>  Exchange Online follows RFC implementation guidance that Certificate Usage Field values of 0 or 1 should not be used when DANE is implemented with SMTP. When a TLSA record that has a Certificate Usage field value of 0 or 1 is returned to Exchange Online, Exchange Online will treat it as not usable. If all TLSA records are found unusable, Exchange Online will not perform the DANE validation steps for 0 or 1 when sending the email. Instead, because of the presence of a TLSA record, Exchange Online will enforce the use of TLS for sending the email, sending the email if the destination email server supports TLS or dropping the email and generating an NDR if the destination email server does not support TLS.     
 
-In the example TLSA record, the Certificate Usage Field is set to ‘3’ so the Certificate Association Data (‘abc123…xyz789’) would be matched against the destination server’s certificate only.
+In the example of TLSA record, the Certificate Usage Field is set to ‘3’, so the Certificate Association Data (‘abc123…xyz789’) would be matched against the destination server’s certificate only.
 
 **Selector field**: Indicates which parts of the destination server’s certificate should be checked. 
 
@@ -69,11 +68,11 @@ In the example TLSA record, the Selector Field is set to ‘1’ so the Certific
 |1     |SHA-256         |The data in the TSLA record is a SHA-256 hash of either the certificate or the SPKI.          |
 |2     |SHA-512         |The data in the TSLA record is a SHA-512 hash of either the certificate or the SPKI.         |
 
-In the example TLSA record, the Matching Type Field is set to ‘1’ so the Certificate Association Data is a SHA-256 hash of the Subject Public Key Info from the destination server certificate
+In the example of TLSA record, the Matching Type Field is set to ‘1’ so the Certificate Association Data is a SHA-256 hash of the Subject Public Key Info from the destination server certificate
 
 **Certificate Association Data**: Specifies the certificate data that is used for matching against the destination server certificate. This data depends on the Selector Field value and the Matching Type Value.
 
-In the example TLSA record, the Certificate Association data is set to ‘abc123…xyz789’. Since the Selector Field value in the example is set to '1’, it would reference the destination server certificate’s public key and the algorithm that is identified to be used with it. And since the Matching Type field value in the example is set to ‘1’, it would reference the SHA-256 hash of the Subject Public Key Info from the destination server certificate.
+In the example of TLSA record, the Certificate Association data is set to ‘abc123…xyz789’. Since the Selector Field value in the example is set to '1’, it would reference the destination server certificate’s public key and the algorithm that is identified to be used with it. And since the Matching Type field value in the example is set to ‘1’, it would reference the SHA-256 hash of the Subject Public Key Info from the destination server certificate.
 
 ## How can Exchange Online customers use SMTP DANE Outbound?
 
@@ -131,14 +130,14 @@ This usually indicates an issue with the destination mail server. After receivin
 
 ### Troubleshooting 5.7.322 certificate-expired
 
-A valid X.509 certificate that isn't expired must be presented to the sending email server. X.509 certificates must be renewed after their expiration, commonly annually. After receiving the message:
+A valid X.509 certificate that hasn't expired must be presented to the sending email server. X.509 certificates must be renewed after their expiration, commonly annually. After receiving the message:
 
 1.	Alert the destination email administrator that you received this error code and provide the error code string.
-2.	Allow time for the destination server certificate to be renewed and the TLSA record to be updated to reference the new certificate, then retry sending the email and review the Message Trace Details for the message in the Exchange Admin Center portal.
+2.	Allow time for the destination server certificate to be renewed and the TLSA record to be updated to reference the new certificate. Then, retry sending the email and review the Message Trace Details for the message in the Exchange Admin Center portal.
 
 ### Troubleshooting 5.7.323 tlsa-invalid
 
-This error code is related to a TLSA record misconfiguration and can only be generated after a DNSSEC-authentic TLSA record has been returned, but there are many scenarios during the DANE validation that occurs after the record has been returned that can result in the code being generated. Microsoft is actively working to decompose the scenarios that are covered by this error code, so that each scenario has a specific code. Currently, one or more of these scenarios could cause the generation of the error code:
+This error code is related to a TLSA record misconfiguration and can only be generated after a DNSSEC-authentic TLSA record has been returned. There are many scenarios during the DANE validation that occur after the record has been returned that can result in the code being generated. Microsoft is actively working on the scenarios that are covered by this error code, so that each scenario has a specific code. Currently, one or more of these scenarios could cause the generation of the error code:
 
 1.	The destination mail server's certificate doesn't match with what is expected per the authentic TLSA record.
 2.	Authentic TLSA record is misconfigured.
@@ -148,7 +147,7 @@ This error code is related to a TLSA record misconfiguration and can only be gen
 After receiving the message:
 
 1. Alert the destination email administrator that you received this error code and provide them the error code string.
-2. Allow time for the destination email admin to review their DANE configuration and email server certificate validity, then retry sending the email and review the Message Trace Details for the message in the Exchange Admin Center portal.
+2. Allow time for the destination email admin to review their DANE configuration and email server certificate validity. Then, retry sending the email and review the Message Trace Details for the message in the Exchange Admin Center portal.
 
 ### Troubleshooting 5.7.324 dnssec-invalid
 
@@ -157,11 +156,11 @@ This error code is generated when the destination domain indicated it was DNSSEC
 After receiving the message:
 
 1. Alert the destination email administrator that you received this error code and provide them the error code string.
-2. Allow time for the destination email admin to review their domain’s DNSSEC configuration, then retry sending the email and review the Message Trace Details for the message in the Exchange Admin Center portal.
+2. Allow time for the destination email admin to review their domain’s DNSSEC configuration. Then, retry sending the email and review the Message Trace Details for the message in the Exchange Admin Center portal.
 
 ## Troubleshooting Receiving Emails with SMTP DANE
 
-Currently, there are two methods an admin for a receiving domain can use to validate and troubleshoot their DNSSEC and DANE configuration so they can receive email from Exchange Online using these standards. 
+Currently, there are two methods an admin of a receiving domain can use to validate and troubleshoot their DNSSEC and DANE configuration to receive email from Exchange Online using these standards. 
 
 1. Adopt SMTP TLS-RPT (Transport Layer Security Reporting) introduced in [RFC8460](https://datatracker.ietf.org/doc/html/rfc8460) 
 2. Use the Remote Connectivity Analyzer tool [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/tests/o365)
@@ -179,7 +178,7 @@ When troubleshooting, the below error codes may be generated:
 |NDR Code  |Description |
 |---------|---------|
 |4/5.7.321     |starttls-not-supported: Destination mail server must support TLS to receive mail.          |
-|4/5.7.322     |certificate-expired: Destination mail server's certificate is expired.          |
+|4/5.7.322     |certificate-expired: Destination mail server's certificate has expired.          |
 |4/5.7.323    |tlsa-invalid: The domain failed DANE validation.         |
 |4/5.7.324     |dnssec-invalid: Destination domain returned invalid DNSSEC records.         |
 
@@ -207,14 +206,14 @@ After receiving the message:
 > [!NOTE]
 > These steps are for email administrators troubleshooting receiving email from Exchange Online using SMTP DANE.
 
-A valid X.509 certificate that isn't expired must be presented to the sending email server. X.509 certificates must be renewed after their expiration, commonly annually. After receiving the message:
+A valid X.509 certificate that hasn't expired must be presented to the sending email server. X.509 certificates must be renewed after their expiration, commonly annually. After receiving the message:
 
-1. Check the IP that is associated with the error statement so you can identify the mail server it is associated with. Locate the expired certificate on the email server you identified.
+1. Check the IP that is associated with the error statement, so you can identify the mail server it is associated with. Locate the expired certificate on the email server you identified.
 2. Log in to your certificate provider's website.
 3. Select the expired certificate and follow the instructions to renew and to pay for the renewal.
 4. After your provider has verified the purchase, you may download a new certificate.
 5. Install the renewed certificate into its associated mail server.
-6. Updated the mail server’s associated TLSA record with the new certificate’s data. 
+6. Update the mail server’s associated TLSA record with the new certificate’s data. 
 7. After waiting an appropriate amount of time, retry the test with the Remote Connectivity Analyzer tool.
 
 ### Troubleshooting 5.7.323 tlsa-invalid
@@ -222,7 +221,7 @@ A valid X.509 certificate that isn't expired must be presented to the sending em
 > [!NOTE]
 > These steps are for email administrators troubleshooting receiving email from Exchange Online using SMTP DANE.
 
-This error code is related to a TLSA record misconfiguration and can only be generated after a DNSSEC-authentic TSLA record has been returned, but there are many scenarios during the DANE validation that occurs after the record has been returned that can result in the code being generated. Microsoft is actively working to break out the scenarios that are covered by this error code, so that each scenario has a specific code. Currently, one or more of these scenarios could cause the generation of the error code:
+This error code is related to a TLSA record misconfiguration and can only be generated after a DNSSEC-authentic TSLA record has been returned. But, there are many scenarios during the DANE validation that occur after the record has been returned that can result in the code being generated. Microsoft is actively working on the scenarios that are covered by this error code, so that each scenario has a specific code. Currently, one or more of these scenarios could cause the generation of the error code:
 
 1. Authentic TLSA record is misconfigured.
 2. The certificate isn't yet time valid/configured for a future time window. 
@@ -231,12 +230,12 @@ This error code is related to a TLSA record misconfiguration and can only be gen
 
 After receiving the message:
 
-1. Check the IP that is associated with the error statement so you can identify the mail server it's associated with. 
+1. Check the IP that is associated with the error statement to identify the mail server it's associated with. 
 2. Identify the TLSA record that is associated with the identified mail server. 
-3. Verify the configuration of that TLSA record to ensure it's signaling for the sender to perform your preferred DANE checks and that the correct certificate data has been included in the TLSA record. 
+3. Verify the configuration of the TLSA record to ensure that it signals the sender to perform the preferred DANE checks and that the correct certificate data has been included in the TLSA record. 
     1. If you have to make any updates to the record for discrepancies, then wait a few minutes then rerun the test with the Remote Connectivity Analyzer tool. 
 4. Locate the certificate on the identified mail server.
-5. Check the time window the certificate is valid for. If it's set to start validity at a future date, it needs to be renewed for the current date.
+5. Check the time window for which the certificate is valid. If it's set to start validity at a future date, it needs to be renewed for the current date.
     1. Log in to your certificate provider's website.
     2. Select the expired certificate and follow the instructions to renew and to pay for the renewal.
     3. After your provider has verified the purchase, you may download a new certificate.
@@ -247,11 +246,11 @@ After receiving the message:
 > [!NOTE]
 > These steps are for email administrators troubleshooting receiving email from Exchange Online using SMTP DANE.
 
-This error code is generated when the destination domain indicated it was DNSSEC-authentic but Exchange Online wasn't able to verify it as DNSSEC-authentic. This section will not be comprehensive for troubleshooting DNSSEC issues and focuses on scenarios where domains previously passed DNSSEC authentication but now are not. 
+This error code is generated when the destination domain indicated it is DNSSEC-authentic but Exchange Online isn't able to verify it as DNSSEC-authentic. This section will not be comprehensive for troubleshooting DNSSEC issues and focuses on scenarios where domains previously passed DNSSEC authentication but not now. 
 
 After receiving the message:
 
-1. If you're using a DNS provider (ex. GoDaddy), alert your DNS provider of the error so they can work on the troubleshooting and configuration change. 
+1. If you're using a DNS provider, for example GoDaddy, alert your DNS provider of the error so they can work on the troubleshooting and configuration change. 
 2. If you're managing your own DNSSEC infrastructure, there are many DNSSEC misconfigurations that may generate this error message. Some common problems to check for if your zone was previously passing DNSSEC authentication:
     1. Broken trust chain, when the parent zone holds a set of DS records that point to something that doesn't exist in the child zone. This results in the child zone being marked as bogus by validating resolvers. 
         - Resolve by reviewing the child domains RRSIG key IDs and ensuring that they match with the key IDs in the DS records published in the parent zone. 
@@ -262,12 +261,12 @@ After receiving the message:
 
 ### As an Exchange Online customer, can I opt out of using DNSSEC and/or DANE?
 
-We strongly believe DNSSEC and DANE will significantly increase the security posture of our service and benefit all of our customers. We've worked diligently over the last year to reduce the risk and severity of the potential impact this deployment might have for M365 customers, and we'll be actively monitoring and tracking the deployment to ensure negative impact is minimized as it rolls out. Because of this, tenant-level exceptions or opt-out will not be available.
-If you experience any issues related to the enablement of DNSSEC and/or DANE, the different methods for investigating failures noted in this document will help you identify the source of the error. In most cases the issue will be with the external destination party and you'll need to communicate to these business partners that they need to correctly configure DNSSEC and DANE in order to receive email from Exchange Online using these standards.
+We strongly believe DNSSEC and DANE will significantly increase the security position of our service and benefit all of our customers. We've worked diligently over the last year to reduce the risk and severity of the potential impact this deployment might have for M365 customers. We'll be actively monitoring and tracking the deployment to ensure negative impact is minimized as it rolls out. Because of this, tenant-level exceptions or opt-out will not be available.
+If you experience any issues related to the enablement of DNSSEC and/or DANE, the different methods for investigating failures noted in this document will help you identify the source of the error. In most cases, the issue will be with the external destination party and you'll need to communicate to these business partners that they need to correctly configure DNSSEC and DANE in order to receive email from Exchange Online using these standards.
 
 ### How does DNSSEC relate to DANE?
 
-DNSSEC adds a layer of trust into DNS resolution by leveraging the public key infrastructure to ensure the records returned in response to a DNS query are authentic. DANE ensures that the receiving mail server is the legitimate, expected mail server for the authentic MX record. 
+DNSSEC adds a layer of trust into DNS resolution by leveraging the public key infrastructure to ensure the records returned in response to a DNS query are authentic. DANE ensures that the receiving mail server is the legitimate and expected mail server for the authentic MX record. 
 
 ### What is the difference between MTA-STS and DANE for SMTP?
 
