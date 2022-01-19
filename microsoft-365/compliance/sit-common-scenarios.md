@@ -31,8 +31,8 @@ Contoso Bank needs to classify the credit card numbers that they issue as sensit
 
 1. Create a copy of the credit card SIT. Use the steps to [copy and modify a sensitive information type](create-a-custom-sensitive-information-type.md#copy-and-modify-a-sensitive-information-type) to copy the credit card SIT.
 1. Edit the high confidence pattern. Follow the steps in [edit or delete the sensitive information type pattern](sit-get-started-exact-data-match-create-rule-package.md#edit-or-delete-the-sensitive-information-type-pattern).
-1. Add 'starts with' check and add the list of bin digits (formatted & unformatted). For example to ensure that only credit cards starting with 411111 & 433512 should be considered valid, add the following to the list 4111 11, 4111-11, 411111, 4335 12, 4335-12, 433512 <!-- TODD LINK OUT TO PROCEDURE ON HOW TO DO THIS AND ILLUSTRATE WITH A SCREENSHOT-->
-1. Repeat step 2 & 3 for the low confidence pattern
+1. Add 'starts with' check and add the list of bin digits (formatted & unformatted). For example to ensure that only credit cards starting with 411111 & 433512 should be considered valid, add the following to the list 4111 11, 4111-11, 411111, 4335 12, 4335-12, 433512. 
+1. Repeat step 2 & 3 for the low confidence pattern.
 
 ## Test numbers similar to Social Security numbers
 
