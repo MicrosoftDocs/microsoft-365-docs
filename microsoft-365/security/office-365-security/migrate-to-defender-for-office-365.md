@@ -84,4 +84,4 @@ The process of migrating from a third-party protection service to Defender for O
 
 ## Next step
 
-- Proceed to [Phase 1: Setup](migrate-to-defender-for-office-365-prepare.md).
+- Proceed to [Phase 1: Prepare](migrate-to-defender-for-office-365-prepare.md).

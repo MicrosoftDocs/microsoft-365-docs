@@ -43,12 +43,12 @@ This capability is similar to [advanced hunting in Microsoft Defender for Endpoi
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Office 365
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Microsoft Defender for Identity
 
 To use advanced hunting, [turn on Microsoft 365 Defender](m365d-enable.md).
 
-For more information on advanced hunting in Microsoft Cloud App Security data, see the [video](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa). 
+For more information on advanced hunting in Microsoft Defender for Cloud Apps data, see the [video](https://www.microsoft.com/en-us/videoplayer/embed/RWFISa). 
 
 ## Get started with advanced hunting
 

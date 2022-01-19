@@ -11,7 +11,9 @@ ms.topic: article
 ms.localizationpriority: medium
 description: Learn about the Microsoft 365 compliance center, including what it contains, how to get it, and your next steps.
 ms.collection: M365-security-compliance
-ms.custom: admindeeplinkCOMPLIANCE
+ms.custom: 
+- admindeeplinkCOMPLIANCE
+- intro-overview
 ---
 
 # Microsoft 365 compliance center
@@ -48,7 +50,7 @@ From here, you can:
 
     ![Active alerts card Microsoft 365 compliance center.](../media/m365-compliance-center-active-alerts-card.png)
 
-You can also use the **Add cards** feature to add additional cards, such as one showing your organization's cloud app compliance, and another showing data about users with shared files, with links to [Cloud App Security](/cloud-app-security/) or other tools where you can explore data.
+You can also use the **Add cards** feature to add additional cards, such as one showing your organization's cloud app compliance, and another showing data about users with shared files, with links to [Defender for Cloud Apps](/cloud-app-security/) or other tools where you can explore data.
 
 ![Additional compliance center card details.](../media/m365-compliance-center-additional-cards.png)
 
@@ -86,7 +88,7 @@ First, make sure that you have the appropriate licenses and permissions. Then, s
 
 - **Review your organization's data loss prevention policies** and make required changes as necessary. To learn more about, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
 
-- **Get acquainted with and set up Microsoft Cloud App Security**. See [Quickstart: Get started with Microsoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security).
+- **Get acquainted with and set up Microsoft Defender for Cloud Apps**. See [Quickstart: Get started with Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security).
 
 - **Learn about and create communication compliance policies** to quickly identify and remediate corporate code-of-conduct policy violations. See [Communication compliance in Microsoft 365](communication-compliance.md).
 

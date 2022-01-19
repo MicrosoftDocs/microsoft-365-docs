@@ -3,13 +3,13 @@ title: Access the Admin portal
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 description: How to find and use the Admin portal, including controlling access to it.
 ms.service: m365-md
-ms.author: jaimeo
-author: jaimeo
+ms.author: tiaraquan
+author: tiaraquan
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ---
 
 # Access the admin portal
@@ -32,7 +32,7 @@ Your administrative account will need specific permissions in order to access th
 |Global Administrator     | Admins with this role will have **read and write permissions to all features** in the Microsoft Managed Desktop Admin portal.         |
 |Global Reader     | Admins with this role will have **read-only permissions to all features** in the Microsoft Managed Desktop Admin portal.         |
 |Intune Service Administrator     |  Admins with this role will have **read and write permissions to features not related to security** in the Microsoft Managed Desktop Admin portal.       |
-|Service Support Administrator     | Admins with this role will have **read-only permissions to features not related to security** and **write permissions to manage support requests** in the Microsoft Managed Desktop Admin portal.         |
+|Service Support Administrator     | Admins with this role will have **read-only permissions to features not related to security** and **write permissions to manage support requests including escalation requests** in the Microsoft Managed Desktop Admin portal.         |
 |Security Admin | Admins with this role will have **read-only permissions to all features** and **write permissions for security related features** in Microsoft Managed Desktop in the Admin portal. |
 |Security Reader |Admins with this role will have **read-only permissions to all features** in the Microsoft Managed Desktop Admin portal.|
 
@@ -46,9 +46,10 @@ If you need help with assigning Azure Active Directory roles, see [Azure AD buil
 
 |Built-in role  |Microsoft Managed Desktop permissions  |
 |---------|---------|
-|Microsoft Managed Desktop Service Administrator  | When assigned to a user, this role gives the admin **read and write permissions to features not related to security** in the Microsoft Managed Desktop Admin portal.  |
-|Microsoft Managed Desktop Service Reader | When assigned to a user, this role gives the admin **read-only permissions to features not related to security** in the Microsoft Managed Desktop Admin portal. |
+|Microsoft Managed Desktop Service Administrator  | When assigned to a user, this role gives the admin **read and write permissions to Microsoft Managed Desktop features not related to security** in the Microsoft Managed Desktop Admin portal.  |
+|Microsoft Managed Desktop Service Reader | When assigned to a user, this role gives the admin **read-only permissions to Microsoft Managed Desktop features not related to security** in the Microsoft Managed Desktop Admin portal. |
 |Microsoft Managed Desktop Security Manager |When assigned to a user, this role gives that admin **read and write permissions only for security related features** in the Microsoft Managed Desktop Admin portal.   |
+|Microsoft Managed Desktop Support Partner |When assigned to a user, this role gives the admin **read and write permissions only for creating and managing elevation requests and support partner engaged escalation requests** in the Microsoft Managed Desktop Admin portal.   |
 
 > [!NOTE]
 > Security features include security-related communications, management of security contacts, management of security-related support requests, and access to security related reports. 

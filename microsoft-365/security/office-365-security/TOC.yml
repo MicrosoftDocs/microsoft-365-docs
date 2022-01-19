@@ -83,7 +83,11 @@
      - name: Configure anti-malware policies
        href: configure-anti-malware-policies.md
      - name: Configure anti-spam policies
-       href: configure-your-spam-filter-policies.md
+       items:
+       - name: Configure anti-spam policies  
+         href: configure-your-spam-filter-policies.md
+       - name: Advanced Spam Filter (ASF) settings
+         href: advanced-spam-filtering-asf-options.md
      - name: Configure EOP to deliver spam to Junk Email folders in hybrid
        href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
      - name: Configure junk email settings on Exchange Online mailboxes
@@ -144,6 +148,8 @@
        href: preset-security-policies.md
      - name: Configuration analyzer for protection policies
        href: configuration-analyzer-for-security-policies.md
+     - name: Security recommendations for priority accounts
+       href: security-recommendations-for-priority-accounts.md
      - name: Attack simulation training in Defender for Office 365
        items:
        - name: Get started using Attack simulation training
@@ -156,6 +162,8 @@
          href: attack-simulation-training-simulation-automations.md
        - name: Payload automations in Attack simulation training
          href: attack-simulation-training-payload-automations.md
+       - name: End-user notifications for Attack simulation training
+         href: attack-simulation-traning-end-user-notifications.md
        - name: Insights and reporting in Attack simulation training
          href: attack-simulation-training-insights.md
        - name: Attack simulation training deployment considerations and FAQ
@@ -166,8 +174,6 @@
        href: recommended-settings-for-eop-and-office365.md
      - name: Integrate AIR with a custom solution or third-party solution
        href: air-custom-reporting.md
-     - name: Advanced Spam Filter (ASF) settings
-       href: advanced-spam-filtering-asf-options.md
      - name: Tenant Allow/Block List
        items:
        - name: Manage the Tenant Allow/Block List
@@ -274,8 +280,6 @@
            href: enable-the-report-message-add-in.md
          - name: Report false positives and false negatives in Outlook
            href: report-false-positives-and-false-negatives.md
-         - name: Manually submit messages to Microsoft
-           href: submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
          - name: Use mail flow rules to see what users are reporting to Microsoft
            href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
          - name: Submit malware and non-malware to Microsoft
@@ -374,9 +378,15 @@
        href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
      - name: Create team sites in a political campaign dev/test environment
        href: create-team-sites-in-a-political-campaign-dev-test-environment.md
-   - name: Microsoft 365 Defender
-     href: ../defender/index.yml
-   - name: Microsoft Defender for Endpoint
-     href: ../defender-endpoint/index.yml
-   - name: Microsoft Defender for Identity
-     href: /defender-for-identity/
+   - name: Microsoft 365 Defender docs
+     items: 
+       - name: Microsoft 365 Defender
+         href: ../defender/index.yml 
+       - name: Defender for Endpoint
+         href: ../defender-endpoint/index.yml
+       - name: Defender for Identity
+         href: /defender-for-identity
+       - name: Defender for Cloud Apps
+         href: /cloud-app-security
+       - name: Defender for Business
+         href: ../defender-business/index.yml

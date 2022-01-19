@@ -176,7 +176,7 @@ When you create auto-apply retention label policies for sensitive information, y
 
 ![Policy templates with sensitive information types.](../media/sensitive-info-configuration.png)
 
-To learn more about the sensitivity information types, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md). Currently, [exact data matches](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) and [document fingerprinting](document-fingerprinting.md) are not supported for this scenario.
+To learn more about the sensitivity information types, see [Learn about sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types). Currently, [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) and [document fingerprinting](document-fingerprinting.md) are not supported for this scenario.
 
 After you select a policy template, you can add or remove any types of sensitive information, and you can change the confidence level and instance count. In the previous example screenshot, these options have been changed so that a retention label will be auto-applied only when:
   
@@ -185,6 +185,9 @@ After you select a policy template, you can add or remove any types of sensitive
 - The content contains between 1 and 9 instances of any of these three sensitive info types. The default for the **to** value is **Any**.
 
 For more information about these options, see the following guidance from the DLP documentation [Tuning rules to make them easier or harder to match](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
+
+> [!IMPORTANT]
+> Sensitive information types have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
 
 To consider when using sensitive information types to auto-apply retention labels:
 
@@ -292,12 +295,12 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 #### Auto-apply labels to content by using trainable classifiers
 
-When you choose the option for a trainable classifier, you can select one of the built-in classifiers, or a custom classifier. The built-in classifiers include **Resumes**, **SourceCode**, **Targeted Harassment**, **Profanity**, and **Threat**:
+When you choose the option for a trainable classifier, you can select one or more of the pre-trained or custom trainable classifiers:
 
 ![Choose trainable classifier.](../media/retention-label-classifers.png)
 
 > [!CAUTION]
-> We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use this built-in classifier and if you are currently using it, you should move your business processes off it. We recommend using the **Targeted Harassment**, **Profanity**, and **Threat** built-in classifiers instead.
+> We are deprecating the **Offensive Language** pre-trained classifier because it has been producing a high number of false positives. Don't use this classifier and if you are currently using it, we recommend you move your business processes off it and instead use the **Targeted Harassment**, **Profanity**, and **Threat** pre-trained classifiers.
 
 To automatically apply a label by using this option, SharePoint sites and mailboxes must have at least 10 MB of data.
 
@@ -315,7 +318,7 @@ To consider when using trainable classifiers to auto-apply retention labels:
 > [!NOTE]
 > This option is gradually rolling out in preview and is subject to change.
 
-You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications. You use this option in conjunction with retention policies for the communication services themselves, Exchange and Teams.
+You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications by users. You use this option in conjunction with retention policies for the communication services themselves, Exchange and Teams.
 
 > [!IMPORTANT]
 > When you select a label to use for auto-applying retention labels for cloud attachments, ensure that the label retention setting **Start the retention period based on** is **When items were labeled**.
@@ -326,7 +329,7 @@ When you choose the option to apply a retention label to cloud attachments, for 
 
 If the file is modified and shared again, a new copy of the file as a new version is saved in the Preservation Hold library. For more information, including why you should use the **When items were labeled** label setting, see [How retention works with cloud attachments](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
 
-The cloud attachments supported for this option are files such as documents, videos, and images that are stored in SharePoint and OneDrive. For Teams, cloud attachments shared in chat messages, and standard and private channels are supported. Cloud attachments shared over meeting invites and apps other than Teams or Outlook aren't supported.
+The cloud attachments supported for this option are files such as documents, videos, and images that are stored in SharePoint and OneDrive. For Teams, cloud attachments shared in chat messages, and standard and private channels are supported. Cloud attachments shared over meeting invites and apps other than Teams or Outlook aren't supported. The cloud attachments must be shared by users; cloud attachments sent via bots aren't supported.
 
 Although not required for this option, we recommend that you ensure versioning is enabled for your SharePoint sites and OneDrive accounts so that the version shared can be accurately captured. If versioning isn't enabled, the last available version will be retained. Documents in draft or that have never been published aren't supported.
 
@@ -361,7 +364,7 @@ To consider when auto-applying retention labels to cloud attachments:
 
 When you auto-apply retention labels based on sensitive information, keywords or searchable properties, or trainable classifiers, it can take up to seven days for the retention labels to be applied:
   
-![Diagram of when auto-apply labels take effect.](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
+![Diagram of when auto-apply labels take effect.](../media/retention-labels-autoapply-timings.png)
 
 If the expected labels don't appear after seven days, check the **Status** of the auto-apply policy by selecting it from the **Label policies** page in the compliance center. If you see the status of **Off (Error)** and in the details for the locations see a message that it's taking longer than expected to deploy the policy (for SharePoint) or to try redeploying the policy (for OneDrive), try running the [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell command to retry the policy distribution:
 
@@ -380,7 +383,7 @@ For auto-apply retention label policies that are configured for sensitive inform
 For auto-apply retention label policies that are configured for cloud attachments: Because this policy applies to newly shared files rather than existing files, a change in configuration to the selected label and policy will be automatically applied to newly shared content only.
 
 Some settings can't be changed after the label or policy is created and saved, which include:
-- The retention label and policy name, and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
+- Names for retention labels and their policies, the scope type (adaptive or static), and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
 - The option to mark items as a record.
 
 ### Deleting retention labels

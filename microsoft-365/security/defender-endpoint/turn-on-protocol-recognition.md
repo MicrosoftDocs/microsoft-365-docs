@@ -24,8 +24,8 @@ ms.collection: m365-security-compliance
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 This policy setting allows you to configure protocol recognition for network protection against exploits of known vulnerabilities. If you enable or do not configure this setting, protocol recognition will be enabled. If you disable this setting, protocol recognition will be disabled.
 

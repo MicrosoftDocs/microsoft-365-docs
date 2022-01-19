@@ -25,6 +25,8 @@ ms.technology: mde
 **Applies to:**
 
 - [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 This topic describes how to deploy Microsoft Defender for Endpoint on macOS through Intune. A successful deployment requires the completion of all of the following steps:
 
@@ -99,12 +101,13 @@ This profile contains a license information for Microsoft Defender for Endpoint,
     > [!div class="mx-imgBorder"]
     > ![Custom Configuration Profile creation.](images/mdatp-6-systemconfigurationprofiles-1.png)
 
-1. Choose a name for the profile, e.g., "Defender or Endpoint onboarding for macOS". Click **Next**.
+1. Choose a name for the profile, e.g., "Defender for Cloud or Endpoint onboarding for macOS". Click **Next**.
 
     > [!div class="mx-imgBorder"]
     > ![Custom Configuration Profile - name.](images/mdatp-6-systemconfigurationprofiles-2.png)
 
 1. Choose a name for the configuration profile name, e.g., "Defender for Endpoint onboarding for macOS".
+1. Choose a [deployment channel](/mem/intune/fundamentals/whats-new#new-deployment-channel-setting-for-custom-device-configuration-profiles-on-macos-devices).
 1. Select intune/WindowsDefenderATPOnboarding.xml that you extracted from the onboarding package above as configuration profile file.
 
     > [!div class="mx-imgBorder"]
