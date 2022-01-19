@@ -3,7 +3,7 @@ title: "Microsoft 365 network connectivity test tool"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/06/2021
+ms.date: 01/18/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -254,7 +254,7 @@ Here are answers to some of our frequently asked questions.
 
 The advanced test client requires .NET Core 3.1 Desktop Runtime. If you run the advanced test client without that installed you will be directed to [the .NET Core 3.1 installer page](https://dotnet.microsoft.com/download/dotnet-core/3.1). Be sure to install the Desktop Runtime and not the SDK, or the ASP.NET Core Runtime, which are higher up on the page. Administrator permissions on the machine are required to install .NET Core.
 
-The advanced test client uses SignalR to communicate to the web page. For this you must ensure that TCP port 443 connectivity to connectivity.service.signalr.net is open. This URL is not published in the https://aka.ms/o365ip because that connectivity is not required for an Microsoft 365 client application user.
+The advanced test client uses SignalR to communicate to the web page. For this you must ensure that TCP port 443 connectivity to **connectivity.service.signalr.net** is open. This URL is not published in the <https://aka.ms/o365ip> because that connectivity is not required for an Microsoft 365 client application user.
 
 ### What is Microsoft 365 service front door?
 
