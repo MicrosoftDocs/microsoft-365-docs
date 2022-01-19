@@ -87,9 +87,38 @@
         - name: Create documents using content assembly 
           href: content-assembly.md
 
+     
+    - name: Taxonomy
+      items:
+        - name: Import using SKOS
+          href: import-term-set-skos.md
+        - name: SKOS formatting reference
+          href: skos-format-reference.md
+        - name: Push content type to hub
+          href: push-content-type-to-hub.md
+        - name: Term store reports
+          href: term-store-analytics.md
 
 
+    - name: Setup and administration
+      items:
 
+        - name: Licensing for SharePoint Syntex
+          href: syntex-licensing.md
+        - name: Set up SharePoint Syntex
+          href: set-up-content-understanding.md
+        - name: Manage SharePoint Syntex with PowerShell
+          items:
+            - name: Overview
+              href: powershell-syntex-intro.md
+            - name: Export and import models
+              href: powershell-syntex-import-export.md
+            - name: Publish models
+              href: powershell-syntex-publishing.md
+            - name: Request processing by a model
+              href: powershell-syntex-processing.md
+            - name: Work with model explanations
+              href: powershell-syntex-explanations.md
 
 
     - name: Adoption
@@ -112,41 +141,6 @@
             - name: Step 3. Use Power Automate
               href: solution-manage-contracts-step3.md
 
-
-
-
-
-    - name: Setup and administration
-      items:
-
-        - name: Licensing for SharePoint Syntex
-          href: syntex-licensing.md
-        - name: Set up SharePoint Syntex
-          href: set-up-content-understanding.md
-        - name: Manage SharePoint Syntex with PowerShell
-          items:
-            - name: Overview
-              href: powershell-syntex-intro.md
-            - name: Export and import models
-              href: powershell-syntex-import-export.md
-            - name: Publish models
-              href: powershell-syntex-publishing.md
-            - name: Request processing by a model
-              href: powershell-syntex-processing.md
-            - name: Work with model explanations
-              href: powershell-syntex-explanations.md
-        
-    - name: Content services
-      items:
-
-        - name: Import using SKOS
-          href: import-term-set-skos.md
-        - name: SKOS formatting reference
-          href: skos-format-reference.md
-        - name: Push content type to hub
-          href: push-content-type-to-hub.md
-        - name: Term store reports
-          href: term-store-analytics.md
      
     - name: Extensibility
       href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
