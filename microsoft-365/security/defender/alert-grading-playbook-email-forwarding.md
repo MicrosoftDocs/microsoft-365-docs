@@ -62,7 +62,7 @@ Use cases represent user stories for intended users. For example:
 
 ### Success criteria
 
-- We would have created correct alerts associated with auto-forwarded emails identified as suspicious or benign activities. For more information, see [how to stop email auto-forward](https://docs.microsoft.com/microsoft-365/business-video/stop-email-auto-forward).
+- We would have created correct alerts associated with auto-forwarded emails identified as suspicious or benign activities. For more information, see [how to stop email auto-forward](/microsoft-365/business-video/stop-email-auto-forward).
 - The necessary action is taken if emails are forwarded to a malicious email address
 
 ## Microsoft Defender for Office 365
