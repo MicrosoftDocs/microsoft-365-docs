@@ -19,7 +19,7 @@ ms.topic: article
 ms.collection: M365-security-compliance
 ---
 
-# Attack surface reduction rules deployment phase 4: operationalize
+# ASR rules deployment phase 4: operationalize
 
 After you've fully deployed ASR rules, it's vital that you have processes in place to monitor and respond to ASR-related activities.
 
@@ -71,10 +71,10 @@ For more information about hunting options, see: [Demystifying attack surface re
 
 ## Topics in this deployment collection
 
-[ASR rules deployment guide - overview](attack-surface-reduction-rules-deployment.md)
+[ASR rules deployment overview](attack-surface-reduction-rules-deployment.md)
 
-[ASR rules deployment phase 1 - plan](attack-surface-reduction-rules-deployment-phase-1.md)
+[Phase 1: Plan](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[ASR rules deployment phase 2 - test](attack-surface-reduction-rules-deployment-phase-2.md)
+[Phase 2: Test](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[ASR rules deployment phase 3 - implement](attack-surface-reduction-rules-deployment-phase-3.md)
+[Phase 4: Operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
