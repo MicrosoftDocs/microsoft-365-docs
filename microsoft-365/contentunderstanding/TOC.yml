@@ -99,6 +99,8 @@
               href: leverage-term-store-taxonomy.md
             - name: SharePoint Syntex accessibility mode
               href: accessibility-mode.md
+
+<!---
         - name: Form processing models
           items:
             - name: Document understanding overview
@@ -107,7 +109,7 @@
               href: form-processing-overview.md
             - name: Difference between document understanding and form processing models 
               href: difference-between-document-understanding-and-form-processing-model.md  
-
+--->
 
     - name: Metadata search
       items: 
