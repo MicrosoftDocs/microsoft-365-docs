@@ -60,7 +60,7 @@ The updated Trust Center logic is described in the following diagram:
 
 ## What is a trusted document?
 
-Trusted documents are Office documents that open without any security prompts for macros, ActiveX controls, and other types of active content in the document. Protected View or Application Guard is not used to open the document. When users open a Trusted Document, and all active content is enabled. Even if the document contains new active content or updates to existing active content, users won't receive security prompts the next time they open the document.
+Trusted documents are Office documents that open without any security prompts for macros, ActiveX controls, and other types of active content in the document. Protected View or Application Guard is not used to open the document. When users open a Trusted Document, and all active content is enabled. Even if the document contains new active content or updates to existing active content, users won't receive security prompts the next time they open the document.
 
 Because of this behavior, users should clearly trust documents only if they trust the document source.
 
@@ -133,7 +133,8 @@ The tables in the following sections describe the settings that control active c
 |Jscript & VBScript|Outlook|Allow scripts in one-off Outlook forms|**Disabled**|No|
 |Jscript & VBScript|Outlook|Do not allow Outlook object model scripts to run for public folders|**Enabled**|No|
 |Jscript & VBScript|Outlook|Do not allow Outlook object model scripts to run for shared folders|**Enabled**|No|
-|Macros|Access <p> Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|VBA Macro Notification Settings|**Disable all except digitally signed macros** <p> and <p> **Require macros to be signed by a trusted publisher**|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|Macros|Excel|Macro Notifications|**Disable all except digitally signed macros**|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|Macros|Access <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|VBA Macro Notification Settings|**Disable all except digitally signed macros** <p> and <p> **Require macros to be signed by a trusted publisher**|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
 |Macros|Access <p> Excel <p> PowerPoint <p> Visio <p> Word|Block macros from running in Office files from the Internet|**Enabled**|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
 |Macros|Excel|Scan encrypted macros in Excel Open XML workbooks|**Scan encrypted macros (default)**|No|
 |Macros|Office|Allow VBA to load typelib references by path from untrusted intranet locations|**Disabled**|No|
