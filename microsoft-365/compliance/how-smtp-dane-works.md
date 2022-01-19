@@ -31,7 +31,7 @@ After the authentic TLSA record has been received by the sending mail server, th
 
 ### TLSA Resource Record
 
-The TLS Authentication (TLSA) record is used to associate a server’s x.509 certificate or public key value with the domain name that contains the record. TLSA records can only be trusted if DNSSEC is enabled on your domain. If you're using a DNS provider to host your domain, this may be a setting offered when configuring a domain with them. To learn more about DNSSEC zone signing, visit this link: [Overview of DNSSEC | Microsoft Docs](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj200221(v=ws.11)). 
+The TLS Authentication (TLSA) record is used to associate a server’s x.509 certificate or public key value with the domain name that contains the record. TLSA records can only be trusted if DNSSEC is enabled on your domain. If you're using a DNS provider to host your domain, this may be a setting offered when configuring a domain with them. To learn more about DNSSEC zone signing, visit this link: [Overview of DNSSEC | Microsoft Docs](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj200221(v=ws.11)). 
   
 Example TLSA record:
   
