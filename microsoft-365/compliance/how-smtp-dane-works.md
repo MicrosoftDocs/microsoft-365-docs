@@ -283,9 +283,9 @@ DNSSEC isn't fully resistant to Man-in-the-Middle attacks and downgrade (from TL
 
 ## Additional Links 
 
-[https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-and-fix-issues?view=o365-worldwide ](/microsoft-365/admin/get-help-with-domains/find-and-fix-issues)
+[Find and fix issues after adding your domain or DNS records](/microsoft-365/admin/get-help-with-domains/find-and-fix-issues)
 
-[https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj200221(v=ws.11) ](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012)
+[Overview of DNSSEC | Microsoft Docs ](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj200221(v=ws.11))
 
 [Use DMARC to validate email, setup steps - Office 365 | Microsoft Docs](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)
 
