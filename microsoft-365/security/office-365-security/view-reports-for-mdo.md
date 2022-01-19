@@ -136,21 +136,28 @@ The available views on the **URL protection** report page are described in the f
 
 The **View data by URL click protection action** view shows the number of URL clicks by users in the organization and the results of the click:
 
-- **Allowed**: The user was allowed to navigate to the URL.
-- **Blocked**: The user was blocked from navigating to the URL.
-- **Blocked and clicked through**: The user has chosen to continue navigating to the URL.
-- **Clicked through during scan**: The user has clicked on the link before the scan was complete.
+- **Allowed**: Clicks allowed.
+- **Allowed by tenant admin**: Clicks allowed in Safe Links policies.
+- **Blocked**: Click blocked.
+- **Blocked by tenant admin**: The Clicks blocked in Safe Links policies.
+- **Blocked and clicked through**: Blocked clicks where users click through to the blocked URL.
+- **Blocked by tenant admin and clicked through**: Admin has blocked the link, but the user clicked through.
+- **Clicked through during scan**: Clicks where users click through the pending scan page to the URL.
+- **Pending scan**: Clicks on URLs that are pending a scan verdict.
 
 A click indicates that the user has clicked through the block page to the malicious website (admins can disable click through in Safe Links policies).
 
 If you click **Filters**, you can modify the report and the details table by selecting one or more of the following values in the flyout that appears:
 
 - **Date (UTC)**: **Start date** and **End date**
-- **Detection**:
+- **Action**:
   - **Allowed**
   - **Blocked**
+  - **Allowed by tenant admin**
   - **Blocked and clicked through**
+  - **Blocked by tenant admin and clicked through**
   - **Clicked through during scan**
+  - **Pending scan**
 - **Domains**: The URL domains listed in the report results.
 - **Recipients**
 
@@ -173,13 +180,8 @@ On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-cre
 The **View data by URL click by application** view shows the number of URL clicks by apps that support Safe Links:
 
 - **Email client**
-- **PowerPoint**
-- **Word**
-- **Excel**
-- **OneNote**
-- **Visio**
+- **Office document**
 - **Teams**
-- **Others**
 
 If you click **Filters**, you can modify the report and the details table by selecting one or more of the following values in the flyout that appears:
 
