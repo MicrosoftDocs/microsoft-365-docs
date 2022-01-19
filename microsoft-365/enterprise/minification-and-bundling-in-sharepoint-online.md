@@ -3,7 +3,7 @@ title: "Minification and bundling in SharePoint Online"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 1/103/2022
+ms.date: 1/18/2022
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration

@@ -3,7 +3,7 @@ title: "Microsoft 365 network connectivity test tool"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 01/18/2022
+ms.date: 1/18/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
