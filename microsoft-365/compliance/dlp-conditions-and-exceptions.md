@@ -44,7 +44,7 @@ The tables in the following sections describe the conditions and exceptions that
 ### Senders
 
 If you use the sender address as a condition or exception the actual field where the value is looked for varies depending on the type of rule you use. For DLP based rules, the Envelope address is used as the sender address. For Exchange transport rules the Header address is used as the sender address.
-<!-- REMOVE COMMENTS ON 1/20/2022
+
 > [!NOTE]
 > Starting January 20, 2022, the default sender address location will be moved to the Header address along with the availability of the -SenderAddressLocation parameter to configure desired behavior at a DLP rule level.
 
@@ -64,7 +64,6 @@ To configure the sender address location at a DLP rule level, the parameter is _
 
 - **Header or envelope** (`HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
 <br>
--->
 
 |condition or exception in DLP|condition/exception parameters in Microsoft 365 PowerShell|property type|description|
 |---|---|---|---|
