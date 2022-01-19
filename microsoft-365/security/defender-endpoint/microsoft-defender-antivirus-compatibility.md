@@ -62,7 +62,7 @@ This section describes what happens with Microsoft Defender Antivirus and non-Mi
 (<a id="fn1">1</a>) On Windows Server, if you are running a non-Microsoft antivirus product, you can disable Microsoft Defender Antivirus by using Group Policy to turn off Microsoft Defender Antivirus, or by using the [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) registry key. To use the registry key, navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`, and set or create a DWORD entry called `DisableAntiSpyware`. Set its value to `1` (which sets the registry key's value to *true*), and select **Hexadecimal** for its base.
 
 > [!TIP]
-> On Windows Server 2016, you might see *Windows Defendbr/r Antivirus* instead of *Microsoft Defender Antivirus*.
+> On Windows Server 2016, you might see *Windows Defender Antivirus* instead of *Microsoft Defender Antivirus*.
 
 ## Microsoft Defender Antivirus and non-Microsoft antivirus/antimalware solutions
 
