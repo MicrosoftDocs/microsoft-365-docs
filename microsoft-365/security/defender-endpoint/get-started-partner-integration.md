@@ -25,13 +25,12 @@ ms.topic: conceptual
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 To become a Defender for Endpoint solution partner, you'll need to follow and complete the following steps.
 
-## Step 1: Subscribe to a Microsoft Defender for Endpoint Developer license
+## Step 1: Subscribe to a Microsoft Defender for Endpoint license
 
-Subscribe to the [Microsoft Defender for Endpoint Developer license](https://winatpregistration-prd.trafficmanager.net/Developer/UserAgreement?Length=9). Subscribing allows you to use a Microsoft Defender for Endpoint tenant with up to 10 devices to developing solutions that integrate with Microsoft Defender for Endpoint.
+Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink). Subscribing allows you to use a Microsoft Defender for Endpoint tenant with up to 3 devices to developing solutions that integrate with Microsoft Defender for Endpoint.
 
 ## Step 2: Fulfill the solution validation and certification requirements
 
@@ -39,7 +38,10 @@ The best way for technology partners to certify that their integration works is 
 
 Once the Microsoft Defender for Endpoint team has reviewed and approves the integration, we will direct you to be included as a partner at the Microsoft Intelligent Security Association.
 
-## Step 3: Get listed in the Microsoft Defender for Endpoint partner application portal
+## Step 3: Become a MISA member 
+Managed security service providers (MSSP) and independent software vendors (ISV) can be nominated to MISA [here](https://www.microsoft.com/en-us/security/business/intelligent-security-association) 
+
+## Step 4: Get listed in the Microsoft Defender for Endpoint partner application portal
 
 Microsoft Defender for Endpoint supports third-party applications discovery and integration using the in-product [partner page](partner-applications.md) that is embedded within the Microsoft Defender for Endpoint management portal.
 
