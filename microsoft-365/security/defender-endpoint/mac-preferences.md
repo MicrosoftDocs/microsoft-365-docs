@@ -61,7 +61,7 @@ The *antivirusEngine* section of the configuration profile is used to manage the
 |**Comments**|See the following sections for a description of the dictionary contents.|
 |||
 
-#### Enforcement Level for antivirus engine
+#### Enforcement level for antivirus engine
 
 Specifies the enforcement preference of antivirus engine. There are three values for setting enforcement level:
 
