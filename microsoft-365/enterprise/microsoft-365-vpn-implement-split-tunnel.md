@@ -1,5 +1,5 @@
 ---
-title: "Implementing VPN split tunneling for Office 365"
+title: "Implementing VPN split tunneling for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -16,20 +16,20 @@ ms.collection:
 - remotework
 f1.keywords:
 - NOCSH
-description: "How to implement VPN split tunneling for Office 365"
+description: "How to implement VPN split tunneling for Microsoft 365"
 ---
 
-# Implementing VPN split tunneling for Office 365
+# Implementing VPN split tunneling for Microsoft 365
 
 >[!NOTE]
->This topic is part of a set of topics that address Office 365 optimization for remote users.
+>This topic is part of a set of topics that address Microsoft 365 optimization for remote users.
 
->- For an overview of using VPN split tunneling to optimize Office 365 connectivity for remote users, see [Overview: VPN split tunneling for Office 365](microsoft-365-vpn-split-tunnel.md).
->- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](microsoft-365-networking-china.md).
+>- For an overview of using VPN split tunneling to optimize Microsoft 365 connectivity for remote users, see [Overview: VPN split tunneling for Microsoft 365](microsoft-365-vpn-split-tunnel.md).
+>- For information about optimizing Microsoft 365 worldwide tenant performance for users in China, see [Microsoft 365 performance optimization for China users](microsoft-365-networking-china.md).
 
 For many years, enterprises have been using VPNs to support remote experiences for their users. Whilst core workloads remained on-premises, a VPN from the remote client routed through a datacenter on the corporate network was the primary method for remote users to access corporate resources. To safeguard these connections, enterprises build layers of network security solutions along the VPN paths. This security was built to protect internal infrastructure and to safeguard mobile browsing of external web sites by rerouting traffic into the VPN and then out through the on-premises Internet perimeter. VPNs, network perimeters, and associated security infrastructure were often purpose-built and scaled for a defined volume of traffic, typically with most connectivity being initiated from within the corporate network, and most of it staying within the internal network boundaries.
 
-For quite some time, VPN models where all connections from the remote user device are routed back into the on-premises network (known as _forced tunneling_) were largely sustainable as long as the concurrent scale of remote users was modest and the traffic volumes traversing VPN were low.  Some customers continued to use VPN force tunneling as the status quo even after their applications moved from inside the corporate perimeter to public SaaS clouds, Office 365 being a prime example.
+For quite some time, VPN models where all connections from the remote user device are routed back into the on-premises network (known as _forced tunneling_) were largely sustainable as long as the concurrent scale of remote users was modest and the traffic volumes traversing VPN were low.  Some customers continued to use VPN force tunneling as the status quo even after their applications moved from inside the corporate perimeter to public SaaS clouds, Microsoft 365 being a prime example.
 
 The use of forced tunneled VPNs for connecting to distributed and performance-sensitive cloud applications is suboptimal, but the negative effect of that may have been accepted by some enterprises so as to maintain the status quo from a security perspective. An example diagram of this scenario can be seen below:
 
@@ -37,9 +37,9 @@ The use of forced tunneled VPNs for connecting to distributed and performance-se
 
 This problem has been growing for many years, with many customers reporting a significant shift of network traffic patterns. Traffic that used to stay on premises now connects to external cloud endpoints. Numerous Microsoft customers report that previously, around 80% of their network traffic was to some internal source (represented by the dotted line in the above diagram). In 2020 that number is now around 20% or lower as they have shifted major workloads to the cloud, these trends are not uncommon with other enterprises. Over time, as the cloud journey progresses, the above model becomes increasingly cumbersome and unsustainable, preventing an organization from being agile as they move into a cloud first world.
 
-The worldwide COVID-19 crisis has escalated this problem to require immediate remediation. The need to ensure employee safety has generated unprecedented demands on enterprise IT to support work-from-home productivity at a massive scale. Microsoft Office 365 is well positioned to help customers fulfill that demand, but high concurrency of users working from home generates a large volume of Office 365 traffic which, if routed through forced tunnel VPN and on-premises network perimeters, causes rapid saturation and runs VPN infrastructure out of capacity. In this new reality, using VPN to access Office 365 is no longer just a performance impediment, but a hard wall that not only impacts Office 365 but critical business operations that still have to rely on the VPN to operate.
+The worldwide COVID-19 crisis has escalated this problem to require immediate remediation. The need to ensure employee safety has generated unprecedented demands on enterprise IT to support work-from-home productivity at a massive scale. Microsoft Microsoft 365 is well positioned to help customers fulfill that demand, but high concurrency of users working from home generates a large volume of Microsoft 365 traffic which, if routed through forced tunnel VPN and on-premises network perimeters, causes rapid saturation and runs VPN infrastructure out of capacity. In this new reality, using VPN to access Microsoft 365 is no longer just a performance impediment, but a hard wall that not only impacts Microsoft 365 but critical business operations that still have to rely on the VPN to operate.
 
-Microsoft has been working closely with customers and the wider industry for many years to provide effective, modern solutions to these problems from within our own services, and to align with industry best practice. [Connectivity principles](./microsoft-365-network-connectivity-principles.md) for the Office 365 service have been designed to work efficiently for remote users whilst still allowing an organization to maintain security and control over their connectivity. These solutions can also be implemented quickly with limited work yet achieve a significant positive impact on the problems outlined above.
+Microsoft has been working closely with customers and the wider industry for many years to provide effective, modern solutions to these problems from within our own services, and to align with industry best practice. [Connectivity principles](./microsoft-365-network-connectivity-principles.md) for the Microsoft 365 service have been designed to work efficiently for remote users whilst still allowing an organization to maintain security and control over their connectivity. These solutions can also be implemented quickly with limited work yet achieve a significant positive impact on the problems outlined above.
 
 Microsoft's recommended strategy for optimizing remote worker's connectivity is focused on rapidly alleviating the problems with the traditional approach and also providing high performance with a few simple steps. These steps adjust the legacy VPN approach for a few defined endpoints that bypass bottlenecked VPN servers. An equivalent or even superior security model can be applied at different layers to remove the need to secure all traffic at the egress of the corporate network. In most cases this can be effectively achieved within hours and is then scalable to other workloads as requirements demand and time allows.
 
@@ -51,25 +51,25 @@ In the list below you'll see the most common VPN scenarios seen in enterprise en
 | --- | --- |
 | [1. VPN Forced Tunnel](#1-vpn-forced-tunnel) | 100% of traffic goes into VPN tunnel, including on-premise, Internet, and all O365/M365 |
 | [2. VPN Forced Tunnel with few exceptions](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) | VPN tunnel is used by default (default route points to VPN), with few, most important exempt scenarios that are allowed to go direct |
-| [3. VPN Forced Tunnel with broad exceptions](#3-vpn-forced-tunnel-with-broad-exceptions) | VPN tunnel is used by default (default route points to VPN), with broad exceptions that are allowed to go direct (such as all Office 365, All Salesforce, All Zoom) |
+| [3. VPN Forced Tunnel with broad exceptions](#3-vpn-forced-tunnel-with-broad-exceptions) | VPN tunnel is used by default (default route points to VPN), with broad exceptions that are allowed to go direct (such as all Microsoft 365, All Salesforce, All Zoom) |
 | [4. VPN Selective Tunnel](#4-vpn-selective-tunnel) | VPN tunnel is used only for corpnet-based services. Default route (Internet and all Internet-based services) goes direct. |
 | [5. No VPN](#5-no-vpn) | A variation of #2, where instead of legacy VPN, all corpnet services are published through modern security approaches (like Zscaler ZPA, Azure Active Directory (Azure AD) Proxy/MCAS, etc.) |
 
 ### 1. VPN Forced Tunnel
 
-This is the most common starting scenario for most enterprise customers. A forced VPN is used, which means 100% of traffic is directed into the corporate network regardless of the fact the endpoint resides within the corporate network or not. Any external (Internet) bound traffic such as Office 365 or Internet browsing is then hair-pinned back out of the on-premises security equipment such as proxies. In the current climate with nearly 100% of users working remotely, this model therefore puts high load on the VPN infrastructure and is likely to significantly hinder performance of all corporate traffic and thus the enterprise to operate efficiently at a time of crisis.
+This is the most common starting scenario for most enterprise customers. A forced VPN is used, which means 100% of traffic is directed into the corporate network regardless of the fact the endpoint resides within the corporate network or not. Any external (Internet) bound traffic such as Microsoft 365 or Internet browsing is then hair-pinned back out of the on-premises security equipment such as proxies. In the current climate with nearly 100% of users working remotely, this model therefore puts high load on the VPN infrastructure and is likely to significantly hinder performance of all corporate traffic and thus the enterprise to operate efficiently at a time of crisis.
 
 ![VPN Forced Tunnel model 1.](../media/vpn-split-tunneling/vpn-model-1.png)
 
 ### 2. VPN Forced Tunnel with a small number of trusted exceptions
 
-This model is significantly more efficient for an enterprise to operate under as it allows a few controlled and defined endpoints that are very high load and latency sensitive to bypass the VPN tunnel and go direct to the Office 365 service in this example. This significantly improves the performance for the offloaded services, and also decreases the load on the VPN infrastructure, thus allowing elements that still require it to operate with lower contention for resources. It is this model that this article concentrates on assisting with the transition to as it allows for simple, defined actions to be taken quickly with numerous positive outcomes.
+This model is significantly more efficient for an enterprise to operate under as it allows a few controlled and defined endpoints that are very high load and latency sensitive to bypass the VPN tunnel and go direct to the Microsoft 365 service in this example. This significantly improves the performance for the offloaded services, and also decreases the load on the VPN infrastructure, thus allowing elements that still require it to operate with lower contention for resources. It is this model that this article concentrates on assisting with the transition to as it allows for simple, defined actions to be taken quickly with numerous positive outcomes.
 
 ![Split Tunnel VPN model 2.](../media/vpn-split-tunneling/vpn-model-2.png)
 
 ### 3. VPN Forced Tunnel with broad exceptions
 
-The third model broadens the scope of model two as rather than just sending a small group of defined endpoints direct, it instead sends all traffic directly to trusted services such Office 365 and SalesForce. This further reduces the load on the corporate VPN infrastructure and improves the performance of the services defined. As this model is likely to take more time to assess the feasibility of and implement, it is likely a step that can be taken iteratively at a later date once model two is successfully in place.
+The third model broadens the scope of model two as rather than just sending a small group of defined endpoints direct, it instead sends all traffic directly to trusted services such Microsoft 365 and SalesForce. This further reduces the load on the corporate VPN infrastructure and improves the performance of the services defined. As this model is likely to take more time to assess the feasibility of and implement, it is likely a step that can be taken iteratively at a later date once model two is successfully in place.
 
 ![Split Tunnel VPN model 3.](../media/vpn-split-tunneling/vpn-model-3.png)
 
@@ -95,7 +95,7 @@ The diagram below illustrates how the recommended VPN split tunnel solution work
 
 ### 1. Identify the endpoints to optimize
 
-In the [Office 365 URLs and IP address ranges](urls-and-ip-address-ranges.md) topic, Microsoft clearly identifies the key endpoints you need to optimize and categorizes them as **Optimize**. There are currently just four URLS and 20 IP subnets that need to be optimized. This small group of endpoints accounts for around 70% - 80% of the volume of traffic to the Office 365 service including the latency sensitive endpoints such as those for Teams media. Essentially this is the traffic that we need to take special care of and is also the traffic that will put incredible pressure on traditional network paths and VPN infrastructure.
+In the [Microsoft 365 URLs and IP address ranges](urls-and-ip-address-ranges.md) topic, Microsoft clearly identifies the key endpoints you need to optimize and categorizes them as **Optimize**. There are currently just four URLS and 20 IP subnets that need to be optimized. This small group of endpoints accounts for around 70% - 80% of the volume of traffic to the Microsoft 365 service including the latency sensitive endpoints such as those for Teams media. Essentially this is the traffic that we need to take special care of and is also the traffic that will put incredible pressure on traditional network paths and VPN infrastructure.
 
 URLs in this category have the following characteristics:
 
@@ -104,9 +104,9 @@ URLs in this category have the following characteristics:
 - Low rate of change and are expected to remain small in number (currently 20 IP subnets)
 - Are bandwidth and/or latency sensitive
 - Are able to have required security elements provided in the service rather than inline on the network
-- Account for around 70-80% of the volume of traffic to the Office 365 service
+- Account for around 70-80% of the volume of traffic to the Microsoft 365 service
 
-For more information about Office 365 endpoints and how they are categorized and managed, see [Managing Office 365 endpoints](managing-office-365-endpoints.md).
+For more information about Microsoft 365 endpoints and how they are categorized and managed, see [Managing Microsoft 365 endpoints](managing-office-365-endpoints.md).
 
 #### Optimize URLs
 
@@ -120,11 +120,11 @@ The current Optimize URLs can be found in the table below. Under most circumstan
 | https://\<tenant\>-my.sharepoint.com | TCP 443 | This is the primary URL for OneDrive for Business and has high bandwidth usage and possibly high connection count from the OneDrive for Business Sync tool. |
 | Teams Media IPs (no URL) | UDP 3478, 3479, 3480, and 3481 | Relay Discovery allocation and real-time traffic (3478), Audio (3479), Video (3480), and Video Screen Sharing (3481). These are the endpoints used for Skype for Business and Microsoft Teams Media traffic (calls, meetings, etc.). Most endpoints are provided when the Microsoft Teams client establishes a call (and are contained within the required IPs listed for the service). Use of the UDP protocol is required for optimal media quality.   |
 
-In the above examples, **tenant** should be replaced with your Office 365 tenant name. For example, **contoso.onmicrosoft.com** would use _contoso.sharepoint.com_ and _contoso-my.sharepoint.com_.
+In the above examples, **tenant** should be replaced with your Microsoft 365 tenant name. For example, **contoso.onmicrosoft.com** would use _contoso.sharepoint.com_ and _contoso-my.sharepoint.com_.
 
 #### Optimize IP address ranges
 
-At the time of writing the IP address ranges that these endpoints correspond to are as follows. It is **very strongly** advised you use a [script such as this](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category) example, the [Office 365 IP and URL web service](microsoft-365-ip-web-service.md) or the [URL/IP page](urls-and-ip-address-ranges.md) to check for any updates when applying the configuration, and put a policy in place to do so regularly.
+At the time of writing the IP address ranges that these endpoints correspond to are as follows. It is **very strongly** advised you use a [script such as this](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category) example, the [Microsoft 365 IP and URL web service](microsoft-365-ip-web-service.md) or the [URL/IP page](urls-and-ip-address-ranges.md) to check for any updates when applying the configuration, and put a policy in place to do so regularly.
 
 ```
 104.146.128.0/17
@@ -170,7 +170,7 @@ Once you have added the routes, you can confirm that the route table is correct 
 
 ![Route print output.](../media/vpn-split-tunneling/vpn-route-print.png)
 
-To add routes for _all_ current IP address ranges in the Optimize category, you can use the following script variation to query the [Office 365 IP and URL web service](microsoft-365-ip-web-service.md) for the current set of Optimize IP subnets and add them to the route table.
+To add routes for _all_ current IP address ranges in the Optimize category, you can use the following script variation to query the [Microsoft 365 IP and URL web service](microsoft-365-ip-web-service.md) for the current set of Optimize IP subnets and add them to the route table.
 
 #### Example: Add all Optimize subnets into the route table
 
@@ -204,7 +204,7 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 ```
 -->
 
-The VPN client should be configured so that traffic to the **Optimize** IPs are routed in this way. This allows the traffic to utilize local Microsoft resources such as Office 365 Service Front Doors [such as the Azure Front Door](https://azure.microsoft.com/blog/azure-front-door-service-is-now-generally-available/) that deliver Office 365 services and connectivity endpoints as close to your users as possible. This allows us to deliver high performance levels to users wherever they are in the world and takes full advantage of [Microsoft's world class global network](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/), which is likely within a few milliseconds of your users' direct egress.
+The VPN client should be configured so that traffic to the **Optimize** IPs are routed in this way. This allows the traffic to utilize local Microsoft resources such as Microsoft 365 Service Front Doors [such as the Azure Front Door](https://azure.microsoft.com/blog/azure-front-door-service-is-now-generally-available/) that deliver Microsoft 365 services and connectivity endpoints as close to your users as possible. This allows us to deliver high performance levels to users wherever they are in the world and takes full advantage of [Microsoft's world class global network](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/), which is likely within a few milliseconds of your users' direct egress.
 
 ## Configuring and securing Teams media traffic
 
@@ -239,11 +239,11 @@ You can also read about modern security controls in remote work scenarios at [Al
 
 ## How to Optimize Stream & Live Events
 
-During the worldwide COVID-19 crisis, many organizations have had to implement a work-from-home model for most of their users. This resulted in an enormous increase in load to their VPN infrastructure. To reduce load and improve performance on the VPN, the best practice is to send high-volume and latency-sensitive traffic directly to the services which need it and bypass the VPN connection. Organizations can do this by following the [Microsoft guidance to implement split tunneling](office-365-vpn-implement-split-tunnel.md) on the Office 365 endpoints that are marked as **Optimize.**
+During the worldwide COVID-19 crisis, many organizations have had to implement a work-from-home model for most of their users. This resulted in an enormous increase in load to their VPN infrastructure. To reduce load and improve performance on the VPN, the best practice is to send high-volume and latency-sensitive traffic directly to the services which need it and bypass the VPN connection. Organizations can do this by following the [Microsoft guidance to implement split tunneling](office-365-vpn-implement-split-tunnel.md) on the Microsoft 365 endpoints that are marked as **Optimize.**
 
 Microsoft 365 Live Events (this includes attendees to Teams-produced live events and those produced with an external encoder via Teams, Stream, or Yammer) and on-demand Stream traffic is currently categorized as **Default** versus **Optimize** in the [URL/IP list for the service](urls-and-ip-address-ranges.md). These endpoints are categorized as **Default** because they are hosted on CDNs that may also be used by other services. Customers generally prefer to proxy this type of traffic and apply any security elements normally done on endpoints such as these.
 
-Many customers have asked for URL/IP data needed to connect their users to Stream/Live Events directly from their local internet connection, rather than route the high-volume and latency-sensitive traffic via the VPN infrastructure. Typically, this is not possible without both dedicated namespaces and accurate IP information for the endpoints, which is not provided for Office 365 endpoints categorized as **Default**.
+Many customers have asked for URL/IP data needed to connect their users to Stream/Live Events directly from their local internet connection, rather than route the high-volume and latency-sensitive traffic via the VPN infrastructure. Typically, this is not possible without both dedicated namespaces and accurate IP information for the endpoints, which is not provided for Microsoft 365 endpoints categorized as **Default**.
 
 Please refer to the following steps to allow for direct connectivity for the service from a client using a forced tunnel VPN. This solution is intended to provide customers with an option to avoid traffic for Live Events being routed via VPN while there is high network traffic due to work-from-home scenarios. If possible, it is advised to access the service through an inspecting proxy.
 
@@ -283,7 +283,7 @@ For Azure CDN from Microsoft, you can download the list from [Download Azure IP 
 
 For Azure CDN from Verizon (Edgecast) you can find an exhaustive list using [https://docs.microsoft.com/rest/api/cdn/edge-nodes/list](https://docs.microsoft.com/rest/api/cdn/edge-nodes/list) (click **Try It** ) - you will need to look specifically for the  **Premium\_Verizon**  section. Note that this API shows all Edgecast IPs (origin and Anycast). Currently there is not a mechanism for the API to distinguish between origin and Anycast.
 
-To implement this in a PAC file you can use the following example which sends the Office 365 Optimize traffic direct (which is recommended best practice) via FQDN, and the critical Stream/Live Events traffic direct via a combination of the FQDN and the returned IP address. _Contoso_ would need to be edited to your specific tenant's name where _contoso_ is from contoso.onmicrosoft.com
+To implement this in a PAC file you can use the following example which sends the Microsoft 365 Optimize traffic direct (which is recommended best practice) via FQDN, and the critical Stream/Live Events traffic direct via a combination of the FQDN and the returned IP address. _Contoso_ would need to be edited to your specific tenant's name where _contoso_ is from contoso.onmicrosoft.com
 
 **Example PAC file (November 2021)**
 
@@ -291,18 +291,18 @@ Here is an example how to generate the PAC files:
 
 1. Go to the [Verizon URL](https://docs.microsoft.com/rest/api/cdn/edge-nodes/list#code-try-0) and download the resulting JSON (copy paste it into a file like cdnedgenodes.json)
 2. Put the file into the same folder as the script.
-3. Run **.\Get-TLEPacFile.ps1 -Instance Worldwide -Type 2 -TenantName contoso -CdnEdgeNodesFilePath .\cdnedgenodes.json -FilePath TLE.pac**  (change out the tenant name for something else if you want the SPO URLs). This is Type 2, so Optimize and Allow (Type 1 is Optimize only)
+3. Run **.\Get-TLEPacFile.ps1 -Instance Worldwide -Type 2 -TenantName contoso -CdnEdgeNodesFilePath .\cdnedgenodes.json -FilePath TLE.pac**  (change out the tenant name for something else if you want the SPO URLs). This is Type 2, so **Optimize** and **Allow** (Type 1 is Optimize only)
 4. The TLE.pac file will contain all the namespaces and IPs (IPv4/IPv6).
 
-The script will automatically parse the Azure list based on the[download URL](https://www.microsoft.com/download/details.aspx?id=56519) and keys off of  **AzureFrontDoor.Frontend** , so no need to get that manually.
+The script will automatically parse the Azure list based on the [download URL](https://www.microsoft.com/download/details.aspx?id=56519) and keys off of  **AzureFrontDoor.Frontend**, so no need to get that manually.
 
-It's worth stressing again, it is not advised to perform VPN offload using just the FQDNs; utilizing **both** the FQDNs and the IP addresses in the function helps scope the use of this offload to a limited scope including Live Events/Stream. The way the function is structured will result in a DNS lookup being done for the FQDN that matches those listed by the client directly. i.e., DNS resolution of the remaining namespaces remains unchanged.
+It's worth stressing again, it is not advised to perform VPN offload using just the FQDNs; utilizing **both** the FQDNs and the IP addresses in the function helps scope the use of this offload to a limited scope including Live Events/Stream. The way the function is structured will result in a DNS lookup being done for the FQDN that matches those listed by the client directly, i.e. DNS resolution of the remaining namespaces remains unchanged.
 
 If you wish to limit the risk of offloading endpoints not related to Live Events and Stream, you can remove the \*.azureedge.net domain from the configuration which is where most of this risk lies as this is a shared domain used for all Azure CDN customers. The downside of this is that any event using an external encoder will not be optimized but events produced/organized within Teams will be.
 
 ### 3. Configure routing on the VPN to enable direct egress
 
-The final element is to add a direct route for the Live Event IPs described **Gathering the current lists of CDN Endpoints** into the VPN configuration to ensure the traffic is not sent via the forced tunnel into the VPN. Detailed information on how to do this for Office 365 Optimize endpoints can be [found in this article](office-365-vpn-implement-split-tunnel.md) and the process is exactly the same for the Stream/Live Events IPs listed in this document. Note, only the IPs (not FQDNs) published above should be used for VPN configuration.
+The final element is to add a direct route for the Live Event IPs described **Gathering the current lists of CDN Endpoints** into the VPN configuration to ensure the traffic is not sent via the forced tunnel into the VPN. Detailed information on how to do this for Microsoft 365 Optimize endpoints can be [found in this article](office-365-vpn-implement-split-tunnel.md) and the process is exactly the same for the Stream/Live Events IPs listed in this document. Note, only the IPs (not FQDNs) published above should be used for VPN configuration.
 
 #### FAQ
 
@@ -314,7 +314,7 @@ The final element is to add a direct route for the Live Event IPs described **Ga
 
 **Answer:** No, the connectivity can be IPv4 only if required.
 
-**Question: Why are these IPs not published in the Office 365 URL/IP service?**
+**Question: Why are these IPs not published in the Microsoft 365 URL/IP service?**
 
 **Answer:** Microsoft has strict controls around the format and type of information that is in the service to ensure customers can reliably use the information to implement secure and optimal routing based on endpoint category.
 
@@ -366,15 +366,15 @@ If you need further data to troubleshoot, or are requesting assistance from Micr
 
 ## HOWTO guides for common VPN platforms
 
-This section provides links to detailed guides for implementing split tunneling for Office 365 traffic from the most common partners in this space. We'll add additional guides as they become available.
+This section provides links to detailed guides for implementing split tunneling for Microsoft 365 traffic from the most common partners in this space. We'll add additional guides as they become available.
 
-- **Windows 10 VPN client**: [Optimizing Office 365 traffic for remote workers with the native Windows 10 VPN client](/windows/security/identity-protection/vpn/vpn-office-365-optimization)
+- **Windows 10 VPN client**: [Optimizing Microsoft 365 traffic for remote workers with the native Windows 10 VPN client](/windows/security/identity-protection/vpn/vpn-office-365-optimization)
 - **Cisco Anyconnect**: [Optimize Anyconnect Split Tunnel for Office365](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
-- **Palo Alto GlobalProtect**: [Optimizing Office 365 Traffic via VPN Split Tunnel Exclude Access Route](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
-- **F5 Networks BIG-IP APM**: [Optimizing Office 365 traffic on Remote Access through VPNs when using BIG-IP APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
+- **Palo Alto GlobalProtect**: [Optimizing Microsoft 365 Traffic via VPN Split Tunnel Exclude Access Route](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
+- **F5 Networks BIG-IP APM**: [Optimizing Microsoft 365 traffic on Remote Access through VPNs when using BIG-IP APM](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
 - **Citrix Gateway**: [Optimizing Citrix Gateway VPN split tunnel for Office365](https://docs.citrix.com/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
-- **Pulse Secure**: [VPN Tunneling: How to configure split tunneling to exclude Office 365 applications](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
-- **Check Point VPN**: [How to configure Split Tunnel for Office 365 and other SaaS Applications](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
+- **Pulse Secure**: [VPN Tunneling: How to configure split tunneling to exclude Microsoft 365 applications](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
+- **Check Point VPN**: [How to configure Split Tunnel for Microsoft 365 and other SaaS Applications](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
 
 ## FAQ
 
@@ -388,11 +388,11 @@ So even though a user can make a TCP/UDP connection to the Optimize marked endpo
 
 ### Does this model allow access to consumer services such as personal OneDrive accounts?
 
-No, it does not, the Office 365 endpoints are not the same as the consumer services (Onedrive.live.com as an example) so the split tunnel will not allow a user to directly access consumer services. Traffic to consumer endpoints will continue to use the VPN tunnel and existing policies will continue to apply.
+No, it does not, the Microsoft 365 endpoints are not the same as the consumer services (Onedrive.live.com as an example) so the split tunnel will not allow a user to directly access consumer services. Traffic to consumer endpoints will continue to use the VPN tunnel and existing policies will continue to apply.
 
 ### How do I apply DLP and protect my sensitive data when the traffic no longer flows through my on-premises solution?
 
-To help you prevent the accidental disclosure of sensitive information, Office 365 has a rich set of [built-in tools](../compliance/information-protection.md). You can use the built-in [DLP capabilities](../compliance/dlp-learn-about-dlp.md) of Teams and SharePoint to detect inappropriately stored or shared sensitive information. If part of your remote work strategy involves a bring-your-own-device (BYOD) policy, you can use [app-based Conditional Access](/azure/active-directory/conditional-access/app-based-conditional-access) to prevent sensitive data from being downloaded to users' personal devices
+To help you prevent the accidental disclosure of sensitive information, Microsoft 365 has a rich set of [built-in tools](../compliance/information-protection.md). You can use the built-in [DLP capabilities](../compliance/dlp-learn-about-dlp.md) of Teams and SharePoint to detect inappropriately stored or shared sensitive information. If part of your remote work strategy involves a bring-your-own-device (BYOD) policy, you can use [app-based Conditional Access](/azure/active-directory/conditional-access/app-based-conditional-access) to prevent sensitive data from being downloaded to users' personal devices
 
 ### How do I evaluate and maintain control of the user's authentication when they are connecting directly?
 
@@ -406,9 +406,9 @@ We can then trigger policy such as approve, trigger MFA or block authentication 
 
 ### How do I protect against viruses and malware?
 
-Again, Office 365 provides protection for the Optimize marked endpoints in various layers in the service itself, [outlined in this document](/office365/Enterprise/office-365-malware-and-ransomware-protection). As noted, it is vastly more efficient to provide these security elements in the service itself rather than try to do it in line with devices that may not fully understand the protocols/traffic. By default, SharePoint Online [automatically scans file uploads](../security/office-365-security/virus-detection-in-spo.md) for known malware
+Again, Microsoft 365 provides protection for the Optimize marked endpoints in various layers in the service itself, [outlined in this document](/office365/Enterprise/office-365-malware-and-ransomware-protection). As noted, it is vastly more efficient to provide these security elements in the service itself rather than try to do it in line with devices that may not fully understand the protocols/traffic. By default, SharePoint Online [automatically scans file uploads](../security/office-365-security/virus-detection-in-spo.md) for known malware
 
-For the Exchange endpoints listed above, [Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) and [Microsoft Defender for Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) do an excellent job of providing security of the traffic to the service.
+For the Exchange endpoints listed above, [Exchange Online Protection](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) and [Microsoft Defender for Microsoft 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) do an excellent job of providing security of the traffic to the service.
 
 ### Can I send more than just the Optimize traffic direct?
 
@@ -416,17 +416,17 @@ Priority should be given to the **Optimize** marked endpoints as these will give
 
 There are also various vendors who offer cloud-based proxy/security solutions called _secure web gateways_ which provide central security, control, and corporate policy application for general web browsing. These solutions can work well in a cloud first world, if highly available, performant, and provisioned close to your users by allowing secure Internet access to be delivered from a cloud-based location close to the user. This removes the need for a hairpin through the VPN/corporate network for general browsing traffic, whilst still allowing central security control.
 
-Even with these solutions in place however, Microsoft still strongly recommends that Optimize marked Office 365 traffic is sent direct to the service.
+Even with these solutions in place however, Microsoft still strongly recommends that Optimize marked Microsoft 365 traffic is sent direct to the service.
 
 For guidance on allowing direct access to an Azure Virtual Network, see [Remote work using Azure VPN Gateway Point-to-site](/azure/vpn-gateway/work-remotely-support).
 
 ### Why is port 80 required? Is traffic sent in the clear?
 
-Port 80 is only used for things like redirect to a port 443 session, no customer data is sent or is accessible over port 80. [Encryption](../compliance/encryption.md) outlines encryption for data in transit and at rest for Office 365, and [Types of traffic](/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic) outlines how we use SRTP to protect Teams media traffic.
+Port 80 is only used for things like redirect to a port 443 session, no customer data is sent or is accessible over port 80. [Encryption](../compliance/encryption.md) outlines encryption for data in transit and at rest for Microsoft 365, and [Types of traffic](/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic) outlines how we use SRTP to protect Teams media traffic.
 
-### Does this advice apply to users in China using a worldwide instance of Office 365?
+### Does this advice apply to users in China using a worldwide instance of Microsoft 365?
 
-**No**, it does not. The one caveat to the above advice is users in the PRC who are connecting to a worldwide instance of Office 365. Due to the common occurrence of cross border network congestion in the region, direct Internet egress performance can be variable. Most customers in the region operate using a VPN to bring the traffic into the corporate network and utilize their authorized MPLS circuit or similar to egress outside the country via an optimized path. This is outlined further in the article [Office 365 performance optimization for China users](microsoft-365-networking-china.md).
+**No**, it does not. The one caveat to the above advice is users in the PRC who are connecting to a worldwide instance of Microsoft 365. Due to the common occurrence of cross border network congestion in the region, direct Internet egress performance can be variable. Most customers in the region operate using a VPN to bring the traffic into the corporate network and utilize their authorized MPLS circuit or similar to egress outside the country via an optimized path. This is outlined further in the article [Microsoft 365 performance optimization for China users](microsoft-365-networking-china.md).
 
 ### Does split-tunnel configuration work for Teams running in a browser?
 
@@ -434,9 +434,9 @@ Yes it does, via supported browsers, which are listed in [Get clients for Micros
 
 ## Related topics
 
-[Overview: VPN split tunneling for Office 365](microsoft-365-vpn-split-tunnel.md)
+[Overview: VPN split tunneling for Microsoft 365](microsoft-365-vpn-split-tunnel.md)
 
-[Office 365 performance optimization for China users](microsoft-365-networking-china.md)
+[Microsoft 365 performance optimization for China users](microsoft-365-networking-china.md)
 
 [Alternative ways for security professionals and IT to achieve modern security controls in today's unique remote work scenarios (Microsoft Security Team blog)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
@@ -444,8 +444,8 @@ Yes it does, via supported browsers, which are listed in [Get clients for Micros
 
 [Running on VPN: How Microsoft is keeping its remote workforce connected](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
 
-[Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md)
+[Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md)
 
-[Assessing Office 365 network connectivity](assessing-network-connectivity.md)
+[Assessing Microsoft 365 network connectivity](assessing-network-connectivity.md)
 
-[Office 365 network and performance tuning](network-planning-and-performance.md)
+[Microsoft 365 network and performance tuning](network-planning-and-performance.md)
