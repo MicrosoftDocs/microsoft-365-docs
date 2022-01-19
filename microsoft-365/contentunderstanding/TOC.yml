@@ -74,6 +74,24 @@
             - name: Step 3. Use Power Automate
               href: solution-manage-contracts-step3.md
 
+
+
+    - name: Metadata search
+      items: 
+        - name: Search for metadata in document libraries 
+          href: metadata-search.md
+
+
+    - name: Content assembly
+      items: 
+        - name: Create documents using content assembly 
+          href: content-assembly.md
+
+
+
+
+
+
     - name: Adoption
       items:
         - name: Get started with adoption
@@ -93,6 +111,10 @@
               href: solution-manage-contracts-step2.md
             - name: Step 3. Use Power Automate
               href: solution-manage-contracts-step3.md
+
+
+
+
 
     - name: Setup and administration
       items:
