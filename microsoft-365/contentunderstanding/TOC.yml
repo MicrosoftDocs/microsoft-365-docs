@@ -75,6 +75,18 @@
           href: syntex-licensing.md
         - name: Set up SharePoint Syntex
           href: set-up-content-understanding.md
+        - name: Manage SharePoint Syntex with PowerShell
+          items:
+            - name: Overview
+              href: powershell-syntex-intro.md
+            - name: Export and import models
+              href: powershell-syntex-import-export.md
+            - name: Publish models
+              href: powershell-syntex-publishing.md
+            - name: Request processing by a model
+              href: powershell-syntex-processing.md
+            - name: Work with model explanations
+              href: powershell-syntex-explanations.md
         
     - name: Content services
       items:

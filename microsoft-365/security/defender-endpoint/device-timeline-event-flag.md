@@ -29,7 +29,7 @@ ms.technology: mde
 
 Event flags in the Defender for Endpoint device timeline help you filter and organize specific events when you're  investigate potential attacks.
 
-The Defender for Endpoint device timeline provides a chronological view of the events and associated alerts observed on a device. This list of events provides full visibility into any events, files, and IP addresses observed on the device. The list can sometimes be lengthy. Device timeline event flags help you track events that could be related.
+The Defender for Endpoint device timeline provides a chronological view of the events and associated alerts observed on a device. This list of events provides full visibility into any events, files, and IP addresses observed on the device. The list can sometimes be lengthy. Device timeline event flags help you track events that could be related.
 
 After you've gone through a device timeline, you can sort, filter, and export the specific events that you flagged.
 
@@ -42,6 +42,7 @@ While navigating the device timeline, you can search and filter for specific eve
 ## Flag an event
 
 1. Find the event that you want to flag
+
 2. Click the flag icon in the Flag column. 
 
 :::image type="content" source="images/device-flags.png" alt-text="The device timeline flag" lightbox="images/device-flags.png":::
@@ -50,6 +51,7 @@ While navigating the device timeline, you can search and filter for specific eve
 
 1. In the timeline **Filters** section, enable **Flagged events**.
 2. Click **Apply**. Only flagged events are displayed.
+
 You can apply additional filters by clicking on the time bar. This will only show events prior to the flagged event.  
 
 :::image type="content" source="images/device-flag-filter.png" alt-text="The device timeline flag with the filter switched on" lightbox="images/device-flag-filter.png":::
