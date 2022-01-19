@@ -172,9 +172,9 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
     - Distribution method: `install automatically`
     - Level: `computer level`
 
-1. In **System extentions** profile, enter these values:
+1. In **System extensions** profile, enter these values:
     - Display Name: `Microsoft Corp. System Extensions`
-    - System Extenstion Types: `Allowed System Extensions`
+    - System Extension Types: `Allowed System Extensions`
     - Team Identifier: `UBF8T346G9`
     - Allowed System Extensions: `com.microsoft.wdav.epsext`, and `com.microsoft.wdav.netext`
 
@@ -188,13 +188,13 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 
 ### Configure Network extension
 
-1.	Use the **netfilter.mobileconfig**  file that you downloaded from Github.
+1.	Use the **netfilter.mobileconfig**  file that you downloaded from GitHub.
 
 2.	Upload to JAMF as described in [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ### Grant accessibility access to DLP
 
-1. Use the **accessibility.mobileconfig** file that you downloaded from Github.
+1. Use the **accessibility.mobileconfig** file that you downloaded from GitHub.
 
 2.	Upload to JAMF as described in [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
