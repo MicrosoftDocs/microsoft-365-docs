@@ -31,7 +31,7 @@ Automated investigation and remediation (AIR) capabilities in Microsoft Defender
 
 - *Full automation* (recommended) means remediation actions are taken automatically on artifacts determined to be malicious.
 - *Semi-automation* means some remediation actions are taken automatically, but other remediation actions await approval before being taken. (See the table in [Levels of automation](#levels-of-automation).)
-- All remediation actions, whether pending or completed, are tracked in the Action Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)).
+- All remediation actions, whether pending or completed, are tracked in the Action Center ([https://security.microsoft.com](https://security.microsoft.com)).
 
 > [!TIP]
 > For best results, we recommend using full automation when you [configure AIR](configure-automated-investigations-remediation.md). Data collected and analyzed over the past year shows that customers who are using full automation had 40% more high-confidence malware samples removed than customers who are using lower levels of automation. Full automation can help free up your security operations resources to focus more on your strategic initiatives.

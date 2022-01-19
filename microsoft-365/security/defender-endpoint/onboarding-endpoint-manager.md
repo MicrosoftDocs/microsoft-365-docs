@@ -60,7 +60,7 @@ This onboarding guidance will walk you through the following basic steps that yo
 Here are the links you'll need for the rest of the process:
 
 - [MEM portal](https://aka.ms/memac)
-- [Microsoft Defender for Endpoint](https://securitycenter.windows.com/)
+- [Microsoft 365 Defender](https://security.microsoft.com)
 - [Intune Security baselines](/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
 For more information about Microsoft Endpoint Manager, check out these resources:

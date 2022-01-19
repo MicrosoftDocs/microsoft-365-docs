@@ -35,9 +35,9 @@ ms.custom: api
 
 ## Enable raw data streaming
 
-1. Log in to [Microsoft Defender for Endpoint portal](https://securitycenter.windows.com) as a ***Global Administrator*** or ***Security Administrator***.
+1. Log in to [Microsoft 365 Defender](https://security.microsoft.com) as a ***Global Administrator*** or ***Security Administrator***.
 
-2. Go to [Data export settings page](https://securitycenter.windows.com/interoperability/dataexport) on Microsoft Defender Security Center.
+2. Go to [Data export settings page](https://security.microsoft.com/interoperability/dataexport) in Microsoft 365 Defender.
 
 3. Click on **Add data export settings**.
 
@@ -80,7 +80,7 @@ ms.custom: api
 
 In order to get the data types for our events properties do the following:
 
-1. Log in to [Microsoft Defender Security Center](https://securitycenter.windows.com) and go to [Advanced Hunting page](https://securitycenter.windows.com/hunting-package).
+1. Log in to [Microsoft 365 Defender](https://security.microsoft.com) and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).
 
 2. Run the following query to get the data types mapping for each event:
 
