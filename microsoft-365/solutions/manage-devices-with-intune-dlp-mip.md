@@ -15,6 +15,7 @@ ms.collection:
 - endpoint dlp
 - data loss prevention
 - dlp policies 
+- M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
 ms.custom: 

@@ -36,8 +36,8 @@ productDirectory:
     - title: What's new?
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-      summary: Coming soon in preview--Microsoft Defender for Business, an enterprise-grade endpoint solution for businesses with fewer than 300 employees.
-      url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/introducing-microsoft-defender-for-business/ba-p/2898701
+      summary: Join the Microsoft Defender for Business preview today--an enterprise-grade endpoint solution for businesses with fewer than 300 employees.
+      url: https://aka.ms/MDB-previewblog
     # Card
     - title: Join the partner webinar series
       # imageSrc should be square in ratio with no whitespace
