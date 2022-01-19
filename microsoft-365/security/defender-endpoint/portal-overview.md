@@ -14,6 +14,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -24,7 +25,7 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -32,7 +33,7 @@ ms.technology: mde
 
 Enterprise security teams can use Microsoft 365 Defender to monitor and assist in responding to alerts of potential advanced persistent threat activity or data breaches.
 
-You can use [Microsoft 365 Defender](https://security.microsoft.com) to:
+You can use <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> to:
 
 - View, sort, and triage alerts from your endpoints
 - Search for more information on observed indicators such as files and IP Addresses

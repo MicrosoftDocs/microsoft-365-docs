@@ -54,7 +54,7 @@ Insider risk management is centered around the following principles:
 - **Integrated**: Integrated workflow across Microsoft 365 compliance solutions.
 - **Actionable**: Provides insights to enable reviewer notifications, data investigations, and user investigations.
 
-## Identifying potential risks with analytics (preview)
+## Identifying potential risks with analytics
 
 Insider risk analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you may consider configuring. This evaluation may also help you determine needs for additional licensing or future optimization of existing insider risk policies.
 
@@ -83,7 +83,7 @@ You can select from the following policy templates to quickly get started with i
 - [Data leaks by priority users (preview)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 - [Data leaks by disgruntled users (preview)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [General security policy violations (preview)](insider-risk-management-policies.md#general-security-policy-violations-preview)
-- [General patient data misuse (preview)](insider-risk-management-policies.md#general-patient-data-misuse-preview))
+- [General patient data misuse (preview)](insider-risk-management-policies.md#general-patient-data-misuse-preview)
 - [Security policy violations by departing users (preview)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [Security policy violations by priority users (preview)](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [Security policy violations by disgruntled users (preview)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)

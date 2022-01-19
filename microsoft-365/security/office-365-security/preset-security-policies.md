@@ -8,11 +8,11 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.date:
-
 ms.localizationpriority: medium
 ms.assetid:
 ms.collection:
   - M365-security-compliance
+ms.custom:
 description: Admins can learn how to apply Standard and Strict policy settings across the protection features of Exchange Online Protection (EOP) and Microsoft Defender for Office 365
 ms.technology: mdo
 ms.prod: m365-security
@@ -124,7 +124,7 @@ For example, if a security setting exists in **Standard protection** and an admi
 
 ### Use the Microsoft 365 Defender portal to assign Standard and Strict preset security policies to users
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsofot.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section. To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
 
 2. On the **Preset security policies** page, click **Manage** in the **Standard protection** or **Strict protection** sections.
 
@@ -161,7 +161,7 @@ Remember, the **Built-in protection** preset security policy is assigned to all 
 
 Therefore, we typically don't recommend exceptions to the **Built-in protection** preset security policy.
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsofot.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section. To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
 
 2. On the **Preset security policies** page, select **Add exclusions (not recommended)** in the **Built-in protection** section.
 

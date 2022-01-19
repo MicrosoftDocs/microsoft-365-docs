@@ -15,6 +15,7 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -40,7 +41,7 @@ Customers with the following non-E5 licenses can use Microsoft 365 Defender:
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Identity
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Defender for Office 365 (Plan 2)
 
 For a full list of supported licenses, [read the licensing requirements](prerequisites.md#licensing-requirements).
@@ -56,13 +57,13 @@ To optimize your Microsoft 365 Defender experiences, we recommend deploying *all
 Microsoft 365 Defender automatically selects an optimal location for the data center where consolidated data is processed and stored. If you have Microsoft Defender for Endpoint, it selects the same location used by Defender for Endpoint.
 
 >[!NOTE]
->Microsoft Defender for Endpoint automatically provisions in European Union (EU) data centers when turned on through Azure Defender. Microsoft 365 Defender will automatically provision in the same EU data center for customers who have provisioned Microsoft Defender for Endpoint in this manner.
+>Microsoft Defender for Endpoint automatically provisions in European Union (EU) data centers when turned on through Microsoft Defender for Cloud. Microsoft 365 Defender will automatically provision in the same EU data center for customers who have provisioned Microsoft Defender for Endpoint in this manner.
 
 The data center location is shown before and after the service is provisioned in the settings page for Microsoft 365 Defender (**Settings > Microsoft 365 Defender**). If you prefer to use another data center location, select **Need help?** in the Microsoft 365 Defender portal to contact Microsoft support.
 
 ## Where can I access Microsoft 365 Defender?
 
-Microsoft 365 Defender is available at: <https://security.microsoft.com>.
+Microsoft 365 Defender is available at: <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a>.
 
 ## What permissions do I need to access Microsoft 365 Defender?
 
@@ -94,10 +95,6 @@ Microsoft regularly provides information through the various channels, including
 - Blogposts in the [Microsoft 365 security & compliance tech community](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)
 
 Get the latest publicly available experiences by turning on [preview features](preview.md).
-
-## Is Microsoft 365 Defender available for US Government Community Cloud (GCC) or GCC High?
-
-At the moment, it is not available.
 
 ## Related topics
 

@@ -2,8 +2,6 @@
 title: Security recommendations by threat and vulnerability management
 description: Get actionable security recommendations prioritized by threat, likelihood to be breached, and value, in threat and vulnerability management.
 keywords: threat and vulnerability management, Microsoft Defender for Endpoint tvm security recommendation, cybersecurity recommendation, actionable security recommendation
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -25,7 +23,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 

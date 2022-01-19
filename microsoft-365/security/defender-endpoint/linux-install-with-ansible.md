@@ -24,7 +24,7 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -147,7 +147,7 @@ Create a subtask or role files that contribute to a playbook or task.
 
   - name: Add Microsoft apt repository for MDATP
     apt_repository:
-      repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/config/[distro]/[version]/prod [channel] main
+      repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [codename] main
       update_cache: yes
       state: present
       filename: microsoft-[channel]
@@ -215,7 +215,7 @@ Create a subtask or role files that contribute to a playbook or task.
               dnf:
                 name: mdatp
                 state: latest
-                enablerepo: packages-microsoft-com-prod-[channel]
+                enablerepo: packages-microsoft-[channel]
         ```
 
         ```bash
