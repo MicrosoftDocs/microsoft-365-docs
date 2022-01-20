@@ -3,17 +3,23 @@ title: "Step 6. Monitor device risk and compliance to security baselines"
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- connect Intune to Defender
+- monitor device risk
+- monitor device compliance
+- deploy security baselines
 manager: dougeby
 audience: ITPro
+description: Learn how to connect Microsoft Intune to Defender for Endpoint and monitor device risk as a condition for access.
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
-ms.custom: seo-marvel-jun2020
+- deploy security baselines
+- m365solution-managedevices
+- m365solution-scenario
+ms.custom: 
 keywords: 
-description: 
 ---
 
 # Step 6. Monitor device risk and compliance to security baselines
@@ -22,7 +28,10 @@ After your organization has deployed Microsoft Defender for Endpoint, you can ga
 
 ![Defender for Endpoint and Microsoft Intune integration illustration](../media/devices/devices-defender-for-endpoint-steps.png#lightbox)
 
-In this illustration — Microsoft Defender for Endpoint greatly increases the sophistication of threat protection for devices. While Microsoft Intune allows you to set App Protection Policies and manage devices (including configuration changes), Defender for Endpoint continuously monitors your devices for threats and can take automated action to remediate attacks. 
+In this illustration:
+- Microsoft Defender for Endpoint greatly increases the sophistication of threat protection for devices. 
+- While Microsoft Intune allows you to set App Protection Policies and manage devices (including configuration changes), Defender for Endpoint continuously monitors your devices for threats and can take automated action to remediate attacks. 
+- You can use Intune to onboard devices to Defender for Endpoint. When you do this, you are also enabling these devices to work with Microsoft 365 Endpoint data loss prevention (Endpoint DLP).
 
 This article includes these steps:
 - Connect Microsoft Intune to Defender for Endpoint
