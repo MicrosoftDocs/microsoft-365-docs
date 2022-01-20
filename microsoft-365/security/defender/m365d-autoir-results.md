@@ -90,7 +90,7 @@ Here's an example.
 
 Use the investigation details view to see past, current, and pending activity pertaining to an investigation. Here's an example.
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="The investigation details in the Microsoft 365 Defender portal" lightbox="../../media/mtp-air-investdetails.png":::
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="The investigation details page in the Microsoft 365 Defender portal" lightbox="../../media/mtp-air-investdetails.png":::
 
 In the Investigation details view, you can see information on the **Investigation graph**, **Alerts**, **Devices**, **Identities**, **Key findings**, **Entities**, **Log**, and **Pending actions** tabs, described in the following table.
 
