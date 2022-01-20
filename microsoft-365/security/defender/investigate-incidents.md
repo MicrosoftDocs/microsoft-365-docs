@@ -43,7 +43,7 @@ Before diving into the details, take a look at the properties and summary of the
 
 You can start by selecting the incident from the check mark column. Here's an example.
 
-:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="The incident-selection portion from the check mark column" lightbox="../../media/investigate-incidents/incidents-ss-incident-select.png":::
+:::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text=Selecting an incident in the Microsoft 365 Defender portal" lightbox="../../media/investigate-incidents/incidents-ss-incident-select.png":::
 
 When you do, a summary pane opens with key information about the incident, such as severity, to whom it is assigned, and the [MITRE ATT&CK&trade;](https://attack.mitre.org/) categories for the incident. Here's an example.
 
