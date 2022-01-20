@@ -122,7 +122,7 @@ Follow the steps below to create a compliance policy against jailbroken devices.
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/ios-jb-settings.png" alt-text="The Compliance settings tab" lightbox="images/ios-jb-settings.png":::
 
-4. In the **Action for noncompliance** section, select the actions as per your requirements and select **Next**.
+4. In the **Actions for noncompliance** section, select the actions as per your requirements and select **Next**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/ios-jb-actions.png" alt-text="The Actions for noncompliance tab" lightbox="images/ios-jb-actions.png":::
