@@ -157,7 +157,7 @@ If your organization uses Microsoft Endpoint Manager (MEM) you can turn tamper p
 
 ### Turn tamper protection on (or off) in Microsoft Endpoint Manager
 
-:::image type="content" source="images/turnontamperprotect-MEM.png" alt-text="Turn tamper protection turned on with Intune" lightbox="images/turnontamperprotect-MEM.png":::
+:::image type="content" source="images/turnontamperprotectinmem.png" alt-text="Turn tamper protection turned on with Intune" lightbox="images/turnontamperprotectinmem.png":::
 
 1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint security** \> **Antivirus**, and then choose **+ Create Policy**.
 
