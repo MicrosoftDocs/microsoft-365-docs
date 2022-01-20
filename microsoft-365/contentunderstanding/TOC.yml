@@ -56,7 +56,7 @@
             - name: Prebuilt models
               items:
                 - name: Use prebuilt models to classify documents 
-                  href: form-processing-overview.md
+                  href: /microsoft-365/contentunderstanding/prebuilt-models?branch=prebuilt-models-working
 
 
 
