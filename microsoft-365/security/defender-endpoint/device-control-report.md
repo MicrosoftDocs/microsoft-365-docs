@@ -52,7 +52,7 @@ The **View details** button shows more media usage data in the **device control 
 The page provides a dashboard with aggregated number of events per type and a list of events. Administrators can filter on time range, media class name, and device ID.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/Detaileddevicecontrolreport.png" alt-text="The Device Control Report Details page in the Microsoft 365 security portal" lightbox="images/Detaileddevicecontrolreport.png":::
+> :::image type="content" source="images/Detaileddevicecontrolreport.png" alt-text="The Device Control Report Details page in the Microsoft 365 Defender portal" lightbox="images/Detaileddevicecontrolreport.png":::
 
 When you select an event, a flyout appears that shows you more information:
 
