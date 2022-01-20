@@ -34,7 +34,7 @@ ms.custom: api
 > 
 > No new onboarding to the Microsoft Defender for Endpoint SIEM API will be supported - instead, see [Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md) for more information on integrating with the Microsoft Defender for Endpoint Alert API or the Microsoft 365 Defender Incident API.
 > 
-> For information on integration SIEM Tools (Splunk, ArcSight, and QRadar), see [Integrate your SIEM tools with Microsoft Defender for Endpoint](../defender/configure-siem.md).
+> For information on integration SIEM Tools (Splunk, ArcSight, and QRadar), see [Integrate your SIEM tools with Microsoft Defender for Endpoint](../defender-endpoint/configure-siem.md).
 
 Understand what data fields are exposed as part of the detections API and how they map to Microsoft 365 Defender.
 
