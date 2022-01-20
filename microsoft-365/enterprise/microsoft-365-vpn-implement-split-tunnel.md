@@ -239,7 +239,7 @@ You can also read about modern security controls in remote work scenarios at [Al
 
 ## How to Optimize Stream & Live Events
 
-During the worldwide COVID-19 crisis, many organizations have had to implement a work-from-home model for most of their users. This resulted in an enormous increase in load to their VPN infrastructure. To reduce load and improve performance on the VPN, the best practice is to send high-volume and latency-sensitive traffic directly to the services which need it and bypass the VPN connection. Organizations can do this by following the [Microsoft guidance to implement split tunneling](office-365-vpn-implement-split-tunnel.md) on the Microsoft 365 endpoints that are marked as **Optimize.**
+During the worldwide COVID-19 crisis, many organizations have had to implement a work-from-home model for most of their users. This resulted in an enormous increase in load to their VPN infrastructure. To reduce load and improve performance on the VPN, the best practice is to send high-volume and latency-sensitive traffic directly to the services which need it and bypass the VPN connection. Organizations can do this by following the guidance in the [Implement VPN split tunneling](#Implement-VPN-split-tunneling) section for Microsoft 365 endpoints that are marked as **Optimize.**
 
 Microsoft 365 Live Events (this includes attendees to Teams-produced live events and those produced with an external encoder via Teams, Stream, or Yammer) and on-demand Stream traffic is currently categorized as **Default** versus **Optimize** in the [URL/IP list for the service](urls-and-ip-address-ranges.md). These endpoints are categorized as **Default** because they are hosted on CDNs that may also be used by other services. Customers generally prefer to proxy this type of traffic and apply any security elements normally done on endpoints such as these.
 
@@ -302,7 +302,7 @@ If you wish to limit the risk of offloading endpoints not related to Live Events
 
 ### 3. Configure routing on the VPN to enable direct egress
 
-The final element is to add a direct route for the Live Event IPs described **Gathering the current lists of CDN Endpoints** into the VPN configuration to ensure the traffic is not sent via the forced tunnel into the VPN. Detailed information on how to do this for Microsoft 365 Optimize endpoints can be [found in this article](office-365-vpn-implement-split-tunnel.md) and the process is exactly the same for the Stream/Live Events IPs listed in this document. Note, only the IPs (not FQDNs) published above should be used for VPN configuration.
+The final element is to add a direct route for the Live Event IPs described in **Gathering the current lists of CDN Endpoints** into the VPN configuration to ensure the traffic is not sent via the forced tunnel into the VPN. Detailed information on how to do this for Microsoft 365 Optimize endpoints can be found in the [Implement VPN split tunneling](#Implement-VPN-split-tunneling) section and the process is exactly the same for the Stream/Live Events IPs listed in this document. Note, only the IPs (not FQDNs) published above should be used for VPN configuration.
 
 #### FAQ
 
@@ -338,7 +338,7 @@ Microsoft is working to reconfigure the Live Events endpoints to allow them to b
 
 **Question: Does this advice cover presenter traffic?**
 
-**Answer:** It does not, the advice above is purely for those consuming the service. Presenting from within Teams will see the presenter's traffic flowing to the Optimize marked UDP endpoints listed in URL/IP service row 11 with detailed VPN offload advice outlined [here](office-365-vpn-implement-split-tunnel.md)
+**Answer:** It does not, the advice above is purely for those consuming the service. Presenting from within Teams will see the presenter's traffic flowing to the Optimize marked UDP endpoints listed in URL/IP service row 11 with detailed VPN offload advice outlined in the [Implement VPN split tunneling](#Implement-VPN-split-tunneling) section.
 
 **Question:   Does this configuration risk traffic other than Live Events &amp; Stream being sent direct?**
 
