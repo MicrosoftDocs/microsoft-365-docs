@@ -92,7 +92,7 @@ Microsoft recommends enabling the components of Microsoft 365 in the order illus
 
 The following table describes this illustration.
 
-|  Serial Number   |Step  |Description  |
+|  Step number   |Link  |Description  |
 |------|---------|---------|
 |1     | [Create the evaluation environment](eval-create-eval-environment.md)       |This step ensures you have the trial license for Microsoft 365 Defender.         |
 |2     | [Enable Defender for Identity](eval-defender-identity-overview.md)        | Review the architecture requirements, enable the evaluation, and walk through tutorials for identifying and remediating different attack types.   |
