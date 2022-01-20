@@ -265,9 +265,9 @@ Each simulation comes with an in-depth description of the attack scenario and re
 
 **Examples:**
 
-:::image type="content" source="images/simulation-details-aiq.png" alt-text="The simulation description details1" lightbox="images/simulation-details-aiq.png":::
+:::image type="content" source="images/simulation-details-aiq.png" alt-text="The simulation description details pane example for persistence methods" lightbox="images/simulation-details-aiq.png":::
 
-:::image type="content" source="images/simulation-details-sb.png" alt-text="The simulation description details2" lightbox="images/simulation-details-sb.png":::
+:::image type="content" source="images/simulation-details-sb.png" alt-text="The simulation description details for APT29" lightbox="images/simulation-details-sb.png":::
 
 ## Evaluation report
 
