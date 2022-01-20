@@ -41,7 +41,7 @@ If you select the improvement action associated with an activity, the full impro
 
 To view all history for that specific improvement action, select the history link in the flyout.
 
-:::image type="content" source="../../media/secure-score/secure-score-history-flyout.png" alt-text="The **History** pane regarding improvement action in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-history-flyout.png":::
+:::image type="content" source="../../media/secure-score/secure-score-history-flyout.png" alt-text="The History pane regarding improvement action in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-history-flyout.png":::
 
 ## Discover trends and set goals
 
@@ -71,7 +71,7 @@ The comparison data is anonymized so we don’t know exactly which others tenant
 
 In the **Metrics & trends** tab, view how your organization's Secure Score compares to others' over time.
 
-:::image type="content" source="../../media/secure-score/secure-score-comparison-trend.png" alt-text="An example of a Line graph of similar organization's scores over time in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-comparison-trend.png":::
+:::image type="content" source="../../media/secure-score/secure-score-comparison-trend.png" alt-text="An example of a line graph of similar organization's scores over time in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-comparison-trend.png":::
 
 ## We want to hear from you
 
