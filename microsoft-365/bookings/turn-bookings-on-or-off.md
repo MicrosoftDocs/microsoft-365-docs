@@ -32,7 +32,7 @@ Bookings can be turned on or off for your entire organization or for specific us
 
 4. Select **Save Changes**.
 
-## Turn Bookings on or off for your organization using PowerShell
+### Turn Bookings on or off for your organization using PowerShell
 
 To turn Bookings on or off for your organization using the PowerShell cmdlet [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig), [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) and run the following command:
 
