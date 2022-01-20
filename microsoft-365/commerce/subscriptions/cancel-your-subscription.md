@@ -17,28 +17,45 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 - AdminTemplateSet
+- admindeeplinkMAC
 search.appverid: MET150
-description: "If you have fewer than 25 user licenses, you can cancel your Microsoft 365 for business trial or paid subscription in the admin center."
-ms.date: 09/16/2021
+description: "Learn how to cancel your Dynamics 365, Intune, Power Platform, and Microsoft 365 for business trial or paid subscriptions in the Microsoft 365 admin center."
+ms.date: 01/19/2022
 ---
 
 # Cancel your subscription
 
+You can cancel your subscription at any time in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 356 admin center</a>. However, to receive a refund, you must meet certain refund eligibility requirements. For more information, see [Understand refund eligibility](#understand-refund-eligibility).
+
+If you have multiple subscriptions to the same product, such as Microsoft 365 Business Premium, canceling one subscription won’t impact the purchased licenses or services inside the others.
+
 > [!IMPORTANT]
-> This article only applies to Microsoft 365 for business subscriptions. If you have Microsoft 365 Family or Personal, see [Cancel a Microsoft 365 subscription](https://support.microsoft.com/en-us/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
-
-*Eligibility:* If you have fewer than 25 licenses assigned to users, you can cancel your Microsoft 365 for business trial or paid subscription online in the Microsoft 365 admin center at any time. If you have more than 25 licenses assigned to users, reduce it to less than 25 or [call support to cancel your subscription](../../admin/get-help-support.md).
-
-*Refund:* Any prorated credit will be returned to you within the next billing cycle.
-
-> [!NOTE]
-> 
-> - If you have multiple subscriptions to the same product, such as Microsoft 365 Business Premium, canceling one of them will not impact the purchased licenses or services inside the other subscriptions.
-> - For some subscriptions, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, turn off recurring billing to cancel the subscription at the end of its term.
+> This article only applies to Dynamics 365, Intune, Power Platform, and Microsoft 365 for business subscriptions. If you have Microsoft 365 Family or Personal, see [Cancel a Microsoft 365 subscription](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
 
 ## Before you begin
 
 You must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+
+## Understand refund eligibility
+
+### If you have a billing profile
+
+You must cancel within 72 hours of starting a paid subscription to get a prorated refund. Refunds aren’t available after 72 hours.
+
+**Not sure if you have a billing profile?** To learn how to find out if you have a billing profile, see [View my billing profiles](../billing-and-payments/manage-billing-profiles.md#view-my-billing-profiles).
+
+### If you don't have a billing profile
+
+Use the following table to help determine if you can cancel your subscription yourself.
+
+|If your subscription has  |You can  |
+|--------------|--------------|
+|25 or fewer licenses  | Cancel your trial or paid subscription online in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 356 admin center</a> at any time.        |
+|More than 25 licenses   | Reduce the number of licenses to 25 or fewer and try again, or [call support to cancel your subscription](../../admin/get-help-support.md).        |
+
+For subscriptions that don't have a billing profile, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, [turn off recurring billing](renew-your-subscription.md) to cancel the subscription at the end of its term.
+
+If you cancel during the limited time window, any prorated credit will be returned to you within the next billing cycle.
 
 ## Steps to cancel your subscription
 
