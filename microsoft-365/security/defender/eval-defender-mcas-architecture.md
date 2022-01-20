@@ -39,7 +39,7 @@ Microsoft Defender for Cloud Apps is a cloud access security broker (CASB). CASB
 
 Without Defender for Cloud Apps, cloud apps that are used by your organization are unmanaged and unprotected, as illustrated.
 
-:::image type="content" source="../../media/defender/m365-defender-mcas-architecture-a.png" alt-text="The architecture for the Microsoft Defender for Cloud Apps" lightbox="../../media/defender/m365-defender-mcas-architecture-a.png":::
+:::image type="content" source="../../media/defender/m365-defender-mcas-architecture-a.png" alt-text="The architecture for Microsoft Defender for Cloud Apps" lightbox="../../media/defender/m365-defender-mcas-architecture-a.png":::
 
 In the illustration:
 - The use of cloud apps by an organization is unmonitored and unprotected. 
@@ -49,7 +49,7 @@ In the illustration:
 
 The first step to managing the use of cloud apps is to discover which cloud apps are used by your organization. This next diagram illustrates how cloud discovery works with Defender for Cloud Apps.
 
-:::image type="content" source="../../media/defender/m365-defender-mcas-architecture-b.png" alt-text="The architecture for the Microsoft Defender for Cloud Apps in Cloud discovery" lightbox="../../media/defender/m365-defender-mcas-architecture-b.png":::
+:::image type="content" source="../../media/defender/m365-defender-mcas-architecture-b.png" alt-text="The architecture for Microsoft Defender for Cloud Apps in Cloud discovery" lightbox="../../media/defender/m365-defender-mcas-architecture-b.png":::
 
 
 In this illustration, there are two methods that can be used to monitor network traffic and discover cloud apps that are being used by your organization.
@@ -71,7 +71,7 @@ In this illustration:
 
 Microsoft Defender for Cloud Apps serves as a reverse proxy, providing proxy access to sanctioned cloud apps. This provision allows Defender for Cloud Apps to apply session controls that you configure. 
 
-:::image type="content" source="../../media/defender/m365-defender-mcas-architecture-d.png" alt-text="The architecture for the Microsoft Defender for Cloud Apps - Proxy access session control" lightbox="../../media/defender/m365-defender-mcas-architecture-d.png":::
+:::image type="content" source="../../media/defender/m365-defender-mcas-architecture-d.png" alt-text="The architecture for Microsoft Defender for Cloud Apps - Proxy access session control" lightbox="../../media/defender/m365-defender-mcas-architecture-d.png":::
 
 In this illustration:
 - Access to sanctioned cloud apps from users and devices in your organization is routed through Defender for Cloud Apps.
