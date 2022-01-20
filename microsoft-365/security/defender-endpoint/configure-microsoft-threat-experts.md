@@ -51,7 +51,7 @@ If you're already a Defender for Endpoint customer, you can apply through the Mi
 
 3. Enter your name and email address so that Microsoft can get back to you on your application.
 
-   :::image type="content" source="images/mte-apply.png" alt-text="The Name field in the Microsoft Threat Experts application page" lightbox="images/mte-apply.png":::
+   :::image type="content" source="images/mte-apply.png" alt-text="The Name field on the Microsoft Threat Experts application page" lightbox="images/mte-apply.png":::
 
 4. Read the [privacy statement](https://privacy.microsoft.com/privacystatement), then click **Submit** when you're done. You will receive a welcome email once your application is approved.
 
