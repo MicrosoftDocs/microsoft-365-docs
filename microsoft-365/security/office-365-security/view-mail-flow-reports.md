@@ -17,7 +17,7 @@ ms.assetid:
 ms.collection: 
   - M365-security-compliance
 description: Admins can learn about the mail flow reports that are available in the Reports dashboard in the Security & Compliance Center.
-ms.custom: admindeeplinkEXCHANGE
+ms.custom:
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -33,7 +33,7 @@ ms.prod: m365-security
 
 > [!NOTE]
 >
-> Most of the reports in this article are also available in the Microsoft 365 Defender portal or the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. For more information, see the following topics:
+> Most of the reports in this article are also available in the Microsoft 365 Defender portal or the Exchange admin center (EAC). For more information, see the following topics:
 >
 > - [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 > - [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md)
