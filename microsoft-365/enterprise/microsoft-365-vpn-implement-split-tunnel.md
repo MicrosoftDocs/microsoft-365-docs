@@ -3,7 +3,7 @@ title: "Implementing VPN split tunneling for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 1/18/2022
+ms.date: 1/20/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -293,9 +293,9 @@ FQDNs are not required in the VPN configuration, they are purely for use in PAC 
 
 ### 2. PAC file changes (Where required)
 
-For organizations that utilize a PAC file to route traffic through a proxy while on VPN, this is normally achieved using FQDNs. However, with Stream/Live Events, the host names provided contain wildcards such as **\*.azureedge.net**, which also encompasses other elements for which it is not possible to provide full IP listings. Thus, if the request is sent direct based on DNS wildcard match alone, traffic to these endpoints will be blocked as there is no route via the direct path for it in step 3.
+For organizations that utilize a PAC file to route traffic through a proxy while on VPN, this is normally achieved using FQDNs. However, with Stream/Live Events, the host names provided contain wildcards such as **\*.azureedge.net**, which also encompasses other elements for which it is not possible to provide full IP listings. Thus, if the request is sent direct based on DNS wildcard match alone, traffic to these endpoints will be blocked as there is no route via the direct path for it in [Step 3](#3-configure-routing-on-the-vpn-to-enable-direct-egress).
 
-To solve this, we can provide the following IPs and use them in combination with the host names in section 1 for Stream/Live Events in an example PAC file. The PAC file checks if the URL matches those used for Stream/Live Events and then if it does, it then also checks to see if the IP returned from a DNS lookup matches those provided for the service. If _both_ match, then the traffic is routed direct. If either element (FQDN/IP) doesn't match, then the traffic is sent to the proxy. As a result, the configuration ensures that anything which resolves to an IP outside of the scope of both the IP and defined namespaces will traverse the proxy via the VPN as normal.
+To solve this, we can provide the following IPs and use them in combination with the host names in [Step 1](#1-external-dns-resolution) in an example PAC file. The PAC file checks if the URL matches those used for Stream/Live Events and then if it does, it then also checks to see if the IP returned from a DNS lookup matches those provided for the service. If _both_ match, then the traffic is routed direct. If either element (FQDN/IP) doesn't match, then the traffic is sent to the proxy. As a result, the configuration ensures that anything which resolves to an IP outside of the scope of both the IP and defined namespaces will traverse the proxy via the VPN as normal.
 
 #### Gathering the current lists of CDN Endpoints
 
