@@ -247,9 +247,11 @@ Many customers have asked for URL/IP data needed to connect their users to Strea
 
 Please refer to the following steps to allow for direct connectivity for the service from a client using a forced tunnel VPN. This solution is intended to provide customers with an option to avoid traffic for Live Events being routed via VPN while there is high network traffic due to work-from-home scenarios. If possible, it is advised to access the service through an inspecting proxy.
 
-Note: This is slightly more complex than normal to implement as an extra function is required in the PAC file. There may be service elements that do not resolve to the IP addresses provided and thus traverse the VPN, but the bulk of high-volume traffic like streaming data should. There may be other elements outside the scope of Live Events/Stream which get caught by this offload, but these should be limited as they must meet both the FQDN _and_ the IP match before going direct.
+>[!NOTE]
+>This is slightly more complex than normal to implement as an extra function is required in the PAC file. There may be service elements that do not resolve to the IP addresses provided and thus traverse the VPN, but the bulk of high-volume traffic like streaming data should. There may be other elements outside the scope of Live Events/Stream which get caught by this offload, but these should be limited as they must meet both the FQDN _and_ the IP match before going direct.
 
-Customers are advised to weigh the risk of sending more traffic bypass VPN over the performance gain for Live Events.
+>[!IMPORTANT]
+>Customers are advised to weigh the risk of sending more traffic that bypasses the VPN over the performance gain for Live Events.
 
 To implement the Forced tunnel exception for Teams Live Events and Stream, the following steps should be applied:
 
