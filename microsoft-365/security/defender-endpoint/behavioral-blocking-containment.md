@@ -65,7 +65,7 @@ Expect more to come in the area of behavioral blocking and containment, as Micro
 
 ## Examples of behavioral blocking and containment in action
 
-Behavioral blocking and containment capabilities have blocked attacker techniques such as the following ones:
+Behavioral blocking and containment capabilities have blocked attacker techniques such as the following:
 
 - Credential dumping from LSASS
 - Cross-process injection
