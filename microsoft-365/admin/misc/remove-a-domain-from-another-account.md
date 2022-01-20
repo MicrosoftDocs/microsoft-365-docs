@@ -41,7 +41,7 @@ Before you can remove the domain from the other account and add it to your accou
 
 The steps in this article outline only how to join the other account (Steps 1 and 2) and follow the steps in the admin takeover wizard to become the admin on the unmanaged account (Step 3).
 
-After you've become an admin for the unmanaged account, you can remove the domain from the unmanaged account and add it to your account. For details, see [Remove a domain from another account]().
+After you've become an admin for the unmanaged account, you can remove the domain from the unmanaged account and add it to your account. 
 
 ## Step 1: Verify your email address
 
@@ -72,8 +72,7 @@ After you've become an admin for the unmanaged account, you can remove the domai
 
 1. On the **You're now the admin** page, select **Go to the admin center**.
 
-    You now have the admin privileges required to remove the domain from the other account. For details, see [Remove a domain from another account](). 
-  
+    You now have the admin privileges required to remove the domain from the other account. 
 ## Related content
 
 YouTube: [3 steps to do an IT Admin Takeover for Power BI and Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk) (video)\
