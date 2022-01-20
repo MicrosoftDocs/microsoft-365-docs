@@ -142,7 +142,7 @@ In Endpoint security | Overview, select **Attack surface reduction**:
 The Endpoint Security | Attack surface reduction pane opens:
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="images/asr-defender365-05b-mem3.png" alt-text="The Endpoint security Asr pane" lightbox="images/asr-defender365-05b-mem3.png":::
+> :::image type="content" source="images/asr-defender365-05b-mem3.png" alt-text="The Endpoint security Attack surface reduction pane" lightbox="images/asr-defender365-05b-mem3.png":::
 
 >[!Note]
 >If you have a Microsoft Defender 365 E5 (or Windows E5?) license, this link will open the Microsoft Defender 365  Reports > Attack surface reductions > [Configurations](https://security.microsoft.com/asr?viewid=configuration) tab.
