@@ -40,7 +40,7 @@ The updated Trust Center logic is described in the following diagram:
    - Previously, the next evaluated setting would have been if the user had identified this document as a trusted document. If they did, the document would open with the active content enabled.
    - Now, whether or not the user identified the document as a trusted document is not considered here (now at step 8).
 
-     The fundamental change in behavior is decsribed as follows: cloud policies (step 4), group policies (step 6), and local settings (step 7) are checked _before_ the user designation of a trusted document is even considered. If any of those steps block access to the active content **and** none of the steps allow user overrides, then user identification of the document as a trusted document is irrelevant.
+     The fundamental change in behavior is described as follows: cloud policies (step 4), group policies (step 6), and local settings (step 7) are checked _before_ the user designation of a trusted document is even considered. If any of those steps block access to the active content **and** none of the steps allow user overrides, then user identification of the document as a trusted document is irrelevant.
 
 4. Cloud policies are checked to see if this type of active content is allowed or blocked. If the active content is not blocked, the evaluation continues to step 6.
 
