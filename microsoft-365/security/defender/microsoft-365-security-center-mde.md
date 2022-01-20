@@ -36,7 +36,7 @@ ms.custom: admindeeplinkDEFENDER
 The image and the table below lists the changes in navigation between the Microsoft Defender Security Center and Microsoft 365 Defender.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/mde-m3d-security-center.png" alt-text="The what-moved-where scenario in the Microsoft 365 Defender portal" lightbox="../../media/mde-m3d-security-center.png":::
+> :::image type="content" source="../../media/mde-m3d-security-center.png" alt-text="The new locations in the Microsoft 365 Defender portal" lightbox="../../media/mde-m3d-security-center.png":::
 
 | Microsoft Defender Security Center | Microsoft 365 Defender |
 |---------|---------|
