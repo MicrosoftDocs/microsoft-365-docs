@@ -1,5 +1,5 @@
 ---
-title: "Perform an internal admin takeover"
+title: "Remove a domain from another account"
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -21,21 +21,27 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: "Learn how to verify your email and domain ownership to take over an unmanaged account created by a self-service user signup in Microsoft 365."
+description: "Learn how to join an unmanaged account created by a self-service user signup in Microsoft 365."
 ---
 
 # Perform an internal admin takeover
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.
 
-If you're an admin and want to take over an unmanaged account created by a self-service user signup, you can perform an internal admin takeover by following the steps in this article.
+If you are an admin and want to take over an unmanaged account created by a self-service user signup, you can do this by performing an internal admin takeover.
 
 > [!NOTE]
 > A self-service sign up for any cloud service that uses Azure AD adds the user to an unmanaged or "shadow" Azure AD directory and creates an unmanaged account. An unmanaged account is a directory without a global administrator. To determine whether an account is managed or unmanaged, see [Determining Tenant Type](/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type). 
   
 ## Before you begin
 
-When a user signs up for Microsoft 365 services using an email address, an account is automatically created for them. If an admin wants to manage the users on the account or purchase additional Microsoft 365 services, they must become an admin on the account by following these steps to perform an admin takeover.
+Sometimes you can't add a domain to your organization account because someone else has already signed up for Microsoft 365 using an email address associated with that domain name. But you can remove the domain from the other, unmanaged account and add it to your organization managed account.
+
+Before you can remove the domain from the other account and add it to your account though, you must join the unmanaged account and become an admin for that account. Then, you'll remove the domain from the unmanaged account, sign back into your account, and add the domain to your managed account.
+
+The steps in this article outline only how to join the other account (Steps 1 and 2) and follow the steps in the admin takeover wizard to become the admin on the unmanaged account (Step 3).
+
+After you've become an admin for the unmanaged account, you can remove the domain from the unmanaged account and add it to your account. 
 
 ## Step 1: Verify your email address
 
@@ -52,7 +58,7 @@ When a user signs up for Microsoft 365 services using an email address, an accou
 
 1. When you enter the verification code, you'll be brought to a page where you can create a new account.
 
-2. Fill in the user name and password fields with the account that you want to use, and then complete the steps to create the account.
+2. Fill in the user name and password fields with the account that you want to use, then select **Start**.
 
 ## Step 3: Verify domain ownership and become the admin
 
@@ -60,16 +66,13 @@ When a user signs up for Microsoft 365 services using an email address, an accou
 
     You're redirected to the admin takeover wizard.
 
-1. Select **Next** and verify that you own the domain you want to take over by adding a TXT record to your domain registrar.
+1. Select **Next** and verify that you own the domain you want to take over by adding a TXT record to your domain registrar. 
 
     The wizard will give you the TXT record to add, as well as provide a link to your registrar's website, and a link to step-by-step instructions.
 
 1. On the **You're now the admin** page, select **Go to the admin center**.
 
-    You have the admin privileges required to manage the account in the admin center. For example, you can manage account users and groups, purchase new subscriptions and make user assignments, and manage the account domains.
-
-    If you want to remove your domain from this account so you can add it to another account, see [Remove a domain from another account](remove-a-domain-from-another-account.md).
-  
+    You now have the admin privileges required to remove the domain from the other account. 
 ## Related content
 
 YouTube: [3 steps to do an IT Admin Takeover for Power BI and Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk) (video)\
