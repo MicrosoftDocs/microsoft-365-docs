@@ -35,7 +35,7 @@ This guide helps you work across stakeholders to prepare your environment and th
 
 Each section corresponds to a separate article in this solution.
 
-:::image type="content" source="images/deployment-guide-phases.png" alt-text="The deployment phases with details from table" lightbox="images/deployment-guide-phases.png":::
+:::image type="content" source="images/deployment-guide-phases.png" alt-text="The deployment phases with details from the table" lightbox="images/deployment-guide-phases.png":::
 
 
 :::image type="content" source="images/phase-diagrams/deployment-phases.png" alt-text="The summary of deployment phases: prepare, setup, onboard" lightbox="images/phase-diagrams/deployment-phases.png":::
