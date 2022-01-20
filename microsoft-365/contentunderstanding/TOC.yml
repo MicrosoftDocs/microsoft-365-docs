@@ -56,21 +56,17 @@
             - name: Prebuilt models
               items:
                 - name: Use prebuilt models to classify documents 
-                  href: /microsoft-365/contentunderstanding/prebuilt-models?branch=prebuilt-models-working
-
-
+                  href: index.md
 
     - name: Metadata search
       items: 
         - name: Search for metadata in document libraries 
           href: metadata-search.md
 
-
     - name: Content assembly
       items: 
         - name: Create documents using content assembly 
           href: content-assembly.md
-
      
     - name: Taxonomy
       items:
@@ -83,10 +79,8 @@
         - name: Term store reports
           href: term-store-analytics.md
 
-
     - name: Setup and administration
       items:
-
         - name: Licensing for SharePoint Syntex
           href: syntex-licensing.md
         - name: Set up SharePoint Syntex
@@ -104,7 +98,6 @@
             - name: Work with model explanations
               href: powershell-syntex-explanations.md
 
-
     - name: Adoption
       items:
         - name: Get started with adoption
@@ -113,7 +106,6 @@
           href: adoption-scenarios.md 
         - name: Run a trial
           href: trial-syntex.md 
-
         - name: Manage contracts in Microsoft 365
           items:
             - name: Overview
@@ -125,7 +117,6 @@
             - name: Step 3. Use Power Automate
               href: solution-manage-contracts-step3.md
 
-     
     - name: Extensibility
       href: /sharepoint/dev/apis/syntex/syntex-model-rest-api
 
