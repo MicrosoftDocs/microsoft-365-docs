@@ -31,7 +31,7 @@ This article is [Step 2 of 3](eval-defender-office-365-overview.md) in the proce
 
 Use the following steps to enable the evaluation for Microsoft Defender for Office 365.
 
-:::image type="content" source="../../media/defender/m365-defender-office-eval-enable-steps.png" alt-text="The steps to enable the Microsoft Defender for Office 365 in the Microsoft Defender evaluation environment" lightbox="../../media/defender/m365-defender-office-eval-enable-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-office-eval-enable-steps.png" alt-text="The steps to enable Microsoft Defender for Office 365 in the Microsoft Defender evaluation environment" lightbox="../../media/defender/m365-defender-office-eval-enable-steps.png":::
 
 
 - [Step 1: Activate trial licenses](#step-1-activate-trial-licenses)
@@ -47,7 +47,7 @@ Log on to your existing Microsoft Defender for Office 365 environment or tenant 
 1. Navigate to the administration portal.
 2. Select Purchase Services from the quick launch.
 
-   :::image type="content" source="../../media/mdo-eval/1_m365-purchase-services.png" alt-text="The  Purchase services option to click on the navigation pane of Office 365 in the Microsoft 365 admin center" lightbox="../../media/mdo-eval/1_m365-purchase-services.png":::
+   :::image type="content" source="../../media/mdo-eval/1_m365-purchase-services.png" alt-text="The Purchase services option to click on the navigation pane of Office 365 in the Microsoft 365 admin center" lightbox="../../media/mdo-eval/1_m365-purchase-services.png":::
 
 3. Scroll down to the Add-On section (or search for "Defender") to locate the Microsoft Defender for Office 365 plans.
 4. Click Details next the plan you want to evaluate.
