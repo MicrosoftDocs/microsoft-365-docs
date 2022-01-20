@@ -43,7 +43,7 @@ By default, the alerts queue in the Microsoft 365 Defender portal displays the n
 
 From the default alerts queue, you can select **Filters** to see a **Filters** pane, from which you can specify a subset of the alerts. Here's an example.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="The **Filters** section in the Microsoft 365 Defender portal." lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="The Filters section in the Microsoft 365 Defender portal." lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png":::
 
 You can filter alerts according to these criteria:
 
@@ -155,7 +155,7 @@ From this pane, you can also perform these additional actions:
 
 Here's an example.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="The pane that diplays the action-options for an alert in the Microsoft 365 Defender portal" lightbox="../../media/investigate-alerts/alerts-ss-alerts-actions.png":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="The pane that diplays alert actions in the Microsoft 365 Defender portal" lightbox="../../media/investigate-alerts/alerts-ss-alerts-actions.png":::
 
 The list of additional actions depends on the type of alert.
 
