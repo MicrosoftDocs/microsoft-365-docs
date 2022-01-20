@@ -40,7 +40,7 @@ You must be a Global or Billing admin to do the tasks in this article. For more 
 
 ### If you have a billing profile
 
-You must cancel within 72 hours of buying a paid subscription to get a prorated refund. Refunds aren’t available after 72 hours.
+You must cancel within 72 hours of starting a paid subscription to get a prorated refund. Refunds aren’t available after 72 hours.
 
 **Not sure if you have a billing profile?** To learn how to find out if you have a billing profile, see [View my billing profiles](../billing-and-payments/manage-billing-profiles.md#view-my-billing-profiles).
 
