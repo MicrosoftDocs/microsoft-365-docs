@@ -92,13 +92,13 @@ Because mobile app management doesn't require device management, you can protect
 
     *Example: Outlook as a managed app*
 
-  :::image type="content" source="images/managed-app.png" alt-text="The Public apps pane from which you choose an application to which the policy is to be applied to, in the Microsoft 365 Defender portal" lightbox="images/managed-app.png":::
+  :::image type="content" source="images/managed-app.png" alt-text="The Public apps pane in the Microsoft 365 Defender portal" lightbox="images/managed-app.png":::
 
 
  3. Set sign-in security requirements for your protection policy. <br>
 Select **Setting > Max allowed device threat level** in **Device Conditions** and enter a value. Then select  **Action:  "Block Access"**. Microsoft Defender for Endpoint on Android shares this Device Threat Level.
 
-  :::image type="content" source="images/conditional-launch.png" alt-text="The Device conditions pane from which you configure the conditional launch settings, in the Microsoft 365 Defender portal" lightbox="images/conditional-launch.png":::
+  :::image type="content" source="images/conditional-launch.png" alt-text="The Device conditions pane in the Microsoft 365 Defender portal" lightbox="images/conditional-launch.png":::
   
 - **Assign user groups for whom the policy needs to be applied.**<br>
   Select **Included groups**. Then add the relevant groups. 
