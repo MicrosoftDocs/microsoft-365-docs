@@ -164,9 +164,10 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 1. Repeat steps 3-11 to create profiles for the:
     1. **fulldisk.mobileconfig** file
     1. **com.microsoft.autoupdate2.xml** file
-    1. MDE preferences **com.microsoft.wdav.xml** file
+    2. **sysext.mobileconfig** file
+    3. MDE preferences **com.microsoft.wdav.xml** file
         1. set Antivirus engine `passive mode` = `true` or `false`. Use `true`if deploying DLP only. Use `false` or do not assign a value if deploying DLP and Microsoft Defender for Endpoint (MDE).
-    1. **netfilter.mobileconfig**
+    4. **netfilter.mobileconfig**
  
 1. Open **Devices** > **Configuration profiles**, you should see your created profiles there.
 
@@ -226,6 +227,7 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 |---------|---------|
 |**com.microsoft.wdav.epsext**|**UBF8T346G9**|
 |**com.microsoft.wdav.netext**|**UBF8T346G9**|
+
 
 
 1. On the **Assignments** tab add the group you want to deploy these configurations to and choose **Next**.
