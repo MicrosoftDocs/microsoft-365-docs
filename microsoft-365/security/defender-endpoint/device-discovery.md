@@ -111,7 +111,7 @@ Search for "SSH" related security recommendations to find SSH vulnerabilities th
 You can use Advanced Hunting queries to gain visibility on discovered devices.
 Find details about discovered Endpoints in the DeviceInfo table, or network-related information about those devices in the DeviceNetworkInfo table.
 
-:::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="The Advance hunting page on which queries can be used" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
+:::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="The Advanced hunting page on which queries can be used" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
 
 Device discovery leverages Microsoft Defender for Endpoint onboarded devices as a network data source to attribute activities to non-onboarded devices. This means that if a Microsoft Defender for Endpoint onboarded device communicated with a non-onboarded device, activities on the non-onboarded device can be seen on the timeline and through the Advanced hunting DeviceNetworkEvents table.
 
