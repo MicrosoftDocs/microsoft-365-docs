@@ -78,7 +78,7 @@ In this illustration:
 - This proxy access allows session controls to be applied.
 - Cloud apps that you have not sanctioned or explicitly unsanctioned are not affected.
 
-Session controls allow you to apply parameters to how cloud apps are used by your organization. For example, if your organization is using Salesforce, you can configure a session policy that allows only managed devices to access your organization's data at Salesforce. A simpler example could be configuring a policy to monitor traffic from unmanaged devices so you can analyze the risk of this traffic before applying stricter policies.
+Session controls allow you to apply parameters to how cloud apps are used by your organization. For example, if your organization is using Salesforce, you can configure a session policy that allows only managed devices to access your organization's data in Salesforce. A simpler example could be configuring a policy to monitor traffic from unmanaged devices so you can analyze the risk of this traffic before applying stricter policies.
 
 #### Integrating with Azure AD with Conditional Access App Control
 
