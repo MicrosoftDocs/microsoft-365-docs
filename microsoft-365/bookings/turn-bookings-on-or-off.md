@@ -42,7 +42,7 @@ To turn Bookings on or off for your organization using the PowerShell cmdlet [Se
 
 ### Block bookings from outside your organization
 
-You can set up Bookings so only people in your organization can book appointments. Only users in your organization who've signed in can book appointments. For example, in a school, you would want only students and staff to be able to book appointments.
+You can set up Bookings so only people in your organization can book appointments. Only users in your organization who've signed and are authenticated can book appointments.
 
 ### Block social sharing options
 
@@ -50,15 +50,17 @@ You can control how booking pages are shared on social networks. This setting is
 
 ### Block sharing staff details with customers
 
-Staff details, such as contact information, will never be sent to customers via email or any other communication
+Staff details, such as contact information, will never be sent to customers via email or any other communication.
 
 ### Require staff approvals before sharing free/busy information
 
-You can require employees in their organization to opt-in before their availability information is shared through Bookings and before they can be bookable through a booking page.
+You can require employees in your organization to opt-in before their availability information is shared through Bookings and before they can be bookable through a booking page.
 
 When this setting is enabled, people added as staff in booking calendars will get an email with a link to **Approve/Reject** the request.
 
+## Restrict collection of customer data
 
+If you select any of the fields below, these fields won't be included on any forms shown to your clients or customers. This helps prevent customers from sharing sensitive data with you.
 
 ### Turn Bookings on or off for individual users
 
