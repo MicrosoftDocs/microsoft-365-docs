@@ -120,7 +120,7 @@ As a Microsoft 365 Global admin, you can use a diagnostic tool that runs within 
 Select the **Run Tests** link below to open the diagnostic tool in the Microsoft 365 admin center.
 
 >[!div class="nextstepaction"]
->pRun Tests: Unknown Charge](https://aka.ms/PillarUnknownCharge)
+>[Run Tests: Unknown Charge](https://aka.ms/PillarUnknownCharge)
 
 ## Next steps
 
