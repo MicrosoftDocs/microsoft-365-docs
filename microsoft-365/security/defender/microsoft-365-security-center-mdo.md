@@ -113,7 +113,7 @@ Learn more about how to [track and respond to emerging threats with threat analy
 
 Track and investigate threats to your users' email, track campaigns, and more. If you've used the Security & Compliance Center, this will be familiar.
 
-:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="The quick launch menu for Email & Collab (or MSDO), on the left-navigation pane in the Microsoft 365 Defender portal" lightbox="../../media/converge-3-email-and-collab-new.png":::
+:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="The quick launch menu for Email & Collab (or MSDO), on the left navigation pane in the Microsoft 365 Defender portal" lightbox="../../media/converge-3-email-and-collab-new.png":::
 
 #### Email entity page
 
@@ -123,7 +123,7 @@ The [Email entity page](../office-365-security/mdo-email-entity-page.md) *unifie
 
 View reports, change your settings, and modify user roles.
 
-:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="The quick launch menu for Microsoft 365 Defender permissions and reporting, on the left-navigation pane in the Microsoft 365 Defender portal" lightbox="../../media/converge-4-access-and-reporting-new.png":::
+:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="The quick launch menu for Microsoft 365 Defender permissions and reporting, on the left navigation pane in the Microsoft 365 Defender portal" lightbox="../../media/converge-4-access-and-reporting-new.png":::
 
 > [!NOTE]
 > DomainKeys Identified Mail (DKIM) ensures that destination email systems trust messages sent outbound from your custom domain.
