@@ -530,7 +530,7 @@ In the **View data by Email \> Spam** and **Chart breakdown by Detection Technol
 - **General filter**
 - **Mixed analysis detection**: Multiple filters contributed to the verdict for the message.
 - **Fingerprint matching**: The message was marked as bad due to previous messages.
-- **Domain reputation**
+- **Domain reputation**: This message was considered spam based on the sender domain reputation.
 - **Bulk**: Items detected as exceeding the bulk setting for the user.
 - **IP reputation**: The message was considered spam based on the sending IP address reputation.
 
@@ -773,19 +773,23 @@ On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-cre
 In the **View data by Content \> Malware** view, the following information is shown in the chart for Microsoft Defender for Office 365 organizations:
 
 - **Anti-malware engine**: Malicious files detected in SharePoint, OneDrive, and Microsoft Teams by the [built-in virus detection in Microsoft 365](virus-detection-in-spo.md).
-- **File detonation**: Malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+- **MDO detonation**: Malicious files detected by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+- **File reputation**
 
 In the details table below the chart, the following information is available:
 
-- **Date (UTC)** **Start date** and **End date**
-- **Location**
+- **Date (UTC)**
+- **Attachment filename**
+- **Workload**
 - **Detection technology**
-- **Malware name**
+- **File size**
+- **Last modifying user**
 
 If you click **Filter**, the following filters are available:
 
 - **Date (UTC)** **Start date** and **End date**
-- **Detection**: **Anti-malware engine** or **File detonation**
+- **Detection**: **Anti-malware engine**, **MDO detonation**, and **File detonation**
+- **Workload**: **Teams**, **SharePoint**, and **OneDrive**
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
