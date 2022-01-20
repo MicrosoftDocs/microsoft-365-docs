@@ -39,7 +39,7 @@ The best way for technology partners to certify that their integration works is 
 Once the Microsoft Defender for Endpoint team has reviewed and approves the integration, we will direct you to be included as a partner at the Microsoft Intelligent Security Association.
 
 ## Step 3: Become a MISA member 
-Managed security service providers (MSSP) and independent software vendors (ISV) can be nominated to MISA [here](https://www.microsoft.com/en-us/security/business/intelligent-security-association) 
+Managed security service providers (MSSP) and independent software vendors (ISV) can be nominated to the Microsoft Intelligent Security Association (MISA) [here](https://www.microsoft.com/security/business/intelligent-security-association).
 
 ## Step 4: Get listed in the Microsoft Defender for Endpoint partner application portal
 
