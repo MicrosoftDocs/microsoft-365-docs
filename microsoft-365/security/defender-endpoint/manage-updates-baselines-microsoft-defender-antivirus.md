@@ -548,12 +548,12 @@ Engine: **1.1.16700.2**<br/>
 </details>
 
 <details>
-<summary> November-2019 (Platform: 4.18.1911.3 | Engine: 1.1.16600.7)</summary>
+<summary> November-2019 (Platform: 4.18.1911.3 | Engine: 1.1.16600.7)</summary>
 
-Security intelligence update version: **1.307.13.0**<br/>
-Released: **December 7, 2019**<br/>
-Platform: **4.18.1911.3**<br/>
-Engine: **1.1.17000.7**<br/>
+Security intelligence update version: **1.307.13.0**<br/>
+Released: **December 7, 2019**<br/>
+Platform: **4.18.1911.3**<br/>
+Engine: **1.1.17000.7**<br/>
 Support phase: **No support**<br/>
 
 ### What's new
