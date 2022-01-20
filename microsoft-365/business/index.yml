@@ -125,7 +125,7 @@ conceptualContent:
           text: Reset someone's password
       # footerLink (optional)
       footerLink:
-        url: /office365/admin/admin-home
+        url: /microsoft-365/admin/
         text: See more 
  # Card
     - title: Manage threats
@@ -144,7 +144,7 @@ conceptualContent:
           text: Conditional Access
       # footerLink (optional)
       footerLink:
-        url: /office365/admin/admin-home
+        url: /microsoft-365/admin/
         text: See more 
   # Card
     - title: Manage data
