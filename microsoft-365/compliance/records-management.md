@@ -46,7 +46,7 @@ Use the following capabilities to support your records management solution in Mi
 
 Using these capabilities, you can incorporate your organization's retention schedules and requirements into a records management solution that manages retention, records declaration, and disposition, to support the full lifecycle of your content.
 
-In addition to the online documentation, you might find it useful to listen to the [webinar recording](https://aka.ms/MIPC/Video-RecordsManagementWebinar) for records management, and download the accompanying [deck with FAQs](https://aka.ms/MIPC/Blog-RecordsManagementWebinar).
+In addition to the online documentation, you might find it useful to download a [deck with FAQs](https://aka.ms/MIPC/Blog-RecordsManagementWebinar) from a records management webinar. The recording of the actual webinar is no longer available.
 
 ## Records
 
