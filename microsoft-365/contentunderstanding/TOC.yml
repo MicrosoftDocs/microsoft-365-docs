@@ -53,6 +53,10 @@
                   href: create-a-form-processing-model.md
                 - name: Apply a retention label 
                   href: apply-a-retention-label-to-a-model.md
+            - name: Prebuilt models
+              items:
+                - name: Use prebuilt models to classify documents 
+                  href: form-processing-overview.md
 
 
 
