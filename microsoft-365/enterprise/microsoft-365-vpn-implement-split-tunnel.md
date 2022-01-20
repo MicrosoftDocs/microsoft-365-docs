@@ -223,6 +223,9 @@ In certain scenarios, often unrelated to Teams client configuration, media traff
 
 Signaling traffic is performed over HTTPS and is not as latency sensitive as the media traffic and is marked as **Allow** in the URL/IP data and thus can safely be routed through the VPN client if desired.
 
+>[!NOTE]
+>Microsoft Edge **96 and above** also supports VPN split tunneling for peer-to-peer traffic. This means customers can gain the benefit of VPN split tunneling for Teams web clients on Edge, for instance. Customers who want to set it up for websites running on Edge can achieve it by taking the additional step of enabling the Edge [WebRtcRespectOsRoutingTableEnabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#webrtcrespectosroutingtableenabled) policy.
+
 ### Security
 
 One common argument for avoiding split tunnels is that it is less secure to do so, i.e any traffic that does not go through the VPN tunnel will not benefit from whatever encryption scheme is applied to the VPN tunnel, and is therefore less secure.
@@ -432,7 +435,9 @@ Port 80 is only used for things like redirect to a port 443 session, no customer
 
 ### Does split-tunnel configuration work for Teams running in a browser?
 
-Yes it does, via supported browsers, which are listed in [Get clients for Microsoft Teams](/microsoftteams/get-clients#web-client).
+Yes, with caveats. Most Teams functionality is supported in the browsers listed in [Get clients for Microsoft Teams](https://docs.microsoft.com/microsoftteams/get-clients#web-client).
+
+In addition, Microsoft Edge **96 and above** supports VPN split tunneling for peer-to-peer traffic by enabling the Edge [WebRtcRespectOsRoutingTableEnabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#webrtcrespectosroutingtableenabled) policy. At this time, other browsers may not support VPN split tunneling for peer-to-peer traffic.
 
 ## Related topics
 
