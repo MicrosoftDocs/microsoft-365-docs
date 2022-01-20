@@ -44,7 +44,7 @@ When you investigate an incident, you'll see:
 
 Click an incident to see the **Incident pane**. Select **Open incident page** to see the incident details and related information (alerts, devices, investigations, evidence, graph).
 
-:::image type="content" source="images/atp-incident-details.png" alt-text="The details-1 of the incident" lightbox="images/atp-incident-details.png":::
+:::image type="content" source="images/atp-incident-details.png" alt-text="The details of an incident" lightbox="images/atp-incident-details.png":::
 
 ### Alerts
 
