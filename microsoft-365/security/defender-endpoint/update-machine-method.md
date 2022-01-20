@@ -2,7 +2,6 @@
 title: Update machine entity API
 description: Learn how to update machine tags by using this API. You can update the tags and devicevalue properties.
 keywords: apis, graph api, supported apis, get, alert, information, id
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -109,7 +108,7 @@ PATCH https://api.securitycenter.microsoft.com/api/machines/{machineId}
     "machineTags": [
                      "Demo Device",
                      "Generic User Machine - Attack Source",
-                     "Windows 10",
+                     "Windows 10" "Windows11",
                      "Windows Insider - Fast"
     ]
 }
