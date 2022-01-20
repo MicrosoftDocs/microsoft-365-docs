@@ -41,7 +41,7 @@ See the [data loss prevention service description](/office365/servicedescription
 |Portal|World Wide/GCC|GCC-High|DOD|
 |---|---|---|---|
 |Office SCC|compliance.microsoft.com|scc.office365.us|scc.protection.apps.mil|
-|Microsoft 365 Security center|security.microsoft.com|security.microsoft.us|security.apps.mil|
+|Microsoft 365 Defender portal|security.microsoft.com|security.microsoft.us|security.apps.mil|
 |Microsoft 365 Compliance center|compliance.microsoft.com|compliance.microsoft.us|compliance.apps.mil|
 
 ## The work flow at a glance

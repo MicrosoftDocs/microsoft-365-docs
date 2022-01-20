@@ -24,6 +24,10 @@ You can use JAMF Pro to onboard macOS devices into Microsoft 365 compliance solu
 > [!IMPORTANT]
 > Use this procedure if you ***do not*** have Microsoft Defender for Endpoint (MDE) deployed to your macOS devices
 
+## Get registered
+
+To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).
+
 **Applies to:**
 
 - [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
@@ -45,7 +49,7 @@ You can use JAMF Pro to onboard macOS devices into Microsoft 365 compliance solu
 |accessibility |[accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)|
 full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)|
 |Network filter| [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)
-|System extensions |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/systext.mobileconfig)
+|System extensions |[sysext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/sysext.mobileconfig)
 |MDE preference     |[schema.json](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/schema.json)|
 |MAU preference|[com.microsoft.autoupdate2.plist](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.plist)|
 |Installation package     |downloaded from the compliance portal **Installation package**, file name *\*wdav.pkg*\* |
@@ -57,7 +61,7 @@ full disk access     |[fulldisk.mobileconfig](https://github.com/microsoft/mdatp
 > - netfilter.mobileconfig
 > - sysext.mobileconfig
 >
->If any of these individual files is updated, you'd need to download the either the combined file again or the single updated file individually.
+>If any of these individual files is updated, you'd need to download either the combined file again or the single updated file individually.
 
 Onboarding a macOS device into Compliance solutions is a multiphase process.
 
@@ -98,7 +102,7 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 ### Configure Preference domain using the JAMF PRO console
 
 > [!IMPORTANT]
-> You must use ***com.microsoft.wdav*** as the Preference Domain value. Microsoft Defender uses this name and ***com.microsoft.wdav.ext*** to load its managed settings.
+> You must use ***com.microsoft.wdav*** as the Preference Domain value. Microsoft Defender for Endpoint uses this name and ***com.microsoft.wdav.ext*** to load its managed settings.
 
 1. Create a new configuration profile in JAMF Pro. Refer to the [JAMF Pro administrators guide](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/). Use these values:
     - Name: `MDATP MDAV configuration settings`
@@ -168,9 +172,9 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
     - Distribution method: `install automatically`
     - Level: `computer level`
 
-1. In **System extentions** profile, enter these values:
+1. In **System extensions** profile, enter these values:
     - Display Name: `Microsoft Corp. System Extensions`
-    - System Extenstion Types: `Allowed System Extensions`
+    - System Extension Types: `Allowed System Extensions`
     - Team Identifier: `UBF8T346G9`
     - Allowed System Extensions: `com.microsoft.wdav.epsext`, and `com.microsoft.wdav.netext`
 
@@ -184,13 +188,13 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 
 ### Configure Network extension
 
-1.	Use the **netfilter.mobileconfig**  file that you downloaded from Github.
+1.	Use the **netfilter.mobileconfig**  file that you downloaded from GitHub.
 
 2.	Upload to JAMF as described in [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
 ### Grant accessibility access to DLP
 
-1. Use the **accessibility.mobileconfig** file that you downloaded from Github.
+1. Use the **accessibility.mobileconfig** file that you downloaded from GitHub.
 
 2.	Upload to JAMF as described in [Deploying Custom Configuration Profiles using Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
@@ -278,4 +282,3 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 
 > [!IMPORTANT]
 > Offboarding causes the device to stop sending sensor data to the portal but data from the device, including reference to any alerts it has had will be retained for up to 6 months.
-

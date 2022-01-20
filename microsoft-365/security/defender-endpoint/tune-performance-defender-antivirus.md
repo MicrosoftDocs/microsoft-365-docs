@@ -18,6 +18,10 @@ ms.technology: mde
 
 # Performance analyzer for Microsoft Defender Antivirus
 
+**Applies to**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 **What is Microsoft Defender Antivirus performance analyzer?**
 
 In some cases, you might need to tune the performance of Microsoft Defender Antivirus as it scans specific files and folders. Performance analyzer is a PowerShell command-line tool that helps determine which files, file extensions, and processes might be causing performance issues on individual endpoints. This information can be used to better assess performance issues and apply remediation actions.
@@ -48,7 +52,7 @@ To start recording system events, open PowerShell in administrative mode and per
 
    `New-MpPerformanceRecording -RecordTo <recording.etl>`
  
-    where `-RecordTo` parameter specifies full path location in which the trace file is saved. For more cmdlet information, see [Defender](/powershell/module/defender).
+    where `-RecordTo` parameter specifies full path location in which the trace file is saved. For more cmdlet information, see [Microsoft Defender Antivirus cmdlets](/powershell/module/defender).
 
 2. If there are processes or services thought to be affecting performance, reproduce the situation by carrying out the relevant tasks.
 
@@ -92,7 +96,7 @@ Microsoft Defender Antivirus performance analyzer has the following prerequisite
 
 - Supported Windows versions: Windows 10, Windows 11, and Windows Server 2016 and above
 - Platform Version: 4.18.2108.7+
-- PowerShell Version: PowerShell Version 5.1
+- PowerShell Version: PowerShell Version 5.1, PowerShell ISE
 
 ## PowerShell reference
 There are two new PowerShell cmdlets used to tune performance of Microsoft Defender Antivirus: 
@@ -457,4 +461,3 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-

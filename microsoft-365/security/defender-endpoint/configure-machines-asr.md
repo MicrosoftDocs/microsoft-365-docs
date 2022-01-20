@@ -22,7 +22,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
@@ -34,21 +35,21 @@ ms.technology: mde
 <br>
 *Attack surface management card*
 
-The *Attack surface management card* is an entry point to tools in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> that you can use to:
+The *Attack surface management card* is an entry point to tools in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> that you can use to:
 
 * Understand how ASR rules are currently deployed in your organization.
 * Review ASR detections and identify possible incorrect detections.
 * Analyze the impact of exclusions and generate the list of file paths to exclude.
 
-Select **Go to attack surface management** \> **Reports** \> **Attack surface reduction rules** \> **Add exclusions**. From there, you can navigate to other sections of Microsoft 365 security center.
+Select **Go to attack surface management** \> **Reports** \> **Attack surface reduction rules** \> **Add exclusions**. From there, you can navigate to other sections of Microsoft 365 Defender portal.
 
-![Add exclusions tab in the Attack surface reduction rules page in Microsoft 365 security center.](images/secconmgmt_asr_m365exlusions.png)<br>
-The ***Add exclusions** tab in the Attack surface reduction rules page in Microsoft 365 security center*
+![Add exclusions tab in the Attack surface reduction rules page in Microsoft 365 Defender portal.](images/secconmgmt_asr_m365exlusions.png)<br>
+The ***Add exclusions** tab in the Attack surface reduction rules page in Microsoft 365 Defender portal*
 
 > [!NOTE]
-> To access Microsoft 365 security center, you need a Microsoft 365 E3 or E5 license and an account that has certain roles on Azure Active Directory. [Read about required licenses and permissions](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+> To access Microsoft 365 Defender portal, you need a Microsoft 365 E3 or E5 license and an account that has certain roles on Azure Active Directory. [Read about required licenses and permissions](/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
 
-For more information about ASR rule deployment in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a>, see [Monitor and manage ASR rule deployment and detections](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections).
+For more information about ASR rule deployment in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, see [Monitor and manage ASR rule deployment and detections](/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections).
 
 **Related topics**
 

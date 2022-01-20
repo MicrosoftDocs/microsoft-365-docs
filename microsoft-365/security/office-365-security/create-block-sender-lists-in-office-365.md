@@ -77,7 +77,7 @@ If you need to block messages that are sent to specific users or across the enti
 Regardless of the conditions or exceptions that you use to identify the messages, you configure the action to set the spam confidence level (SCL) of the message to 9, which marks the message a **High confidence spam**. For more information, see [Use mail flow rules to set the SCL in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 > [!IMPORTANT]
-> It's easy to create rules that are *overly* aggressive, so it's important that you identify only the messages you want to block using using very specific criteria. Also, be sure to enable auditing on the rule and test the results of the rule to ensure everything works as expected.
+> It's easy to create rules that are *overly* aggressive, so it's important that you identify only the messages you want to block using very specific criteria. Also, be sure to enable auditing on the rule and test the results of the rule to ensure everything works as expected.
 
 ## Use the IP Block List
 
