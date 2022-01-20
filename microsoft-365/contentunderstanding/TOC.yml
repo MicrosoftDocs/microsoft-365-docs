@@ -100,16 +100,6 @@
             - name: SharePoint Syntex accessibility mode
               href: accessibility-mode.md
 
-<!---
-        - name: Form processing models
-          items:
-            - name: Document understanding overview
-              href: document-understanding-overview.md
-            - name: Form processing overview 
-              href: form-processing-overview.md
-            - name: Difference between document understanding and form processing models 
-              href: difference-between-document-understanding-and-form-processing-model.md  
---->
 
     - name: Metadata search
       items: 
