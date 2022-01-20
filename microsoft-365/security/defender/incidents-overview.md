@@ -146,7 +146,7 @@ For more information about incident response across Microsoft products, see [thi
 
 Here's an example of security operations (SecOps) for Microsoft 365 Defender.
 
-:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="An example of security operations in the Microsoft 365 Defender portal" lightbox="../../media/incidents-overview/incidents-example-operations.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="An example of security operations for Microsoft 365 Defender" lightbox="../../media/incidents-overview/incidents-example-operations.png":::
 
 Daily tasks can include:
 
