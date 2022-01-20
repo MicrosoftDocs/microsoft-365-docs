@@ -3,7 +3,7 @@
         - name: Introduction to SharePoint Syntex
           href: index.md
  
-    - name: Get started with models
+    - name: Content models
       items:
             - name: Document understanding models
               items:
