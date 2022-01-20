@@ -322,7 +322,9 @@ If you wish to limit the risk of offloading endpoints not related to Live Events
 
 ### 3. Configure routing on the VPN to enable direct egress
 
-The final element is to add a direct route for the Live Event IPs described in **Gathering the current lists of CDN Endpoints** into the VPN configuration to ensure the traffic is not sent via the forced tunnel into the VPN. Detailed information on how to do this for Microsoft 365 Optimize endpoints can be found in the [Implement VPN split tunneling](#implement-vpn-split-tunneling) section and the process is exactly the same for the Stream/Live Events IPs listed in this document. Note that only the IPs (not FQDNs) published above should be used for VPN configuration.
+The final step is to add a direct route for the Live Event IPs described in **Gathering the current lists of CDN Endpoints** into the VPN configuration to ensure the traffic is not sent via the forced tunnel into the VPN. Detailed information on how to do this for Microsoft 365 Optimize endpoints can be found in the [Implement VPN split tunneling](#implement-vpn-split-tunneling) section and the process is exactly the same for the Stream/Live Events IPs listed in this document.
+
+Note that only the IPs (not FQDNs) from [Gathering the current lists of CDN Endpoints](#gathering-the-current-lists-of-cdn-endpoints) should be used for VPN configuration.
 
 #### Stream & Live Events Optimization FAQ
 
