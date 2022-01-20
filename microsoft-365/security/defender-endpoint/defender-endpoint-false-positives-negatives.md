@@ -254,7 +254,7 @@ To specify entities as exclusions for Microsoft Defender for Endpoint, create "a
 - [IP addresses, URLs, and domains](#indicators-for-ip-addresses-urls-or-domains)
 - [Application certificates](#indicators-for-application-certificates)
 
-:::image type="content" source="images/false-positives-indicators.png" alt-text="TheIndicator types" lightbox="images/false-positives-indicators.png":::
+:::image type="content" source="images/false-positives-indicators.png" alt-text="The Indicator types" lightbox="images/false-positives-indicators.png":::
 
 #### Indicators for files
 
