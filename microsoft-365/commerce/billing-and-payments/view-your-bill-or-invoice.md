@@ -24,7 +24,7 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 description: "Find your invoice or billing statement in the Microsoft 365 admin center. You can also save and print a copy of your bill."
-ms.date: 07/31/2020
+ms.date: 01/21/2022
 ---
 
 # View your bill or invoice
@@ -81,10 +81,9 @@ You can submit your Fapiao request to our [Fapiao management system](https://go.
 ::: moniker-end
 
 > [!NOTE]
-> 
+>
 > Microsoft 365 services do not provide payment receipts.
 > For credit card payments, please use the invoice and credit card billing statement to match your payment.
-
 
 ## Receive a copy of your billing statement in email
 
@@ -104,12 +103,24 @@ You can choose to receive a copy of your billing statement as an email attachmen
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Billing notifications</a> page.
-    
+
 ::: moniker-end
 
 2. Under **Receive billing statement as email attachment?** switch the toggle to **On**.
 
     You can stop receiving the billing statement emails at any time by switching the toggle to **Off**.
+
+## Run the Unknown Charge Diagnostic
+
+As a Microsoft 365 Global admin, you can use a diagnostic tool that runs within the Microsoft 365 admin center to research unexpected charges from Microsoft that appear on your bank or credit card statement.
+
+> [!NOTE]
+> The Unknown Charge Diagnostic is only available for customers who bought their products and services from Microsoft.com, including Microsoft 365 Enterprise, Education, and Non-profit.
+
+Select the **Run Tests** link below to open the diagnostic tool in the Microsoft 365 admin center.
+
+>[!div class="nextstepaction"]
+>pRun Tests: Unknown Charge](https://aka.ms/PillarUnknownCharge)
 
 ## Next steps
 
