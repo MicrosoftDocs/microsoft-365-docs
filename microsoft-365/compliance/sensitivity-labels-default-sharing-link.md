@@ -85,7 +85,7 @@ PowerShell examples, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8e
     Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
     ````
 
-To configure the settings for the default sharing link type for a site, make sure the [scope of the sensitivity label](sensitivity-labels.md#label-scopes) includes **Groups & sites**, which displays as **Site, UnifiedGroup** for the ContentType PowerShell setting. For documents, the scope must include **Files & emails**, which displays as **File, Email** for the ContentType PowerShell setting. Then:
+To configure the settings for the default sharing link type for a site, the [scope of the sensitivity label](sensitivity-labels.md#label-scopes) must include **Groups & sites** when you create the sensitivity label in the Microsoft 365 compliance center. After it's created, you see this displayed as **Site, UnifiedGroup** in the **Scope** column on the **Labels** page, and the PowerShell *ContentType* setting also displays this same value. For documents, the scope must include **Files & emails**, which displays as **File, Email**. Then:
 
 - When the scope includes **Groups & sites**, you can apply the label to a site, which sets the default sharing link type for that site. For information how to apply a sensitivity label to a site, see [How to apply sensitivity labels to containers](sensitivity-labels-teams-groups-sites.md#how-to-apply-sensitivity-labels-to-containers).
 
