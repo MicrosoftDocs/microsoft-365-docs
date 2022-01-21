@@ -31,7 +31,7 @@ More than 95% of Microsoft Managed Desktop devices are eligible for Windows 11, 
 
 For Microsoft Managed Desktop devices, you can [add devices to the Windows 11 test device group](/microsoft-365/managed-desktop/working-with-managed-desktop/test-win11-mmd?view=o365-worldwide#add-devices-to-the-windows-11-test-group). This group receives the Windows 11 general availability build along with a Microsoft Managed Desktop baseline configuration. Once added to the device group, allow one to two days for a device to pick up the new settings and be offered Windows 11.
 
-For your devices that aren't managed by Microsoft Managed Desktop, you can read [Endpoint Manager guidance](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/endpoint-manager-simplifies-upgrades-to-windows-11/ba-p/2771886) to learn about deploying Windows 11 yourself. If you have devices running Windows 11 and later enroll them in Microsoft Managed Desktop, they won't revert back to Windows 10.
+For your devices that aren't managed by Microsoft Managed Desktop, you can read [Endpoint Manager guidance](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/endpoint-manager-simplifies-upgrades-to-windows-11/ba-p/2771886) to learn about deploying Windows 11 yourself. If you have devices running Windows 11 and later, enroll them in Microsoft Managed Desktop; they won't revert back to Windows 10.
 
 ## Support for pre-release Windows 11 devices
 
