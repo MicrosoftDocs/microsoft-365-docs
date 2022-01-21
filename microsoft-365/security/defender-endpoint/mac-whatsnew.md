@@ -35,11 +35,9 @@ ms.technology: mde
 > 
 > End users will observe the following changes: 
 > - The application installation path has been changed from `/Application/Microsoft Defender ATP.app` to `/Applications/Microsoft Defender.app`.
-> - The new brand name will appear on the UX (user experience) as "Microsoft Defender" on every string, such as: 
->   - The product name displayed in the installer will change to "Microsoft Defender"
->   - The application  name will appear in Finder and in Activity Monitor as "Microsoft Defender"
+> - Within the user experiencce, occurrences of "Microsoft Defender ATP" have been replaced with "Microsoft Defender"
 > 
-> **Action required**: customers who have created custom configurations that rely on either the product name or application path must update these configurations with the new values listed above.
+> **Action required**: if your enterprise has custom configurations that rely on either the product name or application installation path, these configurations must be updated with the new values listed above.
 
 ## 101.54.16 (20.121111.15416.0)
 
