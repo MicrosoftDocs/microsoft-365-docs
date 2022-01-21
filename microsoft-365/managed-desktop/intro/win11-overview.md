@@ -21,7 +21,7 @@ For specific steps to follow to get Windows 11 installed on your Microsoft Manag
 
 Windows 11 became generally available on October 4, 2021. It is ready for consumer and enterprise deployment and is a fully supported platform. We will begin scheduling deployments for all Microsoft Managed Desktop devices starting January 2023, but will provide full support for those that wish to deploy Windows 11 sooner. We'll consult and advise admins to develop and implement migration plans for each tenant based on technical readiness and your business considerations.
 
-Microsoft Managed Desktop continues to support Windows 10 in parallel until it reaches end of enterprise support. Please see [Windows 10 release information](/windows/release-health/release-information) for life cycle information.
+Microsoft Managed Desktop continues to support Windows 10 in parallel until it reaches end of enterprise support. See [Windows 10 release information](/windows/release-health/release-information) for life cycle information.
 
 
 
