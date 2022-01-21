@@ -115,6 +115,8 @@ After a sensitivity label is applied to an email or document, any configured pro
     
     For more information about the **Auto-labeling for files and emails** settings when you create or edit a sensitivity label, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) for Office apps, and [Labeling in Azure Purview](/azure/purview/create-sensitivity-label).
 
+- **Set the default sharing link type** for SharePoint sites and individual documents. To help prevent users oversharing, set the [default scope and permissions](sensitivity-labels-default-sharing-link.md) for when users share documents from SharePoint and OneDrive.
+
 ### Label scopes
 
 When you create a sensitivity label, you're asked to configure the label's scope which determines two things:
