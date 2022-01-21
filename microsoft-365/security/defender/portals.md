@@ -13,7 +13,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
