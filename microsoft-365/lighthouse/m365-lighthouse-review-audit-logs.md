@@ -22,7 +22,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 > [!NOTE]
 > The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
-Microsoft 365 Lighthouse audit logs record actions that generate a change in Lighthouse or other Microsoft 365 services. Create, update (edit), delete, assign, and remote actions all create audit events that you can review. By default, auditing is enabled for all customers. It can't be disabled.
+Microsoft 365 Lighthouse audit logs record actions that generate a change in Lighthouse or other Microsoft 365 services. Create, edit, delete, assign, and remote actions all create audit events that you can review. By default, auditing is enabled for all customers. It can't be disabled.
 
 ## Before you begin
 
@@ -32,7 +32,7 @@ To view audit logs, you must have one of the following permissions:
 
 - Partner Center role - Admin Agent
 
-## Review audit logs
+## Review logs
 
 1. In the left navigation pane in Lighthouse, select **Audit logs**.
 
@@ -43,8 +43,8 @@ To view audit logs, you must have one of the following permissions:
 
 - **Date range** - Previous month, week, or day.
 - **Tenants** - Tenant tags or customer tenant names.
-- **Area** - The area where the action was initiated. The area corresponds to the entries in the left navigation bar.
-- **Activity** - Microsoft 365 activity type that corresponds to the action taken. See Activity Types table for more information.
+- **Area** - The area where the action occurred. The area corresponds to the entries in the left navigation bar.
+- **Activity** - Microsoft 365 activity type that corresponds to the action taken. For more information, see Activity Types table for more information.
 - **Initiated by**: Who initiated the action.
 
 3.Select a log from the list to see full details including the **Request** body.
@@ -62,7 +62,7 @@ The following table is a list of activity types captured within Lighthouse audit
 | tenantTags                               | Tenants                          | Create or delete a tag                                           |     | Microsoft 365 Lighthouse   |
 | assignTag                                | Tenants                          | Apply a tag from a customer                                      |     | Microsoft 365 Lighthouse   |
 | unassignTag                              | Tenants                          | Remove a tag from a customer                                     |     | Microsoft 365 Lighthouse   |
-| tenantCustomizedInformation              | Tenants                          | Create, update or delete customer website or contact information |     | Microsoft 365 Lighthouse   |
+| tenantCustomizedInformation              | Tenants                          | Create, update, or delete customer website or contact information |     | Microsoft 365 Lighthouse   |
 | changeDeploymentStatus                   | Tenants                          | Action plan status for a deployment plan                         |     | Microsoft 365 Lighthouse   |
 | conditionalAccessPolicy                  | Tenants                          | Require MFA for admins                                           |     | Azure AD                   |
 | conditionalAccessPolicy                  | Tenants                          | Require MFA for users                                            |     | Azure AD                   |
@@ -86,7 +86,7 @@ The following table is a list of activity types captured within Lighthouse audit
 
 ## Next steps
 
-If you need additional log data, you use Microsoft Graph API to access additional audit events. For more information, see [Use the Microsoft Graph API](https://docs.microsoft.com/en-us/graph/use-the-api) and [**List auditEvents**](https://docs.microsoft.com/en-us/graph/api/resources/intune-auditing-auditevent?view=graph-rest-1.0).
+If you need more information, you can use Microsoft Graph API to access more audit events. For more information, see [Use the Microsoft Graph API](https://docs.microsoft.com/en-us/graph/use-the-api) and [**List auditEvents**](https://docs.microsoft.com/en-us/graph/api/resources/intune-auditing-auditevent?view=graph-rest-1.0).
 
 ## Related content
 
