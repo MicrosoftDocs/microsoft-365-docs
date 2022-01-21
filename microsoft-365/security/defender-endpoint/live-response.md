@@ -58,6 +58,10 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 
   - **macOS** - Only applicable for Public Preview, minimum required version: 101.43.84 
   
+   > [!NOTE]
+   > Currently only Intel-based macOS systems are supported.
+    
+
   - **Linux** - Only applicable for Public Preview, minimum required version: 101.45.13 
     
   - **Windows Server 2012 R2** - with [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
