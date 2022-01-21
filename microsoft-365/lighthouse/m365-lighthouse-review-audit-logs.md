@@ -47,7 +47,7 @@ To view audit logs, you must have one of the following permissions:
 - **Activity** - Microsoft 365 activity type that corresponds to the action taken. See Activity Types table for more information.
 - **Initiated by**: Who initiated the action.
 
-3. Select a log from the list to see full details including the **Request** body.
+3.Select a log from the list to see full details including the **Request** body.
 
 Select **Export**, to export log data to an Excel comma-separated values (.csv) file.
 
