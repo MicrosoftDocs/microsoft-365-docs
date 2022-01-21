@@ -16,8 +16,9 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-
+   - M365-security-compliance
+  - m365solution-scenario
+  - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
 ---
