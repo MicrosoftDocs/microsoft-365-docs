@@ -42,11 +42,15 @@ Microsoft Defender for Endpoint on Android and iOS provides the below key capabi
 |Web Protection|Anti-phishing, blocking unsafe network connections, and support for custom indicators.|
 |Malware Protection (Android-only)|Scanning for malicious apps.|
 |Jailbreak Detection (iOS-only)|Detection of jailbroken devices.|
+|Threat and Vulnerability Management (TVM). In preview. See note below*|Vulnerability assessment of onboarded mobile devices. Visit this [page](next-gen-threat-and-vuln-mgt.md) to learn more about threat and vulnerability management in Microsoft Defender for Endpoint. *Note that on iOS only OS vulnerabilities are supported in this preview.*|
 |Unified alerting|Alerts from all platforms in the unified M365 security console|
 |Conditional Access, Conditional launch|Blocking risky devices from accessing corporate resources. Defender for Endpoint risk signals can also be added to app protection policies (MAM)|
 |Integration with Microsoft Tunnel|Can integrate with Microsoft Tunnel, a VPN gateway solution to enable security and connectivity in a single app. Available only on Android currently|
 
 All these capabilities are available for Microsoft Defender for Endpoint license holders. For more information, see [Licensing requirements](minimum-requirements.md#licensing-requirements).
+
+> [!NOTE]
+> Vulnerability assessment on Android and iOS is currently in preview and may be substantially modified before it's commercially released. If you’ve enabled public preview features, you can check out the TVM functionality on Android and iOS today! If not, we encourage you to [turn on preview features](preview.md) for Microsoft Defender for Endpoint to get access to the newest capabilities.
 
 ## Overview and Deploy
 

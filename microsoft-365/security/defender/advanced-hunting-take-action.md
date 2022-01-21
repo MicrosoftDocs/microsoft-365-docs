@@ -39,7 +39,7 @@ You can quickly contain threats or address compromised assets that you find in [
 - Quarantine files
 
 ## Required permissions
-To be able to take action through advanced hunting, you need a role in Microsoft Defender for Endpoint with [permissions to submit remediation actions on devices](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). If you can't take action, contact a global administrator about getting the following permission:
+To take action through advanced hunting, you need a role in Microsoft Defender for Endpoint with [permissions to submit remediation actions on devices](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options). If you can't take action, contact a global administrator about getting the following permission:
 
 *Active remediation actions > Threat and vulnerability management - Remediation handling*
 
@@ -70,7 +70,7 @@ To learn more about how quarantine actions are taken and how files can be restor
 ## Take action
 To take any of the described actions, select one or more records in your query results and then select **Take actions**. A wizard will guide you through the process of selecting and then submitting your preferred actions.
 
-![Image of selected record with panel for inspecting the record.](../../media/mtp-ah/ah-take-actions.png)
+![Image of selected record with panel for inspecting the record.](../../media/take-action-multiple.png)
 
 ## Review actions taken
 Each action is individually recorded in the [action center](m365d-action-center.md) under **Action center** > **History** ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Go to the action center to check the status of each action.

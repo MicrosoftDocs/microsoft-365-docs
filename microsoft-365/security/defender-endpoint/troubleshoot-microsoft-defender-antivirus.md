@@ -2,7 +2,6 @@
 title: Microsoft Defender Antivirus event IDs and error codes
 description: Look up the causes and solutions for Microsoft Defender Antivirus event IDs and errors
 keywords: event, error code, siem, logging, troubleshooting, wef, windows event forwarding
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,7 +10,7 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/11/2018
+ms.date: 10/19/2018
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
@@ -24,14 +23,13 @@ ms.collection: M365-security-compliance
 
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 If you encounter a problem with Microsoft Defender Antivirus, you can search the tables in this topic to find a matching issue and potential solution.
 
 The tables list:
 
-- [Microsoft Defender Antivirus event IDs](#windows-defender-av-ids) (these apply to both Windows 10 and Windows Server 2016)
+- [Microsoft Defender Antivirus event IDs](#windows-defender-av-ids) (these apply to Windows 10, Windows 11, and Windows Server 2016)
 - [Microsoft Defender Antivirus client error codes](#error-codes)
 - [Internal Microsoft Defender Antivirus client error codes (used by Microsoft during development and testing)](#internal-error-codes)
 
@@ -401,7 +399,7 @@ For more information, see the following:
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>Status: &lt;Status&gt;</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
@@ -834,7 +832,7 @@ Microsoft Defender Antivirus has detected a suspicious behavior.<br/>For more in
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>Status: &lt;Status&gt;</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
@@ -911,7 +909,7 @@ Microsoft Defender Antivirus has detected malware or other potentially unwanted 
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
@@ -992,7 +990,7 @@ Microsoft Defender Antivirus has taken action to protect this machine from malwa
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
@@ -1119,7 +1117,7 @@ Microsoft Defender Antivirus has encountered a non-critical error when taking ac
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
@@ -1214,7 +1212,7 @@ Microsoft Defender Antivirus has encountered a critical error when taking action
 <li>IEPROTECT: IE - IExtensionValidation; this protects against malicious webpage controls</li>
 <li>Early Launch Antimalware (ELAM). This includes malware detected by the boot sequence</li>
 <li>Remote attestation</li>
-</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PS, VBS), though it can be invoked by third parties as well.
+</ul>Antimalware Scan Interface (AMSI). Primarily used to protect scripts (PowerShell, VBS), though it can be invoked by third parties as well.
 UAC</dt>
 <dt>User: &lt;Domain&gt;\&lt;User&gt;</dt>
 <dt>Process Name: &lt;Process in the PID&gt;</dt>
@@ -2777,8 +2775,7 @@ Note: The size of the definitions file downloaded from the site can exceed 60 MB
 </b>
 </td></tr><tr><td>Possible reason</td>
 <td>
-This error indicates that there might be an engine configuration error; commonly, this is related to input
-data that does not allow the engine to function properly.
+This error indicates that there might be an engine configuration error; commonly, this is related to input data that does not allow the engine to function properly.
 </td>
 </tr>
 <tr>
@@ -2907,7 +2904,7 @@ Run offline Microsoft Defender Antivirus. You can read about how to do this in t
 <td>
 This error indicates that Microsoft Defender Antivirus does not support the current version of the platform and requires a new version of the platform.
 </td></tr><tr><td>Resolution</td><td>
-You can only use Microsoft Defender Antivirus in Windows 10. For Windows 8, Windows 7 and Windows Vista, you can use <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.<br/></td>
+You can only use Microsoft Defender Antivirus in Windows 10 and Windows 11. For Windows 8, Windows 7 and Windows Vista, you can use <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.<br/></td>
 </tr>
 </table>
 

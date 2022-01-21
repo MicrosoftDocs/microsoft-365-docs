@@ -82,12 +82,6 @@ If a tenant was created by Microsoft, you can claim and manage that tenant by fo
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-3. Go to <a href="https://portal.office.de" target="_blank">https://portal.office.de</a>
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 3. Go to <a href="https://portal.partner.microsoftonline.cn" target="_blank">https://portal.partner.microsoftonline.cn</a>.
@@ -166,12 +160,6 @@ If a user signed up for Power BI, but you no longer want them to have access to 
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
 ::: moniker-end
 

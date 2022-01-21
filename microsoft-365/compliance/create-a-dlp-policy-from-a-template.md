@@ -18,6 +18,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-mar2020
+- admindeeplinkCOMPLIANCE
 description: In this article, you'll learn about how to create DLP policies using one of the templates included in Office 365.
 ---
 
@@ -33,7 +34,7 @@ You can also choose the Custom template, which has no default rules, and configu
 
 ### Create the DLP policy from a template
 
-1. Sign in at <https://compliance.microsoft.com>.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
 
 2. In the Compliance Center \> left navigation \> **Solutions** \> **Data loss prevention** \> **Policies** \> **+ Create policy**.
 

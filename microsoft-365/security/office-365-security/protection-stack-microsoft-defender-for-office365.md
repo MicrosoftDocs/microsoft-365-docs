@@ -111,7 +111,7 @@ The last stage takes place after mail or file delivery, acting on mail that is i
 
 3. **ZAP for malware** retroactively detects and neutralizes malicious malware messages that have already been delivered to Exchange Online mailboxes.
 
-4. **ZAP for phishing** retroactively detects and neutralizes malicious spam messages that have already been delivered to Exchange Online mailboxes.
+4. **ZAP for spam** retroactively detects and neutralizes malicious spam messages that have already been delivered to Exchange Online mailboxes.
 
 5. **Campaign Views** let administrators see the big picture of an attack, faster and more completely, than any team could without automation. Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malware data across the entire service to help identify campaigns, and then allows admins to investigate them from start to end, including targets, impacts, and flows, that are also available in a downloadable campaign write-up.
 

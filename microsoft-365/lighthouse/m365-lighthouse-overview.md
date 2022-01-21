@@ -1,6 +1,6 @@
 ---
 title: "Overview of Microsoft 365 Lighthouse"
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
@@ -49,7 +49,7 @@ Lighthouse helps MSPs secure and manage Microsoft 365 services and connected end
 - Simplifying common tasks like resetting a password.
 - Configuring multifactor authentication and self-service password reset, including tools to help drive adoption by users. 
 - Understanding and protecting against risky sign-ins.
-- Managing threats on Windows 10 devices by providing details on threats detected by Microsoft Defender and actions to take to resolve issues and keep devices up to date.
+- Managing threats on Windows 10 devices by providing details on threats detected by Microsoft 365 Defender and actions to take to resolve issues and keep devices up to date.
 - Providing insights into Microsoft 365 service incidents and advisories that impact the customer tenants they manage.
 
 > [!NOTE] 
@@ -57,7 +57,8 @@ Lighthouse helps MSPs secure and manage Microsoft 365 services and connected end
 
 ## Related content
 
-[Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)\
-[Microsoft 365 Lighthouse tenant list overview](m365-lighthouse-tenant-list-overview.md) (article)\
-[Microsoft 365 Lighthouse Device compliance page overview](m365-lighthouse-device-compliance-page-overview.md) (article)\
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)  
+[Microsoft 365 Lighthouse Tenants page overview](m365-lighthouse-tenants-page-overview.md) (article)   
+[Microsoft 365 Lighthouse Device compliance page overview](m365-lighthouse-device-compliance-page-overview.md) (article)   
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)   
+[Microsoft Defender for Business](../security/defender-business/index.yml)

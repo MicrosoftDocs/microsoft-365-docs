@@ -62,7 +62,7 @@ By using the search results from the previous example, 0.62% of all mailboxes it
 
 `(Size of all partially indexed items/Size of all items) x 100`
 
-`(10.27 GB/146.46 MB) x 100 = 7.0%`
+`(10.27 GB/146.46 GB) x 100 = 7.0%`
 
 So in the previous example, 7% of the total size of mailbox items are from partially indexed items. As previously stated, most organizations customers have less than 1% of content by volume and less than 12% of content by size that is partially indexed.
 

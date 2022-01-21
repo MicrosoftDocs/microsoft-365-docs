@@ -11,7 +11,7 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-mms.collection: 
+ms.collection: 
   - m365-security-compliance
   - m365initiative-defender-endpoint
 ms.topic: conceptual
@@ -24,10 +24,12 @@ ms.technology: mde
 
 **Applies to:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-This document provides instructions on how to narrow down performance issues related to Defender for Endpoint on Linux using the available troubleshooting tools to be able to understand and mitigate the existing resource shortages and the processes that are making the system into such situations. Performance problems are mainly caused by bottlenecks in one or more hardware subsystems, depending on the profile of resource utilization on the system. Sometimes applications are sensitive to disk I/O resources and may need more CPU capacity, and sometimes some configurations are not sustainable, and may triggers too many new processes, and opens too many file descriptors.
+This document provides instructions on how to narrow down performance issues related to Defender for Endpoint on Linux using the available diagnostic tools to be able to understand and mitigate the existing resource shortages and the processes that are making the system into such situations. Performance problems are mainly caused by bottlenecks in one or more hardware subsystems, depending on the profile of resource utilization on the system. Sometimes applications are sensitive to disk I/O resources and may need more CPU capacity, and sometimes some configurations are not sustainable, and may triggers too many new processes, and opens too many file descriptors.
 
 Depending on the applications that you are running and your device characteristics, you may experience suboptimal performance when running Defender for Endpoint on Linux. In particular, applications or system processes that access many resources such as CPU, Disk, and Memory over a short timespan can lead to performance issues in Defender for Endpoint on Linux.
 
@@ -106,6 +108,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
 
     The output of this command should be similar to the following:
 
+
     ```Output
     --2020-11-14 11:27:27-- https://raw.githubusercontent.com/microsoft.mdatp-xplat/master/linus/diagnostic/high_cpu_parser.py
     Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.xxx.xxx
@@ -113,7 +116,6 @@ The following steps can be used to troubleshoot and mitigate these issues:
     HTTP request sent, awaiting response... 200 OK
     Length: 1020 [text/plain]
     Saving to: 'high_cpu_parser.py'
-
     100%[===========================================>] 1,020    --.-K/s   in 0s
     ```
 
@@ -156,7 +158,7 @@ The following steps can be used to troubleshoot and mitigate these issues:
 ## Troubleshoot performance issues using Microsoft Defender for Endpoint Client Analyzer
 
 **Applies to:**
-- Performance issues of all available MDE components such as AV and EDR  
+- Performance issues of all available Defender for Endpoint components such as AV and EDR  
 
 The Microsoft Defender for Endpoint Client Analyzer (MDECA) can collect traces, logs, and diagnostic information in order to troubleshoot performance issues on [onboarded devices](/microsoft-365/security/defender-endpoint/onboard-configure) on Linux.
 
@@ -247,6 +249,8 @@ Open a terminal or SSH into the relevant machine and run the following commands:
 
 > [!NOTE]
 > In case after following the above steps the performance problem persists, please contact customer support for further instructions and mitigation.
+
+
 
 ## See also
 

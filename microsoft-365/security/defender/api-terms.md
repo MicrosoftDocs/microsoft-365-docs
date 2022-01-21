@@ -61,7 +61,7 @@ The advanced hunting API has some [limitations](/windows/security/threat-protect
 The Microsoft 365 Defender APIs have throttling thresholds.
 
 - **Incidents API**: Up to 50 calls per minute or 1500 calls per hour.
-- **Advanced Hunting API**: Up to 15 calls per minute, 10 minutes of running time per hour, and 4 hours of running time per day.
+- **Advanced Hunting API**: Up to 45 calls per minute, 10 minutes of running time per hour, and 4 hours of running time per day.
 
 The HTTP response status code indicating throttling is `429`.
 

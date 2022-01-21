@@ -36,7 +36,7 @@ Auto-applying retention labels are powerful because:
     
 - Users no longer need to know about data governance policies - they can focus on their work.
     
-You can apply retention labels to content automatically when that content doesn't already have a retention label applied and contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md).
+You can apply retention labels to content automatically when that content doesn't already have a retention label applied and contains sensitive information, keywords or searchable properties, or a match for [trainable classifiers](classifier-get-started-with.md). Now in preview, you can also automatically apply a retention label to cloud attachments that are stored in SharePoint or OneDrive.
 
 > [!TIP]
 > Use searchable properties to identify [Teams meeting recordings](#microsoft-teams-meeting-recordings) and [items that have a sensitivity label applied](#identify-files-and-emails-that-have-a-sensitivity-label).
@@ -52,7 +52,7 @@ Use the following instructions for the two admin steps.
 >
 > - Apply a retention label to a document understanding model in SharePoint Syntex
 > - Apply a default retention label for SharePoint and Outlook
->- Apply a retention label to email by using Outlook rules
+> - Apply a retention label to email by using Outlook rules
 >
 > For these scenarios, see [Create and apply retention labels in apps](create-apply-retention-labels.md).
 
@@ -82,7 +82,7 @@ Navigation instructions depend on whether you're using [records management](reco
 
 2. Follow the prompts in the configuration.
     
-    For more information about the retention settings, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content).
+    For more information about the retention settings, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content). However, if the label will be used for [cloud attachments](#auto-apply-labels-to-cloud-attachments), make sure you configure the start of the retention period to be **When items were labeled**.
     
     If you are using records management:
     
@@ -91,7 +91,6 @@ Navigation instructions depend on whether you're using [records management](reco
     - To use the retention label to declare records, select **Mark items as records**, or **Mark items as regulatory records**. For more information, see [Configuring retention labels to declare records](declare-records.md#configuring-retention-labels-to-declare-records).
 
 3. After you have created the label and you see the options to publish the label, auto-apply the label, or just save the label: Select **Auto-apply this label to a specific type of content**, and then select **Done** 
-4.  configuration that takes you directly to step 2 in the following procedure.
 
 To edit an existing label, select it, and then select the **Edit label** option to start the **Edit retention label** configuration that lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
 
@@ -142,7 +141,11 @@ You can apply retention labels to content automatically when that content contai
 
 - [A match for trainable classifiers](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
-Use the following table to identify when retention labels can be automatically applied to items for Exchange:
+Or, you can automatically apply retention labels to newly shared [cloud attachments](#auto-apply-labels-to-cloud-attachments).
+
+When you configure retention labels to auto-apply based on sensitive information, keywords or searchable properties, or trainable classifiers, use the following table to identify when retention labels can be automatically applied.
+
+Exchange:
 
 |Condition|Items in transit (sent or received) |Existing items (data at rest)|
 |:-----|:-----|:-----|
@@ -151,7 +154,7 @@ Use the following table to identify when retention labels can be automatically a
 |Specific keywords or searchable properties| Yes |Yes |
 |Trainable classifiers| Yes | Yes (last six months only) |
 
-Use the following table to identify when retention labels can be automatically applied to items for SharePoint and OneDrive:
+SharePoint and OneDrive:
 
 |Condition|New or modified items |Existing items (data at rest)|
 |:-----|:-----|:-----|
@@ -165,15 +168,15 @@ Additionally, SharePoint items that are in draft or that have never been publish
 #### Auto-apply labels to content with specific types of sensitive information
 
 > [!IMPORTANT]
-> For emails that you auto-apply by identifying sensitive information, it's not supported to scope the policy to include or exclude specific recipients; this policy configuration supports the **All recipients** setting only. Specific to this policy configuration, **All recipients** include mailboxes from Microsoft 365 groups.
+> For emails that you auto-apply by identifying sensitive information, all mailboxes are automatically included, which includes mailboxes from Microsoft 365 groups.
 > 
-> Also specific to this policy configuration, if you select the **Microsoft 365 Groups** location, only SharePoint sites connected to a Microsoft 365 group are included and not mailboxes from Microsoft 365 groups.
+> Although group mailboxes would usually be included by selecting the **Microsoft 365 Groups** location, for this specific policy configuration, the groups location includes only SharePoint sites connected to a Microsoft 365 group.
 
 When you create auto-apply retention label policies for sensitive information, you see the same list of policy templates as when you create a data loss prevention (DLP) policy. Each template is preconfigured to look for specific types of sensitive information. In the following example, the sensitive info types are from the **Privacy** category, and **U.S Personally Identifiable Information (PII) Data** template:
 
 ![Policy templates with sensitive information types.](../media/sensitive-info-configuration.png)
 
-To learn more about the sensitivity information types, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md). Currently, [exact data matches](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) and [document fingerprinting](document-fingerprinting.md) are not supported for this scenario.
+To learn more about the sensitivity information types, see [Learn about sensitive information types](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types). Currently, [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) and [document fingerprinting](document-fingerprinting.md) are not supported for this scenario.
 
 After you select a policy template, you can add or remove any types of sensitive information, and you can change the confidence level and instance count. In the previous example screenshot, these options have been changed so that a retention label will be auto-applied only when:
   
@@ -289,12 +292,12 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 #### Auto-apply labels to content by using trainable classifiers
 
-When you choose the option for a trainable classifier, you can select one of the built-in classifiers, or a custom classifier. The built-in classifiers include **Resumes**, **SourceCode**, **Targeted Harassment**, **Profanity**, and **Threat**:
+When you choose the option for a trainable classifier, you can select one or more of the pre-trained or custom trainable classifiers:
 
 ![Choose trainable classifier.](../media/retention-label-classifers.png)
 
 > [!CAUTION]
-> We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use this built-in classifier and if you are currently using it, you should move your business processes off it. We recommend using the **Targeted Harassment**, **Profanity**, and **Threat** built-in classifiers instead.
+> We are deprecating the **Offensive Language** pre-trained classifier because it has been producing a high number of false positives. Don't use this classifier and if you are currently using it, we recommend you move your business processes off it and instead use the **Targeted Harassment**, **Profanity**, and **Threat** pre-trained classifiers.
 
 To automatically apply a label by using this option, SharePoint sites and mailboxes must have at least 10 MB of data.
 
@@ -307,11 +310,58 @@ To consider when using trainable classifiers to auto-apply retention labels:
 
 - You can't auto-label SharePoint and OneDrive items that are older than six months.
 
+#### Auto-apply labels to cloud attachments
+
+> [!NOTE]
+> This option is gradually rolling out in preview and is subject to change.
+
+You might need to use this option if you're required to capture and retain all copies of files in your tenant that are sent over communications by users. You use this option in conjunction with retention policies for the communication services themselves, Exchange and Teams.
+
+> [!IMPORTANT]
+> When you select a label to use for auto-applying retention labels for cloud attachments, ensure that the label retention setting **Start the retention period based on** is **When items were labeled**.
+
+Cloud attachments, sometimes also known as modern attachments, are a sharing mechanism that uses embedded links to files that are stored in the cloud. They support centralized storage for shared content with collaborative benefits, such as version control. Cloud attachments are not attached copies of a file or a URL text link to a file. You might find it helpful to refer to the visual checklists for supported cloud attachments in [Outlook](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-outlook) and [Teams](/office365/troubleshoot/retention/cannot-retain-cloud-attachments#cloud-attachments-in-teams).
+
+When you choose the option to apply a retention label to cloud attachments, for compliance purposes, a copy of that file is created at the time of sharing. Your selected retention label is then applied to the copy that can then be identified using eDiscovery. Users are not aware of the copy that is stored in the Preservation Hold library. The retention label is not applied to the message itself, or to the original file.
+
+If the file is modified and shared again, a new copy of the file as a new version is saved in the Preservation Hold library. For more information, including why you should use the **When items were labeled** label setting, see [How retention works with cloud attachments](retention-policies-sharepoint.md#how-retention-works-with-cloud-attachments).
+
+The cloud attachments supported for this option are files such as documents, videos, and images that are stored in SharePoint and OneDrive. For Teams, cloud attachments shared in chat messages, and standard and private channels are supported. Cloud attachments shared over meeting invites and apps other than Teams or Outlook aren't supported. The cloud attachments must be shared by users; cloud attachments sent via bots aren't supported.
+
+Although not required for this option, we recommend that you ensure versioning is enabled for your SharePoint sites and OneDrive accounts so that the version shared can be accurately captured. If versioning isn't enabled, the last available version will be retained. Documents in draft or that have never been published aren't supported.
+
+When you select a label to use for auto-applying retention labels for cloud attachments, make sure the label retention setting **Start the retention period based on** is **When items were labeled**. 
+
+When you configure the locations for this option, you can select:
+
+- **SharePoint sites** for shared files stored in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites. 
+- **Microsoft 365 Groups** for shared files that are stored in team sites connected by Microsoft 365 groups.
+- **OneDrive accounts** for shared files stored in users' OneDrive.
+
+You will need to create separate retention policies if you want to retain or delete the original files, email messages, or Teams messages.
+
+> [!NOTE]
+> If you want retained cloud attachments to expire at the same time as the messages that contained them, configure the retention label to have the same retain and then delete actions and timings as your retention policies for Exchange and Teams.
+
+To consider when auto-applying retention labels to cloud attachments:
+
+- Only newly shared cloud attachments will be auto-labeled for retention.
+
+- Cloud attachments shared outside Teams and Outlook aren't supported.
+
+- The following items aren't supported as cloud attachments that can be retained:
+    - SharePoint sites, pages, lists, forms, folders, document sets, and OneNote pages.
+    - Files shared by users who don't have access to those files.
+    - Files that are deleted before the cloud attachment is sent. This can happen if a user copies and pastes a previously shared attachment from another message, without first confirming that the file is still available. Or, somebody forwards an old message when the file is now deleted.
+    - Files that are shared by guests or users outside your organization.
+    - Files in draft emails and messages that aren't sent.
+    - Empty files.
+
 ## How long it takes for retention labels to take effect
 
-When you auto-apply retention labels, it can take up to seven days for the retention labels to be applied to all existing content that matches the conditions.
+When you auto-apply retention labels based on sensitive information, keywords or searchable properties, or trainable classifiers, it can take up to seven days for the retention labels to be applied:
   
-![Diagram of when auto-apply labels take effect.](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
+![Diagram of when auto-apply labels take effect.](../media/retention-labels-autoapply-timings.png)
 
 If the expected labels don't appear after seven days, check the **Status** of the auto-apply policy by selecting it from the **Label policies** page in the compliance center. If you see the status of **Off (Error)** and in the details for the locations see a message that it's taking longer than expected to deploy the policy (for SharePoint) or to try redeploying the policy (for OneDrive), try running the [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell command to retry the policy distribution:
 
@@ -325,10 +375,12 @@ If the expected labels don't appear after seven days, check the **Status** of th
 
 ## Updating retention labels and their policies
 
-When you edit a retention label or auto-apply policy, and the retention label is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
+For auto-apply retention label policies that are configured for sensitive information, keywords or searchable properties, or a match for trainable classifiers: When a retention label from the policy is already applied to content, a change in configuration to the selected label and policy will be automatically applied to this content in addition to content that's newly identified.
+
+For auto-apply retention label policies that are configured for cloud attachments: Because this policy applies to newly shared files rather than existing files, a change in configuration to the selected label and policy will be automatically applied to newly shared content only.
 
 Some settings can't be changed after the label or policy is created and saved, which include:
-- The retention label and policy name, and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
+- Names for retention labels and their policies, the scope type (adaptive or static), and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
 - The option to mark items as a record.
 
 ### Deleting retention labels

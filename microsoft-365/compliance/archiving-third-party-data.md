@@ -50,8 +50,10 @@ Click the link in the **Third-party data** column to go the step-by-step instruc
 |Third-party data  |Litigation hold|eDiscovery  |Retention settings  |Records management  |Communication compliance  |Insider risk management  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
 |[Bloomberg Message](archive-bloomberg-message-data.md)     |![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)||
+|[Epic EHR healthcare](import-epic-data.md) ||||||![Check mark](../media/checkmark.png)|
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
-|[Human resources (HR)](import-hr-data.md) ||||||![Check mark](../media/checkmark.png)
+|[Generic EHR healthcare](import-healthcare-data.md) ||||||![Check mark](../media/checkmark.png)|
+|[Human resources (HR)](import-hr-data.md) ||||||![Check mark](../media/checkmark.png)|
 |[ICE Chat](archive-icechat-data.md)     |![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![Check mark.](../media/checkmark.png)|![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)||
 |[LinkedIn](archive-linkedin-data.md)   |![Check mark.](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|![Check mark](../media/checkmark.png)|||
@@ -214,7 +216,7 @@ You can use this query in the **Keywords** box for a Content search, a search as
 
 ![Query to search for third-party data.](..\media\SearchThirdPartyData1.png)
 
-You can also use the `kind:externaldata` property:value pair to to narrow the scope of searches to third-party data. For example, to search for items imported from any third-party data source that contain the word *contoso* in the **Subject** property of the imported item, use the following query in the **Keywords** box:
+You can also use the `kind:externaldata` property:value pair to narrow the scope of searches to third-party data. For example, to search for items imported from any third-party data source that contain the word *contoso* in the **Subject** property of the imported item, use the following query in the **Keywords** box:
 
 ```powershell
 subject:contoso AND kind:externaldata

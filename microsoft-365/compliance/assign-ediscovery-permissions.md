@@ -20,6 +20,7 @@ description: "Assign the permissions required to perform eDiscovery-related task
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 ---
 
 # Assign eDiscovery permissions in the Microsoft 365 compliance center
@@ -43,7 +44,7 @@ The primary eDiscovery-related role group in Microsoft 365 compliance center is 
   For reasons why you might want eDiscovery Administrators in your organization, see [More information](#more-information).
 
 > [!NOTE]
-> To analyze a user's data using Advanced eDiscovery, the user (the custodian of the data) must be assigned an Office 365 E5 or Microsoft 365 E5 license. Alternatively, users with an Office 365 E1 or a Office 365 or Microsoft 365 E3 license can be assigned an Microsoft 365 E5 Compliance or Microsoft 365 eDiscovery and Audit add-on license. Administrators, compliance officers, or legal personnel who are assigned to cases as members and use Advanced eDiscovery to collect, view, and analyze data don't need an E5 license. For more information about Advanced eDiscovery licensing, see [Subscriptions and licensing in Advanced eDiscovery](overview-ediscovery-20.md#subscriptions-and-licensing).
+> To analyze a user's data using Advanced eDiscovery, the user (the custodian of the data) must be assigned an Office 365 E5 or Microsoft 365 E5 license. Alternatively, users with an Office 365 E1 or a Office 365 or Microsoft 365 E3 license can be assigned a Microsoft 365 E5 Compliance or Microsoft 365 eDiscovery and Audit add-on license. Administrators, compliance officers, or legal personnel who are assigned to cases as members and use Advanced eDiscovery to collect, view, and analyze data don't need an E5 license. For more information about Advanced eDiscovery licensing, see [Subscriptions and licensing in Advanced eDiscovery](overview-ediscovery-20.md#subscriptions-and-licensing).
   
 ## Before you assign permissions
 
@@ -194,7 +195,7 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Exchange distribution groups and Microsoft 365 Groups aren't supported. You must use a mail-enabled security group, which you can create in Exchange Online PowerShell by running `New-DistributionGroup -Type Security`. You can also create a mail-enabled security group (and add members) in the Exchange admin center or in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). It might take up to 60 minutes after you create it for a new mail-enabled security to be available to add to the eDiscovery Managers role group. 
+    Exchange distribution groups and Microsoft 365 Groups aren't supported. You must use a mail-enabled security group, which you can create in Exchange Online PowerShell by running `New-DistributionGroup -Type Security`. You can also create a mail-enabled security group (and add members) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> or in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). It might take up to 60 minutes after you create it for a new mail-enabled security group to be available to add to the eDiscovery Managers role group.
 
     Also as previously stated, you can't make a mail-enabled security group an eDiscovery Administrator by using the **Add-eDiscoveryCaseAdmin** cmdlet in Security & Compliance Center PowerShell. You can only add individual users as eDiscovery Administrators.
 

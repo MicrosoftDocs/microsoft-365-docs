@@ -22,11 +22,18 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+## 101.47.76 (30.121092.14776.0)
+
+- Added a new switch to the command-line tool to control whether archives are scanned during on-demand scans. This can be configured through `mdatp config scan-archives --value [enabled/disabled]`. By default, this is set to `enabled`.
+- Bug fixes
 
 ## 101.45.13 (30.121082.14513.0)
 
 - Starting with this version, we are bringing Microsoft Defender for Endpoint support to the following distros: 
-  -  RHEL6.7-6.10 and CentOS6.7-6.10 versions.
+  - RHEL6.7-6.10 and CentOS6.7-6.10 versions.
   - Amazon Linux 2
   - Fedora 33 or higher
 - Bug fixes
@@ -37,7 +44,6 @@ ms.technology: mde
 - Added new switches to the command-line tool:
   - Control degree of parallelism for on-demand scans. This can be configured through `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`. By default, a degree of parallelism of `2` is used.
   - Control whether scans after security intelligence updates are enabled or disabled. This can be configured through `mdatp config scan-after-definition-update --value [enabled/disabled]`. By default, this is set to `enabled`.
-  - Control whether archives are scanned during on-demand scans. This can be configured through `mdatp config scan-archives --value [enabled/disabled]`. By default, this is set to `enabled`.
 - Changing the product log level now requires elevation
 - Bug fixes
 

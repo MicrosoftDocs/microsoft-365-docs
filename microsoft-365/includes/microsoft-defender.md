@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender important guidance
-description: A note in regard to important Microsoft Defender guidance.
+title: Microsoft 365 Defender important guidance
+description: A note regarding important Microsoft 365 Defender guidance.
 ms.date: 09/21/2020
 ms.reviewer: 
 manager: dansimp
