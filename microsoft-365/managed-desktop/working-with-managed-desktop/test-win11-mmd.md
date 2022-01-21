@@ -21,7 +21,6 @@ We have created the device group (**Modern Workplace - Windows 11 Pre-Release Te
 
 You can choose any of your existing or new devices for Windows 11 testing, but you shouldn't enroll production devices in this group until you are confident in the compatibility and overall experience on your test devices. 
 
-
 ## Prioritize applications to submit to Test Base
 
 Business-critical applications are the best candidates for more validation in a closed Windows 11 environment. We can help you prioritize apps for Windows 11 testing based on usage and reliability data. To request our recommendations, follow these steps:
