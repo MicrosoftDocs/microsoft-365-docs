@@ -31,7 +31,7 @@ The default sharing link type sets the scope (who) and permissions (view or edit
 
 At the site level (SharePoint site or OneDrive account), sensitivity labels provide a convenient alternative for setting the default link type that can be configured for a site in the SharePoint admin center. For more information, see [Change the default link type for a site](/sharepoint/change-default-sharing-link) from the SharePoint documentation.
 
-This site-level configuration works well for SharePoint sites that have documents all with the same level of sensitivity. But if sites contain some documents that have a higher level of sensitivity that require more restrictive settings, you can configure a sensitivity label with different settings for the default sharing link type, and then apply this label to documents. In this scenario where the site has default link type settings, and a document in that site has different default link type settings, the more restrictive settings will be applied at the time the user selects the sharing option for the document.
+This site-level configuration works well for SharePoint sites that have documents all with the same level of sensitivity. But if sites contain some documents that have a higher level of sensitivity that require more restrictive settings, you can configure a sensitivity label with different settings for the default sharing link type, and then apply this label to documents. In this scenario where the site has default link type settings, and a document in that site has different default link type settings, the more restrictive scope settings will be applied at the time the user selects the sharing option for the document.
 
 Configuring the default link type for documents might also be appropriate without the site-level setting. For example, although SharePoint sites are typically organized to host the same type of documents, that isn't the case for OneDrive accounts. Users typically save a wide range of files to OneDrive, often including a mix of personal and business documents. Setting a default link type for all documents for a user's OneDrive account is probably not practical, but individual documents can still benefit from these settings. For example:
 
@@ -79,7 +79,7 @@ PowerShell examples, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8e
     Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
     ````
 
-To configure the settings for the default sharing link type for a site, make sure the [scope of the sensitivity label](sensitivity-labels.md#label-scopes) includes **Groups & sites**. For documents, the scope must include **Files & emails**. Then:
+To configure the settings for the default sharing link type for a site, make sure the [scope of the sensitivity label](sensitivity-labels.md#label-scopes) includes **Groups & sites**, which displays as **Site, UnifiedGroup** for the ContentType PowerShell setting. For documents, the scope must include **Files & emails**, which displays as **File, Email** for the ContentType PowerShell setting. Then:
 
 - When the scope includes **Groups & sites**, you can apply the label to a site, which sets the default sharing link type for that site. For information how to apply a sensitivity label to a site, see [How to apply sensitivity labels to containers](sensitivity-labels-teams-groups-sites.md#how-to-apply-sensitivity-labels-to-containers).
 
@@ -90,10 +90,10 @@ To configure the settings for the default sharing link type for a site, make sur
 
 ### PowerShell tips for specifying the advanced settings
 
-Although you can specify the sensitivity label by its name, we recommend using the label GUID to avoid potential confusion over specifying the label name or display name. To find the GUID:
+Although you can specify the sensitivity label by its name, we recommend using the label GUID to avoid potential confusion over specifying the label name or display name. To find the GUID and confirm the label's scope:
 
 ````powershell
-Get-Label | Format-Table -Property DisplayName, Name, Guid
+Get-Label | Format-Table -Property DisplayName, Name, Guid, ContentType
 ````
 
 To remove either of these advanced settings from a sensitivity label, use the same AdvancedSettings parameter syntax, but specify a null string value. For example:
