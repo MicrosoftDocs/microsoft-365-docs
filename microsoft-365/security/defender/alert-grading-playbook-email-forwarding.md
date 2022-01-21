@@ -1,6 +1,6 @@
 ---
 title: Investigate suspicious email forwarding activity
-description: Investigate suspicious email forwarding activity.
+description: Investigate suspicious email forwarding activity to review the alerts and take recommended actions to remediate the attack and protect your network.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -158,7 +158,7 @@ This figure illustrates the workflow to identify malicious/suspicious email forw
 
 TO BE ADDED: "Alert investigation workflow" figure
 
-You can investigate this alert using Threat Explorere or audit logs, based on the availability of features in your Microsoft 365 Defender portal. You may choose to follow the entire process or a part of the process as needed.
+You can investigate this alert using Threat Explorer or audit logs, based on the availability of features in your Microsoft 365 Defender portal. You may choose to follow the entire process or a part of the process as needed.
 
 ## Using Threat Explorer
 

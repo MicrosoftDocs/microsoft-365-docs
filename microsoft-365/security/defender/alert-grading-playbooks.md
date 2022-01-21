@@ -1,6 +1,6 @@
 ---
 title: Alert grading playbooks
-description: Add
+description: Review the alerts for well-known attacks and take recommended actions to remediate the attack and protect your network.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 search.appverid: met150
 ms.prod: m365-security
@@ -29,14 +29,13 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 - Microsoft 365 Defender
 
-Intro text
+These alert grading playbooks allow you to review the alerts for well-known attacks and take recommended actions to remediate the attack and protect your network.
 
 ## Alert grading playbooks
 
 - [Suspicious email forwarding activity](alert-grading-playbook-email-forwarding.md)
-- [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rule.md)
-- [Suspicious inbox forwarding rules](alert-grading-playbook-inbox-forwarding-rule.md)
+- [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
+- [Suspicious inbox forwarding rules](alert-grading-playbook-inbox-forwarding-rules.md)

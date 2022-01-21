@@ -173,9 +173,9 @@
                     - name: Suspicious email forwarding
                       href: alert-grading-playbook-email-forwarding.md
                     - name: Suspicious inbox forwarding rule
-                      href: alert-grading-playbook-inbox-forwarding-rule.md
+                      href: alert-grading-playbook-inbox-forwarding-rules.md
                     - name: Suspicious inbox manipulation rule
-                      href: alert-grading-playbook-inbox-manipulation-rule.md
+                      href: alert-grading-playbook-inbox-manipulation-rules.md
                  - name: Users 
                    href: investigate-users.md                  
               - name: Incident response playbooks

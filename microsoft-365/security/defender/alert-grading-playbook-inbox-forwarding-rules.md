@@ -1,6 +1,6 @@
 ---
 title: Investigate suspicious inbox forwarding rules
-description: Investigate suspicious inbox forwarding rules.
+description: Investigate suspicious inbox forwarding rules to review the alerts and take recommended actions to remediate the attack and protect your network.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 ms.prod: m365-security
 ms.mktglfcycl: deploy
