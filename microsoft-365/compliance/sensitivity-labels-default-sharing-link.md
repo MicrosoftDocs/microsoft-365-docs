@@ -29,7 +29,7 @@ As an additional configuration to the settings you see in the Microsoft 365 comp
 
 The default sharing link type sets the scope (who) and permissions (view or edit) that are automatically selected when users share files and folders. Although users can always override these default settings before sending the sharing link, the settings you choose provide a safe baseline. Typically, users don't change the settings before sharing.
 
-At the site level (SharePoint site or OneDrive account), sensitivity labels provide a convenient alternative for setting the default link type that can be configured for a site in the SharePoint admin center. For more information, see [Change the default link type for a site](/sharepoint/change-default-sharing-link) from the SharePoint documentation.
+At the site level (SharePoint site or OneDrive account), sensitivity labels provide a convenient alternative for setting the default sharing link type that can be configured for a site in the SharePoint admin center. For more information, see [Change the default link type for a site](/sharepoint/change-default-sharing-link) from the SharePoint documentation.
 
 This site-level configuration works well for SharePoint sites that have documents all with the same level of sensitivity. But if sites contain some documents that have a higher level of sensitivity that require more restrictive settings, you can configure a sensitivity label with different settings for the default sharing link type, and then apply this label to documents.
 
@@ -41,9 +41,9 @@ In this scenario where the site has default sharing link type settings, and a do
 
 Configuring the default link type for documents might also be appropriate without the site-level setting. For example, although SharePoint sites are typically organized to host the same type of documents, that isn't the case for OneDrive accounts. Users typically save a wide range of files to OneDrive, often including a mix of personal and business documents. Setting a default link type for all documents for a user's OneDrive account is probably not practical, but individual documents can still benefit from these settings. For example:
 
-- Documents labeled **Highly Confidential** automatically have a default link type that restricts sharing to specific people rather than anybody in the organization.
-- Documents labeled **General** have a default link type that restricts sharing to people in your organization.
-- Documents labeled **Personal** have a default link type that allows sharing to anyone with the link.
+- Documents labeled **Highly Confidential** have a default sharing link type that restricts sharing to specific people rather than anybody in the organization.
+- Documents labeled **General** have a default sharing link type that restricts sharing to people in your organization.
+- Documents labeled **Personal** have a default sharing link type that allows sharing to anyone with the link.
 
 ## Prerequisites
 
@@ -73,13 +73,13 @@ These two settings and values are the equivalent of the parameters *DefaultShari
 
 PowerShell examples, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
 
-- To set the sharing link type to SpecificPeople:
+- To set the default sharing link type to SpecificPeople:
     
     ````powershell
     Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope="SpecificPeople"}
     ````
 
-- To set the sharing link permissions to Edit:
+- To set the default sharing link type permissions to Edit:
     
     ````powershell
     Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
