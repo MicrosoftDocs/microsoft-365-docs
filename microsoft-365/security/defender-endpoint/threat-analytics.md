@@ -68,7 +68,7 @@ Select a threat from the dashboard to view the report for that threat.
 The threat analytics dashboard ([security.microsoft.com/threatanalytics3](https://security.microsoft.com/threatanalytics3)) highlights the reports that are most relevant to your organization. It summarizes the threats in the following sections:
 
 - **Latest threats**—lists the most recently published or updated threat reports, along with the number of active and resolved alerts.
-- **High-impact threats**—lists the threats that have the highest impact to your organization. This section lists threats with the highest number of active and resolved alerts first.
+- **High-impact threats**—lists the threats that have the highest impact on your organization. This section lists threats with the highest number of active and resolved alerts first.
 - **Threat summary**—provides the overall impact of all tracked threats by showing the number of threats with active and resolved alerts.
 
 Select a threat from the dashboard to view the report for that threat.
