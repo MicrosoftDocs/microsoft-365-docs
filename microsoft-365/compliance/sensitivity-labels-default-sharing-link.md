@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Use sensitivity labels to set the default sharing link for sites, or documents, or both for SharePoint and OneDrive."
+description: "Use sensitivity labels to set the default sharing link for sites and individual documents in SharePoint and OneDrive."
 ---
 
 # Use sensitivity labels to set the default sharing link for sites and documents in SharePoint and OneDrive
