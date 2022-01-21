@@ -183,7 +183,7 @@ _Prevented email attempts section of a threat analytics report_
 
 In the **Mitigations** section, review the list of specific actionable recommendations that can help you increase your organizational resilience against the threat. The list of tracked mitigations includes:
 
-- **Security updates**—deployment of supported software security updates for vulnerabilities found on onboarded devices
+- **Security updates**—deployment of supported software security updates for vulnerabilities found on onboarded devices.
 - **Supported security configurations**
   - Cloud-delivered protection  
   - Potentially unwanted application (PUA) protection
