@@ -275,7 +275,7 @@
 ###### [Phase 3: Implement](attack-surface-reduction-rules-deployment-phase-3.md)
 ###### [Phase 4: Operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
 ##### [ASR rules reference](attack-surface-reduction-rules-reference.md)
-##### [Enable ASR rules alternate congiguration methods](enable-attack-surface-reduction.md)
+##### [Enable ASR rules alternate configuration methods](enable-attack-surface-reduction.md)
 #### [Attack surface reduction FAQ](attack-surface-reduction-faq.yml)
 
 ### Next-generation protection
