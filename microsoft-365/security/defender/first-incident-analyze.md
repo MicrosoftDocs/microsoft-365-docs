@@ -1,6 +1,6 @@
 ---
 title: Step 1. Triage and analyze your first incident
-description: How to triage and begin the analysis of your first incident at Microsoft 365 Defender.
+description: How to triage and begin the analysis of your first incident in Microsoft 365 Defender.
 keywords: incidents, alerts, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -45,11 +45,11 @@ Microsoft 365 Defender receives alerts and events from multiple Microsoft securi
 - [Azure Security Center](/azure/security-center/security-center-introduction) is a unified infrastructure security management system that strengthens the security posture of your data centers and provides advanced threat protection across your hybrid workloads in the cloud and on premises.
 
 
-In Microsoft 365 Defender, [incidents](incidents-overview.md) are identified by correlating alerts from these different detection sources. Instead of spending resources stringing together or distinguishing multiple alerts into their respective incidents, you can start with the incident queue at Microsoft 365 Defender right away. This approach allows you to triage incidents in an efficient manner across endpoints, identities, email, and applications, and reduce the damage from an attack.
+In Microsoft 365 Defender, [incidents](incidents-overview.md) are identified by correlating alerts from these different detection sources. Instead of spending resources stringing together or distinguishing multiple alerts into their respective incidents, you can start with the incident queue in Microsoft 365 Defender right away. This approach allows you to triage incidents in an efficient manner across endpoints, identities, email, and applications, and reduce the damage from an attack.
 
 ## Triage your incidents
 
-Incident response at Microsoft 365 Defender starts once you triage the list of incidents using your organization’s recommended method of prioritization. To triage means to assign a level of importance or urgency to incidents, which then determines the order in which they will be investigated.
+Incident response in Microsoft 365 Defender starts once you triage the list of incidents using your organization’s recommended method of prioritization. To triage means to assign a level of importance or urgency to incidents, which then determines the order in which they will be investigated.
 
 A useful sample guide for determining which incident to prioritize in Microsoft 365 Defender can be summarized by the formula: *Severity + Impact = Priority*.
 

@@ -32,7 +32,7 @@ ms.technology: m365d
 
 Microsoft Defender for Identity can help detect malicious attempts to compromise identities in your organization. Because Defender for Identity integrates with Microsoft 365 Defender, security analysts can have visibility on threats coming in from Defender for Identity, such as suspected Netlogon privilege elevation attempts.
 
-## Analyzing the attack at Microsoft Defender for Identity
+## Analyzing the attack in Microsoft Defender for Identity
 
 Microsoft 365 Defender allows analysts to filter alerts by detection source on the **Alerts** tab of the incidents page. In the following example, the detection source is filtered to **Defender for Identity**. 
 
@@ -42,7 +42,7 @@ Selecting the **Suspected overpass-the-hash attack** alert goes to a page in Mic
  
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-alert-example.png" alt-text="A suspected overpass-the-hash attack alert" lightbox="../../media/first-incident-path-identity/first-incident-identity-alert-example.png"::: 
 
-## Investigating the same attack at Microsoft Defender for Endpoint
+## Investigating the same attack in Microsoft Defender for Endpoint
 
 Alternatively, an analyst can use Defender for Endpoint to learn more about the activity on an endpoint. Select the incident from the incident queue, then select the **Alerts** tab. From here, they can identify the detection source as well. A detection source labeled as EDR stands for Endpoint Detection and Response, which is Defender for Endpoint. From here, the analyst selects an alert detected by EDR.
 
