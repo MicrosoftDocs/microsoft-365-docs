@@ -75,7 +75,7 @@ Select a threat from the dashboard to view the report for that threat.
 
 ![Screenshot of threat analytics dashboard.](../../media/threat-analytics/ta_dashboard_mtp.png)
 
-_Threat analytics dashboard. You can also click the Search icon to key in a keyword related to the threat analytics report that you'd like to read._ 
+_Threat analytics dashboard. You can also select the **Search** icon to key in a keyword related to the threat analytics report that you would like to read._ 
 
 ## View a threat analytics report
 
