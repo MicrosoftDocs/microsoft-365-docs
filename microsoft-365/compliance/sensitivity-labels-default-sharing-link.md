@@ -41,11 +41,11 @@ Configuring the default link type for documents might also be appropriate withou
 
 ## Prerequisites
 
-To configure the default sharing link for sites, sensitivity labels must be enabled for containers. If this capability isn't yet enabled for your tenant, see [How to enable sensitivity labels for containers and synchronize labels](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels).
+To apply the default sharing link type for sites, sensitivity labels must be enabled for containers. If this capability isn't yet enabled for your tenant, see [How to enable sensitivity labels for containers and synchronize labels](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels).
 
-To configure the default sharing link for documents in SharePoint and OneDrive, sensitivity labels must be enabled for these services. If this capability isn't yet enabled for your tenant, see [How to enable sensitivity labels for SharePoint and OneDrive (opt-in)](sensitivity-labels-sharepoint-onedrive-files.md#how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in).
+To apply the default sharing link type for documents in SharePoint and OneDrive, sensitivity labels must be enabled for these services. If this capability isn't yet enabled for your tenant, see [How to enable sensitivity labels for SharePoint and OneDrive (opt-in)](sensitivity-labels-sharepoint-onedrive-files.md#how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in).
 
-In a PowerShell session, you must [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) to configure the settings for the default sharing link.
+In a PowerShell session, you must [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) to configure the settings for the default sharing link type.
 
 > [!NOTE]
 > Although not required, it's easiest to first [configure sensitivity labels in the Microsoft 365 compliance center](create-sensitivity-labels.md), and then modify the labels for the default sharing link.
