@@ -58,6 +58,10 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 
   - **macOS** - Only applicable for Public Preview, minimum required version: 101.43.84 
   
+   > [!NOTE]
+   > Currently only Intel-based macOS systems are supported.
+    
+
   - **Linux** - Only applicable for Public Preview, minimum required version: 101.45.13 
     
   - **Windows Server 2012 R2** - with [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
@@ -194,7 +198,7 @@ The following commands are available for user roles that are granted the ability
 | library  | Lists files that were uploaded to the live response library.  | Y  | Y  | Y  |
 | putfile  | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.  | Y  | Y  | Y  |
 | remediate  | Remediates an entity on the device. The remediation action will vary depending on the entity type:  File: delete  Process: stop, delete image file  Service: stop, delete image file  Registry entry: delete  Scheduled task: remove  Startup folder item: delete file  NOTE: This command has a prerequisite command. You can use the -auto command in conjunction with remediate to automatically run the prerequisite command.  | Y  | Y  | Y  |
-| scan  | Runs an antivirus (quick) scan to help identify and remediate malware.  | N  | Y  | Y  |
+| scan | Runs an antivirus scan to help identify and remediate malware. | N | Y | Y |
 | undo  | Restores an entity that was remediated.  | Y  | Y  | Y  |
 
 
