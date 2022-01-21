@@ -27,7 +27,7 @@ As an additional configuration to the settings you see in the Microsoft 365 comp
 
 ![Example default sharing link dialog box.](../media/default-sharing-link-example.png)
 
-The default link type sets the scope (who) and permissions (view or edit) that are automatically selected when users share files and folders. Although users can always override these default settings before sending the sharing link, the settings you choose provide a safe baseline. Typically, users don't change the settings before sharing.
+The default sharing link type sets the scope (who) and permissions (view or edit) that are automatically selected when users share files and folders. Although users can always override these default settings before sending the sharing link, the settings you choose provide a safe baseline. Typically, users don't change the settings before sharing.
 
 At the site level (SharePoint site or OneDrive account), sensitivity labels provide a convenient alternative for setting the default link type that can be configured for a site in the SharePoint admin center. For more information, see [Change the default link type for a site](/sharepoint/change-default-sharing-link) from the SharePoint documentation.
 
