@@ -52,7 +52,7 @@ In a PowerShell session, you must [connect to Office 365 Security & Compliance C
 
 ## How to configure settings for the default sharing link type
 
-The configuration settings for the default sharing link use the PowerShell *AdvancedSettings* parameter and the [Set-Label](/powershell/module/exchange/set-label) cmdlet for existing sensitivity labels, and [New-Label](/powershell/module/exchange/new-labelpolicy) cmdlet for existing sensitivity labels. These cmdlets are from [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell):
+The configuration settings for the default sharing link type use the PowerShell *AdvancedSettings* parameter and the [Set-Label](/powershell/module/exchange/set-label) cmdlet for existing sensitivity labels, and [New-Label](/powershell/module/exchange/new-labelpolicy) cmdlet for existing sensitivity labels. These cmdlets are from [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell):
 
 - **DefaultSharingScope**: The available values are:
     - **SpecificPeople**: Sets the default sharing link for the site to the "Specific people" link
@@ -79,11 +79,11 @@ PowerShell examples, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8e
     Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
     ````
 
-To configure the default sharing link settings for a site, make sure the [scope of the sensitivity label](sensitivity-labels.md#label-scopes) includes **Groups & sites**. For documents, the scope must include **Files & emails**. Then:
+To configure the settings for the default sharing link type for a site, make sure the [scope of the sensitivity label](sensitivity-labels.md#label-scopes) includes **Groups & sites**. For documents, the scope must include **Files & emails**. Then:
 
-- When the scope includes **Groups & sites**, you can apply the label to a site, which sets the default sharing link for that site. For information how to apply a sensitivity label to a site, see [How to apply sensitivity labels to containers](sensitivity-labels-teams-groups-sites.md#how-to-apply-sensitivity-labels-to-containers).
+- When the scope includes **Groups & sites**, you can apply the label to a site, which sets the default sharing link type for that site. For information how to apply a sensitivity label to a site, see [How to apply sensitivity labels to containers](sensitivity-labels-teams-groups-sites.md#how-to-apply-sensitivity-labels-to-containers).
 
-- When the scope of the sensitivity label includes **Files & emails**, you can apply the label to documents, which sets the default sharing link for that document. The label can be applied [manually](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) or [automatically](apply-sensitivity-label-automatically.md).
+- When the scope of the sensitivity label includes **Files & emails**, you can apply the label to documents, which sets the default sharing link type for that document. The label can be applied [manually](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) or [automatically](apply-sensitivity-label-automatically.md).
 
 > [!TIP]
 > You can also specify that the label is the default sensitivity label to be applied for new sites or new documents, as a [label policy setting](sensitivity-labels.md#what-label-policies-can-do).
