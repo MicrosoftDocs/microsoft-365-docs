@@ -44,7 +44,7 @@ The tables in the following sections describe the conditions and exceptions that
 ### Senders
 
 If you use the sender address as a condition or exception the actual field where the value is looked for varies depending on the type of rule you use. For DLP based rules, the Envelope address is used as the sender address. For Exchange transport rules the Header address is used as the sender address.
-<!-- REMOVE COMMENTS ON 1/20/2022
+
 > [!NOTE]
 > Starting January 20, 2022, the default sender address location will be moved to the Header address along with the availability of the -SenderAddressLocation parameter to configure desired behavior at a DLP rule level.
 
@@ -64,7 +64,6 @@ To configure the sender address location at a DLP rule level, the parameter is _
 
 - **Header or envelope** (`HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
 <br>
--->
 
 |condition or exception in DLP|condition/exception parameters in Microsoft 365 PowerShell|property type|description|
 |---|---|---|---|
@@ -178,4 +177,5 @@ Prepend subject|PrependSubject|String|Adds the specified text to the beginning o
 |Modify Subject|ModifySubject|PswsHashTable | Remove text from the subject line that matches a specific pattern and replace it with different text. See the example below. You can: </br>- **Replace** all matches in the subject with the replacement text </br>- **Append** to remove all matches in the subject and inserts the replacement text at the end of the subject. </br>- **Prepend** to remove all matches and inserts the replacement text at the beginning of the subject.|
 |Apply HTML disclaimer|ApplyHtmlDisclaimer|First property: *Text*</br>Second property: *Location*</br>Third property: *Fallback action*|Applies the specified HTML disclaimer to the required location of the message.</br>This parameter uses the syntax: @{ Text = “ ” ; Location = <Append \|Prepend>; FallbackAction = <Wrap \|Ignore \|Reject> }|
 |Remove Office 365 Message Encryption and rights protection|RemoveRMSTemplate|n/a|Removes Office 365 encryption applied on an email|
+|Deliver the message to the hosted quarantine |_Quarantine_|n/a| This action is currently in **public preview**. During this phase, emails quarantined by DLP policies will show policy type as ExchangeTransportRule.</br> Delivers the message to the quarantine in EOP. For more information, see [Quarantined email messages in EOP](/microsoft-365/security/office-365-security/quarantine-email-messages).|
 |
