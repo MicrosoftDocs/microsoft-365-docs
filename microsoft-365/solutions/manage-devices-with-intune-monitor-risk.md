@@ -14,9 +14,7 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- Connect Intune to Defender
-- monitor device risk
-- monitor device compliance
+- M365-security-compliance
 - deploy security baselines
 - m365solution-managedevices
 - m365solution-scenario

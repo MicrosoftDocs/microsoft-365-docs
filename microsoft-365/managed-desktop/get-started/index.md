@@ -3,9 +3,9 @@ title: Get started with Microsoft Managed Desktop
 description:  Steps to set up devices and configure Azure features to work with the service
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ms.custom: intro-get-started
 ms.localizationpriority: medium
