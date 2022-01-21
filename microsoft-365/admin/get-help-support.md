@@ -43,7 +43,7 @@ Start by [checking the current health of your services](../enterprise/view-servi
 
 Save time by starting your service request online. We'll help you find a solution or connect you to technical support.
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, then you aren't an admin. For more information, see [Who has admin permissions in my business?]([Overview of the Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md).
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, you aren't an admin. For more information, see [Who has admin permissions in my business?](../admin/admin-overview/admin-center-overview.md#who-has-admin-permissions-in-my-business).
 2. On the bottom right side of the page, select **Help & support**.
 3. Type a question or keyword into the text box. If you get a drop-down list, select the one closest to your question, or continue typing your question, then press **Enter**.
 4. If the results don't help, at the bottom, select **Contact Support**.
@@ -217,6 +217,6 @@ Scan this QR code to follow us on WeChat and get the latest updates for Office 3
 
 ## Related content
 
-[Find docs and training](../business-video/find-help-answers.md) (article)\
-[Employee quick setup](../business-video/employee-quick-setup.md) (article)\
+[Find docs and training](index.yml) (link page)\
+[Employee quick setup](setup/employee-quick-setup.md) (article)\
 [Overview of Microsoft 365 Business Premium setup](setup/plan-your-setup.md) (video)

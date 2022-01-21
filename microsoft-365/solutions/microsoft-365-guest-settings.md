@@ -74,7 +74,7 @@ The Microsoft 365 admin center has organization-level settings for sharing and f
 | Setting | Default | Description |
 |:-----|:-----|:-----|
 |Let group members outside your organization access group content|On|When set to **On**, guests can access groups content; when set to **Off**, they can't. This setting should be **On** for any scenario where guests are interacting with Microsoft 365 Groups or Teams.|
-|Let group owners add people outside your organization to groups|On|When **On**, Owners of Microsoft 365 Groups or Teams can invite new guests to the group. When **Off**, owners can only invite guests who are already in the directory.|
+|Let group owners add people outside your organization to groups|On|When **On**, owners of Microsoft 365 Groups or Teams can invite new guests to the group. When **Off**, they can't. This setting should be **On** for any scenario where guests are to be added to groups.|
 
 These settings are at the organization level. See [Create settings for a specific group](/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group) for information about how to change these settings at the group level by using PowerShell.
 
