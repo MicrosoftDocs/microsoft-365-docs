@@ -24,7 +24,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 > [!NOTE]
 > The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
-Microsoft 365 Lighthouse lets you view compliance policies across your tenants in a single view. You can drive security and standardization across your tenants by comparing policies. You can filter views to see settings that have been configured (versus those that were left not configured), settings that differ in their configurations, or just the settings that match. You can also search for specific settings you’re interested in and see how that compares among the policies.
+Microsoft 365 Lighthouse lets you view compliance policies across your tenants in a single view. You can drive security and standardization across your tenants by comparing policies. You can filter views to see settings that have been configured (versus settings that were left not configured), settings that differ in their configurations, or just the settings that match. You can also search for specific settings you’re interested in and see how that compares among the policies.
 
 ## Before you begin
 
