@@ -20,6 +20,7 @@ search.appverid:
   - MOE150
   - MET150
 ms.technology: m365d
+ms.custom: api
 ---
 
 # Hello World for Microsoft 365 Defender REST API
