@@ -2,7 +2,6 @@
 title: List alerts API
 description: Learn how to use the List alerts API to retrieve a collection of alerts in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, alerts, recent
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library

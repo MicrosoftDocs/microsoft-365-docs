@@ -17,8 +17,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365solution-overview
+  - m365solution-scenario
   - m365solution-evalutatemtp
+  - ms.custom: admindeeplinkEXCHANGE
 ms.topic: how-to
 ms.technology: m365d
 ---
@@ -47,7 +48,7 @@ It may not be evident why 'Standard' and 'Strict' are the terms used for this, b
 Distribution groups can be created and defined directly in Exchange Online or synchronized from on-premises Active Directory.
 
 1. Logon to Exchange Admin Center (EAC) using an account that has been granted Recipient Administrator role or been delegated group management permissions.
-2. From the navigation menu, expand *Recipients* and select *Groups*.
+2. From the navigation menu, expand **Recipients** and select <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>.
 
    :::image type="content" source="../../media/mdo-eval/1_mdo-eval-pilot.png" alt-text="Exchange admin center on the navigation menu (the quick launch) with an arrow pointing at Groups. Click Groups.":::
 

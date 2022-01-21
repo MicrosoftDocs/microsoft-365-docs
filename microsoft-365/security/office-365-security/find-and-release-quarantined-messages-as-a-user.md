@@ -18,7 +18,6 @@ ms.collection:
   - M365-security-compliance
 ms.custom:
   - seo-marvel-apr2020
-  - admindeeplinkDEFENDER
 description: Users can learn how to view and manage quarantined messages in Exchange Online Protection (EOP) that should have been delivered to them.
 ms.technology: mdo
 ms.prod: m365-security
@@ -69,7 +68,7 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
 
 ## What do you need to know before you begin?
 
-- To open the Microsoft 365 Defender portal, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>. To open the **Quarantine** page directly, use <https://security.microsoft.com/quarantine>.
+- To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. To go directly to the **Quarantine** page, use <https://security.microsoft.com/quarantine>.
 
 - Admins can configure how long messages are kept in quarantine before they're permanently deleted in anti-spam policies. Messages that have expired from quarantine are unrecoverable. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
@@ -80,7 +79,8 @@ You view and manage your quarantined messages in the Microsoft 365 Defender port
 > [!NOTE]
 > Your ability to view quarantined messages is controlled by the [quarantine policy](quarantine-policies.md) that applies to the quarantined message type (which might be the [default quarantine policy for the quarantine reason](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)).
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Review** \> **Quarantine**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine**. To go directly to the **Quarantine** page, use <https://security.microsoft.com/quarantine>.
+
 2. On the **Quarantine** page, you can sort the results by clicking on an available column header. Click **Customize columns**  to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
 
    - **Time received**<sup>\*</sup>

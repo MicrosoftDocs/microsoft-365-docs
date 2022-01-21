@@ -155,15 +155,17 @@ Rules are the business logic of DLP policies. They consist of:
 
 ### The priority by which rules are processed
 
-Each rule is assigned a priority in the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on. 
+#### Hosted service workloads
+
+For the hosted service workloads, like Exchange Online, SharePoint Online and OneDrive for Business, each rule is assigned a priority in the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on. 
   
 ![Rules in priority order](../media/dlp-rules-in-priority-order.png)
 
-When content is evaluated against rules, the rules are processed in priority order. If content matches multiple rules, the first rule evaluated that has the most restrictive action is enforced. For example, if content matches all of the following rules, Rule 3 is enforced because it's the highest priority, most restrictive rule:
+When content is evaluated against rules, the rules are processed in priority order. If content matches multiple rules, the first rule evaluated that has the *most* restrictive action is enforced. For example, if content matches all of the following rules, *Rule 3* is enforced because it's the highest priority, most restrictive rule:
   
 - Rule 1: only notifies users
 - Rule 2: notifies users, restricts access, and allows user overrides
-- Rule 3: notifies users, restricts access, and does not allow user overrides
+- *Rule 3: notifies users, restricts access, and does not allow user overrides*
 - Rule 4: restricts access
 
 Rules 1, 2, and 4 would be evaluated, but not applied. In this example, matches for all of the rules are recorded in the audit logs and shown in the DLP reports, even though only the most restrictive rule is applied.
@@ -173,6 +175,21 @@ You can use a rule to meet a specific protection requirement, and then use a DLP
 For example, you might have a DLP policy that helps you detect the presence of information subject to the Health Insurance Portability and Accountability Act (HIPAA). This DLP policy could help protect HIPAA data (the what) across all SharePoint Online sites and all OneDrive for Business sites (the where) by finding any document containing this sensitive information that's shared with people outside your organization (the conditions) and then blocking access to the document and sending a notification (the actions). These requirements are stored as individual rules and grouped together as a DLP policy to simplify management and reporting.
   
 ![Diagram shows that DLP policy contains locations and rules](../media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
+
+#### For endpoints
+
+Priority for rules on endpoints is also assigned according to the order in which it's created. That means, the rule created first has first priority, the rule created second has second priority, and so on. 
+
+When a file on an endpoint matches multiple DLP policies, the first rule that's enabled with restrictions is the one that gets enforced on the content. For example, if content matches all of the following rules, *Rule 2 is enforced because it's the highest priority rule that's configured with a restriction*.
+  
+- Rule 1: only notifies users
+- *Rule 2: notifies users, restricts access, and allows user overrides*
+- Rule 3: notifies users, restricts access, and does not allow user overrides
+- Rule 4: restricts access
+
+Rules 1, 3, and 4 would be evaluated, but not applied. In this example, matches for all of the rules are recorded in the audit logs and shown in the DLP reports, even though only the first rule with a restriction is applied.
+
+For rules that are applied to endpoints, you can take advantage of the ability to re-order the rule priority to make sure the restrictions you want applied are applied.
 
 ### Conditions
 
@@ -191,9 +208,12 @@ Conditions are inclusive and are where you define what you want the rule to look
 
 depending on the [location(s)](#location-support-for-how-content-can-be-defined) you choose to apply the policy to. 
 
-SITs have a pre-defined [**confidence level**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) which you can alter if needed. For more information, see [More on confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels). SITs also have a pre-defined range of occurrences of a SIT that must be found to match the rule, for example, if the **Instance count** range is set from one to nine, the SIT must occur at least once and up to nine times for the rule to match.
-
 The rule will only look for the presence of any **sensitivity labels** and **retention labels** you pick. 
+
+SITs have a pre-defined [**confidence level**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) which you can alter if needed. For more information, see [More on confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels). 
+
+> [!IMPORTANT]
+> SITs have two different ways of defining the max unique instance count parameters. To learn more, see [Instance count supported values for SIT](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit).
 
 #### Condition context
 
@@ -346,6 +366,7 @@ The actions that are available in a rule are dependent on the locations that hav
 - Add the sender's manager as recipient
 - Removed O365 Message Encryption and rights protection
 - Prepend Email Subject
+- Modify Email Subject
 - Add HTML Disclaimer
 
 #### SharePoint sites location actions:

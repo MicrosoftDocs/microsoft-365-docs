@@ -100,7 +100,7 @@ After the lab setup process is complete, you can add devices and run simulations
 
 ## Add devices
 
-When you add a device to your environment, Defender for Endpoint sets up a well-configured device with connection details. You can add Windows 10, Windows 11, Windows Server 2019, or Windows Server 2022 devices.
+When you add a device to your environment, Defender for Endpoint sets up a well-configured device with connection details. You can add Windows 10, Windows 11, Windows Server 2019, Windows Server 2016, and Linux (Ubuntu).
 
 The device will be configured with the most up-to-date version of the OS and Office 2019 Standard as well as other apps such as Java, Python, and SysIntenals.
 
@@ -129,7 +129,7 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
 1. From the dashboard, select **Add device**.
 
-2. Choose the type of device to add. You can choose to add Windows 10, Windows 11, Windows Server 2019, or Windows Server 2022.
+2. Choose the type of device to add. You can choose to add Windows 10, Windows 11, Windows Server 2019, Windows Server 2016, and Linux (Ubuntu).
 
     :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="lab setup with device options.":::
 

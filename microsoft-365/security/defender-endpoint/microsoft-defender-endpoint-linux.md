@@ -24,7 +24,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -72,7 +72,8 @@ If you experience any installation failures, refer to [Troubleshooting installat
 - Supported Linux server distributions and x64 (AMD64/EM64T) versions:
 
   - Red Hat Enterprise Linux 6.7 or higher
-  - Red Hat Enterprise Linux 7.2 or higher 
+  - Red Hat Enterprise Linux 7.2 or higher
+  - Red Hat Enterprise Linux 8.x
   - CentOS 6.7 or higher 
   - CentOS 7.2 or higher
   - Ubuntu 16.04 LTS or higher LTS
@@ -91,6 +92,9 @@ If you experience any installation failures, refer to [Troubleshooting installat
        - For 6.8: 2.6.32-642.* 
        - For 6.9: 2.6.32-696.* 
        - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.41.2:
+
+ > [!NOTE]
+ > After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that that are listed in this section are provided for technical upgrade support only.
 
     List of versions:
 
