@@ -48,7 +48,7 @@ To apply the default sharing link type for documents in SharePoint and OneDrive,
 In a PowerShell session, you must [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) to configure the settings for the default sharing link type.
 
 > [!NOTE]
-> Although not required, it's easiest to first [configure sensitivity labels in the Microsoft 365 compliance center](create-sensitivity-labels.md), and then modify the labels with settings that configure the default sharing link type.
+> Although not required, it's easiest to first [create and configure sensitivity labels in the Microsoft 365 compliance center](create-sensitivity-labels.md), and then modify these labels with the settings that configure the default sharing link type.
 
 ## How to configure settings for the default sharing link type
 
