@@ -50,7 +50,7 @@ In a PowerShell session, you must [connect to Office 365 Security & Compliance C
 > [!NOTE]
 > Although not required, it's easiest to first [configure sensitivity labels in the Microsoft 365 compliance center](create-sensitivity-labels.md), and then modify the labels for the default sharing link.
 
-## How to configure settings for the default sharing link
+## How to configure settings for the default sharing link type
 
 The configuration settings for the default sharing link use the PowerShell *AdvancedSettings* parameter and the [Set-Label](/powershell/module/exchange/set-label) cmdlet for existing sensitivity labels, and [New-Label](/powershell/module/exchange/new-labelpolicy) cmdlet for existing sensitivity labels. These cmdlets are from [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell):
 
