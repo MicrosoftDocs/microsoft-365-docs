@@ -23,7 +23,7 @@ description: "Use sensitivity labels to set the default sharing link for sites, 
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-As an additional configuration to the settings you see in the Microsoft 365 compliance center for [sensitivity labels](sensitivity-labels.md), you can use sensitivity labels to set a default sharing link for a SharePoint site or OneDrive account, and for individual documents. The default link type sets the scope (who) and permissions (view or edit) that are automatically selected when users share files and folders. Although users can always override these default settings before sending the sharing link, the settings you choose provide a safe baseline for the majority of cases.
+As an additional configuration to the settings you see in the Microsoft 365 compliance center for [sensitivity labels](sensitivity-labels.md), you can use these labels to set a default sharing link for a SharePoint site or OneDrive account, and for individual documents. The default link type sets the scope (who) and permissions (view or edit) that are automatically selected when users share files and folders. Although users can always override these default settings before sending the sharing link, the settings you choose provide a safe baseline for the majority of cases.
 
 At the site level (SharePoint site or OneDrive account), the settings for sensitivity labels provide a convenient alternative for setting the default link type that can be set for a site in the SharePoint admin center. For more information, see [Change the default link type for a site](/sharepoint/change-default-sharing-link).
 
@@ -46,7 +46,7 @@ In a PowerShell session, you must [connect to Office 365 Security & Compliance C
 > [!NOTE]
 > Although not required, it's easiest to first [configure sensitivity labels in the Microsoft 365 compliance center](create-sensitivity-labels.md), and then modify the labels for the default sharing link.
 
-## Configure settings for the default sharing link by using PowerShell advanced settings
+## How to configure settings for the default sharing link
 
 The configuration settings for the default sharing link use the PowerShell *AdvancedSettings* parameter and the [Set-Label](/powershell/module/exchange/set-label) cmdlet for existing sensitivity labels, and [New-Label](/powershell/module/exchange/new-labelpolicy) cmdlet for existing sensitivity labels. These cmdlets are from [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell):
 
