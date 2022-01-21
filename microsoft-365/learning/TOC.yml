@@ -18,6 +18,8 @@
           items:
             - name: Overview
               href: content-sources-365-admin-center.md
+            - name: Manage how content shows up in Viva Learning
+              href: use-tabs.md
             - name: Add SharePoint
               href: configure-sharepoint-content-source.md
             - name: Add learning management systems

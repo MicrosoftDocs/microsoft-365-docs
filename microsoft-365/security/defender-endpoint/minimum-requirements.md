@@ -44,7 +44,9 @@ Microsoft Defender for Endpoint requires one of the following Microsoft volume l
 - Windows 10 Enterprise E5
 - Windows 10 Education A5
 - Microsoft 365 E5 (M365 E5) which includes Windows 10 Enterprise E5 or Windows 11 Enterprise E5
-- Microsoft 365 A5 (M365 A5)
+- Microsoft 365 A5 (M365 A5) 
+- Microsoft 365 E3 (M365 E3) with Enterprise Mobility + Security E5 Add-on
+- Microsoft 365 Business Premium when purchased from a [Microsoft Cloud Solution Provider](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider)
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 Security
 - Microsoft Defender for Endpoint
@@ -56,7 +58,7 @@ Microsoft Defender for Endpoint requires one of the following Microsoft volume l
 
 Microsoft Defender for Endpoint for servers requires one of the following licensing options:
 
-- [Azure Security Center with Azure Defender enabled](/azure/security-center/security-center-pricing)
+- [Microsoft Defender for Cloud with enhanced security features enabled](/azure/security-center/enable-enhanced-security)
 - Microsoft Defender for Endpoint for Server (one per covered server)
 
 > [!NOTE]

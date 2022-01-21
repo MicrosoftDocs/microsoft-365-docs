@@ -19,6 +19,7 @@ ms.custom:
 - OKR_SMB_M365
 - seo-marvel-mar
 - AdminSurgePortfolio
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -34,7 +35,15 @@ For more information, see [Microsoft Secure Score](../../security/defender/micro
 
 ## Raise the level of protection against malware in mail
 
-Your Office 365 or Microsoft 365 environment includes protection against malware. You can increase this protection by blocking attachments with file types that are commonly used for malware. To increase malware protection in email:
+Your Office 365 or Microsoft 365 environment includes protection against malware. You can increase this protection by blocking attachments with file types that are commonly used for malware. 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OA7Z?autoplay=false]
+
+1. From the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, choose **Show more**, **Admin centers**, and then **Security & Compliance**.
+1. Choose **Threat management**, and then **Policy**.
+1. From the policies available, choose **Anti-malware**.
+
+To increase malware protection in email:
 
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in with your admin account credentials.
 
@@ -61,6 +70,13 @@ Ransomware restricts access to data by encrypting files or locking computer scre
 To protect against ransomware, create one or more mail flow rules to block file extensions that are commonly used for ransomware. (You added these rules in the [raise the level of protection against malware in mail](#raise-the-level-of-protection-against-malware-in-mail) step.) You can also warn users who receive these attachments in email.
 
 In addition to the files that you blocked in the previous step, it's a good practice to create a rule to warn users before opening Office file attachments that include macros. Ransomware can be hidden inside macros, so warn users not to open these files from people they don't know.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrWGt?autoplay=false]
+
+1. From the admin center at [https://admin.microsoft.com](https://admin.microsoft.com), choose **Exchange** under **Admin centers**.
+1. From the menu on the left, choose **mail flow**.
+1. On the rules tab, choose the arrow next to the plus (+) symbol, and then choose **Create a new rule**.
+1. On the **new rule** page, enter a name for your rule, scroll to the bottom, and then choose **More options**.
 
 To create a mail transport rule:
 
@@ -116,14 +132,13 @@ To create a mail transport rule, follow these steps:
 |Do the following ...|Block the message . . . reject the message and include an explanation.|
 |Provide message text|Auto-forwarding email outside this organization is prevented for security reasons.|
 
-
 ## Protect your email from phishing attacks
 
 If you've configured one or more custom domains for your Office 365 or Microsoft 365 environment, you can configure targeted anti-phishing protection. Anti-phishing protection, part of Microsoft Defender for Office 365, can help protect your organization from malicious impersonation-based phishing attacks and other phishing attacks. If you haven't configured a custom domain, you don't need to do this.
 
 We recommend that you get started with this protection by creating a policy to protect your most important users and your custom domain.
 
-To create an anti-phishing policy in Microsoft Defender for Office 365, watch  [this short training video](../../business-video/setup-anti-phishing.md), or complete the following steps:
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvt9r?autoplay=false]
 
 1. Go to [https://protection.office.com](https://protection.office.com).
 
@@ -181,6 +196,14 @@ For more information, see [Set up anti-phishing policies in Microsoft Defender f
 ## Protect against phishing attacks with Safe Links
 
 Hackers sometimes hide malicious websites in links in email or other files. Safe Links, part of Microsoft Defender for Office 365, can help protect your organization by providing time-of-click verification of web addresses (URLs) in email messages and Office documents. Protection is defined through Safe Links policies.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvdwy?autoplay=false]
+
+Microsoft Defender for Office 365 , formerly called Microsoft 365 ATP, or Advanced Threat Protection, helps protect your business against malicious sites when people click links in Office apps.
+
+1. Go to the [admin center](https://admin.microsoft.com), and select **Setup**.
+2. Scroll down to **Increase protection from advanced threats**. Select **Manage**,and then **Safe Links**.
+3. Select **Global Settings** and in **Block the following URLs**, enter the URL that you want to block.
 
 We recommend that you do the following:
 

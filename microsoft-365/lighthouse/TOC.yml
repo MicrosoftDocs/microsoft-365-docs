@@ -20,8 +20,10 @@
       href: m365-lighthouse-deploy-baselines.md
 - name: Manage tenants
   items: 
-    - name: Tenant list overview
-      href: m365-lighthouse-tenant-list-overview.md
+    - name: Tenants page overview
+      href: m365-lighthouse-tenants-page-overview.md
+    - name: Manage your tenant list
+      href: m365-lighthouse-manage-tenant-list.md
 - name: Manage users within tenants
   items: 
     - name: Users page overview

@@ -24,6 +24,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -95,7 +96,7 @@ For a brand new device running Windows 10 Pro Creators Update, or for a device t
   
 6. On the **Make sure this is your organization** page, verify that the information is correct, and choose **Join**.
   
-   On the **You're all set!** page, chosse **Done**.
+   On the **You're all set!** page, choose **Done**.
   
    ![On the Make sure this is your organization screen, choose Join.](../../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   

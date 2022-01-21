@@ -202,8 +202,8 @@ Datacenter asset management
 
 ### Advanced eDiscovery
 
-- [Advanced eDiscovery workflow for content in Microsoft Teams using large cases](teams-workflow-in-advanced-ediscovery.md) added an end-to-end workflow of managing Teams content in Advanced eDiscovery; includes details about the preview of the new conversation transcript functionality.
-- [Use large cases in Advanced eDiscovery](advanced-ediscovery-large-cases.md) added a preview of new large case format that extends review set and case limits and supports conversation transcripts for Teams and Yammer chat conversations.
+- [Advanced eDiscovery workflow for content in Microsoft Teams](teams-workflow-in-advanced-ediscovery.md) added an end-to-end workflow of managing Teams content in Advanced eDiscovery; includes details about the preview of the new conversation transcript functionality.
+- [Use the new case format in Advanced eDiscovery](advanced-ediscovery-new-case-format.md) added a preview of the new case format that extends review set and case limits and supports conversation transcripts for Teams and Yammer chat conversations.
 
 ### App governance
 

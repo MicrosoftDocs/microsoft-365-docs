@@ -26,6 +26,7 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-mar
 - AdminSurgePortfolio
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -40,6 +41,13 @@ description: "Discover the setup steps for Microsoft 365 Business Premium, inclu
 Watch this video for an overview of Microsoft 365 Business Premium setup.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
+
+## Watch: Set up Microsoft 365 Business Premium
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ?autoplay=false]
+
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, and select  **Go to setup**. The setup wizard will start.
+1. After your setup is complete, return to the Microsoft admin center. In the admin center you can continue setting up features like Windows 10 policies, DLP, etc. on the  **Setup**  page.
 
 ## Add your domain, users, and set up policies
 

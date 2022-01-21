@@ -32,9 +32,9 @@ ms.technology: m365d
 
 The [advanced hunting schema](advanced-hunting-schema-tables.md) is updated regularly to add new tables and columns. In some cases, existing columns names are renamed or replaced to improve the user experience. Refer to this article to review naming changes that could impact your queries.
 
-Naming changes are automatically applied to queries that are saved in the security center, including queries used by custom detection rules. You don't need to update these queries manually. However, you will need to update the following queries:
+Naming changes are automatically applied to queries that are saved in the Defender for Cloud, including queries used by custom detection rules. You don't need to update these queries manually. However, you will need to update the following queries:
 - Queries that are run using the API
-- Queries that are saved elsewhere outside the security center
+- Queries that are saved elsewhere outside the Defender for Cloud
 
 ## December 2020
 
@@ -48,7 +48,7 @@ Naming changes are automatically applied to queries that are saved in the securi
 
 | Column name | Original value name | New value name | Reason for change
 |--|--|--|--|
-| `DetectionSource` | MCAS | Microsoft Cloud App Security | Rebranding |
+| `DetectionSource` | Defender for Cloud Apps | Microsoft Defender for Cloud Apps | Rebranding |
 | `DetectionSource` | WindowsDefenderAtp| EDR| Rebranding |
 | `DetectionSource` | WindowsDefenderAv | Antivirus | Rebranding |
 | `DetectionSource` | WindowsDefenderSmartScreen |  SmartScreen | Rebranding |

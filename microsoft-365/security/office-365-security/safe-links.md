@@ -75,7 +75,7 @@ This article includes detailed descriptions of the following types of Safe Links
   - [Safe Links settings for Office 365 apps](#safe-links-settings-for-office-365-apps)
   - ["Block the following URLs" list for Safe Links](#block-the-following-urls-list-for-safe-links)
 
-The following table describes scenarios for Safe Links in Microsoft 365 and Office 365 organizations that include Defender for Office 365 (in other words, lack of licensing is never an issue in the examples).
+The following table describes scenarios for Safe Links in Microsoft 365 and Office 365 organizations that include Defender for Office 365 (note that lack of licensing is never an issue in the examples).
 
 <br>
 

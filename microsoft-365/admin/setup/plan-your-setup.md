@@ -30,8 +30,12 @@ This article is for people who have subscribed to a Microsoft 365 for business p
   
 Before moving your organization to Microsoft 365, there are requirements you need to meet, info you need to have on hand, and decisions you have to make.
 
+## Overview of Microsoft 365 Business Premium setup
 
-  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg?autoplay=false]
+
+Congratulations on your decision to move your business to the cloud with Microsoft 365! Whether you have one person in your business or 20, doing a little planning will help you get the most out of Microsoft 365 Business Premium.
+
 ## Info to have on hand before you run the setup wizard
 
 When you're ready to run the setup wizard and move your domain to Microsoft 365, here's the info you'll need to have on hand:

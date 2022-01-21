@@ -20,6 +20,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -35,6 +36,11 @@ description: "Manage email signatures, including legal disclaimers or disclosure
 ## Watch: Create a company-wide email signature
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
+
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, select **Exchange**.
+1. Select **Mail flow**.
+1. Select **Add +**, and then select **Apply disclaimers**.
+1. On the **New rule** page, complete the steps. 
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 

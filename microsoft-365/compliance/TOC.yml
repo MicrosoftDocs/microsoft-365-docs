@@ -774,9 +774,9 @@
           items:
             - name: Create and manage a case
               href: create-and-manage-advanced-ediscoveryv2-case.md
-            - name: Use large cases (preview)
-              href: advanced-ediscovery-large-cases.md
-        - name: Advanced eDiscovery workflow for Teams content (preview)
+            - name: Use the new case format
+              href: advanced-ediscovery-new-case-format.md
+        - name: Advanced eDiscovery workflow for Teams content
           href: teams-workflow-in-advanced-ediscovery.md
         - name: Manage custodians and non-custodial data sources
           href: managing-custodians.md

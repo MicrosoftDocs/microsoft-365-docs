@@ -36,7 +36,7 @@ Complete the following steps to create a case and add members. The user who crea
 
 2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then select **eDiscovery** > **Advanced**, and then select the  <a href="https://go.microsoft.com/fwlink/p/?linkid=2173764" target="_blank">**Cases** tab</a>.
 
-1. Select **Create a case**.
+3. Select **Create a case**.
 
 4. On the **New eDiscovery case** flyout page, give the case a name (required), and then type an optional case number and description. The case name must be unique in your organization.
 

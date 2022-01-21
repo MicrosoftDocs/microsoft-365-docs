@@ -30,7 +30,7 @@ ms.technology: mde
 
 The [advanced hunting](advanced-hunting-overview.md) schema is made up of multiple tables that provide either event information or information about devices and other entities. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the advanced hunting schema.
 
-## Get schema information in the security center
+## Get schema information in the Defender for Cloud
 
 While constructing queries, use the built-in schema reference to quickly get the following information about each table in the schema:
 
@@ -76,7 +76,7 @@ Table and column names are also listed within the Microsoft Defender Security Ce
 |
 
 > [!TIP]
-> Use [advanced hunting in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) to hunt for threats using data from Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, and Microsoft Defender for Identity. [Turn on Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
+> Use [advanced hunting in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) to hunt for threats using data from Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity. [Turn on Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).
 
 Learn more about how to move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
 
