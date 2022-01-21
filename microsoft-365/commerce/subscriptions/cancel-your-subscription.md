@@ -20,7 +20,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to cancel your Dynamics 365, Intune, Power Platform, and Microsoft 365 for business trial or paid subscriptions in the Microsoft 365 admin center."
-ms.date: 01/19/2022
+ms.date: 01/20/2022
 ---
 
 # Cancel your subscription
@@ -40,7 +40,9 @@ You must be a Global or Billing admin to do the tasks in this article. For more 
 
 ### If you have a billing profile
 
-You must cancel within 72 hours of starting a paid subscription to get a prorated refund. Refunds aren’t available after 72 hours.
+You must cancel within 72 hours of starting a paid subscription to get a prorated refund for unused time you already paid for. Refunds aren’t available after 72 hours.
+
+For example, let's say you bought a one year subscription for which you pay $20 each month for a single license. You bought the subscription on February 1, 2022 at 11 AM UST, and decide to cancel it on February 3, 2022 at 11 AM UST. We deduct $1.43 for the two days you held the subscription, and you receive a prorated refund of $18.57.
 
 **Not sure if you have a billing profile?** To learn how to find out if you have a billing profile, see [View my billing profiles](../billing-and-payments/manage-billing-profiles.md#view-my-billing-profiles).
 
