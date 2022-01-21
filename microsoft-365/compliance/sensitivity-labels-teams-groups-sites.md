@@ -169,11 +169,11 @@ Known limitations for this preview:
     - Workflows that use Power Apps or Power Automate
     - Third-party apps
 
-### Configure settings for the default sharing link for a site by using PowerShell advanced settings
+### Configure settings for the default sharing link type for a site by using PowerShell advanced settings
 
-In addition to the label settings for sites and groups that you can configure from the compliance center, you can also configure the default sharing link type for a site, and the sharing link permissions. Sensitivity labels for documents can also be configured for a default sharing link.
+In addition to the label settings for sites and groups that you can configure from the compliance center, you can also configure the default sharing link type for a site. Sensitivity labels for documents can also be configured for a default sharing link type. These settings that help to prevent over-sharing are automatically selected when users select the **Share** button in their Office apps. 
 
-For more information and instructions, see [Use sensitivity labels to set the default sharing link for sites and documents in SharePoint and OneDrive](sensitivity-labels-default-sharing-link.md).
+For more information and instructions, see [Use sensitivity labels to configure the default sharing link type for sites and documents in SharePoint and OneDrive](sensitivity-labels-default-sharing-link.md).
 
 ## Sensitivity label management
 
