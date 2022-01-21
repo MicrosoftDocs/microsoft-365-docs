@@ -286,7 +286,7 @@ Clients need external, recursive DNS resolution to be available so that the foll
 - \*.media.azure.net
 - \*.bmc.cdn.office.net
 
-**\*.azureedge.net** is used for Stream events ([Configure encoders for live streaming in Microsoft Stream - Microsoft Stream | Microsoft Docs](https://docs.microsoft.com/stream/live-encoder-setup)).
+**\*.azureedge.net** is used for Stream events ([Configure encoders for live streaming in Microsoft Stream - Microsoft Stream | Microsoft Docs](/stream/live-encoder-setup)).
 
 **\*.media.azure.net** and **\*.bmc.cdn.office.net** are used for Teams-produced Live Events (Quick Start events, RTMP-In supported events [Roadmap ID 84960]) scheduled from the Teams client.
 
@@ -306,7 +306,7 @@ Live Events uses multiple CDN providers to stream to customers, to provide the b
 
 For Azure CDN from Microsoft, you can download the list from [Download Azure IP Ranges and Service Tags – Public Cloud from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=56519) - you will need to look specifically for the service tag *AzureFrontdoor.Frontend* in the JSON; *addressPrefixes* will show the IPv4/IPv6 subnets. Over time the IPs can change, but the service tag list is always updated before they are put in use.
 
-For Azure CDN from Verizon (Edgecast) you can find an exhaustive list using [https://docs.microsoft.com/rest/api/cdn/edge-nodes/list](https://docs.microsoft.com/rest/api/cdn/edge-nodes/list) (click **Try It** ) - you will need to look specifically for the  **Premium\_Verizon**  section. Note that this API shows all Edgecast IPs (origin and Anycast). Currently there is not a mechanism for the API to distinguish between origin and Anycast.
+For Azure CDN from Verizon (Edgecast) you can find an exhaustive list using [https://docs.microsoft.com/rest/api/cdn/edge-nodes/list](/rest/api/cdn/edge-nodes/list) (click **Try It** ) - you will need to look specifically for the  **Premium\_Verizon**  section. Note that this API shows all Edgecast IPs (origin and Anycast). Currently there is not a mechanism for the API to distinguish between origin and Anycast.
 
 To implement this in a PAC file you can use the following example which sends the Microsoft 365 Optimize traffic direct (which is recommended best practice) via FQDN, and the critical Stream/Live Events traffic direct via a combination of the FQDN and the returned IP address. The placeholder name _Contoso_ would need to be edited to your specific tenant's name where _contoso_ is from contoso.onmicrosoft.com
 
@@ -314,7 +314,7 @@ To implement this in a PAC file you can use the following example which sends th
 
 Here is an example how to generate the PAC files:
 
-1. Go to the [Verizon URL](https://docs.microsoft.com/rest/api/cdn/edge-nodes/list#code-try-0) and download the resulting JSON (copy paste it into a file like cdnedgenodes.json)
+1. Go to the [Verizon URL](/rest/api/cdn/edge-nodes/list#code-try-0) and download the resulting JSON (copy paste it into a file like cdnedgenodes.json)
 2. Put the file into the same folder as the script.
 3. Run **.\Get-TLEPacFile.ps1 -Instance Worldwide -Type 2 -TenantName contoso -CdnEdgeNodesFilePath .\cdnedgenodes.json -FilePath TLE.pac**  (change out the tenant name for something else if you want the SPO URLs). This is Type 2, so **Optimize** and **Allow** (Type 1 is Optimize only)
 4. The TLE.pac file will contain all the namespaces and IPs (IPv4/IPv6).
@@ -437,9 +437,9 @@ Port 80 is only used for things like redirect to a port 443 session, no customer
 
 ### Does split-tunnel configuration work for Teams running in a browser?
 
-Yes, with caveats. Most Teams functionality is supported in the browsers listed in [Get clients for Microsoft Teams](https://docs.microsoft.com/microsoftteams/get-clients#web-client).
+Yes, with caveats. Most Teams functionality is supported in the browsers listed in [Get clients for Microsoft Teams](/microsoftteams/get-clients#web-client).
 
-In addition, Microsoft Edge **96 and above** supports VPN split tunneling for peer-to-peer traffic by enabling the Edge [WebRtcRespectOsRoutingTableEnabled](https://docs.microsoft.com/deployedge/microsoft-edge-policies#webrtcrespectosroutingtableenabled) policy. At this time, other browsers may not support VPN split tunneling for peer-to-peer traffic.
+In addition, Microsoft Edge **96 and above** supports VPN split tunneling for peer-to-peer traffic by enabling the Edge [WebRtcRespectOsRoutingTableEnabled](/deployedge/microsoft-edge-policies#webrtcrespectosroutingtableenabled) policy. At this time, other browsers may not support VPN split tunneling for peer-to-peer traffic.
 
 ## Related topics
 
