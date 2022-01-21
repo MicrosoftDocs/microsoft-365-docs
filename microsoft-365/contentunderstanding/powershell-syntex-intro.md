@@ -12,7 +12,7 @@ ms.collection:
     - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: normal
-description: "Learn how to manage SharePoint Syntex with PowerShell"
+description: "Learn how to manage SharePoint Syntex with PowerShell."
 ---
 
 # Manage SharePoint Syntex with PowerShell
@@ -20,9 +20,9 @@ description: "Learn how to manage SharePoint Syntex with PowerShell"
 > [!IMPORTANT]
 > The SharePoint Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
 
-For these scenarios, the SharePoint Syntex cmdlets in the PnP PowerShell module can be used to interact with models and explanations. To learn more about how to install this module, see [**PnP PowerShell overview**](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets)
+For these scenarios, the SharePoint Syntex cmdlets in the PnP PowerShell module can be used to interact with models and explanations. To learn more about how to install this module, see [PnP PowerShell overview](/powershell/sharepoint/sharepoint-pnp/sharepoint-pnp-cmdlets).
 
-Select from the following topics to learn how to use PowerShell to manage Syntex:
+Select from the following scenarios to learn how to use PowerShell to manage SharePoint Syntex:
 
 - [**Import and Export Models**](powershell-syntex-import-export.md)
 
@@ -34,7 +34,7 @@ Select from the following topics to learn how to use PowerShell to manage Syntex
 
 - [**Processing**](powershell-syntex-processing.md)
 
-    Start here if you want to learn how to use PowerShell to trigger document understanding processing on a document library
+    Start here if you want to learn how to use PowerShell to trigger document understanding processing on a document library.
 
 - [**Explanations**](powershell-syntex-explanations.md)
 
