@@ -18,6 +18,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
@@ -75,20 +76,6 @@ There are a few different ways you can access a mailbox once you've been given a
  
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.  
-
-2. Select the user you want, expand **Mail Settings**, and then Select **Edit** next to **Mailbox permissions**.
-
-3. Next to **Send as**, select **Edit**. 
-
-4. Select **Add permissions**, then choose the name of the person who you want this user to be able to send as. 
-    
-5. Select **Add**.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page. 
@@ -121,21 +108,7 @@ There are a few different ways you can access a mailbox once you've been given a
 
 
 > [!NOTE]
-> **Read** and **Manage** permissions are called **Full Access** permission when granted in the Exchange admin center. Full Access permission does not grant **Send as** or **Send on Behalf**  permissions.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.  
-  
-2. Select the user you want, expand **Mail Settings**, and then select **Edit** next to **Mailbox permissions**.
-    
-3. Next to **Read and manage**, select **Edit**. 
-    
-4. Select **Add permissions**, then choose the name of the user or users that you want to allow to read email from this mailbox.
-
-5. Select **Add**.
+> **Read** and **Manage** permissions are called **Full Access** permission when granted in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. This permission allows the assigned user mailbox to read as well as manage emails in the user mailbox on which the permission is assigned. Full Access permission does not grant **Send as** or **Send on behalf**  permissions.
 
 ::: moniker-end
 
@@ -169,20 +142,6 @@ There are a few different ways you can access a mailbox once you've been given a
 5. Select **Add permissions**, then choose the name of the user or users that you want to allow to send email on behalf of this mailbox.
 
 6. Select **Add**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.  
-
-2. Select the user you want, expand **Mail Settings**, and then select **Edit** next to **Mailbox permissions**.
-
-3. Next to **Send on behalf**, select **Edit**.
-    
-4. Select **Add permissions**, then choose the name of the user or users that you want to allow to send email on behalf of this mailbox.
-
-5. Select **Add**.
 
 ::: moniker-end
 

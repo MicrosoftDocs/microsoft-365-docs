@@ -2,7 +2,6 @@
 title: List Investigations API
 description: Use this API to create calls related to get Investigations collection
 keywords: apis, graph api, supported apis, Investigations collection
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library

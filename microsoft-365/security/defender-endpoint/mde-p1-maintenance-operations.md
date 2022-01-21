@@ -7,9 +7,9 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 11/19/2021
+ms.date: 01/03/2022
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
@@ -20,9 +20,6 @@ ms.collection: M365-security-compliance
 
 **Applies to**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-
-> [!TIP]
-> If you have Microsoft 365 E3 or A3 but not Microsoft 365 E5 or A5, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) to sign up for the preview program!
 
 As you use Defender for Endpoint Plan 1 in your organization, your security team can take certain steps to maintain your security solution. As your security team puts together your maintenance and operations plan, make sure to include at least the following activities:
 
@@ -43,7 +40,7 @@ To manage your security intelligence and product updates, see [Manage Microsoft 
 
 Defender for Endpoint offers you much flexibility and configuration options. You can adjust and fine-tune your settings to suit your organization’s needs. For example, you can use Microsoft Endpoint Manager, Group Policy, and other methods to manage your endpoint security settings. 
 
-To learn more, see [Manage Defender for Endpoint](manage-atp-post-migration.md).
+To learn more, see [Manage Defender for Endpoint](manage-mde-post-migration.md).
 
 ## Address false positives/negatives
 
@@ -55,4 +52,4 @@ If you’re seeing false positives/negatives in Defender for Endpoint, see [Addr
 
 ## Next steps
 
-- [See what's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-atp.md)
+- [See what's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-endpoint.md)

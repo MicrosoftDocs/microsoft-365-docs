@@ -52,7 +52,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 ## Admin center features and settings
 
-Here are the features and settings you'll find in the left-hand navigation of the admin center. Learn more about admin tasks in [admin help](../../business-video/admin-center-overview.md).
+Here are the features and settings you'll find in the left-hand navigation of the admin center. Learn more about admin tasks in [admin help](Overview of the Microsoft 365 admin center](admin-center-overview.md).
 
 <br>
 

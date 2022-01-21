@@ -83,6 +83,14 @@ There are several ways to uninstall Microsoft Defender for Endpoint on macOS. No
 
 - Open **Finder > Applications**. Right click on **Microsoft Defender for Endpoint > Move to Trash**.
 
+### Supported output types
+
+Supports table and JSON format output types. For each command, there's a default output behavior. You can modify the output in your preferred output format using the following commands:
+
+`-output json`
+
+`-output table`
+
 ### From the command line
 
 - `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`
@@ -106,6 +114,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Configuration|Turn on/off antivirus passive mode|`mdatp config passive-mode --value [enabled/disabled]`|
 |Configuration|Configure degree of parallelism for on-demand scans|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
 |Configuration|Turn on/off scans after security intelligence updates|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
+|Configuration|Turn on/off archive scanning (on-demand scans only)|`mdatp config scan-archives --value [enabled/disabled]`|
 |Diagnostics|Change the log level|`mdatp log level set --level [error/warning/info/verbose]`|
 |Diagnostics|Generate diagnostic logs|`mdatp diagnostic create --path [directory]`|
 |Health|Check the product's health|`mdatp health`|

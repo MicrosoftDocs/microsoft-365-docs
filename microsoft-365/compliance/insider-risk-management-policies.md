@@ -34,11 +34,11 @@ The **Policy dashboard** allows you to quickly see the policies in your organiza
 
 ![Insider risk management policy dashboard.](../media/insider-risk-policy-dashboard.png)
 
-## Policy recommendations from analytics (preview)
+## Policy recommendations from analytics
 
 Insider risk analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you may consider configuring.
 
-To learn more about insider risk analytics and policy recommendations, see [Insider risk management settings: Analytics (preview)](insider-risk-management-settings.md#analytics).
+To learn more about insider risk analytics and policy recommendations, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics).
 
 ## Policy templates
 
@@ -99,7 +99,7 @@ You'll need to have Microsoft Defender for Endpoint configured in your organizat
 
 Protecting healthcare record data and preventing the misuse of patient personal data is a significant concern for organizations in the healthcare industry. This misuse may include confidential data leaks to unauthorized persons, fraudulently modification of patient records, or the theft of patient healthcare records. Preventing this misuse of patient data, either by lack of awareness, negligence, or fraud by users is also key component in meeting the regulatory requirements of the Health Insurance Portability and Accountability Act (HIPAA) and the Health Information Technology for Economic and Clinical Health (HITECH) Act. Both of these acts establish the requirements for safeguarding patient protected health information (PHI).
 
-This policy template enables risk scoring for internal users that detects suspicious activities associated with records hosted on existing electronic medical record (EMR) systems. Detection focuses on unauthorized access, viewing, modification, and export of patient data. You'll need to configure a connector (the [Microsoft Healthcare connector](import-healthcare-data.md) or [Epic connector](import-epic-data.md)) to support detection of access, exfiltration, or obfuscation activities in your EMR system.
+This policy template enables risk scoring for internal users that detects suspicious activities associated with records hosted on existing electronic medical record (EMR) systems. Detection focuses on unauthorized access, viewing, modification, and export of patient data. You'll need to configure a connector (the [Microsoft Healthcare connector](import-healthcare-data.md) or [Epic connector](import-epic-data.md) to support detection of access, exfiltration, or obfuscation activities in your EMR system.
 
 When using this template, you must also configure a Microsoft 365 HR connector to periodically import organization profile data for users in your organization. See the Import data with the HR connector article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization.
 
@@ -264,7 +264,7 @@ To create a new insider risk management policy, you'll use the policy wizard in 
 
 Complete the following steps to create a new policy:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to **Insider risk management** and select the **Policies** tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. Select **Create policy** to open the policy wizard.
 3. On the **Policy template** page, choose a policy category and then select the template for the new policy. These templates are made up of conditions and indicators that define the risk activities you want to detect and investigate. Review the template prerequisites, triggering events, and detected activities to confirm this policy template fits your needs.
 
@@ -300,7 +300,7 @@ Complete the following steps to create a new policy:
     >[!IMPORTANT]
     >If you're unable to select a listed indicator, it's because they aren't enabled for your organization. To make them available to select and assign to the policy, enable the indicators in **Insider risk management** > **Settings** > **Policy indicators**.
 
-    If you've selected other policy templates, custom triggering events aren't supported. The built-in policy triggering events apply and you'll continue past this step to Step XX without defining policy attributes.
+    If you've selected other policy templates, custom triggering events aren't supported. The built-in policy triggering events apply and you'll continue to Step 23 without defining policy attributes.
 
 14. Select **Next** to continue.
 15.	If you've selected the *General data leaks* or *Data leaks by priority users* templates and have selected the **User performs an exfiltration activity and associated indicators**, you can choose custom or default thresholds for the indicator triggering events that you've selected. Choose either the **Use default thresholds (Recommended)** or **Use custom thresholds for the triggering events**.
@@ -326,7 +326,7 @@ To update an existing insider risk management policy, you'll use the policy wiza
 
 Complete the following steps to manage an existing policy:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to **Insider risk management** and select the **Policies** tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. On the policy dashboard, select the policy you want to manage.
 3. On the policy details page, select **Edit policy**
 4. In the policy wizard, you cannot edit the following:
@@ -357,7 +357,7 @@ Complete the following steps to manage an existing policy:
     >[!IMPORTANT]
     >If you're unable to select a listed indicator, it's because they aren't enabled for your organization. To make them available to select and assign to the policy, enable the indicators in **Insider risk management** > **Settings** > **Policy indicators**.
 
-    If you've selected other policy templates, custom triggering events aren't supported. The built-in policy triggering events apply and you'll continue past this step to Step XX without defining policy attributes.
+    If you've selected other policy templates, custom triggering events aren't supported. The built-in policy triggering events apply and you'll continue to Step 23 without defining policy attributes.
 
 14. Select **Next** to continue.
 15.	If you've selected the *General data leaks* or *Data leaks by priority users* templates and have selected the **User performs an exfiltration activity and associated indicators**, you can choose custom or default thresholds for the indicator triggering events that you've selected. Choose either the **Use default thresholds (Recommended)** or **Use custom thresholds for the triggering events**.
@@ -383,7 +383,7 @@ You may need to create a new policy that is similar to an existing policy but ne
 
 Complete the following steps to copy an existing policy:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to Insider risk management and select the Policies tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. On the policy dashboard, select the policy you want to copy.
 3. On the policy details page, select Copy.
 4. In the policy wizard, name the new policy and update the policy configuration as needed.
@@ -403,7 +403,7 @@ Some scenarios where you may want to immediately start scoring user activities:
 
 To manually start scoring activity for users in one or more insider risk management policies, complete the following steps:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to **Insider risk management** and select the **Policies** tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. On the policy dashboard, select the policy or policies you want to add users to.
 3. Select **Start scoring activity for users**.
 4. In the **Reason field** in the **Add users to multiple policies** pane, add a reason for adding the users.
@@ -430,7 +430,7 @@ To stop scoring users in a policy, see the [Insider risk management users: Remov
 
 To delete an existing insider risk management policy, complete the following steps:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to **Insider risk management** and select the **Policies** tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. On the policy dashboard, select the policy you want to delete.
 3. Select **Delete** on the dashboard toolbar.
 4. On the **Delete** dialog, Select **Yes** to delete the policy, or select **Cancel** to close the dialog.
