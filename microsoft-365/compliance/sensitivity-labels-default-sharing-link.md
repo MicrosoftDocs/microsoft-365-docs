@@ -31,7 +31,13 @@ The default sharing link type sets the scope (who) and permissions (view or edit
 
 At the site level (SharePoint site or OneDrive account), sensitivity labels provide a convenient alternative for setting the default link type that can be configured for a site in the SharePoint admin center. For more information, see [Change the default link type for a site](/sharepoint/change-default-sharing-link) from the SharePoint documentation.
 
-This site-level configuration works well for SharePoint sites that have documents all with the same level of sensitivity. But if sites contain some documents that have a higher level of sensitivity that require more restrictive settings, you can configure a sensitivity label with different settings for the default sharing link type, and then apply this label to documents. In this scenario where the site has default link type settings, and a document in that site has different default link type settings, the more restrictive scope settings will be applied at the time the user selects the sharing option for the document.
+This site-level configuration works well for SharePoint sites that have documents all with the same level of sensitivity. But if sites contain some documents that have a higher level of sensitivity that require more restrictive settings, you can configure a sensitivity label with different settings for the default sharing link type, and then apply this label to documents.
+
+In this scenario where the site has default sharing link type settings, and a document in that site has different default link type settings, the more restrictive scope settings will be applied at the time the user selects the sharing option for the document. For example:
+
+- The default sharing link type for the site is scoped to anybody in your organization. A document in that site is labeled with the default sharing link type set to specific people. When a user shares that document, the default sharing link type selected will be scoped to specific people.
+
+- The default sharing link type for the site is scoped to specific people, with edit permissions. A document in that site is labeled with the default sharing link type set to anybody in the organization, with view permissions. When a user shares that document, the default sharing link type selected will be scoped to specific people with edit permissions.
 
 Configuring the default link type for documents might also be appropriate without the site-level setting. For example, although SharePoint sites are typically organized to host the same type of documents, that isn't the case for OneDrive accounts. Users typically save a wide range of files to OneDrive, often including a mix of personal and business documents. Setting a default link type for all documents for a user's OneDrive account is probably not practical, but individual documents can still benefit from these settings. For example:
 
