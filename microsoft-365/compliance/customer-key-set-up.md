@@ -27,7 +27,16 @@ Set up Azure before you can use Customer Key for Office 365. This article descri
 
 Before you get started, ensure that you have the appropriate Azure subscriptions and licensing for your organization. Use paid Azure Subscriptions using either an Enterprise Agreement or a Cloud Service Provider. Credit Card based payments are not accepted. Approve and set up the account needs for invoicing. Subscriptions you got through Free, Trial, Sponsorships, MSDN Subscriptions, and those under Legacy Support are not eligible.
 
-Office 365 E5, Microsoft 365 E5, Microsoft 365 E5 Compliance, and Microsoft 365 E5 Information Protection & Governance SKUs offer Customer Key. Office 365 Advanced Compliance SKU is no longer available for procuring new licenses. Existing Office 365 Advanced Compliance licenses will continue to be supported.
+> [!IMPORTANT]
+> Valid subscriptions that offer Customer Key are:
+>
+> - Office 365 E5
+> - Microsoft 365 E5
+> - Microsoft 365 E5 Compliance
+> - Microsoft 365 E5 Information Protection & Governance SKUs (No longer available for procuring new licenses)
+> - Microsoft 365 Security and Compliance for FLW
+
+Existing Office 365 Advanced Compliance licenses will continue to be supported.
 
 To understand the concepts and procedures in this article, review the [Azure Key Vault](/azure/key-vault/) documentation. Also, become familiar with the terms used in Azure, for example, [Azure AD tenant](/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant).
   
@@ -44,7 +53,7 @@ You'll complete most of these tasks by remotely connecting to Azure PowerShell. 
 - [Create two new Azure subscriptions](#create-two-new-azure-subscriptions)
 
 - [Submit a request to activate Customer Key for Office 365](#submit-a-request-to-activate-customer-key-for-office-365)
- 
+
 - [Register Azure subscriptions to use a mandatory retention period](#register-azure-subscriptions-to-use-a-mandatory-retention-period)
 
   This registration process will take five business days to complete.
@@ -108,8 +117,9 @@ To submit an offer to activate Customer Key, complete these steps:
 
 The temporary or permanent loss of root encryption keys can be disruptive or even catastrophic to service operation and can result in data loss. For this reason, the resources used with Customer Key require strong protection. All the Azure resources that are used with Customer Key offer protection mechanisms beyond the default configuration. You can tag or register Azure subscriptions for a *mandatory retention period*. A mandatory retention period prevents immediate and irrevocable cancellation of your Azure subscription. The steps required to register Azure subscriptions for a mandatory retention period require collaboration with the Microsoft 365 team. This process will take five business days to complete. Previously, mandatory retention period was sometimes referred to as "Do Not Cancel".
   
-Before contacting the Microsoft 365 team, you must do the following steps for each Azure subscription that you use with Customer Key. Ensure that you have the [Azure PowerShell Az](/powershell/azure/new-azureps-module-az) module installed before you start.
-  
+> [!IMPORTANT]
+> Before contacting the Microsoft 365 team, you must do the following steps for **each** Azure subscription that you use with Customer Key. Ensure that you have the [Azure PowerShell Az](/powershell/azure/new-azureps-module-az) module installed before you start.
+
 1. Sign in with Azure PowerShell. For instructions, see [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
 
 2. Run the Register-AzProviderFeature cmdlet to register your subscriptions to use a mandatory retention period. Complete this action for each subscription.
@@ -119,15 +129,15 @@ Before contacting the Microsoft 365 team, you must do the following steps for ea
    Register-AzProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.Resources
    ```
 
-3. Contact Microsoft to complete the process.
+### Contact the corresponding Microsoft alias to proceed with the process
 
-   - For enabling Customer Key for assigning DEP to individual Exchange Online mailboxes, contact [exock@microsoft.com](mailto:exock@microsoft.com).
+- For enabling Customer Key for assigning DEP to individual Exchange Online mailboxes, contact [exock@microsoft.com](mailto:exock@microsoft.com).
 
-   - For enabling Customer Key for assigning DEPs to encrypt SharePoint Online and OneDrive for Business content (including Teams files) for all tenant users, contact [spock@microsoft.com](mailto:spock@microsoft.com).
+- For enabling Customer Key for assigning DEPs to encrypt SharePoint Online and OneDrive for Business content (including Teams files) for all tenant users, contact [spock@microsoft.com](mailto:spock@microsoft.com).
 
-   - For enabling Customer Key for assigning DEPs to encrypt content across multiple Microsoft 365 workloads (Exchange Online, Teams, MIP EDM) for all tenant users, contact [m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com).
+- For enabling Customer Key for assigning DEPs to encrypt content across multiple Microsoft 365 workloads (Exchange Online, Teams, MIP EDM) for all tenant users, contact [m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com).
 
-   - Include the following information in your email:
+- Include the following information in your email:
 
      **Subject**: Customer Key for \<*Your tenant's fully qualified domain name*\>
 
@@ -136,19 +146,24 @@ Before contacting the Microsoft 365 team, you must do the following steps for ea
 
      The Service Level Agreement (SLA) for completion of this process is five business days once Microsoft has been notified (and verified) that you have registered your subscriptions to use a mandatory retention period.
 
-4. Once you receive notification from Microsoft that registration is complete, verify the status of your registration by running the Get-AzProviderFeature command as follows. If verified, the Get-AzProviderFeature command returns a value of **Registered** for the **Registration State** property. Complete this step for each subscription.
+### Verify the status of each your Azure Subscriptions
+
+Once you receive notification from Microsoft that registration is complete, verify the status of your registration by running the Get-AzProviderFeature command as follows. If verified, the Get-AzProviderFeature command returns a value of **Registered** for the **Registration State** property. Complete this step for **each** subscription.
 
    ```powershell
    Set-AzContext -SubscriptionId <SubscriptionId>
    Get-AzProviderFeature -ProviderNamespace Microsoft.Resources -FeatureName mandatoryRetentionPeriodEnabled
    ```
 
-5. To complete the process, run the Register-AzResourceProvider command. Complete this step for each subscription.
+To complete the process, run the Register-AzResourceProvider command. Complete this step for **each** subscription.
 
    ```powershell
-   Set-AzContext -SubscriptionId <SubscriptionId>
    Register-AzResourceProvider -ProviderNamespace Microsoft.KeyVault
    ```
+
+> [!TIP] Before moving on, make sure the 'RegistrationState' is set to 'Registered' like the image below.
+>
+> ![Encryption ciphers for Exchange Online Customer Key.](../media/MandatoryRetentionPeriod.png)
 
 ### Create a premium Azure Key Vault in each subscription
 
@@ -199,7 +214,7 @@ You'll need to define three separate sets of permissions for each key vault, dep
 
 - **Key vault contributors** that can change permissions on the Azure Key Vault itself. You'll need to change these permissions as employees leave or join your team. In the rare situation that the key vault administrators legitimately need permission to delete or restore a key you'll also need to change the permissions. This set of key vault contributors needs to be granted the **Contributor** role on your key vault. You can assign this role by using Azure Resource Manager. For detailed steps, see [Use Role-Based Access Control to manage access to your Azure subscription resources](/azure/active-directory/role-based-access-control-configure). The administrator who creates a subscription has this access implicitly, and the ability to assign other administrators to the Contributor role.
 
-- **Permissions to Microsoft 365 applications** for every key vault that you use for Customer Key, you need to give wrapKey, unwrapKey, and get permissions to the corresponding Microsoft 365 Service Principal. 
+- **Permissions to Microsoft 365 applications** for every key vault that you use for Customer Key, you need to give wrapKey, unwrapKey, and get permissions to the corresponding Microsoft 365 Service Principal.
 
   To give permission to Microsoft 365 Service Principal, run the **Set-AzKeyVaultAccessPolicy** cmdlet using the following syntax:
 
@@ -209,10 +224,10 @@ You'll need to define three separate sets of permissions for each key vault, dep
 
    Where:
 
-   - *vault name* is the name of the key vault you created.
-   - For Exchange Online and Skype for Business, replace  *Office 365 appID* with `00000002-0000-0ff1-ce00-000000000000`
-   - For SharePoint Online, OneDrive for Business, and Teams files, replace  *Office 365 appID* with `00000003-0000-0ff1-ce00-000000000000`
-   - For multi-workload policy (Exchange, Teams, MIP EDM) that applies to all tenant users, replace *Office 365 appID* with `c066d759-24ae-40e7-a56f-027002b5d3e4`
+  - *vault name* is the name of the key vault you created.
+  - For Exchange Online and Skype for Business, replace  *Office 365 appID* with `00000002-0000-0ff1-ce00-000000000000`
+  - For SharePoint Online, OneDrive for Business, and Teams files, replace  *Office 365 appID* with `00000003-0000-0ff1-ce00-000000000000`
+  - For multi-workload policy (Exchange, Teams, MIP EDM) that applies to all tenant users, replace *Office 365 appID* with `c066d759-24ae-40e7-a56f-027002b5d3e4`
 
   Example: Setting permissions for Exchange Online and Skype for Business:
 
@@ -225,6 +240,20 @@ You'll need to define three separate sets of permissions for each key vault, dep
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-CK-SP-NA-VaultA1 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName 00000003-0000-0ff1-ce00-000000000000
    ```
+
+  Confirm *Get, wrapKey, and unwrapKey* are granted to **each** key vault by running the *Get-AzKeyVault* cmdlet.
+
+   ```powershell
+   Get-AzKeyVault -VaultName <vault name> | fl
+   ```  
+
+> [!Tip] Before moving on, make the permissions are configured properly for the key vault, the *Permissions to Keys* will return **wrapKey, unwrapKey, get**. Make sure to correct the permissions to the correct service you are onboarding to. The *Display Name* for each service is listed below:  
+  >
+  > - Exchange Online and Skype for Business: *Office 365 Exchange Online*
+  > - SharePoint Online, OneDrive, and Teams files: *Office 365 SharePoint Online*
+  > - Multiple Microsoft 365 workloads: *M365DataAtRestEncryption*
+  >  
+  > ![Encryption ciphers for Exchange Online Customer Key.](../media/KeyVaultPermissions.png)
 
 ### Make sure soft delete is enabled on your key vaults
 
@@ -248,6 +277,11 @@ To enable Soft Delete on your key vaults, complete these steps:
    ```powershell
    Get-AzKeyVault -VaultName <vault name> | fl
    ```
+
+> [!TIP] Before moving on, make sure the 'Soft Delete Enabled?' is set to 'True' like the image below.
+>
+>
+> <img src="../media/SoftDeleteEnabled.png" alt="drawing" width="400"/>
 
 ### Add a key to each key vault either by creating or importing a key
 
@@ -296,7 +330,8 @@ To check the recovery level of a key, in Azure PowerShell, run the Get-AzKeyVaul
 (Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes
 ```
 
-If the _Recovery Level_ property returns anything other than a value of **Recoverable+ProtectedSubscription**, ensure that you have put the subscription on the Do Not Cancel list and that you have soft delete enabled on each of your key vaults.
+> [!Tip] Before moving on, If the _Recovery Level_ property returns anything other than a value of **Recoverable+ProtectedSubscription**, ensure that you have put the subscription on the Do Not Cancel list and that you have soft delete enabled on each of your key vaults.
+> <img src="../media/RecoveryLevel.png" alt="drawing" width="500"/>
   
 ### Back up Azure Key Vault
 
