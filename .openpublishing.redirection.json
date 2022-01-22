@@ -12,7 +12,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/overview.md",
-      "redirect_url": "microsoft-365/security/office-365-security/microsoft-defender-for-office-365-overview",
+      "redirect_url": "/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-overview",
       "redirect_document_id": false
     },
     {
@@ -6382,6 +6382,11 @@
     {
       "source_path": "microsoft-365/security/defender-endpoint/mde-terms-windows.md",
       "redirect_url": "/legal/microsoft-365/mde-terms-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/api-portal-mapping.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/apis-intro",
       "redirect_document_id": false
     },
     {
