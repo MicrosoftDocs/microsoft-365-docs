@@ -281,7 +281,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     > [!NOTE]
     > When [OneDrive accounts are deleted](/onedrive/retention-and-deletion#the-onedrive-deletion-process) (for example, an employee leaves the organization) the location gets marked as a SharePoint site to support continued access during the OneDrive retention period.
     > 
-    > At this stage of deletion, files in the OneDrive account won't be included in the **All** setting for the **OneDrive accounts** location but will be included in the**All** setting for the **SharePoint sites** location. Any files from these deleted OneDrive accounts display SharePoint as their source location in the simulation results and auditing data.
+    > At this stage of deletion, files in the OneDrive account won't be included in the **All** setting for the **OneDrive accounts** location but will be included in the **All** setting for the **SharePoint sites** location. Any files from these deleted OneDrive accounts display SharePoint as their source location in the simulation results and auditing data.
 
 7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, select **Advanced rules**. Then select **Next**.
 
