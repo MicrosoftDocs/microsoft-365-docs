@@ -6385,6 +6385,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/api-portal-mapping.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/apis-intro",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-business/mdb-view-edit-policies.md",
       "redirect_url": "/microsoft-365/security/defender-business/mdb-view-edit-create-policies",
       "redirect_document_id": true
