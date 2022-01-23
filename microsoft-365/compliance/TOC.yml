@@ -582,7 +582,7 @@
         - name: Learn about information governance
           href: information-governance.md
         - name: Get started with information governance
-          href: get-started-with-retention.md
+          href: get-started-with-information-governance.md
         - name: Create retention policies
           href: create-retention-policies.md
         - name: Use retention labels for exceptions

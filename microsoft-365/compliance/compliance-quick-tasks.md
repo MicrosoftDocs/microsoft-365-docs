@@ -82,7 +82,7 @@ When content is subject to a retention policy, people can continue to edit and w
 
 You can quickly put a retention policy in place for multiple locations in your Microsoft 365 environment such as Exchange mail, SharePoint sites, OneDrive accounts, and Microsoft 365 groups. There are no limits to the number of mailboxes or sites this policy can automatically include. But if you need to get more selective, you can do so by configuring a retention policy for specific locations and include or exclude sites or users.
 
-For step-by-step guidance to configure a retention policy, see [Create and configure retention policies](create-retention-policies.md). If you're new to configuring retention in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md).
+For step-by-step guidance to configure a retention policy, see [Create and configure retention policies](create-retention-policies.md). If you're new to configuring retention in Microsoft 365, see [Get started with information governance](get-started-with-information-governance.md).
 
 ## Task 7: Configure sensitive information and offensive language policies
 

@@ -97,7 +97,7 @@ To find out how many items are in any given classification category, hover over 
 > [!NOTE]
 > If the card displays the message "No data found with sensitive information", it means that there are no items in your organization that have been classified as being a sensitive information type or no items that have been crawled. To get started with labels, see:
 >- [Get started with sensitivity labels](get-started-with-sensitivity-labels.md)
->- [Get started with retention policies and retention labels](get-started-with-retention.md)
+>- [Get started with information governance](get-started-with-information-governance.md)
 >- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 
 ## Top sensitivity labels applied to content
@@ -129,7 +129,7 @@ The top applied retention labels card shows you how many items have a given rete
 
 > [!NOTE]
 > If this card displays the message, "No retention labels detected", it means you haven't created or published any retention labels or no content has had a retention label applied. To get started with retention labels, see:
->- [Get started with retention policies and retention labels](get-started-with-retention.md)
+>- [Get started with information governance](get-started-with-information-governance.md)
 
 ## Top activities detected
 

@@ -44,7 +44,7 @@ Other information governance capabilities to help you keep what you need and del
 
 ## Deployment guidance
 
-For deployment guidance for information governance that includes a recommended deployment roadmap, licensing information, permissions, a list of supported scenarios, and end-user documentation, see [Get started with information governance](get-started-with-retention.md).
+For deployment guidance for information governance that includes a recommended deployment roadmap, licensing information, permissions, a list of supported scenarios, and end-user documentation, see [Get started with information governance](get-started-with-information-governance.md).
 
 Looking for deployment guidance to protect your data? See [Deploy a Microsoft Information Protection solution](information-protection-solution.md).
 
