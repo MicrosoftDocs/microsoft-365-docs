@@ -80,7 +80,7 @@ A [retention policy](retention.md) lets you proactively decide whether to retain
 
 When content is subject to a retention policy, people can continue to edit and work with the content as if nothing's changed. The content is retained in place, in its original location. But if someone edits or deletes content that's subject to the retention policy, a copy of the original content is saved to a secure location where it's retained while the retention policy for that content is in effect.
 
-You can quickly put a retention policy in place for multiple locations in your Microsoft 365 environment such as Exchange mail, SharePoint sites, OneDrive accounts, and Microsoft 365 groups. There are no limits to the number of mailboxes or sites this policy can automatically include. But if you need to get more selective, you can do so by configuring a retention policy for specific locations and include or exclude sites or users.
+You can quickly put retention policies in place for multiple services in your Microsoft 365 environment that include Exchange mail, SharePoint sites, OneDrive accounts, Teams and Yammer messages, and Microsoft 365 groups. There are no limits to the number of mailboxes, sites, groups, or users that this policy can automatically include. But if you need to get more selective, you can do so by configuring either an adaptive scope that's query-based to dynamically include or exclude specific instances, or a static scope that specifies specific instances to always include or exclude.
 
 For step-by-step guidance to configure a retention policy, see [Create and configure retention policies](create-retention-policies.md). If you're new to configuring retention in Microsoft 365, see [Get started with information governance](get-started-with-information-governance.md).
 
@@ -126,17 +126,13 @@ For step-by-step guidance to using activity explorer, see [Get started with acti
 
 Now that you’ve configured the basics for compliance management for your organization, consider the following compliance solutions in Microsoft 365 to help you protect sensitive information and detect and act on additional insider risks.
 
-### Configure retention labels
+### Create retention labels for information governance or records management
 
-While retention policies apply at the container level to locations such as SharePoint sites and Exchange mailboxes, [retention labels](retention.md#retention-labels) allow for more specific targeting for your retention and deletion policies. For example, at the document or email message level that end users can apply manually in addition to automatic application by administrators. You can also apply a retention label to a document library, folder, or document set in SharePoint, so that all documents that are stored in that location inherit the default retention label.
+Whereas retention policies automatically apply to all items at the container level (such as SharePoint sites, user mailboxes, and so on), [retention labels](retention.md#retention-labels) apply to individual items, such as a SharePoint document or an email message. You can apply these labels manually or automatically.
 
-Additionally, retention labels support [records management](records-management.md) to mark content as a record. When this happens, the label places additional restrictions on the content that might be needed to help your organization comply with regulatory requirements.
+Retention labels can be used as part of your governance information strategy to retain what you need and delete what you don't. They support exceptions to your retention policies when specific documents or emails need different retention or deletion settings. For example, your SharePoint policy retains all documents for three years, but specific contract documents must be retained for five years. For more information, see [Create retention labels for exceptions to your retention policies](create-retention-labels-information-governance.md)
 
-For step-by-step guidance to create and publish retention labels, see the following guidance:
-- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
-- [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
-
-To get started with records management, see [Get started with records management](get-started-with-records-management.md).
+However, retention labels, when used with [records management](records-management.md), provide many more management options that are well-suited to high-value items for business, legal, or regulatory record-keeping requirements. For more information, see [Get started with records management](get-started-with-records-management.md).
 
 ### Identify and define sensitive information types
 
