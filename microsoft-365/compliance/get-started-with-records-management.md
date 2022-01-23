@@ -29,7 +29,7 @@ Ready to start managing your organization's high-value content for legal, busine
 1. **Understand how retention and deletion works** in Microsoft 365, and identify whether you need to use retention policies to supplement retention labels that manage documents and emails at the item level: [Learn about retention policies and retention labels](retention.md)
     
     If necessary, [create retention policies](create-retention-policies.md) for baseline governance of data across Microsoft 365 workloads.
-
+    
 2. **Understand the records management solution** and how retention labels can be used to allow or block actions when documents and emails are declared records: [Learn about records management](records-management.md)
 
 3. **Create your file plan for retention and deletion settings and actions, and when items should be marked as records** by importing an existing plan if you have one, or create new retention labels: [Use file plan to create and manage retention labels](file-plan-manager.md)
@@ -39,7 +39,7 @@ Ready to start managing your organization's high-value content for legal, busine
     - [Create retention labels and apply them in apps](create-apply-retention-labels.md)
     - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
-Independently from these steps, **Use connectors to archive third-party-data** that includes data from social media platforms, instant messaging platforms, and document collaboration platforms. When this data is imported to online mailboxes, it supports not just records management from Microsoft 365 Compliance, but also other compliance solutions such as communication compliance, insider risk management, and eDiscovery. For more information, see [Archive third-party data in Microsoft 365](archiving-third-party-data.md).
+Independently from these steps, **Use connectors to import and archive third-party-data** that includes data from social media platforms, instant messaging platforms, and document collaboration platforms. When this data is imported to online mailboxes, it supports not just records management from Microsoft 365 Compliance, but also other compliance solutions such as communication compliance, insider risk management, and eDiscovery. For more information, see [Learn about connectors for third-party data](archiving-third-party-data.md).
 
 ## Subscription and licensing requirements
 
@@ -60,6 +60,9 @@ These permissions are required only to create, configure, and apply retention la
 ## Common scenarios
 
 Use the following table to help you map your business requirements to the scenarios that are supported by records management.
+
+> [!TIP]
+> Need to comply with a specific industry regulation? Check [Regulatory requirements for information governance and records management](retention-regulatory-requirements.md) for regulation-specific guidance.
 
 |I want to ...|Documentation|
 |----------------|---------------|
