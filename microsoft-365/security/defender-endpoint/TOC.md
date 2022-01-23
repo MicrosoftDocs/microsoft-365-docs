@@ -76,7 +76,6 @@
 #### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 #### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
 
-#### [Application license terms](mde-terms-windows.md)
 
 
 ### [Microsoft Defender for Endpoint on other Operating Systems]()
@@ -118,7 +117,7 @@
 
 ##### [Privacy](mac-privacy.md)
 ##### [Resources](mac-resources.md)
-##### [Application license terms](mde-terms-mac.md)
+
 
 #### [Microsoft Defender for Endpoint on Linux]()
 ##### [Overview of Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
@@ -185,7 +184,6 @@
 
 ###### [Privacy](ios-privacy.md)
 
-##### [Microsoft Defender for Endpoint application license terms](mde-terms-mobile.md) 
 
 ### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
 
@@ -277,7 +275,7 @@
 ###### [Phase 3: Implement](attack-surface-reduction-rules-deployment-phase-3.md)
 ###### [Phase 4: Operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
 ##### [ASR rules reference](attack-surface-reduction-rules-reference.md)
-##### [Enable ASR rules alternate congiguration methods](enable-attack-surface-reduction.md)
+##### [Enable ASR rules alternate configuration methods](enable-attack-surface-reduction.md)
 #### [Attack surface reduction FAQ](attack-surface-reduction-faq.yml)
 
 ### Next-generation protection
@@ -647,7 +645,7 @@
 
 #### [SIEM integration]()
 ##### [Integrate SIEM tools with Microsoft Defender for Endpoint](configure-siem.md)
-##### [Microsoft Defender for Endpoint detection fields](api-portal-mapping.md)
+##### [Enable SIEM integration in Microsoft Defender for Endpoint](enable-siem-integration.md)
 ##### [Pull detections using SIEM REST API](pull-alerts-using-rest-api.md)
 ##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
 
