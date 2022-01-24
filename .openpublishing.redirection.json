@@ -4276,12 +4276,12 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/security/defender/mde-terms-mobile.md",
+      "source_path": "microsoft-365/security/defender-endpoint/mde-terms-mobile.md",
       "redirect_url": "/legal/microsoft-365/mde-terms-windows",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/security/defender/mde-terms-mac.md",
+      "source_path": "microsoft-365/security/defender-endpoint/mde-terms-mac.md",
       "redirect_url": "/legal/microsoft-365/mde-terms-windows",
       "redirect_document_id": false
     },
@@ -6377,6 +6377,11 @@
     {
       "source_path": "microsoft-365/security/defender-endpoint/mde-terms-windows.md",
       "redirect_url": "/legal/microsoft-365/mde-terms-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/api-portal-mapping.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/apis-intro",
       "redirect_document_id": false
     },
     {
