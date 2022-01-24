@@ -99,7 +99,7 @@ Determines whether the antivirus engine runs in passive mode or not. In passive 
 
 #### Enable/disable behavior-monitoring 
 
-Determines whether behavior monitoring and blocking capability is enabled on the device or not. To improve effectiveness of security protection, we recommend keeping this feature turned on.
+Determines whether behavior monitoring and blocking capability is enabled on the device or not. To improve effectiveness of security protection, we recommend keeping this feature turned on.
 
 <br>
 
@@ -590,7 +590,7 @@ The following configuration profile contains entries for all settings described 
 }
 ```
 
-  ## Add tag or group ID to the configuration profile
+## Add tag or group ID to the configuration profile
 
 When you run the `mdatp health` command for the first time, the value for the tag and group ID will be blank. To add tag or group ID to the `mdatp_managed.json` file, follow the below steps:
   
@@ -617,7 +617,7 @@ When you run the `mdatp health` command for the first time, the value for the ta
   > [!NOTE]
   > Don’t forget to add the comma after the closing curly bracket at the end of the `cloudService` block. Also, make sure that there are two closing curly brackets after adding Tag or Group ID block (please see the above example).
   
-  ## Configuration profile validation
+## Configuration profile validation
 
 The configuration profile must be a valid JSON-formatted file. There are a number of tools that can be used to verify this. For example, if you have `python` installed on your device:
 
