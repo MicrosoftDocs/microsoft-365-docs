@@ -275,6 +275,6 @@ Once you determine that the activities associated make this alert a True Positiv
 
 ## See also
 
-- [Overview of alert grading](alert-grading-playbook.md)
+- [Overview of alert grading](alert-grading-playbooks.md)
 - [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
 - [Suspicious inbox forwarding rules](alert-grading-playbook-inbox-forwarding-rules.md)
