@@ -105,7 +105,7 @@ Here are some ways to detect if your application may be impacted:
    - `http://www.microsoft.com/pkiops`
 
 - If you are impacted by this change, you may see error messages dependent on the type of environment you are running in and scenario you are impacted by. Check Windows Application event logs, CAPI2 event logs, and custom application logs for messages that look like:
-   ```
+   ```output
    An operation failed because the following certificate has validation errors:
    
    Subject Name: CN=teams.microsoft.com
