@@ -31,41 +31,14 @@ ms.technology: m365d
 
 Threat actors can use compromised user accounts for several malicious purposes including reading emails in a user’s inbox, creating inbox rules to forward emails to external accounts, sending phishing mails, among others. Malicious inbox rules are widely common during business email compromise (BEC) and phishing campaigns, and it important to monitor them consistently.
 
-## How to use this playbook?
 This playbook helps you investigate any incident related to suspicious inbox forwarding rules that attackers configure to perform malicious tasks. You can review the alerts and take recommended actions to remediate the attack and protect your network. 
 
-### Planning phase
-
-To ensure that you can conduct the investigation process accurately and achieve the desired outcome, it is essential to plan thoroughly in the beginning. Elements of planning include identifying scope, use cases, and success criteria. This playbook is for security teams, including SOC analysts and IT administrators, who review, investigate, and grade the alerts.
-
-### Scope
-
-The scope of the playbook is to provide methodical steps to assess if the alert is a true positive case. 
-
-### Use cases
-
-Use cases represent user stories for intended users. For example:
-
-- As an SOC analyst, I need to assess and review the generated alerts [incident management]
-- As an SOC analyst, I need to search for data in my environment and check for potential threats and suspicious activities [advanced hunting]
-
-## Success criteria
-
-The investigation is considered a success if the analyst reviews the alert and gathers the required information to accurately grade the alert. 
-
-## Microsoft Defender for Cloud Apps
-
-Microsoft Defender for Cloud Apps is a Cloud Access Security Broker (CASB) that supports various deployment modes including log collection, API connectors, and reverse proxy. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your Microsoft and third-party cloud services.
-
-Defender for Cloud Apps natively integrates with leading Microsoft solutions and is designed with security professionals in mind. It provides simple deployment, centralized management, and innovative automation capabilities.
-
-The Defender for Cloud Apps framework includes the capability to protect your network against cyberthreats and anomalies, detects unusual behavior across cloud apps to identify ransomware, compromised users or rogue applications. It enables the analysis of high-risk usage and can remediate automatically to limit the risk to your organization.
 
 ## Inbox rules
 
 Inbox rules are set to automatically manage email messages based on predefined criteria. For example, you can create an inbox rule to move all messages from your manager into another folder, or forward messages you receive to another email address.
 
-### Suspicious inbox forwarding rule
+### Suspicious inbox forwarding rules
 
 After gaining access to users' mailboxes, attackers often create an inbox rule that allow them to exfiltrate sensitive data and use it for malicious purposes. 
 
@@ -217,6 +190,6 @@ CloudAppEvents
 
 ## See also
 
-- [Incidents overview](incidents-overview.md)
-- [Manage incidents](manage-incidents.md)
-- [Investigate incidents](investigate-incidents.md)
+- [Overview of alert grading](alert-grading-playbook.md)
+- [Suspicious email forwarding activity](alert-grading-playbook-email-forwarding.md)
+- [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
