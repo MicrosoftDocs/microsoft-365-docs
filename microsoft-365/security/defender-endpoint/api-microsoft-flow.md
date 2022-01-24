@@ -34,7 +34,7 @@ Automating security procedures is a standard requirement for every modern Securi
 
 Microsoft Defender API has an official Power Automate Connector with many capabilities.
 
-:::image type="content" source="images/api-flow-0.png" alt-text="The Actions page in the Microsoft Defender ATP portal" lightbox="images/api-flow-0.png" :::
+:::image type="content" source="images/api-flow-0.png" alt-text="The Actions page in the Microsoft Defender 365 portal" lightbox="images/api-flow-0.png" :::
 
 > [!NOTE]
 > For more details about premium connectors licensing prerequisites, see [Licensing for premium connectors](/power-automate/triggers-introduction#licensing-for-premium-connectors).
@@ -48,11 +48,11 @@ The following example demonstrates how to create a Flow that is triggered any ti
 
 2. Go to **My flows** \> **New** \> **Automated-from blank**.
 
-    :::image type="content" source="images/api-flow-1.png" alt-text="The New flow pane under My flows menu item in the Microsoft Defender ATP portal" lightbox="images/api-flow-1.png":::
+    :::image type="content" source="images/api-flow-1.png" alt-text="The New flow pane under My flows menu item in the Microsoft Defender 365 portal" lightbox="images/api-flow-1.png":::
 
 3. Choose a name for your Flow, search for "Microsoft Defender ATP Triggers" as the trigger, and then select the new Alerts trigger.
 
-    :::image type="content" source="images/api-flow-2.png" alt-text=" The Choose your flow's trigger section in the Microsoft Defender ATP portal" lightbox="images/api-flow-2.png" :::
+    :::image type="content" source="images/api-flow-2.png" alt-text=" The Choose your flow's trigger section in the Microsoft Defender 365 portal" lightbox="images/api-flow-2.png" :::
 
 Now you have a Flow that is triggered every time a new Alert occurs.
 

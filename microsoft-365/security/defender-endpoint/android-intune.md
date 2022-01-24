@@ -76,7 +76,7 @@ Learn how to deploy Defender for Endpoint on Android on Intune Company Portal - 
 
 5. In the app information page that is displayed, in the **Monitor** section, select **Device install status** to verify that the device installation has completed successfully.
 
-    :::image type="content" source="images/513cf5d59eaaef5d2b5bc122715b5844.png" alt-text="The Device install status page in the Microsoft Defender ATP portal" lightbox="images/513cf5d59eaaef5d2b5bc122715b5844.png":::
+    :::image type="content" source="images/513cf5d59eaaef5d2b5bc122715b5844.png" alt-text="The Device install status page in the Microsoft Defender 365 portal" lightbox="images/513cf5d59eaaef5d2b5bc122715b5844.png":::
 
 ### Complete onboarding and check status
 
@@ -118,23 +118,23 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
 4. You'll be presented with the permissions that Defender for Endpoint obtains for it to work. Review them and then select **Approve**.
 
-    :::image type="content" source="images/206b3d954f06cc58b3466fb7a0bd9f74.png" alt-text="The permissions approval page in the Microsoft Defender ATP portal" lightbox="images/206b3d954f06cc58b3466fb7a0bd9f74.png":::
+    :::image type="content" source="images/206b3d954f06cc58b3466fb7a0bd9f74.png" alt-text="The permissions approval page in the Microsoft Defender 365 portal" lightbox="images/206b3d954f06cc58b3466fb7a0bd9f74.png":::
 
 5. You'll be presented with the Approval settings page. The page confirms your preference to handle new app permissions that Defender for Endpoint on Android might ask. Review the choices and select your preferred option. Select **Done**.
 
     By default, managed Google Play selects **Keep approved when app requests new permissions**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/ffecfdda1c4df14148f1526c22cc0236.png" alt-text=" The approval settings configuration completion page in the in the Microsoft Defender ATP portal" lightbox="images/ffecfdda1c4df14148f1526c22cc0236.png":::
+    > :::image type="content" source="images/ffecfdda1c4df14148f1526c22cc0236.png" alt-text=" The approval settings configuration completion page in the in the Microsoft Defender 365 portal" lightbox="images/ffecfdda1c4df14148f1526c22cc0236.png":::
 
 6. After the permissions handling selection is made, select **Sync** to sync Microsoft Defender for Endpoint to your apps list.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/34e6b9a0dae125d085c84593140180ed.png" alt-text="The Sync pane in the Microsoft Defender ATP portal" lightbox="images/34e6b9a0dae125d085c84593140180ed.png":::
+    > :::image type="content" source="images/34e6b9a0dae125d085c84593140180ed.png" alt-text="The Sync pane in the Microsoft Defender 365 portal" lightbox="images/34e6b9a0dae125d085c84593140180ed.png":::
 
 7. The sync will complete in a few minutes.
 
-    :::image type="content" source="images/9fc07ffc150171f169dc6e57fe6f1c74.png" alt-text="The application sync status pane in the Android apps page in the Microsoft Defender ATP portal"  lightbox="images/9fc07ffc150171f169dc6e57fe6f1c74.png":::
+    :::image type="content" source="images/9fc07ffc150171f169dc6e57fe6f1c74.png" alt-text="The application sync status pane in the Android apps page in the Microsoft Defender 365 portal"  lightbox="images/9fc07ffc150171f169dc6e57fe6f1c74.png":::
 
 8. Select the **Refresh** button in the Android apps screen and Microsoft Defender for Endpoint should be visible in the apps list.
 
