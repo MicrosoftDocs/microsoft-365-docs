@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: article
-ms.date: 12/10/2021
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -21,9 +21,16 @@ ms.collection:
 # Tutorials and simulations in Microsoft Defender for Business (preview)
 
 > [!IMPORTANT]
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
+> Microsoft Defender for Business is now in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. We will onboard an initial set of customers and partners in the coming weeks and will expand the preview leading up to general availability. Note that preview will launch with an [initial set of scenarios](#try-these-preview-scenarios), and we will be adding capabilities regularly.
+> 
+> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
 If you've just finished setting up Microsoft Defender for Business (preview), you might be wondering where to start to learn about how Defender for Business (preview) works. This article describes preview scenarios to try, and several tutorials and simulations that are available for Defender for Business (preview). These resources are designed to help you see how Defender for Business (preview) can work for your company.
+
+>
+> **Got a minute?**
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
 
 ## Try these preview scenarios
 
@@ -37,7 +44,7 @@ The following table summarizes several scenarios to try during the preview of De
 | Onboard devices using Microsoft Intune     | If you were already using Microsoft Intune before getting Defender for Endpoint, you can use Microsoft Intune to onboard devices. Try onboarding macOS, iOS, Linux, and Android devices with Microsoft Intune. To learn more, see [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
 | Edit security policies and settings     | If you're managing your security policies and settings in Defender for Business (preview), use the **Device configuration** page to view and edit your policies. To learn more, see [View or edit policies in Microsoft Defender for Business (preview)](mdb-view-edit-policies.md).        |
 | Execute a simulated attack   | Several tutorials and simulations are available in Defender for Business (preview). These tutorials and simulations are designed to show you firsthand how the threat protection features of Defender for Business (preview) can work for your company. To try one or more of the tutorials, see [Recommended tutorials for Microsoft Defender for Business (preview)](#recommended-tutorials-for-defender-for-business).         |
-| View incidents in Microsoft 365 Lighthouse     | If you are a Microsoft partner using Microsoft 365 Lighthouse, you can view incidents across your customers' tenants in your Microsoft 365 Lighthouse portal. To learn more, see [Microsoft 365 Lighthouse and Microsoft Defender for Business (preview)](mdb-lighthouse-integration.md).       |
+| View incidents in Microsoft 365 Lighthouse     | If you are a [Microsoft Cloud Solution Provider](/partner-center/enrolling-in-the-csp-program) using Microsoft 365 Lighthouse, you will be able to view incidents across your customers' tenants in your Microsoft 365 Lighthouse portal soon. To learn more, see [Microsoft 365 Lighthouse and Microsoft Defender for Business (preview)](mdb-lighthouse-integration.md).       |
 
 
 ## Recommended tutorials for Defender for Business
