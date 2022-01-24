@@ -97,7 +97,7 @@ To find out how many items are in any given classification category, hover over 
 > [!NOTE]
 > If the card displays the message "No data found with sensitive information", it means that there are no items in your organization that have been classified as being a sensitive information type or no items that have been crawled. To get started with labels, see:
 >- [Get started with sensitivity labels](get-started-with-sensitivity-labels.md)
->- [Get started with information governance](get-started-with-information-governance.md)
+>- [Get started with records-management](get-started-with-records-management.md)
 >- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 
 ## Top sensitivity labels applied to content
