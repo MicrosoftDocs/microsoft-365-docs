@@ -21,7 +21,7 @@ ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: "Describes directory synchronization with Microsoft 365, Active Directory Domain Services cleanup, and the Azure Active Directory Connect tool."
 ---
 
-
+# Hybrid identity and directory synchronization for Microsoft 365
 
 ## Next step
 
