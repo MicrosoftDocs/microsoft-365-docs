@@ -18,7 +18,7 @@ This article explains how you can delete an unwanted booking calendar. You can d
 > [!IMPORTANT]
 > All booking calendars that you created in 2017 or before must be deleted using the PowerShell instructions on this topic. All booking calendars created in 2018 or after can be deleted in the Microsoft 365 admin center.
 
-The booking calendar is where all relevant information about that booking calendar and data are stored, including:
+The booking calendar is where all relevant information about that booking calendar and data is stored, including:
 
 - Business information, logo, and working hours added when the booking calendar was created
 - Relevant staff and services added when the booking calendar was created
@@ -31,7 +31,7 @@ The booking calendar is where all relevant information about that booking calend
 
 1. Go to the Microsoft 365 admin center.
 
-1. In the Admin center, select **Users**.
+1. In the admin center, select **Users**.
 
    ![Image of Users UI in Microsoft 365 admin center.](../media/bookings-admin-center-users.png)
 
@@ -43,7 +43,7 @@ The booking calendar is where all relevant information about that booking calend
 
 See [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell-v2) for prerequisites and guidance for connecting to Exchange Online PowerShell.
 
-To perform these steps, you must be using an active Microsoft PowerShell command window that you ran by choosing the “Run as administrator” option.
+To perform these steps, you must be using an active Microsoft PowerShell command window that you ran by choosing the **Run as administrator** option.
 
 1. In a PowerShell window, load the EXO V2 module by running the following command:
 
@@ -85,4 +85,4 @@ To perform these steps, you must be using an active Microsoft PowerShell command
     Get-EXOMailbox -RecipientTypeDetails SchedulingMailbox
    ```
 
-   The deleted calendar will not appear in the output.
+   The deleted calendar does not appear in the output.

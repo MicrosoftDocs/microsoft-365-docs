@@ -23,7 +23,7 @@ Bookings can be turned on or off for your entire organization or for specific us
 
 1. Sign in to the Microsoft 365 admin center as a global admin.
 
-2. In the admin center, go to **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a>.
+2. In the admin center, go to **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a>.
 
 3. Select the checkbox for **Allow your organization to use Bookings** to enable or disable Bookings for your organization.
 
@@ -44,9 +44,9 @@ To turn Bookings on or off for your organization using the PowerShell cmdlet [Se
 
 You can disable Bookings for individual users.
 
-1. Go to the Microsoft 365 admin center, then select **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
+1. Go to the Microsoft 365 admin center, and select **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
 
-1. Select the desired user, then select **Licenses and Apps**.
+1. Select the desired user, and then select **Licenses and Apps**.
 
 1. Expand **Apps** and clear the checkbox for Microsoft Bookings.
 
@@ -54,7 +54,7 @@ You can disable Bookings for individual users.
 
 Admins can require employees in their organization to opt-in before their availability information is shared through Bookings and before they can be bookable through a booking page. This setting is available in the Microsoft 365 admin center under **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> \> **Bookings**.
 
-When this setting is enabled, employees added as staff in booking calendars will find an Approve/Reject link in the email notification they receive.
+When this setting is enabled, employees added as staff in booking calendars find an Approve/Reject link in the email notification they receive.
 
 ## Block social sharing options
 
@@ -64,7 +64,7 @@ Admins can control how booking pages are shared on social networks. This setting
 
 By using policy restrictions, you can restrict licensed users from being able to create Bookings calendars. You must first enable Bookings for your entire organization. All users in you organization will have Bookings licenses, but only those included in the policy can create Bookings calendars and have full control over who can access the calendars they create.
 
-Users who are included in this policy can create new Bookings calendars and can be added as staff in any capacity (including the administrator role) to existing Bookings calendars. Users who aren't included in this policy won't be able to create new Bookings calendars and will receive an error message if they try to do so.
+Users who are included in this policy can create new Bookings calendars and can be added as staff in any capacity (including the administrator role) to existing Bookings calendars. Users who aren't included in this policy won't be able to create new Bookings calendars and receive an error message if they try to do so.
 
 You'll need to run the following commands using Exchange Online PowerShell. For more information on running Exchange Online cmdlets, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -95,8 +95,7 @@ You'll need to run the following commands using Exchange Online PowerShell. For 
 
    For more information, see [Set-OwaMailboxPolicy](/powershell/module/exchange/set-owamailboxpolicy).
 
-For more information on OWA mailbox policies, check out the following topics:
+## Related content
 
-- [Create an Outlook on the web mailbox policy in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
-
-- [Apply or remove an Outlook on the web mailbox policy on a mailbox in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy)
+[Create an Outlook on the web mailbox policy in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy) (article)\
+[Apply or remove an Outlook on the web mailbox policy on a mailbox in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/create-outlook-web-app-mailbox-policy) (article)

@@ -19,11 +19,9 @@ You can set buffer time before appointments start, after appointments end, or bo
 
 ## Set buffer time defaults
 
-Buffer time defaults are set on the **Service details** page in Bookings. Like all service defaults set on this page, these defaults can be edited by you for a specific booking to meet specific customer needs.
+Buffer time defaults are set on the **Edit service** page from **Bookings** > **Services** > choose a service and select **Edit service**. Like all service defaults set on this page, these defaults can be edited by you for a specific booking to meet specific customer needs.
 
-The buffer time setting can be found just below the **Default duration** pickers on the **Service details** page. Before it can be set for a given service, you must enable the buffer time setting by selecting the buffer time toggle. This causes the **Before** and **After** drop-downs to appear, which are used to pick the default amount of time to hold before and after each booking, as shown here:
-
-   ![Image of Bookings with buffer time enabled.](../media/bookings-buffertime.png)
+The buffer time setting can be found just below the **Duration** pickers on the **Edit service** page. Before it can be set for a given service, you must enable the buffer time setting by selecting the buffer time toggle. This causes the **Before** and **After** drop-downs to appear, which are used to pick the default amount of time to hold before and after each booking, as shown here:
 
 ## Buffer time and appointment timing
 
@@ -35,6 +33,6 @@ Note that the event itself (on the left in the image below) shows lighter shadin
 
 ## Buffer time and availability
 
-Your customers don’t directly see and cannot change the buffer times you set. However, because buffer time is used to calculate overall service duration, customers will see you and your relevant staff as booked during both buffer and regular appointment times. Customers also only see availability for you and your staff if there is enough time for both the appointment and its buffer time.
+Your customers don’t directly see and cannot change the buffer times you set. However, because buffer time is used to calculate overall service duration, customers do see you and your relevant staff as booked during both buffer and regular appointment times. Customers also see availability for you and your staff only if there's enough time for both the appointment and its buffer time.
 
 As an example, a one-hour appointment with a 15-minute pre-appointment buffer time requires an available time block of at least 1 hour and 15 minutes. An appointment for this service would therefore fill a 75-minute block of time on your calendar and needs 75 minutes of availability to book without conflict.

@@ -18,40 +18,31 @@ The Staff page in Bookings is where you create your staffing list and manage sta
 
 Although Bookings is a feature of Microsoft 365, not all of your staff members are required to have a Microsoft 365 account. All staff members must have a valid email address so they can receive bookings and schedule changes.
 
-## Watch: Add your staff to Bookings
+## Manage staff
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
+1. Go to **Bookings** > **Staff** > [**Manage staff**](https://outlook.office.com/bookings/staff).
 
-## Steps
+2. Select **Add new staff** at the top of the page.
 
-> [!NOTE]
-> These steps are not yet available in the new Bookings experience.
-
-1. Go to the [Manage staff page](https://outlook.office.com/bookings/staff) and select **Add staff**
-
-2. Select the **Add Staff** button.
-
-3. When adding staff from within your organization, type their name in the **Add people** field and select them when they appear in the drop-down menu. The other fields will automatically populate.
-
-    Once a staff member is added, you can edit the name that appears on all Bookings communications by selecting the **x** next to their name and editing the **Add people** field. This can be useful if you would like staff members to have a specific title or name displayed for customers, such as listing Adele Vance as “Dr. Vance, MD.”
+3. When adding staff from within your organization, type their name in the **Search for people or groups** box and select them when they appear in the drop-down menu. The other fields populate automatically.
 
 4. To add staff from outside of your organization, manually fill in their email and other information.
 
     > [!NOTE]
-    > Staff from outside your tenant will not be able to share free/busy information with Bookings.
+    > Staff from outside your tenant can't share free/busy information with Bookings.
 
-5. For each staff member, select a role: Administrator, Viewer, or Guest.
+5. For each staff member, select a role: **Administrator**, **Viewer**, or **Guest**.
     - **Administrators** can edit all settings, add and remove staff, and create, edit, or delete bookings.
     - **Viewers** can see all the bookings on the calendar, but they can’t modify or delete them. They have read-only access to settings.
     - **Guests** can be assigned to bookings, but they can’t open the booking mailbox.
 
-6. Select **Notify all staff via email when a booking assigned to them is created or changed** to enable staff emails. The following is an example email:
+6. Select **Notify the staff member via email when a booking assigned to them is created or changed** to enable staff emails. The following is an example email:
 
     :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="A notification email from Bookings.":::
 
-7. Select **Events on Office 365 calendar affect availability** if you want the free/busy information from staff members’ calendars to impact availability for bookings services through Bookings.
+7. Select **Events on Office calendar affect availability** if you want the free/busy information from staff members’ calendars to impact availability for bookings services through Bookings.
 
-    For example, if a staff member has a team meeting or a personal appointment scheduled for 3pm on a Wednesday, Bookings will show that staff member as unavailable to be booked in that time slot. That time will appear as busy or tentative in the Bookings calendar view, as shown in the below example.
+    For example, if a staff member has a team meeting or a personal appointment scheduled for 3pm on a Wednesday, Bookings shows that staff member as unavailable for booking in that time slot. That time appears as busy or tentative in the Bookings calendar view, as shown in the below example.
 
     :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="A view of a Bookings calendar.":::
 
@@ -60,17 +51,17 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
 
 8. Select **Use business hours** to set all bookable times for your staff members to be only within the business hours that you set in the **Business hours** section on the Business Information page.
 
-    By deselecting this box, staff can be given custom hours that further limit when they can be booked. This is helpful for scenarios where a staff member may only be on site Tuesdays and Wednesdays, or they dedicate their mornings for one type of appointments, and their afternoons for other types.
+    By deselecting this box, staff can be given custom hours that further limit when they can be booked. This is helpful for scenarios where a staff member is on site only Tuesdays and Wednesdays, or they dedicate their mornings for one type of appointment, and their afternoons for another.
 
     > [!NOTE]
     > Bookings supports up to 100 staff members in a Bookings Calendar.
 
-## Make a Bookings user a super user without adding them as Staff in Bookings
+## Make a Bookings user a super user without adding them as staff in Bookings
 
-You may want to add a person to your staff list in Bookings without making them available to customers or clients. Once you make them a super user, they'll become an administrator of the booking mailbox. Being an administrator of a booking mailbox is defined as having full access and send-as permissions to the booking mailbox.
+You can add a person to your staff list in Bookings without making them available to customers or clients. Once you make them a super user, they become an administrator of the booking mailbox. Being an administrator of a booking mailbox is defined as having full access and send-as permissions to the booking mailbox.
 
 > [!NOTE]
-> These steps only work if the user being added isn't already assigned a **viewer** role in Bookings.
+> These steps only work if the user being added isn't already assigned a **Viewer** role in Bookings.
 
 1. [Connect to Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
@@ -100,4 +91,4 @@ Here's an example PowerShell command to add Allie Bellew to the Contoso daycare 
     Add-RecipientPermission -Identity "daycare@contoso.com" -Trustee "Allie Bellew" -AccessRights SendAs -Confirm:$false
     ```
 
-**Allie Bellew** now has administrator access, but doesn't appear as bookable staff in Bookings.
+**Allie Bellew** now has administrator access but doesn't appear as bookable staff in Bookings.

@@ -23,29 +23,29 @@ If you want to book time off for staff members so customers can't book them whil
 
 1. In Microsoft 365, select the app launcher, and then select **Bookings**.
 
-1. In the navigation pane, select **Staff**, and then select the staff member whose hours you want to set.
+1. In the navigation pane, select **Staff**, select the staff member whose hours you want to set, and select **Edit staff**.
 
-   ![Image of Bookings staff screen with name highlighted.](../media/bookings-staff-name-highlight.png)
+1. Under **Availability**, turn off the **Use business hours** toggle.
 
-1. Under Working hours, clear the **Use business hours** checkbox.
+1. Use the dropdowns to select start and end times for each day. Manually type in times less than half hour increments.
 
-1. Use the dropdowns to select start and end times for each day. Times are available in 15-minute increments.
-
-   ![Image of Bookings staff working hours screen.](../media/bookings-staff-hours.png)
-
-1. Click **+** to add start- and end-time selectors.
-
-1. Select Save.
+1. Select **Save changes**.
 
 ## Set an employee's days off
 
-When you schedule a day off for an employee, that employee will appear unavailable on the booking page. Customers using the booking page will be unable to schedule him or her for service on that day.
+When you schedule a day off for an employee, that employee appears unavailable on the booking page. Customers using the booking page are unable to schedule them for service on that day.
 
-1. On the working hours screen, select the **x** next to the day that the employee will have off.
+1. In Microsoft 365, select the app launcher, and then select **Bookings**.
 
-   ![Image of Bookings staff working hours screen with mouse over x button.](../media/bookings-staff-time-off.png)
+1. In the navigation pane, select **Staff**, select the staff member whose hours you want to set, and select **Edit staff**.
 
-1. If you want to schedule a day that was previously marked as a day off, select the **+** sign next to the day you want to schedule.
+1. Under **Availability**, turn off the **Use business hours** toggle.
+
+1. Select the trash can icon next to the day that the employee has off.
+
+   If you want to schedule a day that was previously marked as a day off, select the **+** sign next to the day you want to schedule.
+
+1. Select **Save changes**.
 
 > [!TIP]
-> If scheduling employee vacation time or other large blocks of time off, see the "Schedule employee time off" section of [Schedule business closures, time off, and vacation time](schedule-closures-time-off-vacation.md#schedule-employee-time-off).
+> If you're scheduling employee vacation time or other large blocks of time off, see the "Schedule employee time off" section of [Schedule business closures, time off, and vacation time](schedule-closures-time-off-vacation.md#schedule-employee-time-off).
