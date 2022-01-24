@@ -283,7 +283,6 @@
     - name: Step 3. Protect your Microsoft 365 user accounts
       href: microsoft-365-secure-sign-in.md
     - name: Step 4. Deploy your identity model
-      href: deploy-identity-solution-identity-infrastructure.md
       items: 
         - name: Cloud-only identity
           href: cloud-only-identities.md
