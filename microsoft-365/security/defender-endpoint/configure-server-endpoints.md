@@ -107,6 +107,7 @@ The following specifics apply to the new unified solution package for Windows Se
 - Operating system upgrades are not supported. Offboard then uninstall before upgrading.
 - Automatic exclusions for *server roles* are not supported on Windows Server 2012 R2; however, built-in exclusions for operating system files are. For more information about adding exclusions, see [Virus scanning recommendations for Enterprise computers that are running currently supported versions of Windows](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc).
 
+
 <a name="integration-with-azure-defender"></a>
 
 ## Integration with Microsoft Defender for Cloud
@@ -163,7 +164,13 @@ You will need to download both the **installation** and **onboarding** packages 
 
 > [!div class="mx-imgBorder"]
 > ![Image of onboarding dashboard](images/install-agent-onboard.png)
- 
+
+
+   > [!NOTE]
+   > On Windows Server 2012R2, Microsoft Defender Antivirus will get installed by the installation package and will be active unless you set it to passive mode. On Windows Server 2016, Microsoft Defender Antivirus must be installed as a feature (see [Switch to MDE](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016)) first and fully updated before proceeding with the installation.
+   > 
+   > If you are running a non-Microsoft antimalware solution ensure you add exclusions for Microsoft Defender Antivirus ([from this list of Microsoft Defender Processes on the Defender Processes tab](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)) to the non-Microsoft solution before installation.  It is also recommended to add non-Microsoft security solutions to the Defender Antivirus exclusion list.
+
 
 The **installation package** contains an MSI file that installs the Microsoft Defender for Endpoint agent.
 
@@ -181,6 +188,8 @@ Use the following steps to download the packages:
 3. Select **Download installation package** and save the .msi file. 
  
 4. Select **Download onboarding package** and save the .zip file.
+
+5. Install the installation package using any of the options to install Microsoft Defender Antivirus. The installation requires administrative permissions.
 
 
 
@@ -223,9 +232,6 @@ The `/quiet` switch suppresses all notifications.
 
 > [!NOTE]
 > Microsoft Defender Antivirus doesn't automatically go into passive mode. You can choose to set Microsoft Defender Antivirus to run in passive mode if you are running a non-Microsoft antivirus/antimalware solution. For command line installations, the optional `FORCEPASSIVEMODE=1` immediately sets the Microsoft Defender Antivirus component to Passive mode to avoid interference. Then, to ensure Defender Antivirus remains in passive mode after onboarding to support capabilities like EDR Block, set the "ForceDefenderPassiveMode" registry key.
->
-> - The Onboarding package for Windows Server 2019 and Windows Server 2022 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
-> - A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, or Microsoft Endpoint Configuration Manager.
 
 Support for Windows Server provides deeper insight into server activities, coverage for kernel and memory attack detection, and enables response actions.
 
@@ -296,6 +302,9 @@ The following steps are only applicable if you're using a third-party anti-malwa
 Data collected by Defender for Endpoint is stored in the geo-location of the tenant as identified during provisioning.
 > - If you use Defender for Endpoint before using Microsoft Defender for Cloud, your data will be stored in the location you specified when you created your tenant even if you integrate with Microsoft Defender for Cloud at a later time.
 > - Once configured, you cannot change the location where your data is stored. If you need to move your data to another location, you need to contact Microsoft Support to reset the tenant.
+> - The Onboarding package for Windows Server 2019 and Windows Server 2022 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
+> - A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, or Microsoft Endpoint Configuration Manager.
+
 
 
 ## Windows Server Semi-Annual Enterprise Channel and Windows Server 2019 and Windows Server 2022
