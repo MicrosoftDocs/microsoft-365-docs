@@ -30,7 +30,7 @@ If your organization has already put the time into understanding your data, deve
 
 Microsoft Endpoint data loss prevention (Endpoint DLP) currently applies to:
 - Windows 10, Windows 11
-- MacOS
+- macOS
 
 DLP policies are created by your information protection and governance team. Each DLP policy defines what elements within a data set to look for, like sensitive information types or labels, and how to protect this data. 
 
