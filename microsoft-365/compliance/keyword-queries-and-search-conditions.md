@@ -217,7 +217,7 @@ Create a condition using mail properties when searching mailboxes or public fold
 
 |Condition|Description|
 |---|---|
-|Message kind|The message type to search. This is the same property as the Kind email property. Possible values: <ul><li>contacts</li><li>docs</li><li>email</li><li>externaldata</li><li>faxe</li><li>im</li><li>journals</li><li>meetings</li><li>microsoftteams</li><li>notes</li><li>posts</li><li>rssfeeds</li><li>tasks</li><li>voicemail</li></ul>|
+|Message kind|The message type to search. This is the same property as the Kind email property. Possible values: <ul><li>contacts</li><li>docs</li><li>email</li><li>externaldata</li><li>fax</li><li>im</li><li>journals</li><li>meetings</li><li>microsoftteams</li><li>notes</li><li>posts</li><li>rssfeeds</li><li>tasks</li><li>voicemail</li></ul>|
 |Participants|All the people fields in an email message. These fields are From, To, Cc, and Bcc.|
 |Type|The message class property for an email item. This is the same property as the ItemClass email property. It's also a multi-value condition. So to select multiple message classes, hold the **CTRL** key and then click two or more message classes in the drop-down list that you want to add to the condition. Each message class that you select in the list will be logically connected by the **OR** operator in the corresponding search query. <p> For a list of the message classes (and their corresponding message class ID) that are used by Exchange and that you can select in the **Message class** list, see [Item Types and Message Classes](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes).|
 |Received|The date that an email message was received by a recipient. This is the same property as the Received email property.|
@@ -252,7 +252,7 @@ When you add a condition, you can select an operator that is relevant to type of
 |Doesn't contain any of|`-property:value` <p> `NOT property:value`|Used with conditions for properties that specify a string value. Returns items that don't contain any part of the specified string value.|
 |Doesn't equal any of|`-property=value` <p> `NOT property=value`|Used with conditions for properties that specify a string value. Returns items that don't contain the specific string.|
 |Equals|`size=value`|Returns items that are equal to the specified size.<sup>1</sup>|
-|Equals any of|`(property=value) OR (property=value)`|Used with conditions for properties that specify a string value. Returns items that are an exact match of one or more specified string values.|
+|Equals any of|`(property=value) OR (property=value)`|Used with conditions for properties that specify a string value. Returns items that are a match of one or more specified string values.|
 |Greater|`size>value`|Returns items where the specified property is greater than the specified value.<sup>1</sup>|
 |Greater or equal|`size>=value`|Returns items where the specified property is greater than or equal to the specified value.<sup>1</sup>|
 |Less|`size<value`|Returns items that are greater than or equal to the specific value.<sup>1</sup>|
@@ -273,6 +273,8 @@ Keep the following in mind when using search conditions.
 - If you add more than one condition for the same property, those conditions are logically connected by the **OR** operator. That means items that satisfy the keyword query and any one of the conditions are returned. So, groups of the same conditions are connected to each other by the **OR** operator and then sets of unique conditions are connected by the **AND** operator.
 
 - If you add multiple values (separated by commas or semi-colons) to a single condition, those values are connected by the **OR** operator. That means items are returned if they contain any of the specified values for the property in the condition.
+
+- Any condition that uses an operator with **Contains** and **Equals** logic will return similar search results for simple string searches. A simple string search is a string in the condition that doesn't include a wildcard). For example, a condition that uses **Equals any of** will return the same items as a condition that uses **Contains any of**.
 
 - The search query that is created by using the keywords box and conditions is displayed on the **Search** page, in the details pane for the selected search. In a query, everything to the right of the notation  `(c:c)` indicates conditions that are added to the query.
 
