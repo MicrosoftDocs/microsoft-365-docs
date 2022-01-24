@@ -19,16 +19,16 @@ f1.keywords: NOCSH
 # Build a package
 A package is a .zip file containing your application binary and test scripts, which is the prerequisite to use Test Base. This quickstart will guide you to build your first package, with which you can perform Out-of-box test on your application. 
 
-*An **Out-of-Box (OOB)** test performs an install, launch, close, and uninstall of your application. After the install, the launch-close routine is repeated 30 times before a single uninstall is run.*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*An **Out-of-Box (OOB)** test performs an install, launch, close, and uninstall of your application. After the install, the launch-close routine is repeated 30 times before a single uninstall is run.*
 
-*The OOB test provides you with standardized telemetry on your package to compare across Windows builds.*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*The OOB test provides you with standardized telemetry on your package to compare across Windows builds.*
     
 Optionally, you can download the  [sample package](https://aka.ms/testbase-sample-package) to refer and start with. 
 
 ## Create a folder structure 
 
 In your local computer, create a folder structure as follows:<br> 
-:::image type="content" alt-text="Folder structure" source="Media/BuildPackage1.png":::
+![Folder structure](Media/BuildPackage1.png)
 
 These folders are used:
 * **App\bin**: save the application and dependency binaries.<br> 
@@ -36,4 +36,13 @@ These folders are used:
 * **App\logs**: scripts should output logs to this folder, then you can download and analyze logs after test is finished.<br> 
 
 ## Copy binary file(s)
-Copy your application installation files to **App\bin**. If your application has dependencies, they need to be installed first. Also, copy the dependency installation files to **App\bin** too.
+Copy your application installation files to **App\bin**. If your application has dependencies, they need to be installed first. Also, copy the dependency installation files to **App\bin** too.<br> 
+![Folder structure](Media/BuildPackage2.png)
+
+## Add PowerShell scripts
+To perform OOB test, it needs PowerShell scripts to install, launch, close, and uninstall your application. <br> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Note: In OOB test, install, launch, and close scripts are required, while uninstall script is optional*.<br>
+The script should be added in the folder as follows:<br> 
+
+
+
