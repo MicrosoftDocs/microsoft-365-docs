@@ -41,7 +41,7 @@ You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-3
 
 This solution steps you through the deployment of an identity infrastructure for yout Microsoft 365 tenant to provide access for your employees and protection against identity-based attacks.
 
-![Deploy your identity infrastructure for Microsoft 365](../../media/deploy-identity-solution-overview/deploy-identity-solution-overview.png)
+![Deploy your identity infrastructure for Microsoft 365](../media/deploy-identity-solution-overview/deploy-identity-solution-overview.png)
 
 The steps in this solution are:
 
@@ -71,8 +71,7 @@ Use these steps to deploy an identity model and authentication infrastructure yo
 3. [Protect your Microsoft 365 user accounts](microsoft-365-secure-sign-in.md)
 4. [Deploy your identity model](cloud-only-identities.md)
 
-[![Determine the identity model to use for your Microsoft 365 tenant](../../media/deploy-identity-solution-overview/identity-solution-identity-model.png)](deploy-identity-solution-identity-model.md)
-
+[![Determine the identity model to use for your Microsoft 365 tenant](../media/deploy-identity-solution-overview/identity-solution-identity-model.png)](deploy-identity-solution-identity-model.md)
   
 ## Additional Microsoft 365 identity resources
 

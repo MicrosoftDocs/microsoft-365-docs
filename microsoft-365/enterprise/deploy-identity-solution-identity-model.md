@@ -158,4 +158,4 @@ You don't use the Microsoft 365 admin center or PowerShell for Microsoft 365 to 
 
 ## Next step
 
-[![Protect your Microsoft 365 administrator accounts](../../media/deploy-identity-solution-overview/protect-your-global-administrator-accounts.png)](protect-your-global-administrator-accounts.md)
+[![Protect your Microsoft 365 administrator accounts](../media/deploy-identity-solution-overview/protect-your-global-administrator-accounts.png)](protect-your-global-administrator-accounts.md)

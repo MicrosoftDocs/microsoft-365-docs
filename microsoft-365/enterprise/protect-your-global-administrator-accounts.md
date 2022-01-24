@@ -169,4 +169,4 @@ SIEM software run on a server performs real-time analysis of security alerts and
 
 ## Next step
 
-[![Protect your Microsoft 365 user accounts](../../media/deploy-identity-solution-overview/microsoft-365-secure-sign-in.png)](microsoft-365-secure-sign-in.md)
+[![Protect your Microsoft 365 user accounts](../media/deploy-identity-solution-overview/microsoft-365-secure-sign-in.png)](microsoft-365-secure-sign-in.md)
