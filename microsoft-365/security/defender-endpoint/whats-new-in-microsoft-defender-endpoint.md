@@ -119,4 +119,4 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 ## January 2021
 
-- [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint now adds support for Windows Virtual Desktop.
+- [Azure Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint now adds support for Azure Virtual Desktop.

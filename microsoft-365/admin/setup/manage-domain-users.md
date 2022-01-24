@@ -47,9 +47,9 @@ To synchronize your users, groups, and contacts from the local Active Directory 
 
  1. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), select **Setup** in the left nav.
 
- 2. Under **Sign-in and security**, choose **View**  under **Sync users from your org's directory**.
+ 2. Under **Sign-in and security**, select **Add or sync users to your Microsoft account**.
 
- 3. On the **Sync users from your org's directory** page, choose **Get started**.
+ 3. On the **Add or sync users to your Microsoft account** page, choose **Get started**.
 
  4. In the first step  run IdFix tool to prepare for Directory sync.
 
