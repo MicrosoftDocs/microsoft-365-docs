@@ -146,4 +146,4 @@ See the [steps to enable Azure AD Identity Protection](/azure/active-directory/a
 
 ## Next step
 
-[Manage your user accounts](manage-microsoft-365-accounts.md)
+[![Deploy your identity model](../../media/deploy-identity-solution-overview/deploy-identity-solution-identity-infrastructure.md.png)](deploy-identity-solution-identity-infrastructure.md)

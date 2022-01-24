@@ -1,5 +1,5 @@
 ---
-title: "Step 1: Determine your identity model"
+title: "Step 1. Determine your Microsoft 365 identity model"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -25,9 +25,7 @@ ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Step 1. Determine your identity model
 ---
 
-# Step 1: Determine your identity model
-
-*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
+# Step 1. Determine your Microsoft 365 identity model
 
 Microsoft 365 uses Azure Active Directory (Azure AD), a cloud-based user identity and authentication service that is included with your Microsoft 365 subscription, to manage identities and authentication for Microsoft 365. Getting your identity infrastructure configured correctly is vital to managing Microsoft 365 user access and permissions for your organization.
 
@@ -85,8 +83,6 @@ The Azure AD tenant has a copy of the AD DS accounts. In this configuration, bot
 
 ### Hybrid identity and directory synchronization for Microsoft 365
 
-*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
-
 Depending on your business needs and technical requirements, the hybrid identity model and directory synchronization is the most common choice for enterprise customers who are adopting Microsoft 365. Directory synchronization allows you to manage identities in your Active Directory Domain Services (AD DS) and all updates to user accounts, groups, and contacts are synchronized to the Azure Active Directory (Azure AD) tenant of your Microsoft 365 subscription.
 
 >[!Note]
@@ -105,7 +101,7 @@ There are two types of authentication when using the hybrid identity model:
 
   Azure AD redirects the client computer requesting authentication to another identity provider.
 
-##### Managed authentication
+#### Managed authentication
 
 There are two types of managed authentication:
 
@@ -118,7 +114,7 @@ There are two types of managed authentication:
   Azure AD has AD DS perform the authentication.
 
 
-###### Password hash synchronization (PHS)
+##### Password hash synchronization (PHS)
 
 With PHS, you synchronize your AD DS user accounts with Microsoft 365 and manage your users on-premises. Hashes of user passwords are synchronized from your AD DS to Azure AD so that the users have the same password on-premises and in the cloud. This is the simplest way to enable authentication for AD DS identities in Azure AD. 
 
@@ -128,7 +124,7 @@ When passwords are changed or reset on-premises, the new password hashes are syn
   
 See [choosing the right authentication method](/azure/active-directory/hybrid/choose-ad-authn) to learn more.
   
-###### Pass-through authentication (PTA)
+##### Pass-through authentication (PTA)
 
 PTA provides a simple password validation for Azure AD authentication services using a software agent running on one or more on-premises servers to validate the users directly with your AD DS. With PTA, you synchronize AD DS user accounts with Microsoft 365 and manage your users on-premises. 
 
@@ -148,14 +144,12 @@ Federated authentication can support additional authentication requirements, suc
  
 See [choosing the right authentication method](/azure/active-directory/hybrid/choose-ad-authn) to learn more.
   
-###### Third-party authentication and identity providers
+##### Third-party authentication and identity providers
 
 On-premises directory objects may be synchronized to Microsoft 365 and cloud resource access is primarily managed by a third-party identity provider (IdP). If your organization uses a third-party federation solution, you can configure sign-on with that solution for Microsoft 365 provided that the third-party federation solution is compatible with Azure AD.
   
 See the [Azure AD federation compatibility list](/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) to learn more.
   
-
-
 ### Administration
 
 Because the original and authoritative user accounts are stored in the on-premises AD DS, you manage your identities with the same tools as you manage your AD DS.
@@ -164,10 +158,4 @@ You don't use the Microsoft 365 admin center or PowerShell for Microsoft 365 to 
 
 ## Next step
 
-If you need the cloud-only identity model, see [Cloud-only identity](cloud-only-identities.md).
-
-If you need the hybrid identity model, see [Hybrid identity](plan-for-directory-synchronization.md).
-
-## See also
-
-[Microsoft 365 Enterprise overview](microsoft-365-overview.md)
+[![Protect your Microsoft 365 administrator accounts](../../media/deploy-identity-solution-overview/protect-your-global-administrator-accounts.png)](protect-your-global-administrator-accounts.md)

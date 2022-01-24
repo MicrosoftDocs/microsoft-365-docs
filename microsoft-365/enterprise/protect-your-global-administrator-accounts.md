@@ -1,5 +1,5 @@
 ---
-title: "Step 2: Protect your Microsoft 365 administrator accounts"
+title: "Step 2. Protect your Microsoft 365 administrator accounts"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -24,7 +24,7 @@ description: This article provides information about protecting global administr
 ms.custom: seo-marvel-apr2020
 ---
 
-# Step 2: Protect your Microsoft 365 administrator accounts
+# Step 2. Protect your Microsoft 365 administrator accounts
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
@@ -169,12 +169,4 @@ SIEM software run on a server performs real-time analysis of security alerts and
 
 ## Next step
 
-If you're setting up identity for your Microsoft 365 subscription, see:
-
-- [Cloud-only identities](cloud-only-identities.md) if you're using cloud-only identity
-- [Prepare for directory synchronization](prepare-for-directory-synchronization.md) if you're using hybrid identity
-
-  
-## See also
-
-[Microsoft 365 security roadmap](/office365/securitycompliance/security-roadmap)
+[![Protect your Microsoft 365 user accounts](../../media/deploy-identity-solution-overview/microsoft-365-secure-sign-in.png)](microsoft-365-secure-sign-in.md)
