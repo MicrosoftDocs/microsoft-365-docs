@@ -276,13 +276,13 @@
   items: 
     - name: Overview
       href: deploy-identity-solution-overview.md
-    - name: Step 1-Determine your identity model
+    - name: Step 1. Determine your identity model
       href: deploy-identity-solution-identity-model.md
-    - name: Step 2-Protect your Microsoft 365 priority/administrator accounts
+    - name: Step 2. Protect your Microsoft 365 administrator accounts
       href: protect-your-global-administrator-accounts.md
-    - name: Step 3-Protect your Microsoft 365 user accounts
+    - name: Step 3. Protect your Microsoft 365 user accounts
       href: microsoft-365-secure-sign-in.md
-    - name: Step 4-Deploy your identity model
+    - name: Step 4. Deploy your identity model
       items: 
         - name: Cloud-only identity
           href: cloud-only-identities.md

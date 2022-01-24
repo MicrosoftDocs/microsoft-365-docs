@@ -22,7 +22,7 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
-description: Step 1: Determine your identity model
+description: Step 1. Determine your identity model
 ---
 
 # Step 1: Determine your identity model
@@ -82,6 +82,79 @@ The Azure AD tenant has a copy of the AD DS accounts. In this configuration, bot
 
 > [!NOTE]
 > You always need to use Azure AD Connect to synchronize user accounts for hybrid identity. You need the synchronized user accounts in Azure AD to perform license assignment and group management, configure permissions, and other administrative tasks that involve user accounts.
+
+### Hybrid identity and directory synchronization for Microsoft 365
+
+*This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
+
+Depending on your business needs and technical requirements, the hybrid identity model and directory synchronization is the most common choice for enterprise customers who are adopting Microsoft 365. Directory synchronization allows you to manage identities in your Active Directory Domain Services (AD DS) and all updates to user accounts, groups, and contacts are synchronized to the Azure Active Directory (Azure AD) tenant of your Microsoft 365 subscription.
+
+>[!Note]
+>When AD DS user accounts are synchronized for the first time, they are not automatically assigned a Microsoft 365 license and cannot access Microsoft 365 services, such as email. You must first assign them a usage location. Then, assign a license to these user accounts, either individually or dynamically through group membership.
+>
+
+#### Authentication for hybrid identity
+
+There are two types of authentication when using the hybrid identity model:
+
+- Managed authentication
+
+  Azure AD handles the authentication process by using a locally-stored hashed version of the password or sends the credentials to an on-premises software agent to be authenticated by the on-premises AD DS.
+
+- Federated authentication
+
+  Azure AD redirects the client computer requesting authentication to another identity provider.
+
+##### Managed authentication
+
+There are two types of managed authentication:
+
+- Password hash synchronization (PHS)
+
+  Azure AD performs the authentication itself.
+
+- Pass-through authentication (PTA)
+
+  Azure AD has AD DS perform the authentication.
+
+
+###### Password hash synchronization (PHS)
+
+With PHS, you synchronize your AD DS user accounts with Microsoft 365 and manage your users on-premises. Hashes of user passwords are synchronized from your AD DS to Azure AD so that the users have the same password on-premises and in the cloud. This is the simplest way to enable authentication for AD DS identities in Azure AD. 
+
+![Password hash synchronization (PHS).](../media/plan-for-directory-synchronization/phs-authentication.png)
+
+When passwords are changed or reset on-premises, the new password hashes are synchronized to Azure AD so that your users can always use the same password for cloud resources and on-premises resources. The user passwords are never sent to Azure AD or stored in Azure AD in clear text. Some premium features of Azure AD, such as Identity Protection, require PHS regardless of which authentication method is selected.
+  
+See [choosing the right authentication method](/azure/active-directory/hybrid/choose-ad-authn) to learn more.
+  
+###### Pass-through authentication (PTA)
+
+PTA provides a simple password validation for Azure AD authentication services using a software agent running on one or more on-premises servers to validate the users directly with your AD DS. With PTA, you synchronize AD DS user accounts with Microsoft 365 and manage your users on-premises. 
+
+![Pass-through authentication (PTA).](../media/plan-for-directory-synchronization/pta-authentication.png)
+
+PTA allows your users to sign in to both on-premises and Microsoft 365 resources and applications using their on-premises account and password. This configuration validates users passwords directly against your on-premises AD DS without storing password hashes in Azure AD. 
+
+PTA is also for organizations with a security requirement to immediately enforce on-premises user account states, password policies, and logon hours. 
+  
+See [choosing the right authentication method](/azure/active-directory/hybrid/choose-ad-authn) to learn more.
+  
+##### Federated authentication
+
+Federated authentication is primarily for large enterprise organizations with more complex authentication requirements. AD DS identities are synchronized with Microsoft 365 and users accounts are managed on-premises. With federated authentication, users have the same password on-premises and in the cloud and they do not have to sign in again to use Microsoft 365. 
+
+Federated authentication can support additional authentication requirements, such as smartcard-based authentication or a third-party multi-factor authentication and is typically required when organizations have an authentication requirement not natively supported by Azure AD.
+ 
+See [choosing the right authentication method](/azure/active-directory/hybrid/choose-ad-authn) to learn more.
+  
+###### Third-party authentication and identity providers
+
+On-premises directory objects may be synchronized to Microsoft 365 and cloud resource access is primarily managed by a third-party identity provider (IdP). If your organization uses a third-party federation solution, you can configure sign-on with that solution for Microsoft 365 provided that the third-party federation solution is compatible with Azure AD.
+  
+See the [Azure AD federation compatibility list](/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) to learn more.
+  
+
 
 ### Administration
 
