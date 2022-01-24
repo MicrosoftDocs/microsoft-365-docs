@@ -37,6 +37,8 @@ ms.technology: mde
 > - The application installation path has been changed from `/Application/Microsoft Defender ATP.app` to `/Applications/Microsoft Defender.app`.
 > - Within the user experience, occurrences of "Microsoft Defender ATP" have been replaced with "Microsoft Defender"
 > 
+> This change does not impact the `mdatp` command-line tool.
+>
 > **Action required**: if your enterprise has custom configurations that rely on either the product name or application installation path, these configurations must be updated with the new values listed above.
 
 ## 101.54.16 (20.121111.15416.0)
