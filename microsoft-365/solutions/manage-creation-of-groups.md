@@ -53,7 +53,7 @@ If you're a member of one of these roles, you can create Microsoft 365 Groups fo
 
 ## Licensing requirements
 
-To manage who creates groups, the following people need Azure AD Premium licenses assigned to them:
+To manage who creates groups, the following people need Azure AD Premium licenses or Azure AD Basic EDU licenses assigned to them:
 
 - The admin who configures these group creation settings
 - The members of the group who are allowed to create groups
@@ -61,7 +61,7 @@ To manage who creates groups, the following people need Azure AD Premium license
 > [!NOTE]
 > See [Assign or remove licenses in the Azure Active Directory portal](/azure/active-directory/fundamentals/license-users-groups) for more details about how to assign Azure licenses.
 
-The following people don't need Azure AD Premium licenses assigned to them:
+The following people don't need Azure AD Premium or Azure AD Basic EDU licenses assigned to them:
 
 - People who are members of Microsoft 365 groups and who don't have the ability to create other groups.
 
