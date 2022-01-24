@@ -49,7 +49,7 @@ To quickly access the schema reference, select the **View reference** action nex
 
 The following reference lists all the tables in the advanced hunting schema. Each table name links to a page describing the column names for that table.
 
-Table and column names are also listed within the Microsoft Defender Security Center, in the schema representation on the advanced hunting screen.
+Table and column names are also listed within the Microsoft 365 Defender portal, in the schema representation on the advanced hunting screen.
 
 <br>
 
@@ -57,7 +57,7 @@ Table and column names are also listed within the Microsoft Defender Security Ce
 
 |Table name|Description|
 |---|---|
-|**[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)**|Alerts on Microsoft Defender Security Center|
+|**[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)**|Alerts on Microsoft 365 Defender |
 |**[DeviceInfo](advanced-hunting-deviceinfo-table.md)**|Device information, including OS information|
 |**[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)**|Network properties of devices, including adapters, IP and MAC addresses, as well as connected networks and domains|
 |**[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)**|Process creation and related events|

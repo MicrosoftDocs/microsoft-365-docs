@@ -3,13 +3,13 @@ title: Understand device profiles
 description:  The various profiles that admins can assign to devices
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
 ---
@@ -46,10 +46,10 @@ The following table summarizes the settings and their default values for each se
 |Feature|Sensitive Data|Power User|Standard|
 |---|:---:|:---:|:---:|
 |**Block External Storage**|Yes|Yes|No|
-|**[Cloud Block Level](/graph/api/resources/intune-deviceconfig-defendercloudblockleveltype)**|High|High|High|
+|**[Cloud Block Level](/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel)**|High|High|High|
 |**Disable Microsoft Accounts**|Yes|Yes|No|
 |**Disable personal OneDrive**|Yes|Yes|No|
-|**Switch to secure desktop for elevation**|No|Yes|No|
+|**[Switch to secure desktop for elevation](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-switchtothesecuredesktopwhenpromptingforelevation)**|No|Yes|No|
 |**Microsoft Defender for Endpoint Device Tag**|M365Managed-SensitiveData|M365Managed-PowerUser|M365Managed-Standard|
 |**Admin on the device?**|No|Yes|No|
 |**Autopilot Profile**|MMD Standard|MMD Power User|MMD Standard|

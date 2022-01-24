@@ -17,8 +17,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365initiative-m365-defender
-ms.custom: admindeeplinkDEFENDER
+ms.custom: 
+- admindeeplinkDEFENDER
+- admindeeplinkEXCHANGE
 ms.topic: article
 ms.technology: m365d
 ---
@@ -43,7 +44,7 @@ With automatic redirection turned on, users will be routed to Microsoft 365 Defe
 
 These include capabilities in the Threat Management section, Alerts (View Alerts and Alert Policies), and the Threat Management dashboard and reports. Items in the Office 365 Security and Compliance Center that are not related to security are not redirected to Microsoft 365 Defender.
 
-Compliance-related items can be found in the Microsoft 365 compliance center, and mail-flow related items can be found in the Exchange admin center.
+Compliance-related items can be found in the Microsoft 365 compliance center, and mail-flow related items can be found in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
 All other capabilities, whether compliance-related or capabilities that serve both are not affected by redirection.
 

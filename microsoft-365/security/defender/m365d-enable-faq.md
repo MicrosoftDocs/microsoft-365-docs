@@ -96,10 +96,6 @@ Microsoft regularly provides information through the various channels, including
 
 Get the latest publicly available experiences by turning on [preview features](preview.md).
 
-## Is Microsoft 365 Defender available for US Government Community Cloud (GCC) or GCC High?
-
-At the moment, it is not available.
-
 ## Related topics
 
 - [Microsoft 365 Defender overview](microsoft-365-defender.md)
