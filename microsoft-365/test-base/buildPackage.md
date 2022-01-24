@@ -7,7 +7,7 @@ ms.author: mapatel
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
-ms.date: 07/06/2021
+ms.date: 01/24/2022
 ms.service: virtual-desktop
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
@@ -18,3 +18,14 @@ f1.keywords: NOCSH
 
 # Build a package
 A package is a .zip file containscontaining your application binary and test scripts, which is the prerequisite to use Test Base. This quickstart will guide you to build your first package, with which you can perform Out-of-box test on your application. 
+
+    *"An"* **Out-of-Box (OOB)** *"test performs an install, launch, close, and uninstall of your application. After the install, the launch-close routine is repeated 30 times before a single uninstall is run"*. 
+
+    *"The OOB test provides you with standardized telemetry on your package to compare across Windows builds"*.
+    
+Optionally, you can download the  [sample package](https://aka.ms/testbase-sample-package) to refer and start with. 
+
+## Create a folder structure 
+
+In your local computer, create a folder structure as follows:
+
