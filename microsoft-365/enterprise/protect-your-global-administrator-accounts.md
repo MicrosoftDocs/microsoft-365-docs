@@ -1,5 +1,5 @@
 ---
-title: "Protect your Microsoft 365 global administrator accounts"
+title: "Step 2: Protect your Microsoft 365 administrator accounts"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -24,7 +24,7 @@ description: This article provides information about protecting global administr
 ms.custom: seo-marvel-apr2020
 ---
 
-# Protect your Microsoft 365 global administrator accounts
+# Step 2: Protect your Microsoft 365 administrator accounts
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 

@@ -1,5 +1,5 @@
 ---
-title: "Identity roadmap for Microsoft 365"
+title: "Deploy your identity infrastructure for Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -15,10 +15,10 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 ms.custom:
-description: The roadmap to identity for Microsoft 365.
+description: Deploy your identity infrastructure for Microsoft 365.
 ---
 
-# Identity roadmap for Microsoft 365
+# Deploy your identity infrastructure for Microsoft 365
 
 In Microsoft 365 for enterprise, a well-planned and executed identity infrastructure paves the way for stronger security, including restricting access to your productivity workloads and their data to only authenticated users and devices.
 

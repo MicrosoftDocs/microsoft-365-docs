@@ -271,20 +271,19 @@
           href: o365-data-locations.md
         - name: Data locations for the European Union
           href: eu-data-storage-locations.md
+
 - name: Identity
   items: 
-    - name: Roadmap
-      href: identity-roadmap-microsoft-365.md
-    - name: Plan
+    - name: Overview
+      href: deploy-identity-solution-overview.md
+    - name: Step 1-Determine your identity model
+      href: deploy-identity-solution-identity-model.md
+    - name: Step 2-Protect your Microsoft 365 priority/administrator accounts
+      href: protect-your-global-administrator-accounts.md
+    - name: Step 3-Protect your Microsoft 365 user accounts
+      href: microsoft-365-secure-sign-in.md
+    - name: Step 4-Deploy your identity model
       items: 
-        - name: Identity models
-          href: about-microsoft-365-identity.md
-        - name: Hybrid identity
-          href: plan-for-directory-synchronization.md
-    - name: Deploy
-      items: 
-        - name: Protect your global administrator accounts
-          href: protect-your-global-administrator-accounts.md
         - name: Cloud-only identity
           href: cloud-only-identities.md
         - name: Hybrid identity
@@ -320,8 +319,6 @@
                     href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
               - name: SharePoint Server 2013 Disaster Recovery in Microsoft Azure
                 href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
-        - name: Secure user sign-ins
-          href: microsoft-365-secure-sign-in.md
     - name: Manage
       items: 
         - name: User accounts

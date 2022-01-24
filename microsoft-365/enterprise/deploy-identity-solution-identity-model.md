@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 identity models and Azure Active Directory"
+title: "Step 1: Determine your identity model"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -22,10 +22,10 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
-description: Learn how to manage the Azure AD user identity service in Microsoft 365 using cloud-only or hybrid identity models.
+description: Step 1: Determine your identity model
 ---
 
-# Microsoft 365 identity models and Azure Active Directory
+# Step 1: Determine your identity model
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 

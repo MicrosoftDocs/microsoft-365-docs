@@ -1,5 +1,5 @@
 ---
-title: "Secure user sign-ins to your Microsoft 365 tenant"
+title: "Step 3: Protect your Microsoft 365 user accounts"
 f1.keywords:
 - NOCSH
 author: kelleyvice-msft
@@ -18,7 +18,7 @@ ms.custom:
 description: Require that your users sign in securely with multi-factor authentication (MFA) and other features.
 ---
 
-# Secure user sign-ins to your Microsoft 365 tenant
+# Step 3: Protect your Microsoft 365 user accounts
 
 To increase the security of user sign-ins:
 
