@@ -1,5 +1,5 @@
 ---
-title: "Enable auto-expanding archiving - Admin Help"
+title: "Enable auto-expanding archiving"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
