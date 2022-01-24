@@ -14,11 +14,6 @@ ms.localizationpriority: high
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid:
-- MOE150
-- MET150
-ms.custom: 
-- admindeeplinkEXCHANGE
 description: "Learn about archive mailboxes to provide additional mailbox storage."
 ---
 
@@ -47,7 +42,7 @@ After a user's archive mailbox is enabled, up to 100 GB of additional storage is
 
 ## Licensing
 
-For a list of Outlook licenses that support archive mailboxes, see the references to In-Place Archiving in  [Outlook license requirements for Exchange features](https://support.microsoft.com/office/46b6b7c5-c3ca-43e5-8424-1e2807917c99).
+For a list of Outlook licenses that support archive mailboxes, see the references to In-Place Archiving in [Outlook license requirements for Exchange features](https://support.microsoft.com/office/46b6b7c5-c3ca-43e5-8424-1e2807917c99).
 
 ## Next steps
 
