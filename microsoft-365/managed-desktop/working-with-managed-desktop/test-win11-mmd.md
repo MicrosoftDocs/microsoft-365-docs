@@ -3,9 +3,9 @@ title: Preview and test Windows 11 with Microsoft Managed Desktop
 description:  How to get Windows 11 in your environment
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
@@ -13,23 +13,13 @@ ms.collection: M365-modern-desktop
 
 # Preview and test Windows 11 with Microsoft Managed Desktop
 
- How to enroll and participate in the Windows 11 compatibility testing program within your Microsoft Managed Desktop environment. For more about Windows 11 and Microsoft Managed Desktop generally, see [Windows 11 and Microsoft Managed Desktop](../intro/win11-overview.md). 
+How to enroll and participate in the Windows 11 compatibility testing program within your Microsoft Managed Desktop environment. For more about Windows 11 and Microsoft Managed Desktop generally, see [Windows 11 and Microsoft Managed Desktop](../intro/win11-overview.md). 
 
 ## Add devices to the Windows 11 test group
 
-Upon request, we will create the device group (**Modern Workplace - Windows 11 Pre-Release Test Devices**) for testing and evaluating Windows 11. Devices in this group get new Windows 11 builds and Microsoft Managed Desktop baseline configurations as they become available, and are monitored for reliability issues.
+We have created the device group (**Modern Workplace - Windows 11 Pre-Release Test Devices**) for testing and evaluating Windows 11. Despite "pre-release" in the name, devices in this group receive Windows 11 General Availability builds and Microsoft Managed Desktop baseline configurations as they become available, and are monitored for reliability issues. 
 
-You can choose any of your existing or new devices for Windows 11 testing, but you shouldn't enroll production devices in this group due to the elevated risk of defects or compatibility issues in pre-release builds. Prior device group assignments are removed upon assignment to this group.
-
-To enroll your devices in the pre-release test group:
-
-1. Open a new service request with the Microsoft Managed Desktop Service Engineering team.
-2. Use these values for the fields:
-    - Title: Windows 11 compatibility enrollment
-    - Request type: Change request
-    - Category: Devices
-    - Subcategory: Deployment group assignment
-3. In the description field, list the serial numbers of the devices that you want to use for Windows 11 testing. Note which, if any, of the specified devices aren't yet deployed in your Microsoft Managed Desktop tenant.
+You can choose any of your existing or new devices for Windows 11 testing, but you shouldn't enroll production devices in this group until you are confident in the compatibility and overall experience on your test devices. 
 
 ## Prioritize applications to submit to Test Base
 
@@ -54,4 +44,4 @@ If you encounter Windows 11 compatibility issues with your line-of-business or M
     - Subcategory: Windows Upgrade/Update
 3. Describe the behavior and how severely it would hinder your business in a production environment.
 
-Microsoft Managed Desktop triages and handles issues with pre-release builds based on the effect on productivity. While our service description doesn't cover issues with pre-release builds, we'll confer with customer admins to ensure that issues that block user productivity are resolved prior to starting migration within any given tenant.
+Microsoft Managed Desktop triages and handles Windows 11 issues based on the effect on productivity. We'll confer with customer admins when the request is opened to ensure that issues that block user productivity are resolved prior to starting broader Windows 11 migration within any given tenant.

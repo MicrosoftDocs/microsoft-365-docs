@@ -33,7 +33,7 @@ Manage the alerts queue, investigate devices in the devices list, take response 
 ## In this section
 Topic | Description 
 :---|:---
-[Alerts queue](alerts-queue-endpoint-detection-response.md)| View the alerts surfaced in Microsoft Defender Security Center.
+[Alerts queue](alerts-queue-endpoint-detection-response.md)| View the alerts surfaced in Microsoft 365 Defender portal.
 [Devices list](machines-view-overview.md) | Learn how you can view and manage the devices list, manage device groups, and investigate device related alerts. 
 [Take response actions](respond-machine-alerts.md)| Take response actions on devices and files to quickly respond to detected attacks and contain threats.
 [Query data using advanced hunting](advanced-hunting-query-language.md)| Proactively hunt for possible threats across your organization using a powerful search and query tool.

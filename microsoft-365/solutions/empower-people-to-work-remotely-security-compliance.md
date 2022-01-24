@@ -29,7 +29,7 @@ Remote work needs these elements of security and compliance:
 
 - Controlled access to the productivity apps that hybrid workers use, such as Microsoft Teams
 - Controlled access to and protection of the data that hybrid workers create and use, such as chat conversations or shared files
-- Protection of Windows 10 devices from malware and other types of cyberattacks
+- Protection of Windows 11 or 10 devices from malware and other types of cyberattacks
 - Protection of email, files, and site with consistent labeling for levels of sensitivity and protection
 - Prevention of leaked information
 - Adherence to regional data regulations
@@ -82,7 +82,7 @@ For your hybrid workers, you have implemented:
 
 - Security
   - Controlled access to apps and data that hybrid workers use to communicate and collaborate
-  - Malware protection for cloud service data, email, and Windows 10 devices
+  - Malware protection for cloud service data, email, and Windows 11 or 10 devices
 - Compliance
   - Consistent labeling for levels of sensitivity and protection
   - Policies to prevention information leakage
