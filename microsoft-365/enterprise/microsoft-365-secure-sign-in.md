@@ -47,11 +47,9 @@ MFA requires that user sign-ins be subject to an additional verification beyond 
 
 ![The correct password plus an additional verification results in a successful sign-in.](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-Your first step in using MFA is to ***require it for all administrator accounts***, also known as privileged accounts.
+Your first step in using MFA is to [require it for all administrator accounts](protect-your-global-administrator-accounts.md), also known as privileged accounts. Beyond this first step, Microsoft recommends MFA For all users.
 
-Beyond this first step, Microsoft recommends MFA For all users.
-
-There are three ways to require your administrators or users to use MFA based on your Microsoft 365 plan.
+There are three ways to require your users to use MFA based on your Microsoft 365 plan.
 
 | Plan | Recommendation |
 |---------|---------|
