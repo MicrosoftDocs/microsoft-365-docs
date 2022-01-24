@@ -207,7 +207,7 @@ You can choose the following options for this setting:
 
     In the viewer, you can manually adjust the select box to include the location where the phase occurs. For this setting, you need to select a **Start** and an **End** position. These values represent the number of tokens from the beginning of the document. While you can manually enter in these values, it's easier to manually adjust the select box in the viewer.
     
-# Considerations when configuring explanations
+## Considerations when configuring explanations
 When training a classifier there a few things to keep in mind that will produce more predictable results:
 
 - The more documents you train with, the more accurate the classifier will be.  When possible, use more than 5 good documents and use more than 1 bad document.  If the libraries you’re working with have several different document types in it, several of each type lead to more predictable results.

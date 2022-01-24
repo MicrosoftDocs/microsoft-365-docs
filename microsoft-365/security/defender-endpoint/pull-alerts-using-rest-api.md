@@ -58,7 +58,7 @@ The _Client credential flow_ uses client credentials to authenticate against the
 Use the following method in the Microsoft Defender for Endpoint API to pull detections in JSON format.
 
 > [!NOTE]
-> Microsoft Defender Security Center merges similar alert detections into a single alert. This API pulls alert detections in its raw form based on the query parameters you set, enabling you to apply your own grouping and filtering.
+> Microsoft 365 Defender merges similar alert detections into a single alert. This API pulls alert detections in its raw form based on the query parameters you set, enabling you to apply your own grouping and filtering.
 
 ## Before you begin
 
@@ -130,7 +130,7 @@ ago|string|Pulls alerts in the following time range: from `(current_time - ago)`
 limit|int|Defines the number of alerts to be retrieved. Most recent alerts will be retrieved based on the number defined.<p> **NOTE**: When not specified, all alerts available in the time range will be retrieved.
 machinegroups|string|Specifies device groups to pull alerts from. <p> **NOTE**: When not specified, alerts from all device groups will be retrieved. <p> Example: <br><br> `https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines`
 DeviceCreatedMachineTags|string|Single device tag from the registry.
-CloudCreatedMachineTags|string|Device tags that were created in Microsoft Defender Security Center.
+CloudCreatedMachineTags|string|Device tags that were created in Microsoft 365 Defender.
 
 ### Request example
 

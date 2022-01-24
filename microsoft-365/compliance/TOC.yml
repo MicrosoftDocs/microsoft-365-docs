@@ -78,7 +78,7 @@
           href: communication-compliance-reports-audits.md
         - name: Communication compliance with SIEM solutions 
           href: communication-compliance-siem.md
-        - name: Case study - Contoso quickly configures an inappropriate content policy 
+        - name: Case study - Contoso quickly configures an inappropriate text policy 
           href: communication-compliance-case-study.md
     - name: Insider risk management
       items:
@@ -218,7 +218,7 @@
           href: classifier-how-to-retrain-content-explorer.md
     - name: Data classification
       items: 
-        - name: Understand data classification
+        - name: Learn about data classification
           href: data-classification-overview.md
         - name: Get started with content explorer
           href: data-classification-content-explorer.md
@@ -317,6 +317,8 @@
           href: tls-1-2-in-office-365-gcc.md
         - name: TLS 1.2 in Office 365
           href: prepare-tls-1.2-in-office-365.md
+        - name: Office TLS Certificate Changes
+          href: encryption-office-365-tls-certificates-changes.md 
     - name: Data loss prevention (DLP)
       items: 
         - name: Learn about DLP
@@ -449,7 +451,7 @@
           href: faqimporting-pst-files-to-office-365.yml
     - name: Archive third-party data
       items: 
-        - name: Overview of archiving third-party data
+        - name: Learn about connectors for third-party data
           href: archiving-third-party-data.md
         - name: Microsoft data connectors
           items:  
@@ -654,12 +656,12 @@
         - name: Search for content
           href: content-search.md
           items: 
-          - name: Feature reference for Content search
-            href: content-search-reference.md
           - name: Keyword queries and search conditions
             href: keyword-queries-and-search-conditions.md
           - name: Use the KQL editor to build search queries
             href: ediscovery-kql-editor.md
+          - name: Search for Teams chat data for on-premises users
+            href: search-cloud-based-mailboxes-for-on-premises-users.md
           - name: Configure search permissions filtering
             href: permissions-filtering-for-content-search.md
           - name: Preview eDiscovery search results
@@ -672,14 +674,14 @@
             href: export-a-content-search-report.md
           - name: Search for and delete email messages
             href: search-for-and-delete-messages-in-your-organization.md
-          - name: Search for Teams chat data for on-premises users
-            href: search-cloud-based-mailboxes-for-on-premises-users.md
           - name: Retry a failed search
             href: retry-failed-content-search.md
           - name: Preserve Bcc recipients for search
             href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
         - name: Content search reference
           items: 
+          - name: Feature reference for Content search
+            href: content-search-reference.md
           - name: eDiscovery search limits
             href: limits-for-content-search.md
           - name: Content stored in mailboxes for eDiscovery
@@ -938,12 +940,12 @@
   items: 
     - name: How to identify the type of hold placed on a mailbox
       href: identify-a-hold-on-an-exchange-online-mailbox.md
-    - name: Create a Litigation Hold
-      href: create-a-litigation-hold.md
     - name: Delete items in the Recoverable Items folder of mailboxes on hold
       href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
     - name: Increase the Recoverable Items quota for mailboxes on hold
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+    - name: Create a Litigation hold
+      href: create-a-litigation-hold.md
     - name: Preserve Bcc and expanded distribution group recipients
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Manage auditing and alert policies
@@ -956,12 +958,12 @@
           href: set-up-basic-audit.md
         - name: Search the audit log
           href: search-the-audit-log-in-security-and-compliance.md
+        - name: Export, configure, and view audit log records
+          href: export-view-audit-log-records.md
         - name: Use a PowerShell script to search the audit log
           href: audit-log-search-script.md
         - name: Detailed properties in the audit log
           href: detailed-properties-in-the-office-365-audit-log.md
-        - name: Export, configure, and view audit log records
-          href: export-view-audit-log-records.md
         - name: Turn auditing on or off
           href: turn-audit-log-search-on-or-off.md
         - name: Use the audit log to investigate common issues
