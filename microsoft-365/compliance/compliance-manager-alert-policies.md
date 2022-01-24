@@ -25,18 +25,19 @@ description: "Learn how to create alerts for activities in Microsoft Compliance 
 **In this article:** Learn about the types of alerts you can set in Compliance Manager, how to manage alerts, and how to create alert policies.
 
 ## Overview
-Compliance Manger alert policies help increase your visibility into changes that could impact your organization's compliance score. You can quickly create a policy to alert you when certain improvement actions  experience any of these types of events: a score change, assignment to a new or different user, an implementation status change, a test status change, and a change in evidence . Setting up alerts of such changes can help reduce your compliance risk because you'll get quick notification when any of your improvement actions could fall into a non-compliant state.
+Compliance Manger alert policies help increase your visibility into changes that could affect your organization's compliance score. You can quickly create a policy to alert you when certain improvement actions  experience any of these types of events: a score change, assignment to a new or different user, an implementation status change, a test status change, and a change in evidence. Setting up alerts of such changes can help reduce your compliance risk because you'll get quick notification when any of your improvement actions could fall into a non-compliant state.
 
-Alert polices give you control over the types and frequency of the alerts and notifications you want to receive. You select the conditions that create an alert based on the type of change, and the frequency of the alerts. When we detect a match to your policy conditions, an email can notify you of the change, and you can decide whether some type of further action is required. All of the alerts are listed on the **Alerts** tab in Compliance Manger, and all of the alert polices are listed on the **Alert Polices tab**.
+Alert policies give you control over the types and frequency of the alerts and notifications you want to receive. You select the conditions that create an alert based on the type of change, and the frequency of the alerts. When we detect a match to your policy conditions, an email can notify you of the change, and you can decide whether some type of further action is required. All of the alerts are listed on the **Alerts** tab in Compliance Manger, and all of the alert policies are listed on the **Alert Policies tab**.
 
 ## Understanding the Alerts and Alert policies pages
 
-All users in your organization are able to view  the Alerts and Alerts polices pages in Compliance Manager. However, only users with certain role types can create and edit policy alerts, or edit alerts. See alert policy permissions for details.
+All users in your organization are able to view  the Alerts and Alerts policies pages in Compliance Manager. However, only users with certain role types can create and edit policy alerts, or edit alerts. See alert policy permissions for details.
 
 ### Alert policies page
 
-Select the **Alert policies** tab in Compliance Manger to view your **Alert policies** page. This page contains a table listing all the policies created by your organization, and is where you can add new policies, edit policies, change their activation status, or delete polices. 
-In the Status column, **Active** means the policy is in effect and triggering alerts when conditions are met. **Inactive** means the policy exists but is not generating alerts. The polices table also shows you the severity of the policy  as well as the date the policy was last modified.
+Select the **Alert policies** tab in Compliance Manger to view your **Alert policies** page. This page contains a table listing all the policies created by your organization, and is where you can add new policies, edit policies, change their activation status, or delete policies.
+
+In the Status column, **Active** means the policy is in effect and triggering alerts when conditions are met. **Inactive** means the policy exists but is not generating alerts. The policies table also shows you the severity of the policy  as well as the date the policy was last modified.
 
 To view an individual policy's details, select its row in the table. A flyout pane will appear that shows all details. Select the **Action** button at the bottom of the pane and select from options to edit the policy, view its alerts, or delete it.
 
@@ -56,7 +57,7 @@ To start working with alerts, see Viewing and managing alerts.
 
 ## Alert policy permissions
 
-The table below  outlines which users can create and edit alerts and alert polices based on their role type. All users in an organization have permissions to view content on the **Alerts** and **Alert policies** page.
+The table below  outlines which users can create and edit alerts and alert policies based on their role type. All users in an organization have permissions to view content on the **Alerts** and **Alert policies** page.
 
 | Role | Can create and edit policies | Can edit alerts | 
 | :------------- | :-------------: | :------------: |
@@ -83,13 +84,13 @@ You can create policies to alert you to the following types of events related to
 4. Select a severity level for the alert when a match is detected: low, medium, or high. Then select how often you want to be notified by email when a match is detected. You can choose to be notified with each match, or choose a threshold of a certain number of matches above three, and after a certain time once the event occur, starting at about an hour. When done, select **Next**.
 5. Select the users in your org to receive an email when the policy conditions are met. Select **+Select recipients** and check the boxes next to each user name on the flyout pane. The global admin for your organization is set by default  to receive email alerts, but you can remove them by unchecking their name on the flyout pane. When done, select **Add recipients**, then select **Next**.
 6. Review all selections, and make any changes to each section by selecting , then select **Next**. When finished reviewing, select **Create policy**.
-7. When your policy is created, select **Done**. You'll arrive at your **Alert polices** page with the flyout pane for the policy you just created already open.
+7. When your policy is created, select **Done**. You'll arrive at your **Alert policies** page with the flyout pane for the policy you just created already open.
 
-Your policy is active once you create it. See Managing polices for how to manage and interact with policies.
+Your policy is active once you create it. See Managing policies for how to manage and interact with policies.
 
 ## Managing policies
 
-The **Alert polices** page contains a table listing of all your policies. See Alert policies page to further understand this page. Any user in your organization can view policies, but certain actions are restricted to certain roles; see Alert policy permissions.
+The **Alert policies** page contains a table listing of all your policies. See Alert policies page to further understand this page. Any user in your organization can view policies, but certain actions are restricted to certain roles; see Alert policy permissions.
 
 ### View policy details
 
