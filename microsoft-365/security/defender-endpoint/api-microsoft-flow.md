@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender for Endpoint Flow connector
+title: How to use Power Automate Connector to set up a Flow for events
 ms.reviewer: 
-description: Use Microsoft Defender for Endpoint Flow connector to automate security and create a flow that will be triggered any time a new alert occurs on your tenant.
-keywords: flow, supported apis, api, Microsoft flow, query, automation
+description: Use Microsoft Defender for Endpoint Flow connector to create a flow that will be triggered any time a new event occurs on your tenant.
+keywords: flow, supported apis, api, Microsoft flow, query, automation, power automate
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
-ms.topic: article
+ms.topic: how-to
 MS.technology: mde
 ms.custom: api
 ---
 
-# Microsoft Power Automate (formerly Microsoft Flow), and Azure Functions
+# How to use Power Automate Connector to set up a Flow for events
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,9 +30,12 @@ ms.custom: api
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Automating security procedures is a standard requirement for every modern Security Operations Center. The lack of professional cyber defenders forces SOC to work in the most efficient way and automation is a must. Microsoft Power Automate supports different connectors that were built exactly for that. You can build an end-to-end procedure automation within a few minutes.
 
-Microsoft Defender API has an official Power Automate Connector with many capabilities.
+Automating security procedures is a standard requirement for every modern Security Operations Center (SOC). For SOC teams to operate in the most efficient way, automation is a must. Use Microsoft Power Automate to help you create automated workflows and build an end-to-end procedure automation within a few minutes. Microsoft Power Automate supports different connectors that were built exactly for that.  
+
+Use this article to guide you in creating automations that is triggered by an event, such as when an new alert is created in your tenant. Microsoft Defender API has an official Power Automate Connector with many capabilities. 
+
+
 
 :::image type="content" alt-text="Image of edit credentials1." source="images/api-flow-0.png":::
 
@@ -42,7 +45,7 @@ Microsoft Defender API has an official Power Automate Connector with many capabi
 
 ## Usage example
 
-The following example demonstrates how to create a Flow that is triggered any time a new Alert occurs on your tenant.
+The following example demonstrates how to create a Flow that is triggered any time a new Alert occurs on your tenant. You'll be guided on defining what event starts the flow and what next action will be taken when that trigger occurs.  
 
 1. Log in to [Microsoft Power Automate](https://flow.microsoft.com).
 
