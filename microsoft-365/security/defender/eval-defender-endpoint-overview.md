@@ -19,6 +19,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-scenario
   - m365solution-evalutatemtp
+  - m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
 ---
@@ -43,7 +44,7 @@ The following table describes the steps in the illustration.
  |Step   |Description
 |---------|---------|
 | [Step 1. Review architecture requirements and key concepts](eval-defender-endpoint-architecture.md)    | Understand the Defender for Endpoint architecture and the capabilities available to you.       |
-|[Step 2. Enable the evaluation environment](eval-defender-office-365-enable-eval.md)     |   Follow the steps to setup the evaluation environment.      |
-|[Step 3. Set up the pilot ](eval-defender-office-365-pilot.md)    |    Verify your pilot group, run simulations, and become familiar with key features and dashboards.     |
+|[Step 2. Enable the evaluation environment](eval-defender-endpoint-enable-eval.md)     |   Follow the steps to setup the evaluation environment.      |
+|[Step 3. Set up the pilot ](eval-defender-endpoint-pilot.md)    |    Verify your pilot group, run simulations, and become familiar with key features and dashboards.     |
 
 
