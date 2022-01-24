@@ -146,7 +146,9 @@ See the [steps to enable Azure AD Identity Protection](/azure/active-directory/a
 
 ## Next step
 
-[![Deploy your identity model](../media/deploy-identity-solution-overview/deploy-identity-solution-identity-infrastructure.png)](deploy-identity-solution-identity-infrastructure.md)
+![Deploy your identity model](../media/deploy-identity-solution-overview/deploy-identity-solution-identity-infrastructure.png)
+
+Continue with Step 4 to deploy the identity infrastructure based on your chosen identity model:
 
 - [Cloud-only identity](cloud-only-identities.md)
 - [Hybrid identity](prepare-for-directory-synchronization.md)
