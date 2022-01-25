@@ -1,18 +1,18 @@
 ---
 title: 'Build a package'
-description: Details on how to build a .zip package file
-search.appverid: xx
-author: mansipatel-usl
-ms.author: mapatel
+description: How to build your package
+search.appverid: MET150
+author: Tinacyt
+ms.author: Tinacyt
 manager: rshastri
 audience: Software-Vendor
-ms.topic: how-to
-ms.date: 01/24/2022
-ms.service: virtual-desktop
+ms.topic: troubleshooting
+ms.date: 03/01/2022
+ms.service: testbase
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
-ms.reviewer: mapatel
+ms.reviewer: Tinacyt
 f1.keywords: NOCSH
 ---
 
