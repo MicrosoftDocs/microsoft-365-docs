@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - M365-security-compliance
-  - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
 ---
@@ -41,6 +40,8 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
+
 ## December 2021
 
 - (GA) The `DeviceTvmSoftwareEvidenceBeta` table was added on a short-term basis in advanced hunting to allow you to view evidence of where a specific software was detected on a device.
@@ -59,7 +60,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 - (GA) Microsoft Defender for Office 365 event data is available in the Microsoft 365 Defender event streaming API. You can see the availability and status of event types in the [Supported Microsoft 365 Defender event types in streaming API](supported-event-types.md).
 - (GA) Microsoft Defender for Office 365 data available in advanced hunting is now generally available.
-- (Preview) Assign incidents and alerts to user accounts
+- (GA) Assign incidents and alerts to user accounts
 
   You can assign an incident, and all the alerts associated with it, to a user account from **Assign to:** on the **Manage incident** pane of an incident or the **Manage alert** pane of an alert.
 
