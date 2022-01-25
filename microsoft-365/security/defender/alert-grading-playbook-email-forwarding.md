@@ -123,7 +123,7 @@ For more information, see the following articles:
 
 This figure shows the workflow to identify suspicious email forwarding activities.
 
-TO BE ADDED: "Alert investigation workflow" figure
+:::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-flowchart.png" alt-text="Alert investigation workflow for email forwarding" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-flowchart.png":::
 
 You can investigate an email forwarding alert using Threat Explorer or audit logs, based on the availability of features in your Microsoft 365 Defender portal. You may choose to follow the entire process or a part of the process as needed.
 
