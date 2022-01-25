@@ -135,5 +135,39 @@ Please refer to the following examples, you can simply copy them to your filess 
         exit $exit_code 
 
 
+## Compress to zip file
+After scripts and binaries are prepared, you proceed to compress the folder to a zip file. Right click on the App folder, select **Compress to ZIP file**.<br>
+![Folder structure](Media/BuildPackage4.png)
 
 
+## Verify your package locally (optional)
+After building the zip package, you can upload it to your Test Base account. <br>
+However, it's best practice to run the test locally to ensure the scripts work properly before uploading. A local test can quickly identify issue and speed up your uploading process. To verify locally follow the steps below:<br>
+1.	Prepare a VM (Virtual Machine)<br>
+    We recommend using a virtual machine for this local test, which is convenient since it needs a clean Windows environment for each test. It's easy to create a Windows VM on Azure (https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal), you can select a proper Windows version (image) for your test, e.g., Windows 10 Pro, version 21H2.<br>
+
+2.	Copy your package to the VM<br>
+    There are many ways to copy your package file to the VM, if you're using Azure VM, you can choose to:
+     - 	Copy file directly in your Remote Desktop connection. <br>
+     -	Use Azure file share (https://docs.microsoft.com/en-us/azure/storage/files/storage-files-quick-create-use-windows) <br>
+    You can create a specific folder for this test and copy the package file under this folder. e.g., C:\TestBase.<br>
+3.	Test the package<br>
+    Open Windows PowerShell, switch to the directory containing the package. e.g., cd C:\TestBase Start to run test in the Package:<br>
+    1).  Extract the package file.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Expand-Archive -LiteralPath C:\TestBase\App.zip -DestinationPath C:\TestBase*<br>
+    3).  Run install script.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*C:\TestBase\App\scripts\install\job.ps1*<br>
+    3).  Restart the VM if necessary.<br>
+    4).  Run launch script.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*C:\TestBase\App\scripts\install\job.ps1*<br>
+    5).  Run close script.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*C:\TestBase\App\scripts\close\job.ps1*<br>
+    6).  Run uninstall script if have.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*C:\TestBase\App\scripts\uninstall\job.ps1*<br>
+    After each step, you can check if there's any issue in your script. If all scripts run as expected, your package is ready to be uploaded to your Test Base account.
+
+
+## Next steps
+[Upload a package](https://docs.microsoft.com/en-us/microsoft-365/test-base/uploadapplication)
+
+ 
