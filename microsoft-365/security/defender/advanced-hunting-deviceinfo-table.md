@@ -44,7 +44,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `OSPlatform` | `string` | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10 and Windows 7. |
 | `OSBuild` | `string` | Build version of the operating system running on the machine |
 | `IsAzureADJoined` | `boolean` | Boolean indicator of whether machine is joined to the Azure Active Directory |
-| `AadObjectId` | `string` | Unique identifier for the device in Azure AD |
+| `AadDeviceId` | `string` | Unique identifier for the device in Azure AD |
 | `LoggedOnUsers` | `string` | List of all users that are logged on the machine at the time of the event in JSON array format |
 | `RegistryDeviceTag` | `string` | Machine tag added through the registry |
 | `OSVersion` | `string` | Version of the operating system running on the machine |

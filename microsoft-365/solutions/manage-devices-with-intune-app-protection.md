@@ -3,7 +3,11 @@ title: "Step 1. Implement App Protection Policies"
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- Intune App Protection policies
+- APP
+- mobile application management
+- MAM
+- set up mobile ap protection
 manager: dougeby
 audience: ITPro
 ms.topic: article
@@ -11,11 +15,9 @@ description: Configure mobile app protection with App Protection policies (APP) 
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- Intune App Protection policies
-- APP
-- mobile application management
-- MAM
-- set up mobile ap protection
+- M365-security-compliance
+- m365solution-managedevices
+- m365solution-scenario
 ms.custom: 
 keywords: 
 ---
