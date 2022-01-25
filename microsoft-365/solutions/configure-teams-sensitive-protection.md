@@ -103,6 +103,10 @@ To restrict private channel creation
 
 You can also use [teams policies](/MicrosoftTeams/teams-policies) to control who can create private channels.
 
+## Shared channel settings
+
+[Shared channels](/MicrosoftTeams/shared-channels) doesn't have team-level settings. The shared channel settings you configure in the Teams admin center and Azure AD will be available for all teams regardless of sensitivity.
+
 ## SharePoint settings
 
 Each time you create a new team with the sensitive label, there are two steps to do in SharePoint:

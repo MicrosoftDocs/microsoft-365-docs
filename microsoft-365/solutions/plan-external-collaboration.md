@@ -24,10 +24,10 @@ description: Plan which external collaboration options to use in Microsoft 365.
 
 Microsoft 365 offers several options for collaborating with people outside your organization:
 
-- 1:1 chat in Teams with people outside your organization
+- 1:1 and group chat in Teams with people outside your organization
 - Teams meetings with people outside your organization
 - Sharing individual files or folders with people outside your organization
-- Group collaboration with chat, file collaboration, and shared apps
+- Collaboration in a team, with chat, file collaboration, and shared apps
 
 This article covers the fourth option, group collaboration with chat, file collaboration, and shared apps. 
 
@@ -42,9 +42,9 @@ This article covers the fourth option, group collaboration with chat, file colla
 - **Shared channel** – A Teams channel that can be shared with people outside the team. These people can be inside your organization or from other Azure AD organizations.
 - **Sharing links** – Links with permissions to a file or folder that are used to share that file or folder with others. The people being shared with can be inside or outside your organization.
 
-## Options for group collaboration
+## Options for collaboration in a team
 
-When collaborating with people outside your organization, there are two options for how those people access the resources that you share with them.
+When collaborating in a team with people outside your organization, there are two options for how those people access the resources that you share with them.
 
 **Guest sharing**
 
@@ -61,9 +61,9 @@ External participants access shared resources in your organization by using thei
 
 - External participants in Teams shared channels
 
-The primary advantage of external participants in shared channels versus guest sharing is that people outside your organization can collaborate with your users in Teams without having to change their user context. When using guest accounts, users must sign out of Teams with their work or school account and sign in again using the guest account. Alternatively, they can have a separate copy of Teams running in a private browser session. This switching between internal and external identities takes time and can cause users to miss important communications while signed out of a given organization.
+The primary advantage of external participants in shared channels versus guest sharing is that people outside your organization can collaborate with your users in Teams without having to change their user context. When using guest accounts, users must sign out of Teams with their work or school account and sign in again using the guest account. Alternatively, they can have a separate copy of Teams running in a private browser session. This switching between organizations takes time and can cause users to miss important communications while signed out of a given organization.
 
-With shared channels, users can remain signed in to their organization and access channels shared with them from other organizations. Shared channels from other organizations are available in Teams alongside the teams and channels in your organization. There is no need to log in to a separate instance of Teams using a guest account.
+With shared channels, users can remain signed in to their organization and access channels shared with them from other organizations. Shared channels from other organizations are available in Teams alongside the teams and channels in your organization. There is no need to switch organizations.
 
 ## Feature comparison
 
@@ -74,6 +74,7 @@ The following table describes the experiences available depending on the type of
 |Team access|Y|Y|N|
 |Shared channel access|Y|N|Y|
 |Permissions through file sharing links|Y|Y|N|
+|Use shared channels|Y|Y|N|
 |Use private channels|Y|Y|N|
 |Account in your directory|Y|Y|N|
 |Access reviews|Y|Y|Y|
@@ -89,9 +90,9 @@ You must use guest sharing if:
 - You want to share files or folders in a channel with people outside your organization who are not in the channel
 - You want to collaborate with people outside your organization who do not have a work or school account.
 
-Shared channels are blocked by default. An Azure AD administrator must set up cross-tenant access between your organization and each other organization with which you want to share. Each other organization must set up cross-tenant access on their end as well.
+External collaboration with shared channels is blocked by default. An Azure AD administrator must set up cross-tenant access between your organization and each other organization with which you want to share. Each other organization must set up cross-tenant access on their end as well.
 
-If you plan to use shared channels, you can choose between a self-service model and a by-request model.
+If you plan to use shared channels with other organizations, you can choose between a self-service model and a by-request model.
 
 - Self-service – You can configure cross-tenant access to allow inbound and outbound access to all other Azure AD organizations. Alternatively, you can block a list of organizations that you don’t want your users to share with, leaving all other organizations available. This allows your users to invite people outside the organization to participate in shared channels without having to contact your helpdesk or IT department.
 - By-request – You can configure cross-tenant access for each individual organization with which you want to allow shared channels. When choosing this model, it’s important to have a documented business process that your users can follow to request cross-tenant access with another organization.
@@ -117,9 +118,9 @@ IP-based policies are supported at the SharePoint file level. So an external par
 
 Admins can apply DLP policies to a team where all channels, including shared channels, inherit the policy. Shared channels inherit the policy of the host organization.
 
-##### Retention labels
+##### Retention policy
 
-Admins can apply a retention policy on a team where all channels, including shared channels, inherit the retention policy. Shared channels inherit the policy of the host organization.
+Admins can apply a retention policy on a team where all channels, including shared channels, inherit the retention policy. Shared channels inherit the policy of the host team.
 
 ##### Sensitivity labels
 

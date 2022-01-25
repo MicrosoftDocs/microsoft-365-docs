@@ -68,7 +68,7 @@ To limit who can be invited as a guest
 1. Select **Save** and close the **Outbound access settings** blade.
 
 
-To limit who can be invited as a shared chanel participant
+To limit who can be invited as a shared channel participant
 1. Select the outbound access link for the organization that you want to modify.
 1. On the **B2B direct connect** tab, choose **Customize settings**.
 1. Under **Access status**, choose **Allow access**.

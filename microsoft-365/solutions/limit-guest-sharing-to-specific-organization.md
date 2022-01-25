@@ -20,17 +20,15 @@ description:
 
 # Limit guest sharing to specific organizations
 
-
-TEST: If you block B2B collab by default, can users invite guests from non-AAD domains?
-
-How does this relate to regular domain filtering?
-
-
 By default, users can invite people outside the organization as guests. This includes inviting them to teams in Microsoft Team, SharePoint sites, and sharing individual files and folders with them.
 
 If you only want your users to invite guests from specific organizations, you can specify these organizations in the Azure Active Directory cross-tenant access settings for [B2B collaboration](/azure/active-directory/external-identities/what-is-b2b).
 
-## Set the default B2B collaboration settings to block inviting guests
+## Configure cross-tenant access settings
+
+The first step in limiting guest sharing is to change the default settings in the Azure AD cross-tenant access settings to block inviting guests by default. Then you can allow guest invitations for specific organizations.
+
+### Set the default B2B collaboration settings to block inviting guests
 
 Because inviting guests is enabled by default, limiting guest invitations to certain organizations requires blocking inbound B2B collaboration by default.
 
@@ -46,7 +44,7 @@ To block inbound B2B collaboration by default
 1. Select **Save**.
 1. Close the **Default settings** blade.
 
-## Add an organization
+### Add the organization where you want to allow guest invitations
 
 Next, add the organizations where you want to allow your users to invite guests to the Azure AD cross-tenant access list.
 
@@ -60,7 +58,7 @@ To add an organization
 
 At this point, all access settings for this organization are inherited from your default settings.
 
-## Configure inbound to allow all users
+### Configure inbound settings for the organization to allow all users
 
 Once you have added the organization, you need to update the organization's inbound settings to allow B2B collaboration users to be invited as guests. Do this for each organization where you want to allow your users to be able to invite guests.
 
@@ -70,6 +68,19 @@ Once you have added the organization, you need to update the organization's inbo
 1. Under **Access status**, choose **Allow access**.
 1. Under **Target**, choose to allow all users.
 1. Select **Save** and close the **Outbound access settings** blade.
+
+## Turn off one-time passcode authentication
+
+Even after you've limited B2B collaboration to certain organizations, people can still share files and folders with people in other organizations - they just won't be given a guest account in your directory.
+
+If you wish to prevent sharing entirely with other organizations, you have to disable the one-time passcode feature in Azure AD. This will prevent people outside your organization from being sent a one-time passcode for authentication to shared files or folders.
+
+To disable the email one-time passcode feature
+1. Sign in to the [Azure portal](https://portal.azure.com/) as an Azure AD global administrator.
+1. In the navigation pane, select **Azure Active Directory**.
+1. Select **External Identities** > **All identity providers**.
+1. Select **Email one-time passcode**, and then under **Email one-time passcode for guests**, select **Disable email one-time passcode for guests** (or **No** if the feature was previously enabled, disabled, or opted into during preview).
+1. Select **Save**.
 
 ## Related topics
 
