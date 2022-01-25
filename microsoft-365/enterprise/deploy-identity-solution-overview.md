@@ -28,7 +28,7 @@ For an overview of identity models and authentication for Microsoft 365 for ente
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
-For information about the identity features of each Microsoft 365 for enterprise plan, the role of Azure Active Directory (Azure AD), both the on-premises and cloud-based components, and the most common authentication configurations, see the [Identity Infrastructure poster](../downloads/m365e-identity-infra.pdf).
+For information about the identity features of each Microsoft 365 for enterprise plan, the role of Azure Active Directory (Azure AD), on-premises and cloud-based components, and the most common authentication configurations, see the [Identity Infrastructure poster](../downloads/m365e-identity-infra.pdf).
 
 [![The Identity Infrastructure poster.](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
 
@@ -38,7 +38,7 @@ You can [download this poster](https://github.com/MicrosoftDocs/microsoft-365-do
 
 ## What’s in this solution
 
-This solution steps you through the deployment of an identity infrastructure for yout Microsoft 365 tenant to provide access for your employees and protection against identity-based attacks.
+This solution steps you through the deployment of an identity infrastructure for your Microsoft 365 tenant to provide access for your employees and protection against identity-based attacks.
 
 ![Deploy your identity infrastructure for Microsoft 365](../media/deploy-identity-solution-overview/deploy-identity-solution-overview.png)
 
@@ -49,7 +49,7 @@ The steps in this solution are:
 3. [Protect your Microsoft 365 user accounts.](microsoft-365-secure-sign-in.md)
 4. [Deploy your identity model.](cloud-only-identities.md)
 
-This solution supports the three key principles of [Zero Trust](https://www.microsoft.com/security/business/zero-trust/):
+This solution supports the key principles of [Zero Trust](https://www.microsoft.com/security/business/zero-trust/):
 
 - **Verify explicitly:** Always authenticate and authorize based on all available data points.
 - **Use least privilege access:** Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
@@ -78,7 +78,7 @@ Use these steps to deploy an identity model and authentication infrastructure fo
 1. [Determine your identity model.](deploy-identity-solution-identity-model.md)
 2. [Protect your Microsoft 365 administrator accounts.](protect-your-global-administrator-accounts.md)
 3. [Protect your Microsoft 365 user accounts.](microsoft-365-secure-sign-in.md)
-4. [Deploy your identity model.](cloud-only-identities.md)
+4. Deploy your identity model. Either [cloud-only](cloud-only-identities.md) or [hybrid](prepare-for-directory-synchronization).
 
 [![Determine the identity model to use for your Microsoft 365 tenant](../media/deploy-identity-solution-overview/identity-solution-identity-model.png)](deploy-identity-solution-identity-model.md)
   
