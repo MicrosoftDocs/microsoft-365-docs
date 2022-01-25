@@ -76,8 +76,8 @@ Make sure you understand the following prerequisites before you turn on this fea
 - Microsoft 365 Apps for enterprise:
     - **Windows**: Minimum version 2107 from Current Channel or Monthly Enterprise Channel
     - **macOS**: Minimum version 16.51
-    - **iOS**: Now in preview when you [opt-in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 2.55 in the [Beta Channel](https://insider.office.com/join/ios)
-    - **Android**: Now in preview when you [opt-in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 16.0.14701.20036 in the [Beta Channel](https://insider.office.com/join/android)
+    - **iOS**: Now in preview when you [opt-in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 2.56.1207
+    - **Android**: Now in preview when you [opt-in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 16.0.14729.20146
 
 - All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels). If you use any of the following, check the minimum versions required:
     
@@ -104,7 +104,7 @@ Microsoft 365 services automatically support the new labeling metadata when you 
 
 ### Opt-in to the preview of co-authoring for iOS and Android
 
-To try the preview of co-authoring for iOS and Android, you must have the minimum versions stated in the previous section, and also request your tenant be added to the preview: [Consent to Enable co-authoring for files encrypted with sensitivity labels on mobile](https://ncv.microsoft.com/5Oob3oDj1O)
+To try the preview of co-authoring for iOS and Android, you must have the minimum versions stated in the previous section, and also request your tenant is added to the preview: [Consent to Enable co-authoring for files encrypted with sensitivity labels on mobile](https://ncv.microsoft.com/5Oob3oDj1O)
 
 For more information, see the following blog post announcement: Co-authoring on Microsoft Information Protection encrypted documents is now in public preview on mobile devices
 
