@@ -85,8 +85,8 @@ The following table is a list of activity types captured within Lighthouse audit
 
 ## Next steps
 
-If you need more information, you can use Microsoft Graph API to access more audit events. For more information, see [Overview for multi-tenant management using the Microsoft 365 Lighthouse API](https://docs.microsoft.com/graph/managedtenants-concept-overview).
+If you need more information, you can use Microsoft Graph API to access more audit events. For more information, see [Overview for multi-tenant management using the Microsoft 365 Lighthouse API](/graph/managedtenants-concept-overview).
 
 ## Related content
 
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.md) (article)
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
