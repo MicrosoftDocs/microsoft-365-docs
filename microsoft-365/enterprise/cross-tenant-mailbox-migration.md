@@ -68,7 +68,7 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
    ![New Application](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
 
-5. On the Register an application page, under Supported account types, Select Accounts in any organizational directly (Any Azure AD directory - Multitenant). Then under Redirect URI (optional), select Web and enter <https://office.com>. Last, select Register.
+5. On the Register an application page, under Supported account types, select Accounts in any organizational directory (Any Azure AD directory - Multitenant). Then, under Redirect URI (optional), select Web and enter <https://office.com>. Lastly, select Register.
 
    ![Application Registration](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
 
