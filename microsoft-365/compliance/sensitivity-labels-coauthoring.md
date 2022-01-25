@@ -76,8 +76,8 @@ Make sure you understand the following prerequisites before you turn on this fea
 - Microsoft 365 Apps for enterprise:
     - **Windows**: Minimum version 2107 from Current Channel or Monthly Enterprise Channel
     - **macOS**: Minimum version 16.51
-    - **iOS**: Now in preview when you [opt-in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 2.56
-    - **Android**: Now in preview when you [opt-in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 16.0.14729
+    - **iOS**: Now in preview when you [opt-in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 2.56.1207
+    - **Android**: Now in preview when you [opt-in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 16.0.14729.20146
 
 - All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels). If you use any of the following, check the minimum versions required:
     
