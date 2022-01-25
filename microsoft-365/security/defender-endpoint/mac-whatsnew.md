@@ -28,6 +28,19 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+> [!NOTE]
+> Beginning in late January 2022, Microsoft Defender for Endpoint (formerly known as Microsoft Defender ATP) will be referenced as "Microsoft Defender" across end user facing MDE experiences on macOS. 
+> 
+> This change is currently available in the Beta (previously called Insider Fast) and Preview (previously called Insider Slow) update channels. The minimum product version that includes this change is 101.54.24.
+> 
+> End users will observe the following changes: 
+> - The application installation path has been changed from `/Application/Microsoft Defender ATP.app` to `/Applications/Microsoft Defender.app`.
+> - Within the user experience, occurrences of "Microsoft Defender ATP" have been replaced with "Microsoft Defender"
+> 
+> This change does not impact the `mdatp` command-line tool.
+>
+> **Action required**: if your enterprise has custom configurations that rely on either the product name or application installation path, these configurations must be updated with the new values listed above.
+
 ## 101.54.16 (20.121111.15416.0)
 
 - macOS 10.14 (Mojave) is no longer supported
