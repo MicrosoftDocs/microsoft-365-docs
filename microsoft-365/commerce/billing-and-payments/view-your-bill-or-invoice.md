@@ -24,7 +24,7 @@ ms.custom:
 - AdminTemplateSet
 - adminvideo
 description: "Find your invoice or billing statement in the Microsoft 365 admin center. You can also save and print a copy of your bill."
-ms.date: 01/21/2022
+ms.date: 01/25/2022
 ---
 
 # View your bill or invoice
