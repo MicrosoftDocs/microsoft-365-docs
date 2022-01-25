@@ -88,9 +88,9 @@ If you have a scenario that requires lifecycle management for individual items, 
 
 ## End-user documentation
 
-See the following section for information about end user documentation to support Microsoft 365 retention.
+See the following section for information about end-user documentation to support Microsoft 365 retention.
 
-The information governance capabilities that support mailbox management (archiving, inactive mailboxes, and import) typically don't require end user documentation.
+The information governance capabilities that support mailbox management (archiving, inactive mailboxes, and import) typically don't require end-user documentation.
 
 ### End-user documentation for retention and deletion
 
