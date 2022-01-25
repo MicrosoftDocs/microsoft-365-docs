@@ -20,7 +20,7 @@ description: Deploy your identity infrastructure for Microsoft 365.
 
 # Deploy your identity infrastructure for Microsoft 365
 
-In Microsoft 365 for enterprise, a well-planned and executed identity infrastructure paves the way for stronger security, including restricting access to your productivity workloads and their data to only authenticated users and devices.
+In Microsoft 365 for enterprise, a well-planned and executed identity infrastructure paves the way for stronger security, including restricting access to your productivity workloads and their data to only authenticated users and devices. Security for identities is a key element of a Zero Trust deployment, in which all attempts to access resources both on-premises and in the cloud are authenticated and authorized.
 
 For an overview of identity models and authentication for Microsoft 365 for enterprise, watch this video.
 
@@ -49,7 +49,7 @@ The steps in this solution are:
 3. [Protect your Microsoft 365 user accounts.](microsoft-365-secure-sign-in.md)
 4. [Deploy your identity model.](cloud-only-identities.md)
 
-This solution uses the principles of Zero Trust:
+This solution supports the three key principles of [Zero Trust](https://www.microsoft.com/security/business/zero-trust/):
 
 - **Verify explicitly:** Always authenticate and authorize based on all available data points.
 - **Use least privilege access:** Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
@@ -73,7 +73,7 @@ Azure AD provides a full suite of identity management and security capabilities 
 
 ## Next steps
 
-Use these steps to deploy an identity model and authentication infrastructure your Microsoft 365 tenant:
+Use these steps to deploy an identity model and authentication infrastructure for your Microsoft 365 tenant:
 
 1. [Determine your identity model.](deploy-identity-solution-identity-model.md)
 2. [Protect your Microsoft 365 administrator accounts.](protect-your-global-administrator-accounts.md)
