@@ -56,6 +56,7 @@ Named entity SITs and enhanced policies are not supported for:
 
 
 - On-premises repositories
+- Power BI
 
 ## Create and edit enhanced policies
 
