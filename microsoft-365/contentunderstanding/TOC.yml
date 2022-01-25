@@ -3,7 +3,7 @@
         - name: Introduction to SharePoint Syntex
           href: index.md
  
-    - name: Content models
+    - name: Custom AI models
       items:
             - name: Document understanding models
               items:
@@ -53,10 +53,13 @@
                   href: create-a-form-processing-model.md
                 - name: Apply a retention label 
                   href: apply-a-retention-label-to-a-model.md
-            - name: Prebuilt models
-              items:
-                - name: Use prebuilt models to classify documents 
-                  href: index.md
+
+    - name: Prebuilt AI models
+      items:
+            - name: Use prebuilt models to classify documents 
+              href: index.md
+            - name: Apply a retention label 
+              href: apply-a-retention-label-to-a-model.md
 
     - name: Metadata search
       items: 
