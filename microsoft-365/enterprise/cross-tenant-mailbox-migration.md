@@ -68,7 +68,7 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
    ![New Application](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
 
-5. On the Register an application page, under Supported account types, Select Accounts in any organizational directly (Any Azure AD directory - Multitenant). Then under Redirect URI (optional), select Web and enter <https://office.com>. Last, select Register.
+5. On the Register an application page, under Supported account types, select Accounts in any organizational directory (Any Azure AD directory - Multitenant). Then, under Redirect URI (optional), select Web and enter <https://office.com>. Lastly, select Register.
 
    ![Application Registration](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
 
@@ -88,7 +88,7 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
 12. Now we need to add permission for mailbox migration, select Add a permission
 
-13. In the Request API permissions windows, select APIs my organization users, and search for office 365 exchange online, select it.
+13. In the Request API permissions windows, select APIs my organization uses, search for Office 365 Exchange Online, and select it.
 
     ![Select API](../media/tenant-to-tenant-mailbox-move/0b4dc1eea3910e9c475724d9473aca58.png)
 
