@@ -20,7 +20,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn how to update your billing addresses or the email address used to receive billing notifications for Microsoft 365 for business."
-ms.date: 04/07/2021
+ms.date: 01/24/2022
 ---
 
 # Change your billing addresses
