@@ -39,11 +39,14 @@ Microsoft provides capabilities to help protect your organization, but they are 
 1. Create dedicated Microsoft 365 global administrator accounts and use them only when necessary.
     
 2. Configure multi-factor authentication for your dedicated Microsoft 365 global administrator accounts and use the strongest form of secondary authentication.
+
+3. Protect administrator accounts with Zero Trust identity and device access recommendations.
     
+
 > [!Note]
 > Although this article is focused on global administrator accounts, you should consider whether additional accounts with wide-ranging permissions to access the data in your subscription, such as eDiscovery administrator or security or compliance administrator accounts, should be protected in the same way. <br > A global administrator account can be created without adding any licenses.
   
-## Step 1. Create dedicated Microsoft 365 global administrator accounts and use them only when necessary
+## 1. Create dedicated Microsoft 365 global administrator accounts and use them only when necessary
 
 There are relatively few administrative tasks, such as assigning roles to user accounts, that require global administrator privileges. Therefore, instead of using everyday user accounts that have been assigned the global admin role, do these steps:
   
@@ -119,6 +122,14 @@ To connect to Microsoft 365 services with MFA and PowerShell, see these articles
 - [Exchange Online](/powershell/exchange/mfa-connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa)
 - [SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)
 - [Skype for Business Online](manage-skype-for-business-online-with-microsoft-365-powershell.md#connect-using-an-admin-account-with-multi-factor-authentication)
+
+
+## 3. Protect administrator accounts with Zero Trust identity and device access recommendations
+
+To help ensure a secure and productive workforce, Microsoft provides a set of recommendations for [identity and device access](../security/office-365-security/microsoft-365-policies-configurations.md). For identity, use the recommendations and settings in these articles:
+
+- [Prerequisites](../security/office-365-security/identity-access-prerequisites.md)
+- [Common identity and device access policies](../security/office-365-security/identity-access-policies.md)
 
 ## Additional protections for enterprise organizations
 

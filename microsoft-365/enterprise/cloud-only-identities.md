@@ -32,7 +32,7 @@ description: "Describes how to create users and groups when your Microsoft 365 s
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-If you have chosen cloud-only identity, you already have an Azure Active Directory (Azure AD) tenant for your Microsoft 365 subscription to store all of your users, groups, and contacts. After setting up protection for administrator accounts in [Step 2](protect-your-global-administrator-accounts.md) and user accounts in [Step 3](microsoft-365-secure-sign-in.md) of this solution, you are now ready to begin creating the new accounts and groups that your organization needs.
+If you have chosen the cloud-only identity model, you already have an Azure Active Directory (Azure AD) tenant for your Microsoft 365 subscription to store all of your users, groups, and contacts. After setting up protection for administrator accounts in [Step 2](protect-your-global-administrator-accounts.md) and user accounts in [Step 3](microsoft-365-secure-sign-in.md) of this solution, you are now ready to begin creating the new accounts and groups that your organization needs.
 
 Here are the basic components of cloud-only identity.
  

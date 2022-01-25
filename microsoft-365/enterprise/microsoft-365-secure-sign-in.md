@@ -99,9 +99,9 @@ This table shows the results of enabling MFA with security defaults and Conditio
 | **Conditional Access policies** | If any are enabled, you can’t enable security defaults | If all are disabled, you can enable security defaults  | User specifies during MFA registration  |
 ||||
 
-## Identity and device access configurations
+## Zero Trust identity and device access configurations
 
-Identity and device access settings and policies are recommended prerequisite features and their settings combined with Conditional Access, Intune, and Azure AD Identity Protection policies that determine whether a given access request should be granted and under what conditions. This determination is based on the user account of the sign-in, the device being used, the app the user is using for access, the location from which the access request is made, and an assessment of the risk of the request. This capability helps ensure that only approved users and devices can access your critical resources.
+Zero Trust identity and device access settings and policies are recommended prerequisite features and their settings combined with Conditional Access, Intune, and Azure AD Identity Protection policies that determine whether a given access request should be granted and under what conditions. This determination is based on the user account of the sign-in, the device being used, the app the user is using for access, the location from which the access request is made, and an assessment of the risk of the request. This capability helps ensure that only approved users and devices can access your critical resources.
 
 >[!Note]
 >Azure AD Identity Protection requires Azure AD Premium P2 licenses, which are included with Microsoft 365 E5.
@@ -115,7 +115,7 @@ Identity and device access policies are defined to be used in three tiers:
 
 These tiers and their corresponding configurations provide consistent levels of protection across your data, identities, and devices.
 
-Microsoft highly recommends configuring and rolling out identity and device access policies in your organization, including specific settings for Microsoft Teams, Exchange Online, and SharePoint. For more information, see [Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md).
+Microsoft highly recommends configuring and rolling out Zero Trust identity and device access policies in your organization, including specific settings for Microsoft Teams, Exchange Online, and SharePoint. For more information, see [Zero Trust identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md).
 
 ## Azure AD Identity Protection
 

@@ -91,7 +91,7 @@ Directory synchronization is required for the following features and functionali
   - You have an integrated on-premises smart card or multi-factor authentication solution.
 - Synchronization of photos, thumbnails, conference rooms, and security groups
 
-## Step 1. Directory cleanup tasks
+## 1. Directory cleanup tasks
 
 Before you synchronize your AD DS to your Azure AD tenant, you need to clean up your AD DS.
 
@@ -123,7 +123,7 @@ In your AD DS, complete the following clean-up tasks for each user account that 
    - Zip or Postal Code
    - Country or Region
 
-## Step 2. Directory object and attribute preparation
+## 2. Directory object and attribute preparation
 
 Successful directory synchronization between your AD DS and Microsoft 365 requires that your AD DS attributes are properly prepared. For example, you need to ensure that specific characters aren't used in certain attributes that are synchronized with the Microsoft 365 environment. Unexpected characters do not cause directory synchronization to fail but might return a warning. Invalid characters will cause directory synchronization to fail.
 
@@ -210,7 +210,7 @@ The attributes that you need to prepare are listed here:
   - Unicode is converted to underscore characters.
   - **userPrincipalName** cannot contain any duplicate values in the directory.
 
-## Step 3. Prepare the userPrincipalName attribute
+## 3. Prepare the userPrincipalName attribute
 
 Active Directory is designed to allow the end users in your organization to sign in to your directory by using either **sAMAccountName** or **userPrincipalName**. Similarly, end users can sign in to Microsoft 365 by using the user principal name (UPN) of their work or school account. Directory synchronization attempts to create new users in Azure Active Directory by using the same UPN that's in your AD DS. The UPN is formatted like an email address.
 
@@ -218,13 +218,13 @@ In Microsoft 365, the UPN is the default attribute that's used to generate the e
 
 It's best to align these attributes to reduce confusion. To meet the requirements of single sign-on with Active Directory Federation Services (AD FS) 2.0, you need to ensure that the UPNs in Azure Active Directory and your AD DS match and are using a valid domain namespace.
 
-## Step 4. Add an alternative UPN suffix to AD DS
+## 4. Add an alternative UPN suffix to AD DS
 
 You may need to add an alternative UPN suffix to associate the user's corporate credentials with the Microsoft 365 environment. A UPN suffix is the part of a UPN to the right of the @ character. UPNs that are used for single sign-on can contain letters, numbers, periods, dashes, and underscores, but no other types of characters.
 
 For more information on how to add an alternative UPN suffix to Active Directory, see [Prepare for directory synchronization](https://go.microsoft.com/fwlink/p/?LinkId=525430).
 
-## Step 5. Match the AD DS UPN with the Microsoft 365 UPN
+## 5. Match the AD DS UPN with the Microsoft 365 UPN
 
 If you've already set up directory synchronization, the user's UPN for Microsoft 365 may not match the user's AD DS UPN that's defined in your AD DS. This can occur when a user was assigned a license before the domain was verified. To fix this, use [PowerShell to fix duplicate UPN](https://go.microsoft.com/fwlink/p/?LinkId=396730) to update the user's UPN to ensure that the Microsoft 365 UPN matches the corporate user name and domain. If you are updating the UPN in the AD DS and would like it to synchronize with the Azure Active Directory identity, you need to remove the user's license in Microsoft 365 prior to making the changes in AD DS.
 
@@ -232,4 +232,4 @@ Also see [How to prepare a non-routable domain (such as .local domain) for direc
 
 ## Next steps
 
-If you have done steps 1 through 5 above, see [Set up directory synchronization](set-up-directory-synchronization.md).
+After you have done 1 through 5 above, see [Set up directory synchronization](set-up-directory-synchronization.md).
