@@ -56,8 +56,8 @@
 
     - name: Prebuilt AI models
       items:
-            - name: Classify documents by using a prebuilt model 
-              href: index.md
+            - name: Classify documents using a prebuilt model 
+              href: /contentunderstanding/prebuilt-models?branch=prebuilt-models-working
             - name: Apply a retention label 
               href: apply-a-retention-label-to-a-model.md
 
