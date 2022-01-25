@@ -28,7 +28,7 @@ description: "Get step-by-step tools to plan, migrate, and implement the feature
 Microsoft 365 and Office 365 setup guides give you tailored guidance and resources for planning and deploying your tenant, apps, and services. These guides are created using the same best practices that [Microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) onboarding specialists share in individual interactions, and they're available to all admins within the Microsoft 365 admin center. They give information on product setup, enabling security features, deploying collaboration tools, and provide scripts to speed up advanced deployments.
 
 > [!NOTE]
-> You must be assigned an admin role like Global Reader to access the Microsoft 365 setup guides. Only admins with the Global Administrator role can use the guides to change settings in the tenant. 
+> You must be assigned an admin role like Global Reader to access the Microsoft 365 setup guides. Only admins with the Global Administrator role can use the guides to change settings in the tenant.
 
 ## How to access setup guides in the Microsoft 365 admin center
 
@@ -80,11 +80,11 @@ The [Windows Virtual Desktop setup guide](https://aka.ms/wvdsetupguide) provides
 
 Microsoft Edge has been rebuilt from the ground up to bring you world-class compatibility and performance, the security and privacy you deserve, and new features designed to bring you the best of the web.
 
-The [Microsoft Edge setup guide](https://aka.ms/edgeadvisor) will help you configure Enterprise Site Discovery to see which sites accessed in your org might need to use IE mode, review and configure important security features, configure privacy policies and compliance policies to meet your org's requirements, and manage web access on your devices. You can download Microsoft Edge to individual devices, or we'll show you how to deploy to multiple users in your org with Group Policy, Configuration Manager, or Microsoft Intune.
+The [Microsoft Edge setup guide](https://aka.ms/edgeadvisoradmin) will help you configure Enterprise Site Discovery to see which sites accessed in your org might need to use IE mode, review and configure important security features, configure privacy policies and compliance policies to meet your org's requirements, and manage web access on your devices. You can download Microsoft Edge to individual devices, or we'll show you how to deploy to multiple users in your org with Group Policy, Configuration Manager, or Microsoft Intune.
 
 ### Configure IE mode for Microsoft Edge
 
-If you've already deployed Microsoft Edge and only want to configure IE mode, the [Configure IE mode for Microsoft Edge guide](https://aka.ms/configureiemode) will give you scripts to automate the configuration of Enterprise Site Discovery. You'll also get IE mode recommendations from a cloud-based tool that will help you create an Enterprise Mode Site List to deploy to your users.
+If you've already deployed Microsoft Edge and only want to configure IE mode, the [Configure IE mode for Microsoft Edge guide](https://aka.ms/configureiemodeadmin) will give you scripts to automate the configuration of Enterprise Site Discovery. You'll also get IE mode recommendations from a cloud-based tool that will help you create an Enterprise Mode Site List to deploy to your users.
 
 ### Microsoft Search setup guide
 
@@ -116,7 +116,7 @@ Upgrade to an alternative sign-in approach that allows users to access their dev
 - The Microsoft Authenticator app
 - Security keys
 
-Use the [Plan your passwordless deployment](https://aka.ms/passwordlesssetup) guide to discover the best passwordless authentication methods to use and receive guidance on how to deploy them.
+Use the [Plan your passwordless deployment](https://aka.ms/passwordlesssetup) guide to discover the best passwordless authentication methods to use and receive guidance on how to deploy them.
 
 ### Plan your self-service password reset (SSPR) deployment
 
@@ -140,8 +140,8 @@ With the [Microsoft Intune setup guide](https://aka.ms/intunesetupguide), you'll
 
 The [Microsoft Defender for Endpoint setup guide](https://aka.ms/mdatpsetup) provides instructions that will help your enterprise network prevent, detect, investigate, and respond to advanced threats. Make an informed assessment of your organization's vulnerability and decide which deployment package and configuration methods are best.
 
->[!NOTE]
->A Microsoft Volume License is required for Microsoft Defender for Endpoint.
+> [!NOTE]
+> A Microsoft Volume License is required for Microsoft Defender for Endpoint.
 
 ### Exchange Online Protection setup guide
 
@@ -155,7 +155,7 @@ The [Microsoft Defender for Office 365 setup guide](https://aka.ms/oatpsetup) sa
 
 ### Microsoft Defender for Identity setup guide
 
-The [Microsoft Defender for Identity setup guide](https://aka.ms/DefenderforIdentitysetup) provides security solution set-up guidance to identify, detect, and investigate advanced threats that might compromise user identities. These include detecting suspicious user activities and malicious insider actions directed at your organization. You’ll create a Defender for Identity instance, connect to your organization's Active Directory, and then set up sensors, alerts, notifications, and configure your unique portal preferences. 
+The [Microsoft Defender for Identity setup guide](https://aka.ms/DefenderforIdentitysetup) provides security solution set-up guidance to identify, detect, and investigate advanced threats that might compromise user identities. These include detecting suspicious user activities and malicious insider actions directed at your organization. You’ll create a Defender for Identity instance, connect to your organization's Active Directory, and then set up sensors, alerts, notifications, and configure your unique portal preferences.
 
 ### Microsoft information protection setup guide
 
@@ -165,9 +165,9 @@ Get an overview of the capabilities you can apply to your Information Protection
 
 The [Microsoft Information governance setup guide](https://aka.ms/migsetupguide) provides you with the information you'll need to set up and manage your organization's governance strategy, to ensure that your data is classified and managed according to the specific lifecycle guidelines you set. With this guide, you'll learn how to create, auto-apply, or publish labels, label policies, and retention policies that are applied to your organization's reusable content and compliance records. You'll also get information on importing CSV files with a file plan for bulk scenarios or for applying them manually to individual documents.
 
-### Microsoft Cloud App Security setup guide
+### Microsoft Defender for Cloud Apps setup guide
 
-The [Microsoft Cloud App Security setup guide](https://aka.ms/cloudappsecuritysetup) provides easy to follow deployment and management guidance to set up your Cloud Discovery solution. With Cloud Discovery, you'll integrate your supported security apps, and then you'll use traffic logs to dynamically discover and analyze the cloud apps that your organization uses. You'll also set up features available through the Cloud App Security solution, including threat detection policies to identify high-risk use, information protection policies to define access, and real-time session controls to monitor activity. With these features, your environment gets enhanced visibility, control over data movement, and analytics to identify and combat cyberthreats across all your Microsoft and third party cloud services.
+The [Microsoft Defender for Cloud Apps setup guide](https://aka.ms/cloudappsecuritysetup) provides easy to follow deployment and management guidance to set up your Cloud Discovery solution. With Cloud Discovery, you'll integrate your supported security apps, and then you'll use traffic logs to dynamically discover and analyze the cloud apps that your organization uses. You'll also set up features available through the Defender for Cloud Apps solution, including threat detection policies to identify high-risk use, information protection policies to define access, and real-time session controls to monitor activity. With these features, your environment gets enhanced visibility, control over data movement, and analytics to identify and combat cyberthreats across all your Microsoft and third party cloud services.
 
 ## Guides for collaboration
 
@@ -190,6 +190,12 @@ The [Microsoft Teams setup guide](https://aka.ms/teamsguidance) provides your or
 ### Microsoft Teams for Education setup guide
 
 The [Microsoft Teams for Education setup guide](https://aka.ms/teamsedusetup) provides your school with guidance that brings collaborative classrooms, conversations, meetings, files, and apps together in one place. The guide also provides instructions to prepare, plan, and configure Teams for your school. After your deployment is complete, use built-in tools to configure who can create teams, and optionally create teams yourself while populating members with a .csv file.
+
+### Integrate Microsoft LTI apps with your LMS
+
+For teachers to work effectively and students to stay organized, they need a single sign-on to one place to collaborate with all their learning materials, assignments, and applications at their fingertips. Microsoft Learning Tools Interoperability (LTI) apps bring the best of Microsoft tools directly into your learning management system (LMS), so that students and teacher can focus on study, not finding files or building tools.
+
+If you are an admin of a LMS and want to access Microsoft tools directly from within your LMS, use our [Integrate Microsoft LTI apps with your LMS](https://aka.ms/lmsintegrationguide) Integrate Microsoft LTI apps with your LMS guide to get started. These tools currently include Microsoft Teams classes and Microsoft Teams meetings.
 
 ### SharePoint setup guide
 

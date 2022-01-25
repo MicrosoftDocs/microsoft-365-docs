@@ -22,7 +22,8 @@ ms.collection: M365-security-compliance
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -82,7 +83,7 @@ See [Address false positives/negatives in Microsoft Defender for Endpoint](defen
 The current exclusion options are:
 
 1.	Setting up a custom allow indicator.
-2.	Using IP exclusions: `Add-MpPreference -Exclusion IpAddress 192.168.1.1`
+2.	Using IP exclusions: `Add-MpPreference -ExclusionIpAddress 192.168.1.1`
 3.	Excluding an entire process. For more information, see [Microsoft Defender Antivirus exclusions](configure-exclusions-microsoft-defender-antivirus.md). 
 
 

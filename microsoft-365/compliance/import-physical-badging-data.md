@@ -219,11 +219,11 @@ After you create the physical badging connector and push your physical badging d
 
    ![Status flyout page for physical badging connector.](..\media\PhysicalBadgingStatusFlyout.png)
 
-3. Under **Last import**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about each time the script runs and uploads the data from the CSV file to the Microsoft cloud.
+3. Under **Last import**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about each time the script runs and uploads the data from the JSON file to the Microsoft cloud.
 
-   ![Physical badging connector log file displays number rows from JSON file that were uploaded.](..\media\PhysicalBadgingConnectorLogFile.png)
+   ![Physical badging connector log file displays number of objects from the JSON file that were uploaded.](..\media\PhysicalBadgingConnectorLogFile.png)
 
-   The **RecordsSaved** field indicates the number of rows in the CSV file that uploaded. For example, if the CSV file contains four rows, then the value of the **RecordsSaved** fields is 4, if the script successfully uploaded all the rows in the CSV file.
+   The **RecordsSaved** field indicates the number of objects in the JSON file that uploaded. For example, if the JSON file contains four objects, then the value of the **RecordsSaved** fields is 4, if the script successfully uploaded all the objects in the JSON file.
 
 If you've haven't run the script in Step 4, a link to download the script is displayed under **Last import**. You can download the script and then follow the steps in Step 4 to run it.
 
