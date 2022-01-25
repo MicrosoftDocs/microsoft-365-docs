@@ -57,6 +57,8 @@ Endpoint DLP supports monitoring of these file types. DLP audits the activities 
 - PowerPoint files
 - Excel files
 - PDF files
+- .arj files
+- .zip files
 - .csv files
 - .tsv files
 - .txt files
