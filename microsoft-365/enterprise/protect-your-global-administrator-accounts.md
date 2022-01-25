@@ -89,7 +89,7 @@ From this moment onward, you sign in with the dedicated global administrator acc
 > [!NOTE]
 > This does require additional steps to sign out as your everyday user account and sign in with a dedicated global administrator account. But this only needs to be done occasionally for global administrator operations. Consider that recovering your Microsoft 365 subscription after a global administrator account breach requires a lot more steps.
   
-## Step 2. Configure multi-factor authentication for your dedicated Microsoft 365 global administrator accounts
+## 2. Configure multi-factor authentication for your dedicated Microsoft 365 global administrator accounts
 
 Multi-factor authentication (MFA) requires additional information beyond the account name and password. Microsoft 365 supports these additional verification methods:
   
