@@ -645,8 +645,6 @@
 
 #### [SIEM integration]()
 ##### [Integrate SIEM tools with Microsoft Defender for Endpoint](configure-siem.md)
-##### [Microsoft Defender for Endpoint detection fields](api-portal-mapping.md)
-##### [Pull detections using SIEM REST API](pull-alerts-using-rest-api.md)
 ##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
 
 #### [Partners & APIs]()
