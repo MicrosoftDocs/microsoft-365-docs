@@ -38,8 +38,8 @@ Microsoft 365 Lighthouse lets you view compliance policies across your tenants i
 
 3. From the **Filters** drop-down list, select an operating system/platform.
 
-> [!NOTE]
-> You can only compare policies with the same operating system/platform.
+   > [!NOTE]
+   > You can only compare policies with the same operating system/platform.
 
 4. From the filtered list, select up to three policies you want to compare.
 
