@@ -316,7 +316,12 @@ Here is an example how to generate the PAC files:
 
 1. Go to the [Verizon URL](/rest/api/cdn/edge-nodes/list#code-try-0) and download the resulting JSON (copy paste it into a file like cdnedgenodes.json)
 2. Put the file into the same folder as the script.
-3. Run **.\Get-TLEPacFile.ps1 -Instance Worldwide -Type 2 -TenantName contoso -CdnEdgeNodesFilePath .\cdnedgenodes.json -FilePath TLE.pac**  (change out the tenant name for something else if you want the SPO URLs). This is Type 2, so **Optimize** and **Allow** (Type 1 is Optimize only)
+3. In a PowerShell window, run the following command. Change out the tenant name for something else if you want the SPO URLs. This is Type 2, so **Optimize** and **Allow** (Type 1 is Optimize only).
+
+```powershell
+.\Get-TLEPacFile.ps1 -Instance Worldwide -Type 2 -TenantName <contoso> -CdnEdgeNodesFilePath .\cdnedgenodes.json -FilePath TLE.pac
+```
+
 4. The TLE.pac file will contain all the namespaces and IPs (IPv4/IPv6).
 
 The script will automatically parse the Azure list based on the [download URL](https://www.microsoft.com/download/details.aspx?id=56519) and keys off of **AzureFrontDoor.Frontend**, so there is no need to get that manually.
