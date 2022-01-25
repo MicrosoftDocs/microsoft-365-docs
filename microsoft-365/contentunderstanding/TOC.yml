@@ -5,7 +5,7 @@
  
     - name: Custom AI models
       items:
-            - name: Document understanding models
+            - name: Document understanding
               items:
                 - name: Document understanding overview
                   href: document-understanding-overview.md
@@ -43,7 +43,7 @@
                   href: leverage-term-store-taxonomy.md
                 - name: SharePoint Syntex accessibility mode
                   href: accessibility-mode.md
-            - name: Form processing models
+            - name: Form processing
               items:
                 - name: Form processing overview 
                   href: form-processing-overview.md
@@ -56,20 +56,20 @@
 
     - name: Prebuilt AI models
       items:
-            - name: Use prebuilt models to classify documents 
+            - name: Classify documents by using a prebuilt model 
               href: index.md
             - name: Apply a retention label 
               href: apply-a-retention-label-to-a-model.md
-
-    - name: Metadata search
-      items: 
-        - name: Search for metadata in document libraries 
-          href: metadata-search.md
 
     - name: Content assembly
       items: 
         - name: Create documents using content assembly 
           href: content-assembly.md
+     
+    - name: Metadata search
+      items: 
+        - name: Search for metadata in document libraries 
+          href: metadata-search.md
      
     - name: Taxonomy
       items:
