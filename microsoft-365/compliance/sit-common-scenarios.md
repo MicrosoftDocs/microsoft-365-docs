@@ -74,3 +74,27 @@ Contoso Bank have noticed some of their employees share Credit card numbers with
 1. Add a new pattern
 1. In the primary element, select regular expression
 1. Define the regular expression which includes ‘/’ as part of the regular expression and then choose validator and select luhncheck or func_credit_card to ensure the regex also passes the LuhnCheck.
+
+## Ignore a disclaimer notice
+
+Lot of organizations add legal disclaimers, disclosure statements, signatures, or other information to the top or bottom of email messages that enter or leave their organizations and in some cases even within the organizations. Apart from that, the employees themselves put signatures including – motivational quotes, social messages, etc. A disclaimer or signature can contain the trigger words that are present in lexicon of a CC and hence generating a lot of false positives.  
+
+For example, a typical disclaimer might contain words like sensitive, or confidential and a policy looking for sensitive info will detect it as violation leading to lot of false positives. Thus providing customers with an option to ignore disclaimer can reduce false positives and increase the efficiency of compliance team.
+
+### Example of disclaimer 
+
+Consider the following disclaimer:
+
+IMPORTANT NOTICE: This e-mail message is intended to be received only by persons entitled to receive the confidential information it may contain. E-mail messages to clients of Contoso may contain information that is confidential and legally privileged. Please do not read, copy, forward, or store this message unless you are an intended recipient of it. If you have received this message in error, please forward it to the sender and delete it completely from your computer system.
+
+If the SIT has been configured to detect a keyword confidential, then this will invoke a match every time a disclaimer is used in the email, leading to a lot of false positives.
+
+### Ignore disclaimer using prefix and suffix in SIT
+
+One way to ignore the instances of keywords in the disclaimer by excluding the instances of keywords which are preceded by a prefix and followed by a suffix.
+
+Consider this disclaimer:
+
+IMPORTANT NOTICE: This e-mail message is intended to be received only by persons entitled to receive the confidential information it may contain. E-mail messages to clients of Contoso may contain information that is confidential and legally privileged. Please do not read, copy, forward, or store this message unless you are an intended recipient of it. If you have received this message in error, please forward it to the sender and delete it completely from your computer system.
+
+We have two instances of the keyword “confidential” and if we configure the SIT to ignore instances of this keyword preceded by prefixes (underlined in red) and followed by suffixes (underlined in green), then we can achieve ignoring disclaimers in most of the cases.
