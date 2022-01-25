@@ -78,7 +78,7 @@
           href: communication-compliance-reports-audits.md
         - name: Communication compliance with SIEM solutions 
           href: communication-compliance-siem.md
-        - name: Case study - Contoso quickly configures an inappropriate content policy 
+        - name: Case study - Contoso quickly configures an inappropriate text policy 
           href: communication-compliance-case-study.md
     - name: Insider risk management
       items:
@@ -297,6 +297,8 @@
               href: exchange-online-secures-email-secrets.md
             - name: How Exchange Online uses TLS to secure email connections in Office 365
               href: exchange-online-uses-tls-to-secure-email-connections.md
+            - name: How SMTP DANE works
+              href: how-smtp-dane-works.md  
             - name: BitLocker and Distributed Key Manager (DKM) for Encryption
               href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
             - name: Legacy OME
@@ -317,6 +319,8 @@
           href: tls-1-2-in-office-365-gcc.md
         - name: TLS 1.2 in Office 365
           href: prepare-tls-1.2-in-office-365.md
+        - name: Office TLS Certificate Changes
+          href: encryption-office-365-tls-certificates-changes.md 
     - name: Data loss prevention (DLP)
       items: 
         - name: Learn about DLP
@@ -449,7 +453,7 @@
           href: faqimporting-pst-files-to-office-365.yml
     - name: Archive third-party data
       items: 
-        - name: Overview of archiving third-party data
+        - name: Learn about connectors for third-party data
           href: archiving-third-party-data.md
         - name: Microsoft data connectors
           items:  
