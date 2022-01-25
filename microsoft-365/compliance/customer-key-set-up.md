@@ -161,9 +161,10 @@ To complete the process, run the Register-AzResourceProvider command. Complete t
    Register-AzResourceProvider -ProviderNamespace Microsoft.KeyVault
    ```
 
-> [!TIP] Before moving on, make sure the 'RegistrationState' is set to 'Registered' like the image below.
+> [!TIP]
+> Before moving on, make sure the 'RegistrationState' is set to 'Registered' like the image below.
 >
-> ![Encryption ciphers for Exchange Online Customer Key.](../media/MandatoryRetentionPeriod.png)
+> ![Mandatory Retention Period](../media/MandatoryRetentionPeriod.png)
 
 ### Create a premium Azure Key Vault in each subscription
 
@@ -247,7 +248,8 @@ You'll need to define three separate sets of permissions for each key vault, dep
    Get-AzKeyVault -VaultName <vault name> | fl
    ```  
 
-> [!Tip] Before moving on, make the permissions are configured properly for the key vault, the *Permissions to Keys* will return **wrapKey, unwrapKey, get**. Make sure to correct the permissions to the correct service you are onboarding to. The *Display Name* for each service is listed below:  
+> [!Tip]
+> Before moving on, make the permissions are configured properly for the key vault, the *Permissions to Keys* will return **wrapKey, unwrapKey, get**. Make sure to correct the permissions to the correct service you are onboarding to. The *Display Name* for each service is listed below:  
   >
   > - Exchange Online and Skype for Business: *Office 365 Exchange Online*
   > - SharePoint Online, OneDrive, and Teams files: *Office 365 SharePoint Online*
@@ -278,10 +280,10 @@ To enable Soft Delete on your key vaults, complete these steps:
    Get-AzKeyVault -VaultName <vault name> | fl
    ```
 
-> [!TIP] Before moving on, make sure the 'Soft Delete Enabled?' is set to 'True' like the image below.
+> [!TIP]
+> Before moving on, make sure the 'Soft Delete Enabled?' is set to 'True' like the image below.
 >
->
-> <img src="../media/SoftDeleteEnabled.png" alt="drawing" width="400"/>
+> <img src="../media/SoftDeleteEnabled.png" alt="SoftDelete" width="400"/>
 
 ### Add a key to each key vault either by creating or importing a key
 
@@ -330,7 +332,9 @@ To check the recovery level of a key, in Azure PowerShell, run the Get-AzKeyVaul
 (Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes
 ```
 
-> [!Tip] Before moving on, If the _Recovery Level_ property returns anything other than a value of **Recoverable+ProtectedSubscription**, ensure that you have put the subscription on the Do Not Cancel list and that you have soft delete enabled on each of your key vaults.
+> [!Tip]
+> Before moving on, If the _Recovery Level_ property returns anything other than a value of **Recoverable+ProtectedSubscription**, ensure that you have put the subscription on the Do Not Cancel list and that you have soft delete enabled on each of your key vaults.
+>
 > <img src="../media/RecoveryLevel.png" alt="drawing" width="500"/>
   
 ### Back up Azure Key Vault
