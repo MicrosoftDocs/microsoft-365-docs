@@ -88,7 +88,7 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
 12. Now we need to add permission for mailbox migration, select Add a permission
 
-13. In the Request API permissions windows, select APIs my organization uses, and search for office 365 exchange online, select it.
+13. In the Request API permissions windows, select APIs my organization uses, search for Office 365 Exchange Online, and select it.
 
     ![Select API](../media/tenant-to-tenant-mailbox-move/0b4dc1eea3910e9c475724d9473aca58.png)
 
