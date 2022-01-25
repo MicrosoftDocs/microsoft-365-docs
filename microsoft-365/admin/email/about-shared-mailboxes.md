@@ -57,7 +57,7 @@ Before you [create a shared mailbox](create-a-shared-mailbox.md), here are some 
 
 - **Message deletion:** Unfortunately, you can't prevent people from deleting messages in a shared mailbox. The only way around this is to create a Microsoft 365 group instead of a shared mailbox. A group in Outlook is like a shared mailbox. For a comparison of the two, see [Compare groups](../create-groups/compare-groups.md). To learn more about groups, see [Learn more about groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
-- **Multi-Geo** In a multi-geo environment, Shared mailboxes need to be licensed the same way a user mailbox is licensed. Note that cross-geo mailbox auditing is not supported. For example, if a user is assigned permissions to access a shared mailbox in a different geo location, mailbox actions performed by that user are not logged in the mailbox audit log of the shared mailbox. 
+- **Multi-Geo** In a multi-geo environment, shared mailboxes need to be licensed the same way a user mailbox is licensed. Note that cross-geo mailbox auditing is not supported. For example, if a user is assigned permissions to access a shared mailbox in a different geo location, mailbox actions performed by that user are not logged in the mailbox audit log of the shared mailbox. 
 
 
 > [!NOTE]
