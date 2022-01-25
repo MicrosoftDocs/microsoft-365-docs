@@ -92,6 +92,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
     - For 6.8: 2.6.32-642.*
     - For 6.9: 2.6.32-696.*
     - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.41.2:
+    
         |||||
         |--|--|--|--|
         |2.6.32-754.2.1.el6.x86_64|2.6.32-754.17.1.el6.x86_64|2.6.32-754.29.1.el6.x86_64|2.6.32-754.3.5.el6.x86_64|
