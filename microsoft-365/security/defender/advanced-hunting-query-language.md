@@ -31,7 +31,13 @@ ms.technology: m365d
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
-Advanced hunting is based on the [Kusto query language](/azure/kusto/query/). You can use Kusto operators and statements to construct queries that locate information in a specialized [schema](advanced-hunting-schema-tables.md). To understand these concepts better, run your first query.
+Advanced hunting is based on the [Kusto query language](/azure/kusto/query/). You can use Kusto operators and statements to construct queries that locate information in a specialized [schema](advanced-hunting-schema-tables.md). 
+
+Watch this short video to learn some handy Kusto query language basics.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfJ]
+ 
+To understand these concepts better, run your first query.
 
 ## Try your first query
 
