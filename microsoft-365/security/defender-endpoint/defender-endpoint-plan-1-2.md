@@ -14,7 +14,9 @@ ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH  
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365-initiative-defender-endpoint
 ---
 
 # Microsoft Defender for Endpoint Plan 1 and Plan 2
