@@ -17,7 +17,7 @@ ms.collection:
   - M365-identity-device-management
   - M365-security-compliance
   - m365solution-identitydevice
-  - m365solution-overview
+  - m365solution-scenario
 ms.technology: mdo
 ---
 # Continuous access evaluation for Microsoft 365

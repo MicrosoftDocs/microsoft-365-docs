@@ -83,7 +83,7 @@ For more information, see [Microsoft 365 Defender Streaming API](../defender/str
 
 ## SIEM API
 
-When you enable security information and event management (SIEM) integration, it allows you to pull detections from Microsoft Defender Security Center using your SIEM solution or by connecting directly to the detections REST API. This activates the SIEM connector access details section with pre-populated values and an application is created under your Azure Active Directory (Azure AD) tenant. For more information, see [SIEM integration](enable-siem-integration.md).
+When you enable security information and event management (SIEM) integration, it allows you to pull detections from Microsoft 365 Defender using your SIEM solution or by connecting directly to the detections REST API. This activates the SIEM connector access details section with pre-populated values and an application is created under your Azure Active Directory (Azure AD) tenant. 
 
 ## Related topics
 
