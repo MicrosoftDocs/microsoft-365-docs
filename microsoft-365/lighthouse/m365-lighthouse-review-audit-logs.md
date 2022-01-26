@@ -36,16 +36,16 @@ To view audit logs, you must have one of the following permissions:
 
 1. In the left navigation pane in Lighthouse, select **Audit logs**.
 
-> [!NOTE]
-> It might take up to 1 hour to see new logs. Go to the respective service to see the most recent changes.
+    > [!NOTE]
+    > It might take up to 1 hour to see new logs. Go to the respective service to see the most recent changes.
 
 2. To filter the logs, refine the list using the following options:
 
-- **Date range** - Previous month, week, or day.
-- **Tenants** - Tenant tags or customer tenant names.
-- **Area** - The area where the action was initiated. The area corresponds to the entries in the left navigation bar.
-- **Activity** - Microsoft 365 activity type that corresponds to the action taken. For more information, see Activity Types table.
-- **Initiated by** -  Who initiated the action.
+    - **Date range** - Previous month, week, or day.
+    - **Tenants** - Tenant tags or customer tenant names.
+    - **Area** - The area where the action was initiated. The area corresponds to the entries in the left navigation bar.
+    - **Activity** - Microsoft 365 activity type that corresponds to the action taken. For more information, see Activity Types table.
+    - **Initiated by** -  Who initiated the action.
 
 3. Select a log from the list to see full details including the **Request** body.
 
