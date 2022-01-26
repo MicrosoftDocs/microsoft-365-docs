@@ -24,7 +24,7 @@ ms.collection: M365-security-compliance
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -49,11 +49,11 @@ Controlled folder access works with a list of trusted apps. Apps that are includ
 
 Apps are added to the list based upon their prevalence and reputation. Apps that are highly prevalent throughout your organization and that have never displayed any behavior deemed malicious are considered trustworthy. Those apps are added to the list automatically.
 
-Apps can also be added manually to the trusted list by using Configuration Manager or Intune. Additional actions can be performed from the Security Center Console. 
+Apps can also be added manually to the trusted list by using Configuration Manager or Intune. Additional actions can be performed from the Microsoft 365 Defender portal. 
 
 ## Why controlled folder access is important
 
-Controlled folder access is especially useful in helping to protect your documents and information from [ransomware](https://www.microsoft.com/wdsi/threats/ransomware). In a ransomware attack, your files can get encrypted and held hostage. With controlled folder access in place, a notification appears on the computer where an app attempted to make changes to a file in a protected folder. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information. You can also enable the rules individually to customize what techniques the feature monitors.
+Controlled folder access is especially useful in helping to protect your documents and information from [ransomware](https://www.microsoft.com/wdsi/threats/ransomware). In a ransomware attack, your files can get encrypted and held hostage. With controlled folder access in place, a notification appears on the computer where an app attempted to make changes to a file in a protected folder. You can [customize the notification](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules) with your company details and contact information. You can also enable the rules individually to customize what techniques the feature monitors.
 
 The [protected folders](#review-controlled-folder-access-events-in-windows-event-viewer) include common system folders (including boot sectors), and you can [add more folders](customize-controlled-folders.md#protect-additional-folders). You can also [allow apps](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) to give them access to the protected folders.
 

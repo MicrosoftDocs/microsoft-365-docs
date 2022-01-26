@@ -23,7 +23,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -41,7 +41,7 @@ There are three ways you can create indicators for files:
 
 It's important to understand the following prerequisites prior to creating indicators for files:
 
-- This feature is available if your organization uses **Microsoft Defender Antivirus (in active mode)** and **Cloud-based protection is enabled**. For more information, see [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- This feature is available if your organization uses **Microsoft Defender Antivirus (in active mode)** and **Cloud-based protection is enabled**. For more information, see [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 
 - The Antimalware client version must be 4.18.1901.x or later. See [Monthly platform and engine versions](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
@@ -50,17 +50,17 @@ It's important to understand the following prerequisites prior to creating indic
    >[!NOTE]
     >Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work. 
 
-- To start blocking files, you first need to [turn on the "block or allow" feature](advanced-features.md) in Settings.
+- To start blocking files, you first need to [turn on the "block or allow" feature](advanced-features.md) in Settings.
 
-This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including .exe and .dll files. The coverage will be extended over time.
+This feature is designed to prevent suspected malware (or potentially malicious files) from being downloaded from the web. It currently supports portable executable (PE) files, including .exe and .dll files. The coverage will be extended over time.
 
 ## Create an indicator for files from the settings page
 
-1. In the navigation pane, select **Settings** \> **Endpoints** \> **Indicators** (under **Rules**).
+1. In the navigation pane, select **Settings** \> **Endpoints** \> **Indicators** (under **Rules**).
 
-2. Select the **File hashes** tab.
+2. Select the **File hashes** tab.
 
-3. Select **Add indicator**.
+3. Select **Add indicator**.
 
 4. Specify the following details:
     - Indicator - Specify the entity details and define the expiration of the indicator.
@@ -71,7 +71,7 @@ This feature is designed to prevent suspected malware (or potentially malicious 
 
 ## Create a contextual indicator from the file details page
 
-One of the options when taking [response actions on a file](respond-file-alerts.md) is adding an indicator for the file. When you add an indicator hash for a file, you can choose to raise an alert and block the file whenever a device in your organization attempts to run it.
+One of the options when taking [response actions on a file](respond-file-alerts.md) is adding an indicator for the file. When you add an indicator hash for a file, you can choose to raise an alert and block the file whenever a device in your organization attempts to run it.
 
 Files automatically blocked by an indicator won't show up in the file's Action center, but the alerts will still be visible in the Alerts queue.
 

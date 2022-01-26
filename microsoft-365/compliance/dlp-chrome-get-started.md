@@ -36,8 +36,8 @@ To use Microsoft Compliance Extension, the device must be onboarded into endpoin
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
 - [Learn about endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
-- [Onboarding tools and methods for Windows 10 devices](dlp-configure-endpoints.md)
-- [Configure device proxy and internet connection settings for Endpoint DLP](endpoint-dlp-configure-proxy.md)
+- [Onboarding tools and methods for Windows 10 devices](device-onboarding-overview.md)
+- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
 - [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 
 ### SKU/subscriptions licensing
@@ -70,6 +70,25 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 - Security reader
 - Reports reader
 
+#### Roles and Role Groups in preview
+
+There are roles and role groups in preview that you can test out to fine tune your access controls.
+
+Here's a list of Microsoft Information Protection (MIP) roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Information Protection Admin
+- Information Protection Analyst
+- Information Protection Investigator
+- Information Protection Reader
+
+Here's a list of MIP role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Information Protection
+- Information Protection Admins
+- Information Protection Analysts
+- Information Protection Investigators
+- Information Protection Readers
+
 ### Overall installation workflow
 
 Deploying Microsoft Compliance Extension is a multi-phase process. You can choose to install on one machine at a time, or use Microsoft Endpoint Manager or Group Policy for organization-wide deployments.
@@ -90,8 +109,8 @@ If you are rolling out the Microsoft Compliance Extension to all your monitored 
 
 1. Use the procedures in these topics to onboard your devices:
     1. [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
-    1. [Onboarding tools and methods for Windows 10 devices](dlp-configure-endpoints.md)
-    1. [Configure device proxy and internet connection settings for Endpoint DLP](endpoint-dlp-configure-proxy.md)
+    1. [Onboarding Windows 10 and Windows 11 devices](device-onboarding-overview.md)
+    1. [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
 
 ### Basic Setup Single Machine Selfhost
 

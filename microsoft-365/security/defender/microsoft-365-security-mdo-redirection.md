@@ -17,7 +17,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365initiative-m365-defender
+ms.custom: 
+- admindeeplinkDEFENDER
+- admindeeplinkEXCHANGE
 ms.topic: article
 ms.technology: m365d
 ---
@@ -34,7 +36,7 @@ This article explains how to route accounts to Microsoft 365 Defender by enablin
 
 ## What to expect
 
-Once automatic redirection is enabled and active, users accessing the security-related capabilities in  Office 365 Security and Compliance (protection.office.com), will be automatically routed to Microsoft 365 Defender (security.microsoft.com).
+Once automatic redirection is enabled and active, users accessing the security-related capabilities in  Office 365 Security and Compliance (protection.office.com), will be automatically routed to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
 
 Learn more about what's changed: [Microsoft Defender for Office 365 in Microsoft 365 Defender](microsoft-365-security-center-mdo.md).
 
@@ -42,7 +44,7 @@ With automatic redirection turned on, users will be routed to Microsoft 365 Defe
 
 These include capabilities in the Threat Management section, Alerts (View Alerts and Alert Policies), and the Threat Management dashboard and reports. Items in the Office 365 Security and Compliance Center that are not related to security are not redirected to Microsoft 365 Defender.
 
-Compliance-related items can be found in the Microsoft 365 compliance center, and mail-flow related items can be found in the Exchange admin center.
+Compliance-related items can be found in the Microsoft 365 compliance center, and mail-flow related items can be found in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
 All other capabilities, whether compliance-related or capabilities that serve both are not affected by redirection.
 
@@ -50,11 +52,11 @@ All other capabilities, whether compliance-related or capabilities that serve bo
 
 As of the beginning of Oct 2021, portal redirection is now done automatically, or by default. However, if it needs to be disabled temporarily, those steps will follow.
 
-<!--To start routing accounts to Microsoft 365 Defender at security.microsoft.com:
+<!--To start routing accounts to Microsoft 365 Defender at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">security.microsoft.com</a>:
 
 1. Make sure you're a global administrator or have security administrator permissions in Azure Active directory.
-2. [Sign in](https://security.microsoft.com/) to Microsoft 365 Defender.
-3. Navigate to **Settings** > **Email & collaboration** > **Portal redirection**.  
+2. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
+3. Go to **Settings** > **Email & collaboration** > **Portal redirection**.  
 4. Toggle the Automatic redirection setting to **On**.
 5. Click **Enable** to apply automatic redirection to Microsoft 365 Defender.
 
@@ -67,9 +69,9 @@ If something isn't working for you or if there's anything you're unable to compl
 
 To revert to the former portal:
 
-1. [Sign in](https://security.microsoft.com/) to Microsoft 365 Defender as a global administrator or using and account with security administrator permissions in Azure Active directory.
+1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> as a global administrator or using and account with security administrator permissions in Azure Active directory.
 
-2. Navigate to **Settings** > **Email & collaboration** > **Portal redirection**.
+2. Go to **Settings** > **Email & collaboration** > **Portal redirection**.
 
 3. Toggle the Automatic redirection setting to **Off**.
 

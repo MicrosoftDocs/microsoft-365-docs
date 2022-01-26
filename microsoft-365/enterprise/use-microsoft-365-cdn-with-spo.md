@@ -977,10 +977,12 @@ It is important to note that SharePoint Online does not support item-level permi
 |User 3     |Does not have access to folder1, but is granted explicit permission to access image1.jpg in SharePoint Online         |Can access the asset image1.jpg directly from SharePoint Online, but not from the CDN         |
 |User 4     |Has access to folder1, but has been explicitly denied access to image1.jpg in SharePoint Online         |Cannot access the asset from SharePoint Online, but can access the asset from the CDN despite being denied access to the file in SharePoint Online         |
 
-<a name="CDNTroubleshooting"> </a>
+<a name="CDNTroubleshooting"></a>
+
 ## Troubleshooting the Office 365 CDN
 
-<a name="CDNConfirm"> </a>
+<a name="CDNConfirm"></a>
+
 ### How do I confirm that assets are being served by the CDN?
 
 Once you have added links to CDN assets to a page, you can confirm that the asset is being served from the CDN by browsing to the page, right clicking on the image once it has rendered and reviewing the image URL.

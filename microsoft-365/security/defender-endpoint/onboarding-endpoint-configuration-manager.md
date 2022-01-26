@@ -15,6 +15,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-endpointprotect
   - m365solution-scenario
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
 ---
@@ -24,7 +25,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -117,7 +118,7 @@ This section guides you in configuring the following capabilities using Microsof
 
 From within the Microsoft 365 Defender portal it is possible to download the `.onboarding` policy that can be used to create the policy in System Center Configuration Manager and deploy that policy to Windows 10 and Windows 11 devices.
 
-1. From a Microsoft 365 Defender portal, select [Settings and then Onboarding](https://security.microsoft.com/preferences2/onboarding).
+1. From a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, select [Settings and then Onboarding](https://security.microsoft.com/preferences2/onboarding).
 
 2. Under Deployment method select the supported version of **Microsoft Endpoint Configuration Manager**.
 
@@ -169,7 +170,7 @@ From within the Microsoft 365 Defender portal it is possible to download the `.o
 
 Follow the steps below to identify the Defender for Endpoint Workspace ID and Workspace Key, that will be required for the onboarding of previous versions of Windows.
 
-1. From a Microsoft 365 Defender portal, select **Settings** \> **Endpoints** \> **Onboarding** (under **Device Management**).
+1. From a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, select **Settings** \> **Endpoints** \> **Onboarding** (under **Device Management**).
 
 2. Under operating system choose **Windows 7 SP1 and 8.1**.
 
@@ -283,7 +284,7 @@ After completing this task, you now have successfully configured ASR rules in au
 
 Below are additional steps to verify whether ASR rules are correctly applied to endpoints. (This may take few minutes)
 
-1. From a web browser, navigate to <https://security.microsoft.com>.
+1. From a web browser, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
 
 2. Select **Configuration management** from left side menu.
 
