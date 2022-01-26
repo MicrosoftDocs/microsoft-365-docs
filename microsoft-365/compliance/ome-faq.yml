@@ -221,7 +221,9 @@ sections:
           | Outlook for Mac    | Yes | Yes                |
           | Outlook for Android| Yes | Yes                |
           | Outlook for iOS    | Yes | Yes                 |
-          |
+          
+          > [!NOTE]
+          > Adroid and iOS would use the Office mobile app to view the encrypted attachments, and not directly in Outlook mobile.
           
           There are currently two known limitations:
           
