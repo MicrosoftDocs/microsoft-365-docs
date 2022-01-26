@@ -3,11 +3,11 @@ title: Device requirements
 description:  Summary of the minimum hardware and software requirements for devices to work with Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ---
 
@@ -35,6 +35,9 @@ The device must have been made by one of these manufacturers:
 - Lenovo
 - Microsoft
 
+> [!NOTE] 
+> As of Mar 01, 2022, devices managed by Microsoft Managed Desktop must be supported by the OEM. Work with your OEM to find out when devices in your portfolio will reach end of life support. Customers will be responsible for ensuring devices are replaced prior to end of life support. Any devices falling outside of OEM support will continue to be managed by Microsoft Managed Desktop, but support for these devices may be limited as they are at risk of security and performance issues that may not be able to be mitigated by our service.
+</b>
 
 ### Installed software
 

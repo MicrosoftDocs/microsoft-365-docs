@@ -33,7 +33,7 @@ ms.technology: mde
 This topic describes how to install, configure, update, and use Defender for Endpoint on Mac.
 
 > [!CAUTION]
-> Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint on Mac is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint on Mac EDR functionality after configuring the antivirus functionality to run in [Passive mode](mac-preferences.md#enable--disable-passive-mode).
+> Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint on Mac is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint on Mac EDR functionality after configuring the antivirus functionality to run in [Passive mode](mac-preferences.md#enforcement-level-for-antivirus-engine).
 
 ## What's new in the latest release
 
@@ -73,7 +73,7 @@ The three most recent major releases of macOS are supported.
 > [!IMPORTANT]
 > On macOS 11 (Big Sur) and above, Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [New configuration profiles for macOS Catalina and newer versions of macOS](mac-sysext-policies.md).
 
-- 12 (Monterey), 11 (Big Sur), 10.15 (Catalina), 10.14 (Mojave)
+- 12 (Monterey), 11 (Big Sur), 10.15 (Catalina)
 - Disk space: 1GB
 
 Beta versions of macOS are not supported.
@@ -90,6 +90,7 @@ Microsoft Defender for Endpoint on Mac requires one of the following Microsoft V
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 (M365 A5)
 - Windows 10 Enterprise E5
+- Microsoft 365 Business Premium
 - Windows 11 Enterprise E5
 - Microsoft Defender for Endpoint
 

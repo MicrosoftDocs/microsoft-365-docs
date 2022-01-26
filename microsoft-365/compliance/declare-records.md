@@ -90,4 +90,4 @@ For more information about searching for these events, see [Search the audit log
 
 ## Next steps
 
-For a list of scenarios supported by records management, see [Common scenarios for records management](get-started-with-records-management.md#common-scenarios-for-records-management).
+For a list of scenarios supported by records management, see [Common scenarios for records management](get-started-with-records-management.md#common-scenarios).

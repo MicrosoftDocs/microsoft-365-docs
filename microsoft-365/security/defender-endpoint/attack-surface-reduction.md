@@ -24,7 +24,6 @@ ms.collection: M365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -91,7 +90,7 @@ Also, warn mode isn't supported on devices running older versions of Windows. In
 
 ## Notifications and alerts
 
-Whenever an attack surface reduction rule is triggered, a notification is displayed on the device. You can [customize the notification](customize-attack-surface-reduction.md#customize-the-notification) with your company details and contact information.
+Whenever an attack surface reduction rule is triggered, a notification is displayed on the device. You can [customize the notification](attack-surface-reduction-rules-deployment-phase-3.md#customize-attack-surface-reduction-rules) with your company details and contact information.
 
 Also, when certain attack surface reduction rules are triggered, alerts are generated.
 
