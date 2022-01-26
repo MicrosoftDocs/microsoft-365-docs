@@ -34,64 +34,60 @@ The unified **Trials** portal in the Microsoft 365 Defender portal provides a si
 
   ![Mail flows from the internet into Microsoft 365, with protection from EOP and/or Defender for Office 365 Plan 1.](../../media/mdo-trial-mail-flow.png)
 
-The rest of this article explains the details of evaluations and trials.
+The rest of this article explains the details of evaluations and trials for Defender for Office 365.
 
 ## Overview of Defender for Office 365
 
-Microsoft Defender for Office 365 safeguards your organization against malicious threats that are posed by email messages, links (URLs), and collaboration tools. Defender for Office 365 includes:
+Defender for Office 365 helps organizations secure their enterprise by offering a comprehensive slate of capabilities. For more information, see [Microsoft Defender for Office 365](defender-for-office-365.md).
 
-- **Threat protection policies**: Define threat-protection policies to set the appropriate level of protection for your organization.
-- **Reports**: View real-time reports to monitor Defender for Office 365 performance in your organization.
-- **Threat investigation and response capabilities**: Use leading-edge tools to investigate, understand, simulate, and prevent threats.
-- **Automated investigation and response capabilities**: Save time and effort investigating and mitigating threats.
+You can also learn more about Defender for Office 365 at this [interactive guide](https://aka.ms/MS365D.InteractiveGuide).
 
-These high level capabilities are described in the following table:
-
-<br>
-
-****
-
-|Feature|Description|
-|---|---|
-|[Exclusive settings in anti-phishing policies](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|Get user impersonation protection, domain impersonation protection, mailbox intelligence, and advanced phishing thresholds.|
-|[Safe Attachments](safe-attachments.md)|Inspect email attachments and other files in a controlled detonation environment to catch new and evasive malware.|
-|[Safe Links](safe-links.md)|Perform time-of-click checks to ensure URLs that might have passed initial inspection have not been weaponized.|
-|[Threat Trackers](threat-trackers.md)<sup>\*</sup>|Use informative widgets and views to identify cybersecurity issues that might impact your organization.|
-|[Threat Explorer](threat-explorer.md)<sup>\*</sup>|Hunt with near real-time information about threats in your Office 365 email.|
-|[Automated investigation and response (AIR)](office-365-air.md)<sup>\*</sup>|Automatically locate and remediate threat objects as alerts are triggered.|
-|[Attack simulation training](attack-simulation-training.md)<sup>\*</sup>|Train your users to identify phishing attacks and respond appropriately.|
-|[Campaign Views](campaigns.md)<sup>\*</sup>|Investigate and respond to large-scale malicious email activity.|
-|[Reports using Defender for Office 365 capabilities](view-reports-for-mdo.md)|View reports including threat protection status, URL threat protection, mail latency, and more.|
-|[Priority account protection](/microsoft-365/admin/setup/priority-accounts)<sup>\*</sup>|Users that you identify as Priority accounts are tagged in alerts, reports, and investigations so they stand out. You can also use the Priority tag in filters.|
-|
-
-<sup>\*</sup> This feature is exclusive to Defender for Office 365 Plan 2.
+![Microsoft Defender for Office 365 conceptual diagram.](../../media/microsoft-defender-for-office-365.png)
 
 ## Policies in evaluations and trials
 
-For both evaluations and trials, policies that are exclusive to Defender for Office 365 are configured during setup:
+The policies that control the protection features of Microsoft 365 are present in both evaluations and trials:
 
-- [Safe Attachments for email messages](safe-attachments.md)
-- [Safe Links for email messages and Microsoft Teams](safe-links.md)
-- [Impersonation protection in anti-phishing policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+- **Exchange Online Protection (EOP)**: No new or special policies are created for evaluations or trials. Existing EOP policies are able to act on messages (for example, send messages to the Junk Email folder or to quarantine):
 
-But, the nature of these policies are different:
+  - [Anti-malware policies](anti-malware-protection.md)
+  - [Inbound anti-spam protection](anti-spam-protection.md)
+  - [Anti-spoofing protection in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings)
 
-- **Evaluations**: Regular policies are created, but the policies are in *non-blocking* mode. Defender for Office 365 will *detect* harmful messages for reporting, but the messages won't be acted upon (for example, detected messages aren't quarantined).
-- **Trials**: Policies are created using the Standard template for [preset security policies](preset-security-policies.md). The policies are in *blocking* mode. Defender for Office 365 will *detect* and *act upon* harmful messages (for example, detected messages are quarantined).
+  The default policies for these features are always on, apply to all recipients, and are always applied after any custom policies.
 
-By default, these policies are scoped to all users in the organization, but during or after setup, you can change the policy assignment to specific users.
+- **Defender for Office 365**: Policies that are exclusive to Defender for Office 365 are created for both evaluations and trials:
+
+  - [Safe Attachments for email messages](safe-attachments.md)
+  - [Safe Links for email messages and Microsoft Teams](safe-links.md)
+  - [Impersonation protection in anti-phishing policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+
+  But, the nature of these Defender for Office 365 policies are different in evaluations and trials:
+
+  - **Evaluations**: Regular policies are created, but the policies are configured in *non-blocking* mode. Defender for Office 365 will *detect* harmful messages for reporting, but the messages won't be acted upon (for example, detected messages aren't quarantined).
+  - **Trials**: Policies are created using the Standard template for [preset security policies](preset-security-policies.md). The policies are in *blocking* mode. Defender for Office 365 will *detect* and *act upon* harmful messages (for example, detected messages are quarantined).
+
+  By default, these policies are scoped to all users in the organization, but during or after setup, you can change the policy assignment to specific users.
 
 ## Set up an evaluation
 
 1. Click **Start evaluation**.
 
-2. On the **Routing settings** page, select **I'm using a third party or on-premises service provider**, and then click **Next**.
+2. On the **Routing settings** page, choose one of the following options:
 
-3. On the **Third party or on-premises settings** page, the **Select a third party service provider** value determines the rest of the settings that are available on the page.:
+   - **I'm using a third party or on-premises service provider**
+   - **I'm using Microsoft Exchange**
 
-   - If you select one of the following values:
+   By default, **Share data with Microsoft** is selected, but you can clear the check box if you like.
 
+   When you're finished, click **Next**
+
+   > [!NOTE]
+   > If you select **I'm using Microsoft Exchange**, there's nothing for you to configure, so you're taken to the last step in the wizard.
+
+3. On the **Third party or on-premises settings** page, configure the following settings:
+
+   - **Select a third party service provider**: Select one of the following values:
      - **Barracuda**
      - **IronPort**
      - **Mimecast**
@@ -99,20 +95,34 @@ By default, these policies are scoped to all users in the organization, but duri
      - **Sophos**
      - **Symantec**
      - **Trend Micro**
+     - **Other**
 
-     the only other setting on the page is **The connector to apply this evaluation to** where you select the connector.
+   - **The connector to apply this evaluation to**: Select the connector that's used for mail flow into Microsoft 365.
 
-   - If you select the value **Other**, the following settings are available:
+     [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (also known as *skip listing*) is automatically configured on the connector that you specify.
 
-     - **The connector to apply this evaluation to**
-     - **List each gateway IP address your messages pass through**
+     When a third-party service or device sits in from of Microsoft 365, Enhanced Filtering for Connectors correctly identifies the source of internet messages, and greatly improves the accuracy of the Microsoft filtering stack (especially [spoof intelligence](anti-spoofing-protection.md), as well as post-breach capabilities in [Threat Explorer](threat-explorer.md) and [Automated Investigation & Response (AIR)](automated-investigation-response-office.md)).
+
+   - **List each gateway IP address your messages pass through**: This setting is available only if you selected **Other** for **Select a third party service provider**. Enter a comma-separated list of the IP addresses that are used by the third-party protection service or device to send mail into Microsoft 365.
+
+   When you're finished, click **Next**.
+
+4. On the **Exchange mail flow rules** page, decide if you need an Exchange Online mail flow rule (also known as a transport rule) that skips spam filtering for incoming messages from the third-party protection service or device.
+
+   It's likely that you already have a mail flow rule in Exchange Online that sets the spam confidence level (SCL) of all incoming mail from the service to the value -1 (bypass spam filtering) in order to skip spam filtering on incoming mail from the protection service. Most protection services encourage this SCL=-1 mail flow rule for Microsoft 365 customers who want to use their services.
+
+   As explained in the previous step, Enhanced Filtering for Connectors is automatically configured on the connector that you specify as the source of mail from the protection service.
+
+   Turning on Enhanced Filtering for Connectors without an SCL=-1 rule for incoming mail from the protection service will vastly improve the detection capabilities of EOP protection features like [spoof intelligence](anti-spoofing-protection.md), and could impact the delivery of those newly-detected message (for example, move to the Junk Email folder or to quarantine). This impact is limited to EOP policies; as previously explained, Defender for Office 365 policies are created in non-blocking mode.
+
+   To create an SCL=-1 mail flow rule or to review your existing rules, click the **Go to Exchange admin center** button on the page. For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
    When you're finished, click **Next**.
 
-4. On the **Exchange mail flow rules** page, decide if you need to configure an SCL=1 mail flow rule (also known as a transport rule) that skips spam filtering for incoming messages.
+5. On the **Review your settings** page, you can review the details of your evaluation.
 
-   If you need to configure an SCL=1 mail flow rule
+   You can select **Edit** in each section to modify the settings within the section. Or you can click **Back** or select the specific page in the wizard.
 
-   When you're finished, click **Next**.
+   When you're finished, click **Create evaluation**.
 
 ## Set up a trial
