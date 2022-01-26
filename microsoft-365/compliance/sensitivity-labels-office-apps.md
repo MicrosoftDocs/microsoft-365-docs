@@ -77,7 +77,7 @@ The numbers listed are the minimum Office application versions required for each
 **Footnotes:**
 
 <sup>\*</sup>
-Currently, doesn't include justification text to remove a label or lower the classification level
+Currently rolling out justification text to remove a label or lower the classification level
 
 ### Sensitivity label capabilities in Outlook
 
