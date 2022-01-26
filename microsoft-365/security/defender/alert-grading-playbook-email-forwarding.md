@@ -29,11 +29,11 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Threat actors can use compromised user accounts for several malicious purposes, including reading emails in a user’s inbox, forwarding emails to external accounts, and sending phishing mails, among others. The targeted user might be unaware that their emails are being forwarded. This is a very common tactic that attackers use when accounts are compromised.
+Threat actors can use compromised user accounts for several malicious purposes, including reading emails in a user’s inbox, forwarding emails to external recipents, and sending phishing mails, among others. The targeted user might be unaware that their emails are being forwarded. This is a very common tactic that attackers use when accounts are compromised.
 
-Emails can be forwarded either manually or automatically using forwarding rules. Automatic forwarding can be implemented in multiple ways like Inbox Rule, Exchange Transport Rule (ETR), and SMTP Forwarding. While manual forwarding requires direct action from users, they might not be aware of all the auto-forwarded emails. This alert is raised when a user auto-forwards an email to a potentially malicious email address.
+Emails can be forwarded either manually or automatically using forwarding rules. Automatic forwarding can be implemented in multiple ways like Inbox Rule, Exchange Transport Rule (ETR), and SMTP Forwarding. While manual forwarding requires direct action from users, they might not be aware of all the auto-forwarded emails. In Microsoft 365, an alert is raised when a user auto-forwards an email to a potentially malicious email address.
 
-This playbook helps you investigate any incident related to suspicious email forwarding rules configured by attackers and take recommended actions to remediate the attack and protect your network.
+This playbook helps you investigate alerts for suspicious email forwarding and quickly grade them as either a True Positive or a False Positive. You can then take recommended actions for the True Positive alerts to remediate the attack.
 
 For an overview of alert grading for Microsoft Defender for Office 365 and Microsoft Defender for Cloud Apps, see the [introduction article](alert-grading-playbooks.md).
 
@@ -41,13 +41,13 @@ The results of using this playbook are:
 
 - You have identified the alerts associated with auto-forwarded emails as malicious (True Positive) or benign (False Positive) activities.
 
-    - If malicious, you have [stopped email auto-forwarding](/microsoft-365/business-video/stop-email-auto-forward) for the affected mailboxes.
+    - If malicious, you have [stopped email auto-forwarding](/security/office-365-security/external-email-forwarding) for the affected mailboxes.
 
 - You have taken the necessary action if emails have been forwarded to a malicious email address.
 
 ## Email forwarding rules
 
-Email forwarding rule allows users to set up a rule to forward email messages sent to a user's mailbox to another user's mailbox in or outside of the organization. Some email users, particularly those with multiple mailboxes, configure forwarding rules to move corporate emails to their private email accounts. Email forwarding is a useful feature but can also pose a security risk due to the potential disclosure of information. Attackers might use this information to attack your organization or partners.
+Email forwarding rule allows users to set up a rule to forward email messages sent to a user's mailbox to another user's mailbox in or outside of the organization. Some email users, particularly those with multiple mailboxes, configure forwarding rules to move employer emails to their private email accounts. Email forwarding is a useful feature but can also pose a security risk due to the potential disclosure of information. Attackers might use this information to attack your organization or its partners.
 
 ### Suspicious email forwarding rules
 
@@ -55,7 +55,7 @@ Adversaries might set up email rules to hide incoming emails in the compromised 
 
 Some rules might move all the emails to another folder and mark them as “read”, while some rules might move only mails which contain specific keywords in the email message or subject. For example, the inbox rule might be set to look for keywords like “invoice”, “phish”, “do not reply”, “suspicious email”, or “spam” among others, and move them to an external email account. Attackers might also use the compromised user mailbox to distribute spam, phishing emails, or malware.
  
-Microsoft Defender for Office 365 can now detect and alert on suspicious email forwarding rules, giving you the ability to find and delete hidden rules at the source.
+Microsoft Defender for Office 365 can detect and alert on suspicious email forwarding rules, allowing you to find and delete hidden rules at the source.
 
 For more information, read the following blog posts:
 
@@ -67,21 +67,21 @@ For more information, read the following blog posts:
 
 To review the specific alert, open the **Alerts** page to see the **Activity list** section as show in this figure.
  
-TO BE ADDED: "List of activities related to the alert" figure
+:::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png" alt-text="List of activities related to the alert" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png":::
 
 Click on **Activity**  to view details of that activity in the sidebar.
  
-TO BE ADDED: "Details of the activity" figure
+:::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-details.png" alt-text="Details of the activity" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-details.png":::
 
 The **Reason** field contains the following information related to this alert.
 
 - Forwarding Type (FT) is one of the following:
 
-    a. Exchange Transport Rule (ETR): Forwarded using and Exchange Transport Rule 
+    -  Exchange Transport Rule (ETR): Forwarded using and Exchange Transport Rule 
 
-    b. SMTP: Forwarded using Mailbox Forwarding
+    -  SMTP: Forwarded using Mailbox Forwarding
 
-    c. InboxRule: Forwarded using an Inbox Rule
+    -  InboxRule: Forwarded using an Inbox Rule
 
 - Message Trace ID (MTI): This is the identifier (NetworkMessageId) of the forwarded email that triggered this alert. NetworkMessageId is the unique identifier of an email in your organization.
 - Forwarder (F): The user who forwarded this email.
@@ -90,7 +90,7 @@ The **Reason** field contains the following information related to this alert.
 
 ## Investigation workflow
 
-While investigating this alert, you must determine the following:
+While investigating this alert, you must determine:
 
 - Is the user account and its mailbox compromised?
 - Are the activities malicious?
@@ -123,9 +123,9 @@ For more information, see the following articles:
 
 This figure shows the workflow to identify suspicious email forwarding activities.
 
-:::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-flowchart.png" alt-text="Alert investigation workflow for email forwarding" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-flowchart.png":::
+:::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png" alt-text="Alert investigation workflow for email forwarding" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png":::
 
-You can investigate an email forwarding alert using Threat Explorer or audit logs, based on the availability of features in your Microsoft 365 Defender portal. You may choose to follow the entire process or a part of the process as needed.
+You can investigate an email forwarding alert using Threat Explorer or audit logs, based on the availability of features in the Microsoft 365 Defender portal. You may choose to follow the entire process or a part of the process as needed.
 
 ## Using Threat Explorer
 
@@ -133,7 +133,7 @@ Threat Explorer provides an interactive investigation experience for email relat
 
 - SRL/RL: Use the (Suspicious) Recipients List (SRL) to find these details:
  
-    TO BE ADDED: "List of recipients" figure
+    :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-recipients-list.png" alt-text="Example of the list of recipients" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-recipients-list.png":::
 
     - Who else has forwarded emails to these recipients?
 
@@ -141,9 +141,10 @@ Threat Explorer provides an interactive investigation experience for email relat
 
     - How frequently are emails forwarded to these recipients?
  
-    TO BE ADDED: "Network Message ID" figure
 
 - MTI: Use the Message Trace ID/Network Message ID to find these details:
+
+    :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-network-message-id.png" alt-text="Example of the Network Message ID" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-network-message-id.png":::
 
     - What additional details are available for this email? For example: subject, return path, and timestamp.
 
@@ -157,7 +158,7 @@ Threat Explorer provides an interactive investigation experience for email relat
 
     - Are there any threats associated with this email? Is this email part of any campaign?
 
-Based on answers to these questions, you should be able to determine whether an email is suspicious or benign.
+Based on answers to these questions, you should be able to determine whether an email is malicious or benign.
 
 ## Using audit logs
 
@@ -171,7 +172,7 @@ To use advanced hunting queries to gather information related to an alert and de
 
 - IdentityLogonEvents - Contains login information for all users.
 
-TO BE ADDED: "Advanced hunting page" figure
+:::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-advanced-hunting.png" alt-text="Example of the Advanced hunting page" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-advanced-hunting.png":::
 
 Use queries to gather information for the following questions.
 
@@ -249,27 +250,27 @@ Use queries to gather information for the following questions.
 
 You can also find suspicious forwarding rules using the Exchange admin center, based on the rule type (the FT value in the alert).
 
-- ETR: Exchange transport rules are listed in the “Rules” section. Verify that all rules are as expected.
+- ETR: Exchange transport rules are listed in the **Rules** section. Verify that all rules are as expected.
 
-- SMTP: You can see mailbox forwarding rules by selecting the sender’s mailbox >  Manage mail flow settings > Email forwarding >Edit.
+- SMTP: You can see mailbox forwarding rules by selecting the sender’s mailbox **\>  Manage mail flow settings \> Email forwarding \> Edit**.
 
-- InboxRule:  InboxRules are configured with the e-mail client. You can use the [Get-InboxRule](/powershell/module/exchange/get-inboxrule) PowerShell cmdlet to list inbox rules created by users.
+- InboxRule:  InboxRules are configured with the e-mail client. You can use the [Get-InboxRule](/powershell/module/exchange/get-inboxrule) PowerShell cmdlet to list the inbox rules created by users.
 
 ### Additional investigation
 
-Along with the evidence discovered so far, you can determine if there are new forwarding rules being created. Investigate the IP address associated with the rule. Ensure that it is not an anomalous IP ddress and is consistent with usual activities performed by the user.
+Along with the evidence discovered so far, you can determine if there are new forwarding rules being created. Investigate the IP address associated with the rule. Ensure that it is not an anomalous IP address and is consistent with usual activities performed by the user.
 
 ## Recommended actions
 
-Once you determine that the activities associated make this alert a True Positive (TP), classify the alert and take these actions for remediation:
+Once you determine that the activities associated make this alert a True Positive, classify the alert and take these actions for remediation:
 
 1. Disable and delete the inbox forwarding rule.
-2. In case of InboxRule, reset the user’s account credentials.
-3. In case of SMTP/ETR, investigate the activities of the user account that created the alert.
+2. For the InboxRule forwarding type, reset the user’s account credentials.
+3. For the SMTP or ETR forwarding type, investigate the activities of the user account that created the alert.
 
-   a. Investigate any other suspicious admin activities.
+    - Investigate any other suspicious admin activities.
 
-   b. Reset the user account’s credentials.
+    - Reset the user account’s credentials.
 
 4. Check for additional activities originated from impacted accounts, IP addresses, and suspicious senders.
 
