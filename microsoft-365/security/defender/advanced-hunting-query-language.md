@@ -41,7 +41,7 @@ To understand these concepts better, run your first query.
 
 ## Try your first query
 
-In the Microsoft 365 Defender portal, go to **Hunting** to run your first query. Use the following example:
+In the Microsoft 365 Defender portal, go to **Hunting** to run your first query. Use the following example: 
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
