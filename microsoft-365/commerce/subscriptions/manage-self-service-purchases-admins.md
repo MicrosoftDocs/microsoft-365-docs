@@ -85,7 +85,7 @@ For more information, see [Use AllowSelfServicePurchase for the MSCommerce Power
 
 You'll use PowerShell commands to change the settings that control self-service sign-up and purchasing. 
 
-- If you want to disable all self-service sign-ups, change a setting in Azure Active Directory named **AllowAdHocSubscriptions** by using MSOL PowerShell module. Follow the steps in this article to [Set MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings). This option turns off self-service sign-up for *all* Microsoft cloud-based apps and services.
+- If you want to disable all self-service sign-ups, change the setting in Azure Active Directory named **AllowAdHocSubscriptions** by using the MSOL PowerShell module. Follow the steps in this article to [Set MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings). This option turns off self-service sign-up for *all* Microsoft cloud-based apps and services.
 
 - If you want to prevent users from purchasing their own Pro license, change the **AllowSelfServicePurchase** setting using MSCommerce PowerShell commands. This setting lets you turn off self-service purchases for specific products. Follow the steps in this article to [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](/microsoft-365/commerce/subscriptions/allowselfservicepurchase-powershell).
 
