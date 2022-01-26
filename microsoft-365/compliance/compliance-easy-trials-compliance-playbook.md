@@ -419,7 +419,7 @@ Help your organization assess risks and efficiently respond to nations, regional
 
 Proactively identify and protect against privacy risks such as data hoarding, data transfers, and data oversharing and help your organization automate and manage subject requests at scale.
 
-[Learn more about privacy management for Microsoft 365](/privacy/solutions/privacymanagement/privacy-management).
+[Learn more about Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management).
 
 [Trial playbook: Microsoft Priva](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
 
