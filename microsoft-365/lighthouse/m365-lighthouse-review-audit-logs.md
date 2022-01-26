@@ -45,7 +45,7 @@ To view audit logs, you must have one of the following permissions:
 - **Tenants** - Tenant tags or customer tenant names.
 - **Area** - The area where the action was initiated. The area corresponds to the entries in the left navigation bar.
 - **Activity** - Microsoft 365 activity type that corresponds to the action taken. For more information, see Activity Types table.
-- **Initiated by**: Who initiated the action.
+- **Initiated by** -  Who initiated the action.
 
 3. Select a log from the list to see full details including the **Request** body.
 
