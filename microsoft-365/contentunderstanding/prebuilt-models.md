@@ -1,5 +1,5 @@
 ---
-title: Use a prebuilt model to classify documents in Microsoft SharePoint Syntex
+title: Use a prebuilt model to extract info from invoices or receipts in Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -17,7 +17,7 @@ description: Learn how to create and configure a prebuilt model in SharePoint Sy
 
 ---
 
-# Use a prebuilt model to classify documents in Microsoft SharePoint Syntex
+# Use a prebuilt model to extract info from invoices or receipts in Microsoft SharePoint Syntex
 
 Prebuilt models are pretrained to recognize documents and the structured information in the documents. You can immediately apply prebuilt models to libraries as they are. They don't require additional training or labeling.
 
@@ -48,7 +48,7 @@ Follow these steps to create a prebuilt model to classify documents in SharePoin
 
 4. Select **Create**.
 
-## Analyze the prebuilt model
+## Add a file to analyze
 
 1. On the **Models** page, in the **Add a file to analyze** section, select **Add file**.
 
