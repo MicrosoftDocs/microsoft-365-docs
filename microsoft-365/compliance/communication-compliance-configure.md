@@ -257,7 +257,24 @@ For more information about configuring Yammer in Native Mode, see:
 
 6. The **Your policy was created** page is displayed with guidelines on when policy will be activated and which communications will be captured.
 
-## Step 6 (optional): Create notice templates and configure user anonymization
+## Step 6 (optional): Update compliance boundaries for communication compliance policies
+
+[Compliance boundaries](/microsoft-365/compliance/set-up-compliance-boundaries) create logical boundaries within an organization that control the user content locations (such as mailboxes, OneDrive accounts, and SharePoint sites) that eDiscovery managers can search.
+
+If you've configured compliance boundaries in your organization, you must update the compliance boundaries to allow certain users access to mailboxes that support communication compliance policies. You'll need to allow access to communication compliance administrators and communication compliance reviewers for your policy management and investigation and remediation actions to work properly.
+
+To allow access for communication compliance admins and reviewers, run the following PowerShell commands. You only need to run these commands once, even if you add new communication compliance policies in the future:
+
+```powershell
+Import-Module ExchangeOnlineManagement
+$UserCredential = Get-Credential
+Connect-IPPSSession -Credential $UserCredential
+New-ComplianceSecurityFilter -FilterName "CC_mailbox" -Users <list your communication compliance admins and reviewers user alias or email address> -Filters "Mailbox_Name -like 'SupervisoryReview{*'" -Action All
+```
+
+For more information about cmdlet syntax, see [New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter).
+
+## Step 7 (optional): Create notice templates and configure user anonymization
 
 If you want to have the option of responding to a policy alert by sending a reminder notice to the associated user, you'll need to create at least one notice template in your organization. The notice template fields are editable before they're sent as part of the alert remediation process, and creating a customized notice template for each communication compliance policy is recommended.
 
@@ -285,7 +302,7 @@ You can also choose to enable anonymization for displayed usernames when investi
 
 8. Select **Save** to create and save the notice template.
 
-## Step 7 (optional): Test your communication compliance policy
+## Step 8 (optional): Test your communication compliance policy
 
 After you create a communication compliance policy, it's a good idea to test it to make sure that the conditions you defined are being properly enforced by the policy. You may also want to [test your data loss prevention (DLP) policies](create-test-tune-dlp-policy.md) if your communication compliance policies include sensitive information types. Make sure you give your policies time to activate so that the communications you want to test are captured.
 
