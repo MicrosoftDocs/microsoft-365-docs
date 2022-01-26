@@ -19,7 +19,7 @@ This article explains how to enroll and participate in the Windows 11 compatibil
 
 We've created the device group (**Modern Workplace - Windows 11 Pre-Release Test Devices**) for testing and evaluating Windows 11. Despite "pre-release" in the name, devices in this group receive Windows 11 General Availability builds, and Microsoft Managed Desktop baseline configurations as they become available. They're monitored for reliability issues.
 
-You can use new devices or any existing for Windows 11 testing. However, you shouldn't enroll production devices in this group until you’re confident in the test devices' compatibility and overall experience.
+You can use new devices or any existing devices for Windows 11 testing. However, you shouldn't enroll production devices in this group until you’re confident in the test devices' compatibility and overall experience.
 
 ## Prioritize applications to submit to the Test Base
 
