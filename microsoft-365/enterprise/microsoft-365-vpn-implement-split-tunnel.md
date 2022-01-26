@@ -318,9 +318,9 @@ Here is an example how to generate the PAC files:
 2. Put the file into the same folder as the script.
 3. In a PowerShell window, run the following command. Change out the tenant name for something else if you want the SPO URLs. This is Type 2, so **Optimize** and **Allow** (Type 1 is Optimize only).
 
-```powershell
-.\Get-TLEPacFile.ps1 -Instance Worldwide -Type 2 -TenantName <contoso> -CdnEdgeNodesFilePath .\cdnedgenodes.json -FilePath TLE.pac
-```
+   ```powershell
+   .\Get-TLEPacFile.ps1 -Instance Worldwide -Type 2 -TenantName <contoso> -CdnEdgeNodesFilePath .\cdnedgenodes.json -FilePath TLE.pac
+   ```
 
 4. The TLE.pac file will contain all the namespaces and IPs (IPv4/IPv6).
 
