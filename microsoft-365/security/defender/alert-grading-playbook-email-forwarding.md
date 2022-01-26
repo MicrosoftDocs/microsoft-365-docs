@@ -29,7 +29,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Threat actors can use compromised user accounts for several malicious purposes, including reading emails in a user’s inbox, forwarding emails to external recipents, and sending phishing mails, among others. The targeted user might be unaware that their emails are being forwarded. This is a very common tactic that attackers use when accounts are compromised.
+Threat actors can use compromised user accounts for several malicious purposes, including reading emails in a user’s inbox, forwarding emails to external recipients, and sending phishing mails, among others. The targeted user might be unaware that their emails are being forwarded. This is a very common tactic that attackers use when accounts are compromised.
 
 Emails can be forwarded either manually or automatically using forwarding rules. Automatic forwarding can be implemented in multiple ways like Inbox Rule, Exchange Transport Rule (ETR), and SMTP Forwarding. While manual forwarding requires direct action from users, they might not be aware of all the auto-forwarded emails. In Microsoft 365, an alert is raised when a user auto-forwards an email to a potentially malicious email address.
 
@@ -254,7 +254,7 @@ You can also find suspicious forwarding rules using the Exchange admin center, b
 
 - SMTP: You can see mailbox forwarding rules by selecting the sender’s mailbox **\>  Manage mail flow settings \> Email forwarding \> Edit**.
 
-- InboxRule:  InboxRules are configured with the e-mail client. You can use the [Get-InboxRule](/powershell/module/exchange/get-inboxrule) PowerShell cmdlet to list the inbox rules created by users.
+- InboxRule:  Inbox rules are configured with the e-mail client. You can use the [Get-InboxRule](/powershell/module/exchange/get-inboxrule) PowerShell cmdlet to list the inbox rules created by users.
 
 ### Additional investigation
 

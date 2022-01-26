@@ -172,9 +172,9 @@
                       href: alert-grading-playbooks.md
                     - name: Suspicious email forwarding
                       href: alert-grading-playbook-email-forwarding.md
-                    - name: Suspicious inbox forwarding rule
+                    - name: Suspicious inbox forwarding rules
                       href: alert-grading-playbook-inbox-forwarding-rules.md
-                    - name: Suspicious inbox manipulation rule
+                    - name: Suspicious inbox manipulation rules
                       href: alert-grading-playbook-inbox-manipulation-rules.md
                  - name: Users 
                    href: investigate-users.md                  
