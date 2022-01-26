@@ -157,6 +157,15 @@ The [Microsoft Defender for Office 365 setup guide](https://aka.ms/oatpsetup) sa
 
 The [Microsoft Defender for Identity setup guide](https://aka.ms/DefenderforIdentitysetup) provides security solution set-up guidance to identify, detect, and investigate advanced threats that might compromise user identities. These include detecting suspicious user activities and malicious insider actions directed at your organization. You’ll create a Defender for Identity instance, connect to your organization's Active Directory, and then set up sensors, alerts, notifications, and configure your unique portal preferences.
 
+### Insider risk solutions setup guide
+
+The [Insider risk solutions setup guide](https://aka.ms/Insiderrisksetup) helps you protect your organization against insider risks that can be challenging to identify and difficult to mitigate. Insider risks occur in a variety of areas and can cause major problems for organizations, ranging from the loss of intellectual property to workplace harassment, and more.
+
+The solutions in this guide will help you gain visibility into user activities, actions, and communications with native signals and enrichments from across your organization:
+
+* With the communication compliance solution, you can identify and act on communication risks for items like workplace violence, insider trading, harassment, code of conduct, and regulatory compliance violations.
+* The insider risk management solution helps you identify, investigate, and take action on risks for intellectual property theft, sensitive data leaks, security violations, data spillage, and confidentiality violations.
+
 ### Microsoft information protection setup guide
 
 Get an overview of the capabilities you can apply to your Information Protection strategy so you can be confident your sensitive information is protected. Use a four-stage lifecycle approach in which you discover, classify, protect, and monitor sensitive information. The [Microsoft information protection setup guide](https://aka.ms/mipsetupguide) provides guidance for completing each of these stages.
