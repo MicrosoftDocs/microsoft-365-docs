@@ -37,7 +37,7 @@ Features:
 Optional add-ons:
 
 - [Compliance Manager premium assessments](#compliance-manager-premium-assessments)
-- [Privacy Management](#privacy-management)
+- [Microsoft Priva Privacy Management](#privacy-management)
 
 ## Compliance Actions with Microsoft 365
 
@@ -413,7 +413,7 @@ Help your organization assess risks and efficiently respond to nations, regional
 
 [More information on the Compliance Manager premium assessments trial](compliance-easy-trials-compliance-manager-assessments.md).
 
-### Privacy Management
+### Microsoft Priva Privacy Management
 
 **Identify & prevent privacy risks**
 
@@ -421,7 +421,7 @@ Proactively identify and protect against privacy risks such as data hoarding, da
 
 [Learn more about privacy management for Microsoft 365](/privacy/solutions/privacymanagement/privacy-management).
 
-[Trial playbook: Privacy Management for Microsoft 365](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
+[Trial playbook: Microsoft Priva Privacy Management](/privacy/solutions/privacymanagement/privacy-management-trial-playbook)
 
 ## Additional resources
 
