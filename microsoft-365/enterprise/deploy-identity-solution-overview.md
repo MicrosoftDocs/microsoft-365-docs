@@ -45,7 +45,7 @@ This solution steps you through the deployment of an identity infrastructure for
 The steps in this solution are:
 
 1. [Determine your identity model.](deploy-identity-solution-identity-model.md)
-2. [Protect your Microsoft 365 administrator accounts.](protect-your-global-administrator-accounts.md)
+2. [Protect your Microsoft 365 privileged accounts.](protect-your-global-administrator-accounts.md)
 3. [Protect your Microsoft 365 user accounts.](microsoft-365-secure-sign-in.md)
 4. [Deploy your identity model.](cloud-only-identities.md)
 
@@ -76,7 +76,7 @@ Azure AD provides a full suite of identity management and security capabilities 
 Use these steps to deploy an identity model and authentication infrastructure for your Microsoft 365 tenant:
 
 1. [Determine your identity model.](deploy-identity-solution-identity-model.md)
-2. [Protect your Microsoft 365 administrator accounts.](protect-your-global-administrator-accounts.md)
+2. [Protect your Microsoft 365 privileged accounts.](protect-your-global-administrator-accounts.md)
 3. [Protect your Microsoft 365 user accounts.](microsoft-365-secure-sign-in.md)
 4. Deploy your identity model: [cloud-only](cloud-only-identities.md) or [hybrid](prepare-for-directory-synchronization).
 
