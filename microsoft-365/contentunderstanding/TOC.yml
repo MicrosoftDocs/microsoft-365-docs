@@ -3,7 +3,7 @@
         - name: Introduction to SharePoint Syntex
           href: index.md
  
-    - name: Custom AI models
+    - name: Custom models
       items:
             - name: Document understanding
               items:
@@ -54,7 +54,7 @@
                 - name: Apply a retention label 
                   href: apply-a-retention-label-to-a-model.md
 
-    - name: Prebuilt AI models
+    - name: Prebuilt models
       items:
             - name: Classify documents using a prebuilt model 
               href: /microsoft-365/contentunderstanding/prebuilt-models?branch=prebuilt-models-working
