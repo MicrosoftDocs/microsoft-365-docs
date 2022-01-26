@@ -80,11 +80,11 @@ The [Windows Virtual Desktop setup guide](https://aka.ms/wvdsetupguide) provides
 
 Microsoft Edge has been rebuilt from the ground up to bring you world-class compatibility and performance, the security and privacy you deserve, and new features designed to bring you the best of the web.
 
-The [Microsoft Edge setup guide](https://aka.ms/edgeadvisor) will help you configure Enterprise Site Discovery to see which sites accessed in your org might need to use IE mode, review and configure important security features, configure privacy policies and compliance policies to meet your org's requirements, and manage web access on your devices. You can download Microsoft Edge to individual devices, or we'll show you how to deploy to multiple users in your org with Group Policy, Configuration Manager, or Microsoft Intune.
+The [Microsoft Edge setup guide](https://aka.ms/edgeadvisoradmin) will help you configure Enterprise Site Discovery to see which sites accessed in your org might need to use IE mode, review and configure important security features, configure privacy policies and compliance policies to meet your org's requirements, and manage web access on your devices. You can download Microsoft Edge to individual devices, or we'll show you how to deploy to multiple users in your org with Group Policy, Configuration Manager, or Microsoft Intune.
 
 ### Configure IE mode for Microsoft Edge
 
-If you've already deployed Microsoft Edge and only want to configure IE mode, the [Configure IE mode for Microsoft Edge guide](https://aka.ms/configureiemode) will give you scripts to automate the configuration of Enterprise Site Discovery. You'll also get IE mode recommendations from a cloud-based tool that will help you create an Enterprise Mode Site List to deploy to your users.
+If you've already deployed Microsoft Edge and only want to configure IE mode, the [Configure IE mode for Microsoft Edge guide](https://aka.ms/configureiemodeadmin) will give you scripts to automate the configuration of Enterprise Site Discovery. You'll also get IE mode recommendations from a cloud-based tool that will help you create an Enterprise Mode Site List to deploy to your users.
 
 ### Microsoft Search setup guide
 
