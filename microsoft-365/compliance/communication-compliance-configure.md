@@ -56,7 +56,7 @@ Recommended actions can help your organization get started with communication co
 
 Activity in messages containing inappropriate content is aggregated by [classifier type](/microsoft-365/compliance/communication-compliance-policies#classifiers) from existing policies that use the inappropriate content template or custom policies that use classifiers for inappropriate content. Investigate alerts for these messages on the Alert dashboard for your policies.
 
-Activity involving [sensitive information types](/microsoft-365/compliance/communication-compliance-policies#sensitive-information-types) is detected in messages covered in existing policies and for messages that are not covered by existing policies. Insights are aggregated for all sensitive information types, including ones that your organization has not previously defined in an existing communication compliance policy. Use these insights to create a new communication compliance policy or to update existing policies.
+Activity involving [sensitive information types](/microsoft-365/compliance/communication-compliance-policies#sensitive-information-types) is detected in messages covered in existing policies and for messages that aren't covered by existing policies. Insights are aggregated for all sensitive information types, including ones that your organization hasn't previously defined in an existing communication compliance policy. Use these insights to create a new communication compliance policy or to update existing policies.
 
 ## Step 1 (required): Enable permissions for communication compliance
 
@@ -89,8 +89,8 @@ Choose from these solution role group options when configuring and managing comm
 | Role | Role permissions |
 |:-----|:-----------------|
 | **Communication Compliance** | Use this role group to manage communication compliance for your organization in a single group. By adding all user accounts for designated administrators, analysts, investigators, and viewers, you can configure communication compliance permissions in a single group. This role group contains all the communication compliance permission roles. This configuration is the easiest way to quickly get started with communication compliance and is a good fit for organizations that do not need separate permissions defined for separate groups of users. Users that create policies as a communication compliance administrator must have their mailbox hosted on Exchange Online.|
-| **Communication Compliance Admin** | Use this role group to initially configure communication compliance and later to segregate communication compliance administrators into a defined group. Users assigned to this role group can create, read, update, and delete communication compliance policies, global settings, and role group assignments. Users assigned to this role group cannot view message alerts. Users that create policies as a communication compliance administrator must have their mailbox hosted on Exchange Online.|
-| **Communication Compliance Analyst** | Use this group to assign permissions to users that will act as communication compliance analysts. Users assigned to this role group can view policies where they are assigned as Reviewers, view message metadata (not message content), escalate to additional reviewers, or send notifications to users. Analysts cannot resolve pending alerts. |
+| **Communication Compliance Admin** | Use this role group to initially configure communication compliance and later to segregate communication compliance administrators into a defined group. Users assigned to this role group can create, read, update, and delete communication compliance policies, global settings, and role group assignments. Users assigned to this role group can't view message alerts. Users that create policies as a communication compliance administrator must have their mailbox hosted on Exchange Online.|
+| **Communication Compliance Analyst** | Use this group to assign permissions to users that will act as communication compliance analysts. Users assigned to this role group can view policies where they're assigned as Reviewers, view message metadata (not message content), escalate to additional reviewers, or send notifications to users. Analysts can't resolve pending alerts. |
 | **Communication Compliance Investigator** | Use this group to assign permissions to users that will act as communication compliance investigators. Users assigned to this role group can view message metadata and content, escalate to additional reviewers, escalate to an Advanced eDiscovery case, send notifications to users, and resolve the alert. |
 | **Communication Compliance Viewer** | Use this group to assign permissions to users that will manage communication reports. Users assigned to this role group can access all reporting widgets on the communication compliance home page and can view all communication compliance reports. |
 
@@ -161,9 +161,9 @@ To manage supervised users in large enterprise organizations, you may need to mo
 
 1. Create a dedicated [distribution group](/powershell/module/exchange/new-distributiongroup) for your global communication compliance policy with the following properties: Make sure that this distribution group isn't used for other purposes or other Office 365 services.
 
-    - **MemberDepartRestriction = Closed**. Ensures that users cannot remove themselves from the distribution group.
-    - **MemberJoinRestriction = Closed**. Ensures that users cannot add themselves to the distribution group.
-    - **ModerationEnabled = True**. Ensures that all messages sent to this group are subject to approval and that the group is not being used to communicate outside of the communication compliance policy configuration.
+    - **MemberDepartRestriction = Closed**. Ensures that users can't remove themselves from the distribution group.
+    - **MemberJoinRestriction = Closed**. Ensures that users can't add themselves to the distribution group.
+    - **ModerationEnabled = True**. Ensures that all messages sent to this group are subject to approval and that the group isn't being used to communicate outside of the communication compliance policy configuration.
 
     ```PowerShell
     New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
@@ -203,7 +203,7 @@ For more information about configuring Yammer in Native Mode, see:
 ## Step 5 (required): Create a communication compliance policy
 
 >[!IMPORTANT]
->Using PowerShell to create and manage communication compliance policies is not supported. To create and manage these policies, you must use the policy management controls in the [Microsoft 365 communication compliance solution](https://compliance.microsoft.com/supervisoryreview).
+>Using PowerShell to create and manage communication compliance policies isn't supported. To create and manage these policies, you must use the policy management controls in the [Microsoft 365 communication compliance solution](https://compliance.microsoft.com/supervisoryreview).
 
 >[!TIP]  
 >Want to see an in-depth walkthrough of setting up a new communication compliance policy and remediating an alert? Check out [this 15-minute video](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough) to see a demonstration of how communication compliance policies can help you detect inappropriate messages, investigate potential violations, and remediate compliance issues.
@@ -218,7 +218,7 @@ For more information about configuring Yammer in Native Mode, see:
 
     If you choose a policy template to create a policy, you will:
 
-    - Confirm or update the policy name. Policy names cannot be changed once the policy is created.
+    - Confirm or update the policy name. Policy names can't be changed once the policy is created.
 
     - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude. When using the conflict of interest template, you'll select two groups or two users to monitor for internal communications.
 
