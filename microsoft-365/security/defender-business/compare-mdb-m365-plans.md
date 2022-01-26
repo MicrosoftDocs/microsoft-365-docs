@@ -16,6 +16,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - m365-initiative-defender-business
+- m365-security-compliance
 ---
 
 # Compare Microsoft Defender for Business (preview) to Microsoft 365 Business Premium
