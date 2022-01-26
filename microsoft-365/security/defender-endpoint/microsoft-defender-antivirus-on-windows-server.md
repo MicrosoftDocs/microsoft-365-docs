@@ -13,7 +13,7 @@ ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 10/18/2021
+ms.date: 01/14/2022
 ms.collection: M365-security-compliance
 ---
 
@@ -120,6 +120,12 @@ sc query Windefend
 ```
 
 The `sc query` command returns information about the Microsoft Defender Antivirus service. When Microsoft Defender Antivirus is running, the `STATE` value displays `RUNNING`.
+
+To view all the services that are not running, run the following Powershell cmdlet:
+
+```console
+sc query state= all
+```
 
 ## Update antimalware Security intelligence
 
