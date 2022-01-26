@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: reference
-ms.date: 12/13/2021
+ms.date: 01/26/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -15,7 +15,7 @@ ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-initiative-defender-business
 ---
 
 # Compare Microsoft Defender for Business (preview) to Microsoft 365 Business Premium
