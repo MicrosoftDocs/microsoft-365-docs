@@ -5851,7 +5851,7 @@
     },
 {
       "source_path": "microsoft-365/compliance/get-started-with-retention.md",
-      "redirect_url": "/microsoft-365/compliance/get-started-with-information-governance.md",
+      "redirect_url": "/microsoft-365/compliance/get-started-with-information-governance",
       "redirect_document_id": false
     },
     {
