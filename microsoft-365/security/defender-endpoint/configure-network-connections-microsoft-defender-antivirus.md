@@ -25,9 +25,7 @@ ms.collection: M365-security-compliance
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-To ensure Microsoft Defender Antivirus cloud-delivered protection works properly, your security team must configure your network to allow connections between your endpoints and certain Microsoft servers. This article lists the connections that must be allowed, such as by using firewall rules, and provides instructions for validating your connection. Configuring your protection properly helps ensure that you receive the best value from your cloud-delivered protection services.
-
-See the blog post [Important changes to Microsoft Active Protection Services endpoint](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006) for some details about network connectivity.
+To ensure Microsoft Defender Antivirus cloud-delivered protection works properly, your security team must configure your network to allow connections between your endpoints and certain Microsoft servers. This article lists connections that must be allowed, such as using firewall rules, and provides instructions for validating your connection. Configuring your protection properly helps ensure that you receive the best value from your cloud-delivered protection services.
 
 > [!TIP]
 > Visit the Microsoft Defender for Endpoint demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working:
@@ -38,9 +36,9 @@ See the blog post [Important changes to Microsoft Active Protection Services end
 
 ## Allow connections to the Microsoft Defender Antivirus cloud service
 
-The Microsoft Defender Antivirus cloud service provides fast, strong protection for your endpoints. Enabling the cloud-delivered protection service is optional, however it's highly recommended because it provides important protection against malware on your endpoints and across your network. See [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) for details on enabling the service with Intune, Microsoft Endpoint Configuration Manager, Group Policy, PowerShell cmdlets, or on individual clients in the Windows Security app.
+The Microsoft Defender Antivirus cloud service provides fast, and strong protection for your endpoints. It is optional to enable the cloud-delivered protection service. It's highly recommended, because it provides important protection against malware on your endpoints and  network. See [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) for details on enabling the service with Intune, Microsoft Endpoint Configuration Manager, Group Policy, PowerShell cmdlets, or on individual clients in the Windows Security app.
 
-After you've enabled the service, you might need to configure your network or firewall to allow connections between it and your endpoints. Because your protection is a cloud service, computers must have access to the internet and reach the Microsoft Defender for Office 365 machine learning services. Don't exclude the URL `*.blob.core.windows.net` from any kind of network inspection.
+After you've enabled the service, you might need to configure your network or firewall to allow connections between it and your endpoints. Because your protection is a cloud service, computers must have access to the internet and reach the Microsoft cloud services. Don't exclude the URL `*.blob.core.windows.net` from any kind of network inspection.
 
 > [!NOTE]
 > The Microsoft Defender Antivirus cloud service is a mechanism for delivering updated protection to your network and endpoints. Although it's called a cloud service, it's not simply protection for files stored in the cloud, rather it uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional Security intelligence updates.
@@ -56,16 +54,19 @@ Make sure that there are no firewall or network filtering rules denying access t
 |Service and description|URL|
 |---|---|
 |Microsoft Defender Antivirus cloud-delivered protection service, also referred to as Microsoft Active Protection Service (MAPS)<p>This service is used by Microsoft Defender Antivirus to provide cloud-delivered protection|`*.wdcp.microsoft.com` <p> `*.wdcpalt.microsoft.com` <p> `*.wd.microsoft.com`|
-|Microsoft Update Service (MU) and Windows Update Service (WU) <p>These services allow for security intelligence and product updates|`*.update.microsoft.com` <p> `*.delivery.mp.microsoft.com`<p> `*.windowsupdate.com` <p> For more details, see [Connection endpoints for Windows Update](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
-|Security intelligence updates Alternate Download Location (ADL)<p>This is an alternate location for Microsoft Defender Antivirus Security intelligence updates if the installed Security intelligence is out of date (7 or more days behind)|`*.download.microsoft.com` <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
+|Microsoft Update Service (MU) and Windows Update Service (WU) <p>These services allow for security intelligence and product updates|`*.update.microsoft.com` <p> `*.delivery.mp.microsoft.com`<p> `*.windowsupdate.com` <p> For more information, see [Connection endpoints for Windows Update](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
+|Security intelligence updates Alternate Download Location (ADL)<p>This is an alternate location for Microsoft Defender Antivirus Security intelligence updates if the installed Security intelligence is out of date (Seven or more days behind)|`*.download.microsoft.com` <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
 |Malware submission storage <p>This is the upload location for files submitted to Microsoft via the Submission form or automatic sample submission|`ussus1eastprod.blob.core.windows.net` <p> `ussus2eastprod.blob.core.windows.net` <p> `ussus3eastprod.blob.core.windows.net` <p> `ussus4eastprod.blob.core.windows.net` <p> `wsus1eastprod.blob.core.windows.net` <p> `wsus2eastprod.blob.core.windows.net` <p> `ussus1westprod.blob.core.windows.net` <p> `ussus2westprod.blob.core.windows.net` <p> `ussus3westprod.blob.core.windows.net` <p> `ussus4westprod.blob.core.windows.net` <p> `wsus1westprod.blob.core.windows.net` <p> `wsus2westprod.blob.core.windows.net` <p> `usseu1northprod.blob.core.windows.net` <p> `wseu1northprod.blob.core.windows.net` <p> `usseu1westprod.blob.core.windows.net` <p> `wseu1westprod.blob.core.windows.net` <p> `ussuk1southprod.blob.core.windows.net` <p> `wsuk1southprod.blob.core.windows.net` <p> `ussuk1westprod.blob.core.windows.net` <p> `wsuk1westprod.blob.core.windows.net`|
 |Certificate Revocation List (CRL) <p>This list is used by Windows when creating the SSL connection to MAPS for updating the CRL|`http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p> `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs`|
 |Symbol Store <p>The symbol store is used by Microsoft Defender Antivirus to restore certain critical files during remediation flows|`https://msdl.microsoft.com/download/symbols`|
-|Universal Telemetry Client <p> This client is used by Windows to send client diagnostic data <p> Microsoft Defender Antivirus uses telemetry for product quality monitoring purposes|The update uses SSL (TCP Port 443) to download manifests and upload diagnostic data to Microsoft that uses the following DNS endpoints: <p> `vortex-win.data.microsoft.com` <p> `settings-win.data.microsoft.com`|
+|Universal customer content Client <p> This client is used by Windows to send client diagnostic data <p> Microsoft Defender Antivirus uses General Data Protection Regulation for product quality and monitoring purposes|The update uses SSL (TCP Port 443) to download manifests and upload diagnostic data to Microsoft that uses the following DNS endpoints: <p> `vortex-win.data.microsoft.com` <p> `settings-win.data.microsoft.com`|
+|EDRCloud CnC|`winatp-gw-weu.microsoft.com` <br> `winatp-gw-neu.microsoft.com`|
+|EDRCloud Cyber|`eu.vortex-win.data.microsoft.com` <br> `eu-v20.events.data.microsoft.com`|
+|EDRCloud AutoIR|`automatedirstrprdweu.blob.core.windows.net` <br> `automatedirstrprdneu.blob.core.windows.net`|
 
 ## Validate connections between your network and the cloud
 
-After allowing the URLs listed above, you can test if you're connected to the Microsoft Defender Antivirus cloud service and are correctly reporting and receiving information to ensure you're fully protected.
+After allowing the URLs listed, test whether you're connected to the Microsoft Defender Antivirus cloud service. Test the URLs are correctly reporting and receiving information to ensure you're fully protected.
 
 ### Use the cmdline tool to validate cloud-delivered protection
 
@@ -116,3 +117,4 @@ You'll also see a detection under **Quarantined threats** in the **Scan history*
 
 - [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)
 - [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md)
+- [Important changes to Microsoft Active Protection Services endpoint](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006) 
