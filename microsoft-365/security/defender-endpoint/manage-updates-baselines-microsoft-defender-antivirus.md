@@ -16,7 +16,9 @@ ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
 ms.date: 01/06/2022
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365initiative-defender-endpoint
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
