@@ -76,7 +76,7 @@ To learn more about the MIP SDK, prerequisites, additional scenarios, and sample
 
 [Data loss prevention (DLP)](dlp-microsoft-teams.md) capabilities are widely used in Microsoft Teams particularly as organizations have shifted to remote work. Recently we [announced the general availability](https://devblogs.microsoft.com/microsoft365dev/change-notifications-for-microsoft-teams-messages-now-generally-available/) of the Microsoft Graph Change Notification API for messages in Teams. This API enables developers to build apps that can listen to Microsoft Teams messages in near-real time and then implement DLP scenarios for both customers and partners. Additionally, Microsoft Graph Patch API lets you apply DLP actions to Teams messages.
 
-These two APIs form the Microsoft Graph API for Teams DLP. You can get started by trying out the [sample app](https://github.com/microsoftgraph/aspnetcore-webhooks-sample). For more information about Microsoft Teams messaging webhooks, see the [documentation](/graph/api/subscription-post-subscriptions?view=graph-rest-beta&tabs=http).
+These two APIs form the Microsoft Graph API for Teams DLP. You can get started by trying out the [sample app](https://github.com/microsoftgraph/aspnetcore-webhooks-sample). For more information about Microsoft Teams messaging webhooks, see the [documentation](/graph/api/subscription-post-subscriptions).
 
 For the licensing requirements for Teams DLP, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
