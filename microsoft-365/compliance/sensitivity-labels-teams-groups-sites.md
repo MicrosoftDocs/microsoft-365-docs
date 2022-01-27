@@ -222,11 +222,13 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Def
 > [!NOTE]
 > This label setting is currently in preview.
 
-Another PowerShell advanced setting that you can configure for the sensitivity label to be applied to a SharePoint site is **MembersCanShare**. This setting is the equivalent configuration that you can set from the SharePoint admin center > **Site permissions** > **Site Sharing** > **Change how members can share** > **Sharing permissions**. The three options are listed with the equivalent values for the PowerShell advanced setting **MembersCanShare**:
+Another PowerShell advanced setting that you can configure for the sensitivity label to be applied to a SharePoint site is **MembersCanShare**. This setting is the equivalent configuration that you can set from the SharePoint admin center > **Site permissions** > **Site Sharing** > **Change how members can share** > **Sharing permissions**. 
+
+The three options are listed with the equivalent values for the PowerShell advanced setting **MembersCanShare**:
 
 |Option from the SharePoint admin center |Equivalent PowerShell value for MembersCanShare |
 |----------------------------------------|------------------------------------------------|
-|**Site owners and members can share files, folders, and the site. People with Edit permissions can share files and folders**| MemberShareAll|
+|**Site owners and members can share files, folders, and the site. People with Edit permissions can share files and folders.**| MemberShareAll|
 |**Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site.**|MemberShareFileAndFolder|
 |**Only site owners can share files, folders, and the site.**|MemberShareNone|
 
