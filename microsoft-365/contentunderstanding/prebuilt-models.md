@@ -49,7 +49,7 @@ Follow these steps to create a prebuilt model to classify documents in SharePoin
 
    If you want to create a traditional, untrained document understanding model instead of a prebuilt model, select **Custom document understanding**.
 
-4. Select **Advanced settings** if you want to configure the content type or add a retention label.
+4. If you want to change the content type or add a retention label, select **Advanced settings**.
 
     > [!NOTE]
     > Sensitivity labels are not available for prebuilt models at this time.
@@ -132,7 +132,7 @@ To rename an extractor from the **Extractors** panel:
 2. In the **Rename extractor** box, enter the new name of the extractor, and then select **Rename**.
 
 > [!NOTE]
-> You might want to do rename several of the detected and selected extractors because these are used as the column names when the model is applied to the library.
+> You might want to rename several of the detected and selected extractors because these are used as the column names when the model is applied to the library.
 
 ## See also
 
