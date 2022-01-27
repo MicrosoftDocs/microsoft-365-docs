@@ -57,10 +57,10 @@ There are two different methods for automatically applying a sensitivity label t
     Specific to auto-labeling for SharePoint and OneDrive:
     
     - Office files for Word (.docx), PowerPoint (.pptx), and Excel (.xlsx) are supported.
-        - These files can be auto-labeled at rest before or after the auto-labeling policies are created. Files cannot be auto-labeled if they are part of an open session (the file is open).
+        - These files can be auto-labeled at rest before or after the auto-labeling policies are created. Files cannot be auto-labeled if they're part of an open session (the file is open).
         - Currently, attachments to list items aren't supported and won't be auto-labeled.
     - Maximum of 25,000 automatically labeled files in your tenant per day.
-    - Maximum of 100 auto-labeling policies per tenant, each targeting up to 100 sites (SharePoint or OneDrive) when they are specified individually. You can also specify all sites, and this configuration is exempt from the 100 sites maximum.
+    - Maximum of 100 auto-labeling policies per tenant, each targeting up to 100 sites (SharePoint or OneDrive) when they're specified individually. You can also specify all sites, and this configuration is exempt from the 100 sites maximum.
     - Existing values for modified, modified by, and the date are not changed as a result of auto-labeling policies—for both simulation mode and when labels are applied.
     - When the label applies encryption, the [Rights Management issuer and Rights Management owner](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the account that last modified the file. If this account is no longer in Azure Active Directory, the label won't be applied because these values can't be set.
 
@@ -68,7 +68,7 @@ There are two different methods for automatically applying a sensitivity label t
     
     - Unlike manual labeling or auto-labeling with Office apps, PDF attachments as well as Office attachments are also scanned for the conditions you specify in your auto-labeling policy. When there is a match, the email is labeled but not the attachment.
         - For PDF files, if the label applies encryption, these files are encrypted by using [Office 365 Message Encryption (OME)](ome.md) when your tenant is [enabled for PDF attachments](ome-faq.yml#are-pdf-file-attachments-supported-).
-        - For these Office files, Word, PowerPoint, and Excel are supported. If the label applies encryption, they are encrypted by using [Office 365 Message Encryption (OME)](ome.md).
+        - For these Office files, Word, PowerPoint, and Excel are supported. If the label applies encryption, they're encrypted by using [Office 365 Message Encryption (OME)](ome.md).
     - If you have Exchange mail flow rules or data loss prevention (DLP) policies that apply IRM encryption: When content is identified by these rules or policies and an auto-labeling policy, the label is applied. If that label applies encryption, the IRM settings from the Exchange mail flow rules or DLP policies are ignored. However, if that label doesn't apply encryption, the IRM settings from the mail flow rules or DLP policies are applied in addition to the label.
     - Email that has IRM encryption with no label will be replaced by a label with any encryption settings when there is a match by using auto-labeling.
     - Incoming email is labeled when there is a match with your auto-labeling conditions. If the label is configured for [encryption](encryption-sensitivity-labels.md), that encryption is applied when the sender is from your organization but not applied when the sender is outside your organization.
@@ -228,7 +228,7 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
 
 Simulation mode is unique to auto-labeling policies and woven into the workflow. You can't automatically label documents and emails until your policy has run at least one simulation.
 
-Simulation mode supports up to 1,000,000 matched files. If more than this number of files are matched from an auto-labeling policy, you can't turn on the policy to apply the labels. In this case, you must reconfigure the auto-labeling policy so that fewer files are matched, and re-run simulation. This maximum of 1,000,000 matched files applies to simulation mode only and not to an auto-labeling policy that's already turned on to apply sensitivity labels.
+Simulation mode supports up to 1,000,000 matched files. If more than this number of files are matched from an auto-labeling policy, you can't turn on the policy to apply the labels. In this case, you must reconfigure the auto-labeling policy so that fewer files are matched, and rerun simulation. This maximum of 1,000,000 matched files applies to simulation mode only and not to an auto-labeling policy that's already turned on to apply sensitivity labels.
 
 Workflow for an auto-labeling policy:
 
@@ -334,11 +334,11 @@ You can modify your policy directly from this interface:
 
     When you're ready to run the policy without simulation, select the **Turn on policy** option.
 
-Auto-policies run continuously until they are deleted. For example, new and modified files will be included with the current policy settings.
+Auto-policies run continuously until they're deleted. For example, new and modified files will be included with the current policy settings.
 
 ### Monitoring your auto-labeling policy
 
-After your auto-labeling policy is turned on, you can view the labeling progress for files in your chosen SharePoint and OneDrive locations. Emails are not included in the labeling progress because they are automatically labeled as they are sent.
+After your auto-labeling policy is turned on, you can view the labeling progress for files in your chosen SharePoint and OneDrive locations. Emails are not included in the labeling progress because they're automatically labeled as they're sent.
 
 The labeling progress includes the files to be labeled by the policy, the files labeled in the last 7 days, and the total files labeled. Because of the maximum of labeling 25,000 files a day, this information provides you with visibility into the current labeling progress for your policy and how many files are still to be labeled.
 
