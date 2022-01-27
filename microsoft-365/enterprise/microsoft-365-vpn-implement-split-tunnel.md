@@ -3,7 +3,7 @@ title: "Implementing VPN split tunneling for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 1/20/2022
+ms.date: 1/27/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -310,19 +310,76 @@ For Azure CDN from Verizon (Edgecast) you can find an exhaustive list using [htt
 
 To implement this in a PAC file you can use the following example which sends the Microsoft 365 Optimize traffic direct (which is recommended best practice) via FQDN, and the critical Stream/Live Events traffic direct via a combination of the FQDN and the returned IP address. The placeholder name _Contoso_ would need to be edited to your specific tenant's name where _contoso_ is from contoso.onmicrosoft.com
 
-##### Example PAC file (November 2021)
+##### Example PAC file
 
-Here is an example how to generate the PAC files:
+Here is an example of how to generate the PAC files:
 
+1. Save the script below to your local hard disk as _Get-TLEPacFile.ps1_.
 1. Go to the [Verizon URL](/rest/api/cdn/edge-nodes/list#code-try-0) and download the resulting JSON (copy paste it into a file like cdnedgenodes.json)
-2. Put the file into the same folder as the script.
-3. In a PowerShell window, run the following command. Change out the tenant name for something else if you want the SPO URLs. This is Type 2, so **Optimize** and **Allow** (Type 1 is Optimize only).
+1. Put the file into the same folder as the script.
+1. In a PowerShell window, run the following command. Change out the tenant name for something else if you want the SPO URLs. This is Type 2, so **Optimize** and **Allow** (Type 1 is Optimize only).
 
    ```powershell
    .\Get-TLEPacFile.ps1 -Instance Worldwide -Type 2 -TenantName <contoso> -CdnEdgeNodesFilePath .\cdnedgenodes.json -FilePath TLE.pac
    ```
 
-4. The TLE.pac file will contain all the namespaces and IPs (IPv4/IPv6).
+5. The TLE.pac file will contain all the namespaces and IPs (IPv4/IPv6).
+
+###### Get-TLEPacFile.ps1
+
+```powershell
+function FindProxyForURL(url, host)
+{
+
+var direct = "DIRECT";
+var proxyServer = "PROXY 10.1.2.3:8081";
+
+//Office 365 Optimize endpoints direct
+
+if(shExpMatch(host, "outlook.office.com")
+|| shExpMatch(host, "outlook.office365.com")
+|| shExpMatch(host, "contoso.sharepoint.com")
+|| shExpMatch(host, "contoso-my.sharepoint.com"))
+
+{
+return direct;
+}
+
+if(shExpMatch(host, "*.streaming.mediaservices.windows.net")
+|| shExpMatch(host, "*.azureedge.net")
+|| shExpMatch(host, "*.bmc.cdn.office.net")
+|| shExpMatch(host, "*.media.azure.net"))
+
+{
+var resolved_ip = dnsResolve(host);
+
+if (isInNet(resolved_ip, '72.21.81.200', '255.255.255.255') ||
+isInNet(resolved_ip, '152.199.19.161', '255.255.255.255') ||
+isInNet(resolved_ip, '117.18.232.200', '255.255.255.255') ||
+isInNet(resolved_ip, '192.16.48.200', '255.255.255.255') ||
+isInNet(resolved_ip, '93.184.215.201', '255.255.255.255') ||
+isInNet(resolved_ip, '68.232.34.200', '255.255.255.255') ||
+isInNet(resolved_ip, '192.229.232.200', '255.255.255.255') ||
+isInNet(resolved_ip, '152.195.19.97', '255.255.255.255') ||
+isInNet(resolved_ip, '152.199.52.147', '255.255.255.255') ||
+isInNet(resolved_ip, '152.199.21.175', '255.255.255.255') ||
+isInNet(resolved_ip, '152.199.39.108', '255.255.255.255') ||
+isInNet(resolved_ip, '13.107.213.0', '255.255.255.0') ||
+isInNet(resolved_ip, '13.107.224.0', '255.255.255.0') ||
+isInNet(resolved_ip, '13.107.208.0', '255.255.255.0') ||
+isInNet(resolved_ip, '13.107.219.0', '255.255.255.0') ||
+isInNet(resolved_ip, '13.107.246.0', '255.255.255.0') ||
+isInNet(resolved_ip, '13.107.253.0', '255.255.255.0'))
+
+{
+return direct;
+}
+}
+
+// Default Traffic Forwarding
+return proxyServer;
+}
+```
 
 The script will automatically parse the Azure list based on the [download URL](https://www.microsoft.com/download/details.aspx?id=56519) and keys off of **AzureFrontDoor.Frontend**, so there is no need to get that manually.
 
