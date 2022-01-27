@@ -31,9 +31,6 @@ Currently, there are two prebuilt models available: invoice and receipt.
 
 Additional prebuilt models will be available in future releases.
 
-> [!NOTE]
-> You can use retention labels in these prebuilt models. However, sensitivity labels are not supported at this time.
-
 ## Create a prebuilt model
 
 Follow these steps to create a prebuilt model to classify documents in SharePoint Syntex.
@@ -52,7 +49,12 @@ Follow these steps to create a prebuilt model to classify documents in SharePoin
 
    If you want to create a traditional, untrained document understanding model instead of a prebuilt model, select **Custom document understanding**.
 
-4. Select **Create**.
+4. Select **Advanced settings** if you want to configure the content type or add a retention label.
+
+    > [!NOTE]
+    > Sensitivity labels are not available for prebuilt models at this time.
+
+5. Select **Create**. The model will be saved in the **Models** library.
 
 ## Add a file to analyze
 
@@ -99,7 +101,7 @@ When you select an extractor, a **Select extractor?** box is displayed in the do
 
 The original value is what is actually in the document. The extracted value is what will be written into the column in SharePoint. When the model is applied to a library, you can use column formatting to specify how you want it to look in the document.
 
-Continue to select additional extractors you want to you use. 
+Continue to select additional extractors you want to you use. You can also add other files to analyze for this model configuration.
 
 ## Apply extractors to the model
 
@@ -128,3 +130,10 @@ To rename an extractor from the **Extractors** panel:
     ![Screenshot of the Extractors panel showing how to select an entity field.](../media/content-understanding/prebuilt-extractors-panel-rename-field.png) 
 
 2. In the **Rename extractor** box, enter the new name of the extractor, and then select **Rename**.
+
+> [!NOTE]
+> You might want to do rename several of the detected and selected extractors because these are used as the column names when the model is applied to the library.
+
+## See also
+
+[Apply a document understanding model](apply-a-model.md)
