@@ -65,7 +65,7 @@ The following table lists the supported operating systems for attack surface red
 |[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | N | N |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y | Y |
-| **Rule name** | **Windows&nbsp;Server 2016** <sup>[[1](#fn1)]<sup></sup> | **Windows&nbsp;Server 2012 R2** <sup>[[1](#fn1)]<sup></sup> |
+|  |  |  |
 
 (<a id="fn1">1</a>) Refers to the modern, unified solution for Windows Server 2012 and 2016. For more information, see [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
 
@@ -77,7 +77,7 @@ The following table lists the supported operating systems for rules that are  cu
 
 > [!Note]
 >
-> - Unless otherwise indicated, the minimum Windows&nbsp;10 build is version 1709 (RS3, build 16299) or later; the minimum Windows&nbsp;Server build is version is 1809 or later.
+> Unless otherwise indicated, the minimum Windows&nbsp;10 build is version 1709 (RS3, build 16299) or later; the minimum Windows&nbsp;Server build is version is 1809 or later.
 >
 
 |Rule name|Windows&nbsp;10|Windows&nbsp;Server 2019|Windows&nbsp;Server|
@@ -130,6 +130,40 @@ Links to information about configuration management system versions referenced i
 - [Configuration Manager CB 1802](/configmgr/core/servers/manage/updates)
 - [Microsoft Endpoint Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM is now Microsoft Endpoint Configuration Manager._
+
+## Per rule alert and notification details
+
+Toast notifications are generated for all rules, but only for rules in Block mode.
+
+For rules with the “Rule State” specified:
+
+- ASR rules with \<ASR Rule, Rule State> combinations are used to surface alerts (toast notifications) on Microsoft Defender for Endpoint only for devices at high-cloud block level. Devices not at high-cloud block level will not generate alerts for any \<ASR Rule, Rule State> combinations
+- EDR alerts are generated for ASR rules with the specified states, but only for devices at high-cloud block level
+- In the following table, "_\*_" indicates EDR alerts and toast notifications that require devices to be at high-cloud block level
+
+| Rule name | Rule State: | Alert configurable in EDR? <br>(Yes&nbsp;\|&nbsp;No) | Generates alerts in EDR? <br>(Yes&nbsp;\|&nbsp;No) | Generates toast notification? <br>(Only in Block mode) <br>(Yes&nbsp;\|&nbsp;No) |
+|:---|:---:|:---:|:---:|:---:|
+| Block abuse of exploited vulnerable signed drivers |   |   | Y | Y |
+| Block Adobe Reader from creating child processes | Block |   | Y \* | Y \* |
+| Block all Office applications from creating child processes |   |   | Y | Y |
+| Block credential stealing from the Windows local security authority subsystem (lsass.exe) |   |   | Y | Y |
+| Block executable content from email client and webmail | Block  |   | Y \* | Y \* |
+| Block executable files from running unless they meet a prevalence, age, or trusted list criterion |   |   | Y | Y |
+| Block execution of potentially obfuscated scripts | Audit&nbsp;\|&nbsp;Block |   | Y \* \| Y \* | N \| Y \* |
+| Block JavaScript or VBScript from launching downloaded executable content | Block |   |  Y \* | Y  \* |
+| Block Office applications from creating executable content |   |   | Y | Y |
+| Block Office applications from injecting code into other processes |   |   | Y | Y |
+| Block Office communication application from creating child processes |   |   | Y | Y |
+| Block persistence through WMI event subscription <br>\* File and folder exclusions not supported. |  Audit&nbsp;\|&nbsp;Block |  | Y \* \| Y \* | N \| Y \* |
+| Block process creations originating from PSExec and WMI commands  |   |   | Y\* | Y |
+| Block untrusted and unsigned processes that run from USB | Audit&nbsp;\|&nbsp;Block |   | Y\* \| Y \* | N \| Y \* |
+| Block Win32 API calls from Office macros |   |   | Y | Y |
+| Use advanced protection against ransomware | Audit&nbsp;\|&nbsp;Block |   | Y\* \| Y \* | N \| Y \* |
+| Block abuse of exploited vulnerable signed drivers |   |   |  Y | Y |
+| Block Adobe Reader from creating child processes |   |   |  Y | Y |
+| Block all Office applications from creating child processes |   |   |  Y | Y |
+| Block credential stealing from the Windows local security authority subsystem (lsass.exe) |   |   |  Y | Y |
+|  |  |  |  |  |
 
 ## Per rule descriptions
 
