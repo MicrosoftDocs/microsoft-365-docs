@@ -56,7 +56,7 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 
 ## Configure the proxy server manually using a registry-based static proxy
 
-Configure a registry-based static proxy for Defender for Endpoint detection and response (EDR) sensor to report diagnostic data and communicate with Defender for Endpoint services if a computer is not permitted to connect to the Internet.
+Configure a registry-based static proxy for Defender for Endpoint detection and response (EDR) sensor to report diagnostic data and communicate with Defender for Endpoint services if a computer isn't permitted to connect to the Internet.
 
 > [!NOTE]
 > When using this option on Windows 10, or Windows 11, or Windows Server 2019, or Windows Server 2022, it is recommended to have the following (or later) build and cumulative update rollup:
@@ -175,15 +175,13 @@ The following downloadable spreadsheet lists the services and their associated U
 |
 
 If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed in the above table from HTTPS scanning.
-In your firewall, open all the URLs where the geography column is WW. For rows where the geography column is not WW, open the URLs to your specific data location. To verify your data location setting, see [Verify data storage location and update data retention settings for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/data-retention-settings).
+In your firewall, open all the URLs where the geography column is WW. For rows where the geography column isn't WW, open the URLs to your specific data location. To verify your data location setting, see [Verify data storage location and update data retention settings for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/data-retention-settings).
 
 > [!NOTE]
 > settings-win.data.microsoft.com is only needed if you have Windows devices running version 1803 or earlier.<br>
 >
 > URLs that include v20 in them are only needed if you have Windows devices running version 1803 or later. For example, `us-v20.events.data.microsoft.com` is needed for a Windows device running version 1803 or later and onboarded to US Data Storage region.
 >
-> The above spreadsheet relates to MDE EDR, if you are using Microsoft Defender Antivirus in your environment, see [Configure network connections to the Microsoft Defender Antivirus cloud service](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
-
 If a proxy or firewall is blocking anonymous traffic, as Defender for Endpoint sensor is connecting from system context, make sure anonymous traffic is permitted in the previously listed URLs.
 
 > [!NOTE]
@@ -229,7 +227,7 @@ The wildcards (\*) used in \*.ods.opinsights.azure.com, \*.oms.opinsights.azure.
 The \*.blob.core.windows.net URL endpoint can be replaced with the URLs shown in the "Firewall Rule: \*.blob.core.windows.net" section of the test results.
 
 > [!NOTE]
-> In the case of onboarding via Microsoft Defender for Cloud, multiple workspaces maybe used. You will need to perform the TestCloudConnection.exe procedure above on an onboarded machine from each workspace (to determine if there are any changes to the *.blob.core.windows.net URLs between the workspaces).
+> In the case of onboarding via Microsoft Defender for Cloud, multiple workspaces maybe used. You will need to perform the TestCloudConnection.exe procedure on an onboarded machine from each workspace (to determine if there are any changes to the *.blob.core.windows.net URLs between the workspaces).
 
 ## Verify client connectivity to Microsoft Defender for Endpoint service URLs
 
@@ -281,7 +279,6 @@ However, if the connectivity check results indicate a failure, an HTTP error is 
 
 ## Related topics
 
-- [Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)
 - [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md)
 - [Onboard Windows devices](configure-endpoints.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
