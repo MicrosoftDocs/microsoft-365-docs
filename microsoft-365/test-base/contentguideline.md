@@ -107,6 +107,11 @@ These binaries should include everything necessary for installation of the appli
 > [!NOTE]
 > The uploaded zip file cannot have any spaces or special characters in its name
 
+## 5. Application/Test rules
+
+In order for your applications/tests to run correctly under the Test Base infrastructure, they need to comply to the rules described in [Application/Test rules
+](rules.md). 
+
 ## Next steps
 
 Advance to the next article to view some **Frequently Asked Questions (FAQ)**
