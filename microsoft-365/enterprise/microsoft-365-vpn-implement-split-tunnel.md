@@ -328,56 +328,404 @@ Here is an example of how to generate the PAC files:
 ###### Get-TLEPacFile.ps1
 
 ```powershell
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT License.
+
+<#PSScriptInfo
+
+.VERSION 1.0.4
+
+.AUTHOR Microsoft Corporation
+
+.GUID 7f692977-e76c-4582-97d5-9989850a2529
+
+.COMPANYNAME Microsoft
+
+.COPYRIGHT
+Copyright (c) Microsoft Corporation. All rights reserved.
+Licensed under the MIT License.
+
+.TAGS PAC Microsoft Microsoft365 365
+
+.LICENSEURI
+
+.PROJECTURI http://aka.ms/ipurlws
+
+.ICONURI
+
+.EXTERNALMODULEDEPENDENCIES
+
+.REQUIREDSCRIPTS
+
+.EXTERNALSCRIPTDEPENDENCIES
+
+.RELEASENOTES
+
+#>
+
+<#
+
+.SYNOPSIS
+
+Create a PAC file for Microsoft 365 prioritized connectivity
+
+.DESCRIPTION
+
+This script will access updated information to create a PAC file to prioritize Microsoft 365 Urls for
+better access to the service. This script will allow you to create different types of files depending
+on how traffic needs to be prioritized.
+
+.PARAMETER Instance
+
+The service instance inside Microsoft 365.
+
+.PARAMETER ClientRequestId
+
+The client request id to connect to the web service to query up to date Urls.
+
+.PARAMETER DirectProxySettings
+
+The direct proxy settings for priority traffic.
+
+.PARAMETER DefaultProxySettings
+
+The default proxy settings for non priority traffic.
+
+.PARAMETER Type
+
+The type of prioritization to give. Valid values are 1 and 2, which are 2 different modes of operation.
+Type 1 will send Optimize traffic to the direct route. Type 2 will send Optimize and Allow traffic to
+the direct route.
+
+.PARAMETER Lowercase
+
+Flag this to include lowercase transformation into the PAC file for the host name matching.
+
+.PARAMETER TenantName
+
+The tenant name to replace wildcard Urls in the webservice.
+
+.PARAMETER ServiceAreas
+
+The service areas to filter endpoints by in the webservice.
+
+.PARAMETER FilePath
+
+The file to print the content to.
+
+.EXAMPLE
+
+Get-TLEPacFile.ps1 -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7 -DefaultProxySettings "PROXY 4.4.4.4:70" -FilePath type1.pac
+
+.EXAMPLE
+
+Get-TLEPacFile.ps1 -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7 -Instance China -Type 2 -DefaultProxySettings "PROXY 4.4.4.4:70" -FilePath type2.pac
+
+.EXAMPLE
+
+Get-TLEPacFile.ps1 -ClientRequestId b10c5ed1-bad1-445f-b386-b919946339a7 -Instance WorldWide -Lowercase -TenantName tenantName -ServiceAreas Sharepoint
+
+#>
+
+#Requires -Version 2
+
+[CmdletBinding(SupportsShouldProcess=$True)]
+Param (
+    [Parameter(Mandatory = $false)]
+    [ValidateSet('Worldwide', 'Germany', 'China', 'USGovDoD', 'USGovGCCHigh')]
+    [String] $Instance = "Worldwide",
+
+    [Parameter(Mandatory = $false)]
+    [ValidateNotNullOrEmpty()]
+    [guid] $ClientRequestId = [Guid]::NewGuid().Guid,
+
+    [Parameter(Mandatory = $false)]
+    [ValidateNotNullOrEmpty()]
+    [String] $DirectProxySettings = 'DIRECT',
+
+    [Parameter(Mandatory = $false)]
+    [ValidateNotNullOrEmpty()]
+    [String] $DefaultProxySettings = 'PROXY 10.10.10.10:8080',
+
+    [Parameter(Mandatory = $false)]
+    [ValidateRange(1, 2)]
+    [int] $Type = 1,
+
+    [Parameter(Mandatory = $false)]
+    [switch] $Lowercase = $false,
+
+    [Parameter(Mandatory = $false)]
+    [ValidateNotNullOrEmpty()]
+    [string] $TenantName,
+
+    [Parameter(Mandatory = $false)]
+    [ValidateSet('Exchange', 'SharePoint', 'Common', 'Skype')]
+    [string[]] $ServiceAreas,
+
+    [Parameter(Mandatory = $false)]
+    [ValidateNotNullOrEmpty()]
+    [string] $FilePath,
+
+    [Parameter(Mandatory = $false)]
+    [ValidateNotNullOrEmpty()]
+    [string] $CdnEdgeNodesFilePath
+)
+
+##################################################################################################################
+### Global constants
+##################################################################################################################
+
+$baseServiceUrl = "https://endpoints.office.com/endpoints/$Instance/?ClientRequestId={$ClientRequestId}"
+$directProxyVarName = "direct"
+$defaultProxyVarName = "proxyServer"
+$bl = "`r`n"
+
+##################################################################################################################
+### Functions to create PAC files
+##################################################################################################################
+
+function Get-PacClauses
+{
+    param(
+        [Parameter(Mandatory = $false)]
+        [string[]] $Urls,
+
+        [Parameter(Mandatory = $true)]
+        [ValidateNotNullOrEmpty()]
+        [String] $ReturnVarName
+    )
+
+    if (!$Urls)
+    {
+        return ""
+    }
+
+    $clauses =  (($Urls | ForEach-Object { "shExpMatch(host, `"$_`")" }) -Join "$bl        || ")
+
+@"
+    if($clauses)
+    {
+        return $ReturnVarName;
+    }
+"@
+}
+
+function Get-PacString
+{
+    param(
+        [Parameter(Mandatory = $true)]
+        [ValidateNotNullOrEmpty()]
+        [array[]] $MapVarUrls
+    )
+
+@"
+// This PAC file will provide proxy config to Microsoft 365 services
+//  using data from the public web service for all endpoints
 function FindProxyForURL(url, host)
 {
+    var $directProxyVarName = "$DirectProxySettings";
+    var $defaultProxyVarName = "$DefaultProxySettings";
 
-var direct = "DIRECT";
-var proxyServer = "PROXY 10.1.2.3:8081";
+$( if ($Lowercase) { "    host = host.toLowerCase();" })
 
-//Office 365 Optimize endpoints direct
+$( ($MapVarUrls | ForEach-Object { Get-PACClauses -ReturnVarName $_.Item1 -Urls $_.Item2 }) -Join "$bl$bl" )
 
-if(shExpMatch(host, "outlook.office.com")
-|| shExpMatch(host, "outlook.office365.com")
-|| shExpMatch(host, "contoso.sharepoint.com")
-|| shExpMatch(host, "contoso-my.sharepoint.com"))
+$( if (!$ServiceAreas -or $ServiceAreas.Contains('Skype')) { Get-TLEPacConfiguration })
 
-{
-return direct;
+    return $defaultProxyVarName;
+}
+"@ -replace "($bl){3,}","$bl$bl" # Collapse more than one blank line in the PAC file so it looks better.
 }
 
-if(shExpMatch(host, "*.streaming.mediaservices.windows.net")
-|| shExpMatch(host, "*.azureedge.net")
-|| shExpMatch(host, "*.bmc.cdn.office.net")
-|| shExpMatch(host, "*.media.azure.net"))
+##################################################################################################################
+### Functions to get and filter endpoints
+##################################################################################################################
 
-{
-var resolved_ip = dnsResolve(host);
+function Get-TLEPacConfiguration {
+    param ()
+    $PreBlock = @"
+    // Don't Proxy Teams Live Events traffic
 
-if (isInNet(resolved_ip, '72.21.81.200', '255.255.255.255') ||
-isInNet(resolved_ip, '152.199.19.161', '255.255.255.255') ||
-isInNet(resolved_ip, '117.18.232.200', '255.255.255.255') ||
-isInNet(resolved_ip, '192.16.48.200', '255.255.255.255') ||
-isInNet(resolved_ip, '93.184.215.201', '255.255.255.255') ||
-isInNet(resolved_ip, '68.232.34.200', '255.255.255.255') ||
-isInNet(resolved_ip, '192.229.232.200', '255.255.255.255') ||
-isInNet(resolved_ip, '152.195.19.97', '255.255.255.255') ||
-isInNet(resolved_ip, '152.199.52.147', '255.255.255.255') ||
-isInNet(resolved_ip, '152.199.21.175', '255.255.255.255') ||
-isInNet(resolved_ip, '152.199.39.108', '255.255.255.255') ||
-isInNet(resolved_ip, '13.107.213.0', '255.255.255.0') ||
-isInNet(resolved_ip, '13.107.224.0', '255.255.255.0') ||
-isInNet(resolved_ip, '13.107.208.0', '255.255.255.0') ||
-isInNet(resolved_ip, '13.107.219.0', '255.255.255.0') ||
-isInNet(resolved_ip, '13.107.246.0', '255.255.255.0') ||
-isInNet(resolved_ip, '13.107.253.0', '255.255.255.0'))
+    if(shExpMatch(host, "*.azureedge.net")
+    || shExpMatch(host, "*.bmc.cdn.office.net")
+    || shExpMatch(host, "*.media.azure.net"))
+    {
+        var resolved_ip = dnsResolveEx(host);
 
-{
-return direct;
+"@
+    $TLESb = New-Object 'System.Text.StringBuilder'
+    $TLESb.Append($PreBlock) | Out-Null
+
+    if (![string]::IsNullOrEmpty($CdnEdgeNodesFilePath) -and (Test-Path -Path $CdnEdgeNodesFilePath)) {
+        $CdnData = Get-Content -Path $CdnEdgeNodesFilePath -Raw -ErrorAction SilentlyContinue | ConvertFrom-Json | Select-Object -ExpandProperty value | 
+            Where-Object { $_.name -eq 'Premium_Verizon'} | Select-Object -First 1 -ExpandProperty properties | 
+            Select-Object -ExpandProperty ipAddressGroups
+        $CdnData | Select-Object -ExpandProperty ipv4Addresses | ForEach-Object {
+            if ($TLESb.Length -eq $PreBlock.Length) {
+                $TLESb.Append("        if(") | Out-Null
+            }
+            else {
+                $TLESb.AppendLine() | Out-Null
+                $TLESb.Append("        || ") | Out-Null
+            }
+            $TLESb.Append("isInNetEx(resolved_ip, `"$($_.BaseIpAddress)/$($_.prefixLength)`")") | Out-Null
+        }
+        $CdnData | Select-Object -ExpandProperty ipv6Addresses | ForEach-Object {
+            if ($TLESb.Length -eq $PreBlock.Length) {
+                $TLESb.Append("        if(") | Out-Null
+            }
+            else {
+                $TLESb.AppendLine() | Out-Null
+                $TLESb.Append("        || ") | Out-Null
+            }
+            $TLESb.Append("isInNetEx(resolved_ip, `"$($_.BaseIpAddress)/$($_.prefixLength)`")") | Out-Null
+        }
+    }
+    $AzureIPsUrl = Invoke-WebRequest -Uri "https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519" -UseBasicParsing -ErrorAction SilentlyContinue  | 
+            Select-Object -ExpandProperty Links | Select-Object -ExpandProperty href | 
+            Where-Object { $_.EndsWith('.json') -and $_ -match 'ServiceTags' } | Select-Object -First 1
+    if ($AzureIPsUrl) {
+        Invoke-RestMethod -Uri $AzureIPsUrl -ErrorAction SilentlyContinue | Select-Object -ExpandProperty values | 
+            Where-Object { $_.name -eq 'AzureFrontDoor.Frontend' } | Select-Object -First 1 -ExpandProperty properties |
+            Select-Object -ExpandProperty addressPrefixes | ForEach-Object {
+                if ($TLESb.Length -eq $PreBlock.Length) {
+                    $TLESb.Append("        if(") | Out-Null
+                }
+                else {
+                    $TLESb.AppendLine() | Out-Null
+                    $TLESb.Append("        || ") | Out-Null
+                }
+                $TLESb.Append("isInNetEx(resolved_ip, `"$_`")") | Out-Null
+            }
+    }
+    if ($TLESb.Length -gt $PreBlock.Length) {
+        $TLESb.AppendLine(")") | Out-Null
+        $TLESb.AppendLine("        {") | Out-Null
+        $TLESb.AppendLine("            return $directProxyVarName;") | Out-Null
+        $TLESb.AppendLine("        }") | Out-Null
+    }
+    else {
+        $TLESb.AppendLine("        // no addresses found for service via script") | Out-Null
+    }
+    $TLESb.AppendLine("    }") | Out-Null
+    return $TLESb.ToString()
 }
+
+function Get-Regex
+{
+    param(
+        [Parameter(Mandatory = $true)]
+        [ValidateNotNullOrEmpty()]
+        [string] $Fqdn
+    )
+
+    return "^" + $Fqdn.Replace(".", "\.").Replace("*", ".*").Replace("?", ".?") + "$"
 }
 
-// Default Traffic Forwarding
-return proxyServer;
+function Match-RegexList
+{
+    param(
+        [Parameter(Mandatory = $true)]
+        [ValidateNotNullOrEmpty()]
+        [string] $ToMatch,
+
+        [Parameter(Mandatory = $false)]
+        [string[]] $MatchList
+    )
+
+    if (!$MatchList)
+    {
+        return $false
+    }
+    foreach ($regex in $MatchList)
+    {
+        if ($regex -ne $ToMatch -and $ToMatch -match (Get-Regex $regex))
+        {
+            return $true
+        }
+    }
+    return $false
+}
+
+function Get-Endpoints
+{
+    $url = $baseServiceUrl
+    if ($TenantName)
+    {
+        $url += "&TenantName=$TenantName"
+    }
+    if ($ServiceAreas)
+    {
+        $url += "&ServiceAreas=" + ($ServiceAreas -Join ",")
+    }
+    return Invoke-RestMethod -Uri $url
+}
+
+function Get-Urls
+{
+    param(
+        [Parameter(Mandatory = $false)]
+        [psobject[]] $Endpoints
+    )
+
+    if ($Endpoints)
+    {
+        return $Endpoints | Where-Object { $_.urls } | ForEach-Object { $_.urls } | Sort-Object -Unique
+    }
+    return @()
+}
+
+function Get-UrlVarTuple
+{
+    param(
+        [Parameter(Mandatory = $true)]
+        [ValidateNotNullOrEmpty()]
+        [string] $VarName,
+
+        [Parameter(Mandatory = $false)]
+        [string[]] $Urls
+    )
+    return New-Object 'Tuple[string,string[]]'($VarName, $Urls)
+}
+
+function Get-MapVarUrls
+{
+    Write-Verbose "Retrieving all endpoints for instance $Instance from web service."
+    $Endpoints = Get-Endpoints
+
+    if ($Type -eq 1)
+    {
+        $directUrls = Get-Urls ($Endpoints | Where-Object { $_.category -eq "Optimize" })
+        $nonDirectPriorityUrls = Get-Urls ($Endpoints | Where-Object { $_.category -ne "Optimize" }) | Where-Object { Match-RegexList $_ $directUrls }
+        return @(
+            Get-UrlVarTuple -VarName $defaultProxyVarName -Urls $nonDirectPriorityUrls
+            Get-UrlVarTuple -VarName $directProxyVarName -Urls $directUrls
+        )
+    }
+    elseif ($Type -eq 2)
+    {
+        $directUrls = Get-Urls ($Endpoints | Where-Object { $_.category -in @("Optimize", "Allow")})
+        $nonDirectPriorityUrls = Get-Urls ($Endpoints | Where-Object { $_.category -notin @("Optimize", "Allow") }) | Where-Object { Match-RegexList $_ $directUrls }
+        return @(
+            Get-UrlVarTuple -VarName $defaultProxyVarName -Urls $nonDirectPriorityUrls
+            Get-UrlVarTuple -VarName $directProxyVarName -Urls $directUrls
+        )
+    }
+}
+
+##################################################################################################################
+### Main script
+##################################################################################################################
+
+$content = Get-PacString (Get-MapVarUrls)
+
+if ($FilePath)
+{
+    $content | Out-File -FilePath $FilePath -Encoding ascii
+}
+else
+{
+    $content
 }
 ```
 
