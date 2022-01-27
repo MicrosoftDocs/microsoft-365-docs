@@ -23,7 +23,17 @@ Prebuilt models are pretrained to recognize documents and the structured informa
 
 You can also customize a prebuilt model, review it to see how it works on your documents, and customize the names to match your documents or naming conventions. 
 
-Currently, there are two prebuilt models available: invoice and receipt. Additional prebuilt models will be available in future releases.
+You configure the prebuilt model by analyzing one of your files and selecting the detected fields that make sense for your needs (rather than stating it can be used as-is and that "customize by configure" is optional). Prebuilt models aren't editable so if the model doesn't detect, try different files or note that it probably won't work for that file.
+
+Prebuilt models use optical character recognition (OCR) combined with deep learning models to identify and extract predefined text and data fields common to specific form and document types. 
+
+Currently, there are two prebuilt models available: invoice and receipt.
+
+- The invoice prebuilt model analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction) such as customer name, billing address, due date, and amount due.
+
+- The receipt model analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction) such as merchant name, merchant phone number, transaction date, tax, and transaction total.
+
+Additional prebuilt models will be available in future releases.
 
 > [!NOTE]
 > You can use retention labels in these prebuilt models. However, sensitivity labels are not supported at this time.
