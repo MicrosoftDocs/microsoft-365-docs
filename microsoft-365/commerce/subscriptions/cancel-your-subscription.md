@@ -25,7 +25,7 @@ ms.date: 01/20/2022
 
 # Cancel your subscription
 
-You can cancel your subscription at any time in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 356 admin center</a>. However, to receive a refund, you must meet certain refund eligibility requirements. For more information, see [Understand refund eligibility](#understand-refund-eligibility).
+You can cancel your subscription at any time in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. However, to receive a refund, you must meet certain refund eligibility requirements. For more information, see [Understand refund eligibility](#understand-refund-eligibility).
 
 If you have multiple subscriptions to the same product, such as Microsoft 365 Business Premium, canceling one subscription won’t impact the purchased licenses or services inside the others.
 
