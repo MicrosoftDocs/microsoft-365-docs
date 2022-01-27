@@ -16,7 +16,9 @@ ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
 ms.date: 01/06/2022
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365initiative-defender-endpoint
 ---
 
 # Manage Microsoft Defender Antivirus updates and apply baselines
@@ -548,12 +550,12 @@ Engine: **1.1.16700.2**<br/>
 </details>
 
 <details>
-<summary> November-2019 (Platform: 4.18.1911.3 | Engine: 1.1.16600.7)</summary>
+<summary> November-2019 (Platform: 4.18.1911.3 | Engine: 1.1.16600.7)</summary>
 
-Security intelligence update version: **1.307.13.0**<br/>
-Released: **December 7, 2019**<br/>
-Platform: **4.18.1911.3**<br/>
-Engine: **1.1.17000.7**<br/>
+Security intelligence update version: **1.307.13.0**<br/>
+Released: **December 7, 2019**<br/>
+Platform: **4.18.1911.3**<br/>
+Engine: **1.1.17000.7**<br/>
 Support phase: **No support**<br/>
 
 ### What's new
