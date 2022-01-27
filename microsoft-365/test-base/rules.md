@@ -23,6 +23,7 @@ All applications or tests in Test Base need to comply with the following rules:
 
 The following folders are used by the Test Base infrastructure:
 * %SYSTEMDRIVE%\USL
+* %SYSTEMDRIVE%\EtlExport
 * %SYSTEMDRIVE%\Ffmpeg
 * %SYSTEMDRIVE%\Monitoring
 * %SYSTEMDRIVE%\powershell-yaml
