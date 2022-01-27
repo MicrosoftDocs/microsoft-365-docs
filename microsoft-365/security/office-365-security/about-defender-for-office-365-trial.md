@@ -57,7 +57,7 @@ A Microsoft Defender for Office 365 trial is an easy way to try out the capabili
 
 ## Set up a Defender for Office 365 trial
 
-A trial allows organizations to easily set up and configure the Defender for Office 365 capabilities. During setup, policies that are exclusive to Defender for Office 365 (specifically, [Safe Attachments for email messages](safe-attachments.md), [Safe Links for email messages and Microsoft Teams](safe-links.md), and [impersonation protection in anti-spam policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)) are applied using the Standard template for [preset security policies](preset-security-policies.md).
+A trial allows organizations to easily set up and configure the Defender for Office 365 capabilities. During setup, policies that are exclusive to Defender for Office 365 (specifically, [Safe Attachments for email messages](safe-attachments.md), [Safe Links for email messages and Microsoft Teams](safe-links.md), and [impersonation protection in anti-phishing policies](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)) are applied using the Standard template for [preset security policies](preset-security-policies.md).
 
 By default, these policies are scoped to all users in the organization, but during or after the setup of the trial, you can change the policy assignment to specific users.
 
@@ -100,7 +100,7 @@ After you start the trial, it might take up to 2 hours for the changes and updat
 
 ## Availability
 
-The Defender for Office 365 trial is gradually rolling out to existing customers who meet specific criteria and who don't have existing Defender for Office 365 Plan Plan 2 licenses (included in their subscription or as an add-on).
+The Defender for Office 365 trial is gradually rolling out to existing customers who meet specific criteria and who don't have existing Defender for Office 365 Plan 2 licenses (included in their subscription or as an add-on).
 
 ## Terms and conditions
 

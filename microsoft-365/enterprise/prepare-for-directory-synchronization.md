@@ -121,6 +121,7 @@ The attributes that you need to prepare are listed here:
   - The attribute value must not contain a space.
   - The attribute value must be unique within the directory.
   - Invalid characters: \< \> ( ) ; , [ ] "
+  - Letters with diacritical marks, such as umlauts, accents, and tildes, are invalid characters.
 
     Note that the invalid characters apply to the characters following the type delimiter and ":", such that SMTP:User@contso.com is allowed, but SMTP:user:M@contoso.com is not.
 

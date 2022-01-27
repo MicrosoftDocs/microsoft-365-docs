@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 12/21/2021
+ms.date: 01/26/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,6 +16,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
+- m365initiative-defender-business
 ms.custom: intro-overview
 ---
 
@@ -70,6 +71,11 @@ With Defender for Business (preview), you can help protect the devices and data 
    - [Manage custom rules for firewall policies](mdb-custom-rules-firewall.md)  
 
 ## Next steps
+
+>
+> **Got a minute?**
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
 
 - [Learn more about the simplified configuration process in Microsoft Defender for Business (preview)](mdb-simplified-configuration.md)
 

@@ -3,7 +3,10 @@ title: "Manage devices with Intune"
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- enroll devices into Intune
+- manage device endpoints
+- zero trust deployment stack
+- device management with zero trust
 manager: dougeby
 audience: ITPro
 ms.topic: article
@@ -11,10 +14,9 @@ description: Enroll your endpoint devices in Microsoft Intune as part of your Ze
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- enroll devices into Intune
-- manage device endpoints
-- zero trust deployment stack
-- device management with zero trust
+- M365-security-compliance
+- m365solution-managedevices
+- m365solution-overview
 ms.custom: 
 keywords: 
 ---
