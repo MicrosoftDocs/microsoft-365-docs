@@ -74,10 +74,10 @@ Before you configure your adaptive scope, use the previous section to identify w
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
     
-    - If you are using records management:
+    - If you are using the records management solution:
         - **Solutions** > **Records management** > **Adaptive scopes** tab > + **Create scope**
         
-    - If you are not using records management:
+    - If you are using the information governance solution:
        - **Solutions** > **Information governance** > **Adaptive scopes** tab > + **Create scope**
     
     Don't immediately see your solution in the navigation pane? First select **Show all**. 
