@@ -17,7 +17,7 @@ ms.collection:
 - m365solution-overview
 - m365solution-mcafeemigrate
 - m365solution-symantecmigrate
-- m365-initiative-defender-endpoint
+- m365initiative-defender-endpoint
 ms.topic: overview
 ms.custom: migrationguides
 ms.date: 11/29/2021
