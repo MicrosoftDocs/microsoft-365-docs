@@ -219,7 +219,7 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
 
 - One or more sensitivity labels [created and published](create-sensitivity-labels.md) (to at least one user) that you can select for your auto-labeling policies. For these labels:
   - It doesn't matter if the auto-labeling in Office apps label setting is turned on or off, because that label setting supplements auto-labeling policies, as explained in the introduction.
-  - If the labels you want to use for auto-labeling are configured to use visual markings (headers, footers, watermarks), note that these are not applied to documents.
+  - If the labels you want to use for auto-labeling are configured to use visual markings (headers, footers, watermarks), note that these aren't applied to documents.
   - If the labels apply [encryption](encryption-sensitivity-labels.md):
     - When the auto-labeling policy includes locations for SharePoint or OneDrive, the label must be configured for the **Assign permissions now** setting.
     - When the auto-labeling policy is just for Exchange, the label can be configured for either **Assign permissions now** or **Let users assign permissions** (for the Do Not Forward or Encrypt-Only options).
@@ -242,7 +242,7 @@ Workflow for an auto-labeling policy:
 
 5. Deploy in production.
 
-The simulated deployment runs like the WhatIf parameter for PowerShell. You see results reported as if the auto-labeling policy had applied your selected label, using the rules that you defined. You can then refine your rules for accuracy if needed, and rerun the simulation. However, because auto-labeling for Exchange applies to emails that are sent and received, rather than emails stored in mailboxes, don't expect results for email in a simulation to be consistent unless you're able to send and receive the exact same email messages.
+The simulated deployment runs like the WhatIf parameter for PowerShell. You see results reported as if the auto-labeling policy had applied your selected label, using the rules that you defined. You can then refine your rules for accuracy if needed, and rerun the simulation. However, because auto-labeling for Exchange applies to emails that are sent and received, rather than emails stored in mailboxes, don't expect results for email in a simulation to be consistent unless you can send and receive the exact same email messages.
 
 Simulation mode also lets you gradually increase the scope of your auto-labeling policy before deployment. For example, you might start with a single location, such as a SharePoint site, with a single document library. Then, with iterative changes, increase the scope to multiple sites, and then to another location, such as OneDrive.
 
@@ -312,7 +312,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
     The configuration options for sensitive information types are the same as those you select for auto-labeling for Office apps. If you need more information, see [Configuring sensitive info types for a label](#configuring-sensitive-info-types-for-a-label).
 
-    When you have defined all the rules you need, and confirmed their status is on, select **Next** to move on to choosing a label to auto-apply.
+    When you've defined all the rules you need, and confirmed their status is on, select **Next** to move on to choosing a label to auto-apply.
 
 9. For the **Choose a label to auto-apply** page: Select **+ Choose a label**, select a label from the **Choose a sensitivity label** pane, and then select **Next**.
 
@@ -338,11 +338,11 @@ Auto-policies run continuously until they're deleted. For example, new and modif
 
 ### Monitoring your auto-labeling policy
 
-After your auto-labeling policy is turned on, you can view the labeling progress for files in your chosen SharePoint and OneDrive locations. Emails are not included in the labeling progress because they're automatically labeled as they're sent.
+After your auto-labeling policy is turned on, you can view the labeling progress for files in your chosen SharePoint and OneDrive locations. Emails aren't included in the labeling progress because they're automatically labeled as they're sent.
 
 The labeling progress includes the files to be labeled by the policy, the files labeled in the last 7 days, and the total files labeled. Because of the maximum of labeling 25,000 files a day, this information provides you with visibility into the current labeling progress for your policy and how many files are still to be labeled.
 
-When you first turn on your policy, you will initially see a value of 0 for files to be labeled until the latest data is retrieved. This progress information updates every 48 hours, so you can expect to see the most current data about every other day. When you select an auto-labeling policy, you can see more details about the policy in a flyout pane, which includes the labeling progress by the top 10 sites. The information on this flyout pane might be more current than the aggregated policy information displayed on the **Auto-labeling** main page.
+When you first turn on your policy, you initially see a value of 0 for files to be labeled until the latest data is retrieved. This progress information updates every 48 hours, so you can expect to see the most current data about every other day. When you select an auto-labeling policy, you can see more details about the policy in a flyout pane, which includes the labeling progress by the top 10 sites. The information on this flyout pane might be more current than the aggregated policy information displayed on the **Auto-labeling** main page.
 
 You can also see the results of your auto-labeling policy by using [content explorer](data-classification-content-explorer.md) when you have the appropriate [permissions](data-classification-content-explorer.md#permissions):
 
@@ -401,9 +401,9 @@ Although auto-labeling is one of the most efficient ways to classify, label, and
 
 - When you use the [Azure Information Protection unified labeling client](/azure/information-protection/rms-client/aip-clientv2):
 
-  - For files in on-premises data stores such as network shares and SharePoint Server libraries: Use the [scanner](/azure/information-protection/deploy-aip-scanner) to discover sensitive information in these files and label them appropriately. If you are planning to migrate or upload these files to SharePoint in Microsoft 365, use the scanner to label the files before you move them to the cloud.
+  - For files in on-premises data stores such as network shares and SharePoint Server libraries: Use the [scanner](/azure/information-protection/deploy-aip-scanner) to discover sensitive information in these files and label them appropriately. If you're planning to migrate or upload these files to SharePoint in Microsoft 365, use the scanner to label the files before you move them to the cloud.
 
-  - If you have used another labeling solution before using sensitivity labels: Use PowerShell and [an advanced setting to reuse labels](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#migrate-labels-from-secure-islands-and-other-labeling-solutions) from these solutions.
+  - If you've used another labeling solution before using sensitivity labels: Use PowerShell and [an advanced setting to reuse labels](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#migrate-labels-from-secure-islands-and-other-labeling-solutions) from these solutions.
 
 - Encourage [manual labeling](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) after providing users with training which sensitivity labels to apply. When you're confident that users understand which label to apply, consider configuring a default label and mandatory labeling as [policy settings](sensitivity-labels.md#what-label-policies-can-do).
 
