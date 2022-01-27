@@ -575,7 +575,7 @@
               href: retention-policies-yammer.md
             - name: Exchange
               href: retention-policies-exchange.md
-            - name: Common settings for retention
+        - name: Common settings for retention
               href: retention-settings.md
         - name: Limits for retention and deletion
           href: retention-limits.md
