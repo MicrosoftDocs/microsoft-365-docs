@@ -54,7 +54,7 @@ Conditional Access policies are a set of rules that specify the conditions under
 
 This policy allows you to require MFA based on group membership, rather than trying to configure individual user accounts for MFA when they are assigned or unassigned from these administrator roles.
 
-You can also use Conditional Access policies for more advanced capabilities, such as requiring that the sign-in is done from a compliant device, such as your laptop running Windows 10.
+You can also use Conditional Access policies for more advanced capabilities, such as requiring that the sign-in is done from a compliant device, such as your laptop running Windows 11 or 10.
 
 Conditional Access requires Azure AD Premium P1 licenses, which are included with Microsoft 365 E3 and E5.
 

@@ -69,8 +69,10 @@ After a retention policy is configured for chat and channel messages, a timer jo
 
 Messages remain in the SubstrateHolds folder for at least 1 day, and then if they are eligible for deletion, the timer job permanently deletes them the next time it runs.
 
-> [!NOTE]
-> Because of the [first principle of retention](retention.md#the-principles-of-retention-or-what-takes-precedence), permanent deletion is always suspended if the same item must be retained because of another retention policy, or it is under eDiscovery holds for legal or investigative reasons.
+> [!IMPORTANT]
+> Because of the [first principle of retention](retention.md#the-principles-of-retention-or-what-takes-precedence) and since Teams chat and channel messages are stored in Exchange Online mailboxes, permanent deletion from the SubstrateHolds folder is always suspended if the mailbox is affected by another retention policy (including policies applied to the Exchange location), litigation hold, delay hold, or if an eDiscovery hold is applied to the mailbox for legal or investigative reasons.
+>
+> While the mailbox is included in an applicable hold, Teams chat and channel messages that have been deleted will no longer be visible in the Teams app but will continue to be discoverable with eDiscovery.
 
 After a retention policy is configured for chat and channel messages, the paths the content takes depend on whether the retention policy is to retain and then delete, to retain only, or delete only.
 
@@ -192,6 +194,6 @@ If the user stored any files in Teams, see the [equivalent section](retention-po
 
 ## Configuration guidance
 
-If you're new to configuring retention in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md).
+If you're new to configuring retention in Microsoft 365, see [Get started with information governance](get-started-with-information-governance.md).
 
 If you're ready to configure a retention policy for Teams, see [Create and configure retention policies](create-retention-policies.md).
