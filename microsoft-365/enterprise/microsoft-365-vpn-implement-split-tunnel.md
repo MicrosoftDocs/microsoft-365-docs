@@ -393,45 +393,43 @@ The final step is to add a direct route for the Live Event IPs described in **Ga
 
 Note that only the IPs (not FQDNs) from [Gathering the current lists of CDN Endpoints](#gathering-the-current-lists-of-cdn-endpoints) should be used for VPN configuration.
 
-#### Stream & Live Events Optimization FAQ
+### Stream & Live Events Optimization FAQ
 
-**Question: Will this send all my traffic to the service direct?**
+#### Will this send all my traffic to the service direct?
 
-**Answer:** No, this will send the latency-sensitive streaming traffic for a Live Event or Stream video direct, any other traffic will continue to use the VPN tunnel if they do not resolve to the IPs published.
+No, this will send the latency-sensitive streaming traffic for a Live Event or Stream video direct, any other traffic will continue to use the VPN tunnel if they do not resolve to the IPs published.
 
-**Question: Do I need to use the IPv6 Addresses?**
+#### Do I need to use the IPv6 Addresses?
 
-**Answer:** No, the connectivity can be IPv4 only if required.
+No, the connectivity can be IPv4 only if required.
 
-**Question: Why are these IPs not published in the Microsoft 365 URL/IP service?**
+#### Why are these IPs not published in the Microsoft 365 URL/IP service?
 
-**Answer:** Microsoft has strict controls around the format and type of information that is in the service to ensure customers can reliably use the information to implement secure and optimal routing based on endpoint category.
+Microsoft has strict controls around the format and type of information that is in the service to ensure customers can reliably use the information to implement secure and optimal routing based on endpoint category.
 
-The Default endpoint category has no IP information provided for numerous reasons (Default endpoints may be outside of the control of Microsoft, may change too frequently, or may be in blocks shared with other elements). For this reason, Default endpoints are designed to be sent via FQDN to an inspecting proxy, like normal web traffic.
+The **Default** endpoint category has no IP information provided for numerous reasons (Default endpoints may be outside of the control of Microsoft, may change too frequently, or may be in blocks shared with other elements). For this reason, Default endpoints are designed to be sent via FQDN to an inspecting proxy, like normal web traffic.
 
 In this case, the above endpoints are CDNs that may be used by non-Microsoft controlled elements other than Live Events or Stream, and thus sending the traffic direct will also mean anything else which resolves to these IPs will also be sent direct from the client. Due to the unique nature of the current global crisis and to meet the short-term needs of our customers, Microsoft has provided the information above for customers to use as they see fit.
 
 Microsoft is working to reconfigure the Live Events endpoints to allow them to be included in the Allow/Optimize endpoint categories in the future.
 
-**Question: Do I only need to allow access to these IPs?**
+#### Do I only need to allow access to these IPs?
 
-**Answer:** No, access to all of the 'Required' marked endpoints in [the URL/IP service](urls-and-ip-address-ranges.md) is essential for the service to operate. In addition, any Optional endpoint marked for Stream (ID 41-45) is required.
+No, access to all of the **Required** marked endpoints in [the URL/IP service](urls-and-ip-address-ranges.md) is essential for the service to operate. In addition, any Optional endpoint marked for Stream (ID 41-45) is required.
 
-**Question: What scenarios will this advice cover?**
-
-**Answer:**
+#### What scenarios will this advice cover?
 
 1. Live events produced within the Teams App
 2. Viewing Stream hosted content
 3. External device (encoder) produced events
 
-**Question: Does this advice cover presenter traffic?**
+#### Does this advice cover presenter traffic?
 
-**Answer:** It does not, the advice above is purely for those consuming the service. Presenting from within Teams will see the presenter's traffic flowing to the Optimize marked UDP endpoints listed in URL/IP service row 11 with detailed VPN offload advice outlined in the [Implement VPN split tunneling](#implement-vpn-split-tunneling) section.
+It does not, the advice above is purely for those consuming the service. Presenting from within Teams will see the presenter's traffic flowing to the Optimize marked UDP endpoints listed in URL/IP service row 11 with detailed VPN offload advice outlined in the [Implement VPN split tunneling](#implement-vpn-split-tunneling) section.
 
-**Question: Does this configuration risk traffic other than Live Events &amp; Stream being sent direct?**
+#### Does this configuration risk traffic other than Live Events &amp; Stream being sent direct?
 
-**Answer:** Yes, due to shared FQDNs used for some elements of the service, this is unavoidable. This traffic is normally sent via a corporate proxy which can apply inspection. In a VPN split tunnel scenario, using both the FQDNs and IPs will scope this risk down to a minimum, but it will still exist. Customers can remove the **\*.azureedge.net** domain from the offload configuration and reduce this risk to a bare minimum but this will remove the offload of Stream-supported Live Events (Teams-scheduled, external encoder events, Yammer events produced in Teams, Yammer-scheduled external encoder events, and Stream scheduled events or on-demand viewing from Stream). Events scheduled and produced in Teams are unaffected.
+Yes, due to shared FQDNs used for some elements of the service, this is unavoidable. This traffic is normally sent via a corporate proxy which can apply inspection. In a VPN split tunnel scenario, using both the FQDNs and IPs will scope this risk down to a minimum, but it will still exist. Customers can remove the **\*.azureedge.net** domain from the offload configuration and reduce this risk to a bare minimum but this will remove the offload of Stream-supported Live Events (Teams-scheduled, external encoder events, Yammer events produced in Teams, Yammer-scheduled external encoder events, and Stream scheduled events or on-demand viewing from Stream). Events scheduled and produced in Teams are unaffected.
 
 ## HOWTO guides for common VPN platforms
 
