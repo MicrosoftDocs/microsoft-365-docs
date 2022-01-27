@@ -31,7 +31,17 @@ ms.technology: m365d
 
 Threat actors can use compromised user accounts for several malicious purposes including reading emails in a user’s inbox, creating inbox rules to forward emails to external accounts, sending phishing mails, among others. Malicious inbox rules are widely common during business email compromise (BEC) and phishing campaigns, and it important to monitor them consistently.
 
-This playbook helps you investigate any incident related to suspicious inbox forwarding rules that attackers configure to perform malicious tasks. You can review the alerts and take recommended actions to remediate the attack and protect your network. 
+This playbook helps you investigate alerts for suspicious inbox forwarding rules and quickly grade them as either a True Positive or a False Positive. You can then take recommended actions for the True Positive alerts to remediate the attack. 
+
+For an overview of alert grading for Microsoft Defender for Office 365 and Microsoft Defender for Cloud Apps, see the [introduction article](alert-grading-playbooks.md).
+
+The results of using this playbook are:
+
+- You have identified the alerts associated with inbox forwarding rules as malicious (True Positive) or benign (False Positive) activities.
+
+    - If malicious, you have removed malicious inbox forwarding rules.
+
+- You have taken the necessary action if emails have been forwarded to a malicious email address.
 
 
 ## Inbox rules
@@ -40,31 +50,17 @@ Inbox rules are set to automatically manage email messages based on predefined c
 
 ### Suspicious inbox forwarding rules
 
-After gaining access to users' mailboxes, attackers often create an inbox rule that allow them to exfiltrate sensitive data and use it for malicious purposes. 
+After gaining access to users' mailboxes, attackers often create an inbox rule that allows them to exfiltrate sensitive data to an external email address and use it for malicious purposes. 
 
-These malicious inbox rules aim to automate the exfiltration process, such that by certain rule filters, every email in the target user’s inbox that matches the rule criteria will be forwarded to the attacker’s mailbox. For example, an attacker might want to gather sensitive data related to finance. They will set an inbox rule to forward all emails that contain keywords such as ‘finance’ and ‘invoice’ in the subject or message body, to their mailbox.
+Malicious inbox rules automate the exfiltration process. With specific rules, every email in the target user’s inbox that matches the rule criteria will be forwarded to the attacker’s mailbox. For example, an attacker might want to gather sensitive data related to finance. So they creata an inbox rule to forward all emails that contain keywords, such as ‘finance’ and ‘invoice’ in the subject or message body, to their mailbox.
 
-Suspicious inbox forwarding rule might be very tricky to catch by analysts because creation of inbox rule is very common and usual activity performed by users on a regular basis, and therefore it’s important to monitor the alerts. 
-
-## Security alert classifications
-
-All Defender for Cloud Apps alerts can be classified as one of the following activity types:
-
-- True positive (TP): An alert on a confirmed malicious activity.
-- Benign true positive (B-TP): An alert on suspicious but not malicious activity, such as a penetration test or other authorized suspicious action.
-- False positive (FP): An alert on a non-malicious activity.
-
-## Prerequisites
-
-The pre-requisites section covers the specific requirements that you should have prior to the investigation. 
-
-The researcher or SOC analyst must have access to Microsoft 365 Defender incidents and advanced hunting.
+Suspicious inbox forwarding rules might be very difficult to detect because maintenance of inbox rules is common task done by users. Therefore, it’s important to monitor the alerts. 
 
 ## Workflow
 
-The following flowchart illustrates the steps you should follow to investigate this alert.
+The figure shows the steps you should follow to investigate this type of alert.
  
-ART: Flowchart
+:::image type="content" source="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-workflow.png" alt-text="Alert investigation workflow for inbox forwarding rules" lightbox="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-workflow.png":::
 
 ## Investigation steps
 
@@ -72,11 +68,14 @@ This section contains detailed step-by-step guidance to respond to the incident 
 
 ### Review generated alerts
 
-You can review the alert as shown in the images below.
+Here is an example of an alert in the alert queue.
 
-ART: Notification in the alert queue
 
-ART: Details of alert that is triggered for malicious inbox forwarding rule
+:::image type="content" source="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-alert-queue.png" alt-text="Example of a notification in the alert queue" lightbox="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-alert-queue.png":::
+
+Here is an example of the details of alert that was triggered by a malicious inbox forwarding rule.
+
+:::image type="content" source="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-alert-description.png" alt-text="Details of alert that was triggered by a malicious inbox forwarding rule" lightbox="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-alert-description.png":::
 
 ### Investigation process
 
