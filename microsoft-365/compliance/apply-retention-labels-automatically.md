@@ -126,7 +126,7 @@ Exchange:
 
 SharePoint and OneDrive:
 
-|Condition|New or modified items |Existing items (data at rest)|
+|Condition|New or modified items |Existing items |
 |:-----|:-----|:-----|
 |Sensitive info types - built-in| Yes | Yes |
 |Sensitive info types - custom| Yes | No |
