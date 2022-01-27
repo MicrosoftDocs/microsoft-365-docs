@@ -289,7 +289,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     - For sensitive information types, you can select both built-in and custom sensitive information types.
     - For the shared options, you can choose **only with people inside my organization** or **with people outside my organization**.
 
-    If your only location is **Exchange**, or if you select **Advanced rules**, there are additional conditions that you can select:
+    If your only location is **Exchange**, or if you select **Advanced rules**, there are other conditions that you can select:
     - Sender IP address is
     - Recipient domain is
     - Recipient is
@@ -366,14 +366,14 @@ New-AutoSensitivityLabelPolicy -Name <AutoLabelingPolicyName> -SharePointLocatio
 
 This command creates an auto-labeling policy for a SharePoint site that you specify. For a OneDrive location, use the *OneDriveLocation* parameter, instead.
 
-To add additional sites to an existing auto-labeling policy:
+To add more sites to an existing auto-labeling policy:
 
 ```powershell
 $spoLocations = @("<SharePointSiteLocation1>","<SharePointSiteLocation2>")
 Set-AutoSensitivityLabelPolicy -Identity <AutoLabelingPolicyName> -AddSharePointLocation $spoLocations -ApplySensitivityLabel <Label> -Mode TestWithoutNotifications
 ```
 
-This command specifies the additional SharePoint URLs in a variable that is then added to an existing auto-labeling policy. To add OneDrive locations instead, use the *AddOneDriveLocation* parameter with a different variable, such as *$OneDriveLocations*.
+This command specifies the new SharePoint URLs in a variable that is then added to an existing auto-labeling policy. To add OneDrive locations instead, use the *AddOneDriveLocation* parameter with a different variable, such as *$OneDriveLocations*.
 
 To create a new auto-labeling policy rule:
 
@@ -395,7 +395,7 @@ For more information about the PowerShell cmdlets that support auto-labeling pol
 
 ## Tips to increase labeling reach
 
-Although auto-labeling is one of the most efficient ways to classify, label, and protect Office files that your organization owns, check whether you can supplement it with any of the additional methods to increase your labeling reach:
+Although auto-labeling is one of the most efficient ways to classify, label, and protect Office files that your organization owns, check whether you can supplement it with any of the following methods to increase your labeling reach:
 
 - With SharePoint Syntex, you can [apply a sensitivity label to a document understanding model](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model), so that identified documents in a SharePoint library are automatically labeled.
 
