@@ -38,7 +38,7 @@ Copy your application installation files to **App\bin**. If your application has
 ![Folder structure](Media/BuildPackage2.png)
 
 ## Add PowerShell scripts
-To perform OOB test, it needs PowerShell scripts to install, launch, close, and uninstall your application. <br> 
+To perform OOB test, you will need to add PowerShell scripts to install, launch, close, and uninstall your application. <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Note: In OOB test, install, launch, and close scripts are required, while uninstall script is optional*.<br>
 The script should be added in the folder as follows:<br> 
 ![Folder structure](Media/BuildPackage3.png)
