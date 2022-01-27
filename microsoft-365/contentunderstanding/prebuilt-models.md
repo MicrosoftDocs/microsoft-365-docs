@@ -113,7 +113,7 @@ When you have selected the extractors you want to use, you can apply them either
 
 ## Rename an extractor
 
-You can rename an extractor either from the model home page or from the **Extractors** panel.
+You can rename an extractor either from the model home page or from the **Extractors** panel. You might consider renaming selected extractors because these will be used as the column names when the model is applied to the library.
 
 To rename an extractor from the model home page:
 
@@ -130,9 +130,6 @@ To rename an extractor from the **Extractors** panel:
     ![Screenshot of the Extractors panel showing how to select an entity field.](../media/content-understanding/prebuilt-extractors-panel-rename-field.png) 
 
 2. In the **Rename extractor** box, enter the new name of the extractor, and then select **Rename**.
-
-> [!NOTE]
-> You might want to rename several of the detected and selected extractors because these are used as the column names when the model is applied to the library.
 
 ## See also
 
