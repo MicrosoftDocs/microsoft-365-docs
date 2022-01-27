@@ -31,6 +31,7 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to classify and
 - Access from unmanaged devices
 - Authentication contexts (in preview)
 - Default sharing link for a SharePoint site (PowerShell-only configuration)
+- In preview: Site sharing settings (PowerShell-only configuration)
 
 > [!IMPORTANT]
 > The settings for unmanaged devices and authentication contexts work in conjunction with Azure Active Directory Conditional Access. You must configure this dependent feature if you want to use a sensitivity label for these settings. Additional information is included in the instructions that follow.
@@ -215,6 +216,29 @@ To remove either of these advanced settings from a sensitivity label, use the sa
 ````powershell
 Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope=""}
 ````
+
+### Configure site sharing permissions by using PowerShell advanced settings
+
+> [!NOTE]
+> This label setting is currently in preview.
+
+Another PowerShell advanced setting that you can configure for the sensitivity label to be applied to a SharePoint site is **MembersCanShare**. This setting is the equivalent configuration that you can set from the SharePoint admin center > **Site permissions** > **Site Sharing** > **Change how members can share** > **Sharing permissions**. The three options are listed with the equivalent values for the PowerShell advanced setting **MembersCanShare**:
+
+|Option from the SharePoint admin center |Equivalent PowerShell value for MembersCanShare |
+|----------------------------------------|------------------------------------------------|
+|**Site owners and members can share files, folders, and the site. People with Edit permissions can share files and folders**| MemberShareAll|
+|**Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site.**|MemberShareFileAndFolder|
+|**Only site owners can share files, folders, and the site.**|MemberShareNone|
+
+For more information about these configuration options, see [Change how members can share](/microsoft-365/community/sharepoint-security-a-team-effort#change-how-members-can-share) from the SharePoint community documentation.
+
+
+Example, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
+
+````powershell
+Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{MembersCanShare="MemberShareNone"}
+````
+
 
 ## Sensitivity label management
 
