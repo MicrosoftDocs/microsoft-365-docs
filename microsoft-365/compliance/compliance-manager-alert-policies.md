@@ -25,9 +25,9 @@ description: "Learn how to create alerts for activities in Microsoft Compliance 
 **In this article:** Learn about the types of alerts you can set in Compliance Manager, how to manage alerts, and how to create alert policies.
 
 ## Overview
-Compliance Manger alert policies help increase your visibility into changes that could affect your organization's compliance score. You can quickly create a policy to alert you when certain improvement actions  experience any of these types of events: a score change, assignment to a new or different user, an implementation status change, a test status change, and a change in evidence. Setting up alerts of such changes can help reduce your compliance risk because you'll get quick notification when any of your improvement actions could fall into a non-compliant state.
+Compliance Manger alerts help make you aware of changes immediately after they happen in Compliance Manager, to help you stay on track with your compliance goals. For example, you can set up alerts to inform you when an improvement action's score value has increased or decreased due to a configuration change in your tenant, or when an improvement action has been assigned to a user to perform implementation or testing work. View the [types of events](#create-an-alert-policy) for which you can create alerts.
 
-Alert policies give you control over the types and frequency of the alerts and notifications you want to receive. You select the conditions that create an alert based on the type of change, and the frequency of the alerts. When we detect a match to your policy conditions, an email can notify you of the change, and you can decide whether some type of further action is required. All of the alerts are listed on the **Alerts** tab in Compliance Manger, and all of the alert policies are listed on the **Alert Policies tab**.
+To create alerts, you first set up an alert policy to outline the conditions that trigger an alert and the frequency of notifications. When we detect a match to your policy conditions, you'll receive an email notification with details so you can determine whether to investigate or take further action.  All alerts are listed on the **Alerts** tab in Compliance Manger, and all alert policies are listed on the **Alert Policies tab**.
 
 ## Understanding the Alerts and Alert policies pages
 
@@ -82,11 +82,11 @@ You can create policies to alert you to the following types of events related to
 2. Enter a name for our policy and an optional description, then select **Next**.
 3. Chose conditions for the policy. Select one or more events that will cause an alert, then select **Next**.
 4. Select a severity level for the alert when a match is detected: low, medium, or high. Then select how often you want to be notified by email when a match is detected. You can choose to be notified with each match, or choose a threshold of a certain number of matches above three, and after a certain time once the event occur, starting at about an hour. When done, select **Next**.
-5. Select the users in your org to receive an email when the policy conditions are met. Select **+Select recipients** and check the boxes next to each user name on the flyout pane. The global admin for your organization is set by default  to receive email alerts, but you can remove them by unchecking their name on the flyout pane. When done, select **Add recipients**, then select **Next**.
+5. Select additional users in your org to receive an email when the policy conditions are met. Select **+Select recipients** and check the boxes next to each user name on the flyout pane. The global admin for your organization is set by default  to receive email alerts, but you can remove them by unchecking their name on the flyout pane. When done, select **Add recipients**, then select **Next**.
 6. Review all selections, and make any changes to each section by selecting , then select **Next**. When finished reviewing, select **Create policy**.
 7. When your policy is created, select **Done**. You'll arrive at your **Alert policies** page with the flyout pane for the policy you just created already open.
 
-Your policy is active once you create it. See [Managing policies](#alert-policies-page) for how to manage and interact with policies.
+Your policy is active once you create it.
 
 ## Managing policies
 
@@ -146,16 +146,19 @@ The **Events** column on the **Alerts** page indicates the conditions of a polic
 - **Multi-event**: multiple instances of the same type of event have been detected; for example, a single improvement action that has been reassigned multiple times
 - **Multi-condition**: multiple conditions within a single policy were detected 
 
-### Actions to take on alerts
+### Taking action on alerts
 
-From the flyout panel, you can select the **Actions** button and chose one of the following options to take further action:
+When one of your policies generates an alert, you can view the events that caused the alert and determine whether you need to verify or further investigate the events.
 
-- **Assign alert**: when you choose this option, another panel opens where you can select a user in your organization and assign the alert to them.
-- **Email alert**: when you chose this option, it opens an email template  with basic information about the alert which you can customize and sent to a user.
-- **View policy details**: when you select this option, you'll be taken directly to the **Alert policies** page with the policy details panel open.
-- **Change status**: update status for your alert based on your review of its impact and whether it needs investigating. Learn more about [alert statuses](#alert-status).
+To take an action on an alert, select its row on the **Alerts** page to bring up the flyout panel with its details, select the **Actions** button, and chose among options listed below. You can also take actions by selecting the round button that appears to the left of the alert name when you hover over its row, and selecting one of the action buttons near the top of the page, above the filters.
 
-You can also assign and email an alert by hovering over its row on the **Alert** page and selecting the Email alert or **Assign** button near the top of the page, above the filters.
+**Assign alert**: You may want to assign the alert to a user to investigate or verify the events that caused the alert. When you choose this option, a panel opens where you can select a user in your organization and assign the alert to them. You can filter your alerts view by selecting **Filters** on the **Alerts** page, and entering the user's name in the **Assigned to** field.
+
+**Email alert**: You may want to send an email to the user associated to the alert's activity to confirm that they took the action. When you chose this option, it opens an email template with basic information about the alert, which you can customize with further instructions and sent to the user.
+
+**View policy details**: You may want to review the settings for the policy that triggered the alert. Note that when you select this option, you'll be taken directly to the **Alert policies** page with the policy details panel already open. You'll no longer be on your **Alerts** page when you close the policy details panel.
+
+**Change status**: You can update status for your alert based on your review of its impact and whether it needs investigating. Learn more about alert statuses in the next section.
 
 ### Alert status
 
@@ -164,7 +167,7 @@ When an alert is created, its status is **Active**. As you review the details of
 - **Active**: default state of the alert until its status is changed
 - **Investigating**: alert is under investigation
 - **Resolved**: the alert doesn't require further investigation or follow-up
-- **Dismissed**: the alert is no longer relevant and doesn't need investigation
+- **Dismissed**: the alert isn't relevant or doesn't need investigation
 
 To assign or change an alert's status, select an alert from its row on the table, select **Change status** near the top of the page, above the filters. From the Update alert status flyout pane, select a status from the drop-down menu, then select **Update alert**.
 
@@ -172,17 +175,15 @@ To assign or change an alert's status, select an alert from its row on the table
 
 When an active policy is deleted, existing alerts related to that policy remain on your **Alerts** page, but no new alerts will be generated.
 
-### Filtering view of alerts
+### Filtering your view of alerts
 
 ## Email notifications of alerts
 
-When you create a policy, you can choose to send an email notification to one or more users in your organization when an alert is generated. Alerts occur in near real-time, and the email notifications are sent out immediately .  Sending email notifications about alerts is optional and you can edit your policy anytime to send or not send alerts.
-
-The email will contain  the event name, severity, time detected, and a link to view the alert in Compliance Manager.
+When you create a policy, an email is sent to the user who created the policy alerting them that a match was detected. You can choose to send these email notifications to additional users in your organization. Alerts occur in near real-time, and the email notifications are sent out as soon as an alert is generated. The email will contain the event name, severity, time detected, and a link to view the alert in Compliance Manager.
 
 ### Remove users from receiving alerts
 
-If you designate alert recipients and then later decide to remove them, follow the steps below:
+If you designate alert recipients and then later decide to remove them, follow the steps below. Note that the policy creator will still receive email notifications when policy matches are detected.
 
 1. Begin the steps to [edit your policy](#edit-a-policy).
 2. When you arrive at the **Alert recipients** screen, select **+Select recipients**.
