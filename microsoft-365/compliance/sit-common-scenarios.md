@@ -81,7 +81,7 @@ Lot of organizations add legal disclaimers, disclosure statements, signatures, o
 
 For example, a typical disclaimer might contain words like sensitive, or confidential and a policy looking for sensitive info will detect it as violation leading to lot of false positives. Thus providing customers with an option to ignore disclaimer can reduce false positives and increase the efficiency of compliance team.
 
-### Example of disclaimer 
+### Example of disclaimer
 
 Consider the following disclaimer:
 
@@ -95,6 +95,32 @@ One way to ignore the instances of keywords in the disclaimer by excluding the i
 
 Consider this disclaimer:
 
+IMPORTANT NOTICE: This e-mail message is intended to be received only by persons *entitled to receive the* confidential **information it may contain**. E-mail messages to clients of Contoso may contain information that is confidential and legally privileged. Please do not read, copy, forward, or store this message unless you are an intended recipient of it. If you have received this message in error, please forward it to the sender and delete it completely from your computer system.
+
+We have two instances of the keyword “confidential” and if we configure the SIT to ignore instances of this keyword preceded by prefixes (italicized in the example) and followed by suffixes (bolded in the example), then we can achieve ignoring disclaimers in most of the cases.
+
+To ignore the disclaimer using prefix and suffix:
+
+1. Add additional checks in the current SIT to exclude prefix and suffix text to the keyword which we want to ignore in the disclaimer.
+1. Choose to exclude the prefix and in the **Prefixes** text box enter **contain information that is**.
+1. Choose to exclude the suffix and in the **Suffixes** text box enter **and legally privileged**.
+1. Repeat this process for additional instances of the keywords in the disclaimer, as shown in the following graphic.
+
+:::image type="content" source="../media/sit-scenario-edit-pattern.png" alt-text="You can add more conditions to the pattern to exclude additional instances in the disclaimer.":::
+
+### Ignore disclaimer by excluding secondary elements
+
+Another way to add a list of supporting elements (instances in disclaimer) which needs to be excluded is to exclude secondary elements.
+
+Consider this disclaimer:
+
 IMPORTANT NOTICE: This e-mail message is intended to be received only by persons entitled to receive the confidential information it may contain. E-mail messages to clients of Contoso may contain information that is confidential and legally privileged. Please do not read, copy, forward, or store this message unless you are an intended recipient of it. If you have received this message in error, please forward it to the sender and delete it completely from your computer system.
 
-We have two instances of the keyword “confidential” and if we configure the SIT to ignore instances of this keyword preceded by prefixes (underlined in red) and followed by suffixes (underlined in green), then we can achieve ignoring disclaimers in most of the cases.
+We have two instances of the keyword “confidential” and if we configure the SIT to ignore instances of this keyword in the disclaimer (underlined as red), we can achieve ignoring disclaimers in most of the cases.
+
+To ignore the disclaimer using secondary elements:
+
+1. Select “Not any of these” group in the supporting elements.
+1. Add the instances of disclaimer which we want to ignore as a keyword list/dictionary.
+1. Add the keywords as a new line which we want to ignore. Please note that the length of each text cannot be more than 50 characters.
+1. Set the proximity of this element to be within 50-60 characters of the primary element.
