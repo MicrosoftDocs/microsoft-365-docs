@@ -19,13 +19,9 @@ description: Learn how to create and configure a prebuilt model in SharePoint Sy
 
 # Use a prebuilt model to extract info from invoices or receipts in Microsoft SharePoint Syntex
 
-Prebuilt models are pretrained to recognize documents and the structured information in the documents. You can immediately apply prebuilt models to libraries as they are. They don't require additional training or labeling.
+Prebuilt models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization. 
 
-You can also customize a prebuilt model, review it to see how it works on your documents, and customize the names to match your documents or naming conventions. 
-
-You configure the prebuilt model by analyzing one of your files and selecting the detected fields that make sense for your needs (rather than stating it can be used as-is and that "customize by configure" is optional). Prebuilt models aren't editable so if the model doesn't detect, try different files or note that it probably won't work for that file.
-
-Prebuilt models use optical character recognition (OCR) combined with deep learning models to identify and extract predefined text and data fields common to specific form and document types. 
+Prebuilt models use optical character recognition (OCR) combined with deep learning models to identify and extract predefined text and data fields common to specific document types. You start by analyzing one of your files against the prebuilt model. You then select the detected fields that make sense for your purpose. If the model doesn't detect the fields that you need, try analyzing again with a different file.
 
 Currently, there are two prebuilt models available: invoice and receipt.
 
