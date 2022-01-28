@@ -175,7 +175,7 @@ For macOS devices, you must add the full file path. To find the full path of Mac
 
 2. Choose **Open Files and Ports** tab.
   
-3. Find the full path based on the app name. Different from DLP on Windows where you can use app name, you need to put full path for macOS app.
+3. For macOS apps, you need the full path name, including the name of the app.
 
    > [!div class="mx-imgBorder"]
    > ![endpoint dlp find app full path on MacOS.](https://user-images.githubusercontent.com/81826151/151603029-6320bb19-3249-42e4-8300-a94b770b33cc.png)
