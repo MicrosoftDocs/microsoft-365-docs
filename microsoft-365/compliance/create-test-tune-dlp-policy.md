@@ -60,7 +60,7 @@ Here's a list of Microsoft Information Protection (MIP) roles that are in previe
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of MIP role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Here's a list of MIP role groups that are in preview. To learn more, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Information Protection
 - Information Protection Admins
@@ -109,7 +109,7 @@ At the first **Policy Settings** step, just accept the defaults for now. You can
 
 ![Options to customize the type of content to protect.](../media/DLP-create-test-tune-default-customization-settings.png)
 
-After clicking Next,** you'll be presented with an more **Policy Settings** page with more customization options. For a policy that you are just testing, here's where you can start to make some adjustments.
+After clicking Next,** you'll be presented with a more **Policy Settings** page with more customization options. For a policy that you are just testing, here's where you can start to make some adjustments.
 
 - I've turned off policy tips for now, which is a reasonable step to take if you're just testing things out and don't want to display anything to users yet. Policy tips display warnings to users that they're about to violate a DLP policy. For example, an Outlook user will see a warning that the file they've attached contains credit card numbers and will cause their email to be rejected. The goal of policy tips is to stop the non-compliant behavior before it happens.
 - I've also decreased the number of instances from 10 to 1, so that this policy will detect any sharing of Australian PII data, not just bulk sharing of the data.
