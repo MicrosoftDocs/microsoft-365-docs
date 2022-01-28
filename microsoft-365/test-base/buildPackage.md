@@ -166,6 +166,6 @@ However, it's best practice to run the test locally to ensure the scripts work p
 
 
 ## Next steps
-[Upload a package](https://docs.microsoft.com/en-us/microsoft-365/test-base/uploadapplication)
+[Upload a package](uploadApplication.md)
 
  
