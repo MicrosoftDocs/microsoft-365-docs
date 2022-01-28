@@ -31,7 +31,7 @@ Contoso Bank needs to classify the credit card numbers that they issue as sensit
 
 1. Create a copy of the credit card SIT. Use the steps to [copy and modify a sensitive information type](create-a-custom-sensitive-information-type.md#copy-and-modify-a-sensitive-information-type) to copy the credit card SIT.
 1. Edit the high confidence pattern. Follow the steps in [edit or delete the sensitive information type pattern](sit-get-started-exact-data-match-create-rule-package.md#edit-or-delete-the-sensitive-information-type-pattern).
-1. Add 'starts with' check and add the list of bin digits (formatted & unformatted). For example to ensure that only credit cards starting with 411111 & 433512 should be considered valid, add the following to the list 4111 11, 4111-11, 411111, 4335 12, 4335-12, 433512.
+1. Add 'starts with' check and add the list of bin digit (formatted & unformatted). For example to ensure that only credit cards starting with 411111 & 433512 should be considered valid, add the following to the list 4111 11, 4111-11, 411111, 4335 12, 4335-12, 433512.
 1. Repeat step 2 & 3 for the low confidence pattern.
 
 ## Test numbers similar to Social Security numbers
@@ -66,20 +66,20 @@ Create a copy of the built-in SIT and edit it to change the proximity of the key
 
 ## Unable to detect credit card numbers with unusual delimiters
 
-Contoso Bank have noticed some of their employees share Credit card numbers with ‘/’ as a delimiter, for example 4111/1111/1111/1111, which isn't detected by the out of the box credit card definition. Contoso would like to define their own regex and validate it using LuhnCheck.
+Contoso Bank has noticed some of their employees share Credit card numbers with ‘/’ as a delimiter, for example 4111/1111/1111/1111, which isn't detected by the out of the box credit card definition. Contoso would like to define their own regex and validate it using LuhnCheck.
 
 **Suggested solution**
 
-1. Create a copy of the Credit card SIT
+1. Create a copy of the Credit card SIT using the steps in [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md).
 1. Add a new pattern
 1. In the primary element, select regular expression
 1. Define the regular expression that includes ‘/’ as part of the regular expression and then choose validator and select luhncheck or func_credit_card to ensure the regex also passes the LuhnCheck.
 
 ## Ignore a disclaimer notice
 
-Lot of organizations add legal disclaimers, disclosure statements, signatures, or other information to the top or bottom of email messages that enter or leave their organizations and in some cases even within the organizations. The employees themselves put signatures including – motivational quotes, social messages, and so on. A disclaimer or signature can contain the trigger words that are present in lexicon of a CC and hence generating a lot of false positives.  
+Many organizations add legal disclaimers, disclosure statements, signatures, or other information to the top or bottom of email messages that enter or leave their organizations and in some cases even within the organizations. The employees themselves put signatures including – motivational quotes, social messages, and so on. A disclaimer or signature can contain the terms that are present in the lexicon of a CC and and may generate a lot of false positives.  
 
-For example, a typical disclaimer might contain words like sensitive, or confidential and a policy looking for sensitive info will detect it as violation leading to lot of false positives. Thus providing customers with an option to ignore disclaimer can reduce false positives and increase the efficiency of compliance team.
+For example, a typical disclaimer might contain words like sensitive, or confidential and a policy looking for sensitive info will detect it as an incident, leading to lot of false positives. Thus providing customers with an option to ignore disclaimer can reduce false positives and increase the efficiency of compliance team.
 
 ### Example of disclaimer
 
@@ -120,7 +120,7 @@ We have two instances of the keyword “confidential” in this example. If we c
 
 To ignore the disclaimer using secondary elements:
 
-1. Select “Not any of these” group in the supporting elements.
+1. Select **Not any of these** group in the supporting elements.
 1. Add the instances of disclaimer which we want to ignore as a keyword list/dictionary.
 1. Add the keywords as a new line which we want to ignore. Remember that the length of each text can't be more than 50 characters.
 1. Set the proximity of this element to be within 50-60 characters of the primary element.
