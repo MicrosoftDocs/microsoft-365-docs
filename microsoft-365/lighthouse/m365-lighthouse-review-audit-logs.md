@@ -22,6 +22,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 > [!NOTE]
 > The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+
 Microsoft 365 Lighthouse audit logs record actions that generate a change in Lighthouse or other Microsoft 365 services. Create, edit, delete, assign, and remote actions all create audit events that you can review. By default, auditing is enabled for all customers. It can't be disabled.
 
 ## Before you begin
@@ -36,16 +37,16 @@ To view audit logs, you must have one of the following permissions:
 
 1. In the left navigation pane in Lighthouse, select **Audit logs**.
 
-> [!NOTE]
-> It might take up to 1 hour to see new logs. Go to the respective service to see the most recent changes.
+    > [!NOTE]
+    > It might take up to 1 hour to see new logs. Go to the respective service to see the most recent changes.
 
 2. To filter the logs, refine the list using the following options:
 
-- **Date range** - Previous month, week, or day.
-- **Tenants** - Tenant tags or customer tenant names.
-- **Area** - The area where the action was initiated. The area corresponds to the entries in the left navigation bar.
-- **Activity** - Microsoft 365 activity type that corresponds to the action taken. For more information, see Activity Types table.
-- **Initiated by** -  Who initiated the action.
+    - **Date range** - Previous month, week, or day.
+    - **Tenants** - Tenant tags or customer tenant names.
+    - **Area** - The area where the action was initiated. The area corresponds to the entries in the left navigation bar.
+    - **Activity** - Microsoft 365 activity type that corresponds to the action taken. For more information, see Activity Types table.
+    - **Initiated by** -  Who initiated the action.
 
 3. Select a log from the list to see full details including the **Request** body.
 
