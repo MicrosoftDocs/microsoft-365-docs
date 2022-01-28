@@ -203,6 +203,7 @@ Safe Links protection for Office 365 apps has the following client requirements:
   - Office apps on iOS or Android devices.
   - Visio on Windows.
   - OneNote in a web browser.
+  - Outlook for Windows when opening saved EML or MSG files.
 
 - Office 365 apps are configured to use modern authentication. For more information, see [How modern authentication works for Office 2013, Office 2016, and Office 2019 client apps](../../enterprise/modern-auth-for-office-2013-and-2016.md).
 
@@ -216,7 +217,7 @@ The following Safe Links settings are available for Office 365 apps:
 
 - **Do not track when users click Safe Links**: Enables or disables storing Safe Links click data for URLs clicked in the desktop versions Word, Excel, PowerPoint, and Visio. The recommended value is **Off**, which means user clicks are tracked.
 
-- **Do not let users click through safe links to original URL**: Allows or blocks users from clicking through the [warning page](#warning-pages-from-safe-links) to the original URL in in the desktop versions Word, Excel, PowerPoint, and Visio. The default and recommended value is **On**.
+- **Do not let users click through safe links to original URL**: Allows or blocks users from clicking through the [warning page](#warning-pages-from-safe-links) to the original URL in the desktop versions Word, Excel, PowerPoint, and Visio. The default and recommended value is **On**.
 
 To configure the Safe Links settings for Office 365 apps, see [Configure Safe Links protection for Office 365 apps](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
 
@@ -300,12 +301,16 @@ To add entries to the list in new or existing Safe Links policies, see [Create S
   - Microsoft Teams
   - Office web apps
 
-  For a truly universal list of URLs that are allowed everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+  For a truly universal list of URLs that are allowed everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md). However, note that URLs added there will not be excluded from Safe Links rewriting, as that must be done in a Safe Links policy.
 
 - Consider adding commonly used internal URLs to the list to improve the user experience. For example, if you have on-premises services, such as Skype for Business or SharePoint, you can add those URLs to exclude them from scanning.
 - If you already have **Do not rewrite the following URLs** entries in your Safe Links policies, be sure to review the lists and add wildcards as required. For example, your list has an entry like `https://contoso.com/a` and you later decide to include subpaths like `https://contoso.com/a/b`. Instead of adding a new entry, add a wildcard to the existing entry so it becomes `https://contoso.com/a/*`.
 - You can include up to three wildcards (`*`) per URL entry. Wildcards explicitly include prefixes or subdomains. For example, the entry `contoso.com` is not the same as `*.contoso.com/*`, because `*.contoso.com/*` allows people to visit subdomains and paths in the specified domain.
 - If a URL uses automatic redirection for HTTP to HTTPS (for example, 302 redirection for `http://www.contoso.com` to `https://www.contoso.com`), and you try to enter both HTTP and HTTPS entries for the same URL to the list, you might notice that the second URL entry replaces the first URL entry. This behavior does not occur if the HTTP and HTTPS versions of the URL are completely separate.
+- Do not specify http:// or https:// (that is, contoso.com) in order to exclude both HTTP and HTTPS versions.
+- `*.contoso.com` does **not** cover contoso.com, so you would need to exclude both to cover both the specified domain and any child domains.
+- `contoso.com/*` covers **only** contoso.com, so there's no need to exclude both `contoso.com` and `contoso.com/*`; just `contoso.com/*` would suffice.
+- To exclude all iterations of a domain, two exclusion entries are needed; `contoso.com/*` and `*.contoso.com/*`. These combine to exclude both HTTP and HTTPS, the main domain contoso.com and any child domains, as well as any or not ending part (for example, both contoso.com and contoso.com/vdir1 are covered).
 
 ### Entry syntax for the "Do not rewrite the following URLs" list
 

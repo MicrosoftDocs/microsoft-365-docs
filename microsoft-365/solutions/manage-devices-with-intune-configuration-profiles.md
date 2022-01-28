@@ -3,17 +3,21 @@ title: "Step 5. Deploy device profiles in Microsoft Intune"
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- configuration profiles
+- Windows security baselines for Intune
+- customize configuration profiles
 manager: dougeby
 audience: ITPro
+description: Get started with configuration profiles to enforce secure settings on devices using Intune to transition these security controls to the cloud.
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
-ms.custom: seo-marvel-jun2020
+- m365solution-managedevices
+- m365solution-scenario
+ms.custom: 
 keywords: 
-description: 
 ---
 
 # Step 5. Deploy device profiles in Microsoft Intune
@@ -25,7 +29,7 @@ This article provides guidance on getting started with configuration profiles.
 
 ![Steps for managing devices](../media/devices/intune-mdm-step-4.png#lightbox)
 
-Configuration profiles give you the ability to configure important protection and to bring devices into compliance so they can access your resources. Previously, these kinds of configuration changes were configured by using Group Policy settings in Active Directory Domain Services. A modern security strategy includes moving security controls to the cloud where enforcement of these is not dependent on on-premises resources and access. Intune configuration profiles are the way to transition these security controls to the cloud. 
+Configuration profiles give you the ability to configure important protection and to bring devices into compliance so they can access your resources. Previously, these kinds of configuration changes were configured by using Group Policy settings in Active Directory Domain Services. A modern security strategy includes moving security controls to the cloud where enforcement of these controls is not dependent on on-premises resources and access. Intune configuration profiles are the way to transition these security controls to the cloud. 
 
 To give you an idea of the kind of configuration profiles you can create, see [Apply features and settings on your devices using device profiles in Microsoft Intune](/mem/intune/configuration/device-profiles).
 
@@ -37,13 +41,13 @@ To deploy the Windows security baselines for Intune, available for Windows 10 an
 
 For now, just deploy the most appropriate MDM security baseline. See [Manage security baseline profiles in Microsoft Intune ](/mem/intune/protect/security-baselines-configure)to create the profile and choose the baseline version.
 
-Later, when Microsoft Defender for Endpoint is set up and you’ve connected Intune, deploy the Defender for Endpoint baselines. This is covered in the next article in this series: [Step 6. Monitor device risk and compliance to security baselines](manage-devices-with-intune-monitor-risk.md).
+Later, when Microsoft Defender for Endpoint is set up and you’ve connected Intune, deploy the Defender for Endpoint baselines. This topic is covered in the next article in this series: [Step 6. Monitor device risk and compliance to security baselines](manage-devices-with-intune-monitor-risk.md).
 
 It is important to understand that these security baselines are not CIS or NIST compliant but closely mirror their recommendations. For more information, see [Are the Intune security baselines CIS or NIST compliant](/mem/intune/protect/security-baselines)?
 
 ## Customize configuration profiles for your organization
 
-In addition to deploying the pre-configured baselines, many enterprise-scale organizations implement configuration profiles for more granular control. This helps reduce the dependency on Group Policy Objects in the on-premises Active Directory environment and move security controls to the cloud. 
+In addition to deploying the pre-configured baselines, many enterprise-scale organizations implement configuration profiles for more granular control. This configuration helps reduce the dependency on Group Policy Objects in the on-premises Active Directory environment and move security controls to the cloud. 
 
 The many settings you can configure by using configuration profiles can be grouped into four categories, as illustrated below.
 

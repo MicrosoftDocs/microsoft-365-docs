@@ -3,13 +3,12 @@ title: Microsoft recommendations for EOP and Defender for Office 365 security se
 keywords: Office 365 security recommendations, Sender Policy Framework, Domain-based Message Reporting and Conformance, DomainKeys Identified Mail, steps, how does it work, security baselines, baselines for EOP, baselines for Defender for Office 365 , set up Defender for Office 365 , set up EOP, configure Defender for Office 365, configure EOP, security configuration
 f1.keywords:
   - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 ms.date:
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -33,13 +32,15 @@ ms.prod: m365-security
 
 **Exchange Online Protection (EOP)** is the core of security for Microsoft 365 subscriptions and helps keep malicious emails from reaching your employee's inboxes. But with new, more sophisticated attacks emerging every day, improved protections are often required. **Microsoft Defender for Office 365** Plan 1 or Plan 2 contain additional features that give admins more layers of security, control, and investigation.
 
-Although we empower security administrators to customize their security settings, there are two security levels in EOP and Microsoft Defender for Office 365 that we recommend: **Standard** and **Strict**. Each customer's environment and needs are different, but we believe that these levels of filtering will help prevent unwanted mail from reaching your employees' Inbox in most situations.
+Although we empower security administrators to customize their security settings, there are two security levels in EOP and Microsoft Defender for Office 365 that we recommend: **Standard** and **Strict**. Although customer environments and needs are different, these levels of filtering will help prevent unwanted mail from reaching your employees' Inbox in most situations.
 
 To automatically apply the Standard or Strict settings to users, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 
 This article describes the default settings, and also the recommended Standard and Strict settings to help protect your users. The tables contain the settings in the Microsoft 365 Defender portal and PowerShell (Exchange Online PowerShell or standalone Exchange Online Protection PowerShell for organizations without Exchange Online mailboxes).
 
 > [!TIP]
+> You can't change the recommended Standard and Strict settings in the Microsoft 365 Defender portal. To change recommended values like **Enable users to protect**, you need to use [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+>
 > The Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA) module for PowerShell can help you (admins) find the current values of these settings. Specifically, the **Get-ORCAReport** cmdlet generates an assessment of anti-spam, anti-phishing, and other message hygiene settings. You can download the ORCA module at <https://www.powershellgallery.com/packages/ORCA/>.
 
 ## Anti-spam, anti-malware, and anti-phishing protection in EOP
@@ -70,7 +71,7 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 |**Phishing** detection action <p> _PhishSpamAction_|**Quarantine message** <p> `MoveToJmf`|**Quarantine message** <p> `Quarantine`|**Quarantine message** <p> `Quarantine`||
 |**High confidence phishing** detection action <p> _HighConfidencePhishAction_|**Quarantine message** <p> `Quarantine`|**Quarantine message** <p> `Quarantine`|**Quarantine message** <p> `Quarantine`||
 |**Bulk** detection action <p> _BulkSpamAction_|**Move message to Junk Email folder** <p> `MoveToJmf`|**Move message to Junk Email folder** <p> `MoveToJmf`|**Quarantine message** <p> `Quarantine`||
-|**Retain spam in quarantine for this many days** <p> _QuarantineRetentionPeriod_|30 days|30 days|30 days|This value also affects messages that are quarantined by anti-phishing policies. For more information, see [Quarantined email messages in EOP](quarantine-email-messages.md).|
+|**Retain spam in quarantine for this many days** <p> _QuarantineRetentionPeriod_|15 days<sup>\*</sup>|30 days|30 days|<sup>\*</sup> The default value is 15 days in the default anti-spam policy, and in new anti-spam policies that you create in PowerShell. The default value is 30 days in new anti-spam policies that you create in the Microsoft 365 Defender portal. <p> This value also affects messages that are quarantined by anti-phishing policies. For more information, see [Quarantined email messages in EOP](quarantine-email-messages.md).|
 |**Enable spam safety tips** <p> _InlineSafetyTipsEnabled_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
 |Enable zero-hour auto purge (ZAP) for phishing messages <p> _PhishZapEnabled_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
 |Enable ZAP for spam messages <p> _SpamZapEnabled_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
@@ -114,6 +115,9 @@ The table in this section describes the Advanced Spam Filter (ASF) settings that
 To create and configure outbound spam policies, see [Configure outbound spam filtering in EOP](configure-the-outbound-spam-policy.md).
 
 For more information about the default sending limits in the service, see [Sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1).
+
+> [!NOTE]
+> Outbound spam policies are not part of Standard or Strict preset security policies. The **Standard** and **Strict** values indicate our **recommended** values in the default outbound spam policy or custom policies that you create.
 
 <br>
 
@@ -225,16 +229,16 @@ For more information about these settings, see [Impersonation settings in anti-p
 |Security feature name|Default|Standard|Strict|Comment|
 |---|:---:|:---:|:---:|---|
 |**Phishing threshold & protection**|||||
-|**Enable users to protect** (impersonated user protection) <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Not selected <p> `$false` <p> none|Selected <p> `$true` <p> \<list of users\>|Selected <p> `$true` <p> \<list of users\>|We recommend adding users (message senders) in key roles. Internally, protected senders might be your CEO, CFO, and other senior leaders. Externally, protected senders could include council members or your board of directors.|
+|**Enable users to protect** (impersonated user protection) <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|Not selected <p> `$false` <p> none|Selected <p> `$true` <p> \<list of users\>|Selected <p> `$true` <p> \<list of users\>|We recommend adding users (message senders) in key roles. Internally, protected senders might be your CEO, CFO, and other senior leaders. Externally, protected senders could include council members or your board of directors. <p> In preset security policies, you can't specify the users to protect. You need to disable the preset security policies and use custom anti-phishing policies to add users in key roles as suggested.|
 |**Enable domains to protect** (impersonated domain protection)|Not selected|Selected|Selected||
 |**Include domains I own** <p> _EnableOrganizationDomainsProtection_|Off <p> `$false`|Selected <p> `$true`|Selected <p> `$true`||
-|**Include custom domains** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Off <p> `$false` <p> none|Selected <p> `$true` <p> \<list of domains\>|Selected <p> `$true` <p> \<list of domains\>|We recommend adding domains (sender domains) that you don't own, but you frequently interact with.|
+|**Include custom domains** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|Off <p> `$false` <p> none|Selected <p> `$true` <p> \<list of domains\>|Selected <p> `$true` <p> \<list of domains\>|We recommend adding domains (sender domains) that you don't own, but you frequently interact with. <p> In preset security policies, you can't specify the custm domains to protect. You need to disable the preset security policies and use custom anti-phishing policies to add custom domains to protect as suggested.|
 |**Add trusted senders and domains** <p> _ExcludedSenders_ <p> _ExcludedDomains_|None|None|None|Depending on your organization, we recommend adding senders or domains that are incorrectly identified as impersonation attempts.|
 |**Enable mailbox intelligence** <p> _EnableMailboxIntelligence_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
 |**Enable intelligence for impersonation protection** <p> _EnableMailboxIntelligenceProtection_|Off <p> `$false`|Selected <p> `$true`|Selected <p> `$true`|This setting allows the specified action for impersonation detections by mailbox intelligence.|
 |**Actions**||||Wherever you select **Quarantine the message**, a **Select quarantine policy** box is available. Quarantine policies define what users are allowed to do to quarantined messages. <p> When you create a new anti-phishing policy, a blank value means the default quarantine policy is used to define the historical capabilities for messages that were quarantined by that verdict (DefaultFullAccessPolicy for all impersonation detection types). <p> Admins can create and select custom quarantine policies that define less restrictive or more restrictive capabilities for users. For more information, see [Quarantine policies](quarantine-policies.md).|
-|**If message is detected as an impersonated user** <p> _TargetedUserProtectionAction_|**Don't apply any action** <p> `NoAction`|**Quarantine the message** <p> `Quarantine`|**Quarantine the message** <p> `Quarantine`||
-|**If message is detected as an impersonated domain** <p> _TargetedDomainProtectionAction_|**Don't apply any action** <p> `NoAction`|**Quarantine the message** <p> `Quarantine`|**Quarantine the message** <p> `Quarantine`||
+|**If message is detected as an impersonated user** <p> _TargetedUserProtectionAction_|**Don't apply any action** <p> `NoAction`|**Quarantine the message** <p> `Quarantine`|**Quarantine the message** <p> `Quarantine`|Remember, preset security policies don't allow you to specify the users to protect, so this setting effectively does nothing in preset security policies.|
+|**If message is detected as an impersonated domain** <p> _TargetedDomainProtectionAction_|**Don't apply any action** <p> `NoAction`|**Quarantine the message** <p> `Quarantine`|**Quarantine the message** <p> `Quarantine`|Remember, preset security policies don't allow you to specify the custom domains to protect, so this setting affects only domains that you own, not custom domains.|
 |**If mailbox intelligence detects and impersonated user** <p> _MailboxIntelligenceProtectionAction_|**Don't apply any action** <p> `NoAction`|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Quarantine the message** <p> `Quarantine`||
 |**Show user impersonation safety tip** <p> _EnableSimilarUsersSafetyTips_|Off <p> `$false`|Selected <p> `$true`|Selected <p> `$true`||
 |**Show domain impersonation safety tip** <p> _EnableSimilarDomainsSafetyTips_|Off <p> `$false`|Selected <p> `$true`|Selected <p> `$true`||
@@ -256,7 +260,7 @@ The spoof settings are inter-related, but the **Show first contact safety tip** 
 |**Phishing threshold & protection**|||||
 |**Enable spoof intelligence** <p> _EnableSpoofIntelligence_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`||
 |**Actions**|||||
-|**If message is detected as spoof** <p> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Quarantine the message** <p> `Quarantine`|This setting applies to spoofed senders that were automatically blocked as shown in the [spoof intelligence insight](learn-about-spoof-intelligence.md) or manually blocked in the [Tenant Allow/Block List](tenant-allow-block-list.md). <p> If you select **Quarantine the message**, an **Apply quarantine policy** box is available to select the quarantine policy that defines what users are allowed to do to quarantined messages. When you create a new anti-phishing policy, a blank value value means the default quarantine policy is used to define the historical capabilities for spoof quarantined messages (DefaultFullAccessPolicy). <p> Admins can create and select a custom quarantine policy that defines what recipients are allowed to do to these messages in quarantine. For more information, see [Quarantine policies](quarantine-policies.md).|
+|**If message is detected as spoof** <p> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Move message to the recipients' Junk Email folders** <p> `MoveToJmf`|**Quarantine the message** <p> `Quarantine`|This setting applies to spoofed senders that were automatically blocked as shown in the [spoof intelligence insight](learn-about-spoof-intelligence.md) or manually blocked in the [Tenant Allow/Block List](tenant-allow-block-list.md). <p> If you select **Quarantine the message**, an **Apply quarantine policy** box is available to select the quarantine policy that defines what users are allowed to do to quarantined messages. When you create a new anti-phishing policy, a blank value means the default quarantine policy is used to define the historical capabilities for spoof quarantined messages (DefaultFullAccessPolicy). <p> Admins can create and select a custom quarantine policy that defines what recipients are allowed to do to these messages in quarantine. For more information, see [Quarantine policies](quarantine-policies.md).|
 |**Show first contact safety tip** <p> _EnableFirstContactSafetyTips_|Not selected <p> `$false`|Selected <p> `$true`|Selected <p> `$true`|For more information, see [First contact safety tip](set-up-anti-phishing-policies.md#first-contact-safety-tip).|
 |**Show (?) for unauthenticated senders for spoof** <p> _EnableUnauthenticatedSender_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Unauthenticated sender](set-up-anti-phishing-policies.md#unauthenticated-sender).|
 |**Show "via" tag** <p> _EnableViaTag_|Selected <p> `$true`|Selected <p> `$true`|Selected <p> `$true`|Adds a via tag (chris@contoso.com via fabrikam.com) to the From address if it's different from the domain in the DKIM signature or the **MAIL FROM** address. <p> For more information, see [Unauthenticated sender](set-up-anti-phishing-policies.md#unauthenticated-sender).|

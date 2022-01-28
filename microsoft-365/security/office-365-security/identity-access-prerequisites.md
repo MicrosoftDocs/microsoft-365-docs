@@ -23,11 +23,6 @@ ms.technology: mdo
 
 # Prerequisite work for implementing Zero Trust identity and device access policies
 
-**Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- Azure
-
 This article describes the prerequisites admins must meet to use recommended Zero Trust identity and device access policies, and to use Conditional Access. It also discusses the recommended defaults for configuring client platforms for the best single sign-on (SSO) experience.
 
 ## Prerequisites

@@ -13,7 +13,7 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.date: 11/15/2021
+ms.date: 12/17/2021
 ms.collection: M365-security-compliance
 ---
 
@@ -21,7 +21,8 @@ ms.collection: M365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 
 You can define exclusions for Microsoft Defender Antivirus that apply to [scheduled scans](schedule-antivirus-scans.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [always-on, real-time protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md). **Generally, you shouldn't need to apply exclusions**. If you do need to apply exclusions, you can choose from several different kinds:
@@ -132,7 +133,7 @@ The format for the cmdlets is as follows:
 
 The following table lists cmdlets that you can use in the `<cmdlet>` portion of the PowerShell cmdlet:
 
-<br/>
+<br/><br/>
 
 |Configuration action|PowerShell cmdlet|
 |:---|:---|
@@ -142,7 +143,7 @@ The following table lists cmdlets that you can use in the `<cmdlet>` portion of 
 
 The following table lists values that you can use in the `<exclusion list>` portion of the PowerShell cmdlet:
 
-<br/>
+<br/><br/>
 
 |Exclusion type|PowerShell parameter|
 |---|---|
@@ -159,9 +160,9 @@ Add-MpPreference -ExclusionExtension ".test"
 ```
 
 > [!TIP]
-> For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender for Cloud cmdlets](/powershell/module/defender/).
+> For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender Antivirus cmdlets](/powershell/module/defender/).
 
-### Use Windows Management Instruction (WMI) to configure file name, folder, or file extension exclusions
+### Use Windows Management Instrumentation (WMI) to configure file name, folder, or file extension exclusions
 
 Use the [Set, Add, and Remove methods of the MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) class for the following properties:
 
@@ -197,7 +198,7 @@ You can use the asterisk `*`, question mark `?`, or environment variables (such 
     
 The following table describes how the wildcards can be used and provides some examples.
 
-<br/>
+<br/><br/>
 
 |Wildcard|Examples|
 |---|---|
@@ -218,7 +219,7 @@ The following table describes how the wildcards can be used and provides some ex
 
 The following table lists and describes the system account environment variables.
 
-<br/>
+<br/><br/>
 
 |This system environment variable...|Redirects to this|
 |---|---|
@@ -310,12 +311,12 @@ To check exclusions with the dedicated [command-line tool mpcmdrun.exe](./comman
 ```console
 Start, CMD (Run as admin)
 cd "%programdata%\microsoft\windows defender\platform"
-cd 4.18.2110-6.0 (Where 4.18.2110-6.0 is this month's Microsoft Defender Antivirus "Platform Update".)
+cd 4.18.2111-5.0 (Where 4.18.2111-5.0 is this month's Microsoft Defender Antivirus "Platform Update".)
 MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> Checking exclusions with MpCmdRun requires Microsoft Defender Antivirus CAMP version 4.18.2110-6.0 (released in November 2021) or later.
+> Checking exclusions with MpCmdRun requires Microsoft Defender Antivirus CAMP version 4.18.2111-5.0 (released in  December 2021) or later.
 
 ### Review the list of exclusions alongside all other Microsoft Defender Antivirus preferences by using PowerShell
 
@@ -329,7 +330,7 @@ In the following example, the items contained in the `ExclusionExtension` list a
 
 :::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="PowerShell output for Get-MpPreference.":::
 
-For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender for Cloud cmdlets](/powershell/module/defender/).
+For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender Antivirus cmdlets](/powershell/module/defender/).
 
 ### Retrieve a specific exclusions list by using PowerShell
 
@@ -345,7 +346,7 @@ In the following example, the list is split into new lines for each use of the `
 
 :::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="PowerShell output showing only the entries in the exclusion list.":::
 
-For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender for Cloud cmdlets](/powershell/module/defender/).
+For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender Antivirus cmdlets](/powershell/module/defender/).
 
 <a id="validate"></a>
 

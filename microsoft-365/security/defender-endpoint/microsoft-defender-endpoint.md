@@ -12,6 +12,7 @@ ms.localizationpriority: high
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
+ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -29,7 +30,7 @@ ms.technology: mde
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
 
 > [!TIP]
-> Soon, Microsoft Defender for Endpoint will be available in two plans. This article describes the features and capabilities that are included in Microsoft Defender for Endpoint Plan 2. [Learn more about Microsoft Defender for Endpoint Plan 1 (preview) and Plan 2](defender-endpoint-plan-1-2.md).
+> Soon, Microsoft Defender for Endpoint will be available in two plans. This article describes the features and capabilities that are included in Microsoft Defender for Endpoint Plan 2. [Learn more about Microsoft Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md).
 > 
 
 <p><p>
@@ -70,7 +71,7 @@ Defender for Endpoint uses the following combination of technology built into Wi
 
 > [!TIP]
 >
-> - Learn about the latest enhancements in Defender for Endpoint: [What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-atp.md).
+> - Learn about the latest enhancements in Defender for Endpoint: [What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-endpoint.md).
 > - Microsoft Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
 
 <a name="tvm"></a>

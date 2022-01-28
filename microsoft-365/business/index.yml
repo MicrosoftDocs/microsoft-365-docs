@@ -11,7 +11,9 @@ metadata:
   ms.service: o365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   ms.collection: collection
-  ms.custom: AdminSurgePortfolio
+  ms.custom: 
+  - AdminSurgePortfolio
+  - intro-hub-or-landing
   author: efrene #Required; your GitHub user alias, with correct capitalization.
   ms.author: efrene #Required; microsoft alias of author; optional team alias.
   ms.date: 8/25/2021 #Required; mm/dd/yyyy format.
@@ -34,14 +36,14 @@ productDirectory:
     - title: What's new?
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-      summary: Coming soon in preview--Microsoft Defender for Business, an enterprise-grade endpoint solution for businesses with fewer than 300 employees.
-      url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/introducing-microsoft-defender-for-business/ba-p/2898701
+      summary: Join the Microsoft Defender for Business preview today--an enterprise-grade endpoint solution for businesses with fewer than 300 employees.
+      url: https://aka.ms/MDB-previewblog
     # Card
     - title: Join the partner webinar series
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-      summary: Learn about Microsoft Defender for Business--a new endpoint security solution--and its partner value and benefits.
-      url: https://aka.ms/DefenderforBusinessWebinar 
+      summary: Learn how you can drive upsell and grow your business with Microsoft 365 Business Premium, Microsoft Defender for Business, and Microsoft 365 Lighthouse.
+      url: https://aka.ms/M365MDBseries 
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -58,7 +60,7 @@ conceptualContent:
         - url: /office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
           itemType: overview
           text: Compare plans
-        - url: /office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
+        - url: https://go.microsoft.com/fwlink/?linkid=2164213
           itemType: reference
           text: Service description
         - url: ../admin/misc/microsoft-365-business-faqs.yml
@@ -76,7 +78,7 @@ conceptualContent:
         - url: /MicrosoftTeams/get-started-with-teams-quick-start
           itemType: video
           text: 3. Set up Teams
-        - url: ../business-video/install-office.md
+        - url: ../admin/setup/install-applications.md
           itemType: get-started
           text: 4. Install Office
   #Card
@@ -85,12 +87,18 @@ conceptualContent:
         - url: https://www.microsoft.com/microsoft-365/partners/business
           itemType: overview
           text: Partner page 
-        - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-customer-pitch-deck.pptx
+        - url: https://aka.ms/M365BPPartnerPlaybook
           itemType: download
-          text: Pitch deck (customer focus)
-        - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-opportunity-deck.pptx
+          text: Business Premium Partner Playbook
+        - url: https://aka.ms/bpbdmpitchdeck
           itemType: download
-          text: Pitch deck (partner focus) 
+          text: Business Premium business decision maker (BDM) pitch deck
+        - url: https://aka.ms/bpitdmpitchdeck
+          itemType: download
+          text: Business Premium IT decision maker (ITDM) pitch deck
+        - url: https://aka.ms/bppartneropportunitydeck
+          itemType: download
+          text: Business Premium partner opportunity presentation
         - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-smb-technical-fundamentals-content-content-used-for-delivery
           itemType: download
           text: Tech fundamentals
@@ -117,7 +125,7 @@ conceptualContent:
           text: Reset someone's password
       # footerLink (optional)
       footerLink:
-        url: /office365/admin/admin-home
+        url: /microsoft-365/admin/
         text: See more 
  # Card
     - title: Manage threats
@@ -136,7 +144,7 @@ conceptualContent:
           text: Conditional Access
       # footerLink (optional)
       footerLink:
-        url: /office365/admin/admin-home
+        url: /microsoft-365/admin/
         text: See more 
   # Card
     - title: Manage data
@@ -150,7 +158,7 @@ conceptualContent:
         - url: ./set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
           itemType: how-to-guide
           text: Set up email retention
-        - url: ../business-video/create-sensitivity-labels.md
+        - url: ../admin/security-and-compliance/set-up-compliance.md
           itemType: video
           text: Create and use sensitivity labels
       # footerLink (optional)
@@ -219,7 +227,7 @@ conceptualContent:
   #Card
     - title: How do I...
       links:
-        - url: ../business-video/sign-up.md
+        - url: ../admin/admin-overview/sign-up-for-office-365.md
           itemType: get-started
           text: Sign up for Microsoft 365 Business Premium
         - url: ../commerce/subscriptions/upgrade-to-different-plan.md
@@ -233,5 +241,5 @@ conceptualContent:
           text: Migrate to Microsoft 365 Enterprise E3
       # footerLink (optional)
       footerLink:
-        url: ../business-video/what-is-microsoft-365.md
+        url: ../admin/admin-overview/what-is-microsoft-365.md
         text: See more

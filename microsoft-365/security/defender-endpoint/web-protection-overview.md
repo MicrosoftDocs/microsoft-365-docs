@@ -23,7 +23,8 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -142,16 +143,16 @@ Kusto queries in advanced hunting can be used to summarize web protection blocks
 
 ```kusto
 DeviceEvents
-| where ActionType == "SmartScreenUrlWarning"
-| extend ParsedFields=parse_json(AdditionalFields)
-| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
+| where ActionType == "SmartScreenUrlWarning"
+| extend ParsedFields=parse_json(AdditionalFields)
+| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
 | where Experience == "CustomBlockList"
 ```
 
 Similarly, you can use the query below to list all WCF blocks originating from Network Protection (for example, a WCF block in a third-party browser). Note that the ActionType has been updated and 'Experience' has been changed to 'ResponseCategory'.
 
 ```kusto
-DeviceEvents 
+DeviceEvents
 | where ActionType == "ExploitGuardNetworkProtectionBlocked"
 | extend ParsedFields=parse_json(AdditionalFields)
 | project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, ResponseCategory=tostring(ParsedFields.ResponseCategory)

@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 10/18/2021
+ms.date: 01/10/2022
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
@@ -21,7 +21,7 @@ ms.collection: m365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 
 [Cloud protection in Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md) delivers accurate, real-time, and intelligent protection. Cloud protection should be enabled by default; however, you can configure cloud protection to suit your organization's needs.
@@ -39,7 +39,7 @@ You can also turn cloud protection on or off on individual endpoints using the W
 For more information about the specific network-connectivity requirements to ensure your endpoints can connect to the cloud protection service, see [Configure and validate network connections](configure-network-connections-microsoft-defender-antivirus.md).
 
 > [!NOTE]
-> In Windows 10 and Windows 11, there is no difference between the **Basic** and **Advanced** reporting options described in this topic. This is a legacy distinction and choosing either setting will result in the same level of cloud protection. There is no difference in the type or amount of information that is shared. For more information on what we collect, see the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=521839).
+> In Windows 10 and Windows 11, there is no difference between the **Basic** and **Advanced** reporting options described in this article. This is a legacy distinction and choosing either setting will result in the same level of cloud protection. There is no difference in the type or amount of information that is shared. For more information on what we collect, see the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=521839).
 
 ## Use Intune to turn on cloud protection
 
@@ -133,11 +133,9 @@ For more information about allowed parameters, see [Windows Defender WMIv2 APIs]
 
 1. Open the Windows Security app by selecting the shield icon in the task bar, or by searching the start menu for **Windows Security**.
 
-2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar) and then the **Virus & threat protection settings** label:
+2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar), and then, under **Virus & threat protection settings**, select **Manage settings**.
 
-    :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Screenshot of the Virus & threat protection settings":::
-
-3. Confirm that **Cloud-based Protection** and **Automatic sample submission** are switched to **On**.
+3. Confirm that **Cloud-based Protection** and **Automatic sample submission** are both switched to **On**.
 
    > [!NOTE]
    > If automatic sample submission has been configured with Group Policy then the setting will be greyed-out and unavailable.

@@ -22,7 +22,7 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -58,8 +58,13 @@ connections json
 ## `dir`
 
 ```console
-# List files and sub-folders in the current folder
+# List files and sub-folders in the current folder (by default it will show relative paths [-relative_path])
 dir
+```
+
+```console
+# List files and sub-folders in the current folder, with their full path
+dir -full_path
 ```
 
 ```console
