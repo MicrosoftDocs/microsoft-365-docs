@@ -15,7 +15,9 @@ ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.date: 01/19/2022
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365initiative-defender-endpoint
 ---
 
 # Microsoft Defender Antivirus compatibility with other security products

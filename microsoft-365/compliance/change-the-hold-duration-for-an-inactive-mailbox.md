@@ -2,8 +2,8 @@
 title: "Change the hold duration for an inactive mailbox"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 8/29/2017
 audience: Admin
