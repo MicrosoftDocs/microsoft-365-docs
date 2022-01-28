@@ -23,7 +23,7 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 **In this article:** Learn about recent updates in Compliance Manager.
 
-## January 2022
+## February 2022
 
 ### Continuous compliance assessment (CCA)
 
