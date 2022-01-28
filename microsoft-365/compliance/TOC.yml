@@ -647,7 +647,7 @@
           href: event-driven-retention.md
         - name: Publish & apply retention labels in apps
           href: create-apply-retention-labels.md
-        - name: Automataically apply retention labels to content
+        - name: Automatically apply retention labels to content
           href: apply-retention-labels-automatically.md
         - name: Lock policies to restrict changes
           href: retention-preservation-lock.md
