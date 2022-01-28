@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 description: "Administrators can set up a data connector to import data from their organization's physical badging system to Microsoft 365. This lets you use this data in insider risk management policies to help you detect access to your physical buildings by specific users that may indicate a possible internal threat to your organization."
 ---
 
@@ -131,7 +132,7 @@ You can also download the following schema definition for the JSON file from the
 
 The next step is to create a physical badging connector in the Microsoft 365 compliance center. After you run the script in Step 4, the JSON file that you created in Step 3 will be processed and pushed to the API endpoint you configured in Step 1. In this step, be sure to copy the JobId that's generated when you create the connector. You'll use the JobId when you run the script.
 
-1. Go to <https://compliance.microsoft.com> and then click **Data connectors** in the left nav.
+1. Go to the Microsoft 365 compliance center, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors**</a>.
 
 2. On the **Data connectors** page under **Physical badging**, click **View**.
 
@@ -212,17 +213,17 @@ After you run the script, the JSON file containing the physical badging data is 
 
 After you create the physical badging connector and push your physical badging data, you can view the connector and upload status in the Microsoft 365 compliance center. If you schedule the script to run automatically on a regular basis, you can also view the current status after the last time the script ran.
 
-1. Go to <https://compliance.microsoft.com> and click **Data connectors** in the left nav.
+1. Go to the Microsoft 365 compliance center, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2173865" target="_blank">**Data connectors**</a>.
 
 2. Click the **Connectors** tab and then select the physical badging connector to display the flyout page. This page contains the properties and information about the connector.
 
    ![Status flyout page for physical badging connector.](..\media\PhysicalBadgingStatusFlyout.png)
 
-3. Under **Last import**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about each time the script runs and uploads the data from the CSV file to the Microsoft cloud.
+3. Under **Last import**, click the **Download log** link to open (or save) the status log for the connector. This log contains information about each time the script runs and uploads the data from the JSON file to the Microsoft cloud.
 
-   ![Physical badging connector log file displays number rows from JSON file that were uploaded.](..\media\PhysicalBadgingConnectorLogFile.png)
+   ![Physical badging connector log file displays number of objects from the JSON file that were uploaded.](..\media\PhysicalBadgingConnectorLogFile.png)
 
-   The **RecordsSaved** field indicates the number of rows in the CSV file that uploaded. For example, if the CSV file contains four rows, then the value of the **RecordsSaved** fields is 4, if the script successfully uploaded all the rows in the CSV file.
+   The **RecordsSaved** field indicates the number of objects in the JSON file that uploaded. For example, if the JSON file contains four objects, then the value of the **RecordsSaved** fields is 4, if the script successfully uploaded all the objects in the JSON file.
 
 If you've haven't run the script in Step 4, a link to download the script is displayed under **Last import**. You can download the script and then follow the steps in Step 4 to run it.
 

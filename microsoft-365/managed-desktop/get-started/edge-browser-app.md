@@ -3,9 +3,9 @@ title: New Microsoft Edge
 description:  Explains how the new Edge browser is deployed and updated
 keywords: browser, Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
@@ -100,19 +100,22 @@ We don't recommend using Flash because of associated security risks. If you stil
 
 **Default value:** Disabled
 
-The password manager is disabled by default. If you's like this feature enabled, file a support request and our service engineers can enable the setting in your environment. 
+The password manager is disabled by default. If you'd like this feature enabled, file a support request and our service engineers can enable the setting in your environment.
 
 ### Internet Explorer Mode in Microsoft Edge
-IE mode on Microsoft Edge makes it easy to use all of the sites your organization needs in a single browser. It uses the integrated Chromium engine for sites that are compatible with the Chromium rendering engine and it uses the Trident MSHTML engine from Internet Explorer 11 (IE11) for sites that aren't or have dependencies on IE functionality. [Learn more](/DeployEdge/edge-ie-mode) 
 
-Microsoft Managed Desktop enables Internet Explorer mode for your devices by default 
+IE mode on Microsoft Edge makes it easy to use all of the sites your organization needs in a single browser. It uses the integrated Chromium engine for sites that are compatible with the Chromium rendering engine and it uses the Trident MSHTML engine from Internet Explorer 11 (IE11) for sites that aren't or have dependencies on IE functionality. [Learn more](/DeployEdge/edge-ie-mode)
+
+Microsoft Managed Desktop enables Internet Explorer mode for your devices by default.
 
 #### Internet Explorer mode integration
+
 **Default Value:** Internet Explorer mode
 
 By default, devices are set to use Internet Explorer mode, but you can set them to open sites in a standalone Internet Explorer 11 window instead. To change this behavior, file a support request.
 
 #### Add sites to the Enterprise Mode Site list
+
 For sites to open in Internet Explorer mode you must include them on the [Enterprise Site list](/DeployEdge/edge-ie-mode-sitelist). Maintaining and deploying the Enterprise Site list is your responsibility. For details, see [Configure using the Configure Enterprise Mode Site List policy](/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
 
 ### Other settings

@@ -6,6 +6,7 @@ ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
+ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ---
 
@@ -25,7 +26,7 @@ This article explains how to apply [Microsoft Defender for Identity](/defender-f
 
 In Microsoft 365 Defender, you can set three types of Defender for Identity entity tags: **Sensitive tags**, **Honeytoken tags**, and **Exchange server tags**.
 
-To set these tags, in [Microsoft 365 Defender](https://security.microsoft.com/), go to **Settings** and then **Identities**.
+To set these tags, in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Settings** and then **Identities**.
 
 ![Go to Settings, then Identities.](../../media/defender-identity/settings-identities.png)
 

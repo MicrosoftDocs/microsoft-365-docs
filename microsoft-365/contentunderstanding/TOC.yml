@@ -33,12 +33,16 @@
           href: apply-a-model.md
         - name: Create a form processing model 
           href: create-a-form-processing-model.md
+        - name: Create documents using content assembly 
+          href: content-assembly.md
         - name: Publish and discover a model
           href: model-discovery.md
         - name: Apply a retention label 
           href: apply-a-retention-label-to-a-model.md
         - name: Apply a sensitivity label 
           href: apply-a-sensitivity-label-to-a-model.md
+        - name: Search for metadata in libraries 
+          href: metadata-search.md
         - name: Model usage analytics
           href: model-usage-analytics.md
         - name: Leverage term store taxonomy when creating an extractor
@@ -73,6 +77,18 @@
           href: syntex-licensing.md
         - name: Set up SharePoint Syntex
           href: set-up-content-understanding.md
+        - name: Manage SharePoint Syntex with PowerShell
+          items:
+            - name: Overview
+              href: powershell-syntex-intro.md
+            - name: Export and import models
+              href: powershell-syntex-import-export.md
+            - name: Publish models
+              href: powershell-syntex-publishing.md
+            - name: Request processing by a model
+              href: powershell-syntex-processing.md
+            - name: Work with model explanations
+              href: powershell-syntex-explanations.md
         
     - name: Content services
       items:
