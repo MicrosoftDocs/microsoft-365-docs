@@ -19,16 +19,18 @@ description: "Learn how to create and import a custom sensitive information type
 
 # Create a custom sensitive information type using PowerShell
 
-This article shows you how to create an XML *rule package* file that defines custom [sensitive information types](sensitive-information-type-entity-definitions.md). For illustration, this article creates a custom sensitive information type that identifies an employee ID. You can use this example XML as a starting point for your own XML file. If you are new to sensitive information types, see [Learn about sensitive information types](sensitive-information-type-learn-about.md).
+This article shows you how to create an XML *rule package* file that defines custom [sensitive information types](sensitive-information-type-entity-definitions.md). This article describes a custom sensitive information type that identifies an employee ID. You can use the sample XML in this article as a starting point for your own XML file.
 
-After you've created a well-formed XML file, you can upload it to Microsoft 365 by using Microsoft 365 PowerShell. Then you're ready to use your custom sensitive information type in your policies and test that it's detecting the sensitive information as you intended.
+For more information about sensitive information types, see [Learn about sensitive information types](sensitive-information-type-learn-about.md).
+
+After you've created a well-formed XML file, you can upload it to Microsoft 365 using PowerShell. Then, you're ready to use your custom sensitive information type in policies. You can test its effectiveness in detecting the sensitive information as you intended.
 
 > [!NOTE]
-> If you don't need the fine grained control that PowerShell provides, you can create custom sensitive information types in the Compliance center. For more information, see [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md).
+> If you don't need the fine-grained control that PowerShell provides, you can create custom sensitive information types in the Microsoft 365 compliance center. For more information, see [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md).
 
 ## Important disclaimer
 
-Due to the differences in customers and requirements, Microsoft Support can't help you create content-matching definitions; e.g., defining custom classifications or regular expression (also known as RegEx) patterns.
+Microsoft Support can't help you create content-matching definitions.
 
 For custom content-matching development, testing, and debugging, you'll need to use your own internal IT resources, or use consulting services, such as Microsoft Consulting Services (MCS). Microsoft Support engineers can provide limited support for this feature, but they can't guarantee that custom content-matching suggestions will fully meet your needs.
 
@@ -128,7 +130,7 @@ Here's the sample XML of the rule package that we'll create in this article. Ele
 
 ## What are your key requirements? [Rule, Entity, Pattern elements]
 
-It's important that you understand the basic structure of the XML schema for a rule. Your understanding of the structure will help your your custom sensitive information type to identify the right content.
+It's important that you understand the basic structure of the XML schema for a rule. Your understanding of the structure will help your custom sensitive information type to identify the right content.
 
 A rule defines one or more entities (also known as sensitive information types). Each entity defines one or more patterns. A pattern is what a policy looks for when it evaluates content (for example, email and documents).
 
@@ -155,11 +157,13 @@ For example, to increase the likelihood of identifying content that contains an 
 
 There are important points to consider for multiple pattern matches:
 
-- Patterns that require more evidence have a higher confidence level. When you use this sensitive information type in a policy, you can use more restrictive actions (such as block content) with higher-confidence matches, and you can use less restrictive actions (such as send notifications) with lower-confidence matches.
+- Patterns that require more evidence have a higher confidence level. Based on the confidence level, you can take the following actions:
+  - Use more restrictive actions (such as block content) with higher-confidence matches.
+  - Use less restrictive actions (such as send notifications) with lower-confidence matches.
 
-- The supporting `IdMatch` and `Match` elements reference RegExes and keywords that are actually children of the `Rule` element, not the `Pattern`. These supporting elements are referenced by the `Pattern`, but are included in the `Rule`. This means that a single definition of a supporting element, such as a regular expression or a keyword list, can be referenced by multiple entities and patterns.
+- The supporting `IdMatch` and `Match` elements reference RegExes and keywords that are actually children of the `Rule` element, not the `Pattern`. These supporting elements are referenced by the `Pattern`, but are included in the `Rule`. This behavior means that a single definition of a supporting element, such as a regular expression or a keyword list, can be referenced by multiple entities and patterns.
 
-## What entity do you need to identify? [Entity element, id attribute]
+## What entity do you need to identify? [Entity element, ID attribute]
 
 An entity is a sensitive information type, such as a credit card number, that has a well-defined pattern. Each entity has a unique GUID as its ID.
 
@@ -173,7 +177,7 @@ An entity is a sensitive information type, such as a credit card number, that ha
 
 ## What pattern do you want to match? [Pattern element, IdMatch element, Regex element]
 
-The pattern contains the list of what the sensitive information type is looking for. The pattern can include RegExes, keywords, and built-in functions (which perform tasks like running RegExes to find dates or addresses). Sensitive information types can have multiple patterns with unique confidences.
+The pattern contains the list of what the sensitive information type is looking for. The pattern can include RegExes, keywords, and built-in functions. Functions do task like running RegExes to find dates or addresses. Sensitive information types can have multiple patterns with unique confidences.
 
 In the following diagram, all of the patterns reference the same regular expression. This RegEx looks for a nine-digit number `(\d{9})` surrounded by white space `(\s) ... (\s)`. This regular expression is referenced by the `IdMatch` element, and is the common requirement for all patterns that look for the Employee ID entity. `IdMatch` is the identifier that the pattern is to trying to match. A `Pattern` element must have exactly one `IdMatch` element.
 
@@ -183,7 +187,7 @@ A satisfied pattern match returns a count and confidence level, which you can us
 
 ![Instance count and match accuracy options.](../media/sit-confidence-level.png)
 
-Regular expressions are powerful, so there are issues that you need to know about. For example, a RegEx that identifies too much content can impact performance. To learn more about these issues, see the [Potential validation issues to be aware of](#potential-validation-issues-to-be-aware-of) section later in this article.
+Regular expressions are powerful, so there are issues that you need to know about. For example, a RegEx that identifies too much content can affect performance. To learn more about these issues, see the [Potential validation issues to be aware of](#potential-validation-issues-to-be-aware-of) section later in this article.
 
 ## Do you want to require additional evidence? [Match element, minCount attribute]
 
@@ -196,7 +200,7 @@ A `Pattern` might include multiple `Match` elements:
 
 `Match` elements are joined by an implicit AND operator. In other words, all `Match` elements must be satisfied for the pattern to be matched.
 
-You can use the `Any` element to introduce AND or OR operators (more on that in a later section).
+You can use the `Any` element to introduce AND or OR operators. The `Any` element is described later in this article.
 
 You can use the optional `minCount` attribute to specify how many instances of a match need to be found for each `Match` elements. For example, you can specify that a pattern is satisfied only when at least two keywords from a keyword list are found.
 
@@ -210,7 +214,7 @@ Keywords are included as a list of `Term` elements in a `Group` element. The `Gr
 
 - **matchStyle="word"**: A word match identifies whole words surrounded by white space or other delimiters. You should always use **word** unless you need to match parts of words or words in Asian languages.
 
-- **matchStyle="string"**: A string match identifies strings no matter what they're surrounded by. For example, "id" will match "bid" and "idea". Use `string` only when you need to match Asian words or if your keyword might be included in other strings.
+- **matchStyle="string"**: A string match identifies strings no matter what they're surrounded by. For example, "ID" will match "bid" and "idea". Use `string` only when you need to match Asian words or if your keyword might be included in other strings.
 
 Finally, you can use the `caseSensitive` attribute of the `Term` element to specify that the content must match the keyword exactly, including lower-case and upper-case letters.
 
@@ -222,9 +226,9 @@ In this example, the employee `ID` entity already uses the `IdMatch` element to 
 
 ### Additional patterns such as dates or addresses [built-in functions]
 
-In addition to the built-in sensitive information types, sensitive information types can also use built-in functions that can identify corroborative evidence such as a US date, EU date, expiration date, or US address. Microsoft 365 does not support uploading your own custom functions, but when you create a custom sensitive information type, your entity can reference the built-in functions.
+Sensitive information types can also use built-in functions to identify corroborating evidence. For example, a US date, EU date, expiration date, or US address. Microsoft 365 doesn’t support uploading your own custom functions. But, when you create a custom sensitive information type, your entity can reference built-in functions.
 
-For example, an employee ID badge has a hire date on it, so this custom entity can use the built-in function  `Func_us_date` to identify a date in the format commonly used in the US.
+For example, an employee ID badge has a hire date on it, so this custom entity can use the built-in `Func_us_date` function   to identify a date in the format that's commonly used in the US.
 
 For more information, see [What the DLP functions look for](what-the-dlp-functions-look-for.md).
 
@@ -302,7 +306,7 @@ The example below illustrates how the proximity window affects the pattern match
 
 ![Diagram of corroborative evidence and proximity window.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-Note that for email, the message body and each attachment are treated as separate items. This means that the proximity window does not extend beyond the end of each of these items. For each item (attachment or body), both the idMatch and corroborative evidence needs to reside in that item.
+Note that for email, the message body and each attachment are treated as separate items. This means that the proximity window doesn’t extend beyond the end of each of these items. For each item (attachment or body), both the idMatch and corroborative evidence needs to reside in that item.
 
 ## What are the right confidence levels for different patterns? [confidenceLevel attribute, recommendedConfidence attribute]
 
@@ -536,7 +540,7 @@ When you upload your rule package XML file, the system validates the XML and che
 
 - When using the PowerShell Cmdlet there is a maximum return size of the Deserialized Data of approximately 1 megabyte.   This will affect the size of your rule pack XML file. Keep the uploaded file limited to a 770 kilobyte maximum as a suggested limit for consistent results without error when processing.
 
-- The XML structure does not require formatting characters such as spaces, tabs, or carriage return/linefeed entries.  Take note of this when optimizing for space on uploads. Tools such as Microsoft Visual Code provide join line features to compact the XML file.
+- The XML structure doesn’t require formatting characters such as spaces, tabs, or carriage return/linefeed entries.  Take note of this when optimizing for space on uploads. Tools such as Microsoft Visual Code provide join line features to compact the XML file.
 
 If a custom sensitive information type contains an issue that may affect performance, it won't be uploaded and you may see one of these error messages:
 
@@ -550,7 +554,7 @@ If a custom sensitive information type contains an issue that may affect perform
 
 Microsoft 365 uses the search crawler to identify and classify sensitive information in site content. Content in SharePoint Online and OneDrive for Business sites is recrawled automatically whenever it's updated. But to identify your new custom type of sensitive information in all existing content, that content must be recrawled.
 
-In Microsoft 365, you can't manually request a recrawl of an entire tenant, but you can do this for a site collection, list, or library. For more information, see [Manually request crawling and re-indexing of a site, a library or a list](/sharepoint/crawl-site-content).
+In Microsoft 365, you can't manually request a recrawl of an entire organization, but you can manually request a recrawl for a site collection, list, or library. For more information, see [Manually request crawling and reindexing of a site, a library or a list](/sharepoint/crawl-site-content).
 
 ## Reference: Rule package XML schema definition
 
