@@ -75,18 +75,18 @@ Here's an example of a JSON file that conforms to the required schema:
 ```json
 [
     {
-        "UserId":"sarad@contoso.com"
+        "UserId":"sarad@contoso.com",
         "AssetId":"Mid-Sec-7",
         "AssetName":"Main Building 1st Floor Mid Section",
         "EventTime":"2019-07-04T01:57:49",
-        "AccessStatus":"Failed",
+        "AccessStatus":"Failed"
     },
     {
         "UserId":"pilarp@contoso.com",
         "AssetId":"Mid-Sec-7",
         "AssetName":"Main Building 1st Floor Mid Section",
         "EventTime":"2019-07-04T02:57:49",
-        "AccessStatus":"Success",
+        "AccessStatus":"Success"
     }
 ]
 ```
