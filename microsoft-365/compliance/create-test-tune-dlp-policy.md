@@ -230,8 +230,9 @@ When you're happy that your DLP policy is accurately and effectively detecting s
  
 If you're waiting to see when the policy will take effect, [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the [Get-DlpCompliancePolicy cmdlet](/powershell/module/exchange/get-dlpcompliancepolicy) to see the DistributionStatus.
 
-![Running cmdlet in PowerShell.](../media/DLP-create-test-tune-PowerShell.png)
-
+ ```powershell
+ Get-DlpCompliancePolicy "Testing -Australia PII" -DistributionDetail | Select distributionstatus
+ ```
 After turning on the DLP policy, you should run some final tests of your own to make sure that the expected policy actions are occurring. If you're trying to test things like credit card data, there are websites online with information on how to generate sample credit card or other personal information that will pass checksums and trigger your policies.
 
 Policies that allow user overrides will present that option to the user as part of the policy tip.
