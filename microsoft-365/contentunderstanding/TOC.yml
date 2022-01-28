@@ -111,6 +111,9 @@
           href: syntex-licensing.md
         - name: Set up SharePoint Syntex
           href: set-up-content-understanding.md
+        - name: Create a content center 
+          href: create-a-content-center.md
+
         - name: Manage SharePoint Syntex with PowerShell
           items:
             - name: Overview
