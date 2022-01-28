@@ -132,7 +132,7 @@ The [AD FS deployment advisor](https://aka.ms/adfsguidance) provides you with st
 
 ### Security analyzer
 
-The [Security analyzer](https://aka.ms/securityanalyzer) will analyze your security approach and introduce you to Microsoft’s integrated security and compliance solutions that can improve your security posture. You’ll learn about advanced features, such as managing identities and helping to protect against modern attacks. You can then sign up for a trial subscription and be pointed to the corresponding setup guidance for each solution.
+The [Security analyzer](https://aka.ms/securityanalyzer) will analyze your security approach and introduce you to Microsoft integrated security and compliance solutions that can improve your security posture. You’ll learn about advanced features, such as managing identities and helping to protect against modern attacks. You can then sign up for a trial subscription and be pointed to the corresponding setup guidance for each solution.
 
 ### Microsoft Intune setup guide
 
