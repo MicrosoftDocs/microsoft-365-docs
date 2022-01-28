@@ -16,6 +16,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
+- m365initiative-defender-business
 ---
 
 # Onboard devices to Microsoft Defender for Business (preview)

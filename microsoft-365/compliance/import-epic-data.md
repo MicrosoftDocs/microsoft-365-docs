@@ -141,7 +141,7 @@ The following table describes the parameters to use with this script and their r
 |Parameter  |Description|
 |:----------|:----------|
 |tenantId|This is the Id for your Microsoft 365 organization that you obtained in Step 1. You can also obtain the tenant Id for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization.|
-|appId|This is the Azure AD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization.|
+|appId|This is the Azure AD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to access your Microsoft 365 organization.|
 |appSecret|This is the Azure AD application secret for the app that you created in Azure AD in Step 1. This also used for authentication.|
 |jobId|This is the job ID for the Epic connector that you created in Step 3. This is used to associate the Epic EHR audit records that are uploaded to the Microsoft cloud with the Epic connector.|
 |filePath|This is the file path for the text file (stored on the same system as the script) that you created in Step 2. Try to avoid spaces in the file path; otherwise use single quotation marks.|
@@ -178,7 +178,7 @@ If you've haven't run the script in Step 4, a link to download the script is dis
 
 To make sure the latest audit records from your Epic EHR system are available to tools like the insider risk management solution, we recommend that you schedule the script to run automatically on a daily basis. This also requires that you update the Epic audit record data in the same text file on a similar (if not the same) schedule so that it contains the latest information about patient records access activities by your employees. The goal is to upload the most current audit records so that the Epic connector can make it available to the insider risk management solution. 
 
-You can user the Task Scheduler app in Windows to automatically run the script every day.
+You can use the Task Scheduler app in Windows to automatically run the script every day.
 
 1. On your local computer, click the Windows **Start** button and then type **Task Scheduler**.
 
@@ -196,7 +196,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 6. Select the **Triggers** tab, click **New**, and then do the following things:
 
-    1. Under **Settings**, select the **Daily** option, and then choose a date and time to run the script for the first time. The script will every day at the same specified time.
+    1. Under **Settings**, select the **Daily** option, and then choose a date and time to run the script for the first time. The script will run every day at the same specified time.
 
     2. Under **Advanced settings**, make sure the **Enabled** checkbox is selected.
 

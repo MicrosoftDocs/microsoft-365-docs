@@ -11,10 +11,11 @@ metadata:
   ms.collection: 
   - SMB
   - M365-security-compliance
+  - m365initiative-defender-business
   ms.custom: intro-hub-or-landing
   author: denisebmsft
   ms.author: deniseb
-  ms.date: 12/13/2021
+  ms.date: 01/03/2022
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -89,10 +90,8 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: View and edit your policies
-            url: mdb-view-edit-policies.md
-          - text: Create a new policy
-            url: mdb-create-new-policy.md
+          - text: View, edit, and create policies
+            url: mdb-view-edit-create-policies.md
           - text: Create device groups
             url: mdb-create-edit-device-groups.md
           - text: Manage rules for firewall policies

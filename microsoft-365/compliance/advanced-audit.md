@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
@@ -131,7 +131,7 @@ You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExc
 
 ### SearchQueryInitiatedSharePoint
 
-Similar to searching for mailbox items, the SearchQueryInitiatedSharePoint event is triggered when a person searches for items in SharePoint. Events are triggered when searches are performed in the following types of SharePoint sites:
+Similar to searching for mailbox items, the SearchQueryInitiatedSharePoint event is triggered when a person searches for items in SharePoint. Events are triggered when searches are performed on the root or default page of the following types of SharePoint sites:
 
 - Home sites
 

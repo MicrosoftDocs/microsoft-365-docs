@@ -54,6 +54,10 @@ You must have Global Admin rights to add email aliases to a user.
   
     > [!IMPORTANT]
     > If you purchased your subscription from GoDaddy or another Partner, to set the new alias as the primary, you must go to the GoDaddy/partner management console. 
+
+
+   > [!IMPORTANT]
+   >  If you get the error message **This user is synchronized with your local Active Directory‎. Some details can be edited only through your local Active Directory**, It means that the Active Directory is authoritative for  attributes on synchronized users, you need to modify the attributes in your on-premises Active Directory.
   
     > [!TIP]
     > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Microsoft 365](../setup/add-domain.md). 
