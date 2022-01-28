@@ -3,7 +3,7 @@ title: "Implementing VPN split tunneling for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 1/27/2022
+ms.date: 1/28/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -278,7 +278,7 @@ Use the following steps to enable direct connectivity for the Stream/Live Events
 
 To implement the forced tunnel exception for Teams Live Events and Stream, the following steps should be applied:
 
-### 1. External DNS resolution
+### 1. Configure external DNS resolution
 
 Clients need external, recursive DNS resolution to be available so that the following host names can be resolved to IP addresses.
 
@@ -294,7 +294,7 @@ Clients need external, recursive DNS resolution to be available so that the foll
 
 FQDNs are not required in the VPN configuration, they are purely for use in PAC files in combination with the IPs to send the relevant traffic direct.
 
-### 2. PAC file changes (Where required)
+### 2. Implement PAC file changes (where required)
 
 For organizations that utilize a PAC file to route traffic through a proxy while on VPN, this is normally achieved using FQDNs. However, with Stream/Live Events, the host names provided contain wildcards such as **\*.azureedge.net**, which also encompasses other elements for which it is not possible to provide full IP listings. Thus, if the request is sent direct based on DNS wildcard match alone, traffic to these endpoints will be blocked as there is no route via the direct path for it in [Step 3](#3-configure-routing-on-the-vpn-to-enable-direct-egress).
 
