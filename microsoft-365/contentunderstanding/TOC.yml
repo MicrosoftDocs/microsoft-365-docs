@@ -11,7 +11,7 @@
  
     - name: Get started with models
       items: 
-        - name: Learn about models through the sample model 
+        - name: Import a sample document understanding model 
           href: learn-about-document-understanding-models-through-the-sample-model.md
         - name: Create a content center 
           href: create-a-content-center.md
