@@ -127,8 +127,7 @@ To rename an extractor from the **Extractors** panel:
 
 - To save changes and return to the model home page, on the **Extractors** panel, select **Save and exit**.
 
-- If you're ready to apply the model to a library, in the document area, select **Next**.
-On the **Add to library** panel, choose the library to which you want to add the model, and then select **Add**.
+- If you're ready to apply the model to a library, in the document area, select **Next**. On the **Add to library** panel, choose the library to which you want to add the model, and then select **Add**.
 
 ## See also
 
