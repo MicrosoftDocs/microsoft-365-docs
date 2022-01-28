@@ -161,7 +161,7 @@ When the retention period expires and the retention settings included a delete a
 
 ## Configuration guidance
 
-If you're new to configuring retention in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md).
+If you're new to configuring retention in Microsoft 365, see [Get started with information governance](get-started-with-information-governance.md).
 
 If you're ready to configure a retention policy or retention label for Exchange, see the following instructions:
 - [Create and configure retention policies](create-retention-policies.md)

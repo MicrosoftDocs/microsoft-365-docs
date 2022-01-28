@@ -18,7 +18,9 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.technology: mde
 ms.date: 01/18/2022
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365initiative-defender-endpoint
 ---
 
 # Protect security settings with tamper protection

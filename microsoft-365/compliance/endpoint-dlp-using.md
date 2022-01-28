@@ -138,7 +138,10 @@ To find the full path of Mac apps:
 
 2. Choose **Open Files and Ports** tab.
   
-3. The app name is located at the end of the full path.
+3. For macOS apps, you need the full path name, including the name of the app.
+
+   > [!div class="mx-imgBorder"]
+   > ![endpoint dlp find app full path on MacOS.](https://user-images.githubusercontent.com/81826151/151603029-6320bb19-3249-42e4-8300-a94b770b33cc.png)
 
 
 #### Protect sensitive data from cloud synchronization apps
@@ -172,7 +175,11 @@ For macOS devices, you must add the full file path. To find the full path of Mac
 
 2. Choose **Open Files and Ports** tab.
   
-3. The app name is located at the end of the full path.
+3. For macOS apps, you need the full path name, including the name of the app.
+
+   > [!div class="mx-imgBorder"]
+   > ![endpoint dlp find app full path on MacOS.](https://user-images.githubusercontent.com/81826151/151603029-6320bb19-3249-42e4-8300-a94b770b33cc.png)
+
 
 #### Service domains
 
