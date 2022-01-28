@@ -106,9 +106,13 @@ When adding exclusions, be mindful of [common exclusion mistakes for Microsoft D
 
 The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
 
-|Spreadsheet of domains list|Description|
+|Spreadsheet of domains list| Description|
 |---|---|
-|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet.](images/mdatp-urls.png)|Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <p> Download the spreadsheet here: [mdatp-urls.xlsx](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).
+|Microsoft Defender for Endpoint URL list for commercial | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial. <p> [Download the spreadsheet here.]()
+| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD. <p> [Download the spreadsheet here.]()
+
+
+
 
 Microsoft Defender for Endpoint can discover a proxy server by using the following discovery methods:
 

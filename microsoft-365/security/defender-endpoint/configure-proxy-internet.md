@@ -169,10 +169,10 @@ The following downloadable spreadsheet lists the services and their associated U
 <br>
 
 **** 
-|Spreadsheet of domains list|Description|
+|Spreadsheet of domains list| Description|
 |---|---|
-|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet.](images/mdatp-urls.png)|Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
-|
+|Microsoft Defender for Endpoint URL list for commercial | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial. <p> [Download the spreadsheet here.]()
+| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD. <p> [Download the spreadsheet here.]()
 
 If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed in the above table from HTTPS scanning.
 In your firewall, open all the URLs where the geography column is WW. For rows where the geography column is not WW, open the URLs to your specific data location. To verify your data location setting, see [Verify data storage location and update data retention settings for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/data-retention-settings).

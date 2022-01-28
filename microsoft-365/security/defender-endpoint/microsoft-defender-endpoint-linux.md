@@ -180,10 +180,11 @@ The following downloadable spreadsheet lists the services and their associated U
 
 ****
 
-|Spreadsheet of domains list|Description|
+|Spreadsheet of domains list| Description|
 |---|---|
-|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet.](images/mdatp-urls.png)|Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <p> Download the spreadsheet [here](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).|
-|||
+|Microsoft Defender for Endpoint URL list for commercial | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial. <p> [Download the spreadsheet here.]()
+| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD. <p> [Download the spreadsheet here.]()
+
 
 > [!NOTE]
 > For a more specific URL list, see [Configure proxy and internet connectivity settings](/microsoft-365/security/defender-endpoint/configure-proxy-internet#enable-access-to-microsoft-defender-atp-service-urls-in-the-proxy-server).
