@@ -140,10 +140,6 @@ To find the full path of Mac apps:
   
 3. For macOS apps, you need the full path name, including the name of the app.
 
-   > [!div class="mx-imgBorder"]
-   > ![endpoint dlp find app full path on MacOS.](https://user-images.githubusercontent.com/81826151/151603029-6320bb19-3249-42e4-8300-a94b770b33cc.png)
-
-
 #### Protect sensitive data from cloud synchronization apps
 
 To prevent sensitive items from being synced to the cloud by cloud sync apps, like *onedrive.exe*, add the cloud sync app to the **Unallowed apps** list. When an unallowed cloud-sync app tries to access an item that is protected by a blocking DLP policy, DLP may generate repeated notifications. You can avoid these repeated notifications by enabling the **Auto-quarantine** option under **Unallowed apps**.  
@@ -176,10 +172,6 @@ For macOS devices, you must add the full file path. To find the full path of Mac
 2. Choose **Open Files and Ports** tab.
   
 3. For macOS apps, you need the full path name, including the name of the app.
-
-   > [!div class="mx-imgBorder"]
-   > ![endpoint dlp find app full path on MacOS.](https://user-images.githubusercontent.com/81826151/151603029-6320bb19-3249-42e4-8300-a94b770b33cc.png)
-
 
 #### Service domains
 
