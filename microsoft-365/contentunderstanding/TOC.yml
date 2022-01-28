@@ -9,7 +9,7 @@
                   href: document-understanding-overview.md
                 - name: Difference between document understanding and form processing models 
                   href: difference-between-document-understanding-and-form-processing-model.md  
-                - name: Learn about models through the sample model 
+                - name: Import a sample model 
                   href: learn-about-document-understanding-models-through-the-sample-model.md
                 - name: Create a content center 
                   href: create-a-content-center.md
