@@ -113,4 +113,4 @@ Wondering what you can experience in your free trial? The compliance solutions t
   - Use adaptive scope policies to dynamically target your retention label policies to locations, with no limit on how many locations are included
   - Get full content lifecycle support, including the ability to perform disposition review on contents before they are permanently deleted at the end
 
-  For more information on the full range of feature for Microsoft Records Management, please see [Learn more about Records Management](records-management.md)
+  For more information on the full range of feature for Microsoft Records Management, [Learn more about Records Management](records-management.md)
