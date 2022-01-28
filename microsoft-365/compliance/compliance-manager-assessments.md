@@ -80,7 +80,7 @@ To learn more about templates, see [Working with assessment templates](complianc
 
 ## Set up premium assessments trial
 
-To help you determine which assessment templates are the most useful for your organization, you can select **Add recommended assessments**. This opens a wizard that allows you to search Compliance Manager's available templates based on your organization's industry and location, resulting in a custom list of templates pertinent to you. You can also start a free trial to try out premium templates in the list before you buy. To learn more, see [Set up premium assessments trial](compliance-manager-setup.md#set-up-premium-assessment-trial).
+To help you determine which assessment templates are the most useful for your organization, you can select **Add recommended assessments**. This opens a wizard that allows you to search Compliance Manager's available templates based on your organization's industry and location, resulting in a custom list of templates pertinent to you. You can also start a free trial to try out premium templates in the list before you buy. To learn more, see [Set up premium assessments trial](compliance-manager-setup.md#set-up-premium-assessments-trial).
 
 ## Create assessments
 
