@@ -35,11 +35,16 @@ When users access Lighthouse for the first time, they'll be prompted to set up M
 
 ## Set up roles to manage customer tenants
 
-Access to customer tenant data and settings in Lighthouse is restricted to the Admin Agent and Helpdesk Agent roles from the Cloud Solutions Provider (CSP) program.
+Access to customer tenant data and settings in Lighthouse is restricted to certain roles from the Cloud Solutions Provider (CSP) program. The following role types can access Lighthouse:
 
-You can check which users in the partner tenant have the Admin Agent and Helpdesk Agent roles by reviewing the security group memberships on the [Azure AD – All Groups](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) page. To learn how to assign CSP program roles and other permissions to users, see [Assign roles and permissions to users](/partner-center/permissions-overview). As an MSP, if you don't already have delegated access privileges to customer tenants, learn how to get them in the article [Obtain permissions to manage a customer's service or subscription](/partner-center/customers-revoke-admin-privileges).
+- Admin Agent or Helpdesk Agent roles from the Delegated Admin Privileges (DAP) model  
+- Granular roles assigned via Granular Delegated Admin Privileges (GDAP)  
 
-The following table lists the different Lighthouse pages and the permissions required to view and act on customer tenant data and settings for the Admin Agent and Helpdesk Agent roles.<br><br>
+## Using Lighthouse with Admin Agent and Helpdesk Agent roles
+
+You can check which users in the partner tenant have the Admin Agent and Helpdesk Agent roles by reviewing the security group memberships on the [Azure AD – All Groups](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) page. To learn how to assign CSP program roles and other permissions to users, see [Assign roles and permissions to users](/partner-center/permissions-overview). 
+
+The following table lists what customer tenant data is available to view and act on with the Admin Agent and Helpdesk Agent roles in Lighthouse.<br><br>
 
 | Lighthouse page | Admin Agent permissions | Helpdesk Agent permissions |
 |--|--|--|
