@@ -162,7 +162,7 @@ The next step is to create a physical badging connector in the Microsoft 365 com
 
 The next step in setting up a physical badging connector is to run a script that will push the physical badging data in the JSON file (that you created in Step 2) to the API endpoint you created in Step 1. We provide a sample script for your reference and you can choose to use it or create your own script to post the JSON file to the API endpoint.
 
-After you run the script, the JSON file containing the physical badging data is pushed to your Microsoft 365 organization where it can accessed by the insider risk management solution. We recommend you post physical badging data daily. You can do this by automating the process to generate the JSON file every day from your physical badging system and then scheduling the script to push the data.
+After you run the script, the JSON file containing the physical badging data is pushed to your Microsoft 365 organization where it can be accessed by the insider risk management solution. We recommend you post physical badging data daily. You can do this by automating the process to generate the JSON file every day from your physical badging system and then scheduling the script to push the data.
 
 > [!NOTE]
 > The maximum number of records in the JSON file that can be processed by the API is 50,000 records.
@@ -190,7 +190,7 @@ After you run the script, the JSON file containing the physical badging data is 
    |Parameter|Description|
    |---|---|
    |tenantId|This is the Id for your Microsoft 365 organization that you obtained in Step 1. You can also obtain the tenantId for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization.|
-   |appId|This is the Azure AD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization.|
+   |appId|This is the Azure AD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to access your Microsoft 365 organization.|
    |appSecret|This is the Azure AD application secret for the app that you created in Azure AD in Step 1. This is also used for authentication.|
    |jobId|This is the Job Id for the physical badging connector that you created in Step 3. This is used to associate the physical badging data that is pushed to the Microsoft cloud with the physical badging connector.|
    |JsonFilePath|This is the file path on the local computer (the one you're using to run the script) for the JSON file that you created in Step 2. This file must follow the sample schema described in Step 3.|
@@ -231,7 +231,7 @@ If you've haven't run the script in Step 4, a link to download the script is dis
 
 To make sure the latest physical badging data from your organization is available to tools like the insider risk management solution, we recommend that you schedule the script to run automatically on a recurring basis, such as once a day. This also requires that you update the physical badging data to JSON file on a similar (if not the same) schedule so that it contains the latest information about employees who leave your organization. The goal is to upload the most current physical badging data so that the physical badging connector can make it available to the insider risk management solution.
 
-You can user the Task Scheduler app in Windows to automatically run the script every day.
+You can use the Task Scheduler app in Windows to automatically run the script every day.
 
 1. On your local computer, click the Windows **Start** button and then type **Task Scheduler**.
 
@@ -249,7 +249,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 6. Select the **Triggers** tab, click **New**, and then do the following things:
 
-   1. Under **Settings**, select the **Daily** option, and then choose a date and time to run the script for the first time. The script will every day at the same specified time.
+   1. Under **Settings**, select the **Daily** option, and then choose a date and time to run the script for the first time. The script will run every day at the same specified time.
 
    2. Under **Advanced settings**, make sure the **Enabled** checkbox is selected.
 
