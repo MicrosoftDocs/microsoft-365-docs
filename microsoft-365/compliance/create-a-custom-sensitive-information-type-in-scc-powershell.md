@@ -19,7 +19,7 @@ description: "Learn how to create and import a custom sensitive information type
 
 # Create a custom sensitive information type using PowerShell
 
-This articles shows you how to reate an XML *rule package* file that defines custom [sensitive information types](sensitive-information-type-entity-definitions.md). You need to know how to create a regular expression. As an example, this article creates a custom sensitive information type that identifies an employee ID. You can use this example XML as a starting point for your own XML file. If you are new to sensitive information types, see [Learn about sensitive information types](sensitive-information-type-learn-about.md).
+This article shows you how to create an XML *rule package* file that defines custom [sensitive information types](sensitive-information-type-entity-definitions.md). For illustration, this article creates a custom sensitive information type that identifies an employee ID. You can use this example XML as a starting point for your own XML file. If you are new to sensitive information types, see [Learn about sensitive information types](sensitive-information-type-learn-about.md).
 
 After you've created a well-formed XML file, you can upload it to Microsoft 365 by using Microsoft 365 PowerShell. Then you're ready to use your custom sensitive information type in your policies and test that it's detecting the sensitive information as you intended.
 
@@ -128,7 +128,7 @@ Here's the sample XML of the rule package that we'll create in this article. Ele
 
 ## What are your key requirements? [Rule, Entity, Pattern elements]
 
-It's important that you understand the basic structure of the XML schema for a rule. Your understanding of the structure will help you define your custom sensitive information type to identify the right content.
+It's important that you understand the basic structure of the XML schema for a rule. Your understanding of the structure will help your your custom sensitive information type to identify the right content.
 
 A rule defines one or more entities (also known as sensitive information types). Each entity defines one or more patterns. A pattern is what a policy looks for when it evaluates content (for example, email and documents).
 
@@ -157,7 +157,7 @@ There are important points to consider for multiple pattern matches:
 
 - Patterns that require more evidence have a higher confidence level. When you use this sensitive information type in a policy, you can use more restrictive actions (such as block content) with higher-confidence matches, and you can use less restrictive actions (such as send notifications) with lower-confidence matches.
 
-- The supporting `IdMatch` and `Match` elements reference regular expressions and keywords that are actually children of the `Rule` element, not the `Pattern`. These supporting elements are referenced by the `Pattern`, but are included in the `Rule`. This means that a single definition of a supporting element, such as a regular expression or a keyword list, can be referenced by multiple entities and patterns.
+- The supporting `IdMatch` and `Match` elements reference RegExes and keywords that are actually children of the `Rule` element, not the `Pattern`. These supporting elements are referenced by the `Pattern`, but are included in the `Rule`. This means that a single definition of a supporting element, such as a regular expression or a keyword list, can be referenced by multiple entities and patterns.
 
 ## What entity do you need to identify? [Entity element, id attribute]
 
@@ -173,9 +173,9 @@ An entity is a sensitive information type, such as a credit card number, that ha
 
 ## What pattern do you want to match? [Pattern element, IdMatch element, Regex element]
 
-The pattern contains the list of what the sensitive information type is looking for. The pattern can include regular expressions, keywords, and built-in functions (which perform tasks like running regular expressions to find dates or addresses). Sensitive information types can have multiple patterns with unique confidences.
+The pattern contains the list of what the sensitive information type is looking for. The pattern can include RegExes, keywords, and built-in functions (which perform tasks like running RegExes to find dates or addresses). Sensitive information types can have multiple patterns with unique confidences.
 
-In the following diagram, all of the patterns reference the same regular expression. This regular expressions looks for a nine-digit number `(\d{9})` surrounded by white space `(\s) ... (\s)`. This regular expression is referenced by the `IdMatch` element, and is the common requirement for all patterns that look for the Employee ID entity. `IdMatch` is the identifier that the pattern is to trying to match. A `Pattern` element must have exactly one `IdMatch` element.
+In the following diagram, all of the patterns reference the same regular expression. This RegEx looks for a nine-digit number `(\d{9})` surrounded by white space `(\s) ... (\s)`. This regular expression is referenced by the `IdMatch` element, and is the common requirement for all patterns that look for the Employee ID entity. `IdMatch` is the identifier that the pattern is to trying to match. A `Pattern` element must have exactly one `IdMatch` element.
 
 ![XML markup showing multiple Pattern elements referencing single Regex element.](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
 
@@ -183,11 +183,11 @@ A satisfied pattern match returns a count and confidence level, which you can us
 
 ![Instance count and match accuracy options.](../media/sit-confidence-level.png)
 
-Regular expressions are powerful, so there are issues to be aware of. For example, a regular expressions that identifies too much content can impact performance. To learn more about these potential issues, see the [Potential validation issues to be aware of](#potential-validation-issues-to-be-aware-of) section later in this article.
+Regular expressions are powerful, so there are issues that you need to know about. For example, a RegEx that identifies too much content can impact performance. To learn more about these issues, see the [Potential validation issues to be aware of](#potential-validation-issues-to-be-aware-of) section later in this article.
 
 ## Do you want to require additional evidence? [Match element, minCount attribute]
 
-In addition to `IdMatch`, a pattern can use the `Match` element to require additional supporting evidence, such as a keyword, regex, date, or address.
+In addition to `IdMatch`, a pattern can use the `Match` element to require additional supporting evidence, such as a keyword, RegEx, date, or address.
 
 A `Pattern` might include multiple `Match` elements:
 
@@ -208,9 +208,9 @@ As described earlier, identifying sensitive information often requires additiona
 
 Keywords are included as a list of `Term` elements in a `Group` element. The `Group` element has a `matchStyle` attribute with two possible values:
 
-- **matchStyle="word"**: Word match identifies whole words surrounded by white space or other delimiters. You should always use **word** unless you need to match parts of words or words in Asian languages.
+- **matchStyle="word"**: A word match identifies whole words surrounded by white space or other delimiters. You should always use **word** unless you need to match parts of words or words in Asian languages.
 
-- **matchStyle="string"**: String match identifies strings no matter what they're surrounded by. For example, "id" will match "bid" and "idea". Use `string` only when you need to match Asian words or if your keyword might be included in other strings.
+- **matchStyle="string"**: A string match identifies strings no matter what they're surrounded by. For example, "id" will match "bid" and "idea". Use `string` only when you need to match Asian words or if your keyword might be included in other strings.
 
 Finally, you can use the `caseSensitive` attribute of the `Term` element to specify that the content must match the keyword exactly, including lower-case and upper-case letters.
 
@@ -232,13 +232,15 @@ For more information, see [What the DLP functions look for](what-the-dlp-functio
 
 ## Different combinations of evidence [Any element, minMatches and maxMatches attributes]
 
-In a Pattern element, all IdMatch and Match elements are joined by an implicit AND operator — all of the matches must be satisfied before the pattern can be satisfied. However, you can create more flexible matching logic by using the Any element to group Match elements. For example, you can use the Any element to match all, none, or an exact subset of its children Match elements.
+In a `Pattern` element, all `IdMatch` and `Match` elements are joined by an implicit AND operator. In other words, all of the matches must be satisfied before the pattern can be satisfied.
 
-The Any element has optional minMatches and maxMatches attributes that you can use to define how many of the children Match elements must be satisfied before the pattern is matched. Note that these attributes define the number of Match elements that must be satisfied, not the number of instances of evidence found for the matches. To define a minimum number of instances for a specific match, such as two keywords from a list, use the minCount attribute for a Match element (see above).
+You can create more flexible matching logic by using the `Any` element to group `Match` elements. For example, you can use the `Any` element to match all, none, or an exact subset of its child `Match` elements.
+
+The `Any` element has optional `minMatches` and `maxMatches` attributes that you can use to define how many of the child `Match` elements must be satisfied before the pattern is matched. These attributes define the *number* of `Match` elements, not the number of instances of evidence found for the matches. To define a minimum number of instances for a specific match, such as two keywords from a list, use the `minCount` attribute for a `Match` element (see above).
 
 ### Match at least one child Match element
 
-If you want to require that only a minimum number of Match elements must be met, you can use the minMatches attribute. In effect, these Match elements are joined by an implicit OR operator. This Any element is satisfied if a US-formatted date or a keyword from either list is found.
+To require only a minimum number of `Match` elements, you can use the `minMatches` attribute. In effect, these `Match` elements are joined by an implicit OR operator. This `Any` element is satisfied if a US-formatted date or a keyword from either list is found.
 
 ```xml
 <Any minMatches="1" >
@@ -250,7 +252,7 @@ If you want to require that only a minimum number of Match elements must be met,
 
 ### Match an exact subset of any children Match elements
 
-If you want to require that an exact number of Match elements must be met, you can set minMatches and maxMatches to the same value. This Any element is satisfied only if exactly one date or keyword is found — any more than that, and the pattern won't be matched.
+To require an exact number of `Match` elements, set `minMatches` and `maxMatches` to the same value. This `Any` element is satisfied only if exactly one date or keyword is found. If there are any more matches, the pattern isn't matched.
 
 ```xml
 <Any minMatches="1" maxMatches="1" >
@@ -351,7 +353,6 @@ The Version element is also important. When you upload your rule package for the
   . . .
  </Rules>
 </RulePackage>
-
 ```
 
 When complete, your RulePack element should look like this.
@@ -362,33 +363,33 @@ When complete, your RulePack element should look like this.
 
 Microsoft 365 exposes function processors for commonly used SITs as validators. Here's a list of them.
 
-### List of validators currently available
+### List of currently available validators
 
-- Func_credit_card
-- Func_ssn
-- Func_unformatted_ssn
-- Func_randomized_formatted_ssn
-- Func_randomized_unformatted_ssn
-- Func_aba_routing
-- Func_south_africa_identification_number
-- Func_brazil_cpf
-- Func_iban
-- Func_brazil_cnpj
-- Func_swedish_national_identifier
-- Func_india_aadhaar
-- Func_uk_nhs_number
-- Func_Turkish_National_Id
-- Func_australian_tax_file_number
-- Func_usa_uk_passport
-- Func_canadian_sin
-- Func_formatted_itin
-- Func_unformatted_itin
-- Func_dea_number_v2
-- Func_dea_number
-- Func_japanese_my_number_personal
-- Func_japanese_my_number_corporate
+- `Func_credit_card`
+- `Func_ssn`
+- `Func_unformatted_ssn`
+- `Func_randomized_formatted_ssn`
+- `Func_randomized_unformatted_ssn`
+- `Func_aba_routing`
+- `Func_south_africa_identification_number`
+- `Func_brazil_cpf`
+- `Func_iban`
+- `Func_brazil_cnpj`
+- `Func_swedish_national_identifier`
+- `Func_india_aadhaar`
+- `Func_uk_nhs_number`
+- `Func_Turkish_National_Id`
+- `Func_australian_tax_file_number`
+- `Func_usa_uk_passport`
+- `Func_canadian_sin`
+- `Func_formatted_itin`
+- `Func_unformatted_itin`
+- `Func_dea_number_v2`
+- `Func_dea_number`
+- `Func_japanese_my_number_personal`
+- `Func_japanese_my_number_corporate`
 
-This gives you the ability to define your own regex and validate them. To use validators, define your own regex and while defining the regex use the validator property to add the function processor of your choice. Once defined, you can use this regex in an SIT.
+This gives you the ability to define your own RegEx and validate them. To use validators, define your own RegEx and use the `Validator` property to add the function processor of your choice. Once defined, you can use this RegEx in an SIT.
 
 In the example below, a regular expression - Regex_credit_card_AdditionalDelimiters is defined for Credit card which is then validated using the checksum function for credit card by using Func_credit_card as a validator.
 
@@ -410,7 +411,7 @@ Microsoft 365 provides two generic validators
 
 ### Checksum validator
 
-In this example, a checksum validator for employee ID is defined to validate the regex for EmployeeID.
+In this example, a checksum validator for employee ID is defined to validate the RegEx for EmployeeID.
 
 ```xml
 <Validators id="EmployeeIDChecksumValidator">
@@ -431,7 +432,7 @@ In this example, a checksum validator for employee ID is defined to validate the
 
 ### Date Validator
 
-In this example, a date validator is defined for a regex part of which is date.
+In this example, a date validator is defined for a RegEx part of which is date.
 
 ```xml
 <Validators id="date_validator_1"> <Validator type="DateSimple"> <Param name="Pattern">DDMMYYYY</Param> <!—supported patterns DDMMYYYY, MMDDYYYY, YYYYDDMM, YYYYMMDD, DDMMYYYY, DDMMYY, MMDDYY, YYDDMM, YYMMDD --> </Validator> </Validators>
@@ -497,31 +498,31 @@ When you upload your rule package XML file, the system validates the XML and che
 
 - Lookbehind assertions in the regular expression should be of fixed length only. Variable length assertions will result in errors.
 
-    For example, this regex expression will not pass validation `"(?<=^|\s|_)"`  because the first option in this is `^` which has a zero length while the next two options `\s` and `_` have a length of one.  An alternate way to write this regular expression is `"(?:^|(?<=\s|_))"`.
+  For example, `"(?<=^|\s|_)"` will not pass validation. The first pattern (`^`) is zero length, while the next two patterns (`\s` and `_`) have a length of one. An alternate way to write this regular expression is `"(?:^|(?<=\s|_))"`.
 
-- Cannot begin or end with alternator "|", which matches everything because it's considered an empty match.
+- Cannot begin or end with alternator `|`, which matches everything because it's considered an empty match.
 
-  For example, "|a" or "b|" will not pass validation.
+  For example, `|a` or `b|` will not pass validation.
 
-- Cannot begin or end with a ".{0,m}" pattern, which has no functional purpose and only impairs performance.
+- Cannot begin or end with a `.{0,m}` pattern, which has no functional purpose and only impairs performance.
 
-  For example, ".{0,50}ASDF" or "ASDF.{0,50}" will not pass validation.
+  For example, `.{0,50}ASDF` or `ASDF.{0,50}` will not pass validation.
 
-- Cannot have ".{0,m}" or ".{1,m}" in groups, and cannot have ".\*" or ".+" in groups.
+- Cannot have `.{0,m}` or `.{1,m}` in groups, and cannot have `.\*` or `.+` in groups.
 
-  For example, "(.{0,50000})" will not pass validation.
+  For example, `(.{0,50000})` will not pass validation.
 
-- Cannot have any character with "{0,m}" or "{1,m}" repeaters in groups.
+- Cannot have any character with `{0,m}` or `{1,m}` repeaters in groups.
 
-  For example, "(a\*)" will not pass validation.
+  For example, `(a\*)` will not pass validation.
 
-- Cannot begin or end with ".{1,m}"; instead, use just "."
+- Cannot begin or end with `.{1,m}`; instead, use `.`.
 
-  For example, ".{1,m}asdf" will not pass validation; instead, use just ".asdf".
+  For example, `.{1,m}asdf` will not pass validation. Instead, use `.asdf`.
 
-- Cannot have an unbounded repeater (such as "\*" or "+") on a group.
+- Cannot have an unbounded repeater (such as `*` or `+`) on a group.
 
-  For example, "(xx)\*" and "(xx)+" will not pass validation.
+  For example, `(xx)\*` and `(xx)+` will not pass validation.
 
 - Keywords have a maximum of 50 characters in Length.  If you have a keyword within a Group exceeding this, a suggested solution is to create the Group of terms as a [Keyword Dictionary](./create-a-keyword-dictionary.md) and reference the GUID of the Keyword Dictionary within the XML structure as part of the Entity for Match or idMatch in the file.
 
@@ -539,17 +540,17 @@ When you upload your rule package XML file, the system validates the XML and che
 
 If a custom sensitive information type contains an issue that may affect performance, it won't be uploaded and you may see one of these error messages:
 
-- **Generic quantifiers which match more content than expected (e.g., '+', '\*')**
+- `Generic quantifiers which match more content than expected (e.g., '+', '*')`
 
-- **Lookaround assertions**
+- `Lookaround assertions`
 
-- **Complex grouping in conjunction with general quantifiers**
+- `Complex grouping in conjunction with general quantifiers`
 
 ## Recrawl your content to identify the sensitive information
 
 Microsoft 365 uses the search crawler to identify and classify sensitive information in site content. Content in SharePoint Online and OneDrive for Business sites is recrawled automatically whenever it's updated. But to identify your new custom type of sensitive information in all existing content, that content must be recrawled.
 
-In Microsoft 365, you can't manually request a recrawl of an entire tenant, but you can do this for a site collection, list, or library — see [Manually request crawling and re-indexing of a site, a library or a list](/sharepoint/crawl-site-content).
+In Microsoft 365, you can't manually request a recrawl of an entire tenant, but you can do this for a site collection, list, or library. For more information, see [Manually request crawling and re-indexing of a site, a library or a list](/sharepoint/crawl-site-content).
 
 ## Reference: Rule package XML schema definition
 
@@ -901,7 +902,5 @@ You can copy this markup, save it as an XSD file, and use it to validate your ru
 ## More information
 
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
-
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
-
 - [What the DLP functions look for](what-the-dlp-functions-look-for.md)
