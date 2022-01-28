@@ -324,9 +324,6 @@ To watch a recorded webinar (requires registration), visit [Deep Dive on Adaptiv
 
 ## Policy lookup
 
-> [!NOTE]
-> Policy lookup is currently in preview and subject to change.
-
 You can configure multiple retention policies for Microsoft 365 locations, as well as multiple retention label policies that you publish or auto-apply. To find the policies for retention that are assigned to specific users, sites, and Microsoft 365 groups, use **Policy lookup** from the **Information governance** solution in the Microsoft 365 compliance center:
 
 ![Policy lookup to find the policies for retention that are assigned to specific users, sites, and Microsoft 365 groups ](../media/policy-lookup.png)
