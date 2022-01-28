@@ -7,7 +7,7 @@
               items:
                 - name: Document understanding overview
                   href: document-understanding-overview.md
-                - name: Difference between document understanding and form processing models 
+                - name: Differences between model types 
                   href: difference-between-document-understanding-and-form-processing-model.md  
                 - name: Import a sample model 
                   href: learn-about-document-understanding-models-through-the-sample-model.md
@@ -45,7 +45,7 @@
               items:
                 - name: Form processing overview 
                   href: form-processing-overview.md
-                - name: Difference between document understanding and form processing models 
+                - name: Differences between model types 
                   href: difference-between-document-understanding-and-form-processing-model.md  
                 - name: Create a form processing model 
                   href: create-a-form-processing-model.md
@@ -61,31 +61,6 @@
 
     - name: Content assembly
       items: 
-<<<<<<< HEAD
-=======
-        - name: Import a sample document understanding model 
-          href: learn-about-document-understanding-models-through-the-sample-model.md
-        - name: Create a content center 
-          href: create-a-content-center.md
-        - name: Create a classifier
-          href: create-a-classifier.md
-        - name: Duplicate a model
-          href: duplicate-a-model.md
-        - name: Rename a model
-          href: rename-a-model.md
-        - name: Create an extractor
-          href: create-an-extractor.md
-        - name: Rename an extractor
-          href: rename-an-extractor.md
-        - name: Explanation types 
-          href: explanation-types-overview.md
-        - name: Use explanation templates 
-          href: explanation-templates.md
-        - name: Apply a document understanding model
-          href: apply-a-model.md
-        - name: Create a form processing model 
-          href: create-a-form-processing-model.md
->>>>>>> master
         - name: Create documents using content assembly 
           href: content-assembly.md
      
@@ -113,7 +88,6 @@
           href: set-up-content-understanding.md
         - name: Create a content center 
           href: create-a-content-center.md
-
         - name: Manage SharePoint Syntex with PowerShell
           items:
             - name: Overview
