@@ -68,7 +68,7 @@ We published new assessment templates, including:
 
 ### Integration with Microsoft Priva
 
-Compliance Manager can now work hand in hand with Microsoft Priva, a solution that can help you safeguard the personal data your organization stores in Microsoft 365. Priva offers tools to help you visualize and understand your data, implement policies to manage key risk scenarios, and handle subject rights requests. When you take steps in Priva to protect the personal data you store, this can contribute to your privacy assessments in Compliance Manager and can help you improve your compliance score. To see how Priva and other solutions are contributing to your score, and learn about potential opportunities for further improvements, see the **Solutions** tab in Compliance Manager. You can also find more details about Priva at [Learn about Microsoft Priva](/privacy/priva/).
+Compliance Manager can now work hand in hand with Microsoft Priva, a solution that can help you safeguard the personal data your organization stores in Microsoft 365. Priva offers tools to help you visualize and understand your data, implement policies to manage key risk scenarios, and handle subject rights requests. When you take steps in Priva to protect the personal data you store, this can contribute to your privacy assessments in Compliance Manager and can help you improve your compliance score. To see how Priva and other solutions are contributing to your score, and learn about potential opportunities for further improvements, see the **Solutions** tab in Compliance Manager. You can also find more details about Priva at [Learn about Microsoft Priva](/privacy/priva).
 
 ## July 2021
 
