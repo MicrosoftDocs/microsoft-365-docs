@@ -21,13 +21,13 @@ description: Learn how to create and configure a prebuilt model in SharePoint Sy
 
 Prebuilt models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization. 
 
-Prebuilt models use optical character recognition (OCR) combined with deep learning models to identify and extract predefined text and data fields common to specific document types. You start by analyzing one of your files against the prebuilt model. You then select the detected fields that make sense for your purpose. If the model doesn't detect the fields that you need, try analyzing again with a different file.
+Prebuilt models use optical character recognition (OCR) combined with deep learning models to identify and extract predefined text and data fields common to specific document types. You start by analyzing one of your files against the prebuilt model. You then select the detected fields that make sense for your purpose. If the model doesn't detect the fields that you need, you can analyze again by using a different file.
 
 Currently, there are two prebuilt models available: invoice and receipt.
 
-- The invoice prebuilt model analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction) such as customer name, billing address, due date, and amount due.
+- The *invoice prebuilt model* analyzes and extracts key information from sales invoices. The API analyzes invoices in various formats and [extracts key invoice information](/azure/applied-ai-services/form-recognizer/concept-invoice#field-extraction) such as customer name, billing address, due date, and amount due.
 
-- The receipt model analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction) such as merchant name, merchant phone number, transaction date, tax, and transaction total.
+- The *receipt prebuilt model* analyzes and extracts key information from sales receipts. The API analyzes printed and handwritten receipts and [extracts key receipt information](/azure/applied-ai-services/form-recognizer/concept-receipt#field-extraction) such as merchant name, merchant phone number, transaction date, tax, and transaction total.
 
 Additional prebuilt models will be available in future releases.
 
@@ -103,14 +103,6 @@ The original value is what is actually in the document. The extracted value is w
 
 Continue to select additional extractors you want to you use. You can also add other files to analyze for this model configuration.
 
-## Apply extractors to the model
-
-When you have selected the extractors you want to use, you can apply them either from the document area or from the **Extractors** panel.
-
-- To apply the extractors from the document area, select **Apply**.
-
-- To apply the extractors from the **Extractors** panel, select **Save and exit**.
-
 ## Rename an extractor
 
 You can rename an extractor either from the model home page or from the **Extractors** panel. You might consider renaming selected extractors because these will be used as the column names when the model is applied to the library.
@@ -130,6 +122,13 @@ To rename an extractor from the **Extractors** panel:
     ![Screenshot of the Extractors panel showing how to select an entity field.](../media/content-understanding/prebuilt-extractors-panel-rename-field.png) 
 
 2. In the **Rename extractor** box, enter the new name of the extractor, and then select **Rename**.
+
+## Apply the model
+
+- To save changes and return to the model home page, on the **Extractors** panel, select **Save and exit**.
+
+- If you're ready to apply the model to a library, in the document area, select **Next**.
+On the **Add to library** panel, choose the library to which you want to add the model, and then select **Add**.
 
 ## See also
 
