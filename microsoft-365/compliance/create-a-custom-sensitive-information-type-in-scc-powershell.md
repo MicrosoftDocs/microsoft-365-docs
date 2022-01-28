@@ -6,7 +6,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.article: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection:
@@ -19,7 +19,7 @@ description: "Learn how to create and import a custom sensitive information type
 
 # Create a custom sensitive information type using PowerShell
 
-This topic shows you how to use PowerShell to create an XML *rule package* file that defines your own custom [sensitive information types](sensitive-information-type-entity-definitions.md). You need to know how to create a regular expression. As an example, this topic creates a custom sensitive information type that identifies an employee ID. You can use this example XML as a starting point for your own XML file. If you are new to sensitive information types, see [Learn about sensitive information types](sensitive-information-type-learn-about.md).
+This articles shows you how to reate an XML *rule package* file that defines custom [sensitive information types](sensitive-information-type-entity-definitions.md). You need to know how to create a regular expression. As an example, this article creates a custom sensitive information type that identifies an employee ID. You can use this example XML as a starting point for your own XML file. If you are new to sensitive information types, see [Learn about sensitive information types](sensitive-information-type-learn-about.md).
 
 After you've created a well-formed XML file, you can upload it to Microsoft 365 by using Microsoft 365 PowerShell. Then you're ready to use your custom sensitive information type in your policies and test that it's detecting the sensitive information as you intended.
 
@@ -28,18 +28,22 @@ After you've created a well-formed XML file, you can upload it to Microsoft 365 
 
 ## Important disclaimer
 
-Due to the variances in customer environments and content match requirements, Microsoft Support cannot assist in providing custom content-matching definitions; e.g., defining custom classifications or regular expression (also known as RegEx) patterns. For custom content-matching development, testing, and debugging, Microsoft 365 customers will need to rely upon internal IT resources, or use an external consulting resource such as Microsoft Consulting Services (MCS). Support engineers can provide limited support for the feature, but cannot provide assurances that any custom content-matching development will fulfill the customer's requirements or obligations. As an example of the type of support that can be provided, sample regular expression patterns may be provided for testing purposes. Or, support can assist with troubleshooting an existing RegEx pattern which is not triggering as expected with a single specific content example.
+Due to the differences in customers and requirements, Microsoft Support can't help you create content-matching definitions; e.g., defining custom classifications or regular expression (also known as RegEx) patterns.
 
-See [Potential validation issues to be aware of](#potential-validation-issues-to-be-aware-of) in this topic.
+For custom content-matching development, testing, and debugging, you'll need to use your own internal IT resources, or use consulting services, such as Microsoft Consulting Services (MCS). Microsoft Support engineers can provide limited support for this feature, but they can't guarantee that custom content-matching suggestions will fully meet your needs.
+
+MCS can provide regular expressions for testing purposes. They can also provide assistance in troubleshooting an existing RegEx pattern that's not working as expected with a single specific content example.
+
+See [Potential validation issues to be aware of](#potential-validation-issues-to-be-aware-of) in this article.
 
 For more information about the Boost.RegEx (formerly known as RegEx++) engine that's used for processing the text, see [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
 
 > [!NOTE]
-> If you use an ampersand character (&) as part of a keyword in your custom sensitive information type, please note that there is a known issue. You should add an additional term with spaces around the character to make sure that the character is properly identified, for example, L & P _not_ L&P.
+> If you use an ampersand character (&) as part of a keyword in your custom sensitive information type, you need to add an additional term with spaces around the character. For example, use `L & P` _not_ `L&P`.
 
 ## Sample XML of a rule package
 
-Here's the sample XML of the rule package that we'll create in this topic. Elements and attributes are explained in the sections below.
+Here's the sample XML of the rule package that we'll create in this article. Elements and attributes are explained in the sections below.
 
 ```xml
 <?xml version="1.0" encoding="UTF-16"?>
@@ -124,33 +128,36 @@ Here's the sample XML of the rule package that we'll create in this topic. Eleme
 
 ## What are your key requirements? [Rule, Entity, Pattern elements]
 
-Before you get started, it's helpful to understand the basic structure of the XML schema for a rule, and how you can use this structure to define your custom sensitive information type so that it will identify the right content.
+It's important that you understand the basic structure of the XML schema for a rule. Your understanding of the structure will help you define your custom sensitive information type to identify the right content.
 
-A rule defines one or more entities (sensitive information types), and each entity defines one or more patterns. A pattern is what a policy looks for when it evaluates content such as email and documents.
+A rule defines one or more entities (also known as sensitive information types). Each entity defines one or more patterns. A pattern is what a policy looks for when it evaluates content (for example, email and documents).
 
-In this topic, the XML markup uses rule to mean the patterns that define an entity, also known as a sensitive information type. So in this topic, when you see rule, think entity or sensitive information type, not conditions and actions.
+In XML markup, "rules" mean the patterns that define the sensitive information type. Don't associate references to rules in this article with "conditions" or "actions" that are common in other Microsoft features.
 
 ### Simplest scenario: entity with one pattern
 
-Here's the simplest scenario. You want your policy to identify content that contains your organization's employee ID, which is formatted as a nine-digit number. So the pattern refers to a regular expression contained in the rule that identifies nine-digit numbers. Any content containing a nine-digit number satisfies the pattern.
+Here's a simple scenario: You want your policy to identify content that contains nine-digit employee IDs that are used in your organization. A pattern refers to the regular expression in the rule that identifies nine-digit numbers. Any content that contains a nine-digit number satisfies the pattern.
 
 ![Diagram of entity with one pattern.](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
 
-However, while simple, this pattern may identify many false positives by matching content that contains any nine-digit number that is not necessarily an employee ID.
+But, this pattern might identify **any** nine-digit number, including longer numbers or other types of nine-digit numbers that aren't employee IDs. This type of unwanted match is known as a *false positive*.
 
 ### More common scenario: entity with multiple patterns
 
-For this reason, it's more common to define an entity by using more than one pattern, where the patterns identify supporting evidence (such as a keyword or date) in addition to the entity (such as a nine-digit number).
+Because of the potential for false positives, you typically use more than one pattern to define an entity. Multiple patterns provide supporting evidence for the target entity. For example, additional keywords, dates, or other text can help identify the original entity (for example, the nine-digit employee number).
 
-For example, to increase the likelihood of identifying content that contains an employee ID, you can define another pattern that also identifies a hire date, and define yet another pattern that identifies both a hire date and a keyword (such as "employee ID"), in addition to the nine-digit number.
+For example, to increase the likelihood of identifying content that contains an employee ID, you can define other patterns to look for:
+
+- A pattern that identifies a hire date.
+- A pattern that identifies both a hire date and the "employee ID" keyword.
 
 ![Diagram of entity with multiple patterns.](../media/c8dc2c9d-00c6-4ebc-889a-53b41a90024a.png)
 
-Note a couple of important aspects of this structure:
+There are important points to consider for multiple pattern matches:
 
-- Patterns that require more evidence have a higher confidence level. This is useful because when you later use this sensitive information type in a policy, you can use more restrictive actions (such as block content) with only the higher-confidence matches, and you can use less restrictive actions (such as send notification) with the lower-confidence matches.
+- Patterns that require more evidence have a higher confidence level. When you use this sensitive information type in a policy, you can use more restrictive actions (such as block content) with higher-confidence matches, and you can use less restrictive actions (such as send notifications) with lower-confidence matches.
 
-- The supporting IdMatch and Match elements reference regexes and keywords that are actually children of the Rule element, not the Pattern. These supporting elements are referenced by the Pattern but included in the Rule. This means that a single definition of a supporting element, like a regular expression or a keyword list, can be referenced by multiple entities and patterns.
+- The supporting `IdMatch` and `Match` elements reference regular expressions and keywords that are actually children of the `Rule` element, not the `Pattern`. These supporting elements are referenced by the `Pattern`, but are included in the `Rule`. This means that a single definition of a supporting element, such as a regular expression or a keyword list, can be referenced by multiple entities and patterns.
 
 ## What entity do you need to identify? [Entity element, id attribute]
 
@@ -158,53 +165,60 @@ An entity is a sensitive information type, such as a credit card number, that ha
 
 ### Name the entity and generate its GUID
 
-1. In your XML editor of choice, add the Rules and Entity elements.
-2. Add a comment that contains the name of your custom entity — in this example, Employee ID. Later, you'll add the entity name to the localized strings section, and that name is what appears in the UI when you create a policy.
-3. Generate a GUID for your entity. There are several ways to generate GUIDs, but you can do it easily in PowerShell by typing **[guid]::NewGuid()**. Later, you'll also add the entity GUID to the localized strings section.
+1. In your XML editor of choice, add the `Rules` and `Entity` elements.
+2. Add a comment that contains the name of your custom entity, such as Employee ID. Later, you'll add the entity name to the localized strings section, and that name appears in the admin center when you create a policy.
+3. Generate a unique GUID for your entity. For example, in Windows PowerShell, you can run the command `[guid]::NewGuid()`. Later, you'll also add the GUID to the localized strings section of the entity.
 
 ![XML markup showing Rules and Entity elements.](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
 
 ## What pattern do you want to match? [Pattern element, IdMatch element, Regex element]
 
-The pattern contains the list of what the sensitive information type is looking for. This can include regexes, keywords, and built-in functions (which perform tasks like running regexes to find dates or addresses). Sensitive information types can have multiple patterns with unique confidences.
+The pattern contains the list of what the sensitive information type is looking for. The pattern can include regular expressions, keywords, and built-in functions (which perform tasks like running regular expressions to find dates or addresses). Sensitive information types can have multiple patterns with unique confidences.
 
-What all of the below patterns have in common is that they all reference the same regular expression, which looks for a nine-digit number (\d{9}) surrounded by white space (\s) … (\s). This regular expression is referenced by the IdMatch element and is the common requirement for all patterns that look for the Employee ID entity. IdMatch is the identifier that the pattern is to trying to match, such as Employee ID or credit card number or social security number. A Pattern element must have exactly one IdMatch element.
+In the following diagram, all of the patterns reference the same regular expression. This regular expressions looks for a nine-digit number `(\d{9})` surrounded by white space `(\s) ... (\s)`. This regular expression is referenced by the `IdMatch` element, and is the common requirement for all patterns that look for the Employee ID entity. `IdMatch` is the identifier that the pattern is to trying to match. A `Pattern` element must have exactly one `IdMatch` element.
 
 ![XML markup showing multiple Pattern elements referencing single Regex element.](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
 
-When satisfied, a pattern returns a count and confidence level, which you can use in the conditions in your policy. When you add a condition for detecting a sensitive information type to a policy, you can edit the count and confidence level as shown here. Confidence level (also called match accuracy) is explained later in this topic.
+A satisfied pattern match returns a count and confidence level, which you can use in the conditions in your policy. When you add a condition for detecting a sensitive information type to a policy, you can edit the count and confidence level as shown in the following diagram. Confidence level (also called match accuracy) is explained later in this article.
 
 ![Instance count and match accuracy options.](../media/sit-confidence-level.png)
 
-When you create your regular expression, keep in mind that there are potential issues to be aware of. For example, if you write and upload a regex that identifies too much content, this can impact performance. To learn more about these potential issues, see the later section [Potential validation issues to be aware of](#potential-validation-issues-to-be-aware-of).
+Regular expressions are powerful, so there are issues to be aware of. For example, a regular expressions that identifies too much content can impact performance. To learn more about these potential issues, see the [Potential validation issues to be aware of](#potential-validation-issues-to-be-aware-of) section later in this article.
 
 ## Do you want to require additional evidence? [Match element, minCount attribute]
 
-In addition to the IdMatch, a pattern can use the Match element to require additional supporting evidence, such as a keyword, regex, date, or address.
+In addition to `IdMatch`, a pattern can use the `Match` element to require additional supporting evidence, such as a keyword, regex, date, or address.
 
-A Pattern can include multiple Match elements; they can be included directly in the Pattern element or combined by using the Any element. Match elements are joined by an implicit AND operator; all Match elements must be satisfied for the pattern to be matched. You can use the Any element to introduce AND or OR operators (more on that in a later section).
+A `Pattern` might include multiple `Match` elements:
 
-You can use the optional minCount attribute to specify how many instances of a match need to be found for each of the Match elements. For example, you can specify that a pattern is satisfied only when at least two keywords from a keyword list are found.
+- Directly in the `Pattern` element.
+- Combined by using the `Any` element.
+
+`Match` elements are joined by an implicit AND operator. In other words, all `Match` elements must be satisfied for the pattern to be matched.
+
+You can use the `Any` element to introduce AND or OR operators (more on that in a later section).
+
+You can use the optional `minCount` attribute to specify how many instances of a match need to be found for each `Match` elements. For example, you can specify that a pattern is satisfied only when at least two keywords from a keyword list are found.
 
 ![XML markup showing Match element with minOccurs attribute.](../media/607f6b5e-2c7d-43a5-a131-a649f122e15a.png)
 
 ### Keywords [Keyword, Group, and Term elements, matchStyle and caseSensitive attributes]
 
-When you identify sensitive information, like an employee ID, you often want to require keywords as corroborative evidence. For example, in addition to matching a nine-digit number, you may want to look for words like "card", "badge", or "ID". To do this, you use the Keyword element. The Keyword element has an ID attribute that can be referenced by multiple Match elements in multiple patterns or entities.
+As described earlier, identifying sensitive information often requires additional keywords as corroborative evidence. For example, in addition to matching a nine-digit number, you can look for words like "card", "badge", or "ID" using the Keyword element. The `Keyword` element has an `ID` attribute that can be referenced by multiple `Match` elements in multiple patterns or entities.
 
-Keywords are included as a list of Term elements in a Group element. The Group element has a matchStyle attribute with two possible values:
+Keywords are included as a list of `Term` elements in a `Group` element. The `Group` element has a `matchStyle` attribute with two possible values:
 
-- **matchStyle="word"**: Word match identifies whole words surrounded by white space or other delimiters. You should always use word unless you need to match parts of words or match words in Asian languages.
+- **matchStyle="word"**: Word match identifies whole words surrounded by white space or other delimiters. You should always use **word** unless you need to match parts of words or words in Asian languages.
 
-- **matchStyle="string"**: String match identifies strings no matter what they're surrounded by. For example, "id" will match "bid" and "idea". Use string only when you need to match Asian words or if your keyword may be included as part of other strings.
+- **matchStyle="string"**: String match identifies strings no matter what they're surrounded by. For example, "id" will match "bid" and "idea". Use `string` only when you need to match Asian words or if your keyword might be included in other strings.
 
-Finally, you can use the caseSensitive attribute of the Term element to specify that the content must match the keyword exactly, including lower- and upper-case letters.
+Finally, you can use the `caseSensitive` attribute of the `Term` element to specify that the content must match the keyword exactly, including lower-case and upper-case letters.
 
 ![XML markup showing Match elements referencing keywords.](../media/e729ba27-dec6-46f4-9242-584c6c12fd85.png)
 
 ### Regular expressions [Regex element]
 
-In this example, the employee ID entity already uses the IdMatch element to reference a regex for the pattern — a nine-digit number surrounded by whitespace. In addition, a pattern can use a Match element to reference an additional Regex element to identify corroborative evidence, such as a five- or nine-digit number in the format of a US zip code.
+In this example, the employee `ID` entity already uses the `IdMatch` element to reference a regular expression for the pattern: a nine-digit number surrounded by whitespace. In addition, a pattern can use a `Match` element to reference an additional `Regex` element to identify corroborative evidence, such as a five-digit or nine-digit number in the format of a US postal code.
 
 ### Additional patterns such as dates or addresses [built-in functions]
 
