@@ -74,6 +74,11 @@ Wondering what you can experience in your free trial? The compliance solutions t
 
     Take advantage of an end-to-end workflow for preserving, collecting, analyzing, and exporting content that's responsive to your organization's internal and external investigations. Legal teams can also manage the entire legal hold notification process by communicating with custodians involved in a case. [Learn more about eDiscovery](ediscovery.md)
 
+- **Information Governance**
+
+    Automate your retention policy coverage using Adaptive Policy Scopes. This feature allows you to dynamically target retention policies to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, retention policies using adaptive scopes are not subject to location limits. [Learn more about Adaptive Policy Scopes](create-retention-policies.md).
+
+
 - **Information Protection**
 
     Implement Microsoft Information Protection with [sensitivity labels](sensitivity-labels.md) and [data loss prevention policies](dlp-learn-about-dlp.md) to help you discover, classify, and protect your sensitive content wherever it lives or travels.
@@ -106,4 +111,9 @@ Wondering what you can experience in your free trial? The compliance solutions t
 
 - **Records Management**
 
-    Use integrated Records Management features to  automate the retention schedule for organizational regulatory, legal, and business-critical records. Get full content lifecycle support, from creation to collaboration, record declaration, retention, and disposition. [Learn more about Records Management](records-management.md)
+    Use integrated Records Management features to:
+        - Classify content as a record to prevent users from editing, as required by regulations, laws, or organizational policy
+        - Apply retention labels to content automatically when it matches criteria you specify, using auto-apply label policies
+        - Use adaptive scope policies to dynamically target your retention label policies to locations, with no limit on how many locations are included
+        - Get full content lifecycle support, including the ability to perform disposition review on contents before they are permanently deleted at the end
+    For more information on the full range of feature for Microsoft Records Management, please see [Learn more about Records Management](records-management.md)
