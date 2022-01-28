@@ -167,7 +167,7 @@ After you run the script, the JSON file containing the physical badging data is 
 > [!NOTE]
 > The maximum number of records in the JSON file that can be processed by the API is 50,000 records.
 
-1. Go to [this GitHub site](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1) to access the sample script.
+1. Go to [this GitHub site](https://github.com/microsoft/m365-physical-badging-connector-sample-scripts/blob/master/push_physical_badging_records.ps1) to access the sample script.
 
 2. Click the **Raw** button to display the script in text view
 
@@ -199,7 +199,7 @@ After you run the script, the JSON file containing the physical badging data is 
    Here's an example of the syntax for the physical badging connector script using actual values for each parameter:
 
    ```powershell
-   .\PhysicalBadging.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json'
+   .\PhysicalBadging.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -jsonFilePath 'C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json'
    ```
 
    If the upload is successful, the script displays the **Upload Successful** message.
@@ -263,7 +263,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
    2. In the **Program/script** box, click **Browse**, and go to the following location and select it so the path is displayed in the box: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe.
 
-   3. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, .\PhysicalBadging.ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -jsonFilePath "C:\Users\contosoadmin\Desktop\Data\physical_badging_data.csv"
+   3. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, .\PhysicalBadging.ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -jsonFilePath "C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json"
 
    4. In the **Start in (optional)** box, paste the folder location of the script that you ran in Step 4. For example, C:\Users\contosoadmin\Desktop\Scripts.
 
