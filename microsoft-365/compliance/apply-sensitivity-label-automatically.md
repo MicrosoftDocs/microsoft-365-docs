@@ -250,14 +250,15 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 #### Deleted OneDrive accounts and simulation results
 
-Expect the following display discrepancies in the simulation results when deleted OneDrive accounts are still in the [retention stage of the deletion process](/onedrive/retention-and-deletion#the-onedrive-deletion-process). For example, an employee has left the organization and their manager has temporary access to that user's OneDrive files.
+Expect possible display discrepancies in the simulation results when deleted OneDrive accounts are still in the [retention stage of the deletion process](/onedrive/retention-and-deletion#the-onedrive-deletion-process). For example, an employee has left the organization and their manager has temporary access to that user's OneDrive files.
 
-- If the OneDrive account was specified by URL, matched files from the deleted OneDrive account aren't included in the simulation results.
-- If the OneDrive account wasn't specified by URL but was included with the **All** default setting:
-  - When the SharePoint location is included in the policy, matched files from the deleted OneDrive account display as SharePoint items.
-  - When the SharePoint location isn't included in the policy, matched files from the deleted OneDrive account aren't included in the simulation results.
+In this scenario, if the OneDrive account was specified by URL in the auto-labeling policy, matched files from the deleted OneDrive account are included in the simulation results.
 
-In all cases, matched files are labeled until the OneDrive account is permanently deleted. The display discrepancies apply only to the simulation results.
+However, if the OneDrive account wasn't specified by URL but was included with the **All** default setting:
+- When the SharePoint location is included in the policy, matched files from the deleted OneDrive account display as SharePoint items in the simulation results.
+- When the SharePoint location isn't included in the policy, matched files from the deleted OneDrive account aren't included in the simulation results.
+
+In all cases, matched files are labeled until the OneDrive account is permanently deleted. The display discrepancies listed apply only to the simulation results.
 
 ### Creating an auto-labeling policy
 
