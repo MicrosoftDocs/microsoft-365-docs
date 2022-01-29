@@ -6,60 +6,20 @@
      items:
        - name: Overview of Office 365 security
          href: overview.md
-       - name: Defender for Office 365
-         href: defender-for-office-365.md
        - name: Step-by-step threat protection in Defender for Office 365
          href: protection-stack-microsoft-defender-for-office365.md
-       - name: Evaluate Defender for Office 365
-         href: office-365-evaluation.md
-       - name: What's new in Defender for Office 365
-         href: whats-new-in-defender-for-office-365.md
-       - name: Defender for Office 365 in the Microsoft 365 Defender portal
-         href: ../defender/microsoft-365-security-center-mdo.md
-       - name: Exchange Online Protection
-         items: 
-            - name: Exchange Online Protection overview
-              href: exchange-online-protection-overview.md
-            - name: Mail flow in EOP
-              href: mail-flow-in-eop.md
-            - name: Quarantine
-              href: quarantine-email-messages.md
-       - name: Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
-         href: turn-on-mdo-for-spo-odb-and-teams.md
-       - name: Microsoft 365 Defender portal overview
-         href: ../defender/microsoft-365-defender.md
-       - name: The Email entity page
-         href: mdo-email-entity-page.md
-       - name: AIR overview
-         href: office-365-air.md
-       - name: How automated investigation and response works
-         href: automated-investigation-response-office.md
-       - name: Email analysis in investigations
-         href: email-analysis-investigations.md
-       - name: Remediation actions
-         href: air-remediation-actions.md
-       - name: Anti-malware protection
-         href: anti-malware-protection.md
-       - name: Anti-spam protection
-         href: anti-spam-protection.md
-       - name: Anti-phishing protection
-         href: anti-phishing-protection.md
-       - name: Anti-spoofing protection
-         href: anti-spoofing-protection.md
-       - name: Safe Attachments in Defender for Office 365
-         href: safe-attachments.md
-       - name: Safe Links in Defender for Office 365
-         href: safe-links.md
-       - name: Outbound spam protection
-         href: outbound-spam-controls.md
-       - name: Security Dashboard overview
-         href: security-dashboard.md
-       - name: How threat investigation and response works
-         href: office-365-ti.md
-       - name: Office 365 Security Incident Response
-         href: office365-security-incident-response-overview.md
-       - name: Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
-         href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
+       - name: Secure by default
+         href: secure-by-default.md
+   - name: Get started
+     items:
+      - name:
+        href: 
+   - name: Evaluate
+     items: 
+     - name: Evaluate Defender for Office 365
+       href: office-365-evaluation.md
+     - name: Migrate from a third-party protection service or device to Defender for Office 365
+       href: migrate-to-defender-for-office-365.md
    - name: Deploy
      items: 
      - name: Protect against threats
@@ -74,8 +34,6 @@
        href: siem-server-integration.md
      - name: SIEM integration with Defender for Office 365
        href: siem-integration-with-office-365-ti.md
-     - name: Secure by default
-       href: secure-by-default.md
      - name: Configure anti-phishing policies in Defender for Office 365
        href: configure-mdo-anti-phishing-policies.md
      - name: Configure anti-phishing policies in EOP
@@ -390,3 +348,55 @@
          href: /cloud-app-security
        - name: Defender for Business
          href: ../defender-business/index.yml
+   - name: Parking lot items
+     items:
+      - name: Defender for Office 365
+        href: defender-for-office-365.md
+      - name: What's new in Defender for Office 365
+        href: whats-new-in-defender-for-office-365.md
+      - name: Defender for Office 365 in the Microsoft 365 Defender portal
+        href: ../defender/microsoft-365-security-center-mdo.md
+      - name: Exchange Online Protection
+        items: 
+            - name: Exchange Online Protection overview
+              href: exchange-online-protection-overview.md
+            - name: Mail flow in EOP
+              href: mail-flow-in-eop.md
+            - name: Quarantine
+              href: quarantine-email-messages.md
+      - name: Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
+        href: turn-on-mdo-for-spo-odb-and-teams.md
+      - name: Microsoft 365 Defender portal overview
+        href: ../defender/microsoft-365-defender.md
+      - name: The Email entity page
+        href: mdo-email-entity-page.md
+      - name: AIR overview
+        href: office-365-air.md
+      - name: How automated investigation and response works
+        href: automated-investigation-response-office.md
+      - name: Email analysis in investigations
+        href: email-analysis-investigations.md
+      - name: Remediation actions
+        href: air-remediation-actions.md
+      - name: Anti-malware protection
+        href: anti-malware-protection.md
+      - name: Anti-spam protection
+        href: anti-spam-protection.md
+      - name: Anti-phishing protection
+        href: anti-phishing-protection.md
+      - name: Anti-spoofing protection
+        href: anti-spoofing-protection.md
+      - name: Safe Attachments in Defender for Office 365
+        href: safe-attachments.md
+      - name: Safe Links in Defender for Office 365
+        href: safe-links.md
+      - name: Outbound spam protection
+        href: outbound-spam-controls.md
+      - name: Security Dashboard overview
+        href: security-dashboard.md
+      - name: How threat investigation and response works
+        href: office-365-ti.md
+      - name: Office 365 Security Incident Response
+        href: office365-security-incident-response-overview.md
+      - name: Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
+        href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
