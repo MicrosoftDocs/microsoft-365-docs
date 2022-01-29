@@ -46,7 +46,7 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [Office updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
 
-February 2022
+## February 2022
 
 ### Net promoter score (NPS) survey insights
 
