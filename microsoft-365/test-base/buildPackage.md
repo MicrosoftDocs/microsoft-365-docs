@@ -3,12 +3,12 @@ title: 'Build a package'
 description: How to build your package
 search.appverid: MET150
 author: Tinacyt
-ms.author: Tinacyt
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
-ms.date: 03/01/2022
-ms.service: testbase
+ms.date: 02/28/2022
+ms.service: virtual-desktop
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
@@ -26,7 +26,7 @@ Optionally, you can download our [sample package](https://aka.ms/testbase-sample
 ## Create a folder structure 
 
 In your local computer, create a folder structure as follows:<br> 
-![Folder structure](Media/BuildPackage1.png)
+![Folder structure1](Media/BuildPackage1.png)
 
 These folders are used:
 * **App\bin**: save the application and dependency binaries.<br> 
@@ -35,23 +35,23 @@ These folders are used:
 
 ## Copy binary file(s)
 Copy your application installation files to **App\bin**. If your application has dependencies, they need to be installed first. Also, copy the dependency installation files to **App\bin**.<br> 
-![Folder structure](Media/BuildPackage2.png)
+![Folder structure2](Media/BuildPackage2.png)
 
 ## Add PowerShell scripts
 To perform OOB test, you will need to add PowerShell scripts to install, launch, close, and uninstall your application. <br> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Note: In OOB test, install, launch, and close scripts are required, while uninstall script is optional*.<br>
 The script should be added to the folder as follows:<br> 
-![Folder structure](Media/BuildPackage3.png)
+![Folder structure3](Media/BuildPackage3.png)
 
 A script usually includes the following behaviors:<br> 
--	**Run the commands to install/launch/close/uninstall the application**. E.g., if your application is an MSI file, run [msiexec](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/msiexec) to install it. <br> 
+-	**Run the commands to install/launch/close/uninstall the application**. E.g., if your application is an MSI file, run [msiexec](https://docs.microsoft.com/windows-server/administration/windows-commands/msiexec) to install it. <br> 
 -	**Check the result of install/launch/close/uninstall operation**, return zero exit code if the result is expected. Test Base will mark a script run as failure if it returns a non-zero exit code.<br> 
 -	**Save enough logs**, save proper logs for future use.<br> 
 
 Please refer to the following examples, you can simply copy them to your files and make changes accordingly. <br>
 
 **Example of install script (App\scripts\install\job.ps1)**
-
+```powershell
         push-location $PSScriptRoot
         $exit_code = 0
         $script_name = $myinvocation.mycommand.name
@@ -93,9 +93,10 @@ Please refer to the following examples, you can simply copy them to your files a
         log("Installation script finished as $exit_code")
         pop-location
         exit $exit_code
+```
 
 **Example of launch script (App\scripts\launch\job.ps1)**
-
+```powershell
         push-location $PSScriptRoot
         $exit_code = 0
         $script_name = $myinvocation.mycommand.name
@@ -131,23 +132,23 @@ Please refer to the following examples, you can simply copy them to your files a
         log("Launch script finished as $exit_code")
         pop-location
         exit $exit_code 
-
+```
 
 ## Compress to zip file
 After scripts and binaries are prepared, you proceed to compress the folder to a zip file. Right click on the App folder, select **Compress to ZIP file**.<br>
-![Folder structure](Media/BuildPackage4.png)
+![Folder structure4](Media/BuildPackage4.png)
 
 
 ## Verify your package locally (optional)
 After building the zip package, you can upload it to your Test Base account. <br>
 However, it's best practice to run the test locally to ensure the scripts work properly before uploading. A local test can quickly identify issues and speed up your uploading process. To verify locally follow the steps below:<br>
 1.	Prepare a VM (Virtual Machine)<br>
-    We recommend using a virtual machine for this local test, which is convenient since a clean Windows environment is needed for each test. It's easy to create a Windows VM on Azure (https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal), you can select a proper Windows version (image) for your test, e.g., Windows 10 Pro, version 21H2.<br>
+    We recommend using a virtual machine for this local test, which is convenient since a clean Windows environment is needed for each test. It's easy to create a Windows VM on Azure (https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal), you can select a proper Windows version (image) for your test, e.g., Windows 10 Pro, version 21H2.<br>
 
 2.	Copy your package to the VM<br>
     There are many ways to copy your package file to the VM. If you're using an Azure VM, you can choose to:
      - 	Copy file directly in your Remote Desktop connection. <br>
-     -	Use Azure file share (https://docs.microsoft.com/en-us/azure/storage/files/storage-files-quick-create-use-windows) <br>
+     -	Use Azure file share (https://docs.microsoft.com/azure/storage/files/storage-files-quick-create-use-windows) <br>
     You can create a specific folder for this test and copy the package file under this folder. e.g., C:\TestBase.<br>
 3.	Test the package<br>
     Open Windows PowerShell, switch to the directory containing the package. e.g., cd C:\TestBase Start to run test in the Package:<br>
