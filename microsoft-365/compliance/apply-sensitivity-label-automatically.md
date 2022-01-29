@@ -257,7 +257,7 @@ Expect the following display discrepancies in the simulation results when delete
   - When the SharePoint location is included in the policy, matched files from the deleted OneDrive account display as SharePoint items.
   - When the SharePoint location isn't included in the policy, matched files from the deleted OneDrive account aren't included in the simulation results.
 
-In all cases, matched files are labeled until the OneDrive account is permanently deleted. The display discrepancy applies just for the simulation results.
+In all cases, matched files are labeled until the OneDrive account is permanently deleted. The display discrepancies apply only to the simulation results.
 
 ### Creating an auto-labeling policy
 
