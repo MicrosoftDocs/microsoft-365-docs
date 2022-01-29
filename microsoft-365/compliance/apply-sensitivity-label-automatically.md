@@ -254,7 +254,7 @@ Expect possible display discrepancies in the simulation results when deleted One
 
 In this scenario, if the OneDrive account was specified by URL in the auto-labeling policy, matched files from the deleted OneDrive account are included in the simulation results.
 
-However, if the OneDrive account wasn't specified by URL but was included with the **All** default setting:
+However, if the OneDrive account wasn't specified by URL, but was included with the **All** default setting:
 - When the SharePoint location is included in the policy, matched files from the deleted OneDrive account display as SharePoint items in the simulation results.
 - When the SharePoint location isn't included in the policy, matched files from the deleted OneDrive account aren't included in the simulation results.
 
