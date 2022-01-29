@@ -46,6 +46,33 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [Office updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
 
+February 2022
+
+### Net promoter score (NPS) survey insights
+
+You can now view NPS survey data and insights from your users in the Microsoft 365 admin center. With this new feature you can obtain actionable insights from NPS survey responses from your end users, and achieve higher end user delight by addressing any issues and concerns.
+
+We've identified the common themes from user feedback. Then we used machine learning models that train the data sets and automatically organize the feedback into Top Topics.
+
+There are nine topics available. Look out for more topics in future updates.
+
+The NPS survey insight dashboard contains these three new reports and pivots:
+
+- NPS monthly NPS trend volume for the last 12 months
+- Able to identify passives, promoters, and detractors
+- NPS volume per platform and app
+
+To provide you with a better experience using the NPS survey insight dashboard:
+
+- Encourage your end users to submit feedback
+- Confirm in-product surveys policies are enabled
+- Improve diagnosis by turning on Windows Error Reporting
+
+Learn more at [Microsoft product NPS feedback and insights for your organization](manage/manage-feedback-product-insights.md).  
+
+> [!NOTE]
+> If you're interested in joining our design sessions, send us an email at: prosight.microsoft.com.
+
 ## July 2021
 
 ### Microsoft 365 admin center search
