@@ -25,7 +25,7 @@ description: "Release notes for support for double byte character sets."
 - Korean
 - Japanese
 
-This support is available for sensitive information types and keyword dictionaries and will be reflected in data loss prevention (for Exchange Online, SharePoint Online, OneDrive for Business, and Teams), Communications Compliance, Auto Labelling in office apps and Microsoft Cloud App Security.
+This support is available for sensitive information types and keyword dictionaries and will be reflected in data loss prevention (for Exchange Online, SharePoint Online, OneDrive for Business, and Teams), Communications Compliance, Auto Labelling in office apps and Microsoft Defender for Cloud Apps.
 
 ## Known issues
 
@@ -42,5 +42,3 @@ This support is available for sensitive information types and keyword dictionari
   - “Attachment contains any of these words”
 
 Instead we recommend creating a custom Sensitive Information Type (SIT) with keyword dictionary which will detect patterns across messages and attachments, and using this custom SIT as a Communication Compliance policy condition.
-
-

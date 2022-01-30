@@ -35,8 +35,9 @@ Sensitive information types are pattern-based classifiers. They detect sensitive
 - [Retention labels](retention.md)
 - [Insider risk management](insider-risk-management.md)
 - [Communication compliance](communication-compliance.md)
+- [Inside risk management](insider-risk-management-solution-overview.md)
 - [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
-- [Privacy management](/privacy/solutions/privacymanagement/privacy-management)
+- [Microsoft Priva](/privacy/priva)
 
 ## Fundamental parts of a sensitive information type
 
@@ -44,11 +45,11 @@ Every sensitive information type entity is defined by these fields:
 
 - name: how the sensitive information type is referred to
 - description: describes what the sensitive information type is looking for
-- pattern: A pattern defines what a sensitive information type detects. It consists of the following components
-    - Primary element – the main element that the sensitive information type is looking for. It can be a **regular expression** with or without a checksum validation, a **keyword list**, a **keyword dictionary**, or a **function**.
-    - Supporting element – elements that act as supporting evidence that help in increasing the confidence of the match. For example, keyword “SSN” in proximity of an SSN number. It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.
+- pattern: A pattern defines what a sensitive information type detects. It consists of the following components.
+    - Primary element – The main element that the sensitive information type is looking for. It can be a **regular expression** with or without a checksum validation, a **keyword list**, a **keyword dictionary**, or a **function**.
+    - Supporting element – Elements that act as supporting evidence that help in increasing the confidence of the match. For example, keyword "SSN" in proximity to an SSN number. It can be a regular expression with or without a checksum validation, keyword list, keyword dictionary.
     - Confidence Level - Confidence levels (high, medium, low) reflect how much supporting evidence was detected along with the primary element. The more supporting evidence an item contains, the higher the confidence that a matched item contains the sensitive info you're looking for.
-    - Proximity – Number of characters between primary and supporting element
+    - Proximity – Number of characters between primary and supporting element.
 
 ![Diagram of corroborative evidence and proximity window.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
@@ -111,13 +112,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ### More on confidence levels
 
-In a sensitive information type entity definition, **confidence level** reflects how much supporting evidence is detected in addition to the primary element. The more supporting evidence an item contains, the higher the confidence that a matched item contains the sensitive info you're looking for. For example, matches with a high confidence level will contain more supporting evidence in close proximity of the primary element, whereas matches with a low confidence level would contain little to no supporting evidence in close proximity. 
+In a sensitive information type entity definition, **confidence level** reflects how much supporting evidence is detected in addition to the primary element. The more supporting evidence an item contains, the higher the confidence that a matched item contains the sensitive info you're looking for. For example, matches with a high confidence level will contain more supporting evidence in close proximity to the primary element, whereas matches with a low confidence level would contain little to no supporting evidence in close proximity. 
 
 A high confidence level returns the fewest false positives but might result in more false negatives. Low or medium confidence levels returns more false positives but few to zero false negatives.
 
-- **low confidence**: Value of 65, matched items will contain the fewest false negatives but the most false positives. Low confidence returns all low, medium, and high confidence matches.
-- **medium confidence**: Value of 75, matched items will contain an average amount of false positives and false negatives. Medium confidence returns all medium, and high confidence matches.  
-- **high confidence**: Value of 85, matched items will contain the fewest false positives but the most false negatives. High confidence only returns high confidence matches.  
+- **low confidence**: Matched items will contain the fewest false negatives but the most false positives. Low confidence returns all low, medium, and high confidence matches. The low confidence level has a value of 65.
+- **medium confidence**: Matched items will contain an average amount of false positives and false negatives. Medium confidence returns all medium, and high confidence matches. The medium confidence level has a value of 75.
+- **high confidence**: Matched items will contain the fewest false positives but the most false negatives. High confidence only returns high confidence matches and has a value of 85.  
 
 You should use high confidence level patterns with low counts, say five to ten, and low confidence patterns with higher counts, say 20 or more.
 
@@ -129,15 +130,13 @@ You should use high confidence level patterns with low counts, say five to ten, 
 
 ## Creating custom sensitive information types
 
-To create custom sensitive information types in the Security & Compliance Center, you can choose from several options:
+You can choose from several options to create custom sensitive information types in the Compliance Center.
 
-- **Use the UI** You can set up a custom sensitive information type using the Security & Compliance Center UI. With this method, you can use regular expressions, keywords, and keyword dictionaries. To learn more, see [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md).
+- **Use the UI** - You can set up a custom sensitive information type using the Compliance Center UI. With this method, you can use regular expressions, keywords, and keyword dictionaries. To learn more, see [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md).
 
-- **Use EDM** You can set up custom sensitive information types using Exact Data Match (EDM)-based classification. This method enables you to create a dynamic sensitive information type using a secure database that you can refresh periodically. See [Create a custom sensitive information type with Exact Data Match based classification](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+- **Use EDM** - You can set up custom sensitive information types using Exact Data Match (EDM)-based classification. This method enables you to create a dynamic sensitive information type using a secure database that you can refresh periodically. See [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
 
-- **Use PowerShell** You can set up custom sensitive information types using PowerShell. Although this method is more complex than using the UI, you have more configuration options. See [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
-
-
+- **Use PowerShell** - You can set up custom sensitive information types using PowerShell. Although this method is more complex than using the UI, you have more configuration options. See [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
 > [!NOTE]
 > Improved confidence levels are available for immediate use within Data Loss Prevention for Microsoft 365 services, Microsoft Information Protection for Microsoft 365 services, Communication Compliance, Information Governance, and Records Management.
@@ -147,14 +146,14 @@ To create custom sensitive information types in the Security & Compliance Center
 > - Korean
 > - Japanese
 > 
-> This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.
+> This support is available for sensitive information types. See, [Information protection support for double byte character sets release notes](mip-dbcs-relnotes.md) for more information.
 
 > [!TIP]
 > To detect patterns containing Chinese/Japanese characters and single byte characters or to detect patterns containing Chinese/Japanese and English, define two variants of the keyword or regex.
 > - For example, to detect a keyword like "机密的document", use two variants of the keyword; one with a space between the Japanese and English text and another without a space between the Japanese and English text. So, the keywords to be added in the SIT should be "机密的 document" and "机密的document". Similarly, to detect a phrase "東京オリンピック2020", two variants should be used; "東京オリンピック 2020" and "東京オリンピック2020".
 > 
-> Along with Chinese/Japanese/double byte characters, if the list of keywords/phrases also contain non Chinese/Japanese words also (like English only), it is recommended to create two dictionaries/keyword lists. One for keywords containing Chinese/Japanese/double byte characters and another one for English only. 
-> - For example, if you want to create a keyword dictionary/list with three phrases "Highly confidential", "機密性が高い" and "机密的document", the it you should create two keyword lists. 
+> Along with Chinese/Japanese/double byte characters, if the list of keywords/phrases also contain non Chinese/Japanese words also (like English only), you should create two dictionaries/keyword lists. One for keywords containing Chinese/Japanese/double byte characters and another one for English only. 
+> - For example, if you want to create a keyword dictionary/list with three phrases "Highly confidential", "機密性が高い" and "机密的document", the you should create two keyword lists. 
 >     1. Highly confidential
 >     2. 機密性が高い, 机密的document and 机密的 document
 > 

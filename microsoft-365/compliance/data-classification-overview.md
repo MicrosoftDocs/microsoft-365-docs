@@ -14,6 +14,7 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+ms.custom: admindeeplinkDEFENDER
 search.appverid: 
 - MOE150
 - MET150
@@ -34,11 +35,11 @@ You also manage these features on the data classification page:
 
 - [trainable classifiers](classifier-learn-about.md)
 - [sensitive information types](sensitive-information-type-learn-about.md)
-- [exact data matches](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [content explorer](data-classification-content-explorer.md)
 - [activity explorer](data-classification-activity-explorer.md)
 
-You can find data classification in the **Microsoft 365 compliance center** or **Microsoft 365 security center** > **Classification** > **Data Classification**.
+You can find data classification in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> or <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> > **Classification** > **Data Classification**.
 
 Take a video tour of our data classification features.
 
@@ -62,6 +63,25 @@ Data classification will scan your sensitive content and labeled content before 
 > [!NOTE]
 > As a best practice, always use the role with least privilege to grant access to Microsoft 365 data classification.
 
+#### Roles and Role Groups in preview
+
+There are roles and role groups in preview that you can test out to fine tune your access controls.
+
+Here's a list of Microsoft Information Protection (MIP) roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Information Protection Admin
+- Information Protection Analyst
+- Information Protection Investigator
+- Information Protection Reader
+
+Here's a list of MIP role groups that are in preview. To learn more about them, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Information Protection
+- Information Protection Admins
+- Information Protection Analysts
+- Information Protection Investigators
+- Information Protection Readers
+
 ## Sensitive information types used most in your content
 
 Microsoft 365 comes with many definitions of sensitive information types, such as an item containing a social security number or a credit card number. For more information on sensitive information types, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
@@ -77,7 +97,7 @@ To find out how many items are in any given classification category, hover over 
 > [!NOTE]
 > If the card displays the message "No data found with sensitive information", it means that there are no items in your organization that have been classified as being a sensitive information type or no items that have been crawled. To get started with labels, see:
 >- [Get started with sensitivity labels](get-started-with-sensitivity-labels.md)
->- [Get started with retention policies and retention labels](get-started-with-retention.md)
+>- [Get started with records-management](get-started-with-records-management.md)
 >- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 
 ## Top sensitivity labels applied to content
@@ -109,7 +129,7 @@ The top applied retention labels card shows you how many items have a given rete
 
 > [!NOTE]
 > If this card displays the message, "No retention labels detected", it means you haven't created or published any retention labels or no content has had a retention label applied. To get started with retention labels, see:
->- [Get started with retention policies and retention labels](get-started-with-retention.md)
+>- [Get started with information governance](get-started-with-information-governance.md)
 
 ## Top activities detected
 

@@ -7,7 +7,6 @@ author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
@@ -16,6 +15,7 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
+ms.custom:
 description: Learn about Threat Trackers, including new Noteworthy Trackers, to help your organization stay on top of security concerns.
 ms.technology: mdo
 ms.prod: m365-security
@@ -46,7 +46,7 @@ Most tracker pages include trending numbers that are updated periodically, widge
 
 Trackers are just a few of the many great features you get with [Microsoft Defender for Office 365 Plan 2](office-365-ti.md). Threat Trackers include [Noteworth trackers](#noteworthy-trackers), [Trending trackers](#trending-trackers), [Tracked queries](#tracked-queries), and [Saved queries](#saved-queries).
 
-To view and use your Threat Trackers for your organization, go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and choose **Email & collaboration** \> **Threat tracker**.
+To view and use your Threat Trackers for your organization, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, and go to **Email & collaboration** \> **Threat tracker**. To go directly to the **Threat tracker** page, use <https://security.microsoft.com/threattracker>.
 
 > [!NOTE]
 > To use Threat Trackers, you must be a global administrator, security administrator, or security reader. See [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
@@ -103,6 +103,6 @@ The new Noteworthy threat filter highlights items that were recently detected th
 
 - Make sure that your security team has the correct roles and permissions assigned. You must be a global administrator, or have the Security Administrator or Search and Purge role assigned in the Microsoft 365 Defender portal. See [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 
-- Watch for the new Trackers to show up in your Microsoft 365 environment. When available, you'll find your Trackers [here](https://https://security.microsoft.com/). Go to **Email & collaboration** \> **Threat tracker**.
+- Watch for the new Trackers to show up in your Microsoft 365 environment. When available, you'll find your Trackers on the **Threat tracker** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/threattracker>.
 
 - If you haven't already done so, learn more about and configure [Microsoft Defender for Office 365](defender-for-office-365.md) for your organization, including [Safe links](safe-links.md) and [Safe Attachments](safe-attachments.md).

@@ -74,7 +74,7 @@ You can create a group while creating a new assessment. Groups can't be created 
 
 Assessment templates contain the controls and action recommendations for assessments, based on certifications for different privacy regulations and standards. Your organization’s available templates may include one or more templates that were included as part of your licensing agreement, along with any additional premium templates that you have purchased.
 
-Each template, whether included or premium, exists in two versions: one for use with Microsoft 365, and a universal version that can be tailored to assess other products that you use. You can choose the appropriate template type for the product you want to assess.
+Each template, whether included or premium, exists in two versions: one for use with Microsoft 365 (or other Microsoft products as available), and a universal version that can be tailored to assess other products that you use. You can choose the appropriate template type for the product you want to assess.
 
 To learn more about templates, see [Working with assessment templates](compliance-manager-templates.md).
 
@@ -97,7 +97,7 @@ To begin building assessments, follow these steps.
 
 4. **Product, name, and group:** Set these properties to identify your assessment, choose which product it will be evaluating, and assign it to a group.
 
-    - **Product**: Select the product you want your assessment to apply to. If you are using a Microsoft 365 template, this field will be populated for you to indicate Microsoft 365 and cannot be changed. If you’re using a universal template, select whether you’re creating this assessment for a new product or a custom product you have already defined in Compliance Manager. If you choose a new product, enter its name. Note that you cannot select Microsoft 365 as the product when using a universal template.
+    - **Product**: Select the product you want your assessment to apply to. If you are using a Microsoft template, such as one designed for Microsoft 365, this field will be populated for you to indicate the appropriate product and cannot be changed. If you’re using a universal template, select whether you’re creating this assessment for a new product or a custom product you have already defined in Compliance Manager. If you choose a new product, enter its name. Note that you cannot select a pre-defined Microsoft product when using a universal template.
     - **Name**: Enter a name for your assessment in the **Assessment name** field. Assessment names must be unique within groups. If the name of your assessment matches the name of another assessment in any given group, you’ll receive an error asking you to create a different name.
     - **Group**: Assign your assessment to a group. You can either:
         - Select **Use existing group** to assign it to a group you’ve already created; or
@@ -157,7 +157,7 @@ Select an improvement action to view its details page, and select the **Launch n
 
 ### Microsoft actions tab
 
-The Microsoft actions tab appears for assessments based on the Microsoft 365 versions of the templates. It lists all the actions in the assessment that are managed by Microsoft. The list shows key action details, including: test status, points that contribute to your overall compliance score, associated regulations and standards, applicable solution, action type, and control family. Select an improvement action to view its details page.
+The Microsoft actions tab appears for assessments based on templates that support Microsoft products. It lists all the actions in the assessment that are managed by Microsoft. The list shows key action details, including: test status, points that contribute to your overall compliance score, associated regulations and standards, applicable solution, action type, and control family. Select an improvement action to view its details page.
 
 Learn more about [how controls and improvement actions are tracked and scored.](compliance-score-calculation.md)
 
@@ -167,7 +167,7 @@ When an update is available for an assessment, you’ll see a notification and h
 
 ### What causes an update
 
-An assessment update occurs when there are underlying template changes that impact scoring. Changes may involve adjusting control mapping or other guidance based on regulatory changes or product changes. Assessment updates can originate from your organization (such as, when a [custom template is modified](compliance-manager-templates-modify.md)) as well as from Microsoft.
+An assessment update occurs when there are underlying template changes that impact scoring. Changes may involve adjusting control mapping or other guidance based on regulatory changes or product changes. Assessment updates can originate from your organization (such as, when a [custom template is modified](compliance-manager-templates-modify.md) as well as from Microsoft.
 
 If Microsoft updates a Compliance Manager template that you extended, your assessment will inherit those updates once you accept them. Your assessment will retain the additional attributes you applied to the assessment when you extended it.
 
