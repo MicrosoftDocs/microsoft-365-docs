@@ -57,7 +57,9 @@ See [about admin roles](../add-users/about-admin-roles.md) for more information.
 
 3. On the Reports panel that opens, set **Make report data available to Microsoft 365 usage analytics for Power BI** to **On** \> **Save**.
 
-The data collection process will complete in two to 48 hours depending on the size of your tenant. The **Go to Power BI** button will be enabled (no longer gray) when data collection is complete.
+The data collection process will complete in two to 48 hours depending on the size of your tenant. The **Go to Power BI** button will be enabled (no longer gray) when data collection is complete. Once it's done, the app provides historical usage data at your organization level. 
+> [!NOTE]
+> The data for **"User Activity"** tab is only refreshed after the 15th day of the current month and the 1th day of the next month. So for the first time it will be empty until the refresh is completed.
 
 ## Start the template app
 
