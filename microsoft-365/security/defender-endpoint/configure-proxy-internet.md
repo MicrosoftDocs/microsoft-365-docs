@@ -182,7 +182,6 @@ In your firewall, open all the URLs where the geography column is WW. For rows w
 >
 > URLs that include v20 in them are only needed if you have Windows devices running version 1803 or later. For example, `us-v20.events.data.microsoft.com` is needed for a Windows device running version 1803 or later and onboarded to US Data Storage region.
 >
-> The above spreadsheet relates to MDE EDR, if you are using Microsoft Defender Antivirus in your environment, see [Configure network connections to the Microsoft Defender Antivirus cloud service](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
 
 If a proxy or firewall is blocking anonymous traffic as Defender for Endpoint sensor, and it's connecting from system context to make sure anonymous traffic is permitted in the previously listed URLs.
 
@@ -281,7 +280,6 @@ However, if the connectivity check results indicate a failure, an HTTP error is 
 
 ## Related topics
 
-- [Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)
 - [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md)
 - [Onboard Windows devices](configure-endpoints.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
