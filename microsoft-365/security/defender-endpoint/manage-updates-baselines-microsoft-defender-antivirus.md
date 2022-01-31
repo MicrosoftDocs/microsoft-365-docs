@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 01/06/2022
+ms.date: 01/31/2022
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
@@ -81,6 +81,31 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>January-2022 (Platform: 4.18.2201.6| Engine: 1.1.18900.2)</summary>
+
+&ensp;Security intelligence update version: **1.355.2.0**<br/>
+&ensp;Released: **January xx, 2022**<br/>
+&ensp;Platform: **4.18.2201.6**<br/>
+&ensp;Engine: **1.1.18900.2**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.18900.2
+Security intelligence update version: x.xxx.x.x
+
+### What's new
+
+- Behavior monitoring improvements in filtering performance
+- Hardening to TrustedInstaller
+- Tamper protection improvements
+- Replace `ScanScheduleTime` with new `ScanScheduleOffest` cmdlet in [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy configures the number of minutes after minute to perform a scheduled scan.
+- Added `-ServiceHealthReportInterval` setting in [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy configures the time interval (in minutes) after midnight to perform a scheduled scan.
+- Added `AllowSwitchToAsyncInspection` setting in [Set-MpPreference](/powershell/module/defender/set-mppreference).
+- Performance Analyzer v2 updates: Remote PowerShell and PowerShell 7.x support added. See [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
+
+### Known Issues
+No known issues
+<br/>
+</details><details>
 <summary>November-2021 (Platform: 4.18.2111.5| Engine: 1.1.18800.4)</summary>
 
 &ensp;Security intelligence update version: **1.355.2.0**<br/>
@@ -130,14 +155,21 @@ Security intelligence update version: 1.353.3.0
 ### Known Issues
 No known issues
 <br/>
-</details><details>
+</details>
+
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
+
+<details>
 <summary> September-2021 (Platform: 4.18.2109.6 | Engine: 1.1.18600.4)</summary>
 
 &ensp;Security intelligence update version: **1.351.7.0**<br/>
 &ensp;Released: **October 7th, 2021**<br/>
 &ensp;Platform: **4.18.2109.6**<br/>
 &ensp;Engine: **1.1.18600.4**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.18600.4
 Security intelligence update version: 1.351.7.0
@@ -149,14 +181,7 @@ Security intelligence update version: 1.351.7.0
 ### Known Issues
 No known issues
 <br/>
-</details>
-
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
-
-<details>
+</details><details>
 <summary> August-2021 (Platform: 4.18.2108.7 | Engine: 1.1.18500.10)</summary>
 
 &ensp;Security intelligence update version: **1.349.22.0**<br/>
