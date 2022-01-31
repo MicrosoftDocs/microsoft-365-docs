@@ -41,21 +41,12 @@ Inbox rules are set to automatically manage email messages based on predefined c
 
 Adversaries might set up email rules to hide incoming emails in the compromised user mailbox to hide their malicious activities from the user. They might also set rules in the compromised user mailbox to delete emails, move the emails into another less noticeable folder (like RSS), or forward mails to an external account. Some rules might move all the emails to another folder and mark them as “read”, while some rules might move only mails which contain specific keywords in the email message or subject. For example, the inbox rule might be set to look for keywords like “invoice”, “phish”, “do not reply”, “suspicious email”, or “spam” among others, and move them to an external email account. Attackers might also use the compromised user mailbox to distribute spam, phishing emails, or malware. 
 
-### Security alert classifications
-
-All Defender for Cloud Apps alerts can be classified as one of the following activity types:
-
-- True positive (TP): An alert on a confirmed malicious activity.
-- Benign true positive (B-TP): An alert on suspicious but not malicious activity, such as a penetration test or other authorized suspicious action.
-- False positive (FP): An alert on a non-malicious activity.
-
-## Prerequisites
-
-The researcher or SOC analyst must have access to Microsoft 365 Defender incidents and advanced hunting.
 
 ## Workflow
 
-ART: The following flowchart illustrates the steps you should follow to investigate this alert. Steps to investigate suspicious inbox manipulation rule
+The following flowchart illustrates the steps you should follow to investigate this alert. 
+
+Steps to investigate suspicious inbox manipulation rule
  
 ## Investigation steps
 

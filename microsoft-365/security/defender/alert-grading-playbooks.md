@@ -34,12 +34,6 @@ ms.technology: m365d
 
 These alert grading playbooks allow you to methodically review and quickly classify the alerts for well-known attacks and take recommended actions to remediate the attack and protect your network. Alert grading will also help in properly classifying the overall incident.
 
-All alerts can be classified as: 
-
-- True positive (TP): Confirmed malicious activity. 
-- Benign true positive (B-TP): Suspicious but not malicious activity, such as a penetration test or other authorized suspicious action. 
-- False positive (FP): Confirmed non-malicious activity.
-
 As a security researcher or SOC analyst, you must have access to the Microsoft 365 Defender portal so that you can:
 
 - Assess and review the generated alerts and associated incidents. See [investigate alerts](investigate-alerts.md).
@@ -61,6 +55,11 @@ As a security researcher or SOC analyst, you must have access to the Microsoft 3
 
 - Automated investigation and response capabilities: Save time and effort investigating and mitigating threats.
 
+Defender for Office 365 alerts can be classified as: 
+
+- True positive: Confirmed malicious activity. 
+- False positive: Confirmed non-malicious activity.
+
 >[!Note]
 >Microsoft 365 Defender portal [https://security.microsoft.com](https://security.microsoft.com) brings together functionality from existing Microsoft security portals. The Microsoft 365 Defender portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use.
 >
@@ -72,6 +71,12 @@ As a security researcher or SOC analyst, you must have access to the Microsoft 3
 Defender for Cloud Apps natively integrates with leading Microsoft solutions and is designed with security professionals in mind. It provides simple deployment, centralized management, and innovative automation capabilities.
 
 The Defender for Cloud Apps framework includes the capability to protect your network against cyberthreats and anomalies, detects unusual behavior across cloud apps to identify ransomware, compromised users or rogue applications. It enables the analysis of high-risk usage and can remediate automatically to limit the risk to your organization.
+
+Defender for Cloud Apps alerts can be classified as: 
+
+- True positive (TP): Confirmed malicious activity. 
+- Benign true positive (B-TP): Suspicious but not malicious activity, such as a penetration test or other authorized suspicious action. 
+- False positive (FP): Confirmed non-malicious activity.
 
 ## Alert grading playbooks
 
