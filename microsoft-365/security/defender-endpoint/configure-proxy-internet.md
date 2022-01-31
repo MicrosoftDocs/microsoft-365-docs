@@ -36,7 +36,7 @@ The Defender for Endpoint sensor requires Microsoft Windows HTTP (WinHTTP) to re
 
 The WinHTTP configuration setting is independent of the Windows Internet (WinINet) browsing proxy settings (see, [WinINet vs. WinHTTP](/windows/win32/wininet/wininet-vs-winhttp)) and can only discover a proxy server by using the following discovery methods:
 
-- Auto-discovery methods:
+- Autodiscovery methods:
 
   - Transparent proxy
   
@@ -56,7 +56,7 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 
 ## Configure the proxy server manually using a registry-based static proxy
 
-Configure a registry-based static proxy for Defender for Endpoint detection and response (EDR) sensor to report diagnostic data and communicate with Defender for Endpoint services if a computer is not permitted to connect to the Internet.
+Configure a registry-based static proxy for Defender for Endpoint detection and response (EDR) sensor to report diagnostic data and communicate with Defender for Endpoint services if a computer isn't permitted to connect to the Internet.
 
 > [!NOTE]
 > When using this option on Windows 10, or Windows 11, or Windows Server 2019, or Windows Server 2022, it is recommended to have the following (or later) build and cumulative update rollup:
@@ -175,7 +175,7 @@ The following downloadable spreadsheet lists the services and their associated U
 |
 
 If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed in the above table from HTTPS scanning.
-In your firewall, open all the URLs where the geography column is WW. For rows where the geography column is not WW, open the URLs to your specific data location. To verify your data location setting, see [Verify data storage location and update data retention settings for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/data-retention-settings).
+In your firewall, open all the URLs where the geography column is WW. For rows where the geography column isn't WW, open the URLs to your specific data location. To verify your data location setting, see [Verify data storage location and update data retention settings for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/data-retention-settings).
 
 > [!NOTE]
 > settings-win.data.microsoft.com is only needed if you have Windows devices running version 1803 or earlier.<br>
@@ -239,7 +239,7 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
 
 2. Extract the contents of MDEClientAnalyzer.zip on the device.
 
-3. Open an elevated command-line:
+3. Open an elevated command line:
    1. Go to **Start** and type **cmd**.
    1. Right-click **Command prompt** and select **Run as administrator**.
 
@@ -257,7 +257,7 @@ Verify the proxy configuration completed successfully, that WinHTTP can discover
 
 5. Extract the *MDEClientAnalyzerResult.zip* file created by tool in the folder used in the *HardDrivePath*.
 
-6. Open *MDEClientAnalyzerResult.txt* and verify that you have performed the proxy configuration steps to enable server discovery and access to the service URLs.
+6. Open *MDEClientAnalyzerResult.txt* and verify that you've performed the proxy configuration steps to enable server discovery and access to the service URLs.
 
    The tool checks the connectivity of Defender for Endpoint service URLs that Defender for Endpoint client is configured to interact with. It then prints the results into the *MDEClientAnalyzerResult.txt* file for each URL that can potentially be used to communicate with the Defender for Endpoint services. For example:
 
