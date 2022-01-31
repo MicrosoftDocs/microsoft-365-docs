@@ -126,7 +126,9 @@ Once you've selected an entity of interest, the details page changes to display 
 
 ## Manage alerts
 
-To manage an alert, you use the summary details section of an alert page and select **Manage alert** or **Classify alert** in the **INSIGHT** box.
+To manage a single alert, select **Manage alert** in the summary details section of the alert page.
+
+To manage a set of alerts similar to a specific alert, select **Classify alert** in the **INSIGHT** box in the summary details section of the alert page.
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" alt-text="Manage an alert in the Microsoft 365 Defender portal.":::
 
