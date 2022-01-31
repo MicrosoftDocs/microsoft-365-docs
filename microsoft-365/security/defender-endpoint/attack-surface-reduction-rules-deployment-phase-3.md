@@ -19,7 +19,7 @@ ms.topic: article
 ms.collection: M365-security-compliance
 ---
 
-# Attack surface reduction rules deployment phase 3: implement
+# ASR rules deployment phase 3: implement
 
 The implementation phase moves the ring from testing into functional state.
 
@@ -122,10 +122,10 @@ You can customize the notification for when a rule is triggered and blocks an ap
 
 ## Additional topics in this deployment collection
 
-[ASR rules deployment guide - overview](attack-surface-reduction-rules-deployment.md)
+[ASR rules deployment overview](attack-surface-reduction-rules-deployment.md)
 
-[ASR rules deployment phase 1 - plan](attack-surface-reduction-rules-deployment-phase-1.md)
+[Phase 1: Plan](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[ASR rules deployment phase 2 - test](attack-surface-reduction-rules-deployment-phase-2.md)
+[Phase 2: Test](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[ASR rules deployment phase 4 - operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
+[Phase 4: Operationalize](attack-surface-reduction-rules-deployment-phase-4.md)

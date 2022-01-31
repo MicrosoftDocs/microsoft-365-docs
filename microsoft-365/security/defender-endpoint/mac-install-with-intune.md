@@ -107,6 +107,7 @@ This profile contains a license information for Microsoft Defender for Endpoint,
     > ![Custom Configuration Profile - name.](images/mdatp-6-systemconfigurationprofiles-2.png)
 
 1. Choose a name for the configuration profile name, e.g., "Defender for Endpoint onboarding for macOS".
+1. Choose a [deployment channel](/mem/intune/fundamentals/whats-new#new-deployment-channel-setting-for-custom-device-configuration-profiles-on-macos-devices).
 1. Select intune/WindowsDefenderATPOnboarding.xml that you extracted from the onboarding package above as configuration profile file.
 
     > [!div class="mx-imgBorder"]
