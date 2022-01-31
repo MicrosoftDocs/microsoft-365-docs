@@ -7,7 +7,7 @@
               items:
                 - name: Document understanding overview
                   href: document-understanding-overview.md
-                - name: Differences between model types 
+                - name: Differences between custom model types 
                   href: difference-between-document-understanding-and-form-processing-model.md  
                 - name: Import a sample model 
                   href: learn-about-document-understanding-models-through-the-sample-model.md
@@ -45,12 +45,15 @@
               items:
                 - name: Form processing overview 
                   href: form-processing-overview.md
-                - name: Differences between model types 
+                - name: Differences between custom model types 
                   href: difference-between-document-understanding-and-form-processing-model.md  
                 - name: Create a form processing model 
                   href: create-a-form-processing-model.md
                 - name: Apply a retention label 
                   href: apply-a-retention-label-to-a-model.md
+                - name: Model usage analytics
+                  href: model-usage-analytics.md
+
 
     - name: Prebuilt models
       items:
