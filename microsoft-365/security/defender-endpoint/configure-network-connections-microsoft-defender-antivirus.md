@@ -47,19 +47,19 @@ After you've enabled the service, you need to configure your network or firewall
 
 The table in this section lists services and their associated website addresses (URLs).
 
-Make sure that there are no firewall or network filtering rules denying access to these URLs. Otherwise, you need to create an **Allow** rule specifically for them (excluding the URL `*.blob.core.windows.net`). The URLs in the following table use port 443 for communication.
+Make sure that there are no firewall or network filtering rules denying access to these URLs. Otherwise, you need to create an allow rule specifically for them (excluding the URL `*.blob.core.windows.net`). The URLs in the following table use port 443 for communication.
 
 <br/><br/>
 
 |Service and description|URL|
 |---|---|
-|Microsoft Defender Antivirus cloud-delivered protection service is referred as Microsoft Active Protection Service (MAPS).<p> These services provide cloud-delivered protection.|`*.wdcp.microsoft.com` <p> `*.wdcpalt.microsoft.com` <p> `*.wd.microsoft.com`|
+|Microsoft Defender Antivirus cloud-delivered protection service is referred as Microsoft Active Protection Service (MAPS).<p> The Microsoft Defender Antivirus uses the MAPS service to provide cloud-delivered protection.|`*.wdcp.microsoft.com` <p> `*.wdcpalt.microsoft.com` <p> `*.wd.microsoft.com`|
 |Microsoft Update Service (MU) and Windows Update Service (WU) <p>These services will allow security intelligence and product updates.|`*.update.microsoft.com` <p> `*.delivery.mp.microsoft.com`<p> `*.windowsupdate.com` <p> For more information, see [Connection endpoints for Windows Update](/windows/privacy/manage-windows-1709-endpoints#windows-update)|
 |Security intelligence updates Alternate Download Location (ADL)<p>This is an alternate location for Microsoft Defender Antivirus Security intelligence updates, if the installed Security intelligence is out of date (Seven or more days behind).|`*.download.microsoft.com` <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
 |Malware submission storage <p>This is an upload location for files submitted to Microsoft via the Submission form or automatic sample submission.|`ussus1eastprod.blob.core.windows.net` <p> `ussus2eastprod.blob.core.windows.net` <p> `ussus3eastprod.blob.core.windows.net` <p> `ussus4eastprod.blob.core.windows.net` <p> `wsus1eastprod.blob.core.windows.net` <p> `wsus2eastprod.blob.core.windows.net` <p> `ussus1westprod.blob.core.windows.net` <p> `ussus2westprod.blob.core.windows.net` <p> `ussus3westprod.blob.core.windows.net` <p> `ussus4westprod.blob.core.windows.net` <p> `wsus1westprod.blob.core.windows.net` <p> `wsus2westprod.blob.core.windows.net` <p> `usseu1northprod.blob.core.windows.net` <p> `wseu1northprod.blob.core.windows.net` <p> `usseu1westprod.blob.core.windows.net` <p> `wseu1westprod.blob.core.windows.net` <p> `ussuk1southprod.blob.core.windows.net` <p> `wsuk1southprod.blob.core.windows.net` <p> `ussuk1westprod.blob.core.windows.net` <p> `wsuk1westprod.blob.core.windows.net`|
 |Certificate Revocation List (CRL) <p> Windows use this list while creating the SSL connection to MAPS for updating the CRL.|`http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p> `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs`|
 |Symbol Store <p>Microsoft Defender Antivirus use the Symbol Store to restore certain critical files during the remediation flows.|`https://msdl.microsoft.com/download/symbols`|
-|Universal customer content Client <p> Windows use this client to send the client diagnostic data. <p> Microsoft Defender Antivirus uses General Data Protection Regulation for product quality, and monitoring purposes.|The update uses SSL (TCP Port 443) to download manifests and upload diagnostic data to Microsoft that uses the following DNS endpoints: <p> `vortex-win.data.microsoft.com` <p> `settings-win.data.microsoft.com`|
+|Universal GDPR Client <p> Windows use this client to send the client diagnostic data. <p> Microsoft Defender Antivirus uses General Data Protection Regulation for product quality, and monitoring purposes.|The update uses SSL (TCP Port 443) to download manifests and upload diagnostic data to Microsoft that uses the following DNS endpoints: <p> `vortex-win.data.microsoft.com` <p> `settings-win.data.microsoft.com`|
 |EDRCloud CnC|`winatp-gw-weu.microsoft.com` <br> `winatp-gw-neu.microsoft.com`|
 |EDRCloud Cyber|`eu.vortex-win.data.microsoft.com` <br> `eu-v20.events.data.microsoft.com`|
 |EDRCloud AutoIR|`automatedirstrprdweu.blob.core.windows.net` <br> `automatedirstrprdneu.blob.core.windows.net`|
@@ -77,24 +77,24 @@ Use the following argument with the Microsoft Defender Antivirus command-line ut
 ```
 
 > [!NOTE]
-> You need to open an administrator-level version of the **Command Prompt.** Right-click the item in the **Start** menu, click **Run as administrator** and click **Yes** at the permissions prompt. This command will only work on Windows 10, version 1703 or higher, or Windows 11.
+> You need to open an administrator-level version of the command prompt. Right-click the item in the **Start** menu, click **Run as administrator** and click **Yes** at the permissions prompt. This command will only work on Windows 10, version 1703 or higher, or Windows 11.
 
 For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus.md).
 
 ### Attempt to download a fake malware file from Microsoft
 
-If your system is successfully connected to the Microsoft Defender Antivirus, download a sample file, and Microsoft Defender will block the file.
+You can download a sample file that Microsoft Defender Antivirus will detect and block if you're properly connected to the cloud.
 
 Visit [https://aka.ms/ioavtest](https://aka.ms/ioavtest) to download the file.
 
 > [!NOTE]
-> The downloaded file is not an exact malware. It's a dummy file designed to test if you're properly connected to the cloud.
+> The downloaded file is not an exact malware. It's a fake file designed to test if you're properly connected to the cloud.
 
 If you're properly connected, you'll see a warning Microsoft Defender Antivirus notification.
 
 If you're using Microsoft Edge, you'll also see a notification message:
 
-:::image type="content" source="../../media/wdav-bafs-edge.png" alt-text="Screenshot of notification that malware was found in Edge.":::
+:::image type="content" source="../../media/wdav-bafs-edge.png" alt-text="Screenshot of notification that malware was found in Azure IoT Edge.":::
 
 A similar message occurs if you're using Internet Explorer:
 
