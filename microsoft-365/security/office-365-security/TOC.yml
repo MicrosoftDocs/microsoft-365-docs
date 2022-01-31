@@ -20,70 +20,40 @@
        href: migrate-to-defender-for-office-365.md
    - name: Deploy
      items: 
-     - name: Protect against threats
-       href: protect-against-threats.md
-     - name: Integrate Defender for Office 365 with Defender for Endpoint
-       href: integrate-office-365-ti-with-mde.md
-     - name: Permissions in the Microsoft 365 Defender portal
-       href: permissions-microsoft-365-security-center.md
-     - name: Permissions in the Security & Compliance Center
-       href: permissions-in-the-security-and-compliance-center.md
-     - name: SIEM server integration
-       href: siem-server-integration.md
-     - name: SIEM integration with Defender for Office 365
-       href: siem-integration-with-office-365-ti.md
-     - name: Configure anti-phishing policies in Defender for Office 365
-       href: configure-mdo-anti-phishing-policies.md
-     - name: Configure anti-phishing policies in EOP
-       href: configure-anti-phishing-policies-eop.md
-     - name: Configure anti-malware policies
-       href: configure-anti-malware-policies.md
-     - name: Configure anti-spam policies
-       items:
-       - name: Configure anti-spam policies  
-         href: configure-your-spam-filter-policies.md
-       - name: Advanced Spam Filter (ASF) settings
-         href: advanced-spam-filtering-asf-options.md
-     - name: Configure EOP to deliver spam to Junk Email folders in hybrid
-       href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
-     - name: Configure junk email settings on Exchange Online mailboxes
-       href: configure-junk-email-settings-on-exo-mailboxes.md
-     - name: Configure connection filtering
-       href: configure-the-connection-filter-policy.md
-     - name: Configure global settings for Safe Links in Defender for Office 365
-       href: configure-global-settings-for-safe-links.md
-     - name: Configure outbound spam filtering
-       href: configure-the-outbound-spam-policy.md
-     - name: Create block sender lists
-       href: Create-block-sender-lists-in-office-365.md
-     - name: Create safe sender lists
-       href: Create-safe-sender-lists-in-office-365.md
      - name: Email authentication
-       href: email-validation-and-authentication.md
-     - name: Give users access to the Security & Compliance Center
-       href: grant-access-to-the-security-and-compliance-center.md
-     - name: Safe Documents in Defender for Office 365
-       href: safe-docs.md
-     - name: Set up Safe Links policies in Defender for Office 365
-       href: set-up-safe-links-policies.md
-     - name: Set up Safe Attachments policies in Defender for Office 365
-       href: set-up-safe-attachments-policies.md
-     - name: Set up SPF to help prevent spoofing
-       href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
-     - name: User submissions policies
-       href: user-submission.md
-     - name: User tags in Defender for Office 365
-       href: user-tags.md
-     - name: Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
-       href: turn-on-mdo-for-spo-odb-and-teams.md
-     - name: Use DKIM to validate outbound email
-       href: use-dkim-to-validate-outbound-email.md
-     - name: Use DMARC to validate email
-       href: use-dmarc-to-validate-email.md
-     - name: Add support for anonymous inbound email over IPv6
-       href: support-for-anonymous-inbound-email-messages-over-ipv6.md
-     - name: Install Application Guard for Office
-       href: install-app-guard.md
+       items:
+       - name: Set up SPF to help prevent spoofing
+         href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+       - name: Use DKIM to validate outbound email
+         href: use-dkim-to-validate-outbound-email.md
+       - name: Use DMARC to validate email
+         href: use-dmarc-to-validate-email.md
+     - name: Choose your installation path that works for your environment
+       items:
+       - name: Choice for admins with or without EOP
+         items: 
+         - name: Option 1-Preset installation path (automated)
+           items:
+           - name: Configuration analyzer for protection policies
+             href: configuration-analyzer-for-security-policies.md
+           - name: Preset security policies
+             href: preset-security-policies.md
+         - name: Option 2-EOP customer MDO installation path (manual)
+           items:
+           - name: Defender for Office 365
+             href: defender-for-office-365.md
+           - name: Protect against threats
+             href: protect-against-threats.md
+         - name: Option 3-Custom EOP and MDo environments P1 ans P2 installation path (manual)
+           items: 
+           - name: Exchange Online Protection overview
+             href: exchange-online-protection-overview.md
+           - name: Recommended settings for configuring EOP and Defender for Office 365 Security
+             href: recommended-settings-for-eop-and-office365.md
+         - name: Permissions
+           items:
+           - name: Give users access to the Security & Compliance Center
+             href: grant-access-to-the-security-and-compliance-center.md
    - name: Migrate
      items: 
      - name: Migrate from a third-party protection service or device to Defender for Office 365
@@ -96,14 +66,38 @@
          href: migrate-to-defender-for-office-365-setup.md
        - name: "Migrate Phase 3: Onboard"
          href: migrate-to-defender-for-office-365-onboard.md
-   - name: Prevent
+   - name: Protect and Detect
      items: 
+     - name: Protect
+       items: 
+       - name: Mail flow
+         items:
+         - name: Use mail flow rules to block messages with executable attachments
+           href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-block-executable-attachments
+         - name: Use mail flow rules to filter bulk mail
+           href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail
+         - name: Control automatic external email forwarding
+           href: external-email-forwarding.md
+         - name: Use mail flow rules to set the SCL in messages
+           href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl
+         - name: Message trace
+           href: message-trace-scc.md
+         - name: Anti-phishing policies
+           href: set-up-anti-phishing-policies.md
+         - name: Set up Safe Links policies in Defender for Office 365
+           href: set-up-safe-links-policies.md
+         - name: Set up Safe Attachments policies in Defender for Office 365
+           href: set-up-safe-attachments-policies.md
+       - name: Workload and Zero-hour Auto Purge (ZAP)
+         items:
+         - name: Zero-hour auto purge - protection against spam and malware
+           href: zero-hour-auto-purge.md
+         - name: Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
+           href: turn-on-mdo-for-spo-odb-and-teams.md
+       - name: Allow and block
+         items: 
      - name: Configure your tenant for increased security
        href: tenant-wide-setup-for-increased-security.md
-     - name: Preset security policies
-       href: preset-security-policies.md
-     - name: Configuration analyzer for protection policies
-       href: configuration-analyzer-for-security-policies.md
      - name: Security recommendations for priority accounts
        href: security-recommendations-for-priority-accounts.md
      - name: Attack simulation training in Defender for Office 365
@@ -126,8 +120,6 @@
          href: attack-simulation-training-faq.md
      - name: Configure delivery for third-party phishing simulations and SecOps mailboxes
        href: configure-advanced-delivery.md
-     - name: Recommended settings for configuring EOP and Defender for Office 365 Security
-       href: recommended-settings-for-eop-and-office365.md
      - name: Integrate AIR with a custom solution or third-party solution
        href: air-custom-reporting.md
      - name: Tenant Allow/Block List
@@ -140,18 +132,6 @@
          href: manage-tenant-allows.md
        - name: Modify and remove entries in the Tenant Allow/Block List
          href: modify-remove-entries-tenant-allow-block.md
-     - name: Message trace
-       href: message-trace-scc.md
-     - name: Use mail flow rules to block messages with executable attachments
-       href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-block-executable-attachments
-     - name: Use mail flow rules to filter bulk mail
-       href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail
-     - name: Use mail flow rules to set the SCL in messages
-       href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl
-     - name: Zero-hour auto purge - protection against spam and malware
-       href: zero-hour-auto-purge.md
-     - name: Control automatic external email forwarding
-       href: external-email-forwarding.md
    - name: Detect
      items: 
      - name: Threat Explorer for Defender for Office 365
@@ -304,8 +284,6 @@
        href: how-policies-and-protections-are-combined.md
      - name: Anti-spam message headers
        href: anti-spam-message-headers.md
-     - name: Anti-phishing policies
-       href: set-up-anti-phishing-policies.md
      - name: Backscatter in EOP
        href: backscatter-messages-and-eop.md
      - name: Bulk complaint level (BCL)
@@ -348,16 +326,12 @@
          href: ../defender-business/index.yml
    - name: Parking lot items
      items:
-      - name: Defender for Office 365
-        href: defender-for-office-365.md
       - name: What's new in Defender for Office 365
         href: whats-new-in-defender-for-office-365.md
       - name: Defender for Office 365 in the Microsoft 365 Defender portal
         href: ../defender/microsoft-365-security-center-mdo.md
       - name: Exchange Online Protection
         items: 
-            - name: Exchange Online Protection overview
-              href: exchange-online-protection-overview.md
             - name: Mail flow in EOP
               href: mail-flow-in-eop.md
             - name: Quarantine
@@ -398,3 +372,52 @@
         href: office365-security-incident-response-overview.md
       - name: Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
         href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
+      - name: Integrate Defender for Office 365 with Defender for Endpoint
+        href: integrate-office-365-ti-with-mde.md
+      - name: Permissions in the Microsoft 365 Defender portal
+        href: permissions-microsoft-365-security-center.md
+      - name: Permissions in the Security & Compliance Center
+        href: permissions-in-the-security-and-compliance-center.md
+      - name: SIEM server integration
+        href: siem-server-integration.md
+      - name: SIEM integration with Defender for Office 365
+        href: siem-integration-with-office-365-ti.md
+      - name: Configure anti-phishing policies in Defender for Office 365
+        href: configure-mdo-anti-phishing-policies.md
+      - name: Configure anti-phishing policies in EOP
+        href: configure-anti-phishing-policies-eop.md
+      - name: Configure anti-malware policies
+        href: configure-anti-malware-policies.md
+      - name: Configure anti-spam policies
+        items:
+        - name: Configure anti-spam policies  
+          href: configure-your-spam-filter-policies.md
+        - name: Advanced Spam Filter (ASF) settings
+          href: advanced-spam-filtering-asf-options.md
+      - name: Configure EOP to deliver spam to Junk Email folders in hybrid
+        href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
+      - name: Configure junk email settings on Exchange Online mailboxes
+        href: configure-junk-email-settings-on-exo-mailboxes.md
+      - name: Configure connection filtering
+        href: configure-the-connection-filter-policy.md
+      - name: Configure global settings for Safe Links in Defender for Office 365
+        href: configure-global-settings-for-safe-links.md
+      - name: Configure outbound spam filtering
+        href: configure-the-outbound-spam-policy.md
+      - name: Create block sender lists
+        href: Create-block-sender-lists-in-office-365.md
+      - name: Create safe sender lists
+        href: Create-safe-sender-lists-in-office-365.md
+      - name: Email authentication
+        href: email-validation-and-authentication.md
+      - name: Safe Documents in Defender for Office 365
+        href: safe-docs.md
+      - name: User submissions policies
+        href: user-submission.md
+      - name: User tags in Defender for Office 365
+        href: user-tags.md
+      - name: Add support for anonymous inbound email over IPv6
+        href: support-for-anonymous-inbound-email-messages-over-ipv6.md
+      - name: Install Application Guard for Office
+        href: install-app-guard.md
+      
