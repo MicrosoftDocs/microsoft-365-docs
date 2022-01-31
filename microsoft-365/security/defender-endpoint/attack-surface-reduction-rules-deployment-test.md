@@ -1,5 +1,5 @@
 ---
-title: ASR rules deployment phase 2 - test
+title: Phase 2 - test
 description: Provides guidance to test your attack surface reduction rules deployment.
 keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
@@ -19,7 +19,7 @@ ms.topic: article
 ms.collection: M365-security-compliance
 ---
 
-# ASR rules deployment phase 2: test
+# Phase 2 - test
 
 Begin your ASR  rules deployment with ring 1.
 
@@ -196,8 +196,8 @@ Event ID | Description
 
 [ASR rules deployment overview](attack-surface-reduction-rules-deployment.md)
 
-[Phase 1: Plan](attack-surface-reduction-rules-deployment-phase-1.md)
+[Phase 1: Plan](attack-surface-reduction-rules-deployment-plan.md)
 
-[Phase 3: Implement](attack-surface-reduction-rules-deployment-phase-3.md)
+[Phase 3: Implement](attack-surface-reduction-rules-deployment-implement.md)
 
-[Phase 4: Operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
+[Phase 4: Operationalize](attack-surface-reduction-rules-deployment-operationalize.md)
