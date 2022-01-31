@@ -66,7 +66,7 @@ From version 1.0.3425.0303 of Microsoft Defender for Endpoint on Android, you'll
 **Notes about privacy related to apps from personal devices (BYOD):**
 
 - For Android Enterprise with a work profile, only apps installed on the work profile will be supported.
-- For other BYOD modes, by default, vulnerability assessment of apps will **not** be enabled. However, when the device is on administrator mode, admins can explicitly enable this feature through Microsoft Endpoint Manager to get the list of apps installed on the device. See below for more details.
+- For other BYOD modes, by default, vulnerability assessment of apps will **not** be enabled. However, when the device is on administrator mode, admins can explicitly enable this feature through Microsoft Endpoint Manager to get the list of apps installed on the device. For more information, see details below.
 
 ### Configure privacy for device administrator mode
 
