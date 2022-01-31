@@ -50,7 +50,7 @@ There are two different methods for automatically applying a sensitivity label t
     
     You might also hear this method referred to as auto-labeling for data at rest (documents in SharePoint and OneDrive) and data in transit (email that is sent or received by Exchange). For Exchange, it doesn't include emails at rest (mailboxes).
     
-    Because this labeling is applied by services rather than by applications, you don't need to worry about what apps users have and what version. As a result, this capability is immediately available throughout your organization and suitable for labeling at scale. Auto-labeling policies don't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation mode to help ensure the correct labeling of content before actually applying the label.
+    Because this labeling is applied by services rather than by applications, you don't need to worry about what apps users have and what version. As a result, this capability is immediately available throughout your organization and suitable for labeling at scale. Auto-labeling policies don't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation to help ensure the correct labeling of content before actually applying the label.
 
     For configuration instructions, see [How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) on this page.
     
@@ -248,6 +248,17 @@ Simulation mode also lets you gradually increase the scope of your auto-labeling
 
 Finally, you can use simulation mode to provide an approximation of the time needed to run your auto-labeling policy, to help you plan and schedule when to run it without simulation mode.
 
+#### Deleted OneDrive accounts and simulation results
+
+Expect possible display discrepancies in the simulation results when deleted OneDrive accounts are still in the [retention stage of the deletion process](/onedrive/retention-and-deletion#the-onedrive-deletion-process). For example, an employee has left the organization and their manager has temporary access to that user's OneDrive files.
+
+In this scenario, if the OneDrive account was specified by URL in the auto-labeling policy, matched files from the deleted OneDrive account are included in the simulation results.
+
+However, if the OneDrive account wasn't specified by URL, but was included with the **All** default setting:
+- When the SharePoint location is included in the policy, matched files from the deleted OneDrive account display as SharePoint items in the simulation results.
+- When the SharePoint location isn't included in the policy, matched files from the deleted OneDrive account aren't included in the simulation results.
+
+In all cases, matched files are labeled until the OneDrive account is permanently deleted. The display discrepancies listed apply only to the simulation results.
 
 ### Creating an auto-labeling policy
 
@@ -329,13 +340,13 @@ You can modify your policy directly from this interface:
 
     When you're ready to run the policy without simulation, select the **Turn on policy** option.
 
-Auto-policies run continuously until they're deleted. For example, new and modified files will be included with the current policy settings.
+Auto-labeling policies run continuously until they're deleted. For example, new and modified files will be included with the current policy settings.
 
 ### Monitoring your auto-labeling policy
 
 After your auto-labeling policy is turned on, you can view the labeling progress for files in your chosen SharePoint and OneDrive locations. Emails aren't included in the labeling progress because they're automatically labeled as they're sent.
 
-The labeling progress includes the files to be labeled by the policy, the files labeled in the last 7 days, and the total files labeled. Because of the maximum of labeling 25,000 files a day, this information provides you with visibility into the current labeling progress for your policy and how many files are still to be labeled.
+The labeling progress includes the files to be labeled by the policy, the files labeled in the last seven days, and the total files labeled. Because of the maximum of labeling 25,000 files a day, this information provides you with visibility into the current labeling progress for your policy and how many files are still to be labeled.
 
 When you first turn on your policy, you initially see a value of 0 for files to be labeled until the latest data is retrieved. This progress information updates every 48 hours, so you can expect to see the most current data about every other day. When you select an auto-labeling policy, you can see more details about the policy in a flyout pane, which includes the labeling progress by the top 10 sites. The information on this flyout pane might be more current than the aggregated policy information displayed on the **Auto-labeling** main page.
 
