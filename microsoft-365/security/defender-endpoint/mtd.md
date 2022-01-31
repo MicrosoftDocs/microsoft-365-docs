@@ -63,7 +63,7 @@ Deployment of Microsoft Defender for Endpoint on mobile can be done via Microsof
 
 ### Deploy
 
-Following table summarizes how to deploy Microsoft Defender for Endpoint on Android and iOS. For detailed documentation, see 
+The following table summarizes how to deploy Microsoft Defender for Endpoint on Android and iOS. For detailed documentation, see 
 - [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md), and
 - [Overview of Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
 
@@ -71,15 +71,15 @@ Following table summarizes how to deploy Microsoft Defender for Endpoint on Andr
 
 |Enrollment type     |Details      |
 |--------------------|-------------|
-|Android Enterprise with Intune UEM (Microsoft Endpoint Manager)|[Deploy on Android Enterprise enrolled devices](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
-|Device Administrator with Intune UEM (Microsoft Endpoint Manager)|[Deploy on Device Administrator enrolled devices](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
-|Unmanaged BYOD OR devices managed by other UEMs / Setup app protection policy (MAM)|[Configure Defender risk signals in app protection policy (MAM)](android-configure-mam.md)|
+|Android Enterprise with Intune Unified Endpoint Manager (Microsoft Endpoint Manager)|[Deploy on Android Enterprise enrolled devices](android-intune.md#deploy-on-android-enterprise-enrolled-devices)|
+|Device Administrator with Intune Unified Endpoint Manager (Microsoft Endpoint Manager)|[Deploy on Device Administrator enrolled devices](android-intune.md#deploy-on-device-administrator-enrolled-devices)|
+|Unmanaged BYOD OR devices managed by other Unified Endpoint Managers / Setup app protection policy (MAM)|[Configure Defender risk signals in app protection policy (MAM)](android-configure-mam.md)|
 
 **iOS**
 
 |Enrollment type     |Details      |
 |--------------------|-------------|
-|Supervised devices with Intune UEM (Microsoft Endpoint Manager)|1. [Deploy as iOS store app](ios-install.md)<br/>2. [Setup Web Protection without VPN for supervised iOS devices](ios-install.md#complete-deployment-for-supervised-devices)|
+|Supervised devices with Intune Unified Endpoint Manager (Microsoft Endpoint Manager)|1. [Deploy as iOS store app](ios-install.md)<br/>2. [Setup Web Protection without VPN for supervised iOS devices](ios-install.md#complete-deployment-for-supervised-devices)|
 |Unsupervised (BYOD) devices enrolled with Intune UEM (Microsoft Endpoint Manager)|[Deploy as iOS store app](ios-install.md)|
 |Unmanaged BYOD OR devices managed by other UEMs / Setup app protection policy (MAM)|[Configure Defender risk signals in app protection policy (MAM)](ios-install-unmanaged.md)|
 
@@ -101,9 +101,9 @@ Following table summarizes how to deploy Microsoft Defender for Endpoint on Andr
 
 ## Pilot evaluation
 
-During evaluation of mobile threat defense with Microsoft Defender for Endpoint, you can verify that certain criteria is met before proceeding to deploy the service to a larger set of devices. You can define the exit criteria and ensure that they are satisfied before deploying widely.
+While evaluating mobile threat defense with Microsoft Defender for Endpoint, you can verify that certain criteria is met before proceeding to deploy the service to a larger set of devices. You can define the exit criteria and ensure that they are satisfied before deploying widely.
 
-This helps reduce potential issues that could arise while rolling out the service. Below are few tests and exit criteria that might help:
+This helps reduce potential issues that could arise while rolling out the service. Here are some tests and exit criteria that might help:
 
 - Devices show up in the device inventory list: After successful onboarding of Defender for Endpoint on the mobile device, verify that the device is listed in the Device Inventory in the [security console](https://security.microsoft.com).
 
