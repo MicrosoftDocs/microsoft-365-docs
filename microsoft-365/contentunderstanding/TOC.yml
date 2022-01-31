@@ -5,7 +5,7 @@
       items:
             - name: Document understanding
               items:
-                - name: Document understanding overview
+                - name: Overview
                   href: document-understanding-overview.md
                 - name: Differences between custom models 
                   href: difference-between-document-understanding-and-form-processing-model.md  
@@ -43,7 +43,7 @@
                   href: accessibility-mode.md
             - name: Form processing
               items:
-                - name: Form processing overview 
+                - name: Overview 
                   href: form-processing-overview.md
                 - name: Differences between custom models 
                   href: difference-between-document-understanding-and-form-processing-model.md  
