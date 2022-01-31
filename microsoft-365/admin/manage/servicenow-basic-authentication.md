@@ -25,7 +25,7 @@ description: "Scoped Certified application installation and configuration guide 
 
 These prerequisites are necessary to set up the **Microsoft 365 support integration**.
 
-1. \[AAD Admin\] Create AAD Application under your Microsoft 365 tenant.
+1. \[AAD Admin\] Create Azure AD Application under your Microsoft 365 tenant.
 
     1. Log on to the Azure Portal with your Microsoft 365 tenant credentials and go to the [App registrations page](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) to create a new application.
 
@@ -139,15 +139,15 @@ These steps are required to set up the integration between your ServiceNow insta
     1. After completing the instructions in the prerequisites section, click **Done**. Otherwise, follow the instructions in the wizard to create the necessary application registration in AAD.
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-4.png" lightbox="../../media/ServiceNow-guide/snowbasic-4.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
     1. Register the ServiceNow OAuth App.
-    1. After completing the instructions in the prerequisites section, select the newly-created OAuth application registration and click Next. Otherwise, follow the instructions to create the entity in ServiceNow and then select the new application registration.
+    1. After completing the instructions in the prerequisites section, select the newly created OAuth application registration and click Next. Otherwise, follow the instructions to create the entity in ServiceNow and then select the new application registration.
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-5.png" lightbox="../../media/ServiceNow-guide/snowbasic-5.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 1. \[ServiceNow Admin\] Configure Inbound settings.
     1. Configure the Inbound OAuth API endpoint.
-    1. After completing the instructions in the prerequisites section, select the newly-created OAuth application registration and click Done. Otherwise, follow the instructions to create the entity in then select the new REST endpoint registration.
+    1. After completing the instructions in the prerequisites section, select the newly created OAuth application registration and click Done. Otherwise, follow the instructions to create the entity in then select the new REST endpoint registration.
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-6.png" lightbox="../../media/ServiceNow-guide/snowbasic-6.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
     1. Configure the Integration User.
-    1. After completing the instructions in the prerequisites section, select the newly-created integration user and click Next. Otherwise, follow the instructions to create the entity in ServiceNow and then select the new integration user.
+    1. After completing the instructions in the prerequisites section, select the newly created integration user and click Next. Otherwise, follow the instructions to create the entity in ServiceNow and then select the new integration user.
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-7.png" lightbox="../../media/ServiceNow-guide/snowbasic-7.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 1. \[Microsoft 365 Tenant Admin\] Complete the integration in the Microsoft 365 Admin Portal.
@@ -160,7 +160,7 @@ These steps are required to set up the integration between your ServiceNow insta
 
 1. Configure the support integration settings:
 
-    Select the **Basic information** tab > **Internal support tool** > **ServiceNow**, and enter the **Outbound App ID** value in the **Application ID to issue OAuth token** field. This Outbound App ID is on Step 6 – Complete the Integration, which was created in [Prerequisite (Basic Authentication) step \#1](#prerequisites-basic-authentication).
+    Select the **Basic information** tab > **Internal support tool** > **ServiceNow**, and enter the **Outbound App ID** value in the **Application ID to issue Auth Token** field. This Outbound App ID is on Step 6 – Complete the Integration, which was created in [Prerequisite (Basic Authentication) step \#1](#prerequisites-basic-authentication).
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 

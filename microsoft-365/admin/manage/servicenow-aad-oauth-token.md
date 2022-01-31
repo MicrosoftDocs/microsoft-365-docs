@@ -1,5 +1,5 @@
 ---
-title: "Configure Microsoft 365 support integration with AAD OAuth Token"
+title: "Configure Microsoft 365 support integration with Azure AD Auth Token"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,13 +19,13 @@ search.appverid:
 description: "Scoped Certified application installation and configuration guide for ServiceNow."
 ---
 
-# Configure Microsoft 365 support integration with AAD OAuth Token
+# Configure Microsoft 365 support integration with Azure AD Auth Token
 
-## Prerequisites (AAD OAuth Token)
+## Prerequisites (Azure AD Auth Token)
 
 These prerequisites are necessary to set up the Microsoft 365 support integration.
 
-1. \[AAD Admin\] Create AAD Application for Outbound under your Microsoft 365 tenant.
+1. \[AAD Admin\] Create Azure AD Application for Outbound under your Microsoft 365 tenant.
 
     1. Log on to the Azure Portal with your Microsoft 365 tenant credentials and go to the [App registrations page](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) to create a new application.
 
@@ -39,7 +39,7 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
 1. Get the Application Client ID and create a Client secret and get that value.
 
-1. \[AAD Admin\] Create an AAD application for Rest API under your Microsoft 365 tenant.
+1. \[AAD Admin\] Create an Azure AD Application for Rest API under your Microsoft 365 tenant.
 
     1. Log on to the [Azure Portal](https://portal.azure.com/) with your Microsoft 365 tenant credentials and go to the App registrations page to create a new application.
 
@@ -49,7 +49,7 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
 1. Get the Application Client ID and create a Client secret and get that value.
 
-1. \[AAD Admin\] Create an AAD Application for Rest User under your Microsoft 365 tenant.
+1. \[AAD Admin\] Create an Azure AD Application for Rest User under your Microsoft 365 tenant.
 
     1. Log on to the [Azure Portal](https://portal.azure.com/) with your Microsoft 365 tenant credentials and go to the App registrations page to create a new application.
 
@@ -69,9 +69,9 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
 1. Create a new application using the **Connect to a third party OAuth Provider** option and entering these values:
 
-    - Client ID: This is the Client ID of the application created in Prerequisites (AAD OAuth Token) step \#1.
+    - Client ID: This is the Client ID of the application created in Prerequisites (Azure AD Auth Token) step \#1.
 
-    - Client Secret: This is the Client Secret value of the application created in Prerequisites (AAD OAuth Token) step \#1.
+    - Client Secret: This is the Client Secret value of the application created in Prerequisites (Azure AD Auth Token) step \#1.
 
     - Default Grant type: Client Credentials
 
@@ -107,9 +107,9 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
     - Name: **{Tenant\_Name}\_application\_inbound\_api** (example: contoso\_applicaiton\_inbound\_api)
 
-    - Client ID: The Client ID of the application created in Prerequisites (AAD OAuth Token) step \#2.
+    - Client ID: The Client ID of the application created in Prerequisites (Azure AD Auth Token) step \#2.
 
-    - Client Secret: The App Secret of the application created in Prerequisites (AAD OAuth Token) step \#2.
+    - Client Secret: The App Secret of the application created in Prerequisites (Azure AD Auth Token) step \#2.
 
     - OAuth OIDC Provider Configuration: The OIDC provider created in the previous step
 
@@ -119,7 +119,7 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
 1. \[ServiceNow Admin\] Create Integration Users.
 
-    You must specify an integration user. If you don’t have an existing integration user or if you want to create one specifically for this integration, go to **Organization &gt; Users** to create a new user. The value of the **User ID** is the application Client ID created in [Prerequisites (AAD OAuth Token) step \#3](#prerequisites-aad-oauth-token).
+    You must specify an integration user. If you don’t have an existing integration user or if you want to create one specifically for this integration, go to **Organization &gt; Users** to create a new user. The value of the **User ID** is the application Client ID created in [Prerequisites (Azure AD Auth Token) step \#3](#prerequisites-aad-oauth-token).
 
     If you are creating a new integration user, check the **Web service access only** option. You must also grant this user with the **incident\_manager** role.
 
@@ -178,7 +178,7 @@ These steps are required to set up the integration between your ServiceNow insta
     1. After completing the instructions in the prerequisites section, click Done. Otherwise, follow the instructions in the wizard to create the necessary application registration in AAD.
     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-4.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-4.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
     1. Register the ServiceNow OAuth App.
-    1. After completing the instructions in the prerequisites section, select the newly-created OAuth application registration and click Next. Otherwise, follow the instructions to create the entity in ServiceNow and then select the new application registration.
+    1. After completing the instructions in the prerequisites section, select the newly created OAuth application registration and click Next. Otherwise, follow the instructions to create the entity in ServiceNow and then select the new application registration.
      :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-5.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-5.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 1. \[ServiceNow Admin\] Configure Inbound settings.
@@ -186,13 +186,13 @@ These steps are required to set up the integration between your ServiceNow insta
     1. After completing the instructions in the prerequisites section, click Done to go to the next step. Otherwise, follow the instructions to create the AAD App Registration for inbound connectivity.
     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-6.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-6.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
     1. Configure the ServiceNow External OpenID Connect Provider (OIDC Provider).
-    1. After completing the instructions in the prerequisites section, select the newly-created entity and click Done. Otherwise, follow the instructions to create the entity in ServiceNow and then select the new External OIDC Provider app registration.
+    1. After completing the instructions in the prerequisites section, select the newly created entity and click Done. Otherwise, follow the instructions to create the entity in ServiceNow and then select the new External OIDC Provider app registration.
     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-7.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-7.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
     1. Configure the AAD App Registration for Inbound Integration User.
     1. After completing the instructions in the prerequisites section, click Done to go to the next step. Otherwise, follow the instructions to create the AAD App Registration for inbound REST user (integration user).
     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-8.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-8.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
     1. Configure the Integration User.
-    1. After completing the instructions in the prerequisites section, select the newly-created entity and click Next. Otherwise follow the instructions to create the integration user in ServiceNow then select the entity.
+    1. After completing the instructions in the prerequisites section, select the newly created entity and click Next. Otherwise follow the instructions to create the integration user in ServiceNow then select the entity.
     :::image type="content" source="../../media/ServiceNow-guide/snowaadoauth-9.png" lightbox="../../media/ServiceNow-guide/snowaadoauth-9.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 1. \[Microsoft 365 Tenant Admin\] Complete the integration.
@@ -205,7 +205,7 @@ These steps are required to set up the integration between your ServiceNow insta
 
     1. Configure the support integration settings:
 
-    Select the **Basic information** tab > **Internal support tool** > **ServiceNow**, and enter the **Outbound App ID** value in the **Application ID to issue OAuth token** field. This Outbound App ID is on Step 6 – Complete the Integration, which was created in [Prerequisite (AAD OAuth Token) step \#1](#prerequisites-aad-oauth-token).
+    Select the **Basic information** tab > **Internal support tool** > **ServiceNow**, and enter the **Outbound App ID** value in the **Application ID to issue Auth Token** field. This Outbound App ID is on Step 6 – Complete the Integration, which was created in [Prerequisite (Azure AD Auth Token) step \#1](#prerequisites-aad-oauth-token).
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
@@ -219,11 +219,11 @@ These steps are required to set up the integration between your ServiceNow insta
 
     - Client ID: The **Client ID** value from Step 6 – Complete the Integration.
 
-    - Client secret: The secret of the inbound OAuth provider that was created in Prerequisites (AAD OAuth Token) step \#2.
+    - Client secret: The secret of the inbound OAuth provider that was created in Prerequisites (Azure AD Auth Token) step \#2.
 
-    - Rest username: The **User Name** value from Step 6 – Complete the Integration, which is the **Client ID** of the application created in Prerequisites (AAD OAuth Token) step \#3.
+    - Rest username: The **User Name** value from Step 6 – Complete the Integration, which is the **Client ID** of the application created in Prerequisites (Azure AD Auth Token) step \#3.
 
-    - Rest user password: The App Secret of the application that was created in Prerequisites (AAD OAuth Token) step \#3.
+    - Rest user password: The App Secret of the application that was created in Prerequisites (Azure AD Auth Token) step \#3.
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image31.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image31.png" alt-text="Graphical user interface, application Description automatically generated":::
 
