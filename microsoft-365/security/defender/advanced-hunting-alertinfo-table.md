@@ -30,20 +30,20 @@ ms.technology: m365d
 
 
 
-The `AlertInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about alerts from Microsoft  Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, and Microsoft Defender for Identity. Use this reference to construct queries that return information from this table.
+The `AlertInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about alerts from Microsoft  Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity. Use this reference to construct queries that return information from this table.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | Date and time when the event was recorded |
-| `AlertId` | string | Unique identifier for the alert |
-| `Title` | string | Title of the alert |
-| `Category` | string | Type of threat indicator or breach activity identified by the alert |
-| `Severity` | string | Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert |
-| `ServiceSource` | string | Product or service that provided the alert information |
-| `DetectionSource` | string | Detection technology or sensor that identified the notable component or activity |
-| `AttackTechniques` | string | MITRE ATT&CK techniques associated with the activity that triggered the alert |
+| `Timestamp` | `datetime` | Date and time when the event was recorded |
+| `AlertId` | `string` | Unique identifier for the alert |
+| `Title` | `string` | Title of the alert |
+| `Category` | `string` | Type of threat indicator or breach activity identified by the alert |
+| `Severity` | `string` | Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert |
+| `ServiceSource` | `string` | Product or service that provided the alert information |
+| `DetectionSource` | `string` | Detection technology or sensor that identified the notable component or activity |
+| `AttackTechniques` | `string` | MITRE ATT&CK techniques associated with the activity that triggered the alert |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

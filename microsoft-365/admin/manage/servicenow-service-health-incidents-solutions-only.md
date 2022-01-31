@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 support integration for service health incidents and recommended solutions ONLY"
+title: "Microsoft 365 support integration for service health incidents and recommended solutions only"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,7 +19,7 @@ search.appverid:
 description: "Scoped Certified application installation and configuration guide for ServiceNow."
 ---
 
-# Microsoft 365 support integration for service health incidents and recommended solutions ONLY
+# Microsoft 365 support integration for service health incidents and recommended solutions only
 
 This configuration doesn't allow you to create a case with Microsoft support through your ServiceNow instance. This option provides you only with the Service Health Incident information and Recommend Solutions available through your ServiceNow instance.
 
@@ -132,7 +132,7 @@ These steps are required to set up the integration between your ServiceNow insta
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
-1. On the **Repositories** tab, select **Add a repository** to create a new repository with the following settings:
+1. On the **Repositories** tab, select **New repository** and update it with the following settings:
 
     - Repository: The **Repository ID** value from Step 6 – Complete the Integration.
 

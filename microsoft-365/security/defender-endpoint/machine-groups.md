@@ -21,9 +21,9 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-
 - Azure Active Directory
 - Office 365
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -60,7 +60,7 @@ As part of the process of creating a device group, you'll:
 3. Enter the group name and automation settings and specify the matching rule that determines which devices belong to the group. See [How the automated investigation starts](automated-investigations.md#how-the-automated-investigation-starts).
 
     > [!TIP]
-    > If you want to group devices by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Create and manage device tags](machine-tags.md).
+    > If you want to use tagging for grouping devices, see [Create and manage device tags](machine-tags.md).
 
 4. Preview several devices that will be matched by this rule. If you're satisfied with the rule, click the **User access** tab.
 

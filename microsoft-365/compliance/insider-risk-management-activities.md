@@ -12,6 +12,7 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Investigate insider risk management activities
@@ -148,7 +149,7 @@ Use the Activity scope and Risk insight filters to display and sort activities a
 
 To use the **Activity explorer**, complete the following steps:
 
-1. In the Microsoft 365 compliance center, go to **Insider risk management** and select the **Alerts** tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
 2. On the **Alerts dashboard**, select the alert you want to triage.
 3. On the **Alerts detail pane**, select **Open expanded view**.
 4. On the page for the selected alert, select the **Activity explorer** tab.

@@ -24,6 +24,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -71,7 +72,7 @@ For a brand new device running Windows 10 Pro Creators Update, or for a device t
 
  **Connect users to Azure AD:**
   
-1. In your user's Windows PC, that is running Windows 10 Pro, version 1703 (Creators Update) (see [pre-requisites](../security-and-compliance/pre-requisites-for-data-protection.md)), click the Windows logo, and then the Settings icon.
+1. In your user's Windows PC, that is running Windows 10 Pro, version 1703 (Creators Update) (see [pre-requisites](../security-and-compliance/pre-requisites-for-data-protection.md), click the Windows logo, and then the Settings icon.
   
    ![In the Start menu, click Windows Settings icon.](../../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
   
@@ -95,7 +96,7 @@ For a brand new device running Windows 10 Pro Creators Update, or for a device t
   
 6. On the **Make sure this is your organization** page, verify that the information is correct, and choose **Join**.
   
-   On the **You're all set!** page, chosse **Done**.
+   On the **You're all set!** page, choose **Done**.
   
    ![On the Make sure this is your organization screen, choose Join.](../../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   

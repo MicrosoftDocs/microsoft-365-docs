@@ -1,5 +1,5 @@
 ---
-title: "Configure support integration with ServiceNow Basic Authentication"
+title: "Configure support integration with ServiceNow - Basic Authentication"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -19,7 +19,7 @@ search.appverid:
 description: "Scoped Certified application installation and configuration guide for ServiceNow."
 ---
 
-# Configure support integration with ServiceNow Basic Authentication
+# Configure support integration with ServiceNow - Basic Authentication
 
 ## Prerequisites (Basic Authentication)
 
@@ -177,7 +177,7 @@ These steps are required to set up the integration between your ServiceNow insta
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
-1. On the **Repositories** tab, select **Add a repository** to create a new repository with these settings:
+1. On the **Repositories** tab, select **New repository** and update it with the following settings:
 
     - Repository: The **Repository ID** value from Step 6 – Complete the Integration.
 

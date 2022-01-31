@@ -2,7 +2,6 @@
 title: Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution
 description: Troubleshoot common errors when migrating to Microsoft Defender Antivirus
 keywords: event, error code, logging, troubleshooting, microsoft defender antivirus, windows defender antivirus, migration
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,7 +10,7 @@ ms.topic: article
 author: martyav
 ms.author: v-maave
 ms.custom: nextgen
-ms.date: 09/11/2018
+ms.date: 10/19/2018
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
@@ -23,21 +22,21 @@ ms.collection: M365-security-compliance
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
 You can find help here if you encounter issues while migrating from a third-party security solution to Microsoft Defender Antivirus.
 
 ## Review event logs
 
-Open the Event viewer app by selecting the **Search** icon in the taskbar, and searching for *event viewer*.
+1. Open the Event viewer app by selecting the **Search** icon in the taskbar, and searching for *event viewer*.
 
-Information about Microsoft Defender Antivirus can be found under  **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **Windows Defender**.
+    Information about Microsoft Defender Antivirus can be found under  **Applications and Services Logs** \> **Microsoft** \> **Windows** \> **Windows Defender**.
 
-From there, select **Open** underneath **Operational**.
+1. From there, select **Open** underneath **Operational**.
 
-Selecting an event from the details pane will show you more information about an event in the lower pane, under the **General** and **Details** tabs.
+    Selecting an event from the details pane will show you more information about an event in the lower pane, under the **General** and **Details** tabs.
 
 ## Microsoft Defender Antivirus won't start
 
@@ -53,10 +52,10 @@ Event ID|Log name|Description|Source
 
 ### How to tell if Microsoft Defender Antivirus won't start because a third-party antivirus is installed
 
-On a Windows 10 device, if you are not using Microsoft Defender for Endpoint, and you have a third-party antivirus installed, then Microsoft Defender Antivirus will be automatically turned off. If you are using Microsoft Defender for Endpoint with a third-party antivirus installed, Microsoft Defender Antivirus will start in passive mode, with reduced functionality.
+On a Windows 10 or Windows 11 device, if you are not using Microsoft Defender for Endpoint, and you have a third-party antivirus installed, then Microsoft Defender Antivirus will be automatically turned off. If you are using Microsoft Defender for Endpoint with a third-party antivirus installed, Microsoft Defender Antivirus will start in passive mode, with reduced functionality.
 
 > [!TIP]
-> The scenario just described applies only to Windows 10. Other versions of Windows have [different responses](microsoft-defender-antivirus-compatibility.md) to Microsoft Defender Antivirus being run alongside third-party security software.
+> The scenario just described applies only to Windows 10 and Windows 11. Other versions of Windows have [different responses](microsoft-defender-antivirus-compatibility.md) to Microsoft Defender Antivirus being run alongside third-party security software.
 
 #### Use Services app to check if Microsoft Defender Antivirus is turned off
 
@@ -72,7 +71,7 @@ This indicates that Microsoft Defender Antivirus has been automatically turned o
 
 You can generate a detailed report about currently active group policies by opening a command prompt in **Run as admin** mode, then entering the following command:
 
-```powershell
+```console
 GPresult.exe /h gpresult.html
 ```
 

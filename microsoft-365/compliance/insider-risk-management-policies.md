@@ -12,6 +12,7 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 ---
 
 # Insider risk management policies
@@ -33,11 +34,11 @@ The **Policy dashboard** allows you to quickly see the policies in your organiza
 
 ![Insider risk management policy dashboard.](../media/insider-risk-policy-dashboard.png)
 
-## Policy recommendations from analytics (preview)
+## Policy recommendations from analytics
 
 Insider risk analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you may consider configuring.
 
-To learn more about insider risk analytics and policy recommendations, see [Insider risk management settings: Analytics (preview)](insider-risk-management-settings.md#analytics).
+To learn more about insider risk analytics and policy recommendations, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics).
 
 ## Policy templates
 
@@ -98,7 +99,7 @@ You'll need to have Microsoft Defender for Endpoint configured in your organizat
 
 Protecting healthcare record data and preventing the misuse of patient personal data is a significant concern for organizations in the healthcare industry. This misuse may include confidential data leaks to unauthorized persons, fraudulently modification of patient records, or the theft of patient healthcare records. Preventing this misuse of patient data, either by lack of awareness, negligence, or fraud by users is also key component in meeting the regulatory requirements of the Health Insurance Portability and Accountability Act (HIPAA) and the Health Information Technology for Economic and Clinical Health (HITECH) Act. Both of these acts establish the requirements for safeguarding patient protected health information (PHI).
 
-This policy template enables risk scoring for internal users that detects suspicious activities associated with records hosted on existing electronic medical record (EMR) systems. Detection focuses on unauthorized access, viewing, modification, and export of patient data. You'll need to configure a connector (the [Microsoft Healthcare connector](import-healthcare-data.md) or [Epic connector](import-epic-data.md)) to support detection of access, exfiltration, or obfuscation activities in your EMR system.
+This policy template enables risk scoring for internal users that detects suspicious activities associated with records hosted on existing electronic medical record (EMR) systems. Detection focuses on unauthorized access, viewing, modification, and export of patient data. You'll need to configure a connector (the [Microsoft Healthcare connector](import-healthcare-data.md) or [Epic connector](import-epic-data.md) to support detection of access, exfiltration, or obfuscation activities in your EMR system.
 
 When using this template, you must also configure a Microsoft 365 HR connector to periodically import organization profile data for users in your organization. See the Import data with the HR connector article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization.
 
@@ -234,7 +235,7 @@ Use the following table to learn more about recommendations and warning notifica
 | DLP policy used in this policy is turned off | - General Data leaks <br> - Data leaks by priority users | DLP policy used in this policy is turned off. <br><br> 1. Turn the DLP policy assigned to this policy on. <br><br> OR <br><br> 2. Edit this policy and either select a new DLP policy or 'User performs an exfiltration activity' as the triggering event in the policy configuration. |
 | DLP policy doesn't meet requirements | - General Data leaks <br> - Data leaks by priority users | DLP policies used as triggering events must be configured to generate high severity alerts. <br><br>  1. Edit your DLP policy to assign applicable alerts as *High severity*. <br><br> OR <br><br> 2. Edit this policy and select *User performs an exfiltration activity* as the triggering event. |
 | Your organization doesn't have a Microsoft Defender for Endpoint subscription | - General security policy violations <br> - Security policy violations by departing users <br> - Security policy violations by disgruntled users <br> - Security policy violations by priority users | An active Microsoft Defender for Endpoint subscription wasn't detected for your organization. <br><br> Until a Microsoft Defender for Endpoint subscription is added, these policies won't assign risk scores to user activity. |
-| Microsoft Defenders for Endpoint alerts aren't being shared with the compliance center | - General security policy violations <br> - Security policy violations by departing users <br> - Security policy violations by disgruntled users <br> - Security policy violations by priority users | Microsoft Defender for Endpoint alerts aren't being shared with the compliance center. <br><br> Configure sharing of Microsoft Defender for Endpoint alerts. |
+| Microsoft Defender for Endpoint alerts aren't being shared with the compliance center | - General security policy violations <br> - Security policy violations by departing users <br> - Security policy violations by disgruntled users <br> - Security policy violations by priority users | Microsoft Defender for Endpoint alerts aren't being shared with the compliance center. <br><br> Configure sharing of Microsoft Defender for Endpoint alerts. |
 | You are approaching the maximum limit of users being actively scored for this policy template. | All policy templates | Each policy template has a maximum number of in-scope users. See the template limit section details. <br><br> Review the users in the Users tab and remove any users who do not need to be scored anymore. |
 
 ## Policy template limits
@@ -299,7 +300,7 @@ Complete the following steps to create a new policy:
     >[!IMPORTANT]
     >If you're unable to select a listed indicator, it's because they aren't enabled for your organization. To make them available to select and assign to the policy, enable the indicators in **Insider risk management** > **Settings** > **Policy indicators**.
 
-    If you've selected other policy templates, custom triggering events aren't supported. The built-in policy triggering events apply and you'll continue past this step to Step XX without defining policy attributes.
+    If you've selected other policy templates, custom triggering events aren't supported. The built-in policy triggering events apply and you'll continue to Step 23 without defining policy attributes.
 
 14. Select **Next** to continue.
 15.	If you've selected the *General data leaks* or *Data leaks by priority users* templates and have selected the **User performs an exfiltration activity and associated indicators**, you can choose custom or default thresholds for the indicator triggering events that you've selected. Choose either the **Use default thresholds (Recommended)** or **Use custom thresholds for the triggering events**.
@@ -356,7 +357,7 @@ Complete the following steps to manage an existing policy:
     >[!IMPORTANT]
     >If you're unable to select a listed indicator, it's because they aren't enabled for your organization. To make them available to select and assign to the policy, enable the indicators in **Insider risk management** > **Settings** > **Policy indicators**.
 
-    If you've selected other policy templates, custom triggering events aren't supported. The built-in policy triggering events apply and you'll continue past this step to Step XX without defining policy attributes.
+    If you've selected other policy templates, custom triggering events aren't supported. The built-in policy triggering events apply and you'll continue to Step 23 without defining policy attributes.
 
 14. Select **Next** to continue.
 15.	If you've selected the *General data leaks* or *Data leaks by priority users* templates and have selected the **User performs an exfiltration activity and associated indicators**, you can choose custom or default thresholds for the indicator triggering events that you've selected. Choose either the **Use default thresholds (Recommended)** or **Use custom thresholds for the triggering events**.
@@ -382,7 +383,7 @@ You may need to create a new policy that is similar to an existing policy but ne
 
 Complete the following steps to copy an existing policy:
 
-1. In the Microsoft 365 compliance center, go to Insider risk management and select the Policies tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Policies** tab.
 2. On the policy dashboard, select the policy you want to copy.
 3. On the policy details page, select Copy.
 4. In the policy wizard, name the new policy and update the policy configuration as needed.

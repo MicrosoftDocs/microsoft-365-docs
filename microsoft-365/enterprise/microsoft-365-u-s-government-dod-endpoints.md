@@ -30,7 +30,7 @@ ms.custom: seo-marvel-mar2020
 
 Office 365 requires connectivity to the Internet. The endpoints below should be reachable for customers using Office 365 U.S. Government DoD plans only.
   
-**Office 365 endpoints:** [Worldwide (including GCC)](urls-and-ip-address-ranges.md) \| [Office 365 operated by 21 Vianet](urls-and-ip-address-ranges-21vianet.md) \| [Office 365 Germany](microsoft-365-germany-endpoints.md) \| *Office 365 U.S. Government DoD* \| [Office 365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)
+**Office 365 endpoints:** [Worldwide (including GCC)](urls-and-ip-address-ranges.md) \| [Office 365 operated by 21 Vianet](urls-and-ip-address-ranges-21vianet.md) \| *Office 365 U.S. Government DoD* \| [Office 365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)
 
 <br>
 
