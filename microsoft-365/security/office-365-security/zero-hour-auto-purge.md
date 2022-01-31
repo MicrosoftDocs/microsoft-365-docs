@@ -94,7 +94,7 @@ ZAP will not quarantine any message that's in the process of [Dynamic Delivery](
 
 ## How to see if ZAP moved your message
 
-To determine if ZAP moved your message, you can use the [Mailflow view for the Mailflow status report](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report)  or [Threat Explorer (and real-time detections)](threat-explorer.md). Note that as a system action, ZAP is not logged in the Exchange mailbox audit logs.
+To determine if ZAP moved your message, you can use the [Mailflow view for the Mailflow status report](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report) or [Threat Explorer (and real-time detections)](threat-explorer.md). Note that as a system action, ZAP is not logged in the Exchange mailbox audit logs.
 
 ## Zero-hour auto purge (ZAP) FAQ
 
