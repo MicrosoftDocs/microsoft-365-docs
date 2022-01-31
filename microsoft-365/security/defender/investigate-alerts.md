@@ -138,7 +138,7 @@ The **Manage alert** pane allows you to view or specify:
 
 - The alert status (New, Resolved, In progress).
 - The user account that has been assigned the alert.
-- The alert's classification.
+- The alert's classification:
 
    - **Not set** (the default).
 
@@ -146,7 +146,7 @@ The **Manage alert** pane allows you to view or specify:
 
    - **Informational, expected activity** with a type of activity. Use the options in this category to classify alerts for security tests, red team activity, and expected unusual behavior from trusted apps and users.
 
-   - **False positive** for a types of alerts that you determine can be ignored because they are technically inaccurate or misleading.
+   - **False positive** for types of alerts that you determine can be ignored because they are technically inaccurate or misleading.
 
 - A comment on the alert.
 
