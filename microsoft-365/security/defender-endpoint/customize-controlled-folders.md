@@ -9,12 +9,12 @@ ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
+ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.date: 10/19/2021
 ms.technology: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection: m365initiative-m365-defender
+ms.date: 10/19/2021
 ---
 
 # Customize controlled folder access

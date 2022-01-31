@@ -16,7 +16,8 @@ ms.collection: M365-security-compliance
 ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 10/14/2021
+ms.collection: m365initiative-m365-defender
+ms.date: 12/18/2022
 ---
 
 # Understand and use attack surface reduction capabilities

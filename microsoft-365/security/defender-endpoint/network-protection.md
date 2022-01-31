@@ -15,7 +15,8 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: overview
-ms.collection: M365-security-compliance
+ms.collection: m365initiative-m365-defender
+ms.date: 06/10/2021
 ---
 
 # Protect your network
