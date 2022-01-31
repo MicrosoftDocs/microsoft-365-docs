@@ -56,7 +56,7 @@ Defender for Endpoint on Android allows IT Administrators the ability to configu
 From version 1.0.3425.0303 of Microsoft Defender for Endpoint on Android, you'll be able to run vulnerability assessments of OS and apps installed on the onboarded mobile devices.
 
 > [!NOTE]
-> Vulnerability assessment is part of [Threat and Vulnerability management](next-gen-threat-and-vuln-mgt.md) in Microsoft Defender for Endpoint. On Android, this feature is currently in preview and may be substantially modified before it's commercially released.
+> Vulnerability assessment is part of [Threat and Vulnerability management](next-gen-threat-and-vuln-mgt.md) in Microsoft Defender for Endpoint. 
 
 **Notes about privacy related to apps from personal devices (BYOD):**
 
