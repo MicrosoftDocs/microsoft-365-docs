@@ -43,7 +43,7 @@ Here are the ways you can manage your incidents:
 - [Add incident tags](#add-incident-tags)
 - [Assign the incident to a user account](#assign-an-incident)
 - [Resolve them](#resolve-an-incident)
-- [Set its classification and determination](#set-the-classification-and-determination)
+- [Specify its classification](#specify-the-classification)
 - [Add comments](#add-comments)
 
 You can manage incidents from the **Manage incident** pane for an incident. Here's an example.
