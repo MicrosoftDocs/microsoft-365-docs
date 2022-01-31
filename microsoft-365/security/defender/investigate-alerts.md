@@ -81,13 +81,6 @@ You’ll need to have any of the following roles to access Microsoft Defender fo
 
 To see the main alert page, select the name of the alert. Here's an example.
 
-<!--
-Update SS
-
-You can also select the **Open the main alert page** action from the **Manage alert** pane.
-
---> 
-
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Example of the details page of an alert in the Microsoft 365 Defender portal.":::
 
 An alert page is composed of these sections: 
@@ -135,17 +128,9 @@ Once you've selected an entity of interest, the details page changes to display 
 
 To manage an alert, you use the summary details section of an alert page and select **Manage alert** or **Classify alert** from the **INSIGHT** box.
 
-<!--
-Update SS
---> 
-
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Example of the summary section an alert in the Microsoft 365 Defender portal.":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" alt-text="Manage an alert in the Microsoft 365 Defender portal.":::
 
 Here is an example of the **Manage alert** pane.
-
-<!--
-New SS
---> 
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Example of the summary section an alert in the Microsoft 365 Defender portal.":::
 
@@ -171,14 +156,10 @@ The **Manage alert** pane allows you to view or specify:
 
 From the ellipsis (...), you can also perform these additional actions: 
 
+- Create a suppression
 - Consult a Microsoft threat expert
-- Link to another incident
-
-Here's an example.
-
-<!--
-Update SS
---> 
+- Link the alert to another incident
+- Submit the alert to Microsoft for review
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Example of the actions on an alert in the Microsoft 365 Defender portal":::
 
