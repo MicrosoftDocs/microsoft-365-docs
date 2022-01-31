@@ -138,8 +138,7 @@ To find the full path of Mac apps:
 
 2. Choose **Open Files and Ports** tab.
   
-3. The app name is located at the end of the full path.
-
+3. For macOS apps, you need the full path name, including the name of the app.
 
 #### Protect sensitive data from cloud synchronization apps
 
@@ -172,7 +171,7 @@ For macOS devices, you must add the full file path. To find the full path of Mac
 
 2. Choose **Open Files and Ports** tab.
   
-3. The app name is located at the end of the full path.
+3. For macOS apps, you need the full path name, including the name of the app.
 
 #### Service domains
 
