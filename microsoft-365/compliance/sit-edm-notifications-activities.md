@@ -30,7 +30,7 @@ When you [create custom sensitive information types with exact data match (EDM)]
 - UploadDataCompleted
 
 > [!NOTE]
- The ability to create notifications for EDM activities is only available for the World Wide and GCC clouds only.
+ The ability to create notifications for EDM activities is available for the World Wide and GCC clouds only.
 
 ## Pre-requisites
 

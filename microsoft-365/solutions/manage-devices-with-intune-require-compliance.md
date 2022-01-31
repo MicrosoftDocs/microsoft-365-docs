@@ -15,7 +15,7 @@ ms.localizationpriority: high
 ms.collection:
 - Conditional access policy
 - Microsoft Intune
-- Intune device management 
+- M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
 ms.custom: 
