@@ -14,7 +14,7 @@ ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.collection: m365solution-scenario
-ms.date: 06/10/2021
+ms.date:
 ---
 
 # Evaluate network protection
