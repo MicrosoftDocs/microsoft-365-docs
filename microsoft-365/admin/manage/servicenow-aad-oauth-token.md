@@ -119,7 +119,7 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
 1. \[ServiceNow Admin\] Create Integration Users.
 
-    You must specify an integration user. If you don’t have an existing integration user or if you want to create one specifically for this integration, go to **Organization &gt; Users** to create a new user. The value of the **User ID** is the application Client ID created in [Prerequisites (Azure AD Auth Token) step \#3](#prerequisites-aad-oauth-token).
+    You must specify an integration user. If you don’t have an existing integration user or if you want to create one specifically for this integration, go to **Organization &gt; Users** to create a new user. The value of the **User ID** is the application Client ID created in [Prerequisites (Azure AD Auth Token)](#prerequisites-azure-ad-auth-token).
 
     If you are creating a new integration user, check the **Web service access only** option. You must also grant this user with the **incident\_manager** role.
 
@@ -205,7 +205,7 @@ These steps are required to set up the integration between your ServiceNow insta
 
     1. Configure the support integration settings:
 
-    Select the **Basic information** tab > **Internal support tool** > **ServiceNow**, and enter the **Outbound App ID** value in the **Application ID to issue Auth Token** field. This Outbound App ID is on Step 6 – Complete the Integration, which was created in [Prerequisite (Azure AD Auth Token) step \#1](#prerequisites-aad-oauth-token).
+    Select the **Basic information** tab > **Internal support tool** > **ServiceNow**, and enter the **Outbound App ID** value in the **Application ID to issue Auth Token** field. This Outbound App ID is on Step 6 – Complete the Integration, which was created in [Prerequisites (Azure AD Auth Token)](#prerequisites-azure-ad-auth-token).
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image18.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image18.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
