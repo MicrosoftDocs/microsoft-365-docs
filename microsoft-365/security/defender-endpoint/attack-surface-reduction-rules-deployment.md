@@ -17,7 +17,7 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: m365solution-scenario
-ms.date: 12/18/2022
+ms.date: 1/18/2022
 ---
 
 # ASR rules deployment overview

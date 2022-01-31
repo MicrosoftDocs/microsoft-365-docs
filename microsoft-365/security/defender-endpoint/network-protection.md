@@ -16,7 +16,7 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: overview
 ms.collection: m365initiative-m365-defender
-ms.date: 06/10/2021
+ms.date:
 ---
 
 # Protect your network

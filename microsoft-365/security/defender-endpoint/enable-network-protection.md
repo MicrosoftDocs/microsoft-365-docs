@@ -14,7 +14,7 @@ ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.collection: m365initiative-m365-defender
-ms.date: 06/10/2021
+ms.date:
 ---
 
 # Turn on network protection

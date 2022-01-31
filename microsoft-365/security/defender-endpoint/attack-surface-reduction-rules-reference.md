@@ -16,7 +16,7 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.date: 12/18/2022
+ms.date: 1/18/2022
 ---
 
 

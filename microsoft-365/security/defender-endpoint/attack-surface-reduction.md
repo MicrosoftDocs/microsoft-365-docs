@@ -18,7 +18,7 @@ ms.custom:
 ms.technology: mde
 ms.topic: article
 ms.collection: m365initiative-m365-defender
-ms.date: 12/18/2022
+ms.date: 1/18/2022
 ---
 
 # Use attack surface reduction rules to prevent malware infection

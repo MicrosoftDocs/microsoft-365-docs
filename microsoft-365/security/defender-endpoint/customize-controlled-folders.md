@@ -14,7 +14,7 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: m365initiative-m365-defender
-ms.date: 10/19/2021
+ms.date:
 ---
 
 # Customize controlled folder access
