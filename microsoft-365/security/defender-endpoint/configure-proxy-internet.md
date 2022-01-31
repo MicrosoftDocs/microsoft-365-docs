@@ -228,7 +228,7 @@ The wildcards (\*) used in \*.ods.opinsights.azure.com, \*.oms.opinsights.azure.
 The \*.blob.core.windows.net URL endpoint can be replaced with the URLs shown in the "Firewall Rule: \*.blob.core.windows.net" section of the test results.
 
 > [!NOTE]
-> In the case of onboarding via Microsoft Defender for Cloud, multiple workspaces will be used. You will need to perform the TestCloudConnection.exe procedure on the onboarded machine from each workspace (to determine, if there are any changes to the *.blob.core.windows.net URLs between the workspaces).
+> In the case of onboarding via Microsoft Defender for Cloud, multiple workspaces can be used. You will need to perform the TestCloudConnection.exe procedure on the onboarded machine from each workspace (to determine, if there are any changes to the *.blob.core.windows.net URLs between the workspaces).
 
 ## Verify client connectivity to Microsoft Defender for Endpoint service URLs
 
