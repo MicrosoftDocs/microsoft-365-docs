@@ -95,17 +95,17 @@ You can start your trial directly from Compliance Manager and set up recommended
 
 1. On the Compliance Manager **Overview** page, select **Start trial**. You'll enter a trial activation wizard which will ask questions to help us recommend assessments for your organization.
 
-2. On the **Activate trial** page, select **Next** to begin your free 90 day premium assessments trial. and proceed to identify your organization.
+2. On the **Activate trial** page, select **Next** to begin your free 90 day premium assessments trial and continue with creating assessments.
 
 3. Select one or more industries that identify your organization, then select **Next**.
 
 4. Select one or more regions for your organization's location, then select **Next**.
 
-5. On the **Choose assessments** screen, select the dropdown arrow next to Recommended templates to see the list of assessments we thing apply to your organization. Check the boxes next to the templates listed on this screen for which you want to create assessments. Then select Next.
+5. On the **Choose assessments** screen, select the dropdown arrow next to **Recommended templates** to see the list of assessments we think apply to your organization. Check the boxes next to the templates you want to use for creating assessments, then select **Next**.
 
 6. Review your final selections and select **Add recommended assessments** to create your new assessments.
 
-To learn more about getting started with assessments, visit the [Assessments page](#assessments-page) section below.
+Learn more about getting started with assessments by visiting the [Assessments page](#assessments-page) section below.
 
 ## Settings for automated testing and user history
 

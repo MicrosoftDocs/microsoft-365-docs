@@ -98,10 +98,10 @@ Either path places you into same creation wizard. The steps below explain how to
 
 #### Create assessments based on recommendations for your org type
 
-If you'd like to create one or more assessments at a time based on our recommendations, select **Add recommended assessments** from your **Assessments** page and follow these steps:
+Compliance Manager can indicate which assessments may be most relevant to your organization out of our library of over 300 templates. By providing some basic information about your organization's industry and locations, we can display suggested assessments and enable quick setup of assessments all at once. If you'd like to create one or more assessments at a time based on our recommendations, select **Add recommended assessments** from your **Assessments** page and follow these steps:
    - Select one or more industries that identify your organization, then select **Next**
    - Select one or more regions for your organization's location, then select **Next**
-   - On the **Choose assessment** screen, select the dropdown arrow next to **Recommended templates** to see the list of assessments we thing apply to your organization. Check the boxes next to the templates listed on this screen for which you want to create assessments. Then select **Next**.
+   - On the **Choose assessment** screen, select the dropdown arrow next to **Recommended templates** to see the list of assessments we think apply to your organization. Check the boxes next to the templates you want to use for creating assessments, then select **Next**.
    - Review your final selections and select **Add recommended assessments** to create your new assessments.
 
 #### Create an assessment using a guided process
