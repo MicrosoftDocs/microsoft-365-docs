@@ -10,13 +10,13 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 audience: ITPro
-ms.date: 06/10/2021
-ms.reviewer: v-maave
+ms.reviewer: oogunrinde, sugamar 
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection: m365initiative-m365-defender
+ms.date: 
 ---
 
 # Protect important folders with controlled folder access
