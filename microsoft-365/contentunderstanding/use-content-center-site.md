@@ -53,34 +53,34 @@ The Content Center site includes pre-populated pages that walk you through the s
 
 ### Get started with SharePoint Syntex
 
-Watch an overview video
+Get an introduction to SharePoint Syntex and learn how you can use it for your organization. Watch a video that gives you an overview of SharePoint Syntex, and find training to help you get started.
 
 ### Learn about model types
 
-
+Learn about three types of models, and see how you can use them to resolve business issues for search, business processes, compliance, and others.
 
 ### SharePoint Syntex in 6 simple steps
 
-
+Begin with a content center, and then learn step-by-step how to create models to identify, classify, and extract the information you need.
 
 ### Streamline everyday processes and tasks
 
-
+Learn how to use SharePoint Syntex to take what is manual and turn it into something automated and streamlined for your organization.
 
 ### Manage compliance
 
+Learn how to implement steps to reduce risks and ensure the data and information your business captures is used in a secure and thoughtful way.
 
+### Take an interactive tour to create a model
 
-### Take a tour of how to create a document understanding model
-
-
+See how to build a document understanding model in the models library, and then enable a pretrained sample model.
 
 ### View model activity
 
-Example content for model activity is provided to illustrate how the data is visualized. 
+Use example content for model activity to illustrate how the data is visualized. 
 
 ### Additional resources
 
-Additional resources are provided to help you learn more about SharePoint Syntex.
+Find additional resources and scenarios to help you learn more about SharePoint Syntex.
 
 
