@@ -58,7 +58,7 @@
     - name: Prebuilt models
       items:
             - name: Invoice and receipt prebuilt models 
-              href: /microsoft-365/contentunderstanding/prebuilt-models?branch=prebuilt-models-working
+              href: prebuilt-models.md
             - name: Apply a retention label 
               href: apply-a-retention-label-to-a-model.md
 
