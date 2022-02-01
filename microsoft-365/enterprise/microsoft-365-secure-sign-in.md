@@ -53,9 +53,9 @@ There are three ways to require your users to use MFA based on your Microsoft 36
 
 | Plan | Recommendation |
 |---------|---------|
-|All Microsoft 365 plans (without Azure AD Premium P1 or P2 licenses)     |[Enable Security defaults in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Azure AD include MFA for users and administrators.   |
-|Microsoft 365 E3 (includes Azure AD Premium P1 licenses)     | Use [Common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br>- [Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (includes Azure AD Premium P2 licenses)     | Taking advantage of Azure AD Identity Protection, begin to implement Microsoft's [recommended set of conditional access and related policies](../security/office-365-security/identity-access-policies.md) by creating these two policies:<br> - [Require MFA when sign-in risk is medium or high](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [High risk users must change password](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
+|All Microsoft 365 plans (without Azure AD Premium P1 or P2 licenses)     |[Enable security defaults in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Azure AD include MFA for users and administrators.   |
+|Microsoft 365 E3 (includes Azure AD Premium P1 licenses)     | Use the [common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br>- [Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Microsoft 365 E5 (includes Azure AD Premium P2 licenses)     | Taking advantage of Azure AD Identity Protection, begin to implement Microsoft's recommended set of Conditional Access and related policies by creating these two policies:<br> - [Require MFA when sign-in risk is medium or high](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk) <br>- [High risk users must change password](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user)       |
 | | |
 
 ### Security defaults
@@ -130,9 +130,9 @@ With Azure AD Identity Protection, you can:
 | Investigate suspicious incidents and resolve them with administrative actions | You can investigate risk events using information about the security incident. Basic workflows are available to track investigations and initiate remediation actions, such as password resets. |
 |||
 
-See [more information about Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection).
+See [more information about Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
-See the [steps to enable Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection-enable).
+See the [steps to enable Azure AD Identity Protection](/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies).
 
 ## Admin technical resources for MFA and secure sign-ins
 

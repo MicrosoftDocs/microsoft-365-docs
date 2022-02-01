@@ -36,15 +36,15 @@ Security breaches of a Microsoft 365 subscription, including information harvest
     
 Microsoft provides capabilities to help protect your organization, but they are effective only if you use them. If you do not use them, you may be vulnerable to attack. To protect your privileged accounts, Microsoft is here to help you with detailed instructions to:
   
-1. Create dedicated Microsoft 365 privileged accounts and use them only when necessary.
+1. Create dedicated, privileged, cloud-based accounts and use them only when necessary.
     
 2. Configure multi-factor authentication (MFA) for your dedicated Microsoft 365 privileged accounts and use the strongest form of secondary authentication.
 
 3. Protect privileged accounts with Zero Trust identity and device access recommendations.
  
-## 1. Create dedicated Microsoft 365 privileged user accounts and use them only when necessary
+## 1. Create dedicated, privileged, cloud-based user accounts and use them only when necessary
 
-Instead of using everyday user accounts that have been assigned administrator roles, create dedicated user accounts that have the admin roles. 
+Instead of using everyday user accounts that have been assigned administrator roles, create dedicated user accounts that have the admin roles in Azure AD. 
 
 From this moment onward, you sign in with the dedicated privileged accounts only for tasks that require administrator privileges. All other Microsoft 365 administration must be done by assigning other administration roles to user accounts.
   

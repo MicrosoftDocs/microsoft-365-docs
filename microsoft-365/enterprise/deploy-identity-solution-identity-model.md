@@ -1,5 +1,5 @@
 ---
-title: "Step 1. Determine your Microsoft 365 identity model"
+title: "Step 1. Determine your cloud identity model"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -22,10 +22,10 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
-description: Step 1. Determine your identity model
+description: Step 1. Determine your Microsoft cloud identity model
 ---
 
-# Step 1. Determine your Microsoft 365 identity model
+# Step 1. Determine your cloud identity model
 
 Microsoft 365 uses Azure Active Directory (Azure AD), a cloud-based user identity and authentication service that is included with your Microsoft 365 subscription, to manage identities and authentication for Microsoft 365. Getting your identity infrastructure configured correctly is vital to managing Microsoft 365 user access and permissions for your organization.
 
@@ -35,9 +35,9 @@ Before you begin, watch this video for an overview of identity models and authen
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
-Your first planning choice is the Microsoft 365 identity model.
+Your first planning choice is your cloud identity model.
 
-## Microsoft 365 identity models
+## Microsoft cloud identity models
 
 To plan for user accounts, you first need to understand the two identity models in Microsoft 365. You can maintain your organization's identities only in the cloud, or you can maintain your on-premises Active Directory Domain Services (AD DS) identities and use them for authentication when users access Microsoft 365 cloud services.
 
@@ -144,9 +144,7 @@ Federated authentication can support additional authentication requirements, suc
  
 See [choosing the right authentication method](/azure/active-directory/hybrid/choose-ad-authn) to learn more.
   
-##### Third-party authentication and identity providers
-
-On-premises directory objects may be synchronized to Microsoft 365 and cloud resource access is primarily managed by a third-party identity provider (IdP). If your organization uses a third-party federation solution, you can configure sign-on with that solution for Microsoft 365 provided that the third-party federation solution is compatible with Azure AD.
+For third-party authentication and identity providers, on-premises directory objects may be synchronized to Microsoft 365 and cloud resource access that are primarily managed by a third-party identity provider (IdP). If your organization uses a third-party federation solution, you can configure sign-on with that solution for Microsoft 365 provided that the third-party federation solution is compatible with Azure AD.
   
 See the [Azure AD federation compatibility list](/azure/active-directory/connect/active-directory-aadconnect-federation-compatibility) to learn more.
   
