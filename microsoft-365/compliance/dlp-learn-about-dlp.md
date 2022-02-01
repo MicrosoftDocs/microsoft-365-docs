@@ -31,6 +31,43 @@ In Microsoft 365, you implement data loss prevention by defining and applying DL
 
 Microsoft 365 detects sensitive items by using deep content analysis, not by just a simple text scan. Content is analyzed for primary data matches to keywords, by the evaluation of regular expressions, by internal function validation, and by secondary data matches that are in proximity to the primary data match. Beyond that DLP also uses machine learning algorithms and other methods to detect content that matches your DLP policies.
 
+## Permissions
+
+Members of your compliance team who will create DLP policies need permissions to the Compliance Center. By default, your tenant admin will have access can give compliance officers and other people access. Follow these steps:
+  
+1. Create a group in Microsoft 365 and add compliance officers to it.
+    
+2. Create a role group on the **Permissions** page of the Security &amp; Compliance Center. 
+
+3. While creating the role group, use the **Choose Roles** section to add the following role to the role group: **DLP Compliance Management**.
+    
+4. Use the **Choose Members** section to add the Microsoft 365 group you created before to the role group.
+
+Use the **View-Only DLP Compliance Management** role to create role group with view-only privileges to the DLP policies and DLP reports.
+
+For more information, see [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+  
+These permissions are required to create and apply a DLP policy not to enforce policies.
+
+### Roles and Role Groups in preview
+
+There are roles and role groups in preview that you can test out to fine tune your access controls.
+
+Here's a list of Microsoft Information Protection (MIP) roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Information Protection Admin
+- Information Protection Analyst
+- Information Protection Investigator
+- Information Protection Reader
+
+Here's a list of MIP role groups that are in preview. To learn more, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Information Protection
+- Information Protection Admins
+- Information Protection Analysts
+- Information Protection Investigators
+- Information Protection Readers
+
 ## DLP is part of the larger Microsoft 365 Compliance offering
 
 Microsoft 365 DLP is just one of the Microsoft 365 Compliance tools that you will use to help protect your sensitive items wherever they live or travel. You should understand the other tools in the Microsoft 365 Compliance tools set, how they interrelate, and work better together.  See, [Microsoft 365 compliance tools](protect-information.md) to learn more about the information protection process.
