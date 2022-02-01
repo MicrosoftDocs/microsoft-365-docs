@@ -91,7 +91,7 @@ The table below shows the functions allowed by each role in Compliance Manager. 
 The Compliance Manager premium assessments trial is a great way to quickly set up assessments that are most relevant to your organization. Our library of over 300 templates correspond to governmental regulations and industry standards around the world.
 Learn more about the [premium assessments trial](compliance-easy-trials-compliance-manager-assessments.md).
 
-You can start your trial directly from Compliance Manager and set up recommended templates by following these steps:
+You can start your trial directly from Compliance Manager and set up recommended assessments by following these steps:
 
 1. On the Compliance Manager **Overview** page, select **Start trial**. You'll enter a trial activation wizard which will ask questions to help us recommend assessments for your organization.
 

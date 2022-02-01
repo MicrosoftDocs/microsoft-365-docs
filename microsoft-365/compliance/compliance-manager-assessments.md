@@ -78,10 +78,6 @@ Each template, whether included or premium, exists in two versions: one for use 
 
 To learn more about templates, see [Working with assessment templates](compliance-manager-templates.md).
 
-## Set up premium assessments trial
-
-To help you determine which assessment templates are the most useful for your organization, you can select **Add recommended assessments**. This opens a wizard that allows you to search Compliance Manager's available templates based on your organization's industry and location, resulting in a custom list of templates pertinent to you. You can also start a free trial to try out premium templates in the list before you buy. To learn more, see [Set up premium assessments trial](compliance-manager-setup.md#start-a-premium-assessments-trial).
-
 ## Create assessments
 
 > [!NOTE]
@@ -89,7 +85,7 @@ To help you determine which assessment templates are the most useful for your or
 
 Before you begin, be sure you know which group you'll assign it to, or be prepared to create a new group for this assessment. Read details about [groups and assessments](#understand-groups-before-creating-assessments).
 
-To create an assessment, you'll use a wizard to select the template it should use and set the assessment’s properties. You can enter the wizard from two different pathways:
+To create an assessment, you'll use a wizard to select a template and designate a name and product. You can enter the wizard from two different pathways:
 
 - From your **Assessments** page, where you'll select the template and have the option to see which assessments we recommend for your organization; or
 - From a template's details page, select the **Create assessment** button in the top right of your screen. From here you'll enter the assessment creation wizard at step 4 of the [guided process below](#create-an-assessment-using-a-guided-process).
@@ -98,7 +94,7 @@ Either path places you into same creation wizard. The steps below explain how to
 
 #### Create assessments based on recommendations for your org type
 
-Compliance Manager can indicate which assessments may be most relevant to your organization out of our library of over 300 templates. By providing some basic information about your organization's industry and locations, we can display suggested assessments and enable quick setup of assessments all at once. If you'd like to create one or more assessments at a time based on our recommendations, select **Add recommended assessments** from your **Assessments** page and follow these steps:
+Compliance Manager can indicate which assessments may be most relevant to your organization. When you provide basic information about your organization's industry and locations, we can recommend which templates to use from our library of over 300 templates. Simply choose among the recommended templates for quick setup of multiple assessments all at once. To create one or more assessments based on our recommendations, select **Add recommended assessments** from your **Assessments** page and follow these steps:
    - Select one or more industries that identify your organization, then select **Next**
    - Select one or more regions for your organization's location, then select **Next**
    - On the **Choose assessment** screen, select the dropdown arrow next to **Recommended templates** to see the list of assessments we think apply to your organization. Check the boxes next to the templates you want to use for creating assessments, then select **Next**.
