@@ -26,7 +26,7 @@ ms.date: 10/21/2020
 
 If you purchased Microsoft 365 for business from a [Microsoft Open License Program](https://go.microsoft.com/fwlink/p/?LinkID=613298), this article is for you. Volume licensing customers who purchased a product key can follow this topic to activate, renew, or add licenses to a subscription.
   
- **Need help immediately?**[Call Microsoft Support](../admin/get-help-support.md).
+ **Need help immediately?** [Call Microsoft Support](../admin/get-help-support.md).
   
  **Need something else?**
 
