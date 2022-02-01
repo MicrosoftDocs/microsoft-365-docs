@@ -75,7 +75,7 @@ Follow these steps to create a prebuilt model to classify documents in SharePoin
 
 On the extractor details page, you will see the document area on the right and the **Extractors** panel on the left. The **Extractors** panel shows the list of extractors that have been identified in the document.
 
-   ![Screenshot of the Add a file from the training files library page.](../media/content-understanding/prebuilt-extractor-details-page.png) 
+   ![Screenshot of the extractor details page and Extractor panel.](../media/content-understanding/prebuilt-extractor-details-page.png) 
 
 The entity fields that are highlighted in green in the document area are the items that were detected by the model when it analyzed the file. When you select an entity to extract, the highlighted field will change to blue. If you later decide not to include the entity, the highlighted field will change to gray. The highlights make it easier to see the current state of the extractors you have selected.
 
@@ -110,7 +110,7 @@ To rename an extractor from the model home page:
 
 1. In the **Extractors** section, select the extractor you want to rename, and then select **Rename**.
 
-    ![Screenshot of the document area showing how to select an entity field.](../media/content-understanding/prebuilt-model-page-rename-extractor.png) 
+    ![Screenshot of the Extractors section with the Rename option highlighted.](../media/content-understanding/prebuilt-model-page-rename-extractor.png) 
 
 2. On the **Rename entity extractor** panel, enter the new name of the extractor, and then select **Rename**.
 
@@ -118,7 +118,7 @@ To rename an extractor from the **Extractors** panel:
 
 1. Select the extractor you want to rename, and then select **Rename**.
 
-    ![Screenshot of the Extractors panel showing how to select an entity field.](../media/content-understanding/prebuilt-extractors-panel-rename-field.png) 
+    ![Screenshot of the Extractors panel showing how to rename an extractor.](../media/content-understanding/prebuilt-extractors-panel-rename-field.png) 
 
 2. In the **Rename extractor** box, enter the new name of the extractor, and then select **Rename**.
 
