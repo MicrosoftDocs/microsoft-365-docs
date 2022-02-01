@@ -48,9 +48,6 @@ When you've decided whether to use an adaptive or static scope, use the followin
 
 ### Configuration information for adaptive scopes
 
-> [!NOTE]
-> Adaptive scopes as a new feature is currently in preview and subject to change. The alternative option is a static scope, which provides the same behavior before adaptive scopes were introduced and can be used if adaptive scopes don't meet your business requirements.
-
 When you choose to use adaptive scopes, you are prompted to select what type of adaptive scope you want. There are three different types of adaptive scopes and each one supports different attributes or properties:
 
 | Adaptive scope type | Attributes or properties supported include |
@@ -77,10 +74,10 @@ Before you configure your adaptive scope, use the previous section to identify w
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
     
-    - If you are using records management:
+    - If you are using the records management solution:
         - **Solutions** > **Records management** > **Adaptive scopes** tab > + **Create scope**
         
-    - If you are not using records management:
+    - If you are using the information governance solution:
        - **Solutions** > **Information governance** > **Adaptive scopes** tab > + **Create scope**
     
     Don't immediately see your solution in the navigation pane? First select **Show all**. 
