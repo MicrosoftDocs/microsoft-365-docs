@@ -196,7 +196,7 @@ Transform how your employees work together with the [Employee experience dashboa
 
 ### Microsoft 365 Apps setup guide
 
-The [Microsoft 365 Apps setup guide](https://aka.ms/OPPquickstartguide) helps you get your users' devices running the latest version of Office products like Word, Excel, PowerPoint, and OneNote. You'll get guidance on the various deployment methods that include easy self-install options to enterprise deployments with management tools. The instructions will help you assess your environment, figure out your specific deployment requirements, and implement the necessary support tools to ensure a successful install.
+The [Microsoft 365 Apps setup guide](https://aka.ms/OPPquickstartguide) helps you get your users' devices running the latest version of Office products like Word, Excel, PowerPoint, and OneNote. You'll get guidance on the various deployment methods that include easy self-install options to enterprise deployments with management tools. The instructions will help you assess your environment, figure out your specific deployment requirements, and implement the necessary support tools to ensure a successful installation.
 
 ### Mobile apps setup guide
 
