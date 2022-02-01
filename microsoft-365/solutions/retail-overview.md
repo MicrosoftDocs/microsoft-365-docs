@@ -45,7 +45,7 @@ Learn about Microsoft Cloud for Retail:
 
 <br>
 
-Learn how you can empower your associates with real-time store communications and collaboration:
+Learn how you can empower your associates with real-time store communications and collaboration with Microsoft Teams and the Microsoft Cloud for Retail:
 
 <br>
 
