@@ -33,54 +33,65 @@ Threat actors can use compromised user accounts for several malicious purposes i
 
 This playbook helps you investigate any incident related to suspicious inbox manipulation rules configured by attackers and take recommended actions to remediate the attack and protect your network. This playbook is for security teams, including SOC analysts and IT administrators who review, investigate, and grade the alerts.  
 
-## Inbox rules
+## Inbox manipulation rules
 
 Inbox rules are set to automatically manage email messages based on predefined criteria. For example, you can create an inbox rule to move all messages from your manager into another folder, or forward messages you receive to another email address.
 
-### Suspicious inbox manipulation rules
+### Malicious inbox manipulation rules
 
-Adversaries might set up email rules to hide incoming emails in the compromised user mailbox to hide their malicious activities from the user. They might also set rules in the compromised user mailbox to delete emails, move the emails into another less noticeable folder (like RSS), or forward mails to an external account. Some rules might move all the emails to another folder and mark them as “read”, while some rules might move only mails which contain specific keywords in the email message or subject. For example, the inbox rule might be set to look for keywords like “invoice”, “phish”, “do not reply”, “suspicious email”, or “spam” among others, and move them to an external email account. Attackers might also use the compromised user mailbox to distribute spam, phishing emails, or malware. 
+Adversaries might set up email rules to hide incoming emails in the compromised user mailbox to hide their malicious activities from the user. They might also set rules in the compromised user mailbox to delete emails, move the emails into another less noticeable folder (like RSS), or forward mails to an external account. Some rules might move all the emails to another folder and mark them as “read”, while some rules might move only mails which contain specific keywords in the email message or subject. 
+
+For example, the inbox rule might be set to look for keywords like “invoice”, “phish”, “do not reply”, “suspicious email”, or “spam” among others, and move them to an external email account. Attackers might also use the compromised user mailbox to distribute spam, phishing emails, or malware. 
 
 
 ## Workflow
 
-The following flowchart illustrates the steps you should follow to investigate this alert. 
+This flowchart illustrates the steps you should follow to investigate this type of alert. 
 
-Steps to investigate suspicious inbox manipulation rule
- 
+:::image type="content" source="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-workflow.png" alt-text="Alert investigation workflow for inbox manipulation rules" lightbox="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-workflow.png":::
+
+
 ## Investigation steps
 
 This section contains detailed step-by-step guidance to respond to the incident and take the recommended steps to protect your organization from further attacks.
 
-### Review generated alerts
+### 1. Review the alerts
 
-You can review the alert as shown in the images below.
+Here's an example of an inbox manipulation rule alert in the alert queue.
 
-ART: Notification in the alert queue
+:::image type="content" source="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-alert-queue.png" alt-text="Example of an inbox manipulation rule" lightbox="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-alert-queue.png":::
 
-ART Details of the alert that is triggered for inbox manipulation rule
+Here's an example of the details of alert that was triggered by a malicious inbox manipulation rule.
 
-### Investigate rule parameters 
+:::image type="content" source="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-alert-description.png" alt-text="Details of alert that was triggered by a malicious inbox manipulation rule" lightbox="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-alert-description.png":::
 
-The purpose of this stage is to determine if the rules look suspicious according to the following rule parameters or criteria:
 
-Keywords:
+### 2. Investigate inbox manipulation rule parameters 
 
-- The attacker might apply the manipulation rule only to emails that contains certain words. You can find these keywords under certain attributes such as: “BodyContainsWords”, “SubjectContainsWords” or “SubjectOrBodyContainsWords”. 
-- If there are filtering by keywords, then check whether the keywords seem suspicious to you (common scenarios are to filter emails related to the attacker activities, such as “phish”, “spam”, “do not reply”, among others).
-- If there is no filter at all, it might be suspicious as well.
+Determine if the rules look suspicious according to the following rule parameters or criteria:
 
-Destination folder:
+- Keywords
 
-- To stay under the radar and evade security detection, the attacker might move the emails to a less noticeable folder and mark the emails as read (for example, “RSS” folder). If the attacker applies “MoveToFolder“ and “MarkAsRead” action, check whether the destination folder is somehow related to the keywords in the rule to decide if it seems suspicious or not. 
+   The attacker might apply the manipulation rule only to emails that contains certain words. You can find these keywords under certain attributes such as: “BodyContainsWords”, “SubjectContainsWords” or “SubjectOrBodyContainsWords”. 
 
-Delete all:
+   If there are filtering by keywords, then check whether the keywords seem suspicious to you (common scenarios are to filter emails related to the attacker activities, such as “phish”, “spam”, “do not reply”, among others).
 
-- Some attackers will just delete all the incoming emails to hide their activity. Mostly, a rule of “delete all incoming emails” without filtering them with keywords is an indicator of malicious activity. This figure shows an example of a “delete all incoming emails” rule configuration.
+   If there is no filter at all, it might be suspicious as well.
+
+- Destination folder
+
+   To evade security detection, the attacker might move the emails to a less noticeable folder and mark the emails as read (for example, “RSS” folder). If the attacker applies “MoveToFolder“ and “MarkAsRead” action, check whether the destination folder is somehow related to the keywords in the rule to decide if it seems suspicious or not. 
+
+- Delete all
+
+   Some attackers will just delete all the incoming emails to hide their activity. Mostly, a rule of “delete all incoming emails” without filtering them with keywords is an indicator of malicious activity. 
  
-ART: Example of ‘delete every incoming email’ART: rule (as seen on RawEventData.Parameters) of the relevant event log. 
+Here' i's an example of a “delete all incoming emails” rule configuration (as seen on RawEventData.Parameters) of the relevant event log. 
 
-### Investigate IP address
+:::image type="content" source="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-delete-log.png" alt-text="Example of a delete all incoming emails rule configuration" lightbox="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-delete-log.png":::
+
+
+### 3. Investigate IP address
 
 Review the attributes of  the IP address that performed the relevant event of rule creation:
 
@@ -88,9 +99,11 @@ Review the attributes of  the IP address that performed the relevant event of ru
 2. Is the ISP common and reasonable for this user?
 3. Is the location common and reasonable for this user?
 
-## Investigate suspicious activity by user prior to creating rules
+## 4. Investigate suspicious activity by user prior to creating rules
 
-You can review all user activities before creating rules, check for indicators of compromise, and investigate user actions that seem suspicious. For instance, multiple failed logins. 
+You can review all user activities before creating rules, check for indicators of compromise, and investigate user actions that seem suspicious. 
+
+For instance, for multiple failed logins, examine: 
 
 - Login activity: Validate that the login activity prior to the rule creation is not suspicious. (common location / ISP / user-agent). 
 - Alerts: Check whether the user received alerts prior to creating the rules. This could indicate that the user account might be compromised. For example, impossible travel alert, infrequent country, multiple failed logins, among others.)
@@ -99,7 +112,8 @@ You can review all user activities before creating rules, check for indicators o
 ## Advanced hunting queries
 
 Advanced hunting is a query-based threat hunting tool that lets you inspect events in your network to locate threat indicators. 
-To find all the new inbox rule events during specific time window, run this query.  
+
+Use this query to find all the new inbox rule events during specific time window.  
 
 ```kusto
 let start_date = now(-10h); 
@@ -110,10 +124,11 @@ CloudAppEvents
 | where AccountObjectId == user_id
 | where ActionType in ("Set-Mailbox", "New-InboxRule", "Set-InboxRule") //set new inbox rule related operations
 | project Timestamp, ActionType, CountryCode, City, ISP, IPAddress, RuleConfig = RawEventData.Parameters, RawEventData
+```
 
-The *RuleConfig* column will provide the new inbox rule configuration.```
+The *RuleConfig* column will provide the new inbox rule configuration.
 
-To check whether the ISP is common for the user by looking at the history of the user, run this query.
+Use this query to check whether the ISP is common for the user by looking at the history of the user.
 
 ```kusto
 let alert_date = now(); //enter alert date 
@@ -125,7 +140,7 @@ CloudAppEvents
 | make-series ActivityCount = count() default = 0 on Timestamp  from (alert_date-timeback) to (alert_date-1h) step 12h by ISP 
 ```
 
-To check whether the country is common for the user by looking at the history of the user, run this query.
+Use this query to check whether the country is common for the user by looking at the history of the user.
 
 ```kusto
 let alert_date = now(); //enter alert date 
@@ -137,7 +152,7 @@ CloudAppEvents
 | make-series ActivityCount = count() default = 0 on Timestamp  from (alert_date-timeback) to (alert_date-1h) step 12h by CountryCode
 ```
 
-To check whether the user agent is common for the user by looking at the history of the user, run this query.
+Use this query to check whether the user agent is common for the user by looking at the history of the user.
 
 ```kusto
 let alert_date = now(); //enter alert date 

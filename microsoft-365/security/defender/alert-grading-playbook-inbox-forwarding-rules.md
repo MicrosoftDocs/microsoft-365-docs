@@ -68,12 +68,11 @@ This section contains detailed step-by-step guidance to respond to the incident 
 
 ### Review generated alerts
 
-Here is an example of an alert in the alert queue.
-
+Here's an example of an inbox forwarding rule alert in the alert queue.
 
 :::image type="content" source="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-alert-queue.png" alt-text="Example of a notification in the alert queue" lightbox="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-alert-queue.png":::
 
-Here is an example of the details of alert that was triggered by a malicious inbox forwarding rule.
+Here's an example of the details of alert that was triggered by a malicious inbox forwarding rule.
 
 :::image type="content" source="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-alert-description.png" alt-text="Details of alert that was triggered by a malicious inbox forwarding rule" lightbox="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-alert-description.png":::
 
@@ -116,7 +115,7 @@ You can review all user activities before creating rules, check for indicators o
 
 Advanced hunting is a query-based threat hunting tool that lets you inspect events in your network to locate threat indicators. 
 
-To find all the new inbox rule events during a specific time window, run this query.  
+Run this query to find all the new inbox rule events during a specific time window.  
 
 ```kusto
 let start_date = now(-10h); 
@@ -131,7 +130,7 @@ CloudAppEvents
 
 *RuleConfig* will contain the rule configuration.
 
-To check whether the ISP is common for the user by looking at the history of the user, run this query.
+Run this query to check whether the ISP is common for the user by looking at the history of the user.
 
 ```kusto
 let alert_date = now(); //enter alert date 
@@ -143,7 +142,7 @@ CloudAppEvents
 | make-series ActivityCount = count() default = 0 on Timestamp  from (alert_date-timeback) to (alert_date-1h) step 12h by ISP 
 ```
 
-To check whether the country is common for the user by looking at the history of the user, run this query.
+Run this query to check whether the country is common for the user by looking at the history of the user.
 
 ```kusto
 let alert_date = now(); //enter alert date 
@@ -155,7 +154,7 @@ CloudAppEvents
 | make-series ActivityCount = count() default = 0 on Timestamp  from (alert_date-timeback) to (alert_date-1h) step 12h by CountryCode
 ```
 
-To check whether the user-agent is common for the user by looking at the history of the user, run this query.
+Run this query to check whether the user-agent is common for the user by looking at the history of the user.
 
 ```kusto
 let alert_date = now(); //enter alert date 
@@ -167,7 +166,7 @@ CloudAppEvents
 | make-series ActivityCount = count() default = 0 on Timestamp  from (alert_date-timeback) to (alert_date-1h) step 12h by UserAgent
 ```
 
-To check if other users created forward rule to the same destination (could indicate that other users are compromised as well), run this query.
+Run this query to check if other users created forward rule to the same destination (could indicate that other users are compromised as well).
 
 ```kusto
 let start_date = now(-10h); 
@@ -183,7 +182,7 @@ CloudAppEvents
 ## Recommended actions
 
 1. Disable the malicious inbox rule. 
-2. Reset the user’s credentials. 
+2. Reset the user’s account credentials. 
 3. Search for other malicious activities performed by the impacted user.
 4. Check for other suspicious activity in the tenant originated from the same IP or from the same ISP (if the ISP is uncommon) to find other compromised users.
 

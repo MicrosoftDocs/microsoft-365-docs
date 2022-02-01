@@ -180,42 +180,42 @@ Use queries to gather information for the following questions.
 >Certain parameters are unique to your organization or network. Fill in these specific parameters as instructed in each query.
 >
 
-1. Who else has forwarded emails to these recipients (SRL/RL)?
+Run this query to find out who else has forwarded emails to these recipients (SRL/RL).
 
-   ```kusto
-   let srl=pack_array("{SRL}"); //Put values from SRL here.
-   EmailEvents
-   | where RecipientEmailAddress in (srl)
-   | distinct SenderDisplayName, SenderFromAddress, SenderObjectId
-   ```
+```kusto
+let srl=pack_array("{SRL}"); //Put values from SRL here.
+EmailEvents
+| where RecipientEmailAddress in (srl)
+| distinct SenderDisplayName, SenderFromAddress, SenderObjectId
+```
 
-2. How many emails were forwarded to these recipients?
+Run this query to find out how many emails were forwarded to these recipients.
 
-   ```kusto
-   let srl=pack_array("{SRL}"); //Put values from SRL here.
-   EmailEvents
-   | where RecipientEmailAddress in (srl)
-   | summarize Count=dcount(NetworkMessageId) by RecipientEmailAddress
-   ```
+```kusto
+let srl=pack_array("{SRL}"); //Put values from SRL here.
+EmailEvents
+| where RecipientEmailAddress in (srl)
+| summarize Count=dcount(NetworkMessageId) by RecipientEmailAddress
+```
 
-3. How frequently are emails forwarded to these recipients?
+Run this query to find out how frequently are emails forwarded to these recipients.
 
-   ```kusto
-   let srl=pack_array("{SRL}"); //Put values from SRL here.
-   EmailEvents
-   | where RecipientEmailAddress in (srl)
-   | summarize Count=dcount(NetworkMessageId) by RecipientEmailAddress, bin(Timestamp, 1d)
-   ```
+```kusto
+let srl=pack_array("{SRL}"); //Put values from SRL here.
+EmailEvents
+| where RecipientEmailAddress in (srl)
+| summarize Count=dcount(NetworkMessageId) by RecipientEmailAddress, bin(Timestamp, 1d)
+```
 
-4. Does the email contain any URL?
+Run this query to find out if the email contains any URLs.
  
-   ```kusto
-   let mti='{MTI}'; //Replace {MTI} with MTI from alert
-   EmailUrlInfo
-   | where NetworkMessageId == mti
-   ```
+```kusto
+let mti='{MTI}'; //Replace {MTI} with MTI from alert
+EmailUrlInfo
+| where NetworkMessageId == mti
+```
 
-5. Does the email contain any attachments?
+Run this query to find out if the email contains any attachments.
 
    ```kusto
    let mti='{MTI}'; //Replace {MTI} with MTI from alert
@@ -223,28 +223,28 @@ Use queries to gather information for the following questions.
    | where NetworkMessageId == mti
    ```
 
-6. Has the Forwarder (that is, sender) created  any new rules?
+Run this query to find out if the Forwarder (that is, sender) has created any new rules.
 
-   ```kusto
-   let sender = "{SENDER}"; //Replace {SENDER} with display name of Forwarder
-   let action_types = pack_array(
-       "New-InboxRule", 
-       "UpdateInboxRules", 
-       "Set-InboxRule", 
-       "Set-Mailbox",    
-       "New-TransportRule",
-       "Set-TransportRule");
-   CloudAppEvents
-   | where AccountDisplayName == sender
-   | where ActionType in (action_types)
-   ```
+```kusto
+let sender = "{SENDER}"; //Replace {SENDER} with display name of Forwarder
+let action_types = pack_array(
+    "New-InboxRule", 
+    "UpdateInboxRules", 
+    "Set-InboxRule", 
+    "Set-Mailbox",    
+    "New-TransportRule",
+    "Set-TransportRule");
+CloudAppEvents
+| where AccountDisplayName == sender
+| where ActionType in (action_types)
+```
 
-7. Are there any anomalous login events from this user? For example, unknown IPs, new applications, uncommon countries, multiple LogonFailed.
+Run this query to find out if there were any anomalous login events from this user. For example, unknown IPs, new applications, uncommon countries, multiple LogonFailed.
 
-   ```kusto
-   let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder IdentityLogonEvents
-   | where AccountUpn == sender
-   ```
+```kusto
+let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder IdentityLogonEvents
+| where AccountUpn == sender
+```
 
 ### Investigating forwarding rules
 
@@ -277,5 +277,5 @@ Once you determine that the activities associated make this alert a True Positiv
 ## See also
 
 - [Overview of alert grading](alert-grading-playbooks.md)
-- [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
 - [Suspicious inbox forwarding rules](alert-grading-playbook-inbox-forwarding-rules.md)
+- [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
