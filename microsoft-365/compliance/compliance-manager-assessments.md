@@ -96,9 +96,7 @@ To create an assessment, you'll use a wizard to select the template it should us
 
 Either path places you into same creation wizard. The steps below explain how to create an assessment from your **Assessments** page.
 
-1. From your **Assessments** page, select **Add assessment** to enter the assessment creation wizard to start the guided process on your own.
-
-#### Getting recommendations for assessments based on your org type
+#### Create assessments based on recommendations for your org type
 
 If you'd like to create one or more assessments at a time based on our recommendations, select **Add recommended assessments** from your **Assessments** page and follow these steps:
    - Select one or more industries that identify your organization, then select **Next**
@@ -106,16 +104,18 @@ If you'd like to create one or more assessments at a time based on our recommend
    - On the **Choose assessment** screen, select the dropdown arrow next to **Recommended templates** to see the list of assessments we thing apply to your organization. Check the boxes next to the templates listed on this screen for which you want to create assessments. Then select **Next**.
    - Review your final selections and select **Add recommended assessments** to create your new assessments.
 
-2. Open the assessment wizard. You can access this flyout pane from one of two places:
-    - Go to your **assessments** page in Compliance Manager and select **Add assessment**; or
-    - Find the template you want to use on the **assessment templates** tab, view its details, and select **Create assessment**. This will populate the wizard's template selection field for you.
+#### Create an assessment using a guided process
 
-3. **Select a template**: If you didn't already choose a template in step 2, choose a template to serve as the basis for your assessment. You’ll see the list of templates divided into included and premium categories (see [Template availability and licensing](compliance-manager-templates.md#template-availability-and-licensing) for more information). Select the radio button next to your chosen template, then select **Next**.
+1. From your **Assessments** page, select **Add assessment**. This will put you into the assessment creation wizard.
+
+2. On the **Base template** screen, select **Select template** to choose the template for your assessment.
+
+3. On the flyout pane, choose the template for the regulation or certification on which to base the assessment. The list of templates divided into included and premium categories ([get details](compliance-manager-templates.md#template-availability-and-licensing)). The **Activated/Licensed templates** counter at the top of the flyout pane shows you how may templates you're using out of the total number available or your organization to use ([learn more](compliance-manager-templates.md#active-and-inactive-templates).) Select the radio button next to your chosen template, then select **Save**. You'll return to your **Base template** screen where you can review template details, then continue by selecting **Next**.
 
 4. **Product, name, and group:** Set these properties to identify your assessment, choose which product it will be evaluating, and assign it to a group.
 
-    - **Product**: Select the product you want your assessment to apply to. If you are using a Microsoft template, such as one designed for Microsoft 365, this field will be populated for you to indicate the appropriate product and cannot be changed. If you’re using a universal template, select whether you’re creating this assessment for a new product or a custom product you have already defined in Compliance Manager. If you choose a new product, enter its name. Note that you cannot select a pre-defined Microsoft product when using a universal template.
-    - **Name**: Enter a name for your assessment in the **Assessment name** field. Assessment names must be unique within groups. If the name of your assessment matches the name of another assessment in any given group, you’ll receive an error asking you to create a different name.
+    - **Product**: Select the product you want your assessment to apply to. If you are using a Microsoft template, such as one designed for Microsoft 365, this field will be populated for you to indicate the appropriate product and cannot be changed. If you’re using a universal template, select whether you’re creating this assessment for a new product or a custom product you have already defined in Compliance Manager. If you choose a new product, enter its name. Note that you cannot select a pre-defined Microsoft product when using a universal template.
+    - **Assessment name**: Enter a name for your assessment in the **Assessment name** field. Assessment names must be unique within groups. If the name of your assessment matches the name of another assessment in any given group, you’ll receive an error asking you to create a different name.
     - **Group**: Assign your assessment to a group. You can either:
         - Select **Use existing group** to assign it to a group you’ve already created; or
         - Select **Create new group** to create a new group and assign this assessment to it:
@@ -124,9 +124,9 @@ If you'd like to create one or more assessments at a time based on our recommend
 
     When finished, select **Next**.
 
-5. **Review and finish:** The last screen of the wizard shows the template, name, and group chosen for the assessment. You can edit any of these settings from the links on the screen, which take you back to the relevant steps in the wizard. When you're ready, select **Create assessment**.
+5. **Review and finish:** Review your selections and make any necessary edits. When you're satisfied ready, select **Create assessment**.
 
-6. The next screen confirms that you’ve successfully created your new assessment. Select **Done** to close the wizard, and your new assessment's details page will appear on the screen.
+The next screen confirms the assessment was created. When you select **Done**, you'll be taken to your new assessment's details page.
 
 If you see an **Assessment failed** screen after selecting **Create assessment**, select **Try again** to re-create your assessment.
 
