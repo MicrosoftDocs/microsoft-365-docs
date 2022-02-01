@@ -34,7 +34,7 @@ Read through this important information before you contact [Microsoft 365 suppor
 ## What happens to data when a subscription expires?
 
 - If your subscription expires, it goes through the following stages: Expired / Disabled / Deleted. The Expired stage starts immediately after the subscription has reached its end date.
-- If you turn off recurring billing on your annual subscription, it goes through the same stages as an expired subscription. The first stage starts are the anniversary of the annual subscription, not starting on the date that you turned off the subscription's recurring billing setting.
+- If you turn off recurring billing on your annual subscription, it goes through the same stages as an expired subscription. The first-stage starts are the anniversary of the annual subscription, not starting on the date that you turned off the subscription's recurring billing setting.
 - If you cancel your monthly subscription, it is disabled immediately (at the date of cancellation). This means your users lose access to the Microsoft 365 assets immediately and only admins have access to the data for the next 90 days.
 
 The following table explains what you can expect when a paid Microsoft 365 for business subscription expires.
@@ -121,7 +121,7 @@ At this point, you can't reactivate the subscription. However, as a global or bi
 > [!NOTE]
 >
 > - Adding a new subscription of the same type that has been deleted does not restore the data that was associated with the deleted subscription.
-> - If a CSP license is suspended, there is no 30 day Expired stage, and services are disabled immediately. Data is deleted after 90 days if the tenant is not reactivated by adding a new license.
+> - If a CSP license is suspended, there is no 30-day Expired stage, and services are disabled immediately. Data is deleted after 90 days if the tenant is not reactivated by adding a new license.
 
 ### What happens when my trial ends?
 
@@ -129,7 +129,7 @@ When your trial ends, you can't continue using Microsoft 365 for free. You have 
 
 - **Buy Microsoft 365.** When your trial expires, it moves into the Expired stage, giving you another 30 days (for most trials, in most countries and regions) to purchase Microsoft 365. To learn how to convert your trial into a paid subscription, see [Buy a subscription from your free trial](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial).
 - **Extend your trial.** Need more time to evaluate Microsoft 365? In certain cases, you can [extend your trial](../extend-your-trial.md).
-- **Cancel the trial or let it expire.** If you decide not to buy Microsoft 365, you can let your trial expire or [cancel it](cancel-your-subscription.md). Back up any data you want to keep. Soon after the 30 day Expired stage, your trial account information and data is permanently erased.
+- **Cancel the trial or let it expire.** If you decide not to buy Microsoft 365, you can let your trial expire or [cancel it](cancel-your-subscription.md). Back up any data you want to keep. Soon after the 30-day Expired stage, your trial account information and data is permanently erased.
 
 > [!NOTE]
 >
