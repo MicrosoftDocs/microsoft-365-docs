@@ -40,6 +40,10 @@ To turn Bookings on or off for your organization using the PowerShell cmdlet [Se
    Set-OrganizationConfig -BookingsEnabled $false
 ```
 
+Use the settings below to control who can use Bookings, decide on what Bookings information is shared and whether staff need approval before they can be added to a Booking calendar.
+
+:::image type="content" source="../media/control-access-sharing-bookings.png" alt-text="Screenshot: Settings that allow you to control who can use Bookings, decide what Bookings info is shared and staff approval":::
+
 ### Block bookings from outside your organization
 
 You can set up Bookings so only people in your organization can book appointments. Only users in your organization who've signed and are authenticated can book appointments.
@@ -60,7 +64,9 @@ When this setting is enabled, people added as staff in booking calendars will ge
 
 ## Restrict collection of customer data
 
-If you select any of the fields below, these fields won't be included on any forms shown to your clients or customers. This helps prevent customers from sharing sensitive data with you.
+If you select a checkbox for any of these options, these fields won't be included on any forms shown to your clients or customers. This helps prevent customers from sharing sensitive data with you.
+
+:::image type="content" source="../media/restrict-collection-customer-data.png" alt-text="Screenshot: Select the checkboxes to help prevent customers from sharing sensitive data with you":::
 
 ### Turn Bookings on or off for individual users
 
