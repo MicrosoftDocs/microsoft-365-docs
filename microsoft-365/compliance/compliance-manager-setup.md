@@ -86,18 +86,26 @@ The table below shows the functions allowed by each role in Compliance Manager. 
 | **Manage assessments, and template and tenant data**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  |
 | **Assign users**| Global Administrator | Global Administrator |
 
-## Set up premium assessments trial
+## Start a premium assessments trial
 
-To help you get started with Compliance Manager, you may start a free trial of premium assessments. This will allow you to select and try out templates from Compliance Manager's full collection of assessment templates, which help you measure your compliance with regulations and industry standards from around the world. To learn more about the premium assessment trial, see [About the free trial for Microsoft Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessments.md).
+The Compliance Manager premium assessments trial is a great way to quickly set up assessments that are most relevant to your organization. Our library of over 300 templates correspond to governmental regulations and industry standards around the world.
+Learn more about the [premium assessments trial](compliance-easy-trials-compliance-manager-assessments.md).
 
-You can start your trial from within Compliance Manager and find out about recommended templates by following these steps.
+You can start your trial directly from Compliance Manager and set up recommended templates by following these steps:
 
-1. Select **Start trial** from the Compliance Manager dashboard. You can also use the **Add recommended assessments** link on the assessments page to open the wizard.
-1. Activate your trial and proceed to identify your organization. This step helps you find the most relevant templates for your organization. Information provided here is only used to recommend assessments and will not be stored or affect your tenant settings.
-1. Select one or more options on the **Industry** and **Country** screens that apply to you.  Industries are grouped by category, for example financial, manufacturing, or real estate, and countries are listed under their world regions.
-1. Compliance Manager will display templates that may be applicable to your needs. **Choose assessments** here that you wish to use to get an easy start on setup.
+1. On the Compliance Manager **Overview** page, select **Start trial**. You'll enter a trial activation wizard which will ask questions to help us recommend assessments for your organization.
 
-To learn more about getting started with assessments, see the [Assessments page](#assessments-page) section.
+2. On the **Activate trial** page, select **Next** to begin your free 90 day premium assessments trial. and proceed to identify your organization.
+
+3. Select one or more industries that identify your organization, then select **Next**.
+
+4. Select one or more regions for your organization's location, then select **Next**.
+
+5. On the **Choose assessments** screen, select the dropdown arrow next to Recommended templates to see the list of assessments we thing apply to your organization. Check the boxes next to the templates listed on this screen for which you want to create assessments. Then select Next.
+
+6. Review your final selections and select **Add recommended assessments** to create your new assessments.
+
+To learn more about getting started with assessments, visit the [Assessments page](#assessments-page) section below.
 
 ## Settings for automated testing and user history
 

@@ -92,7 +92,7 @@ Before you begin, be sure you know which group you'll assign it to, or be prepar
 To create an assessment, you'll use a wizard to select the template it should use and set the assessment’s properties. You can enter the wizard from two different pathways:
 
 - From your **Assessments** page, where you'll select the template and have the option to see which assessments we recommend for your organization; or
-- From your **Assessment templates** page, where you can start directly from a template.
+- From a template's details page, select the **Create assessment** button in the top right of your screen. From here you'll enter the assessment creation wizard at step 4 of the [guided process below](#create-an-assessment-using-a-guided-process).
 
 Either path places you into same creation wizard. The steps below explain how to create an assessment from your **Assessments** page.
 
