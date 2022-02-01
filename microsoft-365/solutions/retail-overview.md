@@ -16,7 +16,7 @@ f1.keywords: NOCSH
 
 # Microsoft 365 solutions for the retail industry
 
-Microsoft provides many capabilities to help retail organizations serve customers, keep the supply chain going, and help retail teams stay on top of tasks and work together. Microsoft also provides a comprehensive platform for the retail industry, Microsoft Cloud for Retail, which includes components from Microsoft 365, Dynamics 365, and Microsoft Azure. Modernization and digital transformation of retail environments is key to keeping up with the ever-changing economy.
+Microsoft provides many capabilities to help retail organizations serve customers, fulfill orders, manage the supply chain, and help retail teams stay on top of tasks and work together. Microsoft also provides a comprehensive platform for the retail industry, Microsoft Cloud for Retail, which includes components from Microsoft 365, Dynamics 365, and Microsoft Azure. Modernization and digital transformation of retail environments is key to keeping up with the ever-changing economy.
 
 <br>
 
