@@ -55,6 +55,10 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 
+## January 2022
+
+- Threat and vulnerability management for Android and iOS is now generally available. [Learn more](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
+
 ## December 2021
 
 - Threat and vulnerability management can help identify Log4j vulnerabilities in applications and components. [Learn more](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM).

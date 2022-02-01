@@ -64,7 +64,7 @@ You'll need to complete the following general steps to successfully onboard serv
 
 
 
-### New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview
+### New Windows Server 2012 R2 and 2016 functionality in the modern unified solution (Preview)
 
 Previous implementation of onboarding Windows Server 2012 R2 and Windows Server 2016 required the use of Microsoft Monitoring Agent (MMA).
 
