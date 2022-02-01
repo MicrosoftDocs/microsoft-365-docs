@@ -17,13 +17,13 @@ ms.custom: admindeeplinkCOMPLIANCE
 
 # Investigate insider risk management activities
 
-Investigating risky user activities is an important first step in minimizing insider risks for your organization. These risks may be activities that generate alerts from insider risk management policies, or risks from activities that are detected by policies but do not immediately create an insider risk management alert for users. You can investigate these types of activities by using the **User activity reports (preview)** or with the **Alert dashboard**.
+Investigating risky user activities is an important first step in minimizing insider risks for your organization. These risks may be activities that generate alerts from insider risk management policies, or risks from activities that are detected by policies but don't immediately create an insider risk management alert for users. You can investigate these types of activities by using the **User activity reports (preview)** or with the **Alert dashboard**.
 
 ## User activity reports (preview)
 
 User activity reports allow you to examine activities for specific users for a defined time period without having to assign them temporarily or explicitly to an insider risk management policy. In most insider risk management scenarios, users are explicitly defined in policies, and they may have policy alerts (depending on triggering events) and risk scores associated with the activities. But in some scenarios, you may want to examine the activities for users that aren't explicitly defined in a policy. These activities may be for users that you've received a tip about the user and potentially risky activities, or users that typically don't need to be assigned to an insider risk management policy.
 
-After you've configured indicators on the insider risk management **Settings** page, user activity is detected for risky activity associated with the selected indicators. You do not have to configure a policy for user activity reports to detect and report risky activities by users in your organization. Activities included in user activity reports do not require triggering events for the activities to be displayed. This configuration means that all detected activity for the user is available for review, regardless if it has a triggering event or if it creates an alert. Reports are created on a per-user basis and can include all activities for a custom 90-day period. Multiple reports for the same user aren't supported.
+After you've configured indicators on the insider risk management **Settings** page, user activity is detected for risky activity associated with the selected indicators. You don't have to configure a policy for user activity reports to detect and report risky activities by users in your organization. Activities included in user activity reports don't require triggering events for the activities to be displayed. This configuration means that all detected activity for the user is available for review, regardless if it has a triggering event or if it creates an alert. Reports are created on a per-user basis and can include all activities for a custom 90-day period. Multiple reports for the same user aren't supported.
 
 After examining activities for a user, investigators can dismiss individual activities as benign, share or email a link to the report with other investigators, or choose to assign the user temporarily or explicitly to an insider risk management policy. Users must be assigned to the *Insider Risk Management Investigators* role group to view the **User activity reports** page.  
 
@@ -34,7 +34,7 @@ You can get started by selecting **Manage reports** in the **Investigate user ac
 - **User**: Search for a user by name or email address
 - **Start date**: Use the calendar control to select the start date for user activities.
 - **End date**: Use the calendar control to select the end date for user activities. The end date selected must be greater than two days after the selected start date and no greater than 90 days from the selected start date.
-New reports typically take up to 10 hours before they are ready for review. When the report is ready, you'll see *Report ready* in the **Status** column on the User activity report page. Select the user to view the detailed report:
+New reports typically take up to 10 hours before they're ready for review. When the report is ready, you'll see *Report ready* in the **Status** column on the User activity report page. Select the user to view the detailed report:
 
 ![Insider risk management user activity report.](../media/insider-risk-user-activity-report.png)
 
@@ -69,16 +69,16 @@ You can triage alerts into one of the following statuses:
 
 - **Confirmed**: An alert confirmed and assigned to a new or existing case.
 - **Dismissed**: An alert dismissed as benign in the triage process.
-- **Needs review**: A new alert where triage actions have not yet been taken.
+- **Needs review**: A new alert where triage actions haven't yet been taken.
 - **Resolved**: An alert that is part of a closed and resolved case.
 
-Alert risk scores are automatically calculated from several risk activity indicators. These indicators include the type of risk activity, the number and frequency of the activity occurrence, the history of user risk activity, and the addition of activity risks that may boost the seriousness of the activity. The alert risk score drives the programmatic assignment of a risk severity level for each alert and cannot be customized. If alerts remain untriaged and risk activities continue to accrue to the alert, the risk severity level can increase. Risk analysts and investigators can use the alert risk severity to help triage alerts in accordance with your organization's risk policies and standards.
+Alert risk scores are automatically calculated from several risk activity indicators. These indicators include the type of risk activity, the number and frequency of the activity occurrence, the history of user risk activity, and the addition of activity risks that may boost the seriousness of the activity. The alert risk score drives the programmatic assignment of a risk severity level for each alert and can't be customized. If alerts remain untriaged and risk activities continue to accrue to the alert, the risk severity level can increase. Risk analysts and investigators can use the alert risk severity to help triage alerts in accordance with your organization's risk policies and standards.
 
 Alert risk severity levels are:
 
 - **High severity**: The activities and indicators for the alert pose significant risk. The associated risk activities are serious, repetitive, and corelate strongly to other significant risk factors.
 - **Medium severity**: The activities and indicators for the alert pose a moderate risk. The associated risk activities are moderate, frequent, and have some correlation to other risk factors.
-- **Low severity**: The activities and indicators for the alert pose a minor risk. The associated risk activities are minor, more infrequent, and do not corelate to other significant risk factors.
+- **Low severity**: The activities and indicators for the alert pose a minor risk. The associated risk activities are minor, more infrequent, and don't corelate to other significant risk factors.
 
 ## Filter alerts on the Alert dashboard
 
@@ -111,7 +111,7 @@ To triage an insider risk alert, complete the following steps:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Alerts** tab.
 2. On the **Alerts dashboard**, select the alert you want to triage.
-3. On the **Alert detail** page, you can review information about the alert and you can confirm the alert and create a new case, confirm the alert and add to an existing case, or to dismiss the alert. This page also includes the current status for the alert and the alert risk severity level, listed as High, Medium, or Low. The severity level may increase or decrease over time if the alert is not triaged.
+3. On the **Alert detail** page, you can review information about the alert and you can confirm the alert and create a new case, confirm the alert and add to an existing case, or to dismiss the alert. This page also includes the current status for the alert and the alert risk severity level, listed as High, Medium, or Low. The severity level may increase or decrease over time if the alert isn't triaged.
 
     The tabs on the **Alert detail** page provide more information for the alert:
     - **Summary**: This tab contains general information about the alert.
@@ -122,6 +122,20 @@ To triage an insider risk alert, complete the following steps:
         - **Alert details**: Includes the length of time since the alert was generated, the policies that generated the alert are listed, and the case generated from the alert is listed. For new alerts, the **Case** field displays None.
         - **Content detected**: Includes content associated with the risk activities for the alert and summarizes activity events by key areas. Selecting an activity link opens the Activity explorer and displays more details about the activity.
     - **Activity explorer**: This tab opens the **Activity explorer**. For more information, see the next section in this article.
+
+## Retention and item limits
+
+As insider risk management alerts age, their value to minimize risky activity diminishes for most organizations. Conversely, active cases and associated artifacts (alerts, insights, activities) are always valuable to organizations and shouldn't have an automatic expiration date. This includes all future alerts and artifacts in an active status for any user associated with an active case.
+
+To help minimize the number of older items that provide limited current value, the following retention and limits apply for insider risk management alerts, cases, and user activity reports:
+
+|**Item**|**Retention/Limit**|
+|:-------|:------------------|
+| Alerts with Needs review status | 120 days from alert creation, then automatically deleted |
+| Active cases (and associated artifacts) | Indefinite retention, never expire |
+| Resolved cases (and associated artifacts) | 120 days from case resolution, then automatically deleted |
+| Maximum number of active cases | 100 |
+| User activities reports | 120 days from activity detection, then automatically deleted |
 
 ## Activity explorer
 
@@ -158,7 +172,7 @@ When reviewing activities in the Activity explorer, investigators and analysts c
 
 When selecting an activity's events from the activity timeline, the number of activities displayed in the explorer might not match the number of activity events listed in the timeline. Examples of why this difference may occur:
 
-- **Cumulative exfiltration detection**: Cumulative exfiltration detection analyzes event logs, but applies a model that includes de-duplicating similar activities to compute cumulative exfiltration risk. Additionally, there may also be a difference in the number of activities displayed in the Activity explorer if you have made changes to your existing policy or settings. For example, if you modify allowed/unallowed domains or add new file type exclusions after a policy has been created and activity matches have occurred, the cumulative exfiltration detection activities will differ from the results before the policy or settings changes. Cumulative exfiltration detection activity totals are based on the policy and settings configuration at the time of computation and do not include activities prior to the policy and settings changes
+- **Cumulative exfiltration detection**: Cumulative exfiltration detection analyzes event logs, but applies a model that includes de-duplicating similar activities to compute cumulative exfiltration risk. Additionally, there may also be a difference in the number of activities displayed in the Activity explorer if you have made changes to your existing policy or settings. For example, if you modify allowed/unallowed domains or add new file type exclusions after a policy has been created and activity matches have occurred, the cumulative exfiltration detection activities will differ from the results before the policy or settings changes. Cumulative exfiltration detection activity totals are based on the policy and settings configuration at the time of computation and don't include activities prior to the policy and settings changes
 - **Emails to external recipients**: Activity for emails sent to external recipients is assigned a risk score based on the number of emails sent, which may not match the activity event logs.
 
 ![Insider risk management activity explorer details.](../media/insider-risk-activity-explorer-details.png)
@@ -201,5 +215,5 @@ Investigating and acting on alerts in insider risk management is straightforward
 Modern workplace users often have a wide variety of responsibilities and demands on their time. There are several actions you can take to help address resource constraints:
 
 - **Focus analyst and investigator efforts on the highest risk alerts first**. Depending on your policies, you may be capturing activities and generating alerts with varying degrees of potential impact to your risk mitigation efforts. [Filter alerts](insider-risk-management-activities.md#filter-alerts-on-the-alert-dashboard) by severity and prioritize *High severity* alerts.
-- **Assign users as analysts and investigators**. Having the right user assigned to the proper roles is an important part of the insider risk alert review process. Make sure you’ve assigned the appropriate users to the *Insider Risk Management Analysts* and *Insider Risk Management Investigators* role groups.  
+- **Assign users as analysts and investigators**. Having the right user assigned to the proper roles is an important part of the insider risk alert review process. Make sure you've assigned the appropriate users to the *Insider Risk Management Analysts* and *Insider Risk Management Investigators* role groups.  
 - **Use automated insider risk features to help discover the highest risk activities**. Insider risk management [sequence detection](insider-risk-management-policies.md#sequence-detection-preview) and [cumulative exfiltration detection](insider-risk-management-policies.md#cumulative-exfiltration-detection-preview) features can help you quickly discover harder to find risks in your organization. Consider fine-tuning your [risk score boosters](insider-risk-management-settings.md#indicators), [file type exclusions](insider-risk-management-settings.md#file-type-exclusions), [domains](insider-risk-management-settings.md#domains), and the minimum [indicator threshold settings](insider-risk-management-settings.md#indicator-level-settings-preview) for your policies.
