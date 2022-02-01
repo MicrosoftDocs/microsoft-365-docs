@@ -40,7 +40,7 @@ The setup guides are accessible from the [Setup guidance](https://aka.ms/setupgu
 
    ![Training & guides card in the Microsoft 365 admin center](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
 
-3. Select **Advanced deployment guides** and clikc on **All guides**
+3. Select **Advanced deployment guides** and then select **All guides**.
 
    ![Screenshot of the Setup guidance page in the Microsoft 365 admin center](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
 
