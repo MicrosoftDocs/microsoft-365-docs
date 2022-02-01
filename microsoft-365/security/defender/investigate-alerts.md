@@ -132,7 +132,7 @@ To manage a set of alerts similar to a specific alert, select **Classify alert**
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" alt-text="Manage an alert in the Microsoft 365 Defender portal":::
 
-If similar alerts were already classified in the past, you can save time by using recommentations to learn how the other alerts were resolved. From the summary details section, select **Recommendations**.
+If similar alerts were already classified in the past, you can save time by using Microsoft 365 Defender recommendations to learn how the other alerts were resolved. From the summary details section, select **Recommendations**.
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" alt-text="Example of selecting recommendations for an alert":::
 
