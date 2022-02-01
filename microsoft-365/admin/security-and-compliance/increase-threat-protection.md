@@ -209,7 +209,7 @@ Hackers sometimes hide malicious websites in links in email or other files. Safe
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvdwy?autoplay=false]
 
-Microsoft Defender for Office 365 , formerly called Microsoft 365 ATP, or Advanced Threat Protection, helps protect your business against malicious sites when people click links in Office apps.
+Microsoft Defender for Office 365, formerly called Microsoft 365 ATP, or Advanced Threat Protection, helps protect your business against malicious sites when people click links in Office apps.
 
 1. Go to the [admin center](https://admin.microsoft.com), and select **Setup**.
 
