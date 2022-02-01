@@ -129,9 +129,7 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
 1. From the dashboard, select **Add device**.
 
-2. Choose the type of device to add. You can choose to add Windows 10, Windows 11, Windows Server 2019, Windows Server 2016, and Linux (Ubuntu).
-
-    :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="lab setup with device options.":::
+2. Choose the type of device to add. You can choose to add Windows 10, Windows 11, Windows Server 2019, Windows Server 2016, and Linux (Ubuntu). 
 
    > [!NOTE]
    > If something goes wrong with the device creation process, you'll be notified and you'll need to submit a new request. If the device creation fails, it will not be counted against the overall allowed quota.
@@ -151,6 +149,28 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
    > [!TIP]
    > In the **Simulator status** column, you can hover over the information icon to know the installation status of an agent.
+
+## Add a domain controller (Preview)
+
+> [!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+Add a domain controller to run complex scenarios such as lateral movement and multistage attacks across multiple devices.
+
+ 
+>[!NOTE]
+>Domain support is only available in the Microsoft 365 Defender portal (security.microsoft.com).
+
+1. From the dashboard, select **Add device**.
+
+2. Select **Windows Server 2019**, then select **Set as domain controller**. 
+
+3. When your domain controller has been provisioned, you'll be able to create domain-joined devices by clicking **Add device**. Then select Windows 10 / Windows 11, and select **Join to domain**. 
+
+>[!NOTE]
+>Only one domain controller can be live at a time. The domain controller device will remain live as long as there is a live device connected to it.
+
+
 
 ## Request for more devices
 
