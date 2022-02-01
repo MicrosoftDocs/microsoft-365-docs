@@ -3,7 +3,6 @@ title: ASR rules deployment phase 3 - implement
 description: Provides guidance to implement your attack surface reduction rules deployment.
 keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
-ms.reviewer:
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,14 +11,16 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection: m365solution-scenario
+ms.date: 1/18/2022
 ---
 
-# Attack surface reduction rules deployment phase 3: implement
+# ASR rules deployment phase 3: implement
 
 The implementation phase moves the ring from testing into functional state.
 
@@ -122,10 +123,10 @@ You can customize the notification for when a rule is triggered and blocks an ap
 
 ## Additional topics in this deployment collection
 
-[ASR rules deployment guide - overview](attack-surface-reduction-rules-deployment.md)
+[ASR rules deployment overview](attack-surface-reduction-rules-deployment.md)
 
-[ASR rules deployment phase 1 - plan](attack-surface-reduction-rules-deployment-phase-1.md)
+[Phase 1: Plan](attack-surface-reduction-rules-deployment-phase-1.md)
 
-[ASR rules deployment phase 2 - test](attack-surface-reduction-rules-deployment-phase-2.md)
+[Phase 2: Test](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[ASR rules deployment phase 4 - operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
+[Phase 4: Operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
