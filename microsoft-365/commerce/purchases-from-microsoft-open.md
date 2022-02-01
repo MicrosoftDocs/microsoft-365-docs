@@ -18,7 +18,7 @@ ms.custom:
 - commerce_purchase
 search.appverid: MET150
 ROBOTS: NOINDEX
-description: "Learn how to activate, renew, or add licenses to an Microsoft 365 for business subscription."
+description: "Learn how to activate, renew, or add licenses to a Microsoft 365 for business subscription."
 ms.date: 10/21/2020
 ---
 
@@ -38,7 +38,7 @@ If you purchased Microsoft 365 for business from a [Microsoft Open License Progr
 
 If you bought Microsoft 365 from a Microsoft Open License Program, the system automatically enters the key for you when you activate, renew, or add licenses to a subscription.
   
-1. After you purchase a key from an Microsoft 365 partner, check your inbox for an email from Microsoft containing an activation link.
+1. After you purchase a key from a Microsoft 365 partner, check your inbox for an email from Microsoft containing an activation link.
 
     > [!TIP]
     >  The email is sent to the person listed as the online administrator in the volume licensing agreement. If you're not sure who is designated as the online administrator, ask your Microsoft 365 partner. 
