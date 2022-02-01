@@ -27,7 +27,7 @@ description: "Build assessments in Microsoft Compliance Manager to help you meet
 
 Compliance Manager helps you create assessments that evaluate your compliance with industry and regional regulations that apply to your organization. Assessments are built upon the framework of assessment templates, which contain the necessary controls, improvement actions, and, where applicable, Microsoft actions for completing the assessment. Setting up the most relevant assessments for your organization can help you implement policies and operational procedures to limit your compliance risk.
 
-All of your assessments are listed on the assessments tab of Compliance Manager. Learn more about [how to filter your view of your assessments and interpret status states](compliance-manager-setup.md#assessments-page).
+All of your assessments are listed on the assessments tab of Compliance Manager. Learn more about [how to filter your view of your assessments and interpret status states](compliance-manager-setup.md#assessments-page).
 
 > [!IMPORTANT]
 > The templates available to your organization for building assessments depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
@@ -84,14 +84,27 @@ To help you determine which assessment templates are the most useful for your or
 
 ## Create assessments
 
-To create an assessment, you will use a wizard to select the template it should use and set the assessment’s properties.
-
 > [!NOTE]
 > Only users who hold a Global Administrator, Compliance Manager Administration, or Compliance Manager Assessor role can create and modify assessments. Learn more about [roles and permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
-To begin building assessments, follow these steps.
+Before you begin, be sure you know which group you'll assign it to, or be prepared to create a new group for this assessment. Read details about [groups and assessments](#understand-groups-before-creating-assessments).
 
-1. Know which group you’ll assign your assessment to, or be prepared to create a new one for this assessment.
+To create an assessment, you'll use a wizard to select the template it should use and set the assessment’s properties. You can enter the wizard from two different pathways:
+
+- From your **Assessments** page, where you'll select the template and have the option to see which assessments we recommend for your organization; or
+- From your **Assessment templates** page, where you can start directly from a template.
+
+Either path places you into same creation wizard. The steps below explain how to create an assessment from your **Assessments** page.
+
+1. From your **Assessments** page, select **Add assessment** to enter the assessment creation wizard to start the guided process on your own.
+
+#### Getting recommendations for assessments based on your org type
+
+If you'd like to create one or more assessments at a time based on our recommendations, select **Add recommended assessments** from your **Assessments** page and follow these steps:
+   - Select one or more industries that identify your organization, then select **Next**
+   - Select one or more regions for your organization's location, then select **Next**
+   - On the **Choose assessment** screen, select the dropdown arrow next to **Recommended templates** to see the list of assessments we thing apply to your organization. Check the boxes next to the templates listed on this screen for which you want to create assessments. Then select **Next**.
+   - Review your final selections and select **Add recommended assessments** to create your new assessments.
 
 2. Open the assessment wizard. You can access this flyout pane from one of two places:
     - Go to your **assessments** page in Compliance Manager and select **Add assessment**; or
