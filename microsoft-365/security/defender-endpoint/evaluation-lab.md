@@ -194,9 +194,12 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
 
     ![Image of the connect button for test devices.](images/test-machine-table.png)
 
-2. Save the RDP file and launch it by selecting **Connect**.
 
+2. For **Windows devices**: save the RDP file and launch it by selecting **Connect**.<br> 
     ![Image of remote desktop connection.](images/remote-connection.png)
+
+    For **Linux devices**: you'll need to use a local SSH client and the provided command. 
+
 
     > [!NOTE]
     > If you don't have a copy of the password saved during the initial setup, you can reset the password by selecting **Reset password** from the menu:
