@@ -34,7 +34,7 @@ The Content Center site can be provisioned from the [SharePoint look book servic
 
 2. On the **Content Center site** page, select **Add to your tenant**.
 
-    ![Screenshot of the Add to your tenant button on the Content Center site template provisioning page.](../media/content-understanding/contracts-management-site-add-to-your-tenant.png)
+    ![Screenshot of the Add to your tenant button on the Content Center site template provisioning page.](../media/content-understanding/content-center-site-add-to-your-tenant.png)
 
 3. Enter your email address (for a notification of when your site is ready to use), the title you want to use for your site, and the site URL you want to use. 
 
