@@ -40,7 +40,7 @@ As a security researcher or SOC analyst, you must have access to the Microsoft 3
 - Search your tenant's security signal data and check for potential threats and suspicious activities. See [advanced hunting](advanced-hunting-overview.md).
 
 >[!Note]
->You can provide feedback to Microsoft about the TPs and FPs, not only at the end of the investigation, but also during the investigation process. This can help Microsoft with future analysis and classification of security events.
+>You can provide feedback to Microsoft about the True Positives and False Positives, not only at the end of the investigation, but also during the investigation process. This can help Microsoft with future analysis and classification of security events.
 >
 
 ## Microsoft Defender for Office 365

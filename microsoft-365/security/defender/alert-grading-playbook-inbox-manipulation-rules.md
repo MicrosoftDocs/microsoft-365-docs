@@ -86,28 +86,36 @@ Determine if the rules look suspicious according to the following rule parameter
 
    Some attackers will just delete all the incoming emails to hide their activity. Mostly, a rule of “delete all incoming emails” without filtering them with keywords is an indicator of malicious activity. 
  
-Here' i's an example of a “delete all incoming emails” rule configuration (as seen on RawEventData.Parameters) of the relevant event log. 
+Here's an example of a “delete all incoming emails” rule configuration (as seen on RawEventData.Parameters) of the relevant event log. 
 
 :::image type="content" source="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-delete-log.png" alt-text="Example of a delete all incoming emails rule configuration" lightbox="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-delete-log.png":::
 
 
-### 3. Investigate IP address
+### 3. Investigate the IP address
 
-Review the attributes of  the IP address that performed the relevant event of rule creation:
+Review the attributes of the IP address that performed the relevant event of rule creation:
 
-1. Search for other suspicious cloud activities that originated from the same IP in the tenant. For instance, suspicious activity might be multiple failed login attempts. 
-2. Is the ISP common and reasonable for this user?
-3. Is the location common and reasonable for this user?
+- Search for other suspicious cloud activities that originated from the same IP in the tenant. For instance, suspicious activity might be multiple failed login attempts. 
+- Is the ISP common and reasonable for this user?
+- Is the location common and reasonable for this user?
 
-## 4. Investigate suspicious activity by user prior to creating rules
+## 4. Investigate suspicious activity by the user prior to creating the rules
 
-You can review all user activities before creating rules, check for indicators of compromise, and investigate user actions that seem suspicious. 
+You can review all user activities before rules were created, check for indicators of compromise, and investigate user actions that seem suspicious. 
 
 For instance, for multiple failed logins, examine: 
 
-- Login activity: Validate that the login activity prior to the rule creation is not suspicious. (common location / ISP / user-agent). 
-- Alerts: Check whether the user received alerts prior to creating the rules. This could indicate that the user account might be compromised. For example, impossible travel alert, infrequent country, multiple failed logins, among others.)
-- Incident: Check whether the alert is associated with other alerts that indicate an incident. If so, then check whether the incident contains other true positive alerts.
+- Login activity 
+
+   Validate that the login activity prior to the rule creation is not suspicious. (common location / ISP / user-agent). 
+
+- Alerts
+
+   Check whether the user received alerts prior to creating the rules. This could indicate that the user account might be compromised. For example, impossible travel alert, infrequent country, multiple failed logins, among others.)
+
+- Incident
+
+   Check whether the alert is associated with other alerts that indicate an incident. If so, then check whether the incident contains other true positive alerts.
 
 ## Advanced hunting queries
 
@@ -167,7 +175,7 @@ CloudAppEvents
 ## Recommended actions
 
 1. Disable the malicious inbox rule. 
-2. Reset the user account credentials of the user. 
+2. Reset the user account's credentials.  You can also verify if the user account has been compromised with Microsoft Defender for CLoud Apps, which gets security signals from Azure Active Directory (Azure AD) Identity Protection.
 3. Search for other malicious activities performed by the impacted user account.
 4. Check for other suspicious activity in the tenant that originated from the same IP or from the same ISP (if the ISP is uncommon) to find other compromised user accounts.
 
