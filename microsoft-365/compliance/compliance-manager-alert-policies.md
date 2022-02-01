@@ -31,7 +31,7 @@ To create alerts, you first set up an alert policy to outline the conditions tha
 
 ## Understanding the Alerts and Alert policies pages
 
-To have access to the **Alerts** and **Alert policies** pages in Compliance Manager, a user must be assigned to the **Security reader** role in Azure Active Directory (learn more about [Azure roles in the Microsoft 365 compliance center](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-microsoft-365-compliance-center)). In order to create, edit, and manage alerts and alert policies, users need an additional Compliance Manager role. See [Alert policy permissions](#alert-policy-permissions) for details.
+To access the **Alerts** and **Alert policies** pages in Compliance Manager, a user must be assigned to the **Security reader** role in Azure Active Directory (AD) (learn more about [Azure roles in the Microsoft 365 compliance center](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-microsoft-365-compliance-center)). In order to create, edit, and manage alerts and alert policies, users need additional Azure AD and Compliance Manager roles. See [Alert policy permissions](#alert-policy-permissions) for details.
 
 ### Alert policies page
 
@@ -57,7 +57,12 @@ To start working with alerts, see [Viewing and managing alerts](#viewing-and-man
 
 ## Alert policy permissions
 
-The table below  outlines which users can create and edit alerts and alert policies based on their role type. In addition to the roles listed below, any user working with alerts and alert policies must also be assigned to the **Security reader** role in Azure Active Directory (learn more about [Azure roles in the Microsoft 365 compliance center](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-microsoft-365-compliance-center)).
+The table below outlines which users can create and edit alerts and alert policies based on their role type. In addition to the Compliance Manager roles listed below, users need an Azure AD role as follows:
+
+- The **Security reader** role in Azure AD is necessary to view alerts and alert policies.
+- The **Security administrator** role in Azure AD is necessary to create or update alert policies.
+ 
+Learn more about [Azure roles in the Microsoft 365 compliance center](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-microsoft-365-compliance-center).
 
 
 | Role | Can create and edit policies | Can edit alerts | 
