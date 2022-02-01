@@ -91,7 +91,7 @@ For the two paths in the diagram:
 
 When messages are permanently deleted from the SubstrateHolds folder, a delete operation is communicated to the backend Azure chat service, that then relays the same operation to the Teams client app. Delays in this communication or caching can explain why, for a short period of time, users who are assigned the policy might still see these messages in their Teams app, but data from these messages isn't returned in eDiscovery searches.
 
-In this scenario where the backend Azure chat service receives the delete operation, the message in the Teams client app is deleted for all users in the conversation, even if they weren't assigned the policy. This can include users from your own organization who have their own retention policy settings, and users from another organization. For these users, copies of the messages will continue to be returned in eDiscovery results and still subject to other retention policy settings.
+In this scenario where the backend Azure chat service receives the delete operation, the message in the Teams client app is deleted for all users in the conversation, even if they weren't assigned the policy. This can include users from your own organization or another organization, and the users have a retention policy with a longer retention period, or even no retention policy assigned to them. For these users, copies of the messages are still stored in their mailboxes and remain searchable for eDiscovery until the messages are permanently deleted by another retention policy.
 
 > [!IMPORTANT]
 > Messages visible in the Teams app are not an accurate reflection of whether they are retained or permanently deleted for compliance requirements.
