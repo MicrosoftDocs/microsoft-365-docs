@@ -122,8 +122,7 @@ Use the [Plan your passwordless deployment](https://aka.ms/passwordlesssetup) gu
 
 ### Integrate a third-party cloud app with Azure AD
 
-[This guide](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/azureadappintegration) helps helps IT admins to select and configure the App.
-
+[This guide](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/azureadappintegration) helps IT admins to select and configure the App.
 
 ### Plan your self-service password reset (SSPR) deployment
 
