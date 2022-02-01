@@ -286,7 +286,7 @@ If a customer rejects a Customer Lockbox request, no access to customer content 
 
 #### How do I set up alerts whenever a request has been approved?
 
-There is no built-in option to alert administrators. However, administrators can set up alerts using [Microsoft cloud App security](/cloud-app-security/getting-started-with-cloud-app-security#to-create-policies).
+There is no built-in option to alert administrators. However, administrators can set up alerts using [Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security#to-create-policies).
 
 #### Does Customer Lockbox protect against data requests from law enforcement agencies or other third parties?
 
