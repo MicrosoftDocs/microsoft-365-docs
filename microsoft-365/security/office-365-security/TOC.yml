@@ -50,10 +50,10 @@
              href: exchange-online-protection-overview.md
            - name: Recommended settings for configuring EOP and Defender for Office 365 Security
              href: recommended-settings-for-eop-and-office365.md
-         - name: Step 2 - Permissions
-           items:
-           - name: Give users access to the Security & Compliance Center
-             href: grant-access-to-the-security-and-compliance-center.md
+       - name: Step 2 - Permissions
+         items:
+         - name: Give users access to the Security & Compliance Center
+           href: grant-access-to-the-security-and-compliance-center.md
    - name: Migrate
      items: 
      - name: Migrate from a third-party protection service or device to Defender for Office 365
