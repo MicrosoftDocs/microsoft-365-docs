@@ -4880,6 +4880,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/put-an-in-place-hold-on-a-soft-deleted-mailbox.md",
+      "redirect_url": "/microsoft-365/compliance/inactive-mailboxes-in-office-365",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/overview-hardware-based-isolation.md",
       "redirect_url": "/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows",
       "redirect_document_id": false
@@ -5847,6 +5852,11 @@
     {
       "source_path": "microsoft-365/compliance/device-onboarding.md",
       "redirect_url": "/microsoft-365/compliance/device-onboarding-overview",
+      "redirect_document_id": false
+    },
+{
+      "source_path": "microsoft-365/compliance/get-started-with-retention.md",
+      "redirect_url": "/microsoft-365/compliance/get-started-with-information-governance",
       "redirect_document_id": false
     },
     {
