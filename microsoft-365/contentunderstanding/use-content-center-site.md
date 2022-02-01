@@ -41,9 +41,9 @@ The Content Center site can be provisioned from the [SharePoint look book servic
 
 3. Enter your email address (for a notification of when your site is ready to use), the title you want to use for your site, and the site URL you want to use. 
 
-4. Select **Provision**, and in a short time your site will be ready for you to use. You’ll get an email (sent to the email address you provided) indicating that your request to provision the Contracts Management site template is completed.
+4. Select **Provision**, and in a short time your site will be ready for you to use. You’ll get an email (sent to the email address you provided) indicating that your request to provision the Content Center site template is completed.
 
-5. Select **Open site**, and you’ll see your Contracts Management site. From here, you can explore the site and edit the pages and content. 
+5. Select **Open site**, and you’ll see your Content Center site. From here, you can explore the site and learn more about SharePoint Syntex. 
 
 For more information about provisioning from the SharePoint look book service, see [Provision a new learning pathways solution](https://docs.microsoft.com/en-us/office365/customlearning/custom_provision).
 
