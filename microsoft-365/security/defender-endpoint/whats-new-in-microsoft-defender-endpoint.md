@@ -57,7 +57,7 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 ## February
 
-- Evaluation lab enhancements: You can now add domain contoller devices so you can simulate complex scenarios that involve domain controlers, lateral movement, and multistage attacks. [Learn more](evaluation-lab.md).
+- Evaluation lab enhancements: You can now add domain contoller devices so you can simulate complex scenarios that involve domain controllers, lateral movement, and multistage attacks. [Learn more](evaluation-lab.md).
 
 
 ## January 2022
