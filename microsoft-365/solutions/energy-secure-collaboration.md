@@ -86,9 +86,9 @@ Microsoft 365 provides common policy capabilities for Microsoft Teams through it
 - The proliferation of Microsoft Teams that are not necessary or used
 - The over-retention of data that is no longer required by the organization
 
-Administrators may specify an expiration period in days for Office 365 Groups, such as 90, 180 or 365 days. If a service which is backed by an Office 365 group is inactive for the expiration period, group owners are notified and if no action is taken then the Office 365 Group and all its related services including Microsoft Teams will be deleted. 
+Administrators can specify an expiration period in days for Office 365 Groups (such as 90, 180 or 365 days). If a service backed by an Office 365 group is inactive for the expiration period, group owners are notified. If no action is taken, then the Office 365 Group and all its related services including Microsoft Teams are deleted. 
 
-The over-retention of data in a Microsoft Team can pose litigation risks to organizations, and the use of expiration policies is a recommended method for protecting the organization. Combined with built-in retention labels and policies, Microsoft 365 helps ensure that organizations are only retaining the data required to meet regulatory compliance obligations.
+The over-retention of data in a Microsoft Team can pose litigation risks to organizations. The use of expiration policies is a recommended method for protecting the organization. Combined with built-in retention labels and policies, Microsoft 365 helps ensure that organizations are only retaining the data required to meet regulatory compliance obligations.
 
 ### Teams: Integrate custom requirements with ease
 
