@@ -44,7 +44,7 @@ Click the link in the **Example** column to step through deployment stages and g
 
 |Customer/Channel Offering|Windows 10|Microsoft 365 Apps for Enterprise (Windows 10)|Example|
 |:-------|:-------|:-----|:-------|
-|Right for customers who want the latest releases as soon as they are ready.|Semi-Annual Channel|[Current Channel](/deployoffice/overview-update-channels#current-channel-overview)|[Latest releases](deploy-update-channels-examples-rapid-deploy.md)|
+|Right for customers who want the latest releases as soon as they’re ready.|Semi-Annual Channel|[Current Channel](/deployoffice/overview-update-channels#current-channel-overview)|[Latest releases](deploy-update-channels-examples-rapid-deploy.md)|
 |Right for enterprises who want the latest release with more predictability.|Semi-Annual Channel|[Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview)||
 |Right for enterprises with need for extensive IT testing before each update.|Semi-Annual Channel|[Semi-Annual Enterprise Channel](/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview)||
 |
