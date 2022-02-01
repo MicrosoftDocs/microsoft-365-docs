@@ -58,6 +58,10 @@ Get an introduction to SharePoint Syntex and learn how you can use it for your o
 
 Learn about three types of models, and see how you can use them to resolve business issues for search, business processes, compliance, and others.
 
+### Take an interactive tour to create a model
+
+See how to build a document understanding model in the models library, and then enable a pretrained sample model.
+
 ### SharePoint Syntex in 6 simple steps
 
 Begin with a content center, and then learn step-by-step how to create models to identify, classify, and extract the information you need.
@@ -70,16 +74,12 @@ Learn how to use SharePoint Syntex to take what is manual and turn it into somet
 
 Learn how to implement steps to reduce risks and ensure the data and information your business captures is used in a secure and thoughtful way.
 
-### Take an interactive tour to create a model
-
-See how to build a document understanding model in the models library, and then enable a pretrained sample model.
-
 ### View model activity
 
-Use example content for model activity to illustrate how the data is visualized. 
+See how content is used to illustrate model activity and to provide more information about how your models are being used.
 
-### Additional resources
+### Find additional resources
 
-Find additional resources and scenarios to help you learn more about SharePoint Syntex.
+Discover additional resources and scenarios to help you learn more about SharePoint Syntex.
 
 
