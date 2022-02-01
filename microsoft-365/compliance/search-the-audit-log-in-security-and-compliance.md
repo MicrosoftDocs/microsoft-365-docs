@@ -1160,9 +1160,9 @@ In most services, auditing is enabled by default after you initially turn on aud
 
 No. The auditing service pipeline is near real time, and therefore can't support de-duplication.
 
-**Does auditing data flow across geographies?**
+**Where is auditing data stored?**
 
-In general, no. We currently have auditing pipeline deployments in the NA (North America), EMEA (Europe, Middle East, and Africa) and APAC (Asia Pacific) regions. However, we may need to transfer data across these regions for load-balancing during live-site issues. When we do perform these activities, the data in transit is encrypted. For multi-geo organizations, the audit data collected from all regions of the organization will be stored only in the organization's home region.
+We currently have auditing pipeline deployments in the NA (North America), EMEA (Europe, Middle East, and Africa) and APAC (Asia Pacific) regions. Tenants homed in these regions will have their auditing data stored in region. For multi-geo tenants, the audit data collected from all regions of the tenant will be stored only in tenant's home region. However, we may flow the data across these regions for load-balancing and only during live-site issues. When we do perform these activities, the data in transit is encrypted. 
 
 **Is auditing data encrypted?**
 
