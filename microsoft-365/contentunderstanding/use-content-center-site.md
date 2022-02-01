@@ -17,9 +17,12 @@ description: Learn how to provision and use the Content Center site template in 
 
 # Use the Content Center site template for Microsoft SharePoint Syntex
 
-The Content Center site is a ready-to-deploy SharePoint site template that helps your organization maximize the value of SharePoint Syntex. The site is designed to let you create a professional site to manage, process, and track the status of contracts in your organization.
+The SharePoint Syntex Content Center site is a ready-to-deploy SharePoint site template designed to help you better understand SharePoint Syntex capabilities.
 
-The Content Center site includes pre-populated pages, web parts, and site navigation. The site can be customized to incorporate your organization's own branding, employee information, policy and planning information, workflow, contacts, and resources.
+You'll be introduced to the tools and information you’ll need to create and train your own models. You'll be able to use this site as a central content repository or as the control center for managing your own SharePoint Syntex models.
+  
+> [!NOTE]
+> In this site, models can be trained and evaluated using your own content. However, to apply the models to libraries, a license for SharePoint Syntex is required.  
 
 ![Screenshot of the Content Center site template provisioning page.](../media/content-understanding/content-center-site-provisioning-page.png)
 
@@ -46,40 +49,38 @@ For more information about provisioning from the SharePoint look book service, s
 
 ## Explore the Content Center site
 
-Before you share the Contracts Management site with other users, you'll want to customize the site to meet your requirements. 
+The Content Center site includes pre-populated pages that walk you through the steps to begin using SharePoint Syntex in your organization. 
 
-### Customize the look and feel of your site
+### Get started with SharePoint Syntex
 
-Customize the following elements of your site to fit the need of your organization:
+Watch an overview video
 
-- Update the [branding](https://support.microsoft.com/office/customize-your-sharepoint-site-320b43e5-b047-4fda-8381-f61e8ac7f59b) on the Contracts Management site to align with your organization.
-- Customize the [Hero web part](https://support.microsoft.com/office/use-the-hero-web-part-d57f449b-19a0-4b0d-8ce3-be5866430645) to include images of real sites in your organization where possible.
-- Customize the [People web part](https://support.microsoft.com/office/show-people-profiles-on-your-page-with-the-people-web-part-7e52c5f6-2d72-48fa-a9d3-d2750765fa05) to include contact information for the contract managers or others.
-- Customize the [Text web part](https://support.microsoft.com/office/add-text-and-tables-to-your-page-with-the-text-web-part-729c0aa1-bc0d-41e3-9cde-c60533f2c801) to add paragraphs to and formatting options like styles, bullets, indentations, highlighting, and links.
-- Customize the [Image web part](https://support.microsoft.com/office/use-the-image-web-part-a63b335b-ad0a-4954-a65d-33c6af68beb2) to add an image to a page.
-- Customize the [Quick Links web part](https://support.microsoft.com/office/use-the-quick-links-web-part-e1df7561-209d-4362-96d4-469f85ab2a82) to organize and display links to other resources.
-- Add [other web parts](https://support.microsoft.com/office/using-web-parts-on-sharepoint-pages-336e8e92-3e2d-4298-ae01-d404bbe751e0) to your site as needed.
-- Customize the [page layouts](https://support.microsoft.com/office/add-sections-and-columns-on-a-sharepoint-modern-page-fc491eb4-f733-4825-8fe2-e1ed80bd0899) as needed.
-- Add [new pages](https://support.microsoft.com/office/create-and-use-modern-pages-on-a-sharepoint-site-b3d46deb-27a6-4b1e-87b8-df851e503dec) to add additional support or informational resources.
+### Learn about model types
 
-### Customize the site navigation
 
-You have control of the site navigation for the Contracts Management site. Use the following resources to help you make changes that align with your organization:
 
-- Customize the [site navigation](https://support.microsoft.com/office/customize-the-navigation-on-your-sharepoint-site-3cd61ae7-a9ed-4e1e-bf6d-4655f0bf25ca).
-- [Associate this site with a hub](https://support.microsoft.com/office/associate-a-sharepoint-site-with-a-hub-site-ae0009fd-af04-4d3d-917d-88edb43efc05).
-- Use [audience targeting](https://support.microsoft.com/office/target-navigation-news-and-files-to-specific-audiences-33d84cb6-14ed-4e53-a426-74c38ea32293) to target specific navigational links to specific users. 
-- [Delete unwanted pages](https://support.microsoft.com/office/delete-a-page-from-a-sharepoint-site-1d4197b8-31b6-460d-906b-3fb492a51db1) if you need to.
+### SharePoint Syntex in 6 simple steps
 
-## Share the site with others
 
-[Share your site with others](https://support.microsoft.com/office/share-a-site-958771a8-d041-4eb8-b51c-afea2eae3658). Partner with others in your organization to ensure the Contracts Management site is widely known and adopted.
 
-Key success factors to managing the Contracts Management site:
+### Streamline everyday processes and tasks
 
-- Celebrate the launch of your Contracts Management site.
-- Create and post news announcing the new resource.
-- Ensure users have an outlet for questions and feedback.
-- Use insights from [site analytics](https://support.microsoft.com/office/view-usage-data-for-your-sharepoint-site-2fa8ddc2-c4b3-4268-8d26-a772dc55779e) to promote content on the home page, update navigation, or rewrite content for clarity.
-- Review the Contracts Management site as needed to ensure content is fresh and still relevant.
+
+
+### Manage compliance
+
+
+
+### Take a tour of how to create a document understanding model
+
+
+
+### View model activity
+
+Example content for model activity is provided to illustrate how the data is visualized. 
+
+### Additional resources
+
+Additional resources are provided to help you learn more about SharePoint Syntex.
+
 
