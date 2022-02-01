@@ -2,8 +2,8 @@
 title: "Build and manage assessments in Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -233,8 +233,6 @@ To delete an assessment, follow the steps below:
 2. Select **Delete assessment** in the upper-right corner of your screen.
 
 3. A window will appear asking you to confirm that you want to permanently delete the assessment. Select **Delete assessment** to close the window. You’ll get a confirmation window that your assessment was deleted from Compliance Manager.
-
-If you delete the only assessment in a group, then that group is also deleted from Compliance Manager.
 
 > [!NOTE]
 > You can't delete all of your assessments. Organizations need at least one assessment for Compliance Manager to function properly. If the assessment you want to delete is the only one, add another assessment before deleting the other assessment.

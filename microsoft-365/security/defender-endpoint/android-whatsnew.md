@@ -30,7 +30,7 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 
 ## Threat and Vulnerability Management
 
-On November 2, 2021, we announced the public preview of Threat and Vulnerability management on Android and iOS. For more information, see [the techcommunity post here](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/reduce-risk-across-your-environments-with-the-latest-threat-and/ba-p/2902691).
+On January 25, 2022, we announced the general availability of Threat and Vulnerability management on Android and iOS. For more details, see [the techcommunity post here](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
 
 ## Upcoming permission changes for Microsoft Defender for Endpoint running Android 11 or later (Nov 2021)
 
