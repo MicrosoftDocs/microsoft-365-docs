@@ -14,7 +14,6 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
 ms.prod: m365-security
 ms.technology: m365d

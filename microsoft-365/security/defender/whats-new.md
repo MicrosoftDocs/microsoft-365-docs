@@ -15,7 +15,6 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - M365-security-compliance
-  - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
 ---
@@ -40,6 +39,8 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Endpoint](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
+
+You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter). 
 
 ## December 2021
 
