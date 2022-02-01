@@ -80,7 +80,7 @@ For example, Microsoft Teams enables field staff to join conference calls while 
 
 Microsoft 365 provides common policy capabilities for Microsoft Teams through its use of Office 365 Groups as an underlying membership provider. These policies can help improve collaboration and help meet compliance needs.
 
-**Office 365 Group Naming Policies** help to ensure that Office 365 Groups, and therefore Microsoft Teams, are named according to corporate policy. The name of a Team can present challenges if not named appropriately – for example, employees may not know which teams to work or share information within if they are incorrectly named. Group naming policies can enforce good hygiene and may also prevent use of specific words, such as reserved words or inappropriate terminology. 
+**Office 365 Group Naming Policies** help ensure that Office 365 Groups, and therefore Microsoft Teams, are named according to corporate policy. The name of a Team can present challenges if not named appropriately. For example, employees might not know which teams to work or share information within if they are incorrectly named. Group naming policies help enforce good hygiene and may also prevent use of specific words, such as reserved words or inappropriate terminology. 
 
 **Office 365 Group Expiration Policies** help to ensure that Office 365 Groups, and therefore Microsoft Teams, are not retained for longer periods of time than required by the organization. This capability helps to prevent two key information management issues:
 - The proliferation of Microsoft Teams that are not necessary or used
