@@ -98,7 +98,7 @@ The [Identity security for teams guide](https://admin.microsoft.com/Adminportal/
 
 ### Add or sync users to Microsoft 365
 
-[This guide](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/modernonboarding/identitywizard) will help streamline the process of getting your user accounts setup in **Microsoft 365**. Based on your environment and needs, you can choose to add users individually, migrate your on-premises directory with Azure AD cloud sync or Azure AD Connect, or troubleshoot existing sync problems when necessary.
+[This guide](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/modernonboarding/identitywizard) will help streamline the process of getting your user accounts set up in **Microsoft 365**. Based on your environment and needs, you can choose to add users individually, migrate your on-premises directory with Azure AD cloud sync or Azure AD Connect, or troubleshoot existing sync problems when necessary.
 
 ### Azure AD setup guide
 
