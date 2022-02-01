@@ -83,10 +83,7 @@ When you have more than one retention policy, and when you also use retention la
         - **Teams chats**: Messages from private 1:1 chats, group chats, and meeting chats.
         - **Teams private channel messages**: Messages from private channel chats and private channel meetings.
         
-       By default, [all teams and all users are selected](retention-settings.md#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the [**Choose** and **Exclude** options](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions). However, before you change the default, be aware of the following consequences for a retention policy that deletes messages when it's configured for includes or excludes:
-        
-        - For group chat messages and private channel messages, because a copy of messages are saved in each user's mailbox who are included in the conversation, copies of messages will continue to be returned in eDiscovery results from users who weren't assigned the policy.
-        - For users who weren't assigned the policy, deleted messages as a result of the policy will be returned in their Teams search results but won't display the contents of the message.
+       By default, [all teams and all users are selected](retention-settings.md#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the [**Choose** and **Exclude** options](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
 
 5. For **Decide if you want to retain content, delete it, or both** page, specify the configuration options for retaining and deleting content.
 
