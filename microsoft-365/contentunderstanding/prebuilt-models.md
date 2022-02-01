@@ -73,7 +73,7 @@ Follow these steps to create a prebuilt model to classify documents in SharePoin
 
 ## Select extractors for your model
 
-On the extractor details page, you will see the document area on the right and the **Extractors** panel on the left. The **Extractors** panel shows the list of extractors that have been identified in the document.
+On the extractor details page, you'll see the document area on the right and the **Extractors** panel on the left. The **Extractors** panel shows the list of extractors that have been identified in the document.
 
    ![Screenshot of the extractor details page and Extractor panel.](../media/content-understanding/prebuilt-extractor-details-page.png) 
 
@@ -104,7 +104,7 @@ Continue to select additional extractors you want to you use. You can also add o
 
 ## Rename an extractor
 
-You can rename an extractor either from the model home page or from the **Extractors** panel. You might consider renaming selected extractors because these will be used as the column names when the model is applied to the library.
+You can rename an extractor either from the model home page or from the **Extractors** panel. You might consider renaming selected extractors because these names will be used as the column names when the model is applied to the library.
 
 To rename an extractor from the model home page:
 
