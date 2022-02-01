@@ -64,7 +64,7 @@ When this setting is enabled, people added as staff in booking calendars will ge
 
 ## Restrict collection of customer data
 
-If you select a checkbox for any of these options, these fields won't be included on any forms shown to your clients or customers. This helps prevent customers from sharing sensitive data with you.
+For compliance reasons, you may not want to collect some customer information. If you select a checkbox for any of these options, these fields won't be included on any forms shown to your clients or customers.
 
 :::image type="content" source="../media/restrict-collection-customer-data.png" alt-text="Screenshot: Select the checkboxes to help prevent customers from sharing sensitive data with you":::
 
