@@ -88,16 +88,18 @@ All our updates contain
 &ensp;Engine: **1.1.18900.2**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
-Engine version: 1.1.18900.2
-Security intelligence update version: 1.357.8.0
+Engine version: 1.1.18900.2 <br/>
+Security intelligence update version: 1.357.8.0 <br/>
 
 ### What's new
 
 - Behavior monitoring improvements in filtering performance
 
 ### Known Issues
+
 No known issues
-<br/>
+
+<br/><br/>
 </details><details>
 <summary>November-2021 (Platform: 4.18.2111.5 | Engine: 1.1.18800.4)</summary>
 
