@@ -64,8 +64,8 @@ For security reasons, the package used to Offboard devices will expire 30 days a
     Date type: String
     Value: [Copy and paste the value from the content of the DeviceCompliance_valid_until_YYYY-MM-DD.offboarding file]
     ```
-
-For more information on Microsoft Intune policy settings see, [Windows 10 policy settings in Microsoft Intune](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
+> [!NOTE]
+> If Microsoft Defender for Endpoint is already configured, you can **Turn on device onboarding** and Step 6 is no longer required.
 
 > [!NOTE]
 > The **Health Status for offboarded devices** policy uses read-only properties and can't be remediated.
