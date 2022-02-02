@@ -102,7 +102,7 @@ Adding an information management policy to a content type makes it easy to assoc
       > [!NOTE]
       >  This option is only available if the action you selected can be repeated. For example, you cannot set recurrence for the action **Permanently Delete**.
 
-   5. Chose **OK**.
+   5. Choose **OK**.
 
 8. To enable auditing for the documents and items that are subject to this policy, choose **Enable Auditing**, and then specify the events you want to audit.
 
@@ -223,7 +223,7 @@ You need at least the Manage Lists permission to change the information manageme
 
 If information management policies have already been created for your site as site collection policies, you can apply one of the policies to a content type. By doing this, you can apply the same policy to multiple content types in a site collection that do not share the same parent content type.
 
- If you want to apply policies to multiple content types in a site collection, and you have a Managed Metadata Service configured, you can use Content Type Publishing to publish out information management polices to multiple site collections. See the section [Apply a policy across site collections](#apply-a-policy-across-site-collections) for more information.
+ If you want to apply policies to multiple content types in a site collection, and you have a Managed Metadata Service configured, you can use Content Type Publishing to publish out information management policies to multiple site collections. See the section [Apply a policy across site collections](#apply-a-policy-across-site-collections) for more information.
 
 1. Navigate to the list or library that contains the content type to which you want to apply a policy.
 
