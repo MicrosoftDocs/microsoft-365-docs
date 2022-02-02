@@ -95,20 +95,28 @@ From a security perspective, Microsoft has an array of security features which c
 
 In many cases, this implementation can be achieved in a matter of hours, allowing rapid resolution to one of the most pressing problems facing organizations as they rapidly shift to full scale remote working. For VPN split tunnel implementation guidance, see [Implementing VPN split tunneling for Office 365](microsoft-365-vpn-implement-split-tunnel.md).
 
-## Related topics
+## Related articles
 
-[Implementing VPN split tunneling for Office 365](microsoft-365-vpn-implement-split-tunnel.md)
+[Overview: VPN split tunneling for Microsoft 365](microsoft-365-vpn-split-tunnel.md)
 
-[Office 365 performance optimization for China users](microsoft-365-networking-china.md)
+[Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md)
+
+[Common VPN split tunneling scenarios for Microsoft 365](microsoft-365-vpn-common-scenarios.md)
+
+[Securing Teams media traffic for VPN split tunneling](microsoft-365-vpn-securing-teams.md)
+
+[Special considerations for Stream and live events in VPN environments](microsoft-365-vpn-stream-and-live-events.md)
+
+[Microsoft 365 performance optimization for China users](microsoft-365-networking-china.md)
+
+[Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md)
+
+[Assessing Microsoft 365 network connectivity](assessing-network-connectivity.md)
+
+[Microsoft 365 network and performance tuning](network-planning-and-performance.md)
 
 [Alternative ways for security professionals and IT to achieve modern security controls in today's unique remote work scenarios (Microsoft Security Team blog)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
 [Enhancing VPN performance at Microsoft: using Windows 10 VPN profiles to allow auto-on connections](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
 [Running on VPN: How Microsoft is keeping its remote workforce connected](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
-
-[Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md)
-
-[Assessing Office 365 network connectivity](assessing-network-connectivity.md)
-
-[Microsoft 365 connectivity test](https://aka.ms/netonboard)

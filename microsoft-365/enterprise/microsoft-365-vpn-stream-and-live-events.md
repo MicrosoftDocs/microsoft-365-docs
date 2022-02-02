@@ -535,3 +535,29 @@ It does not, the advice above is purely for those consuming the service. Present
 ### Does this configuration risk traffic other than Live Events &amp; Stream being sent direct?
 
 Yes, due to shared FQDNs used for some elements of the service, this is unavoidable. This traffic is normally sent via a corporate proxy which can apply inspection. In a VPN split tunnel scenario, using both the FQDNs and IPs will scope this risk down to a minimum, but it will still exist. Customers can remove the **\*.azureedge.net** domain from the offload configuration and reduce this risk to a bare minimum but this will remove the offload of Stream-supported Live Events (Teams-scheduled, external encoder events, Yammer events produced in Teams, Yammer-scheduled external encoder events, and Stream scheduled events or on-demand viewing from Stream). Events scheduled and produced in Teams are unaffected.
+
+## Related articles
+
+[Overview: VPN split tunneling for Microsoft 365](microsoft-365-vpn-split-tunnel.md)
+
+[Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md)
+
+[Common VPN split tunneling scenarios for Microsoft 365](microsoft-365-vpn-common-scenarios.md)
+
+[Securing Teams media traffic for VPN split tunneling](microsoft-365-vpn-securing-teams.md)
+
+[Special considerations for Stream and live events in VPN environments](microsoft-365-vpn-stream-and-live-events.md)
+
+[Microsoft 365 performance optimization for China users](microsoft-365-networking-china.md)
+
+[Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md)
+
+[Assessing Microsoft 365 network connectivity](assessing-network-connectivity.md)
+
+[Microsoft 365 network and performance tuning](network-planning-and-performance.md)
+
+[Alternative ways for security professionals and IT to achieve modern security controls in today's unique remote work scenarios (Microsoft Security Team blog)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+
+[Enhancing VPN performance at Microsoft: using Windows 10 VPN profiles to allow auto-on connections](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
+
+[Running on VPN: How Microsoft is keeping its remote workforce connected](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)

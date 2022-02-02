@@ -72,3 +72,29 @@ Once the policy is in place, you should confirm It's working as expected. There 
 ## Additional support logs
 
 If you need further data to troubleshoot, or are requesting assistance from Microsoft support, obtaining the following information should allow you to expedite finding a solution. Microsoft support's **TSS Windows CMD-based universal TroubleShooting Script toolset** can help you to collect the relevant logs in a simple manner. The tool and instructions on use can be found at <https://aka.ms/TssTools>.
+
+## Related articles
+
+[Overview: VPN split tunneling for Microsoft 365](microsoft-365-vpn-split-tunnel.md)
+
+[Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md)
+
+[Common VPN split tunneling scenarios for Microsoft 365](microsoft-365-vpn-common-scenarios.md)
+
+[Securing Teams media traffic for VPN split tunneling](microsoft-365-vpn-securing-teams.md)
+
+[Special considerations for Stream and live events in VPN environments](microsoft-365-vpn-stream-and-live-events.md)
+
+[Microsoft 365 performance optimization for China users](microsoft-365-networking-china.md)
+
+[Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md)
+
+[Assessing Microsoft 365 network connectivity](assessing-network-connectivity.md)
+
+[Microsoft 365 network and performance tuning](network-planning-and-performance.md)
+
+[Alternative ways for security professionals and IT to achieve modern security controls in today's unique remote work scenarios (Microsoft Security Team blog)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+
+[Enhancing VPN performance at Microsoft: using Windows 10 VPN profiles to allow auto-on connections](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
+
+[Running on VPN: How Microsoft is keeping its remote workforce connected](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)

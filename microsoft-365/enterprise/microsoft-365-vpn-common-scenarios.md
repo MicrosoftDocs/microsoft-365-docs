@@ -62,3 +62,29 @@ Microsoft uses this model internally. You can find more information on Microsoft
 A more advanced version of model number 2, whereby any internal services are published through a modern security approach or SDWAN solution such as Azure AD Proxy, Defender for Cloud Apps, Zscaler ZPA, etc.
 
 ![Split Tunnel VPN model 5.](../media/vpn-split-tunneling/vpn-model-5.png)
+
+## Related articles
+
+[Overview: VPN split tunneling for Microsoft 365](microsoft-365-vpn-split-tunnel.md)
+
+[Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md)
+
+[Common VPN split tunneling scenarios for Microsoft 365](microsoft-365-vpn-common-scenarios.md)
+
+[Securing Teams media traffic for VPN split tunneling](microsoft-365-vpn-securing-teams.md)
+
+[Special considerations for Stream and live events in VPN environments](microsoft-365-vpn-stream-and-live-events.md)
+
+[Microsoft 365 performance optimization for China users](microsoft-365-networking-china.md)
+
+[Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md)
+
+[Assessing Microsoft 365 network connectivity](assessing-network-connectivity.md)
+
+[Microsoft 365 network and performance tuning](network-planning-and-performance.md)
+
+[Alternative ways for security professionals and IT to achieve modern security controls in today's unique remote work scenarios (Microsoft Security Team blog)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+
+[Enhancing VPN performance at Microsoft: using Windows 10 VPN profiles to allow auto-on connections](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
+
+[Running on VPN: How Microsoft is keeping its remote workforce connected](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
