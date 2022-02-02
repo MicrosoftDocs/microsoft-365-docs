@@ -55,10 +55,6 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 
-## February
-
-- Evaluation lab enhancements: You can now add domain contoller devices so you can simulate complex scenarios that involve domain controllers, lateral movement, and multistage attacks. [Learn more](evaluation-lab.md).
-
 
 ## January 2022
 
