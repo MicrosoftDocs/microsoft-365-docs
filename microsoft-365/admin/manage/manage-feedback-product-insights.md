@@ -138,6 +138,8 @@ Charts are filtered by the NPS rating as follows:
 
 You can export raw data for further analysis using the Export to CSV functionality. You can search for keywords in the comment section that corresponds to the feedback area.
 
+:::image type="content" source="../../media/export-to-csv.png" alt-text="Screenshot: Select to export to CSV":::
+
 > [!NOTE]
 > The raw data includes all types of feedback, including non NPS feedback.
 
