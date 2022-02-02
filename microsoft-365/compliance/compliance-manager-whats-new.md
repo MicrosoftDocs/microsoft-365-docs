@@ -25,9 +25,9 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 ## February 2022
 
-### Premium assessment template recommendations
+### Try recommended assessment templates for your organization
 
-Your organization can now get recommendations from Compliance Manager about which assessment templates may be most relevant to you. To find out more about our recommendation wizard and how to try out these templates before buying a license, see [Set up premium assessments trial](compliance-manager-setup.md#set-up-premium-assessments-trial).
+Your organization can now get recommendations from Compliance Manager about which assessments may be most relevant to you, with a quick setup process to get up and running. To learn more about recommendations and how to try premium assessment templates before buying a license, see [Start a premium assessments trial](compliance-manager-setup.md#start-a-premium-assessments-trial).
 
 ## November 2021
 
