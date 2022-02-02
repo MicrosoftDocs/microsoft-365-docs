@@ -21,6 +21,16 @@ description: "Special considerations for Stream and live events in VPN environme
 
 # Special considerations for Stream and live events in VPN environments
 
+>[!NOTE]
+>This article is part of a set of articles that address Microsoft 365 optimization for remote users.
+
+>- For an overview of using VPN split tunneling to optimize Microsoft 365 connectivity for remote users, see [Overview: VPN split tunneling for Microsoft 365](microsoft-365-vpn-split-tunnel.md).
+>- For a detailed list of VPN split tunneling scenarios, see [Common VPN split tunneling scenarios for Microsoft 365](microsoft-365-vpn-common-scenarios.md).
+>- For detailed guidance on implementing VPN split tunneling, see [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
+>- For guidance on securing Teams media traffic in VPN split tunneling environments, see [Securing Teams media traffic for VPN split tunneling](microsoft-365-vpn-securing-teams.md).
+>- For information about how to configure Stream and live events in VPN environments, see [Special considerations for Stream and live events in VPN environments](microsoft-365-vpn-stream-and-live-events.md).
+>- For information about optimizing Microsoft 365 worldwide tenant performance for users in China, see [Microsoft 365 performance optimization for China users](microsoft-365-networking-china.md).
+
 Microsoft 365 Live Events traffic (this includes attendees to Teams-produced live events and those produced with an external encoder via Teams, Stream, or Yammer) and on-demand Stream traffic is currently categorized as **Default** versus **Optimize** in the [URL/IP list for the service](urls-and-ip-address-ranges.md). These endpoints are categorized as **Default** because they're hosted on CDNs that may also be used by other services. Customers generally prefer to proxy this type of traffic and apply any security elements normally done on endpoints such as these.
 
 Many customers have asked for URL/IP data needed to connect their users to Stream/Live Events directly from their local internet connection, rather than route the high-volume and latency-sensitive traffic via the VPN infrastructure. Typically, this isn't possible without both dedicated namespaces and accurate IP information for the endpoints, which isn't provided for Microsoft 365 endpoints categorized as **Default**.
