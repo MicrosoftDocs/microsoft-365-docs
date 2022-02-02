@@ -1,6 +1,6 @@
 ---
-title: Investigate suspicious inbox forwarding rules
-description: Investigate suspicious inbox forwarding rules to review the alerts and take recommended actions to remediate the attack and protect your network.
+title: Alert grading for suspicious inbox forwarding rules
+description: Alert grading for suspicious inbox forwarding rules to review the alerts and take recommended actions to remediate the attack and protect your network.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,7 +22,7 @@ search.appverid:
   - MOE150
 ms.technology: m365d
 ---
-# Investigate suspicious inbox forwarding rules
+# Alert grading for suspicious inbox forwarding rules
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -31,22 +31,21 @@ ms.technology: m365d
 
 Threat actors can use compromised user accounts for several malicious purposes including reading emails in a user’s inbox, creating inbox rules to forward emails to external accounts, sending phishing mails, among others. Malicious inbox rules are widely common during business email compromise (BEC) and phishing campaigns, and it important to monitor them consistently.
 
-This playbook helps you investigate alerts for suspicious inbox forwarding rules and quickly grade them as either a True Positive or a False Positive. You can then take recommended actions for the True Positive alerts to remediate the attack. 
+This playbook helps you investigate alerts for suspicious inbox forwarding rules and quickly grade them as either a True Positive (TP) or a False Positive (TP). You can then take recommended actions for the TP alerts to remediate the attack. 
 
 For an overview of alert grading for Microsoft Defender for Office 365 and Microsoft Defender for Cloud Apps, see the [introduction article](alert-grading-playbooks.md).
 
 The results of using this playbook are:
 
-- You have identified the alerts associated with inbox forwarding rules as malicious (True Positive) or benign (False Positive) activities.
+- You have identified the alerts associated with inbox forwarding rules as malicious (TP) or benign (FP) activities.
 
-    - If malicious, you have removed malicious inbox forwarding rules.
+  If malicious, you have removed malicious inbox forwarding rules.
 
 - You have taken the necessary action if emails have been forwarded to a malicious email address.
 
-
 ## Inbox rules
 
-Inbox rules are set to automatically manage email messages based on predefined criteria. For example, you can create an inbox rule to move all messages from your manager into another folder, or forward messages you receive to another email address.
+You configure inbox rules to automatically manage email messages based on predefined criteria. For example, you can create an inbox rule to move all messages from your manager into another folder, or forward messages you receive to another email address.
 
 ### Suspicious inbox forwarding rules
 
@@ -58,7 +57,7 @@ Suspicious inbox forwarding rules might be very difficult to detect because main
 
 ## Workflow
 
-The figure shows the steps you should follow to investigate this type of alert.
+Here is the workflow to identify suspicious email forwarding rules.
  
 :::image type="content" source="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-workflow.png" alt-text="Alert investigation workflow for inbox forwarding rules" lightbox="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-workflow.png":::
 
@@ -75,8 +74,6 @@ Here's an example of an inbox forwarding rule alert in the alert queue.
 Here's an example of the details of alert that was triggered by a malicious inbox forwarding rule.
 
 :::image type="content" source="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-alert-description.png" alt-text="Details of alert that was triggered by a malicious inbox forwarding rule" lightbox="../../media/alert-grading-playbook-inbox-forwarding-rules/alert-grading-playbook-inbox-forwarding-rules-alert-description.png":::
-
-### Investigation process
 
 ### Investigate rule parameters 
 
@@ -102,18 +99,21 @@ Review the attributes that related to the IP address that performed the relevant
 
 ### Investigate any suspicious activity with the user inbox before creating rules
 
-You can review all user activities before creating rules, check for indicators of compromise, and investigate user actions that seem suspicious. For instance, multiple failed logins.  
+You can review all user activities before creating rules, check for indicators of compromise, and investigate user actions that seem suspicious. For instance, multiple failed sign ins.  
 
-- Login: Validate that the login activity prior to the rule creation event is not suspicious (common location / ISP / user-agent). 
-- Other alerts/incidents 
+- Sign ins: 
 
-   a.	Did other alerts trigger for the user prior to the rule creation. If so, then this might indicate that the user got compromised. 
+  Validate that the sign in activity prior to the rule creation event is not suspicious (such as the common location, ISP, or user-agent). 
 
-   b.	If the alert correlates with other alerts to indicate an incident, then does the incident contain other true positive alerts? 
+- Other alerts or incidents 
+
+   - Did other alerts trigger for the user prior to the rule creation. If so, then this might indicate that the user got compromised. 
+
+   - If the alert correlates with other alerts to indicate an incident, then does the incident contain other true positive alerts? 
 
 ## Advanced hunting queries
 
-Advanced hunting is a query-based threat hunting tool that lets you inspect events in your network to locate threat indicators. 
+[Advanced Hunting](advanced-hunting-overview.md) is a query-based threat hunting tool that lets you inspect events in your network and locate threat indicators. 
 
 Run this query to find all the new inbox rule events during a specific time window.  
 
@@ -191,3 +191,4 @@ CloudAppEvents
 - [Overview of alert grading](alert-grading-playbooks.md)
 - [Suspicious email forwarding activity](alert-grading-playbook-email-forwarding.md)
 - [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
+- [Investigate alerts](investigate-alerts.md)

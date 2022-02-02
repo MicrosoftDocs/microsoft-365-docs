@@ -1,6 +1,6 @@
 ---
-title: Investigate suspicious inbox manipulation rules
-description: Investigate suspicious inbox manipulation rules to review the alerts and take recommended actions to remediate the attack and protect your network.
+title: Alert grading for suspicious inbox manipulation rules
+description: Alert grading for suspicious inbox manipulation rules to review the alerts and take recommended actions to remediate the attack and protect your network.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -22,16 +22,24 @@ search.appverid:
   - MOE150
 ms.technology: m365d
 ---
-# Investigate suspicious inbox manipulation rules
+# Alert grading for suspicious inbox manipulation rules
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft 365 Defender
 
-Threat actors can use compromised user accounts for several malicious purposes including reading emails in a user’s inbox, creating inbox rules to forward emails to external accounts, delete traces, sending phishing mails, among others. Malicious inbox rules are widely common during business email compromise (BEC) and phishing campaigns, and it is important to monitor them consistently. 
+Threat actors can use compromised user accounts for many malicious purposes including reading emails in a user’s inbox, creating inbox rules to forward emails to external accounts, deleting traces, and sending phishing mails. Malicious inbox rules are common during business email compromise (BEC) and phishing campaigns and it is important to monitor for them consistently. 
 
-This playbook helps you investigate any incident related to suspicious inbox manipulation rules configured by attackers and take recommended actions to remediate the attack and protect your network. This playbook is for security teams, including SOC analysts and IT administrators who review, investigate, and grade the alerts.  
+This playbook helps you investigate any incident related to suspicious inbox manipulation rules configured by attackers and take recommended actions to remediate the attack and protect your network. This playbook is for security teams, including security operations center (SOC) analysts and IT administrators who review, investigate, and grade the alerts. You can quickly grade alerts as either a True Positive (TP) or a False Positive (TP) and take recommended actions for the TP alerts to remediate the attack. 
+
+The results of using this playbook are:
+
+- You have identified the alerts associated with inbox manipulation rules as malicious (TP) or benign (FP) activities.
+
+  If malicious, you have removed malicious inbox manipulation rules.
+
+- You have taken the necessary action if emails have been forwarded to a malicious email address.
 
 ## Inbox manipulation rules
 
@@ -39,14 +47,13 @@ Inbox rules are set to automatically manage email messages based on predefined c
 
 ### Malicious inbox manipulation rules
 
-Adversaries might set up email rules to hide incoming emails in the compromised user mailbox to hide their malicious activities from the user. They might also set rules in the compromised user mailbox to delete emails, move the emails into another less noticeable folder (like RSS), or forward mails to an external account. Some rules might move all the emails to another folder and mark them as “read”, while some rules might move only mails which contain specific keywords in the email message or subject. 
+Attackers might set up email rules to hide incoming emails in the compromised user mailbox to obscure their malicious activities from the user. They might also set rules in the compromised user mailbox to delete emails, move the emails into another less noticeable folder (like RSS), or forward mails to an external account. Some rules might move all the emails to another folder and mark them as “read”, while some rules might move only mails which contain specific keywords in the email message or subject. 
 
 For example, the inbox rule might be set to look for keywords like “invoice”, “phish”, “do not reply”, “suspicious email”, or “spam” among others, and move them to an external email account. Attackers might also use the compromised user mailbox to distribute spam, phishing emails, or malware. 
 
-
 ## Workflow
 
-This flowchart illustrates the steps you should follow to investigate this type of alert. 
+Here is the workflow to identify suspicious inbox manipulation rule activities.
 
 :::image type="content" source="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-workflow.png" alt-text="Alert investigation workflow for inbox manipulation rules" lightbox="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-workflow.png":::
 
@@ -61,7 +68,7 @@ Here's an example of an inbox manipulation rule alert in the alert queue.
 
 :::image type="content" source="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-alert-queue.png" alt-text="Example of an inbox manipulation rule" lightbox="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-alert-queue.png":::
 
-Here's an example of the details of alert that was triggered by a malicious inbox manipulation rule.
+Here's an example of the details of an alert that was triggered by a malicious inbox manipulation rule.
 
 :::image type="content" source="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-alert-description.png" alt-text="Details of alert that was triggered by a malicious inbox manipulation rule" lightbox="../../media/alert-grading-playbook-inbox-manipulation-rules/alert-grading-playbook-inbox-manipulation-rules-alert-description.png":::
 
@@ -119,7 +126,7 @@ For instance, for multiple failed logins, examine:
 
 ## Advanced hunting queries
 
-Advanced hunting is a query-based threat hunting tool that lets you inspect events in your network to locate threat indicators. 
+[Advanced Hunting](advanced-hunting-overview.md) is a query-based threat hunting tool that lets you inspect events in your network to locate threat indicators. 
 
 Use this query to find all the new inbox rule events during specific time window.  
 
@@ -174,8 +181,8 @@ CloudAppEvents
 
 ## Recommended actions
 
-1. Disable the malicious inbox rule. 
-2. Reset the user account's credentials.  You can also verify if the user account has been compromised with Microsoft Defender for Cloud Apps, which gets security signals from Azure Active Directory (Azure AD) Identity Protection.
+1. Disable the malicious inbox rule.
+2. Reset the user account's credentials. You can also verify if the user account has been compromised with Microsoft Defender for Cloud Apps, which gets security signals from Azure Active Directory (Azure AD) Identity Protection.
 3. Search for other malicious activities performed by the impacted user account.
 4. Check for other suspicious activity in the tenant that originated from the same IP or from the same ISP (if the ISP is uncommon) to find other compromised user accounts.
 
@@ -184,3 +191,4 @@ CloudAppEvents
 - [Overview of alert grading](alert-grading-playbooks.md)
 - [Suspicious email forwarding activity](alert-grading-playbook-email-forwarding.md)
 - [Suspicious inbox forwarding rules](alert-grading-playbook-inbox-forwarding-rules.md)
+- [Investigate alerts](investigate-alerts.md)

@@ -65,8 +65,8 @@ As a security researcher or security operations center (SOC) analyst, you must h
 
 Defender for Office 365 alerts can be classified as: 
 
-- True positive for confirmed malicious activity. 
-- False positive for confirmed non-malicious activity.
+- True positive (TP) for confirmed malicious activity. 
+- False positive (FP) for confirmed non-malicious activity.
 
 >[!Note]
 >Microsoft 365 Defender portal [https://security.microsoft.com](https://security.microsoft.com) brings together functionality from existing Microsoft security portals. The Microsoft 365 Defender portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use.
@@ -82,9 +82,9 @@ The Defender for Cloud Apps framework includes the capability to protect your ne
 
 Defender for Cloud Apps alerts can be classified as: 
 
-- True positive (TP): Confirmed malicious activity. 
-- Benign true positive (B-TP): Suspicious but not malicious activity, such as a penetration test or other authorized suspicious action. 
-- False positive (FP): Confirmed non-malicious activity.
+- TP for confirmed malicious activity. 
+- Benign true positive (B-TP) for suspicious but not malicious activity, such as a penetration test or other authorized suspicious action. 
+- FP for confirmed non-malicious activity.
 
 ## Alert grading playbooks
 
@@ -93,3 +93,5 @@ See these playbooks for steps to more quickly grade alerts for the following thr
 - [Suspicious email forwarding activity](alert-grading-playbook-email-forwarding.md)
 - [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
 - [Suspicious inbox forwarding rules](alert-grading-playbook-inbox-forwarding-rules.md)
+
+See [Investigate alerts](investigate-alerts.md) for information on how to examine alerts with the Microsoft 365 Defender portal.
