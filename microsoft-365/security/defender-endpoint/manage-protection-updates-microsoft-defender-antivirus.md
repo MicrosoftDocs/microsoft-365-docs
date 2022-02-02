@@ -265,7 +265,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 10. Create a share pointing to C:\Temp\TempSigs (e.g., \\server\updates).
 
     > [!NOTE]
-    > At a minimum, authenticated users must have "Read" access.
+    > At a minimum, authenticated users must have "Read" access. This also applies to Domain Computers, the Share, and NTFS (Security).
 
 11. Set the share location in the policy to the share.
 
