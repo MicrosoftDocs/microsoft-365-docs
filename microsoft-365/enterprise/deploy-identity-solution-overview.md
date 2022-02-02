@@ -75,7 +75,7 @@ Use these steps to deploy an identity model and authentication infrastructure fo
 1. [Determine your cloud identity model.](deploy-identity-solution-identity-model.md)
 2. [Protect your Microsoft 365 privileged accounts.](protect-your-global-administrator-accounts.md)
 3. [Protect your Microsoft 365 user accounts.](microsoft-365-secure-sign-in.md)
-4. Deploy your cloud identity model: [cloud-only](cloud-only-identities.md) or [hybrid](prepare-for-directory-synchronization).
+4. Deploy your cloud identity model: [cloud-only](cloud-only-identities.md) or [hybrid](prepare-for-directory-synchronization.md).
 
 [![Determine the identity model to use for your Microsoft 365 tenant](../media/deploy-identity-solution-overview/identity-solution-identity-model.png)](deploy-identity-solution-identity-model.md)
   
