@@ -95,7 +95,7 @@ The initial response time is the period from when you submit your support reques
 
 Below is a list of extra conditions to be aware of when submitting a support request.
 
-|  |  |
+| Request condition | Description  |
 | ------ | ------ |
 | Support languages | All support is provided in English. |
 | Severity level changes | Microsoft might downgrade the severity level if you aren't able to provide adequate resources, or responses for us to continue to resolve the problem. |
