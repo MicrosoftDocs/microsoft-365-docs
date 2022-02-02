@@ -48,7 +48,7 @@ In this mode endpoints onboarded to Microsoft Defender for Endpoint can actively
 
 ## Can I control which devices perform Standard discovery?
 
-You can customize the list of devices that are used to perform Standard discovery. You can either enable Standard discovery on all the onboarded devices that also support this capability (currently Windows 10+ and Windows Server 2019+ devices only) or select a subset or subsets of your devices by specifying their device tags. In this case, all other devices will be configured to run Basic discovery only. The configuration is available in the device discovery settings page.
+You can customize the list of devices that are used to perform Standard discovery. You can either enable Standard discovery on all the onboarded devices that also support this capability (currently Windows 10 or later and Windows Server 2019 or later devices only) or select a subset or subsets of your devices by specifying their device tags. In this case, all other devices will be configured to run Basic discovery only. The configuration is available in the device discovery settings page.
 
 ## Can I exclude unmanaged devices from the device inventory list?
 
