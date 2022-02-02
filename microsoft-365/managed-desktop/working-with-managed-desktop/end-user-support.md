@@ -36,8 +36,8 @@ Before you request elevated access to a device, it's best to review which action
 1. From the Device actions dropdown menu, select **Request elevation**. A new elevation request fly-in will appear with the device’s name pre-populated in that field.
 1. Instead, to create a new elevation request in the **Elevations requests** tab, select **+New elevation request.**
 1. Provide these details:
-    - **Support ticket ID** from your own support ticketing system.
-    - **Device name**(only when creating request from the **Elevation requests** tab): Enter the device serial number and then select the device from the menu.
+    - **Support ticket ID**: This is from your own support ticketing system.
+    - **Device name**: This is only when creating request from the **Elevation requests** tab. Enter the device serial number and then select the device from the menu.
     - **Category**: Select the category that best fits your issue. If no option seems close, then select **Other**. It's best to select a category if at all possible.
     - **Title**: Provide a short description of the issue on the device.
     - **Plan of action**: Provide the troubleshooting steps you plan to take once elevation is granted.
