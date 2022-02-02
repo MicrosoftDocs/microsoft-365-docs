@@ -38,52 +38,21 @@ Prebuilt models use OCR technology to scan PDFs, images, and TIFF files. Note th
 
 ### Requirements
 
-OCR processing works best on documents that meet the following requirements:
+- For best results, provide one clear photo or high-quality scan per document.
 
-- JPG, PNG, or PDF format (text or scanned). Text-embedded PDFs are better, because there won't be any errors in character extraction and location.
+- Supported file formats: JPEG, PNG, BMP, TIFF, and PDF (text-embedded or scanned).
 
-- If your PDFs are password-locked, you must remove the lock before submitting them.
+- Text-embedded PDFs are best to eliminate the possibility of error in character extraction and location.
 
-- The combined file size of the documents used for training per collection must not exceed 50 MB, and PDF documents shouldn't have more than 500 pages.
+- For PDF and TIFF, up to 2,000 pages can be processed.
 
-- For images, dimensions must be between 50 × 50 and 10,000 × 10,000 pixels.
-   > [!NOTE]
-   > Images that are very wide or have odd dimensions (for example, floor plans) might get truncated in the OCR process and lose accuracy.
- 
-- For PDF files, dimensions must be at most 17 x 17 inches, corresponding to Legal or A3 paper sizes and smaller.
+- The file size must be less than 50 MB.
 
-- If scanned from paper documents, scans should be high-quality images.
+- Image dimensions must be between 50 x 50 pixels and 10,000 x 10,000 pixels.
 
-- Must use the Latin alphabet (English characters).
+- PDF dimensions are up to 17 x 17 inches, corresponding to Legal or A3 paper size, or smaller.
 
-### Supported file types
-
-Prebuilt models support the following file types:
-
-- doc
-- docx
-- eml
-- heic
-- heif
-- htm
-- html
-- jpeg
-- jpg
-- markdown
-- md
-- msg
-- pdf
-- png
-- ppt
-- pptx
-- rtf
-- tif
-- tiff
-- txt
-- xls
-- xlsx
-
-
+- The total size of the training data is 500 pages or less.
 
 ## See Also
 
