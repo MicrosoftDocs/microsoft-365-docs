@@ -34,7 +34,7 @@ Here are a couple of tips:
   
 - Make sure licenses are available to assign to the account.
     
-- If your business uses Active Directory, for instrutcions on restoring a user account, see [How to troubleshoot deleted user accounts in Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts). 
+- If your business uses Active Directory, for instructions on restoring a user account, see [How to troubleshoot deleted user accounts in Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts). 
     
 ## Restore one or more user accounts
 
@@ -67,9 +67,9 @@ To fix this, replace the active user account with the one that you are restoring
     
 4. A message pops up that says there was a problem restoring the account. Do one of the following:
     
-  - Cancel the restore and rename the current active user. Then attempt the restore again.
+     - Cancel the restore and rename the current active user. Then attempt the restore again.
     
-  - OR, type a new primary email address for the user and select **Restore**.
+     - OR, type a new primary email address for the user and select **Restore**.
     
 5. Review the results, and then select **Close**.
     

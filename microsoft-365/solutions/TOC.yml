@@ -384,6 +384,12 @@
         href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page
       - name: Support remote government workers using Teams
         href: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams
+    - name: Retail
+      items: 
+      - name: Overview
+        href: retail-overview.md
+      - name: Teams for Retail
+        href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-retail-landing-page
 - name: Enterprise architecture design principles
   items: 
     - name: Overview
