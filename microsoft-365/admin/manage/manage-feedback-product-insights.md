@@ -45,18 +45,13 @@ You need to be an [administrator](../add-users/about-admin-roles.md) to view and
 1. In the admin center, go to the **Health** > **Product feedback** > **NPS survey insights**.
 2. From the **NPS survey insights** page, navigate on the page to see survey insights related to NPS for your organization.
 
-**AddART**
-
-<!--:::image type="content" source="../../media/prosight-product-feedback.png" alt-text="Screenshot: Microsoft 365 Nps survey insights":::-->
+:::image type="content" source="../../media/product-feedback-main-page.png" alt-text="Screenshot: Net Promoter Score (NPS) main chart":::
 
 ### Top topic filters
 
-Topics are machine learning models that help analyze comments, phrases and verbatims of the NPS survey feedback, providing access to the most common themes at a top level. The Top topic filters display the top 5 topics with the most volume of verbatim feedback.
-
 We've identified the common themes from user feedback. Then we used machine learning models that train the data sets and automatically organize the feedback into **Top Topics**. You can then identify the top five topics with the most volume of verbatim feedback.  
 
-**AddART**
-<!--:::image type="content" source="../../media/prosight-top-topic-filters-2.png" alt-text="Screenshot: Top topic filters on NPS survey data":::-->
+:::image type="content" source="../../media/top-topics-filter.png" alt-text="Screenshot: Top five topics with the most verbatim feedback":::
 
 > [!NOTE]
 > We only publish an intelligent topic after it meets a minimum quality bar set in partnership with subject matter experts. Precision and recall metrics are used to determine the same.
@@ -129,16 +124,15 @@ Verbatim Recall- 94%
 
 **Feedback volume by month** shows the total number of NPS feedback response volume by the last twelve months.
 
-**AddART**
-<!--:::image type="content" source="../../media/prosight-charts-area.png" alt-text="Screenshot: Microsoft 365 survey insights":::-->
+:::image type="content" source="../../media/response-details.png" alt-text="Screenshot: Response volume and response volume by month":::
 
 Charts are filtered by the NPS rating as follows:
 
 - Detractors are unhappy customers who are unlikely to recommend your product or service.
-- Passives- Customers that are satisfied with the service but not enough to recommend your product or service.
+- Passives are customers that are satisfied with the service but not enough to recommend your product or service.
 - Promoters- Happy customers that are loyal, enthusiastic and are likely to recommend your product or service.
 
-**AddART**
+:::image type="content" source="../../media/how-likely-recommend.png" alt-text="Screenshot: Chart showing how likely are you to recommend an app to a friend or colleague":::
 
 ### Export to CSV and Search
 
@@ -165,4 +159,4 @@ Use **Feedback Types** (set only to NPS feedback types) to filter feedback that 
 
 ### We want to hear from you
 
-Share your thoughts about the NPS survey insight dashboard and your ideas about how to improve it. Use the Feedback sections in the products and services. You can also email us at prosight@microsoft.com.
+Share your thoughts about the NPS survey insight dashboard and your ideas about how to improve it. Use the Feedback sections in the products and services. You can also email us at prosight@microsoft.com
