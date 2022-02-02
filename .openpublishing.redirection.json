@@ -4276,12 +4276,12 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/security/defender/mde-terms-mobile.md",
+      "source_path": "microsoft-365/security/defender-endpoint/mde-terms-mobile.md",
       "redirect_url": "/legal/microsoft-365/mde-terms-windows",
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/security/defender/mde-terms-mac.md",
+      "source_path": "microsoft-365/security/defender-endpoint/mde-terms-mac.md",
       "redirect_url": "/legal/microsoft-365/mde-terms-windows",
       "redirect_document_id": false
     },
@@ -4571,6 +4571,21 @@
     },
 	{
       "source_path": "microsoft-365/security/defender-endpoint/configure-arcsight.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-siem",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/enable-siem-integration.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-siem",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/pull-alerts-using-rest-api.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-siem",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/api-portal-mapping.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/configure-siem",
       "redirect_document_id": false
     },
@@ -4882,6 +4897,11 @@
     {
       "source_path": "microsoft-365/compliance/enable-unlimited-archiving.md",
       "redirect_url": "/microsoft-365/compliance/enable-autoexpanding-archiving",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/put-an-in-place-hold-on-a-soft-deleted-mailbox.md",
+      "redirect_url": "/microsoft-365/compliance/inactive-mailboxes-in-office-365",
       "redirect_document_id": false
     },
     {
@@ -5852,6 +5872,11 @@
     {
       "source_path": "microsoft-365/compliance/device-onboarding.md",
       "redirect_url": "/microsoft-365/compliance/device-onboarding-overview",
+      "redirect_document_id": false
+    },
+{
+      "source_path": "microsoft-365/compliance/get-started-with-retention.md",
+      "redirect_url": "/microsoft-365/compliance/get-started-with-information-governance",
       "redirect_document_id": false
     },
     {
