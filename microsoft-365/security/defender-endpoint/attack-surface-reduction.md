@@ -10,14 +10,15 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar, jcedola
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: 
 - asr
 - admindeeplinkDEFENDER
 ms.technology: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection: m365initiative-m365-defender
+ms.date: 1/18/2022
 ---
 
 # Use attack surface reduction rules to prevent malware infection
