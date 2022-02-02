@@ -46,4 +46,4 @@ This feature is available only for creating [document understanding models](appl
 
 4. Select **Create a model**.
 
-5. On the **Create a model** panel, type the name of the model, and select the model type, and then select **Create**.
+5. On the **Create a model** panel, type the name of the model, select the model type, and then select **Create**.
