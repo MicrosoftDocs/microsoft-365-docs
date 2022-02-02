@@ -52,7 +52,7 @@ Inbox rules are set to automatically manage email messages based on predefined c
 
 After gaining access to users' mailboxes, attackers often create an inbox rule that allows them to exfiltrate sensitive data to an external email address and use it for malicious purposes. 
 
-Malicious inbox rules automate the exfiltration process. With specific rules, every email in the target user’s inbox that matches the rule criteria will be forwarded to the attacker’s mailbox. For example, an attacker might want to gather sensitive data related to finance. So they creata an inbox rule to forward all emails that contain keywords, such as ‘finance’ and ‘invoice’ in the subject or message body, to their mailbox.
+Malicious inbox rules automate the exfiltration process. With specific rules, every email in the target user’s inbox that matches the rule criteria will be forwarded to the attacker’s mailbox. For example, an attacker might want to gather sensitive data related to finance. They create an inbox rule to forward all emails that contain keywords, such as ‘finance’ and ‘invoice’ in the subject or message body, to their mailbox.
 
 Suspicious inbox forwarding rules might be very difficult to detect because maintenance of inbox rules is common task done by users. Therefore, it’s important to monitor the alerts. 
 
@@ -182,7 +182,7 @@ CloudAppEvents
 ## Recommended actions
 
 1. Disable the malicious inbox rule. 
-2. Reset the user’s account credentials. You can also verify if the user account has been compromised with Microsoft Defender for CLoud Apps, which gets security signals from Azure Active Directory (Azure AD) Identity Protection.
+2. Reset the user’s account credentials. You can also verify if the user account has been compromised with Microsoft Defender for Cloud Apps, which gets security signals from Azure Active Directory (Azure AD) Identity Protection.
 3. Search for other malicious activities performed by the impacted user.
 4. Check for other suspicious activity in the tenant originated from the same IP or from the same ISP (if the ISP is uncommon) to find other compromised users.
 
