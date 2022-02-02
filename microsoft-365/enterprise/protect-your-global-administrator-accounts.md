@@ -51,9 +51,9 @@ From this moment onward, you sign in with the dedicated privileged accounts only
 > [!NOTE]
 > This does require additional steps to sign out as your everyday user account and sign in with a dedicated administrator account. But this only needs to be done occasionally for administrator operations. Consider that recovering your Microsoft 365 subscription after an administrator account breach requires a lot more steps.
 
-You also need to create [emergency access accounts](/azure/active-directory/roles/security-emergency-access) to prevent prevent being accidentally locked out of Azure AD.
+You also need to create [emergency access accounts](/azure/active-directory/roles/security-emergency-access) to prevent being accidentally locked out of Azure AD.
 
-You can further protect your privileged accounts with Azure AD Privileged Identity Management (PIM) for on-demand, just-in-time assignment of administrator roles.
+You can further protect your privileged accounts with Azure AD Privileged Identity Management (PIM) for on-demand, just-in-time assignment of administrator roles. 
  
 ## 2. Configure multi-factor authentication for your dedicated Microsoft 365 privileged accounts
 
@@ -102,7 +102,7 @@ To develop a comprehensive roadmap to secure privileged access against cyber att
 
 ### Azure AD Privileged Identity Management
 
-Rather than having your privileged accounts be permanently assigned the an administrator role, you can use Azure AD PIM to enable on-demand, just-in-time assignment of the administrator role when it is needed.
+Rather than having your privileged accounts be permanently assigned an administrator role, you can use Azure AD PIM to enable on-demand, just-in-time assignment of the administrator role when it is needed.
   
 Your administrator accounts go from being permanent admins to eligible admins. The administrator role is inactive until someone needs it. You then complete an activation process to add the administrator role to the privileged account for a predetermined amount of time. When the time expires, PIM removes the administrator role from the privileged account.
   
