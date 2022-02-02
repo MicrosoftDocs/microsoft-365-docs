@@ -68,7 +68,7 @@ You can edit case details, for example, updating the primary case contact or cha
 1. Update the editable information, add attachments to the case, or add a note for the Service Engineering team.
 1. Select **Save**.
 
-Once a case is resolved, it can no longer be edited. If a request has been resolved for less than 24 hours you'll see the option to **reactivate** instead of **Edit**. Once reactivated, you can again edit the request.  
+Once a case is resolved, it can no longer be edited. If a request has been resolved for less than 24 hours, you'll see the option to **reactivate** instead of **Edit**. Once reactivated, you can again edit the request.  
 
 ### Provide feedback
 
@@ -95,7 +95,7 @@ The initial response time is the period from when you submit your support reques
 
 Below is a list of extra conditions to be aware of when submitting a support request.
 
-|  |  |
+| Request condition | Description  |
 | ------ | ------ |
 | Support languages | All support is provided in English. |
 | Severity level changes | Microsoft might downgrade the severity level if you aren't able to provide adequate resources, or responses for us to continue to resolve the problem. |
@@ -106,4 +106,4 @@ Below is a list of extra conditions to be aware of when submitting a support req
 
 - [User support for Microsoft Managed Desktop](end-user-support.md).
 - [Support for Microsoft Managed Desktop](../service-description/support.md).
-- If you're already subscribed to Microsoft Managed Desktop, you can find detailed procedures, process flows, work instructions, and FAQs in the Microsoft Managed Desktop Admin Guide. In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), navigate to *Tenant administration > Microsoft Managed Desktop > Online resources > Other resources*.
+- If you're already subscribed to Microsoft Managed Desktop, you can find detailed procedures, process flows, work instructions, and FAQs in the Microsoft Managed Desktop Admin Guide. In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/), navigate to the Tenant administration section, under Microsoft Managed Desktop, select Online resources, then select Other resources. You'll find the Admin Guide here.
