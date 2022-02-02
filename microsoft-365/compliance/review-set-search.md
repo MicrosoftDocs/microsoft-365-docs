@@ -111,3 +111,6 @@ You can also build more advanced queries to search for documents in a review set
    In this panel, you can create complex KQL queries by using the query builder. You can add conditions or add condition groups that are made up of multiple conditions that are logically connected by **AND** or **OR** relationships.
 
    ![Use query builder to configure complex filter queries.](../media/ComplexQuery.png)
+
+## Filter partially indexed items
+

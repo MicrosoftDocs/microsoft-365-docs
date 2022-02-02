@@ -49,6 +49,9 @@ When you're satisfied with the items you've collected in a draft collection and 
 
        - **Cloud attachments**: Select this option to include modern attachments or linked files when the collection results are added to the review set. This means that the target file of a modern attachment or linked file is added to the review set.
 
+       - **Partially indexed items**: Select this option to add partially indexed items from additional data sources to the review set. If the collection searched additional data sources (as specified on the **Additional locations** page in the collections wizard) there may be partially indexed items from these locations that you want to add to the review set. Custodial and non-custodial data sources typically don't have partially indexed items. That's because the Advanced indexing process reindexes items when custodial and non-custodial data sources are added to a case. Also, Adding partially indexed items will increase the number of items added to the review set. <p> After partially indexed items are added to the review set, you can apply a filter to specifically view these items. For more information, see [Filter partially indexed items](review-set-search.md#filter-partially-indexed-items) 
+
+
        - **SharePoint versions**: Select this option to enable the collection of all versions of a SharePoint document per the version limits and search parameters of the collection. Selecting this option will significantly increase the size of items that are added to the review set.
 
    4. Configure the settings to define the scale of the collection to add to the review set:
