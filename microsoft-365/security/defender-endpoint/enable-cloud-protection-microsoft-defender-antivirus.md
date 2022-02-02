@@ -86,7 +86,16 @@ For more information about configuring Microsoft Endpoint Configuration Manager,
 
 4. Expand the tree to **Windows components** > **Microsoft Defender Antivirus > MAPS**
 
+    > [!NOTE]
+    > MAPS settings are equal to cloud-delivered protection.
+
 5. Double-click **Join Microsoft MAPS**. Ensure the option is turned on and set to **Basic MAPS** or **Advanced MAPS**. Select **OK**.
+
+    You can choose to send basic or additional information about detected software:
+
+    - Basic MAPS: Basic membership will send basic information to Microsoft about malware and potentially unwanted software that has been detected on your PC, including information about where the software came from (like URLs and partial paths), the actions taken to resolve the threat, and whether the actions were successful.
+
+    - Advanced MAPS: In addition to basic information, advanced membership will send detailed information about malware and potentially unwanted software, including the full path to the software, and detailed information about how the software has impacted your PC.
 
 6. Double-click **Send file samples when further analysis is required**. Ensure that the first option is set to **Enabled** and that the other options are set to either:
 
@@ -133,7 +142,7 @@ For more information about allowed parameters, see [Windows Defender WMIv2 APIs]
 
 1. Open the Windows Security app by selecting the shield icon in the task bar, or by searching the start menu for **Windows Security**.
 
-2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar), and then, under **Virus & threat protection settings**, select **Manage settings**.
+2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar), and then, under **Manage settings** select **Virus & threat protection settings**.
 
 3. Confirm that **Cloud-based Protection** and **Automatic sample submission** are both switched to **On**.
 
