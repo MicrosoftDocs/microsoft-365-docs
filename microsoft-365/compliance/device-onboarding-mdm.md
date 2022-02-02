@@ -57,8 +57,6 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 5. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding*.
 
-
-
 6. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings.
 
     ```text
@@ -68,8 +66,6 @@ For security reasons, the package used to Offboard devices will expire 30 days a
     ```
 > [!NOTE]
 > If Microsoft Defender for Endpoint is already configured, you can **Turn on device onboarding** and Step 6 is no longer required.
-
-For more information on Microsoft Intune policy settings, see [Windows 10 policy settings in Microsoft Intune](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
 
 > [!NOTE]
 > The **Health Status for offboarded devices** policy uses read-only properties and can't be remediated.
