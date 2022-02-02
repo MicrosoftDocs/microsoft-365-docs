@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 02/01/2022
+ms.date: 02/02/2022
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
@@ -82,24 +82,18 @@ All our updates contain
 <details>
 <summary>January-2022 (Platform: 4.18.2201.6 | Engine: 1.1.18900.2)</summary>
 
-&ensp;Security intelligence update version: **1.355.2.0**<br/>
-&ensp;Released: **January xx, 2022**<br/>
+&ensp;Security intelligence update version: **1.357.8.0**<br/>
+&ensp;Released: **February 2, 2022**<br/>
 &ensp;Platform: **4.18.2201.6**<br/>
 &ensp;Engine: **1.1.18900.2**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
 Engine version: 1.1.18900.2
-Security intelligence update version: x.xxx.x.x
+Security intelligence update version: 1.357.8.0
 
 ### What's new
 
 - Behavior monitoring improvements in filtering performance
-- Hardening to TrustedInstaller
-- Tamper protection improvements
-- Replace `ScanScheduleTime` with new `ScanScheduleOffest` cmdlet in [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy configures the number of minutes after minute to perform a scheduled scan.
-- Added `-ServiceHealthReportInterval` setting in [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy configures the time interval (in minutes) after midnight to perform a scheduled scan.
-- Added `AllowSwitchToAsyncInspection` setting in [Set-MpPreference](/powershell/module/defender/set-mppreference).
-- Performance Analyzer v2 updates: Remote PowerShell and PowerShell 7.x support added. See [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
 
 ### Known Issues
 No known issues
