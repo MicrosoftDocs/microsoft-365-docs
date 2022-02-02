@@ -65,11 +65,11 @@ For more information, see these blog posts:
 
 ## Alert details
 
-To review the specific alert, open the **Alerts** page to see the **Activity list** sectio. Here's an example.
+To review the specific alert, open the **Alerts** page to see the **Activity list** section. Here's an example.
  
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png" alt-text="List of activities related to the alert" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png":::
 
-Selcct **Activity**  to view the details of that activity in the sidebar. Here's an example.
+Select **Activity**  to view the details of that activity in the sidebar. Here's an example.
  
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-details.png" alt-text="Details of the activity" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-details.png":::
 
@@ -125,7 +125,7 @@ Here is the workflow to identify suspicious email forwarding activities.
 
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png" alt-text="Alert investigation workflow for email forwarding" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png":::
 
-You can investigate an email forwarding alert using Threat Explorer or audit logs, based on the availability of features in the Microsoft 365 Defender portal. You may choose to follow the entire process or a part of the process as needed.
+You can investigate an email forwarding alert using Threat Explorer or with advanced hunting queries, based on the availability of features in the Microsoft 365 Defender portal. You may choose to follow the entire process or a part of the process as needed.
 
 ## Using Threat Explorer
 
@@ -160,7 +160,7 @@ Threat Explorer provides an interactive investigation experience for email relat
 
 Based on answers to these questions, you should be able to determine whether an email is malicious or benign.
 
-## Using audit logs
+## Advanced hunting queries
 
 To use [advanced Hunting](advanced-hunting-overview.md) queries to gather information related to an alert and determine whether or not the activity is suspicious, make sure you have access to the following tables:
 

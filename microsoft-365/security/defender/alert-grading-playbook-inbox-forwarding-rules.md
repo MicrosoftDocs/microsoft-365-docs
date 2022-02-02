@@ -43,7 +43,7 @@ The results of using this playbook are:
 
 - You have taken the necessary action if emails have been forwarded to a malicious email address.
 
-## Inbox rules
+## Inbox forwarding rules
 
 You configure inbox rules to automatically manage email messages based on predefined criteria. For example, you can create an inbox rule to move all messages from your manager into another folder, or forward messages you receive to another email address.
 

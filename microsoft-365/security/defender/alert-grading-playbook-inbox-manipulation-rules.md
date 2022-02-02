@@ -106,7 +106,7 @@ Review the attributes of the IP address that performed the relevant event of rul
 - Is the ISP common and reasonable for this user?
 - Is the location common and reasonable for this user?
 
-## 4. Investigate suspicious activity by the user prior to creating the rules
+### 4. Investigate suspicious activity by the user prior to creating the rules
 
 You can review all user activities before rules were created, check for indicators of compromise, and investigate user actions that seem suspicious. 
 
