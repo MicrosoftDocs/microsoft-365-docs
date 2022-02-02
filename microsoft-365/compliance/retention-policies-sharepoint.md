@@ -131,7 +131,7 @@ The copy that's stored in the Preservation Hold library is typically created wit
 
 When you apply a retention policy to a location that includes OneNote content, or a retention label to a OneNote folder, behind the scenes, the different OneNote pages and sections are individual files that inherit the retention settings. This means that each section within a page will be individually retained and deleted, according to the retention settings you specify.
 
-Only pages and sections are impacted by the retention settings that you specify. For example, although you see a **Modified** date for each notebook, this date is not used by Microsoft 365 retention.
+Only pages and sections are impacted by the retention settings that you specify. For example, although you see a **Modified** date for each individual notebook, this date is not used by Microsoft 365 retention.
 
 ## How retention works with document versions
 
