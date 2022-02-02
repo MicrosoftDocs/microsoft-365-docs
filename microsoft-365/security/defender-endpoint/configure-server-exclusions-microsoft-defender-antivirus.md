@@ -14,7 +14,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 11/15/2021
+ms.date: 02/02/2022
 ms.collection: M365-security-compliance
 ---
 
