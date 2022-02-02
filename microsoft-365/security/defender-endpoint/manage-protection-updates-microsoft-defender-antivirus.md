@@ -192,7 +192,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
 
 6. Extract the file.
 
-7. Copy the file SignatureDownloadCustomTask.ps1 to the folder you previously created, C:\Tool\PS-Scripts\ .
+7. Copy the file SignatureDownloadCustomTask.ps1 to the folder you previously created, `C:\Tool\PS-Scripts\` .
 
 8. Use the command line to set up the scheduled task.
 
@@ -240,12 +240,12 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
        ```
 
    > [!NOTE]
-   > When the scheduled tasks are created, you can find these in the Task Scheduler under Microsoft\Windows\Windows Defender
+   > When the scheduled tasks are created, you can find these in the Task Scheduler under `Microsoft\Windows\Windows Defender`.
 
-9. Run each task manually and verify that you have data (mpam-d.exe, mpam-fe.exe, and nis_full.exe) in the following folders (you might have chosen different locations):
+9. Run each task manually and verify that you have data (`mpam-d.exe`, `mpam-fe.exe`, and `nis_full.exe`) in the following folders (you might have chosen different locations):
 
-   - C:\Temp\TempSigs\x86
-   - C:\Temp\TempSigs\x64
+   - `C:\Temp\TempSigs\x86`
+   - `C:\Temp\TempSigs\x64`
 
    If the scheduled task fails, run the following commands:
 
@@ -262,10 +262,10 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
     > [!NOTE]
     > Issues could also be due to execution policy.
 
-10. Create a share pointing to C:\Temp\TempSigs (e.g., \\server\updates).
+10. Create a share pointing to `C:\Temp\TempSigs` (e.g., `\\server\updates`).
 
     > [!NOTE]
-    > At a minimum, authenticated users must have "Read" access.
+    > At a minimum, authenticated users must have "Read" access. This requirement also applies to domain computers, the share, and NTFS (security).
 
 11. Set the share location in the policy to the share.
 
