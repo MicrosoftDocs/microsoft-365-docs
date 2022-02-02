@@ -28,8 +28,9 @@ When you activate model creation on your site, the following lists and libraries
 - Explanation templates list
 - Model usage list
 
+This feature is available only for creating [document understanding models](apply-a-model.md) and [prebuilt models](prebuilt-models.md). 
 
-Activate a model
+## Activate a model on a local site
 
 1. From a SharePoint document library, select the files you want to analyze, and then select **Classify and extract**.
 
