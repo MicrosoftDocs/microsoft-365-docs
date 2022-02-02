@@ -24,7 +24,7 @@ search.appverid:
 
 ## Reports
 
-The new **Reports** dashboard is the central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most commonly needed for an overall assessment of the status of communication compliance activities. Information contained in the report widgets is not exportable. Detailed reports provide in-depth information related to specific communication compliance areas and offer the ability to filter, group, sort, and export information while reviewing. 
+The new **Reports** dashboard is the central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most commonly needed for an overall assessment of the status of communication compliance activities. Information contained in the report widgets isn't exportable. Detailed reports provide in-depth information related to specific communication compliance areas and offer the ability to filter, group, sort, and export information while reviewing. 
 
 For the date range filter, the date and time for events are listed in Coordinated Universal Time (UTC). When filtering messages for reports, the requesting user's local date/time determines the results based on the conversion of the user's local date/time to UTC. For example, if a user in U.S. Pacific Daylight Time (PDT) filters a report from 8/30/2021 to 8/31/2021 at 00:00, the report includes messages from 8/30/2021 07:00 UTC to 8/31/2021 07:00 UTC. If the same user was in U.S. Eastern Daylight Time (EDT) when filtering at 00:00, the report includes messages from 8/30/2021 04:00 UTC to 8/31/2021 04:00 UTC.
 
@@ -88,7 +88,7 @@ Use the *Export* option to create a .csv file containing the report details for 
     - **Skype for Business**: Sensitive information types detected in Skype for business communications.
     - **Yammer**: Sensitive information types detected in Yammer inboxes, posts, chats, and replies.
     - **Third-party sources**: Sensitive information types detected for activities associated with third-party connectors configured in your organization. To view the breakdown of third-party sources for a specific sensitive information type in the report, hover your mouse over the value for the sensitive information type in the Third-party source column.
-    - **Other**: Sensitive information types used for internal system processing. Selecting or deselecting this source for the report will not affect any values.
+    - **Other**: Sensitive information types used for internal system processing. Selecting or deselecting this source for the report won't affect any values.
 
 ### Message details report (preview)
 
