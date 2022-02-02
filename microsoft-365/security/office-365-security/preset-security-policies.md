@@ -124,7 +124,7 @@ For example, if a security setting exists in **Standard protection** and an admi
 
 ### Use the Microsoft 365 Defender portal to assign Standard and Strict preset security policies to users
 
-1. In the Microsoft 365 Defender portal at <https://security.microsofot.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section. To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section. To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
 
 2. On the **Preset security policies** page, click **Manage** in the **Standard protection** or **Strict protection** sections.
 
@@ -161,7 +161,7 @@ Remember, the **Built-in protection** preset security policy is assigned to all 
 
 Therefore, we typically don't recommend exceptions to the **Built-in protection** preset security policy.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsofot.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section. To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section. To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.
 
 2. On the **Preset security policies** page, select **Add exclusions (not recommended)** in the **Built-in protection** section.
 

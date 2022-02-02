@@ -3,7 +3,6 @@ title: ASR rules deployment phase 1 - plan
 description: Provides guidance to plan your attack surface reduction rules deployment.
 keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
-ms.reviewer:
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,14 +11,16 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection: m365solution-scenario
+ms.date: 1/18/2022
 ---
 
-# Attack surface reduction rules deployment phase 1: plan
+# ASR rules deployment phase 1: plan
 
 Starting to test ASR rules involves starting with the right business unit. You’ll want to start with a small group of people in a specific business unit. You can identify some ASR champions within a particular business unit who can provide real-world impact to the ASR rules and help you tune your implementation.
 
@@ -74,10 +75,10 @@ See: [Create a deployment plan for Windows](/windows/deployment/update/create-de
 
 ## Additional topics in this deployment collection
 
-[ASR rules deployment guide - overview](attack-surface-reduction-rules-deployment.md)
+[ASR rules deployment overview](attack-surface-reduction-rules-deployment.md)
 
-[ASR rules deployment phase 2 - test](attack-surface-reduction-rules-deployment-phase-2.md)
+[Phase 2: Test](attack-surface-reduction-rules-deployment-phase-2.md)
 
-[ASR rules deployment phase 3 - implement](attack-surface-reduction-rules-deployment-phase-3.md)
+[Phase 3: Implement](attack-surface-reduction-rules-deployment-phase-3.md)
 
-[ASR rules deployment phase 4 - operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
+[Phase 4: Operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
