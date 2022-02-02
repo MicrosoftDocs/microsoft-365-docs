@@ -30,8 +30,6 @@ After publishing your model, use the content center to apply it to any SharePoin
 
 ## Requirements
 
-- For best results, provide one clear photo or high-quality scan per document.
-
 - Supported file formats: JPEG, PNG, BMP, TIFF, and PDF (text-embedded or scanned).
 
 - Text-embedded PDFs are best to eliminate the possibility of error in character extraction and location.
