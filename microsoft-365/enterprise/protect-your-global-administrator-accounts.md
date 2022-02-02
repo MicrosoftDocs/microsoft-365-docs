@@ -20,7 +20,7 @@ search.appverid:
 f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
-description: This article provides information about protecting privileged access to your Microsoft 365 subscription.
+description: This article provides information about protecting privileged access to your Microsoft 365 tenant.
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -28,7 +28,7 @@ ms.custom: seo-marvel-apr2020
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-Security breaches of a Microsoft 365 subscription, including information harvesting and phishing attacks, are typically done by compromising the credentials of a Microsoft 365 privileged account. Security in the cloud is a partnership between you and Microsoft:
+Security breaches of a Microsoft 365 tenant, including information harvesting and phishing attacks, are typically done by compromising the credentials of a Microsoft 365 privileged account. Security in the cloud is a partnership between you and Microsoft:
   
 - Microsoft cloud services are built on a foundation of trust and security. Microsoft provides you security controls and capabilities to help you protect your data and applications.
     
@@ -41,7 +41,7 @@ Microsoft provides capabilities to help protect your organization, but they are 
 2. Configure multi-factor authentication (MFA) for your dedicated Microsoft 365 privileged accounts and use the strongest form of secondary authentication.
 
 3. Protect privileged accounts with Zero Trust identity and device access recommendations.
- 
+
 ## 1. Create dedicated, privileged, cloud-based user accounts and use them only when necessary
 
 Instead of using everyday user accounts that have been assigned administrator roles, create dedicated user accounts that have the admin roles in Azure AD. 
@@ -50,20 +50,22 @@ From this moment onward, you sign in with the dedicated privileged accounts only
   
 > [!NOTE]
 > This does require additional steps to sign out as your everyday user account and sign in with a dedicated administrator account. But this only needs to be done occasionally for administrator operations. Consider that recovering your Microsoft 365 subscription after an administrator account breach requires a lot more steps.
-  
+
+You also need to create [emergency access accounts](/azure/active-directory/roles/security-emergency-access) to prevent prevent being accidentally locked out of Azure AD.
+
+You can further protect your privileged accounts with Azure AD Privileged Identity Management (PIM) for on-demand, just-in-time assignment of administrator roles.
+ 
 ## 2. Configure multi-factor authentication for your dedicated Microsoft 365 privileged accounts
 
 Multi-factor authentication (MFA) requires additional information beyond the account name and password. Microsoft 365 supports these additional verification methods:
   
 - The Microsoft Authenticator app
-
 - A phone call
-    
 - A randomly generated verification code sent through a text message
-    
-- A smart card (virtual or physical)
-    
+- A smart card (virtual or physical) (requires federated authentication)
 - A biometric device
+- Oauth token
+- 
     
 >[!Note]
 >For organizations that must adhere to National Institute of Standards and Technology (NIST) standards, the use of a phone call or text message-based additional verification methods are restricted. Click [here](https://pages.nist.gov/800-63-FAQ/#q-b01) for the details.
@@ -100,7 +102,7 @@ To develop a comprehensive roadmap to secure privileged access against cyber att
 
 ### Azure AD Privileged Identity Management
 
-Rather than having your privileged accounts be permanently assigned the an administrator role, you can use Azure AD Privileged Identity Management (PIM) to enable on-demand, just-in-time assignment of the administrator role when it is needed.
+Rather than having your privileged accounts be permanently assigned the an administrator role, you can use Azure AD PIM to enable on-demand, just-in-time assignment of the administrator role when it is needed.
   
 Your administrator accounts go from being permanent admins to eligible admins. The administrator role is inactive until someone needs it. You then complete an activation process to add the administrator role to the privileged account for a predetermined amount of time. When the time expires, PIM removes the administrator role from the privileged account.
   
@@ -111,7 +113,7 @@ PIM is available with Azure Active Directory Premium P2, which is included with 
 For more information, see:
 
 - [Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure).
-- - [Securing privileged access for hybrid and cloud deployments in Azure AD](/azure/active-directory/roles/security-planning)
+- [Securing privileged access for hybrid and cloud deployments in Azure AD](/azure/active-directory/roles/security-planning)
   
 
 ### Privileged access management

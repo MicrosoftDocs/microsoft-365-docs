@@ -66,7 +66,7 @@ Because user accounts are only stored in Azure AD, you manage cloud identities w
 
 ## Hybrid identity
 
-Hybrid identity uses accounts that originate in an on-premises AD DS and have a copy in the Azure AD tenant of a Microsoft 365 subscription. However, most changes only flow one way. Changes that you make to AD DS user accounts are synchronized to their copy in Azure AD. But changes made to cloud-based accounts in Azure AD, such as new user accounts, are not synchronized with AD DS.
+Hybrid identity uses accounts that originate in an on-premises AD DS and have a copy in the Azure AD tenant of a Microsoft 365 subscription. Most changes, with the exception of [specific account attributes](/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized), only flow one way. Changes that you make to AD DS user accounts are synchronized to their copy in Azure AD.
 
 Azure AD Connect provides the ongoing account synchronization. It runs on an on-premises server, checks for changes in the AD DS, and forwards those changes to Azure AD. Azure AD Connect provides the ability to filter which accounts are synchronized and whether to synchronize a hashed version of user passwords, known as password hash synchronization (PHS).
 

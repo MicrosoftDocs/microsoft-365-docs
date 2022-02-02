@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,7 +13,11 @@ ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
+- m365solution-m365-identity
+- m365solution-scenario
+- m365solution-overview
 ms.custom:
+- intro-overview
 description: Deploy your identity infrastructure for Microsoft 365.
 ---
 
