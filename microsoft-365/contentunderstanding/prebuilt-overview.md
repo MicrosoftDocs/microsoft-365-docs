@@ -28,15 +28,7 @@ Like document understanding models, prebuilt models are created and managed in t
 
 After publishing your model, use the content center to apply it to any SharePoint document library that you have access to.  
 
-## File limitations
-
-Prebuilt models use OCR technology to scan PDFs, images, and TIFF files. Note the following differences about Microsoft Office text-based files and OCR-scanned files (PDF, image, or TIFF):
-
-- Office files: Truncated at 64,000 characters (when run against files in a document library).
-
-- OCR-scanned files: There's a 20-page limit.  
-
-### Requirements
+## Requirements
 
 - For best results, provide one clear photo or high-quality scan per document.
 
@@ -53,6 +45,15 @@ Prebuilt models use OCR technology to scan PDFs, images, and TIFF files. Note th
 - PDF dimensions are up to 17 x 17 inches, corresponding to Legal or A3 paper size, or smaller.
 
 - The total size of the training data is 500 pages or less.
+
+### File limitations
+
+Note the following differences about Microsoft Office text-based files and OCR-scanned files (PDF, image, or TIFF):
+
+- Office files: Truncated at 64,000 characters (when run against files in a document library).
+
+- OCR-scanned files: There's a 20-page limit.  
+
 
 ## See Also
 
