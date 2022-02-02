@@ -34,9 +34,14 @@ This feature is available only for creating [document understanding models](appl
 
 1. From a SharePoint document library, select the files you want to analyze, and then select **Classify and extract**.
 
-2. The first time you use this feature, you will see the following message.
+    ![Screenshot of a SharePoint document library with the Classify and extract option highlighted.](../media/content-understanding/local-model-classify-and-extract-option.png) 
+
+2. The first time you use this feature, you'll see the following message.
 
     ![Screenshot of the Activate document classification and extraction infomation page.](../media/content-understanding/local-model-first-run-activate-message.png) 
 
-3. Select **Activate** to continue.
+3. Select **Activate** to continue. You'll see the following message.
 
+    ![Screenshot of the Document classification and extraction activated message with the option to Create a model.](../media/content-understanding/local-model-activated-message.png) 
+
+4. Select **Create a model**.
