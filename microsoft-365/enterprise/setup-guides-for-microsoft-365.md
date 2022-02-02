@@ -136,9 +136,9 @@ The [AD FS deployment advisor](https://aka.ms/adfsguidance) provides you with st
 
 ## Guides for security and compliance
 
-### Security Analyzer
+### Security analyzer
 
-The Microsoft security suite offers an integrated ecosystem to help protect your organization. This guide helps you analyze your security posture. The Microsoft secure score is a measurement of an organization's security posture, with a higher number indicating a stronger security posture.
+The [Security analyzer](https://aka.ms/securityanalyzer) will analyze your security approach and introduce you to Microsoft integrated security and compliance solutions that can improve your security posture. You’ll learn about advanced features, such as managing identities and helping to protect against modern attacks. You can then sign up for a trial subscription and be pointed to the corresponding setup guidance for each solution.
 
 ### Microsoft Intune setup guide
 
