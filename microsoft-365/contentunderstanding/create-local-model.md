@@ -1,5 +1,5 @@
 ---
-title: Create a local model in Microsoft SharePoint Syntex
+title: Activate a model on a SharePoint site with Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,7 +12,8 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to create a local model in SharePoint Syntex.
+description: Learn how to create a local model on a SharePoint site with SharePoint Syntex.
 ---
 
-# Create a local model in Microsoft SharePoint Syntex
+# Activate a model on a SharePoint site with Microsoft SharePoint Syntex
+
