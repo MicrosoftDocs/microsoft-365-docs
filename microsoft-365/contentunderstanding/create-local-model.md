@@ -21,7 +21,7 @@ SharePoint Syntex now provides an option to create and train models locally on y
 
 By activating document classification and extraction on your SharePoint site, SharePoint Syntex lets you classify files in document libraries, extract information from new files, and automate activities based on extracted information.
 
-When you activate model creation on your site, the following lists and libraries will be added to your site:
+When you activate local model creation, the following lists and libraries will be added to your site:
 
 - Models document library
 - Training files document library
