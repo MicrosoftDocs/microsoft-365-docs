@@ -32,33 +32,41 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-These alert grading playbooks allow you to methodically review and quickly classify the alerts for well-known attacks and take recommended actions to remediate the attack and protect your network. Alert grading will also help in properly classifying the overall incident.
+Alert grading playbooks allow you to methodically review and quickly classify the alerts for well-known attacks and take recommended actions to remediate the attack and protect your network. Alert grading will also help in properly classifying the overall incident.
 
-As a security researcher or SOC analyst, you must have access to the Microsoft 365 Defender portal so that you can:
+As a security researcher or security operations center (SOC) analyst, you must have access to the Microsoft 365 Defender portal so that you can:
 
 - Assess and review the generated alerts and associated incidents. See [investigate alerts](investigate-alerts.md).
 - Search your tenant's security signal data and check for potential threats and suspicious activities. See [advanced hunting](advanced-hunting-overview.md).
 
 >[!Note]
->You can provide feedback to Microsoft about the True Positives and False Positives, not only at the end of the investigation, but also during the investigation process. This can help Microsoft with future analysis and classification of security events.
+>You can provide feedback to Microsoft about true positive and false positives alerts, not only at the end of the investigation, but also during the investigation process. This can help Microsoft with future analysis and classification of security events.
 >
 
 ## Microsoft Defender for Office 365
 
 [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Defender for Office 365 includes:
 
-- Threat protection policies: Define threat-protection policies to set the appropriate level of protection for your organization.
+- Threat protection policies
 
-- Reports: View real-time reports to monitor Defender for Office 365 performance in your organization.
+   Define threat-protection policies to set the appropriate level of protection for your organization.
 
-- Threat investigation and response capabilities: Use leading-edge tools to investigate, understand, simulate, and prevent threats.
+- Reports
 
-- Automated investigation and response capabilities: Save time and effort investigating and mitigating threats.
+  View real-time reports to monitor Defender for Office 365 performance in your organization.
+
+- Threat investigation and response capabilities
+
+  Use leading-edge tools to investigate, understand, simulate, and prevent threats.
+
+- Automated investigation and response capabilities
+
+  Save time and effort investigating and mitigating threats.
 
 Defender for Office 365 alerts can be classified as: 
 
-- True positive: Confirmed malicious activity. 
-- False positive: Confirmed non-malicious activity.
+- True positive for confirmed malicious activity. 
+- False positive for confirmed non-malicious activity.
 
 >[!Note]
 >Microsoft 365 Defender portal [https://security.microsoft.com](https://security.microsoft.com) brings together functionality from existing Microsoft security portals. The Microsoft 365 Defender portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use.
@@ -79,6 +87,8 @@ Defender for Cloud Apps alerts can be classified as:
 - False positive (FP): Confirmed non-malicious activity.
 
 ## Alert grading playbooks
+
+See these playbooks for steps to more quickly grade alerts for the following threats:
 
 - [Suspicious email forwarding activity](alert-grading-playbook-email-forwarding.md)
 - [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
