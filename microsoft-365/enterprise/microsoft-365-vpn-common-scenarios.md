@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.date: 2/2/2022
 audience: Admin
-ms.article: conceptual
+ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: medium
 search.appverid:
