@@ -45,3 +45,5 @@ This feature is available only for creating [document understanding models](appl
     ![Screenshot of the Document classification and extraction activated message with the option to Create a model.](../media/content-understanding/local-model-activated-message.png) 
 
 4. Select **Create a model**.
+
+5. On the **Create a model** panel, type the name of the model, and select the model type, and then select **Create**.
