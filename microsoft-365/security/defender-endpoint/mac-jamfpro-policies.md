@@ -46,7 +46,7 @@ You'll need to take the following steps:
 
 ## Step 1: Get the Microsoft Defender for Endpoint onboarding package
 
-1. In [Microsoft 365 Defender](https://security.microsoft.com), navigate to **Settings > Onboarding**.
+1. In [Microsoft 365 Defender](https://security.microsoft.com), navigate to **Settings > Endpoints > Onboarding**.
 
 2. Select macOS as the operating system and Mobile Device Management / Microsoft Intune as the deployment method.
 
