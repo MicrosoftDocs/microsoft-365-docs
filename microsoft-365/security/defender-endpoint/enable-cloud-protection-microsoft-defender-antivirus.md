@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 01/10/2022
+ms.date: 02/03/2022
 ms.reviewer: mkaminska
 manager: dansimp
 ms.custom: nextgen
@@ -43,7 +43,7 @@ For more information about the specific network-connectivity requirements to ens
 
 ## Use Intune to turn on cloud protection
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
 2. On the **Home** pane, select **Device configuration > Profiles**.
 
@@ -59,7 +59,7 @@ For more information about Intune device profiles, including how to create and c
 
 ## Use Microsoft Endpoint Manager to turn on cloud protection
 
-1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and log in.
+1. Go to the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in.
 
 2. Choose **Endpoint security** \> **Antivirus**.
 
@@ -69,7 +69,7 @@ For more information about Intune device profiles, including how to create and c
 
 5. Expand **Cloud protection**, and then in the **Cloud-delivered protection level** list, select one of the following:
    - **High**: Applies a strong level of detection.
-   - **High plus**: Uses the **High** level and applies additional protection measures (may impact client performance).
+   - **High plus**: Uses the **High** level and applies more protection measures (may affect client performance).
    - **Zero tolerance**: Blocks all unknown executables.
 
 6. Select **Review + save**, then choose **Save**.
@@ -93,9 +93,9 @@ For more information about configuring Microsoft Endpoint Configuration Manager,
 
     You can choose to send basic or additional information about detected software:
 
-    - Basic MAPS: Basic membership will send basic information to Microsoft about malware and potentially unwanted software that has been detected on your PC, including information about where the software came from (like URLs and partial paths), the actions taken to resolve the threat, and whether the actions were successful.
+    - Basic MAPS: Basic membership will send basic information to Microsoft about malware and potentially unwanted software that has been detected on your device. Information includes where the software came from (like URLs and partial paths), the actions taken to resolve the threat, and whether the actions were successful.
 
-    - Advanced MAPS: In addition to basic information, advanced membership will send detailed information about malware and potentially unwanted software, including the full path to the software, and detailed information about how the software has impacted your PC.
+    - Advanced MAPS: In addition to basic information, advanced membership will send detailed information about malware and potentially unwanted software, including the full path to the software, and detailed information about how the software has affected your device.
 
 6. Double-click **Send file samples when further analysis is required**. Ensure that the first option is set to **Enabled** and that the other options are set to either:
 
