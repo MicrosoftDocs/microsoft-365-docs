@@ -369,10 +369,10 @@ The following apps and services support sensitivity labels configured for sites 
 - Admin centers:
 
   - SharePoint admin center
+  - Teams admin center
   - Azure Active Directory portal
   - Microsoft 365 admin center
   - Microsoft 365 compliance center
-  - Teams admin center
 
 - User apps and services:
 
