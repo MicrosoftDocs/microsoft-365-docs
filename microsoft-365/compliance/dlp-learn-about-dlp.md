@@ -33,7 +33,7 @@ Microsoft 365 detects sensitive items by using deep content analysis, not by jus
 
 ## Permissions
 
-Members of your compliance team who will create DLP policies need permissions to the Compliance Center. By default, your tenant admin will have access can give compliance officers and other people access. Follow these steps:
+Members of your compliance team who will create DLP policies need permissions to the Compliance Center. By default, your tenant admin will have access and can give compliance officers and other people access. Follow these steps:
   
 1. Create a group in Microsoft 365 and add compliance officers to it.
     
