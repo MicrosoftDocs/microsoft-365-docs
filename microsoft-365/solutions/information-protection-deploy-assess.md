@@ -21,15 +21,15 @@ description: Determine the data privacy regulations, the relevant scenarios, you
 
 # Assess data privacy risks and identify sensitive items with Microsoft 365
 
-Assessing the data privacy regulations and risks that your organization is subject to is a key first step before implementing any related improvement actions, including those achievable with Microsoft 365 features and services.
+Assessing the data privacy regulations and risks that your organization is subject to is a first step before implementing any related improvement actions, including actions achievable with Microsoft 365 features and services.
 
 ## Potentially applicable data privacy regulations
 
-For a good reference on the broader regulatory framework for data privacy regulations, see the [Microsoft Services Trust Portal](https://servicetrust.microsoft.com/) and the [series of articles on the General Data Protection Regulation (GDPR) regulation](/compliance/regulatory/gdpr), as well as other materials on the regulations you may be subject to in your industry or region.
+For a good reference on the broader regulatory framework for data privacy regulations, see the [Microsoft Services Trust Portal](https://servicetrust.microsoft.com/) and the [series of articles on the General Data Protection Regulation (GDPR) regulation](/compliance/regulatory/gdpr). Also review materials on the regulations you may be subject to in your industry or region.
 
 ### GDPR
 
-The GDPR, the most well-known and cited of the data privacy regulations, regulates the collection, storage, processing, and sharing of any personal data that relates to an identified or identifiable natural person that is a resident of the European Union (EU).
+The GDPR is the most well-known and cited of the data privacy regulations. It regulates the collection, storage, processing, and sharing of any personal data that relates to an identified or identifiable natural person that is a resident of the European Union (EU).
 
 According to GDPR Article 4:
 
@@ -167,7 +167,7 @@ Most organizations will have some exposure to one of the above scenarios. Taking
 
 ## Step 2: Assess your readiness for complying with data privacy regulations
 
-Although specific to GDPR, the questions posed in the free [Microsoft GDPR assessment tool](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) provide a good start towards understanding your overall data privacy readiness.
+Although specific to GDPR, the questions posed in the free [Microsoft GDPR assessment tool](https://clouddamcdnprodep.azureedge.net/gdc/1863571/original) provide a good start towards understanding your overall data privacy readiness.
 
 Organizations subject to other data privacy regulations, such as CCPA in the United States or Brazil's LGPD, may also benefit from this tool's inventory of readiness due overlapping provisions with the GDPR.
 
