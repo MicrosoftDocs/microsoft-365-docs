@@ -30,6 +30,44 @@ Tamper protection in macOS helps prevent unwanted changes to security settings f
 
 
 
+You can set tamper protection in the following modes: 
+                    
+
+ Topic | Description 
+:---|:---
+**disabled**  | Tamper protection is completely off (this is the default mode after installation)  
+**audit**     | Tampering operations are logged, but not blocked                                   
+**block**     | Tamper protection is on, tampering operations are blocked 
+
+When tamper protection is set to audit or block mode, you can expect the following outcomes:
+
+**Audit mode** 
+- Actions to uninstall Defender for Endpoint agent is logged (audited)  
+- Editing/modification of Defender for Endpoint files are logged (audited) 
+- Creation of new files under Defender for Endpoint location is logged (audited) 
+- Deletion of Defender for Endpoint files is logged (audited) 
+- Renaming of Defender for Endpoint files is logged (audited) 
+- Commands to stop the agent fail 
+
+**Block mode**
+- Actions to uninstall Defender for Endpoint agent  is blocked  
+- Editing/modification of Defender for Endpoint files are blocked 
+- Creation of new files under Defender for Endpoint location is blocked 
+- Deletion of Defender for Endpoint files is blocked 
+- Renaming of Defender for Endpoint files is blocked 
+- Commands to stop the agent fail 
+
+Here is an example of a system message in response to a blocked action: 
+
+![Image of operation blocked](images/operation-blocked.png)
+
+You can configure the tamper protection mode by providing the mode name as enforcement-level. 
+
+
+>[!NOTE]
+>- The mode change will apply immediately. You don’t need to change the feature flag nor restart Microsoft Defender for Endpoint. 
+>- If you used JAMF during the initial configuration, then you'll need to update the configuration using JAMF as well.
+
 ## Before you begin
 -   Supported macOS versions: Monterey (12), Big Sur (11), Catalina (10.15+) 
 -   Minimum required version for Defender for Endpoint: 101.49.25 
@@ -85,312 +123,128 @@ Notice that the "tamper_protection" is now set to "block". 
 
 ### JAMF
 
-<!-- -->
+Configure tamper protection mode in Microsoft Defender for Endpoint [configuration profile](mac-jamfpro-policies.md), by adding the following settings:
 
-1.  **Configure tamper protection mode in Microsoft Defender’s [<u>configuration profile</u>](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-jamfpro-policies?view=o365-worldwide#legacy-method), by adding the following settings:** 
 
-> \<?xml version="1.0" encoding="UTF-8"?\> 
->
-> \<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "[<u>http://www.apple.com/DTDs/PropertyList-1.0.dtd"</u>](http://www.apple.com/DTDs/PropertyList-1.0.dtd%22)\> 
->
-> \<plist version="1.0"\> 
->
->   \<dict\> 
->
->     \<key\>tamperProtection\</key\> 
->
->     \<dict\> 
->
->       \<key\>enforcementLevel\</key\> 
->
->       \<string\>block\</string\> 
->
->     \</dict\> 
->
->   \</dict\> 
->
-> \</plist\> 
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>tamperProtection</key>
+    <dict>
+      <key>enforcementLevel</key>
+      <string>block</string>
+    </dict>
+  </dict>
+</plist>
+```
+ 
+
+>[!NOTE]
+>If you already have a configuration profile for Microsoft Defender for Endpoint then you need to *add* settings to it. You don’t need to create a second configuration profile. 
 
  
 
-> **Note**: If you already have a configuration profile for Microsoft Defender for Endpoint then you need to *add* settings to it. You don’t need to create a second configuration profile. 
+### Intune
 
- 
+Follow the documented Intune profile example to configure tamper protection through Intune. For more information, see [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md#intune-profile) 
 
->  
->
->  
+Add the following configuration in your Intune profile:
 
-1.  **Intune** 
-
-> **Follow our publicly documented Intune profile example to configure tamper protection via Intune :** [<u>Set preferences for Microsoft Defender for Endpoint on Mac \| Microsoft Docs</u>](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-preferences?view=o365-worldwide#intune-profile) 
-
-**Add the following configuration in your Intune profile: ** 
+>[!NOTE]
+>For Intune configuration, you can create a new profile configuration file to add the Tamper protection configuration, or you can add these parameters to the existing one.
 
                  
+```xml
+?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+    <dict>
+        <key>PayloadUUID</key>
+        <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadOrganization</key>
+        <string>Microsoft</string>
+        <key>PayloadIdentifier</key>
+        <string>com.microsoft.wdav</string>
+        <key>PayloadDisplayName</key>
+        <string>Microsoft Defender for Endpoint settings</string>
+        <key>PayloadDescription</key>
+        <string>Microsoft Defender for Endpoint configuration settings</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadEnabled</key>
+        <true/>
+        <key>PayloadRemovalDisallowed</key>
+        <true/>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>PayloadUUID</key>
+                <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string>
+                <key>PayloadType</key>
+                <string>com.microsoft.wdav</string>
+                <key>PayloadOrganization</key>
+                <string>Microsoft</string>
+                <key>PayloadIdentifier</key>
+                <string>com.microsoft.wdav</string>
+                <key>PayloadDisplayName</key>
+                <string>Microsoft Defender for Endpoint configuration settings</string>
+                <key>PayloadDescription</key>
+                <string/>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>tamperProtection</key>
+                <dict>
+                             <key>enforcementLevel</key>
+                             <string>block</string>
+                </dict>
+            </dict>
+        </array>
+    </dict>
+</plist>
+```
 
-?xml version="1.0" encoding="utf-8"?\> 
 
-\<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"\> 
+Check the tamper protection status by running the following command: 
+ 
 
-\<plist version="1"\> 
+`mdatp health --field tamper_protection`
 
-    \<dict\> 
+ 
+The result will show "block" if tamper protection is on: 
 
-        \<key\>PayloadUUID\</key\> 
+![Image of tamper protection in block mode](images/tp-block-mode.png)
 
-        \<string\>C4E6A782-0C8D-44AB-A025-EB893987A295\</string\> 
 
-        \<key\>PayloadType\</key\> 
 
-        \<string\>Configuration\</string\> 
+You can also run full `mdatp health` and look for the "tamper_protection" in the output: 
 
-        \<key\>PayloadOrganization\</key\> 
+![Image of tamper protection in block mode](images/health-tp-audit.png)
 
-        \<string\>Microsoft\</string\> 
 
-        \<key\>PayloadIdentifier\</key\> 
 
-        \<string\>com.microsoft.wdav\</string\> 
 
-        \<key\>PayloadDisplayName\</key\> 
-
-        \<string\>Microsoft Defender for Endpoint settings\</string\> 
-
-        \<key\>PayloadDescription\</key\> 
-
-        \<string\>Microsoft Defender for Endpoint configuration settings\</string\> 
-
-        \<key\>PayloadVersion\</key\> 
-
-        \<integer\>1\</integer\> 
-
-        \<key\>PayloadEnabled\</key\> 
-
-        \<true/\> 
-
-        \<key\>PayloadRemovalDisallowed\</key\> 
-
-        \<true/\> 
-
-        \<key\>PayloadScope\</key\> 
-
-        \<string\>System\</string\> 
-
-        \<key\>PayloadContent\</key\> 
-
-        \<array\> 
-
-            \<dict\> 
-
-                \<key\>PayloadUUID\</key\> 
-
-                \<string\>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295\</string\> 
-
-                \<key\>PayloadType\</key\> 
-
-                \<string\>com.microsoft.wdav\</string\> 
-
-                \<key\>PayloadOrganization\</key\> 
-
-                \<string\>Microsoft\</string\> 
-
-                \<key\>PayloadIdentifier\</key\> 
-
-                \<string\>com.microsoft.wdav\</string\> 
-
-                \<key\>PayloadDisplayName\</key\> 
-
-                \<string\>Microsoft Defender for Endpoint configuration settings\</string\> 
-
-                \<key\>PayloadDescription\</key\> 
-
-                \<string/\> 
-
-                \<key\>PayloadVersion\</key\> 
-
-                \<integer\>1\</integer\> 
-
-                \<key\>PayloadEnabled\</key\> 
-
-                \<true/\> 
-
-                \<key\>tamperProtection\</key\> 
-
-                \<dict\> 
-
-                             \<key\>enforcementLevel\</key\> 
-
-                             \<string\>block\</string\> 
-
-                \</dict\> 
-
-            \</dict\> 
-
-        \</array\> 
-
-    \</dict\> 
-
-\</plist\> 
-
-* * 
-
-> * (For Intune configuration, you can create a new profile configuration file to add the Tamper protection configuration, or you can add these parameters to the existing one)* 
->
->  
->
->  
-
-Check the tamper protection status: 
+## Verify tamper protection preventive capabilities  
 
  
 
-Run the following command, it will print "block" if tamper protection is on: 
+### Verify block mode
+
+Tampering alert is raised in the Microsoft 365 Defender portal
+
+![Image of tampering alert raised in the Microsoft 365 Defender portal](images/tampering-sensor-portal.png)
 
  
-
-> *mdatp health --field tamper_protection* 
->
->  
->
-> <img src="c:\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint/media/image4.gif" style="width:0.25in;height:0.25in" /> 
-
  
-
- 
-
- 
-
-You can also run full "mdatp health" and look for the "tamper_protection" in the output: 
-
- 
-
-<img src="c:\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint/media/image4.gif" style="width:0.25in;height:0.25in" /> 
-
- 
-
- 
-
- 
-
-Tamper protection modes: 
-
-You can set tamper protection in the following modes: 
-
- 
-
-| **disabled**  | Tamper protection is completely off (this is the default mode after installation)  |
-|---------------|------------------------------------------------------------------------------------|
-| **audit**     | Tampering operations are logged, but not blocked                                   |
-| **block**     | Tamper protection is on, tampering operations are blocked                          |
-
- 
-
-You can change tamper protection *mode* by providing mode name as enforcement-level, as described above, in Configure Tamper Protection on your test devices, part a**. ** 
-
- 
-
-NOTE: The mode change will apply immediately. You don’t need to change the feature flag nor restart Microsoft Defender for Endpoint.  
-
-**Note:** If you used JAMF for initial configuration, then you need to update configuration via JAMF as well. 
-
- 
-
-Troubleshooting 
-
- 
-
-Issue: Tamper protection is reported as disabled 
-
-For the private preview your OrgId must be explicitly added to the private preview group to enable the tamper protection feature. If you received an invite to the private preview from the Microsoft Defender for Endpoint team, then your OrgId has been included. All client machines for this OrgId will receive an updated cloud configuration after less than 1 hour since it was enabled for the OrgId for the private preview, or since a new machine was onboarded. 
-
- 
-
-If ‘mdatp health’ reports that the tamper protection is disabled, even if you enabled it and more than an hour has passed since the onboarding, then you can check if you have the right configuration by running the following command: 
-
- 
-
-> $ sudo grep -F '\[{tamperProtection}\]: Feature state:' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log \| tail -n 1 
->
-> \[85246\]\[2021-12-08 15:45:34.184781 UTC\]\[info\]: \[{tamperProtection}\]: Feature state: enabled, mode: "block" 
->
->  
-
--   The feature state must be "enabled". Contact us with your Org_ID, if it still reports as "disabled" even after an hour after the installation. 
-
--   The mode must be "block" (or "audit"). If it is not, then you haven’t set the tamper protection mode either via "mdatp config" or via MDM. 
-
- 
-
-What to expect on a device when tamper protection policy is applied:  
-
- 
-
-"Block" mode: 
-
--   Defender for Endpoint agent uninstall is blocked  
-
--   Editing/modification of Defender for Endpoint files are blocked 
-
--   Creation of new files under Defender for Endpoint location is blocked 
-
-<!-- -->
-
--   Deletion of Defender for Endpoint files is blocked 
-
--   Renaming of Defender for Endpoint files is blocked 
-
--   Commands to stop the agent fail 
-
- 
-
-Here is an example of a system message in response to a blocked action: 
-
-<img src="c:\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint/media/image4.gif" style="width:0.25in;height:0.25in" /> 
-
- 
-
-"Audit" mode: 
-
--   Defender for Endpoint agent uninstall is logged (audited)  
-
--   Editing/modification of Defender for Endpoint files are logged (audited) 
-
-<!-- -->
-
--   Creation of new files under Defender for Endpoint location is logged (audited) 
-
--   Deletion of Defender for Endpoint  files is logged (audited) 
-
--   Renaming of Defender for Endpoint  files is logged (audited) 
-
--   Commands to stop the agent fail 
-
- 
-
- 
-
- 
-
-How to verify tamper protection preventive capabilities  
-
- 
-
-"Block" mode: 
-
-Tampering alert is raised in the Microsoft Defender security center 
-
-\* Note "known issue \#4" – when in case of calling the official Defender for Endpoint uninstall script (*sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'*) in TP "block" mode, the uninstall is prevented, but no tampering alert is raised in Microsoft Defender security center . 
-
- 
-
-<img src="c:\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint/media/image4.gif" style="width:0.25in;height:0.25in" /> 
-
- 
-
- 
-
-"Block" and "Audit" modes: 
+### Verify block mode and audit modes 
 
 -   Tampering alerts appear in Advanced Hunting  
 
@@ -433,6 +287,42 @@ DIY scenarios 
  
 
 3\. Try to stop Defender for Endpoint process (kill). 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+## Troubleshooting configuration issues
+
+ 
+
+### Issue: Tamper protection is reported as disabled 
+
+If running the command `mdatp health` reports that the tamper protection is disabled, even if you enabled it and more than an hour has passed since the onboarding, then you can check if you have the right configuration by running the following command: 
+
+ 
+```console
+$ sudo grep -F '\[{tamperProtection}\]: Feature state:' /Library/Logs/Microsoftmdatpmicrosoft_defender_core.log \| tail -n 1 
+
+\[85246\]\[2021-12-08 15:45:34.184781 UTC\]\[info\]: \[{tamperProtection}\]: Feature state: enabledmode: "block" 
+```
+ 
+
+The mode must be "block" (or "audit"). If it is not, then you haven’t set the tamper protection mode either through `mdatp config` command or through Intune. 
+
+ 
+
+
 
  
 
