@@ -35,9 +35,9 @@ You can set tamper protection in the following modes: 
 
  Topic | Description 
 :---|:---
-**disabled**  | Tamper protection is completely off (this is the default mode after installation)  
-**audit**     | Tampering operations are logged, but not blocked                                   
-**block**     | Tamper protection is on, tampering operations are blocked 
+Disabled  | Tamper protection is completely off (this is the default mode after installation)  
+Audit     | Tampering operations are logged, but not blocked                                   
+Block     | Tamper protection is on, tampering operations are blocked 
 
 When tamper protection is set to audit or block mode, you can expect the following outcomes:
 
@@ -76,7 +76,6 @@ You can configure the tamper protection mode by providing the mode name as enfor
 **Highly recommended settings:** 
 
 1. System Integrity Protection (SIP) enabled
-
 1. Use a Mobile device management (MDM) tool to configure Microsoft Defender for Endpoint
 
  
@@ -149,7 +148,7 @@ Configure tamper protection mode in Microsoft Defender for Endpoint [configurati
 
 ### Intune
 
-Follow the documented Intune profile example to configure tamper protection through Intune. For more information, see [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md#intune-profile) 
+Follow the documented Intune profile example to configure tamper protection through Intune. For more information, see [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md#intune-profile). 
 
 Add the following configuration in your Intune profile:
 
@@ -233,7 +232,7 @@ You can also run full `mdatp health` and look for the "tamper_protection" in the
 
 
 ## Verify tamper protection preventive capabilities  
-
+You can verify that tamper protection is on through various ways.
  
 
 ### Verify block mode
@@ -245,9 +244,8 @@ Tampering alert is raised in the Microsoft 365 Defender portal
  
  
 ### Verify block mode and audit modes 
-You can verify block and audit modes through the following ways:
 
--   Tampering alerts appear in Advanced Hunting  
+-   Using Advanced hunting, you'll see tampering alerts appear  
 -   Tampering events can be found in the local device logs: `sudo grep -F '\[{tamperProtection}\]' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log`
 
 ![Image of tamper protection log](images/tamper-protection-log.png)
@@ -260,22 +258,15 @@ You can verify block and audit modes through the following ways:
 - Try to stop the Defender for Endpoint process (kill). 
 - Try to delete, rename, modify, move Defender for Endpoint files (similar to what a malicious user would do), for example: 
 
-- /Applications/Microsoft Defender ATP.app/ 
-- /Library/LaunchDaemons/com.microsoft.fresno.plist 
-- /Library/LaunchDaemons/com.microsoft.fresno.uninstall.plist 
-- /Library/LaunchAgents/com.microsoft.wdav.tray.plist 
-- /Library/Managed Preferences/com.microsoft.wdav.ext.plist 
-- /Library/Managed Preferences/mdatp_managed.json 
-- /Library/Managed Preferences/com.microsoft.wdav.atp.plist 
-- /Library/Managed Preferences/com.microsoft.wdav.atp.offboarding.plist 
-- /usr/local/bin/mdatp 
-
- 
-
-
- 
-
- 
+  - /Applications/Microsoft Defender ATP.app/ 
+  - /Library/LaunchDaemons/com.microsoft.fresno.plist 
+  - /Library/LaunchDaemons/com.microsoft.fresno.uninstall.plist 
+  - /Library/LaunchAgents/com.microsoft.wdav.tray.plist 
+  - /Library/Managed Preferences/com.microsoft.wdav.ext.plist 
+  - /Library/Managed Preferences/mdatp_managed.json 
+  - /Library/Managed Preferences/com.microsoft.wdav.atp.plist 
+  - /Library/Managed Preferences/com.microsoft.wdav.atp.offboarding.plist 
+  - /usr/local/bin/mdatp 
 
  
 ## Turning off tamper protection 
