@@ -44,7 +44,7 @@ Follow these steps on how to [convert the user's mailbox to a shared mailbox](..
 ## Forward a former employee's email to another employee
 
  > [!IMPORTANT]
- > If you're setting up email forwarding or a shared mailbox, at the end, don't delete the former employee's account. The account needs to be there to anchor the email forwarding or shared mailbox.
+ > If you're setting up email forwarding or a shared mailbox, in the end, don't delete the former employee's account. The account needs to be there to anchor the email forwarding or shared mailbox.
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 2. Select the name of the employee that you want to block, and then select the **Mail** tab.
