@@ -66,6 +66,7 @@ After installing the Microsoft 365 Migration App in your Google environment, you
 After selecting and scanning the drives you want to migrate, use the following steps to migrate them.
 1. On the **Migration** tab, verify the destination paths of the drives you want to migrate. Edit them if needed.
 2. Select the drives you want to migrate, then select **Migrate**. 
+3. When migration successfully completes, each drive will show a **Migration status** of **Completed**.
 
 
 
