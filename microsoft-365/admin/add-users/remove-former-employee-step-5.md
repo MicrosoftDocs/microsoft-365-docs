@@ -166,7 +166,7 @@ To give access to the email messages, calendar, tasks, and contacts of the forme
 
 4. Browse to the .pst file you want to import.
 
-5. Under **Options**, choose how you want to deal with duplicates
+5. Under **Options**, choose how you want to deal with duplicates.
 
 6. Select **Next**.
 
