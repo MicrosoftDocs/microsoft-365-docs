@@ -138,7 +138,7 @@ To save the email messages, calendar, tasks, and contacts of the former employee
 
 Outlook begins the export immediately unless a new Outlook Data File (.pst) is created or a password-protected file is used.
   
-- If you're creating an Outlook Data File (.pst), an optional password can help protect the file. When the **Create Outlook Data File** dialog box appears, type the  *password*  in the **Password** and **Verify Password** boxes, and then select **OK**. In the **Outlook Data File Password** dialog box, type the  *password*, and then select **OK**.
+- If you're creating an Outlook Data File (.pst), an optional password can help protect the file. When the **Create Outlook Data File** dialog box appears, type the *password* in the **Password** and **Verify Password** boxes, and then select **OK**. In the **Outlook Data File Password** dialog box, type the *password*, and then select **OK**.
 
 - If you're exporting to an existing Outlook Data File (.pst) that is password protected, in the **Outlook Data File Password** dialog box, type the *password*, and then select **OK**.
 
