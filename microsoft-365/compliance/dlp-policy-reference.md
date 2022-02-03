@@ -221,7 +221,7 @@ SITs have a pre-defined [**confidence level**](https://www.microsoft.com/videopl
 
 The available context options change depending on which location you choose. If you select multiple locations, only the conditions that the locations have in common are available.
 
-##### Conditions Exchange supports:
+##### Conditions Exchange supports
 
 - Content contains
 - Content is shared from Microsoft 365
@@ -358,7 +358,7 @@ The actions that are available in a rule are dependent on the locations that hav
 > [!IMPORTANT]
 > For SharePoint Online and OneDrive for Business locations documents will be proactively blocked right after detection of sensitive information, irrespective of whether the document is shared or not, for all external users, while internal users will continue to have access to the document.
 
-#### Exchange location actions:
+#### Exchange location actions
 
 - Restrict access or encrypt the content in Microsoft 365 locations
 - Set headers
@@ -375,19 +375,19 @@ The actions that are available in a rule are dependent on the locations that hav
 - Modify Email Subject
 - Add HTML Disclaimer
 
-#### SharePoint sites location actions:
+#### SharePoint sites location actions
 
 - Restrict access or encrypt the content in Microsoft 365 locations
 
-#### OneDrive account location actions:
+#### OneDrive account location actions
 
 - Restrict access or encrypt the content in Microsoft 365 locations
 
-#### Teams Chat and Channel Messages actions:
+#### Teams Chat and Channel Messages actions
 
 - Restrict access or encrypt the content in Microsoft 365 locations
 
-#### Devices actions:
+#### Devices actions
 
 - Audit or restrict activities on Windows devices
 
@@ -396,16 +396,16 @@ The actions that are available in a rule are dependent on the locations that hav
 
 The devices location provides many subactivities (conditions) and actions. To learn more, see [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on). 
 
-#### Microsoft Defender for Cloud Apps:
+#### Microsoft Defender for Cloud Apps
 
 - Restrict access or encrypt the content in Microsoft 365 locations
 - Restrict Third Party Apps
 
-#### On-premises repositories:
+#### On-premises repositories
 
 - Restrict access or remove on-premises files
 
-#### PowerBI actions:
+#### PowerBI actions
 
 - Notify users with email and policy tips
 - Send alerts to Administrator
