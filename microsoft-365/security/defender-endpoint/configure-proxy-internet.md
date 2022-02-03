@@ -278,7 +278,7 @@ However, if the connectivity check results indicate a failure, an HTTP error is 
 >
 > When the TelemetryProxyServer is set in Registry or via Group Policy, Defender for Endpoint will fall back, it fails to access the defined proxy.
 
-## Related topics
+## Related articles
 
 - [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md)
 - [Onboard Windows devices](configure-endpoints.md)
