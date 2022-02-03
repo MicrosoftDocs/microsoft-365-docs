@@ -104,6 +104,7 @@ A DLP policy can find and protect items that contain sensitive information acros
 |Microsoft Defender for Cloud Apps   | cloud app instance       |data-at-rest         | - [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
 |Devices  |user or group         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention) </br>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention) </br>- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
 |On-premises repositories (file shares and SharePoint)    |repository         | data-at-rest         | - [Learn about the Microsoft 365 data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner) </br> - [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
+|PowerBI| workspaces | data-in-use | no|
 
 If you choose to include specific distribution groups in Exchange, the DLP policy will be scoped only to the members of that group. Similarly excluding a distribution group will exclude all the members of that distribution group from policy evaluation. You can choose to scope a policy to the members of distribution lists, dynamic distribution groups, and security groups. A DLP policy can contain no more than 50 such inclusions and exclusions.
 
@@ -127,9 +128,10 @@ DLP policies detect sensitive items by matching them to a sensitive information 
 |Devices |Yes | Yes|  No|
 |Microsoft Defender for Cloud Apps | Yes| Yes| Yes|
 |On-Premises repositories| Yes| Yes| No|
+|PowerBI|Yes | Yes| No|
 
 > [!NOTE]
-> DLP supports detecting sensitivity labels on emails and attachemnets See, [Use sensitivity labels as conditions in DLP policies](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
+> DLP supports detecting sensitivity labels on emails and attachments See, [Use sensitivity labels as conditions in DLP policies](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies).
 
 ## Rules
 
@@ -275,7 +277,7 @@ The available context options change depending on which location you choose. If 
 - File extension is
 - Document property is
 
-##### Conditions Teams chat and channel messages support
+##### Conditions Teams chat and channel messages supports
 
 - Content contains
 - Content is shared from Microsoft 365
@@ -289,16 +291,20 @@ The available context options change depending on which location you choose. If 
 - Content contains
 - See, [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)
 
-##### Conditions Microsoft Defender for Cloud Apps support
+##### Conditions Microsoft Defender for Cloud Apps supports
 
 - Content contains
 - Content is shared from Microsoft 365
 
-##### On-premises repositories
+##### Conditions On-premises repositories supports
 
 - Content contains
 - File extension is
 - Document property is
+
+##### Conditions PowerBI supports
+
+- Content contains
 
 #### Condition groups
 
@@ -373,15 +379,15 @@ The actions that are available in a rule are dependent on the locations that hav
 
 - Restrict access or encrypt the content in Microsoft 365 locations
 
-#### OneDrive account locations:
+#### OneDrive account location actions:
 
 - Restrict access or encrypt the content in Microsoft 365 locations
 
-#### Teams Chat and Channel Messages
+#### Teams Chat and Channel Messages actions:
 
 - Restrict access or encrypt the content in Microsoft 365 locations
 
-#### Devices:
+#### Devices actions:
 
 - Audit or restrict activities on Windows devices
 
@@ -398,6 +404,11 @@ The devices location provides many subactivities (conditions) and actions. To le
 #### On-premises repositories:
 
 - Restrict access or remove on-premises files
+
+#### PowerBI actions:
+
+- Notify users with email and policy tips
+- Send alerts to Administrator
 
 #### Actions available when you combine locations
 
@@ -516,8 +527,6 @@ produces this text in the customized notification:
 
 *pasting from the clipboard File Name: Contoso doc 1 via WINWORD.EXE is not allowed by your organization. Click 'Allow' button if you want to bypass the policy Contoso highly confidential*
  
-
-
 
 > [!NOTE]
 > User notifications and policy tips are not available for the On-premises location
