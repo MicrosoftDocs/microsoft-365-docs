@@ -65,6 +65,8 @@ You must be a Global or Billing admin to do the steps described in this article.
 3. On the summary page, you can see the items, quantity, price, discount, and total for all items in the invoice.
 4. To print or save a PDF copy of the invoice, select **Download PDF**.
 
+If you want to receive a copy of your billing statement in email, see [Manage billing notifications and invoice attachments](manage-billing-notifications.md).
+
 ::: moniker range="o365-21vianet"
 
 ## Request a Fapiao
@@ -84,31 +86,6 @@ You can submit your Fapiao request to our [Fapiao management system](https://go.
 >
 > Microsoft 365 services do not provide payment receipts.
 > For credit card payments, please use the invoice and credit card billing statement to match your payment.
-
-## Receive a copy of your billing statement in email
-
-You can choose to receive a copy of your billing statement as an email attachment. If you do, be aware that:
-
-- An email is sent to both the primary and alternate email address for every person listed as a notification recipient.
-- You receive two separate emails: one that lets you know that your bill is ready, with instructions to sign in to the admin center to view it, and a second email that contains the billing statement as an attachment.
-
-### To receive your billing statement in email
-
-::: moniker range="o365-worldwide"
-
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Billing notifications</a> page.
-
-::: moniker-end
-
-2. Under **Receive billing statement as email attachment?** switch the toggle to **On**.
-
-    You can stop receiving the billing statement emails at any time by switching the toggle to **Off**.
 
 ## Run the Unknown Charge Diagnostic
 
