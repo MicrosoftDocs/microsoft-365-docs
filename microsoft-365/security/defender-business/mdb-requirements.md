@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 01/27/2022
+ms.date: 02/03/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -40,7 +40,7 @@ The following table lists the basic requirements to configure and use Microsoft 
 
 | Requirement | Description |
 |:---|:---|
-| Subscription | Microsoft Defender for Business (currently in preview!). See [How to get Microsoft Defender for Business (preview)](get-defender-business.md).<br/><br/>**You're not required to have another Microsoft 365 subscription to try Microsoft Defender for Business** (preview). |
+| Subscription | Microsoft Defender for Business (currently in preview!). See [How to get Microsoft Defender for Business (preview)](get-defender-business.md).<br/><br/>**You're not required to have another Microsoft 365 subscription to try Microsoft Defender for Business** (preview).<br/><br/>If you have multiple subscriptions, the highest subscription takes precedence. For example, if you have Microsoft Defender for Endpoint Plan 2 (purchased or trial subscription), and you get Microsoft Defender for Business (preview), Defender for Endpoint Plan 2 takes precedence. In this case, you will not see the Defender for Business (preview) experience.  |
 | Datacenter | One of the following datacenter locations: <br/>- European Union <br/>- United Kingdom <br/>- United States |
 | User accounts | User accounts are created<br/><br/>Microsoft Defender for Business (preview) licenses are assigned <br/><br/>To get help with this, see [Add users and assign licenses](../../admin/add-users/add-users.md). |
 | Permissions  | To sign up for Microsoft Defender for Business (preview), you must be a Global Admin.<br/><br/>To access the Microsoft 365 Defender portal, users must have one of the following [roles in Azure AD](mdb-roles-permissions.md) assigned: <br/>- Security Reader<br/>- Security Admin<br/>- Global Admin<br/><br/>To learn more, see [Roles and permissions in Microsoft Defender for Business (preview)](mdb-roles-permissions.md). |
