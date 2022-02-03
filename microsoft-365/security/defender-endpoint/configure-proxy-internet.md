@@ -36,7 +36,7 @@ The Defender for Endpoint sensor requires Microsoft Windows HTTP (WinHTTP) to re
 
 The WinHTTP configuration setting is independent of the Windows Internet (WinINet) browsing proxy settings (see, [WinINet vs. WinHTTP](/windows/win32/wininet/wininet-vs-winhttp)). It can only discover a proxy server by using the following discovery methods:
 
-- Auto-discovery methods:
+- Autodiscovery methods:
 
   - Transparent proxy
   
@@ -56,7 +56,7 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
 
 ## Configure the proxy server manually using a registry-based static proxy
 
-Configure a registry-based static proxy for Defender for Endpoint Detection and Response (EDR) sensor to report diagnostic data. Also, communicate with Defender for Endpoint services, if a computer isn't permitted to connect to the Internet.
+Configure a registry-based static proxy for Defender for Endpoint detection and response (EDR) sensor to report diagnostic data and communicate with Defender for Endpoint services if a computer isn't permitted to connect to the Internet.
 
 > [!NOTE]
 > When using this option on Windows 10, or Windows 11, or Windows Server 2019, or Windows Server 2022, it is recommended to have the following (or later) build and cumulative update rollup:
@@ -256,7 +256,7 @@ Verify, the proxy configuration is completed successfully. The WinHTTP can then 
 
 5. The tool creates and extracts the *MDEClientAnalyzerResult.zip* file in the folder to use in the *HardDrivePath*.
 
-6. Open *MDEClientAnalyzerResult.txt* and verify that you've performed the proxy configuration steps, to enable server discovery and access to the service URLs.
+6. Open *MDEClientAnalyzerResult.txt* and verify that you've performed the proxy configuration steps to enable server discovery and access to the service URLs.
 
    The tool checks the connectivity of Defender for Endpoint service URLs. Ensure the Defender for Endpoint client is configured to interact. The tool will print the results in the *MDEClientAnalyzerResult.txt* file for each URL that can potentially be used to communicate with the Defender for Endpoint services. For example:
 
@@ -278,7 +278,7 @@ However, if the connectivity check results indicate a failure, an HTTP error is 
 >
 > When the TelemetryProxyServer is set in Registry or via Group Policy, Defender for Endpoint will fall back, it fails to access the defined proxy.
 
-## Related topics
+## Related articles
 
 - [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md)
 - [Onboard Windows devices](configure-endpoints.md)
