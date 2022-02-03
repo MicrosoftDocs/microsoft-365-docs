@@ -14,7 +14,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "This article presents a list of the filters that can be encoded into custom-sensitive information types."
+description: "This article presents a list of the filters that can be encoded into custom sensitive information types."
 ---
 
 # Custom sensitive information type filters reference
