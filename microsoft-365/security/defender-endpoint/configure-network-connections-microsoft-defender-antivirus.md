@@ -44,7 +44,7 @@ After you've enabled the service, you need to configure your network or firewall
 
 The table in this section lists services and their associated website addresses (URLs).
 
-Make sure that there are no firewall or network filtering rules denying access to these URLs. Otherwise, you need to create an allow rule specifically for them (excluding the URL `*.blob.core.windows.net`). The URLs in the following table use port 443 for communication.
+Make sure that there are no firewall or network filtering rules denying access to these URLs. Otherwise, you must create an allow rule specifically for those URLs (excluding the URL `*.blob.core.windows.net`). The URLs in the following table use port 443 for communication.
 
 <br/><br/>
 
@@ -57,9 +57,7 @@ Make sure that there are no firewall or network filtering rules denying access t
 |Certificate Revocation List (CRL) <p> Windows use this list while creating the SSL connection to MAPS for updating the CRL.|`http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p> `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs`|
 |Symbol Store <p>Microsoft Defender Antivirus use the Symbol Store to restore certain critical files during the remediation flows.|`https://msdl.microsoft.com/download/symbols`|
 |Universal GDPR Client <p> Windows use this client to send the client diagnostic data. <p> Microsoft Defender Antivirus uses General Data Protection Regulation for product quality, and monitoring purposes.|The update uses SSL (TCP Port 443) to download manifests and upload diagnostic data to Microsoft that uses the following DNS endpoints: <p> `vortex-win.data.microsoft.com` <p> `settings-win.data.microsoft.com`|
-|EDRCloud CnC|`winatp-gw-weu.microsoft.com` <br> `winatp-gw-neu.microsoft.com`|
-|EDRCloud Cyber|`eu.vortex-win.data.microsoft.com` <br> `eu-v20.events.data.microsoft.com`|
-|EDRCloud AutoIR|`automatedirstrprdweu.blob.core.windows.net` <br> `automatedirstrprdneu.blob.core.windows.net`|
+
 
 ## Validate connections between your network and the cloud
 
@@ -74,18 +72,16 @@ Use the following argument with the Microsoft Defender Antivirus command-line ut
 ```
 
 > [!NOTE]
-> You need to open an administrator-level version of the command prompt. Right-click the item in the **Start** menu, click **Run as administrator** and click **Yes** at the permissions prompt. This command will only work on Windows 10, version 1703 or higher, or Windows 11.
+> Open Command Prompt as an administrator. Right-click the item in the **Start** menu, click **Run as administrator** and click **Yes** at the permissions prompt. This command will only work on Windows 10, version 1703 or higher, or Windows 11.
 
 For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus.md).
 
 ### Attempt to download a fake malware file from Microsoft
 
-You can download a sample file that Microsoft Defender Antivirus will detect and block if you're properly connected to the cloud.
-
-Visit [https://aka.ms/ioavtest](https://aka.ms/ioavtest) to download the file.
+You can download a sample file that Microsoft Defender Antivirus will detect and block if you're properly connected to the cloud. Visit [https://aka.ms/ioavtest](https://aka.ms/ioavtest) to download the file.
 
 > [!NOTE]
-> The downloaded file is not an exact malware. It's a fake file designed to test if you're properly connected to the cloud.
+> The downloaded file is not exactly malware. It's a fake file designed to test if you're properly connected to the cloud.
 
 If you're properly connected, you'll see a warning Microsoft Defender Antivirus notification.
 
@@ -97,9 +93,9 @@ A similar message occurs if you're using Internet Explorer:
 
 :::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="Microsoft Defender AV notification that malware was found.":::
 
-On the Windows Security app, under **Quarantined threats** of the **Scan history** section, you'll see the detection:
+#### View the fake malware detection in your Windows Security app
 
-1. From the task bar, select the Shield icon, open the **Windows Security** app or from the **Start** menu search for **Security**.
+1. On your task bar, select the Shield icon, open the **Windows Security** app. Or, search the **Start** for *Security*.
 
 2. Select **Virus & threat protection**, and then select **Protection history**.
 
@@ -112,6 +108,6 @@ On the Windows Security app, under **Quarantined threats** of the **Scan history
 
 ## See also
 
-- [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)
+- [Configure device proxy and Internet connectivity settings for Microsoft Defender for Endpoint](configure-proxy-internet.md)
 - [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md)
 - [Important changes to Microsoft Active Protection Services endpoint](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006) 
