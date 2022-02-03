@@ -1,5 +1,5 @@
 ---
-title: ASR rules deployment phase 4 - operationalize
+title: Attack surface reduction rules deployment Phase 4 - operationalize
 description: Provides guidance to operationalize your attack surface reduction rules deployment.
 keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
@@ -20,7 +20,7 @@ ms.collection: m365solution-scenario
 ms.date: 1/18/2022
 ---
 
-# ASR rules deployment phase 4: operationalize
+# Phase 4 - operationalize
 
 After you've fully deployed ASR rules, it's vital that you have processes in place to monitor and respond to ASR-related activities.
 
@@ -74,8 +74,8 @@ For more information about hunting options, see: [Demystifying attack surface re
 
 [ASR rules deployment overview](attack-surface-reduction-rules-deployment.md)
 
-[Phase 1: Plan](attack-surface-reduction-rules-deployment-phase-1.md)
+[Phase 1: Plan](attack-surface-reduction-rules-deployment-plan.md)
 
-[Phase 2: Test](attack-surface-reduction-rules-deployment-phase-2.md)
+[Phase 2: Test](attack-surface-reduction-rules-deployment-test.md)
 
-[Phase 4: Operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
+[Phase 3: Implement](attack-surface-reduction-rules-deployment-implement.md)
