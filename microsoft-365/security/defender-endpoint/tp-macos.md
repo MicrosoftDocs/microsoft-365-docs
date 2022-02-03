@@ -1,88 +1,89 @@
-Pre-requisites 
+---
+title: Protect macOS security settings with tamper protection 
+description: Use tamper protection to prevent malicious apps from changing important macOS security settings.
+keywords: macos, tamper protection, security settings, malware
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: macapara
+author: mjcaparas
+ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: 
+- M365-security-compliance
+ms.topic: article
+ms.technology: mde
+---
 
+# Protect macOS security settings with tamper protection 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+**Applies to:**
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-rbac-abovefoldlink)
+
+Tamper protection in macOS helps prevent unwanted changes to security settings from being made by unauthorized users. Tamper protection helps prevent unauthorized removal of Microsoft Defender for Endpoint on macOS. This capability also helps important security files, processes, and configuration settings from being tampered. 
+
+
+
+## Before you begin
 -   Supported macOS versions: Monterey (12), Big Sur (11), Catalina (10.15+) 
-
 -   Minimum required version for Defender for Endpoint: 101.49.25 
 
--   Familiarity with Microsoft Defender for Endpoint’s [<u>onboarding process</u>](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac) 
-
-<!-- -->
-
--   You received our invite to this private preview from the Microsoft Defender for Endpoint team 
-
- 
-
- 
 
 **Highly recommended settings:** 
 
-1.  **System Integrity Protection (SIP) enabled** 
+1. System Integrity Protection (SIP) enabled
 
-<!-- -->
-
-1.  **Mobile device management (MDM) to configure Microsoft Defender for Endpoint** 
+1. Use a Mobile device management (MDM) tool to configure Microsoft Defender for Endpoint
 
  
 
-Configure Tamper Protection on your test devices: 
+## Configure tamper protection on macOS devices
 
- 
 
 There are several ways you can configure tamper protection: 
 
--   Manual configuration 
-
--   JAMF 
-
--   Intune 
+-   [Manual configuration]
+-   [JAMF] 
+-   [Intune]
 
  
 
-**Before you begin** 
+### Before you begin
 
-Verify that “tamper_protection” is set to “disabled”.  
+Verify that "tamper_protection" is set to "disabled".  
 
-(This is a very important step in this process) 
+![Image of command line with tamper protection in disable mode](images/verify-tp.png)
 
- 
 
- 
+### Manual configuration
 
-> <img src="c:\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint/media/image1.png" style="width:5.66181in;height:5.29167in" alt="Text Description automatically generated" /> 
->
->  
+1. Use the following command: 
 
- 
+    ``` 
+    sudo mdatp config tamper-protection enforcement-level --value block
+    ```
 
-Page Break 
 
- 
+    ![Image of manual configuration command](images/manual-config-cmd.png)
 
-1.  **Manual configuration** 
 
-> Use the following command: 
+    >[!NOTE]
+    > If you use manual configuration to enable tamper protection, you can also disable tamper protection manually at any time. For example, you can revoke Full Disk Access from Defender in System Preferences manually. You must use MDM instead of manual configuration to prevent a local admin from doing that.
 
- 
+2. Verify the result. 
 
-> *sudo mdatp config tamper-protection enforcement-level --value block* 
->
-> <img src="c:\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint/media/image2.png" style="width:6.5in;height:0.70486in" /> 
->
-> **Note: If you use manual configuration to enable tamper protection, you can also disable tamper protection manually at any time. For example, you can revoke Full Disk Access from Defender in System Preferences manually. You must use MDM instead of manual configuration to prevent a local admin from doing that.** 
->
-> **  ** 
->
->  
->
-> The result should look like this: 
->
-> <img src="c:\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint/media/image3.png" style="width:5.69306in;height:5.34931in" alt="Text Description automatically generated" /> 
->
-> Notice that the “tamper_protection” is now set to “block”. 
->
->  
+    ![Image of result of manual configuration command](images/result-manual-config.png)
 
-1.  **JAMF** 
+
+Notice that the "tamper_protection" is now set to "block". 
+
+### JAMF
 
 <!-- -->
 
@@ -244,7 +245,7 @@ Check the tamper protection status: 
 
  
 
-Run the following command, it will print “block” if tamper protection is on: 
+Run the following command, it will print "block" if tamper protection is on: 
 
  
 
@@ -260,7 +261,7 @@ Run the following command, it will print “block” if tamper protection is on:
 
  
 
-You can also run full “mdatp health” and look for the “tamper_protection” in the output: 
+You can also run full "mdatp health" and look for the "tamper_protection" in the output: 
 
  
 
@@ -315,9 +316,9 @@ If ‘mdatp health’ reports that the tamper protection is disabled, even if yo
 >
 >  
 
--   The feature state must be “enabled”. Contact us with your Org_ID, if it still reports as “disabled” even after an hour after the installation. 
+-   The feature state must be "enabled". Contact us with your Org_ID, if it still reports as "disabled" even after an hour after the installation. 
 
--   The mode must be “block” (or “audit”). If it is not, then you haven’t set the tamper protection mode either via “mdatp config” or via MDM. 
+-   The mode must be "block" (or "audit"). If it is not, then you haven’t set the tamper protection mode either via "mdatp config" or via MDM. 
 
  
 
@@ -325,7 +326,7 @@ What to expect on a device when tamper protection policy is applied:  
 
  
 
-“Block” mode: 
+"Block" mode: 
 
 -   Defender for Endpoint agent uninstall is blocked  
 
@@ -349,7 +350,7 @@ Here is an example of a system message in response to a blocked action: 
 
  
 
-“Audit” mode: 
+"Audit" mode: 
 
 -   Defender for Endpoint agent uninstall is logged (audited)  
 
@@ -375,11 +376,11 @@ How to verify tamper protection preventive capabilities  
 
  
 
-“Block” mode: 
+"Block" mode: 
 
 Tampering alert is raised in the Microsoft Defender security center 
 
-\* Note “known issue \#4” – when in case of calling the official Defender for Endpoint uninstall script (*sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'*) in TP “block” mode, the uninstall is prevented, but no tampering alert is raised in Microsoft Defender security center . 
+\* Note "known issue \#4" – when in case of calling the official Defender for Endpoint uninstall script (*sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'*) in TP "block" mode, the uninstall is prevented, but no tampering alert is raised in Microsoft Defender security center . 
 
  
 
@@ -389,7 +390,7 @@ Tampering alert is raised in the Microsoft Defender security center 
 
  
 
-“Block” and “Audit” modes: 
+"Block" and "Audit" modes: 
 
 -   Tampering alerts appear in Advanced Hunting  
 
@@ -405,7 +406,7 @@ Tampering alert is raised in the Microsoft Defender security center 
 
 DIY scenarios 
 
-1\. With TP set to “block”, attempt different methods to uninstall Defender for Endpoint (\~drag app tile into trash, uninstall via command line.) 
+1\. With TP set to "block", attempt different methods to uninstall Defender for Endpoint (\~drag app tile into trash, uninstall via command line.) 
 
 2\. Try to delete, rename, modify, move Defender for Endpoint files (similar to what a malicious user would do), for example: 
 
@@ -459,7 +460,7 @@ You can turn off tamper protection at any moment after completing your evaluatio
 
 -   **JAMF** 
 
-**Change enforcementLevel to “disabled” in your configuration profile, and push it to the machine:** 
+**Change enforcementLevel to "disabled" in your configuration profile, and push it to the machine:** 
 
 > \<?xml version="1.0" encoding="UTF-8"?\> 
 >
@@ -608,9 +609,9 @@ Known issues 
 
 (*sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'*)  
 
-is used to uninstall Defender for Endpoint in TP “block” mode, the uninstallation is prevented, but no tampering alert is raised in Microsoft Defender security center. We are seeking for feedback on whether you’d like to receive a tampering alert when the official uninstall script is blocked. 
+is used to uninstall Defender for Endpoint in TP "block" mode, the uninstallation is prevented, but no tampering alert is raised in Microsoft Defender security center. We are seeking for feedback on whether you’d like to receive a tampering alert when the official uninstall script is blocked. 
 
-When the official uninstall script is used in TP “audit” mode, corresponding events are logged and will be visible via advanced hunting when advanced hunting comes online.  
+When the official uninstall script is used in TP "audit" mode, corresponding events are logged and will be visible via advanced hunting when advanced hunting comes online.  
 
  
 
