@@ -52,27 +52,29 @@ Note the following differences about Microsoft Office text-based files and OCR-s
 
 - OCR-scanned files: There's a 20-page limit.  
 
-### Model limitations
+## Model considerations
 
-- If two or more prebuilt models are applied to the same library we will classify a file using the model with the highest average confidence score. The extracted entities will only be from the applied model.
+- If two or more prebuilt models are applied to the same library, the file is classified using the model that has the highest average confidence score. The extracted entities will be from the applied model only.
 
-- If a prebuilt model is applied to a library with a document understanding model, we will classify a file with the document understanding model and any trained extractors for that model. If there are any empty columns matching the prebuilt model we will populate the columns with those extracted values.
+- If a prebuilt model is applied to a library that has a document understanding model, the file is classified using the document understanding model and any trained extractors for that model. If there are any empty columns that match the prebuilt model, the columns  will be populated using those extracted values.
 
-- If a prebuilt model is applied to a library with a custom form processing model, we will classify a file with the prebuilt model and any detected extractors for that model. If there are any empty columns matching the form processing model we will populate the columns with those extracted values.
+- If a prebuilt model is applied to a library that has a custom form processing model, the file is classified using the prebuilt model and any detected extractors for that model. If there are any empty columns that match the form processing model, the columns will be populated using those extracted values.
 
-- We do not support applying more than one custom form processing model to a library.
+- Applying more than one custom form processing model to a library is not supported.
 
 
-### model limitations for other articles (placed her for review)
+### model limitations for other articles (placed here for review)
 
-- If two or more document understanding models are applied to the same library we will classify an uploaded file using the model with the highest average confidence score. The extracted entities will only be from the applied model.
+- If two or more document understanding models are applied to the same library, the uploaded file is classified using the model that has the highest average confidence score. The extracted entities will be from the applied model only.
 
-- If a custom form processing model and document understanding model are applied to the same library we will classify the file with the document understanding model and any trained extractors for that model. If there are any empty columns matching the form processing model we will populate the columns with those extracted values.
+- If a custom form processing model and document understanding model are applied to the same library, the file is classified using the document understanding model and any trained extractors for that model. If there are any empty columns that match the form processing model, the columns will be populated using those extracted values.
 
 
 ## See Also
 
 [Create a content center](create-a-content-center.md)
+
 [Create a form processing model](create-a-form-processing-model.md)
+
 [Apply a document understanding model](apply-a-model.md)   
 
