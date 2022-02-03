@@ -48,9 +48,9 @@ Tamper protection in macOS helps prevent unwanted changes to security settings f
 
 There are several ways you can configure tamper protection: 
 
--   [Manual configuration]
--   [JAMF] 
--   [Intune]
+-   [Manual configuration](#manual-configuration)
+-   [JAMF](#jamf) 
+-   [Intune](#intune)
 
  
 
