@@ -55,8 +55,8 @@ Following privacy controls are available for configuring the data that is sent b
 
 |Threat Report     |Details      |
 |--------------------|-------------|
-|Malware report |Admins can setup privacy control for malware report - If privacy is enabled, then Defender for Endpoint will not send the malware app name and other app details as part of the malware alert report |
-|Phish report |Admins can setup privacy control for phish report - If privacy is enabled, then Defender for Endpoint will not send the domain name and details of the unsafe website as part of the phish alert report |
+|Malware report |Admins can set up privacy control for malware report - If privacy is enabled, then Defender for Endpoint will not send the malware app name and other app details as part of the malware alert report |
+|Phish report |Admins can set up privacy control for phish report - If privacy is enabled, then Defender for Endpoint will not send the domain name and details of the unsafe website as part of the phish alert report |
 |Vulnerability assessment of apps (Android-only) |By default only information about apps installed in the work profile are sent for vulnerability assessment. Admins can disable privacy to include personal apps|
 
 ## Configure vulnerability assessment of apps for BYOD devices
