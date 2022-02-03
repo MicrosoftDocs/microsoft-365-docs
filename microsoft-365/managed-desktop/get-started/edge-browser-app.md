@@ -3,9 +3,9 @@ title: New Microsoft Edge
 description:  Explains how the new Edge browser is deployed and updated
 keywords: browser, Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-manager: laurawi
+author: tiaraquan
+ms.author: tiaraquan
+manager: dougeby
 audience: ITpro
 ms.topic: article
 ms.localizationpriority: medium
@@ -25,13 +25,11 @@ The [Beta Channel](/deployedge/microsoft-edge-channels#beta-channel) is also ava
 
 ## Updates to Microsoft Edge
 
-Microsoft Managed Desktop deploys the [Stable channel](/deployedge/microsoft-edge-channels#stable-channel) of Microsoft Edge, which is auto-updated about every six weeks. Updates on the Stable channel are rolled out [progressively](/deployedge/microsoft-edge-update-progressive-rollout) by the Microsoft Edge product group in order to ensure the best experience for customers. 
+Microsoft Managed Desktop deploys the [Stable channel](/deployedge/microsoft-edge-channels#stable-channel) of Microsoft Edge, which is auto-updated about every six weeks. Updates on the Stable channel are rolled out [progressively](/deployedge/microsoft-edge-update-progressive-rollout) by the Microsoft Edge product group in order to ensure the best experience for customers.
 
 The [Beta Channel](/deployedge/microsoft-edge-channels#beta-channel) is deployed to devices in both the Test and First groups for representative validation within the organization. This channel is fully supported and is auto-updated with new features approximately every six weeks.
 
 To ensure that Microsoft Edge updates correctly, do not modify the Microsoft Edge [update policies](/deployedge/microsoft-edge-update-policies).
-
-
 
 ## Settings managed by Microsoft Managed Desktop
 
@@ -39,12 +37,13 @@ Microsoft Managed Desktop has created a default set of policies for Microsoft Ed
 
 ### Microsoft Edge extensions
 
-The security baseline for Microsoft Edge on Microsoft Managed Desktop devices sets two policies to disable all Chrome extensions and secure users. To enable and deploy extensions in your environment, see Settings you manage. 
+The security baseline for Microsoft Edge on Microsoft Managed Desktop devices sets two policies to disable all Chrome extensions and secure users. To enable and deploy extensions in your environment, see Settings you manage.
 
 #### Extension installation blocklist
+
 **Default value:** All
 
-Microsoft Managed Desktop sets this policy to prevent Chrome extensions from being installed on managed endpoints. There are known risks associated with the Chromium extension model including data loss protection, privacy, and other risks that can compromise devices. 
+Microsoft Managed Desktop sets this policy to prevent Chrome extensions from being installed on managed endpoints. There are known risks associated with the Chromium extension model including data loss protection, privacy, and other risks that can compromise devices.
 
 #### Allow user-level native messaging hosts (installed without admin permissions)
 
@@ -134,10 +133,9 @@ Microsoft Managed Desktop doesn't support Basic or Digest Authentication schemes
 
 #### Automatically import another browser's data and settings at first run
 
-**Default value:** Automatically import all supported datatypes and settings from the default browser 
+**Default value:** Automatically import all supported datatypes and settings from the default browser.
 
-With this policy applied, the First Run Experience will skip the import section, minimizing user interaction. The browser data from older versions of Microsoft Edge will always be silently migrated at the first run, regardless of this setting. 
-
+With this policy applied, the First Run Experience will skip the import section, minimizing user interaction. The browser data from older versions of Microsoft Edge will always be silently migrated at the first run, regardless of this setting.
 
 ## Settings you manage
 
@@ -152,12 +150,13 @@ The Administrative Template offers a setting to deploy particular Chrome extensi
 You can also use the Administrative Template to set Microsoft Edge to install extensions without alerting the user. You can find it in **Computer Configuration > Microsoft Edge > Extensions > Control which extensions are installed silently**.
 
 ### Microsoft Edge update policies
+
 To ensure that Microsoft Edge updates correctly, do not modify the Microsoft Edge [update policies](/deployedge/microsoft-edge-update-policies).
 
 ### Other common enterprise policies
 
 Microsoft Edge offers a great many other policies. These are some of the more common ones:
- 
+
 - [Configure Sites on the Enterprise Site List and IE Mode](/deployedge/edge-ie-mode-sitelist)
 - [Configure start-up, home page, and new tab page settings](/deployedge/microsoft-edge-policies#startup-home-page-and-new-tab-page)
 - [Configure Surf game setting](/deployedge/microsoft-edge-policies#allowsurfgame)

@@ -309,9 +309,9 @@ You can also click **Edit** to change the Azure App ID or the column header name
 
 ## Step 4: Run the sample script to upload your HR data
 
-The last step in setting up an HR connector is to run a sample script that will upload the HR data in the CSV file (that you created in Step 1) to the Microsoft cloud. Specifically, the script uploads the data to the HR connector. After you run the script, the HR connector that you created in Step 3 imports the HR data to your Microsoft 365 organization where it can accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run it automatically on a daily basis so the most current employee termination data is uploaded to the Microsoft cloud. See [Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
+The last step in setting up an HR connector is to run a sample script that will upload the HR data in the CSV file (that you created in Step 1) to the Microsoft cloud. Specifically, the script uploads the data to the HR connector. After you run the script, the HR connector that you created in Step 3 imports the HR data to your Microsoft 365 organization where it can be accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run it automatically on a daily basis so the most current employee termination data is uploaded to the Microsoft cloud. See [Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
 
-1. Go to window that you left open from the previous step to access the GitHub site with the sample script. Alternatively, open the bookmarked site or use the URL that you copied. You can also access the script [here](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1).
+1. Go to window that you left open from the previous step to access the GitHub site with the sample script. Alternatively, open the bookmarked site or use the URL that you copied. You can also access the script [here](https://github.com/microsoft/m365-compliance-connector-sample-scripts/blob/main/sample_script.ps1).
 
 2. Click the **Raw** button to display the script in text view.
 
@@ -326,7 +326,7 @@ The last step in setting up an HR connector is to run a sample script that will 
 7. Run the following command to upload the HR data in the CSV file to the Microsoft cloud; for example:
 
     ```powershell
-    .\HRConnector.ps1 -tenantId <tenantId> -appId <appId>  -appSecret <appSecret>  -jobId <jobId>  -csvFilePath '<csvFilePath>'
+    .\HRConnector.ps1 -tenantId <tenantId> -appId <appId>  -appSecret <appSecret>  -jobId <jobId>  -filePath '<filePath>'
     ```
 
    The following table describes the parameters to use with this script and their required values. The information you obtained in the previous steps is used in the values for these parameters.
@@ -334,16 +334,16 @@ The last step in setting up an HR connector is to run a sample script that will 
    | Parameter | Description |
    |:-----|:-----|:-----|
    |`tenantId`|This is the Id for your Microsoft 365 organization that you obtained in Step 2. You can also obtain the tenant Id for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization.|
-   |`appId` |This is the Azure AD application Id for the app that you created in Azure AD in Step 2. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization. | 
+   |`appId` |This is the Azure AD application Id for the app that you created in Azure AD in Step 2. This is used by Azure AD for authentication when the script attempts to access your Microsoft 365 organization. | 
    |`appSecret`|This is the Azure AD application secret for the app that you created in Azure AD in Step 2. This also used for authentication.|
    |`jobId`|This is the job ID for the HR connector that you created in Step 3. This is used to associate the HR data that is uploaded to the Microsoft cloud with the HR connector.|
-   |`csvFilePath`|This is the file path for the CSV file (stored on the same system as the script) that you created in Step 1. Try to avoid spaces in the file path; otherwise use single quotation marks.|
+   |`filePath`|This is the file path for the file (stored on the same system as the script) that you created in Step 1. Try to avoid spaces in the file path; otherwise use single quotation marks.|
    |||
 
    Here's an example of the syntax for the HR connector script using actual values for each parameter:
 
    ```powershell
-    .\HRConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv'
+    .\HRConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -filePath 'C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv'
     ```
 
    If the upload is successful, the script displays the **Upload Successful** message.
@@ -373,7 +373,7 @@ If you've haven't run the script in Step 4, a link to download the script is dis
 
 To make sure the latest HR data from your organization is available to tools like the insider risk management solution, we recommend that you schedule the script to run automatically on a recurring basis, such as once a day. This also requires that you update the HR data in the CSV file on a similar (if not the same) schedule so that it contains the latest information about employees who leave your organization. The goal is to upload the most current HR data so that the HR connector can make it available to the insider risk management solution.
 
-You can user the Task Scheduler app in Windows to automatically run the script every day.
+You can use the Task Scheduler app in Windows to automatically run the script every day.
 
 1. On your local computer, click the Windows **Start** button and then type **Task Scheduler**.
 
@@ -391,7 +391,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 6. Select the **Triggers** tab, click **New**, and then do the following things:
 
-   1. Under **Settings**, select the **Daily** option, and then choose a date and time to run the script for the first time. The script will every day at the same specified time.
+   1. Under **Settings**, select the **Daily** option, and then choose a date and time to run the script for the first time. The script will run every day at the same specified time.
 
    1. Under **Advanced settings**, make sure the **Enabled** checkbox is selected.
 
@@ -405,7 +405,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
    1. In the **Program/script** box, click **Browse**, and go to the following location and select it so the path is displayed in the box: `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`.
 
-   1. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
+   1. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -filePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
    1. In the **Start in (optional)** box, paste the folder location of the script that you ran in Step 4. For example, `C:\Users\contosoadmin\Desktop\Scripts`.
 
@@ -423,6 +423,6 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 ## Existing HR connectors
 
-On December 13, 2021, we released the employee profile data scenario for HR connectors. If you created an HR connector before this date, we will migrate the existing instances or your organization's HR connectors so your HR data continues to be imported to the Microsoft cloud. You don't have to do anything to maintain this functionality. You can keep using these  connectors without disruption.
+On December 13, 2021, we released the employee profile data scenario for HR connectors. If you created an HR connector before this date, we will migrate the existing instances or your organization's HR connectors so your HR data continues to be imported to the Microsoft cloud. You don't have to do anything to maintain this functionality. You can keep using these connectors without disruption.
 
 If you want to implement the employee profile data scenario, you create a new HR connector and configure it as required. After you create a new HR connector, run the script using the job ID of the new connector and CSV files with [employee profile data](#csv-file-for-employee-profile-data-preview) previously described in this article.

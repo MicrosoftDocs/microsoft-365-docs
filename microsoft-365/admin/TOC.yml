@@ -1,6 +1,10 @@
 - name: Microsoft 365 admin center help
   href: index.yml
   items: 
+    - name: Top 20 admin help articles
+      href: top-m365-admin-articles.yml
+    - name: Admin training video library
+      href: admin-video-library.yml
     - name: Get started
       items: 
         - name: Sign up
@@ -322,7 +326,7 @@
              href: manage/servicenow-overview.md
            - name: Configure basic authentication
              href: manage/servicenow-basic-authentication.md
-           - name: Configure with AAD OAuth Token
+           - name: Configure with Azure AD Auth Token
              href: manage/servicenow-aad-oauth-token.md
            - name: Service health incidents and recommended solutions only
              href: manage/servicenow-service-health-incidents-solutions-only.md

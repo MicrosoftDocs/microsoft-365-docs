@@ -9,7 +9,6 @@ ms.topic: article
 audience: Admin
 f1.keywords:
   - NOCSH
-ms.reviewer: martincoetzer
 ms.custom:
   - it-pro
   - goldenconfig
@@ -17,14 +16,10 @@ ms.collection:
   - M365-identity-device-management
   - M365-security-compliance
   - m365solution-identitydevice
-  - m365solution-overview
+  - m365solution-scenario
 ms.technology: mdo
 ---
 # Continuous access evaluation for Microsoft 365
-
-**Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 
 Modern cloud services that use OAuth 2.0 for authentication traditionally rely on access token expiration to revoke a user account’s access. In practice, this means even if an administrator revokes a user account’s access, the user will still have access until the access token expires, which for Microsoft 365 by default, used to be up to an hour after the initial revocation event took place.
 

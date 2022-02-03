@@ -11,12 +11,13 @@ metadata:
   audience: ITPro
   author: martyav
   ms.author: dansimp
-  ms.reviewer:
+  ms.reviewer: oogunrinde, sugamar 
   manager: dansimp
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.collection: M365-security-compliance
+  ms.collection: m365initiative-m365-defender
+  ms.date: 1/18/2022
 
 title: Attack surface reduction frequently asked questions (FAQ)
 summary: |
@@ -204,6 +205,6 @@ sections:
         answer: |
           * [Attack surface reduction overview](attack-surface-reduction.md)
           * [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
-          * [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
+          * [Attack surface reduction rules deployment phase 3: implement](attack-surface-reduction-rules-deployment-implement.md)
           * [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
           * [Compatibility of Microsoft Defender Antivirus with other antivirus/antimalware](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
