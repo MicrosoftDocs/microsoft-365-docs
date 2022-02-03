@@ -52,7 +52,7 @@ You'll need to take the following steps:
 
     ![Image of Microsoft Defender Security Center.](images/onboarding-macos.png)
 
-3. Select **Download Installation package** (WindowsDefenderATPOnboardingPackage.zip).
+3. Select **Download onboarding package** (WindowsDefenderATPOnboardingPackage.zip).
 
 4. Extract `WindowsDefenderATPOnboardingPackage.zip`.
 
