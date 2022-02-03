@@ -6430,6 +6430,21 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/enterprise/about-microsoft-365-identity.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-identity-model",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/enterprise/identity-roadmap-microsoft-365.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/enterprise/plan-for-directory-synchronization.md",
+      "redirect_url": "/microsoft-365/enterprise/prepare-for-directory-synchronization",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/security/defender-business/mdb-create-new-policy.md",
       "redirect_url": "/microsoft-365/security/defender-business/mdb-view-edit-create-policies",
       "redirect_document_id": false
