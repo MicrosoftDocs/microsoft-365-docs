@@ -91,7 +91,7 @@ Here's a list of MIP role groups that are in preview. To learn more about the, s
 
 6. Choose \> **Next**.
  
-1. <!-->, do one of the following:
+1. Do one of the following:
 
    - Choose **All locations in Office 365** \> **Next**.
    - Choose **Let me choose specific locations** \> **Next**. For this example, choose this.
@@ -102,7 +102,7 @@ Here's a list of MIP role groups that are in preview. To learn more about the, s
 
    ![Options for locations where a DLP policy can be applied.](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
 
-   In this example, to protect sensitive information stored in all OneDrive for Business accounts, turn off the **Status** for both **Exchange email** and **SharePoint sites**, and leave the **Status** on for **OneDrive accounts**.-->
+   In this example, to protect sensitive information stored in all OneDrive for Business accounts, turn off the **Status** for both **Exchange email** and **SharePoint sites**, and leave the **Status** on for **OneDrive accounts**.
 
 7. Choose **Review and customize default settings from the template** \> **Next**.
 

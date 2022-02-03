@@ -41,10 +41,7 @@ You can use <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="
 
 ## Microsoft 365 Defender
 
-When you open the portal, you'll see:
-
-- (1) Navigation pane (select the horizontal lines at the top of the navigation pane to show or hide it)
-- (2) Search, Community center, Localization, Help and support, Feedback
+When you open the portal, you'll see the Navigation pane (select the horizontal lines at the top of the navigation pane to show or hide it).
 
  ![Microsoft Defender for Endpoint portal.](images/mdatp-portal-overview.png)
 
