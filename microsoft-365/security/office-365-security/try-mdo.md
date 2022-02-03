@@ -72,6 +72,12 @@ When you evaluate Defender for Office 365, the policies that control protection 
 
   The default and recommended selection is to scope these Defender for Office 365 policies to all users in the organization. But, during or after setup, you can change the policy assignment to specific users, groups, or email domains.
 
+**Notes**:
+
+- Safe Link wil detonate URLs mail flow. To prevent specific URLs from being detonated, use the Tenant Allow/Block List. For more information, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+
+- Safe Links does not wrap URL links in email message bodies.
+
 ## Set up an evaluation in audit mode
 
 1. Click **Start evaluation**.
@@ -165,3 +171,7 @@ When you evaluate Defender for Office 365, the policies that control protection 
    When you're finished, click **Continue**.
 
 4. A progress dialog appears as your evaluation is set up. When setup is complete, click **Done**.
+
+## Reporting in audit mode
+
+
