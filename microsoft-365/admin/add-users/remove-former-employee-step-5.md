@@ -130,7 +130,7 @@ To save the email messages, calendar, tasks, and contacts of the former employee
 8. Select **Browse** to select where to save the Outlook Data File (.pst). Type a  *file name*, and then select **OK** to continue.
 
     > [!NOTE]
-    > If you've used export before, the previous folder location and file name appear. Type a  *different file name*  before selecting **OK**.
+    > If you've used export before, the previous folder location and file name appear. Type a *different file name* before selecting **OK**.
   
 9. If you are exporting to an existing Outlook Data File (.pst), under **Options**, specify what to do when exporting items that already exist in the file.
 
