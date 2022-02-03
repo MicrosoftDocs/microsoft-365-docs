@@ -63,13 +63,6 @@ Note the following differences about Microsoft Office text-based files and OCR-s
 - Applying more than one custom form processing model to a library is not supported.
 
 
-### model limitations for other articles (placed here for review)
-
-- If two or more document understanding models are applied to the same library, the uploaded file is classified using the model that has the highest average confidence score. The extracted entities will be from the applied model only.
-
-- If a custom form processing model and document understanding model are applied to the same library, the file is classified using the document understanding model and any trained extractors for that model. If there are any empty columns that match the form processing model, the columns will be populated using those extracted values.
-
-
 ## See Also
 
 [Create a content center](create-a-content-center.md)
