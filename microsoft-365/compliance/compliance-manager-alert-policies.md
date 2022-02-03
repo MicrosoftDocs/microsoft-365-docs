@@ -31,7 +31,10 @@ To create alerts, you first set up an alert policy to outline the conditions tha
 
 ## Understanding the Alerts and Alert policies pages
 
-To access the **Alerts** and **Alert policies** pages in Compliance Manager, a user must be assigned to the **Security reader** role in Azure Active Directory (AD) (learn more about [Azure roles in the Microsoft 365 compliance center](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-microsoft-365-compliance-center)). In order to create, edit, and manage alerts and alert policies, users need additional Azure AD and Compliance Manager roles. See [Alert policy permissions](#alert-policy-permissions) for details.
+> [!IMPORTANT]
+> To access the **Alerts** and **Alert policies** pages in Compliance Manager, a user must be assigned to the **Security reader** role in Azure Active Directory (AD) (learn more about [Azure roles in the Microsoft 365 compliance center](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-microsoft-365-compliance-center)).
+
+In addition to having a security role as outlined in the blue box above, users must also hold a certain Compliance Manager role in order to create, edit, and manage alerts and alert policies. See [Alert policy permissions](#alert-policy-permissions) for details.
 
 ### Alert policies page
 
