@@ -1,5 +1,5 @@
 ---
-title: "Migrate Google files to Microsoft 365 for business "
+title: "Migrate Google files to Microsoft 365 for business with Migration Manager"
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -23,7 +23,7 @@ search.appverid:
 description: "Learn how to migrate Google files to Microsoft 365 for business by using the SharePoint Migration Manager."
 ---
 
-# Migrate Google files to Microsoft 365 for business 
+# Migrate Google files to Microsoft 365 for business with Migration Manager
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWSx43?autoplay=false]
 
