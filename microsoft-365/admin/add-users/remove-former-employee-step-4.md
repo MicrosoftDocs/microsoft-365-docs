@@ -39,7 +39,7 @@ When you convert a user's mailbox to a shared mailbox, all of the existing email
 - If you convert the mailbox to a shared mailbox, all the old email will be available, too. This can take up a lot of space.
 - If you set up email forwarding, only *new* emails sent to the former employee will now be sent to the current employee.
 
-Follow these steps on how to [convert the user's mailbox to a shared mailbox](../email/convert-user-mailbox-to-shared-mailbox.md).
+Follow these steps to [convert the user's mailbox to a shared mailbox](../email/convert-user-mailbox-to-shared-mailbox.md).
 
 ## Forward a former employee's email to another employee
 
