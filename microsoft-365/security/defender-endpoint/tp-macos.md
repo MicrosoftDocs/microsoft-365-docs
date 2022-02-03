@@ -245,66 +245,131 @@ Tampering alert is raised in the Microsoft 365 Defender portal
  
  
 ### Verify block mode and audit modes 
+You can verify block and audit modes through the following ways:
 
 -   Tampering alerts appear in Advanced Hunting  
+-   Tampering events can be found in the local device logs: `sudo grep -F '\[{tamperProtection}\]' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log`
 
--   Tampering events can be found in the local device logs: *sudo grep -F '\[{tamperProtection}\]' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log* 
+![Image of tamper protection log](images/tamper-protection-log.png)
 
-<img src="c:\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint/media/image4.gif" style="width:0.25in;height:0.25in" /> 
+
+ 
+### DIY scenarios 
+
+- With tamper protection set to "block", attempt different methods to uninstall Defender for Endpoint. For example, drag the app tile into trash or uninstall tamper protection using the command line. 
+- Try to stop the Defender for Endpoint process (kill). 
+- Try to delete, rename, modify, move Defender for Endpoint files (similar to what a malicious user would do), for example: 
+
+- /Applications/Microsoft Defender ATP.app/ 
+- /Library/LaunchDaemons/com.microsoft.fresno.plist 
+- /Library/LaunchDaemons/com.microsoft.fresno.uninstall.plist 
+- /Library/LaunchAgents/com.microsoft.wdav.tray.plist 
+- /Library/Managed Preferences/com.microsoft.wdav.ext.plist 
+- /Library/Managed Preferences/mdatp_managed.json 
+- /Library/Managed Preferences/com.microsoft.wdav.atp.plist 
+- /Library/Managed Preferences/com.microsoft.wdav.atp.offboarding.plist 
+- /usr/local/bin/mdatp 
+
+ 
+
 
  
 
  
 
  
+## Turning off tamper protection 
 
-DIY scenarios 
+You can turn off tamper protection using any of the following methods.  
 
-1\. With TP set to "block", attempt different methods to uninstall Defender for Endpoint (\~drag app tile into trash, uninstall via command line.) 
+### Manual configuration
 
-2\. Try to delete, rename, modify, move Defender for Endpoint files (similar to what a malicious user would do), for example: 
+Use the following command:
 
--   /Applications/Microsoft Defender ATP.app/ 
-
--   /Library/LaunchDaemons/com.microsoft.fresno.plist 
-
--   /Library/LaunchDaemons/com.microsoft.fresno.uninstall.plist 
-
--   /Library/LaunchAgents/com.microsoft.wdav.tray.plist 
-
-<!-- -->
-
--   /Library/Managed Preferences/com.microsoft.wdav.ext.plist 
-
--   /Library/Managed Preferences/mdatp_managed.json 
-
--   /Library/Managed Preferences/com.microsoft.wdav.atp.plist 
-
--   /Library/Managed Preferences/com.microsoft.wdav.atp.offboarding.plist 
-
--   /usr/local/bin/mdatp 
+`sudo mdatp config tamper-protection enforcement-level – –value disabled`
 
  
 
-3\. Try to stop Defender for Endpoint process (kill). 
-
- 
-
+## JAMF
+Change the `enforcementLevel` value to "disabled" in your configuration profile, and push it to the machine:
 
 
+```console
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>tamperProtection</key>
+    <dict>
+      <key>enforcementLevel</key>
+      <string>disabled</string>
+    </dict>
+  </dict>
+</plist>
+
+```
 
 
+### Intune 
+Add the following configuration in your Intune profile:
 
-
-
-
-
-
- 
+```
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1">
+    <dict>
+        <key>PayloadUUID</key>
+        <string>C4E6A782-0C8D-44AB-A025-EB893987A295</string>
+        <key>PayloadType</key>
+        <string>Configuration</string>
+        <key>PayloadOrganization</key>
+        <string>Microsoft</string>
+        <key>PayloadIdentifier</key>
+        <string>com.microsoft.wdav</string>
+        <key>PayloadDisplayName</key>
+        <string>Microsoft Defender for Endpoint settings</string>
+        <key>PayloadDescription</key>
+        <string>Microsoft Defender for Endpoint configuration settings</string>
+        <key>PayloadVersion</key>
+        <integer>1</integer>
+        <key>PayloadEnabled</key>
+        <true/>
+        <key>PayloadRemovalDisallowed</key>
+        <true/>
+        <key>PayloadScope</key>
+        <string>System</string>
+        <key>PayloadContent</key>
+        <array>
+            <dict>
+                <key>PayloadUUID</key>
+                <string>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295</string>
+                <key>PayloadType</key>
+                <string>com.microsoft.wdav</string>
+                <key>PayloadOrganization</key>
+                <string>Microsoft</string>
+                <key>PayloadIdentifier</key>
+                <string>com.microsoft.wdav</string>
+                <key>PayloadDisplayName</key>
+                <string>Microsoft Defender for Endpoint configuration settings</string>
+                <key>PayloadDescription</key>
+                <string/>
+                <key>PayloadVersion</key>
+                <integer>1</integer>
+                <key>PayloadEnabled</key>
+                <true/>
+                <key>tamperProtection</key>
+                <dict>
+                             <key>enforcementLevel</key>
+                             <string>disabled</string>
+                </dict>
+            </dict>
+        </array>
+    </dict>
+</plist>
+```
 
 ## Troubleshooting configuration issues
 
- 
 
 ### Issue: Tamper protection is reported as disabled 
 
@@ -322,187 +387,3 @@ The mode must be "block" (or "audit"). If it is not, then you haven’t set the 
 
  
 
-
-
- 
-
- 
-
- 
-
- 
-
-Turning off tamper protection 
-
- 
-
-You can turn off tamper protection at any moment after completing your evaluation.  
-
- 
-
--   **Manual configuration** 
-
-> **Use the following command:** 
-
-*sudo mdatp config tamper-protection enforcement-level – –value disabled* 
-
- 
-
--   **JAMF** 
-
-**Change enforcementLevel to "disabled" in your configuration profile, and push it to the machine:** 
-
-> \<?xml version="1.0" encoding="UTF-8"?\> 
->
-> \<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "[<u>http://www.apple.com/DTDs/PropertyList-1.0.dtd"</u>](http://www.apple.com/DTDs/PropertyList-1.0.dtd%22)\> 
->
-> \<plist version="1.0"\> 
->
->   \<dict\> 
->
->     \<key\>tamperProtection\</key\> 
->
->     \<dict\> 
->
->       \<key\>enforcementLevel\</key\> 
->
->       \<string\>disabled\</string\> 
->
->     \</dict\> 
->
->   \</dict\> 
->
-> \</plist\> 
->
->  
-
--   **Intune**   
-    > **Add the following configuration in your Intune profile:** 
-
-> \<?xml version="1.0" encoding="utf-8"?\> 
->
-> \<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"\> 
->
-> \<plist version="1"\> 
->
->     \<dict\> 
->
->         \<key\>PayloadUUID\</key\> 
->
->         \<string\>C4E6A782-0C8D-44AB-A025-EB893987A295\</string\> 
->
->         \<key\>PayloadType\</key\> 
->
->         \<string\>Configuration\</string\> 
->
->         \<key\>PayloadOrganization\</key\> 
->
->         \<string\>Microsoft\</string\> 
->
->         \<key\>PayloadIdentifier\</key\> 
->
->         \<string\>com.microsoft.wdav\</string\> 
->
->         \<key\>PayloadDisplayName\</key\> 
->
->         \<string\>Microsoft Defender for Endpoint settings\</string\> 
->
->         \<key\>PayloadDescription\</key\> 
->
->         \<string\>Microsoft Defender for Endpoint configuration settings\</string\> 
->
->         \<key\>PayloadVersion\</key\> 
->
->         \<integer\>1\</integer\> 
->
->         \<key\>PayloadEnabled\</key\> 
->
->         \<true/\> 
->
->         \<key\>PayloadRemovalDisallowed\</key\> 
->
->         \<true/\> 
->
->         \<key\>PayloadScope\</key\> 
->
->         \<string\>System\</string\> 
->
->         \<key\>PayloadContent\</key\> 
->
->         \<array\> 
->
->             \<dict\> 
->
->                 \<key\>PayloadUUID\</key\> 
->
->                 \<string\>99DBC2BC-3B3A-46A2-A413-C8F9BB9A7295\</string\> 
->
->                 \<key\>PayloadType\</key\> 
->
->                 \<string\>com.microsoft.wdav\</string\> 
->
->                 \<key\>PayloadOrganization\</key\> 
->
->                 \<string\>Microsoft\</string\> 
->
->                 \<key\>PayloadIdentifier\</key\> 
->
->                 \<string\>com.microsoft.wdav\</string\> 
->
->                 \<key\>PayloadDisplayName\</key\> 
->
->                 \<string\>Microsoft Defender for Endpoint configuration settings\</string\> 
->
->                 \<key\>PayloadDescription\</key\> 
->
->                 \<string/\> 
->
->                 \<key\>PayloadVersion\</key\> 
->
->                 \<integer\>1\</integer\> 
->
->                 \<key\>PayloadEnabled\</key\> 
->
->                 \<true/\> 
->
->                 \<key\>tamperProtection\</key\> 
->
->                 \<dict\> 
->
->                              \<key\>enforcementLevel\</key\> 
->
->                              \<string\>disabled\</string\> 
->
->                 \</dict\> 
->
->             \</dict\> 
->
->         \</array\> 
->
->     \</dict\> 
->
-> \</plist\> 
-
- 
-
- 
-
-Known issues 
-
-1\. During the private preview, you can configure Tamper Protection (TP) locally (on device). Before entering general availability, TP setting configuration will switch to remote-admin-only experience (and will be protected by a signed authorization blob). 
-
-2\. When TP is configured locally, it is possible to disable TP locally via a designated command (it is done for ease of testing). Local ability to disable TP will be removed when the development cycle reaches public availability. 
-
-3\. TP event monitoring is currently possible via local on-device logs and in Microsoft Defender security center. TP events monitoring via advanced hunting is under development. Advanced hunting scenario will be enabled with an upcoming refresh to the preview. 
-
-4\. When an official uninstall script  
-
-(*sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'*)  
-
-is used to uninstall Defender for Endpoint in TP "block" mode, the uninstallation is prevented, but no tampering alert is raised in Microsoft Defender security center. We are seeking for feedback on whether you’d like to receive a tampering alert when the official uninstall script is blocked. 
-
-When the official uninstall script is used in TP "audit" mode, corresponding events are logged and will be visible via advanced hunting when advanced hunting comes online.  
-
- 
-
- 
