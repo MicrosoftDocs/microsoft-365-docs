@@ -68,6 +68,9 @@ After applying the model to the document library, you can begin uploading docume
 
 The model identifies any files and folders with the model’s associated content type and lists them in your view. If your model has any extractors, the view displays columns for the data you are extracting from each file or folder.
 
+> [!NOTE]
+> If two or more document understanding models are applied to the same library, the uploaded file is classified using the model that has the highest average confidence score. The extracted entities will be from the applied model only.
+
 ## Sync changes to one or more libraries
 
 When you publish a model to multiple document libraries and then update the model, such as adding or removing an extractor, you need to push the update to all the libraries that the model has been applied.
