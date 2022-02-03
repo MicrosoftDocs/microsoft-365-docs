@@ -246,6 +246,7 @@ Advanced eDiscovery supports many file types at many different levels. The suppo
 |application/vnd.ms-graph|Yes|Yes|No|No|No||
 |application/winhlp|Yes|Yes|No|No|No|.hlp|
 |application/x-tnef|Yes|Yes|No|No|No||
+|application/octet-stream|Yes|No|No|No|No|.fluid|
 |
 
 ## Plain Text
