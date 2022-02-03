@@ -70,7 +70,7 @@ You can also grant access to another user to access a former employee's OneDrive
 
 8. Right-click the user, and then choose **Manage site collection owners**.
 
-9. Add the user to **Site collection administrators** and select **Ok**.
+9. Add the user to **Site collection administrators** and select **OK**.
 
 10. The user will now be able to access the former employee's OneDrive using the OneDrive URL. 
 
