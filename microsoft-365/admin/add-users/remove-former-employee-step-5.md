@@ -102,7 +102,7 @@ You can give yourself access to the content in a user's OneDrive, but you may wa
 
 To save the email messages, calendar, tasks, and contacts of the former employee, export the information to an Outlook Data File (.pst).
   
-1. [Add the former employee's email](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) to your Outlook (If you [reset the user's password](reset-passwords.md), you can set it to something only you know.)
+1. [Add the former employee's email](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) to your Outlook. (If you [reset the user's password](reset-passwords.md), you can set it to something only you know.)
 
 2. In Outlook, select **File**.
 
