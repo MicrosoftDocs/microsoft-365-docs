@@ -65,9 +65,6 @@ Note the following differences about Microsoft Office text-based files and OCR-s
 
 ## See Also
 
-[Create a content center](create-a-content-center.md)
-
-[Create a form processing model](create-a-form-processing-model.md)
-
-[Apply a document understanding model](apply-a-model.md)   
+[Use a prebuilt model to extract info from invoices or receipts](prebuilt-overview.md)
+ 
 
