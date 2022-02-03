@@ -148,7 +148,7 @@ Configure tamper protection mode in Microsoft Defender for Endpoint [configurati
 
 ### Intune
 
-Follow the documented Intune profile example to configure tamper protection through Intune. For more information, see [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md#intune-profile). 
+Follow the documented Intune profile example to configure tamper protection through Intune. For more information, see [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md). 
 
 Add the following configuration in your Intune profile:
 
