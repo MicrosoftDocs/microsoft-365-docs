@@ -52,6 +52,23 @@ Note the following differences about Microsoft Office text-based files and OCR-s
 
 - OCR-scanned files: There's a 20-page limit.  
 
+### Model limitations
+
+- If two or more prebuilt models are applied to the same library we will classify a file using the model with the highest average confidence score. The extracted entities will only be from the applied model.
+
+- If a prebuilt model is applied to a library with a document understanding model, we will classify a file with the document understanding model and any trained extractors for that model. If there are any empty columns matching the prebuilt model we will populate the columns with those extracted values.
+
+- If a prebuilt model is applied to a library with a custom form processing model, we will classify a file with the prebuilt model and any detected extractors for that model. If there are any empty columns matching the form processing model we will populate the columns with those extracted values.
+
+- We do not support applying more than one custom form processing model to a library.
+
+
+### model limitations for other articles (placed her for review)
+
+- If two or more document understanding models are applied to the same library we will classify an uploaded file using the model with the highest average confidence score. The extracted entities will only be from the applied model.
+
+- If a custom form processing model and document understanding model are applied to the same library we will classify the file with the document understanding model and any trained extractors for that model. If there are any empty columns matching the form processing model we will populate the columns with those extracted values.
+
 
 ## See Also
 
