@@ -123,7 +123,7 @@ To do this:
 
     For this example, the file share is:
 
-    \\fileserver.fqdn\mdatp$\wdav-update
+    \\\fileserver.fqdn\mdatp$\wdav-update
 
 ### Set a scheduled task to run the PowerShell script
 
