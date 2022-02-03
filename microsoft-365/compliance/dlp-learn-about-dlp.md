@@ -47,7 +47,7 @@ Use the **View-Only DLP Compliance Management** role to create a role group with
 
 For more information, see [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
-These permissions are required to create and apply a DLP policy not to enforce policies.
+These permissions are required to create and apply a DLP policy, not to enforce policies.
 
 ### Roles and Role Groups in preview
 
