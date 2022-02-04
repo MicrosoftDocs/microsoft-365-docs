@@ -41,14 +41,14 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 ### Microsoft Information Governance
 
 - The [Microsoft Information Governance in Microsoft 365](manage-information-governance.md) page and section of the documentation is substantially revised and restructured to help you more easily find information that relates to the solutions you configure in the Microsoft 365 compliance center: Data Connectors, Information Governance, and Records Management. As part of this revision, the documentation provides a clearer distinction for the retention scenarios for information governance vs. records management.
-- Learn about information governance (new; to support the restructure)
-- Get started with information governance (new; to replace "Get started with retention", this article includes getting started steps for all information governance capabilities, which include retention)
-- Create retention labels for exceptions to your retention policies (new; identified scenario for using retention labels for information governance rather than records management)
-- Learn about archive mailboxes (new; to support the restructure, contains conceptual information that was previously in Enable archive mailboxes)
+- [Learn about information governance](information-governance.md) (new; to support the restructure)
+- [Get started with information governance](get-started-with-information-governance.md) (new; to replace "Get started with retention", this article includes getting started steps for all information governance capabilities, which include retention)
+- [Create retention labels for exceptions to your retention policies](create-retention-labels-information-governance.md) (new; identified scenario for using retention labels for information governance rather than records management)
+- [Learn about archive mailboxes](archive-mailboxes.md) (new; to support the restructure, contains conceptual information that was previously in Enable archive mailboxes)
 
 ### Microsoft Priva
 
-- Privacy management is now Microsoft Priva - updated to rebrand the product and its solutions, Priva Privacy Risk Management and Priva Subject Rights Requests.
+- [Privacy management is now Microsoft Priva](/privacy/priva/priva-overview) - updated to rebrand the product and its solutions, Priva Privacy Risk Management and Priva Subject Rights Requests.
 
 ### Sensitivity labels
 
