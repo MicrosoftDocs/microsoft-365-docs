@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 network connectivity test tool"
 ms.author: kvice
-author: kelleyvice-msftmicrosoft-365/enterprise/microsoft-365-ip-web-service.md 
+author: kelleyvice-msft
 manager: scotv
 ms.date: 1/18/2022
 audience: Admin
