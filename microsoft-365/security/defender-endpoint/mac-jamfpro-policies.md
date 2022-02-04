@@ -312,7 +312,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 2. Save the file as `MDATP_MDAV_configuration_settings.plist`.
 
-3. In the Jamf Pro dashboard, open **Computers**, and there **Configuration Profiles**. Click **New(* and switch to the **General** tab.
+3. In the Jamf Pro dashboard, open **Computers**, and their **Configuration Profiles**. Click **New** and switch to the **General** tab.
 
     ![New profile.](images/644e0f3af40c29e80ca1443535b2fe32.png)
 
