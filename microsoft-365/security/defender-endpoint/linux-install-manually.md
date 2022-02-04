@@ -377,6 +377,12 @@ Download the onboarding package from Microsoft 365 Defender portal.
         ```bash
         mdatp health --field real_time_protection_enabled
         ```
+        
+      If it is not enabled, execute the following command:
+      
+       ```bash
+        mdatp config real-time-protection --value enabled
+        ```
 
     - Open a Terminal window and execute the following command:
 
