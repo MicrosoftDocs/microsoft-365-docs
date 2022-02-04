@@ -57,8 +57,6 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 5. Extract the contents of the .zip file to a shared, read-only location that can be accessed by the network administrators who will deploy the package. You should have a file named *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding*.
 
-
-
 6. Use the Microsoft Intune custom configuration policy to deploy the following supported OMA-URI settings.
 
     ```text
