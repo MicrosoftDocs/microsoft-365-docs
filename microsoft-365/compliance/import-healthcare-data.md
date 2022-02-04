@@ -34,7 +34,7 @@ Setting up a Healthcare connector consists of the following tasks:
 
 ## Before you set up the connector
 
-- The user who creates the Healthcare connector in Step 3 must be assigned the Mailbox Import Export role in Exchange Online. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a new role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](\Exchange\permissions-exo\role-groups#create-role-groups) or [Modify role groups](\Exchange\permissions-exo\role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
+- The user who creates the Healthcare connector in Step 3 must be assigned the Mailbox Import Export role in Exchange Online. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a new role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
 - You need to determine how to retrieve or export the data from your organization's healthcare EHR system (on a daily basis) and create a text file that's described in Step 2. The script that you run in Step 4 will push the data in the text file to the API endpoint.
 
@@ -169,7 +169,7 @@ Here's an example of the syntax for the Healthcare connector script using actual
 If the upload is successful, the script displays the **Upload Successful** message.
 
 > [!NOTE]
-> If you have problems running the previous command because of execution policies, see [About Execution Policies](\powershell\module\microsoft.powershell.core\about\about_execution_policies) and [Set-ExecutionPolicy](\powershell\module\microsoft.powershell.security\set-executionpolicy) for guidance about setting execution policies.
+> If you have problems running the previous command because of execution policies, see [About Execution Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies) and [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy) for guidance about setting execution policies.
 
 ## Step 5: Monitor the Healthcare connector
 
