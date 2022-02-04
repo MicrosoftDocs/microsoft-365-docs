@@ -174,4 +174,18 @@ When you evaluate Defender for Office 365, the policies that control protection 
 
 ## Reporting in audit mode
 
+The **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation> consolidates the reporting for the policies in the evaluation:
+
+- Safe Links
+- Safe Attachments
+- Impersonation protection in anti-phishing policies
+
+By default, the charts show data for the last 30 days, but you can filter the date range by the following values:
+
+- 24 hours
+- 7 days
+- 14 days
+- Custom date range
+
+You can click ![Download icon.](../../media/m365-cc-sc-download-icon.png)
 
