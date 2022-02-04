@@ -1,7 +1,7 @@
 ---
 title: "Microsoft 365 network connectivity test tool"
 ms.author: kvice
-author: kelleyvice-msft
+author: kelleyvice-msftmicrosoft-365/enterprise/microsoft-365-ip-web-service.md 
 manager: scotv
 ms.date: 1/18/2022
 audience: Admin
@@ -188,7 +188,7 @@ The in-use SharePoint service front door is identified in the same way that the 
 
 #### Download speed
 
-We measure the download speed for a 15-Mb file from the SharePoint service front door. The result is shown in megabytes per second to indicate what size file in megabytes can be downloaded from SharePoint or OneDrive in **one second**. The number should be similar to one tenth of the minimum circuit bandwidth in megabits per second. For example if you have a 100mbps internet connection, you may expect 10 megabytes per second (10 MBps).
+We measure the download speed for a 15 Mb file from the SharePoint service front door. The result is shown in megabytes per second to indicate what size file in megabytes can be downloaded from SharePoint or OneDrive in **one second**. The number should be similar to one tenth of the minimum circuit bandwidth in megabits per second. For example if you have a 100mbps internet connection, you may expect 10 megabytes per second (10 MBps).
 
 #### Buffer bloat
 
