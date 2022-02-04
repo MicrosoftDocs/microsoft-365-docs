@@ -26,7 +26,7 @@ Once you have the new devices in hand, you'll follow these steps:
 
 1. [Obtain the hardware hash for each device.](#obtain-the-hardware-hash)
 2. [Merge the hash data](#merge-hash-data).
-3. [Register the devices in Microsoft Managed Desktop].(#register-devices-by-using-the-admin-portal).
+3. [Register the devices in Microsoft Managed Desktop](#register-devices-by-using-the-admin-portal).
 4. [Double-check that the image is correct.](#check-the-image)
 5. [Deliver the device](#deliver-the-device).
 
