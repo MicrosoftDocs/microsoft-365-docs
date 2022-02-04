@@ -40,9 +40,9 @@ There are several ways that a partner can work with you. Based on your stated bu
 
 | Partner type | Description |
 | ------ | ------------------- |
+| Granular delegated administrator | Partners who manage products and services for your organization or school, but who have limited access to what they can do in the Microsoft 365 admin center. Granular delegated administrator privileges (GDAP) lets partners complete tasks in the admin center without having global admin permission. By giving GDAP to partners, you ensure they have the least-permissive roles and limit the risk to your organization. |
 | Reseller | Partners who sell Microsoft products to your organization or school. |
 | Delegated administrator | Partners who manage products and services for your organization or school. In Azure Active Directory (AD), the partner is a Global Administrator for your tenant. This role lets them manage services like creating user accounts, assigning and managing licenses, and password resets. |
-| Granular delegated administrator | Partners who manage products and services for your organization or school, but who have limited access to what they can do in the Microsoft 365 admin center. Granular delegated administrator privileges (GDAP) lets partners complete tasks in the admin center without having global admin permission. By giving GDAP to partners, you ensure they have the least-permissive roles and limit the risk to your organization. For more information, see [Granular delegated admin privileges (GDAP) overview](/partner-center/gdap-overview) |
 | Reseller & delegated administrator | Partners who sell and manage Microsoft products and services to your organization or school. |
 | Partner | You give your partner a user account in your tenant, and they work with other Microsoft services on your behalf. |
 | Advisor | Partners can reset passwords and handle support incidents for you. |
