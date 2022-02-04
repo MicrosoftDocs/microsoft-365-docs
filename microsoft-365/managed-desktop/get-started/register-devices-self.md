@@ -122,7 +122,7 @@ You're also welcome to apply the image on your own if you prefer. To get started
 
 ### Autopilot group tag
 
-When you use the Admin portal to register devices, we automatically assign the Autopilot Group Tag associated with the device profile listed in [Register devices by using Partner Center](register-devices-partner.md#register-devices-by-using-partner-center).
+When you use the Admin portal to register devices, we automatically assign the Autopilot Group Tag associated with the device profile listed in [Register devices by using Partner Center](register-devices-partner.md).
 The service monitors all Microsoft Managed Desktop devices daily and assigns the group tag to any that don't already have it.
 
 ### Deliver the device
