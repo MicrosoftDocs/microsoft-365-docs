@@ -48,6 +48,10 @@ The following list includes the existing gaps between AIP for Office 365 operate
 
 - The AIP area of the Azure portal is unavailable to customers in China. Use [PowerShell commands](#step-6-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs) instead of performing actions in the portal, such as managing and running your content scan jobs.
 
+- AIP endpoints in Office 365 operated by 21Vianet are different than the endpoints required for other cloud services. Network connectivity from clients to the following endpoints is required:
+    - Download label and label policies: `*.protection.partner.outlook.cn`
+    - Azure Rights Management service: `*.aadrm.cn`
+
 ## Configure AIP for customers in China
 
 To configure AIP for customers in China:
