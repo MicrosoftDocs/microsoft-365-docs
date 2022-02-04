@@ -48,9 +48,11 @@ To apply your model to to a SharePoint document library:
 
     ![Select a doc library.](../media/content-understanding/select-doc-library.png)
 
-4. Because the model is associated to a content type, when you apply it to the library it will add the content type and its view with the labels you extracted showing as columns. By default, this view is the library's default view. However, you can optionally choose to not have it be the default view by selecting **Advanced settings** and clearing the **Set this new view as the default** checkbox.
+4. Because the model is associated to a content type, when you apply it to the library it will add the content type and its view with the labels you extracted showing as columns. By default, this view is the library's default view. However, you can select **Advanced settings** to optionally choose to set the library view to a new view with model info shown or a new view with model info and file thumbnails.
 
     ![Library view.](../media/content-understanding/library-view.png)
+
+    To change the view in the document library, select a view from drop-down list under the name of the library. For example, to view with model info and file thumbnails, select **Tile view**.
 
 5. Select **Add** to apply the model to the library.
 
