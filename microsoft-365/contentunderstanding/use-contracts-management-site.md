@@ -85,6 +85,6 @@ Key success factors to managing the Contracts Management site:
 - Use insights from [site analytics](https://support.microsoft.com/office/view-usage-data-for-your-sharepoint-site-2fa8ddc2-c4b3-4268-8d26-a772dc55779e) to promote content on the home page, update navigation, or rewrite content for clarity.
 - Review the Contracts Management site as needed to ensure content is fresh and still relevant.
 
-See also
+## See also
 
 [Manage contracts using a Microsoft 365 solution](solution-manage-contracts-in-microsoft.365.md)
