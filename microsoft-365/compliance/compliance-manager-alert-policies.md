@@ -27,7 +27,10 @@ description: "Learn how to create alerts for activities in Microsoft Compliance 
 ## Overview
 Compliance Manger can alert you to changes as soon as they happen so that you can stay on track with your compliance goals. For example, you can set up alerts to inform you when an improvement action's score value has increased or decreased due to a configuration change in your tenant, or when an improvement action has been assigned to a user to perform implementation or testing work. View the [types of events](#create-an-alert-policy) for which you can create alerts.
 
-To create alerts, you first set up an alert policy to outline the conditions that trigger an alert and the frequency of notifications. When we detect a match to your policy conditions, you'll receive an email notification with details so you can determine whether to investigate or take further action.  All alerts are listed on the **Alerts** tab in Compliance Manger, and all alert policies are listed on the **Alert Policies tab**.
+To create alerts, you first set up an alert policy to outline the conditions that trigger an alert and the frequency of notifications. When we detect a match to your policy conditions, you'll receive an email notification with details so you can determine whether to investigate or take further action.
+
+
+All alerts are listed on the **Alerts** tab in Compliance Manger, and all alert policies are listed on the **Alert Policies tab**.
 
 ## Understanding the Alerts and Alert policies pages
 
@@ -196,8 +199,6 @@ To assign or change an alert's status, select an alert from its row on the table
 ### When policies are deleted
 
 When an active policy is deleted, existing alerts related to that policy remain on your **Alerts** page, but no new alerts will be generated.
-
-### Filtering your view of alerts
 
 ## Email notifications of alerts
 
