@@ -52,7 +52,7 @@ To apply your model to to a SharePoint document library:
 
     ![Library view.](../media/content-understanding/library-view.png)
 
-    To change the view in the document library, select a view from drop-down list under the name of the library. For example, to view with model info and file thumbnails, select **Tile view**.
+    To change the view in the document library, select the drop-down list under the name of the library, and select a view. For example, to view the library page with model info and file thumbnails, select **Tile view**.
 
 5. Select **Add** to apply the model to the library.
 
