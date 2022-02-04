@@ -74,7 +74,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 - Enterprise managed deployment using Configuration Manager
 - Enterprise managed deployment using Microsoft Intune
 - Servicing Microsoft 365 Apps for enterprise using Configuration Manager
-- Servicing Microsoft 365 Apps for enterprise using Imtune
+- Servicing Microsoft 365 Apps for enterprise using Intune
 - LOB Deployment and Management with Microsoft Intune
 - Deploy Microsoft Teams
 - Assignment filters
