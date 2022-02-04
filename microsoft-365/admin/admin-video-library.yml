@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page # Required
   author: pebaum #Required; your GitHub user alias, with correct capitalization.
   ms.author: pebaum #Required; microsoft alias of author; optional team alias.
-  ms.date: 11/29/2021 #Required; mm/dd/yyyy format.
+  ms.date: 02/04/2022
   ms.localizationpriority: high
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -150,6 +150,8 @@ landingContent:
         links:
         - text: Overview of Microsoft 365 Business Premium security
           url: security-and-compliance/secure-your-business-data.md
+        - text: (NEW!) Microsoft Defender for Business (preview)
+          url: /microsoft-365/security/defender-business/index.yml
         - text: Secure employee accounts with MFA
           url: security-and-compliance/set-up-multi-factor-authentication.md
         - text: Turn on malware detection
