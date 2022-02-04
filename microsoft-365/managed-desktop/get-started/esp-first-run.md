@@ -25,8 +25,6 @@ Enrollment Status Page and Autopilot for pre-provisioned deployment are enabled 
 
 Microsoft Managed Desktop uses these settings in the Autopilot profile used for your users' devices:
 
-****
-
 | Setting | Value |
 | ----- | ----- |
 | Deployment mode | User Driven |
@@ -45,8 +43,6 @@ Microsoft Managed Desktop uses these settings in the Autopilot profile used for 
 
 Microsoft Managed Desktop uses these settings for the Enrollment Status Page experience:
 
-****
-
 | Setting | Value |
 | ------ | ------ |
 | Show app and profile configuration progress | Yes |
@@ -57,7 +53,7 @@ Microsoft Managed Desktop uses these settings for the Enrollment Status Page exp
 | Block device use until all apps and profiles are installed | Yes |
 | Allow users to reset device if installation error occurs | Yes |
 | Allow users to use device if installation error occurs | Yes |
-| Block device use until these required apps are installed if they're assigned to the user/device|Modern Workplace - Time Correction | Modern Workplace - Client Library |
+| Block device use until these required apps are installed if they're assigned to the user/device <ul><li> Modern Workplace - Time Correction</li><li>Modern Workplace - Client Library</li></ul> | Yes |
 
 The Enrollment Status Page experience occurs in three phases. For more, see [Enrollment Status Page tracking information](/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information).
 
