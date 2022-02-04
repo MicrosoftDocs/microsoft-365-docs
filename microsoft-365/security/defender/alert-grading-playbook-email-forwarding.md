@@ -47,9 +47,9 @@ The results of using this playbook are:
 
 ## Email forwarding rules
 
-Email forwarding rule allows users to set up a rule to forward email messages sent to a user's mailbox to another user's mailbox inside or outside of the organization. Some email users, particularly those with multiple mailboxes, configure forwarding rules to move employer emails to their private email accounts. Email forwarding is a useful feature but can also pose a security risk because of the potential disclosure of information. Attackers might use this information to attack your organization or its partners.
+Email forwarding rules allow users to create a rule to forward email messages sent to a user's mailbox to another user's mailbox inside or outside of the organization. Some email users, particularly those with multiple mailboxes, configure forwarding rules to move employer emails to their private email accounts. Email forwarding is a useful feature but can also pose a security risk because of the potential disclosure of information. Attackers might use this information to attack your organization or its partners.
 
-### Suspicious email forwarding rules
+### Suspicious email forwarding activity
 
 Attackers might set up email rules to hide incoming emails in the compromised user mailbox to obscure their malicious activities from the user. They might also set rules in the compromised user mailbox to delete emails, move the emails into another less noticeable folder such as an RSS folder, or forward emails to an external account.  
 
@@ -112,7 +112,7 @@ You can also analyze these additional activities for the affected mailbox:
 
 ### Are the activities malicious?
 
-Investigate the email forwarding activity. For instance, check the type of email, recipient of this email, or the manner in which the email is forwarded. 
+Investigate the email forwarding rule. For instance, check the type of email, recipient of this email, or the manner in which the email is forwarded. 
 
 For more information, see the following articles:
 
@@ -171,12 +171,6 @@ To use [advanced Hunting](advanced-hunting-overview.md) queries to gather inform
 - CloudAppEvents -Contains audit log of user activities.
 
 - IdentityLogonEvents - Contains login information for all users.
-
-Here's an example.
-
-:::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-advanced-hunting.png" alt-text="Example of the Advanced hunting page" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-advanced-hunting.png":::
-
-Use queries to gather information for the following questions.
 
 >[!Note]
 >Certain parameters are unique to your organization or network. Fill in these specific parameters as instructed in each query.
