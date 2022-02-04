@@ -21,7 +21,7 @@ The Contracts Management site is a ready-to-deploy and customizable SharePoint s
 
 The Contract Management site includes pre-populated pages, web parts, and site navigation. The site can be customized to incorporate your organization's own branding, employee information, policy and planning information, workflow, contacts, and resources.
 
-Employees can also use the site to launch a contract request to the contracts team and to find important contacts for contract management. The site uses the power of a SharePoint Syntex model running on a document library to classify documents and extract metadata. 
+Users of the site can launch a contract request directly to the contracts team. Users can also store and manage contracts and templates in a centralized, secure repository. The site uses the power of a SharePoint Syntex model running on a document library to classify documents and extract metadata. 
 
 ![Screenshot of the Contracts Management site template provisioning page.](../media/content-understanding/contracts-management-site-provisioning-page.png)
 
