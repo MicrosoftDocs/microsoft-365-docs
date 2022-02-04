@@ -26,9 +26,9 @@ With communication compliance policies, you can choose to scan messages in one o
 
 ## Microsoft Teams
 
-Chat communications in both public and private Microsoft Teams channels and individual chats can be scanned. When users are assigned to a communication compliance policy with Microsoft Teams coverage selected, chat communications for the users are automatically monitored across all Microsoft Teams, where the users are a member. Microsoft Teams coverage is automatically included for pre-defined policy templates and is selected by default in the custom policy template. Teams chats matching communication compliance policy conditions may take up to 48 hours to process.
+Chat communications in both public and private Microsoft Teams channels and individual chats can be scanned. When users are assigned to a communication compliance policy with Microsoft Teams coverage selected, chat communications for the users are automatically monitored across all Microsoft Teams where the users are a member. Microsoft Teams coverage is automatically included for pre-defined policy templates and is selected by default in the custom policy template. Teams chats matching communication compliance policy conditions may take up to 48 hours to process.
 
-For private chat and private channels, communication compliance policies support Modern attachment scanning. Modern attachments are files sourced from [OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) or [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations) sites that are included in Teams messages. Text is automatically extracted from these attachments for automated processing and potential matches with active communication compliance policy conditions and classifiers. There isn't any extra configuration necessary for Modern attachment detection and processing. Text is only extracted for attachments matching policy conditions. Text isn't extracted for attachments for messages with policy matches, even if the attachment also has a policy match.
+For private chat and private channels, communication compliance policies support Modern attachment scanning. Modern attachments are files sourced from [OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) or [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations) sites that are included in Teams messages. Text is automatically extracted from these attachments for automated processing and potential matches with active communication compliance policy conditions and classifiers. There isn't any additional configuration necessary for Modern attachment detection and processing. Text is only extracted for attachments matching policy conditions. Text isn't extracted for attachments for messages with policy matches, even if the attachment also has a policy match.
 
 Modern attachment scanning is supported for the following file types:
 
@@ -40,7 +40,7 @@ Modern attachment scanning is supported for the following file types:
 
 Extracted text for Modern attachments is included with the associated message on the **Pending** alerts dashboard for a policy. The extracted text for an attachment is named as the attachment file name (and format extension) and the .txt extension. For example, the extracted text for an attachment named *ContosoBusinessPlan.docx* would appear as *ContosoBusinessPlan.docx.txt* in the **Pending** alerts dashboard for a policy.
 
-Select the extracted attachment text to view the details in the *Source*, *Plain text*, or *Annotate* views. After reviewing, you can resolve or take action on the attachment text using the command bar controls. You can also download the attachment for review outside of the communication compliance review process.
+Select the extracted attachment text to view the details in the *Source*, *Plain text*, or *Annotate* views. After reviewing, you can resolve or take action on the attachment text using the command bar controls. You also have the option to download the attachment for review outside of the communication compliance review process.
 
 Use the following group management configurations to supervise individual user chats and channel communications in Teams:
 
@@ -54,7 +54,7 @@ Mailboxes hosted on Exchange Online as part of your Microsoft 365 or Office 365 
 
 ## Yammer
 
-Private messages and public conversations and associated attachments in Yammer communities can be scanned. When a user is added to communication compliance policy that includes Yammer as a defined channel, communications across all Yammer communities that the user is a member of are included in the scanning process. Yammer chats and attachments matching communication compliance policy conditions may take up to 24 hours to process.
+Private messages and public conversations and associated attachments in Yammer communities can be scanned. When a user is added to communication compliance policy that includes Yammer as a defined channel, communications across all Yammer communities that the user is a member of are included in the scanning process. Yammer chats and attachments matching communication compliance policy conditions may take up to 24 hours to process. 
 
 Yammer must be in [Native Mode](/yammer/configure-your-yammer-network/overview-native-mode) for communication compliance policies to monitor Yammer communications and attachments. In Native Mode, all Yammer users are in Azure Active Directory (AAD), all groups are Office 365 Groups, and all files are stored in SharePoint Online.
 
@@ -70,4 +70,4 @@ Use the following group management configuration to supervise user chat communic
 
 You can scan communications for data imported into mailboxes in your Microsoft 365 organization from third-party sources like [Instant Bloomberg](archive-instant-bloomberg-data.md), [Slack](archive-slack-data.md), [Zoom](archive-zoommeetings-data.md), SMS, and many others. For a full list of connectors supported in communication compliance, see [Archive third-party data](archiving-third-party-data.md).
 
-It is necessary to configure a third-party connector for your Microsoft 365 organization before you can assign the connector to a communication compliance policy. The **Third-Party Sources** section of the communication compliance policy wizard only displays currently configured third-party connectors.
+You must configure a third-party connector for your Microsoft 365 organization before you can assign the connector to a communication compliance policy. The **Third-Party Sources** section of the communication compliance policy wizard only displays currently configured third-party connectors.
