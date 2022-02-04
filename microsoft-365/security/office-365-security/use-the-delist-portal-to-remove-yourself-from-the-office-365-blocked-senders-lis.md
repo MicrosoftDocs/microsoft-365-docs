@@ -47,8 +47,9 @@ where  _IP address_ is the IP address of the computer on which the mail server r
 ## Verification before removing blocked senders list
 
 There are good reasons for senders to wind up on the blocked senders list, but mistakes can happen. Take a look at this video for a balanced explanation of blocked senders and delisting.
+<p>
 
-[!VIDEO https://www.microsoft.com/videoplayer/embed/RWMhvD]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMhvD]
 
 
 ## To use delist portal to remove yourself from the blocked senders list
