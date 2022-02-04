@@ -119,13 +119,13 @@ As with any new, wide-scale implementation which could potentially impact your l
 
 ## Additional topics in this deployment collection
 
-[Phase 1: Plan](attack-surface-reduction-rules-deployment-phase-1.md)
+[Phase 1: Plan](attack-surface-reduction-rules-deployment-plan.md)
 
-[Phase 2: Test](attack-surface-reduction-rules-deployment-phase-2.md)
+[Phase 2: Test](attack-surface-reduction-rules-deployment-test.md)
 
-[Phase 3: Implement](attack-surface-reduction-rules-deployment-phase-3.md)
+[Phase 3: Implement](attack-surface-reduction-rules-deployment-implement.md)
 
-[Phase 4: Operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
+[Phase 4: Operationalize](attack-surface-reduction-rules-deployment-operationalize.md)
 
 ## Reference
 
