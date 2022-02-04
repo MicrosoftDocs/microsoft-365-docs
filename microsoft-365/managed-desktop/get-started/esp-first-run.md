@@ -48,7 +48,7 @@ Microsoft Managed Desktop uses these settings for the Enrollment Status Page exp
 ****
 
 | Setting | Value |
-| ----- | ----- |
+| ------ | ------ |
 | Show app and profile configuration progress | Yes |
 | Show an error when installation takes longer than specified number of minutes | 60 |
 | Show custom message when time limit error occurs | No |
