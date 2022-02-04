@@ -44,7 +44,7 @@ You will know you have been added to the list when you receive a response to a m
 
 where  _IP address_ is the IP address of the computer on which the mail server runs.
 
-## Verification before removing blocked senders list
+## Verify senders before removing them from the blocked senders list
 
 There are good reasons for senders to wind up on the blocked senders list, but mistakes can happen. Take a look at this video for a balanced explanation of blocked senders and delisting.
 <p>
