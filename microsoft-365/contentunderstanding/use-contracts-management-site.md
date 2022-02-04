@@ -21,6 +21,8 @@ The Contracts Management site is a ready-to-deploy and customizable SharePoint s
 
 The Contract Management site includes pre-populated pages, web parts, and site navigation. The site can be customized to incorporate your organization's own branding, employee information, policy and planning information, workflow, contacts, and resources.
 
+Employees can also use the site to launch a contract request to the contracts team and to find important contacts for contract management. The site uses the power of a SharePoint Syntex model running on a document library to classify documents and extract metadata. 
+
 ![Screenshot of the Contracts Management site template provisioning page.](../media/content-understanding/contracts-management-site-provisioning-page.png)
 
 ## Provision the Contracts Management site
@@ -28,7 +30,7 @@ The Contract Management site includes pre-populated pages, web parts, and site n
 The Contracts Management site can be provisioned from the [SharePoint look book service](https://lookbook.microsoft.com/).
 
 > [!NOTE]
-> You must be a global administrator or SharePoint administrator in Microsoft 365 to provision the site.
+> You must be a global administrator or SharePoint administrator in Microsoft 365 to provision the site. You also must have a SharePoint Syntex license to add this site template to your organization.
 
 1. From the main page of the [SharePoint look book](https://lookbook.microsoft.com/), on the **View the designs** menu, select **SharePoint Syntex** > **Contracts Management site**.
 
@@ -41,6 +43,8 @@ The Contracts Management site can be provisioned from the [SharePoint look book 
 4. Select **Provision**, and in a short time your site will be ready for you to use. You’ll get an email (sent to the email address you provided) indicating that your request to provision the Contracts Management site template is completed.
 
 5. Select **Open site**, and you’ll see your Contracts Management site. From here, you can explore the site and edit the pages and content. 
+
+For more information about provisioning from the SharePoint look book service, see [Provision a new learning pathways solution](https://docs.microsoft.com/en-us/office365/customlearning/custom_provision).
 
 ## Customize the Contracts Management site
 
@@ -81,3 +85,6 @@ Key success factors to managing the Contracts Management site:
 - Use insights from [site analytics](https://support.microsoft.com/office/view-usage-data-for-your-sharepoint-site-2fa8ddc2-c4b3-4268-8d26-a772dc55779e) to promote content on the home page, update navigation, or rewrite content for clarity.
 - Review the Contracts Management site as needed to ensure content is fresh and still relevant.
 
+See also
+
+[Manage contracts using a Microsoft 365 solution](solution-manage-contracts-in-microsoft.365.md)
