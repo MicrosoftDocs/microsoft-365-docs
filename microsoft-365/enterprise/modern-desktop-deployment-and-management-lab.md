@@ -50,7 +50,6 @@ Detailed lab guides take you through multiple deployment and management scenario
 
 ### Plan and prepare infrastructure
 
-- Desktop Analytics
 - Cloud Management Gateway 
 - Tenant attach and co-management
 - Endpoint analytics
@@ -65,7 +64,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 
 - Servicing Windows using Group Policy
 - Servicing Windows using Microsoft Intune
-- Servicing Windows 10 with Configuration Manager
+- Servicing Windows with Configuration Manager
 
 ### Deploy Microsoft 365 Apps for enterprise
 
@@ -89,7 +88,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 ### Security and Compliance 
 
 - BitLocker	
-- Windows Defender Antivirus	
+- Microsoft Defender Antivirus	
 - Windows Hello for Business	
 
 ## Download the lab
