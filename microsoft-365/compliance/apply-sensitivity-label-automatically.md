@@ -91,7 +91,7 @@ Use the following table to help you identify the differences in behavior for the
 |Apply visual markings |Yes |Yes (email only) |
 |Override IRM encryption applied without a label|Yes if the user has the minimum usage right of Export |Yes (email only) |
 |Label incoming email|No |Yes|
-|Assign a Rights Manager owner for emails sent from another organization |No |Yes|
+|Assign a Rights Management owner for emails sent from another organization |No |Yes|
 |For emails, replace existing label that has same or lower priority |No |Yes (configurable)|
 
 \* Auto-labeling isn't currently available in all regions because of a backend Azure dependency. If your tenant can't support this functionality, the **Auto-labeling** tab isn't visible in the compliance center. For more information, see [Azure dependency availability by country](/troubleshoot/azure/general/dependency-availability-by-country).
