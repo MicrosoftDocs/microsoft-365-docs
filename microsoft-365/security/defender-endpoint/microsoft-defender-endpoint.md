@@ -11,7 +11,9 @@ author: mjcaparas
 ms.localizationpriority: high
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - m365-initiative-defender-endpoint
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde

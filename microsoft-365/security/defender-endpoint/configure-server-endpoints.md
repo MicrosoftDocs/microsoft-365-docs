@@ -13,7 +13,9 @@ ms.author: macapara
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
 ---

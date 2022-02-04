@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
+  - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde

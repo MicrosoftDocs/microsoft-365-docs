@@ -15,6 +15,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-endpointprotect
   - m365solution-scenario
+  - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
 ---
