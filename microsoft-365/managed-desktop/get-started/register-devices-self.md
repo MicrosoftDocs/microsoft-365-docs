@@ -15,15 +15,12 @@ audience: Admin
 
 # Register new devices yourself
 
-Microsoft Managed Desktop can work with brand-new devices or you can reuse devices you might already have (which will require that you reimage them). You can register devices with Microsoft Managed Desktop in the Microsoft Endpoint Manager portal.
+Microsoft Managed Desktop can work with brand-new devices, or you can reuse devices you might already have (which will require that you reimage them). You can register devices with Microsoft Managed Desktop in the Microsoft Endpoint Manager portal.
 
 > [!NOTE]
-> Working with a partner to obtain devices? If so, you don't need to worry about getting the hardware hashes; they'll take care of that for you. Make sure your partner establishes a relationship with you at the [Partner Center](https://partner.microsoft.com/dashboard). Your partner can learn more at [Partner Center help](/partner-center/request-a-relationship-with-a-customer). Once this relationship established, your partner will simply register devices on your behalf – no further action required from you. If you want to see the details, or your partner has questions, see [Steps for Partners to register devices](register-devices-partner.md). Once the devices are registered, you can proceed with [checking the image](#check-the-image) and [delivering the devices](#deliver-the-device) to your users.
-
-
+> Working with a partner to obtain devices? If so, you don't need to worry about getting the hardware hashes; they'll take care of that for you. Make sure your partner establishes a relationship with you at the [Partner Center](https://partner.microsoft.com/dashboard). Your partner can learn more at [Partner Center help](/partner-center/request-a-relationship-with-a-customer). Once this relationship established, your partner will simply register devices on your behalf – no further action required from you. If you want to see the details, or your partner has questions, see [Steps for Partners to register devices](register-devices-partner.md). Once the devices are registered, you can proceed with [checking the image](#check-the-image) and [delivering the devices](#deliver-the-device) to your users.
 
 ## Prepare to register brand-new devices
-
 
 Once you have the new devices in hand, you'll follow these steps:
 
@@ -63,7 +60,7 @@ You can use the [Get-WindowsAutoPilotInfo.ps1](https://www.powershellgallery.com
 9. Remove the USB drive, and then shut down the device by running `shutdown -s -t 0`
 
 > [!IMPORTANT]
-> Do not power on the device you are registering again until you've completed registration for it. 
+> Do not power on the device you are registering again until you've completed registration for it.
 
 ### Merge hash data
 
@@ -99,7 +96,7 @@ You can monitor the progress of device registration on the main page. Possible s
 | Registration failed | Registration could not be completed. Refer to [Troubleshooting device registration](#troubleshooting-device-registration) for more information. |
 | Ready for user | Registration succeeded and the device is now ready to be delivered to the user. Microsoft Managed Desktop will guide them through first-time set-up, so there’s no need for you to do any further preparations. |
 | Active | The device has been delivered to the user and they have registered with your tenant. This state also indicates that they are regularly using the device. |
-| Inactive | The device has been delivered to the user and they have registered with your tenant. However, they have not used the device recently (in the last 7 days).  | 
+| Inactive | The device has been delivered to the user and they have registered with your tenant. However, they have not used the device recently (in the last 7 days).  |
 
 #### Troubleshooting device registration
 
