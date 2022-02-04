@@ -150,7 +150,7 @@ The download speed that a user can get from SharePoint Online and OneDrive for B
 
 To improve download speeds, bandwidth may need to be increased. Alternatively, there may be network congestion between computers at the office location and the SharePoint Online service front door. This condition restricts the download speed available to users even if sufficient bandwidth is available.
 
-## China user-optimal network egress
+## China user optimal network egress
 
 This insight will be displayed if your organization has users in China connecting to your Microsoft 365 tenant in other geographic locations.
 
