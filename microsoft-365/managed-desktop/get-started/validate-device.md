@@ -17,6 +17,8 @@ audience: Admin
 
 Whether you're new to Microsoft Managed Desktop or a long-time subscriber, it's recommended to test an example of any device model you're enrolling in the service for the first time. This is true whether you're ordering brand-new devices or reusing existing ones including devices recommended for Microsoft Managed Desktop.
 
+## View devices
+
 **To view devices recommended for use with the service:**
 
 1. Go to [Shop Windows Pro business devices](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices) site.
