@@ -816,6 +816,12 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - national identity card
 - travel document
 - issuing authority
+<!--
+## Australia physical address 
+unbundled named entity, detects patterns related to physical address from Australia
+-->
+### Confidence level
+medium
 
 
 ## Australia tax file number
