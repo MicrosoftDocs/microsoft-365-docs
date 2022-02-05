@@ -1,6 +1,6 @@
 ---
 title: Get started with app control
-description:  
+description: This article describes how to enable app control
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: tiaraquan
