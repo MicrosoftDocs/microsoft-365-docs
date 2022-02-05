@@ -94,6 +94,148 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - routing#
 - RTN
 
+<!--
+## All full names
+
+### Definition
+
+Detects full names for people from all supported countries/regions, which include Australia, China, Japan, U.S., countries in the EU. Will detect all possible matches of full names
+
+Names
+
+Format
+
+Various
+
+Pattern
+
+Various
+
+Checksum
+
+No
+
+Definition
+
+The matching of personal names follows a complex grammar designed to match strings that a human would identify as a name with high confidence. To do this it uses three primary resources:
+
+•	A dictionary of given names
+•	A dictionary of family names
+•	Patterns of how names are formed
+
+In each case the three resources are different for each country.
+
+As a simple example for United States names, if a string is found consisting of a given name from the dictionary followed by a family name from the dictionary then a match is made with high confidence (eg Jennifer Smith). Common given/family names are given a higher confidence than rarer names. However, the pattern also allows ‘partial’ matches, for example a given name from the dictionary followed by an family name that is not in the dictionary (eg Jennifer Schiffern). Partial matches are given lower confidence.
+
+In addition, patterns that a human would see as indicative of names are also matched with appropriate confidence. (eg ‘J. P. Smith’, ‘Dr J Smith’, ‘J Smith, Jr.’, ‘Smith, J P’)
+
+## All Physical Addresses
+
+Format
+
+Various
+
+Pattern
+
+Various
+
+Checksum
+
+No
+
+Definition
+
+The matching of street addresses follows a complex grammar designed to match strings that a human would identify as a name with high confidence. To do this it uses several primary resources:
+
+•	A dictionary of settlements, counties and regions
+•	A dictionary of ‘street suffixes’ (Road, Street, Avenue …)
+•	Patterns of postal codes
+•	Patterns of address formats
+
+In each case the resources are different for each country.
+
+Foremost among the resources are the patterns of address formats that are used in a given country, and strings are found that match one of the formats. The different formats are chosen to ensure as many addresses as possible are matched, without risking a high number of false positives. These formats include the flexibility of allowing addresses that, for example, omit the postal code or omit a town name or have a street with no ‘street suffix’, but in all cases such matches are used to increase the confidence of the match.
+
+Note that the patterns are designed to match individual single addresses, not generic locations. Thus strings such as “Redmond, WA 98052” or “Main Street, Albuquerque” will not be matched.
+
+Supported countries are (…. )
+
+contains
+- Australia physical address
+- Austria physical address
+- Belgium physical address
+- Brazil physical address
+- Bulgaria physical address
+- Canada physical address
+- Croatia physical address
+- Cyprus physical address
+- Czech Republic physical address
+- Denmark physical address
+- Estonia physical address
+- Finland physical address
+- France physical address
+- Germany physical address
+- Greece physical address
+- Hungary physical address
+- Iceland physical address
+- Ireland physical address
+- Italy physical address
+- Latvia physical address
+- Liechtenstein physical address
+- Lithuania physical address
+- Luxembourg physical address
+- Malta physical address
+- Netherlands physical address
+- New Zealand physical address
+- Norway physical address
+- Poland physical address
+- Portugal physical address
+- Romania physical address
+- Slovakia physical address
+- Slovenia physical address
+- Spain physical address
+- Sweden physical address
+- Switzerland physical address
+- Turkey physical address
+- United Kingdom physical address
+- United States physical address
+
+### All medical terms and conditions
+
+Detects all medical terms (blood and lab test terms, medications, procedures, etc.) and all medical conditions (diseases, impairments, conditions based on lifestyle, etc.). English terms only.
+
+Medical
+
+Format
+
+Dictionary
+
+Pattern
+
+Dictionary
+
+Checksum
+
+No
+
+Definition
+
+This entity matches text that mentions medical conditions of various types according to their presence in various curated dictionaries, with one dictionary per supported language. The dictionaries are drawn from a number of international medical resources and are designed to incorporate as large a coverage of medical conditions as possible without risking a large number of false positives from ambiguous terms and phrases. Each entry contains the different forms that a single condition is commonly written in (eg “TB”, “tuberculosis”, “phthisis pulmonalis” etc) to ensure coverage.
+
+CONTAINS
+
+- Blood test terms 
+- Types of medication
+- Diseases
+- Generic medication names
+- Impairments listed in the U.S. Disability Evaluation Under Social Security
+- Lab test terms
+- Lifestyles that relate to medical conditions
+- Medical specialties
+- Surgical procedures
+- Brand medication names
+
+-->
 
 ## Argentina national identity (DNI) number
 
