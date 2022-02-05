@@ -26,13 +26,36 @@ description: "Configure a default sensitivity label for a SharePoint document li
 > [!NOTE]
 > This feature is in preview and subject to change.
 
-Enable built-in labeling for [supported Office files](sensitivity-labels-office-apps.md#office-file-types-supported) in SharePoint and OneDrive so that users can apply your [sensitivity labels](sensitivity-labels.md) in Office for the web. When this feature is enabled, users will see the **Sensitivity** button on the ribbon so they can apply labels, and see any applied label name on the status bar.
+When SharePoint is [enabled for sensitivity labels](sensitivity-labels-sharepoint-onedrive-files.md), you can configure a default label for document libraries. Then, any new files uploaded to that library, or existing files edited in the library will have that label applied if they don't already have a sensitivity label, or they have a sensitivity label but with lower priority.
 
-Once the library is configured with a default label SharePoint will guarantee that any "new" office files saved or uploaded to this library and do not have a label or has a label with low priority (applied before via automation or default) will be labeled with the configured library label. In other words, think of this feature as automatic labeling by location, where location is here is a library. 
+For example, you configure the **Confidential** label as the default sensitivity label for a document library. A user who has **General** as their policy default label saves a new file in that library. SharePoint will label this file as **Confidential** because of that label's higher priority. For a quick summary of the possible outcomes, see [Will an existing label be overridden](#will-an-existing-label-be-overridden) on this page.
 
-Note that if the uploaded document is manually labeled then it will not be touched. Moreover, if there are existing documents in the library then those will also not be touched, unless a user edits the file. During edit time, the service rechecks if the document is unlabeled and applies the default configured label for the library.  
+> [!TIP]
+> To help you distinguish between this feature's default label with the default label in label policies, and both provide automatic labeling without content inspection:
+>
+> - Default sensitivity label for a document library: Location-based labeling, applicable only for SharePoint. Overrides a lower-priority label unless manually applied.
+> - Default sensitivity label from a policy: Always applicable for all locations. Never overrides an existing label.
 
-The stamping of label is done in an asynchronous thread after the document is uploaded which means that there will be a delay of few minutes before you see the label being applied automatically. If you are creating the document via Office app on your windows, mac or mobile devices and directly do a "save-as" to SharePoint then the act of automatically applying the library label will wait till you close the app
+When you use Office on the web to create or edit a file, the default sensitivity label for a document library can be applied without delays. However, labeling is not immediate for the following scenarios:
+
+- If you upload a file to SharePoint, it can take a few minutes for the label to be applied.
+
+- If you create a file using Microsoft 365 Apps on Windows, macOS, iOS or Android, and then save the file to SharePoint, the label is applied after the app is closed.
+
+## Auditing the 
+
+
+## Will an existing label be overridden?
+
+Summary of outcomes:
+
+|Existing label |Override with default library label |
+|:-----|:-----|:-----|
+|Manually applied, any priority| No |
+|Automatically applied, lower priority | Yes |
+|Default label from policy, higher priority | No |
+|Default label from policy, lower priority | Yes |
+|Automatically applied, higher priority | No |
 
 ## Requirements
 
@@ -41,6 +64,8 @@ The stamping of label is done in an asynchronous thread after the document is up
 ## Limitations
 
 - A maximum of 25,000 documents per tenant can be labeled by using this feature.
+
+- Doesn't apply to existing files in SharePoint at rest.
 
 ## Configure a default sensitivity label for a SharePoint document library
 
