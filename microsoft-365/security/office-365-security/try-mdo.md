@@ -180,12 +180,20 @@ The **Microsoft Defender for Office 365 evaluation** page at <https://security.m
 - Safe Attachments
 - Impersonation protection in anti-phishing policies
 
-By default, the charts show data for the last 30 days, but you can filter the date range by the following values:
+By default, the charts show data for the last 30 days, but you can filter the date range by clicking ![Calendar icon.](../../media/m365-cc-sc-add-internal-icon.png) **30 days** and selecting from following additional values that are less than 30 days:
 
 - 24 hours
 - 7 days
 - 14 days
 - Custom date range
 
-You can click ![Download icon.](../../media/m365-cc-sc-download-icon.png)
+You can click ![Download icon.](../../media/m365-cc-sc-download-icon.png) **Download** to download the chart data to a .csv file.
 
+## Required permissions
+
+Permissions that are required in **Azure AD** to set up an evaluation of Defender for Microsoft 365 are described in the following list:
+
+- **Create, modify or delete an evaluation**: Security Administrator or Global Administrator.
+- **View evaluation policies and reports**: Security Administrator or Security Reader.
+
+For more information about Azure AD permissions in the Microsoft 365 Defender portal, see [Azure AD roles in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md#azure-ad-roles-in-the-microsoft-365-defender-portal)
