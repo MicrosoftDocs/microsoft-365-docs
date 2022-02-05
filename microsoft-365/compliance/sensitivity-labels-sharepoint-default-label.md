@@ -23,6 +23,9 @@ description: "Configure a default sensitivity label for a SharePoint document li
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
+> [!NOTE]
+> This feature is in preview and subject to change.
+
 Enable built-in labeling for [supported Office files](sensitivity-labels-office-apps.md#office-file-types-supported) in SharePoint and OneDrive so that users can apply your [sensitivity labels](sensitivity-labels.md) in Office for the web. When this feature is enabled, users will see the **Sensitivity** button on the ribbon so they can apply labels, and see any applied label name on the status bar.
 
 Once the library is configured with a default label SharePoint will guarantee that any "new" office files saved or uploaded to this library and do not have a label or has a label with low priority (applied before via automation or default) will be labeled with the configured library label. In other words, think of this feature as automatic labeling by location, where location is here is a library. 
@@ -33,11 +36,11 @@ The stamping of label is done in an asynchronous thread after the document is up
 
 ## Requirements
 
-These new capabilities work with [sensitivity labels](sensitivity-labels.md) after 
+- You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ## Limitations
 
-A maximum of 25,000 documents can be labeled by using this feature.
+- A maximum of 25,000 documents per tenant can be labeled by using this feature.
 
 ## Configure a default sensitivity label for a SharePoint document library
 

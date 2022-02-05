@@ -404,6 +404,8 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Enable sensitivity labels for Office files in SharePoint and OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
+        - name: Configure a default sensitivity label for SharePoint libraries
+          href: sensitivity-labels-sharepoint-default-label.md
         - name: Enable co-authoring for documents encrypted by sensitivity labels
           href: sensitivity-labels-coauthoring.md
         - name: Manage sensitivity labels in Office apps
