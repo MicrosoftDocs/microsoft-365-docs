@@ -49,8 +49,8 @@ Summary of outcomes:
 |Manually applied, any priority| No |
 |Automatically applied, lower priority | Yes |
 |Automatically applied, higher priority | No |
-|Default label from policy, higher priority | No |
 |Default label from policy, lower priority | Yes |
+|Default label from policy, higher priority | No |
 
 ## Requirements
 
@@ -62,25 +62,16 @@ Summary of outcomes:
 
 - Doesn't apply to existing files in SharePoint at rest.
 
-## Configure a default sensitivity label for a SharePoint document library
-
-You can configure a default sensitivity label for a SharePoint document library by using the SharePoint admin center, or by using PowerShell.
-
-### Use the SharePoint admin center to configure a default sensitivity label for a SharePoint document library
-
-This option is the easiest way to configure a default sensitivity label for a SharePoint document library.
+## How to configure a default sensitivity label for a SharePoint document library
 
 1. In the SharePoint admin center, navigate to the document library > **Settings** > **Permissions and Management**
 
 2. Select **Default sensitivity label**, and the from drop-down box, select the label that you want to be the default sensitivity label for the document library.
 
- 
-### Use PowerShell to configure a default sensitivity label for a SharePoint document library
+## Monitoring application of the default sensitivity label for a SharePoint document library
 
-As an alternative to using the SharePoint admin center, 
-
-
+Use the SharePoint **Sensitivity** column to see the names of sensitivity labels applied to files. When the label has been applied by this features, the tooltip for the label name displays **This file has been automatically labeled**.
 
 ## Next steps
 
-
+Default labeling ensures a minimum level of protection but doesn't take into account the file contents that might require a higher level of protection. Consider supplementing this labeling method with [automatic labeling](apply-sensitivity-label-automatically.md) that uses content inspection, and encourage [manual labeling](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) for users to replace the default label when needed.
