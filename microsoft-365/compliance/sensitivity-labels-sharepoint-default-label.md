@@ -30,20 +30,15 @@ When SharePoint is [enabled for sensitivity labels](sensitivity-labels-sharepoin
 
 For example, you configure the **Confidential** label as the default sensitivity label for a document library. A user who has **General** as their policy default label saves a new file in that library. SharePoint will label this file as **Confidential** because of that label's higher priority. For a quick summary of the possible outcomes, see [Will an existing label be overridden](#will-an-existing-label-be-overridden) on this page.
 
-> [!TIP]
-> To help you distinguish between this feature's default label with the default label in label policies, and both provide automatic labeling without content inspection:
->
-> - Default sensitivity label for a document library: Location-based labeling, applicable only for SharePoint. Overrides a lower-priority label unless manually applied.
-> - Default sensitivity label from a policy: Always applicable for all locations. Never overrides an existing label.
+A default label offers a baseline level of protection and a form of automatic labeling without content inspection. To help you distinguish between this feature's default label with the default label in label policies:
 
-When you use Office on the web to create or edit a file, the default sensitivity label for a document library can be applied without delays. However, labeling is not immediate for the following scenarios:
+- **Default sensitivity label for a document library**: Location-based labeling, applicable only for SharePoint. Overrides a lower-priority label unless manually applied.
+- **Default sensitivity label from a policy**: Always applicable for all locations. Never overrides an existing label.
 
-- If you upload a file to SharePoint, it can take a few minutes for the label to be applied.
+When you use Office on the web to create or edit a file, the default sensitivity label for a document library can be applied without delays. However, labeling is not immediate if you upload a file or create it using Microsoft 365 Apps on Windows, macOS, iOS or Android, and then save to SharePoint:
 
-- If you create a file using Microsoft 365 Apps on Windows, macOS, iOS or Android, and then save the file to SharePoint, the label is applied after the app is closed.
-
-## Auditing the 
-
+- File upload: it can take a few minutes for the label to be applied.
+- Microsoft 365 Apps: the label is applied after the app is closed.
 
 ## Will an existing label be overridden?
 
@@ -53,9 +48,9 @@ Summary of outcomes:
 |:-----|:-----|:-----|
 |Manually applied, any priority| No |
 |Automatically applied, lower priority | Yes |
+|Automatically applied, higher priority | No |
 |Default label from policy, higher priority | No |
 |Default label from policy, lower priority | Yes |
-|Automatically applied, higher priority | No |
 
 ## Requirements
 
