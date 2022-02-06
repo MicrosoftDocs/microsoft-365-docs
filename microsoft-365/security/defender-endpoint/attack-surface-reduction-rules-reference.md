@@ -1,5 +1,5 @@
 ---
-title: Attack surface reduction rules
+title: Attack surface reduction rules reference
 description: Lists details about attack surface reduction rules on a per-rule basis.
 keywords: Attack surface reduction rules, ASR, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit rules, antiexploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules, ASR rule description
 ms.prod: m365-security
@@ -16,10 +16,11 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
+ms.date: 02/04/2022
 ---
 
 
-# Attack surface reduction rules
+# Attack surface reduction rules reference
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -207,6 +208,9 @@ LSASS authenticates users who sign in on a Windows computer. Microsoft Defender 
 
 > [!NOTE]
 > In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that simply enumerates LSASS, but has no real impact in functionality, there is no need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
+  
+> [!IMPORTANT]
+> The default state for the Attack Surface Reduction (ASR) rule “Block credential stealing from the Windows local security authority subsystem (lsass.exe)” will change from **Not Configured** to **Configured** and the default mode set to **Block**. All other ASR rules will remain in their default state: **Not Configured**. Additional filtering logic has already been incorporated in the rule to reduce end user notifications. Customers can configure the rule to **Audit**, **Warn** or **Disabled** modes, which will override the default mode. The functionality of this rule is the same, whether the rule is configured in the on-by-default mode, or if you enable Block mode manually.  
 
 Intune name: `Flag credential stealing from the Windows local security authority subsystem`
 

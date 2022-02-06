@@ -46,7 +46,7 @@ You'll need to take the following steps:
 
 ## Step 1: Get the Microsoft Defender for Endpoint onboarding package
 
-1. In [Microsoft 365 Defender](https://security.microsoft.com), navigate to **Settings > Onboarding**.
+1. In [Microsoft 365 Defender](https://security.microsoft.com), navigate to **Settings > Endpoints > Onboarding**.
 
 2. Select macOS as the operating system and Mobile Device Management / Microsoft Intune as the deployment method.
 
@@ -312,7 +312,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 2. Save the file as `MDATP_MDAV_configuration_settings.plist`.
 
-3. In the Jamf Pro dashboard, open **Computers**, and there **Configuration Profiles**. Click **New(* and switch to the **General** tab.
+3. In the Jamf Pro dashboard, open **Computers**, and their **Configuration Profiles**. Click **New** and switch to the **General** tab.
 
     ![New profile.](images/644e0f3af40c29e80ca1443535b2fe32.png)
 
