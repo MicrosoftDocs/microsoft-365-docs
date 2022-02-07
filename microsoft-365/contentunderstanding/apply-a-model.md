@@ -50,9 +50,9 @@ To apply your model to to a SharePoint document library:
 
 4. Because the model is associated to a content type, when you apply it to the library it will add the content type and its view with the labels you extracted showing as columns. By default, this view is the library's default view. However, you can select **Advanced settings** to optionally choose to set the library view to a new view with model info shown or a new view with model info and file thumbnails.
 
-    ![Library view.](../media/content-understanding/library-view.png)
+    ![Screenshot of the Advanced settings showing the library views.](../media/content-understanding/library-view.png)
 
-    To change the view in the document library, select the drop-down list under the name of the library, and select a view. For example, to view the library page with model info and file thumbnails, select **Tile view**.
+    For more information, see [Change the view in a document library](#change-the-view-in-a-document-library) later in this article.
 
 5. Select **Add** to apply the model to the library.
 
@@ -127,6 +127,14 @@ To run the flow:
 2. On the **Create a flow** panel, select **Send an email after SharePoint Syntex processes a file**.
 
     ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
+
+## Change the view in a document library
+
+You can change the view in your SharePoint document library depending on your need or preference.
+
+The tile view displays up to eight user-created fields. If there are fewer than eight, we show up to four system-generated fields: sensitivity (if available), retention (if available), content type, modified date, modified by, and then classification date.
+
+
 
 ## See Also
 
