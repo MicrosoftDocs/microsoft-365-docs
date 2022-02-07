@@ -232,7 +232,7 @@ sections:
           
           - You can't open attachments to emails that you receive on mobile devices by using Outlook mobile.
           
-          - We don't support assignment through an email-enabled security group, because Outlook and Azure Information Protection unified labeling clients require the user to have full access permissions and have automapping enabled. Automapping is enabled by default for Exchange Online.
+          - In Outlook Win32, for users assigned to a shared mailbox through an email-enabled security group, the user will see a notification mail to view the encrypted mail using a web browser.  In order to view the encrypted mail directly in Outlook Win32, Outlook and Azure Information Protection unified labeling clients require the user to be directly assigned to the shared mailbox with full access permissions and automapping enabled. Automapping is enabled by default for Exchange Online.
           
           **To assign a user to the shared mailbox**
           
