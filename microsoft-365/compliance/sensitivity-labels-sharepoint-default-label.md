@@ -72,7 +72,7 @@ For an existing document library:
 
 If you're creating a new document library, you can configure the same **Default sensitivity label** setting from the **Create document library** flyout pane.
 
-## Monitoring application of your default sensitivity labels
+## Monitoring application of library default sensitivity labels
 
 Use the SharePoint **Sensitivity** column to see the names of sensitivity labels applied to files. When the label has been applied by this features, the tooltip for the label name displays **This file has been automatically labeled**. However, this tooltip isn't exclusive to the default sensitivity label for a document library and also displays when sensitivity labels are applied by using auto-labeling policies and a user's policy default label.
 
