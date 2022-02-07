@@ -48,7 +48,7 @@ A script usually includes the following behaviors:<br>
 -	**Check the result of install/launch/close/uninstall operation**, return zero exit code if the result is expected. Test Base will mark a script run as failure if it returns a non-zero exit code.<br> 
 -	**Save enough logs**, save proper logs for future use.<br> 
 
-Please refer to the following examples, you can simply copy them to your files and make changes accordingly. <br>
+Please refer to the following examples. You can simply copy them to your files and make changes accordingly. <br>
 
 **Example of install script (App\scripts\install\job.ps1)**
 ```powershell
@@ -143,7 +143,7 @@ After scripts and binaries are prepared, you proceed to compress the folder to a
 After building the zip package, you can upload it to your Test Base account. <br>
 However, it's best practice to run the test locally to ensure the scripts work properly before uploading. A local test can quickly identify issues and speed up your uploading process. To verify locally follow the steps below:<br>
 1.	Prepare a VM (Virtual Machine)<br>
-    We recommend using a virtual machine for this local test, which is convenient since a clean Windows environment is needed for each test. It's easy to create a Windows VM on Azure (https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal), you can select a proper Windows version (image) for your test, e.g., Windows 10 Pro, version 21H2.<br>
+    We recommend using a virtual machine for this local test since a clean Windows environment is currently needed for each test. It's easy to create a Windows VM on Azure (https://docs.microsoft.com/azure/virtual-machines/windows/quick-create-portal), you can select a proper Windows version (image) for your test, e.g., Windows 10 Pro, version 21H2.<br>
 
 2.	Copy your package to the VM<br>
     There are many ways to copy your package file to the VM. If you're using an Azure VM, you can choose to:
@@ -151,7 +151,7 @@ However, it's best practice to run the test locally to ensure the scripts work p
      -	Use Azure file share (https://docs.microsoft.com/azure/storage/files/storage-files-quick-create-use-windows) <br>
     You can create a specific folder for this test and copy the package file under this folder. e.g., C:\TestBase.<br>
 3.	Test the package<br>
-    Open Windows PowerShell, switch to the directory containing the package. e.g., cd C:\TestBase Start to run test in the Package:<br>
+    Open Windows PowerShell, switch to the directory containing the package, e.g. cd C:\TestBase, and start to run your tests on the package:<br>
     1).  Extract the package file.<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Expand-Archive -LiteralPath C:\TestBase\App.zip -DestinationPath C:\TestBase*<br>
     3).  Run install script.<br>
@@ -161,7 +161,7 @@ However, it's best practice to run the test locally to ensure the scripts work p
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*C:\TestBase\App\scripts\install\job.ps1*<br>
     5).  Run close script.<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*C:\TestBase\App\scripts\close\job.ps1*<br>
-    6).  Run uninstall script if have.<br>
+    6).  Run uninstall script (if you have one).<br>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*C:\TestBase\App\scripts\uninstall\job.ps1*<br>
     After each step, you can check if there are any issues in your script. If all scripts run as expected, your package is ready to be uploaded to your Test Base account.
 
