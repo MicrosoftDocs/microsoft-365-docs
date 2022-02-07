@@ -1,6 +1,6 @@
 ---
-title: Attack surface reduction rules deployment Phase 2 - test
-description: Provides guidance to test your attack surface reduction rules deployment.
+title: Test attack surface reduction (ASR) rules
+description: Provides guidance to test your attack surface reduction (ASR) rules deployment.
 keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,9 +20,11 @@ ms.collection: m365solution-scenario
 ms.date: 1/18/2022
 ---
 
-# Phase 2 - test
+# Step 2: Test ASR rules
 
-Begin your ASR  rules deployment with ring 1.
+Testing attack surface reduction (ASR) rules helps you determine if rules will impede line-of-business operations prior to enabling any rule. By starting with a small, controlled group, you can limit potential work disruptions as you expand your deployment across your organization.
+
+Begin your attack surface reduction(ASR) rules deployment with ring 1.
 
 > [!div class="mx-imgBorder"]
 > ![ASR rules testing steps](images/asr-rules-testing-steps.png)
@@ -195,10 +197,10 @@ Event ID | Description
 
 ## Additional topics in this deployment collection
 
-[ASR rules deployment overview](attack-surface-reduction-rules-deployment.md)
+[ASR rules deployment prerequisites](attack-surface-reduction-rules-deployment.md)
 
-[Phase 1: Plan](attack-surface-reduction-rules-deployment-plan.md)
+[Step 1: Plan ASR rules deployment](attack-surface-reduction-rules-deployment-plan.md)
 
-[Phase 3: Implement](attack-surface-reduction-rules-deployment-implement.md)
+[Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md)
 
-[Phase 4: Operationalize](attack-surface-reduction-rules-deployment-operationalize.md)
+[Step 4: Operationalize ASR rules](attack-surface-reduction-rules-deployment-operationalize.md)
