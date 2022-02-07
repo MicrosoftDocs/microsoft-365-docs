@@ -1,5 +1,5 @@
 ---
-title: Attack surface reduction rules deployment Phase 3 - implement
+title: Implement attack surface reduction (ASR) rules deployment
 description: Provides guidance to implement your attack surface reduction rules deployment.
 keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
@@ -20,9 +20,9 @@ ms.collection: m365solution-scenario
 ms.date: 1/18/2022
 ---
 
-# Phase 3 - implement
+# Step 3: Implement ASR rules
 
-The implementation phase moves the ring from testing into functional state.
+Implementing attack surface reduction (ASR) rules moves the first test ring into an enabled, functional state.
 
 > [!div class="mx-imgBorder"]
 > ![ASR rules implementation steps](images/asr-rules-implementation-steps.png)
@@ -123,10 +123,10 @@ You can customize the notification for when a rule is triggered and blocks an ap
 
 ## Additional topics in this deployment collection
 
-[ASR rules deployment overview](attack-surface-reduction-rules-deployment.md)
+[ASR rules deployment prerequisites](attack-surface-reduction-rules-deployment.md)
 
-[Phase 1: Plan](attack-surface-reduction-rules-deployment-plan.md)
+[Step 1: Plan ASR rules deployment](attack-surface-reduction-rules-deployment-plan.md)
 
-[Phase 2: Test](attack-surface-reduction-rules-deployment-test.md)
+[Step 2: Test ASR rules](attack-surface-reduction-rules-deployment-test.md)
 
-[Phase 4: Operationalize](attack-surface-reduction-rules-deployment-operationalize.md)
+[Step 4: Operationalize ASR rules](attack-surface-reduction-rules-deployment-operationalize.md)
