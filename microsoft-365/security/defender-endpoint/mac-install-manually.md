@@ -54,7 +54,7 @@ Download the installation and onboarding packages from Microsoft 365 Defender po
 
 5. From a command prompt, verify that you have the two files.
 
-## Application installation (macOS 10.15 and older versions)
+## Application installation (macOS 10.15)
 
 To complete this process, you must have admin privileges on the device.
 
