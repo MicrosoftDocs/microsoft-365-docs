@@ -5955,6 +5955,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "/microsoft-365/security/defender-endpoint/service-status.md",
+      "redirect_url": "/microsoft-365/enterprise/view-service-health",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/learning/configure-cornerstone-content-source.md",
       "redirect_url": "/viva/learning/configure-cornerstone-content-source",
       "redirect_document_id": false
