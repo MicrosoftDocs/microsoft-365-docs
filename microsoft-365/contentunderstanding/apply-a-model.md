@@ -136,7 +136,7 @@ To change the view on the library page, select the view dropdown menu to show th
 
    ![Screenshot of a view dropdown menu showing the view options.](../media/content-understanding/document-library-view-menu.png) 
 
-For example, if you select **Tiles**, the page will display as shown.
+For example, if you select **Tiles** from the list, the page will display as shown.
 
    ![Screenshot of a document library showing the Tiles view.](../media/content-understanding/document-library-tiles-view.png) 
 
