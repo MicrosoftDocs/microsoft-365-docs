@@ -1,9 +1,8 @@
 ---
-title: ASR rules deployment phase 4 - operationalize
+title: Operationalize attack surface reduction (ASR) rules deployment
 description: Provides guidance to operationalize your attack surface reduction rules deployment.
 keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
-ms.reviewer:
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,18 +11,20 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
+ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.collection: M365-security-compliance
+ms.collection: m365solution-scenario
+ms.date: 1/18/2022
 ---
 
-# ASR rules deployment phase 4: operationalize
+# Step 4: Operationalize ASR rules
 
-After you've fully deployed ASR rules, it's vital that you have processes in place to monitor and respond to ASR-related activities.
+After you've fully deployed attack surface reduction (ASR) rules, it's vital that you have processes in place to monitor and respond to ASR-related activities.
 
-## Manage false positives
+## Managing false positives
 
 False positives/negatives can occur with any threat protection solution. False positives are cases in which an entity (such as a file or process) is detected and identified as malicious, although the entity isn't actually a threat. In contrast, a false negative is an entity that wasn't detected as a threat but is malicious. For more information about false positives and false negatives, see: [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
 
@@ -71,10 +72,10 @@ For more information about hunting options, see: [Demystifying attack surface re
 
 ## Topics in this deployment collection
 
-[ASR rules deployment overview](attack-surface-reduction-rules-deployment.md)
+[ASR rules deployment prerequisites](attack-surface-reduction-rules-deployment.md)
 
-[Phase 1: Plan](attack-surface-reduction-rules-deployment-phase-1.md)
+[Step 1: Plan ASR rules deployment](attack-surface-reduction-rules-deployment-plan.md)
 
-[Phase 2: Test](attack-surface-reduction-rules-deployment-phase-2.md)
+[Step 2: Test ASR rules](attack-surface-reduction-rules-deployment-test.md)
 
-[Phase 4: Operationalize](attack-surface-reduction-rules-deployment-phase-4.md)
+[Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md)
