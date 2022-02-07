@@ -62,6 +62,11 @@ Summary of outcomes:
 
 - Doesn't apply to existing files at rest in SharePoint.
 
+- As with sensitivity labels for Office for the web, some [label configurations that apply encryption](encryption-sensitivity-labels.md#configure-encryption-settings) aren't suitable for SharePoint, and so don't support a default sensitivity label for a SharePoint document library:
+      - **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected. This setting is sometimes referred to as "user-defined permissions".
+    - **User access to content expires** is set to a value other than **Never**.
+    - **Double Key Encryption** is selected.
+
 ## How to configure a default sensitivity label for a SharePoint document library
 
 For an existing document library:
@@ -76,7 +81,7 @@ If you're creating a new document library, you can configure the same **Default 
 
 Use the SharePoint **Sensitivity** column to see the names of sensitivity labels applied to files. When the label has been applied by this features, the tooltip for the label name displays **This file has been automatically labeled**. However, this tooltip isn't exclusive to the default sensitivity label for a document library. It also displays when sensitivity labels are applied by using auto-labeling policies or as a result of a user's default label from sensitivity label policies.
 
-To specifically identify when the label was applied because of the library's default sensitivity label, use the **Applied sensitivity label file** auditing event from the [Sensitivity label activities](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) group. Then:
+To specifically identify when the label was applied because of the library's default sensitivity label, use the [audit log in the compliance center](search-the-audit-log-in-security-and-compliance) and the **Applied sensitivity label file** auditing event from the **Sensitivity label activities** group. Then:
 
 1. Select an entry to view the details in a flyout pane.
 
@@ -84,7 +89,7 @@ To specifically identify when the label was applied because of the library's def
 
 3. A value of **6** is used for when the label was applied because of the default sensitivity label for the document library.
 
-To audit the configuration setting for this feature, use the **Updated list** auditing event from the [SharePoint list activities](search-the-audit-log-in-security-and-compliance.md#sharepoint-list-activities). In the details flyout pane for the document library, scroll to the **SensitivityLabelEventData** section where **OldSensitivityLabeld** and **SensitivityLabelId** can reflect three changes of states:
+To audit the configuration setting for this feature, use the **Updated list** auditing event from the **SharePoint list activities** group. In the details flyout pane for the document library, scroll to the **SensitivityLabelEventData** section where **OldSensitivityLabeld** and **SensitivityLabelId** can reflect three changes of states:
 
 - Sensitivity label applied
 - Sensitivity label changed from one label to another
