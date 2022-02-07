@@ -142,7 +142,7 @@ The **Manage alert** pane allows you to view or specify:
 
    - **Informational, expected activity** with a type of activity. Use the options in this category to classify alerts for security tests, red team activity, and expected unusual behavior from trusted apps and users.
 
-   - **False positive** for types of alerts that were created even that there is no malicious activity. Classifying alerts as false positive helps Microsoft 365 Defender improve its detection quality.
+   - **False positive** for types of alerts that were created even when there is no malicious activity. Classifying alerts as false positive helps Microsoft 365 Defender improve its detection quality.
 
 - A comment on the alert.
 
