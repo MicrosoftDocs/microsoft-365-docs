@@ -68,9 +68,34 @@ Summary of outcomes:
 
 2. Select **Default sensitivity label**, and the from drop-down box, select the label that you want to be the default sensitivity label for the document library.
 
-## Monitoring application of the default sensitivity label for a SharePoint document library
+## Monitoring application of your default sensitivity labels
 
-Use the SharePoint **Sensitivity** column to see the names of sensitivity labels applied to files. When the label has been applied by this features, the tooltip for the label name displays **This file has been automatically labeled**.
+Use the SharePoint **Sensitivity** column to see the names of sensitivity labels applied to files. When the label has been applied by this features, the tooltip for the label name displays **This file has been automatically labeled**. However, this tooltip also applies to sensitivity labels that were applied by using auto-labeling policies.
+
+To specifically identify when the label was applied because of the default label for the document library, use the **Applied sensitivity label file** auditing event from the [Sensitivity label activities](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities ) group. Then:
+
+1. Select an entry to view the details in a flyout pane.
+
+2. From the details pane, scroll to the **SensitivityLabelEventData section**, and identify the value for **ActionScourceDetails**.
+
+3. A value of **6** is used for when the sensitivity label was applied from the default label for the document library.
+
+To audit the configuration of the default label for the document library, use the **Updated list** auditing event from the [SharePoint list activities](search-the-audit-log-in-security-and-compliance.nd#sharepoint-list-activities). In the details flyout pane For the document library, scroll to the SensitivityLabelEventData section where three events are logged and include the sensitivity labels by GUID:
+
+- Sensitivity label selected
+- Sensitivity label changed from one label to another
+- Sensitivity label removed
+
+To map sensitivity label GUIDs to label names, use the [Get-Label](/powershell/module/exchange/get-label) cmdlet:
+
+1. First, [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+
+    For example, in a PowerShell session that you run as administrator, sign in with a global administrator account.
+
+2. Then run the following command:
+
+    ```powershell
+    Get-Label -Identity "<GUID>" | Name
 
 ## Next steps
 
