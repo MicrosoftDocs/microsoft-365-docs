@@ -84,7 +84,7 @@ To specifically identify when the label was applied because of the library's def
 
 3. A value of **6** is used for when the sensitivity label was applied from the default label for the document library.
 
-To audit the configuration setting for this feature, use the **Updated list** auditing event from the [SharePoint list activities](search-the-audit-log-in-security-and-compliance.nd#sharepoint-list-activities). In the details flyout pane For the document library, scroll to the **SensitivityLabelEventData** section where three changes of states are logged and include the sensitivity labels by GUID:
+To audit the configuration setting for this feature, use the **Updated list** auditing event from the [SharePoint list activities](search-the-audit-log-in-security-and-compliance.md#sharepoint-list-activities). In the details flyout pane For the document library, scroll to the **SensitivityLabelEventData** section where three changes of states are logged and include the sensitivity labels by GUID:
 
 - Sensitivity label selected
 - Sensitivity label changed from one label to another
