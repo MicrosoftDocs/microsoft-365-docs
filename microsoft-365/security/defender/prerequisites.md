@@ -70,14 +70,11 @@ For information related to US Government customers, see [Microsoft 365 Defender 
 
 Currently, the Microsoft Defender for Office 365 integration into the unified Microsoft 365 Defender features are not available to customers in the following Office 365 datacenter locations:
 
-- Brazil 
-- Germany 
 - Norway 
-- Singapore 
-- South Africa
-- Sweden
-- Switzerland 
+- South Africa 
 - United Arab Emirates 
+- Sweden 
+- Singapore 
 
 
 ## Related topics

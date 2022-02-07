@@ -166,7 +166,7 @@ Finally, choose the date when the event occurred; this date is used as the start
 
 After creating an event, the retention settings take effect for the content that's already labeled and indexed. If the retention label is added to new content after the event is created, you must create a new event with the same details.
 
-Deleting an event doesn't cancel the retention settings that are now in effect for the content that's already labeled. To do that, create a new event with the same details, but leave the date blank. 
+Deleting an event doesn't cancel the retention settings that are now in effect for the content that's already labeled. Currently, you can't cancel events after they're triggered.
 
 ## Use Content Search to find all content with a specific label or asset ID
 
