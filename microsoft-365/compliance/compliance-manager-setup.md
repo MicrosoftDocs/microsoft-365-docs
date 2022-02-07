@@ -103,7 +103,7 @@ You can start your trial directly from Compliance Manager and set up recommended
 
 5. On the **Choose assessments** screen, select the dropdown arrow next to **Recommended templates** to see the list of assessments we think apply to your organization. Check the boxes next to the templates you want to use for creating assessments, then select **Next**.
 
-6. Review your final selections and select **Add recommended assessments** to create your new assessments.
+6. Review your final selections and select **Add Recommended Assessments** to create your new assessments.
 
 Learn more about getting started with assessments by visiting the [Assessments page](#assessments-page) section below.
 
