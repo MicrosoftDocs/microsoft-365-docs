@@ -60,7 +60,7 @@ Summary of outcomes:
 
 - A maximum of 25,000 documents per tenant can be labeled by using this feature.
 
-- Doesn't apply to existing files in SharePoint at rest.
+- Doesn't apply to existing files at rest in SharePoint.
 
 ## How to configure a default sensitivity label for a SharePoint document library
 
