@@ -132,9 +132,9 @@ To run the flow:
 
 There are multiple ways to view how you see the information in a SharePoint document library. You can change the view in your document library to fit your needs or preferences.
 
-To change the view on the library page, select the view drop-down menu to show the options, and then select the view you want to use.
+To change the view on the library page, select the view dropdown menu to show the options, and then select the view you want to use.
 
-   ![Screenshot of a view drop-down menu showing the view options.](../media/content-understanding/document-library-view-menu.png) 
+   ![Screenshot of a view dropdown menu showing the view options.](../media/content-understanding/document-library-view-menu.png) 
 
 For example, if you select **Tiles**, the page will display as shown.
 
@@ -142,7 +142,7 @@ For example, if you select **Tiles**, the page will display as shown.
 
 The **Tiles** view displays up to eight user-created fields. If there are fewer than eight, up to four system-generated fields show up: Sensitivity (if available), Retention (if available), Content type, Modified date, Modified by, and Classification date.
 
-To edit any current view, on the view drop-down menu, select **Edit current view**.
+To edit any current view, on the view dropdown menu, select **Edit current view**.
 
 ## See Also
 
