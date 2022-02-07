@@ -136,11 +136,11 @@ To change the view on the library page, select the view drop-down menu to show t
 
    ![Screenshot of a view drop-down menu showing the view options.](../media/content-understanding/document-library-view-menu.png) 
 
-For example, if you select **Tiles**, the page will look as shown as follows.
+For example, if you select **Tiles**, the page will display as shown.
 
    ![Screenshot of a document library showing the Tiles view.](../media/content-understanding/document-library-tiles-view.png) 
 
-The **Tiles** view displays up to eight user-created fields. If there are fewer than eight, up to four system-generated fields show up: sensitivity (if available), retention (if available), content type, modified date, modified by, and then classification date.
+The **Tiles** view displays up to eight user-created fields. If there are fewer than eight, up to four system-generated fields show up: Sensitivity (if available), Retention (if available), Content type, Modified date, Modified by, and Classification date.
 
 To edit any current view, on the view drop-down menu, select **Edit current view**.
 
