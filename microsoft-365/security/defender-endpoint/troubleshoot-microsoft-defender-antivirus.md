@@ -40,6 +40,9 @@ The tables list:
 > - Fast learning (including Block at first sight)
 > - Potentially unwanted application blocking
 
+> [!NOTE]
+> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
+
 <a id="windows-defender-av-ids"></a>
 ## Microsoft Defender Antivirus event IDs
 
