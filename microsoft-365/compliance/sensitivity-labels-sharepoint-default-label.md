@@ -63,7 +63,7 @@ Summary of outcomes:
 - Doesn't apply to existing files at rest in SharePoint.
 
 - As with sensitivity labels for Office for the web, some [label configurations that apply encryption](encryption-sensitivity-labels.md#configure-encryption-settings) aren't suitable for SharePoint, and so don't support a default sensitivity label for a SharePoint document library:
-      - **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected. This setting is sometimes referred to as "user-defined permissions".
+    - **Let users assign permissions when they apply the label** and the checkbox **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected. This setting is sometimes referred to as "user-defined permissions".
     - **User access to content expires** is set to a value other than **Never**.
     - **Double Key Encryption** is selected.
 
