@@ -94,7 +94,61 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - routing#
 - RTN
 
+
 <!--
+1	All full names	Detects full names for people from all supported countries/regions
+2	All physical addresses	Detects patterns related to physical addresses from all supported countries/regions
+3	Australia physical address	Detects patterns related to physical addresses from Austria
+4	Austria physical address	Detects patterns related to physical addresses from Belgium
+5	Belgium physical address	Detects patterns related to physical addresses from Brazil
+6	Brazil physical address	Detects patterns related to physical addresses from Bulgaria
+7	Bulgaria physical address	Detects patterns related to physical addresses from Canada
+8	Canada physical address	Detects patterns related to physical addresses from Croatia
+9	Croatia physical address	Detects patterns related to physical addresses from Cyprus
+10	Cyprus physical address	Detects patterns related to physical addresses from Czech Republic
+11	Czech Republic physical address	Detects patterns related to physical addresses from Denmark
+12	Denmark physical address	Detects patterns related to physical addresses from Estonia
+13	Estonia physical address	Detects patterns related to physical addresses from Finland
+14	Finland physical address	Detects patterns related to physical addresses from France
+15	France physical address	Detects patterns related to physical addresses from Germany
+16	Germany physical address	Detects patterns related to physical addresses from Greece
+17	Greece physical address	Detects patterns related to physical addresses from Hungary
+18	Hungary physical address	Detects patterns related to physical addresses from Iceland
+19	Iceland physical address	Detects patterns related to physical addresses from Ireland
+20	Ireland physical address	Detects patterns related to physical addresses from Italy
+21	Italy physical address	Detects patterns related to physical addresses from Latvia
+22	Latvia physical address	Detects patterns related to physical addresses from Liechtenstein
+23	Liechtenstein physical address	Detects patterns related to physical addresses from Lithuania
+24	Lithuania physical address	Detects patterns related to physical addresses from Luxembourg
+25	Luxembourg physical address	Detects patterns related to physical addresses from Malta
+26	Malta physical address	Detects patterns related to physical addresses from Netherlands
+27	Netherlands physical address	Detects patterns related to physical addresses from New Zealand
+28	New Zealand physical address	Detects patterns related to physical addresses from Norway
+29	Norway physical address	Detects patterns related to physical addresses from Poland
+30	Poland physical address	Detects patterns related to physical addresses from Portugal
+31	Portugal physical address	Detects patterns related to physical addresses from Romania
+32	Romania physical address	Detects patterns related to physical addresses from Slovakia
+33	Slovakia physical address	Detects patterns related to physical addresses from Slovenia
+34	Slovenia physical address	Detects patterns related to physical addresses from Spain
+35	Spain physical address	Detects patterns related to physical addresses from Sweden
+36	Sweden physical address	Detects patterns related to physical addresses from Switzerland
+37	Switzerland physical address	Detects patterns related to physical addresses from Turkey
+38	Turkey physical address	Detects patterns related to physical addresses from United Kingdom
+39	United Kingdom physical address	Detects patterns related to physical addresses from United States
+40	United States physical address	Detects patterns related to physical addresses from 
+41	All medical terms and conditions	Detects all medical terms (blood and lab test terms, medications, procedures, etc.) and all medical conditions (diseases, impairments, conditions based on lifestyle, etc.). English terms only.
+42	Blood test terms	Detects terms related to blood tests, such as ‘hCG’. English terms only.
+43	Types of medication	Detects types of medication, such as ‘insulin’. English terms only.
+44	Diseases	Detects types of diseases, such as ‘diabetes’. English terms only.
+45	Generic medication names	Detects names of generic medication, such as ‘acetaminophen’. English terms only.
+46	Impairments listed in the U.S. Disability Evaluation Under Social Security	Detects impairments listed in the U.S. Disability Evaluation Under Social Security, such as ‘muscular dystrophy’. English terms only.
+47	Lab test terms	Detects terms related to lab tests, such as ‘Insulin C-peptide’. English terms only.
+48	Lifestyles that relate to medical conditions	Detects terms related to lifestyles that might result in a medical condition, such as ‘smoking’. English terms only.
+49	Medical specialties	Detects medical specialties, such as ‘dermatology’. English terms only.
+50	Surgical procedures	Detects surgical procedures, such as ‘appendectomy’. English terms only.
+51	Brand medication names	Detects names of brand medication, such as ‘Tylenol’. English terms only.
+
+
 ## All full names
 
 ### Definition
