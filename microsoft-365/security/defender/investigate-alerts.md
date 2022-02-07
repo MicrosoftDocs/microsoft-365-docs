@@ -134,7 +134,7 @@ To manage a set of alerts similar to a specific alert, select **View similar ale
 
 From the **Manage alert** pane, you can then classify all of the related alerts at the same time. Here's an example.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage-select-related.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage-select-related.png" alt-text="Managing related alerts in the Microsoft 365 Defender portal":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" alt-text="Managing related alerts in the Microsoft 365 Defender portal":::
 
 If similar alerts were already classified in the past, you can save time by using Microsoft 365 Defender recommendations to learn how the other alerts were resolved. From the summary details section, select **Recommendations**.
 
