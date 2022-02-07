@@ -140,7 +140,7 @@ For example, if you select **Tiles** from the list, the page will display as sho
 
    ![Screenshot of a document library showing the Tiles view.](../media/content-understanding/document-library-tiles-view.png) 
 
-The **Tiles** view displays up to eight user-created fields. If there are fewer than eight, up to four system-generated fields show up: Sensitivity (if available), Retention (if available), Content type, Modified date, Modified by, and Classification date.
+The **Tiles** view displays up to eight user-created fields. If there are fewer than eight, up to four system-generated fields are shown: Sensitivity (if available), Retention (if available), Content type, Modified date, Modified by, and Classification date.
 
 To edit any current view, on the view dropdown menu, select **Edit current view**.
 
