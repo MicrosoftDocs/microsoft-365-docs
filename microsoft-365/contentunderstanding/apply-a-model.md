@@ -130,7 +130,13 @@ To run the flow:
 
 ## Change the view in a document library
 
-You can change the view in your SharePoint document library depending on your need or preference.
+There are multiple ways to view how you see the information in a SharePoint document library. You can change the view in your document library to fit your needs or preferences.
+
+To change the view on the library page, select the view drop-down menu to show the options, and then select the view you want to use.
+
+   ![Screenshot of a view drop-down menu showing the view options.](../media/content-understanding/document-library-view-menu.png) 
+
+
 
 The tile view displays up to eight user-created fields. If there are fewer than eight, we show up to four system-generated fields: sensitivity (if available), retention (if available), content type, modified date, modified by, and then classification date.
 
