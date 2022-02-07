@@ -170,7 +170,7 @@
                    items: 
                     - name: Overview
                       href: alert-grading-playbooks.md
-                    - name: Suspicious email forwarding
+                    - name: Suspicious email forwarding activity
                       href: alert-grading-playbook-email-forwarding.md
                     - name: Suspicious inbox forwarding rules
                       href: alert-grading-playbook-inbox-forwarding-rules.md
