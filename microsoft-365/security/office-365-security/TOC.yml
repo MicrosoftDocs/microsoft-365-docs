@@ -186,34 +186,56 @@
              href: admin-review-reported-message.md
          - name: Step 2 - Manage quarantined messages and files
            items: 
-     - name: Detect and address compromised user accounts quickly
-       href: address-compromised-users-quickly.md
-     - name: Detect and Remediate Illicit Consent Grants in Office 365
-       href: detect-and-remediate-illicit-consent-grants.md
-     - name: Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
-       href: detect-and-remediate-outlook-rules-forms-attack.md
-     - name: Handle false positives/negatives
-       href: air-report-false-positives-negatives.md
-     - name: Recover from a ransomware attack
-       href: recover-from-ransomware.md
-     - name: Remediate malicious email
-       href: remediate-malicious-email-delivered-office-365.md
-     - name: Responding to a Compromised Email Account in Office 365
-       href: responding-to-a-compromised-email-account.md
-     - name: Review and approve (or reject) pending actions
-       href: air-review-approve-pending-completed-actions.md
-     - name: Tune anti-phishing protection
-       href: tuning-anti-phishing.md
-     - name: Find and release quarantined messages as a user
-       href: find-and-release-quarantined-messages-as-a-user.md
-     - name: Manage quarantined messages and files as an admin
-       href: manage-quarantined-messages-and-files.md
-     - name: Quarantine policies
-       href: quarantine-policies.md  
-     - name: Remove blocked users from the Restricted Users portal
-       href: removing-user-from-restricted-users-portal-after-spam.md
-     - name: Use the delist portal to remove yourself from the blocked senders list
-       href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
+           - name: Manage quarantined messages and files as an admin
+             href: manage-quarantined-messages-and-files.md 
+           - name: Find and release quarantined messages as a user
+             href: find-and-release-quarantined-messages-as-a-user.md
+         - name: Step 3 - Tune quarantine policies
+           href: quarantine-policies.md
+         - name: Step 4 - Tune anti-phishing protection
+           href: tuning-anti-phishing.md
+         - name: Step 5 - Remove blocked users from the Restricted Users portal
+           href: removing-user-from-restricted-users-portal-after-spam.md
+         - name: Step 6 - Use the delist portal to remove yourself from the blocked senders list
+           href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
+       - name: Phase 2 - Detect and respond
+         items:
+         - name: Step 1 - Remediate malicious email
+           href: remediate-malicious-email-delivered-office-365.md
+         - name: Step 2 - Recover from a ransomware attack
+           href: recover-from-ransomware.md
+         - name: Step 3 - Detect and Remediate Illicit Consent Grants in Office 365
+           href: detect-and-remediate-illicit-consent-grants.md
+         - name: Step 4 - Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
+           href: detect-and-remediate-outlook-rules-forms-attack.md
+         - name: Step 5 - Detect and address compromised user accounts quickly
+           href: address-compromised-users-quickly.md
+       - name: Phase 3 - Automated Investigation and Response (AIR)
+         items:
+         - name: Step 1 - AIR overview and permissions
+           items: 
+           - name: AIR overview
+             href: office-365-air.md
+           - name: How automated investigation and response works
+             href: automated-investigation-response-office.md 
+         - name: Step 2 - Configure AIR
+           href: office-365-air.md
+         - name: Step 3 - Use AIR
+           href: office-365-air.md
+         - name: Step 4 - Manage false positives and false negatives in AIR
+           href: air-report-false-positives-negatives.md
+         - name: Step 5 - View details and results of an automated investigation
+           href: air-view-investigation-results.md 
+         - name: Step 6 - Remediation in AIR
+           items:
+           - Name: Remediation actions
+             href: air-remediation-actions.md
+           - name: Review and approve (or reject) pending actions
+             href: air-review-approve-pending-completed-actions.md
+         - name: Step 7 - Detect and address compromised user accounts in AIR
+           href: address-compromised-users-quickly.md
+         - name: Step 8 - Integrate AIR with a custom solution or third-party solution
+           href: air-custom-reporting.md
    - name: FAQ
      items: 
      - name: Delegated administration FAQ
@@ -302,14 +324,8 @@
         href: turn-on-mdo-for-spo-odb-and-teams.md
       - name: Microsoft 365 Defender portal overview
         href: ../defender/microsoft-365-defender.md
-      - name: AIR overview
-        href: office-365-air.md
-      - name: How automated investigation and response works
-        href: automated-investigation-response-office.md
       - name: Email analysis in investigations
         href: email-analysis-investigations.md
-      - name: Remediation actions
-        href: air-remediation-actions.md
       - name: Anti-malware protection
         href: anti-malware-protection.md
       - name: Anti-spam protection
@@ -394,14 +410,10 @@
           href: attack-simulation-training-faq.md
       - name: Configure delivery for third-party phishing simulations and SecOps mailboxes
         href: configure-advanced-delivery.md
-      - name: Integrate AIR with a custom solution or third-party solution
-        href: air-custom-reporting.md
       - name: Smart reports and insights in the Security & Compliance Center
         href: reports-and-insights-in-security-and-compliance.md
       - name: Run an administrator role group report
         href: /exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
-      - name: View details and results of an automated investigation
-        href: air-view-investigation-results.md
       - name: Mail flow insights in the Security & Compliance Center
         items:
          - name: Mail flow insights in the Security & Compliance Center
@@ -442,4 +454,7 @@
            href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
          - name: Submit malware and non-malware to Microsoft
            href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+      - name: Responding to a Compromised Email Account in Office 365
+        href: responding-to-a-compromised-email-account.md
+
       
