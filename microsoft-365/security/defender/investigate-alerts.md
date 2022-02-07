@@ -126,25 +126,7 @@ Once you've selected an entity of interest, the details page changes to display 
 
 ## Manage alerts
 
-To manage a single alert, select **Manage alert** in the summary details section of the alert page.
-
-To manage a set of alerts similar to a specific alert, select **View similar alerts** in the **INSIGHT** box in the summary details section of the alert page.
-
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" alt-text="Manage an alert in the Microsoft 365 Defender portal":::
-
-From the **Manage alert** pane, you can then classify all of the related alerts at the same time. Here's an example.
-
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" alt-text="Managing related alerts in the Microsoft 365 Defender portal":::
-
-If similar alerts were already classified in the past, you can save time by using Microsoft 365 Defender recommendations to learn how the other alerts were resolved. From the summary details section, select **Recommendations**.
-
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" alt-text="Example of selecting recommendations for an alert":::
-
-The **Recommendations** tab provides next-step actions and advice for investigation, remediation, and prevention. Here's an example.
-
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="Example of alert recommendations":::
-
-For a single alert or for multiple alerts, here's an example of the **Manage alert** pane.
+To manage alerta, select **Manage alert** in the summary details section of the alert page. For a single alert, here's an example of the **Manage alert** pane.
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Example of the Manage alert pane in the Microsoft 365 Defender portal":::
 
@@ -179,9 +161,25 @@ From the ellipsis (...), you can also perform these additional actions:
 
 The list of additional actions depends on the type of alert.
 
+To manage a *set of alerts similar to a specific alert*, select **View similar alerts** in the **INSIGHT** box in the summary details section of the alert page.
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" alt-text="Manage an alert in the Microsoft 365 Defender portal":::
+
+From the **Manage alert** pane, you can then classify all of the related alerts at the same time. Here's an example.
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" alt-text="Managing related alerts in the Microsoft 365 Defender portal":::
+
+If similar alerts were already classified in the past, you can save time by using Microsoft 365 Defender recommendations to learn how the other alerts were resolved. From the summary details section, select **Recommendations**.
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" alt-text="Example of selecting recommendations for an alert":::
+
+The **Recommendations** tab provides next-step actions and advice for investigation, remediation, and prevention. Here's an example.
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="Example of alert recommendations":::
+
 ## Resolve an alert
 
-Once you're done analyzing an alert and it can be resolved, go to the **Manage alert** pane for the alert and mark the status as **Resolved** and then classify it as a **True positive** with a type of threat, an **Informational, expected activity** with a type of activity, or a **False positive**.
+Once you're done analyzing an alert and it can be resolved, go to the **Manage alert** pane for the alert or similar alerts and mark the status as **Resolved** and then classify it as a **True positive** with a type of threat, an **Informational, expected activity** with a type of activity, or a **False positive**.
 
 Classifying alerts helps Microsoft 365 Defender improve its detection quality.
 
