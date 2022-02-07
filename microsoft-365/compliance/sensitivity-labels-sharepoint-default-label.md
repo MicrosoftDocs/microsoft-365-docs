@@ -76,13 +76,13 @@ If you're creating a new document library, you can configure the same **Default 
 
 Use the SharePoint **Sensitivity** column to see the names of sensitivity labels applied to files. When the label has been applied by this features, the tooltip for the label name displays **This file has been automatically labeled**. However, this tooltip isn't exclusive to the default sensitivity label for a document library. It also displays when sensitivity labels are applied by using auto-labeling policies or as a result of a user's default label from sensitivity label policies.
 
-To specifically identify when the label was applied because of the library's default label, use the **Applied sensitivity label file** auditing event from the [Sensitivity label activities](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) group. Then:
+To identify when the label was applied because of the library's default sensitivity label, use the **Applied sensitivity label file** auditing event from the [Sensitivity label activities](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) group. Then:
 
 1. Select an entry to view the details in a flyout pane.
 
 2. From the details pane, scroll to the **SensitivityLabelEventData section**, and identify the value for **ActionScourceDetails**.
 
-3. A value of **6** is used for when the sensitivity label was applied from the default label for the document library.
+3. A value of **6** is used for when the label was applied because of the default sensitivity label for the document library.
 
 To audit the configuration setting for this feature, use the **Updated list** auditing event from the [SharePoint list activities](search-the-audit-log-in-security-and-compliance.md#sharepoint-list-activities). In the details flyout pane For the document library, scroll to the **SensitivityLabelEventData** section where three changes of states are logged and include the sensitivity labels by GUID:
 
