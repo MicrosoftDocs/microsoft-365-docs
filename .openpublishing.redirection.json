@@ -5940,6 +5940,21 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "/microsoft-365/security/defender-endpoint/portal-overview.md",
+      "redirect_url": "/microsoft-365/security/defender/microsoft-365-security-center-mde",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/microsoft-365/security/defender-endpoint/manage-edr.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/microsoft-365/security/defender-endpoint/microsoft-defender-security-center.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/learning/configure-cornerstone-content-source.md",
       "redirect_url": "/viva/learning/configure-cornerstone-content-source",
       "redirect_document_id": false
