@@ -64,15 +64,19 @@ Summary of outcomes:
 
 ## How to configure a default sensitivity label for a SharePoint document library
 
-1. In the SharePoint admin center, navigate to the document library > **Settings** > **Permissions and Management**
+For an existing document library:
 
-2. Select **Default sensitivity label**, and the from drop-down box, select the label that you want to be the default sensitivity label for the document library.
+1. In SharePoint, navigate to the document library > **Settings**.
+
+2. From the **Library settings** flyout pane, select **Default sensitivity label**, and select a label from the drop-down box.
+
+If you're creating a new document library, you can configure the same **Default sensitivity label** setting from the **Create document library** flyout pane.
 
 ## Monitoring application of your default sensitivity labels
 
-Use the SharePoint **Sensitivity** column to see the names of sensitivity labels applied to files. When the label has been applied by this features, the tooltip for the label name displays **This file has been automatically labeled**. However, this tooltip also applies to sensitivity labels that were applied by using auto-labeling policies.
+Use the SharePoint **Sensitivity** column to see the names of sensitivity labels applied to files. When the label has been applied by this features, the tooltip for the label name displays **This file has been automatically labeled**. However, this tooltip isn't exclusive to the default sensitivity label for a document library and also displays when sensitivity labels are applied by using auto-labeling policies and a user's policy default label.
 
-To specifically identify when the label was applied because of the default label for the document library, use the **Applied sensitivity label file** auditing event from the [Sensitivity label activities](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities ) group. Then:
+To specifically identify when the label was applied because of the library's default label, use the **Applied sensitivity label file** auditing event from the [Sensitivity label activities](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) group. Then:
 
 1. Select an entry to view the details in a flyout pane.
 
@@ -80,7 +84,7 @@ To specifically identify when the label was applied because of the default label
 
 3. A value of **6** is used for when the sensitivity label was applied from the default label for the document library.
 
-To audit the configuration of the default label for the document library, use the **Updated list** auditing event from the [SharePoint list activities](search-the-audit-log-in-security-and-compliance.nd#sharepoint-list-activities). In the details flyout pane For the document library, scroll to the SensitivityLabelEventData section where three events are logged and include the sensitivity labels by GUID:
+To audit the configuration setting for this feature, use the **Updated list** auditing event from the [SharePoint list activities](search-the-audit-log-in-security-and-compliance.nd#sharepoint-list-activities). In the details flyout pane For the document library, scroll to the **SensitivityLabelEventData** section where three changes of states are logged and include the sensitivity labels by GUID:
 
 - Sensitivity label selected
 - Sensitivity label changed from one label to another
@@ -90,9 +94,7 @@ To map sensitivity label GUIDs to label names, use the [Get-Label](/powershell/m
 
 1. First, [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
-    For example, in a PowerShell session that you run as administrator, sign in with a global administrator account.
-
-2. Then run the following command:
+2. Then run the following command, where you specify the GUID:
 
     ```powershell
     Get-Label -Identity "<GUID>" | Name
