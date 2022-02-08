@@ -35,18 +35,16 @@ Microsoft Defender for Business (preview) was designed to save small and medium-
 
 The wizard is designed to help you set up and configure Defender for Business quickly and efficiently. The wizard walks you through the following steps:
 
-1. **Grant access to the Microsoft 365 Defender portal** ([https://security.microsoft.com](https://security.microsoft.com)). Access is granted through roles that imply certain permissions. For example, a Global Admin can view and edit all settings across your Microsoft 365 tenant. A Security Administrator can view and edit security settings, and a Security Reader can only view information in reports. [Learn more about roles and permissions](mdb-roles-permissions.md).
+1. **Assign user permissions**. In this step, you grant your security team access to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). Portal access is granted through roles that imply certain permissions. For example, a Global Admin can view and edit all settings across your Microsoft 365 tenant. A Security Administrator can view and edit security settings, and a Security Reader can only view information in reports. [Learn more about roles and permissions](mdb-roles-permissions.md).
 
-2. **Set up email notifications**. You can choose who should be notified via email whenever a vulnerability is detected or an alert is generated. Email notifications can help keep your security team informed even if they've left the office for the day. [Learn more about email notifications](mdb-email-notifications.md). 
+2. **Set up email notifications**. In this step, you determine who should receive email notifications in the event of a detected vulnerability or a new alert. Email notifications can help keep your security team informed, even if they're away from their desk. [Learn more about email notifications](mdb-email-notifications.md). 
 
-3. **Onboard Windows devices**. You can onboard your organization's Windows devices to Defender for Business quickly, helping to protect those devices from day one. 
+3. **Onboard and configure Windows devices**. In this step, you can onboard your organization's Windows devices to Defender for Business quickly. Onboarding devices right away helps to protect those devices from day one. [Learn more about device onboarding](mdb-onboard-devices.md).
 
    - If you're already using Microsoft Endpoint Manager (which includes Microsoft Intune), you'll be asked if you want to use automatic onboarding, which sets up a connection between Endpoint Manager and Defender for Business, and then onboards all Windows devices that are enrolled in Endpoint Manager. 
    - If you're not already using Endpoint Manager, you can use gradual device onboarding and choose a set of devices to onboard to Defender for Business. 
    
-   [Learn more about device onboarding](mdb-onboard-devices.md).
-
-4. **Configure your security settings**. Defender for Business includes default security policies that can be applied to your organization's devices. These default policies use recommended settings and are designed to provide strong protection for your devices. However, if you're already using Endpoint Manager, you can continue using that to manage your security policies. 
+4. **Configure your security policies**. Defender for Business includes default security policies that can be applied to your organization's devices. These default policies use recommended settings and are designed to provide strong protection for your devices. However, you can also create your own security policies if you wish. And, if you're already using Endpoint Manager, you can continue using that to manage your security policies. 
 
    - [Learn more about simplified configuration](mdb-simplified-configuration.md).
    - [Choose where to manage security policies and devices](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
