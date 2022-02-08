@@ -29,7 +29,7 @@ If you can’t sign in to Lighthouse, you can use the [Microsoft 365 service he
 
 ## Before you begin
 
-To view service health, you'll need an Azure AD role in the partner tenant with the following property set: **microsoft.office365.serviceHealth/allEntities/allTasks**. For a list of Azure AD roles, see [Azure AD built-in roles](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference).
+To view service health, you'll need an Azure AD role in the partner tenant with the following property set: **microsoft.office365.serviceHealth/allEntities/allTasks**. For a list of Azure AD roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 
 ## View service health status for all tenants
 
@@ -58,4 +58,4 @@ To view service health, you'll need an Azure AD role in the partner tenant with 
 On the **Tenants affected** tab, you can export a list of affected tenants to a common-separated values (.cvs) file so you can share it with your support teams.
 
 ## Related content
-[How to check Microsoft 365 service health](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health) (article)
+[How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health) (article)
