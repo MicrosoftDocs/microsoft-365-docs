@@ -4,11 +4,12 @@ description:  Orientation for what the service is and shortcuts to articles for 
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 audience: ITpro
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.custom: intro-overview
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ---
 

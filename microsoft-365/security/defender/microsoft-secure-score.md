@@ -12,8 +12,9 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - Adm_TOC
+- M365-security-compliance
+- m365initiative-m365-defender
+- Adm_TOC
 ms.topic: article
 search.appverid: 
   - MOE150
@@ -28,7 +29,7 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](overview-security-center.md).
+Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
 Following the Secure Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 Defender portal, organizations can monitor and work on the security of their Microsoft 365 identities, apps, and devices.
 
@@ -77,7 +78,7 @@ Currently there are recommendations for the following products:
 - Azure Active Directory
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Identity
-- Cloud App Security
+- Defender for Cloud Apps
 - Microsoft Teams
 
 Recommendations for other security products are coming soon. The recommendations won't cover all the attack surfaces associated with each product, but they're a good baseline. You can also mark the improvement actions as covered by a third party or alternate mitigation.

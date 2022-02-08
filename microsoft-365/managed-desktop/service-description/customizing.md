@@ -3,11 +3,11 @@ title: Exceptions to the service plan
 description: How to request exceptions to the standard service plan
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ---
 
@@ -45,7 +45,7 @@ When we review exception requests, we assess these factors in this order:
 1. Some applications and policies which Microsoft Managed Desktop deploys to all devices aren't negotiable, so your request must not affect those. See [Device configuration](device-policies.md) for more information.
 2. Restricted productivity software required by a user to do their job will likely be approved. 
 3. If we can meet your requirement by using Microsoft technology, we’ll likely approve your request for an exception migration period of three to 12 months (depending on the scope of the project).
-4. If we can’t meet your requirement by using Microsoft technology, we’ll likely approve your request unless it violates one of the conditions below.  
+4. If we can’t meet your requirement by using Microsoft technology, we’ll likely approve your request unless it violates one of the [Key conditions](#key-conditions).  
 
 These principles ensure that Microsoft Managed Desktop can always meet your needs while tracking deviations from our standard template. 
 
@@ -57,6 +57,7 @@ We review exceptions to ensure they don't violate any of these conditions:
 - Maintaining the exception must not incur a significant cost for either Microsoft Managed Desktop operations or support.
 - An exception must not affect system stability, for example, by causing kernel mode crashes or hangs.
 - The change must not restrict us from operating the service or conflict with core Microsoft Managed Desktop technology.
+- The exception cannot involve personalizing the user experience, such as changing the Start menu or Taskbar.
 
 These conditions could change in the future. If we do make such changes, we’ll provide 30 days notice prior to those conditions coming into effect.  If Microsoft Managed Desktop delivers an alternative way to meet an approved exception, Microsoft Managed Desktop will notify the customer should Microsoft Managed Desktop alter the way in supporting the exception. 
 

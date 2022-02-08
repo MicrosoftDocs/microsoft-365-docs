@@ -16,7 +16,7 @@
 |OFFICE.COM|N/A|N/A|N/A|N/A|Planned|
 |ONEDRIVE|✔|✔|✔|✔|Planned|
 |ONENOTE|✔|✔|✔|✔|✔|
-|OUTLOOK|✔|✔|Planned|✔|Planned|
+|OUTLOOK|✔|✔|Planned|✔|✔|
 |PLANNER|Planned|Planned|N/A|N/A|N/A|
 |POWER APPS|Planned|Planned|N/A|N/A|Planned|
 |POWER AUTOMATE|Planned|Planned|N/A|N/A|N/A|
@@ -25,7 +25,7 @@
 |PROJECT|N/A|N/A|N/A|Planned|N/A|
 |PUBLISHER|N/A|N/A|N/A|✔|N/A|
 |SHAREPOINT ADMIN|N/A|N/A|N/A|Planned|N/A|
-|SHAREPOINT|Planned|N/A|N/A|N/A|N/A|
+|SHAREPOINT|Planned|Planned|N/A|N/A|N/A|
 |STICKY NOTES|N/A|N/A|N/A|N/A|Planned|
 |STREAM|Planned|Planned|N/A|N/A|N/A|
 |SWAY|N/A|N/A|N/A|N/A|Planned|

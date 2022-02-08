@@ -126,24 +126,24 @@ For secure environments, be sure to disable authentication for apps that do not 
 
 In the meantime, use one of the following methods to accomplish this for SharePoint Online and OneDrive for Business:
 
-- Use PowerShell, see [Block apps that do not use modern authentication (ADAL)](/mem/intune/protect/app-modern-authentication-block).
+- Use PowerShell, see [Block apps that do not use modern authentication](/mem/intune/protect/app-modern-authentication-block).
 - Configure this in the SharePoint admin center on the "device access' page — "Control access from apps that don't use modern authentication." Choose Block.
 
-## Get started with Cloud App Security or Office 365 Cloud App Security
+## Get started with Defender for Cloud Apps or Office 365 Cloud App Security
 
 Use Office 365 Cloud App Security to evaluate risk, to alert on suspicious activity, and to automatically take action. Requires Office 365 E5 plan.
 
-Or, use Microsoft Cloud App Security to obtain deeper visibility even after access is granted, comprehensive controls, and improved protection for all your cloud applications, including Office 365.
+Or, use Microsoft Defender for Cloud Apps to obtain deeper visibility even after access is granted, comprehensive controls, and improved protection for all your cloud applications, including Office 365.
 
-Because this solution recommends the EMS E5 plan, we recommend you start with Cloud App Security so you can use this with other SaaS applications in your environment. Start with default policies and settings.
+Because this solution recommends the EMS E5 plan, we recommend you start with Defender for Cloud Apps so you can use this with other SaaS applications in your environment. Start with default policies and settings.
 
 More information:
 
-- [Deploy Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
-- [More information about Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
-- [What is Cloud App Security?](/cloud-app-security/what-is-cloud-app-security)
+- [Deploy Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security)
+- [More information about Microsoft Defender for Cloud Apps](https://www.microsoft.com/cloud-platform/cloud-app-security)
+- [What is Defender for Cloud Apps?](/cloud-app-security/what-is-cloud-app-security)
 
-![Cloud App Security dashboard.](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
+![Defender for Cloud Apps dashboard.](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
 
 ## Additional resources
 
