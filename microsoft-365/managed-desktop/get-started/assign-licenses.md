@@ -13,10 +13,9 @@ ms.topic: article
 
 # Assign licenses
 
-As part of preparing to enroll in Microsoft Managed Desktop, you'll need to be sure you've obtained the necessary licenses. If you haven't already obtained the licenses, see [More about licenses](../get-ready/prerequisites.md#more-about-licenses) for details about exactly which licenses you need.
+In preparation to enroll in Microsoft Managed Desktop, you must ensure you've obtained the necessary licenses. For more information about licenses, see [More about licenses](../get-ready/prerequisites.md#more-about-licenses) for the licenses you'll need.
 
-
-If your licenses are all lined up, it's time now to assign them to your users. To assign licenses, we recommend that you take advantage of the [group-based licensing feature](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) of Azure Active Directory.
+When you have the appropriate licenses, assign them to your users. To assign licenses, we recommend that you take advantage of the [group-based licensing feature](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) of Azure Active Directory.
 
 If you have any difficulty with license assignment, contact Admin [support](../working-with-managed-desktop/admin-support.md).
 

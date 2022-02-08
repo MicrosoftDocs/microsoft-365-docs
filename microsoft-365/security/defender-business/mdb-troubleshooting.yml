@@ -40,7 +40,7 @@ sections:
       - question: I need to resolve a policy conflict
         answer: |
 
-          Policy conflicts can arise when security policies and settings are defined using multiple tools or methods. Here's an example:
+          Policy conflicts can arise when security policies are defined using multiple tools or methods. Here's an example:
 
           Suppose that Lee has been using Microsoft Endpoint Manager to manage devices and security settings. Lee has recently started using Microsoft Defender for Business (preview). Lee has chosen to use the simplified configuration process in Defender for Business (preview). Now, Lee sees policy conflicts in Microsoft Endpoint Manager and in the Microsoft 365 Defender portal. 
 
@@ -49,7 +49,7 @@ sections:
           - Delete your existing policies in Microsoft Endpoint Manager
           - See [Troubleshoot policies in Microsoft Intune](/troubleshoot/mem/intune/troubleshoot-policies-in-microsoft-intune)
 
-          See the following articles to learn more about your security policies and settings in Defender for Business (preview):
+          See the following articles to learn more about your security policies in Defender for Business (preview):
 
           - [Understand next-generation configuration settings in Microsoft Defender for Business (preview)](mdb-next-gen-configuration-settings.md)
           - [Firewall settings in Microsoft Defender for Business (preview)](mdb-firewall.md)
