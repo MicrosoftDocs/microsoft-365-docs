@@ -48,6 +48,8 @@ This feature is available only for creating [document understanding models](appl
 
 5. On the **Create a model** panel, type the name of the model, select the model type, and then select **Create**.
 
+    ![Screenshot of the Create a model panel.](../media/content-understanding/local-model-create-a-model.png) 
+
 6. Proceed to train your [document understanding model](apply-a-model.md) or to configure your [prebuilt model](prebuilt-models.md) using the files that you selected.
 
 7. When done, the **Add to library** panel opens.
