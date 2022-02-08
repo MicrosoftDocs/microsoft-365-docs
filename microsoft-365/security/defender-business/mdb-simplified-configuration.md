@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 01/06/2022
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -49,15 +49,15 @@ The following table describes each experience:
 |---------|---------|
 | The simplified configuration experience in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) <br/>(*This is the recommended option for most customers*)  | The simplified configuration experience includes default security settings and policies that help you protect your organization's devices from day one. With this experience, your security team uses the Microsoft 365 Defender portal to: <br/>- Set up and configure Defender for Business (preview) <br/>- View and manage incidents<br/>- Respond to and mitigate threats<br/>- View reports<br/>- Review pending or completed actions <br/><br/> This portal is your one-stop shop for your organization's security settings and threat protection capabilities. You get a simplified experience to help you get started quickly and efficiently.  And, you can edit your settings or define new policies to suit your organization's needs.<br/><br/>To learn more, see [View or edit device policies in Microsoft Defender for Business (preview)](mdb-view-edit-policies.md). |
 | The Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com))  | Microsoft Endpoint Manager includes Microsoft Intune, a cloud-based mobile device management (MDM) and mobile application management (MAM) provider for apps and devices. <br/><br/>Many organizations use Intune to manage their devices, such as mobile phones, tablets, and laptops. To learn more, see [Microsoft Intune is an MDM and MAM provider for your devices](/mem/intune/fundamentals/what-is-intune). <br/><br/>If you're already using Microsoft Intune or Microsoft Endpoint Manager, you can continue using that solution. |
-| Your non-Microsoft device management solution  | If you are using a non-Microsoft productivity and device management solution, such as Jamf for macOS or Ansible for Linux, you can continue to use that solution with Defender for Business (preview). <br/><br/>When devices are onboarded to Defender for Business (preview), you'll see their status and alerts in the Microsoft 365 Defender portal. To learn more, see [Onboarding and configuration tool options for Defender for Endpoint](../defender-endpoint/onboard-configure.md).<br/><br/>If you're already using a non-Microsoft device management solution, you can continue using that solution. |
+| Your non-Microsoft device management solution  | If you're using a non-Microsoft productivity and device management solution, such as Jamf for macOS or Ansible for Linux, you can continue to use that solution with Defender for Business (preview). <br/><br/>When devices are onboarded to Defender for Business (preview), you'll see their status and alerts in the Microsoft 365 Defender portal. To learn more, see [Onboarding and configuration tool options for Defender for Endpoint](../defender-endpoint/onboard-configure.md).<br/><br/>If you're already using a non-Microsoft device management solution, you can continue using that solution. |
 
 
 ## Why we recommend using the simplified configuration process
 
-**We recommend using the simplified configuration process in Microsoft Defender for Business (preview)** for most customers. The simplified configuration process is streamlined especially for small and medium-sized businesses. Defender for Business (preview) is designed to help you protect your organization's devices on day one, without requiring deep technical expertise or special knowledge. With default security settings and policies, your devices are protected as soon as they are onboarded.
+**We recommend using the simplified configuration process in Microsoft Defender for Business (preview)** for most customers. The simplified configuration process is streamlined especially for small and medium-sized businesses. Defender for Business (preview) is designed to help you protect your organization's devices on day one, without requiring deep technical expertise or special knowledge. With default security settings and policies, your devices are protected as soon as they're onboarded.
 
 
-Defender for Business (preview) is designed to provide strong protection while saving you time and effort in configuring your security settings. The streamlined experience in the Microsoft 365 Defender portal makes it simple to onboard devices and manage them. In addition, default policies are included so that your organization's devices are protected as soon as they are onboarded. You can keep your default settings as they are, or make changes to suit your business needs. You can also add new policies to manage devices as needed.
+Defender for Business (preview) is designed to provide strong protection while saving you time and effort in configuring your security settings. The streamlined experience in the Microsoft 365 Defender portal makes it simple to onboard devices and manage them. In addition, default policies are included so that your organization's devices are protected as soon as they're onboarded. You can keep your default settings as they are, or make changes to suit your business needs. You can also add new policies to manage devices as needed.
 
 ## Next steps
 
