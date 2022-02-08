@@ -79,6 +79,12 @@ Learn more at [Microsoft product NPS feedback and insights for your organization
 > [!NOTE]
 > If you're interested in joining our design sessions, send us an email at: prosight.microsoft.com
 
+### Microsoft 365 admin center video training
+
+We've updated our Microsoft 365 admin center video training. Go here to learn how to set up and manage Microsoft 365 for your business with our training videos.
+
+:::image type="content" source="../media/admin-library-vid-training.png" alt-text="Screenshot: Showing the admin center video training library":::
+
 ## July 2021
 
 ### Microsoft 365 admin center search
