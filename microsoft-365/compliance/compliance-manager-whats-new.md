@@ -29,6 +29,10 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 Users can now set alerts for changes in Compliance Manager that an organization wants to track. Using an easy setup wizard, you can build alert policies to create notifications when the following types of events happen: an improvement action score change, an improvement action assignment change, a testing or implementation status change in an improvement action, and a file upload or deletion in an improvement action's Documents tab. Learn more by visiting [Compliance Manager alerts and alert policies](compliance-manager-alert-policies.md).
 
+### Try recommended assessment templates for your organization
+
+Your organization can now get recommendations from Compliance Manager about which assessments may be most relevant to you, with a quick setup process to get up and running. To learn more about recommendations and how to try premium assessment templates before buying a license, see [Start a premium assessments trial](compliance-manager-setup.md#start-a-premium-assessments-trial).
+
 ## November 2021
 
 ### Zero Trust integration for the Data Protection Baseline template
