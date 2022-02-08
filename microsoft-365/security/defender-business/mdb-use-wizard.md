@@ -40,15 +40,28 @@ The wizard is designed to help you set up and configure Defender for Business qu
 3. **Onboard Windows devices**. You can onboard your organization's Windows devices to Defender for Business quickly, helping to protect those devices from day one. 
 
    - If you're already using Microsoft Endpoint Manager (which includes Microsoft Intune), you'll be asked if you want to use automatic onboarding, which sets up a connection between Endpoint Manager and Defender for Business, and then onboards all Windows devices that are enrolled in Endpoint Manager. 
-   - If you're not already using Endpoint Manager, you can use gradual device onboarding and choose a set of devices to onboard to Defender for Business. [Learn more about device onboarding](mdb-onboard-devices.md).
+   - If you're not already using Endpoint Manager, you can use gradual device onboarding and choose a set of devices to onboard to Defender for Business. 
+   
+   [Learn more about device onboarding](mdb-onboard-devices.md).
 
-4. **Configure your security settings**. Defender for Business includes default security policies that can be applied to your organization's devices. These default policies use recommended settings and are designed to provide strong protection for your devices. However, if you're already using Endpoint Manager, you can continue using that to manage your security policies. [Learn more about simplified configuration](mdb-simplified-configuration.md).
+4. **Configure your security settings**. Defender for Business includes default security policies that can be applied to your organization's devices. These default policies use recommended settings and are designed to provide strong protection for your devices. However, if you're already using Endpoint Manager, you can continue using that to manage your security policies. 
+
+   - [Learn more about simplified configuration](mdb-simplified-configuration.md).
+   - [Choose where to manage security policies and devices](mdb-configure-security-settings.md#choose-where-to-manage-security-policies-and-devices).
 
 ## What happens if I don't use the wizard?
 
 If you choose not to use the wizard, or if you exit the wizard before your setup process is complete, you can still complete your setup and configuration process on your own. See the following articles to finish your setup process:
 
-1. [Assign roles and permissions in Microsoft Defender for Business (preview)](mdb-roles-permissions.md)
+1. [Review the requirements](mdb-requirements.md).
+
+2. [Assign roles and permissions)](mdb-roles-permissions.md).
+
+3. [Set up email notifications](mdb-email-notifications.md).
+
+4. [Onboard devices](mdb-onboard-devices.md).
+
+5. [Configure your security policies](mdb-configure-security-settings.md)
 
 ## Next steps
 
