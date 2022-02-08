@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 01/26/2022
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -42,7 +42,7 @@ With Defender for Business (preview), you can help protect the devices and data 
 
 - **An easy-to-use security solution**. Defender for Business (preview) offers streamlined experiences that guide you to action with recommendations and insights into the security of your endpoints. No specialized knowledge is required, because Defender for Business (preview) offers wizard-driven configuration and default security policies that are designed to help protect your organization's devices from day one.
 
-- **Flexibility for your environment**. Defender for Business (preview) can work with your business environment, whether you are using the Microsoft Cloud, on-premises technology, or non-Microsoft productivity solutions. Defender for Business (preview) works with components that are built into Windows, and with apps for macOS, iOS, and Android devices.
+- **Flexibility for your environment**. Defender for Business (preview) can work with your business environment, whether you're using the Microsoft Cloud, on-premises technology, or non-Microsoft productivity solutions. Defender for Business (preview) works with components that are built into Windows, and with apps for macOS, iOS, and Android devices.
 
 - **Integration with Microsoft 365 Lighthouse**. If you're a Managed Service Provider (MSP) using [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), more capabilities are available. If your customers are using Microsoft 365 Business Premium together with Defender for Business (preview), you can view security incidents and alerts across customer tenants that are onboarded to Microsoft 365 Lighthouse.
 
