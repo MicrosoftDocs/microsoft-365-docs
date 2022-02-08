@@ -48,7 +48,7 @@ This feature is available only for creating [document understanding models](appl
 
 5. On the **Create a model** panel, type the name of the model, select the model type, and then select **Create**.
 
-6. Proceed to train your model or to configure your prebuilt model using the documents that you selected.
+6. Proceed to train your [document understanding model](apply-a-model.md) or to configure your [prebuilt model](prebuilt-models.md) using the files that you selected.
 
 7. When done, the **Add to library** panel opens.
 
@@ -59,3 +59,4 @@ This feature is available only for creating [document understanding models](appl
 9. On the model home page, in the **Where the model is applied on the site** section, you can see the libraries that have the model applied. To apply the model to other libraries on the site, select **Apply model**. 
 
     ![Screenshot of the model home page showing the Where the model is applied on the site section.](../media/content-understanding/local-model-home-page.png) 
+
