@@ -342,7 +342,7 @@ For more information, see [Changes to update channels for Microsoft 365 Apps](/D
 We've added some new Azure Active Directory admin roles to the <<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 - Hybrid identity admin role gives users permission to manage cloud provisioning and authentication services.
-- Network admin role lets users manage network locations and review network insights for Microsoft 365 Software as a Service apps.
+- Network admin role lets users manage network locations and review network insights for Microsoft 365 Software as a Service app.
 - Printer admin role grants permission to manage all aspects of printers and printer connections.
 - Printer technician is a subset of the Printer admin role where those users can register and unregister printers, and update printer status.
 To find out more about these roles, see [About admin roles](./add-users/about-admin-roles.md).
@@ -444,7 +444,7 @@ We've got two updates for Groups this month:
 
 ### Featured Feedback Fix: Improve "add user" reliability for licensing
 
-We received a lot of feedback from admins about the how hard it is to assign licenses when adding users. We've made the first update to this fix and we've migrated to a more reliable behind-the-scenes service to process those requests. And if something goes wrong, you'll now get an error message that lets you to try again.
+We received a lot of feedback from admins about how hard it is to assign licenses when adding users. We've made the first update to this fix and we've migrated to a more reliable behind-the-scenes service to process those requests. And if something goes wrong, you'll now get an error message that lets you try again.
 
 ![Add user confirmation page with the error.](../media/MAC-WN-ImprovedLicensing.png)
 
