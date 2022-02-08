@@ -42,7 +42,7 @@ You can set attack surface reduction rules for devices that are running any of t
 - Windows Server, [version 1803 (Semi-Annual Channel)](/windows-server/get-started/whats-new-in-windows-server-1803) or later
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
-- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
+- [Windows Server 2012 R2](/windows/what-s-new-for-windows-server-2012-r2)
 - Windows Server 2022
 
 To use the entire feature-set of attack surface reduction rules, you need:
@@ -92,15 +92,15 @@ You can specify individual files or folders (using folder paths or fully qualifi
 
 ASR rules support environment variables and wildcards. For information about using wildcards, see [Use wildcards in the file name and folder path or extension exclusion lists](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
 
-## Policy Conflict -
+## Policy Conflict
 
 1. If a conflicting policy is applied via MDM and GP, the setting applied from MDM will take precedence.
 
 2. Attack surface reduction rules for MEM-managed devices now support behavior for merger of settings from different policies, to create a superset of policy for each device. Only the settings that are not in conflict are merged, while those that are in conflict are not added to the superset of rules. Previously, if two policies included conflicts for a single setting, both policies were flagged as being in conflict, and no settings from either profile would be deployed. Attack surface reduction rule merge behavior is as follows:
    - Attack surface reduction rules from the following profiles are evaluated for each device to which the rules apply:
-     - Devices > Configuration policy > Endpoint protection profile > Microsoft Defender Exploit Guard > [Attack Surface Reduction](https://docs.microsoft.com/mem/intune/protect/endpoint-protection-windows-10.md#attack-surface-reduction-rules).
-     - Endpoint security > Attack surface reduction policy > [Attack surface reduction rules](https://docs.microsoft.com/mem/intune/protect/endpoint-security-asr-policy.md#devices-managed-by-intune).
-     - Endpoint security > Security baselines > Microsoft Defender ATP Baseline > [Attack Surface Reduction Rules](https://docs.microsoft.com/mem/intune/protect/security-baseline-settings-defender-atp.md#attack-surface-reduction-rules).
+     - Devices > Configuration policy > Endpoint protection profile > Microsoft Defender Exploit Guard > [Attack Surface Reduction](/mem/intune/protect/endpoint-protection-windows-10.md#attack-surface-reduction-rules).
+     - Endpoint security > Attack surface reduction policy > [Attack surface reduction rules](/mem/intune/protect/endpoint-security-asr-policy.md#devices-managed-by-intune).
+     - Endpoint security > Security baselines > Microsoft Defender ATP Baseline > [Attack Surface Reduction Rules](/mem/security-baseline-settings-defender-atp.md#attack-surface-reduction-rules).
    - Settings that do not have conflicts are added to a superset of policy for the device.
    - When two or more policies have conflicting settings, the conflicting settings are not added to the combined policy, while settings that don’t conflict are added to the superset policy that applies to a device.
    - Only the configurations for conflicting settings are held back.
