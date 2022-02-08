@@ -25,7 +25,7 @@ ms.collection:
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-Next-generation protection in Defender for Business (preview) includes robust antivirus and antimalware protection. Your default policies are designed to protect your devices and users without hindering productivity; however, you can also customize your policies to suit your business needs. And, if you're using Microsoft Endpoint Manager, you can use that to manage your security policies and settings.
+Next-generation protection in Defender for Business (preview) includes robust antivirus and antimalware protection. Your default policies are designed to protect your devices and users without hindering productivity; however, you can also customize your policies to suit your business needs. And, if you're using Microsoft Endpoint Manager, you can use that to manage your security policies.
 
 **This article describes**:
 

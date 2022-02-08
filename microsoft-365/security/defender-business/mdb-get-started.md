@@ -48,7 +48,7 @@ Take a moment to get acquainted with your Microsoft 365 Defender portal.
 
 ### Use the navigation bar
 
-Use the navigation bar on the left side of the screen to access your incidents, view reports, and manage your security policies and settings. The following table describes items you’ll see in your navigation bar.
+Use the navigation bar on the left side of the screen to access your incidents, view reports, and manage your security policies. The following table describes items you’ll see in your navigation bar.
 
 | Item | Description |
 |:---|:---|
@@ -62,7 +62,7 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 | **Endpoints** > **Device inventory** | Enables you to search for one or more devices that were onboarded to Microsoft Defender for Business (preview). |
 | **Endpoints** > **Vulnerability management** | Provides you with a dashboard, recommendations, remediation activities, a software inventory, and a list of potential weaknesses within your organization. |
 | **Endpoints** > **Tutorials** | Provides access to walkthroughs and simulations to help you learn more about how your threat protection features work. <br/><br/>Select the **Read the walkthrough** link before attempting to get the simulation file for each tutorial. Some simulations require Office apps, such as Microsoft Word, to read the walkthrough. |
-| **Endpoints** > **Device configuration** | Lists your security policies by operating system and by type. <br/><br/>To learn more about your security policies and settings, see [View or edit policies in Microsoft Defender for Business (preview)](mdb-view-edit-policies.md). |
+| **Endpoints** > **Device configuration** | Lists your security policies by operating system and by type. <br/><br/>To learn more about your security policies, see [View or edit policies in Microsoft Defender for Business (preview)](mdb-view-edit-policies.md). |
 | **Reports** | Lists your available security reports. These reports enable you to see your security trends, view details about threat detections and alerts, and learn more about your organization’s vulnerable devices. |
 | **Health** | Enables you to view your service health status and plan for upcoming changes. <br/>- Select **Service health** to view the health status of the Microsoft 365 services that are included in your organization’s subscription. <br/>- Select **Message center** to learn about planned changes and what to expect.  |
 | **Permissions & roles** | Enables you to assign permissions to the people in your organization who will be managing your security and viewing incidents and reports in the Microsoft 365 Defender portal. Also enables you to set up and manage device groups to onboard your organization’s devices and assign your threat protection policies.  |
