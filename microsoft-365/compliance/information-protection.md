@@ -17,27 +17,26 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 recommendations: false
-description: "Implement Microsoft Information Protection (MIP) to help you protect sensitive information wherever it lives or travels."
+description: "Implement Microsoft Information Protection (MIP) capabilities to help you protect sensitive information wherever it lives or travels."
 ---
 
 # Microsoft Information Protection in Microsoft 365
 
 >*[Licensing for Microsoft 365 Security & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Implement Microsoft Information Protection (MIP) to help you discover, classify, and protect sensitive information wherever it lives or travels.
+Implement capabilities from Microsoft Information Protection (MIP) to help you discover, classify, and protect sensitive information wherever it lives or travels.
 
 MIP capabilities are included with Microsoft 365 Compliance and give you the tools to [know your data](#know-your-data), [protect your data](#protect-your-data), and [prevent data loss](#prevent-data-loss).
 
 ![Image of how MIP helps you discover, classify, and protect sensitive data.](../media/powered-by-intelligent-platform.png)
 
+For prescriptive guidance to deploy a MIP solution for your organization, see [Deploy a Microsoft Information Protection solution](information-protection-solution.md).
+
 For information about governing your data, see [Microsoft Information Governance in Microsoft 365](manage-Information-governance.md).
 
 ## Know your data
 
-> [!NOTE]
-> For information about classifying and labeling data in Azure Purview, currently in preview, see [Automatically label your content in Azure Purview](/azure/purview/create-sensitivity-label).
-
-To understand your data landscape and identify important data across your hybrid environment, use the following capabilities:
+To understand your data landscape and identify sensitive data across your hybrid environment, use the following capabilities:
 
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|:--------------------|
@@ -51,16 +50,17 @@ To apply flexible protection actions that include encryption, access restriction
 
 |Capability|What problems does it solve?|Get started|
 |:------|:------------|---------------------|
-|[Sensitivity labels](sensitivity-labels.md)| A single solution across apps, services, and devices to label and protect your data as it travels inside and outside your organization. <p> Example scenarios: <p> [Manage sensitivity labels for Office apps](sensitivity-labels-office-apps.md) <p> [Encrypt documents and emails](encryption-sensitivity-labels.md) <p> [Apply and view labels in Power BI](/power-bi/admin/service-security-apply-data-sensitivity-labels) <p> For a comprehensive list of scenarios for sensitivity labels, see the Get started documentation.|[Get started with sensitivity labels](get-started-with-sensitivity-labels.md) |
-|[Azure Information Protection unified labeling client](/azure/information-protection/rms-client/aip-clientv2)| For Windows computers, extends sensitivity labels for additional features and functionality that includes labeling and protecting all file types from File Explorer and PowerShell <p> Example additional features: [Custom configurations for the Azure Information Protection unified labeling client](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure Information Protection unified labeling client administrator guide](/azure/information-protection/rms-client/clientv2-admin-guide)|
+|[Sensitivity labels](sensitivity-labels.md)| A single solution across apps, services, and devices to label and protect your data as it travels inside and outside your organization. <br /><br /> Example scenarios: <br />- [Manage sensitivity labels for Office apps](sensitivity-labels-office-apps.md) <br />- [Encrypt documents and emails](encryption-sensitivity-labels.md) <br />-  [Apply and view labels in Power BI](/power-bi/admin/service-security-apply-data-sensitivity-labels) <br /><br /> For a comprehensive list of scenarios for sensitivity labels, see the Get started documentation.|[Get started with sensitivity labels](get-started-with-sensitivity-labels.md) |
+|[Azure Information Protection unified labeling client](/azure/information-protection/rms-client/aip-clientv2)| For Windows computers, extends labeling to File Explorer and PowerShell, with additional features for Office apps if needed| [Azure Information Protection unified labeling client administrator guide](/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[Double Key Encryption](double-key-encryption.md)| Under all circumstances, only your organization can ever decrypt protected content or for regulatory requirements, you must hold encryption keys within a geographical boundary. | [Deploy Double Key Encryption](double-key-encryption.md#deploy-dke)|
-|[Office 365 Message Encryption (OME)](ome.md)| Encrypts email messages and attached documents that are sent to any user on any device, so only authorized recipients can read emailed information. <p> Example scenario: [Revoke email encrypted by Advanced Message Encryption](revoke-ome-encrypted-mail.md) | [Set up new Message Encryption capabilities](set-up-new-message-encryption-capabilities.md)|
+|[Office 365 Message Encryption (OME)](ome.md)| Encrypts email messages and attached documents that are sent to any user on any device, so only authorized recipients can read emailed information. <br /><br />  Example scenario: [Revoke email encrypted by Advanced Message Encryption](revoke-ome-encrypted-mail.md) | [Set up new Message Encryption capabilities](set-up-new-message-encryption-capabilities.md)|
 |[Service encryption with Customer Key](customer-key-overview.md) | Protects against viewing of data by unauthorized systems or personnel, and complements BitLocker disk encryption in Microsoft datacenters. | [Set up Customer Key for Office 365](customer-key-set-up.md)|
 |[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|Protects SharePoint lists and libraries so that when a user checks out a document, the downloaded file is protected so that only authorized people can view and use the file according to policies that you specify. | [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)|
 [Rights Management connector](/azure/information-protection/deploy-rms-connector) |Protection-only for existing on-premises deployments that use Exchange or SharePoint Server, or file servers that run Windows Server and File Classification Infrastructure (FCI). | [Steps to deploy the RMS connector](/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
 |[Azure Information Protection unified labeling scanner](/azure/information-protection/deploy-aip-scanner)| Discovers, labels, and protects sensitive information that resides in data stores that are on premises. | [Configuring and installing the Azure Information Protection unified labeling scanner](/azure/information-protection/deploy-aip-scanner-configure-install)|
-|[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)| Discovers, labels, and protects sensitive information that resides in data stores that are in the cloud. | [Discover, classify, label, and protect regulated and sensitive data stored in the cloud](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|[Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|Extends sensitivity labels to third-party apps and services. <p> Example scenario: [Set and get a sensitivity label (C++)](/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft Information Protection (MIP) SDK setup and configuration](/information-protection/develop/setup-configure-mip)|
+|[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)| Discovers, labels, and protects sensitive information that resides in data stores that are in the cloud. | [Discover, classify, label, and protect regulated and sensitive data stored in the cloud](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|[Azure Purview](/azure/purview/overview) |Identifies sensitive data and applies automatic labeling to content in Azure Purview assets. These include files in storage such as Azure Data Lake and Azure Files, and schematized data such as columns in Azure SQL DB, and Cosmos DB. |[Labeling in Azure Purview](/azure/purview/create-sensitivity-label) |
+|[Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk)|Extends sensitivity labels to third-party apps and services. <br /><br />  Example scenario: [Set and get a sensitivity label (C++)](/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft Information Protection (MIP) SDK setup and configuration](/information-protection/develop/setup-configure-mip)|
 
 
 ## Prevent data loss
@@ -78,4 +78,4 @@ To help prevent accidental oversharing of sensitive information, use the followi
 
 ## Licensing requirements
 
-License requirements for MIP depend on the scenarios and features you use, rather than set licensing requirements for each capability listed on this page. To understand your licensing requirements and options for MIP, see the [Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) section from the Microsoft 365 licensing documentation, and download the [related PDF document](https://go.microsoft.com/fwlink/?linkid=2139145)for feature-level licensing requirements.
+License requirements for MIP depend on the scenarios and features you use, rather than set licensing requirements for each capability listed on this page. To understand your licensing requirements and options for MIP, see the **Information Protection** sections from [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) and the related [PDF download](https://go.microsoft.com/fwlink/?linkid=2139145) for feature-level licensing requirements.

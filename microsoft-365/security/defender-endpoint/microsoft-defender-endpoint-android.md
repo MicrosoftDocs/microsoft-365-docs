@@ -24,7 +24,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -47,8 +48,8 @@ This topic describes how to install, configure, update, and use Defender for End
 - **For Administrators**
    - Access to the Microsoft 365 Defender portal.
    - Access [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) to
-        - Deploy the app to enrolled user groups in your organization.
-        - Configure Microsoft Defender for Endpoint risk signals in app protection policy.
+       - Deploy the app to enrolled user groups in your organization.
+       - Configure Microsoft Defender for Endpoint risk signals in app protection policy.
   
     > [!NOTE]
     > - Microsoft Defender for Endpoint now extends protection to an organization’s data within a managed application (MAM) for devices that are not enrolled using mobile device management (MDM), but are using Intune to manage mobile applications. It also extends this support to customers who use other enterprise mobility management solutions, while still using Intune for [mobile application management (MAM)](/mem/intune/apps/mam-faq).
@@ -61,7 +62,7 @@ This topic describes how to install, configure, update, and use Defender for End
 
 ### System Requirements
 
-- Mobile phones running Android 6.0 and above. **Tablets and other mobile devices running Android are not currently supported.**
+- Mobile phones running Android 6.0 and above. **Mobile phones running Android go, tablets, and other mobile devices running Android are not currently supported.**
 - Intune Company Portal app is downloaded from [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) and installed. Device enrollment is required for Intune device compliance policies to be enforced.
 
 ### Installation instructions

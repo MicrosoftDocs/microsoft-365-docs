@@ -27,7 +27,7 @@ ms.technology: m365d
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-[Microsoft Secure Score](microsoft-secure-score.md) is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](overview-security-center.md).
+[Microsoft Secure Score](microsoft-secure-score.md) is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](microsoft-365-defender.md#the-microsoft-365-defender-portal).
 
 ## Gain insights into activity that has affected your score
 
@@ -55,30 +55,17 @@ In the **Metrics & trends** tab, there are several graphs and charts to give you
 
 ### Compare your score to organizations like yours
 
-There are two places to see how your score compares to organizations that are similar to you. In both charts, you can select **Manage comparisons** to view and edit your organization's information. You can also create a custom comparison based on industry, organization size, licenses, and regions.
+There are two places to see how your score compares to organizations that are similar to yours.
 
 #### Comparison bar chart
 
-The comparison bar chart is the **Overview** tab. Hover over the chart to view the score and score opportunity. The comparison data is anonymized so we don’t know exactly which others tenants are in the mix.
+The comparison bar chart is available on the **Overview** tab. Hover over the chart to view the score and score opportunity. 
 
-![Bar graph of similar organization's scores.](../../media/secure-score/secure-score-comparison-bar.png)
+**Organizations like yours** is an average score of other tenants in same region (provided we have at least five or more tenants to compare) with a similar organization size to yours.
 
-- **Organizations like yours**: an average score of other tenants (provided we have at least five or more tenants to compare) that qualify with the following criteria:
-    1. Same industry
-    2. Same organization size
-    3. All regions
-    4. Microsoft products used are 80% similar
-    5. Opportunity (max score that can be achieved by current license) within a 20% range from your tenant
+The comparison data is anonymized so we don’t know exactly which others tenants are in the mix.
 
-- **Custom Comparison**: needs to be set up by selecting **Manage Comparison** based on the following criteria:
-    1. Selected industry(s)
-    2. Selected organization size(s)
-    3. Selected region(s)
-    4. Selected license(s)
-    5. Microsoft products used are 80% similar
-    6. Opportunity (max score that can be achieved by current license) within a 20% range from your tenant
-
-If you've made a custom selection but the results have less than five other tenants that we can compare against, you'll see “Not available due to limited data”.
+![Bar graph of similar organization's scores.](../../media/secure-score/secure-score-comparison-screenshot.png)
 
 #### Comparison trend
 

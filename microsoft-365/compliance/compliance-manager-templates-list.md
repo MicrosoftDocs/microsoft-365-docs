@@ -9,7 +9,10 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -31,7 +34,9 @@ Templates are added to Compliance Manager as new laws and regulations are enacte
 
 ## List of templates and where to find them
 
-Below is the complete list of templates in Compliance Manager. The links in the template names below take you to related documentation about that standard, regulation, or law.
+Below is the complete list of templates in Compliance Manager. Links in the template names below take you to related documentation where available about that standard, regulation, or law.
+
+You can also select individual templates in Compliance Manager to view more information about them, including a description of the regulation and properties of the template. Read the **About** section for a summary.
 
 ### Where to find your templates
 
@@ -48,6 +53,21 @@ One or more of these templates will be available based on your licensing agreeme
 
 > [!NOTE]
 > For US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers: the Cybersecurity Maturity Model Certification (CMMC) Levels 1 through 5 templates are included, in addition to the templates listed above.
+
+## Preview templates
+
+These templates are currently available for preview. Creating assessments using these templates will not count toward your total of licensed templates used.
+
+- ISO 27001:2013 for Azure (Preview)
+- ISO 27001:2013 for Dynamics 365 (Preview)
+- FedRAMP Moderate for Dynamics 365 (Preview)
+- FedRAMP Moderate for Azure (Preview)
+- FedRAMP High for Azure (Preview)
+- FedRAMP High for Dynamics 365 (Preview)
+- SOC 2 for Azure (Preview)
+- SOC 2 for Dynamics 365 (Preview)
+- ISO 27018:2019 for Azure (Preview)
+- ISO 27018:2019 for Dynamics 365 (Preview)
 
 ## Premium templates
 
@@ -163,6 +183,7 @@ These templates may be purchased by your organization.
 - California - Privacy Rights Act (CPRA) (Microsoft 365)
 - California - SB-327 Information Privacy: Connected Devices (Microsoft 365)
 - California Consumer Credit Reporting Agencies Act (Microsoft 365)
+- Colorado Privacy Act (CPA) (Microsoft 365)
 - [California Consumer Privacy Act (CCPA)](/compliance/regulatory/offering-ccpa) (Microsoft 365)
 - Colorado Protections for Consumer Data Privacy (Microsoft 365)
 - Colorado Revised Statutes, Section 6-1-716, Notice of Security Breach (Microsoft 365)
@@ -226,6 +247,7 @@ These templates may be purchased by your organization.
 - Utah Electronic Information or Data Privacy (Microsoft 365)
 - Vermont - Act on Data Privacy and Consumer Protection (Microsoft 365)
 - Virginia Breach of Personal Information Act (Microsoft 365)
+- Virginia Consumer Data Privacy Act (CDPA) (Microsoft 365)
 - Washington DC - Consumer Security Breach Notification Standard (Microsoft 365)
 - West Virginia - Breach of Security of Consumer Information (Microsoft 365)
 - Wisconsin Security Breach Notification (Microsoft 365)
@@ -236,6 +258,9 @@ These templates may be purchased by your organization.
 
 - Asia Pacific Economic Cooperation (APEC) Privacy Framework
 - Australia - ASD Essential 8 (Microsoft 365)
+- Australia - ASD Essential 8 Maturity Level 1
+- Australia - ASD Essential 8 Maturity Level 2
+- Australia - ASD Essential 8 Maturity Level 3
 - Australia - National Archives Act
 - Australia - Public Records Office Victoria Recordkeeping Standards (Microsoft 365)
 - Australia - Spam Act 2003 (Microsoft 365)
@@ -318,6 +343,7 @@ These templates may be purchased by your organization.
 - Dubai - Health Data Protection Regulation (Microsoft 365)
 - Dubai Consumer Protection Regulations (Telecommunications Regulatory Authority)(Microsoft 365)
 - Dubai ISR (Microsoft 365)
+- Egypt - Data Protection Law (Microsoft 365)
 - Estonia - Personal Data Protection Act (Microsoft 365)
 - Estonia - The system of security measures for information systems (Microsoft 365)
 - EU - Directive 2006/24/EC (Microsoft 365)

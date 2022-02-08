@@ -9,8 +9,11 @@ audience: Admin
 ms.topic: article
 ms.custom: admindeeplinkMAC
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.localizationpriority: medium
+ms.collection: 
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid: 
 - MOE150
 - MET150
@@ -21,11 +24,11 @@ description: "Understand how to extend assessment templates in Microsoft Complia
 
 Compliance Manager offers the option to add your own controls and improvement actions to an existing template. This process is called extending a template.
 
-To extend a template, you will use special instructions for modifying template data, depending on whether you’re extending Microsoft 365 assessment templates or universal assessment templates.
+To extend a template, you will use special instructions for modifying template data, depending on whether you’re extending Microsoft assessment templates or universal assessment templates.
 
-## Extend Microsoft 365 assessment templates
+## Extend Microsoft assessment templates
 
-When you extend a Microsoft 365 template, it can still receive updates released by Microsoft, which may happen when there are changes to the related regulation or product (see [Accept updates to assessments](compliance-manager-assessments.md#accept-updates-to-assessments)).
+When you extend a Microsoft template, such as one created for use with Microsoft 365, it can still receive updates released by Microsoft. Updates may happen when there are changes to the related regulation or product (see [Accept updates to assessments](compliance-manager-assessments.md#accept-updates-to-assessments)).
 
 ### Prepare template data and create extension
 

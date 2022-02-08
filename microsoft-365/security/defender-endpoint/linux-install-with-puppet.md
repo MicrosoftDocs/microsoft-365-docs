@@ -2,7 +2,7 @@
 title: Deploy Microsoft Defender for Endpoint on Linux with Puppet
 ms.reviewer: 
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux using Puppet.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -24,7 +24,7 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -89,7 +89,7 @@ tree install_mdatp
 ```Output
 install_mdatp
 ├── files
-│   └── mdatp_onboard.json
+│   └── mdatp_onboard.json
 └── manifests
     └── init.pp
 ```
@@ -110,12 +110,12 @@ Note your distribution and version and identify the closest entry for it under `
 In the below commands, replace *[distro]* and *[version]* with the information you've identified:
 
 > [!NOTE]
-> In case of RedHat, Oracle EL, and CentOS 8, replace *[distro]* with 'rhel'.
+> In case of RedHat, Oracle Linux, Amazon Linux 2, and CentOS 8, replace *[distro]* with 'rhel'.
 
 ```puppet
 # Puppet manifest to install Microsoft Defender for Endpoint on Linux.
 # @param channel The release channel based on your environment, insider-fast or prod.
-# @param distro The Linux distribution in lowercase. In case of RedHat, Oracle EL, and CentOS 8, the distro variable should be 'rhel'.
+# @param distro The Linux distribution in lowercase. In case of RedHat, Oracle Linux, Amazon Linux 2, and CentOS 8, the distro variable should be 'rhel'.
 # @param version The Linux distribution release number, e.g. 7.4.
 
 class install_mdatp (

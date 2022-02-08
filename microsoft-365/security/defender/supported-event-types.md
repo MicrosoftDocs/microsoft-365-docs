@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender event types supported in Event Streaming API
-description: Learn which hunting event types (tables) are supported by the streaming API
+title: Microsoft 365 Defender streaming event types supported in Event Streaming API
+description: Learn which streaming event types (tables) are supported by the streaming API
 keywords: raw data export, Streaming API, API, Event hubs, Azure storage, storage account, Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,7 +18,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Supported Microsoft 365 Defender event types in event streaming API
+# Supported Microsoft 365 Defender streaming event types in event streaming API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,11 +33,13 @@ The Event Streaming API is constantly being expanded to support more event types
 
 ## Hunting tables support status in Event Streaming API
 
+The following table only includes the list of the tables supported in the streaming API, and is not inclusive of all AH schema. For a full list of the API see, [Learn the schema tables](advanced-hunting-schema-tables.md#learn-the-schema-tables).
+
+
 | Table name | Status |
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | GA |
 | **[AlertInfo](advanced-hunting-alertinfo-table.md)** | GA  |
-| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Not yet supported |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** |GA |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** |GA |
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | GA |
@@ -52,7 +54,5 @@ The Event Streaming API is constantly being expanded to support more event types
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | GA |
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | GA |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | GA |
-| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | Not yet supported |
-| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Not yet supported |
-| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Not yet supported |
+
 
