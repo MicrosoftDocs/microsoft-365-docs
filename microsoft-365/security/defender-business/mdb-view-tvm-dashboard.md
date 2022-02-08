@@ -35,3 +35,13 @@ Microsoft Defender for Business (preview) includes a Threat & Vulnerability Mana
 Want to see how it works? Watch this video:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4r1nv]
+
+To learn more about Threat & Vulnerability Management, see [Threat and vulnerability management in Microsoft Defender for Endpoint](../defender-endpoint/next-gen-threat-and-vuln-mgt.md).
+
+## Next steps
+
+- [Tutorials and simulations in Microsoft Defender for Business (preview)](mdb-tutorials.md)
+
+- [Onboard devices to Microsoft Defender for Business (preview)](mdb-onboard-devices.md)
+
+- [View or edit policies in Microsoft Defender for Business (preview)](mdb-view-edit-create-policies.md)
