@@ -1,6 +1,6 @@
 ---
-title: New Microsoft Edge
-description:  Explains how the new Microsoft Edge browser is deployed and updated
+title: Microsoft Edge
+description:  Explains how the Microsoft Edge browser is deployed and updated
 keywords: browser, Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: tiaraquan
@@ -13,23 +13,22 @@ ms.collection: M365-modern-desktop
 ---
 
 
-# New Microsoft Edge app
+# Microsoft Edge
 
-The new [Microsoft Edge browser](https://www.microsoft.com/edge) provides world-class performance with more privacy, more productivity, and more value while you browse. Microsoft Managed Desktop is offering a public preview of deployment of the new Microsoft Edge browser in your environment.
+[Microsoft Edge](https://www.microsoft.com/edge) provides world-class performance and value with:
 
-## Initial deployment
+- More privacy and protection from external threats.
+- More productivity quick access to Office apps, files, sites, and built-in Microsoft Search.
+- Seamless experience by syncing across your devices with cross-platform support and profiles.
 
-To migrate your Microsoft Managed Desktop devices to the new Microsoft Edge browser, file an IT Support Ticket through the Microsoft Managed Desktop Portal.
-
-We'll deploy the Microsoft Edge Stable channel to the Test Group when you file the ticket. Then, we deploy it in each subsequent deployment group every 24 hours. To pause the deployment, file another ticket asking Operations to hold.
-
-The [Beta Channel](/deployedge/microsoft-edge-channels#beta-channel) is also available upon request for representative validation within your organization. Microsoft Managed Desktop will deploy the application as required to the Test and First Groups so that all of those users have the Beta Channel in addition to the Stable Channel. For any other users who need access to the Beta Channel, add them to the **Modern Workplace - Edge Beta Users** group and have them install it from the Company Portal
+> [!IMPORTANT]
+> The Internet Explorer 11 desktop application will be retired and go out of support on June 15, 2022 (for a list of what's in scope, see the [FAQ](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/internet-explorer-11-desktop-app-retirement-faq/ba-p/2366549). The same IE11 apps and sites you use today can open in Microsoft Edge with Internet Explorer mode. [Learn more here](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/).
 
 ## Updates to Microsoft Edge
 
-Microsoft Managed Desktop deploys the [Stable channel](/deployedge/microsoft-edge-channels#stable-channel) of Microsoft Edge, which is automatically updated about every six weeks. Updates on the Stable channel are rolled out [progressively](/deployedge/microsoft-edge-update-progressive-rollout) by the Microsoft Edge product group to ensure the best experience for customers.
+Microsoft Managed Desktop deploys the [Extended Stable channel](/deployedge/microsoft-edge-channels#extended-stable-channel) of Microsoft Edge, which is automatically updated every eight weeks. Updates on the Extended Stable channel are rolled out [progressively](/deployedge/microsoft-edge-update-progressive-rollout) by the Microsoft Edge product group to ensure the best experience for customers.
 
-The [Beta Channel](/deployedge/microsoft-edge-channels#beta-channel) is deployed to devices in both the Test and First groups for representative validation within the organization. This channel is fully supported and automatically updated with new features approximately every six weeks.
+The [Beta Channel](/deployedge/microsoft-edge-channels#beta-channel) is deployed to devices in the Test group for representative validation within the organization. This channel is fully supported and automatically updated with new features approximately every four weeks.
 
 > [!IMPORTANT]
 > To ensure that Microsoft Edge updates correctly, don't modify the Microsoft Edge [update policies](/deployedge/microsoft-edge-update-policies).
