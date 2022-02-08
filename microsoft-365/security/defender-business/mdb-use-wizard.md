@@ -55,17 +55,7 @@ The wizard is designed to help you set up and configure Defender for Business qu
 
 ## What happens if I don't use the wizard?
 
-If you choose not to use the wizard, or if you exit the wizard before your setup process is complete, you can still complete your setup and configuration process on your own. See the following articles to finish your setup process:
-
-1. [Review the requirements](mdb-requirements.md).
-
-2. [Assign roles and permissions](mdb-roles-permissions.md).
-
-3. [Set up email notifications](mdb-email-notifications.md).
-
-4. [Onboard devices](mdb-onboard-devices.md).
-
-5. [Configure your security policies](mdb-configure-security-settings.md).
+If you choose not to use the wizard, or if you exit the wizard before your setup process is complete, you can still complete your setup and configuration process on your own. See [Set up and configure Microsoft Defender for Business (preview)](mdb-setup-configuration.md) to walk through the steps.
 
 ## Next steps
 
