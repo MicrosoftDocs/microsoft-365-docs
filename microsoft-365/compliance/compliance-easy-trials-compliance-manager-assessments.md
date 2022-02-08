@@ -47,7 +47,7 @@ For more information about how to use and manage Compliance Manager templates, s
 
 ## Permissions
 
-Any user in your organization with permissions to access Compliance Manager can sign up for the assessment template trial. Learn more about the [permissions and roles required for Compliance Manager](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
+Any user in your organization with permissions to access Compliance Manager can sign up for the premium assessments trial. Learn more about the [permissions and roles required for Compliance Manager](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
 ## During your trial
 
