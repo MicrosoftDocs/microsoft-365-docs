@@ -38,6 +38,7 @@ After you apply system tags or custom tags to users, you can use those tags as f
 - [Threat Explorer and real-time detections](threat-explorer.md)
 - [Email entity page](mdo-email-entity-page.md#other-innovations)
 - [Threat protection status report](view-email-security-reports.md#threat-protection-status-report)
+- [Attack simulation](attack-simulation-training.md#target-users)
 - [Campaign Views](campaigns.md)
 - [Admin and user submissions](admin-submission.md)
 - [Quarantine](quarantine.md)
