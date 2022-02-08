@@ -52,11 +52,13 @@ And if you'd like to know what's new with other Microsoft cloud services:
 
 You can now view NPS survey data and insights from your users in the Microsoft 365 admin center. With this new feature you can obtain actionable insights from NPS survey responses from your end users, and achieve higher end user delight by addressing any issues and concerns.
 
-In the admin center, go to the **Health** > **Product feedback** > **NPS survey insights**.
+In the admin center, go to **Health** > **Product feedback** > **NPS survey insights**.
 
 We've identified the common themes from user feedback. Then we used machine learning models techniques to train the data sets and automatically organize the feedback into Top Topics.
 
 There are nine topics available. Look out for more topics in future updates.
+
+:::image type="content" source="../media/feedback-nine-topics.png" alt-text="Screenshot: Showning the 9 new feedback topics":::
 
 The NPS survey insight dashboard also contains these three new reports and pivots:
 
