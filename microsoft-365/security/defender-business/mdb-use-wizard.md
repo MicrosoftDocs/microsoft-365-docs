@@ -59,7 +59,7 @@ If you choose not to use the wizard, or if you exit the wizard before your setup
 
 1. [Review the requirements](mdb-requirements.md).
 
-2. [Assign roles and permissions)](mdb-roles-permissions.md).
+2. [Assign roles and permissions](mdb-roles-permissions.md).
 
 3. [Set up email notifications](mdb-email-notifications.md).
 
