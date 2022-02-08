@@ -11,12 +11,13 @@ metadata:
   audience: ITPro
   author: martyav
   ms.author: dansimp
-  ms.reviewer:
+  ms.reviewer: oogunrinde, sugamar 
   manager: dansimp
   ms.custom: asr
   ms.topic: article
   ms.technology: mde
-  ms.collection: M365-security-compliance
+  ms.collection: m365initiative-m365-defender
+  ms.date: 1/18/2022
 
 title: Attack surface reduction frequently asked questions (FAQ)
 summary: |
@@ -108,22 +109,22 @@ sections:
           [public documentation](/microsoft-365/security/defender-endpoint/attack-surface-reduction).
            spanning across multiple pillars of protection, like Office, Credentials, Scripts, E-Mail, etc. All ASR rules, except for Block persistence through WMI event subscription, are supported on Windows 1709 and later:
 
-          * [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers)
-          * [Block executable content from email client and webmail](attack-surface-reduction-rules.md#block-executable-content-from-email-client-and-webmail)
-          * [Block all Office applications from creating child processes](attack-surface-reduction-rules.md#block-all-office-applications-from-creating-child-processes)
-          * [Block Office applications from creating executable content](attack-surface-reduction-rules.md#block-office-applications-from-creating-executable-content)
-          * [Block Office applications from injecting code into other processes](attack-surface-reduction-rules.md#block-office-applications-from-injecting-code-into-other-processes)
-          * [Block JavaScript or VBScript from launching downloaded executable content](attack-surface-reduction-rules.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)
-          * [Block execution of potentially obfuscated scripts](attack-surface-reduction-rules.md#block-execution-of-potentially-obfuscated-scripts)
-          * [Block Win32 API calls from Office macro](attack-surface-reduction-rules.md#block-win32-api-calls-from-office-macros)
-          * [Use advanced protection against ransomware](attack-surface-reduction-rules.md#use-advanced-protection-against-ransomware)
-          * [Block credential stealing from the Windows local security authority subsystem](attack-surface-reduction-rules.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) (lsass.exe)
-          * [Block process creations originating from PSExec and WMI commands](attack-surface-reduction-rules.md#block-process-creations-originating-from-psexec-and-wmi-commands)
-          * [Block untrusted and unsigned processes that run from USB](attack-surface-reduction-rules.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
-          * [Block executable files from running unless they meet a prevalence, age, or trusted list criteria](attack-surface-reduction-rules.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
-          * [Block Office communication applications from creating child processes](attack-surface-reduction-rules.md#block-office-communication-application-from-creating-child-processes)
-          * [Block Adobe Reader from creating child processes](attack-surface-reduction-rules.md#block-adobe-reader-from-creating-child-processes)
-          * [Block persistence through WMI event subscription](attack-surface-reduction-rules.md#block-persistence-through-wmi-event-subscription)
+          * [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers)
+          * [Block executable content from email client and webmail](attack-surface-reduction-rules-reference.md#block-executable-content-from-email-client-and-webmail)
+          * [Block all Office applications from creating child processes](attack-surface-reduction-rules-reference.md#block-all-office-applications-from-creating-child-processes)
+          * [Block Office applications from creating executable content](attack-surface-reduction-rules-reference.md#block-office-applications-from-creating-executable-content)
+          * [Block Office applications from injecting code into other processes](attack-surface-reduction-rules-reference.md#block-office-applications-from-injecting-code-into-other-processes)
+          * [Block JavaScript or VBScript from launching downloaded executable content](attack-surface-reduction-rules-reference.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)
+          * [Block execution of potentially obfuscated scripts](attack-surface-reduction-rules-reference.md#block-execution-of-potentially-obfuscated-scripts)
+          * [Block Win32 API calls from Office macro](attack-surface-reduction-rules-reference.md#block-win32-api-calls-from-office-macros)
+          * [Use advanced protection against ransomware](attack-surface-reduction-rules-reference.md#use-advanced-protection-against-ransomware)
+          * [Block credential stealing from the Windows local security authority subsystem](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) (lsass.exe)
+          * [Block process creations originating from PSExec and WMI commands](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)
+          * [Block untrusted and unsigned processes that run from USB](attack-surface-reduction-rules-reference.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
+          * [Block executable files from running unless they meet a prevalence, age, or trusted list criteria](attack-surface-reduction-rules-reference.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
+          * [Block Office communication applications from creating child processes](attack-surface-reduction-rules-reference.md#block-office-communication-application-from-creating-child-processes)
+          * [Block Adobe Reader from creating child processes](attack-surface-reduction-rules-reference.md#block-adobe-reader-from-creating-child-processes)
+          * [Block persistence through WMI event subscription](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription)
 
       - question: |
           What are some good recommendations for getting started with ASR?
@@ -164,7 +165,7 @@ sections:
       - question: |
           I have an E5 license and enabled some ASR rules in conjunction with Defender for Endpoint. Is it possible for an ASR event to not show up at all in Defender for Endpoint's event timeline?
         answer: |
-          Whenever a notification is triggered locally by an ASR rule, a report on the event is also sent to the Defender for Endpoint portal. If you're having trouble finding the event, you can filter the events timeline using the search box. You can also view ASR events by visiting **Go to attack surface management**, from the **Configuration management** icon in the Security Center taskbar. The attack surface management page includes a tab for report detections, which includes a full list of ASR rule events reported to Defender for Endpoint.
+          Whenever a notification is triggered locally by an ASR rule, a report on the event is also sent to the Defender for Endpoint portal. If you're having trouble finding the event, you can filter the events timeline using the search box. You can also view ASR events by visiting **Go to attack surface management**, from the **Configuration management** icon in the Defender for Cloud taskbar. The attack surface management page includes a tab for report detections, which includes a full list of ASR rule events reported to Defender for Endpoint.
 
       - question: |
           I applied a rule using GPO. Now when I try to check the indexing options for the rule in Microsoft Outlook, I get a message stating, 'Access denied'.
@@ -198,12 +199,12 @@ sections:
           Is it a good idea to enable the rule, 'Block credential stealing from the Windows local security authority subsystem (lsass.exe)', alongside LSA protection?
         answer: |
           Enabling this rule will not provide additional protection if you have [LSA protection](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) enabled as well. Both the rule and LSA protection work in much the same way, so having both running at the same time would be redundant. However, sometimes you may not be able to enable LSA protection. In those cases, you can enable this rule to provide equivalent protection against malware that target lsass.exe.
-
+ 
       - question: |
           See also
         answer: |
           * [Attack surface reduction overview](attack-surface-reduction.md)
           * [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
-          * [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
+          * [Attack surface reduction rules deployment Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md)
           * [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
           * [Compatibility of Microsoft Defender Antivirus with other antivirus/antimalware](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

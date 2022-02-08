@@ -16,7 +16,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365initiative-m365-defender
+  - m365solution-m365dsecops
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -91,7 +91,7 @@ For example, in the anti-phishing scenario example, the SOC teams could have mad
 |:-------|:-----|:-------|:-------|:-------|:-----|:-------|:-------|
 | Threat Intelligence and Analytics team | Data sources are properly feeding the threat intelligence engines. | Threat Intelligence Analyst/Engineer | Data feed requirements established, threat intelligence triggers from approved sources | Microsoft Defender for Identity, Microsoft Defender for Endpoint | Threat Intelligence team did not use automation script to link Microsoft 365 Defender API with threat intel engines | Add Microsoft 365 Defender as data sources to threat engines <BR> <BR> Update use case run book | N |
 | Monitoring team | Data sources are properly feeding the monitoring dashboards | Tier 1,2 SOC Analyst–Monitoring & Alerts | Workflow for reporting Security & Compliance Center Secure Score | [Alerts in Security & Compliance Center](/microsoft-365/security/office-365-security/alerts)  <br><br> Secure Score monitoring	| No mechanism for SOC analysts to report successful new phishing variant detection to improve Secure Score <br><br> [Reporting in Security & Compliance Center](/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)| Add a process for tracking Secure Score improvement to Reporting workflows | N | 
-| Engineering and SecOps Team | Change control updates are made in the SOC team runbooks | Tier 2 SOC Engineer | Change Control notification procedure for SOC team runbooks | Approved changes to security devices | Changes to Microsoft 365 Defender connectivity to SOC security technology requires approval | Add Microsoft Cloud App Security, Defender for Identity, Defender for Endpoint, Security & Compliance Center to SOC runbooks | Y |
+| Engineering and SecOps Team | Change control updates are made in the SOC team runbooks | Tier 2 SOC Engineer | Change Control notification procedure for SOC team runbooks | Approved changes to security devices | Changes to Microsoft 365 Defender connectivity to SOC security technology requires approval | Add Microsoft Defender for Cloud Apps, Defender for Identity, Defender for Endpoint, Security & Compliance Center to SOC runbooks | Y |
 |||||||||
 
 Additionally, the SOC teams could have made the discoveries outlined in the table below in regard to the threat and vulnerability management scenario outlined above:
@@ -144,4 +144,3 @@ After executing the Preparation phase, organizations should invoke the remaining
 ## Next step
 
 [Step 6. Identify SOC maintenance tasks](integrate-microsoft-365-defender-secops-tasks.md)
-

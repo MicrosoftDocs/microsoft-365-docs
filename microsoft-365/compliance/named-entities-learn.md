@@ -28,7 +28,7 @@ description: "Learn how named entities help you detect sensitive items containin
 - [Data loss prevention policies (DLP)](dlp-learn-about-dlp.md) 
 - [Sensitivity labels](sensitivity-labels.md)
 - [Insider risk management](insider-risk-management-solution-overview.md)
-- [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)
 
 DLP makes special use of named entities in *enhanced policy templates*, which are pre-configured DLP policies that you can customize for your organizations needs. You can also [create your own DLP policies](create-test-tune-dlp-policy.md) from a [blank template](create-a-dlp-policy-from-a-template.md) 
  and use a named entity SIT as a condition.

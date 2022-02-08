@@ -1,6 +1,10 @@
 - name: Microsoft 365 admin center help
   href: index.yml
   items: 
+    - name: Top 20 admin help articles
+      href: top-m365-admin-articles.yml
+    - name: Admin training video library
+      href: admin-video-library.yml
     - name: Get started
       items: 
         - name: Sign up
@@ -15,6 +19,8 @@
              href: ../business/sign-up.md
            - name: Set up Microsoft 365 Business Premium with the setup wizard
              href: ../business/set-up.md
+           - name: Microsoft 365 Business Premium (video)
+             href: admin-overview/what-is-microsoft-365.md
         - name: Sign up for Microsoft 365 Business Standard
           items:
            - name: Sign up for Microsoft 365 Business Standard
@@ -29,16 +35,16 @@
              href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
            - name: Migrate data to my Microsoft 365 Business Standard subscription
              href: ../admin/simplified-signup/migrate-data-business-standard.md
-        - name: Set up your Microsoft 365 for business organization
+        - name: Sign up Microsoft Apps for business
+          items:
+           - name: Sign up for Microsoft 365 Apps for business
+             href: setup/signup--apps-business.md
+           - name: Set up for Microsoft 365 Apps for business
+             href: setup/setup-apps-for-business.md
+        - name: Set up Microsoft 365 Business Basic
           items:
            - name: Microsoft 365 Business Basic
              href: setup/setup-business-basic.md
-           - name: Microsoft 365 Business Standard
-             href: setup/setup-business-standard.md
-           - name: Microsoft 365 Business Premium
-             href: setup/business-set-up.md
-           - name: Microsoft 365 Apps for business
-             href: setup/setup-apps-for-business.md
         - name: Explore the Setup page and wizard
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: Secure Windows 10 computers
@@ -51,6 +57,12 @@
           href: setup/set-up-windows-devices.md
         - name: Set up mobile devices
           href: setup/set-up-mobile-devices.md
+        - name: Set up Outlook for Microsoft 365 for business email (video)
+          href: setup/setup-outlook.md
+        - name: Move files to OneDrive (video)
+          href: setup/files-to-onedrive.md
+        - name: Move files to SharePoint (video)
+          href: setup/files-to-sharepoint.md
         - name: Migrate your data to Microsoft 365
           href: setup/migrate-email-and-contacts-admin.md
         - name: Roll out Teams
@@ -63,8 +75,6 @@
           href: setup/customize-sign-in-page.md
         - name: Customize your organization theme
           href: setup/customize-your-organization-theme.md  
-        - name: Learn about Office 365 Germany
-          href: admin-overview/learn-about-office-365-germany.md
         - name: Access on-premises users and resources
           items:
             - name: Synchronize domain users to Microsoft 365
@@ -76,7 +86,7 @@
     - name: Overview of the Microsoft 365 admin center
       items:
         - name: Admin center overview
-          href: ../business-video/admin-center-overview.md
+          href: admin-overview/admin-center-overview.md
         - name: About admin roles
           href: add-users/about-admin-roles.md
         - name: Admin mobile app
@@ -316,7 +326,7 @@
              href: manage/servicenow-overview.md
            - name: Configure basic authentication
              href: manage/servicenow-basic-authentication.md
-           - name: Configure with AAD OAuth Token
+           - name: Configure with Azure AD Auth Token
              href: manage/servicenow-aad-oauth-token.md
            - name: Service health incidents and recommended solutions only
              href: manage/servicenow-service-health-incidents-solutions-only.md
@@ -433,14 +443,14 @@
         - name: Share calendars with guest users
           href: manage/share-calendars-with-external-users.md
         - name: Create a Team with guest users
-          href: ../business-video/team-with-guests.md
+          href: https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f
         - name: Schedule a Teams meeting with guest users
-          href: ../business-video/schedule-guest-meeting.md
+          href: https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5
         - name: Join a Teams meeting with guest users
-          href: ../business-video/join-guest-meeting.md
+          href: https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508
     - name: Troubleshoot
       href: /office/troubleshoot/
     - name: Contact support
-      href: ../business-video/get-help-support.md
+      href: get-help-support.md
     - name: Navigation guide
       href: ../microsoft-365-docs-navigation-guide.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json

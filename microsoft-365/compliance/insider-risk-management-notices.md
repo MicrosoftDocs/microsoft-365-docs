@@ -53,7 +53,7 @@ To create a new insider risk management notice template, you'll use the notice c
 
 Complete the following steps to create a new insider risk management notice template:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to **Insider risk management** and select the **Notice templates** tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Notice templates** tab.
 2. Select **Create notice template** to open the notice creation tool.
 3. On the **Create a new notice template** page, complete the following fields:
     - **Template name**: Enter a friendly name for the notice. This name appears on the list of notices on the notice dashboard and in the notice selection list when sending notices from a case.
@@ -67,7 +67,7 @@ Complete the following steps to create a new insider risk management notice temp
 
 To update an existing insider risk management notice template, complete the following steps:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to **Insider risk management** and select the **Notice templates** tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Notice templates** tab.
 2. On the notice dashboard, select the notice template you want to manage.
 3. On the notice details page, select **Edit**
 4. On the **Edit** page, you can edit the following fields:
@@ -82,7 +82,7 @@ To update an existing insider risk management notice template, complete the foll
 
 To delete an existing insider risk management notice template, complete the following steps:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, go to **Insider risk management** and select the **Notice templates** tab.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select the **Notice templates** tab.
 2. On the notice dashboard, select the notice template you want to delete.
 3. Select the **Delete** icon on the toolbar.
 4. To delete the notice template, select **Yes** in the delete dialog. To cancel the deletion, select **Cancel**.

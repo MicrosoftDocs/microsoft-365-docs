@@ -20,7 +20,6 @@ ms.collection:
 description: Learn about how to use the alerts features in the Microsoft 365 Defender portal to view and manage alerts, including managing advanced alerts.
 ms.custom: 
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -33,17 +32,15 @@ ms.prod: m365-security
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 
-Use the alerts features in the Microsoft 365 Defender portal to view and manage alerts for your organization, including managing advanced alerts as part of [Microsoft Cloud App Security overview](/cloud-app-security/what-is-cloud-app-security).
+Use the alerts features in the Microsoft 365 Defender portal to view and manage alerts for your organization, including managing advanced alerts as part of [Microsoft Defender for Cloud Apps overview](/cloud-app-security/what-is-cloud-app-security).
 
 ## How to get to the alerts features
 
-Alerts are in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. Here's how to get to the page:
-
-In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Alerts**. Or, to go direct to the **Alerts** page, use <https://security.microsoft.com/alerts>.
+Alerts are available in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Incidents & alerts** \> **Alerts**. Or, to go direct to the **Alerts** page, use <https://security.microsoft.com/alerts>.
 
 ## Alerts features
 
-The following table describes the tools that are available under **Alerts** in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+The following table describes the tools that are available on the **Alerts** page.
 
 <br>
 
@@ -52,5 +49,5 @@ The following table describes the tools that are available under **Alerts** in t
 |Tool|Description|
 |---|---|
 |[Manage alerts](../../compliance/create-activity-alerts.md)|Use activity alerts to send email notifications to yourself or other admins when users perform specific activities in Microsoft 365. Activity alerts are similar to searching the audit log for events, except that you'll be sent an email message when an event that you've created an alert for occurs.|
-|[Manage advanced alerts](/cloud-app-security/what-is-cloud-app-security)|Use the **Manage advanced alerts** feature of Microsoft 365 Cloud App Security to set up policies that can alert you to suspicious and anomalous activity in Microsoft 365. After you're alerted, you can investigate situations that are potentially problematic and, if needed, take action to address security issues.|
+|[Manage advanced alerts](/cloud-app-security/what-is-cloud-app-security)|Use the **Manage advanced alerts** feature of Microsoft Defender for Cloud Apps to set up policies that can alert you to suspicious and anomalous activity in Microsoft 365. After you're alerted, you can investigate situations that are potentially problematic and, if needed, take action to address security issues.|
 |

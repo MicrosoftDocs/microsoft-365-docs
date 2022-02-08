@@ -13,7 +13,8 @@ ms.author: dansimp
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
-ms.collection: m365-security-compliance
+ms.collection: m365solution-scenario
+ms.date:
 ---
 
 # Evaluate network protection
@@ -21,8 +22,9 @@ ms.collection: m365-security-compliance
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
-- - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [Network protection](network-protection.md) helps prevent employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the Internet.
 
@@ -57,7 +59,7 @@ Enable network protection in audit mode to see which IP addresses and domains wo
 
 ## Review network protection events in Windows Event Viewer
 
-To review apps that would have been blocked, open Event Viewer and filter for Event ID 1125 in the Microsoft-Windows-Windows-Defender/Operational log. The following table lists all network protection events.
+To review apps that would have been blocked, open Event Viewer and filter for Event ID 1125 in the Microsoft-Windows-Windows Defender/Operational log. The following table lists all network protection events.
 
 | Event ID | Provide/Source | Description |
 |---|---|---|

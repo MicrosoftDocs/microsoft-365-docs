@@ -2,8 +2,8 @@
 title: "Office 365 U.S. Government GCC High endpoints"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 10/29/2021
+manager: scotv
+ms.date: 01/31/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -28,7 +28,7 @@ hideEdit: true
 
 Office 365 requires connectivity to the Internet. The endpoints below should be reachable for customers using Office 365 U.S. Government GCC High plans only.
   
- **Office 365 endpoints:** [Worldwide (including GCC)](urls-and-ip-address-ranges.md) \| [Office 365 operated by 21 Vianet](urls-and-ip-address-ranges-21vianet.md) \| [Office 365 Germany](microsoft-365-germany-endpoints.md) \| [Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md) \| *Office 365 U.S. Government GCC High*
+ **Office 365 endpoints:** [Worldwide (including GCC)](urls-and-ip-address-ranges.md) \| [Office 365 operated by 21 Vianet](urls-and-ip-address-ranges-21vianet.md) \| [Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md) \| *Office 365 U.S. Government GCC High*
 
 <br>
 

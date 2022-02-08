@@ -23,7 +23,8 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -51,6 +52,9 @@ Download the sample CSV to know the supported column attributes.
 
 5. Select **Done**.
 
+> [!NOTE]
+> Only 500 indicators can be uploaded for each batch.
+
 The following table shows the supported parameters.
 
 Parameter|Type|Description
@@ -60,7 +64,7 @@ indicatorValue|String|Identity of the [Indicator](ti-indicator.md) entity. **Req
 action|Enum|The action that will be taken if the indicator will be discovered in the organization. Possible values are: "Alert", "AlertAndBlock", and "Allowed". **Required**
 title|String|Indicator alert title. **Required**
 description|String| Description of the indicator. **Required**
-expirationTime|DateTimeOffset|The expiration time of the indicator in the following format YYYY-MM-DDTHH:MM:SS.0Z. **Optional**
+expirationTime|DateTimeOffset|The expiration time of the indicator in the following format YYYY-MM-DDTHH:MM:SS.0Z. The indicator gets deleted if the expiration time passes and whatever happens at the expiration time occurs at the seconds (SS) value. **Optional**
 severity|Enum|The severity of the indicator. Possible values are: "Informational", "Low", "Medium" and "High". **Optional**
 recommendedActions|String|TI indicator alert recommended actions. **Optional**
 rbacGroupNames|String|Comma-separated list of RBAC group names the indicator would be applied to. **Optional**

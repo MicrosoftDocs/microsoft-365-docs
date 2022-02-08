@@ -23,7 +23,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
@@ -38,7 +38,7 @@ With the simplified set-up experience, you can focus on running your own test sc
 
 You'll have full access to the powerful capabilities of the platform such as automated investigations, advanced hunting, and threat analytics, allowing you to test the comprehensive protection stack that Defender for Endpoint offers.
 
-You can add Windows 10, Windows 11, Windows Server 2019, or Windows Server 2022 devices that come pre-configured to have the latest OS versions and the right security components in place as well as Office 2019 Standard installed.
+You can add Windows 10, Windows 11, Windows Server 2019, Windows Server 2016, and Linux (Ubuntu) devices that come pre-configured to have the latest OS versions and the right security components in place as well as Office 2019 Standard installed.
 
 You can also install threat simulators. Defender for Endpoint has partnered with industry leading threat simulation platforms to help you test out the Defender for Endpoint capabilities without having to leave the portal.
 
@@ -100,7 +100,7 @@ After the lab setup process is complete, you can add devices and run simulations
 
 ## Add devices
 
-When you add a device to your environment, Defender for Endpoint sets up a well-configured device with connection details. You can add Windows 10, Windows 11, Windows Server 2019, or Windows Server 2022 devices.
+When you add a device to your environment, Defender for Endpoint sets up a well-configured device with connection details. You can add Windows 10, Windows 11, Windows Server 2019, Windows Server 2016, and Linux (Ubuntu).
 
 The device will be configured with the most up-to-date version of the OS and Office 2019 Standard as well as other apps such as Java, Python, and SysIntenals.
 
@@ -129,9 +129,7 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
 1. From the dashboard, select **Add device**.
 
-2. Choose the type of device to add. You can choose to add Windows 10, Windows 11, Windows Server 2019, or Windows Server 2022.
-
-    :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="lab setup with device options.":::
+2. Choose the type of device to add. You can choose to add Windows 10, Windows 11, Windows Server 2019, Windows Server 2016, and Linux (Ubuntu). 
 
    > [!NOTE]
    > If something goes wrong with the device creation process, you'll be notified and you'll need to submit a new request. If the device creation fails, it will not be counted against the overall allowed quota.
@@ -151,6 +149,7 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
    > [!TIP]
    > In the **Simulator status** column, you can hover over the information icon to know the installation status of an agent.
+
 
 ## Request for more devices
 
@@ -194,9 +193,12 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
 
     ![Image of the connect button for test devices.](images/test-machine-table.png)
 
-2. Save the RDP file and launch it by selecting **Connect**.
 
+2. For **Windows devices**: save the RDP file and launch it by selecting **Connect**.<br> 
     ![Image of remote desktop connection.](images/remote-connection.png)
+
+    For **Linux devices**: you'll need to use a local SSH client and the provided command. 
+
 
     > [!NOTE]
     > If you don't have a copy of the password saved during the initial setup, you can reset the password by selecting **Reset password** from the menu:

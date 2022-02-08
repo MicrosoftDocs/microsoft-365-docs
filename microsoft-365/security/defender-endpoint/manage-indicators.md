@@ -23,7 +23,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -54,7 +54,7 @@ When creating a new indicator (IoC), one or more of the following actions are av
 
 - Allow – the IoC will be allowed to run on your devices.
 - Audit – an alert will be triggered when the IoC runs.
-- Warn – the IoC will prompt a warning that the user can bypass (MCAS only) 
+- Warn – the IoC will prompt a warning that the user can bypass (Defender for Cloud Apps only)
 - Block execution - the IoC will not be allowed to run.
 - Block and remediate - the IoC will not be allowed to run and a remediation action will be applied to the IoC.
 

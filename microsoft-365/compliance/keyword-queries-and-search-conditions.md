@@ -26,7 +26,7 @@ description: "Learn about email and document properties that you can search by u
 
 # Keyword queries and search conditions for eDiscovery
 
-This topic describes the email and document properties that you can search for in email items and Microsoft Teams chat conversations in Exchange Online, and documents stored on SharePoint and OneDrive for Business sites using the eDiscovery search tools in the Microsoft 365 compliance center. This includes Content search, Core eDiscovery, and Advanced eDiscovery (eDiscovery searches in Advanced eDiscovery are called *collections*). You can also use the **\*-ComplianceSearch** cmdlets in Security & Compliance Center PowerShell to search for these properties. The topic also describes:
+This article describes the email and document properties that you can search for in email items and Microsoft Teams chat conversations in Exchange Online, and documents stored on SharePoint and OneDrive for Business sites using the eDiscovery search tools in the Microsoft 365 compliance center. This includes Content search, Core eDiscovery, and Advanced eDiscovery (eDiscovery searches in Advanced eDiscovery are called *collections*). You can also use the **\*-ComplianceSearch** cmdlets in Security & Compliance Center PowerShell to search for these properties. The article also describes:
 
 - Using Boolean search operators, search conditions, and other search query techniques to refine your search results.
 - Searching for sensitive data types and custom sensitive data types in SharePoint and OneDrive for Business.
@@ -48,10 +48,6 @@ The following table lists email message properties that can be searched by using
 > [!NOTE]
 > When searching email properties, it's not possible to search for items in which the specified property is empty or blank. For example, using the *property:value* pair of **subject:""** to search for email messages with an empty subject line will return zero results. This also applies when searching site and contact properties.
 
-<br>
-
-****
-
 |Property|Property description|Examples|Search results returned by the examples|
 |---|---|---|---|
 |AttachmentNames|The names of files attached to an email message.|`attachmentnames:annualreport.ppt` <p> `attachmentnames:annual*` <br/> `attachmentnames:.pptx`|Messages that have an attached file named annualreport.ppt. In the second example, using the wildcard character ( * ) returns messages with the word "annual" in the file name of an attachment. The third example returns all attachments with the pptx file extension.|
@@ -66,13 +62,12 @@ The following table lists email message properties that can be searched by using
 |ItemClass|Use this property to search specific third-party data types that your organization imported to Office 365. Use the following syntax for this property:  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso` <p> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|The first example returns Facebook items that contain the word "contoso" in the Subject property. The second example returns Twitter items that were posted by Ann Beebe and that contain the keyword phrase "Northwind Traders". <p> For a complete list of values to use for third-party data types for the ItemClass property, see [Use Content search to search third-party data that was imported to Office 365](use-content-search-to-search-third-party-data-that-was-imported.md).|
 |Kind|The type of email message to search for. Possible values: <p>  contacts <p>  docs <p>  email <p>  externaldata <p>  faxes <p>  im <p>  journals <p>  meetings <p>  microsoftteams (returns items from chats, meetings, and calls in Microsoft Teams) <p>  notes <p>  posts <p>  rssfeeds <p>  tasks <p>  voicemail|`kind:email` <p> `kind:email OR kind:im OR kind:voicemail` <p> `kind:externaldata`|The first example returns email messages that meet the search criteria. The second example returns email messages, instant messaging conversations (including Skype for Business conversations and chats in Microsoft Teams), and voice messages that meet the search criteria. The third example returns items that were imported to mailboxes in Microsoft 365 from third-party data sources, such as Twitter, Facebook, and Cisco Jabber, that meet the search criteria. For more information, see [Archiving third-party data in Office 365](https://www.microsoft.com/?ref=go).|
 |Participants|All the people fields in an email message. These fields are From, To, Cc, and Bcc.<sup>1</sup>|`participants:garthf@contoso.com` <p> `participants:contoso.com`|Messages sent by or sent to garthf@contoso.com. The second example returns all messages sent by or sent to a user in the contoso.com domain.|
-|Received|The date that an email message was received by a recipient.|`received:04/15/2016` <p> `received>=01/01/2016 AND received<=03/31/2016`|Messages that were received on April 15, 2016. The second example returns all messages received between January 1, 2016 and March 31, 2016.|
+|Received|The date that an email message was received by a recipient.|`received:2021-04-15` <p> `received>=2021-01-01 AND received<=2021-03-31`|Messages that were received on April 15, 2021. The second example returns all messages received between January 1, 2021 and March 31, 2021.|
 |Recipients|All recipient fields in an email message. These fields are To, Cc, and Bcc.<sup>1</sup>|`recipients:garthf@contoso.com` <p> `recipients:contoso.com`|Messages sent to garthf@contoso.com. The second example returns messages sent to any recipient in the contoso.com domain.|
-|Sent|The date that an email message was sent by the sender.|`sent:07/01/2016` <p> `sent>=06/01/2016 AND sent<=07/01/2016`|Messages that were sent on the specified date or sent within the specified date range.|
+|Sent|The date that an email message was sent by the sender.|`sent:2021-07-01` <p> `sent>=2021-06-01 AND sent<=2021-07-01`|Messages that were sent on the specified date or sent within the specified date range.|
 |Size|The size of an item, in bytes.|`size>26214400` <p> `size:1..1048567`|Messages larger than 25 MB. The second example returns messages from 1 through 1,048,567 bytes (1 MB) in size.|
 |Subject|The text in the subject line of an email message. <p> **Note:** When you use the Subject property in a query, the search returns all messages in which the subject line contains the text you're searching for. In other words, the query doesn't return only those messages that have an exact match. For example, if you search for  `subject:"Quarterly Financials"`, your results will include messages with the subject "Quarterly Financials 2018".|`subject:"Quarterly Financials"` <p> `subject:northwind`|Messages that contain the phrase "Quarterly Financials" anywhere in the text of the subject line. The second example returns all messages that contain the word northwind in the subject line.|
 |To|The To field of an email message.<sup>1</sup>|`to:annb@contoso.com` <p> `to:annb ` <br/> `to:"Ann Beebe"`|All examples return messages where Ann Beebe is specified in the To: line.|
-|
 
 > [!NOTE]
 > <sup>1</sup> For the value of a recipient property, you can use email address (also called *user principal name* or UPN), display name, or alias to specify a user. For example, you can use annb@contoso.com, annb, or "Ann Beebe" to specify the user Ann Beebe.
@@ -94,28 +89,23 @@ The following table lists some of the SharePoint and OneDrive for Business prope
 
 For a complete list of SharePoint properties that can be searched, see [Overview of crawled and managed properties in SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Properties marked with a **Yes** in the **Queryable** column can be searched.
 
-<br>
-
-****
-
 |Property|Property description|Example|Search results returned by the examples|
 |---|---|---|---|
 |Author|The author field from Office documents, which persists if a document is copied. For example, if a user creates a document and the emails it to someone else who then uploads it to SharePoint, the document will still retain the original author. Be sure to use the user's display name for this property.|`author:"Garth Fort"`|All documents that are authored by Garth Fort.|
 |ContentType|The SharePoint content type of an item, such as Item, Document, or Video.|`contenttype:document`|All documents would be returned.|
-|Created|The date that an item is created.|`created>=06/01/2016`|All items created on or after June 1, 2016.|
+|Created|The date that an item is created.|`created>=2021-06-01`|All items created on or after June 1, 2021.|
 |CreatedBy|The person that created or uploaded an item. Be sure to use the user's display name for this property.|`createdby:"Garth Fort"`|All items created or uploaded by Garth Fort.|
 |DetectedLanguage|The language of an item.|`detectedlanguage:english`|All items in English.|
 |DocumentLink|The path (URL) of a specific folder on a SharePoint or OneDrive for Business site. If you use this property, be sure to search the site that the specified folder is located in. <p> To return items located in subfolders of the folder that you specify for the documentlink property, you have to add /\* to the URL of the specified folder; for example, `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"` <p> <br/>For more information about searching for the documentlink property and using a script to obtain the documentlink URLs for folders on a specific site, see [Use Content search for targeted collections](use-content-search-for-targeted-collections.md).|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"` <p> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|The first example returns all items in the specified OneDrive for Business folder. The second example returns documents in the specified site folder (and all subfolders) that contain the word "confidential" in the file name.|
 |FileExtension|The extension of a file; for example, docx, one, pptx, or xlsx.|`fileextension:xlsx`|All Excel files (Excel 2007 and later)|
 |FileName|The name of a file.|`filename:"marketing plan"` <p> `filename:estimate`|The first example returns files with the exact phrase "marketing plan" in the title. The second example returns files with the word "estimate" in the file name.|
-|LastModifiedTime|The date that an item was last changed.|`lastmodifiedtime>=05/01/2016` <p> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|The first example returns items that were changed on or after May 1, 2016. The second example returns items changed between May 1, 2016 and June 1, 2016.|
+|LastModifiedTime|The date that an item was last changed.|`lastmodifiedtime>=2021-05-01` <p> `lastmodifiedtime>=2021-05-01 AND lastmodifiedtime<=2021-06-01`|The first example returns items that were changed on or after May 1, 2021. The second example returns items changed between May 1, 2021 and June 1, 2021.|
 |ModifiedBy|The person who last changed an item. Be sure to use the user's display name for this property.|`modifiedby:"Garth Fort"`|All items that were last changed by Garth Fort.|
 |Path|The path (URL) of a specific site in a SharePoint or OneDrive for Business site. <p> To return items only from the specified site, you have to add the trailing `/` to the end of the URL; for example, `path: "https://contoso.sharepoint.com/sites/international/"` <p> To return items located in folders in the site that you specify in the path property, you have to add `/*` to the end of the URL; for example,  `path: "https://contoso.sharepoint.com/Shared Documents/*"` <p> **Note:** Using the `Path` property to search OneDrive locations won't return media files, such as .png, .tiff, or .wav files, in the search results. Use a different site property in your search query to search for media files in OneDrive folders. <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"` <p> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|The first example returns all items in the specified OneDrive for Business site. The second example returns documents in the specified site (and folders in the site) that contain the word "confidential" in the file name.|
 |SharedWithUsersOWSUser|Documents that have been shared with the specified user and displayed on the **Shared with me** page in the user's OneDrive for Business site. These are documents that have been explicitly shared with the specified user by other people in your organization. When you export documents that match a search query that uses the SharedWithUsersOWSUser property, the documents are exported from the original content location of the person who shared the document with the specified user. For more information, see [Searching for site content shared within your organization](#searching-for-site-content-shared-within-your-organization).|`sharedwithusersowsuser:garthf` <p> `sharedwithusersowsuser:"garthf@contoso.com"`|Both examples return all internal documents that have been explicitly shared with Garth Fort and that appear on the **Shared with me** page in Garth Fort's OneDrive for Business account.|
 |Site|The URL of a site or group of sites in your organization.|`site:"https://contoso-my.sharepoint.com"` <p> `site:"https://contoso.sharepoint.com/sites/teams"`|The first example returns items from the OneDrive for Business sites for all users in the organization. The second example returns items from all team sites.|
 |Size|The size of an item, in bytes.|`size>=1` <p> `size:1..10000`|The first example returns items larger than 1 byte. The second example returns items from 1 through 10,000 bytes in size.|
 |Title|The title of the document. The Title property is metadata that's specified in Microsoft Office documents. It's different from the file name of the document.|`title:"communication plan"`|Any document that contains the phrase "communication plan" in the Title metadata property of an Office document.|
-|
 
 ## Searchable contact properties
 
@@ -123,10 +113,6 @@ The following table lists the contact properties that are indexed and that you c
 
 > [!TIP]
 > To search for values that contain spaces or special characters, use double quotation marks ("  ") to contain the phrase; for example, `businessaddress:"123 Main Street"`.
-
-<br>
-
-****
 
 |Property|Property description|
 |---|---|
@@ -148,7 +134,6 @@ The following table lists the contact properties that are indexed and that you c
 |OtherAddress|The value for the **Other** address property.|
 |Surname|The name in the **Last** name property.|
 |Title|The title in the **Job title** property.|
-|
 
 ## Searchable sensitive data types
 
@@ -170,15 +155,11 @@ For more information about creating queries using the `SensitiveType` property, 
 
   Then you can use the ID in the `SensitiveType` search property to return documents that contain the custom sensitive data type; for example, `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
 
-- You can't use sensitive information types and the `SensitiveType` search property to search for sensitive data at-rest in Exchange Online mailboxes. This includes 1:1 chat messages, 1:N group chat messages, and team channel conversations in Microsoft teams because all of this content is stored in mailboxes. However, you can use data loss prevention (DLP) policies to protect sensitive email data in transit. For more information, see [Learn about data loss prevention](dlp-learn-about-dlp.md) and [Search for and find personal data](/compliance/regulatory/gdpr).
+- You can't use sensitive information types and the `SensitiveType` search property to search for sensitive data at-rest in Exchange Online mailboxes. This includes 1:1 chat messages, 1:N group chat messages, and team channel conversations in Microsoft Teams because all of this content is stored in mailboxes. However, you can use data loss prevention (DLP) policies to protect sensitive email data in transit. For more information, see [Learn about data loss prevention](dlp-learn-about-dlp.md) and [Search for and find personal data](/compliance/regulatory/gdpr).
 
 ## Search operators
 
 Boolean search operators, such as **AND**, **OR**, and **NOT**, help you define more-precise searches by including or excluding specific words in the search query. Other techniques, such as using property operators (such as `>=` or `..`), quotation marks, parentheses, and wildcards, help you refine a search query. The following table lists the operators that you can use to narrow or broaden search results.
-
-<br>
-
-****
 
 |Operator|Usage|Description|
 |---|---|---|
@@ -195,10 +176,9 @@ Boolean search operators, such as **AND**, **OR**, and **NOT**, help you define 
 |\<=|property\<=value|Denotes that the property being searched is less than or equal to a specific value.<sup>1</sup>|
 |\>=|property\>=value|Denotes that the property being searched is greater than or equal to a specific value.<sup>1</sup>|
 |..|property:value1..value2|Denotes that the property being searched is greater than or equal to value1 and less than or equal to value2.<sup>1</sup>|
-|"  "|"fair value" <p> subject:"Quarterly Financials"|Use double quotation marks ("  ") to search for an exact phrase or term in keyword and  `property:value` search queries.|
-|\*|cat\* <p> subject:set\*|Prefix searches (also called *prefix matching*) where a wildcard character ( * ) is placed at the end of a word in keywords or `property:value` queries. In prefix searches, the search returns results with terms that contain the word followed by zero or more characters. For example, `title:set*` returns documents that contain the word "set", "setup", and "setting" (and other words that start with "set") in the document title. <p> **Note:** You can use only prefix searches; for example, **cat\*** or **set\***. Suffix searches (**\*cat**), infix searches (**c\*t**), and substring searches (**\*cat\***) are not supported. <p> Also, adding a period ( \. ) to a prefix search will change the results that are returned. That's because a period is treated as a stop word. For example, searching for **cat\*** and searching for **cat.\*** will return different results. We recommend not using a period in a prefix search.|
+|"  "|"fair value" <p> subject:"Quarterly Financials"|In a keyword query (where you type the `property:value` pair in the **Keyword** box), use double quotation marks ("  ") to search for an exact phrase or term. However, if you use the **Subject** or **Subject/Title** [search condition](#search-conditions) condition, don't add double quotation marks to the value because quotation marks are automatically added when using these search conditions. If you do add quotation marks to the value, two pairs of double quotations will be added to the condition value, and the search query will return an error. |
+|\*|cat\* <p> subject:set\*|Prefix searches (also called *prefix matching*) where a wildcard character ( * ) is placed at the end of a word in keywords or `property:value` queries. In prefix searches, the search returns results with terms that contain the word followed by zero or more characters. For example, `title:set*` returns documents that contain the word "set", "setup", and "setting" (and other words that start with "set") in the document title. <p> **Note:** You can use only prefix searches; for example, **cat\*** or **set\***. Suffix searches (**\*cat**), infix searches (**c\*t**), and substring searches (**\*cat\***) aren’t supported. <p> Also, adding a period ( \. ) to a prefix search will change the results that are returned. That's because a period is treated as a stop word. For example, searching for **cat\*** and searching for **cat.\*** will return different results. We recommend not using a period in a prefix search.|
 |(  )|(fair OR free) AND (from:contoso.com) <p> (IPO OR initial) AND (stock OR shares) <p> (quarterly financials)|Parentheses group together Boolean phrases,  `property:value` items, and keywords. For example,  `(quarterly financials)` returns items that contain the words quarterly and financials.|
-|
 
 > [!NOTE]
 > <sup>1</sup> Use this operator for properties that have date or numeric values.<br/> <sup>2</sup> Boolean search operators must be uppercase; for example, **AND**. If you use a lowercase operator, such as **and**, it will be treated as a keyword in the search query.
@@ -223,47 +203,33 @@ You can add conditions to a search query to narrow a search and return a more re
 
 Create a condition using common properties when searching mailboxes and sites in the same search. The following table lists the available properties to use when adding a condition.
 
-<br>
-
-****
-
 |Condition|Description|
 |---|---|
 |Date|For email, the date a message was received by a recipient or sent by the sender. For documents, the date a document was last modified.|
 |Sender/Author|For email, the person who sent a message. For documents, the person cited in the author field from Office documents. You can type more than one name, separated by commas. Two or more values are logically connected by the **OR** operator.|
 |Size (in bytes)|For both email and documents, the size of the item (in bytes).|
-|Subject/Title|For email, the text in the subject line of a message. For documents, the title of the document. As previously explained, the Title property is metadata specified in Microsoft Office documents. You can type the name of more than one subject/title, separated by commas. Two or more values are logically connected by the **OR** operator.|
+|Subject/Title|For email, the text in the subject line of a message. For documents, the title of the document. As previously explained, the Title property is metadata specified in Microsoft Office documents. You can type the name of more than one subject/title values, separated by commas. Two or more values are logically connected by the **OR** operator. <p> **Note**: Don't include double quotation marks to the values for this condition because quotation marks are automatically added when using this search condition. If you add quotation marks to the value, two pairs of double quotations will be added to the condition value, and the search query will return an error.|
 |Retention label|For both email and documents, retention labels that have been assigned to messages and documents automatically by auto-label policies or retention labels that have been manually assigned by users. Retention labels are used to classify email and documents for information governance and enforce retention rules based on the settings defined by the label. You can type part of the retention label name and use a wildcard or type the complete label name. For more information about retention labels, see [Learn about retention policies and retention labels](retention.md).|
-|
 
 ### Conditions for mail properties
 
 Create a condition using mail properties when searching mailboxes or public folders. The following table lists the email properties that you can use for a condition. These properties are a subset of the email properties that were previously described. These descriptions are repeated for your convenience.
 
-<br>
-
-****
-
 |Condition|Description|
 |---|---|
-|Message kind|The message type to search. This is the same property as the Kind email property. Possible values: <ul><li>contacts</li><li>docs</li><li>email</li><li>externaldata</li><li>faxe</li><li>im</li><li>journals</li><li>meetings</li><li>microsoftteams</li><li>notes</li><li>posts</li><li>rssfeeds</li><li>tasks</li><li>voicemail</li></ul>|
+|Message kind|The message type to search. This is the same property as the Kind email property. Possible values: <ul><li>contacts</li><li>docs</li><li>email</li><li>externaldata</li><li>fax</li><li>im</li><li>journals</li><li>meetings</li><li>microsoftteams</li><li>notes</li><li>posts</li><li>rssfeeds</li><li>tasks</li><li>voicemail</li></ul>|
 |Participants|All the people fields in an email message. These fields are From, To, Cc, and Bcc.|
 |Type|The message class property for an email item. This is the same property as the ItemClass email property. It's also a multi-value condition. So to select multiple message classes, hold the **CTRL** key and then click two or more message classes in the drop-down list that you want to add to the condition. Each message class that you select in the list will be logically connected by the **OR** operator in the corresponding search query. <p> For a list of the message classes (and their corresponding message class ID) that are used by Exchange and that you can select in the **Message class** list, see [Item Types and Message Classes](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes).|
 |Received|The date that an email message was received by a recipient. This is the same property as the Received email property.|
 |Recipients|All recipient fields in an email message. These fields are To, Cc, and Bcc.|
 |Sender|The sender of an email message.|
 |Sent|The date that an email message was sent by the sender. This is the same property as the Sent email property.|
-|Subject|The text in the subject line of an email message.|
+|Subject|The text in the subject line of an email message. <p> **Note**: Don't include double quotation marks to the values for this condition because quotation marks are automatically added when using this search condition. If you add quotation marks to the value, two pairs of double quotations will be added to the condition value, and the search query will return an error.|
 |To|The recipient of an email message in the To field.|
-|
 
 ### Conditions for document properties
 
 Create a condition using document properties when searching for documents on SharePoint and OneDrive for Business sites. The following table lists the document properties that you can use for a condition. These properties are a subset of the site properties that were previously described. These descriptions are repeated for your convenience.
-
-<br>
-
-****
 
 |Condition|Description|
 |---|---|
@@ -271,16 +237,11 @@ Create a condition using document properties when searching for documents on Sha
 |Title|The title of the document. The Title property is metadata that's specified in Office documents. It's different than the file name of the document.|
 |Created|The date that a document is created.|
 |Last modified|The date that a document was last changed.|
-|File type|The extension of a file; for example, docx, one, pptx, or xlsx. This is the same property as the FileExtension site property. <p> **Note:** If you include a File type condition using the **Equals** or **Equals any of** operator in a search query, you can't use a prefix search (by including the wildcard character ( \* ) at the end of the file type) to return all versions of a file type. If you do, the wildcard will be ignored. For example if you include the condition `Equals any of doc*`, only files with an extension of `.doc` will be returned. Files with an extension of `.docx` will not be returned. To return all versions of a file type, used the *property:value* pair in a keyword query; for example, `filetype:doc*`.|
-|
+|File type|The extension of a file; for example, docx, one, pptx, or xlsx. This is the same property as the FileExtension site property. <p> **Note:** If you include a File type condition using the **Equals** or **Equals any of** operator in a search query, you can't use a prefix search (by including the wildcard character ( \* ) at the end of the file type) to return all versions of a file type. If you do, the wildcard will be ignored. For example if you include the condition `Equals any of doc*`, only files with an extension of `.doc` will be returned. Files with an extension of `.docx` won’t be returned. To return all versions of a file type, used the *property:value* pair in a keyword query; for example, `filetype:doc*`.|
 
 ### Operators used with conditions
 
 When you add a condition, you can select an operator that is relevant to type of property for the condition. The following table describes the operators that are used with conditions and lists the equivalent that is used in the search query.
-
-<br>
-
-****
 
 |Operator|Query equivalent|Description|
 |---|---|---|
@@ -291,13 +252,12 @@ When you add a condition, you can select an operator that is relevant to type of
 |Doesn't contain any of|`-property:value` <p> `NOT property:value`|Used with conditions for properties that specify a string value. Returns items that don't contain any part of the specified string value.|
 |Doesn't equal any of|`-property=value` <p> `NOT property=value`|Used with conditions for properties that specify a string value. Returns items that don't contain the specific string.|
 |Equals|`size=value`|Returns items that are equal to the specified size.<sup>1</sup>|
-|Equals any of|`(property=value) OR (property=value)`|Used with conditions for properties that specify a string value. Returns items that are an exact match of one or more specified string values.|
+|Equals any of|`(property=value) OR (property=value)`|Used with conditions for properties that specify a string value. Returns items that are a match of one or more specified string values.|
 |Greater|`size>value`|Returns items where the specified property is greater than the specified value.<sup>1</sup>|
 |Greater or equal|`size>=value`|Returns items where the specified property is greater than or equal to the specified value.<sup>1</sup>|
 |Less|`size<value`|Returns items that are greater than or equal to the specific value.<sup>1</sup>|
 |Less or equal|`size<=value`|Returns items that are greater than or equal to the specific value.<sup>1</sup>|
 |Not equal|`size<>value`|Returns items that don't equal the specified size.<sup>1</sup>|
-|
 
 > [!NOTE]
 > <sup>1</sup> This operator is available only for conditions that use the Size property.
@@ -313,6 +273,8 @@ Keep the following in mind when using search conditions.
 - If you add more than one condition for the same property, those conditions are logically connected by the **OR** operator. That means items that satisfy the keyword query and any one of the conditions are returned. So, groups of the same conditions are connected to each other by the **OR** operator and then sets of unique conditions are connected by the **AND** operator.
 
 - If you add multiple values (separated by commas or semi-colons) to a single condition, those values are connected by the **OR** operator. That means items are returned if they contain any of the specified values for the property in the condition.
+
+- Any condition that uses an operator with **Contains** and **Equals** logic will return similar search results for simple string searches. A simple string search is a string in the condition that doesn't include a wildcard). For example, a condition that uses **Equals any of** will return the same items as a condition that uses **Contains any of**.
 
 - The search query that is created by using the keywords box and conditions is displayed on the **Search** page, in the details pane for the selected search. In a query, everything to the right of the notation  `(c:c)` indicates conditions that are added to the query.
 
@@ -367,7 +329,7 @@ This example returns email items or documents that contain the keyword "report",
 
 #### Example 3
 
-This example returns email messages or calendar meetings that were sent between 12/1/2019 and 11/30/2020 and that contain words that start with "phone" or "smartphone".
+This example returns email messages or calendar meetings that were sent between December 1, 2019 and November 30, 2020 and that contain words that start with "phone" or "smartphone".
 
 **GUI**:
 
@@ -379,11 +341,11 @@ This example returns email messages or calendar meetings that were sent between 
 
 **Search query logic**:
 
-`phone* OR smartphone* AND (sent=2029-12-01..2020-11-30) AND ((kind="email") OR (kind="meetings"))`
+`phone* OR smartphone* AND (sent=2019-12-01..2020-11-30) AND ((kind="email") OR (kind="meetings"))`
 
 ## Special characters
 
-Some special characters are not included in the search index and therefore are not searchable. This also includes the special characters that represent search operators in the search query. Here's a list of special characters that are either replaced by a blank space in the actual search query or cause a search error.
+Some special characters aren’t included in the search index and therefore aren’t searchable. This also includes the special characters that represent search operators in the search query. Here's a list of special characters that are either replaced by a blank space in the actual search query or cause a search error.
 
 `+ - = : ! @ # % ^ & ; _ / ? ( ) [ ] { }`
 
@@ -452,8 +414,8 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 
 ## Character limits for searches
 
-There is a 4,000 character limit for search queries when searching for content in SharePoint sites and OneDrive accounts.
-Here is how the total number of characters in the search query are calculated:
+There’s a 4,000 character limit for search queries when searching for content in SharePoint sites and OneDrive accounts.
+Here’s how the total number of characters in the search query are calculated:
 
 - The characters in keyword search query (including both user and filter fields) count against this limit.
 - The characters in any location property (such as the URLs for all the SharePoint sites or OneDrive locations being searched) count against this limit.
@@ -466,17 +428,17 @@ For more information about character limits, see [eDiscovery search limits](limi
 
 ## Search tips and tricks
 
-- Keyword searches are not case-sensitive. For example, **cat** and **CAT** return the same results.
+- Keyword searches aren’t case-sensitive. For example, **cat** and **CAT** return the same results.
 
 - The Boolean operators **AND**, **OR**, **NOT**, and **NEAR** must be uppercase.
 
 - A space between two keywords or two  `property:value` expressions is the same as using **AND**. For example,  `from:"Sara Davis" subject:reorganization` returns all messages sent by Sara Davis that contain the word reorganization in the subject line.
 
-- Use syntax that matches the `property:value` format. Values are not case-sensitive, and they can't have a space after the operator. If there is a space, your intended value will be a full-text search. For example `to: pilarp` searches for "pilarp" as a keyword, rather than for messages that were sent to pilarp.
+- Use syntax that matches the `property:value` format. Values aren’t case-sensitive, and they can't have a space after the operator. If there’s a space, your intended value will be a full-text search. For example `to: pilarp` searches for "pilarp" as a keyword, rather than for messages that were sent to pilarp.
 
 - When searching a recipient property, such as To, From, Cc, or Recipients, you can use an SMTP address, alias, or display name to denote a recipient. For example, you can use pilarp@contoso.com, pilarp, or "Pilar Pinilla".
 
-- You can use only prefix searches; for example, **cat\*** or **set\***. Suffix searches (**\*cat**), infix searches (**c\*t**), and substring searches (**\*cat\***) are not supported.
+- You can use only prefix searches; for example, **cat\*** or **set\***. Suffix searches (**\*cat**), infix searches (**c\*t**), and substring searches (**\*cat\***) aren’t supported.
 
 - When searching a property, use double quotation marks ("  ") if the search value consists of multiple words. For example `subject:budget Q1` returns messages that contain **budget** in the subject line and that contain **Q1** anywhere in the message or in any of the message properties. Using `subject:"budget Q1"` returns all messages that contain **budget Q1** anywhere in the subject line.
 

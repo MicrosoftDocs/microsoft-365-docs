@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 productivity illustrations
-description: Use these illustrations, such as the Teams architecture diagram, to understand the architecture basics for implementing Microsoft 365 productivity solutions.
+description: "Learn how to implement Microsoft 365 and Microsoft Teams productivity solutions with these architecture diagrams."
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -26,6 +26,16 @@ The logical architecture of productivity services in Microsoft 365, leading with
 |:-----|:-----|
 |[![Teams logical architecture poster.](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Updated January 2021   |Microsoft provides a suite of productivity services that work together to provide collaboration experiences with data governance, security, and compliance capabilities. <br/> <br/>This series of illustrations provides a view into the logical architecture of productivity services for enterprise architects, leading with Microsoft Teams.|
 
+## Corporate communications with Microsoft 365 — a Contoso case study
+Employee engagement is a significant contributor to workplace satisfaction, retention, and productivity at any organization. Across Microsoft 365, there are multiple ways to communicate and engage your audience. 
+
+Knowing which method (or combinations of methods) to use and when to use them depends on your audience and the communication culture of your organization. 
+
+| Item | Description |
+|:-----|:-----|
+|[![Contoso corporate communications scenario poster.](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>Updated January 2022   |This poster illustrates how Contoso keeps employees informed and engaged across popular communication scenarios. Contoso uses a variety of M365 apps, including a new offering, Viva Connections.<br/><br/>**Related solution guides** <br/> <ul><li>[Organizational communications: Guidance, methods, and products](/sharepoint/corporate-communications-overview)|
+
+
 
 ## Groups in Microsoft 365 for IT Architects
 This illustration includes information for IT architects about Microsoft 365 Groups. To learn about configuring and administering Microsoft 365 Groups and teams for collaboration in your organization, see [Set up secure collaboration with Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) and [What is collaboration governance?](/microsoft-365/solutions/collaboration-governance-overview).
@@ -40,7 +50,7 @@ Microsoft provides tools to migrate your on-premises network file shares and Sha
 
 | Item | Description |
 |:-----|:-----|
-|[![Model poster: Migrate to Microsoft 365.](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <p> [PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\|[Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <p> Updated March 2021 |Includes: <ul><li> File share migration</li><li>SharePoint Server migration</li></ul> <p> For more information, see [Migrate your content to Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online).|
+|[![Model poster: Migrate to Microsoft 365.](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf) <p> [PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\|[Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <p> Updated March 2021 |Includes: <ul><li> File share migration</li><li>SharePoint Server migration</li></ul> <p> For more information, see [Migrate your content to Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online).|
 
 ## Microsoft 365 information protection and compliance capabilities
 
@@ -71,14 +81,19 @@ Depending on your environment, some tools are better suited for certain architec
 |[![Thumb image for Microsoft Defender for Endpoint deployment strategy.](../media/solutions-architecture-center/mde-deployment-strategy.png)](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)<br/> [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  \| [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) <br>Updated September 2021| The architectural material helps you plan your deployment for the following architectures: <ul><li> Cloud-native </li><li> Co-management </li><li> On-premise</li><li>Evaluation and local onboarding</li>
 
 
-<a name="BKMK_O365IDP"></a>
-## Identity and device protection for Microsoft 365
+<!--
 
-Recommended capabilities for protecting identities and devices that access Microsoft 365, other SaaS services, and on-premises applications published with Azure AD Application Proxy.
+<a name="BKMK_O365IDP"></a>
+## Zero Trust identity and device protection for Microsoft 365
+
+Recommended Zero Trust capabilities for protecting identities and devices that access Microsoft 365, other SaaS services, and on-premises applications published with Azure AD Application Proxy.
 
 | Item | Description |
 |:-----|:-----|
-|[![Model poster: Identity and device protection for Microsoft 365.](../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [View as a PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx) <br/> Updated September 2020|It's important to use consistent levels of protection across your data, identities, and devices. This model shows you which capabilities are comparable with more information on capabilities to protect identities and devices.  <br/> |
+|[![Model poster: Zero Trust identity and device protection for Microsoft 365.](../media/microsoft-365-policies-configurations/zero-trust-id-device-protection-model-thumbnail.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [View as a PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx) <br/> Updated November 2021|It's important to use consistent levels of protection across your data, identities, and devices. This model shows you which Zero Trust capabilities are comparable with more information on capabilities to protect identities and devices.  <br/> |
+
+--> 
+
 
 <a name="BKMK_ediscovery"></a>
 ## Advanced eDiscovery architecture in Microsoft 365

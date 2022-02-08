@@ -25,7 +25,7 @@ ms.custom:
 
 # Search the audit log in the compliance center
 
-Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the audit log search tool in Microsoft 365 compliance center to search the unified audit log to view user and administrator activity in your organization. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. User's in your organization can use the audit log search tool to search for, view, and export (to a CSV file) the audit records for these operations.
+Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the audit log search tool in Microsoft 365 compliance center to search the unified audit log to view user and administrator activity in your organization. Thousands of user and admin operations performed in dozens of Microsoft 365 services and solutions are captured, recorded, and retained in your organization's unified audit log. Users in your organization can use the audit log search tool to search for, view, and export (to a CSV file) the audit records for these operations.
 
 ## Microsoft 365 services that support auditing
 
@@ -663,7 +663,7 @@ The following table lists the activities that can be logged by mailbox audit log
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
 |Accessed mailbox items|MailItemsAccessed|Messages were read or accessed in mailbox. Audit records for this activity are triggered in one of two ways: when a mail client (such as Outlook) performs a bind operation on messages or when mail protocols (such as Exchange ActiveSync or IMAP) sync items in a mail folder. This activity is only logged for users with an Office 365 or Microsoft 365 E5 license. Analyzing audit records for this activity is useful when investigating compromised email account. For more information, see the "Advanced Audit events" section in [Advanced Audit](advanced-audit.md#advanced-audit-events). |
-|Added delegate mailbox permissions|Add-MailboxPermission|An administrator assigned the FullAccess mailbox permission to a user (known as a delegate) to another person's mailbox. The FullAccess permission allows the delegate to open the other person's mailbox, and read and manage the contents of the mailbox.|
+|Added delegate mailbox permissions|Add-MailboxPermission|An administrator assigned the FullAccess mailbox permission to a user (known as a delegate) to another person's mailbox. The FullAccess permission allows the delegate to open the other person's mailbox, and read and manage the contents of the mailbox. The audit record for this activity is also generated when a system account in the Microsoft 365 service periodically performs maintenance tasks in behalf of your organization. A common task performed by a system account is updating the permissions for system mailboxes. For more information, see [System accounts in Exchange mailbox audit records](#system-accounts-in-exchange-mailbox-audit-records).|
 |Added or removed user with delegate access to calendar folder|UpdateCalendarDelegation|A user was added or removed as a delegate to the calendar of another user's mailbox. Calendar delegation gives someone else in the same organization permissions to manage the mailbox owner's calendar.|
 |Added permissions to folder|AddFolderPermissions|A folder permission was added. Folder permissions control which users in your organization can access folders in a mailbox and the messages located in those folders.|
 |Copied messages to another folder|Copy|A message was copied to another folder.|
@@ -686,6 +686,12 @@ The following table lists the activities that can be logged by mailbox audit log
 |User signed in to mailbox|MailboxLogin|The user signed in to their mailbox.|
 |Label message as a record||A user applied a retention label to an email message and that label is configured to mark the item as a record. |
 ||||
+
+#### System accounts in Exchange mailbox audit records
+
+In audit records for some mailbox activities (especially **Add-MailboxPermissions**), you may notice the user who performed the activity (and is identified in the User and UserId fields) is NT AUTHORITY\SYSTEM or NT AUTHORITY\SYSTEM(Microsoft.Exchange.Servicehost). This indicates that the "user" who performed the activity was a system account in Exchange service in the Microsoft cloud. This system account often performs scheduled maintenance tasks on behalf of your organization. For example, a common audited activity performed by the NT AUTHORITY\SYSTEM(Microsoft.Exchange.ServiceHost) account is to update the permissions on the DiscoverySearchMailbox, which is a system mailbox. The purpose of this update is to verify that the FullAccess permission (which is the default) is assigned to the Discovery Management role group for the DiscoverySearchMailbox. This ensures that eDiscovery administrators can perform necessary tasks in their organization.
+
+Another system user account that may be identified in an audit record for **Add-MailboxPermission** is Administrator@apcprd03.prod.outlook.com. This service account is also included in mailbox audit records related to verifying and updating the FullAccess permission is assigned to the Discovery Management role group for the DiscoverySearchMailbox system mailbox. Specifically, audit records that identify the Administrator@apcprd03.prod.outlook.com account are typically triggered when Microsoft support personnel run an RBAC role diagnostic tool on behalf of your organization.
 
 ### User administration activities
 
@@ -965,6 +971,13 @@ If a Forms activity is performed by a coauthor or an anonymous responder, it wil
 |Enabled people in my organization collaboration<sup>*</sup>|EnableSameOrgCollaboration|Form owner turns on the setting allowing users in the current organization to view and edit the form.|
 |Enabled specific people collaboration<sup>*</sup>|EnableSpecificCollaboaration|Form owner turns on the setting allowing only specific people or specific groups in the current organization to view and edit the form.|
 |Connected to Excel workbook<sup>*</sup>|ConnectToExcelWorkbook|Connected the form to an Excel workbook. <br><br>Property ExcelWorkbookLink:string indicates the associated Excel workbook ID of the current form.|
+|Created a collection|CollectionCreated|Form owner created a collection.|
+|Updated a collection|CollectionUpdated|Form owner updated a collection property.|
+|Deleted collection from the Recycle Bin|CollectionHardDeleted|Form owner hard-deleted a collection from the Recycle Bin.|
+|Moved collection to the Recycle Bin|CollectionSoftDeleted|Form owner moved a collection to the Recycle Bin.|
+|Renamed a collection|CollectionRenamed|Form owner changed the name of a collection.|
+|Moved a form into collection|MovedFormIntoCollection|Form owner moved a form into a collection.|
+|Moved a form out of collection|MovedFormOutofCollection|Form owner moved a form out of a collection.|
 ||||
 
 #### Forms activities performed by coauthors and anonymous responders
@@ -985,7 +998,7 @@ The following table describes the auditing activities and information in the aud
 
 ### Sensitivity label activities
 
-The following table lists events that result from labeling activities for SharePoint Online and Teams sites.
+The following table lists events that result from using [sensitivity labels](sensitivity-labels.md).
 
 |Friendly name|Operation|Description|
 |:-----|:-----|:-----|
@@ -1147,9 +1160,9 @@ In most services, auditing is enabled by default after you initially turn on aud
 
 No. The auditing service pipeline is near real time, and therefore can't support de-duplication.
 
-**Does auditing data flow across geographies?**
+**Where is auditing data stored?**
 
-No. We currently have auditing pipeline deployments in the NA (North America), EMEA (Europe, Middle East, and Africa) and APAC (Asia Pacific) regions. However, we may flow the data across these regions for load-balancing and only during live-site issues. When we do perform these activities, the data in transit is encrypted.
+We currently have auditing pipeline deployments in the NA (North America), EMEA (Europe, Middle East, and Africa) and APAC (Asia Pacific) regions. Tenants homed in these regions will have their auditing data stored in region. For multi-geo tenants, the audit data collected from all regions of the tenant will be stored only in tenant's home region. However, we may flow the data across these regions for load-balancing and only during live-site issues. When we do perform these activities, the data in transit is encrypted. 
 
 **Is auditing data encrypted?**
 
