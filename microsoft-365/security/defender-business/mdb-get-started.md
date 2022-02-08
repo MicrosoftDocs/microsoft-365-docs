@@ -1,13 +1,13 @@
 ---
-title: Get started using Microsoft Defender for Business (preview)
-description: See how to get started using Microsoft Defender for Business (preview), including navigating the portal and viewing status and recommendations
+title: Get started using the Microsoft 365 Defender portal
+description: See how to get started using the Microsoft 365 Defender portal. Laern hpw to navigate the portal, and view your current security status and recommendations
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: article
-ms.date: 01/06/2022
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -20,14 +20,18 @@ ms.collection:
 ms.custom: intro-get-started
 ---
 
-# Get started using Microsoft Defender for Business (preview)
+# Get started using the Microsoft 365 Defender portal
 
 > [!IMPORTANT]
 > Microsoft Defender for Business is now in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. We will onboard an initial set of customers and partners in the coming weeks and will expand the preview leading up to general availability. Note that preview will launch with an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-After your setup and configuration process is complete for your company, the best way to get started using Microsoft Defender for Business (preview) is by visiting your Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and signing in with your user account for Microsoft 365. 
+After you have signed up for Microsoft Defender for Business (preview), you'll want to get acquainted with the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This article provides:
+
+- [An overview of the portal, including navigation](#navigate-the-microsoft-365-defender-portal);
+- [Information about learning modules to help your security team ramp up on security incidents and response actions](#complete-a-learning-module-about-incidents-and-response-actions); and 
+- [Next steps](#next-steps).
 
 >
 > **Got a minute?**
@@ -42,7 +46,7 @@ Take a moment to get acquainted with your Microsoft 365 Defender portal.
 
 :::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="Microsoft 365 Defender portal":::
 
-## Use the navigation bar
+### Use the navigation bar
 
 Use the navigation bar on the left side of the screen to access your incidents, view reports, and manage your security policies and settings. The following table describes items you’ll see in your navigation bar.
 
