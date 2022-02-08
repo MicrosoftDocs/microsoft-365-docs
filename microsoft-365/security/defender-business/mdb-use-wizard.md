@@ -29,6 +29,8 @@ ms.custom: intro-get-started
 
 Microsoft Defender for Business (preview) was designed to save small and medium-sized businesses time and effort with a wizard-like experience for initial setup and configuration. This article describes the steps of the wizard and your options for setting up and configuring Defender for Business manually.
 
+:::image type="content" source="media/mdb-wizard-start.png" alt-text="Screenshot of wizard home screen to set up Defender for Business.":::
+
 ## Overview of the wizard
 
 The wizard is designed to help you set up and configure Defender for Business quickly and efficiently. The wizard walks you through the following steps:
