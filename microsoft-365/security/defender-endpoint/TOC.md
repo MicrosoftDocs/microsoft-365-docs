@@ -8,7 +8,6 @@
 ### [Preview features](preview.md)
 ### [Data storage and privacy](data-storage-privacy.md)
 ### [Overview of Microsoft Defender Security Center](use.md)
-### [Portal overview](portal-overview.md)
 ### [Defender for Endpoint Plan 1]()
 #### [Overview](defender-endpoint-plan-1.md)
 #### [Setup and configuration](mde-p1-setup-configuration.md)
@@ -707,7 +706,6 @@
 
 ### [Troubleshoot Microsoft Defender for Endpoint service issues]()
 #### [Troubleshoot service issues](troubleshoot-mdatp.md)
-#### [Check service health](service-status.md)
 #### [Contact Microsoft Defender for Endpoint support](contact-support.md)
 
 ### [Troubleshoot live response issues](troubleshoot-live-response.md)

@@ -16,7 +16,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
-- m365initiative-defender-business
+- m365-initiative-defender-business
 ---
 
 # Respond to and mitigate threats in Microsoft Defender for Business (preview)
@@ -45,7 +45,7 @@ The Microsoft 365 Defender portal enables your security team to respond to and m
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Screenshot of device inventory":::
 
-   The **Device inventory** page lists company devices, along with their risk level and exposure level.
+   The **Device inventory** page lists organization devices, along with their risk level and exposure level.
 
 4. Select an item, such as a device. A flyout pane opens and displays more information about alerts and incidents generated for that item, as shown in the following image:  
 
