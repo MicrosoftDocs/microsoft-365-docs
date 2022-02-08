@@ -41,7 +41,7 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: How to get Defender for Business
+          - text: Get Defender for Business
             url: get-defender-business.md
           - text: Use the setup wizard
             url: mdb-use-wizard.md

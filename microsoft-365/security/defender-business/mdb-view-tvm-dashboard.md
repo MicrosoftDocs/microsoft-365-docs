@@ -27,5 +27,12 @@ ms.custom: intro-get-started
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-Microsoft Defender for Business (preview) includes a Threat & Vulnerability Management dashboard that is designed to save your security team time and effort. In addition to providing an exposure score, you can also view information about exposed devices and security recommendations. This article walks you through your Threat & Vulnerability Management dashboard and how to use it.
+Microsoft Defender for Business (preview) includes a Threat & Vulnerability Management dashboard that is designed to save your security team time and effort. In addition to providing an exposure score, you can also view information about exposed devices and security recommendations. You can use your Threat & Vulnerability Management dashboard to:
 
+- View your exposure score, which is associated with devices in your organization
+- View your top security recommendations, such as addressing impaired communications with devices, turning on firewall protection, or updating Microsoft Defender Antivirus definitions
+- View remediation activities, such as any files that were sent to quarantine, or vulnerabilities found on devices
+
+Want to see how it works? Watch this video:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4r1nv]
