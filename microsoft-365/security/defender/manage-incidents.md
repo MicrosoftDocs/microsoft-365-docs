@@ -33,9 +33,7 @@ ms.technology: m365d
 
 Incident management is critical in ensuring that threats are contained and addressed.
 
-Ratulac-acrolinx-updates
 You can manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
-
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Example of the incident queue." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -76,7 +74,7 @@ When you start typing, you have the option to select from a list of selected tag
 
 ## Assign an incident
 
-If an incident has not yet been assigned, you can select the **Assign to** box and specify the user account (Preview). Te re-assign an incident, remove the current assignment account by selecting the "x" next to the account name and then select the **Assign to** box. Assigning ownership of an incident assigns the same ownership to all the alerts associated with it.
+If an incident has not yet been assigned, you can select the **Assign to** box and specify the user account. To re-assign an incident, remove the current assignment account by selecting the "x" next to the account name and then select the **Assign to** box. Assigning ownership of an incident assigns the same ownership to all the alerts associated with it.
 
 You can get a list of incidents assigned to you by filtering the incident queue. 
 
