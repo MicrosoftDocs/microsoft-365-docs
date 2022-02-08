@@ -27,11 +27,11 @@ ms.custom: intro-get-started
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-After you have signed up for Microsoft Defender for Business (preview), you'll want to get acquainted with the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This article provides:
+After you have signed up for Microsoft Defender for Business (preview), you'll want to get acquainted with the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This article includes the following sections:
 
-- [An overview of the portal, including navigation](#navigate-the-microsoft-365-defender-portal);
-- [Information about learning modules to help your security team ramp up on security incidents and response actions](#complete-a-learning-module-about-incidents-and-response-actions); and 
-- [Next steps](#next-steps).
+- [How to navigate the Microsoft 365 Defender portal](#navigate-the-microsoft-365-defender-portal)
+- [Learning modules about incidents and response actions](#complete-a-learning-module-about-incidents-and-response-actions) 
+- [Next steps](#next-steps)
 
 >
 > **Got a minute?**
