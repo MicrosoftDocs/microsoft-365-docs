@@ -61,7 +61,10 @@ If you choose not to use the wizard, or if you exit the wizard before your setup
 
 4. [Onboard devices](mdb-onboard-devices.md).
 
-5. [Configure your security policies](mdb-configure-security-settings.md)
+5. [Configure your security policies](mdb-configure-security-settings.md).
 
 ## Next steps
 
+- [Get started using the Microsoft 365 Defender portal](mdb-get-started.md)
+
+- [Use your Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md)
