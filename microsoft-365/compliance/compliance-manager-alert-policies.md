@@ -169,7 +169,11 @@ The **Events** column on the **Alerts** page indicates the conditions of a polic
 - **Test status change**: a user has changed the testing status of an improvement action.
 - **Evidence change**: a user has uploaded or deleted an evidence document in the Documents tab of the improvement action
 - **Multi-event**: multiple instances of the same type of event have been detected; for example, a single improvement action that has been reassigned multiple times
-- **Multi-condition**: multiple conditions within a single policy were detected 
+- **Multi-condition**: multiple conditions within a single policy were detected
+
+#### Alert aggregation for multiple events within one minute
+
+When multiple events that match the conditions of an alert policy occur with one minute, they are added to an existing alert by a process called alert aggregation. When an event triggers an alert, the alert is generated and displayed on the **Alerts** page and a notification is sent. If the same event occurs within one minute, then Compliance Manager adds details about the new event on the **Events log** tab of the existing alert instead of triggering a new alert. The goal of alert aggregation is to help reduce alert "fatigue" and let you focus and take action on fewer alerts for the same event.
 
 ### Taking action on alerts
 
