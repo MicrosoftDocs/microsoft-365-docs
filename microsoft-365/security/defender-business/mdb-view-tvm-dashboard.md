@@ -16,7 +16,6 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
-- m365-initiative-defender-business
 ms.custom: intro-get-started
 ---
 
