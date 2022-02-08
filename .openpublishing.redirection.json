@@ -5940,6 +5940,26 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/portal-overview.md",
+      "redirect_url": "/microsoft-365/security/defender/microsoft-365-security-center-mde",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/manage-edr.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/microsoft-defender-security-center.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/service-status.md",
+      "redirect_url": "/microsoft-365/enterprise/view-service-health",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/learning/configure-cornerstone-content-source.md",
       "redirect_url": "/viva/learning/configure-cornerstone-content-source",
       "redirect_document_id": false
@@ -6447,6 +6467,31 @@
     {
       "source_path": "microsoft-365/security/defender-business/mdb-create-new-policy.md",
       "redirect_url": "/microsoft-365/security/defender-business/mdb-view-edit-create-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-client-support-certificate-based-authentication.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-client-support-conditional-access.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-client-support-multi-factor-authentication.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-client-support-single-sign-on.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-client-services-app-support.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
       "redirect_document_id": false
     }
   ]
