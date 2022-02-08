@@ -31,9 +31,24 @@ Microsoft Defender for Business (preview) was designed to save small and medium-
 
 ## Overview of the wizard
 
-description
+The wizard is designed to help you set up and configure Defender for Business quickly and efficiently. The wizard walks you through the following steps:
+
+1. **Grant access to the Microsoft 365 Defender portal** ([https://security.microsoft.com](https://security.microsoft.com)). Access is granted through roles that imply certain permissions. For example, a Global Admin can view and edit all settings across your Microsoft 365 tenant. A Security Administrator can view and edit security settings, and a Security Reader can only view information in reports. [Learn more about roles and permissions](mdb-roles-permissions.md).
+
+2. **Set up email notifications**. You can choose who should be notified via email whenever a vulnerability is detected or an alert is generated. Email notifications can help keep your security team informed even if they've left the office for the day. [Learn more about email notifications](mdb-email-notifications.md). 
+
+3. **Onboard Windows devices**. You can onboard your organization's Windows devices to Defender for Business quickly, helping to protect those devices from day one. 
+
+   - If you're already using Microsoft Endpoint Manager (which includes Microsoft Intune), you'll be asked if you want to use automatic onboarding, which sets up a connection between Endpoint Manager and Defender for Business, and then onboards all Windows devices that are enrolled in Endpoint Manager. 
+   - If you're not already using Endpoint Manager, you can use gradual device onboarding and choose a set of devices to onboard to Defender for Business. [Learn more about device onboarding](mdb-onboard-devices.md).
+
+4. **Configure your security settings**. 
 
 ## What happens if I don't use the wizard?
+
+If you choose not to use the wizard, or if you exit the wizard before your setup process is complete, you can still complete your setup and configuration process on your own. See the following articles to finish your setup process:
+
+1. [Assign roles and permissions in Microsoft Defender for Business (preview)](mdb-roles-permissions.md)
 
 ## Next steps
 
