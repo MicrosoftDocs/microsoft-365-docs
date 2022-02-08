@@ -77,7 +77,7 @@ To provide you with a better experience using the NPS survey insight dashboard:
 Learn more at [Microsoft product NPS feedback and insights for your organization](manage/manage-feedback-product-insights.md).  
 
 > [!NOTE]
-> If you're interested in joining our design sessions, send us an email at: prosight.microsoft.com
+> If you're interested in joining our design sessions, send us an email at: prosight@microsoft.com
 
 ### Microsoft 365 admin center video training
 
