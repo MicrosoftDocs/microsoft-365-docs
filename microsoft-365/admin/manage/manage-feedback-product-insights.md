@@ -155,9 +155,7 @@ The majority of Microsoft 365 for business **Products** can be found under this 
 
 Use **Feedback Types** (set only to NPS feedback types) to filter feedback that we collect.
 
-**AddART**
-
-<!--:::image type="content" source="../../media/prosight-filters.png" alt-text="Screenshot: Microsoft 365 NPS survey insights filters":::-->
+:::image type="content" source="../../media/feedback-filters.png" alt-text="Screenshot: Chart showing feedback types":::
 
 ### We want to hear from you
 
