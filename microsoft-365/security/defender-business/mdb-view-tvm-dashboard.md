@@ -1,6 +1,6 @@
 ---
-title: View your vulnerability management dashboard in Microsoft Defender for Business (preview)
-description: Use your threat & vulnerability management dashboard to see important items to address.
+title: View your Threat & Vulnerability Management dashboard in Microsoft Defender for Business (preview)
+description: Use your threat & Threat & Threat & Vulnerability Management dashboard to see important items to address.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: intro-get-started
 ---
 
-# Use your Vulnerability Management dashboard Microsoft Defender for Business (preview)
+# Use your Threat & Vulnerability Management dashboard Microsoft Defender for Business (preview)
 
 > [!IMPORTANT]
 > Microsoft Defender for Business is now in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. We will onboard an initial set of customers and partners in the coming weeks and will expand the preview leading up to general availability. Note that preview will launch with an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-Microsoft Defender for Business (preview) includes a Vulnerability Management dashboard that is designed to save your security team time and effort. In addition to providing an exposure score, you can also view information about exposed devices and security recommendations. This article walks you through your Vulnerability Management dashboard and how to use it.
+Microsoft Defender for Business (preview) includes a Threat & Vulnerability Management dashboard that is designed to save your security team time and effort. In addition to providing an exposure score, you can also view information about exposed devices and security recommendations. This article walks you through your Threat & Vulnerability Management dashboard and how to use it.
 

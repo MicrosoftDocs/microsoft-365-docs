@@ -31,13 +31,26 @@ landingContent:
             url: mdb-overview.md
           - text: The simplified configuration process
             url: mdb-simplified-configuration.md
-          - text: How to get Defender for Business
-            url: get-defender-business.md
           - text: Compare plans for small and medium-sized businesses
             url: compare-mdb-m365-plans.md
           - text: Integration with Microsoft 365 Lighthouse
             url: mdb-lighthouse-integration.md
 
+  # Card
+  - title: Get started
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: How to get Defender for Business
+            url: get-defender-business.md
+          - text: Use the setup wizard
+            url: mdb-use-wizard.md
+          - text: Navigate the portal
+            url: mdb-get-started.md
+          - text: View your Threat & Vulnerability Management dashboard
+            url: mdb-view-tvm-dashboard.md
+          - text: Try tutorials and simulations
+            url: mdb-tutorials.md
 
 
   # Card
@@ -57,16 +70,6 @@ landingContent:
             url: mdb-onboard-devices.md
           - text: Step 5 - Configure security settings
             url: mdb-view-edit-policies.md
-
-  # Card
-  - title: Get started
-    linkLists:
-      - linkListType: get-started
-        links:
-          - text: Navigate the portal
-            url: mdb-get-started.md
-          - text: Try tutorials and simulations
-            url: mdb-tutorials.md
 
 
   # Card
