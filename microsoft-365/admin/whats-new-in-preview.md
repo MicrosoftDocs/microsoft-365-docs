@@ -54,6 +54,8 @@ You can now view NPS survey data and insights from your users in the Microsoft 3
 
 In the admin center, go to **Health** > **Product feedback** > **NPS survey insights**.
 
+:::image type="content" source="../media/feedback-whatsnew.png" alt-text="Screenshot: Showing the Feedback page in the Microsoft 365 admin center":::
+
 We've identified the common themes from user feedback. Then we used machine learning models techniques to train the data sets and automatically organize the feedback into Top Topics.
 
 There are nine topics available. Look out for more topics in future updates.
