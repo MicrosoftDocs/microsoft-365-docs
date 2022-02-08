@@ -18,7 +18,7 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: "There are 200 sensitive information types that are ready for you to use in your DLP policies. This article lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type."
+description: "There are many sensitive information types that are ready for you to use in your DLP policies. This article lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type."
 ---
 
 # Sensitive information type entity definitions
@@ -94,9 +94,76 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - routing#
 - RTN
 
+## All full names
+
+This is a bundeled named entity which detects full names for people from all supported countries/regions, which include Australia, China, Japan, U.S., and countries in the EU. Use this SIT to detect all possible matches of full names.
+
+### Format
+
+Various.
+
+### Pattern
+
+Various.
+
+### Checksum
+
+No.
+
+### Description
+
+This named entity SIT matches personal names that a human would identify as a name with high confidence. It uses three primary resources:
+
+-	A dictionary of given names.
+-	A dictionary of family names.
+-	Patterns of how names are formed.
+
+The three resources are different for each country. For example, for names in United States dictionary, if a string is found consisting of a given name and is followed by a family name then a match is made with high confidence. The strings *Olivia Wilson* would trigger a match.Common given/family names are given a higher confidence than rarer names. However, the pattern also allows partial matches. For example a given name from the dictionary followed by an family name that is not in the dictionary, like *Tomas Richard* would trigger a partial match. Partial matches are given lower confidence.
+
+In addition, patterns that a human would see as indicative of names are also matched with appropriate confidence. Like *O. Wilson*, *O.P. Wilson*, *Dr. O. P. Wilson*, *Wilson, O.P.* or *T. Richard, Jr.* would be matches.
+
+## All medical terms and conditions
+
+This is a bundeled named entity which detects medical terms and medical conditions. It detects English terms only. Use this SIT to detect all possible matches of medical terms and conditions.
+
+### Format
+
+Dictionary
+
+### Pattern
+
+Dictionary
+
+### Checksum
+
+No
+
+### Description
+
+This bundeled named entity matches text that mentions medical conditions if terms are present in curated dictionaries. Use this SIT to There is one curated dictionary per supported language. The dictionaries are from a number of international medical resources. The curated dictionaries incorporate as large a coverage of medical conditions as possible without risking a large number of false positives. Each entry contains the different forms that a single condition is commonly written in to ensure coverage, for example:
+
+- *TB*
+- *tuberculosis*
+- *phthisis pulmonalis*
+
+### Contains
+
+This bundled named entity SIT contains these individual SITs.
+
+- Blood test terms 
+- Types of medication
+- Diseases
+- Generic medication names
+- Impairments listed in the U.S. Disability Evaluation Under Social Security
+- Lab test terms
+- Lifestyles that relate to medical conditions
+- Medical specialties
+- Surgical procedures
+- Brand medication names
+
+## All physical addreses
 
 <!--
-1	All full names	Detects full names for people from all supported countries/regions
 2	All physical addresses	Detects patterns related to physical addresses from all supported countries/regions
 3	Australia physical address	Detects patterns related to physical addresses from Austria
 4	Austria physical address	Detects patterns related to physical addresses from Belgium
@@ -147,41 +214,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 49	Medical specialties	Detects medical specialties, such as ‘dermatology’. English terms only.
 50	Surgical procedures	Detects surgical procedures, such as ‘appendectomy’. English terms only.
 51	Brand medication names	Detects names of brand medication, such as ‘Tylenol’. English terms only.
-
-
-## All full names
-
-### Definition
-
-Detects full names for people from all supported countries/regions, which include Australia, China, Japan, U.S., countries in the EU. Will detect all possible matches of full names
-
-Names
-
-Format
-
-Various
-
-Pattern
-
-Various
-
-Checksum
-
-No
-
-Definition
-
-The matching of personal names follows a complex grammar designed to match strings that a human would identify as a name with high confidence. To do this it uses three primary resources:
-
-•	A dictionary of given names
-•	A dictionary of family names
-•	Patterns of how names are formed
-
-In each case the three resources are different for each country.
-
-As a simple example for United States names, if a string is found consisting of a given name from the dictionary followed by a family name from the dictionary then a match is made with high confidence (eg Jennifer Smith). Common given/family names are given a higher confidence than rarer names. However, the pattern also allows ‘partial’ matches, for example a given name from the dictionary followed by an family name that is not in the dictionary (eg Jennifer Schiffern). Partial matches are given lower confidence.
-
-In addition, patterns that a human would see as indicative of names are also matched with appropriate confidence. (eg ‘J. P. Smith’, ‘Dr J Smith’, ‘J Smith, Jr.’, ‘Smith, J P’)
 
 ## All Physical Addresses
 
@@ -254,40 +286,6 @@ contains
 - United Kingdom physical address
 - United States physical address
 
-### All medical terms and conditions
-
-Detects all medical terms (blood and lab test terms, medications, procedures, etc.) and all medical conditions (diseases, impairments, conditions based on lifestyle, etc.). English terms only.
-
-Medical
-
-Format
-
-Dictionary
-
-Pattern
-
-Dictionary
-
-Checksum
-
-No
-
-Definition
-
-This entity matches text that mentions medical conditions of various types according to their presence in various curated dictionaries, with one dictionary per supported language. The dictionaries are drawn from a number of international medical resources and are designed to incorporate as large a coverage of medical conditions as possible without risking a large number of false positives from ambiguous terms and phrases. Each entry contains the different forms that a single condition is commonly written in (eg “TB”, “tuberculosis”, “phthisis pulmonalis” etc) to ensure coverage.
-
-CONTAINS
-
-- Blood test terms 
-- Types of medication
-- Diseases
-- Generic medication names
-- Impairments listed in the U.S. Disability Evaluation Under Social Security
-- Lab test terms
-- Lifestyles that relate to medical conditions
-- Medical specialties
-- Surgical procedures
-- Brand medication names
 
 -->
 
