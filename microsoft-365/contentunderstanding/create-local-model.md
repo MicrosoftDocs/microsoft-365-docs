@@ -58,7 +58,7 @@ This feature is available only for creating [document understanding models](appl
 
 8. On the **Add to library** panel, you'll see the name of your SharePoint site and the document library that the model will be applied to. If you want to apply the model to a different library, select **Back to libraries**, and choose the library you want to use. Then select **Add**.
 
-9. On the model home page, in the **Where the model is applied on the site** section, you can see the libraries that have the model applied. To apply the model to other libraries on the site, select **Apply model**. 
+9. On the model home page, in the **Where the model is applied on this site** section, you can see the libraries that have the model applied. To apply the model to other libraries on the site, select **Apply model**. 
 
     ![Screenshot of the model home page showing the Where the model is applied on the site section.](../media/content-understanding/local-model-home-page.png) 
 
