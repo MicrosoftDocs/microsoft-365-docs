@@ -199,12 +199,12 @@ sections:
           Is it a good idea to enable the rule, 'Block credential stealing from the Windows local security authority subsystem (lsass.exe)', alongside LSA protection?
         answer: |
           Enabling this rule will not provide additional protection if you have [LSA protection](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) enabled as well. Both the rule and LSA protection work in much the same way, so having both running at the same time would be redundant. However, sometimes you may not be able to enable LSA protection. In those cases, you can enable this rule to provide equivalent protection against malware that target lsass.exe.
-
+ 
       - question: |
           See also
         answer: |
           * [Attack surface reduction overview](attack-surface-reduction.md)
           * [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
-          * [Attack surface reduction rules deployment phase 3: implement](attack-surface-reduction-rules-deployment-implement.md)
+          * [Attack surface reduction rules deployment Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md)
           * [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
           * [Compatibility of Microsoft Defender Antivirus with other antivirus/antimalware](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
