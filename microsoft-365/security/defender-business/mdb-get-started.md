@@ -1,6 +1,6 @@
 ---
 title: Get started using the Microsoft 365 Defender portal
-description: See how to get started using the Microsoft 365 Defender portal. Laern hpw to navigate the portal, and view your current security status and recommendations
+description: See how to get started using the Microsoft 365 Defender portal. Learn how to navigate the portal, and view your current security status and recommendations
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -27,7 +27,7 @@ ms.custom: intro-get-started
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-After you have signed up for Microsoft Defender for Business (preview), you'll want to get acquainted with the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This article includes the following sections:
+After you've signed up for Microsoft Defender for Business (preview), you'll want to get acquainted with the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This article includes the following sections:
 
 - [How to navigate the Microsoft 365 Defender portal](#navigate-the-microsoft-365-defender-portal)
 - [Learning modules about incidents and response actions](#complete-a-learning-module-about-incidents-and-response-actions) 
@@ -54,7 +54,7 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 |:---|:---|
 | **Home** | Takes you to your home page in Microsoft 365 Defender. The home page includes cards that highlight any active threats that were detected, along with recommendations to help secure your company’s data and devices. <br/><br/>Recommendations are included in Defender for Business (preview) can save your security team time and effort. Recommendations are based on industry best practices. To learn more about recommendations, see [Security recommendations - threat and vulnerability management](../defender-endpoint/tvm-security-recommendation.md). |
 | **Incidents** | Takes you to your list of recent incidents. As alerts are triggered, incidents are created. An incident can include multiple alerts. Make sure to review your incidents regularly. <br/><br/>To learn more about incidents, see [View and manage incidents in Microsoft Defender for Business (preview)](mdb-view-manage-incidents.md).|
-| **Action center** | Takes you to your list of response actions, including completed or pending actions. <br/>- Select the **History** tab to see the actions that were taken. Some actions are taken automatically; others are taken manually or complete after they are approved. <br/>- Select the **Pending** tab to view actions that require approval to proceed. <br/><br/>To learn more about the Action center, see [Review remediation actions in the Action center](mdb-review-remediation-actions.md). |
+| **Action center** | Takes you to your list of response actions, including completed or pending actions. <br/>- Select the **History** tab to see the actions that were taken. Some actions are taken automatically; others are taken manually or complete after they're approved. <br/>- Select the **Pending** tab to view actions that require approval to proceed. <br/><br/>To learn more about the Action center, see [Review remediation actions in the Action center](mdb-review-remediation-actions.md). |
 | **Threat analytics** | Takes you to a view of current threats, and provides you with an at-a-glance view of your threat landscape. Threat analytics also includes reports and information from Microsoft security researchers. <br/><br/>To learn more about threat analytics, see [Track and respond to emerging threats through threat analytics](../defender-endpoint/threat-analytics.md). |
 | **Secure score** | Provides you with a representation of your company’s security position and offers suggestions to improve it.<br/><br/>To learn more about Secure Score, see [Microsoft Secure Score for Devices](../defender-endpoint/tvm-microsoft-secure-score-devices.md). |
 | **Learning hub** | Provides access to security training and other resources through learning paths that are included with your subscription. You can filter by product, skill level, role, and more. The Learning hub can help your security team ramp up on security features & capabilities in Defender for Business (preview) and more Microsoft offerings, such as [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md) and [Microsoft Defender for Office 365](../office-365-security/defender-for-office-365.md).  |
