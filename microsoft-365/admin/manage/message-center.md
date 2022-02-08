@@ -157,7 +157,9 @@ We use machine translation to automatically display messages in your preferred l
 
 ## Monthly active users
 
-When you open a message center post, we'll tell you the number of users who've been using that Microsoft 365 app or service. The numbers are for the last 30 days. This info can help you prioritize which changes you should work on.
+When you open a message center post, we'll tell you the number of users who've been using that Microsoft 365 app or service in the **Service & monthly active users** section. The numbers are for the last 28 days. This info can help you prioritize which changes you should work on.
+
+:::image type="content" source="../../media/msgctr-mau-teams.png" alt-text="Screenshot: Showing the Microsoft Teams Chat density page in the message center post with monthly active user data":::
 
 The number of monthly users applies to all users who've used that Microsoft 365 app or service on any device.
 
