@@ -1110,9 +1110,7 @@ Here are some tips for searching for Exchange admin activities when searching th
 
 - To return entries from the Exchange admin audit log, you have to select **Show results for all activities** in the **Activities** list. Use the date range boxes and the **Users** list to narrow the search results for cmdlets run by a specific Exchange administrator within a specific date range.
 
-- To display events from the Exchange admin audit log, filter the search results and type a **-** (dash) in the **Activity** filter box. This displays cmdlet names, which are displayed in the **Activity** column for Exchange admin events. Then you can sort the cmdlet names in alphabetical order.
-
-  ![Type a dash in the Activities box to filter Exchange admin events.](../media/7628e7aa-6263-474a-a28b-2dcf5694bb27.png)
+- To display events from the Exchange admin audit log, click the **Activity** column to sort the cmdlet names in alphabetical order.
 
 - To get information about what cmdlet was run, which parameters and parameter values were used, and what objects were affected, you can export the search results by selecting the **Download all results** option. For more information, see [Export, configure, and view audit log records](export-view-audit-log-records.md).
 
