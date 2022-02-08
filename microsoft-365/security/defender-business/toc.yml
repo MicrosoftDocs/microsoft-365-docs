@@ -7,12 +7,22 @@
         href: mdb-overview.md
       - name: The simplified configuration process
         href: mdb-simplified-configuration.md
-      - name: How to get Defender for Business (preview)
-        href: get-defender-business.md
       - name: Compare plans for small and medium-sized businesses
         href: compare-mdb-m365-plans.md
       - name: Integration with Microsoft 365 Lighthouse
         href: mdb-lighthouse-integration.md
+    - name: Get started
+      items:
+      - name: How to get Defender for Business (preview)
+        href: get-defender-business.md
+      - name: Use the setup wizard
+        href: mdb-use-wizard.md
+      - name: View your vulnerability management dashboard
+        href: mdb-view-tvm-dashboard.md
+      - name: Get started using the portal
+        href: mdb-get-started.md
+      - name: Try tutorials and simulations
+        href: mdb-tutorials.md
     - name: Setup and configuration
       items:
       - name: Setup overview
@@ -27,12 +37,6 @@
         href: mdb-onboard-devices.md
       - name: Step 5 - Configure your security settings
         href: mdb-configure-security-settings.md
-    - name: Get started
-      items:
-      - name: Get started using the portal
-        href: mdb-get-started.md
-      - name: Try tutorials and simulations
-        href: mdb-tutorials.md
     - name: Use Microsoft Defender for Business (preview)
       items: 
       - name: View and manage devices
