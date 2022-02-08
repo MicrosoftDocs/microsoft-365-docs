@@ -24,14 +24,6 @@ You can always navigate back to this page by selecting **Microsoft 365** from th
 
 ![Microsoft 365 in header.](media/m365-header-cursor.png)
 
-## Offline documentation
-
-If you would like to view the Microsoft 365 documentation on an offline system, you can create a PDF wherever you are in the Microsoft 365 technical documentation.
-
-If you'd like to create a PDF, select the **Download PDF** link found at the bottom of every table of contents.
-
-![Download PDF.](media/m365-download-pdf-cursor.png)
-
 ## TOC search 
 On docs.microsoft.com, you can search the content in the table of contents by using the filter search box at the top:
 

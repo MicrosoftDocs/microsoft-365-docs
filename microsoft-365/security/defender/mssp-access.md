@@ -17,7 +17,6 @@ search.appverid:
 - MET150
 ms.collection: 
 - M365-security-compliance 
-- m365initiative-m365-defender 
 ---
 
 # Provide managed security service provider (MSSP) access 
@@ -33,7 +32,7 @@ ms.collection:
 
 To implement a multi-tenant delegated access solution, take the following steps:
 
-1. Enable [role-based access control](/windows/security/threat-protection/microsoft-defender-atp/rbac) in Defender for Endpoint in Microsoft 365 Defender portal and connect with Azure Active Directory (Azure AD) groups.
+1. Enable [role-based access control](/windows/security/threat-protection/microsoft-defender-atp/rbac) for Defender for Endpoint via the Microsoft 365 Defender portal and connect with Azure Active Directory (Azure AD) groups.
 
 2. Configure [Governance Access Packages](/azure/active-directory/governance/identity-governance-overview) for access request and provisioning.
 

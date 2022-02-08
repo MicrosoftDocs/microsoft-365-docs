@@ -1,9 +1,9 @@
 ---
-title: "Overview of auto-expanding archiving"
+title: "Learn about auto-expanding archiving"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: overview
@@ -19,7 +19,7 @@ ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: "Learn about auto-expanding archiving, which provides additional archive storage for Exchange Online mailboxes."
 ---
 
-# Overview of auto-expanding archiving
+# Learn about auto-expanding archiving
 
 In Office 365, archive mailboxes provide users with additional mailbox storage space. After a user's archive mailbox is enabled, up to 100 GB of additional storage is available. In the past, when the 100-GB storage quota was reached, organizations had to contact Microsoft to request additional storage space for an archive mailbox. That's no longer the case.
 
@@ -107,6 +107,8 @@ This section explains the functionality between auto-expanding archiving and oth
 
 - **Import service:** You can use the Office 365 Import service to import PST files to a user's auto-expanded archive. You can import up to 100 GB of data from PST files to the user's archive mailbox.
 
-## More information
+## Next steps
 
 For more technical details about auto-expanding archiving, see [Microsoft 365: Auto-Expanding Archives FAQ](https://techcommunity.microsoft.com/t5/exchange-team-blog/office-365-auto-expanding-archives-faq/ba-p/607784).
+
+If you're ready to enable auto-expanding archiving, see [Enable auto-expanding archiving](enable-autoexpanding-archiving.md).

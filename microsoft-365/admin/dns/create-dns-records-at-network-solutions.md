@@ -65,10 +65,10 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 1. Under **Type**, select **TXT** from the drop-down list.
   
 1. In the boxes for the new record, type or copy and paste the values in the following table.
-
-    |**Refers to**|**TXT Value**|**TTL**|
+    
+    | Refers to | TXT Value | TTL |
     |:-----|:-----|:-----|
-    |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |3600  <br/>    | 
+    |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  |MS=ms *XXXXXXXX*  <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table.  [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |3600  <br/>    | 
 
 1. Select **ADD**.
 
@@ -102,7 +102,7 @@ To verify the record in Microsoft 365:
   
 1. On the landing page, select **Domain Names**.
 
-1. Select the the check box next to the domain that you want to modify.
+1. Select the check box next to the domain that you want to modify.
   
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
 
@@ -123,10 +123,10 @@ To verify the record in Microsoft 365:
 
 
 1. In the boxes for the new record, type or copy and paste the values from the following table.
-
-    **Refers to** |**Mail server**|**Priority**|**TTL**|
+    
+    | Refers to | Mail server | Priority | TTL |
     |:-----|:-----|:-----|:-----|
-    | @ | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **This value CANNOT end with a period (.)** <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md) | 0  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) <br/> | 1 Hour  <br/> |  
+    | @ | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **This value CANNOT end with a period (.)** <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md) | 0  <br/> For more information about priority, see [What is MX priority?](../setup/domains-faq.yml) | 1 Hour  |  
   
 1. Select **ADD**.
   
@@ -145,7 +145,7 @@ To verify the record in Microsoft 365:
   
 1. On the landing page, select **Domain Names**.
 
-1. Select the the check box next to the domain that you want to modify.
+1. Select the check box next to the domain that you want to modify.
   
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
 
@@ -166,10 +166,10 @@ To verify the record in Microsoft 365:
     :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-cname.png" alt-text="Select CNAME type from the drop-down list.":::
  
 1. In the boxes for the CNAME record, type or copy and paste the values from the following table.
-
-    |**Refers to | Host Name**|**Alias to**| **TTL** |
+    
+    | Refers to | Host Name | Alias to | TTL |
     |:-----|:-----|:-----|:-----|
-    |Other Host| autodiscover  <br/> | autodiscover.outlook.com **This value CANNOT end with a period (.)** <br/> 1 Hour  <br/> |
+    |Other Host| autodiscover  | autodiscover.outlook.com **This value CANNOT end with a period (.)** <br/> 1 Hour  |
 
     :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-cname-values.png" alt-text="Type or copy and paste the CNAME values from the table into the window.":::
   
@@ -187,7 +187,7 @@ To verify the record in Microsoft 365:
   
 1. On the landing page, select **Domain Names**.
 
-1. Select the the check box next to the domain that you want to modify.
+1. Select the check box next to the domain that you want to modify.
 
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
 
@@ -208,11 +208,11 @@ To verify the record in Microsoft 365:
     :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-TXT.png" alt-text="Select TXT from the Type drop-down list.":::
 
 1. In the boxes for the new record, type or copy and paste the following values.
-
-    |**Refers to**|**TXT Value**| **TTL**
+    
+    | Refers to | TXT Value | TTL
     |:-----|:-----|:-----|
-    |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct. | 1 Hour  <br/> |
-
+    |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  |v=spf1 include:spf.protection.outlook.com -all  <br/> **Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct. | 1 Hour  |
+       
 1. Select **ADD**.
   
     :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-add.png" alt-text="Select ADD.":::
@@ -230,7 +230,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
   
 1. On the landing page, select **Domain Names**.
 
-1. Select the the check box next to the domain that you want to modify.
+1. Select the check box next to the domain that you want to modify.
 
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
   
@@ -253,11 +253,11 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 1. In the boxes for the two new records, type or copy and paste the values from the following table.
 
     (Choose the **Service** and **Protocol** values from the drop-down lists.) 
-
-    | **Type** |**Service**|**Protocol**|**Weight**|**Port**|**Target**|**Priority**|**TTL**|
+    
+    | Type | Service | Protocol | Weight | Port | Target | Priority | TTL |
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    | SRV |_sip  <br/> |TLS  <br/> |100  <br/> |443  <br/> |sipdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> | 1  <br/> | 1 Hour  <br/> |
-    | SRV |_sipfederationtls  <br/> |TCP  <br/> |100  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> |1  <br/> | 1 Hour  <br/> |
+    | SRV |_sip  |TLS  |100  |443  |sipdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** | 1  | 1 Hour  |
+    | SRV |_sipfederationtls  |TCP  |100  |5061  |sipfed.online.lync.com  <br/> **This value CANNOT end with a period (.)** |1  | 1 Hour  |
   
 1. Select **ADD**.
 
@@ -277,7 +277,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
   
 1. On the landing page, select **Domain Names**.
 
-1. Select the the check box next to the domain that you want to modify.
+1. Select the check box next to the domain that you want to modify.
 
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
 
@@ -299,10 +299,10 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
  
 1. In the boxes for the CNAME record, type or copy and paste the values from the following table.
 
-    | **Type**|**Refers to | Host Name**|**Alias to**| **TTL** |
+    | Type | Refers to | Host Name | Alias to | TTL |
     |:-----|:-----|:-----|:-----|:-----|
-    | CNAME | Other Host | sip  <br/> |sipdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> |1 Hour  <br/> |
-    | CNAME| Other Host | lyncdiscover  <br/> |webdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** <br/> | 1 Hour  <br/> |
+    | CNAME | Other Host | sip  <br/> |sipdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** |1 Hour |
+    | CNAME| Other Host | lyncdiscover  <br/> |webdir.online.lync.com  <br/> **This value CANNOT end with a period (.)** | 1 Hour |
 
     :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-cname-values.png" alt-text="Type or copy and paste the CNAME values from the table into the window.":::
 
@@ -326,7 +326,7 @@ This service helps you secure and remotely manage mobile devices that connect to
   
 1. On the landing page, select **Domain Names**.
 
-1. Select the the check box next to the domain that you want to modify.
+1. Select the check box next to the domain that you want to modify.
 
 1. Under **Actions**, select the three dots, and then select **Manage** in the drop-down list.
 
@@ -348,10 +348,10 @@ This service helps you secure and remotely manage mobile devices that connect to
  
 1. In the boxes for the CNAME record, type or copy and paste the values from the following table.
 
-    | **Type**|**Refers to | Host Name**|**Alias to**| **TTL** |
+    | Type | Refers to | Host Name | Alias to | TTL |
     |:-----|:-----|:-----|:-----|:-----|
-    | CNAME | Other Host | enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> **This value CANNOT end with a period (.)** <br/> | 1 Hour  <br/> |
-    | CNAME | Other Host |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> **This value CANNOT end with a period (.)** <br/> | 1 Hour  <br/> |
+    | CNAME | Other Host | enterpriseregistration |enterpriseregistration.windows.net  <br/> **This value CANNOT end with a period (.)** | 1 Hour |
+    | CNAME | Other Host |enterpriseenrollment |enterpriseenrollment-s.manage.microsoft.com  <br/> **This value CANNOT end with a period (.)** | 1 Hour |
 
     :::image type="content" source="../../media/dns-networksolutions/networksolutions-domains-cname-values.png" alt-text="Type or copy and paste the CNAME values from the table into the window.":::
 
@@ -364,3 +364,4 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
+

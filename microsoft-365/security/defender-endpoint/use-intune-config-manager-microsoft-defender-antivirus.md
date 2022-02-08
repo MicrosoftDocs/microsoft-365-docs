@@ -2,7 +2,6 @@
 title: Configure Microsoft Defender Antivirus using Microsoft Endpoint Manager
 description: Use Microsoft Endpoint Manager and Microsoft Intune to configure Microsoft Defender Antivirus and Endpoint Protection
 keywords: scep, intune, endpoint protection, configuration
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -11,7 +10,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/24/2021
+ms.date: 12/16/2021
 ms.reviewer: phuijbr, oogunrinde
 manager: dansimp
 ms.technology: mde
@@ -27,7 +26,8 @@ ms.collection: m365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 You can use [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to configure Microsoft Defender Antivirus scans. [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Configuration Manager](/mem/configmgr/core/understand/introduction) are now part of Endpoint Manager.
 
@@ -45,9 +45,12 @@ You can use [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to conf
 
 6. Next to **Configuration settings**, choose **Edit**.
 
+   > [!IMPORTANT]
+   > AllowOnAccessProtection and AllowIntrusionPreventionSystem antivirus settings are officially being deprecated and as such cannot be configured. 
+
 7. Expand the **Scan** section, and review or edit your scanning settings.
 
-8. Choose **Review + save**
+8. Choose **Review + save**.
 
 > [!TIP]
 > Need help? See [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).
