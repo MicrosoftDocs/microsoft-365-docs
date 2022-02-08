@@ -16,7 +16,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
-- m365initiative-defender-business
+- m365-initiative-defender-business
 ---
 
 # Set up and configure Microsoft Defender for Business (preview)
