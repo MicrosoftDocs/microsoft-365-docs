@@ -56,7 +56,7 @@ This feature is available only for creating [document understanding models](appl
 
     ![Screenshot of the Add to library panel showing the site and libraries applied.](../media/content-understanding/local-model-add-to-library-panel.png) 
 
-8. On the **Add to library** panel, choose the document library to which you want to apply the model. If you want to apply the model to a different library, choose **Back to libraries**, and choose the library you want to use. Then select **Add**.
+8. On the **Add to library** panel, you'll see the name of your SharePoint site and the document library that the model will be applied to. If you want to apply the model to a different library, select **Back to libraries**, and choose the library you want to use. Then select **Add**.
 
 9. On the model home page, in the **Where the model is applied on the site** section, you can see the libraries that have the model applied. To apply the model to other libraries on the site, select **Apply model**. 
 
