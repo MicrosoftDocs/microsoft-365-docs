@@ -33,6 +33,8 @@ ms.technology: mde
 You might need to troubleshoot the Microsoft Defender for Endpoint onboarding process if you encounter issues.
 This page provides detailed steps to troubleshoot onboarding issues that might occur when deploying with one of the deployment tools and common errors that might occur on the devices.
 
+Before you start troubleshooting issues with onboarding tools, it is important to check if the minimum requirements are met for onboarding devices to the services. [Learn about the licensing, hardware, and software requirements to onboard devices to the service](minimum-requirements.md).
+
 ## Troubleshoot issues with onboarding tools
 
 If you have completed the onboarding process and don't see devices in the [Devices list](investigate-machines.md) after an hour, it might indicate an onboarding or connectivity problem.
