@@ -2,8 +2,8 @@
 title: "About the Microsoft Compliance Manager premium assessment trial"
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -20,7 +20,7 @@ description: "About the Microsoft Compliance Manager premium assessment trials."
 
 Compliance Manager helps you manage your organization’s compliance requirements and assess and improve your compliance score. The assessments you build are based on templates that correspond to governmental regulations and industry standards around the world.  
 
-Your licensing agreement to use Compliance Manager may include one or more built-in templates. An extensive library of premium assessment templates is also available for you to choose from so you can build assessments specific to your organization’s needs. To try out these templates before purchasing licenses, sign up for the free premium assessments trial.
+Your licensing agreement to use Compliance Manager may include one or more built-in templates for building assessments. An extensive library of premium assessment templates is also available for building assessments specific to your organization’s needs. To try out these templates before purchasing licenses, sign up for the free Compliance Manager premium assessments trial.
 
 ## Terms and conditions
 
@@ -47,7 +47,7 @@ For more details about how to use and manage Compliance Manager templates, see [
 
 ## Permissions
 
-Anyone in your organization with access to Compliance Manager can sign up for the assessment template trial.
+Any user in your organization with permissions to access Compliance Manager can sign up for the assessment template trial. Learn more about the [permissions and roles required for Compliance Manager](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
 ## During your trial
 
