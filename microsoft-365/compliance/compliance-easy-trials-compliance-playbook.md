@@ -413,6 +413,8 @@ Help your organization assess risks and efficiently respond to nations, regional
 
 [More information on the Compliance Manager premium assessments trial](compliance-easy-trials-compliance-manager-assessments.md).
 
+[Trial playbook: Microsoft Compliance Manager premium assessments](compliance-easy-trials-compliance-manager-assessment-playbook.md)
+
 ### Microsoft Priva Privacy Risk Management and Microsoft Priva Subject Rights Requests
 
 **Identify & prevent privacy risks**
