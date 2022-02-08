@@ -73,7 +73,7 @@ landingContent:
 
 
   # Card
-  - title: View and respond to detected threats
+  - title: View and respond to threats
     linkLists:
       - linkListType: how-to-guide
         links:
