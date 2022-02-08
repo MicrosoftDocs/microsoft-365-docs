@@ -39,11 +39,11 @@ Full access to Compliance Manager features may depend on your licensing agreemen
 
 ## Template licensing
 
-Starting your one-time trial for premium assessments gives you the right to use 25 premium templates of your choice for free for 90 days. You can create as many assessments as you wish using these 25 templates.
+Starting your one-time trial for premium assessments gives you the right to use 25 premium templates of your choice for free for 90 days. You can create as many assessments from the 25 templates as you wish.
 
 After you start your trial, go to your **Assessments** tab in Compliance Manager and view the **Activated/Licensed templates** counter to see how many templates are available and are in use. This counter will show your 25 licensed templates. As you create assessments using these templates, your activated number will update. Template use is counted based on the underlying certification, meaning that multiple assessments based on the same template, or different versions of the same template that support different products, will count as one template use.
 
-For more details about how to use and manage Compliance Manager templates, see [Working with assessment templates](compliance-manager-templates.md).
+For more information about how to use and manage Compliance Manager templates, see [Working with assessment templates](compliance-manager-templates.md).
 
 ## Permissions
 
@@ -55,7 +55,7 @@ Throughout your trial, you can review the **Trial summary** section of the **Ove
 
 ## After the trial
 
-After your trial ends, the assessment templates you selected will stop receiving automatic updates and may fall out of date with any regulatory changes. We recommend that you delete assessments built on templates that you don’t intend to purchase.
+After your trial ends, the templates you used won't receive automatic updates and may fall out of date with any regulatory changes. We recommend that you delete assessments built from templates that you don’t intend to purchase.
 
 ## Learn more about compliance
 
