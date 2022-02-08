@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 12/23/2021
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -98,6 +98,23 @@ After you have onboarded a Windows device manually, you can run a detection test
    ```
 
 After the command has run, the Command Prompt window will close automatically. If successful, the detection test will be marked as completed, and a new alert will appear in the Microsoft 365 Defender portal for the newly onboarded device in about 10 minutes.
+
+## What if I want to onboard devices gradually?
+
+If you want to onboard your company's devices in phases, follow these steps:
+
+1. Identify a set of devices to onboard.
+
+2. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
+
+3. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
+
+4. Select an operating system (such as **Windows 10 and 11)**, and then choose an onboarding method (such as **Local script**). Follow the guidance provided for the method you selected.
+
+5. Repeat this process for each set of devices you want to onboard. 
+
+> [!TIP]
+> You don't have to use the same onboarding package every time you onboard devices. For example, you can use a local script to onboard some devices, and later on, you can choose another method to onboard more devices.
 
 ## What if I want to offboard a device?
 
