@@ -1,6 +1,6 @@
 ---
 title: Integrate Microsoft Defender for Endpoint with other Microsoft solutions
-description: Learn how Microsoft Defender for Endpoint integrates with other Microsoft solutions, including Microsoft Defender for Identity and Azure Defender.
+description: Learn how Microsoft Defender for Endpoint integrates with other Microsoft solutions, including Microsoft Defender for Identity and Microsoft Defender for Cloud.
 author: mjcaparas
 ms.author: macapara
 ms.prod: m365-security
@@ -22,7 +22,7 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -31,13 +31,13 @@ ms.technology: mde
 
 Microsoft Defender for Endpoint directly integrates with various Microsoft solutions.
 
-### Azure Defender
+### Microsoft Defender for Cloud
 
 Microsoft Defender for Endpoint provides a comprehensive server protection solution, including endpoint detection and response (EDR) capabilities on Windows Servers.
 
-### Azure Sentinel
+### Microsoft Sentinel
 
-The Microsoft Defender for Endpoint connector lets you stream alerts from Microsoft Defender for Endpoint into Azure Sentinel. This will enable you to more comprehensively analyze security events across your organization and build playbooks for effective and immediate response.
+The Microsoft Defender for Endpoint connector lets you stream alerts from Microsoft Defender for Endpoint into Microsoft Sentinel. This will enable you to more comprehensively analyze security events across your organization and build playbooks for effective and immediate response.
 
 ### Azure Information Protection
 
@@ -47,9 +47,9 @@ We recently deprecated the Azure Information Protection integration as our Endpo
 
 Microsoft Defender for Endpoint's dynamic device risk score is integrated into the Conditional Access evaluation, ensuring that only secure devices have access to resources.
 
-### Microsoft Cloud App Security
+### Microsoft Defender for Cloud Apps
 
-Microsoft Cloud App Security leverages Microsoft Defender for Endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Microsoft Defender for Endpoint monitored devices.
+Microsoft Defender for Cloud Apps leverages Microsoft Defender for Endpoint signals to allow direct visibility into cloud application usage including the use of unsupported cloud services (shadow IT) from all Microsoft Defender for Endpoint monitored devices.
 
 ### Microsoft Defender for Identity
 
@@ -75,6 +75,6 @@ With Microsoft 365 Defender, Microsoft Defender for Endpoint, and various Micros
 ## Related topics
 
 - [Configure integration and other advanced features](advanced-features.md)
-- [Microsoft 365 Defender overview](/microsoft-365/security/defender/microsoft-threat-protection)
-- [Turn on Microsoft 365 Defender](/microsoft-365/security/defender/mtp-enable)
+- [Microsoft 365 Defender overview](/microsoft-365/security/defender/microsoft-365-defender)
+- [Turn on Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)
 - [Protect users, data, and devices with Conditional Access](conditional-access.md)

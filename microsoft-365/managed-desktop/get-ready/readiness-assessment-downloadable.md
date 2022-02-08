@@ -3,11 +3,11 @@ title: Downloadable readiness assessment checker
 description:  Checks device and network settings, including required endpoints
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 audience: Admin
 ---

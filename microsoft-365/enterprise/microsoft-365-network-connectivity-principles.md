@@ -202,8 +202,8 @@ Microsoft offers a wide range of Microsoft 365 security features and provides pr
 - **Use multi-factor authentication (MFA)**
     MFA adds an additional layer of protection to a strong password strategy by requiring users to acknowledge a phone call, text message, or an app notification on their smart phone after correctly entering their password.
 
-- **Use Microsoft Cloud App Security**
-    Configure policies to track anomalous activity and act on it. Set up alerts with Microsoft Cloud App Security so that admins can review unusual or risky user activity, such as downloading large amounts of data, multiple failed sign-in attempts, or connections from a unknown or dangerous IP addresses.
+- **Use Microsoft Defender for Cloud Apps**
+    Configure policies to track anomalous activity and act on it. Set up alerts with Microsoft Defender for Cloud Apps so that admins can review unusual or risky user activity, such as downloading large amounts of data, multiple failed sign-in attempts, or connections from a unknown or dangerous IP addresses.
 
 - **Configure Data Loss Prevention (DLP)**
     DLP allows you to identify sensitive data and create policies that help prevent your users from accidentally or intentionally sharing the data. DLP works across Microsoft 365 including Exchange Online, SharePoint Online, and OneDrive so that your users can stay compliant without interrupting their workflow.

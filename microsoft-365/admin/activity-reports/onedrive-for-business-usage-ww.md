@@ -26,7 +26,7 @@ description: "Get the OneDrive for Business Usage Report to know about the total
 
 # Microsoft 365 Reports in the admin center - OneDrive for Business usage
 
-The Microsoft 365 **Reports** dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md).
+The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md).
   
 For example, the OneDrive card on the dashboard gives you a high-level view of the value you are getting from OneDrive for Business in terms of the total number of files and storage used across your organization. You can then drill into it to understand the trends of active OneDrive accounts, how many files are users interacting with as well as the storage used. It also gives you details for each user's OneDrive.
 
@@ -57,3 +57,6 @@ The **OneDrive for Business usage** report can be viewed for trends over the las
 |Active files  <br/> | The number of active files within the time period.<br/> NOTE: If files were removed during the specified time period for the report, the number of active files shown in the report may be larger than the current number of files in the OneDrive. >  Deleted users will continue to appear in reports for 180 days.  <br/> |
 |Storage used (MB)  <br/> |The amount of storage the OneDrive uses in MB. |
 |||
+   
+> [!NOTE]
+> The report only includes users who have a valid OneDrive for Business license.
