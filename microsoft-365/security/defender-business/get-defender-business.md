@@ -40,7 +40,7 @@ Microsoft Defender for Business (preview) is available in preview! Participating
 
 4. Fill out the form with your contact information. 
 
-   - If you are a customer who is working with a Microsoft partner, in the **Other** box, fill in the company name of the partner. Then choose **Submit**.
+   - If you are a customer who is working with a Microsoft partner, in the **Other** box, fill in the organization name of the partner. Then choose **Submit**.
    - If you are a Microsoft partner, make sure to indicate your partnership type and information about customers you are planning to work with.
 
 5. When you have finished filling out the form, choose **Submit**.
