@@ -1,6 +1,6 @@
 ---
 title: Configure your security settings in Microsoft Defender for Business
-description: Configure your security settings and policies in Microsoft Defender for Business
+description: Configure your security policies in Microsoft Defender for Business
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -19,14 +19,14 @@ ms.collection:
 - m365-initiative-defender-business
 ---
 
-# Configure your security settings and policies in Microsoft Defender for Business (preview)
+# Configure your security policies in Microsoft Defender for Business (preview)
 
 > [!IMPORTANT]
 > Microsoft Defender for Business is now in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. We will onboard an initial set of customers and partners in the coming weeks and will expand the preview leading up to general availability. Note that preview will launch with an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-After you have onboarded your organization's devices to Microsoft Defender for Business (preview), you next step is to view and if necessary, edit your security settings and policies. In Defender for Business (preview), security settings are applied to devices through policies. Those policies are applied to [device groups](mdb-create-edit-device-groups.md#what-is-a-device-group). 
+After you've onboarded your organization's devices to Microsoft Defender for Business (preview), your next step is to view and if necessary, edit your security policies. In Defender for Business (preview), security settings are applied to devices through policies. Those policies are applied to [device groups](mdb-create-edit-device-groups.md#what-is-a-device-group). 
 
 There are other settings you can configure in Defender for Business (preview) as well. These settings include your time zone, whether to receive preview features, and more.
 
@@ -59,8 +59,8 @@ The following table can help you choose where to manage your security policies a
 
 | Option | Description |
 |:---|:---|
-| **Use the default security settings and policies in the Microsoft 365 Defender portal** (*recommended*) | Defender for Business (preview) was designed for the busy small or medium-sized business in mind. The default security settings and policies in Defender for Business are designed to protect your organization's devices from day one.<br/><br/>You can use the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) to view and manage your security settings and policies.<br/><br/>To learn more, see [View or edit device policies](mdb-view-edit-policies.md). |
-| **Use Microsoft Endpoint Manager** | If your organization is using Microsoft Endpoint Manager to manage security settings and policies, you can continue using Endpoint Manager and apply security policies and settings to some or all devices. To learn more, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>Consider switching to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md). If you make the switch, you'll be prompted to delete any existing security policies in Microsoft Endpoint Manager before proceeding with the simplified configuration process in Defender for Business. Deleting your policies in Microsoft Endpoint Manager helps avoid policy conflicts later. |
+| **Use the default security policies in the Microsoft 365 Defender portal** (*recommended*) | Defender for Business (preview) was designed for the busy small or medium-sized business in mind. The default security policies in Defender for Business are designed to protect your organization's devices from day one.<br/><br/>You can use the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) to view and manage your security policies.<br/><br/>To learn more, see [View or edit device policies](mdb-view-edit-policies.md). |
+| **Use Microsoft Endpoint Manager** | If your organization is using Microsoft Endpoint Manager to manage security policies, you can continue using Endpoint Manager and apply security policies and settings to some or all devices. To learn more, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>Consider switching to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md). If you make the switch, you'll be prompted to delete any existing security policies in Microsoft Endpoint Manager before proceeding with the simplified configuration process in Defender for Business. Deleting your policies in Microsoft Endpoint Manager helps avoid policy conflicts later. |
 
 > [!TIP]
 > If you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview). To learn more, see [Get Microsoft Defender for Business (preview)](get-defender-business.md).
