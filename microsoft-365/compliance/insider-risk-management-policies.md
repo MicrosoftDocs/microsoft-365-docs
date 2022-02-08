@@ -34,11 +34,11 @@ The **Policy dashboard** allows you to quickly see the policies in your organiza
 
 ![Insider risk management policy dashboard.](../media/insider-risk-policy-dashboard.png)
 
-## Policy recommendations from analytics (preview)
+## Policy recommendations from analytics
 
 Insider risk analytics enables you to conduct an evaluation of potential insider risks in your organization without configuring any insider risk policies. This evaluation can help your organization identify potential areas of higher user risk and help determine the type and scope of insider risk management policies you may consider configuring.
 
-To learn more about insider risk analytics and policy recommendations, see [Insider risk management settings: Analytics (preview)](insider-risk-management-settings.md#analytics).
+To learn more about insider risk analytics and policy recommendations, see [Insider risk management settings: Analytics](insider-risk-management-settings.md#analytics).
 
 ## Policy templates
 
@@ -99,7 +99,7 @@ You'll need to have Microsoft Defender for Endpoint configured in your organizat
 
 Protecting healthcare record data and preventing the misuse of patient personal data is a significant concern for organizations in the healthcare industry. This misuse may include confidential data leaks to unauthorized persons, fraudulently modification of patient records, or the theft of patient healthcare records. Preventing this misuse of patient data, either by lack of awareness, negligence, or fraud by users is also key component in meeting the regulatory requirements of the Health Insurance Portability and Accountability Act (HIPAA) and the Health Information Technology for Economic and Clinical Health (HITECH) Act. Both of these acts establish the requirements for safeguarding patient protected health information (PHI).
 
-This policy template enables risk scoring for internal users that detects suspicious activities associated with records hosted on existing electronic medical record (EMR) systems. Detection focuses on unauthorized access, viewing, modification, and export of patient data. You'll need to configure a connector (the [Microsoft Healthcare connector](import-healthcare-data.md) or [Epic connector](import-epic-data.md)) to support detection of access, exfiltration, or obfuscation activities in your EMR system.
+This policy template enables risk scoring for internal users that detects suspicious activities associated with records hosted on existing electronic medical record (EMR) systems. Detection focuses on unauthorized access, viewing, modification, and export of patient data. You'll need to configure a connector (the [Microsoft Healthcare connector](import-healthcare-data.md) or [Epic connector](import-epic-data.md) to support detection of access, exfiltration, or obfuscation activities in your EMR system.
 
 When using this template, you must also configure a Microsoft 365 HR connector to periodically import organization profile data for users in your organization. See the Import data with the HR connector article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization.
 

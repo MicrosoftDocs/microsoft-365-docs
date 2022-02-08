@@ -18,7 +18,12 @@ audience: ITPro
 ms.collection:
   - M365-security-compliance
   - m365initiative-m365-defender
-ms.custom: admindeeplinkDEFENDER
+  - m365solution-m365-defender
+  - m365solution-scenario
+  - m365solution-overview
+ms.custom: 
+  - admindeeplinkDEFENDER
+  - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
 ---
@@ -147,8 +152,6 @@ Centralizing security information creates a single place for investigating secur
 
 :::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="The Incidents page in Microsoft 365 Defender" lightbox="../../media/converged-incidents-2.png.png":::
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="The Incidents page in Microsoft 365 Defender.":::
-
 Selecting an incident name displays a page that demonstrates the value of centralizing security information.
 
 :::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Example of the Summary page for an incident in Microsoft 365 Defender" lightbox="../../media/converged-incident-info-3.png":::
@@ -195,6 +198,30 @@ The cards fall into these categories:
 - **Data** - Help track user activity that could lead to unauthorized data disclosure.
 - **Devices** - Get up-to-date information on alerts, breach activity, and other threats on your devices.
 - **Apps** - Gain insight into how cloud apps are being used in your organization. [Learn more about discovered apps in Defender for Cloud Apps](/cloud-app-security/discovered-apps).
+
+
+#### Search across entities (Preview)
+
+>[!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+The search bar is located at the top of the page. As you type, suggestions are provided so that it's easier to find entities. The enhanced search results page centralizes the results from all entities.
+
+You can search across the following entities in Defender for Endpoint and Defender for Identity: 
+
+- **Devices** - supported for both Defender for Endpoint and Defender for Identity. Supports use of search operators. 
+- **Users** - supported for Defender for Endpoint, Defender for Identity, and Defender for Cloud Apps. 
+- **Files, IPs, and URLs** - same capabilities as in Defender for Endpoint.
+
+    >[!NOTE]
+    >IP and URL searches are exact match and don’t appear in the search results page – they lead directly to the entity page. 
+
+- **TVM** -  same capabilities as in Defender for Endpoint (vulnerabilities, software, and recommendations). 
+
+ 
+
+
+
+
 
 ### Threat analytics with better data coverage
 

@@ -25,7 +25,8 @@ ms.technology: mde
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -46,7 +47,7 @@ The integration provides the following major improvements to the existing Defend
 
 - Available everywhere - Since the network activity is collected directly from the endpoint, it's available wherever the device is, on or off corporate network, as it's no longer depended on traffic routed through the enterprise firewall or proxy servers.
 
-- Works out of the box, no configuration required - Forwarding cloud traffic logs to Defender for Cloud Apps requires firewall and proxy server configuration. With the Defender for Endpoint and Defender for Cloud Apps integration, there's no configuration required. Just switch it on in Microsoft Defender Security Center settings and you're good to go.\
+- Works out of the box, no configuration required - Forwarding cloud traffic logs to Defender for Cloud Apps requires firewall and proxy server configuration. With the Defender for Endpoint and Defender for Cloud Apps integration, there's no configuration required. Just switch it on in Microsoft 365 Defender settings and you're good to go.
 
 - Device context - Cloud traffic logs lack device context. Defender for Endpoint network activity is reported with the device context (which device accessed the cloud app), so you are able to understand exactly where (device) the network activity took place, in addition to who (user) performed it.
 

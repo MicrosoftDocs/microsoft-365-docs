@@ -113,7 +113,6 @@ For most subscriptions modern authentication is automatically turned on, but if 
 
 ## Related content
 
+[Set up multifactor authentication](set-up-multi-factor-authentication.md) (video)
 
-[Turn on multi-factor authentication](../../business-video/turn-on-mfa.md) (video)
-
-[Turn on multi-factor authentication for your phone](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14) (video)
+[Turn on multi-factor authentication for your phone](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
