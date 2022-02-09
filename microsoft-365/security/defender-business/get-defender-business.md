@@ -40,8 +40,8 @@ Microsoft Defender for Business (preview) is available in preview! Participating
 
 4. Fill out the form with your contact information. 
 
-   - If you are a customer who is working with a Microsoft partner, in the **Other** box, fill in the company name of the partner. Then choose **Submit**.
-   - If you are a Microsoft partner, make sure to indicate your partnership type and information about customers you are planning to work with.
+   - If you're a customer who is working with a Microsoft partner, in the **Other** box, fill in the organization name of the partner. Then choose **Submit**.
+   - If you're a Microsoft partner, make sure to indicate your partnership type and information about customers you're planning to work with.
 
 5. When you have finished filling out the form, choose **Submit**.
 
@@ -53,7 +53,6 @@ If you're accepted, your email will contain a license code that you'll use to ac
 
 > [!IMPORTANT]
 > If you're a partner, after you have been accepted into the preview program, you must have each customer complete the process described in the section, [Sign up for the preview program](#sign-up-for-the-preview-program). Make sure the customer specifies your Microsoft partner name in the **Other** box.
-
 
 ## Next steps
 
