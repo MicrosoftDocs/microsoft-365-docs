@@ -88,7 +88,7 @@ An alert page is composed of these sections:
 - Alert story, which is the chain of events and alerts related to this alert in chronological order
 - Summary details
 
-Throughout an alert page, you can select the ellipses (**...**) beside any entity to see available actions, such as opening the alert page or linking the alert to another incident.
+Throughout an alert page, you can select the ellipses (**...**) beside any entity to see available actions, such as linking the alert to another incident. The list of available actions depends on the type of alert.
 
 ### Alert sources
 
@@ -126,7 +126,7 @@ Once you've selected an entity of interest, the details page changes to display 
 
 ## Manage alerts
 
-To manage alerta, select **Manage alert** in the summary details section of the alert page. For a single alert, here's an example of the **Manage alert** pane.
+To manage an alert, select **Manage alert** in the summary details section of the alert page. For a single alert, here's an example of the **Manage alert** pane.
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="Example of the Manage alert pane in the Microsoft 365 Defender portal":::
 
@@ -149,17 +149,6 @@ The **Manage alert** pane allows you to view or specify:
 > [!NOTE]
 > One way of managing alerts it through the use of tags. The tagging capability for Microsoft Defender for Office 365 is incrementally being rolled out and is currently in preview. <br>
 > Currently, modified tag names are only applied to alerts created *after* the update. Alerts that were generated before the modification will not reflect the updated tag name. 
-
-From the ellipsis (...), you can also perform these additional actions: 
-
-- Create a suppression
-- Consult a Microsoft threat expert
-- Link the alert to another incident
-- Submit the alert to Microsoft for review
-
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Example of the actions on an alert in the Microsoft 365 Defender portal":::
-
-The list of additional actions depends on the type of alert.
 
 To manage a *set of alerts similar to a specific alert*, select **View similar alerts** in the **INSIGHT** box in the summary details section of the alert page.
 
