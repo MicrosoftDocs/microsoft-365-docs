@@ -33,7 +33,7 @@ ms.technology: m365d
 
 With the *go hunt* action, you can quickly investigate events and various entity types using powerful query-based [advanced hunting](advanced-hunting-overview.md) capabilities. This action automatically runs an advanced hunting query to find relevant information about the selected event or entity.
 
-The *go hunt* action is available in various sections of the Defender for Cloud whenever event or entity details are displayed. For example, you can use the *go hunt* option from the following sections:
+The *go hunt* action is available in various sections of the Defender for Cloud, which can be viewed once event or entity details are displayed. For example, you can use the *go hunt* option from the following sections:
 
 - In the [incident page](investigate-incidents.md#summary), you can review details about users, devices, and many other entities associated with an incident. As you select an entity, you get additional information and the various actions you could take on that entity. In the example below, a mailbox is selected, showing details about the mailbox and the option to hunt for more information about the mailbox.
 
@@ -51,7 +51,9 @@ The *go hunt* action is available in various sections of the Defender for Cloud 
 Selecting **Go hunt** or **Hunt for related events** passes different queries, depending on whether you've selected an entity or an event.
 
 ## Query for entity information
-When using *go hunt* to query for information about a user, device, or any other type of entity, the query checks all relevant schema tables for any events involving that entity. To keep the results manageable, the query is scoped to around the same time period as the earliest activity in the past 30 days that involves the entity and is associated with the incident.
+You can use *go hunt* to query for information about a user, device, or any other type of entity; the query checks all relevant schema tables for any events involving that entity to return information. To keep the results manageable, the query is:
+- scoped to around the same time period as the earliest activity in the past 30 days that involves the entity
+- associated with the incident.
 
 Here is an example of the go hunt query for a device:
 
