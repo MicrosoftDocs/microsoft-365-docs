@@ -42,5 +42,5 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 - [Update general settings in Microsoft Defender for Endpoint](data-retention-settings.md)
 - [Turn on advanced features in Microsoft Defender for Endpoint](advanced-features.md)
 - [Configure email notifications in Microsoft Defender for Endpoint](configure-email-notifications.md)
-- [Enable SIEM integration in Microsoft Defender for Endpoint](enable-siem-integration.md)
+
 

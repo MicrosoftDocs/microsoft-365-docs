@@ -54,7 +54,7 @@ You can use the following versions of Windows:
 
 **PowerShell**
 
-- For the Azure Active Directory PowerShell for Graph module, you must use PowerShell version 5.1 or later.
+- For the Azure Active Directory PowerShell for Graph module, you must use PowerShell version 5.1.
 
 - For the Microsoft Azure Active Directory Module for Windows PowerShell module, you must use PowerShell version 5.1 or later, up to PowerShell version 6. You can't use PowerShell version 7.
        
@@ -119,7 +119,7 @@ After you connect, you can use the cmdlets for the [Azure Active Directory Power
 >[!Note]
 >Cmdlets in the Microsoft Azure Active Directory Module for Windows PowerShell have *Msol* in their name.
 
-PowerShell version 7 and later don't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. For PowerShell version 7 and later, you must use the Azure Active Directory PowerShell for Graph module or Azure PowerShell.
+PowerShell version 7 and later don't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. For PowerShell version 7 and later, you must use the Microsoft Graph PowerShell SDK.
 
 PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. Run these cmdlets from Windows PowerShell.
     

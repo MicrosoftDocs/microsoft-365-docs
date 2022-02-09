@@ -153,6 +153,7 @@ Automated investigation settings will be dependent on tenant settings. It will b
    > [!TIP]
    > In the **Simulator status** column, you can hover over the information icon to know the installation status of an agent.
 
+
 ## Request for more devices
 
 When all existing devices are used and deleted, you can request for more devices. You can request for lab resources once a month.
@@ -195,9 +196,11 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
 
     :::image type="content" source="images/test-machine-table.png" alt-text="The Connect button for the test devices" lightbox="images/test-machine-table.png":::
 
-2. Save the RDP file and launch it by selecting **Connect**.
 
    :::image type="content" source="images/remote-connection.png" alt-text="The remote desktop connection screen" lightbox="images/remote-connection.png":::
+
+    For **Linux devices**: you'll need to use a local SSH client and the provided command. 
+
 
     > [!NOTE]
     > If you don't have a copy of the password saved during the initial setup, you can reset the password by selecting **Reset password** from the menu:

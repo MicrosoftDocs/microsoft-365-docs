@@ -186,6 +186,6 @@ Yammer retention policies are currently in preview and we're continuously workin
 
 ## Configuration guidance
 
-If you're new to configuring retention in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md).
+If you're new to configuring retention in Microsoft 365, see [Get started with information governance](get-started-with-information-governance.md).
 
 If you're ready to configure a retention policy for Yammer, see [Create and configure retention policies](create-retention-policies.md).

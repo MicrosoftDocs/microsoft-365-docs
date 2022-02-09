@@ -23,17 +23,6 @@ ms.technology: mdo
 ---
 # Zero Trust identity and device access configurations
 
-**Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-
-<!--
-The modern security perimeter of your organization now extends beyond your network to include users accessing cloud-based apps from any location with a variety of devices. Your security infrastructure needs to determine whether a given access request should be granted and under what conditions.
-
-This determination should be based on the user account of the sign-in, the device being used, the app the user is using for access, the location from which the access request is made, and an assessment of the risk of the request. This capability helps ensure that only approved users and devices can access your critical resources.
-
---> 
-
 Security architectures that rely on network firewalls and virtual private networks (VPNs) to isolate and restrict access to an organization’s technology resources and services are no longer sufficient for a workforce that regularly requires access to applications and resources that exist beyond traditional corporate network boundaries.
 
 To address this new world of computing, Microsoft highly recommends the Zero Trust security model, which is based on these guiding principles:

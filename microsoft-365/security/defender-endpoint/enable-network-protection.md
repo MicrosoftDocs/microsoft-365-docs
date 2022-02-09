@@ -13,7 +13,8 @@ ms.author: deniseb
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
-ms.collection: m365-security-compliance
+ms.collection: m365initiative-m365-defender
+ms.date:
 ---
 
 # Turn on network protection

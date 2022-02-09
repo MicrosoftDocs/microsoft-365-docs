@@ -35,7 +35,7 @@ The following image depicts what the **Devices** tab looks like when you have Mi
 
 :::image type="content" source="../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG" alt-text="A list of devices with alerts" lightbox="../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG":::
 
-In this example, you can see that the recipients of the detected email message have four devices and one has an alert. Clicking the link for a device opens its page in the [Microsoft 365 Defender portal](../defender-endpoint/microsoft-defender-security-center.md) (formerly the Microsoft Defender Security Center).
+In this example, you can see that the recipients of the detected email message have four devices and one has an alert. Clicking the link for a device opens its page in the [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender).
 
 > [!TIP]
 > The Microsoft 365 Defender portal replaces the Microsoft Defender Security Center. See [Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).

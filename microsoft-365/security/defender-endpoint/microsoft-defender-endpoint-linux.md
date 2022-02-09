@@ -32,7 +32,7 @@ ms.technology: mde
 This topic describes how to install, configure, update, and use Microsoft Defender for Endpoint on Linux.
 
 > [!CAUTION]
-> Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint on Linux is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint on Linux EDR functionality after configuring the antivirus functionality to run in [Passive mode](linux-preferences.md#enable--disable-passive-mode).
+> Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint on Linux is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint on Linux EDR functionality after configuring the antivirus functionality to run in [Passive mode](linux-preferences.md#enforcement-level-for-antivirus-engine).
 
 ## How to install Microsoft Defender for Endpoint on Linux
 
@@ -53,7 +53,7 @@ There are several methods and deployment tools that you can use to install and c
 
 In general you need to take the following steps:
 
-- Ensure that you have a Microsoft Defender for Endpoint subscription, and that you have access to the [Microsoft Defender for Endpoint portal](microsoft-defender-security-center.md).
+- Ensure that you have a Microsoft Defender for Endpoint subscription.
 - Deploy Microsoft Defender for Endpoint on Linux using one of the following deployment methods:
   - The command-line tool:
     - [Manual deployment](linux-install-manually.md)
@@ -86,6 +86,38 @@ If you experience any installation failures, refer to [Troubleshooting installat
     > [!NOTE]
     > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
 
+- List of supported kernel versions
+  - Red Hat Enterprise Linux 6 and CentOS 6:
+    - For 6.7: 2.6.32-573.*
+    - For 6.8: 2.6.32-642.*
+    - For 6.9: 2.6.32-696.*
+    - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.41.2:
+    
+       - 2.6.32-754.10.1.el6.x86_64
+       - 2.6.32-754.11.1.el6.x86_64
+       - 2.6.32-754.12.1.el6.x86_64
+       - 2.6.32-754.14.2.el6.x86_64
+       - 2.6.32-754.15.3.el6.x86_64
+       - 2.6.32-754.17.1.el6.x86_64
+       - 2.6.32-754.18.2.el6.x86_64
+       - 2.6.32-754.2.1.el6.x86_64
+       - 2.6.32-754.22.1.el6.x86_64
+       - 2.6.32-754.23.1.el6.x86_64
+       - 2.6.32-754.24.2.el6.x86_64
+       - 2.6.32-754.24.3.el6.x86_64
+       - 2.6.32-754.25.1.el6.x86_64
+       - 2.6.32-754.27.1.el6.x86_64
+       - 2.6.32-754.28.1.el6.x86_64
+       - 2.6.32-754.29.1.el6.x86_64
+       - 2.6.32-754.29.2.el6.x86_64
+       - 2.6.32-754.3.5.el6.x86_64
+       - 2.6.32-754.30.2.el6.x86_64
+       - 2.6.32-754.33.1.el6.x86_64
+       - 2.6.32-754.35.1.el6.x86_64
+       - 2.6.32-754.39.1.el6.x86_64
+       - 2.6.32-754.41.2.el6.x86_64
+       - 2.6.32-754.6.3.el6.x86_64
+       - 2.6.32-754.9.1.el6.x86_64
 
     For Red Hat Enterprise Linux 6 and CentOS 6, the list of supported kernel versions are:
        - For 6.7: 2.6.32-573.* 
@@ -181,7 +213,8 @@ The following downloadable spreadsheet lists the services and their associated U
 
 ****
 
-|Spreadsheet of domains list|Description|
+
+|Spreadsheet of domains list| Description|
 |---|---|
 |:::image type="content" source="images/mdatp-urls.png" alt-text="Microsoft Defender for Endpoint URLs spreadsheet" lightbox="images/mdatp-urls.png":::|Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <p> Download the spreadsheet [here](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx).|
 |||

@@ -75,6 +75,6 @@ With Microsoft 365 Defender, Microsoft Defender for Endpoint, and various Micros
 ## Related topics
 
 - [Configure integration and other advanced features](advanced-features.md)
-- [Microsoft 365 Defender overview](/microsoft-365/security/defender/microsoft-threat-protection)
-- [Turn on Microsoft 365 Defender](/microsoft-365/security/defender/mtp-enable)
+- [Microsoft 365 Defender overview](/microsoft-365/security/defender/microsoft-365-defender)
+- [Turn on Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)
 - [Protect users, data, and devices with Conditional Access](conditional-access.md)

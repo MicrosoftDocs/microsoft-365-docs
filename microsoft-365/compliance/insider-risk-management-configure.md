@@ -38,6 +38,9 @@ Before you get started with insider risk management, you should confirm your [Mi
 
 Users included in insider risk management policies must be assigned one of the licenses above.
 
+> [!IMPORTANT]
+> Insider risk management is currently available in tenants hosted in geographical regions and countries supported by Azure service dependencies. To verify that insider risk management is supported for your organization, see [Azure dependency availability by country/region](/troubleshoot/azure/general/dependency-availability-by-country).
+
 If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try insider risk management, you can [add Microsoft 365](/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
 
 ## Recommended actions (preview)
@@ -142,7 +145,7 @@ Complete the following steps to enable insider risk analytics:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management**.
 2. Select **Run scan** on the **Scan for insider risks in your organization** card on the insider risk management **Overview** tab. This action turns on analytics scanning for your organization. You can also turn on scanning in your organization by navigating to **Insider risk settings** > **Analytics** and enabling **Scan your tenant's user activity to identify potential insider risks**.
-3. On the **Analytics details** pane, select **Run scan to start the scan for your organization**. Analytics scan results may take up to 24 hours before insights are available as reports for review.
+3. On the **Analytics details** pane, select **Run scan to start the scan for your organization**. Analytics scan results may take up to 48 hours before insights are available as reports for review.
 
 After reviewing the analytics insights, choose the insider risk policies and configure the associated prerequisites that best meet your organization's insider risk mitigation strategy.
 
