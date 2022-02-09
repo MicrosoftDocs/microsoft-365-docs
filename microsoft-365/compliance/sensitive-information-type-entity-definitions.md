@@ -122,6 +122,37 @@ The three resources are different for each country. For example, for names in Un
 
 In addition, patterns that a human would see as indicative of names are also matched with appropriate confidence. Like *O. Wilson*, *O.P. Wilson*, *Dr. O. P. Wilson*, *Wilson, O.P.* or *T. Richard, Jr.* would be matches.
 
+### Supported languages
+
+- English
+- Bulgarian
+- Chinese
+- Croatian
+- Czech
+- Danish
+- Estonian
+- Finnish
+- French
+- German
+- Hungarian
+- Icelandic
+- Irish
+- Italian
+- Japanese
+- Latvian
+- Lithuanian
+- Maltese
+- Dutch
+- Norwegian
+- Polish
+- Portuguese
+- Romanian
+- Slovak
+- Slovenian
+- Spanish
+- Swedish
+- Turkish
+
 ## All medical terms and conditions
 
 This is a bundeled named entity which detects medical terms and medical conditions. It detects English terms only. Use this SIT to detect all possible matches of medical terms and conditions.
@@ -140,7 +171,7 @@ No
 
 ### Description
 
-This bundeled named entity matches text that mentions medical conditions if terms are present in curated dictionaries. Use this SIT to There is one curated dictionary per supported language. The dictionaries are from a number of international medical resources. The curated dictionaries incorporate as large a coverage of medical conditions as possible without risking a large number of false positives. Each entry contains the different forms that a single condition is commonly written in to ensure coverage, for example:
+This bundeled named entity matches text that mentions medical conditions that are present in curated dictionaries. There is one curated dictionary per supported language. The dictionaries are from a number of international medical resources. The curated dictionaries incorporate as many medical conditions as possible without risking a large number of false positives. Each entry contains the different forms that a single condition is commonly written in to ensure coverage, for example:
 
 - *TB*
 - *tuberculosis*
@@ -161,12 +192,114 @@ This bundled named entity SIT contains these individual SITs.
 - Surgical procedures
 - Brand medication names
 
-## All physical addreses
+## All Physical Addresses
+
+This is a bundled entity SIT which detects patterns related to physical addresses from all supported countries/regions.
+
+### Format
+
+Various
+
+### Pattern
+
+Various
+
+### Checksum
+
+No
+
+### Description
+
+The matching of street addresses is designed to match strings that a human would identify as a street address. To do this it uses several primary resources:
+
+-	A dictionary of settlements, counties and regions.
+-	A dictionary of street suffixes, like Road, Street, or Avenue.
+-	Patterns of postal codes.
+-	Patterns of address formats.
+
+The resources are different for each country. The primary resources are the patterns of address formats that are used in a given country. The different formats are chosen to make sure that as many addresses as possible are matched, without risking a high number of false positives. These formats allow flexibility for example, an address may omit the postal code or omit a town name or have a street with no street suffix. In all cases such matches are used to increase the confidence of the match.
+
+Note that the patterns are designed to match individual single addresses, not generic locations. So strings such as *Redmond, WA 98052* or *Main Street, Albuquerque* will not be matched.
+
+### Contains
+
+This bundled named entity SIT contains these individual SITs.
+
+
+- Australia physical address
+- Austria physical address
+- Belgium physical address
+- Brazil physical address
+- Bulgaria physical address
+- Canada physical address
+- Croatia physical address
+- Cyprus physical address
+- Czech Republic physical address
+- Denmark physical address
+- Estonia physical address
+- Finland physical address
+- France physical address
+- Germany physical address
+- Greece physical address
+- Hungary physical address
+- Iceland physical address
+- Ireland physical address
+- Italy physical address
+- Latvia physical address
+- Liechtenstein physical address
+- Lithuania physical address
+- Luxembourg physical address
+- Malta physical address
+- Netherlands physical address
+- New Zealand physical address
+- Norway physical address
+- Poland physical address
+- Portugal physical address
+- Romania physical address
+- Slovakia physical address
+- Slovenia physical address
+- Spain physical address
+- Sweden physical address
+- Switzerland physical address
+- Turkey physical address
+- United Kingdom physical address
+- United States physical address
+
+### Supported languages
+
+- English
+- Bulgarian
+- Chinese
+- Croatian
+- Czech
+- Danish
+- Estonian
+- Finnish
+- French
+- German
+- Hungarian
+- Icelandic
+- Irish
+- Italian
+- Japanese
+- Latvian
+- Lithuanian
+- Maltese
+- Dutch
+- Norwegian
+- Polish
+- Portuguese
+- Romanian
+- Slovak
+- Slovenian
+- Spanish
+- Swedish
+- Turkish
 
 <!--
-2	All physical addresses	Detects patterns related to physical addresses from all supported countries/regions
-3	Australia physical address	Detects patterns related to physical addresses from Austria
-4	Austria physical address	Detects patterns related to physical addresses from Belgium
+
+
+4	Belgium
 5	Belgium physical address	Detects patterns related to physical addresses from Brazil
 6	Brazil physical address	Detects patterns related to physical addresses from Bulgaria
 7	Bulgaria physical address	Detects patterns related to physical addresses from Canada
@@ -215,76 +348,9 @@ This bundled named entity SIT contains these individual SITs.
 50	Surgical procedures	Detects surgical procedures, such as ‘appendectomy’. English terms only.
 51	Brand medication names	Detects names of brand medication, such as ‘Tylenol’. English terms only.
 
-## All Physical Addresses
 
-Format
 
-Various
 
-Pattern
-
-Various
-
-Checksum
-
-No
-
-Definition
-
-The matching of street addresses follows a complex grammar designed to match strings that a human would identify as a name with high confidence. To do this it uses several primary resources:
-
-•	A dictionary of settlements, counties and regions
-•	A dictionary of ‘street suffixes’ (Road, Street, Avenue …)
-•	Patterns of postal codes
-•	Patterns of address formats
-
-In each case the resources are different for each country.
-
-Foremost among the resources are the patterns of address formats that are used in a given country, and strings are found that match one of the formats. The different formats are chosen to ensure as many addresses as possible are matched, without risking a high number of false positives. These formats include the flexibility of allowing addresses that, for example, omit the postal code or omit a town name or have a street with no ‘street suffix’, but in all cases such matches are used to increase the confidence of the match.
-
-Note that the patterns are designed to match individual single addresses, not generic locations. Thus strings such as “Redmond, WA 98052” or “Main Street, Albuquerque” will not be matched.
-
-Supported countries are (…. )
-
-contains
-- Australia physical address
-- Austria physical address
-- Belgium physical address
-- Brazil physical address
-- Bulgaria physical address
-- Canada physical address
-- Croatia physical address
-- Cyprus physical address
-- Czech Republic physical address
-- Denmark physical address
-- Estonia physical address
-- Finland physical address
-- France physical address
-- Germany physical address
-- Greece physical address
-- Hungary physical address
-- Iceland physical address
-- Ireland physical address
-- Italy physical address
-- Latvia physical address
-- Liechtenstein physical address
-- Lithuania physical address
-- Luxembourg physical address
-- Malta physical address
-- Netherlands physical address
-- New Zealand physical address
-- Norway physical address
-- Poland physical address
-- Portugal physical address
-- Romania physical address
-- Slovakia physical address
-- Slovenia physical address
-- Spain physical address
-- Sweden physical address
-- Switzerland physical address
-- Turkey physical address
-- United Kingdom physical address
-- United States physical address
 
 
 -->
@@ -486,6 +552,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - iaea
 
 ## Australia business number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -868,10 +935,11 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - national identity card
 - travel document
 - issuing authority
-<!--
+
 ## Australia physical address 
-unbundled named entity, detects patterns related to physical address from Australia
--->
+
+Unbundled named entity, detects patterns related to physical address from Australia.
+
 ### Confidence level
 medium
 
@@ -1093,6 +1161,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Führerscheinnummern
 
 ## Austria identity card
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -1223,6 +1292,14 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 - date of issue
 - date of expiry
+
+## Austria physical address
+
+This unbundled named entity detects patterns related to physical address from Austria. 
+
+### Confidence level
+
+medium
 
 ## Austria social security number
 
@@ -1364,6 +1441,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - tax number
 
 ## Austria value added tax
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
