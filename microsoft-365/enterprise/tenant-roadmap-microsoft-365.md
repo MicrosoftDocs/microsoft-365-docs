@@ -46,7 +46,7 @@ To deploy your tenant:
 
 - Add the [DNS domains](../admin/setup/add-domain.md) for your organization.
 - Use the [setup guides in the Microsoft 365 admin center](setup-guides-for-microsoft-365.md).
-- Build out your [identity infrastructure](identity-roadmap-microsoft-365.md) and [secure your user sign-ins](microsoft-365-secure-sign-in.md).
+- Build out your [identity infrastructure](deploy-identity-solution-overview.md).
 
 ### Move a tenant's geographic locations
 
