@@ -243,6 +243,7 @@ The following fields are collected:
 |size|Size of the support log.|
 |original_path|Path to the support log (always under */Library/Application Support/Microsoft/Defender/wdavdiag/*).|
 |format|Format of the support log.|
+|metadata|Information about the content of the support log.|
 
 #### Diagnostic log upload completed report
 
