@@ -339,7 +339,7 @@ For more information, see [Changes to update channels for Microsoft 365 Apps](/D
 
 ### New admin roles
 
-We've added some new Azure Active Directory admin roles to the <<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+We've added some new Azure Active Directory admin roles to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 - Hybrid identity admin role gives users permission to manage cloud provisioning and authentication services.
 - Network admin role lets users manage network locations and review network insights for Microsoft 365 Software as a Service app.
