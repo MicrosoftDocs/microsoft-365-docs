@@ -46,6 +46,45 @@ And if you'd like to know what's new with other Microsoft cloud services:
 - [Office updates](/OfficeUpdates/)
 - [How to check Windows release health](/windows/deployment/update/check-release-health)
 
+## February 2022
+
+### Net promoter score (NPS) survey insights
+
+You can now view NPS survey data and insights from your users in the Microsoft 365 admin center. With this new feature you can obtain actionable insights from NPS survey responses from your end users, and achieve higher end user delight by addressing any issues and concerns.
+
+In the admin center, go to **Health** > **Product feedback** > **NPS survey insights**.
+
+:::image type="content" source="../media/feedback-whatsnew.png" alt-text="Screenshot: Showing the Feedback page in the Microsoft 365 admin center":::
+
+We've identified the common themes from user feedback. Then we used machine learning models techniques to train the data sets and automatically organize the feedback into Top Topics.
+
+There are nine topics available. Look out for more topics in future updates.
+
+:::image type="content" source="../media/feedback-nine-topics.png" alt-text="Screenshot: Showning the 9 new feedback topics":::
+
+The NPS survey insight dashboard also contains these three new reports and pivots:
+
+- NPS monthly NPS trend volume for the last 12 months
+- Able to identify passives, promoters, and detractors
+- NPS volume per platform and app
+
+To provide you with a better experience using the NPS survey insight dashboard:
+
+- Encourage your end users to submit feedback
+- Confirm in-product surveys policies are enabled
+- Improve diagnosis by turning on Windows Error Reporting
+
+Learn more at [Microsoft product NPS feedback and insights for your organization](manage/manage-feedback-product-insights.md).  
+
+> [!NOTE]
+> If you're interested in joining our design sessions, send us an email at: prosight@microsoft.com
+
+### Microsoft 365 admin center video training
+
+We've updated our Microsoft 365 admin center video training. Go to the [Admin training video library](admin-video-library.yml) page to learn how to set up and manage Microsoft 365 for your business.
+
+:::image type="content" source="../media/admin-library-vid-training.png" alt-text="Screenshot: Showing the admin center video training library":::
+
 ## July 2021
 
 ### Microsoft 365 admin center search
@@ -300,10 +339,10 @@ For more information, see [Changes to update channels for Microsoft 365 Apps](/D
 
 ### New admin roles
 
-We've added some new Azure Active Directory admin roles to the <<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+We've added some new Azure Active Directory admin roles to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 - Hybrid identity admin role gives users permission to manage cloud provisioning and authentication services.
-- Network admin role lets users manage network locations and review network insights for Microsoft 365 Software as a Service apps.
+- Network admin role lets users manage network locations and review network insights for Microsoft 365 Software as a Service app.
 - Printer admin role grants permission to manage all aspects of printers and printer connections.
 - Printer technician is a subset of the Printer admin role where those users can register and unregister printers, and update printer status.
 To find out more about these roles, see [About admin roles](./add-users/about-admin-roles.md).
@@ -405,7 +444,7 @@ We've got two updates for Groups this month:
 
 ### Featured Feedback Fix: Improve "add user" reliability for licensing
 
-We received a lot of feedback from admins about the how hard it is to assign licenses when adding users. We've made the first update to this fix and we've migrated to a more reliable behind-the-scenes service to process those requests. And if something goes wrong, you'll now get an error message that lets you to try again.
+We received a lot of feedback from admins about how hard it is to assign licenses when adding users. We've made the first update to this fix and we've migrated to a more reliable behind-the-scenes service to process those requests. And if something goes wrong, you'll now get an error message that lets you try again.
 
 ![Add user confirmation page with the error.](../media/MAC-WN-ImprovedLicensing.png)
 
