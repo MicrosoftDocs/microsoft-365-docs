@@ -37,8 +37,7 @@ Why a unified audit log? Because you can search the audit log for activities per
 | Azure Information Protection|AipDiscover, AipSensitivityLabelAction, AipProtectionAction, AipFileDeleted, AipHeartBeat |
 | Communication compliance|ComplianceSuperVisionExchange|
 | Content explorer|LabelContentExplorer|
-| Data loss prevention (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange|
-| Defender for Endpoint|DLPEndpoint, MSDEResponseActions, MSDEGeneralSettings, MSDEIndicatorsSettings, MSDERolesSettings|
+| Data loss prevention (DLP)|ComplianceDLPSharePoint, ComplianceDLPExchange, DLPEndpoint|
 | Dynamics 365|CRM|
 | eDiscovery|Discovery, AeD|
 | Exact Data Match|MipExactDataMatch|
