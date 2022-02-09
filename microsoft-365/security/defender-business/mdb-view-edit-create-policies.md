@@ -16,7 +16,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
-- m365initiative-defender-business
+- m365-initiative-defender-business
 ---
 
 # View or edit policies in Microsoft Defender for Business (preview)
@@ -26,7 +26,7 @@ ms.collection:
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-In Microsoft Defender for Business (preview), security settings are configured through policies that are applied to devices. To help simplify your setup and configuration experience, Defender for Business (preview) includes preconfigured policies to help protect your company's devices as soon as they are onboarded. You can use the default policies, edit policies, or create your own policies.
+In Microsoft Defender for Business (preview), security settings are configured through policies that are applied to devices. To help simplify your setup and configuration experience, Defender for Business (preview) includes preconfigured policies to help protect your organization's devices as soon as they are onboarded. You can use the default policies, edit policies, or create your own policies.
 
 **This article describes how to**:
 
@@ -42,10 +42,10 @@ In Microsoft Defender for Business (preview), security settings are configured t
 
 ## Default policies in Defender for Business
 
-In Defender for Business (preview), there are two main types of policies to protect your company's devices:
+In Defender for Business (preview), there are two main types of policies to protect your organization's devices:
 
 - **Next-generation protection policies**, which determine how Microsoft Defender Antivirus and other threat protection features are configured
-- **Firewall policies**, which determine what network traffic is permitted to flow to and from your company's devices
+- **Firewall policies**, which determine what network traffic is permitted to flow to and from your organization's devices
 
 
 ## View your existing policies
@@ -109,7 +109,7 @@ In Defender for Business (preview), there are two main types of policies to prot
 
 7. On the **Device groups** tab, either create a new device group, or use an existing group. Policies are assigned to devices through device groups. Here are some things to keep in mind:
 
-   - Initially, you might only have your default device group, which includes the devices people in your company are using to access company data and email. You can keep and use your default device group.
+   - Initially, you might only have your default device group, which includes the devices people in your organization are using to access organization data and email. You can keep and use your default device group.
    - Create a new device group to apply a policy with specific settings that are different from the default policy. 
    - When you set up your device group, you specify certain criteria, such as the operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. 
    - All device groups, including the default and custom device groups that you define, are stored in Azure Active Directory (Azure AD).
