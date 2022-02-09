@@ -31,6 +31,7 @@ This article lists all sensitive information type entity definitions. Each defin
 > - Medium confidence: 75
 > - High confidence: 85
 
+
 ## ABA routing number
 
 ### Format
@@ -73,7 +74,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
     </Entity>
 ```
 
-
 ### Keywords
 
 #### Keyword_aba_routing
@@ -93,6 +93,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - routing transit number
 - routing#
 - RTN
+
 
 ## All full names
 
@@ -153,6 +154,7 @@ In addition, patterns that a human would see as indicative of names are also mat
 - Swedish
 - Turkish
 
+
 ## All medical terms and conditions
 
 This is a bundeled named entity which detects medical terms and medical conditions. It detects English terms only. Use this SIT to detect all possible matches of medical terms and conditions.
@@ -192,6 +194,7 @@ This bundled named entity SIT contains these individual SITs.
 - Surgical procedures
 - Brand medication names
 
+
 ## All Physical Addresses
 
 This is a bundled entity SIT which detects patterns related to physical addresses from all supported countries/regions.
@@ -223,8 +226,7 @@ Note that the patterns are designed to match individual single addresses, not ge
 
 ### Contains
 
-This bundled named entity SIT contains these individual SITs.
-
+This bundled named entity SIT contains these individual SITs:
 
 - Australia physical address
 - Austria physical address
@@ -297,8 +299,7 @@ This bundled named entity SIT contains these individual SITs.
 - Turkish
 
 <!--
-Canada
-8	Canada physical address	Detects patterns related to physical addresses from Croatia
+Croatia
 9	Croatia physical address	Detects patterns related to physical addresses from Cyprus
 10	Cyprus physical address	Detects patterns related to physical addresses from Czech Republic
 11	Czech Republic physical address	Detects patterns related to physical addresses from Denmark
@@ -397,6 +398,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - documento numero
 - registro nacional de las personas
 - rnp
+
 
 ## Argentina Unique Tax Identification Key (CUIT/CUIL)
 
@@ -545,15 +547,16 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - full names
 - iaea
 
+
 ## Australia business number
 
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
 - information governance
 - records management
 - Microsoft Defender for Cloud Apps
-
 
 ### Format
 
@@ -608,8 +611,11 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - abn
 - businessno#
 
+
 ## Australia company number
+
 This sensitive information type is only available for use in:
+
 - data loss prevention policies
 - communication compliance policies
 - information governance
@@ -667,6 +673,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - australian company no
 - australian company no#
 - australian company number
+
 
 ## Australia driver's license number
 
@@ -819,6 +826,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Driver's License#
 - Driver's Licenses#
 
+
 ## Australia medical account number
 
 ### Format
@@ -930,6 +938,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - travel document
 - issuing authority
 
+
 ## Australia physical addresses 
 
 Unbundled named entity, detects patterns related to physical address from Australia.
@@ -987,6 +996,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - individual tax return
 - tax file number
 - tfn
+
 
 ## Austria driver's license number
 
@@ -1154,6 +1164,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Führerscheinnummer
 - Führerscheinnummern
 
+
 ## Austria identity card
 
 This sensitive information type is only available for use in:
@@ -1203,6 +1214,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - identity number
 - national id
 - personalausweis republik österreich
+
 
 ## Austria passport number
 
@@ -1287,13 +1299,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of issue
 - date of expiry
 
+
 ## Austria physical addresses
 
 This unbundled named entity detects patterns related to physical address from Austria. 
 
 ### Confidence level
 
-medium
+Medium
+
 
 ## Austria social security number
 
@@ -1367,6 +1381,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - versicherungsnummer
 - zdravstveno zavarovanje
 
+
 ## Austria tax identification number
 
 ### Format
@@ -1433,6 +1448,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - tin no
 - tin#
 - tax number
+
 
 ## Austria value added tax
 
@@ -1560,6 +1576,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
+
 ## Azure IAAS database connection string and Azure SQL connection string
 
 ### Format
@@ -1620,6 +1637,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
+
 ## Azure IoT connection string
 
 ### Format
@@ -1668,7 +1686,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 
 #### CEP_common_example_keywords
 
-(Technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
+This sensitive information type identifies these keywords by using a regular expression, not a keyword list.
 
 - contoso
 - fabrikam
@@ -1679,6 +1697,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
+
 
 ## Azure publish setting password
 
@@ -1719,7 +1738,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 
 #### CEP_common_example_keywords
 
-(Technically, this sensitive information type identifies these keywords by using a regular expression, not a keyword list.)
+This sensitive information type identifies these keywords by using a regular expression, not a keyword list.
 
 - contoso
 - fabrikam
@@ -1730,6 +1749,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
+
 
 ## Azure Redis cache connection string
 
@@ -1785,6 +1805,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
+
 
 ## Azure SAS
 
@@ -1880,6 +1901,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
+
 ## Azure storage account key
 
 ### Format
@@ -1946,6 +1968,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
+
 ## Azure Storage account key (generic)
 
 ### Format
@@ -1975,6 +1998,8 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
   </Pattern>
 </Entity>
 ```
+
+
 ## Belgium driver's license number
 
 ### Format
@@ -2009,7 +2034,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 ```
 
 ### Keywords
-
 
 #### Keywords_eu_driver's_license_number
 
@@ -2251,6 +2275,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - tin no
 - tin#
 
+
 ## Belgium passport number
 
 ### Format
@@ -2335,15 +2360,18 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of issue
 - date of expiry
 
+
 ## Belgium physical addresses
 
 This unbundled named entity detects patterns related to physical addresses from Belgium.
 
 ### Confidence level
 
-medium
+Medium
+
 
 ## Belgium value added tax number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -2368,11 +2396,9 @@ This sensitive information type is only available for use in:
 - an optional dot or Hyphen or space
 - four digits
 
-
 ### Checksum
 
 Yes
-
 
 ### Definition
 
@@ -2426,6 +2452,7 @@ This unbundled named entity detects names of brand medication, such as *Tylenol*
 ### Confidence level
 
 High
+
 
 ## Brazil CPF number
 
@@ -2622,6 +2649,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - RG (this keyword is case-sensitive)
 - RIC (this keyword is case-sensitive)
 
+
 ## Brazil physical addresses
 
 This unbundled named entity detects patterns related to physical address from Brazil. 
@@ -2786,7 +2814,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - dlno
 - dl number
 
-
 #### Keywords_bulgaria_eu_driver's_license_number
 
 - свидетелство за управление на мпс
@@ -2794,6 +2821,90 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - сумпс
 - шофьорска книжка
 - шофьорски книжки
+
+
+## Bulgaria passport number
+
+### Format
+
+nine digits without spaces and delimiters
+
+### Pattern
+
+nine digits
+
+### Checksum
+
+No
+
+### Definition
+
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_bulgaria_eu_passport_number` finds content that matches the pattern.
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_bulgaria_eu_passport_number` is found.
+- The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
+
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_bulgaria_eu_passport_number` finds content that matches the pattern.
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_bulgaria_eu_passport_number` is found.
+
+```xml
+      <!-- Bulgaria Passport Number -->
+      <Entity id="f7172b82-c588-4216-845e-4e54e397f29a" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_bulgaria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_bulgaria_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_bulgaria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_bulgaria_eu_passport_number" />
+          </Any>
+        </Pattern>
+      </Entity>
+```
+### Keywords
+
+#### Keywords_eu_passport_number
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
+#### Keywords_bulgaria_eu_passport_number
+
+- номер на паспорта
+- номер на паспорт
+- паспорт №
+
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
+
+
+## Bulgaria physical addresses
+
+This unbundled named entity detects patterns related to physical address from Bulgaria. 
+
+### Confidence level
+
+Medium
 
 ## Bulgaria uniform civil number
 This sensitive information type is only available for use in:
@@ -2893,88 +3004,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - униформгражданскиid#
 - униформгражданскине.#
 
-
-## Bulgaria passport number
-
-### Format
-
-nine digits without spaces and delimiters
-
-### Pattern
-
-nine digits
-
-### Checksum
-
-No
-
-### Definition
-
-A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_bulgaria_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_bulgaria_eu_passport_number` is found.
-- The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
-
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_bulgaria_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_bulgaria_eu_passport_number` is found.
-
-```xml
-      <!-- Bulgaria Passport Number -->
-      <Entity id="f7172b82-c588-4216-845e-4e54e397f29a" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Regex_bulgaria_eu_passport_number" />
-          <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number" />
-            <Match idRef="Keywords_bulgaria_eu_passport_number" />
-          </Any>
-          <Any minMatches="1">
-            <Match idRef="Regex_eu_passport_date1" />
-            <Match idRef="Keywords_eu_passport_date" />
-          </Any>
-        </Pattern>
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_bulgaria_eu_passport_number" />
-          <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number" />
-            <Match idRef="Keywords_bulgaria_eu_passport_number" />
-          </Any>
-        </Pattern>
-      </Entity>
-```
-### Keywords
-
-#### Keywords_eu_passport_number
-
-- passport#
-- passport #
-- passportid
-- passports
-- passportno
-- passport no
-- passportnumber
-- passport number
-- passportnumbers
-- passport numbers
-
-#### Keywords_bulgaria_eu_passport_number
-
-- номер на паспорта
-- номер на паспорт
-- паспорт №
-
-#### Keywords_eu_passport_date
-
-- date of issue
-- date of expiry
-
-## Bulgaria physical addresses
-
-This unbundled named entity detects patterns related to physical address from Bulgaria. 
-
-### Confidence level
-
-Medium
 
 ## Canada bank account number
 
@@ -3463,6 +3492,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Nova Scotia
 - Prince Edward Island
 - Canada
+
+
+## Canada physical addresses
+
+This unbundled named entity detects patterns related to physical address from Canada. 
+
+### Confidence level
+
+Medium
 
 
 ## Canada social insurance number
@@ -3999,7 +4037,6 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - 银联
 
 
-
 ## Croatia driver's license number
 
 ### Format
@@ -4371,6 +4408,16 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - tin no
 - tin#
 
+
+## Croatia physical addresses
+
+This unbundled named entity detects patterns related to physical address from Croatia. 
+
+### Confidence level
+
+Medium
+
+
 ## Cyprus drivers license number
 
 ### Format
@@ -4535,6 +4582,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Cyprus identity card
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
