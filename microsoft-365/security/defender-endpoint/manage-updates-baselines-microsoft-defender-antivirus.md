@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 02/04/2022
+ms.date: 02/09/2022
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
@@ -94,6 +94,12 @@ Security intelligence update version: 1.357.8.0 <br/>
 ### What's new
 
 - Behavior monitoring improvements in filtering performance
+- Hardening to TrustedInstaller
+- Tamper protection improvements
+- Replaced `ScanScheduleTime` with new `ScanScheduleOffest` cmdlet in [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy configures the number of minutes after midnight to perform a scheduled scan.
+- Added the `-ServiceHealthReportInterval` setting to [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy configures the time interval (in minutes) to perform a scheduled scan.
+- Added the `AllowSwitchToAsyncInspection` setting to [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy enables a performance optimization, that allows synchronously inspected network flows, to switch to async inspection once they have been checked and validated.
+- Performance Analyzer v2 updates: Remote PowerShell and PowerShell 7.x support added. See [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
 
 ### Known Issues
 
