@@ -19,15 +19,31 @@ description: Learn how to provision, use, and customize the Contracts Management
 
 The Contracts Management site is a ready-to-deploy and customizable SharePoint site template that helps your organization maximize the value of SharePoint Syntex. The site is designed to let you create a professional site to manage, process, and track the status of contracts in your organization.
 
+![Screenshot of the Contracts Management site template provisioning page.](../media/content-understanding/contracts-management-site-home-page.png)
+
+## Features of the Contract Management site
+
 The Contract Management site includes pre-populated pages, web parts, and site navigation. The site can be customized to incorporate your organization's own branding, employee information, policy and planning information, workflow, contacts, and resources.
 
-Users of the site can launch a contract request directly to the contracts team. Users can also store and manage contracts and templates in a centralized, secure repository. The site uses the power of a SharePoint Syntex model running on a document library to classify documents and extract metadata. 
+The site uses the power of a SharePoint Syntex model running on document libraries to classify documents and extract metadata. The site provides document libraries to get started quickly, but you can also create your own as needed. Document libraries include the following:
 
-![Screenshot of the Contracts Management site template provisioning page.](../media/content-understanding/contracts-management-site-provisioning-page.png)
+- **Regions** - Classify contract documents by geographical area, country, or region.
+
+- **Templates** - Select the appropriate contract template for the type of contract, such as nondisclosure agreements, service agreements, and statements of work.
+
+- **Contract requests** - Launch a contract request directly to your contracts team.
+
+- **Clients** - Find client information in one convenient location.
+
+- **Models** - Use this library of models to classify documents and extract metadata.
+
+- **Sample contract library** - Discover a variety of sample documents to help you train models. 
 
 ## Provision the Contracts Management site
 
 The Contracts Management site can be provisioned from the [SharePoint look book service](https://lookbook.microsoft.com/).
+
+![Screenshot of the Contracts Management site template provisioning page.](../media/content-understanding/contracts-management-site-provisioning-page.png)
 
 > [!NOTE]
 > You must be a global administrator or SharePoint administrator in Microsoft 365 to provision the site. You also must have a SharePoint Syntex license to add this site template to your organization.
@@ -73,7 +89,7 @@ You have control of the site navigation for the Contracts Management site. Use t
 - Use [audience targeting](https://support.microsoft.com/office/target-navigation-news-and-files-to-specific-audiences-33d84cb6-14ed-4e53-a426-74c38ea32293) to target specific navigational links to specific users. 
 - [Delete unwanted pages](https://support.microsoft.com/office/delete-a-page-from-a-sharepoint-site-1d4197b8-31b6-460d-906b-3fb492a51db1) if you need to.
 
-## Share the site with others
+## Share the Contract Management site with others
 
 [Share your site with others](https://support.microsoft.com/office/share-a-site-958771a8-d041-4eb8-b51c-afea2eae3658). Partner with others in your organization to ensure the Contracts Management site is widely known and adopted.
 
