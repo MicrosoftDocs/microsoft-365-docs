@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 01/10/2022
+ms.date: 02/07/2022
 ---
 
 # Microsoft Defender for Endpoint Device Control Removable Storage Access Control
@@ -23,7 +23,7 @@ ms.date: 01/10/2022
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
-> The Group Policy management of this product is now generally available (4.18.2106): See [Tech Community blog: Protect your removable storage and printer with Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806) 
+> The Group Policy management and Intune OMA-URI/Custom Policy management of this product are now generally available (4.18.2106): See [Tech Community blog: Protect your removable storage and printer with Microsoft Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806).
 
 
 Microsoft Defender for Endpoint Device Control Removable Storage Access Control enables you to do the following task:
@@ -109,7 +109,7 @@ To help familiarize you with Microsoft Defender for Endpoint Removable Storage A
 1. Create groups
 
     1. Group 1: Any removable storage and CD/DVD. An example of a removable storage and CD/DVD is: Group **9b28fae8-72f7-4267-a1a5-685f747a7146** in the sample [Any Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
-    
+
     2. Group 2: Approved USBs based on device properties. An example for this use case is:
     Instance ID - Group **65fa649a-a111-4912-9294-fb6337a25038** in the sample [Approved USBs Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
@@ -119,7 +119,7 @@ To help familiarize you with Microsoft Defender for Endpoint Removable Storage A
 2. Create policy
 
     1. Policy 1: Block Write and Execute Access but allow approved USBs. An example for this use case is: PolicyRule **c544a991-5786-4402-949e-a032cb790d0e** in the sample [Scenario 1 Block Write and Execute Access but allow approved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
-    
+
     2. Policy 2: Audit Write and Execute access to allowed USBs. An example for this use case is: PolicyRule **36ae1037-a639-4cff-946b-b36c53089a4c** in the sample [Scenario 1 Audit Write and Execute access to approved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
 ### Scenario 2: Audit Write and Execute access to all but block specific unapproved USBs
@@ -128,7 +128,7 @@ To help familiarize you with Microsoft Defender for Endpoint Removable Storage A
 
     1. Group 1: Any removable storage and CD/DVD. An example for this use case is:
     Group **9b28fae8-72f7-4267-a1a5-685f747a7146** in the sample [Any Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
-    
+
     2. Group 2: Unapproved USBs based on device properties, for example, Vendor ID / Product ID, Friendly Name – Group **65fa649a-a111-4912-9294-fb6337a25038** in the sample [Unapproved USBs Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
     > [!TIP]
@@ -137,7 +137,7 @@ To help familiarize you with Microsoft Defender for Endpoint Removable Storage A
 2. Create policy
 
     1. Policy 1: Block Write and Execute access to all but block specific unapproved USBs. An example of this use case is: PolicyRule **23b8e437-66ac-4b32-b3d7-24044637fc98** in the sample [Scenario 2 Audit Write and Execute access to all but block specific unapproved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
-    
+
     2. Policy 2: Audit Write and Execute access to others. An example of this use case is: PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** in the sample [Scenario 2 Audit Write and Execute access to others.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
 ## Deploying and managing policy via Group Policy
@@ -146,7 +146,7 @@ The Removable Storage Access Control feature enables you to apply policy via Gro
 
 ### Licensing
 
-Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3 or Microsoft 365 E5.
+Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3 or Microsoft 365 E5.
 
 ### Deploying policy via Group Policy
 
@@ -172,28 +172,27 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
     :::image type="content" source="images/device-control.png" alt-text="The Device Control screen.":::
 
-4. Default enforcement: allows you to set default access (Deny or Allow) to removable media if there is no policy. For example, you only have policy (either Deny or Allow) for RemovableMediaDevices, but do not have any policy for CdRomDevices or WpdDevices, and you set default Deny through this policy, Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked. 
+4. Default enforcement: allows you to set default access (Deny or Allow) to removable media if there is no policy. For example, you only have policy (either Deny or Allow) for RemovableMediaDevices, but do not have any policy for CdRomDevices or WpdDevices, and you set default Deny through this policy, Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked.
 
    - Once you deploy this setting, you will see **Default Allow** or **Default Deny**.
 
     :::image type="content" source="images/148609579-a7df650b-7792-4085-b552-500b28a35885.png" alt-text="Default Allow or Default Deny PowerShell code":::
 
 5. Enable or Disable Removable Storage Access Control: you can set this value to temporarily disable Removable Storage Access Control.
-     
+
     :::image type="content" source="images/148608318-5cda043d-b996-4146-9642-14fccabcb017.png" alt-text="Device Control settings":::
-    
-   - Once you deploy this setting, you will see ‘Enabled’ or ‘Disabled’ - Disabled means this machine does not have Removable Storage Access Control policy running.   
+
+   - Once you deploy this setting, you will see ‘Enabled’ or ‘Disabled’ - Disabled means this machine does not have Removable Storage Access Control policy running.
 
     :::image type="content" source="images/148609685-4c05f002-5cbe-4aab-9245-83e730c5449e.png" alt-text="Enabled or Disabled device control in PowerShell code":::
- 
-    
+
 ## Deploying and managing policy via Intune OMA-URI
 
 The Removable Storage Access Control feature enables you to apply policy via OMA-URI to either user or device, or both.
 
 ### Licensing requirements
 
-Before you get started with Removable Storage Access Control, you  must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3 or Microsoft 365 E5.
+Before you get started with Removable Storage Access Control, you  must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control, you must have Microsoft 365 E3 or Microsoft 365 E5.
 
 ### Permission
 
@@ -235,20 +234,19 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
 
     - Data Type: String (XML file)
 
-
 3. Default enforcement: allows you to set default access (Deny or Allow) to removable media if there is no policy. For example, you only have policy (either Deny or Allow) for RemovableMediaDevices, but do not have any policy for CdRomDevices or WpdDevices, and you set default Deny through this policy, Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked.
 
     - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DefaultEnforcement`
 
     - Data Type: Int
-      `DefaultEnforcementAllow = 1
-      `DefaultEnforcementDeny = 2
+
+      `DefaultEnforcementAllow = 1`
+      `DefaultEnforcementDeny = 2`
 
     - Once you deploy this setting, you will see **Default Allow** or **Default Deny**
 
     :::image type="content" source="images/148609590-c67cfab8-8e2c-49f8-be2b-96444e9dfc2c.png" alt-text="Default Enforcement Allow PowerShell code":::
 
-    
 4. Enable or Disable Removable Storage Access Control: you can set this value to temporarily disable Removable Storage Access Control.
 
    - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
@@ -263,8 +261,6 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
 
     :::image type="content" source="images/148609770-3e555883-f26f-45ab-9181-3fb1ff7a38ac.png" alt-text="Removeable Storage Access Control in PowerShell code":::
 
-    
-    
 ## Deploying and managing policy by using Intune user interface
 
 This capability is available in the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>). Go to **Endpoint Security** > **Attack Surface Reduction** > **Create Policy**. Choose **Platform: Windows 10 and later** with **Profile: Device Control**.
@@ -276,24 +272,24 @@ The [Microsoft 365 Defender portal](https://security.microsoft.com/advanced-hunt
 - Microsoft 365 for E5 reporting
 
 ```kusto
-//events triggered by RemovableStoragePolicyTriggered
+//events triggered by RemovableStoragePolicyTriggered
 DeviceEvents
-| where ActionType == "RemovableStoragePolicyTriggered"
-| extend parsed=parse_json(AdditionalFields)
-| extend RemovableStorageAccess = tostring(parsed.RemovableStorageAccess) 
-| extend RemovableStoragePolicyVerdict = tostring(parsed.RemovableStoragePolicyVerdict) 
-| extend MediaBusType = tostring(parsed.BusType) 
-| extend MediaClassGuid = tostring(parsed.ClassGuid)
-| extend MediaClassName = tostring(parsed.ClassName)
-| extend MediaDeviceId = tostring(parsed.DeviceId)
-| extend MediaInstanceId = tostring(parsed.DeviceInstanceId)
-| extend MediaName = tostring(parsed.MediaName)
-| extend RemovableStoragePolicy = tostring(parsed.RemovableStoragePolicy) 
-| extend MediaProductId = tostring(parsed.ProductId) 
-| extend MediaVendorId = tostring(parsed.VendorId) 
-| extend MediaSerialNumber = tostring(parsed.SerialNumber) 
-|project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber
-| order by Timestamp desc
+| where ActionType == "RemovableStoragePolicyTriggered"
+| extend parsed=parse_json(AdditionalFields)
+| extend RemovableStorageAccess = tostring(parsed.RemovableStorageAccess)
+| extend RemovableStoragePolicyVerdict = tostring(parsed.RemovableStoragePolicyVerdict)
+| extend MediaBusType = tostring(parsed.BusType)
+| extend MediaClassGuid = tostring(parsed.ClassGuid)
+| extend MediaClassName = tostring(parsed.ClassName)
+| extend MediaDeviceId = tostring(parsed.DeviceId)
+| extend MediaInstanceId = tostring(parsed.DeviceInstanceId)
+| extend MediaName = tostring(parsed.MediaName)
+| extend RemovableStoragePolicy = tostring(parsed.RemovableStoragePolicy)
+| extend MediaProductId = tostring(parsed.ProductId)
+| extend MediaVendorId = tostring(parsed.VendorId)
+| extend MediaSerialNumber = tostring(parsed.SerialNumber)
+|project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, ActionType, RemovableStorageAccess, RemovableStoragePolicyVerdict, MediaBusType, MediaClassGuid, MediaClassName, MediaDeviceId, MediaInstanceId, MediaName, RemovableStoragePolicy, MediaProductId, MediaVendorId, MediaSerialNumber
+| order by Timestamp desc
 ```
 
 :::image type="content" source="images/block-removable-storage.png" alt-text="The screen depicting the blockage of the removable storage.":::
@@ -316,14 +312,13 @@ If you are deploying and managing the policy via Group Policy, please make sure 
 
 We don't backport the Group Policy configuration UX, but you can still get the related adml and admx files by clicking 'Raw' and 'Save as' at the [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) and [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) files.
 
-    
+
 ### How can I know whether the latest policy has been deployed to the target machine?
 
 You can run ‘Get-MpComputerStatus’ on PowerShell as an Administrator. The following value will show whether the latest policy has been applied to the target machine.
 
 :::image type="icon" source="images/148609885-bea388a9-c07d-47ef-b848-999d794d24b8.png" border="false":::
-    
-    
+
 ### How can I know which machine is using out of date antimalware client version in the organization?
 
 You can use following query to get antimalware client version on the Microsoft 365 security portal:

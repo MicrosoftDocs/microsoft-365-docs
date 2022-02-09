@@ -535,13 +535,13 @@ Complete the following steps to enable insider risk analytics:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management**.
 2. Select **Run scan** on the **Scan for insider risks in your organization** card on the insider risk management **Overview** tab. This turns on analytics scanning for your organization. You can also turn on scanning in your organization by navigating to **Insider risk settings** > **Analytics** and enabling **Scan your tenant's user activity to identify potential insider risks**.
-3. On the **Analytics details** pane, select **Run scan** to start the scan for your organization. Analytics scan results may take up to 24 hours before insights are available as reports for review.
+3. On the **Analytics details** pane, select **Run scan** to start the scan for your organization. Analytics scan results may take up to 48 hours before insights are available as reports for review.
 
 ![Insider risk management analytics settings.](../media/insider-risk-settings-analytics-enable.png)
 
 ### Viewing analytics insights and creating new policies
 
-After the first analytics scan is complete for your organization, you can view the insights and recommendations for potentially risky activities by your users. Daily scans will continue unless you turn off analytics for your organization. To view potential risks for your organization, go to the **Overview** tab and select **View results** on the **Insider risk analytics (preview)** card. If the scan for your organization isn't complete, you'll see a message that the scan is still active.
+After the first analytics scan is complete for your organization, you can view the insights and recommendations for potentially risky activities by your users. Daily scans will continue unless you turn off analytics for your organization. To view potential risks for your organization, go to the **Overview** tab and select **View results** on the **Insider risk analytics** card. If the scan for your organization isn't complete, you'll see a message that the scan is still active.
 
 ![Insider risk management analytics report ready card.](../media/insider-risk-analytics-ready-card.png)
 

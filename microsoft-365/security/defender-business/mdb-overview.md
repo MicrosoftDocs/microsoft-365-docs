@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 01/06/2022
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,6 +16,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
+- m365-initiative-defender-business
 ms.custom: intro-overview
 ---
 
@@ -26,7 +27,7 @@ ms.custom: intro-overview
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-Microsoft Defender for Business (preview) is a new endpoint security solution that was designed especially for the small and medium-sized business (up to 300 employees). With this endpoint security solution, your company's devices are better protected from ransomware, malware, phishing, and other threats. 
+Microsoft Defender for Business (preview) is a new endpoint security solution that was designed especially for the small and medium-sized business (up to 300 employees). With this endpoint security solution, your organization's devices are better protected from ransomware, malware, phishing, and other threats. 
 
 This article describes what's included in Defender for Business (preview), with links to learn more about these features and capabilities.
 
@@ -39,9 +40,9 @@ With Defender for Business (preview), you can help protect the devices and data 
 
 - **Enterprise-grade security**. Defender for Business (preview) brings powerful endpoint security capabilities from our industry-leading [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md) solution and optimizes those capabilities for IT administrators to support small and medium-sized businesses.
 
-- **An easy-to-use security solution**. Defender for Business (preview) offers streamlined experiences that guide you to action with recommendations and insights into the security of your endpoints. No specialized knowledge is required, because Defender for Business (preview) offers wizard-driven configuration and default security policies that are designed to help protect your company's devices from day one.
+- **An easy-to-use security solution**. Defender for Business (preview) offers streamlined experiences that guide you to action with recommendations and insights into the security of your endpoints. No specialized knowledge is required, because Defender for Business (preview) offers wizard-driven configuration and default security policies that are designed to help protect your organization's devices from day one.
 
-- **Flexibility for your environment**. Defender for Business (preview) can work with your business environment, whether you are using the Microsoft Cloud, on-premises technology, or non-Microsoft productivity solutions. Defender for Business (preview) works with components that are built into Windows, and with apps for macOS, iOS, and Android devices.
+- **Flexibility for your environment**. Defender for Business (preview) can work with your business environment, whether you're using the Microsoft Cloud, on-premises technology, or non-Microsoft productivity solutions. Defender for Business (preview) works with components that are built into Windows, and with apps for macOS, iOS, and Android devices.
 
 - **Integration with Microsoft 365 Lighthouse**. If you're a Managed Service Provider (MSP) using [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), more capabilities are available. If your customers are using Microsoft 365 Business Premium together with Defender for Business (preview), you can view security incidents and alerts across customer tenants that are onboarded to Microsoft 365 Lighthouse.
 
@@ -64,7 +65,7 @@ With Defender for Business (preview), you can help protect the devices and data 
    - [Navigate the Microsoft 365 Defender portal](mdb-get-started.md)
    - [Try preview scenarios, tutorials, and simulations](mdb-tutorials.md)
 
-- **Provide guidance on managing devices and security policies and settings**
+- **Provide guidance on managing devices and security policies**
    - [Manage devices](mdb-manage-devices.md)
    - [View or edit security policies](mdb-view-edit-policies.md)
    - [Manage custom rules for firewall policies](mdb-custom-rules-firewall.md)  

@@ -89,7 +89,7 @@ tree install_mdatp
 ```Output
 install_mdatp
 ├── files
-│   └── mdatp_onboard.json
+│   └── mdatp_onboard.json
 └── manifests
     └── init.pp
 ```
