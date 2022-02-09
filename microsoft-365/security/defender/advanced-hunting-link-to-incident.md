@@ -31,7 +31,7 @@ ms.technology: m365d
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
-The link to incident feature lets you add advanced hunting query results to a new or existing incident under investigation. This feature helps you easily capture records from advanced hunting activities so you can create a richer timeline or context of events regarding an incident. 
+You can use the link to incident feature to add advanced hunting query results to a new or existing incident under investigation. This feature helps you easily capture records from advanced hunting activities, which enables you to create a richer timeline or context of events regarding an incident. 
 
 ## Link results to new or existing incidents
 
@@ -39,7 +39,7 @@ The link to incident feature lets you add advanced hunting query results to a ne
 
     :::image type="content" source="../../media/link-to-incident-1.png" alt-text="The Query page in the Microsoft 365 Defender portal" lightbox="../../media/link-to-incident-1.png":::
 
-2. In the Results page, select the events or records that are related to a new or current investigation you are working on, then select **Link to incident**.
+2. In the Results page, select the events or records that are related to a new or current investigation you're working on, then select **Link to incident**.
 
     :::image type="content" source="../../media/link-to-incident-1b.png" alt-text="The Link to incident option of the Results tab in the Microsoft 365 Defender portal" lightbox="../../media/link-to-incident-1b.png":::
 
@@ -63,7 +63,7 @@ The link to incident feature lets you add advanced hunting query results to a ne
      :::image type="content" source="../../media/link-to-incident-4-impacted-entities.png" alt-text="The impacted entity in the Link to incident section in the Microsoft 365 Defender portal" lightbox="../../media/link-to-incident-4-impacted-entities.png":::
 
 1. Select **Next**.
-1. Review the details you have provided in the **Summary** section.
+1. Review the details you've provided in the **Summary** section.
    :::image type="content" source="../../media/link-to-incident-5-summary.png" alt-text="The results page in the Link to incident section in the Microsoft 365 Defender portal" lightbox="../../media/link-to-incident-5-summary.png":::
      
 1. Select **Done**.
