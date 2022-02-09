@@ -527,7 +527,7 @@ The global settings for quarantine policies allow you to customize the quarantin
 
      ![Selected languages in the second language box in the global quarantine notification settings of quarantine policies.](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
-   - **Use my company logo**: Select this option to replace the default Microsoft logo that's use at the top of quarantine notifications. Before you do this, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo.
+   - **Use my company logo**: Select this option to replace the default Microsoft logo that's used at the top of quarantine notifications. Before you do this, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo.
 
      The following screenshot shows a custom logo in a quarantine notification:
 

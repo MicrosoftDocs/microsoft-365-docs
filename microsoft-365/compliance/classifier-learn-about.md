@@ -76,9 +76,7 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 - **Discrimination**: Detects explicit discriminatory language and is sensitive to discriminatory language against the African American/Black communities when compared to other communities.
 
 - **Finance**: Detects content in corporate finance, accounting, economy, banking, and investment categories. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
-
-- **Harassment**: Detects a specific category of offensive language text items related to offensive conduct targeting one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, disability.
-
+- **Harassment**: Detects a specific category of offensive language text items related to offensive conduct targeting one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, disability. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
 - **Healthcare**: Detects content in medical and healthcare administration aspects such as medical services, diagnoses, treatment, claims, etc. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
 
 - **HR**: Detects content in human resources related categories of recruitment, interviewing, hiring, training, evaluating, warning, and termination. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, .xla files.
@@ -103,6 +101,9 @@ Microsoft 365 comes with multiple pre-trained classifiers:
 - **Tax**: Detects Tax relation content such as tax planning, tax forms, tax filing, tax regulations. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
 
 - **Threat**: Detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property.
+- **Profanity**: Detects a specific category of offensive language text items that contain expressions that embarrass most people. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
+- **Tax**: Detects Tax relation content such as tax planning, tax forms, tax filing, tax regulations. Detects content in .docx, .docm, .doc, .dotx, .dotm, .dot, .pdf, .rtf, .txt, .one, .msg, .eml, .pptx, .pptm, .ppt, .potx, .potm, .pot, .ppsx, .ppsm, .pps, .ppam, .ppa, .xlsx, .xlsm, .xlsb, .xls, .csv, .xltx, .xltm, .xlt, .xlam, xla files.
+- **Threat**: Detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property. Detects content in .msg, .docx, .pdf, .txt, .rtf, .jpeg, .jpg, .png, .gif, .bmp, .svg files.
 
 These appear in the **Microsoft 365 compliance center** > **Data classification** > **Trainable classifiers** view with the status of `Ready to use`.
 
