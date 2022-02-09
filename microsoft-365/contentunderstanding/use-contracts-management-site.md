@@ -60,7 +60,7 @@ The Contracts Management site can be provisioned from the [SharePoint look book 
 
 5. Select **Open site**, and you’ll see your Contracts Management site. From here, you can explore the site and edit the pages and content. 
 
-For more information about provisioning from the SharePoint look book service, see [Provision a new learning pathways solution](https://docs.microsoft.com/en-us/office365/customlearning/custom_provision).
+For more information about provisioning from the SharePoint look book service, see [Provision a new learning pathways solution](https://docs.microsoft.com/office365/customlearning/custom_provision).
 
 ## Customize the Contracts Management site
 
@@ -103,4 +103,4 @@ Key success factors to managing the Contracts Management site:
 
 ## See also
 
-[Manage contracts using a Microsoft 365 solution](solution-manage-contracts-in-microsoft.365.md)
+[Manage contracts using a Microsoft 365 solution](solution-manage-contracts-in-microsoft-365.md)
