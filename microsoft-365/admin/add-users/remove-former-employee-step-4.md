@@ -186,7 +186,7 @@ To give access to the email messages, calendar, tasks, and contacts of the forme
 
 Make sure to cancel all meetings that the former user had on their calendar. This lets people remove the meetings created by the former user.
 
-If the person had meetings that booked equipment or rooms, they won't be available to be booked until those meetings are cancelled. Read [Delete an appointment or a meeting](https://support.microsoft.com/office/delete-an-appointment-or-a-meeting-2703bfdb-9a07-4396-be3b-a9f79438455b) for the steps.
+If the person had meetings that booked equipment or rooms, they won't be available to be booked until those meetings are canceled. Read [Delete an appointment or a meeting](https://support.microsoft.com/office/delete-an-appointment-or-a-meeting-2703bfdb-9a07-4396-be3b-a9f79438455b) for the steps.
 
 ## Related content
 
