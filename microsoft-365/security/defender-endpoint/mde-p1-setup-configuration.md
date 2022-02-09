@@ -13,7 +13,9 @@ ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365initiative-defender-endpoint
 ---
 
 # Set up and configure Microsoft Defender for Endpoint Plan 1
@@ -184,7 +186,7 @@ Attack surface reduction rules are available on devices running Windows. We reco
 > To learn more about attack surface reduction rules, see the following resources:
 > - [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md)
 > - [View the list of attack surface reduction rules](attack-surface-reduction-rules-reference.md)
-> - [Attack surface reduction rules deployment phase 3: implement](attack-surface-reduction-rules-deployment-phase-3.md)
+> - [Attack surface reduction rules deployment Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md)
 
 ### Ransomware mitigation
 
