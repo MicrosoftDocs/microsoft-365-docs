@@ -66,7 +66,7 @@ For more information, see [Manage the sources for Microsoft Defender Antivirus p
 > - Monthly updates are released in phases, resulting in multiple packages visible in your [Window Server Update Services](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
 > - This article lists changes that are included in the broad release channel. [See the latest broad channel release here](https://www.microsoft.com/security/encyclopedia/adlpackages.aspx?action=info).
 > - To learn more about the gradual rollout process, and to see more information about the next release, see [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md).
-> - To learn more about security intelligence updates, see [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates).
+> - To learn more about security intelligence updates, see [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
 > - If you're looking for a list of Microsoft Defender processes, **[download the mde-urls workbook](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)**, and then select the **Microsoft Defender Processes** worksheet. The mde-urls workbook also lists the services and their associated URLs that your network must be able to connect to, as described in [Enable access to Microsoft Defender for Endpoint service URLs in the proxy server](configure-proxy-internet.md).
 
 ## Monthly platform and engine versions
@@ -80,11 +80,11 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary>January-2022 (Platform: 4.18.2201.x | Engine: 1.1.18900.2)</summary>
+<summary>January-2022 (Platform: 4.18.2201.10 | Engine: 1.1.18900.2)</summary>
 
 &ensp;Security intelligence update version: **1.357.8.0**<br/>
-&ensp;Released: **February 2, 2022**<br/>
-&ensp;Platform: **4.18.2201.x**<br/>
+&ensp;Released: **February 9, 2022**<br/>
+&ensp;Platform: **4.18.2201.10**<br/>
 &ensp;Engine: **1.1.18900.2**<br/>
 &ensp;Support phase: **Security and Critical Updates**<br/>
 
