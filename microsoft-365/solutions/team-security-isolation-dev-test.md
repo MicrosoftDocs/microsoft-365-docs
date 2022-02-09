@@ -1,10 +1,10 @@
 ---
 title: "Configure a team with security isolation in a dev/test environment"
-author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
-ms.author: josephd
-manager: laurawi
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article

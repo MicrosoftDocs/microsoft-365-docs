@@ -2,9 +2,9 @@
 title: "Isolated team for a top-secret project of the Contoso Corporation"
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
-manager: dansimp
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: overview
