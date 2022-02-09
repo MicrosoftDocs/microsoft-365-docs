@@ -297,12 +297,7 @@ This bundled named entity SIT contains these individual SITs.
 - Turkish
 
 <!--
-
-
-4	Belgium
-5	Belgium physical address	Detects patterns related to physical addresses from Brazil
-6	Brazil physical address	Detects patterns related to physical addresses from Bulgaria
-7	Bulgaria physical address	Detects patterns related to physical addresses from Canada
+Canada
 8	Canada physical address	Detects patterns related to physical addresses from Croatia
 9	Croatia physical address	Detects patterns related to physical addresses from Cyprus
 10	Cyprus physical address	Detects patterns related to physical addresses from Czech Republic
@@ -337,7 +332,7 @@ This bundled named entity SIT contains these individual SITs.
 39	United Kingdom physical address	Detects patterns related to physical addresses from United States
 40	United States physical address	Detects patterns related to physical addresses from 
 41	All medical terms and conditions	Detects all medical terms (blood and lab test terms, medications, procedures, etc.) and all medical conditions (diseases, impairments, conditions based on lifestyle, etc.). English terms only.
-42	Blood test terms	Detects terms related to blood tests, such as ‘hCG’. English terms only.
+42	
 43	Types of medication	Detects types of medication, such as ‘insulin’. English terms only.
 44	Diseases	Detects types of diseases, such as ‘diabetes’. English terms only.
 45	Generic medication names	Detects names of generic medication, such as ‘acetaminophen’. English terms only.
@@ -346,7 +341,6 @@ This bundled named entity SIT contains these individual SITs.
 48	Lifestyles that relate to medical conditions	Detects terms related to lifestyles that might result in a medical condition, such as ‘smoking’. English terms only.
 49	Medical specialties	Detects medical specialties, such as ‘dermatology’. English terms only.
 50	Surgical procedures	Detects surgical procedures, such as ‘appendectomy’. English terms only.
-51	Brand medication names	Detects names of brand medication, such as ‘Tylenol’. English terms only.
 
 
 
@@ -936,7 +930,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - travel document
 - issuing authority
 
-## Australia physical address 
+## Australia physical addresses 
 
 Unbundled named entity, detects patterns related to physical address from Australia.
 
@@ -1293,7 +1287,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of issue
 - date of expiry
 
-## Austria physical address
+## Austria physical addresses
 
 This unbundled named entity detects patterns related to physical address from Austria. 
 
@@ -2341,6 +2335,14 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of issue
 - date of expiry
 
+## Belgium physical addresses
+
+This unbundled named entity detects patterns related to physical addresses from Belgium.
+
+### Confidence level
+
+medium
+
 ## Belgium value added tax number
 This sensitive information type is only available for use in:
 - data loss prevention policies
@@ -2408,6 +2410,22 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - btw#
 - vat#
 
+
+## Blood test terms
+
+This unbundled named entity detects terms related to blood tests, such as *hCG*. It supports English terms only.
+
+### Confidence level
+
+High
+
+## Brand medication names
+
+This unbundled named entity detects names of brand medication, such as *Tylenol*. It supports English terms only.
+
+### Confidence level
+
+High
 
 ## Brazil CPF number
 
@@ -2604,6 +2622,13 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - RG (this keyword is case-sensitive)
 - RIC (this keyword is case-sensitive)
 
+## Brazil physical addresses
+
+This unbundled named entity detects patterns related to physical address from Brazil. 
+
+### Confidence level
+
+Medium
 
 ## Bulgaria driver's license number
 
@@ -2942,6 +2967,14 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 - date of issue
 - date of expiry
+
+## Bulgaria physical addresses
+
+This unbundled named entity detects patterns related to physical address from Bulgaria. 
+
+### Confidence level
+
+Medium
 
 ## Canada bank account number
 
