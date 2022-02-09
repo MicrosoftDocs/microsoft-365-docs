@@ -374,10 +374,6 @@
        href: virus-detection-in-spo.md
      - name: What's the difference between junk email and bulk email?
        href: what-s-the-difference-between-junk-email-and-bulk-email.md
-     - name: Configure groups and users for a political campaign dev/test environment
-       href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-     - name: Create team sites in a political campaign dev/test environment
-       href: create-team-sites-in-a-political-campaign-dev-test-environment.md
    - name: Microsoft 365 Defender docs
      items: 
        - name: Microsoft 365 Defender
