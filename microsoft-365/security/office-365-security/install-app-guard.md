@@ -8,7 +8,6 @@ author: schmurky
 manager: dansimp
 audience: ITPro
 ms.topic: article
-
 ms.localizationpriority: medium
 search.appverid: 
   - MET150
@@ -196,7 +195,7 @@ You can also configure Microsoft Defender for Office 365 to work with Defender f
 
 ## Limitations and considerations
 
-* Application Guard for Office is a protected mode that isolates untrusted documents so that they cannot access trusted corporate resources, an intranet, the user's identity, and arbitrary files on the computer. As a result, if a user tries to access a feature that has a dependency on such access—for example, inserting a picture from a local file on disk—the access fails and produces a prompt like the following example. To enable an untrusted document to access trusted resources, users must remove Application Guard protection from the document. 
+* Application Guard for Office is a protected mode that isolates untrusted documents so that they cannot access trusted corporate resources, an intranet, the user's identity, and arbitrary files on the computer. As a result, if a user tries to access a feature that has a dependency on such access, such as inserting a picture from a local file on disk, the access fails and produces a prompt that resembles the following example. To enable an untrusted document to access trusted resources, users must remove Application Guard protection from the document. 
 
   ![Dialog box saying To help you keep safe, this feature is not available.](../../media/ag10-limitations.png)
 
