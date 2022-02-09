@@ -25,7 +25,7 @@ The Contracts Management site is a ready-to-deploy and customizable SharePoint s
 
 The Contract Management site includes pre-populated pages, web parts, and site navigation. The site can be customized to incorporate your organization's own branding, employee information, policy and planning information, workflow, contacts, and resources.
 
-The site uses the power of a SharePoint Syntex model running on document libraries to classify documents and extract metadata. The site provides prebuilt document libraries to get you started quickly, but you can also create your own as needed. The site includes the following libraries:
+The site uses the power of a SharePoint Syntex model running on document libraries to classify documents and extract metadata. The site provides prebuilt document libraries to get you started quickly, but you can also create your own as needed. The site includes the following featured libraries:
 
 - **Regions** – Classify contract documents by geographical area, country, or region.
 
