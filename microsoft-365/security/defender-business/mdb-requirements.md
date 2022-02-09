@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/07/2022
+ms.date: 02/08/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -42,7 +42,7 @@ The following table lists the basic requirements to configure and use Microsoft 
 |:---|:---|
 | Subscription | Microsoft Defender for Business (currently in preview!). See [How to get Microsoft Defender for Business (preview)](get-defender-business.md).<br/><br/>**You're not required to have another Microsoft 365 subscription to try Microsoft Defender for Business** (preview).<br/><br/>If you have multiple subscriptions, the highest subscription takes precedence. For example, if you have Microsoft Defender for Endpoint Plan 2 (purchased or trial subscription), and you get Microsoft Defender for Business (preview), Defender for Endpoint Plan 2 takes precedence. In this case, you won't see the Defender for Business (preview) experience.  |
 | Datacenter | One of the following datacenter locations: <br/>- European Union <br/>- United Kingdom <br/>- United States |
-| User accounts | User accounts are created<br/><br/>Microsoft Defender for Business (preview) licenses are assigned <br/><br/>To get help with this task, see [Add users and assign licenses](../../admin/add-users/add-users.md). |
+| User accounts | User accounts are created in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/><br/>Microsoft Defender for Business (preview) licenses are assigned in the Microsoft 365 admin center<br/><br/>To get help with this task, see [Add users and assign licenses](../../admin/add-users/add-users.md). |
 | Permissions  | To sign up for Microsoft Defender for Business (preview), you must be a Global Admin.<br/><br/>To access the Microsoft 365 Defender portal, users must have one of the following [roles in Azure AD](mdb-roles-permissions.md) assigned: <br/>- Security Reader<br/>- Security Admin<br/>- Global Admin<br/><br/>To learn more, see [Roles and permissions in Microsoft Defender for Business (preview)](mdb-roles-permissions.md). |
 | Browser requirements | Microsoft Edge or Google Chrome |
 | Operating system | To manage devices in Microsoft Defender for Business (preview), your devices must be running one of the following operating systems: <br/>- Windows 10 Business or later <br/>- Windows 10 Professional or later <br/>- Windows 10 Enterprise or later <br/><br/>Make sure that [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) is installed. <br/><br/>If you're already managing devices in Microsoft Intune (or Microsoft Endpoint Manager), or if you're using a non-Microsoft device management solution, your devices must be running one of the [operating systems that are supported in Microsoft Defender for Endpoint](../defender-endpoint/minimum-requirements.md). |
