@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 12/10/2021
+ms.date: 01/26/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -15,13 +15,15 @@ ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- M365-security-compliance
+- m365-security-compliance
 ---
 
 # Get Microsoft Defender for Business (preview)
 
 > [!IMPORTANT]
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Microsoft Defender for Business (preview).
+> Microsoft Defender for Business is now in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. We will onboard an initial set of customers and partners in the coming weeks and will expand the preview leading up to general availability. Note that preview will launch with an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
+> 
+> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
 Microsoft Defender for Business (preview) is available in preview! Participating in the preview program enables you to try out Defender for Business before it becomes generally available. The preview program is available to:
 
@@ -38,8 +40,8 @@ Microsoft Defender for Business (preview) is available in preview! Participating
 
 4. Fill out the form with your contact information. 
 
-   - If you are a customer who is working with a Microsoft partner, in the **Other** box, fill in the company name of the partner. Then choose **Submit**.
-   - If you are a Microsoft partner, make sure to indicate your partnership type and information about customers you are planning to work with.
+   - If you're a customer who is working with a Microsoft partner, in the **Other** box, fill in the organization name of the partner. Then choose **Submit**.
+   - If you're a Microsoft partner, make sure to indicate your partnership type and information about customers you're planning to work with.
 
 5. When you have finished filling out the form, choose **Submit**.
 
@@ -51,7 +53,6 @@ If you're accepted, your email will contain a license code that you'll use to ac
 
 > [!IMPORTANT]
 > If you're a partner, after you have been accepted into the preview program, you must have each customer complete the process described in the section, [Sign up for the preview program](#sign-up-for-the-preview-program). Make sure the customer specifies your Microsoft partner name in the **Other** box.
-
 
 ## Next steps
 

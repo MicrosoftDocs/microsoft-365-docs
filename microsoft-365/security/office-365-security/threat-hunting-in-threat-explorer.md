@@ -15,7 +15,6 @@ ms.collection:
 description: Use Threat Explorer or Real-time detections in the Microsoft 365 Defender portal to investigate and respond to threats efficiently.
 ms.custom: 
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -30,7 +29,7 @@ In this article:
 - [Improvements to threat hunting experience](#improvements-to-threat-hunting-experience)
 
 > [!NOTE]
-> This is part of a **3-article series** on **Threat Explorer (Explorer)**, **email security**, and **Explorer and Real-time detections basics** (such as differences between the tools, and permissions needed to operate them). The other two articles in this series are [Email security with Threat Explorer](email-security-in-microsoft-defender.md) and [Threat Explorer and Real-time detections basics](real-time-detections.md).
+> This is part of a **3-article series** on **Threat Explorer (Explorer)**, **email security**, and **Explorer and Real-time detections** (such as differences between the tools, and permissions needed to operate them). The other two articles in this series are [Email security with Threat Explorer](email-security-in-microsoft-defender.md) and [Threat Explorer and Real-time detections](real-time-detections.md).
 
 
 **Applies to**
@@ -39,7 +38,7 @@ In this article:
 
 If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [permissions](#required-licenses-and-permissions), you can use **Explorer** or **Real-time detections** to detect and remediate threats.
 
-In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration**, and then choose **Explorer** or **Real-time detections**. To do directly to the page, use <https://security.microsoft.com/threatexplorer> or <https://security.microsoft.com/realtimereports>
+In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration**, and then choose **Explorer** or **Real-time detections**. To go directly to the page, use <https://security.microsoft.com/threatexplorer> or <https://security.microsoft.com/realtimereports>.
 
 With these tools, you can:
 
@@ -240,11 +239,11 @@ You must have [Microsoft Defender for Office 365](defender-for-office-365.md) to
 
 To view and use Explorer or Real-time detections, you must have the following permissions:
 
-- For the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
+- In the Microsoft 365 Defender portal:
   - Organization Management
   - Security Administrator (this can be assigned in the Azure Active Directory admin center (<https://aad.portal.azure.com>)
   - Security Reader
-- For Exchange Online:
+- In Exchange Online:
   - Organization Management
   - View-Only Organization Management
   - View-Only Recipients
@@ -253,7 +252,7 @@ To view and use Explorer or Real-time detections, you must have the following pe
 To learn more about roles and permissions, see the following resources:
 
 - [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md)
-- [Feature permissions in Exchange Online](/exchange/permissions-exo/feature-permissions)
+- [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 
 ## More information

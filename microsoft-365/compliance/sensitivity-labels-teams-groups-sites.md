@@ -213,7 +213,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 To remove either of these advanced settings from a sensitivity label, use the same AdvancedSettings parameter syntax, but specify a null string value. For example:
 
 ````powershell
-Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScop=""}
+Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope=""}
 ````
 
 ## Sensitivity label management
@@ -369,6 +369,7 @@ The following apps and services support sensitivity labels configured for sites 
 - Admin centers:
 
   - SharePoint admin center
+  - Teams admin center
   - Azure Active Directory portal
   - Microsoft 365 admin center
   - Microsoft 365 compliance center
@@ -386,7 +387,6 @@ The following apps and services don't currently support sensitivity labels confi
 
 - Admin centers:
 
-  - Teams admin center
   - Exchange admin center
 
 - User apps and services:

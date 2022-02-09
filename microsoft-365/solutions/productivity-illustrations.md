@@ -26,6 +26,16 @@ The logical architecture of productivity services in Microsoft 365, leading with
 |:-----|:-----|
 |[![Teams logical architecture poster.](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Updated January 2021   |Microsoft provides a suite of productivity services that work together to provide collaboration experiences with data governance, security, and compliance capabilities. <br/> <br/>This series of illustrations provides a view into the logical architecture of productivity services for enterprise architects, leading with Microsoft Teams.|
 
+## Corporate communications with Microsoft 365 — a Contoso case study
+Employee engagement is a significant contributor to workplace satisfaction, retention, and productivity at any organization. Across Microsoft 365, there are multiple ways to communicate and engage your audience. 
+
+Knowing which method (or combinations of methods) to use and when to use them depends on your audience and the communication culture of your organization. 
+
+| Item | Description |
+|:-----|:-----|
+|[![Contoso corporate communications scenario poster.](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>Updated January 2022   |This poster illustrates how Contoso keeps employees informed and engaged across popular communication scenarios. Contoso uses a variety of M365 apps, including a new offering, Viva Connections.<br/><br/>**Related solution guides** <br/> <ul><li>[Organizational communications: Guidance, methods, and products](/sharepoint/corporate-communications-overview)|
+
+
 
 ## Groups in Microsoft 365 for IT Architects
 This illustration includes information for IT architects about Microsoft 365 Groups. To learn about configuring and administering Microsoft 365 Groups and teams for collaboration in your organization, see [Set up secure collaboration with Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) and [What is collaboration governance?](/microsoft-365/solutions/collaboration-governance-overview).
@@ -40,7 +50,7 @@ Microsoft provides tools to migrate your on-premises network file shares and Sha
 
 | Item | Description |
 |:-----|:-----|
-|[![Model poster: Migrate to Microsoft 365.](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <p> [PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\|[Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <p> Updated March 2021 |Includes: <ul><li> File share migration</li><li>SharePoint Server migration</li></ul> <p> For more information, see [Migrate your content to Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online).|
+|[![Model poster: Migrate to Microsoft 365.](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf) <p> [PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\|[Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <p> Updated March 2021 |Includes: <ul><li> File share migration</li><li>SharePoint Server migration</li></ul> <p> For more information, see [Migrate your content to Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online).|
 
 ## Microsoft 365 information protection and compliance capabilities
 

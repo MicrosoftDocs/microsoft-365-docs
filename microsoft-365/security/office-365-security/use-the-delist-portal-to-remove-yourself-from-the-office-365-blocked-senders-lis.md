@@ -44,7 +44,15 @@ You will know you have been added to the list when you receive a response to a m
 
 where  _IP address_ is the IP address of the computer on which the mail server runs.
 
-### To use delist portal to remove yourself from the blocked senders list
+## Verify senders before removing them from the blocked senders list
+
+There are good reasons for senders to wind up on the blocked senders list, but mistakes can happen. Take a look at this video for a balanced explanation of blocked senders and delisting.
+<p>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMhvD]
+
+
+## To use delist portal to remove yourself from the blocked senders list
 
 1. In a web browser, go to <https://sender.office.com>.
 
@@ -69,6 +77,14 @@ where  _IP address_ is the IP address of the computer on which the mail server r
 
 See [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md) and [Outbound spam protection in EOP](outbound-spam-controls.md) to prevent an IP from being blocked.
 
-## More information
+### What about error code 5.7.511?
+ 
+When there's a problem delivering an email message that you sent, Microsoft 365 or Office 365 sends an email to let you know. The email you receive is a delivery status notification, also known as a DSN or bounce message. The most common type is called a non-delivery report (NDR) and they tell you that a message wasn't delivered. In certain situations, Microsoft must conduct additional investigations against traffic from your IP, and if you’re receiving the NDR code 5.7.511, you **will not** be able to use the delist portal.
+ 
+>	550 5.7.511 Access denied, banned sender[xxx.xxx.xxx.xxx]. To request removal from this list, forward this message to delist@messaging.microsoft.com. For more information, go to https://go.microsoft.com/fwlink/?LinkId=526653. 
+ 
+In the email to request removal from this list, provide the full NDR code and IP address. Microsoft will contact you within 48 hours with the next steps. 
 
+## More information
+  
 The delisting form for **Outlook.com, the consumer service** can be found [here](https://support.microsoft.com/supportrequestform/8ad563e3-288e-2a61-8122-3ba03d6b8d75). Be sure to read the [FAQ](https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx) first for *submission* direction.
