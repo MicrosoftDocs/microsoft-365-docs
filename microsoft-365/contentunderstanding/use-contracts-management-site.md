@@ -19,17 +19,17 @@ description: Learn how to provision, use, and customize the Contracts Management
 
 The Contracts Management site is a ready-to-deploy and customizable SharePoint site template that helps your organization maximize the value of SharePoint Syntex. The site is designed to let you create a professional site to manage, process, and track the status of contracts in your organization.
 
-![Screenshot of the Contracts Management site template provisioning page.](../media/content-understanding/contracts-management-site-home-page.png)
-
 ## Features of the site
+
+![Screenshot of the Contracts Management site template provisioning page.](../media/content-understanding/contracts-management-site-home-page.png)
 
 The Contract Management site includes pre-populated pages, web parts, and site navigation. The site can be customized to incorporate your organization's own branding, employee information, policy and planning information, workflow, contacts, and resources.
 
-The site uses the power of a SharePoint Syntex model running on document libraries to classify documents and extract metadata. The site provides prebuilt document libraries to get you started quickly, but you can also create your own as needed. Document libraries include the following:
+The site uses the power of a SharePoint Syntex model running on document libraries to classify documents and extract metadata. The site provides prebuilt document libraries to get you started quickly, but you can also create your own as needed. The site includes the following libraries:
 
 - **Regions** – Classify contract documents by geographical area, country, or region.
 
-- **Templates** – Select the appropriate contract template for the type of contract, such as nondisclosure agreements, service agreements, and statements of work.
+- **Templates** – Select the appropriate contract template for the type of contract, such as non-disclosure agreements, service agreements, and statements of work.
 
 - **Contract requests** – Launch a contract request directly to your contracts team.
 
