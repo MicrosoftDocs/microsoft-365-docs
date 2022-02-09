@@ -3,7 +3,7 @@ title: "Securing Teams media traffic for VPN split tunneling"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 2/2/2022
+ms.date: 2/14/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -25,9 +25,8 @@ description: "Securing Teams media traffic for VPN split tunneling"
 >This article is part of a set of articles that address Microsoft 365 optimization for remote users.
 
 >- For an overview of using VPN split tunneling to optimize Microsoft 365 connectivity for remote users, see [Overview: VPN split tunneling for Microsoft 365](microsoft-365-vpn-split-tunnel.md).
->- For a detailed list of VPN split tunneling scenarios, see [Common VPN split tunneling scenarios for Microsoft 365](microsoft-365-vpn-common-scenarios.md).
 >- For detailed guidance on implementing VPN split tunneling, see [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
->- For guidance on securing Teams media traffic in VPN split tunneling environments, see [Securing Teams media traffic for VPN split tunneling](microsoft-365-vpn-securing-teams.md).
+>- For a detailed list of VPN split tunneling scenarios, see [Common VPN split tunneling scenarios for Microsoft 365](microsoft-365-vpn-common-scenarios.md).
 >- For information about how to configure Stream and live events in VPN environments, see [Special considerations for Stream and live events in VPN environments](microsoft-365-vpn-stream-and-live-events.md).
 >- For information about optimizing Microsoft 365 worldwide tenant performance for users in China, see [Microsoft 365 performance optimization for China users](microsoft-365-networking-china.md).
 
@@ -91,8 +90,6 @@ If you need further data to troubleshoot, or are requesting assistance from Micr
 
 [Common VPN split tunneling scenarios for Microsoft 365](microsoft-365-vpn-common-scenarios.md)
 
-[Securing Teams media traffic for VPN split tunneling](microsoft-365-vpn-securing-teams.md)
-
 [Special considerations for Stream and live events in VPN environments](microsoft-365-vpn-stream-and-live-events.md)
 
 [Microsoft 365 performance optimization for China users](microsoft-365-networking-china.md)
@@ -108,3 +105,5 @@ If you need further data to troubleshoot, or are requesting assistance from Micr
 [Enhancing VPN performance at Microsoft: using Windows 10 VPN profiles to allow auto-on connections](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
 [Running on VPN: How Microsoft is keeping its remote workforce connected](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
+
+[Microsoft global network](/azure/networking/microsoft-global-network)

@@ -3,7 +3,7 @@ title: "Special considerations for Stream and live events in VPN environments"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 2/2/2022
+ms.date: 2/14/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -25,10 +25,9 @@ description: "Special considerations for Stream and live events in VPN environme
 >This article is part of a set of articles that address Microsoft 365 optimization for remote users.
 
 >- For an overview of using VPN split tunneling to optimize Microsoft 365 connectivity for remote users, see [Overview: VPN split tunneling for Microsoft 365](microsoft-365-vpn-split-tunnel.md).
->- For a detailed list of VPN split tunneling scenarios, see [Common VPN split tunneling scenarios for Microsoft 365](microsoft-365-vpn-common-scenarios.md).
 >- For detailed guidance on implementing VPN split tunneling, see [Implementing VPN split tunneling for Microsoft 365](microsoft-365-vpn-implement-split-tunnel.md).
+>- For a detailed list of VPN split tunneling scenarios, see [Common VPN split tunneling scenarios for Microsoft 365](microsoft-365-vpn-common-scenarios.md).
 >- For guidance on securing Teams media traffic in VPN split tunneling environments, see [Securing Teams media traffic for VPN split tunneling](microsoft-365-vpn-securing-teams.md).
->- For information about how to configure Stream and live events in VPN environments, see [Special considerations for Stream and live events in VPN environments](microsoft-365-vpn-stream-and-live-events.md).
 >- For information about optimizing Microsoft 365 worldwide tenant performance for users in China, see [Microsoft 365 performance optimization for China users](microsoft-365-networking-china.md).
 
 Microsoft 365 Live Events traffic (this includes attendees to Teams-produced live events and those produced with an external encoder via Teams, Stream, or Yammer) and on-demand Stream traffic is currently categorized as **Default** versus **Optimize** in the [URL/IP list for the service](urls-and-ip-address-ranges.md). These endpoints are categorized as **Default** because they're hosted on CDNs that may also be used by other services. Customers generally prefer to proxy this type of traffic and apply any security elements normally done on endpoints such as these.
@@ -556,8 +555,6 @@ Yes, due to shared FQDNs used for some elements of the service, this is unavoida
 
 [Securing Teams media traffic for VPN split tunneling](microsoft-365-vpn-securing-teams.md)
 
-[Special considerations for Stream and live events in VPN environments](microsoft-365-vpn-stream-and-live-events.md)
-
 [Microsoft 365 performance optimization for China users](microsoft-365-networking-china.md)
 
 [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md)
@@ -571,3 +568,5 @@ Yes, due to shared FQDNs used for some elements of the service, this is unavoida
 [Enhancing VPN performance at Microsoft: using Windows 10 VPN profiles to allow auto-on connections](https://www.microsoft.com/itshowcase/enhancing-remote-access-in-windows-10-with-an-automatic-vpn-profile)
 
 [Running on VPN: How Microsoft is keeping its remote workforce connected](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)
+
+[Microsoft global network](/azure/networking/microsoft-global-network)
