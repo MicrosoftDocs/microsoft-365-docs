@@ -182,6 +182,12 @@ To give access to the email messages, calendar, tasks, and contacts of the forme
 > [!TIP]
 > If you want to import or restore only a few items from an Outlook Data File (.pst), you can open the Outlook Data File. Then, in the navigation pane, drag the items from Outlook Data File folders to your existing Outlook folders.
 
+### Cancel Outlook meetings
+
+Make sure to cancel all meetings that the former user had on their calendar. This lets people remove the meetings created by the former user.
+
+If the person had meetings that booked equipment or rooms, they won't be available to be booked until those meetings are canceled. Read [Delete an appointment or a meeting](https://support.microsoft.com/office/delete-an-appointment-or-a-meeting-2703bfdb-9a07-4396-be3b-a9f79438455b) for the steps.
+
 ## Related content
 
 [Add and remove admins on a OneDrive account](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) (article)
