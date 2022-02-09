@@ -17,9 +17,6 @@ description: "Learn about Learning Tools Interoperability (LTI) Office apps in M
 
 # Integrating Microsoft products with your Learning Management System (LMS)
 
-> [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 - [OneDrive LTI with Canvas](#onedrive-lti-with-canvas)
 - [Teams Meetings LTI with Canvas](#teams-meetings-lti-with-canvas)
 - [Teams Classes LTI](#teams-classes-lti)

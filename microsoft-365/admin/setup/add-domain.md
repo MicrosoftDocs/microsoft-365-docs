@@ -138,6 +138,24 @@ After you finish setup, the MX record for your domain is updated to point to Mic
   
 If you have a website that you use with your business, it will keep working where it is. The Domain Connect setup steps don't affect your website.
 
+### Add an onmicrosoft.com domain
+
+Each Microsoft 365 organization can have up to three onmicrosoft.com domains.
+
+> [!NOTE]
+> You must be a Global admin or a Domain Name admin to add a domain.
+> Creating an additional .onmicrosoft domain and using it as your default will not do a rename for SharePoint Online. To make changes to your .onmicrosoft SharePoint domain you would need to use the [SharePoint domain rename preview](/sharepoint/change-your-sharepoint-domain-name) (currently available to any tenant with less than 1,000 sites).
+> If you're using Microsoft 365 mail services, removal of your initial .onmicrosoft domain is not supported.
+
+
+To add an onmicrosoft.com domain:
+
+1. Go to the Microsoft admin center, **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
+
+2. On the **Overview** tab, select **Add onmicrosoft.com domain**.
+
+You can set any domain you own as your default domain.
+
 ## Related content
 
 [Domains FAQ](domains-faq.yml) (article)</br>

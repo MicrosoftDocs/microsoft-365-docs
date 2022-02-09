@@ -37,6 +37,7 @@ Any of these licenses gives you access to Microsoft 365 Defender features via th
 
 - Microsoft 365 E5 or A5
 - Microsoft 365 E3 with the Microsoft 365 E5 Security add-on
+- Microsoft 365 E3 with the Enterprise Mobility + Security E5 add-on
 - Microsoft 365 A3 with the Microsoft 365 A5 Security add-on
 - Windows 10 Enterprise E5 or A5
 - Windows 11 Enterprise E5 or A5
@@ -69,13 +70,11 @@ For information related to US Government customers, see [Microsoft 365 Defender 
 
 Currently, the Microsoft Defender for Office 365 integration into the unified Microsoft 365 Defender features are not available to customers in the following Office 365 datacenter locations:
 
-- Brazil 
-- Germany 
 - Norway 
-- Singapore 
-- South Africa
-- Switzerland 
+- South Africa 
 - United Arab Emirates 
+- Sweden 
+- Singapore 
 
 
 ## Related topics

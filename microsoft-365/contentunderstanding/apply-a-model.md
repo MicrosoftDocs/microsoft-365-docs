@@ -68,6 +68,27 @@ After applying the model to the document library, you can begin uploading docume
 
 The model identifies any files and folders with the model’s associated content type and lists them in your view. If your model has any extractors, the view displays columns for the data you are extracting from each file or folder.
 
+> [!NOTE]
+> If two or more document understanding models are applied to the same library, the uploaded file is classified using the model that has the highest average confidence score. The extracted entities will be from the applied model only. <br><br>If a custom form processing model and document understanding model are applied to the same library, the file is classified using the document understanding model and any trained extractors for that model. If there are any empty columns that match the form processing model, the columns will be populated using those extracted values.
+
+## Sync changes to one or more libraries
+
+When you publish a model to multiple document libraries and then update the model, such as adding or removing an extractor, you need to push the update to all the libraries that the model has been applied.
+
+To sync changes to all applied libraries:
+
+1. On model home page, in the **Where the model is applied** section, select **Sync all**.
+
+    ![Screenshot showing the Where the model is applied section and the Sync all button highlighted.](../media/content-understanding/sync-all-button.png) 
+
+To sync changes to one or only selected libraries:
+
+1. On model home page, in the **Where the model is applied** section, select the library or libraries you want to apply the changes to.
+
+2. Select **Sync**.
+
+    ![Screenshot showing the Where the model is applied section and the Sync button highlighted.](../media/content-understanding/sync-button.png) 
+
 ## Apply the model to files and folder content already in the document library
 
 While an applied model processes all files and folder content uploaded to the document library after it is applied, you can also do the following to run the model on files and folder content that already exist in the document library prior to the model being applied:
@@ -85,17 +106,25 @@ While an applied model processes all files and folder content uploaded to the do
 
 ### Classification Date field
 
-When a SharePoint Syntex document understanding or form processing model is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
+When a SharePoint Syntex document understanding model (or a form processing model) is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
 
    ![Screenshot of a document library showing the Classification Date column.](../media/content-understanding/class-date-column.png) 
 
-The **Classification Date** field is used by the [**When a file is classified by a content understanding model**](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) trigger to run a Power Automate flow after a Syntex content understanding model has finished processing a file or folder and updated the **Classification Date** field.
+The **Classification Date** field is used by the [**When a file is classified by a content understanding model**](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) trigger to run a Power Automate flow after a model has finished processing the contents of a file or folder and has updated the **Classification Date** field.
 
    ![Flow trigger.](../media/content-understanding/trigger.png)
 
-The **When a file is classified by a content understanding model** trigger can then be used to start another workflow using any extracted information from the file or folder.
+The **When a file is classified by a content understanding model** trigger can then be used to start a flow using any extracted information from the file or folder.
 
+As an example, when a model is stamped with the **Classification Date**, you can use the **Send an email after SharePoint Syntex processes a file** flow to notify users that a new file has been processed and classified by a model in the SharePoint document library.
 
+To run the flow:
+
+1. Select a file, and then select **Integrate** > **Power Automate** > **Create a flow**.
+
+2. On the **Create a flow** panel, select **Send an email after SharePoint Syntex processes a file**.
+
+    ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
 
 ## See Also
 

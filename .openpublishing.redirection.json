@@ -1121,6 +1121,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/csv-file-for-an-id-list-content-search.md",
+      "redirect_url": "/microsoft-365/compliance/content-search",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/compliance/reports-in-security-and-compliance.md",
       "redirect_url": "/microsoft-365/admin/activity-reports/activity-reports",
       "redirect_document_id": false
@@ -1897,8 +1902,68 @@
     },
     {
       "source_path": "enterprise/office-365-germany-endpoints.md",
-      "redirect_url": "/microsoft-365/enterprise/microsoft-365-germany-endpoints",
-      "redirect_document_id": true
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-germany-endpoints.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-migration-opt-in.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-adfs.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-csp.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-devices.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-pre-work.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-azure-ad.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-experience.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-phases.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-experience.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "microsoft-365/enterprise/ms-cloud-germany-transition-add-scc.md",
+      "redirect_url": "https://aka.ms/germanymigrateassist",
+      "redirect_document_id": false  
     },
     {
       "source_path": "enterprise/office-365-ip-web-service.md",
@@ -4211,6 +4276,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/mde-terms-mobile.md",
+      "redirect_url": "/legal/microsoft-365/mde-terms-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/mde-terms-mac.md",
+      "redirect_url": "/legal/microsoft-365/mde-terms-windows",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender/onboard.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/onboard",
       "redirect_document_id": false
@@ -4471,6 +4546,10 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/business-video/index.yml",
+      "redirect_url": "/microsoft-365/admin/admin-video-library",
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/get-assessmnt-1methods-properties.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/get-assessment-methods-properties",
       "redirect_document_id": true
@@ -4496,8 +4575,73 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/enable-siem-integration.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-siem",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/pull-alerts-using-rest-api.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-siem",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/api-portal-mapping.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-siem",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/configure-end-user-interaction-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/configure-local-policy-overrides-microsoft-defender-antivirus",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/attack-surface-reduction-rules.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/configure-attack-surface-reduction.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/audit-windows-defender.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/event-views.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/evaluate-attack-surface-reduction.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-phase-2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/customize-attack-surface-reduction.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-phase-3",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/customize-attack-surface-reduction-phase-1.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-plan",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/customize-attack-surface-phase-2.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-test",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/customize-attack-surface-phase-3.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-implement",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/customize-attack-surface-phase-4.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-operationalize",
       "redirect_document_id": true
     },
     {
@@ -4575,6 +4719,21 @@
       "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows",
       "redirect_document_id": false
     },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/evaluate-defender-endpoint-enable.md",
+      "redirect_url": "/microsoft-365/security/defender/eval-defender-endpoint-enable-eval",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/evaluate-defender-endpoint-overview.md",
+      "redirect_url": "/microsoft-365/security/defender/eval-create-eval-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/evaluate-defender-endpoint-pilot.md",
+      "redirect_url": "/microsoft-365/security/defender/eval-defender-endpoint-pilot",
+      "redirect_document_id": false
+    },     
     {
       "source_path": "microsoft-365/compliance/insider-risk-management-alerts.md",
       "redirect_url": "/microsoft-365/compliance/insider-risk-management-activities",
@@ -4738,6 +4897,11 @@
     {
       "source_path": "microsoft-365/compliance/enable-unlimited-archiving.md",
       "redirect_url": "/microsoft-365/compliance/enable-autoexpanding-archiving",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/put-an-in-place-hold-on-a-soft-deleted-mailbox.md",
+      "redirect_url": "/microsoft-365/compliance/inactive-mailboxes-in-office-365",
       "redirect_document_id": false
     },
     {
@@ -5710,6 +5874,11 @@
       "redirect_url": "/microsoft-365/compliance/device-onboarding-overview",
       "redirect_document_id": false
     },
+{
+      "source_path": "microsoft-365/compliance/get-started-with-retention.md",
+      "redirect_url": "/microsoft-365/compliance/get-started-with-information-governance",
+      "redirect_document_id": false
+    },
     {
       "source_path": "microsoft-365/security/mtp/microsoft-threat-experts.md",
       "redirect_url": "/microsoft-365/security/defender/microsoft-threat-experts",
@@ -5769,6 +5938,26 @@
       "source_path": "microsoft-365/security/defender-endpoint/manage-atp-post-migration-other-tools.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/manage-mde-post-migration-other-tools",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/portal-overview.md",
+      "redirect_url": "/microsoft-365/security/defender/microsoft-365-security-center-mde",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/manage-edr.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/microsoft-defender-security-center.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/service-status.md",
+      "redirect_url": "/microsoft-365/enterprise/view-service-health",
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/learning/configure-cornerstone-content-source.md",
@@ -6213,6 +6402,96 @@
     {
       "source_path": "microsoft-365/business-video/set-up-self-serve-password-reset.md",
       "redirect_url": "/microsoft-365/admin/add-users/let-users-reset-passwords",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender/api-terms.md",
+      "redirect_url": "/legal/microsoft-365/api-terms",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/ios-terms.md",
+      "redirect_url": "/legal/microsoft-365/ios-terms",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/microsoft-message-phishing-report-terms.md",
+      "redirect_url": "/legal/microsoft-365/microsoft-message-phishing-report-terms",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/defender-for-office-365-trial-terms-and-conditions.md",
+      "redirect_url": "/legal/microsoft-365/defender-for-office-365-trial-terms-and-conditions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/android-terms.md",
+      "redirect_url": "/legal/microsoft-365/android-terms",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/get-user-information.md",
+      "redirect_url": "microsoft-365/security/defender-endpoint/management-apis",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/api-terms-of-use.md",
+      "redirect_url": "/legal/microsoft-365/api-terms-of-use",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/mde-terms-windows.md",
+      "redirect_url": "/legal/microsoft-365/mde-terms-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-business/mdb-view-edit-policies.md",
+      "redirect_url": "/microsoft-365/security/defender-business/mdb-view-edit-create-policies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/enterprise/about-microsoft-365-identity.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-identity-model",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/enterprise/identity-roadmap-microsoft-365.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/enterprise/plan-for-directory-synchronization.md",
+      "redirect_url": "/microsoft-365/enterprise/prepare-for-directory-synchronization",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/defender-business/mdb-create-new-policy.md",
+      "redirect_url": "/microsoft-365/security/defender-business/mdb-view-edit-create-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-client-support-certificate-based-authentication.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-client-support-conditional-access.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-client-support-multi-factor-authentication.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-client-support-single-sign-on.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-client-services-app-support.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
       "redirect_document_id": false
     }
   ]

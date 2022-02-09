@@ -80,7 +80,7 @@ The following table describes how to identify different types of holds based on 
 | Excluded from an organization-wide Microsoft 365 retention policy  | `-mbxe9b52bf7ab3b46a286308ecb29624696`                                                         | If a mailbox is excluded from an organization-wide Microsoft 365 retention policy, the GUID for the retention policy that the mailbox is excluded from is displayed in the InPlaceHolds property and is identified by the `-mbx` prefix.                                                                                                     |
 
 ### Get-OrganizationConfig
-If the *InPlaceHolds* property is empty when you run the **Get-Mailbox** cmdlet, there still may be one or more organization-wide Microsoft 365 retention policies applied to the mailbox. Run the following command in Exchange Online PowerShell to get a list of GUIDs for organization-wide Microsoft 365 retention policies.
+If the *InPlaceHolds* property is empty when you run the **Get-Mailbox** cmdlet, there still may be one or more organization-wide Microsoft 365 retention policies applied to the mailbox. Run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to get a list of GUIDs for organization-wide Microsoft 365 retention policies.
 
 ```powershell
 Get-OrganizationConfig | FL InPlaceHolds
@@ -126,7 +126,7 @@ After you obtain the GUID for a hold that is applied to a mailbox, the next step
 
 Run the following commands in Security & Compliance Center PowerShell to identify an eDiscovery hold that's applied to the mailbox. Use the GUID (not including the UniH prefix) for the eDiscovery hold that you identified in Step 1. 
 
-To connect to Security & Compliance Center PowerShell, see  [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+To connect to Security & Compliance Center PowerShell, see [Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 The first command creates a variable that contains information about the hold. This variable is used in the other commands. The second command displays the name of the eDiscovery case the hold is associated with. The third command displays the name of the hold and a list of the mailboxes the hold applies to.
 
@@ -157,7 +157,7 @@ If the GUID for the In-Place Hold starts with the `cld` prefix, be sure to inclu
 
 ### Microsoft 365 retention policies
 
-Run the following command in Security & Compliance Center PowerShell to identity the Microsoft 365 retention policy (organization-wide or specific location) that's applied to the mailbox. Use the GUID (not including the mbx, skp, or grp prefix or the action suffix) that you identified in Step 1.
+[Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) and run the following command to identity the Microsoft 365 retention policy (organization-wide or specific location) that's applied to the mailbox. Use the GUID (not including the mbx, skp, or grp prefix or the action suffix) that you identified in Step 1.
 
 ```powershell
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
@@ -169,12 +169,12 @@ Whenever a user applies a retention label that's configured to *retain* or *reta
 
 - If the mailbox or the user's Microsoft 365 account is deleted, the mailbox becomes an [inactive mailbox](inactive-mailboxes-in-office-365.md).
 - You aren't able to disable the mailbox (either the primary mailbox or the archive mailbox, if it's enabled).
-- Items that have been deleted from the mailbox will follow a different process than when no hold applies:
-    - **Unlabeled items** will initially be retained slightly longer than if no hold were to apply to the mailbox.  The time that it takes for these items to be permanently deleted is determined by the [deleted item retention](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) configuration and how long it takes the item to arrive in the Purges subfolder of the [recoverable items folder](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder).
-    - **Labeled items** will be retained and then deleted in the same way they would be if a Microsoft 365 retention policy applied, but at the individual item level.  If multiple items have different labels that are configured to *retain* or *retain and then delete* content at different intervals, each item will be retained based on the configuration of the applied label.
-- Other holds, such as Microsoft 365 retention policies, eDiscovery holds or litigation hold can extend how long labeled items are retained based on the [principals of retention](retention.md#the-principles-of-retention-or-what-takes-precedence).
+- Items that have been deleted from the mailbox will follow one of two paths depending on if they are labeled or not:
+    - **Unlabeled items** will follow the same path deleted items take when no holds apply to the mailbox.  The time that it takes for these items to be permanently deleted is determined by the [deleted item retention](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) configuration and whether [single item recovery](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder#single-item-recovery) is enabled for the mailbox or not.
+    - **Labeled items** will be retained within the [recoverable items folder](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder#recoverable-items-folder) in the same way they would be if a Microsoft 365 retention policy applied, but at the individual item level.  If multiple items have different labels that are configured to *retain* or *retain and then delete* content at different intervals, each item will be retained based on the configuration of the applied label.
+- Other holds, such as Microsoft 365 retention policies, eDiscovery holds or litigation hold can extend how long labeled items are retained based on the [principles of retention](retention.md#the-principles-of-retention-or-what-takes-precedence).
 
-To view the value of the *ComplianceTagHoldApplied* property for a single mailbox, run the following command in Exchange Online PowerShell:
+To view the value of the *ComplianceTagHoldApplied* property for a single mailbox, run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
 
 ```powershell
 Get-Mailbox <username> | FL ComplianceTagHoldApplied
@@ -192,7 +192,7 @@ After any type of hold is removed from a mailbox, a *delay hold* is applied. Thi
 
 When a delay hold is placed on the mailbox (when either of the previous properties is set to **True**), the mailbox is still considered to be on hold for an unlimited hold duration, as if the mailbox was on Litigation Hold. After 30 days, the delay hold expires, and Microsoft 365 will automatically attempt to remove the delay hold (by setting the DelayHoldApplied or DelayReleaseHoldApplied property to **False**) so that the hold is removed. After either of these properties are set to **False**, the corresponding items that are marked for removal are purged the next time the mailbox is processed by the Managed Folder Assistant.
 
-To view the values for the DelayHoldApplied and DelayReleaseHoldApplied properties for a mailbox, run the following command in Exchange Online PowerShell.
+To view the values for the DelayHoldApplied and DelayReleaseHoldApplied properties for a mailbox, run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ```powershell
 Get-Mailbox <username> | FL *HoldApplied*
@@ -245,7 +245,7 @@ When an organization-wide retention policy is applied or removed to a mailbox, e
 Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds
 ```
 
-### Obtain the GUIDs for any organization-wide retention policies appled to mailboxes
+### Obtain the GUIDs for any organization-wide retention policies applied to mailboxes
 
 ```powershell
 Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds
@@ -286,7 +286,7 @@ When a retention policy is no longer applied to a mailbox, we will place a tempo
 
 After you identify the holds that are applied to a mailbox, you can perform tasks such as changing the duration of the hold, temporarily or permanently removing the hold, or excluding an inactive mailbox from a Microsoft 365 retention policy. For more information about performing tasks related to holds, see one of the following topics:
 
-- Run the [Set-RetentionCompliancePolicy -Identity \<Policy Name> -AddExchangeLocationException \<user mailbox>](/powershell/module/exchange/set-retentioncompliancepolicy) command in Security & Compliance Center PowerShell to exclude a mailbox from an organization-wide Microsoft 365 retention policy. This command can only be used for retention policies where the value for the *ExchangeLocation* property equals `All`.
+- Run the [Set-RetentionCompliancePolicy -Identity \<Policy Name> -AddExchangeLocationException \<user mailbox>](/powershell/module/exchange/set-retentioncompliancepolicy) command in [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) to exclude a mailbox from an organization-wide Microsoft 365 retention policy. This command can only be used for retention policies where the value for the *ExchangeLocation* property equals `All`.
 
 - [Change the hold duration for an inactive mailbox](change-the-hold-duration-for-an-inactive-mailbox.md)
 
