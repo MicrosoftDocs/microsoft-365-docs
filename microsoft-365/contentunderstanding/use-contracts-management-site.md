@@ -27,17 +27,17 @@ The Contract Management site includes pre-populated pages, web parts, and site n
 
 The site uses the power of a SharePoint Syntex model running on document libraries to classify documents and extract metadata. The site provides prebuilt document libraries to get you started quickly, but you can also create your own as needed. Document libraries include the following:
 
-- **Regions** — Classify contract documents by geographical area, country, or region.
+- **Regions** – Classify contract documents by geographical area, country, or region.
 
-- **Templates** — Select the appropriate contract template for the type of contract, such as nondisclosure agreements, service agreements, and statements of work.
+- **Templates** – Select the appropriate contract template for the type of contract, such as nondisclosure agreements, service agreements, and statements of work.
 
-- **Contract requests** — Launch a contract request directly to your contracts team.
+- **Contract requests** – Launch a contract request directly to your contracts team.
 
-- **Clients** — Find client information in one convenient location.
+- **Clients** – Find client information in one convenient location.
 
-- **Models** — Use this library of models to classify documents and extract metadata.
+- **Models** – Use this library of models to classify documents and extract metadata.
 
-- **Sample contract library** — Discover a variety of sample documents to help you train models. 
+- **Sample contract library** – Discover a variety of sample documents to help you train models. 
 
 ## Provision the site
 
