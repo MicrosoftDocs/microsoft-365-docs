@@ -155,6 +155,17 @@ We use machine translation to automatically display messages in your preferred l
 > [!NOTE]
 > The weekly digest and any posts that are emailed are sent in English-only. Recipients can use [Translator for Outlook](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa) to read the message in their preferred language.
 
+## Monthly active users
+
+When you open a message center post, we'll tell you the number of users who've been using that Microsoft 365 app or service in the **Service & monthly active users** section. The numbers are for the last 28 days. This info can help you prioritize which changes you should work on.
+
+:::image type="content" source="../../media/msgctr-mau-teams.png" alt-text="Screenshot: Showing the Microsoft Teams Chat density page in the message center post with monthly active user data":::
+
+The number of monthly users applies to all users who've used that Microsoft 365 app or service on any device.
+
+> [!NOTE]
+> This feature isn't available for all Microsoft 365 apps and services yet. We'll let you know when the feature isn't available.
+
 ## Choose columns
 
 To choose columns, on the **Message center** page, on the far right, select **Choose columns**, and in the **Choose columns** pane, select the ones you want displayed.
