@@ -52,7 +52,7 @@ Use the following table to help determine if you can cancel your subscription yo
 
 |If your subscription has  |You can  |
 |--------------|--------------|
-|25 or fewer licenses  | Cancel your trial or paid subscription online in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 356 admin center</a> at any time.        |
+|25 or fewer licenses  | Cancel your trial or paid subscription online in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> at any time.        |
 |More than 25 licenses   | Reduce the number of licenses to 25 or fewer and try again, or [call support to cancel your subscription](../../admin/get-help-support.md).        |
 
 For subscriptions that don't have a billing profile, you can only cancel during a limited window of time after you buy or renew your subscription. If the cancellation window has passed, [turn off recurring billing](renew-your-subscription.md) to cancel the subscription at the end of its term.

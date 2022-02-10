@@ -130,6 +130,9 @@ You need to tag the documents to teach the model to understand the fields and ta
 
     ![Done.](../media/content-understanding/doc-lib-done.png) 
 
+> [!NOTE]
+> If a custom form processing model and document understanding model are applied to the same library, the file is classified using the document understanding model and any trained extractors for that model. If there are any empty columns that match the form processing model, the columns will be populated using those extracted values.
+
 ### Use flows to extract information
 
 Two flows are available to process a selected file or batch of files in a library where a form processing model has been applied.

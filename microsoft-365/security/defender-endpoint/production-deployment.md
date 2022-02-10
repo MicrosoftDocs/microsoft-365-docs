@@ -78,6 +78,9 @@ Onboarding to Microsoft Defender for Endpoint is easy. From the navigation menu,
 
 From a web browser, navigate to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
+## Data center location
+Microsoft Defender for Endpoint will store and process data in the [same location as used by Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable). If Microsoft 365 Defender has not been turned on yet, onboarding to Microsoft Defender for Endpoint will also turn on Microsoft 365 Defender and a new data center location is automatically selected based on the location of active Microsoft 365 security services. The selected data center location is shown on the screen.
+
 ## Network configuration
 
 If the organization doesn't require the endpoints to use a Proxy to access the Internet, skip this section.
