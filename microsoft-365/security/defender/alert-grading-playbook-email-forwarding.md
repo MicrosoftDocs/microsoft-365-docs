@@ -33,7 +33,7 @@ Threat actors can use compromised user accounts for several malicious purposes, 
 
 Emails can be forwarded either manually or automatically using forwarding rules. Automatic forwarding can be implemented in multiple ways like Inbox Rules, Exchange Transport Rule (ETR), and SMTP Forwarding. While manual forwarding requires direct action from users, they might not be aware of all the auto-forwarded emails. In Microsoft 365, an alert is raised when a user auto-forwards an email to a potentially malicious email address.
 
-This playbook helps you investigate alerts for suspicious email forwarding and quickly grade them as either a True Positive (TP) or a False Positive (FP). You can then take recommended actions for the TP alerts to remediate the attack.
+This playbook helps you investigate Suspicious Email Forwarding Activity alerts and quickly grade them as either a True Positive (TP) or a False Positive (FP). You can then take recommended actions for the TP alerts to remediate the attack.
 
 For an overview of alert grading for Microsoft Defender for Office 365 and Microsoft Defender for Cloud Apps, see the [introduction article](alert-grading-playbooks.md).
 
@@ -47,9 +47,9 @@ The results of using this playbook are:
 
 ## Email forwarding rules
 
-Email forwarding rule allows users to set up a rule to forward email messages sent to a user's mailbox to another user's mailbox inside or outside of the organization. Some email users, particularly those with multiple mailboxes, configure forwarding rules to move employer emails to their private email accounts. Email forwarding is a useful feature but can also pose a security risk because of the potential disclosure of information. Attackers might use this information to attack your organization or its partners.
+Email forwarding rules allow users to create a rule to forward email messages sent to a user's mailbox to another user's mailbox inside or outside of the organization. Some email users, particularly those with multiple mailboxes, configure forwarding rules to move employer emails to their private email accounts. Email forwarding is a useful feature but can also pose a security risk because of the potential disclosure of information. Attackers might use this information to attack your organization or its partners.
 
-### Suspicious email forwarding rules
+### Suspicious email forwarding activity
 
 Attackers might set up email rules to hide incoming emails in the compromised user mailbox to obscure their malicious activities from the user. They might also set rules in the compromised user mailbox to delete emails, move the emails into another less noticeable folder such as an RSS folder, or forward emails to an external account.  
 
@@ -65,7 +65,7 @@ For more information, see these blog posts:
 
 ## Alert details
 
-To review the specific alert, open the **Alerts** page to see the **Activity list** section. Here's an example.
+To review the Suspicious Email Forwarding Activity alert, open the **Alerts** page to see the **Activity list** section. Here's an example.
  
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png" alt-text="List of activities related to the alert" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png":::
 
@@ -171,12 +171,6 @@ To use [advanced Hunting](advanced-hunting-overview.md) queries to gather inform
 - CloudAppEvents -Contains audit log of user activities.
 
 - IdentityLogonEvents - Contains login information for all users.
-
-Here's an example.
-
-:::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-advanced-hunting.png" alt-text="Example of the Advanced hunting page" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-advanced-hunting.png":::
-
-Use queries to gather information for the following questions.
 
 >[!Note]
 >Certain parameters are unique to your organization or network. Fill in these specific parameters as instructed in each query.
