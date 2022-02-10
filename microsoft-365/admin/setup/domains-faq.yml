@@ -81,6 +81,8 @@ sections:
           - eNomCentral
               
           - Europe Registry
+          
+          - Cloudflare
               
           - GoDaddy
               
@@ -179,7 +181,7 @@ sections:
             
           - **You can't rename the onmicrosoft domain after sign-up.** For example, if the initial domain you chose was fourthcoffee.onmicrosoft.com, you can't change it to be fabrikam.onmicrosoft.com. To use a different onmicrosoft.com domain, you'd have to start a new subscription with Microsoft 365. 
               
-          - **You can't rename your team site URL.** Your team site URL is based on your onmicrosoft.com domain name. Unfortunately, because of the way SharePoint Online architecture works, you can't rename the team site. 
+          - **You might not be able to change your SharePoint domain name.** Your SharePoint domain name is based on your onmicrosoft.com domain name. The ability to [change the SharePoint domain name](/sharepoint/change-your-sharepoint-domain-name) is available in public preview for organizations whose total SharePoint sites and OneDrive accounts number fewer than 1000.
               
           - **You can't remove your onmicrosoft domain.** Microsoft 365 needs to keep it around because it's used behind the scenes for your subscription. But you don't have to use the domain yourself after you've added a custom domain. 
               

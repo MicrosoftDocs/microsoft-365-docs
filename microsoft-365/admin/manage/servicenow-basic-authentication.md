@@ -110,7 +110,6 @@ These steps are required to set up the integration between your ServiceNow insta
 
     :::image type="content" source="../../media/ServiceNow-guide/servicenow-guide-image9.png" lightbox="../../media/ServiceNow-guide/servicenow-guide-image9.png" alt-text="Graphical user interface, table Description automatically generated":::
 
-
 1. \[ServiceNow Admin\] Go to **Microsoft 365 Support &gt; Setup** to open the integration workflow.
 
     > [!NOTE]
@@ -125,10 +124,7 @@ These steps are required to set up the integration between your ServiceNow insta
 1. \[ServiceNow Admin\] Configure the environment and setup type.
 
     If this installation is on a test environment, select the option This is a test environment. You will be able to quickly disable this option after the setup and all of your tests are completed later.
-    If your instance allows Basic Authentication for inbound connections, select Yes, otherwise please refer to the [Advanced Setup with AAD](servicenow-aad-oauth-token.md).
-
- :::image type="content" source="../../media/ServiceNow-guide/snowbasic-2.png" lightbox="../../media/ServiceNow-guide/snowbasic-2.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
-
+    If your instance allows Basic Authentication for inbound connections, select Yes, otherwise please refer to the [Advanced Setup with AAD](servicenow-aad-oauth-token.md). :::image type="content" source="../../media/ServiceNow-guide/snowbasic-2.png" lightbox="../../media/ServiceNow-guide/snowbasic-2.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 1. \[ServiceNow Admin\] Enter your Microsoft 365 tenant domain.
 
@@ -138,6 +134,7 @@ These steps are required to set up the integration between your ServiceNow insta
     1. Register the Azure Active Directory (AAD) App.
     1. After completing the instructions in the prerequisites section, click **Done**. Otherwise, follow the instructions in the wizard to create the necessary application registration in AAD.
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-4.png" lightbox="../../media/ServiceNow-guide/snowbasic-4.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+
     1. Register the ServiceNow OAuth App.
     1. After completing the instructions in the prerequisites section, select the newly created OAuth application registration and click Next. Otherwise, follow the instructions to create the entity in ServiceNow and then select the new application registration.
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-5.png" lightbox="../../media/ServiceNow-guide/snowbasic-5.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
@@ -145,10 +142,14 @@ These steps are required to set up the integration between your ServiceNow insta
 1. \[ServiceNow Admin\] Configure Inbound settings.
     1. Configure the Inbound OAuth API endpoint.
     1. After completing the instructions in the prerequisites section, select the newly created OAuth application registration and click Done. Otherwise, follow the instructions to create the entity in then select the new REST endpoint registration.
+     
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-6.png" lightbox="../../media/ServiceNow-guide/snowbasic-6.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+
     1. Configure the Integration User.
     1. After completing the instructions in the prerequisites section, select the newly created integration user and click Next. Otherwise, follow the instructions to create the entity in ServiceNow and then select the new integration user.
+    
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-7.png" lightbox="../../media/ServiceNow-guide/snowbasic-7.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+
 
 1. \[Microsoft 365 Tenant Admin\] Complete the integration in the Microsoft 365 Admin Portal.
 
