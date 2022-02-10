@@ -4905,6 +4905,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/create-search-to-collect-data.md",
+      "redirect_url": "/microsoft-365/compliance/create-draft-collection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/create-tag-groups.md",
+      "redirect_url": "/microsoft-365/compliance/tagging-documents",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/annotating-and-redacting-documents.md",
+      "redirect_url": "/microsoft-365/compliance/view-documents-in-review-set",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/tagging-and-assessment-in-advanced-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/predictive-coding-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/search-statistics-in-advanced-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/collection-statistics-reports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/relevance-module-retirement.md",
+      "redirect_url": "/microsoft-365/compliance/predictive-coding-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/reviewing-data-in-review-set.md",
+      "redirect_url": "/microsoft-365/compliance/review-set-search",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/overview-hardware-based-isolation.md",
       "redirect_url": "/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows",
       "redirect_document_id": false
@@ -6467,6 +6502,50 @@
     {
       "source_path": "microsoft-365/security/defender-business/mdb-create-new-policy.md",
       "redirect_url": "/microsoft-365/security/defender-business/mdb-view-edit-create-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender/m365d-whats-new.md",
+      "redirect_url": "/microsoft-365/security/defender/whats-new?view=o365-worldwide",
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/old-index.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/?view=o365-worldwide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-client-support-certificate-based-authentication.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-client-support-conditional-access.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-client-support-multi-factor-authentication.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-client-support-single-sign-on.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/m365-enterprise-test-lab-guides",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/m365-enterprise-test-lab-guides",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-client-services-app-support.md",
+      "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
       "redirect_document_id": false
     }
   ]
