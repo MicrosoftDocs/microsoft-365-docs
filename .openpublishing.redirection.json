@@ -6534,6 +6534,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/m365-enterprise-test-lab-guides",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/m365-enterprise-test-lab-guides",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/enterprise/microsoft-365-client-services-app-support.md",
       "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
       "redirect_document_id": false
