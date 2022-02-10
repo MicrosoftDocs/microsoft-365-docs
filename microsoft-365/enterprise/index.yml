@@ -46,7 +46,7 @@ conceptualContent:
     # Card
     - title: Deploy key elements
       links:
-        - url: identity-roadmap-microsoft-365.md
+        - url: deploy-identity-solution-overview.md
           itemType: how-to-guide
           text: Identity infrastructure
         - url: /windows/deployment/

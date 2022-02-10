@@ -129,9 +129,7 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
 1. From the dashboard, select **Add device**.
 
-2. Choose the type of device to add. You can choose to add Windows 10, Windows 11, Windows Server 2019, Windows Server 2016, and Linux (Ubuntu).
-
-    :::image type="content" source="../../media/add-machine-optionsnew.png" alt-text="lab setup with device options.":::
+2. Choose the type of device to add. You can choose to add Windows 10, Windows 11, Windows Server 2019, Windows Server 2016, and Linux (Ubuntu). 
 
    > [!NOTE]
    > If something goes wrong with the device creation process, you'll be notified and you'll need to submit a new request. If the device creation fails, it will not be counted against the overall allowed quota.
@@ -151,6 +149,7 @@ Automated investigation settings will be dependent on tenant settings. It will b
 
    > [!TIP]
    > In the **Simulator status** column, you can hover over the information icon to know the installation status of an agent.
+
 
 ## Request for more devices
 
@@ -194,9 +193,12 @@ If you are looking for a pre-made simulation, you can use our ["Do It Yourself" 
 
     ![Image of the connect button for test devices.](images/test-machine-table.png)
 
-2. Save the RDP file and launch it by selecting **Connect**.
 
+2. For **Windows devices**: save the RDP file and launch it by selecting **Connect**.<br> 
     ![Image of remote desktop connection.](images/remote-connection.png)
+
+    For **Linux devices**: you'll need to use a local SSH client and the provided command. 
+
 
     > [!NOTE]
     > If you don't have a copy of the password saved during the initial setup, you can reset the password by selecting **Reset password** from the menu:
