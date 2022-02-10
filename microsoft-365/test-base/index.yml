@@ -42,7 +42,7 @@ landingContent:
           - text: Create Test Base Account
             url: createAccount.md 
           - text: Build a Package
-            url: buildPackage.md
+            url: buildpackage.md
           - text: Upload your package
             url: uploadApplication.md
           - text: Upload your binaries
