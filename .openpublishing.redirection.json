@@ -4905,6 +4905,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/create-search-to-collect-data.md",
+      "redirect_url": "/microsoft-365/compliance/create-draft-collection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/create-tag-groups.md",
+      "redirect_url": "/microsoft-365/compliance/tagging-documents",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/annotating-and-redacting-documents.md",
+      "redirect_url": "/microsoft-365/compliance/view-documents-in-review-set",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/tagging-and-assessment-in-advanced-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/predictive-coding-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/search-statistics-in-advanced-ediscovery.md",
+      "redirect_url": "/microsoft-365/compliance/collection-statistics-reports",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/relevance-module-retirement.md",
+      "redirect_url": "/microsoft-365/compliance/predictive-coding-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/reviewing-data-in-review-set.md",
+      "redirect_url": "/microsoft-365/compliance/review-set-search",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/overview-hardware-based-isolation.md",
       "redirect_url": "/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows",
       "redirect_document_id": false
