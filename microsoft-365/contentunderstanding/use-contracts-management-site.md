@@ -48,9 +48,9 @@ The Contracts Management site can be provisioned from the [SharePoint look book 
 > [!NOTE]
 > You must be a global administrator or SharePoint administrator in Microsoft 365 to provision the site. You also must have a SharePoint Syntex license to add this site template to your organization.
 
-1. From the main page of the [SharePoint look book](https://lookbook.microsoft.com/), on the **View the designs** menu, select **SharePoint Syntex** > **Contracts Management site**.
+1. From the main page of the [SharePoint look book](https://lookbook.microsoft.com/), on the **View the designs** menu, select **SharePoint Syntex** > **SharePoint Syntex Contracts Management**.
 
-2. On the **Contracts Management site** page, select **Add to your tenant**.
+2. On the **Contracts Management** page, select **Add to your tenant**.
 
     ![Screenshot of the Add to your tenant button on the Contracts Management site template provisioning page.](../media/content-understanding/contracts-management-site-add-to-your-tenant.png)
 
