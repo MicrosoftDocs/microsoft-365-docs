@@ -109,7 +109,7 @@ Logo|Partner name|Description
 
 ## SIEM integration
 
-Defender for Endpoint supports SIEM integration through various of methods. This can include specialized SIEM system interface with out of the box connectors, a generic alert API enabling custom implementations, and an action API enabling alert status management. For more information, see [Enable SIEM integration](enable-siem-integration.md).
+Defender for Endpoint supports SIEM integration through various of methods. This can include specialized SIEM system interface with out of the box connectors, a generic alert API enabling custom implementations, and an action API enabling alert status management.
 
 ## Ticketing and IT service management
 

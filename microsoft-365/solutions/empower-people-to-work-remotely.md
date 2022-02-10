@@ -55,7 +55,7 @@ For IT professionals managing onsite and cloud-based infrastructure to enable hy
 
 - Secure
 
-  Sign-ins are secured with multi-factor authentication (MFA) and built-in security features of Microsoft 365 and Windows 10 protect against malware, malicious attacks, and data loss.
+  Sign-ins are secured with multi-factor authentication (MFA) and built-in security features of Microsoft 365 and Windows 11 or 10 protect against malware, malicious attacks, and data loss.
 
 - Managed
 
@@ -71,7 +71,7 @@ For IT professionals managing onsite and cloud-based infrastructure to enable hy
 
   - Shared tasks and workflows to divide up the work and get things done.
 
-For a seamless sign-in experience, your on-premises Active Directory Domain Services (AD DS) user accounts should be synchronized with Azure Active Directory (Azure AD). To protect your Windows 10 devices, they should be enrolled in Intune. Here is a high-level view of the infrastructure.
+For a seamless sign-in experience, your on-premises Active Directory Domain Services (AD DS) user accounts should be synchronized with Azure Active Directory (Azure AD). To protect your Windows 11 or 10 devices, they should be enrolled in Intune. Here is a high-level view of the infrastructure.
 
 ![The basic infrastructure for hybrid workers with Microsoft 365.](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
@@ -85,13 +85,13 @@ To enable the capabilities of Microsoft 365 for your hybrid workers, use these M
 |Self-Service Password Reset (SSPR)|Allow your users to reset or unlock their passwords or accounts.|Microsoft 365 E3 or E5|
 |Azure AD Application Proxy|Provide secure remote access for web-based applications hosted on intranet servers.|Requires separate paid Azure subscription|
 |Azure Point-to-Site VPN|Create a secure connection from a remote worker’s device to your intranet through an Azure virtual network.|Requires separate paid Azure subscription|
-|Windows Virtual Desktop|Support remote workers who can only use their personal and unmanaged devices with virtual desktops running in Azure.|Requires separate paid Azure subscription|
+|Windows 365|Support remote workers who can only use their personal and unmanaged devices with Windows 365 Cloud PCs.|Requires separate paid Azure subscription|
 |Remote Desktop |Allow employees to connect into Windows-based computers on your intranet.|Microsoft 365 E3 or E5|
 |Remote Desktop Services Gateway|Encrypt communications and prevent the RDS hosts from being directly exposed to the Internet.|Requires separate Windows Server licenses|
 |Microsoft Intune|Manage devices and applications.|Microsoft 365 E3 or E5|
 |Configuration Manager|Manage software installations, updates, and settings on your devices|Requires separate Configuration Manager licenses|
-|Desktop Analytics|Determine the update readiness of your Windows clients.|Requires separate Configuration Manager licenses|
-|Windows Autopilot|Set up and pre-configure new Windows 10 devices for productive use.|Microsoft 365 E3 or E5|
+|Endpoint Analytics|Determine the update readiness of your Windows clients.|Requires separate Configuration Manager licenses|
+|Windows Autopilot|Set up and pre-configure new Windows 11 or 10 devices for productive use.|Microsoft 365 E3 or E5|
 |Microsoft Teams, Exchange Online, SharePoint Online and OneDrive, Microsoft 365 Apps, Microsoft Power Platform, and Yammer|Create, communicate, and collaborate.|Microsoft 365 E3 or E5|
 ||||
 
@@ -102,15 +102,13 @@ For a 2-page summary of this solution, see the [Empower hybrid workers poster](h
 
 [![Empower hybrid workers poster.](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pdf)
 
-You can also download this poster in [PowerPoint](https://download.microsoft.com/download/9/b/b/9bb5fa79-74e9-497b-87c5-4021e53d9fc2/hybrid-worker-infrastructure.pptx) format and print it on letter, legal, or tabloid (11 x 17) size paper.
-
 ## Provide hybrid working for all of your workers
 
 You can enable all of your workers to stay productive from anywhere with these devices:
 
-- A modern device, such as a Surface laptop and Windows 10, which has the features, security, and performance to access Microsoft 365 cloud apps and services directly over the web.
+- A modern device, such as a Surface laptop and Windows 11 or 10, which has the features, security, and performance to access Microsoft 365 cloud apps and services directly over the web.
 
-- Any device including older laptops or desktops used from home, which can access Microsoft 365 cloud apps and services indirectly through a quickly deployed [Windows 10-based virtual desktop](empower-people-to-work-remotely-remote-access.md#deploy-azure-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices). This option provides high performance, strong security, and simplified IT management.
+- Any device including older laptops or desktops used from home, which can access Microsoft 365 cloud apps and services indirectly through a [Windows 365 Cloud PC](empower-people-to-work-remotely-remote-access.md#deploy-windows-365-to-provide-remote-access-for-remote-workers-using-personal-devices). This option provides high performance, strong security, and simplified IT management.
 
 ## Next steps
 

@@ -18,7 +18,6 @@ ms.collection:
   - m365initiative-defender-office365
 ms.custom:
   - seo-marvel-apr2020
-  - admindeeplinkDEFENDER
 description: Learn how to use DomainKeys Identified Mail (DKIM) with Microsoft 365 to ensure messages sent from your custom domain are trusted by the destination email systems.
 ms.technology: mdo
 ms.prod: m365-security
@@ -129,7 +128,7 @@ Since both 1024 and 2048 bitness are supported for DKIM keys, these directions w
 - When you **already have DKIM configured**, you rotate bitness by running the following command:
 
   ```powershell
-  Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}
+  Rotate-DkimSigningConfig -KeySize 2048 -Identity <DkimSigningConfigIdParameter>
   ```
 
   **or**
@@ -181,22 +180,22 @@ If you have provisioned custom domains in addition to the initial domain in Micr
 Use the following format for the CNAME records.
 
 > [!IMPORTANT]
-> If you are one of our GCC High customers, we calculate _domainGuid_ differently! Instead of looking up the MX record for your _initialDomain_ to calculate _domainGuid_, instead we calculate it directly from the customized domain. For example, if your customized domain is "contoso.com" your domainGuid becomes "contoso-com", any periods are replaced with a dash. So, regardless of what MX record your initialDomain points to, you'll always use the above method to calculate the domainGuid to use in your CNAME records.
+> If you are one of our GCC High customers, we calculate _customDomainIdentifier_ differently! Instead of looking up the MX record for your _initialDomain_ to calculate _customDomainIdentifier_, instead we calculate it directly from the customized domain. For example, if your customized domain is "contoso.com" your _customDomainIdentifier_ becomes "contoso-com", any periods are replaced with a dash. So, regardless of what MX record your _initialDomain_ points to, you'll always use the above method to calculate the _customDomainIdentifier_ to use in your CNAME records.
 
 ```console
 Host name:            selector1._domainkey
-Points to address or value:    selector1-<domainGUID>._domainkey.<initialDomain>
+Points to address or value:    selector1-<customDomainIdentifier>._domainkey.<initialDomain>
 TTL:                3600
 
 Host name:            selector2._domainkey
-Points to address or value:    selector2-<domainGUID>._domainkey.<initialDomain>
+Points to address or value:    selector2-<customDomainIdentifier>._domainkey.<initialDomain>
 TTL:                3600
 ```
 
 Where:
 
 - For Microsoft 365, the selectors will always be "selector1" or "selector2".
-- _domainGUID_ is the same as the _domainGUID_ in the customized MX record for your custom domain that appears before mail.protection.outlook.com. For example, in the following MX record for the domain contoso.com, the _domainGUID_ is contoso-com:
+- _customDomainIdentifier_ is the same as the _customDomainIdentifier_ in the customized MX record for your custom domain that appears before mail.protection.outlook.com. For example, in the following MX record for the domain contoso.com, the _customDomainIdentifier_ is contoso-com:
 
   > contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
 
@@ -232,19 +231,17 @@ Once you have published the CNAME records in DNS, you are ready to enable DKIM s
 
 #### To enable DKIM signing for your custom domain in the Microsoft 365 Defender portal
 
-1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> using your work or school account.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **DKIM** in the **Rules** section. To go directly to the DKIM page, use <https://security.microsoft.com/dkimv2>.
 
-2. Go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **DKIM** in the **Rules** section. Or, to go directly to the DKIM page, use <https://security.microsoft.com/dkimv2>.
+2. On the **DKIM** page, select the domain by clicking on the name.
 
-3. On the **DKIM** page, select the domain by clicking on the name.
-
-4. In the details flyout that appears, change the **Sign messages for this domain with DKIM signatures** setting to **Enabled** (![Toggle on.](../../media/scc-toggle-on.png))
+3. In the details flyout that appears, change the **Sign messages for this domain with DKIM signatures** setting to **Enabled** (![Toggle on.](../../media/scc-toggle-on.png))
 
    When you're finished, click **Rotate DKIM keys**.
 
-5. Repeat these step for each custom domain.
+4. Repeat these step for each custom domain.
 
-6. If you are configuring DKIM for the first time and see the error 'No DKIM keys saved for this domain' you will have to use Windows PowerShell to enable DKIM signing as explained in the next step.
+5. If you are configuring DKIM for the first time and see the error 'No DKIM keys saved for this domain' you will have to use Windows PowerShell to enable DKIM signing as explained in the next step.
 
 #### To enable DKIM signing for your custom domain by using PowerShell
 
@@ -392,7 +389,7 @@ For example, the DKIM record would look like this:
 
 **Although DKIM is designed to help prevent spoofing, DKIM works better with SPF and DMARC.**
 
-Once you have set up DKIM, if you have not already set up SPF you should do so. For a quick introduction to SPF and to get it configured quickly, see [**Set up SPF in Microsoft 365 to help prevent spoofing**](set-up-spf-in-office-365-to-help-prevent-spoofing.md). For a more in-depth understanding of how Microsoft 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md). 
+Once you have set up DKIM, if you have not already set up SPF you should do so. For a quick introduction to SPF and to get it configured quickly, see [**Set up SPF in Microsoft 365 to help prevent spoofing**](set-up-spf-in-office-365-to-help-prevent-spoofing.md). For a more in-depth understanding of how Microsoft 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md).
 
 Next, see [**Use DMARC to validate email**](use-dmarc-to-validate-email.md). [Anti-spam message headers](anti-spam-message-headers.md) includes the syntax and header fields used by Microsoft 365 for DKIM checks.
 
@@ -406,4 +403,4 @@ Next, see [**Use DMARC to validate email**](use-dmarc-to-validate-email.md). [An
 
 Key rotation via PowerShell: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
 
-[Use DMARC to validate email](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide)
+[Use DMARC to validate email](use-dmarc-to-validate-email.md)

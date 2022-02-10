@@ -35,7 +35,7 @@ For more information about retention policies and how retention works in Microso
 
 ## Before you begin
 
-The global admin for your organization has full permissions to create and edit retention policies. If you aren't signing in as a global admin, see [Permissions required to create and manage retention policies and retention labels](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
+The global admin for your organization has full permissions to create and edit retention policies. If you aren't signing in as a global admin, see the [permissions information for information governance](get-started-with-information-governance.md#permissions-for-retention-policies-and-retention-labels).
 
 Decide before you create your retention policy whether it will be **adaptive** or **static**. For more information, see [Adaptive or static policy scopes for retention](retention.md#adaptive-or-static-policy-scopes-for-retention). If you decide to use an adaptive policy, you must create one or more adaptive scopes before you create your retention policy, and then select them during the create retention policy process. For instructions, see [Configuration information for adaptive scopes](retention-settings.md#configuration-information-for-adaptive-scopes).
 
@@ -68,7 +68,7 @@ When you have more than one retention policy, and when you also use retention la
 
 ### Retention policy for Teams locations
 
-1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Policies** > **Retention**.
+1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Information Governance** > **Retention Policies**.
 
 2. Select **New retention policy** to start the **Create retention policy** configuration, and name your new retention policy.
 
@@ -83,10 +83,7 @@ When you have more than one retention policy, and when you also use retention la
         - **Teams chats**: Messages from private 1:1 chats, group chats, and meeting chats.
         - **Teams private channel messages**: Messages from private channel chats and private channel meetings.
         
-       By default, [all teams and all users are selected](retention-settings.md#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the [**Choose** and **Exclude** options](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions). However, before you change the default, be aware of the following consequences for a retention policy that deletes messages when it's configured for includes or excludes:
-        
-        - For group chat messages and private channel messages, because a copy of messages are saved in each user's mailbox who are included in the chat, copies of messages will continue to be returned in eDiscovery results from users who weren't assigned the policy.
-        - For users who weren't assigned the policy, deleted messages will be returned in their Teams search results but won't display the contents of the message as a result of the permanent deletion from the policy assigned to users.
+       By default, [all teams and all users are selected](retention-settings.md#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the [**Choose** and **Exclude** options](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions).
 
 5. For **Decide if you want to retain content, delete it, or both** page, specify the configuration options for retaining and deleting content.
 
@@ -129,7 +126,7 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 >
 > To use this feature, your Yammer network must be [Native Mode](/yammer/configure-your-yammer-network/overview-native-mode), not Hybrid Mode.
 
-1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Policies** > **Retention**.
+1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Information Governance** > **Retention Policies**.
 
 2. Select **New retention policy** to create a new retention policy.
 
@@ -182,7 +179,7 @@ Use the following instructions for retention policies that apply to any of these
 - Microsoft 365 groups
 - Skype for Business
 
-1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Policies** > **Retention**.
+1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Information Governance** > **Retention Policies**.
 
 2. Select **New retention policy** to start the **Create retention policy** configuration, and name your new retention policy.
 
@@ -227,3 +224,9 @@ First, the retention policy needs to be distributed to the locations that you se
 When settings from the retention policy are already applied to content, a change in configuration to the policy will be automatically applied to this content in addition to content that's newly identified.
 
 Some settings can't be changed after the policy is created and saved, which include the name of the retention policy, the scope type (adaptive or static), and the retention settings except the retention period.
+
+## Next steps
+
+If some items for Exchange, SharePoint, OneDrive, or Microsoft 365 Groups need different retention settings from the retention policy settings you've configured, [create retention labels for these exceptions](create-retention-labels-information-governance.md).
+
+However, if you're looking for lifecycle management of high-value items for business, legal, or regulatory record-keeping requirements, [use file plan to create and manage retention labels](file-plan-manager.md).

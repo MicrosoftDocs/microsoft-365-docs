@@ -3,11 +3,11 @@ title: Readiness assessment tools
 description:  Explains the two tools, the checks they run, and the meaning of the results
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 audience: Admin
 ---
@@ -44,14 +44,13 @@ The assessment tool checks these items:
 |Enrollment Status Page     | Confirms that Enrollment Status Page is not enabled      |
 |Intune enrollment     | Verifies that Windows 10 devices in your Azure AD organization are automatically enrolled in Intune         |
 |Microsoft Store for Business     | Confirms that Microsoft Store for Business is enabled and synced with Intune        |
-|Multifactor authentication | Verifies that multifactor authentication isn't applied to Microsoft Managed Desktop service accounts.
+|Multi-factor authentication | Verifies that multi-factor authentication isn't applied to Microsoft Managed Desktop service accounts.
 |PowerShell scripts     | Checks that Windows PowerShell scripts are *not* assigned in a way that would target Microsoft Managed Desktop devices    |
 |Region     | Checks that your region is supported by Microsoft Managed Desktop        |
 |Security baselines     | Checks that the security baseline profile doesn't target all users or all devices (Security baseline policies should *not* target any Microsoft Managed Desktop devices.)       |
 |Windows apps     | Review which apps you want to assign to Microsoft Managed Desktop devices      |
 |Windows Hello for Business     | Checks that Windows Hello for Business is enabled        |
 |Windows 10 update ring     | Checks that Intune's "Windows 10 update ring" policy doesn't target all users or all devices (The policy should *not* target any Microsoft Managed Desktop devices.)     |
-
 
 ## Azure Active Directory settings
 
@@ -60,13 +59,12 @@ The assessment tool checks these items:
 |"Ad hoc" subscriptions for Enterprise State Roaming     | Advises how to check a setting that (if set to "false") might prevent Enterprise State Roaming from working correctly  |
 |Enterprise State Roaming     | Advises how to check that Enterprise State Roaming is enabled       |
 |Licenses     | Checks that you have obtained the necessary [licenses](prerequisites.md#more-about-licenses)         |
-|Multifactor authentication     | Checks that multifactor authentication is not applied to all users (Multifactor authentication must not accidentally be applied to Microsoft Managed Desktop service accounts.)|
+|Multi-factor authentication     | Checks that multi-factor authentication is not applied to all users (multi-factor authentication must not accidentally be applied to Microsoft Managed Desktop service accounts.)|
 |Security account names   | Checks that no user names conflict with ones that Microsoft Managed Desktop reserves for its own use        |
 |Security administrator roles     | Confirms that users with Security Reader, Security Operator, or Global Reader roles have been assigned those roles in Microsoft Defender for Endpoint         |
 |Security defaults | Checks whether your Azure AD organization has security defaults enabled in Azure Active Directory |
 |Self-service password reset     | Confirms that self-service password reset is enabled        |
 |Standard user role     | Verifies that users are standard users and do not have local administrator rights         |
-
 
 ## Microsoft 365 Apps for enterprise settings
 
@@ -74,9 +72,7 @@ The assessment tool checks these items:
 |---------|---------|
 |OneDrive for Business     | Checks whether OneDrive for Business is using unsupported settings.        |
 
-
 For each check, the tool will report one of four possible results:
-
 
 |Result  |Meaning  |
 |---------|---------|
@@ -93,12 +89,12 @@ After you've completed enrollment in Microsoft Managed Desktop, remember to go b
 
 1. Review [prerequisites for Microsoft Managed Desktop](prerequisites.md).
 2. Run readiness assessment tools (this article).
-1. Buy [Company Portal](../get-started/company-portal.md).
-1. Review [prerequisites for guest accounts](guest-accounts.md).
-1. Check [network configuration](network.md).
-1. [Prepare certificates and network profiles](certs-wifi-lan.md).
-1. [Prepare user access to data](authentication.md).
-1. [Prepare apps](apps.md).
-1. [Prepare mapped drives](mapped-drives.md).
-1. [Prepare printing resources](printing.md).
-1. Address [device names](address-device-names.md).
+3. Buy [Company Portal](../get-started/company-portal.md).
+4. Review [prerequisites for guest accounts](guest-accounts.md).
+5. Check [network configuration](network.md).
+6. [Prepare certificates and network profiles](certs-wifi-lan.md).
+7. [Prepare user access to data](authentication.md).
+8. [Prepare apps](apps.md).
+9. [Prepare mapped drives](mapped-drives.md).
+10. [Prepare printing resources](printing.md).
+11. Address [device names](address-device-names.md).

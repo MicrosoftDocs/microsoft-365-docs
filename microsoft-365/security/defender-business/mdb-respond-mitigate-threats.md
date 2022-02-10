@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 12/13/2021
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,6 +16,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
+- m365-initiative-defender-business
 ---
 
 # Respond to and mitigate threats in Microsoft Defender for Business (preview)
@@ -25,7 +26,14 @@ ms.collection:
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-The Microsoft 365 Defender portal enables your security team to respond to and mitigate detected threats.
+The Microsoft 365 Defender portal enables your security team to respond to and mitigate detected threats. This article walks you through an example of how you can use Defender for Business (preview).
+
+>
+> **Got a minute?**
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
+
+## View detected threats
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
@@ -37,7 +45,7 @@ The Microsoft 365 Defender portal enables your security team to respond to and m
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Screenshot of device inventory":::
 
-   The **Device inventory** page lists company devices, along with their risk level and exposure level.
+   The **Device inventory** page lists organization devices, along with their risk level and exposure level.
 
 4. Select an item, such as a device. A flyout pane opens and displays more information about alerts and incidents generated for that item, as shown in the following image:  
 
