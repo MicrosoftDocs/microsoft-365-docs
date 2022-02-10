@@ -21,7 +21,7 @@ The Contracts Management site is a ready-to-deploy and customizable SharePoint s
 
 ## Features of the site
 
-![Screenshot of the Contracts Management site template provisioning page.](../media/content-understanding/contracts-management-site-home-page.png)
+![Screenshot of the Contracts Management site template home page.](../media/content-understanding/contracts-management-site-home-page.png)
 
 The Contract Management site includes pre-populated pages, web parts, and site navigation. The site can be customized to incorporate your organization's own branding, employee information, policy and planning information, workflow, contacts, and resources.
 
