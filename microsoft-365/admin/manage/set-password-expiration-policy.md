@@ -18,6 +18,7 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkMAC
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -40,6 +41,9 @@ Current research strongly indicates that mandated password changes do more harm 
 You must be a [global admin](../add-users/about-admin-roles.md) to perform these steps.
 
 If you're a user, you don't have the permissions to set your password to never expire. Ask your work or school technical support to do the steps in this article for you.
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Set password expiration policy
 
