@@ -34,13 +34,15 @@ The Content Center site can be provisioned from the [SharePoint look book servic
 > [!NOTE]
 > You must be a global administrator or SharePoint administrator in Microsoft 365 to provision the site.
 
-1. From the main page of the [SharePoint look book](https://lookbook.microsoft.com/), on the **View the designs** menu, select **SharePoint Syntex** > **Content Center site**.
+1. From the main page of the [SharePoint look book](https://lookbook.microsoft.com/), on the **View the designs** menu, select **SharePoint Syntex** > **SharePoint Syntex Content Center**.
 
-2. On the **Content Center site** page, select **Add to your tenant**.
+2. On the **Content Center** page, select **Add to your tenant**.
 
     ![Screenshot of the Add to your tenant button on the Content Center site template provisioning page.](../media/content-understanding/content-center-site-add-to-your-tenant.png)
 
-3. Enter your email address (for a notification of when your site is ready to use), the title you want to use for your site, and the site URL you want to use. 
+3. Enter your email address (for a notification of when your site is ready to use), the site URL you want to use, and the title you want to use for your site. 
+
+    ![Screenshot of the Add to your tenant button on the Content Center site template provisioning page.](../media/content-understanding/content-center-email-and-url.png)
 
 4. Select **Provision**, and in a short time your site will be ready for you to use. You’ll get an email (sent to the email address you provided) indicating that your request to provision the Content Center site template is completed.
 
