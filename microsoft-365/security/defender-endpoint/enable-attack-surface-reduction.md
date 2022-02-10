@@ -14,16 +14,16 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.date: 10/14/2021
-ms.collection: m365-security-compliance
+ms.collection: m365solution-scenario
 ms.custom: admindeeplinkDEFENDER
+ms.date: 1/18/2022
 ---
 
 # Enable attack surface reduction rules
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -51,7 +51,7 @@ To use the entire feature-set of attack surface reduction rules, you need:
 - [Cloud-Delivery Protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) on (some rules require that)
 - Windows 10 Enterprise E5 or E3 License
 
-Although attack surface reduction rules don't require a [Windows E5 license](/windows/deployment/deploy-enterprise-licenses), with a Windows E5 license, you get advanced management capabilities including monitoring, analytics, and workflows available in Defender for Endpoint, as well as reporting and configuration capabilities in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a>. These advanced capabilities aren't available with an E3 license, but you can still use Event Viewer to review attack surface reduction rule events.
+Although attack surface reduction rules don't require a [Windows E5 license](/windows/deployment/deploy-enterprise-licenses), with a Windows E5 license, you get advanced management capabilities including monitoring, analytics, and workflows available in Defender for Endpoint, as well as reporting and configuration capabilities in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. These advanced capabilities aren't available with an E3 license, but you can still use Event Viewer to review attack surface reduction rule events.
 
 Each ASR rule contains one of four settings:
 
@@ -63,7 +63,7 @@ Each ASR rule contains one of four settings:
 > [!IMPORTANT]
 > Currently, warn mode is not supported for three ASR rules when you configure ASR rules in Microsoft Endpoint Manager (MEM). To learn more, see [Cases where warn mode is not supported](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported).
 
-It's highly recommended to use ASR rules with a Windows E5 license (or similar licensing SKU) to take advantage of the advanced monitoring and reporting capabilities available in [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint). However, if you have another license, such as Windows Professional or Windows E3 that don't include advanced monitoring and reporting capabilities, you can develop your own monitoring and reporting tools on top of the events that are generated at each endpoint when ASR rules are triggered (for example, Event Forwarding).
+We recommend using ASR rules with a Windows E5 license (or similar licensing SKU) to take advantage of the advanced monitoring and reporting capabilities available in [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint). However, if you have another license, such as Windows Professional or Windows E3 that don't include advanced monitoring and reporting capabilities, you can develop your own monitoring and reporting tools on top of the events that are generated at each endpoint when ASR rules are triggered (for example, Event Forwarding).
 
 > [!TIP]
 > To learn more about Windows licensing, see [Windows 10 Licensing](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) and get the [Volume Licensing guide for Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
@@ -97,6 +97,7 @@ The following procedures for enabling ASR rules include instructions for how to 
 ## Intune
 
 **Device Configuration Profiles**
+
 1. Select **Device configuration** \> **Profiles**. Choose an existing endpoint protection profile or create a new one. To create a new one, select **Create profile** and enter information for this profile. For **Profile type**, select **Endpoint protection**. If you've chosen an existing profile, select **Properties** and then select **Settings**.
 
 2. In the **Endpoint protection** pane, select **Windows Defender Exploit Guard**, then select **Attack Surface Reduction**. Select the desired setting for each ASR rule.
@@ -108,6 +109,7 @@ The following procedures for enabling ASR rules include instructions for how to 
 4. Select **OK** on the three configuration panes. Then select **Create** if you're creating a new endpoint protection file or **Save** if you're editing an existing one.
 
 **Endpoint security policy**
+
 1. Select **Endpoint Security** \> **Attack surface reduction**. Choose an existing ASR rule or create a new one. To create a new one, select **Create Policy** and enter information for this profile. For **Profile type**, select **Attack surface reduction rules**. If you've chosen an existing profile, select **Properties** and then select **Settings**.
 
 2. In the **Configuration settings** pane, select **Attack Surface Reduction** and then select the desired setting for each ASR rule.
@@ -120,9 +122,9 @@ The following procedures for enabling ASR rules include instructions for how to 
 
 ## MEM
 
-You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rules. The following procedure uses the rule [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules.md#block-abuse-of-exploited-vulnerable-signed-drivers) for the example.
+You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rules. The following procedure uses the rule [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers) for the example.
 
-1. Open the Microsoft Endpoint Manager (MEM) admin center. In the **Home** menu, click  **Devices**, select **Configuration profile**, and then click **Create profile**.
+1. Open the Microsoft Endpoint Manager (MEM) admin center. In the **Home** menu, click  **Devices**, select **Configuration profiles**, and then click **Create profile**.
 
    > [!div class="mx-imgBorder"]
    > ![MEM Create Profile.](images/mem01-create-profile.png)
@@ -132,7 +134,7 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
    - In **Platform**, select **Windows 10 and later**
    - In **Profile type**, select **Templates**
 
-   Select **Custom**, and then click **Create**.
+   Select **Custom**, and then select **Create**.
 
    > [!div class="mx-imgBorder"]
    > ![MEM rule profile attributes.](images/mem02-profile-attributes.png)
@@ -151,9 +153,10 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
 
    - In **Name**, type a name for the rule.
    - In **Description**, type a brief description.
-   - In **OMA-URI**, type or paste the specific OMA-URI link for the rule that you are adding. Refer to the MEM section earlier in this article for the OMA-URI to use for this example rule. For Azure Site Recovery rule GUIDS, see [Per rule descriptions](attack-surface-reduction-rules.md#per-rule-descriptions) in the topic: Attack surface reduction rules.
+   - In **OMA-URI**, type or paste the specific OMA-URI link for the rule that you are adding. Refer to the MDM section in this article for the OMA-URI to use for this example rule. For attack surface reduction rule GUIDS, see [Per rule descriptions](attack-surface-reduction-rules-reference.md#per-rule-descriptions) in the topic: Attack surface reduction rules.
    - In **Data type**, select **String**.
    - In **Value**, type or paste the GUID value, the \= sign and the State value with no spaces (_GUID=StateValue_). Where:
+     
      - 0 : Disable (Disable the ASR rule)
      - 1 : Block (Enable the ASR rule)
      - 2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)
@@ -162,12 +165,12 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
    > [!div class="mx-imgBorder"]
    > ![MEM OMA URI configuration.](images/mem05-add-row-oma-uri.png)
 
-6. Click **Save**. **Add Row** closes. In **Custom**, click **Next**. In step **3 Scope tags**, scope tags are optional. Do one of the following:
+6. Select **Save**. **Add Row** closes. In **Custom**, select **Next**. In step **3 Scope tags**, scope tags are optional. Do one of the following:
 
-   - Click **Select Scope tags**, select the scope tag (optional) and then click **Next**.
-   - Or click **Next**
+   - Select **Select Scope tags**, select the scope tag (optional) and then select **Next**.
+   - Or select **Next**
 
-7. In step **4 Assignments**, in **Included Groups** - for the groups that you want this rule to apply - select from the following options:
+7. In step **4 Assignments**, in **Included Groups**, for the groups that you want this rule to apply, select from the following options:
 
    - **Add groups**
    - **Add all users**
@@ -176,7 +179,7 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
    > [!div class="mx-imgBorder"]
    > ![MEM assignments.](images/mem06-4-assignments.png)
 
-8. In **Excluded groups**, select any groups that you want to exclude from this rule, and then click **Next**.
+8. In **Excluded groups**, select any groups that you want to exclude from this rule, and then select **Next**.
 
 9. In step **5 Applicability Rules** for the following settings, do the following:
 
@@ -187,7 +190,7 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
    > [!div class="mx-imgBorder"]
    > ![MEM Applicability rules.](images/mem07-5-applicability-rules.png)
 
-10. Click **Next**. In step **6 Review + create**, review the settings and information you have selected and entered, and then click **Create**.
+10. Select **Next**. In step **6 Review + create**, review the settings and information you have selected and entered, and then select **Create**.
 
     > [!div class="mx-imgBorder"]
     > ![MEM Review and create.](images/mem08-6-review-create.png)
@@ -206,7 +209,7 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) configuration service provider (CSP) to individually enable and set the mode for each rule.
 
-The following is a sample for reference, using GUID values for [attack surface reduction rules](attack-surface-reduction-rules.md).
+The following is a sample for reference, using GUID values for [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md).
 
 `OMA-URI path: ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules`
 
@@ -242,7 +245,7 @@ Example:
 
 5. Review the settings and select **Next** to create the policy.
 
-6. After the policy is created, **Close**.
+6. After the policy is created, select **Close**.
 
 ## Group Policy
 
@@ -282,7 +285,7 @@ Example:
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**.
 
-2. Type one of the following cmdlets. (Refer to [Attack surface reduction rules](attack-surface-reduction-rules.md) for more details, such as rule ID.)
+2. Type one of the following cmdlets. (Refer to [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md) for more details, such as rule ID.)
 
     ```PowerShell
     Set-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Enabled
@@ -340,6 +343,6 @@ Example:
 
 ## Related articles
 
-- [Attack surface reduction rules](attack-surface-reduction-rules.md)
+- [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 - [Evaluate attack surface reduction](evaluate-attack-surface-reduction.md)
 - [Attack surface reduction FAQ](attack-surface-reduction.md)

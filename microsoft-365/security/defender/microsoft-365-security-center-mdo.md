@@ -14,7 +14,6 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
 ms.custom: admindeeplinkDEFENDER
 ms.prod: m365-security
 ms.technology: m365d
@@ -64,7 +63,7 @@ If you are looking for compliance-related items, visit the <a href="https://go.m
 
 ## New and improved capabilities
 
-The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in this security center.
+The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in this Defender for Cloud.
 
 With the unified Microsoft 365 Defender solution, you can stitch together the threat signals and determine the full scope and impact of the threat, and how it's currently impacting the organization.
 
@@ -123,7 +122,7 @@ The [Email entity page](../office-365-security/mdo-email-entity-page.md) *unifie
 
 View reports, change your settings, and modify user roles.
 
-:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="The quick launch menu for Microsoft 365 Defender permissions and reporting, on the left side of the security center.":::
+:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="The quick launch menu for Microsoft 365 Defender permissions and reporting, on the left side of the Microsoft 365 Defender portal.":::
 
 > [!NOTE]
 > DomainKeys Identified Mail (DKIM) ensures that destination email systems trust messages sent outbound from your custom domain.

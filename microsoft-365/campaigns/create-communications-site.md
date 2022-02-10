@@ -1,5 +1,5 @@
 ---
-title: "Create a communications site"
+title: "Create a SharePoint communications site"
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -22,10 +22,10 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Create a communications site for your campaign or business."
+description: "Learn why and how to create a SharePoint communications site for your campaign or business with Microsoft 365."
 ---
 
-# Create a communications site
+# Create a communications site in SharePoint
 
 A great way to communicate priorities, share strategy documents, and highlight upcoming events is to use a communications site in SharePoint. Communications sites are for sharing things broadly across your whole business or campaign; it's your internal strategy site.
 

@@ -46,7 +46,7 @@ You can also manage custom detections that apply to data from specific Microsoft
 To manage required permissions, a **global administrator** can:
 
 - Assign the **security administrator** or **security operator** role in [Microsoft 365 admin center](https://admin.microsoft.com/) under **Roles** > **Security admin**.
-- Check RBAC settings for Microsoft Defender for Endpoint in [Microsoft Defender Security Center](https://securitycenter.windows.com/) under **Settings** > **Permissions** > **Roles**. Select the corresponding role to assign the **manage security settings** permission.
+- Check RBAC settings for Microsoft Defender for Endpoint in [Microsoft 365 Defender](https://security.microsoft.com/) under **Settings** > **Permissions** > **Roles**. Select the corresponding role to assign the **manage security settings** permission.
 
 > [!NOTE]
 > To manage custom detections, **security operators** will need the **manage security settings** permission in Microsoft Defender for Endpoint if RBAC is turned on.

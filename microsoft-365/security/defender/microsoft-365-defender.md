@@ -8,17 +8,22 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - M365-security-compliance
   - m365initiative-m365-defender
-ms.custom: admindeeplinkDEFENDER
+  - m365solution-m365-defender
+  - m365solution-scenario
+  - m365solution-overview
+ms.custom: 
+  - admindeeplinkDEFENDER
+  - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
 ---
@@ -36,13 +41,13 @@ ms.technology: m365d
 
 Microsoft 365 Defender is a unified pre- and post-breach enterprise defense suite that natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
 
-With the integrated Microsoft 365 Defender solution, security professionals can stitch together the threat signals that each of these products receive and determine the full scope and impact of the threat; how it entered the environment, what it's affected, and how it's currently impacting the organization. Microsoft 365 Defender takes automatic action to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities.  
+With the integrated Microsoft 365 Defender solution, security professionals can stitch together the threat signals that each of these products receive and determine the full scope and impact of the threat; how it entered the environment, what it's affected, and how it's currently impacting the organization. Microsoft 365 Defender takes automatic action to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities.
 
 <center><h2>Microsoft 365 Defender services</center></h2>
 <table><tr><td><center><b><a href="/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint"><b>Microsoft Defender for Endpoint</b></center></a></td>
 <td><center><b><a href="/microsoft-365/security/office-365-security/overview"><b>Microsoft Defender for Office 365</b></center></a></td>
 <td><center><b><a href="/defender-for-identity/"><b>Microsoft Defender for Identity</b></a></center></td>
-<td><center><b><a href="/cloud-app-security/"><b>Microsoft Cloud App Security</b></a></center></td>
+<td><center><b><a href="/cloud-app-security/"><b>Microsoft Defender for Cloud Apps</b></a></center></td>
 </tr>
 </table>
 <br>
@@ -55,14 +60,14 @@ In this interactive guide, you'll learn how to protect your organization with Mi
 
 ## Microsoft 365 Defender protection
 
-Microsoft 365 Defender services protect: 
+Microsoft 365 Defender services protect:
 
-- **Endpoints with Defender for Endpoint** - Defender for Endpoint is a unified endpoint platform for preventative protection, post-breach detection, automated investigation, and response. 
-- **Email and collaboration with Defender for Office 365** - Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools. 
+- **Endpoints with Defender for Endpoint** - Defender for Endpoint is a unified endpoint platform for preventative protection, post-breach detection, automated investigation, and response.
+- **Email and collaboration with Defender for Office 365** - Defender for Office 365 safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools.
 - **Identities with  Defender for Identity and Azure Active Directory (Azure AD) Identity Protection** - Defender for Identity uses your on-premises Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Azure AD Identity Protection automates the detection and remediation of identity-based risks in your cloud-based Azure AD.
-- **Applications with Microsoft Cloud App Security** - Microsoft Cloud App security is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps. 
+- **Applications with Microsoft Defender for Cloud Apps** - Microsoft Defender for Cloud Apps is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww] 
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww]
 
 Microsoft 365 Defender's unique cross-product layer augments the individual service components to:
 
@@ -83,7 +88,7 @@ Here's an example of query-based hunting on top of email and endpoint raw data.
 
 :::image type="content" source="../../media/advanced-hunting.png" alt-text="Example of advanced hunting and a query" lightbox="../../media/advanced-hunting.png":::
 
-Microsoft 365 Defender cross-product features include: 
+Microsoft 365 Defender cross-product features include:
 
 - **Cross-product single pane of glass in the Microsoft 365 Defender portal** - A central view for all information on detections, impacted assets, automated actions taken, and related evidence in a single queue and a single pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. 
 - **Combined incidents queue** - To help security professionals focus on what is critical by ensuring the full attack scope, impacted assets and automated remediation actions are grouped together and surfaced in a timely manner. 
@@ -92,7 +97,7 @@ Microsoft 365 Defender cross-product features include:
    For example, if a malicious file is detected on an endpoint protected by Defender for Endpoint, it will instruct Defender for Office 365 to scan and remove the file from all e-mail messages. The file will be blocked on sight by the entire Microsoft 365 security suite.
 
 - **Self-healing for compromised devices, user identities, and mailboxes** - Microsoft 365 Defender uses AI-powered automatic actions and playbooks to remediate impacted assets back to a secure state. Microsoft 365 Defender leverages automatic remediation capabilities of the suite products to ensure all impacted assets related to an incident are automatically remediated where possible.
-- **Cross-product threat hunting** - Security teams can leverage their unique organizational knowledge to hunt for signs of compromise by creating their own custom queries over the raw data collected by the various protection products. Microsoft 365 Defender provides query-based access to 30 days of historic raw signals and alert data across endpoint and Defender for Office 365 data. 
+- **Cross-product threat hunting** - Security teams can leverage their unique organizational knowledge to hunt for signs of compromise by creating their own custom queries over the raw data collected by the various protection products. Microsoft 365 Defender provides query-based access to 30 days of historic raw signals and alert data across endpoint and Defender for Office 365 data.
 
 ## Get started
 
@@ -100,7 +105,6 @@ Microsoft 365 Defender licensing requirements must be met before you can enable 
 
 - [Licensing requirements](prerequisites.md#licensing-requirements)
 - [Turn on Microsoft 365 Defender](m365d-enable.md)
-
 
 ## The Microsoft 365 Defender portal
 
@@ -111,15 +115,15 @@ This single pane of glass brings together functionality from existing Microsoft 
 - **[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Microsoft Defender for Office 365 helps organizations secure their enterprise with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources.
 - **[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
 - **[Microsoft 365 Defender](microsoft-365-defender.md)** is part of Microsoft’s *Extended Detection and Response* (XDR) solution that leverages the Microsoft 365 security portfolio to automatically analyze threat data across domains, and build a picture of an attack on a single dashboard.
-- **[Microsoft Cloud App Security](/cloud-app-security/)** is a comprehensive cross-SaaS and PaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps. 
+- **[Microsoft Defender for Cloud Apps](/cloud-app-security/)** is a comprehensive cross-SaaS and PaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
 
-If you need information about what's changed from the Office 365 Security & Compliance center or the the Microsoft 365 Defender portal, see:
+If you need information about what's changed from the Office 365 Security & Compliance center or the Microsoft 365 Defender portal, see:
 
 - [Defender for Office 365 in Microsoft 365 Defender](microsoft-365-security-center-mdo.md)
 - [Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 
 > [!NOTE]
-> The Microsoft 365 Defender portal uses and enforces existing roles-based access, and will move each security model into the unified portal. Each converged workload has its own roles-based access. The roles already in the products will be converged into the Microsoft 365 Defender portal automatically. However, roles and permissions for Microsoft Cloud App Security will still be handled by Microsoft Cloud App Security.
+> The Microsoft 365 Defender portal uses and enforces existing roles-based access, and will move each security model into the unified portal. Each converged workload has its own roles-based access. The roles already in the products will be converged into the Microsoft 365 Defender portal automatically. However, Microsoft Defender for Cloud Apps will still handle its own roles and permissions.
 
 ### What to expect
 
@@ -148,13 +152,11 @@ Centralizing security information creates a single place for investigating secur
 
 :::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="The Incidents page in Microsoft 365 Defender" lightbox="../../media/converged-incidents-2.png.png":::
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="The Incidents page in Microsoft 365 Defender.":::
-
 Selecting an incident name displays a page that demonstrates the value of centralizing security information.
 
-:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Example of the Summary page for an incident in Microsoft 365 Defender" lightbox="../../media/converged-incident-info-3.png":::
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Example of the Summary page for an incident in Microsoft 365 Defender" lightbox="../../media/converged-incident-info-3.png":::
 
-Along the top of an incident page, you'll see the **Summary**, **Alerts**, **Devices**, **Users**, **Mailboxes**, **Investigations**, **Evidence and response**, and **Graph**  tabs. Select these tabs for more detailed information. For example, the **Users** tab displays information for users from converged workloads (Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Cloud App Security) and a range of sources such as on-premises Active Directory Domain Services (AD DS), Azure AD, and third-party identity providers. For more information, see [investigate users](investigate-users.md).
+Along the top of an incident page, you'll see the **Summary**, **Alerts**, **Devices**, **Users**, **Mailboxes**, **Investigations**, **Evidence and response**, and **Graph**  tabs. Select these tabs for more detailed information. For example, the **Users** tab displays information for users from converged workloads (Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Defender for Cloud Apps) and a range of sources such as on-premises Active Directory Domain Services (AD DS), Azure AD, and third-party identity providers. For more information, see [investigate users](investigate-users.md).
 
 Take the time to review the incidents in your environment, drill down into these tabs, and practice building an understanding of how to access the information provided for incidents for different kinds of threats.
 
@@ -186,7 +188,7 @@ Reports are also unified in Microsoft 365 Defender. Admins can start with a gene
 
 #### Quickly view your Microsoft 365 environment
 
-The **Home** page shows many of the common cards that security teams need. The composition of cards and data is dependent on the user role. Because Microsoft 365 Defender portal uses role-based access control, different roles will see cards that are more meaningful to their day to day jobs.  
+The **Home** page shows many of the common cards that security teams need. The composition of cards and data is dependent on the user role. Because Microsoft 365 Defender portal uses role-based access control, different roles will see cards that are more meaningful to their day to day jobs.
 
 This at-a-glance information helps you keep up with the latest activities in your organization. Microsoft 365 Defender brings together signals from different sources to present a holistic view of your Microsoft 365 environment.
 
@@ -195,15 +197,40 @@ The cards fall into these categories:
 - **Identities**- Monitor the identities in your organization and keep track of suspicious or risky behaviors. [Learn more about identity protection](/azure/active-directory/identity-protection/overview-identity-protection).
 - **Data** - Help track user activity that could lead to unauthorized data disclosure.
 - **Devices** - Get up-to-date information on alerts, breach activity, and other threats on your devices.
-- **Apps** - Gain insight into how cloud apps are being used in your organization. [Learn more about Cloud App Security discovered apps](/cloud-app-security/discovered-apps).
+- **Apps** - Gain insight into how cloud apps are being used in your organization. [Learn more about discovered apps in Defender for Cloud Apps](/cloud-app-security/discovered-apps).
+
+
+#### Search across entities (Preview)
+
+>[!IMPORTANT]
+> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+The search bar is located at the top of the page. As you type, suggestions are provided so that it's easier to find entities. The enhanced search results page centralizes the results from all entities.
+
+You can search across the following entities in Defender for Endpoint and Defender for Identity: 
+
+- **Devices** - supported for both Defender for Endpoint and Defender for Identity. Supports use of search operators. 
+- **Users** - supported for Defender for Endpoint, Defender for Identity, and Defender for Cloud Apps. 
+- **Files, IPs, and URLs** - same capabilities as in Defender for Endpoint.
+
+    >[!NOTE]
+    >IP and URL searches are exact match and don’t appear in the search results page – they lead directly to the entity page. 
+
+- **TVM** -  same capabilities as in Defender for Endpoint (vulnerabilities, software, and recommendations). 
+
+ 
+
+
+
+
 
 ### Threat analytics with better data coverage
+
 Track and respond to emerging threats with the following Microsoft 365 Defender threat analytics integrated experience:
 
-- Better data coverage between Microsoft Defender for Endpoint and Microsoft Defender for Office 365, making combined incident management, automatic investigation, remediation, and proactive or reactive threat hunting across-domain possible. 
+- Better data coverage between Microsoft Defender for Endpoint and Microsoft Defender for Office 365, making combined incident management, automatic investigation, remediation, and proactive or reactive threat hunting across-domain possible.
 - Email-related detections and mitigations from Microsoft Defender for Office 365, in addition to the endpoint data already available from Microsoft Defender for Endpoint.
 - A view of threat-related incidents which aggregate alerts into end-to-end attack stories across Microsoft Defender for Endpoint and Microsoft Defender for Office 365 to reduce the work queue, as well as simplify and speed up your investigation.
-- Attack attempts detected and blocked by Microsoft 365 Defender solutions. There's also data that you can use to drive preventive actions that mitigate the risk of further exposure and increase resilience. 
+- Attack attempts detected and blocked by Microsoft 365 Defender solutions. There's also data that you can use to drive preventive actions that mitigate the risk of further exposure and increase resilience.
 - Enhanced design that puts actionable information in the spotlight to help you  quickly identify data to urgently focus on, investigate, and leverage from the reports.
 
 ### A centralized Learning Hub
@@ -226,7 +253,7 @@ After clicking through to the content, it may be useful to bookmark this site an
 
 ### Send us your feedback
 
-We need your feedback. We're always looking to improve, so if there's something you'd like to see, [send us your Microsoft 365 Defender feedback](https://www.microsoft.com/videoplayer/embed/RE4K5Ci).
+We need your feedback. We're always looking to improve, so if there's something you'd like to see, [watch this video to find out how you can trust us to read your feedback](https://www.microsoft.com/videoplayer/embed/RE4K5Ci).
 
 You can also leave feedback from this article. In the 'Feedback' section at the end under 'Submit and view feedback for', the options are *This product*, or *This page*.
 
@@ -252,7 +279,7 @@ Keep exploring the features and capabilities in Microsoft 365 Defender:
 - [Custom detection rules](./custom-detection-rules.md)
 - [Email & collaboration alerts](../../compliance/alert-policies.md#default-alert-policies)
 - [Create a phishing attack simulation](../office-365-security/attack-simulation-training.md) and [create a payload for training your teams](/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
- 
+
 ## Training for security analysts
 
 With this learning path from Microsoft Learn, you can understand Microsoft 365 Defender and how it can help identify, control, and remediate security threats.

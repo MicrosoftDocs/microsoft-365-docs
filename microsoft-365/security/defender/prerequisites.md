@@ -33,10 +33,11 @@ ms.technology: m365d
 Learn about licensing and other requirements for provisioning and using [Microsoft 365 Defender](microsoft-365-defender.md).
 
 ## Licensing requirements
-Any of these licenses gives you access to Microsoft 365 Defender features in Microsoft 365 Defender portal without additional cost:
+Any of these licenses gives you access to Microsoft 365 Defender features via the Microsoft 365 Defender portal without additional cost:
 
 - Microsoft 365 E5 or A5
 - Microsoft 365 E3 with the Microsoft 365 E5 Security add-on
+- Microsoft 365 E3 with the Enterprise Mobility + Security E5 add-on
 - Microsoft 365 A3 with the Microsoft 365 A5 Security add-on
 - Windows 10 Enterprise E5 or A5
 - Windows 11 Enterprise E5 or A5
@@ -44,7 +45,7 @@ Any of these licenses gives you access to Microsoft 365 Defender features in Mic
 - Office 365 E5 or A5
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Identity 
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - Defender for Office 365 (Plan 2)
 
 For more information, [view the Microsoft 365 Enterprise service plans](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
@@ -64,21 +65,16 @@ You must be a **global administrator** or a **security administrator** in Azure 
 Access Microsoft 365 Defender in the Microsoft 365 Defender portal using Microsoft Edge, Internet Explorer 11, or any HTML 5 compliant web browser.
 
 ## Availability to US GCC, GCC High, and other US government institutions
-Currently, Microsoft 365 Defender is *not* available to:
-- US Government Community Cloud High (GCC High)
-- US Department of Defense
-- All US government institutions with commercial licenses
 
+For information related to US Government customers, see [Microsoft 365 Defender for US Government customers](usgov.md).
 
 Currently, the Microsoft Defender for Office 365 integration into the unified Microsoft 365 Defender features are not available to customers in the following Office 365 datacenter locations:
 
-- Brazil 
-- Germany 
 - Norway 
-- Singapore 
-- South Africa
-- Switzerland 
+- South Africa 
 - United Arab Emirates 
+- Sweden 
+- Singapore 
 
 
 ## Related topics

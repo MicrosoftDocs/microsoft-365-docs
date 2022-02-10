@@ -42,13 +42,13 @@ For more information, see:
 - [Hello World example](api-hello-world.md)
 - [Get access with application context](api-create-app-web.md)
 
-There are two primary models to ingest security information: 
+There are two primary models to ingest security information: 
 
-1.  Ingesting Microsoft 365 Defender incidents and their contained alerts from a REST API in Azure. 
+1.  Ingesting Microsoft 365 Defender incidents and their contained alerts from a REST API in Azure. 
 
-2.  Ingesting streaming event data either through Azure Event Hubs or Azure Storage Accounts. 
+2.  Ingesting streaming event data either through Azure Event Hubs or Azure Storage Accounts. 
 
-Microsoft 365 Defender currently supports the following SIEM solution integrations: 
+Microsoft 365 Defender currently supports the following SIEM solution integrations: 
 
 - [Ingesting incidents from the incidents REST API](#ingesting-incidents-from-the-incidents-rest-api)
 - [Ingesting streaming event data via Event Hub](#ingesting-streaming-event-data-via-event-hubs)
@@ -56,35 +56,34 @@ Microsoft 365 Defender currently supports the following SIEM solution integratio
 ## Ingesting incidents from the incidents REST API
 
 ### Incident schema
-For more information on Microsoft 365 Defender incident properties including contained alert and evidence entities metadata, see [Schema mapping](../defender/api-list-incidents.md#schema-mapping).
+For more information on Microsoft 365 Defender incident properties including contained alert and evidence entities metadata, see [Schema mapping](../defender/api-list-incidents.md#schema-mapping).
 
 ### Splunk
 
-Using the Microsoft 365 Defender Add-on for Splunk that supports: 
+Using the Microsoft 365 Defender Add-on for Splunk that supports:
 
-- Ingesting incidents that contain alerts from the following products, which are mapped onto Splunk's Common Information Model (CIM):  
-  - Microsoft 365 Defender 
-  - Microsoft Defender for Endpoint 
-  - Microsoft Defender for Identity & Azure Active Directory Identity Protection 
-  - Microsoft Cloud App Security 
+- Ingesting incidents that contain alerts from the following products, which are mapped onto Splunk's Common Information Model (CIM):
 
-- Updating incidents in Microsoft 365 Defender from within Splunk 
+  - Microsoft 365 Defender
+  - Microsoft Defender for Endpoint
+  - Microsoft Defender for Identity and Azure Active Directory Identity Protection
+  - Microsoft Defender for Cloud Apps
 
-- Ingesting Defender for Endpoint alerts (from the Defender for Endpoint's Azure endpoint) and updating these alerts 
+- Updating incidents in Microsoft 365 Defender from within Splunk
+
+- Ingesting Defender for Endpoint alerts (from the Defender for Endpoint's Azure endpoint) and updating these alerts
 
 For more information on the Microsoft 365 Defender Add-on for Splunk, see [splunkbase](https://splunkbase.splunk.com/app/4959/).
-
-  
 
 ### Micro Focus ArcSight
 
 The new SmartConnector for Microsoft 365 Defender ingests incidents into ArcSight and maps these onto its Common Event
-Framework (CEF). 
+Framework (CEF).
 
 For more information on the new ArcSight SmartConnector for Microsoft 365 Defender, see [ArcSight Product Documentation](https://community.microfocus.com/cyberres/productdocs/w/connector-documentation/39246/smartconnector-for-microsoft-365-defender).
 
 The SmartConnector replaces the previous FlexConnector for Microsoft Defender for Endpoint.
-  
+  
 
 ## Ingesting streaming event data via Event Hubs
 
@@ -93,12 +92,11 @@ First you need to stream events from your AAD tenant to your Event Hubs or Azure
 For more information on the event types supported by the Streaming API, see [Supported streaming event types](../defender/supported-event-types.md).
 
 ### Splunk
-Use the Splunk Add-on for Microsoft Cloud Services to ingest events from Azure Event Hubs.  
+Use the Splunk Add-on for Microsoft Cloud Services to ingest events from Azure Event Hubs.  
 
 
 For more information on the Splunk Add-on for Microsoft Cloud Services, see [splunkbase](https://splunkbase.splunk.com/app/3110/).
-  
+  
 
 ### IBM QRadar
->Use the new IBM QRadar Microsoft 365 Defender Device Support Module (DSM) that calls the [Microsoft 365 Defender Streaming API](streaming-api.md) that allows ingesting streaming event data from Microsoft 365 Defender products. For more information on supported event types, see [Supported event types](supported-event-types.md).
-
+>Use the new IBM QRadar Microsoft 365 Defender Device Support Module (DSM) that calls the [Microsoft 365 Defender Streaming API](streaming-api.md) that allows ingesting streaming event data from Microsoft 365 Defender products. For more information on supported event types, see [Supported event types](supported-event-types.md).

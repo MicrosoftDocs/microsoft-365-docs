@@ -27,7 +27,7 @@ Enable built-in labeling for [supported Office files](sensitivity-labels-office-
 
 Enabling this feature also results in SharePoint and OneDrive being able to process the contents of Office files that have been encrypted by using a sensitivity label. The label can be applied in Office for the web, or in Office desktop apps and uploaded or saved in SharePoint and OneDrive. Until you enable this feature, these services can't process encrypted files, which means that coauthoring, eDiscovery, Data Loss Prevention, search, and other collaborative features won't work for these files.
 
-After you enable sensitivity labels for Office files in SharePoint and OneDrive, for new and changed files that have a sensitivity label that applies encryption with a cloud-based key (and doesn't use [Double Key Encryption](double-key-encryption.md)):
+After you enable sensitivity labels for Office files in SharePoint and OneDrive, for new and changed files that have a sensitivity label that applies encryption with a cloud-based key (and doesn't use [Double Key Encryption](double-key-encryption.md):
 
 - For Word, Excel, and PowerPoint files, SharePoint and OneDrive recognize the label and can now process the contents of the encrypted file.
 
@@ -88,7 +88,7 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
 
 - If a document is labeled while it's [checked out in SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de), the **Sensitivity** column in the document library won't display the label name until the document is checked in and next opened in SharePoint.
 
-- If a labeled and encrypted document is downloaded from SharePoint or OneDrive by an app or service that uses a service principal name, and then uploaded again with a label that applies different encryption settings, the upload will fail. An example scenario is Microsoft Cloud App Security changes a sensitivity label on a file from **Confidential** to **Highly Confidential**, or from **Confidential** to **General**.
+- If a labeled and encrypted document is downloaded from SharePoint or OneDrive by an app or service that uses a service principal name, and then uploaded again with a label that applies different encryption settings, the upload will fail. An example scenario is Microsoft Defender for Cloud Apps changes a sensitivity label on a file from **Confidential** to **Highly Confidential**, or from **Confidential** to **General**.
     
     The upload doesn't fail if the app or service first runs the [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) cmdlet, as explained in the [Remove encryption for a labeled document](#remove-encryption-for-a-labeled-document) section. Or, before the upload, the original file is deleted, or the file name is changed.
 

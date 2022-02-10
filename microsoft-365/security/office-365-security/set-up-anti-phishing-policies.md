@@ -121,7 +121,7 @@ The following spoof settings are available in anti-phishing policies in EOP and 
 
 The unauthenticated sender notifications are part of the [Spoof settings](#spoof-settings) that are available in anti-phishing policies in EOP and Defender for Office 365 as described in the previous section. The following settings are available only when spoof intelligence is turned on:
 
-- **Show (?) for unauthenticated senders for spoof**: This notification adds a question mark is added to the sender's photo in the From box if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-validation-and-authentication.md#composite-authentication). When this setting is turned off, the question mark isn't added to the sender's photo.
+- **Show (?) for unauthenticated senders for spoof**: This notification adds a question mark to the sender's photo in the From box if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-validation-and-authentication.md#composite-authentication). When this setting is turned off, the question mark isn't added to the sender's photo.
 
 - **Show "via" tag?**: This notification adds the via tag (chris@contoso.com <u>via</u> fabrikam.com) in the From box if the domain in the From address (the message sender that's displayed in email clients) is different from the domain in the DKIM signature or the **MAIL FROM** address. For more information about these addresses, see [An overview of email message standards](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
@@ -143,7 +143,7 @@ The **Show first contact safety tip** settings is available in EOP and Defender 
 
 ![First contact safety tip for messages with one recipient.](../../media/safety-tip-first-contact-one-recipient.png)
 
-![First contact safety tip for messages with with multiple recipients.](../../media/safety-tip-first-contact-multiple-recipients.png)
+![First contact safety tip for messages with multiple recipients.](../../media/safety-tip-first-contact-multiple-recipients.png)
 
 This capability adds an extra layer of security protection against potential impersonation attacks, so we recommend that you turn it on.
 
@@ -164,7 +164,7 @@ This section describes the policy settings that are only available in anti-phish
 Impersonation is where the sender or the sender's email domain in a message looks similar to a real sender or domain:
 
 - An example impersonation of the domain contoso.com is ćóntoso.com.
-- An example impersonation of the user michelle@contoso.com is michele@contoso.com.
+- User impersonation is the combination of the user's display name and email address. For example, Valeria Barrios (vbarrios@contoso.com) might be impersonated as Valeria Barrios, but with a completely different email address.
 
 > [!NOTE]
 > Impersonation protection looks for domains that are similar. For example, if your domain is contoso.com, we check for different top-level domains (.com, .biz, etc.) as impersonation attempts, but also domains that are even somewhat similar. For example, contosososo.com or contoabcdef.com might be seen as impersonation attempts of contoso.com.

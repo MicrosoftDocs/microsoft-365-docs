@@ -32,7 +32,7 @@ For additional information, see these resources.
 | [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security) | Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools <br><br> Protects against malware, phishing, spoofing, and other attack types  | [Overview](/microsoft-365/security/office-365-security/overview) | [Threat hunting](/microsoft-365/security/office-365-security/threat-hunting-in-threat-explorer) |
 | [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint) | Enables detection and response to advanced threats across endpoints (devices) | [Overview](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)  | [Endpoint detection and response](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) |
 | [Azure Active Directory (Azure AD) Identity Protection](/azure/active-directory/identity-protection/) | Automates detection and remediation of identity-based risks and investigation of those risks | [Overview](/azure/active-directory/identity-protection/overview-identity-protection) | [Investigate risk](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk) |
-| [Microsoft Cloud App Security](/cloud-app-security) | A cloud access security broker for discovery, investigation, and governance across all your Microsoft and third-party cloud services. | [Overview](/cloud-app-security/what-is-cloud-app-security) | [Investigate](/cloud-app-security/investigate) |
+| [Microsoft Defender for Cloud Apps](/cloud-app-security) | A cloud access security broker for discovery, investigation, and governance across all your Microsoft and third-party cloud services. | [Overview](/cloud-app-security/what-is-cloud-app-security) | [Investigate](/cloud-app-security/investigate) |
 
 >[!Note]
 >All of these tools require Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on.
@@ -54,23 +54,23 @@ Use these tools to detect and respond to the following common threats from ranso
 - Escalation of privilege
 
    - Azure AD Identity Protection
-   - Microsoft Cloud App Security
+   - Microsoft Defender for Cloud Apps
 
 - Malicious app behavior
 
-   - Microsoft Cloud App Security
+   - Microsoft Defender for Cloud Apps
 
 - Data exfiltration, deletion, or uploading
 
    - Microsoft Defender for Office 365
-   - Microsoft Cloud App Security with [anomaly detection policies](/cloud-app-security/anomaly-detection-policy#ransomware-activity)
+   - Microsoft Defender for Cloud Apps with [anomaly detection policies](/cloud-app-security/anomaly-detection-policy#ransomware-activity)
 
 The following tools use Microsoft 365 Defender and its portal (https://security.microsoft.com) as a common threat collection and analysis point:
 
 - Microsoft Defender for Identity
 - Microsoft Defender for Office 365
 - Microsoft Defender for Endpoint
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 
 Microsoft 365 Defender combines threat signals into alerts and connected alerts into an incident so that your security analysts can more quickly detect, investigate, and remediate the phases of a ransomware attack.
 

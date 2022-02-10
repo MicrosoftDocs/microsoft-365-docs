@@ -17,7 +17,8 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 description: Use Explorer and Real-time detections in the Microsoft 365 Defender portal to investigate and respond to threats efficiently.
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -352,7 +353,13 @@ This example uses Threat Explorer.
 
 ### Preview email header and download email body
 
-You can now preview an email header and download the email body in Threat Explorer. Admins can analyze downloaded headers/email messages for threats. Because downloading email messages can risk exposure of information, this process is controlled by role-based access control (RBAC). A new role, *Preview*, must be added to another role group (such as Security Operations or Security Administrator) to grant the ability to download mails in all-email messages view. However, viewing the email header does not require any additional role (other than what is required to view messages in Threat Explorer).
+You can now preview an email header and download the email body in Threat Explorer. Admins can analyze downloaded headers/email messages for threats. Because downloading email messages can risk exposure of information, this process is controlled by role-based access control (RBAC). A new role, *Preview*, is required to grant the ability to download mails in all-email messages view. However, viewing the email header does not require any additional role (other than what is required to view messages in Threat Explorer). To create a new role group with the Preview role:
+
+1. Select a built-in role group that only has the Preview role, such as Data Investigator or eDiscovery Manager.
+2. Select **Copy role group**.
+3. Choose a name and description for your new role group and select **Next**.
+4. Modify the roles by adding and removing roles as necessary but leaving the Preview role.
+5. Add members and then select **Create role group**.
 
 Explorer and Real-time detections will also get new fields that provide a more complete picture of where your email messages land. These changes  make hunting easier for Security Ops. But the main result is you can know the location of problem email messages at a glance.
 
@@ -545,7 +552,7 @@ To view and use Explorer or Real-time detections, you must have appropriate perm
   - Security Administrator (this can be assigned in the Azure Active Directory admin center (<https://aad.portal.azure.com>)
   - Security Reader
 
-- For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center (<https://admin.protection.outlook.com/ecp/>) or [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
+- For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center (EAC) or [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):
 
   - Organization Management
   - View-Only Organization Management

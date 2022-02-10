@@ -42,12 +42,6 @@ Are you removing your domain because you want to add it to a different Microsoft
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>.
@@ -69,12 +63,6 @@ You'll need to do this for yourself, too, if you're on the domain that you want 
 ::: moniker range="o365-worldwide"
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>.
 
 ::: moniker-end
 
@@ -101,11 +89,6 @@ You can also use PowerShell to move users to another domain. See [Set-MsolUserPr
 1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
 
 ::: moniker-end
-::: moniker range="o365-germany"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>,  go to the **Groups** > **Groups** page.
-
-::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
@@ -124,12 +107,6 @@ You can also use PowerShell to move users to another domain. See [Set-MsolUserPr
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.
 
 ::: moniker-end
 
@@ -159,15 +136,6 @@ If you have hundreds or thousands of users, use PowerShell to query for all user
 > You can't remove the [".onmicrosoft.com"](../setup/domains-faq.yml) domain from your account. When you remove a domain, user accounts will revert back to the ".onmicrosoft.com" address as the Primary SMTP/UserprincipalName.
 
 Still not working? Your domain might need to be manually removed. [Give us a call](../../business-video/get-help-support.md) and we'll help you take care of it!
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-> [!NOTE]
-> You can't remove the [".onmicrosoft.de"](../setup/domains-faq.yml) domain from your account. When you remove a domain, user accounts will revert back to the ".onmicrosoft.de" address as the Primary SMTP/UserprincipalName.
-
-Still not working? Your domain might need to be manually removed. [Give us a call](../../business-video/get-help-support.md?view=o365-germany&preserve-view=true) and we'll help you take care of it!
 
 ::: moniker-end
 

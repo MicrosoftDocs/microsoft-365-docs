@@ -48,16 +48,13 @@ When you've decided whether to use an adaptive or static scope, use the followin
 
 ### Configuration information for adaptive scopes
 
-> [!NOTE]
-> Adaptive scopes as a new feature is currently in preview and subject to change. The alternative option is a static scope, which provides the same behavior before adaptive scopes were introduced and can be used if adaptive scopes don't meet your business requirements.
-
 When you choose to use adaptive scopes, you are prompted to select what type of adaptive scope you want. There are three different types of adaptive scopes and each one supports different attributes or properties:
 
 | Adaptive scope type | Attributes or properties supported include |
 |:-----|:-----|
-|**Users** - applies to:  <br/> - Exchange email <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages <br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
+|**Users** - applies to:  <br/> - Exchange email <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages <br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
 |**SharePoint sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |Site URL <br/>Site name <br/> SharePoint custom properties: RefinableString00 - RefinableString99 |
-|**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Groups <br/> - Teams channel messages <br/> - Yammer community messages |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
+|**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Groups <br/> - Teams channel messages <br/> - Yammer community messages |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
 
 The property names for sites are based on SharePoint site managed properties, and the attribute names for users and groups are based on [filterable recipient properties](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) that map to Azure AD attributes. For example:
 
@@ -67,7 +64,9 @@ The property names for sites are based on SharePoint site managed properties, an
 The attributes and properties listed in the table can be easily specified when you configure an adaptive scope by using the simple query builder. Additional attributes and properties are supported with the advanced query builder, as described in the following section.
 
 > [!TIP]
-> For additional information about using the advanced query builder, see the following webinar: [Building Advanced Queries for Users and Groups with Adaptive Policy Scopes](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
+> For additional information about using the advanced query builder, see the following webinars: 
+> - [Building Advanced Queries for Users and Groups with Adaptive Policy Scopes](https://mipc.eventbuilder.com/event/52683/occurrence/49452/recording?rauth=853.3181650.1f2b6e8b4a05b4441f19b890dfeadcec24c4325e90ac492b7a58eb3045c546ea)
+> - [Building Advanced Queries for SharePoint Sites with Adaptive Policy Scopes](https://aka.ms/AdaptivePolicyScopes-AdvancedSharePoint)
 
 A single policy for retention can have one or many adaptive scopes.
 
@@ -77,10 +76,10 @@ Before you configure your adaptive scope, use the previous section to identify w
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
     
-    - If you are using records management:
+    - If you are using the records management solution:
         - **Solutions** > **Records management** > **Adaptive scopes** tab > + **Create scope**
         
-    - If you are not using records management:
+    - If you are using the information governance solution:
        - **Solutions** > **Information governance** > **Adaptive scopes** tab > + **Create scope**
     
     Don't immediately see your solution in the navigation pane? First select **Show all**. 
@@ -151,15 +150,33 @@ You can manually validate advanced queries by using PowerShell and SharePoint se
 
 To run a query using PowerShell:
 
-1. Using a global admin account, [connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) using an account with [appropriate Exchange Online Administrator permissions](/powershell/exchange/find-exchange-cmdlet-permissions#use-powershell-to-find-the-permissions-required-to-run-a-cmdlet).
 
-2. Specify your [OPATH query](/powershell/exchange/filter-properties) using [Get-Recipient](/powershell/module/exchange/get-recipient) or [Get-Mailbox](/powershell/module/exchange/get-mailbox) with the *-Filter* parameter, and then the OPATH query for the adaptive scope, enclosed in double quotes. If your attribute values include spaces, enclose these values in single quotes.
+2. Use either [Get-Recipient](/powershell/module/exchange/get-recipient) or [Get-Mailbox](/powershell/module/exchange/get-mailbox) with the *-Filter* parameter and your [OPATH query](/powershell/exchange/filter-properties) for the adaptive scope enclosed in curly brackets (`{`,`}`). If your attribute values are strings, enclose these values in double or single quotes.  
+
+    You can determine whether to use `Get-Mailbox` or `Get-Recipient` for validation by identifying which cmdlet is supported by the [OPATH property](/powershell/exchange/filter-properties) that you choose for your query.
+
+    > [!IMPORTANT]
+    > `Get-Mailbox` does not support the *MailUser* recipient type, so `Get-Recipient` must be used to validate queries that include on-premises mailboxes in a hybrid environment.
+
+    To validate a **User** scope, use either:
+    - `Get-Mailbox` with `-RecipientTypeDetails UserMailbox` or
+    - `Get-Recipient` with `-RecipientTypeDetails UserMailbox,MailUser`
     
-    For example:
+    To validate a **Microsoft 365 Group** scope, use:
+    - `Get-Mailbox` or `Get-Recipient` with `-RecipientTypeDetails GroupMailbox`
+
+    For example, to validate a **User** scope, you could use:
     
     ````PowerShell
-    Get-Recipient -Filter "Department -eq 'Sales and Marketing'" -ResultSize unlimited
+    Get-Recipient -RecipientTypeDetails UserMailbox,MailUser -Filter {Department -eq "Marketing"} -ResultSize Unlimited
     ````
+    
+    To validate a **Microsoft 365 Group** scope, you could use:
+    
+    ```PowerShell
+    Get-Mailbox -RecipientTypeDetails GroupMailbox -Filter {CustomAttribute15 -eq "Marketing"} -ResultSize Unlimited
+    ```
 
 3. Verify that the output matches the expected users or groups for your adaptive scope. If it doesn't, check your query and the values with the relevant administrator for Azure AD or Exchange.
  
@@ -177,7 +194,7 @@ When you choose to use static scopes, you must then decide whether to apply the 
 
 #### A policy that applies to entire locations
 
-With the exception of Skype for Business, the default is that all instances for the selected locations are automatically included in the policy without your having to specify them as included.
+With the exception of Skype for Business, the default is that all instances for the selected locations are automatically included in the policy without you having to specify them as included.
 
 For example, **All recipients** for the **Exchange email** location. With this default setting, all existing user mailboxes will be included in the policy, and any new mailboxes created after the policy is applied will automatically inherit the policy.
 
@@ -202,9 +219,9 @@ Locations in policies for retention identify specific Microsoft 365 services tha
 
 The **Exchange email** location supports retention for users' email, calendar, and other mailbox items, by applying retention settings at the level of a mailbox. Shared mailboxes are also supported.
 
-Resource mailboxes, contacts, and Microsoft 365 group mailboxes aren't supported for Exchange email. For Microsoft 365 group mailboxes, select the **Microsoft 365 Groups** location instead.
+Resource mailboxes, contacts, and Microsoft 365 group mailboxes aren't supported for Exchange email. For Microsoft 365 group mailboxes, select the **Microsoft 365 Groups** location instead. Although the Exchange location initially allows a group mailbox to be selected for a static scope, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for this location.
 
-Depending on your policy configuration, [inactive mailboxes](create-and-manage-inactive-mailboxes.md) might be included or not:
+Depending on your policy configuration, [inactive mailboxes](inactive-mailboxes-in-office-365.md) might be included or not:
 
 - Static policy scopes include inactive mailboxes when you use the default **All recipients** configuration but aren't supported for [specific inclusions or exclusions](#a-policy-with-specific-inclusions-or-exclusions). However, if you include or exclude a recipient that has an active mailbox at the time the policy is applied and the mailbox later goes inactive, the retention settings continue to be applied or excluded.
 
@@ -232,7 +249,7 @@ When you configure an auto-apply policy that uses sensitive information types an
 
 When you choose the **SharePoint sites** location, the policy for retention can retain and delete documents in SharePoint communication sites, team sites that aren't connected by Microsoft 365 groups, and classic sites. Unless you are using [adaptive policy scopes](#exceptions-for-adaptive-policy-scopes), Team sites connected by Microsoft 365 groups aren't supported with this option and instead, use the **Microsoft 365 Groups** location that applies to content in the group's mailbox, site, and files.
 
-For detailed information about what's included and excluded when you configure retention settings for SharePoint and OneDrive, see [What's included for retention and deletion](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion). 
+For detailed information about what's included and excluded when you configure retention settings for SharePoint and OneDrive, see [What's included for retention and deletion](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion).
 
 When you specify your locations for SharePoint sites or OneDrive accounts, you don't need permissions to access the sites. For static scopes, no validation is done at the time you specify the URL on the **Edit locations** page. However, the SharePoint sites that you specify are checked that they exist on the final page of the configuration. If this check fails, you see a message that validation failed for the URL you entered, and the retention policy can't be created until the validation check passes. If you see this message, go back in the configuration process to change the URL or remove the site from the retention policy.
 
@@ -240,9 +257,9 @@ To specify individual OneDrive accounts, see [Get a list of all user OneDrive UR
 
 > [!NOTE]
 > When you specify individual OneDrive accounts, be aware that unless OneDrive accounts are [pre-provisioned](/onedrive/pre-provision-accounts), the URL isn't created until a user accesses their OneDrive for the first time.
-> 
-> Also, the OneDrive URL will [automatically change](/onedrive/upn-changes) if there is a change in the user's UPN. For example, a name-changing event such as marriage. Or a domain name change to support an organization's rename or business restructuring. If the UPN changes, you will need to update the OneDrive URLs you specify for retention settings.
-> 
+>
+> Also, the OneDrive URL will [automatically change](/onedrive/upn-changes) if there is a change in the user's UPN. For example, a name-changing event such as marriage, or a domain name change to support an organization's rename or business restructuring. If the UPN changes, you will need to update the OneDrive URLs you specify for retention settings.
+>
 > Because of the challenges of reliably specifying URLs for individual users to include or exclude for static scopes, [adaptive scopes](retention.md#adaptive-or-static-policy-scopes-for-retention) with the **User** scope type are better suited for this purpose.
 
 #### Exceptions for adaptive policy scopes
@@ -253,10 +270,10 @@ When you configure a policy for retention that uses adaptive policy scopes and s
 
 ### Configuration information for Microsoft 365 Groups
 
-To retain or delete content for a Microsoft 365 group (formerly Office 365 group), use the **Microsoft 365 Groups** location. This location includes the group mailbox and SharePoint teams site.
+To retain or delete content for a Microsoft 365 group (formerly Office 365 group), use the **Microsoft 365 Groups** location. For retention policies, this location includes the group mailbox and SharePoint teams site. For retention labels, this location includes the SharePoint teams site only.
 
 > [!NOTE]
-> Even though a Microsoft 365 group has an Exchange mailbox, a retention policy for the **Exchange email** location won't include content in Microsoft 365 group mailboxes. 
+> Even though a Microsoft 365 group has an Exchange mailbox, a retention policy for the **Exchange email** location won't include content in Microsoft 365 group mailboxes.
 
 If you use static scopes: Although the **Exchange email** location for a static scope initially allows you to specify a group mailbox to be included or excluded, when you try to save the retention policy, you'll see an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location.
 
@@ -277,7 +294,7 @@ When you configure an auto-apply policy that uses sensitive information types an
 
 #### What happens if a Microsoft 365 group is deleted after a policy is applied
 
-After you've applied a policy for retention to a Microsoft 365 group, and that group is then deleted from Azure Active Directory:
+When a policy for retention (static policy scope or adaptive) is applied to a Microsoft 365 group, and that group is then deleted from Azure Active Directory:
 
 - The group-connected SharePoint site is preserved and continues to be managed by the retention policy with the **Microsoft 365 Groups** location. The site is still accessible to the people who had access to it before the group was deleted, and any new permissions must now be managed via SharePoint.
     
@@ -286,6 +303,9 @@ After you've applied a policy for retention to a Microsoft 365 group, and that g
 - The mailbox for the deleted group becomes inactive and like the SharePoint site, remains subject to retention settings. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md).
 
 ### Configuration information for Skype for Business
+
+> [!NOTE]
+> Skype for Business was [retired July 31, 2021](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/skype-for-business-online-to-be-retired-in-2021/ba-p/777833) and we encourage customers to migrate to Microsoft Teams. However, retention policies for Skype for Business continues to be supported for existing customers.
 
 Unlike Exchange email, you can't toggle the status of the Skype location on to automatically include all users, but when you turn on that location, you must then manually choose the users whose conversations you want to retain:
 

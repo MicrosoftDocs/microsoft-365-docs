@@ -42,7 +42,7 @@ Microsoft 365 Defender offers several remediation actions that analysts can manu
 - **Initiate automated investigation** - You can start a new general purpose automated investigation on the device. While an investigation is running, any other alert generated from the device will be added to an ongoing automated investigation until that investigation is completed. In addition, if the same threat is seen on other devices, those devices are added to the investigation.
 - **Initiate live response** - Live response is a capability that gives you instantaneous access to a device by using a remote shell connection. This gives you the ability to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time. Live response is designed to enhance investigations by enabling you to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats.
 - **Collect investigation package** - As part of the investigation or response process, you can collect an investigation package from a device. By collecting the investigation package, you can identify the current state of the device and further understand the tools and techniques used by the attacker. 
-- **Consult a threat expert** (available in both Actions on devices and files) - You can consult a Microsoft threat expert for more insights regarding potentially compromised devices or devices that are already compromised. Microsoft threat experts can be engaged directly from within the Microsoft Defender Security Center for a timely and accurate response. 
+- **Consult a threat expert** (available in both Actions on devices and files) - You can consult a Microsoft threat expert for more insights regarding potentially compromised devices or devices that are already compromised. Microsoft threat experts can be engaged directly from within Microsoft 365 Defender for a timely and accurate response. 
 
 ## Actions on files
 
@@ -58,13 +58,13 @@ Continuing the example in [Detect, triage, and analyze incidents](first-incident
 3. Ensure the malicious file was quarantined from SharePoint
 4. Check which endpoints were affected by malware
 5. Rebuild systems
-6. Check for similar Microsoft Cloud App Security alerts for other users
+6. Check for similar Microsoft Defender for Cloud Apps alerts for other users
 7. Create a custom indicator in Microsoft Defender for Endpoint to block a Tor IP address
-8. Create a governance action in Microsoft Cloud App Security for this type of alert such as those shown in the following image:
+8. Create a governance action in Microsoft Defender for Cloud Apps for this type of alert such as those shown in the following image:
 
-   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Example of governance actions in the Microsoft Cloud App Security portal."::: 
- 
-Most of the remediation actions can be applied and tracked in Microsoft 365 Defender. 
+   :::image type="content" source="../../media/first-incident-remediate/first-incident-mcas-governance.png" alt-text="Example of governance actions in the Microsoft Defender for Cloud Apps portal.":::
+
+Most of the remediation actions can be applied and tracked in Microsoft 365 Defender.
 
 ## Using Playbooks
 

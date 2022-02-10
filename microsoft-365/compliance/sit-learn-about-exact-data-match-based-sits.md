@@ -66,7 +66,7 @@ The schema is an xml file that defines:
 
 ### Sensitive information source table
 
-The sensitive source table that contains the sensitive information values that the EDM SIT will look for. It is made up of columns and roes. The column headers are the field names, the rows are an instance of data and each cell contains the values for that instance for that field.
+The sensitive source table contains the sensitive information values that the EDM SIT will look for. It is made up of columns and rows. The column headers are the field names, the rows are an instance of data and each cell contains the values for that instance for that field.
 
 Here's a simple example of a sensitive information source table.
 

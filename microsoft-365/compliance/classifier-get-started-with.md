@@ -101,7 +101,7 @@ Once the trainable classifier has processed enough positive samples to build a p
    > [!TIP]
    > If you create a new site and folder for your seed data, allow at least an hour for that location to be indexed before creating the trainable classifier that will use that seed data.
 
-3. Sign in to Microsoft 365 compliance center with compliance admin or security admin role access and open <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> or <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> > **Data classification**.
+3. Sign in to Microsoft 365 compliance center with compliance admin or security admin role access and open <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> or <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> > **Data classification**.
 
 4. Choose the **Trainable classifiers** tab.
 

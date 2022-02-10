@@ -24,6 +24,8 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 ## Remediation actions
 
@@ -56,7 +58,7 @@ Whether taken automatically or upon approval, an automated investigation can res
 
 ## Review pending actions
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
 2. In the navigation pane, choose **Action center**.
 3. Review the items on the **Pending** tab.
 4. Select an action to open its flyout pane.
@@ -68,7 +70,7 @@ Whether taken automatically or upon approval, an automated investigation can res
 
 ## Review completed actions
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a> and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
 2. In the navigation pane, choose **Action center**.
 3. Review the items on the **History** tab.
 4. Select an item to view more details about that remediation action.

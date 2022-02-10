@@ -2,7 +2,6 @@
 title: Offboard machine API
 description: Learn how to use an API to offboard a device from Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, collect investigation package
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -23,7 +22,8 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -43,7 +43,7 @@ Offboard device from Defender for Endpoint.
   [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 > [!NOTE]
-> This API is supported on Windows 10, version 1703 and later, or Windows Server 2019 and later.
+> This API is supported on Windows 11, Windows 10, version 1703 and later, or Windows Server 2019 and later.
 >
 > This API is not supported on MacOS or Linux devices.
 
@@ -67,6 +67,8 @@ Delegated (work or school account)|Machine.Offboard|'Offboard machine'
 ```http
 POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 ```
+
+The machine ID can be found in the URL when you select the device. Generally, it is a 40 digit alphanumeric number that can be found in the URL.
 
 ## Request headers
 

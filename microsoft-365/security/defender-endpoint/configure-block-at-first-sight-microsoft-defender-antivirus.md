@@ -21,7 +21,8 @@ ms.collection: M365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 This article describes an antivirus/antimalware feature known as "block at first sight", and describes how to enable block at first sight for your organization.
 
@@ -59,7 +60,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 
 - In many cases, this process can reduce the response time for new malware from hours to seconds.
 
-- You can [specify how long a file should be prevented from running](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) while the cloud-based protection service analyzes the file. And, you can [customize the message displayed on users' desktops](/windows/security/threat-protection//windows-defender-security-center/wdsc-customize-contact-information.md) when a file is blocked. You can change the company name, contact information, and message URL.
+- You can [specify how long a file should be prevented from running](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) while the cloud-based protection service analyzes the file. And, you can [customize the message displayed on users' desktops](/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information) when a file is blocked. You can change the company name, contact information, and message URL.
 
 ## Turn on block at first sight with Microsoft Intune
 
@@ -100,7 +101,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 
    - **Turn on cloud-delivered protection**: Yes
    - **Cloud-delivered protection level**: High
-   - **Defender Cloud Extended Timeout in Seconds**: 50
+   - **Microsoft Defender Antivirus Extended Timeout in Seconds**: 50
 
    :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Block at first sight settings in Endpoint Manager.":::
 
@@ -168,7 +169,7 @@ You might choose to disable block at first sight if you want to retain the prere
 
    - Set **Turn on cloud-delivered protection** to **No** or **Not configured**.
    - Set **Cloud-delivered protection level** to **Not configured**.
-   - Clear the check box for **Defender Cloud Extended Timeout In Seconds**.
+   - Clear the check box for **Microsoft Defender Antivirus Extended Timeout In Seconds**.
 
 6. Review and save your settings.
 

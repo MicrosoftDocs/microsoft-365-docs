@@ -26,7 +26,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -85,7 +86,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
             <key>PayloadIdentifier</key>
             <string>DA2CC794-488B-4AFF-89F7-6686A7E7B8AB</string>
             <key>PayloadDisplayName</key>
-            <string>Microsoft Defender ATP Network Extension</string>
+            <string>Microsoft Defender Network Extension</string>
             <key>PayloadDescription</key>
             <string/>
             <key>PayloadVersion</key>
@@ -118,7 +119,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
                     <key>FilterType</key>
                     <string>Plugin</string>
                     <key>UserDefinedName</key>
-                    <string>Microsoft Defender ATP Network Extension</string>
+                    <string>Microsoft Defender Network Extension</string>
                     <key>PluginBundleID</key>
                     <string>com.microsoft.wdav</string>
                     <key>FilterSockets</key>
@@ -212,7 +213,7 @@ Save the following content to a file named **sysext.xml**:
         <key>PayloadIdentifier</key>
         <string>7E53AC50-B88D-4132-99B6-29F7974EAA3C</string>
         <key>PayloadDisplayName</key>
-        <string>Microsoft Defender ATP System Extensions</string>
+        <string>Microsoft Defender System Extensions</string>
         <key>PayloadDescription</key>
         <string/>
         <key>PayloadVersion</key>
@@ -245,7 +246,7 @@ Save the following content to a file named **sysext.xml**:
                 <key>FilterType</key>
                 <string>Plugin</string>
                 <key>UserDefinedName</key>
-                <string>Microsoft Defender ATP Network Extension</string>
+                <string>Microsoft Defender Network Extension</string>
                 <key>PluginBundleID</key>
                 <string>com.microsoft.wdav</string>
                 <key>FilterSockets</key>

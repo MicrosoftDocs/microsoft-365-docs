@@ -17,8 +17,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365solution-overview
+  - m365solution-scenario
   - m365solution-evalutatemtp
+  - ms.custom: admindeeplinkEXCHANGE
 ms.topic: how-to
 ms.technology: m365d
 ---
@@ -47,7 +48,7 @@ It may not be evident why 'Standard' and 'Strict' are the terms used for this, b
 Distribution groups can be created and defined directly in Exchange Online or synchronized from on-premises Active Directory.
 
 1. Logon to Exchange Admin Center (EAC) using an account that has been granted Recipient Administrator role or been delegated group management permissions.
-2. From the navigation menu, expand *Recipients* and select *Groups*.
+2. From the navigation menu, expand **Recipients** and select <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>.
 
    :::image type="content" source="../../media/mdo-eval/1_mdo-eval-pilot.png" alt-text="Exchange admin center on the navigation menu (the quick launch) with an arrow pointing at Groups. Click Groups.":::
 
@@ -151,7 +152,7 @@ Now that your pilot is set up and configured, it's helpful to become familiar wi
 |Capability|Description|More information|
 |---|---|---|
 |Threat Explorer|Threat Explorer is a powerful near real-time tool to help Security Operations teams investigate and respond to threats and displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.|[Views in Threat Explorer and real-time detections](../office-365-security/threat-explorer-views.md)|
-|Attack Simulator|You can use Attack Simulation Training in the Microsoft Defender 365 portal to run realistic attack scenarios in your organization which help you identify and find vulnerable users before a real attack impacts your environment.|[Get started using Attack simulation training](../office-365-security/attack-simulation-training-get-started.md)|
+|Attack Simulator|You can use Attack Simulation Training in the Microsoft 365 Defender portal to run realistic attack scenarios in your organization which help you identify and find vulnerable users before a real attack impacts your environment.|[Get started using Attack simulation training](../office-365-security/attack-simulation-training-get-started.md)|
 |Reports dashboard|On the left navigation menu, click Reports and expand the Email & collaboration heading. The Email & collaboration reports are about spotting security trends some of which will allow you to take action (through buttons like 'Go to submissions'), and others that will show trends, like Mailflow status summary, Top Malware, Spoof detections, Compromised users, Mail latency, Safe Links and Safe attachments reports. These metrics are generated automatically.|[View Reports](../office-365-security/view-email-security-reports.md)|
 |
 

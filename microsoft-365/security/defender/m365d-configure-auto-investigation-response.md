@@ -44,7 +44,7 @@ Then, after you're all set up, you can [view and manage remediation actions in t
 |Requirement|Details|
 |---|---|
 |Subscription requirements|One of these subscriptions: <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E3 with the Microsoft 365 E5 Security add-on</li><li>Microsoft 365 A3 with the Microsoft 365 A5 Security add-on</li><li>Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5</li></ul> <p> See [Microsoft 365 Defender licensing requirements](./prerequisites.md#licensing-requirements).|
-|Network requirements|<ul><li>[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) enabled</li><li>[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) configured</li><li>[Microsoft Defender for Identity integration](/cloud-app-security/mdi-integration)</li></ul>|
+|Network requirements|<ul><li>[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) enabled</li><li>[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) configured</li><li>[Microsoft Defender for Identity integration](/cloud-app-security/mdi-integration)</li></ul>|
 |Windows device requirements|<ul><li>Windows 11</li><li>Windows 10, version 1709 or later installed (See [Windows release information](/windows/release-information/))</li><li>The following threat protection services configured:<ul><li>[Microsoft Defender for Endpoint](../defender-endpoint/configure-endpoints.md)</li><li>[Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
 |Protection for email content and Office files|[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies) configured|
 |Permissions|To configure automated investigation and response capabilities, you must have the Global Administrator or Security Administrator role assigned in either Azure Active Directory (<https://portal.azure.com>) or in the Microsoft 365 admin center (<https://admin.microsoft.com>). <p> To get the permissions needed to work with automated investigation and response capabilities, such as reviewing, approving, or rejecting pending actions, see [Required permissions for Action center tasks](m365d-action-center.md#required-permissions-for-action-center-tasks).|
@@ -54,11 +54,11 @@ Then, after you're all set up, you can [view and manage remediation actions in t
 
 Whether automated investigations run, and whether remediation actions are taken automatically or only upon approval for your devices depend on certain settings, such as your organization's device group policies. Review the configured automation level for your device group policies.
 
-1. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) and sign in.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Go to **Settings** > **Permissions** > **Device groups**.
+2. Go to **Settings** > **Endpoints** > **Device groups** under **Permissions**.
 
-3. Review your device group policies. In particular, look at the **Remediation level** column. We recommend using **Full - remediate threats automatically**.  You might need to create or edit your device groups to get the level of automation you want. To get help with this task, see the following articles:
+3. Review your device group policies. In particular, look at the **Automation level** column. We recommend using **Full - remediate threats automatically**.  You might need to create or edit your device groups to get the level of automation you want. To get help with this task, see the following articles:
    - [How threats are remediated](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
    - [Create and manage device groups](/windows/security/threat-protection/microsoft-defender-atp/machine-groups)
 
@@ -93,9 +93,7 @@ Security settings in Office 365 help protect email and content. To view or chang
 
 2. In the navigation pane, look for **Incidents & Alerts**, **Hunting**, and **Action center** as shown in the preceding image.
    - If you see **Incidents & Alerts**, **Hunting**, and **Action center**, Microsoft 365 Defender is turned on. See the [Review or change the automation level for device groups](#review-or-change-the-automation-level-for-device-groups) section of this article.
-   - If you do *not* see **Incidents**, **Action center**, or **Hunting**, Microsoft 365 Defender might not be turned on. In this case, [visit the Action center](m365d-action-center.md)).
-
-3. In the navigation pane, choose **Settings** > **Microsoft 365 Defender**. Confirm that Microsoft 365 Defender is turned on.
+   - If you do *not* see **Incidents**, **Action center**, or **Hunting**, Microsoft 365 Defender might not be turned on. In this case, [visit the Action center](m365d-action-center.md).
 
 > [!TIP]
 > Need help? See [Turn on Microsoft 365 Defender](m365d-enable.md).

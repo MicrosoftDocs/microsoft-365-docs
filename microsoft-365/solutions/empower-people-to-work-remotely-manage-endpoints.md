@@ -35,7 +35,7 @@ Microsoft Intune is a cloud-based service that focuses on mobile device manageme
 
 - **MAM:** Remote workers might not want you to have full control on their personal devices, also known as bring-your-own device (BYOD) devices. You can give your hybrid workers options and still protect your organization. For example, hybrid workers can enroll their devices if they want full access to your organization resources. Or, if these users only want access to email or Microsoft Teams, then use app protection policies that require multi-factor authentication (MFA) to use these apps.
 
-For more information, see this [overview of Microsoft Intune](/intune/fundamentals/what-is-intune).
+For more information, see the [Manage endpoints with Intune and Microsoft 365](manage-devices-with-intune-overview.md) foundation solution.
 
 ## Configuration Manager
 
@@ -45,17 +45,17 @@ For more information, see this [overview of Configuration Manager](/mem/configmg
 
 ## Co-management
 
-Co-management combines your existing on-premises Configuration Manager investment with the cloud using Intune and other Microsoft 365 cloud services. You choose whether Configuration Manager or Intune is the management authority for different workload. 
+Co-management combines your existing on-premises Configuration Manager investment with the cloud using Intune and other Microsoft 365 cloud services. You choose whether Configuration Manager or Intune is the management authority for different workloads. 
 
 Co-management uses Intune-based cloud features, including Conditional Access and enforcing device compliance. You keep some tasks on-premises, while running other tasks in the cloud.
 
 For more information, see this [overview of co-management](/mem/configmgr/comanage/overview).
 
-## Desktop Analytics
+## Endpoint Analytics
 
-Desktop Analytics is a cloud-based service that integrates with Configuration Manager and provides you with insight and intelligence so you can make informed decisions about your Windows clients. It combines data from your organization with data aggregated from millions of other devices connected to Microsoft cloud services. 
+Endpoint Analytics is a cloud-based service that integrates with Configuration Manager and provides you with insight and intelligence so you can make informed decisions about your Windows clients. It combines data from your organization with data aggregated from millions of other devices connected to Microsoft cloud services. 
 
-With Desktop Analytics, you can:
+With Endpoint Analytics, you can:
 
 - Create an inventory of apps running in your organization.
 - Assess app compatibility with the latest Windows 10 feature updates.
@@ -63,7 +63,7 @@ With Desktop Analytics, you can:
 - Create pilot groups that represent the entire application and driver estate across a minimal set of devices.
 - Deploy Windows 10 to pilot and production-managed devices.
 
-For more information, see this [overview of Desktop Analytics](/mem/configmgr/desktop-analytics/overview)
+For more information, see this [overview of Endpoint Analytics](/mem/configmgr/desktop-analytics/overview)
 
 ## Windows Autopilot
 

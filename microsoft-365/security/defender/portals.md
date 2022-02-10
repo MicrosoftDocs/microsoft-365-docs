@@ -13,7 +13,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
@@ -38,9 +37,9 @@ Security operators and admins can go to the following portals to manage security
 | Microsoft 365 Defender portal | Monitor and respond to threat activity and strengthen security posture across your identities, email, data, endpoints, and apps with [Microsoft 365 Defender](microsoft-365-defender.md) | [security.microsoft.com](https://security.microsoft.com/) |
 | Microsoft Defender Security Center | Monitor and respond to threat activity on your endpoints using capabilities provided with [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
 | Security & Compliance Center | Manage [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) and [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) to protect your email and collaboration services, and ensure compliance to various data-handling regulations | [protection.office.com](https://protection.office.com) |
-| Azure Defender portal | Use [Azure Defender](/azure/security-center/security-center-intro) to strengthen the security posture of your data centers and your hybrid workloads in the cloud | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
+| Defender for Cloud portal | Use [Microsoft Defender for Cloud](/azure/security-center/security-center-intro) to strengthen the security posture of your data centers and your hybrid workloads in the cloud | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
 | Microsoft Defender for Identity portal | Identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions using Active Directory signals with [Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) | [portal.atp.azure.com](https://portal.atp.azure.com/) |
-| Cloud App Security portal | Use [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) to get rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats on cloud services | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |
+| Defender for Cloud Apps portal | Use [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) to get rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats on cloud services | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |
 | Microsoft Security Intelligence portal | Get security intelligence updates for Microsoft Defender for Endpoint, submit samples, and explore the threat encyclopedia | [microsoft.com/wdsi](https://microsoft.com/wdsi) |
 
 ## Portals for other workloads

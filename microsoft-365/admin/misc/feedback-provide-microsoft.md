@@ -43,7 +43,6 @@ If you are using [Feedback](https://feedbackportal.microsoft.com/), you can prov
 :::image type="content" source="../../media/sending-feedback-community-portal.png" alt-text="Screenshot: Selection of Microsoft products you can send feedback on":::
 
 Selecting a forum allows you to see all feedback related to that product, and you can upvote or comment on feedback that matches yours.  If you do not see feedback that is similar to your own, you can submit new feedback through the portal itself.
-add screenshot.
 
 ### Sending feedback from Windows Feedback Hub
 
