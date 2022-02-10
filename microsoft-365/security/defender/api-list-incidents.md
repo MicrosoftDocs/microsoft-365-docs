@@ -20,6 +20,7 @@ search.appverid:
   - MOE150
   - MET150
 ms.technology: m365d
+ms.custom: api
 ---
 
 # List incidents API in Microsoft 365 Defender
@@ -100,7 +101,7 @@ lastUpdateTime|Time when the incident was last updated on the backend. <p> This 
 assignedTo|Owner of the incident, or *null* if no owner is assigned.|secop2@contoso.com
 classification|The specification for the incident. The property values are: *Unknown*, *FalsePositive*, *TruePositive*|Unknown
 determination|Specifies the determination of the incident. The property values are: *NotAvailable*, *Apt*, *Malware*, *SecurityPersonnel*, *SecurityTesting*, *UnwantedSoftware*, *Other*|NotAvailable
-detectionSource|Specifies source of detection.|MCAS
+detectionSource|Specifies source of detection.|Defender for Cloud Apps
 status|Categorize incidents (as *Active*, or *Resolved*). It can help you organize and manage your response to incidents.|Active
 severity|Indicates the possible impact on assets. The higher the severity the bigger the impact. Typically higher severity items require the most immediate attention. <p> One of the following values: *Informational*, *Low*, *Medium, and *High*.|Medium
 tags|Array of custom tags associated with an incident, for example to flag a group of incidents with a common characteristic.|\[\]
@@ -113,7 +114,7 @@ Field name|Description|Example value
 ---|---|---
 alertId|Unique identifier to represent the alert|caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC
 incidentId|Unique identifier to represent the incident this alert is associated with|924565
-serviceSource|Service that the alert originates from, such as Microsoft Defender for Endpoint, Microsoft Cloud App Security, Microsoft Defender for Identity, or Microsoft Defender for Office 365.|MicrosoftCloudAppSecurity
+serviceSource|Service that the alert originates from, such as Microsoft Defender for Endpoint, Microsoft Defender for Cloud Apps, Microsoft Defender for Identity, or Microsoft Defender for Office 365.|MicrosoftCloudAppSecurity
 creationTime|Time when alert was first created.|2020-09-06T14:46:55.7182276Z
 lastUpdatedTime|Time when alert was last updated at the backend.|2020-09-06T14:46:57.2433333Z
 resolvedTime|Time when alert was resolved.|2020-09-10T05:22:59Z

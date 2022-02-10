@@ -11,7 +11,9 @@ ms.author: dansimp
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365initiative-m365-defender
 ms.topic: article
 search.appverid: 
 - MOE150
@@ -32,7 +34,7 @@ To help you find the information you need more quickly, Microsoft improvement ac
 
 - Identity (Azure Active Directory accounts & roles)
 - Device (Microsoft Defender for Endpoint, known as [Microsoft Secure Score for Devices](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
-- Apps (email and cloud apps, including Office 365 and Microsoft Cloud App Security)
+- Apps (email and cloud apps, including Office 365 and Microsoft Defender for Cloud Apps)
 
 >[!NOTE]
 >In the recent release of Microsoft Secure Score, an improved scoring model has been released which made Microsoft Secure Score temporarily incompatible with Identity Secure Score and the Graph API. [View details](microsoft-secure-score-whats-new.md)

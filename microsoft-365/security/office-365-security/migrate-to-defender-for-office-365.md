@@ -26,7 +26,9 @@ ms.prod: m365-security
 **Applies to**
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 
-This guide provides specific and actionable steps for migrating from a third-party protection service or device to Microsoft Defender for Office 365. This guide assumes the following facts:
+If you already have an existing third-party protection service or device that sits in front of Microsoft 365, you can use this guide to migrate your protection to Microsoft Defender for Office 365 to get the benefits of a consolidated management experience, potentially reduced cost (using products that you already pay for), and a mature product with integrated security protection. For more information, see [Microsoft Defender for Office](https://www.microsoft.com/security/business/threat-protection/office-365-defender).
+
+This guide provides specific and actionable steps for your migration, and assumes the following facts:
 
 - You already have Microsoft 365 mailboxes, but you're currently using a third-party service or device for email protection. Mail from the internet flows through the protection service before delivery into your Microsoft 365 organization, and Microsoft 365 protection is as low as possible (it's never completely off; for example, malware protection is always enforced).
 
@@ -82,4 +84,4 @@ The process of migrating from a third-party protection service to Defender for O
 
 ## Next step
 
-- Proceed to [Phase 1: Setup](migrate-to-defender-for-office-365-prepare.md).
+- Proceed to [Phase 1: Prepare](migrate-to-defender-for-office-365-prepare.md).

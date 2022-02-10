@@ -17,7 +17,9 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: Learn how admins can delete items in a user's Recoverable Items folder for an Exchange Online mailbox, even if that mailbox is placed on legal hold.
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 ---
 
 # Delete items in the Recoverable Items folder of cloud-based mailboxes on hold
@@ -39,18 +41,20 @@ This article explains how admins can delete items from the Recoverable Items fol
 [Step 6: Revert the mailbox to its previous state](#step-6-revert-the-mailbox-to-its-previous-state)
   
 > [!CAUTION]
-> The procedures outlined in this article will result in data being permanently deleted (purged) from an Exchange Online mailbox. That means messages that you delete from the Recoverable Items folder can't be recovered and won't be available for legal discovery or other compliance purposes. If you want to delete messages from a mailbox that's placed on hold as part of a Litigation Hold, In-Place Hold, eDiscovery hold, or retention policy created in the security and compliance center, check with your records management or legal departments before removing the hold. Your organization might have a policy that defines whether a mailbox on hold or a data spillage incident takes priority.
+> The procedures outlined in this article will result in data being permanently deleted (purged) from an Exchange Online mailbox. That means messages that you delete from the Recoverable Items folder can't be recovered and won't be available for legal discovery or other compliance purposes. If you want to delete messages from a mailbox that's placed on hold as part of a Litigation Hold, In-Place Hold, eDiscovery hold, or retention policy created in the Microsoft 365 compliance center, check with your records management or legal departments before removing the hold. Your organization might have a policy that defines whether a mailbox on hold or a data spillage incident takes priority.
   
 ## Before you delete items
 
 - To create and run a Content Search, you have to be a member of the eDiscovery Manager role group or be assigned the Compliance Search management role. To delete messages, you have to be a member of the Organization Management role group or be assigned the Search And Purge management role. For information about adding users to a role group, see [Assign eDiscovery permissions](./assign-ediscovery-permissions.md).
 
+- If a mailbox is assigned to an organization-wide retention policy, you have to exclude the mailbox from the policy before you can delete items from the Recoverable Items folder. It may take up to 24 hours to synchronize the policy change, and remove the mailbox from the policy. For more information, see "Organization-wide retention policies" in the [Remove all holds from the mailbox](#organization-wide-retention-policies) section in this article.
+
+- You can't perform this procedure for a mailbox that has been assigned retention settings with a retention policy that's locked by using Preservation Lock. That's because this lock prevents you from removing or excluding the mailbox from the policy and from disabling the Managed Folder Assistant on the mailbox. For more information about locking policies for retention,see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
+
 - The procedure described in this article isn't supported for inactive mailboxes. That's because you can't reapply a hold (or retention policy) to an inactive mailbox after you remove it. When you remove a hold from an inactive mailbox, it's changed to a normal soft-deleted mailbox and will be permanently deleted from your organization after it's processed by the Managed Folder Assistant.
 
-- You can't perform this procedure for a mailbox that has been assigned retention settings with a policy that's locked by using Preservation Lock. That's because this lock prevents you from removing or excluding the mailbox from the policy and from disabling the Managed Folder Assistant on the mailbox. For more information about locking policies for retention,see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
-
 - If a mailbox isn't placed on hold (or doesn't have single item recovery enabled), you can delete the items from the Recoverable Items folder. For more information about how to do this, see [Search for and delete email messages in your organization](./search-for-and-delete-messages-in-your-organization.md).
-  
+
 ## Step 1: Collect information about the mailbox
 
 This first step is to collect selected properties from the target mailbox that will affect this procedure. Be sure to write down these settings or save them to a text file because you'll change some of these properties and then revert back to the original values in Step 6, after you delete items from the Recoverable Items folder. Here's a list of the mailbox properties you need to collect.
@@ -172,7 +176,7 @@ Perform the following steps in Exchange Online PowerShell.
 The last step before you can delete items from the Recoverable Items folder is to remove all holds (that you identified in Step 1) placed on the mailbox. All holds must be removed so that items won't be retained after you delete them from the Recoverable Items folder. The following sections contain information about removing different types of holds on a mailbox. See the [More information](#more-information) section for tips about how to identify the type hold that might be placed on a mailbox. For more information, see [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md).
   
 > [!CAUTION]
-> As previously stated, check with your records management or legal departments before removing a hold from a mailbox. 
+> As previously stated, check with your records management or legal departments before removing a hold from a mailbox.
   
 ### Litigation Hold
   
@@ -193,11 +197,11 @@ Run the following command in Exchange Online PowerShell to identify the In-Place
 Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name
 ```
 
-After you identify the In-Place Hold, you can use the Exchange admin center (EAC) or Exchange Online PowerShell to remove the mailbox from the hold. For more information, see [Create or remove an In-Place Hold](/exchange/security-and-compliance/create-or-remove-in-place-holds).
+After you identify the In-Place Hold, you can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> or Exchange Online PowerShell to remove the mailbox from the hold. For more information, see [Create or remove an In-Place Hold](/exchange/security-and-compliance/create-or-remove-in-place-holds).
   
 ### Retention policies applied to specific mailboxes
   
-Run the following command in [Security & Compliance Center PowerShell](/powershell/exchange/exchange-online-powershell) to identify the retention policy that is applied to the mailbox. This command will also return any Teams conversation retention policies applied to a mailbox. Use the GUID (not including the `mbx` or `skp` prefix) for the retention policy that you identified in Step 1.
+Run the following command in [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) to identify the retention policy that is applied to the mailbox. This command will also return any Teams conversation retention policies applied to a mailbox. Use the GUID (not including the `mbx` or `skp` prefix) for the retention policy that you identified in Step 1.
 
 ```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
@@ -213,7 +217,10 @@ Organization-wide, Exchange-wide, and Teams-wide retention policies are applied 
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-After you identify the organization-wide retention policies, go to the **Information governance** > **Retention** page in the Microsoft 365 compliance center, edit each organization-wide retention policy that you identified in the previous step, and add the mailbox to the list of excluded recipients. Doing this will remove the user's mailbox from the retention policy. It may take up to 24 hours to replicate the change.
+After you identify the organization-wide retention policies, go to the **Information governance** > **Retention** page in the Microsoft 365 compliance center, edit each organization-wide retention policy that you identified in the previous step, and add the mailbox to the list of excluded recipients. Doing this will remove the user's mailbox from the retention policy.
+
+> [!IMPORTANT]
+> After you exclude a mailbox from an organization-wide retention policy, it may take up to 24 hours to synchronize this change and remove the mailbox from the policy.
 
 ### Retention labels
 
@@ -225,7 +232,11 @@ To view the value of the *ComplianceTagHoldApplied* property, run the following 
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-After you've identified that a mailbox is on hold because a retention label is applied to a folder or item, you can use the Content Search tool in the security and compliance center to search for labeled items by using the ComplianceTag search condition. For more information, see the "Search conditions" section in [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md#conditions-for-common-properties).
+After you've identified that a mailbox is on hold because a retention label is applied to a folder or item, you can use the Content search tool in the Microsoft 365 compliance center to search for labeled items by using the **Retention label** condition. For more information, see:
+
+- The "Using Content Search to find all content with a specific retention label" section in [Learn about retention policies and retention labels](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
+
+- The "Search conditions" section in [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md#conditions-for-common-properties).
 
 For more information about labels, see [Learn about retention policies and retention labels](retention.md).
 
@@ -281,16 +292,14 @@ Here's an overview of the process to search for and delete items in a user's Rec
 
    - **Deletions**: Contains soft-deleted items whose deleted item retention period has not expired. Users can recover soft-deleted items from this subfolder using the Recover Deleted Items tool in Outlook.
 
-   - **Purges**: Contains hard-deleted items whose deleted item retention period has expired. Users can also hard-delete items by purging items from their Recoverable Items folder. If the mailbox is on hold, hard-deleted items are preserved. This subfolder isn't visible to end users.
-
    - **DiscoveryHolds**: Contains hard-deleted items that have been preserved by an eDiscovery hold or a retention policy. This subfolder isn't visible to end users.
 
    - **SubstrateHolds**: Contains hard-deleted items from Teams and other cloud-based apps that have been preserved by a retention policy or other type of hold. This subfolder isn't visible to end users.
 
-3. Use the **New-ComplianceSearch** cmdlet (in Security & Compliance Center PowerShell) or use the Content search tool in the compliance center to create a content search that returns items from the target user's Recoverable Items folder. You can do this by including the FolderId in the search query for all subfolders that you want to search. For example, the following query returns all messages in the Purges and eDiscoveryHolds subfolders:
+3. Use the **New-ComplianceSearch** cmdlet (in Security & Compliance Center PowerShell) or use the Content search tool in the compliance center to create a content search that returns items from the target user's Recoverable Items folder. You can do this by including the FolderId in the search query for all subfolders that you want to search. For example, the following query returns all messages in the Deletions and eDiscoveryHolds subfolders:
 
    ```text
-   folderid:<folder ID of Purges subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
+   folderid:<folder ID of Deletions subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
    ```
 
    For more information and examples about running content searches that use the folder ID property, see [Use a folder ID or to perform a targeted collection](use-content-search-for-targeted-collections.md#step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection).
@@ -385,7 +394,7 @@ Perform the following steps (in the specified sequence) in Exchange Online Power
 
     Use the Microsoft 365 compliance center to add the mailbox back to the retention policy. Go to the **Information governance** > **Retention** page in the compliance center, edit the retention policy, and add the mailbox back to the list of recipients that the retention policy is applied to.
 
-    **Organization-wide Retention policies**
+    **Organization-wide retention policies**
 
     If you removed an organization-wide or Exchange-wide retention policy by excluding it from the policy, then use the Microsoft 365 compliance center to remove the mailbox from the list of excluded users. Go to the **Information governance** > **Retention** page in the compliance center, edit the organization-wide retention policy, and remove the mailbox from the list of excluded recipients. Doing this will reapply the retention policy to the user's mailbox.
 

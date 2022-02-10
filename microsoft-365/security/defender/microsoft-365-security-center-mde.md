@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 ms.collection: 
 - M365-security-compliance 
-- m365initiative-m365-defender 
+ms.custom: admindeeplinkDEFENDER
 ---
 
 # Microsoft Defender for Endpoint in Microsoft 365 Defender
@@ -52,13 +52,13 @@ The image and the table below lists the changes in navigation between the Micros
 | Configuration management | Configuration management |
 | Settings | Settings | 
 
-The improved [Microsoft 365 Defender](microsoft-365-defender.md#the-microsoft-365-defender-portal) at [https://security.microsoft.com](https://security.microsoft.com) combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats. This  brings together functionality from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance center.
+The improved [Microsoft 365 Defender](microsoft-365-defender.md#the-microsoft-365-defender-portal) at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a> combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats. This brings together functionality from existing Microsoft security portals, including Microsoft Defender Security Center and the Office 365 Security & Compliance center.
 
 If you're familiar with the Microsoft Defender Security Center, this article helps describe some of the changes and improvements in Microsoft 365 Defender. However there are some new and updated elements to be aware of.
 
 Historically, the [Microsoft Defender Security Center](/windows/security/threat-protection/microsoft-defender-atp/portal-overview) has been the home for Microsoft Defender for Endpoint. Enterprise security teams have used it to monitor and help responding to alerts of potential advanced persistent threat activity or data breaches. To help reduce the number of portals, Microsoft 365 Defender will be the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure.
 
-Microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting access to managed security service providers (MSSPs)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same way [access is granted in the Microsoft Defender security center](mssp-access.md).
+Microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting access to managed security service providers (MSSPs)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same way [access is granted in the Microsoft Defender Security Center](mssp-access.md).
 
 > [!IMPORTANT]
 > What you see in Microsoft 365 Defender depends on your current subscriptions. For example, if you don't have a license for Microsoft Defender for Office 365, then the Email & Collaboration section will not be shown.
@@ -70,7 +70,7 @@ Microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting acc
 >- US Department of Defense
 >- All US government institutions with commercial licenses
 
-Take a look at Microsoft 365 Defender: [https://security.microsoft.com](https://security.microsoft.com).
+Take a look at Microsoft 365 Defender at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>.
 
 Learn more about the benefits: [Overview of Microsoft 365 Defender](microsoft-365-defender.md)
 
@@ -91,7 +91,7 @@ This table is a quick reference of the changes between the Microsoft Defender Se
 
 | Area | Description of change |
 |---------|---------|
-|Search   |  Instead of being in the heading, Microsoft Defender for Endpoint search bar is moving under the Endpoints section. You can continue to search for devices, files, users, URLs, IPs, vulnerabilities, software, and recommendations.  |
+|Search   |  The search bar is located at the top of the page. Suggestions are provided as you type. You can search across the following entities in Defender for Endpoint and Defender for Identity: <br><br> - **Devices** - supported for both Defender for Endpoint and Defender for Identity. You can even use search operators, for example, you can use "contains" to search for part of a host name. <br><br> - **Users** - supported for both Defender for Endpoint and Defender for Identity. <br><br> - **Files, IPs, and URLs** - same capabilities as in Defender for Endpoint. <br> NOTE: *IP and URL searches are exact match and don’t appear in the search results page – they lead directly to the entity page.  <br><br> - **TVM** -  same capabilities as in Defender for Endpoint (vulnerabilities, software, and recommendations). <br><br>  The enhanced search results page centralizes the results from all entities.  |
 |[Dashboard](/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  This is your security operations dashboard. See an overview of how many active alerts were triggered, which devices are at risk, which users are at risk, and severity level for alerts, devices, and users. You can also see if any devices have sensor issues, your overall service health, and how any unresolved alerts were detected. |
 |Device inventory | No changes. |
 |[Vulnerability management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    Name was shortened to fit in the navigation pane. It's the same as the threat and vulnerability management section, with all the pages underneath.     |
@@ -100,7 +100,7 @@ This table is a quick reference of the changes between the Microsoft Defender Se
 | Configuration management   |  No changes.  |
 
 > [!NOTE]
-> **Automatic investigation and remediation** is now a part of  incidents. You can see Automated  investigation and remediation events in the **Incident > Investigation** tab.
+> **Automatic investigation and remediation** is now a part of  incidents. You can see Automated  investigation and remediation events in the **Incident > Investigation** tab.
 
 > [!TIP]
 > Device search is done from Endpoints > Search.
@@ -115,7 +115,7 @@ This table is a quick reference of the changes between the Microsoft Defender Se
 
 ## Microsoft 365 security navigation and capabilities
 
-The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in this security center.
+The left navigation, or quick launch bar, will look familiar. However, there are some new and updated elements in Microsoft 365 Defender portal. 
 
 ### Incidents and alerts
 

@@ -46,7 +46,7 @@ To learn more about the user experience with information barriers, see:
 
 ## What happens with information barriers
 
-When information barrier policies are in place, people who should not communicate or share files with other specific users won't be able to find, select, chat, or call those users. With information barriers, checks are in place to prevent unauthorized communication and collaboration. 
+When information barrier policies are in place, people who should not communicate or share files with other specific users won't be able to find, select, chat, or call those users. With information barriers, checks are in place to prevent unauthorized communication and collaboration.
 
 Information barriers applies to Microsoft Teams (chats and channels), SharePoint Online and OneDrive. 
 In Microsoft Teams, information barrier policies determine and prevent the following kinds of unauthorized communications:
@@ -76,13 +76,13 @@ To learn more about the user experience with information barriers, see [informat
 
 ## Required licenses and permissions
 
-Information barriers are rolling out now, and are included in subscriptions, such as:
+Before you get started with insider risk management, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) and any add-ons. To access and use information barriers, your organization must have one of the following subscriptions or add-ons:
 
-- Microsoft 365 E5/A5/A3/A1
-- Office 365 E5/A5/A3/A1
-- Office 365 Advanced Compliance
-- Microsoft 365 Compliance E5/A5
-- Microsoft 365 Insider Risk Management
+- Microsoft 365 E5/A5 subscription (paid or trial version)
+- Office 365 E5/A5/A3/A1 subscription (paid or trial version)
+- Office 365 Advanced Compliance add-on (no longer available for new subscriptions)
+- Microsoft 365 E3/A3/A1 subscription + the Microsoft 365 E5/A5 Compliance add-on
+- Microsoft 365 E3/A3/A1 subscription + the Microsoft 365 E5/A5 Insider Risk Management add-on
 
 For more information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 

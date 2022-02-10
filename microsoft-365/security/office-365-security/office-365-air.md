@@ -90,7 +90,7 @@ Microsoft 365 provides many built-in alert policies that help identify Exchange 
 
 |Alert|Severity|How the alert is generated|
 |---|---|---|
-|A potentially malicious URL click was detected|**High**|This alert is generated when any of the following occurs: <ul><li>A user protected by [Safe Links](safe-links.md) in your organization clicks a malicious link</li><li>Verdict changes for URLs are identified by Microsoft Defender for Office 365</li><li>Users override Safe Links warning pages (based on your organization's [Safe Links policy](set-up-safe-links-policies.md)).</li></ul> <p> For more information on events that trigger this alert, see [Set up Safe Links policies](set-up-safe-links-policies.md).|
+|A potentially malicious URL click was detected|**High**|This alert is generated when any of the following occurs: <ul><li>A user protected by [Safe Links](safe-links.md) in your organization clicks a malicious link</li><li>Verdict changes for URLs are identified by Microsoft Defender for Office 365</li><li>Users override Safe Links warning pages (based on your organization's [Safe Links policy](set-up-safe-links-policies.md).</li></ul> <p> For more information on events that trigger this alert, see [Set up Safe Links policies](set-up-safe-links-policies.md).|
 |An email message is reported by a user as malware or phish|**Informational**|This alert is generated when users in your organization report messages as phishing email using the [Report Message add-in](enable-the-report-message-add-in.md) or the [Report Phishing add-in](enable-the-report-phish-add-in.md).|
 |Email messages containing malware are removed after delivery|**Informational**|This alert is generated when any email messages containing malware are delivered to mailboxes in your organization. If this event occurs, Microsoft removes the infected messages from Exchange Online mailboxes using [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md).|
 |Email messages containing phish URLs are removed after delivery|**Informational**|This alert is generated when any messages containing phish are delivered to mailboxes in your organization. If this event occurs, Microsoft removes the infected messages from Exchange Online mailboxes using [ZAP](zero-hour-auto-purge.md).|
@@ -128,13 +128,13 @@ If you're already using AIR capabilities in Microsoft Defender for Office 365, y
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Unified Action center.":::
 
-The new and improved Microsoft 365 Defender portal brings together AIR capabilities in [Microsoft Defender for Office 365](defender-for-office-365.md) and in [Microsoft Defender for Endpoint](../defender-endpoint/automated-investigations.md). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.
+The new and improved Microsoft 365 Defender portal <https://security.microsoft.com> brings together AIR capabilities in [Microsoft Defender for Office 365](defender-for-office-365.md) and in [Microsoft Defender for Endpoint](../defender-endpoint/automated-investigations.md). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.
 
 > [!TIP]
-> The new Microsoft 365 Microsoft 365 Defender portal (<https://security.microsoft.com>) replaces the following centers:
+> The new Microsoft 365 Defender portal replaces the following admin centers:
 >
 > - Security & Compliance Center (<https://protection.office.com>)
-> - Microsoft Defender Security Center (<https://securitycenter.windows.com>)
+> - Microsoft 365 Defender (<https://security.microsoft.com>)
 >
 > In addition to the URL changing, there's a new look and feel, designed to give your security team a more streamlined experience, with visibility to more threat detections in one place.
 

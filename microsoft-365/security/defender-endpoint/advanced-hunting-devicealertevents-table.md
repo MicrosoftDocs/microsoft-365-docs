@@ -22,13 +22,11 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-
-
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
-The `DeviceAlertEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about alerts in Microsoft Defender Security Center. Use this reference to construct queries that return information from the table.
+The `DeviceAlertEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about alerts in Microsoft 365 Defender. Use this reference to construct queries that return information from the table.
 
 For information on other tables in the advanced hunting schema, see [the advanced hunting schema reference](advanced-hunting-schema-reference.md).
 
@@ -46,7 +44,7 @@ For information on other tables in the advanced hunting schema, see [the advance
 |`RemoteUrl`|string|URL or fully qualified domain name (FQDN) that was being connected to|
 |`RemoteIP`|string|IP address that was being connected to|
 |`AttackTechniques`|string|MITRE ATT&CK techniques associated with the activity that triggered the alert|
-|`ReportId`|long|Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the `DeviceName` and `Timestamp` columns|
+|`ReportId`|long|Event identifier based on a repeating counter. To identify unique events, this column must be used with the `DeviceName` and `Timestamp` columns|
 |`Table`|string|Table that contains the details of the event|
 
 ## Related topics

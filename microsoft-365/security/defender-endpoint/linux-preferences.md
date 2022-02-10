@@ -24,7 +24,7 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -59,30 +59,18 @@ The *antivirusEngine* section of the configuration profile is used to manage the
 |**Comments**|See the following sections for a description of the dictionary contents.|
 |
 
-#### Enable / disable real-time protection
+#### Enforcement level for antivirus engine
 
-Determines whether real-time protection (scan files as they are accessed) is enabled.
+Specifies the enforcement preference of antivirus engine. There are three values for setting enforcement level:
 
-<br>
-
-****
-
-|Description|Value|
-|---|---|
-|**Key**|enableRealTimeProtection|
-|**Data type**|Boolean|
-|**Possible values**|true (default) <p> false|
-|
-
-#### Enable / disable passive mode
-
-Determines whether the antivirus engine runs in passive mode or not. In passive mode:
-
-- Real-time protection is turned off.
-- On-demand scanning is turned on.
-- Automatic threat remediation is turned off.
-- Security intelligence updates are turned on.
-- Status menu icon is hidden.
+- Real-time (`real_time`): Real-time protection (scan files as they are accessed) is enabled.
+- On-demand (`on_demand`): Files are scanned only on demand. In this:
+  - Real-time protection is turned off.
+- Passive (`passive`): Runs the antivirus engine in passive mode. In this:
+  - Real-time protection is turned off.
+  - On-demand scanning is turned on.
+  - Automatic threat remediation is turned off.
+  - Security intelligence updates are turned on.
 
 <br>
 
@@ -90,16 +78,16 @@ Determines whether the antivirus engine runs in passive mode or not. In passive 
 
 |Description|Value|
 |---|---|
-|**Key**|passiveMode|
-|**Data type**|Boolean|
-|**Possible values**|false (default) <p> true|
-|**Comments**|Available in Defender for Endpoint version 100.67.60 or higher.|
+|**Key**|enforcementLevel|
+|**Data type**|String|
+|**Possible values**|real_time (default) <p> on_demand <p> passive|
+|**Comments**|Available in Defender for Endpoint version 101.10.72 or higher.|
 |
 
 
 #### Enable/disable behavior-monitoring 
 
-Determines whether behavior monitoring and blocking capability is enabled on the device or not. To improve effectiveness of security protection, we recommend keeping this feature turned on.
+Determines whether behavior monitoring and blocking capability is enabled on the device or not. To improve effectiveness of security protection, we recommend keeping this feature turned on.
 
 <br>
 
@@ -107,7 +95,7 @@ Determines whether behavior monitoring and blocking capability is enabled on the
 
 |Description|Value|
 |---|---|
-|**Key**|name|
+|**Key**|behaviorMonitoring|
 |**Data type**|String|
 |**Possible values**|disabled <p> enabled (default)|
 |**Comments**|Available in Defender for Endpoint version 101.45.00 or higher.|
@@ -499,7 +487,7 @@ The following configuration profile will:
 {
    "antivirusEngine":{
       "behaviorMonitoring":"enabled",
-      "enableRealTimeProtection":true,
+      "enforcementLevel":"real_time",
       "threatTypeSettings":[
          {
             "key":"potentially_unwanted_application",
@@ -515,7 +503,7 @@ The following configuration profile will:
       "automaticDefinitionUpdateEnabled":true,
       "automaticSampleSubmissionConsent":"safe",
       "enabled":true,
-      "proxy":"http://proxy.server:port/"
+      "proxy": "<EXAMPLE DO NOT USE> http://proxy.server:port/"
    }
 }
 ```
@@ -530,11 +518,10 @@ The following configuration profile contains entries for all settings described 
 {
    "antivirusEngine":{
       "behaviorMonitoring":"enabled",
-      "enableRealTimeProtection":true,
+      "enforcementLevel":"real_time",
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,
       "maximumOnDemandScanThreads":2,
-      "passiveMode":false,
       "exclusionsMergePolicy":"merge",
       "exclusions":[
          {
@@ -585,11 +572,43 @@ The following configuration profile contains entries for all settings described 
       "diagnosticLevel":"optional",
       "automaticSampleSubmissionConsent":"safe",
       "automaticDefinitionUpdateEnabled":true,
-      "proxy": "http://proxy.server:port/"
+      "proxy": "<EXAMPLE DO NOT USE> http://proxy.server:port/"
    }
 }
 ```
 
+## Add tag or group ID to the configuration profile
+
+When you run the `mdatp health` command for the first time, the value for the tag and group ID will be blank. To add tag or group ID to the `mdatp_managed.json` file, follow the below steps:
+  
+  1. Open the configuration profile from the path `/etc/opt/microsoft/mdatp/managed/mdatp_managed.json`.
+  2. Go down to the bottom of the file, where the `cloudService` block is located.
+  3. Add the required tag or group ID as following example at the end of the closing curly bracket for the `cloudService`.
+
+  ```JSON
+    },
+    "cloudService": {
+      "enabled": true,
+      "diagnosticLevel": "optional",
+      "automaticSampleSubmissionConsent": "safe",
+      "automaticDefinitionUpdateEnabled": true,
+      "proxy": "http://proxy.server:port/"
+  },
+  "edr": {
+    "groupIds":"GroupIdExample",
+    "tags": [
+              {
+              "key": "GROUP",
+              "value": "Tag"
+              }
+            ]
+        }
+  }
+  ```
+
+  > [!NOTE]
+  > Don’t forget to add the comma after the closing curly bracket at the end of the `cloudService` block. Also, make sure that there are two closing curly brackets after adding Tag or Group ID block (please see the above example). At the moment, the only supported key name for tags is `GROUP`. 
+  
 ## Configuration profile validation
 
 The configuration profile must be a valid JSON-formatted file. There are a number of tools that can be used to verify this. For example, if you have `python` installed on your device:
@@ -611,7 +630,7 @@ To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is worki
 - automatic_definition_update_enabled
 
 > [!NOTE]
-> For the mdatp_managed.json to take effect, no restart of the wdavdaemon is required.
+> For the mdatp_managed.json to take effect, no restart of the `mdatp` deamon is required.
 
 ## Configuration profile deployment
 

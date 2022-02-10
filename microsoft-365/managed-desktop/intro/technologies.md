@@ -3,11 +3,11 @@ title: Microsoft Managed Desktop technologies
 description:  This article lists the technologies and apps used in Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
+author: tiaraquan
 ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ---
 
@@ -69,5 +69,5 @@ User Account Control | User Account Control switches to the Secure Desktop when 
 Product |Information
  --- | ---
 Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 | You can use all features of Enterprise Mobility + Security E3 to manage MDM devices. You can use Azure Active Directory Premium P2 as an optional feature with Microsoft Managed Desktop.
-Microsoft Cloud App Security | You can use this optional feature with Microsoft Managed Desktop.
+Microsoft Defender for Cloud Apps | You can use this optional feature with Microsoft Managed Desktop.
 Azure Information Protection P2  | You can use this optional feature with Microsoft Managed Desktop.

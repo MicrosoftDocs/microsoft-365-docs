@@ -47,7 +47,7 @@ These are the key features you'll get with the Microsoft 365 support integration
 
 To proceed with this guide, make sure that the following permissions are available and configured for your environments during the whole process:
 
-- Azure Active Directory (AAD) admin who can create AAD applications
+- Azure Active Directory (AAD) admin who can create Azure AD Applications
 
 - ServiceNow admin
 
@@ -59,7 +59,7 @@ To set up **Microsoft 365 support integration**:
 
 - Register applications in Microsoft Azure Active Directory (AAD) for authentication of both outbound and inbound API calls.
 
-- Create ServiceNow entities with Microsoft AAD application for both outbound and inbound data flow.
+- Create ServiceNow entities with Microsoft Azure AD Application for both outbound and inbound data flow.
 
 - Integrate ServiceNow instance with Microsoft support through the Microsoft 365 admin portal.
 
@@ -88,5 +88,5 @@ Depending on your answers to the questions above, this table tells you what feat
 | Question \#1 Answer | Question \#2 Answer | What features are available? | Configuration steps |
 |---------------------|---------------------|-----------|----------------|
 | Yes                 | Yes/No              | Service Health Incidents Recommended Solutions Microsoft service request | [Set up Microsoft 365 support integration with ServiceNow Basic Authentication](servicenow-basic-authentication.md) |
-| No                  | Yes                 | Service Health Incidents Recommended Solutions Microsoft service request | [Set up Microsoft 365 support integration with AAD OAuth Token](servicenow-aad-oauth-token.md)                 |
+| No                  | Yes                 | Service Health Incidents Recommended Solutions Microsoft service request | [Set up Microsoft 365 support integration with Azure AD Auth Token](servicenow-aad-oauth-token.md)                 |
 | No                  | No                  | Service Health Incidents Recommended Solutions                           | [Set up Microsoft 365 support integration for Insights ONLY](servicenow-service-health-incidents-solutions-only.md)                    |

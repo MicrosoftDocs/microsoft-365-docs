@@ -17,7 +17,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365initiative-m365-defender
+ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: m365d
 ---
@@ -31,14 +31,14 @@ ms.technology: m365d
 
 In alignment with Microsoft's cross-domain approach to threat protection with SIEM and Extended detection and response (XDR), we've rebranded Microsoft Defender Advanced Threat Protection as Microsoft Defender for Endpoint and unified it into a single integrated portal: Microsoft 365 Defender.
 
-This guide explains how to route accounts to Microsoft 365 Defender by enabling automatic redirection from the former Microsoft Defender for Endpoint portal (securitycenter.windows.com or securitycenter.microsoft.com), to Microsoft 365 Defender portal (security.microsoft.com).
+This guide explains how to route accounts to Microsoft 365 Defender by enabling automatic redirection from the former Microsoft Defender for Endpoint portal (securitycenter.windows.com or securitycenter.microsoft.com), to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
 
 > [!NOTE]
-> Microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting access to managed security service providers (MSSPs)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same that way access is [granted in the Microsoft Defender security center](./mssp-access.md).
+> Microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting access to managed security service providers (MSSPs)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same that way access is [granted in the Microsoft Defender Security Center](./mssp-access.md).
 
 ## What to expect
 
-Once automatic redirection is enabled, accounts accessing the former Microsoft Defender for Endpoint portal at securitycenter.windows.com or securitycenter.microsoft.com, will be automatically routed to Microsoft 365 Defender portal at security.microsoft.com.
+Once automatic redirection is enabled, accounts accessing the former Microsoft Defender for Endpoint portal at securitycenter.windows.com or securitycenter.microsoft.com, will be automatically routed to Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><security.microsoft.com></a>.
 
 Learn more about what's changed: [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md).
 
@@ -62,8 +62,8 @@ Refer to the table below for more on links and routing.
 |---------|---------|---------|
 | Alert page | Alert page in securitycenter.windows.com | Alert page in security.microsoft.com |
 | Incident page |Incident page in securitycenter.windows.com | Incident page in security.microsoft.com |
-| Alert page in security center portal | Alert page in security.microsoft.com | Alert page in security.microsoft.com |
-| Incident page in security center portal | Incident page in security.microsoft.com | Incident page in security.microsoft.com |
+| Alert page in Defender for Cloud portal | Alert page in security.microsoft.com | Alert page in security.microsoft.com |
+| Incident page in Defender for Cloud portal | Incident page in security.microsoft.com | Incident page in security.microsoft.com |
 
 ## When does this take effect?
 
@@ -75,7 +75,7 @@ To start routing accounts to Microsoft 365 Defender:
 
 1. Make sure you're a global administrator or have security administrator permissions in Azure Active Directory.
 
-2. [Sign in](https://security.microsoft.com/) to Microsoft 365 Defender.
+2. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
 
 3. Navigate to **Settings** > **Endpoints** > **General** > **Portal redirection** or [click here](https://security.microsoft.com/preferences2/portal_redirection).  
 
@@ -95,7 +95,7 @@ If something isn't working for you or if there's anything you're unable to compl
 
 To revert to the former Microsoft Defender for Endpoint portal:
 
-1. [Sign in](https://security.microsoft.com/) to Microsoft 365 Defender as a global administrator or using and account with security administrator permissions in Azure Active directory.
+1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> as a global administrator or using and account with security administrator permissions in Azure Active directory.
 
 2. Navigate to **Settings** > **Endpoints** > **General** > **Portal redirection** or [open the page here](https://security.microsoft.com/preferences2/portal_redirection).  
 

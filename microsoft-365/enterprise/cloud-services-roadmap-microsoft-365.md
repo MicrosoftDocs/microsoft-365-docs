@@ -40,7 +40,7 @@ To deploy your cloud services:
 To manage your cloud services: 
 
 - [Check your service health](view-service-health.md)
-- [Understand your support options](../business-video/get-help-support.md)
+- [Understand your support options](../admin/get-help-support.md)
 - Administer your cloud services
   - [Exchange Online](/Exchange/exchange-online)
   - [SharePoint Online](https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a)

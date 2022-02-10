@@ -114,7 +114,7 @@ If you have active third-party phishing simulations, you need to prevent the mes
 
   Today, Microsoft 365 considers some bulk mail (for example, newsletters) as safe based on the message source. Mail from these "safe" sources is currently not marked as bulk (the bulk complaint level or BCL is 0 or 1), so it's difficult to globally block mail from these sources. For most users, the solution is to ask them to individually unsubscribe from these bulk messages or use Outlook to block the sender. But, some users will not like blocking or unsubscribing from bulk messages themselves.
 
-  Mail flow rules that filter bulk email can be helpful when VIP users do not wish to manage this themselves. For more information, see [Use mail flow rules to filter bulk email](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail.md).
+  Mail flow rules that filter bulk email can be helpful when VIP users do not wish to manage this themselves. For more information, see [Use mail flow rules to filter bulk email](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail).
 
 ## Identify and designate priority accounts
 

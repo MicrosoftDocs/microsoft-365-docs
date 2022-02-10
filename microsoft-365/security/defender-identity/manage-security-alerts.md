@@ -6,6 +6,7 @@ ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
+ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ---
 
@@ -18,7 +19,7 @@ manager: raynew
 
 This article explains the basics of how to work with [Microsoft Defender for Identity](/defender-for-identity) security alerts in [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
-Defender for Identity alerts are natively integrated into [Microsoft 365 Defender](https://security.microsoft.com) with a dedicated Identity alert page format. This marks the first step in the journey to [introduce the full Microsoft Defender for Identity experience into Microsoft 365 Defender](/defender-for-identity/defender-for-identity-in-microsoft-365-defender).
+Defender for Identity alerts are natively integrated into <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> with a dedicated Identity alert page format. This marks the first step in the journey to [introduce the full Microsoft Defender for Identity experience into Microsoft 365 Defender](/defender-for-identity/defender-for-identity-in-microsoft-365-defender).
 
 The new Identity alert page gives Microsoft Defender for Identity customers better cross-domain signal enrichment and new automated identity response capabilities. It ensures that you stay secure and helps improve the efficiency of your security operations.
 
@@ -33,7 +34,7 @@ Alerts originating from Defender for Identity can now trigger the [Microsoft 365
 
 Alerts can be accessed from multiple locations, including the **Alerts** page, the **Incidents** page, the pages of individual **Devices**, and from the **Advanced hunting** page. In this example, we'll review the **Alerts page**.
 
-In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Incidents & alerts** and then to **Alerts**.
+In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Incidents & alerts** and then to **Alerts**.
 
 ![Go to Incidents and Alerts, then Alerts.](../../media/defender-identity/incidents-alerts.png)
 

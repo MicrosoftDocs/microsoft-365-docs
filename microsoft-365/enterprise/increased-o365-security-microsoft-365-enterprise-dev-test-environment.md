@@ -14,6 +14,7 @@ ms.collection: M365-security-compliance
 ms.custom: 
 - Ent_TLGs
 - admindeeplinkMAC
+- admindeeplinkDEFENDER
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use this Test Lab Guide to enable additional Microsoft 365 security settings your Microsoft 365 for enterprise test environment.
 ---
@@ -61,7 +62,7 @@ Apps that do not support modern authentication cannot have [identity and device 
 
 Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams protects your organization from inadvertently sharing malicious files.
 
-1. Go to the [Security & Compliance Center](https://protection.office.com) and sign in with your global administrator account.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Security & Compliance Center</a> and sign in with your global administrator account.
 
 2. In the left navigation pane, under **Threat management**, click **Policy**, and then click **Safe Attachments**. 
 
@@ -91,7 +92,7 @@ Threat management in Microsoft 365 can help you control and manage mobile device
 
 To see the security dashboard:
 
-1. If needed, go to the [Security & Compliance Center](https://protection.office.com) and sign in with your global administrator account.
+1. If needed, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Security & Compliance Center</a> and sign in with your global administrator account.
 
 2. In the left navigation pane, under **Threat management**, click **Dashboard**.
 
@@ -104,7 +105,7 @@ For more information, see [Security Dashboard](../security/office-365-security/s
 
 Microsoft Secure Score shows your security posture as a number, which indicates your current level relative to the features that are available in your subscription. It also gives you a list of improvement actions you can take to improve your score.
 
-1. Create a new tab in your browser, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 security center</a>, and then click **Secure score**.
+1. Create a new tab in your browser, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, and then click **Secure score**.
 2. On the **Overview**  tab, note your current Secure Score and how it compares with the global average and subscriptions with a similar number of licenses.
 3. On the **Improvement actions** tab, read through the list of actions you can take to increase your score.
 

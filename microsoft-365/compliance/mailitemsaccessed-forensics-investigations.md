@@ -22,7 +22,7 @@ description: "Use the MailItemsAccessed mailbox auditing action to perform foren
 
 A compromised user account (also called an *account takeover*) is a type of attack when an attacker gains access to a user account and operates as the user. These types of attacks sometimes cause more damage than the attacker may have intended. When investigating compromised email accounts, you have to assume that more mail data was compromised than may be indicated by tracing the attacker's actual presence. Depending on the type of data in email messages, you have to assume that sensitive information was compromised or face regulatory fines unless you can prove that sensitive information wasn't exposed. For example, HIPAA-regulated organizations face significant fines if there is evidence that patient health information (PHI) was exposed. In these cases, attackers are unlikely to be interested in PHI, but organizations still must report data breaches unless they can prove otherwise.
 
-To help you with investigating compromise email accounts, we're now auditing accesses of mail data by mail protocols and clients with the *MailItemsAccessed* mailbox auditing action. This new audited action will help investigators better understand email data breaches and help you identify the scope of compromises to specific mail items that may been compromised. The goal of using this new auditing action is forensics defensibility to help assert that a specific piece of mail data was not compromised. If an attacker gained access to a specific piece of mail, Exchange Online audits the event even though there is no indication that the mail item was actually read.
+To help you with investigating compromise email accounts, we're now auditing accesses of mail data by mail protocols and clients with the *MailItemsAccessed* mailbox auditing action. This new audited action will help investigators better understand email data breaches and help you identify the scope of compromises to specific mail items that may been compromised. The goal of using this new auditing action is forensics defensibility to help assert that a specific piece of mail data was not compromised. If an attacker gained access to a specific piece of mail, Exchange Online audits the event even though there is no indication that the mail item was read.
 
 ## The MailItemsAccessed mailbox auditing action
 
@@ -32,7 +32,7 @@ The MailItemsAccessed mailbox auditing action covers all mail protocols: POP, IM
 
 ### Auditing sync access
 
-Sync operations are only recorded when a mailbox is accessed by a desktop version of the Outlook client for Windows or Mac. During the sync operation, these clients typically download a large set of mail items from the cloud to a local computer. The audit volume for sync operations is huge. So, instead of generating an audit record for each mail item that's synched, we just generate an audit event for the mail folder containing items that were synched. This makes the assumption that *all* mail items in the synched folder have been compromised. The access type is recorded in the OperationProperties field of the audit record.
+Sync operations are only recorded when a mailbox is accessed by a desktop version of the Outlook client for Windows or Mac. During the sync operation, these clients typically download a large set of mail items from the cloud to a local computer. The audit volume for sync operations is huge. So, instead of generating an audit record for each mail item that's synched, we generate an audit event for the mail folder containing items that were synched and assume that *all* mail items in the synched folder have been compromised. The access type is recorded in the OperationProperties field of the audit record.
 
 See step 2 in the [Use MailItemsAccessed audit records for forensic investigations](#use-mailitemsaccessed-audit-records-for-forensic-investigations) section for an example of displaying the sync access type in an audit record.
 
@@ -44,7 +44,7 @@ See step 4 in the [Use MailItemsAccessed audit records for forensic investigatio
 
 ### Throttling of MailItemsAccessed audit records
 
-If more than 1,000 MailItemsAccessed audit records are generated in less than 24 hours, Exchange Online will stop generating auditing records for MailItemsAccessed activity. When a mailbox is throttled, MailItemsAccessed activity will not be logged for 24 hours after the mailbox was throttled. If this occurs, there's a potential that mailbox could have been compromised during this period. The recording of MailItemsAccessed activity will be resumed following a 24-hour period.
+If more than 1,000 MailItemsAccessed audit records are generated in less than 24 hours, Exchange Online will stop generating auditing records for MailItemsAccessed activity. When a mailbox is throttled, MailItemsAccessed activity will not be logged for 24 hours after the mailbox was throttled. If the mailbox was throttled, there's a potential that mailbox could have been compromised during this period. The recording of MailItemsAccessed activity will be resumed following a 24-hour period.
 
 Here's a few things to keep in mind about throttling:
 
@@ -96,7 +96,7 @@ Here are the steps for using MailItemsAccessed audit records to investigate a co
    Search-MailboxAuditLog -StartDate 01/06/2020 -EndDate 01/20/2020 -Identity <user> -Operations MailItemsAccessed -ResultSize 10000 -ShowDetails | Where {$_.OperationProperties -like "*IsThrottled:True*"} | FL
    ```
 
-2. Check for sync activities. If an attacker uses an email client to downloaded messages in a mailbox, they can disconnect the computer from the Internet and access the messages locally without interacting with the server. This means that mailbox auditing would not be able to audit these activities.
+2. Check for sync activities. If an attacker uses an email client to downloaded messages in a mailbox, they can disconnect the computer from the Internet and access the messages locally without interacting with the server. In this case, mailbox auditing would not be able to audit these activities.
 
    To search for MailItemsAccessed records where the mail items were accessed by a sync operation, run the following command:
 
@@ -124,7 +124,7 @@ Here are the steps for using MailItemsAccessed audit records to investigate a co
    |---|---|
    |ClientInfoString|Describes protocol, client (includes version)|
    |ClientIPAddress|IP address of the client machine.|
-   |SessionId|Session ID helps to differentiate attacker actions vs day-to-day user activities on the same account (in the case of a compromised account)|
+   |SessionId|Session ID helps to differentiate attacker actions vs day-to-day user activities on the same account (useful for compromised accounts)|
    |UserId|UPN of the user reading the message.|
    |
 
@@ -149,7 +149,7 @@ Here are the steps for using MailItemsAccessed audit records to investigate a co
    You can use the audit data for bind operations in two different ways:
 
    - Access or collect all email messages the attacker accessed by using the InternetMessageId to find them and then checking to see if any of those messages contains sensitive information.
-   - Use the InternetMessageId to search audit records related to a set of potentially sensitive email messages. This is useful if you're concerned only about a small number of messages.
+   - Use the InternetMessageId to search audit records related to a set of potentially sensitive email messages. This is useful if you're concerned only about a few messages.
 
 ## Filtering of duplicate audit records
 

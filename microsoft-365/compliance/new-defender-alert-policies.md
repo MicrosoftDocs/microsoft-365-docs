@@ -16,6 +16,7 @@ search.appverid:
 - MOE150
 ms.custom: 
 - seo-marvel-apr2020
+- admindeeplinkDEFENDER
 ROBOTS: noindex,nofollow
 description: "We're releasing new alert policies for Microsoft Defender for Office 365. We're also retiring two existing alert policies that have been replaced by the new ones."
 ---
@@ -94,7 +95,7 @@ The new alerts will begin firing, and triggering the AIR investigations in your 
 
 ## What you need to do to prepare for these changes
 
-How your organization utilizes these alerts will determine what you need to do to prepare. If you have operationalized the alerts and are using or consuming them either through an API, an alert email notification, or in the Microsoft 365 compliance center (`https://compliance.mmicrosoft.com/viewalerts`) or the Microsoft security center (`https://security.microsoft.com/viewalerts`), you'll need to modify your workflows.
+How your organization utilizes these alerts will determine what you need to do to prepare. If you have operationalized the alerts and are using or consuming them either through an API, an alert email notification, or in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> or the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, you'll need to modify your workflows.
 
 **If you haven't operationalized these alerts, you can do one of the following:**
 

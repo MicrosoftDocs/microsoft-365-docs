@@ -17,6 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -30,10 +31,19 @@ monikerRange: 'o365-worldwide'
 
 # Set up multifactor authentication
 
-Based on your understanding of [multifactor authentication (MFA) and its support in Microsoft 365](multi-factor-authentication-microsoft-365.md), it's time to set it up and roll it out to your organization.
+Multifactor authentication means you and your employees must provide more than one way to sign in to Microsoft 365 is one of the easiest ways to secure your business. Based on your understanding of [multifactor authentication (MFA) and its support in Microsoft 365](multi-factor-authentication-microsoft-365.md), it's time to set it up and roll it out to your organization. 
 
 > [!IMPORTANT]
 > If you purchased your subscription or trial after October 21, 2019, and you're prompted for MFA when you sign in, [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) have been automatically enabled for your subscription.
+
+## Watch: Turn on multifactor authentication
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
+
+1. Go to the Microsoft 365 admin center at <a href="https://admin.microsoft.com/ " target="_blank">https://admin.microsoft.com</a>.
+1. Select  **Show All**, then choose the **Azure Active Directory Admin Center**.
+1. Select **Azure Active Directory**, **Properties**, **Manage Security defaults**.
+1. Under **Enable Security defaults**, select **Yes** and then **Save**.
 
 ## Before you begin
 
@@ -103,8 +113,6 @@ For most subscriptions modern authentication is automatically turned on, but if 
 
 ## Related content
 
+[Set up multifactor authentication](set-up-multi-factor-authentication.md) (video)
 
-[Turn on multi-factor authentication](../../business-video/turn-on-mfa.md) (video)
-
-[Turn on multi-factor authentication for your phone](../../business-video/set-up-mfa.md) (video)
-
+[Turn on multi-factor authentication for your phone](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
