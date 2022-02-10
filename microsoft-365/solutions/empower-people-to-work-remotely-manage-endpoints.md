@@ -45,17 +45,17 @@ For more information, see this [overview of Configuration Manager](/mem/configmg
 
 ## Co-management
 
-Co-management combines your existing on-premises Configuration Manager investment with the cloud using Intune and other Microsoft 365 cloud services. You choose whether Configuration Manager or Intune is the management authority for different workload. 
+Co-management combines your existing on-premises Configuration Manager investment with the cloud using Intune and other Microsoft 365 cloud services. You choose whether Configuration Manager or Intune is the management authority for different workloads. 
 
 Co-management uses Intune-based cloud features, including Conditional Access and enforcing device compliance. You keep some tasks on-premises, while running other tasks in the cloud.
 
 For more information, see this [overview of co-management](/mem/configmgr/comanage/overview).
 
-## Desktop Analytics
+## Endpoint Analytics
 
-Desktop Analytics is a cloud-based service that integrates with Configuration Manager and provides you with insight and intelligence so you can make informed decisions about your Windows clients. It combines data from your organization with data aggregated from millions of other devices connected to Microsoft cloud services. 
+Endpoint Analytics is a cloud-based service that integrates with Configuration Manager and provides you with insight and intelligence so you can make informed decisions about your Windows clients. It combines data from your organization with data aggregated from millions of other devices connected to Microsoft cloud services. 
 
-With Desktop Analytics, you can:
+With Endpoint Analytics, you can:
 
 - Create an inventory of apps running in your organization.
 - Assess app compatibility with the latest Windows 10 feature updates.
@@ -63,7 +63,7 @@ With Desktop Analytics, you can:
 - Create pilot groups that represent the entire application and driver estate across a minimal set of devices.
 - Deploy Windows 10 to pilot and production-managed devices.
 
-For more information, see this [overview of Desktop Analytics](/mem/configmgr/desktop-analytics/overview)
+For more information, see this [overview of Endpoint Analytics](/mem/configmgr/desktop-analytics/overview)
 
 ## Windows Autopilot
 

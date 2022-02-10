@@ -48,6 +48,9 @@ ms.prod: m365-security
 
 4. When you're finished, click **Add**.
 
+> [!NOTE]
+> The emails from these senders will be blocked as *spam*. 
+
 ### Create block URL entries in the Tenant Allow/Block List
 
 1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
@@ -66,6 +69,9 @@ ms.prod: m365-security
 
 4. When you're finished, click **Add**.
 
+> [!NOTE]
+> The emails containing these URLs will be blocked as *phish*. 
+
 ### Create block file entries in the Tenant Allow/Block List
 
 1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
@@ -83,6 +89,9 @@ ms.prod: m365-security
    - **Optional note**: Enter descriptive text for the entries.
 
 4. When you're finished, click **Add**.
+
+> [!NOTE]
+> The emails containing these files will be blocked as *malware*. 
 
 ### Create spoofed sender block entries
 

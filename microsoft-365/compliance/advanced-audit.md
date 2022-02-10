@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:

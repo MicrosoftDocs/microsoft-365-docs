@@ -203,6 +203,7 @@ Safe Links protection for Office 365 apps has the following client requirements:
   - Office apps on iOS or Android devices.
   - Visio on Windows.
   - OneNote in a web browser.
+  - Outlook for Windows when opening saved EML or MSG files.
 
 - Office 365 apps are configured to use modern authentication. For more information, see [How modern authentication works for Office 2013, Office 2016, and Office 2019 client apps](../../enterprise/modern-auth-for-office-2013-and-2016.md).
 
@@ -216,7 +217,7 @@ The following Safe Links settings are available for Office 365 apps:
 
 - **Do not track when users click Safe Links**: Enables or disables storing Safe Links click data for URLs clicked in the desktop versions Word, Excel, PowerPoint, and Visio. The recommended value is **Off**, which means user clicks are tracked.
 
-- **Do not let users click through safe links to original URL**: Allows or blocks users from clicking through the [warning page](#warning-pages-from-safe-links) to the original URL in in the desktop versions Word, Excel, PowerPoint, and Visio. The default and recommended value is **On**.
+- **Do not let users click through safe links to original URL**: Allows or blocks users from clicking through the [warning page](#warning-pages-from-safe-links) to the original URL in the desktop versions Word, Excel, PowerPoint, and Visio. The default and recommended value is **On**.
 
 To configure the Safe Links settings for Office 365 apps, see [Configure Safe Links protection for Office 365 apps](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
 

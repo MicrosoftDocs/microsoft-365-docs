@@ -24,6 +24,9 @@ search.appverid:
 
 Before getting started with [communication compliance](communication-compliance.md) in your organization, there are important planning activities and considerations that should be reviewed by your information technology and compliance management teams. Thoroughly understanding and planning for deployment in the following areas will help ensure that your implementation and use of communication compliance features goes smoothly and is aligned with the best practices for the solution.
 
+> [!IMPORTANT]
+> Communication compliance is currently available in tenants hosted in geographical regions and countries supported by Azure service dependencies. To verify that communication compliance is supported for your organization, see [Azure dependency availability by country/region](/troubleshoot/azure/general/dependency-availability-by-country).
+
 ## Transitioning from Supervision in Office 365
 
 For organizations using supervision policies in Office 365, you should immediately plan to transition to communication compliance policies in Microsoft 365 and need to understand these important points:

@@ -137,7 +137,7 @@
           items: 
             - name: Microsoft Project and Microsoft Visio
               href: get-started/project-visio.md
-            - name: New Microsoft Edge
+            - name: Microsoft Edge
               href: get-started/edge-browser-app.md
             - name: Microsoft 365 Apps for Enterprise
               href: get-started/m365-apps.md

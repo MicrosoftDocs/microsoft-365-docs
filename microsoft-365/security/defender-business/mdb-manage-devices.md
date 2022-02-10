@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 12/13/2021
+ms.date: 02/09/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,6 +16,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
+- m365-initiative-defender-business
 ---
 
 # Manage devices in Microsoft Defender for Business (preview)
@@ -31,6 +32,11 @@ In Microsoft Defender for Business (preview), you can manage devices as follows:
 - [Take action on a device](#take-action-on-a-device-that-has-threat-detections) that has threat detections
 - [Onboard a device to Defender for Business (preview)](#onboard-a-device)  
 - [Offboard a device from Defender for Business (preview)](#offboard-a-device)
+
+>
+> **Got a minute?**
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
 
 ## View the list of onboarded devices
 

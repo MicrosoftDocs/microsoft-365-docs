@@ -20,7 +20,6 @@ description: Get started using automated investigation and response capabilities
 ms.custom:
 - air
 - seo-marvel-mar2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -129,13 +128,13 @@ If you're already using AIR capabilities in Microsoft Defender for Office 365, y
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Unified Action center.":::
 
-The new and improved <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> brings together AIR capabilities in [Microsoft Defender for Office 365](defender-for-office-365.md) and in [Microsoft Defender for Endpoint](../defender-endpoint/automated-investigations.md). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.
+The new and improved Microsoft 365 Defender portal <https://security.microsoft.com> brings together AIR capabilities in [Microsoft Defender for Office 365](defender-for-office-365.md) and in [Microsoft Defender for Endpoint](../defender-endpoint/automated-investigations.md). With these updates and improvements, your security operations team will be able to view details about automated investigations and remediation actions across your email, collaboration content, user accounts, and devices, all in one place.
 
 > [!TIP]
-> The new <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> replaces the following centers:
+> The new Microsoft 365 Defender portal replaces the following admin centers:
 >
 > - Security & Compliance Center (<https://protection.office.com>)
-> - Microsoft Defender Security Center (<https://securitycenter.windows.com>)
+> - Microsoft 365 Defender (<https://security.microsoft.com>)
 >
 > In addition to the URL changing, there's a new look and feel, designed to give your security team a more streamlined experience, with visibility to more threat detections in one place.
 

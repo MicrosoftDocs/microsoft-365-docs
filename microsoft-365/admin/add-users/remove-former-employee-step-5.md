@@ -30,7 +30,7 @@ description: "Follow these steps to block a former employee's mobile device acce
 
 # Step 5 - Wipe and block a former employee's mobile device
 
-If your former employee had an organization phone, you can use the <a href=" https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> to wipe and block that device so that all organization data is removed from the device and it can no longer connect to Office 365. If your organization uses Basic Mobility and Security to manage mobile devices, you can wipe and block those devices using Basic Mobility and Security.
+If your former employee had an organization phone, you can use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> to wipe and block that device so that all organization data is removed from the device and it can no longer connect to Office 365. If your organization uses Basic Mobility and Security to manage mobile devices, you can wipe and block those devices using Basic Mobility and Security.
 
 ## Wipe mobile device using the Exchange admin center
 

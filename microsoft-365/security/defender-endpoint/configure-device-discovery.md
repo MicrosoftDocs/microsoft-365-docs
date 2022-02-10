@@ -33,7 +33,7 @@ ms.technology: m365d
 
 Discovery can be configured to be on standard or basic mode. Use the standard option to actively find devices in your network, which will better guarantee the discovery of endpoints and provide richer device classification.
 
-You can customize the list of devices that are used to perform standard discovery. You can either enable standard discovery on all the onboarded devices that also support this capability (currently - Windows 10 and Windows 2019 devices only) or select a subset or subsets of your devices by specifying their device tags.
+You can customize the list of devices that are used to perform standard discovery. You can either enable standard discovery on all the onboarded devices that also support this capability (currently - Windows 10 or later and Windows Server 2019 or later devices only) or select a subset or subsets of your devices by specifying their device tags.
 
 ## Set up device discovery
 

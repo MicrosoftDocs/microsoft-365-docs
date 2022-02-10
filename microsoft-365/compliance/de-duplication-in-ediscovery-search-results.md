@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 12/21/2016
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 

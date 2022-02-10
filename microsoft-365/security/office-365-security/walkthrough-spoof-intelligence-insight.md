@@ -19,7 +19,6 @@ ms.collection:
 description: Admins can learn how to use the spoof intelligence policy and the spoof intelligence insight to allow or block detected spoofed senders.
 ms.custom: 
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
@@ -44,8 +43,7 @@ You can manage spoof intelligence in the Microsoft 365 Defender portal, or in Po
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>.
-  - To go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -81,7 +79,7 @@ There are two ways to allow and block spoofed senders:
 > [!IMPORTANT]
 > This article describes the older spoofed sender management experience that's being replaced (the **spoof intelligence policy** on the **Anti-spam policies** page). For more information about the new experience (the **Spoofing** tab in the Tenant Allow/Block List), see [Spoof intelligence insight in EOP](learn-about-spoof-intelligence.md).
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Anti-spam** in the **Policies** section. To go directly to the **Anti-spam policies** page, use <https://security.microsoft.com/antispam>.
 
 2. On the **Anti-spam policies** page, select **Spoof intelligence policy** by clicking on the name.
 

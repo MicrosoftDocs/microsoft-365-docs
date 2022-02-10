@@ -25,6 +25,14 @@ ms.technology: mde
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
+## 101.56.62 (30.121122.15662.0)
+
+- Fixed a product crash introduced in 101.53.02 and that has impacted multiple customers
+
+## 101.53.02 (30.121112.15302.0)
+
+- Performance improvements & bug fixes
+
 ## 101.52.57 (30.121092.15257.0)
 
 - Added a capability to detect vulnerable log4j jars in use by Java applications. The machine is periodically inspected for running Java processes with loaded log4j jars. The information is reported to the Microsoft Defender for Endpoint backend and is exposed in the Vulnerability Management area of the portal.
