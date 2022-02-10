@@ -73,7 +73,7 @@ The following table is a list of activity types captured within Lighthouse audit
 |**restartDevice**                            | Devices                          | Restart                                                          | Microsoft Endpoint Manager |
 | **syncDevice**                               | Devices                          | Sync                                                             | Microsoft Endpoint Manager |
 | **rebootNow**                                | Threat management                | Reboot                                                           | Microsoft Endpoint Manager |
-| **reprovision**                              | Tenants                          | Retry Provisioning                                               | Windows 365                |
+| **reprovision**                              | Windows 365     | Retry Provisioning                                               | Windows 365                |
 | **windowsDefenderScanFull**                  | Threat management                | Full scan                                                       | Microsoft Endpoint Manager |
 | **windowsDefenderScan**                      | Threat management                | Quick scan                                                       | Microsoft Endpoint Manager |
 | **windowsDefenderUpdateSignatures**          | Threat management                | Update antivirus                                                | Microsoft Endpoint Manager |
