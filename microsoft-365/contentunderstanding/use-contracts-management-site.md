@@ -35,7 +35,7 @@ The site uses the power of a SharePoint Syntex model running on document librari
 
 - **Clients** – Find client information in one convenient location.
 
-- **Models** – Use this library of models to classify documents and extract metadata. You can create your own models to fit your needs and add them to this library.
+- **Models** – Use this library of models to classify documents and extract metadata. Users can create their own models to fit their needs and add them to this library.
 
 - **Sample contract library** – Discover a variety of sample documents to help you train models. 
 
