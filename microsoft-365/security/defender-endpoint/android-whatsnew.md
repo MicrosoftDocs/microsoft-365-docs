@@ -27,6 +27,10 @@ ms.technology: mde
 
 Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+## Microsoft Defender for Endpoint is now Microsoft Defender in the Play store
+
+Microsoft Defender for Endpoint is now available as **Microsoft Defender** in the play store. With this update, the app will be available as preview for **Consumers in the US region** - based on how you log into the app with your work or personal account, you will have access to features for Microsoft Defender for Endpoint or to features for Microsoft Defender for individuals. Please see [this blog](https://www.microsoft.com/en-us/microsoft-365/microsoft-defender-for-individuals) for more details.
+
 ## Threat and Vulnerability Management
 
 On January 25, 2022, we announced the general availability of Threat and Vulnerability management on Android and iOS. For more details, see [the techcommunity post here](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).

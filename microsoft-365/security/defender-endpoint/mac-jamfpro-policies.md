@@ -71,8 +71,8 @@ You'll need to take the following steps:
 
    **General**:
 
-   - Name: MDATP onboarding for macOS
-   - Description: MDATP EDR onboarding for macOS
+   - Name: MDE onboarding for macOS
+   - Description: MDE EDR onboarding for macOS
    - Category: None
    - Distribution Method: Install Automatically
    - Level: Computer Level
@@ -727,14 +727,14 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 2. Click **New**, and enter the following details for **Options**:
 
     - Tab **General**:
-        - **Name**: Microsoft Defender ATP Network Extension
+        - **Name**: Microsoft Defender Network Extension
         - **Description**: macOS 10.15 (Catalina) or newer
         - **Category**: None *(default)*
         - **Distribution Method**: Install Automatically *(default)*
         - **Level**: Computer Level *(default)*
 
     - Tab **Content Filter**:
-        - **Filter Name**: Microsoft Defender ATP Content Filter
+        - **Filter Name**: Microsoft Defender Content Filter
         - **Identifier**: `com.microsoft.wdav`
         - Leave **Service Address**, **Organization**, **User Name**, **Password**, **Certificate** blank (**Include** is *not* selected)
         - **Filter Order**: Inspector

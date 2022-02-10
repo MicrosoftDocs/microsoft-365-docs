@@ -85,7 +85,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
             <key>PayloadIdentifier</key>
             <string>DA2CC794-488B-4AFF-89F7-6686A7E7B8AB</string>
             <key>PayloadDisplayName</key>
-            <string>Microsoft Defender ATP Network Extension</string>
+            <string>Microsoft Defender Network Extension</string>
             <key>PayloadDescription</key>
             <string/>
             <key>PayloadVersion</key>
@@ -118,7 +118,7 @@ As part of the Endpoint Detection and Response capabilities, Microsoft Defender 
                     <key>FilterType</key>
                     <string>Plugin</string>
                     <key>UserDefinedName</key>
-                    <string>Microsoft Defender ATP Network Extension</string>
+                    <string>Microsoft Defender Network Extension</string>
                     <key>PluginBundleID</key>
                     <string>com.microsoft.wdav</string>
                     <key>FilterSockets</key>
@@ -212,7 +212,7 @@ Save the following content to a file named **sysext.xml**:
         <key>PayloadIdentifier</key>
         <string>7E53AC50-B88D-4132-99B6-29F7974EAA3C</string>
         <key>PayloadDisplayName</key>
-        <string>Microsoft Defender ATP System Extensions</string>
+        <string>Microsoft Defender System Extensions</string>
         <key>PayloadDescription</key>
         <string/>
         <key>PayloadVersion</key>
@@ -245,7 +245,7 @@ Save the following content to a file named **sysext.xml**:
                 <key>FilterType</key>
                 <string>Plugin</string>
                 <key>UserDefinedName</key>
-                <string>Microsoft Defender ATP Network Extension</string>
+                <string>Microsoft Defender Network Extension</string>
                 <key>PluginBundleID</key>
                 <string>com.microsoft.wdav</string>
                 <key>FilterSockets</key>

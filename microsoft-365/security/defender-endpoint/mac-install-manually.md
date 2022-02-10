@@ -106,7 +106,7 @@ To complete this process, you must have admin privileges on the device.
 
     ![System extension security preferences2.](images/monterey-install-4.png)
 
-7. Open **System Preferences** \> **Security & Privacy** and navigate to the **Privacy** tab. Grant **Full Disk Access** permission to **Microsoft Defender ATP** and **Microsoft Defender ATP Endpoint Security Extension**.
+7. Open **System Preferences** \> **Security & Privacy** and navigate to the **Privacy** tab. Grant **Full Disk Access** permission to **Microsoft Defender** and **Microsoft Defenders Endpoint Security Extension**.
 
     ![Full disk access.](images/monterey-install-5.png)
 
