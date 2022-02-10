@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 description: "Learn how to use the AllowSelfServicePurchase PowerShell cmdlet to turn self-service purchase on or off."
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 07/16/2021
+ms.date: 12/15/2021
 ---
 
 # Use AllowSelfServicePurchase for the MSCommerce PowerShell module
@@ -103,63 +103,9 @@ The following table lists the available products and their **ProductId**.
 | Windows 365 Business | CFQ7TTC0J203 |
 | Windows 365 Business with Windows Hybrid Benefit | CFQ7TTC0HX99 |
 
-## Highlights of Project Plan 1
-• Start quickly and take control of any project.
-
-• Use easy and efficient planning and status tracking.
-
-• Collaborate with others from virtually anywhere.
-
-## Highlights of Project Plan 3
-• Use easy and efficient planning and status tracking, plus scheduling and costing.
-
-• Collaborate with others from virtually anywhere.
-
-• Assign resources with resource management capabilities.
-
-• Each subscription license allows for up to five concurrent installations of the Project Online desktop app.
-
-## Highlights of Visio Plan 1
-• Work virtually anywhere, anytime with the web version of Visio and 2 GB of OneDrive for Business cloud storage.
-
-• Start diagramming fast with an intuitive experience and simple UI.
-
-• Choose from dozens of professional templates, starter diagrams, and shapes.
-
-• Access and edit Visio files directly inside Microsoft Teams.
-
-• Embed Visio diagrams into Power BI reports for unified perspectives.
-
-• Store and share your work on the web and access it from almost anywhere.
-
-• Get around-the-clock support from Microsoft.
-
-## Highlights of Visio Plan 2
-• Get Visio and the always up-to-date Visio desktop app, for use on up to five PCs, and 2 GB of OneDrive for Business cloud storage.
-
-• Enjoy everything in Plan 1 plus exclusive Plan 2 features such as export to Microsoft Flow or Word, Excel data visualizer, and PowerPoint slide snippets.
-
-• Connect diagrams to external data sources and embed Visio diagrams in Power BI.
-
-• Store and share your work on the web and access it from almost anywhere.
-
-• Enjoy around-the-clock support from Microsoft.
-
-## Microsoft 365 links to purchase Project and Visio plans
-
-**Project Plan 1** can be purchased by using this [Microsoft 365 link](https://www.microsoft.com/microsoft-365/project/project-plan-1?activetab=pivot:overviewtab).
-
-**Project Plan 3** can be purchased by using this [Microsoft 365 link](https://www.microsoft.com/microsoft-365/project/project-plan-3?activetab=pivot:overviewtab).
-
-**Visio Plan 1** can be purchased by using this [Microsoft 365 link](https://www.microsoft.com/microsoft-365/visio/visio-plan-1?activetab=pivot:overviewtab).
-
-**Visio Plan 2** Can be purchased by using this [Microsoft 365 link](https://www.microsoft.com/microsoft-365/visio/visio-plan-2?activetab=pivot:overviewtab).
+*These IDs have changed. If you previously blocked products using the old IDs, they are automatically blocked using the new IDs. No additional work is required.
 
 ## View or set the status for AllowSelfServicePurchase
-
->[!NOTE] 
-> These IDs have changed. If you previously blocked products using the old IDs, they are automatically blocked using the new IDs. No additional work is required.
-
 
 After you view the list of products available for self-service purchase, you can view or modify the setting for a specific product.
 
