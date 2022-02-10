@@ -61,3 +61,5 @@ sudo zypper update mdatp
 ```bash
 sudo apt-get install --only-upgrade mdatp
 ```
+    > [!IMPORTANT]
+    > When integrating Microsoft Defender for Endpoint and Defender for Cloud, the mdatp agent will automatically receive updates by default.
