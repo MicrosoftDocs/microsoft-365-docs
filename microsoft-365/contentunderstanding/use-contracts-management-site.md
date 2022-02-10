@@ -54,7 +54,9 @@ The Contracts Management site can be provisioned from the [SharePoint look book 
 
     ![Screenshot of the Add to your tenant button on the Contracts Management site template provisioning page.](../media/content-understanding/contracts-management-site-add-to-your-tenant.png)
 
-3. Enter your email address (for a notification of when your site is ready to use), the title you want to use for your site, and the site URL you want to use. 
+3. Enter your email address (for a notification of when your site is ready to use), the site URL you want to use, and the title you want to use for your site. 
+
+    ![Screenshot of the email and site URL fields on the Contracts Management site template provisioning page.](../media/content-understanding/contracts-management-email-and-site-url.png)
 
 4. Select **Provision**, and in a short time your site will be ready for you to use. You’ll get an email (sent to the email address you provided) indicating that your request to provision the Contracts Management site template is completed.
 
