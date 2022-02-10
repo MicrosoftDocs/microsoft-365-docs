@@ -20,10 +20,10 @@ description: Learn how to provision and use the Content Center site template in 
 The SharePoint Syntex Content Center site is a ready-to-deploy SharePoint site template designed to help you better understand SharePoint Syntex capabilities.
 
 You'll be introduced to the tools and information you’ll need to create and train your own models. You'll then be able to use this site as a central content repository or as the control center for managing your own SharePoint Syntex models.
-  
-In this site, models can be trained and evaluated using your own content. However, to apply the models to libraries, a license for SharePoint Syntex is required.  
 
 ![Screenshot of the Content Center site template home page.](../media/content-understanding/content-center-site-home-page.png)
+
+In this site, models can be trained and evaluated using your own content. However, to apply the models to libraries, a license for SharePoint Syntex is required.  
 
 ## Provision the site
 
