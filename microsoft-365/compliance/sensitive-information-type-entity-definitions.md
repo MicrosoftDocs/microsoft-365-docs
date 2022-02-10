@@ -299,16 +299,7 @@ This bundled named entity SIT contains these individual SITs:
 - Turkish
 
 <!--
-France
-15	France physical address	Detects patterns related to physical addresses from Germany
-16	Germany physical address	Detects patterns related to physical addresses from Greece
-17	Greece physical address	Detects patterns related to physical addresses from Hungary
-18	Hungary physical address	Detects patterns related to physical addresses from Iceland
-19	Iceland physical address	Detects patterns related to physical addresses from Ireland
-20	Ireland physical address	Detects patterns related to physical addresses from Italy
-21	Italy physical address	Detects patterns related to physical addresses from Latvia
-22	Latvia physical address	Detects patterns related to physical addresses from Liechtenstein
-23	Liechtenstein physical address	Detects patterns related to physical addresses from Lithuania
+Lithuania
 24	Lithuania physical address	Detects patterns related to physical addresses from Luxembourg
 25	Luxembourg physical address	Detects patterns related to physical addresses from Malta
 26	Malta physical address	Detects patterns related to physical addresses from Netherlands
@@ -330,9 +321,6 @@ France
 42	
 43	Types of medication	Detects types of medication, such as ‘insulin’. English terms only.
 
-45	Generic medication names	Detects names of generic medication, such as ‘acetaminophen’. English terms only.
-46	Impairments listed in the U.S. Disability Evaluation Under Social Security	Detects impairments listed in the U.S. Disability Evaluation Under Social Security, such as ‘muscular dystrophy’. English terms only.
-47	Lab test terms	Detects terms related to lab tests, such as ‘Insulin C-peptide’. English terms only.
 48	Lifestyles that relate to medical conditions	Detects terms related to lifestyles that might result in a medical condition, such as ‘smoking’. English terms only.
 49	Medical specialties	Detects medical specialties, such as ‘dermatology’. English terms only.
 50	Surgical procedures	Detects surgical procedures, such as ‘appendectomy’. English terms only.
@@ -7010,6 +6998,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## France health insurance number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -7108,6 +7097,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 
 ## France passport number
+
 This entity is available in the EU Passport Number sensitive information type. It's also available as a stand-alone sensitive information type entity.
 
 ### Format
@@ -7197,6 +7187,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 - date of issue
 - date of expiry
+
+
+## France physical addresses
+
+This unbundled named entity detects patterns related to physical address from France. 
+
+### Confidence level
+
+Medium
 
 
 ## France social security number (INSEE)
@@ -7352,6 +7351,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## France value added tax number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -7416,6 +7416,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - n° tva
 - numéro de tva
 - numéro d'identification siren
+
+
+## Generic medication names
+
+This unbundled named entity detects names of generic medications, such as *acetominophen*. It supports English terms only.
+
+### Confidence level
+
+High
 
 
 ## Germany driver's license number
@@ -7770,6 +7779,15 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - passport numbers
 
 
+## Germany physical addresses
+
+This unbundled named entity detects patterns related to physical address from Germany. 
+
+### Confidence level
+
+Medium
+
+
 ## Germany tax identification number
 
 ### Format
@@ -7845,6 +7863,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Germany value added tax number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -8203,7 +8222,16 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - αριθμός διαβατηριο
 
 
+## Greece physical addresses
+
+This unbundled named entity detects patterns related to physical address from Greece. 
+
+### Confidence level
+
+Medium
+
 ## Greece Social Security Number (AMKA)
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -8262,6 +8290,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Greece tax identification number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -8581,72 +8610,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - vezetői engedélyek
 
 
-## Hungary personal identification number
-This sensitive information type is only available for use in:
-- data loss prevention policies
-- communication compliance policies
-- information governance
-- records management
-- Microsoft Defender for Cloud Apps
-
-### Format
-
-11 digits
-
-### Pattern
-
-11 digits:
-
-- One digit that corresponds to gender, 1 for male, 2 for female. Other numbers are also possible for citizens born before 1900 or citizens with double citizenship.
-- Six digits that correspond to birth date (YYMMDD)
-- Three digits that correspond to a serial number
-- One check digit
-
-### Checksum
-
-Yes
-
-### Definition
-
-A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-
-- The function  `Func_hungary_eu_national_id_card` finds content that matches the pattern.
-- A keyword from  `Keywords_hungary_eu_national_id_card` is found.
-
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-
-- The function  `Func_hungary_eu_national_id_card` finds content that matches the pattern.
-
-```xml
-      <!-- Hungary Personal Identification Number -->
-      <Entity id="7b5cc218-7046-47d9-80c9-f325b50896ca" patternsProximity="300" recommendedConfidence="85">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_hungary_eu_national_id_card" />
-          <Match idRef="Keywords_hungary_eu_national_id_card" />
-        </Pattern>
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_hungary_eu_national_id_card" />
-          <Any minMatches="0" maxMatches="0">
-            <Match idRef="Keywords_hungary_eu_telephone_number" />
-            <Match idRef="Keywords_hungary_eu_mobile_number" />
-          </Any>
-        </Pattern>
-      </Entity>
-```
-
-### Keywords
-
-#### Keywords_hungary_eu_national_id_card
-
-- id number
-- identification number
-- sz ig
-- sz. ig.
-- sz.ig.
-- személyazonosító igazolvány
-- személyi igazolvány
-
-
 ## Hungary passport number
 
 ### Format
@@ -8722,6 +8685,82 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of expiry
 
 
+## Hungary personal identification number
+
+This sensitive information type is only available for use in:
+- data loss prevention policies
+- communication compliance policies
+- information governance
+- records management
+- Microsoft Defender for Cloud Apps
+
+### Format
+
+11 digits
+
+### Pattern
+
+11 digits:
+
+- One digit that corresponds to gender, 1 for male, 2 for female. Other numbers are also possible for citizens born before 1900 or citizens with double citizenship.
+- Six digits that correspond to birth date (YYMMDD)
+- Three digits that correspond to a serial number
+- One check digit
+
+### Checksum
+
+Yes
+
+### Definition
+
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
+- The function  `Func_hungary_eu_national_id_card` finds content that matches the pattern.
+- A keyword from  `Keywords_hungary_eu_national_id_card` is found.
+
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+
+- The function  `Func_hungary_eu_national_id_card` finds content that matches the pattern.
+
+```xml
+      <!-- Hungary Personal Identification Number -->
+      <Entity id="7b5cc218-7046-47d9-80c9-f325b50896ca" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_hungary_eu_national_id_card" />
+          <Match idRef="Keywords_hungary_eu_national_id_card" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_hungary_eu_national_id_card" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_hungary_eu_telephone_number" />
+            <Match idRef="Keywords_hungary_eu_mobile_number" />
+          </Any>
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keywords_hungary_eu_national_id_card
+
+- id number
+- identification number
+- sz ig
+- sz. ig.
+- sz.ig.
+- személyazonosító igazolvány
+- személyi igazolvány
+
+
+## Hungary physical addresses
+
+This unbundled named entity detects patterns related to physical address from Hungary. 
+
+### Confidence level
+
+Medium
+
+
 ## Hungary social security number (TAJ)
 
 ### Format
@@ -8784,6 +8823,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Hungary tax identification number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -8865,6 +8905,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Hungary value added tax number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -8927,6 +8968,23 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - általános forgalmi adó szám
 - hozzáadottérték adó
 - áfa szám
+
+
+## Iceland physical addresses
+
+This unbundled named entity detects patterns related to physical address from Iceland. 
+
+### Confidence level
+
+Medium
+
+## Impairments Listed In The U.S. Disability Evaluation Under Social Security
+
+This unbundled named entity detects names of impairments listed in the U.S. Disability Evaluation Under Social Security, such as *muscular dystrophy*. It supports English terms only.
+
+### Confidence level
+
+High
 
 
 ## India Driver's License Number
@@ -9502,6 +9560,7 @@ Any term from the Dictionary_icd_10_updated keyword dictionary, which is based o
 
 Any term from the Dictionary_icd_10_codes keyword dictionary, which is based on the [International Classification of Diseases, Tenth Revision, Clinical Modification (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). This type looks only for insurance codes, not the description.
 
+
 ## International classification of diseases (ICD-9-CM)
 
 ### Format
@@ -10048,6 +10107,15 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - tin#
 
 
+## Ireland physical addresses
+
+This unbundled named entity detects patterns related to physical address from Ireland. 
+
+### Confidence level
+
+Medium
+
+
 ## Israel bank account number
 
 ### Format
@@ -10096,6 +10164,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Bank Account
 - Account Number
 - מספר חשבון בנק
+
 
 ## Israel national identification number
 
@@ -10493,7 +10562,17 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of expiry
 
 
+## Italy physical addresses
+
+This unbundled named entity detects patterns related to physical address from Italy. 
+
+### Confidence level
+
+Medium
+
+
 ## Italy value added tax number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -11059,6 +11138,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - 厚生年金被保険者整理番号
 
 
+## Lab test terms
+
+This unbundled named entity detects terms related to lab tests, such as *Insulin C-peptide*. It supports English terms only.
+
+### Confidence level
+
+High
+
+
 ## Latvia driver's license number
 
 ### Format
@@ -11225,6 +11313,89 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - autovadītāja apliecības
 - vadītāja apliecība
 
+
+## Latvia passport number
+
+### Format
+
+two letters or digits followed by seven digits with no spaces or delimiters
+
+### Pattern
+
+two letters or digits followed by seven digits:
+
+- two digits or letters (not case-sensitive)
+- seven digits
+
+### Checksum
+
+No
+
+### Definition
+
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_latvia_eu_passport_number` finds content that matches the pattern.
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_latvia_eu_passport_number` is found.
+- The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
+
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_latvia_eu_passport_number` finds content that matches the pattern.
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_latvia_eu_passport_number` is found.
+
+```xml
+      <!-- Latvia Passport Number -->
+      <Entity id="23ae25ec-cc28-421b-b77a-3054eadf1ede" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_latvia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_latvia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_latvia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_latvia_eu_passport_number" />
+          </Any>
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
+#### Keywords_latvia_eu_passport_number
+
+- pase numurs
+- pase numur
+- pases numuri
+- pases nr
+- passeport no
+- n° du Passeport
+
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
+
+
 ## Latvia personal code
 
 ### Format
@@ -11356,87 +11527,23 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - tin#
 - voter’s number
 
-## Latvia passport number
 
-### Format
+## Latvia physical addresses
 
-two letters or digits followed by seven digits with no spaces or delimiters
+This unbundled named entity detects patterns related to physical address from Latvia. 
 
-### Pattern
+### Confidence level
 
-two letters or digits followed by seven digits:
+Medium
 
-- two digits or letters (not case-sensitive)
-- seven digits
 
-### Checksum
+## Liechtenstein physical addresses
 
-No
+This unbundled named entity detects patterns related to physical address from Liechtenstein . 
 
-### Definition
+### Confidence level
 
-A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_latvia_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_latvia_eu_passport_number` is found.
-- The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
-
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_latvia_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_latvia_eu_passport_number` is found.
-
-```xml
-      <!-- Latvia Passport Number -->
-      <Entity id="23ae25ec-cc28-421b-b77a-3054eadf1ede" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Regex_latvia_eu_passport_number" />
-          <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number" />
-            <Match idRef="Keywords_latvia_eu_passport_number" />
-          </Any>
-          <Any minMatches="1">
-            <Match idRef="Regex_eu_passport_date1" />
-            <Match idRef="Keywords_eu_passport_date" />
-          </Any>
-        </Pattern>
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_latvia_eu_passport_number" />
-          <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number" />
-            <Match idRef="Keywords_latvia_eu_passport_number" />
-          </Any>
-        </Pattern>
-      </Entity>
-```
-
-### Keywords
-
-#### Keywords_eu_passport_number_common
-
-- passport#
-- passport #
-- passportid
-- passports
-- passportno
-- passport no
-- passportnumber
-- passport number
-- passportnumbers
-- passport numbers
-
-#### Keywords_latvia_eu_passport_number
-
-- pase numurs
-- pase numur
-- pases numuri
-- pases nr
-- passeport no
-- n° du Passeport
-
-#### Keywords_eu_passport_date
-
-- date of issue
-- date of expiry
-
+Medium
 
 ## Lithuania driver's license number
 
