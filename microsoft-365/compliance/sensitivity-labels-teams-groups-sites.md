@@ -369,6 +369,7 @@ The following apps and services support sensitivity labels configured for sites 
 - Admin centers:
 
   - SharePoint admin center
+  - Teams admin center
   - Azure Active Directory portal
   - Microsoft 365 admin center
   - Microsoft 365 compliance center
@@ -386,7 +387,6 @@ The following apps and services don't currently support sensitivity labels confi
 
 - Admin centers:
 
-  - Teams admin center
   - Exchange admin center
 
 - User apps and services:

@@ -61,7 +61,7 @@ A profile determines the level of protection. The following profiles are availab
 - **Built-in protection** (Defender for Office 365 only): A profile that enables Safe Links and Safe Attachments protection only. This setting effectively provide default policies for Safe Links and Safe Attachments, which never had default policies.
 
   > [!NOTE]
-  > The **Built-in protection** preset security policy is currently in Preview, isn't available in all organizations, and is subject to change.
+  > The **Built-in protection** preset security policy is currently in General Availability, available to all organizations.
 
   For **Built-in protection**, the preset security policy is on by default for all Defender for Office 365 customers. Although we don't recommend it, you can also configure exceptions based on **Users**, **Groups**, and **Domains** so the protection isn't applied to specific users.
 
