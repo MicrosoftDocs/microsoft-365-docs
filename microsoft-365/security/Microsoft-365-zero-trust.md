@@ -48,7 +48,7 @@ In the illustration:
 For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](https://review.docs.microsoft.com/security/zero-trust/zero-trust-ramp-overview?branch=zt-content-prototype). 
 -->
 
-For more information about Zero Trust, see Microsoft's [Zero Trust Guidance Center](/security/zero-trust).
+For more information about Zero Trust, see Microsoft's [**Zero Trust Guidance Center**](/security/zero-trust).
 
 ## Deploying Zero Trust for Microsoft 365
 
@@ -73,7 +73,7 @@ The first step is to build your Zero Trust foundation by configuring identity an
 
 
 
-Go to [Zero Trust identity and device access protection](office-365-security/microsoft-365-policies-configurations.md) for prescriptive guidance to accomplish this. This series of articles describes a set of identity and device access prerequisite configurations and a set of Azure Active Directory (Azure AD) Conditional Access, Microsoft Intune, and other policies to secure access to Microsoft 365 for enterprise cloud apps and services, other SaaS services, and on-premises applications published with Azure AD Application Proxy.
+Go to [**Zero Trust identity and device access protection**](office-365-security/microsoft-365-policies-configurations.md) for prescriptive guidance to accomplish this. This series of articles describes a set of identity and device access prerequisite configurations and a set of Azure Active Directory (Azure AD) Conditional Access, Microsoft Intune, and other policies to secure access to Microsoft 365 for enterprise cloud apps and services, other SaaS services, and on-premises applications published with Azure AD Application Proxy.
 
 
 
@@ -95,7 +95,7 @@ Next, enroll your devices into management and begin protecting these with more s
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-2.png" alt-text="Manage endpoints with Intune" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-2.png":::
 
 
-Go to [Manage devices with Intune](../solutions/manage-devices-with-intune-overview.md) for prescriptive guidance to accomplish this. 
+Go to [**Manage devices with Intune**](../solutions/manage-devices-with-intune-overview.md) for prescriptive guidance to accomplish this. 
 
 
 |Includes  |Prerequisites  |Doesn't include  |
@@ -109,7 +109,7 @@ With devices enrolled into management, you can now implement the full set of rec
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png" alt-text="Zero Trust identity and access policies with device management" lightbox="../media/zero-trust/m365-zero-trust-architecture-enterprise-policies.png":::
 
-Return to [Common identity and device access policies](office-365-security/identity-access-policies.md) and add the policies in the Enterprise tier.  
+Return to [**Common identity and device access policies**](office-365-security/identity-access-policies.md) and add the policies in the Enterprise tier.  
 
 :::image type="content" source="../media/zero-trust/identity-access-enterprise-tier.png" alt-text="Zero Trust identity and access policies — Enterprise (recommended) tier" lightbox="../media/zero-trust/identity-access-enterprise-tier.png":::
 
@@ -119,7 +119,7 @@ Microsoft 365 Defender is an extended detection and response (XDR) solution that
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="Adding Microsoft 365 Defender to the Zero Trust architecture" lightbox="../media/zero-trust/m365-zero-trust-architecture-defender.png":::
 
-Go to [Evaluate and pilot Microsoft 365 Defender](defender/eval-overview.md) for a methodical guide to piloting and deploying Microsoft 365 Defender components. 
+Go to [**Evaluate and pilot Microsoft 365 Defender**](defender/eval-overview.md) for a methodical guide to piloting and deploying Microsoft 365 Defender components. 
 
 |Includes  |Prerequisites  |Doesn't include  |
 |---------|---------|---------|
@@ -141,6 +141,6 @@ Microsoft Information Protection provides a framework, process, and capabilities
 
 ![Microsoft Information Protection (MIP) framework](../media/zero-trust/mip-solution-overview.png)
 
-For more information on how to plan and deploy information protection, see [Deploy a Microsoft Information Protection solution](../compliance/information-protection-solution.md). 
+For more information on how to plan and deploy information protection, see [**Deploy a Microsoft Information Protection solution**](../compliance/information-protection-solution.md). 
 
-If you're deploying information protection for data privacy regulations, this solution guide provides a recommended framework for the entire process: [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md).
+If you're deploying information protection for data privacy regulations, this solution guide provides a recommended framework for the entire process: [**Deploy information protection for data privacy regulations with Microsoft 365**](../solutions/information-protection-deploy.md).
