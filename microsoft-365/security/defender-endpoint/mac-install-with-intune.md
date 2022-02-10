@@ -92,7 +92,7 @@ In the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com/
 
 ### Onboarding blob
 
-This profile contains license information for Microsoft Defender for Endpoint. Without this profile,  Microsoft Defender for Endpoint will report that it isn't licensed.
+This profile contains license information for Microsoft Defender for Endpoint. Without this profile, Microsoft Defender for Endpoint will report that it isn't licensed.
 
 1. Select **Create Profile** under **Configuration Profiles**.
 1. Select **Platform**=**macOS**, **Profile type**=**Templates**. **Template name**=**Custom**. Click **Create**.
