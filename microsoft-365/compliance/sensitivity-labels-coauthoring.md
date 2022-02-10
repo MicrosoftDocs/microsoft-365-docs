@@ -121,7 +121,7 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
 
 - If you use the Azure Information Protection unified labeling client: Check the documentation for this labeling client for [more requirements or limitations](/azure/information-protection/known-issues#known-issues-for-co-authoring). 
     > [!NOTE]
-    > These limitations include a [change of dialog box](/azure/information-protection/known-issues#user-interface-changes-when-applying-labels) for users who select labels that prompt them to select permissions.
+    > These limitations for the unified labeling client include a [change of dialog box](/azure/information-protection/known-issues#user-interface-changes-when-applying-labels) for users who select labels that prompt them to select permissions.
 
 ## How to enable co-authoring for files with sensitivity labels
 
