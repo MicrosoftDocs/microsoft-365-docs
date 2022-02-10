@@ -299,13 +299,7 @@ This bundled named entity SIT contains these individual SITs:
 - Turkish
 
 <!--
-Croatia
-9	Croatia physical address	Detects patterns related to physical addresses from Cyprus
-10	Cyprus physical address	Detects patterns related to physical addresses from Czech Republic
-11	Czech Republic physical address	Detects patterns related to physical addresses from Denmark
-12	Denmark physical address	Detects patterns related to physical addresses from Estonia
-13	Estonia physical address	Detects patterns related to physical addresses from Finland
-14	Finland physical address	Detects patterns related to physical addresses from France
+France
 15	France physical address	Detects patterns related to physical addresses from Germany
 16	Germany physical address	Detects patterns related to physical addresses from Greece
 17	Greece physical address	Detects patterns related to physical addresses from Hungary
@@ -335,7 +329,7 @@ Croatia
 41	All medical terms and conditions	Detects all medical terms (blood and lab test terms, medications, procedures, etc.) and all medical conditions (diseases, impairments, conditions based on lifestyle, etc.). English terms only.
 42	
 43	Types of medication	Detects types of medication, such as ‘insulin’. English terms only.
-44	Diseases	Detects types of diseases, such as ‘diabetes’. English terms only.
+
 45	Generic medication names	Detects names of generic medication, such as ‘acetaminophen’. English terms only.
 46	Impairments listed in the U.S. Disability Evaluation Under Social Security	Detects impairments listed in the U.S. Disability Evaluation Under Social Security, such as ‘muscular dystrophy’. English terms only.
 47	Lab test terms	Detects terms related to lab tests, such as ‘Insulin C-peptide’. English terms only.
@@ -4714,6 +4708,14 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - issued on
 
 
+## Cyprus physical addresses
+
+This unbundled named entity detects patterns related to physical address from Cyprus. 
+
+### Confidence level
+
+Medium
+
 ## Cyprus tax identification number
 This sensitive information type is only available for use in:
 - data loss prevention policies
@@ -5139,6 +5141,14 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - unique identification number
 
 
+## Czech Republic physical addresses
+
+This unbundled named entity detects patterns related to physical address from the Czech Republic. 
+
+### Confidence level
+
+Medium
+
 ## Denmark driver's license number
 
 ### Format
@@ -5495,6 +5505,24 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - sygesikringsnummer
 
 
+## Denmark physical addresses
+
+This unbundled named entity detects patterns related to physical address from Denmark. 
+
+### Confidence level
+
+Medium
+
+
+## Diseases
+
+This unbundled named entity detects text that match disease names, such as *diabetes*. It supports English terms only.
+
+### Confidence level
+
+High
+
+
 ## Drug Enforcement Agency (DEA) number
 
 ### Format
@@ -5719,6 +5747,86 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - juhiloa number
 - juhiluba
 
+
+## Estonia passport number
+
+### Format
+
+one letter followed by seven digits with no spaces or delimiters
+
+### Pattern
+
+one letter followed by seven digits
+
+### Checksum
+
+No
+
+### Definition
+
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_estonia_eu_passport_number` finds content that matches the pattern.
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_estonia_eu_passport_number` is found.
+- The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
+
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_estonia_eu_passport_number` finds content that matches the pattern.
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_estonia_eu_passport_number` is found.
+
+```xml
+      <!-- Estonia Passport Number -->
+      <Entity id="61f7073a-509e-425b-a754-bc01bb5d5b8c" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_estonia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_estonia_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date1" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_estonia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_estonia_eu_passport_number" />
+          </Any>
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keywords_eu_passport_number_common
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
+#### Keywords_estonia_eu_passport_number
+
+eesti kodaniku pass
+passi number
+passinumbrid
+document number
+document no
+dokumendi nr
+
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
+
+
 ## Estonia Personal Identification Code
 
 This sensitive information type is only available for use in:
@@ -5807,83 +5915,13 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - tin#
 
 
-## Estonia passport number
+## Estonia physical addresses
 
-### Format
+This unbundled named entity detects patterns related to physical address from Estonia. 
 
-one letter followed by seven digits with no spaces or delimiters
+### Confidence level
 
-### Pattern
-
-one letter followed by seven digits
-
-### Checksum
-
-No
-
-### Definition
-
-A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_estonia_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_estonia_eu_passport_number` is found.
-- The regular expression `Regex_eu_passport_date1` finds date in the format DD.MM.YYYY or a keyword from `Keywords_eu_passport_date` is found
-
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_estonia_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_estonia_eu_passport_number` is found.
-
-```xml
-      <!-- Estonia Passport Number -->
-      <Entity id="61f7073a-509e-425b-a754-bc01bb5d5b8c" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Regex_estonia_eu_passport_number" />
-          <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number" />
-            <Match idRef="Keywords_estonia_eu_passport_number" />
-          </Any>
-          <Any minMatches="1">
-            <Match idRef="Regex_eu_passport_date1" />
-            <Match idRef="Keywords_eu_passport_date" />
-          </Any>
-        </Pattern>
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_estonia_eu_passport_number" />
-          <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number" />
-            <Match idRef="Keywords_estonia_eu_passport_number" />
-          </Any>
-        </Pattern>
-      </Entity>
-```
-
-### Keywords
-
-#### Keywords_eu_passport_number_common
-
-- passport#
-- passport #
-- passportid
-- passports
-- passportno
-- passport no
-- passportnumber
-- passport number
-- passportnumbers
-- passport numbers
-
-#### Keywords_estonia_eu_passport_number
-
-eesti kodaniku pass
-passi number
-passinumbrid
-document number
-document no
-dokumendi nr
-
-#### Keywords_eu_passport_date
-
-- date of issue
-- date of expiry
+Medium
 
 
 ## EU debit card number
@@ -6566,6 +6604,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Finland european health insurance number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -6797,6 +6836,16 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 - date of issue
 - date of expiry
+
+
+## Finland physical addresses
+
+This unbundled named entity detects patterns related to physical address from Finland. 
+
+### Confidence level
+
+Medium
+
 
 ## France driver's license number
 
