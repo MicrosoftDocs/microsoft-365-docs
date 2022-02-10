@@ -173,7 +173,7 @@ No
 
 ### Description
 
-This bundeled named entity matches text that mentions medical conditions that are present in curated dictionaries. There is one curated dictionary per supported language. The dictionaries are from a number of international medical resources. The curated dictionaries incorporate as many medical conditions as possible without risking a large number of false positives. Each entry contains the different forms that a single condition is commonly written in to ensure coverage, for example:
+This bundeled named entity matches text that mentions medical conditions that are present in curated dictionaries. There is one curated dictionary per supported language. The dictionaries are from a number of international medical resources. The curated dictionaries incorporate as many medical conditions as possible without risking a large number of false positives. .Each entry contains the different forms that a single condition is commonly written in to ensure coverage, for example:
 
 - *TB*
 - *tuberculosis*
@@ -299,12 +299,7 @@ This bundled named entity SIT contains these individual SITs:
 - Turkish
 
 <!--
-Lithuania
-24	Lithuania physical address	Detects patterns related to physical addresses from Luxembourg
-25	Luxembourg physical address	Detects patterns related to physical addresses from Malta
-26	Malta physical address	Detects patterns related to physical addresses from Netherlands
-27	Netherlands physical address	Detects patterns related to physical addresses from New Zealand
-28	New Zealand physical address	Detects patterns related to physical addresses from Norway
+Norway
 29	Norway physical address	Detects patterns related to physical addresses from Poland
 30	Poland physical address	Detects patterns related to physical addresses from Portugal
 31	Portugal physical address	Detects patterns related to physical addresses from Romania
@@ -317,14 +312,13 @@ Lithuania
 38	Turkey physical address	Detects patterns related to physical addresses from United Kingdom
 39	United Kingdom physical address	Detects patterns related to physical addresses from United States
 40	United States physical address	Detects patterns related to physical addresses from 
-41	All medical terms and conditions	Detects all medical terms (blood and lab test terms, medications, procedures, etc.) and all medical conditions (diseases, impairments, conditions based on lifestyle, etc.). English terms only.
+41		
 42	
 43	Types of medication	Detects types of medication, such as ‘insulin’. English terms only.
 
-48	Lifestyles that relate to medical conditions	Detects terms related to lifestyles that might result in a medical condition, such as ‘smoking’. English terms only.
-49	Medical specialties	Detects medical specialties, such as ‘dermatology’. English terms only.
 50	Surgical procedures	Detects surgical procedures, such as ‘appendectomy’. English terms only.
 
+chrfox1
 
 
 
@@ -11545,6 +11539,16 @@ This unbundled named entity detects patterns related to physical address from Li
 
 Medium
 
+
+## Lifestyles that relate to medical conditions
+
+This unbundled named entity detects terms related to lifestyles that might result in a medical condition, such as *smoking*. It supports English terms only.
+
+### Confidence level
+
+High
+
+
 ## Lithuania driver's license number
 
 ### Format
@@ -11708,7 +11712,9 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - vairuotojo pažymėjimo numeris
 - vairuotojo pažymėjimo numeriai
 
+
 ## Lithuania personal code
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -11795,6 +11801,16 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - unique identification number
 - unique identity number
 - uniqueidentityno#
+
+
+## Lithuania physical addresses
+
+This unbundled named entity detects patterns related to physical address from Lithuania. 
+
+### Confidence level
+
+Medium
+
 
 ## Lithuania passport number
 
@@ -12035,6 +12051,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - Führerschäin
 
 ## Luxemburg national identification number (natural persons)
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -12108,92 +12125,6 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - unique id
 - unique identity
 - uniqueidkey#
-
-## Luxemburg passport number
-
-### Format
-
-eight digits or letters with no spaces or delimiters
-
-### Pattern
-
-eight digits or letters (not case-sensitive)
-
-### Checksum
-
-No
-
-### Definition
-
-A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_luxemburg_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_luxemburg_eu_passport_number` is found.
-- The regular expression `Regex_eu_passport_date3` finds date in the format DD MM YYYY or a keyword from `Keywords_eu_passport_date` is found
-
-A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression  `Regex_luxemburg_eu_passport_number` finds content that matches the pattern.
-- A keyword from  `Keywords_eu_passport_number` or `Keywords_luxemburg_eu_passport_number` is found.
-
-```xml
-      <!-- Luxemburg Passport Number -->
-      <Entity id="81d5c027-bed9-4421-91a0-3b2e55b3eb85" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Regex_luxemburg_eu_passport_number" />
-          <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number" />
-            <Match idRef="Keywords_luxemburg_eu_passport_number" />
-          </Any>
-          <Any minMatches="1">
-            <Match idRef="Regex_eu_passport_date3" />
-            <Match idRef="Keywords_eu_passport_date" />
-          </Any>
-        </Pattern>
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_luxemburg_eu_passport_number" />
-          <Any minMatches="1">
-            <Match idRef="Keywords_eu_passport_number" />
-            <Match idRef="Keywords_luxemburg_eu_passport_number" />
-          </Any>
-        </Pattern>
-      </Entity>
-```
-
-### Keywords
-
-#### Keywords_eu_passport_number
-
-- passport#
-- passport #
-- passportid
-- passports
-- passportno
-- passport no
-- passportnumber
-- passport number
-- passportnumbers
-- passport numbers
-
-#### Keywords_luxemburg_eu_passport_number
-- ausweisnummer
-- luxembourg pass
-- luxembourg passeport
-- luxembourg passport
-- no de passeport
-- no-reisepass
-- nr-reisepass
-- numéro de passeport
-- pass net
-- pass nr
-- passnummer
-- passeport nombre
-- reisepässe
-- reisepass-nr
-- reisepassnummer
-
-#### Keywords_eu_passport_date
-
-- date of issue
-- date of expiry
 
 
 ## Luxemburg national identification number (non-natural persons)
@@ -12288,6 +12219,102 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - zinnzahl
 
 
+## Luxemburg passport number
+
+### Format
+
+eight digits or letters with no spaces or delimiters
+
+### Pattern
+
+eight digits or letters (not case-sensitive)
+
+### Checksum
+
+No
+
+### Definition
+
+A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_luxemburg_eu_passport_number` finds content that matches the pattern.
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_luxemburg_eu_passport_number` is found.
+- The regular expression `Regex_eu_passport_date3` finds date in the format DD MM YYYY or a keyword from `Keywords_eu_passport_date` is found
+
+A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression  `Regex_luxemburg_eu_passport_number` finds content that matches the pattern.
+- A keyword from  `Keywords_eu_passport_number` or `Keywords_luxemburg_eu_passport_number` is found.
+
+```xml
+      <!-- Luxemburg Passport Number -->
+      <Entity id="81d5c027-bed9-4421-91a0-3b2e55b3eb85" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_luxemburg_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_luxemburg_eu_passport_number" />
+          </Any>
+          <Any minMatches="1">
+            <Match idRef="Regex_eu_passport_date3" />
+            <Match idRef="Keywords_eu_passport_date" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_luxemburg_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number" />
+            <Match idRef="Keywords_luxemburg_eu_passport_number" />
+          </Any>
+        </Pattern>
+      </Entity>
+```
+
+### Keywords
+
+#### Keywords_eu_passport_number
+
+- passport#
+- passport #
+- passportid
+- passports
+- passportno
+- passport no
+- passportnumber
+- passport number
+- passportnumbers
+- passport numbers
+
+#### Keywords_luxemburg_eu_passport_number
+- ausweisnummer
+- luxembourg pass
+- luxembourg passeport
+- luxembourg passport
+- no de passeport
+- no-reisepass
+- nr-reisepass
+- numéro de passeport
+- pass net
+- pass nr
+- passnummer
+- passeport nombre
+- reisepässe
+- reisepass-nr
+- reisepassnummer
+
+#### Keywords_eu_passport_date
+
+- date of issue
+- date of expiry
+
+
+## Luxemburg physical addresses
+
+This unbundled named entity detects patterns related to physical address from Luxemburg. 
+
+### Confidence level
+
+Medium
+
+
 ## Malaysia identification card number
 
 ### Format
@@ -12353,6 +12380,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - malaysian identity card
 - nric
 - personal identification card
+
 
 ## Malta driver's license number
 
@@ -12524,6 +12552,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## Malta identity card number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -12661,6 +12690,15 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - date of expiry
 
 
+## Malta physical addresses
+
+This unbundled named entity detects patterns related to physical address from Malta. 
+
+### Confidence level
+
+Medium
+
+
 ## Malta tax identification number
 
 ### Format
@@ -12750,6 +12788,13 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 - unique identity number
 - uniqueidentityno#
 
+## Medical specialities
+
+This unbundled named entity detects terms related to medical specialties, such as *dermatology*.  It supports English terms only.
+
+### Confidence level
+
+High
 
 ## Medicare Beneficiary Identifier (MBI) card
 
@@ -12937,6 +12982,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 - unique identification number
 - unique identity number
 - uniqueidentityno#
+
 
 ## Netherlands driver's license number
 
@@ -13173,7 +13219,18 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - paspoortnummer
 - paspoort nr
 
+
+## Netherlands physical addresses
+
+This unbundled named entity detects patterns related to physical address from the Netherlands. 
+
+### Confidence level
+
+Medium
+
+
 ## Netherlands tax identification number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -13257,6 +13314,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 
 ## Netherlands value added tax number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -13319,6 +13377,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## New Zealand bank account number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -13381,6 +13440,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 
 ## New Zealand driver's license number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -13496,6 +13556,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 
 ## New Zealand inland revenue number
+
 This sensitive information type is only available for use in:
 - data loss prevention policies
 - communication compliance policies
@@ -13603,6 +13664,16 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - National Health Index
 - NHI#
 - National Health Index#
+
+
+## New Zealand physical addresses
+
+This unbundled named entity detects patterns related to physical address from New Zealand. 
+
+### Confidence level
+
+Medium
+
 
 ## New Zealand social welfare number
 
