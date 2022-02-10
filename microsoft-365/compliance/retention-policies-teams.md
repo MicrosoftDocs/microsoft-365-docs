@@ -58,7 +58,7 @@ These mailboxes are, listed by their RecipientTypeDetails attribute:
 - **UserMailbox**: These mailboxes store message data for cloud-based Teams users.
 - **MailUser**: These mailboxes store message data for [on-premises Teams users](search-cloud-based-mailboxes-for-on-premises-users.md).
 - **GroupMailbox**: These mailboxes store message data for Teams standard channels.
-- - **SubstrateGroup**: These mailboxes store message data for Teams shared channels.
+- **SubstrateGroup**: These mailboxes store message data for Teams shared channels.
 
 Other mailbox types, such as RoomMailbox that is used for Teams conference rooms, are not supported for Teams retention policies.
 
