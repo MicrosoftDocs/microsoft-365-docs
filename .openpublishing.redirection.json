@@ -6505,6 +6505,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/old-index.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/?view=o365-worldwide",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/enterprise/microsoft-365-client-support-certificate-based-authentication.md",
       "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
       "redirect_document_id": false
