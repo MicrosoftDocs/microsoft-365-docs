@@ -23,11 +23,13 @@ You'll be introduced to the tools and information you’ll need to create and tr
   
 In this site, models can be trained and evaluated using your own content. However, to apply the models to libraries, a license for SharePoint Syntex is required.  
 
-![Screenshot of the Content Center site template provisioning page.](../media/content-understanding/content-center-site-provisioning-page.png)
+![Screenshot of the Content Center site template home page.](../media/content-understanding/content-center-site-home-page.png)
 
-## Provision the Content Center site
+## Provision the site
 
 The Content Center site can be provisioned from the [SharePoint look book service](https://lookbook.microsoft.com/).
+
+![Screenshot of the Content Center site template provisioning page.](../media/content-understanding/content-center-site-provisioning-page.png)
 
 > [!NOTE]
 > You must be a global administrator or SharePoint administrator in Microsoft 365 to provision the site.
@@ -46,7 +48,7 @@ The Content Center site can be provisioned from the [SharePoint look book servic
 
 For more information about provisioning from the SharePoint look book service, see [Provision a new learning pathways solution](https://docs.microsoft.com/en-us/office365/customlearning/custom_provision).
 
-## Explore the Content Center site
+## Explore the site
 
 The Content Center site includes pre-populated pages that walk you through the steps to begin using SharePoint Syntex in your organization. 
 
