@@ -6505,6 +6505,15 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender/m365d-whats-new.md",
+      "redirect_url": "/microsoft-365/security/defender/whats-new?view=o365-worldwide",
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/old-index.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/?view=o365-worldwide",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/enterprise/microsoft-365-client-support-certificate-based-authentication.md",
       "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
       "redirect_document_id": false
@@ -6522,6 +6531,16 @@
     {
       "source_path": "microsoft-365/enterprise/microsoft-365-client-support-single-sign-on.md",
       "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/m365-enterprise-test-lab-guides",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md",
+      "redirect_url": "/microsoft-365/enterprise/m365-enterprise-test-lab-guides",
       "redirect_document_id": false
     },
     {
