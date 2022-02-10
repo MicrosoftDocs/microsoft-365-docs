@@ -23,6 +23,12 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 **In this article:** Learn about recent updates in Compliance Manager.
 
+## February 2022
+
+### Try recommended assessment templates for your organization
+
+Your organization can now get recommendations from Compliance Manager about which assessments may be most relevant to you, with a quick setup process to get up and running. To learn more about recommendations and how to try premium assessment templates before buying a license, see [Start a premium assessments trial](compliance-manager-setup.md#start-a-premium-assessments-trial).
+
 ## November 2021
 
 ### Zero Trust integration for the Data Protection Baseline template

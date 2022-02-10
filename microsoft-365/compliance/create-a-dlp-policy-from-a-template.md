@@ -100,7 +100,7 @@ Here's a list of MIP role groups that are in preview. To learn more about the, s
 
    To include only specific SharePoint sites or OneDrive for Business accounts, switch the **Status** to on, and then click the links under **Include** to choose specific sites or accounts. When you apply a policy to a site, the rules configured in that policy are automatically applied to all subsites of that site.
 
-   ![Options for locations where a DLP policy can be applied.](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
+   ![Options for locations where a DLP policy can be applied.](../media/all-locations.png)
 
    In this example, to protect sensitive information stored in all OneDrive for Business accounts, turn off the **Status** for both **Exchange email** and **SharePoint sites**, and leave the **Status** on for **OneDrive accounts**.
 

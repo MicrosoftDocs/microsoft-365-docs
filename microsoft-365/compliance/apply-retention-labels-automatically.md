@@ -370,4 +370,10 @@ If you need to ensure that no one can turn off the policy, delete the policy, or
 
 ## Next steps
 
+To help you track the labels applied from your auto-labeling policies:
+
+- [Monitoring retention labels](retention.md#monitoring-retention-labels)
+- [Using Content Search to find all content with a specific retention label](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
+- [Auditing retention actions](retention.md#auditing-retention-actions)
+
 See [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md) for an example scenario that uses an auto-apply retention label policy with managed properties in SharePoint, and event-based retention to start the retention period.
