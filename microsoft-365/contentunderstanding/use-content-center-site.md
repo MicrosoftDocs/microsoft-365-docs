@@ -74,7 +74,7 @@ Learn how to use SharePoint Syntex to take what is manual and turn it into somet
 
 ### Manage compliance
 
-Learn how to implement steps to reduce risks and ensure the data and information your business captures is used in a secure and thoughtful way.
+Implement steps to reduce risks and ensure the data and information your organization captures is used in a secure and thoughtful way.
 
 ### View model activity
 
