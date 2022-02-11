@@ -41,11 +41,9 @@ All alerts are listed on the **Alerts** tab in Compliance Manger, and all alert 
 
 Select the **Alert policies** tab in Compliance Manger to view and manage your alert policies. The **Alert policies** page contains a table listing all the policies created by your organization. From this page, you can create new policies, edit existing policies, and change activation status, and delete policies.
 
-In the **Status column**, **Active** means the policy is in effect and triggering alerts when conditions are met. **Inactive** means the policy exists but is not generating alerts. The policies table also shows you the severity of the policy  as well as the date the policy was last modified.
+In the **Status column**, **Active** means the policy is in effect and triggering alerts when conditions are met. **Inactive** means the policy exists but is't generating alerts. The policies table also shows you the severity of the policy and the date the policy was last modified.
 
-To view an individual policy's details, select its row in the table. A flyout pane will appear that shows all details. Select the **Action** button at the bottom of the pane and select from options to edit the policy, view its alerts, or delete it.
-
-You can also edit, delete, or change the status for a policy by selecting the round button that appears to the left of the policy name when you hover over its row, then choosing one of the buttons near the top of the table, above the filters.
+To view an individual policy's details, select its row in the table. A flyout pane will appear that shows all details. Select the **Action** button at the bottom of the pane and select from options to edit the policy, view its alerts, or delete it. The commands to add, edit, delete, activate, and disable are also available near the top of the table, above the filters.
 
 To get started creating an alert policy, see [Create an alert policy](#create-an-alert-policy).
 
@@ -192,7 +190,9 @@ The **Events** column on the **Alerts** page indicates the conditions of a polic
 
 #### Alert aggregation for multiple events within one minute
 
-When multiple events that match the conditions of an alert policy occur with one minute, they are added to an existing alert by a process called alert aggregation. When an event triggers an alert, the alert is generated and displayed on the **Alerts** page and a notification is sent. If the same event occurs within one minute, then Compliance Manager adds details about the new event on the **Events log** tab of the existing alert instead of triggering a new alert. The goal of alert aggregation is to help reduce alert "fatigue" and let you focus and take action on fewer alerts for the same event.
+When multiple events that match the conditions of an alert policy occur with one minute, they are added to an existing alert by a process called alert aggregation.
+
+For example, when one event occurs which matches a policy, an alert is generated and displayed on the **Alerts** page and a notification is sent. If another event matching the same policy occurs within one minute of the first event, then Compliance Manager adds details about the additional event on the **Events log** tab of the existing alert instead of triggering a new alert. The goal of alert aggregation is to help reduce alert "fatigue" and let you focus and take action on fewer alerts for the same event.
 
 ### Taking action on alerts
 
