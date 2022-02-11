@@ -27,7 +27,7 @@ ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: "Setup overview for Microsoft 365 Business Premium for campaigns or other businesses"
 ---
 
-# Set up Microsoft 365
+# Set up Microsoft 365 Business Premium
 
 This article describes the process of setting up Microsoft 365. Anybody with Microsoft 365 Business Premium can use this guidance to step up security.
 
