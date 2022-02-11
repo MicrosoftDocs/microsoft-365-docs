@@ -97,7 +97,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 ## All full names
 
-This is a bundeled named entity which detects full names for people from all supported countries/regions, which include Australia, China, Japan, U.S., and countries in the EU. Use this SIT to detect all possible matches of full names.
+This is a bundled named entity which detects full names for people from all supported countries/regions, which include Australia, China, Japan, U.S., and countries in the EU. Use this SIT to detect all possible matches of full names.
 
 ### Format
 
@@ -157,7 +157,7 @@ In addition, patterns that a human would see as indicative of names are also mat
 
 ## All medical terms and conditions
 
-This is a bundeled named entity which detects medical terms and medical conditions. It detects English terms only. Use this SIT to detect all possible matches of medical terms and conditions.
+This is a bundled named entity which detects medical terms and medical conditions. It detects English terms only. Use this SIT to detect all possible matches of medical terms and conditions.
 
 ### Format
 
@@ -173,7 +173,7 @@ No
 
 ### Description
 
-This bundeled named entity matches text that mentions medical conditions that are present in curated dictionaries. There is one curated dictionary per supported language. The dictionaries are from a number of international medical resources. The curated dictionaries incorporate as many medical conditions as possible without risking a large number of false positives. .Each entry contains the different forms that a single condition is commonly written in to ensure coverage, for example:
+This bundled named entity matches text that mentions medical conditions that are present in curated dictionaries. There is one curated dictionary per supported language. The dictionaries are from a number of international medical resources. The curated dictionaries incorporate as many medical conditions as possible without risking a large number of false positives. .Each entry contains the different forms that a single condition is commonly written in to ensure coverage, for example:
 
 - *TB*
 - *tuberculosis*
