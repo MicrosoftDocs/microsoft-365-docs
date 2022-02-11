@@ -19,6 +19,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - adminvideo
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -30,6 +31,9 @@ description: "Learn how a Microsoft 365 global admin can change a user's email a
 # Change a user name and email address
 
 You may need to change someone's email address and display name if, for example, they get married and their last name changes.
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Watch: Change a user's name or email address
 
