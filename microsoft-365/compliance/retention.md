@@ -114,7 +114,7 @@ Retention policies can be applied to the following locations:
 - Yammer user messages
 
 > [!NOTE]
-> Teams channel messages now include shared channels (currently in preview) as well as standard channels.
+> Teams channel messages now include [shared channels](/MicrosoftTeams/shared-channels) (currently in preview) as well as standard channels.
 
 You can very efficiently apply a single policy to multiple locations, or to specific locations or users.
 
