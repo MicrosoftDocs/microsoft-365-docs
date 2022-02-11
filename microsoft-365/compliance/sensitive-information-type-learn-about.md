@@ -26,7 +26,9 @@ Identifying and classifying sensitive items that are under your organizations co
 - automated pattern recognition, like sensitive information types
 - [machine learning](classifier-learn-about.md)
 
-Sensitive information types are pattern-based classifiers. They detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md)
+Sensitive information types (SIT) are pattern-based classifiers. They detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md).
+
+Microsoft provides a large number of pre-configured SITs or you can create your own.
 
 ## Sensitive information types are used in
 
