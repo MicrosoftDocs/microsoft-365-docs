@@ -65,9 +65,9 @@ Help your customers trust your communications by adding a digital signature to p
 
 Download this infographic with tips for you and the members of your campaign team:
 
-[![The help protect your campaign info graphic.](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
+[![The help protect your campaign info graphic.](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf)
 
-[PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)
+[PDF](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pptx)
 
 ## Set it up
 
