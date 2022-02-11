@@ -27,8 +27,32 @@ description: "Get Microsoft 365 Business Premium so you can protect your company
 
 # How to get Microsoft 365 Business Premium
 
-This article describes how to get Microsoft 365 Business Premium for your company.
+This article describes how to get Microsoft 365 Business Premium for your company. You can start a trial on your own, or work with a solution provider to get Microsoft 365 Business Premium.
 
 ## What does Microsoft 365 Business Premium include?
 
 [View the Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM)
+
+## Get Microsoft 365 Business Premium
+
+See [Try or buy a Microsoft 365 for business subscription](../commerce/try-or-buy-microsoft-365.md).
+
+On the [Microsoft 365 Products site](https://www.aka.ms/office365signup), choose **Microsoft 365 Business Premium**.
+
+## Work with a Microsoft Solution Provider
+
+Microsoft has a list of solution providers who are authorized to sell offerings, including Microsoft Defender for Business. 
+
+To find a solution provider in your area, take the following steps:
+
+1. Go to the **Microsoft Solution Providers** page ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
+ 
+2. In the search box, fill in your location and company size. 
+
+3. In the **Search for products, services, skills, industries** box, put `Microsoft 365`, and then select **Go**.
+
+4. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
+
+## See also
+
+[Overview of Microsoft Defender for Business](../security/defender-business/mdb-overview.md)
