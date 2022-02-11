@@ -30,6 +30,17 @@ You can make changes to your organization profile, such as your organization nam
   
 To change the address associated with your bill or subscription, see [Change your billing addresses for Microsoft 365 for business](../../commerce/billing-and-payments/change-your-billing-addresses.md).
 
+## Change organization settings for Cloud PCs
+
+By default, new Cloud PCs are created with the Windows 11 operating system and the Standard User account type. To change these default settings, use the following steps:
+
+1. Sign in to the Microsoft 365 admin center with a Global admin account.
+2. Go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> page.
+3. On the **Services** tab, select **Windows 365**.
+4. Select your preferred operating system and account type, then select **Save**.
+
+Organization settings only apply to newly-created Cloud PCs. When these settings are changed, they won’t change the OS or account type of existing Cloud PCs.
+
 ## Edit organization information
 
 > [!IMPORTANT]
@@ -38,9 +49,7 @@ To change the address associated with your bill or subscription, see [Change you
 To change other information on your company's profile page:
   
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> page.
-
 2. On the **Organization profile** tab, select **Organization information**.
-
 3. Update your organization's information, then select **Save changes**. Be sure to fill in all required fields marked with an * to enable saving your changes.
 
 An explanation of each field is provided below.
