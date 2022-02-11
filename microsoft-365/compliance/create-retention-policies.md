@@ -82,7 +82,7 @@ When you have more than one retention policy, and when you also use retention la
     - If you chose **Adaptive**: On the **Choose adaptive policy scopes and locations** page, select **Add scopes** and select one or more adaptive scopes that have been created. Then, select one or more locations. The locations that you can select depend on the [scope types](retention-settings.md#configuration-information-for-adaptive-scopes) added. For example, if you only added a scope type of **User**, you will be able to select **Teams chats** but not **Teams channel messages**. 
     
     - If you chose **Static**: On the **Choose locations to apply the policy** page, select one or more locations for Teams:
-        - **Teams channel message**: Messages from standard and shared channel chats and standard and shared channel meetings, but not from [private channels](/microsoftteams/private-channels) that have their own policy location.
+        - **Teams channel message**: Messages from standard and shared channel chats, and standard and shared channel meetings, but not from [private channels](/microsoftteams/private-channels) that have their own policy location.
         - **Teams chats**: Messages from private 1:1 chats, group chats, and meeting chats.
         - **Teams private channel messages**: Messages from private channel chats and private channel meetings.
         
