@@ -21,6 +21,7 @@ ms.custom:
 - admindeeplinkDEFENDER
 - adminvideo
 - admindeeplinkEXCHANGE
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -32,6 +33,9 @@ description: "How to protect your business email and data from cyberthreats, inc
 # Top 10 ways to secure Microsoft 365 for business plans
 
 If you are a small or medium-size organization using one of Microsoft's business plans and your type of organization is targeted by cybercriminals and hackers, use the guidance in this article to increase the security of your organization. This guidance helps your organization achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598).
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Watch: Overview of security
 
