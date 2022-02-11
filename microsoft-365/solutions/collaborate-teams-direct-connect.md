@@ -23,6 +23,9 @@ description: Learn how to use shared channels with people outside your organizat
 
 If you want to allow your users to collaborate with people outside your organization in shared channels, you need to configure B2B direct connect for each organization that you want to collaborate with. (Alternatively, you can [Enable shared channels with all external organizations](/microsoft-365/solutions/allow-direct-connect-with-all-organizations).)
 
+> [!NOTE]
+> Shared channels is in preview and requires that you have configured [Microsoft Teams Public Preview](/MicrosoftTeams/public-preview-doc-updates). If you plan to share channels with other organizations, they must also have configured Teams public preview.
+
 ## Enable shared channels in Teams
 
 Shared channels is enabled by default in Teams. Follow this procedure to confirm the settings.
