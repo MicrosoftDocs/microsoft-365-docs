@@ -39,9 +39,9 @@ Advanced metadata search lets you use the metadata associated with a document to
    |Field    |Use this field to  |
    |---------|---------|
    |Keywords |Search for a string match in metadata or in the full text of a document. |
-   |Name     |Search in the **Name** column in the library.          |
+   |File name     |Search in the **Name** column in the library.          |
    |People   |Search for a match on people in any column in the library.   |
-   |Modified |Search by selected date range in the **Modified** column in the library.         |
+   |Modified date |Search by selected date range in the **Modified** column in the library.         |
    |File type     |Search by selected file type (for example, Word document or PDF).        |
    |Content type  |Search by selected content type (for example, invoices or contracts).        |
 
