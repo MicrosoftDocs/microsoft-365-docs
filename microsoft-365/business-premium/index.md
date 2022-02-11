@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 for smaller businesses and campaigns"
+title: "Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -27,7 +27,7 @@ ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: "Learn how to collaborate securely in your small business or campaign with Microsoft 365 Business Premium."
 ---
 
-# Microsoft 365 for smaller businesses and campaigns
+# Microsoft 365 Business Premium
 
 In our current world, keeping data and communications secure is a priority, particularly for medical and legal practices, political campaigns, and many other smaller businesses. Take advantage of the security features in Microsoft 365 Business Premium to collaborate safely within your small business. This solution provides a set of recommendations designed to help protect you and your data. This library includes help for setting up and using this recommended environment, no matter your business type.
 
