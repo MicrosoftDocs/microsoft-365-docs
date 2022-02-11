@@ -21,6 +21,7 @@ ms.custom:
 - admindeeplinkDEFENDER
 - adminvideo
 - admindeeplinkEXCHANGE
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -32,6 +33,9 @@ description: "How to protect your business email and data from cyberthreats, inc
 # Top 10 ways to secure Microsoft 365 for business plans
 
 If you are a small or medium-size organization using one of Microsoft's business plans and your type of organization is targeted by cybercriminals and hackers, use the guidance in this article to increase the security of your organization. This guidance helps your organization achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598).
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Watch: Overview of security
 
@@ -56,7 +60,7 @@ Microsoft recommends that you complete the tasks listed in the following table t
 |9|[Protect against malicious attachments and files with Safe Attachments](#9-protect-against-malicious-attachments-and-files-with-safe-attachments)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10|[Protect against phishing attacks with Safe Links](#10-protect-against-phishing-attacks-with-safe-links)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-If you have Microsoft Business Premium, the quickest way to setup security and begin collaborating safely is to follow the guidance in this library: [Microsoft 365 for smaller businesses and campaigns](../../campaigns/index.md). This guidance was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyberthreats launched by sophisticated hackers.
+If you have Microsoft Business Premium, the quickest way to setup security and begin collaborating safely is to follow the guidance in this library: [Microsoft 365 for smaller businesses and campaigns](../../business-premium/index.md). This guidance was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyberthreats launched by sophisticated hackers.
 
 Before you begin, check your [Microsoft 365 Secure Score](../../security/defender/microsoft-secure-score.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. With added insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting about your organization's security health.
 
