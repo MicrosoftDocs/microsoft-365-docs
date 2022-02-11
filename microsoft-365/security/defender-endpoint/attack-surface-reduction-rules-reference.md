@@ -18,10 +18,10 @@ ms.topic: article
 ms.collection: M365-security-compliance
 ---
 
-
 # Attack surface reduction rules
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -30,6 +30,7 @@ This article provides information about attack reduction rules:
 
 - [Supported operating system versions](#supported-operating-systems)
 - [Supported configuration management systems](#supported-configuration-management-systems)
+- [Per-rule alert and notification details](#per-rule-alert-and-notification-details)
 - [Per-rule-descriptions](#per-rule-descriptions)
   - Rule descriptions
   - GUIDs
@@ -82,7 +83,7 @@ The following table lists the supported operating systems for rules that are  cu
 
 |Rule name|Windows&nbsp;10|Windows&nbsp;Server 2019|Windows&nbsp;Server|
 |---|:---:|:---:|:---:|
-|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y version 1803 (Semi-Annual Channel) or later | 
+|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y version 1803 (Semi-Annual Channel) or later |
 |[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y version 1809 or later | Y | Y  <br><br> |
 |[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y <br><br> |
 |[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y version 1803 or later | Y <br><br> | Y <br><br> |
@@ -133,37 +134,33 @@ Links to information about configuration management system versions referenced i
 
 ## Per rule alert and notification details
 
-Toast notifications are generated for all rules, but only for rules in Block mode.
+Toast notifications are generated for all rules in Block mode. Rules in any other mode will not generate toast notifications
 
 For rules with the “Rule State” specified:
 
-- ASR rules with \<ASR Rule, Rule State> combinations are used to surface alerts (toast notifications) on Microsoft Defender for Endpoint only for devices at high-cloud block level. Devices not at high-cloud block level will not generate alerts for any \<ASR Rule, Rule State> combinations
-- EDR alerts are generated for ASR rules with the specified states, but only for devices at high-cloud block level
-- In the following table, "_\*_" indicates EDR alerts and toast notifications that require devices to be at high-cloud block level
+- ASR rules with \<ASR Rule, Rule State\> combinations are used to surface alerts (toast notifications) on Microsoft Defender for Endpoint only for devices at high-cloud block level. Devices not at high cloud block level will not generate alerts for any <ASR Rule, Rule State> combinations
+- EDR alerts are generated for ASR rules in the specified states, but only for devices at high cloud block level.
 
-| Rule name | Rule State: | Alert configurable in EDR? <br>(Yes&nbsp;\|&nbsp;No) | Generates alerts in EDR? <br>(Yes&nbsp;\|&nbsp;No) | Generates toast notification? <br>(Only in Block mode) <br>(Yes&nbsp;\|&nbsp;No) |
-|:---|:---:|:---:|:---:|:---:|
-| Block abuse of exploited vulnerable signed drivers |   |   | Y | Y |
-| Block Adobe Reader from creating child processes | Block |   | Y \* | Y \* |
-| Block all Office applications from creating child processes |   |   | Y | Y |
-| Block credential stealing from the Windows local security authority subsystem (lsass.exe) |   |   | Y | Y |
-| Block executable content from email client and webmail | Block  |   | Y \* | Y \* |
-| Block executable files from running unless they meet a prevalence, age, or trusted list criterion |   |   | Y | Y |
-| Block execution of potentially obfuscated scripts | Audit&nbsp;\|&nbsp;Block |   | Y \* \| Y \* | N \| Y \* |
-| Block JavaScript or VBScript from launching downloaded executable content | Block |   |  Y \* | Y  \* |
-| Block Office applications from creating executable content |   |   | Y | Y |
-| Block Office applications from injecting code into other processes |   |   | Y | Y |
-| Block Office communication application from creating child processes |   |   | Y | Y |
-| Block persistence through WMI event subscription <br>\* File and folder exclusions not supported. |  Audit&nbsp;\|&nbsp;Block |  | Y \* \| Y \* | N \| Y \* |
-| Block process creations originating from PSExec and WMI commands  |   |   | Y\* | Y |
-| Block untrusted and unsigned processes that run from USB | Audit&nbsp;\|&nbsp;Block |   | Y\* \| Y \* | N \| Y \* |
-| Block Win32 API calls from Office macros |   |   | Y | Y |
-| Use advanced protection against ransomware | Audit&nbsp;\|&nbsp;Block |   | Y\* \| Y \* | N \| Y \* |
-| Block abuse of exploited vulnerable signed drivers |   |   |  Y | Y |
-| Block Adobe Reader from creating child processes |   |   |  Y | Y |
-| Block all Office applications from creating child processes |   |   |  Y | Y |
-| Block credential stealing from the Windows local security authority subsystem (lsass.exe) |   |   |  Y | Y |
-|  |  |  |  |  |
+| Rule name: | Rule state: | Generates alerts in EDR? <br> (Yes&nbsp;\|&nbsp;No) | Generates toast notifications? <br> (Yes&nbsp;\|&nbsp;No) |
+|---|:---:|:---:|:---:|
+|   |   |  _Only for devices at high-cloud block level_ | _In Block mode only_ |
+|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) |   | N  | Y  |
+|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Block  | Y <br> Requires device at high-cloud block level  |  Y <br> Requires device at high-cloud block level  |
+|[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) |   |  N |  Y |
+|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) |   |  N |  Y |
+|[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) |   | Y <br> Requires device at high-cloud block level | Y <br> Requires device at high-cloud block level |
+|[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) |   | N | Y |
+|[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) |  Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level |
+|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Block | Y <br> Requires device at high-cloud block level  | Y <br> Requires device at high-cloud block level |
+|[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) |   | N | Y |
+|[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes)  |   | N | Y |
+|[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) |  |  N | Y |
+|[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) |  Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level  |
+|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) |   | N | Y |
+|[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level |
+|[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) |   | N | Y |
+|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level |
+|   |   |   |   |   |
 
 ## Per rule descriptions
 
@@ -180,6 +177,9 @@ The **Block abuse of exploited vulnerable signed drivers** rule does not block a
 > You can also configure this rule using [PowerShell](enable-attack-surface-reduction.md#powershell).
 >
 > To have a driver examined, use this Web site to [Submit a driver for analysis](https://www.microsoft.com/en-us/wdsi/driversubmission).
+
+<!--The above link is the 'only link' that exists for having drivers examined. The 'en-us' component is required to make the link work. Any alterations to this link will result in a 404.
+-->
 
 Intune Name: `Block abuse of exploited vulnerable signed drivers` (not yet available)
 
