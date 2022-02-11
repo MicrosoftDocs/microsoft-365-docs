@@ -42,7 +42,7 @@ Advanced metadata search lets you use the metadata associated with a document to
    |Name     |Search in the **Name** column in the library.          |
    |People   |Search for a match on people in any column in the library.   |
    |Modified |Search by selected date range in the **Modified** column in the library.         |
-   |File type     |Search by selected file type.        |
-   |Content type  |Search by selected content type.        |
+   |File type     |Search by selected file type (for example, Word document or PDF).        |
+   |Content type  |Search by selected content type (for example, invoices or contracts).        |
 
 3. Select **Search**. The documents that match your metadata search are shown on the results page. 
