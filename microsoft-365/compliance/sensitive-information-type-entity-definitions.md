@@ -6327,7 +6327,7 @@ These entities are in the EU passport number and are sensitive information types
 - [Slovenia](#slovenia-passport-number)
 - [Spain](#spain-passport-number)
 - [Sweden](#sweden-passport-number)
-- [U.K.](#us--uk-passport-number)
+- [U.S./U.K. passport number](#usuk-passport-number)
 
 
 ## EU social security number or equivalent identification
