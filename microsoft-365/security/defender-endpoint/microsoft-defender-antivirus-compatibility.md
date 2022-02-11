@@ -14,7 +14,7 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 02/10/2022
+ms.date: 02/11/2022
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
@@ -134,7 +134,7 @@ The table in this section summarizes the features and capabilities that are acti
 
  | Protection | Microsoft Defender Antivirus <br/>(*Active mode*) | Microsoft Defender Antivirus <br/>(*Passive mode*) | Microsoft Defender Antivirus <br/>(*Disabled or uninstalled*) | [EDR in block mode](edr-in-block-mode.md) | 
  |:---|:---|:---|:---|:---| 
- | [Real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) | Yes | No <sup>[[4](#fn4)]</sup> | No | No | 
+ | [Real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) | Yes | See note <sup>[[4](#fn4)]</sup> | No | No | 
  | [Cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) | Yes | No  | No | No | 
  | [Network protection](network-protection.md)  | Yes | No | No | No | 
  | [Attack surface reduction rules](attack-surface-reduction.md)  | Yes | No | No  | No | 
