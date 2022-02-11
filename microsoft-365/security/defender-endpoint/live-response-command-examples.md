@@ -193,7 +193,7 @@ remediate process 7960
 ```
 
 ```console
-# Remediate a registry value (the double backslash \\ indicates a registry value vs key)
+# Remediate a registry value (the double backslash \\ indicates a registry value versus key)
 remediate registry HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run\\SPStartup
 ```
 
