@@ -27,7 +27,7 @@ ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: "Get help with increasing the level of protection in Microsoft 365"
 ---
 
-# Increase threat protection for Microsoft 365 subscription
+# Increase threat protection for Microsoft 365 Business Premium
 
 This article helps you increase the protection in your Microsoft 365 subscription to protect against phishing, malware, and other threats. These recommendations are appropriate for organizations with an increased need for security, like political campaigns, law offices, and health care clinics.
 
