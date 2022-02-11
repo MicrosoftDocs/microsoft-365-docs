@@ -72,7 +72,7 @@ There are multiple types of filters:
 
 - **Date**: A date filter is used for date fields such as "Last modified date".
 
-- **Search options**: A search options filter provides a list of possible values (each value is displayed with a checkbox that you can select) for particular fields in the review. This filter is used for fields, such as "Sender", where there is a finite number of possible values in the review set.
+- **Search options**: A search options filter provides a list of possible values (each value is displayed with a checkbox that you can select) for particular fields in the review. This filter is used for fields, such as "Sender", where there's a finite number of possible values in the review set.
 
 - **Keyword**: A keyword condition is a specific instance of freetext condition that you can use to search for terms. You can also use KQL-like query language in this type of filter. For more information, see the Query language and Advanced query builder sections in this topic.
 
@@ -84,7 +84,7 @@ You have the option to change the include and exclude relationship for a particu
 
 ## Save filters as queries
 
-After you are satisfied with your filters, you can save the filter combination as a filter query. This lets you apply the filter in the future review sessions.
+After you're satisfied with your filters, you can save the filter combination as a filter query. This lets you apply the filter in the future review sessions.
 
 To save a filter, select **Save the query** and name it. You or other reviewers can run previously saved filter queries by selecting the **Saved filter queries** dropdown and selecting a filter query to apply to review set documents. 
 
@@ -114,3 +114,4 @@ You can also build more advanced queries to search for documents in a review set
 
 ## Filter partially indexed items
 
+If you selected the option to add partially indexed items from additional data sources when you committed the draft collection to a review set, you can use a filter to view only those items. This capability makes it easier to use the document metadata to help you determine if an item might be relevant to your investigation and whether you need to remediate the error that resulted in the item being partially indexed. 
