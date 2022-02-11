@@ -6332,7 +6332,7 @@ These entities are in the EU passport number and are sensitive information types
 
 ## EU social security number or equivalent identification
 
-These entities that are in the EU Social Security Number or equivalent identification and are sensitive information types.
+These are the entities that are in the EU Social Security Number or equivalent identification and are sensitive information types.
 
 - [Austria](#austria-social-security-number)
 - [Belgium](#belgium-national-number)
