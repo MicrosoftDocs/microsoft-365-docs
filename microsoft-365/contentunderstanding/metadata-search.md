@@ -43,6 +43,6 @@ Advanced metadata search lets you use the metadata associated with a document to
    |People   |Search for a match on people in any column in the library.   |
    |Modified date |Search by selected date range in the **Modified** column in the library.         |
    |File type     |Search by selected file type (for example, Word document or PDF).        |
-   |Content type  |Search by selected content type. This option will only appear if there is a non-default content type applied to the library. Default content types are “document” and “folder”.        |
+   |Content type  |Search by selected content type. This option will only appear if there is a non-default content type applied to the library. Default content types are *document* and *folder*.        |
 
 3. Select **Search**. The documents that match your metadata search are shown on the results page. 
