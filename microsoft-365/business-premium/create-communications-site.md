@@ -45,9 +45,9 @@ Include the following elements in your Communications site:
 
 The following links for PowerPoint and PDF can be downloaded and printed in tabloid format (also known as ledger, 11 x 17, or A3).
 
-[![Image for communications site infographic.](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pdf)
+[![Image for communications site infographic.](../media/M365-Campaigns-CreateCommunicationSite-358-201.png)](downloads/M365CampaignsCreateCommunicationSite.pptx)
 
-[PDF](downloads/M365CampaignsCreateCommunicationSite.pdf) | [PowerPoint](downloads/M365CampaignsCreateCommunicationSite.pptx)
+[PowerPoint](downloads/M365CampaignsCreateCommunicationSite.pptx)
 
 ## Set it up
 
