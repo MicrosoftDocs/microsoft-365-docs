@@ -21,7 +21,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Make changes to your organization profile, such as organization name, address, phone, technical contact, and email."
-ms.date: 03/30/2021
+ms.date: 02/11/2022
 ---
 
 # Change your organization's address, technical contact, and more
