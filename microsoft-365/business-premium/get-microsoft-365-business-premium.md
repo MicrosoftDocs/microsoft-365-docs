@@ -25,7 +25,7 @@ search.appverid:
 description: "Get Microsoft 365 Business Premium so you can protect your company from cybersecurity threats to devices, email, data, and communications."
 ---
 
-# Get Microsoft 365 Business Premium
+# How to get Microsoft 365 Business Premium
 
 This article describes how to get Microsoft 365 Business Premium for your company.
 
