@@ -151,7 +151,7 @@ The SIT instance count limit applies when SITs are used in these solutions:
 - Communication Compliance
 - Records Management
 - Microsoft Defender for Cloud Apps
-- Privacy Management
+- Microsoft Priva
 
 For a scanned item to satisfy rule criteria, the number of unique instances of a SIT in any single item must fall between the min and max values. This is called the **Instance count**.
 

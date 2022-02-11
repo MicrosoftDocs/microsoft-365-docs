@@ -68,11 +68,11 @@ In the example TLSA record, the Selector Field is set to ‘1’ so the Certific
 |1     |SHA-256         |The data in the TSLA record is a SHA-256 hash of either the certificate or the SPKI.          |
 |2     |SHA-512         |The data in the TSLA record is a SHA-512 hash of either the certificate or the SPKI.         |
 
-In the example of TLSA record, the Matching Type Field is set to ‘1’ so the Certificate Association Data is a SHA-256 hash of the Subject Public Key Info from the destination server certificate
+In the example TLSA record, the Matching Type Field is set to ‘1’ so the Certificate Association Data is a SHA-256 hash of the Subject Public Key Info from the destination server certificate
 
 **Certificate Association Data**: Specifies the certificate data that is used for matching against the destination server certificate. This data depends on the Selector Field value and the Matching Type Value.
 
-In the example of TLSA record, the Certificate Association data is set to ‘abc123…xyz789’. Since the Selector Field value in the example is set to '1’, it would reference the destination server certificate’s public key and the algorithm that is identified to be used with it. And since the Matching Type field value in the example is set to ‘1’, it would reference the SHA-256 hash of the Subject Public Key Info from the destination server certificate.
+In the example TLSA record, the Certificate Association data is set to ‘abc123…xyz789’. Since the Selector Field value in the example is set to '1’, it would reference the destination server certificate’s public key and the algorithm that is identified to be used with it. And since the Matching Type field value in the example is set to ‘1’, it would reference the SHA-256 hash of the Subject Public Key Info from the destination server certificate.
 
 ## How can Exchange Online customers use SMTP DANE Outbound?
 

@@ -360,6 +360,8 @@
             href: sit-use-exact-data-refresh-data.md
           - name: Use named entities in your data loss prevention policies (preview)
             href: named-entities-use.md
+          - name: Common usage scenarios for sensitive information types
+            href: sit-common-scenarios.md
         - name: Sensitive information type reference
           items:
           - name: Sensitive information type entity definitions 
@@ -575,8 +577,8 @@
               href: retention-policies-yammer.md
             - name: Exchange
               href: retention-policies-exchange.md
-            - name: Common settings for retention
-              href: retention-settings.md
+        - name: Common settings for retention and deletion
+          href: retention-settings.md
         - name: Limits for retention and deletion
           href: retention-limits.md
     - name: Information governance
@@ -647,7 +649,7 @@
           href: event-driven-retention.md
         - name: Publish & apply retention labels in apps
           href: create-apply-retention-labels.md
-        - name: Automataically apply retention labels to content
+        - name: Automatically apply retention labels to content
           href: apply-retention-labels-automatically.md
         - name: Lock policies to restrict changes
           href: retention-preservation-lock.md
@@ -1046,10 +1048,6 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: Energy services security and compliance
           href: ../solutions/energy-secure-collaboration.md
-- name: Privacy management
-  items:
-    - name: Learn about privacy management
-      href: /privacy/solutions/privacymanagement/privacy-management
 - name: Hybrid compliance capabilities
   items: 
     - name: Exchange Online mail encryption with AD RMS
@@ -1063,5 +1061,7 @@
   href: ../security/index.yml
 - name: Microsoft 365 Apps for business
   href: /office365/admin/admin-home
+- name: Microsoft Priva
+  href: /privacy/priva/
 - name: Troubleshooting
   href: /office365/troubleshoot/microsoft-365-compliance-welcome

@@ -1,5 +1,5 @@
 ---
-title: Attack surface reduction rules
+title: Attack surface reduction rules reference
 description: Lists details about attack surface reduction rules on a per-rule basis.
 keywords: Attack surface reduction rules, ASR, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit rules, antiexploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules, ASR rule description
 ms.prod: m365-security
@@ -10,15 +10,16 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar, jcedola
+ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
+ms.date: 02/04/2022
 ---
 
-# Attack surface reduction rules
+# Attack surface reduction rules reference
 
 **Applies to:**
 
@@ -161,6 +162,23 @@ For rules with the “Rule State” specified:
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) |   | N | Y |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level |
 |   |   |   |   |
+  
+## ASR rule modes
+
+- **Not configured** or **Disable**: This is the state in which the ASR rule has not been enabled or has been disabled. The code for this state = 0.
+- **Block**: This is the state in which the ASR rule is enabled. The code for this state is 1.
+- **Audit**: This is the state in which the ASR rule is evaluated for its impactive behavior toward the organization or environment in which it is deployed. The code for this state is 2.
+- **Warn** This is the state in which the ASR rule is enabled and presents a notification to the end-user, but permits the end-user to bypass the block. The code for this state is 6.
+
+_Warn mode_ is a block-mode type that alerts users about potentially risky actions. Users can then choose to bypass the block warning message and allow the underlying action. Users can select **OK** to enforce the block, or select the bypass option - **Unblock** - through the end-user pop-up toast notification that is generated at the time of the block. After the warning is unblocked, the operation is allowed until the next time the warning message occurs, at which time the end-user will need to reperform the action.
+
+If the allow button is clicked, the block will be suppressed for 24 hours. After 24 hours, the end-user will need to allow the block again. The warn mode for ASR rules is only supported for RS5+ (1809+) devices. If bypass is assigned to ASR rules on devices with older versions, the rule will be in blocked mode.
+
+You can also set a rule in warn mode via PowerShell by simply specifying the AttackSurfaceReductionRules_Actions as “Warn”. For example:
+
+```powershell
+-command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
+```
 
 ## Per rule descriptions
 
@@ -241,6 +259,9 @@ LSASS authenticates users who sign in on a Windows computer. Microsoft Defender 
 
 > [!NOTE]
 > In some apps, the code enumerates all running processes and attempts to open them with exhaustive permissions. This rule denies the app's process open action and logs the details to the security event log. This rule can generate a lot of noise. If you have an app that simply enumerates LSASS, but has no real impact in functionality, there is no need to add it to the exclusion list. By itself, this event log entry doesn't necessarily indicate a malicious threat.
+  
+> [!IMPORTANT]
+> The default state for the Attack Surface Reduction (ASR) rule “Block credential stealing from the Windows local security authority subsystem (lsass.exe)” will change from **Not Configured** to **Configured** and the default mode set to **Block**. All other ASR rules will remain in their default state: **Not Configured**. Additional filtering logic has already been incorporated in the rule to reduce end user notifications. Customers can configure the rule to **Audit**, **Warn** or **Disabled** modes, which will override the default mode. The functionality of this rule is the same, whether the rule is configured in the on-by-default mode, or if you enable Block mode manually.  
 
 Intune name: `Flag credential stealing from the Windows local security authority subsystem`
 

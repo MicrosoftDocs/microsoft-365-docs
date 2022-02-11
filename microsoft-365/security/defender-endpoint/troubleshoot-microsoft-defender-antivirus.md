@@ -10,7 +10,7 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/19/2018
+ms.date: 01/27/2022
 ms.reviewer:
 manager: dansimp
 ms.technology: mde
@@ -2687,6 +2687,34 @@ Description:
 </td>
 <td >
 Microsoft Defender Antivirus scanning for viruses is disabled.
+</td>
+</tr>
+<tr>
+<th colspan="2">Event ID: 5013</th>
+</tr>
+<tr><td>
+Symbolic name:
+</td>
+<td >
+<b>
+</b>
+</td>
+</tr>
+<tr>
+<td>
+Message:
+</td>
+<td >
+<b>Tamper protection blocked a change to Microsoft Defender Antivirus.
+</b>
+</td>
+</tr>
+<tr>
+<td>
+Description:
+</td>
+<td >
+If Tamper protection is enabled then, any attempt to change any of Defender’s settings if blocked and Event ID 5013 is generated that states which setting change was blocked.
 </td>
 </tr>
 <tr>

@@ -13,7 +13,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
 ---
@@ -28,18 +27,20 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> [!NOTE]
-> Beginning in late January 2022, Microsoft Defender for Endpoint (formerly known as Microsoft Defender ATP) will be referenced as "Microsoft Defender" across end user facing MDE experiences on macOS. 
-> 
-> This change is currently available in the Beta (previously called Insider Fast) and Preview (previously called Insider Slow) update channels. The minimum product version that includes this change is 101.54.24.
-> 
-> End users will observe the following changes: 
-> - The application installation path has been changed from `/Application/Microsoft Defender ATP.app` to `/Applications/Microsoft Defender.app`.
-> - Within the user experience, occurrences of "Microsoft Defender ATP" have been replaced with "Microsoft Defender"
-> 
-> This change does not impact the `mdatp` command-line tool.
->
-> **Action required**: if your enterprise has custom configurations that rely on either the product name or application installation path, these configurations must be updated with the new values listed above.
+## 101.56.62 (20.121122.15662.0)
+
+- Bug fixes
+
+## 101.56.35 (20.121121.15635.0)
+
+- The application has been renamed from "Microsoft Defender ATP" to "Microsoft Defender". End users will observe the following changes:
+  - The application installation path has been changed from `/Application/Microsoft Defender ATP.app` to `/Applications/Microsoft Defender.app`.
+  - Within the user experience, occurrences of "Microsoft Defender ATP" have been replaced with "Microsoft Defender"
+- Resolved an issue where some VPN applications could not connect due to the network content filter that is distributed with Microsoft Defender for Endpoint for Mac
+- Addressed an issue discovered in macOS 12.2 beta 2 where the installation package could not be opened due to a change in the operating system (OS) that prevents installation of packages with certain characteristics. While it appears that this OS change is not included in the final release of macOS 12.2, it is likely that it will be reintroduced in a future macOS version. As such, we encourage all enterprise administrators to refresh the Microsoft Defender for Endpoint package in their management console to this product version (or a newer version).
+- Addressed an issue seen on some M1 devices where the product was stuck with invalid antimalware definitions and could not successfully update to a working set of definitions.
+- `mdatp health` output has been extended with an additional attribute called `full_disk_access_enabled` that can be used to determine whether Full Disk Access has been granted to all components of Microsoft Defender for Endpoint for Mac.
+- Performance improvements & bug fixes
 
 ## 101.54.16 (20.121111.15416.0)
 

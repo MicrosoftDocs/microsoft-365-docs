@@ -22,6 +22,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 > [!NOTE]
 > The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+
 Microsoft 365 Lighthouse audit logs record actions that generate a change in Lighthouse or other Microsoft 365 services. Create, edit, delete, assign, and remote actions all create audit events that you can review. By default, auditing is enabled for all customers. It can't be disabled.
 
 ## Before you begin
@@ -43,7 +44,6 @@ To view audit logs, you must have one of the following permissions:
 
     - **Date range** - Previous month, week, or day.
     - **Tenants** - Tenant tags or customer tenant names.
-    - **Area** - The area where the action was initiated. The area corresponds to the entries in the left navigation bar.
     - **Activity** - Microsoft 365 activity type that corresponds to the action taken. For more information, see Activity Types table.
     - **Initiated by** -  Who initiated the action.
 
@@ -57,31 +57,26 @@ The following table is a list of activity types captured within Lighthouse audit
 
 | Activity name    | Area in Microsoft 365 Lighthouse | Action initiated  | Service impacted           |
 |------------------|----------------------------------|-------------------|----------------------------|
-|**offboardTenant**        | Tenants          | Inactivate a customer  | Microsoft 365 Lighthouse   |
-|**resetTenantOnboardingStatus**              | Tenants                          | Reactive a customer                                              | Microsoft 365 Lighthouse   |
-| **tenantTags**                               | Tenants                          | Create or delete a tag                                           | Microsoft 365 Lighthouse   |
+|**apply**                                   | Tenants                          | Apply deployment plan                                           | Azure AD, Microsoft Endpoint Manager                   |
 |**assignTag**                                | Tenants                          | Apply a tag from a customer                                      | Microsoft 365 Lighthouse   |
-|**unassignTag**                              | Tenants                          | Remove a tag from a customer                                    | Microsoft 365 Lighthouse   |
+|**changeDeploymentStatus**                   | Tenants                          | Action plan status for deployment plan                        | Microsoft 365 Lighthouse   |
+|**offboardTenant**                            | Tenants                          | Inactivate a customer                                          | Microsoft 365 Lighthouse   |
+|**resetTenantOnboardingStatus**              | Tenants                          | Reactive a customer                                              | Microsoft 365 Lighthouse   |
+|**tenantTags**                               | Tenants                          | Create or delete a tag                                           | Microsoft 365 Lighthouse   |
 |**tenantCustomizedInformation**              | Tenants                          | Create, update, or delete customer website or contact information | Microsoft 365 Lighthouse   |
-|**changeDeploymentStatus**                   | Tenants                          | Action plan status for a deployment plan                        | Microsoft 365 Lighthouse   |
-| **conditionalAccessPolicy**                  | Tenants                          | Require MFA for admins                                           | Azure AD                   |
-| **conditionalAccessPolicy**                  | Tenants                          | Require MFA for users                                           | Azure AD                   |
-| **conditionalAccessPolicy**                  | Tenants                          | Block Legacy Authentication                                      | Azure AD                   |
-| **deviceRegistrationPolicy**                 | Tenants                          | Set up device enrollment                                         | Azure AD                   |
-|**deviceConfiguration**                      | Tenants                          | Configure Microsoft Defender                                     | Microsoft Endpoint Manager |
-| **deviceCompliancePolicy**                   | Tenants                          | Configure a device compliance policy                             | Microsoft Endpoint Manager |
+|**unassignTag**                              | Tenants                          | Remove a tag from a customer                                    | Microsoft 365 Lighthouse   |
+| **blockUserSignin**                          | Users                            | Block sign-in                                                     | Azure AD                   |
 | **confirmUsersCompromised**                  | Users                            | Confirm user compromised                                        | Azure AD                   |
 | **dismissUsersRisk**                         | Users                            | Dismiss user risk                                                | Azure AD                   |
 | **resetUserPassword**                        | Users                            | Reset password                                                   | Azure AD                   |
-| **blockUserSignin**                          | Users                            | Block sign-in                                                     | Azure AD                   |
 | **setCustomerSecurityDefaultsEnabledStatus** | Users                            | Enable MFA with Security Defaults                               | Azure AD                   |
-| **syncDevice**                               | Devices                          | Sync                                                             | Microsoft Endpoint Manager |
 |**restartDevice**                            | Devices                          | Restart                                                          | Microsoft Endpoint Manager |
-| **windowsDefenderScan**                      | Threat management                | Full scan                                                       | Microsoft Endpoint Manager |
-| **windowsDefenderScan**                      | Threat management                | Quick scan                                                       | Microsoft Endpoint Manager |
+| **syncDevice**                               | Devices                          | Sync                                                             | Microsoft Endpoint Manager |
 | **rebootNow**                                | Threat management                | Reboot                                                           | Microsoft Endpoint Manager |
+| **reprovision**                              | Windows 365     | Retry Provisioning                                               | Windows 365                |
+| **windowsDefenderScanFull**                  | Threat management                | Full scan                                                       | Microsoft Endpoint Manager |
+| **windowsDefenderScan**                      | Threat management                | Quick scan                                                       | Microsoft Endpoint Manager |
 | **windowsDefenderUpdateSignatures**          | Threat management                | Update antivirus                                                | Microsoft Endpoint Manager |
-| **reprovision**                              | Tenants                          | Retry Provisioning                                               | Windows 365                |
 
 ## Next steps
 
