@@ -69,7 +69,7 @@ When you have more than one retention policy, and when you also use retention la
 ### Retention policy for Teams locations
 
 > [!NOTE]
-> Retention policies now support [shared channels](/MicrosoftTeams/shared-channels), currently in preview. Any shared channels inherit retention settings from the parent channel.
+> Retention policies now support [shared channels](/MicrosoftTeams/shared-channels), currently in preview. When you configure retention settings for the **Teams channel message** location, if a team has any shared channels, they inherit retention settings from their parent team.
 
 1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Information Governance** > **Retention Policies**.
 
