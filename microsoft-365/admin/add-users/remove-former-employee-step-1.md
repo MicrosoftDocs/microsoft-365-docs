@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -20,6 +20,7 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - m365solution-removeemployee
+- admindeeplinkEXCHANGE
 search.appverid:
 - BCS160
 - MET150
@@ -59,15 +60,14 @@ For more information about how long it takes to get someone out of email, see [W
 
 ## Block a former employee's access to email (Exchange Online)
 
-If you have email as part of your Microsoft 365 subscription, sign in to the Exchange admin center and follow these steps to block your former employee from accessing their email.
+If you have email as part of your Microsoft 365 subscription, sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> and follow these steps to block your former employee from accessing their email.
   
-1. Go to the <a href="https://admin.exchange.microsoft.com/" target="_blank">Exchange admin center</a>.
-2. In the Exchange admin center, navigate to **Recipients** \> **Mailboxes**.
-3. Select the user mailbox from the list and then, in the *Details Pane* (on the right-hand side), select **Manage email apps settings** under **Email apps**. Turn **Off** the slider for all the options; **Mobile (Exchange ActiveSync)**, **Outlook on the web**, **Outlook desktop (MAPI)**, **Exchange web services**, **POP3**, and **IMAP**.
-4. Select **Save**.
+1. Go to the Exchange admin center > **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">Mailboxes</a>.
+1. Select the user mailbox from the list and then, in the *Details Pane* (on the right-hand side), select **Manage email apps settings** under **Email apps**. Turn **Off** the slider for all the options; **Mobile (Exchange ActiveSync)**, **Outlook on the web**, **Outlook desktop (MAPI)**, **Exchange web services**, **POP3**, and **IMAP**.
+1. Select **Save**.
 
 ## Related content
 
-[Exchange admin center in Exchange Online](/exchange/exchange-admin-center)
+[Exchange admin center in Exchange Online](/exchange/exchange-admin-center) (article)\
 
-[Restore a user](restore-user.md)
+[Restore a user](restore-user.md) (article)

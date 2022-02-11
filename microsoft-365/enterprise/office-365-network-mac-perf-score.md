@@ -2,12 +2,12 @@
 title: "Microsoft 365 network assessment"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 09/21/2020
+manager: scotv
+ms.date: 12/06/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -23,7 +23,7 @@ In the Microsoft 365 Admin Center's network connectivity, **network assessments*
 The network assessment points value is from 0 to 100 and is an average of TCP latency, download speed, and UDP connection quality metrics. These metrics are compiled once a day. Performance metrics for Microsoft-owned networks are excluded from these measurements to ensure that assessment results are unambiguous and specific to the corporate network.
 
 > [!div class="mx-imgBorder"]
-> ![Network assessment value](../media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
+> ![Network assessment value.](../media/m365-mac-perf/m365-mac-perf-overview-score-top.png)
 
 A very low network assessment value suggests that Microsoft 365 clients will have significant problems connecting to the tenant or maintaining a responsive user experience. A high value indicates a properly configured network with few ongoing performance issues. A value of 80% represents a healthy baseline, above which you should not expect to receive regular user complaints about Microsoft 365 connectivity or responsiveness due to network performance. As iterative network connectivity improvements are made, this value will increase along with user experience.
 
@@ -44,7 +44,7 @@ A very low network assessment value suggests that Microsoft 365 clients will hav
 Each network assessment, whether scoped to the tenant or to a specific office location, shows a panel with details about the assessment. This panel shows a bar chart of the assessment both as a percentage and as the total points for each component workload including only workloads where measurement data was received. For an office location network assessment, we also show a comparison to the percent of Microsoft 365 customers in each of five quintiles that reported data in the same city as your office location.
 
 > [!div class="mx-imgBorder"]
-> ![Example network assessment value](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
+> ![Example network assessment value.](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
 The **Assessment breakdown** in the panel shows the assessment for each of the component workloads.
 
@@ -94,10 +94,10 @@ We calculate a mean opinion score from these UDP measurements for a scale from o
 
 ## Related topics
 
-[Network connectivity in the Microsoft 365 Admin Center (preview)](office-365-network-mac-perf-overview.md)
+[Network connectivity in the Microsoft 365 Admin Center](office-365-network-mac-perf-overview.md)
 
-[Microsoft 365 network performance insights (preview)](office-365-network-mac-perf-insights.md)
+[Microsoft 365 network performance insights](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365 network connectivity test tool (preview)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 network connectivity test tool](office-365-network-mac-perf-onboarding-tool.md)
 
-[Microsoft 365 Network Connectivity Location Services (preview)](office-365-network-mac-location-services.md)
+[Microsoft 365 Network Connectivity Location Services](office-365-network-mac-location-services.md)

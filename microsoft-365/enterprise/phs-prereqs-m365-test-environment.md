@@ -8,7 +8,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -42,7 +42,7 @@ There are ten phases to setting up this test environment:
 Follow the instructions in [the password hash synchronization](password-hash-sync-m365-ent-test-environment.md) Test Lab Guide.
 Here is the resulting configuration.
 
-![The simulated enterprise with password hash synchronization test environment](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![The simulated enterprise with password hash synchronization test environment.](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
  
 ## Phase 2: Configure Azure AD seamless single sign-on
 
@@ -124,7 +124,7 @@ Use [Common identity and device access policies](../security/office-365-security
 
 [Additional identity Test Lab Guides](m365-enterprise-test-lab-guides.md#identity)
 
-[Identity roadmap](identity-roadmap-microsoft-365.md)
+[Deploy identity](deploy-identity-solution-overview.md)
 
 [Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 

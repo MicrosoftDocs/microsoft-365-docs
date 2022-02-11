@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -16,6 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
+ms.custom: admindeeplinkCOMPLIANCE
 description: "Describes how to export and download content from a Core eDiscovery case in Microsoft 365."
 ---
 
@@ -25,9 +26,9 @@ After a search associated with a Core eDiscovery case is successfully run, you c
   
 ## Export search results
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions.
 
-2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **eDiscovery > Core**.
+2. In the left navigation pane of the Microsoft 365 compliance center, select **Show all**, and then select **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a>.
 
 3. On the **Core eDiscovery** page, click the name of the case that you want to create the hold in.
 
@@ -35,7 +36,7 @@ After a search associated with a Core eDiscovery case is successfully run, you c
 
 5. On the **Actions** menu at the bottom of the flyout page, click **Export results**.
 
-   ![Export results option in Actions menu](../media/ActionMenuExportResults.png)
+   ![Export results option in Actions menu.](../media/ActionMenuExportResults.png)
 
    The workflow to export the results of a search associated with a Core eDiscovery case is that same as exporting the search results for a search on the **Content search** page. For step-by-step instructions, see [Export content search results](export-search-results.md).
 
@@ -46,13 +47,16 @@ After a search associated with a Core eDiscovery case is successfully run, you c
   
 6. Click the **Exports** tab in the case to display the list of export jobs.
   
-   ![Export jobs on the Export tab in Core eDiscovery case](../media/CoreeDiscoveryExport.png)
+   ![Export jobs on the Export tab in Core eDiscovery case.](../media/CoreeDiscoveryExport.png)
 
    You may have to click **Refresh** to update the list of export jobs so that it shows the export job you created. Export jobs have the same name as the corresponding search with **_Export** appended to the search name.
 
 7. Click the export job you created to display status information on the flyout page. This information includes the percentage of items that have been transferred to the Azure Storage location.
 
 8. After all items have been transferred, click **Download results** to download the search results to your local computer. For more information downloading search results, see Step 2 in [Export content search results](export-search-results.md#step-2-download-the-search-results)
+
+> [!NOTE]
+> The exported search results must be downloaded within 14 days after you created the export job.
 
 ### More information about exporting searches from a case
 

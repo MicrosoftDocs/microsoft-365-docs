@@ -9,9 +9,12 @@ ms.date: 12/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-ms.custom: Ent_TLGs
+ms.custom: 
+- Ent_TLGs
+- admindeeplinkMAC
+- admindeeplinkDEFENDER
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: Use this Test Lab Guide to enable additional Microsoft 365 security settings your Microsoft 365 for enterprise test environment.
 ---
@@ -22,7 +25,7 @@ description: Use this Test Lab Guide to enable additional Microsoft 365 security
 
 With the instructions in this article, you configure additional Microsoft 365 settings to increase security in your Microsoft 365 for enterprise test environment.
 
-![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > Click [here](../downloads/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
@@ -44,7 +47,7 @@ In this phase, you enable increased Microsoft 365 security for your Microsoft 36
 
 Apps that do not support modern authentication cannot have [identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md) applied to them, which is an important element of securing your Microsoft 365 subscription and its digital assets. 
 
-1. Go to the Microsoft 365 admin center ([https://portal.microsoft.com](https://portal.microsoft.com)) and sign in to your Microsoft 365 test lab subscription with your global administrator account.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and sign in to your Microsoft 365 test lab subscription with your global administrator account.
     
   - If you are using the lightweight Microsoft 365 test environment, sign in from your local computer.
     
@@ -59,7 +62,7 @@ Apps that do not support modern authentication cannot have [identity and device 
 
 Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams protects your organization from inadvertently sharing malicious files.
 
-1. Go to the [Security & Compliance Center](https://protection.office.com) and sign in with your global administrator account.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Security & Compliance Center</a> and sign in with your global administrator account.
 
 2. In the left navigation pane, under **Threat management**, click **Policy**, and then click **Safe Attachments**. 
 
@@ -89,7 +92,7 @@ Threat management in Microsoft 365 can help you control and manage mobile device
 
 To see the security dashboard:
 
-1. If needed, go to the [Security & Compliance Center](https://protection.office.com) and sign in with your global administrator account.
+1. If needed, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Security & Compliance Center</a> and sign in with your global administrator account.
 
 2. In the left navigation pane, under **Threat management**, click **Dashboard**.
 
@@ -102,7 +105,7 @@ For more information, see [Security Dashboard](../security/office-365-security/s
 
 Microsoft Secure Score shows your security posture as a number, which indicates your current level relative to the features that are available in your subscription. It also gives you a list of improvement actions you can take to improve your score.
 
-1. Create a new tab in your browser and go to the [Microsoft 365 security center](https://security.microsoft.com/), and then click **Secure score**.
+1. Create a new tab in your browser, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, and then click **Secure score**.
 2. On the **Overview**  tab, note your current Secure Score and how it compares with the global average and subscriptions with a similar number of licenses.
 3. On the **Improvement actions** tab, read through the list of actions you can take to increase your score.
 

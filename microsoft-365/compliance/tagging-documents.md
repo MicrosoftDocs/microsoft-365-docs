@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
@@ -46,11 +46,11 @@ Advanced eDiscovery provides two types of tags:
 
 In addition to the tag types, the structure of how tags are organized in the tag panel can be used to make tagging documents more intuitive. Tags are grouped by sections. Review set search supports the ability to search by tag and by tag section. This means you can create a review set search to retrieve documents tagged with any tag in a section.
 
-![Tag sections in the tag panel](../media/TagTypes.png)
+![Tag sections in the tag panel.](../media/TagTypes.png)
 
 You can further organize tags by nesting them within a section. For example, if the intent is to identify and tag privileged content, nesting can be used to make it clear that a reviewer can tag a document as "Privileged" and select the type of privilege by checking the appropriate nested tag.
 
-![Nested tags within a tag section](../media/NestingTags.png)
+![Nested tags within a tag section.](../media/NestingTags.png)
 
 ## Creating and applying tags
 
@@ -64,7 +64,7 @@ Before applying tags to items in a review set, you need to create a tag structur
 
 2. On the **Tag files** flyout page, click **Create/edit tags**.
 
-   ![Click Create/edit tags on the flyout page](../media/CreateAeDTags1.png)
+   ![Click Create/edit tags on the flyout page.](../media/CreateAeDTags1.png)
 
 3. On the **Tags** page, select **Add section**.
 
@@ -76,7 +76,7 @@ Before applying tags to items in a review set, you need to create a tag structur
 
 7. Repeat this process to create new tag sections, tag options, and checkboxes. For example, the following screenshot shows a tag group named **Review**, which consists of **Responsive** and **Not-responsive** checkboxes.
 
-   ![Configure tag structure](../media/ManageTagOptions3.png)
+   ![Configure tag structure.](../media/ManageTagOptions3.png)
 
 ### Apply tags
 
@@ -84,7 +84,7 @@ With the tag structure in place, reviewers can apply tags to items in a review s
 
 1. In the review set command bar, select **Tag files** to display the **Tag files** flyout page (also called the *tagging panel*).
 
-   ![Click Tag files in the command bar to open the tagging panel](../media/TagFilesFlyoutPage.png)
+   ![Click Tag files in the command bar to open the tagging panel.](../media/TagFilesFlyoutPage.png)
 
 2. On the **Tag files** flyout page, you can set the following options to configure how to tag items displayed in the review set. The filters or filter queries currently applied to the review set determine which items are displayed and therefore the items that you can apply tags to. For more information, see [Query and filter content in a review set](review-set-search.md).
 

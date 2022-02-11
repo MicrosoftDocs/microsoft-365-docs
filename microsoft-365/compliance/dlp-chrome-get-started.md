@@ -11,11 +11,12 @@ ms.topic: conceptual
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: "Prepare for and deploy the Microsoft Compliance Extension."
@@ -35,8 +36,8 @@ To use Microsoft Compliance Extension, the device must be onboarded into endpoin
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
 - [Learn about endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
-- [Onboarding tools and methods for Windows 10 devices](dlp-configure-endpoints.md)
-- [Configure device proxy and internet connection settings for Endpoint DLP](endpoint-dlp-configure-proxy.md)
+- [Onboarding tools and methods for Windows 10 devices](device-onboarding-overview.md)
+- [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
 - [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 
 ### SKU/subscriptions licensing
@@ -69,6 +70,25 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 - Security reader
 - Reports reader
 
+#### Roles and Role Groups in preview
+
+There are roles and role groups in preview that you can test out to fine tune your access controls.
+
+Here's a list of Microsoft Information Protection (MIP) roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Information Protection Admin
+- Information Protection Analyst
+- Information Protection Investigator
+- Information Protection Reader
+
+Here's a list of MIP role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Information Protection
+- Information Protection Admins
+- Information Protection Analysts
+- Information Protection Investigators
+- Information Protection Readers
+
 ### Overall installation workflow
 
 Deploying Microsoft Compliance Extension is a multi-phase process. You can choose to install on one machine at a time, or use Microsoft Endpoint Manager or Group Policy for organization-wide deployments.
@@ -89,8 +109,8 @@ If you are rolling out the Microsoft Compliance Extension to all your monitored 
 
 1. Use the procedures in these topics to onboard your devices:
     1. [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
-    1. [Onboarding tools and methods for Windows 10 devices](dlp-configure-endpoints.md)
-    1. [Configure device proxy and internet connection settings for Endpoint DLP](endpoint-dlp-configure-proxy.md)
+    1. [Onboarding Windows 10 and Windows 11 devices](device-onboarding-overview.md)
+    1. [Configure device proxy and internet connection settings for Information Protection](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection)
 
 ### Basic Setup Single Machine Selfhost
 
@@ -110,7 +130,7 @@ This is the recommended method.
 
 Use this setup method for organization-wide deployments.
 
-##### Enabling Required Registry Key via Microsoft Endpoint Manager
+##### Enabling Required Registry Value via Microsoft Endpoint Manager
 
 1. Create a PowerShell script with the following contents:
 
@@ -125,7 +145,7 @@ Use this setup method for organization-wide deployments.
 4. Browse to the location of the script created when prompted.
 
 5. Select the following settings:
-    1. Run this script using the logged-on credentials: YES
+    1. Run this script using the logged-on credentials: NO
     1. Enforce script signature check: NO
     1. Run script in 64-bit PowerShell Host: YES
 
@@ -238,18 +258,18 @@ Now that you’ve removed Chrome from the disallowed browsers/apps list, you can
 
 ### Use the Alerts Management Dashboard to viewing Chrome DLP alerts
 
-1. Open the **Data loss prevention** page in the [Microsoft 365 Compliance center](https://compliance.microsoft.com) and select **Alerts**.
+1. Open the **Data loss prevention** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and select **Alerts**.
 
 2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
 
 ### Viewing Chrome DLP data in activity explorer
 
-1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft 365 Compliance center and choose **Activity explorer**.
+1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and choose **Activity explorer**.
 
 2. Refer to the procedures in [Get started with Activity explorer](data-classification-activity-explorer.md) to access and filter all the data for your Endpoint devices.
 
    > [!div class="mx-imgBorder"]
-   > ![activity explorer filter for endpoint devices](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+   > ![activity explorer filter for endpoint devices.](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ### Known Issues and Limitations
 

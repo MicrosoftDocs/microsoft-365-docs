@@ -9,7 +9,7 @@ ms.reviewer: shegu, nicholak
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -19,7 +19,7 @@ ms.custom:
 - okr_SMB
 - commerce_licensing
 search.appverid: MET150
-ms.date: 03/17/2021
+ms.date: 08/27/2021
 ---
 # Manage licenses for devices
 

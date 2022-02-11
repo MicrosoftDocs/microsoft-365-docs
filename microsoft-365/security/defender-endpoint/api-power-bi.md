@@ -3,14 +3,13 @@ title: Microsoft Defender for Endpoint APIs connection to Power BI
 ms.reviewer:
 description: Create a Power Business Intelligence (BI) report on top of Microsoft Defender for Endpoint APIs.
 keywords: apis, supported apis, Power BI, reports
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -24,7 +23,7 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -44,11 +43,11 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 - Click **Get Data** \> **Blank Query**
 
-  ![Image of create blank query](images/power-bi-create-blank-query.png)
+  ![Image of create blank query.](images/power-bi-create-blank-query.png)
 
 - Click **Advanced Editor**
 
-  ![Image of open advanced editor](images/power-bi-open-advanced-editor.png)
+  ![Image of open advanced editor.](images/power-bi-open-advanced-editor.png)
 
 - Copy the below and paste it in the editor:
 
@@ -94,17 +93,17 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 
 - Click **Edit Credentials**
 
-    ![Image of edit credentials0](images/power-bi-edit-credentials.png)
+    ![Image of edit credentials0.](images/power-bi-edit-credentials.png)
 
 - Select **Organizational account** \> **Sign in**
 
-    ![Image of set credentials1](images/power-bi-set-credentials-organizational.png)
+    ![Image of set credentials1.](images/power-bi-set-credentials-organizational.png)
 
 - Enter your credentials and wait to be signed in
 
 - Click **Connect**
 
-    ![Image of set credentials2](images/power-bi-set-credentials-organizational-cont.png)
+    ![Image of set credentials2.](images/power-bi-set-credentials-organizational-cont.png)
 
 - Now the results of your query will appear as table and you can start build visualizations on top of it!
 

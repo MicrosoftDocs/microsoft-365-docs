@@ -1,33 +1,50 @@
 - name: Microsoft 365 admin center help
   href: index.yml
   items: 
+    - name: Top 20 admin help articles
+      href: top-m365-admin-articles.yml
+    - name: Admin training video library
+      href: admin-video-library.yml
     - name: Get started
-      href: setup/index.yml
       items: 
         - name: Sign up
           href: admin-overview/sign-up-for-office-365.md
         - name: Try or buy Microsoft 365
           href: ../commerce/try-or-buy-microsoft-365.md
-        - name: Plan your setup
+        - name: Plan your setup of Microsoft 365 for business
           href: setup/plan-your-setup.md
-        - name: Plan for Windows 365 Business
+        - name: Sign up for Microsoft 365 Business Premium
           items:
-           - name: Get started with Windows 365 Business and Cloud PCs
-             href: setup/get-started-windows-365-business.md
-           - name: Windows 365 Business sizing options
-             href: setup/windows-365-business-sizing.md
-           - name: Troubleshoot Windows 365 Cloud PC setup issues
-             href: setup/troubleshoot-windows-365-business.md
-        - name: Set up your organization with the guided setup
+           - name: Sign up
+             href: ../business/sign-up.md
+           - name: Set up Microsoft 365 Business Premium with the setup wizard
+             href: ../business/set-up.md
+           - name: Microsoft 365 Business Premium (video)
+             href: admin-overview/what-is-microsoft-365.md
+        - name: Sign up for Microsoft 365 Business Standard
+          items:
+           - name: Sign up for Microsoft 365 Business Standard
+             href: ../admin/simplified-signup/signup-business-standard.md
+           - name: Set up Microsoft 365 Business Standard
+             href: ../admin/setup/setup-business-standard.md
+           - name: Invite users to Microsoft 365 Business Standard
+             href: ../admin/simplified-signup/admin-invite-business-standard.md
+           - name: Accept email invitation to Microsoft 365 Business Standard
+             href: ../admin/simplified-signup/user-invite-business-standard.md
+           - name: Accept an email invitation to a Microsoft 365 Business Standard subscription organization using an Outlook, Yahoo, Gmail or other account
+             href: ../admin/simplified-signup/user-invite-msa-nodomain-join.md
+           - name: Migrate data to my Microsoft 365 Business Standard subscription
+             href: ../admin/simplified-signup/migrate-data-business-standard.md
+        - name: Sign up Microsoft Apps for business
+          items:
+           - name: Sign up for Microsoft 365 Apps for business
+             href: setup/signup--apps-business.md
+           - name: Set up for Microsoft 365 Apps for business
+             href: setup/setup-apps-for-business.md
+        - name: Set up Microsoft 365 Business Basic
           items:
            - name: Microsoft 365 Business Basic
              href: setup/setup-business-basic.md
-           - name: Microsoft 365 Business Standard
-             href: setup/setup-business-standard.md
-           - name: Microsoft 365 Business Premium
-             href: setup/setup.md
-           - name: Microsoft 365 Apps for business
-             href: setup/setup-apps-for-business.md
         - name: Explore the Setup page and wizard
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: Secure Windows 10 computers
@@ -40,6 +57,12 @@
           href: setup/set-up-windows-devices.md
         - name: Set up mobile devices
           href: setup/set-up-mobile-devices.md
+        - name: Set up Outlook for Microsoft 365 for business email (video)
+          href: setup/setup-outlook.md
+        - name: Move files to OneDrive (video)
+          href: setup/files-to-onedrive.md
+        - name: Move files to SharePoint (video)
+          href: setup/files-to-sharepoint.md
         - name: Migrate your data to Microsoft 365
           href: setup/migrate-email-and-contacts-admin.md
         - name: Roll out Teams
@@ -52,8 +75,6 @@
           href: setup/customize-sign-in-page.md
         - name: Customize your organization theme
           href: setup/customize-your-organization-theme.md  
-        - name: Learn about Office 365 Germany
-          href: admin-overview/learn-about-office-365-germany.md
         - name: Access on-premises users and resources
           items:
             - name: Synchronize domain users to Microsoft 365
@@ -65,7 +86,7 @@
     - name: Overview of the Microsoft 365 admin center
       items:
         - name: Admin center overview
-          href: ../business-video/admin-center-overview.md
+          href: admin-overview/admin-center-overview.md
         - name: About admin roles
           href: add-users/about-admin-roles.md
         - name: Admin mobile app
@@ -91,7 +112,6 @@
         - name: Azure Information Protection support
           href: services-in-china/parity-between-azure-information-protection.md      
     - name: Manage users, groups, and passwords
-      href: add-users/index.yml
       items: 
         - name: Users
           items:
@@ -168,7 +188,6 @@
            - name: Set the password expiration policy
              href: manage/set-password-expiration-policy.md
     - name: Manage email and calendars
-      href: email/index.yml
       items: 
         - name: About user email settings
           href: email/office-365-user-email-settings.md
@@ -205,7 +224,6 @@
         - name: Manage clutter for your organization
           href: email/configure-clutter.md
     - name: Manage domains
-      href: get-help-with-domains/index.yml
       items:
         - name: Add a domain
           href: setup/add-domain.md
@@ -228,7 +246,6 @@
         - name: Troubleshoot domain issues
           href: get-help-with-domains/find-and-fix-issues.md
     - name: Manage your data and services
-      href: manage/index.yml
       items:
          - name: Monitor Microsoft 365 activity by using reports
            href: activity-reports/activity-reports.md
@@ -303,6 +320,20 @@
              href: usage-analytics/usage-analytics-data-model.md
            - name: Troubleshoot usage analytics errors
              href: usage-analytics/usage-analytics-errors.md
+         - name: Microsoft 365 support integration with ServiceNow configuration guide
+           items:
+           - name: Configuration overview
+             href: manage/servicenow-overview.md
+           - name: Configure basic authentication
+             href: manage/servicenow-basic-authentication.md
+           - name: Configure with Azure AD Auth Token
+             href: manage/servicenow-aad-oauth-token.md
+           - name: Service health incidents and recommended solutions only
+             href: manage/servicenow-service-health-incidents-solutions-only.md
+           - name: Testing the configuration
+             href: manage/servicenow-testing-the-configuration.md
+           - name: Troubleshooting
+             href: manage/servicenow-troubleshooting.md
     - name: Manage subscriptions and billing
       href: ../commerce/index.yml
     - name: Secure your organization
@@ -334,7 +365,6 @@
         - name: A guide to GDPR compliance
           href: security-and-compliance/gdpr-compliance.md
     - name: Manage devices and app data
-      href: devices/index.yml
       items:
         - name: Device and app data protection methods 
           href: devices/choose-device-security.md
@@ -407,21 +437,20 @@
             - name: Troubleshoot
               href: basic-mobility-security/troubleshoot.md
     - name: Work with customers
-      href: work-with-customers/index.yml
       items: 
         - name: Share sites and files with guest users
           href: manage/share-sites-with-external-users.md
         - name: Share calendars with guest users
           href: manage/share-calendars-with-external-users.md
         - name: Create a Team with guest users
-          href: ../business-video/team-with-guests.md
+          href: https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f
         - name: Schedule a Teams meeting with guest users
-          href: ../business-video/schedule-guest-meeting.md
+          href: https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5
         - name: Join a Teams meeting with guest users
-          href: ../business-video/join-guest-meeting.md
+          href: https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508
     - name: Troubleshoot
       href: /office/troubleshoot/
     - name: Contact support
-      href: ../business-video/get-help-support.md
+      href: get-help-support.md
     - name: Navigation guide
       href: ../microsoft-365-docs-navigation-guide.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json

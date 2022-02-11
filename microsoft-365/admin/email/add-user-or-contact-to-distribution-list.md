@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -26,7 +26,7 @@ description: "Learn how to add a Microsoft 365 user or contact such as an employ
 
 # Add a user or contact to a distribution group
 
-As the admin of an organization, you may need to add one of your users or contacts to a distribution group (see [Create distribution groups in Microsoft 365](../setup/create-distribution-lists.md)). For example, you can add employees or external partners or vendors to an email distribution group.
+As the admin of an organization, you may need to add one of your users or contacts to a distribution group (see [Create distribution groups in Microsoft 365](../setup/create-distribution-lists.md). For example, you can add employees or external partners or vendors to an email distribution group.
   
 ## Add a user or contact to a distribution group
 
@@ -38,7 +38,7 @@ As the admin of an organization, you may need to add one of your users or contac
 
 4. On the **View Members** page, select **Add members**, and select the user or contact you want to add to the distribution group. 
     
-    ![Add members to distribution group](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
+    ![Add members to distribution group.](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
   
 5. Select **Save** and then **Close**.
 

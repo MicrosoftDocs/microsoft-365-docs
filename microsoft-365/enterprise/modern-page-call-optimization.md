@@ -7,7 +7,7 @@ ms.date: 03/11/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - Strat_O365_Enterprise
@@ -49,7 +49,7 @@ Possible results include:
 
 If the **Requests to SharePoint** result appears in the **Attention required** section, you can click the result for details, including the total number of calls on the page and a list of the URLs.
 
-![Requests to SharePoint results](../media/modern-portal-optimization/pagediag-requests.png)
+![Requests to SharePoint results.](../media/modern-portal-optimization/pagediag-requests.png)
 
 ## Remediate performance issues related to too many calls on a page
 
@@ -61,7 +61,7 @@ If a page contains too many calls, you can use the list of URLs in the **Request
 
 Before you make page revisions to remediate performance issues, make a note of the page load time in the analysis results. Run the tool again after your revision to see if the new result is within the baseline standard, and check the new page load time to see if there was an improvement.
 
-![Page load time results](../media/modern-portal-optimization/pagediag-page-load-time.png)
+![Page load time results.](../media/modern-portal-optimization/pagediag-page-load-time.png)
 
 >[!NOTE]
 >Page load time can vary based on a variety of factors such as network load, time of day, and other transient conditions. You should test page load time a few times before and after making changes to help you average the results.

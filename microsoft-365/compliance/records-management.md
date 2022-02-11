@@ -9,10 +9,9 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
-- m365solution-mig
 - m365initiative-compliance
 search.appverid:
 - MOE150
@@ -47,7 +46,7 @@ Use the following capabilities to support your records management solution in Mi
 
 Using these capabilities, you can incorporate your organization's retention schedules and requirements into a records management solution that manages retention, records declaration, and disposition, to support the full lifecycle of your content.
 
-In addition to the online documentation, you might find it useful to listen to the [webinar recording](https://aka.ms/MIPC/Video-RecordsManagementWebinar) for records management, and download the accompanying [deck with FAQs](https://aka.ms/MIPC/Blog-RecordsManagementWebinar).
+In addition to the online documentation, you might find it useful to download a [deck with FAQs](https://aka.ms/MIPC/Blog-RecordsManagementWebinar) from a records management webinar. The recording of the actual webinar is no longer available.
 
 ## Records
 
@@ -76,11 +75,11 @@ A standard retention label has retention settings and actions but doesn't mark c
 |Action| Retention label |Record - locked| Record - unlocked| Regulatory record |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Edit contents|Allowed | **Blocked** | Allowed | **Blocked**|
-|Edit properties, including rename|Allowed |Allowed | Allowed| **Blocked**|
-|Delete|Allowed <sup>1</sup> |**Blocked** |**Blocked**| **Blocked**|
+|Edit properties, including rename|Allowed |Allowed <sup>1</sup> | Allowed | **Blocked**|
+|Delete|Allowed <sup>2</sup> |**Blocked** |**Blocked**| **Blocked**|
 |Copy|Allowed |Allowed | Allowed| Allowed|
-|Move within container <sup>2</sup>|Allowed |Allowed | Allowed| Allowed|
-|Move across containers <sup>2</sup>|Allowed |Allowed if never unlocked | **Blocked** | **Blocked**|
+|Move within container <sup>3</sup>|Allowed |Allowed | Allowed| Allowed|
+|Move across containers <sup>3</sup>|Allowed |Allowed if never unlocked | **Blocked** | **Blocked**|
 |Open/Read|Allowed |Allowed | Allowed| Allowed|
 |Change label|Allowed |Allowed - container admin only | Allowed - container admin only| **Blocked**
 |Remove label|Allowed |Allowed - container admin only | Allowed - container admin only| **Blocked**
@@ -88,11 +87,14 @@ A standard retention label has retention settings and actions but doesn't mark c
 Footnotes:
 
 <sup>1</sup>
-Supported by OneDrive and Exchange by retaining a copy in a secured location, but blocked by SharePoint.
+Allowed by default but can be blocked by a tenant setting for files that are larger than 0 bytes: Go to the **Records management** node in the Microsoft 365 compliance center > **Records management settings** > **Retention labels** > **Allow editing of record properties** and then turn off the setting **Allow users to edit record properties**.
+
+<sup>2</sup>
+For SharePoint and OneDrive, can be blocked as a tenant setting in the Microsoft 365 compliance center > **Records management** > **Records management settings** > **Retention labels** > **Deletion of items**
 
 When you apply a retention label to a list item that has a document attachment, that document doesn't inherit the retention settings and can be deleted from the list item. In comparison, if that list item was declared a record with a retention label, the document attachment would inherit the retention settings and couldn't be deleted.
 
-<sup>2</sup>
+<sup>3</sup>
 Containers include SharePoint document libraries, OneDrive accounts, and Exchange mailboxes.
 
 > [!IMPORTANT]

@@ -2,17 +2,16 @@
 title: List machineActions API
 description: Learn how to use the List MachineActions API to retrieve a collection of Machine Actions in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, machineaction collection
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance 
+ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
@@ -23,9 +22,11 @@ ms.custom: api
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Applies to:** 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,15 +39,17 @@ Retrieves a collection of [Machine Actions](machineaction.md).
 Supports [OData V4 queries](https://www.odata.org/documentation/).
 
 The OData's `$filter` query is supported on: `id`, `status`, `machineId`, `type`, `requestor`, and `creationDateTimeUtc` properties.
-<br>```$stop``` with max value of 10,000 
-<br>```$skip```
+
+`$stop` with max value of 10,000
+
+`$skip`
 
 See examples at [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
 
 ## Limitations
 
 1. Maximum page size is 10,000.
-2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour. 
+2. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
 ## Permissions
 
@@ -62,7 +65,7 @@ Delegated (work or school account)|Machine.ReadWrite|'Read and write machine inf
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
+> The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
 
 ## HTTP request
 

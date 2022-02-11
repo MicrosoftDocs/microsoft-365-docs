@@ -12,12 +12,12 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 ms.date: 07/01/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365solution-overview
+  - m365solution-scenario
   - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d
@@ -32,7 +32,7 @@ This article is [Step 2 of 3](eval-defender-office-365-overview.md) in the proce
 
 Use the following steps to enable the evaluation for Microsoft Defender for Office 365.
 
-![Steps to enable Microsoft Defender for Office 365 in the Microsoft Defender evaluation environment](../../media/defender/m365-defender-office-eval-enable-steps.png)
+![Steps to enable Microsoft Defender for Office 365 in the Microsoft Defender evaluation environment.](../../media/defender/m365-defender-office-eval-enable-steps.png)
 
 - [Step 1: Activate trial licenses](#step-1-activate-trial-licenses)
 - [Step 2: Audit and verify the public MX record](#step-2-audit-and-verify-the-public-mx-record)

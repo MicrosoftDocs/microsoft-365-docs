@@ -12,12 +12,12 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365solution-overview
+  - m365solution-scenario
   - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
@@ -41,7 +41,7 @@ Defender for Identity protects your on-premises Active Directory users and/or us
 
 The following diagram illustrates the baseline architecture for Defender for Identity. 
 
-![Architecture for Microsoft Defender for Identity](../../media/defender/m365-defender-identity-architecture.png)
+![Architecture for Microsoft Defender for Identity.](../../media/defender/m365-defender-identity-architecture.png)
 
 In this illustration:
 - Sensors installed on AD domain controllers parse logs and network traffic and send them to Microsoft Defender for Identity for analysis and reporting.
@@ -54,7 +54,7 @@ Defender for Identity sensors can be directly installed on the following servers
 - Domain controllers: The sensor directly monitors domain controller traffic, without the need for a dedicated server, or configuration of port mirroring.
 - AD FS: The sensor directly monitors network traffic and authentication events.
 
-For a deeper look into the architecture of Defender for Identity, including integration with Cloud App Security, see [Microsoft Defender for Identity architecture](/defender-for-identity/architecture).
+For a deeper look into the architecture of Defender for Identity, including integration with Defender for Cloud Apps, see [Microsoft Defender for Identity architecture](/defender-for-identity/architecture).
 
 
 ## Understand key concepts
@@ -72,7 +72,7 @@ The following table identified key concepts that are important to understand whe
 | Reports    | Defender for Identity reports allow you to schedule or immediately generate and download reports that provide system and entity status information.  You can create reports about system health, security alerts, and potential lateral movement paths detected in your environment.   | [Microsoft Defender for Identity Reports ](/defender-for-identity/reports)       |
 | Role groups    | Defender for Identity offers role-based groups and delegated access to safeguard data according to your organization's specific security and compliance needs which includes Administrators, Users and Viewers.        |  [Microsoft Defender for Identity role groups](/defender-for-identity/role-groups)       |
 | Administrative portal    |  In addition to the Microsoft 365 Defender portal, the Defender for Identity portal cab be used to monitor and respond to suspicious activity.      | [Working with the Microsoft Defender for Identity portal](/defender-for-identity/workspace-portal)        |
-| Microsoft Cloud App Security integration   | Microsoft Cloud App Security integrates with Microsoft Defender for Identity to provide user entity behavioral analytics (UEBA) across a hybrid environment - both cloud app and on-premises   | Microsoft Defender for Identity integration  |
+| Microsoft Defender for Cloud Apps integration   | Microsoft Defender for Cloud Apps integrates with Microsoft Defender for Identity to provide user entity behavioral analytics (UEBA) across a hybrid environment - both cloud app and on-premises   | Microsoft Defender for Identity integration  |
 | | | |
 
 

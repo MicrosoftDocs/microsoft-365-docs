@@ -9,7 +9,7 @@ ms.date: 5/16/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - SPO160
 - OSU150
@@ -47,7 +47,7 @@ To ensure that an information policy is applied to all documents of a certain ty
 
 2. On the Site Settings page, under **Site Collection Administration** \> **Content Type Policy Templates**.
 
-   ![Content Type Policy Template link on Site Settings page](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+   ![Content Type Policy Template link on Site Settings page.](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
 
 3. On the Policies page \> **Create**.
 
@@ -70,7 +70,7 @@ Adding an information management policy to a content type makes it easy to assoc
 
 2. On the Site Settings page, under **Web Designer Galleries** \> **Site content types**.
 
-   ![Site content types link on Site Settings page](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
+   ![Site content types link on Site Settings page.](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
 
 3. On the Site Content Type Settings page, select the content type that you want to add a policy to.
 
@@ -80,7 +80,7 @@ Adding an information management policy to a content type makes it easy to assoc
 
 6. In the next sections, select the individual policy features that you want to add to your information management policy.
 
-   ![Types of content policies](../media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
+   ![Types of content policies.](../media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
 
 7. To specify a retention period for documents and items that are subject to this policy, choose **Enable Retention**, and then specify the retention period and the actions that you want to occur when the items expire.
 
@@ -97,12 +97,12 @@ Adding an information management policy to a content type makes it easy to assoc
 
    3. The **Start a workflow** option is available only if you are defining a policy for a list, library, or content type that already has a workflow associated with it. You will then be given a choice of workflows to choose from.
 
-   4. In the **Recurrence** section, select **Repeat this stage's action…**and enter how often you want the action to reoccur.
+   4. In the **Recurrence** section, select **Repeat this stage's action…**, and then enter how often you want the action to reoccur.
 
       > [!NOTE]
       >  This option is only available if the action you selected can be repeated. For example, you cannot set recurrence for the action **Permanently Delete**.
 
-   5. Chose **OK**.
+   5. Choose **OK**.
 
 8. To enable auditing for the documents and items that are subject to this policy, choose **Enable Auditing**, and then specify the events you want to audit.
 
@@ -186,7 +186,7 @@ You need at least the Manage Lists permission to change the information manageme
 
 3. Under **Permissions and Management**\> **Information management policy settings**.
 
-   ![Information management policies link on settings page for document library](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
+   ![Information management policies link on settings page for document library.](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
 
 4. On the Information Management Policy Settings page, make sure that the source of retention for the list or library is set to Library and Folders.
 
@@ -211,7 +211,7 @@ You need at least the Manage Lists permission to change the information manageme
 
 8. The **Start a workflow** option is available only if you are defining a policy for a list, library, or content type that already has a workflow associated with it. You will then be given a choice of workflows to choose from.
 
-9. Under **Recurrence**, choose **Repeat this stage's action…**and enter how often you want the action to reoccur.
+9. Under **Recurrence**, choose **Repeat this stage's action…** and enter how often you want the action to reoccur.
 
    > [!NOTE]
    >  This option is only available if the action you selected can be repeated. For example, you cannot set recurrence for the action **Permanently Delete**.
@@ -223,7 +223,7 @@ You need at least the Manage Lists permission to change the information manageme
 
 If information management policies have already been created for your site as site collection policies, you can apply one of the policies to a content type. By doing this, you can apply the same policy to multiple content types in a site collection that do not share the same parent content type.
 
- If you want to apply policies to multiple content types in a site collection, and you have a Managed Metadata Service configured, you can use Content Type Publishing to publish out information management polices to multiple site collections. See the section [Apply a policy across site collections](#apply-a-policy-across-site-collections) for more information.
+ If you want to apply policies to multiple content types in a site collection, and you have a Managed Metadata Service configured, you can use Content Type Publishing to publish out information management policies to multiple site collections. See the section [Apply a policy across site collections](#apply-a-policy-across-site-collections) for more information.
 
 1. Navigate to the list or library that contains the content type to which you want to apply a policy.
 
@@ -233,7 +233,7 @@ If information management policies have already been created for your site as si
 
 3. Under **Permissions and Management** \> **Information management policy settings**.
 
-   ![Information management policies link on settings page for document library](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
+   ![Information management policies link on settings page for document library.](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
 
 4. Verify that the policy source is set to **Content Types**, and under **Content Type Policies** select the content type you want to apply the policy to.
 
@@ -268,7 +268,7 @@ You can define an information management policy and then create a template from 
 
 2. On the Site Settings page, under **Site Collection Administration** \> **Content Type Policy Templates**.
 
-   ![Content Type Policy Template link on Site Settings page](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+   ![Content Type Policy Template link on Site Settings page.](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
 
 3. Choose the policy you want to export \> scroll to the bottom \> **Export**.
 

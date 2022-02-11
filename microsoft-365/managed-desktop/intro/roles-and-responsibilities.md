@@ -3,11 +3,11 @@ title: Microsoft Managed Desktop roles and responsibilities
 description: This article describes the roles and responsibilities provided by Microsoft for Microsoft Managed Desktop. 
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
-ms.localizationpriority: normal
+author: tiaraquan
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ---
 

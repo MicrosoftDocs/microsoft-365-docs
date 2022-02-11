@@ -9,7 +9,7 @@ ms.collection:
 - M365-security-compliance
 ms.prod: microsoft-365-enterprise
 ms.custom: seo-marvel-jun2020
-localization_priority: Priority
+ms.localizationpriority: high
 description: Learn how financial services institutions can maintain financial security compliance and effectively collaborate using Microsoft 365 and Teams.
 f1.keywords: NOCSH
 ---
@@ -48,7 +48,7 @@ The following downloadable illustrations supplement this article. Woodgrove Bank
 
 | Item | Description |
 |:-----|:-----|
-|[![Model poster: Microsoft 365 information protection and compliance capabilities](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/>English: [Download as a PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japanese: [Download as a PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)<br/> Updated November 2020|Includes: <ul><li>  Microsoft information protection and data loss prevention</li><li>Retention policies and retention labels </li><li>Information barriers</li><li>Communication compliance</li><li>Insider risk</li><li>Third-party data ingestion</li>|
+|[![Model poster: Microsoft 365 information protection and compliance capabilities.](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/>English: [Download as a PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> Japanese: [Download as a PDF](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [Download as a Visio](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)<br/> Updated November 2020|Includes: <ul><li>  Microsoft information protection and data loss prevention</li><li>Retention policies and retention labels </li><li>Information barriers</li><li>Communication compliance</li><li>Insider risk</li><li>Third-party data ingestion</li>|
 
 
 ## Empower organizational and employee productivity by using Microsoft 365 and Teams
@@ -70,7 +70,7 @@ Teams can provide a collaboration space to securely store sensitive client data 
 
 Another common scenario is to use Teams as a "virtual data room" to securely collaborate, including storing and managing documents. Team members and syndicates within investment banking, asset management, or private equity firms can securely collaborate on a deal or investment. Cross-functional teams are often involved in planning and fulfilling such deals, and the ability to securely share data and conduct conversations is a core requirement. Securely sharing related documents with external investors is also a key requirement. Teams provides a secure and fully auditable location from which to centrally store, protect, and share investment data.
 
-![A group of office workers in a meeting discuss images on a large scree](../media/m365cO19-ent-dell-latitude13-5951.jpg)
+![A group of office workers in a meeting discuss images on a large scree.](../media/m365cO19-ent-dell-latitude13-5951.jpg)
  
 ### Teams: Improve collaboration and reduce compliance risk
 
@@ -160,7 +160,7 @@ Identity Protection uses knowledge that Microsoft has acquired from its position
 
 Identity Protection helps organizations automatically protect against identity compromise by taking advantage of cloud intelligence powered by advanced detection based on heuristics, user and entity behavior analytics (UEBA), and machine learning (ML) across the Microsoft ecosystem.
 
-![Five information workers watch as another gives a presentation](../media/win17-15021-00-n9.jpg)
+![Five information workers watch as another gives a presentation.](../media/win17-15021-00-n9.jpg)
  
 ## Identify sensitive data and prevent data loss
 Microsoft 365 allows all organizations to identify sensitive data within the organization through a combination of powerful capabilities, including:
@@ -172,7 +172,7 @@ Microsoft 365 allows all organizations to identify sensitive data within the org
 
 In addition, Microsoft provides "trainable classifiers" that use machine-learning models to identify sensitive data based on the content, as opposed to simply through pattern matching or by the elements within the content. A classifier learns how to identify a type of content by looking at numerous examples of the content to be classified. Training a classifier begins by giving it examples of content in a particular category. After it learns from those examples, the model is tested by giving it a mix of matching and non-matching examples. The classifier predicts whether a given example falls into the category or not. A person then confirms the results, sorting the positives, negatives, false positives, and false negatives to help increase the accuracy of the classifier's predictions. When the trained classifier is published, it processes content in Microsoft SharePoint Online, Exchange Online, and OneDrive for Business and automatically classifies the content.
 
-Applying sensitivity labels to documents and emails embeds metadata that identifies the chosen sensitivity within the object. The sensitivity then travels with the data. So even if a labeled document is stored on a user's desktop or within an on-premises system, it's still protected. This functionality enables other Microsoft 365 solutions, such as Microsoft Cloud App Security or network edge devices, to identify sensitive data and automatically enforce security controls. Sensitivity labels have the added benefit of educating employees about which data within an organization is considered sensitive and how to handle that data when they receive it.
+Applying sensitivity labels to documents and emails embeds metadata that identifies the chosen sensitivity within the object. The sensitivity then travels with the data. So even if a labeled document is stored on a user's desktop or within an on-premises system, it's still protected. This functionality enables other Microsoft 365 solutions, such as Microsoft Defender for Cloud Apps or network edge devices, to identify sensitive data and automatically enforce security controls. Sensitivity labels have the added benefit of educating employees about which data within an organization is considered sensitive and how to handle that data when they receive it.
 
 **[Office 365 Data Loss Prevention (DLP)](../compliance/dlp-learn-about-dlp.md)** automatically identifies documents, emails, and conversations that contain sensitive data by scanning them for sensitive data and then enforcing policy on those objects. Policies are enforced on documents in SharePoint and OneDrive for Business. They're also enforced when users send email, and in Teams chats and channel conversations. Policies can be configured to look for keywords, sensitive data types, retention labels, and whether data is shared within the organization or externally. Controls are provided to help organizations fine-tune DLP policies to reduce false positives. When sensitive data is found, customizable policy tips can be displayed to users within Microsoft 365 applications to inform them that their content contains sensitive data and then propose corrective actions. Policies can also prevent users from accessing documents, sharing documents, or sending emails that contain certain types of sensitive data. Microsoft 365 supports more than 100 built-in sensitive data types. Organizations can configure custom sensitive data types to meet their policies.
 
@@ -182,7 +182,7 @@ The signals generated by and fed to Identity Protection can also be fed into too
 
 Identity Protection helps organizations automatically protect against identity compromise by taking advantage of cloud intelligence powered by advanced detections based on heuristics, user and entity behavior analytics, and machine learning across the Microsoft ecosystem.
 
-![An information worker is pictured in front of a large array of monitors](../media/clo1718-portrait-006.jpg)
+![An information worker is pictured in front of a large array of monitors.](../media/clo1718-portrait-006.jpg)
 
 ## Defend the fortress
 
@@ -195,7 +195,7 @@ Security services from Microsoft 365 are powered by the Intelligent Security Gra
 
 [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) is a unified endpoint security platform for preventative protection, post-breach detection, and automated investigation and response. Defender for Endpoint provides built-in capabilities for discovery and protection of sensitive data on enterprise endpoints.
 
-[Microsoft Cloud App Security (MCAS)](/cloud-app-security/what-is-cloud-app-security) enables organizations to enforce policies at a granular level and to detect behavioral anomalies based on individual user profiles that are automatically defined by using machine learning. MCAS policies can build on Azure Conditional Access policies to protect sensitive company assets by evaluating additional signals related to user behavior and properties of the documents that are accessed. Over time, MCAS learns what's typical behavior for each employee with regard to the data they access and the applications they use. Based on learned behavior patterns, policies can then automatically enforce security controls if an employee acts outside of that behavioral profile. For example, if an employee typically accesses an accounting application from 9 AM to 5 PM Monday through Friday but suddenly starts to access that application heavily on a Sunday evening, MCAS can dynamically enforce policies to require the user to reauthenticate. This helps ensure that the user's credentials haven't been compromised. MCAS can also help identify "shadow IT" in the organization, which helps information security teams ensure that employees are using sanctioned tools when they work with sensitive data. Finally, MCAS can protect sensitive data anywhere in the Cloud, even outside the Microsoft 365 platform. It allows organizations to sanction (or unsanction) specific external Cloud apps, controlling access and monitoring usage.
+[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) enables organizations to enforce policies at a granular level and to detect behavioral anomalies based on individual user profiles that are automatically defined by using machine learning. Defender for Cloud Apps policies can build on Azure Conditional Access policies to protect sensitive company assets by evaluating additional signals related to user behavior and properties of the documents that are accessed. Over time, Defender for Cloud Apps learns what's typical behavior for each employee with regard to the data they access and the applications they use. Based on learned behavior patterns, policies can then automatically enforce security controls if an employee acts outside of that behavioral profile. For example, if an employee typically accesses an accounting application from 9 AM to 5 PM Monday through Friday but suddenly starts to access that application heavily on a Sunday evening, Defender for Cloud Apps can dynamically enforce policies to require the user to reauthenticate. This helps ensure that the user's credentials haven't been compromised. Defender for Cloud Apps can also help identify "shadow IT" in the organization, which helps information security teams ensure that employees are using sanctioned tools when they work with sensitive data. Finally, Defender for Cloud Apps can protect sensitive data anywhere in the Cloud, even outside the Microsoft 365 platform. It allows organizations to sanction (or unsanction) specific external Cloud apps, controlling access and monitoring usage.
  
 [Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. AATP enables SecOp analysts and security professionals detect advanced attacks in hybrid environments to:
 * Monitor users, entity behavior, and activities by using learning-based analytics.
@@ -327,7 +327,7 @@ Organizations that deal with sensitive data and put a strict emphasis on securit
 
 Microsoft 365 provides the tenant [restrictions](/azure/active-directory/manage-apps/tenant-restrictions) the capability to address this challenge. Tenant restrictions can be configured to restrict employee access to external Office 365 enterprise tenants using rogue identities (identities that aren't part of your corporate directory). Today, tenant restrictions apply across the tenant, allowing access to only those tenants that appear on the list that you configure. Microsoft is continuing to develop this solution to increase granularity of control and enhance the protections it provides.
 
-![GRAPHIC](../media/clo1717-corporate-office-001.jpg)
+![GRAPHIC.](../media/clo1717-corporate-office-001.jpg)
  
 ## Conclusion
 

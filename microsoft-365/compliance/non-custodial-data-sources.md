@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
@@ -31,7 +31,7 @@ Follow these steps to add and manage non-custodial data sources in an Advanced e
 
 3. On the **New non-custodial data locations** flyout page, choose the data sources that you want to add to the case. You can add multiple mailboxes and sites by expanding the **SharePoint** or **Exchange** sections and then clicking **Edit**.
 
-   ![Add SharePoint sites and Exchange mailboxes as non-custodial data sources](../media/NonCustodialDataSources1.png)
+   ![Add SharePoint sites and Exchange mailboxes as non-custodial data sources.](../media/NonCustodialDataSources1.png)
 
    - **SharePoint** - Click **Edit** to add sites. Select a site in the list or you can search for a site by typing the URL of the site in the search bar. Select the sites that you want to add as non-custodian data sources and click **Add**.
 
@@ -46,7 +46,7 @@ Follow these steps to add and manage non-custodial data sources in an Advanced e
 
    Each non-custodial data source that you added is listed on the **Data sources** page. Non-custodial data sources are identified by the **Data location** value in the **Source type** column.
 
-   ![Non-custodial data sources on the Data sources tab](../media/NonCustodialDataSources2.png)
+   ![Non-custodial data sources on the Data sources tab.](../media/NonCustodialDataSources2.png)
 
 After you add non-custodial data sources to the case, a job named *Reindexing non-custodial data* is created and displayed on the **Jobs** tab of the case. After the job is created, the Advanced indexing process in initiated and the data sources are reindexed.
 
@@ -60,7 +60,7 @@ After you place a hold on a non-custodial data source, a hold policy that contai
 
    The flyout page display information and statistics about the non-custodial data sources on hold.
 
-   ![The flyout page for non-custodial data sources hold displays statistics](../media/NonCustodialDataSourcesHoldFlyout.png)
+   ![The flyout page for non-custodial data sources hold displays statistics.](../media/NonCustodialDataSourcesHoldFlyout.png)
 
 3. Click **Edit hold** to view the non-custodial data sources placed on hold and perform the following management tasks:
 

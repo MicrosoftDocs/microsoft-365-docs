@@ -8,8 +8,8 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
-ms.collection: 
+ms.localizationpriority: medium
+ms.collection: Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
@@ -118,7 +118,7 @@ Today both Exchange Admins and Global Admins can deploy add-ins from Integrated 
 
 ### Before you begin
 
-Deployment of add-ins requires that the users are using Microsoft 365 Enterprise licenses (E3/E5/F3) or Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium). The users also need to be signed into Office using their organizational ID) and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in, or federated to Azure Active Directory. 
+Deployment of add-ins requires that the users are using Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium), Office 365 Enterprise licenses (E1/E3/E5/F3), or Microsoft 365 Enterprise licenses (E3/E5/F3). The users also need to be signed into Office using their organizational ID) and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in, or federated to Azure Active Directory. 
 
 Deployment doesn't support the following: 
 
@@ -131,11 +131,11 @@ Deployment doesn't support the following:
 ### Office Requirements 
 
 For Word, Excel, and PowerPoint add-ins, your users must be using one of the following: 
-- On a Windows device, Version 1704 or later of Microsoft 365 Enterprise licenses (E3/E5/F3) or Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium). 
+- On a Windows device, Version 1704 or later of Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium), Office 365 Enterprise licenses (E1/E3/E5/F3), or Microsoft 365 Enterprise licenses (E3/E5/F3). 
 - On a Mac, Version 15.34 or later. 
 
 For Outlook, your users must be using one of the following: 
-- Version 1701 or later of Microsoft 365 Enterprise licenses (E3/E5/F3) or Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium). 
+- Version 1701 or later of Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium), Office 365 Enterprise licenses (E1/E3/E5/F3), or Microsoft 365 Enterprise licenses (E3/E5/F3). 
 - Version 1808 or later of Office Professional Plus 2019 or Office Standard 2019. 
 - Version 16.0.4494.1000 or later of Office Professional Plus 2016 (MSI) or Office Standard 2016 (MSI).
     > [!NOTE]
@@ -160,17 +160,17 @@ The deployment of add-in is currently supported to the majority of groups suppor
 
 In the following example, Sandra, Sheila, and the Sales Department group are assigned to an add-in. Because the West Coast Sales Department is a nested group, Bert and Fred aren't assigned to an add-in. 
 
-![Diagram of sales department](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
+![Diagram of sales department.](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
 ### Find out if a group contains nested groups
 
 The easiest way to detect if a group contains nested groups is to view the group contact card within Outlook. If you enter the group name within the **To** field of an email and then select the group name when it resolves, it will show you if it contains users or nested groups. In the example below, the **Members** tab of the Outlook contact card for the Test Group shows no users and only two sub groups. 
 
-![Members tab of Outlook contact card](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![Members tab of Outlook contact card.](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
 You can do the opposite query by resolving the group to see if it's a member of any group. In the example below, you can see under the <b>Membership</b> tab of the Outlook contact card that Sub Group 1 is a member of the Test Group. 
 
-![Membership tab of the Outlook contact card](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![Membership tab of the Outlook contact card.](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
 Note that you can use the Azure Active Directory Graph API to run queries to find the list of groups within a group. For more information, see [Operations on groups | Graph API reference](/previous-versions/azure/ad/graph/api/groups-operations). 
 

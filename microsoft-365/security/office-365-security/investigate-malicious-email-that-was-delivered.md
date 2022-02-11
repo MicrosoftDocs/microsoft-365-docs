@@ -10,7 +10,7 @@ ms.date: 12/16/2020
 audience: ITPro
 ms.topic: article
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
   - MOE150
@@ -18,7 +18,8 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection: 
   - M365-security-compliance
 description: Learn how to use threat investigation and response capabilities to find and investigate malicious email.
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -59,32 +60,30 @@ To perform certain actions, such as viewing message headers or downloading email
 
 |Activity|Role group|Preview role needed?|
 |---|---|---|
-|Use Threat Explorer (and Real-time detections) to analyze threats |Global Administrator <p> Security Administrator <p> Security Reader|No|
-|Use Threat Explorer (and Real-time detections) to view headers for email messages as well as preview and download quarantined email messages|Global Administrator <p> Security Administrator <p> Security Reader|No|
-|Use Threat Explorer to view headers, preview email (only in the email entity page) and download email messages delivered to mailboxes|Global Administrator <p> Security Administrator <p> Security Reader <p> Preview|Yes|
+|Use Threat Explorer (and Real-time detections) to analyze threats|Global Administrator <p> Security Administrator <p> Security Reader|No|
+|Use Threat Explorer (and Real-time detections) to view headers for email messages as well as preview and download quarantined email messages|Global Administrator <p> Security Administrator <p> Security Reader|No|
+|Use Threat Explorer to view headers, preview email (only in the email entity page) and download email messages delivered to mailboxes|Global Administrator <p> Security Administrator <p> Security Reader <p> Preview|Yes|
 |
 
 > [!NOTE]
-> *Preview* is a role, not a role group. The Preview role must be added to an existing role group in the Microsoft 365 Defender portal  (<https://security.microsoft.com>). Go to **Permissions**, and then either edit an existing role group or add a new role group with the **Preview** role assigned.
+> **Preview** is a role, not a role group. The Preview role must be added to an existing role group or a new role group in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
 >
-> The Global Administrator role is assigned the Microsoft 365 admin center (<https://admin.microsoft.com>), and the Security Administrator and Security Reader roles are assigned in Microsoft 365 Defender (<https://security.microsoft.com>). To learn more about roles and permissions, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
+> The Global Administrator role is assigned the Microsoft 365 admin center at <https://admin.microsoft.com>. The Security Administrator and Security Reader roles are assigned in Microsoft 365 Defender portal.
 
-We understand previewing and downloading email are sensitive activities, and so we auditing is enabled for these. Once an admin performs these activities on emails, audit logs are generated for the same and can be seen in the Microsoft 365 Defender portal (<https://security.microsoft.com>). Go to **Audit** \> **Search** tab, and filter on the admin name in **Users** box. The filtered results will show activity **AdminMailAccess**. Select a row to view details in the **More information** section about previewed or downloaded email.
+We understand previewing and downloading email are sensitive activities, so auditing is enabled for these activities. Once an admin performs these activities on email, audit logs are generated for the same and can be seen in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Audit** \> **Search** tab, and filter on the admin name in **Users** box. The filtered results will show activity **AdminMailAccess**. Select a row to view details in the **More information** section about previewed or downloaded email.
 
 ## Find suspicious email that was delivered
 
 Threat Explorer is a powerful report that can serve multiple purposes, such as finding and deleting messages, identifying the IP address of a malicious email sender, or starting an incident for further investigation. The following procedure focuses on using Explorer to find and delete malicious email from recipient's mailboxes.
 
 > [!NOTE]
-> Default searches in Explorer don't currently include delivered items that were removed from the cloud mailbox by zero-hour auto protection (ZAP). This limitation applies to all views (for example, the **Email \> Malware** or **Email \> Phish** views). To include items removed by ZAP, you need to add a **Delivery action** set to include **Removed by ZAP**. If you include all options, you'll see all delivery action results, including items removed by ZAP.
+> Default searches in Explorer don't currently include delivered items that were removed from the cloud mailbox by zero-hour auto purge (ZAP). This limitation applies to all views (for example, the **Email \> Malware** or **Email \> Phish** views). To include items removed by ZAP, you need to add a **Delivery action** set to include **Removed by ZAP**. If you include all options, you'll see all delivery action results, including items removed by ZAP.
 
-1. Open the Microsoft 365 Defender portal <https://security.microsoft.com> and sign in using your work or school account for Office 365.
-
-2. Go to **Threat Explorer** by choosing **Email & collaboration** \> **Explorer** in the left navigation. To go to **Threat Explorer** directly, use <https://security.microsoft.com/threatexplorer>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer** . To go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
 
    On the **Explorer** page, the **Additional actions** column shows admins the outcome of processing an email. The **Additional actions** column can be accessed in the same place as **Delivery action** and **Delivery location**. Special actions might be updated at the end of Threat Explorer's email timeline, which is a new feature aimed at making the hunting experience better for admins.
 
-3. In the **View** menu, choose **Email** \> **All email** from the drop down list.
+2. In the **View** menu, choose **Email** \> **All email** from the drop down list.
 
     ![Threat explorer View menu, and Email - Malware, Phish, Submissions and All Email options, also Content - Malware.](../../media/tp-InvestigateMalEmail-viewmenu.png)
 
@@ -118,7 +117,7 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
 
     - **Delivered** – email was delivered to inbox or folder of a user and the user can directly access it.
     - **Junked** (Delivered to junk)– email was sent to either user's junk folder or deleted folder, and the user has access to email messages in their Junk or Deleted folder.
-    - **Blocked** – any email messages that are quarantined, that failed, or were dropped. (This is completely inaccessible by the user.)
+    - **Blocked** – any email messages that are quarantined, that failed, or were dropped.
     - **Replaced** – any email where malicious attachments are replaced by .txt files that state the attachment was malicious
 
     **Delivery location**: The Delivery location filter is available in order to help admins understand where suspected malicious mail ended-up and what actions were taken on it. The resulting data can be exported to spreadsheet. Possible delivery locations are:
@@ -173,7 +172,7 @@ Delivery action is the action taken on an email due to existing policies or dete
 
 - **Delivered** – email was delivered to inbox or folder of a user and the user can directly access it.
 - **Junked** – email was sent to either user's junk folder or deleted folder, and the user has access to email messages in their Junk or Deleted folder.
-- **Blocked** – any email messages that are quarantined, that failed, or were dropped. (This is completely inaccessible by the user.)
+- **Blocked** – any email messages that are quarantined, that failed, or were dropped.
 - **Replaced** – any email where malicious attachments are replaced by .txt files that state the attachment was malicious.
 
 Delivery location shows the results of policies and detections that run post-delivery. It's linked to a Delivery Action. This field was added to give insight into the action taken when a problem mail is found. Here are the possible values of delivery location:

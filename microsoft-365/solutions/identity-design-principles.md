@@ -7,7 +7,7 @@ manager: bcarter
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
@@ -22,7 +22,7 @@ In this article, [Alex Shteynberg](https://www.linkedin.com/in/alex-shteynberg/)
 
 ## About the author
 
-![Alex Shteynberg photo](../media/solutions-architecture-center/identity-and-beyond-alex-shteynberg.jpg)
+![Alex Shteynberg photo.](../media/solutions-architecture-center/identity-and-beyond-alex-shteynberg.jpg)
 
 I'm a Principal Technical Architect at the New York [Microsoft Technology Center](https://www.microsoft.com/mtc?rtc=1). I mostly work with large customers and complex requirements. My viewpoint and opinions are based on these interactions and may not apply to every situation. However, in my experience, if we can help customers with the most complex challenges, we can help all customers.
 
@@ -45,7 +45,7 @@ Don't skip this section. I often find that I must step-back to these topics, eve
 Alas, language isn't a precise tool. We quite often use the same word to mean different concepts or different words to mean the same concept. I often use this diagram below to establish some baseline terminology and "hierarchy model."
 <br><br>
 
-![Illustration of tenant, subscription, service, and data](../media/solutions-architecture-center/Identity-and-beyond-tenant-level.png)
+![Illustration of tenant, subscription, service, and data.](../media/solutions-architecture-center/Identity-and-beyond-tenant-level.png)
 
 <br>
 
@@ -103,7 +103,7 @@ Some customers enable federation + PHS mainly for:
 
 I often walk customers through client authentication flow to clarify some misconceptions. The result looks like the picture below, which isn't as good as the interactive process of getting there.
 
-![Example whiteboard conversation](../media/solutions-architecture-center/identity-beyond-whiteboard-example.png)
+![Example whiteboard conversation.](../media/solutions-architecture-center/identity-beyond-whiteboard-example.png)
 
 This type of whiteboard drawing illustrates where security policies are applied within the flow of an authentication request. In this example, policies enforced through Active Directory Federation Service (AD FS) are applied to the first service request, but not subsequent service requests. This is at least one reason to move security controls to the cloud as much as possible.
 
@@ -117,7 +117,7 @@ Per [Wikipedia](https://en.wikipedia.org/wiki/Authorization), "to authorize" is 
 
 The policy engine of Azure AD is implemented using [Conditional Access policies](/azure/active-directory/conditional-access/overview). This system depends on information from a variety of other threat detection systems to make dynamic decisions. A simple view would be something like the following illustration:
 
-![Policy engine in Azure AD](../media/solutions-architecture-center/identity-and-beyond-illustration-3.png)
+![Policy engine in Azure AD.](../media/solutions-architecture-center/identity-and-beyond-illustration-3.png)
 
 Combining all these signals together allows for dynamic policies like these:
 
@@ -131,11 +131,11 @@ If you agree with this expanded definition of authorization, then you need to im
 - [Microsoft Defender for Identity](/azure-advanced-threat-protection/)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Microsoft Defender for Office 365](../security/office-365-security/defender-for-office-365.md)
-- [Microsoft Cloud App Security](/cloud-app-security/) (MCAS)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/) (Defender for Cloud Apps)
 - [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md)
 - [Microsoft Intune](/mem/intune/)
 - [Microsoft Information Protection](../compliance/information-protection.md) (MIP)
-- [Azure Sentinel](/azure/sentinel/)
+- [Microsoft Sentinel](/azure/sentinel/)
 
 Of course, in addition to Azure AD, various services and applications have their own specific authorization models. Some of these are discussed later in the delegation section.
 
@@ -147,11 +147,11 @@ Azure AD has detailed [audit and reporting](/azure/active-directory/reports-moni
 
 Don't Panic! This does not mean Exchange is being deprecated (or SharePoint, and so on). It is still a core service. What I mean is, for quite some time now, technology providers have been transitioning user experiences (UX) to encompass components of multiple services. In Microsoft 365, a simple example is "[modern attachments](https://support.office.com/article/Attach-files-or-insert-pictures-in-Outlook-email-messages-BDFAFEF5-792A-42B1-9A7B-84512D7DE7FC)" where attachments to email are stored in SharePoint Online or OneDrive for Business.
 
-![Attaching a file to an email](../media/solutions-architecture-center/modern-attachments.png)
+![Attaching a file to an email.](../media/solutions-architecture-center/modern-attachments.png)
 
 Looking at the Outlook client you can see many services that are "connected" as part of this experience, not just Exchange. This includes Azure AD, Microsoft Search, Apps, Profile, compliance, and Office 365 groups.
 
-![Outlook interface with callouts](../media/solutions-architecture-center/identity-and-beyond-conceptual-screenshot.png)
+![Outlook interface with callouts.](../media/solutions-architecture-center/identity-and-beyond-conceptual-screenshot.png)
 
 Read about [Microsoft Fluid Framework](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-ignite-blog-microsoft-fluid-framework-preview/ba-p/978268) for preview of upcoming capabilities. In preview now, I can read and reply to Teams conversations directly in Outlook. In fact, the [Teams client](https://products.office.com/microsoft-teams/download-app) is one of the more prominent examples of this strategy.
 
@@ -226,7 +226,7 @@ Sometimes scenarios call for adding an external user to a role (see the multi-te
 
 In a sense, these are an evolution of the Exchange role groups model. However, Exchange Online has its own [role group management](/exchange/permissions-exo) interface. Some role groups in Exchange Online are locked and managed from Azure AD or the Security & Compliance Center, but others might have the same or similar names and are managed in Exchange Online (adding to the confusion). I recommend you avoid using the Exchange Online user interface unless you need scopes for Exchange management.
 
-You can't create custom roles. Roles are defined by services created by Microsoft and will grow as new services are introduced. This is similar in concept to [roles defined by applications](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) in Azure AD. When new services are enabled, often new role groups need to be created in order to grant or delegate access to these (for example, [insider risk management](../compliance/insider-risk-management-configure.md)).
+You can't create custom roles. Roles are defined by services created by Microsoft and will grow as new services are introduced. This is similar in concept to [roles defined by applications](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) in Azure AD. When new services are enabled, often new role groups need to be created in order to grant or delegate access to these (for example, [insider risk management](../compliance/insider-risk-management-configure.md).
 
 These role groups also require direct membership and cannot contain Azure AD groups. Unfortunately, today these role groups are not supported by Azure AD PIM. Like Azure AD roles, I tend to recommend management of these through APIs or a partner governance product like Saviynt, or others.
 
@@ -264,7 +264,7 @@ As stated earlier, many customers are looking to achieve a more granular delegat
 - **MEM/Intune** - (/mem/intune/fundamentals/role-based-access-control)
 - **Microsoft Defender for Endpoint** - (/windows/security/threat-protection/microsoft-defender-atp/user-roles)
 - **Microsoft 365 Defender** - (../security/defender/m365d-permissions.md)
-- **Microsoft Cloud App Security** - (/cloud-app-security/manage-admins)
+- **Microsoft Defender for Cloud Apps** - (/cloud-app-security/manage-admins)
 - **Stream** - (/stream/assign-administrator-user-role)
 - **Information barriers** - (../compliance/information-barriers.md)
 
@@ -276,24 +276,24 @@ Examples of Microsoft 365 logs that are accessed through other APIs include the 
 
 - [Azure AD](/azure/azure-monitor/platform/diagnostic-settings) (activities not related to Office 365)
 - [Exchange Message Tracking](/powershell/module/exchange/get-messagetrace)
-- Threat/UEBA Systems discussed above (for example, Azure AD Identity Protection, Microsoft Cloud App Security, Microsoft Defender for Endpoint, and so on)
+- Threat/UEBA Systems discussed above (for example, Azure AD Identity Protection, Microsoft Defender for Cloud Apps, Microsoft Defender for Endpoint, and so on)
 - [Microsoft information protection](../compliance/data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
 - [Microsoft Graph](https://graph.microsoft.com)
 
 It is important to first identify all log sources needed for a security and compliance program. Also note that different logs have different on-line retention limits.
 
-From the admin delegation perspective, most Microsoft 365 activity logs do not have a built-in RBAC model. If you have permission to see a log, then you can see everything in it. A common example of a customer requirement is: “I want to be able to query activity only for EU users” (or some other dimension). To achieve this requirement, we need to transfer logs to another service. In the Microsoft cloud, we recommend transferring it to either [Azure Sentinel](/azure/sentinel/overview) or [Log Analytics](/azure/azure-monitor/learn/quick-create-workspace).
+From the admin delegation perspective, most Microsoft 365 activity logs do not have a built-in RBAC model. If you have permission to see a log, then you can see everything in it. A common example of a customer requirement is: “I want to be able to query activity only for EU users” (or some other dimension). To achieve this requirement, we need to transfer logs to another service. In the Microsoft cloud, we recommend transferring it to either [Microsoft Sentinel](/azure/sentinel/overview) or [Log Analytics](/azure/azure-monitor/learn/quick-create-workspace).
 
 High level diagram:
 
-![diagram of log sources for a security and compliance program](../media/solutions-architecture-center/identity-beyond-illustration-4.png)
+![diagram of log sources for a security and compliance program.](../media/solutions-architecture-center/identity-beyond-illustration-4.png)
 
-The diagram above represents built-in capabilities to send logs to Event Hub and/or Azure Storage and/or Azure Log Analytics. Not all systems include this out-of-the-box yet. But there are other approaches to send these logs to the same repository. For example, see [Protecting your Teams with Azure Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/protecting-your-teams-with-azure-sentinel/ba-p/1265761).
+The diagram above represents built-in capabilities to send logs to Event Hub and/or Azure Storage and/or Azure Log Analytics. Not all systems include this out-of-the-box yet. But there are other approaches to send these logs to the same repository. For example, see [Protecting your Teams with Microsoft Sentinel](https://techcommunity.microsoft.com/t5/azure-sentinel/protecting-your-teams-with-azure-sentinel/ba-p/1265761).
 
 Combining all the logs into one storage location includes added benefit, such as cross-correlations, custom retention times, augmenting with data needed to support RBAC model, and so on. Once data is in this storage system, you can create a Power BI dashboard (or another type of visualization) with an appropriate RBAC model.
 
-Logs do not have to be directed to one place only. It might also be beneficial to integrate [Office 365 Logs with Microsoft Cloud App Security](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) or a custom RBAC model in [Power BI](../admin/usage-analytics/usage-analytics.md). Different repositories have different benefits and audiences.
+Logs do not have to be directed to one place only. It might also be beneficial to integrate [Office 365 Logs with Microsoft Defender for Cloud Apps](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) or a custom RBAC model in [Power BI](../admin/usage-analytics/usage-analytics.md). Different repositories have different benefits and audiences.
 
 It's worth mentioning that there is a very rich built-in analytics system for security, threats, vulnerabilities, and so on in a service called [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md).
 
@@ -312,7 +312,7 @@ It is important to understand relationships between various services in the same
 
 Azure Role-Based Access Control (RBAC) enables fine-grained access management for Azure. Using RBAC, you can manage access to resources by granting users the fewest permissions needed to perform their jobs. Details are out of scope for this document, but for more information on RBAC, see [What is role-based access control (RBAC) in Azure?](/azure/role-based-access-control/overview) RBAC is important but only part of the governance considerations for Azure. [Cloud Adoption Framework](/azure/cloud-adoption-framework/govern/) is a great starting point to learn more. I like how my friend, [Andres Ravinet](https://www.linkedin.com/in/andres-ravinet/), walks customers step by step though various components to decide on the approach. High-level view for various elements (not as good as the process to get to actual customer model) is something like this:
 
-![High-level view of Azure components for delegated administration](../media/solutions-architecture-center/identity-beyond-illustration-5.png)
+![High-level view of Azure components for delegated administration.](../media/solutions-architecture-center/identity-beyond-illustration-5.png)
 
 As you can see from above picture, many other services should be considered as part of the design (ex.: [Azure Policies](/azure/governance/policy/overview), [Azure Blueprints](/azure/governance/blueprints/overview), [Management Groups](/azure/governance/management-groups/), and so on).
 

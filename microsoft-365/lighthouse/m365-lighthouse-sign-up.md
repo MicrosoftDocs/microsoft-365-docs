@@ -1,19 +1,20 @@
 ---
 title: "Sign up for Microsoft 365 Lighthouse"
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-- M365-Lighthouse                         
+- M365-Lighthouse   
+- intro-get-started                      
 search.appverid: MET150
 description: "For Managed Service Providers (MSPs), learn how to sign up for Microsoft 365 Lighthouse."
 ---
@@ -61,5 +62,6 @@ description: "For Managed Service Providers (MSPs), learn how to sign up for Mic
 
 ## Related content
 
-[Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (article)\
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (article)   
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)   
+[Microsoft 365 Lighthouse and Microsoft Defender for Business](../security/defender-business/mdb-lighthouse-integration.md) (article)

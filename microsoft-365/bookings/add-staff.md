@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "Use this page to create your staff list and to manage staff member details such as name, phone number, and email address."
 ---
 
@@ -23,6 +23,9 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
 
 ## Steps
+
+> [!NOTE]
+> These steps are not yet available in the new Bookings experience.
 
 1. Go to the [Manage staff page](https://outlook.office.com/bookings/staff) and select **Add staff**
 
@@ -44,13 +47,13 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
 
 6. Select **Notify all staff via email when a booking assigned to them is created or changed** to enable staff emails. The following is an example email:
 
-    :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="A notification email from Bookings":::
+    :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="A notification email from Bookings.":::
 
 7. Select **Events on Office 365 calendar affect availability** if you want the free/busy information from staff members’ calendars to impact availability for bookings services through Bookings.
 
     For example, if a staff member has a team meeting or a personal appointment scheduled for 3pm on a Wednesday, Bookings will show that staff member as unavailable to be booked in that time slot. That time will appear as busy or tentative in the Bookings calendar view, as shown in the below example.
 
-    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="A view of a Bookings calendar":::
+    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="A view of a Bookings calendar.":::
 
 > [!IMPORTANT]
 > We highly recommend leaving this setting on (it is turned on by default) to avoid double-bookings and to optimize the availability of your staff members.
@@ -60,7 +63,7 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
     By deselecting this box, staff can be given custom hours that further limit when they can be booked. This is helpful for scenarios where a staff member may only be on site Tuesdays and Wednesdays, or they dedicate their mornings for one type of appointments, and their afternoons for other types.
 
     > [!NOTE]
-    > Only the first 31 staff members that you add to your staff page will appear when you assign staff members to a service.
+    > Bookings supports up to 100 staff members in a Bookings Calendar.
 
 ## Make a Bookings user a super user without adding them as Staff in Bookings
 
@@ -94,7 +97,7 @@ Here's an example PowerShell command to add Allie Bellew to the Contoso daycare 
 2. Then run this command:
 
     ```powershell
-    Add-RecipientPermission -Identity <bookingmailbox@emailaddress> -Trustee <adminusers@emailaddress> -AccessRights SendAs -Confirm:$false
+    Add-RecipientPermission -Identity "daycare@contoso.com" -Trustee "Allie Bellew" -AccessRights SendAs -Confirm:$false
     ```
 
 **Allie Bellew** now has administrator access, but doesn't appear as bookable staff in Bookings.

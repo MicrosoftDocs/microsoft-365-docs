@@ -9,11 +9,12 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
@@ -24,7 +25,7 @@ description: "Content explorer allows you to natively view labeled items."
 
 The data classification content explorer allows you to natively view the items that were summarized on the overview page.
 
-![content explorer collapsed screenshot](../media/data-classification-content-explorer-1.png)
+![content explorer collapsed screenshot.](../media/data-classification-content-explorer-1.png)
 
 ## Prerequisites
 
@@ -62,7 +63,7 @@ Access to content explorer is highly restricted because it lets you read the con
 > [!IMPORTANT]
 > These permissions supercede permissions that are locally assigned to the items, which allows viewing of the content. 
 
-There are two roles that grant access to content explorer and it is granted using the [Compliance Center](https://compliance.microsoft.com/permissions):
+There are two roles that grant access to content explorer and it is granted using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Microsoft 365 compliance center</a>:
 
 - **Content Explorer List viewer**: Membership in this role group allows you to see each item and its location in list view. The `data classification list viewer` role has been pre-assigned to this role group.
 
@@ -73,6 +74,25 @@ The account you use to access content explorer must be in one or both of the rol
 You can also assign either or both of the roles to a custom role group to tailor access to content explorer.
 
 A Global admin, can assign the necessary Content Explorer List Viewer, and Content Explorer Content Viewer role group membership.
+
+#### Roles and Role Groups in preview
+
+There are roles and role groups in preview that you can test out to fine tune your access controls.
+
+Here's a list of Microsoft Information Protection (MIP) roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Information Protection Admin
+- Information Protection Analyst
+- Information Protection Investigator
+- Information Protection Reader
+
+Here's a list of MIP role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Information Protection
+- Information Protection Admins
+- Information Protection Analysts
+- Information Protection Investigators
+- Information Protection Readers
 
 ## Content explorer
 
@@ -106,14 +126,14 @@ A [retention label](retention.md) allows you to define how long a labeled item i
 ### Export
 The **export** control will create a .csv file that contains a listing of whatever is showing in the **All locations** pane.
 
-![data classification export control](../media/data_classification_export_control.png)
+![data classification export control.](../media/data_classification_export_control.png)
 
 
 ### Search
 
 When you drill down into a location, such as an Exchange folder, or a SharePoint or OneDrive site, the **search** tool appears.
 
-![content explorer search tool](../media/data_classification_search_tool.png)
+![content explorer search tool.](../media/data_classification_search_tool.png)
 
 
 The scope of the search tool is what is displaying in the **All locations** pane and what you can search on varies depending on the selected location. 

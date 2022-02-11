@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
@@ -36,7 +36,7 @@ If your subscription was created on or after October 22, 2019, security defaults
 
 To enable security defaults in your Azure Active Directory (Azure AD) or to check to see if they're already enabled:
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> with Global admin credentials.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> with security administrator, Conditional Access administrator, or Global admin credentials.
 
 2. In the left pane, select **Show All,** and then under **Admin centers**, select **Azure Active Directory**.
 

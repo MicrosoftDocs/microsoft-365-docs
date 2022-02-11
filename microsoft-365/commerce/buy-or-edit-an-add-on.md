@@ -9,7 +9,7 @@ ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -65,7 +65,7 @@ You manage a traditional add-on by going to the subscription that contains it an
 
 To remove a standalone add-on subscription, you [cancel the subscription](subscriptions/cancel-your-subscription.md), just like any other subscription. Or you can [turn off Recurring billing](subscriptions/renew-your-subscription.md).
 
-You can’t remove a traditional add-on. If you want to remove a traditional add-on, [contact support for help](../business-video/get-help-support.md).
+You can’t remove a traditional add-on. If you want to remove a traditional add-on, contact support for help ([Get support](../admin/get-help-support.md).
   
 ## Related content
 

@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 search.appverid: 
@@ -18,8 +18,6 @@ description: "Learn how to remove a custom sensitive information type using Powe
 ---
 
 # Remove a custom sensitive information type using PowerShell
-
-
 
 In Compliance center PowerShell, there are two methods to remove custom sensitive information types:
 

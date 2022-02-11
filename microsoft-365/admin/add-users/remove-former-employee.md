@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -21,6 +21,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - m365solution-removeemployee
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -31,6 +32,9 @@ description: "Follow the steps in this solution to remove a former employee from
 # Overview: Remove a former employee and secure data
 
 A question we often get is, "What should I do to secure data and protect access when an employee leaves my organization?" This article series explains how to block access to Microsoft 365 so these user's can't sign in to Microsoft 365, the steps you should take to secure organization data, and how to allow other employees to access email and OneDrive data.
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Before you begin
 
@@ -45,6 +49,23 @@ To complete the steps in this series, you use these Microsoft 365 capabilities a
 |OneDrive and SharePoint |Give access to other users |
 |Outlook|Import pst files, add mailbox |
 |Active Directory|Remove users in hybrid environments |
+
+## Watch: Delete a user
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
+
+When an employee leaves the company, you'll need to remove them from Microsoft 365 for business. Before doing so, you should block them from accessing company files, preserve the documents they created, and perform several other admin tasks associated with removing a user.
+
+1. From the admin center, select **Users**, and choose **Active users**.
+1. Select the user you want to remove, and then select **Delete user**.
+1. Check the box to remove their license, and check the box to remove their email aliases.
+1. Check the box to give another user access to the former employee’s email, and choose **Select a user and set email options**.
+1. To remove associated email aliases, select **X** next to their aliases.
+1. Review the shared mailbox information, and select **Finish**.
+1. Confirm your options are set correctly, and choose **Assign and convert**.
+1. Review your results, and select **Close**.
+
+After you remove a user, you have up to 30 days to restore their account.
 
 ## Solution: Remove a former employee
 

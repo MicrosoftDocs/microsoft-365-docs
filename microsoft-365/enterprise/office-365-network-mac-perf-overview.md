@@ -2,12 +2,12 @@
 title: "Network connectivity in the Microsoft 365 Admin Center"
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 09/21/2020
+manager: scotv
+ms.date: 12/06/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection:
@@ -22,12 +22,12 @@ description: "Overview of network connectivity in the Microsoft 365 Admin Center
 The Microsoft 365 Admin Center now includes aggregated network connectivity metrics collected from your Microsoft 365 tenant and available to view only by administrative users in your tenant.
 
 > [!div class="mx-imgBorder"]
-> ![Network connectivity test tool](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
+> ![Network connectivity test tool.](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
 **Network assessments** and **network insights** are displayed in the Microsoft 365 Admin Center under **Health | Network connectivity**.
 
 > [!div class="mx-imgBorder"]
-> ![Network performance page](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
+> ![Network performance page.](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
 >[!NOTE]
 >Network connectivity in the Admin Center supports tenants in WW Commercial and Germany but not GCC Moderate, GCC High, DoD or China.
@@ -36,7 +36,7 @@ When you first navigate to the network performance page, you will have to config
 
 You may be asked to join the public preview for this feature on behalf of your organization. Acceptance usually happens immediately, after which you would see the network connectivity page.
 
-To access the network connectivity page, you must be an administrator for the organization within Microsoft 365. The Report Reader administrative role will have read access to this information. To configure locations and other elements of network connectivity an administrator must be part of a server administrator role such as the Service support admin role.
+To access the network connectivity page, you must be an administrator for the organization within Microsoft 365. The Report Reader administrative role will have read access to this information. To configure locations and other elements of network connectivity an administrator must have the Service Support Administrator role.
 
 ## Pre-requisites for network connectivity assessments to appear
 
@@ -58,7 +58,11 @@ Measurement samples and office locations should start to appear 24 hours after t
 
 For this option, neither Windows Location Services nor Wi-Fi are required. Your OneDrive for Windows version must be up-to-date and installed on at least one computer at the location.
 
-You also need to add locations in the **Locations page** or to import them from a CSV file. The locations added must include your office LAN subnet information.
+Make sure that you also add locations in the **locations page** or import those from a CSV file. The locations added must include your office LAN subnet information. In the dialog for adding or editing a location, you can specify a number of LAN subnets and a number of public egress IP subnets. The LAN subnets are required and one of them must match the LAN subnet attribute on a received network assessment for results to show up. Super nets are not supported so the LAN subnet must match exactly.
+
+Note that usually, LAN subnets are private IP address ranges as defined in RFC1918 such that the use of public IP addresses as the LAN subnets is likely to be incorrect. The dialog will show suggestions of LAN subnets that have been seen in recent network assessment tests for your organization so that you can choose.
+
+If you add public egress IP addresses, these are used as a secondary differentiator and are intended for when you have multiple sites using the same LAN subnet IP address ranges. To make sure your test results show up, you should start by leaving the public egress IP address ranges blank. If they are included then a test result must match both one of the LAN subnet IP address ranges and one of the public egress IP address ranges.
 
 This option allows you to have multiple offices defined within a city.
 
@@ -89,7 +93,7 @@ Complex enterprises with multiple office locations and non-trivial network perim
 ## Enterprise network connectivity challenges
 
 > [!div class="mx-imgBorder"]
-> ![Customer network to cloud](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
+> ![Customer network to cloud.](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
 
 Many enterprises have network perimeter configurations which have grown over time and are primarily designed to accommodate employee Internet web site access where most web sites are not known in advance and are untrusted. The prevailing and necessary focus is avoiding malware and phishing attacks from these unknown web sites. This network configuration strategy, while helpful for security purposes, can lead to degradation of Microsoft 365 user performance and user experience.
 
@@ -108,17 +112,17 @@ Microsoft has existing network measurements from several Office desktop and web 
 By default, approximate location information associated with the network measurements identify the city where client devices are located. The network assessment at each location is shown with color and the relative number of users at each location is represented by the size of the circle.
 
 > [!div class="mx-imgBorder"]
-> ![Network insights overview map](../media/m365-mac-perf/m365-mac-perf-overview-map.png)
+> ![Network insights overview map.](../media/m365-mac-perf/m365-mac-perf-overview-map.png)
 
 The overview page also shows the network assessment for the customer as a weighted average across all office locations.
 
 > [!div class="mx-imgBorder"]
-> ![Network assessment](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
+> ![Network assessment.](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
 You can view a table view of the locations where they can be filtered, sorted, and edited in the **Locations** tab. Locations with specific recommendations may also include an estimated potential latency improvement. This is calculated by taking the median latency of your organization users at the location and subtracting the median latency for all organizations in the same city.
 
 > [!div class="mx-imgBorder"]
-> ![Network insights locations](../media/m365-mac-perf/m365-mac-perf-locations.png)
+> ![Network insights locations.](../media/m365-mac-perf/m365-mac-perf-locations.png)
 
 ## Remote worker assessment and user connection metrics
 
@@ -133,7 +137,7 @@ Locations are auto classified as onsite or remote, however, you have the option 
 Selecting an office location opens a location-specific summary page showing details of the network egress that has been identified from measurements for that office location.
 
 > [!div class="mx-imgBorder"]
-> ![Network insights details by location](../media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
+> ![Network insights details by location.](../media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
 
 A map of the perimeter network for your organization users at the location is shown with some or all of these elements:
 
@@ -155,7 +159,7 @@ Location names can be customized when adding a new location or editing an existi
 The details tab on the office location page shows the specific measurement results that were used to come up with any insights, recommendations, and the network assessment. This is provided so that network engineers can validate the recommendations and factor in any constraints or specifics in their environment. You will also find the estimated number of users for collected samples at that office locations as well as the remote workers in that city.
 
 > [!div class="mx-imgBorder"]
-> ![Location-specific details](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
+> ![Location-specific details.](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
 
 ## Sharing network assessment data with Microsoft
 
@@ -172,7 +176,7 @@ In the CSV file, a discovered city location shows in the userEntered column as b
 1. Click the **Import** button just above the locations list. The **Import office locations** flyout will appear.
 
    > [!div class="mx-imgBorder"]
-   > ![CSV import message](../media/m365-mac-perf/m365-mac-perf-import.png)
+   > ![CSV import message.](../media/m365-mac-perf/m365-mac-perf-import.png)
 
 1. Click the **Download current office locations (.csv)** link to export the current locations list to a CSV file, and save it to your local hard disk. This will provide you with a correctly formatted CSV with column headings to which you can add locations. You can leave the existing exported locations as they are; they will not be duplicated when you import the updated CSV. If you wish to change the address of an existing location, it will be updated when you import the CSV. You cannot change the address of a discovered city.
 
@@ -191,12 +195,12 @@ In the CSV file, a discovered city location shows in the userEntered column as b
 1. The file will be automatically validated. If there are validation errors, you will see the error message: _There are some errors in the import file. Review the errors, correct the import file, and then try again._ Click the link **Open error details** for a list of specific field validation errors.
 
    > [!div class="mx-imgBorder"]
-   > ![CSV import error message](../media/m365-mac-perf/m365-mac-perf-import-error.png)
+   > ![CSV import error message.](../media/m365-mac-perf/m365-mac-perf-import-error.png)
 
 1. If there are no errors in the file, you will see the message: _The report is ready. Found x locations to add and x locations to update._ Click the **Import** button to upload the CSV.
 
    > [!div class="mx-imgBorder"]
-   > ![CSV import ready message](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
+   > ![CSV import ready message.](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
 ## FAQ
 
@@ -221,10 +225,10 @@ You require a  license that provides access to the Microsoft 365 admin center.
 
 ## Related topics
 
-[Microsoft 365 network insights (preview)](office-365-network-mac-perf-insights.md)
+[Microsoft 365 network insights](office-365-network-mac-perf-insights.md)
 
-[Microsoft 365 network assessment (preview)](office-365-network-mac-perf-score.md)
+[Microsoft 365 network assessment](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 connectivity test tool (preview)](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 connectivity test tool](office-365-network-mac-perf-onboarding-tool.md)
 
-[Microsoft 365 Network Connectivity Location Services (preview)](office-365-network-mac-location-services.md)
+[Microsoft 365 Network Connectivity Location Services](office-365-network-mac-location-services.md)

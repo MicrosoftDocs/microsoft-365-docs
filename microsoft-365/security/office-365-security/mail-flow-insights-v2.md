@@ -2,13 +2,13 @@
 title: Mail flow insights in the Mail flow dashboard
 f1.keywords: 
   - NOCSH
-ms.author: siosulli
-author: siosulli
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: overview
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Admins can learn about the insights and reports that are available in the Mail flow dashboard in the Security & Compliance Center.
 ms.custom: seo-marvel-apr2020
@@ -27,7 +27,7 @@ ms.prod: m365-security
 
 Admins can use Mail flow dashboard in the Security & Compliance Center to discover trends, insights, and take actions to fix issues related to mail flow in their organization.
 
-![The Mail flow dashboard in the Security & Compliance Center](../../media/mail-flow-dashboard-v2.png)
+![The Mail flow dashboard in the Security & Compliance Center.](../../media/mail-flow-dashboard-v2.png)
 
 The available insights are:
 

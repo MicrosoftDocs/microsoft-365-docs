@@ -12,12 +12,12 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365solution-overview
+  - m365solution-scenario
   - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
@@ -32,7 +32,7 @@ This article is [Step 2 of 2](eval-defender-identity-overview.md) in the process
 
 Use the following steps to set up your Microsoft Defender for Identity environment. 
 
-![Steps to enable Microsoft Defender for Identity in the Microsoft Defender evaluation environment](../../media/defender/m365-defender-identity-eval-enable-steps.png)
+![Steps to enable Microsoft Defender for Identity in the Microsoft Defender evaluation environment.](../../media/defender/m365-defender-identity-eval-enable-steps.png)
 
 - [Step 1. Set up the Defender for Identity Instance](#step-1-set-up-the-defender-for-identity-instance)
 - [Step 2. Install and configure the sensor](#step-2-install-and-configure-the-sensor)

@@ -9,7 +9,7 @@ ms.date: 12/13/2017
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.assetid: 1b1f8c8b-f3b4-439b-910c-cf2f89a07a15

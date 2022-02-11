@@ -9,7 +9,7 @@ ms.date: 10/31/2017
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-subscription-management 
 ms.custom:
 - Core_O365Admin_Migration
@@ -43,7 +43,7 @@ Automatic installation works best if the end user's computer is on Windows 10 Bu
     
 To determine if you have the Click-to-Run version of Office, in any Office app go to **File** \> **Account** ( **Office Account** in Outlook). If you see **Office Updates** as shown in the following figure, then the installation was done by using Click-to-Run. 
   
-![Screenshot of Office updates in Office app Account](../../media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
+![Screenshot of Office updates in Office app Account.](../../media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
   
  **Who benefits from having this feature**
   

@@ -8,7 +8,7 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
   - MET150
   - MOE150
@@ -18,6 +18,7 @@ ms.collection:
   - m365initiative-defender-office365
 ms.custom:
   - seo-marvel-apr2020
+  - intro-overview
 description: Microsoft Defender for Office 365 includes Safe Attachments, Safe Links, advanced anti-phishing tools, reporting tools and threat intelligence capabilities.
 ms.technology: mdo
 ms.prod: m365-security
@@ -44,6 +45,7 @@ Microsoft Defender for Office 365 safeguards your organization against malicious
 - **[Automated investigation and response capabilities](office-365-air.md)**: Save time and effort investigating and mitigating threats.
 
 ## Interactive guide to Microsoft Defender for Office 365
+
 In this interactive guide you'll learn how to safeguard your organization with Microsoft Defender for Office 365. You'll see how Defender for Office 365 can help you define protection policies, analyze threats to your organization, and respond to attacks.
 
 [Check out the interactive guide](https://aka.ms/MSDO-IG)
@@ -60,7 +62,7 @@ If you're new to Microsoft Defender for Office 365 or learn best by *doing*, you
   - Safe Links
   - Safe Attachments
 - Defend the workloads (ex. SharePoint Online, OneDrive, and Teams)
-- Protect with Zero-Hour auto purge
+- Protect with zero-hour auto purge (ZAP).
 
 To learn by doing, [click this link](protect-against-threats.md).
 
@@ -90,7 +92,7 @@ The following table summarizes what's included in each plan.
 
 ## Configure Microsoft Defender for Office 365 policies
 
-With Microsoft Defender for Office 365, your organization's security team can configure protection by defining policies in the Microsoft 365 Defender portal (go to <https://security.microsoft.com> \> **Email & collaboration** \> **Policies & rules** \> **Threat policies**).
+With Microsoft Defender for Office 365, your organization's security team can configure protection by defining policies in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Policies & rules** \> **Threat policies**. Or, you can go directly to the **Threat policies** page by using <https://security.microsoft.com/threatpolicy>.
 
 Learn more by watching [this video](https://www.youtube.com/watch?v=vivvTmWJ_3c).
 
@@ -111,7 +113,7 @@ The policies that are defined for your organization determine the behavior and p
 
 ## View Microsoft Defender for Office 365 reports
 
-Microsoft Defender for Office 365 includes [reports](view-reports-for-mdo.md) to monitor Defender for Office 365. You can access the reports in the Microsoft 365 Defender portal at **Reports** \> **Email & collaboration** \> **Email & collaboration reports** or directly at <https://security.microsoft.com/securityreports>.
+Microsoft Defender for Office 365 includes [reports](view-reports-for-mdo.md) to monitor Defender for Office 365. You can access the reports in theMicrosoft 365 Defender portal at <https://security.microsoft.com> at **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. Or, you can go directly to the **Email and collaboration reports** page using <https://security.microsoft.com/securityreports>.
 
 Reports update in real-time, providing you with the latest insights. These reports also provide recommendations and alert you to imminent threats. Predefined reports include the following:
 

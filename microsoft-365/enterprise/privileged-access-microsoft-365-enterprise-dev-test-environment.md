@@ -8,7 +8,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - Strat_O365_Enterprise
@@ -29,7 +29,7 @@ Configuring privileged access management involves three phases:
 - [Phase 2: Configure privileged access management](#phase-2-configure-privileged-access-management)
 - [Phase 3: Verify that approval is required for elevated and privileged tasks](#phase-3-verify-that-approval-is-required-for-elevated-and-privileged-tasks)
 
-![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
 > For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).

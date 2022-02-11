@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: "Set up and use a connector in the Microsoft 365 compliance center to import and archive WeChat data in Microsoft 365."
 ---
@@ -24,7 +24,7 @@ After WeChat Archiver connector data is stored in user mailboxes, you can apply 
 
 The following overview explains the process of using a connector to archive WeChat communications data in Microsoft 365.
 
-![Archiving workflow for WeChat Archiver data](../media/WeChatConnectorWorkflow.png)
+![Archiving workflow for WeChat Archiver data.](../media/WeChatConnectorWorkflow.png)
 
 1. Your organization works with TeleMessage to set up a WeChat Archiver connector.
 
@@ -46,7 +46,7 @@ The following overview explains the process of using a connector to archive WeCh
 
 - The user who creates a WeChat Archiver connector in the Microsoft 365 compliance center must be assigned the Mailbox Import Export role in Exchange Online. This is required to add connectors in the **Data connectors** page in the compliance center. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
-- This data connector is available in GCC environments in the Microsoft 365 US Government cloud. Third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Microsoft 365 infrastructure and therefore are not covered by the Microsoft 365 compliance and data protection commitments. Microsoft makes no representation that use of this product to connect to third-party applications implies that those third-party applications are FEDRAMP compliant.
+- This TeleMessage data connector is available in GCC environments in the Microsoft 365 US Government cloud. Third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Microsoft 365 infrastructure and therefore are not covered by the Microsoft 365 compliance and data protection commitments. Microsoft makes no representation that use of this product to connect to third-party applications implies that those third-party applications are FEDRAMP compliant.
 
 ## Create a WeChat Archiver connector
 

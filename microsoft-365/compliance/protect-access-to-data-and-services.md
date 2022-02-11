@@ -9,7 +9,7 @@ ms.date: 4/17/2018
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
@@ -54,7 +54,7 @@ Multi-factor authentication (MFA) and conditional access policies are powerful t
 - Intune device compliance
 - Azure AD Identity Protection
 
-Implementing Intune device compliance requires device enrollment. Managing devices allows you to ensure that they are healthy and compliant before allowing them access to resources in your environment. See [Enroll devices for management in Intune](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
+Implementing Intune device compliance requires device enrollment. Managing devices allows you to ensure that they are healthy and compliant before allowing them access to resources in your environment. See [Enroll devices for management in Intune](/mem/intune/user-help/enroll-windows-10-device)
 
 ## Step 4: Configure SharePoint device access policies
 

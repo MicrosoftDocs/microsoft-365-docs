@@ -8,11 +8,11 @@ manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
@@ -52,7 +52,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 ## Admin center features and settings
 
-Here are the features and settings you'll find in the left-hand navigation of the admin center. Learn more about admin tasks in [admin help](../../business-video/admin-center-overview.md).
+Here are the features and settings you'll find in the left-hand navigation of the admin center. Learn more about admin tasks in [admin help](Overview of the Microsoft 365 admin center](admin-center-overview.md).
 
 <br>
 

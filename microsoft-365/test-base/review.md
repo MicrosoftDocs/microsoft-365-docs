@@ -9,7 +9,7 @@ audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
 ms.service: virtual-desktop
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom:                 # This is an optional, free-form field you can use to define your own collection of articles. If you have more than one value, format as a bulleted list. This field truncates to something like 144 characters (inclusive of spaces) so keep it short.
 ms.reviewer: mapatel
@@ -28,7 +28,7 @@ f1.keywords: NOCSH
 
 3. This will onboard your package to the Test Base environment. If your package is successfully created, an automated test which verifies whether your package can be successfully executed on Azure will be triggered.
 
-    ![Successful result](Media/successful.png)
+    ![Successful result.](Media/successful.png)
 
     > [!NOTE]
     > You will get a notification from the Azure portal to notify you on the success or failure of the package verification.

@@ -9,7 +9,7 @@ ms.date: 9/11/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - SPO_Content
@@ -155,7 +155,7 @@ After you've connected to Security & Compliance Center PowerShell, the next step
 
    Here's an example of running the CaseHoldsReport.ps1 script.
 
-   ![The output after running the CaseHoldsReport.ps1 script](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+   ![The output after running the CaseHoldsReport.ps1 script.](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
 ## More information
 

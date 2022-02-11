@@ -3,11 +3,11 @@ title: Service changes and communication
 description: How changes to the service occur and are communicated
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
-ms.localizationpriority: normal
+author: tiaraquan
+ms.author: tiaraquan
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 audience: Admin
 ---
@@ -40,7 +40,7 @@ We’ll routinely make other changes to the service to improve user experience, 
 
 - Installation of Windows and Office updates
 - Updates to the security baseline applied to devices
-- Supported devices. To see recommended devices, filter for Microsoft Managed Desktop on the [Shop Windows 10 Pro business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices) site.
+- Supported devices. To see recommended devices, filter for Microsoft Managed Desktop on the [Shop Windows Pro business devices](https://www.microsoft.com/windows/business/devices) site.
 
 We'll communicate these changes by using established channels. If you have any questions about any changes, contact the Microsoft Managed Desktop [Operations team](../working-with-managed-desktop/admin-support.md). Changes to the service are also documented as needed in the [change history](../change-history-managed-desktop.md).
 

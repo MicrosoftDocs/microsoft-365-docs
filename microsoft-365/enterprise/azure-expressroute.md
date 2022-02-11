@@ -7,7 +7,7 @@ ms.date: 6/5/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
@@ -44,11 +44,11 @@ Regardless of whether you have an existing MPLS WAN, ExpressRoute can be added t
 
 Consider the following high level network diagram which shows a typical Office 365 customer connecting to Microsoft's datacenters over the internet for access to all Microsoft applications such as Office 365, Windows Update, and TechNet. Customers use a similar network path regardless of whether they're connecting from an on-premises network or from an independent internet connection.
 
-![Office 365 network connectivity](../media/9d8bc622-4a38-4a3b-a0f3-68657712d460.png)
+![Office 365 network connectivity.](../media/9d8bc622-4a38-4a3b-a0f3-68657712d460.png)
 
 Now look at the updated diagram which depicts an Office 365 customer who uses both the internet and ExpressRoute to connect to Office 365. Notice that some connections such as Public DNS and Content Delivery Network nodes still require the public internet connection. Also notice the customer's users who are not located in their ExpressRoute connected building are connecting over the Internet.
 
-![Office 365 connectivity with ExpressRoute](../media/251788c4-0937-4584-9b2c-df08e11611fc.png)
+![Office 365 connectivity with ExpressRoute.](../media/251788c4-0937-4584-9b2c-df08e11611fc.png)
 
 Still want more information? Learn how to [manage your network traffic with Azure ExpressRoute for Office 365](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408) and learn how to [configure Azure ExpressRoute for Office 365](/azure/expressroute/expressroute-faqs). We've also recorded a 10 part [Azure ExpressRoute for Office 365 Training](https://channel9.msdn.com/series/aer) series on Channel 9 to help explain the concepts more thoroughly.
 

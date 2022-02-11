@@ -2,19 +2,19 @@
 title: Configure exclusions for files opened by specific processes
 description: You can exclude files from scans if they have been opened by a specific process.
 keywords: Microsoft Defender Antivirus, process, exclusion, files, scans
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
+ms.collection: M365-security-compliance
 ---
 
 # Configure exclusions for files opened by processes
@@ -22,7 +22,8 @@ manager: dansimp
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 You can exclude files that have been opened by specific processes from Microsoft Defender Antivirus scans. See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) before defining your exclusion lists.
 
@@ -30,16 +31,13 @@ This article describes how to configure exclusion lists.
 
 ## Examples of exclusions
 
-<br>
-
-****
+<br/><br/>
 
 |Exclusion|Example|
 |---|---|
 |Any file on the machine that is opened by any process with a specific file name|Specifying `test.exe` would exclude files opened by: <p>`c:\sample\test.exe` <p> `d:\internal\files\test.exe`|
 |Any file on the machine that is opened by any process under a specific folder|Specifying `c:\test\sample\*` would exclude files opened by: <p> `c:\test\sample\test.exe` <p> `c:\test\sample\test2.exe` <p> `c:\test\sample\utility.exe`|
 |Any file on the machine that is opened by a specific process in a specific folder|Specifying `c:\test\process.exe` would exclude files only opened by `c:\test\process.exe`|
-|
 
 When you add a process to the process exclusion list, Microsoft Defender Antivirus won't scan files opened by that process, no matter where the files are located. The process itself, however, will be scanned unless it has also been added to the [file exclusion list](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
 
@@ -92,16 +90,13 @@ The format for the cmdlets is:
 
 The following are allowed as the \<cmdlet\>:
 
-<br>
-
-****
+<br/><br/>
 
 |Configuration action|PowerShell cmdlet|
 |---|---|
 |Create or overwrite the list|`Set-MpPreference`|
 |Add to the list|`Add-MpPreference`|
 |Remove items from the list|`Remove-MpPreference`|
-|
 
 > [!IMPORTANT]
 > If you have created a list, either with `Set-MpPreference` or `Add-MpPreference`, using the `Set-MpPreference` cmdlet again will overwrite the existing list.
@@ -138,15 +133,12 @@ In particular, you cannot use the question mark (`?`) wildcard, and the asterisk
 
 The following table describes how the wildcards can be used in the process exclusion list:
 
-<br>
-
-****
+<br/><br/>
 
 |Wildcard|Example use|Example matches|
 |---|---|---|
 |`*` (asterisk) <p> Replaces any number of characters|`C:\MyData\*`|Any file opened by `C:\MyData\file.exe`|
 |Environment variables <p> The defined variable is populated as a path when the exclusion is evaluated|`%ALLUSERSPROFILE%\CustomLogFiles\file.exe`|Any file opened by `C:\ProgramData\CustomLogFiles\file.exe`|
-|
 
 ## Review the list of exclusions
 
@@ -176,7 +168,7 @@ Use the following cmdlet:
 Get-MpPreference
 ```
 
-See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Microsoft Defender Antivirus cmdlets](/powershell/module/defender) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 ### Retrieve a specific exclusions list by using PowerShell
 
@@ -187,7 +179,7 @@ $WDAVprefs = Get-MpPreference
 $WDAVprefs.ExclusionProcess
 ```
 
-See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender) for more information on how to use PowerShell with Microsoft Defender Antivirus.
+See [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Microsoft Defender Antivirus cmdlets](/powershell/module/defender) for more information on how to use PowerShell with Microsoft Defender Antivirus.
 
 ## Related articles
 

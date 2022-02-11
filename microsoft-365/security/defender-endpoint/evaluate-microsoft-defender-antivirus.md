@@ -1,20 +1,20 @@
 ---
 title: Evaluate Microsoft Defender Antivirus
-description: Businesses of all sizes can use this guide to evaluate and test the protection offered by Microsoft Defender Antivirus in Windows 10.
+description: Businesses of all sizes can use this guide to evaluate and test the protection offered by Microsoft Defender Antivirus in Windows.
 keywords: Microsoft Defender Antivirus, cloud protection, cloud, antimalware, security, defender, evaluate, test, protection, compare, real-time protection
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 09/03/2018
-ms.reviewer: 
+ms.date: 10/18/2018
+ms.reviewer:
 manager: dansimp
 ms.technology: mde
+ms.collection: m365-security-compliance
 ---
 
 # Evaluate Microsoft Defender Antivirus
@@ -23,16 +23,17 @@ ms.technology: mde
 
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 Use this guide to determine how well Microsoft Defender Antivirus protects you from viruses, malware, and potentially unwanted applications.
 
->[!TIP]
+> [!TIP]
 >You can also visit the Microsoft Defender for Endpoint demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the following features are working and see how they work:
->- Cloud-delivered protection
->- Fast learning (including Block at first sight)
->- Potentially unwanted application blocking
+>
+> - Cloud-delivered protection
+> - Fast learning (including Block at first sight)
+> - Potentially unwanted application blocking
 
 It explains the important next-generation protection features of Microsoft Defender Antivirus available for both small and large enterprises, and how they increase malware detection and protection across your network.
 

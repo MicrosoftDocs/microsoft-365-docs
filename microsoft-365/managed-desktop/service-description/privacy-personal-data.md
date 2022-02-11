@@ -4,14 +4,14 @@ description: Details the data collected, stored, and used by the service
 keywords: GDPR, retention, deletion, storage, retention, processing, security, auditing
 ms.service: m365-md
 ms.sitesec: library
-author: jaimeo
-manager: laurawi
+author: tiaraquan
+manager: dougeby
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.topic: article
 audience: Admin, ITPro
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ---
 
 # Overview
@@ -35,7 +35,7 @@ Microsoft Managed Desktop provides its service to enterprise customers and prope
 
 ## Microsoft Managed Desktop data process and storage
 
-Microsoft Managed Desktop relies on data from multiple Microsoft products and services to provide its service to enterprise customers. To accomplish the goal of protecting and maintaining enrolled devices, we process and copy data from these services to Microsoft Managed Desktop. When we process data, we follow the documented directions you provide, as referenced in the Online Services Terms and Microsoft Privacy Statement. When we process data, we follow the documented directions you provide, as referenced in the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products) and [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). Microsoft Managed Desktop’s processor duties include ensuring appropriate confidentiality, security, and resilience. Microsoft Managed Desktop employs additional privacy and security measures to ensure proper handling of personal identifiable data. 
+Microsoft Managed Desktop relies on data from multiple Microsoft products and services to provide its service to enterprise customers. To accomplish the goal of protecting and maintaining enrolled devices, we process and copy data from these services to Microsoft Managed Desktop.  When we process data, we follow the documented directions you provide, as referenced in the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products) and [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). Microsoft Managed Desktop’s processor duties include ensuring appropriate confidentiality, security, and resilience. Microsoft Managed Desktop employs additional privacy and security measures to ensure proper handling of personal identifiable data. 
 
 
 ## Microsoft Managed Desktop data storage and staff location

@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+ms.localizationpriority: null
 ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
@@ -19,9 +19,9 @@ description: "Learn how to provide feedback to a trainable classifier in Content
 
 # How to retrain a classifier in content explorer
 
-A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it samples to look at. Once trained, you can use it to identify item for application of Office sensitivity labels, communications compliance policies, and retention label policies.
+A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it samples to look at. Once trained, you can use it to identify items for application of Office sensitivity labels, communications compliance policies, and retention label policies.
 
-This article shows you how to improve the performance of custom trainable classifiers and some pre-trained classifiers by providing them additional feedback.
+This article shows you how to improve the performance of custom trainable classifiers by providing them additional feedback.
 
 To learn more about the different types of classifiers, see [Learn about trainable classifiers](classifier-learn-about.md).
 
@@ -31,6 +31,8 @@ Watch this video for a quick summary of the tuning and retraining process. You'l
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGMs]
 
+> [!NOTE]
+> Pre-trained classifiers cannot be retrained.
 
 ## Permissions
 
@@ -83,11 +85,11 @@ To understand more about the overall workflow of retraining a classifier, see [P
 9. Open **Trainable classifiers**.
 10. The classifier that was used in your Communications compliance policy will appear under the **Re-training** heading.
 
-![classifier in retraining status](../media/classifier-retraining.png)
+![classifier in retraining status.](../media/classifier-retraining.png)
 
 11. Once retraining completes, choose the classifier to open the retraining overview.
 
-![classifier retraining results overview](../media/classifier-retraining-overview.png)
+![classifier retraining results overview.](../media/classifier-retraining-overview.png)
 
 12. Review the recommended action, and the prediction comparisons of the retrained and currently published versions of the classifier.
 13. If you satisfied with the results of the retraining, choose **Re-publish**.

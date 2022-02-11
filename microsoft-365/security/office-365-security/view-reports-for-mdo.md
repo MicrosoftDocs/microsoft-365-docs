@@ -2,14 +2,13 @@
 title: View Defender for Office 365 reports
 f1.keywords: 
   - CSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: 
 audience: ITPro
 ms.topic: conceptual
-
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
   - MOE150
@@ -18,7 +17,8 @@ ms.collection:
   - M365-security-compliance
   - m365initiative-defender-office365
 description: Admins can learn how to find and use the Defender for Office 365 reports that are available in the Microsoft 365 Defender portal.
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -31,9 +31,21 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 subscriptions or Microsoft Defender for Office 365 Plan 1 or Microsoft Defender for Office 365 Plan 2 add-ons) contain a variety of security-related reports. If you have the [necessary permissions](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), you can view these reports in the Microsoft 365 Defender portal by going to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. To go directly to the **Email & collaboration reports** page, open <https://security.microsoft.com/emailandcollabreport>.
+Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 subscriptions or Microsoft Defender for Office 365 Plan 1 or Microsoft Defender for Office 365 Plan 2 add-ons) contain a variety of security-related reports. If you have the [necessary permissions](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), you can view and download these reports in the Microsoft 365 Defender portal.
 
-![Email & collaboration reports page in the Microsoft 365 Defender portal](../../media/email-collaboration-reports.png)
+## View and download reports
+
+### View reports
+
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. To go directly to the **Email & collaboration reports** page, use <https://security.microsoft.com/emailandcollabreport>.
+
+1. Choose the report you want to view, and then select **View details**.  
+
+### Download reports
+
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** > **Email & collaboration** \> **Reports for download**. To go directly to the **Reports for download** page, use <https://security.microsoft.com/ReportsForDownload?viewid=custom>.
+
+![Email & collaboration reports page in the Microsoft 365 Defender portal.](../../media/email-collaboration-download-reports.png)
 
 > [!NOTE]
 >
@@ -44,12 +56,12 @@ Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 s
 ## Safe Attachments file types report
 
 > [!NOTE]
-> The **Safe Attachments file types report** will eventually go away. The same information is available in the [Threat protection status report](#threat-protection-status-report).
+> This report has been deprecated. The same information is available in the [Threat protection status report](#threat-protection-status-report).
 
 ## Safe Attachments message disposition report
 
 > [!NOTE]
-> The **Safe Attachments message disposition report** will eventually go away. The same information is available in the [Threat protection status report](#threat-protection-status-report).
+> This report has been deprecated. The same information is available in the [Threat protection status report](#threat-protection-status-report).
 
 ## Mail latency report
 
@@ -57,9 +69,11 @@ The **Mail latency report** shows you an aggregate view of the mail delivery and
 
 Client side and network latency are not included.
 
-To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Mail latency report** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/mailLatencyReport>.
+To view the report, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. To go directly to the **Email & collaboration reports** page, use <https://security.microsoft.com/emailandcollabreport>.
 
-![Mail latency report widget on the Email & collaboration reports page](../../media/mail-latency-report-widget.png)
+On the **Email & collaboration reports** page, find **Mail latency report** and then click **View details**. To go directly to the report, use <https://security.microsoft.com/mailLatencyReport>.
+
+![Mail latency report widget on the Email & collaboration reports page.](../../media/mail-latency-report-widget.png)
 
 On the **Mail latency report** page, the following tabs are available on the **Mail latency report** page:
 
@@ -74,7 +88,7 @@ Regardless of the tab you select, the chart shows messages organized into the fo
 
 When you hover over a category in the chart, you can see a breakdown of the latency in each category.
 
-![50th percentiles view of the Mail latency report](../../media/mail-latency-report-50th-percentile-view.png)
+![50th percentiles view of the Mail latency report.](../../media/mail-latency-report-50th-percentile-view.png)
 
 If you click **Filter**, you can filter both the chart and the details table by the following values:
 
@@ -93,26 +107,32 @@ In the details table below the chart, the following information is available:
 - **Message count**
 - **Overall latency**
 
+On the main report page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](view-email-security-reports.md#export-report)** button is available.
+
 ## Threat protection status report
 
 The **Threat protection status** report is a single view that brings together information about malicious content and malicious email detected and blocked by [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) and Microsoft Defender for Office 365. For more information, see [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
 
-## URL threat protection report
+## Top senders and recipients report
 
-The **URL threat protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](safe-links.md). This report will not have click data from users where the Safe Links policy applied has the **Do not track user clicks** option selected.
+The **Top senders and recipients** report show the top recipients for EOP and Defender for Office 365 protection features. For more information, see [Top senders and recipients report](view-email-security-reports.md#top-senders-and-recipients-report).
+
+## URL protection report
+
+The **URL protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](safe-links.md). This report will not have click data from users where the Safe Links policy applied has the **Do not track user clicks** option selected.
 
 To view the report, open the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **URL protection page** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/URLProtectionActionReport>.
 
-![URL protection report widget on the Email & collaboration reports page](../../media/url-protection-report-widget.png)
+![URL protection report widget on the Email & collaboration reports page.](../../media/url-protection-report-widget.png)
 
-The available views on the **URL threat protection** report page are described in the following sections.
+The available views on the **URL protection** report page are described in the following sections.
 
 > [!NOTE]
 > This is a *protection trend report*, meaning data represents trends in a larger dataset. As a result, the data in the charts is not available in real time here, but the data in the details table is, so you may see a slight discrepancy between the two. The charts are refreshed once every four hours and contain data for the last 90 days.
 
 ### View data by URL click protection action
 
-![URL click protection action view in the URL threat protection report](../../media/url-threat-protection-report-url-click-protection-action-view.png)
+![URL click protection action view in the URL protection report.](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
 The **View data by URL click protection action** view shows the number of URL clicks by users in the organization and the results of the click:
 
@@ -144,9 +164,11 @@ The details table below the chart provides the following near-real-time view of 
 - **Action**
 - **App**
 
+On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](view-email-security-reports.md#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](view-email-security-reports.md#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](view-email-security-reports.md#export-report)** buttons are available.
+
 ### View data by URL click by application
 
-![URL click by application view in the URL threat protection report](../../media/url-threat-protection-report-url-click-by-application-view.png)
+![URL click by application view in the URL protection report.](../../media/url-threat-protection-report-url-click-by-application-view.png)
 
 The **View data by URL click by application** view shows the number of URL clicks by apps that support Safe Links:
 
@@ -175,6 +197,8 @@ The details table below the chart provides the following near-real-time view of 
 - **URL**
 - **Action**
 - **App**
+
+On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-create-icon.png) **[Create schedule](view-email-security-reports.md#schedule-report)**, ![Request report icon.](../../media/m365-cc-sc-download-icon.png) **[Request report](view-email-security-reports.md#request-report)**, and ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](view-email-security-reports.md#export-report)** buttons are available.
 
 ## Additional reports to view
 
@@ -205,6 +229,7 @@ PowerShell reporting cmdlets:
 |Safe Links|[Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <p> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|
 |Compromised users|[Get-CompromisedUserAggregateReport](/powershell/module/exchange/get-compromiseduseraggregatereport) <p> [Get-CompromisedUserDetailReport](/powershell/module/exchange/get-compromiseduserdetailreport)|
 |Mail flow status|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
+|Spoofed users|[Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport)|
 |
 
 ## What permissions are needed to view the Defender for Office 365 reports?

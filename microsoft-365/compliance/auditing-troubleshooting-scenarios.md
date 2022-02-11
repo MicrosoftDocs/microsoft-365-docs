@@ -6,9 +6,9 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: troubleshooting
+ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,6 +17,7 @@ search.appverid:
 - MOE150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: "Learn how to use the Microsoft 365 audit log search tool to help troubleshoot common support issues for email accounts."
 ---
 
@@ -38,7 +39,7 @@ Each of the troubleshooting scenarios described in this article is based on usin
 
 ### Permissions required to use the audit log search tool
 
-You must be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. Global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
+You must be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. Global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online. For more information, see [Manage role groups in Exchange Online](/Exchange/permissions-exo/role-groups).
 
 ### Running audit log searches
 
@@ -48,7 +49,7 @@ This section describes the basics for creating and running audit log searches. U
   
     The **Audit** page is displayed.
   
-    ![Configure criteria and then select Search to run the search](../media/AuditLogSearchPage1.png)
+    ![Configure criteria and then select Search to run the search.](../media/AuditLogSearchPage1.png)
   
 2. You can configure the following search criteria. Each troubleshooting scenario in this article recommends specific guidance for configuring these fields.
   
@@ -105,11 +106,11 @@ Here's how to configure an audit log search query for this scenario:
 
 After you run the search, select **Filter results** on the search results page. In the box under **Activity** column header, type **Set-Mailbox** so that only audit records related to the **Set-Mailbox** cmdlet are displayed.
 
-![Filtering the results of an audit log search](../media/emailforwarding1.png)
+![Filtering the results of an audit log search.](../media/emailforwarding1.png)
 
 At this point, you have to look at the details of each audit record to determine if the activity is related to email forwarding. Select the audit record to display the **Details** flyout page, and then select **More information**. The following screenshot and descriptions highlight the information that indicates email forwarding was set on the mailbox.
 
-![Detailed information from the audit record](../media/emailforwarding2.png)
+![Detailed information from the audit record.](../media/emailforwarding2.png)
 
 a. In the **ObjectId** field, the alias of the mailbox that email forwarding was set on is displayed. This mailbox is also displayed on the **Item** column in the search results page.
 
@@ -151,11 +152,11 @@ After you run the search, you can filter the search results to display the audit
 
 **Example of AffectedItems field for soft-deleted item**
 
-![Audit record for soft-deleted item](../media/softdeleteditem.png)
+![Audit record for soft-deleted item.](../media/softdeleteditem.png)
 
 **Example of AffectedItems field for hard-deleted item**
 
-![Audit record for hard-deleted email item](../media/harddeleteditem.png)
+![Audit record for hard-deleted email item.](../media/harddeleteditem.png)
 
 ### Recover deleted email items
 
@@ -175,7 +176,11 @@ When users create an inbox rule for their Exchange Online mailbox, a correspondi
 
 Here's how to configure an audit log search query for this scenario:
 
-**Activities:** Under **Exchange mailbox activities**, select **New-InboxRule Create/modify/enable/disable inbox rule**.
+**Activities:** Under **Exchange mailbox activities**, select one or both of the following activities:
+
+- **New-InboxRule Create new inbox rule from Outlook Web App**. This activity returns audit records when inbox rules are created using Outlook web app or Exchange Online PowerShell.
+
+- **Updated inbox rules from Outlook client**. This activity returns audit records when inbox rules are created, modified, or removed using the Outlook desktop client.
 
 **Start date** and **End date:** Select a date range that's applicable to your investigation.
 
@@ -185,7 +190,7 @@ Here's how to configure an audit log search query for this scenario:
 
 After you run the search, any audit records for this activity are displayed in the search results. Select an audit record to display the **Details** flyout page, and then select **More information**. Information about the inbox rule settings is displayed in the **Parameters** field. The following screenshot and descriptions highlight the information about inbox rules.
 
-![Audit record for new inbox rule](../media/NewInboxRuleRecord.png)
+![Audit record for new inbox rule.](../media/NewInboxRuleRecord.png)
 
 a. In the **ObjectId** field, the full name of the inbox rule is displayed. This name includes the alias of the user's mailbox (for example, SaraD) and the name of the inbox rule (for example, "Move messages from admin").
 
@@ -206,7 +211,7 @@ This behavior is by design. Azure Active Directory (Azure AD), the directory ser
 
 Here's an example and descriptions of relevant properties in an audit record for a **User logged In** event that is a result of pass-through authentication. Select the audit record to display the **Details** flyout page, and then select **More information**.
 
-![Example of audit record for successful pass-thru authentication](../media/PassThroughAuth1.png)
+![Example of audit record for successful pass-thru authentication.](../media/PassThroughAuth1.png)
 
    a. This field indicates that the user who attempted to access a resource in your organization wasn't found in your organization's Azure AD.
 
@@ -230,7 +235,7 @@ Here are two examples scenarios that would result in a successful **User logged 
 
 - Search the audit log for activities performed by the external user identified in the **User logged in** audit record. Type the UPN for the external user in the **Users** box and use a date range if relevant to your scenario. For example, you can create a search using the following search criteria:
 
-   ![Search for all activities performed by the external user](../media/PassThroughAuth2.png)
+   ![Search for all activities performed by the external user.](../media/PassThroughAuth2.png)
 
     In addition to the **User logged in** activities, other audit records may be returned, such ones that indicate a user in your organization shared resources with the external user and whether the external user accessed, modified, or downloaded a document that was shared with them.
 

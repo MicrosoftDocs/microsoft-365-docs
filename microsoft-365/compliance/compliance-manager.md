@@ -8,11 +8,12 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 - m365solution-compliancemanager
 - m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
@@ -25,7 +26,7 @@ description: "Microsoft Compliance Manager helps organizations simplify and auto
 
 ## What is Compliance Manager?
 
-[Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) is a feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that helps you manage your organization’s compliance requirements with greater ease and convenience. Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
+[Microsoft Compliance Manager](https://compliance.microsoft.com/compliancemanager) is a feature in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> that helps you manage your organization’s compliance requirements with greater ease and convenience. Compliance Manager can help you throughout your compliance journey, from taking inventory of your data protection risks to managing the complexities of implementing controls, staying current with regulations and certifications, and reporting to auditors.
 
 Watch the video below to learn how Compliance Manager can help simplify how your organization manages compliance:
 <br>
@@ -44,7 +45,7 @@ Compliance Manager helps simplify compliance and reduce risk by providing:
 
 Your Compliance Manager dashboard shows your current compliance score, helps you see what needs attention, and guides you to key improvement actions. Below is an example of what your Compliance Manager dashboard will look like:
 
-![Compliance Manager - dashboard](../media/compliance-manager-dashboard.png "Compliance Manager dashboard")
+![Compliance Manager - dashboard.](../media/compliance-manager-dashboard.png "Compliance Manager dashboard")
 
 ## Understanding your compliance score
 

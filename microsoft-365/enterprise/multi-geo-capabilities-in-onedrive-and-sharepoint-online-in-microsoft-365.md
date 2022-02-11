@@ -15,7 +15,7 @@ ms.collection:
 - SPO_Content
 - m365solution-scenario
 - m365solution-spintranet
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 094e86f2-9ff0-40ac-af31-28fcaba00c1d
 description: "Expand your Microsoft 365 presence to multiple geographic regions with multi-geo capabilities in OneDrive Online."
 ---
@@ -44,7 +44,7 @@ Microsoft 365 services other than Exchange, OneDrive, SharePoint, and Teams are 
 
 Setting up and managing your multi-geo environment is done through the SharePoint admin center. 
 
-![Screenshot of geo locations page in the SharePoint admin center](../media/sharepoint-multi-geo-admin-center.png)
+![Screenshot of geo locations page in the SharePoint admin center.](../media/sharepoint-multi-geo-admin-center.png)
 
 (Some actions, such as moving a SharePoint site or a OneDrive site require Microsoft PowerShell.)
 

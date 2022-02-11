@@ -8,7 +8,7 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-modern-desktop
 - Strat_O365_Enterprise
@@ -66,7 +66,7 @@ To complete the in-place upgrade deployment of Windows 10 Enterprise, Contoso im
 
 Here is Contoso’s in-place upgrade and ongoing updates deployment architecture.
 
-![Contoso’s Windows 10 Enterprise deployment infrastructure](../media/contoso-win10/contoso-win10-fig1.png)
+![Contoso’s Windows 10 Enterprise deployment infrastructure.](../media/contoso-win10/contoso-win10-fig1.png)
 
 This infrastructure consists of:
 

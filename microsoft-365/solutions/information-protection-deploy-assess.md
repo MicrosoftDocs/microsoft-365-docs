@@ -9,7 +9,7 @@ ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -21,15 +21,15 @@ description: Determine the data privacy regulations, the relevant scenarios, you
 
 # Assess data privacy risks and identify sensitive items with Microsoft 365
 
-Assessing the data privacy regulations and risks that your organization is subject to is a key first step before implementing any related improvement actions, including those achievable with Microsoft 365 features and services.
+Assessing the data privacy regulations and risks that your organization is subject to is a first step before implementing any related improvement actions, including actions achievable with Microsoft 365 features and services.
 
 ## Potentially applicable data privacy regulations
 
-For a good reference on the broader regulatory framework for data privacy regulations, see the [Microsoft Services Trust Portal](https://servicetrust.microsoft.com/) and the [series of articles on the General Data Protection Regulation (GDPR) regulation](/compliance/regulatory/gdpr), as well as other materials on the regulations you may be subject to in your industry or region.
+For a good reference on the broader regulatory framework for data privacy regulations, see the [Microsoft Services Trust Portal](https://servicetrust.microsoft.com/) and the [series of articles on the General Data Protection Regulation (GDPR) regulation](/compliance/regulatory/gdpr). Also review materials on the regulations you may be subject to in your industry or region.
 
 ### GDPR
 
-The GDPR, the most well-known and cited of the data privacy regulations, regulates the collection, storage, processing, and sharing of any personal data that relates to an identified or identifiable natural person that is a resident of the European Union (EU).
+The GDPR is the most well-known and cited of the data privacy regulations. It regulates the collection, storage, processing, and sharing of any personal data that relates to an identified or identifiable natural person that is a resident of the European Union (EU).
 
 According to GDPR Article 4:
 
@@ -80,13 +80,13 @@ For later reference in the articles of this overall solution, this table provide
 
 Regardless of the regulations you are subject to, where different user data types inside and outside your organization interact with your systems are all important factors that may impact your overall personal data protection strategy, subject to the industry and government regulations that apply to your organization. This includes where personal data is stored, what type it is, and how much of it there is, and under what circumstances it was collected.
 
-![Knowing your data: What type it is, and how much of it there is, and under what circumstances it was collected](../media/information-protection-deploy-assess/information-protection-deploy-assess-knowing-data.png)
+![Knowing your data: What type it is, and how much of it there is, and under what circumstances it was collected.](../media/information-protection-deploy-assess/information-protection-deploy-assess-knowing-data.png)
 
 ### Data portability
 
 Data also moves around over time as it is processed, refined, and other versions are derived from it. An initial snapshot is never enough. There needs to be an ongoing process for knowing your data. This represents one of the biggest challenges for large organizations that handle significant volumes of personal data. Organizations that don't address the "know your data" problem could potentially end up with very high risk and possible fines from regulatory agencies.
 
-![The data lifecycle](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-lifecycle.png)
+![The data lifecycle.](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-lifecycle.png)
 
 ### Where the personal data is
 
@@ -94,7 +94,7 @@ To address data privacy regulations, you can't rely on general notions of where 
 
 If you have not already assessed your overall readiness and risk associated with data privacy regulations, use the following 3-step framework to get started.
 
-![Steps to assess your overall readiness and risk associated with data privacy regulations](../media/information-protection-deploy-assess/information-protection-deploy-assess-grid.png)
+![Steps to assess your overall readiness and risk associated with data privacy regulations.](../media/information-protection-deploy-assess/information-protection-deploy-assess-grid.png)
 
 > [!NOTE]
 > This article and its content are not meant to take the place of legal advisory services. It just provides some basic guidance and links to tools that may be of assistance in the early stages of your assessment.
@@ -111,7 +111,7 @@ As a starting point, it's important to inventory what types of personal data exi
 
 Here is an example of the different types of data for typical departments of an organization.
 
-![Types of personal data](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-types.png)
+![Types of personal data.](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-types.png)
 
 Much of the personal data that is subject to data privacy regulation is typically collected and stored outside of Microsoft 365. Any personal data from consumer-facing web or mobile applications would need to have been exported from such applications to Microsoft 365 in order to be subject to data privacy scrutiny within Microsoft 365.
 
@@ -167,7 +167,7 @@ Most organizations will have some exposure to one of the above scenarios. Taking
 
 ## Step 2: Assess your readiness for complying with data privacy regulations
 
-Although specific to GDPR, the questions posed in the free [Microsoft GDPR assessment tool](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) provide a good start towards understanding your overall data privacy readiness.
+Although specific to GDPR, the questions posed in the free [Microsoft GDPR assessment tool](https://clouddamcdnprodep.azureedge.net/gdc/1863571/original) provide a good start towards understanding your overall data privacy readiness.
 
 Organizations subject to other data privacy regulations, such as CCPA in the United States or Brazil's LGPD, may also benefit from this tool's inventory of readiness due overlapping provisions with the GDPR.
 

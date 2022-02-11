@@ -2,20 +2,17 @@
 title: Deploy updates for Microsoft Defender for Endpoint on Mac
 description: Control updates for Microsoft Defender for Endpoint on Mac in enterprise environments.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, updates, deploy
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -28,7 +25,8 @@ ms.technology: mde
 **Applies to:**
 
 - [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -37,7 +35,7 @@ Microsoft regularly publishes software updates to improve performance, security,
 
 To update Microsoft Defender for Endpoint on macOS, a program named Microsoft AutoUpdate (MAU) is used. By default, MAU automatically checks for updates daily, but you can change that to weekly, monthly, or manually.
 
-![MAU screenshot](images/MDATP-34-MAU.png)
+![MAU screenshot.](images/MDATP-34-MAU.png)
 
 If you decide to deploy updates by using your software distribution tools, you should configure MAU to manually check for software updates. You can deploy preferences to configure how and when MAU checks for updates for the Macs in your organization.
 
@@ -68,8 +66,12 @@ The `Current` channel contains the most stable version of the product.
 > - `Preview` was named `External` (Insider Slow)
 > - `Current` was named `Production`
 
->[!TIP]
->In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to `Beta` or `Preview`.
+> [!TIP]
+> In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to `Beta` or `Preview`.
+
+<br>
+
+****
 
 |Section|Value|
 |---|---|
@@ -79,16 +81,20 @@ The `Current` channel contains the most stable version of the product.
 |**Possible values**|Beta <p> Preview <p> Current|
 |||
 
->[!WARNING]
->This setting changes the channel for all applications that are updated through Microsoft AutoUpdate. To change the channel only for Microsoft Defender for Endpoint on macOS, execute the following command after replacing `[channel-name]` with the desired channel:
+> [!WARNING]
+> This setting changes the channel for all applications that are updated through Microsoft AutoUpdate. To change the channel only for Microsoft Defender for Endpoint on macOS, execute the following command after replacing `[channel-name]` with the desired channel:
 >
 > ```bash
-> defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
+> defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
 > ```
 
 ### Set update check frequency
 
 Change how often MAU searches for updates.
+
+<br>
+
+****
 
 |Section|Value|
 |---|---|
@@ -97,10 +103,15 @@ Change how often MAU searches for updates.
 |**Data type**|Integer|
 |**Default value**|720 (minutes)|
 |**Comment**|This value is set in minutes.|
+|||
 
 ### Change how MAU interacts with updates
 
 Change how MAU searches for updates.
+
+<br>
+
+****
 
 |Section|Value|
 |---|---|
@@ -109,10 +120,15 @@ Change how MAU searches for updates.
 |**Data type**|String|
 |**Possible values**|Manual <p> AutomaticCheck <p> AutomaticDownload|
 |**Comment**|Note that AutomaticDownload will do a download and install silently if possible.|
+|||
 
 ### Change whether the "Check for Updates" button is enabled
 
 Change whether local users will be able to click the "Check for Updates" option in the Microsoft AutoUpdate user interface.
+
+<br>
+
+****
 
 |Section|Value|
 |---|---|
@@ -120,10 +136,15 @@ Change whether local users will be able to click the "Check for Updates" option 
 |**Key**|EnableCheckForUpdatesButton|
 |**Data type**|Boolean|
 |**Possible values**|True (default) <p> False|
+|||
 
 ### Disable Insider checkbox
 
 Set to true to make the "Join the Office Insider Program..." checkbox unavailable / greyed out to users.
+
+<br>
+
+****
 
 |Section|Value|
 |---|---|
@@ -131,10 +152,15 @@ Set to true to make the "Join the Office Insider Program..." checkbox unavailabl
 |**Key**|DisableInsiderCheckbox|
 |**Data type**|Boolean|
 |**Possible values**|False (default) <p> True|
+|||
 
 ### Limit the telemetry that is sent from MAU
 
 Set to false to send minimal heartbeat data, no application usage, and no environment details.
+
+<br>
+
+****
 
 |Section|Value|
 |---|---|
@@ -142,6 +168,7 @@ Set to false to send minimal heartbeat data, no application usage, and no enviro
 |**Key**|SendAllTelemetryEnabled|
 |**Data type**|Boolean|
 |**Possible values**|True (default) <p> False|
+|||
 
 ## Example configuration profile
 

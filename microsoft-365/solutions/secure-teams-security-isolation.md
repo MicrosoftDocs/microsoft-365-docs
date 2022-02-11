@@ -6,7 +6,7 @@ author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -14,6 +14,7 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+- admindeeplinkCOMPLIANCE
 recommendations: false
 description: "Learn how to create a team with a unique sensitivity label for security."
 ---
@@ -46,7 +47,7 @@ Watch this video for an overview of the deployment process.
 <a name="poster"></a>
 For a 1-page summary of this scenario, see the [Microsoft Teams with security isolation poster](../downloads/team-security-isolation-poster.pdf).
 
-[![Microsoft Teams with security isolation poster](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
+[![Microsoft Teams with security isolation poster.](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
 You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) or [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) formats and print it on letter, legal, or tabloid (11 x 17) size paper.
 
@@ -103,20 +104,19 @@ To configure a team for security isolation, we'll be using a sensitivity label c
 
 If you have an internal partner or stakeholder group who should be able to view encrypted documents but not edit them, you can add them to the label with view-only permissions. You can then add these people to the team's SharePoint site with Reader permissions, and they will have read-only access to the site where the documents are kept, but not the team itself.
 
-
 To create a sensitivity label
-1. Open the [Microsoft 365 compliance center](https://compliance.microsoft.com).
-2. Under **Solutions**, click **Information protection**.
-3. Click **Create a label**.
-4. Give the label a name. We suggest naming it after the team that you'll be using it with.
-5. Add a display name and description, and then click **Next**.
-6. On the **Define the scope for this label page**, select **Files & emails** and **Groups & sites** and click **Next**.
-7. On the **Choose protection settings for files and emails** page, select **Encrypt files and emails**, and then click **Next**.
-8. On the **Encryption** page, choose **Configure encryption settings**.
-9. Click **Add users or groups**, select the team that you created, and then click **Add**
-10. Click **Choose permissions**.
-11. Choose **Co-Author** from the dropdown list, and then click **Save**.
-12. If you want to include users or groups with read-only access to files with the label:
+
+1. Open the Microsoft 365 compliance center, and under **Solutions**, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection**</a>.
+1. Click **Create a label**.
+1. Give the label a name. We suggest naming it after the team that you'll be using it with.
+1. Add a display name and description, and then click **Next**.
+1. On the **Define the scope for this label page**, select **Files & emails** and **Groups & sites** and click **Next**.
+1. On the **Choose protection settings for files and emails** page, select **Encrypt files and emails**, and then click **Next**.
+1. On the **Encryption** page, choose **Configure encryption settings**.
+1. Click **Add users or groups**, select the team that you created, and then click **Add**
+1. Click **Choose permissions**.
+1. Choose **Co-Author** from the dropdown list, and then click **Save**.
+1. If you want to include users or groups with read-only access to files with the label:
     1. Click **Assign permissions**.
     1. Click **Add users or groups**, select the users or groups that you want to add, and then click **Add**.
     1. Click **Choose permissions**.
@@ -136,8 +136,9 @@ To create a sensitivity label
 
 Once you've created the label, you need to publish it to the users who will use it. In this case, we'll make the label available only to people in the team.
 
-To publish a sensitivity label
-1. In the Microsoft 365 compliance center, on the **Information protection** page, choose the **Label policies** tab.
+To publish a sensitivity label:
+
+1. In the Microsoft 365 compliance center, on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2174015" target="_blank">**Information protection** page</a>, choose the **Label policies** tab.
 2. Click **Publish labels**.
 3. On the **Choose sensitivity labels to publish** page, click **Choose sensitivity labels to publish**.
 4. Select the label that you created, and then click **Add**.

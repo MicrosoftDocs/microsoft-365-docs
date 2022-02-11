@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 07/09/2021
@@ -17,7 +17,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365solution-overview
+  - m365solution-scenario
   - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d
@@ -32,7 +32,7 @@ This article outlines the process to create incidents with attack simulations an
 
 Use the following steps.
 
-![Steps for performing simulated incident response in the Microsoft 365 Defender evaluation environment](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png)
+![Steps for performing simulated incident response in the Microsoft 365 Defender evaluation environment.](../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-steps.png)
 
 The following table describes the steps in the illustration.
 

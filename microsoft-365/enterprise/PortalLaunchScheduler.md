@@ -6,7 +6,7 @@ manager: pamgreen
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365
 - SPO_Content
@@ -35,9 +35,8 @@ Site permissions must be set up separately from waves as part of the launch. For
 
 > [!NOTE]
 >
-> - This feature will be accessible from the **Settings** panel on the home page of SharePoint communication sites for Targeted release customers starting in May 2021 and will become available to all customers by July 2021.
-> - The PowerShell version of this tool is available today.
-> - This feature can only be used on modern SharePoint communication sites.
+> - This feature will be accessible from the **Settings** panel on the home page of SharePoint communication sites.
+> - This feature can only be used on modern SharePoint communication sites using site pages, as they are the default and recommended type to be used for portals.
 > - You must have site owner permissions for the site to customize and schedule the launch of a portal.
 > - Launches must be scheduled at least seven days in advance and each wave can last one to seven days.
 > - The number of waves required is automatically determined by the expected number of users.
@@ -70,15 +69,15 @@ Formerly, portal launches could only be scheduled through SharePoint PowerShell.
 
    **Option 1**: The first few times you edit and republish changes to your home page - or up until home page version 3.0 - you will be prompted to use the Portal launch scheduler tool. Select **Schedule launch** to move forward with scheduling. Or select **Republish** to republish your page edits without scheduling the launch.
 
-   ![Image of the prompt to use the portal launch scheduler when republishing the home page](../media/portal-launch-republish-2.png)
+   ![Image of the prompt to use the portal launch scheduler when republishing the home page.](../media/portal-launch-republish-2.png)
 
    **Option 2**: At any time, you can navigate to the SharePoint communication site home page, select **Settings** and then **Schedule site launch** to schedule your portal’s launch.
 
-   ![Image of the Settings pane with Schedule a site launch highlighted](../media/portal-launch-settings-2.png)
+   ![Image of the Settings pane with Schedule a site launch highlighted.](../media/portal-launch-settings-2.png)
 
 3. Next, confirm the portal’s health score and make improvements to the portal if needed using the [Page Diagnostics for SharePoint](https://aka.ms/perftool) tool until your portal receives a **Healthy** score. Then, select **Next**.
 
-   ![Image of the Portal launch scheduler tool](../media/portal-launch-panel-2.png)
+   ![Image of the Portal launch scheduler tool.](../media/portal-launch-panel-2.png)
 
    > [!NOTE]
    > The site name and description can’t be edited from the Portal launch scheduler and instead can be changed by selecting **Settings** and then **Site information** from the home page.
@@ -88,7 +87,7 @@ Formerly, portal launches could only be scheduled through SharePoint PowerShell.
    - Less than 10k users: Two waves
    - 10k to 30k users: Three waves
    - 30k+ to 100k users: Five waves
-   - More than 100k users: Five waves and contact your Microsoft via the steps listed in Launch portal with over 100k users section.
+   - More than 100k users: Five waves and contact Microsoft support via the steps listed in Launch portal with over 100k users section.
 
 5. Then, determine the **Type of redirect** needed:
 
@@ -130,20 +129,21 @@ If you are planning to launch a portal with over 100,000 users, submit a support
 
 **Follow these steps:**
 
-1. Go to <https://admin.microsoft.com>.
-2. Ensure you are using the new admin center preview
-3. On the left navigational pane, select **Support**, and then select **New Service Request**
+1. As an administrator , click the following link which will populate a help query in the admin center. 
 
-   This will activate the **Need Help?** pane on the right-hand side of your screen.
+[Launch SharePoint Portal with 100k users](https://admin.microsoft.com/AdminPortal/?searchSolutions=Launch%20SharePoint%20Portal%20with%20100k%20users)
 
-4. For **Briefly describe your issue**, enter "Launch SharePoint Portal with 100k users"</br>
-5. Then, select **Contact Support**
-6. Under **Description**, enter "Launch SharePoint Portal with 100k users"
-7. Fill out the remaining information, and then select **Contact me**
-8. After the ticket has been created, ensure you provide the support agent with the following information:
-   - Portal URL's
+2. At the bottom of the pane, select **Contact Support**, and then select **New Service Request**. 
+
+3. Under **Description**, enter "Launch SharePoint Portal with 100k users". 
+
+4. Fill out the remaining info, and select **Contact me**.
+
+5. After the ticket has been created, ensure you provide the support agent with the following information:
+   - Portal URL
    - Number of users expected
-   - Estimated launch schedule
+   - Estimated launch schedule (detailing the wave sizes)
+   - Use the Page Diagnostics tool to "Export the HAR file" of the launch page and share the file with support
 
 ## Make changes to a scheduled portal launch
 
@@ -161,7 +161,7 @@ Launches scheduled using the Portal launch scheduler tool can be canceled, or de
 
 2. Then, select **Delete** and then when you see the message below select **Delete** again.
 
-   ![Image of the prompt that asks if you want to delete or keep a scheduled launch](../media/portal-launch-delete-2.png)
+   ![Image of the prompt that asks if you want to delete or keep a scheduled launch.](../media/portal-launch-delete-2.png)
 
 ## Use the PowerShell Portal launch scheduler
 

@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -63,12 +63,12 @@ This table provides user level details for all users that have a license assigne
 |UPN  <br/> |User principal name, uniquely identifies the user to be able to join with other external data sources.  <br/> |
 |DisplayName  <br/> |User's display name.  <br/> |
 |IDType  <br/> |ID type is set to 1 if the user is a Yammer user who connects by using their Yammer ID or 0 if they connect to Yammer by using their Microsoft 365 ID.  <br/> Value is 1 to represent that this user connects to Yammer with their Yammer ID and not their Microsoft 365 ID  <br/> |
-|HasLicenseEXO  <br/> |Set to true if user is assigned a license and enabled to use Exchange.  <br/> |
-|HasLicenseODB  <br/> |Set to true if user is assigned a license and enabled to use OneDrive for Business.  <br/> |
-|HasLicenseSPO  <br/> |Set to true if user is assigned a license and enabled to use SharePoint Online.  <br/> |
-|HasLicenseYAM  <br/> |Set to true if user is assigned a license and enabled to use Yammer.  <br/> |
-|HasLicenseSFB  <br/> |Set to true if user is assigned a license and enabled to use Skype For Business.  <br/> |
-|HasLicenseTeams  <br/> |Set to true if user is assigned a license and enable to use Microsoft Teams.  <br/> |
+|HasLicenseEXO  <br/> |Set to true if user is assigned a license and enabled to use Exchange on the last day of the month.  <br/> |
+|HasLicenseODB  <br/> |Set to true if user is assigned a license and enabled to use OneDrive for Business on the last day of the month.  <br/> |
+|HasLicenseSPO  <br/> |Set to true if user is assigned a license and enabled to use SharePoint Online on the last day of the month.  <br/> |
+|HasLicenseYAM  <br/> |Set to true if user is assigned a license and enabled to use Yammer on the last day of the month.  <br/> |
+|HasLicenseSFB  <br/> |Set to true if user is assigned a license and enabled to use Skype For Business on the last day of the month.  <br/> |
+|HasLicenseTeams  <br/> |Set to true if user is assigned a license and enable to use Microsoft Teams on the last day of the month.  <br/> |
 |Company  <br/> |Company data represented in Azure Active Directory for this user.  <br/> |
 |Department  <br/> |Department data represented in Azure Active Directory for this user.  <br/> |
 |LocationCity  <br/> |City data represented in Azure Active Directory for this user.  <br/> |
@@ -104,9 +104,9 @@ This table contains data about each user who had an activity in any of the servi
 |ODB_FileSynched  <br/> |Number of files this user synchronized on any OneDrive for Business.  <br/> |
 |ODB_FileSharedInternally  <br/> |Number of files this user shared internally from any OneDrive for Business, or with users within groups (that might include external users).  <br/> |
 |ODB_FileSharedExternally  <br/> |Number of files this user shared externally from any OneDrive for Business.  <br/> |
-|ODB_AccessByOwner  <br/> |Number of files the user interacted with that reside on their own OneDrive for Business.  <br/> |
-|ODB_AccessOthers  <br/> |Number of files this user interacted with which reside on another user's OneDrive for Business.  <br/> |
-|SPO_GroupFileViewedModified  <br/> |Number of files with this user interacted on any group site.  <br/> |
+|ODB_AccessedByOwner  <br/> |Number of sites the user interacted with that reside on their own OneDrive for Business.  <br/> |
+|ODB_AccessedByOthers  <br/> |Number of sites this user interacted with which reside on another user's OneDrive for Business.  <br/> |
+|SPO_GroupFileViewedModified  <br/> |Number of files this user interacted with on any group site.  <br/> |
 |SPO_GroupFileSynched  <br/> |Number of files this user synchronized on any group site.  <br/> |
 |SPO_GroupFileSharedInternally  <br/> |The count of files that have been shared with users within the organization, or with users within groups (that might include external users).  <br/> |
 |SPO_GroupFileSharedExternally  <br/> |Number of files this user shared externally from any group site.  <br/> |
@@ -273,7 +273,17 @@ This table provides data about how Microsoft 365 Groups is used across the organ
 |YAM_LikedActivities  <br/> |Number of Yammer like activities.  <br/> |
 |YAM_PostedActivties  <br/> |Number of Yammer post activities.  <br/> |
 |YAM_ReadActivites  <br/> |Number of Yammer read activities.  <br/> |
-   
+
+### Data table - Tenant Office Licenses
+
+This table provides month-over-month summary data about the license assignment for users. 
+  
+|**Column name**|**Column description**|
+|:-----|:-----|
+|LicenseName  <br/> |Name of the license.  <br/> |
+|AssignedCount  <br/> |Number of assigned licenses.  <br/> |
+|Timeframe  <br/> |Month value.  <br/> |
+
 ### Data table - Tenant Office Activation
 
 The table provides data about the number of Office subscription activations across the service plans, for example, Microsoft 365 Apps for enterprises, Visio, Project. It also provides data about number of activations per device (Android/iOS/Mac/PC).

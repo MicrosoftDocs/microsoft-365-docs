@@ -10,7 +10,7 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
@@ -79,7 +79,7 @@ After you create a draft collection, it listed on the **Collections** page in th
 
 During the draft collection process, Advanced eDiscovery performs a search estimate using the search criteria and data sources that you specified in the collection. Advanced eDiscovery also prepares a sampling of items that you can preview. When the collection is complete, the following columns and corresponding values on the **Collection** page are updated:
 
-![Status states for a draft collection](../media/DraftCollectionStatus.png)
+![Status states for a draft collection.](../media/DraftCollectionStatus.png)
 
 - **Status**: Indicates the status and type of collection. A value of **Estimated** indicates that a draft collection is complete. This same value also indicates that the collection is a draft collection, and that it hasn't been added to a review set. A value of **Committed** in the **Status** column indicates that the collection has been added to a review set.
 
@@ -91,7 +91,7 @@ During the draft collection process, Advanced eDiscovery performs a search estim
 
 After the draft collection is successfully completed, you can perform various tasks. To perform most of these tasks, just go the **Collections** tab and click the name of the draft collection to display the flyout page.
 
-![Flyout page for a draft collection](../media/DraftCollectionFlyoutPage.png)
+![Flyout page for a draft collection.](../media/DraftCollectionFlyoutPage.png)
 
 Here's a list of things you can do from the collection flyout page:
 
@@ -109,7 +109,7 @@ Here's a list of things you can do from the collection flyout page:
 
 You can use the options in the **Actions** menu on the flyout page of a draft collection to perform various management tasks.
 
-![Options on Actions menu for draft collection](../media/DraftCollectionActionsMenu.png)
+![Options on Actions menu for draft collection.](../media/DraftCollectionActionsMenu.png)
 
 Here's are descriptions of the management options.
 

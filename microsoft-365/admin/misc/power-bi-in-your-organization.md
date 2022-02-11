@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
@@ -82,12 +82,6 @@ If a tenant was created by Microsoft, you can claim and manage that tenant by fo
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-3. Go to <a href="https://portal.office.de" target="_blank">https://portal.office.de</a>
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 3. Go to <a href="https://portal.partner.microsoftonline.cn" target="_blank">https://portal.partner.microsoftonline.cn</a>.
@@ -96,7 +90,7 @@ If a tenant was created by Microsoft, you can claim and manage that tenant by fo
 
 4. Select the app launcher icon in the upper-left and choose **Admin**.
 
-    ![App launcher with the Admin app highlighted](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
+    ![App launcher with the Admin app highlighted.](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
 5. Read the instructions on the **Become the admin** page and then select **Yes, I want to be the admin**.
 
@@ -166,12 +160,6 @@ If a user signed up for Power BI, but you no longer want them to have access to 
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
 ::: moniker-end
 

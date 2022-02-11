@@ -7,7 +7,7 @@ author: kwekuako
 manager: scotv
 audience: Admin
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Adm_O365
 - Adm_TOC

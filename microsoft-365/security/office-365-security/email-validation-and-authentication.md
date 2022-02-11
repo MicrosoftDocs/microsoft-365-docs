@@ -16,7 +16,7 @@ ms.collection:
   - M365-security-compliance
   - Strat_O365_IP
 ms.custom: TopSMBIssues
-localization_priority: Priority
+ms.localizationpriority: high
 description: Admins can learn how EOP uses email authentication (SPF, DKIM, and DMARC) to help prevent spoofing, phishing, and spam.
 ms.technology: mdo
 ms.prod: m365-security
@@ -50,7 +50,7 @@ However, DNS records for SPF, DKIM, and DMARC (collectively known as email authe
 
 As of March 2018, only 9% of domains of companies in the Fortune 500 publish strong email authentication policies. The remaining 91% of companies might be spoofed by an attacker. Unless some other email filtering mechanism is in-place, email from spoofed senders in these domains might be delivered to users.
 
-![DMARC policies of Fortune 500 companies](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
+![DMARC policies of Fortune 500 companies.](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
 The proportion of small-to-medium sized companies that publish strong email authentication policies is smaller. And the number is even smaller for email domains outside North America and western Europe.
 
@@ -83,7 +83,7 @@ Relying only on email authentication records to determine if an incoming message
 
 Composite authentication can address these limitations by passing messages that would otherwise fail email authentication checks.
 
-For simplicity, the following examples concentrate on email authentication results. Other back-end intelligence factors could identify messages that pass email authentication as spoofed, or messages that fail email email authentication as legitimate.
+For simplicity, the following examples concentrate on email authentication results. Other back-end intelligence factors could identify messages that pass email authentication as spoofed, or messages that fail email authentication as legitimate.
 
 For example, the fabrikam.com domain has no SPF, DKIM, or DMARC records. Messages from senders in the fabrikam.com domain can fail composite authentication (note the `compauth` value and reason):
 

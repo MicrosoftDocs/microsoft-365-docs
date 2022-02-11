@@ -3,20 +3,20 @@ title: Device requirements
 description:  Summary of the minimum hardware and software requirements for devices to work with Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
-ms.localizationpriority: normal
+author: tiaraquan
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
-manager: laurawi
+ms.author: tiaraquan
+manager: dougeby
 ms.topic: article
 ---
 
 # Device requirements
 
-Microsoft Managed Desktop regularly evaluates device requirements to be included in the service. This article describes the hardware and software requirements a device must meet in order to work with Microsoft Managed Desktop. You can review a list of specific devices already approved for use with the service based on these requirements. Filter for Microsoft Managed Desktop on the [Shop Windows 10 Pro business devices](https://www.microsoft.com/en-us/windowsforbusiness/view-all-devices) site
+Microsoft Managed Desktop regularly evaluates device requirements to be included in the service. This article describes the hardware and software requirements a device must meet in order to work with Microsoft Managed Desktop. You can review a list of specific devices already approved for use with the service based on these requirements. Filter for Microsoft Managed Desktop on the [Shop Windows Pro business devices](https://www.microsoft.com/en-us/windows/business/devices) site
 
 > [!NOTE]
-> These requirements can change at any time, but we will provide 30 days notice of any hardware requirement changes. The requirements most recently changed are marked with **\***. 
+> These requirements can change at any time, but we will provide 30 days notice of any hardware requirement changes. The requirements most recently changed are marked with <b>\*</b>. 
 
 ## Check hardware requirements
 
@@ -35,18 +35,19 @@ The device must have been made by one of these manufacturers:
 - Lenovo
 - Microsoft
 
+> [!NOTE] 
+> As of Mar 01, 2022, devices managed by Microsoft Managed Desktop must be supported by the OEM. Work with your OEM to find out when devices in your portfolio will reach end of life support. Customers will be responsible for ensuring devices are replaced prior to end of life support. Any devices falling outside of OEM support will continue to be managed by Microsoft Managed Desktop, but support for these devices may be limited as they are at risk of security and performance issues that may not be able to be mitigated by our service.
+</b>
 
 ### Installed software
 
 The device must have this software preinstalled:
 
-- Windows 10 Enterprise, Pro, or Pro Workstation edition
+- <b>\*</b> Windows 10 or Windows 11: Enterprise, Pro, or Pro Workstation edition
 - the 64-bit version of Microsoft 365 Apps for enterprise 
 - All applicable device drivers
 
-> [!NOTE]
-> Windows 11 will be an additional option for preinstalled software once it has reached general availability.
->
+
 ### Physical features
 
 Devices must have these capabilities:
@@ -60,7 +61,7 @@ For more about these capabilities and the technologies related to them that the 
 
 > [!NOTE]
 >- ARM processors are not supported.
->- Windows 11 has additional [hardware requirements](/windows/whats-new/windows-11-requirements).
+>- <b>\*</b> Windows 11 has additional [hardware requirements](/windows/whats-new/windows-11-requirements).
 
 Devices should meet or exceed following limits for storage and memory:
 

@@ -7,7 +7,7 @@ ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: Ent_O365
@@ -29,7 +29,7 @@ You can use PowerShell for Microsoft 365 to delete and restore user accounts.
 >[!Note]
 >Learn how to [restore a user account](../admin/add-users/restore-user.md) by using the Microsoft 365 admin center.
 >
->For a list of additional resources, see [Manage users and groups](../admin/add-users/index.yml).
+>For a list of additional resources, see [Manage users and groups](/admin).
 >   
    
 ## Use the Azure Active Directory PowerShell for Graph module

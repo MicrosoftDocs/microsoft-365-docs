@@ -9,11 +9,12 @@ ms.reviewer: seemg, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
 - TRN_SMB
+- Adm_TOC
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
@@ -21,6 +22,8 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_signup
 - AdminTemplateSet
+- adminvideo
+- intro-get-started
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
@@ -60,15 +63,6 @@ Need help with choosing a plan? Sales consultants are available to answer your q
   
 ::: moniker-end
 
-::: moniker range="o365-germany"
-## Choose a plan
-
-Before you buy, put some thought into the plan you sign up for. This will help prevent growing pains later.
-  
-Need help with choosing a plan? Sales consultants are available to answer your questions. Just go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) and choose one of the contact support options listed at the left side of the page. 
-  
-::: moniker-end
-
 ::: moniker range="o365-worldwide"
 ## Ready to sign up for a free trial or buy a subscription?
 
@@ -82,17 +76,6 @@ You don't need to cancel your trial. If you don't buy the trial subscription, it
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-## Ready to sign up for a free trial or buy a subscription?
-
-Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) to choose the plan you want to buy and to start the sign-up wizard. 
-  
-If you start with a free trial, you can [buy it later](../../commerce/try-or-buy-microsoft-365.md). All your users and data from the trial will still be there.
-  
-You don't need to cancel your trial. If you don't buy the trial subscription, it automatically expires at the end of the trial period, and all the information is permanently deleted.
-  
 ::: moniker-end
 
 ## You'll be asked for the following information when you sign up

@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -32,7 +32,7 @@ ms.technology: m365d
 
 National Institute of Standards and Technology (NIST) recommends that once all steps have been taken to recover from the attack, organizations must review the incident to learn from it and improve security posture or processes. Assessing the different aspects of incident-handling becomes important in preparing for the next incident.
 
-Microsoft 365 Defender can assist in performing post-incident activities by providing an organization with alerts that align with [MITRE ATT&CK Framework](https://attack.mitre.org/). All Microsoft Defender solutions label attacks in accordance with an ATT&CK tactic or technique. 
+Microsoft 365 Defender can help in performing post-incident activities by providing an organization with alerts that align with [MITRE ATT&CK Framework](https://attack.mitre.org/). All Microsoft Defender solutions label attacks in accordance with an ATT&CK tactic or technique.
 
 By mapping alerts to this industry framework, you can:
 
@@ -40,7 +40,7 @@ By mapping alerts to this industry framework, you can:
 - Determine adversary and campaign attribution.
 - Perform trend analysis.
 - Identify skill gaps in attack method awareness.
-- Create a Power Automate Playbook for faster remediation. 
+- Create a Power Automate Playbook for faster remediation.
 
 Post-incident review activity can also result in fine-tuning your security configuration and security team's processes, enhancing your organization’s response capabilities.
 

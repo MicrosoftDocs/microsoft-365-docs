@@ -9,7 +9,7 @@ ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -54,7 +54,7 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
   Rather than assign the global admin role to everyday user accounts, Contoso created three dedicated global administrator accounts with strong passwords. The accounts are protected by Azure AD Multi-Factor Authentication (MFA) and Azure Active Directory (Azure AD) Privileged Identity Management (PIM). *PIM is only available with Microsoft 365 E5.*
 
-  Signing in with a global administrator account is only done for specific administrative tasks. The passwords are only known to designated staff and can only be used within a time period that's configured in Azure AD PIM.
+  Signing in with a **Azure AD DC admin**, or **Global admin** account is only done for specific administrative tasks. The passwords are only known to designated staff and can only be used within a time period that's configured in Azure AD PIM.
 
   Contoso security administrators assigned lesser admin roles to accounts that are appropriate to that IT worker's job function.
 
@@ -64,7 +64,7 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
   MFA adds an additional layer of protection to the sign-in process. It requires users to acknowledge a phone call, text message, or app notification on their smart phone after correctly entering their password. With MFA, Azure AD user accounts are protected against unauthorized sign-in, even if an account password is compromised.
 
-   - To protect against compromise of the Microsoft 365 subscription, Contoso requires MFA on all global administrator accounts.
+   - To protect against compromise of the Microsoft 365 subscription, Contoso requires MFA on all **Azure AD DC admin**, or **Global admin** accounts.
    - To protect against phishing attacks, in which an attacker compromises the credentials of a trusted person in the organization and sends malicious emails, Contoso enabled MFA on all user accounts, including managers and executives.
 
 - Safer device and application access with Conditional Access policies
@@ -113,9 +113,9 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
   Contoso is using [Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) to protect against data leakage through internet-based apps and services and enterprise apps and data on enterprise-owned devices and personal devices that employees bring to work.
 
-- Cloud monitoring with Microsoft Cloud App Security
+- Cloud monitoring with Microsoft Defender for Cloud Apps
 
-  Contoso is using [Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security) to map their cloud environment, monitor its usage, and detect security events and incidents. *Microsoft Cloud App Security is only available with Microsoft 365 E5.*
+  Contoso is using [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) to map their cloud environment, monitor its usage, and detect security events and incidents. *Microsoft Defender for Cloud Apps is only available with Microsoft 365 E5.*
 
 - Device management with Microsoft Intune
 
@@ -123,9 +123,9 @@ To follow security best practices and Microsoft 365 for enterprise deployment re
 
 ## Security management
 
-- Central security dashboard for IT with Azure Defender
+- Central security dashboard for IT with Microsoft Defender for Cloud
 
-  Contoso uses the [Azure Defender](https://azure.microsoft.com/services/security-center/) to present a unified view of security and threat protection, to manage security policies across its workloads, and to respond to cyberattacks.
+  Contoso uses the [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center/) to present a unified view of security and threat protection, to manage security policies across its workloads, and to respond to cyberattacks.
 
 - Central security dashboard for users with Windows Defender Security Center
 

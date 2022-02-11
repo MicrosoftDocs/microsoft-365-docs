@@ -9,7 +9,7 @@ ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_Enterprise
 - M365-subscription-management
@@ -98,7 +98,7 @@ Ongoing updates process:
 
 Here are the products, their channels, and the deployment groups used by this example organization. 
 
-![Deployment groups for broad deployment of the latest releases](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
+![Deployment groups for broad deployment of the latest releases.](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
 
 ## See also
 

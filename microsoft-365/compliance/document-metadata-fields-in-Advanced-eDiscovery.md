@@ -7,9 +7,9 @@ author: markjjo
 manager: laurawi
 ms.date:
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
@@ -48,15 +48,18 @@ The following table lists the metadata fields for documents in a review set in a
 |Compliance labels|ComplianceLabels|Compliance_labels|[Retention labels](retention.md) applied to content in Office 365.|
 |Compound Path|CompoundPath|Compound_path|Human readable path that describes the source of the item.|
 |Content*|Content||Extracted text of the item.|
-|Conversation Body|Conversation Body||Conversation body of the item.|
+|Conversation Body|ConversationBody||Conversation body of the item.|
 |Conversation ID|ConversationId|Conversation_ID|Conversation Id from the message. For Teams 1:1 and group chats, all transcript files and their family items within the same conversation share the same Conversation ID. For more information, see [Advanced eDiscovery workflow for content in Microsoft Teams](teams-workflow-in-advanced-ediscovery.md).|
+|Conversation Family ID|ConversationFamilyID|ConversationFamilyID|The Id that identifies individual elements of a conversation as well as the related items in the conversation.|
 |Conversation Index||Conversation_index|Conversation index from the message.|
-|Conversation Name||ConversationName|Name of the channel in Teams. The format of the name depends on the type of channel: <br>Teams channel chats and private channel chats: \<Name of team, name of channel\> <br>Teams 1:1 and group chats: Display name and email address of all chat participants<br>Yammer community: Community name + first 120 chars of a post<br>Yammer private: Sender name and email address + first 120 chars of a message|
+|Conversation Name||ConversationName|This field depends on content type.<br>**Teams 1:1 chat:** first 40 characters of first message.<br>**Teams 1:N chat:** Name of group chat; if not available, the first 40 characters of the first message.<br>**Teams Channel Post:** Post title or announcement subhead; if not available, the first 40 characters of the first message.|
 |Conversation Pdf Time|ConversationPdfTime||Date when the PDF version of the conversation was created.|
 |Conversation Redaction Burn Time|ConversationRedactionBurnTime||Date when the PDF version of the conversation was created for Chat.|
-|Conversation Topic|Conversation Topic||Conversation topic of the item.|
-|Conversation Type|ConversationType|ConversationType|The type of chat conversation. Values are: <br> Teams 1:1 and group chats and all Yammer conversations: **Group** for<br>Teams channels and private channels: **Channel**|
-|Contains Edited Message|ContainsEditedMessage|ContainsEditedMessage|Indicates if the Teams chat transcript includes an edited message
+|Conversation Topic|ConversationTopic||Conversation topic of the item.|
+|Conversation Type|ConversationType|ConversationType|The type of chat conversation. Values are: <br>**Teams 1:1 and group chats and all Yammer conversations:** Group<br>**Teams channels and private channels:** Channel|
+|Contains Deleted Message|ContainsDeletedMessage|ContainsDeletedMessage|Indicates if the chat transcript includes a deleted message|
+|Contains Edited Message|ContainsEditedMessage|ContainsEditedMessage|Indicates if the chat transcript includes an edited message|
+|Teams Announcement Title|TeamsAnnouncementTitle|TeamsAnnouncementTitle|Title from a [teams announcement](https://support.microsoft.com/office/send-an-announcement-to-a-channel-8f244ea6-235a-4dcc-9143-9c5b801b4992).|
 |||Converted_file_path|The path of the converted export file. For internal Microsoft use only.|
 |Custodian|Custodian|Custodian|Name of the custodian the item was associated with.|
 |Date|Date|Date|Date is a computed field that depends on the file type.<p>Email: Sent date<br>Email attachments: Last modified date of the document;if not available, the parent's Sent date<br>Embedded documents: Last modified date of the document; if not available, the parent's last modified date<br>SPO documents (includes modern attachments): SharePoint Last modified date; if not available, the documents last modified date<br>Non-Office 365 documents: Last modified date<br>Meetings: Meeting start date<br>VoiceMail: Sent date<br>IM: Sent date<br>Teams: Sent date|
@@ -65,8 +68,8 @@ The following table lists the metadata fields for documents in a review set in a
 |Document date created|CreatedTime|Doc_date_created|Create date from document metadata.|
 |DocIndex*|||The index in the family. **-1** or **0** means it is the root.|
 |Document keywords||Doc_keywords|Keywords from the document metadata.|
-|Document modified by||Doc_modified_by|Last modified date by from document metadata.|
-|Document Revision|Doc_Version|Doc_Version|Revision from the document metadata.|
+|Document modified by||Doc_modified_by|The user who last modified the document from document metadata.|
+|Document revision|Doc_Version|Doc_Version|Revision from the document metadata.|
 |Document subject||Doc_subject|Subject from the document metadata.|
 |Document template||Doc_template|Template from the document metadata.|
 |DocLastSavedBy||Doc_last_saved_by|The name of the user who last saved the document.|
@@ -96,7 +99,7 @@ The following table lists the metadata fields for documents in a review set in a
 |File system date created||File_system_date_created|Created date from file system (only applies to non-Office 365 data).|
 |File system date modified||File_system_date_modified|Modified date from file system (only applies to non-Office 365 data).|
 |File Type|FileType||File type of the item based on file extension.|
-|Group Id|Group Id|Group_ID|Groups together all items for email and documents. For email, this includes the message and all attachments and extracted items. For documents, this includes the document and any embedded items.|
+|Group Id|GroupId|Group_ID|Groups together all items for email and documents. For email, this includes the message and all attachments and extracted items. For documents, this includes the document and any embedded items.|
 |Has attachment|EmailHasAttachment|Email_has_attachment|Indicates whether or not the message has attachments.|
 |Has attorney|HasAttorney||**True** when at least one of the participants is found in the attorney list; otherwise, the value is **False**.|
 |HasText*||Has_text|Indicates whether or not the item has text; possible values are **True** and **False**.|
@@ -166,7 +169,8 @@ The following table lists the metadata fields for documents in a review set in a
 |Subject|Subject|Email_subject|Subject of the message.|
 |Subject/Title|SubjectTitle||Calculated field comprised of the subject or title of the item.|
 |Tags|Tags|Tags|Tags applied in a review set.|
-|Teams Channel Name|TeamsChannel|Channel_Name|Name of the channel in Microsoft Teams.|
+|Channel Name|Channel|ChannelName|This is the Teams channel name. Only applies to Microsoft Teams content.|
+|Team Name|TeamName|TeamName|**Teams:** Name of team<br>**Yammer:** Community name|
 |Themes list|ThemesList|Themes_list|Themes list as calculated for analytics.|
 |Title|Title|Doc_title|Title from the document metadata. Title from the document metadata. For Teams and Yammer content, this is the value from the ConversationName property.|
 |To|To|Email_to|To field for message types. Format is **DisplayName\<SmtpAddress>**|
