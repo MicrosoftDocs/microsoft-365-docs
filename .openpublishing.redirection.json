@@ -6647,11 +6647,6 @@
       "source_path": "microsoft-365/campaigns/share-files-and-videos.md",
       "redirect_url": "/microsoft-365/business-premium/share-files-and-videos",
       "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/campaigns/TOC.yml",
-      "redirect_url": "/microsoft-365/business-premium/TOC.yml",
-      "redirect_document_id": true
     }
   ]
 }
