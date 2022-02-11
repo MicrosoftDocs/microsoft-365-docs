@@ -34,7 +34,6 @@ When you open a signer request, you'll need to provide some important publisher 
 
 1. [Gather publisher details](#gather-publisher-details).
 1. Open a ticket with Microsoft Managed Desktop Operations to request the signer rule and include following details:  
-
     - Application name
     - Application version
     - Description
@@ -67,7 +66,6 @@ You can pause or roll back the deployment at any time during the rollout. To pau
 1. Open the Event Viewer on that device.
 1. In the Event Viewer, navigate to **Application and Services Logs\Microsoft\Windows**, and then select **AppLocker**.
 1. Find any **8003** or **8006** event, and then copy information from the event:
-
     - Application name
     - Application version
     - Description
