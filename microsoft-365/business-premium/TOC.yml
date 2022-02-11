@@ -35,7 +35,7 @@
 - name: Device setup for all staff
   items: 
     - name: Set up multifactor authentication
-      href: m365-campaigns-multifactor-authenication.md
+      href: m365-campaigns-multifactor-authentication.md
     - name: Set up mobile devices
       href: ../business/set-up-mobile-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Protect PCs and Macs
