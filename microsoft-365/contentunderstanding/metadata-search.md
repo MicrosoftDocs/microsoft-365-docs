@@ -34,7 +34,7 @@ Advanced metadata search lets you use the metadata associated with a document to
 
     ![Screenshot of a document library page showing the metadata search pane.](../media/content-understanding/metadata-search-pane.png)
 
-   Five metadata search fields are currently available. More fields will be added in the future.
+   Six metadata search fields are currently available. More fields will be added in the future.
 
    |Field    |Use this field to  |
    |---------|---------|
@@ -42,6 +42,7 @@ Advanced metadata search lets you use the metadata associated with a document to
    |Name     |Search in the **Name** column in the library.          |
    |People   |Search for a match on people in any column in the library.   |
    |Modified |Search by selected date range in the **Modified** column in the library.         |
-   |Type     |Search by selected file type.        |
+   |File type     |Search by selected file type.        |
+   |Content type  |Search by selected content type.        |
 
 3. Select **Search**. The documents that match your metadata search are shown on the results page. 
