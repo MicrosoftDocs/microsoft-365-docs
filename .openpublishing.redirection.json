@@ -6564,18 +6564,18 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/campaigns/create-communications-site.md",
-      "redirect_url": "/microsoft-365/business-premium/create-communications-site",
+      "source_path": "microsoft-365/campaigns/index.md",
+      "redirect_url": "/microsoft-365/business-premium/index",
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/campaigns/create-communications-site.md",
-      "redirect_url": "/microsoft-365/business-premium/create-communications-site",
+      "source_path": "microsoft-365/campaigns/m365-campaigns-conditional-access.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-conditional-access",
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/campaigns/create-communications-site.md",
-      "redirect_url": "/microsoft-365/business-premium/create-communications-site",
+      "source_path": "microsoft-365/campaigns/m365-campaigns-increase-protection.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-increase-protection",
       "redirect_document_id": true
     },
     {
