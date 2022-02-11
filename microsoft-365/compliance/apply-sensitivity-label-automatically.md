@@ -178,7 +178,7 @@ If you configure a sensitivity label with only EDM for your sensitive informatio
 
 ### Configuring trainable classifiers for a label
 
-If you use this option, make sure you've published in your tenant at least one other sensitivity label that's configured for auto-labeling and the [sensitive info types option](#configuring-sensitive-info-types-for-a-label).
+If you use this option with Microsoft 365 Apps for Windows version 2106 or lower, or Microsoft 365 Apps for Mac version 16.50 or lower, make sure you've published in your tenant at least one other sensitivity label that's configured for auto-labeling and the [sensitive info types option](#configuring-sensitive-info-types-for-a-label). This requirement isn't necessary when you use later versions on these platforms.
 
 When you select the **Trainable classifiers** option, select one or more of the pre-trained or custom trainable classifiers:
 
