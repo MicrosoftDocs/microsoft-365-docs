@@ -20,8 +20,7 @@ ms.prod: m365-security
 
 # Application Guard for Office for admins
 
-**Applies to:** Word, Excel, and PowerPoint for Microsoft 365, Windows 10
-Enterprise
+**Applies to:** Word, Excel, and PowerPoint for Microsoft 365, Windows 10 Enterprise, Windows 11 Enterprise
 
 Microsoft Defender Application Guard for Office (Application Guard for Office) helps prevent untrusted files from accessing trusted resources, keeping your enterprise safe from new and emerging attacks. This article walks admins through setting up devices for a preview of Application Guard for Office. It provides information about system requirements and installation steps to enable Application Guard for Office on a device.
 
@@ -35,8 +34,8 @@ Microsoft Defender Application Guard for Office (Application Guard for Office) h
 
 ### Minimum software requirements
 
-* **Windows 10**: Windows 10 Enterprise edition, Client Build version 2004 (20H1) build 19041 or later
-* **Office**: Office Current Channel and Monthly Enterprise Channel, Build version 2011 16.0.13530.10000 or later. Both 32-bit and 64-bit versions of Office are supported.
+* **Windows**: Windows 10 Enterprise edition, Client Build version 2004 (20H1) build 19041 or later. All versions of Windows 11 are supported. 
+* **Office**: Office Current Channel and Monthly Enterprise Channel, Build version 2011 16.0.13530.10000 or later. Office Semi-Annual Enterprise Channel, Build version 2108 or later. Both 32-bit and 64-bit versions of Office are supported.
 * **Update package**: Windows 10 cumulative monthly security update [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
 For detailed system requirements, refer to [System requirements for Microsoft Defender Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard). Also, please refer to your computer manufacturer's guides on how to enable virtualization technology.
