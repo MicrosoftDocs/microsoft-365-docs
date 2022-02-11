@@ -112,12 +112,6 @@ In order to preview new features and provide early feedback, it is recommended t
     sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
     ```
 
-- Download and make usable all the metadata for the currently enabled yum repositories:
-
-    ```bash
-    yum makecache
-    ```
-
 ### SLES and variants
 
 > [!NOTE]
@@ -382,6 +376,12 @@ Download the onboarding package from Microsoft 365 Defender portal.
 
         ```bash
         mdatp health --field real_time_protection_enabled
+        ```
+        
+      If it is not enabled, execute the following command:
+      
+       ```bash
+        mdatp config real-time-protection --value enabled
         ```
 
     - Open a Terminal window and execute the following command:

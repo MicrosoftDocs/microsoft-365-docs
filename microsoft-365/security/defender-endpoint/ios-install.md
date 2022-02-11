@@ -70,9 +70,69 @@ Deploy Defender for Endpoint on iOS via Intune Company Portal.
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager Admin Center3.](images/ios-deploy-3.png)
 
+## Complete deployment for supervised devices
+
+The Microsoft Defender for Endpoint on iOS app has specialized ability on supervised iOS/iPadOS devices, given the increased management capabilities provided by the platform on these types of devices. It can also provide Web Protection **without setting up a local VPN on the device**. This gives end-users a seamless experience while still being protected from phishing and other web-based attacks.
+
+### Configure Supervised Mode via Intune
+
+Next, configure the supervised mode for Defender for Endpoint app through an App Configuration policy.
+
+   > [!NOTE]
+   > This app configuration policy for supervised devices is applicable only to managed devices and should be targeted for ALL managed iOS devices as a best practice.
+
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** \> **App configuration policies** \> **Add**. Select **Managed devices**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Image of Microsoft Endpoint Manager Admin Center4.](images/ios-deploy-4.png)
+
+1. In the *Create app configuration policy* page, provide the following information:
+    - Policy Name
+    - Platform: Select iOS/iPadOS
+    - Targeted app: Select **Microsoft Defender for Endpoint** from the list
+
+    > [!div class="mx-imgBorder"]
+    > ![Image of Microsoft Endpoint Manager Admin Center5.](images/ios-deploy-5.png)
+
+1. In the next screen, select **Use configuration designer** as the format. Specify the following property:
+    - Configuration Key: issupervised
+    - Value type: String
+    - Configuration Value: {{issupervised}}
+
+    > [!div class="mx-imgBorder"]
+    > ![Image of Microsoft Endpoint Manager Admin Center6.](images/ios-deploy-6.png)
+
+1. Select **Next** to open the **Scope tags** page. Scope tags are optional. Select **Next** to continue.
+
+1. On the **Assignments** page, select the groups that will receive this profile. For this scenario, it is best practice to target **All Devices**. For more information on assigning profiles, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).
+
+   When deploying to user groups, a user must sign in to a device before the policy applies.
+
+   Click **Next**.
+
+1. On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list of configuration profiles.
+
+1. Next, for enhanced Anti-phishing capabilities, you can deploy a custom profile on the supervised iOS devices. Follow the steps below:
+
+    - Download the config profile from [https://aka.ms/mdeiosprofilesupervised](https://aka.ms/mdeiosprofilesupervised)
+    - Navigate to **Devices** -> **iOS/iPadOS** -> **Configuration profiles** -> **Create Profile**
+
+    > [!div class="mx-imgBorder"]
+    > ![Image of Microsoft Endpoint Manager Admin Center7.](images/ios-deploy-7.png)
+    
+    - Provide a name of the profile. When prompted to import a Configuration profile file, select the one downloaded from the previous step.
+    - In the **Assignment** section, select the device group to which you want to apply this profile. As a best practice, this should be applied to all managed iOS devices. Select **Next**.
+    - On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list of configuration profiles.
+
+
 ## Auto-Onboarding of VPN profile (Simplified Onboarding)
 
-Admins can configure auto-setup of VPN profile. This will automatically setup the Defender for Endpoint VPN profile without having the user to do so while onboarding. Note that VPN is used in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
+For unsupervised devices, a VPN is used in order to provide the Web Protection feature. This is not a regular VPN and is a local/self-looping VPN that does not take traffic outside the device.
+
+>[!NOTE]
+>For supervised devices, a VPN is not needed for Web Protection capability and requires admins to setup a configuration profile on supervised devices. To configure for supervised devices, follow the steps in the [Complete deployment for supervised devices](#complete-deployment-for-supervised-devices) section.
+
+Admins can configure auto-setup of VPN profile. This will automatically setup the Defender for Endpoint VPN profile without having the user to do so while onboarding. 
 
 This step simplifies the onboarding process by setting up the VPN profile. For a zero-touch or silent onboarding experience, see the next section: [Zero-touch onboard](#zero-touch-onboarding-of-microsoft-defender-for-endpoint-preview).
 
@@ -96,12 +156,11 @@ This step simplifies the onboarding process by setting up the VPN profile. For a
 
 ## Zero-touch onboarding of Microsoft Defender for Endpoint (Preview)
 
-
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
-Admins can configure Microsoft Defender for Endpoint to deploy and activate silently. In this flow, the user is simply notified of the installation. Defender for Endpoint is automatically installed without the need for the user to open the app. Follow the steps below to setup zero-touch or silent deployment of Defender for Endpoint on enrolled iOS devices:
+Admins can configure Microsoft Defender for Endpoint to deploy and activate silently. In this flow, the administrator creates a deployment profile and the user is simply notified of the installation. Defender for Endpoint is automatically installed without the need for the user to open the app. Follow the steps below to setup zero-touch or silent deployment of Defender for Endpoint on enrolled iOS devices:
 
 1. In [Microsoft Endpoint manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices** > **Configuration Profiles** > **Create Profile**.
 1. Choose **Platform** as **iOS/iPadOS** and **Profile type** as **VPN**. Select **Create**.
@@ -126,6 +185,9 @@ Once the above configuration is done and synced with the device, the following a
     - A provisional notification will be sent to the user device.
     - Web Protection and other features will be activated.
 
+   > [!NOTE]
+   > For supervised devices, although a VPN profile is not required, admins can still setup Zero-touch onboarding by configuring the Defender for Endpoint VPN profile through Intune. The VPN profile will be deployed on the device but will only be present on the device as a pass-through profile and can be deleted after initial onboarding.
+
 ## Complete onboarding and check status
 
 1. Once Defender for Endpoint on iOS has been installed on the device, you
@@ -140,47 +202,6 @@ Once the above configuration is done and synced with the device, the following a
     > [!div class="mx-imgBorder"]
     > ![A screenshot of a cell phone Description automatically generated.](images/device-inventory-screen.png)
 
-## Configure Microsoft Defender for Endpoint for Supervised Mode
-
-The Microsoft Defender for Endpoint on iOS app has specialized ability on supervised iOS/iPadOS devices, given the increased management capabilities provided by the platform on these types of devices. To take advantage of these capabilities, the Defender for Endpoint app needs to know if a device is in Supervised Mode.
-
-### Configure Supervised Mode via Intune
-
-Intune allows you to configure the Defender for iOS app through an App Configuration policy.
-
-   > [!NOTE]
-   > This app configuration policy for supervised devices is applicable only to managed devices and should be targeted for all managed iOS devices as a best practice.
-
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Apps** \> **App configuration policies** \> **Add**. Click on **Managed devices**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Image of Microsoft Endpoint Manager Admin Center4.](images/ios-deploy-4.png)
-
-1. In the *Create app configuration policy* page, provide the following information:
-    - Policy Name
-    - Platform: Select iOS/iPadOS
-    - Targeted app: Select **Microsoft Defender for Endpoint** from the list
-
-    > [!div class="mx-imgBorder"]
-    > ![Image of Microsoft Endpoint Manager Admin Center5.](images/ios-deploy-5.png)
-
-1. In the next screen, select **Use configuration designer** as the format. Specify the following property:
-    - Configuration Key: issupervised
-    - Value type: String
-    - Configuration Value: {{issupervised}}
-
-    > [!div class="mx-imgBorder"]
-    > ![Image of Microsoft Endpoint Manager Admin Center6.](images/ios-deploy-6.png)
-
-1. Click **Next** to open the **Scope tags** page. Scope tags are optional. Click **Next** to continue.
-
-1. On the **Assignments** page, select the groups that will receive this profile. For this scenario, it is best practice to target **All Devices**. For more information on assigning profiles, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).
-
-   When deploying to user groups, a user must sign in to a device before the policy applies.
-
-   Click **Next**.
-
-1. On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list of configuration profiles.
 
 ## Next Steps
 

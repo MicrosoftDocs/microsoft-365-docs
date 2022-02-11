@@ -14,9 +14,9 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.date: 12/06/2021
-ms.collection: m365-security-compliance
+ms.collection: m365solution-scenario
 ms.custom: admindeeplinkDEFENDER
+ms.date: 1/18/2022
 ---
 
 # Enable attack surface reduction rules
@@ -153,7 +153,7 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
 
    - In **Name**, type a name for the rule.
    - In **Description**, type a brief description.
-   - In **OMA-URI**, type or paste the specific OMA-URI link for the rule that you are adding. Refer to the MEM section earlier in this article for the OMA-URI to use for this example rule. For attack surface reduction rule GUIDS, see [Per rule descriptions](attack-surface-reduction-rules-reference.md#per-rule-descriptions) in the topic: Attack surface reduction rules.
+   - In **OMA-URI**, type or paste the specific OMA-URI link for the rule that you are adding. Refer to the MDM section in this article for the OMA-URI to use for this example rule. For attack surface reduction rule GUIDS, see [Per rule descriptions](attack-surface-reduction-rules-reference.md#per-rule-descriptions) in the topic: Attack surface reduction rules.
    - In **Data type**, select **String**.
    - In **Value**, type or paste the GUID value, the \= sign and the State value with no spaces (_GUID=StateValue_). Where:
      

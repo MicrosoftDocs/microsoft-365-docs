@@ -17,7 +17,7 @@
     - name: Connect your domain to Microsoft 365
       href: connect-domain-tom365.md
     - name: Use Migration Manager to move everyone's data
-      href: https://docs.microsoft.com/sharepointmigration/mm-google-overview
+      href: migrate-files-migration-manager.md
     - name: Cancel Google Workspace
       href: cancel-google.md
     

@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
@@ -29,7 +29,7 @@ Here's a list of the jobs (which are typically long-running processes) that are 
 |Adding remediated data to a review set | Data with processing errors is remediated and loaded back into a review set. For more information, see:</br>• [Error remediation when processing data](error-remediation-when-processing-data-in-advanced-ediscovery.md)</br>• [Single item error remediation](single-item-error-remediation.md)| 
 |Comparing load sets | A user looks at the differences between different load sets in a review set. A load set is an instance of adding data to a review set. For example, if you add the results of two different searches to the same review set, each would represent a load set. |
 |Conversation reconstruction|When a user adds the results of a search to a conversation review set, instant message conversations (also called *threaded conversations*) in services like Microsoft Teams are reconstructed in a PDF file. This job is also triggered when a user clicks **Action > Create conversation PDFs** in a review set. For more information, see [Review conversations in Advanced eDiscovery](conversation-review-sets.md).
-|Converting redacted documents to PDF|After a user annotates a document in a review set and redacts a portion of it, they can choose to convert the redacted document to a PDF file. This ensures that the redacted portion will not be visible if the document is exported for presentation. For more information, see [View documents in a review set](annotating-and-redacting-documents.md). |
+|Converting redacted documents to PDF|After a user annotates a document in a review set and redacts a portion of it, they can choose to convert the redacted document to a PDF file. This ensures that the redacted portion will not be visible if the document is exported for presentation. For more information, see [View documents in a review set](view-documents-in-review-set.md). |
 |Estimating search results | After a user creates and runs or reruns a draft collection, the search tool searches the index for items that match the search query and prepares an estimate that includes the number and total size of all items by the search, and the number of data sources searched.  For more information, see [Collect data for a case](collecting-data-for-ediscovery.md). | 
 |Preparing data for export | A user exports documents from a review set. When the export process is complete, they can download the exported data to a local computer. For more information, see [Export case data](exporting-data-ediscover20.md). | 
 |Preparing for error resolution |When a user selects a file and creates a new error remediation in the Error view on the **Processing** tab of a case, the first step in the process is to upload the file that has the processing error to an Azure Storage location in the Microsoft cloud. This job tracks the progress of the upload process. For more information about the error remediation workflow, see [Error remediation when processing data](error-remediation-when-processing-data-in-advanced-ediscovery.md). | 

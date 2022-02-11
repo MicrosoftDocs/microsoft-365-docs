@@ -15,7 +15,7 @@ ms.collection:
 search.appverid: MET150
 ms.reviewer: inbadian, shlomiakirav
 description: Find out how to get help or contact support in Microsoft Defender for Business (preview)
-ms.date: 12/10/2021
+ms.date: 02/07/2022
 ---
 
 # Get help and support for Microsoft Defender for Business (preview)
@@ -30,6 +30,11 @@ ms.date: 12/10/2021
 If you need help with Microsoft Defender for Business (preview), select the Help icon (?) in the upper right corner of the screen. Type your question or issue. Several options, such as quick answers or help articles, will be listed.
 
 If you don't see the answer to your question, you can open a support ticket.
+
+>
+> **Got a minute?**
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
 
 ## See also
 

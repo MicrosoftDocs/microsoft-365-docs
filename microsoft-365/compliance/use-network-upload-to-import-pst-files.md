@@ -44,15 +44,9 @@ You have to perform Step 1 only once to import PST files to Microsoft 365 mailbo
 
 ## Before you import PST files
   
-- You have to be assigned the Mailbox Import Export role in Exchange Online to import PST files to Microsoft 365 mailboxes. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a role group, assign the Mailbox Import Export role, and then add yourself as a member. For more information, see the "Add a role to a role group" or the "Create a role group" sections in [Manage role groups](/Exchange/permissions-exo/role-groups).
+- You have to be assigned the Mailbox Import Export role in Exchange Online to create import jobs in the Microsoft 365 compliance center and import PST files to user mailboxes. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a role group, assign the Mailbox Import Export role, and then add yourself as a member. For more information, see the "Add a role to a role group" or the "Create a role group" sections in [Manage role groups](/Exchange/permissions-exo/role-groups).
 
-    Also, to create import jobs in the Microsoft 365 compliance center, one of the following must be true:
-
-  - You have to be assigned the Mail Recipients role in Exchange Online. By default, this role is assigned to the Organization Management and Recipient Management roles groups.
-
-    Or
-
-  - You have to be a global administrator in your organization.
+    In addition to the Mailbox Import Export role, you also have to be assigned the Mail Recipients role in Exchange Online. By default, this role is assigned to the Organization Management and Recipient Management roles groups in Exchange Online.
 
     > [!TIP]
     > Consider creating a new role group in Exchange Online that's specifically intended for importing PST files. For the minimum level of privileges required to import PST files, assign the Mailbox Import Export and Mail Recipients roles to the new role group, and then add members.

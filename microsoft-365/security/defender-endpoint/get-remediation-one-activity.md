@@ -62,7 +62,7 @@ completerEmail|String|If the remediation activity was manually completed by some
 completerId|String|If the remediation activity was manually completed by someone, this column contains their object ID|Null
 completionMethod|String|A remediation activity can be completed "automatically" (if all the devices are patched) or "manually" by a person who selects "mark as completed"|Automatic
 createdOn|DateTime|Time this remediation activity was created|2021-01-12T18:54:11.5499478Z
-Description|String|Description of this remediation activity|Update Microsoft Silverlight  to a later version to mitigate known vulnerabilities affecting your devices.
+Description|String|Description of this remediation activity|Update Microsoft Silverlight  to a later version to mitigate known vulnerabilities affecting your devices.
 dueOn|DateTime|Due date the creator set for this remediation activity|2021-01-13T00:00:00Z
 fixedDevices||The number of devices that have been fixed|2
 ID|String|ID of this remediation activity|097d9735-5479-4899-b1b7-77398899df92
@@ -70,7 +70,7 @@ nameId|String|Related product name|Microsoft Silverlight
 Priority|String|Priority the creator set for this remediation activity (High\Medium\Low)|High
 productId|String|Related product ID|microsoft-_-silverlight
 productivityImpactRemediationType|String|A few configuration changes could be requested only for devices that don't affect users. This value indicates the selection between "all exposed devices" or "only devices with no user impact."|AllExposedAssets
-rbacGroupNames|String|Related device group names|[ "Windows Servers", "Windows 11", "Windows 10" ]
+rbacGroupNames|String|Related device group names|[ "Windows Servers", "Windows 11", "Windows 10" ]
 recommendedProgram|String|Recommended program to upgrade to|Null
 recommendedVendor|String|Recommended vendor to upgrade to|Null
 recommendedVersion|String|Recommended version to update/upgrade to|Null

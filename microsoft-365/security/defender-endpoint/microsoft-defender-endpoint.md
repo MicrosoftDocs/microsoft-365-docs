@@ -11,7 +11,10 @@ author: mjcaparas
 ms.localizationpriority: high
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - m365-initiative-defender-endpoint
+ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -29,7 +32,7 @@ ms.technology: mde
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
 
 > [!TIP]
-> Soon, Microsoft Defender for Endpoint will be available in two plans. This article describes the features and capabilities that are included in Microsoft Defender for Endpoint Plan 2. [Learn more about Microsoft Defender for Endpoint Plan 1 (preview) and Plan 2](defender-endpoint-plan-1-2.md).
+> Soon, Microsoft Defender for Endpoint will be available in two plans. This article describes the features and capabilities that are included in Microsoft Defender for Endpoint Plan 2. [Learn more about Microsoft Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md).
 > 
 
 <p><p>
@@ -140,7 +143,7 @@ Defender for Endpoint directly integrates with various Microsoft solutions, incl
 - Microsoft Defender for Office
 - Skype for Business
 
-**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**
+**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)**
 
 With Microsoft 365 Defender, Defender for Endpoint and various Microsoft security solutions form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate, and automatically respond to sophisticated attacks.
 

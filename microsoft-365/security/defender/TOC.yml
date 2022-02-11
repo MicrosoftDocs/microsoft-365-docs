@@ -98,6 +98,8 @@
           href: deploy-supported-services.md
         - name: Turning on Microsoft 365 Defender FAQs
           href: m365d-enable-faq.md              
+        - name: Train your security staff
+          href: microsoft-365-defender-train-security-staff.md              
     - name: Protect against threats
       items: 
       - name: Microsoft Secure Score
@@ -164,6 +166,16 @@
                    href: investigate-incidents.md
                  - name: Alerts
                    href: investigate-alerts.md    
+                 - name: Alert grading playbooks
+                   items: 
+                    - name: Overview
+                      href: alert-grading-playbooks.md
+                    - name: Suspicious email forwarding activity
+                      href: alert-grading-playbook-email-forwarding.md
+                    - name: Suspicious inbox forwarding rules
+                      href: alert-grading-playbook-inbox-forwarding-rules.md
+                    - name: Suspicious inbox manipulation rules
+                      href: alert-grading-playbook-inbox-manipulation-rules.md
                  - name: Users 
                    href: investigate-users.md                  
               - name: Incident response playbooks
@@ -262,6 +274,8 @@
                   href: advanced-hunting-devicetvmsecureconfigurationassessment-table.md
                 - name: DeviceTvmSecureConfigurationAssessmentKB
                   href: advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
+                - name: DeviceTvmSoftwareEvidenceBeta
+                  href: advanced-hunting-devicetvmsoftwareevidencebeta-table.md
                 - name: DeviceTvmSoftwareInventory
                   href: advanced-hunting-devicetvmsoftwareinventory-table.md
                 - name: DeviceTvmSoftwareVulnerabilities
