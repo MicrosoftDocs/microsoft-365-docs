@@ -75,7 +75,7 @@ You don't need to cancel your trial. If you don't buy the trial subscription, it
 
 ## Watch: Sign up for Microsoft 365 Business Premium
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX?]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
 
 ::: moniker-end
 
