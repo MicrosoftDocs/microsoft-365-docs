@@ -26,7 +26,7 @@ Identifying and classifying sensitive items that are under your organizations co
 - automated pattern recognition, like sensitive information types
 - [machine learning](classifier-learn-about.md)
 
-Sensitive information types (SIT) are pattern-based classifiers. They detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md).
+Sensitive information types (SIT) are pattern-based classifiers. They detect sensitive information like social security, credit card, or bank account numbers to identify sensitive items, see [Sensitive information types entity definitions](sensitive-information-type-entity-definitions.md) for a complete list of all SITs.
 
 Microsoft provides a large number of pre-configured SITs or you can create your own.
 
@@ -40,6 +40,25 @@ Microsoft provides a large number of pre-configured SITs or you can create your 
 - [Inside risk management](insider-risk-management-solution-overview.md)
 - [Auto-labelling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Microsoft Priva](/privacy/priva)
+
+## Categories of sensitive information types
+
+### Built in sensitive information types
+
+These SITs are created by Microsoft show up in the compliance console by default. These SITs cannot be edited, but they can be used as templates and copied to create custom sensitive information types.
+
+### Named entity sensitive information types
+
+Named entity SITs also show up in the compliance console by default. They detect person names, physical addresses, and medical terms and conditions. They cannot be edited or copied. See, [Learn about named entities (preview)](named-entities-learn.md#learn-about-named-entities-preview) for more information. Named entity SITs come in two types:
+
+**bundled**
+
+**un-bundled**
+
+### Custom sensitive information types
+
+### Exact data match sensitive information types
+
 
 ## Fundamental parts of a sensitive information type
 
@@ -59,6 +78,8 @@ Learn more about confidence levels in this video
 
 
  > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]  
+
+
 
 ### Example sensitive information type
 
