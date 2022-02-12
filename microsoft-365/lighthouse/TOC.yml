@@ -38,6 +38,8 @@
       href: m365-lighthouse-reset-user-password.md
     - name: Search for users
       href: m365-lighthouse-search-for-users.md
+    - name: View and manage risky users
+      href: m365-lighthouse-view-manage-risky-users.md
 - name: Manage devices
   items: 
     - name: Device compliance page overview
