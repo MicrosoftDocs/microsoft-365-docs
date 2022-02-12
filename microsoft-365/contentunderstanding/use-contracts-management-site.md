@@ -37,7 +37,9 @@ The site uses the power of a SharePoint Syntex model running on document librari
 
 - **Models** – Use this library of models to classify documents and extract metadata. Users can create their own models to fit their needs and add them to this library.
 
-- **Sample contracts library** – Discover a variety of sample documents to help you train models. 
+- **Sample contracts library** – Find files that were classified and have had metadata extracted using the SharePoint Syntex model. 
+
+There is a separate view in the library where you can track other metadata such as status, and that uses document library formatting to show it in a more visual way.
 
 ## Provision the site
 
