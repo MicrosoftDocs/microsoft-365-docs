@@ -26,7 +26,7 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -77,6 +77,9 @@ To gain access into which licenses are provisioned to your company, and to check
 Onboarding to Microsoft Defender for Endpoint is easy. From the navigation menu, select any item under the Endpoints section, or any Microsoft 365 Defender feature such as Incidents, Hunting, Action center, or Threat analytics to initiate the onboarding process.
 
 From a web browser, navigate to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+
+## Data center location
+Microsoft Defender for Endpoint will store and process data in the [same location as used by Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable). If Microsoft 365 Defender has not been turned on yet, onboarding to Microsoft Defender for Endpoint will also turn on Microsoft 365 Defender and a new data center location is automatically selected based on the location of active Microsoft 365 security services. The selected data center location is shown on the screen.
 
 ## Network configuration
 
@@ -167,9 +170,11 @@ The following downloadable spreadsheet lists the services and their associated U
 
 ****
 
-|Spreadsheet of domains list|Description|
+
+|Spreadsheet of domains list| Description|
 |---|---|
-|![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet.](images/mdatp-urls.png)|Spreadsheet of specific DNS records for service locations, geographic locations, and OS. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)|
+|Microsoft Defender for Endpoint URL list for commercial customers | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+| Microsoft Defender for Endpoint URL list for Gov/GCC/DoD customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 |
 
 ## Next step

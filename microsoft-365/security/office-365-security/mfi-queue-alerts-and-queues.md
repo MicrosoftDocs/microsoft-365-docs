@@ -7,7 +7,7 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-
+ms.custom:
 ms.localizationpriority: medium
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Admins can learn how to use the Queues widget in the Mail flow dashboard in the Security & Compliance Center to monitor unsuccessful mail flow to their on-premises or partner organizations over outbound connectors.
@@ -77,7 +77,7 @@ Even if the queued message volume hasn't exceeded the threshold and generated an
 If you click the number of messages on the widget, a **Messages queued** flyout appears with the following information:
 
 - **Number of queued messages**
-- **Connector name**: Click on the connector name to manage the connector in the Exchange admin center (EAC).
+- **Connector name**: Select the connector name to manage the connector in the Exchange admin center (EAC) at <https://admin.exchange.microsoft.com/#/connectors>.
 - **Queue started time**
 - **Oldest messages expired**
 - **Destination server**

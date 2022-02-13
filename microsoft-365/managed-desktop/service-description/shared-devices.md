@@ -3,11 +3,11 @@ title: Shared devices
 description:  How and when to use shared device mode
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
-author: jaimeo
-ms.author: jaimeo
+author: tiaraquan
+ms.author: tiaraquan
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ---
 
@@ -42,7 +42,7 @@ Shared device mode isn't a good choice in these situations:
 
 Whether you or a partner are handling enrollment, you can choose to use shared device mode.
 
-If you're enrolling devices yourself, follow the steps in [Register new devices yourself](../get-started/register-devices-self.md), and then add them to the **Modern Workplace Devices--Shared Device Mode** group.
+If you're enrolling devices yourself, follow the steps in [Register new devices yourself](../get-started/register-devices-self.md), and then add them to the **Modern Workplace Devices - Shared Device Mode** group.
 
 > [!WARNING]
 > Do not try to convert any existing Microsoft Managed Desktop devices to shared device mode by simply adding them to this group. The policies that are applied can potentially cause OneDrive files to be permanently lost.

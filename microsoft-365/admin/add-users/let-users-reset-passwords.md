@@ -20,6 +20,8 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- adminvideo
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -31,7 +33,21 @@ description: "Learn how you can set a policy to allow users to reset their own p
 # Let users reset their own passwords
 
 As the Microsoft 365 admin, you can let people use the [self-service password reset tool](https://go.microsoft.com/fwlink/p/?LinkId=522677) so you don't have to reset passwords for them. Less work for you!
-  
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+ 
+## Watch: Let users reset their own passwords
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
+
+1. In the Microsoft 365 admin center, in the left navigation pane, select **Settings** > **Org settings**, and then <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Security & privacy**</a>.
+1. Under **Let your people reset their own passwords**, select**Azure AD admin center**.
+1. In the left navigation pane, select **Users**, and then on the **Users - all users** page, select **Password reset**.
+1. Select **All** to enable self-service password reset, and then select **Save**.
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
+ 
 ## Before you begin
   
 - You get self-service password reset for cloud users **free** with any Microsoft 365 business, education, or nonprofit paid plan. It doesn't work with Microsoft 365 trial.
@@ -40,15 +56,9 @@ As the Microsoft 365 admin, you can let people use the [self-service password re
 
 - **If you're using an on-premises Active Directory**, the above two points don't apply. Rather, you can set this up but **it requires a paid subscription to Azure AD Premium**.
 
-This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](../../business-video/admin-center-overview.md)
+This article is for people who set password expiration policy for a business, school, or nonprofit. To complete these steps, you need to sign in with your Microsoft 365 admin account. [What's an admin account?](Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md)
 
 You must be an [global admin or password administrator](about-admin-roles.md) to perform these steps.
-
-## Watch: Let users reset their own passwords
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
-
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
 ## Steps: Let people reset their own passwords
 

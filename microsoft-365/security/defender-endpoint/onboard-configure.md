@@ -11,7 +11,9 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -21,7 +23,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
@@ -44,9 +46,6 @@ In general, to onboard devices to the service:
 - Depending on the device, follow the configuration steps provided in the onboarding section of the Defender for Endpoint portal
 - Use the appropriate management tool and deployment method for your devices
 - Run a detection test to verify that the devices are properly onboarded and reporting to the service
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
-
 
 
 

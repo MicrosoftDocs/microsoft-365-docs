@@ -162,6 +162,8 @@
          href: attack-simulation-training-simulation-automations.md
        - name: Payload automations in Attack simulation training
          href: attack-simulation-training-payload-automations.md
+       - name: End-user notifications for Attack simulation training
+         href: attack-simulation-traning-end-user-notifications.md
        - name: Insights and reporting in Attack simulation training
          href: attack-simulation-training-insights.md
        - name: Attack simulation training deployment considerations and FAQ
@@ -372,10 +374,6 @@
        href: virus-detection-in-spo.md
      - name: What's the difference between junk email and bulk email?
        href: what-s-the-difference-between-junk-email-and-bulk-email.md
-     - name: Configure groups and users for a political campaign dev/test environment
-       href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-     - name: Create team sites in a political campaign dev/test environment
-       href: create-team-sites-in-a-political-campaign-dev-test-environment.md
    - name: Microsoft 365 Defender docs
      items: 
        - name: Microsoft 365 Defender
@@ -386,3 +384,5 @@
          href: /defender-for-identity
        - name: Defender for Cloud Apps
          href: /cloud-app-security
+       - name: Defender for Business
+         href: ../defender-business/index.yml

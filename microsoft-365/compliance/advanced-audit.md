@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection:
@@ -60,14 +60,11 @@ Advanced Audit provides the following events:
 
 - [Send](#send)
 
-- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)<sup>*</sup>
+- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)
 
-- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)<sup>*</sup>
+- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)
 
 - [Other Advanced Audit events in Microsoft 365](#other-advanced-audit-events-in-microsoft-365)
-
-> [!NOTE]
-> <sup>*</sup> At this time, this event isn't available in Office 365 and Microsoft 365 Government GCC High and DoD environments.
 
 ### MailItemsAccessed
 
@@ -134,7 +131,7 @@ You can also run the [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExc
 
 ### SearchQueryInitiatedSharePoint
 
-Similar to searching for mailbox items, the SearchQueryInitiatedSharePoint event is triggered when a person searches for items in SharePoint. Events are triggered when searches are performed in the following types of SharePoint sites:
+Similar to searching for mailbox items, the SearchQueryInitiatedSharePoint event is triggered when a person searches for items in SharePoint. Events are triggered when searches are performed on the root or default page of the following types of SharePoint sites:
 
 - Home sites
 

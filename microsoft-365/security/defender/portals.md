@@ -13,7 +13,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
@@ -50,7 +49,8 @@ While these portals are not specifically for managing security, they support var
 
 | Portal name | Description | Link | 
 |---|---|---| 
-| Azure portal | View and manage [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) and all your [Azure resources](/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
+| Azure portal | View and manage all your [Azure resources](/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
+| Azure Active Directory portal | View and manage [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) | [aad.portal.azure.com](https://aad.portal.azure.com/) |
 | Microsoft 365 compliance center | Manage data handling policies and ensure [compliance with regulations](/compliance/regulatory/offering-home) | [compliance.microsoft.com](https://compliance.microsoft.com/) |
 | Microsoft 365 admin center | Configure Microsoft 365 services; manage roles, licenses, and track updates to your Microsoft 365 services | [admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2166757) |
 | Microsoft Endpoint Manager admin center | Use [Microsoft Endpoint Manager](/mem/configmgr/) to manage and secure devices using combined Intune and Configuration Manager capabilities | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |

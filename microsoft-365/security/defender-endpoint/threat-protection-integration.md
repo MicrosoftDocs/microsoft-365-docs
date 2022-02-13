@@ -22,7 +22,7 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -75,6 +75,6 @@ With Microsoft 365 Defender, Microsoft Defender for Endpoint, and various Micros
 ## Related topics
 
 - [Configure integration and other advanced features](advanced-features.md)
-- [Microsoft 365 Defender overview](/microsoft-365/security/defender/microsoft-threat-protection)
-- [Turn on Microsoft 365 Defender](/microsoft-365/security/defender/mtp-enable)
+- [Microsoft 365 Defender overview](/microsoft-365/security/defender/microsoft-365-defender)
+- [Turn on Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)
 - [Protect users, data, and devices with Conditional Access](conditional-access.md)

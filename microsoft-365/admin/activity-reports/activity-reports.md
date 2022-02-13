@@ -42,12 +42,6 @@ Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data 
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Reports** \> **Usage** page.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Reports** \> **Usage** page.
@@ -76,7 +70,7 @@ People who have the following permissions:
 
 - Reports reader
 
-- Teams Service Administrator
+- Teams Administrator
 
 - Teams Communications Administrator
     

@@ -3,8 +3,6 @@ title: Partner applications in Microsoft Defender for Endpoint
 ms.reviewer:
 description: View supported partner applications to enhance the detection, investigation, and threat intelligence capabilities of the platform
 keywords: partners, applications, third-party, connections, sentinelone, lookout, bitdefender, corrata, morphisec, paloalto, ziften, better mobile
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -24,7 +22,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -86,6 +84,7 @@ Logo|Partner name|Description
 :---|:---|:---
 ![Image of Aruba ClearPass Policy Manager logo.](images/aruba-logo.png)|[Aruba ClearPass Policy Manager](https://go.microsoft.com/fwlink/?linkid=2127544)|Ensure Defender for Endpoint is installed and updated on each endpoint before allowing access to the network
 ![Image of Blue Hexagon for Network logo.](images/bluehexagon-logo.png)|[Blue Hexagon for Network](https://go.microsoft.com/fwlink/?linkid=2104613)|Blue Hexagon has built the industry's first real-time deep learning platform for network threat protection
+![Image of Corelight logo.](images/logo-corelight.png)| [Corelight]( https://corelight.com/integrations/iot-security)| Using data, sent from Corelight network appliances, Microsoft 365 Defender gains increased visibility into the network activities of unmanaged devices, including communication with other unmanaged devices or external networks.
 ![Image of CyberMDX logo.](images/cybermdx-logo.png)|[CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620)|Cyber MDX integrates comprehensive healthcare assets visibility, threat prevention and repose into your Defender for Endpoint environment
 ![Image of HYAS Protect logo.](images/hyas-logo.png)|[HYAS Protect](https://go.microsoft.com/fwlink/?linkid=2156763)|HYAS Protect utilizes authoritative knowledge of attacker infrastructure to proactively protect Microsoft Defender for Endpoint endpoints from cyberattacks
 ![Image of Vectra Network Detection and Response (NDR) logo.](images/vectra-logo.png)|[Vectra Network Detection and Response (NDR)](https://go.microsoft.com/fwlink/?linkid=866934)|Vectra applies AI & security research to detect and respond to cyber-attacks in real time
@@ -111,7 +110,7 @@ Logo|Partner name|Description
 
 ## SIEM integration
 
-Defender for Endpoint supports SIEM integration through various of methods. This can include specialized SIEM system interface with out of the box connectors, a generic alert API enabling custom implementations, and an action API enabling alert status management. For more information, see [Enable SIEM integration](enable-siem-integration.md).
+Defender for Endpoint supports SIEM integration through various of methods. This can include specialized SIEM system interface with out of the box connectors, a generic alert API enabling custom implementations, and an action API enabling alert status management.
 
 ## Ticketing and IT service management
 

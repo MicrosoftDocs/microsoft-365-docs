@@ -39,8 +39,10 @@ Before you get started with DLP on-premises scanner, you should confirm your [Mi
 
 For full licensing details see: [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
-### Permissions
+> [!IMPORTANT]
+> All users who contribute to the scanned location either by adding files or consuming files need to have a license, not just the scanner user.
 
+### Permissions
 
 Data from DLP on-premises scanner can be viewed in [Activity explorer](data-classification-activity-explorer.md). There are four roles that grant permission to activity explorer, the account you use for accessing the data must be a member of any one of them.
 
@@ -48,6 +50,25 @@ Data from DLP on-premises scanner can be viewed in [Activity explorer](data-clas
 - Compliance administrator
 - Security administrator
 - Compliance data administrator
+
+#### Roles and Role Groups in preview
+
+There are roles and role groups in preview that you can test out to fine tune your access controls.
+
+Here's a list of Microsoft Information Protection (MIP) roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Information Protection Admin
+- Information Protection Analyst
+- Information Protection Investigator
+- Information Protection Reader
+
+Here's a list of MIP role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Information Protection
+- Information Protection Admins
+- Information Protection Analysts
+- Information Protection Investigators
+- Information Protection Readers
 
 ### DLP on-premises scanner prerequisites
 

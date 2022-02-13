@@ -20,6 +20,8 @@
           href: microsoft-365-security-mdo-redirection.md
       - name: Microsoft 365 Defender integration with Microsoft Sentinel
         href: microsoft-365-defender-integration-with-azure-sentinel.md
+      - name: Microsoft 365 Defender for US Government customers
+        href: usgov.md
       - name: Industry tests
         href: ./top-scoring-industry-tests.md
     - name: Plan
@@ -96,6 +98,8 @@
           href: deploy-supported-services.md
         - name: Turning on Microsoft 365 Defender FAQs
           href: m365d-enable-faq.md              
+        - name: Train your security staff
+          href: microsoft-365-defender-train-security-staff.md              
     - name: Protect against threats
       items: 
       - name: Microsoft Secure Score
@@ -162,6 +166,16 @@
                    href: investigate-incidents.md
                  - name: Alerts
                    href: investigate-alerts.md    
+                 - name: Alert grading playbooks
+                   items: 
+                    - name: Overview
+                      href: alert-grading-playbooks.md
+                    - name: Suspicious email forwarding activity
+                      href: alert-grading-playbook-email-forwarding.md
+                    - name: Suspicious inbox forwarding rules
+                      href: alert-grading-playbook-inbox-forwarding-rules.md
+                    - name: Suspicious inbox manipulation rules
+                      href: alert-grading-playbook-inbox-manipulation-rules.md
                  - name: Users 
                    href: investigate-users.md                  
               - name: Incident response playbooks
@@ -208,6 +222,8 @@
                href: advanced-hunting-take-action.md
              - name: Quickly investigate with go hunt
                href: advanced-hunting-go-hunt.md
+             - name: Link query results to an incident
+               href: advanced-hunting-link-to-incident.md
              - name: Optimize & handle errors
                items: 
                 - name: Apply query best practices
@@ -258,6 +274,8 @@
                   href: advanced-hunting-devicetvmsecureconfigurationassessment-table.md
                 - name: DeviceTvmSecureConfigurationAssessmentKB
                   href: advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
+                - name: DeviceTvmSoftwareEvidenceBeta
+                  href: advanced-hunting-devicetvmsoftwareevidencebeta-table.md
                 - name: DeviceTvmSoftwareInventory
                   href: advanced-hunting-devicetvmsoftwareinventory-table.md
                 - name: DeviceTvmSoftwareVulnerabilities
@@ -413,3 +431,5 @@
          href: /defender-for-identity
        - name: Defender for Cloud Apps
          href: /cloud-app-security
+       - name: Defender for Business
+         href: ../defender-business/index.yml

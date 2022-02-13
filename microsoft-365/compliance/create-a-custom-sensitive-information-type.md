@@ -52,35 +52,121 @@ There are two ways to create a new sensitive information type:
 Use this procedure to create a new sensitive information type that you fully define. 
 
 1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose **Create sensitive info type**.
+
 2. Fill in values for **Name** and **Description** and choose **Next**.
+
 3. Choose **Create pattern**. You can create multiple patterns, each with different elements and confidence levels, as you define your new sensitive information type.
+
 4. Choose the default confidence level for the pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
+
 5. Choose and define **Primary element**. The primary element can be a **Regular expression** with an optional validator, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. For more information on DLP functions, see [What the DLP functions look for](what-the-dlp-functions-look-for.md). For more information on the date and the checksum validators, see [More information on regular expression validators](#more-information-on-regular-expression-validators).
+
 6. Fill in a value for **Character proximity**.
+
 7. (Optional) Add supporting elements if you have any. Supporting elements can be a regular expression with an optional validator, a keyword list, a keyword dictionary or one of the pre-defined functions. Supporting elements can have their own **Character proximity** configuration. 
+
 8. (Optional) Add any [**additional checks**](#more-information-on-additional-checks) from the list of available checks.
+
 9. Choose **Create**.
+
 10. Choose **Next**.
+
 11. Choose the **recommended confidence level** for this sensitive information type.
+
 12. Check your setting and choose **Submit**.
 
-> [!IMPORTANT]
-> Microsoft 365 uses the search crawler to identify and classify sensitive information in SharePoint Online and OneDrive for Business sites. To identify your new custom sensitive information type in existing content, the content must be re-crawled. Content is crawled based on a schedule, but you can manually re-crawl content for a site collection, list, or library. For more information, see [Manually request crawling and re-indexing of a site, a library or a list](/sharepoint/crawl-site-content).
+    > [!IMPORTANT]
+    > Microsoft 365 uses the search crawler to identify and classify sensitive information in SharePoint Online and OneDrive for Business sites. To identify your new custom sensitive information type in existing content, the content must be re-crawled. Content is crawled based on a schedule, but you can manually re-crawl content for a site collection, list, or library. For more information, see [Manually request crawling and re-indexing of a site, a library or a list](/sharepoint/crawl-site-content).
 
 13. On the **Data classification** page, you'll see all the sensitive information types listed. Choose **Refresh** and then browse for or use the search tool to find the sensitive information type you created.
+
+### Copy and modify a sensitive information type
+
+Use this procedure to create a new sensitive information type that is based on an existing sensitive information type. 
+
+1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type that you want to copy.
+
+2. In the flyout, choose **Copy**.
+
+3. Choose **Refresh** in the list of sensitive information types and either browse or search for the copy you just made. Partial sting searches work, so you could just search for `copy` and search would return all the sensitive information types with the word `copy` in the name. 
+
+4. Fill in values for **Name** and **Description** and choose **Next**.
+
+5. Choose your sensitive information type copy and choose **Edit**. 
+
+6. Give your new sensitive information type a new **Name** and **Description**.
+
+7. You can choose to edit or remove the existing patterns and add new ones. Choose the default confidence level for the new pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
+
+8. Choose and define **Primary element**. The primary element can be a **Regular expression**, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. See, [What the DLP functions look for](what-the-dlp-functions-look-for.md).
+
+9. Fill in a value for **Character proximity**.
+
+10. (Optional) If you have **Supporting elements** or any [**Additional checks**](#more-information-on-additional-checks) add them. If needed you can group your **Supporting elements**.
+
+11. Choose **Create**.
+
+12. Choose **Next**.
+
+13. Choose the **recommended confidence level** for this sensitive information type.
+
+14. Check your setting and choose **Submit**.
 
 ## Test a sensitive information type
 
 You can test any sensitive information type in the list. We suggest that you test every sensitive information type that you create before using it in a policy.
 
 1. Prepare two files, like a Word document. One with content that matches the elements you specified in your sensitive information type and one that doesn't match.
+
 2. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list to open the details pane and choose **Test**.
+
 3. Upload a file and choose **Test**.
+
 4. On the **Matches results** page, review the results and choose **Finish**.
+
+## Custom sensitive information types limits
+
+To ensure high performance and lower latency, there are limitations in custom SITs configurations.
+
+|Limit|Value|
+|--------|--------|
+|maximum number of custom SITs created through the Compliance center| 500 |
+|maximum length of regular expression| 1024 characters|
+|maximum length for a given term in a keyword list| 50 characters|
+|maximum number of terms in keyword list| 2048|
+|maximum number of distinct regexes per sensitive information type| 20|
+|maximum size of a keyword dictionary (post compression)| 1MB (~1,000,000 characters)|
+|maximum number of keyword dictionary based SITs in a tenant|50 |
+
+> [!NOTE] 
+> If you have a business need to create more than 500 custom SITs, please raise a support ticket.
+
+### Instance count supported values for SIT
+
+The SIT instance count limit applies when SITs are used in these solutions:
+
+- DLP policies
+- Information Protection
+- Information Governance
+- Communication Compliance
+- Records Management
+- Microsoft Defender for Cloud Apps
+- Microsoft Priva
+
+For a scanned item to satisfy rule criteria, the number of unique instances of a SIT in any single item must fall between the min and max values. This is called the **Instance count**.
+
+- **Min** field: the lower limit (minimum number) of unique instances of a SIT that must be found in an item to trigger a match. The min field supports values of:
+    - 1 to 500
+- **Max** field: the upper limit on the number of unique instances of a SIT that can be found in an item and still trigger a match. The max field supports values of:
+    - 1 to 500  - Use this when you want to set a specific upper limit that is 500 or less on the number of instances of a SIT in an item.
+    - Any - Use `Any` when you want the unique instance count criteria to be satisfied when an undefined number of unique instances of a SIT are found in a scanned item and that number of unique instances meets or exceeds the minimum number of unique instances value. In other words, the unique instance count criteria are met as long as the min value is met.
+
+For example, if you want the rule to trigger a match when at least 500 unique instances of a SIT are found in a single item, set the **min** value to `500` and the **max** value to `Any`.
 
 ## Modify custom sensitive information types in the Compliance Center
 
 1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list that you want to modify choose **Edit**.
+
 2. You can add other patterns, with unique primary and supporting elements, confidence levels, character proximity, and [**additional checks**](#more-information-on-additional-checks) or edit/remove the existing ones.
 
 ## Remove custom sensitive information types in the Compliance Center 
@@ -92,26 +178,8 @@ You can test any sensitive information type in the list. We suggest that you tes
 > Before your remove a custom sensitive information type, verify that no DLP policies or Exchange mail flow rules (also known as transport rules) still reference the sensitive information type.
 
 1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list that you want to remove.
+
 2. In the fly-out that opens, choose **Delete**.
-
-## Copy and modify a sensitive information type
-
-Use this procedure to create a new sensitive information type that is based on an existing sensitive information type. 
-
-1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type that you want to copy.
-2. In the flyout, choose **Copy**.
-3. Choose **Refresh** in the list of sensitive information types and either browse or search for the copy you just made. Partial sting searches work, so you could just search for `copy` and search would return all the sensitive information types with the word `copy` in the name. 
-4. Fill in values for **Name** and **Description** and choose **Next**.
-5. Choose your sensitive information type copy and choose **Edit**. 
-6. Give your new sensitive information type a new **Name** and **Description**.
-7. You can choose to edit or remove the existing patterns and add new ones. Choose the default confidence level for the new pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
-8. Choose and define **Primary element**. The primary element can be a **Regular expression**, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. See, [What the DLP functions look for](what-the-dlp-functions-look-for.md).
-9. Fill in a value for **Character proximity**.
-10. (Optional) If you have **Supporting elements** or any [**Additional checks**](#more-information-on-additional-checks) add them. If needed you can group your **Supporting elements**.
-11. Choose **Create**.
-12. Choose **Next**.
-13. Choose the **recommended confidence level** for this sensitive information type.
-14. Check your setting and choose **Submit**.
 
 > [!NOTE]
 > These SITs can't be copied:
@@ -135,12 +203,14 @@ You can also create custom sensitive information types by using PowerShell and E
 
 If you need to run a checksum on a digit in a regular expression, you can use the *checksum validator*. For example, say you need to create a SIT for an eight digit license number where the last digit is a checksum digit that is validated using a mod 9 calculation. You've set up the checksum algorithm like this:
 
-Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8 
+```console
+Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8
 Mod value = Sum % 9
 If Mod value == digit 8
     Account number is valid
 If Mod value != digit 8
     Account number is invalid
+```
 
 1. Define the primary element with this regular expression:
 
@@ -149,12 +219,13 @@ If Mod value != digit 8
    ```
 
 2. Then add the checksum validator.
+
 3. Add the weight values separated by commas, the position of the check digit and the Mod value. For more information on the Modulo operation, see [Modulo operation](https://en.wikipedia.org/wiki/Modulo_operation).
 
-> [!NOTE]
-> If the check digit is not part of the checksum calculation then use 0 as the weight for the check digit. For example, in the above case weight 8 will be equal to 0 if the check digit is not to be used for calculating the check digit.  Modulo_operation).
+   > [!NOTE]
+   > If the check digit is not part of the checksum calculation then use 0 as the weight for the check digit. For example, in the above case weight 8 will be equal to 0 if the check digit is not to be used for calculating the check digit.  Modulo_operation).
 
-![screenshot of configured checksum validator.](../media/checksum-validator.png)
+   :::image type="content" alt-text="screenshot of configured checksum validator." source="../media/checksum-validator.png" lightbox="../media/checksum-validator.png":::
 
 ### Date validator
 
@@ -167,9 +238,10 @@ If a date value that is embedded in regular expression is part of a new pattern 
    ```
 
 2. Then add the date validator.
+
 3. Select the date format and the start offset. Since the date string is the first six digits, the offset is `0`.
 
-![screenshot of configured date validator.](../media/date-validator.png)
+   :::image type="content" alt-text="screenshot of configured date validator." source="../media/date-validator.png" lightbox="../media/date-validator.png":::
 
 ### Functional processors as validators
 
@@ -215,6 +287,6 @@ Here are the definitions and some examples for the available additional checks.
 >     2. 機密性が高い, 机密的document and 机密的 document
 >
 > While creating a regex using a double byte hyphen or a double byte period, make sure to escape both the characters like one would escape a hyphen or period in a regex. Here is a sample regex for reference:
->    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+>    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4})
 >
 > We recommend using a string match instead of a word match in a keyword list.

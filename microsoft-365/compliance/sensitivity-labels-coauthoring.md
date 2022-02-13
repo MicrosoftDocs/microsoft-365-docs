@@ -62,6 +62,11 @@ Check the following section for a list of apps and services that support this se
 
 ## Prerequisites
 
+> [!IMPORTANT]
+> This feature requires that all users have Microsoft 365 Apps for enterprise. Support for this co-authoring feature isn't yet available with the Semi-Annual Enterprise Channel for Office updates. If you are using this update channel for your Office apps, change it to Current Channel or Monthly Enterprise Channel.
+> 
+> For more information, see [How to configure and manage update channels](/deployoffice/overview-update-channels#how-to-configure-and-manage-update-channels).
+
 Make sure you understand the following prerequisites before you turn on this feature.
 
 - You must be a global admin to turn on this feature.
@@ -114,7 +119,9 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
     
     For labels with any of these encryption configurations, the labels display in Office apps. However, when users select these labels and nobody else is editing the document, they are warned that co-authoring and AutoSave won't be available. If somebody else is editing the document, users see a message that the labels can't be applied.
 
-- If you use the Azure Information Protection unified labeling client: Check the documentation for this labeling client for [more requirements or limitations](/azure/information-protection/known-issues#known-issues-for-co-authoring).
+- If you use the Azure Information Protection unified labeling client: Check the documentation for this labeling client for [more requirements or limitations](/azure/information-protection/known-issues#known-issues-for-co-authoring). 
+    > [!NOTE]
+    > These limitations for the unified labeling client include a [change of dialog box](/azure/information-protection/known-issues#user-interface-changes-when-applying-labels) for users who select labels that prompt them to select permissions.
 
 ## How to enable co-authoring for files with sensitivity labels
 
@@ -144,7 +151,7 @@ After you've enabled co-authoring for files with sensitivity labels for your ten
 
 ![Option that shows co-authoring turned on for sensitivity labels.](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
-As you see from the screenshot when this setting has been turned on, you can contact [Microsoft Support](../business-video/get-help-support.md) and request to turn off this setting. This request might take several days and you will need to prove that you are a global administrator for your tenant. Expect usual support charges to apply. 
+As you see from the screenshot when this setting has been turned on, you can contact [Microsoft Support](../admin/get-help-support.md) and request to turn off this setting. This request might take several days and you will need to prove that you are a global administrator for your tenant. Expect usual support charges to apply. 
 
 If a support engineer disables this setting for your tenant:
 

@@ -23,8 +23,8 @@ With SharePoint site geo move, you can move SharePoint sites to other geo locati
 
 The following types of site can be moved between geo locations:
 
-- Microsoft 365 Group-connected sites, including those associated with Microsoft Teams
-- Modern sites without a Microsoft 365 Group association
+- Microsoft 365 group-connected sites, including those sites associated with Microsoft Teams
+- Modern sites without a Microsoft 365 group association
 - Classic SharePoint sites
 - Communication sites
 
@@ -57,6 +57,7 @@ You can schedule SharePoint site moves in advance (described later in this artic
 
 - You can schedule up to 4,000 moves at a time.
 - As the moves begin, you can schedule more, with a maximum of 4,000 pending moves in the queue and any given time.
+- The maximum size of a SharePoint site that can be moved is 1 terabyte (1 TB).
 
 To schedule a SharePoint site geo move for a later time, include one of the following parameters when you start the move:
 
@@ -97,13 +98,13 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 
 This will return *Success* if the site is ready to be moved or *Fail* if any of blocked conditions are present.
 
-### Start a SharePoint site geo move for a site with no associated Microsoft 365 Group
+### Start a SharePoint site geo move for a site with no associated Microsoft 365 group
 
 By default, initial URL for the site will change to the URL of the destination geo location. For example:
 
 <https://Contoso.sharepoint.com/sites/projectx> to <https://ContosoEUR.sharepoint.com/sites/projectx>
 
-For sites with no Microsoft 365 Group association, you can also rename the site by using the `-DestinationUrl` parameter. For example:
+For sites with no Microsoft 365 group association, you can also rename the site by using the `-DestinationUrl` parameter. For example:
 
 <https://Contoso.sharepoint.com/sites/projectx> to <https://ContosoEUR.sharepoint.com/sites/projecty>
 
@@ -115,11 +116,11 @@ Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <Dest
 
 ![Screenshot of PowerShell window showing Start-SPOSiteContentMove cmdlet.](../media/multi-geo-sharepoint-site-move-powershell.png)
 
-### Start a SharePoint site geo move for a Microsoft 365 Group-connected site
+### Start a SharePoint site geo move for a Microsoft 365 group-connected site
 
-To move an Office 365 Group-connected site, the Global Administrator or SharePoint Administrator must first change the Preferred Data Location (PDL) attribute for the Office 365 Group.
+To move a Microsoft 365 group-connected site, the Global Administrator or SharePoint Administrator must first change the Preferred Data Location (PDL) attribute for the Microsoft 365 group.
 
-To set the PDL for a Microsoft 365 Group:
+To set the PDL for a Microsoft 365 group:
 
 ```PowerShell
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
@@ -194,9 +195,12 @@ OneNote win32 client and UWP (Universal) App will automatically detect and seaml
 - OneNote UWP – Version 16.0.8431.1006 (and later)
 - OneNote Mobile App – Version 16.0.8431.1011 (and later)
 
-### Teams (applicable to Microsoft 365 Group connected sites)
+### Teams (applicable to Microsoft 365 group connected sites)
 
-When the SharePoint site geo move completes, users will have access to their Microsoft 365 Group site files on the Teams app. Additionally, files shared via Teams chat from their site prior to geo move will continue to work after move is complete.
+When the SharePoint site geo move completes, users will have access to their Microsoft 365 group site files on the Teams app. Additionally, files shared via Teams chat from their site prior to geo move will continue to work after move is complete.
+
+SharePoint site geo move does not support moving Private Channels from one geo to another. Private channels remain in the original geo.
+  
 
 ### SharePoint Mobile App (iOS/Android)
 

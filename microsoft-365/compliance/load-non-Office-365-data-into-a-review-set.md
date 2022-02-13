@@ -57,9 +57,11 @@ Using the upload non-Microsoft 365 feature described in this article requires th
 
 2. Click **Review sets**, and then select the review set to upload the non-Microsoft 365 data to.  If you don't have a review set, you can create one. 
  
-3. In the review set, click **Manage review set**, and then click **View uploads** on the **Non-Microsoft 365 data** tile.
+3. Open the review set by either clicking on it or selecting it and clicking **Open review set**.
 
-4. Click **Upload files** to start the data import wizard.
+4. In the review set, click **Manage review set** (the down arrow just after the **Actions** option), and then click the **Non-Office 365 data** option.
+
+5. Click **Upload files** to start the data import wizard.
 
    ![Upload files.](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 

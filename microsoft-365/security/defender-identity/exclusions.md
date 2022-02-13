@@ -9,7 +9,7 @@ ms.service: microsoft-defender-for-identity
 manager: raynew
 ---
 
-# Configure Defender for Identity detection exclusions in Microsoft 365 Defender (Preview)
+# Configure Defender for Identity detection exclusions in Microsoft 365 Defender
 
 **Applies to:**
 

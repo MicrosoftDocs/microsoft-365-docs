@@ -1,5 +1,5 @@
 ---
-title: Get started with Microsoft Defender for Endpoint Plan 1 (preview)
+title: Get started with Microsoft Defender for Endpoint Plan 1
 description: Get started using Defender for Endpoint Plan 1. Learn how to use the Defender for Cloud, manage alerts and devices, and view reports. 
 search.appverid: MET150 
 author: denisebmsft
@@ -7,21 +7,24 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 10/01/2021
+ms.date: 01/03/2022
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365initiative-defender-endpoint
+ms.custom: intro-get-started
 ---
 
-# Get started with Microsoft Defender for Endpoint Plan 1 (preview)
+# Get started with Microsoft Defender for Endpoint Plan 1
 
-> [!TIP]
-> If you have Microsoft 365 E3 or A3 but not Microsoft 365 E5 or A5, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) to sign up for the preview program!
+**Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) enables you to view information about detected threats, manage your alerts and incidents, take any needed action on detected threats, and manage devices. The Microsoft 365 Defender portal is where you can get started interacting with the threat protection capabilities you get with Defender for Endpoint Plan 1 (preview). The following sections describe how to get started:
+The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) enables you to view information about detected threats, manage your alerts and incidents, take any needed action on detected threats, and manage devices. The Microsoft 365 Defender portal is where you can get started interacting with the threat protection capabilities you get with Defender for Endpoint Plan 1. The following sections describe how to get started:
 
 - [The Microsoft 365 Defender portal](#the-microsoft-365-defender-portal)
 - [Viewing and managing incidents & alerts](#view-and-manage-incidents--alerts)
@@ -165,5 +168,5 @@ Scroll down to see all the views in the Web protection report. Some views includ
 
 ## Next steps
 
-- [Manage Microsoft Defender for Endpoint Plan 1 (preview)](mde-p1-maintenance-operations.md)
+- [Manage Microsoft Defender for Endpoint Plan 1](mde-p1-maintenance-operations.md)
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)

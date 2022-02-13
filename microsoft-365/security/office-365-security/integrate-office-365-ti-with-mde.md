@@ -6,7 +6,7 @@ keywords: integrate, Microsoft Defender, Microsoft Defender for Endpoint
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 06/10/2021
+ms.date: 12/02/2021
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
@@ -18,7 +18,6 @@ ms.collection:
 description: Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint to get more detailed information about threats against your devices and email content.
 ms.custom: 
 - seo-marvel-apr2020
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -36,7 +35,7 @@ The following image depicts what the **Devices** tab looks like when you have Mi
 
 ![When Microsoft Defender for Endpoint is enabled, you can see a list of devices with alerts.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 
-In this example, you can see that the recipients of the detected email message have four devices and one has an alert. Clicking the link for a device opens its page in the [Microsoft 365 Defender portal](../defender-endpoint/microsoft-defender-security-center.md) (formerly the Microsoft Defender Security Center).
+In this example, you can see that the recipients of the detected email message have four devices and one has an alert. Clicking the link for a device opens its page in the [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender).
 
 > [!TIP]
 > The Microsoft 365 Defender portal replaces the Microsoft Defender Security Center. See [Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
@@ -53,7 +52,7 @@ In this example, you can see that the recipients of the detected email message h
 
 Integrating Microsoft Defender for Office 365 with Microsoft Defender for Endpoint is set up in both Defender for Endpoint and Defender for Office 365.
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. Go to **Email & collaboration** \> **Explorer**. 
 

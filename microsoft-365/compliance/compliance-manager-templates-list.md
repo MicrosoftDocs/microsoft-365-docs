@@ -34,7 +34,9 @@ Templates are added to Compliance Manager as new laws and regulations are enacte
 
 ## List of templates and where to find them
 
-Below is the complete list of templates in Compliance Manager. The links in the template names below take you to related documentation about that standard, regulation, or law.
+Below is the complete list of templates in Compliance Manager. Links in the template names below take you to related documentation where available about that standard, regulation, or law.
+
+You can also select individual templates in Compliance Manager to view more information about them, including a description of the regulation and properties of the template. Read the **About** section for a summary.
 
 ### Where to find your templates
 

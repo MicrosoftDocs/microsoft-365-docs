@@ -22,7 +22,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!TIP]
@@ -34,29 +34,29 @@ The threat intelligence data set for this has been managed by Microsoft.
 
 By creating indicators for IPs and URLs or domains, you can now allow or block IPs, URLs, or domains based on your own threat intelligence. You can also warn users with a prompt if they open a risky app. The prompt won't stop  them from using the app but you can provide a custom message and links to a company page that describes appropriate usage of the app. Users can still bypass the warning and continue to use the app if they need.
 
-
 You can do this through the settings page or by machine groups if you deem certain groups to be more or less at risk than others.
 
 > [!NOTE]
 > Classless Inter-Domain Routing (CIDR) notation for IP addresses is not supported.
 
 ## Before you begin
+
 It's important to understand the following prerequisites prior to creating indicators for IPS, URLs, or domains:
 
 - URL/IP allow and block relies on the Defender for Endpoint component Network Protection to be enabled in block mode. For more information on Network Protection and configuration instructions, see [Enable network protection](enable-network-protection.md).
 - The Antimalware client version must be 4.18.1906.x or later. 
 - Supported on machines on Windows 10, version 1709 or later, Windows 11, Windows Server 2016, Windows Server 2012 R2, Windows Server 2019, and Windows Server 2022.
-   
-    >[!NOTE]
-    >Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work. 
 
-- Ensure that **Custom network indicators** is enabled in **Microsoft Defender Security Center > Settings > Advanced features**. For more information, see [Advanced features](advanced-features.md).
+    > [!NOTE]
+    > Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) for this feature to work.
+
+- Ensure that **Custom network indicators** is enabled in **Microsoft 365 Defender** \> **Settings** \> **Advanced features**. For more information, see [Advanced features](advanced-features.md).
 - For support of indicators on iOS, see [Configure custom indicators](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
 
 > [!IMPORTANT]
 > Only external IPs can be added to the indicator list. Indicators cannot be created for internal IPs.
 > For web protection scenarios, we recommend using the built-in capabilities in Microsoft Edge. Microsoft Edge leverages [Network Protection](network-protection.md) to inspect network traffic and allows blocks for TCP, HTTP, and HTTPS (TLS).
-> If there are conflicting URL indicator policies, the longer path is applied. For example, the URL indicator policy `https:\\support.microsoft.com/office` takes precedence over the URL indicator policy `https:\\support.microsoft.com`.
+> If there are conflicting URL indicator policies, the longer path is applied. For example, the URL indicator policy `https://support.microsoft.com/office` takes precedence over the URL indicator policy `https://support.microsoft.com`.
 
 > [!NOTE]
 > For all other processes, web protection scenarios leverage Network Protection for inspection and enforcement:

@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 11/06/2020
+ms.date: 11/23/2020
 ms.technology: mde
 ---
 
@@ -22,29 +22,30 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-fixsensor-abovefoldlink)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-fixsensor-abovefoldlink)
 
-Devices that are categorized as misconfigured or inactive can be flagged due to varying causes. This section provides some explanations as to what might have caused a device to be categorized as inactive or misconfigured.
+Devices can be categorized as misconfigured or inactive are flagged for varying causes. This section provides some explanations as to what might have caused a device to be categorized as inactive or misconfigured.
 
 ## Inactive devices
 
-An inactive device is not necessarily flagged due to an issue. The following actions taken on a device can cause a device to be categorized as inactive:
+An inactive device is not necessarily flagged because of an issue. The following actions taken on a device can cause a device to be categorized as inactive:
 
 ### Device is not in use
 
-If the device has not been in use for more than seven days for any reason, it will remain in an 'Inactive' status in the portal.
+Any device that is not in use for more than seven days will retain 'Inactive' status in the portal.
 
 ### Device was reinstalled or renamed
-A reinstalled or renamed device will generate a new device entity in Microsoft Defender Security Center. The previous device entity will remain with an 'Inactive' status in the portal. If you reinstalled a device and deployed the Defender for Endpoint package, search for the new device name to verify that the device is reporting normally.
+A new device entity is generated in Microsoft 365 Defender for reinstalled or renamed devices. The previous device entity remains, with an 'Inactive' status in the portal. If you reinstalled a device and deployed the Defender for Endpoint package, search for the new device name to verify that the device is reporting normally.
 
 ### Device was offboarded
 If the device was offboarded, it will still appear in devices list. After seven days, the device health state should change to inactive.
 
 ### Device is not sending signals
-If the device is not sending any signals for more than seven days to any of the Microsoft Defender for Endpoint channels for any reason including conditions that fall under misconfigured devices classification, a device can be considered inactive. 
+If the device is not sending any signals to any Microsoft Defender for Endpoint channels for more than seven days for any reason, a device can be considered inactive; this includes conditions that fall under misconfigured devices classification.
 
 Do you expect a device to be in 'Active' status? [Open a support ticket](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561).
 
@@ -54,7 +55,7 @@ Misconfigured devices can further be classified to:
 - No sensor data
 
 ### Impaired communications
-This status indicates that there's limited communication between the device and the service.
+This status indicates that there is limited communication between the device and the service.
 
 The following suggested actions can help fix issues related to a misconfigured device with impaired communications:
 
@@ -68,6 +69,7 @@ If you took corrective actions and the device status is still misconfigured, [op
 
 ### No sensor data
 A misconfigured device with status 'No sensor data' has communication with the service but can only report partial sensor data.
+
 Follow theses actions to correct known issues related to a misconfigured device with status 'No sensor data':
 
 - [Ensure the device has Internet connection](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
@@ -77,10 +79,10 @@ Follow theses actions to correct known issues related to a misconfigured device 
   Verify the proxy configuration completed successfully, that WinHTTP can discover and communicate through the proxy server in your environment, and that the proxy server allows traffic to the Microsoft Defender for Endpoint service URLs.
 
 - [Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>
-If the devices aren't reporting correctly, you might need to check that the Windows diagnostic data service is set to automatically start and is running on the endpoint.
+If the devices aren't reporting correctly, you should verify that the Windows diagnostic data service is set to automatically start. Also verify that the Windows diagnostic data service is running on the endpoint.
 
 - [Ensure that Microsoft Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
-If your devices are running a third-party antimalware client, the Defender for Endpoint agent needs the Microsoft Defender Antivirus Early Launch Antimalware (ELAM) driver to be enabled.
+If your devices are running a third-party antimalware client, Defender for Endpoint agent requires that the Microsoft Defender Antivirus Early Launch Antimalware (ELAM) driver is enabled.
 
 If you took corrective actions and the device status is still misconfigured, [open a support ticket](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
 

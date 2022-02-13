@@ -61,7 +61,7 @@ To help you get started with an information protection scheme in Microsoft 365, 
 
 Microsoft [information protection solutions](../compliance/information-protection.md) include a number of integrated capabilities across Microsoft 365, Microsoft Azure, and Microsoft Windows. In Microsoft 365, information protection solutions include:
 
-- [Sensitive information types](../compliance/sensitive-information-type-entity-definitions.md) (described in the [assess data privacy risks and identify sensitive items article](information-protection-deploy-assess.md))
+- [Sensitive information types](../compliance/sensitive-information-type-entity-definitions.md) (described in the [assess data privacy risks and identify sensitive items article](information-protection-deploy-assess.md)
 - [Sensitivity labels](../compliance/sensitivity-labels.md)
   - Service/container-level
   - Client-side/content-level
@@ -74,7 +74,7 @@ In addition, site and library level protection are important mechanisms to inclu
 
 For information on other information protection capabilities outside of Microsoft 365, see:
 
-- [Microsoft Cloud Application Security (Defender for Cloud Apps)](/cloud-app-security/)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/)
 - [Azure Information Protection](/azure/information-protection/what-is-information-protection)
 - [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
 - [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)

@@ -75,6 +75,25 @@ You can also assign either or both of the roles to a custom role group to tailor
 
 A Global admin, can assign the necessary Content Explorer List Viewer, and Content Explorer Content Viewer role group membership.
 
+#### Roles and Role Groups in preview
+
+There are roles and role groups in preview that you can test out to fine tune your access controls.
+
+Here's a list of Microsoft Information Protection (MIP) roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Information Protection Admin
+- Information Protection Analyst
+- Information Protection Investigator
+- Information Protection Reader
+
+Here's a list of MIP role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Information Protection
+- Information Protection Admins
+- Information Protection Analysts
+- Information Protection Investigators
+- Information Protection Readers
+
 ## Content explorer
 
 Content explorer shows a current snapshot of the items that have a sensitivity label, a retention label or have been classified as a sensitive information type in your organization.

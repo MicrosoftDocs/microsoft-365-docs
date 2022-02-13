@@ -68,7 +68,7 @@ You manage incidents from **Incidents & alerts > Incidents** on the quick launch
 
 Selecting an incident name displays a summary of the incident and provides access to tabs with additional information.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Example of the Summary page for an incident in the Microsoft 365 Defender portal" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Example of the Summary page for an incident in the Microsoft 365 Defender portal" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
 The additional tabs for an incident are:
 

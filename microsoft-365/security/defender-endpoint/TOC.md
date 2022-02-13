@@ -4,12 +4,11 @@
 ### [What is Microsoft Defender for Endpoint?](microsoft-defender-endpoint.md)
 ### [Compare Defender for Endpoint Plan 1 to Plan 2](defender-endpoint-plan-1-2.md)
 ### [Minimum requirements](minimum-requirements.md)
-### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-atp.md)
+### [What's new in Microsoft Defender for Endpoint?](whats-new-in-microsoft-defender-endpoint.md)
 ### [Preview features](preview.md)
 ### [Data storage and privacy](data-storage-privacy.md)
 ### [Overview of Microsoft Defender Security Center](use.md)
-### [Portal overview](portal-overview.md)
-### [Defender for Endpoint Plan 1 (preview)]()
+### [Defender for Endpoint Plan 1]()
 #### [Overview](defender-endpoint-plan-1.md)
 #### [Setup and configuration](mde-p1-setup-configuration.md)
 #### [Get started](mde-plan1-getting-started.md)
@@ -33,18 +32,16 @@
 #### [Onboarding using Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
 ## [Migration guides](migration-guides.md)
-### [Switch from non-Microsoft endpoint protection to Defender for Endpoint](switch-to-microsoft-defender-migration.md)
-#### [Phase 1: Prepare](switch-to-microsoft-defender-prepare.md)
-#### [Phase 2: Setup](switch-to-microsoft-defender-setup.md)
-#### [Phase 3: Onboard](switch-to-microsoft-defender-onboard.md)
-
-
-
-### [Manage Defender for Endpoint after migration](manage-atp-post-migration.md)
-#### [Use Intune (recommended)](manage-atp-post-migration-intune.md)
-#### [Use Configuration Manager](manage-atp-post-migration-configuration-manager.md)
-#### [Use Group Policy](manage-atp-post-migration-group-policy-objects.md)
-#### [Use PowerShell, WMI, or MPCmdRun.exe](manage-atp-post-migration-other-tools.md)
+### [Move to Defender for Endpoint](switch-to-mde-overview.md)
+#### [Phase 1: Prepare](switch-to-mde-phase-1.md)
+#### [Phase 2: Setup](switch-to-mde-phase-2.md)
+#### [Phase 3: Onboard](switch-to-mde-phase-3.md)
+#### [Troubleshooting](switch-to-mde-troubleshooting.md)
+### [Manage Defender for Endpoint after migration](manage-mde-post-migration.md)
+#### [Use Intune (recommended)](manage-mde-post-migration-intune.md)
+#### [Use Configuration Manager](manage-mde-post-migration-configuration-manager.md)
+#### [Use Group Policy](manage-mde-post-migration-group-policy-objects.md)
+#### [Use PowerShell, WMI, or MPCmdRun.exe](manage-mde-post-migration-other-tools.md)
 #### [Server migration scenarios](server-migration.md)
 
 ## [Configure and onboard devices]()
@@ -78,7 +75,6 @@
 #### [Configure proxy and Internet connectivity settings](configure-proxy-internet.md)
 #### [Create an onboarding or offboarding notification rule](onboarding-notification.md)
 
-#### [Application license terms](mde-terms-windows.md)
 
 
 ### [Microsoft Defender for Endpoint on other Operating Systems]()
@@ -120,7 +116,7 @@
 
 ##### [Privacy](mac-privacy.md)
 ##### [Resources](mac-resources.md)
-##### [Application license terms](mde-terms-mac.md)
+
 
 #### [Microsoft Defender for Endpoint on Linux]()
 ##### [Overview of Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
@@ -138,7 +134,7 @@
 ###### [Static proxy configuration](linux-static-proxy-configuration.md)
 ###### [Set preferences](linux-preferences.md)
 ###### [Detect and block Potentially Unwanted Applications](linux-pua.md)
-###### [Schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-atp.md)
+###### [Schedule scans with Microsoft Defender for Endpoint on Linux](linux-schedule-scan-mde.md)
 ###### [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md)
 
 
@@ -187,7 +183,6 @@
 
 ###### [Privacy](ios-privacy.md)
 
-##### [Microsoft Defender for Endpoint application license terms](mde-terms-mobile.md) 
 
 ### [Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Endpoint Manager](security-config-management.md)
 
@@ -260,6 +255,8 @@
 ### [Device discovery]()
 #### [Device discovery overview](device-discovery.md)
 #### [Configure device discovery](configure-device-discovery.md)
+#### [Microsoft Defender for IoT integration](enable-microsoft-defender-for-iot-integration.md)
+#### [Enable Corelight data integration](corelight-integration.md)
 #### [Device discovery FAQ](device-discovery-faq.md)
 
 ### [Network devices](network-devices.md)
@@ -267,17 +264,34 @@
 ### [Host firewall reporting in Microsoft Defender for Endpoint](host-firewall-reporting.md)
 
 ### [Attack surface reduction]()
-#### [Overview of attack surface reduction](overview-attack-surface-reduction.md)
-#### [Configure attack surface reduction capabilities](configure-attack-surface-reduction.md)
-#### [Learn about attack surface reduction rules](attack-surface-reduction.md)
-#### [Attack surface reduction rules](attack-surface-reduction-rules.md)
-#### [Deploy attack surface reduction rules](attack-surface-reduction-rules-deployment.md)
-#### [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
-#### [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
-#### [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
-#### [Attack surface reduction FAQ](attack-surface-reduction-faq.yml)
-#### [View attack surface reduction events](event-views.md)
-#### [Use audit mode for attack surface reduction](audit-windows-defender.md)
+#### [Attack surface reduction overview](overview-attack-surface-reduction.md)
+#### [Attack surface reduction (ASR) rules]()
+##### [Learn about ASR rules](attack-surface-reduction.md)
+##### [Attack surface reduction (ASR) rules deployment guide]()
+###### [ASR rules deployment prerequisites](attack-surface-reduction-rules-deployment.md)
+###### [Step 1: Plan ASR rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+###### [Step 2: Test ASR rules](attack-surface-reduction-rules-deployment-test.md)
+###### [Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md)
+###### [Step 4: Operationalize ASR rules](attack-surface-reduction-rules-deployment-operationalize.md)
+##### [ASR rules reference](attack-surface-reduction-rules-reference.md)
+##### [Enable ASR rules alternate configuration methods](enable-attack-surface-reduction.md)
+##### [Attack surface reduction FAQ](attack-surface-reduction-faq.yml)
+#### [Controlled folder access]()
+##### [Protect folders](controlled-folders.md)
+##### [Evaluate controlled folder access](evaluate-controlled-folder-access.md)
+##### [Enable controlled folder access](enable-controlled-folders.md)
+##### [Customize controlled folder access](customize-controlled-folders.md)
+#### [Exploit protection]()
+##### [Protect devices from exploits](exploit-protection.md)
+##### [Exploit protection evaluation](evaluate-exploit-protection.md)
+##### [Enable exploit protection](enable-exploit-protection.md)
+##### [Customize exploit protection](customize-exploit-protection.md)
+##### [Import, export, and deploy exploit protection configurations](import-export-exploit-protection-emet-xml.md)
+##### [Exploit protection reference](exploit-protection-reference.md)
+#### [Network protection]()
+##### [Protect your network](network-protection.md)
+##### [Evaluate network protection](evaluate-network-protection.md)
+##### [Turn on network protection](enable-network-protection.md)
 
 ### Next-generation protection
 #### [Next-generation protection overview](next-generation-protection.md)
@@ -349,19 +363,6 @@
 ##### [Review event logs and error codes to troubleshoot issues with Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Troubleshoot Microsoft Defender Antivirus while migrating from a third-party solution](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
-#### [Exploit protection]()
-##### [Protect devices from exploits](exploit-protection.md)
-##### [Exploit protection evaluation](evaluate-exploit-protection.md)
-##### [Enable exploit protection](enable-exploit-protection.md)
-##### [Customize exploit protection](customize-exploit-protection.md)
-##### [Import, export, and deploy exploit protection configurations](import-export-exploit-protection-emet-xml.md)
-##### [Exploit protection reference](exploit-protection-reference.md)
-
-#### [Network protection]()
-##### [Protect your network](network-protection.md)
-##### [Evaluate network protection](evaluate-network-protection.md)
-##### [Turn on network protection](enable-network-protection.md)
-
 #### [Web protection]()
 ##### [Web protection overview](web-protection-overview.md)
 ##### [Web threat protection]()
@@ -369,12 +370,6 @@
 ###### [Monitor web security](web-protection-monitoring.md)
 ###### [Respond to web threats](web-protection-response.md)
 ##### [Web content filtering](web-content-filtering.md)
-
-#### [Controlled folder access]()
-##### [Protect folders](controlled-folders.md)
-##### [Evaluate controlled folder access](evaluate-controlled-folder-access.md)
-##### [Enable controlled folder access](enable-controlled-folders.md)
-##### [Customize controlled folder access](customize-controlled-folders.md)
 
 #### [Device Control]()
 ##### [Removable Storage Protection](device-control-removable-storage-protection.md)
@@ -646,8 +641,6 @@
 
 #### [SIEM integration]()
 ##### [Integrate SIEM tools with Microsoft Defender for Endpoint](configure-siem.md)
-##### [Microsoft Defender for Endpoint detection fields](api-portal-mapping.md)
-##### [Pull detections using SIEM REST API](pull-alerts-using-rest-api.md)
 ##### [Troubleshoot SIEM tool integration issues](troubleshoot-siem.md)
 
 #### [Partners & APIs]()
@@ -713,7 +706,6 @@
 
 ### [Troubleshoot Microsoft Defender for Endpoint service issues]()
 #### [Troubleshoot service issues](troubleshoot-mdatp.md)
-#### [Check service health](service-status.md)
 #### [Contact Microsoft Defender for Endpoint support](contact-support.md)
 
 ### [Troubleshoot live response issues](troubleshoot-live-response.md)
@@ -729,3 +721,6 @@
 ## [Microsoft 365 Defender](../defender/index.yml)
 ## [Defender for Office 365](../office-365-security/index.yml)
 ## [Defender for Identity](/defender-for-identity/)
+## [Defender for Cloud Apps](/cloud-app-security/)
+## [Defender for Business](../defender-business/index.yml)
+

@@ -20,6 +20,7 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 - AdminTemplateSet
+- adminvideo
 search.appverid:
 - BCS160
 - MET150
@@ -38,9 +39,13 @@ For more information, see [About admin roles](about-admin-roles.md).
 
 When you add new users, if you don't assign them an admin role then they are in the *user role* and don't have admin privileges to any of the Microsoft admin centers. But if you need help getting things done, you can assign an admin role to a user. For example, if you need someone to help reset passwords, you shouldn't assign them the global admin role, you should assign them the password admin role. Having too many global admins, with unlimited access to your data and online business, is a security risk.
 
-## Watch: Add an admin<br><br>
+## Watch: Add an admin
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
+
+1. When you sign up for Microsoft 365 Business, you automatically become a global admin. To help manage the business, you can make other people admins as well. 
+1. In the Microsoft 365 admin center, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
+1. Choose the user you want to make an admin, and then select **Manage roles**.
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
 
@@ -65,12 +70,6 @@ You can assign users to a role in 2 different ways:
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to **Users** > [Active users](https://go.microsoft.com/fwlink/p/?linkid=834822) page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
