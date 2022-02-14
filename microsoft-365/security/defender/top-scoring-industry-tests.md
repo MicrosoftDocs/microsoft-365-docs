@@ -82,15 +82,23 @@ Business Security Test consists of three main parts: the Real-World Protection T
 
 SE Labs test a range of solutions used by products and services to detect and/or protect against attacks. It includes endpoint software, network appliances, and cloud services.
 
-- Enterprise Endpoint Protection October - December 2020: [AAA award](https://selabs.uk/reports/enterprise-endpoint-protection-2020-q4/) <sup>**Latest**</sup>
+- Annual Report 2020 - 2021: [AAA award](https://selabs.uk/wp-content/uploads/2021/11/annual-report-2021.pdf) <sup>**Latest**</sup>
 
-    Microsoft's next-gen protection product stopped all public and targeted attacks. Microsoft Defender Antivirus achieved such good results with it's ability to block malicious URLs, handle exploits, and correctly classify legitimate applications and websites.
+- Enterprise Endpoint Protection: October - December 2021: [AAA award](https://selabs.uk/wp-content/uploads/2021/12/oct-dec-2021-enterprise.pdf)
 
-- Enterprise Endpoint Protection July - September 2020: [AAA award](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
+- Enterprise Advanced Security (EDR): Kaspersky: August to September 2021: [AAA award](https://selabs.uk/wp-content/uploads/2021/12/AS-EDR-Kaspersky-EDR-2021-1.pdf)
 
-- Enterprise Endpoint Protection April - June 2020: [AAA award](https://selabs.uk/reports/epp-ent-20q2-security-testing/)
+- Enterprise Advanced Security (EDR): Crowdstrike: August to September 2021: [AAA award](https://selabs.uk/wp-content/uploads/2021/12/AS-EDR-Crowdstrike-Falcon-2021-1.pdf)
 
-- Enterprise Endpoint Protection January - March 2020: [AAA award](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup> | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
+- Breach Response (NDR Detection): VMware NSX Network Detection and Response: August 2021: [AAA award](https://selabs.uk/wp-content/uploads/2021/10/NDR-VMware-NSX-detection-2021-1.pdf)
+
+- Enterprise Endpoint Protection: July - September 2021: [AAA award](https://selabs.uk/wp-content/uploads/2021/11/july-sept-2021-enterprise.pdf)
+
+- Breach Response (Protection): BlackBerry Protect and Optics: July 2021: [AAA award](https://selabs.uk/wp-content/uploads/2021/07/BRT-BlackBerry-Protect-protection-2021-1.pdf)
+
+- Enterprise Endpoint Protection: April - June 2021: [AAA award](https://selabs.uk/wp-content/uploads/2021/07/apr-jun-2021-enterprise-1.pdf)
+
+- Enterprise Endpoint Protection: January - March 2021: [AAA award](https://selabs.uk/wp-content/uploads/2021/04/jan-mar-2021-enterprise.pdf) <sup>**pdf**</sup>
 
 ## Endpoint detection & response
 
