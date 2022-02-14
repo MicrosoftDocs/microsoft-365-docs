@@ -56,6 +56,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/business-video/moveto-microsoft-365/add-google-domain.md",
+      "redirect_url": "/microsoft-365/admin/moveto-microsoft-365/add-google-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/moveto-microsoft-365/cancel-google.md",
+      "redirect_url": "/microsoft-365/admin/moveto-microsoft-365/cancel-google",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/moveto-microsoft-365/connect-domain-tom365.md",
+      "redirect_url": "/microsoft-365/admin/moveto-microsoft-365/connect-domain-tom365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/moveto-microsoft-365/migrate-email.md",
+      "redirect_url": "/microsoft-365/admin/moveto-microsoft-365/migrate-email",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/moveto-microsoft-365/move-from-google-workspace-overview.md",
+      "redirect_url": "/microsoft-365/admin/moveto-microsoft-365/move-from-google-workspace-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/moveto-microsoft-365/mover-migrate-files.md",
+      "redirect_url": "/microsoft-365/admin/moveto-microsoft-365/mover-migrate-files",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/moveto-microsoft-365/set-up-microsoft-365-forgoogle.md",
+      "redirect_url": "/microsoft-365/admin/moveto-microsoft-365/set-up-microsoft-365-forgoogle",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/business-video/shared-calendar.md",
       "redirect_url": "https://support.microsoft.com/office/353ed2c1-3ec5-449d-8c73-6931a0adab88",
       "redirect_document_id": false
