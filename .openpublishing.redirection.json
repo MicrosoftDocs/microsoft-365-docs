@@ -6547,6 +6547,106 @@
       "source_path": "microsoft-365/enterprise/microsoft-365-client-services-app-support.md",
       "redirect_url": "/microsoft-365/enterprise/deploy-identity-solution-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/campaigns/create-communications-site.md",
+      "redirect_url": "/microsoft-365/business-premium/create-communications-site",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/campaigns/create-teams-for-collaboration.md",
+      "redirect_url": "/microsoft-365/business-premium/create-teams-for-collaboration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/campaigns/get-microsoft-365-campaigns.md",
+      "redirect_url": "/microsoft-365/business-premium/get-microsoft-365-campaigns",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/campaigns/index.md",
+      "redirect_url": "/microsoft-365/business-premium/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/campaigns/m365-campaigns-conditional-access.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-conditional-access",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/campaigns/m365-campaigns-increase-protection.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-increase-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/campaigns/m365-campaigns-multifactor-authenication.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-multifactor-authentication",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/campaigns/m365-campaigns-phishing-and-attacks.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-phishing-and-attacks",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/campaigns/m365-campaigns-protect-admin-accounts.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-protect-admin-accounts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/campaigns/m365-campaigns-protect-campaign-infographic.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-protect-campaign-infographic",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/campaigns/m365-campaigns-protect-pcs-macs.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-protect-pcs-macs",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/campaigns/m365-campaigns-security-overview.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-security-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/campaigns/m365-campaigns-sign-in.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-sign-in",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/campaigns/m365-campaigns-sign-up.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-sign-up",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/campaigns/m365-campaigns-users.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-users",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/campaigns/m365-customize-sign-in.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-customize-sign-in",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/campaigns/microsoft-365-campaigns-setup-overview.md",
+      "redirect_url": "/microsoft-365/business-premium/microsoft-365-campaigns-setup-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/campaigns/send-encrypted-email.md",
+      "redirect_url": "/microsoft-365/business-premium/send-encrypted-email",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/campaigns/set-up-meetings.md",
+      "redirect_url": "/microsoft-365/business-premium/set-up-meetings",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/campaigns/share-files-and-videos.md",
+      "redirect_url": "/microsoft-365/business-premium/share-files-and-videos",
+      "redirect_document_id": true
     }
   ]
 }
