@@ -826,6 +826,10 @@
               href: manage-hold-notification.md
             - name: Acknowledge a hold notification
               href: acknowledge-hold-notification.md
+            - name: Acknowledge a hold notification
+              href: acknowledge-hold-notification.md
+            - name: Manage issuing officers
+              href: advanced-ediscovery-issuing-officers
         - name: Manage holds
           href: managing-holds.md
         - name: Manage processing errors

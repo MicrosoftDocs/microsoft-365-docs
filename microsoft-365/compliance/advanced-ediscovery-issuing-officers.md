@@ -44,7 +44,6 @@ This article explains how to add and remove users to the list of organization-wi
 
 2. On the **Settings** page, select the **Issuing officers** tab.
 
-
    ![Issuing officers settings page.](..\media\AeDIssuingOfficers1.png)
 
 3. Click **Add** and then search for and add one or more users to the list of issuing officers. 
