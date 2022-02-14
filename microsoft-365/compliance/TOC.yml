@@ -322,7 +322,7 @@
             href: named-entities-learn.md
         - name: Get started with sensitive information type
           items:
-          - name: Get started with custom sensitive information types - Compliance Center
+          - name: Create a custom sensitive information types - Compliance Center
             href: create-a-custom-sensitive-information-type.md
           - name: Get started with exact data match based sensitive information types
             href: sit-get-started-exact-data-match-based-sits-overview.md
@@ -344,6 +344,10 @@
             href: sit-modify-edm-schema-configurable-match.md
           - name: Create notifications for exact data match activities (preview)
             href: sit-edm-notifications-activities.md
+          - name: Manage custom sensitive information types in compliance center
+            href: sit-manage-custom-sits-compliance-center.md
+          - name: Sensitive information types REGEX validators and additional checks
+            href: sit-regex-validators-additional-checks.md
           - name: Create a custom sensitive information type - PowerShell
             href: create-a-custom-sensitive-information-type-in-scc-powershell.md
           - name: Remove a custom sensitive information type - PowerShell

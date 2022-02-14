@@ -1,5 +1,5 @@
 ---
-title: "Get started with custom sensitive information types"
+title: "Create a custom sensitive information types"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,10 +15,10 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to create, modify, remove, and test custom sensitive information types for DLP in the Security & Compliance Center."
+description: "Learn how to create, modify, remove, and test custom sensitive information types in the Compliance Center."
 ms.custom: seo-marvel-apr2020
 ---
-# Get started with custom sensitive information types
+# Create custom sensitive information types in the Compliance center
 
 If the pre-configured sensitive information types don't meet your needs, you can create your own custom sensitive information types that you fully define or you can copy one of the pre-configured ones and modify it.
 
@@ -83,6 +83,22 @@ Use this procedure to create a new sensitive information type that you fully def
 ### Copy and modify a sensitive information type
 
 Use this procedure to create a new sensitive information type that is based on an existing sensitive information type. 
+
+> [!NOTE]
+> These SITs can't be copied:
+> - Canada driver's license number
+> - EU driver's license number
+> - EU national identification number
+> - EU passport number
+> - EU social security number or equivalent identification
+> - EU tax identification number
+> - International classification of diseases (ICD-10-CM)
+> - International classification of diseases (ICD-9-CM)
+> - U.S. driver's license number
+
+You can also create custom sensitive information types by using PowerShell and Exact Data Match capabilities. To learn more about those methods, see:
+- [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 
 1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type that you want to copy.
 
@@ -162,111 +178,6 @@ For a scanned item to satisfy rule criteria, the number of unique instances of a
     - Any - Use `Any` when you want the unique instance count criteria to be satisfied when an undefined number of unique instances of a SIT are found in a scanned item and that number of unique instances meets or exceeds the minimum number of unique instances value. In other words, the unique instance count criteria are met as long as the min value is met.
 
 For example, if you want the rule to trigger a match when at least 500 unique instances of a SIT are found in a single item, set the **min** value to `500` and the **max** value to `Any`.
-
-## Modify custom sensitive information types in the Compliance Center
-
-1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list that you want to modify choose **Edit**.
-
-2. You can add other patterns, with unique primary and supporting elements, confidence levels, character proximity, and [**additional checks**](#more-information-on-additional-checks) or edit/remove the existing ones.
-
-## Remove custom sensitive information types in the Compliance Center 
-
-> [!NOTE]
-> You can only remove custom sensitive information types; you can't remove built-in sensitive information types.
-
-> [!IMPORTANT]
-> Before your remove a custom sensitive information type, verify that no DLP policies or Exchange mail flow rules (also known as transport rules) still reference the sensitive information type.
-
-1. In the Compliance Center, go to **Data classification** \> **Sensitive info types** and choose the sensitive information type from the list that you want to remove.
-
-2. In the fly-out that opens, choose **Delete**.
-
-> [!NOTE]
-> These SITs can't be copied:
-> - Canada driver's license number
-> - EU driver's license number
-> - EU national identification number
-> - EU passport number
-> - EU social security number or equivalent identification
-> - EU tax identification number
-> - International classification of diseases (ICD-10-CM)
-> - International classification of diseases (ICD-9-CM)
-> - U.S. driver's license number
-
-You can also create custom sensitive information types by using PowerShell and Exact Data Match capabilities. To learn more about those methods, see:
-- [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
-
-## More information on regular expression validators
-
-### Checksum validator
-
-If you need to run a checksum on a digit in a regular expression, you can use the *checksum validator*. For example, say you need to create a SIT for an eight digit license number where the last digit is a checksum digit that is validated using a mod 9 calculation. You've set up the checksum algorithm like this:
-
-```console
-Sum = digit 1 * Weight 1 + digit 2 * weight 2 + digit 3 * weight 3 + digit 4 * weight 4 + digit 5 * weight 5 + digit 6 * weight 6 + digit 7 * weight 7 + digit 8 * weight 8
-Mod value = Sum % 9
-If Mod value == digit 8
-    Account number is valid
-If Mod value != digit 8
-    Account number is invalid
-```
-
-1. Define the primary element with this regular expression:
-
-   ```console
-   \d{8}
-   ```
-
-2. Then add the checksum validator.
-
-3. Add the weight values separated by commas, the position of the check digit and the Mod value. For more information on the Modulo operation, see [Modulo operation](https://en.wikipedia.org/wiki/Modulo_operation).
-
-   > [!NOTE]
-   > If the check digit is not part of the checksum calculation then use 0 as the weight for the check digit. For example, in the above case weight 8 will be equal to 0 if the check digit is not to be used for calculating the check digit.  Modulo_operation).
-
-   :::image type="content" alt-text="screenshot of configured checksum validator." source="../media/checksum-validator.png" lightbox="../media/checksum-validator.png":::
-
-### Date validator
-
-If a date value that is embedded in regular expression is part of a new pattern you are creating, you can use the *date validator* to test that it meets your criteria. For example, say you want to create a SIT for a nine digit employee identification number. The first six digits are the date of hire in DDMMYY format and the last three are randomly generated numbers. To validate that the first six digits are in the correct format.
-
-1. Define the primary element with this regular expression:
-
-   ```console
-   \d{9}
-   ```
-
-2. Then add the date validator.
-
-3. Select the date format and the start offset. Since the date string is the first six digits, the offset is `0`.
-
-   :::image type="content" alt-text="screenshot of configured date validator." source="../media/date-validator.png" lightbox="../media/date-validator.png":::
-
-### Functional processors as validators
-
-You can use function processors for some of the most commonly used SITs as validators. This allows you to define your own regular expression while ensuring they pass the additional checks required by the SIT. For example, Func_India_Aadhar will ensure that the custom regular expression defined by you passes the validation logic required for Indian Aadhar card. For more information on DLP functions that can be used as validators, see [What the DLP functions look for](what-the-dlp-functions-look-for.md#what-the-dlp-functions-look-for). 
-
-### Luhn check validator
-
-You can use the Luhn check validator if you have a custom Sensitive information type that includes a regular expression which should pass the [Luhn algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm).
-
-## More information on additional checks
-
-Here are the definitions and some examples for the available additional checks.
-
-**Exclude specific matches**: This check lets you define keywords to exclude when detecting matches for the pattern you are editing. For example, you might exclude test credit card numbers like '4111111111111111' so that they're not matched as a valid number.
-
-**Starts or doesn't start with characters**: This check lets you define the characters that the matched items must or must not start with. For example, if you want the pattern to detect only credit card numbers that start with 41, 42, or 43, select **Starts with** and add 41, 42, and 43 to the list, separated by commas. 
-
-**Ends or doesn't end with characters**: This check lets you define the characters that the matched items must or must not end with. For example, if your Employee ID number cannot end with 0 or 1, select **Doesn't end with** and add 0 and 1 to the list, separated by commas.
-
-**Exclude duplicate characters**: This check lets you ignore matches in which all the digits are the same. For example, if the six digit employee ID number cannot have all the digits be the same, you can select **Exclude duplicate characters** to exclude 111111, 222222, 333333, 444444, 555555, 666666, 777777, 888888, 999999, and 000000 from the list of valid matches for the employee ID.
-
-**Include or exclude prefixes**: This check lets you define the keywords that must or must not be found immediately before the matching entity. Depending on your selection, entities will be matched or not matched if they're preceded by the prefixes you include here. For example, if you **Exclude** the prefix **GUID:**, any entity that's preceded by **GUID:** won't be considered a match.
-
-**Include or exclude suffixes** This check lets you define the keywords that must or must not be found immediately after the matching entity. Depending on your selection, entities will be matched or not matched if they're followed by the suffixes you include here. For example, if you **Exclude** the suffix **:GUID**, any text that's followed by **:GUID** won't be matched.
-
 
 > [!NOTE]
 > Microsoft 365 Information Protection supports double byte character set languages for:
