@@ -26,7 +26,7 @@ When you or others create a hold notification or other type of communication tha
 
 - Any user who is added to a list of organization-wide issuing officers. Users from this list can be added an issuing officer to any case in your organization.
 
-This article explains how to add users to the list of organization-wide issuing officers.
+This article explains how to add and remove users to the list of organization-wide issuing officers.
 
 ## Before you add an issuing officer
 
@@ -34,18 +34,29 @@ This article explains how to add users to the list of organization-wide issuing 
 
 - The user who is added as an issuing officer must have an active mailbox in your Microsoft 365 organization.
 
-- Your organization can have a maximum of 15 issuing officers. Members of a case who can be specified as an issuing officer aren't counted toward this limit. Only the number of users added to **Issuing officers** page count toward this limit.
+- Your organization can have a maximum of 15 issuing officers. Members of a case who can be specified as an issuing officer aren't counted toward this limit. This limit only applies to the number of users that can be added to the **Issuing officers** page in Advanced eDiscovery.
 
 ## Add an issuing officer
 
+1. In the Microsoft 365 compliance center, go to [Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **Advanced eDiscovery settings**.
+
+   ![Select Advanced eDiscovery settings](..\media\HistoricalVersions1.png)
+
+2. On the **Settings** page, select the **Issuing officers** tab.
 
 
+   ![Issuing officers settings page.](..\media\AeDIssuingOfficers1.png)
 
+3. Click **Add** and then search for and add one or more users to the list of issuing officers. 
 
-
+After you add users as issuing officers, you or other users will be able to specify these users as an issuing officer for custodian communications for any case in your organization.
 
 ## Remove an issuing officer
 
+1. In the Microsoft 365 compliance center, go to [Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **Advanced eDiscovery settings**.
 
+2. On the **Settings** page, select the **Issuing officers** tab.
 
+3. Select one or more users in the issuing officers list, and then click **Delete**.
 
+After you delete users from the list of issuing officers, those users can no longer be specified as an issuing officer in new custodian communications, unless the user is a member of the specific case the communication is being issued from. Also, removing an issuing officer won't affect any communications that were previously sent before the using was removed as an issuing officer.
