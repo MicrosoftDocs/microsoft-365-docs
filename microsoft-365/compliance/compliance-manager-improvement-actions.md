@@ -124,12 +124,10 @@ If an implementation action is eligible to be automatically tested by Compliance
 
 #### Parent testing source
 
-When you select **Parent** as the testing source for an improvement action, you'll choose another action to which your action will be linked. Your action in effect becomes the "child" to the action that you designate as the "parent." When you designate a parent for an improvement action, the child will inherent the implementation and testing details of the parent action. Any time the parent action's status changes, the child's status will inherit those changes. 
+When you select **Parent** as the testing source for an improvement action, you'll choose another action to which your action will be linked. Your action in effect becomes the "child" to the action that you designate as the "parent." When you designate a parent for an improvement action, that action will inherent the implementation and testing details of the parent action. Any time the parent action's status changes, the child's status will inherit those changes. The child action will also accept all evidence in its **Documents** tab that belong to the parent action, which could override any data that previously existed in the child action's **Documents**.
 
 > [!NOTE]
 > Having a testing source of **Parent** doesn't necessarily mean that the action is automatically tested by Compliance Manager. For example, if the parent action's testing source is **manual**, then the child action will take on the status of parent action, which is a manual test and implementation by the organization.
-
-The child action will also accept all evidence in its **Documents** tab that belong to the parent action, which could override any data that previously existed in the child action's **Documents**.
 
 To set up a parent testing source, follow the steps below:
 
