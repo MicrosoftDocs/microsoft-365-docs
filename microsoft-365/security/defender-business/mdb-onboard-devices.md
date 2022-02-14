@@ -44,22 +44,27 @@ With Microsoft Defender for Business (preview), you have several options to choo
 
 This article also includes information about [how to offboard a device](#what-if-i-want-to-offboard-a-device).
 
-## Types of onboarding methods
-
-The following table describes the types of onboarding methods that are supported in Defender for Business during preview. 
-<br/><br/>
-
-| Onboarding method  | Description  |
-|---------|---------|
-| **Automatic onboarding**<br/>(*available to customers who are already using Microsoft Endpoint Manager*) | If you were already using Microsoft Endpoint Manager before getting Defender for Business (preview), Defender for Business will detect that. You'll be asked if you want to use the automatic onboarding process for devices that were previously onboarded to Microsoft Endpoint Manager. <br/><br/>Automatic onboarding sets up a connection between Defender for Business (preview) and Microsoft Endpoint Manager, and then onboards devices to Defender for Business (preview). This option enables you to onboard devices to Defender for Business (preview) quickly and efficiently. All Windows devices that are currently enrolled in Microsoft Endpoint Manager will be onboarded to Defender for Business. <br/><br/>If you choose automatic onboarding, skip the procedures in this article and proceed to [Step 5: Configure your security settings and policies in Microsoft Defender for Business (preview)](mdb-configure-security-settings.md).  |
-| **Local script**<br/>(*recommended during preview; useful for onboarding a few devices at a time*)  | During preview, you can onboard devices in Defender for Business (preview) by using a script that you download and run on macOS, Windows 10 or 11, and Linux devices. Running the script on a device creates a trust with Azure Active Directory (Azure AD) and enrolls the device with Microsoft Intune. The process is similar to that of [onboarding devices to Microsoft Defender for Endpoint](../defender-endpoint/onboarding.md).<br/><br/>To use this method, proceed to [Onboard a device using a local script in Microsoft 365 Defender](#onboard-a-device-using-a-local-script-in-defender-for-business). |
-| **Microsoft Intune** <br/>(*available to customers who are already using Microsoft Intune*) | If you were already using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) before getting Defender for Business (preview), you can use Microsoft Intune to onboard devices. During preview, you can use Microsoft Intune to onboard Windows, iOS, macOS, Linux, and Android devices to Defender for Business (preview). <br/><br/>To use this method, see [Device enrollment in Intune](/mem/intune/enrollment/device-enrollment). |
-| **Group Policy** | [Group Policy](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831791(v=ws.11)) is an infrastructure that allows you to specify managed configurations for users and computers through Group Policy settings and Group Policy Preferences. A Group Policy object (GPO) is a logical object composed a Group Policy container and a Group Policy template. If your organization is already using Group Policy, you can create GPOs and apply them to your organization's devices in Defender for Business (preview).<br/><br/>To learn more about this method, see [Onboard Windows devices using Group Policy](../defender-endpoint/configure-endpoints-gp.md). | 
-| **VDI onboarding script** | If your organization is using non-persistent virtual desktop infrastructure (VDI) devices, you can onboard those endpoints using a downloadable script. <br/><br/>To learn more about this method, see [Onboard non-persistent VDI devices](../defender-endpoint/configure-endpoints-vdi.md).  |
-
 
 > [!TIP]
 > If something goes wrong while onboarding devices, see [Microsoft Defender for Business (preview) troubleshooting](mdb-troubleshooting.yml). 
+
+## Automatic onboarding for Windows devices
+
+If your organization is using Microsoft Intune (part of Microsoft Endpoint Manager) to manage devices, and you have already enrolled devices in Microsoft Intune, automatic onboarding can make it easier to onboard Windows devices to Defender for Business. 
+
+Automatic onboarding sets up a connection between Defender for Business (preview) and Microsoft Endpoint Manager, and then onboards Windows devices to Defender for Business (preview). You'll see the option to onboard all or some Windows devices while you are using the setup and configuration wizard in Defender for Business (preview). See step 3 in [Overview of the wizard](mdb-use-wizard.md#overview-of-the-wizard). 
+
+If you're not already using Endpoint Manager, or if you have non-Windows devices to onboard, use one of the manual device onboarding options that are available in Defender for Business (preview).
+
+## Manual device onboarding
+
+| Onboarding method  | Description  |
+|---------|---------|
+| **Local script**<br/>(*recommended during preview; useful for onboarding a few devices at a time*)  | During preview, you can onboard devices in Defender for Business (preview) by using a script that you download and run on macOS, Windows 10 or 11, and Linux devices. Running the script on a device creates a trust with Azure Active Directory (Azure AD) and enrolls the device with Microsoft Intune. The process is similar to that of [onboarding devices to Microsoft Defender for Endpoint](../defender-endpoint/onboarding.md).<br/><br/>To use this method, proceed to [Onboard a device using a local script in Microsoft 365 Defender](#onboard-a-device-using-a-local-script-in-defender-for-business). |
+| **Microsoft Intune** <br/>(*available to customers who are already using Microsoft Intune*) | If you were already using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) before getting Defender for Business (preview), you can continue to use Microsoft Intune to onboard and manage devices. <br/><br/>During preview, you can use Microsoft Intune to onboard Windows, iOS, macOS, Linux, and Android devices to Defender for Business (preview). <br/><br/>To use this method, see [Device enrollment in Intune](/mem/intune/enrollment/device-enrollment). |
+| **Group Policy** | [Group Policy](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831791(v=ws.11)) is an infrastructure that allows you to specify managed configurations for users and computers through Group Policy settings and Group Policy Preferences. A Group Policy object (GPO) is a logical object composed a Group Policy container and a Group Policy template. If your organization is already using Group Policy, you can create GPOs and apply them to your organization's devices in Defender for Business (preview).<br/><br/>To learn more about this method, see [Onboard Windows devices using Group Policy](../defender-endpoint/configure-endpoints-gp.md). | 
+| **VDI onboarding script** | If your organization is using non-persistent virtual desktop infrastructure (VDI) devices, you can onboard those endpoints using a downloadable script. <br/><br/>To learn more about this method, see [Onboard non-persistent VDI devices](../defender-endpoint/configure-endpoints-vdi.md).  |
+
 
 ## Onboard a device using a local script in Defender for Business
 
@@ -88,7 +93,7 @@ If you were already using Microsoft Intune before getting Defender for Business 
 
 ## Run a detection test
 
-After you've onboarded a Windows device manually, you can run a detection test to make sure that everything is working correctly with Defender for Business (preview).
+After you've onboarded Windows devices to Defender for Business (preview), you can run a detection test to make sure that everything is working correctly.
 
 1. On the Windows device, create a folder: `C:\test-MDATP-test`.
 
@@ -100,9 +105,9 @@ After you've onboarded a Windows device manually, you can run a detection test t
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
-After the command has run, the Command Prompt window will close automatically. If successful, the detection test will be marked as completed, and a new alert will appear in the Microsoft 365 Defender portal for the newly onboarded device in about 10 minutes.
+After the command has run, the Command Prompt window will close automatically. If successful, the detection test will be marked as completed, and a new alert will appear in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for the newly onboarded device in about 10 minutes.
 
-## What if I want to onboard devices gradually?
+## Gradual device onboarding
 
 If you want to onboard your organization's devices in phases, follow these steps:
 
@@ -119,7 +124,7 @@ If you want to onboard your organization's devices in phases, follow these steps
 > [!TIP]
 > You don't have to use the same onboarding package every time you onboard devices. For example, you can use a local script to onboard some devices, and later on, you can choose another method to onboard more devices.
 
-## What if I want to offboard a device?
+## Offboarding a device
 
 If you want to offboard a device, follow these steps:
 
