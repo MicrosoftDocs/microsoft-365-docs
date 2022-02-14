@@ -81,7 +81,6 @@ Use the following table to help you identify the differences in behavior for the
 |:-----|:-----|:-----|
 |App dependency|Yes ([minimum versions](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)) |No \* |
 |Restrict by location|No |Yes |
-|Conditions: Exact Data Match for custom sensitive info types|Yes |No |
 |Conditions: Trainable classifiers|Yes |No |
 |Conditions: Sharing options and additional options for email|No |Yes |
 |Conditions: Exceptions|No |Yes (email only) |
@@ -127,8 +126,8 @@ For email auto-labeling policies only, you can select a setting to always overri
 |Existing label |Override with label setting: Auto-labeling for files and emails  |Override with policy: Auto-labeling|
 |:-----|:-----|:-----|
 |Manually applied, any priority|Word, Excel, PowerPoint: No <br /><br> Outlook: No  |SharePoint and OneDrive: No <br /><br> Exchange: No by default, but configurable |
-|Automatically applied, lower priority |Word, Excel, PowerPoint: Yes <br /><br> Outlook: Yes | SharePoint and OneDrive: Yes <br /><br> Exchange: Yes |
-|Automatically applied, higher priority |Word, Excel, PowerPoint: No <br /><br> Outlook: No |SharePoint and OneDrive: No <br /><br> Exchange: No by default, but configurable |
+|Automatically applied or default label from policy, lower priority |Word, Excel, PowerPoint: Yes <br /><br> Outlook: Yes | SharePoint and OneDrive: Yes <br /><br> Exchange: Yes |
+|Automatically applied or default label from policy, higher priority |Word, Excel, PowerPoint: No <br /><br> Outlook: No |SharePoint and OneDrive: No <br /><br> Exchange: No by default, but configurable |
 
 The configurable setting for email auto-labeling policies is on the **Additional settings for email** page. This page displays after you've selected a sensitivity label for an auto-labeling policy that includes the Exchange location.
 
@@ -136,7 +135,7 @@ The configurable setting for email auto-labeling policies is on the **Additional
 
 For built-in labeling in Office apps, check the [minimum versions required](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) for automatic labeling in Office apps.
 
-The Azure Information Protection unified labeling client supports automatic labeling for built-in and custom sensitive info types, but not for trainable classifiers or sensitive info types that use Exact Data Match (EDM).
+The Azure Information Protection unified labeling client supports automatic labeling only for built-in and custom sensitive info types, and doesn't support trainable classifiers or sensitive info types that use Exact Data Match (EDM) or named entities.
 
 The auto-labeling settings for Office apps are available when you [create or edit a sensitivity label](create-sensitivity-labels.md). Make sure **Files & emails** is selected for the label's scope:
 
@@ -178,7 +177,7 @@ If you configure a sensitivity label with only EDM for your sensitive informatio
 
 ### Configuring trainable classifiers for a label
 
-If you use this option, make sure you've published in your tenant at least one other sensitivity label that's configured for auto-labeling and the [sensitive info types option](#configuring-sensitive-info-types-for-a-label).
+If you use this option with Microsoft 365 Apps for Windows version 2106 or lower, or Microsoft 365 Apps for Mac version 16.50 or lower, make sure you've published in your tenant at least one other sensitivity label that's configured for auto-labeling and the [sensitive info types option](#configuring-sensitive-info-types-for-a-label). This requirement isn't necessary when you use later versions on these platforms.
 
 When you select the **Trainable classifiers** option, select one or more of the pre-trained or custom trainable classifiers:
 
