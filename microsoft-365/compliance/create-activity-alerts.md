@@ -10,6 +10,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MED150
@@ -37,11 +38,11 @@ You can create an activity alert that will send you an email notification when u
 
 - You can create alerts for the same activities that you can search for in the audit log. See the [More information](#more-information) section for a list of common scenarios (and the specific activity to monitor) that you can create alerts for.
 
-- You can use the **Activity alerts** page in the Microsoft 365 compliance center to create alerts only for activity performed by users who are listed in your organization's address book. You can't use this page to create alerts for activities performed by external users who aren't listed in the address book.
+- You can use the **Activity alerts** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> to create alerts only for activity performed by users who are listed in your organization's address book. You can't use this page to create alerts for activities performed by external users who aren't listed in the address book.
 
 ## Create an activity alert
 
-1. Go to <https://compliance.microsoft.com/managealerts>.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
 
 2. Sign in using your work or school account.
 
@@ -80,7 +81,7 @@ You can create an activity alert that will send you an email notification when u
 
 You can turn off an activity alert so that an email notification isn't sent. After you turn off the activity alert, it's still displayed in the list of activity alerts for your organization, and you can still view its properties.
 
-1. Go to <https://compliance.microsoft.com/managealerts>.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
 
 2. Sign in using your work or school account.
 

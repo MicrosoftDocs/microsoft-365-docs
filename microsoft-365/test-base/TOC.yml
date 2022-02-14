@@ -20,6 +20,8 @@
       href: review.md
     - name: Package guideline
       href: contentguideline.md
+    - name: Application/Test rules
+      href: rules.md
 - name: How-to guides
   items:
   - name: Server application testing
@@ -32,9 +34,12 @@
     href: memory.md
   - name: CPU Regression Analysis
     href: cpu.md 
+  - name: SDK & API
+    href: sdkapi.md
 - name: Reference
   items:
   - name: Frequently Asked Questions
     href: faq.md
+
 
 

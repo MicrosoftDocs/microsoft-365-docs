@@ -19,8 +19,6 @@
       items: 
         - name: Supported regions
           href: service-description/regions-languages.md
-        - name: Product lifecycle
-          href: service-description/device-lifecycle.md
         - name: Devices
           href: 
           items:
@@ -62,6 +60,8 @@
           href: service-description/servicechanges.md
         - name: Exceptions to the service plan
           href: service-description/customizing.md
+        - name: Shared devices
+          href: service-description/shared-devices.md
     - name: Get ready for enrollment in Microsoft Managed Desktop
       href: get-ready/index.md
       items: 
@@ -137,7 +137,7 @@
           items: 
             - name: Microsoft Project and Microsoft Visio
               href: get-started/project-visio.md
-            - name: New Microsoft Edge
+            - name: Microsoft Edge
               href: get-started/edge-browser-app.md
             - name: Microsoft 365 Apps for Enterprise
               href: get-started/m365-apps.md

@@ -6,6 +6,7 @@ ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
+ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ---
 
@@ -23,7 +24,7 @@ This article explains how to configure and monitor [Microsoft Defender for Ident
 
 ## View Defender for Identity sensor settings and status
 
-1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Settings** and then **Identities**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Settings** and then **Identities**.
 
     ![Go to Settings, then Identities.](../../media/defender-identity/settings-identities.png)
 

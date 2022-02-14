@@ -2,7 +2,6 @@
 title: Web protection
 description: Learn about the web protection in Microsoft Defender for Endpoint and how it can protect your organization
 keywords: web protection, web threat protection, web browsing, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser, malicious websites
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -24,7 +23,8 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -77,7 +77,7 @@ For more information, see [Web content filtering](web-content-filtering.md).
 
 Web protection is made up of the following components, listed in order of precedence. Each of these components is enforced by the SmartScreen client in Microsoft Edge and by the Network Protection client in all other browsers and processes.
 
-- Custom indicators (IP/URL, Microsoft Cloud App Security (MCAS) policies)
+- Custom indicators (IP/URL, Microsoft Defender for Cloud Apps policies)
   - Allow
   - Warn
   - Block
@@ -89,7 +89,7 @@ Web protection is made up of the following components, listed in order of preced
 - Web Content Filtering (WCF)
 
 > [!NOTE]
-> Microsoft Cloud App Security (MCAS) currently generates indicators only for blocked URLs.
+> Microsoft Defender for Cloud Apps currently generates indicators only for blocked URLs.
 
 The order of precedence relates to the order of operations by which a URL or IP is evaluated. For example, if you have a web content filtering policy you can create exclusions through custom IP/URL indicators. Custom Indicators of compromise (IoC) are higher in the order of precedence than WCF blocks.
 
@@ -101,7 +101,7 @@ The table below summarizes some common configurations that would present conflic
 
 ****
 
-|Custom Indicator policy|Web threat policy|WCF policy|MCAS policy|Result|
+|Custom Indicator policy|Web threat policy|WCF policy|Defender for Cloud Apps policy|Result|
 |---|---|---|---|---|
 |Allow|Block|Block|Block|Allow (Web protection override)|
 |Allow|Allow|Block|Block|Allow (WCF exception)|
@@ -132,7 +132,7 @@ The table below shows the responses and their correlated features.
 |---|---|
 |CustomPolicy|WCF|
 |CustomBlockList|Custom indicators|
-|CasbPolicy|MCAS|
+|CasbPolicy|Defender for Cloud Apps|
 |Malicious|Web threats|
 |Phishing|Web threats|
 |||
@@ -142,21 +142,21 @@ The table below shows the responses and their correlated features.
 Kusto queries in advanced hunting can be used to summarize web protection blocks in your organization for up to 30 days. These queries use the information listed above to distinguish between the various sources of blocks and summarize them in a user-friendly manner. For example, the query below lists all WCF blocks originating from Microsoft Edge.
 
 ```kusto
-DeviceEvents 
-| where ActionType == "SmartScreenUrlWarning"
-| extend ParsedFields=parse_json(AdditionalFields)
-| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
-| where Experience == "CustomPolicy"
+DeviceEvents
+| where ActionType == "SmartScreenUrlWarning"
+| extend ParsedFields=parse_json(AdditionalFields)
+| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
+| where Experience == "CustomBlockList"
 ```
 
 Similarly, you can use the query below to list all WCF blocks originating from Network Protection (for example, a WCF block in a third-party browser). Note that the ActionType has been updated and 'Experience' has been changed to 'ResponseCategory'.
 
 ```kusto
-DeviceEvents 
-| where ActionType == "ExploitGuardNetworkProtectionBlocked"
-| extend ParsedFields=parse_json(AdditionalFields)
-| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, ResponseCategory=tostring(ParsedFields.ResponseCategory)
-| where ResponseCategory == "CustomPolicy"
+DeviceEvents
+| where ActionType == "ExploitGuardNetworkProtectionBlocked"
+| extend ParsedFields=parse_json(AdditionalFields)
+| project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, ResponseCategory=tostring(ParsedFields.ResponseCategory)
+| where ResponseCategory == "CustomPolicy"
 ```
 
 To list blocks that are due to other features (like Custom Indicators), refer to the table above outlining each feature and their respective response category. These queries may also be modified to search for telemetry related to specific machines in your organization. Note that the ActionType shown in each query above will show only those connections that were blocked by a Web Protection feature, and not all network traffic.

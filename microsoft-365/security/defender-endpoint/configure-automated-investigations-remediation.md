@@ -2,8 +2,6 @@
 title: Configure automated investigation and remediation capabilities
 description: Set up your automated investigation and remediation capabilities in Microsoft Defender for Endpoint.
 keywords: configure, setup, automated, investigation, detection, alerts, remediation, response
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: deploy
@@ -25,7 +23,7 @@ ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -39,14 +37,14 @@ To configure automated investigation and remediation:
 
 ## Turn on automated investigation and remediation
 
-1. As a global administrator or security administrator, go to the Microsoft Defender Security Center (<https://securitycenter.windows.com>) and sign in.
+1. As a global administrator or security administrator, go to the Microsoft 365 Defender portal (<https://security.microsoft.com>) and sign in.
 2. In the navigation pane, choose **Settings**.
 3. In the **General** section, select **Advanced features**.
 4. Turn on both **Automated Investigation** and **Automatically resolve alerts**.
 
 ## Set up device groups
 
-1. In the Microsoft Defender Security Center (<https://securitycenter.windows.com>), on the **Settings** page, under **Permissions**, select **Device groups**.
+1. In the Microsoft 365 Defender portal (<https://security.microsoft.com>), on the **Settings** page, under **Permissions**, select **Device groups**.
 2. Select **+ Add device group**.
 3. Create at least one device group, as follows:
    - Specify a name and description for the device group.

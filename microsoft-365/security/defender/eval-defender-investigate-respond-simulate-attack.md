@@ -19,6 +19,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-scenario
   - m365solution-pilotmtpproject
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
 ---
@@ -46,9 +47,9 @@ The Microsoft 365 Defender portal has built-in capabilities to create simulated 
   
   In the Microsoft 365 Defender portal, select **Email & collaboration > Attack simulation training**.
 
-- Attack tutorials & simulations for Microsoft 365 Defender for Endpoints at [https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations).
+- Attack tutorials & simulations for Microsoft 365 Defender for Endpoint at [https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations).
 
-  In the Microsoft 365 Defender portal, select **Endpoints > Tutorials & simulations**.
+  In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, select **Endpoints > Tutorials & simulations**.
 
 ### Defender for Office 365 Attack simulation training
 
@@ -65,6 +66,8 @@ Defender for Office 365 with Microsoft 365 E5 or Microsoft Defender for Office 3
 3. Gaining insights
 
    For step by step instructions on how to gain insights with reporting, see [Gain insights through Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-insights).
+
+   > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMhvB]
 
 For more information, see [Simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started#simulations).
 
@@ -103,7 +106,7 @@ First, you need to add an isolated AD DS domain controller and a Windows device 
 
    - Runs Windows Server 2008 R2 or a later version.
    - Reports to [Microsoft Defender for Identity](/azure/security-center/security-center-wdatp) and has enabled [remote management](/windows-server/administration/server-manager/configure-remote-management-in-server-manager).
-   - Has [Microsoft Defender for Identity and Microsoft Cloud App Security integration](/cloud-app-security/mdi-integration) enabled.
+   - Has [Microsoft Defender for Identity and Microsoft Defender for Cloud Apps integration](/cloud-app-security/mdi-integration) enabled.
    - Has a test user is created in the test domain. Administrator-level permissions are not needed.
 
 3. Verify that your test device:
@@ -181,7 +184,7 @@ To see the Automated Incident and Response feature in action, keep the notepad.e
 
 Switching to the SOC analyst point of view, you can now start to investigate the attack in the Microsoft 365 Defender portal.
 
-1. Open the [Microsoft 365 Defender portal](https://security.microsoft.com/).
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 2. From the navigation pane, select **Incidents & Alerts > Incidents**.
 
@@ -197,13 +200,13 @@ The alerts generated during this simulation are associated with the same threat,
 
 To view the incident:
 
-1. Open the [Microsoft 365 Defender portal](https://security.microsoft.com/).
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 2. From the navigation pane, select **Incidents & Alerts > Incidents**.
 
 3. Select the newest item by clicking on the circle located left of the incident name. A side panel displays additional information about the incident, including all the related alerts. Each incident has a unique name that describes it based on the attributes of the alerts it includes.
 
-   The alerts that are shown in the dashboard can be filtered based on service resources: Microsoft Defender for Identity, Microsoft Cloud App Security, Microsoft Defender for Endpoint, Microsoft 365 Defender, and Microsoft Defender for Office 365.
+   The alerts that are shown in the dashboard can be filtered based on service resources: Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, Microsoft Defender for Endpoint, Microsoft 365 Defender, and Microsoft Defender for Office 365.
 
 3. Select **Open incident page** to get more information about the incident.
 
@@ -237,7 +240,7 @@ We employ large-scale learning algorithms to establish the normal behavior of co
 For this scenario, the process <i>notepad.exe</i> is exhibiting abnormal behavior, involving communication with an external location. This outcome is independent of the specific method used to introduce and execute the malicious code.
 
 > [!NOTE]
-> Because this alert is based on machine-learning models that require additional backend processing, it might take some time before you see this alert in the portal.
+> Because this alert is based on machine learning models that require additional backend processing, it might take some time before you see this alert in the portal.
 
 Notice that the alert details include the external IP address—an indicator that you can use as a pivot to expand investigation.
 
@@ -273,13 +276,13 @@ For example, scroll down until you find the alert event **Suspicious process inj
 
 ![Example of the process tree for selected PowerShell file creation behavior.](../../media/mtp/fig12.png)
 
-#### Review the user information with Microsoft Cloud App Security
+#### Review the user information with Microsoft Defender for Cloud Apps
 
 On the incident page, select the **Users** tab to display the list of users involved in the attack. The table contains additional information about each user, including each user's **Investigation Priority** score.
 
 Select the user name to open the user's profile page where further investigation can be conducted. [Read more about investigating risky users](/cloud-app-security/tutorial-ueba#identify).
 
-![Example of Cloud App Security user page.](../../media/mtp/fig13.png)
+![Example of Defender for Cloud Apps user page.](../../media/mtp/fig13.png)
 
 #### Automated investigation and remediation
 
@@ -314,9 +317,9 @@ After the investigation is complete and confirmed to be remediated, you resolve 
 
 From the **Incident** page, select **Manage incident**. Set the status to **Resolve incident** and select **True alert** for the classification and **Security testing** for the determination.
 
-![Example of the the incidents page with the open Manage incident panel where you can click the switch to resolve incident.](../../media/mtp/fig16.png)
+![Example of the incidents page with the open Manage incident panel where you can click the switch to resolve incident.](../../media/mtp/fig16.png)
 
-When the incident is resolved, it resolves all of the associated alerts in Microsoft 365 Defender portal and in the related portals.
+When the incident is resolved, it resolves all of the associated alerts in the Microsoft 365 Defender portal and the related portals.
 
 This wraps up the attack simulation for incident analysis, automated investigation, and incident resolution.
 

@@ -97,7 +97,7 @@ After sensitivity labels are enabled for containers as described in the previous
     
     - **External user access**: Control whether the group owner can [add guests to the group](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-4. If you selected **Device external sharing and device access settings**, now configure the following settings:
+4. If you selected **External sharing and Conditional Access settings**, now configure the following settings:
     
     - **Control external sharing from labeled SharePoint sites**: Select this option to then select either external sharing for anyone, new and existing guests, existing guests, or only people in your organization. For more information about this configuration and settings, see the SharePoint documentation, [Turn external sharing on or off for a site](/sharepoint/change-external-sharing-site).
     
@@ -213,7 +213,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 To remove either of these advanced settings from a sensitivity label, use the same AdvancedSettings parameter syntax, but specify a null string value. For example:
 
 ````powershell
-Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScop=""}
+Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope=""}
 ````
 
 ## Sensitivity label management
@@ -369,6 +369,7 @@ The following apps and services support sensitivity labels configured for sites 
 - Admin centers:
 
   - SharePoint admin center
+  - Teams admin center
   - Azure Active Directory portal
   - Microsoft 365 admin center
   - Microsoft 365 compliance center
@@ -386,7 +387,6 @@ The following apps and services don't currently support sensitivity labels confi
 
 - Admin centers:
 
-  - Teams admin center
   - Exchange admin center
 
 - User apps and services:

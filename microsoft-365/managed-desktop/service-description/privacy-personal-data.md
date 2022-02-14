@@ -4,11 +4,11 @@ description: Details the data collected, stored, and used by the service
 keywords: GDPR, retention, deletion, storage, retention, processing, security, auditing
 ms.service: m365-md
 ms.sitesec: library
-author: jaimeo
-manager: laurawi
+author: tiaraquan
+manager: dougeby
 f1.keywords:
 - NOCSH
-ms.author: jaimeo
+ms.author: tiaraquan
 ms.topic: article
 audience: Admin, ITPro
 ms.localizationpriority: medium

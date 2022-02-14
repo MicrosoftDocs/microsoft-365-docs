@@ -140,7 +140,7 @@ The items that contain your organizations sensitive information are used every d
 - OneDrive accounts
 - Teams chat and channel messages
 - Windows 10 Devices
-- Microsoft Cloud App Security
+- Microsoft Defender for Cloud Apps
 - On-premises repositories
 
 **Example** Your organizations' internal auditors are tracking a set of credit card numbers. They keep a spreadsheet of them in a secure SharePoint site. Several of the employees make copies and save them to their work OneDrive for Business site, which is synced to their Windows 10 device. One of them pastes a list of 14 of them in an email and tries to send it to the outside auditors for review. You'd want to apply the policy to the secure SharePoint site, all the internal auditors OneDrive for Business accounts, their Windows 10 devices, and Exchange email.

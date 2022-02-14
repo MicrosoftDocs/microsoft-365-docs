@@ -15,7 +15,7 @@ ms.collection:
 - ransomware
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
-keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology
+keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, zero trust
 description: Use security baselines to protect your Microsoft 365 resources from ransomware attacks.
 ---
 
@@ -33,7 +33,7 @@ These baselines contain configuration settings and rules that are well-known by 
 
 First, assess and measure your security posture using [Microsoft Secure Score](/microsoft-365/security/defender/microsoft-secure-score) and follow instructions to improve it as needed.
 
-Next, use [attack surface reduction rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction) to help block suspicious activity and vulnerable content. These rules include preventing:
+Next, use [attack surface reduction rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment) to help block suspicious activity and vulnerable content. These rules include preventing:
 
 - All Office applications from creating child processes
 - Executable content from email client and webmail

@@ -13,7 +13,7 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -23,7 +23,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink).
@@ -31,7 +32,7 @@ ms.technology: mde
 This topic describes how to deploy Microsoft Defender for Endpoint on macOS manually. A successful deployment requires the completion of all of the following steps:
 
 - [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
-- [Application installation (macOS 10.15 and older versions)](#application-installation-macos-1015-and-older-versions)
+- [Application installation (macOS 10.15)](#application-installation-macos-1015)
 - [Application installation (macOS 11 and newer versions)](#application-installation-macos-11-and-newer-versions)
 - [Client configuration](#client-configuration)
 
@@ -43,7 +44,7 @@ Before you get started, see [the main Microsoft Defender for Endpoint on macOS p
 
 Download the installation and onboarding packages from Microsoft 365 Defender portal:
 
-1. In Microsoft 365 Defender portal, go to **Settings > Endpoints > Device management > Onboarding**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Settings > Endpoints > Device management > Onboarding**.
 2. In Section 1 of the page, set operating system to **macOS** and Deployment method to **Local script**.
 3. In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
@@ -52,7 +53,7 @@ Download the installation and onboarding packages from Microsoft 365 Defender po
 
 5. From a command prompt, verify that you have the two files.
 
-## Application installation (macOS 10.15 and older versions)
+## Application installation (macOS 10.15)
 
 To complete this process, you must have admin privileges on the device.
 
@@ -87,27 +88,27 @@ To complete this process, you must have admin privileges on the device.
 
 1. Navigate to the downloaded wdav.pkg in Finder and open it.
 
-    ![App install screenshot4.](images/big-sur-install-1.png)
+    ![App install screenshot4.](images/monterey-install-1.png)
 
 2. Select **Continue**, agree with the License terms, and enter the password when prompted.
 
 3. At the end of the installation process, you'll be promoted to approve the system extensions used by the product. Select **Open Security Preferences**.
 
-    ![System extension approval.](images/big-sur-install-2.png)
+    ![System extension approval.](images/monterey-install-2.png)
 
 4. From the **Security & Privacy** window, select **Allow**.
 
-    ![System extension security preferences1.](images/big-sur-install-3.png)
+    ![System extension security preferences1.](images/monterey-install-3.png)
 
 5. Repeat steps 3 & 4 for all system extensions distributed with Microsoft Defender for Endpoint on Mac.
 
 6. As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on Mac inspects socket traffic and reports this information to the Microsoft 365 Defender portal. When prompted to grant Microsoft Defender for Endpoint permissions to filter network traffic, select **Allow**.
 
-    ![System extension security preferences2.](images/big-sur-install-4.png)
+    ![System extension security preferences2.](images/monterey-install-4.png)
 
-7. Open **System Preferences** \> **Security & Privacy** and navigate to the **Privacy** tab. Grant **Full Disk Access** permission to **Microsoft Defender ATP** and **Microsoft Defender ATP Endpoint Security Extension**.
+7. Open **System Preferences** \> **Security & Privacy** and navigate to the **Privacy** tab. Grant **Full Disk Access** permission to **Microsoft Defender** and **Microsoft Defenders Endpoint Security Extension**.
 
-    ![Full disk access.](images/big-sur-install-5.png)
+    ![Full disk access.](images/monterey-install-5.png)
 
 ## Client configuration
 

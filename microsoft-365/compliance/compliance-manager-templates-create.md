@@ -28,7 +28,7 @@ To learn about formatting your spreadsheet, see [Format assessment template data
 
 ## Required roles
 
-Only users who hold a Global Administrator or  Compliance Manager Administration role can create and modify templates. Learn more about [roles and permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
+Only users who hold a Global Administrator or Compliance Manager Administration role can create and modify templates. Learn more about [roles and permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
 ## Create new template in Compliance Manager
 

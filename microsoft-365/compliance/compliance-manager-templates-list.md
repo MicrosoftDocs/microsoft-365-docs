@@ -34,7 +34,9 @@ Templates are added to Compliance Manager as new laws and regulations are enacte
 
 ## List of templates and where to find them
 
-Below is the complete list of templates in Compliance Manager. The links in the template names below take you to related documentation about that standard, regulation, or law.
+Below is the complete list of templates in Compliance Manager. Links in the template names below take you to related documentation where available about that standard, regulation, or law.
+
+You can also select individual templates in Compliance Manager to view more information about them, including a description of the regulation and properties of the template. Read the **About** section for a summary.
 
 ### Where to find your templates
 
@@ -51,6 +53,21 @@ One or more of these templates will be available based on your licensing agreeme
 
 > [!NOTE]
 > For US Government Community (GCC) Moderate, GCC High, and Department of Defense (DoD) customers: the Cybersecurity Maturity Model Certification (CMMC) Levels 1 through 5 templates are included, in addition to the templates listed above.
+
+## Preview templates
+
+These templates are currently available for preview. Creating assessments using these templates will not count toward your total of licensed templates used.
+
+- ISO 27001:2013 for Azure (Preview)
+- ISO 27001:2013 for Dynamics 365 (Preview)
+- FedRAMP Moderate for Dynamics 365 (Preview)
+- FedRAMP Moderate for Azure (Preview)
+- FedRAMP High for Azure (Preview)
+- FedRAMP High for Dynamics 365 (Preview)
+- SOC 2 for Azure (Preview)
+- SOC 2 for Dynamics 365 (Preview)
+- ISO 27018:2019 for Azure (Preview)
+- ISO 27018:2019 for Dynamics 365 (Preview)
 
 ## Premium templates
 
