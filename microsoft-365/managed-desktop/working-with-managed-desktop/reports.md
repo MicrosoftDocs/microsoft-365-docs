@@ -31,7 +31,7 @@ When you select the **Reports** tab, you'll see descriptions for the available d
 | **Device status trend** (*in preview*) | This monitors trends in device status over the last 60 days for your Microsoft Managed Desktop devices. Trends can help  you associate device status with other changes over time, for example, new deployments. |
 | [**Windows security updates** report](security-updates-report.md) (*in preview*) | This report shows how Windows security updates are released across your Microsoft Managed Desktop devices. |
 | [**Application usage** report](app-usage-report.md) | This report provides information about typical app usage across your Microsoft Managed Desktop devices. For devices to provide data to this report, they must be set to the Optional diagnostic data level. |
-| **Service Metrics Report** (*in preview*) | This report provides straightforward summaries of key metrics for Microsoft Managed Desktop month over month. |
+| [**Service Metrics Report**](service-metrics-report.md) (*in preview*) | This report provides straightforward summaries of key metrics for Microsoft Managed Desktop month over month. |
 
 ## Endpoint analytics
 
