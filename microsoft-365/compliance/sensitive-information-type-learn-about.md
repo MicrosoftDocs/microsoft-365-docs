@@ -61,7 +61,7 @@ Bundled named entity SITs detect all possible matches in a class, like All physi
 
 ### Custom sensitive information types
 
-If the pre-configured sensitive information types don't meet your needs, you can create your own custom sensitive information types that you fully define or you can copy one of the built-in ones and modify it. See, [Get started with custom sensitive information types](create-a-custom-sensitive-information-type.md#get-started-with-custom-sensitive-information-types) for more information.
+If the pre-configured sensitive information types don't meet your needs, you can create your own custom sensitive information types that you fully define or you can copy one of the built-in ones and modify it. See, [Create a custom sensitive information type in Compliance center](create-a-custom-sensitive-information-type.md) for more information.
 
 ### Exact data match sensitive information types
 

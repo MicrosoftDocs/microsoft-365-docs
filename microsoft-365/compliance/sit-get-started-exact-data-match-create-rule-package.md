@@ -49,7 +49,7 @@ Perform the steps in these articles:
   - If you selected the Ignored Delimiters option for the primary element column in your schema, make sure the custom SIT you create will match data with and without the selected delimiters.
   - If you use a built in SIT, make sure it will detect exactly the strings you want to select, and not include any surrounding characters or exclude any valid part of the string as stored in your sensitive information table.
 
-See [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) and [Get started with custom sensitive information types](create-a-custom-sensitive-information-type.md#get-started-with-custom-sensitive-information-types).
+See [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md#sensitive-information-type-entity-definitions) and [Create custom sensitive information types in Compliance center](create-a-custom-sensitive-information-type.md).
 
 ### Use the exact data match schema and sensitive information type pattern wizard
 
