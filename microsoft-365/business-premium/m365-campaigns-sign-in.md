@@ -24,7 +24,7 @@ search.appverid:
 - MET150
 description: "Sign in to Microsoft 365. Protect your business, practice, or campaign from cybersecurity threats to email, data, and communication."
 ---
-# Sign in to Microsoft 365
+# Sign in to Microsoft 365 Business Premium
 
 ## For business or campaign admins
 
