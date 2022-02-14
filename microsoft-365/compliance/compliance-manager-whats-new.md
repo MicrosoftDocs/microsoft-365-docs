@@ -25,9 +25,10 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 
 ## February 2022
 
-### Continuous compliance assessment (CCA)
+### Continuous compliance assessment of improvement actions
 
-We're adding automated testing and evidence generation for over 35 improvement actions in Compliance Manager that were not previously covered by Secure Score. With continuous compliance assessment (CCA), you can receive updates about which of these improvement actions you've completed if they're relevant for your compliance assessments and you're licensed to access the relevant solutions. CCA also gives users visibility into the scoring logic of your improvement actions and provides insight and evidence about why you received a certain score. This feature works alongside existing integrations with Microsoft 365 Secure Score, and any automated actions you've previously configured will continue to work as-is.
+We're adding automated testing and evidence generation for over 35 improvement actions in Compliance Manager that were not previously covered by Secure Score. With continuous compliance assessment, you can receive updates about which of these improvement actions you've completed if they're relevant for your compliance assessments and you're licensed to access the relevant solutions. CCA also gives users visibility into the scoring logic of your improvement actions and provides insight and evidence about why you received a certain score. This feature works alongside existing integrations with Microsoft 365 Secure Score, and any automated actions you've previously configured will continue to work as-is. Learn more about [automated testing settings](compliance-manager-setup.md#set-up-automated-testing).
+
 ### Try recommended assessment templates for your organization
 
 Your organization can now get recommendations from Compliance Manager about which assessments may be most relevant to you, with a quick setup process to get up and running. To learn more about recommendations and how to try premium assessment templates before buying a license, see [Start a premium assessments trial](compliance-manager-setup.md#start-a-premium-assessments-trial).

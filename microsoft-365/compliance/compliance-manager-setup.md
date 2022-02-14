@@ -116,15 +116,13 @@ The Compliance Manager settings in the Microsoft 365 compliance center allow you
 
 ### Set up automated testing
 
-Compliance Manager can detect signals from other Microsoft 365 compliance solutions which your organization subscribes to, including information governance, information protection, communication compliance, and insider risk management. Using these signals, Compliance Manager can automatically test certain improvement actions for you. Compliance Manager also detects signals from actions that are also monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). When you set up automatic testing for such actions, then when an action is tested and updated in Secure Score, those results synch with the same actions in Compliance Manager and count toward your compliance score.
+Compliance Manager detects signals from other Microsoft 365 compliance solutions that your organization subscribes to, including information governance, information protection, communication compliance, and insider risk management. Compliance Manager also detects signals from complementary improvement actions that are also monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). Using these signals, Compliance Manager can automatically test certain improvement actions for you, which helps maximize efficiency in your compliance activities. When an improvement action is successfully tested and implemented, you receive the full amount of points, which gets credited to your overall compliance score.
 
-Automatic testing is turned on by default for organizations new to Compliance Manager. When you first deploy Microsoft 365 or Office 365, it takes approximately seven days for Secure Score to fully collect data and factor it into your compliance score. When automated testing is turned on, the action’s test date won’t be updated, but its test status will update. When new assessments are created, scores automatically include Microsoft control scores and Secure Score integration.
-
-Along with the improvement actions that are monitored by Secure Score, continuous compliance assessment (CCA) now supports automated testing for over 35 additional actions. With CCA, you can receive updates about which of these improvement actions you've completed if they're relevant for your compliance assessments and you're licensed to access the relevant solutions. CCA also gives your administrators visibility into the scoring logic of your improvement actions and provides insight and evidence about why you received a certain score. This feature works alongside existing integrations with Microsoft 365 Secure Score, and any automated actions you've previously configured will continue to work as-is.
-
-The global administrator for your organization can change the settings for automated testing at any time. You can turn off automated testing for common improvement actions, or turn it on for individual actions. Follow the instructions below to change your automated testing settings.
+Automatic testing is turned on by default for organizations new to Compliance Manager. When you first deploy Microsoft 365 or Office 365, it takes approximately seven days to fully collect data and factor it into your compliance score. When automated testing is turned on, the action’s test date won’t be updated, but its test status will update. When new assessments are created, scores automatically include Microsoft control scores and Secure Score integration.
 
 #### Manage automated testing settings
+
+The global administrator for your organization can change the settings for automated testing at any time. You can turn off automated testing for common improvement actions, or turn it on for individual actions. Follow the instructions below to change your automated testing settings.
 
 1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft 365 compliance center.
 
@@ -139,6 +137,10 @@ The global administrator for your organization can change the settings for autom
 6. Select **Save** to save your settings. You’ll receive a confirmation message at the top of your screen that your selection was saved. If you receive a failure notice, try again.
 
 **Note:** Only the global administrator can turn on or off automatic updates for all actions. The Compliance Manager Administrator can turn on automatic updates for individual actions, but not for all actions globally.
+
+**Learn more**
+- [Learn more about how continuous monitoring contributes to your compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
+- [Learn more about designating a testing source for an improvement action](compliance-manager-improvement-actions.md#update-testing-source).
 
 ### Manage user history
 

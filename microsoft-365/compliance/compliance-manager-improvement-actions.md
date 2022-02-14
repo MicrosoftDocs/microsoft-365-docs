@@ -40,6 +40,9 @@ To view an improvement action’s details page:
 
 You can easily view the next or previous improvement action in the list by selecting the up or down arrow in the upper-right corner of the screen. If you filtered your list on the improvement actions page, moving up or down takes you to the next item within that filtered list.
 
+> [!TIP]
+> Learn more about the different [types of improvement actions and how points are awarded](compliance-score-calculation.md#action-types-and-points) and factored into your compliance score.
+
 ## Assign improvement actions
 
 To begin implementation work on an improvement action, you can do the work yourself or assign it to another user. The assigned person could be:
@@ -109,25 +112,21 @@ The available fields are as follows:
 
 ### Update testing source
 
-Compliance Manager provides options for how to test improvement actions: include **Manual**, **Automatic**, and **Parent**. If you choose **Parent**, you will be prompted to associate another action with this one. Follow the steps in the wizard to set up your new action's inheritance.
-
-In the **Overview** section of each improvement action, the **Testing Source** area has a drop-down menu from which you can choose how you want the action to be tested. The testing options are **Manual**, **Automatic**, and **Parent**.
+Compliance Manager provides you options for how to test improvement actions. In the **Overview** section of each improvement action, the **Testing Source** area has a drop-down menu from which you can choose how you want the action to be tested: **Manual**, **Automatic**, and **Parent**. Learn details about each testing method below.
 
 #### Manual testing source
-Actions set for manual testing are actions which you manually test and implement. You set the necessary implementation and test status states, and upload any evidence files on the **Documents** tab.
+Improvement actions set for manual testing are actions which you manually test and implement. You set the necessary implementation and test status states, and upload any evidence files on the **Documents** tab. For some actions, this is the only available method for testing improvement actions.
 
 #### Automatic testing source
-If an action is eligible to be automatically tested by Compliance Manager, you'll see the **Automatic** option for testing source. Compliance Manager will detect signals from other compliance solutions you've set up in your Microsoft 365 environment, as well as any complementary actions that exist in Microsoft Secure Score. Learn more about automated testing.
+If an implementation action is eligible to be automatically tested by Compliance Manager, you'll see the **Automatic** option for testing source. Compliance Manager will detect signals from other compliance solutions you've set up in your Microsoft 365 environment, as well as any complementary actions that Microsoft Secure Score also monitors. When signals indicate that an improvement action has been successfully implemented, you'll automatically receive the points eligible for that action, which will factor into scores for any related controls and assessments. Learn more about how [continuous assessment affects your compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
 
  Automatic testing is on by default for all eligible improvement actions. You can adjust these settings to automatically test only certain improvement actions, or you can turn off automatic testing for all actions. Learn more about how automated testing works and how to adjust your settings at [Set up automated testing](compliance-manager-setup.md#manage-automated-testing-settings).
 
 #### Parent testing source
 
-When you select **Parent** as the testing source for an improvement action, you'll choose another action to which your action will be linked. Your action in effect becomes the "child" to the action that you designate as the "parent." When you designate a parent for an improvement action, the parent action will be the source for all implementation and testing details for the child action you linked. The child action will also accept all evidence in its **Documents** tab that the parent action has, which could over-ride any data that previously existed in the child action's **Documents**.
+When you select **Parent** as the testing source for an improvement action, you'll choose another action to which your action will be linked. Your action in effect becomes the "child" to the action that you designate as the "parent." When you designate a parent for an improvement action, the parent action will be the source for all implementation and testing details for the child action. The child action will also accept all evidence in its **Documents** tab that belong to the parent action, which could override any data that previously existed in the child action's **Documents**.
 
-For example, you have improvement action A and you want it to have the same testing method and status of improvemetn action B. When you  you will choose This means that the  this means that the action will take on the test status of whic
-
-To set up
+To set up a parent testing source, follow the steps below:
 
 - On an improvement action details page, locate the **Overview** section.
 - Under the **Testing Source** header, select **Parent** from the drop-down menu.
