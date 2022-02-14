@@ -13,7 +13,8 @@ ms.author: dansimp
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
-ms.collection: m365-security-compliance
+ms.collection: m365solution-scenario
+ms.date:
 ---
 
 # Evaluate network protection

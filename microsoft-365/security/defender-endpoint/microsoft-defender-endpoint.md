@@ -11,7 +11,9 @@ author: mjcaparas
 ms.localizationpriority: high
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - m365-initiative-defender-endpoint
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
@@ -141,7 +143,7 @@ Defender for Endpoint directly integrates with various Microsoft solutions, incl
 - Microsoft Defender for Office
 - Skype for Business
 
-**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)**
+**[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)**
 
 With Microsoft 365 Defender, Defender for Endpoint and various Microsoft security solutions form a unified pre- and post-breach enterprise defense suite that natively integrates across endpoint, identity, email, and applications to detect, prevent, investigate, and automatically respond to sophisticated attacks.
 

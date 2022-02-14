@@ -10,7 +10,7 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/08/2021
+ms.date: 02/11/2022
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
@@ -118,7 +118,7 @@ To do this:
 
     Name   ScopeName AccountName AccessControlType AccessRight
     ----   --------- ----------- ----------------- -----------
-    mdatp$ *         Everyone    Allow             Change
+    mdatp$ *         Everyone    Allow             Read
     ```
    
     > [!NOTE]
@@ -126,7 +126,7 @@ To do this:
 
     For this example, the file share is:
 
-    \\fileserver.fqdn\mdatp$\wdav-update
+    \\\fileserver.fqdn\mdatp$\wdav-update
 
 ### Set a scheduled task to run the PowerShell script
 
@@ -196,7 +196,7 @@ Sometimes, Microsoft Defender Antivirus notifications may be sent to or persist 
 
 4. Deploy your Group Policy object as you usually do.
 
-Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up in the Action Center on Windows 10 when scans are done or remediation actions are taken. However, your security operations team will see the results of the scan in the [Microsoft 365 Defender portal](microsoft-defender-security-center.md).
+Suppressing notifications prevents notifications from Microsoft Defender Antivirus from showing up in the Action Center on Windows 10 when scans are done or remediation actions are taken. However, your security operations team will see the results of the scan in the While the attack was detected and stopped, alerts, such as an "initial access alert," were triggered and appeared in the [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender).
 
 > [!TIP]
 > To open the Action Center on Windows 10 or Windows 11, take one of the following steps:

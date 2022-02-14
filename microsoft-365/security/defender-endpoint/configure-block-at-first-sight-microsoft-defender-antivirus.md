@@ -60,7 +60,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 
 - In many cases, this process can reduce the response time for new malware from hours to seconds.
 
-- You can [specify how long a file should be prevented from running](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) while the cloud-based protection service analyzes the file. And, you can [customize the message displayed on users' desktops](/windows/security/threat-protection//windows-defender-security-center/wdsc-customize-contact-information.md) when a file is blocked. You can change the company name, contact information, and message URL.
+- You can [specify how long a file should be prevented from running](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) while the cloud-based protection service analyzes the file. And, you can [customize the message displayed on users' desktops](/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information) when a file is blocked. You can change the company name, contact information, and message URL.
 
 ## Turn on block at first sight with Microsoft Intune
 

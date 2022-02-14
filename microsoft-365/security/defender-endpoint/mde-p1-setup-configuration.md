@@ -186,7 +186,7 @@ Attack surface reduction rules are available on devices running Windows. We reco
 > To learn more about attack surface reduction rules, see the following resources:
 > - [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md)
 > - [View the list of attack surface reduction rules](attack-surface-reduction-rules-reference.md)
-> - [Attack surface reduction rules deployment phase 3: implement](attack-surface-reduction-rules-deployment-phase-3.md)
+> - [Attack surface reduction rules deployment Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md)
 
 ### Ransomware mitigation
 

@@ -13,7 +13,9 @@ ms.author: macapara
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - M365-security-compliance
+  - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
 ---
@@ -106,6 +108,19 @@ The following specifics apply to the new unified solution package for Windows Se
 - On Windows Server 2012 R2, Network Events may not populate in the timeline. This issue requires a Windows Update released as part of the [October 12, 2021 monthly rollup (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e).
 - Operating system upgrades are not supported. Offboard then uninstall before upgrading.
 - Automatic exclusions for *server roles* are not supported on Windows Server 2012 R2; however, built-in exclusions for operating system files are. For more information about adding exclusions, see [Virus scanning recommendations for Enterprise computers that are running currently supported versions of Windows](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc).
+- Currently, if you choose to offboard and uninstall the modern, unified solution and re-onboard the previous MMA-based EDR sensor, you may encounter repeated `MsSenseS.exe` crashes. 
+
+As a workaround, remove the following registry keys if they exist:
+- `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security\fdedb2b8-61e4-4a7e-8b15-abf214a08fcc`
+- `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security\c60418cc-7e07-400f-ae3b-d521c5dbd96f`
+
+You can use the following commands:
+
+```cmd
+reg delete HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security /v fdedb2b8-61e4-4a7e-8b15-abf214a08fcc /f
+reg delete HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\WMI\Security /v c60418cc-7e07-400f-ae3b-d521c5dbd96f /f
+```
+No restart is required.
 
 
 <a name="integration-with-azure-defender"></a>
@@ -117,7 +132,7 @@ Microsoft Defender for Endpoint integrates seamlessly with Microsoft Defender fo
 For more information, see [Integration with Microsoft Defender for Cloud](azure-server-integration.md).
 
 > [!NOTE]
-> For Windows Server 2012 R2 and 2016 running the modern unified solution preview, integration with Microsoft Defender for Cloud / Microsoft Defender for servers for alerting and automated deployment is not yet available. Whilst you can install the new solution on these machines, no alerts will be displayed in Microsoft Defender for Cloud.
+> For Windows Server 2012 R2 and 2016 running the modern unified solution preview, integration with Microsoft Defender for Cloud / Microsoft Defender for servers for alerting and automated deployment is not yet available. Whilst you can manually install the new solution on these machines, no alerts will be displayed in Microsoft Defender for Cloud.
 
 > [!NOTE]
 > - The integration between Microsoft Defender for servers and Microsoft Defender for Endpoint has been expanded to support Windows Server 2022, [Windows Server 2019, and Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview).
@@ -264,7 +279,7 @@ You can use the [installer script](server-migration.md#installer-script) to help
      >[!NOTE]
     >The recommended execution policy setting is `Allsigned`. This requires importing the script's signing certificate into the Local Computer Trusted Publishers store if the script is running as SYSTEM on the endpoint.
 
-    Replace \\servername-or-dfs-space\share-name with the UNC path, using the file server's fully qualified domain name (FQDN), of the shared *install.ps1* file. The installer package md4ws.msi must be placed in the same directory.  Also ensure that the permissions of the UNC path allows read access to the computer account that's installing the platform.
+    Replace \\servername-or-dfs-space\share-name with the UNC path, using the file server's fully qualified domain name (FQDN), of the shared *install.ps1* file. The installer package md4ws.msi must be placed in the same directory.  Also ensure that the permissions of the UNC path allow read access to the computer account that's installing the platform.
 
    
 
@@ -362,7 +377,7 @@ After successfully onboarding devices to the service, you'll need to configure t
 
 ## Offboard Windows servers
 
-You can offboard Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC), Windows Server 2019, Windows Server 2019 Core edition in the same method available for Windows 10 client devices.
+You can offboard Windows Server 2012 R2, Windows Server 2016, Windows Server (SAC), Windows Server 2019, and Windows Server 2019 Core edition in the same method available for Windows 10 client devices.
 
 - [Offboard devices using Group Policy](configure-endpoints-gp.md#offboard-devices-using-group-policy)
 - [Offboard devices using Configuration Manager](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
