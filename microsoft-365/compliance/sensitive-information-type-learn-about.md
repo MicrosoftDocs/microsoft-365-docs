@@ -61,11 +61,11 @@ Bundled named entity SITs detect all possible matches in a class, like All physi
 
 ### Custom sensitive information types
 
-If the pre-configured sensitive information types don't meet your needs, you can create your own custom sensitive information types that you fully define or you can copy one of the built-in ones and modify it.
+If the pre-configured sensitive information types don't meet your needs, you can create your own custom sensitive information types that you fully define or you can copy one of the built-in ones and modify it. See, [Get started with custom sensitive information types](create-a-custom-sensitive-information-type.md#get-started-with-custom-sensitive-information-types) for more information.
 
 ### Exact data match sensitive information types
 
-All EDM-based SITs are created from scratch. You use them detect items that have exact values which are defined in a database of sensitive information.
+All EDM-based SITs are created from scratch. You use them to detect items that have exact values which you define in a database of sensitive information. See, [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types) for more information.
 
 ## Fundamental parts of a sensitive information type
 
