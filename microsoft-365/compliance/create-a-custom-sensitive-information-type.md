@@ -59,13 +59,13 @@ Use this procedure to create a new sensitive information type that you fully def
 
 4. Choose the default confidence level for the pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
 
-5. Choose and define **Primary element**. The primary element can be a **Regular expression** with an optional validator, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. For more information on DLP functions, see [What the DLP functions look for](what-the-dlp-functions-look-for.md). For more information on the date and the checksum validators, see [More information on regular expression validators](#more-information-on-regular-expression-validators).
+5. Choose and define **Primary element**. The primary element can be a **Regular expression** with an optional validator, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. For more information on DLP functions, see [What the DLP functions look for](what-the-dlp-functions-look-for.md). For more information on the date and the checksum validators, see [Sensitive Information Type regular expression validators](sit-regex-validators-additional-checks.md#sensitive-information-type-regular-expression-validators).
 
 6. Fill in a value for **Character proximity**.
 
 7. (Optional) Add supporting elements if you have any. Supporting elements can be a regular expression with an optional validator, a keyword list, a keyword dictionary or one of the pre-defined functions. Supporting elements can have their own **Character proximity** configuration. 
 
-8. (Optional) Add any [**additional checks**](#more-information-on-additional-checks) from the list of available checks.
+8. (Optional) Add any [**additional checks**](sit-regex-validators-additional-checks.md#sensitive-information-type-additional-checks) from the list of available checks.
 
 9. Choose **Create**.
 
@@ -118,7 +118,7 @@ You can also create custom sensitive information types by using PowerShell and E
 
 9. Fill in a value for **Character proximity**.
 
-10. (Optional) If you have **Supporting elements** or any [**Additional checks**](#more-information-on-additional-checks) add them. If needed you can group your **Supporting elements**.
+10. (Optional) If you have **Supporting elements** or any [**additional checks**](sit-regex-validators-additional-checks.md#sensitive-information-type-additional-checks) add them. If needed you can group your **Supporting elements**.
 
 11. Choose **Create**.
 
