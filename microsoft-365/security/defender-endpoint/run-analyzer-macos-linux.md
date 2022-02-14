@@ -30,7 +30,7 @@ ms.technology: m365d
 1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate.
 
    > [!NOTE]
-   > The current SHA256 hash of 'XMDEClientAnalyzer.zip' that is downloaded from the above link is: '34C0DA20A6B38A16951394958991CD74EF7E07EB1DE06923547B351665A32DF6'.
+   > The current SHA256 hash of 'XMDEClientAnalyzer.zip' that is downloaded from the above link is: 'AA6E73A5F451C3B78B066C9D55EE6499CE3C2F1A6E05CCE691A6055F36F93A3B'.
 
 2. Extract the contents of XMDEClientAnalyzer.zip on the machine.
 
