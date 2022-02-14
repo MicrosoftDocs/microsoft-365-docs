@@ -51,6 +51,9 @@ To require conditional access for people outside your organization, do the follo
 
 You can choose to trust conditional access settings from all other Microsoft 365 and Azure AD organizations or only from those you specify.
 
+> [!NOTE]
+> Changes to cross-tenant access settings may take two hours to take effect.
+
 ### Trust conditional access settings from all Azure Active Directory organizations
 
 If you want to trust conditional access settings from all organizations, follow this procedure.

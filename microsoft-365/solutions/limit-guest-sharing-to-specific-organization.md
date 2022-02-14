@@ -28,6 +28,9 @@ If you only want your users to invite guests from specific organizations, you ca
 
 The first step in limiting guest sharing is to change the default settings in the Azure AD cross-tenant access settings to block inviting guests by default. Then you can allow guest invitations for specific organizations.
 
+> [!NOTE]
+> Changes to cross-tenant access settings may take two hours to take effect.
+
 ### Set the default B2B collaboration settings to block inviting guests
 
 Because inviting guests is enabled by default, limiting guest invitations to certain organizations requires blocking inbound B2B collaboration by default.

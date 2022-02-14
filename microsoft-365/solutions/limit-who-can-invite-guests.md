@@ -46,6 +46,9 @@ Once you've created the security group and added the users who you want to be ab
 
 Note that global administrators can always invite guests regardless of this setting.
 
+> [!NOTE]
+> Changes to cross-tenant access settings may take two hours to take effect.
+
 To configure Azure AD to limit guest invites to the Guest inviter role
 1. In [Azure Active Directory](https://aad.portal.azure.com/), select **External identities**.
 1. Select **External collaboration settings**.

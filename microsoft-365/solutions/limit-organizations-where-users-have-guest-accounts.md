@@ -24,6 +24,9 @@ By default, other Microsoft 365 and Azure Active Directory organizations can inv
 
 If you only want your users to participate as guests with specific organizations, you can specify these organizations in the Azure Active Directory cross-tenant access settings for [B2B collaboration](/azure/active-directory/external-identities/what-is-b2b).
 
+> [!NOTE]
+> Changes to cross-tenant access settings may take two hours to take effect.
+
 ## Set the default B2B collaboration settings to block users from being guests
 
 Because participating as guests is enabled by default, limiting guest participation to certain organizations requires blocking outbound B2B collaboration by default.
