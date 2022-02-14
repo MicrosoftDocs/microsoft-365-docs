@@ -328,8 +328,6 @@
              href: manage/servicenow-basic-authentication.md
            - name: Configure with Azure AD Auth Token
              href: manage/servicenow-aad-oauth-token.md
-           - name: Service health incidents and recommended solutions only
-             href: manage/servicenow-service-health-incidents-solutions-only.md
            - name: Testing the configuration
              href: manage/servicenow-testing-the-configuration.md
            - name: Troubleshooting
