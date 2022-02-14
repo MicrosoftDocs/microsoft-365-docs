@@ -2,7 +2,7 @@
   items: 
     - name: Overview
       href: index.md
-    - name: Get Microsoft 365 Business
+    - name: Get Microsoft 365 Business Premium
       href: get-microsoft-365-business-premium.md
     - name: Get Microsoft 365 for campaigns
       href: get-microsoft-365-campaigns.md
