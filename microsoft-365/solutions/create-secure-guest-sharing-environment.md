@@ -137,7 +137,7 @@ To set up a guest access review
 13. Type a **Review name** and review the settings.
 14. Click **Create**.
 
-It's important to note that for SharePoint Online and OneDrive for Business locations documents will be proactively blocked right after detection of sensitive information, irrespective of whether the document is shared or not, for all external users, while internal users will continue to have access to the document.
+It's important to note that for SharePoint Online and OneDrive for Business locations, documents will be proactively blocked right after detection of sensitive information, irrespective of whether the document is shared or not, for all external users, while internal users will continue to have access to the document.
 
 ### More information
 
