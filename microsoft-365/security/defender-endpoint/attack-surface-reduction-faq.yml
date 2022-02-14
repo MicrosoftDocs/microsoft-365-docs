@@ -205,6 +205,6 @@ sections:
         answer: |
           * [Attack surface reduction overview](attack-surface-reduction.md)
           * [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
-          * [Attack surface reduction rules deployment phase 3: implement](attack-surface-reduction-rules-deployment-implement.md)
+          * [Attack surface reduction rules deployment Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md)
           * [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
           * [Compatibility of Microsoft Defender Antivirus with other antivirus/antimalware](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
