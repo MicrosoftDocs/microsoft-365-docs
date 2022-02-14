@@ -228,44 +228,44 @@ Note that the patterns are designed to match individual single addresses, not ge
 
 This bundled named entity SIT contains these individual SITs:
 
-- Australia physical address
-- Austria physical address
-- Belgium physical address
-- Brazil physical address
-- Bulgaria physical address
-- Canada physical address
-- Croatia physical address
-- Cyprus physical address
-- Czech Republic physical address
-- Denmark physical address
-- Estonia physical address
-- Finland physical address
-- France physical address
-- Germany physical address
-- Greece physical address
-- Hungary physical address
-- Iceland physical address
-- Ireland physical address
-- Italy physical address
-- Latvia physical address
-- Liechtenstein physical address
-- Lithuania physical address
-- Luxembourg physical address
-- Malta physical address
-- Netherlands physical address
-- New Zealand physical address
-- Norway physical address
-- Poland physical address
-- Portugal physical address
-- Romania physical address
-- Slovakia physical address
-- Slovenia physical address
-- Spain physical address
-- Sweden physical address
-- Switzerland physical address
-- Turkey physical address
-- United Kingdom physical address
-- United States physical address
+- Australia physical addresses
+- Austria physical addresses
+- Belgium physical addresses
+- Brazil physical addresses
+- Bulgaria physical addresses
+- Canada physical addresses
+- Croatia physical addresses
+- Cyprus physical addresses
+- Czech Republic physical addresses
+- Denmark physical addresses
+- Estonia physical addresses
+- Finland physical addresses
+- France physical addresses
+- Germany physical addresses
+- Greece physical addresses
+- Hungary physical addresses
+- Iceland physical addresses
+- Ireland physical addresses
+- Italy physical addresses
+- Latvia physical addresses
+- Liechtenstein physical addresses
+- Lithuania physical addresses
+- Luxembourg physical addresses
+- Malta physical addresses
+- Netherlands physical addresses
+- New Zealand physical addresses
+- Norway physical addresses
+- Poland physical addresses
+- Portugal physical addresses
+- Romania physical addresses
+- Slovakia physical addresses
+- Slovenia physical addresses
+- Spain physical addresses
+- Sweden physical addresses
+- Switzerland physical addresses
+- Turkey physical addresses
+- United Kingdom physical addresses
+- United States physical addresses
 
 ### Supported languages
 
@@ -890,7 +890,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 ## Australia physical addresses 
 
-Unbundled named entity, detects patterns related to physical address from Australia.
+Unbundled named entity, detects patterns related to physical address from Australia. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 medium
@@ -1251,7 +1251,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Austria physical addresses
 
-This unbundled named entity detects patterns related to physical address from Austria. 
+This unbundled named entity detects patterns related to physical address from Austria. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -2312,7 +2312,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Belgium physical addresses
 
-This unbundled named entity detects patterns related to physical addresses from Belgium.
+This unbundled named entity detects patterns related to physical addresses from Belgium. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -2388,7 +2388,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Blood test terms
 
-This unbundled named entity detects terms related to blood tests, such as *hCG*. It supports English terms only.
+This unbundled named entity detects terms related to blood tests, such as *hCG*. It supports English terms only. It is also included in the [All medical terms and conditions](#all-medical-terms-and-conditions) bundled named entity SIT.
 
 ### Confidence level
 
@@ -2396,7 +2396,7 @@ High
 
 ## Brand medication names
 
-This unbundled named entity detects names of brand medication, such as *Tylenol*. It supports English terms only.
+This unbundled named entity detects names of brand medication, such as *Tylenol*. It supports English terms only. It is also included in the [All medical terms and conditions](#all-medical-terms-and-conditions) bundled named entity SIT.
 
 ### Confidence level
 
@@ -2601,7 +2601,7 @@ A DLP policy has high confidence that it's detected this type of sensitive infor
 
 ## Brazil physical addresses
 
-This unbundled named entity detects patterns related to physical address from Brazil. 
+This unbundled named entity detects patterns related to physical address from Brazil. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -2849,7 +2849,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Bulgaria physical addresses
 
-This unbundled named entity detects patterns related to physical address from Bulgaria. 
+This unbundled named entity detects patterns related to physical address from Bulgaria. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -3445,7 +3445,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Canada physical addresses
 
-This unbundled named entity detects patterns related to physical address from Canada. 
+This unbundled named entity detects patterns related to physical address from Canada. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -4360,7 +4360,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Croatia physical addresses
 
-This unbundled named entity detects patterns related to physical address from Croatia. 
+This unbundled named entity detects patterns related to physical address from Croatia. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -4665,7 +4665,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Cyprus physical addresses
 
-This unbundled named entity detects patterns related to physical address from Cyprus. 
+This unbundled named entity detects patterns related to physical address from Cyprus. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -5098,7 +5098,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Czech Republic physical addresses
 
-This unbundled named entity detects patterns related to physical address from the Czech Republic. 
+This unbundled named entity detects patterns related to physical address from the Czech Republic. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -5462,7 +5462,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 ## Denmark physical addresses
 
-This unbundled named entity detects patterns related to physical address from Denmark. 
+This unbundled named entity detects patterns related to physical address from Denmark. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -5471,7 +5471,7 @@ Medium
 
 ## Diseases
 
-This unbundled named entity detects text that match disease names, such as *diabetes*. It supports English terms only.
+This unbundled named entity detects text that match disease names, such as *diabetes*. It supports English terms only. It is also included in the [All medical terms and conditions](#all-medical-terms-and-conditions) bundled named entity SIT.
 
 ### Confidence level
 
@@ -5872,7 +5872,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Estonia physical addresses
 
-This unbundled named entity detects patterns related to physical address from Estonia. 
+This unbundled named entity detects patterns related to physical address from Estonia. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -6795,7 +6795,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Finland physical addresses
 
-This unbundled named entity detects patterns related to physical address from Finland. 
+This unbundled named entity detects patterns related to physical address from Finland. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -7158,7 +7158,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## France physical addresses
 
-This unbundled named entity detects patterns related to physical address from France. 
+This unbundled named entity detects patterns related to physical address from France. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -7387,7 +7387,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Generic medication names
 
-This unbundled named entity detects names of generic medications, such as *acetominophen*. It supports English terms only.
+This unbundled named entity detects names of generic medications, such as *acetominophen*. It supports English terms only. It is also included in the [All medical terms and conditions](#all-medical-terms-and-conditions) bundled named entity SIT.
 
 ### Confidence level
 
@@ -7748,7 +7748,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 ## Germany physical addresses
 
-This unbundled named entity detects patterns related to physical address from Germany. 
+This unbundled named entity detects patterns related to physical address from Germany. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -8191,7 +8191,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Greece physical addresses
 
-This unbundled named entity detects patterns related to physical address from Greece. 
+This unbundled named entity detects patterns related to physical address from Greece. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -8721,7 +8721,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Hungary physical addresses
 
-This unbundled named entity detects patterns related to physical address from Hungary. 
+This unbundled named entity detects patterns related to physical address from Hungary. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -8939,7 +8939,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Iceland physical addresses
 
-This unbundled named entity detects patterns related to physical address from Iceland. 
+This unbundled named entity detects patterns related to physical address from Iceland. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -8947,7 +8947,7 @@ Medium
 
 ## Impairments Listed In The U.S. Disability Evaluation Under Social Security
 
-This unbundled named entity detects names of impairments listed in the U.S. Disability Evaluation Under Social Security, such as *muscular dystrophy*. It supports English terms only.
+This unbundled named entity detects names of impairments listed in the U.S. Disability Evaluation Under Social Security, such as *muscular dystrophy*. It supports English terms only. It is also included in the [All medical terms and conditions](#all-medical-terms-and-conditions) bundled named entity SIT.
 
 ### Confidence level
 
@@ -10076,7 +10076,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 ## Ireland physical addresses
 
-This unbundled named entity detects patterns related to physical address from Ireland. 
+This unbundled named entity detects patterns related to physical address from Ireland. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -10531,7 +10531,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Italy physical addresses
 
-This unbundled named entity detects patterns related to physical address from Italy. 
+This unbundled named entity detects patterns related to physical address from Italy. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -11107,7 +11107,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Lab test terms
 
-This unbundled named entity detects terms related to lab tests, such as *Insulin C-peptide*. It supports English terms only.
+This unbundled named entity detects terms related to lab tests, such as *Insulin C-peptide*. It supports English terms only. It is also included in the [All medical terms and conditions](#all-medical-terms-and-conditions) bundled named entity SIT.
 
 ### Confidence level
 
@@ -11497,7 +11497,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Latvia physical addresses
 
-This unbundled named entity detects patterns related to physical address from Latvia. 
+This unbundled named entity detects patterns related to physical address from Latvia. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -11506,7 +11506,7 @@ Medium
 
 ## Liechtenstein physical addresses
 
-This unbundled named entity detects patterns related to physical address from Liechtenstein . 
+This unbundled named entity detects patterns related to physical address from Liechtenstein. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT. 
 
 ### Confidence level
 
@@ -11515,7 +11515,7 @@ Medium
 
 ## Lifestyles that relate to medical conditions
 
-This unbundled named entity detects terms related to lifestyles that might result in a medical condition, such as *smoking*. It supports English terms only.
+This unbundled named entity detects terms related to lifestyles that might result in a medical condition, such as *smoking*. It supports English terms only. It is also included in the [All medical terms and conditions](#all-medical-terms-and-conditions) bundled named entity SIT.
 
 ### Confidence level
 
@@ -11778,7 +11778,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Lithuania physical addresses
 
-This unbundled named entity detects patterns related to physical address from Lithuania. 
+This unbundled named entity detects patterns related to physical address from Lithuania. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -12281,7 +12281,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Luxemburg physical addresses
 
-This unbundled named entity detects patterns related to physical address from Luxemburg. 
+This unbundled named entity detects patterns related to physical address from Luxemburg. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -12665,7 +12665,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Malta physical addresses
 
-This unbundled named entity detects patterns related to physical address from Malta. 
+This unbundled named entity detects patterns related to physical address from Malta. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -12763,7 +12763,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 ## Medical specialities
 
-This unbundled named entity detects terms related to medical specialties, such as *dermatology*.  It supports English terms only.
+This unbundled named entity detects terms related to medical specialties, such as *dermatology*.  It supports English terms only. It is also included in the [All medical terms and conditions](#all-medical-terms-and-conditions) bundled named entity SIT.
 
 ### Confidence level
 
@@ -13195,7 +13195,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Netherlands physical addresses
 
-This unbundled named entity detects patterns related to physical address from the Netherlands. 
+This unbundled named entity detects patterns related to physical address from the Netherlands. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -13641,7 +13641,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## New Zealand physical addresses
 
-This unbundled named entity detects patterns related to physical address from New Zealand. 
+This unbundled named entity detects patterns related to physical address from New Zealand. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -13764,7 +13764,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Norway physical addresses
 
-This unbundled named entity detects patterns related to physical address from Norway. 
+This unbundled named entity detects patterns related to physical address from Norway. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -14175,7 +14175,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 ## Poland physical addresses
 
-This unbundled named entity detects patterns related to physical address from Poland. 
+This unbundled named entity detects patterns related to physical address from Poland. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -14648,7 +14648,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Portugal physical addresses
 
-This unbundled named entity detects patterns related to physical address from Portugal. 
+This unbundled named entity detects patterns related to physical address from Portugal. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -15070,7 +15070,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Romania physical addresses
 
-This unbundled named entity detects patterns related to physical address from Romania. 
+This unbundled named entity detects patterns related to physical address from Romania. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -15643,7 +15643,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 ## Slovakia physical addresses
 
-This unbundled named entity detects patterns related to physical address from Slovakia. 
+This unbundled named entity detects patterns related to physical address from Slovakia. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -15900,7 +15900,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Slovenia physical addresses
 
-This unbundled named entity detects patterns related to physical address from Slovenia. 
+This unbundled named entity detects patterns related to physical address from Slovenia. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -16523,7 +16523,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Spain physical addresses
 
-This unbundled named entity detects patterns related to physical address from Spain. 
+This unbundled named entity detects patterns related to physical address from Spain. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -16777,7 +16777,7 @@ This sensitive information type identifies these keywords by using a regular exp
 
 ## Surgical procedures
 
-This unbundled named entity detects terms related to surgical procedures, such as *appendectomy*.  It supports English terms only.
+This unbundled named entity detects terms related to surgical procedures, such as *appendectomy*.  It supports English terms only. It is also included in the [All medical terms and conditions](#all-medical-terms-and-conditions) bundled named entity SIT.
 
 ### Confidence level
 
@@ -17120,7 +17120,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Sweden physical addresses
 
-This unbundled named entity detects patterns related to physical address from Sweden. 
+This unbundled named entity detects patterns related to physical address from Sweden. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -17286,7 +17286,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Switzerland physical addresses
 
-This unbundled named entity detects patterns related to physical address from Switzerland. 
+This unbundled named entity detects patterns related to physical address from Switzerland. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -17624,7 +17624,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Turkey physical addresses
 
-This unbundled named entity detects patterns related to physical address from Turkey. 
+This unbundled named entity detects patterns related to physical address from Turkey. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -17633,7 +17633,7 @@ Medium
 
 ## Types of medication
 
-This unbundled named entity detects medication names, such as *insulin*.  It supports English terms only.
+This unbundled named entity detects medication names, such as *insulin*.  It supports English terms only. It is also included in the [All medical terms and conditions](#all-medical-terms-and-conditions) bundled named entity SIT.
 
 ### Confidence level
 
@@ -17998,7 +17998,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## U.K. physical addresses
 
-This unbundled named entity detects patterns related to physical address from the U.K.. 
+This unbundled named entity detects patterns related to physical address from the U.K.. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
@@ -18363,7 +18363,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 ## U.S. physical addresses
 
-This unbundled named entity detects patterns related to physical address from the U.S.. 
+This unbundled named entity detects patterns related to physical address from the U.S.. It is also included in the [All Physical Addresses](#all-physical-addresses) bundled named entity SIT.
 
 ### Confidence level
 
