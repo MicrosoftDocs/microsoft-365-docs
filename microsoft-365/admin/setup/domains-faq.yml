@@ -200,7 +200,7 @@ sections:
             
           - **You can't rename the onmicrosoft domain after sign-up.** For example, if the initial domain you chose was fourthcoffee.onmicrosoft.de, you can't change it to be fabrikam.onmicrosoft.de. To use a different onmicrosoft.de domain, you'd have to start a new subscription with Microsoft 365. 
               
-          - **You can't rename your team site URL.** Your team site URL is based on your onmicrosoft.de domain name.Unfortunately, because of the way SharePoint Online architecture works, you can't rename the team site. 
+          - **You can't rename your team site URL.** Your team site URL is based on your onmicrosoft.de domain name. Unfortunately, because of the way SharePoint Online architecture works, you can't rename the team site. 
               
           - **You can't remove your onmicrosoft domain.** Microsoft 365 needs to keep it around because it's used behind the scenes for your subscription. But you don't have to use the domain yourself after you've added a custom domain. 
               
