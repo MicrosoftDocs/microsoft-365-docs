@@ -47,6 +47,9 @@ Azure AD B2B direct connect is disabled by default. To enable collaboration in s
 1. [Configure inbound settings](#configure-inbound-settings) for the organization to allow users from the organization to be invited to your shared channels.
 1. [Configure outbound settings](#configure-outbound-settings) for the organization to allow your users to be invited to the other organization's shared channels.
 
+> [!NOTE]
+> Changes to cross-tenant access settings may take two hours to take effect.
+
 ### Add an organization
 
 Add each organization with which you want to participate in shared channels.
