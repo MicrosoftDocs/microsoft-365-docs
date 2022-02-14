@@ -51,14 +51,21 @@ These SITs are created by Microsoft show up in the compliance console by default
 
 Named entity SITs also show up in the compliance console by default. They detect person names, physical addresses, and medical terms and conditions. They cannot be edited or copied. See, [Learn about named entities (preview)](named-entities-learn.md#learn-about-named-entities-preview) for more information. Named entity SITs come in two types:
 
+**un-bundled**
+
+These named entity SITs have a narrower focus, like a single country, or a single class of terms. Use them when you need a DLP policy with a narrower detection scope. See, [Examples of named entity SITs](named-entities-learn.md#examples-of-named-entity-sits).
+
 **bundled**
 
-**un-bundled**
+Bundled named entity SITs detect all possible matches in a class, like All physical addresses. Use them as broad criteria in your DLP policies for detecting sensitive items. See, [Examples of named entity SITs](named-entities-learn.md#examples-of-named-entity-sits).
 
 ### Custom sensitive information types
 
+If the pre-configured sensitive information types don't meet your needs, you can create your own custom sensitive information types that you fully define or you can copy one of the built-in ones and modify it.
+
 ### Exact data match sensitive information types
 
+All EDM-based SITs are created from scratch. You use them detect items that have exact values which are defined in a database of sensitive information.
 
 ## Fundamental parts of a sensitive information type
 
