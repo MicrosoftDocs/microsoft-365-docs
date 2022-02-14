@@ -80,7 +80,7 @@ Check with your organization's Exchange admin to find out which configuration is
 
 ### Admin requirements
 
-In order to deploy an add-in via Centralized Deployement, you need to be either a Global admin or an Exchange admin in the organization.
+In order to deploy an add-in via Centralized Deployment, you need to be either a Global admin or an Exchange admin in the organization.
 
 > [!NOTE]
 > An Exchange admin can deploy an add-in if the **Application Administrator** role is added or if the **App Registrations** property is set to true in Azure Active Directory admin center as shown in the following image:
