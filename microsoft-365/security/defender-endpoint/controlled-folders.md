@@ -24,6 +24,7 @@ ms.date:
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -49,7 +50,7 @@ Controlled folder access works with a list of trusted apps. Apps that are includ
 
 Apps are added to the list based upon their prevalence and reputation. Apps that are highly prevalent throughout your organization and that have never displayed any behavior deemed malicious are considered trustworthy. Those apps are added to the list automatically.
 
-Apps can also be added manually to the trusted list by using Configuration Manager or Intune. Additional actions can be performed from the Microsoft 365 Defender portal. 
+Apps can also be added manually to the trusted list by using Configuration Manager or Intune. Additional actions can be performed from the Microsoft 365 Defender portal.
 
 ## Why controlled folder access is important
 
@@ -70,6 +71,8 @@ Controlled folder access is supported on the following versions of Windows:
 
 Windows system folders are protected by default, along with several other folders:
 
+The protected folders include common system folders (including boot sectors), and you can add additional folders. You can also allow apps to give them access to the protected folders.  The Windows systems folders that are protected by default are:
+
 - `c:\Users\<username>\Documents`
 - `c:\Users\Public\Documents`
 - `c:\Users\<username>\Pictures`
@@ -80,16 +83,20 @@ Windows system folders are protected by default, along with several other folder
 - `c:\Users\Public\Music`
 - `c:\Users\<username>\Favorites`
 
+Default folders appear in the user's profile, under **This PC**.
+   > [!div class="mx-imgBorder"]
+   > ![Protected Windows default systems folders](images/defaultfolders.png)
+
 > [!NOTE]
 > You can configure additional folders as protected, but you cannot remove the Windows system folders that are protected by default.
 
 ## Requirements for controlled folder access
 
-Controlled folder access requires enabling [Microsoft Defender Antivirus real-time protection](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
+Controlled folder access requires enabling [Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md).
 
 ## Review controlled folder access events in the Microsoft 365 Defender portal
 
-Defender for Endpoint provides detailed reporting into events and blocks as part of its [alert investigation scenarios](investigate-alerts.md) in the Microsoft 365 Defender portal. (See [Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).)
+Defender for Endpoint provides detailed reporting into events and blocks as part of its [alert investigation scenarios](investigate-alerts.md) in the Microsoft 365 Defender portal; see [Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
 
 You can query Microsoft Defender for Endpoint data by using [Advanced hunting](advanced-hunting-overview.md). If you're using [audit mode](audit-windows-defender.md), you can use [advanced hunting](advanced-hunting-overview.md) to see how controlled folder access settings would affect your environment if they were enabled.
 
