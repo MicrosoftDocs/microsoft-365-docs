@@ -50,7 +50,7 @@ Because every organization has specific needs, Compliance Manager relies on you 
 
 ## How Compliance Manager continuously assesses controls
 
-Compliance Manager automatically identifies settings in your Microsoft 365 environment that help determine when certain configurations meet improvement action implementation requirements. Compliance Manager detects signals from other compliance solutions you may be running, including information governance, information protection, communication compliance, and insider risk management, and also leverages Microsoft Secure Score monitoring of complementary improvement actions.
+Compliance Manager automatically identifies settings in your Microsoft 365 environment that help determine when certain configurations meet improvement action implementation requirements. Compliance Manager detects signals from other compliance solutions you may have deployed, including information governance, information protection, communication compliance, and insider risk management, and also leverages Microsoft Secure Score monitoring of complementary improvement actions.
 
 Your action status is updated on your dashboard every 24 hours. Once you follow a recommendation to implement a control, you’ll typically see the control status updated the next day.
 
