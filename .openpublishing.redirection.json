@@ -11,6 +11,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/admin/manage/servicenow-service-health-incidents-solutions-only.md",
+      "redirect_url": "/microsoft-365/admin/manage/servicenow-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/business-video/work-from-anywhere.md",
       "redirect_url": "https://support.microsoft.com/en-us/office/work-remotely-with-microsoft-365-164946c8-a47a-470e-a0b4-feb12a2eea04",
       "redirect_document_id": false
