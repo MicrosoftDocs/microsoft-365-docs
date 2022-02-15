@@ -192,7 +192,7 @@ The **Events** column on the **Alerts** page indicates the conditions of a polic
 
 When multiple events that match the conditions of an alert policy occur with one minute, they are added to an existing alert by a process called alert aggregation.
 
-For example, when one event occurs which matches a policy, an alert is generated and displayed on the **Alerts** page and a notification is sent. If another event matching the same policy occurs within one minute of the first event, then Compliance Manager adds details about the additional event on the **Events log** tab of the existing alert instead of triggering a new alert. The goal of alert aggregation is to help reduce alert "fatigue" and let you focus and take action on fewer alerts for the same event.
+For example, when one event occurs which matches a policy, an alert is generated and displayed on the **Alerts** page and a notification is sent. If another event matching the same policy occurs within one minute of the first event, then Compliance Manager adds details about the additional event on the **Events log** tab of the existing alert instead of triggering a new alert. The goal of alert aggregation is to help reduce alert "fatigue" and let you focus and take action on fewer alerts.
 
 ### Taking action on alerts
 
