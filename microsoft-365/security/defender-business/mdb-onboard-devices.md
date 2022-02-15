@@ -37,7 +37,7 @@ With Microsoft Defender for Business (preview), you have several options to choo
     - [A local script for Windows, macOS, and Linux devices](#onboard-devices-using-a-local-script-in-defender-for-business)
     - [Microsoft Endpoint Manager for computers, tablets, and phones](#onboard-devices-using-microsoft-endpoint-manager)
     - [Group Policy for Windows devices](#onboard-windows-devices-using-group-policy)
-    - Another method not listed here
+    - [Another method not listed here](#onboard-devices-using-a-method-not-listed-here)
 
 3. [Run a detection test](#run-a-detection-test) for newly onboarded devices.
 
@@ -104,7 +104,7 @@ See [Onboard Windows devices using Group Policy](../defender-endpoint/configure-
 
 ## Onboard devices using a method not listed here
 
-See [Onboarding and configuration tool options](../defender-endpoint/onboard-configure.md#onboarding-and-configuration-tool-options).
+If you want to use another method that is not listed in this article to onboard devices, see [Onboarding and configuration tool options](../defender-endpoint/onboard-configure.md#onboarding-and-configuration-tool-options).
 
 ## Run a detection test
 
