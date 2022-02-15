@@ -85,7 +85,7 @@ For your hybrid workers, you have implemented:
   - Malware protection for cloud service data, email, and Windows 11 or 10 devices
 - Compliance
   - Consistent labeling for levels of sensitivity and protection
-  - Policies to prevention information leakage
+  - Policies to prevent information leakage
   - Adherence to regional data regulations
 
 ## Next step
