@@ -54,7 +54,9 @@ The device onboarding experience in Defender for Business was built on the same 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
 
-To view more detailed information about device onboarding in Defender for Endpoint, see [Onboard devices and configure Microsoft Defender for Endpoint capabilities](../defender-endpoint/onboard-configure.md).
+> [!TIP]
+> To view more detailed information about device onboarding in Defender for Endpoint, see [Onboard devices and configure Microsoft Defender for Endpoint capabilities](../defender-endpoint/onboard-configure.md).
+> 
 
 The following table describes the most commonly used methods to onboard devices to Defender for Business. 
 
