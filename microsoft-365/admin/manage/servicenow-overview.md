@@ -80,7 +80,7 @@ After the Microsoft 365 Support Integration app has been installed, two Applicat
 ## What configuration is right for your organization?
 
 After you've downloaded the app, navigate to the Microsoft 365 setup wizard in your SNOW environment to complete the setup process.
-![SNOW Setup](https://user-images.githubusercontent.com/93688542/154124985-76e13e7d-b32e-4741-830b-bbb110d3ecbf.png)
+:::image type="content" source="../../media/154124985-76e13e7d-b32e-4741-830b-bbb110d3ecbf.png" alt-text="Snow setup wizard":::
 
 You can learn more about the steps by visiting the following pages:
 - If your ServiceNow environment allows Basic Authentication (access with ServiceNow user credential) for inbound webservice calls, then follow instructions in [Set up Microsoft 365 support integration with ServiceNow Basic Authentication](servicenow-basic-authentication.md).
