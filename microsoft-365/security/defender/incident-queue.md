@@ -55,17 +55,15 @@ For example: *Multi-stage incident on multiple endpoints reported by multiple so
 
 The incident queue also provides multiple filtering options, that when applied, enable you to perform a broad sweep of all existing incidents in your environment, or decide to focus on a specific scenario or threat. Applying filters on the incident queue can help determine which incident requires immediate attention. 
 
-The **Filters** list above the rows of incidents shows the currently applied filters. Here's an example.
-
-FIGURE
+The **Filters** list above the list of incidents shows the currently applied filters.
 
 ## Available filters
 
-From the default incident queue, you can select **Filter** to see a **Filter** pane, from which you specify a filtered set of incidents. Here is an example.
+From the default incident queue, you can select **Filter** to see a **Filter** pane, from which you specify a filtered set of incidents. Here's an example.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Example of the filters pane for the incident queue." lightbox="../../media/incidents-queue/incidents-ss-incidents-filters.png":::
 
-You can also see the **Filter** pane by selecting any of the filters in the **Filters** list above the rows of incidents.
+You can also see the **Filter** pane by selecting any of the filters in the **Filters** list above the list of incidents.
 
 This table lists the filter names that are available.
 
