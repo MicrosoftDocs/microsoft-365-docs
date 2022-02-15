@@ -230,7 +230,7 @@ Sensitive information types can also use built-in functions to identify corrobor
 
 For example, an employee ID badge has a hire date on it, so this custom entity can use the built-in `Func_us_date` function   to identify a date in the format that's commonly used in the US.
 
-For more information, see [What the DLP functions look for](what-the-dlp-functions-look-for.md).
+For more information, see [Sensitive information type functions](sit-functions.md).
 
 ![XML markup showing Match element referencing built-in function.](../media/dac6eae3-9c52-4537-b984-f9f127cc9c33.png)
 
@@ -907,4 +907,4 @@ You can copy this markup, save it as an XSD file, and use it to validate your ru
 
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
-- [What the DLP functions look for](what-the-dlp-functions-look-for.md)
+- [Sensitive information type functions](sit-functions.md)

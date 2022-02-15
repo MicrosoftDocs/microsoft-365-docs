@@ -36,7 +36,7 @@ There are two ways to create a new sensitive information type:
     - [regular expressions](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/) - Microsoft 365 sensitive information types uses the Boost.RegEx 5.1.3 engine
     - keyword lists - you can create your own as you define your sensitive information type or choose from existing keyword lists
     - [keyword dictionary](create-a-keyword-dictionary.md)
-    - [functions](what-the-dlp-functions-look-for.md)
+    - [Sensitive information type functions](sit-functions.md)
     - [confidence levels](sensitive-information-type-learn-about.md#more-on-confidence-levels)
  
 - You must have Global admin or Compliance admin permissions to create, test, and deploy a custom sensitive information type through the UI. See [About admin roles](/office365/admin/add-users/about-admin-roles) in Office 365.
@@ -59,7 +59,7 @@ Use this procedure to create a new sensitive information type that you fully def
 
 4. Choose the default confidence level for the pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
 
-5. Choose and define **Primary element**. The primary element can be a **Regular expression** with an optional validator, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. For more information on DLP functions, see [What the DLP functions look for](what-the-dlp-functions-look-for.md). For more information on the date and the checksum validators, see [Sensitive Information Type regular expression validators](sit-regex-validators-additional-checks.md#sensitive-information-type-regular-expression-validators).
+5. Choose and define **Primary element**. The primary element can be a **Regular expression** with an optional validator, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. For more information on DLP functions, see [Sensitive information type functions](sit-functions.md). For more information on the date and the checksum validators, see [Sensitive Information Type regular expression validators](sit-regex-validators-additional-checks.md#sensitive-information-type-regular-expression-validators).
 
 6. Fill in a value for **Character proximity**.
 
@@ -114,7 +114,7 @@ You can also create custom sensitive information types by using PowerShell and E
 
 7. You can choose to edit or remove the existing patterns and add new ones. Choose the default confidence level for the new pattern. The values are **Low confidence**, **Medium confidence**, and **High confidence**.
 
-8. Choose and define **Primary element**. The primary element can be a **Regular expression**, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. See, [What the DLP functions look for](what-the-dlp-functions-look-for.md).
+8. Choose and define **Primary element**. The primary element can be a **Regular expression**, a **Keyword list**, a **Keyword dictionary**, or one of the pre-configured **Functions**. See, [Sensitive information type functions](sit-functions.md).
 
 9. Fill in a value for **Character proximity**.
 

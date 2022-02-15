@@ -370,8 +370,8 @@
           items:
           - name: Sensitive information type entity definitions 
             href: sensitive-information-type-entity-definitions.md
-          - name: What the DLP functions look for
-            href: what-the-dlp-functions-look-for.md
+          - name: Sensitive information type functions
+            href: sit-functions.md
           - name: Custom sensitive information type filters reference
             href: sit-custom-sit-filters.md
     - name: Trainable classifiers
