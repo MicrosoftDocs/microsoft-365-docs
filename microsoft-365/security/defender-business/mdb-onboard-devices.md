@@ -48,7 +48,6 @@ This article also includes information about [Offboarding a device](#offboarding
 > [!TIP]
 > If something goes wrong while onboarding devices, see [Microsoft Defender for Business (preview) troubleshooting](mdb-troubleshooting.yml). 
 
-
 ## Device onboarding methods
 
 The device onboarding experience in Defender for Business was built on the same device onboarding processes that are used in Microsoft Defender for Endpoint. Watch the following video to see how it works:<br/><br/>
@@ -75,6 +74,8 @@ The automatic onboarding option is available if your organization was already us
 
 ## Onboard devices using a local script in Defender for Business
 
+You can use a local script to onboard Windows, macOS, and Linux devices to Defender for Business. 
+
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
 2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
@@ -94,7 +95,9 @@ The automatic onboarding option is available if your organization was already us
 
 ## Onboard devices using Microsoft Endpoint Manager
 
-If you were already using Microsoft Intune before getting Defender for Business (preview), you can continue to use Microsoft Intune to onboard devices. To get help with this, see [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment).
+If you were already using Microsoft Intune before getting Defender for Business (preview), you can continue to use Microsoft Intune to onboard devices. With Endpoint Manager, you can onboard computers, tablets, and phones. 
+
+See [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment).
 
 ## Onboard Windows devices using Group Policy
 
@@ -108,7 +111,7 @@ If you want to use another method that is not listed in this article to onboard 
 
 ## Run a detection test
 
-After you've onboarded Windows devices to Defender for Business (preview), you can run a detection test to make sure that everything is working correctly.
+After you've onboarded Windows devices to Defender for Business (preview), you can run a detection test on a Windows device to make sure that everything is working correctly.
 
 1. On the Windows device, create a folder: `C:\test-MDATP-test`.
 
