@@ -124,7 +124,7 @@ The default list of incidents is for those that occurred in the last six months.
  - 30 days
  - 30 days
  - 6 months
- - A custom range in which you can specify both dates and times.
+ - A custom range in which you can specify both dates and times
 
 ## Next steps
 
