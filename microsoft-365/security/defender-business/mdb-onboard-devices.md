@@ -98,6 +98,8 @@ If you were already using Microsoft Intune before getting Defender for Business 
 
 ## Onboard Windows devices using Group Policy
 
+If your organization is already using Group Policy to manage devices, you can use Group Policy to onboard devices to Defender for Business. If you're brand new to Group Policy,we recommend using another method, such as Endpoint Manager or a local script instead. 
+
 See [Onboard Windows devices using Group Policy](../defender-endpoint/configure-endpoints-gp.md).
 
 ## Onboard devices using a method not listed here
