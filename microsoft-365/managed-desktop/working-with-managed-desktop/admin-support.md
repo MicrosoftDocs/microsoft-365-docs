@@ -36,7 +36,7 @@ Support requests are triaged and managed according to severity outlined in the [
 | ----- | ----- |
 Incident | You require the Microsoft Managed Desktop Operations team to investigate a user issue. For example, a widespread impact of a change or service outage.
 Request for information | You're planning a change in networking, proxy configuration, VPN systems, certificate expiration, or just need some information about the service. A response from the Microsoft Managed Desktop Operations team is advised when communicating a change within your organization.
-Change request | You require the Microsoft Managed Desktop Operations team to make a change, such as moving devices between update groups.
+Change request | You require the Microsoft Managed Desktop Operations team to make a change, such as moving devices between update groups. All change requests are treated as severity C.
 
 > [!IMPORTANT]
 > When you create a support request you will need to provide a primary contact. This person is responsible for working with our Service Engineers to resolve the issue or answer any questions about a requested change. We also require that you have previously [set up an Admin contact](../get-started/add-admin-contacts.md) who will be copied on all case notifications for their relevant area of focus. This person will be asked to take over a case if the primary contact for a case is unreachable.
