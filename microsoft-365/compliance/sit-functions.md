@@ -1,5 +1,5 @@
 ---
-title: "What the Data Loss Prevention (DLP) functions look for"
+title: "Sensitive information type functions"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
-ms.localizationpriority: medium
+ms.localizationpriority: low
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -18,29 +18,25 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 recommendations: false
-description: Learn what the data loss prevention (DLP) functions look for.
+description: Learn what the sensitive information type functions look for.
 ---
 
-# What the DLP functions look for
+# Sensitive information type functions
 
-Data loss prevention (DLP) policies can use sensitive information types to identify sensitive items. Credit card number and EU debit card number are examples of sensitive information types. Sensitive information types look for  specific patterns. Sensitive information types validate the data by looking at it's format, it's checksums, and looks for relevant keywords or other information. Some of this functionality is performed by internal functions. For example, the Credit Card Number sensitive information type uses a function to look for dates that are formatted like an expiration date. This helps to corroborate that a number is a credit card number.
+Sensitive information types (SIT) can use functions as primary elements to identify sensitive items. For example, the Credit Card Number sensitive information type uses the Func_credit_card function to detect credit card number.
 
 This article explains what these functions look for, to help you understand how the predefined sensitive information types work. For more information, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 
 ## Table of functions
 
-<br>
-
-****
-
-|function name|function action|is a validator|
-|---|---|:---:|
-|Func_Argentina_Unique_Tax_Key|detects and validates Argentina Unique tax key|no|
+|Function name | Function action | Is a validator|
+|---------|----------|---------|
 |Func_aba_routing|detects ABA routing number|yes|
 |Func_alabama_drivers_license_number|detects Alabama driver’s license number|no|
 |Func_alaska_delaware_oregon_drivers_license_number|detects Alaska, Delaware, Oregon driver’s license number|no|
 |Func_alaska_drivers_license_number|detects Alaska driver’s license number|no|
 |Func_alberta_drivers_license_number|detects Alberta driver’s license number|no|
+|Func_argentina_Unique_Tax_Key|detects and validates Argentina Unique tax key|no|
 |Func_Argentina_Unique_Tax_Key|detects Argentina Unique tax key|no|
 |Func_arizona_drivers_license_number|detects Arizona driver’s license number|no|
 |Func_arkansas_drivers_license_number|detects Arkansas driver’s license number|no|
@@ -68,8 +64,8 @@ This article explains what these functions look for, to help you understand how 
 |Func_croatia_id_card|detects Croatia ID card|no|
 |Func_croatia_oib_number|detects Croatia OIB number|no|
 |Func_cyprus_eu_tax_file_number|detects Cyprus tax file number|no|
-|Func_czech_id_card|detects Czech ID card|no|
 |Func_czech_id_card_new_format|detects Czech ID card in new format|no|
+|Func_czech_id_card|detects Czech ID card|no|
 |Func_dea_number|detects DEA number|yes|
 |Func_denmark_eu_tax_file_number|detects Denmark personal identification number|no|
 |Func_district_of_columbia_drivers_license_number|detects District of Columbia driver’s license number|no|
@@ -87,8 +83,8 @@ This article explains what these functions look for, to help you understand how 
 |Func_french_insee|detects French INSEE|no|
 |Func_georgia_drivers_license_number|detects Georgia driver’s license number|no|
 |Func_german_drivers_license|detects Germany driver’s license|no|
-|Func_german_passport|detects Germany passport|no|
 |Func_german_passport_data|detects Germany passport|no|
+|Func_german_passport|detects Germany passport|no|
 |Func_germany_eu_tax_file_number|detects Germany tax file number|no|
 |Func_germany_value_added_tax_number|detects Germany value added tax number|no|
 |Func_greece_eu_ssn|detects Greece sin (AMKA)|no|
@@ -110,21 +106,21 @@ This article explains what these functions look for, to help you understand how 
 |Func_italy_value_added_tax_number|detects Italy value added tax number|no|
 |Func_japanese_my_number_corporate|detects Japan my number corporate|yes|
 |Func_japanese_my_number_personal|detects Japan my number personal|yes|
-|Func_jp_bank_account|detects Japan bank account|no|
 |Func_jp_bank_account_branch_code|detects Japan bank account branch code|no|
+|Func_jp_bank_account|detects Japan bank account|no|
 |Func_jp_drivers_license_number|detects Japan driver’s license number|no|
 |Func_jp_passport|detects Japan passport|no|
 |Func_jp_resident_registration_number|detects Japan-resident registration number|no|
-|Func_jp_sin|detects Japan SIN|no|
 |Func_jp_sin_pre_1997|detects Japan sin pre 1997|no|
+|Func_jp_sin|detects Japan SIN|no|
 |Func_kansas_drivers_license_number|detects Kansas driver’s license number|no|
 |Func_kentucky_drivers_license_number|detects Kentucky driver’s license number|no|
 |Func_kentucky_massachusetts_virginia_drivers_license_number|detects Kentucky, Massachusetts, Virginia driver’s license number|no|
 |Func_latvia_eu_national_id_card|detects Latvia personal code|no|
 |Func_lithuania_eu_tax_file_number|detects Lithuania personal code|no|
 |Func_louisiana_drivers_license_number|detects Louisiana driver’s license number|no|
-|Func_luxemburg_eu_tax_file_number|detects Luxemburg national identification number (natural persons)|no|
 |Func_luxemburg_eu_tax_file_number_non_natural|detects Luxemburg national identification number (non-natural persons)|no|
+|Func_luxemburg_eu_tax_file_number|detects Luxemburg national identification number (natural persons)|no|
 |Func_maine_drivers_license_number|detects Maine driver’s license number|no|
 |Func_manitoba_drivers_license_number|detects Manitoba driver’s license number|no|
 |Func_maryland_drivers_license_number|detects Maryland driver’s license number|no|
@@ -207,7 +203,6 @@ This article explains what these functions look for, to help you understand how 
 |Func_west_virginia_drivers_license_number|detects West Virginia driver’s license number|no|
 |Func_wisconsin_drivers_license_number|detects Wisconsin driver’s license number|no|
 |Func_wyoming_drivers_license_number|detects Wyoming driver’s license number|no|
-|
 
 ## Func_us_date
 
