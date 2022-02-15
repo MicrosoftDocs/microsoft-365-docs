@@ -21,18 +21,18 @@ description: Use Windows Intune as an MDA and MAM provider and Windows 10 securi
 
 # Step 4. Protect devices
 
-To help protect devices against the initial access part of a ransomware attack:
+To help protect devices (endpoints) against the initial access part of a ransomware attack:
 
 - Deploy [Intune](/mem/intune/fundamentals/what-is-intune) as a mobile device management (MDM) and mobile application management (MAM) provider for your devices and enroll your organization-owned devices.
-- Implement the [Common identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies) to validate the user account credentials and device health and compliance requirements.
+- Implement the [Common identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies) to validate the user account credentials and enforce device health and compliance requirements.
 - Enable [Network Protection](/microsoft-365/security/defender-endpoint/network-protection) in Microsoft Defender for Endpoint and Microsoft 365 Defender.
 - Configure [site and download checking](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings) and [app and file checking](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings) in Microsoft Defender SmartScreen to block or warn.
 - Enable [Microsoft Defender Antivirus scanning](/microsoft-365/security/defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus) of downloaded files and attachments.
 - Set **Remote Desktop security level** to **TLS** in Microsoft Defender for Endpoint and Microsoft 365 Defender.
 
-## Windows 10 devices
+## Windows 11 or 10 devices
 
-To help protect against the lateral movement part of an attack from a Windows 10 device:
+To help protect against the lateral movement part of an attack from a Windows 11 or 10 device:
 
 - [Turn on Microsoft Defender Firewall](https://support.microsoft.com/windows/turn-microsoft-defender-firewall-on-or-off-ec0844f7-aebd-0583-67fe-601ecf5d774f).
 - [Update Microsoft Defender Antivirus definitions](/en-us/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus).
@@ -66,7 +66,7 @@ As you implement these protections, perform change management for the following:
 
 ## Resulting configuration
 
-Here is the ransomware protection for your tenant for steps 1-4.
+Here's the ransomware protection for your tenant for steps 1-4.
 
 ![Ransomware protection for your Microsoft 365 tenant after Step 4](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step4.png)
 

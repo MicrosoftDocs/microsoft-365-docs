@@ -23,10 +23,10 @@ description: Use controlled folder access, MIP, DLP, and Microsoft Defender for 
 
 Because ransomware attackers will also look at your on-premises data located on file, database, and other types of servers, one of the best ways to protect that data is to migrate it to your Microsoft 365 tenant. Once there, it can be protected by built-in mitigation and recovery features such as [versioning, recycle bin, and Files Restore](ransomware-protection-microsoft-365.md#ransomware-mitigation-and-recovery-capabilities-provided-with-microsoft-365).
 
-To provide additional protection of your sensitive information in your Microsoft 365 tenant:
+To provide additional protection of sensitive information in your Microsoft 365 tenant:
 
 - Locate your sensitive information.
-- Implement strict permissions and eliminating broad access (for example, too many users having write, edit, and delete abilities).
+- Implement strict permissions and eliminating broad access (for example, prevent too many users having write, edit, and delete capabilities).
 - Protect your sensitive information.
 
 >[!Note]
@@ -49,17 +49,17 @@ For each type of sensitive information, determine the following:
 - Its current location, such as a OneDrive or SharePoint folder or collaboration venue such as a Microsoft Teams team
 - The current permissions, which consist of:
 
-   - The user accounts who have access to it
+   - The user accounts who have access
 
-   - The actions that are allowed to each account that has access to it
+   - The actions that are allowed to each account that has access   - 
 
 ## Implement strict permissions for locations with sensitive information
 
-Using strict permissions within your Microsoft 365 tenant is the principle of least privilege for locations and communications venues, which in Microsoft 365 are typically OneDrive folders, SharePoint sites and folders, and teams. 
+Implementing strict permissions within your Microsoft 365 tenant uses the principle of least privilege for locations and communications venues, which in Microsoft 365 are typically OneDrive folders, SharePoint sites and folders, and teams. 
 
 While it is easier to create file storage locations or teams with broad access (such as the default of everyone in your organization), for sensitive information, the user accounts that are permitted and the actions that are allowed must be confined to the minimum set required to meet collaboration and business requirements.
 
-Once a ransomware attacker has infiltrated your tenant, they try to escalate their privileges by compromising the credentials of user accounts with wider scope of permissions across your tenant, such as administrator role accounts or user accounts that have access to sensitive information. 
+Once a ransomware attacker has infiltrated your tenant, they try to escalate their privileges by compromising the credentials of user accounts with wider scopes of permissions across your tenant, such as administrator role accounts or user accounts that have access to sensitive information. 
 
 Based on this typical attacker behavior, there are two levels of difficulty for the attacker:
 
@@ -79,7 +79,7 @@ See [Set up secure collaboration with Microsoft 365 and Microsoft Teams](setup-s
 
 ## Protect your sensitive information
 
-To protect your sensitive information in case a ransomware attacker has access to it:
+To protect your sensitive information in case a ransomware attacker obtains access to it:
 
 - Use [controlled folder access](/windows/security/threat-protection/microsoft-defender-atp/controlled-folders) to make it more difficult for unauthorized applications to modify the data in controlled folders.
 
@@ -95,13 +95,13 @@ Administrative changes to broad permissions can lead to users being denied acces
 
 Additionally, for the protection of sensitive information in your Microsoft 365 tenant, train your users to:
 
-- Create communication and collaboration venues with strict permissions (the minimum set of user accounts for access and the minimum allowed actions for each). 
+- Create communication and collaboration venues with strict permissions (the minimum set of user accounts for access and the minimum allowed actions for each account). 
 - Apply the proper sensitivity labels to sensitive information.
 - Use controlled folder access.
 
 ## Resulting configuration
 
-Here is the ransomware protection for your tenant for steps 1-5.
+Here's the ransomware protection for your tenant for steps 1-5.
 
 ![Ransomware protection for your Microsoft 365 tenant after Step 5](../media/ransomware-protection-microsoft-365/ransomware-protection-microsoft-365-architecture-step5.png)
 
