@@ -31,7 +31,7 @@ In addition, each MSP customer tenant must qualify for Lighthouse by meeting the
  
 - Delegated Admin Privileges (DAP) for the MSP 
 - At least one Microsoft 365 Business Premium or Microsoft 365 E3 license 
-- Fewer than 500 licensed users  
+- Fewer than 1000 licensed users  
 
 ## Requirements for enabling device management   
 
