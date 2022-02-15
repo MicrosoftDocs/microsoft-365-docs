@@ -55,15 +55,15 @@ To inactivate the tenant or view and manage tags, select the three dots next to 
 
 The following table shows the different statuses and their meaning.
 
-| Status                                   | Description                                                                      |
-|------------------------------------------|----------------------------------------------------------------------------------|
-| Active                                   | Tenant onboarding and data flow have started.                                    |
-| Inactive                                 | Partner no longer manages the tenant in Lighthouse.                              |
-| In process                               | Tenant discovered but not fully onboarded.                                       |
-| Ineligible - DAP or GDAP isn't set up    | Partner must have delegated (DAP) or granular delegated (GDAP) admin privileges. |
-| Ineligible - Required license is missing | Tenant doesn't have the required license.                                        |
-| Ineligible - User count exceeded         | Tenant has more users than allowed.                                              |
-| Ineligible - Geo check failed            | Partner and customer must reside in the same geographic location.                |
+| Status                                   | Description                                                                                             |
+|------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| Active                                   | Tenant onboarding and data flow have started.                                                           |
+| Inactive                                 | Tenant was offboarded at the request of the MSP and is no longer being managed in Lighthouse.           |
+| In process                               | Tenant discovered but not fully onboarded.                                                              |
+| Ineligible - DAP or GDAP isn't set up    | Partner must have delegated (DAP) or granular delegated (GDAP) admin privileges set up with the tenant. |
+| Ineligible - Required license is missing | Tenant doesn't have the required license.                                                               |
+| Ineligible - User count exceeded         | Tenant has more users than allowed.                                                                     |
+| Ineligible - Geo check failed            | Partner and customer must reside in the same geographic location.                                       |
 
 Once you inactivate a tenant, you can't take action on the tenant until the inactivation process completes. It may take up to 48 hours for inactivation to complete. If you decide to reactivate a tenant, it may take up to 48 hours for data to reappear.
 
