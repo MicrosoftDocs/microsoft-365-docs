@@ -37,7 +37,7 @@ With Microsoft Defender for Business (preview), you have several options to choo
 
 ## What to do
 
-1. Choose a [device onboarding method](#device-onboarding-methods).
+1. See the [device onboarding method](#device-onboarding-methods).
 
 2. Onboard a device by using:
     - [Automatic onboarding for Windows devices enrolled in Microsoft Endpoint Manager](#use-automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)
