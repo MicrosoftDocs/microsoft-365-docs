@@ -36,7 +36,7 @@ The resources on this page are designed to get you started with learning about a
 
 ## Get started
 
-The resources in this section help you learn more about the two methods of data classification and extraction used by SharePoint Syntex: form processing and document understanding.
+The resources in this section help you learn more about the three methods of data classification and extraction used by SharePoint Syntex: document understanding, form processing, and prebuilt.
 
 > [!NOTE]
 > You can get started with SharePoint Syntex without buying licenses by [creating a content center from the SharePoint admin center](create-a-content-center.md). Unlicensed users can create document understanding models but can't apply them to a document library.
@@ -81,6 +81,7 @@ The resources in this section help your users learn how to create and configure 
 |Learn how to work with models|[Create a content center](./create-a-content-center.md)<br><br>[Create a classifier](./create-a-classifier.md)<br><br>[Duplicate a model](./duplicate-a-model.md)<br><br>[Rename a model](./rename-a-model.md)<br><br>[Create an extractor](./create-an-extractor.md)<br><br>[Rename an extractor](./rename-an-extractor.md)<br><br>[Create a form processing model](./create-a-form-processing-model.md)<br><br>[Explanation types](./explanation-types-overview.md)<br><br>[Use explanation templates](./explanation-templates.md)<br><br>[Apply a document understanding model](./apply-a-model.md)<br><br>[Learn about document understanding models through the sample model](./learn-about-document-understanding-models-through-the-sample-model.md)<br><br>|
 |Apply a retention label to your model|[Apply a retention label to a document understanding model](./apply-a-retention-label-to-a-model.md)|
 |Apply a sensitivity label to your model|[Apply a sensitivity label to a document understanding model](./apply-a-sensitivity-label-to-a-model.md)|
+|Use prebuilt models to extract info from documents |[Use a prebuilt model to extract info from invoices or receipts](./prebuilt-models.md)|
 |Use trained models in other content centers |[Publish and discover document understanding models](./model-discovery.md)|
 |Perform metadata-based queries on document libraries|[Search for metadata in document libraries](./metadata-search.md)|
 |Use Managed Metadata services term store taxonomy when creating an extractor|[Leverage term store taxonomy when creating an extractor](./leverage-term-store-taxonomy.md)|

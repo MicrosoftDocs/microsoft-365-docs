@@ -26,7 +26,7 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ![Create a Test Base Account search image.](Media/CreateTestAccount1.png)
 
-2. Click **'Add'** to create a Test Base account.
+2. Click **'Create'** to create a Test Base account.
 
 ![Clicking on add to create the account.](Media/CreateTestAccount2.png)
 

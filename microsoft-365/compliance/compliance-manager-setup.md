@@ -78,14 +78,34 @@ Users with Azure AD identities who don't have Office 365 or Microsoft 365 subscr
 
 The table below shows the functions allowed by each role in Compliance Manager. The table also shows how each [Azure AD role](/azure/active-directory/roles/permissions-reference) maps to Compliance Manager roles. Users will need at least the Compliance Manager reader role, or Azure AD global reader role, to access Compliance Manager.
 
-
 | User can: | Compliance Manager role | Azure AD role | 
 | :------------- | :-------------: | :------------: |
-| **Read but not edit data**| Compliance Manager Reader  | Azure AD Global reader, Security reader | 
-| **Edit data**| Compliance Manager Contribution | Compliance Administrator | 
-| **Edit test results**| Compliance Manager Assessor | Compliance Administrator | 
-| **Manage assessments, and template and tenant data**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  | 
-| **Assign users**| Global Administrator | Global Administrator | 
+| **Read but not edit data**| Compliance Manager Reader  | Azure AD Global reader, Security reader |
+| **Edit data**| Compliance Manager Contribution | Compliance Administrator |
+| **Edit test results**| Compliance Manager Assessor | Compliance Administrator |
+| **Manage assessments, and template and tenant data**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  |
+| **Assign users**| Global Administrator | Global Administrator |
+
+## Start a premium assessments trial
+
+The Compliance Manager premium assessments trial is a great way to quickly set up assessments that are most relevant to your organization. Our library of over 300 templates correspond to governmental regulations and industry standards around the world.
+Learn more about the [premium assessments trial](compliance-easy-trials-compliance-manager-assessments.md).
+
+You can start your trial directly from Compliance Manager and set up recommended assessments by following these steps:
+
+1. On the Compliance Manager **Overview** page, select **Start trial**. You'll enter a trial activation wizard which will ask questions to help us recommend assessments for your organization.
+
+2. On the **Activate trial** page, select **Next** to begin your free 90 day premium assessments trial and continue with creating assessments.
+
+3. Select one or more industries that identify your organization, then select **Next**.
+
+4. Select one or more regions for your organization's location, then select **Next**.
+
+5. On the **Choose assessments** screen, select the dropdown arrow next to **Recommended templates** to see the list of assessments we think apply to your organization. Check the boxes next to the templates you want to use for creating assessments, then select **Next**.
+
+6. Review your final selections and select **Add Recommended Assessments** to create your new assessments.
+
+Learn more about getting started with assessments by visiting the [Assessments page](#assessments-page) section below.
 
 ## Settings for automated testing and user history
 

@@ -41,16 +41,20 @@ Alerts from different Microsoft security solutions like Microsoft Defender for E
 
 By default, the alerts queue in the Microsoft 365 Defender portal displays the new and in progress alerts from the last 30 days. The most recent alert is at the top of the list so you can see it first. 
 
-From the default alerts queue, you can select **Filters** to see a **Filters** pane, from which you can specify a subset of the alerts. Here's an example.
+From the default alerts queue, you can select **Filter** to see a **Filter** pane, from which you can specify a subset of the alerts. Here's an example.
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Example of the filters pane for the alerts queue in the Microsoft 365 Defender portal":::
+
+<!--
+UPDATE SCREENSHOT
+--> 
 
 You can filter alerts according to these criteria:
 
 - Severity
 - Status
 - Service sources
-- Impacted assets
+- Entities (the impacted assets)
 - Automated investigation state
 
 ## Required roles for Defender for Office 365 alerts
