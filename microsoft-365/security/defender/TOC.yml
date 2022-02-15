@@ -166,6 +166,16 @@
                    href: investigate-incidents.md
                  - name: Alerts
                    href: investigate-alerts.md    
+                 - name: Alert grading playbooks
+                   items: 
+                    - name: Overview
+                      href: alert-grading-playbooks.md
+                    - name: Suspicious email forwarding activity
+                      href: alert-grading-playbook-email-forwarding.md
+                    - name: Suspicious inbox forwarding rules
+                      href: alert-grading-playbook-inbox-forwarding-rules.md
+                    - name: Suspicious inbox manipulation rules
+                      href: alert-grading-playbook-inbox-manipulation-rules.md
                  - name: Users 
                    href: investigate-users.md                  
               - name: Incident response playbooks
