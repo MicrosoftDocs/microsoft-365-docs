@@ -216,7 +216,7 @@ For scenarios when you'd like get a file from a device you're investigating, you
 > The following file size limits apply:
 >
 > - `getfile` limit: 3 GB
-> - `fileinfo` limit: 10 GB
+> - `fileinfo` limit: 30 GB
 > - `library` limit: 250 MB
 
 ### Download a file in the background
@@ -346,6 +346,7 @@ Select the **Command log** tab to see the commands used on the device during a s
 
 - Live response sessions are limited to 25 live response sessions at a time.
 - Live response session inactive timeout value is 30 minutes.
+- Individual live response commands have a time limit of 10 minutes, with the exception of getfile which has a limit of 30 minutes.
 - A user can initiate up to 10 concurrent sessions.
 - A device can only be in one session at a time.
 - The following file size limits apply:
