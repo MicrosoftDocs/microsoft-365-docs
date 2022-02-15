@@ -67,7 +67,7 @@ You'll complete most of these tasks by remotely connecting to Azure PowerShell. 
 
 - [Add a key to each key vault either by creating or importing a key](#add-a-key-to-each-key-vault-either-by-creating-or-importing-a-key)
 
-- [Verify expiration date of your keys](#Verify-expiration-date-of-your-keys)
+- [Verify expiration date of your keys](#verify-expiration-date-of-your-keys)
 
 - [Check the recovery level of your keys](#check-the-recovery-level-of-your-keys)
 
