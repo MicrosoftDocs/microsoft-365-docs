@@ -286,7 +286,7 @@ ms.technology: mde
 
 ## 100.68.99
 
-- Added the ability to configure the antivirus functionality to run in [passive mode](mac-preferences.md#enable--disable-passive-mode)
+- Added the ability to configure the antivirus functionality to run in [passive mode](mac-preferences.md#enforcement-level-for-antivirus-engine)
 - Performance improvements & bug fixes
 
 ## 100.65.28

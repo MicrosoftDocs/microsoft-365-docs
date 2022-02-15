@@ -4575,6 +4575,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/enable-siem-integration.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-siem",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/pull-alerts-using-rest-api.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-siem",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/api-portal-mapping.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/configure-siem",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/configure-end-user-interaction-microsoft-defender-antivirus.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/configure-local-policy-overrides-microsoft-defender-antivirus",
       "redirect_document_id": true
@@ -6377,11 +6392,6 @@
     {
       "source_path": "microsoft-365/security/defender-endpoint/mde-terms-windows.md",
       "redirect_url": "/legal/microsoft-365/mde-terms-windows",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/security/defender-endpoint/api-portal-mapping.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/apis-intro",
       "redirect_document_id": false
     },
     {

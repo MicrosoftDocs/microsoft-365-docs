@@ -32,7 +32,7 @@ ms.technology: mde
 This topic describes how to install, configure, update, and use Microsoft Defender for Endpoint on Linux.
 
 > [!CAUTION]
-> Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint on Linux is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint on Linux EDR functionality after configuring the antivirus functionality to run in [Passive mode](linux-preferences.md#enable--disable-passive-mode).
+> Running other third-party endpoint protection products alongside Microsoft Defender for Endpoint on Linux is likely to lead to performance problems and unpredictable side effects. If non-Microsoft endpoint protection is an absolute requirement in your environment, you can still safely take advantage of Defender for Endpoint on Linux EDR functionality after configuring the antivirus functionality to run in [Passive mode](linux-preferences.md#enforcement-level-for-antivirus-engine).
 
 ## How to install Microsoft Defender for Endpoint on Linux
 
@@ -86,51 +86,35 @@ If you experience any installation failures, refer to [Troubleshooting installat
     > [!NOTE]
     > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
 
+- List of supported kernel versions
+  - Red Hat Enterprise Linux 6 and CentOS 6:
+    - For 6.7: 2.6.32-573.*
+    - For 6.8: 2.6.32-642.*
+    - For 6.9: 2.6.32-696.*
+    - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.41.2:
+    
+        |||||
+        |--|--|--|--|
+        |2.6.32-754.2.1.el6.x86_64|2.6.32-754.17.1.el6.x86_64|2.6.32-754.29.1.el6.x86_64|2.6.32-754.3.5.el6.x86_64|
+        |2.6.32-754.18.2.el6.x86_64|2.6.32-754.29.2.el6.x86_64|2.6.32-754.6.3.el6.x86_64|2.6.32-754.22.1.el6.x86_64|
+        |2.6.32-754.30.2.el6.x86_64|2.6.32-754.9.1.el6.x86_64|2.6.32-754.23.1.el6.x86_64|2.6.32-754.33.1.el6.x86_64|
+        |2.6.32-754.10.1.el6.x86_64|2.6.32-754.24.2.el6.x86_64|2.6.32-754.35.1.el6.x86_64|2.6.32-754.11.1.el6.x86_64|
+        |2.6.32-754.24.3.el6.x86_64|2.6.32-754.39.1.el6.x86_64|2.6.32-754.12.1.el6.x86_64|2.6.32-754.25.1.el6.x86_64|
+        |2.6.32-754.41.2.el6.x86_64|2.6.32-754.14.2.el6.x86_64|2.6.32-754.27.1.el6.x86_64|2.6.32-754.15.3.el6.x86_64|
+        |2.6.32-754.28.1.el6.x86_64|
 
-    For Red Hat Enterprise Linux 6 and CentOS 6, the list of supported kernel versions are:
-       - For 6.7: 2.6.32-573.* 
-       - For 6.8: 2.6.32-642.* 
-       - For 6.9: 2.6.32-696.* 
-       - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.41.2:
+    > [!NOTE]
+    > After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that that are listed in this section are provided for technical upgrade support only.
 
- > [!NOTE]
- > After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that that are listed in this section are provided for technical upgrade support only.
+  - For rest of the supported distributions, minimum kernel version required is 3.10.0-327
 
-    List of versions:
+- Event provider mechanism
+  - Red Hat Enterprise Linux 6 and CentOS 6: `Talpa` kernel module based solution
+  - For rest of the supported distributions: `Fanotify`
+    - The `fanotify` kernel option must be enabled
 
-    - 2.6.32-754.2.1.el6.x86_64 
-    - 2.6.32-754.17.1.el6.x86_64
-    - 2.6.32-754.29.1.el6.x86_64
-    - 2.6.32-754.3.5.el6.x86_64 
-    - 2.6.32-754.18.2.el6.x86_64
-    - 2.6.32-754.29.2.el6.x86_64
-    - 2.6.32-754.6.3.el6.x86_64 
-    - 2.6.32-754.22.1.el6.x86_64
-    - 2.6.32-754.30.2.el6.x86_64
-    - 2.6.32-754.9.1.el6.x86_64 
-    - 2.6.32-754.23.1.el6.x86_64
-    - 2.6.32-754.33.1.el6.x86_64
-    - 2.6.32-754.10.1.el6.x86_64
-    - 2.6.32-754.24.2.el6.x86_64
-    - 2.6.32-754.35.1.el6.x86_64
-    - 2.6.32-754.11.1.el6.x86_64
-    - 2.6.32-754.24.3.el6.x86_64
-    - 2.6.32-754.39.1.el6.x86_64
-    - 2.6.32-754.12.1.el6.x86_64
-    - 2.6.32-754.25.1.el6.x86_64
-    - 2.6.32-754.41.2.el6.x86_64
-    - 2.6.32-754.14.2.el6.x86_64
-    - 2.6.32-754.27.1.el6.x86_64
-    - 2.6.32-754.15.3.el6.x86_64
-    - 2.6.32-754.28.1.el6.x86_64       
-
-
-- Minimum kernel version 3.10.0-327
-
-- The `fanotify` kernel option must be enabled
-
-  > [!CAUTION]
-  > Running Defender for Endpoint on Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system.
+      > [!CAUTION]
+      > Running Defender for Endpoint on Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system.
 
 - Disk space: 1 GB
 
