@@ -90,7 +90,7 @@ If you follow this guidance, you will enroll devices into management using Intun
 The following illustration details how this works using Intune.
 <br>
 
-![Microsoft 365 Zero Trust deployment stack](../media/devices/devices-enroll-onboard-process.png#lightbox)
+![Process for enrolling and onboarding devices](../media/devices/devices-enroll-onboard-process.png#lightbox)
 
 In the illustration:
 1. Enroll devices into management with Intune.
