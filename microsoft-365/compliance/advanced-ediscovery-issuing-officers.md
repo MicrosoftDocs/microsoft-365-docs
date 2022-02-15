@@ -58,4 +58,4 @@ After you add users as issuing officers, you or other users will be able to spec
 
 3. Select one or more users in the issuing officers list, and then click **Delete**.
 
-After you delete users from the list of issuing officers, those users can no longer be specified as an issuing officer in new custodian communications, unless the user is a member of the specific case the communication is being issued from. Also, removing an issuing officer won't affect any communications that were previously sent before the using was removed as an issuing officer.
+After you delete users from the list of issuing officers, those users can no longer be specified as an issuing officer in new custodian communications, unless the user is a member of the specific case the communication is being issued from. Also, removing an issuing officer won't affect any communications that were sent before the user was removed as an issuing officer.
