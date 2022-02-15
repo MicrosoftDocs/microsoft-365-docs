@@ -55,15 +55,15 @@ To inactivate the tenant or view and manage tags, select the three dots next to 
 
 The following table shows the different statuses and their meaning.
 
-| Status                                | Description                                         |
-|---------------------------------------|-----------------------------------------------------|
-| Active                                | Onboarding and data flow has started.               |
-| Inactive                              | Tenant is no longer active.                         |
-| In process                            | Tenant discovered, but not fully onboarded.         |
-| Ineligible, Delegated access required | Delegated Admin Privileges (DAP) setup is required. |
-| Ineligible, Missing required license  | Tenant does not have required license.              |
-| Ineligible, User count exceeded       | Tenant has more users than allowed.                 |
-| Ineligible, Contract type             | Tenant does not have a contract.                    |
+| Status                                   | Description                                                                                             |
+|------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| Active                                   | Tenant onboarding and data flow have started.                                                           |
+| Inactive                                 | Tenant was offboarded at the request of the MSP and is no longer being managed in Lighthouse.           |
+| In process                               | Tenant discovered but not fully onboarded.                                                              |
+| Ineligible - DAP or GDAP isn't set up    | Partner must have delegated (DAP) or granular delegated (GDAP) admin privileges set up with the tenant. |
+| Ineligible - Required license is missing | Tenant doesn't have the required license.                                                               |
+| Ineligible - User count exceeded         | Tenant has more users than allowed.                                                                     |
+| Ineligible - Geo check failed            | Partner and customer must reside in the same geographic location.                                       |
 
 Once you inactivate a tenant, you can't take action on the tenant until the inactivation process completes. It may take up to 48 hours for inactivation to complete. If you decide to reactivate a tenant, it may take up to 48 hours for data to reappear.
 
@@ -93,9 +93,9 @@ The Tenant overview card provides information about the tenant from its Microsof
 | Tenant Information    | Description|
 |-----------------------|------------------|
 | Headquarters    | Where the tenant is located.|
-| Industry    |The organization’s industry.|
-| Website    |The organization’s website. You may edit this field if no data is provided.|
-| Customer domain    |The organization’s domain.|
+| Industry    |The organization's industry.|
+| Website    |The organization's website. You may edit this field if no data is provided.|
+| Customer domain    |The organization's domain.|
 | Total users    |The number of users assigned in the tenant. You may select this number to open the Users page for that tenant.|
 | Total devices|The number of devices enrolled in the tenant. You may select this number to open the Devices page for that tenant.|
 
@@ -120,12 +120,12 @@ Lighthouse provides insights into Microsoft 365 services usage, including how ma
 The Microsoft 365 Usage card contains two sections:
 
 - Microsoft 365 Lighthouse-enabled services – Services that can be managed within the Lighthouse portal.
-- Additional Microsoft 365 services – Services that are included in the Microsoft 365 suite but can’t be managed within the Microsoft 365 Lighthouse portal at this time.
+- Additional Microsoft 365 services – Services that are included in the Microsoft 365 suite but can't be managed within the Microsoft 365 Lighthouse portal at this time.
 
 
 ### Deployment Plans tab
 
-The Deployment Plans tab provides status on a tenant’s deployment plan. The deployment steps in the list are based on the baseline applied to the tenant. To see deployment step details, select a deployment step from the list.
+The Deployment Plans tab provides status on a tenant's deployment plan. The deployment steps in the list are based on the baseline applied to the tenant. To see deployment step details, select a deployment step from the list.
 
 The Deployment Plans tab also includes the following options:
 
