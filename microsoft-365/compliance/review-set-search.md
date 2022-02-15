@@ -74,11 +74,11 @@ There are multiple types of filters:
 
 - **Search options**: A search options filter provides a list of possible values (each value is displayed with a checkbox that you can select) for particular fields in the review. This filter is used for fields, such as "Sender", where there's a finite number of possible values in the review set.
 
-- **Keyword**: A keyword condition is a specific instance of freetext condition that you can use to search for terms. You can also use KQL-like query language in this type of filter. For more information, see the Query language and Advanced query builder sections in this topic.
+- **Keyword**: A keyword condition is a specific instance of freetext condition that you can use to search for terms. You can also use KQL-like query language in this type of filter. For more information, see the Query language and Advanced query builder sections in this article.
 
 ## Include and exclude filter relationships
 
-You have the option to change the include and exclude relationship for a particular filter. For example, in the Tag filter, you can exclude items that are tagged with a particular tag by selecting **Equals none of** in the dropdown filter. 
+You can change the include and exclude relationship for a particular filter. For example, in the Tag filter, you can exclude items that are tagged with a particular tag by selecting **Equals none of** in the dropdown filter. 
 
 ![Exclude tag filter.](../media/TagFilterExclude.png)
 
@@ -114,4 +114,20 @@ You can also build more advanced queries to search for documents in a review set
 
 ## Filter partially indexed items
 
-If you selected the option to add partially indexed items from additional data sources when you committed the draft collection to a review set, you can use a filter to view only those items. This capability makes it easier to use the document metadata to help you determine if an item might be relevant to your investigation and whether you need to remediate the error that resulted in the item being partially indexed. 
+If you selected the option to add partially indexed items from additional data sources when you committed the draft collection to a review set. You'll probably want to identify and view those items to determine if an item might be relevant to your investigation and whether you need to remediate the error that resulted in the item being partially indexed.
+
+At this time, there isn't a filter option in a review set to display partially indexed items. But we're working on it. Until then, here's a way you can filter and display the partially indexed items that you added to a review set.
+
+1. Create a collection and commit it to a new review set *without* adding partially indexed items from the additional data sources.
+
+2. Create a new collection by copying the collection from step 1.
+
+3. Commit the new collection to the same review set. But this time, add the partially indexed items from the additional data sources. Because items from the collection you created in step 1 have already been added to the review set, only the partially indexed items from the second collection are added to the review set.
+
+4. After both collections are added to the review set, go to the review set, and select **Manage** > **Load sets**.
+
+5. Copy or make note of the **Load Id** for the second collection (the one you created in step 2). The collection name is identified in the **Source info** column.
+
+6. Back in the review set, click **Filter**, expand the **IDs** section, and then select the **Load Id** checkbox.
+
+7. Expand the **Load Id** filter, and then select the checkbox for the load Id that corresponds to the second collection to display the partially indexed items.

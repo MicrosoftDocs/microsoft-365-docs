@@ -117,13 +117,13 @@ The statistics displayed on the **Search statistics** tab are the same statistic
 
 When you run a draft collection, an estimate of the number of items (and their total size) that meet the collection criteria is displayed on the **Summary** tab and in **Collection estimates** section of the **Search statistics** tab. After you commit a draft collection to a review set, the actual number of items (and their total size) added the review set are often different from the estimates. In most cases, more items are added to the review set than were estimated from the draft collection. The following list describes the most common reasons for these differences and tips for identifying them:
 
-- **Child items**. Child items that are extracted from their parent items and added as individual files. The number of child items may significantly increase the number of items that are actually added to the review set. In general, the number of parent items identified in the **Collection contents** section on the **Summary** tab of a committed collection should be equal to the number of estimated items from the draft collection.
+- **Child items**. Child items (such as files attachments and cloud attachments) that are extracted from their parent items and added as individual files. The number of child items may increase the number of items that are actually added to the review set. In general, the number of parent items identified in the **Collection contents** section on the **Summary** tab of a committed collection should be equal to the number of estimated items from the draft collection.
 
 - **Duplicate items**. Items from the draft collection that have already been added to the review set in a previous collection won't be added. As previously explained, the number of duplicate items in the collection is displayed in the **Collection contents** section on the **Summary** tab.
 
 - **Collection configuration options**. When you commit a draft collection to a review set, you have to option to include conversation threads, cloud attachments, and document versions. Any of these items that are added to the review set aren't included in the estimates of the draft collection. They're identified and collected only when you commit the collection. Selecting these options will most likely increase the number of items added to the review set. 
 
-    For example, multiple versions of SharePoint documents aren't included in the estimate for the draft collection. But if you select the option to include all document versions when you export the search results, which will increase the actual number (and total size) of items added to the review set. 
+    For example, multiple versions of SharePoint documents aren't included in the estimate for the draft collection. But if you select the option to include all document versions when you commit a draft collection, the actual number (and total size) of items added to the review set will increase.
 
     For more information about these options, see [Commit a draft collection to a review set](commit-draft-collection.md#commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery). 
 
