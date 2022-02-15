@@ -47,14 +47,15 @@ This article also includes information about [how to offboard a device](#what-if
 
 ## Device onboarding methods
 
+The following table describes the main device onboarding methods you'll use in Defender for Business. The device onboarding experience in Defender for Business was built on the same device onboarding processes that are used in Microsoft Defender for Endpoint. To view more detailed information about device onboarding in Defender for Endpoint, see [Onboard devices and configure Microsoft Defender for Endpoint capabilities](../defender-endpoint/onboard-configure.md).
+
 | Onboarding method  | Description  |
 |---------|---------|
 | **Automatic onboarding**<br/>(*available to customers who are already using Microsoft Endpoint Manager*) | If your organization is using Microsoft Intune (part of Microsoft Endpoint Manager) to manage devices, and you have already enrolled devices in Microsoft Intune, automatic onboarding can make it easier to onboard Windows devices to Defender for Business.<br/><br/>Automatic onboarding sets up a connection between Defender for Business (preview) and Microsoft Endpoint Manager, and then onboards Windows devices to Defender for Business (preview). You'll see the option to onboard all or some Windows devices while you are using the setup and configuration wizard in Defender for Business (preview). See step 3 in [Overview of the wizard](mdb-use-wizard.md#overview-of-the-wizard).<br/><br/>If you're not already using Endpoint Manager, or if you have non-Windows devices to onboard, use one of the manual device onboarding options that are available in Defender for Business (preview). |
 | **Local script**<br/>(*recommended during preview; useful for onboarding a few devices at a time*)  | During preview, you can onboard devices in Defender for Business (preview) by using a script that you download and run on Windows 10 or 11, macOS, and Linux devices. Running the script on a device creates a trust with Azure Active Directory (Azure AD) and enrolls the device with Microsoft Intune. The process is similar to that of [onboarding devices to Microsoft Defender for Endpoint](../defender-endpoint/onboarding.md).<br/><br/>To use this method, see [Onboard Windows devices using a local script](../defender-endpoint/configure-endpoints-script.md) and [Onboarding and configuration tool options](../defender-endpoint/onboard-configure.md#onboarding-and-configuration-tool-options). |
 | **Microsoft Intune** or **Microsoft Endpoint Manager**<br/>(*available to customers who are already using Microsoft Intune or Endpoint Manager*) | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) is now part of Microsoft Endpoint Manager. If you were already using Mobile Device Management, Microsoft Intune, or Endpoint Manager before you got Defender for Business (preview), you can continue to use Endpoint Manager to onboard and manage devices. <br/><br/>To use this method, see [Onboard Windows devices using Mobile Device Management tools](../defender-endpoint/configure-endpoints-mdm.md). |
 | **Group Policy** | [Group Policy](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831791(v=ws.11)) is an infrastructure that allows you to specify managed configurations for users and computers through Group Policy settings and Group Policy Preferences. A Group Policy object (GPO) is a logical object composed a Group Policy container and a Group Policy template. If your organization is already using Group Policy, you can create GPOs and apply them to your organization's devices in Defender for Business (preview).<br/><br/>To learn more about this method, see [Onboard Windows devices using Group Policy](../defender-endpoint/configure-endpoints-gp.md). | 
-| **System Center Configuration Manager** | System Center Configuration Manager (now part of Microsoft Endpoint Manager) can help you onboard and monitor Windows 10 or later clients through policies. You can deploy a Microsoft Defender policy to a target collection or multiple collections. <br/><br/>To learn more about this method, see [Onboard Windows devices using Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md).  |
-| **VDI onboarding script** | If your organization is using non-persistent virtual desktop infrastructure (VDI) devices, you can onboard those endpoints using a downloadable script. <br/><br/>To learn more about this method, see [Onboard non-persistent VDI devices](../defender-endpoint/configure-endpoints-vdi.md).  |
+
 
 ## How to onboard devices in the Microsoft 365 Defender portal
 
@@ -71,9 +72,9 @@ Follow these steps to onboard devices:
 3. Select an operating system (such as **Windows 10 and 11)**, and then choose an onboarding method (such as **Microsoft Endpoint Manager**, **Local script**, and so on). Follow the guidance provided for the method you selected.
 
 
-| Operating System  | Methods and Guidance  |
-|---------|---------|
-|Row1     |         |
+| Operating System  | Method   | Guidance
+|----|----|----|
+| Windows (client or server)  | Local script    | [Onboard Windows devices using a local script](../defender-endpoint/configure-endpoints-script.md)
 |Row2     |         |
 
 
