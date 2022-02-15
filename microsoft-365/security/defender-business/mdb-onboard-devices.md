@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/07/2022
+ms.date: 02/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -62,31 +62,10 @@ The following table describes the most commonly used methods to onboard devices 
 | **Microsoft Intune** or **Microsoft Endpoint Manager**<br/>(*available to customers who are already using Microsoft Intune or Endpoint Manager*) | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and Mobile Device Management are now part of Endpoint Manager. If you were already using Endpoint Manager before you got Defender for Business (preview), you can opt to continue using Endpoint Manager to onboard and manage devices<br/><br/>To use this method, see [Onboard Windows devices using Mobile Device Management tools](../defender-endpoint/configure-endpoints-mdm.md). |
 | **Group Policy** | [Group Policy](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831791(v=ws.11)) is an infrastructure that allows you to specify managed configurations for users and computers through Group Policy settings and Group Policy Preferences. A Group Policy object (GPO) is a logical object composed a Group Policy container and a Group Policy template. If your organization is already using Group Policy, you can create GPOs and apply them to your organization's devices in Defender for Business (preview).<br/><br/>To learn more about this method, see [Onboard Windows devices using Group Policy](../defender-endpoint/configure-endpoints-gp.md). | 
 
-
-## How to onboard devices in the Microsoft 365 Defender portal
-
-The following video demonstrates the onboarding process for Microsoft Defender for Endpoint. This process is similar to what you'll do in Microsoft Defender for Business. <br/><br/>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
-
-Follow these steps to onboard devices:
-
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
-
-2. In the navigation pane, choose **Settings** > **Endpoints**, and then under **Device management**, choose **Onboarding**.
-
-3. Select an operating system (such as **Windows 10 and 11)**, and then choose an onboarding method (such as **Microsoft Endpoint Manager**, **Local script**, and so on). Follow the guidance provided for the method you selected.
-
-| Operating System  | Method   | Guidance
-|----|----|----|
-| Windows (client or server)  | Local script    | [Onboard Windows devices using a local script](../defender-endpoint/configure-endpoints-script.md)
-|Row2     |         |
-
-
 > [!IMPORTANT]
 > If something goes wrong and your onboarding process fails, see [Microsoft Defender for Business troubleshooting](mdb-troubleshooting.yml).
 
-## Onboard a device using a local script in Defender for Business
+## Onboard devices using a local script in Defender for Business
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
@@ -102,14 +81,12 @@ Follow these steps to onboard devices:
    - macOS devices: [Manual deployment for Microsoft Defender for Endpoint on macOS](../defender-endpoint/mac-install-manually.md#client-configuration)
    - Linux devices: [Deploy Microsoft Defender for Endpoint on Linux manually](../defender-endpoint/linux-install-manually.md#client-configuration)
 
-6. Proceed to [Run a detection test](#run-a-detection-test) for Windows devices.
-
 > [!IMPORTANT]
 > If something goes wrong and your onboarding process fails, see [Microsoft Defender for Business (preview) troubleshooting](mdb-troubleshooting.yml).
 
 ## Onboard devices using Microsoft Intune
 
-If you were already using Microsoft Intune before getting Defender for Business (preview), you can use Microsoft Intune to onboard devices. To get help with this, see [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment).
+If you were already using Microsoft Intune before getting Defender for Business (preview), you can continue to use Microsoft Intune to onboard devices. To get help with this, see [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment).
 
 ## Run a detection test
 
