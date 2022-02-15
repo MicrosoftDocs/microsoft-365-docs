@@ -28,6 +28,13 @@ ms.collection:
 
 With Microsoft Defender for Business (preview), you have several options to choose from for onboarding your organization's devices. This article walks you through your options and includes an overview of how onboarding works.
 
+The device onboarding experience in Defender for Business was built on the same device onboarding processes that are used in Microsoft Defender for Endpoint. Watch the following video to see how it works:<br/><br/>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
+
+> [!TIP]
+> To view more detailed information about device onboarding in Defender for Endpoint, see [Onboard devices and configure Microsoft Defender for Endpoint capabilities](../defender-endpoint/onboard-configure.md).
+
 ## What to do
 
 1. Choose a [device onboarding method](#device-onboarding-methods).
@@ -49,14 +56,6 @@ This article also includes information about [Offboarding a device](#offboarding
 > If something goes wrong while onboarding devices, see [Microsoft Defender for Business (preview) troubleshooting](mdb-troubleshooting.yml). 
 
 ## Device onboarding methods
-
-The device onboarding experience in Defender for Business was built on the same device onboarding processes that are used in Microsoft Defender for Endpoint. Watch the following video to see how it works:<br/><br/>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
-
-> [!TIP]
-> To view more detailed information about device onboarding in Defender for Endpoint, see [Onboard devices and configure Microsoft Defender for Endpoint capabilities](../defender-endpoint/onboard-configure.md).
-> 
 
 The following table describes the most commonly used methods to onboard devices to Defender for Business. 
 
