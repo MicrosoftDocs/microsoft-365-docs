@@ -81,6 +81,35 @@ In this illustration:
 ## Managing change with users
 --->
 
+## Enrolling devices vs. onboarding devices
+If you follow this guidance, you will enroll devices into management using Intune (or another tool) and you will onboard devices for two services:
+- Defender for Endpoint
+- Endpoint DLP
+
+
+The following illustration details how this works using Intune.
+<br>
+
+![Microsoft 365 Zero Trust deployment stack](../media/devices/devices-enroll-onboard-process.png#lightbox)
+
+In the illustration:
+1. Enroll devices into management with Intune.
+2. Use Intune to onboard devices to Defender for Endpoint.
+3. Devices that are onboarded to Defender for Endpoint are also onboarded for Microsoft 365 compliance features, including Endpoint DLP.
+ 
+Note that only Intune is managing devices. Onboarding refers to the ability for a device to share information with a specific service. The following table summarizes the differences between enrolling devices into management and onboarding devices for a specific service.
+
+
+|         |Enroll     |Onboard  |
+|---------|---------|---------|
+|Description     |  Enrollment applies to managing devices. Devices are enrolled for management with Intune or Configuration Manager.        | Onboarding configures a device to work with a specific set of capabilities in Microsoft 365. Currently, onboarding applies to Microsoft Defender for Endpoint and Microsoft compliance capabilities. <br><br>On Windows devices, onboarding involves toggling a setting in Windows Defender that allows Defender to connect to the online service and accept policies that apply to the device.        |
+|Scope     | These device management tools manage the entire device, including configuring the device to meet specific objectives, like security.        |Onboarding only affects the services that apply.     |
+|Recommended method     | Azure Active Directory join automatically enrolls devices into Intune.        | Intune is the preferred method for onboarding devices to Windows Defender for Endpoint, and consequently Microsoft 365 compliance capabilities.<br><br>Note that devices that are onboarded to Microsoft 365 compliance capabilities using other methods are not automatically enrolled for Defender for Endpoint.        |
+|Other methods     |   Other methods of enrollment depend on the platform of the device and whether it is BYOD or managed by your organization.      | Other methods for onboarding devices include, in recommended order:<br><li>Configuration Manager<li>Other mobile device management tool (if the device is managed by one)<li>Local script<li>VDI configuration package for onboarding non-persistent virtual desktop infrastructure (VDI) devices<li>Group Policy|
+| | |     |
+
+
+
 ## Learning for administrators
 The following resources help administrators learn concepts about using MEM and Intune.
 
