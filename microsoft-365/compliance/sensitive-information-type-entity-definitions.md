@@ -97,7 +97,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 
 ## All full names
 
-This is a bundled named entity which detects full names for people from all supported countries/regions, which include Australia, China, Japan, U.S., and countries in the EU. Use this SIT to detect all possible matches of full names.
+All full names is a bundled named entity. It detects full names for people from all supported countries/regions, which include Australia, China, Japan, U.S., and countries in the EU. Use this SIT to detect all possible matches of full names.
 
 ### Format
 
@@ -113,13 +113,13 @@ No.
 
 ### Description
 
-This named entity SIT matches personal names that a human would identify as a name with high confidence. It uses three primary resources:
+This named entity SIT matches personal names that a human would identify as a name with high confidence. For example, if a string is found consisting of a given name and is followed by a family name then a match is made with high confidence. It uses three primary resources:
 
 -	A dictionary of given names.
 -	A dictionary of family names.
 -	Patterns of how names are formed.
 
-The three resources are different for each country. For example, for names in United States dictionary, if a string is found consisting of a given name and is followed by a family name then a match is made with high confidence. The strings *Olivia Wilson* would trigger a match.Common given/family names are given a higher confidence than rarer names. However, the pattern also allows partial matches. For example a given name from the dictionary followed by an family name that is not in the dictionary, like *Tomas Richard* would trigger a partial match. Partial matches are given lower confidence.
+The three resources are different for each country.  The strings *Olivia Wilson* would trigger a match. Common given/family names are given a higher confidence than rarer names. However, the pattern also allows partial matches. If a given name from the dictionary is found and it's followed by a family name that isn't in the dictionary, then a partial match is triggered. For example, *Tomas Richard* would trigger a partial match. Partial matches are given lower confidence.
 
 In addition, patterns that a human would see as indicative of names are also matched with appropriate confidence. Like *O. Wilson*, *O.P. Wilson*, *Dr. O. P. Wilson*, *Wilson, O.P.* or *T. Richard, Jr.* would be matches.
 
@@ -157,7 +157,7 @@ In addition, patterns that a human would see as indicative of names are also mat
 
 ## All medical terms and conditions
 
-This is a bundled named entity which detects medical terms and medical conditions. It detects English terms only. Use this SIT to detect all possible matches of medical terms and conditions.
+All medical terms and conditions is a bundled named entity that detects medical terms and medical conditions. It detects English terms only. Use this SIT to detect all possible matches of medical terms and conditions.
 
 ### Format
 
@@ -173,7 +173,7 @@ No
 
 ### Description
 
-This bundled named entity matches text that mentions medical conditions that are present in curated dictionaries. There is one curated dictionary per supported language. The dictionaries are from a number of international medical resources. The curated dictionaries incorporate as many medical conditions as possible without risking a large number of false positives. .Each entry contains the different forms that a single condition is commonly written in to ensure coverage, for example:
+This bundled named entity matches text that mentions medical conditions that are present in curated dictionaries. There is one curated dictionary per supported language. The dictionaries are from many international medical resources. The dictionaries include as many medical conditions as possible without risking a large number of false positives. Each entry contains the different forms that a single condition is commonly written in to ensure coverage, for example:
 
 - *TB*
 - *tuberculosis*
@@ -197,7 +197,7 @@ This bundled named entity SIT contains these individual SITs.
 
 ## All Physical Addresses
 
-This is a bundled entity SIT which detects patterns related to physical addresses from all supported countries/regions.
+All physical addresses is a bundled entity SIT, which detects patterns related to physical addresses from all supported countries/regions.
 
 ### Format
 
@@ -213,16 +213,16 @@ No
 
 ### Description
 
-The matching of street addresses is designed to match strings that a human would identify as a street address. To do this it uses several primary resources:
+The matching of street addresses is designed to match strings that a human would identify as a street address. To do this, it uses several primary resources:
 
 -	A dictionary of settlements, counties and regions.
 -	A dictionary of street suffixes, like Road, Street, or Avenue.
 -	Patterns of postal codes.
 -	Patterns of address formats.
 
-The resources are different for each country. The primary resources are the patterns of address formats that are used in a given country. The different formats are chosen to make sure that as many addresses as possible are matched, without risking a high number of false positives. These formats allow flexibility for example, an address may omit the postal code or omit a town name or have a street with no street suffix. In all cases such matches are used to increase the confidence of the match.
+The resources are different for each country. The primary resources are the patterns of address formats that are used in a given country. Different formats are chosen to make sure that as many addresses as possible are matched. These formats allow flexibility, for example, an address may omit the postal code or omit a town name or have a street with no street suffix. In all cases, such matches are used to increase the confidence of the match.
 
-Note that the patterns are designed to match individual single addresses, not generic locations. So strings such as *Redmond, WA 98052* or *Main Street, Albuquerque* will not be matched.
+The patterns are designed to match individual single addresses, not generic locations. So strings such as *Redmond, WA 98052* or *Main Street, Albuquerque* will not be matched.
 
 ### Contains
 
@@ -788,7 +788,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 - First digit is in the range 2-6
 - Ninth digit is a check digit
 - Tenth digit is the issue digit
-- Eleventh digit (optional) is the individual number
+- 11th digit (optional) is the individual number
 
 ### Checksum
 
@@ -9238,7 +9238,7 @@ A DLP policy has low confidence that it's detected this type of sensitive inform
 ### Pattern
 
 12 digits:
-- A digit which is not 0 or 1
+- A digit that is not 0 or 1
 - Three digits
 - An optional space or dash
 - Four digits
