@@ -66,5 +66,5 @@ As you make policy adjustments, make sure you assess your changes against your c
 ## Related content
 
 [What is device enrollment in Intune?](/mem/intune/enrollment/device-enrollment) (article)  
-[Use compliance policies to set rules for devices you manage with Intune](/mem/intune/protect/device-compliance-get-started) (article) 
+[Use compliance policies to set rules for devices you manage with Intune](/mem/intune/protect/device-compliance-get-started) (article)  
 [Overview of using baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)
