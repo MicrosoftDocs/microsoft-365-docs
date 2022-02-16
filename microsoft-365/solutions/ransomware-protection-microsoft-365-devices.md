@@ -35,11 +35,11 @@ To help protect devices (endpoints) against the initial access part of a ransomw
 To help protect against the lateral movement part of an attack from a Windows 11 or 10 device:
 
 - [Turn on Microsoft Defender Firewall](https://support.microsoft.com/windows/turn-microsoft-defender-firewall-on-or-off-ec0844f7-aebd-0583-67fe-601ecf5d774f).
-- [Update Microsoft Defender Antivirus definitions](/en-us/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus).
+- [Update Microsoft Defender Antivirus definitions](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus).
 
 To reduce the impact of the attack:
 
-- Use [advanced protection](/Microsoft-365/security/defender-endpoint/attack-surface-reduction#use-advanced-protection-against-ransomware) against ransomware.
+- Use [attack surface reduction rules and advanced protection against ransomware](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-reference#use-advanced-protection-against-ransomware).
 
 To help protect against an attacker evading your security defenses:
 
@@ -60,7 +60,7 @@ To help protect against an attacker executing code as part of an attack:
 
 As you implement these protections, perform change management for the following:
 
-- The [Common identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies) can deny access to users who have non-compliant devices.
+- The [common Zero Trust identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies) can deny access to users who have non-compliant devices.
 - Downloading files might warn users before the download or it might be blocked.
 - Some Office, Excel 4.0, XLM, or VBA macros might no longer run.
 

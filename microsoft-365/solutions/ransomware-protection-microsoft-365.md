@@ -71,13 +71,13 @@ Files in SharePoint and OneDrive for Business are protected by:
 
    If the ransomware creates a new encrypted copy of the file and deletes the old file, customers have 93 days to restore it from the recycle bin. After 93 days, there is a 14-day window where Microsoft can still recover the data. 
   
-   To minimize the burden on your security and helpdesk staff, train your users on how to [restore files from the recycle bin](https://support.microsoft.com/en-us/office/restore-deleted-items-from-the-site-collection-recycle-bin-5fa924ee-16d7-487b-9a0a-021b9062d14b).
+   To minimize the burden on your security and helpdesk staff, train your users on how to [restore files from the recycle bin](https://support.microsoft.com/office/restore-deleted-items-from-the-site-collection-recycle-bin-5fa924ee-16d7-487b-9a0a-021b9062d14b).
 
-- [Files Restore](https://techcommunity.microsoft.com/t5/microsoft-onedrive-blog/announcing-new-onedrive-for-business-feature-files-restore/ba-p/147436)
+- [Files Restore](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15)
 
    A complete self-service recovery solution for SharePoint and OneDrive that allows administrators and end users to restore files from any point in time during the last 30 days.
 
-   To minimize the burden on your security and IT helpdesk staff, train your users on [Files Restore](https://techcommunity.microsoft.com/t5/microsoft-onedrive-blog/announcing-new-onedrive-for-business-feature-files-restore/ba-p/147436).
+   To minimize the burden on your security and IT helpdesk staff, train your users on [Files Restore](https://support.microsoft.com/office/restore-your-onedrive-fa231298-759d-41cf-bcd0-25ac53eb8a15).
 
 
 For OneDrive and SharePoint files, Microsoft can roll back to a previous point in time for up to 14 days if you are hit by a mass attack.
@@ -114,7 +114,7 @@ You can prevent a ransomware attacker from copying files outside your tenant wit
 
     Block downloads of sensitive information such as files. 
 
-    You can also use session policies for [Microsoft Defender for Cloud Apps Conditional Access App Control](/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization) to monitor the flow of information between a user and an application in real time.
+    You can also use session policies for [Defender for Cloud Apps Conditional Access App Control](/cloud-app-security/tutorial-dlp#how-to-discover-and-protect-sensitive-information-in-your-organization) to monitor the flow of information between a user and an application in real time.
 
 ## What’s in this solution
 

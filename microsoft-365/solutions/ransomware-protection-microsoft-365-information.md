@@ -75,7 +75,7 @@ You can ensure strict permissions in your tenant with these steps:
 3. Perform change management for your users so that future locations for sensitive information are created and maintained with strict permissions.
 4. Audit and monitor the locations for sensitive information to ensure that broad permissions aren't being granted.
 
-See [Set up secure collaboration with Microsoft 365 and Microsoft Teams](setup-secure-collaboration-with-teams.md) for detailed guidance. An example of a communication and collaboration venue with strict permissions for sensitive information is a [team with security isolation](/microsoft-365/solutions/secure-teams-security-isolation).
+See [Set up secure file sharing and collaboration with Microsoft Teams](setup-secure-collaboration-with-teams.md) for detailed guidance. An example of a communication and collaboration venue with strict permissions for sensitive information is a [team with security isolation](/microsoft-365/solutions/secure-teams-security-isolation).
 
 ## Protect your sensitive information
 
