@@ -61,8 +61,8 @@ To select a template:
 
 2. Select a case, click the **Communications** tab, and then click **New communication**.
 
-3. On the **Name communication** page, use the **Select the communication** drop-down list to select a communications template to use to create the custodian notification.
+3. On the **Name communication** page, use the **Select communication template** drop-down list to select a communications template to use to create the custodian notification.
 
    The list of templates in your organization's Communication library is displayed in the drop-down list.
 
-   ![Templates from Communications library displayed in drop-down list.](..\media\AeDCommunicationsTemplates1.png)
+   ![Templates from Communications library displayed in the drop-down list.](..\media\AeDCommunicationsTemplates1.png)
