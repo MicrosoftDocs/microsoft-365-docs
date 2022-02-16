@@ -49,7 +49,7 @@ To view audit logs, you must have one of the following permissions:
 
 3. Select a log from the list to see full details, including the **Request** body.
 
-To export log data to a comma-separated values (.csv) file, select **Export**.
+    To export log data to a comma-separated values (.csv) file, select **Export**.
 
 ## Activities
 
