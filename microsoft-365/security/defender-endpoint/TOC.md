@@ -261,7 +261,7 @@
 
 ### [Network devices](network-devices.md)
 
-#### [Devices inventory]()
+### [Devices inventory]()
 ##### [View and organize the Device inventory](machines-view-overview.md)
 ##### [Device timeline event flags](device-timeline-event-flag.md)
 ##### [Manage device group and tags](machine-tags.md)
