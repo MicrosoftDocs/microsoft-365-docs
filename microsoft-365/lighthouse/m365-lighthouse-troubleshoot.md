@@ -52,7 +52,7 @@ This article describes error messages and problems that you might encounter whil
 
   - Must have at least one Microsoft 365 Business Premium or Microsoft 365 E3 license
 
-  - Must have no more than 1000 licensed Azure Active Directory (Azure AD) users 
+  - Must have no more than 1000 licensed users 
 
 **Resolution:** The following table describes the different tenant statuses that require action and explains how to resolve them.
 
