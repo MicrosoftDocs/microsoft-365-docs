@@ -17,7 +17,7 @@ You can submit support tickets or feedback requests to Microsoft using the Micro
 
 ## Open a new support request
 
-Support requests are triaged and managed according to severity outlined in the [severity definition table](#sev). Feedback is reviewed and a response provided where requested.
+Support requests are triaged and managed according to severity outlined in the [severity definition table](#support-request-severity-definitions). Feedback is reviewed and a response provided where requested.
 
 **To open a new support request:**
 
@@ -25,7 +25,7 @@ Support requests are triaged and managed according to severity outlined in the [
 2. In the **Microsoft Managed Desktop** section, select **Service requests**.
 3. In the **Service requests** section, select **+ New support request**.
 4. Select the **Request type** that matches the help you need. The table below outlines the options.
-5. Select the **Severity** level. For more information, see [Support request severity definitions](#sev).
+5. Select the **Severity** level. For more information, see [severity definition table](#support-request-severity-definitions).
 6. Provide as much information about the request as possible to help the team respond quickly. Depending on the type of request, you may be required to provide different details.
 7. Review all the information you provided for accuracy.
 8. When you're ready, select **Create**.
@@ -75,8 +75,6 @@ Once a case is resolved, it can no longer be edited. If a request has been resol
 We appreciate your feedback and use it to improve the admin support experience.
 
 When you're the primary contact on for a support request, you'll receive an email from Microsoft Managed Desktop Operations. The email will ask about your experience after your issue has been resolved. Feedback is actively monitored and shared with engineering to improve the service and prioritize future features. Be sure to focus on your experience and not include personal information in the feedback form. For more information about privacy, see the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
-
-<span id="sev" />
 
 ## Support request severity definitions
 
