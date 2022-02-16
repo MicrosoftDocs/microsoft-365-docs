@@ -262,10 +262,10 @@
 ### [Network devices](network-devices.md)
 
 ### [Devices inventory]()
-##### [View and organize the Device inventory](machines-view-overview.md)
-##### [Device timeline event flags](device-timeline-event-flag.md)
-##### [Manage device group and tags](machine-tags.md)
-##### [Exclude devices](exclude-device.md)
+#### [View and organize the Device inventory](machines-view-overview.md)
+#### [Device timeline event flags](device-timeline-event-flag.md)
+#### [Manage device group and tags](machine-tags.md)
+#### [Exclude devices](exclude-device.md)
 
 ### [Host firewall reporting in Microsoft Defender for Endpoint](host-firewall-reporting.md)
 
