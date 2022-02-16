@@ -49,7 +49,7 @@ To view audit logs, you must have one of the following permissions:
 
 3. Select a log from the list to see full details, including the **Request** body.
 
-To export log data to a comma-separated values (.csv) file, select **Export** .
+To export log data to a comma-separated values (.csv) file, select **Export**.
 
 ## Activities
 
@@ -73,7 +73,7 @@ The following table lists activities captured within Lighthouse audit logs. The 
 | **restartDevice** | Devices | Restart | MEM |
 | **syncDevice** | Devices | Sync | MEM |
 | **rebootNow** | Threat management | Reboot | MEM |
-| **reprovision** | Windows 365 | Retry Provisioning | Windows 365 |
+| **reprovision** | Windows 365 | Retry provisioning | Windows 365 |
 | **windowsDefenderScanFull** | Threat management | Full scan | MEM |
 | **windowsDefenderScan** | Threat management | Quick scan | MEM |
 | **windowsDefenderUpdateSignatures** | Threat management | Update antivirus | MEM |
