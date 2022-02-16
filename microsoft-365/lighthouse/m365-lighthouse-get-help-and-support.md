@@ -44,38 +44,35 @@ If you're experiencing an issue that isn't listed in either of the Service healt
 
 - To create and manage service requests, you must have at least one Azure Active Directory (Azure AD) role assigned to you with the following property set: **microsoft.office365.supportTickets/allEntities/allTasks**. For a list of Azure AD roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). For information on how to assign roles, see [Assign Azure AD roles to users](/azure/active-directory/roles/manage-roles-portal).
 
-- If you need to create a service request, gather as many details as possible about the issue, such as diagnostic log files, tenant ID, and user IDs (if specific users are affected).
+- If you need to create a service request, gather as many details as possible about your issue, such as diagnostic logs, tenant ID, and user IDs (if specific users are affected).
 
 ## Access help and support
 
 1.  In Lighthouse, select the **?** icon at the top of the portal to open the **Help** pane, and then do one of the following:
     
-    -  If you're *not* experiencing an issue with data failing to load in Lighthouse, go to the next step.
-    -  If you're experiencing an issue with data failing to load in Lighthouse, follow these steps to create a log file to help Support agents troubleshoot the issue:
+    -  If you're on the page of the portal where the issue occurred, select **Show diagnostics**.
 
-        1. Press F12 to open DevTools in a browser window.
-        1. Select the **Network** tab.
-        1. On the toolbar, select **Preserve log**.
-        1. In Lighthouse, perform the same action that previously failed.
-        1. On the toolbar, select the export button :::image type="icon" source="../media/m365-lighthouse-get-help-and-support/devtools-exporthar-icon.png" border="false"::: to create an HTTP Archive (HAR) log file that contains trace information from your browser session.
-        1. Save the HAR file so you can attach it to your service request.
-            > [!NOTE]
-            > The HAR file may contain sensitive information, so make sure you store the file securely.
+        This will create a JSON file with information to help Support agents troubleshoot your issue. Save the file so you can attach it to your service request.
+
+        > [!NOTE]
+        > The JSON file will contain personally identifiable information.
+
+    -  If your issue isn't isolated to the current page of the portal, go to the next step.
 
 2.  In the **Help** pane, select the **Help + support** button. This opens the **How can we help?** pane.
 
     > [!NOTE]
     > If the **How can we help?** pane doesn't open, you'll need to reach out to someone in your partner tenant who has Global Administrator permissions and ask them to help.
 
-3.  In the **How can we help?** pane, enter a description of the issue, and then press **Enter**. We recommend including the full product name *Microsoft 365 Lighthouse* in your description to make sure the search results include relevant help articles.
+3.  In the **How can we help?** pane, enter a description of your issue, and then press **Enter**. We recommend including the full product name *Microsoft 365 Lighthouse* in your description to ensure the search results include relevant help articles.
 
-4.  Check out the list of recommended articles to see if any of them help resolve the issue.
+4.  Check out the list of recommended articles to see if any of them help resolve your issue.
 
-    If you enter a description of the issue and it doesn't return a list of help articles, rephrase your description and try another search.
+    If you enter a description of your issue and it doesn't return a list of help articles, rephrase your description and try another search.
 
 5.  If the recommended articles don't help, select **Contact Support**.
 
-6.  Fill out the information in the form, attach any screenshots and the HAR file that you saved in step&nbsp;1 if applicable, and then select **Contact me**. The expected wait time is indicated in the pane.
+6.  Fill out the information in the form, attach any screenshots and the JSON file that you saved in step&nbsp;1 if applicable, and then select **Contact me**. The expected wait time is indicated in the pane.
 
 ## Related content
 
