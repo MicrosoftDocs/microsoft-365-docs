@@ -37,23 +37,20 @@ With Microsoft Defender for Business (preview), you have several options to choo
 
 ## What to do
 
-1. See the [device onboarding method](#device-onboarding-methods).
+1. See your options for [onboarding devices](#device-onboarding-methods).
 
-2. Onboard a device by using:
+2. Onboard a device by using one of the following methods:
     - [Automatic onboarding for Windows devices enrolled in Microsoft Endpoint Manager](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)
     - [A local script for Windows, macOS, and Linux devices](#onboard-devices-using-a-local-script-in-defender-for-business)
     - [Microsoft Endpoint Manager for computers, tablets, and phones](#onboard-devices-using-microsoft-endpoint-manager)
     - [Group Policy for Windows devices](#onboard-windows-devices-using-group-policy)
     - [Another method not listed here](#onboard-devices-using-a-method-not-listed-here)
 
-3. [Run a detection test](#run-a-detection-test) for newly onboarded devices.
+3. [Run a detection test](#run-a-detection-test) for newly onboarded Windows devices.
 
-4. [See next steps](#next-steps). 
+4. [See your next steps](#next-steps). 
 
 This article also includes information about [Offboarding a device](#offboarding-a-device).
-
-> [!TIP]
-> If something goes wrong while onboarding devices, see [Microsoft Defender for Business (preview) troubleshooting](mdb-troubleshooting.yml). 
 
 ## Device onboarding methods
 
