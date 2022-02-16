@@ -44,7 +44,7 @@ To view audit logs, you must have one of the following permissions:
 
     - **Date range** - Previous month, week, or day.
     - **Tenants** - Tenant tags or customer tenant names.
-    - **Activity** - Microsoft 365 activity type that corresponds to the action taken. For more information, see the [Activity types](#activity-types) table.
+    - **Activity** - Microsoft 365 activity type that corresponds to the action taken. For more information, see the [Activity types](#activities) table.
     - **Initiated by** -  Who initiated the action.
 
 3. Select a log from the list to see full details, including the **Request** body.
