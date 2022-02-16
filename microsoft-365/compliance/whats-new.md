@@ -36,6 +36,27 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 >
 > And visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to learn about Microsoft 365 features that were launched, are rolling out, are in development, have been cancelled, or previously released.
 
+## January 2022
+
+### Microsoft Information Governance
+
+- The [Microsoft Information Governance in Microsoft 365](manage-information-governance.md) page and section of the documentation is substantially revised and restructured to help you more easily find information that relates to the solutions you configure in the Microsoft 365 compliance center: Data Connectors, Information Governance, and Records Management. As part of this revision, the documentation provides a clearer distinction for the retention scenarios for information governance vs. records management.
+- [Learn about information governance](information-governance.md) - new, to support the restructure.
+- [Get started with information governance](get-started-with-information-governance.md) - new, to replace "Get started with retention", this article includes getting started steps for all information governance capabilities, which include retention.
+- [Create retention labels for exceptions to your retention policies](create-retention-labels-information-governance.md) - new, identified scenario for using retention labels for information governance rather than records management.
+- [Learn about archive mailboxes](archive-mailboxes.md) - new, to support the restructure, contains conceptual information that was previously in Enable archive mailboxes.
+
+### Microsoft Priva
+
+- [Privacy management is now Microsoft Priva](/privacy/priva/priva-overview) - updated to rebrand the product and its solutions, Priva Privacy Risk Management and Priva Subject Rights Requests.
+
+### Sensitivity labels
+
+- Support for the new [MIP role groups and roles](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels), now in preview.
+- New [monitoring capabilities](apply-sensitivity-label-automatically.md#monitoring-your-auto-labeling-policy) for auto-labeling policies.
+- Now rolling out: default label for existing documents in Current Channel (Preview), and justification text for Office on the web.
+- Announced for the July Semi-Annual Enterprise Channel with version 2202+: Co-authoring and auditing for Outlook.
+
 ## December 2021
 
 ### Compliance and service assurance
@@ -266,73 +287,3 @@ Datacenter asset management
 - Default labels are now extended to [Power BI (in preview)](/power-bi/admin/service-security-sensitivity-label-default-label-policy).
 - Auditing events for Outlook on the web that [surface in activity explorer](data-classification-activity-explorer-available-events.md) are now fully rolled out, which means that user activity for built-in labels is now available for all Office apps across all platform.
 - The [supported capabilities tables](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) have a new footnote for Windows to clarify that the minimum versions are for the Current Channel, and a tip to more easily compare older versions that omit leading zeros against newer versions.
-
-## July 2021
-
-### Advanced eDiscovery
-
-- [Advanced eDiscovery workflow for content in Microsoft Teams](teams-workflow-in-advanced-ediscovery.md) added an end-to-end workflow of managing Teams content in Advanced eDiscovery; includes details about the preview of the new conversation transcript functionality.
-- [Use the new case format in Advanced eDiscovery](advanced-ediscovery-new-case-format.md) added a preview of the new case format that extends review set and case limits and supports conversation transcripts for Teams and Yammer chat conversations.
-
-### App governance
-
-- The [app governance add-on for Microsoft Cloud App Security](app-governance-manage-app-governance.md) (MCAS) has gone into public preview. App governance provides monitoring of OAUth-based apps in your M365 tenant and generates alerts for activity that might represent malware or inappropriate levels of permissions.
-
-### Compliance offerings
-
-- [Compliance offerings](/compliance/regulatory/offering-home) changes focusing on applicable service coverage and updates to align more closely with the [Azure offerings](/azure/compliance) for applicable regulations.
-
-### Compliance & service assurance
-
-- [Service assurance](/compliance/) (updated; quarterly review content updates for certifications and statements of applicability)
-    - Cloud background checks
-    - Employee transfer & termination
-    - Governance
-    - Human resources
-    - Incident management
-    - Pre-employment screening
-    - Security incident management (SIM)
-    - SIM – Containment, eradication, and recovery
-    - SIM – Detection & analysis
-    - SIM – Post-incident reporting
-    - SIM – Preparation
-    - Tenant isolation
-
-### Data classification
-
-- [Learn about data classification](data-classification-overview.md). Updated for GA release of discrimination trainable classifier.
-
-### Data loss prevention
-
-- [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md) added updated guidance on Always audit file activity for devices.
-- [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md) updated for GA release.
-- [Learn about the Microsoft 365 data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md) updated for GA release.
-- [Use the Microsoft 365 data loss prevention on-premises scanner](dlp-on-premises-scanner-use.md) updated for GA release.
-- [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md) updated for GA release and MIP-MCAS integration.
-
-### Insider risk management
-
-- [Investigate insider risk management activities](insider-risk-management-activities.md) added content updates for new User activity reports and new dismiss multiple alerts preview features.
-- [Get started with insider risk management settings](insider-risk-management-settings.md) added content updates for new RBAC functionality to choose reviewers for priority user groups preview feature.
-
-### Privacy management
-
-- Microsoft [privacy management](/privacy/solutions/privacymanagement/privacy-management) has gone into public preview. Privacy management helps your organization understand and manage the personal data in your Microsoft 365 environment, remediate potential privacy risks, and fulfill subject rights requests.
-
-### Retention and records management
-- In preview: [Retention policies for Teams](create-retention-policies.md#retention-policy-for-teams-locations) now supports private channels as a new Teams location when you create or edit a retention policy
-- Instructions for [importing a file plan](file-plan-manager.md#import-retention-labels-into-your-file-plan) are updated to include regulatory records and dependencies are now listed for each entry
-
-### Sensitive information types
-
-The following pages were added:
-
-- [Custom sensitive information type filters reference](sit-custom-sit-filters.md)
-- [Modify a custom sensitive information type using PowerShell](sit-modify-a-custom-sensitive-information-type-in-powershell.md)
-- [Remove a custom sensitive information type using PowerShell](sit-remove-a-custom-sensitive-information-type-in-powershell.md)
-
-### Sensitivity labels
-- Trainable classifiers are now generally available (GA) for [auto-labeling in Office apps](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) for Windows and the web (Office Online)
-- Mandatory labeling is now extended to [Power BI (in preview)](/power-bi/admin/service-security-sensitivity-label-mandatory-label-policy)
-- For [co-authoring for files encrypted with sensitivity labels]( sensitivity-labels-coauthoring.md): Rolling out support for DLP policies that use sensitivity labels as conditions and unencrypted attachments for emails
-- Auditing events for Outlook is now available for macOS, iOS, and Android, and rolling out for Outlook on the web
