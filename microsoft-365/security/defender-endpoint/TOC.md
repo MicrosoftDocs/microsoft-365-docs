@@ -261,6 +261,12 @@
 
 ### [Network devices](network-devices.md)
 
+#### [Devices inventory]()
+##### [View and organize the Device inventory](machines-view-overview.md)
+##### [Device timeline event flags](device-timeline-event-flag.md)
+##### [Manage device group and tags](machine-tags.md)
+##### [Exclude devices](exclude-device)
+
 ### [Host firewall reporting in Microsoft Defender for Endpoint](host-firewall-reporting.md)
 
 ### [Attack surface reduction]()
@@ -413,11 +419,6 @@
 ##### [Investigate a domain](investigate-domain.md)
 ###### [Investigate connection events that occur behind forward proxies](investigate-behind-proxy.md)
 ##### [Investigate a user account](investigate-user.md)
-
-#### [Devices list]()
-##### [View and organize the Devices list](machines-view-overview.md)
-##### [Device timeline event flags](device-timeline-event-flag.md)
-##### [Manage device group and tags](machine-tags.md)
 
 #### [Take response actions]()
 ##### [Take response actions on a device]()
