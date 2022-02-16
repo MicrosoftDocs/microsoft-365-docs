@@ -42,7 +42,7 @@ This article explains how to add and remove users to the list of organization-wi
 
    ![Select Advanced eDiscovery settings](..\media\HistoricalVersions1.png)
 
-2. On the **Settings** page, select the **Issuing officers** tab.
+2. On the **Settings** page, select the **Issuing officers** tab to display the **Manage issuing officers** page.
 
    ![Issuing officers settings page.](..\media\AeDIssuingOfficers1.png)
 
