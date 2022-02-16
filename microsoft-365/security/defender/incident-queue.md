@@ -71,18 +71,20 @@ This table lists the filter names that are available.
 |:-------|:-----|
 | Status | Select **New**, **In progress**, or **Resolved**. |
 | Severity | The severity of an incident is indicative of the impact it can have on your assets. The higher the severity, the bigger the impact and typically requires the most immediate attention. Select **High**, **Medium**, **Low**, or **Informational**. |
-| Incident assignment | Select Assigned to anyone, Assigned to me, or Unassigned. |
+| Incident assignment | Select the assigned user or users. |
 | Multiple service sources  | Specify whether the filter is for more than one service source. |
-| Service sources  | Filter to only see incidents that contain alerts from: App Governance, Microsoft 365 Defender, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps. |
+| Service sources  | Specify incidents that contain alerts from: App Governance, Microsoft 365 Defender, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps. |
 | Tags | Select one or multiple tag names from the list. |
 | Multiple categories  | Specify whether the filter is for more than one category. |
 | Categories | Choose categories to focus on specific tactics, techniques, or attack components seen. |
-| OS platform | Limit the incident queue view by operating system. |
-| Classification | Filter incidents based on the set classifications of the related alerts. Select **True alert**, **False alerts**, or **Not set**. |
-| Investigation state | Filter incidents by the status of automated investigation.  |
-| Associated threat | Filter incidents by a named threat.  |
-| Actors | Filter incidents by a named threat actor.  |
-| Data sensitivity | Some attacks focus on targeting to exfiltrate sensitive or valuable data. By applying a filter to see if sensitive data is involved in the incident, you can quickly determine if sensitive information has potentially been compromised and prioritize addressing those incidents. <br><br>This filter is only available if Microsoft Information Protection is turned on.|
+| Entities | Specify the name of an asset such as a user, device, mailbox, or application name. |
+| Data sensitivity | Some attacks focus on targeting to exfiltrate sensitive or valuable data. By applying a filter for specific sensitivity labels, you can quickly determine if sensitive information has potentially been compromised and prioritize addressing those incidents. <br><br> This filter is only available if Microsoft Information Protection is turned on. |
+| Device groups | Specify a [device group](/windows/security/threat-protection/microsoft-defender-atp/machine-groups) name. |
+| OS platform | Specify device operating systems. |
+| Classification | Specify the set of classifications of the related alerts. |
+| Automated investigation state | Specify the status of automated investigation.  |
+| Associated threat | Specify a named threat.  |
+| Actors | Specify a named threat actor.  |
 |||
 
 The default filter is to show all alerts and incidents with a status of **New** and **In progress** and with a severity of **Low**, **Medium**, or **High**.
