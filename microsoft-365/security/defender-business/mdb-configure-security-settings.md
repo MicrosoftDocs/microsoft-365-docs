@@ -7,11 +7,11 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 12/29/2021
+ms.date: 02/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
-ms.reviewer: inbadian, shlomiakirav
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -94,8 +94,8 @@ The following table describes settings to view (and if necessary, edit) in Defen
 | **Microsoft 365 Defender** | **Account** | View details, such where your data is stored, your tenant ID, and your organization (org) ID. |
 | **Microsoft 365 Defender**  | **Preview features**  | Turn on preview features to try upcoming features and new capabilities. You can be among the first to preview new features and provide feedback. |
 | **Endpoints**  | **Email notifications** | Set up or edit your email notification rules. When vulnerabilities are detected or an alert is created, the recipients specified in your email notification rules will receive an email. [Learn more about email notifications](mdb-email-notifications.md). |
-| **Endpoints**   | **Device management** > **Onboarding** | Onboard devices to Defender for Business by using a downloadable script. To learn more, see [Onboard a device using a local script in Defender for Business](mdb-onboard-devices.md#onboard-a-device-using-a-local-script-in-defender-for-business).   |  
-| **Endpoints**  |  **Device management** > **Offboarding** | Offboard (remove) devices from Defender for Business (preview). When you offboard a device, it no longer sends data to Defender for Business (preview), but data received prior to offboarding is retained. To learn more, see [Offboard a device](mdb-onboard-devices.md#what-if-i-want-to-offboard-a-device).  |
+| **Endpoints**   | **Device management** > **Onboarding** | Onboard devices to Defender for Business by using a downloadable script. To learn more, see [Onboard devices to Microsoft Defender for Business (preview)](mdb-onboard-devices.md).   |  
+| **Endpoints**  |  **Device management** > **Offboarding** | Offboard (remove) devices from Defender for Business (preview). When you offboard a device, it no longer sends data to Defender for Business (preview), but data received prior to offboarding is retained. To learn more, see [Offboarding a device](mdb-onboard-devices.md#offboarding-a-device).  |
 
 ### Access your settings in the Microsoft 365 Defender portal
 
