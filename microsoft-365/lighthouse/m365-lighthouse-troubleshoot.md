@@ -54,8 +54,7 @@ This article describes error messages and problems that you might encounter whil
 
   - Must have no more than 1000 licensed users 
 
-**Resolution:** The following table describes the different tenant statuses that require action and explains how to resolve them.
-
+**Resolution:** The following table describes the different tenant statuses that require action and explains how to resolve them.<br><br>
 
 | Status | Description | Resolution |
 |--|--|--|
