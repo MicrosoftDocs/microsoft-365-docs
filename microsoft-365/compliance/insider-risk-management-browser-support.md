@@ -39,7 +39,7 @@ The following table summarizes detected activities and extension support for eac
 
 ## Common requirements
 
-Before installing the Microsoft Edge add-on or Google Chrome extension, customers need to ensure that devices for in-scope policy users meet the following requirements
+Before installing the Microsoft Edge add-on or Google Chrome extension, customers need to ensure that devices for in-scope policy users meet the following requirements:
 
 - Latest Windows 10 x64 build is recommended, minimum Windows 10 x64 build 1809 for signal detection support. Browser signal detection isn't currently supported on non-Windows devices.
 - Current [Microsoft 365 subscription](/microsoft-365/compliance/insider-risk-management-configure#subscriptions-and-licensing) with insider risk management support.
