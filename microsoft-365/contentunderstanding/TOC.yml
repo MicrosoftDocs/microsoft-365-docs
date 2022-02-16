@@ -54,13 +54,16 @@
                 - name: Model usage analytics
                   href: model-usage-analytics.md
 
-
     - name: Prebuilt models
       items:
+            - name: Overview 
+              href: prebuilt-overview.md
             - name: Invoice and receipt prebuilt models 
               href: prebuilt-models.md
             - name: Apply a retention label 
               href: apply-a-retention-label-to-a-model.md
+            - name: Model usage analytics
+              href: model-usage-analytics.md
 
     - name: Content assembly
       items: 

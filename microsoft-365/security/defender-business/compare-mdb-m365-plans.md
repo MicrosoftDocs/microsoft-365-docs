@@ -1,13 +1,13 @@
 ---
 title: Compare Microsoft Defender for Business to other Microsoft 365 plans
-description: Understand the differences between Defender for Business and Defender for Endpoint. Knowing what's included in each plan can help you make an informed decision for your company.
+description: Understand the differences between Defender for Business and Defender for Endpoint. Knowing what's included in each plan can help you make an informed decision for your organization.
 search.appverid: MET150 
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: reference
-ms.date: 01/26/2022
+ms.date: 02/26/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -15,7 +15,7 @@ ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
-- m365initiative-defender-business
+- m365-initiative-defender-business
 - m365-security-compliance
 ---
 
@@ -26,7 +26,7 @@ ms.collection:
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-Microsoft offers a wide variety cloud solutions and services, including several different plans for small and medium-sized businesses. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) includes security and device management capabilities, along with productivity features, like Office apps. 
+Microsoft offers a wide variety of cloud solutions and services, including several different plans for small and medium-sized businesses. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) includes security and device management capabilities, along with productivity features, like Office apps. 
 
 **Use this article to**:
 
@@ -34,10 +34,10 @@ Microsoft offers a wide variety cloud solutions and services, including several 
 - [Compare Defender for Business to Microsoft Defender for Endpoint enterprise offerings](#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2)
 
 
-**You don't have to have a Microsoft 365 subscription to buy and use Microsoft Defender for Business (preview).** Microsoft Defender for Business (preview) is a standalone security solution for small and medium-sized businesses. If you do already have another subscription (such as Microsoft 365 Business Basic or Standard), consider adding Microsoft Defender for Business to get additional threat protection capabilities. 
+**You don't have to have a Microsoft 365 subscription to buy and use Microsoft Defender for Business (preview).** Microsoft Defender for Business (preview) is a standalone security solution for small and medium-sized businesses. If you do already have another subscription (such as Microsoft 365 Business Basic or Standard), consider adding Microsoft Defender for Business to get more threat protection capabilities. 
 
 > [!TIP]
-> If your company is a small or medium-sized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview). To learn more, see [Get Microsoft Defender for Business](get-defender-business.md).
+> If your organization is a small or medium-sized business (300 or fewer users) and you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview). To learn more, see [Get Microsoft Defender for Business](get-defender-business.md).
 
 ## Compare security features in Microsoft Defender for Business to Microsoft 365 Business Premium
 
@@ -74,7 +74,7 @@ Defender for Business (preview) brings enterprise-grade capabilities of Defender
 | [Next-generation protection](../defender-endpoint/next-generation-protection.md) | Yes | Yes | Yes |
 | [Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md) | Yes <sup>[[2](#fn2)]</sup> | No | Yes |
 | [Automated investigation and response](../defender-endpoint/automated-investigations.md) | Yes <sup>[[2](#fn2)]</sup> | No | Yes |
-| [Threat hunting](../defender-endpoint/advanced-hunting-overview.md) and 6 months of data retention | No | No | Yes |
+| [Threat hunting](../defender-endpoint/advanced-hunting-overview.md) and six months of data retention | No | No | Yes |
 | [Threat analytics](../defender-endpoint/threat-analytics.md) | Yes <sup>[[2](#fn2)]</sup> | No | Yes |
 | [Cross-platform support](../defender-endpoint/minimum-requirements.md) <br/>(Windows, macOS, iOS, and Android OS) | Yes <sup>[[3](#fn3)]</sup> | Yes | Yes |
 | [Microsoft Threat Experts](../defender-endpoint/microsoft-threat-experts.md) | No | No | Yes |

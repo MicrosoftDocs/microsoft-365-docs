@@ -29,58 +29,58 @@ Microsoft 365 Lighthouse audit logs record actions that generate a change in Lig
 
 To view audit logs, you must have one of the following permissions:
 
-- Azure AD role - Global Administrator of partner tenant
+- Azure Active Directory (Azure AD) role - Global Administrator of partner tenant
 
-- Partner Center role - Admin Agent
+- Microsoft Partner Center role - Admin agent
 
-## Review logs
+## Review audit logs
 
 1. In the left navigation pane in Lighthouse, select **Audit logs**.
 
     > [!NOTE]
     > It might take up to 1 hour to see new logs. Go to the respective service to see the most recent changes.
 
-2. To filter the logs, refine the list using the following options:
+2. Filter the logs, as needed, by using the following options:
 
     - **Date range** - Previous month, week, or day.
     - **Tenants** - Tenant tags or customer tenant names.
-    - **Activity** - Microsoft 365 activity type that corresponds to the action taken. For more information, see Activity Types table.
+    - **Activity** - Microsoft 365 activity type that corresponds to the action taken. For more information, see the [Activities](#activities) table.
     - **Initiated by** -  Who initiated the action.
 
-3. Select a log from the list to see full details including the **Request** body.
+3. Select a log from the list to see full details, including the **Request** body.
 
-Select **Export**, to export log data to a comma-separated values (.csv) file.
+    To export log data to a comma-separated values (.csv) file, select **Export**.
 
-## Activity Types
+## Activities
 
-The following table is a list of activity types captured within Lighthouse audit logs. The list is subject to change as new actions are created. You can use the activity value from the audit log to see what action was initiated.
+The following table lists activities captured within Lighthouse audit logs. The list is subject to change as new actions are created. You can use the activity listed in the audit log to see which action was initiated.<br><br>
 
-| Activity name    | Area in Microsoft 365 Lighthouse | Action initiated  | Service impacted           |
-|------------------|----------------------------------|-------------------|----------------------------|
-|**apply**                                   | Tenants                          | Apply deployment plan                                           | Azure AD, Microsoft Endpoint Manager                   |
-|**assignTag**                                | Tenants                          | Apply a tag from a customer                                      | Microsoft 365 Lighthouse   |
-|**changeDeploymentStatus**                   | Tenants                          | Action plan status for deployment plan                        | Microsoft 365 Lighthouse   |
-|**offboardTenant**                            | Tenants                          | Inactivate a customer                                          | Microsoft 365 Lighthouse   |
-|**resetTenantOnboardingStatus**              | Tenants                          | Reactive a customer                                              | Microsoft 365 Lighthouse   |
-|**tenantTags**                               | Tenants                          | Create or delete a tag                                           | Microsoft 365 Lighthouse   |
-|**tenantCustomizedInformation**              | Tenants                          | Create, update, or delete customer website or contact information | Microsoft 365 Lighthouse   |
-|**unassignTag**                              | Tenants                          | Remove a tag from a customer                                    | Microsoft 365 Lighthouse   |
-| **blockUserSignin**                          | Users                            | Block sign-in                                                     | Azure AD                   |
-| **confirmUsersCompromised**                  | Users                            | Confirm user compromised                                        | Azure AD                   |
-| **dismissUsersRisk**                         | Users                            | Dismiss user risk                                                | Azure AD                   |
-| **resetUserPassword**                        | Users                            | Reset password                                                   | Azure AD                   |
-| **setCustomerSecurityDefaultsEnabledStatus** | Users                            | Enable MFA with Security Defaults                               | Azure AD                   |
-|**restartDevice**                            | Devices                          | Restart                                                          | Microsoft Endpoint Manager |
-| **syncDevice**                               | Devices                          | Sync                                                             | Microsoft Endpoint Manager |
-| **rebootNow**                                | Threat management                | Reboot                                                           | Microsoft Endpoint Manager |
-| **reprovision**                              | Tenants                          | Retry Provisioning                                               | Windows 365                |
-| **windowsDefenderScanFull**                  | Threat management                | Full scan                                                       | Microsoft Endpoint Manager |
-| **windowsDefenderScan**                      | Threat management                | Quick scan                                                       | Microsoft Endpoint Manager |
-| **windowsDefenderUpdateSignatures**          | Threat management                | Update antivirus                                                | Microsoft Endpoint Manager |
+| Activity name | Area in Lighthouse | Action initiated | Service impacted |
+|--|--|--|--|
+| **apply** | Tenants | Apply deployment plan | Azure AD, Microsoft Endpoint Manager (MEM) |
+| **assignTag** | Tenants | Apply a tag from a customer | Lighthouse |
+| **changeDeploymentStatus** | Tenants | Action plan status for deployment plan | Lighthouse |
+| **offboardTenant** | Tenants | Inactivate a customer | Lighthouse |
+| **resetTenantOnboardingStatus** | Tenants | Reactive a customer | Lighthouse |
+| **tenantTags** | Tenants | Create or delete a tag | Lighthouse |
+| **tenantCustomizedInformation** | Tenants | Create, update, or delete a customer website or contact information | Lighthouse |
+| **unassignTag** | Tenants | Remove a tag from a customer | Lighthouse |
+| **blockUserSignin** | Users | Block sign-in | Azure AD |
+| **confirmUsersCompromised** | Users | Confirm a user is compromised | Azure AD |
+| **dismissUsersRisk** | Users | Dismiss user risk | Azure AD |
+| **resetUserPassword** | Users | Reset password | Azure AD |
+| **setCustomerSecurityDefaultsEnabledStatus** | Users | Enable multifactor authentication (MFA) with security defaults | Azure AD |
+| **restartDevice** | Devices | Restart | MEM |
+| **syncDevice** | Devices | Sync | MEM |
+| **rebootNow** | Threat management | Reboot | MEM |
+| **reprovision** | Windows 365 | Retry provisioning | Windows 365 |
+| **windowsDefenderScanFull** | Threat management | Full scan | MEM |
+| **windowsDefenderScan** | Threat management | Quick scan | MEM |
+| **windowsDefenderUpdateSignatures** | Threat management | Update antivirus | MEM |
 
 ## Next steps
 
-If you need more information, you can use Microsoft Graph API to access more audit events. For more information, see [Overview for multi-tenant management using the Microsoft 365 Lighthouse API](/graph/managedtenants-concept-overview).
+If you need more information, use Microsoft Graph API to access more audit events. For more information, see [Overview for multi-tenant management using the Microsoft 365 Lighthouse API](/graph/managedtenants-concept-overview).
 
 ## Related content
 
