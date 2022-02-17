@@ -152,7 +152,7 @@ conceptualContent:
           text: Send feedback
         - url: https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB
           itemType: overview
-          text: Small and medium business tech community
+          text: Tech Community for small and medium-sized businesses
   #Card
     - title: How do I...
       links:
