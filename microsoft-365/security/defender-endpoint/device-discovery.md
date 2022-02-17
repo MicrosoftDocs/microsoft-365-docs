@@ -83,7 +83,7 @@ To assess these devices, you can use a filter in the device inventory list calle
 > [!TIP]
 > You can always apply filters to exclude unmanaged devices from the device inventory list. You can also use the onboarding status column on API queries to filter out unmanaged devices.
 
-For more information on the device inventory, see [Device inventory](machines-view-overview.md).
+For more information, see [Device inventory](machines-view-overview.md).
 
 ## Network device discovery
 

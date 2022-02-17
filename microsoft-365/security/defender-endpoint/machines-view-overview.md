@@ -33,25 +33,27 @@ The device inventory helps you discover, explore, and investigate devices in you
 
 During the onboarding process, the **device inventory** is gradually populated with devices as they begin to report sensor data. Use this view to track devices as they are discovered. The device inventory has three tabs that list devices by:
 
-- Computers and Mobile: Enterprise endpoints (workstations, servers and mobile devices)
-
-- Network devices: Devices like routers and switches
-
-- IoT devices tab: Devices like printers and cameras
+- **Computers and Mobile**: Enterprise endpoints (workstations, servers and mobile devices)
+- **Network devices**: Devices like routers and switches
+- **IoT devices**: Devices like printers and cameras
 
 ## Navigate to the Device inventory page
 
-Access the Device inventory page by selecting **Device inventory** from the threat and vulnerability management navigation menu in the [Microsoft 365 Defender portal](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/portal-overview?view=o365-worldwide).
+Access the device inventory page by selecting **Device inventory** from the threat and vulnerability management navigation menu in the [Microsoft 365 Defender portal](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/portal-overview?view=o365-worldwide).
 
-**Device inventory overview**
+## Device inventory overview
 
 The device inventory opens on the **Computers and Mobile** tab. At a glance you’ll see information such as domain, risk level, exposure level, OS platform, onboarding status, sensor health state, and other details for easy identification of devices most at risk.
 
 ![Image of devices list with list of devices.](images/device-inventory.png)
 
-From the Network devices and IoT devices tabs, you’ll also see information such as vendor, model and OS distribution:
+From the **Network devices** and **IoT devices** tabs, you’ll also see information such as vendor, model and OS distribution:
 
 ![Image of devices list with list of devices.](images/device-inventory-networkdevices.png)
+
+A total count for the devices listed the current inventory view appear on top of each tab. The counts for devices that are not yet onboarded, or have been identified as high risk or having a high exposure can help you prioritize devices for security posture improvements.
+
+## Explore the device inventory
 
 There are several options you can choose from to customize the devices list view. On the top navigation for each tab you can:
 
@@ -62,11 +64,9 @@ There are several options you can choose from to customize the devices list view
 - Select the date range to display
 - Apply filters
 
-> \[!NOTE\] If you export the device list, it will contain every device in your organization. It might take a significant amount of time to download, depending on how large your organization is. Exporting the list in CSV format displays the data in an unfiltered manner. The CSV file will include all devices in the organization, regardless of any filtering applied in the view itself.
+> [!NOTE]
+> If you export the device list, it will contain every device in your organization. It might take a significant amount of time to download, depending on how large your organization is. Exporting the list in CSV format displays the data in an unfiltered manner. The CSV file will include all devices in the organization, regardless of any filtering applied in the view itself.
 
-A total count for the devices listed the current inventory view appear on top of each tab. The counts for devices that are not yet onboarded, or have been identified as high risk or having a high exposure can help you prioritize devices for security posture improvements.
-
-## Explore the device inventory
 
 You can use the sort and filter functionality available on each device inventory tab to get a more focused view. This can help you assess and manage the devices in your organization.
 
