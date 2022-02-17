@@ -72,13 +72,6 @@ Here's an example.
 
 :::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Example of the actions on a user account for an incident." lightbox="../../media/investigate-users/incidents-ss-user-details-actions.png":::
 
-<!--
-You can access this page from multiple areas in the Microsoft 365 Defender portal. You can access this page from a specific incident in the **Users** tab. Some alerts might include users as a specific affected asset. You can also search for users.  
-
-Learn more about how to investigate users and potential risk [in this Cloud App Security tutorial](/cloud-app-security/tutorial-ueba#:~:text=To%20identify%20who%20your%20riskiest,user%20page%20to%20investigate%20them).
-
--->
-
 ## View lateral movement paths
 
 By selecting the **Lateral movement paths** tab, you can view a fully dynamic and clickable map that provides you with a visual representation of the lateral movement paths to and from this user that can be used to infiltrate your network.

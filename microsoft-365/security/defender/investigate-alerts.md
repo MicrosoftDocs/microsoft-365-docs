@@ -45,10 +45,6 @@ From the default alerts queue, you can select **Filter** to see a **Filter** pan
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Example of the filters pane for the alerts queue in the Microsoft 365 Defender portal.":::
 
-<!--
-UPDATE SCREENSHOT
---> 
-
 You can filter alerts according to these criteria:
 
 - Severity
