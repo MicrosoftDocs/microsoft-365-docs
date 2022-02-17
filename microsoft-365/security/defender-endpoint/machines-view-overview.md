@@ -16,7 +16,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# View and organize the Microsoft Defender for Endpoint Devices list
+# Device inventory
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
