@@ -240,7 +240,7 @@ We employ large-scale learning algorithms to establish the normal behavior of co
 For this scenario, the process <i>notepad.exe</i> is exhibiting abnormal behavior, involving communication with an external location. This outcome is independent of the specific method used to introduce and execute the malicious code.
 
 > [!NOTE]
-> Because this alert is based on machine-learning models that require additional backend processing, it might take some time before you see this alert in the portal.
+> Because this alert is based on machine learning models that require additional backend processing, it might take some time before you see this alert in the portal.
 
 Notice that the alert details include the external IP address—an indicator that you can use as a pivot to expand investigation.
 

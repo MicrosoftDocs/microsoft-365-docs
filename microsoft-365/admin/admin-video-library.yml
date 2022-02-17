@@ -178,9 +178,17 @@ landingContent:
         - text: Employee quick setup  
           url: ../business-video/employee-quick-setup.md
   # Card
-  - title: Switch from Google Workspace
+  - title: Switch from Google Workspace to M365
     linkLists:
       - linkListType: video
         links:
-          - text: Switch from Google Workspace
-            url: ../business-video/moveto-microsoft-365/move-from-google-workspace-overview.md
+          - text: Set up Microsoft 365 for Google Workspace migration
+            url: /moveto-microsoft-365/set-up-microsoft-365-forgoogle
+          - text: Add your Google Workspace domain to Microsoft 365
+            url: /moveto-microsoft-365/add-google-domain
+          - text: Migrate business email and calendar from Google Workspace
+            url: /moveto-microsoft-365/migrate-email          
+          - text: Connect your domain to Microsoft 365 for business
+            url: /moveto-microsoft-365/connect-domain-tom365
+          - text: Migrate Google files to Microsoft 365 for business with Migration Manager
+            url: /moveto-microsoft-365/migrate-files-migration-manager
