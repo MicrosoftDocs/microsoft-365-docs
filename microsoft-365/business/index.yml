@@ -121,24 +121,23 @@ conceptualContent:
           itemType: reference
           text: FAQ
  # Card
-    - title: Manage threats
+    - title: What is Microsoft 365 Lighthouse?
       links:
-        - url: ../security/office-365-security/defender-for-office-365.md
+        - url: ../lighthouse/m365-lighthouse-overview.md
           itemType: overview
-          text: Advanced Threat Protection
-        - url: ../admin/security-and-compliance/set-up-multi-factor-authentication.md
+          text: Overview
+        - url: ../lighthouse/m365-lighthouse-sign-up.md
           itemType: how-to-guide
-          text: Set up MFA
-        - url: ./increase-threat-protection.md#protect-against-ransomware
+          text: How to sign up
+        - url: ../lighthouse/m365-lighthouse-configure-portal-security.md
           itemType: how-to-guide
-          text: Protect against ransomware
-        - url: /azure/active-directory/conditional-access/overview
+          text: Set up portal security
+        - url: ../lighthouse/m365-lighthouse-deploy-standard-tenant-configurations-overview.md
           itemType: overview
-          text: Conditional Access
-      # footerLink (optional)
-      footerLink:
-        url: /microsoft-365/admin/
-        text: See more 
+          text: Baselines for customer tenants
+        - url: ../lighthouse/m365-lighthouse-faq.yml
+          itemType: reference
+          text: FAQ
   # Card
     - title: Manage data
       links:
