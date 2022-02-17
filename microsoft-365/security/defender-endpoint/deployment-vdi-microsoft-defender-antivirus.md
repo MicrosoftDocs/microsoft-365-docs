@@ -10,7 +10,7 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 12/08/2021
+ms.date: 02/11/2022
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
@@ -23,7 +23,7 @@ ms.collection: m365-security-compliance
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-In addition to standard on-premises or hardware configurations, you can also use Microsoft Defender Antivirus in a remote desktop (RDS) or virtual desktop infrastructure (VDI) environment.
+In addition to standard on-premises or hardware configurations, you can also use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment.
 
 For more information on Microsoft Remote Desktop Services and VDI support, see [Azure Virtual Desktop Documentation](/azure/virtual-desktop).
 
@@ -42,6 +42,9 @@ This guide describes how to configure your VMs for optimal protection and perfor
 - [Apply exclusions](#exclusions)
 
 You can also download the whitepaper [Microsoft Defender Antivirus on Virtual Desktop Infrastructure](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf), which looks at the new shared security intelligence update feature, alongside performance testing and guidance on how you can test antivirus performance on your own VDI.
+
+> [!NOTE]
+> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
 
 > [!IMPORTANT]
 > Although the VDI can be hosted on Windows Server 2012 or Windows Server 2016, the virtual machines (VMs) should be running Windows 10, 1607 at a minimum, due to increased protection technologies and features that are unavailable in earlier versions of Windows.
@@ -115,7 +118,7 @@ To do this:
 
     Name   ScopeName AccountName AccessControlType AccessRight
     ----   --------- ----------- ----------------- -----------
-    mdatp$ *         Everyone    Allow             Change
+    mdatp$ *         Everyone    Allow             Read
     ```
    
     > [!NOTE]
