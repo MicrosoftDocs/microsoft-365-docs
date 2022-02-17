@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft 365 Business Premium resources # < 60 chars
-summary: Microsoft 365 Business Premium (formerly Microsoft 365 Business) is a comprehensive subscription service for businesses with fewer than 300 employees. It integrates your favorite Office productivity apps and services and collaboration tools like Microsoft Teams with advanced security and device management capabilities. # < 160 chars
+summary: For businesses with up to 300 employees, Microsoft 365 Business Premium enables you to be productive anywhere with Office apps and online meetings, secure your business with advanced security features, and streamline IT setup and management with a single solution. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
@@ -16,7 +16,7 @@ metadata:
   - intro-hub-or-landing
   author: efrene #Required; your GitHub user alias, with correct capitalization.
   ms.author: efrene #Required; microsoft alias of author; optional team alias.
-  ms.date: 8/25/2021 #Required; mm/dd/yyyy format.
+  ms.date: 02/17/2022
 
 # productDirectory section (optional)
 productDirectory:
@@ -25,25 +25,25 @@ productDirectory:
     # Card
     - title: Watch
       imageSrc: https://docs.microsoft.com/office/media/icons/video-play.svg
-      summary: Top five benefits of Microsoft 365 Business Premium.
+      summary: Top five benefits of Microsoft 365 Business Premium
       url: https://aka.ms/M365BPvideo
     # Card
-    - title: Get the free partner kit
+    - title: Compare plans
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-      summary: Practical guidance and go to market resources for partners for securing remote work.
-      url: https://aka.ms/SMBSecurityKit
+      summary: Compare Microsoft 365 plans for small and medium-sized businesses
+      url: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM
     # Card
     - title: What's new?
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-      summary: Join the Microsoft Defender for Business preview today--an enterprise-grade endpoint solution for businesses with fewer than 300 employees.
+      summary: Microsoft 365 Business Premium now includes Microsoft Defender for Business capabilities to protect your devices!
       url: https://aka.ms/MDB-previewblog
     # Card
-    - title: Join the partner webinar series
+    - title: Are you a Microsoft partner?
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-      summary: Learn how you can drive upsell and grow your business with Microsoft 365 Business Premium, Microsoft Defender for Business, and Microsoft 365 Lighthouse.
-      url: https://aka.ms/M365MDBseries 
+      summary: Visit the Microsoft Partner Network.
+      url: https://www.microsoft.com/microsoft-365/partners/business 
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -57,12 +57,9 @@ conceptualContent:
         - url: ../business-video/index.yml
           itemType: video
           text: Microsoft 365 Business Premium training
-        - url: /office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
+        - url: https://go.microsoft.com/fwlink/?linkid=2164213
           itemType: overview
           text: Compare plans
-        - url: https://go.microsoft.com/fwlink/?linkid=2164213
-          itemType: reference
-          text: Service description
         - url: ../admin/misc/microsoft-365-business-faqs.yml
           itemType: reference
           text: FAQ
