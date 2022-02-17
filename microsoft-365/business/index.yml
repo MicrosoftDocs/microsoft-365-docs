@@ -117,6 +117,9 @@ conceptualContent:
         - url: ../security/office-365-security/protect-against-threats.md
           itemType: how-to-guide
           text: See the setup process
+        - url: ../security/office-365-security/anti-malware-protection-faq-eop.md
+          itemType: reference
+          text: FAQ
       # footerLink (optional)
       footerLink:
         url: /microsoft-365/admin/
