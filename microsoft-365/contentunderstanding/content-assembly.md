@@ -147,6 +147,7 @@ You can use a *published* modern template to quickly create similar documents wi
 > [!NOTE]
 > - Currently, only Microsoft Word documents (.docx extension) are supported for creating a template. Before uploading the document, ensure that the Word document doesn't have **Track changes** enabled or comments. If your document contains text placeholders for images, ensure that they are not text-wrapped.
 >- The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library.
+>- The uploaded document that is used to create the modern template will be saved as a separate copy and placed in the /forms directory of the document library. The original file on the disk will be unaffected.
 >- You can create placeholders only for text. Currently, images, smart art, tables, and bullet lists are not supported.
 >- Once a document is created from a template, it is not associated with the template.
 

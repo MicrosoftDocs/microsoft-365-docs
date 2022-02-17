@@ -75,18 +75,18 @@ Here's an example of a JSON file that conforms to the required schema:
 ```json
 [
     {
-        "UserId":"sarad@contoso.com"
+        "UserId":"sarad@contoso.com",
         "AssetId":"Mid-Sec-7",
         "AssetName":"Main Building 1st Floor Mid Section",
         "EventTime":"2019-07-04T01:57:49",
-        "AccessStatus":"Failed",
+        "AccessStatus":"Failed"
     },
     {
         "UserId":"pilarp@contoso.com",
         "AssetId":"Mid-Sec-7",
         "AssetName":"Main Building 1st Floor Mid Section",
         "EventTime":"2019-07-04T02:57:49",
-        "AccessStatus":"Success",
+        "AccessStatus":"Success"
     }
 ]
 ```
@@ -162,12 +162,12 @@ The next step is to create a physical badging connector in the Microsoft 365 com
 
 The next step in setting up a physical badging connector is to run a script that will push the physical badging data in the JSON file (that you created in Step 2) to the API endpoint you created in Step 1. We provide a sample script for your reference and you can choose to use it or create your own script to post the JSON file to the API endpoint.
 
-After you run the script, the JSON file containing the physical badging data is pushed to your Microsoft 365 organization where it can accessed by the insider risk management solution. We recommend you post physical badging data daily. You can do this by automating the process to generate the JSON file every day from your physical badging system and then scheduling the script to push the data.
+After you run the script, the JSON file containing the physical badging data is pushed to your Microsoft 365 organization where it can be accessed by the insider risk management solution. We recommend you post physical badging data daily. You can do this by automating the process to generate the JSON file every day from your physical badging system and then scheduling the script to push the data.
 
 > [!NOTE]
 > The maximum number of records in the JSON file that can be processed by the API is 50,000 records.
 
-1. Go to [this GitHub site](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1) to access the sample script.
+1. Go to [this GitHub site](https://github.com/microsoft/m365-physical-badging-connector-sample-scripts/blob/master/push_physical_badging_records.ps1) to access the sample script.
 
 2. Click the **Raw** button to display the script in text view
 
@@ -190,7 +190,7 @@ After you run the script, the JSON file containing the physical badging data is 
    |Parameter|Description|
    |---|---|
    |tenantId|This is the Id for your Microsoft 365 organization that you obtained in Step 1. You can also obtain the tenantId for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization.|
-   |appId|This is the Azure AD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization.|
+   |appId|This is the Azure AD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to access your Microsoft 365 organization.|
    |appSecret|This is the Azure AD application secret for the app that you created in Azure AD in Step 1. This is also used for authentication.|
    |jobId|This is the Job Id for the physical badging connector that you created in Step 3. This is used to associate the physical badging data that is pushed to the Microsoft cloud with the physical badging connector.|
    |JsonFilePath|This is the file path on the local computer (the one you're using to run the script) for the JSON file that you created in Step 2. This file must follow the sample schema described in Step 3.|
@@ -199,7 +199,7 @@ After you run the script, the JSON file containing the physical badging data is 
    Here's an example of the syntax for the physical badging connector script using actual values for each parameter:
 
    ```powershell
-   .\PhysicalBadging.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json'
+   .\PhysicalBadging.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -jsonFilePath 'C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json'
    ```
 
    If the upload is successful, the script displays the **Upload Successful** message.
@@ -231,7 +231,7 @@ If you've haven't run the script in Step 4, a link to download the script is dis
 
 To make sure the latest physical badging data from your organization is available to tools like the insider risk management solution, we recommend that you schedule the script to run automatically on a recurring basis, such as once a day. This also requires that you update the physical badging data to JSON file on a similar (if not the same) schedule so that it contains the latest information about employees who leave your organization. The goal is to upload the most current physical badging data so that the physical badging connector can make it available to the insider risk management solution.
 
-You can user the Task Scheduler app in Windows to automatically run the script every day.
+You can use the Task Scheduler app in Windows to automatically run the script every day.
 
 1. On your local computer, click the Windows **Start** button and then type **Task Scheduler**.
 
@@ -249,7 +249,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 6. Select the **Triggers** tab, click **New**, and then do the following things:
 
-   1. Under **Settings**, select the **Daily** option, and then choose a date and time to run the script for the first time. The script will every day at the same specified time.
+   1. Under **Settings**, select the **Daily** option, and then choose a date and time to run the script for the first time. The script will run every day at the same specified time.
 
    2. Under **Advanced settings**, make sure the **Enabled** checkbox is selected.
 
@@ -263,7 +263,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
    2. In the **Program/script** box, click **Browse**, and go to the following location and select it so the path is displayed in the box: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe.
 
-   3. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, .\PhysicalBadging.ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -jsonFilePath "C:\Users\contosoadmin\Desktop\Data\physical_badging_data.csv"
+   3. In the **Add arguments (optional)** box, paste the same script command that you ran in Step 4. For example, .\PhysicalBadging.ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn" -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -jsonFilePath "C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json"
 
    4. In the **Start in (optional)** box, paste the folder location of the script that you ran in Step 4. For example, C:\Users\contosoadmin\Desktop\Scripts.
 

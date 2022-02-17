@@ -150,8 +150,8 @@ The SIT instance count limit applies when SITs are used in these solutions:
 - Information Governance
 - Communication Compliance
 - Records Management
-- Microsoft Cloud App Security
-- Privacy Management
+- Microsoft Defender for Cloud Apps
+- Microsoft Priva
 
 For a scanned item to satisfy rule criteria, the number of unique instances of a SIT in any single item must fall between the min and max values. This is called the **Instance count**.
 
@@ -287,6 +287,6 @@ Here are the definitions and some examples for the available additional checks.
 >     2. 機密性が高い, 机密的document and 机密的 document
 >
 > While creating a regex using a double byte hyphen or a double byte period, make sure to escape both the characters like one would escape a hyphen or period in a regex. Here is a sample regex for reference:
->    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4}
+>    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4})
 >
 > We recommend using a string match instead of a word match in a keyword list.

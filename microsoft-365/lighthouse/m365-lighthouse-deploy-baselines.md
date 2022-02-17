@@ -44,7 +44,7 @@ Select **Baselines** from the left navigation pane to open the Baselines page. Y
 
 ## Deploy a baseline configuration  
 
-1. In the left navigation page, select **Tenants** to view a list of your onboarded tenants.
+1. In the left navigation pane in Lighthouse, select **Tenants** to view a list of your onboarded tenants.
 
 2. Select the tenant you want to deploy the baseline configuration to.
 
