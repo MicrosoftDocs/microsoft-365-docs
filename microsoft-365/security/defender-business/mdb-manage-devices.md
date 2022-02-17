@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 02/09/2022
+ms.date: 02/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -68,7 +68,7 @@ See [Onboard devices to Microsoft Defender for Business (preview)](mdb-onboard-d
 
 ## Offboard a device
 
-See [Offboard a device](mdb-onboard-devices.md#what-if-i-want-to-offboard-a-device).
+See [Offboarding a device](mdb-onboard-devices.md#offboarding-a-device).
 
 ## Next steps
 

@@ -238,7 +238,8 @@ CloudAppEvents
 Run this query to find out if there were any anomalous login events from this user. For example: unknown IPs, new applications, uncommon countries, multiple LogonFailed events.
 
 ```kusto
-let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder IdentityLogonEvents
+let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder 
+IdentityLogonEvents
 | where AccountUpn == sender
 ```
 
