@@ -260,7 +260,7 @@
 #### [Device discovery FAQ](device-discovery-faq.md)
 
 ### [Device inventory]()
-#### [View and organize the Device inventory](machines-view-overview.md)
+#### [View and organize the device inventory](machines-view-overview.md)
 #### [Device timeline event flags](device-timeline-event-flag.md)
 #### [Manage device group and tags](machine-tags.md)
 #### [Exclude devices](exclude-devices.md)
