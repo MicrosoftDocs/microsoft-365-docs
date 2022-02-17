@@ -48,7 +48,7 @@ productDirectory:
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
-  #Card
+  # Card
     - title: What is Microsoft 365 Business Premium?
       links:
         - url: microsoft-365-business-overview.md
@@ -63,7 +63,7 @@ conceptualContent:
         - url: ../admin/misc/microsoft-365-business-faqs.yml
           itemType: reference
           text: FAQ
-    #Card
+  # Card
     - title: What is Microsoft Defender for Business?
       links:
         - url: ../security/defender-business/mdb-overview.md
@@ -78,7 +78,7 @@ conceptualContent:
         - url: ../security/defender-business/mdb-faq.yml
           itemType: reference
           text: FAQ
- # Card
+  # Card
     - title: What is Microsoft 365 Lighthouse?
       links:
         - url: ../lighthouse/m365-lighthouse-overview.md
@@ -96,7 +96,7 @@ conceptualContent:
         - url: ../lighthouse/m365-lighthouse-faq.yml
           itemType: reference
           text: FAQ
-  #Card
+  # Card
     - title: Resources for partners (English only)
       links:
         - url: https://partner.microsoft.com
@@ -108,52 +108,7 @@ conceptualContent:
         - url: https://aka.ms/M365BPPartnerPlaybook
           itemType: how-to-guide
           text: See the Microsoft 365 Business Premium Partner Playbook and Readiness Series
-  #Card
-    - title: Set up Microsoft 365 Business Premium
-      links:
-        - url: ../admin/admin-overview/sign-up-for-office-365.md#watch-sign-up-for-microsoft-365-business-premium
-          itemType: how-to-guide
-          text: 1. Sign up for Microsoft 365 Business Premium
-        - url: ../admin/setup/plan-your-setup.md
-          itemType: how-to-guide
-          text: 2. Plan your setup and configuration
-        - url: ../admin/setup/business-set-up.md
-          itemType: video
-          text: 3. See the basic setup process
-        - url: ../business-premium/m365-campaigns-security-overview.md
-          itemType: how-to-guide
-          text: 4. Set up your security features
-# Card
-    - title: What is Microsoft Defender for Office 365?
-      links:
-        - url: ../security/office-365-security/defender-for-office-365.md
-          itemType: overview
-          text: Overview
-        - url: ../security/office-365-security/office-365-evaluation.md
-          itemType: how-to-guide
-          text: How to get Defender for Office 365
-        - url: ../security/office-365-security/protect-against-threats.md
-          itemType: how-to-guide
-          text: See the setup process
-        - url: ../security/office-365-security/anti-malware-protection-faq-eop.md
-          itemType: reference
-          text: FAQ
-  #Card
-    - title: Support and community
-      links:
-        - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog
-          itemType: whats-new
-          text: Announcements
-        - url: https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988
-          itemType: video
-          text: Get help
-        - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business/bd-p/Microsoft365business
-          itemType: overview
-          text: Send feedback
-        - url: https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB
-          itemType: overview
-          text: Tech Community for small and medium-sized businesses
-  #Card
+  # Card
     - title: How do I...
       links:
         - url: ../admin/manage/find-your-partner-or-reseller.md
@@ -168,4 +123,50 @@ conceptualContent:
         - url: ../commerce/subscriptions/upgrade-to-different-plan.md
           itemType: how-to-guide
           text: Migrate to Microsoft 365 Enterprise E3
+  # Card
+    - title: Set up Microsoft 365 Business Premium
+      links:
+        - url: ../admin/admin-overview/sign-up-for-office-365.md#watch-sign-up-for-microsoft-365-business-premium
+          itemType: how-to-guide
+          text: 1. Sign up for Microsoft 365 Business Premium
+        - url: ../admin/setup/plan-your-setup.md
+          itemType: how-to-guide
+          text: 2. Plan your setup and configuration
+        - url: ../admin/setup/business-set-up.md
+          itemType: video
+          text: 3. See the basic setup process
+        - url: ../business-premium/m365-campaigns-security-overview.md
+          itemType: how-to-guide
+          text: 4. Set up your security features
+  # Card
+    - title: What is Microsoft Defender for Office 365?
+      links:
+        - url: ../security/office-365-security/defender-for-office-365.md
+          itemType: overview
+          text: Overview
+        - url: ../security/office-365-security/office-365-evaluation.md
+          itemType: how-to-guide
+          text: How to get Defender for Office 365
+        - url: ../security/office-365-security/protect-against-threats.md
+          itemType: how-to-guide
+          text: See the setup process
+        - url: ../security/office-365-security/anti-malware-protection-faq-eop.md
+          itemType: reference
+          text: FAQ
+  # Card
+    - title: Support and community
+      links:
+        - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog
+          itemType: whats-new
+          text: Announcements
+        - url: https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988
+          itemType: video
+          text: Get help
+        - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business/bd-p/Microsoft365business
+          itemType: overview
+          text: Send feedback
+        - url: https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB
+          itemType: overview
+          text: Tech Community for small and medium-sized businesses
+
 
