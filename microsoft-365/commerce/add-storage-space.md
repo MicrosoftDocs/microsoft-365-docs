@@ -19,6 +19,7 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
+- business_assist
 - AdminTemplateSet
 search.appverid: MET150
 description: "Add file storage in your Microsoft 365 subscription. With extra file storage, you can store more content in SharePoint."
@@ -31,6 +32,9 @@ If you start to run out of storage for your SharePoint sites, you can add storag
 > [!NOTE]
 > If you bought your subscription through Volume Licensing or a CSP, you can't buy **Office 365 Extra File Storage** for your organization directly from Microsoft. Contact your representative or partner for help.
 > For information about OneDrive storage, see [Set the default storage space for OneDrive users](/onedrive/set-default-storage-space).
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Before you begin
 
