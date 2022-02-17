@@ -156,9 +156,9 @@ conceptualContent:
   #Card
     - title: How do I...
       links:
-        - url: ../admin/admin-overview/sign-up-for-office-365.md
-          itemType: get-started
-          text: Sign up for Microsoft 365 Business Premium
+        - url: ../admin/manage/find-your-partner-or-reseller.md
+          itemType: how-to-guide
+          text: Find a Microsoft partner
         - url: ../commerce/subscriptions/upgrade-to-different-plan.md
           itemType: how-to-guide
           text: Migrate from Microsoft 365 Business Standard 
