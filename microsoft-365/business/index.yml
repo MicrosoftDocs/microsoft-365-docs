@@ -93,6 +93,24 @@ conceptualContent:
         - url: ../security/defender-business/mdb-faq.yml
           itemType: reference
           text: FAQ
+ # Card
+    - title: What is Microsoft 365 Lighthouse?
+      links:
+        - url: ../lighthouse/m365-lighthouse-overview.md
+          itemType: overview
+          text: Overview
+        - url: ../lighthouse/m365-lighthouse-sign-up.md
+          itemType: how-to-guide
+          text: How to sign up
+        - url: ../lighthouse/m365-lighthouse-configure-portal-security.md
+          itemType: how-to-guide
+          text: Set up portal security
+        - url: ../lighthouse/m365-lighthouse-deploy-standard-tenant-configurations-overview.md
+          itemType: overview
+          text: Baselines for customer tenants
+        - url: ../lighthouse/m365-lighthouse-faq.yml
+          itemType: reference
+          text: FAQ
   #Card
     - title: Resources for partners (English only)
       links:
@@ -120,24 +138,7 @@ conceptualContent:
         - url: ../security/office-365-security/anti-malware-protection-faq-eop.md
           itemType: reference
           text: FAQ
- # Card
-    - title: What is Microsoft 365 Lighthouse?
-      links:
-        - url: ../lighthouse/m365-lighthouse-overview.md
-          itemType: overview
-          text: Overview
-        - url: ../lighthouse/m365-lighthouse-sign-up.md
-          itemType: how-to-guide
-          text: How to sign up
-        - url: ../lighthouse/m365-lighthouse-configure-portal-security.md
-          itemType: how-to-guide
-          text: Set up portal security
-        - url: ../lighthouse/m365-lighthouse-deploy-standard-tenant-configurations-overview.md
-          itemType: overview
-          text: Baselines for customer tenants
-        - url: ../lighthouse/m365-lighthouse-faq.yml
-          itemType: reference
-          text: FAQ
+
   # Card
     - title: Manage data
       links:
