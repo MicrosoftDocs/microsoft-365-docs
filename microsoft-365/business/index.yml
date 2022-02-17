@@ -120,10 +120,6 @@ conceptualContent:
         - url: ../security/office-365-security/anti-malware-protection-faq-eop.md
           itemType: reference
           text: FAQ
-      # footerLink (optional)
-      footerLink:
-        url: /microsoft-365/admin/
-        text: See more 
  # Card
     - title: Manage threats
       links:
