@@ -36,7 +36,7 @@ productDirectory:
     - title: What's new?
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-      summary: Microsoft 365 Business Premium now includes Microsoft Defender for Business capabilities to protect your devices!
+      summary: Microsoft 365 Business Premium now includes Defender for Business to protect your devices!
       url: https://aka.ms/MDB-previewblog
     # Card
     - title: Are you a Microsoft partner?
