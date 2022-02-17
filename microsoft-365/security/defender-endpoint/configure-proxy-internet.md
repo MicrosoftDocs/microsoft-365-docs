@@ -235,7 +235,7 @@ The \*.blob.core.windows.net URL endpoint can be replaced with the URLs shown in
 
 Verify, the proxy configuration is completed successfully. The WinHTTP can then discover and communicate through the proxy server in your environment, and then the proxy server will allow  traffic to the Defender for Endpoint service URLs.
 
-1. Download the [Microsoft Defender for Endpoint Client Analyzer tool](https://aka.ms/mdeanalyzer) to the PC, where Defender for Endpoint sensor is running on.
+1. Download the [Microsoft Defender for Endpoint Client Analyzer tool](https://aka.ms/mdeanalyzer) to the PC, where Defender for Endpoint sensor is running on. For downlevel servers, use the latest preview edition is available for download [Microsoft Defender for Endpoint Client Analyzer tool Beta](https://aka.ms/BetaMDEAnalyzer).
 
 2. Extract the contents of MDEClientAnalyzer.zip on the device.
 
