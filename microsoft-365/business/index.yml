@@ -138,7 +138,6 @@ conceptualContent:
         - url: ../security/office-365-security/anti-malware-protection-faq-eop.md
           itemType: reference
           text: FAQ
-
   # Card
     - title: Manage data
       links:
@@ -158,51 +157,7 @@ conceptualContent:
       footerLink:
         url: ../compliance/index.yml
         text: See more
-  # Card
-    - title: Manage devices
-      links:
-        - url: ../admin/devices/view-policies-and-devices.md
-          itemType: how-to-guide
-          text: PC & Mobile devices
-        - url: ../admin/devices/remove-company-data.md
-          itemType: how-to-guide
-          text: Remove company data
-        - url: ../admin/devices/reset-devices-to-factory-settings.md
-          itemType: how-to-guide
-          text: Wipe and reset
-        - url: /intune/index
-          itemType: overview
-          text: Intune
-        - url: ../admin/setup/manage-windows-devices.md
-          itemType: how-to-guide
-          text: Set up hybrid Azure AD join
-        - url: ../admin/setup/access-resources.md
-          itemType: how-to-guide
-          text: Set up Azure AD join 
-        - url: /windows/deployment/windows-autopilot/windows-autopilot
-          text: Windows Autopilot
-          itemType: overview    
-      # footerLink (optional)
-      footerLink:
-        url: ../admin/setup/manage-windows-devices.md
-        text: See more
-  # Card
-    - title: Monitor security
-      links:
-        - url: ../security/defender/microsoft-secure-score.md
-          itemType: how-to-guide
-          text: Secure score
-        - url: /intune/apps/app-protection-policies-monitor
-          itemType: overview
-          text: Intune App Protection Policies report
-        - url: ../enterprise/view-service-health.md
-          itemType: how-to-guide
-          text: Health monitoring alerts
-      # footerLink (optional)
-      footerLink:
-        url: ../security/index.yml
-        text: See more
-  # Card
+  #Card
     - title: Support and community
       links:
         - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog
