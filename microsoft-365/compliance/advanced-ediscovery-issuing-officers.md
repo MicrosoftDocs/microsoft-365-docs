@@ -18,7 +18,7 @@ ms.assetid:
 description: "You can add organization-wide issuing officers in Advanced eDiscovery so they can be added to any custodial communication in any case in your organization."
 ---
 
-# Add or remove issuing officers in Advanced eDiscovery
+# Manage issuing officers in Advanced eDiscovery
 
 When you or others create a hold notification or other type of communication that is sent to a user who is a custodian in case, you have to specify an issuing officer. The notification is sent to the custodian on behalf of the specified issuing officer. For example, a paralegal in your organization might be responsible for creating and sending hold notifications to custodians in a case. In this scenario, the paralegal can specify an attorney in the organization as the issuing officer. Who can be specified as an issuing officer? There are two types of users who can be selected as an issuing officer for a custodian communication:
 
@@ -46,9 +46,9 @@ This article explains how to add and remove users to the list of organization-wi
 
    ![Issuing officers settings page.](..\media\AeDIssuingOfficers1.png)
 
-3. Click **Add** and then search for and add one or more users to the list of issuing officers. 
+3. Click **Add** and then search for and add one or more users to the list of issuing officers.
 
-After you add users as issuing officers, you or other users will be able to specify these users as an issuing officer for custodian communications for any case in your organization.
+After you add users as issuing officers, you or other users will be able to specify these users as an issuing officer for custodian communications for any case in your organization. For more information about creating custodian communications, see [Create a legal hold notice](create-hold-notification.md).
 
 ## Remove an issuing officer
 

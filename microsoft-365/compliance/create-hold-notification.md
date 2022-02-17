@@ -32,33 +32,33 @@ The article outlines the steps in the hold notification workflow.
 
 The first step is to specify the appropriate details for legal hold notices or other custodian communications.
 
-![Name Communication Page.](../media/NameCommunication.PNG)
+![Name Communication page.](../media/NameCommunication.PNG)
 
 1. In the Microsoft 365 compliance center, go to **eDiscovery > Advanced** to display the list of cases in your organization.
 
 2. Select a case, click the **Communications** tab, and then click **New communication**.
 
-3. On the **Name communication** page, specify the following (required) communication details.
+3. On the **Name communication** page, specify the following communication settings.
 
     - **Name**: This is the name for the communication.
 
-    - **Issuing officer**: The dropdown list displays a list of case members. For more information on how to add new members to a case, see [Create an Advanced eDiscovery case](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case). Each notice sent to custodians will be sent on behalf of the specified issuing officer.
+    - **Issuing officer**: The drop-down list displays the issuing officers for your organization and the members of the case. Issuing officers are added by an eDiscovery Administrator and are available in all Advanced eDiscovery cases in your organization. For more information, see [Manage issuing officers](advanced-ediscovery-issuing-officers.md).
 
-> [!NOTE]
-> The issuing officer must have an **active mailbox** to show up in the Issuing Officer dropdown
+    Each notice sent to custodians will be sent on behalf of the selected issuing officer.
 
+    - **Select communication template**: The drop-down list displays the templates from the Communications library on the Advanced eDiscovery settings page. If you select a template, it will be displayed on the **Define portal content** as a starting point for the text of the notification that you're creating. If you don't select a template, the you'll have to create the notice yourself from scratch. For more information about communication templates, see [Manage custodian communications templates](advanced-ediscovery-communications-library.md).
 
 4. Click **Next**.
 
 ## Step 2: Define the portal content
 
-Next, you can create and add the content of the hold notice. On the **Define portal content** page in the **Create communication** wizard, specify the contents of the hold notice. This content will be automatically appended to the Issuance, Re-Issue, Reminder, and Escalation notices. Additionally, this content will appear in the custodian's Compliance Portal.
+Next, you can create and add the content of the hold notice. On the **Define portal content** page in the **Create communication** wizard, specify the contents of the hold notice. This content will be automatically appended to the Issuance, Re-Issue, Reminder, and Escalation notices. Additionally, this content will appear in the custodian's Compliance Portal. If you selected a template from the Communications library, it will be displayed and provide a starting point for the notice you're creating.
 
 ![Portal Content Page.](../media/PortalContent.PNG)
 
 To create the portal content:
 
-1. Type (or cut and paste from another document) your hold notice in the textbox for the portal content.
+1. Type (or cut and paste from another document) your hold notice in the textbox for the portal content. If you selected a communications template on the previous wizard page, the template is displayed. You can edit edit the template content as necessary.
 
 2. Insert merge variables into your notice to customize the notice and share the Custodian Compliance Portal.
 

@@ -18,7 +18,7 @@ ms.assetid:
 description: "You can add custodian communications templates (such as a template for hold notification) in Advanced eDiscovery so they can be used in any case in your organization."
 ---
 
-# Add or remove custodian communications templates in Advanced eDiscovery
+# Manage custodian communications templates in Advanced eDiscovery
 
 When you or other users create a hold notification or other types of custodian communications, you had to create the communication document from scratch by using the communications editor on the **Communications** tab in an Advanced eDiscovery case. Now, we've released a new feature that lets you create communications templates that can be used to create communications in any case in your organization. After communication templates are created, they're available to be used in a case. This means that paralegals or other users who create custodian communications don't have to start from scratch to build a notification. Instead, they can select a template to build the notification that is sent to a custodian.
 
