@@ -79,6 +79,21 @@ conceptualContent:
           itemType: how-to-guide
           text: 4. Set up your security features
   #Card
+    - title: What is Microsoft Defender for Business?
+      links:
+        - url: ../security/defender-business/mdb-overview.md
+          itemType: overview
+          text: Overview
+        - url: ../security/defender-business/get-defender-business.md
+          itemType: how-to-guide
+          text: How to get Defender for Business 
+        - url: ../security/defender-business/mdb-setup-configuration.md
+          itemType: overview
+          text: See the setup and configuration process
+        - url: ../security/defender-business/mdb-faq.yml
+          itemType: reference
+          text: FAQ
+  #Card
     - title: Resources for partners (English only)
       links:
         - url: https://www.microsoft.com/microsoft-365/partners/business
