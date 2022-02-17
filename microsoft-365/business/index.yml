@@ -106,17 +106,17 @@ conceptualContent:
           itemType: how-to-guide
           text: See the Microsoft 365 Business Premium Partner Playbook and Readiness Series
   # Card
-    - title: Manage users
+    - title: What is Microsoft Defender for Office 365?
       links:
-        - url: ../admin/add-users/add-users.md
+        - url: ../security/office-365-security/defender-for-office-365.md
+          itemType: overview
+          text: Overview
+        - url: ../security/office-365-security/office-365-evaluation.md
           itemType: how-to-guide
-          text: Add a user
-        - url: /office365/admin/add-users/remove-former-employee
+          text: How to get Defender for Office 365
+        - url: ../security/office-365-security/protect-against-threats.md
           itemType: how-to-guide
-          text: Remove a user
-        - url: /office365/admin/add-users/reset-passwords
-          itemType: how-to-guide
-          text: Reset someone's password
+          text: See the setup process
       # footerLink (optional)
       footerLink:
         url: /microsoft-365/admin/
