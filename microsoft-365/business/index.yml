@@ -138,25 +138,6 @@ conceptualContent:
         - url: ../security/office-365-security/anti-malware-protection-faq-eop.md
           itemType: reference
           text: FAQ
-  # Card
-    - title: Manage data
-      links:
-        - url: ../compliance/data-loss-prevention-policies.md
-          itemType: overview
-          text: Data Loss Prevention 
-        - url: https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980
-          itemType: how-to-guide
-          text: Send encrypted email
-        - url: ./set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
-          itemType: how-to-guide
-          text: Set up email retention
-        - url: ../admin/security-and-compliance/set-up-compliance.md
-          itemType: video
-          text: Create and use sensitivity labels
-      # footerLink (optional)
-      footerLink:
-        url: ../compliance/index.yml
-        text: See more
   #Card
     - title: Support and community
       links:
@@ -187,7 +168,4 @@ conceptualContent:
         - url: ../commerce/subscriptions/upgrade-to-different-plan.md
           itemType: how-to-guide
           text: Migrate to Microsoft 365 Enterprise E3
-      # footerLink (optional)
-      footerLink:
-        url: ../admin/admin-overview/what-is-microsoft-365.md
-        text: See more
+
