@@ -27,9 +27,9 @@ To create a simulation automation, do the following steps:
 
    To go directly to the **Simulation automations** tab, use <https://security.microsoft.com/attacksimulator?viewid=simulationautomation>.
 
-2. On the **Simulation automations** tab, select ![Create simulation icon.](../../media/m365-cc-sc-create-icon.png) **Create simulation**.
+2. On the **Simulation automations** tab, select ![Create automation icon.](../../media/m365-cc-sc-create-icon.png) **Create automation**.
 
-   ![Create simulation button on the Simulation automations tab in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-sim-automations-create.png)
+   ![Create automation button on the Simulation automations tab in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-sim-automations-create.png)
 
 3. The creation wizard opens. The rest of this article describes the pages and the settings they contain.
 
