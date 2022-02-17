@@ -109,21 +109,6 @@ conceptualContent:
           itemType: how-to-guide
           text: See the Microsoft 365 Business Premium Partner Playbook and Readiness Series
   # Card
-    - title: How do I...
-      links:
-        - url: ../admin/manage/find-your-partner-or-reseller.md
-          itemType: how-to-guide
-          text: Find a Microsoft partner
-        - url: ../commerce/subscriptions/upgrade-to-different-plan.md
-          itemType: how-to-guide
-          text: Migrate from Microsoft 365 Business Standard 
-        - url: ../commerce/subscriptions/upgrade-to-different-plan.md
-          itemType: how-to-guide
-          text: Migrate from Office 365 E3 
-        - url: ../commerce/subscriptions/upgrade-to-different-plan.md
-          itemType: how-to-guide
-          text: Migrate to Microsoft 365 Enterprise E3
-  # Card
     - title: Set up Microsoft 365 Business Premium
       links:
         - url: ../admin/admin-overview/sign-up-for-office-365.md#watch-sign-up-for-microsoft-365-business-premium
@@ -168,5 +153,20 @@ conceptualContent:
         - url: https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB
           itemType: overview
           text: Tech Community for small and medium-sized businesses
+  # Card
+    - title: How do I...
+      links:
+        - url: ../admin/manage/find-your-partner-or-reseller.md
+          itemType: how-to-guide
+          text: Find a Microsoft partner
+        - url: ../commerce/subscriptions/upgrade-to-different-plan.md
+          itemType: how-to-guide
+          text: Migrate from Microsoft 365 Business Standard 
+        - url: ../commerce/subscriptions/upgrade-to-different-plan.md
+          itemType: how-to-guide
+          text: Migrate from Office 365 E3 
+        - url: ../commerce/subscriptions/upgrade-to-different-plan.md
+          itemType: how-to-guide
+          text: Migrate to Microsoft 365 Enterprise E3
 
 
