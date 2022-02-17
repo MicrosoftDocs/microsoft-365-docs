@@ -114,6 +114,8 @@
             href: microsoft-secure-score-whats-coming.md
           - name: What's new
             href: microsoft-secure-score-whats-new.md
+      - name: Protect your endpoints 
+        href: ../defender-endpoint/index.yml
       - name: Protect your identities
         items:
           - name: Sensor settings and health
@@ -130,6 +132,8 @@
             href: ../defender-identity/exclusions.md
           - name: Email and syslog notifications
             href: ../defender-identity/notifications.md
+      - name: Protect your Office 365 workloads
+        href: ../office-365-security/index.yml
     - name: Investigate and respond to threats
       items: 
        - name: Overview
