@@ -51,7 +51,7 @@ From the **Network devices** and **IoT devices** tabs, you’ll also see informa
 
 ![Image of devices list with list of devices.](images/device-inventory-networkdevices.png)
 
-A total count for the devices listed the current inventory view appear on top of each tab. The counts for devices that are not yet onboarded, or have been identified as high risk or having a high exposure can help you prioritize devices for security posture improvements.
+A total count for the devices listed in the current inventory view appear on top of each tab. The counts for devices that are not yet onboarded, or have been identified as high risk or having a high exposure can help you prioritize devices for security posture improvements.
 
 ## Explore the device inventory
 
@@ -69,14 +69,16 @@ There are several options you can choose from to customize the devices list view
 
 You can use the sort and filter functionality available on each device inventory tab to get a more focused view. This can help you assess and manage the devices in your organization.
 
-### Available filters
+## Available filters
 
 The following filters are available for all of the device inventory tabs:
 
-**Risk level**
+### Risk level
+
 The risk level reflects the overall risk assessment of the device based on a combination of factors, including the types and severity of active alerts on the device. Resolving active alerts, approving remediation activities, and suppressing subsequent alerts can lower the risk level.
 
-**Exposure level**
+### Exposure level
+
 The exposure level reflects the current exposure of the device based on the cumulative impact of its pending security recommendations. The possible levels are low, medium, and high. Low exposure means your devices are less vulnerable from exploitation.
 
 If the exposure level says “No data available,” there are a few reasons why this may be the case:
@@ -85,24 +87,30 @@ If the exposure level says “No data available,” there are a few reasons why 
 - Device OS not supported - see [minimum requirements for Microsoft Defender for Endpoint](https://microsoft-my.sharepoint.com/personal/siosulli_microsoft_com/Documents/Security%20Posture/TVM/minimum-requirements.md).
 - Device with stale agent (unlikely).
 
-**Tags**
+### Tags
+
 Filter the list based on the grouping and tagging that you’ve added to individual devices. See [Create and manage device tags](https://microsoft-my.sharepoint.com/personal/siosulli_microsoft_com/Documents/Security%20Posture/TVM/machine-tags.md).
 
-**Device value**
+### Device value
+
 Filter the list based on the whether the device has been marked as high value or low value.
 
-**Exclusion state**
+### Exclusion state
+
 Filter the list based on whether the device has been excluded or not.
 
 Depending on the tab you’re on you can also filter by:
 
-**OS Platform**
+### OS Platform
+
 Select only the OS platforms you’re interested in investigating.
 
-**Windows versions**
+### Windows versions
+
 Select only the Windows versions you’re interested in investigating.
 
-**Sensor health state**
+### Sensor health state
+
 Filter by the following device health states:
 
 - **Active**: Devices that are actively reporting sensor data to the service.
@@ -113,7 +121,7 @@ Filter by the following device health states:
 
   For more information on how to address issues on misconfigured devices see, [Fix unhealthy sensors](https://microsoft-my.sharepoint.com/personal/siosulli_microsoft_com/Documents/Security%20Posture/TVM/fix-unhealthy-sensors.md).
 
-**Onboarding status**
+### Onboarding status
 
 Onboarding status indicates whether the device is currently onboarded to Microsoft Defender for Endpoint or not. You can filter by the following states:
 
@@ -122,23 +130,27 @@ Onboarding status indicates whether the device is currently onboarded to Microso
 - **Unsupported**: The endpoint was discovered in the network, but is not supported by Microsoft Defender for Endpoint.
 - **Insufficient info**: The system couldn’t determine the supportability of the device.
 
-**Antivirus status**
+### Antivirus status
+
 Filter the view based on whether the antivirus status is disabled, not updated or unknown.
 
-**First seen**
+### First seen
+
 Filter your view based on when the device was first seen in the network or when it was first reported by the Microsoft Defender for Endpoint sensor.
 
-**Group**
+### Group
+
 Filter the list based on the group you’re interested in investigating.
 
-**Managed by**
+### Managed by
+
 Managed by indicates how the device is being managed. You can filter by:
 
 - Microsoft Defender for Endpoint
 - Mobile device management (MDM)
 - Unknown: This could be due the running an outdated Windows versions, SCCM being in place, or another third party MDM
 
-### Available column*
+### Available column
 
 You can use the IP address column to view this information in your device inventory view. You can add this column through the “Customized columns” option. 
 
