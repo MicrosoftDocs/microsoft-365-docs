@@ -55,7 +55,7 @@ A total count for the devices listed in the current inventory view appears on to
 
 ## Explore the device inventory
 
-There are several options you can choose from to customize the devices list view. On the top navigation for each tab you can:
+There are several options you can choose from to customize the devices inventory view. On the top navigation for each tab you can:
 
 - Search for a device by name
 - Search for a device by the most recently used IP address or IP address prefix
@@ -81,11 +81,11 @@ Filter | Description
 **OS Platform** </br>| Filter by the OS platforms you’re interested in investigating </br></br>(_Computers and mobile and IoT devices only._).
 **First seen** </br> | Filter your view based on when the device was first seen in the network or when it was first reported by the Microsoft Defender for Endpoint sensor.</br></br>(_Computers and mobile and IoT devices only._).
 **Windows version** </br> | Filter by the Windows versions you’re interested in investigating.</br></br> (_Computers and mobile only._)
-**Sensor health state** </br> | Filter by the following device health states:</br> - **Active**: Devices that are actively reporting sensor data to the service.</br> - **Inactive**: Devices that have stopped sending signals for more than 7 days. </br> - **Misconfigured**: Devices that have impaired communications with service or are unable to send sensor data. </br> Misconfigured devices can further be classified to: </br>  - No sensor data </br>  - Impaired communications </br>  For more information on how to address issues on misconfigured devices see, [Fix unhealthy sensors](https://microsoft-my.sharepoint.com/personal/siosulli_microsoft_com/Documents/Security%20Posture/TVM/fix-unhealthy-sensors.md).</br></br> (_Computers and mobile only._)
+**Sensor health state** </br> | Filter by the following device health states:</br> - **Active**: Devices that are actively reporting sensor data to the service.</br> - **Inactive**: Devices that have stopped sending signals for more than 7 days. </br> - **Misconfigured**: Devices that have impaired communications with service or are unable to send sensor data. </br> Misconfigured devices can further be classified to: </br>  - No sensor data </br>  - Impaired communications </br>  For more information on how to address issues on misconfigured devices see, [Fix unhealthy sensors](https://microsoft-my.sharepoint.com/personal/siosulli_microsoft_com/Documents/Security%20Posture/TVM/fix-unhealthy-sensors.md).</br></br>(_Computers and mobile only._)
 **Onboarding status** </br> | Onboarding status indicates whether the device is currently onboarded to Microsoft Defender for Endpoint or not. You can filter by the following states: </br> - **Onboarded**: The endpoint is onboarded to Microsoft Defender for Endpoint.  </br> - **Can be onboarded**: The endpoint was discovered in the network as a supported device, but it’s not currently onboarded. Microsoft highly recommends onboarding these devices. </br> - **Unsupported**: The endpoint was discovered in the network, but is not supported by Microsoft Defender for Endpoint. </br> - **Insufficient info**: The system couldn’t determine the supportability of the device.</br></br> (_Computers and mobile only._)
 **Antivirus status** </br> | Filter the view based on whether the antivirus status is disabled, not updated or unknown.</br></br> (_Computers and mobile only._)
 **Group** </br> | Filter the list based on the group you’re interested in investigating. </br></br> (_Computers and mobile only._)
-**Managed by** </br> | Managed by indicates how the device is being managed. You can filter by:</br>- Microsoft Defender for Endpoint </br> - Mobile device management (MDM) </br>- Unknown: This could be due the running an outdated Windows versions, SCCM being in place, or another third party MDM</br></br> (_Computers and mobile only._)
+**Managed by** </br> | Managed by indicates how the device is being managed. You can filter by:</br>- Microsoft Defender for Endpoint </br> - Mobile device management (MDM) </br>- Unknown: This could be due the running an outdated Windows versions, SCCM being in place, or another third party MDM. </br></br> (_Computers and mobile only._)
 **Device Type** </br> | Filter by the device type you’re interested in investigating.</br></br> (_IoT devices only._)
 
 ## Related topics
