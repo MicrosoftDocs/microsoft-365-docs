@@ -55,7 +55,7 @@ At the top of each device inventory tab, you can see the total number of devices
 
 ## Explore the device inventory
 
-There are several options you can choose from to customize the devices inventory view. On the top navigation for each tab you can:
+There are several options you can choose from to customize the device inventory view. On the top navigation for each tab you can:
 
 - Search for a device by name
 - Search for a device by the most recently used IP address or IP address prefix

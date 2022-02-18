@@ -261,7 +261,6 @@
 
 ### [Device inventory]()
 #### [Device inventory](machines-view-overview.md)
-#### [Device timeline event flags](device-timeline-event-flag.md)
 #### [Manage device group and tags](machine-tags.md)
 #### [Exclude devices](exclude-devices.md)
 
@@ -419,7 +418,7 @@
 ##### [Investigate a domain](investigate-domain.md)
 ###### [Investigate connection events that occur behind forward proxies](investigate-behind-proxy.md)
 ##### [Investigate a user account](investigate-user.md)
-
+#### [Device timeline event flags](device-timeline-event-flag.md)
 #### [Take response actions]()
 ##### [Take response actions on a device]()
 ###### [Response actions on devices](respond-machine-alerts.md)
