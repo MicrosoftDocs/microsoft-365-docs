@@ -1,6 +1,6 @@
 ---
 title: Run an attack simulation in a Microsoft 365 Defender pilot environment
-description: Run attack simulations for Microsoft 365 Defender to see how how alerts and incidents are presented, insights are gained, and threats are quickly remediated.
+description: Run attack simulations for Microsoft 365 Defender to see how alerts and incidents are presented, insights are gained, and threats are quickly remediated.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
