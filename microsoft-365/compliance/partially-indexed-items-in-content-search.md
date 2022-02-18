@@ -113,6 +113,7 @@ As a workaround for this limitation, we recommend the following procedure.
    ```text
    <original query> AND ((IndexingErrorCode>0 OR IndexingErrorCode<0) AND sent:date1..date2)
    ```
+
    Adding this clause will return partially indexed items that match your original search query and that fall within a specific date range.<sup>2</sup>
 
 4. Export the results of the search from step 3, and this time include partially indexed items in the export. To do this, you would select the **All items, including ones that have unrecognized format, are encrypted, or weren't indexed for other reasons** export option.

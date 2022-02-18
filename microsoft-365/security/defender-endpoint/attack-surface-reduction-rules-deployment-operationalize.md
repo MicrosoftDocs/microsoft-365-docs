@@ -1,5 +1,5 @@
 ---
-title: Attack surface reduction rules deployment Phase 4 - operationalize
+title: Operationalize attack surface reduction (ASR) rules deployment
 description: Provides guidance to operationalize your attack surface reduction rules deployment.
 keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
@@ -20,11 +20,11 @@ ms.collection: m365solution-scenario
 ms.date: 1/18/2022
 ---
 
-# Phase 4 - operationalize
+# Step 4: Operationalize ASR rules
 
-After you've fully deployed ASR rules, it's vital that you have processes in place to monitor and respond to ASR-related activities.
+After you've fully deployed attack surface reduction (ASR) rules, it's vital that you have processes in place to monitor and respond to ASR-related activities.
 
-## Manage false positives
+## Managing false positives
 
 False positives/negatives can occur with any threat protection solution. False positives are cases in which an entity (such as a file or process) is detected and identified as malicious, although the entity isn't actually a threat. In contrast, a false negative is an entity that wasn't detected as a threat but is malicious. For more information about false positives and false negatives, see: [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
 
@@ -44,6 +44,8 @@ Advanced hunting is a query-based (Kusto Query Language) threat-hunting tool tha
 Through advanced hunting, it is possible to extract ASR rules information, create reports, and get in-depth information on the context of a given ASR rule audit or block event.
 
  You can query ASR rules events from the DeviceEvents table in the advanced hunting section of the Microsoft 365 Defender portal. For example, a simple query such as the one below can report all the events that have ASR rules as data source, for the last 30 days, and will summarize them by the ActionType count, that in this case it will be the actual codename of the ASR rule.
+
+ASR events shown in the advancing hunting portal are throttled to unique processes seen every hour. The time of the ASR event is the first time the event is seen within that hour.
 
 > [!div class="mx-imgBorder"]
 > ![Microsoft 365 Defender Advanced hunting query command line](images/asr-defender365-advanced-hunting3.png)
@@ -72,10 +74,10 @@ For more information about hunting options, see: [Demystifying attack surface re
 
 ## Topics in this deployment collection
 
-[ASR rules deployment overview](attack-surface-reduction-rules-deployment.md)
+[ASR rules deployment prerequisites](attack-surface-reduction-rules-deployment.md)
 
-[Phase 1: Plan](attack-surface-reduction-rules-deployment-plan.md)
+[Step 1: Plan ASR rules deployment](attack-surface-reduction-rules-deployment-plan.md)
 
-[Phase 2: Test](attack-surface-reduction-rules-deployment-test.md)
+[Step 2: Test ASR rules](attack-surface-reduction-rules-deployment-test.md)
 
-[Phase 3: Implement](attack-surface-reduction-rules-deployment-implement.md)
+[Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md)

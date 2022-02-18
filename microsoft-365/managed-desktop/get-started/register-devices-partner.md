@@ -50,7 +50,7 @@ Once you've established the relationship with your customers, you can use Partne
 
 If you receive an error message while trying to upload the .csv file, check the format of the file. Make sure the column order matches what is described in [Use Windows Autopilot profiles on new devices to customize a customer's out-of-box experience](/partner-center/autopilot#add-devices-to-a-customers-account). You can also use the sample .csv file provided from the link next to **Add devices** to create a device list.
 
-For more information about Autopilot in Partner scenarios, see [Add devices to a customer’s account](/partner-center/autopilot#add-devices-to-a-customers-account).
+For more information about Autopilot in Partner scenarios, see [Add devices to a customer's account](/partner-center/autopilot#add-devices-to-a-customers-account).
 
 ## Register devices by using the OEM API
 
