@@ -40,6 +40,9 @@ Visit the [Microsoft Defender for Endpoint demo website](https://demo.wd.microso
 - Block at first sight (BAFS) protection
 - Potentially unwanted applications (PUA) protection
 
+> [!NOTE]
+> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
+
 ## Configure next-generation protection services
 
 For information on how to configure next-generation protection services, see [Configure Microsoft Defender Antivirus features](configure-microsoft-defender-antivirus-features.md).
