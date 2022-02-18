@@ -61,7 +61,7 @@ To connect to Compliance Center PowerShell, see [Connect to Compliance Center Po
    [System.IO.File]::WriteAllBytes('XMLFileAndPath', $rulepak.SerializedClassificationRuleCollection)
    ```
 
-   This example export the rule package to the file named ExportedRulePackage.xml in the C:\My Documents folder.
+   This example exports the rule package to the file named ExportedRulePackage.xml in the C:\My Documents folder.
 
    ```powershell
    [System.IO.File]::WriteAllBytes('C:\My Documents\ExportedRulePackage.xml', $rulepak.SerializedClassificationRuleCollection)
@@ -85,4 +85,4 @@ For detailed syntax and parameter information, see [Set-DlpSensitiveInformationT
 
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
-- [What the DLP functions look for](what-the-dlp-functions-look-for.md)
+- [Sensitive information type functions](sit-functions.md)
