@@ -89,10 +89,10 @@ conceptualContent:
           text: How to sign up and become a Microsoft CSP
         - url: ../lighthouse/m365-lighthouse-configure-portal-security.md
           itemType: how-to-guide
-          text: Set up portal security
+          text: Set up and secure your Lighthouse portal
         - url: ../lighthouse/m365-lighthouse-deploy-standard-tenant-configurations-overview.md
           itemType: overview
-          text: Baselines for customer tenants
+          text: Use baselines for customer tenants
         - url: ../lighthouse/m365-lighthouse-faq.yml
           itemType: reference
           text: FAQ
