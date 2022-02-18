@@ -49,7 +49,7 @@ The Content Center site can be provisioned from the [SharePoint look book servic
 
 5. Select **Open site**, and you’ll see your Content Center site. From here, you can explore the site and learn more about SharePoint Syntex. 
 
-For more information about provisioning from the SharePoint look book service, see [Provision a new learning pathways solution](https://docs.microsoft.com/en-us/office365/customlearning/custom_provision).
+For more information about provisioning from the SharePoint look book service, see [Provision a new learning pathways solution](/office365/customlearning/custom_provision).
 
 ## Explore the site
 
