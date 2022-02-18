@@ -53,7 +53,7 @@ conceptualContent:
       links:
         - url: microsoft-365-business-overview.md
           itemType: overview
-          text: Overview
+          text: Overview of Microsoft 365 Business Premium
         - url: ../business-video/index.yml
           itemType: video
           text: Microsoft 365 Business Premium training
@@ -109,11 +109,11 @@ conceptualContent:
           itemType: how-to-guide
           text: See the Microsoft 365 Business Premium Partner Playbook and Readiness Series
   # Card
-    - title: What is Microsoft Defender for Business?
+    - title: Protect your company's devices
       links:
         - url: ../security/defender-business/mdb-overview.md
           itemType: overview
-          text: Overview
+          text: Overview of Microsoft Defender for Business
         - url: ../security/defender-business/get-defender-business.md
           itemType: how-to-guide
           text: How to get Defender for Business 
@@ -124,11 +124,11 @@ conceptualContent:
           itemType: reference
           text: FAQ
   # Card
-    - title: What is Microsoft Defender for Office 365?
+    - title: Protect your email content and Office files
       links:
         - url: ../security/office-365-security/defender-for-office-365.md
           itemType: overview
-          text: Overview
+          text: Overview of Microsoft Defender for Office 365
         - url: ../security/office-365-security/office-365-evaluation.md
           itemType: how-to-guide
           text: How to get Defender for Office 365
