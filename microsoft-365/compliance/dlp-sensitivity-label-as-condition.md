@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: learn about the services and item types that you can use sensitivity labels as conditions in DLP policies
+description: Learn about the services and item types that you can use sensitivity labels as conditions in DLP policies
 ---
 
 # Use sensitivity labels as conditions in DLP policies
 
-You can use [sensitivity labels](sensitivity-labels.md) as a condition in DLP policies for these location:
+You can use [sensitivity labels](sensitivity-labels.md) as a condition in DLP policies for these locations:
 
 - Exchange Online email messages
 - SharePoint Online
@@ -70,11 +70,11 @@ You can use sensitivity labels as conditions on these items and in these scenari
 
 - Using sensitivity labels as a condition is supported across all workloads as indicated in the support matrix above.
 
-- DLP policy tips will continue to be shown across workloads (except Outlook Win32) for DLP policies which contain sensitivity label as a condition.
+- DLP policy tips will continue to be shown across workloads (except Outlook Win32) for DLP policies that contain sensitivity label as a condition.
 
 - Sensitivity labels will also appear as a part of the incident report email if a DLP policy with sensitivity label as a condition is matched.
 
-- Sensitivity label details will also be shown in the DLP rule match audit log for a DLP policy match which contains sensitivity label as a condition.
+- Sensitivity label details will also be shown in the DLP rule match audit log for a DLP policy match that contains sensitivity label as a condition.
 
 
 ### Support policy tips
