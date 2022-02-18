@@ -31,7 +31,7 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Incident management is critical in ensuring that threats are contained and addressed.
+Incident management is critical to ensuring that incidents are named, assigned, and tagged to optimize time in your incident workflow and more quickly contain and address threats.
 
 You can manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
 
@@ -70,7 +70,7 @@ You can edit the incident name from the **Incident name** field on the **Manage 
 
 You can add custom tags to an incident, for example to flag a group of incidents with a common characteristic. You can later filter the incident queue for all incidents that contain a specific tag.
 
-When you start typing, you have the option to select from a list of selected tags.
+When you start typing, you have the option to select from a list of previously-used and selected tags.
 
 ## Assign an incident
 
