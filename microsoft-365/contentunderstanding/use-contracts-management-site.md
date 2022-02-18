@@ -12,6 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
+ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to provision, use, and customize the Contracts Management site template in Microsoft SharePoint Syntex.
 ---
 
@@ -64,7 +65,7 @@ The Contracts Management site can be provisioned from the [SharePoint look book 
 
 5. Select **Open site**, and you’ll see your Contracts Management site. From here, you can explore the site and customize the pages and content. 
 
-For more information about provisioning from the SharePoint look book service, see [Provision a new learning pathways solution](https://docs.microsoft.com/office365/customlearning/custom_provision).
+For more information about provisioning from the SharePoint look book service, see [Provision a new learning pathways solution](/office365/customlearning/custom_provision).
 
 ## Customize the site
 
