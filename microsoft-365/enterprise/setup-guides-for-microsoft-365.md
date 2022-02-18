@@ -88,9 +88,9 @@ The [Microsoft Search setup guide](https://aka.ms/MicrosoftSearchSetup) helps yo
 
 ## Guides for authentication and access
 
-### Configure multifactor authentication (MFA)
+### Configure multi-factor authentication (MFA)
 
-The [Configure multifactor authentication (MFA) guide](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/featureexplorer/security/ConditionalAccess) provides information to secure your organization against breaches due to lost or stolen credentials. MFA immediately increases account security by prompting for multiple forms of verification to prove a user's identity when they sign in to an app or other company resource. This prompt could be to enter a code on the user's mobile device or to provide a fingerprint scan. MFA is enabled through Conditional Access, security defaults, or per-user MFA. This guide will provide the recommended MFA option for your org, based on your licenses and existing configuration.
+The [Configure multi-factor authentication (MFA) guide](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/featureexplorer/security/ConditionalAccess) provides information to secure your organization against breaches due to lost or stolen credentials. MFA immediately increases account security by prompting for multiple forms of verification to prove a user's identity when they sign in to an app or other company resource. This prompt could be to enter a code on the user's mobile device or to provide a fingerprint scan. MFA is enabled through Conditional Access, security defaults, or per-user MFA. This guide will provide the recommended MFA option for your org, based on your licenses and existing configuration.
 
 ### Identity security for Teams
 

@@ -28,12 +28,15 @@ We automatically configure these settings by default on Microsoft Managed Device
 When Microsoft Managed Desktop users receive a new device, they go through a first-run experience, by entering their Azure credentials, while setting up the device. After this process is completed, they can access their desktop and have the OneDrive experience.
 
 1. The system tells users that OneDrive has been configured and that they've been automatically signed into OneDrive.
+
 :::image type="content" source="media/onedrive-sync.png" alt-text="Notification reading you're now syncing OneDrive and you can edit files in OneDrive. click here to view your files.":::
 
 2. The system tells users that OneDrive Known Folder Move has been configured for them.
+
 :::image type="content" source="media/onedrive-folders.png" alt-text="Notification reading Your IT department backed up your important folders. The folders are now backed up to OneDrive and available from other devices.":::
 
 3. To prevent duplicate icons on the desktop when devices are reset or reimaged, the system automatically removes Microsoft Edge and Microsoft Teams icons from the OneDrive sync. This information is shown in File Explorer.
+
 :::image type="content" source="media/onedrive-teams.png" alt-text="File Explorer showing Teams and Edge listings with cleared check boxes and hover text reading Excluded from sync.":::
 
 ## OneDrive sync restrictions
