@@ -20,7 +20,7 @@ metadata:
 
 # productDirectory section (optional)
 productDirectory:
-  title: Productivity and advanced security with Microsoft 365 Business Premium # < 60 chars (optional)
+  title: Productivity and security with Microsoft 365 Business Premium # < 60 chars (optional)
   items:
     # Card
     - title: Watch
