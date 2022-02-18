@@ -69,7 +69,7 @@ There are several options you can choose from to customize the devices inventory
 
 You can use the sort and filter functionality available on each device inventory tab to get a more focused view. This can help you assess and manage the devices in your organization.
 
-## Use filters to customize the devices list views
+## Use filters to customize the devices inventory views
 
 Filter | Description
 :---|:---
@@ -87,6 +87,22 @@ Filter | Description
 **Group** </br> | Filter the list based on the group you’re interested in investigating. </br></br> (_Computers and mobile only._)
 **Managed by** </br> | Managed by indicates how the device is being managed. You can filter by:</br>- Microsoft Defender for Endpoint </br> - Mobile device management (MDM) </br>- Unknown: This could be due the running an outdated Windows versions, SCCM being in place, or another third party MDM. </br></br> (_Computers and mobile only._)
 **Device Type** </br> | Filter by the device type you’re interested in investigating.</br></br> (_IoT devices only._)
+
+## Use columns to customize the devices inventory views
+
+You can add or remove columns from the view and sort the entries by clicking on an available column header.
+
+On the **Computer and Mobiles** tab, select **Customize columns** to see the columns available. The default values are checked in the image below:
+
+![Image of devices list with list of devices.](images/computerandmobilescolumns.png)
+
+On the **Network devices** tab, select **Customize columns** to see the columns available. The default values are checked in the image below:
+
+![Image of devices list with list of devices.](images/networkdevicescolumns.png)
+
+On the **IoT devices** tab, select **Customize columns** to see the columns available. The default values are checked in the image below:
+
+![Image of devices list with list of devices.](images/iotdevicescolumns.png.png)
 
 ## Related topics
 
