@@ -82,7 +82,6 @@ Endpoint DLP monitors activity-based on MIME type, so activities will be capture
 
 File Types are a grouping of file formats which are utilized to protect specific workflows or areas of business. You can use one or more File types as conditions in your DLP policies.
 
-
 |File Type |App  |monitored file extensions  |
 |---------|---------|---------|
 |word processing |Word, PDF | .doc, .docx,  .docm, .dot, .dotx, .dotm, .docb, .pdf |
@@ -90,6 +89,15 @@ File Types are a grouping of file formats which are utilized to protect specific
 |presentation |PowerPoint|.ppt, .pptx, .pos, .pps, .pptm, .potx, .potm, .ppam, .ppsx|
 |archive  |file archive and compression tools | .zip, .zipx, .rar, .7z, .tar, .gz        |
 |email    |Outlook |.pst, .ost, .msg         |
+
+<!--
+### File extensions
+
+If the File types don't cover all the extensions you need, you enter file extensions separated by comma.
+
+> [!IMPORTANT]
+> Use of file extensions and file types is mutually exclusive, it should and OR in the UI not AND 
+-->
 
 
 ## What's different in Endpoint DLP
