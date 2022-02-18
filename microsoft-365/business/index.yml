@@ -25,25 +25,25 @@ productDirectory:
     # Card
     - title: Watch
       imageSrc: https://docs.microsoft.com/office/media/icons/video-play.svg
-      summary: Top five benefits of Microsoft 365 Business Premium
+      summary: Top five benefits of Microsoft 365 Business Premium.
       url: https://aka.ms/M365BPvideo
     # Card
-    - title: Compare plans
+    - title: Get the free partner kit
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-      summary: Compare Microsoft 365 plans for small and medium-sized businesses
-      url: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM
+      summary: Practical guidance and go to market resources for partners for securing hybrid work.
+      url: https://aka.ms/SMBSecurityKit
     # Card
     - title: What's new?
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-      summary: Microsoft 365 Business Premium now includes Defender for Business to protect your devices!
+      summary: Learn about new Defender for Business capabilities in Business Premium and Microsoft 365 Lighthouse.
       url: https://aka.ms/MDB-previewblog
     # Card
-    - title: Are you a Microsoft partner?
+    - title: Join the partner webinar series
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-      summary: Visit the Microsoft Partner Network.
-      url: https://www.microsoft.com/microsoft-365/partners/business 
+      summary: Learn how you can drive upsell and grow your business with Microsoft 365 Business Premium, Microsoft Defender for Business, and Microsoft 365 Lighthouse.
+      url: https://aka.ms/M365MDBseries 
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
