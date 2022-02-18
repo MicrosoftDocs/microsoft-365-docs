@@ -95,7 +95,7 @@ conceptualContent:
           text: Use baselines for customer tenants
         - url: ../lighthouse/m365-lighthouse-faq.yml
           itemType: reference
-          text: FAQ
+          text: Microsoft 365 Ligthouse FAQ
   # Card
     - title: Resources for partners (English only)
       links:
@@ -122,7 +122,7 @@ conceptualContent:
           text: See the setup and configuration process
         - url: ../security/defender-business/mdb-faq.yml
           itemType: reference
-          text: FAQ
+          text: Defender for Business FAQ
   # Card
     - title: Protect your email content and Office files
       links:
@@ -137,7 +137,7 @@ conceptualContent:
           text: See the setup process
         - url: ../security/office-365-security/anti-malware-protection-faq-eop.md
           itemType: reference
-          text: FAQ
+          text: Defender for Office 365 FAQ
   # Card
     - title: Support and community
       links:
@@ -158,7 +158,7 @@ conceptualContent:
       links:
         - url: ../admin/manage/find-your-partner-or-reseller.md
           itemType: how-to-guide
-          text: Find a Microsoft partner
+          text: Find a Microsoft partner to help my business
         - url: ../commerce/subscriptions/upgrade-to-different-plan.md
           itemType: how-to-guide
           text: Migrate from Microsoft 365 Business Standard 
