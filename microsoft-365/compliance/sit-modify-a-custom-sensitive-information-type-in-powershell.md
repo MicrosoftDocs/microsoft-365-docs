@@ -61,7 +61,7 @@ To connect to Compliance Center PowerShell, see [Connect to Compliance Center Po
    [System.IO.File]::WriteAllBytes('XMLFileAndPath', $rulepak.SerializedClassificationRuleCollection)
    ```
 
-   This example export the rule package to the file named ExportedRulePackage.xml in the C:\My Documents folder.
+   This example exports the rule package to the file named ExportedRulePackage.xml in the C:\My Documents folder.
 
    ```powershell
    [System.IO.File]::WriteAllBytes('C:\My Documents\ExportedRulePackage.xml', $rulepak.SerializedClassificationRuleCollection)
