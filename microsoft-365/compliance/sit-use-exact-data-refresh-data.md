@@ -1,5 +1,5 @@
 ---
-title: "Refresh your sensitive information source table file"
+title: "Refresh your exact data matchsensitive information source table file"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -19,7 +19,7 @@ description: Refresh your sensitive information source table file.
 ms.custom: seo-marvel-apr2020
 ---
 
-# Refresh your sensitive information source table file 
+# Refresh your exact data match sensitive information source table file 
 
 You can refresh your sensitive information database twice in every 24 hour period. You'll have to rehash and upload your sensitive information source table.
 
