@@ -39,7 +39,7 @@ Once you have performed an [incident response for a simulated attack](eval-defen
 | [Prioritizing incidents](#prioritize-incidents) | Use filtering and sorting of the incidents queue to determine which incidents to address next. |
 | [Managing incidents](#manage-incidents) | Modify incident properties to ensure correct assignment, add tags and comments, and to resolve an incident. |
 | [Automated investigation and response](#examine-automated-investigation-and-response-with-the-action-center) | Use automated investigation and response (AIR) capabilities to help your security operations team address threats more efficiently and effectively. The Action center is a "single pane of glass" experience for incident and alert tasks such as approving pending remediation actions. |
-| [Advanced hunting](#advanced-hunting) | Use queries to proactively inspect events in your network and locate threat indicators and entities. You also use advanced hunting during the investigation and remediation of an incident. |
+| [Advanced hunting](#use-advanced-hunting) | Use queries to proactively inspect events in your network and locate threat indicators and entities. You also use advanced hunting during the investigation and remediation of an incident. |
 
 
 ## Prioritize incidents
