@@ -12,6 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
+ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to provision and use the Content Center site template in Microsoft SharePoint Syntex.
 ---
 
