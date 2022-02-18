@@ -5471,7 +5471,7 @@ Medium
 
 ## Diseases
 
-This unbundled named entity detects text that match disease names, such as *diabetes*. It supports English terms only. It is also included in the [All medical terms and conditions](#all-medical-terms-and-conditions) bundled named entity SIT.
+This unbundled named entity detects text that matches disease names, such as *diabetes*. It supports English terms only. It is also included in the [All medical terms and conditions](#all-medical-terms-and-conditions) bundled named entity SIT.
 
 ### Confidence level
 
@@ -7387,7 +7387,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Generic medication names
 
-This unbundled named entity detects names of generic medications, such as *acetominophen*. It supports English terms only. It is also included in the [All medical terms and conditions](#all-medical-terms-and-conditions) bundled named entity SIT.
+This unbundled named entity detects names of generic medications, such as *acetainophen*. It supports English terms only. It is also included in the [All medical terms and conditions](#all-medical-terms-and-conditions) bundled named entity SIT.
 
 ### Confidence level
 
@@ -17651,7 +17651,7 @@ Combination of 18 letters and digits in the specified format
 18 letters and digits:
 - Five letters (not case-sensitive) or the digit "9" in place of a letter.
 - One digit.
-- Five digits in the date format MMDDY for date of birth. The seventh character is incremented by 50 if driver is female; for exampe, 51 to 62 instead of 01 to 12.
+- Five digits in the date format MMDDY for date of birth. The seventh character is incremented by 50 if driver is female; for example, 51 to 62 instead of 01 to 12.
 - Two letters (not case-sensitive) or the digit "9" in place of a letter.
 - Five digits.
 
