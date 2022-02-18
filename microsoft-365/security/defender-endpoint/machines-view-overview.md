@@ -102,7 +102,7 @@ On the **Network devices** tab, select **Customize columns** to see the columns 
 
 On the **IoT devices** tab, select **Customize columns** to see the columns available. The default values are checked in the image below:
 
-![Image of devices list with list of devices.](images/iotdevicescolumns.png.png)
+![Image of devices list with list of devices.](images/iotdevicescolumns.png)
 
 ## Related topics
 
