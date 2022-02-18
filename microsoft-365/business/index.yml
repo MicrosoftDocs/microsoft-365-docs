@@ -123,10 +123,10 @@ conceptualContent:
           text: Overview of Microsoft Defender for Business
         - url: ../security/defender-business/get-defender-business.md
           itemType: how-to-guide
-          text: How to get Defender for Business 
+          text: Get Defender for Business 
         - url: ../security/defender-business/mdb-setup-configuration.md
           itemType: overview
-          text: See the setup and configuration process
+          text: Set up and configure Defender for Business
         - url: ../security/defender-business/mdb-faq.yml
           itemType: reference
           text: Defender for Business FAQ
