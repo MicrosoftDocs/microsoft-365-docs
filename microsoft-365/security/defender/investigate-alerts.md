@@ -136,7 +136,7 @@ The **Manage alert** pane allows you to view or specify:
 
 - The alert status (New, Resolved, In progress).
 - The user account that has been assigned the alert.
-- The alert's classification  (Not set, True alert, False Alert).
+- The alert's classification (Not set, True alert, False Alert).
 - For the classification as a true alert, the type of threat for the alert in **Determination** field.
 - A comment on the alert.
 

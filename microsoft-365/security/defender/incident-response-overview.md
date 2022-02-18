@@ -43,7 +43,7 @@ Microsoft 365 services and apps create alerts when they detect a suspicious or m
 
 On an ongoing basis, you need to identify the highest priority incidents for analysis and resolution in the incident queue and get them ready for response. This is a combination of:
 
-- [Prioritizing](incident-queue.md) to determining the highest priority incidents through filtering and sorting of the incident queue.  This is also known as triaging.
+- [Prioritizing](incident-queue.md) to determining the highest priority incidents through filtering and sorting of the incident queue. This is also known as triaging.
 - [Managing](manage-incidents.md) incidents by modifying their title, assigning them to an analyst, adding tags and comments, and when resolved, classifying them.
 
 For each incident, use your incident response workflow to analyze the incident and its alerts and data to contain the attack, eradicate the threat, recover from the attack, and learn from it. See [this example](incidents-overview.md#example-incident-response-workflow-for-microsoft-365-defender) for Microsoft 365 Defender.
