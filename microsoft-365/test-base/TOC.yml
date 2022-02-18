@@ -8,6 +8,8 @@
   items:  
     - name: Create Test Base Account
       href: createAccount.md
+    - name: Build a Package
+      href: buildpackage.md
     - name: Uploading a Package
       href: uploadApplication.md
     - name: Upload Binaries & Dependencies
@@ -20,6 +22,8 @@
       href: review.md
     - name: Package guideline
       href: contentguideline.md
+    - name: Application/Test rules
+      href: rules.md
 - name: How-to guides
   items:
   - name: Server application testing

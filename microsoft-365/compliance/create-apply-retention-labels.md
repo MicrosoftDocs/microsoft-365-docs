@@ -272,8 +272,10 @@ If you need to ensure that no one can turn off the policy, delete the policy, or
 
 ## Next steps
 
-Event-based retention is another supported scenario for retention labels. For more information, see the following articles:
+To help you track the labels applied from your published retention labeling policies:
 
-- [Start retention when an event occurs](event-driven-retention.md)
-- [Automate event-based retention](./event-driven-retention.md#automate-events-by-using-a-rest-api)
-- [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md)
+- [Monitoring retention labels](retention.md#monitoring-retention-labels)
+- [Using Content Search to find all content with a specific retention label](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
+- [Auditing retention actions](retention.md#auditing-retention-actions)
+
+Event-based retention is another supported scenario for retention labels. For more information, see [Start retention when an event occurs](event-driven-retention.md).
