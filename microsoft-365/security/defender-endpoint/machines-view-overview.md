@@ -51,7 +51,7 @@ From the **Network devices** and **IoT devices** tabs, you’ll also see informa
 
 ![Image of devices list with list of devices.](images/device-inventory-networkdevices.png)
 
-A total count for the devices listed in the current inventory view appears on top of each tab. The counts for devices that are not yet onboarded, or have been identified as high risk or having a high exposure can help you prioritize devices for security posture improvements.
+At the top of each device inventory tab, you can see the total number of devices, the number of devices that are not yet onboarded, and the number of devices that have been identified as a higher risk to your organization. You can use this information to help you prioritize devices for security posture improvements.
 
 ## Explore the device inventory
 
