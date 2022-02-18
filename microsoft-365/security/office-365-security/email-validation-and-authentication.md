@@ -83,7 +83,7 @@ Relying only on email authentication records to determine if an incoming message
 
 Composite authentication can address these limitations by passing messages that would otherwise fail email authentication checks.
 
-For simplicity, the following examples concentrate on email authentication results. Other back-end intelligence factors could identify messages that pass email authentication as spoofed, or messages that fail email email authentication as legitimate.
+For simplicity, the following examples concentrate on email authentication results. Other back-end intelligence factors could identify messages that pass email authentication as spoofed, or messages that fail email authentication as legitimate.
 
 For example, the fabrikam.com domain has no SPF, DKIM, or DMARC records. Messages from senders in the fabrikam.com domain can fail composite authentication (note the `compauth` value and reason):
 

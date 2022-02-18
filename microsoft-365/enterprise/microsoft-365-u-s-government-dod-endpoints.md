@@ -2,8 +2,8 @@
 title: Office 365 US Government DOD endpoints
 ms.author: kvice
 author: kelleyvice-msft
-manager: laurawi
-ms.date: 10/29/2021
+manager: scotv
+ms.date: 01/31/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration

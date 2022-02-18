@@ -39,11 +39,11 @@ Monitoring network connection behind a forward proxy is possible due to other ne
 
 Network protection can be controlled using the following modes:
 
-- **Block**: Users or apps will be blocked from connecting to dangerous domains. You will be able to see this activity in Microsoft Defender Security Center.
-- **Audit**: Users or apps will not be blocked from connecting to dangerous domains. However, you will still see this activity in Microsoft Defender Security Center.
+- **Block**: Users or apps will be blocked from connecting to dangerous domains. You will be able to see this activity in Microsoft 365 Defender.
+- **Audit**: Users or apps will not be blocked from connecting to dangerous domains. However, you will still see this activity in Microsoft 365 Defender.
 
 
-If you turn off network protection, users or apps will not be blocked from connecting to dangerous domains. You will not see any network activity in Microsoft Defender Security Center.
+If you turn off network protection, users or apps will not be blocked from connecting to dangerous domains. You will not see any network activity in Microsoft 365 Defender.
 
 If you do not configure it, network blocking will be turned off by default.
 

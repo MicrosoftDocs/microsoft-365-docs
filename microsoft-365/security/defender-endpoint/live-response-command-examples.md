@@ -58,8 +58,13 @@ connections json
 ## `dir`
 
 ```console
-# List files and sub-folders in the current folder
+# List files and sub-folders in the current folder (by default it will show relative paths [-relative_path])
 dir
+```
+
+```console
+# List files and sub-folders in the current folder, with their full path
+dir -full_path
 ```
 
 ```console

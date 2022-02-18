@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 12/13/2021
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,6 +16,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
+- m365-initiative-defender-business
 ---
 
 # Review remediation actions in the Action center
@@ -33,6 +34,11 @@ As threats are detected, remediation actions come into play. Depending on the pa
 
 - [How to use the Action center](#how-to-use-the-action-center)
 - [Remediation actions](#remediation-actions)
+
+>
+> **Got a minute?**
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
 
 ## How to use the Action center
 

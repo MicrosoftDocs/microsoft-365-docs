@@ -76,7 +76,7 @@ You can create up to four additional group themes.
 
 ## Logos: Specify your theme logos
 
-On the **Logos** page, you can you can add your logos, and specify the URL where users will navigate to, when they select the logo.
+On the **Logos** page, you can add your logos, and specify the URL where users will navigate to when they select the logo.
 
 - **Default logo**: Add a URL location that points to your logo. Make sure that the URL uses HTTPS. Add a HTTPS image url that allows anonymous access and doesn't require authentication. For default theme, you also have an option to upload a logo image that is less than 10kb. Your default logo can be in the JPG, PNG, GIF, or SVG format. For SVG images, they will be resized to fit 24 pixels vertically. JPG, PNG, GIF images will be scaled to fit 200 x 48 pixels. Logo aspect ratio will always be preserved.
 - **Alternate logo**: Add a URL location that points to your logo. Your alternate logo should be optimized for use in Office dark themes. Same requirements as the default logo.

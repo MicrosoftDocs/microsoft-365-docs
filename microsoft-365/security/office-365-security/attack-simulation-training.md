@@ -1,5 +1,5 @@
 ---
-title: Simulate a phishing attack with Microsoft Defender for Office 365
+title: Simulate a phishing attack with Attack simulation training
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -10,12 +10,12 @@ ms.localizationpriority: medium
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
-ms.custom: admindeeplinkDEFENDER
+ms.custom:
 description: Admins can learn how to simulate phishing attacks and train their users on phishing prevention using Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.technology: mdo
 ---
 
-# Simulate a phishing attack in Defender for Office 365
+# Simulate a phishing attack with Attack simulation training in Defender for Office 365
 
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
@@ -26,7 +26,7 @@ For getting started information about Attack simulation training, see [Get start
 
 To launch a simulated phishing attack, do the following steps:
 
-1. In the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulations** tab.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Attack simulation training** \> **Simulations** tab.
 
    To go directly to the **Simulations** tab, use <https://security.microsoft.com/attacksimulator?viewid=simulations>.
 
@@ -46,8 +46,8 @@ On the **Select technique** page, select an available social engineering techniq
 - **Credential harvest**: Attempts to collect credentials by taking users to a well-known looking website with input boxes to submit a username and password.
 - **Malware attachment**: Adds a malicious attachment to a message. When the user opens the attachment, arbitrary code is run that will help the attacker compromise the target's device.
 - **Link in attachment**: A type of credential harvest hybrid. An attacker inserts a URL into an email attachment. The URL within the attachment follows the same technique as credential harvest.
-- **Link to malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user will contain a link to this malicious file. Opening the file and help the attacker compromise the target's device.
-- **Drive-by URL**: The malicious URL in the message takes the user to a familiar-looking website that silently runs and/or installs code code on the user's device.
+- **Link to malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user will contain a link to this malicious file. Opening the file will help the attacker compromise the target's device.
+- **Drive-by URL**: The malicious URL in the message takes the user to a familiar-looking website that silently runs and/or installs code on the user's device.
 
 If you click the **View details** link in the description, a details flyout opens that describes the technique and the simulation steps that result from the technique.
 
@@ -118,24 +118,37 @@ When you're finished, click **Next**.
 On the **Target users** page, select who will receive the simulation. Configure one of the following settings:
 
 - **Include all users in your organization**: The affected users are show in lists of 10. You can use the **Next** and **Previous** buttons directly below the list of users to scroll through the list. You can also use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** icon on the page to find affected users.
+
 - **Include only specific users and groups**: Choose one of the following options:
   - ![Add users icon.](../../media/m365-cc-sc-create-icon.png) **Add users**: In the **Add users** flyout that appears, you can find users and groups based on the following criteria:
-    - **Users or groups**: In the ![Search for users and groups icon.](../../media/m365-cc-sc-search-icon.png) **Search for users and groups** box, you can type part of the **Name** or **Email address** of the user or group, and then press Enter. You can select some or all of the results. When you're finished, click **Add x users**.
+
+    - **Search for users or groups**: In box, you can type part of the **Name** or **Email address** of the user or group and then press Enter. You can select some or all of the results. When you're finished, click **Add x users**.
 
       > [!NOTE]
       > Clicking the **Add filters** button to return to the **Filter users by categories** options will clear any users or groups that you selected in the search results.
 
     - **Filter users by categories**: Select from none, some, or all of the following options:
+
       - **Suggested user groups**: Select from the following values:
         - **All suggested user groups**
         - **Users not targeted by a simulation in the last three months**
         - **Repeat offenders**
+
+      - **User tags**: User tags are identifiers for specific groups of users (for example, Priority accounts). For more information, see [User tags in Microsoft Defender for Office 365](user-tags.md).
+
+          Use the following options:
+
+        - **Search**: In ![Search by user tags icon.](../../media/m365-cc-sc-search-icon.png) **Search by user tags**, you can type part of the user tag and then press Enter. You can select some or all of the results.
+        - Select **All user tags**
+        - Select existing user tags.
+
       - **Department**: Use the following options:
-        - **Search**: In the ![Search by Department icon.](../../media/m365-cc-sc-search-icon.png) **Search by Department** box, you can type part of the Department value, and then press Enter. You can select some or all of the results.
+        - **Search**: In ![Search by Department icon.](../../media/m365-cc-sc-search-icon.png) **Search by Department**, you can type part the Department value and then press Enter. You can select some or all of the results.
         - Select **All Department**
         - Select existing Department values.
+
       - **Title**: Use the following options:
-        - **Search**: In the ![Search by Title icon.](../../media/m365-cc-sc-search-icon.png) **Search by Title** box, you can type part of the Title value, and then press Enter. You can select some or all of the results.
+        - **Search**: In ![Search by Title icon.](../../media/m365-cc-sc-search-icon.png) **Search by Title**, you can type part of the Title value and then press Enter. You can select some or all of the results.
         - Select **All Title**
         - Select existing Title values.
 

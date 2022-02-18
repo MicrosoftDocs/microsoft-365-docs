@@ -44,7 +44,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `OSPlatform` | `string` | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10 and Windows 7. |
 | `OSBuild` | `string` | Build version of the operating system running on the machine |
 | `IsAzureADJoined` | `boolean` | Boolean indicator of whether machine is joined to the Azure Active Directory |
-| `AadObjectId` | `string` | Unique identifier for the device in Azure AD |
+| `AadDeviceId` | `string` | Unique identifier for the device in Azure AD |
 | `LoggedOnUsers` | `string` | List of all users that are logged on the machine at the time of the event in JSON array format |
 | `RegistryDeviceTag` | `string` | Machine tag added through the registry |
 | `OSVersion` | `string` | Version of the operating system running on the machine |
@@ -54,9 +54,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 |`AdditionalFields` | `string` | Additional information about the event in JSON array format |
 |`DeviceCategory` | `string` | Broader classification that groups certain device types under the following categories: Endpoint, Network device, IoT, Unknown |
 |`DeviceType` | `string` | Type of device based on purpose and functionality, such as network device, workstation, server, mobile, gaming console, or printer |
-|`DeviceSubType` | `string` | Additional modifier for certain types of devices, for example, a mobile device can be a tablet or a smartphone |
-|`Model` | `string` | Model name or number of the product from the vendor or manufacturer |
-|`Vendor` | `string` | Name of the product vendor or manufacturer |
+|`DeviceSubType` | `string` | Additional modifier for certain types of devices, for example, a mobile device can be a tablet or a smartphone; only available if device discovery finds enough information about this attribute |
+|`Model` | `string` | Model name or number of the product from the vendor or manufacturer, only available if device discovery finds enough information about this attribute |
+|`Vendor` | `string` | Name of the product vendor or manufacturer, only available if device discovery finds enough information about this attribute |
 |`OSDistribution` | `string` | Distribution of the OS platform, such as Ubuntu or RedHat for Linux platforms |
 |`OSVersionInfo` | `string` | Additional information about the OS version, such as the popular name, code name, or version number |
 |`MergedDeviceIds` | `string` | Previous device IDs that have been assigned to the same device |
