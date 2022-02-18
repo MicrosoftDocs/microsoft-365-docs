@@ -71,10 +71,15 @@ You can use the sort and filter functionality available on each device inventory
 
 ## Use filters to customize the devices list view
 
-Filter | Description | Available for
+Filter | Description 
 :---|:---|:---
 Risk level </br> | The risk level reflects the overall risk assessment of the device based on a combination of factors, including the types and severity of active alerts on the device. Resolving active alerts, approving remediation activities, and suppressing subsequent alerts can lower the risk level.| All tabs
-Exposure level </br> | The exposure level reflects the current exposure of the device based on the cumulative impact of its pending security recommendations. The possible levels are low, medium, and high. Low exposure means your devices are less vulnerable from exploitation. </br> If the exposure level says “No data available,” there are a few reasons why this may be the case:</br>- Device stopped reporting for more than 30 days. In that case it’s considered inactive, and the exposure isn’t computed.</br>- Device OS not supported - see [minimum requirements for Microsoft Defender for Endpoint](https://microsoft-my.sharepoint.com/personal/siosulli_microsoft_com/Documents/Security%20Posture/TVM/minimum-requirements.md).</br>- Device with stale agent (unlikely).| All tabs
+Exposure level </br> | The exposure level reflects the current exposure of the device based on the cumulative impact of its pending security recommendations. The possible levels are low, medium, and high. Low exposure means your devices are less vulnerable from exploitation. </br> If the exposure level says “No data available,” there are a few reasons why this may be the case:</br>- Device stopped reporting for more than 30 days. In that case it’s considered inactive, and the exposure isn’t computed.</br>- Device OS not supported - see [minimum requirements for Microsoft Defender for Endpoint](https://microsoft-my.sharepoint.com/personal/siosulli_microsoft_com/Documents/Security%20Posture/TVM/minimum-requirements.md).</br>- Device with stale agent (unlikely).
+Tags </br> | Filter the list based on the grouping and tagging that you’ve added to individual devices. See [Create and manage device tags](https://microsoft-my.sharepoint.com/personal/siosulli_microsoft_com/Documents/Security%20Posture/TVM/machine-tags.md).
+Device value </br> | Filter the list based on the whether the device has been marked as high value or low value.
+Exclusion state </br> | Filter the list based on whether the device has been excluded or not.
+OS Platform </br> | Filter the list based on the whether the device has been marked as high value or low value.</br> Note: Computers and mobile and IoT devices only.
+First seen </br> | Filter the list based on whether the device has been excluded or not.</br> Note: Computers and mobile and IoT devices only.
 
 The following filters are available for all of the device inventory tabs:
 
