@@ -69,7 +69,12 @@ There are several options you can choose from to customize the devices list view
 
 You can use the sort and filter functionality available on each device inventory tab to get a more focused view. This can help you assess and manage the devices in your organization.
 
-## Available filters
+## Use filters to customize the devices list view
+
+Filter | Description | Available for
+:---|:---|:---
+Risk level </br> | The risk level reflects the overall risk assessment of the device based on a combination of factors, including the types and severity of active alerts on the device. Resolving active alerts, approving remediation activities, and suppressing subsequent alerts can lower the risk level.| All tabs
+Exposure level </br> | The exposure level reflects the current exposure of the device based on the cumulative impact of its pending security recommendations. The possible levels are low, medium, and high. Low exposure means your devices are less vulnerable from exploitation. </br> If the exposure level says “No data available,” there are a few reasons why this may be the case:</br>- Device stopped reporting for more than 30 days. In that case it’s considered inactive, and the exposure isn’t computed.</br>- Device OS not supported - see [minimum requirements for Microsoft Defender for Endpoint](https://microsoft-my.sharepoint.com/personal/siosulli_microsoft_com/Documents/Security%20Posture/TVM/minimum-requirements.md).</br>- Device with stale agent (unlikely).| All tabs
 
 The following filters are available for all of the device inventory tabs:
 
