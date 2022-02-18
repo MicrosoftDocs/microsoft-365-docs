@@ -59,7 +59,7 @@ conceptualContent:
           text: Microsoft 365 Business Premium training
         - url: https://go.microsoft.com/fwlink/?linkid=2164213
           itemType: overview
-          text: Compare plans
+          text: Compare Microsoft 365 for business plans
         - url: ../admin/misc/microsoft-365-business-faqs.yml
           itemType: reference
           text: FAQ
@@ -99,15 +99,22 @@ conceptualContent:
   # Card
     - title: Resources for partners (English only)
       links:
+        - url: https://aka.ms/M365BPPartnerPlaybook
+          itemType: how-to-guide
+          text: See the Microsoft 365 Business Premium Partner Playbook and Readiness Series
+        - url: ../lighthouse/m365-lighthouse-overview.md
+          itemType: overview
+          text: Overview of Microsoft 365 Lighthouse
+        - url: https://aka.ms/M365MDBseries 
+          itemType: video
+          text: Join the partner webinar series!
         - url: https://partner.microsoft.com
           itemType: overview
           text: Microsoft Partner Network 
         - url: /partner-center/overview
           itemType: overview
           text: Get started with Partner Center
-        - url: https://aka.ms/M365BPPartnerPlaybook
-          itemType: how-to-guide
-          text: See the Microsoft 365 Business Premium Partner Playbook and Readiness Series
+
   # Card
     - title: Protect your company's devices
       links:
