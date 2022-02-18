@@ -6687,6 +6687,11 @@
       "source_path": "microsoft-365/campaigns/share-files-and-videos.md",
       "redirect_url": "/microsoft-365/business-premium/share-files-and-videos",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/what-the-dlp-functions-look-for.md",
+      "redirect_url": "/microsoft-365/compliance/sit-functions",
+      "redirect_document_id": false
     }
   ]
 }
