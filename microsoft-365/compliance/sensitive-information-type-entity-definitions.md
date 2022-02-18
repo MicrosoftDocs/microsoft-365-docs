@@ -7387,7 +7387,7 @@ A DLP policy has medium confidence that it's detected this type of sensitive inf
 
 ## Generic medication names
 
-This unbundled named entity detects names of generic medications, such as *acetainophen*. It supports English terms only. It is also included in the [All medical terms and conditions](#all-medical-terms-and-conditions) bundled named entity SIT.
+This unbundled named entity detects names of generic medications, such as *acetaminophen*. It supports English terms only. It is also included in the [All medical terms and conditions](#all-medical-terms-and-conditions) bundled named entity SIT.
 
 ### Confidence level
 
