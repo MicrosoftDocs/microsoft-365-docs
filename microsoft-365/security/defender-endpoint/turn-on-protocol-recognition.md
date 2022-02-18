@@ -29,6 +29,9 @@ ms.collection: m365-security-compliance
 
 This policy setting allows you to configure protocol recognition for network protection against exploits of known vulnerabilities. If you enable or do not configure this setting, protocol recognition will be enabled. If you disable this setting, protocol recognition will be disabled.
 
+[!NOTE]
+This setting is now deprecated. 
+
 ## Use Group Policy to configure protocol recognition
 
 1. On your Group Policy management endpoint, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
