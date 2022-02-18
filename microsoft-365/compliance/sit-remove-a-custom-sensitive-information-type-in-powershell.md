@@ -74,4 +74,4 @@ In Compliance center PowerShell, there are two methods to remove custom sensitiv
 
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 
-- [What the DLP functions look for](what-the-dlp-functions-look-for.md)
+- [Sensitive information type functions](sit-functions.md)
