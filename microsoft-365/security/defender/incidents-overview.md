@@ -119,7 +119,7 @@ Consider these steps for your own incident response workflow:
 
 1. For each incident, begin an [attack and alert investigation and analysis](investigate-incidents.md):
  
-   1. View the summary of the incident to understand it's scope and severity and what entities are affected with the **Summary** and **Graph** (Preview) tabs.
+   1. View the summary of the incident to understand its scope and severity and what entities are affected with the **Summary** and **Graph** (Preview) tabs.
 
    1. Begin analyzing the alerts to understand their origin, scope, and severity with the **Alerts** tab.
 
