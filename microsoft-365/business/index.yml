@@ -86,7 +86,7 @@ conceptualContent:
           text: Overview of Microsoft 365 Lighthouse (for partners)
         - url: ../lighthouse/m365-lighthouse-sign-up.md
           itemType: how-to-guide
-          text: How to sign up
+          text: How to sign up and become a Microsoft CSP
         - url: ../lighthouse/m365-lighthouse-configure-portal-security.md
           itemType: how-to-guide
           text: Set up portal security
