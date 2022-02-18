@@ -31,8 +31,7 @@ description: "Learn how to collaborate securely in your small business or campai
 
 In our current world, keeping data and communications secure is a priority, particularly for medical and legal practices, political campaigns, and many other smaller businesses. Take advantage of the security features in Microsoft 365 Business Premium to collaborate safely within your small business. This solution provides a set of recommendations designed to help protect you and your data. This library includes help for setting up and using this recommended environment, no matter your business type.
 
-
-![Microsoft 365 Business Premium protects your productivity tools, collaboration tools, file storage, email, devices, and identity.](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)
+:::image type="content" source="media/m365-whatisit-securityfocus2.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
 
 This configuration includes the following guidance for productivity, collaboration, file storage, email, devices, and identity to protect your business:
 
