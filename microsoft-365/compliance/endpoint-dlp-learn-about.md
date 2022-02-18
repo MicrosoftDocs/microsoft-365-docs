@@ -80,7 +80,7 @@ Endpoint DLP monitors activity-based on MIME type, so activities will be capture
 
 ### File types (preview)
 
-File Types are a grouping of file formats which are utilized to protect specific workflows or areas of business. 
+File Types are a grouping of file formats which are utilized to protect specific workflows or areas of business. You can use one or more File types as conditions in your DLP policies.
 
 
 |File Type |App  |monitored file extensions  |
