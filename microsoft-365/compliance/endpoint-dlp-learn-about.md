@@ -93,10 +93,10 @@ File Types are a grouping of file formats which are utilized to protect specific
 <!--
 ### File extensions
 
-If the File types don't cover all the extensions you need, you enter file extensions separated by comma.
+If the File types don't cover the file extensions you need, you can use file extensions separated by comma instead.
 
 > [!IMPORTANT]
-> Use of file extensions and file types is mutually exclusive, it should and OR in the UI not AND 
+> The file extensions and file types options cannot be used as conditions in the same rule. If you want to use them as conditions in the same policy, they must be in separate rules. 
 -->
 
 
