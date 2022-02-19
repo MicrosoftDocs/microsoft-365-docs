@@ -6620,7 +6620,7 @@
     },
     {
       "source_path": "microsoft-365/campaigns/m365-campaigns-multifactor-authenication.md",
-      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-multifactor-authentication",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-multifactor-authentication",
       "redirect_document_id": true
     },
     {
@@ -6692,6 +6692,26 @@
       "source_path": "microsoft-365/compliance/what-the-dlp-functions-look-for.md",
       "redirect_url": "/microsoft-365/compliance/sit-functions",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365-campaigns-conditional-access.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-conditional-access",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365-campaigns-increase-protection.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-increase-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365-campaigns-multifactor-authentication.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-multifactor-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-premium/m365-campaigns-protect-admin-accounts.md",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-admin-accounts",
+      "redirect_document_id": true
     }
   ]
 }

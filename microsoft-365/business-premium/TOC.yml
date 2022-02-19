@@ -31,15 +31,15 @@
     - name: Overview
       href: m365-campaigns-security-overview.md
     - name: Protect admin accounts
-      href: m365-campaigns-protect-admin-accounts.md
+      href: m365bp-protect-admin-accounts.md
     - name: Protect access to your data
-      href: m365-campaigns-conditional-access.md
+      href: m365bp-conditional-access.md
     - name: Protect against malware and other threats
-      href: m365-campaigns-increase-protection.md
+      href: m365bp-increase-protection.md
 - name: Device setup for all staff
   items: 
     - name: Set up multifactor authentication
-      href: m365-campaigns-multifactor-authentication.md
+      href: m365bp-multifactor-authentication.md
     - name: Set up mobile devices
       href: ../business/set-up-mobile-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Protect PCs and Macs
