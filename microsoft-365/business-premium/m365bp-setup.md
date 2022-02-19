@@ -61,8 +61,8 @@ If you prefer to set up and configure Microsoft 365 Business Premium on your own
 
 | Phase  | Task  | Guidance  |
 |---------|---------|---------|
-| Planning     | Plan your setup and configuration process <br/><br/>Before moving your organization to Microsoft 365, there are requirements to consider, information to have available, and decisions to make.   | [Plan your setup of Microsoft 365 for business](../admin/setup/plan-your-setup.md)        |
-| Basic setup     | Add domain name to Microsoft 365 Business Premium    | [       ](../admin/setup/add-domain.md) |
-|Row3     |         |         |
+| Planning     | Plan your setup and configuration process <br/><br/>Before moving your organization to Microsoft 365, there are requirements to consider, information to have available, and decisions to make.   | [Plan your setup of Microsoft 365 for business](../admin/setup/plan-your-setup.md)  <br/><br/>[Microsoft 365 Business Premium requirements](m365bp-requirements.md)      |
+| Basic setup     | Add your domain name to Microsoft 365    | [Add a domain to Microsoft 365](../admin/setup/add-domain.md) |
+|      | Add users and assign licenses in Microsoft 365      | [Add users and assign licenses at the same time](../admin/add-users/add-users.md)        |
 
 
