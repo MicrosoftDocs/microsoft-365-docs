@@ -10,10 +10,10 @@
       href: m365bp-secure-users.md
 - name: Set up and sign in
   items: 
-    - name: Setup overview
-      href: m365bp-setup.md
     - name: Review the requirements
-
+      href: m365bp-requirements.md
+    - name: Set up and configure Microsoft 365 Business Premium
+      href: m365bp-setup.md
     - name: Use the setup wizard
       href: ../business/set-up.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Set up Microsoft 365 for Campaigns
