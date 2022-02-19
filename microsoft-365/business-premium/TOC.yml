@@ -7,7 +7,7 @@
     - name: Get Microsoft 365 for campaigns
       href: get-microsoft-365-campaigns.md
     - name: How Microsoft 365 protects your data
-      href: m365-campaigns-users.md
+      href: m365bp-secure-users.md
 - name: Set up and sign in
   items: 
     - name: Overview
