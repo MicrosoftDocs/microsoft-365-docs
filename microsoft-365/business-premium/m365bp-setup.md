@@ -25,6 +25,13 @@ You have several options for setting up and configuring Microsoft 365 Business P
 - Work through the setup process on your own, step by step
 - Work with a partner, such as a Microsoft Cloud Solution Provider (CSP)
 
+Watch the following video to get an overview of the setup process for Microsoft 365 Business Premium:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg?autoplay=false]
+
+> [!TIP]
+> See [Difference between the setup wizard and the Setup page](../admin/setup/o365-setup-wizard-and-setup-page.md).
+
 Use this article as a guide.
 
 ## The guided setup process
@@ -47,5 +54,15 @@ The guided setup helps you complete a basic setup of Microsoft 365 Business Prem
 - Deploying Microsoft 365 apps
 - Setting up and configuring your new Defender for Business capabilities
 
-## 
+## The setup process, step by step
+
+If you prefer to set up and configure Microsoft 365 Business Premium on your own, use the following table as a checklist:
+
+
+| Phase  | Task  | Guidance  |
+|---------|---------|---------|
+|Planning     |         |         |
+|Row2     |         |         |
+|Row3     |         |         |
+
 
