@@ -41,7 +41,8 @@ After you have finished the guided setup, there are additional steps to complete
 - [Deploying Microsoft 365 apps](../admin/setup/install-applications.md)
 - [Setting up and configuring your new Defender for Business capabilities](../security/defender-business/mdb-setup-configuration.md)
 
-See the next section for more details about setting up and configuring Microsoft 365 Business Premium.
+> [!TIP]
+> See the next section for more details about setting up and configuring Microsoft 365 Business Premium.
 
 ## The setup process, step by step
 
