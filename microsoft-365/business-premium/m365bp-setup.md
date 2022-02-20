@@ -23,7 +23,7 @@ You have several options for setting up and configuring Microsoft 365 Business P
 
 - [Use a guided setup experience for basic setup and configuration](#the-guided-setup-process)
 - [Work through the setup process on your own, step by step](#the-setup-process-step-by-step)
-- Work with a partner, such as a Microsoft Cloud Solution Provider (CSP)
+- [Work with a partner, such as a Microsoft Cloud Solution Provider (CSP)](#work-with-a-microsoft-partner)
 
 Watch the following video to get an overview of the setup process for Microsoft 365 Business Premium:
 
