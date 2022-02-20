@@ -25,22 +25,15 @@ You have several options for setting up and configuring Microsoft 365 Business P
 - [Work through the setup process on your own, step by step](#the-setup-process-step-by-step)
 - [Work with a partner, such as a Microsoft Cloud Solution Provider (CSP)](#work-with-a-microsoft-partner)
 
-Watch the following video to get an overview of the setup process for Microsoft 365 Business Premium:
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg?autoplay=false]
-
-> [!TIP]
-> See [Difference between the setup wizard and the Setup page](../admin/setup/o365-setup-wizard-and-setup-page.md).
-
 Use this article as a guide.
 
 ## The guided setup process
 
-Microsoft 365 Business Premium includes a guided process for basic setup. 
-
-Watch the following video to see how it all works:
+Microsoft 365 Business Premium includes a guided process for basic setup. To see how the guided setup works, watch the following video:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ?autoplay=false]
+
+[Learn more about the differences between the guided setup process and the Setup page](../admin/setup/o365-setup-wizard-and-setup-page.md).
 
 After you have finished the guided setup, there are additional steps to complete to help ensure that your security and compliance capabilities are properly set up and applied. These steps include:
 
