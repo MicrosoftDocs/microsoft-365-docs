@@ -1,5 +1,5 @@
 ---
-title: Set up and configure Microsoft 365 Business Premium
+title: Set up Microsoft 365 Business Premium
 description: See how to set up Microsoft 365 Business Premium
 search.appverid: MET150
 author: denisebmsft
@@ -17,7 +17,7 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# Set up and configure Microsoft 365 Business Premium
+# Set up Microsoft 365 Business Premium
 
 You have several options for setting up and configuring Microsoft 365 Business Premium. You can:
 
