@@ -62,10 +62,15 @@ If you prefer to set up and configure Microsoft 365 Business Premium on your own
 | Phase  | Task  | Guidance  |
 |---------|---------|---------|
 | Planning     | Plan your setup and configuration process <br/><br/>Before moving your organization to Microsoft 365, there are requirements to consider, information to have available, and decisions to make.   | [Plan your setup of Microsoft 365 for business](../admin/setup/plan-your-setup.md)  <br/><br/>[Microsoft 365 Business Premium requirements](m365bp-requirements.md)      |
-| Basic setup     | Add your domain name to Microsoft 365    | [Add a domain to Microsoft 365](../admin/setup/add-domain.md) |
+| Basic setup     | Use a custom domain  like `rob@contoso.com` with Microsoft 365 | [Add a domain to Microsoft 365](../admin/setup/add-domain.md) |
 |      | Add users and assign licenses in Microsoft 365      | [Add users and assign licenses at the same time](../admin/add-users/add-users.md)        |
 |  | Assign admin roles to users who'll perform certain functions, such as managing features, managing user accounts, managing devices, and viewing or managing your organization's security and compliance information. | [Assign admin roles](../admin/add-users/assign-admin-roles.md)  |
-| Security | Review your security checklist |  [Secure your Microsoft 365 for business plan](../admin/security-and-compliance/secure-your-business-data.md) |
-|  | Set up multi-factor authentication | 
+| Secure your organization | Review your security checklist so you'll know what needs to be configured |  [Secure your Microsoft 365 for business plan](../admin/security-and-compliance/secure-your-business-data.md) |
+|  | Require everyone to use an additional verification method when they sign in to Microsoft 365 | [Set up multifactor authentication](../admin/security-and-compliance/set-up-multi-factor-authentication.md) | 
+| Protect email and content |  Set up advanced anti-phishing protection to guard against malicious impersonation-based phishing attacks and other phishing attacks | [Protect your email from phishing attacks](../admin/security-and-compliance/secure-your-business-data.md#8-protect-your-email-from-phishing-attacks) |
+|   | Set up Safe Attachments to protect your organization from malicious email attachments | [Protect against malicious attachments and files with Safe Attachments](../admin/security-and-compliance/secure-your-business-data.md#9-protect-against-malicious-attachments-and-files-with-safe-attachments) |
+|  | Set up Safe Links to  protect your organization by providing time-of-click verification of web addresses (URLs) in email messages and Office documents | [10: Protect against phishing attacks with Safe Links](../admin/security-and-compliance/secure-your-business-data.md#10-protect-against-phishing-attacks-with-safe-links) |
+|  | Set data loss prevention policies to prevent sensitive information from being shared | [Set up compliance features](../admin/security-and-compliance/set-up-compliance.md) |
+| Manage and protect devices | 
 
 
