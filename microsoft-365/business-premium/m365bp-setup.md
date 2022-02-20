@@ -29,7 +29,7 @@ Use this article as a guide.
 
 ## The guided setup process
 
-Microsoft 365 Business Premium includes a guided process for basic setup. To see how the guided setup works, watch the following video:
+Microsoft 365 Business Premium includes a guided process for basic setup. To see how the guided setup works, watch the following video: <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ?autoplay=false]
 
