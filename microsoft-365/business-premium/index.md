@@ -67,9 +67,8 @@ For more information about what's included, see [Microsoft 365 Business Premium]
 
 Follow these steps to get started:
 
+- For small and medium-sized businesses: [Get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)
 - For campaigns: [Get Microsoft 365 campaigns](get-microsoft-365-campaigns.md)
-- For any business: [Learn how your users will work with Microsoft 365](m365-campaigns-users.md)
-- For any business: [Set up Microsoft 365](microsoft-365-campaigns-setup-overview.md)
 
 ## Solutions for your business
 
