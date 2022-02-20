@@ -83,3 +83,5 @@ If you prefer to set up and configure Microsoft 365 Business Premium on your own
 | **Training admins and your security team** | Learn how to use the admin center | [Overview of the Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md) |
 |  | Learn how to use the Microsoft 365 Defender portal | [Get started using the Microsoft 365 Defender portal](../security/defender-business/mdb-get-started.md) |
 
+> [!TIP]
+> Need some help? Consider getting [Business Assist for Microsoft 365](https://support.microsoft.com/en-us/office/business-assist-for-microsoft-365-37deb8fe-61cc-4cf9-9ad1-1c8d93475070)
