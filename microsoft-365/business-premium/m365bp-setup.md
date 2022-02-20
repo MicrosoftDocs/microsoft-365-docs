@@ -53,7 +53,7 @@ The following table describes how to set up and configure Microsoft 365 Business
 |  | Review the requirements | [Microsoft 365 Business Premium requirements](m365bp-requirements.md) |
 | **Basic setup**     | Use a custom domain  like `rob@contoso.com` with Microsoft 365 | [Add a domain to Microsoft 365](../admin/setup/add-domain.md) |
 |      | Add users and assign licenses in Microsoft 365      | [Add users and assign licenses at the same time](../admin/add-users/add-users.md)        |
-|  | Assign admin roles to users who'll perform certain functions, such as: <br/>- Managing features<br/>- Managing user accounts<br/>- Managing devices<br/>- Viewing or managing your organization's security and compliance information | [Assign admin roles](../admin/add-users/assign-admin-roles.md)  |
+|  | Assign admin roles to users who'll perform certain functions, such as: <br/>- Managing features<br/>- Managing user accounts<br/>- Managing devices<br/>- Viewing or managing your organization's security and compliance information | [Learn about admin roles](../admin/add-users/about-admin-roles.md) <br/><br/> [Assign admin roles](../admin/add-users/assign-admin-roles.md)  |
 |  | Install Microsoft 365 Apps (like Word, Excel, PowerPoint, and more) | [Install Office applications](../admin/setup/install-applications.md) |
 | **Securing your organization** | Review your security checklist so you'll know what needs to be configured |  [Secure your Microsoft 365 for business plan](../admin/security-and-compliance/secure-your-business-data.md) |
 |  | Require everyone to use an additional verification method when they sign in to Microsoft 365 | [Set up multifactor authentication](../admin/security-and-compliance/set-up-multi-factor-authentication.md) | 
