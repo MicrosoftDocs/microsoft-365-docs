@@ -72,6 +72,8 @@ sections:
 additionalContent: |
  ## See also
 
+ - [Overview of Microsoft 365 Business Premium](/microsoft-365/business-premium/)
+
  - [Overview of Microsoft Defender for Business (preview)](mdb-overview.md)
 
  - [Compare Microsoft Defender for Business (preview) to Microsoft 365 Business Premium](compare-mdb-m365-plans.md)
