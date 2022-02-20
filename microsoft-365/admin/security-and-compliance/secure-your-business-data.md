@@ -59,7 +59,7 @@ Microsoft recommends that you complete the tasks listed in the following table t
 | 8 | [Protect your email from phishing attacks](#8-protect-your-email-from-phishing-attacks) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | 9 | [Protect against malicious attachments and files with Safe Attachments](#9-protect-against-malicious-attachments-and-files-with-safe-attachments) | | ![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | 10 | [Protect against phishing attacks with Safe Links](#10-protect-against-phishing-attacks-with-safe-links) | | ![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| 11 | Protect your organization's devices  | | ![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| 11 | [Protect your organization's devices](#11-protect-your-organizations-devices)  | | ![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 
 If you have Microsoft Business Premium, the quickest way to setup security and begin collaborating safely is to follow the guidance in this library: [Microsoft 365 Business Premium](../../business-premium/index.md). This guidance was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyberthreats that are launched by sophisticated hackers.
 
@@ -346,7 +346,9 @@ Defender for Business is a new endpoint security solution  that was designed esp
 To learn more, see the following resources:
 
 - [Overview of Microsoft Defender for Business (preview)](../../security/defender-business/mdb-overview.md)
+
 - [Set up and configure Microsoft Defender for Business (preview)](../../security/defender-business/mdb-setup-configuration.md)
+
 - [Get started using the Microsoft 365 Defender portal](../../security/defender-business/mdb-get-started.md)
 
 ## Related content
