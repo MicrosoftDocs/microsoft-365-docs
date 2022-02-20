@@ -21,8 +21,8 @@ ms.collection:
 
 You have several options for setting up and configuring Microsoft 365 Business Premium. You can:
 
-- Use a guided setup experience for basic setup and configuration
-- Work through the setup process on your own, step by step
+- [Use a guided setup experience for basic setup and configuration](#the-guided-setup-process)
+- [Work through the setup process on your own, step by step](#the-setup-process-step-by-step)
 - Work with a partner, such as a Microsoft Cloud Solution Provider (CSP)
 
 Watch the following video to get an overview of the setup process for Microsoft 365 Business Premium:
@@ -76,7 +76,25 @@ The following table describes how to set up and configure Microsoft 365 Business
 |  | Move the company files that everyone needs to access to SharePoint. SharePoint typically replaces the use of a file share or network drive. | [Move files to SharePoint](../admin/setup/files-to-sharepoint.md) |
 |  | Move your existing work files, such as personal work files or sensitive business files, to OneDrive. | [Move files to OneDrive](../admin/setup/files-to-onedrive.md) |
 | **Training admins and your security team** | Learn how to use the admin center | [Overview of the Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md) |
+|  | Use the free training video library for Microsoft 365 admins | [Admin training video library](../admin/admin-video-library.yml)  |
 |  | Learn how to use the Microsoft 365 Defender portal | [Get started using the Microsoft 365 Defender portal](../security/defender-business/mdb-get-started.md) |
 
 > [!TIP]
 > Need some help? Consider getting [Business Assist for Microsoft 365](https://support.microsoft.com/en-us/office/business-assist-for-microsoft-365-37deb8fe-61cc-4cf9-9ad1-1c8d93475070)
+
+## Work with a Microsoft partner
+
+Microsoft has a list of solution providers who are authorized to sell offerings, including Microsoft 365 Business Premium. 
+
+To find a solution provider in your area, take the following steps:
+
+1. Go to the **Microsoft Solution Providers** page ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
+ 
+2. In the search box, fill in your location and company size. 
+
+3. In the **Search for products, services, skills, industries** box, put `Microsoft 365`, and then select **Go**.
+
+4. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
+
+Also see [Find your partner or reseller](../admin/manage/find-your-partner-or-reseller.md).
+
