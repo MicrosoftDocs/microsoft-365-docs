@@ -84,14 +84,19 @@ If your subscription is new, Security defaults might already be turned on for yo
 You enable or disable security defaults from the **Properties** pane for Azure Active Directory (Azure AD) in the Azure portal.
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with global admin credentials.
+
 2. In the left nav choose **Show All** and under **Admin centers**, choose **Azure Active Directory**.
+
 3. In the **Azure Active Directory admin center**, choose **Azure Active Directory** > **Properties**.
+
 4. At the bottom of the page, choose **Manage Security defaults**.
+
 5. Choose **Yes** to enable security defaults or **No** to disable security defaults, and then choose **Save**.
 
 After you set up multi-factor authentication for your organization, your users will be required to set up two-step verification on their devices. For more information, see [Set up 2-step verification for Microsoft 365](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
 
-For full details and complete recommendations, see [Set up multi-factor authentication for users](set-up-multi-factor-authentication.md).
+> [!TIP]
+> For full details and complete recommendations, see [Set up multi-factor authentication for users](set-up-multi-factor-authentication.md).
 
 ## 2: Train your users
 
@@ -233,7 +238,8 @@ If the recipient has Outlook 2013 or Outlook 2016 and a Microsoft email account,
 
 If the recipient is using another email client or email account, such as Gmail or Yahoo, they'll see a link that lets them either sign in to read the email message or request a one-time passcode to view the message in a web browser. If users aren't receiving the email, have them check their Spam or Junk folder.
 
-For more information, see [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980).
+> [!TIP]
+> For more information, see [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980).
 
 ## 8. Protect your email from phishing attacks
 
@@ -263,9 +269,9 @@ To create an anti-phishing policy in Defender for Office 365, view a [short trai
 |Mailbox intelligence|By default, mailbox intelligence is selected when you create a new anti-phishing policy. Leave this setting **On** for best results.|
 |Add trusted senders and domains|For this example, don't define any overrides.|
 |Applied to|Select **The recipient domain is**. Under **Any of these**, select **Choose**. Select **+ Add**. Select the check box next to the name of the domain, for example, contoso.com, in the list, and then select **Add**. Select **Done**.|
-|
 
-For more information, see [Set up anti-phishing policies in Defender for Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
+> [!TIP]
+> For more information, see [Set up anti-phishing policies in Defender for Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
 
 ## 9: Protect against malicious attachments and files with Safe Attachments
 
@@ -290,9 +296,9 @@ To create a Safe attachment policy, view a [short training video](increase-threa
 |Save attachments unknown malware response|Select **Block - Block the current and future emails and attachments with detected malware**.|
 |Redirect attachment on detection|Enable redirection (select this box) <br/> Enter the admin account or a mailbox setup for quarantine. <br/> Apply the above selection if malware scanning for attachments times out or error occurs (select this box).|
 |Applied to|The recipient domain is . . . select your domain.|
-|
 
-For more information, see [Set up anti-phishing policies in Defender for Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
+> [!TIP]
+> For more information, see [Set up anti-phishing policies in Defender for Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
 
 ## 10: Protect against phishing attacks with Safe Links
 
@@ -320,19 +326,22 @@ To modify the default policy:
 
 3. After modifying the default policy, select **Save**.
 
+
 |Setting or option|Recommended setting|
 |---|---|
 |Name|Safe links policy for all recipients in the domain|
 |Select the action for unknown potentially malicious URLs in messages|Select **On - URLs will be rewritten and checked against a list of known malicious links when user clicks on the link**.|
 |Apply real-time URL scanning for suspicious links and links that point to files|Select this box.|
 |Applied to|The recipient domain is . . . select your domain.|
-|
 
-For more information, see [Safe Links in Microsoft Defender for Office 365](../../security/office-365-security/atp-safe-links.md).
+> [!TIP]
+> For more information, see [Safe Links in Microsoft Defender for Office 365](../../security/office-365-security/atp-safe-links.md).
 
-## Protect your organization's devices
+## 11: Protect your organization's devices
 
-Beginning March 1, 2022, Microsoft Defender for Business capabilities are being added to Microsoft 365 Business Premium. Defender for Business is a new endpoint security solution  that was designed especially for the small and medium-sized business (up to 300 employees). With this endpoint security solution, your organization's devices are better protected from ransomware, malware, phishing, and other threats.
+**Beginning March 1, 2022, [Microsoft Defender for Business](../../security/defender-business/index.yml) capabilities are being added to Microsoft 365 Business Premium**. 
+
+Defender for Business is a new endpoint security solution  that was designed especially for the small and medium-sized business (up to 300 employees). With this endpoint security solution, your organization's devices are better protected from ransomware, malware, phishing, and other threats.
 
 To learn more, see the following resources:
 
