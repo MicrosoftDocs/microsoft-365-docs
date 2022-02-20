@@ -12,7 +12,7 @@
   items: 
     - name: Review the requirements
       href: m365bp-requirements.md
-    - name: Set up and configure Microsoft 365 Business Premium
+    - name: Set up Microsoft 365 Business Premium
       href: m365bp-setup.md
     - name: Set up Microsoft 365 for Campaigns
       items:
