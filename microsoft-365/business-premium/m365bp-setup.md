@@ -72,7 +72,7 @@ The following table describes how to set up and configure Microsoft 365 Business
 |   | Secure Microsoft 365 apps on mobile devices | [Set app protection settings for Android or iOS devices](../admin/devices/app-protection-settings-for-android-and-ios.md) |
 |  | Set up Microsoft Defender for Business (when available for your tenant) | [Overview of Microsoft Defender for Business](../security/defender-business/mdb-overview.md)<br/><br/>[Use the wizard to set up Defender for Business](../security/defender-business/mdb-use-wizard.md) |
 | **File storage and migrating content** | Set up file storage and how sharing will work | [Set up file storage and sharing in Microsoft 365](../admin/setup/set-up-file-storage-and-sharing.md) |
-| | Migrate email and contacts | Import or migrate email from Gmail or another email provider to Microsoft 365 | [Migrate email and contacts to Microsoft 365](../admin/setup/migrate-email-and-contacts-admin.md) |
+| | Import or migrate email and contacts | [Migrate email and contacts to Microsoft 365](../admin/setup/migrate-email-and-contacts-admin.md) |
 |  | Move the company files that everyone needs to access to SharePoint. SharePoint typically replaces the use of a file share or network drive. | [Move files to SharePoint](../admin/setup/files-to-sharepoint.md) |
 |  | Move your existing work files, such as personal work files or sensitive business files, to OneDrive. | [Move files to OneDrive](../admin/setup/files-to-onedrive.md) |
 | **Training admins and your security team** | Learn how to use the admin center | [Overview of the Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md) |
