@@ -65,6 +65,7 @@ If you prefer to set up and configure Microsoft 365 Business Premium on your own
 | Basic setup     | Add your domain name to Microsoft 365    | [Add a domain to Microsoft 365](../admin/setup/add-domain.md) |
 |      | Add users and assign licenses in Microsoft 365      | [Add users and assign licenses at the same time](../admin/add-users/add-users.md)        |
 |  | Assign admin roles to users who'll perform certain functions, such as managing features, managing user accounts, managing devices, and viewing or managing your organization's security and compliance information. | [Assign admin roles](../admin/add-users/assign-admin-roles.md)  |
-| Securing your organization | 
+| Security | Review your security checklist |  [Secure your Microsoft 365 for business plan](../admin/security-and-compliance/secure-your-business-data.md) |
+|  | Set up multi-factor authentication | 
 
 
