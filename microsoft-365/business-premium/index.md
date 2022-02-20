@@ -39,16 +39,16 @@ This configuration includes the following guidance for productivity, collaborati
 | ----- | ----- | ----- | ----- |
 |Email | Use multi-factor authentication, and ATP Advanced Phishing Protection, and ATP Safe Links and Safe Attachments, and use encrypted email for sensitive information.| [Set up multi-factor authentication](m365-campaigns-multifactor-authentication.md) <br/><br/>[Protect against phishing attacks](m365-campaigns-phishing-and-attacks.md)<br/><br/>[Encrypt or label your sensitive email](send-encrypted-email.md) |
 |iPhones and Android devices |Use multi-factor authentication, and set up Microsoft mobile apps, and require a PIN | [Set up multi-factor authentication](m365-campaigns-multifactor-authentication.md)<br/><br/>[Set up mobile devices](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)|
-|Bring-your-own-devices (BYOD) Macs and Windows 10 PCs |Keep Office up to date, keep operating systems updated, and enable security features. | [Protect unmanaged Windows 10 PCs and Macs](m365-campaigns-protect-pcs-macs.md) |
+|Bring-your-own-devices (BYOD) for Mac and Windows PCs |Keep Office up to date, keep operating systems updated, and enable security features. | [Protect unmanaged Windows and Mac devices](m365-campaigns-protect-pcs-macs.md) |
 |Storing and sharing files securely | Share files and videos from Microsoft Teams, OneDrive, SharePoint, and Microsoft Stream, and protect sensitive data.| [Share files and videos](share-files-and-videos.md) |
-|Managed Windows 10 devices |Use managed devices for key staff and secure these devices. | [Set up managed devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) |
+|Managed Windows devices |Use managed devices for key staff and secure these devices. | [Set up managed devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) |
 
 ## A recommended security configuration for Microsoft 365 Business Premium
 
 This recommended secure configuration for Microsoft 365 Business Premium lets you:
 
 - Rely on trusted business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products.
-- Protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage.
+- Protect your work files on all of your iOS, Android, and Windows devices with enterprise-grade security that is simple to manage.
 - Apply extra protection for user accounts and identity.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH]
