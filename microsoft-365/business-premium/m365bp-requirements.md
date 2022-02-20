@@ -34,7 +34,9 @@ The following table lists the basic requirements to configure and use Microsoft 
 | Multi-touch | A touch-enabled device is required to use any multitouch functionality. However, all features and functionality are always available by using a keyboard, mouse, or other standard- or accessible-input device. Note that new touch features are optimized for use with Windows 8 or later |
 | Additional system requirements | Internet functionality requires an internet connection |
 
-To learn more, see [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab).
+> [!TIP]
+> To learn more, see [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab).
 
 ## Next steps
 
+[Set up Microsoft 365 Business Premium](m365bp-setup.md) or [Set up Microsoft 365 Business Premium](microsoft-365-campaigns-setup-overview.md)
