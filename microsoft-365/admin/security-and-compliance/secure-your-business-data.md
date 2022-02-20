@@ -1,5 +1,5 @@
 ---
-title: "Top 10 ways to secure Microsoft 365 for business plans"
+title: Set up your security and compliance capabilities in Microsoft 365
 f1.keywords:
 - CSH
 ms.author: sharik
@@ -27,15 +27,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
-description: "How to protect your business email and data from cyberthreats, including ransomware, phishing, and malicious attachments."
+description: "Protect your business email and data from cyberthreats, including ransomware, phishing, and malicious attachments."
 ---
 
-# Top 10 ways to secure Microsoft 365 for business plans
+# Secure your Microsoft 365 for business plan
 
-If you are a small or medium-size organization using one of Microsoft's business plans and your type of organization is targeted by cybercriminals and hackers, use the guidance in this article to increase the security of your organization. This guidance helps your organization achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598).
+If you are a small or medium-size organization using one of Microsoft's business plans, you can use the guidance in this article to increase the security of your organization. This guidance helps your organization achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598).
 
 > [!TIP]
-> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
+> If you need help with the steps in this article, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Watch: Overview of security
 
@@ -43,31 +43,31 @@ If you are a small or medium-size organization using one of Microsoft's business
 
 Microsoft 365 Business Premium provides threat protection, data protection, and device management features to help you protect your company from online threats and unauthorized access, as well as protect and manage company data on your phones, tablets, and computers.
 
-## Complete top security tasks
+## Security tasks to complete
 
 Microsoft recommends that you complete the tasks listed in the following table that apply to your service plan.
 
 |*Number*|Task|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|---|
-|1|[Set up multi-factor authentication](#1-set-up-multi-factor-authentication)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|2|[Train your users](#2-train-your-users)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3|[Use dedicated admin accounts](#3-use-dedicated-admin-accounts)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|4|[Raise the level of protection against malware in mail](#4-raise-the-level-of-protection-against-malware-in-mail)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5|[Protect against ransomware](#5-protect-against-ransomware)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|6|[Stop auto-forwarding for email](#6-stop-auto-forwarding-for-email)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|7|[Use Office Message Encryption](#7-use-office-message-encryption)||![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|8|[Protect your email from phishing attacks](#8-protect-your-email-from-phishing-attacks)||![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|9|[Protect against malicious attachments and files with Safe Attachments](#9-protect-against-malicious-attachments-and-files-with-safe-attachments)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10|[Protect against phishing attacks with Safe Links](#10-protect-against-phishing-attacks-with-safe-links)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+| 1 | [Set up multi-factor authentication](#1-set-up-multi-factor-authentication) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| 2 | [Train your users](#2-train-your-users) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)| ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| 3 | [Use dedicated admin accounts](#3-use-dedicated-admin-accounts)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
+| 4 | [Raise the level of protection against malware in mail](#4-raise-the-level-of-protection-against-malware-in-mail) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| 5 | [Protect against ransomware](#5-protect-against-ransomware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| 6 | [Stop auto-forwarding for email](#6-stop-auto-forwarding-for-email) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| 7 | [Use Office Message Encryption](#7-use-office-message-encryption) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| 8 | [Protect your email from phishing attacks](#8-protect-your-email-from-phishing-attacks) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| 9 | [Protect against malicious attachments and files with Safe Attachments](#9-protect-against-malicious-attachments-and-files-with-safe-attachments) | | ![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| 10 | [Protect against phishing attacks with Safe Links](#10-protect-against-phishing-attacks-with-safe-links) | | ![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| 11 | Protect your organization's devices  | | ![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 
-If you have Microsoft Business Premium, the quickest way to setup security and begin collaborating safely is to follow the guidance in this library: [Microsoft 365 for smaller businesses and campaigns](../../business-premium/index.md). This guidance was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyberthreats launched by sophisticated hackers.
+If you have Microsoft Business Premium, the quickest way to setup security and begin collaborating safely is to follow the guidance in this library: [Microsoft 365 Business Premium](../../business-premium/index.md). This guidance was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyberthreats that are launched by sophisticated hackers.
 
 Before you begin, check your [Microsoft 365 Secure Score](../../security/defender/microsoft-secure-score.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. With added insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting about your organization's security health.
 
 ![Screenshot of Microsoft Secure Score.](../../media/secure-score.png)
 
 ## 1: Set up multi-factor authentication
-
 
 Using multifactor authentication is one of the easiest and most effective ways to increase the security of your organization. It's easier than it sounds - when you log in, multifactor authentication means you'll type a code from your phone to get access to Microsoft 365. This extra step can prevent hackers from taking over if they know your password. Multifactor authentication is also called 2-step verification. Individuals can add 2-step verification to most accounts easily, for example, to their Google or Microsoft accounts. Here's how to [add two-step verification to your personal Microsoft account](https://go.microsoft.com/fwlink/p/?linkid=2016403).
 
@@ -329,6 +329,16 @@ To modify the default policy:
 |
 
 For more information, see [Safe Links in Microsoft Defender for Office 365](../../security/office-365-security/atp-safe-links.md).
+
+## Protect your organization's devices
+
+Beginning March 1, 2022, Microsoft Defender for Business capabilities are being added to Microsoft 365 Business Premium. Defender for Business is a new endpoint security solution  that was designed especially for the small and medium-sized business (up to 300 employees). With this endpoint security solution, your organization's devices are better protected from ransomware, malware, phishing, and other threats.
+
+To learn more, see the following resources:
+
+- [Overview of Microsoft Defender for Business (preview)](../../security/defender-business/mdb-overview.md)
+- [Set up and configure Microsoft Defender for Business (preview)](../../security/defender-business/mdb-setup-configuration.md)
+- [Get started using the Microsoft 365 Defender portal](../../security/defender-business/mdb-get-started.md)
 
 ## Related content
 
