@@ -29,11 +29,11 @@ Use this article as a guide.
 
 ## The guided setup process
 
-Microsoft 365 Business Premium includes a guided process for basic setup. To see how the guided setup works, watch the following video: <br/><br/>
+Microsoft 365 Business Premium includes a guided process for basic setup. Tasks include connecting to a custom domain, adding users, assigning licenses, installing Outlook on mobile devices, reviewing data protection settings, and applying a mobile app protection policy. 
+
+To see how the guided setup works, watch the following video: <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ?autoplay=false]
-
-[Learn more about the differences between the guided setup process and the Setup page](../admin/setup/o365-setup-wizard-and-setup-page.md).
 
 After you have finished the guided setup, there are additional steps to complete to help ensure that your security and compliance capabilities are properly set up and applied. These steps include:
 
@@ -41,8 +41,10 @@ After you have finished the guided setup, there are additional steps to complete
 - [Deploying Microsoft 365 apps](../admin/setup/install-applications.md)
 - [Setting up and configuring your new Defender for Business capabilities](../security/defender-business/mdb-setup-configuration.md)
 
+[Learn more about the differences between the guided setup process and the Setup page](../admin/setup/o365-setup-wizard-and-setup-page.md).
+
 > [!TIP]
-> See the next section for more details about setting up and configuring Microsoft 365 Business Premium.
+> See the following section for more details about setting up and configuring Microsoft 365 Business Premium.
 
 ## The setup process, step by step
 
