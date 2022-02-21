@@ -155,7 +155,7 @@ Licensing requirements for Microsoft Defender for Endpoint can be found at: [Lic
 
 ### Known issues and limitations
 
-Only Microsoft Edge is supported for web filtering in windows 10 multisession.
+Only Microsoft Edge is supported for web filtering in Windows 10 multi-session.
 
 #### Related Links
 
