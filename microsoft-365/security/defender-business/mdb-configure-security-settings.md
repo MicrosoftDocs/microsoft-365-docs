@@ -30,9 +30,9 @@ ms.collection:
 
 After you've onboarded your organization's devices to Microsoft Defender for Business (preview), your next step is to view and if necessary, edit your security policies and settings. Security policies include:
 
-- Next-generation protection policies, which determine antivirus and antimalware protection for your organization's devices
-- Firewall protection and rules, which determine what network traffic is allowed to flow to or from your organization's devices
-- Web content filtering, which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability.
+- **[Next-generation protection policies](#view-or-edit-your-next-generation-protection-policies)**, which determine antivirus and antimalware protection for your organization's devices
+- **[Firewall protection and rules](#view-or-edit-your-firewall-policies-and-custom-rules)**, which determine what network traffic is allowed to flow to or from your organization's devices
+- **[Web content filtering](#set-up-web-content-filtering)**, which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability.
 
 In Defender for Business (preview), security policies are applied to devices through [device groups](mdb-create-edit-device-groups.md#what-is-a-device-group). 
 
@@ -48,9 +48,9 @@ Use this article as a guide to managing your security policies and settings.
 
 3. [View or edit your firewall policies and custom rules](#view-or-edit-your-firewall-policies-and-custom-rules).
 
-4. [Set up web content filtering](#set-up-web-content-filtering)
+4. [Set up web content filtering](#set-up-web-content-filtering).
 
-5. [View and edit other settings in the Microsoft 365 Defender portal](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal) 
+5. [View and edit other settings in the Microsoft 365 Defender portal](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal). 
 
 6. [Proceed to your next steps](#next-steps).
 
@@ -81,11 +81,11 @@ Depending on whether you're using the Microsoft 365 Defender portal or Microsoft
 | Portal | Procedure |
 |:---|:---|
 | Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) | 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. <br/><br/>2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system and policy type.<br/><br/>3. Select an operating system tab (such as **Windows clients**).<br/><br/>4. Expand **Firewall** to view your list of policies.<br/><br/>5. Select a policy to view more details about the policy. To make changes or to learn more about policy settings, see the following articles: <br/>- [View or edit device policies](mdb-view-edit-policies.md)<br/>- [Firewall settings](mdb-firewall.md)<br/>- [Manage your custom rules for firewall policies](mdb-custom-rules-firewall.md)  |
-| Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) | 1. Go to [https://endpoint.microsoft.com](https://endpoint.microsoft.com) and sign in. You're now in the Microsoft Endpoint Manager admin center.<br/><br/>2. Select **Endpoint security**.<br/><br/>3. Select **Firewall** to view your policies in that category. Note that custom rules that are defined for firewall protection are listed as separate policies.<br/><br/>To get help managing your security settings in Microsoft Endpoint Manager, start with [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security). |
+| Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) | 1. Go to [https://endpoint.microsoft.com](https://endpoint.microsoft.com) and sign in. You're now in the Microsoft Endpoint Manager admin center.<br/><br/>2. Select **Endpoint security**.<br/><br/>3. Select **Firewall** to view your policies in that category. Custom rules that are defined for firewall protection are listed as separate policies.<br/><br/>To get help managing your security settings in Microsoft Endpoint Manager, start with [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security). |
 
 ## Set up web content filtering
 
-conetnt ocming
+content coming
 
 ## View and edit other settings in the Microsoft 365 Defender portal
 
