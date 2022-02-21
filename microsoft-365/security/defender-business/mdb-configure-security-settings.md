@@ -85,7 +85,36 @@ Depending on whether you're using the Microsoft 365 Defender portal or Microsoft
 
 ## Set up web content filtering
 
-content coming
+Web content filtering enables your security team to track and regulate access to websites based on their content categories, such as:
+
+- Adult content: Sites that are related to cults, gambling, nudity, pornography, sexually explicit material, or violence
+- High bandwidth: Download sites, image sharing sites, or peer-to-peer hosts
+- Legal liability: Sites that include child abuse images, promote illegal activities, foster plagiarism or school cheating, or that promote harmful activities
+- Leisure: Sites that provide web-based chat rooms, online gaming, web-based email, or social networking
+- Uncategorized: Sites that have no content or that are newly registered
+
+Not all of the websites in these categories are malicious, but they could be problematic for your organization because of compliance regulations, bandwidth usage, or other concerns. In addition, you can create an audit-only policy to get a better understanding of whether your security team should block any website categories.
+
+Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave, and Opera). For more information see [Prerequisites for web content filtering](../defender-endpoint/web-content-filtering.md#prerequisites).
+
+### To set up web content filtering
+
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Settings** > **Web content filtering** > **+ Add policy**.
+
+2. Specify a name and description for your policy.
+
+3. Select categories to block. Use the expand icon to fully expand each parent category and select specific web content categories.
+
+   To set up an audit-only policy that does not block any websites, do not select any categories.
+
+   Do not select **Uncategorized**.
+
+4. Specify the policy scope by selecting device groups to apply the policy. Only devices in the selected device groups will be prevented from accessing websites in the selected categories.
+
+5. Review the summary and save the policy. The policy refresh might take up to 2 hours to apply to your selected devices.
+
+> [!TIP]
+> To learn more about web content filtering, see [Web content filtering](../defender-endpoint/web-content-filtering.md).
 
 ## View and edit other settings in the Microsoft 365 Defender portal
 
