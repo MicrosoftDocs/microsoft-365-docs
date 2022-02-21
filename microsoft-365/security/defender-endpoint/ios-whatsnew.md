@@ -32,6 +32,10 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 
 Microsoft Defender for Endpoint on iOS now has specialized ability on supervised iOS/iPadOS devices, given the increased management capabilities provided by the platform on these types of devices. It can also provide Web Protection **without setting up a local VPN on the device**. This gives end-users a seamless experience while still being protected from phishing and other web-based attacks. For details, visit [this documentation](ios-install.md#complete-deployment-for-supervised-devices)
 
+## Microsoft Defender for Endpoint is now Microsoft Defender in the App store
+
+Microsoft Defender for Endpoint is now available as **Microsoft Defender** in the app store. With this update, the app will be available as preview for **Consumers in the US region**. Based on how you log into the app with your work or personal account, you will have access to features for Microsoft Defender for Endpoint or to features for Microsoft Defender for individuals. For more information, see [this blog](https://www.microsoft.com/en-us/microsoft-365/microsoft-defender-for-individuals).
+
 ## Threat and Vulnerability Management
 
 On January 25, 2022, we announced the general availability of Threat and Vulnerability management on Android and iOS. For more details, see [the techcommunity post here](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663).
