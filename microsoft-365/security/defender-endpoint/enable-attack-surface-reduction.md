@@ -157,6 +157,7 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
 
    - In **Platform**, select **Windows 10 and later**
    - In **Profile type**, select **Templates**
+   - If there are ASR rules already set through endpoint securituy, In **Profile type**, select **Settings Catolog**
 
    Select **Custom**, and then select **Create**.
 
