@@ -45,10 +45,6 @@ From the default alerts queue, you can select **Filter** to see a **Filter** pan
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="Example of the filters pane for the alerts queue in the Microsoft 365 Defender portal.":::
 
-<!--
-UPDATE SCREENSHOT
---> 
-
 You can filter alerts according to these criteria:
 
 - Severity
@@ -140,7 +136,7 @@ The **Manage alert** pane allows you to view or specify:
 
 - The alert status (New, Resolved, In progress).
 - The user account that has been assigned the alert.
-- The alert's classification  (Not set, True alert, False Alert).
+- The alert's classification (Not set, True alert, False Alert).
 - For the classification as a true alert, the type of threat for the alert in **Determination** field.
 - A comment on the alert.
 
