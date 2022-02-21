@@ -31,9 +31,9 @@ Microsoft Managed Desktop uses four Azure AD groups to manage updates:
 
 | Group | Description |
 | ------ | ------ |
-| Test | Used to validate Microsoft Managed Desktop policy changes, operating system updates, feature updates, and other changes pushed to the Azure AD organization ("tenant"). The Test group is: <ul><li>Best for testing or users who can provide early feedback.</li><li>Exempt from any established service level agreements and user support.</li><li>Available to validate compatibility of applications with new policy or operating system changes.</li></ul> |
+| Test | Used to validate Microsoft Managed Desktop policy changes, operating system updates, feature updates, and other changes pushed to the Azure AD organization ("tenant"). The Test group is: <br><ul><li>Best for testing or users who can provide early feedback.</li><li>Exempt from any established service level agreements and user support.</li><li>Available to validate compatibility of applications with new policy or operating system changes.</li></ul> |
 | First | Contains early software adopters and devices that could be subject to pre-release updates. <br><br> Devices in this group might experience outages if there are scenarios that weren't covered during testing in the test ring. |
-| Fast | Prioritizes speed over stability. The Fast group is: <ul><li>Useful for detecting quality issues before they're offered to the Broad group.</li> <li>The next layer of validation, and is typically more stable than the Test and First groups.</li></ul> |
+| Fast | Prioritizes speed over stability. The Fast group is: <br><ul><li>Useful for detecting quality issues before they're offered to the Broad group.</li> <li>The next layer of validation, and is typically more stable than the Test and First groups.</li></ul> |
 | Broad | This group is the last group to have feature and quality updates available. <br><br> The Broad group contains most of users in the Azure AD organization, and therefore favors stability over speed in deployment. Testing of apps should be done with this group because the environment is the most stable. |
 
 ### Moving devices between update groups
