@@ -36,7 +36,7 @@ After you've onboarded your organization's devices to Microsoft Defender for Bus
 
 In Defender for Business (preview), security policies are applied to devices through [device groups](mdb-create-edit-device-groups.md#what-is-a-device-group). 
 
-In addition to your security policies, you can view and edit settings, such as which time zone to use in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and whether to receive preview features as they become available.
+In addition to your security policies, you can [view and edit settings](#view-and-edit-other-settings-in-the-microsoft-365-defender-portal), such as which time zone to use in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and whether to receive preview features as they become available.
 
 Use this article as a guide to managing your security policies and settings.
 
