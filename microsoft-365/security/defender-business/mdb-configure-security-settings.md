@@ -62,11 +62,12 @@ The following table can help you choose where to manage your security policies a
 
 | Option | Description |
 |:---|:---|
-| **Use the Microsoft 365 Defender portal** (*recommended*) | The Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) can be your one-stop shop for managing your organization's devices, security policies, and security settings. <br/><br/>Defender for Business (preview) was designed for the busy small or medium-sized business in mind. Several prebuilt security policies are available in Defender for Business, and these policies are easily accessed in the Microsoft 365 Defender portal. |
-| **Use Microsoft Endpoint Manager** | If your organization is already using Microsoft Endpoint Manager to manage security policies, you can continue using Endpoint Manager and apply security policies to some or all devices. To learn more, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>Consider switching to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md). If you make the switch, you'll be prompted to delete any existing security policies in Microsoft Endpoint Manager before proceeding with the simplified configuration process in Defender for Business. Deleting your policies in Microsoft Endpoint Manager helps avoid policy conflicts later. |
-
+| **Use the Microsoft 365 Defender portal** (*recommended*) | The Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) can be your one-stop shop for managing your organization's devices, security policies, and security settings. You can access your security policies and settings, use your [Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md), and [view and manage incidents](mdb-view-manage-incidents.md) all in one place.  |
+| **Use Microsoft Endpoint Manager** | If your organization is already using Microsoft Endpoint Manager to manage security policies, you can continue using Endpoint Manager to manage devices and security policies. To learn more, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>If you decide to switch to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md) to use the Microsoft 365 Defender portal instead, you'll be prompted to delete any existing security policies in Microsoft Endpoint Manager. Deleting your policies in Microsoft Endpoint Manager helps avoid policy conflicts later. |
 
 ## View or edit your next-generation protection policies
+
+Depending on whether you're using the Microsoft 365 Defender portal or Microsoft Endpoint Manager to manage your next-generation protection policies, use one of the procedures in the following table:
 
 | Portal | Procedure |
 |:---|:---|
