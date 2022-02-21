@@ -30,6 +30,8 @@ If you don’t already have Microsoft Defender for Business, you can choose from
 - [Work with a Microsoft solution provider](#work-with-a-microsoft-solution-provider)
 - [Sign up for the preview program](#sign-up-for-the-preview-program)
 
+If you have signed up for a trial, after you receive your acceptance email, you can [activate your trial](#activate-your-trial), [view and manage users](#view-and-manage-users), and then proceed to your [next steps](#next-steps).
+
 ## Work with a Microsoft Solution Provider
 
 Microsoft has a list of solution providers who are authorized to sell offerings, including Microsoft Defender for Business. 
