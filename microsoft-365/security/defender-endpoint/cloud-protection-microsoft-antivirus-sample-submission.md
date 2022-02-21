@@ -94,8 +94,7 @@ In addition to configuring your cloud protection level, you can configure your s
 
 For information about configuration options using Intune, Configuration Manager, GPO, or PowerShell, see [Turn on cloud protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
 
-For information about managing sample submission, see [Configure remediation for Microsoft Defender Antivirus detections.]([https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-remediation-microsoft-defender-antivirus?](configure-remediation-microsoft-defender-antivirus.md))
-
+For information about managing sample submission, see [Configure remediation for Microsoft Defender Antivirus detections.](configure-remediation-microsoft-defender-antivirus.md)
 
 
 ## Examples of metadata sent to the cloud protection service
