@@ -50,11 +50,11 @@ Licensing for Core eDiscovery requires the appropriate organization subscription
   
   For information about how to assign licenses, see [Assign licenses to users](../admin/manage/assign-licenses-to-users.md).
 
-For information about licensing:
+For information and guidance on security and compliance:
 
-- Download and see the eDiscovery and auditing section in the [Microsoft 365 Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
+- Download and see the eDiscovery and auditing section in the [Microsoft 365 Comparison table](https://aka.ms/M365EnterprisePlans).
 
-- See the [Security & Compliance Center service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+- See the [Microsoft 365 guidance for security & compliance - Service Descriptions | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## Step 2: Assign eDiscovery permissions
 
