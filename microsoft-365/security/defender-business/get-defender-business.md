@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/20/2022
+ms.date: 02/21/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -90,11 +90,11 @@ If your organization is using Microsoft 365 Business Premium, then you have Micr
 
 When you receive your acceptance email, here's how to activate your trial of Defender for Business.
 
-1. In your acceptance email, select the link that includes your promo code. The link has the format `https://signup.microsoft.com/get-started/signup?products=e1cf4e0c-dce3-4722-b98f-280edac199a6&pc=####################&ru=https://aka.ms/mdesmb`, where the `#` characters represent your specific promo code.
+1. In your acceptance email, select the link that includes your promo code. 
 
 2. If you already have a Microsoft 365 subscription, sign in using your account. If you don't already have a subscription, follow the prompts to create a new account. 
 
-3. When you sign in for the first time, you'll be in the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)). See [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
+3. When you sign in for the first time, you'll go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)). See [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
 
 4. If you're setting up things for the first time, select **Go to guided setup** and complete the following steps:
 
