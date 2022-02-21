@@ -78,11 +78,10 @@ Depending on whether you're using the Microsoft 365 Defender portal or Microsoft
 
 Depending on whether you're using the Microsoft 365 Defender portal or Microsoft Endpoint Manager to manage your firewall protection, use one of the procedures in the following table: <br/><br/>
 
-
 | Portal | Procedure |
 |:---|:---|
 | Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) | 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. <br/><br/>2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system and policy type.<br/><br/>3. Select an operating system tab (such as **Windows clients**).<br/><br/>4. Expand **Firewall** to view your list of policies.<br/><br/>5. Select a policy to view more details about the policy. To make changes or to learn more about policy settings, see the following articles: <br/>- [View or edit device policies](mdb-view-edit-policies.md)<br/>- [Firewall settings](mdb-firewall.md)<br/>- [Manage your custom rules for firewall policies](mdb-custom-rules-firewall.md)  |
-| Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) | 1. Go to [https://endpoint.microsoft.com](https://endpoint.microsoft.com) and sign in. You're now in the Microsoft Endpoint Manager admin center.<br/><br/>2. Select **Endpoint security**.<br/><br/>3. Select a category, such as **Antivirus**, **Firewall**, **Endpoint detection and response**, or **Attack surface reduction** to view policies in that category. <br/><br/>To get help managing your security settings in Microsoft Endpoint Manager, start with [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security). |
+| Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) | 1. Go to [https://endpoint.microsoft.com](https://endpoint.microsoft.com) and sign in. You're now in the Microsoft Endpoint Manager admin center.<br/><br/>2. Select **Endpoint security**.<br/><br/>3. Select **Firewall** to view your policies in that category. Note that custom rules that are defined for firewall protection are listed as separate policies.<br/><br/>To get help managing your security settings in Microsoft Endpoint Manager, start with [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security). |
 
 ## Set up web content filtering
 
@@ -93,7 +92,7 @@ conetnt ocming
 In addition to security policies that are applied to devices, there are other settings you can view and edit in Defender for Business (preview). For example, you specify the time zone to use, and you can onboard (or offboard) devices. 
 
 > [!NOTE]
-> You might see more settings in your tenant than are listed in this article. We are highlighting the settings that you should review in Defender for Business (preview).
+> You might see more settings in your tenant than are listed in this article. This article highlights the most important settings that you should review in Defender for Business (preview).
 
 ### Settings to review for Defender for Business
 
