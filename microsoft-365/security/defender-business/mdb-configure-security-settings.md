@@ -30,8 +30,8 @@ ms.collection:
 
 After you've onboarded your organization's devices to Microsoft Defender for Business (preview), your next step is to view and if necessary, edit your security policies and settings. Security policies include:
 
-- Next-generation protection policies, which determine antivirus and antimalware protection for your company's devices
-- Firewall protection and rules, which determine what network traffic is allowed to flow to or from your company's devices
+- Next-generation protection policies, which determine antivirus and antimalware protection for your organization's devices
+- Firewall protection and rules, which determine what network traffic is allowed to flow to or from your organization's devices
 - Web content filtering, which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability.
 
 In Defender for Business (preview), security policies are applied to devices through [device groups](mdb-create-edit-device-groups.md#what-is-a-device-group). 
@@ -58,7 +58,7 @@ The following table can help you choose where to manage your security policies a
 
 | Option | Description |
 |:---|:---|
-| **Use the default security policies in the Microsoft 365 Defender portal** (*recommended*) | Defender for Business (preview) was designed for the busy small or medium-sized business in mind. The default security policies in Defender for Business are designed to protect your organization's devices from day one.<br/><br/>You can use the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) to view and manage your security policies.<br/><br/>To learn more, see [View or edit device policies](mdb-view-edit-policies.md). |
+| **Use the Microsoft 365 Defender portal** (*recommended*) | The Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) can be your one-stop shop for managing your organization's devices, security policies, and security settings. <br/><br/>Defender for Business (preview) was designed for the busy small or medium-sized business in mind. Several prebuilt security policies are available in Defender for Business. These default policies are designed to help protect your organization's devices from day one.  |
 | **Use Microsoft Endpoint Manager** | If your organization is using Microsoft Endpoint Manager to manage security policies, you can continue using Endpoint Manager and apply security policies to some or all devices. To learn more, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>Consider switching to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md). If you make the switch, you'll be prompted to delete any existing security policies in Microsoft Endpoint Manager before proceeding with the simplified configuration process in Defender for Business. Deleting your policies in Microsoft Endpoint Manager helps avoid policy conflicts later. |
 
 > [!TIP]
@@ -84,7 +84,7 @@ The following table can help you choose where to manage your security policies a
 
 ## Set up web content filtering
 
-
+conetnt ocming
 
 ## View and edit other settings in the Microsoft 365 Defender portal
 
