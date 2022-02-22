@@ -40,7 +40,7 @@ Or
 
 ### Endpoint DLP Windows 10/11 and macOS settings
 
-|Setting |Windows 10, 1809 and later, Windows 11  |macOS Catalina 10.15 or later (preview)  |Notes  |
+|Setting |Windows 10, 1809 and later, Windows 11  |macOS Catalina 10.15 or later |Notes  |
 |---------|---------|---------|---------|
 |File path exclusions     |Supported         |Supported         |macOS includes a recommended list of exclusions that is on by default          |
 |Unallowed Apps     |Supported         |Supported         |         |
@@ -96,7 +96,7 @@ You can use this logic to construct your exclusion paths for Windows 10 devices:
 
 - A mix of all the above. <br/>For example: `%SystemDrive%\Users\*\Documents\*(2)\Sub\`
 
-#### macOS devices (preview)
+#### macOS devices
 
 Similar to Windows 10 devices you can add your own exclusions for macOS devices.
 
@@ -118,14 +118,14 @@ For performance reasons, Endpoint DLP includes a list of recommended file path e
 
 ### Unallowed apps
 
-Unallowed apps is a list of applications that you create which will not be allowed to access a DLP protected file. It is available for Windows 10 and macOS devices (preview).
+Unallowed apps is a list of applications that you create which will not be allowed to access a DLP protected file. It is available for Windows 10 and macOS devices.
 
 When a policy's **Access by unallowed apps** setting is turned on, and an app that is on the unallowed list attempts to access a protected file, the activity will be allowed, blocked, or blocked but users can override the restriction. All activity is audited and available to review in activity explorer.
 
 > [!IMPORTANT]
 > Do not include the path to the executable, but only the executable name (such as browser.exe).
 
-#### macOS devices (preview)
+#### macOS devices
 
 Just like on Windows devices, you will now be able to prevent macOS apps from accessing sensitive data by defining them in the **Unallowed apps** list. 
 

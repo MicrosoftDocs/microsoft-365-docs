@@ -37,7 +37,7 @@ You can use Microsoft 365 data loss prevention (DLP) to monitor the actions that
 
 Microsoft Endpoint DLP enables you to audit and manage the following types of activities users take on sensitive items that are physically stored Windows 10, Windows 11, or macOS devices.
 
-|Activity |Description  |Windows 10 1809 and later/ Windows 11| macOS Catalina 10.15 (preview) | Auditable/restrictable|
+|Activity |Description  |Windows 10 1809 and later/ Windows 11| macOS Catalina 10.15| Auditable/restrictable|
 |---------|---------|---------|---------|---------|
 |upload to cloud service, or access by unallowed browsers    | Detects when a user attempts to upload an item to a restricted service domain or access an item through a browser.  If they are using a browser that is listed in DLP as an unallowed browser, the upload activity will be blocked and the user is redirected to use Microsoft Edge . Microsoft Edge will then either allow or block the upload or access based on the DLP policy configuration         |supported | supported|auditable and restrictable|
 |copy to other app    |Detects when a user attempts to copy information from a protected item and then paste it into another app, process or item. Copying and pasting information within the same app, process, or item is not detected by this activity.|supported|supported         | auditable and restrictable|
@@ -162,7 +162,7 @@ For example, if a file is copied to removable USB media, you'd see these attribu
 Now that you've learned about Endpoint DLP, your next steps are:
 
 1. [Onboard Windows 10 or Windows 11 devices into Microsoft 365 overview](device-onboarding-overview.md)
-1. [Onboard macOS devices into Microsoft 365 overview (preview)](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
+1. [Onboard macOS devices into Microsoft 365 overview](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview)
 1. [Using Microsoft Endpoint data loss prevention](endpoint-dlp-using.md)
 
 ## See also

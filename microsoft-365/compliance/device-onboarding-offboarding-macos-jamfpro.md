@@ -1,5 +1,5 @@
 ---
-title: Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro (preview)
+title: Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro
 f1.keywords:
     NOCSH
 ms.author: chrfox
@@ -14,10 +14,10 @@ ms.collection:
 - M365-security-compliance 
 search.appverid:
 - MET150 
-description: Learn how to onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro (preview)
+description: Learn how to onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro
 ---
 
-# Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro (preview)
+# Onboard and offboard macOS devices into Microsoft 365 Compliance solutions using JAMF Pro
 
 You can use JAMF Pro to onboard macOS devices into Microsoft 365 compliance solutions like Endpoint data loss prevention.
 
