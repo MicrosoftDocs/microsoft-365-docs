@@ -6040,6 +6040,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/learning/configure-edcast-content-source.md",
+      "redirect_url": "/viva/learning/configure-edcast-content-source",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/learning/configure-go1-content-source.md",
       "redirect_url": "/viva/learning/configure-go1-content-source",
       "redirect_document_id": false
