@@ -2,8 +2,8 @@
 title: "Configure support integration with ServiceNow - Basic Authentication"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
