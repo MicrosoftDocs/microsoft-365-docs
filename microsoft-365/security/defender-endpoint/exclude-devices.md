@@ -29,27 +29,18 @@ ms.technology: mde
 
 Excluding devices that are inactive, duplicate, or out of scope allows you to focus on discovering and prioritizing the risks on your active devices. This action can also help reflect a more accurate threat and vulnerability management exposure score, as the excluded devices won't be visible in your threat and vulnerability management reports.
 
-Once devices are excluded, you won’t be able to view updated or relevant information about vulnerabilities and installed software on these devices. It affects all threat and vulnerability management pages, reports, and related tables in Advanced hunting.
+Once devices are excluded, you won’t be able to view updated or relevant information about vulnerabilities and installed software on these devices. It affects all threat and vulnerability management pages, reports, and related tables in advanced hunting.
 
-Even though the device exclusion feature removes the device data from vulnerability management pages and reports, the devices remain connected to the network and can still be a risk to the organization.
+Even though the device exclusion feature removes the device data from vulnerability management pages and reports, the devices remain connected to the network and can still be a risk to the organization. You'll be able to cancel the device exclusion at any time.
 
-> [!NOTE]
->You'll be able to cancel the device exclusion at any time, and it can take up to 8 hours for updates to be visible in the portal.
+## How to exclude a device
 
-## Exclude a device from vulnerability management views
-
-You can exclude one device or multiple devices at the same time.
-
-To exclude a single device:
+You can exclude one device or multiple devices at the same time. To exclude a single device:
 
 1. Go to the **Device inventory** page and select the device to exclude.
 2. Select **Exclude** from the action bar on the device inventory page or from the response actions menu in the device flyout.
 
 ![Image of exclude device menu option.](images/exclude-devices-menu.png)
-
-You can also exclude the device from the device page itself.
-
-![Image of exclude device.](images/exclude-device.png)
 
 3. Select a justification:
 
@@ -60,6 +51,10 @@ You can also exclude the device from the device page itself.
 - Other
 
 4. Type a note and select **Exclude device**.
+
+![Image of exclude device.](images/exclude-device.png)
+
+You can also exclude the device from the device page itself.
 
 It can take up to 10 hours for a device to be fully excluded from vulnerability management views and data.
 
@@ -72,15 +67,15 @@ Excluded devices are still visible in the Device inventory list. You can use
 
 ## Bulk device exclusion
 
-To exclude multiple devices:
+You can also choose to exclude multiple devices at the same time:
 
 1. Go to the **Device inventory** page and select the devices to exclude.
 
-2. From the actions bar select **Exclude**
+2. From the actions bar, select **Exclude**
 
 3. Choose a justification and select **Exclude device**
 
-If you select multiple devices in the device list with different exclusion statuses, then you’ll get the option to exclude devices like a bulk device exclusion. However, the exclude  selected devices flyout will provide you details on how many of the selected devices are already excluded. You can exclude the devices again, but the justification and notes will be overridden.
+If you select multiple devices in the device list with different exclusion statuses, then you’ll get the option to exclude devices like a bulk device exclusion. However, the exclude selected devices flyout will provide you details on how many of the selected devices are already excluded. You can exclude the devices again, but the justification and notes will be overridden.
 
 ![Image of exclude device](images/exclude-device-bulk.png)
 
@@ -96,7 +91,7 @@ The data also won’t show up in vulnerability management pages, related advance
 
 ## Stop excluding a device
 
-You’ll be able to stop excluding a device at any time. Once devices are no longer excluded, their vulnerability data will be visible in vulnerability management pages, reports, and in advanced hunting. It may take up to 8 hours for the changes to take affect.
+You’ll be able to stop excluding a device at any time. Once devices are no longer excluded, their vulnerability data will be visible in vulnerability management pages, reports, and in advanced hunting. It may take up to 8 hours for the changes to take effect.
 
 1. Go to the Device inventory, select the excluded device to open the flyout, and then select **Exclusion details**
 2. Select **Stop exclusion**
