@@ -30,9 +30,9 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender not only provides detection and analysis capabilities but also provides containment and eradication of malware. Containment includes steps to reduce the impact of the attack while eradication ensures all traces of attacker activity are removed from the network.  Microsoft 365 Defender offers several remediation actions which can be configured to [auto-remediate](m365d-autoir.md) depending on your operating system and the attack type.
+Microsoft 365 Defender not only provides detection and analysis capabilities but also provides containment and eradication of malware. Containment includes steps to reduce the impact of the attack while eradication ensures all traces of attacker activity are removed from the network. Microsoft 365 Defender offers several remediation actions that can be configured to [auto-remediate](m365d-autoir.md) depending on the operating system of affected devices and the attack type.
 
-Microsoft 365 Defender offers several remediation actions that analysts can manually initiate. Actions are separated into two categories, Actions on devices and Actions on files. Some actions can be used to immediately stop the threat while other actions assist in further forensic analysis.
+Microsoft 365 Defender offers several remediation actions that analysts can manually initiate. Actions are separated into two categories, Actions on devices and actions on files. Some actions can be used to immediately stop the threat while other actions assist in further forensic analysis.
 
 ## Actions on devices
 
@@ -81,7 +81,7 @@ Here's an example.
  
 :::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Example of a Power Automate custom robotic process automation flow."::: 
  
-Playbooks can also be created during [post-incident review](first-incident-post.md) to create remediation actions from incidents for faster remediation actions. 
+Playbooks can also be created during [post-incident review](first-incident-post.md) to create remediation actions from resolved incidents. 
 
 ## Next step
 
