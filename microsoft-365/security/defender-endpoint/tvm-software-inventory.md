@@ -75,8 +75,6 @@ The following indicates that software is not supported:
 - Informational text added in side panel and in software page
 - The software page won't have the security recommendations, discovered vulnerabilities, or event timeline sections
 
-Currently, products without a CPE are not shown in the software inventory page, only in the device level software inventory.
-
 ## Software inventory on devices
 
 From the Microsoft 365 Defender portal navigation panel, go to the **[Device inventory](machines-view-overview.md)**. Select the name of a device to open the device page (like Computer1), then select the **Software inventory** tab to see a list of all the known software present on the device. Select a specific software entry to open the flyout with more information.
@@ -87,7 +85,7 @@ Software with no CPE can also show up under this device-specific software invent
 
 ### Software evidence
 
-See evidence of where we detected a specific software on a device from the registry, disk, or both.You can find it on any device in the device software inventory.
+See evidence of where we detected a specific software on a device from the registry, disk, or both. You can find it on any device in the device software inventory.
 
 Select a software name to open the flyout, and look for the section called "Software Evidence."
 
@@ -119,8 +117,14 @@ Report a false positive when you see any vague, inaccurate, or incomplete inform
 
 1. Open the software flyout on the Software inventory page.
 2. Select **Report inaccuracy**.
-3. From the flyout pane, select the inaccuracy category from the drop-down menu, fill in your email address, and details about the inaccuracy.
-4. Select **Submit**. Your feedback is immediately sent to the threat and vulnerability management experts.
+3. From the flyout pane, choose an issue to report from:
+
+- a software detail is wrong
+- the software is not installed on any device in my org
+- the number of installed or exposed devices is wrong
+
+4. Fill in the requested details about the inaccuracy. This will vary depending on the issue you are reporting.
+5. Select **Submit**. Your feedback is immediately sent to the threat and vulnerability management experts.
 
 ## Related articles
 
