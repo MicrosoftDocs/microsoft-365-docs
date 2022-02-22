@@ -393,6 +393,9 @@ Next, see [**Use DMARC to validate email**](use-dmarc-to-validate-email.md). [An
 
 **This test will validate** that the DKIM signing configuration has been configured correctly, and that the proper DNS entries have been published.
 
+> [!NOTE]
+> This feature requires a Microsoft 365 administrator account. This feature isn't available for Microsoft 365 Government, Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
+
 <div class="nextstepaction">
 <p><a href="https://admin.microsoft.com/AdminPortal/?searchSolutions=DKIM#/homepage" data-linktype="external">Run Tests: DKIM</a></p>
 </div>
