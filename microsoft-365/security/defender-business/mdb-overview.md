@@ -49,6 +49,27 @@ With Defender for Business (preview), you can help protect the devices and data 
 > [!TIP]
 > If you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview). To learn more, see [Get Microsoft Defender for Business (preview)](get-defender-business.md).
 
+## How to use this guide
+
+**This guide is intended to**:
+
+- **Provide you with an overview of Defender for Business (preview)** so you know what’s included and how it works
+   - Use this article as a starting point
+   - [Compare security features in Microsoft Defender for Business (preview) to other plans](compare-mdb-m365-plans.md) 
+   - [Find out how to get Microsoft Defender for Business (preview)](get-defender-business.md)
+
+- **Walk through setting up and configuring your threat protection capabilities** 
+   - [See how to set up and configure Defender for Business (preview)](mdb-setup-configuration.md)
+
+- **Help you get started using Defender for Business (preview)**, starting with the Microsoft 365 Defender portal 
+   - [Navigate the Microsoft 365 Defender portal](mdb-get-started.md)
+   - [Try preview scenarios, tutorials, and simulations](mdb-tutorials.md)
+
+- **Provide guidance on managing devices and security policies**
+   - [Manage devices](mdb-manage-devices.md)
+   - [View or edit security policies](mdb-view-edit-policies.md)
+   - [Manage custom rules for firewall policies](mdb-custom-rules-firewall.md)  
+
 ## What's included in Microsoft Defender for Business?
 
 The following table summarizes the features and capabilities available in Microsoft Defender for Business and includes links to learn more.<br/><br/>
@@ -232,27 +253,6 @@ To learn more, see [Getting started with Microsoft Defender for Business](mdb-ge
 Application programming interfaces (APIs) enable applications to communicate with each other. Your company can use Microsoft Defender for Endpoint APIs to automate workflows and integrate your security solution with another custom solution. 
 
 To learn more, see [Defender for Endpoint APIs](../defender-endpoint/management-apis.md).
-
-## How to use this guide
-
-**This guide is intended to**:
-
-- **Provide you with an overview of Defender for Business (preview)** so you know what’s included and how it works
-   - Use this article as a starting point
-   - [Compare security features in Microsoft Defender for Business (preview) to other plans](compare-mdb-m365-plans.md) 
-   - [Find out how to get Microsoft Defender for Business (preview)](get-defender-business.md)
-
-- **Walk through setting up and configuring your threat protection capabilities** 
-   - [See how to set up and configure Defender for Business (preview)](mdb-setup-configuration.md)
-
-- **Help you get started using Defender for Business (preview)**, starting with the Microsoft 365 Defender portal 
-   - [Navigate the Microsoft 365 Defender portal](mdb-get-started.md)
-   - [Try preview scenarios, tutorials, and simulations](mdb-tutorials.md)
-
-- **Provide guidance on managing devices and security policies**
-   - [Manage devices](mdb-manage-devices.md)
-   - [View or edit security policies](mdb-view-edit-policies.md)
-   - [Manage custom rules for firewall policies](mdb-custom-rules-firewall.md)  
 
 ## Next steps
 
