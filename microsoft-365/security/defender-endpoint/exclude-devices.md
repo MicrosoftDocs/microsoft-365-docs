@@ -43,13 +43,13 @@ You can exclude one device or multiple devices at the same time.
 To exclude a single device:
 
 1. Go to the **Device inventory** page and select the device to exclude.
-2. Select **Exclude** from the response actions menu.
+2. Select **Exclude** from the action bar on the device inventory page or from the response actions menu in the device flyout.
 
 ![Image of exclude device menu option.](images/exclude-devices-menu.png)
 
 You can also exclude the device from the device page itself.
 
-> <img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint\media\image2.png" style="width:6.82292in;height:2.90208in" alt="Graphical user interface, text, application Description automatically generated" />
+![Image of exclude device.](images/exclude-device.png)
 
 3. Select a justification:
 
@@ -61,14 +61,14 @@ You can also exclude the device from the device page itself.
 
 4. Type a note and select **Exclude device**.
 
+It can take up to 10 hours for a device to be fully excluded from vulnerability management views and data.
+
 > [!NOTE]
 > Excluding active devices is not recommended, since it is especially risky to not have visibility into their vulnerability info. If a device is active and you try to exclude it, you’ll get a warning message and a confirmation pop-up asking if you are sure you want to exclude an active device.
 
-> <img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint\media\image3.png" style="width:4.0283in;height:4.36399in" alt="Graphical user interface, text, application, email Description automatically generated" /> 
-
 Excluded devices are still visible in the Device inventory list. You can use the **Excluded** filter to view the relevant list of devices.
 
-<img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint\media\image4.png" style="width:2.79181in;height:1.31257in" alt="Application Description automatically generated with low confidence" />
+![Image of exclude device.](images/exclusion-state.png)
 
 ## Bulk device exclusion
 
@@ -76,18 +76,13 @@ To exclude multiple devices:
 
 1. Go to the **Device inventory** page and select the devices to exclude.
 
-2. From the actions bar select **Exclude devices.**
+2. From the actions bar select **Exclude**
 
-3. Choose a justification and select **Exclude device.**
+3. Choose a justification and select **Exclude device**
 
-<img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint\media\image5.png" style="width:5.81633in;height:2.52156in" alt="Graphical user interface, application Description automatically generated" />
+If you select multiple devices in the device list with different exclusion statuses, then you’ll get the option to exclude devices like a bulk device exclusion. However, the exclude  selected devices flyout will provide you details on how many of the selected devices are already excluded. You can exclude the devices again, but the justification and notes will be overridden.
 
-
-## Selecting multiple devices where some are excluded, and some aren’t
-
-If you select multiple devices in the Device list with different exclusion statuses, then you’ll get the option to exclude devices like a bulk device exclusion. However, you’ll get a info box telling you how many of the selected devices are already excluded. You can exclude the devices again, but the justification and notes will be overridden.
-
-<img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint\media\image6.png" style="width:5.30189in;height:0.66879in" alt="A picture containing text Description automatically generated" />
+![Image of exclude device](images/exclude-device-bulk.png)
 
 ## Once a device is excluded
 
@@ -99,19 +94,14 @@ If you go to the device page of an excluded device, you won’t be able to see d
 
 The data also won’t show up in vulnerability management pages, related advanced hunting tables and the vulnerable devices report. It can take up to 8 hours for these changes to be visible in the portal.
 
-<img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint\media\image7.png" style="width:6.5in;height:3.60278in" alt="Graphical user interface, text, application Description automatically generated" />
-
 ## Stop excluding a device
 
 You’ll be able to stop excluding a device at any time. Once devices are no longer excluded, their vulnerability data will be visible in vulnerability management pages, reports, and in advanced hunting. It may take up to 8 hours for the changes to take affect.
 
-1. Go to the Device inventory, select the excluded device to open the flyout, and then select **Exclusion details**.
+1. Go to the Device inventory, select the excluded device to open the flyout, and then select **Exclusion details**
+2. Select **Stop exclusion**
 
-> <img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint\media\image8.png" style="width:4.83285in;height:2.29342in" alt="Graphical user interface, text, application Description automatically generated" />
-
-2. Select **Stop exclusion**.
-
-> <img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint\media\image9.png" style="width:3.74062in;height:5.69684in" alt="Graphical user interface, text, application, email Description automatically generated" />
+![Image of exclude device](images/exclusion-details.png)
 
 ## See also
 
