@@ -27,27 +27,91 @@ ms.technology: mde
 
 ## Exclude devices from the network
 
-Depending on the severity of the attack and the sensitivity of the device, you might want to isolate the device from the network. This action can help prevent the attacker from controlling the compromised device and performing further activities such as data exfiltration and lateral movement.
+Excluding devices that are inactive, duplicate, or out of scope allows you to focus on discovering and prioritizing the risks on your active devices. This action can also help reflect a more accurate threat and vulnerability management exposure score, as the excluded devices won't be visible in your threat and vulnerability management reports.
 
->[!IMPORTANT]
->- This action is not currently supported for macOS and Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
->- Full isolation is available for devices on Windows 10, version 1703, Windows 11, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, and Windows Server 2022.
->- Selective isolation is available for devices on Windows 10, version 1709 or later, and Windows 11.
->- When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
+Once devices are excluded, you won’t be able to view updated or relevant information about vulnerabilities and installed software on these devices. It affects all threat and vulnerability management pages, reports, and related tables in Advanced hunting.
 
-This device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device.
-
-On Windows 10, version 1709 or later, you'll have more control over the network isolation level. You can also choose to enable Outlook, Microsoft Teams, and Skype for Business connectivity (a.k.a 'Selective Isolation').
+Even though the device exclusion feature removes the device data from vulnerability management pages and reports, the devices remain connected to the network and can still be a risk to the organization.
 
 > [!NOTE]
-> You'll be able to reconnect the device back to the network at any time. The button on the device page will change to say **Release from isolation**, and then you take the same steps as isolating the device.
+>You'll be able to cancel the device exclusion at any time, and it can take up to 8 hours for updates to be visible in the portal.
 
-Once you have selected **Isolate device** on the device page, type a comment and select **Confirm**. The Action center will show the scan information and the device timeline will include a new event.
+## Exclude a device from vulnerability management views
 
-![Image of isolate device.](images/isolate-device.png)
+You can exclude one device or multiple devices at the same time.
+
+To exclude a single device:
+
+1. Go to the **Device inventory** page and select the device to exclude.
+2. Select **Exclude** from the response actions menu.
+
+![Image of exclude device menu option.](images/exclude-devices-menu.png)
+
+You can also exclude the device from the device page itself.
+
+> <img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint\media\image2.png" style="width:6.82292in;height:2.90208in" alt="Graphical user interface, text, application Description automatically generated" />
+
+3. Select a justification:
+
+- Inactive device
+- Duplicate device
+- Device doesn’t exist
+- Out of scope  
+- Other
+
+4. Type a note and select **Exclude device**.
 
 > [!NOTE]
-> The device will remain connected to the Defender for Endpoint service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the device is isolated.
+> Excluding active devices is not recommended, since it is especially risky to not have visibility into their vulnerability info. If a device is active and you try to exclude it, you’ll get a warning message and a confirmation pop-up asking if you are sure you want to exclude an active device.
+
+> <img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint\media\image3.png" style="width:4.0283in;height:4.36399in" alt="Graphical user interface, text, application, email Description automatically generated" /> 
+
+Excluded devices are still visible in the Device inventory list. You can use the **Excluded** filter to view the relevant list of devices.
+
+<img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint\media\image4.png" style="width:2.79181in;height:1.31257in" alt="Application Description automatically generated with low confidence" />
+
+## Bulk device exclusion
+
+To exclude multiple devices:
+
+1. Go to the **Device inventory** page and select the devices to exclude.
+
+2. From the actions bar select **Exclude devices.**
+
+3. Choose a justification and select **Exclude device.**
+
+<img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint\media\image5.png" style="width:5.81633in;height:2.52156in" alt="Graphical user interface, application Description automatically generated" />
+
+
+## Selecting multiple devices where some are excluded, and some aren’t
+
+If you select multiple devices in the Device list with different exclusion statuses, then you’ll get the option to exclude devices like a bulk device exclusion. However, you’ll get a info box telling you how many of the selected devices are already excluded. You can exclude the devices again, but the justification and notes will be overridden.
+
+<img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint\media\image6.png" style="width:5.30189in;height:0.66879in" alt="A picture containing text Description automatically generated" />
+
+## Once a device is excluded
+
+If you go to the device page of an excluded device, you won’t be able to see data for:
+
+- Discovered vulnerabilities
+- Software inventory
+- Security recommendations
+
+The data also won’t show up in vulnerability management pages, related advanced hunting tables and the vulnerable devices report. It can take up to 8 hours for these changes to be visible in the portal.
+
+<img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint\media\image7.png" style="width:6.5in;height:3.60278in" alt="Graphical user interface, text, application Description automatically generated" />
+
+## Stop excluding a device
+
+You’ll be able to stop excluding a device at any time. Once devices are no longer excluded, their vulnerability data will be visible in vulnerability management pages, reports, and in advanced hunting. It may take up to 8 hours for the changes to take affect.
+
+1. Go to the Device inventory, select the excluded device to open the flyout, and then select **Exclusion details**.
+
+> <img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint\media\image8.png" style="width:4.83285in;height:2.29342in" alt="Graphical user interface, text, application Description automatically generated" />
+
+2. Select **Stop exclusion**.
+
+> <img src="C:\GitHub\microsoft-365-docs-pr\microsoft-365\security\defender-endpoint\media\image9.png" style="width:3.74062in;height:5.69684in" alt="Graphical user interface, text, application, email Description automatically generated" />
 
 ## See also
 

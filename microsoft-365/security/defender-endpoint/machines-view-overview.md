@@ -31,7 +31,7 @@ ms.technology: mde
 
 The device inventory helps you discover, explore, and investigate devices in your organization including computers, servers, mobile, network appliances and IoT devices. It can help you discover unknown devices and identify device management gaps in your network.
 
-During the Microsoft Defender for Endpoint onboarding process, the **device inventory** is gradually populated with devices as they're discovered in your network through device discovery, and begin to report sensor data. The device inventory has three tabs that list devices by:
+During the Microsoft Defender for Endpoint onboarding process, devices onboarded to MDE are gradually populated into the **device inventory** as they begin to report sensor data and this is followed devices that are discovered in your network through device discovery being populated into the device inventory. The device inventory has three tabs that list devices by:
 
 - **Computers and Mobile**: Enterprise endpoints (workstations, servers and mobile devices)
 - **Network devices**: Devices like routers and switches
@@ -45,7 +45,7 @@ Access the device inventory page by selecting **Device inventory** from the **
 
 The device inventory opens on the **Computers and Mobile** tab. At a glance you’ll see information such as device name, domain, risk level, exposure level, OS platform, onboarding status, sensor health state, and other details for easy identification of devices most at risk.
 
-Use the **Onboarding Status** column to sort by discovered devices and those already onboarded to Microsoft Defender for Endpoint.
+Use the **Onboarding Status** column to sort and filter by discovered devices, and those already onboarded to Microsoft Defender for Endpoint.
 
 ![Image of devices list with list of devices.](images/device-inventory.png)
 
