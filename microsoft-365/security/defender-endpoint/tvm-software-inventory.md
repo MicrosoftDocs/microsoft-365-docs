@@ -32,10 +32,10 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-The software inventory in threat and vulnerability management is a list of known software in your organization. The default filter on the software inventory displays all software with official [Common Platform Enumerations (CPE)](https://nvd.nist.gov/products/cpe). The view includes details such as the name of the vendor, number of weaknesses, threats, and number of exposed devices.
+The software inventory in threat and vulnerability management is a list of known software in your organization. The default filter on the software inventory page displays all software with official [Common Platform Enumerations (CPE)](https://nvd.nist.gov/products/cpe). The view includes details such as the name of the vendor, number of weaknesses, threats, and number of exposed devices. To gain further visibility and increase your search scope across all installed software in your organization, you can choose to remove this filter. This means all software including software without a CPE, will now display in the software inventory list.
 
-The software inventory in threat and vulnerability management is a list of known software in your organization with official Common Platform Enumerations (CPE). Software products without an official CPE don't have vulnerabilities published. It also includes details such as the name of the vendor, number of weaknesses, threats, and number of exposed devices.
-
+> [!NOTE]
+> As CPEs are used by vulnerability management to identify the software and any vulnerabilities, even though software products without a CPE will be shown in the software inventory page, they will not be supported by threat and vulnerability management. That means information like, exploits, number of exposed devices, and weaknesses won't be available in the view.
 
 ## How it works
 
@@ -56,9 +56,9 @@ View software on specific devices in the individual devices pages from the [devi
 
 The **Software inventory** page opens with a list of software installed in your network, including the vendor name, weaknesses found, threats associated with them, exposed devices, impact to exposure score, and tags.
 
-You can filter the list view based on weaknesses found in the software, threats associated with them, and tags like whether the software has reached end-of-support.
+By default, the view is filtered by **Product Code (CPE): Available** You can also filter the list view based on weaknesses found in the software, threats associated with them, and tags like whether the software has reached end-of-support.
 
-:::image type="content" alt-text="Example of the landing page for software inventory." source="images/tvm-software-inventory.png" lightbox="images/tvm-software-inventory.png":::
+:::image type="content" alt-text="Example of the landing page for software inventory." source="images/software-inventory-page.png" lightbox="images/tvm-software-inventory.png":::
 
 Select the software that you want to investigate. A flyout panel will open with a more compact view of the information on the page. You can either dive deeper into the investigation and select **Open software page**, or flag any technical inconsistencies by selecting **Report inaccuracy**.
 
