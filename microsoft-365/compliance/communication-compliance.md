@@ -45,6 +45,11 @@ For a quick overview of communication compliance, see the [Detect workplace hara
 
 Check out how [TD Securities is using communication compliance](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance) to address their regulatory obligations and meet their security and stability needs.
 
+To keep up with the latest communication compliance updates, select **What's new** in [communication compliance](https://compliance.microsoft.com/) for your organization.
+
+> [!IMPORTANT]
+> Communication compliance is currently available in tenants hosted in geographical regions and countries supported by Azure service dependencies. To verify that communication compliance is supported for your organization, see [Azure dependency availability by country/region](/troubleshoot/azure/general/dependency-availability-by-country).
+
 ## Scenarios for communication compliance
 
 Communication compliance policies can assist with reviewing messages in your organization in several important compliance areas:
@@ -132,7 +137,8 @@ In this workflow step, you identify your compliance requirements and configure a
 
 You can choose from the following policy templates in the Microsoft 365 compliance center:
 
-- **Monitor for inappropriate content**: Use this template to quickly create a policy that uses built-in classifiers to automatically detect content that may be considered inappropriate, abusive, or offensive.
+- **Monitor for inappropriate text**: Use this template to quickly create a policy that uses built-in classifiers to automatically detect text in messages that may be considered inappropriate, abusive, or offensive.
+- **Monitor for inappropriate images**: Use this template to quickly create a policy that uses built-in classifiers to automatically detect content that contains adult and racy images that may be considered as inappropriate in your organization.
 - **Monitor for sensitive information**: Use this template to quickly create a policy to scan communications containing defined sensitive information types or keywords to help make sure that important data isn't shared with people that shouldn't have access.
 - **Monitor for financial regulatory compliance**: Use this template to quickly create a policy to scan communications for references to standard financial terms associated with regulatory standards.
 - **Monitor for conflict of interest**: Use this template to quickly create a policy to monitor communications between two groups or two users to help avoid conflicts of interest.

@@ -46,7 +46,7 @@ You can also manage custom detections that apply to data from specific Microsoft
 To manage required permissions, a **global administrator** can:
 
 - Assign the **security administrator** or **security operator** role in [Microsoft 365 admin center](https://admin.microsoft.com/) under **Roles** > **Security admin**.
-- Check RBAC settings for Microsoft Defender for Endpoint in [Microsoft Defender Security Center](https://securitycenter.windows.com/) under **Settings** > **Permissions** > **Roles**. Select the corresponding role to assign the **manage security settings** permission.
+- Check RBAC settings for Microsoft Defender for Endpoint in [Microsoft 365 Defender](https://security.microsoft.com/) under **Settings** > **Permissions** > **Roles**. Select the corresponding role to assign the **manage security settings** permission.
 
 > [!NOTE]
 > To manage custom detections, **security operators** will need the **manage security settings** permission in Microsoft Defender for Endpoint if RBAC is turned on.
@@ -109,9 +109,9 @@ DeviceEvents
 
 With the query in the query editor, select **Create detection rule** and specify the following alert details:
 
-- **Detection name**—name of the detection rule
+- **Detection name**—name of the detection rule; should be unique
 - **Frequency**—interval for running the query and taking action. [See additional guidance below](#rule-frequency)
-- **Alert title**—title displayed with alerts triggered by the rule
+- **Alert title**—title displayed with alerts triggered by the rule; should be unique
 - **Severity**—potential risk of the component or activity identified by the rule
 - **Category**—threat component or activity identified by the rule
 - **MITRE ATT&CK techniques**—one or more attack techniques identified by the rule as documented in the [MITRE ATT&CK framework](https://attack.mitre.org/). This section is hidden for certain alert categories, including malware, ransomware, suspicious activity, and unwanted software

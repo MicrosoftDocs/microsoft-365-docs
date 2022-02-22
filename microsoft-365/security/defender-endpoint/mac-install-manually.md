@@ -13,7 +13,6 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
@@ -33,7 +32,7 @@ ms.technology: mde
 This topic describes how to deploy Microsoft Defender for Endpoint on macOS manually. A successful deployment requires the completion of all of the following steps:
 
 - [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
-- [Application installation (macOS 10.15 and older versions)](#application-installation-macos-1015-and-older-versions)
+- [Application installation (macOS 10.15)](#application-installation-macos-1015)
 - [Application installation (macOS 11 and newer versions)](#application-installation-macos-11-and-newer-versions)
 - [Client configuration](#client-configuration)
 
@@ -54,7 +53,7 @@ Download the installation and onboarding packages from Microsoft 365 Defender po
 
 5. From a command prompt, verify that you have the two files.
 
-## Application installation (macOS 10.15 and older versions)
+## Application installation (macOS 10.15)
 
 To complete this process, you must have admin privileges on the device.
 
@@ -107,7 +106,7 @@ To complete this process, you must have admin privileges on the device.
 
     ![System extension security preferences2.](images/monterey-install-4.png)
 
-7. Open **System Preferences** \> **Security & Privacy** and navigate to the **Privacy** tab. Grant **Full Disk Access** permission to **Microsoft Defender ATP** and **Microsoft Defender ATP Endpoint Security Extension**.
+7. Open **System Preferences** \> **Security & Privacy** and navigate to the **Privacy** tab. Grant **Full Disk Access** permission to **Microsoft Defender** and **Microsoft Defenders Endpoint Security Extension**.
 
     ![Full disk access.](images/monterey-install-5.png)
 

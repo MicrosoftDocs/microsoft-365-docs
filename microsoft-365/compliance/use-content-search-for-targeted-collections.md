@@ -96,7 +96,7 @@ To display a list of mailbox folders or site documentlink (path) names:
       if (!$ExoSession)
       {
           Import-Module ExchangeOnlineManagement
-          Connect-ExchangeOnline
+          Connect-ExchangeOnline -ShowBanner:$false -CommandName Get-MailboxFolderStatistics
       }
       $folderQueries = @()
       $folderStatistics = Get-MailboxFolderStatistics $emailAddress

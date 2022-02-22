@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 01/03/2022
+ms.date: 02/03/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,6 +16,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
+- m365-initiative-defender-business
 ---
 
 # View or edit policies in Microsoft Defender for Business (preview)
@@ -25,16 +26,27 @@ ms.collection:
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-In Microsoft Defender for Business (preview), security settings are configured through policies. There are two main types of policies in Defender for Business (preview):
-
-- **Next-generation protection policies**, which determine how Microsoft Defender Antivirus and other threat protection features are configured
-- **Firewall policies**, which determine what network traffic is permitted to flow to and from your company's devices
+In Microsoft Defender for Business (preview), security settings are configured through policies that are applied to devices. To help simplify your setup and configuration experience, Defender for Business (preview) includes preconfigured policies to help protect your organization's devices as soon as they are onboarded. You can use the default policies, edit policies, or create your own policies.
 
 **This article describes how to**:
 
+- [Get an overview of your default policies](#default-policies-in-defender-for-business)
 - [View your existing policies](#view-your-existing-policies)
 - [Edit an existing policy](#edit-an-existing-policy)
 - [Create a new policy](#create-a-new-policy)
+
+>
+> **Got a minute?**
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
+
+## Default policies in Defender for Business
+
+In Defender for Business (preview), there are two main types of policies to protect your organization's devices:
+
+- **Next-generation protection policies**, which determine how Microsoft Defender Antivirus and other threat protection features are configured
+- **Firewall policies**, which determine what network traffic is permitted to flow to and from your organization's devices
+
 
 ## View your existing policies
 
@@ -97,7 +109,7 @@ In Microsoft Defender for Business (preview), security settings are configured t
 
 7. On the **Device groups** tab, either create a new device group, or use an existing group. Policies are assigned to devices through device groups. Here are some things to keep in mind:
 
-   - Initially, you might only have your default device group, which includes the devices people in your company are using to access company data and email. You can keep and use your default device group.
+   - Initially, you might only have your default device group, which includes the devices people in your organization are using to access organization data and email. You can keep and use your default device group.
    - Create a new device group to apply a policy with specific settings that are different from the default policy. 
    - When you set up your device group, you specify certain criteria, such as the operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. 
    - All device groups, including the default and custom device groups that you define, are stored in Azure Active Directory (Azure AD).

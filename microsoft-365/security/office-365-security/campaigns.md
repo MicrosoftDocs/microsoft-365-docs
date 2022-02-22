@@ -17,7 +17,7 @@ ms.assetid:
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
-ms.custom: admindeeplinkDEFENDER
+ms.custom:
 description: Learn about Campaign Views in Microsoft Defender for Office 365.
 ms.technology: mdo
 ms.prod: m365-security
@@ -53,7 +53,7 @@ A campaign might be short-lived, or could span several days, weeks, or months wi
 
 ## Campaign Views in the Microsoft 365 Defender portal
 
-Campaign Views is available in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> at **Email & collaboration** \> **Campaigns**, or directly at <https://security.microsoft.com/campaigns>.
+Campaign Views is available in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Campaigns**, or directly at <https://security.microsoft.com/campaigns>.
 
 ![Campaigns overview in the Microsoft 365 Defender portal.](../../media/campaigns-overview.png)
 

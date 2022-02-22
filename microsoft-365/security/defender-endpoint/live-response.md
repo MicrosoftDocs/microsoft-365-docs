@@ -1,4 +1,4 @@
----
+﻿---
 title: Investigate entities on devices using live response in Microsoft Defender for Endpoint
 description: Access a device using a secure remote shell connection to do investigative work and take immediate response actions on a device in real time.
 keywords: remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file,
@@ -58,6 +58,10 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 
   - **macOS** - Only applicable for Public Preview, minimum required version: 101.43.84 
   
+   > [!NOTE]
+   > Currently only Intel-based macOS systems are supported.
+    
+
   - **Linux** - Only applicable for Public Preview, minimum required version: 101.45.13 
     
   - **Windows Server 2012 R2** - with [KB5005292](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)
@@ -155,24 +159,26 @@ The following commands are available for user roles that are granted the ability
 ****
 | Command  | Description  | Windows and Windows Server  | macOS  | Linux  |
 |---|---|---|---|---|
-| cd  | Changes the current directory.  | Y  | Y | Y |
+| cd  | Changes the current directory.  | Y  | Y  | Y  |
 | cls  | Clears the console screen.  | Y  | Y  | Y  |
 | connect  | Initiates a live response session to the device.  | Y  | Y  | Y  |
-| connections  | Shows all the active connections.  | Y  | N | N |
-| dir  | Shows a list of files and subdirectories in a directory.  | Y  | Y  |Y  |
-| drivers  | Shows all drivers installed on the device.  | Y |  N | N  |
+| connections  | Shows all the active connections.  | Y  | N  | N  |
+| dir  | Shows a list of files and subdirectories in a directory.  | Y  | Y  | Y  |
+| drivers  | Shows all drivers installed on the device.  | Y  | N  | N  |
 | fg `<command ID>`  | Place the specified job in the foreground in the foreground, making it the current job.  NOTE: fg takes a 'command ID` available from jobs, not a PID  | Y  | Y  | Y  |
-| fileinfo  | Get information about a file.  |Y  | Y  | Y  |
-| findfile  | Locates files by a given name on the device.  | Y | Y  | Y  |
+| fileinfo  | Get information about a file.  | Y  | Y  | Y  |
+| findfile  | Locates files by a given name on the device.  | Y  | Y  | Y  |
 | getfile <file_path>  | Downloads a file.  | Y  | Y  | Y  |
-| help  | Provides help information for live response commands.  |Y  | Y | Y  |
-| jobs  | Shows currently running jobs, their ID and status.  | Y  | Y | Y |
-| persistence  | Shows all known persistence methods on the device.  | Y  | N | N |
+| help  | Provides help information for live response commands.  | Y  | Y  | Y  |
+| jobs  | Shows currently running jobs, their ID and status.  | Y  | Y  | Y  |
+| persistence  | Shows all known persistence methods on the device.  | Y  | N  | N  |
 | processes  | Shows all processes running on the device.  | Y  | Y  | Y  |
-| registry  | Shows registry values.  | Y  | N | N |
-| scheduledtasks  | Shows all scheduled tasks on the device.  | Y | N | N |
-| services  | Shows all services on the device.  | Y  | N | N |
-| trace  | Sets the terminal's logging mode to debug.  | Y  | Y  |Y  |
+| registry  | Shows registry values.  | Y  | N  | N  |
+| scheduledtasks  | Shows all scheduled tasks on the device.  | Y  | N  | N  |
+| services  | Shows all services on the device.  | Y  | N  | N  |
+| startupfolders  | Shows all known files in startup folders on the device.  | Y  | N  | N  |
+| status  | Shows the status and output of specific command.  | Y  | N  | N  |
+| trace  | Sets the terminal's logging mode to debug.  | Y  | Y  | Y  |
 
 ### Advanced commands
 
@@ -192,7 +198,7 @@ The following commands are available for user roles that are granted the ability
 | library  | Lists files that were uploaded to the live response library.  | Y  | Y  | Y  |
 | putfile  | Puts a file from the library to the device. Files are saved in a working folder and are deleted when the device restarts by default.  | Y  | Y  | Y  |
 | remediate  | Remediates an entity on the device. The remediation action will vary depending on the entity type:  File: delete  Process: stop, delete image file  Service: stop, delete image file  Registry entry: delete  Scheduled task: remove  Startup folder item: delete file  NOTE: This command has a prerequisite command. You can use the -auto command in conjunction with remediate to automatically run the prerequisite command.  | Y  | Y  | Y  |
-| scan  | Disconnects the device from the network while retaining connectivity to the Defender for Endpoint service  | N  | Y  | Y  |
+| scan | Runs an antivirus scan to help identify and remediate malware. | N | Y | Y |
 | undo  | Restores an entity that was remediated.  | Y  | Y  | Y  |
 
 

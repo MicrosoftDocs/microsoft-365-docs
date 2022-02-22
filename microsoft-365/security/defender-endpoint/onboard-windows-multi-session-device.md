@@ -64,7 +64,7 @@ Follow the instructions for a single entry for each device.
 
 This scenario uses a centrally located script and runs it using a domain-based group policy. You can also place the script in the golden image and run it in the same way.
 
-##### Download the WindowsDefenderATPOnboardingPackage.zip file from the Windows Defender Security Center
+##### Download the WindowsDefenderATPOnboardingPackage.zip file from the Windows 365 Defender portal
 
 1. Open the VDI configuration package .zip file (WindowsDefenderATPOnboardingPackage.zip)
 
@@ -152,6 +152,10 @@ Also, if you're using FSlogix user profiles, we recommend you exclude the follow
 
 Note on licensing: When using Windows Enterprise multi-session, depending on your requirements, you can choose to either have all users licensed through Microsoft Defender for Endpoint (per user), Windows Enterprise E5, Microsoft 365 Security, or Microsoft 365 E5, or have the VM licensed through Microsoft Defender for Cloud.
 Licensing requirements for Microsoft Defender for Endpoint can be found at: [Licensing requirements](minimum-requirements.md#licensing-requirements).
+
+### Known issues and limitations
+
+Only Microsoft Edge is supported for web filtering in Windows 10 multi-session.
 
 #### Related Links
 

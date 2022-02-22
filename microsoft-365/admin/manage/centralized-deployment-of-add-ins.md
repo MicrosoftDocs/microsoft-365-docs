@@ -42,7 +42,7 @@ It can take up to 24 hours for an add-in to show up for client for all users.
 
 ## Before you begin
 
-Centralized deployment of add-ins requires that the users are using Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium), Office 365 Enterprise licenses (E1/E3/E5/F3), or Microsoft 365 Enterprise licenses (E3/E5/F3) (and are signed into Office using their organizational ID), and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in or federated to Azure Active Directory.
+Centralized deployment of add-ins requires that the users are using Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium), Office 365 Enterprise licenses (E1/E3/E5/F3), or Microsoft 365 Enterprise licenses (E3/E5/F3) (and are signed into Office using their organizational ID), Office 365 Education licenses (A1/A3/A5), or Microsoft 365 Education licenses (A3/A5), and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in or federated to Azure Active Directory.
 You can view specific requirements for Office and Exchange below, or use the [Centralized Deployment Compatibility Checker](#centralized-deployment-compatibility-checker).
 
 Centralized Deployment doesn't support the following:
@@ -80,10 +80,10 @@ Check with your organization's Exchange admin to find out which configuration is
 
 ### Admin requirements
 
-In order to deploy an add-in via Centralized Deployement, you need to be either a Global admin or an Exchange admin in the organization.
+In order to deploy an add-in via Centralized Deployment, you need to be either a Global admin or an Exchange admin in the organization.
 
 > [!NOTE]
-> An Exchange admin can deploy an add-in only if the **App Registrations** property is set to true in Azure Active Directory admin center as shown in the following image:
+> An Exchange admin can deploy an add-in if the **Application Administrator** role is added or if the **App Registrations** property is set to true in Azure Active Directory admin center as shown in the following image:
 >
 > ![image](https://user-images.githubusercontent.com/89943918/144516704-8874a10d-b540-41f3-ae9d-c07a8d7e143f.png)
 

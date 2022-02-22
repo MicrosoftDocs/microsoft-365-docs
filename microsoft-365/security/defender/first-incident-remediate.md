@@ -30,9 +30,9 @@ ms.technology: m365d
 **Applies to:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender not only provides detection and analysis capabilities but also provides containment and eradication of malware. Containment includes steps to reduce the impact of the attack while eradication ensures all traces of attacker activity are removed from the network.  Microsoft 365 Defender offers several remediation actions which can be configured to [auto-remediate](m365d-autoir.md) depending on your operating system and the attack type.
+Microsoft 365 Defender not only provides detection and analysis capabilities but also provides containment and eradication of malware. Containment includes steps to reduce the impact of the attack while eradication ensures all traces of attacker activity are removed from the network. Microsoft 365 Defender offers several remediation actions that can be configured to [auto-remediate](m365d-autoir.md) depending on the operating system of affected devices and the attack type.
 
-Microsoft 365 Defender offers several remediation actions that analysts can manually initiate. Actions are separated into two categories, Actions on devices and Actions on files. Some actions can be used to immediately stop the threat while other actions assist in further forensic analysis.
+Microsoft 365 Defender offers several remediation actions that analysts can manually initiate. Actions are separated into two categories, Actions on devices and actions on files. Some actions can be used to immediately stop the threat while other actions assist in further forensic analysis.
 
 ## Actions on devices
 
@@ -42,7 +42,7 @@ Microsoft 365 Defender offers several remediation actions that analysts can manu
 - **Initiate automated investigation** - You can start a new general purpose automated investigation on the device. While an investigation is running, any other alert generated from the device will be added to an ongoing automated investigation until that investigation is completed. In addition, if the same threat is seen on other devices, those devices are added to the investigation.
 - **Initiate live response** - Live response is a capability that gives you instantaneous access to a device by using a remote shell connection. This gives you the ability to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time. Live response is designed to enhance investigations by enabling you to collect forensic data, run scripts, send suspicious entities for analysis, remediate threats, and proactively hunt for emerging threats.
 - **Collect investigation package** - As part of the investigation or response process, you can collect an investigation package from a device. By collecting the investigation package, you can identify the current state of the device and further understand the tools and techniques used by the attacker. 
-- **Consult a threat expert** (available in both Actions on devices and files) - You can consult a Microsoft threat expert for more insights regarding potentially compromised devices or devices that are already compromised. Microsoft threat experts can be engaged directly from within the Microsoft Defender Security Center for a timely and accurate response. 
+- **Consult a threat expert** (available in both Actions on devices and files) - You can consult a Microsoft threat expert for more insights regarding potentially compromised devices or devices that are already compromised. Microsoft threat experts can be engaged directly from within Microsoft 365 Defender for a timely and accurate response. 
 
 ## Actions on files
 
@@ -81,7 +81,7 @@ Here's an example.
  
 :::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Example of a Power Automate custom robotic process automation flow."::: 
  
-Playbooks can also be created during [post-incident review](first-incident-post.md) to create remediation actions from incidents for faster remediation actions. 
+Playbooks can also be created during [post-incident review](first-incident-post.md) to create remediation actions from resolved incidents. 
 
 ## Next step
 

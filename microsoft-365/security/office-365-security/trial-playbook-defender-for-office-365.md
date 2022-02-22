@@ -19,7 +19,7 @@ description: "Microsoft Defender for Office 365 solutions trial playbook."
 
 # Trial playbook: Microsoft Defender for Office 365
 
-Welcome to the Microsoft Defender for Office 365 trial playbook. This playbook will help you make the most of your 90-day free trial by teaching you how to safeguard your organization with Defender for Office 365. Using Microsoft recommendations, you'll learn how Defender for Office 365 can help you define protection policies, analyze threats to your organization, and respond to attacks.
+Welcome to the Microsoft Defender for Office 365 trial playbook. This playbook will help you make the most of your 90-day free trial by teaching you how to safeguard your organization with Defender for Office 365. Using Microsoft recommendations, you'll learn how Defender for Office 365 can help you define protection policies, analyze threats to your organization, and respond to attacks.
 
 ![A graphical representation of all components of Microsoft Defender for Office 365.](../../media/mdo-trial-playbook-what-is-mdo.png)
 
@@ -137,6 +137,6 @@ Equip your users with the right knowledge to identify threats and report suspici
 ## Additional resources
 
 - **Interactive guide**: Unfamiliar with Defender for Office 365? Review the [interactive guide](https://mslearn.cloudguides.com/guides/Safeguard%20your%20organization%20with%20Microsoft%20Defender%20for%20Office%20365) to understand how to get started.
-- **Microsoft docs**: Get detailed information on how Defender for Office 365 works and how to best implement it for your organization. Visit [Docs](overview.md).
+- **Microsoft docs**: Get detailed information on how Defender for Office 365 works and how to best implement it for your organization. Visit [Docs](overview.md).
 - **What's included**: For a full list of Office 365 email security features listed by product tier, view the [Feature Matrix](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability).
 - **Why Defender for Office 365**: The [Defender for Office 365 Datasheet](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FCiy) shows the top 10 reasons customers choose Microsoft.

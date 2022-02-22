@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 
-audience: ITPro
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
@@ -16,6 +16,7 @@ description: "Learn how to place a mailbox on Litigation hold, retaining all the
 ms.custom: 
 - seo-marvel-mar2020
 - seo-marvel-apr2020
+- admindeeplinkCOMPLIANCE
 ---
 
 # Create a Litigation hold
@@ -43,17 +44,15 @@ To place an Exchange Online mailbox on Litigation hold, it must be assigned an E
 
 Here are the steps to place a mailbox on Litigation hold using the Microsoft 365 admin center.
 
-1. Go to <https://admin.microsoft.com> and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Microsoft 365 admin center</a> and then click **Users** > **Active users**.
 
-2. In the navigation pane of the admin center, click **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
+2. Select the user that you want to place on Litigation hold.
 
-3. Select the user that you want to place on Litigation hold.
-
-4. On the properties flyout page, click the **Mail** tab, and then under **More actions**, click **Manage litigation hold**.
+3. On the properties flyout page, click the **Mail** tab, and then under **More actions**, click **Manage litigation hold**.
 
    ![Click Manage litigation hold on the Mail tab of user properties flyout page.](../media/M365AdminCenterLitHold1.png)
 
-5. On the **Manage litigation hold** flyout page, select the **Turn on litigation hold** checkbox and then enter the following optional information:
+4. On the **Manage litigation hold** flyout page, select the **Turn on litigation hold** checkbox and then enter the following optional information:
 
     1. **Hold duration (days)**: Use this box to create a time-based hold and specify how long mailbox items are held when the mailbox is placed on Litigation hold. The duration is calculated from the date a mailbox item is received or created. When the hold duration expires for a specific item, that item will no longer be preserved. If you leave this box blank, items are preserved indefinitely or until the hold is removed. Use days to specify the duration.
 
@@ -61,7 +60,7 @@ Here are the steps to place a mailbox on Litigation hold using the Microsoft 365
 
     3. **Web page with more information for the user**: Use this box to direct the user to a website for more information about Litigation hold. This URL appears on the Account Information page in the user's mailbox if they are using Outlook 2010 or later. To access this page, users can click **File** in Outlook.
 
-6. Click **Save changes** on the **Litigation hold** flyout page to create the hold.
+. Click **Save changes** on the **Litigation hold** flyout page to create the hold.
 
    The system displays a banner saying it might take up to 240 minutes for the change to take effect.
 

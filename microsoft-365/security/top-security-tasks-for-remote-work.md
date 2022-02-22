@@ -28,7 +28,7 @@ If you are like [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03
 If you are a small or medium-size organization using one of Microsoft's business plans, see these resources instead:
 
 - [Top 10 ways to secure Office 365 and Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
-- [Microsoft 365 for Campaigns](../campaigns/index.md) (includes a recommended security configuration for Microsoft 365 Business)
+- [Microsoft 365 for Campaigns](../business-premium/index.md) (includes a recommended security configuration for Microsoft 365 Business)
 
 For customers using our enterprise plans, Microsoft recommends you complete the tasks listed in the following table that apply to your service plan. If, instead of purchasing a Microsoft 365 enterprise plan, you are combining subscriptions, note the following:
 
@@ -71,7 +71,7 @@ Applying these policies will take only a few minutes, but be prepared to support
 |---|---|
 |Microsoft 365 plans (without Azure AD P1 or P2)|[Enable Security defaults in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Azure AD include MFA for users and administrators.|
 |Microsoft 365 E3 (with Azure AD P1)|Use [Common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br/>- [Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
-|Microsoft 365 E5 (with Azure AD P2)|Taking advantage of Azure AD Identity Protection, begin to implement Microsoft's [recommended set of conditional access and related policies](./office-365-security/identity-access-policies.md) by creating these two policies:<br/> - [Require MFA when sign-in risk is medium or high](./office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [Block clients that don't support modern authentication](./office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br/>- [High risk users must change password](./office-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
+|Microsoft 365 E5 (with Azure AD P2)|Taking advantage of Azure AD Identity Protection, begin to implement Microsoft's [recommended set of conditional access and related policies](./office-365-security/identity-access-policies.md) by creating these policies:<br/> - [Require MFA when sign-in risk is medium or high](./office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [Block clients that don't support modern authentication](./office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br/>- [High risk users must change password](./office-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
 |
 
 ## 2: Protect against threats

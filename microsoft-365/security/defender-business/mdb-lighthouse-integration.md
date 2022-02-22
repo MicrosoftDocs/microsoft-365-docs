@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 12/16/2021
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -27,7 +27,7 @@ ms.collection:
 
 ## Microsoft Defender for Business integrates with Microsoft 365 Lighthouse
 
-If you're using Microsoft 365 Lighthouse to manage security for small and medium-sized businesses, Microsoft Defender for Business (preview) integrates with Microsoft 365 Lighthouse. When these capabilities become available, you will be able to view security incidents across tenants in your Microsoft 365 Lighthouse portal ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). 
+If you're a Microsoft Cloud Solution Provider (CSP) and you have [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), you can manage security for your customers (small and medium-sized businesses). Microsoft Defender for Business (preview) is designed to integrate with Microsoft 365 Lighthouse. When these capabilities become available, you'll be able to view security incidents across tenants in your Microsoft 365 Lighthouse portal ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)). 
 
 :::image type="content" source="media/lighthouse-incidents.png" alt-text="screenshot of incidents list in Microsoft 365 Lighthouse":::
 

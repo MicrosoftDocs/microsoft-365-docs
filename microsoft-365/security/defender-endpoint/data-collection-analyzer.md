@@ -33,7 +33,7 @@ Run '**MDEClientAnalyzer.cmd /?**' to see the list of available parameters and t
 ![Image of client analyzer parameters in command line.](images/d89a1c04cf8441e4df72005879871bd0.png)
 
 > [!NOTE]
-> When any advanced troubleshooting parameter is used, the analyzer also calls into [MpCmdRun.exe](/windows/security/threat-protection/microsoft-defender-antivirus/collect-diagnostic-data-update-compliance) to collect Microsoft Defender Antivirus related support logs.
+> When any advanced troubleshooting parameter is used, the analyzer also calls into [MpCmdRun.exe](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus) to collect Microsoft Defender Antivirus related support logs.
 
 **-h** - Calls into [Windows Performance Recorder](/windows-hardware/test/wpt/wpr-command-line-options) to collect a verbose general performance trace in addition to the standard log set.
 

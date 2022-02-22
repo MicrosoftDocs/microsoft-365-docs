@@ -1,5 +1,5 @@
 ---
-title: Learn about document understanding models through the sample model in Microsoft SharePoint Syntex
+title: Import a sample document understanding model for Microsoft SharePoint Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -16,7 +16,7 @@ ms.localizationpriority:  medium
 description: Learn about document understanding models through the sample model.
 ---
 
-# Learn about document understanding models through the sample model in Microsoft SharePoint Syntex
+# Import a sample document understanding model for Microsoft SharePoint Syntex
 
 SharePoint Syntex provides you with a sample model you can use to examine, giving you a better understanding of how to create your own models. The sample model also allows you to examine model components, such as its classifier, extractors, and explanations. You can also use the sample files to train the model.
 
