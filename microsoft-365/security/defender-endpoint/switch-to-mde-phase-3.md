@@ -91,6 +91,8 @@ To verify that your onboarded devices are properly connected to Defender for End
 |macOS (see [System requirements](microsoft-defender-endpoint-mac.md)|Download and use the DIY app at <https://aka.ms/mdatpmacosdiy>. <br/><br/> For more information, see [Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).|
 |Linux (see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements))|1. Run the following command, and look for a result of **1**: `mdatp health --field real_time_protection_enabled`.<br/><br/>2. Open a Terminal window, and run the following command: `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`.<br/><br/>3. Run the following command to list any detected threats: `mdatp threat list`.<br/><br/>For more information, see [Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).|
 
+> [!NOTE]
+> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
 
 ## Confirm that Microsoft Defender Antivirus is in passive mode on your endpoints
 
@@ -161,6 +163,9 @@ Now that you have onboarded to Defender for Endpoint, and you have uninstalled y
 - Cloud-delivered protection
 - Potentially Unwanted Applications (PUA)
 - Network Protection (NP)
+
+> [!NOTE]
+> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
 
 ## Next steps
 

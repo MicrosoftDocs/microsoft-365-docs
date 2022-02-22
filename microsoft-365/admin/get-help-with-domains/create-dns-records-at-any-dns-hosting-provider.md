@@ -2,8 +2,8 @@
 title: "Add DNS records to connect your domain"
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,6 +21,7 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
+- business_assist
 - admindeeplinkMAC
 ---
 
@@ -33,6 +34,9 @@ At the end of these steps, your domain will stay registered with the host that y
 If you don't add a domain, people in your organization will use the onmicrosoft.com domain for their email addresses until you do. It's important to add your domain before you add users, so you don't have to set them up twice.
 
 [Check the Domains FAQ](../setup/domains-faq.yml) if you don't find what you're looking for below.
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Step 1: Add a TXT or MX record to verify you own the domain
 

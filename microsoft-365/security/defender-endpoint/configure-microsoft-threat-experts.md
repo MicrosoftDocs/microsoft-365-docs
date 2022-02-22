@@ -117,7 +117,7 @@ You can partner with Microsoft Threat Experts who can be engaged directly from w
 4. Enter the email address that you'd like to use to correspond with Microsoft Threat Experts.
 
 > [!NOTE]
-> If you would like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Technical Account Manager.
+> If you would like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Customer Success Account Manager.
 
 Watch this video for a quick overview of the Microsoft Services Hub.
 
