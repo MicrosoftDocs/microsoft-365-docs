@@ -12,8 +12,9 @@ ms.collection:
     - m365initiative-syntex
 search.appverid: MET150
 ms.localizationpriority: normal
-description: "Learn about work with SharePoint Syntex document understanding model explanations in PowerShell"
+description: "Learn about work with SharePoint Syntex document understanding model explanations in PowerShell."
 ---
+
 # Work with document understanding model explanations in PowerShell
 
 > [!IMPORTANT]
@@ -127,7 +128,7 @@ Add-PnPListItem -List $explanationTemplatesList -Values @{"Title"= $explanationN
 
 ## Create a phrase list explanation based on a term set
 
-This example shows how to create a custom phrase list explanation template, by taking the values from a term set. This includes the preferred term names and any synonyms.
+This example shows how to create a custom phrase list explanation template by taking the values from a term set. This includes the preferred term names and any synonyms.
 
 ```PowerShell
 $contentCenterURL = "https://contoso.sharepoint.com/sites/yourContentCenter"
