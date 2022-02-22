@@ -9,8 +9,8 @@ metadata:
   ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.prod: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
-  author: pebaum #Required; your GitHub user alias, with correct capitalization.
-  ms.author: pebaum #Required; microsoft alias of author; optional team alias.
+  author: efrene #Required; your GitHub user alias, with correct capitalization.
+  ms.author: efrene #Required; microsoft alias of author; optional team alias.
   ms.date: 02/04/2022
   ms.localizationpriority: high
 

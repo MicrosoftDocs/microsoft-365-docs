@@ -97,7 +97,7 @@ These prerequisites are necessary to set up the Microsoft 365 support integratio
 
     - OIDC Metadata URL: `https://login.microsoftonline.com/{microsoft-365-tenant-name}/.well-known/openid-configuration`
 
-    - UserClaim: **appId**
+    - UserClaim: **appid**
 
     - UserField: **User ID**
 
