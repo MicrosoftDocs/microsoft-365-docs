@@ -45,8 +45,6 @@ You can choose to exclude a single device or multiple devices at the same time.
 
 ![Image of exclude device menu option.](images/exclude-devices-menu.png)
 
-![Image of exclude device.](images/exclude-device.png)
-
  3. Select a justification:
 
     - Inactive device
@@ -56,6 +54,8 @@ You can choose to exclude a single device or multiple devices at the same time.
     - Other
 
 4. Type a note and select **Exclude device**.
+
+![Image of exclude device.](images/exclude-device.png)
 
 You can also exclude the device from the device page itself.
 
@@ -78,7 +78,7 @@ You can also choose to exclude multiple devices at the same time:
 
 3. Choose a justification and select **Exclude device**
 
-If you select multiple devices in the device list with different exclusion statuses,the exclude selected devices flyout will provide you details on how many of the selected devices are already excluded. You can exclude the devices again, but the justification and notes will be overridden.
+If you select multiple devices in the device list with different exclusion statuses, the exclude selected devices flyout will provide you details on how many of the selected devices are already excluded. You can exclude the devices again, but the justification and notes will be overridden.
 
 ![Image of exclude device](images/exclude-device-bulk.png)
 
