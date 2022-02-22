@@ -44,7 +44,7 @@ Microsoft Defender for Endpoint has the capability of detecting unmanaged and ma
 
 By default, Defender for Endpoint on iOS includes and enables the web protection feature. [Web protection](web-protection-overview.md) helps to secure devices against web threats and protect users from phishing attacks. Note that Anti-phishing and custom indicators (URL and IP addresses) are supported as part of Web Protection. Web Content Filtering is currently not supported on iOS.
 
-Defender for Endpoint on iOS uses a VPN in order to provide this protection. Please note this is a local VPN and unlike traditional VPN, network traffic is not sent outside the device.
+Defender for Endpoint on iOS uses a VPN in order to provide this capability. Please note this is a local VPN and unlike traditional VPN, network traffic is not sent outside the device.
 
 While enabled by default, there might be some cases that require you to disable VPN. For example, you want to run some apps that do not work when a VPN is configured. In such cases, you can choose to disable VPN from the app on the device by following the steps below:
 
