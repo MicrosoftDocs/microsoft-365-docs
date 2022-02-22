@@ -106,6 +106,7 @@ Depending on your subscription, here are the available reports in all environmen
 |[Skype for Business Online conference participant activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Yes|Yes|No[^1]|No[^1]|Yes|
 |[Skype for Business Online peer-to-peer activity](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Yes|Yes|No[^1]|No[^1]|Yes|
 |[Viva Learning activity](viva-learning-activity.md)|Yes|N/A|N/A|N/A|N/A|
+|[Viva Insights](viva-insights-activity.md)|Yes|Yes|N/A|N/A|N/A|
 
 [^1]: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
 [^2]: The service is not available in the environment so no plan to release the report.
