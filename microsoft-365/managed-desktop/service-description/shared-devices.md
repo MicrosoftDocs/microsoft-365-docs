@@ -111,7 +111,7 @@ Each Microsoft Intune device has a primary user, which is assigned when a device
 
 Some apps probably don't need to be present on all devices, so you might prefer that users only install those apps when they need them from [Company Portal](/mem/intune/user-help/install-apps-cpapp-windows).
 
-Microsoft Managed Desktop disables Company Portal by default for devices in shared device mode. If you want the Company Portal enabled, you can file a [change request](../working-with-managed-desktop/admin-support.md). However,you should be aware of some limitations in this feature in this public preview:
+Microsoft Managed Desktop disables Company Portal by default for devices in shared device mode. If you want the Company Portal enabled, you can file a [change request](../working-with-managed-desktop/admin-support.md). However, you should be aware of some limitations in this feature in this public preview:
 
 - To make an app available to users in Company Portal, [assign a user group](/mem/intune/apps/apps-deploy) to that app in Intune and then add each user to that user group.
 - Devices can't have a [primary user](#primary-user).
@@ -120,7 +120,7 @@ Microsoft Managed Desktop disables Company Portal by default for devices in shar
 > [!CAUTION]
 > Company Portal doesn't support applications assigned to device groups as available.
 
-### Redeployment of Microsoft 365 Apps for enterprise
+### Redeployment of Microsoft 365 Apps for Enterprise
 
 During public preview, if Microsoft 365 Apps must be redeployed, users must contact their local support staff to request an agent elevate and reinstall Microsoft 365 Apps for enterprise on that device.
 
