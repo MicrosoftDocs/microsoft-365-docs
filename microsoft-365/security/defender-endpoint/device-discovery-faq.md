@@ -48,7 +48,7 @@ In this mode endpoints onboarded to Microsoft Defender for Endpoint can actively
 
 ## Can I control which devices perform Standard discovery?
 
-You can customize the list of devices that are used to perform Standard discovery. You can either enable Standard discovery on all the onboarded devices that also support this capability (currently Windows 10 devices only) or select a subset or subsets of your devices by specifying their device tags. In this case, all other devices will be configured to run Basic discovery only. The configuration is available in the device discovery settings page.
+You can customize the list of devices that are used to perform Standard discovery. You can either enable Standard discovery on all the onboarded devices that also support this capability (currently Windows 10 or later and Windows Server 2019 or later devices only) or select a subset or subsets of your devices by specifying their device tags. In this case, all other devices will be configured to run Basic discovery only. The configuration is available in the device discovery settings page.
 
 ## Can I exclude unmanaged devices from the device inventory list?
 
@@ -56,7 +56,7 @@ Yes, you can apply filters to exclude unmanaged devices from the device inventor
 
 ## Which onboarded devices can perform discovery?
 
-Onboarded devices running on Windows 10 version 1809 or later, or Windows 11 can perform discovery. Servers cannot perform discovery at this point.
+Onboarded devices running on Windows 10 version 1809 or later, Windows 11, Windows Server 2019, or Windows Server 2022 can perform discovery.
 
 ## What happens if my onboarded devices is connected to my home network, or to public access point?
 
@@ -64,7 +64,7 @@ The discovery engine distinguishes between network events that are received in t
 
 ## What protocols are you capturing and analyzing?
 
-By default, all onboarded devices running on Windows 10 version 1809 or later, or Windows 11 are capturing and analyzing the following protocols:
+By default, all onboarded devices running on Windows 10 version 1809 or later, Windows 11, Windows Server 2019, or Windows Server 2022 are capturing and analyzing the following protocols:
 ARP, CDP, DHCP, DHCPv6, IP (headers), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (SYN headers), UDP (headers), WSD
 
 ## Which protocols do you use for active probing in Standard discovery?
@@ -87,7 +87,7 @@ As device discovery uses passive methods to discover devices in the network, any
 
 Devices will actively be probed when changes in device characteristics are observed to make sure the existing information is up-to-date (typically, devices probed no more than once in a three-week period)
 
-## My security tool raised alert on UnicastScanner.ps1 or port scanning activity initiated by it, what should I do?
+## My security tool raised alert on UnicastScanner.ps1 / PSScript_{GUID}.ps1 or port scanning activity initiated by it, what should I do?
 
 The active probing scripts are signed by Microsoft and are safe. You can add the following path to your exclusion list:
 `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps1`

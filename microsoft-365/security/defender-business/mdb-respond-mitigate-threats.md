@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 12/13/2021
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -45,7 +45,7 @@ The Microsoft 365 Defender portal enables your security team to respond to and m
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Screenshot of device inventory":::
 
-   The **Device inventory** page lists company devices, along with their risk level and exposure level.
+   The **Device inventory** page lists organization devices, along with their risk level and exposure level.
 
 4. Select an item, such as a device. A flyout pane opens and displays more information about alerts and incidents generated for that item, as shown in the following image:  
 

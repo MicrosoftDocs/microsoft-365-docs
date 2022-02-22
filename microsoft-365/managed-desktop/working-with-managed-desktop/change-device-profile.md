@@ -14,17 +14,20 @@ ms.topic: article
 audience: Admin
 ---
 
-# Reassign profiles
+# Change the device profile
 
-You can change the [Device profiles](../service-description/profiles.md) assigned to a device by using the Admin Portal.
+You can change the [Device profiles](../service-description/profiles.md) assigned to a device using the Admin Portal.
 
-The device profile you select will be applied to all devices you select in the first step. To move separate devices to different profiles, you’ll need to repeat this process for each device profile. 
+The selected device profile will be applied to all devices you select in the first step.
 
-1. In Microsoft Endpoint Manager, select **Devices** in the left pane. In the **Microsoft Managed Desktop** section of the menu, select **Devices**.  
-2. Select the check boxes for the devices you want to modify. 
-3. Select **Change device profile**; a fly-in opens.
-4. Use the drop-down menu to select the new device profile.
-5. Check that the **Reset device** slider is set the way you want.
-6. Select **Change profile**.
+**To change the device profile:**
 
+1. In Microsoft Endpoint Manager, select **Devices** in the left pane.
+1. In the **Microsoft Managed Desktop** section, select **Devices**.  
+1. Select the checkboxes for the devices you want to modify.
+1. Select **Change device profile**. A fly-in opens.
+1. Use the dropdown menu to select the new device profile.
+1. Check that the **Reset device** slider is set the way you want.
+1. Select **Change profile**.
 
+To move separate devices to different profiles, you'll need to repeat this process for each device profile.

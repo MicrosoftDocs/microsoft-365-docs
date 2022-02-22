@@ -1,5 +1,5 @@
 ---
-title: Simulate a phishing attack with Microsoft Defender for Office 365
+title: Simulate a phishing attack with Attack simulation training
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -15,7 +15,7 @@ description: Admins can learn how to simulate phishing attacks and train their u
 ms.technology: mdo
 ---
 
-# Simulate a phishing attack in Defender for Office 365
+# Simulate a phishing attack with Attack simulation training in Defender for Office 365
 
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
@@ -118,24 +118,37 @@ When you're finished, click **Next**.
 On the **Target users** page, select who will receive the simulation. Configure one of the following settings:
 
 - **Include all users in your organization**: The affected users are show in lists of 10. You can use the **Next** and **Previous** buttons directly below the list of users to scroll through the list. You can also use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** icon on the page to find affected users.
+
 - **Include only specific users and groups**: Choose one of the following options:
   - ![Add users icon.](../../media/m365-cc-sc-create-icon.png) **Add users**: In the **Add users** flyout that appears, you can find users and groups based on the following criteria:
-    - **Users or groups**: In the ![Search for users and groups icon.](../../media/m365-cc-sc-search-icon.png) **Search for users and groups** box, you can type part of the **Name** or **Email address** of the user or group, and then press Enter. You can select some or all of the results. When you're finished, click **Add x users**.
+
+    - **Search for users or groups**: In box, you can type part of the **Name** or **Email address** of the user or group and then press Enter. You can select some or all of the results. When you're finished, click **Add x users**.
 
       > [!NOTE]
       > Clicking the **Add filters** button to return to the **Filter users by categories** options will clear any users or groups that you selected in the search results.
 
     - **Filter users by categories**: Select from none, some, or all of the following options:
+
       - **Suggested user groups**: Select from the following values:
         - **All suggested user groups**
         - **Users not targeted by a simulation in the last three months**
         - **Repeat offenders**
+
+      - **User tags**: User tags are identifiers for specific groups of users (for example, Priority accounts). For more information, see [User tags in Microsoft Defender for Office 365](user-tags.md).
+
+          Use the following options:
+
+        - **Search**: In ![Search by user tags icon.](../../media/m365-cc-sc-search-icon.png) **Search by user tags**, you can type part of the user tag and then press Enter. You can select some or all of the results.
+        - Select **All user tags**
+        - Select existing user tags.
+
       - **Department**: Use the following options:
-        - **Search**: In the ![Search by Department icon.](../../media/m365-cc-sc-search-icon.png) **Search by Department** box, you can type part of the Department value, and then press Enter. You can select some or all of the results.
+        - **Search**: In ![Search by Department icon.](../../media/m365-cc-sc-search-icon.png) **Search by Department**, you can type part the Department value and then press Enter. You can select some or all of the results.
         - Select **All Department**
         - Select existing Department values.
+
       - **Title**: Use the following options:
-        - **Search**: In the ![Search by Title icon.](../../media/m365-cc-sc-search-icon.png) **Search by Title** box, you can type part of the Title value, and then press Enter. You can select some or all of the results.
+        - **Search**: In ![Search by Title icon.](../../media/m365-cc-sc-search-icon.png) **Search by Title**, you can type part of the Title value and then press Enter. You can select some or all of the results.
         - Select **All Title**
         - Select existing Title values.
 

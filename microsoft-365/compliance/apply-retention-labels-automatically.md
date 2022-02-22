@@ -126,7 +126,7 @@ Exchange:
 
 SharePoint and OneDrive:
 
-|Condition|New or modified items |Existing items (data at rest)|
+|Condition|New or modified items |Existing items |
 |:-----|:-----|:-----|
 |Sensitive info types - built-in| Yes | Yes |
 |Sensitive info types - custom| Yes | No |
@@ -369,5 +369,11 @@ However, it can take up to two days for content explorer to show the items that 
 If you need to ensure that no one can turn off the policy, delete the policy, or make it less restrictive, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
 
 ## Next steps
+
+To help you track the labels applied from your auto-labeling policies:
+
+- [Monitoring retention labels](retention.md#monitoring-retention-labels)
+- [Using Content Search to find all content with a specific retention label](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label)
+- [Auditing retention actions](retention.md#auditing-retention-actions)
 
 See [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md) for an example scenario that uses an auto-apply retention label policy with managed properties in SharePoint, and event-based retention to start the retention period.

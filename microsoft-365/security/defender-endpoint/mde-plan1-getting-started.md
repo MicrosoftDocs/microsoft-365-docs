@@ -15,7 +15,7 @@ ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: 
 - M365-security-compliance
-- m365-initiative-defender-endpoint
+- m365initiative-defender-endpoint
 ms.custom: intro-get-started
 ---
 

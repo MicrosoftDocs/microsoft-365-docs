@@ -322,7 +322,7 @@
             href: named-entities-learn.md
         - name: Get started with sensitive information type
           items:
-          - name: Get started with custom sensitive information types - Compliance Center
+          - name: Create a custom sensitive information types - Compliance Center
             href: create-a-custom-sensitive-information-type.md
           - name: Get started with exact data match based sensitive information types
             href: sit-get-started-exact-data-match-based-sits-overview.md
@@ -344,6 +344,10 @@
             href: sit-modify-edm-schema-configurable-match.md
           - name: Create notifications for exact data match activities (preview)
             href: sit-edm-notifications-activities.md
+          - name: Manage custom sensitive information types in compliance center
+            href: sit-manage-custom-sits-compliance-center.md
+          - name: Sensitive information types REGEX validators and additional checks
+            href: sit-regex-validators-additional-checks.md
           - name: Create a custom sensitive information type - PowerShell
             href: create-a-custom-sensitive-information-type-in-scc-powershell.md
           - name: Remove a custom sensitive information type - PowerShell
@@ -360,12 +364,14 @@
             href: sit-use-exact-data-refresh-data.md
           - name: Use named entities in your data loss prevention policies (preview)
             href: named-entities-use.md
+          - name: Common usage scenarios for sensitive information types
+            href: sit-common-scenarios.md
         - name: Sensitive information type reference
           items:
           - name: Sensitive information type entity definitions 
             href: sensitive-information-type-entity-definitions.md
-          - name: What the DLP functions look for
-            href: what-the-dlp-functions-look-for.md
+          - name: Sensitive information type functions
+            href: sit-functions.md
           - name: Custom sensitive information type filters reference
             href: sit-custom-sit-filters.md
     - name: Trainable classifiers
@@ -404,6 +410,8 @@
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: Enable co-authoring for documents encrypted by sensitivity labels
           href: sensitivity-labels-coauthoring.md
+        - name: Set the default sharing link type by using sensitivity labels
+          href: sensitivity-labels-default-sharing-link.md
         - name: Manage sensitivity labels in Office apps
           href: sensitivity-labels-office-apps.md
     - name: Encryption
@@ -575,8 +583,8 @@
               href: retention-policies-yammer.md
             - name: Exchange
               href: retention-policies-exchange.md
-            - name: Common settings for retention
-              href: retention-settings.md
+        - name: Common settings for retention and deletion
+          href: retention-settings.md
         - name: Limits for retention and deletion
           href: retention-limits.md
     - name: Information governance
@@ -647,7 +655,7 @@
           href: event-driven-retention.md
         - name: Publish & apply retention labels in apps
           href: create-apply-retention-labels.md
-        - name: Automataically apply retention labels to content
+        - name: Automatically apply retention labels to content
           href: apply-retention-labels-automatically.md
         - name: Lock policies to restrict changes
           href: retention-preservation-lock.md
@@ -824,6 +832,10 @@
               href: manage-hold-notification.md
             - name: Acknowledge a hold notification
               href: acknowledge-hold-notification.md
+            - name: Manage issuing officers
+              href: advanced-ediscovery-issuing-officers.md
+            - name: Manage custodian communications templates
+              href: advanced-ediscovery-communications-library.md
         - name: Manage holds
           href: managing-holds.md
         - name: Manage processing errors
@@ -1046,10 +1058,6 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: Energy services security and compliance
           href: ../solutions/energy-secure-collaboration.md
-- name: Privacy management
-  items:
-    - name: Learn about privacy management
-      href: /privacy/solutions/privacymanagement/privacy-management
 - name: Hybrid compliance capabilities
   items: 
     - name: Exchange Online mail encryption with AD RMS
@@ -1063,5 +1071,7 @@
   href: ../security/index.yml
 - name: Microsoft 365 Apps for business
   href: /office365/admin/admin-home
+- name: Microsoft Priva
+  href: /privacy/priva/
 - name: Troubleshooting
   href: /office365/troubleshoot/microsoft-365-compliance-welcome

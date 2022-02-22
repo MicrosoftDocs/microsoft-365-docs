@@ -6,7 +6,7 @@ ms.author: pshelton
 manager: toddbeckett
 ms.topic: article
 audience: Developer
-ms.date: 1/21/2021
+ms.date: 2/4/2022
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ---
@@ -32,7 +32,13 @@ Affected endpoints include (but are not limited to):
 - *.communication.azure.com
 - *.operatorconnect.microsoft.com
 
-This change will not affect certificates, domains, or services used in the US Government, China, or Germany national cloud instances of Microsoft 365.
+Additionally, Skype for Business Online endpoints in US Government national cloud instances of Microsoft 365 will make the same change, affecting endpoints such as:
+- *.online.dod.skypeforbusiness.us
+- *.online.gov.skypeforbusiness.us
+- *.um-dod.office365.us
+- *.um.office365.us
+
+This change will not affect other certificates, domains, or services used in the US Government, China, or Germany national cloud instances of Microsoft 365.
 
 All certificate information in this article was previously provided in [Microsoft 365 encryption chains](./encryption-office-365-certificate-chains.md) no later than October 2020.
 
