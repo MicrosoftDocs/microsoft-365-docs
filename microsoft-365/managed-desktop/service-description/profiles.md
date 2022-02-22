@@ -30,10 +30,9 @@ Fundamentally, every Microsoft Managed Desktop device has a foundation that incl
 
 Device profiles appear at the next higher level. Every Microsoft Managed Desktop device must have one (and only one) profile assigned. Admins can choose which profile a device is assigned.
 
-At a still higher level are additional [customizations](customizing.md). Each device can have one or more (or no) customizations. They can either modify a lower-level layer (Device profiles or the foundational configuration),  or be an entirely new request that’s layered on top of the standard configuration.
+At a still higher level are additional [customizations](customizing.md). Each device can have one or more (or no) customizations. They can either modify a lower-level layer (Device profiles or the foundational configuration),  or be an entirely new request that's layered on top of the standard configuration.
 
 At the top are your own modifications, such as network details or applications. A device can have any number of these modifications, which aren't managed or blocked by Microsoft Managed Desktop.
-
 
 ## Device profile details
 

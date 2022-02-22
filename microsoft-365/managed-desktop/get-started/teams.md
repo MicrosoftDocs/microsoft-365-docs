@@ -24,8 +24,8 @@ Most hardware vendors don't yet include Teams as a part of their images. Microso
 
 Microsoft Managed Desktop adds two applications to your Azure AD organization for Microsoft Teams. They're deployed to either 64-bit or 32-bit clients as appropriate for the device:  
 
-- Modern Workplace – Teams Machine Wide Installer x64  
-- Modern Workplace – Teams Machine Wide Installer x32
+- Modern Workplace - Teams Machine Wide Installer x64  
+- Modern Workplace - Teams Machine Wide Installer x32
 
 ## Updates
 
