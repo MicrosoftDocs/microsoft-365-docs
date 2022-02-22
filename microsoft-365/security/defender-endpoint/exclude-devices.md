@@ -95,6 +95,4 @@ You’ll be able to stop excluding a device at any time. Once devices are no l
 
 ## See also
 
-- [Take response actions on a file](respond-file-alerts.md)
-- [Manual response actions in Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md#manual-response-actions)
-- [Report inaccuracy](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)
+- [Device inventory](machines-view-overview.md)
