@@ -16,7 +16,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Exclude devices from threat and vulnerability management
+# Exclude devices 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -26,7 +26,7 @@ ms.technology: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
-## Exclude devices from the network
+## Exclude devices from threat and vulnerability management
 
 Excluding devices that are inactive, duplicate, or out of scope allows you to focus on discovering and prioritizing the risks on your active devices. This action can also help reflect a more accurate threat and vulnerability management exposure score, as the excluded devices won't be visible in your threat and vulnerability management reports.
 
@@ -41,7 +41,7 @@ You can choose to exclude a single device or multiple devices at the same time.
 ### Exclude a single device
 
 1. Go to the **Device inventory** page and select the device to exclude.
-2. Select **Exclude** from the action bar on the device inventory page or from the response actions menu in the device flyout.
+2. Select **Exclude** from the action bar on the device inventory page or from the actions menu in the device flyout.
 
 ![Image of exclude device menu option.](images/exclude-devices-menu.png)
 
