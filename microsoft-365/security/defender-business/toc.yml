@@ -35,7 +35,7 @@
         href: mdb-email-notifications.md
       - name: Step 4 - Onboard devices
         href: mdb-onboard-devices.md
-      - name: Step 5 - Configure your security settings
+      - name: Step 5 - Configure your security policies
         href: mdb-configure-security-settings.md
     - name: View and respond to detected threats
       items: 
