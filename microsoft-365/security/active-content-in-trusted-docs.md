@@ -60,7 +60,7 @@ The updated Trust Center logic is described in the following diagram:
 
 ## What is a trusted document?
 
-Trusted documents are Office documents that open without any security prompts for macros, ActiveX controls, and other types of active content in the document. Protected View or Application Guard is not used to open the document. When users open a Trusted Document, and all active content is enabled. Even if the document contains new active content or updates to existing active content, users won't receive security prompts the next time they open the document.
+Trusted documents are Office documents that open without any security prompts for macros, ActiveX controls, and other types of active content in the document. Protected View or Application Guard is not used to open the document. When users open a Trusted Document, and all active content is enabled. Even if the document contains new active content or updates to existing active content, users won't receive security prompts the next time they open the document.
 
 Because of this behavior, users should clearly trust documents only if they trust the document source.
 
@@ -82,11 +82,15 @@ Admins have many ways to configure Office in an organization. For example:
   - ***Settings catalog (preview)***: See instructions to use the [Settings catalog (preview)](/mem/intune/configuration/settings-catalog).
 - **Group policy**: Use your on-premise Active Directory to deploy group policy objects (GPOs) to users and computers. To create a GPO for this setting, download the latest [Administrative Template files (ADMX/ADML) and Office Customization Tool for Microsoft 365 Apps for enterprise, Office 2019, and Office 2016](https://www.microsoft.com/download/details.aspx?id=49030).
 
+## Known issues
+
+- When the policy **VBA Macro notifications** (Access, PowerPoint, Visio, Word) or **Macro notifications** (Excel) is set to the value **Disable all except digitally signed macros**, the expected trust bar is not displayed, and **Security Information** in the backstage does not list details of macros blocked, even though the setting is working as expected. The Office team is working to resolve this issue.
+
 ## Admin options for restricting active content
 
 There's a big difference in the level of trust in internally created content vs. content that users download from the internet. Consider allowing active content in internal documents and globally not allowing active content in documents from the internet.
 
-If your users don't need specific types of active content, your most secure option is to use policies to turn off user access to that active content, and allow exceptions as needed
+If your users don't need specific types of active content, your most secure option is to use policies to turn off user access to that active content, and allow exceptions as needed.
 
 The following policies are are available:
 
@@ -110,12 +114,12 @@ The tables in the following sections describe the settings that control active c
 |ActiveX|Office|Load Controls in Forms3|**1**|**Yes** for the following values: <ul><li>**2**</li><li>**3**</li></ul>|
 |Add-ins & Extensibility|Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|Disable Trust Bar Notification for unsigned application add-ins and block them|**Enabled**|**Yes** for the value **Disabled**.|
 |Add-ins & Extensibility|Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|Require that application add-ins are signed by Trusted Publisher|**Enabled**|No|
-|Add-ins & Extensibility|Excel|Do not show AutoRepublish warning alert|**Disabled**|No|
+|Add-ins & Extensibility|Excel|Do not show AutoRepublish warning alert|**Disabled**|No|
 |Add-ins & Extensibility|Excel|WEBSERVICE Function Notification Settings|**Disable all with notification**|**Yes** for the following values: <ul><li>**Disable all with notification**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
 |Add-ins & Extensibility|Office|Disable the Office client from polling the SharePoint Server for published links|**Disabled**|No|
 |Add-ins & Extensibility|Office|Disable UI extending from documents and templates|Disallow in Word = True <p> Disallow in Project = False <p> Disallow in Excel = True <p> Disallow in Visio= False <p> Disallow in PowerPoint = True <p> Disallow in Access = True <p> Disallow in Outlook = True <p> Disallow in Publisher = True <p> Disallow in InfoPath = True|No|
 |Add-ins & Extensibility|Outlook|Configure Outlook object model prompt when accessing an address book|**Automatically Deny**|**Yes** for the following values: <ul><li>**Prompt user**</li><li>**Prompt user based on computer security**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
-|Add-ins & Extensibility|Outlook|Configure Outlook object model prompt When accessing the Formula property of a UserProperty object|**Automatically Deny**|**Yes** for the following values: <ul><li>**Prompt user**</li><li>**Prompt user based on computer security**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|Add-ins & Extensibility|Outlook|Configure Outlook object model prompt When accessing the Formula property of a UserProperty object|**Automatically Deny**|**Yes** for the following values: <ul><li>**Prompt user**</li><li>**Prompt user based on computer security**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
 |Add-ins & Extensibility|Outlook|Configure Outlook object model prompt when executing Save As|**Automatically Deny**|**Yes** for the following values: <ul><li>**Prompt user**</li><li>**Prompt user based on computer security**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
 |Add-ins & Extensibility|Outlook|Configure Outlook object model prompt when reading address information|**Automatically Deny**|**Yes** for the following values: <ul><li>**Prompt user**</li><li>**Prompt user based on computer security**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
 |Add-ins & Extensibility|Outlook|Configure Outlook object model prompt when responding to meeting and task requests|**Automatically Deny**|**Yes** for the following values: <ul><li>**Prompt user**</li><li>**Prompt user based on computer security**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
@@ -123,21 +127,22 @@ The tables in the following sections describe the settings that control active c
 |Add-ins & Extensibility|Outlook|Set Outlook object model custom actions execution prompt|**Automatically Deny**|**Yes** for the following values: <ul><li>**Prompt user**</li><li>**Prompt user based on computer security**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
 |Add-ins & Extensibility|PowerPoint|Run Programs|**disable (don't run any programs)**|**Yes** for the value **Enable (prompt user before running)**|
 |Add-ins & Extensibility|Word <p> Excel|Disable Smart Document's use of manifests|**Enabled**|No|
-|DDE|Excel|Don't allow Dynamic Data Exchange (DDE) server launch in Excel|**Enabled**|**Yes** for the value **Not configured**.|
+|DDE|Excel|Don't allow Dynamic Data Exchange (DDE) server launch in Excel|**Enabled**|**Yes** for the value **Not configured**.|
 |DDE|Excel|Don't allow Dynamic Data Exchange (DDE) server lookup in Excel|**Enabled**|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
 |DDE|Word|Dynamic Data Exchange|**Disabled**|No|
 |Jscript & VBScript|Outlook|Allow scripts in one-off Outlook forms|**Disabled**|No|
 |Jscript & VBScript|Outlook|Do not allow Outlook object model scripts to run for public folders|**Enabled**|No|
 |Jscript & VBScript|Outlook|Do not allow Outlook object model scripts to run for shared folders|**Enabled**|No|
-|Macros|Access <p> Excel <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|VBA Macro Notification Settings|**Disable all except digitally signed macros** <p> and <p> **Require macros to be signed by a trusted publisher**|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|Macros|Excel|Macro Notifications|**Disable all except digitally signed macros**|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
+|Macros|Access <p> PowerPoint <p> Project <p> Publisher <p> Visio <p> Word|VBA Macro Notification Settings|**Disable all except digitally signed macros** <p> and <p> **Require macros to be signed by a trusted publisher**|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
 |Macros|Access <p> Excel <p> PowerPoint <p> Visio <p> Word|Block macros from running in Office files from the Internet|**Enabled**|**Yes** for the following values: <ul><li>**Disabled**</li><li>**Not configured**</li></ul>|
 |Macros|Excel|Scan encrypted macros in Excel Open XML workbooks|**Scan encrypted macros (default)**|No|
-|Macros|Office|Allow VBA to load typelib references by path from untrusted intranet locations|**Disabled**|No|
+|Macros|Office|Allow VBA to load typelib references by path from untrusted intranet locations|**Disabled**|No|
 |Macros|Office|Automation Security|**Use application macro security level**|No|
 |Macros|Office|Disable additional security checks on VBA library references that may refer to unsafe locations on the local machine|**Disabled**|No|
 |Macros|Office|Macro Runtime Scan Scope|**Enable for all documents**|No|
 |Macros|Office|Only trust VBA macros that use V3 signatures|Not a security baseline setting.|No|
-|Macros|Outlook|Outlook Security Mode|**Use Outlook Security Group Policy**|Required to enable all Outlook GPO settings. <p> Mentioned as a dependency (this policy doesn't block active content itself).|
+|Macros|Outlook|Outlook Security Mode|**Use Outlook Security Group Policy**|Required to enable all Outlook GPO settings. <p> Mentioned as a dependency (this policy doesn't block active content itself).|
 |Macros|Outlook|Security setting for macros|**Warn for signed, disable unsigned**|**Yes** for the following values: <ul><li>**Always warn**</li><li>**Warn for signed, disable unsigned**</li><li>**Disabled**</li><li>**Not configured**</li></ul>|
 |Macros|PowerPoint|Scan encrypted macros in PowerPoint Open XML presentations|**Scan encrypted macros (default)**|No|
 |Macros|Publisher|Publisher Automation Security Level|**By UI (prompted)**|No|

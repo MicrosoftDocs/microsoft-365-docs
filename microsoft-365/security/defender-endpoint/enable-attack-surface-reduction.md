@@ -14,9 +14,9 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.date: 12/06/2021
-ms.collection: m365-security-compliance
+ms.collection: m365solution-scenario
 ms.custom: admindeeplinkDEFENDER
+ms.date: 1/18/2022
 ---
 
 # Enable attack surface reduction rules
@@ -42,7 +42,7 @@ You can set attack surface reduction rules for devices that are running any of t
 - Windows Server, [version 1803 (Semi-Annual Channel)](/windows-server/get-started/whats-new-in-windows-server-1803) or later
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
-- [Windows Server 2012 R2](/win32/srvnodes/what-s-new-for-windows-server-2012-r2) 
+- [Windows Server 2012 R2](/windows/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
 - Windows Server 2022
 
 To use the entire feature-set of attack surface reduction rules, you need:
@@ -55,7 +55,7 @@ Although attack surface reduction rules don't require a [Windows E5 license](/wi
 
 Each ASR rule contains one of four settings:
 
-- **Not configured**: Disable the ASR rule
+- **Not configured** | **Disabled**: Disable the ASR rule
 - **Block**: Enable the ASR rule
 - **Audit**: Evaluate how the ASR rule would impact your organization if enabled
 - **Warn**: Enable the ASR rule but allow the end user to bypass the block
@@ -92,11 +92,35 @@ You can specify individual files or folders (using folder paths or fully qualifi
 
 ASR rules support environment variables and wildcards. For information about using wildcards, see [Use wildcards in the file name and folder path or extension exclusion lists](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
 
+## Policy Conflict
+
+1. If a conflicting policy is applied via MDM and GP, the setting applied from MDM will take precedence.
+
+2. Attack surface reduction rules for MEM-managed devices now support behavior for merger of settings from different policies, to create a superset of policy for each device. Only the settings that are not in conflict are merged, while those that are in conflict are not added to the superset of rules. Previously, if two policies included conflicts for a single setting, both policies were flagged as being in conflict, and no settings from either profile would be deployed. Attack surface reduction rule merge behavior is as follows:
+   - Attack surface reduction rules from the following profiles are evaluated for each device to which the rules apply:
+     - Devices > Configuration policy > Endpoint protection profile > **Microsoft Defender Exploit Guard** > [Attack Surface Reduction](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules).
+     - Endpoint security > **Attack surface reduction policy** > [Attack surface reduction rules](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune).
+     - Endpoint security > Security baselines > **Microsoft Defender ATP Baseline** > [Attack Surface Reduction Rules](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules).
+   - Settings that do not have conflicts are added to a superset of policy for the device.
+   - When two or more policies have conflicting settings, the conflicting settings are not added to the combined policy, while settings that don’t conflict are added to the superset policy that applies to a device.
+   - Only the configurations for conflicting settings are held back.
+
+## Configuration methods
+
+This section provides configuration details for the following configuration methods:
+
+- [Intune](#intune)
+- [MEM](#mem)
+- [MDM](#mdm)
+- [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
+- [Group Policy](#group-policy)
+- [PowerShell](#powershell)
+
 The following procedures for enabling ASR rules include instructions for how to exclude files and folders.
 
-## Intune
+### Intune
 
-**Device Configuration Profiles**
+#### Device Configuration Profiles
 
 1. Select **Device configuration** \> **Profiles**. Choose an existing endpoint protection profile or create a new one. To create a new one, select **Create profile** and enter information for this profile. For **Profile type**, select **Endpoint protection**. If you've chosen an existing profile, select **Properties** and then select **Settings**.
 
@@ -108,7 +132,7 @@ The following procedures for enabling ASR rules include instructions for how to 
 
 4. Select **OK** on the three configuration panes. Then select **Create** if you're creating a new endpoint protection file or **Save** if you're editing an existing one.
 
-**Endpoint security policy**
+#### Endpoint security policy**
 
 1. Select **Endpoint Security** \> **Attack surface reduction**. Choose an existing ASR rule or create a new one. To create a new one, select **Create Policy** and enter information for this profile. For **Profile type**, select **Attack surface reduction rules**. If you've chosen an existing profile, select **Properties** and then select **Settings**.
 
@@ -120,7 +144,7 @@ The following procedures for enabling ASR rules include instructions for how to 
 
 4. Select **Next** on the three configuration panes, then select **Create** if you're creating a new policy or **Save** if you're editing an existing policy.
 
-## MEM
+### MEM
 
 You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rules. The following procedure uses the rule [Block abuse of exploited vulnerable signed drivers](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers) for the example.
 
@@ -133,6 +157,7 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
 
    - In **Platform**, select **Windows 10 and later**
    - In **Profile type**, select **Templates**
+   - If ASR rules are already set through Endpoint security, in **Profile type**, select **Settings Catalog**.
 
    Select **Custom**, and then select **Create**.
 
@@ -153,10 +178,10 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
 
    - In **Name**, type a name for the rule.
    - In **Description**, type a brief description.
-   - In **OMA-URI**, type or paste the specific OMA-URI link for the rule that you are adding. Refer to the MEM section earlier in this article for the OMA-URI to use for this example rule. For attack surface reduction rule GUIDS, see [Per rule descriptions](attack-surface-reduction-rules-reference.md#per-rule-descriptions) in the topic: Attack surface reduction rules.
+   - In **OMA-URI**, type or paste the specific OMA-URI link for the rule that you are adding. Refer to the MDM section in this article for the OMA-URI to use for this example rule. For attack surface reduction rule GUIDS, see [Per rule descriptions](attack-surface-reduction-rules-reference.md#per-rule-descriptions) in the topic: Attack surface reduction rules.
    - In **Data type**, select **String**.
    - In **Value**, type or paste the GUID value, the \= sign and the State value with no spaces (_GUID=StateValue_). Where:
-     
+
      - 0 : Disable (Disable the ASR rule)
      - 1 : Block (Enable the ASR rule)
      - 2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)
@@ -205,7 +230,7 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
 >
 > Non-conflicting rules will not result in an error, and the rule will be applied correctly. The result is that the first rule is applied, and subsequent non-conflicting rules are merged into the policy.
 
-## MDM
+### MDM
 
 Use the [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) configuration service provider (CSP) to individually enable and set the mode for each rule.
 
@@ -233,7 +258,7 @@ Example:
 > [!NOTE]
 > Be sure to enter OMA-URI values without spaces.
 
-## Microsoft Endpoint Configuration Manager
+### Microsoft Endpoint Configuration Manager
 
 1. In Microsoft Endpoint Configuration Manager, go to **Assets and Compliance** \> **Endpoint Protection** \> **Windows Defender Exploit Guard**.
 
@@ -247,7 +272,7 @@ Example:
 
 6. After the policy is created, select **Close**.
 
-## Group Policy
+### Group Policy
 
 > [!WARNING]
 > If you manage your computers and devices with Intune, Configuration Manager, or other enterprise-level management platform, the management software will overwrite any conflicting Group Policy settings on startup.
@@ -272,7 +297,7 @@ Example:
    > [!WARNING]
    > Do not use quotes as they are not supported for either the **Value name** column or the **Value** column.
 
-## PowerShell
+### PowerShell
 
 > [!WARNING]
 > If you manage your computers and devices with Intune, Configuration Manager, or another enterprise-level management platform, the management software will overwrite any conflicting PowerShell settings on startup. To allow users to define the value using PowerShell, use the "User Defined" option for the rule in the management platform.
@@ -281,7 +306,6 @@ Example:
 
 > [!div class="mx-imgBorder"]
 > ![ASR enable "User Defined"](images/asr-user-defined.png)
-
 
 1. Type **powershell** in the Start menu, right-click **Windows PowerShell** and select **Run as administrator**.
 

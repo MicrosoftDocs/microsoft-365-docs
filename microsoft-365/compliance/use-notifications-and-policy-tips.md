@@ -144,6 +144,8 @@ For example, you may have a DLP policy applied to OneDrive for Business sites th
 
 3. Third rule: If greater than five instances of this sensitive information are detected in a document, and the document is shared with people outside the organization, the **Block access to content** action restricts the permissions for the file, and the **Send a notification** action does not allow people to override the actions in this rule because the information is shared externally. Under no circumstances should people in your organization be allowed to share PII data outside the organization.
 
+### User Override support
+
 Here are some fine points to understand about using a policy tip to override a rule:
 
 - The option to override is per rule, and it overrides all of the actions in the rule (except sending a notification, which can't be overridden).
@@ -151,6 +153,25 @@ Here are some fine points to understand about using a policy tip to override a r
 - It's possible for content to match several rules in a DLP policy, but only the policy tip from the most restrictive, highest-priority rule will be shown. For example, a policy tip from a rule that blocks access to content will be shown over a policy tip from a rule that simply sends a notification. This prevents people from seeing a cascade of policy tips.
 
 - If the policy tips in the most restrictive rule allow people to override the rule, then overriding this rule also overrides any other rules that the content matched.
+
+- If NotifyAllowOverride action is set with WithoutJustification or WithJustification or FlasePositives, make sure BlockAccess is set to true and BlockAccessScope has appropriate value. Otherwise policy tip will come up but the user will not find an option to override the email with justification.
+
+#### Availability of Override
+
+|Notification Rule |Notify/Block action  |Override available  |Require Justification  |
+|---------|---------|---------|---------|
+|Notify only     |Notify         |No         |No         |
+|Notify + AllowOverride     |Notify         |No         |No         |
+|Notify + AllowOverride + False positive     |Notify         |No         |No         |
+|Notify + AllowOverride + With justification     |Notify         |No         |No         |
+|Notify + AllowOverride + False positive + Without justification    |Notify         |No         |No         |
+|Notify + AllowOverride + False positive + With justification     |Notify         |No         |No         |
+|Notify + Block     |Block         |No         |No         |
+|Notify + Block + AllowOverride     |Block         |Yes         |No         |
+|Notify + Block + AllowOverride + False positive     |Block         |Yes         |No         |
+|Notify + Block + AllowOverride + With justification     |Block         |Yes         |Yes         |
+|Notify + Block + AllowOverride + False positive + Without justification     |Block         |Yes         |No         |
+|Notify + Block + AllowOverride + False positive + With justification     |Block         |Yes         |Yes         |
 
 
 ## Policy tips on OneDrive for Business sites and SharePoint Online sites

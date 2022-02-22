@@ -22,6 +22,7 @@ ms.technology: m365d
 
 # Run the client analyzer on macOS and Linux
 
+
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
@@ -30,7 +31,7 @@ ms.technology: m365d
 1. Download the [XMDE Client Analyzer](https://aka.ms/XMDEClientAnalyzer) tool to the macOS or Linux machine you need to investigate.
 
    > [!NOTE]
-   > The current SHA256 hash of 'XMDEClientAnalyzer.zip' that is downloaded from the above link is: '34C7F043211575544BB2C9CE30AB0998172066E44CD51E1CA018EDE9C96AB834'.
+   > The current SHA256 hash of 'XMDEClientAnalyzer.zip' that is downloaded from the above link is: 'AA6E73A5F451C3B78B066C9D55EE6499CE3C2F1A6E05CCE691A6055F36F93A3B'.
 
 2. Extract the contents of XMDEClientAnalyzer.zip on the machine.
 

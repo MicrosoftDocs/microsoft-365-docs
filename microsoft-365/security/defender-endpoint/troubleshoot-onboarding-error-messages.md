@@ -21,6 +21,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -80,11 +81,11 @@ If you encounter issues with accessing the portal, missing data, or restricted a
 - `*.blob.core.windows.net`
 - `crl.microsoft.com`
 - `https://*.microsoftonline-p.com`
-- `https://*.securitycenter.windows.com`
-- `https://automatediracs-eus-prd.securitycenter.windows.com`
+- `https://*.security.microsoft.com`
+- `https://automatediracs-eus-prd.security.microsoft.com`
 - `https://login.microsoftonline.com`
 - `https://login.windows.net`
 - `https://onboardingpackagescusprd.blob.core.windows.net`
 - `https://secure.aadcdn.microsoftonline-p.com`
-- `https://securitycenter.windows.com`
+- `https://security.microsoft.com`
 - `https://static2.sharepointonline.com`

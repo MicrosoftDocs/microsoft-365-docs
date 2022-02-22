@@ -87,13 +87,11 @@ Step 1: Click on the domain you wish to configure DKIM on DKIM page (https://sec
 
 ![DKIM page in the Microsoft 365 Defender portal with a domain selected.](../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png)
 
-Step 2: Click on Create DKIM keys.
+Step 2: Slide the toggle to **Enable**. You will see a pop-up window stating that you need to add CNAME records.
 
-![Domain details flyout with the Create DKIM keys button.](../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png)
+![Slide the toggle to Enabled to enable DKIM.](../../media/126995186-9b3fdefa-a3a9-4f5a-9304-1099a2ce7cef.png)
 
 Step 3: Copy the CNAMES shown in the pop up window
-
-![Publish CNAMEs pop up window that contains the two CNAME records to copy.](../../media/127001787-3cce2c29-e0e4-4712-af53-c51dcba33c46.png)
 
 Step 4: Publish the copied CNAME records to your DNS service provider.
 
