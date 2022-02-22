@@ -49,11 +49,11 @@ This article also includes information about [Offboarding a device](#offboarding
 
 The following table describes the most commonly used methods to onboard devices to Defender for Business. 
 
-| Onboarding method  | Description  |
-|---------|---------|
-| **Automatic onboarding**<br/>(*available to customers who are already using Microsoft Endpoint Manager*) | Automatic onboarding sets up a connection between Defender for Business (preview) and Microsoft Endpoint Manager, and then onboards Windows devices to Defender for Business (preview). In order to use this option, your devices must already be enrolled in Endpoint Manager.<br/><br/>To learn more, see [Use automatic onboarding for Windows devices enrolled in Microsoft Endpoint Manager](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager). |
-| **Microsoft Defender for Business security configuration** <br/>(*onboard devices using the Microsoft 365 Defender portal*) | This option was built on a capability known as [Security Management for Microsoft Defender for Endpoint (preview)](/mem/intune/protect/mde-security-integration). It enables you to onboard devices to Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) without requiring those devices to be fully enrolled in Microsoft Endpoint Manager beforehand. <br/><br/>When you onboard a device by using a method, such as a local script, a trust is established between the device and Azure Active Directory (Azure AD). The device uses its Azure AD Identity to communicate with Endpoint Manager. As a result, you can view your devices and policies in Endpoint Manager.<br/><br/>To learn more about how all this works, see [Microsoft Defender for Business security configuration](#microsoft-defender-for-business-security-configuration). |
-| **Microsoft Intune** or **Microsoft Endpoint Manager**<br/>(*available to customers who are already using Microsoft Intune or Endpoint Manager*) | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Mobile Device Management](/mem/intune/enrollment/device-enrollment) are part of Endpoint Manager. If you were already using Endpoint Manager before you got Defender for Business (preview), you can opt to continue using Endpoint Manager to onboard and manage devices<br/><br/>To use this method, see [Onboard devices using Microsoft Endpoint Manager](#onboard-devices-using-microsoft-endpoint-manager). |
+| Onboarding method  | Description  | Supported operating systems |
+|---------|---------|---------|
+| **Automatic onboarding**<br/>(*available to customers who are already using Microsoft Endpoint Manager*) | Automatic onboarding sets up a connection between Defender for Business (preview) and Microsoft Endpoint Manager, and then onboards Windows devices to Defender for Business (preview). In order to use this option, your devices must already be enrolled in Endpoint Manager.<br/><br/>To learn more, see [Use automatic onboarding for Windows devices enrolled in Microsoft Endpoint Manager](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager). | Windows |
+| **Microsoft Defender for Business security configuration** <br/>(*onboard devices using the Microsoft 365 Defender portal*) | With this option, you onboard devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com) by using a package that you download and run on each device. When you onboard a device by using this method, a trust is established between the device and Azure Active Directory (Azure AD). The device uses its Azure AD Identity to communicate with Endpoint Manager. As a result, you can view your devices and policies in Endpoint Manager.<br/><br/>To learn more, see [Microsoft Defender for Business security configuration](#microsoft-defender-for-business-security-configuration). | Windows <br/><br/>macOS <br/><br/>Linux |
+| **Microsoft Intune** or **Microsoft Endpoint Manager**<br/>(*available to customers who are already using Microsoft Intune or Endpoint Manager*) | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Mobile Device Management](/mem/intune/enrollment/device-enrollment) are part of Endpoint Manager. If you were already using Endpoint Manager before you got Defender for Business (preview), you can opt to continue using Endpoint Manager to onboard and manage devices<br/><br/>To use this method, see [Onboard devices using Microsoft Endpoint Manager](#onboard-devices-using-microsoft-endpoint-manager). | Windows <br/><br/>macOS <br/><br/>Linux<br/><br/>iOS<br/><br/>Android OS | 
 
 > [!IMPORTANT]
 > If something goes wrong and your onboarding process fails, see [Microsoft Defender for Business troubleshooting](mdb-troubleshooting.yml).
@@ -68,9 +68,11 @@ To learn more about automatic onboarding, see step 3 in [Use the wizard to set u
 
 ## Microsoft Defender for Business security configuration
 
-Microsoft Defender for Business security configuration was built on a capability known as [Security Management for Microsoft Defender for Endpoint (preview)](/mem/intune/protect/mde-security-integration). It enables you to onboard devices to Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) without requiring those devices to be fully enrolled in Microsoft Endpoint Manager beforehand. <br/><br/>When you onboard a device by using a method, such as a local script, a trust is established between the device and Azure Active Directory (Azure AD). The device uses its Azure AD Identity to communicate with Endpoint Manager. As a result, you can view your devices and policies in Endpoint Manager.<br/><br/>To learn more about how all this works, see [Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
+Microsoft Defender for Business security configuration was built on a capability known as [Security Management for Microsoft Defender for Endpoint (preview)](/mem/intune/protect/mde-security-integration). It enables you to onboard devices to Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) without requiring those devices to be fully enrolled in Microsoft Endpoint Manager beforehand. You can onboard devices using a package that you download and then run on the device. Running the package establishes a trust between each device (if the trust doesn't already exist) and Azure Active Directory (Azure AD), and each device uses its Azure AD Identity to communicate with Endpoint Manager. As a result, you can view your devices and policies in Endpoint Manager.
 
-### Onboard devices using a local script in Defender for Business
+To learn more, including prerequisites, see [Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
+
+## Onboard devices using a local script in Defender for Business
 
 You can use a local script to onboard Windows, macOS, and Linux devices to Defender for Business. When you run the onboarding script on a device, it creates a trust with Azure Active Directory, enrolls the device in Microsoft Endpoint Manager, and onboards the device to Defender for Business. This method is useful for onboarding devices in Defender for Business and for onboarding a few devices at a time.
 
@@ -150,9 +152,7 @@ If you want to offboard a device, follow these steps:
 
 6. Select **Download offboarding package**. We recommend saving the offboarding package to a removable drive.
 
-7. Run the script on each device that you want to offboard. 
-
-   Need help with this task? See the following resources:   
+7. Run the script on each device that you want to offboard. Need help with this task? See the following resources:   
 
    - Windows devices: [Offboard Windows devices using a local script](../defender-endpoint/configure-endpoints-script.md#offboard-devices-using-a-local-script)
    - macOS devices: [Uninstalling on macOS](../defender-endpoint/mac-resources.md#uninstalling)
