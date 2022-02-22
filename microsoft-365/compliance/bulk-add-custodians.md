@@ -27,7 +27,7 @@ For Advanced eDiscovery cases that involve many custodians, you can import multi
 
 2. Click **Add data source** > **Import custodians**.
 
-3. On the **Import custodians** flyout page, click **Download a blank template** to download a custodian template CSV file.
+3. On the **Get template** wizard page, click **Download the CSV template** to download a custodian template CSV file.
 
    ![Download a CSV template from Import custodians flyout page.](../media/ImportCustodians1.png)
 
@@ -35,9 +35,19 @@ For Advanced eDiscovery cases that involve many custodians, you can import multi
 
 5. After you've prepared the CSV file with the custodian information, go back to the **Data sources** tab, and click **Add data source** > **Import custodians** again.
 
-6. On the **Import custodians** flyout page, click **Browse** and then upload the CSV file that contains the custodian information.
+6. On the **Upload CSV file** wizard page, click **Upload csv file** and then upload the CSV file that contains the custodian information.
 
-   After the CSV file is uploaded, a job named **BulkAddCustodian** is created and displayed on the **Jobs** tab. The job validates the custodians and their associated data sources and then adds them to the **Data sources** page of the case.
+7. The import wizard validates the CSV file. If any validation errors exist, the wizards displays the error and suggests a remediation action. You will have to fix any validation errors and then reupload the fixed CSV file.
+
+8. 
+
+After the CSV file is validated and successfully uploaded, the following things happend:
+
+- A job named **BulkAddCustodian** is created and displayed on the **Jobs** tab.
+
+- Indexes all data sources for each custodian and places them on hold (if the **Is OnHold** property in the CSV file is set to TRUE)
+
+- After the job is complete, the custodians and their associated data sources and then adds them to the **Data sources** page of the case.
 
 ## Custodian CSV file
 
@@ -73,11 +83,10 @@ Here's an example of a CSV file with custodian information:<br/><br/>
 
 ## Custodian and data source validation
 
-After you upload the custodian CSV file, Advanced eDiscovery does the following things:
+After you upload the custodian CSV file (but before you submit the import job), Advanced eDiscovery does the following things:
 
 1. Validates the custodians and their data sources.
 
-2. Indexes all data sources for each custodian and places them on hold (if the **Is OnHold** property in the CSV file is set to TRUE).
 
 ### Custodian validation
 
