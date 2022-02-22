@@ -42,4 +42,3 @@ Organizations in the following countries can subscribe to Microsoft Managed Desk
 - Iceland
 - Australia
 - New Zealand
-
