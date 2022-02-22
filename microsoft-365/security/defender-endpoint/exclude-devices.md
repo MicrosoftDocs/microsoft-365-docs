@@ -42,13 +42,13 @@ You can exclude one device or multiple devices at the same time. To exclude a si
 
 ![Image of exclude device menu option.](images/exclude-devices-menu.png)
 
-3. Select a justification:
+ 3. Select a justification:
 
-- Inactive device
-- Duplicate device
-- Device doesn’t exist
-- Out of scope  
-- Other
+    - Inactive device
+    - Duplicate device
+    - Device doesn’t exist
+    - Out of scope  
+    - Other
 
 4. Type a note and select **Exclude device**.
 
@@ -75,19 +75,11 @@ You can also choose to exclude multiple devices at the same time:
 
 3. Choose a justification and select **Exclude device**
 
-If you select multiple devices in the device list with different exclusion statuses, then you’ll get the option to exclude devices like a bulk device exclusion. However, the exclude selected devices flyout will provide you details on how many of the selected devices are already excluded. You can exclude the devices again, but the justification and notes will be overridden.
+If you select multiple devices in the device list with different exclusion statuses,the exclude selected devices flyout will provide you details on how many of the selected devices are already excluded. You can exclude the devices again, but the justification and notes will be overridden.
 
 ![Image of exclude device](images/exclude-device-bulk.png)
 
-## Once a device is excluded
-
-If you go to the device page of an excluded device, you won’t be able to see data for:
-
-- Discovered vulnerabilities
-- Software inventory
-- Security recommendations
-
-The data also won’t show up in vulnerability management pages, related advanced hunting tables and the vulnerable devices report. It can take up to 8 hours for these changes to be visible in the portal.
+Once a device is excluded, if you go to the device page of an excluded device, you won’t be able to see data for discovered vulnerabilities, software inventory or security recommendations. The data also won’t show up in vulnerability management pages, related advanced hunting tables and the vulnerable devices report.
 
 ## Stop excluding a device
 
