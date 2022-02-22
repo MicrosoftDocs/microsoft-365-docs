@@ -34,7 +34,7 @@ Microsoft Defender for Endpoint on iOS now has specialized ability on supervised
 
 ## Microsoft Defender for Endpoint is now Microsoft Defender in the App store
 
-Microsoft Defender for Endpoint is now available as **Microsoft Defender** in the app store. With this update, the app will be available as preview for **Consumers in the US region**. Based on how you log into the app with your work or personal account, you will have access to features for Microsoft Defender for Endpoint or to features for Microsoft Defender for individuals. For more information, see [this blog](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals).
+Microsoft Defender for Endpoint is now available as **Microsoft Defender** in the app store. With this update, the app will be available as preview for **Consumers in the US region**. Based on how you log into the app with your work or personal account, you will have access to features for Microsoft Defender for Endpoint or to features for Microsoft Defender for individuals. For more information, see [this blog](https://www.microsoft.com/en-us/microsoft-365/microsoft-defender-for-individuals).
 
 ## Threat and Vulnerability Management
 
