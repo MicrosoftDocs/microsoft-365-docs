@@ -60,7 +60,7 @@ This feature is designed to prevent suspected malware (or potentially malicious 
 
 2. Select the **File hashes** tab.
 
-3. Select **Add indicator**.
+3. Select **Add item**.
 
 4. Specify the following details:
     - Indicator - Specify the entity details and define the expiration of the indicator.
