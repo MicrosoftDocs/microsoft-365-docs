@@ -7,13 +7,15 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 12/07/2021
+ms.date: 01/14/2022
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365initiative-defender-endpoint
 ---
 
 # Set up and configure Microsoft Defender for Endpoint Plan 1
@@ -46,7 +48,7 @@ The following table lists the basic requirements for Defender for Endpoint Plan 
 
 | Requirement | Description |
 |:---|:---|
-| Licensing requirements | Defender for Endpoint Plan 1 |
+| Licensing requirements | Defender for Endpoint Plan 1 (formerly referred to as Microsoft Defender for Endpoint Lite)|
 | Browser requirements | Microsoft Edge <br/> Internet Explorer version 11 <br/> Google Chrome |
 | Operating systems | Windows 10, version 1709 or later <br/>macOS: 11.5 (Big Sur), 10.15.7 (Catalina), or 10.14.6 (Mojave) <br/>iOS <br/>Android OS  |
 | Datacenter | One of the following datacenter locations: <br/>- European Union <br/>- United Kingdom <br/>- United States |
@@ -184,7 +186,7 @@ Attack surface reduction rules are available on devices running Windows. We reco
 > To learn more about attack surface reduction rules, see the following resources:
 > - [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md)
 > - [View the list of attack surface reduction rules](attack-surface-reduction-rules-reference.md)
-> - [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
+> - [Attack surface reduction rules deployment Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md)
 
 ### Ransomware mitigation
 

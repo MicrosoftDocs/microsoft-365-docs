@@ -98,6 +98,8 @@
           href: deploy-supported-services.md
         - name: Turning on Microsoft 365 Defender FAQs
           href: m365d-enable-faq.md              
+        - name: Train your security staff
+          href: microsoft-365-defender-train-security-staff.md              
     - name: Protect against threats
       items: 
       - name: Microsoft Secure Score
@@ -112,6 +114,8 @@
             href: microsoft-secure-score-whats-coming.md
           - name: What's new
             href: microsoft-secure-score-whats-new.md
+      - name: Protect your endpoints 
+        href: ../defender-endpoint/index.yml
       - name: Protect your identities
         items:
           - name: Sensor settings and health
@@ -128,6 +132,8 @@
             href: ../defender-identity/exclusions.md
           - name: Email and syslog notifications
             href: ../defender-identity/notifications.md
+      - name: Protect your Office 365 workloads
+        href: ../office-365-security/index.yml
     - name: Investigate and respond to threats
       items: 
        - name: Overview
@@ -164,6 +170,16 @@
                    href: investigate-incidents.md
                  - name: Alerts
                    href: investigate-alerts.md    
+                 - name: Alert grading playbooks
+                   items: 
+                    - name: Overview
+                      href: alert-grading-playbooks.md
+                    - name: Suspicious email forwarding activity
+                      href: alert-grading-playbook-email-forwarding.md
+                    - name: Suspicious inbox forwarding rules
+                      href: alert-grading-playbook-inbox-forwarding-rules.md
+                    - name: Suspicious inbox manipulation rules
+                      href: alert-grading-playbook-inbox-manipulation-rules.md
                  - name: Users 
                    href: investigate-users.md                  
               - name: Incident response playbooks

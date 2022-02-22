@@ -46,7 +46,7 @@ If an alert is not yet assigned, you can select **Assign to me** to assign the a
 
 ## Suppress alerts
 
-There might be scenarios where you need to suppress alerts from appearing in Microsoft Defender Security Center. Defender for Endpoint lets you create suppression rules for specific alerts that are known to be innocuous such as known tools or processes in your organization.
+There might be scenarios where you need to suppress alerts from appearing in Microsoft 365 Defender. Defender for Endpoint lets you create suppression rules for specific alerts that are known to be innocuous such as known tools or processes in your organization.
 
 Suppression rules can be created from an existing alert. They can be disabled and reenabled if needed.
 

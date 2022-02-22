@@ -17,7 +17,7 @@ ms.assetid:
 ms.collection: 
   - M365-security-compliance
 description: Admins can learn about the mail flow reports that are available in the Reports dashboard in the Security & Compliance Center.
-ms.custom: admindeeplinkEXCHANGE
+ms.custom:
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -33,7 +33,7 @@ ms.prod: m365-security
 
 > [!NOTE]
 >
-> Most of the reports in this article are also available in the Microsoft 365 Defender portal or the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. For more information, see the following topics:
+> Most of the reports in this article are also available in the Microsoft 365 Defender portal or the Exchange admin center (EAC). For more information, see the following topics:
 >
 > - [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 > - [View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md)
@@ -51,14 +51,8 @@ If you have the [necessary permissions](#what-permissions-are-needed-to-view-the
 
 ## Exchange transport rule report
 
-The **Exchange transport rule report** shows the effect of mail flow rules (also known as transport rules) on incoming and outgoing messages in your organization.
-
-To view the report, open the Security & Compliance Center at <https://protection.office.com>, go to **Reports** \> **Dashboard** and select **Exchange Transport rule**. To go directly to the report, open <https://security.microsoft.com/reports/ETRRuleReport>.
-
-![Exchange transport rule widget in the Reports dashboard.](../../media/scc-transport-rule-report-widget.png)
-
 > [!NOTE]
-> Clicking on the widget for this report in the Security & Compliance Center (protection.office.com) now takes you to the full report in the Microsoft 365 Defender portal (security.microsoft.com). For details about the report, see [Exchange transport rule report](view-email-security-reports.md#exchange-transport-rule-report).
+> The **Exchange transport rule report** is now available in the EAC. For more information, see [Exchange transport rule report in the new EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report).
 
 ## Forwarding report
 

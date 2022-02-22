@@ -70,6 +70,25 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 - Security reader
 - Reports reader
 
+#### Roles and Role Groups in preview
+
+There are roles and role groups in preview that you can test out to fine tune your access controls.
+
+Here's a list of Microsoft Information Protection (MIP) roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+
+- Information Protection Admin
+- Information Protection Analyst
+- Information Protection Investigator
+- Information Protection Reader
+
+Here's a list of MIP role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+
+- Information Protection
+- Information Protection Admins
+- Information Protection Analysts
+- Information Protection Investigators
+- Information Protection Readers
+
 ### Overall installation workflow
 
 Deploying Microsoft Compliance Extension is a multi-phase process. You can choose to install on one machine at a time, or use Microsoft Endpoint Manager or Group Policy for organization-wide deployments.
@@ -254,8 +273,7 @@ Now that you’ve removed Chrome from the disallowed browsers/apps list, you can
 
 ### Known Issues and Limitations
 
-1. Block Override enforcement for cloud egress is not supported.
-2. Incognito mode is not supported and must be disabled.
+1. Incognito mode is not supported and must be disabled.
 
 ## Next steps
 

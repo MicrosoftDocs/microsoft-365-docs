@@ -70,7 +70,7 @@ People who have the following permissions:
 
 - Reports reader
 
-- Teams Service Administrator
+- Teams Administrator
 
 - Teams Communications Administrator
     

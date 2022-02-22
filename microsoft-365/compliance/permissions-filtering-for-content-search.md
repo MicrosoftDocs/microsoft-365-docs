@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: 
@@ -120,7 +120,7 @@ The  _Filters_ parameter specifies the search criteria for the compliance securi
   |Department |`"Mailbox_Department -eq 'Finance'"`        |
   |||
 
-- **Mailbox content filtering:** This type of filter is applied on the content that can be searched. This type of filter is called a *content filter* because it specifies the mailbox content the assigned users can search for. The syntax for this type of filter is **MailboxContent_** _SearchablePropertyName: value_, where  _SearchablePropertyName_ specifies a Keyword Query Language (KQL) property that can be specified in a search. For example, the mailbox content filter  `MailboxContent_recipients:contoso.com` would allow the user assigned this filter to only search for messages sent to recipients in the contoso.com domain. For a list of searchable message properties, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md#searchable-email-properties).
+- **Mailbox content filtering:** This type of filter is applied on the content that can be searched. This type of filter is called a *content filter* because it specifies the mailbox content or searchable email properties the assigned users can search for. The syntax for this type of filter is **MailboxContent_**_SearchablePropertyName, where  _SearchablePropertyName_ specifies a Keyword Query Language (KQL) property that can be specified in a search. For example, the mailbox content filter `"MailboxContent_Recipients  -like 'contoso.com'"` would allow the user assigned this filter to only search for messages sent to recipients in the contoso.com domain. For a list of searchable email properties, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md#searchable-email-properties).
 
   > [!IMPORTANT]
   > A single search filter can't contain a mailbox filter and a mailbox content filter. To combine these in a single filter, you have to use a [filters list](#using-a-filters-list-to-combine-filter-types).  But a filter can contain a more complex query of the same type. For example, `"Mailbox_CustomAttribute10 -eq 'FTE' -and Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'"`
@@ -281,7 +281,7 @@ The  _Filters_ parameter specifies the search criteria for the compliance securi
 
 - **Mailbox and OneDrive filtering:** This type of filter specifies the mailboxes and OneDrive accounts the assigned users (specified by the  _Users_ parameter) can search. The syntax for this type of filter is **Mailbox_** _MailboxPropertyName_, where  _MailboxPropertyName_ specifies a mailbox property used to scope the mailboxes that can be searched. For example, the mailbox filter  `"Mailbox_CustomAttribute10 -eq 'OttawaUsers'"` would allow the user assigned this filter to search only the mailboxes that have the value "OttawaUsers" in the CustomAttribute10 property.  Any supported filterable recipient property can be used for the  _MailboxPropertyName_ property. For a list of supported properties, see [Filterable properties for the -RecipientFilter parameter](/powershell/exchange/recipientfilter-properties).
 
-- **Mailbox content filtering:** This type of filter is applied on the content that can be searched. It specifies the mailbox content the assigned users can search for. The syntax for this type of filter is **MailboxContent_** _SearchablePropertyName:value_, where  _SearchablePropertyName_ specifies a Keyword Query Language (KQL) property that can be specified in a search. For example, the mailbox content filter  `MailboxContent_recipients:contoso.com` would allow the user assigned this filter to only search for messages sent to recipients in the contoso.com domain.  For a list of searchable message properties, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md). 
+- **Mailbox content filtering:** This type of filter is applied on the content that can be searched. It specifies the mailbox content the assigned users can search for. The syntax for this type of filter is **MailboxContent_**_SearchablePropertyName_, where  _SearchablePropertyName_ specifies a Keyword Query Language (KQL) property that can be specified in a search. For example, the mailbox content filter `"MailboxContent_Recipients  -like 'contoso.com'"` would allow the user assigned this filter to only search for messages sent to recipients in the contoso.com domain.  For a list of searchable email properties, see [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md).
 
 - **Site and site content filtering:** There are two SharePoint and OneDrive for Business site-related filters that you can use to specify what site or site content the assigned users can search:
 

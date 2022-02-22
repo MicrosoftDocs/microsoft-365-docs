@@ -25,27 +25,9 @@ description: "Basic Mobility and Security can help you secure and manage your mo
 
 Basic Mobility and Security can help you secure and manage mobile devices like iPhones, iPads, Androids, and Windows Phones used by licensed Microsoft 365 users in your organization. You can create mobile device management policies with settings that can help control access to your organization’s Microsoft 365 email and documents for supported mobile devices and apps. If a device is lost or stolen, you can remotely wipe the device to remove sensitive organizational information.
 
-## Supported devices
+## Supported operating systems
 
-You can use Basic Mobility and Security to secure and manage the following devices.
-
-- iOS 11.0 or later versions
-
-- Android 5.0 or later versions<sup>3</sup>
-
-- Windows 8.1<sup>1</sup>
-
-- Windows 8.1 RT<sup>1</sup>
-
-- Windows 10<sup>2</sup>
-
-- Windows 10 Mobile<sup>2</sup>
-
-<sup>1</sup>Access control for Windows 8.1 RT devices is limited to Exchange ActiveSync.
-
-<sup>2</sup>Access control for Windows 10 requires a subscription that includes Azure AD Premium and the device needs to be joined to Azure Active Directory.
-
-<sup>3</sup>After June 2020, Android versions later than 9 can't manage password settings except on Samsung Knox devices.
+Follow the Microsoft Intune operating systems guide for supported operating systems for devices using Basic Mobility and Security. For more info, see [Intune supported operating systems](/mem/intune/fundamentals/supported-devices-browsers).
 
 > [!NOTE]
 > Devices already enrolled with earlier OS versions continue to function although the capabilities might change without notice.

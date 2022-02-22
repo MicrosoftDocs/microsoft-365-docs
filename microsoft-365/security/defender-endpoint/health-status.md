@@ -45,7 +45,7 @@ The following table provides information on the values returned when you run the
 |edr_configuration_version|EDR configuration version.|
 |edr_device_tags|List of tags associated with the device.|
 |edr_group_ids|Group ID that the device is associated with.|
-|edr_machine_id|Device identifier used in Microsoft Defender Security Center.|
+|edr_machine_id|Device identifier used in Microsoft 365 Defender.|
 |engine_version|Version of the antivirus engine.|
 |healthy|True if the product is healthy, false otherwise.|
 |licensed|True if the device is onboarded to a tenant, false otherwise.|

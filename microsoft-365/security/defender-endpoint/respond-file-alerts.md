@@ -321,4 +321,4 @@ If you come across a problem when trying to submit a file, try each of the follo
 
 - [Take response actions on a device](respond-machine-alerts.md)
 - [Investigate files](investigate-files.md)
-- [Manual response actions in Microsoft Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md#manual-response-actions)
+- [Manual response actions in Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md#manual-response-actions)
