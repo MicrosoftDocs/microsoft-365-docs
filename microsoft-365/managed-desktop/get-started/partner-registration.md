@@ -15,14 +15,14 @@ audience: Admin
 
 # Steps for Partners to register devices
 
-This article describes the steps for Partners to register devices. The process for registering devices yourself is documented in [Register devices in Microsoft Managed Desktop yourself](register-devices-self.md).
+This article describes the steps for Partners to register devices. The process for registering devices yourself is documented in [Manual registration](manual-registration.md).
 
 ## Prepare for registration
 
 Before completing registration for a customer, you must first establish a relationship with them in the [Partner Center](https://partner.microsoft.com/dashboard). For more information on that process, see the [consent documentation](/windows/deployment/windows-autopilot/registration-auth#csp-authorization). Any CSP partner can add devices on behalf of any customer, as long as the customer consents. You can also learn more about partner relationships and Autopilot permissions at [Partner Center help](/partner-center/customers_revoke_admin_privileges#windows-autopilot).
 
 > [!NOTE]
-> This documentation is only for Partners and OEMs. The process for self-registration is documented in [Register devices in Microsoft Managed Desktop yourself](register-devices-self.md).
+> This documentation is only for Partners and OEMs. The process for self-registration is documented in [Manual registration](manual-registration.md).
 
 ## Register devices using the Partner Center
 
