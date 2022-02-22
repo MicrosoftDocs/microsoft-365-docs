@@ -41,7 +41,7 @@ You can remove the **CPE Available** filter, to gain further visibility and incr
 
 ## How it works
 
-In the field of discovery, we're applying the same set of signals that is responsible for detection and vulnerability assessment in [Microsoft Defender for Endpoint detection and response capabilities](overview-endpoint-detection-response.md).
+In the field of discovery, we're leveraging the same set of signals that is responsible for detection and vulnerability assessment in [Microsoft Defender for Endpoint detection and response capabilities](overview-endpoint-detection-response.md).
 
 Since it's real time, in a matter of minutes, you'll see vulnerability information as they get discovered. The engine automatically grabs information from multiple security feeds. In fact, you'll see if a particular software is connected to a live threat campaign. It also provides a link to a Threat Analytics report soon as it's available.
 
@@ -56,7 +56,7 @@ View software on specific devices in the individual devices pages from the [devi
 
 ## Software inventory overview
 
-The **Software inventory** page opens with a list of software installed in your network, including the vendor name, weaknesses found, threats associated with them, exposed devices, affect exposure score, and tags.
+The **Software inventory** page opens with a list of software installed in your network, including the vendor name, weaknesses found, threats associated with them, exposed devices, impact to exposure score, and tags.
 
 By default, the view is filtered by **Product Code (CPE): Available**. You can also filter the list view based on weaknesses found in the software, threats associated with them, and tags like whether the software has reached end-of-support.
 
@@ -103,7 +103,7 @@ You can view software pages a few different ways:
 
  A full page will appear with all the details of a specific software and the following information:
 
-- Side panel with vendor information, prevalence of the software in the organization (including number of devices it's installed on, and exposed devices that aren't patched), whether and exploit is available, and affect your exposure score.
+- Side panel with vendor information, prevalence of the software in the organization (including number of devices it's installed on, and exposed devices that aren't patched), whether and exploit is available, and impact to exposure score.
 - Data visualizations showing the number of, and severity of, vulnerabilities and misconfigurations. Also, graphs with the number of exposed devices.
 - Tabs showing information such as:
   - Corresponding security recommendations for the weaknesses and vulnerabilities identified.
