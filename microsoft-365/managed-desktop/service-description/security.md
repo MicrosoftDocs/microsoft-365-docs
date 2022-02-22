@@ -54,7 +54,6 @@ Customers are responsible for network security.
 | ----- | ----- |
 | VPN | Customers own their VPN infrastructure, to ensure limited corporate resources can be exposed outside the intranet.<br><br>Minimum requirement: Microsoft Managed Desktop requires a Windows 10 compatible and supported VPN solution. If your organization needs a VPN solution, it needs to support Windows 10 and be packaged and deployable through Intune. Contact your software publisher for more information.<br><br>Recommendation:<br><ul><li> Microsoft recommends a modern VPN solution that could be easily deployed through Intune to push VPN profiles. This approach provides an always-on, seamless, reliable, and secure way to access corporate network. For more information, see [VPN settings in Intune](/intune/vpn-settings-configure).</li><li>Thick VPN clients, or older VPN clients, aren't recommended by Microsoft while using Microsoft Managed Desktop as it can affect the user environment.</li><li>Microsoft recommends that the outgoing web traffic goes directly to Internet without going through the VPN to avoid any performance issues.</li><li>Ideally, Microsoft recommends the use of Azure Active Directory App Proxy instead of a VPN.</li></ul>
 
-
 ## Information security
 
 You can configure these optional services to help protect corporate high-value assets.
