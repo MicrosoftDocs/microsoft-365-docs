@@ -27,6 +27,12 @@ The service alerts inform admins of mail queuing to external recipients outside 
 
 These service alerts are displayed in the Microsoft 365 admin center. To view these service alerts, go to **Health** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**Service health**</a> > **Exchange Online** and then click the **Active issues** tab. The name for these service alerts is "Message Queueing to External Recipients Above Thresholds".
 
+![Service alert for messages pending delivery to external recipients displayed in the Exchange Online monitoring dashboard.](../media/microsoft-365-exchange-monitoring/ExternalRecipientsServiceAlerts1.png)
+
+When you double-click the service alert, a flyout page similar to the following is displayed.
+
+![Content in the service alert for messages pending delivery to external recipients.](../media/microsoft-365-exchange-monitoring/ExternalRecipientsServiceAlerts2.png)
+
 ## What do these service alerts indicate?
 
 The service alerts for messages pending delivery to external recipients informs you that messages destined to recipients outside of Exchange Online may be delayed. The queueing of messages may be caused by your on-premises environment or a third-party messaging or journaling solution.
@@ -45,7 +51,7 @@ Here are some common reasons for queueing messages to external recipients. Howev
 
 - Certificate issues
 
-Each service alert contains high-level recommendations for remediating the issue. The service alert also indicates the the number of messages queued at the time of alert, the domain where the messages are queued to, and the SMTP error code associated with most of the queued messages.
+Each service alert contains high-level recommendations for remediating the issue. The service alert also indicates the number of messages queued at the time of alert, the domain where the messages are queued to, and the SMTP error code associated with most of the queued messages.
 
 For more information for determining the root cause for these service alerts, see [Mail flow intelligence in Exchange Online](../security/office-365-security/mail-flow-intelligence-in-office-365.md). This article also includes suggested actions to fix the root cause.
 
