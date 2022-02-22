@@ -119,13 +119,13 @@ Attack surface reduction rules target certain software behaviors that are consid
 - Running obfuscated or otherwise suspicious scripts
 - Performing behaviors that apps don't usually initiate during normal day-to-day work
 
-Legitimate business applications can exhibit such software behaviors; however, these behaviors are often considered risky because they are commonly abused by attackers through malware. Attack surface reduction rules can constrain risky behaviors and help keep your organization safe. 
+Legitimate business applications can exhibit such software behaviors; however, these behaviors are often considered risky because they're commonly abused by attackers through malware. Attack surface reduction rules can constrain risky behaviors and help keep your organization safe. 
 
 To learn more, see [Use attack surface reduction rules to prevent malware infection](../defender-endpoint/attack-surface-reduction.md).
 
 ### Application control
 
-With application control capabilities, you can configure your organization’s devices to run only authorized apps, drivers, and signed code. Formerly referred to as device control or device guard, application control requires applications to earn trust by meeting certain requirements.
+With application control capabilities, you can configure your organization’s devices to run only authorized apps, drivers, and signed code. Formerly known as *device control* or *device guard*, application control requires applications to earn trust by meeting certain requirements.
 
 To learn more, see [Windows Defender Application Control](/windows/security/threat-protection/windows-defender-application-control/wdac-and-applocker-overview).
 
