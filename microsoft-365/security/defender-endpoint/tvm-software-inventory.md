@@ -34,7 +34,7 @@ ms.technology: mde
 
 The software inventory in threat and vulnerability management is a list of known software in your organization. The default filter on the software inventory page displays all software with official [Common Platform Enumerations (CPE)](https://nvd.nist.gov/products/cpe). The view includes details such as the name of the vendor, number of weaknesses, threats, and number of exposed devices.
 
-You can remove the CPE available filter, to gain further visibility and increase your search scope across all installed software in your organization. This means all software, including software without a CPE, will now display in the software inventory list.
+You can remove the **CPE Available** filter, to gain further visibility and increase your search scope across all installed software in your organization. This means all software, including software without a CPE, will now display in the software inventory list.
 
 > [!NOTE]
 > As CPEs are used by vulnerability management to identify the software and any vulnerabilities, even though software products without a CPE will be shown in the software inventory page, they will not be supported by threat and vulnerability management and information like, exploits, number of exposed devices, and weaknesses won't be available for them.
