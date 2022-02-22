@@ -59,10 +59,10 @@ You can choose to exclude a single device or multiple devices at the same time.
 
 You can also exclude the device from the device page itself.
 
-It can take up to 10 hours for a device to be fully excluded from vulnerability management views and data.
-
 > [!NOTE]
 > Excluding active devices is not recommended, since it is especially risky to not have visibility into their vulnerability info. If a device is active and you try to exclude it, you’ll get a warning message and a confirmation pop-up asking if you are sure you want to exclude an active device.
+
+It can take up to 10 hours for a device to be fully excluded from vulnerability management views and data.
 
 Excluded devices are still visible in the Device inventory list. You can use the **Excluded** filter to view the relevant list of devices.
 
@@ -74,9 +74,9 @@ You can also choose to exclude multiple devices at the same time:
 
 1. Go to the **Device inventory** page and select the devices to exclude.
 
-2. From the actions bar, select **Exclude**
+2. From the actions bar, select **Exclude**.
 
-3. Choose a justification and select **Exclude device**
+3. Choose a justification and select **Exclude device**.
 
 If you select multiple devices in the device list with different exclusion statuses, the exclude selected devices flyout will provide you details on how many of the selected devices are already excluded. You can exclude the devices again, but the justification and notes will be overridden.
 
