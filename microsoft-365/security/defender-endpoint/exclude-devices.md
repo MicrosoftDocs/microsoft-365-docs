@@ -36,7 +36,7 @@ Even though the device exclusion feature removes the device data from vulnerabil
 
 ## How to exclude a device
 
-You can exclude one device or multiple devices at the same time.
+You can choose to exclude a single device or multiple devices at the same time.
 
 ### Exclude a single device
 
@@ -44,6 +44,8 @@ You can exclude one device or multiple devices at the same time.
 2. Select **Exclude** from the action bar on the device inventory page or from the response actions menu in the device flyout.
 
 ![Image of exclude device menu option.](images/exclude-devices-menu.png)
+
+![Image of exclude device.](images/exclude-device.png)
 
  3. Select a justification:
 
@@ -54,8 +56,6 @@ You can exclude one device or multiple devices at the same time.
     - Other
 
 4. Type a note and select **Exclude device**.
-
-![Image of exclude device.](images/exclude-device.png)
 
 You can also exclude the device from the device page itself.
 
