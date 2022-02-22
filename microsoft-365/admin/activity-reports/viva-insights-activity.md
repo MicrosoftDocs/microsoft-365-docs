@@ -40,3 +40,6 @@ You can get a view into your user's Viva Insights activity by looking at the *
 
 Active users are users that have engaged with at least one Viva Insights feature that day. This includes dwelling for more than 20 seconds on any Viva Insight email, clicking or taking an action on any Insights surfacing, or visiting the Viva Insights app in Teams, Outlook add-in, or web dashboards. 
 
+## View the Viva Insights deployment guide
+You can click **Boost adoption of Viva Insights** to view the [Viva Insights Deployment guide](https://docs.microsoft.com/en-US/viva/insights/personal/setup/deployment-guide).
+
