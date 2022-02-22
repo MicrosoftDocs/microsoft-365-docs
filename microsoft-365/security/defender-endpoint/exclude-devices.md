@@ -21,6 +21,7 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
@@ -35,7 +36,9 @@ Even though the device exclusion feature removes the device data from vulnerabil
 
 ## How to exclude a device
 
-You can exclude one device or multiple devices at the same time. To exclude a single device:
+You can exclude one device or multiple devices at the same time.
+
+### Exclude a single device
 
 1. Go to the **Device inventory** page and select the device to exclude.
 2. Select **Exclude** from the action bar on the device inventory page or from the response actions menu in the device flyout.
@@ -65,7 +68,7 @@ Excluded devices are still visible in the Device inventory list. You can use
 
 ![Image of exclude device.](images/exclusion-state.png)
 
-## Bulk device exclusion
+### Bulk device exclusion
 
 You can also choose to exclude multiple devices at the same time:
 
