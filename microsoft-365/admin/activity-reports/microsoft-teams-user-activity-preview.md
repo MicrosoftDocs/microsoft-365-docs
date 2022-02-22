@@ -36,7 +36,7 @@ You can view the user activity in the Teams report by choosing the **User activi
 
 Select **Choose columns** to add or remove columns from the report.  <br/> ![Teams user activity report - choose columns.](../../media/6d3c013e-2c5e-4d66-bb41-998aa4bd1c20.png)
 
-You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you will need to export the data. The exported format for **audio time**, **video time**, and **screen share time** follows ISO8601 duration format.
+You can also export the report data into an Excel .csv file by selecting the **Export** link. This exports data of all users and enables you to do simple sorting and filtering for further analysis. If you have less than 2000 users, you can sort and filter within the table in the report itself. If you have more than 2000 users, in order to filter and sort, you'll need to export the data. The exported format for **audio time**, **video time**, and **screen share time** follows ISO8601 duration format.
 
 The **Microsoft Teams user activity** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated).
 
@@ -60,6 +60,6 @@ To ensure data quality, we perform daily data validation checks for the past thr
 |Meetings participated scheduled one-time  <br/> |The number of the one-time scheduled meetings a user participated in during the specified time period.  <br/> |
 |Meetings participated scheduled recurring  <br/> |The number of the recurring meetings a user participated in during the specified time period.  <br/> |
 |Is licensed  <br/> |Selected if the user is licensed to use Teams. <br/>|
-|Other activity  <br/>|The User is active but has performed other activities than exposed action types offered in the report (sending or replying to channel messages and chat messages, scheduling or participating in 1:1 calls and meetings). Examples actions are when a user changes the Teams status or the Teams status message or opens a Channel Message post but does not reply.  <br/>|
-|Unclassified meetings <br/>|The one which cannot be classified as schedule or recurring or ad hoc. These are  short in number and mostly can't be identified because of tampered telemetry information. |
+|Other activity  <br/>|The User is active but has performed other activities than exposed action types offered in the report (sending or replying to channel messages and chat messages, scheduling or participating in 1:1 calls and meetings). Examples actions are when a user changes the Teams status or the Teams status message or opens a Channel Message post but doesn't reply.  <br/>|
+|Unclassified meetings <br/>|The one that can’t be classified as schedule or recurring or ad hoc. These are  short in number and mostly can't be identified because of tampered telemetry information. |
 |||

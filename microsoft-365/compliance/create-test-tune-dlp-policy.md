@@ -72,13 +72,13 @@ Here's a list of MIP role groups that are in preview. To learn more about the, s
 
 DLP finds sensitive information by regular expression (RegEx) pattern matching, in combination with other indicators such as the proximity of certain keywords to the matching patterns. For example, a VISA credit card number has 16 digits. But, those digits can be written in different ways, such as 1111-1111-1111-1111, 1111 1111 1111 1111, or 1111111111111111.
 
-Any 16-digit string is not necessarily a credit card number, it could be a ticket number from a help desk system, or a serial number of a piece of hardware. To tell the difference between a credit card number and a harmless 16-digit string, a calculation is performed (checksum) to confirm that the numbers match a known pattern from the various credit card brands.
+Any 16-digit string isn't necessarily a credit card number, it could be a ticket number from a help desk system, or a serial number of a piece of hardware. To tell the difference between a credit card number and a harmless 16-digit string, a calculation is performed (checksum) to confirm that the numbers match a known pattern from the various credit card brands.
 
 If DLP finds keywords such as "VISA" or "AMEX", near date values that might be the credit card expiry date, DLP also uses that data to help it decide whether the string is a credit card number or not.
 
 In other words, DLP is smart enough to recognize the difference between these two strings of text in an email:
 
-- "Can you order me a new laptop. Use my VISA number 1111-1111-1111-1111, expiry 11/22, and send me the estimated delivery date when you have it."
+- "Can you order me a new laptop. Use my VISA number 1111-1111-1111-1111, expiry 11/22, and send me the estimated delivery date when you've it."
 - "My laptop serial number is 2222-2222-2222-2222 and it was purchased on 11/2010. By the way, is my travel visa approved yet?"
 
 See [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) that explains how each information type is detected.
@@ -101,7 +101,7 @@ Give your new DLP policy a name. The default name will match the DLP policy temp
 
 ![Option to name your policy.](../media/DLP-create-test-tune-name-policy.png)
 
-Choose the locations that the policy will apply to. DLP policies can apply to Exchange Online, SharePoint Online, and OneDrive for Business. I am going to leave this policy configured to apply to all locations.
+Choose the locations that the policy will apply to. DLP policies can apply to Exchange Online, SharePoint Online, and OneDrive for Business. I'm going to leave this policy configured to apply to all locations.
 
 ![Option to choose all locations.](../media/DLP-create-test-tune-choose-locations.png)
 
@@ -109,9 +109,9 @@ At the first **Policy Settings** step, just accept the defaults for now. You can
 
 ![Options to customize the type of content to protect.](../media/DLP-create-test-tune-default-customization-settings.png)
 
-After clicking Next,** you'll be presented with an more **Policy Settings** page with more customization options. For a policy that you are just testing, here's where you can start to make some adjustments.
+After clicking Next,** you'll be presented with a more **Policy Settings** page with more customization options. For a policy that you're just testing, here's where you can start to make some adjustments.
 
-- I've turned off policy tips for now, which is a reasonable step to take if you're just testing things out and don't want to display anything to users yet. Policy tips display warnings to users that they're about to violate a DLP policy. For example, an Outlook user will see a warning that the file they've attached contains credit card numbers and will cause their email to be rejected. The goal of policy tips is to stop the non-compliant behavior before it happens.
+- I've turned off policy tips for now, which is a reasonable step to take if you're just testing out things and don't want to display anything to users yet. Policy tips display warnings to users that they're about to violate a DLP policy. For example, an Outlook user will see a warning that the file they've attached contains credit card numbers and will cause their email to be rejected. The goal of policy tips is to stop the non-compliant behavior before it happens.
 - I've also decreased the number of instances from 10 to 1, so that this policy will detect any sharing of Australian PII data, not just bulk sharing of the data.
 - I've also added another recipient to the incident report email.
 
@@ -131,7 +131,7 @@ As an example, the DLP policy I created for this article will detect Australian 
 
 ![Documentation on Australia Tax File Number.](../media/DLP-create-test-tune-Australia-Tax-File-Number-doc.png)
  
-To demonstrate TFN detection in a rather blunt manner, an email with the words "Tax file number" and a nine digit string in close proximity will sail through without any issues. The reason it does not trigger the DLP policy is that the nine digit string must pass the checksum that indicates it is a valid TFN and not just a harmless string of numbers.
+To demonstrate TFN detection in a rather blunt manner, an email with the words "Tax file number" and a nine digit string in close proximity will sail through without any issues. The reason it doesn't trigger the DLP policy is that the nine digit string must pass the checksum that indicates it's a valid TFN and not just a harmless string of numbers.
 
 ![Australia tax file number that does not pass checksum.](../media/DLP-create-test-tune-email-test1.png)
 
@@ -143,7 +143,7 @@ The incident report email includes the type of sensitive information that was de
 
 ![Incident report showing tax file number detected.](../media/DLP-create-test-tune-email-incident-report.png)
 
-If you leave your DLP policy in test mode and analyze the incident report emails, you can start to get a feel for the accuracy of the DLP policy and how effective it will be when it is enforced. In addition to the incident reports, you can [use the DLP reports](view-the-dlp-reports.md) to see an aggregated view of policy matches across your tenant.
+If you leave your DLP policy in test mode and analyze the incident report emails, you can start to get a feel for the accuracy of the DLP policy and how effective it will be when it's enforced. In addition to the incident reports, you can [use the DLP reports](view-the-dlp-reports.md) to see an aggregated view of policy matches across your tenant.
 
 ## Tune a DLP policy
 
@@ -166,7 +166,7 @@ When editing a rule within a DLP policy, you can change:
 - The conditions, including the type and number of instances of sensitive data that will trigger the rule.
 - The actions that are taken, such as restricting access to the content.
 - User notifications, which are policy tips that are displayed to the user in their email client or web browser.
-- User overrides determines whether users can choose to proceed with their email or file sharing anyway.
+- User overrides determine whether users can choose to proceed with their email or file sharing anyway.
 - Incident reports, to notify administrators.
 
 ![Options to edit parts of a rule.](../media/DLP-create-test-tune-editing-options.png)
@@ -187,7 +187,7 @@ After saving those changes to the policy settings, I also need to return to the 
 
 ![Option to show policy tips in test mode.](../media/DLP-create-test-tune-show-policy-tips.png)
 
-On the server side (or cloud side if you prefer), the change may not take effect immediately, due to various processing intervals. If you're making a DLP policy change that will display new policy tips to a user, the user may not see the changes take effect immediately in their Outlook client, which checks for policy changes every 24 hours. If you want to speed things up for testing, you can use this registry fix to [clear the last download time stamp from the PolicyNudges key](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451). Outlook will download the latest policy information the next time you restart it and begin composing an email message.
+On the server side (or cloud side if you prefer), the change may not take effect immediately, due to various processing intervals. If you're making a DLP policy change that will display new policy tips to a user, the user may not see the changes take effect immediately in their Outlook client, which checks for policy changes every 24 hours. If you want to speed up things for testing, you can use this registry fix to [clear the last download time stamp from the PolicyNudges key](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451). Outlook will download the latest policy information the next time you restart it and begin composing an email message.
 
 If you have policy tips enabled, the user will begin to see the tips in Outlook, and can report false positives to you when they occur.
 
@@ -195,9 +195,9 @@ If you have policy tips enabled, the user will begin to see the tips in Outlook,
 
 ## Investigate false positives
 
-DLP policy templates are not perfect straight out of the box. It's likely that you'll find some false positives occurring in your environment, which is why it's so important to ease your way into a DLP deployment, taking the time to adequately test and tune your policies.
+DLP policy templates aren't perfect straight out of the box. It's likely that you'll find some false positives occurring in your environment, which is why it's so important to ease your way into a DLP deployment, taking the time to adequately test and tune your policies.
 
-Here's an example of a false positive. This email is quite harmless. The user is providing their mobile phone number to someone, and including their email signature.
+Here's an example of a false positive. This email is harmless. The user is providing their mobile phone number to someone, and including their email signature.
 
 ![Email showing false positive information.](../media/DLP-create-test-tune-false-positive-email.png)
  

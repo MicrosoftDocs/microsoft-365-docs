@@ -31,7 +31,7 @@ description: "How to protect your business email and data from cyberthreats, inc
 
 # Top 10 ways to secure Microsoft 365 for business plans
 
-If you are a small or medium-size organization using one of Microsoft's business plans and your type of organization is targeted by cybercriminals and hackers, use the guidance in this article to increase the security of your organization. This guidance helps your organization achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598).
+If you're a small or medium-size organization using one of Microsoft's business plans and your type of organization is targeted by cybercriminals and hackers, use the guidance in this article to increase the security of your organization. This guidance helps your organization achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598).
 
 ## Watch: Overview of security
 
@@ -58,7 +58,7 @@ Microsoft recommends that you complete the tasks listed in the following table t
 
 If you have Microsoft Business Premium, the quickest way to setup security and begin collaborating safely is to follow the guidance in this library: [Microsoft 365 for smaller businesses and campaigns](../../campaigns/index.md). This guidance was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyberthreats launched by sophisticated hackers.
 
-Before you begin, check your [Microsoft 365 Secure Score](../../security/defender/microsoft-secure-score.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. With added insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting about your organization's security health.
+Before you begin, check your [Microsoft 365 Secure Score](../../security/defender/microsoft-secure-score.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You're given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. With added insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting about your organization's security health.
 
 ![Screenshot of Microsoft Secure Score.](../../media/secure-score.png)
 
@@ -163,7 +163,7 @@ To create a mail transport rule, view a [short training video](increase-threat-p
 |Apply this rule if . . .  <br/> |Any attachment . . . file extension matches . . .  <br/> |Any attachment . . . file extension matches . . .  <br/> |
 |Specify words or phrases  <br/> |Add these file types:  <br/> dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm  <br/> |Add these file types:  <br/> ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif  <br/> |
 |Do the following . . .  <br/> |Prepend a disclaimer  <br/> |Block the message . . . reject the message and include an explanation  <br/> |
-|Provide message text  <br/> |Do not open these types of files—unless you were expecting them—because the files may contain malicious code and knowing the sender isn't a guarantee of safety.  <br/> ||
+|Provide message text  <br/> |Don't open these types of files—unless you were expecting them—because the files may contain malicious code and knowing the sender isn't a guarantee of safety.  <br/> ||
    
 > [!TIP]
 > You can also add the files you want to block to the Anti-malware list in [step 4](#4-raise-the-level-of-protection-against-malware-in-mail).
@@ -227,13 +227,13 @@ In Outlook.com, select **Protect** in the email. The default protection is **Do 
 
 If the recipient has Outlook 2013 or Outlook 2016 and a Microsoft email account, they'll see an alert about the item's restricted permissions in the Reading pane. After opening the message, the recipient can view the message just like any other.
 
-If the recipient is using another email client or email account, such as Gmail or Yahoo, they'll see a link that lets them either sign in to read the email message or request a one-time passcode to view the message in a web browser. If users aren't receiving the email, have them check their Spam or Junk folder.
+If the recipient is using another email client or email account, such as Gmail or Yahoo, they'll see a link that lets them either sign-in to read the email message or request a one-time passcode to view the message in a web browser. If users aren't receiving the email, have them check their Spam or Junk folder.
 
 For more information, see [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980).
 
 ## 8. Protect your email from phishing attacks
 
-If you've configured one or more custom domains for your Microsoft 365 environment, you can configure targeted anti-phishing protection. Anti-phishing protection, a part of Microsoft Defender for Office 365, can help protect your organization from malicious impersonation-based phishing attacks and other phishing attacks. If you haven't configured a custom domain, you do not need to do this.
+If you've configured one or more custom domains for your Microsoft 365 environment, you can configure targeted anti-phishing protection. Anti-phishing protection, a part of Microsoft Defender for Office 365, can help protect your organization from malicious impersonation-based phishing attacks and other phishing attacks. If you haven't configured a custom domain, you don't need to do this.
 
 We recommend that you get started with this protection by creating a policy to protect your most important users and your custom domain.
 
@@ -247,12 +247,12 @@ To create an anti-phishing policy in Defender for Office 365, view a [short trai
 
 4. Specify the name, description, and settings for your policy as recommended in the chart below. For more information, see [Learn about anti-phishing policy in Microsoft Defender for Office 365 options](../../security/office-365-security/set-up-anti-phishing-policies.md).
 
-5. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
+5. After you've reviewed your settings, select **Create this policy** or **Save**, as appropriate.
 
 |Setting or option|Recommended setting|
 |---|---|
 |Name|Domain and most valuable campaign staff|
-|Description|Ensure most important staff and our domain are not being impersonated.|
+|Description|Ensure most important staff and our domain aren't being impersonated.|
 |Add users to protect|Select **+ Add a condition, The recipient is**. Type user names or enter the email address of the candidate, campaign manager, and other important staff members. You can add up to 20 internal and external addresses that you want to protect from impersonation.|
 |Add domains to protect|Select **+ Add a condition, The recipient domain is**. Enter the custom domain associated with your Microsoft 365 subscription, if you defined one. You can enter more than one domain.|
 |Choose actions|If email is sent by an impersonated user: select **Redirect message to another email address**, and then type the email address of the security administrator; for example, securityadmin@contoso.com. <br/> If email is sent by an impersonated domain: select **Quarantine message**.|
@@ -265,7 +265,7 @@ For more information, see [Set up anti-phishing policies in Defender for Office 
 
 ## 9: Protect against malicious attachments and files with Safe Attachments
 
-People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Microsoft Defender for Office 365 includes Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
+People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Microsoft Defender for Office 365 includes Safe Attachment protection, but this protection isn't turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
 
 To create a Safe attachment policy, view a [short training video](increase-threat-protection.md), or complete the following steps:
 
@@ -277,7 +277,7 @@ To create a Safe attachment policy, view a [short training video](increase-threa
 
 4. Apply the settings in the following table.
 
-5. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
+5. After you've reviewed your settings, select **Create this policy** or **Save**, as appropriate.
 
 |Setting or option|Recommended setting|
 |---|---|

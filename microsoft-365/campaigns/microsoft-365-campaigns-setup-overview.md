@@ -45,7 +45,7 @@ For all organizations, bump up security protection by: [protecting admin account
 
 ## Everyone: Set up your devices
 
-Users will need to take a few minutes to set up devices to work with this environment. For your key users (those who are the highest value targets for hackers), you can set up and pre-configure new devices. This helps them to get started when they sign in with their Microsoft 365 credentials.
+Users will need to take a few minutes to set up devices to work with this environment. For your key users (who are the highest value targets for hackers), you can set up and pre-configure new devices. It helps them to get started when they sign in with their Microsoft 365 credentials.
 
 ![User device setup process.](../media/m365-democracy-user-device-setup.png)
   

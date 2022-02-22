@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: "Learn how to reset password and send a email to a new Microsoft 365 user."
+description: "Learn how to reset password and send an email to a new Microsoft 365 user."
 ---
 
 # Resend a user's password - Admin Help
@@ -40,7 +40,7 @@ You must be an [global admin or password administrator](about-admin-roles.md) to
 
 3. Follow the instructions on the **Reset password** page to auto-generate a new password for the user or create one for them, and then select **Reset**.  
 
-4. Enter an email address the user can get to so they receive the new password, and follow up with them to make sure they got it.
+4. Enter an email address the user can get to, so they receive the new password, and follow up with them to make sure they got it.
 
 ## Related content
 

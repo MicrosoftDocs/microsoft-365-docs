@@ -38,7 +38,7 @@ After you've saved and accessed all the former employee's user data, you can del
 2. Select the name of the employee that you want to delete.
 3. Under the user's name, select **Delete user**. Choose the options you want for this user, and then select **Delete user**. If you've already given another user access to this user's email and OneDrive, you don't have to do it again here.
 
-When you delete a user, the account becomes inactive for approximately 30 days. You have until then to restore the account before it is permanently deleted.
+When you delete a user, the account becomes inactive for approximately 30 days. You've until then to restore the account before it's permanently deleted.
 
 ## Watch: Delete a former employee's user account
 
