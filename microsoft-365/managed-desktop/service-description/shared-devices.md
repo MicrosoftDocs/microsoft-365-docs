@@ -44,12 +44,12 @@ Shared device mode isn't a good choice in these situations:
 
 Whether you or a partner are handling enrollment, you can choose to use shared device mode.
 
-If you're enrolling devices yourself, follow the steps in [Register new devices yourself](../get-started/register-devices-self.md), and then add them to the **Modern Workplace Devices - Shared Device Mode** group.
+If you're enrolling devices yourself, follow the steps in [Manual registration](../get-started/manual-registration.md), and then add them to the **Modern Workplace Devices - Shared Device Mode** group.
 
 > [!WARNING]
 > Do not try to convert any existing Microsoft Managed Desktop devices to shared device mode by simply adding them to this group. The policies that are applied can potentially cause OneDrive files to be permanently lost.
 
-If you're having a partner enroll devices, follow the steps in [Steps for Partners to register devices](../get-started/register-devices-partner.md), but append **-Shared** to the group tag, as shown in the following table:
+If you're having a partner enroll devices, follow the steps in [Partner registration](../get-started/partner-registration.md), but append **-Shared** to the group tag, as shown in the following table:
 
 | Device profile | Autopilot group tag (standard mode) | Group tag (shared device mode) |
 | ----- | ----- | ----- |
