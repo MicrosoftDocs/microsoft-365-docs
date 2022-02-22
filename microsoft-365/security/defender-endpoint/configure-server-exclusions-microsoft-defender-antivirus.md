@@ -95,6 +95,11 @@ This section lists the default exclusions for all roles in Windows Server 2016, 
 - `%windir%\SoftwareDistribution\Datastore\*\Edb\*.jrs`
 - `%windir%\SoftwareDistribution\Datastore\*\Res\*.log`
 
+##### Update Orchestrator files
+
+- `%ProgramData%\USOPrivate\UpdateStore\*.xml`
+- `%ProgramData%\USOPrivate\UpdateStore\store.db`
+
 ##### Windows Security files
 
 - `%windir%\Security\database\*.chk`
