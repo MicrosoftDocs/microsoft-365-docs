@@ -61,8 +61,8 @@ As an admin, you might have already configured other controls to allow or block 
 
 Remote domain settings and mail flow rules are independent of the settings in outbound spam filter policies. For example:
 
-- You allow automatic forwarding for an external domain by adding the same to Remote Domains, but the automatic forwarding in outbound spam filter policy is set to **Off**. In this example, automatically forwarded messages are blocked.
-- You allow automatic forwarding for an external domain by adding the same to Remote Domains, but the automatic forwarding in outbound spam filter policy is set to **Automatic - System-controlled**. In this example, automatically forwarded messages are allowed.
+- You allow automatic forwarding for an external domain by configuring the settings in remote domains, but the automatic forwarding in outbound spam filter policy is set to **Off**. In this example, automatically forwarded messages are blocked.
+- You allow automatic forwarding for an external domain by configuring the settings in remote domains, but the automatic forwarding in outbound spam filter policy is set to **Automatic - System-controlled**. In this example, automatically forwarded messages are allowed.
 - You allow automatic forwarding in outbound spam filter policies, but you use mail flow rules or remote domain settings to block automatically forwarded email. In this example, the mail flow rules or remote domain settings will block automatically forwarded messages.
 
 This feature independence allows you to (for example) allow automatic forwarding in outbound spam filter policies, but use remote domains to control the external domains that users can forward messages to.
