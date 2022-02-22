@@ -193,13 +193,13 @@ The three options are listed with the equivalent values for the PowerShell advan
 
 For more information about these configuration options, see [Change how members can share](/microsoft-365/community/sharepoint-security-a-team-effort#change-how-members-can-share) from the SharePoint community documentation.
 
-
 Example, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
 
 ````powershell
 Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{MembersCanShare="MemberShareNone"}
 ````
 
+For more help in specifying PowerShell advanced settings, see [PowerShell tips for specifying the advanced settings](sensitivity-labels-default-sharing-link.md#powershell-tips-for-specifying-the-advanced-settings).
 
 ## Sensitivity label management
 
