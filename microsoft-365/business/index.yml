@@ -72,8 +72,8 @@ conceptualContent:
         - url: ../admin/setup/plan-your-setup.md
           itemType: how-to-guide
           text: 2. Plan your setup and configuration
-        - url: ../admin/setup/business-set-up.md
-          itemType: video
+        - url: ../business-premium/m365bp-setup.md
+          itemType: how-to-guide
           text: 3. Set up Microsoft 365 Business Premium
         - url: ../business-premium/m365bp-setup.md
           itemType: how-to-guide
