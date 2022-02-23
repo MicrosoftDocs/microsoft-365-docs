@@ -328,12 +328,20 @@
          href: ../defender-business/index.yml
    - name: Parking lot items
      items:
-      - name: Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
-        href: turn-on-mdo-for-spo-odb-and-teams.md
-      - name: Microsoft 365 Defender portal overview
-        href: ../defender/microsoft-365-defender.md
-      - name: Email analysis in investigations
-        href: email-analysis-investigations.md
+      - name: Defender for Office 365 STUFF
+        items:
+        - name: Microsoft 365 Defender portal overview
+          href: ../defender/microsoft-365-defender.md
+        - name: Security Dashboard overview
+          href: security-dashboard.md
+        - name: How threat investigation and response works
+          href: office-365-ti.md
+        - name: Email analysis in investigations
+          href: email-analysis-investigations.md
+      - name: Office 365 security
+        items:
+        - name: Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
+          href: turn-on-mdo-for-spo-odb-and-teams.md
       - name: Anti-malware protection
         href: anti-malware-protection.md
       - name: Anti-spam protection
@@ -348,10 +356,6 @@
         href: safe-links.md
       - name: Outbound spam protection
         href: outbound-spam-controls.md
-      - name: Security Dashboard overview
-        href: security-dashboard.md
-      - name: How threat investigation and response works
-        href: office-365-ti.md
       - name: Office 365 Security Incident Response
         href: office365-security-incident-response-overview.md
       - name: Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
