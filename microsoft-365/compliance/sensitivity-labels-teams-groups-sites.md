@@ -13,6 +13,7 @@ ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkSPO
 search.appverid: 
 - MOE150
 - MET150
@@ -305,7 +306,7 @@ This series of commands lets you label multiple sites across your tenant with th
 
 ## View and manage sensitivity labels in the SharePoint admin center
 
-To view, sort, and search the applied sensitivity labels, use the **Active sites** page in the new SharePoint admin center. You might need to first add the **Sensitivity** column:
+To view, sort, and search the applied sensitivity labels, use <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a> in the new SharePoint admin center. You might need to first add the **Sensitivity** column:
 
 ![The Sensitivity column on the Active sites page.](../media/manage-site-sensitivity-labels.png)
 
