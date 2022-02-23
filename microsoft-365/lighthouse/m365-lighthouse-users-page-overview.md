@@ -33,13 +33,21 @@ From the Search users tab, you can quickly search across tenants for specific us
 
 ## Risky users tab
 
-The Risky Users tab shows user accounts across your tenants that have been flagged for risky behavior. Select any of the users to view more information on a detected risk or to mitigate a risk by resetting a user's password or blocking sign-in.
+The Risky Users tab shows user accounts across your tenants that have been flagged for risky behavior. Select any of the users to view more information on a detected risk or to mitigate a risk by resetting a user's password or blocking sign-in. For more information about risk types and detection, see [What is risk?](/azure/active-directory/identity-protection/concept-identity-protection-risks).
+
+The Risky Users tab also includes the following options:
+- **Export:** Select to export device compliance data to an Excel comma-separated values (.csv) file.
+- **Refresh:** Select to retrieve the most current device compliance data.
+- **Confirm user(s) compromised:** Select to confirm the user was compromised.
+- **Dismiss user(s) risk:** Select to dismiss the user risk.  
+- **Reset password:** Select to change or reset user password.
+- **Block Sign-in:** Select to prevent anyone from signing in as this user.
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-risky-users-tab.png" alt-text="Screenshot of the Risky users tab.":::
 
 ## Multifactor Authentication tab
 
-The Multifactor Authentication tab provides detailed information on the status of multifactor authentication (MFA) enablement across your tenants. Select any tenant in the list to see more details for that tenant, including which Conditional Access policies requiring MFA are already configured and which users have not yet registered for MFA.
+The Multifactor Authentication tab provides detailed information on the status of multifactor authentication (MFA) enablement across your tenants. Select any tenant in the list to see more details for that tenant, including which Conditional Access policies requiring MFA are already configured and which users haven't yet registered for MFA.
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-mfa-tab.png" alt-text="Screenshot of the Multifactor Authentication tab.":::
 
