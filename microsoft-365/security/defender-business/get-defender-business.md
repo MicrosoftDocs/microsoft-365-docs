@@ -29,6 +29,7 @@ If you don’t already have Microsoft Defender for Business, you can choose from
 
 - [Work with a Microsoft solution provider](#work-with-a-microsoft-solution-provider)
 - [Sign up for the preview program](#sign-up-for-the-preview-program)
+- 
 
 If you have signed up for a trial, after you receive your acceptance email, you can [activate your trial](#activate-your-trial), [view and manage users](#view-and-manage-users), and then proceed to your [next steps](#next-steps).
 
@@ -45,6 +46,12 @@ To find a solution provider in your area, take the following steps:
 3. In the **Search for products, services, skills, industries** box, put `Microsoft 365`, and then select **Go**.
 
 4. Review the list of results. Select a provider to learn more about their expertise and the services they provide. Your provider can help you sign up for Defender for Business.
+
+## Get Microsoft 365 Business Premium
+
+Beginning March 1, 2022, Defender for Business will start rolling out as part of Microsoft 365 Business Premium. 
+
+[Try or buy Microsoft 365 Business Premium](../../business-premium/get-microsoft-365-business-premium.md).
 
 ## Sign up for the preview program
 
