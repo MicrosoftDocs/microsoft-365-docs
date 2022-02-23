@@ -115,7 +115,7 @@ You can view software pages a few different ways:
 
 ## Report inaccuracy
 
-Report a false positive when you see any vague, inaccurate, or incomplete information. You can also report on security recommendations that have already been remediated.
+Report an inaccuracy when you see vulnerability information and assessment results that are incorrect.
 
 1. Open the software flyout on the Software inventory page.
 2. Select **Report inaccuracy**.
@@ -126,6 +126,9 @@ Report a false positive when you see any vague, inaccurate, or incomplete inform
     - the number of installed or exposed devices is wrong
 
 4. Fill in the requested details about the inaccuracy. This will vary depending on the issue you're reporting.
+
+![Report inaccuracy](images/report-inaccuracy-software.png)
+
 5. Select **Submit**. Your feedback is immediately sent to the threat and vulnerability management experts.
 
 ## Related articles
