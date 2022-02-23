@@ -49,8 +49,8 @@ The following table compares security features and capabilities in Defender for 
 | Feature/Capability | [Microsoft Defender for Business](mdb-overview.md)<br/>(standalone; currently in preview) | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(includes Defender for Business)) |
 |:---|:---|:---|
 | Email protection | Yes ([email scanning](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md) in Microsoft Defender Antivirus) | Yes <br/> [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) <br/>[Email scanning](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md) in Microsoft Defender Antivirus |
-| Antispam protection | Yes (for devices) | Yes (for Microsoft 365 email content, such as messages and attachments) |
-| Antimalware protection | Yes (for devices) | Yes (for Microsoft 365 email content, such as messages and attachments) |
+| Antispam protection | Yes (for devices) | Yes <br/>For devices<br/>For Microsoft 365 email content, such as messages and attachments |
+| Antimalware protection | Yes (for devices) | Yes <br/>For devices<br/>For Microsoft 365 email content, such as messages and attachments |
 | [Next-generation protection](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (antivirus and antimalware protection) | Yes (Microsoft Defender Antivirus is included in Windows 10 and later)  | Yes (Microsoft Defender Antivirus is included in Windows 10 and later) |
 | [Attack surface reduction](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(attack surface reduction rules and other protection)	| Yes (Attack surface reduction rules built into Windows 10 and later, plus centrally managed capabilities) | Yes (Attack surface reduction rules built into Windows 10 and later) |
 | [Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md) | Yes. Includes: <br/>- Behavior-based detection <br/>- Manual response actions <br/>- Live response	 | No |
