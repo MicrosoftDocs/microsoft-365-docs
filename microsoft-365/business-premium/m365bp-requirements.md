@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/19/2022
+ms.date: 02/23/2022
 ms.service: o365-administration
 ms.technology: mdb
 localization_priority: Normal
@@ -19,7 +19,7 @@ ms.collection:
 
 # Microsoft 365 Business Premium requirements
 
-The following table lists the basic requirements to configure and use Microsoft 365 Business Premium. <br/><br/>
+The following table lists the basic requirements for Microsoft 365 Business Premium. <br/><br/>
 
 | Requirement | Description |
 |:---|:---|
