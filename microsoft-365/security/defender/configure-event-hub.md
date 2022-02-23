@@ -23,19 +23,19 @@ ms.topic: article
 MS.technology: mde
 ---
 
-# Configure your Event Hub
+# Configure your Event Hubs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Learn how to configure your Event Hub so that it can ingest events from Microsoft 365 Defender.
+Learn how to configure your Event Hubs so that it can ingest events from Microsoft 365 Defender.
 
-## Set up the required Resource Provider in the Event Hub subscription
+## Set up the required Resource Provider in the Event Hubs subscription
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-1. Select **Subscriptions** > **{ Select the subscription the event hub will be deployed to }** > **Resource providers**.
+1. Select **Subscriptions** > **{ Select the subscription the event hubs will be deployed to }** > **Resource providers**.
 1. Verify that the **Microsoft.Insights** Provider is registered. Otherwise, register it.
 
 :::image type="content" source="../../media/f893db7a7b1f7aa520e8b9257cc72562.png" alt-text="The list of service providers page in the Microsoft Azure portal" lightbox="../../media/f893db7a7b1f7aa520e8b9257cc72562.png":::
@@ -63,7 +63,7 @@ Learn how to configure your Event Hub so that it can ingest events from Microsof
 > [!WARNING]
 > **You won't be able to access the client secret again so make sure to save it**.
 
-## Set up Event Hub namespace
+## Set up Event Hubs namespace
 
 1. Create an Event Hubs Namespace:
 
@@ -98,7 +98,7 @@ Instead of exporting all the Event Types (Tables) into one Event Hubs, you can e
 In this option, Microsoft 365 Defender will create Event Hubs for you.
 
 > [!NOTE]
-> If you are using an Event Hubs Namespace that is **not** part of an Event Hub Cluster, you will only be able to choose up to 10 Event Types (Tables) to export in each Export Settings you define, due to an Azure limitation of 10 Event Hubs per Event Hubs Namespace.
+> If you are using an Event Hubs Namespace that is **not** part of an Event Hubs Cluster, you will only be able to choose up to 10 Event Types (Tables) to export in each Export Settings you define, due to an Azure limitation of 10 Event Hubs per Event Hubs Namespace.
 
 For example:
 
