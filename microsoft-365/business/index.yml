@@ -75,9 +75,9 @@ conceptualContent:
         - url: ../business-premium/m365bp-setup.md
           itemType: how-to-guide
           text: 3. Set up Microsoft 365 Business Premium
-        - url: ../business-premium/m365bp-setup.md
+        - url: /admin/security-and-compliance/secure-your-business-data.md
           itemType: how-to-guide
-          text: 4. Set up your security features
+          text: 4. Secure your Microsoft 365 for business plan
   # Card
     - title: What is Microsoft 365 Lighthouse?
       links:
