@@ -60,7 +60,8 @@ Analysts then initiate investigations based on the **Priority** criteria set by 
 
 Incident prioritization might vary depending on the organization. NIST also recommends considering the functional and informational impact of the incident, and recoverability.
 
-One approach to triage is described below:
+
+An approach to triage is described below:
 
 1. Go to the [incidents](incidents-overview.md) page to initiate triage. Here you can see a list of incidents affecting your organization. By default, they are arranged from the most recent to the oldest incident. From here, you can also see different columns for each incident showing their severity, category, number of active alerts, and impacted entities, among others. You can customize the set of columns and sort the incident queue by some of these columns by selecting the column name. You can also filter the incident queue according to your needs. For a full list of available filters, see [Prioritize incidents](incident-queue.md#available-filters).
 
