@@ -6727,6 +6727,24 @@
       "source_path": "microsoft-365/admin/misc/secure-windows-10-devices.md",
       "redirect_url": "/microsoft-365/business-premium/m365bp-secure-windows-devices",
       "redirect_document_id": true
+    },
+    { "source_path": "microsoft-365/managed-desktop/get-started/register-devices-self.md",
+    "redirect_url": "/microsoft-365/managed-desktop/get-started/manual-registration",
+    "redirect_document_id": true
+    },
+    {
+    "source_path": "microsoft-365/managed-desktop/get-started/register-devices-partner.md",
+    "redirect_url": "/microsoft-365/managed-desktop/get-started/partner-registration",
+    "redirect_document_id": true
+    },
+    {
+    "source_path": "microsoft-365/managed-desktop/get-started/register-reused-devices-self.md",
+    "redirect_url": "/microsoft-365/managed-desktop/get-started/manual-registration-existing-devices",
+    "redirect_document_id": true
+    },    
+    {
+    "source_path": "microsoft-365/managed-desktop/get-started/set-up-devices.md",
+    "redirect_url": "/microsoft-365/managed-desktop/get-started/prepare-devices",
     }
   ]
 }
