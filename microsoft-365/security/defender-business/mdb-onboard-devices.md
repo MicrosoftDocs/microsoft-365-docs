@@ -39,6 +39,12 @@ With Microsoft Defender for Business (preview), you have several options to choo
 
 1. See your options for [onboarding devices](#device-onboarding-methods), and select a method.
 
+   - [Automatic onboarding for Windows devices enrolled in Microsoft Endpoint Manager](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)
+   - [Microsoft Defender for Business security configuration](#microsoft-defender-for-business-security-configuration)
+   - [Microsoft Endpoint Manager](#microsoft-endpoint-manager)
+   - [Local script in Defender for Business](#local-script-in-defender-for-business)
+   - [Other methods](#onboard-devices-using-a-method-not-listed-in-this-article)
+
 2. [Run a detection test](#run-a-detection-test) for newly onboarded Windows devices.
 
 3. [See your next steps](#next-steps). 
@@ -99,10 +105,7 @@ This method is not recommended for production deployment, but is useful for onbo
    - macOS devices: [Manual deployment for Microsoft Defender for Endpoint on macOS](../defender-endpoint/mac-install-manually.md#client-configuration)
    - Linux devices: [Deploy Microsoft Defender for Endpoint on Linux manually](../defender-endpoint/linux-install-manually.md#client-configuration)
 
-> [!IMPORTANT]
-> If something goes wrong and your onboarding process fails, see [Microsoft Defender for Business (preview) troubleshooting](mdb-troubleshooting.yml).
-
-## Onboard devices using a method not listed here
+## Onboard devices using a method not listed in this article
 
 If you want to use another method that is not listed in this article to onboard devices, see [Onboarding and configuration tool options](../defender-endpoint/onboard-configure.md#onboarding-and-configuration-tool-options).
 
