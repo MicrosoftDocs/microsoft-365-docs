@@ -45,7 +45,7 @@ The **Weaknesses** page lists the software vulnerabilities your devices are expo
 
 Access the Weaknesses page a few different ways:
 
-- Selecting **Weaknesses** from the **Vulnerability management** navigation menu in the [Microsoft 365 Defender portal] (portal-overview.md)
+- Selecting **Weaknesses** from the **Vulnerability management** navigation menu in the [Microsoft 365 Defender portal](portal-overview.md)
 - Global search
 
 ### Navigation menu
