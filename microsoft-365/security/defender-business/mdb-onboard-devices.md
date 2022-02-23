@@ -37,13 +37,12 @@ With Microsoft Defender for Business (preview), you have several options to choo
 
 ## What to do
 
-1. See your options for [onboarding devices](#device-onboarding-methods), and select a method.
+1. See your options for [onboarding devices](#device-onboarding-methods), and select one of the following methods: 
 
    - [Automatic onboarding for Windows devices enrolled in Microsoft Endpoint Manager](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)
    - [Microsoft Defender for Business security configuration](#microsoft-defender-for-business-security-configuration)
-   - [Microsoft Endpoint Manager](#microsoft-endpoint-manager)
+   - [Microsoft Endpoint Manager (Microsoft Intune)](#microsoft-endpoint-manager)
    - [Local script for evaluating Defender for Business](#local-script-in-defender-for-business)
-   - [Other methods](#onboard-devices-using-a-method-not-listed-in-this-article)
 
 2. [Run a detection test](#run-a-detection-test) for newly onboarded Windows devices.
 
@@ -102,7 +101,8 @@ See [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enroll
 
 You can use a local script to onboard some Windows, macOS, and Linux devices to evaluate how Defender for Business will work for you. When you run the onboarding script on a device, it creates a trust with Azure Active Directory, enrolls the device in Microsoft Endpoint Manager, and onboards the device to Defender for Business. This method is useful for onboarding devices in Defender for Business and for onboarding a few devices at a time. Each script can be used on up to 10 devices.
 
-This method is not recommended for production deployment, but is useful for onboarding up to 10 devices per script.
+> [!NOTE]
+> This method is not recommended for production deployment, but is useful for onboarding up to 10 devices per script.
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
@@ -117,10 +117,6 @@ This method is not recommended for production deployment, but is useful for onbo
    - Windows devices: [Onboard Windows devices using a local script](../defender-endpoint/configure-endpoints-script.md#onboard-devices)
    - macOS devices: [Manual deployment for Microsoft Defender for Endpoint on macOS](../defender-endpoint/mac-install-manually.md#client-configuration)
    - Linux devices: [Deploy Microsoft Defender for Endpoint on Linux manually](../defender-endpoint/linux-install-manually.md#client-configuration)
-
-## Onboard devices using a method not listed in this article
-
-If you want to use another method that is not listed in this article to onboard devices, see [Onboarding and configuration tool options](../defender-endpoint/onboard-configure.md#onboarding-and-configuration-tool-options).
 
 ## Run a detection test
 
