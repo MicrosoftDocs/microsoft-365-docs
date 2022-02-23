@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/16/2022
+ms.date: 02/21/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -43,7 +43,6 @@ With Microsoft Defender for Business (preview), you have several options to choo
     - [Automatic onboarding for Windows devices enrolled in Microsoft Endpoint Manager](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)
     - [A local script for Windows, macOS, and Linux devices](#onboard-devices-using-a-local-script-in-defender-for-business)
     - [Microsoft Endpoint Manager for computers, tablets, and phones](#onboard-devices-using-microsoft-endpoint-manager)
-    - [Group Policy for Windows devices](#onboard-windows-devices-using-group-policy)
     - [Another method not listed here](#onboard-devices-using-a-method-not-listed-here)
 
 3. [Run a detection test](#run-a-detection-test) for newly onboarded Windows devices.
@@ -61,7 +60,6 @@ The following table describes the most commonly used methods to onboard devices 
 | **Automatic onboarding**<br/>(*available to customers who are already using Microsoft Endpoint Manager*) | Automatic onboarding sets up a connection between Defender for Business (preview) and Microsoft Endpoint Manager, and then onboards Windows devices to Defender for Business (preview). Devices must already be enrolled in Endpoint Manager.<br/><br/>To learn more, see [Use automatic onboarding for Windows devices enrolled in Microsoft Endpoint Manager](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager). |
 | **Local script**<br/>(*recommended during preview; useful for onboarding a few devices at a time*)  | You can onboard computers to Defender for Business (preview) by using a script that you download and run on Windows, macOS, or Linux devices. The script sets up a trust with Azure Active Directory and enrolls the device.<br/><br/>To use this method, see [Onboard devices using a local script in Defender for Business](#onboard-devices-using-a-local-script-in-defender-for-business). |
 | **Microsoft Intune** or **Microsoft Endpoint Manager**<br/>(*available to customers who are already using Microsoft Intune or Endpoint Manager*) | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Mobile Device Management](/mem/intune/enrollment/device-enrollment) are part of Endpoint Manager. If you were already using Endpoint Manager before you got Defender for Business (preview), you can opt to continue using Endpoint Manager to onboard and manage devices<br/><br/>To use this method, see [Onboard devices using Microsoft Endpoint Manager](#onboard-devices-using-microsoft-endpoint-manager). |
-| **Group Policy** | If your organization is already using Group Policy, you can create GPOs and apply them to your organization's devices in Defender for Business (preview).<br/><br/>To learn more about this method, see [Onboard Windows devices using Group Policy](#onboard-windows-devices-using-group-policy). | 
 
 > [!IMPORTANT]
 > If something goes wrong and your onboarding process fails, see [Microsoft Defender for Business troubleshooting](mdb-troubleshooting.yml).
@@ -99,17 +97,9 @@ You can use a local script to onboard Windows, macOS, and Linux devices to Defen
 
 ## Onboard devices using Microsoft Endpoint Manager
 
-If you were already using Microsoft Intune before getting Defender for Business (preview), you can continue to use Microsoft Intune to onboard devices. With Endpoint Manager, you can onboard computers, tablets, and phones. 
+If you were already using Endpoint Manager (which includes Microsoft Intune) before you got Defender for Business (preview), you can continue to use Endpoint Manager to onboard devices. With Endpoint Manager, you can onboard computers, tablets, and phones, including iOS and Android devices.
 
 See [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment).
-
-## Onboard Windows devices using Group Policy
-
-[Group Policy](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831791(v=ws.11)) is an infrastructure that allows you to specify managed configurations for users and computers through Group Policy settings and Group Policy Preferences. A Group Policy object (GPO) is a logical object composed a Group Policy container and a Group Policy template. 
-
-If your organization is already using Group Policy to manage devices, you can use Group Policy to onboard devices to Defender for Business. If you're brand new to Group Policy,we recommend using another method, such as Endpoint Manager or a local script instead. 
-
-See [Onboard Windows devices using Group Policy](../defender-endpoint/configure-endpoints-gp.md).
 
 ## Onboard devices using a method not listed here
 
