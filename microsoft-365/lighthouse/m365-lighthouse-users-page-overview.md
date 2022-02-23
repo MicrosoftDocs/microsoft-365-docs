@@ -33,7 +33,7 @@ From the Search users tab, you can quickly search across tenants for specific us
 
 ## Risky users tab
 
-The Risky Users tab shows user accounts across your tenants that have been flagged for risky behavior. Select any of the users to view more information on a detected risk or to mitigate a risk by resetting a user's password or blocking sign-in.
+The Risky Users tab shows user accounts across your tenants that have been flagged for risky behavior. Select any of the users to view more information on a detected risk or to mitigate a risk by resetting a user's password or blocking sign-in. For more information about risk types and detection, see [What is risk?](/azure/active-directory/identity-protection/concept-identity-protection-risks).
 
 The Risky Users tab also includes the following options:
 - **Export:** Select to export device compliance data to an Excel comma-separated values (.csv) file.
