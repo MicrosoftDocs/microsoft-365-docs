@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: jweston-1
 ms.author: v-jweston
-ms.reviewer: oogunrinde, sugamar, jcedola
+ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
@@ -19,10 +19,10 @@ ms.collection: M365-security-compliance
 ms.date: 02/04/2022
 ---
 
-
 # Attack surface reduction rules reference
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -31,6 +31,7 @@ This article provides information about attack reduction rules:
 
 - [Supported operating system versions](#supported-operating-systems)
 - [Supported configuration management systems](#supported-configuration-management-systems)
+- [Per-rule alert and notification details](#per-rule-alert-and-notification-details)
 - [Per-rule-descriptions](#per-rule-descriptions)
   - Rule descriptions
   - GUIDs
@@ -41,11 +42,10 @@ This article provides information about attack reduction rules:
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The following table lists the supported operating systems for attack surface reduction rules that are currently prerelease product. The rules are listed alphabetical order.
+The following table lists the supported operating systems for attack surface reduction rules that are currently prerelease product. The rules are listed alphabetical order. Unless otherwise indicated, the minimum Windows&nbsp;10 build is version 1709 (RS3, build 16299) or later; the minimum Windows&nbsp;Server build is version is 1809 or later.
 
-> [!Note]
->
-> - Unless otherwise indicated, the minimum Windows&nbsp;10 build is version 1709 (RS3, build 16299) or later; the minimum Windows&nbsp;Server build is version is 1809 or later.
+> [!NOTE]
+> Attack surface reduction rules in Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 are available for devices onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 >
 
 | Rule name | Windows&nbsp;Server 2016 <sup>[[1](#fn1)]<sup></sup> | Windows&nbsp;Server 2012 R2 <sup>[[1](#fn1)]<sup></sup> |
@@ -66,7 +66,7 @@ The following table lists the supported operating systems for attack surface red
 |[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y |
 |[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) | N | N |
 |[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Y | Y |
-| **Rule name** | **Windows&nbsp;Server 2016** <sup>[[1](#fn1)]<sup></sup> | **Windows&nbsp;Server 2012 R2** <sup>[[1](#fn1)]<sup></sup> |
+|  |  |  |
 
 (<a id="fn1">1</a>) Refers to the modern, unified solution for Windows Server 2012 and 2016. For more information, see [Onboard Windows Servers to the Defender for Endpoint service](configure-server-endpoints.md).
 
@@ -78,12 +78,12 @@ The following table lists the supported operating systems for rules that are  cu
 
 > [!Note]
 >
-> - Unless otherwise indicated, the minimum Windows&nbsp;10 build is version 1709 (RS3, build 16299) or later; the minimum Windows&nbsp;Server build is version is 1809 or later.
+> Unless otherwise indicated, the minimum Windows&nbsp;10 build is version 1709 (RS3, build 16299) or later; the minimum Windows&nbsp;Server build is version is 1809 or later.
 >
 
 |Rule name|Windows&nbsp;10|Windows&nbsp;Server 2019|Windows&nbsp;Server|
 |---|:---:|:---:|:---:|
-|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y version 1803 (Semi-Annual Channel) or later | 
+|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br><br> version 1803 (Semi-Annual Channel) or later |
 |[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y version 1809 or later | Y | Y  <br><br> |
 |[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y <br><br> |
 |[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y version 1803 or later | Y <br><br> | Y <br><br> |
@@ -132,6 +132,53 @@ Links to information about configuration management system versions referenced i
 - [Microsoft Endpoint Manager CB 1710](/configmgr/core/servers/manage/updates)
 - [System Center Configuration Manager (SCCM) CB 1710](/configmgr/core/servers/manage/updates) <br>_SCCM is now Microsoft Endpoint Configuration Manager._
 
+## Per rule alert and notification details
+
+Toast notifications are generated for all rules in Block mode. Rules in any other mode will not generate toast notifications
+
+For rules with the “Rule State” specified:
+
+- ASR rules with \<ASR Rule, Rule State\> combinations are used to surface alerts (toast notifications) on Microsoft Defender for Endpoint only for devices at high-cloud block level. Devices not at high cloud block level will not generate alerts for any <ASR Rule, Rule State> combinations
+- EDR alerts are generated for ASR rules in the specified states, but only for devices at high cloud block level.
+
+| Rule name: | Rule state: | Generates alerts in EDR? <br> (Yes&nbsp;\|&nbsp;No) | Generates toast notifications? <br> (Yes&nbsp;\|&nbsp;No) |
+|---|:---:|:---:|:---:|
+|   |   |  _Only for devices at high-cloud block level_ | _In Block mode only_ |
+|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) |   | N  | Y |
+|[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Block  | Y <br> Requires device at high-cloud block level  | Y <br> Requires device at high-cloud block level |
+|[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) |   | N | Y |
+|[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) |   | N | Y |
+|[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) |   | Y <br> Requires device at high-cloud block level | Y <br> Requires device at high-cloud block level |
+|[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) |   | N | Y |
+|[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) |  Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level |
+|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Block | Y <br> Requires device at high-cloud block level  | Y <br> Requires device at high-cloud block level |
+|[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) |   | N | Y |
+|[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes)  |   | N | Y |
+|[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) |  |  N | Y |
+|[Block persistence through WMI event subscription](#block-persistence-through-wmi-event-subscription) |  Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level |
+|[Block process creations originating from PSExec and WMI commands](#block-process-creations-originating-from-psexec-and-wmi-commands) |   | N | Y |
+|[Block untrusted and unsigned processes that run from USB](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level |
+|[Block Win32 API calls from Office macros](#block-win32-api-calls-from-office-macros) |   | N | Y |
+|[Use advanced protection against ransomware](#use-advanced-protection-against-ransomware) | Audit&nbsp;\|&nbsp;Block | Y \| Y <br> Requires device at high-cloud block level  | N \| Y <br> Requires device at high-cloud block level |
+|   |   |   |   |
+  
+## ASR rule modes
+
+- **Not configured** or **Disable**: This is the state in which the ASR rule has not been enabled or has been disabled. The code for this state = 0.
+- **Block**: This is the state in which the ASR rule is enabled. The code for this state is 1.
+- **Audit**: This is the state in which the ASR rule is evaluated for its impactive behavior toward the organization or environment in which it is deployed. The code for this state is 2.
+- **Warn** This is the state in which the ASR rule is enabled and presents a notification to the end-user, but permits the end-user to bypass the block. The code for this state is 6.
+
+_Warn mode_ is a block-mode type that alerts users about potentially risky actions. Users can choose to bypass the block warning message and allow the underlying action. Users can select **OK** to enforce the block, or select the bypass option - **Unblock** - through the end-user pop-up toast notification that is generated at the time of the block. After the warning is unblocked, the operation is allowed until the next time the warning message occurs, at which time the end-user will need to reperform the action.
+
+If the allow button is clicked, the block will be suppressed for 24 hours. After 24 hours, the end-user will need to allow the block again. The warn mode for ASR rules is only supported for RS5+ (1809+) devices. If bypass is assigned to ASR rules on devices with older versions, the rule will be in blocked mode.
+
+You can also set a rule in warn mode via PowerShell by simply specifying the AttackSurfaceReductionRules_Actions as “Warn”. For example:
+
+```powershell
+-command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
+```
+
 ## Per rule descriptions
 
 ### Block abuse of exploited vulnerable signed drivers
@@ -147,6 +194,9 @@ The **Block abuse of exploited vulnerable signed drivers** rule does not block a
 > You can also configure this rule using [PowerShell](enable-attack-surface-reduction.md#powershell).
 >
 > To have a driver examined, use this Web site to [Submit a driver for analysis](https://www.microsoft.com/en-us/wdsi/driversubmission).
+
+<!--The above link is the 'only link' that exists for having drivers examined. The 'en-us' component is required to make the link work. Any alterations to this link will result in a 404.
+-->
 
 Intune Name: `Block abuse of exploited vulnerable signed drivers` (not yet available)
 

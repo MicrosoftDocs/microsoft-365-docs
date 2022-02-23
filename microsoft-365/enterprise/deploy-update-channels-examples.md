@@ -29,7 +29,7 @@ Choosing which update channels to use for Windows 10 and Microsoft 365 Apps can 
 
 |Customer/Channel Offering|Windows 10|Microsoft 365 Apps for Enterprise (Windows 10)|
 |:-------|:-------|:-----|
-|Right for highly technical users and developers. <p> Be the first to access the latest builds earliest in the development cycle with the new newest code. <p> There will be rough edges and some instability.|Dev|N/A|
+|Right for highly technical users and developers. <p> Be the first to access the latest builds earliest in the development cycle with the newest code. <p> There will be rough edges and some instability.|Dev|N/A|
 |Right for early adopters and IT Pros who want more reliable builds that are still in development. <p> See what’s coming up next and help validate new features.|Beta Channel|Beta Channel|
 |Right for those who want early access to upcoming releases. <p> Where companies preview and validate upcoming releases before broad deployment. <p> These are supported.|Release Preview|Current Channel (Preview) <p> Semi-Annual Enterprise Channel (Preview)|
 |
@@ -44,8 +44,8 @@ Click the link in the **Example** column to step through deployment stages and g
 
 |Customer/Channel Offering|Windows 10|Microsoft 365 Apps for Enterprise (Windows 10)|Example|
 |:-------|:-------|:-----|:-------|
-|Right for customers who want the latest releases as soon as they are ready.|Semi-Annual Channel|[Current Channel](/deployoffice/overview-update-channels#current-channel-overview)|[Latest releases](deploy-update-channels-examples-rapid-deploy.md)|
-|Right for enterprises who want the latest release with additional predictability.|Semi-Annual Channel|[Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview)||
+|Right for customers who want the latest releases as soon as they’re ready.|Semi-Annual Channel|[Current Channel](/deployoffice/overview-update-channels#current-channel-overview)|[Latest releases](deploy-update-channels-examples-rapid-deploy.md)|
+|Right for enterprises who want the latest release with more predictability.|Semi-Annual Channel|[Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview)||
 |Right for enterprises with need for extensive IT testing before each update.|Semi-Annual Channel|[Semi-Annual Enterprise Channel](/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview)||
 |
 
