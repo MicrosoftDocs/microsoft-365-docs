@@ -15,6 +15,7 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - admindeeplinkCOMPLIANCE
+- admindeeplinkSPO
 recommendations: false
 description: "Learn how to create a team with a unique sensitivity label for security."
 ---
@@ -156,11 +157,11 @@ To publish a sensitivity label:
 Once the label has been published, you must apply it to the team in order for the guest sharing and managed devices settings to take effect. This is done in the SharePoint admin center. Note, it may take some time for the label to become available after it's been published.
 
 To apply the sensitivity label
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-2. Under **Sites**, click **Active sites**.
-3. Click the site that is associated with team.
-4. On the **Policies** tab, under **Sensitivity**, click **Edit**.
-5. Select the label that you created, and then click **Save**.
+
+1. Open the SharePoint admin center, and under **Sites**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
+1. Select the site that is associated with team.
+1. On the **Policies** tab, under **Sensitivity**, select **Edit**.
+1. Select the label that you created, and then select **Save**.
 
 ## SharePoint settings
 
@@ -182,13 +183,13 @@ The guest sharing setting that you chose when you created the label (which only 
 We'll also update the default sharing link type to reduce the risk of accidentally sharing files and folders to a wider audience than intended.
 
 To update site settings
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-2. Under **Sites**, click **Active sites**.
-3. Click the site that is associated with team.
-4. On the **Policies** tab, under **External sharing**, click **Edit**.
-5. If you allowed guest sharing when you created the sensitive label, ensure that **New and existing guests** is selected. If you didn't allow sharing when you created the label, choose **Only people in your organization**.
-6. Under Default sharing link type, clear the **Same as organization-level setting** check box, and select **People with existing access**.
-7. Click **Save**.
+
+1. Open the SharePoint admin center, and under **Sites**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>
+1. Select the site that is associated with team.
+1. On the **Policies** tab, under **External sharing**, select **Edit**.
+1. If you allowed guest sharing when you created the sensitive label, ensure that **New and existing guests** is selected. If you didn't allow sharing when you created the label, choose **Only people in your organization**.
+1. Under Default sharing link type, clear the **Same as organization-level setting** check box, and select **People with existing access**.
+1. Select **Save**.
 
 #### Private channels
 

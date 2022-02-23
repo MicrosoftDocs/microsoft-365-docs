@@ -64,5 +64,3 @@ If you choose not to use the wizard, or if you exit the wizard before your setup
 - [Get started using the Microsoft 365 Defender portal](mdb-get-started.md)
 
 - [Use your Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md)
-
--  
