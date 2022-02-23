@@ -11,6 +11,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/admin/manage/servicenow-service-health-incidents-solutions-only.md",
+      "redirect_url": "/microsoft-365/admin/manage/servicenow-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/business-video/work-from-anywhere.md",
       "redirect_url": "https://support.microsoft.com/en-us/office/work-remotely-with-microsoft-365-164946c8-a47a-470e-a0b4-feb12a2eea04",
       "redirect_document_id": false
@@ -48,6 +53,41 @@
     {
       "source_path": "microsoft-365/business-video/group-email.md",
       "redirect_url": "https://support.microsoft.com/office/3f73d218-52d6-4f88-a733-9ff37073ee4c",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/moveto-microsoft-365/add-google-domain.md",
+      "redirect_url": "/microsoft-365/admin/moveto-microsoft-365/add-google-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/moveto-microsoft-365/cancel-google.md",
+      "redirect_url": "/microsoft-365/admin/moveto-microsoft-365/cancel-google",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/moveto-microsoft-365/connect-domain-tom365.md",
+      "redirect_url": "/microsoft-365/admin/moveto-microsoft-365/connect-domain-tom365",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/moveto-microsoft-365/migrate-email.md",
+      "redirect_url": "/microsoft-365/admin/moveto-microsoft-365/migrate-email",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/moveto-microsoft-365/move-from-google-workspace-overview.md",
+      "redirect_url": "/microsoft-365/admin/moveto-microsoft-365/move-from-google-workspace-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/moveto-microsoft-365/mover-migrate-files.md",
+      "redirect_url": "/microsoft-365/admin/moveto-microsoft-365/mover-migrate-files",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business-video/moveto-microsoft-365/set-up-microsoft-365-forgoogle.md",
+      "redirect_url": "/microsoft-365/admin/moveto-microsoft-365/set-up-microsoft-365-forgoogle",
       "redirect_document_id": false
     },
     {
@@ -6000,6 +6040,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/learning/configure-edcast-content-source.md",
+      "redirect_url": "/viva/learning/configure-edcast-content-source",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/learning/configure-go1-content-source.md",
       "redirect_url": "/viva/learning/configure-go1-content-source",
       "redirect_document_id": false
@@ -6646,6 +6691,31 @@
     {
       "source_path": "microsoft-365/campaigns/share-files-and-videos.md",
       "redirect_url": "/microsoft-365/business-premium/share-files-and-videos",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/what-the-dlp-functions-look-for.md",
+      "redirect_url": "/microsoft-365/compliance/sit-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/managed-desktop/get-started/register-devices-self.md",
+      "redirect_url": "/microsoft-365/managed-desktop/get-started/manual-registration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/managed-desktop/get-started/register-devices-partner.md",
+      "redirect_url": "/microsoft-365/managed-desktop/get-started/partner-registration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/managed-desktop/get-started/register-reused-devices-self.md",
+      "redirect_url": "/microsoft-365/managed-desktop/get-started/manual-registration-existing-devices",
+      "redirect_document_id": true
+    },    
+    {
+      "source_path": "microsoft-365/managed-desktop/get-started/set-up-devices.md",
+      "redirect_url": "/microsoft-365/managed-desktop/get-started/prepare-devices",
       "redirect_document_id": true
     }
   ]
