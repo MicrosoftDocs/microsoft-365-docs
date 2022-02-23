@@ -400,22 +400,6 @@ To initiate the data purge path, complete these steps:
 
     Once Microsoft receives the legal document, Microsoft runs cmdlets to trigger the data purge which first deletes the policy, marks the mailboxes for permanent deletion, then deletes the availability key. Once the data purge process completes, the data has been purged, is inaccessible to Exchange Online, and is not recoverable.
 
-### Revoke your Customer Keys and the availability key for SharePoint Online, OneDrive for Business, and Teams files
-
-To initiate the data purge path for SharePoint Online, OneDrive for Business, and Teams files, complete these steps:
-
-1. Revoke Azure Key Vault access. All key vault admins must agree to revoke access.
-
-   You do not delete the Azure Key Vault for SharePoint Online. Key vaults may be shared among several SharePoint Online tenants and DEPs.
-
-2. Contact Microsoft to delete the availability key.
-
-    When you contact Microsoft to delete the availability key, we'll send you a legal document. The person in your organization who signed up as an approver in the FastTrack offer during onboarding needs to sign this document. Normally, this is an executive or other designated person in your company who's legally authorized to sign the paperwork on behalf of your organization.
-
-3. Once your representative signs the legal document, return it to Microsoft (usually through an eDoc signature).
-
-   Once Microsoft receives the legal document, we run cmdlets to trigger the data purge which performs crypto deletion of the tenant key, site key, and all individual per-document keys, irrevocably breaking the key hierarchy. Once the data purge cmdlets complete, your data has been purged.
-
 ## Related articles
 
 - [Service encryption with Customer Key](customer-key-overview.md)
