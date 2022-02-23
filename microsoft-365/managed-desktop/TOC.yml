@@ -118,8 +118,8 @@
             - name: Manual registration
               href: get-started/manual-registration.md
               items: 
-                - name: Partner registration
-                  href: get-started/partner-registration.md
+            - name: Partner registration
+              href: get-started/partner-registration.md
             - name: Manual registration for existing devices
               href: get-started/manual-registration-existing-devices.md
         - name: Enable user support features

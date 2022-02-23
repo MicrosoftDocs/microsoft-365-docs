@@ -1,6 +1,6 @@
 ---
-title: Set up devices for Microsoft Managed Desktop 
-description:  How to get new devices or reuse existing ones that qualify
+title: Prepare devices for Microsoft Managed Desktop 
+description:  Prepare new devices or reuse existing ones that qualify
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: tiaraquan
@@ -12,7 +12,7 @@ ms.topic: article
 audience: Admin
 ---
 
-# Set up Microsoft Managed Desktop devices
+# Prepare devices
 
 You can use both new and existing devices in Microsoft Managed Desktop.
 
