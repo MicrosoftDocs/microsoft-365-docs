@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/19/2022
+ms.date: 02/23/2022
 ms.service: o365-administration
 localization_priority: Normal
 ms.reviewer: shlomiakirav
@@ -46,7 +46,7 @@ After you have finished the guided setup, there are additional steps to complete
 > [!TIP]
 > See the following section for more details about setting up and configuring Microsoft 365 Business Premium.
 
-## The setup process, step by step
+## The setup process, from planning to training users
 
 The following table describes how to set up and configure Microsoft 365 Business Premium, step by step.
 
