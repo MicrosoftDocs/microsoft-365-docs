@@ -261,9 +261,9 @@
 
 ### [Device inventory]()
 #### [Device inventory](machines-view-overview.md)
+#### [Exclude devices](exclude-devices.md)
 #### [Device timeline event flags](device-timeline-event-flag.md)
 #### [Manage device group and tags](machine-tags.md)
-#### [Exclude devices](exclude-devices.md)
 
 ### [Network devices](network-devices.md)
 
