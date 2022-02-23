@@ -51,7 +51,7 @@ Use the **Onboarding Status** column to sort and filter by discovered devices, a
 
 From the **Network devices** and **IoT devices** tabs, you’ll also see information such as vendor, model and device type:
 
-![Image of devices list with list of devices.](images/device-inventory-networkdevices.png)
+![Image of network devices list.](images/device-inventory-networkdevices.png)
 
 At the top of each device inventory tab, you can see the total number of devices, the number of devices that are not yet onboarded, and the number of devices that have been identified as a higher risk to your organization. You can use this information to help you prioritize devices for security posture improvements.
 
@@ -83,7 +83,7 @@ Filter | Description
 :---|:---
 **Risk level** </br> | The risk level reflects the overall risk assessment of the device based on a combination of factors, including the types and severity of active alerts on the device. Resolving active alerts, approving remediation activities, and suppressing subsequent alerts can lower the risk level.
 **Exposure level** </br> | The exposure level reflects the current exposure of the device based on the cumulative impact of its pending security recommendations. The possible levels are low, medium, and high. Low exposure means your devices are less vulnerable from exploitation. </br> </br> If the exposure level says “No data available,” there are a few reasons why this may be the case:</br>- Device stopped reporting for more than 30 days. In that case it’s considered inactive, and the exposure isn’t computed.</br>- Device OS not supported - see [minimum requirements for Microsoft Defender for Endpoint](https://microsoft-my.sharepoint.com/personal/siosulli_microsoft_com/Documents/Security%20Posture/TVM/minimum-requirements.md).</br>- Device with stale agent (unlikely).
-**Tags** </br> | Filter the list based on the grouping and tagging that you’ve added to individual devices. See [Create and manage device tags](https://microsoft-my.sharepoint.com/personal/siosulli_microsoft_com/Documents/Security%20Posture/TVM/machine-tags.md).
+**Tags** </br> | Filter the list based on the grouping and tagging that you’ve added to individual devices. See [Create and manage device tags](machine-tags.md).
 **Device value**</br> | Filter the list based on whether the device has been marked as high value or low value.
 **Exclusion state** </br> | Filter the list based on whether the device has been excluded or not. For more information, see [Exclude devices](exclude-devices.md).
 **OS Platform** </br>| Filter by the OS platforms you’re interested in investigating </br></br>(_Computers and mobile and IoT devices only_)
@@ -102,16 +102,16 @@ You can add or remove columns from the view and sort the entries by clicking on 
 
 On the **Computer and Mobiles** tab, select **Customize columns** to see the columns available. The default values are checked in the image below:
 
-![Image of devices list with list of devices.](images/computerandmobilescolumns.png)
+![Image of computers and mobiles](images/computerandmobilescolumns.png)
 
 On the **Network devices** tab, select **Customize columns** to see the columns available. The default values are checked in the image below:
 
-![Image of devices list with list of devices.](images/networkdevicescolumns.png)
+![Image of network device columns](images/networkdevicescolumns.png)
 
 On the **IoT devices** tab, select **Customize columns** to see the columns available. The default values are checked in the image below:
 
-![Image of devices list with list of devices.](images/iotdevicescolumns.png)
+![Image of IoT device columns](images/iotdevicescolumns.png)
 
 ## Related articles
 
-[Investigate devices in the Microsoft Defender for Endpoint Devices list](https://microsoft-my.sharepoint.com/personal/siosulli_microsoft_com/Documents/Security%20Posture/TVM/investigate-machines.md)
+[Investigate devices in the Microsoft Defender for Endpoint Devices list](investigate-machines.md)

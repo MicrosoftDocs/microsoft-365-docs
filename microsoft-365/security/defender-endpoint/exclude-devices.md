@@ -71,7 +71,7 @@ Excluded devices are still visible in the Device inventory list. You can man
 - Adding the **Exclusion state** column to the device inventory view.
 - Using the **Exclusion state** filter to view the relevant list of devices.
 
-![Image of exclude device.](images/exclusion-state.png)
+![Image of exclusion state.](images/exclusion-state.png)
 
 ### Bulk device exclusion
 
@@ -85,7 +85,7 @@ You can also choose to exclude multiple devices at the same time:
 
 If you select multiple devices in the device list with different exclusion statuses, the exclude selected devices flyout will provide you details on how many of the selected devices are already excluded. You can exclude the devices again, but the justification and notes will be overridden.
 
-![Image of exclude device](images/exclude-device-bulk.png)
+![Image of bulk exclude](images/exclude-device-bulk.png)
 
 Once a device is excluded, if you go to the device page of an excluded device, you won’t be able to see data for discovered vulnerabilities, software inventory or security recommendations. The data also won’t show up in vulnerability management pages, related advanced hunting tables and the vulnerable devices report.
 
@@ -96,7 +96,7 @@ You’ll be able to stop excluding a device at any time. Once devices are no l
 1. Go to the Device inventory, select the excluded device to open the flyout, and then select **Exclusion details**
 2. Select **Stop exclusion**
 
-![Image of exclude device](images/exclusion-details.png)
+![Image of exclusion details](images/exclusion-details.png)
 
 ## See also
 
