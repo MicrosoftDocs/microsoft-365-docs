@@ -58,7 +58,7 @@ The following table compares security features and capabilities in Defender for 
 | Antispam protection | Yes <br/>- For devices | Yes <br/>- For devices<br/>- For Microsoft 365 email content, such as messages and attachments |
 | Antimalware protection | Yes<br/>- For devices | Yes <br/>- For devices<br/>- For Microsoft 365 email content, such as messages and attachments |
 | [Next-generation protection](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (antivirus and antimalware protection) | Yes<br/>- Microsoft Defender Antivirus is included in Windows 10 and later  | Yes <br/>- Microsoft Defender Antivirus is included in Windows 10 and later<br/>- Next-generation protection policies for onboarded devices |
-| [Attack surface reduction](../defender-endpoint/overview-attack-surface-reduction.md)	| Yes <br/>- Attack surface reduction rules built into Windows 10 and later<br/>- Firewall protection<br/>- Centrally managed capabilities | Yes <br/>- Attack surface reduction rules are built into Windows 10 and later<br/>- Firewall protection <br/>- Centrally managed capabilities |
+| [Attack surface reduction](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(ASR rules in Windows 10 or later and firewall protection)	| Yes  | Yes  |
 | [Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md) <br/>(behavior-based detection and manual response actions) | Yes | Yes |
 | [Automated investigation and response](../defender-endpoint/automated-investigations.md) | Yes | Yes |
 | [Threat & vulnerability management](../defender-endpoint/tvm-dashboard-insights.md) | Yes | Yes |
