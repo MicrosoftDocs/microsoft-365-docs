@@ -116,7 +116,7 @@ For certain actions in Lighthouse, role assignments in the partner tenant are re
 </ul></td>
 </tr>
 <tr class="even">
-<td>Administrator of partner tenant with at least one<br />
+<td>Partner tenant member with at least one<br />
 Azure AD role assigned with the following property set:<br />
 <strong>microsoft.office365.supportTickets/allEntities/allTasks</strong><br />
 (For a complete list of Azure AD roles, see <a href="/azure/active-directory/roles/permissions-reference">Azure AD built-in roles</a>.)</td>
@@ -125,7 +125,7 @@ Azure AD role assigned with the following property set:<br />
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>Administrator of partner tenant with at least one<br />
+<td><p>Partner tenant member with at least one<br />
 Azure AD role assigned with the following property set:<br />
 <strong>microsoft.office365.serviceHealth/allEntities/allTasks</strong><br />
 (For a complete list of Azure AD roles, see <a href="/azure/active-directory/roles/permissions-reference">Azure AD built-in roles</a>.)</p>
