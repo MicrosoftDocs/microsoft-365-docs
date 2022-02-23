@@ -45,10 +45,6 @@ From the default alerts queue, you can select **Filter** to see a **Filter** pan
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-filter.png" alt-text="The Filters section in the Microsoft 365 Defender portal." lightbox="../../media/investigate-alerts/alerts-ss-alerts-filter.png":::
 
-<!--
-UPDATE SCREENSHOT
---> 
-
 You can filter alerts according to these criteria:
 
 - Severity
@@ -94,7 +90,7 @@ An alert page is composed of these sections:
 - Alert story, which is the chain of events and alerts related to this alert in chronological order
 - Summary details
 
-Throughout an alert page, you can select the ellipses (**...**) beside any entity to see available actions, such as opening the alert page or linking the alert to another incident.
+Throughout an alert page, you can select the ellipses (**...**) beside any entity to see available actions, such as linking the alert to another incident. The list of available actions depends on the type of alert.
 
 ### Alert sources
 
@@ -132,7 +128,7 @@ Once you've selected an entity of interest, the details page changes to display 
 
 ## Manage alerts
 
-To manage an alert, select the alert in the alerts queue on its row to see a **Manage alert** pane. Here's an example.
+To manage an alert, select **Manage alert** in the summary details section of the alert page. For a single alert, here's an example of the **Manage alert** pane.
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage.png" alt-text="The Manage alert section in the Microsoft 365 Defender portal" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage.png":::
 
@@ -140,34 +136,43 @@ The **Manage alert** pane allows you to view or specify:
 
 - The alert status (New, Resolved, In progress).
 - The user account that has been assigned the alert.
-- The alert's classification  (Not set, True alert, False Alert).
-- For the classification as a true alert, the type of threat for the alert in **Determination** field.
+- The alert's classification:
+
+   - **Not set** (the default).
+
+   - **True positive** with a type of threat. Use this classification for alerts that accurately indicate a real threat. Specifying the threat type helps your security team see threat patterns and act to defend your organization from them.
+
+   - **Informational, expected activity** with a type of activity. Use the options in this category to classify alerts for security tests, red team activity, and expected unusual behavior from trusted apps and users.
+
+   - **False positive** for types of alerts that were created even when there is no malicious activity. Classifying alerts as false positive helps Microsoft 365 Defender improve its detection quality.
+
 - A comment on the alert.
 
 > [!NOTE]
 > One way of managing alerts it through the use of tags. The tagging capability for Microsoft Defender for Office 365 is incrementally being rolled out and is currently in preview. <br>
 > Currently, modified tag names are only applied to alerts created *after* the update. Alerts that were generated before the modification will not reflect the updated tag name. 
 
-From this pane, you can also perform these additional actions: 
+To manage a *set of alerts similar to a specific alert*, select **View similar alerts** in the **INSIGHT** box in the summary details section of the alert page.
 
-- Open the main alert page
-- Consult a Microsoft threat expert
-- View submission
-- Link to another incident
-- See the alert in a timeline
-- Create a suppression rule
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-manage-select.png" alt-text="Manage an alert in the Microsoft 365 Defender portal":::
 
-Here's an example.
+From the **Manage alerts** pane, you can then classify all of the related alerts at the same time. Here's an example.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="The pane that diplays alert actions in the Microsoft 365 Defender portal" lightbox="../../media/investigate-alerts/alerts-ss-alerts-actions.png":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" alt-text="Managing related alerts in the Microsoft 365 Defender portal":::
 
-The list of additional actions depends on the type of alert.
+If similar alerts were already classified in the past, you can save time by using Microsoft 365 Defender recommendations to learn how the other alerts were resolved. From the summary details section, select **Recommendations**.
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" alt-text="Example of selecting recommendations for an alert":::
+
+The **Recommendations** tab provides next-step actions and advice for investigation, remediation, and prevention. Here's an example.
+
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="Example of alert recommendations":::
 
 ## Resolve an alert
 
-Once you're done analyzing an alert and it can be resolved, go to the **Manage alert** pane for the alert and mark the status as **Resolved** and classify it as either a **False alert** or **True alert**. For true alerts, specify the alert's threat type in the **Determination** field.
+Once you're done analyzing an alert and it can be resolved, go to the **Manage alert** pane for the alert or similar alerts and mark the status as **Resolved** and then classify it as a **True positive** with a type of threat, an **Informational, expected activity** with a type of activity, or a **False positive**.
 
-Classifying alerts and specifying their determination helps tune Microsoft 365 Defender to provide more true alerts and less false alerts.
+Classifying alerts helps Microsoft 365 Defender improve its detection quality.
 
 ## Use Power Automate to triage alerts
 

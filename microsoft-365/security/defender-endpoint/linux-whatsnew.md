@@ -13,7 +13,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: reference
 ms.technology: mde
 ---
@@ -24,6 +23,11 @@ ms.technology: mde
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+## 101.58.80 (30.122012.15880.0)
+
+- The command-line tool now supports restoring quarantined files to a location other than the one where the file was originally detected. This can be done through `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`.
+- Bug fixes
 
 ## 101.56.62 (30.121122.15662.0)
 

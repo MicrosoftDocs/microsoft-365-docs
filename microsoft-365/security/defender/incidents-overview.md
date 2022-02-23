@@ -66,7 +66,7 @@ You manage incidents from **Incidents & alerts > Incidents** on the quick launch
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft 365 Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
-Selecting an incident name displays a summary of the incident and provides access to tabs with additional information.
+Selecting an incident name displays a summary of the incident and provides access to tabs with additional information. Here’s an example.
 
 :::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="The Summary page for an incident in the Microsoft 365 Defender portal" lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
@@ -94,7 +94,7 @@ The additional tabs for an incident are:
 
 - Evidence and Response
 
-  All the supported events and suspicious entities in the alerts in the incident.
+  All the supported events and suspicious entities in the alerts of the incident.
 
 - Graph (Preview)
 
@@ -115,9 +115,11 @@ On an ongoing basis, identify the highest priority incidents for analysis and re
 - [Triaging](incident-queue.md) to determining the highest priority incidents through filtering and sorting of the incident queue.
 - [Managing](manage-incidents.md) incidents by modifying their title, assigning them to an analyst, and adding tags and comments.
 
+Consider these steps for your own incident response workflow:
+
 1. For each incident, begin an [attack and alert investigation and analysis](investigate-incidents.md):
  
-   1. View the summary of the incident to understand it's scope and severity and what entities are affected with the **Summary** and **Graph** (Preview) tabs.
+   1. View the summary of the incident to understand its scope and severity and what entities are affected with the **Summary** and **Graph** (Preview) tabs.
 
    1. Begin analyzing the alerts to understand their origin, scope, and severity with the **Alerts** tab.
 
@@ -191,7 +193,7 @@ The email notification contains important details about the incident like the in
 You can add or remove recipients in the email notifications. New recipients get notified about incidents after they're added. 
 
 >[!NOTE]
->You need the 'Manage security settings' permission to configure email notification settings. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications for you. <br> <br>
+>You need the **Manage security settings** permission to configure email notification settings. If you've chosen to use basic permissions management, users with Security Administrator or Global Administrator roles can configure email notifications. <br> <br>
 Likewise, if your organization is using role-based access control (RBAC), you can only create, edit, delete, and receive notifications based on device groups that you are allowed to manage.
 
 ### Create a rule for email notifications

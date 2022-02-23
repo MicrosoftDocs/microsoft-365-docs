@@ -148,6 +148,9 @@ To validate that the feature is working, download the [Block at first sight samp
 
 To validate that cloud-enabled protection is working, follow the guidance in [Validate connections between your network and the cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
 
+> [!NOTE]
+> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
+
 ## Turn off block at first sight
 
 > [!CAUTION]
