@@ -29,7 +29,7 @@ MSPs must be enrolled in the Cloud Solution Provider (CSP) program as an Indirec
 
 In addition, each MSP customer tenant must qualify for Lighthouse by meeting the following requirements: 
  
-- Delegated Admin Privileges (DAP) for the MSP 
+- Delegated Admin Privileges (DAP) or Granular Delegated Admin Privileges (GDAP) for the MSP 
 - At least one Microsoft 365 Business Premium or Microsoft 365 E3 license 
 - Fewer than 1000 licensed users  
 
