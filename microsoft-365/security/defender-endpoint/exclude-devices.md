@@ -16,7 +16,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Exclude devices 
+# Exclude devices
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -57,14 +57,17 @@ You can choose to exclude a single device or multiple devices at the same time.
 
 ![Image of exclude device.](images/exclude-device.png)
 
-You can also exclude the device from the device page itself.
+You can also exclude a device from its device page.
 
 > [!NOTE]
 > Excluding active devices is not recommended, since it is especially risky to not have visibility into their vulnerability info. If a device is active and you try to exclude it, you’ll get a warning message and a confirmation pop-up asking if you are sure you want to exclude an active device.
 
 It can take up to 10 hours for a device to be fully excluded from vulnerability management views and data.
 
-Excluded devices are still visible in the Device inventory list. You can use the **Excluded** filter to view the relevant list of devices.
+Excluded devices are still visible in the Device inventory list. You can manage your view of excluded devices by:
+
+- Adding the **Exclusion state** column to the device inventory view.
+- Using the **Exclusion state** filter to view the relevant list of devices.
 
 ![Image of exclude device.](images/exclusion-state.png)
 
