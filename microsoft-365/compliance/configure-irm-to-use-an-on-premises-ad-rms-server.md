@@ -65,7 +65,7 @@ When you import the TPD, it's stored and protected in Exchange Online.
 
 4. In the **Actions** pane, click **Export Trusted Publishing Domain**.
 
-5. In the **Publishing domain file** box, click **Save As** to save the file to a specific location on the local computer. Type a file name, making sure to specify the  `.xml` file name extension, and then click **Save**.
+5. In the **Publishing domain file** box, click **Save As** to save the file to a specific location on the local computer. Type a file name, making sure to specify the `.xml` file name extension, and then click **Save**.
 
 6. In the **Password** and **Confirm Password** boxes, type a strong password that will be used to encrypt the trusted publishing domain file. You will have to specify this password when you import the TPD to your cloud-based email organization.
 
@@ -76,22 +76,22 @@ After the TPD is exported to an XML file, you have to import it to Exchange Onli
 To import the TPD, run the following command in Windows PowerShell:
 
 ```powershell
-Import-RMSTrustedPublishingDomain -FileData $([byte[]](Get-Content -Encoding byte -Path <path to exported TPD file> -ReadCount 0)) -Name "<name of TPD>" -ExtranetLicensingUrl <URL> -IntranetLicensingUrl <URL>
+Import-RMSTrustedPublishingDomain -FileData ([System.IO.File]::ReadAllBytes('<path to exported TPD file>')) -Name "<name of TPD>" -ExtranetLicensingUrl <URL> -IntranetLicensingUrl <URL>
 ```
 
-You can obtain the values for the  _ExtranetLicensingUrl_ and  _IntranetLicensingUrl_ parameters in the Active Directory Rights Management Services console. Select the AD RMS cluster in the console tree. The licensing URLs are displayed in the results pane. These URLs are used by email clients when content has to be decrypted and when Exchange Online needs to determine which TPD to use.
+You can obtain the values for the _ExtranetLicensingUrl_ and _IntranetLicensingUrl_ parameters in the Active Directory Rights Management Services console. Select the AD RMS cluster in the console tree. The licensing URLs are displayed in the results pane. These URLs are used by email clients when content has to be decrypted and when Exchange Online needs to determine which TPD to use.
 
 When you run this command, you'll be prompted for a password. Enter the password that you specified when you exported the TPD from your AD RMS server.
 
 For example, the following command imports the TPD named Exported TPD using the XML file that you exported from your AD RMS server and saved to the desktop of the Administrator account. The Name parameter is used to specify a name to the TPD.
 
 ```powershell
-Import-RMSTrustedPublishingDomain -FileData $([byte[]](Get-Content -Encoding byte -Path C:\Users\Administrator\Desktop\ExportTPD.xml -ReadCount 0)) -Name "Exported TPD" -ExtranetLicensingUrl https://corp.contoso.com/_wmcs/licensing -IntranetLicensingUrl https://rmsserver/_wmcs/licensing
+Import-RMSTrustedPublishingDomain -FileData ([System.IO.File]::ReadAllBytes('C:\Users\Administrator\Desktop\ExportTPD.xml')) -Name "Exported TPD" -ExtranetLicensingUrl https://corp.contoso.com/_wmcs/licensing -IntranetLicensingUrl https://rmsserver/_wmcs/licensing
 ```
 
 For detailed syntax and parameter information, see [Import-RMSTrustedPublishingDomain](/powershell/module/exchange/import-rmstrustedpublishingdomain).
 
-#### How do you know this step worked?
+#### How do you know that you successfully imported the TPD?
 
 To verify that you have successfully imported the TPD, run the **Get-RMSTrustedPublishingDomain** cmdlet to retrieve TPDs in your Exchange Online organization. For details, see the examples in [Get-RMSTrustedPublishingDomain](/powershell/module/exchange/get-rmstrustedpublishingdomain).
 
@@ -105,7 +105,7 @@ To return a list of all templates contained in the default TPD, run the followin
 Get-RMSTemplate -Type All | fl
 ```
 
-If the value of the  _Type_ parameter is  `Archived`, the template isn't visible to users. Only distributed templates in the default TPD are available in Outlook on the web.
+If the value of the _Type_ parameter is `Archived`, the template isn't visible to users. Only distributed templates in the default TPD are available in Outlook on the web.
 
 To distribute a template, run the following command:
 
@@ -121,16 +121,14 @@ Set-RMSTemplate -Identity "Company Confidential" -Type Distributed
 
 For detailed syntax and parameter information, see [Get-RMSTemplate](/powershell/module/exchange/get-rmstemplate) and [Set-RMSTemplate](/powershell/module/exchange/set-rmstemplate).
 
-**The Do Not Forward template**
+#### The Do Not Forward template
 
 When you import the default TPD from your on-premises organization into Exchange Online, one AD RMS rights policy template named **Do Not Forward** is imported. By default, this template is distributed when you import the default TPD. You can't use the **Set-RMSTemplate** cmdlet to modify the **Do Not Forward** template.
 
 When the **Do Not Forward** template is applied to a message, only the recipients addressed in the message can read the message. Additionally, recipients can't do the following:
 
 - Forward the message to another person.
-
 - Copy content from the message.
-
 - Print the message.
 
 > [!IMPORTANT]
@@ -138,7 +136,7 @@ When the **Do Not Forward** template is applied to a message, only the recipient
 
 You can create additional AD RMS rights policy templates on the AD RMS server in your on-premises organization to meet your IRM protection requirements. If you create additional AD RMS rights policy templates, you have to export the TPD from the on-premises AD RMS server again and refresh the TPD in the cloud-based email organization.
 
-#### How do you know this step worked?
+#### How do you know that you successfully distributed the AD RMS rights policy template?
 
 To verify that you have successfully distributed and AD RMS rights policy template, run the **Get-RMSTemplate** cmdlet to check the template's properties. For details, see the examples in [Get-RMSTemplate](/powershell/module/exchange/get-rmstemplate).
 
@@ -152,7 +150,7 @@ Set-IRMConfiguration -InternalLicensingEnabled $true
 
 For detailed syntax and parameter information, see [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration).
 
-#### How do you know this step worked?
+#### How do you know that you successfully enabled IRM?
 
 To verify that you have successfully enabled IRM, run the [Get-IRMConfiguration](/powershell/module/exchange/get-irmconfiguration) cmdlet to check IRM configuration in the Exchange Online organization.
 

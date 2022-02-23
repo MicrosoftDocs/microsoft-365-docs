@@ -24,6 +24,9 @@ search.appverid:
 
 Before getting started with [communication compliance](communication-compliance.md) in your organization, there are important planning activities and considerations that should be reviewed by your information technology and compliance management teams. Thoroughly understanding and planning for deployment in the following areas will help ensure that your implementation and use of communication compliance features goes smoothly and is aligned with the best practices for the solution.
 
+> [!IMPORTANT]
+> Communication compliance is currently available in tenants hosted in geographical regions and countries supported by Azure service dependencies. To verify that communication compliance is supported for your organization, see [Azure dependency availability by country/region](/troubleshoot/azure/general/dependency-availability-by-country).
+
 ## Transitioning from Supervision in Office 365
 
 For organizations using supervision policies in Office 365, you should immediately plan to transition to communication compliance policies in Microsoft 365 and need to understand these important points:
@@ -94,7 +97,7 @@ Before you start using communication compliance, you must determine who needs th
 
 ### Reviewers
 
-When you create a communication compliance policy, you must determine who reviews the messages of the supervised users. In the policy, user email addresses identify individuals or groups of people to review supervised communications. All reviewers must have mailboxes hosted on Exchange Online and must be assigned to either the *Communication Compliance Analysis* or *Communication Compliance Investigation* roles. Reviewers (either analysts or investigators) must also have the *Communication Compliance Case Management* role assigned. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
+When you create a communication compliance policy, you must determine who reviews the messages of the supervised users. In the policy, user email addresses identify individuals or groups of people to review supervised communications. All reviewers must have mailboxes hosted on Exchange Online, must be assigned to either the *Communication Compliance Analyst* or *Communication Compliance Investigator* role groups, and must be assigned in the policy they need to investigate. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
 
 ### Groups for supervised users and reviewers
 
@@ -127,7 +130,7 @@ When planning for communication compliance policies, consider the following area
 - Consider adding all users in your organization as in-scope for your communication compliance policies. Identifying specific users as in-scope for individual policies are useful in some circumstances, however most organizations should include all users in communication compliance policies optimized for harassment or discrimination detection.
 - Configure the percentage of communications to review at 100% to ensure that policies are catching all issues of concern in communications for your organization.
 - You can scan communications from [third-party sources](communication-compliance-channels.md#third-party-sources) for data imported into mailboxes in your Microsoft 365 organization. To include review of communications in these platforms, you'll need to configure a connector to these services before messages meeting policy conditions are monitored by communication policy.
-- Policies can support monitoring languages other than English in custom communication compliance policies. Build a [custom keyword dictionary](communication-compliance-policies.md#custom-keyword-dictionaries) of offensive words in the language of your choice or build your own machine-learning model using [trainable classifiers](classifier-get-started-with.md) in Microsoft 365.
+- Policies can support monitoring languages other than English in custom communication compliance policies. Build a [custom keyword dictionary](communication-compliance-policies.md#custom-keyword-dictionaries) of offensive words in the language of your choice or build your own machine learning model using [trainable classifiers](classifier-get-started-with.md) in Microsoft 365.
 - All organizations have different communication standards and policy needs. Monitor for specific keywords using communication compliance [policy conditions](communication-compliance-policies.md#conditional-settings) or monitor for specific types of information with [custom sensitive information types](create-a-custom-sensitive-information-type.md).
 
 ## Creating a communication compliance policy walkthrough

@@ -1,9 +1,9 @@
 ---
-title: "Enable auto-expanding archiving - Admin Help"
+title: "Enable auto-expanding archiving"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -21,9 +21,9 @@ description: "For administrators: Learn how to enable auto-expanding archiving, 
 ms.custom: seo-marvel-apr2020
 ---
 
-# Enable auto-expanding archiving - Admin Help
+# Enable auto-expanding archiving
 
-You can use the Exchange Online auto-expanding archiving feature to enable additional storage space for archive mailboxes. When auto-expanding archiving is turned on, additional storage space is automatically added to a user's archive mailbox until it reaches the storage limit of 1.5 TB. You can turn on auto-expanding archiving for everyone in your organization or just for specific users. For more information about auto-expanding archiving, see [Overview of auto-expanding archiving](autoexpanding-archiving.md).
+You can use the Exchange Online auto-expanding archiving feature to enable additional storage space for archive mailboxes. When auto-expanding archiving is turned on, additional storage space is automatically added to a user's archive mailbox until it reaches the storage limit of 1.5 TB. You can turn on auto-expanding archiving for everyone in your organization or just for specific users. For more information about auto-expanding archiving, see [Learn about auto-expanding archiving](autoexpanding-archiving.md).
 
 ## Before you enable auto-expanding archiving
 
@@ -122,7 +122,7 @@ Keep the following things in mind after you enable auto-expanding archiving:
 
 - Auto-expanding archiving is supported for cloud-based archive mailboxes in an Exchange hybrid deployment for users who have an on-premises primary mailbox. However, after auto-expanding archiving is enabled for a cloud-based archive mailbox, you can't off-board that archive mailbox back to the on-premises Exchange organization. Auto-expanding archiving isn't supported for on-premises mailboxes in any version of Exchange Server.
 
-- For a list of Outlook clients that users can use to access items in the additional storage area in their archive mailbox, see the "Outlook requirements for accessing items in an auto-expanded archive" section in [Overview of auto-expanding archiving](autoexpanding-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive).
+- For a list of Outlook clients that users can use to access items in the additional storage area in their archive mailbox, see the "Outlook requirements for accessing items in an auto-expanded archive" section in [Learn about auto-expanding archiving](autoexpanding-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive).
 
 - As previously explained, 10 GB is added to the storage quota of the user's primary archive mailbox (and to the Recoverable Items folder if the mailbox is on hold) when you run the **Enable-Mailbox -AutoExpandingArchive** command. This provides additional storage until the auto-expanded storage space is provisioned (which can take up to 30 days). This additional storage space isn't added when you run the **Set-OrganizationConfig -AutoExpandingArchive** to enable auto-expanding archiving for all mailboxes in your organization. If you enabled auto-expanding archiving for the entire organization, but need to add the additional 10 GB of storage space for a specific user, you can run the **Enable-Mailbox -AutoExpandingArchive** command on that mailbox. You will receive an error saying that auto-expanding archiving has already been enabled, but the additional storage space will be added to the mailbox.
 

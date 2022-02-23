@@ -14,7 +14,9 @@ manager: dansimp
 ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365initiative-defender-endpoint
 ---
 
 # Configure and validate exclusions for Microsoft Defender Antivirus scans

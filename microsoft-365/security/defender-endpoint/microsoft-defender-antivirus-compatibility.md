@@ -14,8 +14,10 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 01/19/2022
-ms.collection: M365-security-compliance
+ms.date: 02/11/2022
+ms.collection: 
+- M365-security-compliance
+- m365initiative-defender-endpoint
 ---
 
 # Microsoft Defender Antivirus compatibility with other security products
@@ -132,7 +134,7 @@ The table in this section summarizes the features and capabilities that are acti
 
  | Protection | Microsoft Defender Antivirus <br/>(*Active mode*) | Microsoft Defender Antivirus <br/>(*Passive mode*) | Microsoft Defender Antivirus <br/>(*Disabled or uninstalled*) | [EDR in block mode](edr-in-block-mode.md) | 
  |:---|:---|:---|:---|:---| 
- | [Real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) | Yes | No <sup>[[4](#fn4)]</sup> | No | No | 
+ | [Real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) | Yes | See note <sup>[[4](#fn4)]</sup> | No | No | 
  | [Cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) | Yes | No  | No | No | 
  | [Network protection](network-protection.md)  | Yes | No | No | No | 
  | [Attack surface reduction rules](attack-surface-reduction.md)  | Yes | No | No  | No | 
@@ -177,7 +179,7 @@ The table in this section describes various states you might see with Microsoft 
  |  State  |  What happens  | 
  |:---|:---| 
  |  Active mode  |  In active mode, Microsoft Defender Antivirus is used as the antivirus app on the machine. Settings that are configured by using Configuration Manager, Group Policy, Microsoft Intune, or other management products will apply. Files are scanned, threats are remediated, and detection information is reported in your configuration tool (such as Configuration Manager or the Microsoft Defender Antivirus app on the endpoint itself).  | 
- |  Passive mode  |  In passive mode, Microsoft Defender Antivirus is not used as the antivirus app, and threats are *not* remediated by Microsoft Defender Antivirus. Threats can be remediated by [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md), however. <br/><br/> Files are scanned, and reports are provided for threat detections that are shared with the Defender for Endpoint service. You might see alerts in the [Defender for Cloud](microsoft-defender-security-center.md) showing Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in passive mode. <br/><br/> When Microsoft Defender Antivirus is in passive mode, you can still [manage updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md); however, you can't move Microsoft Defender Antivirus into active mode if your devices have a non-Microsoft antivirus product that is providing real-time protection from malware. <br/><br/> For optimal security layered defense and detection efficacy, make sure to get your antivirus and antimalware updates, even if Microsoft Defender Antivirus is running in passive mode. See [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md). <br/><br/> **NOTE**: Passive mode is not supported on Windows Server 2016.  | 
+ |  Passive mode  |  In passive mode, Microsoft Defender Antivirus is not used as the antivirus app, and threats are *not* remediated by Microsoft Defender Antivirus. Threats can be remediated by [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md), however. <br/><br/> Files are scanned by EDR, and reports are provided for threat detections that are shared with the Defender for Endpoint service. You might see alerts in the [Defender for Cloud](/defender-cloud-apps) showing Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in passive mode. <br/><br/> When Microsoft Defender Antivirus is in passive mode, you can still [manage updates for Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md); however, you can't move Microsoft Defender Antivirus into active mode if your devices have a non-Microsoft antivirus product that is providing real-time protection from malware. <br/><br/> For optimal security layered defense and detection efficacy, make sure to get your antivirus and antimalware updates, even if Microsoft Defender Antivirus is running in passive mode. See [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md). <br/><br/> **NOTE**: Passive mode is not supported on Windows Server 2016.  | 
  |  Disabled <br/><br/> or <br/><br/> Uninstalled  |  When disabled or uninstalled, Microsoft Defender Antivirus is not used as the antivirus app. Files are not scanned and threats are not remediated. <br/><br/> Disabling or uninstalling Microsoft Defender Antivirus is not recommended in general; if possible, keep Microsoft Defender Antivirus in passive mode if you are using a non-Microsoft antimalware/antivirus solution. <br/><br/> In cases where Microsoft Defender Antivirus is disabled automatically, it can be re-enabled automatically if the non-Microsoft antivirus/antimalware product expires or otherwise stops providing real-time protection from viruses, malware, or other threats. The automatic re-enabling of Microsoft Defender Antivirus helps to ensure that antivirus protection is maintained on your endpoints. <br/><br/> You might also use [limited periodic scanning](limited-periodic-scanning-microsoft-defender-antivirus.md), which works with the Microsoft Defender Antivirus engine to periodically check for threats if you are using a non-Microsoft antivirus app.  | 
 
 
