@@ -71,7 +71,7 @@ The number of devices on each operating system that are exposed due to software 
 
 The number of devices on each Windows 10 or Windows 11 version that are exposed due to vulnerable applications or OS.
 
-![One graph of current vulnerable devices by Windows 10 version, and one graph showing vulnerable devices by Windows 10 version over time.](images/tvm-report-version.png)lightbox="images/tvm-report-version.png":::
+:::image type="content" alt-text="One graph of current vulnerable devices by Windows 10 version, and one graph showing vulnerable devices by Windows 10 version over time." source="images/tvm-report-version.png" lightbox="images/tvm-report-version.png":::
 
 ## Related topics
 
