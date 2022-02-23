@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: article
-ms.date: 01/06/2022
+ms.date: 02/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -40,7 +40,7 @@ The following table summarizes several scenarios to try during the preview of De
 
 | Scenario  | Description  |
 |---------|---------|
-| Onboard devices using a local script     | In Defender for Business (preview), you can onboard Windows 10 and 11 devices using a script that you download and run on each device. The script creates a trust with Azure Active Directory (Azure AD) and enrolls the device with Microsoft Intune. To learn more, see [Onboard a device using a local script in Defender for Business (preview)](mdb-onboard-devices.md#onboard-a-device-using-a-local-script-in-defender-for-business).         |
+| Onboard devices using a local script     | In Defender for Business (preview), you can onboard Windows 10 and 11 devices using a script that you download and run on each device. The script creates a trust with Azure Active Directory (Azure AD) and enrolls the device with Microsoft Intune. To learn more, see [Local script in Defender for Business](mdb-onboard-devices.md#local-script-in-defender-for-business).         |
 | Onboard devices using Microsoft Intune     | If you were already using Microsoft Intune before getting Defender for Endpoint, you can use Microsoft Intune to onboard devices. Try onboarding macOS, iOS, Linux, and Android devices with Microsoft Intune. To learn more, see [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
 | Edit security policies     | If you're managing your security policies in Defender for Business (preview), use the **Device configuration** page to view and edit your policies. To learn more, see [View or edit policies in Microsoft Defender for Business (preview)](mdb-view-edit-policies.md).        |
 | Execute a simulated attack   | Several tutorials and simulations are available in Defender for Business (preview). These tutorials and simulations are designed to show you firsthand how the threat protection features of Defender for Business (preview) can work for your organization. To try one or more of the tutorials, see [Recommended tutorials for Microsoft Defender for Business (preview)](#recommended-tutorials-for-defender-for-business).         |
