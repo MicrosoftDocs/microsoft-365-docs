@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 01/06/2022
+ms.date: 02/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -16,7 +16,7 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
-- m365initiative-defender-business
+- m365-initiative-defender-business
 ---
 
 # Manage devices in Microsoft Defender for Business (preview)
@@ -68,7 +68,7 @@ See [Onboard devices to Microsoft Defender for Business (preview)](mdb-onboard-d
 
 ## Offboard a device
 
-See [Offboard a device](mdb-onboard-devices.md#what-if-i-want-to-offboard-a-device).
+See [Offboarding a device](mdb-onboard-devices.md#offboarding-a-device).
 
 ## Next steps
 

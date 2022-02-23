@@ -1,5 +1,5 @@
 ---
-title: Understand and use attack surface reduction
+title: Understand and use attack surface reduction (ASR)
 ms.reviewer: 
 description: Learn about the attack surface reduction capabilities of Microsoft Defender for Endpoint.
 keywords: asr, attack surface reduction, Microsoft Defender for Endpoint, microsoft defender, antivirus, av, windows defender
@@ -92,6 +92,9 @@ You can enable audit mode using Group Policy, PowerShell, and configuration serv
 
 > [!TIP]
 > You can also visit the Windows Defender Testground website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to confirm the features are working and see how they work.
+
+> [!NOTE]
+> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
 
 | Audit options | How to enable audit mode | How to view events |
 |---|---|---|

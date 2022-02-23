@@ -76,8 +76,8 @@ Make sure you understand the following prerequisites before you turn on this fea
 - Microsoft 365 Apps for enterprise:
     - **Windows**: Minimum version 2107 from Current Channel or Monthly Enterprise Channel
     - **macOS**: Minimum version 16.51
-    - **iOS**: Now in preview when you [opt in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 2.56
-    - **Android**: Now in preview when you [opt in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 16.0.14729
+    - **iOS**: Now in preview when you [opt in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 2.58
+    - **Android**: Now in preview when you [opt in](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android) with minimum version 16.0.14931
 
 - All apps, services, and operational tools in your tenant must support the new [labeling metadata](#metadata-changes-for-sensitivity-labels). If you use any of the following, check the minimum versions required:
     
@@ -123,7 +123,9 @@ Before you enable the tenant setting for co-authoring for files encrypted with s
     
     For labels with any of these encryption configurations, the labels display in Office apps. However, when users select these labels and nobody else is editing the document, they're warned that co-authoring and AutoSave won't be available. If somebody else is editing the document, users see a message that the labels can't be applied.
 
-- If you use the Azure Information Protection unified labeling client: Check the documentation for this labeling client for [more requirements or limitations](/azure/information-protection/known-issues#known-issues-for-co-authoring).
+- If you use the Azure Information Protection unified labeling client: Check the documentation for this labeling client for [more requirements or limitations](/azure/information-protection/known-issues#known-issues-for-co-authoring). 
+    > [!NOTE]
+    > These limitations for the unified labeling client include a [change of dialog box](/azure/information-protection/known-issues#user-interface-changes-when-applying-labels) for users who select labels that prompt them to select permissions.
 
 ## How to enable co-authoring for files with sensitivity labels
 

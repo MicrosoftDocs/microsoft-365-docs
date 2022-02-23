@@ -13,10 +13,9 @@ ms.topic: article
 
 # Assign licenses
 
-As part of preparing to enroll in Microsoft Managed Desktop, you'll need to be sure you've obtained the necessary licenses. If you haven't already obtained the licenses, see [More about licenses](../get-ready/prerequisites.md#more-about-licenses) for details about exactly which licenses you need.
+In preparation to enroll in Microsoft Managed Desktop, you must ensure you've obtained the necessary licenses. For more information about licenses, see [More about licenses](../get-ready/prerequisites.md#more-about-licenses) for the licenses you'll need.
 
-
-If your licenses are all lined up, it's time now to assign them to your users. To assign licenses, we recommend that you take advantage of the [group-based licensing feature](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) of Azure Active Directory.
+When you have the appropriate licenses, assign them to your users. To assign licenses, we recommend that you take advantage of the [group-based licensing feature](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) of Azure Active Directory.
 
 If you have any difficulty with license assignment, contact Admin [support](../working-with-managed-desktop/admin-support.md).
 
@@ -28,7 +27,7 @@ If you have any difficulty with license assignment, contact Admin [support](../w
 1. Deploy and assign [Intune Company Portal](company-portal.md).
 1. Assign licenses (this article).
 1. [Deploy apps](deploy-apps.md).
-1. [Set up devices](set-up-devices.md).
+1. [Prepare devices](prepare-devices.md).
 1. Set up [first-run experience with Autopilot and the Enrollment Status Page](esp-first-run.md).
 1. [Enable user support features](enable-support.md).
 1. [Get your users ready to use devices](get-started-devices.md).
