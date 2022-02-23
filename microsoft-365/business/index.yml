@@ -16,7 +16,7 @@ metadata:
   - intro-hub-or-landing
   author: efrene #Required; your GitHub user alias, with correct capitalization.
   ms.author: efrene #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/17/2022
+  ms.date: 02/23/2022
 
 # productDirectory section (optional)
 productDirectory:
@@ -56,7 +56,7 @@ conceptualContent:
           text: Overview of Microsoft 365 Business Premium
         - url: ../business-video/index.yml
           itemType: video
-          text: Microsoft 365 Business Premium training
+          text: Microsoft 365 for business video training
         - url: https://go.microsoft.com/fwlink/?linkid=2164213
           itemType: overview
           text: Compare Microsoft 365 for business plans
