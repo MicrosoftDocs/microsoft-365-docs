@@ -61,8 +61,7 @@ The following table compares security features and capabilities in Defender for 
 | [Automated investigation and response](../defender-endpoint/automated-investigations.md) | Yes | Yes |
 | [Threat & vulnerability management](../defender-endpoint/tvm-dashboard-insights.md) | Yes | Yes |
 | Centralized management and reporting  | Yes  | Yes  |
-| [APIs](../defender-endpoint/apis-intro.md) <br/>(enables you to integrate with custom apps or reporting solutions)  | Yes | Yes |
-
+| [APIs](../defender-endpoint/apis-intro.md) <br/>(for integration with custom apps or reporting solutions)  | Yes | Yes |
 
 
 ## Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2
