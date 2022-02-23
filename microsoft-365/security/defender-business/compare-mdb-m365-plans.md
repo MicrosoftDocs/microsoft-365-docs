@@ -44,7 +44,7 @@ Microsoft offers a wide variety of cloud solutions and services, including sever
 > [!NOTE]
 > This article is intended to provide a high-level overview of threat protection features included in Microsoft Defender for Business (preview) and Microsoft 365 Business Premium. This article is not intended to serve as a service description or licensing contract document. For more information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
-The following table compares security features and capabilities in Defender for Business to Microsoft 365 Business Premium while Defender for Business is in preview. When Defender for Business becomes generally available, it will be included in Microsoft 365 Business Premium. <br/><br/>
+The following table compares security features and capabilities in Defender for Business (standalone) to Microsoft 365 Business Premium. In March 2022, Defender for Business will be rolled out as part of Microsoft 365 Business Premium. <br/><br/>
 
 | Feature/Capability | [Microsoft Defender for Business](mdb-overview.md)<br/>(standalone; currently in preview) | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(includes Defender for Business)) |
 |:---|:---|:---|
