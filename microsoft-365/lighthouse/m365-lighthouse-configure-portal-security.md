@@ -41,7 +41,7 @@ To get started with GDAP, see [Set up roles to manage customer tenants](m365-lig
 
 MSP technicians may also access Lighthouse by using Admin Agent or Helpdesk Agent roles via Delegated Admin Privileges (DAP).
 
-For non-customer tenant-related actions in Lighthouse (for example, onboarding, customer deactivating/reactivating, managing tags, reviewing logs), MSPs must have an assigned role in the partner tenant. The previous article link details such roles and their permissions in Lighthouse.
+For non-customer tenant-related actions in Lighthouse (for example, onboarding, customer deactivating/reactivating, managing tags, reviewing logs), MSP technicians must have an assigned role in the partner tenant. The previous article link details such roles and their permissions in Lighthouse.
 
 ## Set up Azure AD Privileged Identity Management (PIM)
 
@@ -50,7 +50,7 @@ MSPs can minimize the number of people who have high-privilege role access to se
 > [!NOTE]
 > Using Azure AD PIM requires an Azure AD Premium P2 license in the partner tenant.
 
-The following steps elevate partner tenant users to time-scoped Admin Agent roles by using PIM:
+The following steps elevate partner tenant users to time-scoped higher privilege roles by using PIM:
 
 1. Create a role-assignable group as described in the article [Create a group for assigning roles in Azure Active Directory](/azure/active-directory/roles/groups-create-eligible).
 

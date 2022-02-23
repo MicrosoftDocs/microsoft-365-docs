@@ -25,7 +25,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 MSPs may enable granular and time-bound access to their customer tenants in Microsoft 365 Lighthouse by configuring Granular Delegated Admin Privileges (GDAP) in Partner Center. GDAP offers MSPs a high level of control and flexibility by providing customer access through [Azure Active Directory (Azure AD) built-in roles](/azure/active-directory/roles/permissions-reference). Assigning [the least privileged roles by task](/azure/active-directory/roles/delegate-by-task) through GDAP to MSP technicians reduces security risk for both MSPs and customers. Enable GDAP to assign more granular roles to your technicians who use Lighthouse and adopt a least-privileged approach to security across customer tenants.
 
-Note: If MSP technicians still access customer environments with the Helpdesk Agent or Admin Agent roles granted through Delegated Admin Privileges (DAP), see [DAP in Lighthouse](#dap-in-lighthouse) in this article. If both GDAP and DAP coexist, roles granted to users through GDAP take precedence for customers where a GDAP relationship has been established.
+If MSP technicians still access customer environments with the Helpdesk Agent or Admin Agent roles granted through Delegated Admin Privileges (DAP), see [DAP in Lighthouse](#dap-in-lighthouse) in this article. If both GDAP and DAP coexist, roles granted to users through GDAP take precedence for customers where a GDAP relationship has been established.
 
 ## Set up GDAP in Lighthouse
 
@@ -87,7 +87,9 @@ For descriptions of specific permissions, see [Azure AD built-in roles](/azure/a
 
 DAP restricts access to customers in Lighthouse with two roles: Admin Agent and Helpdesk Agent. You can check which users in the partner tenant have the Admin Agent or Helpdesk Agent roles by reviewing security group memberships on the [Azure AD – All Groups](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) page. To review which customers still have DAP in place, see [Monitoring administrative relationships and self-service DAP removal](/partner-center/dap-monitor-self-serve-removal).
 
-For customers with DAP and no GDAP, the Admin Agent role grants permissions to view all tenant information for all customers and many write actions in Lighthouse (see below for other actions that also require a role in the partner tenant). The Helpdesk Agent role grants permissions to view all tenant information and take limited action in Lighthouse (such as resetting user passwords, blocking user sign-ins, and updating customer contact information and websites).
+For customers with DAP and no GDAP, the Admin Agent role grants permissions to view all tenant information and take any action in Lighthouse (see below for other actions that also require a role in the partner tenant). 
+
+The Helpdesk Agent role grants permissions to view all tenant information and take limited action in Lighthouse (such as resetting user passwords, blocking user sign-ins, and updating customer contact information and websites).
 
 Given the broad permissions granted to partner users with DAP, we recommend adopting GDAP as soon as possible. Both models coexist, but GDAP will eventually replace DAP, and GDAP permissions take precedence over DAP permissions during the transition period. For more information, see [GDAP frequently asked questions](/partner-center/gdap-faq).
 
@@ -127,7 +129,7 @@ Azure AD role assigned with the following property set:<br />
 Azure AD role assigned with the following property set:<br />
 <strong>microsoft.office365.serviceHealth/allEntities/allTasks</strong><br />
 (For a complete list of Azure AD roles, see <a href="/azure/active-directory/roles/permissions-reference">Azure AD built-in roles</a>.)</p>
-<p>And</p>
+<p><strong>And</strong></p>
 <p>At least one DAP delegated role assigned (Admin Agent or Helpdesk Agent)</p></td>
 <td><ul>
 <li><p>View service health information.</p></li>
