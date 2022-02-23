@@ -2,8 +2,8 @@
 title: "Microsoft 365 support integration with ServiceNow configuration overview"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,6 +20,8 @@ description: "Scoped Certified application installation and configuration guide 
 ---
 
 # Microsoft 365 support integration with ServiceNow configuration overview
+
+The following content applies to the Microsoft 365 support integration app with a minimum version of **1.0.7**.
 
 **Microsoft 365 support integration** enables you to integrate Microsoft 365 help, support, and service health with your ServiceNow instances. You can research Microsoft known and reported issues, resolve incidents, complete tasks by using Microsoft recommended solutions, and, if necessary, escalate to Microsoft human-assisted support.
 
@@ -77,8 +79,10 @@ After the Microsoft 365 Support Integration app has been installed, two Applicat
 
 ## What configuration is right for your organization?
 
-Before setting up any configuration for Microsoft 365 support integration, understand how your ServiceNow environment is set up.
+After you've downloaded the app, navigate to the Microsoft 365 setup wizard in your SNOW environment to complete the setup process.
+:::image type="content" source="../../media/154124985-76e13e7d-b32e-4741-830b-bbb110d3ecbf.png" alt-text="Snow setup wizard":::
 
+You can learn more about the steps by visiting the following pages:
 - If your ServiceNow environment allows Basic Authentication (access with ServiceNow user credential) for inbound webservice calls, then follow instructions in [Set up Microsoft 365 support integration with ServiceNow Basic Authentication](servicenow-basic-authentication.md).
 - If your ServiceNow environment does NOT allows Basic Authentication (access with ServiceNow user credential) for inbound webservice calls, then follow instructions in [Set up Microsoft 365 support integration with Azure AD Auth Token](servicenow-aad-oauth-token.md).
   - This configuration will require an SSO tenant in order for the AAD Auth Token to work correctly.
