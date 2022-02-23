@@ -273,8 +273,7 @@ Now that you’ve removed Chrome from the disallowed browsers/apps list, you can
 
 ### Known Issues and Limitations
 
-1. Block Override enforcement for cloud egress is not supported.
-2. Incognito mode is not supported and must be disabled.
+1. Incognito mode is not supported and must be disabled.
 
 ## Next steps
 
