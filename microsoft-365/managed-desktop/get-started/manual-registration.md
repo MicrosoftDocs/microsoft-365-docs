@@ -1,6 +1,6 @@
 ---
-title: Register new devices yourself
-description: Register devices yourself so they can be managed by Microsoft Managed Desktop
+title: Manual registration
+description: Register devices to be managed by Microsoft Managed Desktop
 ms.service: m365-md
 author: tiaraquan
 f1.keywords:
@@ -13,7 +13,7 @@ ms.topic: article
 audience: Admin
 ---
 
-# Register new devices yourself
+# Manual registration
 
 Microsoft Managed Desktop can work with brand-new devices, or you can reuse devices you might already have. If you reuse devices, you must reimage them. You're able to register devices with Microsoft Managed Desktop in the Microsoft Endpoint Manager portal.
 
