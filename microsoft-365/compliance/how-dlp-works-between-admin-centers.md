@@ -30,7 +30,7 @@ In Microsoft 365, you can create a data loss prevention (DLP) policy in two diff
     
 - In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, you can create a DLP policy to help protect content only in Exchange. This policy can use Exchange mail flow rules (also known as transport rules), so it has more options specific to handling email. For more information, see [DLP in the Exchange admin center](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention).
     
-DLP polices created in these admin centers work side by side - this topic explains how.
+DLP policies created in these admin centers work side by side - this topic explains how.
   
 ![DLP pages in Security and Compliance Center and Exchange admin center.](../media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
   
@@ -56,4 +56,5 @@ Policy tips can work either with DLP policies and mail flow rules created in the
   
 If you've configured policy tips in the Exchange admin center, any policy tips that you configure in the Security & Compliance Center won't appear to users in Outlook on the web and Outlook 2013 and later until you turn off the tips in the Exchange admin center. This ensures that your current Exchange mail flow rules will continue to work until you choose to switch over to the Security & Compliance Center.
   
-Note that while policy tips can draw only from a single location, email notifications are always sent, even if you're using DLP policies in both the Security & Compliance Center and the Exchange admin center.
+>[!Note]
+>While policy tips can draw only from a single location, email notifications are always sent, even if you're using DLP policies in both the Security & Compliance Center and the Exchange admin center.
