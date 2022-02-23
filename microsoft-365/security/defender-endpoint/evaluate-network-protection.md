@@ -13,7 +13,8 @@ ms.author: dansimp
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
-ms.collection: m365-security-compliance
+ms.collection: m365solution-scenario
+ms.date:
 ---
 
 # Evaluate network protection
@@ -31,6 +32,9 @@ This article helps you evaluate network protection by enabling the feature and g
 
 > [!TIP]
 > You can also visit the Microsoft Defender demo scenarios website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to see how other protection features work.
+
+> [!NOTE]
+> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
 
 ## Enable network protection in audit mode
 
