@@ -20,6 +20,7 @@ ms.custom:
 - MSB365
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
+- admindeeplinkSPO
 search.appverid:
 - BCS160
 - MET150
@@ -270,7 +271,7 @@ After the feature is turned on, you can search for files, folders, and many acti
 To change the sharing settings for OneDrive and SharePoint:
 
 1. Go to the admin center at <https://admin.microsoft.com> and then choose **SharePoint** under **Admin centers** in the left nav.
-2. In the SharePoint admin center, go to **Policies** \> **Sharing**.
+2. In the SharePoint admin center, go to **Policies** \> <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>.
 3. On the **Sharing** page, under **File and folder links**, select **Specific people**, and under **Advanced settings for "Anyone" links**, select **These links must expire within this many days**, and type in 14 (or another number of days you want to restrict the link lifetime to).
 
    ![Choose Specific people and set link expiration to 14 days.](../media/anyonelinks.png)

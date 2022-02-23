@@ -39,17 +39,15 @@ You must add a satellite location for each geo location where you want to store 
 
 To add a satellite location
 
-1. Open the SharePoint admin center.
+1. Open the SharePoint admin center. and go to <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank">**Geo locations**</a>.
 
-2. Navigate to the **Geo locations** tab.
+1. Select **Add location**.
 
-3. Click **Add location**.
+1. Select the location that you want to add, and then select **Next**.
 
-4. Select the location that you want to add, and then click **Next**.
+1. Type the domain that you want to use with the geo location, and then select **Add**.
 
-5. Type the domain that you want to use with the geo location, and then click **Add**.
-
-6. Click **Close**.
+1. Select **Close**.
 
 Provisioning may take from a few hours up to 72 hours, depending on the size of your tenant. Once provisioning of a satellite location has completed, you will receive an email confirmation. When the new geo location appears in blue on the map on the **Geo locations** tab in the OneDrive admin center, you can proceed to set users' preferred data location to that geo location. 
 
