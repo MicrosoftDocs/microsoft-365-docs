@@ -1,6 +1,6 @@
 ---
 title: Evaluate and pilot Microsoft 365 Defender, an XDR
-description: Plan your Microsoft 365 Defender trial lab or pilot environment to test and experience a security solution designed to protect devices, identity, data, and applications.
+description: What is XDR? What does a Microsoft XDR look like? Use this blog series to plan your Microsoft 365 Defender trial lab or pilot environment to test and experience a security solution designed to protect devices, identity, data, and applications.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -23,15 +23,32 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Evaluate and pilot Microsoft 365 Defender
+# Evaluate and pilot the XDR Microsoft 365 Defender
 
 **Applies to:**
 
 - Microsoft 365 Defender
 
-Microsoft 365 Defender is an extended detection and response (XDR) solution that automatically collects, correlates and analyzes signal, threat and alert data from across your Microsoft 365 environment, including endpoint, email, applications and identities. It leverages extensive AI and automation to automatically stop attacks and remediate affected assets to a safe state. The following articles step you through the process of setting up a trial environment so you can evaluate the features and capabilities of Microsoft 365 Defender. 
+# How this article series works
 
-As you walk through these articles, the steps will illustrate how to enable each component, configure settings, and begin monitoring with a pilot group. When you're ready, you can finish by promotion your evaluation environment directly into production.
+This series of articles is designed to step you through the entire process of setting up a trial XDR environment, *end-to-end*, so you can evaluate the features and capabilities of Microsoft 365 Defender and even promote the evaluation environment straight to production when and if you're ready.
+
+If you're new to thinking about XDR, you can scan these 7 linked articles to get a feel for how comprehensive the solution is.
+
+- [How to create the environment](eval-create-eval-environment.md)
+- Set up or learn about each technology of this Microsoft XDR
+    - [Microsoft Defender for Identity](eval-defender-identity-overview.md)
+    - [Microsoft Defender for Office](eval-defender-office-365-overview.md)
+    - [Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
+    - [Microsoft Defender for Cloud Apps](eval-defender-mcas-overview.md)
+- [How to investigate and respond using this XDR](eval-defender-investigate-respond.md)
+- [Promote the trial environment to production](eval-defender-promote-to-production.md)
+
+## Microsoft 365 Defender is a Microsoft XDR solution
+
+Microsoft 365 Defender is an **extended detection and response (XDR) solution** that automatically collects, correlates, and analyzes signal, threat, and alert data from *across* your Microsoft 365 environment, including *endpoint, email, applications, and identities*. It leverages artificial intelligence (AI) and automation to *automatically* stop attacks, and remediate affected assets into a safe state.
+
+## XDR Microsoft recommendations
 
 Microsoft recommends you create your evaluation in an existing production subscription of Office 365. This way you will gain real-world insights immediately and can tune settings to work against current threats in your environment. After you've gained experience and are comfortable with the platform, simply promote each component, one at a time, to production.
 
