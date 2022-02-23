@@ -77,6 +77,8 @@ To learn more about automatic onboarding, see step 3 in [Use the wizard to set u
 
 Microsoft Defender for Business security configuration was built on a capability known as [Security Management for Microsoft Defender for Endpoint (preview)](/mem/intune/protect/mde-security-integration). It enables you to onboard devices to Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) without requiring those devices to be fully enrolled in Microsoft Endpoint Manager beforehand. You can onboard devices using a package that you download and then run on the device. Running the package establishes a trust between each device (if the trust doesn't already exist) and Azure Active Directory (Azure AD), and each device uses its Azure AD Identity to communicate with Endpoint Manager. As a result, you can view your devices and policies in Endpoint Manager.
 
+This method enables you to onboard devices and configure your antivirus and firewall policies in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). You can then view your devices and policies in the Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)).
+
 To use this option, certain settings must be configured beforehand. To learn more, including prerequisites, see [Manage Microsoft Defender for Endpoint on devices with Microsoft Endpoint Manager](/mem/intune/protect/mde-security-integration).
 
 ## Microsoft Endpoint Manager
