@@ -70,7 +70,7 @@ Integrating Microsoft OneDrive LTI with Canvas is a two step process. The first 
 :::image type="content" source="media/OneDrive-LTI-20.png" alt-text="The LTI tenant registration page, which shows the JSON text and the text box the key should be copied into.":::
 
 9. Review and save your changes. A message will be displayed on successful registration.
-10. Sign into the <a href="https://onedrivelti.microsoft.com/admin" target="_blank">Microsoft OneDrive LTI Registration Portal</a> and  Select the **Admin Consent** button and accept the remaining permissions.
+10. Sign into the <a href="https://onedrivelti.microsoft.com/admin" target="_blank">Microsoft OneDrive LTI Registration Portal</a>, select the **Admin Consent** button, and accept the remaining permissions.
 11. Your registration details can also be reviewed by selecting the **View LTI Tenants** button on the home page.
 
 ## Enable Microsoft OneDrive LTI in Canvas Courses
