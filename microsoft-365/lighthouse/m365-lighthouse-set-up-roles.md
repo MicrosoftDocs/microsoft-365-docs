@@ -46,12 +46,6 @@ We recommend naming security groups based on the tasks MSP technicians handle in
 ### Example security groups
 
 <table>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 26%" />
-<col style="width: 28%" />
-<col style="width: 24%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th></th>
@@ -102,10 +96,6 @@ Given the broad permissions granted to partner users with DAP, we recommend adop
 For certain actions in Lighthouse, role assignments in the partner tenant are required. The following table lists partner tenant roles and their associated permissions.
 
 <table>
-<colgroup>
-<col style="width: 56%" />
-<col style="width: 43%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th><strong>Partner tenant roles</strong></th>
