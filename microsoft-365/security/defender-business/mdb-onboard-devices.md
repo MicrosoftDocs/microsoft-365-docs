@@ -42,7 +42,7 @@ With Microsoft Defender for Business (preview), you have several options to choo
    - [Automatic onboarding for Windows devices enrolled in Microsoft Endpoint Manager](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)
    - [Microsoft Defender for Business security configuration](#microsoft-defender-for-business-security-configuration)
    - [Microsoft Endpoint Manager](#microsoft-endpoint-manager)
-   - [Local script in Defender for Business](#local-script-in-defender-for-business)
+   - [Local script for evaluating Defender for Business](#local-script-in-defender-for-business)
    - [Other methods](#onboard-devices-using-a-method-not-listed-in-this-article)
 
 2. [Run a detection test](#run-a-detection-test) for newly onboarded Windows devices.
