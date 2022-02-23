@@ -60,7 +60,7 @@ The following table compares security features and capabilities in Defender for 
 | [Endpoint detection and response](../defender-endpoint/overview-endpoint-detection-response.md) <br/>(behavior-based detection, manual response actions, and live response) | Yes | Yes |
 | [Automated investigation and response](../defender-endpoint/automated-investigations.md) | Yes | Yes |
 | [Threat & vulnerability management](../defender-endpoint/tvm-dashboard-insights.md) | Yes | Yes |
-| Centralized management and reporting | Yes <br/>You can onboard devices and manage them in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))<br/>--- or ---<br/>Use Microsoft Intune ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) | Yes. <br/>You can onboard devices and manage them in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))<br/>--- or ---<br/>Use Microsoft Intune ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) |
+| Centralized management and reporting  | Yes  | Yes  |
 | [APIs](../defender-endpoint/apis-intro.md) <br/>(enables you to integrate with custom apps or reporting solutions)  | Yes | Yes |
 
 
