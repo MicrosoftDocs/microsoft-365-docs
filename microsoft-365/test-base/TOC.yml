@@ -8,6 +8,8 @@
   items:  
     - name: Create Test Base Account
       href: createAccount.md
+    - name: Build a Package
+      href: buildpackage.md
     - name: Uploading a Package
       href: uploadApplication.md
     - name: Upload Binaries & Dependencies

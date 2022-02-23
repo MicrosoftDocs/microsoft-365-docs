@@ -58,7 +58,7 @@ You'll be prompted to download the advanced client test application from the web
 
 ### Start the advanced tests client application
 
-Once the client application starts, the web page will update to show this result. Test data will start to be received to the web page. The page updates each time new data is received and you can review the data as it arrives.
+Once the client application starts, the web page will update to show this result. Test data will start to be received to the web page. The page updates each time new-data is received and you can review the data as it arrives.
 
 ### Advanced tests completed and test report upload
 
@@ -154,7 +154,7 @@ This is provided for information only and does not contribute to any network ins
 
 The in-use DNS Recursive Resolver is identified by making a specific DNS request and then asking the DNS Name Server for the IP Address that it received the same request from. This IP Address is the DNS Recursive Resolver and it will be looked up in IP Address location databases to find the location. The distance from the user office location to the DNS Recursive Resolver server location is then calculated. This is shown as a network insight if the distance is greater than **500 miles** (800 kilometers).
 
-The location looked up from the network egress IP Address may not be accurate and this would lead to a false result from this test. To validate if this error is occurring for a specific IP Address you can use publicly accessible network IP Address location web sites.
+The location looked up from the network egress IP Address may not be accurate and this would lead to a false result from this test. To validate if this error is occurring for a specific IP Address, you can use publicly accessible network IP Address location web sites.
 
 This network insight will specifically impact the selection of the Exchange Online service front door. To address this insight local and direct network egress should be a pre-requisite and then DNS Recursive Resolver should be located close to that network egress.
 
@@ -188,7 +188,7 @@ The in-use SharePoint service front door is identified in the same way that the 
 
 #### Download speed
 
-We measure the download speed for a 15Mb file from the SharePoint service front door. The result is shown in megabytes per second to indicate what size file in megabytes can be downloaded from SharePoint or OneDrive in **one second**. The number should be similar to one tenth of the minimum circuit bandwidth in megabits per second. For example if you have a 100mbps internet connection, you may expect 10 megabytes per second (10MBps).
+We measure the download speed for a 15 Mb file from the SharePoint service front door. The result is shown in megabytes per second to indicate what size file in megabytes can be downloaded from SharePoint or OneDrive in **one second**. The number should be similar to one tenth of the minimum circuit bandwidth in megabits per second. For example if you have a 100mbps internet connection, you may expect 10 megabytes per second (10 MBps).
 
 #### Buffer bloat
 
@@ -204,11 +204,11 @@ This section shows test results related to Microsoft Teams.
 
 #### Media connectivity (audio, video, and application sharing)
 
-This tests for UDP connectivity to the Microsoft Teams service front door. If this is blocked then Microsoft Teams may still work using TCP, but audio and video will be impaired. Read more about these UDP network measurements, which also apply to Microsoft Teams at [Media Quality and Network Connectivity Performance in Skype for Business Online](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance).
+This tests for UDP connectivity to the Microsoft Teams service front door. If this is blocked, then Microsoft Teams may still work using TCP, but audio and video will be impaired. Read more about these UDP network measurements, which also apply to Microsoft Teams at [Media Quality and Network Connectivity Performance in Skype for Business Online](/skypeforbusiness/optimizing-your-network/media-quality-and-network-connectivity-performance).
 
 #### Packet loss
 
-Shows the UDP packet loss measured in a 10 second test audio call from the client to the Microsoft Teams service front door. This should be lower than **1.00%** for a pass.
+Shows the UDP packet loss measured in a 10-second test audio call from the client to the Microsoft Teams service front door. This should be lower than **1.00%** for a pass.
 
 #### Latency
 

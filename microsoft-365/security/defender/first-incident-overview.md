@@ -32,7 +32,7 @@ ms.technology: m365d
 
 An organization's incident response strategy determines its ability to deal with increasingly disruptive security incidents and cybercrime. While taking preventative measures is important, the ability to act quickly to contain, eradicate, and recover from detected incidents can minimize damage and business losses.
 
-This incident response walkthrough shows how you, as part of a security operations team, can perform most of the key incident response steps within Microsoft 365 Defender. Here are the steps:
+This incident response walkthrough shows how you, as part of a security operations (SecOps) team, can perform most of the key incident response steps within Microsoft 365 Defender. Here are the steps:
 
 - Preparation of your security posture
 - For each incident:

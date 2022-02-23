@@ -102,7 +102,7 @@ Here's an example:
 
     For a quick guide about which domain each detection source covers, review the [Detect](#detection-by-microsoft-365-defender) section of this article.
 
-2. From the **Alerts** tab, an analyst can pivot to the detection source to conduct a more in-depth investigation and analysis. For example, selecting Malware Detection with Microsoft Defender for Cloud Apps as the detection source takes the analyst to its corresponding alert page.
+2. From the **Alerts** tab, you can pivot to the detection source to conduct a more in-depth investigation and analysis. For example, selecting Malware Detection with Microsoft Defender for Cloud Apps as the detection source takes the analyst to its corresponding alert page.
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-select-alert.png" alt-text="The Incidents page on which you select an alert of an incident." lightbox="../../media/first-incident-analyze/first-incident-analyze-select-alert.png":::
 
@@ -120,7 +120,7 @@ Here's an example:
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" alt-text="The alerts details for the Microsoft Defender for Cloud Apps" lightbox="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" :::
 
-6. By selecting other alerts, an analyst can get a complete picture of the attack.
+6. By selecting other alerts, you can get a complete picture of the attack.
 
 ## Next step
 
