@@ -124,6 +124,7 @@ The limits described in this section are related to exporting documents out of a
 
 ## Notes
 
+> [!NOTE]
 > <sup>1</sup> This is the maximum number of tags that you can create in a case. This limit isn't related to the number of documents that can be tagged.
 >
 > <sup>2</sup> This limit is shared with exporting content in other eDiscovery tools. This means that concurrent exports in Content search and Core eDiscovery (and adding content to review sets in Advanced eDiscovery) are all applied against this limit.
