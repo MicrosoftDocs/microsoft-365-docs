@@ -179,7 +179,7 @@ sections:
           Admins can set up a mail flow rule to remove encryption for outgoing mail. You can only set up a rule to remove encryption for incoming mail that originates from your Exchange Online organization.
 
       - question: |
-          Can I automatically remove encryption to journal mail?
+          Can I automatically remove encryption on journal mail?
         answer: |
           For an Exchange Online mailbox, admins must enable journal decryption and set up an Exchange Online journaling rule to generate a decrypted copy of the mail into the journaling mailbox. The journaling rule will take any mail and/or attachments that have encryption and send the oringial plus a decrypted copy into the journal mailbox. You can only set up a journaling rule that can decrypt mail or attachment when the encrypted item originates from your Exchange Online organization.  
           To enable Exchange Online jounraling:
