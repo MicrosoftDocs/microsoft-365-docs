@@ -43,7 +43,7 @@
       href: ../business/set-up-mobile-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Protect unmanaged PCs and Macs
       href: m365bp-protect-pcs-macs.md
-- name: Protect email for all staff
+- name: Protect email
   items: 
     - name: Protect against phishing and other attacks
       href: m365-campaigns-phishing-and-attacks.md
@@ -59,9 +59,9 @@
       href: share-files-and-videos.md
     - name: Create a Communication site for your organization
       href: create-communications-site.md
-- name: Reset or remove campaign data from devices
+- name: Reset or remove data from devices
   items: 
-    - name: Remove campaign or business data
+    - name: Remove data from devices
       href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Reset devices to factory settings
       href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
