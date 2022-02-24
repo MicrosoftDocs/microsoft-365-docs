@@ -15,8 +15,8 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: 
+- commerce_billing
 - AdminSurgePortfolio
-- commcerce_billing
 - AdminTemplateSet
 - admindeeplinkMAC
 search.appverid: MET150
