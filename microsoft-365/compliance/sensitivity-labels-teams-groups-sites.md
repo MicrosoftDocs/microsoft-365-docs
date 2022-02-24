@@ -38,6 +38,9 @@ In addition to using [sensitivity labels](sensitivity-labels.md) to classify and
 
 When you apply this sensitivity label to a supported container, the label automatically applies the classification and configured protection settings to the site or group.
 
+> [!NOTE]
+> Sensitivity labels for containers support [Teams shared channels](/MicrosoftTeams/shared-channels), currently in preview. If a team has any shared channels, they automatically inherit the sensitivity label settings from their parent team, and that label can't be removed or replaced with a different label.
+
 Content in these containers however, do not inherit the labels for the classification or settings for files and emails, such as visual markings and encryption. So that users can label their documents in SharePoint sites or team sites, make sure you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 > [!NOTE]
