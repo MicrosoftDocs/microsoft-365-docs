@@ -61,6 +61,22 @@ Creating the extractor opens the extractor page. Here you see a list of your sam
  
 Once you labeled five files, a notification banner displays informing you to move to training. You can choose to more label more documents or advance to training. 
 
+### Refine extracted information
+
+If you have duplicate entities and want to extract only one value, you can set a rule to specify how you want it processed. To refine extracted information, follow these steps:
+
+1. From the model home page, in the **Entity extractors** section, select the distractor you want to refine, and then select **Refine extracted info**.
+
+2. On the **Choose a refiner** page, select one of the following rules:
+
+    - Keep only the first lines
+    - Keep only the last lines
+    - Keep values that are extracted first
+    - Keep values that are extracted last
+    - Remove duplicates
+
+3. TBD
+
 ### Use Find to search your file
 
 You can use the **Find** feature to search for an entity in your document that you want to label.
