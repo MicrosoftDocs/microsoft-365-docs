@@ -2,16 +2,14 @@
   items: 
     - name: Overview
       href: index.md
-    - name: How Microsoft 365 protects your organization
-      href: m365bp-secure-users.md
     - name: Get Microsoft 365 Business Premium
       href: get-microsoft-365-business-premium.md
     - name: Get Microsoft 365 for campaigns
       href: get-microsoft-365-campaigns.md
+    - name: How Microsoft 365 protects your organization
+      href: m365bp-secure-users.md
 - name: Set up and sign in
   items: 
-    - name: Review the requirements
-      href: m365bp-requirements.md
     - name: Set up Microsoft 365 Business Premium
       href: m365bp-setup.md
     - name: Set up Microsoft 365 for Campaigns
