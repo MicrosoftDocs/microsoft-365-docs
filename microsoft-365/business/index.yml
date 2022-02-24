@@ -136,7 +136,7 @@ conceptualContent:
         - url: ../security/office-365-security/protect-against-threats.md
           itemType: how-to-guide
           text: Set up and configure Defender for Office 365
-        - url: ../security/office-365-security/anti-malware-protection-faq-eop.md
+        - url: ../security/office-365-security/anti-malware-protection-faq-eop.yml
           itemType: reference
           text: Defender for Office 365 FAQ
   # Card
