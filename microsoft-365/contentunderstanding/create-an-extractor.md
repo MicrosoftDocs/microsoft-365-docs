@@ -75,7 +75,9 @@ If you have duplicate entities and want to extract only one value, you can set a
     - Keep values that are extracted last
     - Remove duplicates
 
-3. TBD
+[Add screenshot]
+
+3. To see the refinement, from the **Extractors** panel, 
 
 ### Use Find to search your file
 
