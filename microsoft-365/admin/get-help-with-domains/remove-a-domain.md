@@ -145,7 +145,7 @@ For example, change the MX record at your DNS host. Email sent to your domain st
 
 - Before you update the MX record, let your users know the date you plan to switch their email, and the new email provider you plan to use. Also, if your users want to move their existing Microsoft email to the new provider, they must take extra steps.
 
-- On the day you change the MX record, make sure to [save your data](microsoft-365/commerce/subscriptions/cancel-your-subscription#save-your-data) and [uninstall Office if needed](microsoft-365/commerce/subscriptions/cancel-your-subscription#uninstall-office-optional).
+- On the day you change the MX record, make sure to [save your data](/microsoft-365/commerce/subscriptions/cancel-your-subscription#save-your-data) and [uninstall Office if needed](/microsoft-365/commerce/subscriptions/cancel-your-subscription#uninstall-office-optional).
 
 #### Update your domain MX and other DNS records (if you're using a custom domain)
 
@@ -153,7 +153,7 @@ If you switched your nameserver (NS) records to Microsoft 365 when you set up yo
 
 If you didn't switch NS records when you set up your domain, when you change the MX record, your mail starts going to the new address right away.
 
-To change your NS records, see [Change nameservers to set up Microsoft 365 with any domain registrar](../../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar#change-your-domains-nameserver-ns-records).
+To change your NS records, see [Change nameservers to set up Microsoft 365 with any domain registrar](../../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
 
 
 
