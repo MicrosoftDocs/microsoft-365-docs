@@ -92,4 +92,6 @@ Defender for Business (preview) brings enterprise-grade capabilities of Defender
 
 - [See the requirements for Microsoft Defender for Business (preview)](mdb-requirements.md)
 
+- [Get Microsoft Defender for Business (preview)](get-defender-business.md)
+
 - [Learn how to set up and configure Microsoft Defender for Business (preview)](mdb-setup-configuration.md) 

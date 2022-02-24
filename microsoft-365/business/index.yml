@@ -121,9 +121,6 @@ conceptualContent:
         - url: ../security/defender-business/mdb-overview.md
           itemType: overview
           text: Overview of Microsoft Defender for Business
-        - url: ../security/defender-business/get-defender-business.md
-          itemType: how-to-guide
-          text: Get Defender for Business 
         - url: ../security/defender-business/mdb-setup-configuration.md
           itemType: overview
           text: Set up and configure Defender for Business
@@ -136,9 +133,6 @@ conceptualContent:
         - url: ../security/office-365-security/defender-for-office-365.md
           itemType: overview
           text: Overview of Microsoft Defender for Office 365
-        - url: ../security/office-365-security/office-365-evaluation.md
-          itemType: how-to-guide
-          text: Get Defender for Office 365
         - url: ../security/office-365-security/protect-against-threats.md
           itemType: how-to-guide
           text: Set up and configure Defender for Office 365
