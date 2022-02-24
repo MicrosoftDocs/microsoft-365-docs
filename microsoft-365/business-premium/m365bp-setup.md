@@ -46,7 +46,7 @@ After you have finished the guided setup, there are additional steps to complete
 > [!TIP]
 > See the following section for more details about setting up and configuring Microsoft 365 Business Premium.
 
-## Set up and configure Microsoft 365 Business Premium
+## How to set up and configure Microsoft 365 Business Premium
 
 The following table describes how to set up and configure Microsoft 365 Business Premium, step by step.
 
