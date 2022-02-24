@@ -9,7 +9,6 @@ audience: Admin
 ms.topic: overview
 ms.date: 02/23/2022
 ms.service: o365-administration
-ms.technology: mdb
 localization_priority: Normal
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
