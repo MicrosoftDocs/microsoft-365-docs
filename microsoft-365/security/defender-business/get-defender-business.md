@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/21/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -35,7 +35,7 @@ If you have signed up for a trial, after you receive your acceptance email, you 
 
 ## Work with a Microsoft Solution Provider
 
-Microsoft has a list of solution providers who are authorized to sell offerings, including Microsoft Defender for Business. 
+Microsoft has a list of solution providers who are authorized to sell offerings, including Microsoft 365 Business Premium and Microsoft Defender for Business. 
 
 To find a solution provider in your area, take the following steps:
 
@@ -51,14 +51,14 @@ To find a solution provider in your area, take the following steps:
 
 *Beginning March 1, 2022, Defender for Business will start rolling out as part of Microsoft 365 Business Premium*. 
 
-[Try or buy Microsoft 365 Business Premium](../../business-premium/get-microsoft-365-business-premium.md).
+See [Try or buy Microsoft 365 Business Premium](../../business-premium/get-microsoft-365-business-premium.md).
 
 ## Sign up for the preview program
 
- Participating in the preview program enables you to try out Defender for Business before it becomes generally available. The preview program is available to:
+Participating in the preview program enables you to try out Defender for Business as a standalone subscription. The preview program is available to:
 
 - Microsoft partners who provide IT services to small and medium-sized businesses
-- Small and medium-sized businesses (up to 300 employees)
+- Small and medium-sized businesses (up to 300 employees) who do not already have Microsoft 365 Business Premium
 
 Here's how to sign up:
 
@@ -97,7 +97,7 @@ If your organization is using Microsoft 365 Business Premium, then you have Micr
 
 ## Activate your trial
 
-When you receive your acceptance email, here's how to activate your trial of Defender for Business.
+When you receive your acceptance email, here's how to activate your trial subscription: 
 
 1. In your acceptance email, select the link that includes your promo code. 
 
@@ -105,21 +105,23 @@ When you receive your acceptance email, here's how to activate your trial of Def
 
 3. When you sign in for the first time, you'll go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)). See [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
 
-4. If you're setting up things for the first time, select **Go to guided setup** and complete the following steps:
+4. Use one of the following procedures:
 
-   a. Install your Office apps or choose **Continue** to skip this step for now.
+   - If you're setting up a Microsoft 365 subscription for the first time, select **Go to guided setup** and complete the following steps:
 
-   b. If your company has a domain, you can add it now (this option is recommended). Alternately, you could choose to use your default `.onmicrosoft.com` domain for now.
+      a. Either install your Office apps now, or choose **Continue** to skip this step. (You can install your Office apps later.)
 
-   c. Add users and assign licenses. Each user you list will be assigned a license automatically. 
+      b. If your company has a domain, you can add it now (this option is recommended). Alternately, you could choose to use your default `.onmicrosoft.com` domain for now.
 
-## View and manage users
+      c. Add users and assign licenses. Each user you list will be assigned a license automatically. See [Add users and assign licenses at the same time](../../admin/add-users/add-users.md).
 
-1. Go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)) and sign in using the same account you used to request your trial subscription.
+   - If you're adding a trial to an existing Microsoft 365 tenant, follow these steps to assign your new licenses to users:
 
-2. In the navigation pane, choose **Users** > **Active users**. Review the list of users. 
+      a. Go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)) and sign in.
 
-3. To add users, follow the guidance in [Add users and assign licenses at the same time](../../admin/add-users/add-users.md).
+      b. In the navigation pane, choose **Users** > **Active users**. Review the list of users. 
+
+      c. To assign licenses, follow the guidance in [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md).
 
 
 ## Next steps
