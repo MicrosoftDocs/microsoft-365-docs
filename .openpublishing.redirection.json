@@ -6645,7 +6645,7 @@
     },
     {
       "source_path": "microsoft-365/campaigns/m365-campaigns-protect-pcs-macs.md",
-      "redirect_url": "/microsoft-365/business-premium/m365-campaigns-protect-pcs-macs",
+      "redirect_url": "/microsoft-365/business-premium/m365bp-protect-pcs-macs",
       "redirect_document_id": true
     },
     {
@@ -6760,7 +6760,7 @@
     {
     "source_path": "microsoft-365/business-premium/m365-campaigns-protect-pcs-macs.md",
     "redirect_url": "/microsoft-365/business-premium/m365bp-protect-pcs-macs",
-    "redirect_document_id": true
+    "redirect_document_id": false
     }
   ]
 }
