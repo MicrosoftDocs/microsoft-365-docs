@@ -91,7 +91,7 @@ The **Case overview** tab also includes an **Alerts** section that includes the 
 
 ### Alerts
 
-The **Alerts** tab summarizes the current alerts included in the case. New alerts may be added to an existing case and they will be added to the **Alert** queue as they are assigned. The following alert attributes are listed the queue:
+The **Alerts** tab summarizes the current alerts included in the case. New alerts may be added to an existing case and they'll be added to the **Alert** queue as they're assigned. The following alert attributes are listed the queue:
 
 - Status
 - Severity
@@ -132,7 +132,7 @@ The Content explorer is a powerful tool with basic and advanced search and filte
 
 ### Case notes
 
-The **Case notes** tab in the case is where risk analysts and investigators share comments, feedback, and insights about their work for the case. Notes are permanent additions to a case and cannot be edited or deleted after the note is saved. When a case is created from an alert, the comments entered in the **Confirm alert and create insider risk case** dialog are automatically added as a case note.
+The **Case notes** tab in the case is where risk analysts and investigators share comments, feedback, and insights about their work for the case. Notes are permanent additions to a case and can’t be edited or deleted after the note is saved. When a case is created from an alert, the comments entered in the **Confirm alert and create insider risk case** dialog are automatically added as a case note.
 
 The case notes dashboard displays notes by the user that created the note and the time that has passed since the note was saved. To search the case note text field for a specific keyword, use the **Search** button on the case dashboard and enter a specific keyword.
 
