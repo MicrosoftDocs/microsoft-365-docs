@@ -48,7 +48,7 @@ The following table compares security features and capabilities in Defender for 
 
  <br/><br/>
 
-| Feature/Capability | [Microsoft Defender for Business](mdb-overview.md)<br/>(standalone; currently in preview) | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(includes Defender for Business) |
+| Feature/Capability | [Microsoft Defender for Business](../security/defender-business/mdb-overview.md)<br/>(standalone; currently in preview) | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(includes Defender for Business) |
 |:---|:---|:---|
 | Email protection | Yes <br/>- [Email scanning in Microsoft Defender Antivirus](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md) | Yes <br/>- [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) <br/>- [Email scanning in Microsoft Defender Antivirus](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md) |
 | Antispam protection | Yes <br/>- For devices | Yes <br/>- For devices<br/>- For Microsoft 365 email content, such as messages and attachments |
