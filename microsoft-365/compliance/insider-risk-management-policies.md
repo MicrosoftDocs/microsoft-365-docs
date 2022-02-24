@@ -164,9 +164,9 @@ Risky activities may not occur as isolated events. These risks are frequently pa
 
 These insider risk management policies can use specific indicators and the order that they occur to detect each step in a sequence of risk. File names are used when mapping activities across a sequence. These risks are organized into four main categories of activity:
 
-- **Collection**: These category signals focus on download activities by in-scope policy users. An example activity in this category would be downloading files from SharePoint sites.
+- **Collection**: These category signals focus on download activities by in-scope policy users. Some example activities in this category would be downloading files from SharePoint sites or moving files into a compressed folder.
 - **Exfiltration**: These category signals focus on sharing or extraction activities to internal and external sources by in-scope policy users. An example activity in this category would be sending emails with attachments from your organization to external recipients.
-- **Obfuscation**: These category signals focus on the masking of risky activities by in-scope policy users. An example activity in this category would be renaming files on a device.
+- **Obfuscation**: These category signals focus on the masking of risky activities by in-scope policy users. Some example activities in this category would be renaming files on a device or removing or downgrading sensitivity labels on SharePoint files.
 - **Clean-up**: These category signals focus on deletion activities by in-scope policy users. An example activity in this category would be deleting files from a device.
 
 > [!NOTE]
@@ -178,7 +178,9 @@ To learn more about sequence detection management in the **User activity** view,
 
 ## Cumulative exfiltration detection (preview)
 
-Insider risk indicators help identify unusual levels of risk activities when evaluated daily for users that are in-scope for insider risk policies. Cumulative exfiltration detection uses machine learning models to help you identify when user exfiltration activities exceed the organizational averages when measured over time and over multiple exfiltration activity types. Insider risk management analysts and investigators may use cumulative exfiltration detection insights to help identify exfiltration activities that may not typically generate alerts but are above what is typical for their organization. Some examples may be departing users slowly exfiltrate data across a range of days, or when users repeatedly share data across multiple channels more than usual for data sharing for your organization.
+Insider risk indicators help identify unusual levels of risk activities when evaluated daily for users that are in-scope for insider risk policies. Cumulative exfiltration detection uses machine learning models to help you identify when exfiltration activities that a user performs over a certain time exceeds the normal amount performed by users in your organization for the past 30 days over multiple exfiltration activity types. For example, if a user shared more files than most users over the past month, this activity would be detected and classified as a cumulative exfiltration activity.
+
+Insider risk management analysts and investigators may use cumulative exfiltration detection insights to help identify exfiltration activities that may not typically generate alerts but are above what is typical for their organization. Some examples may be departing users slowly exfiltrate data across a range of days, or when users repeatedly share data across multiple channels more than usual for data sharing for your organization.  Higher risk scores are assigned to cumulative exfiltration activities for SharePoint sites, sensitive information types, and content with [sensitivity labels](/microsoft-365/compliance/sensitivity-labels#label-priority-order-matters) configured as priority content in a policy or for activity involving labels configured as high priority in Microsoft Information Protection.
 
 Cumulative exfiltration detection is enabled by default when using the following policy templates:
 
@@ -237,6 +239,7 @@ Use the following table to learn more about recommendations and warning notifica
 | Your organization doesn't have a Microsoft Defender for Endpoint subscription | - General security policy violations <br> - Security policy violations by departing users <br> - Security policy violations by disgruntled users <br> - Security policy violations by priority users | An active Microsoft Defender for Endpoint subscription wasn't detected for your organization. <br><br> Until a Microsoft Defender for Endpoint subscription is added, these policies won't assign risk scores to user activity. |
 | Microsoft Defender for Endpoint alerts aren't being shared with the compliance center | - General security policy violations <br> - Security policy violations by departing users <br> - Security policy violations by disgruntled users <br> - Security policy violations by priority users | Microsoft Defender for Endpoint alerts aren't being shared with the compliance center. <br><br> Configure sharing of Microsoft Defender for Endpoint alerts. |
 | You are approaching the maximum limit of users being actively scored for this policy template. | All policy templates | Each policy template has a maximum number of in-scope users. See the template limit section details. <br><br> Review the users in the Users tab and remove any users who do not need to be scored anymore. |
+| Triggering event is repeatedly occurring for over 15% of users in this policy. | All policy templates | Adjust the triggering event to help reduce how often users are brought into the policy scope. |
 
 ## Policy template limits
 
