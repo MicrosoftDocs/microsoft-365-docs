@@ -2,9 +2,9 @@
 title: Top 10 ways to secure Microsoft 365 for business plans
 f1.keywords:
 - CSH
-ms.author: sharik
-author: skjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
