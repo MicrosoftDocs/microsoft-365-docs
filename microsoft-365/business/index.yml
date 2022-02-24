@@ -68,8 +68,8 @@ conceptualContent:
       links:
         - url: ../admin/admin-overview/sign-up-for-office-365.md#watch-sign-up-for-microsoft-365-business-premium
           itemType: how-to-guide
-          text: 1. Sign up for Microsoft 365 Business Premium
-        - url: ../admin/setup/plan-your-setup.md
+          text: 1. Get Microsoft 365 Business Premium
+        - url: ../business-premium/get-microsoft-365-business-premium.md
           itemType: how-to-guide
           text: 2. Plan your setup and configuration
         - url: ../business-premium/m365bp-setup.md
