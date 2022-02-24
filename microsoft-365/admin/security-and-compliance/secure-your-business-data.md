@@ -57,8 +57,8 @@ Microsoft recommends that you complete the tasks listed in the following table t
 | 6 | [Stop auto-forwarding for email](#6-stop-auto-forwarding-for-email) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | 7 | [Use encryption](#7-use-office-message-encryption) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | 8 | [Protect your email from phishing attacks](#8-protect-your-email-from-phishing-attacks) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(advanced antiphishing protection) |
-| 9 | [Protect against malicious attachments, files, and URLs in email and Office files](#9-protect-against-malicious-attachments-and-files-with-safe-attachments) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(Safe Links and Safe Attachments) |
-| 10 | [Protect devices](#10-protect-against-phishing-attacks-with-safe-links) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(antivirus and firewall protection) |
+| 9 | [Protect against malicious attachments, files, and URLs in email and Office files](#9-protect-against-malicious-attachments-files-and-urls) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(Safe Links and Safe Attachments) |
+| 10 | [Protect devices](#10-protect-your-organizations-devices) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(antivirus and firewall protection) |
 
 If you have Microsoft Business Premium, the quickest way to setup security and begin collaborating safely is to follow the guidance in this library: [Microsoft 365 Business Premium](../../business-premium/index.md). This guidance was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyberthreats that are launched by sophisticated hackers.
 
@@ -155,17 +155,21 @@ Microsoft Defender Antivirus provides strong antivirus and antimalware protectio
 
 If your organization is using Microsoft 365 Business Premium, you get additional device protection that includes:
 
-- Threat & Vulnerability Management
 - Next-generation protection
-- 
 
-Beginning March 1, 2022, Microsoft Defender for Business will begin rolling out to customers who have Microsoft 365 Business Premium. 
+- Firewall protection
 
+- Web content filtering
 
+These capabilities are included in Microsoft Defender for Business, an offering that will begin rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. 
+
+[Learn more about Microsoft Defender for Business](../../security/defender-business/mdb-overview.md).
 
 ## 5: Protect against ransomware
 
 Ransomware restricts access to data by encrypting files or locking computer screens. It then attempts to extort money from victims by asking for "ransom," usually in form of cryptocurrencies like Bitcoin, in exchange for access to data.
+
+You get ransomware protection for email hosted in Microsoft 365 and for files that are stored in OneDrive. If you have Microsoft 365 Business Premium, you get additional ransomware protection for your organization's devices.
 
 You can protect against ransomware by creating one or more mail flow rules to block file extensions that are commonly used for ransomware, or to warn users who receive these attachments in email. A good starting point is to create two rules:
 
@@ -201,6 +205,8 @@ To create a mail transport rule, view a [short training video](increase-threat-p
 For more information, see:
 
 - [Ransomware: how to reduce risk](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
+
+- [Better together: Microsoft Defender Antivirus and Office 365](../../security/defender-endpoint/office-365-microsoft-defender-antivirus.md)
 
 - [Restore your OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
 
@@ -294,11 +300,13 @@ To create an anti-phishing policy in Defender for Office 365, view a [short trai
 > [!TIP]
 > For more information, see [Set up anti-phishing policies in Defender for Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
 
-## 9: Protect against malicious attachments and files with Safe Attachments
+## 9: Protect against malicious attachments, files, and URLs
 
 People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Microsoft Defender for Office 365 includes Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
 
-To create a Safe attachment policy, view a [short training video](increase-threat-protection.md), or complete the following steps:
+### Set up Safe Attachments
+
+To create a Safe Attachments policy, view a [short training video](increase-threat-protection.md), or complete the following steps:
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, and sign in with your admin account.
 
@@ -321,7 +329,7 @@ To create a Safe attachment policy, view a [short training video](increase-threa
 > [!TIP]
 > For more information, see [Set up anti-phishing policies in Defender for Office 365](../../security/office-365-security/configure-atp-anti-phishing-policies.md).
 
-## 10: Protect against phishing attacks with Safe Links
+### Set up Safe Links
 
 Hackers sometimes hide malicious websites in links in email or other files. Safe Links, part of Microsoft Defender for Office 365, can help protect your organization by providing time-of-click verification of web addresses (URLs) in email messages and Office documents. Protection is defined through Safe Links policies.
 
@@ -347,7 +355,6 @@ To modify the default policy:
 
 3. After modifying the default policy, select **Save**.
 
-
 |Setting or option|Recommended setting|
 |---|---|
 |Name|Safe links policy for all recipients in the domain|
@@ -358,7 +365,7 @@ To modify the default policy:
 > [!TIP]
 > For more information, see [Safe Links in Microsoft Defender for Office 365](../../security/office-365-security/atp-safe-links.md).
 
-## 11: Protect your organization's devices
+## 10: Protect your organization's devices
 
 **Beginning March 1, 2022, [Microsoft Defender for Business](../../security/defender-business/index.yml) capabilities are being added to Microsoft 365 Business Premium**. 
 
