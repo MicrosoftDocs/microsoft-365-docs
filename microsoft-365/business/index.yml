@@ -51,7 +51,7 @@ conceptualContent:
   # Card
     - title: What is Microsoft 365 Business Premium?
       links:
-        - url: microsoft-365-business-overview.md
+        - url: ../business-premium/index.yml
           itemType: overview
           text: Overview of Microsoft 365 Business Premium
         - url: ../business-video/index.yml
