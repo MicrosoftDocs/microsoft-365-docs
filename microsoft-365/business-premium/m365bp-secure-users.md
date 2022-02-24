@@ -61,7 +61,7 @@ It's also important that users keep their primary work device up to date:
 - Install the latest versions of Office desktop apps and keep these fresh with updates, when prompted.
 - Stay on top of operating system updates, such as Windows updates.
 
-For [unmanaged Windows 10 and Mac devices](m365-campaigns-protect-pcs-macs.md), users have the responsibility to ensure that basic security features are enabled.
+For [unmanaged Windows 10 and Mac devices](m365bp-protect-pcs-macs.md), users have the responsibility to ensure that basic security features are enabled.
 
 **Enable basic security capabilities on BYOD Windows 10 and Mac devices**
 
