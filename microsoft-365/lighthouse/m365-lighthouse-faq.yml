@@ -6,7 +6,7 @@ metadata:
   author: SKjerland
   manager: scotv
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.prod: microsoft-365-lighthouse
   ms.localizationpriority: medium
   ms.collection:
@@ -17,7 +17,6 @@ metadata:
   - M365-Lighthouse                         
   search.appverid: MET150
   description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse."
-    
 title: Microsoft 365 Lighthouse frequently asked questions (FAQs)
 summary: |
   > [!NOTE]
