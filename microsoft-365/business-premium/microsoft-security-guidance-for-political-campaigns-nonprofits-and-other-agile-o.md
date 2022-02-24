@@ -51,4 +51,4 @@ This guidance describes how to implement a secure cloud environment. The solutio
 
 ## See Also
 
-[Microsoft Cloud IT architecture resources](../../solutions/cloud-architecture-models.md)
+[Microsoft cloud for IT architects illustrations](../solutions/cloud-architecture-models.md)
