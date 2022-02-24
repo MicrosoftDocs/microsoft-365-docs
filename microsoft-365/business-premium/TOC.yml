@@ -71,3 +71,9 @@
   items: 
     - name: Respond to a compromised email account
       href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+- name: Reference
+  items:
+    - name: Microsoft Defender for Business
+      href:     - name: Onboard devices to Microsoft Defender for Business
+      href: ../security/defender-business/index.yml
+
