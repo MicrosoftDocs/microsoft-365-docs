@@ -53,7 +53,7 @@ The following table describes how to set up and configure Microsoft 365 Business
 | Phase  | Task  | Guidance  |
 |---------|---------|---------|
 | **Planning**     | Plan your setup and configuration process  | [Plan your setup of Microsoft 365 for business](../admin/setup/plan-your-setup.md)   |
-|  | Review the requirements | [Microsoft 365 Business Premium requirements](m365bp-requirements.md) |
+|  | Review the requirements | [Microsoft 365 Business Premium requirements](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab) |
 | **Basic setup**     | Use a custom domain  like `rob@contoso.com` with Microsoft 365 | [Add a domain to Microsoft 365](../admin/setup/add-domain.md) |
 |      | Add users and assign licenses in Microsoft 365      | [Add users and assign licenses at the same time](../admin/add-users/add-users.md)        |
 |  | Assign admin roles to users who'll perform certain functions, such as: <br/>- Managing features<br/>- Managing user accounts<br/>- Managing devices<br/>- Viewing or managing your organization's security and compliance information | [Learn about admin roles](../admin/add-users/about-admin-roles.md) <br/><br/> [Assign admin roles](../admin/add-users/assign-admin-roles.md)  |
