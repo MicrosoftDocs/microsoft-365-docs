@@ -374,9 +374,9 @@ Microsoft Defender Antivirus is built into the Windows operating system and prov
 
 To learn more, see the following resources:
 
-- [Overview of Microsoft Defender for Business (preview)](../../security/defender-business/mdb-overview.md)
+- [Overview of Microsoft Defender for Business](../../security/defender-business/mdb-overview.md)
 
-- [Set up and configure Microsoft Defender for Business (preview)](../../security/defender-business/mdb-setup-configuration.md)
+- [Set up and configure Microsoft Defender for Business](../../security/defender-business/mdb-setup-configuration.md)
 
 - [Get started using the Microsoft 365 Defender portal](../../security/defender-business/mdb-get-started.md)
 
