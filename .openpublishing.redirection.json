@@ -6717,6 +6717,11 @@
       "source_path": "microsoft-365/managed-desktop/get-started/set-up-devices.md",
       "redirect_url": "/microsoft-365/managed-desktop/get-started/prepare-devices",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/setup/access-resources.md",
+      "redirect_url": "/azure/active-directory/devices/azuread-join-sso",
+      "redirect_document_id": false
     }
   ]
 }
