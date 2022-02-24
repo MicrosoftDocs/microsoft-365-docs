@@ -58,7 +58,7 @@ Microsoft recommends that you complete the tasks listed in the following table t
 | 7 | [Use encryption](#7-use-office-message-encryption) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | 8 | [Protect your email from phishing attacks](#8-protect-your-email-from-phishing-attacks) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(antiphishing protection) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(advanced antiphishing protection) |
 | 9 | [Protect against malicious attachments, files, and URLs in email and Office files](#9-protect-against-malicious-attachments-files-and-urls) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(Safe Links and Safe Attachments) |
-| 10 | [Increase protection for your organization's devices](#10-protect-your-organizations-devices) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(enterprise-grade device protection) |
+| 10 | [Increase protection for your organization's devices](#10-increase-protection-for-your-organizations-devices) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(enterprise-grade device protection) |
 
 If you have Microsoft Business Premium, the quickest way to setup security and begin collaborating safely is to follow the guidance in this library: [Microsoft 365 Business Premium](../../business-premium/index.md). This guidance was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyberthreats that are launched by sophisticated hackers.
 
@@ -368,7 +368,6 @@ To modify the default policy:
 ## 10: Increase protection for your organization's devices
 
 Microsoft Defender Antivirus is built into the Windows operating system and provides good protection against viruses and malware. However, you can increase protection for your organization's devices by onboarding them to Microsoft Defender for Business, a new offering for small and medium-sized businesses like yours. With Defender for Business, your organization's devices are better protected from ransomware, malware, phishing, and other threats.
-
 
 **Beginning March 1, 2022, [Microsoft Defender for Business](../../security/defender-business/index.yml) capabilities are being added to Microsoft 365 Business Premium**. 
 
