@@ -62,7 +62,7 @@ conceptualContent:
           text: Compare Microsoft 365 for business plans
         - url: ../admin/misc/microsoft-365-business-faqs.yml
           itemType: reference
-          text: FAQ
+          text: Microsoft 365 Business Premium FAQ
   # Card
     - title: Set up Microsoft 365 Business Premium
       links:
