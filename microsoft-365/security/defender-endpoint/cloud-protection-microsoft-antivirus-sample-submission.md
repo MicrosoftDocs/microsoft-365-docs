@@ -13,7 +13,7 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 10/18/2021
+ms.date: 02/24/2022
 ms.collection: M365-security-compliance
 ---
 
@@ -94,9 +94,6 @@ In addition to configuring your cloud protection level, you can configure your s
 
 For information about configuration options using Intune, Configuration Manager, GPO, or PowerShell, see [Turn on cloud protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
 
-For information about managing sample submission, see [Configure remediation for Microsoft Defender Antivirus detections.](configure-remediation-microsoft-defender-antivirus.md)
-
-
 ## Examples of metadata sent to the cloud protection service
 
 :::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="image depicting examples of metadata sent to cloud protection in Microsoft Defender Antivirus":::
@@ -138,3 +135,5 @@ There are two more scenarios where Defender for Endpoint might request a file sa
 ## See also
 
 [Next-generation protection overview](next-generation-protection.md)
+
+[Configure remediation for Microsoft Defender Antivirus detections.](configure-remediation-microsoft-defender-antivirus.md)
