@@ -102,3 +102,4 @@ Also see [Find your partner or reseller](../admin/manage/find-your-partner-or-re
 
 - [Overview of Microsoft 365 Lighthouse](../lighthouse/m365-lighthouse-overview.md) (for Microsoft CSPs)
 
+- [Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
