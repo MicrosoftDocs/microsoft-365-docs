@@ -62,7 +62,7 @@ conceptualContent:
           text: Compare Microsoft 365 for business plans
         - url: ../admin/misc/microsoft-365-business-faqs.yml
           itemType: reference
-          text: Microsoft 365 Business Premium FAQ
+          text: Microsoft 365 for business FAQ
   # Card
     - title: Set up Microsoft 365 Business Premium
       links:
@@ -95,7 +95,7 @@ conceptualContent:
           text: Use baselines for customer tenants
         - url: ../lighthouse/m365-lighthouse-faq.yml
           itemType: reference
-          text: Microsoft 365 Ligthouse FAQ
+          text: Microsoft 365 Lighthouse FAQ
   # Card
     - title: Resources for partners (English only)
       links:
