@@ -21,8 +21,8 @@ ms.collection:
 
 You have several options for setting up and configuring Microsoft 365 Business Premium. You can:
 
-- [Use a guided setup experience for basic setup and configuration](#the-guided-setup-process)
-- [Work through the setup process manually](#the-setup-process-from-planning-to-training-users)
+- [Use a guided setup experience for basic setup and configuration](#guided-process-for-basic-setup)
+- [Work through the setup process manually](#manual-setup-and-configuration)
 - [Work with a partner, such as a Microsoft Cloud Solution Provider (CSP)](#work-with-a-microsoft-partner)
 
 Use this article as a guide.
@@ -46,7 +46,7 @@ After you have finished the guided setup, there are additional steps to complete
 > [!TIP]
 > See the following section for more details about setting up and configuring Microsoft 365 Business Premium.
 
-## How to set up and configure Microsoft 365 Business Premium
+## Manual setup and configuration
 
 The following table describes how to set up and configure Microsoft 365 Business Premium, step by step.
 
