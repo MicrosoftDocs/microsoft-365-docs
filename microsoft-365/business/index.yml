@@ -69,7 +69,7 @@ conceptualContent:
         - url: ../business-premium/get-microsoft-365-business-premium.md
           itemType: how-to-guide
           text: 1. Get Microsoft 365 Business Premium
-        - url: ../business-premium/get-microsoft-365-business-premium.md
+        - url: ../admin/setup/plan-your-setup.md
           itemType: how-to-guide
           text: 2. Plan your setup and configuration
         - url: ../business-premium/m365bp-setup.md
