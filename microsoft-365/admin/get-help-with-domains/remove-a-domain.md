@@ -134,7 +134,7 @@ You can also use PowerShell to move users to another domain. See [Set-MsolUserPr
 
 ### Remove a custom domain
 
-If you are cancelling your subscription and you use a custom domain, there are a few extra steps that you must do before you can cancel your subscription. 
+If you are canceling your subscription and you use a custom domain, there are a few extra steps that you must do before you can cancel your subscription. 
 
 #### Change your domain nameserver records (if needed)
 
