@@ -50,7 +50,7 @@ We recommend naming security groups based on the tasks MSP technicians handle in
 |**Recommended GDAP roles** |<ul><li>Helpdesk Administrator</li><li>Security Reader</li></ul>   |<ul><li>User Administrator</li><li>Authentication Administrator</li><li>Global Reader</li><li>Intune Administrator</li><li>Security Administrator</li></ul>   |Global Administrator  |
 |**Tasks** |Read customer information in Lighthouse and take limited actions (for example, resetting user passwords or updating contact information)   |Maintain customer security by taking corrective actions in Lighthouse (for example, rebooting devices).   |Take privileged actions when needed to protect the customer tenant (for example, blocking sign-in of a compromised administrator).  |
 
-For descriptions of specific permissions, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). For partner-specific roles and tasks, see [<u>Least-privileged roles</u>](/partner-center/gdap-least-privileged-roles-by-task).
+For descriptions of specific permissions, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). For partner-specific roles and tasks, see [Least-privileged roles](/partner-center/gdap-least-privileged-roles-by-task).
 
 ## DAP in Lighthouse
 

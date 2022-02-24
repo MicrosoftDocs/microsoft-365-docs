@@ -119,8 +119,8 @@ Lighthouse provides insights into Microsoft 365 services usage, including how ma
 
 The Microsoft 365 Usage card contains two sections:
 
-- **Microsoft 365 Lighthouse-enabled services** - Services that can be managed within the Lighthouse portal.
-- **Additional Microsoft 365 services** - Services that are included in the Microsoft 365 suite but can't be managed within the Microsoft 365 Lighthouse portal at this time.
+- **Microsoft 365 Lighthouse-enabled services:** Services that can be managed within the Lighthouse portal.
+- **Additional Microsoft 365 services:** Services that are included in the Microsoft 365 suite but can't be managed within the Microsoft 365 Lighthouse portal at this time.
 
 
 ### Deployment Plans tab

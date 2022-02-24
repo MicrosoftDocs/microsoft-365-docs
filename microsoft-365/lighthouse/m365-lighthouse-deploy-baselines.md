@@ -58,6 +58,6 @@ Select **Baselines** from the left navigation pane in Lighthouse to open the Bas
 ## Related content
 
 [Overview of using baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
-[Microsoft 365 lighthouse Tenants page overview- Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md) (article)\
+[Microsoft 365 lighthouse Tenants page overview](m365-lighthouse-tenants-page-overview.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
 [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article) 
