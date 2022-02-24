@@ -27,7 +27,7 @@ You have several options for setting up and configuring Microsoft 365 Business P
 
 Use this article as a guide.
 
-## The guided setup process
+## Guided setup
 
 Microsoft 365 Business Premium includes a guided process for basic setup. Tasks include connecting to a custom domain, adding users, assigning licenses, installing Outlook on mobile devices, reviewing data protection settings, and applying a mobile app protection policy. 
 
@@ -46,7 +46,7 @@ After you have finished the guided setup, there are additional steps to complete
 > [!TIP]
 > See the following section for more details about setting up and configuring Microsoft 365 Business Premium.
 
-## The setup process, from planning to training users
+## Set up and configure Microsoft 365 Business Premium
 
 The following table describes how to set up and configure Microsoft 365 Business Premium, step by step.
 
