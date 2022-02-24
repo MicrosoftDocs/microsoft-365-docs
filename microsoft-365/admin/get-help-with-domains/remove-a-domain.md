@@ -110,7 +110,8 @@ You can also use PowerShell to move users to another domain. See [Set-MsolUserPr
 
 ::: moniker range="o365-worldwide"
 
-
+> [!NOTE]
+> If you are removing a custom domain, see [remove a custom domain](#remove-a-custom-domain) before proceeding.
 
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
