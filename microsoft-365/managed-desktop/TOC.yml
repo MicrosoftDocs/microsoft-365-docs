@@ -118,8 +118,8 @@
             - name: Manual registration
               href: get-started/manual-registration.md
               items: 
-                - name: Partner registration
-                  href: get-started/partner-registration.md
+            - name: Partner registration
+              href: get-started/partner-registration.md
             - name: Manual registration for existing devices
               href: get-started/manual-registration-existing-devices.md
         - name: Enable user support features
@@ -184,3 +184,5 @@
               href: working-with-managed-desktop/config-setting-deploy.md
         - name: Preview and test Windows 11 with Microsoft Managed Desktop
           href: working-with-managed-desktop/test-win11-mmd.md
+    - name: Change history
+      href: change-history-managed-desktop.md
