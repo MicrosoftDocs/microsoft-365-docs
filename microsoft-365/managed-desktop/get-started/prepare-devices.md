@@ -1,6 +1,6 @@
 ---
-title: Set up devices for Microsoft Managed Desktop 
-description:  How to get new devices or reuse existing ones that qualify
+title: Prepare devices for Microsoft Managed Desktop 
+description:  Prepare new devices or reuse existing ones that qualify
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: tiaraquan
@@ -12,7 +12,7 @@ ms.topic: article
 audience: Admin
 ---
 
-# Set up Microsoft Managed Desktop devices
+# Prepare devices
 
 You can use both new and existing devices in Microsoft Managed Desktop.
 
@@ -26,8 +26,8 @@ We recommend working with one of our approved device partners. You can work with
 1. Order one or a few examples of the devices you want to use with a compliant image. Ordering might require [specific ordering steps](../service-description/device-images.md).
 1. [Validate](validate-device.md) the example devices.
 1. After successful validation, order the devices, working with an approved device partner.
-1. Once they've arrived, do either:
-    - [Register new devices yourself](register-devices-self.md).
+1. Once they've arrived, either:
+    - [Manually register](manual-registration.md).
     - Work with a partner to register the devices.
 1. [Get your users ready](get-started-devices.md) to use Microsoft Managed Desktop devices.
 
@@ -39,8 +39,8 @@ We recommend working with one of our approved device partners. You can work with
 **To reuse existing devices:**
 
 1. Select one or a few examples of the devices you want to reuse, and then [validate them](validate-device.md).
-1. After successful validation, do either:
-    - [Register existing devices yourself](register-reused-devices-self.md).
+1. After successful validation, either:
+    - [Manually register existing devices](manual-registration-existing-devices.md).
     - Work with a partner to register the devices.
 1. [Get your users ready](get-started-devices.md) to use Microsoft Managed Desktop devices.
 

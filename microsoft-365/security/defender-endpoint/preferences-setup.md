@@ -1,5 +1,5 @@
 ---
-title: Configure general settings for endpoints 
+title: Configure general Defender for Endpoint settings 
 description: Use the settings page to configure general settings, permissions, apis, and rules.
 keywords: settings, general settings, permissions, apis, rules
 ms.prod: m365-security
@@ -16,7 +16,7 @@ ms.topic: article
 ms.technology: mde
 ---
 
-# Configure general settings for endpoints
+# Configure general Defender for Endpoint settings
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
