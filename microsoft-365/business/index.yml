@@ -42,7 +42,7 @@ productDirectory:
     - title: Join the partner webinar series
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-      summary: Upsell and grow your business with Microsoft 365 Business Premium, Microsoft Defender for Business, and Microsoft 365 Lighthouse.
+      summary: Learn how to drive upsell and grow your business with Microsoft 365 Business Premium, Microsoft Defender for Business, and Microsoft 365 Lighthouse.
       url: https://aka.ms/M365MDBseries 
 # conceptualContent section (optional)
 conceptualContent:
