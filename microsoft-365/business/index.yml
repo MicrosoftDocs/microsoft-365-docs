@@ -123,7 +123,10 @@ conceptualContent:
           text: Overview of Microsoft Defender for Business
         - url: ../security/defender-business/mdb-setup-configuration.md
           itemType: overview
-          text: Set up and configure Defender for Business
+          text: Set up Defender for Business
+        - url: ../security/defender-business/compare-mdb-m365-plans.md
+          itemType: overview
+          text: Compare security features in Microsoft 365 plans
         - url: ../security/defender-business/mdb-faq.yml
           itemType: reference
           text: Defender for Business FAQ
