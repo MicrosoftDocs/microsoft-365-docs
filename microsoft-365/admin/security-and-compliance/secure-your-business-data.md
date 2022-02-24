@@ -49,10 +49,10 @@ Microsoft recommends that you complete the tasks listed in the following table t
 
 |*Number*|Task|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|---|
-| 1 | [Protect against lost or stolen passwords](#1-set-up-multi-factor-authentication) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| 2 | [Train your users](#2-train-your-users) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)| ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| 3 | [Use dedicated admin accounts](#3-use-dedicated-admin-accounts)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
-| 4 | [Raise the level of protection against malware in mail](#4-raise-the-level-of-protection-against-malware-in-mail) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| 1 | [Protect against lost or stolen passwords](#1-set-up-multi-factor-authentication) | Yes | Yes |
+| 2 | [Train your users](#2-train-your-users) | Yes | Yes |
+| 3 | [Use dedicated admin accounts](#3-use-dedicated-admin-accounts)|Yes | Yes | 
+| 4 | [Rrotect against malware](#4-protect-against-malware) | Yes <br/>(protection for email) | Yes <br/>(protection for email and devices) |
 | 5 | [Protect against ransomware](#5-protect-against-ransomware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | 6 | [Stop auto-forwarding for email](#6-stop-auto-forwarding-for-email) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | 7 | [Use encryption](#7-use-office-message-encryption) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
@@ -127,7 +127,7 @@ The administrative accounts you use to administer your Microsoft 365 environment
 
 - After completing admin tasks, be sure to log out of the browser session.
 
-## 4: Raise the level of protection against malware in mail
+## 4: Protect against malware
 
 Your Microsoft 365 environment includes protection against malware, but you can increase this protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email, view a [short training video](increase-threat-protection.md#raise-the-level-of-protection-against-malware-in-mail), or complete the following steps:
 
