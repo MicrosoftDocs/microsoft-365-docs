@@ -52,13 +52,13 @@ Microsoft recommends that you complete the tasks listed in the following table t
 | 1 | [Protect against lost or stolen passwords](#1-set-up-multi-factor-authentication) | Yes | Yes |
 | 2 | [Train your users](#2-train-your-users) | Yes | Yes |
 | 3 | [Use dedicated admin accounts](#3-use-dedicated-admin-accounts)|Yes | Yes | 
-| 4 | [Rrotect against malware](#4-protect-against-malware) | Yes <br/>(protection for email) | Yes <br/>(protection for email and devices) |
-| 5 | [Protect against ransomware](#5-protect-against-ransomware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| 6 | [Stop auto-forwarding for email](#6-stop-auto-forwarding-for-email) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| 7 | [Use encryption](#7-use-office-message-encryption) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| 8 | [Protect your email from phishing attacks](#8-protect-your-email-from-phishing-attacks) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| 9 | [Protect against malicious attachments, files, and URLs in email and Office files](#9-protect-against-malicious-attachments-and-files-with-safe-attachments) | | ![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| 10 | [Protect against mali with Safe Links](#10-protect-against-phishing-attacks-with-safe-links) | | ![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| 4 | [Protect against malware](#4-protect-against-malware) | Yes <br/>(protection for email) | Yes <br/>(protection for email and devices) |
+| 5 | [Protect against ransomware](#5-protect-against-ransomware) | Yes <br/>(protection for email and cloud storage) | Yes <br/>(protection for devices, email, and cloud storage) |
+| 6 | [Stop auto-forwarding for email](#6-stop-auto-forwarding-for-email) | Yes | Yes |
+| 7 | [Use encryption](#7-use-office-message-encryption) | Yes | Yes |
+| 8 | [Protect your email from phishing attacks](#8-protect-your-email-from-phishing-attacks) | | Yes <br/>(advanced antiphishing protection) |
+| 9 | [Protect against malicious attachments, files, and URLs in email and Office files](#9-protect-against-malicious-attachments-and-files-with-safe-attachments) | | Yes <br/>(Safe Links and Safe Attachments) |
+| 10 | [Protect devices](#10-protect-against-phishing-attacks-with-safe-links) | | Yes <br/>(antivirus and firewall protection) |
 
 If you have Microsoft Business Premium, the quickest way to setup security and begin collaborating safely is to follow the guidance in this library: [Microsoft 365 Business Premium](../../business-premium/index.md). This guidance was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyberthreats that are launched by sophisticated hackers.
 
