@@ -1,5 +1,5 @@
 ---
-title: Set up your security and compliance capabilities in Microsoft 365
+title: Top 10 ways to secure Microsoft 365 for business plans
 f1.keywords:
 - CSH
 ms.author: sharik
@@ -30,7 +30,7 @@ ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: "Protect your business email and data from cyberthreats, including ransomware, phishing, and malicious attachments."
 ---
 
-# Secure your Microsoft 365 for business plan
+# Top 10 ways to secure Microsoft 365 for business plans
 
 If you are a small or medium-size organization using one of Microsoft's business plans, you can use the guidance in this article to increase the security of your organization. This guidance helps your organization achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/p/?linkid=2015598).
 
@@ -49,17 +49,16 @@ Microsoft recommends that you complete the tasks listed in the following table t
 
 |*Number*|Task|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|---|
-| 1 | [Set up multi-factor authentication](#1-set-up-multi-factor-authentication) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| 1 | [Protect against lost or stolen passwords](#1-set-up-multi-factor-authentication) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | 2 | [Train your users](#2-train-your-users) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png)| ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | 3 | [Use dedicated admin accounts](#3-use-dedicated-admin-accounts)|![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
 | 4 | [Raise the level of protection against malware in mail](#4-raise-the-level-of-protection-against-malware-in-mail) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | 5 | [Protect against ransomware](#5-protect-against-ransomware) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | 6 | [Stop auto-forwarding for email](#6-stop-auto-forwarding-for-email) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| 7 | [Use Office Message Encryption](#7-use-office-message-encryption) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| 7 | [Use encryption](#7-use-office-message-encryption) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 | 8 | [Protect your email from phishing attacks](#8-protect-your-email-from-phishing-attacks) | | ![Included.](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| 9 | [Protect against malicious attachments and files with Safe Attachments](#9-protect-against-malicious-attachments-and-files-with-safe-attachments) | | ![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| 10 | [Protect against phishing attacks with Safe Links](#10-protect-against-phishing-attacks-with-safe-links) | | ![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
-| 11 | [Protect your organization's devices](#11-protect-your-organizations-devices)  | | ![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| 9 | [Protect against malicious attachments, files, and URLs in email and Office files](#9-protect-against-malicious-attachments-and-files-with-safe-attachments) | | ![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+| 10 | [Protect against mali with Safe Links](#10-protect-against-phishing-attacks-with-safe-links) | | ![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 
 If you have Microsoft Business Premium, the quickest way to setup security and begin collaborating safely is to follow the guidance in this library: [Microsoft 365 Business Premium](../../business-premium/index.md). This guidance was developed in partnership with the Microsoft Defending Democracy team to protect all small business customers against cyberthreats that are launched by sophisticated hackers.
 
