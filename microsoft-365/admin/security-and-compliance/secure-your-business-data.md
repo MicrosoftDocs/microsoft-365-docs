@@ -147,7 +147,7 @@ You can increase your malware protection by blocking attachments with file types
 
 5. Select **Save**. 
 
-For more information, see [Anti-malware protection in EOP](../../security/office-365-security/anti-malware-protection.md).
+For more information, see [Antimalware protection in EOP](../../security/office-365-security/anti-malware-protection.md).
 
 ### Use antivirus and antimalware protection
 
@@ -200,7 +200,7 @@ To create a mail transport rule, view a [short training video](increase-threat-p
 |Provide message text  <br/> |Do not open these types of files—unless you were expecting them—because the files may contain malicious code and knowing the sender isn't a guarantee of safety.  <br/> ||
    
 > [!TIP]
-> You can also add the files you want to block to the Anti-malware list in [step 4](#4-raise-the-level-of-protection-against-malware-in-mail).
+> You can also add the files you want to block to the anti-malware list in [Step 4: Protect against malware](#4-protect-against-malware).
 
 For more information, see:
 
