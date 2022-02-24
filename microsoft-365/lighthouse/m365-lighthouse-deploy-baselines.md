@@ -39,7 +39,7 @@ Make sure you and your customer tenants meet the requirements listed in [Require
 
 ## Learn more about the default baseline
 
-Select **Baselines** from the left navigation pane to open the Baselines page. You'll see that the default baseline has already been added to the Default tenant group (all tenants). To view the default baseline configurations, select **View baseline** to open the Default baseline page. The configurations are listed as deployment steps. Select any of the deployment steps to view deployment details and user impact.
+Select **Baselines** from the left navigation pane in Lighthouse to open the Baselines page. You'll see that the default baseline has already been added to the Default tenant group (all tenants). To view the default baseline configurations, select **View baseline** to open the Default baseline page. The configurations are listed as deployment steps. Select any of the deployment steps to view deployment details and user impact.
 
 :::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Screenshot of the Default baseline page.>.":::
 
@@ -60,4 +60,4 @@ Select **Baselines** from the left navigation pane to open the Baselines page. Y
 [Overview of using baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
 [Microsoft 365 lighthouse Tenants page overview- Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
-[Configure Microsoft 365 Lighthouse portal security- Microsoft 365 Lighthouse](m365-lighthouse-configure-portal-security.md) (article) 
+[Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article) 

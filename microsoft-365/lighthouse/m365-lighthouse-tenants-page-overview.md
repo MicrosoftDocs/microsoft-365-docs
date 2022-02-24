@@ -44,16 +44,16 @@ After your tenants meet the [Lighthouse onboarding requirements](m365-lighthous
 The tenant list lets you:
 
 - Automatically sort tenants by active, inactive, and ineligible.
-- Export the tenant list
-- Assign and manage tags
-- Search for tenants by name
+- Export the tenant list.
+- Assign and manage tags.
+- Search for tenants by name.
 - Filter tenants by status, delegated administrative privilege (DAP), and tags.
 
-To inactivate the tenant or view and manage tags, select the three dots next to the tenant name. You can view individual tenants by either selecting the tenant name or by selecting one of the tags assigned to the tenant.
+To inactivate the tenant or view and manage tags, select the three dots (more actions) next to the tenant name. You can view individual tenants by either selecting the tenant name or by selecting one of the tags assigned to the tenant.
 
 ## Tenant status
 
-The following table shows the different statuses and their meaning.
+The following table shows the different statuses and their meaning.<br><br>
 
 | Status                                   | Description                                                                                             |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -88,7 +88,7 @@ On the Overview tab, you can view tenant overview, contact information, and Micr
 
 #### Tenant overview card
 
-The Tenant overview card provides information about the tenant from its Microsoft 365 account.
+The Tenant overview card provides information about the tenant from its Microsoft 365 account.<br><br>
 
 | Tenant Information    | Description|
 |-----------------------|------------------|
@@ -119,8 +119,8 @@ Lighthouse provides insights into Microsoft 365 services usage, including how ma
 
 The Microsoft 365 Usage card contains two sections:
 
-- Microsoft 365 Lighthouse-enabled services – Services that can be managed within the Lighthouse portal.
-- Additional Microsoft 365 services – Services that are included in the Microsoft 365 suite but can't be managed within the Microsoft 365 Lighthouse portal at this time.
+- **Microsoft 365 Lighthouse-enabled services** - Services that can be managed within the Lighthouse portal.
+- **Additional Microsoft 365 services** - Services that are included in the Microsoft 365 suite but can't be managed within the Microsoft 365 Lighthouse portal at this time.
 
 
 ### Deployment Plans tab

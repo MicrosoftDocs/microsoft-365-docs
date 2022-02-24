@@ -62,10 +62,10 @@ To learn more about PIM, see [What is Privileged Identity Management?](/azure/a
 
 ## Set up risk-based Azure AD Conditional Access
 
-MSPs may use risk-based Conditional Access to make sure their staff members prove their identity by using MFA and by changing their password when detected as a risky user (with leaked credentials or per Azure AD threat intelligence). Users must also sign in from a familiar location or registered device when detected as a risky sign-in. Other risky behaviors include signing in from a malicious or anonymous IP address or from an atypical or impossible travel location, using an anomalous token, using a password from a password spray, or exhibiting other unusual sign-in behavior. Depending on a user’s risk level, MSPs may also choose to block access upon sign-in. To learn more about risks, see [What is risk?](/azure/active-directory/identity-protection/concept-identity-protection-risks) 
+MSPs may use risk-based Conditional Access to make sure their staff members prove their identity by using MFA and by changing their password when detected as a risky user (with leaked credentials or per Azure AD threat intelligence). Users must also sign in from a familiar location or registered device when detected as a risky sign-in. Other risky behaviors include signing in from a malicious or anonymous IP address or from an atypical or impossible travel location, using an anomalous token, using a password from a password spray, or exhibiting other unusual sign-in behavior. Depending on a user's risk level, MSPs may also choose to block access upon sign-in. To learn more about risks, see [What is risk?](/azure/active-directory/identity-protection/concept-identity-protection-risks) 
 
-Note: Conditional Access requires an Azure AD Premium P2 license in the partner tenant. 
-To set up Conditional Access, see [Configuring Azure Active Directory Conditional Access](/appcenter/general/configuring-aad-conditional-access).
+> [!NOTE]
+> Conditional Access requires an Azure AD Premium P2 license in the partner tenant. To set up Conditional Access, see [Configuring Azure Active Directory Conditional Access](/appcenter/general/configuring-aad-conditional-access).
 
 ## Related content
 
