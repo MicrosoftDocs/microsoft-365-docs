@@ -48,7 +48,9 @@ This configuration includes the following guidance for productivity, collaborati
 This recommended secure configuration for Microsoft 365 Business Premium lets you:
 
 - Rely on trusted business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products.
+
 - Protect your work files on all of your iOS, Android, and Windows devices with enterprise-grade security that is simple to manage.
+
 - Apply extra protection for user accounts and identity.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH]
@@ -58,7 +60,9 @@ While federal and some state election campaigns in the United States qualify for
 This library includes the following:
 
 - Prescriptive setup guidance for adding increased security.
+
 - Help for users to setup devices for secure access.
+
 - Guidance on how to collaborate and share securely.
 
 For more information about what's included, see [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business).
@@ -68,6 +72,7 @@ For more information about what's included, see [Microsoft 365 Business Premium]
 Follow these steps to get started:
 
 - For small and medium-sized businesses: [Get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)
+
 - For campaigns: [Get Microsoft 365 campaigns](get-microsoft-365-campaigns.md)
 
 ## Solutions for your business
