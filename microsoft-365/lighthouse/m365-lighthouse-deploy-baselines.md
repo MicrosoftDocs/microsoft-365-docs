@@ -28,10 +28,10 @@ Microsoft 365 Lighthouse baselines let you deploy standard managed-tenant config
 - Require MFA for admins
 - Require MFA for end users
 - Block Legacy Authentication
-- Set up Device Enrollment
-- Configure Microsoft Defender Antivirus for Windows 10 and later
-- Configure a device compliance policy for Windows 10 and later
-- Configure Microsoft Defender Firewall
+- Set up Device Enrollment in Microsoft Endpoint Manager – Azure AD Join
+- Configure Defender Antivirus policy for Windows 10 and later
+- Configure Microsoft Defender Firewall for Windows 10 and later
+- Configure Compliance Policy for Windows 10 and later
 
 ## Before you begin
 
