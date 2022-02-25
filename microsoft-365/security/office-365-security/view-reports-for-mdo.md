@@ -83,8 +83,8 @@ On the **Mail latency report** page, the following tabs are available on the **M
 
 Regardless of the tab you select, the chart shows messages organized into the following categories:
 
-- **Mail delivery latency**
-- **Detonations**
+- **Overall**
+- **Detonation**
 
 When you hover over a category in the chart, you can see a breakdown of the latency in each category.
 
@@ -95,17 +95,20 @@ If you click **Filter**, you can filter both the chart and the details table by 
 - **Date (UTC)**: **Start date** and **End date**
 - **Message view**: One of the following values:
   - **All messages**
-  - **Messages that contain attachments or URLs**
-  - **Detonated messages**
+  - **Detonated messages**: One of the following values:
+    - **Inline detonation**: Includes messages that are fully tested before delivery.
+    - **Asynchronous detonation**
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
 In the details table below the chart, the following information is available:
 
 - **Date (UTC)**
-- **Percentiles**: **50**, **90**, or **99**
+- **Latency**
 - **Message count**
-- **Overall latency**
+- **50th percentile**
+- **90th percentile**
+- **99th percentile**
 
 On the main report page, the ![Export icon.](../../media/m365-cc-sc-download-icon.png) **[Export](view-email-security-reports.md#export-report)** button is available.
 
