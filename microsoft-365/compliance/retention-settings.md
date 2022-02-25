@@ -107,15 +107,15 @@ Before you configure your adaptive scope, use the previous section to identify w
     
     - For **SharePoint sites** scopes, use Keyword Query Language (KQL). You might already be familiar with using KQL to search SharePoint by using indexed site properties. To help you specify these KQL queries, see [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
         
-        For example, because SharePoint sites scopes automatically include all SharePoint site types, which include Microsoft 365 group-connected and OneDrive sites, you can use the indexed property **SiteTemplate** to include or exclude specific site types. The templates you can specify:
+        For example, because SharePoint sites scopes automatically include all SharePoint site types, which include Microsoft 365 group-connected and OneDrive sites, you can use the indexed site property **SiteTemplate** to include or exclude specific site types. The templates you can specify:
         - SITEPAGEPUBLISHING: Modern communication site
         - GROUP: Microsoft 365 group-connected site
         - TEAMCHANNEL: Microsoft Teams private channel site
         - STS: Classic SharePoint Team site
         - SPSPERS: OneDrive site
         
-        So to create a scope that includes only modern communication sites and excludes Microsoft 365 goup-connected and OneDrive sites, specify the following KQL query:
-        ````
+        So to create an adaptive scope that includes only modern communication sites and excludes Microsoft 365 goup-connected and OneDrive sites, specify the following KQL query:
+        ````console
         SiteTemplate=SITEPAGEPUBLISHING
         ````
     
