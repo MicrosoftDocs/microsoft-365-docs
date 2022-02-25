@@ -31,9 +31,7 @@ As threats are detected and alerts are triggered, incidents are created. Your or
 **This article includes**:
 
 - [How to monitor your incidents and alerts](#monitor-your-incidents--alerts)
-
 - [Alert severity](#alert-severity)
-
 - [Next steps](#next-steps)
 
 >

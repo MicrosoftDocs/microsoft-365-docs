@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -33,10 +33,8 @@ This article describes what's included in Defender for Business, with links to l
 
 :::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender for Business features and capabilities.":::
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
->
+> [!NOTE]
+> Not all capabilities are available during preview.
 
 With Defender for Business, you can help protect the devices and data your business uses with:
 
@@ -47,6 +45,9 @@ With Defender for Business, you can help protect the devices and data your busin
 - **Flexibility for your environment**. Defender for Business can work with your business environment, whether you're using the Microsoft Cloud, on-premises technology, or non-Microsoft productivity solutions. Defender for Business works with components that are built into Windows, and with apps for macOS, iOS, and Android devices.
 
 - **Integration with Microsoft 365 Lighthouse**. If you're a Managed Service Provider (MSP) using [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), more capabilities are available. If your customers are using Microsoft 365 Business Premium together with Defender for Business, you can view security incidents and alerts across customer tenants that are onboarded to Microsoft 365 Lighthouse.
+
+> [!TIP]
+> If you would like to sign up for the Microsoft Defender for Business preview program, visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview). To learn more, see [Get Microsoft Defender for Business](get-defender-business.md).
 
 ## How to use this guide
 
@@ -70,6 +71,11 @@ With Defender for Business, you can help protect the devices and data your busin
    - [Manage custom rules for firewall policies](mdb-custom-rules-firewall.md)  
 
 ## Next steps
+
+>
+> **Got a minute?**
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
 
 - [Learn more about the simplified configuration process in Microsoft Defender for Business](mdb-simplified-configuration.md)
 
