@@ -92,7 +92,7 @@ Choose any statuses and record notes specific to the improvement action.
 
 #### Threat & vulnerability management improvement actions
 
-For improvement actions in the "Device" category, you can't choose statuses. Instead, you'll be directed to the associated [threat and vulnerability management security recommendation](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) in the [Microsoft Defender Security Center](/windows/security/threat-protection/microsoft-defender-atp/use) to take action. The exception you choose and justification you write will be specific to that portal. It won't be present in the Microsoft Secure Score portal.
+For improvement actions in the "Device" category, you can't choose statuses. Instead, you'll be directed to the associated [threat and vulnerability management security recommendation](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) in the Microsoft 365 Defender to take action. The exception you choose and justification you write will be specific to that portal. It won't be present in the Microsoft Secure Score portal.
 
 #### Completed improvement actions
 
