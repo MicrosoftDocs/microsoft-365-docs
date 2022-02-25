@@ -32,9 +32,6 @@ description: "Learn how to create, edit, or delete an app management policy, and
 
 This article applies to Microsoft 365 Business Premium.
 
-> [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md)
-
 ## Watch: Secure Office apps on iOS
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FLvZ?autoplay=false]
