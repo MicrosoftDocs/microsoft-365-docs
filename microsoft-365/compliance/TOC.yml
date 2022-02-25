@@ -396,6 +396,8 @@
       items:
         - name: Learn about sensitivity labels
           href: sensitivity-labels.md
+        - name: Why choose MIP built-in labeling for Office apps
+          href: sensitivity-labels-aip.md
         - name: Get started with sensitivity labels
           href: get-started-with-sensitivity-labels.md
         - name: Create and publish sensitivity labels

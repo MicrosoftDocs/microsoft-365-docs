@@ -13,7 +13,7 @@ ms.topic: article
 audience: Admin
 ---
 
-# Manual registration
+# Manual registration 
 
 Microsoft Managed Desktop can work with brand-new devices, or you can reuse devices you might already have. If you reuse devices, you must reimage them. You're able to register devices with Microsoft Managed Desktop in the Microsoft Endpoint Manager portal.
 
