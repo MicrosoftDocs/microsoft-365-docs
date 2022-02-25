@@ -1,5 +1,5 @@
 ---
-title: "Increase threat protection"
+title: "Increase threat protection for Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -24,8 +24,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: "Get help with increasing the level of protection in Microsoft 365"
+description: "Get help with increasing the level of protection in Microsoft 365 Business Premium"
 ---
 
 # Increase threat protection for Microsoft 365 Business Premium
