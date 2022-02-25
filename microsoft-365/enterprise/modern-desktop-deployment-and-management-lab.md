@@ -19,7 +19,7 @@ description: Learn about where to access the Windows and Office Deployment Lab K
 
 # Windows and Office 365 deployment lab kit
 
-The Windows and Office 365 deployment lab kit is designed to help you plan, test, and validate your deployment and management of desktops running Windows 10 Enterprise or Windows 11 Enterprise and Microsoft 365 Apps for enterprise. The labs in the kit cover using Microsoft Endpoint Configuration Manager, the Office Customization Tool, OneDrive, Windows Autopilot, and more. This kit is highly recommended for organizations preparing for desktop upgrades. As an isolated environment, the lab is also ideal for exploring deployment tool updates and testing your deployment-related automation.
+The Windows and Office 365 deployment lab kit is designed to help you plan, test, and validate your deployment and management of desktops running Windows 10 Enterprise or Windows 11 Enterprise and Microsoft 365 Apps for enterprise. The labs in the kit cover using Microsoft Endpoint Configuration Manager, OneDrive, Windows Autopilot, and more. This kit is highly recommended for organizations preparing for desktop upgrades. As an isolated environment, the lab is also ideal for exploring deployment tool updates and testing your deployment-related automation.
 
 **Windows 10 and Windows 11 versions of the lab kit are now available for free download in the Microsoft Evaluation Center.**
 
@@ -96,7 +96,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 [Download the Windows 11 and Office 365 deployment lab kit](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)
 
 > [!NOTE]
-> Please use a broadband internet connection to download this content and allow approximately 30 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows 10 lab expires February 15, 2022. The Windows 11 lab expires April 11, 2022. New versions will be published prior to expiration.
+> Please use a broadband internet connection to download this content and allow approximately 30 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows 10 lab expires May 16, 2022. The Windows 11 lab expires April 11, 2022. New versions will be published prior to expiration.
 
 ## Additional guidance
 
