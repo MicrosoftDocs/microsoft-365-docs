@@ -13,9 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
-- M365-security-compliance 
-- m365initiative-m365-defender 
+ms.collection: m365-security-compliance 
 ms.topic: conceptual
 ms.technology: m365d
 ---
@@ -44,7 +42,7 @@ You have the option to turn off device discovery through the [Advanced features]
 
 In this mode endpoints onboarded to Microsoft Defender for Endpoint can actively probe observed devices in the network to enrich collected data (with negligible amount of network traffic). Only devices that were observed by the basic discovery mode will be actively probed in standard mode. This mode is highly recommended for building a reliable and coherent device inventory. If you choose to disable this mode, and select Basic discovery mode, you will likely only gain limited visibility of unmanaged endpoints in your network.
 
- Standard mode also leverages common discovery protocols that use multicast queries in the network to find even more devices, in addition to the ones that were ovserved using the passive method.
+ Standard mode also leverages common discovery protocols that use multicast queries in the network to find even more devices, in addition to the ones that were observed using the passive method.
 
 ## Can I control which devices perform Standard discovery?
 
@@ -87,7 +85,7 @@ As device discovery uses passive methods to discover devices in the network, any
 
 Devices will actively be probed when changes in device characteristics are observed to make sure the existing information is up-to-date (typically, devices probed no more than once in a three-week period)
 
-## My security tool raised alert on UnicastScanner.ps1 or port scanning activity initiated by it, what should I do?
+## My security tool raised alert on UnicastScanner.ps1 / PSScript_{GUID}.ps1 or port scanning activity initiated by it, what should I do?
 
 The active probing scripts are signed by Microsoft and are safe. You can add the following path to your exclusion list:
 `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps1`
