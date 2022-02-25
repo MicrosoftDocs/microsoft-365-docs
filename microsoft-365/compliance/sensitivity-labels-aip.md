@@ -129,7 +129,7 @@ Use the following information to help you identify if you're using a feature fro
 |Multilanguage support for label names and tooltips| ![Supported.](../media/yes-icon.png) <br>[Learn more](create-sensitivity-labels.md#example-configuration-to-configure-a-sensitivity-label-for-different-languages) |
 |Label colors| In planning or development |
 |Visibility of labels on the toolbar| In planning or development |
-|**Category: Labeing actions** ||
+|**Category: Labeling actions** ||
 |Manual labeling |  ![Supported.](../media/yes-icon.png) <br>[Learn more](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9) |
 |Mandatory labeling | ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels.md#what-label-policies-can-do)|
 |Default labeling <br> - New and existing items <br> - Separate settings for email|  ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels.md#what-label-policies-can-do) |
