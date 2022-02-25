@@ -106,6 +106,14 @@
            href: manage-tenant-allows.md
          - name: Modify and remove entries in the Tenant Allow/Block List
            href: modify-remove-entries-tenant-allow-block.md
+       - name: Attack simulation training in Defender for Office 365
+         items:
+         - name: Payload automations in Attack simulation training
+           href: attack-simulation-training-payload-automations.md
+         - name: End-user notifications for Attack simulation training
+           href: attack-simulation-traning-end-user-notifications.md
+         - name: Attack simulation training deployment considerations and FAQ
+           href: attack-simulation-training-faq.md
        - name: Attack simulation training (P2)
          items:
          - name: Get started using Attack simulation training
@@ -178,6 +186,8 @@
            href: view-mail-flow-reports.md
      - name: Respond
        items: 
+       - name: Office 365 Security Incident Response
+         href: office365-security-incident-response-overview.md
        - name: Phase 1 - Analyze and maintain 
          items: 
          - name: Step 1 - Submissions and message review
@@ -262,16 +272,40 @@
        href: permissions-microsoft-365-security-center.md
      - name: Permissions in the Security & Compliance Center
        href: permissions-in-the-security-and-compliance-center.md
+     - name: Integrate Defender for Office 365 with Defender for Endpoint
+       href: integrate-office-365-ti-with-mde.md
      - name: SIEM server integration
        href: siem-server-integration.md
      - name: SIEM integration with Defender for Office 365
        href: siem-integration-with-office-365-ti.md     
-     - name: Security roadmap
-       href: security-roadmap.md
      - name: Exchange Online Protection
        items: 
             - name: Mail flow in EOP
               href: mail-flow-in-eop.md
+            - name: Anti-malware policies
+              items:
+            - name: Anti-malware protection
+              href: anti-malware-protection.md
+            - name: Configure anti-malware policies
+              href: configure-anti-malware-policies.md
+            - name: Anti-spam policies
+              items:
+              - name: Anti-spam protection
+                href: anti-spam-protection.md
+              - name: Configure anti-spam policies  
+                href: configure-your-spam-filter-policies.md
+              - name: Advanced Spam Filter (ASF) settings
+                href: advanced-spam-filtering-asf-options.md
+            - name: Anti-phishing protection
+              href: anti-phishing-protection.md
+            - name: Configure anti-phishing policies in EOP
+              href: configure-anti-phishing-policies-eop.md
+            - name: Anti-spoofing protection
+              href: anti-spoofing-protection.md
+            - name: Outbound spam protection
+              href: outbound-spam-controls.md
+            - name: Configure junk email settings on Exchange Online mailboxes
+              href: configure-junk-email-settings-on-exo-mailboxes.md
             - name: Quarantine
               href: quarantine-email-messages.md
             - name: Help and support for EOP
@@ -288,6 +322,46 @@
               href: mail-flow-intelligence-in-office-365.md
             - name: Troubleshooting mail sent to Microsoft 365
               href: troubleshooting-mail-sent-to-office-365.md
+     - name: Report messages and files to Microsoft
+       items:
+         - name: Admin submissions
+           href: admin-submission.md
+         - name: User submissions policies
+           href: user-submission.md
+         - name: Enable the Report Message and the Report Phishing add-ins
+           href: enable-the-report-message-add-in.md
+         - name: Report false positives and false negatives in Outlook
+           href: report-false-positives-and-false-negatives.md
+         - name: Submit malware and non-malware to Microsoft
+           href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+     - name: Mail flow insights in the Security & Compliance Center
+       items:
+         - name: Mail flow insights in the Security & Compliance Center
+           href: mail-flow-insights-v2.md
+         - name: Auto-forwarded messages insight
+           href: mfi-auto-forwarded-messages-report.md
+         - name: Fix possible mail loop insight
+           href: mfi-mail-loop-insight.md
+         - name: Fix slow mail flow rules insight
+           href: mfi-slow-mail-flow-rules-insight.md
+         - name: Mail flow map
+           href: mfi-mail-flow-map-report.md
+         - name: New domains being forwarded email insight
+           href: mfi-new-domains-being-forwarded-email.md
+         - name: New users forwarding email insight
+           href: mfi-new-users-forwarding-email.md
+         - name: Non-accepted domain report
+           href: mfi-non-accepted-domain-report.md
+         - name: Non-delivery report
+           href: mfi-non-delivery-report.md
+         - name: Outbound and inbound mail flow insight
+           href: mfi-outbound-and-inbound-mail-flow.md
+         - name: Queues insight
+           href: mfi-queue-alerts-and-queues.md
+         - name: SMTP Auth clients insight and report
+           href: mfi-smtp-auth-clients-report.md
+         - name: Top domain mail flow status insight 
+           href: mfi-domain-mail-flow-status-insight.md     
      - name: How Microsoft 365 uses SPF to prevent spoofing
        href: how-office-365-uses-spf-to-prevent-spoofing.md
      - name: How Office 365 validates the From address to prevent phishing
@@ -334,126 +408,48 @@
           href: office-365-ti.md
         - name: Email analysis in investigations
           href: email-analysis-investigations.md
+        - name: Configure anti-phishing policies in Defender for Office 365
+          href: configure-mdo-anti-phishing-policies.md
       - name: Office 365 security
         items:
         - name: Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
           href: turn-on-mdo-for-spo-odb-and-teams.md
-      - name: Anti-malware protection
-        href: anti-malware-protection.md
-      - name: Anti-spam protection
-        href: anti-spam-protection.md
-      - name: Anti-phishing protection
-        href: anti-phishing-protection.md
-      - name: Anti-spoofing protection
-        href: anti-spoofing-protection.md
-      - name: Safe Attachments in Defender for Office 365
-        href: safe-attachments.md
-      - name: Safe Links in Defender for Office 365
-        href: safe-links.md
-      - name: Outbound spam protection
-        href: outbound-spam-controls.md
-      - name: Office 365 Security Incident Response
-        href: office365-security-incident-response-overview.md
-      - name: Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
-        href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
-      - name: Integrate Defender for Office 365 with Defender for Endpoint
-        href: integrate-office-365-ti-with-mde.md
-      - name: Configure anti-phishing policies in Defender for Office 365
-        href: configure-mdo-anti-phishing-policies.md
-      - name: Configure anti-phishing policies in EOP
-        href: configure-anti-phishing-policies-eop.md
-      - name: Configure anti-malware policies
-        href: configure-anti-malware-policies.md
-      - name: Configure anti-spam policies
-        items:
-        - name: Configure anti-spam policies  
-          href: configure-your-spam-filter-policies.md
-        - name: Advanced Spam Filter (ASF) settings
-          href: advanced-spam-filtering-asf-options.md
-      - name: Configure EOP to deliver spam to Junk Email folders in hybrid
-        href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
-      - name: Configure junk email settings on Exchange Online mailboxes
-        href: configure-junk-email-settings-on-exo-mailboxes.md
-      - name: Configure connection filtering
-        href: configure-the-connection-filter-policy.md
-      - name: Configure global settings for Safe Links in Defender for Office 365
-        href: configure-global-settings-for-safe-links.md
-      - name: Configure outbound spam filtering
-        href: configure-the-outbound-spam-policy.md
-      - name: Create block sender lists
-        href: Create-block-sender-lists-in-office-365.md
-      - name: Create safe sender lists
-        href: Create-safe-sender-lists-in-office-365.md
-      - name: Email authentication
-        href: email-validation-and-authentication.md
-      - name: Safe Documents in Defender for Office 365
-        href: safe-docs.md
-      - name: User submissions policies
-        href: user-submission.md
+        - name: Safe Attachments in Defender for Office 365
+          href: safe-attachments.md
+        - name: Safe Links in Defender for Office 365
+          href: safe-links.md
+        - name: Safe Documents in Defender for Office 365
+          href: safe-docs.md
+        - name: Configure connection filtering
+          href: configure-the-connection-filter-policy.md
+        - name: Configure global settings for Safe Links in Defender for Office 365
+          href: configure-global-settings-for-safe-links.md
+        - name: Configure outbound spam filtering
+          href: configure-the-outbound-spam-policy.md
+        - name: Create block sender lists
+          href: Create-block-sender-lists-in-office-365.md
+        - name: Create safe sender lists
+          href: Create-safe-sender-lists-in-office-365.md
+        - name: Email authentication
+          href: email-validation-and-authentication.md
+        - name: Install Application Guard for Office
+          href: install-app-guard.md
+        - name: DELETE? Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
+          href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
+        - name: DELETE? Security roadmap
+          href: security-roadmap.md
       - name: User tags in Defender for Office 365
         href: user-tags.md
       - name: Add support for anonymous inbound email over IPv6
         href: support-for-anonymous-inbound-email-messages-over-ipv6.md
-      - name: Install Application Guard for Office
-        href: install-app-guard.md
       - name: Configure your tenant for increased security
         href: tenant-wide-setup-for-increased-security.md
       - name: Security recommendations for priority accounts
         href: security-recommendations-for-priority-accounts.md
-      - name: Attack simulation training in Defender for Office 365
-        items:
-        - name: Payload automations in Attack simulation training
-          href: attack-simulation-training-payload-automations.md
-        - name: End-user notifications for Attack simulation training
-          href: attack-simulation-traning-end-user-notifications.md
-        - name: Attack simulation training deployment considerations and FAQ
-          href: attack-simulation-training-faq.md
       - name: Configure delivery for third-party phishing simulations and SecOps mailboxes
         href: configure-advanced-delivery.md
       - name: Smart reports and insights in the Security & Compliance Center
         href: reports-and-insights-in-security-and-compliance.md
-      - name: Run an administrator role group report
-        href: /exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
-      - name: Mail flow insights in the Security & Compliance Center
-        items:
-         - name: Mail flow insights in the Security & Compliance Center
-           href: mail-flow-insights-v2.md
-         - name: Auto-forwarded messages insight
-           href: mfi-auto-forwarded-messages-report.md
-         - name: Fix possible mail loop insight
-           href: mfi-mail-loop-insight.md
-         - name: Fix slow mail flow rules insight
-           href: mfi-slow-mail-flow-rules-insight.md
-         - name: Mail flow map
-           href: mfi-mail-flow-map-report.md
-         - name: New domains being forwarded email insight
-           href: mfi-new-domains-being-forwarded-email.md
-         - name: New users forwarding email insight
-           href: mfi-new-users-forwarding-email.md
-         - name: Non-accepted domain report
-           href: mfi-non-accepted-domain-report.md
-         - name: Non-delivery report
-           href: mfi-non-delivery-report.md
-         - name: Outbound and inbound mail flow insight
-           href: mfi-outbound-and-inbound-mail-flow.md
-         - name: Queues insight
-           href: mfi-queue-alerts-and-queues.md
-         - name: SMTP Auth clients insight and report
-           href: mfi-smtp-auth-clients-report.md
-         - name: Top domain mail flow status insight 
-           href: mfi-domain-mail-flow-status-insight.md
-      - name: Report messages and files to Microsoft
-        items:
-         - name: Admin submissions
-           href: admin-submission.md
-         - name: Enable the Report Message and the Report Phishing add-ins
-           href: enable-the-report-message-add-in.md
-         - name: Report false positives and false negatives in Outlook
-           href: report-false-positives-and-false-negatives.md
-         - name: Use mail flow rules to see what users are reporting to Microsoft
-           href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
-         - name: Submit malware and non-malware to Microsoft
-           href: submitting-malware-and-non-malware-to-microsoft-for-analysis.md
       - name: Responding to a Compromised Email Account in Office 365
         href: responding-to-a-compromised-email-account.md
 
