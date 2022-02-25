@@ -11,7 +11,7 @@ manager: dougeby
 ms.topic: article
 ---
 
-# Compliance
+# Compliance 
 
 When you use Microsoft Managed Desktop, Microsoft provides you with a comprehensive set of compliance offerings. This effort helps your organization comply with the various compliance requirements.
 

@@ -11,7 +11,7 @@ manager: dougeby
 ms.topic: article
 ---
 
-# Microsoft Managed Desktop technologies
+# Microsoft Managed Desktop technologies 
 
 This article lists the technologies and apps used in Microsoft Managed Desktop.
 

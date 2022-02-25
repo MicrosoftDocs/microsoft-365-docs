@@ -12,7 +12,7 @@ ms.topic: article
 audience: Admin
 ---
 
-# Device registration methods
+# Device registration methods 
 
 Before Microsoft can manage your devices in Microsoft Managed Desktop, you must have devices registered with the service.
 
@@ -31,7 +31,7 @@ Registration can also be performed within your organization by collecting the ha
 
 - OEM registration
     - [Using the Partner portal](partner-registration.md#register-devices-using-the-partner-center)
-    - [Using OEM APIs](partner-registration.md#register-devices-by-using-the-OEM-API)
+    - [Using OEM APIs](partner-registration.md#register-devices-by-using-the-oem-api)
 - [Manual registration](manual-registration.md)
 - [Manual registration for existing devices](manual-registration-existing-devices.md)
 
