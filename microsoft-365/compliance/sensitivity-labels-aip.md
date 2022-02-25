@@ -143,7 +143,7 @@ Use the following information to help you identify if you're using a feature fro
 |Admin-defined permissions | ![Supported.](../media/yes-icon.png) <br>[Learn more](encryption-sensitivity-labels.md#assign-permissions-now) |
 |User-defined permissions <br> - Do Not Forward for Outlook <br> - User and group custom permissions for Word, Excel, PowerPoint| ![Supported.](../media/yes-icon.png) <br>[Learn more](encryption-sensitivity-labels.md#let-users-assign-permissions)|
 |User-defined permissions <br> - Organization-wide custom permissions by specifying domains for Word, Excel, PowerPoint | In planning or development |
-|Co-authoring and Auto-Save | ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-coauthoring.md) |
+|Co-authoring and AutoSave | ![Supported.](../media/yes-icon.png) <br>[Learn more](sensitivity-labels-coauthoring.md) |
 |Double key encryption | In planning or development |
 |Document revocation for users | Under review |
 | | |
