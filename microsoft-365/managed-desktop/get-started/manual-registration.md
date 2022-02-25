@@ -1,6 +1,6 @@
 ---
-title: Register new devices yourself
-description: Register devices yourself so they can be managed by Microsoft Managed Desktop
+title: Manual registration
+description: Register devices to be managed by Microsoft Managed Desktop
 ms.service: m365-md
 author: tiaraquan
 f1.keywords:
@@ -13,12 +13,12 @@ ms.topic: article
 audience: Admin
 ---
 
-# Register new devices yourself
+# Manual registration
 
 Microsoft Managed Desktop can work with brand-new devices, or you can reuse devices you might already have. If you reuse devices, you must reimage them. You're able to register devices with Microsoft Managed Desktop in the Microsoft Endpoint Manager portal.
 
 > [!NOTE]
-> Working with a partner to obtain devices? If so, you don't need to worry about getting the hardware hashes; they'll take care of that for you. Make sure your partner establishes a relationship with you at the [Partner Center](https://partner.microsoft.com/dashboard). Your partner can learn more at [Partner Center help](/partner-center/request-a-relationship-with-a-customer). Once this relationship established, your partner will simply register devices on your behalf – no further action required from you. If you want to see the details, or your partner has questions, see [Steps for Partners to register devices](register-devices-partner.md). Once the devices are registered, you can proceed with [checking the image](#check-the-image) and [delivering the devices](#deliver-the-device) to your users.
+> Working with a partner to obtain devices? If so, you don't need to worry about getting the hardware hashes; they'll take care of that for you. Make sure your partner establishes a relationship with you at the [Partner Center](https://partner.microsoft.com/dashboard). Your partner can learn more at [Partner Center help](/partner-center/request-a-relationship-with-a-customer). <br><br>Once this relationship established, your partner will simply register devices on your behalf – no further action required from you. If you want to see the details, or your partner has questions, see [Partner registration](partner-registration.md). Once the devices are registered, you can proceed with [checking the image](#check-the-image) and [delivering the devices](#deliver-the-device) to your users.
 
 ## Prepare to register brand-new devices
 
@@ -122,7 +122,7 @@ You're also welcome to apply the image on your own if you prefer. To get started
 
 ### Autopilot group tag
 
-When you use the Admin portal to register devices, we automatically assign the Autopilot Group Tag associated with the device profile listed in [Register devices by using Partner Center](register-devices-partner.md).
+When you use the Admin portal to register devices, we automatically assign the Autopilot Group Tag associated with the device profile listed in [Register devices by using Partner Center](partner-registration.md).
 The service monitors all Microsoft Managed Desktop devices daily and assigns the group tag to any that don't already have it.
 
 ### Deliver the device
