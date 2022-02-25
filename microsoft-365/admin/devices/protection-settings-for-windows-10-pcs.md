@@ -31,6 +31,9 @@ description: "Learn about settings available in Microsoft 365 for business to se
 
 This article applies to Microsoft 365 Business Premium.
 
+> [!NOTE]
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md)
+
 After you have set set up default Windows protection settings on the Setup page, you can add new ones that apply to either all users, or a set of users. You can also edit any of the ones you have created.
 
 ## Watch: Create protection settings for Windows 10 devices
@@ -79,3 +82,7 @@ For more information, see [How do protection features in Microsoft 365 Premium m
 |Allow users to receive Windows tips and advertisements from Microsoft  <br/> |Windows tips can be handy and help orient users when new features are released.  <br/> |
 |Keep Windows 10 devices up to date automatically  <br/> |Makes sure that Windows 10 devices automatically receive the latest updates.  <br/> |
 |Turn off device screen when idle for this amount of time  <br/> |Makes sure that company data is protected if a user is idle. A user may be working in a public location, like a coffee shop, and step away or be distracted for just a moment, leaving their device vulnerable to random glances. This setting lets you control how long the user can be idle before the screen shuts off.  <br/> |
+
+## See also
+
+[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
