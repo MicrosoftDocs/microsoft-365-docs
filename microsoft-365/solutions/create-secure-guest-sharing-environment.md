@@ -14,6 +14,7 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
+- admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
@@ -175,9 +176,9 @@ To restrict guests to web-only access for Groups and Teams:
 
 To restrict guests to web-ony access for SharePoint
 
-1. In the [SharePoint admin center](https://admin.microsoft.com/sharepoint), expand **Policies** and click **Access control**.
-2. Click **Unmanaged devices**.
-3. Select the **Allow limited, web-only access** option, and then click **Save**.
+1. In the SharePoint admin center, expand **Policies** and select <a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank">**Access control**</a>.
+2. Select **Unmanaged devices**.
+3. Select the **Allow limited, web-only access** option, and then select **Save**.
 
 Note that this setting in the SharePoint admin center creates a supporting conditional access policy in Azure AD.
 

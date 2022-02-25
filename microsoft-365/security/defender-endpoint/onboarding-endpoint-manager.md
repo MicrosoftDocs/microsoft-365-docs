@@ -360,10 +360,10 @@ To confirm that the configuration policy has been applied to your test device, f
     > [!div class="mx-imgBorder"]
     > [![Image of Services panel2.](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
 
-3. After the services are running on the device, the device appears in Microsoft Defender Security Center.
+3. After the services are running on the device, the device appears in Microsoft 365 Defender portal.
 
     > [!div class="mx-imgBorder"]
-    > [![Image of Microsoft Defender Security Center.](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
+    > [![Image of Microsoft 365 Defender portal.](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
 
 ### Confirm next-generation protection
 

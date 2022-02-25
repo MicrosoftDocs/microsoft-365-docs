@@ -16,6 +16,7 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkTEAMS
+- admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
@@ -108,10 +109,10 @@ If you want to allow file and folder sharing with unauthenticated people, choose
 
 To set SharePoint organization-level sharing settings
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, in the left navigation pane, under **Admin centers**, click **SharePoint**.
-2. In the SharePoint admin center, in the left navigation pane, expand **Policies** and then click **Sharing**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, in the left navigation pane, under **Admin centers**, select **SharePoint**.
+2. In the SharePoint admin center, in the left navigation pane, expand **Policies** and then select <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>.
 3. Ensure that external sharing for SharePoint is set to **Anyone** or **New and existing guests**.
-4. If you made changes, click **Save**.
+4. If you made changes, select **Save**.
 
 
 ## SharePoint organization-level default link settings
@@ -131,9 +132,9 @@ Choose any one of the following link-types which will be selected by default whe
 
 To set the SharePoint organization-level default link settings
 
-1. Navigate to the Sharing page in the SharePoint admin center.
+1. Go to <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a> in the SharePoint admin center.
 2. Under **File and folder links**, select the default sharing link that you want to use.
-3. If you made changes, click **Save**.
+3. If you made changes, select **Save**.
 
 ## Create a team
 
@@ -156,11 +157,11 @@ Check the site-level sharing settings to make sure that they allow the type of a
 ![Screenshot of SharePoint site external sharing settings.](../media/sharepoint-site-external-sharing-settings.png)
 
 To set site-level sharing settings
-1. In the SharePoint admin center, in the left navigation pane, expand **Sites** and click **Active sites**.
+1. In the SharePoint admin center, in the left navigation pane, expand **Sites** and select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
 2. Select the site for the team that you just created.
-3. Click ... and choose **Sharing**.
+3. Select ... and choose **Sharing**.
 4. Ensure that sharing is set to **Anyone** or **New and existing guests**.
-5. If you made changes, click **Save**.
+5. If you made changes, select **Save**.
 
 ## Invite users
 

@@ -29,13 +29,13 @@ MSPs must be enrolled in the Cloud Solution Provider (CSP) program as an Indirec
 
 In addition, each MSP customer tenant must qualify for Lighthouse by meeting the following requirements: 
  
-- Delegated Admin Privileges (DAP) for the MSP 
+- Delegated Admin Privileges (DAP) or Granular Delegated Admin Privileges (GDAP) for the MSP 
 - At least one Microsoft 365 Business Premium or Microsoft 365 E3 license 
-- Fewer than 500 licensed users  
+- Fewer than 1000 licensed users  
 
-## Requirements for enabling device management   
+## Requirements for enabling device management
 
-To view customer tenant devices on the device management pages, a MSP must:    
+To view customer tenant devices on the device management pages, a MSP must:
 
 - Enroll all customer devices in Microsoft Endpoint Manager (MEM). For more information, see [Enroll devices in Microsoft Intune](/mem/intune/enrollment/).
 - Assign compliance policies to all customer devices. For more information, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy). 
@@ -55,7 +55,7 @@ Microsoft Defender Antivirus is part of the Windows operating system and is enab
 > [!NOTE] 
 > If you're using a non-Microsoft antivirus solution and not Microsoft Defender Antivirus, Microsoft Defender Antivirus is disabled automatically. When you uninstall the non-Microsoft antivirus solution, Microsoft Defender Antivirus is activated automatically to protect your Windows devices from threats.    
 
-## Related content   
+## Related content
 
 [Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article)\
 [Microsoft 365 Lighthouse Device compliance page overview](m365-lighthouse-device-compliance-page-overview.md) (article)\
