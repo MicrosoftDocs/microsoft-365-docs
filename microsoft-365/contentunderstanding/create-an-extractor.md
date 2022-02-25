@@ -67,6 +67,8 @@ If you have duplicate entities and want to extract only one value, you can set a
 
 1. From the model home page, in the **Entity extractors** section, select the distractor you want to refine, and then select **Refine extracted info**.
 
+     [Add screenshot]
+
 2. On the **Choose a refiner** page, select one of the following rules:
 
     - Keep only the first lines
@@ -75,9 +77,13 @@ If you have duplicate entities and want to extract only one value, you can set a
     - Keep values that are extracted last
     - Remove duplicates
 
-[Add screenshot]
+     [Add screenshot]
 
-3. To see the refinement, from the **Extractors** panel, 
+3. To see the refinement, from the model home page, select the **Test** tab.
+
+4. In the **Test Files** list, in the **Refinement result** column, you can see if the model is able to extract the value you want. 
+
+     [Add screenshot]
 
 ### Use Find to search your file
 
