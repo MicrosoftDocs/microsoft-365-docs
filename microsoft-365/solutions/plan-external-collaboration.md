@@ -27,9 +27,9 @@ Microsoft 365 offers several options for collaborating with people outside your 
 - 1:1 and group chat in Teams with people outside your organization
 - Teams meetings with people outside your organization
 - Sharing individual files or folders with people outside your organization
-- Collaboration in a team, with chat, file collaboration, and shared apps
+- Collaboration in a team, with channel conversations, file collaboration, and shared apps
 
-This article covers the fourth option, group collaboration with chat, file collaboration, and shared apps. 
+This article covers the fourth option, group collaboration with channel conversations, file collaboration, and shared apps. 
 
 ## Terms
 
@@ -55,11 +55,9 @@ Guest sharing uses Azure AD B2B collaboration to allow sharing and collaboration
 
 Guests in a team have similar capabilities to regular team members.
 
-**External participants**
+**External participants in shared channels**
 
 External participants access shared resources in your organization by using their own Azure AD or Microsoft 365 identity. This is enabled by Azure AD B2B direct connect through an organizational relationship configured by both organizations. Guest accounts are not used in this relationship.
-
-- External participants in Teams shared channels
 
 The primary advantage of external participants in shared channels versus guest sharing is that people outside your organization can collaborate with your users in Teams without having to change their user context. When using guest accounts, users must sign out of Teams with their work or school account and sign in again using the guest account. Alternatively, they can have a separate copy of Teams running in a private browser session. This switching between organizations takes time and can cause users to miss important communications while signed out of a given organization.
 
@@ -74,14 +72,14 @@ The following table describes the experiences available depending on the type of
 |Team access|Y|Y|N|
 |Shared channel access|Y|N|Y|
 |Permissions through file sharing links|Y|Y|N|
-|Use shared channels|Y|Y|N|
+|Use shared channels|Y|N|Y|
 |Use private channels|Y|Y|N|
 |Account in your directory|Y|Y|N|
 |Access reviews|Y|Y|Y|
 			
 ## Planning considerations
 
-Most organizations will use both guest sharing and shared channels. 
+Most organizations will use both guest sharing and shared channels with external participants. 
 
 Guest sharing is enabled by default in Azure AD and in Microsoft 365 (Teams, Microsoft 365 Groups, and SharePoint). This allows users to invite guests to teams and sites and to share files with them without having to request assistance from IT.
 
@@ -90,7 +88,7 @@ You must use guest sharing if:
 - You want to share files or folders in a channel with people outside your organization who are not in the channel
 - You want to collaborate with people outside your organization who do not have a work or school account.
 
-External collaboration with shared channels is blocked by default. An Azure AD administrator must set up cross-tenant access between your organization and each other organization with which you want to share. Each other organization must set up cross-tenant access on their end as well.
+While shared channels is turned on by default in Teams, external collaboration with shared channels requires that an Azure AD administrator set up cross-tenant access between your organization and each other organization with which you want to share. Each other organization must set up cross-tenant access on their end as well.
 
 If you plan to use shared channels with other organizations, you can choose between a self-service model and a by-request model.
 
@@ -114,7 +112,7 @@ The host organization’s conditional access policies are applied to external us
 
 IP-based policies are supported at the SharePoint file level. So an external participant could access shared channel from a restricted location, but be blocked when trying to open a file.
 
-##### DLP
+##### Data loss prevention (DLP)
 
 Admins can apply DLP policies to a team where all channels, including shared channels, inherit the policy. Shared channels inherit the policy of the host organization.
 
