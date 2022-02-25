@@ -58,7 +58,7 @@ To get the latest image available in the factory on a Microsoft device, work wit
 You can reuse existing devices as long as they meet both:
 
 - [Device requirements](device-requirements.md#minimum-requirements)
-- [Software requirements](device-requirements.md#installed-software).
+- [Software requirements](device-requirements.md#installed-software)
 
 Follow the steps relevant to your manufacturer.
 
