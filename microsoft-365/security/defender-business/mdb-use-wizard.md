@@ -31,11 +31,6 @@ Microsoft Defender for Business was designed to save small and medium-sized busi
 
 :::image type="content" source="media/mdb-wizard-start.png" alt-text="Screenshot of wizard home screen to set up Defender for Business.":::
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
->
-
 ## Overview of the wizard
 
 The wizard is designed to help you set up and configure Defender for Business quickly and efficiently. The wizard walks you through the following steps:
@@ -60,9 +55,7 @@ The wizard is designed to help you set up and configure Defender for Business qu
 
 ## What happens if I don't use the wizard?
 
-If you choose not to use the wizard, or if the wizard is closed before your setup process is complete, you can still complete your setup and configuration process on your own. 
-
-See [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md) to walk through the steps.
+If you choose not to use the wizard, or if you exit the wizard before your setup process is complete, you can still complete your setup and configuration process on your own. See [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md) to walk through the steps.
 
 ## Next steps
 

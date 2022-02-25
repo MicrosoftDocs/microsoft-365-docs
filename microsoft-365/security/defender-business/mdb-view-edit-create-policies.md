@@ -31,11 +31,8 @@ In Microsoft Defender for Business, security settings are configured through pol
 **This article describes how to**:
 
 - [Get an overview of your default policies](#default-policies-in-defender-for-business)
-
 - [View your existing policies](#view-your-existing-policies)
-
 - [Edit an existing policy](#edit-an-existing-policy)
-
 - [Create a new policy](#create-a-new-policy)
 
 >
@@ -48,7 +45,6 @@ In Microsoft Defender for Business, security settings are configured through pol
 In Defender for Business, there are two main types of policies to protect your organization's devices:
 
 - **Next-generation protection policies**, which determine how Microsoft Defender Antivirus and other threat protection features are configured
-
 - **Firewall policies**, which determine what network traffic is permitted to flow to and from your organization's devices
 
 
