@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/11/2022
+ms.date: 02/21/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -25,12 +25,35 @@ ms.collection:
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-Microsoft Defender for Business (preview) is available in preview! Participating in the preview program enables you to try out Defender for Business before it becomes generally available. The preview program is available to:
+If you don’t already have Microsoft Defender for Business, you can choose from several options:
+
+- [Work with a Microsoft solution provider](#work-with-a-microsoft-solution-provider)
+- [Sign up for the preview program](#sign-up-for-the-preview-program)
+
+If you have signed up for a trial, after you receive your acceptance email, you can [activate your trial](#activate-your-trial), [view and manage users](#view-and-manage-users), and then proceed to your [next steps](#next-steps).
+
+## Work with a Microsoft Solution Provider
+
+Microsoft has a list of solution providers who are authorized to sell offerings, including Microsoft Defender for Business. 
+
+To find a solution provider in your area, take the following steps:
+
+1. Go to the **Microsoft Solution Providers** page ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
+ 
+2. In the search box, fill in your location and company size. 
+
+3. In the **Search for products, services, skills, industries** box, put `Microsoft 365`, and then select **Go**.
+
+4. Review the list of results. Select a provider to learn more about their expertise and the services they provide. Your provider can help you sign up for Defender for Business.
+
+## Sign up for the preview program
+
+ Participating in the preview program enables you to try out Defender for Business before it becomes generally available. The preview program is available to:
 
 - Microsoft partners who provide IT services to small and medium-sized businesses
 - Small and medium-sized businesses (up to 300 employees)
 
-## Sign up for the preview program
+Here's how to sign up:
 
 1. Visit [https://aka.ms/MDB-Preview](https://aka.ms/MDB-Preview).
 
@@ -60,10 +83,28 @@ When you're ready to start your trial, you'll work with two main portals to get 
 
 |Portal  |Description  |
 |---------|---------|
-| The Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Use the Microsoft 365 admin center to add or remove users, assign user licenses, view your products and services, and complete setup tasks for your Microsoft 365 subscription. <br/><br/> To learn more, see [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).      |
-| The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))     | Use the Microsoft 365 Defender portal to manage security settings for email protection and for your organization's devices. <br/><br/>To learn more, see [Get started using the Microsoft 365 Defender portal](mdb-get-started.md).        |
+| The Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Use the Microsoft 365 admin center activate your trial and sign in for the first time.<br/><br/> You'll also use the Microsoft 365 admin center to: <br/>- Add or remove users<br/>- Assign user licenses<br/>- View your products and services<br/>- Complete setup tasks for your Microsoft 365 subscription <br/><br/> To learn more, see [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).      |
+| The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))     | Use the Microsoft 365 Defender portal to set up and configure Defender for Business. <br/><br/>You'll use the Microsoft 365 Defender portal to: <br/>- View your devices and device protection policies<br/>- View detected threats and take action<br/>- View security recommendations and manage your security settings <br/><br/>To learn more, see [Get started using the Microsoft 365 Defender portal](mdb-get-started.md).        |
 
-If your organization is using Microsoft Intune (part of Microsoft Endpoint Manager) to manage devices, you might also use the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)). To learn more, see [Microsoft Intune is an MDM and MAM provider for your devices](/mem/intune/fundamentals/what-is-intune).
+If your organization is using Microsoft 365 Business Premium, then you have Microsoft Intune (part of Microsoft Endpoint Manager), and you might be using the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)). Endpoint Manager enables you to manage devices and configure security settings as well. To learn more, see [Microsoft Intune is an MDM and MAM provider for your devices](/mem/intune/fundamentals/what-is-intune).
+
+## Activate your trial
+
+When you receive your acceptance email, here's how to activate your trial of Defender for Business.
+
+1. In your acceptance email, select the link that includes your promo code. 
+
+2. If you already have a Microsoft 365 subscription, sign in using your account. If you don't already have a subscription, follow the prompts to create a new account. 
+
+3. When you sign in for the first time, you'll go to the Microsoft 365 admin center ([https://admin.microsoft.com/](https://admin.microsoft.com/)). See [Overview of the Microsoft 365 admin center](../../admin/admin-overview/admin-center-overview.md).
+
+4. If you're setting up things for the first time, select **Go to guided setup** and complete the following steps:
+
+   a. Install your Office apps or choose **Continue** to skip this step for now.
+
+   b. If your company has a domain, you can add it now (this option is recommended). Alternately, you could choose to use your default `.onmicrosoft.com` domain for now.
+
+   c. Add users and assign licenses. Each user you list will be assigned a license automatically. 
 
 ## View and manage users
 
@@ -73,13 +114,9 @@ If your organization is using Microsoft Intune (part of Microsoft Endpoint Manag
 
 3. To add users, follow the guidance in [Add users and assign licenses at the same time](../../admin/add-users/add-users.md).
 
-Now you're ready to proceed to [Set up and configure Microsoft Defender for Business (preview)](mdb-setup-configuration.md).
-
 
 ## Next steps
 
-- [See the setup and configuration process for Microsoft Defender for Business (preview)](mdb-setup-configuration.md)
-
-- [Use the wizard to set up Microsoft Defender for Business (preview)](mdb-use-wizard.md)
+- [Set up and configure Microsoft Defender for Business (preview)](mdb-setup-configuration.md).
 
 - [Find out how to get help and support for Microsoft Defender for Business (preview)](mdb-get-help.md)
