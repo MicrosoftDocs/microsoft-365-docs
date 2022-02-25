@@ -28,7 +28,7 @@ ms.technology: m365d
 
 If you have feedback or suggestions that would help us improve the Microsoft Defender for Endpoint client analyzer, use either of these options to submit feedback:
 
-1. Microsoft Defender for Endpoint portal (securitycenter.windows.com):
+Microsoft 365 Defender portal (security.microsoft.com):
 
     :::image type="content" source="images/3e2db5015cd4f47436b4765b2303f4f5.png" alt-text="The smiley feedback icon" lightbox="images/3e2db5015cd4f47436b4765b2303f4f5.png":::
 
