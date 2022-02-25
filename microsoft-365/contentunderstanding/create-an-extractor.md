@@ -67,7 +67,7 @@ If you have duplicate entities and want to extract only one value, you can set a
 
 1. From the model home page, in the **Entity extractors** section, select the distractor you want to refine, and then select **Refine extracted info**.
 
-     [Add screenshot]
+    ![Screenshot of the Entity extractors section showing the Refine extracted info option highlighted.](../media/content-understanding/refine-extracted-info.png) 
 
 2. On the **Choose a refiner** page, select one of the following rules:
 
