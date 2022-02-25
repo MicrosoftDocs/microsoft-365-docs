@@ -12,7 +12,7 @@ ms.topic: article
 audience: Admin
 ---
 
-# Prepare devices
+# Prepare devices 
 
 You can use both new and existing devices in Microsoft Managed Desktop.
 
