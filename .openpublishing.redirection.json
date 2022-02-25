@@ -4316,6 +4316,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/security/defender-endpoint/onboard.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/onboard-configure",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/defender-endpoint/mde-terms-mobile.md",
       "redirect_url": "/legal/microsoft-365/mde-terms-windows",
       "redirect_document_id": false
@@ -6040,6 +6045,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/learning/configure-edcast-content-source.md",
+      "redirect_url": "/viva/learning/configure-edcast-content-source",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/learning/configure-go1-content-source.md",
       "redirect_url": "/viva/learning/configure-go1-content-source",
       "redirect_document_id": false
@@ -6691,6 +6701,31 @@
     {
       "source_path": "microsoft-365/compliance/what-the-dlp-functions-look-for.md",
       "redirect_url": "/microsoft-365/compliance/sit-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/managed-desktop/get-started/register-devices-self.md",
+      "redirect_url": "/microsoft-365/managed-desktop/get-started/manual-registration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/managed-desktop/get-started/register-devices-partner.md",
+      "redirect_url": "/microsoft-365/managed-desktop/get-started/partner-registration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/managed-desktop/get-started/register-reused-devices-self.md",
+      "redirect_url": "/microsoft-365/managed-desktop/get-started/manual-registration-existing-devices",
+      "redirect_document_id": true
+    },    
+    {
+      "source_path": "microsoft-365/managed-desktop/get-started/set-up-devices.md",
+      "redirect_url": "/microsoft-365/managed-desktop/get-started/prepare-devices",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/setup/access-resources.md",
+      "redirect_url": "/azure/active-directory/devices/azuread-join-sso",
       "redirect_document_id": false
     }
   ]
