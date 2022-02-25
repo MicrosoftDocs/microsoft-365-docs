@@ -83,3 +83,6 @@ Once you've assigned a profile to a device, you can update it, even if you've al
     
 2. Select the check box next to a device name, and in the **Device** panel, choose **None** from the **Assigned profile** drop-down list \> **Save**.
     
+## See also
+
+[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)

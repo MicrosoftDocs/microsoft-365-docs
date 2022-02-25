@@ -82,3 +82,7 @@ For more information, see [How do protection features in Microsoft 365 Premium m
 |Allow users to receive Windows tips and advertisements from Microsoft  <br/> |Windows tips can be handy and help orient users when new features are released.  <br/> |
 |Keep Windows 10 devices up to date automatically  <br/> |Makes sure that Windows 10 devices automatically receive the latest updates.  <br/> |
 |Turn off device screen when idle for this amount of time  <br/> |Makes sure that company data is protected if a user is idle. A user may be working in a public location, like a coffee shop, and step away or be distracted for just a moment, leaving their device vulnerable to random glances. This setting lets you control how long the user can be idle before the screen shuts off.  <br/> |
+
+## See also
+
+[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
