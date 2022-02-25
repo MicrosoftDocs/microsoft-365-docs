@@ -1,5 +1,5 @@
 ---
-title: Promote your Microsoft 365 Defender evaluation environment to Production
+title: Step 7. Promote your Microsoft 365 Defender evaluation environment to Production
 description: Use this article to promote your evals of MDI, MDO, MDE, and Defender for Cloud Apps to your live environment in Microsoft 365 Defender or M365D.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
