@@ -16,7 +16,7 @@ metadata:
   - intro-hub-or-landing
   author: efrene #Required; your GitHub user alias, with correct capitalization.
   ms.author: efrene #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/23/2022
+  ms.date: 02/24/2022
 
 # productDirectory section (optional)
 productDirectory:
@@ -75,9 +75,9 @@ conceptualContent:
         - url: ../business-premium/m365bp-setup.md
           itemType: how-to-guide
           text: 3. Set up Microsoft 365 Business Premium
-        - url: /admin/security-and-compliance/secure-your-business-data.md
+        - url: ../admin/security-and-compliance/secure-your-business-data.md
           itemType: how-to-guide
-          text: 4. Secure your Microsoft 365 for business plan
+          text: 4. Top 10 days to secure Microsoft 365 for business
   # Card
     - title: What is Microsoft 365 Lighthouse?
       links:
@@ -102,16 +102,13 @@ conceptualContent:
         - url: https://aka.ms/M365BPPartnerPlaybook
           itemType: how-to-guide
           text: See the Microsoft 365 Business Premium Partner Playbook and Readiness Series
-        - url: ../lighthouse/m365-lighthouse-overview.md
-          itemType: overview
-          text: Overview of Microsoft 365 Lighthouse
         - url: https://aka.ms/M365MDBseries 
           itemType: video
           text: Join the partner webinar series!
         - url: https://partner.microsoft.com
           itemType: overview
           text: Microsoft Partner Network 
-        - url: /partner-center/overview
+        - url: https://docs.microsoft.com/partner-center/overview
           itemType: overview
           text: Get started with Partner Center
 

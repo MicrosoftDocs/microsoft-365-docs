@@ -36,6 +36,9 @@ description: "Learn how to upload devices using AutoPilot in Microsoft 365 Busin
 
 ## Upload a list of devices
 
+> [!NOTE]
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md)
+
 You can use the [Step-by-step guide](add-autopilot-devices-and-profile.md) to upload devices, but you can also upload devices in the **Devices** tab. 
   
 Devices must meet these requirements:

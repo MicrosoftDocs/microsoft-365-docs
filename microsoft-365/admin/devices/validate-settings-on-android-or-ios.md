@@ -29,7 +29,7 @@ description: "Learn how to validate the Microsoft 365 Business Premium app prote
 # Validate app protection settings on Android or iOS devices
 
 > [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md)
 
 Follow the instructions in the following sections to validate app protection settings on Android or iOS devices.
   

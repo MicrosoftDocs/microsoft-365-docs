@@ -32,7 +32,7 @@ description: "Learn how to verify that Microsoft 365 for business app protection
 # Validate device protection settings for Windows 10 PCs
 
 > [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md)
 
 ## Verify that Windows 10 device policies are set
 
