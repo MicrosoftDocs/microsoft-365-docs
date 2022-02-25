@@ -552,7 +552,7 @@ Specify whether users can submit feedback to Microsoft by going to `Help` > `Sen
 
 
 
-#### Control sign-in to consumer version of Microsoft
+#### Control sign-in to consumer version of Microsoft Defender
 
 Specify whether users can sign into the consumer version of Microsoft Defender.
 
