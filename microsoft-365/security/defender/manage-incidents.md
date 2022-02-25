@@ -43,7 +43,7 @@ Here are the ways you can manage your incidents:
 - [Add incident tags](#add-incident-tags)
 - [Assign the incident to a user account](#assign-an-incident)
 - [Resolve them](#resolve-an-incident)
-- [Set its classification and determination](#set-the-classification-and-determination)
+- [Specify its classification](#specify-the-classification)
 - [Add comments](#add-comments)
 
 You can manage incidents from the **Manage incident** pane for an incident. Here's an example.
@@ -90,11 +90,16 @@ If the incident has been remediated, select **Resolve incident** to move the tog
 
 An incident that is not resolved displays as **Active**.
 
-## Set the classification and determination
+## Specify the classification
 
-The incident classification is whether it was a true alert or a false alert, which you configure from the **Classification** field. 
+From the **Classification** field, you specify whether the incident is:
 
-If it was a true alert, you should also specify what type of threat it was with the **Determination** field. Specifying the threat type helps your security team see threat patterns and act to defend your organization from them. 
+- **Not set** (the default).
+- **True positive** with a type of threat. Use this classification for incidents that accurately indicate a real threat. Specifying the threat type helps your security team see threat patterns and act to defend your organization from them.
+- **Informational, expected activity** with a type of activity. Use the options in this category to classify incidents for security tests, red team activity, and expected unusual behavior from trusted apps and users.
+- **False positive** for types of incidents that you determine can be ignored because they are technically inaccurate or misleading.
+
+Classifying incidents and specifying their status and type helps tune Microsoft 365 Defender to provide better detection determination over time.
 
 ## Add comments
 
