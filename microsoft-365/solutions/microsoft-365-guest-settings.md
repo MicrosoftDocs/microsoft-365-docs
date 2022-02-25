@@ -195,6 +195,9 @@ You can set guest sharing permissions for each site in SharePoint. This setting 
 
 If the site has a sensitivity label applied, that label may control the external sharing settings. For more information, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md).
 
+> [!NOTE]
+> Sharing settings for channel sites can only be changed by using the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) PowerShell cmdlet.
+
 **Navigation:** SharePoint admin center > <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a> > select the site > **Policies** tab > **Edit External sharing**
 
 ![Screenshot of SharePoint site external sharing settings.](../media/sharepoint-site-external-sharing-settings.png)
