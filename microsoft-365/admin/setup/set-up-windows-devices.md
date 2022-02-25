@@ -124,8 +124,7 @@ Verify that your Azure AD joined Windows 10 devices are upgraded to Windows 10 B
   
 ## Next steps
 
-To set up your mobile devices, see [Set up mobile devices for Microsoft 365 Business Premium users](set-up-mobile-devices.md), To set device protection or app protection policies, see [Manage Microsoft 365 for business](/admin/index.yml).
-  
-## Related content
+To set up your mobile devices, see [Set up mobile devices for Microsoft 365 Business Premium users](set-up-mobile-devices.md), 
 
-[Microsoft 365 for business training videos](../../business-video/index.yml) (link page)
+To increase protection, see [Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md).
+  
