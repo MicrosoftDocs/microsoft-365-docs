@@ -77,7 +77,8 @@ If you have duplicate entities and want to extract only one value, you can set a
     - Keep values that are extracted last
     - Remove duplicates
 
-     [Add screenshot]
+    ![Screenshot of the Refine extracted info page showing the rules options.](../media/content-understanding/refine-extracted-info-page.png) 
+
 
 3. To see the refinement, from the model home page, select the **Test** tab.
 
