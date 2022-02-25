@@ -129,10 +129,6 @@ Before you configure your adaptive scope, use the previous section to identify w
     - **gt** (greater than)
     - **like** (string comparison
     - **notlike** (string comparison
-
-Site scopes automatically include all SharePoint site types, including Microsoft 365 group connected and OneDrive sites.  To include or exclude certain site types, use the indexed property SiteTemplate.  The following site templates exist in SharePoint Online:
-
-
     
     You can [validate these advanced queries](#validating-advanced-queries) independently from the scope configuration.
     
