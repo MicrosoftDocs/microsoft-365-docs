@@ -75,7 +75,7 @@ Details about the IP address are displayed, including: registration details (if 
 
 Use the search filters to define the search criteria. You can also use the timeline search box to filter the displayed results of all devices in the organization observed communicating with the IP address, the file associated with the communication and the last date observed.
 
-Clicking any of the device names will take you to that device's view, where you can continue investigate reported alerts, behaviors, and events.
+Clicking any of the device names will take you to that device's view, where you can continue to investigate reported alerts, behaviors, and events.
 
 ## Related topics
 
