@@ -17,7 +17,7 @@ description: Learn how to provision and use the Content Center site template in 
 
 # Use the Content Center site template for Microsoft SharePoint Syntex
 
-The SharePoint Syntex Content Center site is a ready-to-deploy SharePoint site template designed to help you better understand SharePoint Syntex capabilities.
+The SharePoint Syntex Content Center site is a ready-to-deploy instructional SharePoint site template designed to help you better understand SharePoint Syntex capabilities.
 
 You'll be introduced to the tools and information you’ll need to create and train your own models. You'll then be able to use this site as a central content repository or as the control center for managing your own SharePoint Syntex models.
 
