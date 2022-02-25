@@ -32,7 +32,7 @@ sections:
                    
           **Enterprise-grade device management and security capabilities**:
           
-          - Helps provide protection from external threats like phishing and sophisticated malware with Microsoft Defender for Office 365 Plan 1 and Microsoft Defender Exploit Guard.
+          - Helps provide protection from external threats like phishing and sophisticated malware with Microsoft Defender for Office 365 Plan 1 and Microsoft Defender for Business.
           - Helps control and manage how sensitive information is accessed and transmitted with data loss prevention policies and Azure Information Protection Plan 1.
           - Helps protect, preserve, and back up your data with Exchange Online Archiving.
           - App protection for Office and other mobile apps with Intune App Protection.
