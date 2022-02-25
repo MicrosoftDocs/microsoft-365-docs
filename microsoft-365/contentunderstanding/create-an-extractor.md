@@ -145,9 +145,9 @@ If you receive a match on your labeled sample files, you can now test your model
 
     ![Test on your files.](../media/content-understanding/test-filies-extractor-2.png) 
 
-### Refine extracted information
+### Other extractor strategies
 
-If you have duplicate entities and want to extract only one value, you can set a rule to specify how you want it processed. To refine extracted information, follow these steps:
+If you have duplicate entities and want to extract only one value but are unable to, you can set a rule to specify how you want it processed. To add a rule to refine extracted information, follow these steps:
 
 1. From the model home page, in the **Entity extractors** section, select the distractor you want to refine, and then select **Refine extracted info**.
 
