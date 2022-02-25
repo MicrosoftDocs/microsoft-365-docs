@@ -1,5 +1,5 @@
 ---
-title: "Protect your administrator accounts"
+title: "Protect your administrator accounts in Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -21,10 +21,10 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Learn how to set up and protect your administrator accounts."
+description: "Learn how to set up and protect your administrator accounts in Microsoft 365 Business Premium."
 ---
 
-# Protect your administrator accounts
+# Protect your administrator accounts in Microsoft 365 Business Premium
 
 Because admin accounts come with elevated privileges, they're valuable targets for hackers and cyber criminals. This article describes:
 
