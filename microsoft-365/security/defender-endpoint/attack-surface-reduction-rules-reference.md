@@ -42,11 +42,10 @@ This article provides information about attack reduction rules:
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The following table lists the supported operating systems for attack surface reduction rules that are currently prerelease product. The rules are listed alphabetical order.
+The following table lists the supported operating systems for attack surface reduction rules that are currently prerelease product. The rules are listed alphabetical order. Unless otherwise indicated, the minimum Windows&nbsp;10 build is version 1709 (RS3, build 16299) or later; the minimum Windows&nbsp;Server build is version is 1809 or later.
 
-> [!Note]
->
-> - Unless otherwise indicated, the minimum Windows&nbsp;10 build is version 1709 (RS3, build 16299) or later; the minimum Windows&nbsp;Server build is version is 1809 or later.
+> [!NOTE]
+> Attack surface reduction rules in Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 are available for devices onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016 Preview](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview).
 >
 
 | Rule name | Windows&nbsp;Server 2016 <sup>[[1](#fn1)]<sup></sup> | Windows&nbsp;Server 2012 R2 <sup>[[1](#fn1)]<sup></sup> |
@@ -58,7 +57,7 @@ The following table lists the supported operating systems for attack surface red
 |[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | Y | Y |
 |[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y | Y |
 |[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | Y | Y |
-|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | N |
+|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | N | N |
 |[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | Y | Y |
 |[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y |
 |[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | Y | Y |
@@ -84,7 +83,7 @@ The following table lists the supported operating systems for rules that are  cu
 
 |Rule name|Windows&nbsp;10|Windows&nbsp;Server 2019|Windows&nbsp;Server|
 |---|:---:|:---:|:---:|
-|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y version 1803 (Semi-Annual Channel) or later |
+|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br><br> version 1803 (Semi-Annual Channel) or later |
 |[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y version 1809 or later | Y | Y  <br><br> |
 |[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y <br><br> |
 |[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y version 1803 or later | Y <br><br> | Y <br><br> |
@@ -108,7 +107,7 @@ Links to information about configuration management system versions referenced i
 
 |Rule name | Intune | Microsoft Endpoint Manager |Microsoft Endpoint Configuration Manager |Group Policy<sup>[[1](#fn1)]<sup></sup> | PowerShell<sup>[[1](#fn1)]<sup></sup>  |
 |---|:---:|:---:|:---:|:---:|:---:|
-|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y  | Y MEM OMA-URI |   | Y  |  [supported](images/checkmark.png) <br><br> |
+|[Block abuse of exploited vulnerable signed drivers](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y  | Y MEM OMA-URI |   | Y  |  Y |
 |[Block Adobe Reader from creating child processes](#block-adobe-reader-from-creating-child-processes) | Y |   | Y | Y  | Y  |
 |[Block all Office applications from creating child processes](#block-all-office-applications-from-creating-child-processes) | Y |   |Y <br><br> CB 1710 | Y  | Y  |
 |[Block credential stealing from the Windows local security authority subsystem (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y  |   | Y <br><br>CB 1802 | Y  | Y  |
@@ -170,7 +169,7 @@ For rules with the “Rule State” specified:
 - **Audit**: This is the state in which the ASR rule is evaluated for its impactive behavior toward the organization or environment in which it is deployed. The code for this state is 2.
 - **Warn** This is the state in which the ASR rule is enabled and presents a notification to the end-user, but permits the end-user to bypass the block. The code for this state is 6.
 
-_Warn mode_ is a block-mode type that alerts users about potentially risky actions. Users can then choose to bypass the block warning message and allow the underlying action. Users can select **OK** to enforce the block, or select the bypass option - **Unblock** - through the end-user pop-up toast notification that is generated at the time of the block. After the warning is unblocked, the operation is allowed until the next time the warning message occurs, at which time the end-user will need to reperform the action.
+_Warn mode_ is a block-mode type that alerts users about potentially risky actions. Users can choose to bypass the block warning message and allow the underlying action. Users can select **OK** to enforce the block, or select the bypass option - **Unblock** - through the end-user pop-up toast notification that is generated at the time of the block. After the warning is unblocked, the operation is allowed until the next time the warning message occurs, at which time the end-user will need to reperform the action.
 
 If the allow button is clicked, the block will be suppressed for 24 hours. After 24 hours, the end-user will need to allow the block again. The warn mode for ASR rules is only supported for RS5+ (1809+) devices. If bypass is assigned to ASR rules on devices with older versions, the rule will be in blocked mode.
 

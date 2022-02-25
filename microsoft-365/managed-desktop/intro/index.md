@@ -99,7 +99,7 @@ Once you're ready to enroll, this section includes the steps to follow to actual
 - [Assign licenses](../get-started/assign-licenses.md)
 - [Install Intune Company Portal on on devices](../get-started/company-portal.md)
 - [Enable Enterprise State Roaming](../get-started/enterprise-state-roaming.md)
-- [Set up Microsoft Managed Desktop devices](../get-started/set-up-devices.md)
+- [Prepare devices](../get-started/prepare-devices.md)
 - [Get your users ready to use devices](../get-started/get-started-devices.md)
 - [Deploy apps to devices](../get-started/deploy-apps.md)
 
