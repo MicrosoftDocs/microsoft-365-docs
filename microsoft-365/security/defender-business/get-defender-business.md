@@ -31,7 +31,7 @@ If you don’t already have Microsoft Defender for Business, you can choose from
 - [Get Microsoft 365 Business Premium](#get-microsoft-365-business-premium)
 - [Sign up for the preview program](#sign-up-for-the-preview-program)
 
-If you have signed up for a trial, after you receive your acceptance email, you can [activate your trial and assign user licenses](#activate-your-trial), and then proceed to your [next steps](#next-steps).
+If you have signed up for a trial, after you receive your acceptance email, you can [activate your trial](#activate-your-trial), and then proceed to your [next steps](#next-steps).
 
 ## Work with a Microsoft Solution Provider
 
