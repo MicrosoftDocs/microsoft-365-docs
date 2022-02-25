@@ -81,11 +81,7 @@ If you have duplicate entities and want to extract only one value, you can set a
 
 3. Enter the number of lines or values you want to use, and then select **Refine**.
 
-4. To see the refinement, from the model home page, select the **Test** tab.
-
-5. In the **Test Files** list, in the **Refinement result** column, you can see if the model is able to extract the value you want. 
-
-     [Add screenshot]
+4. When you test the extractor, you'll be able to see the refinement in the **Refinement result** column of the **Test Files** list. 
 
 ### Use Find to search your file
 
