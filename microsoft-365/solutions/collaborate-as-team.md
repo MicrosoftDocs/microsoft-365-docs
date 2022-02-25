@@ -192,5 +192,3 @@ To invite guests to a team
 [Create a B2B extranet with managed guests](b2b-extranet.md)
 
 [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)
-
-[Sharing options are greyed out when sharing from SharePoint or OneDrive](/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

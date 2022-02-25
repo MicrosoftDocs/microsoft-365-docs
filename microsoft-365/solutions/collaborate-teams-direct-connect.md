@@ -99,5 +99,4 @@ To configure outbound settings for an organization
 
 [Limit who can be invited by an organization](limit-invitations-from-specific-organization.md)
 
-[Create a B2B extranet with managed guests](b2b-extranet.md)
-
+[Shared channels limits](/MicrosoftTeams/shared-channels?branch=mikeplum-shared-channels#shared-channel-limits)
