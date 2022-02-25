@@ -55,7 +55,3 @@ Devices in the **Device actions** list (Admin home \> **Device actions**) can ha
 |Delete pending  <br/> |Delete action is pending.  <br/> |
 |Discovered  <br/> |Microsoft 365 Business Premium has detected the device.  <br/> |
    
-
-## See also
-
-[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
