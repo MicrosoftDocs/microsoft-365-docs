@@ -37,8 +37,15 @@ When it comes to onboarding devices and configuring security settings for your o
 ## What to do
 
 1. [Review your setup and configuration options](#review-your-setup-and-configuration-options)
+
 2. [Learn more about the simplified configuration process in Defender for Business](#why-we-recommend-using-the-simplified-configuration-process)
+
 3. [Proceed to your next steps](#next-steps)
+
+>
+> **Got a minute?**
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
 
 ## Review your setup and configuration options
 
@@ -56,15 +63,9 @@ The following table describes each experience:
 
 **We recommend using the simplified configuration process in Microsoft Defender for Business** for most customers. The simplified configuration process is streamlined especially for small and medium-sized businesses. Defender for Business is designed to help you protect your organization's devices on day one, without requiring deep technical expertise or special knowledge. With default security settings and policies, your devices are protected as soon as they're onboarded.
 
-
 Defender for Business is designed to provide strong protection while saving you time and effort in configuring your security settings. The streamlined experience in the Microsoft 365 Defender portal makes it simple to onboard devices and manage them. In addition, default policies are included so that your organization's devices are protected as soon as they're onboarded. You can keep your default settings as they are, or make changes to suit your business needs. You can also add new policies to manage devices as needed.
 
 ## Next steps
-
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
->
 
 - [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md)
 

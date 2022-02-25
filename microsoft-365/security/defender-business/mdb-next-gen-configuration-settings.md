@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/07/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -30,7 +30,9 @@ Next-generation protection in Defender for Business includes robust antivirus an
 **This article describes**:
 
 - [Next-generation protection settings and options](#next-generation-protection-settings-and-options)
+
 - [Other preconfigured settings in Defender for Business](#other-preconfigured-settings-in-defender-for-business) 
+
 - [Defender for Business default settings and Microsoft Endpoint Manager](#defender-for-business-default-settings-and-microsoft-endpoint-manager)
 
 ## Next-generation protection settings and options
@@ -62,8 +64,11 @@ The following table lists your settings and options:<br/><br/>
 The following security settings are preconfigured in Defender for Business:
 
 - Scanning of removable drives is turned on ([AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning))
+
 - Daily quick scans don't have a preset time ([ScheduleQuickScanTime](/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime))
+
 - Security intelligence updates are checked before an antivirus scan runs ([CheckForSignaturesBeforeRunningScan](/windows/client-management/mdm/policy-csp-defender#defender-checkforsignaturesbeforerunningscan))
+
 - Security intelligence checks occur every four hours ([SignatureUpdateInterval](/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval))
 
 ## Defender for Business default settings and Microsoft Endpoint Manager
