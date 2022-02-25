@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: article
-ms.date: 01/06/2022
+ms.date: 02/15/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -25,7 +25,7 @@ ms.collection:
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-If you've just finished setting up Microsoft Defender for Business (preview), you might be wondering where to start to learn about how Defender for Business (preview) works. This article describes preview scenarios to try, and several tutorials and simulations that are available for Defender for Business (preview). These resources are designed to help you see how Defender for Business (preview) can work for your company.
+If you've just finished setting up Microsoft Defender for Business (preview), you might be wondering where to start to learn about how Defender for Business (preview) works. This article describes preview scenarios to try, and several tutorials and simulations that are available for Defender for Business (preview). These resources are designed to help you see how Defender for Business (preview) can work for your organization.
 
 >
 > **Got a minute?**
@@ -40,10 +40,10 @@ The following table summarizes several scenarios to try during the preview of De
 
 | Scenario  | Description  |
 |---------|---------|
-| Onboard devices using a local script     | In Defender for Business (preview), you can onboard Windows 10 and 11 devices using a script that you download and run on each device. The script creates a trust with Azure Active Directory (Azure AD) and enrolls the device with Microsoft Intune. To learn more, see [Onboard a device using a local script in Defender for Business (preview)](mdb-onboard-devices.md#onboard-a-device-using-a-local-script-in-defender-for-business).         |
+| Onboard devices using a local script     | In Defender for Business (preview), you can onboard Windows 10 and 11 devices using a script that you download and run on each device. The script creates a trust with Azure Active Directory (Azure AD) and enrolls the device with Microsoft Intune. To learn more, see [Local script in Defender for Business](mdb-onboard-devices.md#local-script-in-defender-for-business).         |
 | Onboard devices using Microsoft Intune     | If you were already using Microsoft Intune before getting Defender for Endpoint, you can use Microsoft Intune to onboard devices. Try onboarding macOS, iOS, Linux, and Android devices with Microsoft Intune. To learn more, see [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment).        |
-| Edit security policies and settings     | If you're managing your security policies and settings in Defender for Business (preview), use the **Device configuration** page to view and edit your policies. To learn more, see [View or edit policies in Microsoft Defender for Business (preview)](mdb-view-edit-policies.md).        |
-| Execute a simulated attack   | Several tutorials and simulations are available in Defender for Business (preview). These tutorials and simulations are designed to show you firsthand how the threat protection features of Defender for Business (preview) can work for your company. To try one or more of the tutorials, see [Recommended tutorials for Microsoft Defender for Business (preview)](#recommended-tutorials-for-defender-for-business).         |
+| Edit security policies     | If you're managing your security policies in Defender for Business (preview), use the **Device configuration** page to view and edit your policies. To learn more, see [View or edit policies in Microsoft Defender for Business (preview)](mdb-view-edit-policies.md).        |
+| Execute a simulated attack   | Several tutorials and simulations are available in Defender for Business (preview). These tutorials and simulations are designed to show you firsthand how the threat protection features of Defender for Business (preview) can work for your organization. To try one or more of the tutorials, see [Recommended tutorials for Microsoft Defender for Business (preview)](#recommended-tutorials-for-defender-for-business).         |
 | View incidents in Microsoft 365 Lighthouse     | If you are a [Microsoft Cloud Solution Provider](/partner-center/enrolling-in-the-csp-program) using Microsoft 365 Lighthouse, you will be able to view incidents across your customers' tenants in your Microsoft 365 Lighthouse portal soon. To learn more, see [Microsoft 365 Lighthouse and Microsoft Defender for Business (preview)](mdb-lighthouse-integration.md).       |
 
 

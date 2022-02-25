@@ -8,7 +8,6 @@
 ### [Preview features](preview.md)
 ### [Data storage and privacy](data-storage-privacy.md)
 ### [Overview of Microsoft Defender Security Center](use.md)
-### [Portal overview](portal-overview.md)
 ### [Defender for Endpoint Plan 1]()
 #### [Overview](defender-endpoint-plan-1.md)
 #### [Setup and configuration](mde-p1-setup-configuration.md)
@@ -197,7 +196,7 @@
 
 
 ### [Configure portal settings]()
-#### [Set up preferences](preferences-setup.md)
+#### [Configure general Defender for Endpoint settings](preferences-setup.md)
 #### [General]()
 ##### [Verify data storage location and  update data retention settings](data-retention-settings.md)
 ##### [Configure alert notifications](configure-email-notifications.md)
@@ -550,6 +549,12 @@
 ####### [Get IP related alerts](get-ip-related-alerts.md)
 ####### [Get IP statistics](get-ip-statistics.md)
 
+###### [Live response library]()
+####### [Live response library methods and properties](live-response-library-methods.md)
+####### [List library files](list-library-files.md)
+####### [Upload to live response library](upload-library.md)
+####### [Delete from library](delete-library.md)
+
 
 ###### [Machine]()
 ####### [Machine methods and properties](machine.md)
@@ -707,7 +712,6 @@
 
 ### [Troubleshoot Microsoft Defender for Endpoint service issues]()
 #### [Troubleshoot service issues](troubleshoot-mdatp.md)
-#### [Check service health](service-status.md)
 #### [Contact Microsoft Defender for Endpoint support](contact-support.md)
 
 ### [Troubleshoot live response issues](troubleshoot-live-response.md)

@@ -322,7 +322,7 @@
             href: named-entities-learn.md
         - name: Get started with sensitive information type
           items:
-          - name: Get started with custom sensitive information types - Compliance Center
+          - name: Create a custom sensitive information types - Compliance Center
             href: create-a-custom-sensitive-information-type.md
           - name: Get started with exact data match based sensitive information types
             href: sit-get-started-exact-data-match-based-sits-overview.md
@@ -344,6 +344,10 @@
             href: sit-modify-edm-schema-configurable-match.md
           - name: Create notifications for exact data match activities (preview)
             href: sit-edm-notifications-activities.md
+          - name: Manage custom sensitive information types in compliance center
+            href: sit-manage-custom-sits-compliance-center.md
+          - name: Sensitive information types REGEX validators and additional checks
+            href: sit-regex-validators-additional-checks.md
           - name: Create a custom sensitive information type - PowerShell
             href: create-a-custom-sensitive-information-type-in-scc-powershell.md
           - name: Remove a custom sensitive information type - PowerShell
@@ -366,8 +370,8 @@
           items:
           - name: Sensitive information type entity definitions 
             href: sensitive-information-type-entity-definitions.md
-          - name: What the DLP functions look for
-            href: what-the-dlp-functions-look-for.md
+          - name: Sensitive information type functions
+            href: sit-functions.md
           - name: Custom sensitive information type filters reference
             href: sit-custom-sit-filters.md
     - name: Trainable classifiers
@@ -392,6 +396,8 @@
       items:
         - name: Learn about sensitivity labels
           href: sensitivity-labels.md
+        - name: Why choose MIP built-in labeling for Office apps
+          href: sensitivity-labels-aip.md
         - name: Get started with sensitivity labels
           href: get-started-with-sensitivity-labels.md
         - name: Create and publish sensitivity labels
@@ -406,6 +412,8 @@
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: Enable co-authoring for documents encrypted by sensitivity labels
           href: sensitivity-labels-coauthoring.md
+        - name: Set the default sharing link type by using sensitivity labels
+          href: sensitivity-labels-default-sharing-link.md
         - name: Manage sensitivity labels in Office apps
           href: sensitivity-labels-office-apps.md
     - name: Encryption
@@ -826,6 +834,10 @@
               href: manage-hold-notification.md
             - name: Acknowledge a hold notification
               href: acknowledge-hold-notification.md
+            - name: Manage issuing officers
+              href: advanced-ediscovery-issuing-officers.md
+            - name: Manage custodian communications templates
+              href: advanced-ediscovery-communications-library.md
         - name: Manage holds
           href: managing-holds.md
         - name: Manage processing errors
