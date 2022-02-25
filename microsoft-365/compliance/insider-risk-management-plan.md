@@ -92,7 +92,7 @@ Before enabling the solution broadly in your production environment, you may con
 
 Keep the anonymization feature in policy settings enabled to anonymize user display names in the insider risk management console during this testing to maintain privacy within the tool. This setting helps protect the privacy of users that have policy matches and can help promote objectivity in data investigation and analysis reviews for insider risk alerts.
 
-If you don't see any alerts immediately after configuring an insider risk management policy, it may mean the minimum risk threshold has not been met yet. A good way to check if the policy is triggered and working as expected is to see if the user is in-scope for the policy on the **Users** page.
+If you don't see any alerts immediately after configuring an insider risk management policy, it may mean the minimum risk threshold hasn't been met yet. A good way to check if the policy is triggered and working as expected is to see if the user is in-scope for the policy on the **Users** page.
 
 ## Resources for stakeholders
 
