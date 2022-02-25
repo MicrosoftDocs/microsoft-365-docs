@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -24,8 +24,14 @@ ms.collection:
 > Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. Defender for Business as a standalone subscription is in in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. Preview includes an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
+Microsoft Defender for Business includes several reports as described in the following table:<br/><br/>
 
 Several reports are available in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This article describes these reports, how you can use them, and how to find them.
+
+>
+> **Got a minute?**
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
 
 <br/><br/>
 
@@ -38,11 +44,6 @@ Several reports are available in the Microsoft 365 Defender portal ([https://sec
 | **Device health and compliance** | The device health and compliance report provides information about device health and trends. You can use this report to determine whether Defender for Business sensors are working correctly on devices and the current status of Microsoft Defender Antivirus. To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Device health and compliance**. <br/><br/>**TIP**: You can use the **Device inventory** list to view information about your organization's devices. In the navigation pane, choose **Device inventory**. To learn more, see [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md). |
 | **Vulnerable devices** | The vulnerable devices report provides information about devices and trends. Use the **Trends** column to view information about devices that had alerts over the last 30 days. Use the **Status** column to view current snapshot information about devices that have alerts. To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Vulnerable devices**.<br/><br/>**TIP**: You can use the **Device inventory** list to view information about your organization's devices. In the navigation pane, choose **Device inventory**. To learn more, see [Manage devices in Microsoft Defender for Business](mdb-manage-devices.md). |
 | **Web protection** | The web protection report shows attempts to access phishing sites, malware vectors, exploit sites, untrusted or low-reputation sites, and sites that are explicitly blocked. Categories of blocked sites include adult content, leisure sites, legal liability sites, and more. To access this report, in the navigation pane, choose **Reports** > **Endpoints** > **Web protection**.<br/><br/>**TIP**: If you haven't yet configured web protection for your organization, choose the **Settings** button in a report view. Then, under **Rules**, choose **Web content filtering**. To learn more about web content filtering, see [Web content filtering](../defender-endpoint/web-content-filtering.md). |
-
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
->
 
 ## See also
 

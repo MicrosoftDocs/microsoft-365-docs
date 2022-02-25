@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -33,20 +33,15 @@ As policies are added, you’ll notice that an order of priority is assigned. Yo
 
 **The important thing to remember about multiple policies is that devices will receive the first applied policy only.** Referring to our earlier example of three next-generation policies, suppose that you have devices that are targeted by all three policies. In this case, those devices will receive policy number 1, but won't receive policies numbered 2 and 3. 
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
->
-
 ## Key points to remember about policy order
 
-- Policies are assigned an order of priority.
+- Policies are assigned an order of priority
 
-- Devices receive the first applied policy only.
+- Devices receive the first applied policy only
 
-- You can change the order of priority for policies.
+- You can change the order of priority for policies
 
-- Default policies are given the lowest order of priority.
+- Default policies are given the lowest order of priority
 
 ## Next steps
 

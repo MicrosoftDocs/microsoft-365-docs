@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: article
-ms.date: 02/24/2022
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -30,9 +30,7 @@ ms.custom: intro-get-started
 After you've signed up for Microsoft Defender for Business, you'll want to get acquainted with the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). This article includes the following sections:
 
 - [How to navigate the Microsoft 365 Defender portal](#navigate-the-microsoft-365-defender-portal)
-
 - [Learning modules about incidents and response actions](#complete-a-learning-module-about-incidents-and-response-actions) 
-
 - [Next steps](#next-steps)
 
 >

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 02/07/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -33,14 +33,14 @@ If you're a Microsoft Cloud Solution Provider (CSP) and you have [Microsoft 365 
 
 To access the list of incidents, in Microsoft 365 Lighthouse, on the home page, find the **Security incidents** card, and then select **View all incidents**.
 
+> [!IMPORTANT]
+> During preview, Microsoft 365 Lighthouse will only pull security incidents from Defender for Business when used with a customer tenants that also have Microsoft 365 Business Premium. This capability is rolling out gradually across Microsoft 365 Lighthouse (preview) and Defender for Business (preview0, and might not be immediately available as a test scenario.
+
 ## Learn more about Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse enables Microsoft Cloud Service Providers to secure and manage devices, data, and users at scale for small- and medium-sized business customers who are using one of the following subscriptions:
 
-- [Microsoft Defender for Business](mdb-overview.md)
-
 - [Microsoft 365 Business Premium](../../admin/admin-overview/what-is-microsoft-365.md)
-
 - [Microsoft 365 E3](../../enterprise/microsoft-365-overview.md) (which now includes [Microsoft Defender for Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md))
 
 To learn more, see [Overview of Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md).

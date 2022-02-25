@@ -33,11 +33,6 @@ In Microsoft Defender for Business, policies are applied to devices through cert
 - [What device groups are](#what-is-a-device-group)   
 - [How to create device groups in Defender for Business](#create-a-new-device-group)
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
->
-
 ## What is a device group?
 
 A device group is a collection of devices that are grouped together because of certain specified criteria, such as operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. In Microsoft Defender for Business, policies are applied to devices by using device groups. 

@@ -33,11 +33,6 @@ If you don’t already have Microsoft Defender for Business, you can choose from
 
 If you have signed up for a trial, after you receive your acceptance email, you can [activate your trial and assign user licenses](#activate-your-trial), and then proceed to your [next steps](#next-steps).
 
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
->
-
 ## Work with a Microsoft Solution Provider
 
 Microsoft has a list of solution providers who are authorized to sell offerings, including Microsoft 365 Business Premium and Microsoft Defender for Business. 
