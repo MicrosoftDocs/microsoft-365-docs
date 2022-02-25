@@ -43,6 +43,9 @@ Turn on this feature to take advantage of the automated investigation and remedi
 
 ## Live response
 
+> [!NOTE]
+> Live response requires **Automated investigation** to be turned on before you can enable it in the advanced settings section in the Microsoft for Endpoint portal.
+
 Turn on this feature so that users with the appropriate permissions can start a live response session on devices.
 
 For more information about role assignments, see [Create and manage roles](user-roles.md).
@@ -175,10 +178,6 @@ Enabling this setting forwards Defender for Endpoint signals to Microsoft Defend
 
 > [!NOTE]
 > This feature will be available with an E5 license for [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) on devices running Windows 10, version 1709 (OS Build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, version 1803 (OS Build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, version 1809 (OS Build 17763.379 with [KB4489899](https://support.microsoft.com/help/4489899)), later Windows 10 versions, or Windows 11.
-
-## Microsoft Secure Score
-
-Forwards Microsoft Defender for Endpoint signals to Microsoft Secure Score in the Microsoft 365 Defender portal. Turning on this feature gives Microsoft Secure Score visibility into the device's security posture. Forwarded data is stored and processed in the same location as your Microsoft Secure Score data.
 
 ### Enable the Microsoft Defender for Endpoint integration from the Microsoft Defender for Identity portal
 
