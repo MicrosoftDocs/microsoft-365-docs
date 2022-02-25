@@ -48,7 +48,12 @@ With Microsoft Defender for Business, you have several options to choose from fo
 
 3. [See your next steps](#next-steps). 
 
-This article also includes information about [Offboarding a device](#offboarding-a-device).
+This article also includes information about [Running a detection test for Windows devices](#run-a-detection-test) and [Offboarding a device](#offboarding-a-device).
+
+>
+> **Got a minute?**
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
 
 ## Device onboarding methods
 

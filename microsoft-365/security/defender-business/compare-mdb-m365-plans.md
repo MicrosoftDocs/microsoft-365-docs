@@ -30,6 +30,11 @@ Microsoft offers a wide variety of cloud solutions and services, including sever
 
 Microsoft Defender for Business is available as a standalone offering or as part of Microsoft 365 Business Premium (beginning March 1, 2022).
 
+>
+> **Got a minute?**
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
+
 **Use this article to**:
 
 - [Compare Microsoft Defender for Business (standalone) to Microsoft 365 Business Premium](#compare-security-features-in-microsoft-defender-for-business-to-microsoft-365-business-premium)
