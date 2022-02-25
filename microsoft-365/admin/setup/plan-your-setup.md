@@ -36,8 +36,6 @@ Before moving your organization to Microsoft 365, there are requirements you nee
 
 Congratulations on your decision to move your business to the cloud with Microsoft 365! Whether you have one person in your business or 20, doing a little planning will help you get the most out of Microsoft 365 Business Premium.
 
-See [Set up Microsoft 365 Business Premium](../../business-premium/m365bp-setup.md).
-
 ## Info to have on hand before you run the setup wizard
 
 When you're ready to run the setup wizard and move your domain to Microsoft 365, here's the info you'll need to have on hand:
@@ -143,7 +141,3 @@ For larger organizations or if you're starting from Skype for Business, on-premi
   - **Consider hiring a [Microsoft partner](https://go.microsoft.com/fwlink/?linkid=391089)**. If you're short on time, or have advanced requirements (like moving thousands of files to Microsoft 365 cloud storage or integrating with other software), an experienced partner can be a big help. 
 
 - **If you have more than 50 employees**, the [FastTrack Onboarding Center](https://go.microsoft.com/fwlink/?LinkId=517115) is available to help you with your deployment.
-
-## See also
-
-[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
