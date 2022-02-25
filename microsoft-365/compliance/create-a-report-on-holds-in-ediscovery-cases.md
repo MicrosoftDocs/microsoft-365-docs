@@ -56,7 +56,7 @@ After you've connected to Security & Compliance Center PowerShell, the next step
    " "
    #prompt users to specify a path to store the output files
    $time=get-date
-   $Path = Read-Host 'Enter a file path to save the report to a .csv file'
+   $Path = Read-Host 'Enter a folder path to save the report to a .csv file (filename is created automatically)'
    $outputpath=$Path+'\'+'CaseHoldsReport'+' '+$time.day+'-'+$time.month+'-'+$time.year+' '+$time.hour+'.'+$time.minute+'.csv'
    $noholdsfilepath=$Path+'\'+'CaseswithNoHolds'+' '+$time.day+'-'+$time.month+'-'+$time.year+' '+$time.hour+'.'+$time.minute+'.csv'
    #add case details to the csv file
@@ -98,9 +98,40 @@ After you've connected to Security & Compliance Center PowerShell, the next step
    }
    #get information on the cases and pass values to the case report function
    " "
-   write-host "Gathering a list of cases and holds..."
+   write-host "Gathering a list of Core eDiscovery cases and holds..."
    " "
    $edc =Get-ComplianceCase -ErrorAction SilentlyContinue
+   foreach($cc in $edc)
+   {
+   write-host "Working on case :" $cc.name
+   if($cc.status -eq 'Closed')
+   {
+   $cmembers = ((Get-ComplianceCaseMember -Case $cc.name).windowsLiveID)-join ';'
+   add-tocasereport -casename $cc.name -casestatus $cc.Status -caseclosedby $cc.closedby -caseClosedDateTime $cc.ClosedDateTime -casemembers $cmembers
+   }
+   else{
+   $cmembers = ((Get-ComplianceCaseMember -Case $cc.name).windowsLiveID)-join ';'
+   $policies = Get-CaseHoldPolicy -Case $cc.Name | %{ Get-CaseHoldPolicy $_.Name -Case $_.CaseId -DistributionDetail}
+   if ($policies -ne $NULL)
+   {
+   foreach ($policy in $policies)
+   {
+   $rule=Get-CaseHoldRule -Policy $policy.name
+   add-tocasereport -casename $cc.name -casemembers $cmembers -casestatus $cc.Status -casecreatedtime $cc.CreatedDateTime -holdname $policy.name -holdenabled $policy.enabled -holdcreatedby $policy.CreatedBy -holdlastmodifiedby $policy.LastModifiedBy -ExchangeLocation (($policy.exchangelocation.name)-join ';') -SharePointLocation (($policy.sharePointlocation.name)-join ';') -ContentMatchQuery $rule.ContentMatchQuery -holdcreatedtime $policy.WhenCreatedUTC -holdchangedtime $policy.WhenChangedUTC
+   }
+   }
+   else{
+   write-host "No hold policies found in case:" $cc.name -foregroundColor 'Yellow'
+   " "
+   [string]$cc.name | out-file -filepath $noholdsfilepath -append
+   }
+   }
+   }
+   #get information on the cases and pass values to the case report function
+   " "
+   write-host "Gathering a list of Advanced eDiscovery cases and holds..."
+   " "
+   $edc =Get-ComplianceCase -CaseType Advanced -ErrorAction SilentlyContinue
    foreach($cc in $edc)
    {
    write-host "Working on case :" $cc.name
