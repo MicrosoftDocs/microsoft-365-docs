@@ -58,20 +58,20 @@
            href: grant-access-to-the-security-and-compliance-center.md
    - name: Migrate
      items: 
-     - name: Migrate from a third-party protection service or device to Defender for Office 365
-       items:
        - name: Migrate from a third-party protection service or device to Defender for Office 365
          href: migrate-to-defender-for-office-365.md
-       - name: "Migrate Phase 1: Prepare"
+       - name: "Step 1: Prepare"
          href: migrate-to-defender-for-office-365-prepare.md
-       - name: "Migrate Phase 2: Setup"
+       - name: "Step 2: Setup"
          href: migrate-to-defender-for-office-365-setup.md
-       - name: "Migrate Phase 3: Onboard"
+       - name: "Step 3: Onboard"
          href: migrate-to-defender-for-office-365-onboard.md
    - name: Protect and Detect
      items: 
-     - name: Protect
-       items: 
+       - name: Configure your tenant for increased security
+         href: tenant-wide-setup-for-increased-security.md
+       - name: Security recommendations for priority accounts
+         href: security-recommendations-for-priority-accounts.md
        - name: Mail flow
          items:
          - name: Use mail flow rules to block messages with executable attachments
@@ -126,8 +126,6 @@
            href: attack-simulation-training-simulation-automations.md
          - name: Insights and reporting in Attack simulation training
            href: attack-simulation-training-insights.md
-     - name: Detect
-       items: 
        - name: Threat Explorer
          items:
          - name: Threat hunting in Threat Explorer
@@ -154,8 +152,8 @@
            href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules  
    - name: Investigate and Respond
      items: 
-     - name: Investigate
-       items:
+       - name: Office 365 Security Incident Response
+         href: office365-security-incident-response-overview.md
        - name: Phase 1 - Daily work with built-in tools
          items: 
          - name: Step 1 - Investigate malicious email
@@ -184,10 +182,8 @@
              href: view-reports-for-mdo.md
          - name: Step 4 - View mail flow reports in the Security & Compliance Center
            href: view-mail-flow-reports.md
-     - name: Respond
-       items: 
-       - name: Office 365 Security Incident Response
-         href: office365-security-incident-response-overview.md
+       - name: Responding to a Compromised Email Account in Office 365
+         href: responding-to-a-compromised-email-account.md
        - name: Phase 1 - Analyze and maintain 
          items: 
          - name: Step 1 - Submissions and message review
@@ -284,10 +280,10 @@
               href: mail-flow-in-eop.md
             - name: Anti-malware policies
               items:
-            - name: Anti-malware protection
-              href: anti-malware-protection.md
-            - name: Configure anti-malware policies
-              href: configure-anti-malware-policies.md
+              - name: Anti-malware protection
+                href: anti-malware-protection.md
+              - name: Configure anti-malware policies
+                href: configure-anti-malware-policies.md
             - name: Anti-spam policies
               items:
               - name: Anti-spam protection
@@ -296,32 +292,38 @@
                 href: configure-your-spam-filter-policies.md
               - name: Advanced Spam Filter (ASF) settings
                 href: advanced-spam-filtering-asf-options.md
-            - name: Anti-phishing protection
-              href: anti-phishing-protection.md
-            - name: Configure anti-phishing policies in EOP
-              href: configure-anti-phishing-policies-eop.md
+              - name: Outbound spam protection
+                href: outbound-spam-controls.md
+            - name: Anti-phishing protections
+              items:            
+              - name: Anti-phishing protection
+                href: anti-phishing-protection.md
+              - name: Configure anti-phishing policies in EOP
+                href: configure-anti-phishing-policies-eop.md
+              - name: Configure anti-phishing policies in Defender for Office 365
+                href: configure-mdo-anti-phishing-policies.md
             - name: Anti-spoofing protection
               href: anti-spoofing-protection.md
-            - name: Outbound spam protection
-              href: outbound-spam-controls.md
             - name: Configure junk email settings on Exchange Online mailboxes
               href: configure-junk-email-settings-on-exo-mailboxes.md
             - name: Quarantine
               href: quarantine-email-messages.md
-            - name: Help and support for EOP
-              href: help-and-support-for-eop.md
-            - name: Backscatter in EOP
-              href: backscatter-messages-and-eop.md
-            - name: Bulk complaint level (BCL)
-              href: bulk-complaint-level-values.md
             - name: Quarantine notifications
               href: use-spam-notifications-to-release-and-report-quarantined-messages.md
             - name: Outbound delivery pools
               href: high-risk-delivery-pool-for-outbound-messages.md
             - name: Mail flow intelligence in EOP
               href: mail-flow-intelligence-in-office-365.md
+            - name: Help and support for EOP
+              href: help-and-support-for-eop.md
+            - name: Backscatter in EOP
+              href: backscatter-messages-and-eop.md
+            - name: Bulk complaint level (BCL)
+              href: bulk-complaint-level-values.md
             - name: Troubleshooting mail sent to Microsoft 365
               href: troubleshooting-mail-sent-to-office-365.md
+            - name: Add support for anonymous inbound email over IPv6
+              href: support-for-anonymous-inbound-email-messages-over-ipv6.md
      - name: Report messages and files to Microsoft
        items:
          - name: Admin submissions
@@ -408,8 +410,8 @@
           href: office-365-ti.md
         - name: Email analysis in investigations
           href: email-analysis-investigations.md
-        - name: Configure anti-phishing policies in Defender for Office 365
-          href: configure-mdo-anti-phishing-policies.md
+        - name: User tags in Defender for Office 365
+          href: user-tags.md
       - name: Office 365 security
         items:
         - name: Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
@@ -438,19 +440,10 @@
           href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
         - name: DELETE? Security roadmap
           href: security-roadmap.md
-      - name: User tags in Defender for Office 365
-        href: user-tags.md
-      - name: Add support for anonymous inbound email over IPv6
-        href: support-for-anonymous-inbound-email-messages-over-ipv6.md
-      - name: Configure your tenant for increased security
-        href: tenant-wide-setup-for-increased-security.md
-      - name: Security recommendations for priority accounts
-        href: security-recommendations-for-priority-accounts.md
       - name: Configure delivery for third-party phishing simulations and SecOps mailboxes
         href: configure-advanced-delivery.md
       - name: Smart reports and insights in the Security & Compliance Center
         href: reports-and-insights-in-security-and-compliance.md
-      - name: Responding to a Compromised Email Account in Office 365
-        href: responding-to-a-compromised-email-account.md
+
 
       
