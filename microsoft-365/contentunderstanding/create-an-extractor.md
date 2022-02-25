@@ -61,28 +61,6 @@ Creating the extractor opens the extractor page. Here you see a list of your sam
  
 Once you labeled five files, a notification banner displays informing you to move to training. You can choose to more label more documents or advance to training. 
 
-### Refine extracted information
-
-If you have duplicate entities and want to extract only one value, you can set a rule to specify how you want it processed. To refine extracted information, follow these steps:
-
-1. From the model home page, in the **Entity extractors** section, select the distractor you want to refine, and then select **Refine extracted info**.
-
-    ![Screenshot of the Entity extractors section showing the Refine extracted info option highlighted.](../media/content-understanding/refine-extracted-info.png) 
-
-2. On the **Choose a refiner** page, select one of the following rules:
-
-    - Keep only the first lines
-    - Keep only the last lines
-    - Keep values that are extracted first
-    - Keep values that are extracted last
-    - Remove duplicates
-
-    ![Screenshot of the Refine extracted info page showing the rules options.](../media/content-understanding/refine-extracted-info-page.png) 
-
-3. Enter the number of lines or values you want to use, and then select **Refine**.
-
-4. When you test the extractor, you'll be able to see the refinement in the **Refinement result** column of the **Test Files** list. 
-
 ### Use Find to search your file
 
 You can use the **Find** feature to search for an entity in your document that you want to label.
@@ -91,14 +69,12 @@ You can use the **Find** feature to search for an entity in your document that y
 
 The Find feature is useful if you are searching a large document or if there are multiple instances of the entity in the document. If you find multiple instances, you can select the one you need in the search results to go to that location in the viewer to label it.
 
-
 ## Add an explanation
 
 For our example, we are going to create an explanation that provides a hint about the entity format itself and variations it might have in the sample documents. For example, a date value can be in a number of different formats, such as:
 - 10/14/2019
 - October 14, 2019
 - Monday, October 14, 2019
- 
 
 To help identify the *Service Start Date* you can create a pattern explanation.
 
@@ -164,9 +140,35 @@ If you again receive a **Mismatch** on your labeled files, you likely need to cr
 If you receive a match on your labeled sample files, you can now test your model on the remaining unlabeled example files. This is optional, but a useful step to evaluate the “fitness” or readiness of the model before using it, by testing it on files the model hasn’t seen before.
 
 1. From the model home page, click the **Test** tab.  This runs the model on your unlabeled sample files.
+
 2. In the **Test files** list, your example files display to show if the model is able to extract the information you need. Use this information to help determine the effectiveness of your classifier in identifying your documents.
 
-    ![Test on your files.](../media/content-understanding/test-filies-extractor.png) 
+    ![Test on your files.](../media/content-understanding/test-filies-extractor-2.png) 
+
+### Refine extracted information
+
+If you have duplicate entities and want to extract only one value, you can set a rule to specify how you want it processed. To refine extracted information, follow these steps:
+
+1. From the model home page, in the **Entity extractors** section, select the distractor you want to refine, and then select **Refine extracted info**.
+
+    ![Screenshot of the Entity extractors section showing the Refine extracted info option highlighted.](../media/content-understanding/refine-extracted-info.png) 
+
+2. On the **Choose a refiner** page, select one of the following rules:
+
+    - Keep only the first lines
+    - Keep only the last lines
+    - Keep values that are extracted first
+    - Keep values that are extracted last
+    - Remove duplicates
+
+    ![Screenshot of the Refine extracted info page showing the rules options.](../media/content-understanding/refine-extracted-info-page.png) 
+
+3. Enter the number of lines or values you want to use, and then select **Refine**.
+
+4. If you want to edit a rule by changing the number of lines or values, select the distractor you want to edit, select **Refine extracted info**, change the number, and then select **Save**.
+
+5. When you test the extractor, you'll be able to see the refinement in the **Refinement result** column of the **Test Files** list. 
+
 
 ## See Also
 [Create a classifier](create-a-classifier.md)
