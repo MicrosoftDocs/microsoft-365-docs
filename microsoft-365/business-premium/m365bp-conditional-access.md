@@ -1,5 +1,5 @@
 ---
-title: "Turn on security defaults"
+title: "Turn on security defaults in Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -23,10 +23,10 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how security defaults can help protect your organization from identity-related attacks by providing preconfigured security settings."
+description: "Learn how security defaults can help protect your organization from identity-related attacks by providing preconfigured security settings in Microsoft 365 Business Premium."
 ---
 
-# Turn on security defaults
+# Turn on security defaults for your organization
 
 Security defaults help protect your organization from identity-related attacks by providing preconfigured security settings that Microsoft manages on behalf of your organization. These settings include enabling multi-factor authentication (MFA) for all admins and user accounts. For most organizations, security defaults offer a good level of additional sign-in security.
 
