@@ -200,7 +200,5 @@ In the **Edit policy** pane, choose **Edit** next to **Protection against lost o
     
 4. Open **Photos** app from the home screen. You should see an encrypted photo (or more, if you saved multiple image file attachments) saved, but encrypted. 
     
+---
 
-## See also
-
-[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)

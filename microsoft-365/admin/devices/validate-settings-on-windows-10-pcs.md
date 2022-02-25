@@ -62,4 +62,3 @@ After you [set up device policies](protection-settings-for-windows-10-pcs.md), i
 
 [Microsoft 365 for business documentation and resources](/admin)\
 [Set device configurations for Windows 10 PCs](protection-settings-for-windows-10-pcs.md)
-[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)

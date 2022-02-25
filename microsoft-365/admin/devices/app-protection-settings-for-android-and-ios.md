@@ -120,7 +120,3 @@ The following settings are available to manage how users access Office work file
 |Require users to sign in again after Office apps have been idle for  <br/> |This setting determines how long a user can be idle before they're prompted to sign in again.  <br/> |
 |Deny access to work files on jailbroken or rooted devices  <br/> |Clever users may have a device that is jailbroken or rooted. This means that the user can modify the operating system, which can make the device more subject to malware. These devices are blocked when this setting is **On**.  <br/> |
 |Don't allow users to copy content from Office apps into personal apps  <br/> |We do allow this by default, but if the setting is **On**, the user could copy information in a work file to a personal file. If the setting is **Off**, the user will be unable to copy information from a work account into a personal app or personal account.  <br/> |
-
-## See also
-
-[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)

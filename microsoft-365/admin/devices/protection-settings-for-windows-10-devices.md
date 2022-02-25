@@ -70,7 +70,3 @@ If your users have personal Windows 10 devices on which they perform work tasks,
   
 11. Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups who will get these settings \> **Select**.
 12. Finally, choose **Add** to save the policy, and assign it to devices.
-
-## See also
-
-[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
