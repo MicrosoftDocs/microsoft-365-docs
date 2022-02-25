@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: reference
-ms.date: 02/24/2022
+ms.date: 02/23/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -40,7 +40,7 @@ Microsoft Defender for Business is available as a standalone offering or as part
 ## Compare security features in Microsoft Defender for Business to Microsoft 365 Business Premium
 
 > [!NOTE]
-> This article is intended to provide a high-level overview of threat protection features included in Microsoft Defender for Business (as a standalone plan) and Microsoft 365 Business Premium (which includes Defender for Business). This article is not intended to serve as a service description or licensing contract document. For more information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+> This article is intended to provide a high-level overview of threat protection features included in Microsoft Defender for Business and Microsoft 365 Business Premium. This article is not intended to serve as a service description or licensing contract document. For more information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 **Beginning March 1, 2022, Defender for Business will start rolling out as part of Microsoft 365 Business Premium. Defender for Business as a standalone offering is still in preview.**
 
@@ -50,7 +50,7 @@ The following table compares security features and capabilities in Defender for 
 
 | Feature/Capability | [Microsoft Defender for Business](mdb-overview.md)<br/>(standalone; currently in preview) | [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(includes Defender for Business) |
 |:---|:---|:---|
-| Email protection | Yes <br/>- [Email scanning with Microsoft Defender Antivirus](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md) | Yes <br/>- [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) <br/>- [Email scanning with Microsoft Defender Antivirus](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md) |
+| Email protection | Yes <br/>- [Email scanning in Microsoft Defender Antivirus](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md) | Yes <br/>- [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) <br/>- [Email scanning in Microsoft Defender Antivirus](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md) |
 | Antispam protection | Yes <br/>- For devices | Yes <br/>- For devices<br/>- For Microsoft 365 email content, such as messages and attachments |
 | Antimalware protection | Yes<br/>- For devices | Yes <br/>- For devices<br/>- For Microsoft 365 email content, such as messages and attachments |
 | [Next-generation protection](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (antivirus and antimalware protection) | Yes<br/>- Microsoft Defender Antivirus is included in Windows 10 and later  | Yes <br/>- Microsoft Defender Antivirus is included in Windows 10 and later<br/>- Next-generation protection policies for onboarded devices |
@@ -64,9 +64,7 @@ The following table compares security features and capabilities in Defender for 
 
 ## Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2
 
-Defender for Business brings enterprise-grade capabilities of Defender for Endpoint to small and medium-sized businesses. 
-
-The following table compares security features and capabilities in Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2. <br/><br/>
+Defender for Business brings enterprise-grade capabilities of Defender for Endpoint to small and medium-sized businesses. The following table compares security features and capabilities in Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2. <br/><br/>
 
 | Feature/Capability | [Defender for Business](mdb-overview.md) (preview) | [Defender for Endpoint Plan 1](../defender-endpoint/defender-endpoint-plan-1.md) | [Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md) |
 |:---|:---|:---|
