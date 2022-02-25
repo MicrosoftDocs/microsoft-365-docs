@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.date: 02/14/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -29,8 +29,11 @@ ms.collection:
 In Microsoft Defender for Business, you can manage devices as follows:
 
 - [View a list of onboarded devices](#view-the-list-of-onboarded-devices) to see their risk level, exposure level, and health state
+
 - [Take action on a device](#take-action-on-a-device-that-has-threat-detections) that has threat detections
+
 - [Onboard a device to Defender for Business](#onboard-a-device)  
+
 - [Offboard a device from Defender for Business](#offboard-a-device)
 
 >
