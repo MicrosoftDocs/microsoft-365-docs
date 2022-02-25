@@ -11,7 +11,7 @@ manager: dougeby
 ms.topic: article
 ---
 
-# Compliance
+# Compliance 
 
 When you use Microsoft Managed Desktop, Microsoft provides you with a comprehensive set of compliance offerings. This effort helps your organization comply with the various compliance requirements.
 
@@ -36,7 +36,7 @@ Microsoft Managed Desktop has achieved the following certifications:
 
 ## Auditor reports and compliance certificates
 
-You can find relevant information, including control and technical requirements, in the [Service Trust Portal (STP)](https://servicetrust.microsoft.com/), the central repository for such information about Microsoft Cloud Service offerings. You can download auditor reports, compliance certificates, and more from the [Audit Reports](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) section of the STP.
+You can find relevant information, including control and technical requirements, in the [Service Trust Portal (STP)](https://servicetrust.microsoft.com/). This portal is the central repository for such information about Microsoft Cloud Service offerings. You can download auditor reports, compliance certificates, and more from the [Audit Reports](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) section of the STP.
 
 > [!NOTE]
 > Because Microsoft Managed Desktop runs on Azure, relevant documents usually have file names such as "Microsoft Azure, Dynamics 365, and other Online Services". In those documents, you can usually find Microsoft Managed Desktop under the category "Microsoft Online Services" or "Monitoring + Management".
