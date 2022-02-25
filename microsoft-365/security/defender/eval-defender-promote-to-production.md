@@ -22,7 +22,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Promote your Microsoft 365 Defender evaluation environment to production
+# Step 7. Promote your Microsoft 365 Defender evaluation environment to production
 
 **Applies to:**
 - Microsoft 365 Defender

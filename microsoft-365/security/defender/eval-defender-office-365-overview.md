@@ -23,7 +23,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Enable and pilot Microsoft Defender for Office 365
+# Step 3. Enable and pilot Microsoft Defender for Office 365
 
 **Applies to:**
 - Microsoft 365 Defender

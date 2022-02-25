@@ -22,7 +22,7 @@ ms.collection:
 ms.topic: how-to
 ms.technology: m365d
 ---
-# Create the Microsoft 365 Defender Evaluation Environment
+# Step 1. Create the Microsoft 365 Defender Evaluation Environment
 
 There are two common ways to do this next step in evaluation. This document assumes you already have a production Microsoft 365 tenant, and will activate E5 trial licenses to evaluate Microsoft 365 Defender in *the current environment*. An in-place evaluation will let you keep any security methods with the purchase of licenses after the evaluation period.
 

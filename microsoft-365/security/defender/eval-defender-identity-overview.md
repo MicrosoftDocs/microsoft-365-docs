@@ -24,7 +24,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Evaluate Microsoft Defender for Identity overview
+# Step 2. Evaluate Microsoft Defender for Identity overview
 
 
 **Applies to:**
