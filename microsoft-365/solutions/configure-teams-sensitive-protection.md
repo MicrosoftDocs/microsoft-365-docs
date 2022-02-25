@@ -105,7 +105,7 @@ You can also use [teams policies](/MicrosoftTeams/teams-policies) to control who
 
 ## Shared channel settings
 
-[Shared channels](/MicrosoftTeams/shared-channels) doesn't have team-level settings. The shared channel settings you configure in the Teams admin center and Azure AD will be available for all teams regardless of sensitivity.
+[Shared channels](/MicrosoftTeams/shared-channels) doesn't have team-level settings. The shared channel settings you configure in the Teams admin center and Azure AD apply to all teams regardless of sensitivity.
 
 ## SharePoint settings
 
