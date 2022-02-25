@@ -104,19 +104,31 @@ Before you configure your adaptive scope, use the previous section to identify w
     - For **User** and **Microsoft 365 Group** scopes, use [OPATH filtering syntax](/powershell/exchange/recipient-filters). For example, to create a user scope that defines its membership by department, country, and state:
     
         ![Example adaptive scope with advanced query.](../media/example-adaptive-scope-advanced-query.png)
+        
+        One of the advantages of using the advanced query builder for these scopes is a wider choice of query operators:
+        - **and**
+        - **or**
+        - **not**
+        - **eq** (equals)
+        - **ne** (not equals)
+        - **lt** (less than)
+        - **gt** (greater than)
+        - **like** (string comparison
+        - **notlike** (string comparison
     
     - For **SharePoint sites** scopes, use Keyword Query Language (KQL). You might already be familiar with using KQL to search SharePoint by using indexed site properties. To help you specify these KQL queries, see [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
-    
-    One of the advantages of using the advanced query builder is a wider choice of query operators:
-    - **and**
-    - **or**
-    - **not**
-    - **eq** (equals)
-    - **ne** (not equals)
-    - **lt** (less than)
-    - **gt** (greater than)
-    - **like** (string comparison
-    - **notlike** (string comparison
+        
+        For example, because SharePoint sites scopes automatically include all SharePoint site types, which include Microsoft 365 group-connected and OneDrive sites, you can use the indexed site property **SiteTemplate** to include or exclude specific site types. The templates you can specify:
+        - SITEPAGEPUBLISHING for modern communication sites
+        - GROUP for Microsoft 365 group-connected sites
+        - TEAMCHANNEL for Microsoft Teams private channel sites
+        - STS for a classic SharePoint team site
+        - SPSPERS for OneDrive sites
+        
+        So to create an adaptive scope that includes only modern communication sites and excludes Microsoft 365 goup-connected and OneDrive sites, specify the following KQL query:
+        ````console
+        SiteTemplate=SITEPAGEPUBLISHING
+        ````
     
     You can [validate these advanced queries](#validating-advanced-queries) independently from the scope configuration.
     

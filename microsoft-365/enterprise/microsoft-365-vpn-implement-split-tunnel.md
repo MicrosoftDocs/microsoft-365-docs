@@ -69,7 +69,7 @@ Significantly more efficient for an enterprise to operate under. This model allo
 
 ### 3. VPN Forced Tunnel with broad exceptions
 
-Broadens the scope of model 2. Rather than just sending a small group of defined endpoints direct, it instead sends all traffic directly to trusted services such Microsoft 365 and SalesForce. This further reduces the load on the corporate VPN infrastructure and improves the performance of the services defined. As this model is likely to take more time to assess the feasibility of and implement, It's likely a step that can be taken iteratively at a later date once model two is successfully in place.
+Broadens the scope of model 2. Rather than just sending a small group of defined endpoints direct, it instead sends all traffic directly to trusted services such Microsoft 365 and SalesForce. This further reduces the load on the corporate VPN infrastructure and improves the performance of the services defined. As this model is likely to take more time to assess the feasibility of and implement, it's likely a step that can be taken iteratively at a later date once model two is successfully in place.
 
 ![Split Tunnel VPN model 3.](../media/vpn-split-tunneling/vpn-model-3.png)
 
