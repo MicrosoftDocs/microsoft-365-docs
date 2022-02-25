@@ -45,7 +45,7 @@ First, make sure that the policy applies to the app in which you're going to val
     
 2. Choose **Application policy for Android** for the settings you created at setup, or another policy you created, and verify that it's enforced for Outlook, for example. 
     
-    ![Screenshot showing all the apps for which this policy protects files.](../../media/b3be3ddd-f683-4073-8d7a-9c639a636a2c.png)
+    ![Shows all the apps for which this policy protects files.](../../media/b3be3ddd-f683-4073-8d7a-9c639a636a2c.png)
   
 ### Validate Require a PIN or a fingerprint to access Office apps
 
@@ -67,7 +67,7 @@ In the **Edit policy** pane, choose **Edit** next to **Office documents access c
     
 2. Enter an incorrect PIN as many times as specified by the policy. You'll see a prompt that states **PIN Attempt Limit Reached** to reset the PIN. 
     
-    ![Screenshot indicating after too many incorrect PIN attempts, you need to reset your PIN.](../../media/fca6fcb4-bb5c-477f-af5e-5dc937e8b835.png)
+    ![After too many incorrect PIN attempts, you need to reset your PIN.](../../media/fca6fcb4-bb5c-477f-af5e-5dc937e8b835.png)
   
 3. Press **Reset PIN**. You'll be prompted to sign in with the user's Microsoft 365 Business Premium credentials, and then required to set a new PIN.
     
@@ -134,7 +134,7 @@ First, make sure that the policy applies to the app in which you're going to val
     
 2. Choose **Application policy for iOS** for the settings you created at setup, or another policy you created, and verify that it's enforced for Outlook for example. 
     
-    ![Screenshot that shows all the apps for which this policy protects files.](../../media/842441b8-e7b1-4b86-9edd-d94d1f77b6f4.png)
+    ![Shows all the apps for which this policy protects files.](../../media/842441b8-e7b1-4b86-9edd-d94d1f77b6f4.png)
   
 ### Validate Require a PIN to access Office apps
 
@@ -156,7 +156,7 @@ In the **Edit policy** pane, choose **Edit** next to **Office documents access c
     
 2. Enter an incorrect PIN as many times as specified by the policy. You'll see a prompt that states **PIN Attempt Limit Reached** to reset the PIN. 
     
-    ![Screenshot warning PIN reset after too many incorrect attempts.](../../media/fab5c089-a4a5-4e8d-8c95-b8eed1dfa262.png)
+    ![After too many incorrect PIN attempts, you need to reset your PIN.](../../media/fab5c089-a4a5-4e8d-8c95-b8eed1dfa262.png)
   
 3. Press **OK**. You'll be prompted to sign in with the user's Microsoft 365 Business Premium credentials, and then required to set a new PIN.
     
