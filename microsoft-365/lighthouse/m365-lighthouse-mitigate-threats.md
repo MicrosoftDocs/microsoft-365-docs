@@ -20,9 +20,6 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Mitigate threats with Microsoft Defender Antivirus
 
-> [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
-
 Microsoft 365 Lighthouse lets partners investigate and mitigate threats across all your tenants. You can also initiate antivirus scans on devices, make sure devices are getting the latest updates for Microsoft Defender Antivirus, and review pending actions following antivirus scans. Lighthouse only supports devices running Windows 10 or later.
 
 ## Before you begin
