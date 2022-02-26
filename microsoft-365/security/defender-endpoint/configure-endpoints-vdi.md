@@ -16,7 +16,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.date: 09/22/2021
+ms.date: 02/14/2022
 ms.technology: mde
 ---
 
@@ -69,8 +69,6 @@ The following steps will guide you through onboarding VDI devices and will highl
     1.  In the **Deployment method** field, select **VDI onboarding scripts for non-persistent endpoints**.
 
     1. Click **Download package** and save the .zip file.
-
-2. Copy the files from the WindowsDefenderATPOnboardingPackage folder extracted from the .zip file into the golden/master image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`. 
 
 2. Copy the files from the WindowsDefenderATPOnboardingPackage folder extracted from the .zip file into the golden/master image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`.
     1. If you are implementing multiple entries for each device - one for each session, copy WindowsDefenderATPOnboardingScript.cmd.

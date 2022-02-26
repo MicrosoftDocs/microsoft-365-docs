@@ -45,6 +45,8 @@ Through advanced hunting, it is possible to extract ASR rules information, creat
 
  You can query ASR rules events from the DeviceEvents table in the advanced hunting section of the Microsoft 365 Defender portal. For example, a simple query such as the one below can report all the events that have ASR rules as data source, for the last 30 days, and will summarize them by the ActionType count, that in this case it will be the actual codename of the ASR rule.
 
+ASR events shown in the advancing hunting portal are throttled to unique processes seen every hour. The time of the ASR event is the first time the event is seen within that hour.
+
 > [!div class="mx-imgBorder"]
 > ![Microsoft 365 Defender Advanced hunting query command line](images/asr-defender365-advanced-hunting3.png)
 
