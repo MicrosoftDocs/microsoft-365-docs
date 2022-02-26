@@ -15,7 +15,7 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to block user sign-in."
+description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to block a user account if you think it's compromised so users can't sign in."
 ---
 
 # Block user sign-in
@@ -38,7 +38,7 @@ You can block a user account if you think it's compromised. When you block a use
 
 7. Select **Save**.
 
-## Block risky users
+## Block sign-in for risky users
 
 1. In the left navigation pane in Lighthouse, select **Users**.
 
