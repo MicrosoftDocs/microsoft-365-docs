@@ -40,7 +40,7 @@ description: "For Managed Service Providers (MSPs), learn how to sign up for Mic
 
     If you encounter the Purchase services error page, select **View products** at the bottom of the page.
 
-1. Under **Microsoft 365 Lighthouse for Partners Public Preview**, select **Details**. 
+1. Under **Microsoft 365 Lighthouse**, select **Details**. 
 
 1. Select **Buy**.
 

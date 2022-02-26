@@ -37,9 +37,6 @@ To check the current health of the Lighthouse tenant services:
 
 If you're experiencing an issue that isn't listed in either of the Service health dashboards, follow the instructions in this article to view self-help options or to create a service request.
 
-> [!NOTE]
-> Support is limited to English while Lighthouse is in Preview.
-
 ## Before you begin
 
 - To create and manage service requests, you must have at least one Azure Active Directory (Azure AD) role assigned to you with the following property set: **microsoft.office365.supportTickets/allEntities/allTasks**. For a list of Azure AD roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). For information on how to assign roles, see [Assign Azure AD roles to users](/azure/active-directory/roles/manage-roles-portal).

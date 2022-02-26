@@ -28,7 +28,7 @@ Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers
 
 Lighthouse simplifies onboarding of Microsoft 365 Business Premium and Microsoft 365 E3 tenants by recommending security configuration baselines tailored to SMB customers and providing multi-tenant views across all customer environments. With Lighthouse, MSPs can scale the management of their customers, focus on what's most important, quickly find and investigate risks, and take action to get their customers to a healthy and secure state.
 
-No additional costs are associated with using Lighthouse to manage Microsoft 365 services and connected devices. Lighthouse is currently in Preview and available to MSPs enrolled in the Cloud Solution Provider (CSP) program and serving SMB customers with a Microsoft 365 Business Premium or Microsoft 365 E3 subscription.
+No additional costs are associated with using Lighthouse to manage Microsoft 365 services and connected devices. Lighthouse is available to MSPs enrolled in the Cloud Solution Provider (CSP) program and serving SMB customers with a Microsoft 365 Business Premium or Microsoft 365 E3 subscription.
 
 Use of Lighthouse by Microsoft CSP channel partners that have customers using Microsoft 365 Business Premium or Microsoft 365 E3 is supported. This includes CSP partners transacting directly with Microsoft and those transacting through an indirect provider (distributor). 
 
