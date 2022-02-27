@@ -69,7 +69,7 @@ Go to [Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_
 
 ## 3. Verify Azure AD is enabled for MDM
 
-- Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>  and select select **Endpoint Managemen**t (select **Show all** if **Endpoint Manager** is not visible)
+- Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>  and select **Endpoint Managemen**t (select **Show all** if **Endpoint Manager** is not visible)
 - In the **Microsoft Endpoint Manager admin center**, go to **Devices** > **Windows** > **Windows Enrollment** > **Automatic Enrollment**.
 - Verify MDM user scope is enabled.
 

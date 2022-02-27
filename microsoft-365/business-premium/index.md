@@ -61,7 +61,7 @@ This library includes the following:
 
 - Prescriptive setup guidance for adding increased security.
 
-- Help for users to setup devices for secure access.
+- Help for users to set up devices for secure access.
 
 - Guidance on how to collaborate and share securely.
 
