@@ -108,7 +108,7 @@ conceptualContent:
         - url: https://partner.microsoft.com
           itemType: overview
           text: Microsoft Partner Network 
-        - url: /partner-center/overview
+        - url: https://docs.microsoft.com/partner-center/overview
           itemType: overview
           text: Get started with Partner Center
 
