@@ -77,7 +77,7 @@ conceptualContent:
           text: 3. Set up Microsoft 365 Business Premium
         - url: ../admin/security-and-compliance/secure-your-business-data.md
           itemType: how-to-guide
-          text: 4. Top 10 days to secure your Microsoft 365 for business plan
+          text: 4. Top 10 days to secure Microsoft 365 for business
   # Card
     - title: What is Microsoft 365 Lighthouse?
       links:
@@ -153,7 +153,7 @@ conceptualContent:
           text: Send feedback
         - url: https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB
           itemType: overview
-          text: Tech Community for small and medium-sized businesses
+          text: Tech Community for small and medium businesses
   # Card
     - title: How do I...
       links:
@@ -162,11 +162,9 @@ conceptualContent:
           text: Find a Microsoft partner to help my business
         - url: ../commerce/subscriptions/upgrade-to-different-plan.md
           itemType: how-to-guide
-          text: Migrate from Microsoft 365 Business Standard 
-        - url: ../commerce/subscriptions/upgrade-to-different-plan.md
+          text: Change to another Microsoft 365 plan 
+        - url: ../admin/setup/migrate-email-and-contacts-admin.md
           itemType: how-to-guide
-          text: Migrate from Office 365 E3 
-        - url: ../commerce/subscriptions/upgrade-to-different-plan.md
-          itemType: how-to-guide
-          text: Migrate to Microsoft 365 Enterprise E3
+          text: Migrate email and contacts to Microsoft 365 
+
 
