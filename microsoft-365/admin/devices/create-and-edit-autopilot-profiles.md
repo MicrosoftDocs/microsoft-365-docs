@@ -33,7 +33,7 @@ description: "Learn to create an AutoPilot profile and apply it to a device, as 
 # Create and edit AutoPilot profiles
 
 > [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md)
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
 
 ## Create a profile
 

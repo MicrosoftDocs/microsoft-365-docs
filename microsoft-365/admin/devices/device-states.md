@@ -34,7 +34,7 @@ description: "Learn about the various device states in the Device actions list i
 This article applies to Microsoft 365 Business Premium.
 
 > [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md)
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
 
 Devices in the **Device actions** list (Admin home \> **Device actions**) can have the following states.
   

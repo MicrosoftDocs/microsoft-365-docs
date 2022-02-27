@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: sharik
 author: skjerland
 manager: scotv
-ms.date: 02/25/2022
+ms.date: 02/27/2022
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -32,7 +32,7 @@ description: "Learn how protection features in Microsoft 365 Business Premium ma
 # How do protection features in Microsoft 365 Business Premium map to Intune settings
 
 > [!NOTE]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md)
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
 
 ## Android and iOS application protection settings
 
@@ -109,3 +109,5 @@ To find the Intune setting, sign in with your Microsoft 365 Business Premium adm
 |||
 
 ## See also
+
+[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
