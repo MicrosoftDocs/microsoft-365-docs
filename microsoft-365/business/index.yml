@@ -166,5 +166,8 @@ conceptualContent:
         - url: ../admin/setup/migrate-email-and-contacts-admin.md
           itemType: how-to-guide
           text: Migrate email and contacts to Microsoft 365 
+        - url: ../admin/get-help-support.md
+          itemType: how-to-guide
+          text: Contact support for Microsoft 365
 
 
