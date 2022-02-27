@@ -113,8 +113,8 @@ Before you configure your adaptive scope, use the previous section to identify w
         - **ne** (not equals)
         - **lt** (less than)
         - **gt** (greater than)
-        - **like** (string comparison
-        - **notlike** (string comparison
+        - **like** (string comparison)
+        - **notlike** (string comparison)
     
     - For **SharePoint sites** scopes, use Keyword Query Language (KQL). You might already be familiar with using KQL to search SharePoint by using indexed site properties. To help you specify these KQL queries, see [Keyword Query Language (KQL) syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
         
