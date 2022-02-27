@@ -94,6 +94,12 @@ sections:
         answer: |
            Simplified configuration for attack surface reduction rules and capabilities via Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is not supported yet. If you have Microsoft Endpoint Manager, you can use Endpoint Manager to configure your attack surface reduction policies. 
 
+      - question: If I do not currently have Microsoft Endpoint Manager, do I need an additional license for Microsoft Intune to use features that are included in both Defender for Business and Endpoint Manager? 
+        answer: |
+           If you have Defender for Business as a standalone subscription and you do not have Microsoft Intune (or Endpoint Manager), you can manage Windows devices in Defender for Business. To manage other devices, such as Android devices, you'll need Microsoft Intune.  
+
+ 
+
 
 
 additionalContent: |
