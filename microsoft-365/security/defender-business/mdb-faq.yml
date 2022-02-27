@@ -70,6 +70,31 @@ sections:
            - [Overview of Defender for Business (preview)](mdb-overview.md)
            - [Compare Microsoft Defender for Business (preview) to Microsoft 365 Business Premium](compare-mdb-m365-plans.md)
           
+      - question: What happens to the preview of Defender for Business if the preview trial offer expires before Defender for Business reaches general availability (GA)?
+        answer: |
+           Microsoft partners can extend preview trial licenses up to the point of GA. Once GA is complete, the preview trial will not be extended.
+           
+      - question: What happens if a customer has 20 users with a mix of subscriptions? For example, suppose they have 10 users assigned a Defender for Business license and 10 users assigned a Defender for Endpoint Plan 2 license?
+        answer: |
+           Mixed licenses are currently not supported, We do not currently support mixed licenses. The highest functional license sets the experience for the tenant. Using our example, the tenant experience will be Defender for Endpoint Plan 2, and will require 20 Defender for Endpoint Plan 2 licenses. 
+           
+      - question: Can I configure more than one web content filtering policy in Defender for Business?
+        answer: |
+           Currently, Defender for Business supports only one uniform web filtering policy per Defender for Business tenant. 
+
+      - question: How can I run custom reports with Defender for Business?
+        answer: |
+           Defender for Business currently includes a set of APIs to support robust custom reporting, as well as a Power BI connector. You could schedule a PowerShell script to generate executive summaries formatted in HTML, and send those summaries via email.
+
+      - question: I am a Microsoft 365 Lighthouse customer. Will I be able to manage multiple tenants from one control panel, or will I have to log in to each tenant individually? 
+        answer: |
+           Defender for Business is enabled in Microsoft 365 Lighthouse for multi-tenant support in a single console. Currently, a multi-tenant incident queue provides you with a cross-tenant view of incidents that require attention; however, configuration and onboarding is done in the customer's tenant using your partner credentials. Additional integration scenarios are planned.
+
+      - question: How do I configure attack surface reduction rules and capabilities in Defender for Business?
+        answer: |
+           Simplified configuration for attack surface reduction rules and capabilities via Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is not supported yet. If you have Microsoft Endpoint Manager, you can use Endpoint Manager to configure your attack surface reduction policies. 
+
+
 
 additionalContent: |
  ## See also
