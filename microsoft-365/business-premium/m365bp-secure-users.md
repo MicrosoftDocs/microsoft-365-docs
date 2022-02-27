@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how security recommendations for Microsoft 365 Business Premium affects your users and protects your data."
+description: "Learn how security recommendations for Microsoft 365 Business Premium affect your users and protect your data."
 ---
 
 # How security recommendations affect your users
