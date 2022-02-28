@@ -115,6 +115,8 @@ After a sensitivity label is applied to an email or document, any configured pro
     
     For more information about the **Auto-labeling for files and emails** settings when you create or edit a sensitivity label, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md) for Office apps, and [Labeling in Azure Purview](/azure/purview/create-sensitivity-label).
 
+- **Set the default sharing link type** for SharePoint sites and individual documents. To help prevent users oversharing, set the [default scope and permissions](sensitivity-labels-default-sharing-link.md) for when users share documents from SharePoint and OneDrive.
+
 ### Label scopes
 
 When you create a sensitivity label, you're asked to configure the label's scope which determines two things:
@@ -232,30 +234,16 @@ If you're not seeing the label or label policy setting behavior that you expect 
 
 ## Sensitivity labels and Azure Information Protection
 
-When you use sensitivity labels in Microsoft 365 Apps on Windows computers, you have a choice of using labeling that's built into Office apps, or the [Azure Information Protection client](/azure/information-protection/rms-client/aip-clientv2).
+The sensitivity labels that are built into Microsoft 365 Apps on Windows, macOS, iOS, and Android look and behave very similarly across these devices to provide users with a consistent labeling experience. However, on Windows computers, you can also use the [Azure Information Protection (AIP) client](/azure/information-protection/rms-client/aip-clientv2). This client is now in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613).
 
-Because built-in labels don't use an Office add-in, as used by the Azure Information Protection client, they have the benefit of more stability and better performance. They also support the latest features, such as advanced classifiers.
-
-By default, built-in labeling is turned off in these apps when the Azure Information Protection client is installed. To change this default behavior and use built-in labels for your Office apps, see [Office built-in labeling client and the Azure Information Protection client](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-the-azure-information-protection-client).
-
-When you keep the Azure Information Protection client installed but disabled in Office apps, you get the benefit of using the Azure Information Protection client with sensitivity labels for the following:
-
-- A scanner to discover sensitive information that's stored on-premises, and then optionally, label that content
-
-- Right-click options in File Explorer for users to apply labels to all file types
-
-- A viewer to display encrypted files for text, images, or PDF documents
-
-- A PowerShell module to discover sensitive information in files on premises, and apply or remove labels and encryption from these files.
-
-If you are new to Azure Information Protection, see [Choose your Windows labeling solution](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) from the Azure Information Protection documentation.
+If you're using the AIP client, see [Why choose MIP built-in labeling over the AIP add-in for Office apps](sensitivity-labels-aip.md) to understand and manage your labeling choices for Windows computers.
 
 ### Azure Information Protection labels
 
 > [!NOTE]
 > Label management for Azure Information Protection labels in the Azure portal was deprecated **March 31, 2021**. Learn more from the official [deprecation notice](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
 
-If your tenant isn't yet on the [unified labeling platform](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), you must first activate unified labeling before you can use sensitivity labels. For instructions, see [How to migrate Azure Information Protection labels to unified sensitivity labels](/azure/information-protection/configure-policy-migrate-labels). 
+If your tenant isn't yet on the [unified labeling platform](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), you must first activate unified labeling before you can use sensitivity labels. For instructions, see [How to migrate Azure Information Protection labels to unified sensitivity labels](/azure/information-protection/configure-policy-migrate-labels).
 
 ## Sensitivity labels and the Microsoft Information Protection SDK
 
