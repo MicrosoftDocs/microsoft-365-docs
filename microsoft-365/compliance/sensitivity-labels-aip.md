@@ -1,5 +1,5 @@
 ---
-title: "Understand and choose between Microsoft Information Protection (MIP) built-in labeling for Office apps and the Azure Information Protection (AIP) client"
+title: "Choose Microsoft Information Protection (MIP) built-in labeling for Office apps over the Azure Information Protection (AIP) add-in"
 f1.keywords:
 - CSH
 ms.author: cabailey
@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: Understand whether to use the AIP client for Windows computers or built-in labeling for Office apps.
+description: When you use the AIP client, understand the advantages of using built-in labeling for Office apps rather than the AIP add-in.
 ---
 
 # Why choose MIP built-in labeling over the AIP add-in for Office apps
