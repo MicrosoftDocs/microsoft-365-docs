@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: When you use the AIP client, understand the advantages of using built-in labeling for Office apps rather than the AIP add-in.
+description: When you use the Azure Information Protection (AIP) unified labeling client, understand the advantages of using built-in labeling for Office apps rather than the AIP add-in.
 ---
 
 # Why choose MIP built-in labeling over the AIP add-in for Office apps
