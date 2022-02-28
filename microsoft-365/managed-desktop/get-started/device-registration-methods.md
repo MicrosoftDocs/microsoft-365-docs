@@ -12,7 +12,7 @@ ms.topic: article
 audience: Admin
 ---
 
-# Device registration methods 
+# Device registration methods
 
 Before Microsoft can manage your devices in Microsoft Managed Desktop, you must have devices registered with the service.
 
