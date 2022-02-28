@@ -32,7 +32,7 @@ In addition, each MSP customer tenant must qualify for Lighthouse by meeting the
 
 ## Requirements for enabling device management
 
-To view customer tenant devices on the device management pages, a MSP must:
+To view customer tenant devices on the device management pages, an MSP must:
 
 - Enroll all customer devices in Microsoft Endpoint Manager (MEM). For more information, see [Enroll devices in Microsoft Intune](/mem/intune/enrollment/).
 - Assign compliance policies to all customer devices. For more information, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy). 
