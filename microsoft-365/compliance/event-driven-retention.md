@@ -115,7 +115,7 @@ Back on the **Define retention settings** page, for **Start the retention period
 ### Step 3: Publish or auto-apply the event-based retention labels
 
 Just like any retention label, you need to publish or auto-apply an event-based label, for it to be manually or automatically applied to content:
-- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Publish retention labels and apply them in apps](create-apply-retention-labels.md)
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
 ### Step 4: Enter an asset ID

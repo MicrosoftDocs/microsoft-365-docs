@@ -13,7 +13,7 @@ ms.topic: article
 audience: Admin
 ---
 
-# Partner registration 
+# Partner registration
 
 This article describes the steps for Partners to register devices. The process for registering devices yourself is documented in [Manual registration](manual-registration.md).
 
