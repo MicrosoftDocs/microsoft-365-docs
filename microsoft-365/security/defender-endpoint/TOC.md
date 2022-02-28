@@ -196,7 +196,7 @@
 
 
 ### [Configure portal settings]()
-#### [Set up preferences](preferences-setup.md)
+#### [Configure general Defender for Endpoint settings](preferences-setup.md)
 #### [General]()
 ##### [Verify data storage location and  update data retention settings](data-retention-settings.md)
 ##### [Configure alert notifications](configure-email-notifications.md)
