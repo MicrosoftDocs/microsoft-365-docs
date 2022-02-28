@@ -103,7 +103,7 @@ After a sensitivity label is applied to an email or document, any configured pro
     
     Need to check when content markings are applied? See [When Office apps apply content marking and encryption](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption).
     
-    If you have templates or workflows that are based on specific documents, make sure you test those documents with your chosen content markings before you make the label available for users. Some string lengjth restictions to be aware of:
+    If you have templates or workflows that are based on specific documents, test those documents with your chosen content markings before you make the label available for users. Some string length restictions to be aware of:
     
     Watermarks are limited to 255 characters. Headers and footers are limited to 1024 characters, except in Excel. Excel has a total limit of 255 characters for headers and footers but this limit includes characters that aren't visible, such as formatting codes. If that limit is reached, the string you enter is not displayed in Excel.
 
