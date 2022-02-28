@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 ---
 
-# Microsoft Managed Desktop and Windows 11 
+# Microsoft Managed Desktop and Windows 11
 
 Following the announcement of Windows 11, you might have started planning Windows 11 migrations as part of your efforts to keep Windows 10 devices up to date.
 

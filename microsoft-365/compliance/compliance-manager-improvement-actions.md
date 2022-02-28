@@ -1,9 +1,9 @@
 ---
-title: "Assign and complete improvement actions in Microsoft Compliance Manager"
+title: "Working with improvement actions in Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -16,10 +16,10 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to perform implementation and testing on controls in Microsoft Compliance Manager. Assign work, store documentation, and export reports."
+description: "Learn how to implement and test controls by working with improvement actions in Microsoft Compliance Manager. Assign work, store documentation, and export reports."
 ---
 
-# Assign and complete improvement actions in Compliance Manager
+# Working with improvement actions in Compliance Manager
 
 **In this article:** This article explains how to **manage your compliance workflow** with improvement actions. Learn how to **assign improvement actions** for implementation and testing, **manage updates**, and export **reports**.
 
@@ -166,6 +166,10 @@ If you’re in the middle of completing an assessment that includes the improvem
 If you have multiple updates and want to accept them all at one time, select the **Accept all updates** link at the top of your improvement actions table. A flyout pane will appear which lists the number of actions to be updated. Select the **Accept updates** button to apply all updates.
 
 Note that when you return to your improvement actions page, you may see a message across the top of the page asking you to refresh the page for the updates to be completed.
+
+## Set up alerts for improvement action changes
+
+You can set up alerts to notify you immediately when certain changes to improvement actions occur, such as a change in implementation or test status, or an increase or decrease in score. Getting quick notifications of such changes can help you stay on top of possible compliance risks. Visit [Compliance Manager alerts and alert policies](compliance-manager-alert-policies.md) to learn how to set up alerts.
 
 ## Export a report
 
