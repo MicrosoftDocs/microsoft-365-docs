@@ -2,8 +2,8 @@
 title: Allotment basics
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: micurn, nicholak
 audience: Admin
