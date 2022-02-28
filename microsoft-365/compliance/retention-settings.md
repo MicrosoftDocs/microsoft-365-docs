@@ -74,7 +74,7 @@ A single policy for retention can have one or many adaptive scopes.
 
 #### To configure an adaptive scope
 
-Before you configure your adaptive scope, use the previous section to identify what type of scope to create and what attributes and values you will use. You might need to work with other administrators to confirm this information, and for SharePoint sites, confirm that the properties are indexed.
+Before you configure your adaptive scope, use the previous section to identify what type of scope to create and what attributes and values you will use. You might need to work with other administrators to confirm this information, and for SharePoint sites, there might be additional configuration steps to take if you plan to use [custom site properties](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
     
