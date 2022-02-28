@@ -13,7 +13,7 @@ ms.topic: article
 audience: Admin
 ---
 
-# Manual registration for existing devices 
+# Manual registration for existing devices
 
 >[!NOTE]
 >This article describes the steps for you to reuse devices you already have, and register them in Microsoft Managed Desktop. If you are working with brand-new devices, follow the steps in [Register new devices in Microsoft Managed Desktop yourself](manual-registration.md) instead. <br> <br> The process for Partners is documented in [Steps for Partners to register devices](partner-registration.md).
