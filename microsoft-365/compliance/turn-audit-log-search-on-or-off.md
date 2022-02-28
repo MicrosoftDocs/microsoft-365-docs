@@ -43,14 +43,15 @@ When auditing in the Microsoft 365 compliance center is turned on, user and admi
 ## Verify the auditing status for your organization
 
 To verify that auditing is turned on for your organization, you can run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell):
-> [!IMPORTANT]
-> DO not use Security & Compliance PowerShell Module to check if Unified Audit Log is enabled or disable. You must use Exchange Online Module.
 
 ```powershell
 Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
 ```
 
 A value of `True` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that auditing is turned on. A value of `False` indicates that auditing is not turned on.
+
+> [!Note]
+> Be sure to run the previous command in Exchange Online PowerShell. You can't use Security & Compliance PowerShell to run this command.
 
 ## Turn on auditing
 
