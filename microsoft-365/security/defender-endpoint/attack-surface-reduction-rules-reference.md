@@ -57,7 +57,7 @@ The following table lists the supported operating systems for attack surface red
 |[Block executable content from email client and webmail](#block-executable-content-from-email-client-and-webmail) | Y | Y |
 |[Block executable files from running unless they meet a prevalence, age, or trusted list criterion](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y | Y |
 |[Block execution of potentially obfuscated scripts](#block-execution-of-potentially-obfuscated-scripts) | Y | Y |
-|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | N |
+|[Block JavaScript or VBScript from launching downloaded executable content](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | N | N |
 |[Block Office applications from creating executable content](#block-office-applications-from-creating-executable-content) | Y | Y |
 |[Block Office applications from injecting code into other processes](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y |
 |[Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) | Y | Y |
