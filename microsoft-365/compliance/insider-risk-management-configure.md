@@ -75,7 +75,7 @@ Select a recommendation from the list to get started with configuring insider ri
 > [!IMPORTANT]
 > After configuring your role groups, it may take up to 30 minutes for the role group permissions to apply to assigned users across your organization.
 
-There are six role groups used to configure initial permissions to manage insider risk management features. To make **Insider risk management** available as a menu option in Microsoft 365 compliance center and to continue with these configuration steps, you must be assigned to one of the following roles or role groups:
+There are six role groups used to configure insider risk management features. To make **Insider risk management** available as a menu option in Microsoft 365 compliance center and to continue with these configuration steps, you must be assigned to one of the following roles or role groups:
 
 - Azure Active Directory [*Global Administrator*](/azure/active-directory/roles/permissions-reference#global-administrator) role
 - Azure Active Directory [*Compliance Administrator*](/azure/active-directory/roles/permissions-reference#compliance-administrator) role
@@ -84,27 +84,29 @@ There are six role groups used to configure initial permissions to manage inside
 - *Insider Risk Management* role group
 - *Insider Risk Management Admin* role group
 
-Members of the following roles have the same solution permissions included with the *Insider Risk Management Admin* role group:
+Depending on how you wish to manage insider risk management policies and alerts, you'll need to assign users to specific role groups to manage different sets of insider risk management features. You have the option to assign users with different compliance responsibilities to specific role groups to manage different areas of insider risk management features. Or you may decide to assign all user accounts for designated administrators, analysts, investigators, and viewers to the Insider Risk Management role group. Use a single role group or multiple role groups to best fit your compliance management requirements.
+
+You'll choose from these role group options and solution actions when working with insider risk management:
+
+|**Actions**|**Insider Risk Management**|**Insider Risk Management Admin**|**Insider Risk Management Analysts**|**Insider Risk Management Investigators**|**Insider Risk Management Auditors**|
+|:----------|:--------------------------|:--------------------------------|:-----------------------------------|:----------------------------------------|:-----------------------------------|
+| Configure policies and settings | Yes | Yes | No | No | No |
+| Access analytics insights | Yes | Yes | Yes | No | No |
+| Access & investigate alerts | Yes | Yes | Yes | No | No |
+| Access & investigate cases | Yes | No | Yes | Yes | No |
+| Access & view the Content Explorer | Yes | No | No | Yes | No |
+| Configure notice templates | Yes | No | Yes | Yes | No |
+| View & export audit logs | Yes | No | No | No | Yes |
+
+>[!IMPORTANT]
+>Make sure you always have at least one user in the *Insider Risk Management* or *Insider Risk Management Admin* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get in to a 'zero administrator' scenario if specific users leave your organization.
+
+Members of the following roles can assign users to insider risk management role groups and have the same solution permissions included with the *Insider Risk Management Admin* role group:
 
 - Azure Active Directory *Global Administrator*
 - Azure Active Directory *Compliance Administrator*
 - Microsoft 365 compliance center *Organization Management*
 - Microsoft 365 compliance center *Compliance Administrator*
-
-> [!IMPORTANT]
-> Make sure you always have at least one user in the *Insider Risk Management* or *Insider Risk Management Admin* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get in to a 'zero administrator' scenario if specific users leave your organization.
-
-Depending on how you wish to manage insider risk management policies and alerts, you'll need to assign users to specific role groups to manage different sets of insider risk management features. You have the option to assign users with different compliance responsibilities to specific role groups to manage different areas of insider risk management features. Or you may decide to assign all user accounts for designated administrators, analysts, investigators, and viewers to the *Insider Risk Management* role group. Use a single role group or multiple role groups to best fit your compliance management requirements.
-
-Choose from these solution role group options when configuring and managing insider risk management:
-
-| **Role group** | **Role permissions** |
-| :------------- | :------------------- |
-| **Insider Risk Management** | Use this role group to manage insider risk management for your organization in a single group. By adding all user accounts for designated administrators, analysts, investigators, and auditors you can configure insider risk management permissions in a single group. This role group contains all the insider risk management permission roles and associated permissions. This configuration is the easiest way to quickly get started with insider risk management and is a good fit for organizations that do not need separate permissions defined for separate groups of users. ***When using this configuration, you should make sure to always have at least one user assigned to this role group to ensure that your policies work as expected and so the user can create and edit policies, configure solution settings, and review policy health warnings***.|
-| **Insider Risk Management Admin** | Use this role group to initially configure insider risk management and later to separate insider risk administrators into a defined group. Users in this role group can enable and view analytics insights and create, read, update, and delete insider risk management policies, global settings, and role group assignments. ***When using this configuration, you should make sure to always have at least one user assigned to this role group to ensure that your policies work as expected and so the user can create and edit policies, configure solution settings, and review policy health warnings***. |
-| **Insider Risk Management Analysts** | Use this group to assign permissions to users that will act as insider risk case analysts. Users in this role group can access and view all insider risk management alerts, cases, analytics insights, and notices templates. They cannot access the insider risk Content explorer. |
-| **Insider Risk Management Investigators** | Use this group to assign permissions to users that will act as insider risk data investigators. Users in this role group can access to all insider risk management alerts, cases, notices templates, and the Content explorer for all cases. |
-| **Insider Risk Management Auditors** | Use this group to assign permissions to users that will audit insider risk management activities. Users in this role group can access the insider risk audit log. Users in this role group cannot access and use the recommended actions (preview) feature.|
 
 > [!NOTE]
 > These role groups are currently not supported on Privileged Identity Management (PIM). To learn more about PIM, see [Assign Azure AD roles in Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user).
@@ -241,7 +243,7 @@ Before configuring a policy, define the following insider risk settings:
 4. On the **Policy timeframes** page, select the [policy timeframes](insider-risk-management-settings.md#policy-timeframes) to go into effect for a user when they trigger a match for an insider risk policy.
 5. On the **Intelligent detections** page, configure the following settings for insider risk policies:
     - [File type exclusions](insider-risk-management-settings.md#file-type-exclusions)
-    - [Thresholds for unusual file activity](insider-risk-management-settings.md#threshold-for-unusual-file-activity)
+    - [Minimum number of daily events to boost score for unusual activity](insider-risk-management-settings.md#minimum-number-of-daily-events-to-boost-score-for-unusual-activity)
     - [Alert volume level](insider-risk-management-settings.md#alert-volume)
     - [Microsoft Defender for Endpoint alert status](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [Domain settings](insider-risk-management-settings.md#domains)
@@ -265,11 +267,11 @@ Insider risk management policies include assigned users and define which types o
 
 4. Select **Next** to continue.
 5. On the **Name and description** page, complete the following fields:
-    - **Name (required)**: Enter a friendly name for the policy. This name cannot be changed after the policy is created.
+    - **Name (required)**: Enter a friendly name for the policy. This name can’t be changed after the policy is created.
     - **Description (optional)**: Enter a description for the policy.
 
 6. Select **Next** to continue.
-7. On the **Users and groups** page, select **Include all users and groups** or **Include specific users and groups** to define which users or groups are included in the policy, or if you've chosen a priority users-based template; select **Add or edit priority user groups**. Selecting **Include all users and groups** will look for triggering events for all users and groups in your organization to start assigning risk scores for the policy. Selecting **Include specific users and groups** allows you to define which users and groups to assign to the policy. Guest user accounts are not supported.
+7. On the **Users and groups** page, select **Include all users and groups** or **Include specific users and groups** to define which users or groups are included in the policy, or if you've chosen a priority users-based template; select **Add or edit priority user groups**. Selecting **Include all users and groups** will look for triggering events for all users and groups in your organization to start assigning risk scores for the policy. Selecting **Include specific users and groups** allows you to define which users and groups to assign to the policy. Guest user accounts aren't supported.
 8. Select **Next** to continue.
 9. On the **Content to prioritize** page, you can assign (if needed) the sources to prioritize, which increases the chance of generating a high severity alert for these sources. Select one of the following choices:
 
