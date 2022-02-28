@@ -28,7 +28,7 @@ To view audit logs, you must have one of the following permissions:
 
 - Azure Active Directory (Azure AD) role - Global Administrator of partner tenant
 
-- Microsoft Partner Center role - Admin agent
+- Microsoft Partner Center role - Admin Agent
 
 ## Review audit logs
 

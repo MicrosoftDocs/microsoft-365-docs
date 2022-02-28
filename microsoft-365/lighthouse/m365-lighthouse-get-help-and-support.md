@@ -70,4 +70,5 @@ If you're experiencing an issue that isn't listed in either of the Service healt
 
 ## Related content
 
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
+[Troubleshooot and resolve problems and error messages in Microsoft 365 Lighthouse](m365-lighthouse-troubleshoot.md) (article)
