@@ -260,11 +260,34 @@ For retention labels that don't mark the content as a record or regulatory recor
 
 ### Combining retention policies and retention labels
 
-You don't have to choose between using retention policies only or retention labels only. Both methods can be used together and in fact, complementary each other for a more comprehensive solution. For example:
+You don't have to choose between using retention policies only or retention labels only. Both methods can be used together and in fact, complementary each other for a more comprehensive solution.
+
+**Example for OneDrive exception so users can override automatic deletion:**
+
+By default, content in users' OneDrive accounts is automatically deleted after five years but users must have the option to override this for specific documents.
 
 1. You create and configure a retention policy that automatically deletes content five years after it's last modified, and apply the policy to all OneDrive accounts.
 
 2. You create and configure a retention label that keeps content forever and add this to a label policy that you publish to all OneDrive accounts. You explain to users how to manually apply this label to specific documents that should be excluded from automatic deletion if not modified after five years.
+
+**Example for SharePoint exceptions to retain some items longer**
+
+By default, SharePoint items are automatically retained and then deleted after five years, but documents in specific libraries must be retained for ten years.
+
+1. You create and configure a retention policy that automatically retains and then deletes content after five years, and apply the policy to all SharePoint and Microsoft 365 Groups instances.
+
+2. You create and configure a retention label that automatically retains content for ten years. You publish this label to SharePoint site admins, so that they can apply it as a default label to be inherited by all items in specific document libraries.
+
+**Example for Exchange exceptions to delete specific emails sooner**
+
+By default, emails are automatically deleted after ten years, but emails related to a specific project that has a prerelease code name must be automatically deleted after one year.
+
+1. You create and configure a retention policy that automatically deletes content after ten years, and apply the policy to all Exchange recipients.
+
+2. You create and configure a retention label that automatically deletes content after one year. Options for applying this label to relevant emails include:
+    - You create an auto-labeling policy that identifies content by using the project code name as the keyword, and apply the policy to all Exchange recipients
+    - You publish the label and instruct users involved in the project how to create an automatic rule in Outlook that applies this label
+    - You publish the label and instruct users to create an email folder in Outlook for all correspondence related to the project and they apply the published label to the folder, and then create an Outlook rule to move all project-related emails to this folder
 
 For more information about how retention policies and retention labels work together and how to determine their combined outcome, see the next section that explains the principles of retention and what takes precedence.
 
