@@ -11,7 +11,7 @@ manager: dougeby
 ms.topic: article
 ---
 
-# Microsoft Managed Desktop roles and responsibilities 
+# Microsoft Managed Desktop roles and responsibilities
 
 <!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/admin-access); do not delete.-->
 <!-- from Roles and responsibilities -->
