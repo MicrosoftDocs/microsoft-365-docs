@@ -82,6 +82,8 @@ Before you can initiate a session on a device, make sure you fulfill the followi
 
   > [!NOTE]
   > Only users with manage security or global admin roles can edit these settings.
+  > 
+  > Automated Investigation must be enabled in the [Advanced features settings](advanced-features.md) prior to enabling live response.
 
 - **Enable live response for servers from the advanced settings page** (recommended).
 
