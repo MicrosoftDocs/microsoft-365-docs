@@ -2,10 +2,10 @@
 title: "Manage auto-claim policies"
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.review: yinggiy, pablom
+ms.reviewer: yinggiy, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,8 +14,8 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_licensing
+- AdminSurgePortfolio
 description: "Learn how to create and manage auto-claim policies that automatically assign licenses to users for certain apps."
 search.appverid: MET150
 ms.date: 04/06/2021
