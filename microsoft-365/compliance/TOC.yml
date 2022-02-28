@@ -1044,8 +1044,10 @@
           href: compliance-manager-templates-format-excel.md
         - name: Compliance Manager templates list
           href: compliance-manager-templates-list.md
-        - name: Assign and complete improvement actions
+        - name: Working with improvement actions
           href: compliance-manager-improvement-actions.md
+        - name: Create and manage alert policies
+          href: compliance-manager-alert-policies.md
         - name: How your compliance score is calculated
           href: compliance-score-calculation.md
         - name: Compliance Configuration Analyzer tool
