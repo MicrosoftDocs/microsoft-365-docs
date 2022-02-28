@@ -118,7 +118,8 @@
             - name: Get started
               href: get-started/prepare-devices.md
             - name: Device registration
-              href: 
+              href:
+              items:
             - name: Device registration methods
               href: get-started/device-registration-methods.md
               items:
