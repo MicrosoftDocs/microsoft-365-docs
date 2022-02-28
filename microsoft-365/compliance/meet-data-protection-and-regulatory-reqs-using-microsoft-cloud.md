@@ -88,7 +88,8 @@ An Assessment is made of several components, which are:
 
 Compliance Manager uses a role-based access control permission model. Only users who are assigned a user role may access Compliance Manager, and the actions allowed by each user are restricted by role type.
 
-Note that there is no longer a default **Guest access** role. Each user must be assigned a role in order to access and work within Compliance Manager.
+>[!Note]
+> There is no longer a default **Guest access** role. Each user must be assigned a role in order to access and work within Compliance Manager.
 
 The following table describes each Compliance Manager permission and what it allows the user do. The table also indicates the role that each permission is assigned to.
 
@@ -103,7 +104,7 @@ The following table describes each Compliance Manager permission and what it all
 
 ## Understanding the Compliance Score
 
-On the Dashboard, Compliance Manager displays a total score for Office 365 assessments in the upper right-hand corner of the tile. This is the overall total Compliance Score for the Assessment, and is the accumulation of points received for each control assessment that has been marked as Implemented and Tested in the Assessment. When adding an Assessment, you will see that the Compliance Score is already on the way towards completion because the points for the Microsoft-managed controls that have been implemented by Microsoft and tested by independent third parties are already applied.
+On the Dashboard, Compliance Manager displays a total score for Office 365 assessments in the upper right-hand corner of the tile. This is the overall total Compliance Score for the Assessment, and is the accumulation of points received for each control assessment that has been marked as Implemented and Tested in the Assessment. When adding an Assessment, you'll see that the Compliance Score is already on the way towards completion because the points for the Microsoft-managed controls that have been implemented by Microsoft and tested by independent third parties are already applied.
 
 ![Compliance Manager Dashboard - Total Compliance Score.](../media/756091aa-1afd-4aff-93ab-c6f6824f2add.png)
 
@@ -129,9 +130,9 @@ The Compliance Manager assigns a default severity ranking to each control. Risk 
 
 - Risks related to legal and external drivers, such as contracts, regulations, and public commitments, for each control.
 
-The displayed Compliance Score values for the control are applied  *in their entirety*  to the Total Compliance Score on a pass/fail basis--either the control is implemented and passes the subsequent assessment test or it does not; there is no partial credit for a partial implementation. Only when the control has its **Implementation Status** set to **Implemented** or **Alternative Implementation** and the **Test Result** is set to **Passed** are the assigned points added to the Total Compliance Score.
+The displayed Compliance Score values for the control are applied  *in their entirety*  to the Total Compliance Score on a pass/fail basis--either the control is implemented and passes the subsequent assessment test or it doesn't; there's no partial credit for a partial implementation. Only when the control has its **Implementation Status** set to **Implemented** or **Alternative Implementation** and the **Test Result** is set to **Passed** are the assigned points added to the Total Compliance Score.
 
-Most importantly, the Compliance Score can help you prioritize which controls to focus on for implementation by indicating which controls that have a higher potential risk if there is a failure related to a control. In addition to risk-based prioritization, when assessment controls are related to other controls (either within the same assessment or in another assessment in the same assessment grouping), completing a single control successfully can result in a significant reduction of effort based on the synchronization of control test results.
+Most importantly, the Compliance Score can help you prioritize which controls to focus on for implementation by indicating which controls that have a higher potential risk if there's a failure related to a control. In addition to risk-based prioritization, when assessment controls are related to other controls (either within the same assessment or in another assessment in the same assessment grouping), completing a single control successfully can result in a significant reduction of effort based on the synchronization of control test results.
 
 For example, in the image below we see that the Office 365 - GDPR Assessment is currently 46% assessed, with 51 of 111 control assessments completed for a Total Compliance score of 289 out of a possible 600.
 
@@ -139,11 +140,11 @@ For example, in the image below we see that the Office 365 - GDPR Assessment is 
 
 Within the assessment GDPR control 7.5.5 is related to 5 other controls (7.4.1, 7.4.3, 7.4.4, 7.4.8, and 7.4.9) each with a moderate to high severity risk rating score of 6 or 8). Using the assessment filter, we have selected all of these controls, making them visible in the assessment view, and can see below that none of them have been assessed.
 
-![Compliance Manager - Assessment View - Filter controls, none assessed.](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) As those 6 controls are related, the completion of any one them will result in a synchronization of those test results across the related controls within this assessment (just as it will for any related controls in an assessment that is in the same assessment grouping). Upon completion of the implementation and testing of GDPR control 7.5.5, the control detail area refreshes to show that all 6 controls have been assessed, with a corresponding increase in the number of assessed controls to 57 and 51% assessed, and a change in total Compliance Score of +40.
+![Compliance Manager - Assessment View - Filter controls, none assessed.](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) As those 6 controls are related, the completion of any one them will result in a synchronization of those test results across the related controls within this assessment (just as it will for any related controls in an assessment that is in the same assessment grouping). Upon completion of the implementation and testing of GDPR control 7.5.5, the control detail area refreshes to show that all 6 controls have been assessed, with a corresponding increase in the number of assessed controls to 57% and 51% assessed, and a change in total Compliance Score of +40.
 
 ![Compliance Manager Assessment View - control results synced.](../media/e9da2b30-053a-4d40-ace9-ae1b39cdaf66.jpg)
 
-This confirmation update dialog box will appear if you are about to change the Implementation Status of a related control in a way that will impact the other related controls.
+This confirmation update dialog box will appear if you're about to change the Implementation Status of a related control in a way that will impact the other related controls.
 
 ![Compliance Manager Assessment - related controls update confirmation dialog box.](../media/8be25bd2-1aee-455f-8aa4-10b1184ca4c3.png)
 
