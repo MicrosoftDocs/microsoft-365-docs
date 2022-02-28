@@ -52,7 +52,7 @@ To view service health, you'll need an Azure AD role in the partner tenant with 
 
 4. In the issue details pane, review detailed information, including issue type, tenants affected, user impact, and issue history.
 
-On the **Tenants affected** tab, you can export a list of affected tenants to a common-separated values (.cvs) file so you can share it with your support teams.
+On the **Tenants affected** tab, you can export a list of affected tenants to a comma-separated values (.csv) file so you can share it with your support teams.
 
 ## Related content
 [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health) (article)
