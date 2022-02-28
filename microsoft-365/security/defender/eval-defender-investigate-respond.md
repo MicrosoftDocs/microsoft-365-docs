@@ -23,7 +23,7 @@ ms.topic: conceptual
 ms.technology: m365d
 ---
 
-# Investigate and respond using Microsoft 365 Defender in a pilot environment
+# Step 6. Investigate and respond using Microsoft 365 Defender in a pilot environment
 
 **Applies to:**
 - Microsoft 365 Defender
