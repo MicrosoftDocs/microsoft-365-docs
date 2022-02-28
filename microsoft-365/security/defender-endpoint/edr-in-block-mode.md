@@ -16,9 +16,7 @@ ms.custom:
   - edr
   - admindeeplinkDEFENDER
 ms.date: 11/29/2021
-ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.technology: mde
 ---
 

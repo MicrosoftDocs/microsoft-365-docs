@@ -43,6 +43,9 @@ Turn on this feature to take advantage of the automated investigation and remedi
 
 ## Live response
 
+> [!NOTE]
+> Live response requires **Automated investigation** to be turned on before you can enable it in the advanced settings section in the Microsoft for Endpoint portal.
+
 Turn on this feature so that users with the appropriate permissions can start a live response session on devices.
 
 For more information about role assignments, see [Create and manage roles](user-roles.md).
