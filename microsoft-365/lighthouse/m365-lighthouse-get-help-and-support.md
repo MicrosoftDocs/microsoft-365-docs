@@ -22,13 +22,13 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Several options are available if you need help. First, check to see if there are any known issues:
 
-- Check the current health of customer tenant services:
+- Review the current health of customer tenant services:
 
     1. In the left navigation pane of Lighthouse, select **Service health**.
     
     2. View detailed information about current and past issues.
 
-- Check the current health of the Lighthouse tenant services:
+- Review the current health of the Lighthouse tenant services:
 
     1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
@@ -38,7 +38,7 @@ Several options are available if you need help. First, check to see if there are
 
     4. Find **Microsoft 365 Lighthouse** and check the health.
 
-- Check to see if the issue is listed in [Known issues with Microsoft 365 Lighthouse](/office365/troubleshoot/microsoft-365-lighthouse/lighthouse-known-issues).
+- See if the issue is listed in [Known issues with Microsoft 365 Lighthouse](/office365/troubleshoot/microsoft-365-lighthouse/lighthouse-known-issues).
 
 If you're experiencing an issue that isn't listed in any of these resources, then follow the instructions in this article to view self-help options or to create a service request.
 
