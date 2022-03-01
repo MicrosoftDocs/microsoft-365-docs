@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/23/2022
+ms.date: 03/01/2022
 ms.service: o365-administration
 localization_priority: Normal
 ms.reviewer: shlomiakirav
@@ -96,7 +96,7 @@ Also see [Find your partner or reseller](../admin/manage/find-your-partner-or-re
 
 ## See also
 
-- [Overview of Microsoft Defender for Business](../security/defender-business/mdb-overview.md) (coming soon to Microsoft 365 Business Premium!)
+- [Overview of Microsoft Defender for Business](../security/defender-business/mdb-overview.md) (now included with Microsoft 365 Business Premium!)
 
 - [Business subscriptions and billing documentation](../commerce/index.yml)
 
