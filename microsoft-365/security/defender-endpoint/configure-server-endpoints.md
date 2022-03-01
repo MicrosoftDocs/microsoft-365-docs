@@ -87,6 +87,14 @@ The new unified solution package makes it easier to onboard servers by removing 
 - [Automated Investigation and Response (AIR)](/microsoft-365/security/defender-endpoint/automated-investigations)
 - [Tamper Protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection)
 
+Depending on the server that you're onboarding, the unified solution installs Microsoft Defender Antivirus and/or the EDR sensor. The following table indicates what component is installed and what is built in by default.
+
+|Server version|AV|EDR|
+|----|----|----|
+|Windows Server 2012 R2 SP1|Check mark|Check mark|
+|Windows Server 2016|Built-in|Check mark|
+|Windows Server 2019 or later|Built-in|Built-in|
+
 If you have previously onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
 
 >[!NOTE]
@@ -152,7 +160,6 @@ For more information, see [Integration with Microsoft Defender for Cloud](azure-
 
 If you have fully updated your machines with the latest [monthly rollup](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e) package, there are **no** additional prerequisites.
 
-
 The installer package will check if the following components have already been installed via an update:
 
 - [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
@@ -164,6 +171,10 @@ Aside from fully updating the machine with the Latest Cumulative Update (LCU), v
 
 > [!NOTE]
 > In order to successfully update the built-in version of Windows Defender, which has a version number starting with 4.10, to the latest available platform, a servicing stack update must have been applied as well as the Latest Cumulative Update (LCU) equal to or later than September 20, 2018—KB4457127 (OS Build 14393.2515).
+
+**Prerequisites for running with third-party security solutions**
+
+If you're running third-party solutions, you'll need to run Microsoft Defender Antivirus in passive mode. You must remember to set to passive mode during the installation and onboarding process.
 
 **New update package for Microsoft Defender for Endpoint on Windows Server 2012 R2 and 2016**
 
