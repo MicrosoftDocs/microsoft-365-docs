@@ -40,7 +40,8 @@ If you want to cancel your subscription, the easiest way to do that is to [turn 
 ## Determine your cancellation options
 
 > [!IMPORTANT]
-> Before you continue, [determine if you have a billing profiles](../billing-and-payments/manage-billing-profiles.md#view-my-billing-profiles).
+> Before you continue, [determine if you have a billing profile](../billing-and-payments/manage-billing-profiles.md#view-my-billing-profiles).
+
 ### If you have a billing profile
 
 You can only cancel and receive a prorated credit or refund if you cancel within 72 hours after the start or renewal of your subscription. If you cancel during this limited time window, the prorated amount is either credited towards your next invoice or returned to you in the next billing cycle.
@@ -97,7 +98,7 @@ Your subscription now appears in a **Disabled** state, and has reduced functiona
 When the cancellation becomes effective, your users lose access to their data. Before you cancel the subscription, have them save their OneDrive for Business or SharePoint Online files to another location. Any customer data that you leave behind might be deleted after 30 days, and is deleted no later than 180 days after cancellation.
 
 - To move email, contacts, tasks, and calendar information to another account, see [Export or backup email, contacts, and calendar to an Outlook .pst file](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91).
-- To save a document library or list content (such as contacts) from a SharePoint Online environment (OneDrive for Business or team sites) to file shares or to a local computer, see [Manual migration of SharePoint Online content](/sharepoint/troubleshoot/migration-tool/content-manual-migration).
+- To save a document library or list content (such as contacts) from a SharePoint Online environment (OneDrive for Business or team sites) to file shares or to a local computer, see [Information about manual migration of SharePoint Online content](/sharepoint/troubleshoot/migration-tool/content-manual-migration).
 
 ## Next steps
 
