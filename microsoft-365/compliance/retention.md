@@ -274,7 +274,7 @@ By default, content in users' OneDrive accounts is automatically deleted after f
 
 2. You create and configure a retention label that keeps content forever and add this to a label policy that you publish to all OneDrive accounts. You explain to users how to manually apply this label to specific documents that should be excluded from automatic deletion if not modified after five years.
 
-**Example for SharePoint libraries to retain items for longer**
+**Example for SharePoint libraries to retain items for longer:**
 
 By default, SharePoint items are automatically retained and then deleted after five years, but documents in specific libraries must be retained for ten years.
 
@@ -282,7 +282,7 @@ By default, SharePoint items are automatically retained and then deleted after f
 
 2. You create and configure a retention label that automatically retains content for ten years. You publish this label to SharePoint site admins, so that they can apply it as a default label to be inherited by all items in specific document libraries.
 
-**Example for specific emails that must be deleted in a shorter time period**
+**Example for specific emails that must be deleted in a shorter time period:**
 
 By default, emails are automatically deleted after ten years, but emails related to a specific project that has a prerelease code name must be automatically deleted after one year.
 
