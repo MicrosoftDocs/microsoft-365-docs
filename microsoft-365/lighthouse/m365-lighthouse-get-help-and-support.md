@@ -20,9 +20,6 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Get help and support for Microsoft 365 Lighthouse 
 
-> [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
-
 Several options are available if you need help. Start by checking the current health of customer tenant services:
 
 1. In the left navigation pane of Lighthouse, select **Service health**.
@@ -36,9 +33,6 @@ To check the current health of the Lighthouse tenant services:
 4. Find **Microsoft 365 Lighthouse** and check the health.
 
 If you're experiencing an issue that isn't listed in either of the Service health dashboards, follow the instructions in this article to view self-help options or to create a service request.
-
-> [!NOTE]
-> Support is limited to English while Lighthouse is in Preview.
 
 ## Before you begin
 
@@ -76,4 +70,5 @@ If you're experiencing an issue that isn't listed in either of the Service healt
 
 ## Related content
 
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
+[Troubleshooot and resolve problems and error messages in Microsoft 365 Lighthouse](m365-lighthouse-troubleshoot.md) (article)
