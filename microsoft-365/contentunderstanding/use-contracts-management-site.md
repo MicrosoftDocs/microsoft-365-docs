@@ -25,7 +25,7 @@ The Contracts Management site is a ready-to-deploy and customizable SharePoint s
 
 The Contract Management site includes pre-populated pages, web parts, and site navigation. The site can be customized to incorporate your organization's own branding, employee information, policy and planning information, workflow, contacts, and resources.
 
-The site uses the power of a SharePoint Syntex model running on document libraries to classify documents and extract metadata. The site provides prebuilt document libraries to get you started quickly, but you can also create your own as needed. The site includes the following featured libraries:
+The site uses the power of a SharePoint Syntex model running on a SharePoint document library to classify documents and extract metadata. The site provides prebuilt document libraries to get you started quickly, but you can also create your own as needed. The site includes the following featured libraries:
 
 - **Regions** – Classify contract documents by geographical area, country, or region.
 
@@ -35,7 +35,7 @@ The site uses the power of a SharePoint Syntex model running on document librari
 
 - **Clients** – Find client information in one convenient location.
 
-- **Models** – Use this library of models to classify documents and extract metadata. Users can create their own models to fit their needs and add them to this library.
+- **Models** – Use this model library to classify documents and extract metadata. Users can create their own models to fit their needs and add them to this library.
 
 - **Sample contracts library** – Find files that were classified and have had metadata extracted using the SharePoint Syntex model. 
 
@@ -92,6 +92,16 @@ You have control of the site navigation for the Contracts Management site. Use t
 - [Associate this site with a hub](https://support.microsoft.com/office/associate-a-sharepoint-site-with-a-hub-site-ae0009fd-af04-4d3d-917d-88edb43efc05).
 - Use [audience targeting](https://support.microsoft.com/office/target-navigation-news-and-files-to-specific-audiences-33d84cb6-14ed-4e53-a426-74c38ea32293) to target specific navigational links to specific users. 
 - [Delete unwanted pages](https://support.microsoft.com/office/delete-a-page-from-a-sharepoint-site-1d4197b8-31b6-460d-906b-3fb492a51db1) if you need to.
+
+
+### Add other workflows
+
+The Contracts Management site contains the components to help you get started, but you can also add additional components, such as the following functionalities.
+
+- A Power Automate flow to be used when a new contract is added to the **Contract request** list.
+- Additional SharePoint Syntex models.
+- Use of content assembly on the Templates library.
+- Add even more functionality to the out-of-the-box contracts solution.
 
 ## Share the site with others
 
