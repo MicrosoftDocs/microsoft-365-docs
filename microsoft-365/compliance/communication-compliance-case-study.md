@@ -1,6 +1,6 @@
 ---
-title: "Case study - Contoso quickly configures an inappropriate content policy for Microsoft Teams, Exchange, and Yammer communications"
-description: "A case study for Contoso and how they quickly configure a communication compliance policy to monitor for inappropriate content in Microsoft Teams, Exchange Online, and Yammer communications."
+title: "Case study - Contoso quickly configures an inappropriate text policy for Microsoft Teams, Exchange, and Yammer communications"
+description: "A case study for Contoso and how they quickly configure a communication compliance policy to monitor for inappropriate text in Microsoft Teams, Exchange Online, and Yammer communications."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -11,6 +11,7 @@ ms.topic: article
 ms.custom: 
 - admindeeplinkMAC
 - admindeeplinkCOMPLIANCE
+- admindeeplinkEXCHANGE
 f1_keywords:
 - 'ms.o365.cc.SupervisoryReview'
 ms.service: O365-seccomp
@@ -24,13 +25,13 @@ search.appverid:
 - MOE150
 ---
 
-# Case study - Contoso quickly configures an inappropriate content policy for Microsoft Teams, Exchange, and Yammer communications
+# Case study - Contoso quickly configures an inappropriate text policy for Microsoft Teams, Exchange, and Yammer communications
 
-Communication compliance in Microsoft 365 helps minimize communication risks by helping you detect, capture, and act on messages with inappropriate content in your organization. Inappropriate content may include profanity, threats, harassment, and inappropriate images. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate remediation actions to make sure they're compliant with your organization's message standards.
+Communication compliance in Microsoft 365 helps minimize communication risks by helping you detect, capture, and act on messages with inappropriate text in your organization. inappropriate text may include profanity, threats, harassment, and inappropriate images. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate remediation actions to make sure they're compliant with your organization's message standards.
 
-The Contoso Corporation is a fictional organization that needs to quickly configure a policy to monitor for inappropriate content. They have been using Microsoft 365 primarily for email, Microsoft Teams, and Yammer support for their users but have new requirements to enforce company policy around workplace harassment. Contoso IT administrators and compliance specialists have a basic understanding of the fundamentals of working with Microsoft 365 and are looking for end-to-end guidance for how to quickly get started with communication compliance.
+The Contoso Corporation is a fictional organization that needs to quickly configure a policy to monitor for inappropriate text. They have been using Microsoft 365 primarily for email, Microsoft Teams, and Yammer support for their users but have new requirements to enforce company policy around workplace harassment. Contoso IT administrators and compliance specialists have a basic understanding of the fundamentals of working with Microsoft 365 and are looking for end-to-end guidance for how to quickly get started with communication compliance.
 
-This case study will cover the basics for quickly configuring a communication compliance policy to monitor communications for inappropriate content. This guidance includes:
+This case study will cover the basics for quickly configuring a communication compliance policy to monitor communications for inappropriate text. This guidance includes:
 
 - Step 1 - Planning for communication compliance
 - Step 2 - Accessing communication compliance in Microsoft 365
@@ -39,12 +40,12 @@ This case study will cover the basics for quickly configuring a communication co
 
 ## Step 1: Planning for communication compliance
 
-Contoso IT administrators and compliance specialists attended online webinars about compliance solutions in Microsoft 365 and decided that communication compliance policies will help them meet the updated corporate policy requirements for reducing workplace harassment. Working together, they've developed a plan to create and enable a communication compliance policy that will monitor for inappropriate content for chats sent in Microsoft Teams, private messages and community conversations in Yammer, and in email messages sent in Exchange Online. Their plan includes identifying:
+Contoso IT administrators and compliance specialists attended online webinars about compliance solutions in Microsoft 365 and decided that communication compliance policies will help them meet the updated corporate policy requirements for reducing workplace harassment. Working together, they've developed a plan to create and enable a communication compliance policy that will monitor for inappropriate text for chats sent in Microsoft Teams, private messages and community conversations in Yammer, and in email messages sent in Exchange Online. Their plan includes identifying:
 
 - The IT administrators that need access to communication compliance features.
 - The compliance specialists that need to create and manage communication policies.
 - The compliance specialists and other colleague in other departments (Human Resources, Legal, etc.) that need to investigate and remediate communication compliance alerts.
-- The users that will be in-scope for the communication compliance inappropriate content policy.
+- The users that will be in-scope for the communication compliance inappropriate text policy.
 
 ### Licensing
 
@@ -114,7 +115,7 @@ The quickest way to access the solution is to sign in directly to the **Communic
 
 ### Starting from the Microsoft 365 compliance center
 
-Another easy way for Contoso IT administrators and compliance specialists to access the communication compliance solution is to sign in directly to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>. After signing in, users simply need to select the **Show all** control to display all the compliance solutions and then select the **Communication compliance** solution to get started.
+Another easy way for Contoso IT administrators and compliance specialists to access the communication compliance solution is to sign in directly to the [Microsoft 365 compliance center](https://compliance.microsoft.com). After signing in, users simply need to select the **Show all** control to display all the compliance solutions and then select the **Communication compliance** solution to get started.
 
 ![Compliance center.](../media/communication-compliance-case-center.png)
 
@@ -126,7 +127,7 @@ Contoso IT administrators and compliance specialists could also choose to access
 
 ### Starting from the Microsoft 365 admin center
 
-To access communication compliance when starting from the Microsoft 365 admin center, Contoso IT administrators and compliance specialists sign in to the Microsoft 365 admin center [(https://admin.microsoft.com)](https://admin.microsoft.com) and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
+To access communication compliance when starting from the Microsoft 365 admin center, Contoso IT administrators and compliance specialists sign in to the Microsoft 365 admin center [(https://admin.microsoft.com)](https://admin.microsoft.com) and go to [Microsoft 365 compliance center](https://compliance.microsoft.com)
 
 ![Communication compliance link.](../media/communication-compliance-case-compliance-link.png)
 
@@ -144,7 +145,7 @@ After selecting **Show all**, the Contoso IT administrators can access the commu
 
 ## Step 3: Configuring prerequisites and creating a communication compliance policy
 
-To get started with a communication compliance policy, there are several prerequisites that Contoso IT administrators need to configure before setting up the new policy to monitor for inappropriate content. After these prerequisites have been completed, Contoso IT administrators and compliance specialists can configure the new policy and compliance specialists can start investigation and remediating any generated alerts.
+To get started with a communication compliance policy, there are several prerequisites that Contoso IT administrators need to configure before setting up the new policy to monitor for inappropriate text. After these prerequisites have been completed, Contoso IT administrators and compliance specialists can configure the new policy and compliance specialists can start investigation and remediating any generated alerts.
 
 ### Enabling auditing in Microsoft 365
 
@@ -154,13 +155,13 @@ Contoso IT administrators review and complete the [step-by-step instructions](tu
 
 ### Configuring Yammer tenant for Native Mode
 
-Communication compliance requires that the Yammer tenant for an organization is in Native Mode to monitor for inappropriate content in private messages and public community conversations.
+Communication compliance requires that the Yammer tenant for an organization is in Native Mode to monitor for inappropriate text in private messages and public community conversations.
 
 Contoso IT administrators make sure they review the information in the [Overview of Yammer Native Mode in Microsoft 365 article](/yammer/configure-your-yammer-network/overview-native-mode) and follow the steps for running the migration tool in the [Configure your Yammer network for Native Mode for Microsoft 365](/yammer/configure-your-yammer-network/native-mode) article.
 
 ### Setting up a group for in-scope users
 
-Contoso compliance specialists want to add all users to the communication policy that will monitor for inappropriate content. They could decide to add each user account to the policy separately, but they've decided it is much easier and saves time to use an **All Users** distribution group for the users for this policy.
+Contoso compliance specialists want to add all users to the communication policy that will monitor for inappropriate text. They could decide to add each user account to the policy separately, but they've decided it is much easier and saves time to use an **All Users** distribution group for the users for this policy.
 
 They need to create a new group to include all Contoso users, so they take the following steps:
 
@@ -169,25 +170,25 @@ They need to create a new group to include all Contoso users, so they take the f
 
     ![Groups.](../media/communication-compliance-case-all-employees.png)
 
-3. After the new group is created, they need to add all Contoso users to the new group. They open the **Exchange admin center** [(https://outlook.office365.com/ecp)](https://outlook.office365.com/ecp) and navigate to **Exchange admin center** > **recipients** > **groups**. The Contoso IT administrators select the Membership area and the new *All Employees* group they created and select the **Edit** control to add all Contoso users to the new group in the wizard.
+3. After the new group is created, they need to add all Contoso users to the new group. They open the **Exchange admin center** [(https://outlook.office365.com/ecp)](https://outlook.office365.com/ecp) and navigate to **Exchange admin center** > **recipients** > <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>. The Contoso IT administrators select the Membership area and the new *All Employees* group they created and select the **Edit** control to add all Contoso users to the new group in the wizard.
 
     ![Exchange admin center.](../media/communication-compliance-case-eac.png)
 
-### Creating the policy to monitor for inappropriate content
+### Creating the policy to monitor for inappropriate text
 
-With all the prerequisites completed, the IT administrators and the compliance specialists for Contoso are ready to configure the communication compliance policy to monitor for inappropriate content. Using the new inappropriate content policy template, configuring this policy is simple and quick.
+With all the prerequisites completed, the IT administrators and the compliance specialists for Contoso are ready to configure the communication compliance policy to monitor for inappropriate text. Using the new inappropriate text policy template, configuring this policy is simple and quick.
 
-1. The Contoso IT administrators and compliance specialists sign into the **Microsoft 365 compliance center** and select **Communication compliance** from the left navigation pane. This action opens the **Overview** dashboard that has quick links for communication compliance policy templates. They choose the **Monitor for inappropriate content** template by selecting **Get started** for the template.
+1. The Contoso IT administrators and compliance specialists sign into the **Microsoft 365 compliance center** and select **Communication compliance** from the left navigation pane. This action opens the **Overview** dashboard that has quick links for communication compliance policy templates. They choose the **Monitor for inappropriate text** template by selecting **Get started** for the template.
 
-    ![Communication compliance inappropriate content template.](../media/communication-compliance-case-template.png)
+    ![Communication compliance inappropriate text template.](../media/communication-compliance-case-template.png)
 
 2. On the policy template wizard, the Contoso IT administrators and compliance specialists work together to complete the three required fields: **Policy name**, **Users or groups to supervise**, and **Reviewers**.
 3. Since the policy wizard has already suggested a name for the policy, the IT administrators and compliance specialists decide to keep the suggested name and focus on the remaining fields. They select the *All users* group for the **Users or groups to supervise** field and select the compliance specialists that should investigate and remediate policy alerts for the **Reviewers** field. The last step to configure the policy and start gathering alert information is to select **Create policy**.
 
-    ![Communication compliance inappropriate content wizard.](../media/communication-compliance-case-wizard.png)
+    ![Communication compliance inappropriate text wizard.](../media/communication-compliance-case-wizard.png)
 
 ## Step 4: Investigate and remediate alerts
 
-Now that the communication compliance policy to monitor for inappropriate content is configured, the next step for the Contoso compliance specialists will be to investigate and remediate any alerts generated by the policy. It will take up to 24 hours for the policy to fully process communications in all the communication source channels and for alerts to show up in the **Alert dashboard**.
+Now that the communication compliance policy to monitor for inappropriate text is configured, the next step for the Contoso compliance specialists will be to investigate and remediate any alerts generated by the policy. It will take up to 24 hours for the policy to fully process communications in all the communication source channels and for alerts to show up in the **Alert dashboard**.
 
-After alerts are generated, Contoso compliance specialists will follow the [workflow instructions](communication-compliance-investigate-remediate.md) to investigate and remediate inappropriate content issues.
+After alerts are generated, Contoso compliance specialists will follow the [workflow instructions](communication-compliance-investigate-remediate.md) to investigate and remediate inappropriate text issues.

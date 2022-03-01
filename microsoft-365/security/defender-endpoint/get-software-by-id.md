@@ -2,8 +2,7 @@
 title: Get software by ID
 description: Retrieves a list of software details by ID.
 keywords: apis, graph api, supported apis, get, software, Microsoft Defender for Endpoint tvm api
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

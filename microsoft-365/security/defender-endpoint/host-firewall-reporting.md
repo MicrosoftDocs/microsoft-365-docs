@@ -65,7 +65,7 @@ These reports can also be accessed by going to **Reports** > **Security Report**
 
 ### From "Computers with a blocked connection" to device
 
-Cards support interactive objects. You can drill into the activity of a device by clicking on the device name, which will launch <https://securitycenter.microsoft.com> in a new tab, and take you directly to the **Device Timeline** tab.
+Cards support interactive objects. You can drill into the activity of a device by clicking on the device name, which will launch the Microsoft 365 Defender portal in a new tab, and take you directly to the **Device Timeline** tab.
 
 > [!div class="mx-imgBorder"]
 > ![Computers with a blocked connection.](\images\firewall-reporting-blocked-connection.png)

@@ -44,7 +44,9 @@ The following files can be deleted:
 > [!TIP]
 > When you use a [query with an auto-apply policy for a retention label](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties), you can exclude specific document libraries by using the following entry: `NOT(DocumentLink:"<URL to document library>")`
 
-List items are not supported by retention policies but are supported by retention labels with the exception of items in system lists. These are hidden lists used by SharePoint to manage the system and include the master page catalog, solution catalog, and data sources. When you apply a retention label to a supported list item that has a document attachment:
+List items are not supported by retention policies but are supported by retention labels with the exception of items in system lists. These are hidden lists used by SharePoint to manage the system and include the master page catalog, solution catalog, and data sources. When retention labels are applied to supported list items, they will always be retained according to the retention settings, but not deleted if they are hidden from search.
+
+When you apply a retention label to a supported list item that has a document attachment:
 - For a standard retention label (doesn't declare the item to be a record):
     - The document attachment doesn't automatically inherit the retention settings of the label, but can be labeled independently.
 - For a retention label that declares the item a record: 
@@ -53,6 +55,7 @@ List items are not supported by retention policies but are supported by retentio
 Retention settings from both retention policies and retention labels do not apply to organizing structures that include libraries, lists, and folders.
 
 For retention policies and auto-apply label policies: SharePoint sites must be indexed for the retention settings to be applied. However, if items in SharePoint document libraries are configured to not appear in search results, this configuration doesn't exclude files from the retention settings.
+
 
 ## How retention works for SharePoint and OneDrive
 
@@ -70,7 +73,9 @@ Users also see an error message if they try to delete a labeled item in any of t
 
 - The records management setting that allows users to delete labeled items is turned off.
     
-    To check or change this setting, go to the **Records management** node in the Microsoft 365 compliance center > **Records management** > **Records management settings** > **Retention labels** > **Deletion of items**. There are separate settings for SharePoint and OneDrive.
+    To check or change this setting, go to the **Records management** solution in the Microsoft 365 compliance center > **Records management** > **Records management settings** > **Retention labels** > **Deletion of items**. There are separate settings for SharePoint and OneDrive.
+    
+    Alternatively, and if you don't have access to the **Records management** solution, you can use *AllowFilesWithKeepLabelToBeDeletedSPO* and *AllowFilesWithKeepLabelToBeDeletedODB* from [Get-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant) and [Set-PnPTenant](/powershell/module/sharepoint-pnp/set-pnptenant).
 
 - The retention label marks items as a record and it's [locked](record-versioning.md).
     
@@ -126,7 +131,9 @@ The copy that's stored in the Preservation Hold library is typically created wit
 
 ## How retention works with OneNote content
 
-When you apply a retention policy to a location that includes OneNote content, or a retention label to a OneNote folder, behind the scenes, the different OneNote sections are individual files that inherit the retention settings. This means that each section will be individually retained and deleted, according to the retention settings you specify.
+When you apply a retention policy to a location that includes OneNote content, or a retention label to a OneNote folder, behind the scenes, the different OneNote pages and sections are individual files that inherit the retention settings. This means that each section within a page will be individually retained and deleted, according to the retention settings you specify.
+
+Only pages and sections are impacted by the retention settings that you specify. For example, although you see a **Modified** date for each individual notebook, this date is not used by Microsoft 365 retention.
 
 ## How retention works with document versions
 
@@ -158,7 +165,7 @@ When the retention period expires and the retention settings included a delete a
 
 ## Configuration guidance
 
-If you're new to configuring retention in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md).
+If you're new to configuring retention in Microsoft 365, see [Get started with information governance](get-started-with-information-governance.md).
 
 If you're ready to configure a retention policy or retention label for Exchange, see the following instructions:
 - [Create and configure retention policies](create-retention-policies.md)

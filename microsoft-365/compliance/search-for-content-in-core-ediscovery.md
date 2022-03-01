@@ -35,9 +35,6 @@ To create a Core eDiscovery search:
 
    ![Click New search to create a  Core eDiscovery search search.](../media/CoreeDiscoverySearch1.png)
 
-   > [!NOTE]
-   > The **Search by ID list** option lets you search for specific email messages and other mailbox items using a list of Exchange IDs. To create an ID list search, you submit a comma-separated value (CSV) file that identifies the specific mailbox items to search for. For instructions, see [Prepare a CSV file for an ID list search](csv-file-for-an-id-list-content-search.md).
-
 5. In the **New search** wizard, type a name for the search, and an optional description that helps identify the search. The name of the search must be unique in your organization.
 
 6. On the **Locations** page, choose the content locations that you want to search. You can search mailboxes, sites, and public folders.

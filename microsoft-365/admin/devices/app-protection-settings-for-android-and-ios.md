@@ -32,6 +32,29 @@ description: "Learn how to create, edit, or delete an app management policy, and
 
 This article applies to Microsoft 365 Business Premium.
 
+> [!NOTE]
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
+
+## Watch: Secure Office apps on iOS
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FLvZ?autoplay=false]
+
+You can set up a user access policy that requires mobile users to enter a PIN or fingerprint to sign in, and also encrypts work files stored on their devices.
+
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+1. Under **Policies**, choose **Add policy**.
+1. In the **Add policy** pane, enter a name under **Policy name**, and choose the policy type that you want under **Policy type**.
+1. Turn on **Manage how users access Office files on mobile devices**, and then make sure the following three settings are turned on:
+    - **Require a PIN or fingerprint to access Office apps**
+    - **Protect work files when devices are lost or stolen**
+    - **Encrypt work files**
+
+1. Under **Files in these apps will be protected**, select the Office apps you want to protect on mobile devices.
+1. Under **Who will get these settings?**, all users are selected by default, but you can choose **Change** to select any security groups you've created.
+1. To finish creating the policy, choose **Add**.
+1. On the **Add policy** page, choose **Close**.
+1. On the admin center home page, confirm that your new policy was added by choosing **Policies** and reviewing your policy on the **Policies** page.
+
 ## Create an app management policy
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
@@ -97,3 +120,7 @@ The following settings are available to manage how users access Office work file
 |Require users to sign in again after Office apps have been idle for  <br/> |This setting determines how long a user can be idle before they're prompted to sign in again.  <br/> |
 |Deny access to work files on jailbroken or rooted devices  <br/> |Clever users may have a device that is jailbroken or rooted. This means that the user can modify the operating system, which can make the device more subject to malware. These devices are blocked when this setting is **On**.  <br/> |
 |Don't allow users to copy content from Office apps into personal apps  <br/> |We do allow this by default, but if the setting is **On**, the user could copy information in a work file to a personal file. If the setting is **Off**, the user will be unable to copy information from a work account into a personal app or personal account.  <br/> |
+
+## See also
+
+[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)

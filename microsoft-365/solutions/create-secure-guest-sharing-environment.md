@@ -14,6 +14,7 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
+- admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
@@ -137,7 +138,7 @@ To set up a guest access review
 13. Type a **Review name** and review the settings.
 14. Click **Create**.
 
-It's important to note that guests can be given access to teams or groups, or to individual files and folders. When given access to files and folders, guests may not be added to any particular group. If you want to do access reviews on guests who don't belong to a team or group, you can create a dynamic group in Azure AD to contain all guests and then create an access review for that group. Site owners can also manage [guest expiration for the site](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea)
+It's important to note that for SharePoint and OneDrive locations, documents will be proactively blocked right after detection of sensitive information, irrespective of whether the document is shared or not, for all external users, while internal users will continue to have access to the document.
 
 ### More information
 
@@ -175,9 +176,9 @@ To restrict guests to web-only access for Groups and Teams:
 
 To restrict guests to web-ony access for SharePoint
 
-1. In the [SharePoint admin center](https://admin.microsoft.com/sharepoint), expand **Policies** and click **Access control**.
-2. Click **Unmanaged devices**.
-3. Select the **Allow limited, web-only access** option, and then click **Save**.
+1. In the SharePoint admin center, expand **Policies** and select <a href="https://go.microsoft.com/fwlink/?linkid=2185071" target="_blank">**Access control**</a>.
+2. Select **Unmanaged devices**.
+3. Select the **Allow limited, web-only access** option, and then select **Save**.
 
 Note that this setting in the SharePoint admin center creates a supporting conditional access policy in Azure AD.
 

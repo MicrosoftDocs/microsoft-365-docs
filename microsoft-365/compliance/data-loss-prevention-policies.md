@@ -22,6 +22,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
 description: data loss prevention reference material
@@ -526,7 +527,7 @@ DLP evaluates any content that can be indexed. For more information on what file
 
 When you create a DLP policy that includes Exchange Online as a location, the policy's synced from the Office 365 Security &amp; Compliance Center to Exchange Online, and then from Exchange Online to Outlook on the web and Outlook.
 
-When a message is being composed in Outlook, the user can see policy tips as the content being created is evaluated against DLP policies. And after a message is sent, it's evaluated against DLP policies as a normal part of mail flow, along with Exchange mail flow rules (also known as transport rules) and DLP policies created in the Exchange admin center. DLP policies scan both the message and any attachments.
+When a message is being composed in Outlook, the user can see policy tips as the content being created is evaluated against DLP policies. And after a message is sent, it's evaluated against DLP policies as a normal part of mail flow, along with Exchange mail flow rules (also known as transport rules) and DLP policies created in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. DLP policies scan both the message and any attachments.
 
 ### Policy evaluation in the Office desktop programs
 
@@ -588,6 +589,6 @@ However, DLP reports need pull data from across Microsoft 365, including Exchang
 
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 
-- [What the DLP functions look for](what-the-dlp-functions-look-for.md)
+- [Sensitive information type functions](sit-functions.md)
 
 - [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md)

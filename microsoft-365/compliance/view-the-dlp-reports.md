@@ -15,7 +15,9 @@ ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkEXCHANGE
 description: Use the DLP reports in Office 365 to view the number of DLP policy matches, overrides, or false positives and see whether they're trending up or down over time.
 ---
 
@@ -73,11 +75,11 @@ Reports can show insights and recommendations where you can click the red warnin
 
 To view DLP reports in the Security & Compliance Center, you have to be assigned the:
 
-- **Security Reader** role in the Exchange admin center. By default, this role is assigned to the Organization Management and Security Reader role groups in the Exchange admin center.
+- **Security Reader** role in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. By default, this role is assigned to the Organization Management and Security Reader role groups in the Exchange admin center.
 
 - **View-Only DLP Compliance Management** role in the Security & Compliance Center. By default, this role is assigned to the Compliance Administrator, Organization Management, Security Administrator, and Security Reader role groups in the Security & Compliance Center.
 
-- **View-Only Recipients** role in the Exchange admin center. By default, this role is assigned to the Compliance Management, Organization Management, and View-Only Organization Management role groups in the Exchange admin center.
+- **View-Only Recipients** role in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. By default, this role is assigned to the Compliance Management, Organization Management, and View-Only Organization Management role groups in the Exchange admin center.
 
 ## Find the cmdlets for the DLP reports
 

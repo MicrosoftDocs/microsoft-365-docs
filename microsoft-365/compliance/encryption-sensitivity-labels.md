@@ -306,7 +306,7 @@ Unencrypted Office documents that are attached to the email automatically inheri
 
 In Word, PowerPoint, and Excel, when a user applies a sensitivity label that lets them assign permissions to a document, they are prompted to specify their choice of users and permissions when the encryption is applied.
 
-For example, with the Azure Information Protection unified labeling client, users can:
+For example, with the Azure Information Protection unified labeling client, unless [co-authoring is enabled](sensitivity-labels-coauthoring.md), users can:
 
 - Select a permission level, such as Viewer (which assigns View Only permission) or Co-Author (which assigns View, Edit, Copy, and Print permissions).
 - Select users, groups, or organizations. This can include people both inside or outside your organizations.
@@ -314,11 +314,14 @@ For example, with the Azure Information Protection unified labeling client, user
 
 ![Options for user to protect with custom permissions.](../media/sensitivity-aip-custom-permissions-dialog.png)
 
-For built-in labeling, users see the same dialog box if they select the following:
+For built-in labeling, and for the Azure Information Protection unified labeling client when [co-authoring is enabled](sensitivity-labels-coauthoring.md), users see the same dialog box as if they selected the following:
 
 - Windows: **File** tab > **Info** > **Protect Document** > **Restrict Access** > **Restricted Access**
 
 - macOS: **Review** tab > **Protection** > **Permissions** > **Restricted Access**
+
+> [!TIP]
+> If users were familiar with configuring custom permissions with the Azure Information Protection unified labeling client before [co-authoring was enabled](sensitivity-labels-coauthoring.md), you might find it helpful to review the mapping of permission levels to individual usage rights: [Rights included in permissions levels](/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels).
 
 ## Example configurations for the encryption settings
 
@@ -422,7 +425,7 @@ Encrypting your most sensitive documents and emails helps to ensure that only au
 
 - When authorized users open encrypted documents in their Office apps, they see the label name and description in a yellow message bar at the top of their app. When the encryption permissions extend to people outside your organization, carefully review the label names and descriptions that will be visible in this message bar when the document is opened.
 
-- For multiple users to edit an encrypted file at the same time, they must all be using Office for the web.  Or, for Windows and Mac, you have [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md) and users have the [required minimum versions](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) of Word, Excel, and PowerPoint. If this isn't the case, and the file is already open:
+- For multiple users to edit an encrypted file at the same time, they must all be using Office for the web or you've [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md) and all users have [Office apps that support this feature](sensitivity-labels-coauthoring.md#prerequisites). If this isn't the case, and the file is already open:
 
   - In Office apps (Windows, Mac, Android, and iOS), users see a **File In Use** message with the name of the person who has checked out the file. They can then view a read-only copy or save and edit a copy of the file, and receive notification when the file is available.
   - In Office for the web, users see an error message that they can't edit the document with other people. They can then select **Open in Reading View**.
@@ -433,7 +436,7 @@ Encrypting your most sensitive documents and emails helps to ensure that only au
 
 - If a label that applies encryption is added by using an Office app when the document is [checked out in SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de), and the user then discards the checkout, the document remains labeled and encrypted.
 
-- The following actions for encrypted files aren't supported from Office apps (Windows, Mac, Android, and iOS), and users see an error message that something went wrong. However, SharePoint functionality can be used as an alternative:
+- Unless you have [enabled co-authoring for files encrypted with sensitivity labels](sensitivity-labels-coauthoring.md), the following actions for encrypted files aren't supported from Office apps (Windows, Mac, Android, and iOS), and users see an error message that something went wrong. However, SharePoint functionality can be used as an alternative:
 
   - View, restore, and save copies of previous versions. As an alternative, users can do these actions using Office on the web when you [enable and configure versioning for a list or library](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37).
   - Change the name or location of files. As an alternative, users can [rename a file, folder, or link in a document library](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) in SharePoint.

@@ -38,13 +38,23 @@ Or
   > [!div class="mx-imgBorder"]
   > ![DLP settings.](../media/endpoint-dlp-1-using-dlp-settings.png)
 
+### Endpoint DLP Windows 10/11 and macOS settings
+
+|Setting |Windows 10, 1809 and later, Windows 11  |macOS Catalina 10.15 or later (preview)  |Notes  |
+|---------|---------|---------|---------|
+|File path exclusions     |Supported         |Supported         |macOS includes a recommended list of exclusions that is on by default          |
+|Unallowed Apps     |Supported         |Supported         |         |
+|Unallowed Bluetooth apps    |Supported         |Not Supported         |         |
+|Browser and domain restrictions to sensitive items      |Supported         |Supported         |         |
+|Additional settings for Endpoint DLP     |Supported         |Supported         |Only the default business justifications are supported for macOS devices         |
+|Always audit file activity for devices     |Supported         |Supported         |         |
+|Auto-quarantine file from unallowed apps | Supported | Not Supported| |
+|Advanced classification | Supported | Not Supported| |
+|Business justification in policy tips | Supported | Supported| |
+
 ### Advanced classification scanning and protection
 
-## Get registered
-
-To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).
-
-When enabled, **Advanced classification scanning and protection** allows the more advanced Microsoft 365 cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) classification, [named entities (preview)](named-entities-learn.md#learn-about-named-entities-preview) classification techniques in your DLP policies.
+Advanced classification scanning and protection allows the more advanced Microsoft 365 cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) classification, [named entities (preview)](named-entities-learn.md#learn-about-named-entities-preview) classification techniques in your DLP policies.
 
 In advanced classification, content is sent from the local device to the cloud services for scanning and classification. If bandwidth utilization is a concern, you can set a limit in this global setting that is applied per device on how much can be used in a rolling 24 hour period. If you set a bandwidth utilization limit and it is exceeded, DLP stops sending the user content to the cloud and data classification will continue locally on the device. When the cumulative bandwidth utilization drops below the rolling 24 hour limit, communication with the cloud services will resume.
 
@@ -61,19 +71,6 @@ These Windows versions support advanced classification scanning and protection:
 
 > [!NOTE]
 > DLP policy evaluation always occurs in the cloud, even if user content is not being sent.
-
-### Endpoint DLP Windows 10 and macOS settings
-
-|Setting |Windows 10, 1809 and later  |macOS Catalina 10.15 or later (preview)  |Notes  |
-|---------|---------|---------|---------|
-|File path exclusions     |Supported         |Supported         |macOS includes a recommended list of exclusions that is on by default          |
-|Unallowed Apps     |Supported         |Supported         |         |
-|Unallowed Bluetooth apps    |Supported         |not supported         |         |
-|Browser and domain restrictions to sensitive items      |Supported         |Supported         |         |
-|Additional settings for Endpoint DLP     |Supported         |Supported         |Only the default business justifications are supported for macOS devices         |
-|Always audit file activity for devices     |Supported         |Supported         |         |
-
-
 
 ### File path exclusions
 
@@ -136,12 +133,12 @@ Just like on Windows devices, you will now be able to prevent macOS apps from ac
 > Note that cross platform apps must be entered with their unique paths respective to the OS they are running on.
 
 To find the full path of Mac apps:
+
 1. On the macOS device, open **Activity Monitor**. Find and double-click the process you want to restrict
 
 2. Choose **Open Files and Ports** tab.
   
-3. The app name is located at the end of the full path.
-
+3. For macOS apps, you need the full path name, including the name of the app.
 
 #### Protect sensitive data from cloud synchronization apps
 
@@ -166,7 +163,15 @@ Restrict sensitive files that match your policies from being shared with unrestr
 
 #### Unallowed browsers
 
-You add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge Chromium.
+For Windows devices you add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Microsoft Edge.
+
+For macOS devices, you must add the full file path. To find the full path of Mac apps:
+
+1. On the macOS device, open **Activity Monitor**. Find and double-click the process you want to restrict
+
+2. Choose **Open Files and Ports** tab.
+  
+3. For macOS apps, you need the full path name, including the name of the app.
 
 #### Service domains
 
@@ -181,6 +186,14 @@ If the list mode is set to **Allow**, then users will be able to upload sensitiv
 
 > [!IMPORTANT]
 > When the service restriction mode is set to "Allow", you must have at least one service domain configured before restrictions are enforced.
+
+Use the FQDN format of the service domain without the ending `.` 
+
+For example:
+
+ `www.contoso.com` 
+
+Wildcards are not supported.
 
 ### Additional settings for endpoint DLP
 
@@ -217,7 +230,7 @@ File activity will always be audited for onboarded devices, regardless of whethe
 
 With Endpoint DLP and Edge Chromium Web browser, you can restrict unintentional sharing of sensitive items to unallowed cloud apps and services. Edge Chromium understands when an item is restricted by an Endpoint DLP policy and enforces access restrictions.
 
-When you use Endpoint DLP as a location in a properly configured DLP policy and the Edge Chromium browser, the unallowed browsers that you've defined in these settings will be prevented from accessing the sensitive items that match your DLP policy controls. Instead, users will be redirected to use Edge Chromium which, with its understanding of DLP imposed restrictions, can block or restrict activities when the conditions in the DLP policy are met.
+When you use Endpoint DLP as a location in a properly configured DLP policy and the Microsoft Edge browser, the unallowed browsers that you've defined in these settings will be prevented from accessing the sensitive items that match your DLP policy controls. Instead, users will be redirected to use Microsoft Edge which, with its understanding of DLP imposed restrictions, can block or restrict activities when the conditions in the DLP policy are met.
 
 To use this restriction, you’ll need to configure three important pieces:
 

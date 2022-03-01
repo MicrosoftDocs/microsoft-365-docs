@@ -2,7 +2,6 @@
 title: Offboard machine API
 description: Learn how to use an API to offboard a device from Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, collect investigation package
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -44,7 +43,7 @@ Offboard device from Defender for Endpoint.
   [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 > [!NOTE]
-> This API is supported on Windows 10, version 1703 and later, or Windows Server 2019 and later.
+> This API is supported on Windows 11, Windows 10, version 1703 and later, or Windows Server 2019 and later.
 >
 > This API is not supported on MacOS or Linux devices.
 
@@ -68,6 +67,8 @@ Delegated (work or school account)|Machine.Offboard|'Offboard machine'
 ```http
 POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 ```
+
+The machine ID can be found in the URL when you select the device. Generally, it is a 40 digit alphanumeric number that can be found in the URL.
 
 ## Request headers
 

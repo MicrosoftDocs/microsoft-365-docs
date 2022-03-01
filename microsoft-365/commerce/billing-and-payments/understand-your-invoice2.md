@@ -88,7 +88,7 @@ The following table describes the fields you might see on your invoice. Some fie
 |Service Usage Address|The address where the service is being used, usually the same as your Sold-To address. To update your Service Usage Address, see [Change your billing addresses](change-your-billing-addresses.md).|
 |Sold-To|Your company name and address. To update this information, see [Change your organization's address, technical contact email, and other information](../../admin/manage/change-address-contact-and-more.md).|
 |SubTotal|Each subscription listed on your invoice has a separate SubTotal row for all Charges, Discounts, Credits, SubTotal, Tax, and Total columns for that subscription.|
-|Tax|Page 1 of your invoice shows the total tax. Page 2 shows the tax rate applied, and the total tax amount for each line item. If your invoice contains taxes and your company is tax exempt, please [contact support](../../business-video/get-help-support.md).|
+|Tax|Page 1 of your invoice shows the total tax. Page 2 shows the tax rate applied, and the total tax amount for each line item. If your invoice contains taxes and your company is tax exempt, please [contact support](../../admin/get-help-support.md).|
 |Total|The amount due for the invoice Billing Period.|
 
 ## Change your purchase order number
@@ -101,12 +101,6 @@ If you pay by invoice, you can add or change the purchase order (PO) number for 
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
 
 ::: moniker-end
 

@@ -13,7 +13,8 @@ ms.author: dansimp
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
-ms.collection: m365-security-compliance
+ms.collection: m365solution-scenario
+ms.date:
 ---
 
 # Evaluate network protection
@@ -31,6 +32,9 @@ This article helps you evaluate network protection by enabling the feature and g
 
 > [!TIP]
 > You can also visit the Microsoft Defender demo scenarios website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) to see how other protection features work.
+
+> [!NOTE]
+> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
 
 ## Enable network protection in audit mode
 
@@ -58,7 +62,7 @@ Enable network protection in audit mode to see which IP addresses and domains wo
 
 ## Review network protection events in Windows Event Viewer
 
-To review apps that would have been blocked, open Event Viewer and filter for Event ID 1125 in the Microsoft-Windows-Windows-Defender/Operational log. The following table lists all network protection events.
+To review apps that would have been blocked, open Event Viewer and filter for Event ID 1125 in the Microsoft-Windows-Windows Defender/Operational log. The following table lists all network protection events.
 
 | Event ID | Provide/Source | Description |
 |---|---|---|

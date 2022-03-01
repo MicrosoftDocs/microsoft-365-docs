@@ -2,7 +2,6 @@
 title: Score methods and properties
 description: Retrieves your organization's exposure score, device secure score, and exposure score by device group
 keywords: apis, graph api, supported apis, score, exposure score, device secure score, exposure score by device group
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
