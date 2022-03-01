@@ -92,4 +92,4 @@ For more information about searching for these events, see [Search the audit log
 
 If you'll use retention labels to declare items in SharePoint and OneDrive as records (rather than regularly records), consider whether you need to change the default tenant setting that allows users to edit the properties for a locked record. 
 
-To change this default, go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) > **Records management** **Records management settings** > **Retention labels** > **Allow editing of record properties** and then turn off the setting **Allow users to edit record properties**.
+To change this default, go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) > **Records management** > **Records management settings** > **Retention labels** > **Allow editing of record properties** and then turn off the setting **Allow users to edit record properties**.
