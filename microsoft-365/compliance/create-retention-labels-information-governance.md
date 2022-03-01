@@ -31,6 +31,8 @@ Make sure you understand the [principles of retention](retention.md#the-principl
 
 For example: The majority of content on your SharePoint sites need to be retained for three years, which is covered with a retention policy. But you have some contract documents that must be retained for seven years. These exceptions can be addressed with retention labels. After assigning the retention policy to all SharePoint sites, you apply the retention labels to the contract documents. All SharePoint items will be retained for three years, and just the contract documents will be retained for seven years.
 
+For more examples of how retention labels can be used as exceptions to retention policies, see [Combining retention policies and retention labels](retention.md#combining-retention-policies-and-retention-labels).
+
 Retention labels also support more capabilities than retention policies. For more information, see [Compare capabilities for retention policies and retention labels](retention.md#compare-capabilities-for-retention-policies-and-retention-labels).
 
 Use the following information to help you create retention labels to supplement retention policies as part of your information governance strategy.
