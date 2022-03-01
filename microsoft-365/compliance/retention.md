@@ -284,7 +284,7 @@ By default, SharePoint items are automatically retained and then deleted after f
 
 **Example for specific emails that must be deleted in a shorter time period:**
 
-By default, emails are automatically deleted after ten years, but emails related to a specific project that has a prerelease code name must be automatically deleted after one year.
+By default, emails aren't retained but are automatically deleted after ten years. However, emails related to a specific project that has a prerelease code name must be automatically deleted after one year.
 
 1. You create and configure a retention policy that automatically deletes content after ten years, and apply the policy to all Exchange recipients.
 
