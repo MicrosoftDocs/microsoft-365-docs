@@ -2,8 +2,8 @@
 title: "Compliance score calculation"
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -52,7 +52,7 @@ Because every organization has specific needs, Compliance Manager relies on you 
 
 Compliance Manager automatically identifies settings in your Microsoft 365 environment that help determine when certain configurations meet improvement action implementation requirements. Compliance Manager detects signals from other compliance solutions you may have deployed, including information governance, information protection, communication compliance, and insider risk management, and also leverages Microsoft Secure Score monitoring of complementary improvement actions.
 
-Your action status is updated on your dashboard every 24 hours. Once you follow a recommendation to implement a control, you’ll typically see the control status updated the next day.
+Your action status is updated on your dashboard within 24 hours of a change being made. Once you follow a recommendation to implement a control, you’ll typically see the control status updated the next day.
 
 For example, if you turn on multi-factor authentication (MFA) in the Azure AD portal, Compliance Manager detects the setting and reflects it in the control access solution details. Conversely, if you didn’t turn on MFA, Compliance Manager flags that as a recommended action for you to take.
 
