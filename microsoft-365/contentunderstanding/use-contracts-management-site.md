@@ -96,7 +96,7 @@ You have control of the site navigation for the Contracts Management site. Use t
 
 ### Add other workflows
 
-The Contracts Management site contains the components to help you get started, but you can also add additional components, such as:
+The Contracts Management site contains the components to help you get started, but you can also include additional components, such as:
 
 - Use a [Power Automate flow](/power-automate/getting-started) to trigger a workflow when a new contract is added to the **Contract requests** library.
 - Build additional [SharePoint Syntex models](/microsoft-365/contentunderstanding/#models).
