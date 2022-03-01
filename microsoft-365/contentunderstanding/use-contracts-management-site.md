@@ -98,10 +98,10 @@ You have control of the site navigation for the Contracts Management site. Use t
 
 The Contracts Management site contains the components to help you get started, but you can also add additional components, such as:
 
-- A [Power Automate flow](/power-automate/getting-started) to be used when a new contract is added to the **Contract requests** library.
-- Additional [SharePoint Syntex models](/microsoft-365/contentunderstanding/#models).
-- Use of [content assembly](content-assembly.md) on the **Templates** library.
-- Add even more functionality by creating a [contracts management solution](solution-manage-contracts-in-microsoft-365.md) for your organization by using SharePoint Syntex along with other components of Microsoft 365.
+- Use a [Power Automate flow](/power-automate/getting-started) to trigger a workflow when a new contract is added to the **Contract requests** library.
+- Build additional [SharePoint Syntex models](/microsoft-365/contentunderstanding/#models).
+- Use the [content assembly](content-assembly.md) feature on the **Templates** library.
+- Create a [contracts management solution](solution-manage-contracts-in-microsoft-365.md) by using SharePoint Syntex together with other components of Microsoft 365.
 
 ## Share the site with others
 
@@ -115,6 +115,3 @@ Key success factors to managing the Contracts Management site:
 - Use insights from [site analytics](https://support.microsoft.com/office/view-usage-data-for-your-sharepoint-site-2fa8ddc2-c4b3-4268-8d26-a772dc55779e) to promote content on the home page, update navigation, or rewrite content for clarity.
 - Review the Contracts Management site as needed to ensure content is fresh and still relevant.
 
-## See also
-
-[Manage contracts using a Microsoft 365 solution](solution-manage-contracts-in-microsoft-365.md)
