@@ -133,5 +133,6 @@ If data is still not appearing on the Device compliance and Threat management pa
 
 ## Related content
 
+[Known issues with Microsoft 365 Lighthouse](/office365/troubleshoot/microsoft-365-lighthouse/lighthouse-known-issues)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
 [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (article)
