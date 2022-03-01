@@ -6727,6 +6727,11 @@
       "source_path": "microsoft-365/admin/setup/access-resources.md",
       "redirect_url": "/azure/active-directory/devices/azuread-join-sso",
       "redirect_document_id": false
+    },    
+    {
+    "source_path": "microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md",
+    "redirect_url": "/microsoft-365/business-premium/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o",
+    "redirect_document_id": true
     }
   ]
 }
