@@ -28,7 +28,7 @@ You have several ways to secure your organizations devices and data on them with
 - Azure Active Directory Premium plans.
 - Basic Mobility and Security (included in most Microsoft 365 for business and enterprise plans)
 Or use the subscriptions that include some, or all of the previous standalone plans.
-
+- Microsoft Defender for Business (included in Microsoft 365 Business Premium; also available as a standalone plan)
 - A Microsoft 365 Business Premium subscription, which includes security and threat protection for small business under 300 users.
 - Microsoft 365 Enterprise plans that include advanced security and threat protection.
 
@@ -45,10 +45,15 @@ Or use the subscriptions that include some, or all of the previous standalone pl
 - **Azure Active Directory (AD) Premium** plans are standalone plans that also come with some of the Microsoft 365 for business and enterprise plans. For more information, see [Azure AD pricing](https://azure.microsoft.com/pricing/details/active-directory/).
 
      Azure AD Premium P1 and Azure AD Premium P2 allow you to set conditional access features, self-service password reset, etc. For more information on the capabilities of the Premium plans, see [Azure AD pricing](https://azure.microsoft.com/pricing/details/active-directory/) page.
-- **Microsoft 365 Business Premium** includes Intune and Azure Active Directory Premium P1 and Office 365 Advanced Threat Protection. 
+
+- **Microsoft 365 Business Premium** includes Intune and Azure Active Directory Premium P1, Microsoft Defender for Office 365 Plan 1, and Microsoft Defender for Business. 
  
-    Microsoft 365 Business Premium offers a set of policy templates for securing your devices and app data. It offers a good level of security and threat protection for most businesses under 300 users. For more information, see [set up Microsoft 365 Business Premium in the setup wizard](../../business/set-up.md), [secure Windows 10 computers](../../business/secure-win-10-pcs.md),  and [Microsoft 365 Business Premium security and compliance features](/security-and-compliance/security-your-business-data.md).
+    Microsoft 365 Business Premium offers a set of policy templates for securing your devices and app data. It offers a good level of security and threat protection for most businesses under 300 users. For more information, see [Microsoft 365 Business Premium Overview](../../business-premium/index.md) and [Overview of Microsoft Defender for Business](../../security/defender-business/mdb-overview.md).
 
 - **Microsoft 365 for enterprise** subscriptions include Microsoft Intune and E5 also includes the Azure AD premium plans 1 and 2.
 
     Microsoft 365 E5 offers the highest level of security and threat protection of all the Microsoft 365 subscriptions. For more information, see [Microsoft 365 for enterprise overview](../../enterprise/microsoft-365-overview.md).
+
+## See also
+
+[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
