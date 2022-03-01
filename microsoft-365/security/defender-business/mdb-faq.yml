@@ -1,14 +1,14 @@
 ### YamlMime:FAQ
 metadata:
   title: Microsoft Defender for Business frequently asked questions
-  description: Get answers to your questions about Microsoft Defender for Business (preview)
+  description: Get answers to your questions about Microsoft Defender for Business
   search.appverid: MET150
   author: denisebmsft
   ms.author: deniseb
   manager: dansimp 
   audience: Admin
   ms.topic: overview
-  ms.date: 02/20/2022
+  ms.date: 02/24/2022
   ms.prod: m365-security
   ms.technology: mdb
   localization_priority: Normal
@@ -18,28 +18,26 @@ metadata:
   - SMB
   - M365-security-compliance
 
-title: Microsoft Defender for Business (preview) - Frequently asked questions and answers
+title: Microsoft Defender for Business - Frequently asked questions and answers
 summary: | 
- Microsoft Defender for Business is now in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. We'll onboard an initial set of customers and partners in the coming weeks and will expand the preview leading up to general availability. Note that preview will launch with an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we'll be adding capabilities regularly. 
+ Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. Defender for Business as a standalone subscription is in in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. Preview includes an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
+ 
+ Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
- Some information in this article relates to prereleased products/services that might be substantially modified before they're commercially released. Microsoft makes no warranties, express or implied, for the information provided here.
-
- Use this article to get answers to questions you might have about Defender for Business (preview).
-
-
+ Use this article to get answers to questions you might have about Defender for Business.
 
 sections:
   - name: General
     questions:
       - question: I have Microsoft Defender for Endpoint Plan 2. Why am I not seeing Microsoft Defender for Business in my portal?
         answer: |
-          Currently, whenever a customer has multiple subscriptions, the highest subscription takes precedence. If you have Microsoft Defender for Endpoint Plan 2 (purchased or trial subscription), and you get Microsoft Defender for Business (preview), Defender for Endpoint Plan 2 takes precedence. In this case, you won't see the Defender for Business (preview) experience.
+          Currently, whenever a customer has multiple subscriptions, the highest subscription takes precedence. If you have Microsoft Defender for Endpoint Plan 2 (purchased or trial subscription), and you get Microsoft Defender for Business, Defender for Endpoint Plan 2 takes precedence. In this case, you won't see the Defender for Business experience.
 
       - question: What are the differences between Defender for Business and Defender for Endpoint Plans 1 and 2?
         answer: |
-          Defender for Business (preview) was designed for small and medium-sized businesses (up to 300 employees). With a [simplified configuration process](mdb-simplified-configuration.md) and [device onboarding options](mdb-onboard-devices.md), Defender for Business (preview) enables customers who do not necessarily have a security background to set up, configure, and use Defender for Business (preview).  
+          Defender for Business was designed for small and medium-sized businesses (up to 300 employees). With a [simplified configuration process](mdb-simplified-configuration.md) and [device onboarding options](mdb-onboard-devices.md), Defender for Business enables customers who do not necessarily have a security background to set up, configure, and use Defender for Business.  
           
-          Both Defender for Business (preview) and Defender for Endpoint provide strong threat protection capabilities for your organization's endpoints. To learn more about the differences, see [Compare Microsoft Defender for Business (preview) to Microsoft 365 Business Premium](compare-mdb-m365-plans.md).
+          Both Defender for Business and Defender for Endpoint provide strong threat protection capabilities for your organization's endpoints. To learn more about the differences, see [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md).
 
       - question: How do I sign up for the preview of Defender for Business?
         answer: |
@@ -63,10 +61,10 @@ sections:
 
       - question: If I'm already using Microsoft 365 Business Premium, why do I need Defender for Business?
         answer: |
-           Microsoft 365 Business Premium currently includes device management capabilities, Defender for Office 365 Plan 1, and Microsoft Defender Antivirus, next-generation protection for Windows devices. Defender for Business (preview) extends these capabilities by adding increased security for your company's devices. To learn more, see the following articles:
+           Microsoft 365 Business Premium currently includes device management capabilities, Defender for Office 365 Plan 1, and Microsoft Defender Antivirus, next-generation protection for Windows devices. Defender for Business extends these capabilities by adding increased security for your company's devices. To learn more, see the following articles:
            
-           - [Overview of Defender for Business (preview)](mdb-overview.md)
-           - [Compare Microsoft Defender for Business (preview) to Microsoft 365 Business Premium](compare-mdb-m365-plans.md)
+           - [Overview of Defender for Business](mdb-overview.md)
+           - [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md)
           
 
 additionalContent: |
@@ -74,7 +72,7 @@ additionalContent: |
 
  - [Overview of Microsoft 365 Business Premium](/microsoft-365/business-premium/)
 
- - [Overview of Microsoft Defender for Business (preview)](mdb-overview.md)
+ - [Overview of Microsoft Defender for Business](mdb-overview.md)
 
- - [Compare Microsoft Defender for Business (preview) to Microsoft 365 Business Premium](compare-mdb-m365-plans.md)
+ - [Compare Microsoft Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md)
  
