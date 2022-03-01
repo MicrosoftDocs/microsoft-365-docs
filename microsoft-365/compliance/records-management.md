@@ -87,7 +87,7 @@ A standard retention label has retention settings and actions but doesn't mark c
 Footnotes:
 
 <sup>1</sup>
-Editing properties for a locked record is allowed by default but can be blocked by a tenant setting for files that are larger than 0 bytes: Go to the **Records management** node in the Microsoft 365 compliance center > **Records management settings** > **Retention labels** > **Allow editing of record properties** and then turn off the setting **Allow users to edit record properties**.
+Editing properties for a locked record is allowed by default but can be blocked by a tenant setting for files that are larger than 0 bytes: Go to **Records management** in the Microsoft 365 compliance center > **Records management settings** > **Retention labels** > **Allow editing of record properties** and then turn off the setting **Allow users to edit record properties**.
 
 <sup>2</sup>
 For SharePoint and OneDrive, can be blocked as a tenant setting in the Microsoft 365 compliance center > **Records management** > **Records management settings** > **Retention labels** > **Deletion of items**
