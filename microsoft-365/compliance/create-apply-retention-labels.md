@@ -93,15 +93,15 @@ If the labels don't appear after seven days, check the **Status** of the label p
     
     - For **Teams private channel messages**, **Yammer user messages** and **Yammer community messages**:
     
-    ```PowerShell
-    Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
-    ```
+        ```PowerShell
+        Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
     
     - For all other locations, such as **Exchange email**, **SharePoint sites**, **Teams channel messages** etc:
     
-    ```PowerShell
-    Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
-    ```
+        ```PowerShell
+        Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+        ```
 
 ### How to check on the status of retention labels published to Exchange
 
