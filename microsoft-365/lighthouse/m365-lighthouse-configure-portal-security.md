@@ -20,9 +20,6 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Configure Microsoft 365 Lighthouse portal security
 
-> [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
-
 Protecting access to customer data when a Managed Service Provider (MSP) has delegated access permissions to its tenants is a cybersecurity priority. Microsoft 365 Lighthouse comes with both required and optional capabilities to help you configure Lighthouse portal security. You must set up specific roles with multifactor authentication (MFA) enabled before you can access Lighthouse. You can optionally set up Azure AD Privileged Identity Management (PIM) and Conditional Access.
 
 ## Set up multifactor authentication (MFA)

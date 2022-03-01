@@ -2,8 +2,8 @@
 title: "What's new in Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -24,6 +24,10 @@ description: "Find out what’s new in Compliance Manger and what’s to come. R
 **In this article:** Learn about recent updates in Compliance Manager.
 
 ## February 2022
+
+### Alerts and alert policies
+
+Users can now set alerts for changes in Compliance Manager that an organization wants to track. Using an easy setup wizard, you can build alert policies to create notifications when the following types of events happen: an improvement action score change, an improvement action assignment change, a testing or implementation status change in an improvement action, and a file upload or deletion in an improvement action's Documents tab. Learn more by visiting [Compliance Manager alerts and alert policies](compliance-manager-alert-policies.md).
 
 ### Try recommended assessment templates for your organization
 
