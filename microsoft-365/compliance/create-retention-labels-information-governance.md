@@ -29,7 +29,7 @@ Whereas retention policies automatically apply to all items at the container lev
 
 Make sure you understand the [principles of retention](retention.md#the-principles-of-retention-or-what-takes-precedence) before you use retention labels to supplement a retention policy for specific SharePoint, OneDrive, or Exchange items. Typically, you'll use retention labels to retain specific items longer than an applied retention policy, but they can also be used to apply a different deletion period.
 
-For example: The majority of content on your SharePoint sites need to be retained for three years, which is covered with a retention policy. But you have some contract documents that must be retained for seven years. These exceptions can be addressed with retention labels. After assigning the retention policy to all SharePoint sites, you apply the retention labels to the contract documents. All SharePoint items will be retained for three years, and just the contract documents will be retained for seven years.
+As a typical example: The majority of content on your SharePoint sites need to be retained for three years, which is covered with a retention policy. But you have some contract documents that must be retained for seven years. These exceptions can be addressed with retention labels. After assigning the retention policy to all SharePoint sites, you apply the retention labels to the contract documents. All SharePoint items will be retained for three years, and just the contract documents will be retained for seven years.
 
 For more examples of how retention labels can be used as exceptions to retention policies, see [Combining retention policies and retention labels](retention.md#combining-retention-policies-and-retention-labels).
 
