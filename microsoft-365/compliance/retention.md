@@ -264,6 +264,8 @@ You don't have to choose between using retention policies only or retention labe
 
 The following examples are just some of the ways in which you can combine retention policies and retention labels for the same location.
 
+For more information about how retention policies and retention labels work together and how to determine their combined outcome, see the next section that explains the principles of retention and what takes precedence.
+
 **Example for OneDrive exception so users can override automatic deletion:**
 
 By default, content in users' OneDrive accounts is automatically deleted after five years but users must have the option to override this for specific documents.
@@ -290,8 +292,6 @@ By default, emails are automatically deleted after ten years, but emails related
     - You create an auto-labeling policy that identifies content by using the project code name as the keyword, and apply the policy to all Exchange recipients
     - You publish the label and instruct users involved in the project how to create an automatic rule in Outlook that applies this label
     - You publish the label and instruct users to create an email folder in Outlook for all correspondence related to the project and they apply the published label to the folder, and then create an Outlook rule to move all project-related emails to this folder
-
-For more information about how retention policies and retention labels work together and how to determine their combined outcome, see the next section that explains the principles of retention and what takes precedence.
 
 ## How long it takes for retention settings to apply
 
