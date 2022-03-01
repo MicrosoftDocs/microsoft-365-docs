@@ -21,6 +21,7 @@ ms.custom:
 - commerce_purchase
 - business_assist
 - AdminTemplateSet
+- admindeeplinkSPO
 search.appverid: MET150
 description: "Add file storage in your Microsoft 365 subscription. With extra file storage, you can store more content in SharePoint."
 ms.date: 04/02/2021
@@ -42,7 +43,7 @@ You must be a Global or SharePoint admin to do the tasks in this article. For mo
 
 ## View available storage
 
-1. In the SharePoint admin center, go to the <a href="https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true" target="_blank">Active sites</a> page, and sign in with an account that has [admin permissions](/sharepoint/sharepoint-admin-role) for your organization.
+1. In the SharePoint admin center, go to <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>, and sign in with an account that has [admin permissions](/sharepoint/sharepoint-admin-role) for your organization.
 
 2. In the upper right of the page, see the amount of storage used across all sites, and the total storage for your subscription. If your organization has configured Multi-Geo in Office 365, the bar also shows the amount of storage used across all geo locations.
 

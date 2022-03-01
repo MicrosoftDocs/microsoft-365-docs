@@ -1,5 +1,5 @@
 ---
-title: "Setup overview for Microsoft 365 Business Premium"
+title: "Setup overview for Microsoft 365 for Campaigns"
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -27,7 +27,7 @@ ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: "Setup overview for Microsoft 365 Business Premium for campaigns or other businesses"
 ---
 
-# Set up Microsoft 365 Business Premium
+# Set up Microsoft 365 for Campaigns
 
 This article describes the process of setting up Microsoft 365. Anybody with Microsoft 365 Business Premium can use this guidance to step up security.
 
@@ -52,7 +52,7 @@ Users will need to take a few minutes to set up devices to work with this enviro
 To set up user devices:
 
 1. Each user [sets up their mobile devices](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json).
-2. For unmanaged devices, users set up their [PCs and Macs](m365-campaigns-protect-pcs-macs.md).
+2. For unmanaged devices, users set up their [PCs and Macs](m365bp-protect-pcs-macs.md).
 For key staff, we recommend that you use [managed devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) for even better protection. For all devices, you'll want to set up [multifactor authentication](m365-campaigns-multifactor-authentication.md).
 3. All users should learn how to protect themselves and your campaign by learning about [phishing and other attacks](m365-campaigns-phishing-and-attacks.md). This [infographic](m365-campaigns-protect-campaign-infographic.md) can also help your users understand how to help protect your campaign from online threats.
 
