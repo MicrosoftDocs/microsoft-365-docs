@@ -96,7 +96,7 @@ Also see [Find your partner or reseller](../admin/manage/find-your-partner-or-re
 
 ## See also
 
-- [Overview of Microsoft Defender for Business](../security/defender-business/mdb-overview.md) (coming soon to Microsoft 365 Business Premium!)
+- [Overview of Microsoft Defender for Business](../security/defender-business/mdb-overview.md) (now included with Microsoft 365 Business Premium!)
 
 - [Business subscriptions and billing documentation](../commerce/index.yml)
 
