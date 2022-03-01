@@ -291,7 +291,7 @@ Scenario: By default, emails aren't retained but are automatically deleted after
 2. You create and configure a retention label that automatically deletes content after one year. Options for applying this label to relevant emails include:
     - You create an auto-labeling policy that identifies content by using the project code name as the keyword, and apply the policy to all Exchange recipients
     - You publish the label and instruct users involved in the project how to create an automatic rule in Outlook that applies this label
-    - You publish the label and instruct users to create an email folder in Outlook for all correspondence related to the project and they apply the published label to the folder, and then create an Outlook rule to move all project-related emails to this folder
+    - You publish the label and instruct users to create a folder in Outlook for all emails related to the project and they apply the published label to the folder, and then create an Outlook rule to move all project-related emails to this folder
 
 ## How long it takes for retention settings to apply
 
