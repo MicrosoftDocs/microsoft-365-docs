@@ -44,13 +44,13 @@ This article lists the known issues for Microsoft 365 Lighthouse by feature area
 
 | Issue | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
-| **Conflicting settings when comparing block legacy authentication and MFA deployment steps** | If a customer tenant has deployed block legacy authentication and one of the MFA deployment steps, a comparison test will erroneously describe these settings as conflicting. | No workaround is required. The settings do not actually conflict and users in the customer tenant are not impacted. |
+| **Conflicting settings when comparing block legacy authentication and MFA deployment steps** | If a customer tenant has deployed block legacy authentication and one of the MFA deployment steps, a comparison test will erroneously describe these settings as conflicting. | No workaround is required. The settings don't actually conflict and users in the customer tenant aren't impacted. |
 
 ## Windows 365
 
 | Issue | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
-| **Retry provisioning error** | MSP technicians get a "You don't have permissions to do this" error message when attempting to retry provisioning of a Cloud PC. | To work around this issue, log in to the customer tenant and then reprovision Cloud PCs from the Microsoft Endpoint Manger admin center. For instructions, see [Reprovision a Cloud PC](/windows-365/enterprise/reprovision-cloud-pc). |
+| **Retry provisioning error** | MSP technicians get a "You don't have permissions to do this" error message when attempting to retry provisioning of a Cloud PC. | To work around this issue, sign in to the customer tenant and then reprovision Cloud PCs from the Microsoft Endpoint Manger admin center. For instructions, see [Reprovision a Cloud PC](/windows-365/enterprise/reprovision-cloud-pc). |
 
 ## Audit logs
 
@@ -79,10 +79,10 @@ This article lists the known issues for Microsoft 365 Lighthouse by feature area
 
 | Issue | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
-| **Translation issues** | Users may experience language translation issues when the language of their browser, or their language selection in Lighthouse, is anything other than English. | To minimize translation issues in Lighthouse, make sure that the browser's language selection matches that of the language setting in the Lighthouse portal. To change the language selection in Lighthouse, log in to Lighthouse and select the gear icon at the top of the page to open the Portal settings page, select **Language + region**, and then select the appropriate language and regional formats. |
+| **Translation issues** | Users may experience language translation issues when the language of their browser, or their language selection in Lighthouse, is anything other than English. | To minimize translation issues in Lighthouse, make sure that the browser's language selection matches that of the language setting in the Lighthouse portal. To change the language selection in Lighthouse, sign in to Lighthouse and select the gear icon at the top of the page to open the Portal settings page, select **Language + region**, and then select the appropriate language and regional formats. |
 
 ## Related content
 
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
-[Troubleshooot and resolve problems and error messages in Microsoft 365 Lighthouse](m365-lighthouse-troubleshoot.md) (article)\
+[Troubleshoot and resolve problems and error messages in Microsoft 365 Lighthouse](m365-lighthouse-troubleshoot.md) (article)\
 [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (article)
