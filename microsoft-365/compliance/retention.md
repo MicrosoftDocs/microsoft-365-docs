@@ -268,7 +268,7 @@ For more information about how retention policies and retention labels work toge
 
 **Example for OneDrive exception so users can override automatic deletion:**
 
-By default, content in users' OneDrive accounts is automatically deleted after five years but users must have the option to override this for specific documents.
+Scenario: By default, content in users' OneDrive accounts is automatically deleted after five years but users must have the option to override this for specific documents.
 
 1. You create and configure a retention policy that automatically deletes content five years after it's last modified, and apply the policy to all OneDrive accounts.
 
@@ -276,7 +276,7 @@ By default, content in users' OneDrive accounts is automatically deleted after f
 
 **Example for SharePoint libraries to retain items for longer:**
 
-By default, SharePoint items are automatically retained and then deleted after five years, but documents in specific libraries must be retained for ten years.
+Scenario: By default, SharePoint items are automatically retained and then deleted after five years, but documents in specific libraries must be retained for ten years.
 
 1. You create and configure a retention policy that automatically retains and then deletes content after five years, and apply the policy to all SharePoint and Microsoft 365 Groups instances.
 
@@ -284,7 +284,7 @@ By default, SharePoint items are automatically retained and then deleted after f
 
 **Example for specific emails that must be deleted in a shorter time period:**
 
-By default, emails aren't retained but are automatically deleted after ten years. However, emails related to a specific project that has a prerelease code name must be automatically deleted after one year.
+Scenario: By default, emails aren't retained but are automatically deleted after ten years. However, emails related to a specific project that has a prerelease code name must be automatically deleted after one year.
 
 1. You create and configure a retention policy that automatically deletes content after ten years, and apply the policy to all Exchange recipients.
 
