@@ -35,7 +35,7 @@ If you want to cancel your subscription, the easiest way to do that is to [turn 
 - You must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 - Before you cancel a subscription, make sure your users [save their data](#save-your-data).
 - If you added your own domain name to use with your subscription, you must [remove the domain](../../admin/get-help-with-domains/remove-a-domain.md) before you cancel your subscription.
-- If you have a domain subscription, to prevent any additional charges for that subscription, [turn off recurring billing](renew-your-subscription.md).
+- If you have a domain subscription, to prevent any other charges for that subscription, [turn off recurring billing](renew-your-subscription.md).
 
 ## Determine your cancellation options
 
@@ -62,7 +62,7 @@ The steps to cancel your trial or paid subscription depend on the number of lice
 
 If you can’t reduce the number of licenses, [turn off recurring billing](renew-your-subscription.md). This prevents you from being charged again for your subscription, and lets you keep your access to your products and services for the remainder of your subscription.
 
-If you are unable to cancel your subscription, [contact support](../../admin/get-help-support.md) for help.
+If you're unable to cancel your subscription, [contact support](../../admin/get-help-support.md) for help.
 
 ## Steps to cancel your subscription
 
