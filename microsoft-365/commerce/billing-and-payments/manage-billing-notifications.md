@@ -2,8 +2,8 @@
 title: "Manage billing notifications and invoice attachments"
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: prkalid, guyb
 audience: Admin
@@ -14,9 +14,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 search.appverid:
 - MET150
 description: "Learn how to manage who receives billing notification emails and invoice attachments."
