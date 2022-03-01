@@ -31,6 +31,9 @@ description: "Discover how to use Microsoft 365 for business to remove company d
 
 This article applies to Microsoft 365 Business Premium.
 
+> [!NOTE]
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
+
 ## Remove company data
 
 You can use Microsoft 365 for business to remove company data that your users have on their [devices](app-protection-settings-for-android-and-ios.md) or [Windows PCs](protection-settings-for-windows-10-devices.md) that are protected by Microsoft 365. **If you remove company data from a device, you cannot restore it later**. 
@@ -48,4 +51,6 @@ You can use Microsoft 365 for business to remove company data that your users ha
 5. On the confirmation pane, choose **Confirm** \> **Close**.
     
 
+## See also
 
+[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
