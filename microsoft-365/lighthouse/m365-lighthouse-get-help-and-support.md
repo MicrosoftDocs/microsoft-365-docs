@@ -24,18 +24,14 @@ Several options are available if you need help. First, check to see if there are
 
 - Review the current health of customer tenant services:
 
-    1. In the left navigation pane of Lighthouse, select **Service health**.
-    
+    1. In the left navigation pane of Lighthouse, select **Service health**. 
     2. View detailed information about current and past issues.
 
 - Review the current health of the Lighthouse tenant services:
 
     1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
-
     2. In the left navigation pane, select **Health** > **Service health**.
-
     3. In the list of services, find **Microsoft 365 suite**, and then expand it to show all the services in the suite.
-
     4. Find **Microsoft 365 Lighthouse** and check the health.
 
 - See if the issue is listed in [Known issues with Microsoft 365 Lighthouse](/office365/troubleshoot/microsoft-365-lighthouse/lighthouse-known-issues).
