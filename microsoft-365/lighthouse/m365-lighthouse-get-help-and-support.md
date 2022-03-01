@@ -22,23 +22,23 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Several options are available if you need help. First, check to see if there are any known issues:
 
-1. Review the current health of customer tenant services:
+- Check the current health of customer tenant services:
 
-    a. In the left navigation pane of Lighthouse, select **Service health**.
+    1. In the left navigation pane of Lighthouse, select **Service health**.
     
-    b. View detailed information about current and past issues.
+    2. View detailed information about current and past issues.
 
-2. Review the current health of the Lighthouse tenant services:
+- Check the current health of the Lighthouse tenant services:
 
-    a. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+    1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
-    b. In the left navigation pane, select **Health** > **Service health**.
+    2. In the left navigation pane, select **Health** > **Service health**.
 
-    c. In the list of services, find **Microsoft 365 suite**, and then expand it to show all the services in the suite.
+    3. In the list of services, find **Microsoft 365 suite**, and then expand it to show all the services in the suite.
 
-    d. Find **Microsoft 365 Lighthouse** and check the health.
+    4. Find **Microsoft 365 Lighthouse** and check the health.
 
-3. See if the issue is listed in [Known issues with Microsoft 365 Lighthouse](/office365/troubleshoot/microsoft-365-lighthouse/lighthouse-known-issues).
+- Check to see if the issue is listed in [Known issues with Microsoft 365 Lighthouse](/office365/troubleshoot/microsoft-365-lighthouse/lighthouse-known-issues).
 
 If you're experiencing an issue that isn't listed in any of these resources, then follow the instructions in this article to view self-help options or to create a service request.
 
