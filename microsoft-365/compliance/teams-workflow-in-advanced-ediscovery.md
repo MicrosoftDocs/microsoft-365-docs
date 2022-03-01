@@ -96,7 +96,7 @@ To add custodians to a case and preserve custodial data sources:
 
    - **OneDrives**. The custodian's OneDrive account is selected by default. Keep this selected to add (and preserve) files shared in 1:1 chats and group chats as custodial data.
 
-   - **SharePoint**. Add the SharePoint site associated with any private or shared channel the custodian is a member of to add (and preserve) as custodial data the files shared in a channel. Click **Edit** and then add the URL for the SharePoint site associated with a private or shared channel. To learn how to locate the private and shared channels a user is a member of, see [eDiscovery of private channels](/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels).
+   - **SharePoint**. Add the SharePoint site associated with any private or shared channel the custodian is a member of to add (and preserve) as custodial data the files shared in a channel. Click **Edit** and then add the URL for the SharePoint site associated with a private or shared channel. To learn how to locate the private and shared channels a user is a member of, see [eDiscovery of private and shared channels](/microsoftteams/ediscovery-investigation#ediscovery-of-private-and-shared-channels).
 
    - **Teams**. Add the teams that the custodian is a member of to add (and preserve) as custodial data all channel messages and all files shared to a Teams channel. This includes adding the mailbox for the parent team of a shared channel the custodian is a member of. When you click **Edit**, the mailbox and site associated with each team the custodian is a member of are displayed in a list. Select the teams that you want to associate to the custodian. You have to select both the corresponding mailbox and site for each team.
 
