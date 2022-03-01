@@ -266,7 +266,7 @@ The following examples are just some of the ways in which you can combine retent
 
 For more information about how retention policies and retention labels work together and how to determine their combined outcome, see the section on this page that explains the [principles of retention and what takes precedence](#the-principles-of-retention-or-what-takes-precedence).
 
-**Example for users to override automatic deletion:**
+**Example for users to override automatic deletion**
 
 Scenario: By default, content in users' OneDrive accounts is automatically deleted after five years but users must have the option to override this for specific documents.
 
@@ -274,7 +274,7 @@ Scenario: By default, content in users' OneDrive accounts is automatically delet
 
 2. You create and configure a retention label that keeps content forever and add this to a label policy that you publish to all OneDrive accounts. You explain to users how to manually apply this label to specific documents that should be excluded from automatic deletion if not modified after five years.
 
-**Example to retain items for longer:**
+**Example to retain items for longer**
 
 Scenario: By default, SharePoint items are automatically retained and then deleted after five years, but documents in specific libraries must be retained for ten years.
 
@@ -282,7 +282,7 @@ Scenario: By default, SharePoint items are automatically retained and then delet
 
 2. You create and configure a retention label that automatically retains content for ten years. You publish this label to SharePoint site admins, so that they can apply it as a default label to be inherited by all items in specific document libraries.
 
-**Example to delete items in a shorter time period:**
+**Example to delete items in a shorter time period**
 
 Scenario: By default, emails aren't retained but are automatically deleted after ten years. However, emails related to a specific project that has a prerelease code name must be automatically deleted after one year.
 
