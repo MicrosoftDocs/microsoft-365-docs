@@ -52,7 +52,7 @@ You'll choose from these role group options and solution actions when working wi
 |:----------|:--------------------------|:--------------------------------|:-----------------------------------|:----------------------------------------|:-----------------------------------|
 | Configure policies and settings | Yes | Yes | No | No | No |
 | Access analytics insights | Yes | Yes | Yes | No | No |
-| Access & investigate alerts | Yes | Yes | Yes | No | No |
+| Access & investigate alerts | Yes | No | Yes | Yes | No |
 | Access & investigate cases | Yes | No | Yes | Yes | No |
 | Access & view the Content Explorer | Yes | No | No | Yes | No |
 | Configure notice templates | Yes | No | Yes | Yes | No |
