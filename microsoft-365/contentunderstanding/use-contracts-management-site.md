@@ -35,7 +35,7 @@ The site uses the power of a SharePoint Syntex model running on a SharePoint doc
 
 - **Clients** – Find client information in one convenient location.
 
-- **Models** – Use this library to classify documents and extract metadata. Users can create their own models to fit their needs and add them to this library.
+- **Models** – Use the model in this library to classify documents and extract metadata. Users can create their own models to fit their needs and add them to this library.
 
 - **Sample contracts library** – Find files that were classified and have had metadata extracted using the SharePoint Syntex model. 
 
@@ -98,7 +98,7 @@ You have control of the site navigation for the Contracts Management site. Use t
 
 The Contracts Management site contains the components you need to get started, but you can also include additional components, such as:
 
-- Use a [Power Automate flow](https://docs.microsoft.com/en-us/power-automate/getting-started) to trigger a workflow when a new contract is added to the **Contract requests** library.
+- Use a [Power Automate flow](/power-automate/getting-started) to trigger a workflow when a new contract is added to the **Contract requests** library.
 - Build additional [SharePoint Syntex models](/microsoft-365/contentunderstanding/#models).
 - Use the [content assembly](content-assembly.md) feature on the **Templates** library.
 - Create a [contracts management solution](solution-manage-contracts-in-microsoft-365.md) by using SharePoint Syntex together with other components of Microsoft 365.
