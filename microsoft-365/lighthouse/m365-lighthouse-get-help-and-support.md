@@ -40,7 +40,7 @@ Several options are available if you need help. First, check to see if there are
 
 3. See if the issue is listed in [Known issues with Microsoft 365 Lighthouse](/office365/troubleshoot/microsoft-365-lighthouse/lighthouse-known-issues).
 
-If you're experiencing an issues that isn't listed in any of these resources, then follow the instructions in this article to view self-help options or to create a service request.
+If you're experiencing an issue that isn't listed in any of these resources, then follow the instructions in this article to view self-help options or to create a service request.
 
 ## Before you begin
 
