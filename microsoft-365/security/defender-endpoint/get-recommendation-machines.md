@@ -2,8 +2,7 @@
 title: List devices by recommendation
 description: Retrieves a list of devices associated with the security recommendation. 
 keywords: apis, graph api, supported apis, get, security recommendation for vulnerable devices, threat and vulnerability management, threat and vulnerability management api 
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -85,7 +84,7 @@ Here is an example of the response.
         {
             "id": "e058770379bc199a9c179ce52a23e16fd44fd2ee",
             "computerDnsName": "niw_pc",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "rbacGroupName": "GroupTwo"
         }
         ...

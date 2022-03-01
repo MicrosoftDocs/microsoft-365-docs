@@ -30,7 +30,7 @@ ms.technology: mde
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-A zero-day vulnerability is a publicly disclosed vulnerability for which no official patches or security updates have been released. Zero-day vulnerabilities often have high severity levels and are actively exploited.
+A zero-day vulnerability is a flaw in software for which no official patch or security update has been released. A software vendor may or may not be aware of the vulnerability, and no public information about this risk is available. Zero-day vulnerabilities often have high severity levels and are actively exploited.
 
 Threat and vulnerability management will only display zero-day vulnerabilities it has information about.
 

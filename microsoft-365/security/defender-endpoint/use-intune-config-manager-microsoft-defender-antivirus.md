@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2021
+ms.date: 12/16/2021
 ms.reviewer: phuijbr, oogunrinde
 manager: dansimp
 ms.technology: mde
@@ -45,9 +45,12 @@ You can use [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) to conf
 
 6. Next to **Configuration settings**, choose **Edit**.
 
+   > [!IMPORTANT]
+   > AllowOnAccessProtection and AllowIntrusionPreventionSystem antivirus settings are officially being deprecated and as such cannot be configured. 
+
 7. Expand the **Scan** section, and review or edit your scanning settings.
 
-8. Choose **Review + save**
+8. Choose **Review + save**.
 
 > [!TIP]
 > Need help? See [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).

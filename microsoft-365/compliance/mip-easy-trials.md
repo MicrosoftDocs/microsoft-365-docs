@@ -54,6 +54,14 @@ To get these preconfigured labels and policies:
     
     If you don't see this information displayed with the activation option, you're not currently eligible for the automatic creation of sensitivity labels and policies. You can try checking back later to see if this status has changed, or you can use the settings information that follows to manually create the same labels and policies.
 
+3. Now enable sensitivity labels for SharePoint and OneDrive. This step is a prerequisite to use sensitivity labels in Office for the web, and auto-labeling policies for SharePoint and OneDrive.
+   
+    Use the following banner at the top of the Information Protection **Overview** tab, and select **Turn on now**. If you don't see this banner, sensitivity labels for SharePoint and OneDrive have already been enabled for your tenant.
+    
+    ![Enable sensitivity labels for SharePoint and OneDrive banner.](../media/turn-on-mip-labels.png)
+    
+    For more information about this capability, see [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+
 ## Default sensitivity labels
 
 When you don't have sensitivity labels that are published, we'll create the following labels for you:

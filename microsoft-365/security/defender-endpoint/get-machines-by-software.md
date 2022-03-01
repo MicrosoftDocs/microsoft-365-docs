@@ -2,8 +2,7 @@
 title: List devices by software
 description: Retrieve a list of devices that has this software installed.
 keywords: apis, graph api, supported apis, get, list devices, devices list, list devices by software, Microsoft Defender for Endpoint tvm api
-search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -86,13 +85,13 @@ Here is an example of the response.
         {
             "id": "7c7e1896fa39efb0a32a2cf421d837af1b9bf762",
             "computerDnsName": "dave_desktop",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "rbacGroupName": "GroupTwo"
         },
         {
             "id": "7d5cc2e7c305e4a0a290392abf6707f9888fda0d",
             "computerDnsName": "jane_PC",
-            "osPlatform": "Windows10",
+            "osPlatform": "Windows10" "Windows11",
             "rbacGroupName": "GroupTwo"
         }
         ...

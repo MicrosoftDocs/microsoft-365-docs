@@ -2,7 +2,6 @@
 title: Get file-related machines API
 description: Learn how to use the Get file-related machines API to get a collection of machines related to a file hash in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, devices, hash
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library

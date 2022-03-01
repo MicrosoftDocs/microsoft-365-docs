@@ -7,22 +7,21 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 11/19/2021
+ms.date: 01/14/2022
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365initiative-defender-endpoint
 ---
 
 # Set up and configure Microsoft Defender for Endpoint Plan 1
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-
-> [!TIP]
-> If you have Microsoft 365 E3 or A3 but not Microsoft 365 E5 or A5, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) to sign up for the preview program!
 
 This article describes how to set up and configure Defender for Endpoint Plan 1. Whether you have assistance or are doing it yourself, you can use this article as a guide throughout your deployment.  
 
@@ -49,7 +48,7 @@ The following table lists the basic requirements for Defender for Endpoint Plan 
 
 | Requirement | Description |
 |:---|:---|
-| Licensing requirements | Defender for Endpoint Plan 1 <br/><br/>*If you have Microsoft 365 E3 or A3, you can join the preview program.* |
+| Licensing requirements | Defender for Endpoint Plan 1 (formerly referred to as Microsoft Defender for Endpoint Lite)|
 | Browser requirements | Microsoft Edge <br/> Internet Explorer version 11 <br/> Google Chrome |
 | Operating systems | Windows 10, version 1709 or later <br/>macOS: 11.5 (Big Sur), 10.15.7 (Catalina), or 10.14.6 (Mojave) <br/>iOS <br/>Android OS  |
 | Datacenter | One of the following datacenter locations: <br/>- European Union <br/>- United Kingdom <br/>- United States |
@@ -186,8 +185,8 @@ Attack surface reduction rules are available on devices running Windows. We reco
 > [!TIP]
 > To learn more about attack surface reduction rules, see the following resources:
 > - [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md)
-> - [View the list of attack surface reduction rules](attack-surface-reduction-rules.md)
-> - [Customize attack surface reduction rules](customize-attack-surface-reduction.md)
+> - [View the list of attack surface reduction rules](attack-surface-reduction-rules-reference.md)
+> - [Attack surface reduction rules deployment Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md)
 
 ### Ransomware mitigation
 
@@ -293,7 +292,7 @@ With network protection, you can help protect your organization against dangerou
 
 ### Web protection
 
-With web protection, you can protect your organization's devices from web threats and unwanted content. Your web protection includes [web threat protection](#configure-web-threat-protection) and [web content filtering](#configure-web-content-filtering) (preview). Configure both sets of capabilities. We recommend using Microsoft Endpoint Manager to configure your web protection settings.
+With web protection, you can protect your organization's devices from web threats and unwanted content. Your web protection includes [web threat protection](#configure-web-threat-protection) and [web content filtering](#configure-web-content-filtering). Configure both sets of capabilities. We recommend using Microsoft Endpoint Manager to configure your web protection settings.
 
 #### Configure web threat protection
 
@@ -326,9 +325,6 @@ With web protection, you can protect your organization's devices from web threat
 > To learn more about web threat protection, see [Protect your organization against web threats](web-threat-protection.md).
 
 #### Configure web content filtering
-
-> [!NOTE]
-> Web content filtering is currently in preview.
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) and sign in.
 

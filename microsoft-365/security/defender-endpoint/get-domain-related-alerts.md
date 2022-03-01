@@ -2,7 +2,6 @@
 title: Get domain-related alerts API
 description: Learn how to use the Get domain-related alerts API to retrieve alerts related to a given domain address in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, domain, related, alerts
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library

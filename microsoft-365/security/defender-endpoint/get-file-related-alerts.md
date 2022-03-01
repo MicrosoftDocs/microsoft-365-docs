@@ -2,7 +2,6 @@
 title: Get file-related alerts API
 description: Learn how to use the Get file-related alerts API to get a collection of alerts related to a given file hash in Microsoft Defender for Endpoint.
 keywords: apis, graph api, supported apis, get, file, hash
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library

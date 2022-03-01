@@ -2,8 +2,6 @@
 title: Troubleshoot SIEM tool integration issues in Microsoft Defender for Endpoint
 description: Troubleshoot issues that might arise when using SIEM tools with Microsoft Defender for Endpoint.
 keywords: troubleshoot, siem, client secret, secret
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -80,8 +78,5 @@ If you encounter an error when trying to enable the SIEM connector application, 
 
 ## Related topics
 
-- [Enable SIEM integration in Microsoft Defender for Endpoint](enable-siem-integration.md)
-- [Configure ArcSight to pull Microsoft Defender for Endpoint detections](configure-arcsight.md)
 - [Pull detections to your SIEM tools](configure-siem.md)
-- [Microsoft Defender for Endpoint Detection fields](api-portal-mapping.md)
-- [Pull Microsoft Defender for Endpoint detections using REST API](pull-alerts-using-rest-api.md)
+

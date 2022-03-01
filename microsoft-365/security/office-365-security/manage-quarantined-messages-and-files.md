@@ -17,7 +17,6 @@ ms.collection:
   - M365-security-compliance
 ms.custom:
   - seo-marvel-apr2020
-  - admindeeplinkDEFENDER
 description: Admins can learn how to view and manage quarantined messages for all users in Exchange Online Protection (EOP). Admins in organizations with Microsoft Defender for Office 365 can also manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
@@ -38,18 +37,18 @@ Admins can view, release, and delete all types of quarantined messages for all u
 
 By default, only admins can manage messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (also known as transport rules). But admins can use _quarantine policies_ to define what users are allowed to do to quarantined messages based on why the message was quarantined (for supported features). For more information, see [Quarantine policies](quarantine-policies.md).
 
-Admins in organizations with Microsoft Defender for Office 365 can also manage files that were quarantined by quarantined by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).
+Admins in organizations with Microsoft Defender for Office 365 can also manage files that were quarantined by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md).
 
 You view and manage quarantined messages in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
 ## What do you need to know before you begin?
 
-- To open the Microsoft 365 Defender portal, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>. To open the **Quarantine** page directly, use <https://security.microsoft.com/quarantine>.
+- To open the Microsoft 365 Defender portal, go to <https://security.microsoft.com>. To go directly to the **Quarantine** page, use <https://security.microsoft.com/quarantine>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions in **Exchange Online** before you can do the procedures in this article:
-  - To take action on quarantined messages for all users, you need to be a member of the **Organization Management**, **Security Administrator**, or **Quarantine Administrator**<sup>\*</sup> role groups.
+  - To take action on quarantined messages for all users, you need to be a member of the **Organization Management**, **Security Administrator**, or **Quarantine Administrator**<sup>\*</sup> role groups. To submit messages to Microsoft, you need to be a member of the **Security Administrator** role group.
   - For read-only access to quarantined messages for all users, you need to be a member of the **Global Reader** or **Security Reader** role groups.
 
   For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
@@ -60,13 +59,14 @@ You view and manage quarantined messages in the Microsoft 365 Defender portal or
   - The **View-Only Organization Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) also gives read-only access to the feature.
   - <sup>\*</sup> Members of the **Quarantine Administrator** role group in **Email & collaboration** roles in the [Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal) also need to be members of the **Hygiene Management** role group in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) to do quarantine procedures in Exchange Online PowerShell.
 
-- Quarantined messages are retained for a default period of time based on why they were quarantined. After the retention period expires, the messages are automatically deleted and are not recoverable. For more information, see [Quarantined email messages in EOP and Defender for Offie 365](quarantine-email-messages.md).
+- Quarantined messages are retained for a default period of time based on why they were quarantined. After the retention period expires, the messages are automatically deleted and are not recoverable. For more information, see [Quarantined email messages in EOP and Defender for Office 365](quarantine-email-messages.md).
 
 ## Use the Microsoft 365 Defender portal to manage quarantined email messages
 
 ### View quarantined email
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Review** \> **Quarantine**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine**. To go directly to the **Quarantine** page, use <https://security.microsoft.com/quarantine>.
+
 2. On the **Quarantine** page, verify that the **Email** tab is selected.
 
 3. You can sort the results by clicking on an available column header. Click **Customize columns**  to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
@@ -171,7 +171,7 @@ After you select a quarantined message from the list, the following actions are 
   - Choose one of the following options:
     - **Release to all recipients**
     - **Release to specific recipients**: Select the recipients in the **Recipients** box that appears
-  - **Send a copy of this message to other recipients**: Select this option an enter the recipient email addresses in the **Recipients** box that appears.
+  - **Send a copy of this message to other recipients**: Select this option and enter the recipient email addresses in the **Recipients** box that appears.
 
     > [!NOTE]
     > To send a copy of the message to other recipients, you must also release the message at least one of the original recipients (select **Release to all recipients** or **Release to specific recipients**).
@@ -188,6 +188,7 @@ After you select a quarantined message from the list, the following actions are 
 
   - You can't release a message to the same recipient more than once.
   - Only recipients who haven't received the message will appear in the list of potential recipients.
+  - Only members of the **Security Administrators** role group can see and use the **Submit the message to Microsoft to improve detection (false positive)** and **Allow messages like this** options. 
 
 - ![Share email icon.](../../media/m365-cc-sc-share-email-icon.png) **Share email**: In the flyout that appears, add one or more recipients to receive a copy of the message. When you're finished, click **Share**.
 
@@ -276,7 +277,8 @@ In organizations with Defender for Office 365, admins can manage files that were
 
 ### View quarantined files
 
-1. In the<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Email & collaboration** \> **Review** \> **Quarantine**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Quarantine**. To go directly to the **Quarantine** page, use <https://security.microsoft.com/quarantine>.
+
 2. On the **Quarantine** page, select the **Files** tab (**Email** is the default tab).
 
 3. You can sort the results by clicking on an available column header. Click **Customize columns** to change the columns that are shown. The default columns are marked with an asterisk (<sup>\*</sup>):

@@ -42,12 +42,6 @@ Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data 
 
 ::: moniker-end
 
-::: moniker range="o365-germany"
-
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Reports** \> **Usage** page.
-
-::: moniker-end
-
 ::: moniker range="o365-21vianet"
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Reports** \> **Usage** page.
@@ -76,7 +70,7 @@ People who have the following permissions:
 
 - Reports reader
 
-- Teams Service Administrator
+- Teams Administrator
 
 - Teams Communications Administrator
     
@@ -112,6 +106,7 @@ Depending on your subscription, here are the available reports in all environmen
 |[Skype for Business Online conference participant activity](/SkypeForBusiness/skype-for-business-online-reporting/conference-participant-activity-report)|Yes|Yes|No[^1]|No[^1]|Yes|
 |[Skype for Business Online peer-to-peer activity](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|Yes|Yes|No[^1]|No[^1]|Yes|
 |[Viva Learning activity](viva-learning-activity.md)|Yes|N/A|N/A|N/A|N/A|
+|[Viva Insights activity](viva-insights-activity.md)|Yes|Yes|N/A|N/A|N/A|
 
 [^1]: The report is in plan to be released in the future. The <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 Roadmap</a> will be updated before the release.
 [^2]: The service is not available in the environment so no plan to release the report.

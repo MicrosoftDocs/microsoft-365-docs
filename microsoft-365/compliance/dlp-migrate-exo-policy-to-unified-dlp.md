@@ -83,7 +83,7 @@ The account that you use to run the migration wizard must have access to both th
 |---------|---------|---------|
 |Is the policy still needed?    |If not, delete or deactivate it |don't migrate|
 |Does it overlap with any other Exchange or Compliance center DLP policies?     |If yes, can you consolidate the overlapping policies?         |- If it overlaps with another Exchange policy, manually create the consolidated DLP policy in the Exchange Admin center, then use the migration wizard. </br> - If it overlaps with an existing Compliance Center policy, you can modify the existing Compliance center policy to match, don't migrate the Exchange version|
-|Is the Exchange DLP policy tightly scoped and does it have well-defined conditions, actions, inclusions, and exclusions?     |If yes, this is a good candidate to migrate with the wizard, make note of the policy so that you remember to come back to delete it later         | migrate with the wizard|
+|Is the Exchange DLP policy tightly scoped and does it have well-defined conditions, actions, inclusions, and exclusions?     |If yes, it is a good candidate to migrate with the wizard, make note of the policy so that you remember to come back to delete it later         | migrate with the wizard|
 
 ## Migration
 
@@ -92,10 +92,10 @@ After you have evaluated all your Exchange and Compliance center DLP policies fo
 1. Open the [Microsoft 365 Compliance center](https://compliance.microsoft.com/datalossprevention?viewid=policies) DLP console.
 2. If there are Exchange DLP policies that can be migrated, a banner will appear at the top of the page letting you know.
 3. Choose **Migrate policies** in the banner to open the migration wizard. All the Exchange DLP policies are listed. Previously migrated policies cannot be selected.
-4. Select the policies you want to migrate. You can migrate them individually, or in groups using a phased approach or all at once . Select **Next**.
+4. Select the policies you want to migrate. You can migrate them individually, or in groups using a phased approach or all at once. Select **Next**.
 5. Review the flyout pane for any warnings or messages. Resolve any issues before proceeding.
 6. Select the mode you want the new Compliance center policy created in, **Active**, **Test**, or **Disabled**.  The default is **Test**. Select **Next**.
-7. If desired, you can create additional policies that are based on the Exchange DLP policies for other unified DLP locations. This will result in one new unified DLP policy for the migrated Exchange policy and one new unified DLP policy for any additional locations that you pick here.
+7. If desired, you can create more policies that are based on the Exchange DLP policies for other unified DLP locations. This will result in one new unified DLP policy for the migrated Exchange policy and one new unified DLP policy for any other locations that you pick here.
 
 > [!IMPORTANT]
 > Any Exchange DLP policy conditions and actions that are not supported by other DLP locations, like Devices, SharePoint, OneDrive, On-premises, MCAS or Teams chat and channel messages will be dropped from the additional policy. Also, there is pre-work that must be done for the other locations. See:
@@ -108,9 +108,20 @@ After you have evaluated all your Exchange and Compliance center DLP policies fo
 >- [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)
  
 8. Review the migration wizard session settings. Select **Next**.
-9. Review the migration report. Pay attention to any failures involving Exchange mailflow rules. You can fix them and re-migrate the associated policies.
+9. Review the migration report. Pay attention to any failures involving Exchange mailflow rules. You can fix them and remigrate the associated policies.
 
 The migrated policies will now appear in the list of DLP policies in the Compliance center DLP console. 
+
+## Common errors and mitigation
+|Error message  |Reason  | Mitigation/Recommended steps|
+|---------|---------|---------|
+|A compliance policy with name `<Name of the policy>` already exists in scenario(s) `Dlp`.    |It is likely that this policy migration was done earlier and then reattempted in the same session |Refresh the session to update the list of policies available for migration. All previously migrated policies should be in the `Already migrated` state.|
+|A compliance policy with name `<Name of the policy>` already exists in scenario(s) `Hold`.     |A retention policy with the same name exists in the same tenant.       |- Rename the DLP policy in EAC to a different name. </br> - Retry the migration for the impacted policy. |
+|`DLP-group@contoso.com` can’t be used as a value for the Shared By condition because it’s a distribution group or mail-enabled security group. Use Shared by Member of predicate to detect activities by members of certain groups.     |Transport rules allow groups to be used in the `sender is` condition but unified DLP does not allow it.         | Update the transport rule to remove all group email addresses from the `sender is` condition and add the group to the `sender is a member of` condition if necessary. Retry the migration for the impacted policy|
+|Could not find recipient `DLP-group@contoso.com`. If newly created, retry the operation after sometime. If deleted or expired please reset with valid values and try again.     |It is likely that the group address used in `sender is a member of` or `recipient is a member of` condition is expired or invalid.         | - Remove/replace all the invalid group email addresses in the transport rule in Exchange admin center. </br> - Retry the migration for the impacted policy.|
+|The value specified in `FromMemberOf` predicate must be mail enabled security group.     |Transport rules allow individual users to be used in the `sender is a member of` condition but unified DLP does not allow it.         | - Update the transport rule to remove all individual user email addresses from the `sender is a member of` condition and add the users to the `sender is` condition if necessary. </br> - Retry the migration for the impacted policy.|
+|The value specified in `SentToMemberOf` predicate must be mail enabled security group.    |Transport rules allow individual users to be used under the `recipient is a member of` condition but unified DLP does not allow it.         | - Update the transport rule to remove all individual user email addresses from the `recipient is a member of` condition and add the users to the `recipient is` condition if necessary. </br> - Retry the migration for the impacted policy.|
+|Using the `<Name of condition>` parameter is supported only for Exchange. Either remove this parameter or turn on only Exchange location.         | It is likely that another policy with the same name exists in Compliance center with other locations like SPO/ODB/Teams for which the mentioned condition is not supported. | Rename the DLP policy in Exchange admin center and retry the migration.|
 
 ## Testing and validation <!--PRATEEK AND AAKASH TO PROVIDE A LIST OF SUPPORTED PREDICATES AND KNOWN ISSUES BEFORE PUBLISHING-->
 
@@ -124,12 +135,13 @@ Test and review your policies.
 To ensure that the migrated policies behave as expected, you can export the reports from both admin centers and do a comparison of the policy matches.
 
 1. Connect to [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
-2. Export the [EAC DLP report](/powershell/module/exchange/get-maildetaildlppolicyreport?view=exchange-ps). You can copy this cmdlet and insert the appropriate values:
+2. Export the [EAC DLP report](/powershell/module/exchange/get-maildetaildlppolicyreport). You can copy this cmdlet and insert the appropriate values:
 
 ```powershell
 Get-MailDetailDlpPolicyReport -StartDate <dd/mm/yyyy -EndDate <dd/mm/yyyy> -PageSize 5000 | select Date, MessageId, DlpPolicy, TransportRule -Unique | Export-CSV <"C:\path\filename.csv"> 
 ```
-3. Export the [Unified DLP report](/powershell/module/exchange/get-dlpdetailreport?view=exchange-ps). You can copy this cmdlet and insert the appropriate values:
+
+3. Export the [Unified DLP report](/powershell/module/exchange/get-dlpdetailreport). You can copy this cmdlet and insert the appropriate values:
 
 ```powershell
 Get-DlpDetailReport -StartDate <dd/mm/yyyy> -EndDate <dd/mm/yyyy> -PageSize 5000 | select Date, Location, DlpCompliancePolicy, DlpComplianceRule -Unique | Export-CSV <"C:\path\filename.csv">  

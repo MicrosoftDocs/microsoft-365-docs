@@ -105,6 +105,14 @@ Document understanding models support the following file types:
 - xls
 - xlsx
 
+### Supported languages
+
+Document understanding models support the following languages:
+- English
+- French
+- German
+- Italian
+- Spanish
 
 
 ## See Also

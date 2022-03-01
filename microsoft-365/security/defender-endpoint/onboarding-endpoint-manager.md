@@ -24,9 +24,9 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -39,7 +39,7 @@ In the [Planning](deployment-strategy.md) topic, there were several methods prov
 
 While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them. For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
 
-[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) is a solution platform that unifies several services. It includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) 
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) is a solution platform that unifies several services. It includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)
 
 -based device management.
 
@@ -60,7 +60,7 @@ This onboarding guidance will walk you through the following basic steps that yo
 Here are the links you'll need for the rest of the process:
 
 - [MEM portal](https://aka.ms/memac)
-- [Microsoft Defender for Endpoint](https://securitycenter.windows.com/)
+- [Microsoft 365 Defender](https://security.microsoft.com)
 - [Intune Security baselines](/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
 For more information about Microsoft Endpoint Manager, check out these resources:
@@ -360,10 +360,10 @@ To confirm that the configuration policy has been applied to your test device, f
     > [!div class="mx-imgBorder"]
     > [![Image of Services panel2.](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
 
-3. After the services are running on the device, the device appears in Microsoft Defender Security Center.
+3. After the services are running on the device, the device appears in Microsoft 365 Defender portal.
 
     > [!div class="mx-imgBorder"]
-    > [![Image of Microsoft Defender Security Center.](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
+    > [![Image of Microsoft 365 Defender portal.](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
 
 ### Confirm next-generation protection
 

@@ -17,6 +17,7 @@ audience: ITPro
 ms.collection: 
   - M365-security-compliance
   - m365initiative-m365-defender
+ms.custom: intro-get-started
 ms.topic: conceptual
 ms.technology: m365d
 ---

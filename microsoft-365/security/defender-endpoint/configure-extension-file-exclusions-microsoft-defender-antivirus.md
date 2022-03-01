@@ -13,7 +13,7 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.date: 11/15/2021
+ms.date: 02/27/2022
 ms.collection: M365-security-compliance
 ---
 
@@ -133,7 +133,7 @@ The format for the cmdlets is as follows:
 
 The following table lists cmdlets that you can use in the `<cmdlet>` portion of the PowerShell cmdlet:
 
-<br/>
+<br/><br/>
 
 |Configuration action|PowerShell cmdlet|
 |:---|:---|
@@ -143,7 +143,7 @@ The following table lists cmdlets that you can use in the `<cmdlet>` portion of 
 
 The following table lists values that you can use in the `<exclusion list>` portion of the PowerShell cmdlet:
 
-<br/>
+<br/><br/>
 
 |Exclusion type|PowerShell parameter|
 |---|---|
@@ -162,7 +162,7 @@ Add-MpPreference -ExclusionExtension ".test"
 > [!TIP]
 > For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender Antivirus cmdlets](/powershell/module/defender/).
 
-### Use Windows Management Instruction (WMI) to configure file name, folder, or file extension exclusions
+### Use Windows Management Instrumentation (WMI) to configure file name, folder, or file extension exclusions
 
 Use the [Set, Add, and Remove methods of the MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) class for the following properties:
 
@@ -192,13 +192,14 @@ You can use the asterisk `*`, question mark `?`, or environment variables (such 
 > There are key limitations and usage scenarios for these wildcards:
 >
 > - Environment variable usage is limited to machine variables and those applicable to processes running as an NT AUTHORITY\SYSTEM account.
+> - You can only use a maximum of six wildcards per entry.
 > - You cannot use a wildcard in place of a drive letter.
 > - An asterisk `*` in a folder exclusion stands in place for a single folder. Use multiple instances of `\*\` to indicate multiple nested folders with unspecified names.
 > - Currently, Microsoft Endpoint Configuration Manager does not support wildcard characters (such as `*` or `?`).
     
 The following table describes how the wildcards can be used and provides some examples.
 
-<br/>
+<br/><br/>
 
 |Wildcard|Examples|
 |---|---|
@@ -219,7 +220,7 @@ The following table describes how the wildcards can be used and provides some ex
 
 The following table lists and describes the system account environment variables.
 
-<br/>
+<br/><br/>
 
 |This system environment variable...|Redirects to this|
 |---|---|
@@ -311,12 +312,12 @@ To check exclusions with the dedicated [command-line tool mpcmdrun.exe](./comman
 ```console
 Start, CMD (Run as admin)
 cd "%programdata%\microsoft\windows defender\platform"
-cd 4.18.2110-6.0 (Where 4.18.2110-6.0 is this month's Microsoft Defender Antivirus "Platform Update".)
+cd 4.18.2111-5.0 (Where 4.18.2111-5.0 is this month's Microsoft Defender Antivirus "Platform Update".)
 MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> Checking exclusions with MpCmdRun requires Microsoft Defender Antivirus CAMP version 4.18.2110-6.0 (released in November 2021) or later.
+> Checking exclusions with MpCmdRun requires Microsoft Defender Antivirus CAMP version 4.18.2111-5.0 (released in  December 2021) or later.
 
 ### Review the list of exclusions alongside all other Microsoft Defender Antivirus preferences by using PowerShell
 

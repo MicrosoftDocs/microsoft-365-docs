@@ -2,7 +2,6 @@
 title: Find devices by internal IP API
 description: Find devices seen with the requested internal IP in the time range of 15 minutes prior and after a given timestamp
 keywords: apis, graph api, supported apis, get, device, IP, find, find device, by ip, ip
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
