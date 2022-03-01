@@ -20,9 +20,6 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Manage your tenant list
 
-> [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
-
 To help you manage your tenant list in Microsoft 365 Lighthouse, you can apply custom tags to your tenants. These tags can be used to organize your tenants and can also help you filter the existing views and insights available to relevant sets of tenants. You can manage your tags from the Tenants page. Once created and assigned, you can filter the data within the Tenants, Users, Devices, Threat management, and Windows 365 pages based on a tag.
 
 ## Before you begin
@@ -73,7 +70,8 @@ To manage tenant tags, you must:
 
 Tags that are already assigned to the tenant will have a check mark to the right of the tag name. You can also assign a tag to multiple tenants by selecting the checkbox next to each tenant in the list, selecting **Assign Tags**, and then selecting a tag from the list.
 
-**NOTE**: You can create up to 30 unique Tags and assign them to as many tenants as needed.
+> [!NOTE]
+> You can create up to 30 unique Tags and assign them to as many tenants as needed.
 
 ## Delete a tag
 
@@ -99,7 +97,7 @@ Tags that are currently assigned have a check mark to the right of the name. You
 
 ## Next steps
 
-After you’ve created and assigned tags, you can use them to filter your tenants. Go to any of the other pages (Users, Devices, Threat management, or Windows 365) and select one or more tags from the Tenant filter. You can create new tags to support specific views based on each page.
+After you've created and assigned tags, you can use them to filter your tenants. Go to any of the other pages (Users, Devices, Threat management, or Windows 365) and select one or more tags from the Tenant filter. You can create new tags to support specific views based on each page.
 
 ## Related content
 

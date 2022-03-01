@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
+  - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -83,7 +83,7 @@ The option to **Consult a threat expert** is available in several places in the 
   ![Screenshot of MTE-EOD file page action menu option.](images/mte-eod-file.png)
 
 > [!NOTE]
-> If you would like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Technical Account Manager.
+> If you would like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Customer Success Account Manager.
 
 Watch this video for a quick overview of the Microsoft Services Hub.
 

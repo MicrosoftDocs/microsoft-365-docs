@@ -1,10 +1,10 @@
 ---
 title: "Configure a team with security isolation in a dev/test environment"
-author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
-ms.author: josephd
-manager: laurawi
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
@@ -14,7 +14,9 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom: admindeeplinkCOMPLIANCE
+ms.custom: 
+- admindeeplinkCOMPLIANCE
+- admindeeplinkSPO
 description: Configure the security and infrastructure that allows your employees to work remotely from anywhere and at any time.
 ---
 
@@ -172,15 +174,14 @@ It may take some time for the **Company Strategy** label to become available aft
 
 Next, apply your new label to the **Company Strategy** team and update the default sharing link type to reduce the risk of accidentally sharing files and folders to a wider audience than intended.
 
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-1. Under **Sites**, click **Active sites**.
-1. Click the **Company Strategy** site.
-1. On the **Policies** tab, under **Sensitivity**, click **Edit**.
-1. Select the **Company Strategy** label, and then click **Save**.
-1. On the **Policies** tab, under **External sharing**, click **Edit**.
+1. Open the SharePoint admin center, under **Sites**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
+1. Select the **Company Strategy** site.
+1. On the **Policies** tab, under **Sensitivity**, select **Edit**.
+1. Select the **Company Strategy** label, and then select **Save**.
+1. On the **Policies** tab, under **External sharing**, select **Edit**.
 1. Choose **Only people in your organization**.
 1. Under **Default sharing** link type, clear the **Same as organization-level setting** check box, and select **People with existing access**.
-1. Click **Save**.
+1. Select **Save**.
 
 Next, configure owners-only site sharing for the **Company Strategy** team.
 

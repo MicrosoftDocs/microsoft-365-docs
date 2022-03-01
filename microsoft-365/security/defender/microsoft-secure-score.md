@@ -12,8 +12,9 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - M365-security-compliance
-  - Adm_TOC
+- M365-security-compliance
+- m365initiative-m365-defender
+- Adm_TOC
 ms.topic: article
 search.appverid: 
   - MOE150
@@ -37,6 +38,9 @@ Secure Score helps organizations:
 * Report on the current state of the organization's security posture.
 * Improve their security posture by providing discoverability, visibility, guidance, and control.  
 * Compare with benchmarks and establish key performance indicators (KPIs).
+
+Watch this video for a quick overview of Secure score.
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWUPrP]
 
 Organizations gain access to robust visualizations of metrics and trends, integration with other Microsoft products, score comparison with similar organizations, and much more. The score can also reflect when third-party solutions have addressed recommended actions.
 

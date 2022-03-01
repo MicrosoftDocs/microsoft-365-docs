@@ -72,17 +72,17 @@ To get their work done, people in your organization collaborate with others both
 
 [Sensitivity labels](sensitivity-labels.md) let you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn't hindered. Use sensitivity labels to enforce encryption and usage restrictions apply visual markings, and protect information across platforms and devices, on-premises and in the cloud.
 
-For step-by-step guidance to configure and use sensitivity labels, see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md). For sensitivity label licensing information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
+For step-by-step guidance to configure and use sensitivity labels, see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md).
 
-## Task 6: Configure a retention policy
+## Task 6: Configure retention policies
 
 A [retention policy](retention.md) lets you proactively decide whether to retain content, delete content, or both—retain and then delete the content at the end of a specified retention period. These actions might be needed to comply with industry regulations and internal policies, as well as reduce your risk in the event of litigation or a security breach.
 
 When content is subject to a retention policy, people can continue to edit and work with the content as if nothing's changed. The content is retained in place, in its original location. But if someone edits or deletes content that's subject to the retention policy, a copy of the original content is saved to a secure location where it's retained while the retention policy for that content is in effect.
 
-You can quickly put a retention policy in place for multiple locations in your Microsoft 365 environment such as Exchange mail, SharePoint sites, OneDrive accounts, and Microsoft 365 groups. There are no limits to the number of mailboxes or sites this policy can automatically include. But if you need to get more selective, you can do so by configuring a retention policy for specific locations and include or exclude sites or users.
+You can quickly put retention policies in place for multiple services in your Microsoft 365 environment that include Teams and Yammer messages, Exchange mail, SharePoint sites, and OneDrive accounts. There are no limits to the number of users, mailboxes or sites that a retention policy can automatically include. But if you need to get more selective, you can do so by configuring either an adaptive scope that's query-based to dynamically target specific instances, or a static scope that specifies specific instances to always include or always exclude.
 
-For step-by-step guidance to configure a retention policy, see [Create and configure retention policies](create-retention-policies.md). If you're new to configuring retention in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md).
+For step-by-step guidance to configure retention policies, see [Create and configure retention policies](create-retention-policies.md). Because retention policies form the cornerstone of an information governance strategy for Microsoft 365, see [Get started with information governance](get-started-with-information-governance.md).
 
 ## Task 7: Configure sensitive information and offensive language policies
 
@@ -99,7 +99,7 @@ For step-by-step guidance to plan and configure communication compliance, see [P
 Sensitivity labels, sensitive information types, retention labels and policies and trainable classifiers can be used to classify and label sensitive items across Exchange, SharePoint, and OneDrive as you've seen in the previous tasks. The last step in your quick task journey is to see which items have been labeled and what actions your users are taking on those sensitive items. [content explorer](data-classification-content-explorer.md) and [activity explorer](data-classification-activity-explorer.md) provide this visibility.
 
 ### Content explorer
- Content explorer allows you to view, in their native format, all the items that have been classified as a sensitive information type or belonging to a certain classification by a trainable classifier, as well as all items that have sensitivity or retention label applied.
+Content explorer allows you to view, in their native format, all the items that have been classified as a sensitive information type or belonging to a certain classification by a trainable classifier, as well as all items that have sensitivity or retention label applied.
 
 For step-by-step guidance to using content explorer, see [Know your data - data classification overview](data-classification-overview.md), and [Get started with content explorer](data-classification-content-explorer.md).
 
@@ -128,15 +128,11 @@ Now that you’ve configured the basics for compliance management for your organ
 
 ### Configure retention labels
 
-While retention policies apply at the container level to locations such as SharePoint sites and Exchange mailboxes, [retention labels](retention.md#retention-labels) allow for more specific targeting for your retention and deletion policies. For example, at the document or email message level that end users can apply manually in addition to automatic application by administrators. You can also apply a retention label to a document library, folder, or document set in SharePoint, so that all documents that are stored in that location inherit the default retention label.
+Whereas retention policies automatically apply to all items at the container level (such as SharePoint sites, user mailboxes, and so on), [retention labels](retention.md#retention-labels) apply to individual items, such as a SharePoint document or an email message. You can apply these labels manually or automatically.
 
-Additionally, retention labels support [records management](records-management.md) to mark content as a record. When this happens, the label places additional restrictions on the content that might be needed to help your organization comply with regulatory requirements.
+Retention labels can be used as part of your governance information strategy to retain what you need and delete what you don't. Use these labels when you need exceptions to your retention policies when specific documents or emails need different retention or deletion settings. For example, your SharePoint policy retains all documents for three years, but specific business documents must be retained for five years. For more information, see [Create retention labels for exceptions to your retention policies](create-retention-labels-information-governance.md).
 
-For step-by-step guidance to create and publish retention labels, see the following guidance:
-- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
-- [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
-
-To get started with records management, see [Get started with records management](get-started-with-records-management.md).
+However, retention labels, when used with [records management](records-management.md), provide many more management options to support the full lifecycle of documents and emails. This level of data management is well-suited to high-value items for business, legal, or regulatory record-keeping requirements. For more information, see [Get started with records management](get-started-with-records-management.md).
 
 ### Identify and define sensitive information types
 
