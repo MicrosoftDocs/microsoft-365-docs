@@ -64,6 +64,11 @@ For full instructions:
 
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md) (not supported for regulatory records)
 
+## Tenant setting for editing record properties
+
+If you'll use retention labels to declare items in SharePoint and OneDrive as records (rather than regulatory records), consider whether you need to change the default tenant setting that allows users to edit the properties for a locked record when files are larger than 0 bytes.
+
+To change this default, go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) > **Records management** > **Records management settings** > **Retention labels** > **Allow editing of record properties** and then turn off the setting **Allow users to edit record properties**.
 
 ## Applying the configured retention label to content
 
@@ -87,9 +92,3 @@ For Exchange items:
 - From **Exchange mailbox activities**, select **Labeled message as a record**. This audit event is for retention labels that mark items as records or regulatory records.
 
 For more information about searching for these events, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
-
-## Next steps
-
-If you'll use retention labels to declare items in SharePoint and OneDrive as records (rather than regularly records), consider whether you need to change the default tenant setting that allows users to edit the properties for a locked record. 
-
-To change this default, go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) > **Records management** > **Records management settings** > **Retention labels** > **Allow editing of record properties** and then turn off the setting **Allow users to edit record properties**.
