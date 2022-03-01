@@ -61,7 +61,7 @@ sections:
       - question: Why do I see data for some customer tenants but not others?
         answer: |
 
-          For customer tenant data to show up in Lighthouse, partners must establish Delegated Admin Privileges (DAP) or Granular Delegated Admin Privileges (GDAP) with customers through Partner Center. For more information, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Microsoft 365 Business Premium or Microsoft 365 E3 subscription and fewer than 1000 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and [Microsoft 365 Lighthouse Tenants page overview](m365-lighthouse-tenants-page-overview.md).
+          For customer tenant data to show up in Lighthouse, MSPs must establish Delegated Admin Privileges (DAP) or Granular Delegated Admin Privileges (GDAP) with customers through Partner Center. For more information, see [Request a reseller relationship with a customer in Partner Center](/partner-center/request-a-relationship-with-a-customer). Tenants also must have at least one Microsoft 365 Business Premium or Microsoft 365 E3 subscription and fewer than 1000 licensed users in their tenant. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) and [Microsoft 365 Lighthouse Tenants page overview](m365-lighthouse-tenants-page-overview.md).
           
       - question: What if I don't want to see certain tenants in Microsoft 365 Lighthouse?
         answer: |
