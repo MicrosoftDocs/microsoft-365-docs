@@ -2,8 +2,8 @@
 title: "Use your promo code to reduce price"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
@@ -14,9 +14,9 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
+- commerce_purchase
 - AdminSurgePortfolio
 - okr_SMB
-- commerce_purchase
 search.appverid: MET150 S
 description: "Learn how to apply a promotional code to your Microsoft 365 subscription to reduce price, and how to troubleshoot promo code in case of an error."
 ms.date: 03/17/2021
