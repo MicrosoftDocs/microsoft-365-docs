@@ -52,6 +52,9 @@ You'll need to complete the following general steps to successfully onboard serv
 
 **Windows Server 2012 R2 and Windows Server 2016 (Preview)**
 
+>[!IMPORTANT]
+> You'll need to turn on the preview features in the Endpoints section of Microsoft 365 Defender to use this functionality. Navigate to [Microsoft 365 Defender > Settings > Endpoints > Advanced features](https://security.microsoft.com/preferences2/integration) and turn on Preview features.
+
 - Download installation and onboarding packages
 - Apply the installation package
 - Follow the onboarding steps for the corresponding tool
