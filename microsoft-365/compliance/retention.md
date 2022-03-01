@@ -262,6 +262,8 @@ For retention labels that don't mark the content as a record or regulatory recor
 
 You don't have to choose between using retention policies only or retention labels only. Both methods can be used together and in fact, complementary each other for a more comprehensive solution.
 
+The following examples are just some of the ways in which you can combine retention policies and retention labels for the same location.
+
 **Example for OneDrive exception so users can override automatic deletion:**
 
 By default, content in users' OneDrive accounts is automatically deleted after five years but users must have the option to override this for specific documents.
@@ -270,7 +272,7 @@ By default, content in users' OneDrive accounts is automatically deleted after f
 
 2. You create and configure a retention label that keeps content forever and add this to a label policy that you publish to all OneDrive accounts. You explain to users how to manually apply this label to specific documents that should be excluded from automatic deletion if not modified after five years.
 
-**Example for SharePoint exceptions to retain some items longer**
+**Example for SharePoint library exceptions to retain items for longer**
 
 By default, SharePoint items are automatically retained and then deleted after five years, but documents in specific libraries must be retained for ten years.
 
@@ -278,7 +280,7 @@ By default, SharePoint items are automatically retained and then deleted after f
 
 2. You create and configure a retention label that automatically retains content for ten years. You publish this label to SharePoint site admins, so that they can apply it as a default label to be inherited by all items in specific document libraries.
 
-**Example for Exchange exceptions to delete specific emails sooner**
+**Example for specific emails that must be deleted in a shorter time period**
 
 By default, emails are automatically deleted after ten years, but emails related to a specific project that has a prerelease code name must be automatically deleted after one year.
 
