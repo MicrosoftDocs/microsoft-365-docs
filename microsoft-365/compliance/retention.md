@@ -264,7 +264,7 @@ You don't have to choose between using retention policies only or retention labe
 
 The following examples are just some of the ways in which you can combine retention policies and retention labels for the same location.
 
-For more information about how retention policies and retention labels work together and how to determine their combined outcome, see the next section that explains the [principles of retention and what takes precedence](#the-principles-of-retention-or-what-takes-precedence).
+For more information about how retention policies and retention labels work together and how to determine their combined outcome, see the section on this page that explains the [principles of retention and what takes precedence](#the-principles-of-retention-or-what-takes-precedence).
 
 **Example for OneDrive exception so users can override automatic deletion:**
 
