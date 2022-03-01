@@ -40,7 +40,7 @@ Microsoft Defender for Business is available as a standalone offering or as part
 - [Compare Microsoft Defender for Business (standalone) to Microsoft 365 Business Premium](#compare-security-features-in-microsoft-defender-for-business-to-microsoft-365-business-premium)
 - [Compare Defender for Business (standalone) to Microsoft Defender for Endpoint enterprise offerings](#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2)
 
-**You don't have to have a Microsoft 365 subscription to buy and use Microsoft Defender for Business.** Microsoft Defender for Business is a standalone security solution for small and medium-sized businesses. If you do already have another subscription (such as Microsoft 365 Business Basic or Standard), consider adding Microsoft Defender for Business to get more threat protection capabilities. 
+**You don't have to have a Microsoft 365 subscription to buy and use Microsoft Defender for Business.** Microsoft Defender for Business is included in Microsoft 365 Business Premium, and it is available as a standalone security solution for small and medium-sized businesses. If you already have Microsoft 365 Business Basic or Standard, consider adding either upgrading to Microsoft 365 Business Premium or adding Microsoft Defender for Business to get more threat protection capabilities. 
 
 ## Compare security features in Microsoft Defender for Business to Microsoft 365 Business Premium
 
