@@ -2,8 +2,8 @@
 title: "Change your organization's address, technical contact, and more"
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
@@ -15,8 +15,8 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: 
+- commerce_billing
 - AdminSurgePortfolio
-- commcerce_billing
 - AdminTemplateSet
 - admindeeplinkMAC
 search.appverid: MET150
