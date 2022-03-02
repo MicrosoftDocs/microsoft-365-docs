@@ -20,7 +20,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to cancel your Dynamics 365, Intune, Power Platform, and Microsoft 365 for business trial or paid subscriptions in the Microsoft 365 admin center."
-ms.date: 01/20/2022
+ms.date: 03/01/2022
 ---
 
 # Cancel your subscription
