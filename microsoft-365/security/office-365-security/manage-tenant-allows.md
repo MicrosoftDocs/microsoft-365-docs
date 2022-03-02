@@ -10,7 +10,7 @@ audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
 search.appverid: 
-  - MET150
+  - MET150manage-tenant-allows.md 
 ms.collection: 
   - M365-security-compliance
 description: Admins can learn how to configure allows in the Tenant Allow/Block List in the Security portal.
@@ -71,6 +71,10 @@ Allow URLs on the **Submissions** page in Microsoft 365 Defender.
 
 7. When you're finished, click the **Submit** button.
 
+> [!div class="mx-imgBorder"]
+> ![Submit URL for analysis.](../../media/submit-url-for-analysis.png)
+
+
 ## Add File allows using the Submissions portal
 
 Allow Files  on the **Submissions** page in Microsoft 365 Defender.
@@ -88,6 +92,10 @@ In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to 
 6. From the **Remove after** drop-down list, specify for how long you want the allow option to work.
 
 7. When you're finished, click the **Submit** button.
+
+> [!div class="mx-imgBorder"]
+> ![Submit email for analysis.](../../media/submit-email-for-analysis.png)
+
 
 ## Create spoofed sender allow entries using Microsoft 365 Defender
 
