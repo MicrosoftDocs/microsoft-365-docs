@@ -1,6 +1,6 @@
 ---
 title: "Microsoft 365 Lighthouse Windows 365 (Cloud PCs) page overview"
-f1.keywords: NOCSH
+f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
