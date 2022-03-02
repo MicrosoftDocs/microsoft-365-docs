@@ -10,7 +10,8 @@ ms.prod: microsoft-365-enterprise
 ms.collection: 
 - enabler-strategic
 - m365initiative-syntex
-ms.custom: admindeeplinkMAC
+ms.custom: 
+- admindeeplinkMAC
 search.appverid: MET150
 ms.localizationpriority: high
 description: "Set up SharePoint Syntex"

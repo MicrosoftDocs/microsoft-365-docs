@@ -184,6 +184,8 @@
               href: microsoft-365-mailbox-utilization-service-alerts.md
             - name: Service alerts for MRS source delays
               href: microsoft-365-mrs-source-delays-service-alerts.md
+            - name: Service alerts for queued messages for external recipients
+              href: microsoft-365-external-recipient-service-alerts.md
         - name: Setup guides
           href: setup-guides-for-microsoft-365.md
     - name: Multiple tenants
