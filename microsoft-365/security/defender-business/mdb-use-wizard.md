@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: article
-ms.date: 02/21/2022
+ms.date: 03/02/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -62,7 +62,15 @@ The wizard is designed to help you set up and configure Defender for Business qu
 
 If you choose not to use the wizard, or if the wizard is closed before your setup process is complete, you can still complete your setup and configuration process on your own. 
 
-See [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md) to walk through the steps.
+See [Set up and configure Microsoft Defender for Business](mdb-setup-configuration.md) to walk through these steps:
+
+1. [Assign roles and permissions](mdb-roles-permissions.md) so your security team can access and use the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
+
+2. [Set up email notifications for your security team](mdb-email-notifications.md) so they're in the loop about new alerts or vulnerabilities.
+
+3. [Onboard devices](mdb-onboard-devices.md) so they're protected by Defender for Business.
+
+4. [Manage your security policies](mdb-configure-security-settings.md), which include next-generation protection, firewall protection, and web content filtering.
 
 ## Next steps
 
