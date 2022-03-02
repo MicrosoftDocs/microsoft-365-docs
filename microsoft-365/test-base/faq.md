@@ -128,7 +128,7 @@ In addition to pre-release security updates testing, we support pre-release feat
 
 **Q: Is there a cost associated with the service?**
 
-**A:** The Test Base service will be free to users until General Availability (GA). At that time, we will announce a cost structure that will be in effect for all customers. 
+**A:** Effective 1 March 2022, you’ll be provided with 100 free hours (valued at $800) expiring in 6 months under your subscription for your validation needs. After the free hours get consumed (or expired before used), you’ll automatically be metered at $8 per hour against your usage.   
 
 **Q: How can I provide feedback about Test Base?**
 
