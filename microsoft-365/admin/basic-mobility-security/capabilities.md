@@ -33,7 +33,7 @@ You can use Basic Mobility and Security to secure and manage the following devic
 
 - iOS
 - Android (including Samsung Knox)<sup>1</sup>
-- Windows<sup>2</sup><sup>3</sup>
+- Windows<sup>2, 3</sup>
 
 <sup>1</sup>After June 2020, Android versions later than 9 can't manage password settings except on Samsung Knox devices.
 
