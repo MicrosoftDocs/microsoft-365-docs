@@ -94,7 +94,7 @@ In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to 
 7. When you're finished, click the **Submit** button.
 
 > [!div class="mx-imgBorder"]
-> ![Submit email for analysis.](../../submit-email-for-analysis.png)
+> ![Submit email for analysis.](../../media/submit-email-for-analysis.png)
 
 
 ## Create spoofed sender allow entries using Microsoft 365 Defender
