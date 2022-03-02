@@ -53,7 +53,7 @@ To set up user devices:
 
 1. Each user [sets up their mobile devices](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json).
 2. For unmanaged devices, users set up their [PCs and Macs](m365bp-protect-pcs-macs.md).
-For key staff, we recommend that you use [managed devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) for even better protection. For all devices, you'll want to set up [multifactor authentication](m365-campaigns-multifactor-authentication.md).
+For key staff, we recommend that you use [managed devices](../business/set-up-windows-devices.md) for even better protection. For all devices, you'll want to set up [multifactor authentication](m365bp-multifactor-authentication.md).
 3. All users should learn how to protect themselves and your campaign by learning about [phishing and other attacks](m365-campaigns-phishing-and-attacks.md). This [infographic](m365-campaigns-protect-campaign-infographic.md) can also help your users understand how to help protect your campaign from online threats.
 
 ## Contact support
