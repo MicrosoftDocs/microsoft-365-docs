@@ -40,23 +40,23 @@ The devices status report provides high-level information about the devices in y
 In the Microsoft 365 Security dashboard navigation panel, select **Reports**, and then open **Device health and compliance**.
 The Device health and compliance dashboard is structured in two tabs:
 
-- The **Sensor health & OS** tab provides general operating system information, divided into three cards that display the following device attributes:
+- The [**Sensor health tab**](#sensor-health-tab) tab provides general operating system information, divided into three cards that display the following device attributes:
 
   - [Sensor health](#sensor-health)
-  - [OS systems and platforms](#os-systems-and-platforms)
-  - [Windows versions](#windows-10-versions)
+  - [Operating systems and platforms](#os-systems-and-platforms)
+  - [Windows 10 versions](#windows-10-versions)
 
 - The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has five cards that report on aspects of Microsoft Defender Antivirus:
 
-  - [Antivirus mode (active/passive)](#antivirus-mode-activepassive)
+  - [Antivirus mode](#antivirus-mode)
   - [Antivirus engine version](#antivirus-engine-version)
   - [Antivirus security intelligence version](#antivirus-security-intelligence-version)
   - [Antivirus platform version](#antivirus-platform-version)
   - [Recent antivirus scan results](#recent-antivirus-scan-results)
 
-### Sensor health & OS tab
+### Sensor health tab
 
-Each of the three cards on the **Sensor health & OS** tab have two reporting sections, _Current state_ and _device trends_, presented as graphs:
+Each of the three cards on the **Sensor health** tab have two reporting sections, _Current state_ and _device trends_, presented as graphs:
 
 #### Current state graph
 
@@ -65,7 +65,7 @@ In each card, the Current state (referred to in some documentation as _Device su
 #### Device trends graph
 
 The lower graph on each of the three cards is not named, but is commonly known as _device trends_. The device trends graph depicts the collection of devices across your organization, throughout the time span indicated directly above the graph.
-By default, the device trends graph displays device information from the 30-day period, ending in the latest full day. To gain a better perspective about trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period shown. To adjust the time period, open the filter and select a start and end day.
+By default, the device trends graph displays device information from the 30-day period, ending in the latest full day. To gain a better perspective about trends occurring in your organization, you can fine-tune the reporting period by adjusting the time period shown. To adjust the time period, open the filter and select a start day and end day.
 
 #### Filtering data
 
@@ -86,12 +86,12 @@ Devices that are either experiencing impaired communications, or those from whic
 #### OS systems and platforms
 
 This card shows the distribution of operating systems and platforms that exist within your organization.
-_OS systems and platforms_ can give useful insights into whether devices in your organization are running current or outdated operating systems. When new operating systems are introduced, security enhancements are frequently included that improve your organizations posture against security threats.
+_OS systems and platforms_ can give useful insights into whether devices in your organization are running current or outdated operating systems. When new operating systems are introduced, security enhancements are frequently included that improve your organization's posture against security threats.
 
 For example, Secure Boot, introduced in Windows 8, practically eliminated the threat from some of the most harmful types of malware. Improvements in Windows 10 provide PC manufacturers the option to prevent users from disabling the Secure Boot feature, preventing almost any chance of malicious rootkits or other low-level malware from infecting the boot process.
 Ideally, the “Current state” graph shows that the number of operating systems is weighted in favor of more current OS over older versions, or the trends graph indicates that new systems are being adopted and/or older systems are being updated or replaced.
 
-#### Windows versions
+#### Windows 10 versions
 
 The card shows the distribution of Windows devices and their versions in your organization.
 In the same way that an upgrade from Windows 8 to Windows 10 improves security in your organization, changing from early releases of Windows to more current versions improves your posture against possible threats.
@@ -130,7 +130,7 @@ To help ensure your antimalware solution detects the latest threats, get updates
 
 For more details on the current versions and how to update the different Microsoft Defender Antivirus components, visit [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md).
 
-#### Antivirus mode (active/passive)
+#### Antivirus mode
 
 Reports on how many devices in your organization – on the date indicated on the card – are in any of the following modes:
 
@@ -138,7 +138,7 @@ Reports on how many devices in your organization – on the date indicated on th
 |---|---|
 | 0 | Active |
 | 1 | Passive |
-| 2 | Disabled ( uninstalled or disabled or SideBySidePassive  – aka Low Periodic Scan) |
+| 2 | Disabled ( uninstalled, disabled, or SideBySidePassive {also know as Low Periodic Scan}) |
 | 3 | Others (Not running , Unknown and "") |
 | 4 | EDRBlocked |
 | 5 | PassiveAudit |
@@ -154,18 +154,18 @@ Microsoft continually updates Microsoft Defender security intelligence to addres
 
 #### Antivirus engine version
 
-Shows the real-time results of the most current Microsoft Defender Antivirus engine versions installed across Windows Devices, Mac devices, and Linux devices in your organization.
-Microsoft Defender Antivirus engine is updated monthly.
+Shows the real-time results of the most current Microsoft Defender Antivirus engine versions installed across Windows Devices, Mac devices, and Linux devices in your organization. Microsoft Defender Antivirus engine is updated monthly.
+For more details on the current versions and how to update the different Microsoft Defender Antivirus components, see [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md)
 
 #### Antivirus platform version
 
-Shows the real-time results of the most current Microsoft Defender Antivirus platform versions installed across versions of Windows, Mac, and Linux devices in your organization.
-Microsoft Defender Antivirus platform is updated monthly.
+Shows the real-time results of the most current Microsoft Defender Antivirus platform versions installed across versions of Windows, Mac, and Linux devices in your organization. Microsoft Defender Antivirus platform is updated monthly.
+For more details on the current versions and how to update the different Microsoft Defender Antivirus components, see [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md)
 
 #### Recent antivirus scan results
 
 This card has two bar graphs showing all-up results for quick scans and full scans. In both graphs, the first bar indicates the completion rate for scans, and indicate **Completed**, **Canceled**, or **Failed**. The second bar in each section provides the error codes for failed scans.
-By scanning the **Mode** and **Recent scan results** columns, you can quickly identify devices that are not in active antivirus scan mode, and devices that have failed or cancelled recent antivirus scans. You can also quickly identify whether you have outdated platform versions. You can return to the report with this information and gather additional details and security recommendations.
+By scanning the **Mode** and **Recent scan results** columns, you can quickly identify devices that are not in active antivirus scan mode, and devices that have failed or cancelled recent antivirus scans. You can return to the report with this information and gather additional details and security recommendations.
 
 For more details on the current Microsoft Defender Antivirus versions and how to update the different Microsoft Defender Antivirus components, visit [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).
 
