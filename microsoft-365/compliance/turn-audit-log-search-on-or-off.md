@@ -50,6 +50,9 @@ Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
 
 A value of `True` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that auditing is turned on. A value of `False` indicates that auditing is not turned on.
 
+> [!NOTE]
+> Be sure to run the previous command in Exchange Online PowerShell. You can't use Security & Compliance PowerShell to run this command.
+
 ## Turn on auditing
 
 If auditing is not turned on for your organization, you can turn it on in the Microsoft 365 compliance center or by using Exchange Online PowerShell. It may take several hours after you turn on auditing before you can return results when you search the audit log.

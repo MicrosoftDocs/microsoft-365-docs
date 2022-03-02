@@ -1,11 +1,11 @@
 ---
-title: "Setup overview for Microsoft 365 Business Premium"
+title: "Setup overview for Microsoft 365 for Campaigns"
 f1.keywords:
 - NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.date: 9/20/2018
+ms.date: 03/02/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -27,7 +27,7 @@ ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: "Setup overview for Microsoft 365 Business Premium for campaigns or other businesses"
 ---
 
-# Set up Microsoft 365 Business Premium
+# Set up Microsoft 365 for Campaigns
 
 This article describes the process of setting up Microsoft 365. Anybody with Microsoft 365 Business Premium can use this guidance to step up security.
 
@@ -41,19 +41,19 @@ For campaigns that qualify for special pricing, get started by [requesting an in
 
 For all other organizations, after you've [signed up for Microsoft 365 Business Premium](../admin/admin-overview/sign-up-for-office-365.md)), complete setup by [running the setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure the core settings.
 
-For all organizations, bump up security protection by: [protecting admin accounts](m365-campaigns-protect-admin-accounts.md), [protecting access to mail and data](m365-campaigns-conditional-access.md), and [increasing threat protection](m365-campaigns-increase-protection.md).
+For all organizations, bump up security protection by: [protecting admin accounts](m365bp-protect-admin-accounts.md), [protecting access to mail and data](m365bp-conditional-access.md), and [increasing threat protection](m365bp-increase-protection.md).
 
 ## Everyone: Set up your devices
 
 Users will need to take a few minutes to set up devices to work with this environment. For your key users (those who are the highest value targets for hackers), you can set up and pre-configure new devices. This helps them to get started when they sign in with their Microsoft 365 credentials.
 
-![User device setup process.](../media/m365-democracy-user-device-setup.png)
+:::image type="content" source="../media/m365-democracy-user-device-setup.png" alt-text="User device setup process.":::
   
 To set up user devices:
 
 1. Each user [sets up their mobile devices](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json).
-2. For unmanaged devices, users set up their [PCs and Macs](m365-campaigns-protect-pcs-macs.md).
-For key staff, we recommend that you use [managed devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) for even better protection. For all devices, you'll want to set up [multifactor authentication](m365-campaigns-multifactor-authentication.md).
+2. For unmanaged devices, users set up their [PCs and Macs](m365bp-protect-pcs-macs.md).
+For key staff, we recommend that you use [managed devices](../business/set-up-windows-devices.md) for even better protection. For all devices, you'll want to set up [multifactor authentication](m365bp-multifactor-authentication.md).
 3. All users should learn how to protect themselves and your campaign by learning about [phishing and other attacks](m365-campaigns-phishing-and-attacks.md). This [infographic](m365-campaigns-protect-campaign-infographic.md) can also help your users understand how to help protect your campaign from online threats.
 
 ## Contact support
