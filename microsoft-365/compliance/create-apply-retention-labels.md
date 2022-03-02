@@ -91,13 +91,13 @@ If the labels don't appear after seven days, check the **Status** of the label p
 
 2. Run one of the following commands:
     
-    - For **Teams private channel messages**, **Yammer user messages** and **Yammer community messages**:
+    - For the policy locations **Teams private channel messages**, **Yammer user messages** and **Yammer community messages**:
     
         ```PowerShell
         Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
         ```
     
-    - For all other locations, such as **Exchange email**, **SharePoint sites**, **Teams channel messages** etc:
+    - For all other policy locations, such as **Exchange email**, **SharePoint sites**, **Teams channel messages** etc:
     
         ```PowerShell
         Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution

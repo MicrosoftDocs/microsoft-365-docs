@@ -215,13 +215,13 @@ First, the retention policy needs to be distributed to the locations that you se
 
 2. Run one of the following commands:
     
-    - For **Teams private channel messages**, **Yammer user messages** and **Yammer community messages**:
+    - For the policy locations **Teams private channel messages**, **Yammer user messages** and **Yammer community messages**:
     
         ```PowerShell
         Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
         ```
     
-    - For all other locations, such as **Exchange email**, **SharePoint sites**, **Teams channel messages** etc:
+    - For all other policy locations, such as **Exchange email**, **SharePoint sites**, **Teams channel messages** etc:
     
         ```PowerShell
         Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
