@@ -35,7 +35,7 @@ sections:
           
           - Example 1: If you have Microsoft Defender for Endpoint Plan 2 (purchased or trial subscription), and you get Microsoft Defender for Business, Defender for Endpoint Plan 2 takes precedence. In this case, you won't see the Defender for Business experience.
 
-          - Example 2: If you have Microsoft Defender for Cloud (purchased or trial subscription), and you get Defender for Business, Defender for Cloud takes precedence. In this case, you won't see the Defender for Business experience.
+          - Example 2: If you have [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) (purchased or trial subscription), and you get Defender for Business, Defender for Cloud takes precedence. In this case, you won't see the Defender for Business experience.
 
       - question: What are the differences between Defender for Business and Defender for Endpoint Plans 1 and 2?
         answer: |
