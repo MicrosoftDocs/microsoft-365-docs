@@ -227,7 +227,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
 
 ## URL syntax for the Tenant Allow/Block List
 
-- IP4v and IPv6 addresses are allowed, but TCP/UDP ports are not.
+- IPv4 and IPv6 addresses are allowed, but TCP/UDP ports are not.
 
 - Filename extensions are not allowed (for example, test.pdf).
 
