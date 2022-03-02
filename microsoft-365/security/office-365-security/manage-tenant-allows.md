@@ -83,7 +83,7 @@ Allow Files in the Submissions section of Microsoft 365 Defender.
 
 4. In the **Select a reason for submitting to Microsoft** section, select **Should not have been blocked (false positive)**. 
 
-5. Turn on **Allow files like this** option. 
+5. Turn on the **Allow files like this** option. 
 
 6. From the **Remove after** drop-down list, specify for how long you want the allow option to work.
 
