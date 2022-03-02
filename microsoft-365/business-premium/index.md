@@ -35,16 +35,12 @@ You are the Chief Cybersecurity Officer and therefore are your organization’s 
 
 Success will depend on how well you implement the recommendations in this library and accomplish the tasks necessary to thwart hackers, protect against ransomware, and ensure that your organization’s purpose and direction are not disrupted. Your mission is to set up your email and mobile device security, protect file sharing amongst all team members, and secure managed and unmanaged devices.
 
-In summary:
+Summary of mission objectives:
 
 - Set up e-mail security
-
 - Set up mobile devices
-
 - Protect unmanaged devices
-
 - Protect file sharing
-
 - Set up managed devices
 
 <!--- 
