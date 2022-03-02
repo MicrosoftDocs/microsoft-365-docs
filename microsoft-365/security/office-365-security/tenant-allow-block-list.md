@@ -115,18 +115,21 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
    - **Senders**:
      - **Value**: The sender domain or email address.
      - **Action**: The value **Allow** or **Block**.
+     - **Modified by**
      - **Last updated**
      - **Remove on**
      - **Notes**
    - **URLs**:
      - **Value**: The URL.
      - **Action**: The value **Allow** or **Block**.
+     - **Modified by**
      - **Last updated**
      - **Remove on**
      - **Notes**
    - **Files**
      - **Value**: The file hash.
      - **Action**: The value **Allow** or **Block**.
+     - **Modified by**
      - **Last updated**
      - **Remove on**
      - **Notes**
