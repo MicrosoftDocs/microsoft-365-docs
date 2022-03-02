@@ -2,8 +2,8 @@
 title: Manage self-service purchases (Admins)
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: mijeffer, pablom
 audience: Admin
@@ -14,9 +14,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
+- commerce_ssp
 - AdminSurgePortfolio
 - okr_smb
-- commerce_ssp
 search.appverid:
 - MET150
 description: "Admins can learn how to manage self-service purchases made by users in their organization."
