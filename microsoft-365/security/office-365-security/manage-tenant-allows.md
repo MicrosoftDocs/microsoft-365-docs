@@ -51,7 +51,7 @@ Allow senders (or domains) on the **Submissions** page in Microsoft 365 Defender
 7. When you're finished, click the **Submit** button.
 
 > [!div class="mx-imgBorder"]
-> ![Submit URL for analysis.](/microsoft-365/media/submit-file-for-analysis.png.png)
+> ![False positive submission example.](../../media/admin-submission-allow-messages.png)
 
 ## Add URL allows using the Submissions portal
 
@@ -72,7 +72,8 @@ Allow URLs on the **Submissions** page in Microsoft 365 Defender.
 7. When you're finished, click the **Submit** button.
 
 > [!div class="mx-imgBorder"]
-> ![False positive submission example.](../../media/submit-url-for-analysis.png)
+> ![Submit URL for analysis.](/microsoft-365/media/submit-url-for-analysis.png)
+
 
 ## Add File allows using the Submissions portal
 
@@ -93,7 +94,8 @@ In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to 
 7. When you're finished, click the **Submit** button.
 
 > [!div class="mx-imgBorder"]
-> ![False positive submission example.](../../media/submit-file-for-analysis.png)
+> ![Submit email for analysis.](/microsoft-365/media/submit-email-for-analysis.png)
+
 
 ## Create spoofed sender allow entries using Microsoft 365 Defender
 
