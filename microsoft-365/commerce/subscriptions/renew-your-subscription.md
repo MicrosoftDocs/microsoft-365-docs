@@ -55,7 +55,7 @@ If you prepaid for your subscription with a product key, your subscription will 
 
 2. Select the subscription for which you want to manage recurring billing.
 3. On the subscription details page, under **Subscription and payment settings**, select **Edit recurring billing**.
-4. In the **Edit recurring billing settings** pane, select **On**, **On, but renew once**, or **Turn off**.
+4. In the **Edit recurring billing** pane, select **On**, **On, but renew once**, or **Turn off**.
 5. Select **Save**.
 
     > [!NOTE]
