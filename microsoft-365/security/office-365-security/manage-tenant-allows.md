@@ -34,13 +34,13 @@ Admins can't add allows directly to the Tenant Allow/Block List. Instead, you us
 
 ## Add sender allows using the Submissions portal 
 
-Allow senders (or domains) in the Submissions section of Microsoft 365 Defender. 
+Allow senders (or domains) on the **Submissions** page in Microsoft 365 Defender. 
 
-1. In the Microsoft 365 Defender portal, go to **Actions & submissions** \> **Submissions**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
-2. On the **Submissions** page, verify that the **Emails** tab is selected, and then click ![Ad icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+2. On the **Submissions** page, verify that the **Emails** tab is selected, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
 
-3. Use the **Submit to Microsoft for review** flyout to submit a message, by adding the network message ID or uploading the email file. 
+3. Use the **Submit to Microsoft for review** flyout to submit a message by adding the network message ID or uploading the email file. 
 
 4. In the **Select a reason for submitting to Microsoft** section, select **Should not have been blocked (false positive)**. 
 
@@ -53,42 +53,41 @@ Allow senders (or domains) in the Submissions section of Microsoft 365 Defender.
 > [!div class="mx-imgBorder"]
 > ![False positive submission example.](../../media/admin-submission-allow-messages.png)
 
-## Add URL allows using the Submissions portal 
+## Add URL allows using the Submissions portal
 
-Allow URLs in the Submissions section of Microsoft 365 Defender. 
+Allow URLs on the **Submissions** page in Microsoft 365 Defender.
 
-1. In the Microsoft 365 Defender portal, go to **Actions & submissions** \> **Submissions**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
-2. On the **Submissions** page, verify that the **URLs** tab is selected, and then click ![Ad icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+2. On the **Submissions** page, select the **URLs** tab, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
 
-3. Use the **Submit to Microsoft for review** flyout to submit a message by adding the URL. 
+3. Use the **Submit to Microsoft for review** flyout to submit a message by adding the URL.
 
-4. In the **Select a reason for submitting to Microsoft** section, select **Should not have been blocked (false positive)**. 
+4. In the **Select a reason for submitting to Microsoft** section, select **Should not have been blocked (false positive)**.
 
-5. Turn on the **Allow URLs like this** option. 
-
-6. From the **Remove after** drop-down list, specify for how long you want the allow option to work.
-
-7. When you're finished, click the **Submit** button.
-
-## Add File allows using the Submissions portal 
-
-Allow Files in the Submissions section of Microsoft 365 Defender. 
-
-1. In the Microsoft 365 Defender portal, go to **Actions & submissions** \> **Submissions**.
-
-2. On the **Submissions** page, verify that the **Email attachments** tab is selected, and then click ![Ad icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
-
-3. Use the **Submit to Microsoft for review** flyout to submit a message by adding the file or files. 
-
-4. In the **Select a reason for submitting to Microsoft** section, select **Should not have been blocked (false positive)**. 
-
-5. Turn on the **Allow files like this** option. 
+5. Turn on the **Allow URLs like this** option.
 
 6. From the **Remove after** drop-down list, specify for how long you want the allow option to work.
 
 7. When you're finished, click the **Submit** button.
 
+## Add File allows using the Submissions portal
+
+Allow Files  on the **Submissions** page in Microsoft 365 Defender.
+
+In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+
+2. On the **Submissions** page, select the **Email attachments** tab, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+
+3. Use the **Submit to Microsoft for review** flyout to submit a message by adding the file or files.
+
+4. In the **Select a reason for submitting to Microsoft** section, select **Should not have been blocked (false positive)**.
+
+5. Turn on the **Allow files like this** option.
+
+6. From the **Remove after** drop-down list, specify for how long you want the allow option to work.
+
+7. When you're finished, click the **Submit** button.
 
 ## Create spoofed sender allow entries using Microsoft 365 Defender
 
@@ -99,9 +98,9 @@ Allow Files in the Submissions section of Microsoft 365 Defender.
 > - Entries for spoofed senders never expire.
 > - Spoof supports both allow and block. URL supports only allow.
 
-1. In the Microsoft 365 Defender portal, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboraton** \> **Policies & rules** \> **Threat policies** \> **Tenant Allow/Block Lists** in the **Rules** section. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
-2. On the **Tenant Allow/Block List** page, select the **Spoofing** tab, and then click ![Block icon.](../../media/m365-cc-sc-create-icon.png) **Add**.
+2. On the **Tenant Allow/Block List** page, select the **Spoofing** tab, and then click ![Add icon.](../../media/m365-cc-sc-create-icon.png) **Add**.
 
 3. In the **Add new domain pairs** flyout that appears, configure the following settings:
    - **Add new domain pairs with wildcards**: Enter one domain pair per line, up to a maximum of 20. For details about the syntax for spoofed sender entries, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
@@ -114,7 +113,7 @@ Allow Files in the Submissions section of Microsoft 365 Defender.
 
 ## Add spoofed sender allow entries using PowerShell
 
-To add spoofed sender entries in the Tenant Allow/Block List, use the following syntax:
+To add spoofed sender entries in the Tenant Allow/Block List in [Exchange Online PowerShell](/exchange/connect-to-exchange-online-powershell), use the following syntax:
 
 ```powershell
 New-TenantAllowBlockListSpoofItems -SpoofedUser <Domain | EmailAddress | *> -SendingInfrastructure <Domain | IPAddress/24> -SpoofType <External | Internal> -Action <Allow | Block>
