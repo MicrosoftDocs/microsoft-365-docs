@@ -1,9 +1,9 @@
 ---
-title: "How security recommendations can affect your users"
+title: "How these security recommendations affect your users"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -23,14 +23,14 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how security recommendations for Microsoft 365 Business Premium affect your users and protect your data."
+description: "Learn how these security recommendations for Microsoft 365 Business Premium affects your users and protects your data."
 ---
 
-# How security recommendations affect your users
+# How these security recommendations affect your users
 
 The security recommendations for Microsoft 365 in this solution make it much harder for hackers to gain access to your environment. The tradeoff is that your users will need to be aware of how to work within this more secure environment. We understand a little extra patience is required, but it's worth it to keep your organization protected.
 
-:::image type="content" source="media/m365-democracy-users.png" alt-text="Illustration summarizing key points for devices.":::
+![Illustration that sums up key points from below for iPhones, Android devices, Macs, Windows 10, sharing, and key staff.](../media/M365-democracy-Users_900px.png)
 
 ## Use secure email practices
 
@@ -46,7 +46,7 @@ Download an [infographic](m365-campaigns-protect-campaign-infographic.md) with t
 
 ## Set up iPhones and Android devices
 
-All users you add to your environment will need to take a few minutes to [setup iPhones and Android devices](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) to work securely:
+All users you add to your environment will need to take a few minutes to [setup iPhones and Android devices](../business/set-up-mobile-devices.md) to work securely:
 
 - Set up devices to use multi-factor authentication with the authenticator app.
 - Use Microsoft mobile apps, including Outlook Mobile, Word, OneDrive, and other Microsoft apps from the app store. The native mail apps that are included on iPhones and Android devices aren't supported. 

@@ -2,8 +2,8 @@
 title: "Microsoft Compliance Manager quickstart guide"
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
