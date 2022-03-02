@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 03/02/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -26,7 +26,7 @@ ms.collection:
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-The device onboarding experience in Defender for Business was built on the same device onboarding processes that are used in Microsoft Defender for Endpoint. Watch the following video to see how it works:<br/><br/>
+The device onboarding experience in Defender for Business was built on processes that are similar to what we use in Microsoft Defender for Endpoint. Watch the following video to see how it works:<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr]
 
@@ -61,7 +61,7 @@ The following table describes the most commonly used methods to onboard devices 
 
 | Onboarding method  | Description  | OS |
 |---------|---------|---------|
-| **Automatic onboarding**<br/>(*available to customers who are already using Microsoft Endpoint Manager*) | Automatic onboarding sets up a connection between Defender for Business and Microsoft Endpoint Manager, and then onboards Windows devices to Defender for Business. In order to use this option, your devices must already be enrolled in Endpoint Manager.<br/><br/>To learn more, see [Use automatic onboarding for Windows devices enrolled in Microsoft Endpoint Manager](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager). | Windows |
+| **Automatic onboarding**<br/>(*available to customers who are already using Microsoft Endpoint Manager*) | Microsoft 365 Business Premium customers already have Microsoft Intune, and can use this option. <br/><br/>Automatic onboarding sets up a connection between Defender for Business and Microsoft Endpoint Manager, and then onboards Windows devices to Defender for Business. In order to use this option, your devices must already be enrolled in Endpoint Manager.<br/><br/>Microsoft 365 Business Premium customers already have Microsoft Intune. <br/><br/>To learn more, see [Use automatic onboarding for Windows devices enrolled in Microsoft Endpoint Manager](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager). | Windows |
 | **Microsoft Defender for Business security configuration** <br/>(*uses the Microsoft 365 Defender portal*) | To use this option, you configure certain settings to facilitate communication between Defender for Business and Endpoint Manager. Then, you onboard devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) by using a package that you download and run on each device. A trust is established between devices and Azure Active Directory (Azure AD), and Defender for Business security policies are pushed to devices.<br/><br/>To learn more, see [Microsoft Defender for Business security configuration](#microsoft-defender-for-business-security-configuration). | Windows <br/>macOS |
 | **Microsoft Intune** or **Microsoft Endpoint Manager**<br/>(*available to customers who are using Microsoft Intune or Endpoint Manager*) | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Mobile Device Management](/mem/intune/enrollment/device-enrollment) are part of Endpoint Manager. If you were already using Endpoint Manager before you got Defender for Business, you can opt to continue using Endpoint Manager to onboard and manage devices<br/><br/>To use this method, see [Microsoft Endpoint Manager](#microsoft-endpoint-manager). | Windows <br/>macOS<br/>iOS<br/>Android OS | 
 | **Local script** <br/>(*for evaluating Defender for Business*) | This option enables you to onboard individual devices to Defender for Business manually. It's not recommended for a production deployment, but is useful for evaluating how Defender for Business will work in your environment on up to 10 devices per script.<br/><br/>To learn more, see [Local script in Defender for Business](#local-script-in-defender-for-business). | Windows <br/>macOS |
