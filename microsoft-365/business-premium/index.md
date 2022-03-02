@@ -37,11 +37,11 @@ This configuration includes the following guidance for productivity, collaborati
 
 | Protection for | Description | Links |
 | ----- | ----- | ----- | ----- |
-|Email | Use multi-factor authentication, advanced anti-phishing, Safe Links and Safe Attachments, and encrypted email for sensitive information.| [Set up multi-factor authentication](m365-campaigns-multifactor-authentication.md) <br/><br/>[Protect against phishing attacks](m365-campaigns-phishing-and-attacks.md)<br/><br/>[Encrypt or label your sensitive email](send-encrypted-email.md) |
-|iPhones and Android devices |Use multi-factor authentication, set up Microsoft mobile apps, and require a PIN | [Set up multi-factor authentication](m365-campaigns-multifactor-authentication.md)<br/><br/>[Set up mobile devices](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)|
+|Email | Use multi-factor authentication, advanced anti-phishing, Safe Links and Safe Attachments, and encrypted email for sensitive information.| [Set up multi-factor authentication](m365bp-multifactor-authentication.md) <br/><br/>[Protect against phishing attacks](m365-campaigns-phishing-and-attacks.md)<br/><br/>[Encrypt or label your sensitive email](send-encrypted-email.md) |
+|iPhones and Android devices |Use multi-factor authentication, set up Microsoft mobile apps, and require a PIN | [Set up multi-factor authentication](m365bp-multifactor-authentication.md)<br/><br/>[Set up mobile devices](../business/set-up-mobile-devices.md)|
 |Bring-your-own-devices (BYOD) for Mac and Windows PCs |Keep Office up to date, keep operating systems updated, and enable security features. | [Protect unmanaged Windows and Mac devices](m365bp-protect-pcs-macs.md) |
 |Storing and sharing files securely | Share files and videos from Microsoft Teams, OneDrive, SharePoint, and Microsoft Stream, and protect sensitive data.| [Share files and videos](share-files-and-videos.md) |
-|Managed Windows devices |Use managed devices for key staff and secure these devices. | [Set up managed devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) |
+|Managed Windows devices |Use managed devices for key staff and secure these devices. | [Set up managed devices](../business/set-up-windows-devices.md) |
 
 ## A recommended security configuration for Microsoft 365 Business Premium
 
