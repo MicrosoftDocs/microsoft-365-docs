@@ -139,7 +139,7 @@ After the command has run, the Command Prompt window will close automatically. I
 
 ## Gradual device onboarding
 
-If you want to onboard your organization's devices in phases, follow these steps:
+You can onboard your organization's devices in phases. *We call this gradual device onboarding*. 
 
 1. Identify a set of devices to onboard.
 
