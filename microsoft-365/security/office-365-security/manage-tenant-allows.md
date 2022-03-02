@@ -67,7 +67,7 @@ Allow URLs in the Submissions section of Microsoft 365 Defender.
 
 5. Turn on the **Allow URLs like this** option. 
 
-6. From the **Remove after** drop-down list, specify how long you want the allow option to work.
+6. From the **Remove after** drop-down list, specify for how long you want the allow option to work.
 
 7. When you're finished, click the **Submit** button.
 
