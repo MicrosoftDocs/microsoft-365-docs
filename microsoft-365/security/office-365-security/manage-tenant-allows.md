@@ -32,15 +32,15 @@ Admins can't add allows directly to the Tenant Allow/Block List. Instead, you us
 > [!IMPORTANT]
 > Since Microsoft manages the allows for you, sender, URL, or file allows that are not needed or considered to be bad will be removed. This is to protect your environment and prevent a misconfiguration of allows. In cases where you may disagree, a support cases may be needed to help determine why a message is still considered as bad.
 
-## Add allows using the Submissions portal 
+## Add sender allows using the Submissions portal 
 
-Allow files, URLs, and senders in the Submissions section of Microsoft 365 Defender. 
+Allow senders (or domains) in the Submissions section of Microsoft 365 Defender. 
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Submissions**.
+1. In the Microsoft 365 Defender portal, go to **Actions & submissions** \> **Submissions**.
 
-2. On the **Submissions** page, verify that the **Submitted for analysis** tab is selected, and then click ![Ad icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+2. On the **Submissions** page, verify that the **Emails** tab is selected, and then click ![Ad icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
 
-3. Use the **Submit to Microsoft for review** flyout to submit a message, either by adding the network message ID or uploading the email file. 
+3. Use the **Submit to Microsoft for review** flyout to submit a message, by adding the network message ID or uploading the email file. 
 
 4. In the **Select a reason for submitting to Microsoft** section, select **Should not have been blocked (false positive)**. 
 
@@ -52,6 +52,43 @@ Allow files, URLs, and senders in the Submissions section of Microsoft 365 Defen
 
 > [!div class="mx-imgBorder"]
 > ![False positive submission example.](../../media/admin-submission-allow-messages.png)
+
+## Add URL allows using the Submissions portal 
+
+Allow URLs in the Submissions section of Microsoft 365 Defender. 
+
+1. In the Microsoft 365 Defender portal, go to **Actions & submissions** \> **Submissions**.
+
+2. On the **Submissions** page, verify that the **URLs** tab is selected, and then click ![Ad icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+
+3. Use the **Submit to Microsoft for review** flyout to submit a message, either by adding the URL. 
+
+4. In the **Select a reason for submitting to Microsoft** section, select **Should not have been blocked (false positive)**. 
+
+5. Turn on **Allow URLs like this** option. 
+
+6. From the **Remove after** drop-down list, specify how long you want the allow option to work.
+
+7. When you're finished, click the **Submit** button.
+
+## Add File allows using the Submissions portal 
+
+Allow Files in the Submissions section of Microsoft 365 Defender. 
+
+1. In the Microsoft 365 Defender portal, go to **Actions & submissions** \> **Submissions**.
+
+2. On the **Submissions** page, verify that the **Email attachments** tab is selected, and then click ![Ad icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+
+3. Use the **Submit to Microsoft for review** flyout to submit a message, either by adding the file(s). 
+
+4. In the **Select a reason for submitting to Microsoft** section, select **Should not have been blocked (false positive)**. 
+
+5. Turn on **Allow files like this** option. 
+
+6. From the **Remove after** drop-down list, specify how long you want the allow option to work.
+
+7. When you're finished, click the **Submit** button.
+
 
 ## Create spoofed sender allow entries using Microsoft 365 Defender
 
