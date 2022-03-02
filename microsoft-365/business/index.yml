@@ -16,7 +16,7 @@ metadata:
   - intro-hub-or-landing
   author: efrene #Required; your GitHub user alias, with correct capitalization.
   ms.author: efrene #Required; microsoft alias of author; optional team alias.
-  ms.date: 02/27/2022
+  ms.date: 03/01/2022
 
 # productDirectory section (optional)
 productDirectory:
@@ -32,7 +32,7 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
       summary: Learn about new Defender for Business capabilities in Business Premium and Microsoft 365 Lighthouse.
-      url: https://aka.ms/MDB-previewblog
+      url: https://aka.ms/SMBsecurityFebBlog
     # Card
     - title: Get the free partner kit
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
