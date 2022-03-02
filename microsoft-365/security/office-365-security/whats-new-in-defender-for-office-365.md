@@ -46,8 +46,12 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Cloud App Security](/cloud-app-security/release-notes)
 
+## February/March 2022
 
-## December/January 2021
+- [Updated Automated Investigation alert coverage](o365-worldwide#default-alert-policies.md): Introducing investigations for new campaign and generic ZAP alerts, as well as new alerts for manually triggered investigations.
+
+
+## December 2021/January 2022
 
 - [Updated Hunting and Investigation Experiences for Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/updated-hunting-and-investigation-experiences-for-microsoft/ba-p/3002015): Introducing the email summary panel for experiences in Defender for Office 365, along with experience updates for Threat Explorer and Real-time detections.
 
