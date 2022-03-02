@@ -51,7 +51,7 @@ Allow senders (or domains) on the **Submissions** page in Microsoft 365 Defender
 7. When you're finished, click the **Submit** button.
 
 > [!div class="mx-imgBorder"]
-> ![False positive submission example.](../../media/admin-submission-allow-messages.png)
+> ![Submit URL for analysis.](/microsoft-365/media/submit-file-for-analysis.png.png)
 
 ## Add URL allows using the Submissions portal
 
