@@ -32,15 +32,17 @@ Follow the Microsoft Intune operating systems guide for the minimum supported op
 You can use Basic Mobility and Security to secure and manage the following devices.
 
 - iOS 11.0 or later versions
-- Android 5.0 or later versions [^1]
-- Windows 8.1 [^2]
-- Windows 8.1 RT [^2]
-- Windows 10 [^3]
-- Windows 10 Mobile [^3]
+- Android 5.0 or later versions<sup>1</sup>
+- Windows 8.1<sup>2</sup>
+- Windows 8.1 RT<sup>2</sup>
+- Windows 10<sup>3</sup>
+- Windows 10 Mobile<sup>3</sup>
 
-[^1]: After June 2020, Android versions later than 9 can't manage password settings except on Samsung Knox devices.
-[^2]: Access control for Windows 8.1 RT devices is limited to Exchange ActiveSync.
-[^3]: Access control for Windows 10 requires a subscription that includes Azure AD Premium and the device needs to be joined to Azure Active Directory.
+<sup>1</sup>After June 2020, Android versions later than 9 can't manage password settings except on Samsung Knox devices.
+
+<sup>2</sup>Access control for Windows 8.1 RT devices is limited to Exchange ActiveSync.
+
+<sup>3</sup>Access control for Windows 10 requires a subscription that includes Azure AD Premium and the device needs to be joined to Azure Active Directory.
 
 > [!NOTE]
 > Devices already enrolled with earlier OS versions continue to function although the capabilities might change without notice.
