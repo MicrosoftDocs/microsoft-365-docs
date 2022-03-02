@@ -30,7 +30,7 @@ description: "Learn how security recommendations for Microsoft 365 Business Prem
 
 The security recommendations for Microsoft 365 in this solution make it much harder for hackers to gain access to your environment. The tradeoff is that your users will need to be aware of how to work within this more secure environment. We understand a little extra patience is required, but it's worth it to keep your organization protected.
 
-![Illustration that sums up key points from below for iPhones, Android devices, Macs, Windows 10, sharing, and key staff.](../media/m365-democracy-users.png)
+:::image type="content" source="media/m365-democracy-users.png" alt-text="Illustration summarizing key points for devices.":::
 
 ## Use secure email practices
 
