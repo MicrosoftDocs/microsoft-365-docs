@@ -2,8 +2,8 @@
 title: "How to sign up - Admin Help"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: seemg, pablom
 audience: Admin
@@ -16,11 +16,11 @@ ms.collection:
 - TRN_SMB
 - Adm_TOC
 ms.custom:
+- commerce_signup
 - TRN_M365B
 - OKR_SMB_Videos
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_signup
 - AdminTemplateSet
 - adminvideo
 - intro-get-started
