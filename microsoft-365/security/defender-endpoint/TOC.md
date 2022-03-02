@@ -196,7 +196,7 @@
 
 
 ### [Configure portal settings]()
-#### [Set up preferences](preferences-setup.md)
+#### [Configure general Defender for Endpoint settings](preferences-setup.md)
 #### [General]()
 ##### [Verify data storage location and  update data retention settings](data-retention-settings.md)
 ##### [Configure alert notifications](configure-email-notifications.md)
@@ -258,6 +258,12 @@
 #### [Microsoft Defender for IoT integration](enable-microsoft-defender-for-iot-integration.md)
 #### [Enable Corelight data integration](corelight-integration.md)
 #### [Device discovery FAQ](device-discovery-faq.md)
+
+### [Device inventory]()
+#### [Device inventory](machines-view-overview.md)
+#### [Exclude devices](exclude-devices.md)
+#### [Device timeline event flags](device-timeline-event-flag.md)
+#### [Manage device group and tags](machine-tags.md)
 
 ### [Network devices](network-devices.md)
 
@@ -414,11 +420,6 @@
 ###### [Investigate connection events that occur behind forward proxies](investigate-behind-proxy.md)
 ##### [Investigate a user account](investigate-user.md)
 
-#### [Devices list]()
-##### [View and organize the Devices list](machines-view-overview.md)
-##### [Device timeline event flags](device-timeline-event-flag.md)
-##### [Manage device group and tags](machine-tags.md)
-
 #### [Take response actions]()
 ##### [Take response actions on a device]()
 ###### [Response actions on devices](respond-machine-alerts.md)
@@ -548,6 +549,12 @@
 ###### [IP]()
 ####### [Get IP related alerts](get-ip-related-alerts.md)
 ####### [Get IP statistics](get-ip-statistics.md)
+
+###### [Live response library]()
+####### [Live response library methods and properties](live-response-library-methods.md)
+####### [List library files](list-library-files.md)
+####### [Upload to live response library](upload-library.md)
+####### [Delete from library](delete-library.md)
 
 
 ###### [Machine]()

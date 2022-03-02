@@ -30,4 +30,4 @@ The selected device profile will be applied to all devices you select in the fir
 1. Check that the **Reset device** slider is set the way you want.
 1. Select **Change profile**.
 
-To move separate devices to different profiles, you’ll need to repeat this process for each device profile.
+To move separate devices to different profiles, you'll need to repeat this process for each device profile.
