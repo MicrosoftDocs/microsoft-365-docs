@@ -65,7 +65,7 @@ Allow URLs in the Submissions section of Microsoft 365 Defender.
 
 4. In the **Select a reason for submitting to Microsoft** section, select **Should not have been blocked (false positive)**. 
 
-5. Turn on **Allow URLs like this** option. 
+5. Turn on the **Allow URLs like this** option. 
 
 6. From the **Remove after** drop-down list, specify how long you want the allow option to work.
 
