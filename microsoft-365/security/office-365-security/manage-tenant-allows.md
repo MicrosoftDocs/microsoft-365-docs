@@ -79,7 +79,7 @@ Allow Files in the Submissions section of Microsoft 365 Defender.
 
 2. On the **Submissions** page, verify that the **Email attachments** tab is selected, and then click ![Ad icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
 
-3. Use the **Submit to Microsoft for review** flyout to submit a message, either by adding the file(s). 
+3. Use the **Submit to Microsoft for review** flyout to submit a message by adding the file or files. 
 
 4. In the **Select a reason for submitting to Microsoft** section, select **Should not have been blocked (false positive)**. 
 
