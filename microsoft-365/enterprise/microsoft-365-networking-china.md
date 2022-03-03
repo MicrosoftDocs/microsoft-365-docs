@@ -118,8 +118,6 @@ Microsoft is continually working to improve the Microsoft 365 user experience an
 
 [Special considerations for Stream and live events in VPN environments](microsoft-365-vpn-stream-and-live-events.md)
 
-[Microsoft 365 performance optimization for China users](microsoft-365-networking-china.md)
-
 [Microsoft 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md)
 
 [Assessing Microsoft 365 network connectivity](assessing-network-connectivity.md)
