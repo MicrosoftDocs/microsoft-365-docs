@@ -35,13 +35,13 @@ You are the Chief Cybersecurity Officer and therefore are your organization’s 
 
 Success will depend on how well you implement the recommendations in this library and accomplish the tasks necessary to thwart hackers, protect against ransomware, and ensure that your organization’s purpose and direction are not disrupted. Your mission is to set up your email and mobile device security, protect file sharing amongst all team members, and secure managed and unmanaged devices.
 
-Summary of mission objectives:
+Your missions are as follows:
 
-- Set up e-mail security
-- Set up mobile devices
-- Protect unmanaged devices
-- Protect file sharing
-- Set up managed devices
+**Mission 1 – Implement All Account Protections**. In your first mission, you must implement security across all accounts in the system.
+
+**Mission 2 - Set Up All Devices**. In Mission 2, you must protect all mobile devices, as well as managed and unmanaged devices. 
+
+**Mission 3 – Secure All Email and Data Files**. Your final objective is to secure the email and files shared between members of your organization, avoiding data and information theft.
 
 <!--- 
 In our current world, keeping data and communications secure is a priority, particularly for medical and legal practices, political campaigns, and many other smaller businesses. Take advantage of the security features in Microsoft 365 Business Premium to collaborate safely within your small business. This solution provides a set of recommendations designed to help protect you and your data. This library includes help for setting up and using this recommended environment, no matter your business type. 
