@@ -44,7 +44,7 @@ You can use Basic Mobility and Security to secure and manage the following devic
 > [!NOTE]
 > Devices already enrolled with earlier OS versions continue to function although the capabilities might change without notice.
 
-If people in your organization use mobile devices that aren't supported by Basic Mobility and Security, you might want to block Exchange ActiveSync app access to Microsoft 365 email for those devices, to help make your organization's data more secure. For steps to block Exchange ActiveSync, see [Manage device access settings in Basic Mobility and Security](manage-device-access-settings.md).
+If people in your organization use mobile devices that aren't supported by Basic Mobility and Security, you may want to block Exchange ActiveSync app access to Microsoft 365 email for those devices, to help make your organization's data more secure. For steps to block Exchange ActiveSync, see [Manage device access settings in Basic Mobility and Security](manage-device-access-settings.md).
 
 ## Access control for Microsoft 365 email and documents
 
