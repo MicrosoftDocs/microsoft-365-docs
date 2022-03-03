@@ -26,13 +26,13 @@ This article explains how to create organization-wide communications templates a
 
 ## Before you create templates in the Communications library
 
-- You must be an eDiscovery Administrator in your organization to add or remove templates in the Communications library in Advanced eDiscovery. For more information, see [Assign eDiscovery permissions in the Microsoft 365 compliance center](assign-ediscovery-permissions.md)  
+- You must be an eDiscovery Administrator in your organization to add or remove templates in the Communications library in Advanced eDiscovery. For more information, see [Assign eDiscovery permissions in the Microsoft Purview portal](assign-ediscovery-permissions.md)  
 
 - Your organization can have a maximum of 50 templates in the Communications library.
 
 ## Create a communications template
 
-1. In the Microsoft 365 compliance center, go to [Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **Advanced eDiscovery settings**.
+1. In the Microsoft Purview portal, go to [Advanced eDiscovery](https://go.microsoft.com/fwlink/p/?linkid=2173764), and then click **Advanced eDiscovery settings**.
 
    ![Select Advanced eDiscovery settings](..\media\HistoricalVersions1.png)
 
@@ -57,7 +57,7 @@ After one or more communications templates are created in the Communications lib
 
 To select a template:
 
-1. In the Microsoft 365 compliance center, go to **eDiscovery > Advanced** to display the list of cases in your organization.
+1. In the Microsoft Purview portal, go to **eDiscovery > Advanced** to display the list of cases in your organization.
 
 2. Select a case, click the **Communications** tab, and then click **New communication**.
 
