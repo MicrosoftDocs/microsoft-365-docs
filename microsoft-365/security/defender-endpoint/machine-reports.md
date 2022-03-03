@@ -147,6 +147,15 @@ Reports on how many devices in your organization – on the date indicated on th
 | 4 | EDRBlocked |
 | 5 | PassiveAudit |
 
+Fillowing are descriptions for each mode:
+
+- **Active** mode - In active mode, Microsoft Defender Antivirus is used as the primary antivirus app on the device. Files are scanned, threats are remediated, and detected threats are listed in your organization's security reports and in your Windows Security app.
+- **Passive** mode - In passive mode, Microsoft Defender Antivirus is not used as the primary antivirus app on the device. Files are scanned, and detected threats are reported, but threats are not remediated by Microsoft Defender Antivirus. IMPORTANT: Microsoft Defender Antivirus can run in passive mode only on endpoints that are onboarded to Microsoft Defender for Endpoint. See [Requirements for Microsoft Defender Antivirus to run in passive mode](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode).
+- **Disabled** mode  - synonymous with uninstalled, disabled, sideBySidePassive, and Low Periodic Scan modes. When disabled, Microsoft Defender Antivirus is not used. Files are not scanned, and threats are not remediated. In general, Microsoft do not recommend disabling or uninstalling Microsoft Defender Antivirus.
+- **Others** mode -
+- **EDRBlocked** mode - In endpoint detection and response (EDR) blocked mode,
+- **PasiveAudit** mode -
+
 Devices that are in either passive, LPS, or Off present a potential security risk and should be investigated.
 
 For details about LPS, see [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md).
