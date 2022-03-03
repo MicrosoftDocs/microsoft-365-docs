@@ -841,11 +841,11 @@
         - name: Manage holds
           href: managing-holds.md
           items:
-            -name: Use a script to create a holds report
-            href: create-a-report-on-holds-in-ediscovery-cases.md
+            - name: Use a script to create a holds report
+              href: create-a-report-on-holds-in-ediscovery-cases.md
         - name: Manage processing errors
           href: processing-data-for-case.md
-          items: 
+          items:
             - name: Advanced indexing of custodian content
               href: indexing-custodian-data.md
             - name: Error remediation when processing content
