@@ -24,7 +24,7 @@ description: Learn how to generate a report that contains information about all 
 
 # Create a report on holds in eDiscovery cases
 
-The script in this article lets eDiscovery administrators and eDiscovery managers generate a report that contains information about all holds that are associated with Core and Advanced eDiscovery cases in the the Microsoft 365 compliance center. The report contains information such as the name of the case a hold is associated with, the content locations that are placed on hold, and whether the hold is query-based. If there are cases that don't have any holds, the script will create an additional report with a list of cases without holds.
+The script in this article lets eDiscovery administrators and eDiscovery managers generate a report that contains information about all holds that are associated with Core and Advanced eDiscovery cases in the Microsoft 365 compliance center. The report contains information such as the name of the case a hold is associated with, the content locations that are placed on hold, and whether the hold is query-based. If there are cases that don't have any holds, the script will create an additional report with a list of cases without holds.
 
 See the [More information](#more-information) section for a detailed description of the information included in the report.
 
@@ -184,7 +184,7 @@ After you've connected to Security & Compliance Center PowerShell, the next step
 
    The script starts to collect information about all the eDiscovery cases in your organization. Don't access the report file while the script is running. After the script is complete, a confirmation message is displayed in the Windows PowerShell session. After this message is displayed, you can access the report in the folder that you specified in Step 4. The file name for the report is `CaseHoldsReport<DateTimeStamp>.csv`.
 
-   Addtionally, the script also creates a report with a list of cases that don't have any holds. The file name for this report is `CaseswithNoHolds<DateTimeStamp>.csv`.
+   Additionally, the script also creates a report with a list of cases that don't have any holds. The file name for this report is `CaseswithNoHolds<DateTimeStamp>.csv`.
 
    Here's an example of running the CaseHoldsReport.ps1 script.
 
@@ -196,7 +196,7 @@ The case holds report that's created when you run the script in this article con
 
 - The name of the hold and the name of the eDiscovery case that the hold is associated with.
 
-- Whether the hold is associate with a Core or Advanced eDiscovery case.
+- Whether the hold is associated with a Core or Advanced eDiscovery case.
 
 - Whether or not the eDiscovery case is active or closed.
 
