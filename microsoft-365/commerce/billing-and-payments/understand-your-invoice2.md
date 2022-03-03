@@ -77,6 +77,8 @@ The footer appears at the bottom of every invoice page and includes Microsoft bu
 
 Page one of your invoice contains address information for your organization, high-level details about your order, a summary of invoice totals, and instructions about how to pay your invoice.
 
+:::image type="content" source="../../media/understand-your-invoice2/invoice-page1-details.png" alt-text="The main section on page one of the invoice.":::
+
 ### Addresses
 
 Three addresses appear at the top of the first page. The **Sold-To** address is the name and address of the organization that bought the subscription. The **Bill-To** address is the address of your billing department. **Service Usage Address** is the address where the service is used. Usually, these addresses are the same. Depending on the size and configuration of your organization, these addresses might be different.
