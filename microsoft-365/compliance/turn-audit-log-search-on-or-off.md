@@ -125,12 +125,12 @@ Audit records for these events contain information about when the auditing statu
 
 ![Audit record for turning on auditing](../media/AuditStatusAuditingEnabled.png)
 
-The value of `Confirm` in the *CmdletParameters* property indicates that unified audit logging was turned on in the compliance center or by running the **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true** cmdlet.
+The value of `Confirm` in the *CmdletParameters* property indicates that unified audit logging was turned off in the compliance center or by running the **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false** cmdlet.
 
 ### Audit record for turning off auditing
 
 ![Audit record for turning off auditing](../media/AuditStatusAuditingDisabled.png)
 
-The value of `Confirm` is not included in the *CmdletParameters* property. This indicates that unified audit logging was turned off by running the **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false** command.
+The value of `Confirm` is not included in the *CmdletParameters* property. This indicates that unified audit logging was turned on by running the **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true** command.
 
 For more information about searching the Exchange admin audit log, see [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog).
