@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/02/2022
+ms.date: 03/03/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -40,7 +40,7 @@ With Microsoft Defender for Business, you have several options to choose from fo
 1. See your options for [onboarding devices](#device-onboarding-methods), and select one of the following methods: 
 
    - [Automatic onboarding for Windows devices enrolled in Microsoft Endpoint Manager](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)
-   - [Local script for evaluating Defender for Business](#local-script-in-defender-for-business)
+   - [Local script for Windows and Mac devices](#local-script-in-defender-for-business)
    - [Microsoft Endpoint Manager (Microsoft Intune)](#microsoft-endpoint-manager)
    - [Microsoft Defender for Business security configuration](#microsoft-defender-for-business-security-configuration)
 
