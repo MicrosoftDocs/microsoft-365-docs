@@ -21,7 +21,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn how to interpret charges, billing, and payment info on your Microsoft 365 for business bill or invoice."
-ms.date: 
+ms.date: 03/03/2022
 ---
 
 # Understand your bill or invoice for Microsoft 365 for business
