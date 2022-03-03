@@ -2,8 +2,8 @@
 title: 'Functional testing on Test Base'
 description: Details on how to test your application with your existing automated functional tests
 search.appverid: MET150
-author: mansipatel-usl
-ms.author: mapatel
+author: Tinacyt
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
