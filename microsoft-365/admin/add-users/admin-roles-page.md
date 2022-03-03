@@ -4,15 +4,14 @@ f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekua
-manager: svidican
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
-- Adm_O365
-
+- Adm_O365W
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet
