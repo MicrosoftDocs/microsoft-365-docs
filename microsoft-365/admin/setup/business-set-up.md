@@ -1,13 +1,11 @@
 ---
 title: "Set up Microsoft 365 Business Premium"
-f1.keywords:
-- NOCSH
 ms.author: kwekua
 author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - 'O365E_M365SetupBanner'
 - 'BCS365_M365SetupBanner'
 ms.service: o365-administration
