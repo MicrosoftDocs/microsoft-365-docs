@@ -66,7 +66,7 @@ MSPs may use risk-based Conditional Access to make sure their staff members prov
 
 ## Related content
 
-[Password reset permissions](/azure/active-directory/roles/permissions-reference) (article)  \
+[Password reset permissions](/azure/active-directory/roles/permissions-reference#password-reset-permissions) (article)\
 [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\
 [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md) (article)\
 [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)\
