@@ -23,34 +23,37 @@ ms.prod: m365-security
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Applies to**
+
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Connectors are generally used for enabling mail flow between Microsoft 365 or Office 365 and email servers that you have in your on-premises environment. For more information, see [Configure mail flow using connectors in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
+Connectors are generally used for enabling mail flow between Microsoft 365 or Office 365 and email servers that you have in your on-premises environment. For more information, see [Configure mail flow using connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
-A compromised inbound connector is defined as when an unauthorized individual either applies change(s) to an existing inbound connector or creates a new inbound connector in a Microsoft 365 tenant, with the intention of sending spam or phish mails.  This is usually a result of compromised admin. 
+A compromised inbound connector is defined as when an unauthorized individual either applies change(s) to an existing inbound connector or creates a new inbound connector in a Microsoft 365 tenant, with the intention of sending spam or phish mails.  
 
 ## Detect a compromised connector
 
-Sudden spike in outbound mail volume. 
+Here are some of the characteristics of a compromised connector:
 
-Mismatch between P1 and P2 senders in outbound mails. 
+- Sudden spike in outbound mail volume. 
 
-For more about P1 and P2 senders, see How EOP validates the From address to prevent phishing - Office 365 | Microsoft Docs 
+- Mismatch between P1 and P2 senders in outbound mails. For more information on P1 and P2 senders, see [How EOP validates the From address to prevent phishing](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
-Outbound mails sent from a unprovisioned/unregistered domain. 
+- Outbound mails sent from an unprovisioned/unregistered domain. 
 
-The connector is blocked from sending relaying mail. 
+- The connector is blocked from sending relaying mail. 
 
-The presence of an inbound connector was not created by the intended user or the administrator. 
+- The presence of an inbound connector was not created by the intended user or the administrator. 
 
-Unauthorized change(s) in existing connector configuration, such as name, domain name and IP address. 
+- Unauthorized change(s) in existing connector configuration, such as name, domain name, and IP address. 
 
-A recently compromised administrator account.  Only individual with administrative access can edit connector configuration. 
+- A recently compromised administrator account. Note that you can edit connector configuration only if you have administrative access. 
 
 ## Secure and restore email function to a suspected compromised connector
 
 ### Step 1: Identify if an inbound connector has been compromised 
+
+#### Review recent suspicious connector traffic or related messages
 
 Review recent suspicious connector traffic or related messages 
 
@@ -94,7 +97,9 @@ if the recipients are the ones that your organization usually stays in contact w
 
 [image] 
 
-Investigate and validate connector related activity by a user in Audit log by using the following command line in PowerShell.  Instructions can be found here: Use a PowerShell script to search the audit log - Microsoft 365 Compliance | Microsoft Docs. 
+#### Investigate and validate connector-related activity 
+
+Investigate by a user in Audit log by using the following command line in PowerShell.  Instructions can be found here: Use a PowerShell script to search the audit log - Microsoft 365 Compliance | Microsoft Docs. 
 
 Search-UnifiedAuditLog -StartDate "<ExDateTime>" -EndDate "<ExDateTime>" -RecordType ExchangeAdmin -Operations Set-InboundConnector,New-InboundConnector 
 
