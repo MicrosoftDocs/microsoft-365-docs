@@ -12,6 +12,8 @@
   items: 
     - name: Set up Microsoft 365 Business Premium
       href: m365bp-setup.md
+        - name: Overview
+          href: microsoft-365-campaigns-setup-overview.md
     - name: Set up Microsoft 365 for Campaigns
       items:
         - name: Overview
@@ -24,6 +26,8 @@
           href: m365-customize-sign-in.md
 - name: Bump up security protection
   items: 
+    - name: Overview
+      href: m365-campaigns-security-overview.md
     - name: Top 10 ways to secure your organization
       href: ../admin/security-and-compliance/secure-your-business-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Turn on security defaults
@@ -34,8 +38,6 @@
       href: m365bp-conditional-access.md
     - name: Protect against malware and other threats
       href: m365bp-increase-protection.md
-    - name: Increase security for Microsoft 365 for Campaigns
-      href: m365-campaigns-security-overview.md
 
 - name: Set up devices
   items: 
