@@ -3,7 +3,7 @@ title: "Special considerations for Stream and live events in VPN environments"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 2/14/2022
+ms.date: 3/3/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
