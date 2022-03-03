@@ -37,7 +37,7 @@ ms.technology: mde
 ## Public Preview - Device health and antivirus compliance report in Microsoft Defender for Endpoint
 
 <!-- Hide {this intro with no subsequent list items}
-[When the features documented in this section move out of public preview:  Remove everything from (and including) **_End of section Public Preview: Device health and antivirus compliance report in Microsoft Defender for Endpoint_**  down to (but not removing) "Related topic" section at very bottom. Remove prerelease !IMPORTANT notice above. Check #levels and adjust as necessary {I think just need to move everything up one level, move the current ## Public Preview title {deleting "Public Preview -"} to replace the current # title.}. ]
+[When the features documented in this "preview" section move out of public preview:  Remove everything from (and including) **_End of section Public Preview: Device health and antivirus compliance report in Microsoft Defender for Endpoint_**  down the very bottom of the page. Remove prerelease !IMPORTANT notice above. Check #-levels and adjust as necessary {I think just need to move everything up one level {- 1 #/ }, move the current ## Public Preview title {deleting "Public Preview -"} to replace the current # title.}. ]
 -->
 
 The devices status report provides high-level information about the devices in your organization. The report includes trending information showing the sensor health state, antivirus status, OS platforms, and Windows 10 versions.
