@@ -2,8 +2,8 @@
 title: 'CPU regression analysis'
 description: Understanding regression results and metrics for CPU consumption
 search.appverid: MET150
-author: mansipatel-usl
-ms.author: mapatel
+author: Tinacyt
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to

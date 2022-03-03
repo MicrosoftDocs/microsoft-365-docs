@@ -2,8 +2,8 @@
 title: Test Base API & SDK
 description: Test Base API & SDK
 search.appverid: MET150
-author: mansipatel-usl
-ms.author: mapatel
+author: Tinacyt
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
