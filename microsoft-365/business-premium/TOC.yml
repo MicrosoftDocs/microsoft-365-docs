@@ -12,8 +12,8 @@
   items: 
     - name: Set up Microsoft 365 Business Premium
       href: m365bp-setup.md
-        - name: Overview
-          href: microsoft-365-campaigns-setup-overview.md
+    - name: Overview
+      href: microsoft-365-campaigns-setup-overview.md
     - name: Set up Microsoft 365 for Campaigns
       items:
         - name: Overview
