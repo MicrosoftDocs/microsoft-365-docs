@@ -79,7 +79,7 @@ In Exchange Online PowerShell or standalone EOP PowerShell, you manage the polic
 
 - For our recommended settings for Safe Links policies, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
-- Allow up to 30 minutes for a new or updated policy to be applied.
+- Allow up to 6 hours for a new or updated policy to be applied.
 
 - [New features are continually being added to Microsoft Defender for Office 365](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365). As new features are added, you may need to make adjustments to your existing Safe Links policies.
 
