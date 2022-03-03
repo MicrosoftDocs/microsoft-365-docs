@@ -1,13 +1,11 @@
 ---
 title: "Secure Windows 10 devices"
-f1.keywords:
-- CSH
 ms.author: sharik
 author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
-f1_keywords:
+f1.keywords:
 - 'O365E_BCSSetup4WindowsConfig'
 ms.service: o365-administration
 ms.localizationpriority: medium
