@@ -1,5 +1,5 @@
 ---
-title: Respond to a compromised connector in Microsoft Defender for Office 365
+title: Respond to a compromised connector in Microsoft 365
 f1.keywords:
   - NOCSH
 ms.author: dansimp
@@ -13,7 +13,7 @@ ms.assetid:
 ms.collection:
   - M365-security-compliance
 ms.custom:
-description: Learn how to recognize and respond to a compromised connector in Microsoft Defender for Office 365.
+description: Learn how to recognize and respond to a compromised connector in Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -24,6 +24,7 @@ ms.prod: m365-security
 
 **Applies to**
 
+- [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
@@ -51,75 +52,77 @@ Here are some of the characteristics of a compromised connector:
 
 ## Secure and restore email function to a suspected compromised connector
 
+You must complete all the following steps to regain access to your connector. These steps help you remove any back-door entries that may have been added to your connector.
+
 ### Step 1: Identify if an inbound connector has been compromised 
 
 #### Review recent suspicious connector traffic or related messages
 
-Review recent suspicious connector traffic or related messages 
+If you have Microsoft Defender for Office 365 plan 2, go directly to https://security.microsoft.com/threatexplorer. 
 
-Customers with Defender for Office 365 P2, this can be done in Explorer: https://security.microsoft.com/threatexplorer. 
-
-Select “Connector”, insert “Connector Name”, select date range and click “Refresh”. 
+1. Select **Connector**, insert **Connector Name**, select date range, and then click **Refresh**. 
 
 [image]
 
-Under the chart, identify if there is any abnormal “spike” or “dip” in mail traffic. 
+2. Identify if there is any abnormal spike or dip in email traffic. 
 
 [image]
 
-Under the table, identify 
+3. Identify: 
 
-if “Sender IP” matches with your organization’s on-prem IP address. 
+    - If **Sender IP** matches with your organization’s IP address. 
 
-if a significant amount of mails were recently sent to “Junk” folder.  If so, this is a good indicator of a compromised connector being used to send spam. 
+    - If a significant number of emails were recently sent to the **Junk** folder.  If so, this is a good indicator of a compromised connector being used to send spam. 
 
-if the recipients are the ones that your organization usually stays in contact with. 
+    - If the recipients are the ones that your organization usually stays in contact with. 
 
-[image]
+    [image]
 
-Customers with Defender for Office 365 P1 or Exchange Online Protection, this can be done in Message trace: https://admin-sdf.exchange.microsoft.com/#/messagetrace. 
+If you have Microsoft Defender for Office 365 Plan 1 or Exchange Online Protection, go to https://admin-sdf.exchange.microsoft.com/#/messagetrace. 
 
-Open “Suspicious connector activity” alert in https://security.microsoft.com/alerts.  
+1. Open **Suspicious connector activity** alert in https://security.microsoft.com/alerts.  
 
-Click on an activity under “Activity list”, and copy suspicious “connector domain” and “IP address” detected in the alert.
-
-[image]
-
-Search by using “connector domain” and “IP address” in Message trace: https://admin-sdf.exchange.microsoft.com/#/messagetrace. 
+2. Select an activity under **Activity list**, and copy suspicious **connector domain** and **IP address** detected in the alert.
 
 [image]
 
-In Message trace search results, identify 
+3. Search by using **connector domain** and **IP address** in [**Message trace**](https://admin-sdf.exchange.microsoft.com/#/messagetrace). 
 
-if a significant amount of mails were recently marked as “FilteredAsSpam” folder.  If so, this is a good indicator of a compromised connector being used to send spam. 
+[image]
 
-if the recipients are the ones that your organization usually stays in contact with. 
+4. In the **Message trace** search results, identify: 
+
+    - If a significant number of emails were recently marked as **FilteredAsSpam**.  If so, this is a good indicator of a compromised connector being used to send spam. 
+
+    - If the recipients are the ones that your organization usually stays in contact with. 
 
 [image] 
 
 #### Investigate and validate connector-related activity 
 
-Investigate by a user in Audit log by using the following command line in PowerShell.  Instructions can be found here: Use a PowerShell script to search the audit log - Microsoft 365 Compliance | Microsoft Docs. 
+Use the following command line in PowerShell to investigate and validate connector-related activity by a user in the audit log. For more information, see [Use a PowerShell script to search the audit log](/compliance/audit-log-search-script). 
 
-Search-UnifiedAuditLog -StartDate "<ExDateTime>" -EndDate "<ExDateTime>" -RecordType ExchangeAdmin -Operations Set-InboundConnector,New-InboundConnector 
+```powershell
+Search-UnifiedAuditLog -StartDate "<ExDateTime>" -EndDate "<ExDateTime>" -RecordType ExchangeAdmin -Operations Set-InboundConnector,New-InboundConnector
+```
 
 ### Step 2: Review and revert unauthorized change(s) in a connector 
 
-Sign into https://admin.exchange.microsoft.com/#/connectors. 
+1. Sign into https://admin.exchange.microsoft.com/#/connectors. 
 
-Review and revert unauthorized connector change(s). 
+2. Review and revert unauthorized connector change(s). 
 
 ### Step 3: Unblock the connector to re-enable mail flow 
 
-Sign into https://security.microsoft.com/restrictedentities. 
+1. Sign into https://security.microsoft.com/restrictedentities. 
 
-Select the restricted connector to unblock the connector. 
+2. Select the restricted connector to unblock the connector. 
 
-### Step 4: Investigate and remediate potentially compromised administrative user account.   
+### Step 4: Investigate and remediate potentially compromised administrative user account
 
-If a user with unauthorized connector activity identified in Step 1b above, you may investigate this user for potential compromise by following the instruction here: Responding to a Compromised Email Account - Office 365 | Microsoft Docs. 
+If a user with an unauthorized connector activity is identified, you can investigate this user for potential compromise. For more information, see [Responding to a Compromised Email Account](responding-to-a-compromised-email-account.md).
 
 ## More information
 
-- [Remove blocked connectors]
+- [Remove blocked connectors](remove-blocked-connectors.md)
 - [Remove blocked entities]
