@@ -21,7 +21,6 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn how to read and understand your bill or invoice for Microsoft business products."
-keywords: billing accounts, organization info, invoices
 ms.date: 05/04/2021
 ---
 
