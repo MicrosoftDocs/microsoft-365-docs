@@ -359,9 +359,20 @@ Examples:
 
 - Exchange: If you want to retain items in a mailbox for seven years, and a message was sent six years ago, the message will be retained for only one year. For Exchange items, the age is based on the date received for incoming email, or the date sent for outgoing email. Retaining items based on when it was last modified applies only to site content in OneDrive and SharePoint.
 
-At the end of the retention period, you choose whether you want the content to be permanently deleted:
+At the end of the retention period, you choose whether you want the content to be permanently deleted, or apply a different retention label:
 
 ![Retention settings page.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
+
+#### Relabeling at the end of the retention period
+
+> [!NOTE]
+> This option is currently in preview and subject to change
+
+When you configure a retention label to automatically apply a different retention label at the end of the retention period, the item is then subject to the retention settings of the newly selected retention label. Typically, you'll select a label that extends the retention period for the item. However, if there's also a change in whether the label [marks the item as a record or a regularly record](declare-records.md), the new retention label can also change the [restrictions for what action are allowed or blocked](records-management.md#records) for that item.
+
+For example, you create and configure a retention label for an industry-compliance requirement to retain content for three years after it's created, and mark the item as a record. When this label is applied, users won't be able to delete the item from their app, because that's one of the restrictions of a record. At the end of this three years, you want to automatically retain the content for two more years because of internal compliance policies, but there's no need to mark it as a record with the restrictions that this configuration applies. 
+
+You select the label setting to change the label at the end of the retention period, and choose a label that retains content for five years after the content was created, and doesn't mark the item as a record. With these concatenated settings, users will be able to delete the item from their app after three years but it remains accessible for eDiscovery searches for five years.
 
 ### Deleting content that's older than a specific age
 
