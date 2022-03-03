@@ -4,15 +4,14 @@ f1.keywords:
 - NOCSH
 ms.author: kwekua
 author: kwekua
-manager: svidican
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
-- Adm_O365
-
+- Adm_O365W
 ms.custom: 
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -59,7 +58,7 @@ Assign the Exchange admin role to users who need to view and manage your user's 
 
 ### Global admin
 
-Assign the global admin role to users who need global access to most management features and data across Microsoft online services. Giving too many users global access is a security risk and we recommend that you have between 2 and 4 Global admins. Only global admins can reset passwords for all user and add and manage domains. They can also open and manage support requests to Microsoft support . The person who signed up for Microsoft online services automatically becomes a global admin. [Learn more](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Assign the global admin role to users who need global access to most management features and data across Microsoft online services. Giving too many users global access is a security risk and we recommend that you have between 2 and 4 Global admins. Only global admins can reset passwords for all user and add and manage domains. They can also open and manage support requests to Microsoft support. The person who signed up for Microsoft online services automatically becomes a global admin. [Learn more](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### Global reader
 
