@@ -11,7 +11,7 @@
 - name: Set up and sign in
   items: 
     - name: Overview
-      href: m365bp-overview.md
+      href: m365bp-setup-overview.md
     - name: Set up Microsoft 365 Business Premium
       href: m365bp-setup.md
     - name: Set up Microsoft 365 for Campaigns
