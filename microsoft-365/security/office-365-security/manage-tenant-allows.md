@@ -106,7 +106,7 @@ In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to 
 > - Entries for spoofed senders never expire.
 > - Spoof supports both allow and block. URL supports only allow.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboraton** \> **Policies & rules** \> **Threat policies** \> **Tenant Allow/Block Lists** in the **Rules** section. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Tenant Allow/Block Lists** in the **Rules** section. Or, to go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. On the **Tenant Allow/Block List** page, select the **Spoofing** tab, and then click ![Add icon.](../../media/m365-cc-sc-create-icon.png) **Add**.
 
