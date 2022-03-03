@@ -49,7 +49,7 @@ You can apply the following filters to limit the list of alerts and get a more f
 
 ### Severity
 
-You can filter the alerts based on the severity.  
+You can filter the alerts based on their Severity.  
 
 |Alert severity|Description|
 |---|---|
@@ -73,13 +73,17 @@ So, for example:
 - An alert about malware detected while executing which can pose a threat not only to the individual device but to the organization, regardless if it was eventually blocked, may be ranked as "Medium" or "High".
 - Suspicious behavioral alerts, which weren't blocked or remediated will be ranked "Low", "Medium" or "High" following the same organizational threat considerations.
 
-#### Categories
+### Status
+
+You can choose to filter the list of alerts based on their Status.
+
+### Categories
 
 We've redefined the alert categories to align to the [enterprise attack tactics](https://attack.mitre.org/tactics/enterprise/) in the [MITRE ATT&CK matrix](https://attack.mitre.org/). New category names apply to all new alerts. Existing alerts will keep the previous category names.
 
 The table below lists the current categories and how they generally map to previous categories.
 
-You can choose to filter the alerts based on the following categories.
+You can choose to filter the alerts based on the following Categories.
 
 |New category|API category name|Detected threat activity or component|
 |---|---|---|
@@ -90,7 +94,7 @@ You can choose to filter the alerts based on the following categories.
 |Discovery|Discovery|Gathering information about important devices and resources, such as administrator computers, domain controllers, and file servers.|
 |Execution|Execution|Launching attacker tools and malicious code, including RATs and backdoors.|
 |Exfiltration|Exfiltration|Extracting data from the network to an external, attacker-controlled location.|
-|Impact| | |
+|Impact| |Trying to manipulate, interrupt, or destroy your systems and data|
 |Information governance| | |
 |Initial access|InitialAccess|Gaining initial entry to the target network, usually involving password-guessing, exploits, or phishing emails.|
 |Lateral movement|LateralMovement|Moving between devices in the target network to reach critical resources or gain network persistence.|
@@ -102,42 +106,22 @@ You can choose to filter the alerts based on the following categories.
 |Threat management| | |
 |Unwanted software|UnwantedSoftware|Low-reputation apps and apps that impact productivity and the user experience; detected as potentially unwanted applications (PUAs).|
 
-### Status
-
-You can choose to filter the list of alerts based on their status.
-
 ### Service sources
 
 Microsoft Threat Experts preview participants can now filter and see detections from the new threat experts-managed hunting service.
 
-Filter the alerts based on the following service sources, like Microsoft Defender for Endpoint, Microsoft 365 Defender, and App Governance.
+Filter the alerts based on the following Service sources:
 
-|Microsoft Defender for Endpoint Service sources|API value|
-|---|---|
-|3rd party sensors|ThirdPartySensors|
-|Antivirus|WindowsDefenderAv|
-|Automated investigation|AutomatedInvestigation|
-|Custom detection|CustomDetection|
-|Custom TI|CustomerTI|
-|EDR|WindowsDefenderAtp|
-|Microsoft 365 Defender|MTP|
-|Microsoft Threat Experts|ThreatExperts|
-|SmartScreen|WindowsDefenderSmartScreen|
+- Microsoft Defender for Identity
+- Microsoft Defender for Cloud Apps
+- Microsoft Defender for Endpoint
+- Microsoft 365 Defender
+- Microsoft Defender for Office 365
+- App Governance
+- AAD Identity Protection
 
 > [!NOTE]
 > The Antivirus filter will only appear if devices are using Microsoft Defender Antivirus as the default real-time protection antimalware product.
-
-|Microsoft 365 Defender Service sources|API value|
-|---|---|
-|Custom detection|CustomDetection|
-|Microsoft 365 Defender|MTP|
-|Microsoft Threat Experts|ThreatExperts|
-|Manual||
-
-|App Governance|API value|
-|---|---|
-|App governance Policy||
-|App governance Detection||
 
 ### Tags
 
@@ -149,7 +133,26 @@ You can filter the alerts based on Entity name or ID.
 
 ### Automated investigation state
 
-You can choose to filter the alerts based on their automated investigation state.
+You can choose to filter the alerts based on their Automated investigation state.
+
+### Policy 
+
+You can filter the alerts based on the following policies:
+
+- Activity from infrequent country
+- Admin Submission Result Completed
+- Admin triggered manual investigation of email
+- Admin triggered user compromise investigation
+- Anomalous Token 
+- Atypical travel
+- Creation of forwarding/redirect rule
+- Email messages containing malicious URL removed after delivery
+- Email messages containing malicious file removed after delivery
+- Email reported by user as malware or phish
+- Password Spray
+- Remediation action taken by admin on emails or URL or sender
+- Suspicious service creation 
+- Unfamiliar sign-in properties
 
 ## Related topics
 
