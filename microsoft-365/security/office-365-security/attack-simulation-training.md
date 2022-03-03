@@ -357,6 +357,7 @@ The following settings are available:
     - **Select launch time**
 - **Configure number of days to end simulation after**: The default value is 2.
 - **Enable region aware time zone delivery**: Deliver simulated attack messages to your employees during their working hours based on their region.
+- **Display the drive-by technique interstitial data gathered page**: You can show the overlay that comes up for the drive-bu URL technique attacks. To hide the overlay and go directly to the landing page, de-select this option.
 
 When you're finished, click **Next**.
 

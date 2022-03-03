@@ -58,8 +58,6 @@
          href: office-365-ti.md
        - name: Office 365 Security Incident Response
          href: office365-security-incident-response-overview.md
-       - name: Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
-         href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
    - name: Deploy
      items: 
      - name: Protect against threats
