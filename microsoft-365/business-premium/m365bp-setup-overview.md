@@ -31,7 +31,7 @@ description: "Setup overview for Microsoft 365 Business Premium for campaigns or
 
 ## Overview
 
-Chief, without delay, run (or have an Admin run) the [running the setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure your security and licenses for your teams. Follow the critical guidance and direction, and enable the security defaults. These measures are your first step and your earliest front-line defense before you will be able to successfully complete the larger missions ahead.
+Chief, without delay, run (or have an Admin run) the [setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure your security and licenses for your teams. Follow the critical guidance and direction, and enable the security defaults. These measures are your first step and your earliest front-line defense before you will be able to successfully complete the larger missions ahead.
 
 Your missions are as follows:
 
