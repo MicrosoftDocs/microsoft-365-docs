@@ -89,6 +89,11 @@ If you select this export option, the exported content is organized in the follo
   - Warnings and errors x of z.csv: This file includes information about errors encountered when trying to export from the review set.
   
   - Exchange: This folder contains all content from Exchange stored in PST files. Redacted PDF files cannot be included with this option. If an attachment is selected in the review set, the parent email will be exported with the attachment attached.
+      - This folder could also contain: 
+        - Any messages that were IRM protected and have been decoded. 
+        - Any messages that were error-remediated. 
+        - Any modern attachments/links referenced in e-mails. 
+      - Encrypted items are not added back into the PST.
   
   - SharePoint: This folder contains all native content from SharePoint in a native file format. Redacted PDF files cannot be included with this option.
 
