@@ -85,7 +85,7 @@ To show data about Windows 10 devices with Active sensor health state:
 #### Sensor health
 
 Displays information about the sensor state on devices, providing an aggregated view of devices that are active, inactive, experiencing impaired communications, or where no sensor data is reported.
-Devices that are either experiencing impaired communications, or those from which no sensor data is detected could expose your organization to risks, and warrant investigation. Likewise, devices that are inactive for extended periods of time could expose your organization to threats due to of out-of-date software; these also warrant investigation.
+Devices that are either experiencing impaired communications, or those from which no sensor data is detected could expose your organization to risks, and warrant investigation. Likewise, devices that are inactive for extended periods of time could expose your organization to threats due to out-of-date software; these also warrant investigation.
 
 #### OS systems and platforms
 
@@ -126,7 +126,7 @@ For the three cards that report about Microsoft Defender Antivirus version infor
 ##### Full report
 
 In any of the three _version_ cards, click **Full report** to display the nine most recent Microsoft Defender Antivirus _version_ reports for each of the three device types: Windows, Mac, and Linux; if fewer than nine exist, they are all shown. An **Other** category captures recent antivirus engine versions ranking tenth and below, if detected.
-A primary benefit of the three _version_ cards is that they provide quick indicators as to whether the most current versions of the antivirus engines, platforms, and security intelligence are being utilized. Coupled with the detailed information that is linked to the card, the versions cards become a powerful tool check if versions are up to date and to gather information about individual computers, or groups of computers.
+A primary benefit of the three _version_ cards is that they provide quick indicators as to whether the most current versions of the antivirus engines, platforms, and security intelligence are being utilized. Coupled with the detailed information that is linked to the card, the versions cards become a powerful tool to check if versions are up to date and to gather information about individual computers, or groups of computers.
 Ideally, when you run these reports, they will indicate that the most current antivirus versions are installed, as opposed to older versions.
 Use these reports to determine whether your organization is taking full advantage of the most current versions.
 
@@ -142,16 +142,16 @@ Reports on how many devices in your organization – on the date indicated on th
 |---|---|
 | 0 | Active |
 | 1 | Passive |
-| 2 | Disabled ( uninstalled, disabled, or SideBySidePassive {also know as Low Periodic Scan}) |
+| 2 | Disabled ( uninstalled, disabled, or SideBySidePassive {also known as Low Periodic Scan}) |
 | 3 | Others (Not running , Unknown and "") |
 | 4 | EDRBlocked |
 | 5 | PassiveAudit |
 
-Fillowing are descriptions for each mode:
+Following are descriptions for each mode:
 
 - **Active** mode - In active mode, Microsoft Defender Antivirus is used as the primary antivirus app on the device. Files are scanned, threats are remediated, and detected threats are listed in your organization's security reports and in your Windows Security app.
 - **Passive** mode - In passive mode, Microsoft Defender Antivirus is not used as the primary antivirus app on the device. Files are scanned, and detected threats are reported, but threats are not remediated by Microsoft Defender Antivirus. IMPORTANT: Microsoft Defender Antivirus can run in passive mode only on endpoints that are onboarded to Microsoft Defender for Endpoint. See [Requirements for Microsoft Defender Antivirus to run in passive mode](microsoft-defender-antivirus-compatibility.md#requirements-for-microsoft-defender-antivirus-to-run-in-passive-mode).
-- **Disabled** mode  - synonymous with uninstalled, disabled, sideBySidePassive, and Low Periodic Scan modes. When disabled, Microsoft Defender Antivirus is not used. Files are not scanned, and threats are not remediated. In general, Microsoft do not recommend disabling or uninstalling Microsoft Defender Antivirus.
+- **Disabled** mode  - synonymous with: uninstalled, disabled, sideBySidePassive, and Low Periodic Scan. When disabled, Microsoft Defender Antivirus is not used. Files are not scanned, and threats are not remediated. In general, Microsoft does not recommend disabling or uninstalling Microsoft Defender Antivirus.
 - **Others** mode -
 - **EDRBlocked** mode - In endpoint detection and response (EDR) blocked mode,
 - **PasiveAudit** mode -
