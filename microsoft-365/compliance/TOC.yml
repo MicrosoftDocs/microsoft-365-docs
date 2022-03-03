@@ -839,11 +839,10 @@
             - name: Manage custodian communications templates
               href: advanced-ediscovery-communications-library.md
         - name: Manage holds
+          href: managing-holds.md
           items:
-            -name: Manage holds
-             href: managing-holds.md
             -name: Use a script to create a holds report
-             href: create-a-report-on-holds-in-ediscovery-cases.md
+            href: create-a-report-on-holds-in-ediscovery-cases.md
         - name: Manage processing errors
           href: processing-data-for-case.md
           items: 
