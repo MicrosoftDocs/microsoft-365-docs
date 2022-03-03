@@ -15,6 +15,6 @@ description: "Set how long user's session will last in Microsoft 365 before they
 
 # Idle session timeout for Microsoft 365
 
-<!-- Add localization metadata, remove robots nofollow, AdminSurgePortfolio, admindeeplinkMAC -->
+<!-- Add metadata: localization, AdminSurgePortfolio, admindeeplinkMAC. remove robots nofollow -->
 
 Use idle session timeouts to configure a policy on how long users are idle in your organization before they are signed out of Microsoft 365 web apps. This helps protect sensitive company data from unauthorized access and adds another layer of security for end users who work on non-company or shared devices.
