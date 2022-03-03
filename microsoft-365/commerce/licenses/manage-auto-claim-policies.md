@@ -2,10 +2,10 @@
 title: "Manage auto-claim policies"
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
-ms.review: yinggiy, pablom
+ms.reviewer: yinggiy, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,8 +14,8 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_licensing
+- AdminSurgePortfolio
 description: "Learn how to create and manage auto-claim policies that automatically assign licenses to users for certain apps."
 search.appverid: MET150
 ms.date: 04/06/2021
@@ -27,12 +27,22 @@ An auto-claim policy lets users automatically claim a license for a product the 
 
 After you create an auto-claim policy, you can do the following tasks to manage the policy:
 
-- [Turn the policy on or off](#turn-a-policy-on-or-off)
-- [Edit the policy friendly name](#edit-the-policy-friendly-name)
-- [Add or remove backup products](#add-or-remove-backup-products)
-- [Manage the assigning apps and services](#change-the-assigning-apps-and-services)
-- [Change the assigning order](#change-the-assigning-order-for-backup-products)
-- [View a policy report](#view-an-auto-claim-policy-report)
+- [Manage auto-claim policies](#manage-auto-claim-policies)
+  - [Before you begin](#before-you-begin)
+  - [Turn the auto-claim policy feature on or off](#turn-the-auto-claim-policy-feature-on-or-off)
+    - [Turn on auto-claim policies](#turn-on-auto-claim-policies)
+    - [Turn off auto-claim policies](#turn-off-auto-claim-policies)
+  - [Create an auto-claim policy](#create-an-auto-claim-policy)
+  - [Turn a policy on or off](#turn-a-policy-on-or-off)
+  - [Edit the policy friendly name](#edit-the-policy-friendly-name)
+  - [Add or remove backup products](#add-or-remove-backup-products)
+    - [Add a backup product](#add-a-backup-product)
+    - [Remove a backup product](#remove-a-backup-product)
+  - [Change the assigning apps and services](#change-the-assigning-apps-and-services)
+  - [Change the assigning order for backup products](#change-the-assigning-order-for-backup-products)
+  - [View an auto-claim policy report](#view-an-auto-claim-policy-report)
+  - [Next steps](#next-steps)
+  - [Related content](#related-content)
 
 > [!IMPORTANT]
 > Auto-claim policies are currently only available for Microsoft Teams. More products will be available to use in the future.
