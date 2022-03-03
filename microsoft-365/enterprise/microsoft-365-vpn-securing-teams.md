@@ -30,7 +30,7 @@ description: "Securing Teams media traffic for VPN split tunneling"
 >- For information about how to configure Stream and live events in VPN environments, see [Special considerations for Stream and live events in VPN environments](microsoft-365-vpn-stream-and-live-events.md).
 >- For information about optimizing Microsoft 365 worldwide tenant performance for users in China, see [Microsoft 365 performance optimization for China users](microsoft-365-networking-china.md).
 
-Some administrators may require more detailed information on how call flows operate in Teams using a split tunneling model and how connections are secured.
+Some Microsoft Teams administrators may require detailed information on how call flows operate in Teams using a split tunneling model and how connections are secured.
 
 ## Configuration
 
