@@ -24,7 +24,7 @@ description: Learn how to generate a report that contains information about all 
 
 # Create a report on holds in eDiscovery cases
 
-The script in this article lets eDiscovery administrators and eDiscovery managers generate a report that contains information about all holds that are associated with eDiscovery cases in the the compliance center in Office 365 or Microsoft 365. The report contains information such as the name of the case a hold is associated with, the content locations that are placed on hold, and whether the hold is query-based. If there are cases that don't have any holds, the script will create an additional report with a list of cases without holds.
+The script in this article lets eDiscovery administrators and eDiscovery managers generate a report that contains information about all holds that are associated with Core and Advanced eDiscovery cases in the the Microsoft 365 compliance center. The report contains information such as the name of the case a hold is associated with, the content locations that are placed on hold, and whether the hold is query-based. If there are cases that don't have any holds, the script will create an additional report with a list of cases without holds.
 
 See the [More information](#more-information) section for a detailed description of the information included in the report.
 
@@ -195,6 +195,8 @@ After you've connected to Security & Compliance Center PowerShell, the next step
 The case holds report that's created when you run the script in this article contains the following information about each hold. As previously explained, you have to be an eDiscovery Administrator to return information for all holds in your organization. For more information about case holds, see [eDiscovery cases](./get-started-core-ediscovery.md).
 
 - The name of the hold and the name of the eDiscovery case that the hold is associated with.
+
+- Whether the hold is associate with a Core or Advanced eDiscovery case.
 
 - Whether or not the eDiscovery case is active or closed.
 
