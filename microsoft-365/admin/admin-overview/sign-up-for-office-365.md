@@ -2,8 +2,8 @@
 title: "How to sign up - Admin Help"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: seemg, pablom
 audience: Admin
@@ -16,11 +16,11 @@ ms.collection:
 - TRN_SMB
 - Adm_TOC
 ms.custom:
+- commerce_signup
 - TRN_M365B
 - OKR_SMB_Videos
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_signup
 - AdminTemplateSet
 - adminvideo
 - intro-get-started
@@ -64,6 +64,7 @@ Need help with choosing a plan? Sales consultants are available to answer your q
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
+
 ## Ready to sign up for a free trial or buy a subscription?
 
 Go to [Compare all products](https://products.office.com/compare-all-microsoft-office-products?tab=2) to choose the plan you want to buy and to start the sign-up wizard. 
@@ -72,9 +73,9 @@ If you start with a free trial, you can [buy it later](../../commerce/try-or-buy
   
 You don't need to cancel your trial. If you don't buy the trial subscription, it automatically expires at the end of the trial period, and all the information is permanently deleted.
 
-## Watch: Set up Microsoft 365 Business Premium
+## Watch: Sign up for Microsoft 365 Business Premium
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
 
 ::: moniker-end
 
@@ -101,6 +102,10 @@ You don't need to cancel your trial. If you don't buy the trial subscription, it
 
     > [!IMPORTANT]
     >  When you sign up, be sure to choose the best payment option for your organization. Changing payment options involves calling billing support.
+
+## Watch: Set up Microsoft 365 Business Premium
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 ## Related content
 

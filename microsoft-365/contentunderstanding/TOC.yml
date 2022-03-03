@@ -54,13 +54,16 @@
                 - name: Model usage analytics
                   href: model-usage-analytics.md
 
-
     - name: Prebuilt models
       items:
+            - name: Overview 
+              href: prebuilt-overview.md
             - name: Invoice and receipt prebuilt models 
               href: prebuilt-models.md
             - name: Apply a retention label 
               href: apply-a-retention-label-to-a-model.md
+            - name: Model usage analytics
+              href: model-usage-analytics.md
 
     - name: Content assembly
       items: 
@@ -122,6 +125,10 @@
               href: solution-manage-contracts-step2.md
             - name: Step 3. Use Power Automate
               href: solution-manage-contracts-step3.md
+        - name: Contracts Management site template
+          href: use-contracts-management-site.md 
+        - name: Content Center site template
+          href: use-content-center-site.md 
 
     - name: Extensibility
       href: /sharepoint/dev/apis/syntex/syntex-model-rest-api

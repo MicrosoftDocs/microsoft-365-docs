@@ -115,7 +115,7 @@ Back on the **Define retention settings** page, for **Start the retention period
 ### Step 3: Publish or auto-apply the event-based retention labels
 
 Just like any retention label, you need to publish or auto-apply an event-based label, for it to be manually or automatically applied to content:
-- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Publish retention labels and apply them in apps](create-apply-retention-labels.md)
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
 ### Step 4: Enter an asset ID
@@ -166,7 +166,7 @@ Finally, choose the date when the event occurred; this date is used as the start
 
 After creating an event, the retention settings take effect for the content that's already labeled and indexed. If the retention label is added to new content after the event is created, you must create a new event with the same details.
 
-Deleting an event doesn't cancel the retention settings that are now in effect for the content that's already labeled. To do that, create a new event with the same details, but leave the date blank. 
+Deleting an event doesn't cancel the retention settings that are now in effect for the content that's already labeled. Currently, you can't cancel events after they're triggered.
 
 ## Use Content Search to find all content with a specific label or asset ID
 

@@ -13,9 +13,7 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection:
-- M365-security-compliance
-- m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
 ---
@@ -33,7 +31,7 @@ Run '**MDEClientAnalyzer.cmd /?**' to see the list of available parameters and t
 ![Image of client analyzer parameters in command line.](images/d89a1c04cf8441e4df72005879871bd0.png)
 
 > [!NOTE]
-> When any advanced troubleshooting parameter is used, the analyzer also calls into [MpCmdRun.exe] [https://docs.microsoft.com/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus?view=o365-worldwide) to collect Microsoft Defender Antivirus related support logs.
+> When any advanced troubleshooting parameter is used, the analyzer also calls into [MpCmdRun.exe](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus) to collect Microsoft Defender Antivirus related support logs.
 
 **-h** - Calls into [Windows Performance Recorder](/windows-hardware/test/wpt/wpr-command-line-options) to collect a verbose general performance trace in addition to the standard log set.
 

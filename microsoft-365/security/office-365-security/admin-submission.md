@@ -62,11 +62,11 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 ## Report suspicious content to Microsoft
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Email & collaboration** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
-2. On the **Submissions** page, verify that the **Submitted for analysis** tab is selected, select the email you want to report, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+2. On the **Submissions** page, verify that the **Emails** or **Email attachments** or **URLs**  tab is selected based on the type of content you want to report, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
 
-3. Use the **Submit to Microsoft for analysis** flyout that appears to submit the email, URL, or email attachment as described in the following sections.
+3. Use the **Submit to Microsoft for analysis** flyout that appears to submit the respective type of content (email, URL, or email attachment) as described in the following sections.
 
    > [!NOTE]
    > File and URL submissions are not available in the clouds that do not allow for data to leave the environment. The ability to select File or URL will be greyed out.
@@ -113,7 +113,9 @@ The reported message will be marked as a false positive or a false negative. An 
 
 3. In the **Select a reason for submitting to Microsoft** section, select one of the following options:
    - **Should not have been blocked (False positive)**
-   - **Should have been blocked (False negative)**: In the **This URL should have been categorized as** section that appears, select **Phish** or **Malware**.
+   - **Should have been blocked (False negative)**: In the **This URL should have been categorized as** section that appears, select one of the following values (if you're not sure, use your best judgment):
+     - **Phish**
+     - **Malware**
 
 4. When you're finished, click **Submit**.
 
@@ -128,7 +130,9 @@ The reported message will be marked as a false positive or a false negative. An 
 
 3. In the **Select a reason for submitting to Microsoft** section, select one of the following options:
    - **Should not have been blocked (False positive)**
-   - **Should have been blocked (False negative)**: In the **This file should have been categorized as** section that appears, **Malware** is the only choice, and is automatically selected.
+   - **Should have been blocked (False negative)**: In the **This file should have been categorized as** section that appears, select one of the following values (if you're not sure, use your best judgment):
+     - **Phish**
+     - **Malware**
 
 4. When you're finished, click **Submit**.
 
@@ -140,7 +144,7 @@ The reported message will be marked as a false positive or a false negative. An 
 
 ## View admin submissions to Microsoft
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Email & collaboration** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 2. On the **Submissions** page, verify that the **Emails**, **URL**, or **Email attachment** tab is selected.
 
@@ -150,8 +154,8 @@ The reported message will be marked as a false positive or a false negative. An 
      - **Recipient**
      - **Date submitted**<sup>\*</sup>
      - **Reason for submitting**<sup>\*</sup>
-     - **Rescan status**<sup>\*</sup>
-     - **Rescan result**<sup>\*</sup>
+     - **Status**<sup>\*</sup>
+     - **Result**<sup>\*</sup>
      - **Filter verdict**
      - **Delivery/Block reason**
      - **Submission ID**
@@ -179,6 +183,9 @@ The reported message will be marked as a false positive or a false negative. An 
      - **Recipient**
      - **Name**
      - **Submitted by**
+     - **Reason for submitting**
+     - **Status**
+     - **Tags**
 
      When you're finished, click **Apply**.
 
@@ -190,12 +197,12 @@ The reported message will be marked as a false positive or a false negative. An 
      - **Type**
      - **Reason**
      - **Status**
-     - **Rescan result**
+     - **Result**
      - **Tags**
 
    - To export the entries, click **Export**. In the dialog that appears, save the .csv file.
 
-### Admin submission rescan details
+### Admin submission result details
 
 Messages that are submitted in admin submissions are reviewed and results shown in the submissions detail flyout:
 
@@ -204,13 +211,13 @@ Messages that are submitted in admin submissions are reviewed and results shown 
 - Current detonation results to see if the URLs or files contained in the message were malicious or not.
 - Feedback from graders.
 
-If an override was found, the rescan should complete in several minutes. If there wasn't a problem in email authentication or delivery wasn't affected by an override, then the feedback from graders could take up to a day.
+If an override was found, the result should be available in several minutes. If there wasn't a problem in email authentication or delivery wasn't affected by an override, then the feedback from graders could take up to a day.
 
 ## View user submissions to Microsoft
 
 If you've deployed the [Report Message add-in](enable-the-report-message-add-in.md), the [Report Phishing add-in](enable-the-report-phish-add-in.md), or people use the [built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), you can see what users are reporting on the **User reported message** tab.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Email & collaboration** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Submissions** page at **Actions & submissions** \> **Submissions**. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
 
 2. On the **Submissions** page, select the **User reported messages** tab.
 
@@ -221,12 +228,13 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
      - **Date reported**<sup>\*</sup>
      - **Sender**<sup>\*</sup>
      - **Reported reason**<sup>\*</sup>
-     - **Rescan result**<sup>\*</sup>
+     - **Result**<sup>\*</sup>
      - **Message reported ID**
      - **Network Message ID**
      - **Sender IP**
      - **Reported from**
      - **Phish simulation**
+     - **Converted to admin submission**
      - **Tags**<sup>\*</sup>
      - **Marked as**<sup>\*</sup>
      - **Marked by**
@@ -241,8 +249,10 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
      - **Message reported ID**
      - **Network Message ID**
      - **Sender**
-     - **Reported reason**: **Not junk**, **Phish**, or **Spam**.
+     - **Reported reason**: **Not junk**, **Phish**, or **Spam**
+     - **Reported from**: **Microsoft add-in** or **Third party add-in**
      - **Phish simulation**: **Yes** or **No**
+     - **Converted to admin submission**: **Yes** or **No**
      - **Tags**
 
      When you're finished, click **Apply**.
@@ -255,9 +265,10 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
      - **Reason**
      - **Sender**
      - **Reported by**
-     - **Rescan result**
+     - **Result**
      - **Reported from**
      - **Phish simulation**
+     - **Converted to admin submission**
      - **Tags**
    
    - To export the entries, click **Export**. In the dialog that appears, save the .csv file.
