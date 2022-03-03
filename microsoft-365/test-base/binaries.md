@@ -2,8 +2,8 @@
 title: Upload Application Binaries
 description: How to get started using Test Base for M365 #Required; article description that is displayed in search results.
 search.appverid: MET150
-author: mansipatel-usl
-ms.author: mapatel
+author: Tinacyt
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
