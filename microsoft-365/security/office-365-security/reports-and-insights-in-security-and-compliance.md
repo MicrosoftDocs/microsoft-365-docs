@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
   - MOE150
@@ -63,6 +63,6 @@ A wide variety of reports are available in the Security & Compliance Center. (Go
 
 ## Related topics
 
-[Microsoft 365 Defender portal](../defender/overview-security-center.md)
+[Microsoft 365 Defender portal](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
 
 [Protect against threats in Office 365](protect-against-threats.md)

@@ -2,17 +2,16 @@
 title: Enable block at first sight to detect malware in seconds
 description: Turn on the block at first sight feature to detect and block malware within seconds.
 keywords: scan, block at first sight, malware, first sight, cloud, defender, antivirus
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Priority
+ms.localizationpriority: high
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 07/29/2021
+ms.date: 10/18/2021
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
@@ -22,7 +21,8 @@ ms.collection: M365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 This article describes an antivirus/antimalware feature known as "block at first sight", and describes how to enable block at first sight for your organization.
 
@@ -60,7 +60,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 
 - In many cases, this process can reduce the response time for new malware from hours to seconds.
 
-- You can [specify how long a file should be prevented from running](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) while the cloud-based protection service analyzes the file. And, you can [customize the message displayed on users' desktops](/windows/security/threat-protection//windows-defender-security-center/wdsc-customize-contact-information.md) when a file is blocked. You can change the company name, contact information, and message URL.
+- You can [specify how long a file should be prevented from running](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) while the cloud-based protection service analyzes the file. And, you can [customize the message displayed on users' desktops](/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information) when a file is blocked. You can change the company name, contact information, and message URL.
 
 ## Turn on block at first sight with Microsoft Intune
 
@@ -101,7 +101,7 @@ Microsoft Defender Antivirus uses multiple detection and prevention technologies
 
    - **Turn on cloud-delivered protection**: Yes
    - **Cloud-delivered protection level**: High
-   - **Defender Cloud Extended Timeout in Seconds**: 50
+   - **Microsoft Defender Antivirus Extended Timeout in Seconds**: 50
 
    :::image type="content" source="images/endpointmgr-antivirus-cloudprotection.png" alt-text="Block at first sight settings in Endpoint Manager.":::
 
@@ -148,6 +148,9 @@ To validate that the feature is working, download the [Block at first sight samp
 
 To validate that cloud-enabled protection is working, follow the guidance in [Validate connections between your network and the cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
 
+> [!NOTE]
+> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
+
 ## Turn off block at first sight
 
 > [!CAUTION]
@@ -169,7 +172,7 @@ You might choose to disable block at first sight if you want to retain the prere
 
    - Set **Turn on cloud-delivered protection** to **No** or **Not configured**.
    - Set **Cloud-delivered protection level** to **Not configured**.
-   - Clear the check box for **Defender Cloud Extended Timeout In Seconds**.
+   - Clear the check box for **Microsoft Defender Antivirus Extended Timeout In Seconds**.
 
 6. Review and save your settings.
 
@@ -194,7 +197,7 @@ If you are not an enterprise admin or an IT Pro, but you have questions about bl
 
 If you have a personal device that is not managed by an organization, you might be wondering how to turn block at first sight on or off. You can use the Windows Security app to manage block at first sight.
 
-1. On your Windows 10 computer, open the Windows Security app.
+1. On your Windows 10 or Windows 11 computer, open the Windows Security app.
 
 2. Select **Virus & threat protection**.
 

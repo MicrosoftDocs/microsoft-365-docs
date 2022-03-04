@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 07/09/2021
@@ -18,8 +18,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365solution-overview
+  - m365solution-scenario
   - m365solution-evalutatemtp
+ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
 ---
@@ -35,15 +36,15 @@ Once you have performed an [incident response for a simulated attack](eval-defen
 
 |Capability |Description |
 |:-------|:-----|
-| [Prioritize incidents](#prioritize-incidents) | Use filtering and sorting of the incidents queue to determine which incidents to address next. |
-| [Manage incidents](#manage-incidents) | Modify incident properties to ensure correct assignment, add tags and comments, and to resolve an incident. |
-| [Automated investigation and response](#examine-automated-investigation-and-response-with-the-action-center) | Automated investigation and response (AIR) capabilities that can help your security operations team address threats more efficiently and effectively. The Action center is a "single pane of glass" experience for incident and alert tasks such as approving pending remediation actions. |
-| [Advanced hunting](#advanced-hunting) | A query-based threat-hunting tool that lets you proactively inspect events in your network and locate threat indicators and entities. You also use advanced hunting during the investigation and remediation of an incident. |
+| [Prioritizing incidents](#prioritize-incidents) | Use filtering and sorting of the incidents queue to determine which incidents to address next. |
+| [Managing incidents](#manage-incidents) | Modify incident properties to ensure correct assignment, add tags and comments, and to resolve an incident. |
+| [Automated investigation and response](#examine-automated-investigation-and-response-with-the-action-center) | Use automated investigation and response (AIR) capabilities to help your security operations team address threats more efficiently and effectively. The Action center is a "single pane of glass" experience for incident and alert tasks such as approving pending remediation actions. |
+| [Advanced hunting](#use-advanced-hunting) | Use queries to proactively inspect events in your network and locate threat indicators and entities. You also use advanced hunting during the investigation and remediation of an incident. |
 
 
 ## Prioritize incidents
 
-You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
+You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. Here's an example.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Example of the incident queue.":::
 
@@ -55,7 +56,7 @@ To examine the list of incidents and prioritize their importance for assignment 
 
 - Use filtering to focus on a specific scenario or threat. Applying filters on the incident queue can help determine which incidents require immediate attention. 
 
-From the default incident queue, select **Filters** to see a **Filters** pane, from which you can specify a specific set of incidents. Here is an example.
+From the default incident queue, select **Filters** to see a **Filters** pane, from which you can specify a specific set of incidents. Here's an example.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Example of the filters pane for the incident queue.":::
 
@@ -82,9 +83,9 @@ Here are the ways you can manage your incidents:
 
   Add tags that your security team uses to classify incidents, which can be later filtered.
   
-- Assign the incident to yourself
+- Assign the incident
 
-  Assign it to your user account name, which can be later filtered.
+  Assign it to a user account name, which can be later filtered.
   
 - Resolve an incident
 
@@ -116,7 +117,7 @@ Approve (or reject) pending actions as soon as possible so that your automated i
 
 For more information, see [Automated investigation and response](m365d-autoir.md) and [Action center](m365d-action-center.md).
 
-## Advanced hunting
+## Use advanced hunting
 
 > [!NOTE]
 > Before we walk you through the advanced hunting simulation, watch the following video to understand advanced hunting concepts, see where you can find it in the portal, and know how it can help you in your security operations.
@@ -160,7 +161,7 @@ There's a single internal mailbox and device required for this simulation. You'l
 
 #### Go hunting
 
-1. Open the [Microsoft 365 Defender portal](https://security.microsoft.com/).
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 2. From the navigation pane, select **Hunting > Advanced hunting**.
 
@@ -181,12 +182,12 @@ There's a single internal mailbox and device required for this simulation. You'l
       > [!NOTE]
       > See the next step for filtering options to limit data return.
 
-      ![Example of the advanced hunting query results.](../../media/mtp/fig19.png)
+      ![Example of the advanced hunting query results.](../../media/advanced-hunting-incident-response-try-1.png)
 
         > [!NOTE]
         > Advanced hunting displays query results as tabular data. You can also opt to view the data in other format types such as charts.
 
-   1. Look at the results and see if you can identify the email you opened. It may take up to two hours for the message to show up in advanced hunting. To narrow down the results, you can add the **where** condition to your query to only look for emails that have "yahoo.com" as their SenderMailFromDomain. Here is an example.
+   1. Look at the results and see if you can identify the email you opened. It may take up to two hours for the message to show up in advanced hunting. To narrow down the results, you can add the **where** condition to your query to only look for emails that have "yahoo.com" as their SenderMailFromDomain. Here's an example.
 
       ```console
       EmailEvents
@@ -195,7 +196,7 @@ There's a single internal mailbox and device required for this simulation. You'l
 
    1. Click the resulting rows from the query so you can inspect the record.
 
-      ![Example of the inspect record side panel which opens up when an advanced hunting result is selected.](../../media/mtp/fig21.png)
+      ![Example of the inspect record side panel which opens up when an advanced hunting result is selected.](../../media/advanced-hunting-incident-response-try-2.png)
 
 4. Now that you have verified that you can see the email, add a filter for the attachments. Focus on all emails with attachments in the environment. For this simulation, focus on inbound emails, not those that are being sent out from your environment. Remove any filters you have added to locate your message and add "| where **AttachmentCount > 0** and **EmailDirection** == **"Inbound""**
 
@@ -253,7 +254,7 @@ Custom detections will run the query according to the frequency you set, and the
 
 1. On the query page, remove lines 7 and 8 that were added in step 7 of the Go hunting instructions and click **Create detection rule**.
 
-   ![Example of where you can click create detection rule in the the advanced hunting page.](../../media/mtp/fig22.png)
+   ![Example of where you can click create detection rule in the the advanced hunting page.](../../media/advanced-hunting-incident-response-try-3.png)
 
    > [!NOTE]
    > If you click **Create detection rule** and you have syntax errors in your query, your detection rule won't be saved. Double-check your query to ensure there's no errors.
@@ -288,24 +289,6 @@ Custom detections will run the query according to the frequency you set, and the
 
    ![Example of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on.](../../media/mtp/fig28.png)
 
-<!--
-
-### Advanced hunting walk-through exercises
-
-To learn more about advanced hunting, the following webcasts will walk you through the capabilities of advanced hunting within Microsoft 365 Defender to create cross-pillar queries, pivot to entities, and create custom detections and remediation actions.
-
-> [!NOTE]
-> Be prepared with your own GitHub account to run the hunting queries in your pilot test lab environment.
-
-|Title|Description|Download MP4|Watch on YouTube|CSL file to use|
-|---|---|---|---|---|
-|Episode 1: KQL fundamentals|We'll cover the basics of advanced hunting capabilities in Microsoft 365 Defender. Learn about available advanced hunting data and basic KQL syntax and operators.|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[Episode 1: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
-|Episode 2: Joins|We'll continue learning about data in advanced hunting and how to join tables together. Learn about inner, outer, unique, and semi joins, and the nuances of the default Kusto innerunique join.|[MP4](https://aka.ms/MTP22JUL20_MP4)|[YouTube](https://youtu.be/LMrO6K5TWOU)|[Episode 2: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl)|
-|Episode 3: Summarizing, pivoting, and visualizing data|Now that we're able to filter, manipulate, and join data, it's time to start summarizing, quantifying, pivoting, and visualizing. In this episode, we'll cover the summarize operator and some of the calculations you can perform while diving into additional tables in the advanced hunting schema. We turn our datasets into charts that can help improve analysis.|[MP4](https://aka.ms/MTP29JUL20_MP4)|[YouTube](https://youtu.be/UKnk9U1NH6Y)|[Episode 3: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl)|
-|Episode 4: Let's hunt! Applying KQL to incident tracking|Time to track some attacker activity! In this episode, we'll use our improved understanding of KQL and advanced hunting in Microsoft 365 Defender to track an attack. Learn some of the tips and tricks used in the field to track attacker activity, including the ABCs of cybersecurity and how to apply them to incident response.|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[Episode 4: CSL file in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
-|
-
---> 
 
 ### Expert training on advanced hunting
 

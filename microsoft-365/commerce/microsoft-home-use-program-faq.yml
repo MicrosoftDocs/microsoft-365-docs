@@ -1,21 +1,21 @@
 ### YamlMime:FAQ
 metadata:
   title: "Microsoft Home Use Program frequently-asked questions (FAQ)"
-  ms.author: cmcatee
   author: cmcatee-MSFT
+  ms.author: cmcatee
   manager: scotv
   ms.reviewer: tugu, jmueller
   audience: Admin
   ms.topic: reference
   ms.service: o365-administration
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.collection: 
   - M365-subscription-management
   - Adm_O365
   ms.custom: 
+  - commerce_subscriptions
   - okr_SMB
   - AdminSurgePortfolio
-  - commerce_subscriptions
   search.appverid: MET150 
   description: "Frequently-asked questions (FAQ) about the Microsoft Home Use Program."
   ms.date: 05/01/2021
@@ -42,7 +42,7 @@ sections:
         answer: |
           Discounts on Microsoft 365 Family and Personal subscriptions are offered to eligible companies worldwide with these exceptions:
           
-          - Macao, Russia and Venezuela: This offer is not available in these markets.
+          - Lebanon, Macao, Russia and Venezuela: This offer is not available in these markets.
           - China and Hong Kong: a one-year subscription is available in these markets. For China, visit [Microsoft 365 in China](https://www.microsoftstore.com.cn/home-use-program/invite). For Hong Kong, visit [Buy Microsoft 365 at a discounted price](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).
           - Japan: Microsoft 365 Family is not available.
           - Discounts on select Surface devices and accessories are offered to eligible companies in select markets. 
@@ -96,9 +96,9 @@ sections:
           For issues viewing the benefit after you have already accessed Microsoft Store for Business, see [Store for Business Admin support](/microsoft-store/)
           
       - question: |
-          Why am I not seeing an option to purchase Visio Professional 2019 and/or Project Professional 2019?
+          Why am I not seeing an option to purchase Visio Professional 2021 and/or Project Professional 2021?
         answer: |
-          If one of your employees took advantage of the previous program and is looking for discounts on Visio Professional 2019 and/or Project Professional 2019, please go through the eligibility validation process and, once signed in with your personal Microsoft account, go to **Other Office products** to purchase these products. If you don't see expected discounts applied, contact your employer’s Home Use Program administrator to ask about these additional benefits.
+          If one of your employees took advantage of the previous program and is looking for discounts on Visio Professional 2021 and/or Project Professional 2021, please go through the eligibility validation process and, once signed in with your personal Microsoft account, go to **Other Office products** to purchase these products. If you don't see expected discounts applied, contact your employer’s Home Use Program administrator to ask about these additional benefits.
 
       - question: |
           What if my employees have questions about this program or need support with purchasing and installation?

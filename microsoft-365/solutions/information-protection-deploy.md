@@ -9,13 +9,13 @@ ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-overview
-ms.custom:
+ms.custom: admindeeplinkCOMPLIANCE
 description: Configure information protection in Microsoft 365 for data privacy regulations like GDPR and the California Consumer Privacy Act (CCPA), including Microsoft Teams, SharePoint, and email.
 
 ---
@@ -69,7 +69,7 @@ For more information, see [Assess data privacy risks and identify sensitive item
 
 ## Track: Run risk assessments and check your compliance score
 
-Compliance Manager, available in the Microsoft 365 compliance center, provides you with a built-in ability to track and manage improvement actions overall as well as those related to multiple data privacy regulations that apply to you.
+Compliance Manager, available in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, provides you with a built-in ability to track and manage improvement actions overall as well as those related to multiple data privacy regulations that apply to you.
 
 You can use built in assessment templates specific to each regulation, where you can track action items for each assessment template selected, as well as view specific regulatory controls, and relate them to specific actions.
 

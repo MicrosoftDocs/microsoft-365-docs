@@ -2,11 +2,10 @@
 title: Cloud protection and sample submission in Microsoft Defender Antivirus
 description: Learn about cloud-delivered protection and Microsoft Defender Antivirus
 keywords: Microsoft Defender Antivirus, next-generation technologies, antivirus sample submission, next-generation av, machine learning, antimalware, security, defender, cloud, cloud-delivered protection
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: mkaminska
@@ -14,15 +13,14 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 08/31/2021
+ms.date: 02/24/2022
 ms.collection: M365-security-compliance
 ---
 
 # Cloud protection and sample submission in Microsoft Defender Antivirus
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 
 Microsoft Defender Antivirus uses many intelligent mechanisms for detecting malware. One of the most powerful capabilities is the ability to apply the power of the cloud to detect malware and perform rapid analysis. Cloud protection and automatic sample submission work together with Microsoft Defender Antivirus to help protect against new and emerging threats. 
@@ -98,7 +96,7 @@ For information about configuration options using Intune, Configuration Manager,
 
 ## Examples of metadata sent to the cloud protection service
 
-:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="Figure 2. Examples of metadata sent to Microsoft Defender Cloud Protection":::
+:::image type="content" source="images/cloud-protection-metadata-sample.png" alt-text="image depicting examples of metadata sent to cloud protection in Microsoft Defender Antivirus":::
 
 The following table lists examples of metadata sent for analysis by cloud protection:
 
@@ -137,3 +135,5 @@ There are two more scenarios where Defender for Endpoint might request a file sa
 ## See also
 
 [Next-generation protection overview](next-generation-protection.md)
+
+[Configure remediation for Microsoft Defender Antivirus detections.](configure-remediation-microsoft-defender-antivirus.md)

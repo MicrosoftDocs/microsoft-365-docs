@@ -7,7 +7,7 @@ audience: ITPro
 ms.date: 05/15/2019
 ms.topic: conceptual
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - M365-subscription-management

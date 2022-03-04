@@ -11,7 +11,7 @@ f1.keywords:
   - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -37,7 +37,7 @@ Microsoft 365 Defender can help address several aspects of incident prevention:
 - Implementing a [Zero Trust](/security/zero-trust/) framework
 - Determining your security posture by assigning a score with [Microsoft Secure Score](microsoft-secure-score.md)
 - Preventing threats through vulnerability assessments in [Threat and Vulnerability Management](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
-- Understanding the latest security threats so you can prepare for them
+- Understanding the latest security threats so you can prepare for them with [threat analytics](threat-analytics.md)
 
 ## Step 1. Implement Zero Trust
 
@@ -77,7 +77,7 @@ Threat analytics also looks at your configuration and alerts to determine how at
 
 You can implement the recommendations of an emerging threat to strengthen your security posture and minimize your attack surface area.
 
-Make time in your schedule to regularly check the [Threat Analytics](threat-analytics.md) section of the Microsoft 365 Defender portal.
+Make time in your schedule to regularly check the [Threat Analytics](threat-analytics.md) section of the Microsoft 365 Defender portal. See the [example security operations for Microsoft 365 Defender](incidents-overview.md#example-security-operations-for-microsoft-365-defender) for more information.
 
 ## Next step
 

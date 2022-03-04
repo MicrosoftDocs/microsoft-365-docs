@@ -2,15 +2,13 @@
 title: Create and manage device groups in Microsoft Defender for Endpoint
 description: Create device groups and set automated remediation levels on them by confirming the rules that apply on the group
 keywords: device groups, groups, remediation, level, rules, aad group, role, assign, rank
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -22,10 +20,10 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 - Azure Active Directory
 - Office 365
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -62,7 +60,7 @@ As part of the process of creating a device group, you'll:
 3. Enter the group name and automation settings and specify the matching rule that determines which devices belong to the group. See [How the automated investigation starts](automated-investigations.md#how-the-automated-investigation-starts).
 
     > [!TIP]
-    > If you want to group devices by organizational unit, you can configure the registry key for the group affiliation. For more information on device tagging, see [Create and manage device tags](machine-tags.md).
+    > If you want to use tagging for grouping devices, see [Create and manage device tags](machine-tags.md).
 
 4. Preview several devices that will be matched by this rule. If you're satisfied with the rule, click the **User access** tab.
 
@@ -97,7 +95,6 @@ Device group definitions can also include multiple values for each condition. Yo
 
 > [!TIP]
 > Use the 'OR' operator between rows of the same condition type, which allows multiple values per property.
->
 > You can add up to 10 rows (values) for each property type - tag, device name, domain.
 
 For more information on linking to device groups definitions, see [Device groups - Microsoft 365 security](https://sip.security.microsoft.com/homepage).

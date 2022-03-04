@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
   - MET150
 ms.collection:
@@ -40,7 +40,7 @@ You use the _advanced delivery policy_ in Microsoft 365 to prevent inbound messa
 - [AIR and clustering in Defender for Office 365](office-365-air.md) ignores these messages.
 - Specifically for third-party phishing simulations:
   - [Admin submissions](admin-submission.md) generates an automatic response saying that the message is part of a phishing simulation campaign and isn't a real threat. Alerts and AIR will not be triggered. The admin submissions experience will show these messages as a simulated threat.
-  - When a user reports a phishing simulation message using the [Report Phishing add-in for Outlook](enable-the-report-message-add-in.md), the system will not generate an alert, investigation, or incident. The message will also show up on the User reported messages tab of the submissions page.
+  - When a user reports a phishing simulation message using the [Report Message or the Report Phishing add-ins](enable-the-report-message-add-in.md), the system will not generate an alert, investigation, or incident. The links or files will not be detonated, but the message will also show up on the **User reported messages** tab of the **Submissions** page.
   - [Safe Links in Defender for Office 365](safe-links.md) doesn't block or detonate the specifically identified URLs in these messages at time of click. URLs are still wrapped, but they aren't blocked.
   - [Safe Attachments in Defender for Office 365](safe-attachments.md) doesn't detonate attachments in these messages.
 
@@ -71,7 +71,7 @@ Messages that are identified by the advanced delivery policy aren't security thr
 
 ## Use the Microsoft 365 Defender portal to configure SecOps mailboxes in the advanced delivery policy
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. To go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
 
 2. On the **Advanced delivery** page, verify that the **SecOps mailbox** tab is selected, and then do one of the following steps:
    - Click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
@@ -91,7 +91,7 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
 
 ## Use the Microsoft 365 Defender portal to configure third-party phishing simulations in the advanced delivery policy
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. To go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
 
 2. On the **Advanced delivery** page, select the **Phishing simulation** tab, and then do one of the following steps:
    - Click ![Edit icon.](../../media/m365-cc-sc-edit-icon.png) **Edit**.
@@ -99,7 +99,7 @@ The SecOps mailbox entries that you configured are displayed on the **SecOps mai
 
 3. On the **Edit third-party phishing simulation** flyout that opens, configure the following settings:
 
-   - **Domain**: Expand this setting and enter at least one email address domain (for example, contoso.com) by clicking in the box, entering a value, and then pressing Enter or selecting the value that's displayed below the box. Repeat this step as many times as necessary. You can add up to 10 entries.
+   - **Domain**: Expand this setting and enter at least one email address domain (for example, contoso.com) by clicking in the box, entering a value, and then pressing Enter or selecting the value that's displayed below the box. Repeat this step as many times as necessary. You can add up to 20 entries.
 
      > [!NOTE]
      > Use the domain from the `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) that's used in the SMTP transmission of the message **or** a DomainKeys Identified Mail (DKIM) domain as specified by your phishing simulation vendor. 
@@ -134,7 +134,7 @@ The third-party phishing simulation entries that you configured are displayed on
 
 In addition to the two scenarios that the advanced delivery policy can help you with, there are other scenarios that might require you bypass filtering:
 
-- **Third-party filters**: If your domain's MX record *doesn't* point to Office 365 (messages are routed somewhere else first), [secure by default](secure-by-default.md) *is not available*. If you'd like to add protection, you'll need to enable Enhanced Filtering for Connectors (also known as *skip listing*). For more information, see [Manage mail flow using a third-party cloud service with Exchange Online](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud). If you don't want Enhanced Filtering for Connectors, use mail flow rules (also known as transport rules) to bypass Microsoft filtering for messages that have already been evaluated by third-party filtering. For more information, see [Use mail flow rules to set the SCL in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md).
+- **Third-party filters**: If your domain's MX record *doesn't* point to Office 365 (messages are routed somewhere else first), [secure by default](secure-by-default.md) *is not available*. If you'd like to add protection, you'll need to enable Enhanced Filtering for Connectors (also known as *skip listing*). For more information, see [Manage mail flow using a third-party cloud service with Exchange Online](/exchange/mail-flow-best-practices/manage-mail-flow-using-third-party-cloud). If you don't want Enhanced Filtering for Connectors, use mail flow rules (also known as transport rules) to bypass Microsoft filtering for messages that have already been evaluated by third-party filtering. For more information, see [Use mail flow rules to set the SCL in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 - **False positives under review**: You might want to temporarily allow certain messages that are still being analyzed by Microsoft via [admin submissions](admin-submission.md) to report known good messages that are incorrectly being marked as bad to Microsoft (false positives). As with all overrides, we ***highly recommended*** that these allowances are temporary.
 

@@ -9,13 +9,14 @@ audience: Admin
 ms.topic: how-to
 ms.date:
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
   - MET150
   - MOE150
 ms.assetid:
 ms.collection:
   - M365-security-compliance
+ms.custom:
 description: Admins can learn how to view and configure global settings (the 'Block the following URLs' list and protection for Office 365 apps) for Safe Links in Microsoft Defender for Office 365.
 ms.technology: mdo
 ms.prod: m365-security
@@ -45,7 +46,7 @@ You can configure the global Safe Links settings in the Microsoft 365 Defender p
 
 ## What do you need to know before you begin?
 
-- There is no built-in or default Safe Links policy, so you need to create at least one Safe Links policy in order for the **Block the following URLs** list to be active. For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](set-up-safe-links-policies.md).
+- Although there's no default Safe Links policy, the **Built-in protection** preset security policy provides Safe Links protection to all recipients (users who aren't defined in custom Safe Links policies). For more information, see [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md). You can also create Safe Links policies to apply to specific users, group, or domains. For instructions, see [Set up Safe Links policies in Microsoft Defender for Office 365](set-up-safe-links-policies.md).
 
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Safe Links** page, use <https://security.microsoft.com/safelinksv2>.
 
@@ -72,7 +73,7 @@ You can configure the global Safe Links settings in the Microsoft 365 Defender p
 
 The **Block the following URLs** list identifies the links that should always be blocked by Safe Links scanning in supported apps. For more information, see ["Block the following URLs" list for Safe Links](safe-links.md#block-the-following-urls-list-for-safe-links).
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Links** in the **Policies** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Links** in the **Policies** section. To go directly to the **Safe Links** page, use <https://security.microsoft.com/safelinksv2>.
 
 2. On the **Safe Links** page, click **Global settings**. In the **Safe Links policy for your organization** fly out that appears, go to the **Block the following URLs** box.
 
@@ -117,7 +118,7 @@ You can use the **Get-AtpPolicyForO365** cmdlet to view existing entries in the 
 
 Safe Links protection for Office 365 apps applies to documents in supported Office desktop, mobile, and web apps. For more information, see [Safe Links settings for Office 365 apps](safe-links.md#safe-links-settings-for-office-365-apps).
 
-1. In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Links** in the **Policies** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Links** in the **Policies** section. To go directly to the **Safe Links** page, use <https://security.microsoft.com/safelinksv2>.
 
 2. On the **Safe Links** page, click **Global settings**. In the **Safe Links policy for your organization** fly out that appears, configure the following settings in the **Settings that apply to content in supported Office 365 apps** section:
 
@@ -153,7 +154,7 @@ For detailed syntax and parameter information, see [Set-AtpPolicyForO365](/power
 
 To verify that you've successfully configured the global settings for Safe Links (the **Block the following URLs** list and the Office 365 app protection settings), do any of the following steps:
 
-- In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Links** in the **Policies** section \> click **Global settings**, and verify the settings in the fly out that appears.
+- On the **Safe Links** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/safelinksv2>, click **Global settings**, and verify the settings in the fly out that appears.
 
 - In Exchange Online PowerShell or Exchange Online Protection PowerShell, run the following command and verify the settings:
 

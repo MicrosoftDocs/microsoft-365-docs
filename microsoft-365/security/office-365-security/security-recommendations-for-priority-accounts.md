@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.date: 
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
   - MET150
   - MOE150
@@ -18,6 +18,7 @@ ms.collection:
   - M365-security-compliance
   - m365solution-overview
   - m365solution-protecthve
+ms.custom:
 description: Admins can learn how to elevate the security settings and use reports, alerts, and investigations for priority accounts in their Microsoft 365 organizations.
 ms.technology: mdo
 ms.prod: m365-security
@@ -125,7 +126,7 @@ In addition, Microsoft recommends that users take the actions described in this 
 
 - Using strong passwords
 - Protecting devices
-- Enabling security features on Windows 10 and Mac PCs (for unmanaged devices)
+- Enabling security features on Windows and Mac PCs (for unmanaged devices)
 
 ## See also
 

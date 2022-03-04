@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-collaboration
 - m365solution-collabgovernance
@@ -130,7 +130,7 @@ Ultimately, the success of your governance planning efforts depends on how well 
 
 ## Related topics
 
-[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Collaboration governance planning recommendations](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Governance in the Microsoft Cloud Adoption Framework for Azure](/azure/cloud-adoption-framework/govern)
 

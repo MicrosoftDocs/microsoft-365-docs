@@ -7,7 +7,7 @@ ms.date: 12/29/2016
 audience: End User
 ms.topic: overview
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: Ent_O365
 search.appverid:
 - MET150

@@ -9,7 +9,7 @@ ms.date: 4/30/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
@@ -20,6 +20,7 @@ description: Learn about the new Office 365 Message Encryption capabilities that
 ms.custom: 
 - seo-marvel-apr2020
 - admindeeplinkMAC
+- admindeeplinkEXCHANGE
 ---
 
 # Set up new Message Encryption capabilities
@@ -120,7 +121,7 @@ For steps on creating mail flow rules for OME, see [Define mail flow rules to en
 
 To update existing rules to use the new OME capabilities:
 
-1. In the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), go to **Admin centers > Exchange**.
+1. In the Microsoft 365 admin center, go to **Admin centers** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>.
 2. In the Exchange admin center, go to **Mail flow > Rules**.
 3. For each rule, in **Do the following**:
     - Select **Modify the message security**.

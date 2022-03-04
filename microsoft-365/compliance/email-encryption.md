@@ -9,7 +9,7 @@ ms.date: 8/28/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150

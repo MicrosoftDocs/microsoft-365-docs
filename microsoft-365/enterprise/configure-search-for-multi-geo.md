@@ -9,7 +9,7 @@ ms.topic: article
 ms.service: o365-solutions
 ms.custom: seo-marvel-mar2020
 ms.collection: Strat_SP_gtc
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Learn how to configure search in a multi-geo environment. Only some clients, such as OneDrive, can return results in a multi-geo environment.

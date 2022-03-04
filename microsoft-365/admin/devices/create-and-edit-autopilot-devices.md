@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
@@ -30,6 +30,9 @@ description: "Learn how to upload devices using AutoPilot in Microsoft 365 Busin
 ---
 
 # Create and edit AutoPilot devices
+
+> [!NOTE]
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
 
 ## Upload a list of devices
 
@@ -58,3 +61,7 @@ Devices must meet these requirements:
 2. On the **Device** panel, select a profile from the **Assigned profile** drop-down. 
     
     If you don't have any profiles yet, see [Create and edit AutoPilot profiles](create-and-edit-autopilot-profiles.md) for instructions. 
+
+## See also
+
+[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)

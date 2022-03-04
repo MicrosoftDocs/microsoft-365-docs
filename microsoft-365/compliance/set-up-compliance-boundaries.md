@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -103,6 +103,9 @@ Using the Contoso compliance boundaries scenario, four role groups need to be cr
   
 To meet the requirements of the Contoso compliance boundaries scenario, you would also remove the **Hold** and **Export** roles from the investigators role groups to prevent investigators from placing holds on content locations and exporting content from a case.
 
+> [!IMPORTANT]
+> If a role is added or removed from a role group that you've added as a member of a case, then the role group will be automatically removed as a member of the case (or any case the role group is a member of). The reason for this is to protect your organization from inadvertently providing additional permissions to members of a case. Similarly, if a role group is deleted, it will be removed from all cases it was a member of.
+
 ## Step 3: Create a search permissions filter to enforce the compliance boundary
 
 After you've created role groups for each agency, the next step is to create the search permissions filters that associate each role group to its specific agency and defines the compliance boundary itself. You need to create one search permissions filter for each agency. For more information about creating security permissions filters, see [Configure permissions filtering for Content Search](permissions-filtering-for-content-search.md).
@@ -154,7 +157,7 @@ Here's how the search permission filters are applied for each agency in this sce
 2. After the content locations that can be searched are defined, the next part of the filter defines the content that eDiscovery managers can search. The first `SiteContent` filter lets Fourth Coffee eDiscovery managers only search for documents that have a site path property that contains (or starts with) `https://contoso.sharepoint.com/sites/FourthCoffee`; Coho Winery eDiscovery managers can only search documents that have a site path property that contains (or starts with) `https://contoso.sharepoint.com/sites/CohoWinery`. Therefore, the two `SiteContent` filters are *content filters* because they define the content that can be searched for. In both filters, eDiscovery managers can only search for documents with a specific document property value. All SharePoint-related filters are content filters because searchable site properties are stamped on all documents. For more information, see [Configure permissions filtering for eDiscovery](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
 
    > [!NOTE]
-   > Although the scenario in this article doesn't use them, you can also use mailbox content filters to specify the content that eDiscovery managers can search for. The syntax for mailbox content filters is `MailboxContent_<Property:value>`. For example, you can create content filters based on date ranges, recipients, or domains. For more information about mailbox content filters, see [Configure search permissions filtering](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
+   > Although the scenario in this article doesn't use them, you can also use mailbox content filters to specify the content that eDiscovery managers can search for. The syntax for mailbox content filters is `"MailboxContent_<property> -<comparison operator> '<value>'"`. You can create content filters based on date ranges, recipients, and domains or any searchable email property. For example, this filter would allow eDiscovery managers to only search for mail items sent or received by users in the contoso.com domain: `"MailboxContent_Participants -like 'contoso.com'"`. For more information about mailbox content filters, see [Configure search permissions filtering](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
 
 3. The search permissions filter is joined to the search query by the **AND** Boolean operator. That means when an eDiscovery manager in one of the agencies runs an eDiscovery search, the items returned by the search must match the search query and the conditions defined in the search permissions filter.
 

@@ -13,7 +13,7 @@ ms.collection:
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-localization_priority: Normal
+ms.localizationpriority: medium
 description: In this article, learn how to add satellite locations and configure your tenant for Microsoft 365 Multi-Geo.
 ---
 
@@ -39,17 +39,15 @@ You must add a satellite location for each geo location where you want to store 
 
 To add a satellite location
 
-1. Open the SharePoint admin center.
+1. Open the SharePoint admin center. and go to <a href="https://go.microsoft.com/fwlink/?linkid=2185076" target="_blank">**Geo locations**</a>.
 
-2. Navigate to the **Geo locations** tab.
+1. Select **Add location**.
 
-3. Click **Add location**.
+1. Select the location that you want to add, and then select **Next**.
 
-4. Select the location that you want to add, and then click **Next**.
+1. Type the domain that you want to use with the geo location, and then select **Add**.
 
-5. Type the domain that you want to use with the geo location, and then click **Add**.
-
-6. Click **Close**.
+1. Select **Close**.
 
 Provisioning may take from a few hours up to 72 hours, depending on the size of your tenant. Once provisioning of a satellite location has completed, you will receive an email confirmation. When the new geo location appears in blue on the map on the **Geo locations** tab in the OneDrive admin center, you can proceed to set users' preferred data location to that geo location. 
 
@@ -78,7 +76,7 @@ Follow the process in [Azure Active Directory Connect sync: Configure preferred 
 We recommend that you include setting the user's Preferred Data Location as a part of your standard user creation workflow.
 
 > [!IMPORTANT]
-> For new users with no OneDrive provisioned, wait at least 24 hours after a user's PDL is synchronized to Azure AD for the changes to propagate before the user logs in to OneDrive for Business. (Setting the preferred data location before the user logs in to provision their OneDrive for Business ensures that the user's new OneDrive will be provisioned in the correct location.)
+> For new users with no OneDrive provisioned, license the account and wait at least 48 hours after a user's PDL is synchronized to Azure AD for the changes to propagate before the user logs in to OneDrive for Business. (Setting the preferred data location before the user logs in to provision their OneDrive for Business ensures that the user's new OneDrive will be provisioned in the correct location.)
 
 ### Setting Preferred Data Location for cloud only users 
 
@@ -101,7 +99,7 @@ The procedures in this section require the [Microsoft Azure Active Directory Mod
 We recommend that you include setting the user's Preferred Data Location as a part of your standard user creation workflow.
 
 > [!IMPORTANT]
-> For new users with no OneDrive provisioned, wait at least 24 hours after a user's PDL is set for the changes to propagate before the user logs in to OneDrive. (Setting the preferred data location before the user logs in to provision their OneDrive for Business ensures that the user's new OneDrive will be provisioned in the correct location.)
+> For new users with no OneDrive provisioned, license the account and wait at least 48 hours after a user's PDL is set for the changes to propagate before the user logs in to OneDrive. (Setting the preferred data location before the user logs in to provision their OneDrive for Business ensures that the user's new OneDrive will be provisioned in the correct location.)
 
 ## OneDrive Provisioning and the effect of PDL
 

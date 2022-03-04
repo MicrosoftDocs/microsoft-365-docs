@@ -2,15 +2,13 @@
 title: Microsoft Defender for Endpoint on Android - Privacy information
 description: Privacy controls, how to configure policy settings that impact privacy and information about the diagnostic data collected in Microsoft Defender for Endpoint on Android.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, android, privacy, diagnostic
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -21,7 +19,8 @@ ms.technology: mde
 # Microsoft Defender for Endpoint on Android - Privacy information
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -46,9 +45,24 @@ Information about **malicious** Android application packages (APKs) on the devic
 - Storage location (file path) of the APK
 - Time of install, size of APK and permissions
 
+For Android Enterprise Fully managed devices - Information about Android application packages (APKs) installed on the device including
+
+- Name and package name of the app
+- Version number of the app
+- Vendor name
+
+For Android Enterprise with a work profile - Information about Android application packages (APKs) installed on the Work profile of the device including
+
+- Name and package name of the app
+- Version number of the app
+- Vendor name
+
+*Your organization can also choose to configure Defender for Endpoint to send information about all apps installed on the device. By default, this information is not sent to your organization.*
+
+
 ### Web page / Network information
 
-- Full URL of the website only when a malicious connection or web page is detected.
+- Full URL of the website only when a malicious connection or web page is detected and blocked.
 - Connection information
 - Protocol type (such as HTTP, HTTPS, etc.)
 

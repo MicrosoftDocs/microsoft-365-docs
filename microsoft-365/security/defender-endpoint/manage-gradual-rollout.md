@@ -2,8 +2,6 @@
 title: Manage the gradual rollout process for Microsoft Defender updates
 description: Learn about the gradual update process and controls
 keywords: update, update process, controls, release
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -17,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: m365d
 ---
@@ -28,8 +26,7 @@ ms.technology: m365d
 
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 It is important to ensure that client components are up-to-date to deliver critical protection capabilities and prevent attacks.
 
@@ -83,6 +80,7 @@ The following update channels are available:
 |Current Channel (Preview)|Get Current Channel updates **earlier** during gradual release|Devices set to this channel will be offered updates earliest during the gradual release cycle. Suggested for pre-production/validation environments.|
 |Current Channel (Staged)|Get Current Channel updates later during gradual release|Devices will be offered updates later during the gradual release cycle. Suggested to apply to a small, representative part of your device population (~10%).|
 |Current Channel (Broad)|Get updates at the end of gradual release|Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).|
+|Critical: Time Delay|Delay Defender updates|Devices will be offered updates with a 48-hour delay. Best for datacenter machines that only receive limited updates. Suggested for critical environments only.|
 |(default)||If you disable or do not configure this policy, the device will remain in Current Channel (Default): Stay up to date automatically during the gradual release cycle. Suitable for most devices.|
 |
 

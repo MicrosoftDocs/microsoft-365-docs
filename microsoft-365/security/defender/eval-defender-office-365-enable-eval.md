@@ -12,12 +12,12 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 ms.date: 07/01/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365solution-overview
+  - m365solution-scenario
   - m365solution-evalutatemtp
 ms.topic: how-to
 ms.technology: m365d

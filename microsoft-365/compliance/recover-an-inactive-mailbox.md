@@ -2,15 +2,15 @@
 title: "Recover an inactive mailbox"
 f1.keywords:
 - NOCSH
-ms.author: markjjo
-author: markjjo
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MOE150
 - MET150

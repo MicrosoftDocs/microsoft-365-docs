@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d586eb28-b752-4c46-bf92-00a0c5ad781d
 description: "A comparison chart that shows the feature differences between the Bookings web app and the Bookings Teams app."
 ---
@@ -32,3 +32,4 @@ Teams app features are being added all the time and we will continue to update t
 | Publish a self-service scheduling page | Yes | No |
 | Manage customer contacts | Yes | No |
 | Set time off for staff | Yes | No |
+| Scheduled queue view | No | Yes |

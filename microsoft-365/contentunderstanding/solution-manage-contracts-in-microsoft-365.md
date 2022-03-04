@@ -12,7 +12,7 @@ ms.collection:
 - m365solution-managecontracts
 - m365solution-overview
 search.appverid: 
-localization_priority: None
+ms.localizationpriority:  medium
 ROBOTS: 
 description: Learn how to manage contracts using a Microsoft 365 solution of SharePoint Syntex, SharePoint Lists, Microsoft Teams, and Power Automate.
 ---

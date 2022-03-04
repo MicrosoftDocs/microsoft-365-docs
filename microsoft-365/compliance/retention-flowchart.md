@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
@@ -30,7 +30,7 @@ This logic flow is used for an item when either of the following conditions appl
 - There is more than one retention policy applied
 - There is a retention label and one or more retention policies
 
-When an item is subject to an eDiscovery hold, it will always be retained before the decision flows for retention policies and a retention label.
+When an item is subject to an eDiscovery hold (or the older technologies of Litigation hold or In-Place Hold), it will always be retained before the decision flows for retention policies and a retention label.
 
 If any of the terms used in this flowchart are unfamiliar to you, see [Learn about retention policies and retention labels](retention.md).
 

@@ -2,8 +2,8 @@
 title: Insider risk management audit log
 description: Learn about the insider risk management audit log in Microsoft 365
 keywords: Microsoft 365, insider risk management, risk management, compliance
-localization_priority: Normal
-ms.prod: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.service: O365-seccomp
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -31,7 +31,7 @@ Areas included in activity monitoring include:
 - Users
 - Notice templates
 
-To view and export data from the audit log, users must be assigned to the *Insider Risk Management* or *Insider Risk Management Auditors* role groups. To learn more about insider risk management role groups, see [Getting started with insider risk management Step 1: Enabling permissions](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management).
+To view and export data from the audit log, users must be assigned to the *Insider Risk Management* or *Insider Risk Management Auditors* role groups. To learn more about insider risk management role groups, see [Getting started with insider risk management Step 1: Enabling permissions](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management).
 
 > [!NOTE]
 > The insider risk management audit log isn't associated with the Microsoft 365 audit log, they are independent auditing systems and capture information on separate activities. Disabling Microsoft 365 auditing doesn't impact activity auditing within insider risk management.
@@ -59,7 +59,7 @@ Users assigned to the *Insider Risk Management* or *Insider Risk Management Audi
 
 The file contains activity information for the following fields:
 
-- **Activity performed by:** The user name of the user modifying an item value. Users listed here were assigned to one or more of the following role [insider risk management role groups](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management): *Insider Risk Management*, *Insider Risk Management Admins*, *Insider Risk Management Analysts*, *Insider Risk Management Investigators*. Each role group has different permission levels for managing insider risk features.
+- **Activity performed by:** The user name of the user modifying an item value. Users listed here were assigned to one or more of the following role [insider risk management role groups](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management): *Insider Risk Management*, *Insider Risk Management Admins*, *Insider Risk Management Analysts*, *Insider Risk Management Investigators*. Each role group has different permission levels for managing insider risk features.
 - **Activity:** The activity taken on an item. Values are *Viewed, Deleted, Added, Edited policy, Case, User, Alert,* and *Settings.*
 - **Added**: Objects that were added during the activity, such as users, file types, or domains.
 - **Alert volume**: The level of alert volume defined in insider risk management settings.

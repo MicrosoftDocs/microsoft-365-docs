@@ -8,7 +8,7 @@ audience: Admin
 ms.topic: article
 ms.collection: Ent_O365
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
 - MET150
 f1.keywords:

@@ -1,5 +1,5 @@
 ---
-title: Manage Microsoft Defender for Endpoint Plan 1 (preview)
+title: Manage Microsoft Defender for Endpoint Plan 1
 description: Maintain and update Defender for Endpoint Plan 1. Manage settings, get updates, and address false positives/negatives.
 search.appverid: MET150 
 author: denisebmsft
@@ -7,28 +7,25 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 09/13/2021
+ms.date: 01/03/2022
 ms.prod: m365-security
 ms.technology: mdep1
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
 ---
 
-# Manage Microsoft Defender for Endpoint Plan 1 (preview)
+# Manage Microsoft Defender for Endpoint Plan 1
 
-> [!TIP]
-> If you have Microsoft 365 E3 but not Microsoft 365 E5, visit [https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) to sign up for the preview program!
+**Applies to**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-As you use Defender for Endpoint Plan 1 (preview) in your organization, your security team can take certain steps to maintain your security solution. As your security team puts together your maintenance and operations plan, make sure to include at least the following activities:
+As you use Defender for Endpoint Plan 1 in your organization, your security team can take certain steps to maintain your security solution. As your security team puts together your maintenance and operations plan, make sure to include at least the following activities:
 
 - [Manage security intelligence and product updates](#manage-security-intelligence-and-product-updates)
 - [Fine-tune and adjust Defender for Endpoint](#fine-tune-and-adjust-defender-for-endpoint)
 - [Address false positives/negatives](#address-false-positivesnegatives)
-
-> [!IMPORTANT]
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. This article includes links to online content that might describe some features that are not included in Defender for Endpoint Plan 1 (preview).
 
 ## Manage security intelligence and product updates
 
@@ -43,7 +40,7 @@ To manage your security intelligence and product updates, see [Manage Microsoft 
 
 Defender for Endpoint offers you much flexibility and configuration options. You can adjust and fine-tune your settings to suit your organization’s needs. For example, you can use Microsoft Endpoint Manager, Group Policy, and other methods to manage your endpoint security settings. 
 
-To learn more, see [Manage Defender for Endpoint](manage-atp-post-migration.md).
+To learn more, see [Manage Defender for Endpoint](manage-mde-post-migration.md).
 
 ## Address false positives/negatives
 
@@ -55,4 +52,4 @@ If you’re seeing false positives/negatives in Defender for Endpoint, see [Addr
 
 ## Next steps
 
-- [See what's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-atp.md)
+- [See what's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-endpoint.md)

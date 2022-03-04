@@ -2,23 +2,23 @@
 title: "What subscription do I have?"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
 - Adm_O365_Setup
 - Adm_TOC
 ms.custom: 
+- commerce_subscriptions
 - okr_smb
 - AdminSurgePortfolio
-- commerce_subscriptions
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn to verify which subscriptions your organization has by going to the Your products page."
