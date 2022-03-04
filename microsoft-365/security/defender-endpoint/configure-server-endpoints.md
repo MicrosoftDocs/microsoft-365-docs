@@ -87,12 +87,12 @@ The new unified solution package makes it easier to onboard servers by removing 
 - [Automated Investigation and Response (AIR)](/microsoft-365/security/defender-endpoint/automated-investigations)
 - [Tamper Protection](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection)
 
-Depending on the server that you're onboarding, the unified solution installs Microsoft Defender Antivirus and/or the EDR sensor. The following table indicates what component is installed and what is built in by default.
+Depending on the server that you're onboarding, the unified solution installs Microsoft Defender Antivirus and/or the EDR sensor. The following table indicates what component is installed and what is built-in by default.
 
 |Server version|AV|EDR|
 |----|----|----|
-|Windows Server 2012 R2 SP1|Check mark|Check mark|
-|Windows Server 2016|Built-in|Check mark|
+|Windows Server 2012 R2 SP1|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|
+|Windows Server 2016|Built-in|![Yes.](images/svg/check-yes.svg)|
 |Windows Server 2019 or later|Built-in|Built-in|
 
 If you have previously onboarded your servers using MMA, follow the guidance provided in [Server migration](server-migration.md) to migrate to the new solution.
