@@ -65,7 +65,7 @@ Tab 5 - Review and create the package. Once you have completed the steps listed 
 
 Once your package has been created, you can check the verification status of your package.
 
-We run an initial test to install, launch, close, and uninstall your application. This allows us to verify that your package can be installed on our service error-free.
+We run an initial test to install, launch, close, and uninstall your application. This allows us to verify that your package can install on our service error-free.
 
 The verification process could take up to 24 hours. Once verification is complete, you can see the status in the ```Manage packages``` menu, which would be one of two entries:
 
