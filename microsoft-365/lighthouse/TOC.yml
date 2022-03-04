@@ -64,6 +64,8 @@
   items: 
     - name: Get help and support
       href: m365-lighthouse-get-help-and-support.md
+    - name: Known issues
+      href: m365-lighthouse-known-issues.md
     - name: Troubleshoot and resolve problems and error messages
       href: m365-lighthouse-troubleshoot.md
     - name: Frequently asked questions (FAQs)
