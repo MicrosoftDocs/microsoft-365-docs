@@ -1,6 +1,6 @@
 ---
 title: Evaluate and pilot Microsoft 365 Defender, an XDR solution
-description: What is XDR? What does a Microsoft XDR look like? Use this blog series to plan your Microsoft 365 Defender trial lab or pilot environment to test and experience a security solution designed to protect devices, identity, data, and applications. Build your Microsoft Defender XDR and take that test to production.
+description: What is XDR security? What does a Microsoft XDR look like? Use this blog series to plan your Microsoft 365 Defender trial lab or pilot environment to test and experience a security solution designed to protect devices, identity, data, and applications. Start your XDR cyber security journey here and take that test to production.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -46,7 +46,9 @@ If you're new to thinking about XDR, you can scan these 7 linked articles to get
 
 ## Microsoft 365 Defender is a Microsoft XDR solution
 
-Microsoft 365 Defender is an **extended detection and response (XDR) solution** that automatically collects, correlates, and analyzes signal, threat, and alert data from *across* your Microsoft 365 environment, including *endpoint, email, applications, and identities*. It leverages artificial intelligence (AI) and automation to *automatically* stop attacks, and remediate affected assets into a safe state.
+Microsoft 365 Defender is an **eXtended detection and response (XDR) solution** that automatically collects, correlates, and analyzes signal, threat, and alert data from *across* your Microsoft 365 environment, including *endpoint, email, applications, and identities*. It leverages artificial intelligence (AI) and automation to *automatically* stop attacks, and remediate affected assets into a safe state.
+
+Think of XDR as the next step in security, unifying endpoint (endpoint detection and response or EDR), email, app, and identity security in one place.
 
 ## XDR Microsoft recommendations
 
