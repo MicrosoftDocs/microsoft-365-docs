@@ -1,13 +1,13 @@
 ---
-title: Firewall in Microsoft Defender for Business (preview)
-description: Learn about Windows Defender Firewall in Microsoft Defender for Business (preview), including configuration settings
+title: Firewall in Microsoft Defender for Business
+description: Learn about Windows Defender Firewall in Microsoft Defender for Business, including configuration settings
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/07/2022
+ms.date: 02/24/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -18,35 +18,41 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# Firewall in Microsoft Defender for Business (preview)
+# Firewall in Microsoft Defender for Business
 
 > [!IMPORTANT]
-> Microsoft Defender for Business is now in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. We will onboard an initial set of customers and partners in the coming weeks and will expand the preview leading up to general availability. Note that preview will launch with an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. Defender for Business as a standalone subscription is in in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. Preview includes an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-Microsoft Defender for Business (preview) includes firewall capabilities with [Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Firewall protection helps secure devices with rules that determine which network traffic is permitted to enter or flow from devices. 
+Microsoft Defender for Business includes firewall capabilities with [Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). Firewall protection helps secure devices with rules that determine which network traffic is permitted to enter or flow from devices. 
 
 You can use firewall protection to specify whether to allow or block connections on devices in various locations. For example, your firewall settings can allow inbound connections on devices that are connected to your organization's internal network, but prevent those connections when the device is on a network with untrusted devices.
 
 **This article describes**:
 
-- [Default firewall settings in Defender for Business (preview)](#default-firewall-settings-in-defender-for-business)
-- [Firewall settings you can configure in Defender for Business (preview)](#firewall-settings-you-can-configure-in-defender-for-business)
+- [Default firewall settings in Defender for Business](#default-firewall-settings-in-defender-for-business)
+
+- [Firewall settings you can configure in Defender for Business](#firewall-settings-you-can-configure-in-defender-for-business)
+
+>
+> **Got a minute?**
+> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
+>
 
 ## Default firewall settings in Defender for Business
 
-Microsoft Defender for Business (preview) includes default firewall policies and settings to help protect your organization's devices from day one. As soon as your organization's devices are onboarded to Microsoft Defender for Business (preview), your default firewall policy works as follows:
+Microsoft Defender for Business includes default firewall policies and settings to help protect your organization's devices from day one. As soon as your organization's devices are onboarded to Microsoft Defender for Business, your default firewall policy works as follows:
 
 - Outbound connections from devices are allowed by default, regardless of location.
 - When devices are connected to your organization's network, all inbound connections are blocked by default.
 - When devices are connected to a public network or a private network, all inbound connections are blocked by default.
 
-In Microsoft Defender for Business (preview), you can define exceptions to block or allow incoming connections. You define these exceptions by creating custom rules. See [Manage custom rules for firewall policies](mdb-custom-rules-firewall.md).
+In Microsoft Defender for Business, you can define exceptions to block or allow incoming connections. You define these exceptions by creating custom rules. See [Manage custom rules for firewall policies](mdb-custom-rules-firewall.md).
 
 ## Firewall settings you can configure in Defender for Business
 
-Microsoft Defender for Business (preview) includes firewall protection through Windows Defender Firewall. The following table lists settings that can be configured for firewall protection in Microsoft Defender for Business (preview). <br/><br/>
+Microsoft Defender for Business includes firewall protection through Windows Defender Firewall. The following table lists settings that can be configured for firewall protection in Microsoft Defender for Business. <br/><br/>
 
 | Setting | Description |
 |--|--|
@@ -57,12 +63,12 @@ Microsoft Defender for Business (preview) includes firewall protection through W
 
 ## Next steps
 
-- [Manage firewall settings in Microsoft Defender for Business (preview)](mdb-custom-rules-firewall.md)
+- [Manage firewall settings in Microsoft Defender for Business](mdb-custom-rules-firewall.md)
 
 - [Learn more about Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
 
-- [View and manage incidents in Microsoft Defender for Business (preview)](mdb-view-manage-incidents.md)
+- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
 
-- [Respond to and mitigate threats in Microsoft Defender for Business (preview)](mdb-respond-mitigate-threats.md)
+- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
 
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)

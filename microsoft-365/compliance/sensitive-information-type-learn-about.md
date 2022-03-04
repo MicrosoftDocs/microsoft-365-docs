@@ -44,7 +44,7 @@ Microsoft provides a large number of pre-configured SITs or you can create your 
 
 ### Built in sensitive information types
 
-These SITs are created by Microsoft show up in the compliance console by default. These SITs cannot be edited, but they can be used as templates and copied to create custom sensitive information types.
+These SITs are created by Microsoft show up in the compliance console by default. These SITs cannot be edited, but they can be used as templates and copied to create custom sensitive information types. See, [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) for a full listing of all SITs.
 
 ### Named entity sensitive information types
 
@@ -80,7 +80,7 @@ Every sensitive information type entity is defined by these fields:
 
 ![Diagram of corroborative evidence and proximity window.](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-Learn more about confidence levels in this video
+Learn more about confidence levels in this short video.
 
 
  > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]  
