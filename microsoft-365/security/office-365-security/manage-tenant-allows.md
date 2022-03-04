@@ -27,7 +27,7 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Admins can't add allows directly to the Tenant Allow/Block List. Instead, you use the admin submission process to submit the message that were blocked so the corresponding URL, file, and/or senders will be added to the Tenant Allow/Block List. If a block of the file, URL, or sender has not happened, then the allow will not be created. In most cases where the message was determined to be a false positive that was incorrectly blocked, the allows are kept for as long as needed to give the system time to allow it naturally.
+Admins can't add allows directly to the Tenant Allow/Block List. Instead, you use the admin submission process to submit the message that were blocked so the corresponding URL, file, and/or senders will be added to the Tenant Allow/Block List. If a block of the file, URL, or sender has not happened, then the allow will not be created. In most cases where the message was determined to be a false positive that was incorrectly blocked, the allows are kept for as long as needed to give the system time to allow them naturally.
 
 > [!IMPORTANT]
 > Since Microsoft manages the allows for you, sender, URL, or file allows that are not needed or considered to be bad will be removed. This is to protect your environment and prevent a misconfiguration of allows. In cases where you may disagree, a support cases may be needed to help determine why a message is still considered as bad.
@@ -51,7 +51,7 @@ Allow senders (or domains) on the **Submissions** page in Microsoft 365 Defender
 7. When you're finished, click the **Submit** button.
 
 > [!div class="mx-imgBorder"]
-> ![False positive submission example.](../../media/admin-submission-allow-messages.png)
+> ![Submit malware to Microsoft for analysis example.](../../media/admin-submission-allow-messages.png)
 
 ## Add URL allows using the Submissions portal
 
@@ -73,7 +73,6 @@ Allow URLs on the **Submissions** page in Microsoft 365 Defender.
 
 > [!div class="mx-imgBorder"]
 > ![Submit URL for analysis.](../../media/submit-url-for-analysis.png)
-
 
 ## Add File allows using the Submissions portal
 
