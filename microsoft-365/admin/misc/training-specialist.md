@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 description: "Get a periodic report of how people in your organization are using Microsoft 365 services and drill into each chart for more insights."
 ---
 
-# Microsoft 365 training and adoption dashboard
+# Microsoft 365 Adoption and Training dashboard
 
 Improve employee satisfaction with Microsoft 365 and increase productivity in your org. This dashboard provides key user experience metrics that can help you pinpoint opportunities for targeted communications and product training.
 
