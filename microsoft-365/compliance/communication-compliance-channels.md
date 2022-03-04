@@ -40,7 +40,7 @@ Modern attachment scanning is supported for the following file types:
 
 Extracted text for Modern attachments is included with the associated message on the **Pending** alerts dashboard for a policy. The extracted text for an attachment is named as the attachment file name (and format extension) and the .txt extension. For example, the extracted text for an attachment named *ContosoBusinessPlan.docx* would appear as *ContosoBusinessPlan.docx.txt* in the **Pending** alerts dashboard for a policy.
 
-Select the extracted attachment text to view the details in the *Source*, *Plain text*, or *Annotate* views. After reviewing, you can resolve or take action on the attachment text using the command bar controls. You also have the option to download the attachment for review outside of the communication compliance review process.
+Select the extracted attachment text to view the details in the *Source* and *Plain text* views. After reviewing, you can resolve or take action on the attachment text using the command bar controls. You also have the option to download the attachment for review outside of the communication compliance review process.
 
 Use the following group management configurations to supervise individual user chats and channel communications in Teams:
 

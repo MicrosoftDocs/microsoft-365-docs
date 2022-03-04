@@ -153,7 +153,7 @@ In this step, you look deeper into the issues detected as matching your communic
 
 - **Alerts**: When a message matches a policy condition, an alert is automatically generated. For each alert, you can see the status, the severity, the time detected, and if an Advanced eDiscovery case is assigned and its status. New alerts are displayed on the communication compliance home page and the **Alerts** page and are listed in order of severity.
 - **Issue management**: For each alert, you can take investigative actions to help remediate the issue detected in the message.
-- **Document review**: During the investigation of an issue, you can use several views of the message to help properly evaluate the detected issue. The views include a conversation summary, text-only, annotated, and detail views of the communication conversation.
+- **Document review**: During the investigation of an issue, you can use several views of the message to help properly evaluate the detected issue. The views include a conversation summary, text-only, and detail views of the communication conversation.
 - **Reviewing user activity history**: View the history of user message activities and remediation actions, such as past notifications and escalations, for policy matches.
 - **Filters**: Use filters such as sender, recipient, date, and subject to quickly narrow down the message alerts that you want to review.
 
