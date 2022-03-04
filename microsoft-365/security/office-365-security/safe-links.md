@@ -51,7 +51,8 @@ Safe Links protection is available in the following locations:
   
   > [!NOTE]
   > Safe Links does not work on mail-enabled public folders.
-  > Safe Links only support HTTP(S) and FTP formats.
+  >
+  > Safe Links supports only HTTP(S) and FTP formats.
 
 - **Microsoft Teams**: Safe Links protection for links in Teams conversations, group chats, or from channels is also controlled by Safe Links policies.
 
