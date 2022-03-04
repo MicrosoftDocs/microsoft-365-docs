@@ -17,8 +17,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-
-ms.custom: admindeeplinkEXCHANGE
+  - m365solution-scenario
+  - m365solution-evalutatemtp
+  - ms.custom: admindeeplinkEXCHANGE
 ms.topic: how-to
 ms.technology: m365d
 ---

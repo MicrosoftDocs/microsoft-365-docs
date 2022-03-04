@@ -14,6 +14,7 @@ ms.reviewer:
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
+ms.date:
 ---
 
 # Turn on network protection

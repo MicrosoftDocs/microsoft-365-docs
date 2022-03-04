@@ -13,7 +13,6 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -46,11 +45,11 @@ You'll need to take the following steps:
 
 ## Step 1: Get the Microsoft Defender for Endpoint onboarding package
 
-1. In [Microsoft 365 Defender](https://security.microsoft.com), navigate to **Settings > Onboarding**.
+1. In [Microsoft 365 Defender](https://security.microsoft.com), navigate to **Settings > Endpoints > Onboarding**.
 
 2. Select macOS as the operating system and Mobile Device Management / Microsoft Intune as the deployment method.
 
-    ![Image of Microsoft Defender Security Center.](images/onboarding-macos.png)
+    ![Image of Microsoft 365 Defender portal.](images/onboarding-macos.png)
 
 3. Select **Download onboarding package** (WindowsDefenderATPOnboardingPackage.zip).
 
@@ -72,8 +71,8 @@ You'll need to take the following steps:
 
    **General**:
 
-   - Name: MDATP onboarding for macOS
-   - Description: MDATP EDR onboarding for macOS
+   - Name: MDE onboarding for macOS
+   - Description: MDE EDR onboarding for macOS
    - Category: None
    - Distribution Method: Install Automatically
    - Level: Computer Level
@@ -312,7 +311,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 2. Save the file as `MDATP_MDAV_configuration_settings.plist`.
 
-3. In the Jamf Pro dashboard, open **Computers**, and there **Configuration Profiles**. Click **New(* and switch to the **General** tab.
+3. In the Jamf Pro dashboard, open **Computers**, and their **Configuration Profiles**. Click **New** and switch to the **General** tab.
 
     ![New profile.](images/644e0f3af40c29e80ca1443535b2fe32.png)
 
@@ -728,14 +727,14 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 2. Click **New**, and enter the following details for **Options**:
 
     - Tab **General**:
-        - **Name**: Microsoft Defender ATP Network Extension
+        - **Name**: Microsoft Defender Network Extension
         - **Description**: macOS 10.15 (Catalina) or newer
         - **Category**: None *(default)*
         - **Distribution Method**: Install Automatically *(default)*
         - **Level**: Computer Level *(default)*
 
     - Tab **Content Filter**:
-        - **Filter Name**: Microsoft Defender ATP Content Filter
+        - **Filter Name**: Microsoft Defender Content Filter
         - **Identifier**: `com.microsoft.wdav`
         - Leave **Service Address**, **Organization**, **User Name**, **Password**, **Certificate** blank (**Include** is *not* selected)
         - **Filter Order**: Inspector

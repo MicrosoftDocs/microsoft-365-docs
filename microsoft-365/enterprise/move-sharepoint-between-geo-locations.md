@@ -30,7 +30,7 @@ The following types of site can be moved between geo locations:
 
 You must be a Global Administrator or SharePoint Administrator to move a site between geo locations.
 
-There is a read-only window during the SharePoint site geo move of approximately 4-6 hours, depending on site contents.
+There is a read-only window during the SharePoint site geo move of approximately 4-6 hours, depending on site-contents.
 
 ## Best practices
 
@@ -57,6 +57,7 @@ You can schedule SharePoint site moves in advance (described later in this artic
 
 - You can schedule up to 4,000 moves at a time.
 - As the moves begin, you can schedule more, with a maximum of 4,000 pending moves in the queue and any given time.
+- The maximum size of a SharePoint site that can be moved is 1 terabyte (1 TB).
 
 To schedule a SharePoint site geo move for a later time, include one of the following parameters when you start the move:
 
@@ -153,7 +154,7 @@ The move statuses are described in the following table.
 |---|---|
 |Ready to Trigger|The move has not started.|
 |Scheduled|The move is in queue but has not yet started.|
-|InProgress (n/4)|The move is in progress in one of the following states: Validation (1/4), Backup (2/4), Restore (3/4), Cleanup (4/4).|
+|InProgress (n/4)|The move is in progress in one of the following states: Validation (1/4), Back up (2/4), Restore (3/4), Cleanup (4/4).|
 |Success|The move has completed successfully.|
 |Failed|The move failed.|
 |
@@ -166,7 +167,7 @@ Site users should notice minimal disruption when their site is moved to a differ
 
 ### Site
 
-While the move is in progress the site is set to read-only. Once the move is completed, the user is directed to the new site in the new geo location when they click on bookmarks or other links to the site.
+While the move is in progress, the site is set to read-only. Once the move is completed, the user is directed to the new site in the new geo location when they click on bookmarks or other links to the site.
 
 ### Permissions
 
@@ -207,15 +208,15 @@ The SharePoint Mobile App is cross geo compatible and able to detect the site's 
 
 ### SharePoint workflows
 
-SharePoint 2013 workflows need to be republished after the site move. SharePoint 2010 workflows should continue to function normally.
+SharePoint 2013 workflows have to be republished after the site move. SharePoint 2010 workflows should continue to function normally.
 
 ### Apps
 
-If you are moving a site with apps, you must re-instantiate the app in the site's new geo location as the app and its connections may not be available in the destination geo location.
+If you are moving a site with apps, you must reinstantiate the app in the site's new geo location as the app and its connections may not be available in the destination geo location.
 
 ### Flow
 
-In most cases Flows will continue to work after a SharePoint site geo move. We recommend that you test them once the move has completed.
+In most cases, Flows will continue to work after a SharePoint site geo move. We recommend that you test them once the move has completed.
 
 ### Power Apps
 
