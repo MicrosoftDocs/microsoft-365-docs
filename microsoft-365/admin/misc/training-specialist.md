@@ -23,7 +23,7 @@ Improve employee satisfaction with Microsoft 365 and increase productivity in yo
 
 :::image type="content" source="../../media/adoption-dashboard.png" alt-text="Screenshot: Image showing the adoption and training dashboard":::
 
-## How do I use the Adoption and training dashboard
+## How do I use the Adoption and training dashboard?
 
 :::image type="content" source="../../media/adoption-dashboard-select-option.png" alt-text="Screenshot: Choose a tab to select an option for adoption and traning information":::
 
@@ -52,7 +52,7 @@ Usage, product feedback, and help article data for specific apps and services in
 
 :::image type="content" source="../../media/adoption-dashboard-apps-services-data.png" alt-text="Screenshot: View your apps and services adoption data":::
 
-## Chart information
+### Chart information
 
 Chart information gives you insight into the apps and services that you want to track data on. Select an app or service to dig deeper into usage, product feedback, net promoter score and help content data.
 
