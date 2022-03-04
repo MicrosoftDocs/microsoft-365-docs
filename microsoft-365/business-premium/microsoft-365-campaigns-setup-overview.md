@@ -29,7 +29,9 @@ description: "Setup overview for Microsoft 365 Business Premium for campaigns or
 
 # Set up Microsoft 365 for Campaigns
 
-This article describes the process of setting up Microsoft 365. Anybody with Microsoft 365 Business Premium can use this guidance to step up security.
+## Overview
+
+Here we provide some enhanced security measures, which are particularly useful for campaigns, but you may want to use these measures with any of your organizations or teams as part of your greater mission.
 
 ## Admins: Set up Microsoft 365
 
@@ -39,7 +41,7 @@ The following diagram describes how admins set up Microsoft 365.
 
 For campaigns that qualify for special pricing, get started by [requesting an invite from Microsoft](https://m365forcampaigns.microsoft.com/), then [signing up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md). To complete setup, [run the setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure the core settings.
 
-For all other organizations, after you've [signed up for Microsoft 365 Business Premium](../admin/admin-overview/sign-up-for-office-365.md)), complete setup by [running the setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure the core settings.
+For other organizations, after you've [signed up for Microsoft 365 Business Premium](../admin/admin-overview/sign-up-for-office-365.md)), complete setup by [running the setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure the core settings.
 
 For all organizations, bump up security protection by: [protecting admin accounts](m365bp-protect-admin-accounts.md), [protecting access to mail and data](m365bp-conditional-access.md), and [increasing threat protection](m365bp-increase-protection.md).
 
