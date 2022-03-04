@@ -33,7 +33,7 @@ description: "Learn how to protect your campaign or business by increasing your 
 
 This is your first mission, and as you know the potential threats to the organization are numerous, and from every direction. Even as you read this, malicious attackers try to worm their way through your defenses with malware, ransomware and phishing attacks.
 
-The over-arching mission before you is to secure all the accounts in your organization. Carefully follow the guidance in this section. It will help you greatly.
+The over-arching mission before you is to secure all the accounts in your organization. Carefully follow the guidance in this section. It will aid you greatly.
 
 Start by watching this video to get an overall picture of how to protect your campaign or business:
 
@@ -45,6 +45,6 @@ Then take the following steps to:
 
 - [Protect admin accounts](m365bp-protect-admin-accounts.md)
 - [Protect against malware and other threats](m365bp-increase-protection.md)
-- [Protect access to your data](m365bp-conditional-access.md) by protecting your accounts and apps
+- [Protect access to your data](m365bp-conditional-access.md)
 - [Set up mobile devices](../business/set-up-mobile-devices.md)
 - [Train your users](m365-campaigns-users.md)

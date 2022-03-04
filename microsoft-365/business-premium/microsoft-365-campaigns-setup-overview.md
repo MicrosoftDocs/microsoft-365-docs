@@ -51,13 +51,11 @@ The following diagram describes how admins set up Microsoft 365.
 
 For campaigns that qualify for special pricing, get started by [requesting an invite from Microsoft](https://m365forcampaigns.microsoft.com/), then [signing up for Microsoft 365 for Campaigns](m365-campaigns-sign-up.md). To complete setup, [run the setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure the core settings.
 
-For other organizations, after you've [signed up for Microsoft 365 Business Premium](../admin/admin-overview/sign-up-for-office-365.md)), complete setup by [running the setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure the core settings.
+Next, bump up security protection by: [protecting admin accounts](m365bp-protect-admin-accounts.md), [protecting access to mail and data](m365bp-conditional-access.md), and [increasing threat protection](m365bp-increase-protection.md).
 
-For all organizations, bump up security protection by: [protecting admin accounts](m365bp-protect-admin-accounts.md), [protecting access to mail and data](m365bp-conditional-access.md), and [increasing threat protection](m365bp-increase-protection.md).
+## Set up devices
 
-## Everyone: Set up your devices
-
-Users will need to take a few minutes to set up devices to work with this environment. For your key users (those who are the highest value targets for hackers), you can set up and pre-configure new devices. This helps them to get started when they sign in with their Microsoft 365 credentials.
+Take a few minutes to set up devices to work with your environment. For your key users (those who are the highest value targets for hackers), you can set up and pre-configure new devices. This helps them get started when they sign in with their Microsoft 365 credentials.
 
 :::image type="content" source="../media/m365-democracy-user-device-setup.png" alt-text="User device setup process.":::
   
