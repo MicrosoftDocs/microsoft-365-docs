@@ -266,7 +266,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
 
 - URL entries that contain protocols (for example, `http://`, `https://`, or `ftp://`) will fail, because URL entries apply to all protocols.
 
-- A username or password aren't supported or required.
+- A username or password isn't supported or required.
 
 - Quotes (' or ") are invalid characters.
 
