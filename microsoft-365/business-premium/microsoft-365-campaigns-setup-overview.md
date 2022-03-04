@@ -31,7 +31,17 @@ description: "Setup overview for Microsoft 365 Business Premium for campaigns or
 
 ## Overview
 
-Here we provide some enhanced security measures, which are particularly useful for campaigns, but you may want to use these measures with any of your organizations or teams as part of your greater mission.
+Here we provide some enhanced security measures, which are particularly useful for campaigns, but you may want to use these with any organization as part of your greater mission.
+
+Without delay, run (or have an Admin run) the [setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure your security and licenses for your teams. Follow the critical guidance and direction, and enable the security defaults. These measures are your first step and your earliest front-line defense before you will be able to successfully complete the larger missions ahead.
+
+Your missions are as follows:
+
+**Mission 1 – Implement All Account Protections**. In your first mission, you must implement security across all accounts in the system.
+
+**Mission 2 - Set Up All Devices**. In Mission 2, you must protect all mobile devices, as well as managed and unmanaged devices. 
+
+**Mission 3 – Secure All Email and Data Files**. Your final objective is to secure the email and files shared between members of your organization, avoiding data and information theft.
 
 ## Admins: Set up Microsoft 365
 
