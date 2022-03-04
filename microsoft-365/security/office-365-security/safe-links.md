@@ -299,7 +299,7 @@ To add entries to the list in new or existing Safe Links policies, see [Create S
 
 **Notes**:
 
-- The following clients don't recognize the **Do not rewrite the following URLs** lists in Safe Links policies. Users included in the polices can be blocked from accessing the URLs based on the results of Safe Links scanning in these clients:
+- The following clients don't recognize the **Do not rewrite the following URLs** lists in Safe Links policies. Users included in the policies can be blocked from accessing the URLs based on the results of Safe Links scanning in these clients:
   - Microsoft Teams
   - Office web apps
 
