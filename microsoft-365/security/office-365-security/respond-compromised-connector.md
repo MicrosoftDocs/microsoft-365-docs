@@ -28,9 +28,9 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Connectors are generally used for enabling mail flow between Microsoft 365 or Office 365 and email servers that you have in your on-premises environment. For more information, see [Configure mail flow using connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
+Connectors are used for enabling mail flow between Microsoft 365 or Office 365 and email servers that you have in your on-premises environment. For more information, see [Configure mail flow using connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
-A compromised inbound connector is defined as when an unauthorized individual either applies change(s) to an existing inbound connector or creates a new inbound connector in a Microsoft 365 tenant, with the intention of sending spam or phish mails.  
+A compromised inbound connector is defined as when an unauthorized individual either applies change(s) to an existing inbound connector or creates a new inbound connector in a Microsoft 365 tenant, with the intention of sending spam or phish emails.  
 
 ## Detect a compromised connector
 
@@ -44,7 +44,7 @@ Here are some of the characteristics of a compromised connector:
 
 - The connector is blocked from sending relaying mail. 
 
-- The presence of an inbound connector was not created by the intended user or the administrator. 
+- The presence of an inbound connector wasn't created by the intended user or the administrator. 
 
 - Unauthorized change(s) in existing connector configuration, such as name, domain name, and IP address. 
 
@@ -64,7 +64,7 @@ If you have Microsoft Defender for Office 365 plan 2, go directly to https://sec
 
 [image]
 
-2. Identify if there is any abnormal spike or dip in email traffic. 
+2. Identify if there's any abnormal spike or dip in email traffic. 
 
 [image]
 
@@ -72,7 +72,7 @@ If you have Microsoft Defender for Office 365 plan 2, go directly to https://sec
 
     - If **Sender IP** matches with your organization’s IP address. 
 
-    - If a significant number of emails were recently sent to the **Junk** folder.  If so, this is a good indicator of a compromised connector being used to send spam. 
+    - If a significant number of emails were recently sent to the **Junk** folder. This is a good indicator of a compromised connector being used to send spam. 
 
     - If the recipients are the ones that your organization usually stays in contact with. 
 
@@ -92,7 +92,7 @@ If you have Microsoft Defender for Office 365 Plan 1 or Exchange Online Protecti
 
 4. In the **Message trace** search results, identify: 
 
-    - If a significant number of emails were recently marked as **FilteredAsSpam**.  If so, this is a good indicator of a compromised connector being used to send spam. 
+    - If a significant number of emails were recently marked as **FilteredAsSpam**.  This is a good indicator of a compromised connector being used to send spam. 
 
     - If the recipients are the ones that your organization usually stays in contact with. 
 
