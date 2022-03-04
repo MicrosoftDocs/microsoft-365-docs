@@ -32,9 +32,6 @@
       href: m365bp-conditional-access.md
     - name: Protect against malware and other threats
       href: m365bp-increase-protection.md
-    - name: Increase security for Microsoft 365 for Campaigns
-      href: m365-campaigns-security-overview.md
-
 - name: Set up devices
   items: 
     - name: Set up multifactor authentication
