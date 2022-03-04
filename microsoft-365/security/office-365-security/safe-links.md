@@ -268,7 +268,7 @@ You configure the list of URLs in the global settings for Safe Links. For instru
   - The maximum length of an entry is 128 characters.
   - All of the entries can't exceed 10,000 characters.
 - Don't include a forward slash (`/`) at the end of the URL. For example, use `https://www.contoso.com`, not `https://www.contoso.com/`.
-- A domain only-URL (for example `contoso.com` or `tailspintoys.com`) will block any URL that contains the domain.
+- A domain-only-URL (for example `contoso.com` or `tailspintoys.com`) will block any URL that contains the domain.
 - You can block a subdomain without blocking the full domain. For example, `toys.contoso.com*` blocks any URL that contains the subdomain, but it doesn't block URLs that contain the full domain `contoso.com`.
 - You can include up to three wildcards (`*`) per URL entry.
 
