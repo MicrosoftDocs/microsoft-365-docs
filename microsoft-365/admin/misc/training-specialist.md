@@ -76,4 +76,5 @@ Chart information gives you insight into the apps and services that you want to 
 
 **Help article views** is the total number of help article page views that users in your organization have viewed in app or on support.microsoft.com. Learn more
 
-You can filter the chart data for trends over the last 30 days, 90 days, or 180 days.
+> [!NOTE]
+> You can filter the chart data for trends over the last 30 days, 90 days, or 180 days.
