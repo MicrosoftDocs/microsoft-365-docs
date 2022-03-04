@@ -48,9 +48,9 @@ Network protection requires Windows 10 Pro or Enterprise, and Microsoft Defender
 
 ****
 
-|Windows version|Microsoft Defender Antivirus|
-|---|---|
-|Windows 10 version 1709 or later <br> Windows 11 <br> Windows Server 1803 or later|[Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) must be enabled (active)| |
+| Windows version | Microsoft Defender Antivirus |
+|:---|:---|
+| Windows 10 version 1709 or later <br> Windows 11 <br> Windows Server 1803 or later | [Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) <br> and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) must be enabled (active)| |
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -142,7 +142,7 @@ Using this data you can make an informed decision on enabling Network protection
 > [!NOTE]
 > As this is a per device setting if there are devices that cannot move to Block mode you can simply leave them on audit until you can rectify the challenge and you will still receive the auditing events.
 
-For information about how to report false positives see: [Report false positives](web-protection-overview.md#report-false-positives.md)
+For information about how to report false positives see: [Report false positives](web-protection-overview.md#report-false-positives)
 
 For details on how to create your own PowerBi reports, see: [Create custom reports using Power BI](api-power-bi.md)
 
