@@ -20,12 +20,9 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # View and manage risky users
 
-> [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
-
 Microsoft collects and analyzes trillions of user sign-in signals each day. These signals are used to help build good user sign-in behavior patterns and identify potential risky sign-in attempts. Azure Active Directory (Azure AD) Identity Protection uses these signals to review user sign-in attempts and take action if there's suspicious activity.
 
-Microsoft 365 Lighthouse helps manage risks detected by Azure AD Identity Protection by providing a single view of risky users across all your managed tenants. You can quickly secure risky users by either resetting their password or blocking them from signing in to their Microsoft 365 account. You can also view insights to better understand a user’s risk and determine next steps.
+Microsoft 365 Lighthouse helps manage risks detected by Azure AD Identity Protection by providing a single view of risky users across all your managed tenants. You can quickly secure risky users by either resetting their password or blocking them from signing in to their Microsoft 365 account. You can also view insights to better understand a user's risk and determine next steps.
 
 Azure AD Identity Protection identifies risks of many types, including:
 
@@ -60,7 +57,7 @@ In Azure AD Identity Protection, risk detections include any identified suspicio
 
     - Reset password – change or reset the user password.
 
-    - Block sign-in - prevents anyone from signing in as this user.
+    - Block sign-in - prevent anyone from signing in as this user.
 
     - Confirm user compromised – set risk state to confirmed compromised.
 
@@ -86,6 +83,6 @@ To take action on multiple affected users at once:
 > If the organization you are managing has an Azure AD Premium P2 license, it is recommended you enable User risk-based conditional access policies. For more information, see [Conditional Access: User risk-based Conditional Access](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user).
 
 ## Related content
-[Use risk detections for user sign-ins to trigger Azure AD Multi-Factor Authentication or password changes](/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) (tutorial)\
+[Tutorial: Use risk detections for user sign-ins to trigger Azure AD Multi-Factor Authentication or password changes](/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) (article)\
 [What is risk?](/azure/active-directory/identity-protection/concept-identity-protection-risks) (article) \
 [Remediate risks and unblock users](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock) (article)

@@ -175,9 +175,11 @@ Learn more about [how controls and improvement actions are tracked and scored.](
 
 When an update is available for an assessment, you’ll see a notification and have the option to accept the update or defer it for a later time.
 
+Updates are available for assessments based on Microsoft templates, such as those designed for use with Microsoft 365. If your organization is using universal templates for assessing other products, inheritance may not be supported. For more information, see [Extend assessment templates](compliance-manager-templates-extend.md).
+
 ### What causes an update
 
-An assessment update occurs when there are underlying template changes that impact scoring. Changes may involve adjusting control mapping or other guidance based on regulatory changes or product changes. Assessment updates can originate from your organization (such as, when a [custom template is modified](compliance-manager-templates-modify.md) as well as from Microsoft.
+An assessment update occurs when there are underlying template changes that impact scoring. Changes may involve adjusting control mapping or other guidance based on regulatory changes or product changes. Assessment updates can originate from your organization (such as when a [custom template is modified](compliance-manager-templates-modify.md)) as well as from Microsoft.
 
 If Microsoft updates a Compliance Manager template that you extended, your assessment will inherit those updates once you accept them. Your assessment will retain the additional attributes you applied to the assessment when you extended it.
 

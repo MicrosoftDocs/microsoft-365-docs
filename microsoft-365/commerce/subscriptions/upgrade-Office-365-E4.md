@@ -2,8 +2,8 @@
 title: "Upgrade from an Office 365 E4 subscription"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,8 +14,8 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
-- customer-email
 - commerce_subscriptions
+- customer-email
 - admindeeplinkMAC
 search.appverid: MET150 
 description: "Learn how to upgrade from an Office 365 E4 subscription."
