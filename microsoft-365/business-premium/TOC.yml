@@ -24,10 +24,10 @@
           href: m365-customize-sign-in.md
 - name: Bump up security protection
   items: 
-    - name: Turn on security defaults
-      href: m365bp-conditional-access.md
     - name: Protect admin accounts
       href: m365bp-protect-admin-accounts.md
+    - name: Turn on security defaults
+      href: m365bp-conditional-access.md
     - name: Protect access to your data
       href: m365bp-conditional-access.md
     - name: Protect against malware and other threats
