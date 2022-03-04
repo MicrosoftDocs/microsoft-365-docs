@@ -20,9 +20,6 @@ description: "For Managed Service Providers (MSPs), get a list of requirements t
 
 # Requirements for Microsoft 365 Lighthouse
 
-> [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the requirements listed in this article. If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
-
 Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers.  
 
 MSPs must be enrolled in the Cloud Solution Provider (CSP) program as an Indirect Reseller or Direct Bill partner to use Lighthouse.  
@@ -35,7 +32,7 @@ In addition, each MSP customer tenant must qualify for Lighthouse by meeting the
 
 ## Requirements for enabling device management
 
-To view customer tenant devices on the device management pages, a MSP must:
+To view customer tenant devices on the device management pages, an MSP must:
 
 - Enroll all customer devices in Microsoft Endpoint Manager (MEM). For more information, see [Enroll devices in Microsoft Intune](/mem/intune/enrollment/).
 - Assign compliance policies to all customer devices. For more information, see [Create a compliance policy in Microsoft Intune](/mem/intune/protect/create-compliance-policy). 
