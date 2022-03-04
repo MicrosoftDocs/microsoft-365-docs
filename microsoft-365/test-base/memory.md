@@ -2,8 +2,8 @@
 title: 'Memory regression analysis'
 description: How to infer memory regression
 search.appverid: MET150
-author: Tinacyt
-ms.author: tinachen
+author: mansipatel-usl
+ms.author: mapatel
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
