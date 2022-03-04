@@ -42,4 +42,4 @@ There are 2 types of restricted entities:
 
 ## More information
 
--[Respond to a compromised connectors](respond-compromised-connector.md)
+- [Respond to a compromised connector](respond-compromised-connector.md)
