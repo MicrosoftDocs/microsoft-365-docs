@@ -62,7 +62,7 @@ Chart information gives you insight into the apps and services that you want to 
 
 **In-product feedback** volume total number of in-product feedback responses submitted. [Learn more](feedback-user-control.md)
 
-**Nps survey response volume** is the total number of responses to NPS (Net Promoter Score) surveys. [Learn more](../manage/manage-feedback-product-insights.md)
+**NPS survey response volume** is the total number of responses to NPS (Net Promoter Score) surveys. [Learn more](../manage/manage-feedback-product-insights.md)
 
 **Help article views** is the total number of help article page views that users in your organization have viewed in app or on support.microsoft.com. Learn more
 
