@@ -60,4 +60,20 @@ Usage, product feedback, and help article data for specific apps and services in
 > [!NOTE]
 > Data isn't available for all Microsoft 365 apps and services yet.
 
+:::image type="content" source="../../media/adoption-dashboard-apps-services-data.png" alt-text="Screenshot: View your apps and services adoption data":::
 
+## Chart information
+
+Chart information gives you insight into the apps and services that you want to track data on. Use the chart data to...
+
+**Average daily users** tells you how many users are using the Microsoft 365 app or service on a daily basis. Learn more
+
+**Unique active users** is the total number of users who perform any intentional action in app.
+
+**In-product feedback** volume total number of in-product feedback responses submitted. Learn more
+
+**Nps survey response volume** is the total number of responses to NPS (Net Promoter Score) surveys. Learn more
+
+**Help article views** is the total number of help article page views that users in your organization have viewed in app or on support.microsoft.com. Learn more
+
+You can filter the chart data for trends over the last 30 days, 90 days, or 180 days.
