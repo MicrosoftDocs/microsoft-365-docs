@@ -137,7 +137,7 @@ The reported message will be marked as a false positive or a false negative. An 
 4. When you're finished, click **Submit**.
 
     > [!div class="mx-imgBorder"]
-    > ![New Attachment submission example.](../../media/submission-file-flyout.png)
+    > ![New Attachment submission example.](../../media/submit-email-for-analysis.png)
 
 > [!NOTE]
 > If malware filtering has replaced the message attachments with the Malware Alert Text.txt file, you need to submit the original message from quarantine that contains the original attachments. For more information on quarantine and how to release messages with malware false positives, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
@@ -173,7 +173,7 @@ The reported message will be marked as a false positive or a false negative. An 
      When you're finished, click **Apply**.
 
      > [!div class="mx-imgBorder"]
-     > ![New Customize column options for admin submissions.](../../media/admin-submission-customize-columns.png)
+     > ![New Customize column options for admin submissions.](../../media/submit-admin-submissios-customize-columns.png)
 
    - To filter the entries, click **Filter**. The available filters are:
      - **Date submitted**: **Start date** and **End date**.
@@ -190,7 +190,7 @@ The reported message will be marked as a false positive or a false negative. An 
      When you're finished, click **Apply**.
 
      > [!div class="mx-imgBorder"]
-     > ![New Filter options for admin submissions.](../../media/admin-submission-filters.png)
+     > ![New Filter options for admin submissions.](../../media/submit-admin-submissions-view-filters.png)
 
    - To group the entries, click **Group** and select one of the following values from the dropdown list:
      - **None**
@@ -258,7 +258,7 @@ If you've deployed the [Report Message add-in](enable-the-report-message-add-in.
      When you're finished, click **Apply**.
 
      > [!div class="mx-imgBorder"]
-     > ![New Filter options for user submissions.](../../media/admin-submission-reported-messages.png)
+     > ![New Filter options for user submissions.](../../media/submit-user-submissions-view-filters.png)
 
    - To group the entries, click **Group** and select one of the following values from the dropdown list:
      - **None**
