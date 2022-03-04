@@ -18,7 +18,7 @@ f1.keywords: NOCSH
 
 # Test Base FAQ
 
-**Q: How do we submit our packages to the Test Base team?**
+**Q: How do we submit our packages to Test Base team?**
 
 **A:** Submit your packages directly to the Test Base environment using our self-serve portal.
 
@@ -37,14 +37,14 @@ The Out-of-box (OOB) tests provide you with standardized telemetry on your appli
 **Q: Can we submit tests outside of the Out-of-box tests (install, launch, close, uninstall test scripts)?**
 
 **A:** Yes, customers can also upload application packages for **functional tests** via the self-serve portal dashboard.
-**Functional tests** are tests that enable customers to execute their scripts to run custom functionality on their application.
+**Functional tests** are tests that enable customers execute their scripts to run custom functionality on their application.
 
 
 ## Testing
 
 **Q: Do you support functional tests?**
 
-**A:** Yes, Test Base supports functional tests. Functional tests are tests that enable our customers to execute their scripts to run custom functionality on their application. 
+**A:** Yes, Test Base supports functional tests. Functional tests are tests that enable our customers execute their scripts to run custom functionality on their application. 
 
 To submit your application package for functional testing, simply upload the zipped folder containing your application's binaries, dependencies, and test scripts via our self-serve portal dashboard. 
 
@@ -68,7 +68,7 @@ You will also need to provide (upload) the dependent binaries of the required fr
 
 **A:** For each test that we run against the pre-release builds, we will provide results within 48 hours on your [Azure Portal](https://www.aka.ms/testbaseportal "Test Base Homepage") dashboard.
 
-**Q: Can you reboot after installation?**
+**Q: Can you reboot after install?**
 
 **A:** Yes, our process supports rebooting after installation. Be sure to select this option from the “Optional settings” drop list when setting your **Tasks** on the onboarding portal.
 
@@ -86,7 +86,7 @@ While for functional tests, you can specify whether a reboot is required for eac
 
 **Q: What is the difference between Security Update tests and Feature Update tests?**
 
-**A:** For Security update tests, we test against the **<ins>monthly pre-release security updates</ins>** on Windows which are focused on keeping our users always secure and protected. For the Feature update tests, we test against the **<ins>bi-annual pre-release feature updates</ins>** which introduce new features and capabilities on Windows.
+**A:** For Security update tests, we test against the **<ins>monthly pre-release security updates</ins>** on Windows which are focused on keeping our users always secure and protected. For the Feature update tests, we test against the **<ins>bi-annual pre-release feature updates</ins>** which introduces new features and capabilities on Windows.
 
 ## Debugging options
 
