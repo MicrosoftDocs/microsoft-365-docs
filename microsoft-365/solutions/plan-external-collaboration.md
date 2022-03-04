@@ -118,14 +118,13 @@ Admins can apply DLP policies to a team where all channels, including shared cha
 
 ##### Retention policy
 
-Admins can apply a retention policy on a team where all channels, including shared channels, inherit the retention policy. Shared channels inherit the policy of the host team.
+Admins can apply a [retention policy](/microsoft-365/compliance/retention) on a team where all channels, including shared channels, inherit the retention policy. Shared channels inherit the policy of the parent team.
 
 ##### Sensitivity labels
 
-Sensitivity labels available in the host organization are the only labels that can be applied to the documents in a shared channel site. Automatic labeling is not used.
+[Sensitivity labels](/microsoft-365/compliance/sensitivity-labels) available in the host organization are the only labels that can be applied to the documents in a shared channel site. A file that is encrypted by a sensitivity label cannot be opened by external participants. Automatic labeling is not used.
 
 Shared channels and their associated SharePoint sites inherit the label from the parent team.
-A file that is encrypted by a sensitivity label cannot be opened by external participants.
 
 ##### Information barriers
 
