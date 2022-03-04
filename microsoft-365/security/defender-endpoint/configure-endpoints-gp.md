@@ -168,7 +168,7 @@ Check for the latest virus and spyware security intelligence before running a sc
 
 **Policy location:** \Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Attack Surface Reduction
 
-Get the current list of attack surface reduction rules GUIDs from [Attack surface reduction rules deployment phase 3: implement](attack-surface-reduction-rules-deployment-implement.md). For additional, per rules details, see [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
+Get the current list of attack surface reduction rules GUIDs from [Attack surface reduction rules deployment Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md). For additional, per rules details, see [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 
 1. Open the **Configure Attack Surface Reduction** policy.
 
@@ -298,6 +298,12 @@ Browse to **Computer Configuration** \> **Policies** \> **Administrative Templat
 :::image type="content" source="images/gpo-maps-join-ms-maps.png" alt-text="join microsoft maps.":::
 
 :::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="send file sample when further analysis is required.":::
+
+> [!NOTE]
+> The **Send all samples** option will provide the most analysis of binaries/scripts/docs which increases security posture.
+The **Send safe samples** option limits the type of binaries/scripts/docs being analyzed, and decreases security posture. 
+
+For more information, see [Turn on cloud protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md), and [Cloud protection and sample submission in Microsoft Defender Antivirus.](cloud-protection-microsoft-antivirus-sample-submission.md)
 
 ### Check for signature update
 

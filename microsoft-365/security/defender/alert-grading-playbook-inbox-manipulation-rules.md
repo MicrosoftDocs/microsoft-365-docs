@@ -137,6 +137,7 @@ let user_id = ""; // enter here the user id
 CloudAppEvents
 | where Timestamp between (start_date .. end_date)
 | where AccountObjectId == user_id
+| where Application == @"Microsoft Exchange Online"
 | where ActionType in ("Set-Mailbox", "New-InboxRule", "Set-InboxRule") //set new inbox rule related operations
 | project Timestamp, ActionType, CountryCode, City, ISP, IPAddress, RuleConfig = RawEventData.Parameters, RawEventData
 ```

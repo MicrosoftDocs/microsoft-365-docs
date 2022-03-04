@@ -46,7 +46,7 @@ At this point, you're ready to move on to [deploying apps](deploy-apps.md).
 1. Deploy and assign [Intune Company Portal](company-portal.md).
 1. [Assign licenses](assign-licenses.md).
 1. [Deploy apps](deploy-apps.md).
-1. [Set up devices](set-up-devices.md).
+1. [Prepare devices](prepare-devices.md).
 1. Set up [first-run experience with Autopilot and the Enrollment Status Page](esp-first-run.md).
 1. [Enable user support features](enable-support.md).
 1. Get your users ready to use devices (this article).

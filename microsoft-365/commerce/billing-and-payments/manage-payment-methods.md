@@ -2,8 +2,8 @@
 title: "Manage payment methods"
 f1.keywords:
 - CSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jamitche, jmueller
 audience: Admin
@@ -14,12 +14,13 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_billing
 - TopSMBIssues
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 - AdminTemplateSet
 - adminvideo
+- business_assist
 search.appverid: MET150
 description: "Buy business products or services from Microsoft by using an existing payment method or adding a new one in the Microsoft 365 admin center."
 ms.date: 04/02/2021
@@ -40,6 +41,9 @@ If your business account doesn't have a billing profile, any Global or Billing a
 > The option to pay with a bank account is not available in some countries or regions.
 >
 > You must use a payment method issued from the same country as your tenant.
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Watch: Update your payment method
 
