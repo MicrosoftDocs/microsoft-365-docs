@@ -1,6 +1,6 @@
 ---
-title: Evaluate and pilot Microsoft 365 Defender, an XDR
-description: What is XDR? What does a Microsoft XDR look like? Use this blog series to plan your Microsoft 365 Defender trial lab or pilot environment to test and experience a security solution designed to protect devices, identity, data, and applications.
+title: Evaluate and pilot Microsoft 365 Defender, an XDR solution
+description: What is XDR? What does a Microsoft XDR look like? Use this blog series to plan your Microsoft 365 Defender trial lab or pilot environment to test and experience a security solution designed to protect devices, identity, data, and applications. Build your Microsoft Defender XDR and take that test to production.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
