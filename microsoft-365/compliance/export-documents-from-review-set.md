@@ -91,8 +91,8 @@ If you select this export option, the exported content is organized in the follo
   - Exchange: This folder contains all content from Exchange stored in PST files. Redacted PDF files cannot be included with this option. If an attachment is selected in the review set, the parent email will be exported with the attachment attached.
       - This folder could also contain: 
         - Any Information Rights Management (IRM) protected messages that have been decoded. 
-        - Any messages that were error-remediated. 
-        - Any modern attachments/links referenced in e-mails. 
+        - Any error-remediated messages. 
+        - Any modern attachments or links referenced in emails. 
       - Encrypted items are not added back into the PST.
   
   - SharePoint: This folder contains all native content from SharePoint in a native file format. Redacted PDF files cannot be included with this option.
