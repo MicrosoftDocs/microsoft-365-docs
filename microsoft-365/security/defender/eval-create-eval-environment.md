@@ -22,7 +22,7 @@ ms.collection:
 ms.topic: how-to
 ms.technology: m365d
 ---
-# Create the Microsoft 365 Defender Evaluation Environment
+# Step 1. Create the Microsoft 365 Defender Evaluation Environment
 
 Build out of this Microsoft Defender XDR solution happens in steps that are distributed through the rest of the series:
 
