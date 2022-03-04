@@ -39,7 +39,7 @@ In this introductory course, you'll learn the six critical elements to drive ado
 
 Welcome to the Driving Adoption Community! Connect and discuss the latest topics and best practices in driving cloud adoption. Third party promotional content will be deleted. Thanks for your help keeping this community a vibrant and useful place!
 
-### Use the Microosft 365 adoption tools
+### Use the Microsoft 365 adoption tools
 
 Use our resources to go from inspiration to execution with our productivity cloud. Get started, experiment with our services, and onboard employees at scale while being confident that you are improving the employee experience.
 
@@ -56,20 +56,20 @@ Usage, product feedback, and help article data for specific apps and services in
 
 Chart information gives you insight into the apps and services that you want to track data on. Select an app or service to dig deeper into usage, product feedback, net promoter score and help content data.
 
-**Average daily users** tells you how many users are using the Microsoft 365 app or service on a daily basis. Learn more
+**Average daily users** tells you how many users are using the Microsoft 365 app or service on a daily basis. [Learn more](../activity-reports/active-users-ww.md)
 
 **Unique active users** is the total number of users who perform any intentional action in app.
 
-**In-product feedback** volume total number of in-product feedback responses submitted. Learn more
+**In-product feedback** volume total number of in-product feedback responses submitted. [Learn more](feedback-user-control.md)
 
-**Nps survey response volume** is the total number of responses to NPS (Net Promoter Score) surveys. Learn more
+**Nps survey response volume** is the total number of responses to NPS (Net Promoter Score) surveys. [Learn more](../manage/manage-feedback-product-insights.md)
 
 **Help article views** is the total number of help article page views that users in your organization have viewed in app or on support.microsoft.com. Learn more
 
 > [!NOTE]
 > You can filter the chart data for trends over the last 30 days, 90 days, or 180 days.
 
-## Who can see the information on the adoption and training dashboard
+## Who can see the information on the adoption and training dashboard?
 
 People who have the following permissions:
   
