@@ -47,7 +47,7 @@ In this interactive guide, you'll learn how Microsoft Defender for Endpoint can 
 
 - To submit files to Microsoft, you need to be a member of one of the following role groups:
 
-  - **Organization Management** or **Security Reader** in the [Microsoft 365 Defender portal](../office-365-security/permissions-microsoft-365-security-center.md).
+  - **Organization Management** or **Security Administrator** in the [Microsoft 365 Defender portal](../office-365-security/permissions-microsoft-365-security-center.md).
 
 - For more information about how you can submit spam, phish, URLs, files, and file hashes (SHAs) to Microsoft, see [Report messages and files to Microsoft](../office-365-security/report-junk-email-messages-to-microsoft.md).
 
@@ -57,20 +57,20 @@ If you have a file that you suspect might be malware or is being incorrectly det
 
 ### Submit a suspected file or file hash
 
-1. Open the Microsoft 365 Defender at <https://security.microsoft.com/>, click **Submissions**, and then select **Add new submission**. 
+1. Open the Microsoft 365 Defender at <https://security.microsoft.com/>, click **Actions & submissions**, click **Submissions**, go to **Files** tab, and then select **Add new submission**. 
 
 > [!div class="mx-imgBorder"]
 > ![Add new submission](../../media/unified-admin-submission-new.png) (Image not final)
 
 2. Use the **Submit items to Microsoft for review** flyout that appears to submit the **File** or **File hash**.  
 
-3. In the **Submission type** box, select **File** or **File hash** from the drop-down list. 
+3. In the **Select the submission type** box, select **File** or **File hash** from the drop-down list. 
 
 4. Click **Browse files**. In the dialog that opens, find and select the file, and then click **Open**. Note that for **File hash** submissions, you'll either have to copy or type in the file hash. 
 
-5. In the **How would you categorize this submission?** section, choose either **Malware**, or **Unwanted software**, or **Clean** (false positive).
+5. In the **This file should have been categorized as** section, choose either **Malware**, or **Unwanted software**, or **Clean** (false positive).
   
-6. Next, **Choose the priority**. Note that for **File hash** submissions, **Low - bulk files and file hash submissions** is the only choice, and is automatically selected.
+6. Next, **Choose the priority**. Note that for **File hash** submissions, **Low - bulk file or file hash submission** is the only choice, and is automatically selected.
 
 > [!div class="mx-imgBorder"]
 > ![Submit items to Microsoft for review](../../media/unified-admin-submission-file.png) (Image not final)
@@ -87,15 +87,19 @@ You can also submit a file or file hash directly from the list of alerts on the 
 
 2. Select the alert you want to report.  
 
-3. Click the ellipses next to **Consult a threat expert** to see additional options. Select **Submit items to Microsoft for review**.
+3. Click the ellipses next to **Manage alert** to see additional options. Select **Submit items to Microsoft for review**.
 
 > [!div class="mx-imgBorder"]
 > ![Submit items from alerts queue](../../media/unified-admin-submission-alerts-queue.png) (Image not final)
 
-4. In the next flyout that opens, select the submission type, upload the file, categorize your submission, and choose the priority. 
+4. In the next flyout that opens, select the submission type. 
 
 > [!div class="mx-imgBorder"]
 > ![Complete the required fields](../../media/unified-admin-submission-alert-queue-flyout.png) (Image not final)
+
+  If you select **File** as the submission type, upload the file, categorize your submission, and choose the priority.
+  
+  If you select **File Hash** as the submission type, choose the file hashes that are available from the drop-down. You can select multiple file hashes. 
  
 5. Click **Submit**. 
 
