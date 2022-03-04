@@ -125,4 +125,4 @@ If a user with an unauthorized connector activity is identified, you can investi
 ## More information
 
 - [Remove blocked connectors](remove-blocked-connectors.md)
-- [Remove blocked entities](remove-blocked-entities)
+- [Remove blocked entities](remove-blocked-entities.md)
