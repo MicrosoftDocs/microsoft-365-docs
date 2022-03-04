@@ -42,11 +42,11 @@ A prerequisite to managing Teams content in Advanced eDiscovery is to understand
 |Teams group chats     |Messages in group chats are stored in the Exchange Online mailbox of all chat participants. |Files shared in group chats are stored in the OneDrive for Business account of the person who shared the file. |
 |Teams channels     |All channel messages and posts are stored in the Exchange Online mailbox associated with the team.|Files shared in a channel are stored in the SharePoint Online site associated with the team.           |
 |Private channels     |Messages sent in a private channel are stored in the Exchange Online mailboxes of all members of the private channel.|Files shared in a private channel are stored in a dedicated SharePoint Online site associated with the private channel.|
-|Shared channels     |Messages sent in a shared channel are stored in a system mailbox (call a *lightweight group mailbox*) associated with the shared channel.<sup>1</sup>|Files shared in a shared channel are stored in a dedicated SharePoint Online site associated with the shared channel.|
+|Shared channels     |Messages sent in a shared channel are stored in a system mailbox associated with the shared channel.<sup>1</sup>|Files shared in a shared channel are stored in a dedicated SharePoint Online site associated with the shared channel.|
 ||||
 
 > [!NOTE]
-> <sup>1</sup> To search for (and preserve) messages sent in a shared channel, you have to search or specify the mailbox for the parent Team.
+> <sup>1</sup> To search for (and preserve) messages sent in a shared channel, you have to search or specify the Exchange Online mailbox for the parent Team.
 
 ## Create a case for Teams content
 
