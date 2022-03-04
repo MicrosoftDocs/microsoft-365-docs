@@ -2,8 +2,8 @@
 title: 'Test Base SDK for Python'
 description: Details on understanding Test Base's SDK for Python
 search.appverid: MET150
-author: Tinacyt
-ms.author: tinachen
+author: mansipatel-usl
+ms.author: mapatel
 manager: rshastri
 audience: Software-Vendor
 ms.topic: article
