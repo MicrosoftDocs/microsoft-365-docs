@@ -2,7 +2,6 @@
 title: Troubleshoot performance issues
 description: Troubleshoot high CPU usage related to the real-time protection service in Microsoft Defender for Endpoint.
 keywords: troubleshoot, performance, high CPU utilization, high CPU usage, error, fix, update compliance, oms, monitor, report, Microsoft Defender Antivirus
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -10,9 +9,9 @@ ms.sitesec: library
 ms.pagetype: security
 ms.author: maccruz
 author: schmurky
-localization_priority: normal
+ms.localizationpriority: medium
 manager: dansimp
-ms.date: 04/14/2021
+ms.date: 10/19/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
@@ -26,8 +25,7 @@ ms.collection: m365-security-compliance
 
 
 **Applies to:**
-
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 If your system is having high CPU usage or performance issues related to the real-time protection service in Microsoft Defender for Endpoint, you can submit a ticket to Microsoft support. Follow the steps in [Collect Microsoft Defender Antivirus diagnostic data](collect-diagnostic-data.md).
 
@@ -46,7 +44,7 @@ You can also provide additional logs to your submission to Microsoft support by 
 
 If you can readily identify the software affecting system performance, go to the software vendor's knowledge base or support center. Search if they have recommendations about antivirus exclusions. If the vendor's website does not have them, you can open a support ticket with them and ask them to publish one.
 
-We recommend that software vendors follow the various guidelines in [Partnering with the industry to minimize false positives](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/). The vendor can submit their software through the [Microsoft Defender Security Intelligence portal (MDSI)](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper).
+We recommend that software vendors follow the various guidelines in [Partnering with the industry to minimize false positives](https://www.microsoft.com/security/blog/2018/08/16/partnering-with-the-industry-to-minimize-false-positives/). The vendor can submit their software through the [Microsoft Security Intelligence portal](https://www.microsoft.com/wdsi/filesubmission?persona=SoftwareDeveloper).
 
 ## Analyze the Microsoft Protection Log
 
@@ -162,7 +160,7 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 ### Capture performance logs using the WPR UI
 
 > [!TIP]
-> If you have multiple devices where the issue is occurring, use the one which has the most amount of RAM.
+> If multiple devices are experiencing this issue, use the one which has the most RAM.
 
 1. Download and install WPR.
 
@@ -223,22 +221,22 @@ Alternatively, you can also use the command-line tool *wpr.exe*, which is availa
 
     ![Select save.](images/wpr-10.png)
 
-13. Fill up **Type in a detailed description of the problem:** with information about the problem and how you reproduced the issue.
+13. Fill up **Type in a detailed description of the problem:** with information about the problem and how you reproduced the issue.
 
     ![Fill up details.](images/wpr-12.png)
 
-    1. Select **File Name:** to determine where your trace file will be saved. By default, it 1.is saved to `%user%\Documents\WPR Files\`.
-    1. Select **Save**.
+    1. Select **File Name:** to determine where your trace file will be saved. By default, it is saved to `%user%\Documents\WPR Files\`.
+    1. Select **Save**.
 
-14. Wait while the trace is being merged.
+14. Wait while the trace is being merged.
 
-    ![WPR gathering general trace.](images/wpr-13.png)
+    ![WPR gathering general trace.](images/wpr-13.png)
 
-15. Once the trace is saved, select **Open folder**.
+15. Once the trace is saved, select **Open folder**.
 
-    ![WPR trace saved.](images/wpr-14.png)
+    ![WPR trace saved.](images/wpr-14.png)
 
-    Include both the file and the folder in your submission to Microsoft support.
+    Include both the file and the folder in your submission to Microsoft Support.
 
     ![File and folder.](images/wpr-15.png)
 

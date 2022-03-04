@@ -7,9 +7,9 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance

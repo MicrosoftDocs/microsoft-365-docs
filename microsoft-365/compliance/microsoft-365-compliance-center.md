@@ -8,14 +8,17 @@ manager: laurawi
 ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about the Microsoft 365 compliance center, including what it contains, how to get it, and your next steps.
 ms.collection: M365-security-compliance
+ms.custom: 
+- admindeeplinkCOMPLIANCE
+- intro-overview
 ---
 
 # Microsoft 365 compliance center
 
-If you're interested in your organization's compliance posture, you're going to love the [Microsoft 365 compliance center](https://compliance.microsoft.com). The Microsoft 365 compliance center provides easy access to the data and tools you need to manage to your organization's compliance needs.
+If you're interested in your organization's compliance posture, you're going to love the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>. The Microsoft 365 compliance center provides easy access to the data and tools you need to manage to your organization's compliance needs.
 
 Read this article to get acquainted with the Microsoft 365 compliance center, [how to get it](#how-do-i-get-the-compliance-center), [frequently asked questions](#frequently-asked-questions), and your [next steps](#next-steps).
 
@@ -47,7 +50,7 @@ From here, you can:
 
     ![Active alerts card Microsoft 365 compliance center.](../media/m365-compliance-center-active-alerts-card.png)
 
-You can also use the **Add cards** feature to add additional cards, such as one showing your organization's cloud app compliance, and another showing data about users with shared files, with links to [Cloud App Security](/cloud-app-security/) or other tools where you can explore data.
+You can also use the **Add cards** feature to add additional cards, such as one showing your organization's cloud app compliance, and another showing data about users with shared files, with links to [Defender for Cloud Apps](/cloud-app-security/) or other tools where you can explore data.
 
 ![Additional compliance center card details.](../media/m365-compliance-center-additional-cards.png)
 
@@ -73,7 +76,7 @@ In addition to links in cards on the home page, you'll see a navigation pane on 
 
 **Why don't I see the new Microsoft 365 compliance center yet?**
 
-First, make sure that you have the appropriate licenses and permissions. Then, sign in at [https://compliance.microsoft.com](https://compliance.microsoft.com). If you don't see the new compliance center yet, you'll have it soon.
+First, make sure that you have the appropriate licenses and permissions. Then, sign in at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>. If you don't see the new compliance center yet, you'll have it soon.
 
 ![More resources.](../media/m365-compliance-center-more-resources.png)
 
@@ -85,7 +88,7 @@ First, make sure that you have the appropriate licenses and permissions. Then, s
 
 - **Review your organization's data loss prevention policies** and make required changes as necessary. To learn more about, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
 
-- **Get acquainted with and set up Microsoft Cloud App Security**. See [Quickstart: Get started with Microsoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security).
+- **Get acquainted with and set up Microsoft Defender for Cloud Apps**. See [Quickstart: Get started with Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security).
 
 - **Learn about and create communication compliance policies** to quickly identify and remediate corporate code-of-conduct policy violations. See [Communication compliance in Microsoft 365](communication-compliance.md).
 

@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 
 ms.custom: 
   - seo-marvel-apr2020
@@ -50,7 +50,7 @@ If you click **Filters** in a report view, you can specify a date range with **S
 
 To email the report for a specific date range to one or more recipients, click **Request download**.
 
-Related insights are shown beneath the Mail flow map if they're available (for example, the [Fix possible mail loop insight](mfi-mail-loop-insight.md)).
+Related insights are shown beneath the Mail flow map if they're available (for example, the [Fix possible mail loop insight](mfi-mail-loop-insight.md).
 
 ## Details table view for the Mail flow map
 

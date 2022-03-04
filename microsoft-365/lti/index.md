@@ -11,14 +11,11 @@ ms.prod: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
     - M365-modern-desktop
-localization_priority: None
+ms.localizationpriority: null
 description: "Learn about Learning Tools Interoperability (LTI) Office apps in M365, and how they will help educators when integrating Office apps into their Learning Management System (LMS)."
 ---
 
 # Integrating Microsoft products with your Learning Management System (LMS)
-
-> [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 - [OneDrive LTI with Canvas](#onedrive-lti-with-canvas)
 - [Teams Meetings LTI with Canvas](#teams-meetings-lti-with-canvas)

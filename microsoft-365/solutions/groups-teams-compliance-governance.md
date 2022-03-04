@@ -7,7 +7,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-collaboration
 - m365solution-collabgovernance
@@ -121,7 +121,7 @@ With Microsoft 365 Multi-Geo, you can provision and store data at rest in the ge
 
 ## Related topics
 
-[Collaboration governance planning step-by-step](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Collaboration governance planning recommendations](collaboration-governance-overview.md#collaboration-governance-planning-recommendations)
 
 [Create your collaboration governance plan](collaboration-governance-first.md)
 

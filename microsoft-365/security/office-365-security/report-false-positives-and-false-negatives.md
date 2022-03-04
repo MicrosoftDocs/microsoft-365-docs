@@ -7,7 +7,7 @@ author: dansimp
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
   - M365-security-compliance
 description: Learn how to report false positives and false negatives in Outlook using the Report Message feature.
@@ -33,9 +33,6 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 
 - For the best user submission experience, use the Report Message add-in or the Report Phishing add-in.
 
-  > [!IMPORTANT]
-  > The built-in experience for reporting junk or phishing in Outlook can't use the [user submission policy](./user-submission.md). We recommend using the Report Message add-in or the Report Phishing add-in instead.
-
 - The Report Message add-in and the Report Phishing add-in work for Outlook in all platforms (Outlook on the web, iOS, Android, and Desktop).
 
 - If you're an admin in an organization with Exchange Online mailboxes, use the Submissions portal in the Microsoft 365 Defender portal. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
@@ -45,6 +42,19 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or on-premises 
 - For more information on how to get and enable the Report Message or the Report Phishing add-ins, see [Enable the Report Message or the Report Phishing add-ins](enable-the-report-message-add-in.md).
 
 - For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+
+### Turn off the built-in reporting experience
+
+We don't recommend the built-in reporting experience in Outlook because it can't use the [user submission policy](./user-submission.md). We recommend using the Report Message add-in or the Report Phishing add-in instead.
+
+You need to be assigned permissions before you can run this cmdlet. To find the permissions required to run any cmdlet or parameter in your organization, see [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/find-exchange-cmdlet-permissions).
+
+Run the following PowerShell command to disable the built-in reporting experience in Outlook on the web:
+
+```powershell
+Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled $false
+```
+
 
 ## Use the Report Message feature
 

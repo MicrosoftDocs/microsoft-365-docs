@@ -2,15 +2,13 @@
 title: Troubleshoot issues on Microsoft Defender for Endpoint on Android
 description: Troubleshoot issues for Microsoft Defender for Endpoint on Android
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mde, android, cloud, connectivity, communication
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -24,7 +22,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -47,14 +46,12 @@ Unexpected error, try later
 
 **Cause:**
 
-You have an older version of "Microsoft Authenticator" app installed on your
-device.
+You have an older version of "Microsoft Authenticator" app installed on your device.
 
 **Solution:**
 
-Install latest version and of [Microsoft
-Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator)
-from Google Play Store and try again
+Install latest version and of [Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)
+from Google Play Store and try again.
 
 ## Sign in failed - invalid license
 
@@ -89,8 +86,7 @@ for Android are not blocked on some Xiaomi devices. The following functionality 
 
 **Cause:**
 
-Xiaomi devices include a new permission model. This prevents Defender for Endpoint
-for Android from displaying pop-up windows while it runs in the background.
+Xiaomi devices include a new permission model. This prevents Defender for Endpoint for Android from displaying pop-up windows while it runs in the background.
 
 Xiaomi devices permission: "Display pop-up windows while running in the
 background."
@@ -113,7 +109,7 @@ Defender App asks for Battery Optimization/Permanent Protection permission on de
 
 **Cause:**
 
-Xiaomi changed the battery optimization permissions in Android 11. Defender is not allowed to configure this setting to ignore battery optimizations.
+Xiaomi changed the battery optimization permissions in Android 11. Defender for Endpoint is not allowed to configure this setting to ignore battery optimizations.
 
 **Solution:**
 
@@ -136,11 +132,11 @@ Users can follow these steps to enable the same permissions from the device sett
 
    ![Step two to change dropdown to show "All Apps".](images/show-all-apps-1.png)
 
-5. Locate “Microsoft Defender Endpoint” and select **Don’t Optimize**.
+5. Locate “Microsoft Defender for Endpoint” and select **Don’t Optimize**.
 
-   ![Locate "Microsoft Defender Endpoint" and select "Don't Optimise".](images/select-dont-optimise.png)
+   ![Locate "Microsoft Defender for Endpoint" and select "Don't Optimize".](images/select-dont-optimise.png)
 
-Return to the Microsoft Defender Endpoint onboarding screen, select **Allow**, and you will be redirected to the dashboard screen.
+Return to the Microsoft Defender for Endpoint onboarding screen, select **Allow**, and you will be redirected to the dashboard screen.
 
 ## Send in-app feedback
 

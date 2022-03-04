@@ -9,7 +9,7 @@ ms.date: 9/20/2021
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - SPO160
 - MET150

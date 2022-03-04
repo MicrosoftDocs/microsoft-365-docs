@@ -2,20 +2,17 @@
 title: Device control for macOS
 description: Learn how to configure Microsoft Defender for Endpoint on Mac to reduce threats from removable storage such as USB devices.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, device, control, usb, removable, media
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: security
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -25,7 +22,8 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -36,7 +34,7 @@ Device control for macOS has the following prerequisites:
 
 > [!div class="checklist"]
 >
-> - Microsoft Defender for Endpoint entitlement (can be trial)
+> - Microsoft Defender for Endpoint entitlement (can be trial)
 > - Minimum OS version: macOS 11 or higher
 > - Minimum product version: 101.34.20
 

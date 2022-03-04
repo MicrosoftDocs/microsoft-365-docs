@@ -2,20 +2,17 @@
 title: Resources for Microsoft Defender for Endpoint on Mac
 description: Resources for Microsoft Defender for Endpoint on Mac, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, catalina, mojave, high sierra
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -26,7 +23,8 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -38,7 +36,7 @@ If you can reproduce a problem, increase the logging level, run the system for s
 1. Increase logging level:
 
    ```bash
-   mdatp log level set --level verbose
+   mdatp log level set --level debug
    ```
 
    ```Output
@@ -84,6 +82,14 @@ There are several ways to uninstall Microsoft Defender for Endpoint on macOS. No
 
 - Open **Finder > Applications**. Right click on **Microsoft Defender for Endpoint > Move to Trash**.
 
+### Supported output types
+
+Supports table and JSON format output types. For each command, there's a default output behavior. You can modify the output in your preferred output format using the following commands:
+
+`-output json`
+
+`-output table`
+
 ### From the command line
 
 - `sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'`
@@ -104,7 +110,10 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Configuration|Turn on PUA protection|`mdatp threat policy set --type potentially_unwanted_application -- action block`|
 |Configuration|Turn off PUA protection|`mdatp threat policy set --type potentially_unwanted_application -- action off`|
 |Configuration|Turn on audit mode for PUA protection|`mdatp threat policy set --type potentially_unwanted_application -- action audit`|
-|Configuration|Turn on/off passiveMode|`mdatp config passive-mode --value enabled [enabled/disabled]`|
+|Configuration|Turn on/off antivirus passive mode|`mdatp config passive-mode --value [enabled/disabled]`|
+|Configuration|Configure degree of parallelism for on-demand scans|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
+|Configuration|Turn on/off scans after security intelligence updates|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
+|Configuration|Turn on/off archive scanning (on-demand scans only)|`mdatp config scan-archives --value [enabled/disabled]`|
 |Diagnostics|Change the log level|`mdatp log level set --level [error/warning/info/verbose]`|
 |Diagnostics|Generate diagnostic logs|`mdatp diagnostic create --path [directory]`|
 |Health|Check the product's health|`mdatp health`|
@@ -114,7 +123,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Protection|Do a full scan|`mdatp scan full`|
 |Protection|Cancel an ongoing on-demand scan|`mdatp scan cancel`|
 |Protection|Request a security intelligence update|`mdatp definitions update`|
-|EDR|Add group tag to device. EDR tags are used for managing device groups. For more information, please visit /microsoft-365/security/defender-endpoint/machine-groups|`mdatp edr tag set --name GROUP --value [name]`|
+|EDR|Set/Remove tag, only GROUP supported|`mdatp edr tag set --name GROUP --value [name]`|
 |EDR|Remove group tag from device|`mdatp edr tag remove --tag-name [name]`|
 |EDR|Add Group ID|`mdatp edr group-ids --group-id [group]`|
 
@@ -123,7 +132,7 @@ Important tasks, such as controlling product settings and triggering on-demand s
 To enable autocompletion in bash, run the following command and restart the Terminal session:
 
 ```bash
-echo "source /Applications/Microsoft\ Defender\ ATP.app/Contents/Resources/Tools/mdatp_completion.bash" >> ~/.bash_profile
+echo "source /Applications/Microsoft\ Defender.app/Contents/Resources/Tools/mdatp_completion.bash" >> ~/.bash_profile
 ```
 
 To enable autocompletion in zsh:
@@ -145,7 +154,7 @@ To enable autocompletion in zsh:
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions
 
-   sudo ln -svf "/Applications/Microsoft Defender ATP.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
+   sudo ln -svf "/Applications/Microsoft Defender.app/Contents/Resources/Tools/mdatp_completion.zsh" /usr/local/share/zsh/site-functions/_mdatp
    ```
 
 ## Client Microsoft Defender for Endpoint quarantine directory

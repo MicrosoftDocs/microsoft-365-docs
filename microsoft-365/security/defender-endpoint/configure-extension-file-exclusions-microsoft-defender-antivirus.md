@@ -2,19 +2,18 @@
 title: Configure and validate exclusions based on extension, name, or location
 description: Exclude files from Microsoft Defender Antivirus scans based on their file extension, file name, or location.
 keywords: exclusions, files, extension, file type, folder name, file name, scans
-search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.date: 09/14/2021
+ms.date: 02/27/2022
 ms.collection: M365-security-compliance
 ---
 
@@ -22,7 +21,8 @@ ms.collection: M365-security-compliance
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 
 You can define exclusions for Microsoft Defender Antivirus that apply to [scheduled scans](schedule-antivirus-scans.md), [on-demand scans](run-scan-microsoft-defender-antivirus.md), and [always-on, real-time protection and monitoring](configure-real-time-protection-microsoft-defender-antivirus.md). **Generally, you shouldn't need to apply exclusions**. If you do need to apply exclusions, you can choose from several different kinds:
@@ -106,14 +106,16 @@ See [How to create and deploy antimalware policies: Exclusion settings](/configm
     1. Set the option to **Enabled**.
     2. Under the **Options** section, select **Show**.
     3. Specify each folder on its own line under the **Value name** column.
-    4. If you are specifying a file, ensure that you enter a fully qualified path to the file, including the drive letter, folder path, file name, and extension. Enter **0** in the **Value** column.
+    4. If you are specifying a file, ensure that you enter a fully qualified path to the file, including the drive letter, folder path, file name, and extension. 
+    5. Enter **0** in the **Value** column.
 
 5. Choose **OK**.
 
 6. Open the **Extension Exclusions** setting for editing and add your exclusions.
     1. Set the option to **Enabled**.
     2. Under the **Options** section, select **Show**.
-    3. Enter each file extension on its own line under the **Value name** columnEnter **0** in the **Value** column.
+    3. Enter each file extension on its own line under the **Value name** column.
+    4. Enter **0** in the **Value** column.
 
 7. Choose **OK**.
 
@@ -131,7 +133,7 @@ The format for the cmdlets is as follows:
 
 The following table lists cmdlets that you can use in the `<cmdlet>` portion of the PowerShell cmdlet:
 
-<br>
+<br/><br/>
 
 |Configuration action|PowerShell cmdlet|
 |:---|:---|
@@ -141,7 +143,7 @@ The following table lists cmdlets that you can use in the `<cmdlet>` portion of 
 
 The following table lists values that you can use in the `<exclusion list>` portion of the PowerShell cmdlet:
 
-<br>
+<br/><br/>
 
 |Exclusion type|PowerShell parameter|
 |---|---|
@@ -158,9 +160,9 @@ Add-MpPreference -ExclusionExtension ".test"
 ```
 
 > [!TIP]
-> For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/).
+> For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender Antivirus cmdlets](/powershell/module/defender/).
 
-### Use Windows Management Instruction (WMI) to configure file name, folder, or file extension exclusions
+### Use Windows Management Instrumentation (WMI) to configure file name, folder, or file extension exclusions
 
 Use the [Set, Add, and Remove methods of the MSFT_MpPreference](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) class for the following properties:
 
@@ -190,6 +192,7 @@ You can use the asterisk `*`, question mark `?`, or environment variables (such 
 > There are key limitations and usage scenarios for these wildcards:
 >
 > - Environment variable usage is limited to machine variables and those applicable to processes running as an NT AUTHORITY\SYSTEM account.
+> - You can only use a maximum of six wildcards per entry.
 > - You cannot use a wildcard in place of a drive letter.
 > - An asterisk `*` in a folder exclusion stands in place for a single folder. Use multiple instances of `\*\` to indicate multiple nested folders with unspecified names.
 > - Currently, Microsoft Endpoint Configuration Manager does not support wildcard characters (such as `*` or `?`).
@@ -215,8 +218,10 @@ The following table describes how the wildcards can be used and provides some ex
 
 ### System environment variables
 
-The following table lists and describes the system account environment variables.<br/><br/>
-    
+The following table lists and describes the system account environment variables.
+
+<br/><br/>
+
 |This system environment variable...|Redirects to this|
 |---|---|
 |`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
@@ -275,10 +280,10 @@ The following table lists and describes the system account environment variables
 |`%PUBLIC%\RecordedTV.library-ms`|`C:\Users\Public\RecordedTV.library-ms`|
 |`%PUBLIC%\Videos`|`C:\Users\Public\Videos`|
 |`%PUBLIC%\Videos\Sample Videos`|`C:\Users\Public\Videos\Sample Videos`|
-|`%USERPROFILE%`|`C:\Windows\System32\config\systemprofile`|
-|`%USERPROFILE%\AppData\Local`|`C:\Windows\System32\config\systemprofile\AppData\Local`|
-|`%USERPROFILE%\AppData\LocalLow`|`C:\Windows\System32\config\systemprofile\AppData\LocalLow`|
-|`%USERPROFILE%\AppData\Roaming`|`C:\Windows\System32\config\systemprofile\AppData\Roaming`|
+|`%USERPROFILE%`|`C:\Users\UserName`|
+|`%USERPROFILE%\AppData\Local`|`C:\Users\UserName\AppData\Local`|
+|`%USERPROFILE%\AppData\LocalLow`|`C:\Users\UserName\AppData\LocalLow`|
+|`%USERPROFILE%\AppData\Roaming`|`C:\Users\UserName\AppData\Roaming`|
 
 ## Review the list of exclusions
 
@@ -302,17 +307,17 @@ If you use PowerShell, you can retrieve the list in two ways:
 
 ### Validate the exclusion list by using MpCmdRun
 
-To check exclusions with the dedicated [command-line tool mpcmdrun.exe](./command-line-arguments-microsoft-defender-antivirus.md?branch=v-anbic-wdav-new-mpcmdrun-options), use the following command:
+To check exclusions with the dedicated [command-line tool mpcmdrun.exe](./command-line-arguments-microsoft-defender-antivirus.md), use the following command:
 
-```DOS
+```console
 Start, CMD (Run as admin)
 cd "%programdata%\microsoft\windows defender\platform"
-cd 4.18.1812.3 (Where 4.18.1812.3 is this month's MDAV "Platform Update".)
+cd 4.18.2111-5.0 (Where 4.18.2111-5.0 is this month's Microsoft Defender Antivirus "Platform Update".)
 MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> Checking exclusions with MpCmdRun requires Microsoft Defender Antivirus CAMP version 4.18.1812.3 (released in December 2018) or later.
+> Checking exclusions with MpCmdRun requires Microsoft Defender Antivirus CAMP version 4.18.2111-5.0 (released in  December 2021) or later.
 
 ### Review the list of exclusions alongside all other Microsoft Defender Antivirus preferences by using PowerShell
 
@@ -326,7 +331,7 @@ In the following example, the items contained in the `ExclusionExtension` list a
 
 :::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="PowerShell output for Get-MpPreference.":::
 
-For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/).
+For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender Antivirus cmdlets](/powershell/module/defender/).
 
 ### Retrieve a specific exclusions list by using PowerShell
 
@@ -342,7 +347,7 @@ In the following example, the list is split into new lines for each use of the `
 
 :::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="PowerShell output showing only the entries in the exclusion list.":::
 
-For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets](/powershell/module/defender/).
+For more information, see [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender Antivirus cmdlets](/powershell/module/defender/).
 
 <a id="validate"></a>
 

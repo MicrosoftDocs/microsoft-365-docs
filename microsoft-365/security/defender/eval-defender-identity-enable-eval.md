@@ -12,12 +12,12 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 ms.date: 07/09/2021
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
   - M365-security-compliance
-  - m365solution-overview
+  - m365solution-scenario
   - m365solution-evalutatemtp
 ms.topic: conceptual
 ms.technology: m365d

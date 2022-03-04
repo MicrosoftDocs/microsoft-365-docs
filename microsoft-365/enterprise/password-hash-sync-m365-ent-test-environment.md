@@ -9,7 +9,7 @@ ms.date: 05/26/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-identity-device-management
 - Strat_O365_Enterprise

@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 01b79cb0-e206-4a3a-aaef-b10941770f87
 description: "The Bookings mobile apps are not yet available worldwide. This article lists those locales where the apps are available now."
 ---

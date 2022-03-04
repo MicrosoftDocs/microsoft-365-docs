@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid:
 - MET150
 ms.collection: 
@@ -17,6 +17,7 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+- admindeeplinkSPO
 recommendations: false
 description: "Learn how to deploy teams with protection for highly sensitive data."
 ---
@@ -124,12 +125,11 @@ Each time you create a new team with the highly sensitive label, there are two s
 
 To update the site default sharing link type
 
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-2. Under **Sites**, click **Active sites**.
-3. Click the site that is associated with team.
-4. On the **Policies** tab, under **External sharing**, click **Edit**.
-5. Under Default sharing link type, clear the **Same as organization-level setting** check box, and select **People with existing access**.
-6. Click **Save**.
+1. Open the SharePoint admin center, and under **Sites**, select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
+1. Select the site that is associated with team.
+1. On the **Policies** tab, under **External sharing**, select **Edit**.
+1. Under Default sharing link type, clear the **Same as organization-level setting** check box, and select **People with existing access**.
+1. Select **Save**.
 
 #### Private channels
 

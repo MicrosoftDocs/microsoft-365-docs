@@ -13,7 +13,7 @@ ms.custom: seo-marvel-apr2020
 ms.collection: 
 - Strat_SP_gtc
 - SPO_Content
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Find information about moving a OneDrive site to a different geo location, including how to schedule site moves and communicating expectations to users.
 ---
 
@@ -57,7 +57,7 @@ When using the geo move cmdlets, connect to SPO Service at the user's current On
 
 For example: To move OneDrive of user 'Matt@contosoenergy.onmicrosoft.com', connect to EUR SharePoint Admin center as the user's OneDrive is in EUR geo location:
 
-`Connect-SPOSservice -url https://contosoenergyeur-admin.sharepoint.com`
+`Connect-SPOService -url https://contosoenergyeur-admin.sharepoint.com`
 
 ![Screenshot of PowerShell window showing connect-sposervice cmdlet.](../media/move-onedrive-between-geo-locations-image1.png)
 

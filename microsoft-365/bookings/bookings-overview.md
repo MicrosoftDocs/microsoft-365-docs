@@ -6,7 +6,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: bookings
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 description: "An overview of the Microsoft Bookings app, which includes a web-based booking calendar and integrates with Outlook to optimize your staff’s calendar and give your customers flexibility to book appointments."
 ---

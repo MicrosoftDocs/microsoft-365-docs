@@ -7,7 +7,7 @@ ms.date: 05/16/2018
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Ent_O365
 - Strat_O365_Enterprise

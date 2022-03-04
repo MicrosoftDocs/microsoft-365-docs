@@ -10,15 +10,15 @@ audience: ITPro
 ms.topic: how-to
 f1_keywords: 
   - 'ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers'
-
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: 
   - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection: 
   - M365-security-compliance
 description: Admins can learn how to remove users from the Restricted users page in the Microsoft 365 Defender portal. Users are added to the Restricted users portal for sending outbound spam, typically as a result of account compromise.
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
 ---
@@ -64,7 +64,7 @@ Admins can remove users from the Restricted users page in the Microsoft 365 Defe
 
 ## Use the Microsoft 365 Defender portal to remove a user from the Restricted users list
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Review** \> **Restricted users**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Review** \> **Restricted users**. To go directly to the **Restricted users** page, use <https://security.microsoft.com/restrictedusers>.
 
 2. On the **Restricted users** page, find and select the user that you want to unblock by clicking on the user.
 

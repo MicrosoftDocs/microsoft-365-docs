@@ -3,19 +3,19 @@ metadata:
   title: Self-service purchase FAQ
   f1.keywords:
   - NOCSH
-  ms.author: cmcatee
   author: cmcatee-MSFT
+  ms.author: cmcatee
   manager: scotv
   ms.reviewer: mijeffer, pablom
   audience: Admin
   ms.topic: article
   ms.service: o365-administration 
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ms.collection: M365-subscription-management
   ms.custom: 
+  - commerce_ssp
   - AdminSurgePortfolio
   - aka.ms/self-service-purchase-faq
-  - commerce_ssp
   search.appverid:
   - MET150
   description: "Find answers to commonly asked questions about self-service purchases."

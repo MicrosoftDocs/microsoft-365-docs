@@ -6,12 +6,12 @@ description: Frequently asked questions about Double Key Encryption for Microsof
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 12/11/2020
+ms.date: 02/28/2022
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
 ms.reviewer: esaggese
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 

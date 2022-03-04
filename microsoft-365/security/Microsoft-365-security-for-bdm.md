@@ -1,5 +1,6 @@
 ---
 title: "Microsoft 365 Security for Business Decision Makers (BDMs)"
+description: The most common threat and attack scenarios currently faced by organizations for their Microsoft 365 environments, and recommended actions for mitigating these risks.
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -9,12 +10,11 @@ audience: Admin
 ms.topic: tutorial
 ms.prod: m365-security
 ms.technology: m365d
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: "the most common threat and attack scenarios currently faced by organizations for their Microsoft 365 environments, and recommended actions for mitigating these risks."
 ---
 
 # Microsoft 365 Security for Business Decision Makers (BDMs)
@@ -85,7 +85,7 @@ After adding extra protections to your privileged accounts and protecting agains
 |---------|---------|---------|
 |**Configure Microsoft Defender for Office 365**:<br>*    Safe Attachments<br>*    Safe Links<br>*    Microsoft Defender for Endpoint for SharePoint, OneDrive, and Microsoft Teams<br>*    Anti-phishing in Defender for Office 365 protection|         |![green check mark.](../media/green-check-mark.png) |
 |**Configure Microsoft Defender for Endpoint capabilities**:<br>*    Windows Defender Antivirus <br>*    Exploit protection <br> *    Attack surface reduction <br> *    Hardware-based isolation <br>*    Controlled folder access     |         |![green check mark.](../media/green-check-mark.png) |
-|**Use Microsoft Cloud App Security** to discover SaaS apps and begin to use behavior analytics and anomaly detection. |         |![green check mark.](../media/green-check-mark.png) |
+|**Use Microsoft Defender for Cloud Apps** to discover SaaS apps and begin to use behavior analytics and anomaly detection. |         |![green check mark.](../media/green-check-mark.png) |
 
 The following diagram illustrates these capabilities.
 ![Recommended capabilities for protecting against unknown threats.](../media/m365-security-bdm-illustrations-unknown-threats.png)
@@ -103,21 +103,21 @@ Additional recommendations:
 
 While Microsoft takes every possible measure to prevent against threats and attacks, we recommend always working under the "Assume Breach" mindset. Even if an Attacker has managed to intrude into the environment, we need to make sure they are unable to exfiltrate data or identity information from the environment. For this reason, we recommend enabling protection against sensitive data leaks such as Social Security numbers, credit cards numbers, other personal information, and other organizational level confidential information. 
 
-The "Assume Breach" mindset requires implementing a zero trust network strategy, which means users are not fully trusted just because they are internal to the network. Instead, as part of authorization of what users can do, sets of conditions are specified, and when such conditions are met, certain controls are enforced. Conditions may include device health status, application being accessed, operations being performed, and user risk. For example, a device enrollment action should always trigger MFA authentication to ensure no rouge devices are added to your environment. 
+The "Assume Breach" mindset requires implementing a Zero Trust network strategy, which means users are not fully trusted just because they are internal to the network. Instead, as part of authorization of what users can do, sets of conditions are specified, and when such conditions are met, certain controls are enforced. Conditions may include device health status, application being accessed, operations being performed, and user risk. For example, a device enrollment action should always trigger MFA authentication to ensure no rouge devices are added to your environment. 
 
-A zero trust network strategy also requires that you know where your information is stored and apply appropriate controls for classification, protection, and retention. To effectively protect your most critical and sensitive assets you need to first identify where these are located and take inventory, which can be challenging. Next, work with your organization to define a governance strategy. Defining a classification schema for an organization and configuring policies, labels, and conditions require careful planning and preparation. It is important to realize that this is not an IT driven process. Be sure to work with your legal and compliance team to develop an appropriate classification and labeling schema for your organization's data.
+A Zero Trust network strategy also requires that you know where your information is stored and apply appropriate controls for classification, protection, and retention. To effectively protect your most critical and sensitive assets you need to first identify where these are located and take inventory, which can be challenging. Next, work with your organization to define a governance strategy. Defining a classification schema for an organization and configuring policies, labels, and conditions require careful planning and preparation. It is important to realize that this is not an IT driven process. Be sure to work with your legal and compliance team to develop an appropriate classification and labeling schema for your organization's data.
 
 Microsoft 365 information protection capabilities can help you discover what information you have, where it is stored, and which information requires extra protection. Information protection is a continuous process and Microsoft 365 capabilities provide you with visibility into how users are using and distributing sensitive information, where your information is currently stored, and where it flows. You can also see how users handling information that is regulated to be sure the appropriate labels and protections are applied.
 
 
 |Recommendation |E3|E5 |
 |---------|---------|---------|
-|**Review and optimize your conditional access and related policies to align with your objectives for a zero trust network**. Protecting against known threats includes implementing a set of [recommended policies](./office-365-security/microsoft-365-policies-configurations.md). Review your implementation of these policies to ensure you're protecting your apps and data against hackers who have gained access to your network. The recommended Intune app protection policy for Windows 10 enables Windows Information Protection (WIP). WIP protects against accidental leaks of your organization data through apps and services, like email, social media, and the public cloud. |         |![green check mark.](../media/green-check-mark.png)|
+|**Review and optimize your conditional access and related policies to align with your objectives for a Zero Trust network**. Protecting against known threats includes implementing a set of [recommended policies](./office-365-security/microsoft-365-policies-configurations.md). Review your implementation of these policies to ensure you're protecting your apps and data against hackers who have gained access to your network. The recommended Intune app protection policy for Windows 10 enables Windows Information Protection (WIP). WIP protects against accidental leaks of your organization data through apps and services, like email, social media, and the public cloud. |         |![green check mark.](../media/green-check-mark.png)|
 |**Disable external email forwarding**. Hackers who gain access to a user's mailbox can steal your mail by setting the mailbox to automatically forward email. This can happen even without the user's awareness. You can prevent this from happening by configuring a mail flow rule.|![green check mark.](../media/green-check-mark.png) |![green check mark.](../media/green-check-mark.png)|
 |**Disable anonymous external calendar sharing**. By default external anonymous calendar sharing is allowed. [Disable calendar sharing](/exchange/sharing/sharing-policies/modify-a-sharing-policy) to reduce potential leaks of sensitive information.|![green check mark.](../media/green-check-mark.png) |![green check mark.](../media/green-check-mark.png)|
 |**Configure data loss prevention policies for sensitive data**. Create a Data Loss Prevention Policy in the Security &amp; Compliance center to discover and protect sensitive data such as credit card numbers, Social Security numbers and bank account numbers. Microsoft 365 includes many predefined sensitive information types you can use in data loss prevention policies. You can also create your own sensitive information types for sensitive data that is custom to your environment. |![green check mark.](../media/green-check-mark.png)|![green check mark.](../media/green-check-mark.png)|
 |**Implement data classification and information protection policies**. Implement sensitivity labels and use these to classify and apply protection to sensitive data. You can also use these labels in data loss prevention policies. If you are using Azure Information Protection labels, we recommend that you avoid creating new labels in other admin centers.|         |![green check mark.](../media/green-check-mark.png)|
-|**Protect data in third-party apps and services by using Cloud App Security**. Configure Cloud App Security policies to protect sensitive information across third-party cloud apps, such as Salesforce, Box, or Dropbox. You can use sensitive information types and the sensitivity labels you created in Cloud App Security policies and apply these across your SaaS apps. <br><br>Microsoft Cloud App Security allows you to enforce a wide range of automated processes. Policies can be set to provide continuous compliance scans, legal eDiscovery tasks, DLP for sensitive content shared publicly, and more. Cloud App Security can monitor any file type based on more than 20 metadata filters (for example, access level, file type). |         |![green check mark.](../media/green-check-mark.png)|
+|**Protect data in third-party apps and services by using Defender for Cloud Apps**. Configure Defender for Cloud Apps policies to protect sensitive information across third-party cloud apps, such as Salesforce, Box, or Dropbox. You can use sensitive information types and the sensitivity labels you created in Defender for Cloud Apps policies and apply these across your SaaS apps. <br><br>Microsoft Defender for Cloud Apps allows you to enforce a wide range of automated processes. Policies can be set to provide continuous compliance scans, legal eDiscovery tasks, DLP for sensitive content shared publicly, and more. Defender for Cloud Apps can monitor any file type based on more than 20 metadata filters (for example, access level, file type). |         |![green check mark.](../media/green-check-mark.png)|
 |**Use [Microsoft  Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview) to identify if users store sensitive information on their Windows devices**. |         |![green check mark.](../media/green-check-mark.png)|
 |**Use [AIP Scanner](/azure/information-protection/deploy-aip-scanner) to identify and classify information across servers and file shares**. Use the AIP reporting tool to view the results and take appropriate actions.|         |![green check mark.](../media/green-check-mark.png)|
 
@@ -126,8 +126,7 @@ The following diagram illustrates these capabilities.
 
 ## Continuous monitoring and auditing
 
-Last, but not least Continuous Monitoring and Auditing of the Microsoft 365 environment along with the Windows and Devices is critical to making sure you are able to quickly detect and remediate any intrusions. Tools such as Secure Score, Security Center, and Microsoft Intelligent Graph's advanced analytics provide invaluable information into your tenant and link massive amounts of threat intelligence and security data to provide you unparalleled threat protection and detection.
-
+Last but not least, Continuous Monitoring and Auditing of the Microsoft 365 environment along with the Windows and Devices is critical to making sure you are able to quickly detect and remediate any intrusions. Tools such as Secure Score, Microsoft 365 Defender portal, and Microsoft Intelligent Graph's advanced analytics provide invaluable information into your tenant and link massive amounts of threat intelligence and security data to provide you unparalleled threat protection and detection.
 
 |Recommendation |E3 |E5 |
 |---------|---------|---------|
@@ -135,15 +134,16 @@ Last, but not least Continuous Monitoring and Auditing of the Microsoft 365 envi
 |**Review Secure Score weekly** — Secure score is a central location to access the Security status of your company and take actions based on Secure score recommendations. It is recommended to perform this check weekly.|![green check mark.](../media/green-check-mark.png)|![green check mark.](../media/green-check-mark.png)|
 |Use **Microsoft Defender for Office 365** tools:<br>*    Threat investigation and response capabilities<br> *    Automated investigation and response |         |![green check mark.](../media/green-check-mark.png)|
 |Use **Microsoft  Defender for Endpoint**:<br> *    [Endpoint detection and response](/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) <br> *    Automated investigation and remediation Secure score <br>*    [Advanced hunting](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) <br>|         |![green check mark.](../media/green-check-mark.png)|
-|Use **Microsoft Cloud App Security** to detect unusual behavior across cloud apps to identify ransomware, compromised users or rogue applications, analyze high-risk usage and remediate automatically to limit the risk to your organization.|         |![green check mark.](../media/green-check-mark.png)|
-|Use **Microsoft Azure Sentinel** or your current SIEM tool to monitor for threats across your environment. |         |![green check mark](../media/green-check-mark.png)|
+|Use **Microsoft Defender for Cloud Apps** to detect unusual behavior across cloud apps to identify ransomware, compromised users or rogue applications, analyze high-risk usage and remediate automatically to limit the risk to your organization.|         |![green check mark.](../media/green-check-mark.png)|
+|Use **Microsoft Sentinel** or your current SIEM tool to monitor for threats across your environment. |         |![green check mark](../media/green-check-mark.png)|
 |**Deploy [Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp)** to monitor and protect against threats targeted to your on-premises Active Directory environment.   |         |![green check mark](../media/green-check-mark.png) |
-|Use the **Azure Defender*** to monitor for threats across hybrid and cloud workloads. Azure Defender* includes a free tier of capabilities and a standard tier of capabilities that are paid for based on resource hours or transactions.|         |         |
+|Use **Microsoft Defender for Cloud** to monitor for threats across hybrid and cloud workloads. Microsoft Defender for Cloud includes a free tier of capabilities and a standard tier of capabilities that are paid for based on resource hours or transactions.|         |         |
 
 The following diagram illustrates these capabilities.
 ![Recommended capabilities for continuous monitoring and auditing.](../media/m365-security-bdm-illustrations-monitoring-auditing.png)
 
 Top recommended monitoring actions:
-- **Review Microsoft Secure Score weekly** — Secure score is a central location to access the security status of your tenant and to take actions based on top recommendations. It is recommended to perform this check weekly. Secure Score includes recommendations from across Azure AD, Intune, Cloud App Security, and Microsoft Defender for Endpoint, as well as Office 365. 
+
+- **Review Microsoft Secure Score weekly** — Secure score is a central location to access the security status of your tenant and to take actions based on top recommendations. It is recommended to perform this check weekly. Secure Score includes recommendations from across Azure AD, Intune, Defender for Cloud Apps, and Microsoft Defender for Endpoint, as well as Office 365.
 - **Review risky logins weekly** — Use the Azure AD admin center to review risky sign-ins weekly. The recommended identity and device access ruleset includes a policy to enforce password change on risky sign-ins.  
 - **Review top malware and phished users weekly** — Use Microsoft Defender for Office 365 Threat Explorer to review top users targeted with malware and phish and to find out the root cause of why these users are affected.

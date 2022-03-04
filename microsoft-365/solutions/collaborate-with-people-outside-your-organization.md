@@ -15,7 +15,7 @@ ms.collection:
 ms.custom: 
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
 description: Learn how to configure Microsoft 365 apps like Teams, OneDrive, and SharePoint for collaboration with people outside your organization.

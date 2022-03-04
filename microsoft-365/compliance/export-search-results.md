@@ -10,7 +10,7 @@ ms.topic: how-to
 f1_keywords:
 - 'ms.o365.cc.CustomizeExport'
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -133,6 +133,9 @@ See the next section for instructions to download the exported search results.
 ## Step 2: Download the search results
 
 The next step is to download the search results from the Azure Storage location to your local computer.
+
+> [!NOTE]
+> The exported search results must be downloaded within 14 days after you created the export job in Step 1.
   
 1. On the **Content search** page in the Microsoft 365 compliance center, select the **Exports** tab
   

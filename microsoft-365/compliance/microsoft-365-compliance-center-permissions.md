@@ -8,9 +8,12 @@ manager: laurawi
 ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn about managing permissions in the Microsoft 365 compliance center.
 ms.collection: M365-security-compliance
+ms.custom: 
+- admindeeplinkCOMPLIANCE
+- admindeeplinkEXCHANGE
 ---
 
 # Permissions in the Microsoft 365 compliance center
@@ -21,7 +24,7 @@ To view the **Permissions** tab in the Microsoft 365 compliance center, users ne
 
 ![Permissions page in Microsoft 365 compliance center.](../media/m365-compliance-center-permissions.png)
 
-Permissions in the Microsoft 365 compliance center are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services, so if you're familiar with the permission structure in these services, granting permissions in the Microsoft 365 compliance center will be familiar. It's important to remember that the permissions managed in the Microsoft 365 compliance center don't cover the management of all the permissions needed in each individual service. You'll still need to manage certain service-specific permissions in the admin center for the specific service. For example, if you need to assign permissions for archiving, auditing, and MRM retention policies, you'll need to manage these permissions in the Exchange admin center.
+Permissions in the Microsoft 365 compliance center are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services, so if you're familiar with the permission structure in these services, granting permissions in the Microsoft 365 compliance center will be familiar. It's important to remember that the permissions managed in the Microsoft 365 compliance center don't cover the management of all the permissions needed in each individual service. You'll still need to manage certain service-specific permissions in the admin center for the specific service. For example, if you need to assign permissions for archiving, auditing, and MRM retention policies, you'll need to manage these permissions in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
 ## Relationship of members, roles, and role groups
 
@@ -35,7 +38,7 @@ A role group is a set of roles that enable users do their jobs across compliance
 
 To view all of the default role groups that are available in the Microsoft 365 compliance center and the roles that are assigned to the role groups by default, see the [Permissions in the Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
 
-Managing permissions in the Microsoft 365 compliance center only gives users access to the compliance features that are available within the Microsoft 365 compliance center. If you want to grant permissions to other features that aren't in the Microsoft 365 compliance center, such as Exchange mail flow rules (also known as transport rules), you'll need to use the Exchange admin center.
+Managing permissions in the Microsoft 365 compliance center only gives users access to the compliance features that are available within the Microsoft 365 compliance center. If you want to grant permissions to other features that aren't in the Microsoft 365 compliance center, such as Exchange mail flow rules (also known as transport rules), you'll need to use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
 ## Azure roles in the Microsoft 365 compliance center
 
@@ -58,69 +61,64 @@ The roles that appear in the **Azure AD** > **Roles** section of the Microsoft 3
 
 Complete the following steps to add users to a compliance role group:
 
-1. Sign into the permissions area of the [Microsoft 365 compliance center](https://compliance.microsoft.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
-2. In the Microsoft 365 compliance center, go to **Permissions**. Select the link to view and manage compliance roles in Microsoft 365.
-3. Expand the **Compliance center** section and select **Roles**.
-4. On the **Compliance center roles** page, select a compliance role group you want to add users to, then select **Edit role group** on the details pane.
-5. Select **Choose members** from the left navigation pane, then select **Edit**.
-6. Select **Add** and then select the checkbox for all users you want to add to the role group.
-7. Select **Add**, then select **Done**.
-8. Select **Save** to add the users to the role group. Select **Close** to complete the steps.
+1. Sign into the permissions area of the Microsoft 365 compliance center using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a> to select the link to view and manage compliance roles in Microsoft 365.
+1. Expand the **Compliance center** section and select **Roles**.
+1. On the **Compliance center roles** page, select a compliance role group you want to add users to, then select **Edit role group** on the details pane.
+1. Select **Choose members** from the left navigation pane, then select **Edit**.
+1. Select **Add** and then select the checkbox for all users you want to add to the role group.
+1. Select **Add**, then select **Done**.
+1. Select **Save** to add the users to the role group. Select **Close** to complete the steps.
 
 ## Remove users from a compliance role group
 
 Complete the following steps to remove users from a compliance role group:
 
-1. Sign into the permissions area of the [Microsoft 365 compliance center](https://compliance.microsoft.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
-2. In the Microsoft 365 compliance center, go to **Permissions**. Select the link to view and manage compliance roles in Microsoft 365.
-3. Expand the Compliance center section and select **Roles**.
-4. On the **Compliance center roles** page, select a compliance role group you want to remove users from, then select **Edit role group** on the details pane.
-5. Select **Choose members** from the left navigation pane, then select **Edit**.
-6. Select **Remove** and then select the checkbox for all users you want to remove from the role group.
-7. Select **Remove**, then select **Done**.
-8. Select **Save** to remove the users from the role group. Select **Close** to complete the steps.
+1. Sign into the permissions area of the Microsoft 365 compliance center using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a> to select the link to view and manage compliance roles in Microsoft 365.
+1. Expand the Compliance center section and select **Roles**.
+1. On the **Compliance center roles** page, select a compliance role group you want to remove users from, then select **Edit role group** on the details pane.
+1. Select **Choose members** from the left navigation pane, then select **Edit**.
+1. Select **Remove** and then select the checkbox for all users you want to remove from the role group.
+1. Select **Remove**, then select **Done**.
+1. Select **Save** to remove the users from the role group. Select **Close** to complete the steps.
 
 ## Create a custom role group
 
 Complete the following steps to create a custom role group:
 
-1. Sign into [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
-2. In the Microsoft 365 compliance center, go to **Permissions**.
-3. On the **Permissions & roles** page, select **Compliance center > Roles**.
-4. On the **Compliance center roles** page, select **Create**.
-5. On the **Name your role group** page, enter a name for the custom role group in the **Name** field. The name of the role group cannot be changed after creation of the role group. If needed, enter a description for the custom role group in the **Description** field. Select **Next** to continue.
-6. On the **Choose roles** page, select **Choose roles**.
-7. Select **Add**, then choose the roles to add to the custom role group. Select **Add** to add the role group, then select **Done**.
-8. Select **Next** to continue.
-9. On the **Choose members** page, select **Choose members**.
-10. Select **Add**, then choose the members to add to the custom role group. Select **Add** to add the members, then select **Done**.
-11. Select **Next** to continue.
-12. On the **Review your settings** page, review the details for the custom role group. If you need to edit the information, select **Edit** in the appropriate section. When all the settings are correct, select **Create role group** to create the custom role group or select **Cancel** to discard the changes and not create the custom role group.
+1. Sign into the permissions area of the Microsoft 365 compliance center using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a>.
+1. On the **Permissions & roles** page, select **Compliance center > Roles**.
+1. On the **Compliance center roles** page, select **Create**.
+1. On the **Name your role group** page, enter a name for the custom role group in the **Name** field. The name of the role group cannot be changed after creation of the role group. If needed, enter a description for the custom role group in the **Description** field. Select **Next** to continue.
+1. On the **Choose roles** page, select **Choose roles**.
+1. Select **Add**, then choose the roles to add to the custom role group. Select **Add** to add the role group, then select **Done**.
+1. Select **Next** to continue.
+1. On the **Choose members** page, select **Choose members**.
+1. Select **Add**, then choose the members to add to the custom role group. Select **Add** to add the members, then select **Done**.
+1. Select **Next** to continue.
+1. On the **Review your settings** page, review the details for the custom role group. If you need to edit the information, select **Edit** in the appropriate section. When all the settings are correct, select **Create role group** to create the custom role group or select **Cancel** to discard the changes and not create the custom role group.
 
 ## Update a custom role group
 
 Complete the following steps to update a custom role group:
 
-1. Sign into [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
-2. In the Microsoft 365 compliance center, go to **Permissions**.
-3. On the **Permissions & roles** page, select **Compliance center > Roles**.
-4. On the **Compliance center roles** page and select the role group to update.
-5. On the details pane for the selected role group, select **Edit role group**.
-6. On the **Editing role group name** page, update the description for the custom role group in the **Description** field. The name of the custom role group cannot be changed.
-7. On the **Choose roles** page, select **Edit** to update the roles assigned to the role groups.
-8. Select **Add**, then choose the roles to add to the custom role group. Select **Add** to add the role group, then select **Done**.
-9. On the **Choose members** page, select **Edit**.
-10. Select **Add**, then choose the members to add to the custom role group. Select **Add** to add the members, then select **Done**.
-11. Select **Save** to save updated *Description*, *Role groups*, and *Members* values.
-12. On the details pane for the selected role group, select **Close**.
+1. Sign into the permissions area of the Microsoft 365 compliance center using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a>.
+1. On the **Permissions & roles** page, select **Compliance center > Roles**.
+1. On the **Compliance center roles** page and select the role group to update.
+1. On the details pane for the selected role group, select **Edit role group**.
+1. On the **Editing role group name** page, update the description for the custom role group in the **Description** field. The name of the custom role group cannot be changed.
+1. On the **Choose roles** page, select **Edit** to update the roles assigned to the role groups.
+1. Select **Add**, then choose the roles to add to the custom role group. Select **Add** to add the role group, then select **Done**.
+1. On the **Choose members** page, select **Edit**.
+1. Select **Add**, then choose the members to add to the custom role group. Select **Add** to add the members, then select **Done**.
+1. Select **Save** to save updated *Description*, *Role groups*, and *Members* values.
+1. On the details pane for the selected role group, select **Close**.
 
 ## Delete a custom role group
 
 Complete the following steps to update a custom role group:
 
-1. Sign into [https://compliance.microsoft.com/permissions](https://compliance.microsoft.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
-2. In the Microsoft 365 compliance center, go to **Permissions**.
-3. On the **Permissions & roles** page, select **Compliance center > Roles**.
-4. On the **Compliance center roles** page and select the role group to update.
-5. On the details pane for the selected role group, select **Delete role group**.
-6. On the **Warning** dialog, select **Yes** to delete the role group or select **No** to cancel the deletion process.
+1. Sign into the permissions area of the Microsoft 365 compliance center using credentials for an admin account in your Microsoft 365 organization, and go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a>.
+1. On the **Permissions & roles** page, select **Compliance center > Roles**.
+1. On the **Compliance center roles** page and select the role group to update.
+1. On the details pane for the selected role group, select **Delete role group**.
+1. On the **Warning** dialog, select **Yes** to delete the role group or select **No** to cancel the deletion process.

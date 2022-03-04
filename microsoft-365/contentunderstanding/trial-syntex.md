@@ -15,7 +15,7 @@ ms.custom:
 - Adopt
 - admindeeplinkMAC
 search.appverid:
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Learn how to plan and run a trial pilot program for SharePoint Syntex in your organization.
 ---
 

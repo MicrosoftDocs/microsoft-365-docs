@@ -10,12 +10,13 @@ ms.date:
 audience: ITPro
 ms.topic: how-to
 
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid:
   - MET150
 ms.assetid:
 ms.collection:
   - M365-security-compliance
+ms.custom:
 description: Admins can learn how to use the configuration analyzer to find and fix security policies that are below the settings in Standard protection and Strict protection in preset security policies.
 ms.technology: mdo
 ms.prod: m365-security
@@ -68,7 +69,7 @@ The Standard and Strict policy setting values that are used as baselines are des
 
 ## Use the configuration analyzer in the Microsoft 365 Defender portal
 
-In the Microsoft 365 Defender portal, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Configuration analyzer** in the **Templated policies** section.
+In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Configuration analyzer** in the **Templated policies** section. To go directly to the **Configuration analyzer** page, use <https://security.microsoft.com/configurationAnalyzer>.
 
 The **Configuration analyzer** page has three main tabs:
 

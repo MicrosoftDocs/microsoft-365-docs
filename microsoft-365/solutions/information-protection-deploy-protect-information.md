@@ -9,7 +9,7 @@ ms.date: 06/09/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
@@ -61,7 +61,7 @@ To help you get started with an information protection scheme in Microsoft 365, 
 
 Microsoft [information protection solutions](../compliance/information-protection.md) include a number of integrated capabilities across Microsoft 365, Microsoft Azure, and Microsoft Windows. In Microsoft 365, information protection solutions include:
 
-- [Sensitive information types](../compliance/sensitive-information-type-entity-definitions.md) (described in the [assess data privacy risks and identify sensitive items article](information-protection-deploy-assess.md))
+- [Sensitive information types](../compliance/sensitive-information-type-entity-definitions.md) (described in the [assess data privacy risks and identify sensitive items article](information-protection-deploy-assess.md)
 - [Sensitivity labels](../compliance/sensitivity-labels.md)
   - Service/container-level
   - Client-side/content-level
@@ -74,7 +74,7 @@ In addition, site and library level protection are important mechanisms to inclu
 
 For information on other information protection capabilities outside of Microsoft 365, see:
 
-- [Microsoft Cloud Application Security (MCAS)](/cloud-app-security/)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/)
 - [Azure Information Protection](/azure/information-protection/what-is-information-protection)
 - [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
 - [Windows Information Protection](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
@@ -109,7 +109,7 @@ Complete these activities prior to implementing any of the sensitivity label-bas
 
       If you are planning to use modern sensitivity labeling for email protection and existing email encryption methods like OME are in place, they can co-exist, but you should understand the scenarios in which either should be applied. See [Office 365 Message Encryption new capabilities (OME)](#office-365-message-encryption-ome-new-capabilities), which includes a table comparing modern sensitivity label-type protection with OME-based protection.
 
-3. Plan for integration into a broader information protection scheme. On top of coexistence with OME, sensitivity labels can be used along-side capabilities like Microsoft 365 data loss prevention (DLP) and Microsoft Cloud App Security. See [Microsoft Information Protection in Microsoft 365](../compliance/information-protection.md) to achieve your data privacy-related information protection goals.
+3. Plan for integration into a broader information protection scheme. On top of coexistence with OME, sensitivity labels can be used along-side capabilities like Microsoft 365 data loss prevention (DLP) and Microsoft Defender for Cloud Apps. See [Microsoft Information Protection in Microsoft 365](../compliance/information-protection.md) to achieve your data privacy-related information protection goals.
 
 4. Develop a sensitivity label classification and control scheme. See [Data Classification and Sensitivity Label Taxonomy](https://aka.ms/dataclassificationwhitepaper).
 
@@ -129,7 +129,7 @@ Complete these activities prior to implementing any of the sensitivity label-bas
 
 ### Create and deploy sensitivity labels for sites, groups, and teams
 
-When you create [sensitivity labels](../compliance/sensitivity-labels-teams-groups-sites.md) in the Microsoft 365 compliance center, you can now apply them to these containers:
+When you create [sensitivity labels](../compliance/sensitivity-labels-teams-groups-sites.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, you can now apply them to these containers:
 
 - Microsoft Teams sites
 - Microsoft 365 groups (formerly Office 365 groups)
@@ -153,7 +153,7 @@ When you're ready to start protecting your organization's data with sensitivity 
 2. **Define what each label can do.** Configure the protection settings you want associated with each label. For example, you might want lower sensitivity content (such as a "General" label) to have just a header or footer applied, while higher sensitivity content (such as a "Confidential" label) should have a watermark and have encryption enabled.
 3. **Publish the labels.** After your sensitivity labels are configured, publish them by using a label policy. Decide which users and groups should have the labels and what policy settings to use. A single label is reusable. You define it once and then you can include it in several label policies assigned to different users.
 
-Once you publish sensitivity labels from the Microsoft 365 compliance center, they start to appear in [Office apps](../compliance/sensitivity-labels-office-apps.md) for users to classify and protect content as it's created or edited.
+Once you publish sensitivity labels from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, they start to appear in [Office apps](../compliance/sensitivity-labels-office-apps.md) for users to classify and protect content as it's created or edited.
 
 ![Sensitivity label deployment flow in Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
 
@@ -203,7 +203,7 @@ DLP allows you to:
 
 ### Supported workloads for DLP
 
-With a DLP policy in the Microsoft 365 compliance center, you can identify, monitor, and automatically protect sensitive items across many locations in Microsoft 365, such as Exchange Online, SharePoint, OneDrive, and Microsoft Teams.
+With a DLP policy in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, you can identify, monitor, and automatically protect sensitive items across many locations in Microsoft 365, such as Exchange Online, SharePoint, OneDrive, and Microsoft Teams.
 
 For example, you can identify any document containing a credit card number that's stored in any OneDrive site, or you can monitor just the OneDrive sites of specific people.
 

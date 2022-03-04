@@ -2,14 +2,18 @@
 title: "Microsoft Compliance Manager quickstart guide"
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.localizationpriority: medium
+ms.collection: 
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
@@ -26,7 +30,7 @@ Whether you’re coming to Compliance Manager for the first time, or are ready t
 
 ## First visit: get to know Compliance Manager
 
-Compliance Manager is located in the Microsoft 365 compliance center at https://compliance.microsoft.com. Your organization's global administrator will need to [set up user permissions and assign roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles) before you start using Compliance Manager.
+Compliance Manager is located in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>. Your organization's global administrator will need to [set up user permissions and assign roles](compliance-manager-setup.md#set-user-permissions-and-assign-roles) before you start using Compliance Manager.
 
 The first time you visit Compliance Manager, you'll see a compliance score for your organization. Compliance Manager is already assessing your current Microsoft 365 environment against the data protection baseline. The best way to start getting familiar with Compliance Manager is to understand what it's showing you, its key elements, and how to customize your dashboard.
 
@@ -42,7 +46,7 @@ Our [Compliance Manager overview page](compliance-manager.md) is the best first 
 
 ## Ramping up: configure Compliance Manager to manage your compliance activities
 
-Once you're familiar with the basics, it's time to set things up to meet your organization's needs. You can start working with assessments and taking improvement actions to implement controls and improve your compliance score. Knowing how to perform all the activities at this stage can help your organization comply and demonstrate compliance with regulations across your industry and region. Visit the links below to dive in:
+Once you're familiar with the basics, it's time to set up things to meet your organization's needs. You can start working with assessments and taking improvement actions to implement controls and improve your compliance score. Knowing how to perform all the activities at this stage can help your organization comply and demonstrate compliance with regulations across your industry and region. Visit the links below to dive in:
 
 - [Choose a pre-built assessment to create and manage your first assessment](compliance-manager-assessments.md)
 - [Understand how to use templates for building assessments](compliance-manager-templates.md)
@@ -58,8 +62,8 @@ When you're comfortable managing assessments in Compliance Manager, you can work
 
 You can also set up automated testing of all or a subset of improvement actions. Visit the links below to understand more advanced functionality in Compliance Manager:
 
-- [Extend a Compliance Manager template by adding your own controls and improvement actions](compliance-manager-templates.md#extend-microsoft-365-assessment-templates)
-- [Create your own custom template](compliance-manager-templates.md#create-an-assessment-template)
-- [Modify an existing template to add or remove controls and actions](compliance-manager-templates.md#modify-a-template)
+- [Extend a Compliance Manager template by adding your own controls and improvement actions](compliance-manager-templates-extend.md)
+- [Create your own custom template](compliance-manager-templates-create.md)
+- [Modify an existing template to add or remove controls and actions](compliance-manager-templates-modify.md)
 - [Set up automated testing of improvement actions](compliance-manager-setup.md#set-up-automated-testing)
 - [Reassign improvement actions to another user](compliance-manager-setup.md#reassign-improvement-actions-to-another-user)

@@ -9,14 +9,14 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: 
 - MET150
 ms.collection: M365-security-compliance
 description: "Learn how to preserve, collect, review, and export content from Microsoft Teams in Advanced eDiscovery."
 ---
 
-# Advanced eDiscovery workflow for content in Microsoft Teams using large cases (preview)
+# Advanced eDiscovery workflow for content in Microsoft Teams
 
 This article provides a comprehensive set of procedures, guidelines, and best practices for using Advanced eDiscovery to preserve, collect, review, and export content from Microsoft Teams. The goal of this article is to help you optimize your eDiscovery workflow for Teams content.
 
@@ -37,14 +37,14 @@ A prerequisite to managing Teams content in Advanced eDiscovery is to understand
 ||Location of chat messages and posts  |Location of files and attachments |
 |:---------|:---------|:---------|
 |Teams 1:1 chats     |Messages in 1:1 chats are stored in the Exchange Online mailbox of all chat participants. |Files shared in a 1:1 chat are stored in the OneDrive for Business account of the person who shared the file. |
-|Teams group chats     |Messages in group chats are stored in the Exchange Online mailbox of all chat participants. |Files shared in group chats chat are stored in the OneDrive for Business account of the person who shared the file. |
+|Teams group chats     |Messages in group chats are stored in the Exchange Online mailbox of all chat participants. |Files shared in group chats are stored in the OneDrive for Business account of the person who shared the file. |
 |Teams channels     |All channel messages and posts are stored in the Exchange Online mailbox associated with the team.|Files shared in a channel are stored in the SharePoint Online site associated with the team.           |
-|Private Teams channels     |Messages sent in a private channel are stored in the Exchange Online mailboxes of all members of the private channel.|Files shared in a private Channel are stored in a dedicated SharePoint Online site associated with the private channel.|
+|Private Teams channels     |Messages sent in a private channel are stored in the Exchange Online mailboxes of all members of the private channel.|Files shared in a private channel are stored in a dedicated SharePoint Online site associated with the private channel.|
 ||||
 
 ## Create a case for Teams content
 
-The first step to managing Teams content in Advanced eDiscovery is to create a case using the large case format that's optimized for managing Teams content. Here's the benefits of using the large case format for Teams content:
+The first step to managing Teams content in Advanced eDiscovery is to create a case using the new case format that's optimized for managing Teams content. Here's the benefits of using the new case format for Teams content:
 
 - Support for conversation threading, in which additional messages in the same conversation that include responsive items are automatically collected and added to review sets.
 
@@ -52,9 +52,9 @@ The first step to managing Teams content in Advanced eDiscovery is to create a c
 
 - Collections up to 1 TB can be added to review sets, which let you collect and amounts large amounts of Teams content in a case.
 
-For more information about the increased case limits for large cases, see [Use large cases in Advanced eDiscovery](advanced-ediscovery-large-cases.md).
+For more information about the increased case limits, see [Use the new case format in Advanced eDiscovery](advanced-ediscovery-new-case-format.md).
 
-To create a large case:
+To create a case:
 
 1. Go to <https://compliance.microsoft.com> and sign in.
 
@@ -62,11 +62,11 @@ To create a large case:
 
 3. On the **Advanced eDiscovery** page, click the **Cases** tab, and then click **Create a case**.
 
-   The **New eDiscovery case** flyout page is displayed. The **Case format** section provides the option to create a large case.
+   The **New eDiscovery case** flyout page is displayed. The **Case format** section provides the option to create a case using the new case format.
 
-   ![Large case option on the New eDiscovery case page.](..\media\AeDLargeCases1.png)
+   ![Large case option on the New eDiscovery case page.](..\media\AeDNewCaseFormat1.png)
 
-4. After naming the case, select the **Large case** option, and then click **Save** to create the large case.
+4. After naming the case, select the **New** option, and then click **Save** to create the case.
 
 ## Add Teams custodial data sources and preserve Teams content  
 
@@ -159,7 +159,7 @@ To create a collection of Teams content:
 
    1. **Save collection as draft**. Choose this option to create a draft collection. As previously explained, a draft collection doesn't add the collection results to a review set. It returns an estimate of the search results that match the search query for the data sources in the collection scope. This gives you the opportunity to view [collection statistics and reports[(collection-statistics-reports.md)] and edit and rerun the draft collection. When you satisfied with the result of a draft collection, you can commit it to a review set. For more information, see [Create a draft collection](create-draft-collection.md).
 
-   2. **Collect items and add to a review set**. Choose this option to run the collection and then add the results to a review set. You can add the collection to a new or existing review set. The options to collect contextual Teams conversation messages (also called *conversation threading*) and collect cloud attachments are selected by default and can't be unselected. These options are automatically applied because of the large case format that you used when you initially created the new case for Teams content. For more information about committing collections to a review set, see [Commit a draft collection to a review set](commit-draft-collection.md).
+   2. **Collect items and add to a review set**. Choose this option to run the collection and then add the results to a review set. You can add the collection to a new or existing review set. The options to collect contextual Teams conversation messages (also called *conversation threading*) and collect cloud attachments are selected by default and can't be unselected. These options are automatically applied because of the new case format that you used when you initially created the case for Teams content. For more information about committing collections to a review set, see [Commit a draft collection to a review set](commit-draft-collection.md).
 
 10. After you're finished configuring the collection, submit the collection to create a draft collection or collect items and add them to a review set.
 
@@ -218,7 +218,7 @@ The following screenshots show an example of conversation in the Teams client an
 
 ### Transcript conversation threading
 
-Conversation threading functionality in the large case format in Advanced eDiscovery helps you identify contextual content related to items that may be relevant to your investigation. This feature produces distinct conversation views that include chat messages that precede and follow the items match the search query during collection. This capability allows you to efficiently and rapidly review complete chat conversations (called *threaded conversations*) in Microsoft Teams. As previous explained, chat conversations are reconstructed in HTML transcript files when Advanced eDiscovery adds Teams content to a review set.
+Conversation threading functionality in the new case format in Advanced eDiscovery helps you identify contextual content related to items that may be relevant to your investigation. This feature produces distinct conversation views that include chat messages that precede and follow the items match the search query during collection. This capability allows you to efficiently and rapidly review complete chat conversations (called *threaded conversations*) in Microsoft Teams. As previous explained, chat conversations are reconstructed in HTML transcript files when Advanced eDiscovery adds Teams content to a review set.
 
 Here's the logic used by Advanced eDiscovery to include additional messages and replies transcript files that provide context around the items match the collection query (called *responsive items*) you used when collecting Teams content. Different threading behaviors are based on the types of chats and the search query used to collect the responsive items. There are two common collection scenarios:
 
@@ -291,3 +291,11 @@ Here are some tips and best practices for viewing Teams content in a review set.
 - Useful columns that to help you review Teams content include **Custodian**, **Recipients**, and **File type** or **Message kind**.
 
 - Use [filters](review-set-search.md) for Teams-related properties to quickly display Teams content. There are filters for most of the metadata properties described in the previous section.
+
+## Reference guide
+
+Here's a quick reference guide for using Advanced eDiscovery for Microsoft Teams. This guide summarizes the keys points for using Advanced eDiscovery to preserve, collect, review, and export content from Microsoft Teams.
+
+![Thumbnail for reference guide for using Advanced eDiscovery for Microsoft Teams.](../media/AeDTeamsReferenceGuide-thumbnail.png)
+
+[Download as a PDF file](https://download.microsoft.com/download/9/e/4/9e4eec6f-c476-452f-b414-4bd4b5c39dca/AeDTeamsReferenceGuide.pdf)

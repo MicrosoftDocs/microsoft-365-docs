@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.date: 06/11/2020
 ms.collection: 
 - Strat_O365_IP

@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
@@ -34,9 +34,6 @@ To create a Core eDiscovery search:
 4. On the **Home** page for the case, click the **Searches** tab, and then click **New search**.
 
    ![Click New search to create a  Core eDiscovery search search.](../media/CoreeDiscoverySearch1.png)
-
-   > [!NOTE]
-   > The **Search by ID list** option lets you search for specific email messages and other mailbox items using a list of Exchange IDs. To create an ID list search, you submit a comma-separated value (CSV) file that identifies the specific mailbox items to search for. For instructions, see [Prepare a CSV file for an ID list search](csv-file-for-an-id-list-content-search.md).
 
 5. In the **New search** wizard, type a name for the search, and an optional description that helps identify the search. The name of the search must be unique in your organization.
 

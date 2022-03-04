@@ -8,7 +8,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -75,6 +75,9 @@ This option is great if you want to have a company email address such as info@co
 3. In the admin center groups list, select the name of the group you want to change, and then on the **Settings** tab, select **Allow external senders to email this group**.
     
 4. Select **Save**.
+
+> [!NOTE]
+> It may take up to 30 minutes before users outside the organization can email the group.
 
 ## Permanently delete a Microsoft 365 group
 

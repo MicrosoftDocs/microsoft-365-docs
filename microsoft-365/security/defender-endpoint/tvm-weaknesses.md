@@ -2,15 +2,13 @@
 title: Vulnerabilities in my organization - threat and vulnerability management
 description: Lists the common vulnerabilities and exposures (CVE) ID of weaknesses found in the software running in your organization. Discovered by the Microsoft Defender for Endpoint threat and vulnerability management capability.
 keywords: Microsoft Defender for Endpoint threat & vulnerability management, threat and vulnerability management, Microsoft Defender for Endpoint tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: dansimp
 author: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -24,11 +22,14 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+
+> [!IMPORTANT]
+> Threat and vulnerability management can help identify Log4j vulnerabilities in applications and components. [Learn more](https://www.microsoft.com/security/blog/2021/12/11/guidance-for-preventing-detecting-and-hunting-for-cve-2021-44228-log4j-2-exploitation/#TVM).
 
 Threat and vulnerability management uses the same signals in Defender for Endpoint's endpoint protection to scan and detect vulnerabilities.
 
@@ -44,7 +45,7 @@ The **Weaknesses** page lists the software vulnerabilities your devices are expo
 
 Access the Weaknesses page a few different ways:
 
-- Selecting **Weaknesses** from the **Vulnerability management** navigation menu in the [Microsoft 365 Defender portal] (portal-overview.md)
+- Selecting **Weaknesses** from the **Vulnerability management** navigation menu in the [Microsoft 365 Defender portal](portal-overview.md)
 - Global search
 
 ### Navigation menu
@@ -135,7 +136,7 @@ View related weaknesses information in the device page.
 
 Similar to the software evidence, we now show the detection logic we applied on a device in order to state that it's vulnerable. The new section is called "Detection Logic" (in any discovered vulnerability in the device page) and shows the detection logic and source.
 
-The "OS Feature" category is also shown in relevant scenarios. A CVE would affect devices that run a vulnerable OS only if a specific OS component is enabled. Let's say Windows Server 2019 has vulnerability in its DNS component. With this new capability, we'll only attach this CVE to the Windows Server 2019 devices with the DNS capability enabled in their OS.
+The "OS Feature" category is also shown in relevant scenarios. A CVE would affect devices that run a vulnerable OS only if a specific OS component is enabled. Let's say Windows Server 2019 or Windows Server 2022 has vulnerability in its DNS component. With this new capability, we'll only attach this CVE to the Windows Server 2019 and Windows Server 2022 devices with the DNS capability enabled in their OS.
 
 :::image type="content" alt-text="Detection Logic example which lists the software detected on the device and the KBs." source="images/tvm-cve-detection-logic.png":::
 

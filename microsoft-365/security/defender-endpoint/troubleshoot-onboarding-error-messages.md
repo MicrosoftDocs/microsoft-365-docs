@@ -2,15 +2,13 @@
 title: Troubleshoot onboarding issues and error messages
 description: Troubleshoot onboarding issues and error message while completing setup of Microsoft Defender for Endpoint.
 keywords: troubleshoot, troubleshooting, Azure Active Directory, onboarding, error message, error messages, microsoft defender for endpoint
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
-localization_priority: Normal
+ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -23,7 +21,9 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
@@ -72,7 +72,7 @@ If the portal dashboard and other sections show an error message such as "Data c
 
 ![Image of data currently isn't available.](images/atp-data-not-available.png)
 
-You'll need to allow the `security.windows.com` and all subdomains under it. For example, `*.security.windows.com`.
+You'll need to allow the `security.windows.com` and all subdomains under it on your web browser. For example, `*.security.windows.com`.
 
 ## Portal communication issues
 
@@ -81,11 +81,11 @@ If you encounter issues with accessing the portal, missing data, or restricted a
 - `*.blob.core.windows.net`
 - `crl.microsoft.com`
 - `https://*.microsoftonline-p.com`
-- `https://*.securitycenter.windows.com`
-- `https://automatediracs-eus-prd.securitycenter.windows.com`
+- `https://*.security.microsoft.com`
+- `https://automatediracs-eus-prd.security.microsoft.com`
 - `https://login.microsoftonline.com`
 - `https://login.windows.net`
 - `https://onboardingpackagescusprd.blob.core.windows.net`
 - `https://secure.aadcdn.microsoftonline-p.com`
-- `https://securitycenter.windows.com`
+- `https://security.microsoft.com`
 - `https://static2.sharepointonline.com`

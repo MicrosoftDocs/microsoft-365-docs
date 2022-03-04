@@ -10,7 +10,7 @@ ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance 
 search.appverid: 
 - MOE150
@@ -19,9 +19,6 @@ description: "Use collections in Advanced eDiscovery to search for and collect c
 ---
 
 # Learn about collections in Advanced eDiscovery
-
-> [!NOTE]
-> We're rolling out a new collections experience in Advanced eDiscovery, which is described in this article. This rollout will take a number of weeks before it's available to all organizations. If the new collections experience isn't available in your organization, you can still collect case content with the [Advanced eDiscovery search tool](create-search-to-collect-data.md).
 
 When organizations are faced with gathering the communications and content that may be relevant to an investigation or potential litigation, they face a significant challenge under the best of circumstances. In today’s modern workplace, the volume, variety, and velocity of content is enabling innovation and remote work, while also expanding the requirements and process for managing collections for eDiscovery investigations.
 
@@ -47,11 +44,9 @@ To get started using collections in Advanced eDiscovery, here's a basic workflow
 
 3. **Revise and rerun a draft collection**. Based on the estimates and statistics returned by the collection, you can edit the draft collection by changing the data sources that are searched and the search query to expand or narrow the collection. You can update and rerun the draft collection until you're confident that collection contains the content that's most relevant to your case.
 
-4. **Commit a draft collection to a review set**. When you're satisfied that the collection returns the type content that is relevant to the case, you can commit the collection to the review set. When you commit a collection, you have the option to add conversation threads, cloud attachments, and document versions to the review set, all of which might be relevant to the case. The following things happen when you commit a collection:
+4. **Commit a draft collection to a review set**. When you're satisfied that the collection returns the type content that is relevant to the case, you can commit the collection to the review set. When you commit a collection, you have the option to add conversation threads, cloud attachments, and document versions to the review set, all of which might be relevant to the case.
 
-   - Child items (such as email attachments, email signatures, and images) are extracted from a parent item (such as an email message, chat message, or document), indexed (in a process called *deep indexing*), and added to the review set as separate files.
-
-   - Deep indexing is performed on items collected from additional data sources. These types of data sources are content locations other than the custodial and non-custodial data sources previously added to the case.
+   When you commit a collection, child items such as email signatures and images are extracted from a parent item (such as an email message, chat message, or document) and then processed by Optical Character Recognition (OCR) to extract any text from the child item. Text extracted from child items is then added to its parent item so you can view it in the review set. By not adding child items to the review set as a separate file, Advanced eDiscovery helps limit the number of potentially immaterial items added to the review set. For more information about how child items are handled, see [Collection statistics and reports](collection-statistics-reports.md#collection-contents).
 
    For more information, see [Commit a draft collection to a review set](commit-draft-collection.md).
 
