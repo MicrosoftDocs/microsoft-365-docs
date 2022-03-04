@@ -2,7 +2,7 @@
 title: 'Upload your package'
 description: How to upload your application, binaries and dependencies onto Test Base
 search.appverid: MET150
-author: Tinacyt
+author: mansipatel-usl
 ms.author: rshastri
 manager: rshastri
 audience: Software-Vendor
