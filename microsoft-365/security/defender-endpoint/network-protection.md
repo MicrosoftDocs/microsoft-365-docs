@@ -52,14 +52,14 @@ Network protection requires Windows 10 Pro or Enterprise, and Microsoft Defender
 |:---|:---|
 | Windows 10 version 1709 or later <br> Windows 11 <br> Windows Server 1803 or later | [Microsoft Defender Antivirus real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) <br> and [cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) must be enabled (active)| |
 
+### Public Preview - Why network protection is important
+
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 >
-> Information about the features that are commercially available follows the prerelease information.
+> Information about the features that are commercially available follows the Public Preview information.
 
-### Public Preview - Why network protection is important
-
-Network protection is a part of the attack surface reduction group of solutions in Microsoft Defender for Endpoint. Network protection enables layer 3 (network layer) blocking of URLs and IPs.  This means network protection can block URLs being access from 3rd-party browsers, as well as standard network connections.  What network protection blocks:
+Network protection is a part of the attack surface reduction group of solutions in Microsoft Defender for Endpoint. Network protection enables layer 3 (network layer) blocking of URLs and IPs. This means network protection can block URLs being access from 3rd-party browsers, as well as standard network connections.  What network protection blocks:
 
 - By default, network protection Protects your computers from known malicious URLs using the Smart Screen feed, which blocks malicious URLs similar to the smart screen in Edge browser. The network protection functionality can be extended to:Block IP / URL from your own Threat Intel (Indicators)
 - Block unsanctioned services from Microsoft Cloud App Security (MCAS)
@@ -67,7 +67,7 @@ Network protection is a part of the attack surface reduction group of solutions 
 
 Network Protections is a critical part of the Microsoft protection and response stack.
 
-For details about Network Protection for Windows Server, Linux, MacOS and MTD,  see: [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md)
+For details about Network Protection for Windows Server, Linux, MacOS and MTD, see: [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md)
 
 #### Smart Screen Unblock
 
