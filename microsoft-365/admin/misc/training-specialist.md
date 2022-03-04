@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 description: "Get a periodic report of how people in your organization are using Microsoft 365 services and drill into each chart for more insights."
 ---
 
-# Microsoft 365 Reports training and adoption
+# Microsoft 365 training and adoption dashboard
 
 Improve employee satisfaction with Microsoft 365 and increase productivity in your org. This dashboard provides key user experience metrics that can help you pinpoint opportunities for targeted communications and product training.
 
@@ -23,21 +23,11 @@ Improve employee satisfaction with Microsoft 365 and increase productivity in yo
 
 :::image type="content" source="../../media/adoption-dashboard.png" alt-text="Screenshot: Image showing the adoption and training dashboard":::
 
-## Who can see the information on the dashboard
-
-People who have the following permissions:
-  
-- Global admins: We recommend that only a few people in your company have this role. It reduces the risk to your business.
-
-- Adoption specialist admin role **verify role**
-
-To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
-
 ## How do I use the Adoption and training dashboard
 
 :::image type="content" source="../../media/adoption-dashboard-select-option.png" alt-text="Screenshot: Choose a tab to select an option for adoption and traning information":::
 
-### View your organizatino's Productivity Score
+### View your organization's Productivity Score
 
 Productivity Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours. For more information on Productivity Score, read, [Productivity Score](https://docs.microsoft.com/microsoft-365/admin/productivity/productivity-score).
 
@@ -64,7 +54,7 @@ Usage, product feedback, and help article data for specific apps and services in
 
 ## Chart information
 
-Chart information gives you insight into the apps and services that you want to track data on. Use the chart data to...
+Chart information gives you insight into the apps and services that you want to track data on. Select an app or service to dig deeper into usage, product feedback, net promoter score and help content data.
 
 **Average daily users** tells you how many users are using the Microsoft 365 app or service on a daily basis. Learn more
 
@@ -78,3 +68,13 @@ Chart information gives you insight into the apps and services that you want to 
 
 > [!NOTE]
 > You can filter the chart data for trends over the last 30 days, 90 days, or 180 days.
+
+## Who can see the information on the adoption and training dashboard
+
+People who have the following permissions:
+  
+- Global admins: We recommend that only a few people in your company have this role. It reduces the risk to your business.
+
+- Adoption specialist admin role **verify role**
+
+To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
