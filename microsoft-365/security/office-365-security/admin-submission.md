@@ -137,7 +137,7 @@ The reported message will be marked as a false positive or a false negative. An 
 4. When you're finished, click **Submit**.
 
     > [!div class="mx-imgBorder"]
-    > ![New Attachment submission example.](../../media/submit-email-for-analysis.png)
+    > ![New Attachment submission example.](../../media/submit-email-attachment-for-analysis.png)
 
 > [!NOTE]
 > If malware filtering has replaced the message attachments with the Malware Alert Text.txt file, you need to submit the original message from quarantine that contains the original attachments. For more information on quarantine and how to release messages with malware false positives, see [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
