@@ -39,7 +39,7 @@ The following types of automatic forwarding are available in Microsoft 365:
 
 You can use outbound spam filter policies to control automatic forwarding to external recipients. Three settings are available:
 
-- **Automatic - System-controlled**: This is the default setting. This setting is now the same as **Off**. When this setting was originally introduced, it was equivalent to **On**. Over time, thanks to the principles of [secure by default](secure-by-default.md), the result of this setting was gradually changed to **Off** for all customers. For more information, see [this blog post](https://techcommunity.microsoft.com/t5/exchange-team-blog/all-you-need-to-know-about-automatic-email-forwarding-in/ba-p/2074888). 
+- **Automatic - System-controlled**: This is the default setting. This setting is now the same as **Off**. When this setting was originally introduced, it was equivalent to **On**. Over time, thanks to the principles of [secure by default](secure-by-default.md), this setting was gradually changed to **Off** for all customers. For more information, see [this blog post](https://techcommunity.microsoft.com/t5/exchange-team-blog/all-you-need-to-know-about-automatic-email-forwarding-in/ba-p/2074888). 
 - **On**: Automatic external forwarding is allowed and not restricted.
 - **Off**: Automatic external forwarding is disabled and will result in a non-delivery report (also known as an NDR or bounce message) to the sender.
 
