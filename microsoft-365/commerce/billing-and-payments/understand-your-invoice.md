@@ -1,14 +1,12 @@
 ---
 title: Understand your bill or invoice
-f1.keywords:
-- CSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - 'MACBillingBillsPaymentsInvoices'
 ms.service: o365-administration
 ms.localizationpriority: medium
