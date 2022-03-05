@@ -160,13 +160,13 @@ To view the report in the Microsoft 365 Defender portal at <https://security.mic
 
 On the **Mailflow status report** page, the **Type** tab is selected by default. The chart shows the following information for the specified date range:
 
-- **Good mail**
+- **Good mail**: Email that's determined not to be spam or are allowed by user or organizational policies.
 - **Total**
-- **Malware**
-- **Phishing email**
-- **Spam**
-- **Edge protection**
-- **Rule messages**
+- **Malware**: Email that's blocked as malware by various filters.
+- **Phishing email**: Email that's blocked as phishing by various filters.
+- **Spam**: Email that's blocked as spam by various filters.
+- **Edge protection**: Email that's rejected at the edge/perimeter before being evaluated by EOP or Defender for Office 365.
+- **Rule messages**: Email messages that were acted upon by mail flow rules (also known as transport rules).
 
 The details table below the graph shows the following information:
 
