@@ -370,7 +370,9 @@ At the end of the retention period, you choose whether you want the content to b
 
 When you configure a retention label to automatically apply a different retention label at the end of the retention period, the item is then subject to the retention settings of the newly selected retention label. This option lets you automatically extend the retention period for the item.
 
-You'll typically choose a label that has a longer retention period than the original label. However, that  isn't necessarily the case because of the label setting when to start the retention period. For example, the primary retention label is configured to start the retention period when the item is created, and replacement label starts the retention period when labeled.
+You can change the replacement label after you've created and saved the primary retention label. For items that already have the primary retention label applied and within the configured retention period, the change of replacement label will synchronize to these items. As with other label changes, allow up to 7 days for this synchronization period.
+
+For the replacement label, you'll typically choose a label that has a longer retention period than the primary retention label. However, that  isn't necessarily the case because of the label setting when to start the retention period. For example, the primary retention label is configured to start the retention period when the item is created, and the replacement label starts the retention period when labeled, or when an event occurs.
 
 If there's also a change in whether the label [marks the item as a record or a regularly record](declare-records.md), the replacement retention label can also change the [restrictions for what action are allowed or blocked](records-management.md#records) for that item.
 
