@@ -72,16 +72,16 @@
       href: ../security/defender-business/mdb-onboard-devices.md#device-onboarding-methods?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Android devices
       href: ../security/defender-business/mdb-onboard-devices.md#device-onboarding-methods?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-- name: Reset or remove data from devices
+- name: Security incident management
+  items: 
+    - name: Respond to a compromised email account
+      href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+- name: Maintain your environment
   items: 
     - name: Remove data from devices
       href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Reset devices to factory settings
       href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-- name: Security incident management
-  items: 
-    - name: Respond to a compromised email account
-      href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Reference
   items:
     - name: Microsoft Defender for Business
