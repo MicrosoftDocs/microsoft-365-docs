@@ -64,16 +64,12 @@
   items:
     - name: Overview
       href: ../security/defender-business/mdb-overview.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-    - name: Windows devices
-      href: ..//security/defender-business/mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-    - name: Mac computers
-      href: ../security/defender-business/mdb-onboard-devices.md#local-script-in-defender-for-business?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-    - name: iOS devices
-      href: ../security/defender-business/mdb-onboard-devices.md#device-onboarding-methods?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-    - name: Android devices
-      href: ../security/defender-business/mdb-onboard-devices.md#device-onboarding-methods?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Onboard devices to Defender for Business
+      href: ..//security/defender-business/mdb-onboard-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Security incident management
   items: 
+    - name: Review remediation actions on devices
+      href: ../security/defender-business/mdb-review-remediation-actions.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Respond to a compromised email account
       href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Maintain your environment
