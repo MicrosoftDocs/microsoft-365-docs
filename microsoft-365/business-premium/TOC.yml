@@ -60,6 +60,18 @@
       href: share-files-and-videos.md
     - name: Create a Communication site for your organization
       href: create-communications-site.md
+- name: Protect devices with Defender for Business
+  items:
+    - name: Overview
+      href: ../security/defender-business/mdb-overview.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Windows devices
+      href: ..//security/defender-business/mdb-onboard-devices.md#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Mac computers
+      href: ../security/defender-business/mdb-onboard-devices.md#local-script-in-defender-for-business?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: iOS devices
+      href: ../security/defender-business/mdb-onboard-devices.md#device-onboarding-methods?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Android devices
+      href: ../security/defender-business/mdb-onboard-devices.md#device-onboarding-methods?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Reset or remove data from devices
   items: 
     - name: Remove data from devices
