@@ -88,3 +88,6 @@ You can learn more about the steps by visiting the following pages:
   - This configuration will require an SSO tenant in order for the AAD Auth Token to work correctly.
 
 To understand each feature, see [Microsoft 365 support integration](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
+
+> [!NOTE]
+> This app is not supported in regulated or restricted environments.
