@@ -26,6 +26,8 @@
           href: m365-customize-sign-in.md
 - name: Bump up security protection
   items: 
+    - name: Overview
+      href: m365bp-security-overview.md
     - name: Protect admin accounts
       href: m365bp-protect-admin-accounts.md
     - name: Turn on security defaults

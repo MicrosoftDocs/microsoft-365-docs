@@ -1,11 +1,11 @@
 ---
-title: "Set Up Microsoft 365 for Business Premium"
+title: "Set Up Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
+ms.author: deniseb
+author: denisebmsft
 manager: scotv
-ms.date: 03/02/2022
+ms.date: 03/05/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -27,7 +27,7 @@ ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: "Setup overview for Microsoft 365 Business Premium for campaigns or other businesses"
 ---
 
-# Set up Microsoft 365 for Business Premium
+# Set up Microsoft 365 Business Premium
 
 ## Overview
 
