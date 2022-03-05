@@ -304,7 +304,7 @@
   items:
     - name: Know your data, protect your data, prevent data loss
       href: information-protection.md
-    - name: Deploy a MIP solution
+    - name: Deploy an information protection solution
       href: information-protection-solution.md
     - name: Default labels and policies for Microsoft Information Protection
       href: mip-easy-trials.md
@@ -396,7 +396,7 @@
       items:
         - name: Learn about sensitivity labels
           href: sensitivity-labels.md
-        - name: Why choose MIP built-in labeling for Office apps
+        - name: Why choose built-in labeling for Office apps
           href: sensitivity-labels-aip.md
         - name: Get started with sensitivity labels
           href: get-started-with-sensitivity-labels.md

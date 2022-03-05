@@ -1,5 +1,5 @@
 ---
-title: "Choose Microsoft Information Protection (MIP) built-in labeling for Office apps over the Azure Information Protection (AIP) add-in"
+title: "Choose Microsoft Purview Information Protection built-in labeling for Office apps over the Azure Information Protection (AIP) add-in"
 f1.keywords:
 - CSH
 ms.author: cabailey
@@ -19,15 +19,15 @@ search.appverid:
 description: When you use the Azure Information Protection (AIP) unified labeling client, understand the advantages of using built-in labeling for Office apps rather than the AIP add-in.
 ---
 
-# Why choose MIP built-in labeling over the AIP add-in for Office apps
+# Why choose built-in labeling over the AIP add-in for Office apps
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 When you use [sensitivity labels](sensitivity-labels.md) in Microsoft 365 Apps on Windows computers, you have a choice of using labeling that's built into Office apps, or an add-in from the [Azure Information Protection (AIP) unified labeling client](/azure/information-protection/rms-client/aip-clientv2). 
 
-Built-in labeling forms the cornerstone of a [Microsoft Information Protection (MIP) deployment](information-protection-solution.md) because this labeling technology extends across platforms (Windows, macOS, iOS, Android, and web), as well as across Microsoft apps and services, and beyond. Built-in labeling is also designed to work with other MIP capabilities, such as data classification and data loss prevention (DLP).
+Built-in labeling forms the cornerstone of a [Microsoft Purview information protection deployment](information-protection-solution.md) because this labeling technology extends across platforms (Windows, macOS, iOS, Android, and web), as well as across Microsoft apps and services, and beyond. Built-in labeling is also designed to work with other Microsoft Purview capabilities, such as data classification and data loss prevention (DLP).
 
-Because built-in labels don't use an Office add-in, they benefit from more stability and better performance. They also support the latest MIP features, such as advanced classifiers.
+Because built-in labels don't use an Office add-in, they benefit from more stability and better performance. They also support the latest Microsoft Purview features, such as advanced classifiers.
 
 By default, built-in labeling is turned off in Office for Windows apps when the AIP client is installed. You can change this default behavior by using the instructions in the following section, [How to disable the AIP add-in to use built-in labeling for Office apps](#how-to-disable-the-aip-add-in-to-use-built-in-labeling-for-office-apps).
 
