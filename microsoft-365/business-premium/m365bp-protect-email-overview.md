@@ -1,5 +1,5 @@
 ---
-title: "Set Up Devices Overview"
+title: "Protect email Overview"
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -24,27 +24,18 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: "Set up devices overview"
+description: "An overview on how to protect your email"
 ---
 
-# Set up Microsoft 365 for Business devices
+# Protect all email
 
 ## Overview
 
-To achieve the objectives of Mission 2, protect all mobile devices, as well as both managed and unmanaged devices. 
-
-## Set up devices
-
-Take a few minutes to set up devices to work with your environment. For your key users (those who are the highest value targets for hackers), you can set up and pre-configure new devices. This helps them get started when they sign in with their Microsoft 365 credentials.
-
-:::image type="content" source="../media/m365-democracy-user-device-setup.png" alt-text="User device setup process.":::
+To achieve the objectives of Mission 2, ensure you've set up protection for all email systems.
   
-To set up devices:
+To protect email:
 
-1. Each user [sets up their mobile devices](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json).
-2. For unmanaged devices, users set up their [PCs and Macs](m365bp-protect-pcs-macs.md).
-For key staff, we recommend that you use [managed devices](../business/set-up-windows-devices.md) for even better protection. For all devices, you'll want to set up [multifactor authentication](m365bp-multifactor-authentication.md).
-3. All users should learn how to protect themselves and your campaign by learning about [phishing and other attacks](m365-campaigns-phishing-and-attacks.md)(m365-campaigns-phishing-and-attacks.md) and to use [encryption](send-encrypted-email.md). This [infographic](m365-campaigns-protect-campaign-infographic.md) can also help your users understand how to help protect your campaign from online threats.
+All users should learn how to protect the organizations email systems by learning about [phishing and other attacks](m365-campaigns-phishing-and-attacks.md) and to use [encryption](send-encrypted-email.md). This [infographic](m365-campaigns-protect-campaign-infographic.md) can also help your users understand how to help protect your business from online threats.
 
 <!---
 ## Admins: Set up Microsoft 365
