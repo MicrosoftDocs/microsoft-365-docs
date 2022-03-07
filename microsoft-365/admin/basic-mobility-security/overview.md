@@ -29,7 +29,7 @@ You can manage and secure mobile devices when they're connected to your Microsof
 
 ## What types of devices can you manage?
 
-You can use Basic Mobility and Security to manage many types of mobile devices like  Android, iPhone, and iPad. To manage mobile devices used by people in your organization, each person must have an applicable Microsoft 365 license and their device must be enrolled in Basic Mobility and Security.
+You can use Basic Mobility and Security to manage many types of mobile devices like Android, iPhone, and iPad. To manage mobile devices used by people in your organization, each person must have an applicable Microsoft 365 license and their device must be enrolled in Basic Mobility and Security.
 
 To see what Basic Mobility and Security supports for each type of device, see [Capabilities of Basic Mobility and Security](capabilities.md).
 
