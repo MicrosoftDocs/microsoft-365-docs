@@ -31,7 +31,7 @@ Use this article as a guide.
 
 ## Guided process for basic setup
 
-Microsoft 365 Business Premium includes a guided process for basic setup. The guided setup simplifies several tasks, such as:
+Microsoft 365 Business Premium includes a guided process for basic setup. The guided setup simplifies several tasks:
 
 - Connecting to a custom domain
 - Adding users and assigning licenses
