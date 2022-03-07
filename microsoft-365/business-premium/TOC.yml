@@ -99,10 +99,13 @@
     - name: Review security recommendations
 - name: Reference
   items:
-    - name: Admin content
+    - name: Microsoft 365 admin content
+      href: /microsoft-365/admin/
     - name: Microsoft Defender for Business
       href: ../security/defender-business/index.yml
     - name: Microsoft Defender for Office 365
+      href: ../security/office-365-security/overview.md
     - name: Microsoft 365 Lighthouse
+      href: ../lighthouse/m365-lighthouse-overview.md
 
 
