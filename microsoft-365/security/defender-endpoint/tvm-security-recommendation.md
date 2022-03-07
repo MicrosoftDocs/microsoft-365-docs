@@ -102,7 +102,9 @@ From the flyout, you can choose any of the following options:
 - [**Exception options**](tvm-exception.md) - Submit an exception, provide justification, and set exception duration if you can't remediate the issue yet.
 
 > [!NOTE]
-> When a software change is made on a device, it typically takes 2 hours for the data to be reflected in the security portal. However, it may sometimes take longer. Configuration changes can take anywhere from 4 to 24 hours.
+> When a software change is made on a Windows, Linux or macOS device, it typically takes 2-4 hours for the data to be reflected in the security portal. However, it may sometimes take longer. It can take up to 8 hours for changes on iOS and Android devices to be reflected. 
+> 
+> Configuration changes can take anywhere from 4 to 24 hours.
 
 ### Investigate changes in device exposure or impact
 
