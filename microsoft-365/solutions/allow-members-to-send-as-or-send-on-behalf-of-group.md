@@ -60,7 +60,7 @@ This section explains how to allow users to send email on behalf of a group in t
   
 1. In the Exchange admin center, go to **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>.
     
-2. Select the Group that you want to allow users to send on behalf. 
+2. Select the group that you want to allow users to send on behalf of. 
     
 3. Select **Settings** and Click on **Edit manage delegates**
     
