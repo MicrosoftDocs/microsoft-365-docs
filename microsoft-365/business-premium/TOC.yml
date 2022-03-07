@@ -82,6 +82,7 @@
 - name: Security incident management
   items: 
     - name: Overview
+      href: m365bp-security-incident-management.md
     - name: Review remediation actions on devices
       href: ../security/defender-business/mdb-review-remediation-actions.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Respond to a compromised email account
