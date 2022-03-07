@@ -72,6 +72,8 @@
 - name: Protect devices with Defender for Business
   items:
     - name: Overview
+      href: m365bp-protect-devices.md
+    - name: What is Defender for Business?
       href: ../security/defender-business/mdb-overview.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Onboard devices to Defender for Business
       href: ..//security/defender-business/mdb-onboard-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
