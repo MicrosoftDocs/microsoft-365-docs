@@ -191,7 +191,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
 6. Set location for a copy of the file: if you want to have a copy of the file when Write access happens, you have to set the location where system can save the copy.
     
-    You have deploy this together with right AccessMask and Options - see step 2 above.
+    You have to deploy this together with the right AccessMask and Option - see step 2 above.
 
     :::image type="content" source="https://user-images.githubusercontent.com/81826151/156080704-19d68843-8ec4-4742-bdef-f8ba3bd4a636.png" alt-text="Group Policy - Set locaiton for file evidence":::
 
