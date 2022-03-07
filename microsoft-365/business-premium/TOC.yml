@@ -59,6 +59,7 @@
 - name: Collaborate and share securely
   items: 
     - name: Overview
+      href: m365bp-collaborate-share-securely.md
     - name: Set up Teams security
     - name: Create Teams for collaboration
       href: create-teams-for-collaboration.md
