@@ -2,9 +2,9 @@
 title: "How these security recommendations affect your users"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: v-kcirillo
+author: v-kciril
+manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration

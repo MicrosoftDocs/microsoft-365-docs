@@ -2,9 +2,9 @@
 title: "Customize sign-in page with a privacy and consent notice"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: v-kcirillo
+author: v-kciril
+manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration

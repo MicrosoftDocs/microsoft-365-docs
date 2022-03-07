@@ -2,9 +2,9 @@
 title: "Sign in to Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: v-kcirillo
+author: v-kciril
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration

@@ -2,9 +2,9 @@
 title: "Sign up for Microsoft 365 for Campaigns"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: v-kcirillo
+author: v-kciril
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
