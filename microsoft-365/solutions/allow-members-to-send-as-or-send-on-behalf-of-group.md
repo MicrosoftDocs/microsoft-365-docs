@@ -51,7 +51,7 @@ This section explains how to allow users to send email as a group in the<a href=
   
 5. Select **Permission Type** as **Send as** from the drop-down.
 
-6.  Click on **Save changes**
+6.  Select **Save changes**.
     
     
 ## Allow members to send email on behalf of a group
