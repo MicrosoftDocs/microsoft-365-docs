@@ -74,9 +74,6 @@ Also see [Find your partner or reseller](../admin/manage/find-your-partner-or-re
 ## See also
 
 - [Overview of Microsoft Defender for Business](../security/defender-business/mdb-overview.md) (now included with Microsoft 365 Business Premium!)
-
 - [Business subscriptions and billing documentation](../commerce/index.yml)
-
 - [Overview of Microsoft 365 Lighthouse](../lighthouse/m365-lighthouse-overview.md) (for Microsoft CSPs)
-
 - [Top 10 ways to secure Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md)
