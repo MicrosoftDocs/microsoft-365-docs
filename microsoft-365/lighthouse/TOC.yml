@@ -40,7 +40,7 @@
       href: m365-lighthouse-manage-mfa.md
     - name: Manage self-service password reset
       href: m365-lighthouse-manage-sspr.md
-    - name: Reset user password
+    - name: Reset a user password
       href: m365-lighthouse-reset-user-password.md
     - name: Search for users
       href: m365-lighthouse-search-for-users.md
@@ -64,6 +64,8 @@
   items: 
     - name: Get help and support
       href: m365-lighthouse-get-help-and-support.md
+    - name: Known issues
+      href: m365-lighthouse-known-issues.md
     - name: Troubleshoot and resolve problems and error messages
       href: m365-lighthouse-troubleshoot.md
     - name: Frequently asked questions (FAQs)
