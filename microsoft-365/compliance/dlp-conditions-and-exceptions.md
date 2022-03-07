@@ -45,7 +45,7 @@ The tables in the following sections describe the conditions and exceptions that
 
 If you use the sender address as a condition or exception the actual field where the value is looked for varies depending on the sender address location configured. By default,  DLP rules use the Header address as the sender address.
 
-![image](https://user-images.githubusercontent.com/53205984/145942298-6b435ba6-d146-44fe-a1c5-58babeaf8d7a.png)
+![Image of an email header showing the difference between the Envelope (P1) address and the Header (P2) address](../media/dlp-conditions-exceptions-meetinginvite-callouts.png)
 
 At the tenant level, you can configure a sender address location to be used across all rules, unless overridden by a single rule. To set tenant DLP policy configuration to evaluate the sender address from the Envelope across all rules, you can run the following command:
 
