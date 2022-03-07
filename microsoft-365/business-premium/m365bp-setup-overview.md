@@ -2,9 +2,9 @@
 title: "Set Up Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
-manager: dansimp
+ms.author: v-kcirillo
+author: v-kciril
+manager: scotv
 ms.date: 03/05/2022
 audience: Admin
 ms.topic: conceptual
