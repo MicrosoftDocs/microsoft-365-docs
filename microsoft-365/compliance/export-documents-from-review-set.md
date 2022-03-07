@@ -93,7 +93,6 @@ If you select this export option, the exported content is organized in the follo
         - Any Information Rights Management (IRM) protected messages that have been decoded. 
         - Any error-remediated messages. 
         - Any modern attachments or links referenced in emails. 
-      - Encrypted items are not added back into the PST.
   
   - SharePoint: This folder contains all native content from SharePoint in a native file format. Redacted PDF files cannot be included with this option.
 
