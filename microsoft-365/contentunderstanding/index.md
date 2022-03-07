@@ -82,6 +82,7 @@ The resources in this section help your users learn how to create and configure 
 |Apply a retention label to your model|[Apply a retention label to a document understanding model](./apply-a-retention-label-to-a-model.md)|
 |Apply a sensitivity label to your model|[Apply a sensitivity label to a document understanding model](./apply-a-sensitivity-label-to-a-model.md)|
 |Use prebuilt models to extract info from documents |[Use a prebuilt model to extract info from invoices or receipts](./prebuilt-models.md)|
+|Create and train models locally on a SharePoint site |[Create a model on a local SharePoint site](./create-local-model.md)|
 |Use trained models in other content centers |[Publish and discover document understanding models](./model-discovery.md)|
 |Perform metadata-based queries on document libraries|[Search for metadata in document libraries](./metadata-search.md)|
 |Use Managed Metadata services term store taxonomy when creating an extractor|[Leverage term store taxonomy when creating an extractor](./leverage-term-store-taxonomy.md)|
