@@ -43,7 +43,7 @@ This section explains how to allow users to send email as a group in the<a href=
   
 1. In the Exchange admin center, go to **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>.
     
-2. Select the Group that you want to allow users to send as. 
+2. Select the group that you want to allow users to send as. 
     
 3. Select **Settings** and Click on **Edit manage delegates**
     
