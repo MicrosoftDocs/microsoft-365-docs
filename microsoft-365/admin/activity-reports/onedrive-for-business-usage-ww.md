@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - OneDrive for Business usage"
+title: "Microsoft 365 OneDrive for Business usage reports"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
