@@ -396,6 +396,8 @@
       items:
         - name: Learn about sensitivity labels
           href: sensitivity-labels.md
+        - name: Why choose MIP built-in labeling for Office apps
+          href: sensitivity-labels-aip.md
         - name: Get started with sensitivity labels
           href: get-started-with-sensitivity-labels.md
         - name: Create and publish sensitivity labels
@@ -410,6 +412,8 @@
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: Enable co-authoring for documents encrypted by sensitivity labels
           href: sensitivity-labels-coauthoring.md
+        - name: Set the default sharing link type by using sensitivity labels
+          href: sensitivity-labels-default-sharing-link.md
         - name: Manage sensitivity labels in Office apps
           href: sensitivity-labels-office-apps.md
     - name: Encryption
@@ -774,7 +778,7 @@
             href: export-a-content-search-report.md
           - name: Use a script to add users to an eDiscovery hold
             href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
-          - name: Create a report on eDiscovery holds
+          - name: Use a script to create a holds report
             href: create-a-report-on-holds-in-ediscovery-cases.md
           - name: View statistics for search results
             href: view-keyword-statistics-for-content-search.md
@@ -830,11 +834,18 @@
               href: manage-hold-notification.md
             - name: Acknowledge a hold notification
               href: acknowledge-hold-notification.md
+            - name: Manage issuing officers
+              href: advanced-ediscovery-issuing-officers.md
+            - name: Manage custodian communications templates
+              href: advanced-ediscovery-communications-library.md
         - name: Manage holds
           href: managing-holds.md
+          items:
+            - name: Use a script to create a holds report
+              href: create-a-report-on-holds-in-ediscovery-cases.md
         - name: Manage processing errors
           href: processing-data-for-case.md
-          items: 
+          items:
             - name: Advanced indexing of custodian content
               href: indexing-custodian-data.md
             - name: Error remediation when processing content
@@ -1036,8 +1047,10 @@
           href: compliance-manager-templates-format-excel.md
         - name: Compliance Manager templates list
           href: compliance-manager-templates-list.md
-        - name: Assign and complete improvement actions
+        - name: Working with improvement actions
           href: compliance-manager-improvement-actions.md
+        - name: Create and manage alert policies
+          href: compliance-manager-alert-policies.md
         - name: How your compliance score is calculated
           href: compliance-score-calculation.md
         - name: Compliance Configuration Analyzer tool
