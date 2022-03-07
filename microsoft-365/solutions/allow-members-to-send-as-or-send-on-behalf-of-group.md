@@ -68,7 +68,7 @@ This section explains how to allow users to send email on behalf of a group in t
   
 5. Select **Permission Type** as **Send on behalf** from the drop-down.
 
-6.  Click on **Save changes**
+6.  Select **Save changes**.
 
 ## Related articles
 
