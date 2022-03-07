@@ -2,8 +2,8 @@
 title: "Step 6: Train your workers and address usage feedback"
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
