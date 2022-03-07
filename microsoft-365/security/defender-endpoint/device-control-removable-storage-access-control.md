@@ -161,7 +161,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
     If you want to restrict a specific user, then use SID property into the Entry. If there is no SID in the policy Entry, the Entry will be applied to everyone login instance for the machine.
     
-    If you want to monitor file information for Write access, please use right AccessMask with right Options (8 or 16), here is the example of [Capture file information](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Audit%20File%20Information.xml).
+    If you want to monitor file information for Write access, use the right AccessMask with the right Option (8 or 16); here is the example of [Capture file information](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Audit%20File%20Information.xml).
 
     The following image illustrates the usage of SID property, and an example of [Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
 
