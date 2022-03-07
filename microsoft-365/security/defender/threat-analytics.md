@@ -21,11 +21,12 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
 
-# Threat analytics in Microsoft 365 Defender 
+# Threat analytics in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - Microsoft 365 Defender
 
 > Want to experience Microsoft 365 Defender? You can [evaluate it in a lab environment](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) or [run your pilot project in production](m365d-pilot.md?ocid=cx-evalpilot).
@@ -33,7 +34,7 @@ ms.custom: seo-marvel-apr2020
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Threat analytics is our in-product threat intelligence solution from expert Microsoft security researchers, designed to assist security teams to be as efficient as possible while facing emerging threats, including:
+Threat analytics is our in-product threat intelligence solution from expert Microsoft security researchers. It's designed to assist security teams to be as efficient as possible while facing emerging threats, such as:
 
 - Active threat actors and their campaigns
 - Popular and new attack techniques
@@ -45,7 +46,7 @@ Watch this short video to learn more about how threat analytics can help you tra
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
 
-You can access threat analytics either from the upper left-hand side of Microsoft 365 security portal’s navigation bar, or from a dedicated dashboard card which shows the top threats in your org. Getting visibility on active or ongoing campaigns and knowing what to do through threat analytics can help equip your security operations team with informed decisions. 
+You can access threat analytics either from the upper left-hand side of Microsoft 365 security portal’s navigation bar, or from a dedicated dashboard card, which shows the top threats in your org. Getting visibility on active or ongoing campaigns and knowing what to do through threat analytics can help equip your security operations team to make informed decisions.
 
 ![Image of the threat analytics dashboard.](../../media/threat-analytics/ta_inlandingpage_mtp.png)
 
@@ -54,7 +55,7 @@ _Where to access threat analytics_
 With more sophisticated adversaries and new threats emerging frequently and prevalently, it's critical to be able to quickly:
 
 - Identify and react to emerging threats
-- Learn if you are currently under attack
+- Learn if you're currently under attack
 - Assess the impact of the threat to your assets
 - Review your resilience against or exposure to the threats
 - Identify the mitigation, recovery, or prevention actions you can take to stop or contain the threats
@@ -73,7 +74,7 @@ Select a threat from the dashboard to view the report for that threat.
 
 ![Screenshot of threat analytics dashboard.](../../media/threat-analytics/ta_dashboard_mtp.png)
 
-_Threat analytics dashboard. You can also click the Search icon to key in a keyword related to the threat analytics report that you'd like to read._ 
+_Threat analytics dashboard. You can also select the Search icon to key in a keyword that's related to the threat analytics report that you'd like to read._
 
 ## View a threat analytics report
 
@@ -88,7 +89,7 @@ Each threat analytics report provides information in several sections:
 
 ### Overview: Quickly understand the threat, assess its impact, and review defenses
 
-The **Overview** section provides a preview of the detailed analyst report. It also provides charts that highlight the impact of the threat to your organization and your exposure through misconfigured and unpatched devices.
+The **Overview** section provides a preview of the detailed analyst report. It also provides charts that highlight the impact of the threat to your organization, and your exposure through misconfigured and unpatched devices.
 
 ![Image of the overview section of a threat analytics report.](../../media/threat-analytics/ta_overview_mtp.png)
 
@@ -99,7 +100,7 @@ _Overview section of a threat analytics report_
 Each report includes charts designed to provide information about the organizational impact of a threat:
 
 - **Related incidents**—provides an overview of the impact of the tracked threat to your organization with the following data:
-  - Number of active alerts and the number of active incidents they are associated with
+  - Number of active alerts and the number of active incidents they're associated with
   - Severity of active incidents
 - **Alerts over time**—shows the number of related **Active** and **Resolved** alerts over time. The number of resolved alerts indicates how quickly your organization responds to alerts associated with a threat. Ideally, the chart should be showing alerts resolved within a few days.
 - **Impacted assets**—shows the number of distinct devices and email accounts (mailboxes) that currently have at least one active alert associated with the tracked threat. Alerts are triggered for mailboxes that received threat emails. Review both org- and user-level policies for overrides that cause the delivery of threat emails.
@@ -109,7 +110,7 @@ Each report includes charts designed to provide information about the organizati
 
 Each report includes charts that provide an overview of how resilient your organization is against a given threat:
 
-- **Secure configuration status**—shows the number of devices with misconfigured security settings. Apply the recommended security settings to help mitigate the threat. Devices are considered **Secure** if they have applied _all_ the tracked settings.
+- **Secure configuration status**—shows the number of devices with misconfigured security settings. Apply the recommended security settings to help mitigate the threat. Devices are considered **Secure** if they've applied _all_ the tracked settings.
 - **Vulnerability patching status**—shows the number of vulnerable devices. Apply security updates or patches to address vulnerabilities exploited by the threat.
 
 #### View reports per threat tags
@@ -117,7 +118,7 @@ Each report includes charts that provide an overview of how resilient your organ
 You can filter the threat report list and view the most relevant reports according to a specific threat tag (category) or a report type.
 
 - **Threat tags**—assist you in viewing the most relevant reports according to a specific threat category. For example, all reports related to ransomware.
-- **Report types**—assist you in viewing the most relevant reports according to a specific report type. For example, all reports that cover tools and techniques. 
+- **Report types**—assist you in viewing the most relevant reports according to a specific report type. For example, all reports that cover tools and techniques.
 - **Filters**—assist you in efficiently reviewing the threat report list and filtering the view based on a specific threat tag or report type. For example, review all threat reports related to ransomware category, or threat reports that cover vulnerabilities.
 
 ##### How does it work?
@@ -129,7 +130,7 @@ The Microsoft Threat Intelligence team has added threat tags to each threat repo
   - Phishing
   - Vulnerability
   - Activity group
-- Threat tags are presented at the top of the threat analytics page, with counters for the number of available reports under each tag.
+- Threat tags are presented at the top of the threat analytics page. There are counters for the number of available reports under each tag.
 
   ![threat tags.](../../media/threat-analytics/ta-threattags-mtp.png)
 
@@ -149,8 +150,7 @@ In the **Analyst report** section, read through the detailed expert write-up. Mo
 
 ### Related incidents: View and manage related incidents
 
-The **Related incidents** tab provides the list of all incidents related to the tracked threat. You can assign incidents or manage alerts linked to each incident. 
-
+The **Related incidents** tab provides the list of all incidents related to the tracked threat. You can assign incidents or manage alerts linked to each incident.
 
 ![Image of the related incidents section of a threat analytics report.](../../media/threat-analytics/ta_related_incidents_mtp.png)
 
@@ -158,7 +158,7 @@ _Related incidents section of a threat analytics report_
 
 ### Impacted assets: Get list of impacted devices and mailboxes
 
-An asset is considered impacted if it is affected by an active, unresolved alert. The **Impacted assets** tab lists the following types of impacted assets:
+An asset is considered impacted if it's affected by an active, unresolved alert. The **Impacted assets** tab lists the following types of impacted assets:
 
 - **Impacted devices**—endpoints that have unresolved Microsoft Defender for Endpoint alerts. These alerts typically fire on sightings of known threat indicators and activities.
 - **Impacted mailboxes**—mailboxes that have received email messages that have triggered Microsoft Defender for Office 365 alerts. While most messages that trigger alerts are typically blocked, user- or org-level policies can override filters.
@@ -171,7 +171,7 @@ _Impacted assets section of a threat analytics report_
 
 Microsoft Defender for Office 365 typically blocks emails with known threat indicators, including malicious links or attachments. In some cases, proactive filtering mechanisms that check for suspicious content will instead send threat emails to the junk mail folder. In either case, the chances of the threat launching malware code on the device is reduced.
 
-The **Prevented email attempts** tab lists all the emails that have either been blocked before delivery or sent to the junk mail folder by Microsoft Defender for Office 365. 
+The **Prevented email attempts** tab lists all the emails that have either been blocked before delivery or sent to the junk mail folder by Microsoft Defender for Office 365.
 
 ![Image of the prevented email attempts section of a threat analytics report.](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
 
@@ -202,21 +202,21 @@ _Mitigations section of a threat analytics report_
 >
 > If you are not using the Microsoft 365 security portal (Microsoft 365 Defender), you can also see the report details (without the Microsoft Defender for Office data) in the Microsoft Defender Security Center portal (Microsoft Defender for Endpoint).
 
-To access threat analytics report you need certain roles and permissions. See [Custom roles in role-based access control for Microsoft 365 Defender](custom-roles.md) for details.
+To access threat analytics reports, you need certain roles and permissions. See [Custom roles in role-based access control for Microsoft 365 Defender](custom-roles.md) for details.
 
 - To view alerts, incidents, or impacted assets data, you need to have permissions to Microsoft Defender for Office or Microsoft Defender for Endpoint alerts data, or both.
-- To view prevented email attempts, you need to have permissions to Microsoft Defender for Office hunting data. 
+- To view prevented email attempts, you need to have permissions to Microsoft Defender for Office hunting data.
 - To view mitigations, you need to have permissions to threat and vulnerability management data in Microsoft Defender for Endpoint.
 
 When looking at the threat analytics data, remember the following factors:
 
-- Charts reflect only mitigations that are tracked. Check the report overview for additional mitigations that are not shown in the charts.
+- Charts reflect only mitigations that are tracked. Check the report overview for additional mitigations that aren't shown in the charts.
 - Mitigations don't guarantee complete resilience. The provided mitigations reflect the best possible actions needed to improve resiliency.
-- Devices are counted as "unavailable" if they have not transmitted data to the service.
+- Devices are counted as "unavailable" if they haven't transmitted data to the service.
 - Antivirus-related statistics are based on Microsoft Defender Antivirus settings. Devices with third-party antivirus solutions can appear as "exposed".
 
-## Related topics
+## Related articles
 
-- [Proactively find threats with advanced hunting](advanced-hunting-overview.md) 
+- [Proactively find threats with advanced hunting](advanced-hunting-overview.md)
 - [Understand the analyst report section](threat-analytics-analyst-reports.md)
 - [Assess and resolve security weaknesses and exposures](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
