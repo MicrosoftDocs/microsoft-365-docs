@@ -64,7 +64,7 @@ This section explains how to allow users to send email on behalf of a group in t
     
 3. Select **Settings** > **Edit manage delegates**.
     
-4. In the **Add a delegate** section, Type the email address of the user that you would like have send as acess.
+4. In the **Add a delegate** section, enter the email address of the user that you would like to have **Send as** access.
   
 5. Select **Permission Type** as **Send on behalf** from the drop down.
 
