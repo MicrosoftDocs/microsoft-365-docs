@@ -20,9 +20,6 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Deploy Microsoft 365 Lighthouse baselines 
 
-> [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
-
 Microsoft 365 Lighthouse baselines let you deploy standard managed-tenant configurations to secure users, devices, and data within customer tenants. There are seven default baseline configurations that come standard with Lighthouse:
 
 - Require MFA for admins
@@ -41,7 +38,7 @@ Make sure you and your customer tenants meet the requirements listed in [Require
 
 Select **Baselines** from the left navigation pane in Lighthouse to open the Baselines page. You'll see that the default baseline has already been added to the Default tenant group (all tenants). To view the default baseline configurations, select **View baseline** to open the Default baseline page. The configurations are listed as deployment steps. Select any of the deployment steps to view deployment details and user impact.
 
-:::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Screenshot of the Default baseline page.>.":::
+:::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Screenshot of the Default baseline page.":::
 
 ## Deploy a baseline configuration  
 

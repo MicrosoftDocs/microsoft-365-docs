@@ -106,6 +106,8 @@ Microsoft 365 services automatically support the new labeling metadata when you 
 
 To try the preview of co-authoring for iOS and Android, you must have the minimum versions stated in the previous section, and also request your tenant is added to the preview: [Consent to Enable co-authoring for files encrypted with sensitivity labels on mobile](https://ncv.microsoft.com/5Oob3oDj1O)
 
+For more information, see the following blog post announcement: [Co-authoring on Microsoft Information Protection encrypted documents is now in public preview on mobile devices](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/co-authoring-on-microsoft-information-protection-encrypted/ba-p/3081369)
+
 ## Limitations
 
 Before you enable the tenant setting for co-authoring for files encrypted with sensitivity labels, make sure you understand the following limitations of this feature.
