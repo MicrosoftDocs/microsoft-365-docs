@@ -21,7 +21,7 @@ ms.collection:
 
 You have several options for setting up and configuring Microsoft 365 Business Premium. You can:
 
-- [Use a guided setup experience for basic setup and configuration](#guided-process-for-basic-setup)
+- [Start with the guided setup experience](#guided-process-for-basic-setup)
 - [Work with a partner, such as a Microsoft Cloud Solution Provider (CSP)](#work-with-a-microsoft-partner)
 
 Use this article as a guide.
@@ -31,7 +31,13 @@ Use this article as a guide.
 
 ## Guided process for basic setup
 
-Microsoft 365 Business Premium includes a guided process for basic setup. Tasks include connecting to a custom domain, adding users, assigning licenses, installing Outlook on mobile devices, reviewing data protection settings, and applying a mobile app protection policy. 
+Microsoft 365 Business Premium includes a guided process for basic setup. The guided setup simplifies several tasks, such as:
+
+- Connecting to a custom domain
+- Adding users and assigning licenses
+- Installing Outlook on mobile devices
+- Reviewing your data protection settings
+- Applying a mobile app protection policy
 
 To see how the guided setup works, watch the following video: <br/><br/>
 
