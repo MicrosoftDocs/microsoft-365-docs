@@ -1,11 +1,11 @@
 ---
-title: "Overview of security in Microsoft 365 Business Premium"
+title: "Protect devices"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 03/05/2022
+ms.date: 03/07/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -23,11 +23,9 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Security overview for Microsoft 365 Business Premium"
+description: "An overview on how to protect devices"
 ---
 
-# Overview of Microsoft 365 Business Premium
+# Protect devices
 
-Microsoft 365 Business Premium includes security protection for your people, devices, email content, Office files, and more. 
-
-(MORE TO COME - KEITH'S NARRATIVE GOES HERE)
+KEITH'S OVERVIEW CONTENT FOR THIS SECTION GOES HERE

@@ -2,9 +2,9 @@
 title: "Send encrypted email"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 9/20/2018
 ms.audience: Admin
 ms.topic: conceptual

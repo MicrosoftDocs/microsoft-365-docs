@@ -2,9 +2,9 @@
 title: "Collaborate and share securely"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 ms.date: 03/07/2022
 audience: Admin
 ms.topic: conceptual
