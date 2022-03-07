@@ -1,5 +1,5 @@
 ---
-title: "Protect your administrator accounts"
+title: "Protect your administrator accounts in Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -21,10 +21,10 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Learn how to set up and protect your administrator accounts."
+description: "Learn how to set up and protect your administrator accounts in Microsoft 365 Business Premium."
 ---
 
-# Protect your administrator accounts
+# Protect your administrator accounts in Microsoft 365 Business Premium
 
 Because admin accounts come with elevated privileges, they're valuable targets for hackers and cyber criminals. This article describes:
 
@@ -73,7 +73,7 @@ To create a new user account:
 
 ## Turn on security defaults
 
-Security defaults help protect your organization from identity-related attacks by providing preconfigured security settings that Microsoft manages on behalf of your organization. These settings include enabling multi-factor authentication (MFA) for all admins and user accounts. For more information about security defaults and to learn how to enable them on, see [Turn on security defaults](m365-campaigns-conditional-access.md).
+Security defaults help protect your organization from identity-related attacks by providing preconfigured security settings that Microsoft manages on behalf of your organization. These settings include enabling multi-factor authentication (MFA) for all admins and user accounts. For more information about security defaults and to learn how to enable them on, see [Turn on security defaults](m365bp-conditional-access.md).
 
 ## Additional recommendations
 

@@ -1,13 +1,11 @@
 ---
 title: "Edit or set application protection settings for Windows 10 devices"
-f1.keywords:
-- NOCSH
 ms.author: sharik
 author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - 'Win10AppPolicy'
 - 'O365E_Win10AppPolicy'
 - 'BCS365_Win10AppPolicy'
@@ -35,6 +33,9 @@ description: "Learn how to create or edit  app management policies and protect w
 # Set or edit application protection settings for Windows 10 devices
 
 This article applies to Microsoft 365 Business Premium.
+
+> [!NOTE]
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
 
 ## Edit an app management policy for Windows 10
 
@@ -67,3 +68,7 @@ If your users have personal Windows 10 devices on which they perform work tasks,
   
 11. Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups who will get these settings \> **Select**.
 12. Finally, choose **Add** to save the policy, and assign it to devices.
+
+## See also
+
+[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
