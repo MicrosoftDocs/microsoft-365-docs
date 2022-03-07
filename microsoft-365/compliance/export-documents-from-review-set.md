@@ -82,17 +82,17 @@ If you select this export option, the exported content is organized in the follo
 
 - Summary.csv: Includes a summary of the content exported from the review set
 
-- Root folder: This folder in named [Export Name] x of z.zip and will be repeated for each ZIP file partition.
+- Root folder: This folder in named [Export Name] x of z.zip and will be repeated for each ZIP file partition. The root folder contains the following:
   
   - Export_load_file_x of z.csv: The metadata file.
   
   - Warnings and errors x of z.csv: This file includes information about errors encountered when trying to export from the review set.
   
   - Exchange: This folder contains all content from Exchange stored in PST files. Redacted PDF files cannot be included with this option. If an attachment is selected in the review set, the parent email message will be exported with the attachment attached. This folder may also contain the following items: 
-        
-        - Information Rights Management (IRM) protected messages that have been decoded. 
-        - Error-remediated messages. 
-        - Modern attachments or links referenced in messages. 
+
+    - Information Rights Management (IRM) protected messages that have been decoded. 
+    - Error-remediated messages. 
+    - Modern attachments or links referenced in messages. 
   
   - SharePoint: This folder contains all native content from SharePoint in a native file format. Redacted PDF files cannot be included with this option.
 
