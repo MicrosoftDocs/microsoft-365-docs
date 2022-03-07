@@ -64,9 +64,7 @@ After you have finished the guided setup, there are additional steps to complete
 
 ## Work with a Microsoft partner
 
-Microsoft has a list of solution providers who are authorized to sell offerings, including Microsoft 365 Business Premium. 
-
-To find a solution provider in your area, take the following steps:
+If you'd prefer to have a Microsoft partner help you get and set up Microsoft 365, follow these steps:
 
 1. Go to the **Microsoft Solution Providers** page ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
  
