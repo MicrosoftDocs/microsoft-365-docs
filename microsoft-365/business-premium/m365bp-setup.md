@@ -36,8 +36,6 @@ Microsoft 365 Business Premium includes a guided process for basic setup. The gu
 - Connecting to a custom domain
 - Adding users and assigning licenses
 - Installing Outlook on mobile devices
-- Reviewing your data protection settings
-- Applying a mobile app protection policy
 
 To see how the guided setup works, watch the following video: <br/><br/>
 
