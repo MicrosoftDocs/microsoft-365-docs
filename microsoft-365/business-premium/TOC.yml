@@ -48,12 +48,17 @@
       href: m365bp-protect-pcs-macs.md
 - name: Protect email
   items: 
+    - name: Overview
+    - name: Set up encryption
+    - name: Turn off external forwarding
     - name: Protect against phishing and other attacks
       href: m365-campaigns-phishing-and-attacks.md
     - name: Send encrypted email
       href: send-encrypted-email.md
 - name: Collaborate and share securely
   items: 
+    - name: Overview
+    - name: Set up Teams security
     - name: Create Teams for collaboration
       href: create-teams-for-collaboration.md
     - name: Set up meetings
@@ -68,20 +73,30 @@
       href: ../security/defender-business/mdb-overview.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Onboard devices to Defender for Business
       href: ..//security/defender-business/mdb-onboard-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Review and edit policies
+    - name: Manage device groups
 - name: Security incident management
   items: 
+    - name: Overview
     - name: Review remediation actions on devices
       href: ../security/defender-business/mdb-review-remediation-actions.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Respond to a compromised email account
       href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Maintain your environment
   items: 
+    - name: Overview
+    - name: Remove users
     - name: Remove data from devices
       href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Reset devices to factory settings
       href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: Review security recommendations
 - name: Reference
   items:
+    - name: Admin content
     - name: Microsoft Defender for Business
       href: ../security/defender-business/index.yml
+    - name: Microsoft Defender for Office 365
+    - name: Microsoft 365 Lighthouse
+
 
