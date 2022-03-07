@@ -49,7 +49,7 @@ You'll need to take the following steps:
 
 2. Select macOS as the operating system and Mobile Device Management / Microsoft Intune as the deployment method.
 
-    ![Image of Microsoft Defender Security Center.](images/onboarding-macos.png)
+    ![Image of Microsoft 365 Defender portal.](images/onboarding-macos.png)
 
 3. Select **Download onboarding package** (WindowsDefenderATPOnboardingPackage.zip).
 
