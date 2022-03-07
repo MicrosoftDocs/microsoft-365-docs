@@ -47,7 +47,7 @@ This section explains how to allow users to send email as a group in the<a href=
     
 3. Select **Settings** and Click on **Edit manage delegates**
     
-4. In the **Add a delegate** section, Type the email address of the user that you would like have send as acess.
+4. In the **Add a delegate** section, enter the email address of the user that you would like to have **Send as** access.
   
 5. Select **Permission Type** as **Send as** from the drop down.
 
