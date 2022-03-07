@@ -272,7 +272,7 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
 
     :::image type="content" source="images/148609770-3e555883-f26f-45ab-9181-3fb1ff7a38ac.png" alt-text="Removeable Storage Access Control in PowerShell code":::
 
-5. Set location for a copy of the file: if you want to have a copy of the file when Write access happens, you have to set the location where system can save the copy.
+5. Set the location for a copy of the file: if you want to have a copy of the file when Write access happens, you have to set the location where the system can save the copy.
     
     - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation`
 
