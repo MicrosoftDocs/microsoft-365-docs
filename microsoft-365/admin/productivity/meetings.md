@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Productivity Score - Meetings"
+title: "Microsoft Productivity Score and meetings insights"
 f1.keywords:
 - NOCSH
 ms.author: efrene

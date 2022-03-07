@@ -1,5 +1,5 @@
 ---
-title: "Add your company branding to the Sign In page"
+title: "Add your company branding to the sign-in page"
 f1.keywords:
 - NOCSH
 ms.author: kwekua

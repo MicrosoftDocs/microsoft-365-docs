@@ -1,5 +1,5 @@
 ---
-title: "Your domain may be in use if someone else in your organization signed up with it"
+title: "Your domain may be in use if someone else signed up with it"
 f1.keywords:
 - NOCSH
 ms.author: efrene

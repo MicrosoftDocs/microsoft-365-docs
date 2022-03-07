@@ -1,5 +1,5 @@
 ---
-title: "How do protection features in Microsoft 365 Business Premium map to Intune settings"
+title: "Map Microsoft 365 Business Premium protection features to Intune settings"
 f1.keywords:
 - NOCSH
 ms.author: sharik

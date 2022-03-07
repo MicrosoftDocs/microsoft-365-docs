@@ -1,5 +1,5 @@
 ---
-title: "ICANN Verification of Contact Information"
+title: "ICANN verification of contact information"
 f1.keywords:
 - NOCSH
 ms.author: efrene

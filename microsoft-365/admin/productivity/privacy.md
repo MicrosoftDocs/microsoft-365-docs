@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Productivity Score - Privacy"
+title: "Microsoft Productivity Score and privacy insights"
 f1.keywords:
 - NOCSH
 ms.author: efrene

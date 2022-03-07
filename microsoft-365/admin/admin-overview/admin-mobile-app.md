@@ -1,5 +1,5 @@
 ---
-title: "About the Microsoft 365 Admin mobile app"
+title: "About the Microsoft 365 admin mobile app"
 f1.keywords:
 - NOCSH
 ms.author: kwekua

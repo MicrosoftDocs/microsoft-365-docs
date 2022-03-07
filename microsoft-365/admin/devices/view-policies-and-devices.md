@@ -1,5 +1,5 @@
 ---
-title: "View policies and devices"
+title: "View policies and devices in the Microsoft 365 admin center"
 f1.keywords:
 - NOCSH
 ms.author: sharik

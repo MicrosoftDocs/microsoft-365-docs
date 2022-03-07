@@ -1,5 +1,5 @@
 ---
-title: "Edit or set application protection settings for Windows 10 devices"
+title: "Edit application protection settings for Windows 10 devices"
 ms.author: sharik
 author: skjerland
 manager: scotv

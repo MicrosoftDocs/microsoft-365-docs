@@ -1,5 +1,5 @@
 ---
-title: "Migrate Google files to Microsoft 365 for business with Migration Manager"
+title: "Migrate Google files to Microsoft 365 for business"
 f1.keywords:
 - NOCSH
 ms.author: efrene

@@ -1,5 +1,5 @@
 ---
-title: "Set up file storage and sharing"
+title: "Set up OneDrive file storage and sharing"
 f1.keywords:
 - NOCSH
 ms.author: sharik

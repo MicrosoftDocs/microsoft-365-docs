@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Productivity Score - Mobility"
+title: "Microsoft Productivity Score and mobility insights"
 f1.keywords:
 - NOCSH
 ms.author: efrene

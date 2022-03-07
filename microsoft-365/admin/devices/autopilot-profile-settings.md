@@ -1,5 +1,5 @@
 ---
-title: "About AutoPilot Profile settings"
+title: "About AutoPilot profile settings"
 ms.author: efrene
 author: efrene
 manager: scotv

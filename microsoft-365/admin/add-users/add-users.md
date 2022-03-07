@@ -1,5 +1,5 @@
 ---
-title: "Add users and assign licenses"
+title: "Add users and assign licenses in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee

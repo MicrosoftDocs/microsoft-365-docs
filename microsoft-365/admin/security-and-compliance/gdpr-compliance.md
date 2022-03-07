@@ -1,5 +1,5 @@
 ---
-title: "GDPR simplified A guide for your small business"
+title: "GDPR simplified: A guide for your small business"
 f1.keywords:
 - NOCSH
 ms.author: efrene

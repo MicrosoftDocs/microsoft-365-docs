@@ -1,5 +1,5 @@
 ---
-title: "Message center"
+title: "Message center in the Microsoft 365 admin center"
 f1.keywords:
 - CSH
 ms.author: kwekua

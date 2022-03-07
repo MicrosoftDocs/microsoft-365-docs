@@ -1,5 +1,5 @@
 ---
-title: "Find your partner or reseller"
+title: "Find your Microsoft 365 partner or reseller"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
