@@ -83,6 +83,7 @@ To edit an improvement action’s status, select **Edit implementation details**
 
 - **Implementation status**
   - **Not implemented**: action not yet implemented
+  - **Partially implemented**: further work needed before fully implemented
   - **Implemented**: action implemented
   - **Alternative implementation**: select this option if you used other third-party tools or took other actions not included in Microsoft recommendations
   - **Planned**: action is planned for implementation
@@ -100,15 +101,27 @@ In the **Testing** section, you can view the testing status of your improvement 
 
 The available fields are as follows:
 
-- **Test status**: available to select when implementation status is "implemented" or "alternative implementation". Options include:
+- **Test status**: available to select when implementation status is "implemented" or "alternative implementation." Options include:
+  - **None**: no work has started on the action
   - **Not assessed**: action hasn't been tested
   - **Passed**: implementation has been verified by an assessor
   - **Failed low risk**: testing failed, low risk
   - **Failed medium risk**: testing failed, medium risk
   - **Failed high risk**: testing failed, high risk
   - **Out of scope**: the action is out of scope for the assessment and doesn’t contribute to your score
+  - **To be detected**: awaiting signals that indicate test status
+  - **Could not be detected**: couldn't detect a test status; check again in a few hours
+  - **Partially tested**: more testing needed before points can be achieved
+  - **In progress**: testing in progress
+  - **Remediated**: tbd
 - **Test date**: toggle through the calendar pop-up to select the date
 - **Testing notes** and **Additional notes**: text fields for notes for internal reference
+- **Testing history**: allows you to download a report of all test status changes for the action
+
+#### Exporting testing history
+You can export a report that will show you a history of all changes in test status for an improvement action. These reports are especially for monitoring progress on actions that are automatically tested and hence undergo regular or frequent updates based on your tenant's data.
+
+On an improvement action's details page, select the **Testing** tab. Under **Testing history**, select the **Export testing history** button. The report will download as an Excel file.
 
 ### Update testing source
 
