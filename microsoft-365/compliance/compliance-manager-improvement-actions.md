@@ -119,11 +119,11 @@ The available fields are as follows:
 - **Testing history**: allows you to download a report of all test status changes for the action
 
 #### Exporting testing history
-You can export a report that will show you a history of all changes in test status for an improvement action. These reports are especially for monitoring progress on actions that are automatically tested and hence undergo regular or frequent updates based on your tenant's data.
+You can export a report that will show you a history of all changes in test status for an improvement action. These reports are especially helpful for monitoring progress on [actions that are automatically tested](#automatic-testing-source), since such actions are regularly or frequently updated based on your tenant's data.
 
 On an improvement action's details page, select the **Testing** tab. Under **Testing history**, select the **Export testing history** button. The report will download as an Excel file.
 
-### Update testing source
+## Update testing source
 
 Compliance Manager provides you options for how to test improvement actions. In the **Overview** section of each improvement action, the **Testing Source** area has a drop-down menu from which you can choose how you want the action to be tested: **Manual**, **Automatic**, and **Parent**. Learn details about each testing method below.
 
