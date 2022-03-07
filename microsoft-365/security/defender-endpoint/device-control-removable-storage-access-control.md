@@ -278,7 +278,7 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
 
     - Data Type: String
     
-    You have deploy this together with right AccessMask and Options - see step 2 above.
+    You have to deploy this together with the right AccessMask and the right Option - see step 2 above.
 
     :::image type="content" source="https://user-images.githubusercontent.com/81826151/156080498-68a807a9-6d7b-4265-92f7-ab8bf1c9a093.png" alt-text="Set locaiton for file evidence":::
     
