@@ -1,5 +1,5 @@
 ---
-title: "Maintaining your environment"
+title: "Security incident management"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -23,9 +23,9 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "An overview of maintaining your environment"
+description: "An overview of security incident management"
 ---
 
-# Maintain your environment
+# Security incident management
 
 KEITH'S OVERVIEW CONTENT FOR THIS SECTION GOES HERE
