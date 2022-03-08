@@ -153,6 +153,17 @@ Before contacting the Microsoft 365 team, you must do the following steps for ea
 ### Create a premium Azure Key Vault in each subscription
 
 The steps to create a key vault are documented in [Getting Started with Azure Key Vault](/azure/key-vault/general/overview), which guides you through installing and launching Azure PowerShell, connecting to your Azure subscription, creating a resource group, and creating a key vault in that resource group.
+
+SharePoint Online (SPO) uses Azure Key Vaults where customer store the keys that they want use to encrypt their documents and files in SharePoint Online and OneDrive for Business. 
+
+ Azure Key Vault provides two types of containers, 
+
+
+1) Premium key Vaults for storing and managing cryptographic keys, secrets, certificates and storage account keys. These come in Standard and Premium vaults. These vaults are certified to FIPS 140-2 Level-2.   
+
+2) Managed HSM pool for storing and managing HSM-backed cryptographic keys. Managed HSMs are certified to FIPS 140-2 Level-2. 
+
+ SPO supports both Standard/Premium vaults as well as Managed HSM.
   
 When you create a key vault, you must choose a SKU: either Standard or Premium. The Standard SKU allows Azure Key Vault keys to be protected with software - there's no Hardware Security Module (HSM) key protection - and the Premium SKU allows the use of HSMs for protection of Key Vault keys. Customer Key accepts key vaults that use either SKU, though Microsoft strongly recommends that you use only the Premium SKU. The cost of operations with keys of either type is the same, so the only difference in cost is the cost per month for each HSM-protected key. See [Key Vault pricing](https://azure.microsoft.com/pricing/details/key-vault/) for details.
   
