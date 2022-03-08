@@ -1,5 +1,5 @@
 ---
-title: "Using Endpoint data loss prevention"
+title: "Configure endpoint data loss prevention settings"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -17,26 +17,29 @@ ms.collection:
 - SPO_Content
 search.appverid: 
 - MET150
-description: "Learn how to configure data loss prevention (DLP) policies to use Microsoft 365 Endpoint data loss prevention (EPDLP) locations."
+description: "Learn how to configure endpoint data loss prevention (DLP) central settings."
 ---
 
-# Using Endpoint data loss prevention
+# Configure endpoint data loss prevention settings
 
-This article walks you through four scenarios where you create and modify a DLP policy that uses devices as a location.
-<!--
+Many aspects of Endpoint DLP behavior are controlled by centrally configured settings. Settings are applied to all DLP policies for devices. 
+
+![Endpoint DLP settings](../media/endpoint-dlp-1-using-dlp-settings.png)
+
+You must configure these settings if you intend to control:
+
+- Cloud egress restrictions
+- Various types of restrictive actions on user activities per application.
+- File path exclusions for Windows and macOS devices.
+- Browser and domain restrictions.
+- How business justifications for overriding policies appear in policy tips.
+- If activities on Office, PDF, and CSV files are automatically audited.
+
+LEFT OFF HERE 3/7/2022
+
 ## DLP settings
 
-Before you get started, you should set up your DLP settings. Settings are applied to all DLP policies for devices. You must configure these if you intend to create policies that enforce:
-
-- cloud egress restrictions
-- unallowed apps restrictions
-
-Or
-
-- If you want to exclude noisy file paths from monitoring
-
-  > [!div class="mx-imgBorder"]
-  > ![DLP settings.](../media/endpoint-dlp-1-using-dlp-settings.png)
+Before you get started, you should set up your DLP settings. 
 
 ### Endpoint DLP Windows 10/11 and macOS settings
 
@@ -220,14 +223,13 @@ You can create up to five customized options that will appear when users interac
 
 <!--See [Scenario 5: Configure a policy to use the customized business justification](#scenario-5-configure-a-policy-to-use-the-customized-business-justification)-->
 
-<!--
 ### Always audit file activity for devices
 
 By default, when devices are onboarded, activity for Office, PDF, and CSV files is automatically audited and available for review in activity explorer. Turn this feature off if you want this activity to be audited only when onboarded devices are included in an active policy.
 
 File activity will always be audited for onboarded devices, regardless of whether they are included in an active policy.
--->
-## Tying DLP settings together
+
+<!--## Tying DLP settings together
 
 With Endpoint DLP and Edge Chromium Web browser, you can restrict unintentional sharing of sensitive items to unallowed cloud apps and services. Edge Chromium understands when an item is restricted by an Endpoint DLP policy and enforces access restrictions.
 
@@ -452,7 +454,7 @@ There are three procedures.
 8. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy; see [Get started with activity explorer](data-classification-activity-explorer.md), if needed.
 
 9. Check Activity explorer for the event.
-
+-->
 ## See also
 
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
