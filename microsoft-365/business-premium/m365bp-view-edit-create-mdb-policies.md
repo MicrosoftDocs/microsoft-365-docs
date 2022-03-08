@@ -1,13 +1,13 @@
 ---
-title: View or edit policies in Microsoft Defender for Business
-description: Learn how to view, edit, create, and delete next-generation protection policies in Microsoft Defender for Business
+title: View or edit device protection policies
+description: View, edit, create, and delete device protection policies in Microsoft 365 Business Premium
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/03/2022
+ms.date: 03/08/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -19,40 +19,28 @@ ms.collection:
 - m365-initiative-defender-business
 ---
 
-# View or edit policies in Microsoft Defender for Business
+# View and edit your device protection policies
 
-> [!IMPORTANT]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. Defender for Business as a standalone subscription is in in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. Preview includes an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
-> 
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
-
-In Microsoft Defender for Business, security settings are configured through policies that are applied to devices. To help simplify your setup and configuration experience, Defender for Business includes preconfigured policies to help protect your organization's devices as soon as they are onboarded. You can use the default policies, edit policies, or create your own policies.
+In Microsoft 365 Business Premium, security settings for managed devices are configured through device protection policies. To help simplify your setup and configuration experience, you have preconfigured policies that can help protect your organization's devices as soon as they are onboarded. You can use the default policies, edit policies, or create your own policies.
 
 **This article describes how to**:
 
-- [Get an overview of your default policies](#default-policies-in-defender-for-business)
+- Get an overview of your default policies
+- View your existing policies
+- Edit an existing policy
+- Create a new policy
 
-- [View your existing policies](#view-your-existing-policies)
+## Default device protection policies
 
-- [Edit an existing policy](#edit-an-existing-policy)
-
-- [Create a new policy](#create-a-new-policy)
-
->
-> **Got a minute?**
-> Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
->
-
-## Default policies in Defender for Business
-
-In Defender for Business, there are two main types of policies to protect your organization's devices:
+Microsoft 365 Business Premium includes two main types of policies to protect your organization's devices:
 
 - **Next-generation protection policies**, which determine how Microsoft Defender Antivirus and other threat protection features are configured
 
 - **Firewall policies**, which determine what network traffic is permitted to flow to and from your organization's devices
 
+These policies are part of Microsoft Defender for Business, which is included in your Microsoft 365 Business Premium subscription.
 
-## View your existing policies
+## View your existing device protection policies
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
 
@@ -62,7 +50,7 @@ In Defender for Business, there are two main types of policies to protect your o
 
 4. To view more details about a policy, select its name. A side pane will open that provides more information about that policy, such as which devices are protected by that policy.
 
-## Edit an existing policy
+## Edit an existing device protection policy
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
 
@@ -95,7 +83,7 @@ In Defender for Business, there are two main types of policies to protect your o
    - Make any needed changes by selecting **Edit**.
    - When you’re ready to proceed, choose **Update policy**.
 
-## Create a new policy
+## Create a new device protection policy
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
 
@@ -118,9 +106,9 @@ In Defender for Business, there are two main types of policies to protect your o
    - When you set up your device group, you specify certain criteria, such as the operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. 
    - All device groups, including the default and custom device groups that you define, are stored in Azure Active Directory (Azure AD).
 
-   To learn more about device groups, see [Device groups in Defender for Business](mdb-create-edit-device-groups.md).
+   To learn more about device groups, see [Device groups in Microsoft Defender for Business](../security/defender-business/mdb-create-edit-device-groups.md).
 
-8. On the **Configuration settings** tab, specify the settings for your policy, and then choose **Next**. For more information about the individual settings, see [Configuration settings for Microsoft Defender for Business](mdb-next-gen-configuration-settings.md).
+8. On the **Configuration settings** tab, specify the settings for your policy, and then choose **Next**. For more information about the individual settings, see [Understand next-generation configuration settings in Microsoft Defender for Business](../security/defender-business/mdb-next-gen-configuration-settings.md).
 
 9. On the **Review your policy** tab, review the general information, targeted devices, and configuration settings. 
 
@@ -130,14 +118,3 @@ In Defender for Business, there are two main types of policies to protect your o
 
 ## Next steps
 
-Choose one or more of the following tasks:
-
-- [Manage devices](mdb-manage-devices.md)
-
-- [Create a new policy in Microsoft Defender for Business](mdb-create-new-policy.md)
-
-- [View and manage incidents in Microsoft Defender for Business](mdb-view-manage-incidents.md)
-
-- [Respond to and mitigate threats in Microsoft Defender for Business](mdb-respond-mitigate-threats.md)
-
-- [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
