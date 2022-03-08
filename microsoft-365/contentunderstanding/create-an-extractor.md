@@ -143,9 +143,9 @@ If you receive a match on your labeled sample files, you can now test your model
 
 2. In the **Test files** list, your example files display to show if the model is able to extract the information you need. Use this information to help determine the effectiveness of your classifier in identifying your documents.
 
-    ![Test on your files.](../media/content-understanding/test-filies-extractor-2.png) 
+    ![Test on your files.](../media/content-understanding/test-filies-extractor.png) 
 
-### Other extractor strategies
+### Further refine an extractor
 
 If you have duplicate entities and want to extract only one value but are unable to, you can set a rule to specify how you want it processed. To add a rule to refine extracted information, follow these steps:
 
@@ -153,14 +153,14 @@ If you have duplicate entities and want to extract only one value but are unable
 
     ![Screenshot of the Entity extractors section showing the Refine extracted info option highlighted.](../media/content-understanding/refine-extracted-info.png) 
 
-2. On the **Choose a refiner** page, select one of the following rules:
+2. On the **Refine extracted info** page, select one of the following rules:
 
     - Keep only the first lines
     - Keep only the last lines
+    - Remove duplicates
     - Keep values that are extracted first
     - Keep values that are extracted last
-    - Remove duplicates
-
+ 
     ![Screenshot of the Refine extracted info page showing the rules options.](../media/content-understanding/refine-extracted-info-page.png) 
 
 3. Enter the number of lines or values you want to use, and then select **Refine**.
@@ -169,6 +169,7 @@ If you have duplicate entities and want to extract only one value but are unable
 
 5. When you test the extractor, you'll be able to see the refinement in the **Refinement result** column of the **Test Files** list. 
 
+    ![Test Files list showing the Refinement result column.](../media/content-understanding/test-filies-extractor-2.png) 
 
 ## See Also
 [Create a classifier](create-a-classifier.md)
