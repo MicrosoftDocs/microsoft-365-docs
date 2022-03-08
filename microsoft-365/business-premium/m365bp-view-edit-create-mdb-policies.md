@@ -118,3 +118,4 @@ These policies are part of Microsoft Defender for Business, which is included in
 
 ## Next steps
 
+[Device groups in Microsoft 365 Business Premium](m365bp-device-groups-mdb.md)

@@ -134,3 +134,4 @@ If you want to offboard a device, follow these steps:
 
 ## Next steps
 
+[Review remediation actions in Microsoft 365 Business Premium](m365bp-review-remediation-actions-devices.md)
