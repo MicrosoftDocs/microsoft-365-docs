@@ -171,6 +171,8 @@ If you have duplicate entities and want to extract only one value or a certain n
 
     ![Test Files list showing the Refinement result column.](../media/content-understanding/test-filies-extractor-2.png) 
 
+6. If you want to delete a refinement rule on an extractor, from the model home page, in the **Entity extractors** section, select the extractor from which you want to remove the rule, and then select **Delete**.
+
 ## See Also
 [Create a classifier](create-a-classifier.md)
 
