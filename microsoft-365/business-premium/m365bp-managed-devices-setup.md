@@ -41,3 +41,7 @@ Go to Intune and enroll managed devices (Windows, macOS, iOS, and Android)
 (refer to [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md))
 
 Go to Endpoints > Device inventory (this kicks off the setup wizard for MDB). Choose Get started and work through the wizard. This onboards devices and applies endpoint protection policies to the devices
+
+## Next steps
+
+[Protect all email](m365bp-protect-email-overview.md)
