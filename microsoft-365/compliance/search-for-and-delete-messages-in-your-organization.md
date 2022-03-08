@@ -24,7 +24,7 @@ description: "Use the search and purge feature in the Microsoft 365 compliance c
 **This article is for administrators. Are you trying to find items in your mailbox that you want to delete? See [Find a message or item with Instant Search](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**.
 
 > [!TIP]
-> If your organization has an active Defender for Office 365 Plan 2 subscription, there is a simpler and superior process available for you to use instead of the procured here in this article:  [Remediate malicious email delivered in Office 365](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365?view=o365-worldwide)
+> If your organization has an active Defender for Office 365 Plan 2 subscription, we recommend using the procedure detailed in [Remediate malicious email delivered in Office 365](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365), rather than following the procedure described in this article.
 
 You can use the Content search feature to search for and delete email messages from all mailboxes in your organization. This can help you find and remove potentially harmful or high-risk email, such as:
 
