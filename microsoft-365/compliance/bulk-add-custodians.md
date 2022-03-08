@@ -19,7 +19,7 @@ description: "Use the bulk-import tool to quickly add multiple custodians and th
 
 # Import custodians to an Advanced eDiscovery case
 
-For Advanced eDiscovery cases that involve many custodians, you can import multiple custodians at once by using a CSV file that contains the information necessary to add them to a case.
+For Advanced eDiscovery cases that involve many custodians, you can import multiple custodians at once by using a CSV file that contains the information necessary to add them to a case. The import custodians tool will also validate the CSV file before the import job is created. This means you can fix any errors in the CSV file instead of having to wait until the import job is complete before learning there are errors that prevent a custodian from being added to the case.
 
 ## Before you import custodians
 
@@ -49,21 +49,23 @@ For Advanced eDiscovery cases that involve many custodians, you can import multi
 
 6. On the **Upload CSV file** wizard page, click **Upload csv file** and then upload the CSV file that contains the custodian information.
 
-7. Click **Next**.
-   
-The import wizard validates the CSV file. If any validation errors exist, the wizard displays the error and suggests a remediation action. You will have to fix any validation errors and then re-upload the fixed CSV file. The CVS file must be successfully validated before you can create the import custodian job.
+   After you upload the CSV file, the import wizard validates the CSV file. If any validation errors exist, the wizard displays an error banner with a link to view the errors.
 
-8. 
+   ![Validation error banner with link to more information.](../media/ImportCustodians2.png)
 
-After the CSV file is validated and successfully uploaded, Advanced eDiscovery does the following things:
+   The error information identifies the row and column of the cell that contains the error, and suggests a remediation action. You have to fix any validation error and then reupload the fixed CSV file. The CSV file must be successfully validated before you can create the import custodian job.
+
+7. Once the CSV file has been successfully validated, click **Next** and then click **Import** to start the import job.
+
+After you start the import job, Advanced eDiscovery does the following things:
 
 - Creates a job named **BulkAddCustodian** on the **Jobs** tab of the case.
 
-- Indexes all data sources for each custodian and places them on hold (if the **Is OnHold** property in the CSV file is set to TRUE)
+- Performs Advanced indexing of all data sources for each custodian.
 
-- 
+- Places all custodian data sources on hold (if the **Is OnHold** property in the CSV file is set to TRUE)
 
-After the import custodian job is complete, the custodians and their associated data sources are added to the **Data sources** page of the case.
+When the import custodian job is complete, the custodians and their associated data sources are added to the **Data sources** page of the case.
 
 ## Custodian CSV file
 
@@ -95,4 +97,4 @@ Here's an example of a CSV file with custodian information:<br/><br/>
 ||||||
 
 > [!NOTE]
-> To import an inactive mailbox as a custodian or to associate an inactive mailbox with another custodian, add a "." prefix to the UPN address of the inactive mailbox.
+> As previously explained, add a "." prefix to the UPN address of an  inactive mailbox to import an inactive mailbox as a custodian or to associate an inactive mailbox with another custodian.
