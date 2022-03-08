@@ -41,7 +41,7 @@
     - name: Set up multifactor authentication
       href: m365bp-multifactor-authentication.md
     - name: Set up managed Windows devices
-      href: ../business/set-up-windows-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      href: m365bp-managed-devices-setup.md
     - name: Set up mobile devices
       href: ../business/set-up-mobile-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Protect unmanaged PCs and Macs
