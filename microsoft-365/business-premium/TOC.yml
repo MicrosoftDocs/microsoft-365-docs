@@ -56,7 +56,7 @@
       href: share-files-and-videos.md
     - name: Create a Communication site for your organization
       href: create-communications-site.md
-name: Protect devices with Defender for Business
+- name: Protect devices with Defender for Business
   items:
     - name: Onboard devices to Microsoft Defender for Business
       href: m365bp-onboard-devices-mdb.md
