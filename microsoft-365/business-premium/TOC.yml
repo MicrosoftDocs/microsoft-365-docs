@@ -52,7 +52,6 @@
       href: m365bp-protect-email-overview.md
     - name: Protect against phishing and other attacks
       href: m365-campaigns-phishing-and-attacks.md
-    - name: Set up encryption
     - name: Send encrypted email
       href: send-encrypted-email.md
 - name: Collaborate and share securely
