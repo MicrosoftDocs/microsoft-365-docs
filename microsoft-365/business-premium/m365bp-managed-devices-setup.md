@@ -30,3 +30,14 @@ description: "An overview on how to protect devices"
 
 CONTENT TO FOLLOW
 
+What is a managed device?
+
+## Enroll devices in Microsoft Endpoint Manager
+
+Go to Intune and enroll managed devices (Windows, macOS, iOS, and Android)
+
+## Onboard devices to Microsoft Defender for Business
+
+(refer to [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md))
+
+Go to Endpoints > Device inventory (this kicks off the setup wizard for MDB). Choose Get started and work through the wizard. This onboards devices and applies endpoint protection policies to the devices
