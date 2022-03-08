@@ -36,7 +36,7 @@ Microsoft 365 Defender combines the capabilities of [Microsoft Defender for Endp
 
 Core to MITRE's testing approach is emulating real-world attacks to understand whether solutions can adequately detect and respond to them. While the test focused on endpoint detection and response, MITRE's simulated APT29 attack spans multiple attack domains, creating opportunities to empower defenders beyond just endpoint protection. Microsoft expanded visibility beyond the endpoint with Microsoft 365 Defender.
 
-- ATT&CK-based evaluation of Microsoft 365 Defender - May 2020: [Leading in real-world detection](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
+- ATT&CK-based evaluation of Microsoft 365 Defender - April 2021: [Evaluation proves Microsoft Defender for Endpoint stops advanced attacks across platforms](https://www.microsoft.com/security/blog/2021/04/21/)
 
  Microsoft 365 Defender provided nearly 100 percent coverage across the attack chain stages. It delivered leading out-of-box visibility into attacker activities. The visibility dramatically reduces manual work for the security operations center and vendor solutions that relied on specific configuration changes. Microsoft 365 Defender also had the fewest gaps in visibility, diminishing attacker ability to operate undetected.
 
@@ -50,33 +50,33 @@ Microsoft Defender Antivirus is the [next generation protection](https://www.you
 
 The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The following scores are for the Protection category that has two scores: Real-World Testing and the AV-TEST reference set (known as "Prevalent Malware").
 
-- November - December 2020 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2020/microsoft-defender-antivirus-4.18-205017/) <sup>**Latest**</sup>
+- November - December 2021 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2021/microsoft-defender-antivirus-4.18-212622/) <sup>**Latest**</sup>
 
-    Microsoft Defender Antivirus achieved a perfect Protection score of 6.0/6.0, with 100% in November and December. 11,382 malware samples were used.
+    Microsoft Defender Antivirus achieved a perfect Protection score of 6.0/6.0, with 100% in November and December. 18,870 malware samples were used.
 
-- September - October 2020 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2020/microsoft-defender-antivirus-4.18-204116/)
+- September - October 2021 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2021/microsoft-defender-antivirus-4.18-212518/)
 
-- July - August 2020 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2020/microsoft-defender-antivirus-4.18-203215/)
+- July - August 2021 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2021/microsoft-defender-antivirus-4.18-212419/)
 
-- May - June 2020 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/)
+- May - June 2021 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2021/microsoft-defender-antivirus-4.18-212318/)
 
-- March - April 2020 AV-TEST Business User test: [Protection score 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)
+- March - April 2021 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/april-2021/microsoft-defender-antivirus-4.18-212216/)
 
-- January - February 2020 AV-TEST Business User test: [Protection score 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
+- January - February 2021 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2021/microsoft-defender-antivirus-4.18-212117/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
 
 ### AV-Comparatives: Protection rating of 99.8% in the latest test
 
 Business Security Test consists of three main parts: the Real-World Protection Test that mimics online malware attacks, the Malware Protection Test where the malware enters the system from outside the internet (for example by USB), and the Performance Test that looks at the impact on the system's performance.
 
-- Business Security Test 2020 (August - November): [Real-World Protection Rate 99.8%](https://www.av-comparatives.org/tests/business-security-test-2020-august-november/) <sup>**Latest**</sup>
+- Business Security Test 2021 (August - November): [Real-World Protection Rate 99.8%](https://www.av-comparatives.org/tests/business-security-test-2021-august-november/) <sup>**Latest**</sup>
 
     Microsoft Defender Antivirus has scored consistently high in Real-World Protection Rates over the past year, with 99.8% in the latest test.
 
-- Business Security Test 2020 (March - June): [Real-World Protection Rate 99.7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/)
+- Business Security Test 2021 (March - June): [Real-World Protection Rate 99.7%](https://www.av-comparatives.org/tests/business-security-test-2021-march-june/)
 
-- Business Security Test 2019 (August - November): [Real-World Protection Rate 99.6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/)
+- Business Security Test 2020 (August - November): [Real-World Protection Rate 99.8%](https://www.av-comparatives.org/tests/business-security-test-2020-august-november/)
 
-- Business Security Test 2019 (March - June): [Real-World Protection Rate 99.9%](https://www.av-comparatives.org/tests/business-security-test-2019-march-june/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
+- Business Security Test 2020 (March - June): [Real-World Protection Rate 99.7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/) | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
 ### SE Labs: AAA award in the latest test
 
