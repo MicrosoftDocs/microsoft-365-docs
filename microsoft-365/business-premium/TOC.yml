@@ -74,6 +74,7 @@
     - name: Onboard devices to Defender for Business
       href: m365bp-onboard-devices-mdb.md
     - name: Review and edit policies
+      href: m365bp-view-edit-create-mdb-policies.md
     - name: Manage device groups
 - name: Security incident management
   items: 
