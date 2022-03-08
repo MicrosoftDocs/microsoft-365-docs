@@ -155,11 +155,11 @@ If you have duplicate entities and want to extract only one value or a certain n
 
 2. On the **Refine extracted info** page, select one of the following rules:
 
-    - Keep only the first lines
-    - Keep only the last lines
-    - Remove duplicates
-    - Keep values that are extracted first
-    - Keep values that are extracted last
+    - Keep one or more of the first values
+    - Keep one or more of the last values
+    - Remove duplicate values
+    - Keep one or more of the first lines
+    - Keep one or more of the last lines
  
     ![Screenshot of the Refine extracted info page showing the rules options.](../media/content-understanding/refine-extracted-info-page.png) 
 
