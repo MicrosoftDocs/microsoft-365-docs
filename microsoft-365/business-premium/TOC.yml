@@ -50,17 +50,15 @@
   items: 
     - name: Overview
       href: m365bp-protect-email-overview.md
-    - name: Set up encryption
-    - name: Turn off external forwarding
     - name: Protect against phishing and other attacks
       href: m365-campaigns-phishing-and-attacks.md
+    - name: Set up encryption
     - name: Send encrypted email
       href: send-encrypted-email.md
 - name: Collaborate and share securely
   items: 
     - name: Overview
       href: m365bp-collaborate-share-securely.md
-    - name: Set up Teams security
     - name: Create Teams for collaboration
       href: create-teams-for-collaboration.md
     - name: Set up meetings
@@ -73,10 +71,8 @@
   items:
     - name: Overview
       href: m365bp-protect-devices.md
-    - name: What is Defender for Business?
-      href: ../security/defender-business/mdb-overview.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Onboard devices to Defender for Business
-      href: ..//security/defender-business/mdb-onboard-devices.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      href: m365bp-onboard-devices-mdb.md
     - name: Review and edit policies
     - name: Manage device groups
 - name: Security incident management
