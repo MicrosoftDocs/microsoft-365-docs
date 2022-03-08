@@ -78,6 +78,10 @@ with one of the following Intermediate CAs:
 | [Microsoft Azure TLS Issuing CA 05](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2005%20-%20xsign.crt) | 6c3af02e7f269aa73afd0eff2a88a4a1f04ed1e5 |
 | [Microsoft Azure TLS Issuing CA 06](https://www.microsoft.com/pkiops/certs/Microsoft%20Azure%20TLS%20Issuing%20CA%2006%20-%20xsign.crt) | 30e01761ab97e59a06b41ef20af6f2de7ef4f7b0 |
 
+As an example, this is a valid certificate with one of the new certificate chains:
+
+![Teams TLS Certificate Chain](../media/teams-tls-certificate-chain.png)
+
 ## Will this change affect me?
 
 The Root CA "DigiCert Global Root G2" is widely trusted by operating systems including Windows, macOS, Android, and iOS and by browsers such as Microsoft Edge, Chrome, Safari, and Firefox. We expect that **most Microsoft 365 customers will not be impacted**. 
