@@ -73,8 +73,8 @@ These policies are part of Microsoft Defender for Business, which is included in
 
 7. On the **Configuration settings** tab, review the settings. If necessary, you can edit the settings for your policy. To get help with this task, see the following articles: 
 
-   - [Understand next-generation configuration settings](mdb-next-gen-configuration-settings.md)   
-   - [Firewall settings](mdb-firewall.md)
+   - [Understand next-generation configuration settings](../security/defender-business/mdb-next-gen-configuration-settings.md)   
+   - [Firewall settings](../security/defender-business/mdb-firewall.md)
 
    After you have specified your next-generation protection settings, choose **Next**.
 
@@ -96,7 +96,7 @@ These policies are part of Microsoft Defender for Business, which is included in
 5. On the **General information** tab, take the following steps:
 
    1. Specify a name and description. This information will help you and your team identify the policy later on.
-   2. Review the policy order, and edit it if necessary. (For more information, see [Policy order](mdb-policy-order.md).)
+   2. Review the policy order, and edit it if necessary. (For more information, see [Policy order](../security/defender-business/mdb-policy-order.md).)
    3. Choose **Next**. 
 
 7. On the **Device groups** tab, either create a new device group, or use an existing group. Policies are assigned to devices through device groups. Here are some things to keep in mind:
