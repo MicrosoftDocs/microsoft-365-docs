@@ -66,7 +66,7 @@ These policies are part of Microsoft Defender for Business, which is included in
 
    - To keep the selected device group as it is, choose **Next**.
    - To remove a device group from the policy, select **Remove**.
-   - To set up a new device group, select **Create new group**, and then set up your device group. (To get help with this task, see [Device groups in Microsoft Defender for Business](mdb-create-edit-device-groups.md).)
+   - To set up a new device group, select **Create new group**, and then set up your device group. (To get help with this task, see [Device groups in Microsoft 365 Business Premium](m365bp-device-groups-mdb.md).)
    - To apply the policy to another device group, select **Use existing group**.
 
    After you have specified which device groups should receive the policy, choose **Next**.
