@@ -23,22 +23,17 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 Microsoft 365 Lighthouse baselines let you deploy standard managed-tenant configurations to secure users, devices, and data within customer tenants. There are seven default baseline configurations that come standard with Lighthouse:
 
 - Require MFA for admins
-- Require MFA for end users
+- Require MFA for end-users
 - Block Legacy Authentication
-- Set up Device Enrollment in Microsoft Endpoint Manager – Azure AD Join
-- Configure Defender Antivirus policy for Windows 10 and later
-- Configure Microsoft Defender Firewall for Windows 10 and later
-- Configure Compliance Policy for Windows 10 and later
+- Set up Device Enrollment
+- Configure Microsoft Defender Antivirus for Windows 10 and later
+- Configure a device compliance policy for Windows 10 and later
+- Configure Microsoft Defender Firewall
 
 ## Before you begin
 
 Make sure you and your customer tenants meet the requirements listed in [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
-## Learn more about the default baseline
-
-Select **Baselines** from the left navigation pane in Lighthouse to open the Baselines page. You'll see that the default baseline has already been added to the Default tenant group (all tenants). To view the default baseline configurations, select **View baseline** to open the Default baseline page. The configurations are listed as deployment steps. Select any of the deployment steps to view deployment details and user impact.
-
-:::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Screenshot of the Default baseline page.":::
 
 ## Deploy a baseline configuration  
 

@@ -26,6 +26,12 @@ Designed to help Managed Service Providers (MSPs) enable customer adoption of se
 
 You can view the default baseline and its deployment steps from within Lighthouse. To apply a baseline to a tenant, select **Tenants** in the left navigation pane, and then select a tenant. Next, go to the **Deployment plans** tab and implement the baseline.
 
+## Learn more about the default baseline
+
+Select **Baselines** from the left navigation pane in Lighthouse to open the Baselines page. You'll see that the default baseline has already been added to the Default tenant group (all tenants). To view the default baseline configurations, select **View baseline** to open the Default baseline page. The configurations are listed as deployment steps. Select any of the deployment steps to view deployment details and user impact.
+
+:::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Screenshot of the Default baseline page.":::
+
 ## Default baseline security templates
 
 Lighthouse default baseline configurations for security workloads are designed to make sure all managed tenants are secure and compliant.
