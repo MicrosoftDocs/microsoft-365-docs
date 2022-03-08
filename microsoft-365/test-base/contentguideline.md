@@ -2,8 +2,8 @@
 title: 'Test package guidelines'
 description: Review the guidelines around test package
 search.appverid: MET150
-author: Tinacyt
-ms.author: tinachen
+author: mansipatel-usl
+ms.author: mapatel
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to

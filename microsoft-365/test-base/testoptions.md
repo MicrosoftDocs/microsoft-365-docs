@@ -2,8 +2,8 @@
 title: 'Choose your test options'
 description: Choose your test options
 search.appverid: MET150
-author: Tinacyt
-ms.author: tinachen
+author: mansipatel-usl
+ms.author: mapatel
 manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting

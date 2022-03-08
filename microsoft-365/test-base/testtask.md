@@ -2,8 +2,8 @@
 title: 'Set your test tasks'
 description: Set your test tasks
 search.appverid: MET150
-author: Tinacyt
-ms.author: tinachen
+author: mansipatel-usl
+ms.author: mapatel
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to

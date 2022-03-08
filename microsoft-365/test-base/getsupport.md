@@ -2,8 +2,8 @@
 title: 'For additional support'
 description: Details on how to reach out to the Test Base team
 search.appverid: MET150
-author: Tinacyt
-ms.author: tinachen
+author: mansipatel-usl
+ms.author: mapatel
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
