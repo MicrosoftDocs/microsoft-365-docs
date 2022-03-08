@@ -64,7 +64,7 @@ Chart information gives you insight into the apps and services that you want to 
 
 **NPS survey response volume** is the total number of responses to NPS (Net Promoter Score) surveys. [Learn more](../manage/manage-feedback-product-insights.md)
 
-**Help article views** is the total number of help article page views that users in your organization have viewed in app or on support.microsoft.com. Learn more
+**Help article views** is the total number of help article page views that users in your organization have viewed in app or on support.microsoft.com. [Learn more](adoption-training-specialist-help.md)
 
 > [!NOTE]
 > You can filter the chart data for trends over the last 30 days, 90 days, or 180 days.

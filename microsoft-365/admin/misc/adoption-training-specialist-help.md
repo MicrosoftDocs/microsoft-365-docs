@@ -13,7 +13,7 @@ description: "Get a report of the Microsoft 365 help articles people in your org
 
 # Microsoft 365 help article report
 
-As the admin of a Microsoft 365 organization, you get a report of the Microsoft 365 help articles people in your organization are reading. You can use this information to see which Microsoft 365 product or service your users need the most help using and provide more resources and help for your end-users. To learn more about adoption and training for users in your organization, see [Microsoft 365 Adoption and Training dashboard](training-specialist.md).
+As the admin of a Microsoft 365 organization, you get a report of the Microsoft 365 help articles people in your organization are reading. You can use this information to see which Microsoft 365 product or service your users need the most help using and provide more resources and help. To learn more about adoption and training for users in your organization, see [Microsoft 365 Adoption and Training dashboard](training-specialist.md).
 
 :::image type="content" source="../../media/help-articles.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
 
@@ -23,13 +23,20 @@ As the admin of a Microsoft 365 organization, you get a report of the Microsoft 
 
 2. Select an option under **Additional resources** to get started.
 
+3. Select an app or service and then select **Help content**.
+
 ## Interpret your organization's help article views
 
-:::image type="content" source="../../media/help-articles-detail-view.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
+Chart information gives you insight into the apps and services that you want to track data on. **Help article views** is the total number of help article page views that users in your organization have viewed in a Microsoft 365 app or on support.microsoft.com.
 
-Chart information gives you insight into the apps and services that you want to track data on. Select an app or service to dig deeper into usage, product feedback, net promoter score and help content data.
+:::image type="content" source="../../media/help-articles-detail-view2.png" alt-text="Screenshot: Image showing the number of help articles read and the corresponding Microsoft 365 product":::
 
-**Help article views** is the total number of help article page views that users in your organization have viewed in app or on support.microsoft.com.
+|Item|Description|
+|:-----|:-----|
+|1 |Use the Help content tab to see where people need help using the app or service. |
+|2 |You can filter for trends over the last 7 days, 30 days, 90 days, or 180 days. |
+|3 |Total number of help article page views in app or on support.microsoft.com. |
+|4 |List of the top help articles related to the app or service that your end-users are reading. |
 
 ## Who can see the information on the adoption and training dashboard?
 
