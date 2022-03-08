@@ -199,6 +199,7 @@ The table in this section describes various states you might see with Microsoft 
 
 ## See also
 
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus on Windows clients](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 - [EDR in block mode](edr-in-block-mode.md)
 - [Learn about Microsoft 365 Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about)
