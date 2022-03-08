@@ -80,14 +80,20 @@ To instruct Customer Key to use the new key to encrypt mailboxes, run the Set-Da
   
 ## Update the keys for SharePoint Online, OneDrive for Business, and Teams files
 
-SharePoint Online only allows you to roll one key at a time. If you want to roll both keys in a key vault, wait for the first operation to complete. Microsoft recommends that you stagger your operations to avoid this issue. When you roll either of the Azure Key Vault keys associated with a DEP used with SharePoint Online and OneDrive for Business, you must update the DEP to point to the new key. This does not rotate the availability key.
+SharePoint Online only allows you to roll one key at a time. If you want to roll both keys in a key vault, wait for the first operation to complete. Microsoft recommends that you stagger your operations to avoid this issue. When you roll either of the Azure Key Vault keys (premium or managed HSM) associated with a DEP used with SharePoint Online and OneDrive for Business, you must update the DEP to point to the new key. This does not rotate the availability key.
 
-1. Run the Update-SPODataEncryptionPolicy cmdlet as follows:
+1
+A. Run the Update-SPODataEncryptionPolicy cmdlet as follows (for premium key vault)
   
    ```powershell
    Update-SPODataEncryptionPolicy  <SPOAdminSiteUrl> -KeyVaultName <ReplacementKeyVaultName> -KeyName <ReplacementKeyName> -KeyVersion <ReplacementKeyVersion> -KeyType <Primary | Secondary>
    ```
+B. Run the Update-SPODataEncryptionPolicy cmdlet as follows (for managed HSM )
 
+```powershell
+ 
+Update-SPODataEncryptionPolicy -KeyVaultName <ReplacementKeyVaultName> -KeyVaultType < KeyVault | ManagedHSM> -KeyName <ReplacementKeyName> -KeyVersion <ReplacementKeyVersion> -KeyType <Primary | Secondary> 
+   ```
    While this cmdlet starts the key roll operation for SharePoint Online and OneDrive for Business, the action doesn't complete immediately.
 
 2. To see the progress of the key roll operation, run the Get-SPODataEncryptionPolicy cmdlet as follows:
