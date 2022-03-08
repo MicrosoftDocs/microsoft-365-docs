@@ -115,18 +115,21 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
    - **Senders**:
      - **Value**: The sender domain or email address.
      - **Action**: The value **Allow** or **Block**.
+     - **Modified by**
      - **Last updated**
      - **Remove on**
      - **Notes**
    - **URLs**:
      - **Value**: The URL.
      - **Action**: The value **Allow** or **Block**.
+     - **Modified by**
      - **Last updated**
      - **Remove on**
      - **Notes**
    - **Files**
      - **Value**: The file hash.
      - **Action**: The value **Allow** or **Block**.
+     - **Modified by**
      - **Last updated**
      - **Remove on**
      - **Notes**
@@ -224,7 +227,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
 
 ## URL syntax for the Tenant Allow/Block List
 
-- IP4v and IPv6 addresses are allowed, but TCP/UDP ports are not.
+- IPv4 and IPv6 addresses are allowed, but TCP/UDP ports are not.
 
 - Filename extensions are not allowed (for example, test.pdf).
 
@@ -263,7 +266,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
 
 - URL entries that contain protocols (for example, `http://`, `https://`, or `ftp://`) will fail, because URL entries apply to all protocols.
 
-- A username or password aren't supported or required.
+- A username or password isn't supported or required.
 
 - Quotes (' or ") are invalid characters.
 

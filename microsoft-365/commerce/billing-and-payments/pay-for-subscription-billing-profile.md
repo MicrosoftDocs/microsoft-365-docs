@@ -2,8 +2,8 @@
 title: "Paying for your subscription with a billing profile"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,9 +16,9 @@ ms.collection:
 search.appverid: MET150
 description: "Learn what payment options are available to pay for your subscription with a billing profile."
 ms.custom: 
+- commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 ms.date: 10/29/2021
 ---
 
