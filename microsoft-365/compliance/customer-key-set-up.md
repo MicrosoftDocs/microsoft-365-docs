@@ -25,7 +25,7 @@ Set up Azure before you can use Customer Key for Office 365. This article descri
   
 ## Before you set up Customer Key
 
-Before you get started, ensure that you have the appropriate Azure subscriptions and M365/O365 licensing for your organization. Use paid Azure Subscriptions using either an Enterprise Agreement or a Cloud Service Provider. Credit Card based payments are not accepted. Approve and set up the account needs for invoicing. Subscriptions you got through Free, Trial, Sponsorships, MSDN Subscriptions, and those under Legacy Support are not eligible.
+Before you get started, ensure that you have the appropriate Azure subscriptions and M365/O365 licensing for your organization. You must use paid Azure Subscriptions. Subscriptions you got through Free, Trial, Sponsorships, MSDN Subscriptions, and those under Legacy Support are not eligible.
 
 > [!IMPORTANT]
 > Valid  M365/O365 licenses that offer M365 Customer Key are:
