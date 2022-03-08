@@ -58,7 +58,7 @@ You must complete all the following steps to regain access to your connector. Th
 
 #### Review recent suspicious connector traffic or related messages
 
-If you have Microsoft Defender for Office 365 plan 2, go directly to https://security.microsoft.com/threatexplorer. 
+If you have [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md), go directly to https://security.microsoft.com/threatexplorer. 
 
 1. Select **Connector**, insert **Connector Name**, select date range, and then click **Refresh**. 
 
@@ -70,7 +70,7 @@ If you have Microsoft Defender for Office 365 plan 2, go directly to https://sec
 
 3. Identify: 
 
-    - If **Sender IP** matches with your organization’s IP address. 
+    - If **Sender IP** matches with your organization’s on-prem IP address. 
 
     - If a significant number of emails were recently sent to the **Junk** folder. This is a good indicator of a compromised connector being used to send spam. 
 
@@ -78,7 +78,7 @@ If you have Microsoft Defender for Office 365 plan 2, go directly to https://sec
 
     [image]
 
-If you have Microsoft Defender for Office 365 Plan 1 or Exchange Online Protection, go to https://admin-sdf.exchange.microsoft.com/#/messagetrace. 
+If you have [Microsoft Defender for Office 365 Plan 1](defender-for-office-365.md) or [Exchange Online Protection](exchange-online-protection-overview.md), go to https://admin-sdf.exchange.microsoft.com/#/messagetrace. 
 
 1. Open **Suspicious connector activity** alert in https://security.microsoft.com/alerts.  
 
