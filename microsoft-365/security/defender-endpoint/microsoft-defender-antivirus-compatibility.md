@@ -14,7 +14,7 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 02/11/2022
+ms.date: 03/07/2022
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
@@ -37,9 +37,9 @@ Microsoft Defender Antivirus is automatically installed on endpoints running the
 - Windows Server, version 1803, or newer
 - Windows Server 2016
 
-What happens when another non-Microsoft antivirus/antimalware solution is used? Can you run Microsoft Defender Antivirus alongside another antivirus product? The answers depend on several factors, such as your operating system and whether you're using [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) together with your antivirus protection.
+What happens when another non-Microsoft antivirus/antimalware solution is used? Can you run Microsoft Defender Antivirus alongside another antivirus product? The answers depend on several factors, such as your operating system and whether you're using [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) together with your antivirus protection.
 
-This article describes what happens with Microsoft Defender Antivirus and a non-Microsoft antivirus/antimalware solution, with or without Defender for Endpoint.
+This article describes what happens with Microsoft Defender Antivirus and a non-Microsoft antivirus/antimalware solution, with and without Defender for Endpoint.
 
 > [!IMPORTANT]
 > Microsoft Defender Antivirus is only available on devices running Windows 10 and 11, Windows Server 2022, Windows Server 2019, Windows Server, version 1803 or newer, Windows Server 2016, and Windows Server 2012 R2.
@@ -50,7 +50,12 @@ This article describes what happens with Microsoft Defender Antivirus and a non-
 
 ## Antivirus protection without Defender for Endpoint
 
-This section describes what happens with Microsoft Defender Antivirus and non-Microsoft antivirus/antimalware products on endpoints that are not onboarded to Defender for Endpoint. The following table summarizes what to expect:
+This section describes what happens when you use Microsoft Defender Antivirus alongside non-Microsoft antivirus/antimalware products on endpoints that are not onboarded to Defender for Endpoint. 
+
+> [!NOTE]
+> In general, Microsoft Defender Antivirus does not run in passive mode on devices that are not onboarded to Defender for Endpoint.
+
+The following table summarizes what to expect:
 
 <br/><br/>
 
@@ -68,7 +73,16 @@ This section describes what happens with Microsoft Defender Antivirus and non-Mi
 
 ## Microsoft Defender Antivirus and non-Microsoft antivirus/antimalware solutions
 
-The following table summarizes what happens with Microsoft Defender Antivirus when non-Microsoft antivirus/antimalware solutions are used together or without Microsoft Defender for Endpoint. <br/><br/>
+> [!NOTE]
+> In general, Microsoft Defender Antivirus can be set to passive mode only on endpoints that are onboarded to Defender for Endpoint.
+
+Whether Microsoft Defender Antivirus runs in active mode, passive mode, or is disabled depends on several factors, such as:
+
+- Which version of Windows is installed on an endpoint
+- Whether Microsoft Defender Antivirus is the primary antivirus/antimalware solution on the endpoint
+- Whether the endpoint is onboarded to Defender for Endpoint
+
+The following table summarizes the state of Microsoft Defender Antivirus in several scenarios. <br/><br/>
 
 | Windows version   | Antivirus/antimalware solution  | Onboarded to <br/> Defender for Endpoint? | Microsoft Defender Antivirus state     |
 |:------|:------|:-------|:-------|
