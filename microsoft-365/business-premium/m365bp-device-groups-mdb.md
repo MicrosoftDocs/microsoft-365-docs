@@ -25,8 +25,8 @@ Microsoft 365 Business Premium includes endpoint protection through Microsoft De
 
 **This article describes**:  
 
-- [What device groups are](#what-is-a-device-group)   
-- [How to create device groups in Defender for Business](#create-a-new-device-group)
+- [What device groups are](#whats-a-device-group)
+- [How to create a new device group](#how-do-i-create-a-new-device-group)
 
 ## What's a device group?
 
