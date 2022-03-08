@@ -26,6 +26,8 @@ Advanced Message Encryption helps customers meet compliance obligations that req
 
 You can only revoke and set an expiration date for emails sent to external recipients.
 
+Note:"Advanced Message Encryption revocation and expiration functions will not function unless the "Premium Encryption in Office 365" option is enabled in their E5 license."
+
 ## Get started with Office 365 Advanced Message Encryption
 
 The following articles describe how you set up and use Advanced Message Encryption.
