@@ -24,6 +24,10 @@ ms.technology: mde
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
+## 101.60.93 (30.122012.16093.0)
+
+- This version contains a security update for [CVE-2022-23278](https://msrc-blog.microsoft.com/2022/03/08/guidance-for-cve-2022-23278-spoofing-in-microsoft-defender-for-endpoint/)
+
 ## 101.60.05 (30.122012.16005.0)
 
 - Added support for kernel version 2.6.32-754.43.1.el6.x86_64 for RHEL 6.10
