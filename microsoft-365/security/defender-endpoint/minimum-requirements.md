@@ -68,6 +68,11 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
 - Windows 11 Pro Education
 - Windows 10 Enterprise
 - [Windows 10 Enterprise LTSC 2016 (or later)](/windows/whats-new/ltsc/)
+- Windows 10 Enterprise IoT
+
+    >[!NOTE]
+    >Windows 10 IoT Enterprise enables OEMs/ODMs to distribute it as part of their product or solution.
+
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
