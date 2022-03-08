@@ -57,8 +57,6 @@ This section describes what happens when you use Microsoft Defender Antivirus al
 
 The following table summarizes what to expect:
 
-<br/><br/>
-
 |Windows version|Primary antivirus/antimalware solution|Microsoft Defender Antivirus state|
 |:---|:---|:---|
 |Windows 10 <br/> Windows 11|Microsoft Defender Antivirus|Active mode|
@@ -82,7 +80,7 @@ Whether Microsoft Defender Antivirus runs in active mode, passive mode, or is di
 - Whether Microsoft Defender Antivirus is the primary antivirus/antimalware solution on the endpoint
 - Whether the endpoint is onboarded to Defender for Endpoint
 
-The following table summarizes the state of Microsoft Defender Antivirus in several scenarios. <br/><br/>
+The following table summarizes the state of Microsoft Defender Antivirus in several scenarios. 
 
 | Windows version   | Antivirus/antimalware solution  | Onboarded to <br/> Defender for Endpoint? | Microsoft Defender Antivirus state     |
 |:------|:------|:-------|:-------|
@@ -144,8 +142,6 @@ The table in this section summarizes the features and capabilities that are acti
 > [!IMPORTANT]
 > The following table is designed to be informational only. **Do not turn off capabilities**, such as real-time protection, cloud-delivered protection, or limited periodic scanning if you are using Microsoft Defender Antivirus in passive mode, or if you are using [EDR in block mode](edr-in-block-mode.md), which works behind the scenes to detect and remediate malicious artifacts that were detected post-breach.
 
-<br/><br/>
-
  | Protection | Microsoft Defender Antivirus <br/>(*Active mode*) | Microsoft Defender Antivirus <br/>(*Passive mode*) | Microsoft Defender Antivirus <br/>(*Disabled or uninstalled*) | [EDR in block mode](edr-in-block-mode.md) | 
  |:---|:---|:---|:---|:---| 
  | [Real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) | Yes | See note <sup>[[4](#fn4)]</sup> | No | No | 
@@ -174,8 +170,6 @@ The table in this section summarizes the features and capabilities that are acti
 
 You can use one of several methods to confirm the state of Microsoft Defender Antivirus, as described in the following table:
 
-<br/><br/>
-
  | Method | Procedure | 
  |:---|:---| 
  | Windows Security app |  1. On a Windows device, open the Windows Security app.<br/>2. Select **Virus & threat protection**.<br/>3. Under **Who's protecting me?** select **Manage providers**.<br/>4. On the **Security providers** page, under **Antivirus**, you should see **Microsoft Defender Antivirus is turned on**. | 
@@ -187,8 +181,6 @@ You can use one of several methods to confirm the state of Microsoft Defender An
 ## More details about Microsoft Defender Antivirus states
 
 The table in this section describes various states you might see with Microsoft Defender Antivirus.
-
-<br/><br/>
 
  |  State  |  What happens  | 
  |:---|:---| 
