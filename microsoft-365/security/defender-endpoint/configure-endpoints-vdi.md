@@ -107,6 +107,9 @@ The following steps will guide you through onboarding VDI devices and will highl
 ## For downlevel SKUs (Windows Server 2008 R2/2012 R2/2016)
 
 > [!NOTE]
+> This method only applies to Windows Server 2008 R2/2012 R2/2016 running the previous Microsoft Monitoring Agent (MMA) based onboarding.
+
+> [!NOTE]
 > The following registry is relevant only when the aim is to achieve a 'Single entry for each device'.
 
 1. Set registry value to:

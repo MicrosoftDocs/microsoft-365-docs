@@ -340,6 +340,9 @@ Data collected by Defender for Endpoint is stored in the geo-location of the ten
 
 ## Windows Server Semi-Annual Enterprise Channel and Windows Server 2019 and Windows Server 2022
 
+> [!NOTE]
+> You need to first install new unified solution package for Windows Server 2008 R2/2012 R2/2016 before proceeding with the onboarding steps for Windows Server 2019 and Windows Server 2022.
+
 The onboarding package for Windows Server 2019 and Windows Server 2022 through Microsoft Endpoint Manager currently ships a script. For more information on how to deploy scripts in Configuration Manager, see [Packages and programs in Configuration Manager](/configmgr/apps/deploy-use/packages-and-programs).
 
 ### Download package
@@ -406,7 +409,7 @@ For other Windows server versions, you have two options to offboard Windows serv
 - Remove the Defender for Endpoint workspace configuration
 
 >[!NOTE]
->*These offboarding instructions for other Windows server versions also apply if you are running the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to migrate to the new unfiied solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
+> These instructions for other Windows server versions also apply if you are running the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to migrate to the new unfiied solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
 ## Related topics
 
