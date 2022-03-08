@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 9/20/2018
+ms.date: 03/08/2022
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -37,7 +37,7 @@ Your data and information is important and often confidential. Help protect this
 Before you send email with confidential or sensitive information, consider turning on:
 
 - **Encryption:** You can encrypt your email to protect the privacy of the information in the email. When you encrypt an email message, it's converted from readable plain text into scrambled cypher text. Only the recipient who has the private key that matches the public key used to encrypt the message can decipher the message for reading. Any recipient without the corresponding private key, however, sees indecipherable text. Your admin can define rules to automatically encrypt messages that meet certain criteria. For instance, your admin can create a rule that encrypts all messages sent outside your organization or all messages that mention specific words or phrases. Any encryption rules will be applied automatically.
-- **Sensitivity labels:** Your campaign can also set up sensitivity labels that you can apply to your files and email to keep them compliant with your campaign's information protection policies. When you set a label, the label persists with your email, even when it's sent - for example, by appearing as a header to your message.
+- **Sensitivity labels:** If your organization requires it, you can also set up sensitivity labels that you can apply to your files and email to keep them compliant with your organization's information protection policies. When you set a label, the label persists with your email, even when it's sent - for example, by appearing as a header to your message.
 
 ![Diagram of an email with callouts for labels and encryption.](../media/m365-campaign-email-encrypt.png)
 
@@ -64,3 +64,7 @@ For more information, see [Define mail flow rules to encrypt email messages](../
 ### Brand your encryption messages
 
 You can also apply your campaign branding to customize the look and the text in the email messages. For more information, see [Add your organization's brand to your encrypted messages](../compliance/email-encryption.md).
+
+## Next steps
+
+[Collaborate and share securely](m365bp-collaborate-share-securely.md)
