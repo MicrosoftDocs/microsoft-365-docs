@@ -18,12 +18,16 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.technology: mde
 ms.date: 01/18/2022
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365initiative-defender-endpoint
 ---
 
 # Protect security settings with tamper protection
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Tamper protection is available for devices that are running one of the following versions of Windows:

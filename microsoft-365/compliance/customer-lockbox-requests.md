@@ -22,7 +22,7 @@ description: "Learn about Customer Lockbox requests that allow you to control ho
 
 # Customer Lockbox in Office 365
 
-This article provides deployment and configuration guidance for Customer Lockbox. Customer Lockbox supports requests to access data in Exchange Online, SharePoint Online, and OneDrive for Business. To recommend support for other services, submit a request at [Office 365 UserVoice](https://office365.uservoice.com/).
+This article provides deployment and configuration guidance for Customer Lockbox. Customer Lockbox supports requests to access data in Exchange Online, SharePoint Online, and OneDrive for Business. To recommend support for other services, submit a request at [Office 365 UserVoice](https://feedbackportal.microsoft.com/feedback/).
 
 To see the options for licensing your users to benefit from Microsoft 365 compliance offerings, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
@@ -286,7 +286,7 @@ If a customer rejects a Customer Lockbox request, no access to customer content 
 
 #### How do I set up alerts whenever a request has been approved?
 
-There is no built-in option to alert administrators. However, administrators can set up alerts using [Microsoft cloud App security](/cloud-app-security/getting-started-with-cloud-app-security#to-create-policies).
+There is no built-in option to alert administrators. However, administrators can set up alerts using [Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security#to-create-policies).
 
 #### Does Customer Lockbox protect against data requests from law enforcement agencies or other third parties?
 
