@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: "Use Advanced eDiscovery and the Microsoft Graph explorer to search for and purge chat messages in Microsoft Teams."
+description: "Use Advanced eDiscovery and the Microsoft Graph Explorer to search for and purge chat messages in Microsoft Teams."
 ---
 
 # Search and purge chat messages in Teams
@@ -36,9 +36,41 @@ Here's the process to search for and purge Teams chat messages:
 
 ## Step 1: Create a case in Advanced eDiscovery
 
+The first step is to create a case in Advanced eDiscovery to manage the search and purge process. For information about creating a case, see [Use the new case format](advanced-ediscovery-new-case-format.md).
+
 ## Step 2: Create a draft collection
 
+After you create a case, the next step is to create a draft collection to search for the Teams chat messages that you want to purge. The purge process you perform is Step 5 will purge all items that are found in the draft collection.
+
+In Advanced eDiscovery, a *collection* is an eDiscovery search of the Teams content locations that contain the chat messages that you want to purge. Create the draft collection in the case that you created in the previous step. For more information, see [Create a draft collection](create-draft-collection.md).
+
+### Data sources for chat messages
+
+Use the following table to determine which data sources to search depending on the type of chat message you need to purge.
+
+| For this type of chat...|Search this data source...|
+|:---------|:---------|
+|Teams 1:1 chats     |The mailbox of chat participants|
+|Teams group chats     |The mailboxes of chat participants.|
+|Teams channels (standard and shared) |The mailbox associated with the parent team.|
+|Teams private channels |The mailbox of the private channel members.|
+|||
+
+### Tips for searching for chat messages
+
+To help ensure the most comprehensive collection of Teams chat conversations (including 1:1 and group chats, and chats from standard, shared, and private chats) use the **Type** condition and select the **Instant messages** option when you build the search query for the draft collection. We also recommend including a date range or several keywords to narrow the scope of the collection to items relevant to your search a purge investigation.
+
+Here's a screenshot of a sample query using the **Type** and **Date** options:
+
+   ![Query to collect Teams content.](..\media\TeamsConditionsQueryType.png)
+
+For more information, see [Build search queries for collections](building-search-queries.md).
+
 ## Step 3: Review and verify chat messages to purge
+
+As previously mentioned, the purge process in Step 5 will delete the items returned by the collection. So it's important that you review the draft collection results to ensure that the collection only returns the items that you want to purge. To review a sample of items in a draft collection, see the "Next steps after a draft collection is complete" section in [Create a draft collection](create-draft-collection.md#next-steps-after-a-draft-collection-is-complete).
+
+Additionally, you can use the collection statistics (specifically the Top Locations statistics) to generate a list of the data sources that contain items returned by the collection. Use this list in the next step to remove hold and retention policies from the data sources that contain search results. For more information, see [Collection statistics and reports](collection-statistics-reports.md).
 
 ## Step 4: Remove holds and retention policies from data sources
 
@@ -46,7 +78,7 @@ Here's the process to search for and purge Teams chat messages:
 
 ## Step 6: Verify chat messages are purged
 
-## Step 7: Reapply hold and retention policies to data sources
+## Step 7: Reapply holds and retention policies to data sources
 
 
 
