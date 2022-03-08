@@ -8,6 +8,7 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: 
+ms.custom: admindeeplinkSPO
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
@@ -41,7 +42,7 @@ A SharePoint admin can create a content center site like they would [create any 
 
 To create a new content center:
 
-1. On the Microsoft 365 admin center, go to the [SharePoint admin center **Active sites** page](https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true).
+1. On the Microsoft 365 admin center, go to the <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">SharePoint admin center > **Active sites**</a>.
 
 2. On the **Active Sites** page, click **Create**, and then select **Other options**.
 
@@ -54,7 +55,7 @@ To create a new content center:
 
 5. Select **Finished**.
  
-After you create a content center site, you will see it listed on the **Active sites** page in the SharePoint admin center. 
+After you create a content center site, you will see it listed on <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a> in the SharePoint admin center. 
 
 ### Give access to additional users
  
