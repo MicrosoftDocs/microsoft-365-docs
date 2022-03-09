@@ -63,6 +63,8 @@ Deploy Removable Storage Access Control on Windows 10 and Windows 11 devices tha
 
 - **4.18.2111 or later**: Add 'Enable or Disable Removable Storage Access Control', 'Default Enforcement', client machine policy update time through PowerShell, file information
 
+- **4.18.2201 or later**: Support a copy of file written to allowed storage through OMA-URI
+
 :::image type="content" source="images/powershell.png" alt-text="The PowerShell interface.":::
 
 > [!NOTE]
@@ -82,7 +84,7 @@ You can use the following properties to create a removable storage group:
 |Property Name|Description|Options|
 |---|---|---|
 |**GroupId**|GUID, a unique ID, represents the group and will be used in the policy.||
-|**DescriptorIdList**|List the device properties you want to use to cover in the group. For each device property, see [Device Properties](device-control-removable-storage-protection.md) for more detail. All properties are case sensitive. |**PrimaryId**: `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`<p>**BusId**: For example, USB, SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId**: InstancePathId is a string that uniquely identifies the device in the system, for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. The number at the end (for example &0) represents the available slot and may change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**PID**<p>**VID_PID**<p>0751_55E0: match this exact VID/PID pair<p>55E0: match any media with PID=55E0 <p>0751: match any media with VID=0751|
+|**DescriptorIdList**|List the device properties you want to use to cover in the group. For each device property, see [Device Properties](device-control-removable-storage-protection.md) for more detail. All properties are case sensitive. |**PrimaryId**: `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`<p>**BusId**: For example, USB, SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId**: InstancePathId is a string that uniquely identifies the device in the system, for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. The number at the end (for example &0) represents the available slot and may change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**PID**<p>**VID_PID**<p>`0751_55E0`: match this exact VID/PID pair<p>`_55E0`: match any media with PID=55E0 <p>`0751_`: match any media with VID=0751|
 |**MatchType**|When there are multiple device properties being used in the `DescriptorIDList`, MatchType defines the relationship.|**MatchAll**: Any attributes under the `DescriptorIdList` will be **And** relationship; for example, if administrator puts `DeviceID` and `InstancePathID`, for every connected USB, system will check to see whether the USB meets both values. <p> **MatchAny**: The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts `DeviceID` and `InstancePathID`, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceID** or **InstanceID** value. |
 
 ### Access Control Policy
@@ -161,7 +163,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
     If you want to restrict a specific user, then use SID property into the Entry. If there is no SID in the policy Entry, the Entry will be applied to everyone login instance for the machine.
     
-    If you want to monitor file information for Write access, use the right AccessMask with the right Option (8 or 16); here is the example of [Capture file information](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Audit%20File%20Information.xml).
+    If you want to monitor file information for Write access, use the right AccessMask with the right Option (16); here is the example of [Capture file information](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Audit%20File%20Information.xml).
 
     The following image illustrates the usage of SID property, and an example of [Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
 
@@ -178,6 +180,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 4. Default enforcement: allows you to set default access (Deny or Allow) to removable media if there is no policy. For example, you only have policy (either Deny or Allow) for RemovableMediaDevices, but do not have any policy for CdRomDevices or WpdDevices, and you set default Deny through this policy, Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked.
 
    - Once you deploy this setting, you will see **Default Allow** or **Default Deny**.
+   - Consider both Disk level and File system level AccessMask when configure this setting, for example, if you want to Default Deny but allow specific storage, you have to allow both Disk level and Fiel system level access, you have to set AccessMask to 63.
 
     :::image type="content" source="images/148609579-a7df650b-7792-4085-b552-500b28a35885.png" alt-text="Default Allow or Default Deny PowerShell code":::
 
@@ -243,7 +246,7 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
 
     - Data Type: String (XML file)
        
-    If you want to monitor file information for Write access, use the right AccessMask with the right Option (8 or 16); here is the example of [Capture file information](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20File%20Information.xml).
+    If you want to monitor file information for Write access, use the right AccessMask with the right Option (16); here is the example of [Capture file information](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20File%20Information.xml).
 
 3. Default enforcement: allows you to set default access (Deny or Allow) to removable media if there is no policy. For example, you only have policy (either Deny or Allow) for RemovableMediaDevices, but do not have any policy for CdRomDevices or WpdDevices, and you set default Deny through this policy, Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked.
 
@@ -255,6 +258,7 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
       `DefaultEnforcementDeny = 2`
 
     - Once you deploy this setting, you will see **Default Allow** or **Default Deny**
+    - Consider both Disk level and File system level AccessMask when configure this setting, for example, if you want to Default Deny but allow specific storage, you have to allow both Disk level and Fiel system level access, you have to set AccessMask to 63.
 
     :::image type="content" source="images/148609590-c67cfab8-8e2c-49f8-be2b-96444e9dfc2c.png" alt-text="Default Enforcement Allow PowerShell code":::
 
@@ -274,7 +278,7 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
 
 5. Set the location for a copy of the file: if you want to have a copy of the file when Write access happens, you have to set the location where the system can save the copy.
     
-    - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation`
+    - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation;**username**;**password**`
 
     - Data Type: String
     
