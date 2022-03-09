@@ -7,6 +7,7 @@ author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
+ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Adm_TOC
 description: "Set how long user's session will last in Microsoft 365 before they're timed out."
@@ -23,14 +24,14 @@ When a user reaches the idle timeout session you've set, they'll get a notificat
 > [!IMPORTANT]
 > Idle session timeout doesn't affect your Microsoft 365 desktop and mobile apps.
 
-1. Go to the [![Go to the Microsoft 365 admin center](../media/e00ba917-c3fb-4173-b344-43eb5c7eeb15.png)](https://admin.microsoft.com/AdminPortal/Home#/homepage).
+## Turn on Idle session timeout
 
-2. In the Microsoft 365 admin center, go to **Settings** \> **https://admin.microsoft.com/Adminportal/Home#/Settings/SecurityPrivacy**.
+1. In the Microsoft 365 admin center, select **Org Settings**, go to the Security & privacy tab and select **Idle session timeout**. <!--**https://admin.microsoft.com/Adminportal/Home#/Settings/SecurityPrivacy**. -->
 
 > [!NOTE]
 > If you aren't an Office 365 global admin, you won't see the **Security & privacy** tab.
 
-3. On the **Idle Session Timeout** select the toggle to turn it on. You can choose a default setting or choose your own custom time. It'll take a few minutes for before idle session is turned on in your organization.
+2. On the **Idle Session Timeout** select the toggle to turn it on. You can choose a default setting or choose your own custom time. It'll take a few minutes for before idle session is turned on in your organization.
 
 > [!NOTE]
 > If you've set up idle session timeout policies for Outlook web app and SharePoint Online, turning on idle session timeout in the admin center will override the Outlook web app and SharePoint settings.
@@ -71,7 +72,8 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
     - If they get single sign-on (SSO) into the web app from the device joined account or selected **Stay signed in** at the time of sign in. For more info on hiding this option for your organization, see Add branding to your organization's sign-in page - Azure AD.
     - If they're one a managed device (one that is compliant or joined to a domain) and using a supported browser like Microsoft Edge or Google Chrome (with the Windows Accounts extension). For this feature to not trigger on a managed device, an eligible Azure AD Premium P1 or P2 subscription, and a specific Conditional Access policy, is required. See below for further details.
 
-Idle session timeout isn't available for Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
+> [!IMPORTANT]
+> Idle session timeout isn't available for Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
 
 ## Idle session timeout on un-managed devices  
 
