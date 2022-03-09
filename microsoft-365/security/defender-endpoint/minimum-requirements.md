@@ -71,7 +71,7 @@ Access to Defender for Endpoint is done through a browser, supporting the follow
 - Windows 10 Enterprise IoT
 
     >[!NOTE]
-    >Windows 10 IoT Enterprise enables OEMs/ODMs to distribute it as part of their product or solution.
+    >While Windows 10 IoT Enterprise is a supported OS in Microsoft Defender for Endpoint and enables OEMs/ODMs to distribute it as part of their product or solution, customers should follow the OEM/ODM's guidance around host-based installed software and supportability.
 
 - Windows 10 Education
 - Windows 10 Pro
