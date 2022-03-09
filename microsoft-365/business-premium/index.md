@@ -33,9 +33,9 @@ Let us begin by saying that you have made a wise choice in adopting Microsoft 36
 
 You are the Chief Cybersecurity Officer and therefore are your organization’s best defense against hackers and cybercriminals, including random individuals, organized crime, or even highly sophisticated nation-states. The security of the organization rests upon you. Let Microsoft 365 Business Premium help secure your organization’s future.  
 
-Success will depend on how well you implement the recommendations in this library and accomplish the assigned objectives to thwart hackers, protect against ransomware, and ensure that your organization’s purpose and direction are not disrupted. Your mission is to set up your email and mobile device security, protect file sharing amongst all team members, and secure managed and unmanaged devices.
+Success will depend on how well you implement the recommendations in this library and accomplish the assigned missions to thwart hackers, protect against ransomware, and ensure that your organization’s purpose and direction are not disrupted. 
 
-You will complete the following missions:
+In the process of setting up impenetrable defenses, you will complete the following missions:
 
 [**Set up your environment**](m365bp-setup-overview.md). In your first mission, you set up and implement security across all accounts in the system.
 
