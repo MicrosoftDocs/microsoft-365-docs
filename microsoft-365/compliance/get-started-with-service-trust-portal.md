@@ -138,6 +138,7 @@ Additionally, the notifications feature lets you configure your My Library so th
 
 Also note that we identify any documents in your My Library that have been updated within the last 30 days, regardless of whether or not you turn on notifications. A brief description of the update is also displayed in a tool tip.
 
+<!--
 ## Starter packs
 
 Starter packs are a Microsoft-curated set of documentation about Microsoft Cloud services for specific industries. Currently, the Service Trust Portal offers the following three starter packs for financial services organizations. These starter packs help organizations evaluate and assess security, compliance, and privacy in the Microsoft Cloud and provide guidance to help implement Microsoft Cloud services in the highly regulated financial services industry.
@@ -155,6 +156,7 @@ To access these starter packs, go to **Service Trust Portal > Industries & Regio
 The Service Trust Portal enables you to view the page content in different languages. To change the page language, simply click on the globe icon in the lower left corner of the page and select the language of your choice.
 
 ![Service Trust Portal - Localized content options.](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+-->
 
 ## Give feedback
 
