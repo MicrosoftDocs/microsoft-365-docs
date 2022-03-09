@@ -29,23 +29,17 @@ ms.technology: mde
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## Before you begin
+## Prerequisites
 
-1. Create an [Event hub](/azure/event-hubs/) in your tenant.
+Prior to configuring Microsoft 365 Defender to stream data to Event Hubs, ensure the following prerequisites are fulfilled:
 
-2. Log in to your [Azure tenant](https://ms.portal.azure.com/), go to **Subscriptions > Your subscription > Resource Providers > Register to Microsoft.Insights**.
+> [!NOTE]
+> Event Hub and an Azure Storage account are the causes for an integration between the Microsoft 365 Defender Streaming API and the Advanced Hunting API through Event Hubs. This article describes the role of only an Event Hub in the data-streaming process.
 
-3. Create an Event Hub Namespace, go to **Event Hub > Add** and select the pricing tier, throughput units and Auto-Inflate appropriate for expected load. For more information, see [Event Hubs pricing](https://azure.microsoft.com/pricing/details/event-hubs/).
+1. Create an Event Hub (for information, see [Set up Event Hub](configure-event-hub.md#set-up-event-hub)).
 
-### Add contributor permissions
+2. Creating an Event Hub Namespace (for information, see [Set up Event Hub namespace](configure-event-hub.md#set-up-event-hub-namespace)).
 
-Once the Event Hub namespace is created you will need to:
-
-1. Define the user who will be logging into Microsoft 365 Defender as Contributor.
-
-2. If you are connecting to an application, add the App Registration Service Principal as Reader, Azure Event Hub Data Receiver (this can also be done at Resource Group or Subscription level).
-
-    Go to **Event hubs namespace > Access control (IAM) > Add** and verify under **Role assignments**.
 
 ## Enable raw data streaming
 
