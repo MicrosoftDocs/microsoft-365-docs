@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: "Use Advanced eDiscovery and the Microsoft Graph Explorer to search for and purge chat messages in Microsoft Teams."
+description: "Use Advanced eDiscovery and the Microsoft Graph Explorer to search for and purge chat messages in Microsoft Teams, and respond to data spillage incidents in Teams."
 ---
 
 # Search and purge chat messages in Teams
 
-You can use Advanced eDiscovery and the Microsoft Graph Explorer to search for and delete chat messages in Microsoft teams. This can help you find and remove sensitive information or inappropriate content.
+You can use Advanced eDiscovery and the Microsoft Graph Explorer to search for and delete chat messages in Microsoft teams. This can help you find and remove sensitive information or inappropriate content. This search and purge workflow will also help you respond to a data spillage incident, when content containing confidential or malicious information is released through Teams chat messages.​
 
 ## Before you search and purge chat messages
 
@@ -50,11 +50,14 @@ Use the following table to determine which data sources to search depending on t
 
 | For this type of chat...|Search this data source...|
 |:---------|:---------|
-|Teams 1:1 chats     |The mailbox of chat participants|
+|Teams 1:1 chats     |The mailbox of chat participants.|
 |Teams group chats     |The mailboxes of chat participants.|
 |Teams channels (standard and shared) |The mailbox associated with the parent team.|
 |Teams private channels |The mailbox of the private channel members.|
 |||
+
+> [!NOTE]
+> In Step 4, you also have to identify and remove any holds and retention policies assigned to the mailbox that contains the type of chat messages that you want to delete.
 
 ### Tips for searching for chat messages
 
@@ -74,7 +77,41 @@ Additionally, you can use the collection statistics (specifically the Top Locati
 
 ## Step 4: Remove holds and retention policies from data sources
 
+Before you can purge chat messages from a mailbox, you have to remove any hold or retention policy that is assigned to a target mailbox. If not, then the chat you're trying to delete will be retained. 
+
+Use the list of mailboxes that contain the chat messages that you want to delete and determine if there is a hold or retention policy assigned to those mailboxes, and then remove the hold or retention policy. Be sure to identify the hold or retention policy that you remove so that you can reassign to the mailboxes in Step 7. 
+
+For instructions about how to identify and remove holds and retention policies, see "Step 3: Remove all holds from the mailbox" in [Delete items in the Recoverable Items folder of cloud-based mailboxes on hold](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox).. 
+
 ## Step 5: Purge chat messages from Teams
+
+Now you're ready to actually purge chat messages from Teams. You'll use the Microsoft Graph Explorer to perform the following three tasks:
+
+1. Get the Id of the Advanced eDiscovery case that you created in Step 1. This is the case that contains the collection created in Step 2.
+
+2. Get the Id of the collection that you created in Step 2 and verified the search results in Step 3. The search query in this collection returns the chat messages that will be purged.
+
+3. Purge the chat messages.
+
+> [!IMPORTANT]
+> To perform these three tasks in Microsoft Graph Explorer, you'll have to consent to the eDiscovery.Read.All and eDiscovery.ReadWrite.All permissions.
+
+### Get the case Id
+
+1. Go to <https://developer.microsoft.com/graph/graph-explorer> and sign in to the Microsoft Graph Explorer with an account that's assigned the **Search And Purge** role in the Microsoft 365 compliance center. 
+
+2. 
+
+
+
+
+### Get the collection Id
+
+
+### Purge the chat messages
+
+
+
 
 ## Step 6: Verify chat messages are purged
 
