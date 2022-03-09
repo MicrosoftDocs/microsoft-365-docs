@@ -1,5 +1,5 @@
 ---
-title: "Create a custom sensitive information types"
+title: "Create custom sensitive information types"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -200,4 +200,6 @@ For example, if you want the rule to trigger a match when at least 500 unique in
 > While creating a regex using a double byte hyphen or a double byte period, make sure to escape both the characters like one would escape a hyphen or period in a regex. Here is a sample regex for reference:
 >    - (?<!\d)([４][０-９]{3}[\-?\－\t]*[０-９]{4})
 >
+> Double-byte special characters should not be used in the keyword.
+> 
 > We recommend using a string match instead of a word match in a keyword list.
