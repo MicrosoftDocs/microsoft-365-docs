@@ -75,6 +75,9 @@ Provides a wealth of security implementation and design information with the goa
 - **FedRAMP** - US government program providing a standard approach to security, authorization, and monitoring.
 - **Financial Services** - The Microsoft Cloud for FInancial Services provides capabilities to manage data.
 - **GDPR** - How Microsoft helps support our customers on their GDPR compliance journeys.
+- **GRC Assessment** - Provides audit and assurance professionals with a common set of assessment procedures.
+- **HIPAA** - US Privacy requirements for personal health information held by covered entities.
+- **IRS 1075** - US government program providing guidance to protect the confidenitality of Federal Tax Information (FTI).
 
 ### Industries & Regions
 
