@@ -81,31 +81,6 @@ You can choose to filter the list of alerts based on their Status.
 
 We've redefined the alert categories to align to the [enterprise attack tactics](https://attack.mitre.org/tactics/enterprise/) in the [MITRE ATT&CK matrix](https://attack.mitre.org/). New category names apply to all new alerts. Existing alerts will keep the previous category names.
 
-The table below lists the current categories and how they generally map to previous categories.
-
-You can choose to filter the alerts based on the following Categories.
-
-|New category|API category name|Detected threat activity or component|
-|---|---|---|
-|Collection|Collection|Locating and collecting data for exfiltration.|
-|Command and control|CommandAndControl|Connecting to attacker-controlled network infrastructure to relay data or receive commands.|
-|Credential access|CredentialAccess|Obtaining valid credentials to extend control over devices and other resources in the network.|
-|Defense evasion|DefenseEvasion|Avoiding security controls by, for example, turning off security apps, deleting implants, and running rootkits.|
-|Discovery|Discovery|Gathering information about important devices and resources, such as administrator computers, domain controllers, and file servers.|
-|Execution|Execution|Launching attacker tools and malicious code, including RATs and backdoors.|
-|Exfiltration|Exfiltration|Extracting data from the network to an external, attacker-controlled location.|
-|Impact| |Trying to manipulate, interrupt, or destroy your systems and data|
-|Information governance| | |
-|Initial access|InitialAccess|Gaining initial entry to the target network, usually involving password-guessing, exploits, or phishing emails.|
-|Lateral movement|LateralMovement|Moving between devices in the target network to reach critical resources or gain network persistence.|
-|Malware|Malware|Backdoors, trojans, and other types of malicious code.|
-|Persistence|Persistence|Creating autostart extensibility points (ASEPs) to remain active and survive system restarts.|
-|Privilege escalation|PrivilegeEscalation|Obtaining higher permission levels for code by running it in the context of a privileged process or account.|
-|Ransomware|Ransomware|Malware that encrypts files and extorts payment to restore access.|
-|Suspicious activity|SuspiciousActivity|Atypical activity that could be malware activity or part of an attack.|
-|Threat management| | |
-|Unwanted software|UnwantedSoftware|Low-reputation apps and apps that impact productivity and the user experience; detected as potentially unwanted applications (PUAs).|
-
 ### Service sources
 
 Microsoft Threat Experts preview participants can now filter and see detections from the new threat experts-managed hunting service.
