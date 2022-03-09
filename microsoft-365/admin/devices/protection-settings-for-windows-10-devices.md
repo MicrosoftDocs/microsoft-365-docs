@@ -1,13 +1,11 @@
 ---
 title: "Edit or set application protection settings for Windows 10 devices"
-f1.keywords:
-- NOCSH
 ms.author: sharik
 author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - 'Win10AppPolicy'
 - 'O365E_Win10AppPolicy'
 - 'BCS365_Win10AppPolicy'
