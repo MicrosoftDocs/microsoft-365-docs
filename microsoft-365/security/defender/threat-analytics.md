@@ -46,7 +46,7 @@ Watch this short video to learn more about how threat analytics can help you tra
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
 
-You can access threat analytics either from the upper left-hand side of Microsoft 365 security portal’s navigation bar, or from a dedicated dashboard card, which shows the top threats in your org. Getting visibility on active or ongoing campaigns and knowing what to do through threat analytics can help equip your security operations team to make informed decisions.
+You can access threat analytics either from the upper left-hand side of Microsoft 365 security portal’s navigation bar, or from a dedicated dashboard card, which shows the top threats to your org. Getting visibility on active or ongoing campaigns and knowing what to do through threat analytics can help equip your security operations team to make informed decisions.
 
 ![Image of the threat analytics dashboard.](../../media/threat-analytics/ta_inlandingpage_mtp.png)
 
@@ -68,7 +68,7 @@ The threat analytics dashboard ([security.microsoft.com/threatanalytics3](https:
 
 - **Latest threats**—lists the most recently published or updated threat reports, along with the number of active and resolved alerts.
 - **High-impact threats**—lists the threats that have the highest impact to your organization. This section lists threats with the highest number of active and resolved alerts first.
-- **Highest exposure**—lists threats which have the highest possibility of affecting your organization, through open vulnerabilities on your devices.
+- **Highest exposure**—lists threats with the highest exposure levels first. the exposure level of a threat is calculated using two pieces of information: how severe the vulnerabilities associated with the threat are, and how many devices in your organization could be exploited by those vulnerabilities.
 
 Select a threat from the dashboard to view the report for that threat.
 
@@ -85,7 +85,7 @@ Each threat analytics report provides information in several sections:
 - [**Related incidents**](#related-incidents-view-and-manage-related-incidents)
 - [**Impacted assets**](#impacted-assets-get-list-of-impacted-devices-and-mailboxes)
 - [**Prevented email attempts**](#prevented-email-attempts-view-blocked-or-junked-threat-emails)
-- [**Mitigations**](#mitigations-review-list-of-mitigations-and-the-status-of-your-devices)
+- [**Exposure & mitigations**](#mitigations-review-list-of-mitigations-and-the-status-of-your-devices)
 
 ### Overview: Quickly understand the threat, assess its impact, and review defenses
 
@@ -177,9 +177,9 @@ The **Prevented email attempts** tab lists all the emails that have either been 
 
 _Prevented email attempts section of a threat analytics report_
 
-### Mitigations: Review list of mitigations and the status of your devices
+### Exposure & mitigations: Review list of mitigations and the status of your devices
 
-In the **Mitigations** section, review the list of specific actionable recommendations that can help you increase your organizational resilience against the threat. The list of tracked mitigations includes:
+In the **Exposure & mitigations** section, review the list of specific actionable recommendations that can help you increase your organizational resilience against the threat. The list of tracked mitigations includes:
 
 - **Security updates**—deployment of supported software security updates for vulnerabilities found on onboarded devices
 - **Supported security configurations**
@@ -193,7 +193,7 @@ Mitigation information in this section incorporates data from [threat and vulner
 
 ![Image of the mitigations section of a threat analytics report showing vulnerability details.](../../media/threat-analytics/ta_mitigations_mtp2.png)
 
-_Mitigations section of a threat analytics report_
+_Exposure & mitigations section of a threat analytics report_
 
 ## Additional report details and limitations
 
