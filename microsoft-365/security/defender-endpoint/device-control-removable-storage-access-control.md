@@ -30,8 +30,6 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 
 - auditing, allowing or preventing the read, write or execute access to removable storage with or without exclusion
 
-<br/><br/>
-
 |Privilege|Permission|
 |---|---|
 |Access|Read, Write, Execute|
@@ -40,8 +38,6 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 |GPO Support|Yes|
 |User-based Support|Yes|
 |Machine-based Support|Yes|
-
-<br/><br/>
 
 |Capability|Description|Deploy through Intune|Deploy through Group Policy|
 |---|---|---|---|
@@ -79,8 +75,6 @@ You can use the following properties to create a removable storage group:
 
 ### Removable Storage Group
 
-<br/><br/>
-
 |Property Name|Description|Options|
 |---|---|---|
 |**GroupId**|GUID, a unique ID, represents the group and will be used in the policy.||
@@ -88,8 +82,6 @@ You can use the following properties to create a removable storage group:
 |**MatchType**|When there are multiple device properties being used in the `DescriptorIDList`, MatchType defines the relationship.|**MatchAll**: Any attributes under the `DescriptorIdList` will be **And** relationship; for example, if administrator puts `DeviceID` and `InstancePathID`, for every connected USB, system will check to see whether the USB meets both values. <p> **MatchAny**: The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts `DeviceID` and `InstancePathID`, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceID** or **InstanceID** value. |
 
 ### Access Control Policy
-
-<br/><br/>
 
 | Property Name | Description | Options |
 |---|---|---|
@@ -188,13 +180,13 @@ Before you get started with Removable Storage Access Control, you must confirm y
 
     :::image type="content" source="images/148608318-5cda043d-b996-4146-9642-14fccabcb017.png" alt-text="Device Control settings":::
 
-   - Once you deploy this setting, you will see ‘Enabled’ or ‘Disabled’ - Disabled means this machine does not have Removable Storage Access Control policy running.
+   - Once you deploy this setting, you will see **Enabled** or **Disabled**. Disabled means this machine does not have Removable Storage Access Control policy running.
 
     :::image type="content" source="images/148609685-4c05f002-5cbe-4aab-9245-83e730c5449e.png" alt-text="Enabled or Disabled device control in PowerShell code":::
 
 6. Set location for a copy of the file: if you want to have a copy of the file when Write access happens, you have to set the location where system can save the copy.
     
-    You have to deploy this together with the right AccessMask and Option - see step 2 above.
+    Deploy this together with the right AccessMask and Option - see step 2 above.
 
     :::image type="content" source="../../media/define-device-control-policy-rules.png" alt-text="Group Policy - Set locaiton for file evidence":::
 
