@@ -50,7 +50,7 @@ In the process of setting up impenetrable defenses, you will complete the follow
 [**Protect devices with Defender for Business**](m365bp-protect-devices.md). This mission is all about augmenting your security with Defender.
 
 >[NOTE]
-There will be times when completing your objectives will take you away from the mission at hand. After completing a side quest, remember to always return here to continue the assigned mission. The fate of the org depends on you!
+>There will be times when completing your objectives will take you away from the mission at hand. After completing a side quest, remember to always return here to continue the assigned mission. The fate of the org depends on you!
 
 :::image type="content" source="media/m365-whatisit-securityfocus2.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
 <!---
