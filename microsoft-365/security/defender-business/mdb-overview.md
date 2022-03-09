@@ -31,7 +31,7 @@ Microsoft Defender for Business is a new endpoint security solution that was des
 
 Watch the following video to learn more about Defender for Business:
 
-> [!VIDEO https://www.youtube/embed/umhUNzMqZto]
+> [!VIDEO https://www.youtube.com/embed/umhUNzMqZto]
 
 This article describes what's included in Defender for Business, with links to learn more about these features and capabilities.
 
