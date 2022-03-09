@@ -426,7 +426,7 @@ There are three procedures.
 
 #### Test Auto-quarantine on the Windows 10 device
 
-1. Login to the Windows 10 computer with the user account you specified in [Configure a policy to block OneDrive synchronization of files with the sensitivity label Highly Confidential](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential) step 5.
+1. Log in to the Windows 10 computer with the user account you specified in [Configure a policy to block OneDrive synchronization of files with the sensitivity label Highly Confidential](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential) step 5.
 
 2. Create a folder whose contents will not be synchronized to OneDrive. For example:
 
