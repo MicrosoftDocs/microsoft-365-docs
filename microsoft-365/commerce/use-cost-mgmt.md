@@ -14,12 +14,10 @@ ms.collection:
 - Adm_TOC
 ms.custom: 
 - commerce_subscriptions
-- AdminSurgePortfolio
 - AdminTemplateSet
-- admindeeplinkMAC
 search.appverid: MET150 
 description: "Learn how to use the cost management feature in the Microsoft 365 admin center to view, analyze, and manage costs for your organization."
-ms.date: 03/08/2022
+ms.date: 03/09/2022
 ---
 
 # Use Cost management in the Microsoft 365 admin center
@@ -39,7 +37,7 @@ In general, cost management is a methodology used to plan and control an organiz
 - Set spending thresholds
 - Identify opportunities for workload changes that can optimize your spending (internal processes)
 
-## Understand Microsoft 365 billing
+## Understand your costs
 
 You can use Microsoft 365 billing features to review your invoiced costs and manage access to billing information. In larger organizations, procurement and finance teams usually conduct billing tasks.
 
