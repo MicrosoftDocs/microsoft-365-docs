@@ -149,11 +149,11 @@ If you select **Don't restrict file activity**, DLP will allow all the apps in t
 
 #### How DLP applies restrictions
 
-Interactions between **File activities for apps in restricted app groups (preview)**, **File activities for all apps** and the **Restricted apps app activities** list are scoped to the same rule.
+Interactions between **File activities for apps in restricted app groups (preview)**, **File activities for all apps** and the **Restricted app activities** list are scoped to the same rule.
 
-Configurations defined in **File activities for apps in restricted app groups (preview)** override the configurations in the **Restricted apps app activities** list and **File activities for all apps** in the same rule.
+Configurations defined in **File activities for apps in restricted app groups (preview)** override the configurations in the **Restricted app activities** list and **File activities for all apps** in the same rule.
 
-Configurations defined in the **Restricted apps app activities** list override the configuration in **File activities for all apps** in the same rule.
+Configurations defined in the **Restricted app activities** list override the configuration in **File activities for all apps** in the same rule.
 
 If an app is not in **File activities for apps in restricted app groups (preview)** or the **Restricted apps app activities** list, any restrictions defined in the **File activities for all apps** are applied in the same rule.  
 
