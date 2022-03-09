@@ -59,8 +59,8 @@ If you have a file that you suspect might be malware or is being incorrectly det
 
 1. Open the Microsoft 365 Defender at <https://security.microsoft.com/>, click **Actions & submissions**, click **Submissions**, go to **Files** tab, and then select **Add new submission**. 
 
-> [!div class="mx-imgBorder"]
-> ![Add new submission](../../media/unified-admin-submission-new.png) (Image not final)
+    > [!div class="mx-imgBorder"]
+    > ![Add new submission](../../media/unified-admin-submission-new.png) 
 
 2. Use the **Submit items to Microsoft for review** flyout that appears to submit the **File** or **File hash**.  
 
@@ -72,12 +72,12 @@ If you have a file that you suspect might be malware or is being incorrectly det
   
 6. Next, **Choose the priority**. Note that for **File hash** submissions, **Low - bulk file or file hash submission** is the only choice, and is automatically selected.
 
-> [!div class="mx-imgBorder"]
-> ![Submit items to Microsoft for review](../../media/unified-admin-submission-file.png) (Image not final)
+    > [!div class="mx-imgBorder"]
+    > ![Submit items to Microsoft for review](../../media/unified-admin-submission-file.png) 
 
 8. Click **Submit**. 
  
- If you want to view the details of your submission, select your submission from the **Submissions name** list to open the **Result details** flyout.
+    If you want to view the details of your submission, select your submission from the **Submissions name** list to open the **Result details** flyout.
 
 ## Submit items to Microsoft from the Alerts page
 
@@ -89,17 +89,17 @@ You can also submit a file or file hash directly from the list of alerts on the 
 
 3. Click the ellipses next to **Manage alert** to see additional options. Select **Submit items to Microsoft for review**.
 
-> [!div class="mx-imgBorder"]
-> ![Submit items from alerts queue](../../media/unified-admin-submission-alerts-queue.png) (Image not final)
+    > [!div class="mx-imgBorder"]
+    > ![Submit items from alerts queue](../../media/unified-admin-submission-alerts-queue.png) 
 
 4. In the next flyout that opens, select the submission type. 
 
-> [!div class="mx-imgBorder"]
-> ![Complete the required fields](../../media/unified-admin-submission-alert-queue-flyout.png) (Image not final)
+    > [!div class="mx-imgBorder"]
+    > ![Complete the required fields](../../media/unified-admin-submission-alert-queue-flyout.png) 
 
-  If you select **File** as the submission type, upload the file, categorize your submission, and choose the priority.
+    If you select **File** as the submission type, upload the file, categorize your submission, and choose the priority.
   
-  If you select **File Hash** as the submission type, choose the file hashes that are available from the drop-down. You can select multiple file hashes. 
+    If you select **File Hash** as the submission type, choose the file hashes that are available from the drop-down. You can select multiple file hashes. 
  
 5. Click **Submit**. 
 
