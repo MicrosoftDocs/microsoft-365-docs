@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Microsoft Teams device usage"
+title: "Microsoft 365 admin center Teams app usage reports"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
