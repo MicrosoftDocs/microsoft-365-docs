@@ -50,7 +50,7 @@ Integrating Microsoft OneDrive LTI with Blackboard is a two-step process. The fi
 
 ## Configure the Microsoft LTI Tool to work with Blackboard
 
-1. Sign into the [Microsoft OneDrive LTI Registration Portal](https://onedrivelti.microsoft.com/admin)
+1. Sign into the [Microsoft OneDrive LTI Registration Portal](https://onedrivelti.microsoft.com/admin).
 2. Select the **Admin Consent** button and accept the permissions.
 
 > [!CAUTION]
