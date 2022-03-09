@@ -2,8 +2,8 @@
 title: Test Base FAQ
 description: Review frequently asked questions
 search.appverid: MET150
-author: mansipatel-usl
-ms.author: mapatel
+author: Tinacyt
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
@@ -18,13 +18,13 @@ f1.keywords: NOCSH
 
 # Test Base FAQ
 
-**Q: How do we submit our packages to Test Base team?**
+**Q: How do we submit our packages to the Test Base team?**
 
 **A:** Submit your packages directly to the Test Base environment using our self-serve portal.
 
 To submit your application package, navigate to the [Azure Portal](https://www.aka.ms/testbaseportal "Test Base Homepage") and upload a zipped folder containing your application's binaries, dependencies, and test scripts via the self-serve Test Base portal dashboard. 
 
-Please see the onboarding user guide for more information or contact our team at <testbasepreview@microsoft.com> for assistance and more information.
+See the onboarding user guide for more information or contact our team at <testbasepreview@microsoft.com> for assistance and more information.
 
 **Q: What are Out-of-box (OOB) tests?**
 
@@ -37,18 +37,18 @@ The Out-of-box (OOB) tests provide you with standardized telemetry on your appli
 **Q: Can we submit tests outside of the Out-of-box tests (install, launch, close, uninstall test scripts)?**
 
 **A:** Yes, customers can also upload application packages for **functional tests** via the self-serve portal dashboard.
-**Functional tests** are tests that enable customers execute their scripts to run custom functionality on their application.
+**Functional tests** are tests that enable customers to execute their scripts to run custom functionality on their application.
 
 
 ## Testing
 
 **Q: Do you support functional tests?**
 
-**A:** Yes, Test Base supports functional tests. Functional tests are tests that enable our customers execute their scripts to run custom functionality on their application. 
+**A:** Yes, Test Base supports functional tests. Functional tests are tests that enable our customers to execute their scripts to run custom functionality on their application. 
 
-To submit your application package for functional testing, simply upload the zipped folder containing your application's binaries, dependencies, and test scripts via our self-serve portal dashboard. 
+To submit your application package for functional testing, upload the zipped folder containing your application's binaries, dependencies, and test scripts via our self-serve portal dashboard. 
 
-Please see the onboarding user guide for more information or contact our team at <testbasepreview@microsoft.com> for assistance and more information.
+See the onboarding user guide for more information or contact our team at <testbasepreview@microsoft.com> for assistance and more information.
 
 **Q: How does Test Base handle our test data?**
 
@@ -68,7 +68,7 @@ You will also need to provide (upload) the dependent binaries of the required fr
 
 **A:** For each test that we run against the pre-release builds, we will provide results within 48 hours on your [Azure Portal](https://www.aka.ms/testbaseportal "Test Base Homepage") dashboard.
 
-**Q: Can you reboot after install?**
+**Q: Can you reboot after installation?**
 
 **A:** Yes, our process supports rebooting after installation. Be sure to select this option from the “Optional settings” drop list when setting your **Tasks** on the onboarding portal.
 
@@ -86,7 +86,7 @@ While for functional tests, you can specify whether a reboot is required for eac
 
 **Q: What is the difference between Security Update tests and Feature Update tests?**
 
-**A:** For Security update tests, we test against the **<ins>monthly pre-release security updates</ins>** on Windows which are focused on keeping our users always secure and protected. For the Feature update tests, we test against the **<ins>bi-annual pre-release feature updates</ins>** which introduces new features and capabilities on Windows.
+**A:** For Security update tests, we test against the **<ins>monthly pre-release security updates</ins>** on Windows, which is focused on keeping our users always secure and protected. For the Feature update tests, we test against the **<ins>bi-annual pre-release feature updates</ins>** which introduce new features and capabilities on Windows.
 
 ## Debugging options
 
@@ -128,7 +128,7 @@ In addition to pre-release security updates testing, we support pre-release feat
 
 **Q: Is there a cost associated with the service?**
 
-**A:** The Test Base service will be free to users until General Availability (GA). At that time, we will announce a cost structure that will be in effect for all customers. 
+**A:** Effective 1 March 2022, you’ll be provided with 100 free hours (valued at $800) expiring in 6 months under your subscription for your validation needs. After the free hours get consumed (or expired before used), you’ll automatically be metered at $8 per hour against your usage.   
 
 **Q: How can I provide feedback about Test Base?**
 
