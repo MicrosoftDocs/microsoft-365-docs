@@ -1,7 +1,7 @@
 ---
-title: Stream Microsoft 365 Defender events to Azure Event Hub
-description: Learn how to configure Microsoft 365 Defender to stream Advanced Hunting events to your Event Hub.
-keywords: raw data export, streaming API, API, Azure Event Hub, Azure storage, storage account, Advanced Hunting, raw data sharing
+title: Stream Microsoft 365 Defender events to Azure Event Hubs
+description: Learn how to configure Microsoft 365 Defender to stream Advanced Hunting events to your Event Hubs.
+keywords: raw data export, streaming API, API, Azure Event Hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -34,16 +34,16 @@ ms.technology: mde
 Prior to configuring Microsoft 365 Defender to stream data to Event Hubs, ensure the following prerequisites are fulfilled:
 
 > [!NOTE]
-> Event Hub and an Azure Storage account are the causes for an integration between the Microsoft 365 Defender Streaming API and the Advanced Hunting API through Event Hubs. This article describes the role of only an Event Hub in the data-streaming process.
+> Event Hubs and an Azure Storage account are the causes for an integration between the Microsoft 365 Defender Streaming API and the Advanced Hunting API through Event Hubs. This article describes the role of only Event Hubs in the data-streaming process.
 
-1. Create an Event Hub (for information, see [Set up Event Hub](configure-event-hub.md#set-up-event-hub)).
+1. Create an Event Hubs (for information, see [Set up Event Hubs](configure-event-hub.md#set-up-event-hub)).
 
-2. Creating an Event Hub Namespace (for information, see [Set up Event Hub namespace](configure-event-hub.md#set-up-event-hub-namespace)).
+2. Creating an Event Hubs Namespace (for information, see [Set up Event Hubs namespace](configure-event-hub.md#set-up-event-hub-namespace)).
 
 
 ## Enable raw data streaming
 
-1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> as a ***Global Administrator*** or ***Security Administrator***.
+1. Log on to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> as a ***Global Administrator*** or ***Security Administrator***.
 
 2. Go to the [Streaming API settings page](https://security.microsoft.com/settings/mtp_settings/raw_data_export).
 
@@ -53,13 +53,13 @@ Prior to configuring Microsoft 365 Defender to stream data to Event Hubs, ensure
 
 5. Choose **Forward events to Azure Event Hub**.
 
-6. You can select if you want to export the event data to a single Event Hub, or to export each event table to a different event hub in your Event Hub namespace.
+6. You can select if you want to export the event data to a single Event Hub, or to export each event table to a different Event Hubs in your Event Hubs namespace.
 
 7. To export the event data to a single Event Hub, enter your **Event Hub name** and your **Event Hub resource ID**.
 
-   To get your **Event Hub resource ID**, go to your Azure Event Hub namespace page on [Azure](https://ms.portal.azure.com/) > **Properties** tab > copy the text under **Resource ID**:
+   To get your **Event Hub resource ID**, go to your Azure Event Hubs namespace page on [Azure](https://ms.portal.azure.com/) > **Properties** tab > copy the text under **Resource ID**:
 
-   ![Image of Event Hub resource Id1.](../defender-endpoint/images/event-hub-resource-id.png)
+   ![Image of Event Hubs resource Id1.](../defender-endpoint/images/event-hub-resource-id.png)
 
 8. Go to the [Supported Microsoft 365 Defender event types in event streaming API](supported-event-types.md) to review the support status of event types in the Microsoft 365 Streaming API.
 
@@ -81,9 +81,9 @@ Prior to configuring Microsoft 365 Defender to stream data to Event Hubs, ensure
 }
 ```
 
-- Each Event Hub message in Azure Event Hub contains list of records.
+- Each Event Hubs message in Azure Event Hubs contains list of records.
 
-- Each record contains the event name, the time Microsoft 365 Defender received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "**properties**".
+- Each record contains the event name, the time Microsoft 365 Defender received the event, the tenant it belongs (you'll only get events from your tenant), and the event in JSON format in a property called "**properties**".
 
 - For more information about the schema of Microsoft 365 Defender events, see [Advanced Hunting overview](advanced-hunting-overview.md).
 
@@ -91,9 +91,9 @@ Prior to configuring Microsoft 365 Defender to stream data to Event Hubs, ensure
 
 ## Data types mapping
 
-To get the data types for event properties do the following:
+To get the data types for event properties, do the following steps:
 
-1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).
+1. Log on to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> and go to [Advanced Hunting page](https://security.microsoft.com/hunting-package).
 
 2. Run the following query to get the data types mapping for each event:
 
@@ -103,9 +103,9 @@ To get the data types for event properties do the following:
    | project ColumnName, ColumnType
    ```
 
-- Here is an example for Device Info event:
+- Here's an example for Device Info event:
 
-  ![Image of Event Hub resource Id2.](../defender-endpoint/images/machine-info-datatype-example.png)
+  ![Image of Event Hubs resource Id2.](../defender-endpoint/images/machine-info-datatype-example.png)
 
 ## Related topics
 
@@ -113,5 +113,5 @@ To get the data types for event properties do the following:
 - [Microsoft 365 Defender streaming API](streaming-api.md)
 - [Supported Microsoft 365 Defender event types in event streaming API](supported-event-types.md)
 - [Stream Microsoft 365 Defender events to your Azure storage account](streaming-api-storage.md)
-- [Azure Event Hub documentation](/azure/event-hubs/)
-- [Troubleshoot connectivity issues - Azure Event Hub](/azure/event-hubs/troubleshooting-guide)
+- [Azure Event Hubs documentation](/azure/event-hubs/)
+- [Troubleshoot connectivity issues - Azure Event Hubs](/azure/event-hubs/troubleshooting-guide)
