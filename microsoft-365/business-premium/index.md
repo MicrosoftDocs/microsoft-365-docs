@@ -43,11 +43,14 @@ In the process of setting up impenetrable defenses, you will complete the follow
 
 [**Set up devices**](m365bp-devices-overview.md). In this mission, you set up all types of devices so they are safely part of the ecosystem.
 
-[**Protect email**](m365bp-email-overview.md). Here you learn how to protect the email systems from attack.
+[**Protect email**](m365bp-email-overview.md). Here you must take the steps to protect the email systems from attack.
 
 [**Collaborate and share securely**](m365bp-collaborate-share-securely.md). In this mission, you set up secure file sharing for all members of the organization.
 
 [**Protect devices with Defender for Business**](m365bp-protect-devices.md). This mission is all about augmenting your security with Defender.
+
+>[NOTE]
+There will be times when completing your objectives will take you away from the mission at hand. After completing a side quest, remember to always return here to continue the assigned mission. The fate of the org depends on you!
 
 :::image type="content" source="media/m365-whatisit-securityfocus2.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
 <!---
