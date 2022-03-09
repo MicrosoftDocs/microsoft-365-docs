@@ -106,14 +106,6 @@ Microsoft Defender for Endpoint [endpoint detection and response](/windows/secur
 
 Microsoft Defender for Endpoint's EDR and endpoint protection capabilities have received positive results from industry tests and publications. [SC Labs assessed endpoint security tools](https://www.scmagazine.com/home/reviews/sc-product-reviews-endpoint-security/) in June 2020, and gave Microsoft Defender for Endpoint [5/5 stars](https://www.scmagazine.com/review/microsoft-defender-advanced-threat-protection/). They called out Microsoft Defender for Endpoint's ability to protect organizations against the modern threat landscape using a full set of security capabilities. SC Labs also identified the endpoint security solution as holistic and unified. They also acknowledged the convergence of endpoint protection with endpoint detection and response functionality, because the attack chain now gets fully covered by solutions.
 
-### MITRE: Industry-leading optics and detection capabilities
-
-MITRE tested the ability of products to detect techniques commonly used by the targeted attack group APT3 (also known as Boron or UPS). To isolate detection capabilities, all protection and prevention features were turned off. Microsoft is happy to be one of the first EDR vendors to sign up for the MITRE evaluation based on the ATT&CK framework. The framework is widely regarded today as the most comprehensive catalog of attacker techniques and tactics.
-
-- ATT&CK-based evaluation of Microsoft Defender for Endpoint - December 2018: [Leading optics and detection capabilities](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/) | [Analysis](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/MITRE-evaluation-highlights-industry-leading-EDR-capabilities-in/ba-p/369831)
-
-    Microsoft Defender for Endpoint delivered comprehensive coverage of attacker techniques across the entire attack chain. Highlights included the breadth of telemetry, the strength of threat intelligence, and the advanced, automatic detection through machine learning, heuristics, and behavior monitoring.
-
 ## To what extent are tests representative of protection in the real world?
 
 Independent security industry tests aim to evaluate the best antivirus and security products in an unbiased manner. However, Microsoft sees a wider and broader set of threats beyond what's tested in the evaluations highlighted in this article. In an average month, Microsoft's security products identify over 100 million new threats. Even if an independent tester can acquire and test 1% of those threats, that is a million tests across 20 or 30 products. In other words, the vastness of the malware landscape makes it difficult to evaluate the quality of protection against real world threats.
