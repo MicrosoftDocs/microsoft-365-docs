@@ -19,7 +19,7 @@ ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Learn how to access and use the Microsoft Service Trust Portal to help with security, privacy, and compliance practices.
 ---
 
-# Get started with the Microsoft Service Trust Portal
+# Get started with Microsoft Service Trust Portal
 
 The Microsoft Service Trust Portal provides a variety of content, tools, and other resources about Microsoft security, privacy, and compliance practices.
 
@@ -67,21 +67,14 @@ The **Service Trust Portal** link displays the home page. It provides a quick wa
 > [!IMPORTANT]
 > Compliance Manager has moved from the Service Trust Portal to its new location in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>. All customer data has been moved over to the new location, so you can continue using Compliance Manager without interruption. Refer to the [Compliance Manager documentation](compliance-manager.md) for setup information and to learn about new features. Although the classic version of Compliance Manager remains in the Service Trust Portal, all users are encouraged to use Compliance Manager in the Microsoft 365 compliance center.
 
-### Trust Documents
+### Certifications, Standards, and Regulations
 
-Provides a wealth of security implementation and design information with the goal of making it easier for you to meet regulatory compliance objectives by understanding how Microsoft Cloud services keep your data secure. To review content, select one of the following options on the **Trust Documents** pull-down menu.
+Provides a wealth of security implementation and design information with the goal of making it easier for you to meet regulatory compliance objectives by understanding how Microsoft Cloud services keep your data secure. To review content, select one of the following tiles.
 
-- **Audit Reports:** A list of independent audit and assessment reports on Microsoft's Cloud services is displayed. These reports provide information about Microsoft Cloud services compliance with data protection standards and regulatory requirements, such as:
-
-  - International Organization for Standardization (ISO)
-  - Service Organization Controls (SOC)
-  - National Institute of Standards and Technology (NIST)
-  - Federal Risk and Authorization Management Program (FedRAMP)
-  - General Data Protection Regulation (GDPR)
-
-- **Data Protection:** Contains a wealth of resources such as audited controls, white papers, FAQs, penetration tests, risk assessment tools, and compliance guides.
-
-- **Azure Security and Compliance Blueprints:** Resources that help you build secure and compliant cloud-based applications. This area contain blueprint-guidance for government, finance, healthcare, and retail verticals.
+- **DoD** - Cloud computing security requirements for the US Department of Defense.
+- **FedRAMP** - US government program providing a standard approach to security, authorization, and monitoring.
+- **Financial Services** - The Microsoft Cloud for FInancial Services provides capabilities to manage data.
+- **GDPR** - How Microsoft helps support our customers on their GDPR compliance journeys.
 
 ### Industries & Regions
 
