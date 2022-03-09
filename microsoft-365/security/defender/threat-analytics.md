@@ -85,7 +85,7 @@ Each threat analytics report provides information in several sections:
 - [**Related incidents**](#related-incidents-view-and-manage-related-incidents)
 - [**Impacted assets**](#impacted-assets-get-list-of-impacted-devices-and-mailboxes)
 - [**Prevented email attempts**](#prevented-email-attempts-view-blocked-or-junked-threat-emails)
-- [**Exposure & mitigations**](#mitigations-review-list-of-mitigations-and-the-status-of-your-devices)
+- [**Exposure & mitigations**](#exposure-and-mitigations-review-list-of-mitigations-and-the-status-of-your-devices)
 
 ### Overview: Quickly understand the threat, assess its impact, and review defenses
 
@@ -177,7 +177,7 @@ The **Prevented email attempts** tab lists all the emails that have either been 
 
 _Prevented email attempts section of a threat analytics report_
 
-### Exposure & mitigations: Review list of mitigations and the status of your devices
+### Exposure and mitigations: Review list of mitigations and the status of your devices
 
 In the **Exposure & mitigations** section, review the list of specific actionable recommendations that can help you increase your organizational resilience against the threat. The list of tracked mitigations includes:
 
