@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Microsoft Office activations"
+title: "Microsoft 365 admin center Office activations reports"
 ms.author: kwekua
 author: kwekua
 manager: scotv
