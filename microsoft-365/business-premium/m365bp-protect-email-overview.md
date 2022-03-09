@@ -31,7 +31,7 @@ description: "An overview on how to protect your email"
 
 ## Overview
 
-To achieve the objectives of Mission 4, ensure you've set up protection for all email systems.
+NARRATIVE TO COME
   
 To protect email:
 
