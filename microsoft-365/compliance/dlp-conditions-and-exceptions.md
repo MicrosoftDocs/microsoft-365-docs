@@ -43,15 +43,11 @@ The tables in the following sections describe the conditions and exceptions that
 
 ### Senders
 
-If you use the sender address as a condition or exception the actual field where the value is looked for varies depending on the type of rule you use. For DLP based rules, the Envelope address is used as the sender address. For Exchange transport rules the Header address is used as the sender address.
+If you use the sender address as a condition or exception the actual field where the value is looked for varies depending on the sender address location configured. By default,  DLP rules use the Header address as the sender address.
 
-<!--
-> [!NOTE]
-> Starting January 20, 2022, the default sender address location will be moved to the Header address along with the availability of the -SenderAddressLocation parameter to configure desired behavior at a DLP rule level.
+![Image of an email header showing the difference between the Envelope (P1) address and the Header (P2) address](../media/dlp-conditions-exceptions-meetinginvite-callouts.png)
 
-![image](https://user-images.githubusercontent.com/53205984/145942298-6b435ba6-d146-44fe-a1c5-58babeaf8d7a.png)
-
-At the tenant level, you can configure a sender address location to be used across all rules, unless overridden by a single rule. To revert tenant DLP policy configuration to evaluate the sender address from the Envelope across all rules, you can run the following command:
+At the tenant level, you can configure a sender address location to be used across all rules, unless overridden by a single rule. To set tenant DLP policy configuration to evaluate the sender address from the Envelope across all rules, you can run the following command:
 
 ```PowerShell
 Set-PolicyConfig –SenderAddressLocation Envelope
@@ -65,7 +61,7 @@ To configure the sender address location at a DLP rule level, the parameter is _
 
 - **Header or envelope** (`HeaderOrEnvelope`) Examine senders in the message header and the message envelope.
 <br>
--->
+
 |condition or exception in DLP|condition/exception parameters in Microsoft 365 PowerShell|property type|description|
 |---|---|---|---|
 |Sender is|condition: *From* <br/> exception: *ExceptIfFrom*|Addresses|Messages that are sent by the specified mailboxes, mail users, mail contacts, or Microsoft 365 groups in the organization.|
