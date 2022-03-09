@@ -84,6 +84,7 @@ Provides a wealth of security implementation and design information with the goa
 - **PCI DSS** - Validation of controls around cardholder data to reduce credit card fraud.
 - **SOC Reports** - SOC 1, 2, and 3 reports designed to build trust and confidence in Microsoft Services.
 
+<!--
 ### Industries & Regions
 
 Provides industry- and region-specific compliance information about Microsoft Cloud services.
@@ -91,6 +92,7 @@ Provides industry- and region-specific compliance information about Microsoft Cl
 - **Industries:** At this time, this page provides an industry-specific landing page the for the Financial Services industry. This contains information such as compliance offerings, FAQs, and success stories. Resources for more industries will be released in the future, however you can find resources for more industries by going to the **Trust Documents > Data Protection** page in the STP.
 
 - **Regions:** Provides legal opinions on Microsoft Cloud services compliance with various the laws of various countries. Specific countries include Australia, Canada, Czech Republic, Denmark, Germany, Poland, Romania, Spain, and the United Kingdom.
+-->
 
 ### Trust Center
 
@@ -100,6 +102,10 @@ Links to the [Microsoft Trust Center](https://www.microsoft.com/trust-center), w
 
 This new feature lets you save (or *pin*) documents so that you can quickly access them on your My Library page. You can also set up notifications so that Microsoft sends you an email message when documents in your My Library are updated. For more information, see the [My Library](#my-library-1) section in this article.
 
+### All Documents
+
+
+<!--
 ### More
 
 Go to **More > Admin** to access administrative functions that are only available to the global administrator account. This option is visible only when you are signed in as a global administrator. There are two options in the **Admin** pull-down menu:
@@ -107,6 +113,7 @@ Go to **More > Admin** to access administrative functions that are only availabl
 - **Settings:** This page lets you assign user roles for Compliance Manager (classic).
 
 - **User Privacy Settings:** This page lets you export a report that contains action item assignments in Compliance Manager (classic) for a specific user. You can also reassign all action items to a different user and remove any assigned action item from the specified user.
+-->
 
 ### Search
 
