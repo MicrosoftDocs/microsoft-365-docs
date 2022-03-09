@@ -44,7 +44,7 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
 
 :::image type="content" source="../../media/idle-session-timeout.png" alt-text="Screenshot: Prompt letting you know that your session is about to expire. Select Stay signed in so you don't get signed out of Microsoft 365 web apps":::
 
-## More information about idle session timeout
+## Details about idle session timeout
 
 - The following Microsoft 365 web apps are supported. More web apps will be added soon.
 
@@ -101,7 +101,7 @@ Idle session timeout isn't supported when third party cookies are disabled in th
 
 If you're already using existing Outlook web app and SharePoint Online idle timeout policies, you can still turn on idle session timeout feature. When you turn on Outlook web app and SharePoint Online idle timeout policies, it takes precedence over the existing Outlook web app and SharePoint Online policies. We're planning to deprecate the existing Outlook web app and SharePoint Online policies in the near future. To better prepare your organization, we recommend you turn on idle session timeout.
 
-### What happens if I am inactive on a participating Microsoft 365 web apps, but active on a different Microsoft or SaaS webapp with the same account?  
+### What happens if I am inactive on an included Microsoft 365 web app, but active on a Microsoft web app or SaaS web app that doesn't have idle session timeout turned on?  
 
 - The following Microsoft 365 web apps are supported.
 
@@ -117,7 +117,7 @@ If you're already using existing Outlook web app and SharePoint Online idle time
 
 - Microsoft 365 Admin Center
 
-If you're working on a different web app with the same account, the activity in that web app won't be considered for the overall activity.
+If you're working on a different web app with the same account, the activity in that web app won't be applied to the idle session timeout.
 
 ### I want to make changes to the idle session timeout policy or delete it. How can I do that?
 
