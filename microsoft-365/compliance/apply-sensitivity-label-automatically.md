@@ -310,9 +310,11 @@ In all cases, matched files are labeled until the OneDrive account is permanentl
 
     ![Choose locations page for auto-labeling configuration.](../media/locations-auto-labeling-wizard.png)
     
-    If you choose **Exchange** and want to label incoming email from outside your organization, you must keep the default of **All** included. For this configuration to be scoped to specific users in your organization, choose **Advanced rules** in the next step. Then configure the conditions to include specific recipients in your organization to achieve the scoping requirement for a subset of users.
+    More information about the locations:
     
-    To specify individual OneDrive accounts, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
+    - If you choose **Exchange** and want to label incoming email from outside your organization, you must keep the default of **All** included. For this configuration to be scoped to specific users in your organization, choose **Advanced rules** in the next step. Then configure the conditions to include specific recipients in your organization to achieve the scoping requirement for a subset of users.
+    
+    - To specify individual OneDrive accounts, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls).
 
 7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, including more options for Exchange, select **Advanced rules**. Then select **Next**.
 
