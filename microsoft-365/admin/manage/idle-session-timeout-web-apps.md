@@ -26,7 +26,7 @@ When a user reaches the idle timeout session you've set, they'll get a notificat
 
 ## Turn on Idle session timeout
 
-1. In the Microsoft 365 admin center, select **Org Settings**, go to the Security & privacy tab and select **Idle session timeout**. <!--**https://admin.microsoft.com/Adminportal/Home#/Settings/SecurityPrivacy**. -->
+1. In the Microsoft 365 admin center, select **Org Settings**, go to the **Security & privacy** tab and select **Idle session timeout**. <!--**https://admin.microsoft.com/Adminportal/Home#/Settings/SecurityPrivacy**. -->
 
 > [!NOTE]
 > If you aren't an Office 365 global admin, you won't see the **Security & privacy** tab.
