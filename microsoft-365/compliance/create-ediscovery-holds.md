@@ -77,6 +77,9 @@ To create an eDiscovery hold that's associated with a Core eDiscovery case:
 
 11. Review your settings (and edit them if necessary), and then click **Submit**.
 
+> [!NOTE]
+> When you create a query-based hold, all content from selected locations is initially placed on hold. Subsequently, any content that doesn't match the specified query is cleared from the hold every seven to 14 days. However, a query-based hold won't clear content if more than five holds of any type are applied to a content location, or if any item has indexing issues.
+
 ## Query-based holds placed on sites
 
 Keep the following things in mind when you place a query-based eDiscovery hold on documents located in SharePoint sites:
