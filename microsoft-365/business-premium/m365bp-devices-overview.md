@@ -31,9 +31,7 @@ description: "Set up devices overview"
 
 ## Overview
 
-Every  device is a possible attack avenue into your network and must be monitored and managed properly. 
-
-In this critical mission, you will set up protection for every device in your network that includes multi-factor authentication and Office apps on all devices. For managed devices, enroll them in Intune and onboard them with the endpoint setup wizard. 
+Every  device is a possible attack avenue into your network and must be monitored and managed properly. In this critical mission, you will set up protection for every device in your network that includes multi-factor authentication and Office apps on all devices. For managed devices, enroll them in Intune and onboard them with the endpoint setup wizard. You also must ensure the utmost security on unmanaged devices.
 
 Your objectives are as follows:
 
