@@ -2,8 +2,8 @@
 title: "Step 1. Increase sign-in security for hybrid workers with MFA"
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
