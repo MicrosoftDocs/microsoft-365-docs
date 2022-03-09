@@ -78,6 +78,11 @@ Provides a wealth of security implementation and design information with the goa
 - **GRC Assessment** - Provides audit and assurance professionals with a common set of assessment procedures.
 - **HIPAA** - US Privacy requirements for personal health information held by covered entities.
 - **IRS 1075** - US government program providing guidance to protect the confidenitality of Federal Tax Information (FTI).
+- **ISO** - Compliance with specific information security and risk management requirements.
+- **ITAR** - US regulation that controls the manufacture, sale, and distribution of defense.
+- **NIST 800-171 (DFARS)** - US security requirements for protecting Controlled Unclassified Information in Non Federal Systems and Organizations.
+- **PCI DSS** - Validation of controls around cardholder data to reduce credit card fraud.
+- **SOC Reports** - SOC 1, 2, and 3 reports designed to build trust and confidence in Microsoft Services.
 
 ### Industries & Regions
 
