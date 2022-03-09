@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Dynamics 365 Customer Voice activity"
+title: "Microsoft Dynamics 365 customer voice activity reports"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
