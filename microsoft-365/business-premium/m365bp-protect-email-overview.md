@@ -31,16 +31,16 @@ description: "An overview on how to protect your email"
 
 ## Overview
 
-We hope you know this, but emails are full of wolves in sheep's clothing, or malicious attacks cloaked as innocent or helpful, or simply requiring your personal information, emails. Email systems are especially vulnerable, because email is handled by everyone in the company to communicate, relying upon humans making consistently safe decisions. 
+We hope you know this, but emails are full of wolves in sheep's clothing, or malicious attacks cloaked as innocent or helpful emails. Email systems are especially vulnerable, because email is handled by everyone in the company to communicate, which relies upon humans making consistently safe decisions. 
 
-In this mission, you are ensuring all email systems are safe from attackers. 
+In this mission, you are ensuring email systems are safe from attackers. 
 
 Your mission objectives are to:
 
 - [Protect against phishing and other attacks](m365-campaigns-phishing-an-attacks.md)
 - [Set up encrypted email](send-encrypted-email.md)
 
-Accomplish these objectives and then move on to your [next mission](m365bp-collaborate-share-securely.md).
+Accomplish these objectives to move on to the [next mission](m365bp-collaborate-share-securely.md).
    
 <!---
 To protect email:

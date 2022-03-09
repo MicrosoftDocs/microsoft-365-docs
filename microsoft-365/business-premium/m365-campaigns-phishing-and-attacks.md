@@ -28,7 +28,7 @@ description: "Protect against phishing and other attacks with Microsoft 365."
 
 # Protect yourself against phishing and other attacks
 
-Microsoft 365 Business Premium includes many protections to guard against attacks, but there are things you can do yourself to limit and minimize the risk of online attacks.
+In addition to the protection against attacks that Microsoft 365 Business Premium offers, there are other measures you can take that will further protect your organization.
 
 - **Spam or junk mail** There are many reasons you might receive junk email and not all junk mail is the same. However, you can reduce what gets through to you, and thus reduce the risks of attacks, by filtering out junk mail.
 - **Phishing** A phishing scam is an email that seems legitimate but is an attempt to get your personal information or steal your money.
@@ -63,11 +63,15 @@ Help your customers trust your communications by adding a digital signature to p
 
 ## Help protect your campaign from online threats
 
-Download this infographic with tips for you and the members of your campaign team:
+Download this infographic with tips for you and the members of your campaign team or business:
 
 [![The help protect your campaign info graphic.](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf)
 
 [PDF](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pptx)
+
+<!---
+NOTE: I think the above infographic should be re-done to reflect businesses and campaigns, not just campaigns. If not, we should greatly downplay the campaign references. TBD.
+--->
 
 ## Set it up
 
