@@ -26,8 +26,18 @@ search.appverid:
 description: "Security overview for Microsoft 365 Business Premium"
 ---
 
-# Overview of Microsoft 365 Business Premium
+# Bump up security
 
-Microsoft 365 Business Premium includes security protection for your people, devices, email content, Office files, and more. 
+## Overview
 
-(MORE TO COME - KEITH'S NARRATIVE GOES HERE)
+In this mission, we're going to really bump up our security defenses. As you must know by now, Admin access is a high-value target for the enemy. Protecting Admin accounts is critical because the access and control they provide can impact many accounts or the system itself. 
+
+In this mission you're going to need to know how to set up the different Admin roles and different levels of security such as *least permissive*. You'll also enact MFA requirements and set up all your security defaults. the safety and reliability of the system relies on you.
+
+This mission has the following objectives:
+
+- [Protect Admin accounts](m365bp-protect-admin-accounts.md)
+- [Turn on security defaults](m365bp-m365bp-conditional-access.md)
+- [Protect against malware and other threats](m365bp-increase-protection)
+
+After accomplishing these objectives, start the [next mission](m365bp-devices-overview.md).

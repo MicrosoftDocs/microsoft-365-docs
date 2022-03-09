@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: samanro
 author: samanro
-manager: dansimp
+manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -33,23 +33,34 @@ Let us begin by saying that you have made a wise choice in adopting Microsoft 36
 
 You are the Chief Cybersecurity Officer and therefore are your organization’s best defense against hackers and cybercriminals, including random individuals, organized crime, or even highly sophisticated nation-states. The security of the organization rests upon you. Let Microsoft 365 Business Premium help secure your organization’s future.  
 
-Success will depend on how well you implement the recommendations in this library and accomplish the tasks necessary to thwart hackers, protect against ransomware, and ensure that your organization’s purpose and direction are not disrupted. Your mission is to set up your email and mobile device security, protect file sharing amongst all team members, and secure managed and unmanaged devices.
+Success will depend on how well you implement the recommendations in this library and accomplish the assigned objectives to thwart hackers, protect against ransomware, and ensure that your organization’s purpose and direction are not disrupted. Your mission is to set up your email and mobile device security, protect file sharing amongst all team members, and secure managed and unmanaged devices.
 
-Your missions are as follows:
+You will complete the following missions:
 
-**Mission 1 – Implement All Account Protections**. In your first mission, you must implement security across all accounts in the system.
+[**Set up your environment**](m365bp-setup-overview.md). In your first mission, you set up and implement security across all accounts in the system.
 
-**Mission 2 - Set Up All Devices**. In Mission 2, you must protect all mobile devices, as well as managed and unmanaged devices. 
+[**Bump up security protection**](m365bp-security-overview.md). Here, you set up a number of security safeguards to protect your organization. 
 
-**Mission 3 – Secure All Email and Data Files**. Your final objective is to secure the email and files shared between members of your organization, avoiding data and information theft.
+[**Set up devices**](m365bp-devices-overview.md). In this mission, you set up all types of devices so they are safely part of the ecosystem.
 
-<!--- 
-In our current world, keeping data and communications secure is a priority, particularly for medical and legal practices, political campaigns, and many other smaller businesses. Take advantage of the security features in Microsoft 365 Business Premium to collaborate safely within your small business. This solution provides a set of recommendations designed to help protect you and your data. This library includes help for setting up and using this recommended environment, no matter your business type. 
---->
+[**Protect email**](m365bp-email-overview.md). Here you learn how to protect the email systems from attack.
+
+[**Collaborate and share securely**](m365bp-collaborate-share-securely.md). In this mission, you set up secure file sharing for all members of the organization.
+
+[**Protect devices with Defender for Business**](m365bp-protect-devices.md). This mission is all about augmenting your security with Defender.
 
 :::image type="content" source="media/m365-whatisit-securityfocus2.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
+<!---
+NOTE: I THINK THIS IMAGE SHOULD BE RE-DONE TO REFLECT 6 MISSIONS, AND STYLISTICALLY TO HAVE A "DEFENDER" CHARACTER (SUCH AS IN THE POSTER) IN THE BACKGROUND BEHIND THE FRONT LAYER VISUALS FOR EACH MISSION CATEGORY. THE OBJECTIVES FOR EACH MISSION CAN BE BULLET POINTS IN EACH SECTION IN THE GRAPHIC.
+--->
 
-Okay. Let's get started. Pay close attention to the following guidance for productivity, collaboration, file storage, email, devices, and identity:
+Okay. Let's get started with the [first mission](m365bp-setup-overview.md)!
+
+
+<!---
+KC Note: MOST OF THE FOLLOWING MAY BE USEFUL, BUT HERE JUST SERVES TO CLUTTER AND CONFUSE IMHO. I WILL MOVE THIS STUFF, BUT COMMENTING OUT FOR NOW...
+
+Pay close attention to the following guidance for productivity, collaboration, file storage, email, devices, and identity:
 
 | Protection for | Description | Links |
 | ----- | ----- | ----- | ----- |
@@ -61,7 +72,7 @@ Okay. Let's get started. Pay close attention to the following guidance for produ
 
 ## A recommended security configuration for Microsoft 365 Business Premium
 
-Head's up - this recommended secure configuration for Microsoft 365 Business Premium ensures you can:
+This recommended secure configuration for Microsoft 365 Business Premium ensures you can:
 
 - Rely on your trusted business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products.
 
@@ -109,3 +120,6 @@ After you set up your secure Microsoft 365 environment, you can use the followin
 | ------------- |
 | ![sharing a file in Microsoft Teams.](../media/m365-democracy-teams-sharefiles.png) |
 | Save your files and videos to the cloud so they're available <br>to all of the appropriate people.<br>[Start sharing](share-files-and-videos.md) |
+--->
+
+
