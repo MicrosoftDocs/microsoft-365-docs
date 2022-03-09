@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Microsoft 365 Apps usage"
+title: "Microsoft 365 admin center apps usage reports"
 ms.author: kwekua
 author: kwekua
 manager: scotv
