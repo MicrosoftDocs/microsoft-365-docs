@@ -189,9 +189,9 @@ In the **Exposure & mitigations** section, review the list of specific actionabl
 
 Mitigation information in this section incorporates data from [threat and vulnerability management](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), which also provides detailed drill-down information from various links in the report.
 
-![Image of the mitigations section of a threat analytics report showing secure configuration details.](../../media/threat-analytics/ta_mitigations_mtp.png)
+![Image of the mitigations section of a threat analytics report showing secure configuration details.](../../media/ta_mitigations_mtp.png)
 
-![Image of the mitigations section of a threat analytics report showing vulnerability details.](../../media/threat-analytics/ta_mitigations_mtp2.png)
+![Image of the mitigations section of a threat analytics report showing vulnerability details.](../../media/ta_mitigations_mtp2.png)
 
 _Exposure & mitigations section of a threat analytics report_
 
