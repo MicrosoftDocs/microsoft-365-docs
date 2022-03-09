@@ -49,6 +49,7 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 |Policy Creation|Allows you to create policy to enforce each removable media group|Steps 2 and 3 in the section, [Deploying policy via OMA-URI](#deploying-policy-via-oma-uri) | Step 2 in the section, [Deploying policy via Group Policy](#deploying-policy-via-group-policy) |
 |Default Enforcement|Allows you to set default access (Deny or Allow) to removable media if there is no policy|Step 4 in the section, [Deploying policy via OMA-URI](#deploying-policy-via-oma-uri) | Step 3 in the section, [Deploying policy via Group Policy](#deploying-policy-via-group-policy) |
 |Enable or Disable Removable Storage Access Control|If you set Disable, it will disable the Removable Storage Access Control policy on this machine| Step 5 in the section, [Deploying policy via OMA-URI](#deploying-policy-via-oma-uri) | Step 4 in the section, [Deploying policy via Group Policy](#deploying-policy-via-group-policy) |
+|Capture file information|Allows you to create policy to capture file information when Write access happens| Step 2 and 6 in the section, [Deploying policy via OMA-URI](#deploying-policy-via-oma-uri) | Step 2 and 5 in the section, [Deploying policy via Group Policy](#deploying-policy-via-group-policy) |
 
 ## Prepare your endpoints
 
@@ -60,7 +61,7 @@ Deploy Removable Storage Access Control on Windows 10 and Windows 11 devices tha
 
 - **4.18.2107 or later**: Add Windows Portable Device (WPD) support (for mobile devices, such as tablets); add AccountName into [advanced hunting](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)
 
-- **4.18.2111 or later**: Add 'Enable or Disable Removable Storage Access Control', 'Default Enforcement', client machine policy update time through PowerShell.
+- **4.18.2111 or later**: Add 'Enable or Disable Removable Storage Access Control', 'Default Enforcement', client machine policy update time through PowerShell, file information
 
 :::image type="content" source="images/powershell.png" alt-text="The PowerShell interface.":::
 
@@ -97,8 +98,8 @@ You can use the following properties to create a removable storage group:
 | **Type** | Defines the action for the removable storage groups in IncludedIDList. <p>Enforcement: Allow or Deny <p>Audit: AuditAllowed or AuditDenied<p> | Allow<p>Deny <p>AuditAllowed: Defines notification and event when access is allowed <p>AuditDenied: Defines notification and event when access is denied; has to work together with **Deny** entry.<p> When there are conflict types for the same media, the system will apply the first one in the policy. An example of a conflict type is **Allow** and **Deny**. |
 | **Sid** | Local user Sid or user Sid group or the Sid of the AD object, defines whether to apply this policy over a specific user or user group; one entry can have a maximum of one Sid and an entry without any Sid means applying the policy over the machine. |  |
 | **ComputerSid** | Local computer Sid or computer Sid group or the Sid of the AD object, defines whether to apply this policy over a specific machine or machine group; one entry can have a maximum of one ComputerSid and an entry without any ComputerSid means applying the policy over the machine. If you want to apply an Entry to a specific user and specific machine, add both Sid and ComputerSid into the same Entry. |  |
-| **Options** | Defines whether to display notification or not |**0 or 4**: When Type Allow or Deny is selected. <p>0: nothing<p>4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Block** happens and the AuditDenied is setting configured, the system will not show notification. <p> When Type **AuditAllowed** is selected: <p>0: nothing <p>1: nothing <p>2: send event<p>3: send event <p> When Type **AuditDenied** is selected: <p>0: nothing <p>1: show notification <p>2: send event<p>3: show notification and send event |
-|AccessMask|Defines the access. | **1-7**: <p>1: Read <p>2: Write <p>3: Read and Write <p>4: Execute <p>5: Read and Execute<p>6: Write and Execute <p>7: Read and Write and Execute |
+| **Options** | Defines whether to display notification or not |**When Type Allow is selected**: <p>0: nothing<p>4: disable **AuditAllowed** and **AuditDenied** for this Entry. Even if **Allow** happens and the AuditAllowed is setting configured, the system will not send event. <p>8: capture file information and have a copy of the file as evidence for Write access. <p>16: capture file information for Write access. <p>**When Type Deny is selected**: <p>0: nothing<p>4: disable **AuditDenied** for this Entry. Even if **Block** happens and the AuditDenied is setting configured, the system will not show notification. <p>**When Type **AuditAllowed** is selected**: <p>0: nothing <p>1: nothing <p>2: send event<p>3: send event <p> **When Type **AuditDenied** is selected**: <p>0: nothing <p>1: show notification <p>2: send event<p>3: show notification and send event |
+|AccessMask|Defines the access. | **Disk level access**: <p>1: Read <p>2: Write <p>4: Execute <p>**File system level access**: <p>8: File system Read <p>16: File system Write <p>32: File system Execute <p><p>You can have multiple access by performing binary OR operation, for example, the AccessMask for Read and Write and Execute will be 7; the AccessMask for Read and Write will be 3.|
 
 ## Common Removable Storage Access Control scenarios
 
@@ -159,6 +160,8 @@ Before you get started with Removable Storage Access Control, you must confirm y
 2. Combine all rules within `<PolicyRules>` `</PolicyRules>` into one xml file.
 
     If you want to restrict a specific user, then use SID property into the Entry. If there is no SID in the policy Entry, the Entry will be applied to everyone login instance for the machine.
+    
+    If you want to monitor file information for Write access, use the right AccessMask with the right Option (8 or 16); here is the example of [Capture file information](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Group%20Policy/Audit%20File%20Information.xml).
 
     The following image illustrates the usage of SID property, and an example of [Scenario 1: Prevent Write and Execute access to all but allow specific approved USBs](#scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs).
 
@@ -185,6 +188,12 @@ Before you get started with Removable Storage Access Control, you must confirm y
    - Once you deploy this setting, you will see ‘Enabled’ or ‘Disabled’ - Disabled means this machine does not have Removable Storage Access Control policy running.
 
     :::image type="content" source="images/148609685-4c05f002-5cbe-4aab-9245-83e730c5449e.png" alt-text="Enabled or Disabled device control in PowerShell code":::
+
+6. Set location for a copy of the file: if you want to have a copy of the file when Write access happens, you have to set the location where system can save the copy.
+    
+    You have to deploy this together with the right AccessMask and Option - see step 2 above.
+
+    :::image type="content" source="https://user-images.githubusercontent.com/81826151/156080704-19d68843-8ec4-4742-bdef-f8ba3bd4a636.png" alt-text="Group Policy - Set locaiton for file evidence":::
 
 ## Deploying and managing policy via Intune OMA-URI
 
@@ -233,6 +242,8 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
       `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyRules/%7bc544a991-5786-4402-949e-a032cb790d0e%7d/RuleData`
 
     - Data Type: String (XML file)
+       
+    If you want to monitor file information for Write access, use the right AccessMask with the right Option (8 or 16); here is the example of [Capture file information](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Audit%20File%20Information.xml).
 
 3. Default enforcement: allows you to set default access (Deny or Allow) to removable media if there is no policy. For example, you only have policy (either Deny or Allow) for RemovableMediaDevices, but do not have any policy for CdRomDevices or WpdDevices, and you set default Deny through this policy, Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked.
 
@@ -261,6 +272,16 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
 
     :::image type="content" source="images/148609770-3e555883-f26f-45ab-9181-3fb1ff7a38ac.png" alt-text="Removeable Storage Access Control in PowerShell code":::
 
+5. Set the location for a copy of the file: if you want to have a copy of the file when Write access happens, you have to set the location where the system can save the copy.
+    
+    - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation`
+
+    - Data Type: String
+    
+    You have to deploy this together with the right AccessMask and the right Option - see step 2 above.
+
+    :::image type="content" source="https://user-images.githubusercontent.com/81826151/156080498-68a807a9-6d7b-4265-92f7-ab8bf1c9a093.png" alt-text="Set locaiton for file evidence":::
+    
 ## Deploying and managing policy by using Intune user interface
 
 This capability is available in the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>). Go to **Endpoint Security** > **Attack Surface Reduction** > **Create Policy**. Choose **Platform: Windows 10 and later** with **Profile: Device Control**.
@@ -311,7 +332,6 @@ If you are deploying and managing the policy via Group Policy, please make sure 
 ### There is no configuration UX for 'Define device control policy groups' and 'Define device control policy rules' on my Group Policy
 
 We don't backport the Group Policy configuration UX, but you can still get the related adml and admx files by clicking 'Raw' and 'Save as' at the [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) and [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) files.
-
 
 ### How can I know whether the latest policy has been deployed to the target machine?
 
