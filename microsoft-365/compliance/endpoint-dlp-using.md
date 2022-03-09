@@ -163,7 +163,7 @@ Restrict sensitive files that match your policies from being shared with unrestr
 
 #### Unallowed browsers
 
-For Windows devices you add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Microsoft Edge.
+For Windows devices you add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Microsoft Edge or display a customized message if one has been configured.
 
 For macOS devices, you must add the full file path. To find the full path of Mac apps:
 
