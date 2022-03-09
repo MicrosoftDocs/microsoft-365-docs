@@ -74,4 +74,4 @@ To customize the budget, select **Configure advanced settings**. You can give yo
 
 ## Related content
 
-[Cost Management best practices](/azure/cost-management-billing/costs/cost-mgt-best-practices)
+[Cost Management best practices](/azure/cost-management-billing/costs/cost-mgt-best-practices) (article)
