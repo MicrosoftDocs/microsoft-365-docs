@@ -20,6 +20,9 @@ Use idle session timeouts to configure a policy on how long users are idle in yo
 
 When a user reaches the idle timeout session you've set, they'll get a notification that they're about to be signed out. They have to select to stay signed in or they'll be automatically signed out of all Microsoft 365 web apps.
 
+> [!IMPORTANT]
+> Idle session timeout doesn't affect your Microsoft 365 desktop and mobile apps.
+
 1. Go to the [![Go to the Microsoft 365 admin center](../media/e00ba917-c3fb-4173-b344-43eb5c7eeb15.png)](https://admin.microsoft.com/AdminPortal/Home#/homepage).
 
 2. In the Microsoft 365 admin center, go to **Settings** \> **https://admin.microsoft.com/Adminportal/Home#/Settings/SecurityPrivacy**. If you aren't an Office 365 global admin, you won't see the Security and privacy option.
