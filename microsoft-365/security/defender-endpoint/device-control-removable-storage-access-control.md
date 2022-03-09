@@ -193,7 +193,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
     
     You have to deploy this together with the right AccessMask and Option - see step 2 above.
 
-    :::image type="content" source="https://user-images.githubusercontent.com/81826151/156080704-19d68843-8ec4-4742-bdef-f8ba3bd4a636.png" alt-text="Group Policy - Set locaiton for file evidence":::
+    :::image type="content" source="../../media/define-device-control-policy-rules.png" alt-text="Group Policy - Set locaiton for file evidence":::
 
 ## Deploying and managing policy via Intune OMA-URI
 
@@ -280,7 +280,7 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
     
     You have to deploy this together with the right AccessMask and the right Option - see step 2 above.
 
-    :::image type="content" source="https://user-images.githubusercontent.com/81826151/156080498-68a807a9-6d7b-4265-92f7-ab8bf1c9a093.png" alt-text="Set locaiton for file evidence":::
+    :::image type="content" source="../../media/device-control-oma-uri-edit-row.png" alt-text="Set locaiton for file evidence":::
     
 ## Deploying and managing policy by using Intune user interface
 
