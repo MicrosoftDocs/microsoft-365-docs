@@ -56,6 +56,14 @@
       href: share-files-and-videos.md
     - name: Create a Communication site for your organization
       href: create-communications-site.md
+- name: Protect devices with Defender for Business
+  items:
+    - name: Onboard devices to Microsoft Defender for Business
+      href: m365bp-onboard-devices-mdb.md
+    - name: Review and edit device policies
+      href: m365bp-view-edit-create-mdb-policies.md
+    - name: Manage device groups
+      href: m365bp-device-groups-mdb.md
 - name: Reset or remove data from devices
   items: 
     - name: Remove data from devices
@@ -64,6 +72,8 @@
       href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Security incident management
   items: 
+    - name: Review remediation actions on devices
+      href: m365bp-review-remediation-actions-devices.md
     - name: Respond to a compromised email account
       href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Reference
