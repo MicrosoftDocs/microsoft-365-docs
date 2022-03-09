@@ -7,8 +7,8 @@ ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 ms.date: 11/24/2021
 ms.localizationpriority: medium
 manager: dansimp
