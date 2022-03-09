@@ -1,6 +1,6 @@
 ---
 title: Submit suspected files in Microsoft Defender for Endpoint
-description: Learn how to use the Submissions feature in the Microsoft 365 Defender to submit suspicious emails, suspected phishing mails, spam, and other potentially harmful messages, URLs, and files to Microsoft for scanning.
+description: Learn how to use the unified submissions feature in the Microsoft 365 Defender to submit suspicious emails, suspected phishing mails, spam, and other potentially harmful messages, URLs, and files to Microsoft for scanning.
 keywords: antivirus, spam, phish, Microsoft Defender for Endpoint, false positive, false negative, blocked file, blocked url
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,7 +35,7 @@ ms.custom: FPFN
 
 >Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-usewdatp-abovefoldlink).
 
-In Microsoft Defender for Endpoint, admins can use the Submissions feature in the Microsoft 365 Defender to submit files and file hashes (SHAs) to Microsoft for review.
+In Microsoft Defender for Endpoint, admins can use the unified submissions feature in the Microsoft 365 Defender to submit files and file hashes (SHAs) to Microsoft for review.
 
 ## Microsoft Defender for Endpoint interactive guide
 
