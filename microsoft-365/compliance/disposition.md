@@ -182,7 +182,7 @@ As you can see from the example shown, the actions supported are:
   
 - **Approve disposal**:
     - When this action is selected for an interim stage of disposition review (you have configured multiple stages): The item moves to the next disposition stage.
-    - When this action is selected for the final stage of disposition review, or there is only one stage of disposition: The item is marked as eligible for permanent deletion. The exact timing for that deletion depends on the workload. For more information, see [How retention settings work with content in place](retention.md#how-retention-settings-work-with-content-in-place).
+    - When this action is selected for the final stage of disposition review, or there is only one stage of disposition: The item is marked as eligible for permanent deletion, which then happens within 7 days.
 - **Relabel**:
     - When this action is selected, the item exits the disposition review process for the original label. The item is then subject to the retention settings of the newly selected retention label.
 - **Extend**:
