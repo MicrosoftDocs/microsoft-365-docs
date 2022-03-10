@@ -31,6 +31,9 @@ description: "Learn how to use Microsoft 365 for business to factory reset Windo
 
 This article applies to Microsoft 365 Business Premium.
 
+> [!NOTE]
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
+
 A factory reset reverts a device to the original settings it had when the device was purchased. All apps and data on the device that were installed after purchase are removed. You can use Microsoft 365 for business to factory reset Windows 10 devices you manage.
   
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
@@ -42,4 +45,6 @@ A factory reset reverts a device to the original settings it had when the device
 4. On the **Are you sure you want to factory reset the devices below** pane, choose **Confirm** \> **Close**.
     
   
+## See also
 
+[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)
