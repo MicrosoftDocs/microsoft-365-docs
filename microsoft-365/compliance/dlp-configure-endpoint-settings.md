@@ -124,7 +124,7 @@ For performance reasons, Endpoint DLP includes a list of recommended file path e
 
 **Restricted app activities** is a list of applications that you create. You configure what actions DLP will take when an app on the list attempts to access a DLP protected file on a device. It's available for Windows 10 and macOS devices (preview).
 
-When **Audit or restrict activities on devices**, and **Access by restricted apps** is selected in a policy and an app that is on the restricted apps list attempts to access a protected file, the activity will be audited, blocked, or blocked with override. All activity is audited and available to review in activity explorer.
+When **Access by restricted apps** is selected in a policy and an app that is on the restricted apps list attempts to access a protected file, the activity will be audited, blocked, or blocked with override. All activity is audited and available to review in activity explorer.
 
 > [!IMPORTANT]
 > Do not include the path to the executable, but only the executable name (such as browser.exe).
