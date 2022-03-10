@@ -274,7 +274,7 @@ Anytime during a session, you can cancel a command by pressing CTRL + C.
 
 ## Run a script
 
-Before you can run a PowerShell/Bash scripts, you must first upload it to the library.
+Before you can run a PowerShell/Bash script, you must first upload it to the library.
 
 After uploading the script to the library, use the `run` command to run the script.
 
