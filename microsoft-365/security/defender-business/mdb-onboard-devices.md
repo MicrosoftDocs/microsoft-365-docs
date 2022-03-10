@@ -64,9 +64,15 @@ The following table describes the most commonly used methods to onboard devices 
 
 ## Automatic onboarding for Windows devices enrolled in Microsoft Endpoint Manager
 
-The automatic onboarding option applies to Windows devices only. Automatic onboarding is available if your organization was already using Microsoft Endpoint Manager, Microsoft Intune, or Mobile Device Management (MDM) in Microsoft Intune before you got Defender for Business, and you already have Windows devices enrolled in Endpoint Manager. 
+The automatic onboarding option applies to Windows devices only. Automatic onboarding is available if the following conditions are met:
+
+- Your organization was already using Microsoft Endpoint Manager, Microsoft Intune, or Mobile Device Management (MDM) in Microsoft Intune before you got Defender for Business
+- You already have Windows devices enrolled in Endpoint Manager
 
 If Windows devices are already enrolled in Endpoint Manager, Defender for Business will detect those devices while you are in the process of setting up and configuring Defender for Business. You'll be asked if you want to use automatic onboarding for all or some of your Windows devices. You can onboard all Windows devices at once, or select specific devices to start with, and then add more devices later.
+
+> [!TIP]
+> We recommend selecting the "all devices enrolled" option. That way, when Windows devices are enrolled in Endpoint Manager later on, they'll be onboarded to Defender for Business automatically.
 
 To learn more about automatic onboarding, see step 2 in [Use the wizard to set up Microsoft Defender for Business](mdb-use-wizard.md).
 
