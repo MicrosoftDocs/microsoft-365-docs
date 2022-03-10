@@ -36,8 +36,8 @@ Every  device is a possible attack avenue into your network and must be monitore
 Your objectives are as follows:
 
 - [Set up MFA](m365bp-multifactor-authentication.md)
-- [Install Office apps](m365bp-managed-devices-setup.md)
 - [Set up managed devices](m365bp-managed-devices-setup.md)
+- [Install Office apps](m365bp-managed-devices-setup.md)
 - [Protect unmanaged PCs and Macs](m365bp-protect-pcs-macs.md)
 
 Once you've achieved these objectives, proceed with your [next mission](m365bp-protect-email-overview.md).
