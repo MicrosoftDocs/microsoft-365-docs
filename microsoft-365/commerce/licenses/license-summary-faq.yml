@@ -1,0 +1,132 @@
+### YamlMime:FAQ
+metadata:
+  title: "Contracts Frequently Asked Questions"
+  author: cmcatee-MSFT
+  ms.author: cmcatee
+  manager: scotv
+  ms.reviewer: racheg, armanv
+  ms.date: 03/10/2021
+  audience: Admin
+  ms.topic: article
+  ms.service: o365-administration
+  ms.custom: commerce_vl
+  ms.localizationpriority: medium
+  description: "Frequently asked questions about Microsoft 365 admin center license contracts."
+    
+title: Contracts Frequently Asked Questions
+summary: |
+
+sections:
+  - name: General
+    questions:
+      - question: |
+          Why can I see the Contracts list?
+        answer: |
+          You can see the Contracts list if you’re a valid Volume Licensing (VL) user. You’re a VL user if you meet one of the following requirements:
+          
+          - You’re listed as a contact for the agreements in a legal Volume Licensing Program form. Contact types include Primary Contact, Notices Correspondent, Online Access Contact, Software Assurance Manager, Online Services Manager, or Subscriptions Manager.
+          - You’re an Administrator with access to the agreements.
+
+      - question: |
+          What is a Licensing ID?
+        answer: |
+          A Licensing ID identifies the program level at which orders can be placed by an organization. It can represent any of the following:
+          
+          - Enrollment (Enterprise or Select programs)
+          - Agreement (Open Value program)
+          - License (Open License program)
+          - Public Customer Number (PCN) (Select Plus program)
+          
+          Entitlements and site permissions are determined by the Licensing IDs available to your organization.
+
+      - question: |
+          Where are my MPSA contracts?
+        answer: |
+         Microsoft Products and Services Agreement (MPSA) license information is managed in the Microsoft Business Center or Microsoft Store for Business. No MPSA information is displayed in this contracts list. Learn about the MPSA.
+
+      - question: |
+          Why are some Licensing IDs for my organization not displayed in the list?
+        answer: |
+          A Licensing ID is only displayed if the user who is signed in has permission to view the Licensing ID details. Permission to view a specific Licensing ID on behalf of your organization is granted you meet one of the following criteria:
+          
+          - You’re listed as a contact for the agreements in a legal Volume Licensing Program form. Contact types include Primary Contact, Notices Correspondent, Online Access Contact, Software Assurance Manager, Online Services Manager, or Subscriptions Manager.
+          - You’re Administrator with access to the agreements.
+
+          For more information about VL permission roles and their allowable actions, see the Permissions FAQ.
+
+      - question: |
+          How long does it take for new license orders to appear in the contracts list?
+        answer: |
+          Recently purchased licenses are typically displayed in the list within 10 hours of Microsoft receiving your order from the Microsoft partner. Delays of a few days to a few weeks can occur if your partner delays forwarding the purchase order to Microsoft. Licenses display in the summary when the Coverage Start period for the order is met for all programs except Open License.
+          
+          The following data is available in the contacts list:
+          
+          Name of the Column	Description
+          Licensing ID	Key contacts and related licenses of your organization by specific Licensing ID
+          Parent Program Details	Key contacts and related Licensing IDs for your organization by licensing program
+          MBSA Details	Key contacts and related Licensing IDs for your organization as associated with a Microsoft Business and Services Agreement (MBSA).
+          Organization	The License Organization
+          Location	The combination of city and county of the License Organization
+          End date	The End date of the License
+          Status	The status of the License
+
+
+      - question: |
+          How do I change my download settings?
+        answer: |
+          To access download settings in the admin center:
+          1. Select **Volume Licensing**, and then select the product or **View downloads**.
+          2. Under **Download**, select the **Language** and **Operating System Type**.
+          
+          > [!NOTE]
+          > Pop-up blockers can block downloads. Make sure pop-up blockers are disabled when you download software from the admin center.
+
+      - question: |
+          What are EXE and ISO files?
+        answer: |
+          You can select two file types when you download products from the admin center:
+            
+            - **Executable (EXE) files** can be downloaded and installed on the same system, but you can’t create separate boot disks for installation on other computers.
+            - **ISO (International Standards Organization) image files** are exact representations of the content and the logical format. You can install these on the computer used to download the package or write the files to disks for distribution and installation on other computers.
+          
+          > [!NOTE]
+          > Not all products are available in all languages and in all formats.
+
+      - question: |
+          How do I use ISO image file software to download and save ISO image file to a CD-R or a DVD-R disk?
+        answer: |
+          If you’re using a PC with the Windows operating system, you don't need additional software to burn a CD-R or DVD-R. Double-click the ISO file you downloaded, and then follow the steps in the Image Burner Wizard.
+
+          If you’re using any operating system other than Windows, you might need additional software. If your computer is equipped with a CD/DVD burner, the software is probably loaded on your PC. Most CD-R/DVD-R writing software allows you to create a disk from an image file. Select a menu item such **Copy Image to CD** or **Burn Image to access** to access this feature.
+
+      - question: |
+          How do I mount and access ISO files as a virtual device?
+        answer: |
+          If you don't have a CD/DVD burner installed on your computer or media isn't available, you can mount the ISO file as a virtual drive. With this method, your computer believes that the file is a real disk drive, and you can read files from this virtual disk.
+          
+          > [!NOTE]
+          > This approach is advisable only for installing applications such as Office or minor system upgrades. You can’t install an operating system using this approach because the virtual drive disappears during the installation.
+
+      - question: |
+          How do I get support for downloaded products?
+        answer: |
+          For a list of support options, see [Microsoft Support](https://support.microsoft.com/). Some Volume Licensing customers can use Problem Resolution Support, a Software Assurance Benefit. Review your Software Assurance Benefits to verify your eligibility.
+
+      - question: |
+          Where can I find support for the topics covered in this FAQ?
+        answer: |
+          For more training resources, including videos, see [Microsoft Volume Licensing Service Center training and resources](https://www.microsoft.com/licensing/existing-customer/vlsc-training-and-resources).
+      
+      - question: |
+          How can I contact Microsoft Support?
+        answer: |
+          For VLSC customer phone or web form support, see [Contact Us](/licensing/contact-us). Microsoft responds to web form submissions within 24 hours.
+          
+additionalContent: |
+
+  ## Additional resources
+  
+  - [Product keys FAQ](product-keys-faq.yml)
+
+  - [Online services activation for Open programs FAQ](online-service-activation-faq.yml)
+  
