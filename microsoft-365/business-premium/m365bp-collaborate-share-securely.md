@@ -30,7 +30,7 @@ description: "An overview on how to collaborate and share securely"
 
 ## Overview
 
-You're already armed with the protection afforded by the Office apps, but now you need to set up protections for file sharing and communication. In this mission, focus on setting up protections so that members of your organization can safely share files. Your files are the data and information that your organization is built upon, so protect them with everything you've got!
+You're already armed with the protection afforded by the Office apps, but your next mission is to set up protections for file sharing and communication. Focus on setting up protections so that members of your organization can safely share files. This is the data and information that your organization is built upon, so protect the files with everything you've got!
 
 Your objectives are as follows:
 
@@ -39,4 +39,4 @@ Your objectives are as follows:
 - [Share files and videos](share-files-and-videos.md)
 - [Create a communication site](create-communication-site.md)
 
-After you complete these objectives, start your [final mission]().
+After you complete these objectives, start your [final mission](m365bp-protect-devices.md).
