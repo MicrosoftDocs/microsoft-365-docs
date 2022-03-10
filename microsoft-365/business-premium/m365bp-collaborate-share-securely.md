@@ -28,4 +28,15 @@ description: "An overview on how to collaborate and share securely"
 
 # Collaborate and share securely
 
-KEITH'S OVERVIEW CONTENT FOR THIS SECTION GOES HERE
+## Overview
+
+You're already armed with the protection afforded by the Office apps, but now you need to set up protections for file sharing and communication. In this mission, focus on setting up protections so that members of your organization can safely share files. Your files are the data and information that your organization is built upon, so protect them with everything you've got!
+
+Your objectives are as follows:
+
+- [Create Teams for collaboration](create-teams-for-collaboration.md)
+- [Set up meetings](set-up-meetings.md)
+- [Share files and videos](share-files-and-videos.md)
+- [Create a communication site](create-communication-site.md)
+
+After you complete these objectives, start your [final mission]().
