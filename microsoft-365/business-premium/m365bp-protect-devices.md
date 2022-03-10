@@ -30,7 +30,7 @@ description: "An overview on how to protect devices"
 
 ## Overview
 
-Welcome to your final critical mission! Here, you will initiate the capabilities of Defender to protect all the devices in your organization, making it a veritable citadel. Onboard with Defender to ensure malware and antivirus is always up-to-date, and set policies that make your systems lock-tight. Rest assured you're fully protected once these objectives have been achieved!
+Welcome to your final critical mission. Here, you will initiate the capabilities of Defender to protect all the devices in your organization, making it a veritable citadel. Onboard with Defender to ensure malware and antivirus is always up-to-date, and set policies that make your systems lock-tight. Rest assured you're fully protected once these objectives have been achieved!
 
 Your mission objectives:
 
