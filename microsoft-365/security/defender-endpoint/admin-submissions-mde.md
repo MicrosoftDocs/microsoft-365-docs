@@ -49,7 +49,7 @@ In this interactive guide, you'll learn how Microsoft Defender for Endpoint can 
 
   - **Organization Management** or **Security Administrator** in the [Microsoft 365 Defender portal](../office-365-security/permissions-microsoft-365-security-center.md).
 
-- For more information about how you can submit spam, phish, URLs, files, and file hashes (SHAs) to Microsoft, see [Report messages and files to Microsoft](../office-365-security/report-junk-email-messages-to-microsoft.md).
+- For more information about how you can submit spam, phish, URLs, and email attachments to Microsoft, see [Report messages and files to Microsoft](../office-365-security/report-junk-email-messages-to-microsoft.md).
 
 ## Report suspicious content to Microsoft
 
@@ -66,9 +66,9 @@ If you have a file that you suspect might be malware or is being incorrectly det
 
 3. In the **Select the submission type** box, select **File** or **File hash** from the drop-down list. 
 
-4. Click **Browse files**. In the dialog that opens, find and select the file, and then click **Open**. Note that for **File hash** submissions, you'll either have to copy or type in the file hash. 
+4. When submitting a file, click **Browse files**. In the dialog that opens, find and select the file, and then click **Open**. Note that for **File hash** submissions, you'll either have to copy or type in the file hash. 
 
-5. In the **This file should have been categorized as** section, choose either **Malware**, or **Unwanted software**, or **Clean** (false positive).
+5. In the **This file should have been categorized as** section, choose either **Malware** (false negative), or **Unwanted software**, or **Clean** (false positive).
   
 6. Next, **Choose the priority**. Note that for **File hash** submissions, **Low - bulk file or file hash submission** is the only choice, and is automatically selected.
 
@@ -85,7 +85,7 @@ You can also submit a file or file hash directly from the list of alerts on the 
 
 1. Open the Microsoft 365 Defender at <https://security.microsoft.com/>, click **Incidents & alerts**, and then click **Alerts** to view the list of alerts.
 
-2. Select the alert you want to report.  
+2. Select the alert you want to report. Note that you are submitting a file that is nestled within the alert.  
 
 3. Click the ellipses next to **Manage alert** to see additional options. Select **Submit items to Microsoft for review**.
 
