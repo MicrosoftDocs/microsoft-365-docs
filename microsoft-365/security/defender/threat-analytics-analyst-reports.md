@@ -55,7 +55,7 @@ Each section of the analyst report is designed to provide actionable information
 | Change log | The time the report was published and when significant changes were made to the report. |
 
 ## Apply additional mitigations
-Threat analytics dynamically tracks the [status of security updates and secure configurations](threat-analytics.md#exposure-and-mitigations-review-list-of-mitigations-and-the-status-of-your-devices). This information is available as charts and tables in the **Mitigations** tab.
+Threat analytics dynamically tracks the [status of security updates and secure configurations](threat-analytics.md#exposure-and-mitigations-review-list-of-mitigations-and-the-status-of-your-devices). This information is available as charts and tables in the **Exposure & mitigations** tab.
 
 In addition to these tracked mitigations, the analyst report also discusses mitigations that are _not_ dynamically monitored. Here are some examples of important mitigations that are not dynamically tracked:
 
@@ -64,7 +64,7 @@ In addition to these tracked mitigations, the analyst report also discusses miti
 - Educate end users about phishing email and other threat vectors
 - Turn on specific [attack surface reduction rules](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction)
 
-While you can use the **Mitigations** tab to assess your security posture against a threat, these recommendations let you take additional steps towards improving your security posture. Carefully read all the mitigation guidance in the analyst report and apply them whenever possible.
+While you can use the **Exposure & mitigations** tab to assess your security posture against a threat, these recommendations let you take additional steps towards improving your security posture. Carefully read all the mitigation guidance in the analyst report and apply them whenever possible.
 
 ## Understand how each threat can be detected
 The analyst report also provides the detections from Microsoft Defender Antivirus and _endpoint detection and response_ (EDR) capabilities.
