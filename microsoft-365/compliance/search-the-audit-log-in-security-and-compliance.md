@@ -196,7 +196,7 @@ Here's the process for searching the audit log in Microsoft 365.
 
 4. Click **Search** to run the search using your search criteria.
 
-   The search results are loaded, and after a few moments they are displayed on a new page. When the search is finished, the number of results found is displayed. A maximum of 50,000 events will be displayed in increments of 150 events.
+   The search results are loaded, and after a few moments they are displayed on a new page. When the search is finished, the number of results found is displayed. A maximum of 50,000 events will be displayed in increments of 150 events. If more than 50,000 events meet the search criteria, only the 50,000 unsorted events returned will be displayed.
 
    ![The number of results are displayed after the search is finished.](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
