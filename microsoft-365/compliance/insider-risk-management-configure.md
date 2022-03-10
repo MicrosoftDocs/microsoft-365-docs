@@ -99,7 +99,7 @@ You'll choose from these role group options and solution actions when working wi
 | View & export audit logs | Yes | No | No | No | Yes |
 
 >[!IMPORTANT]
->Make sure you always have at least one user in the *Insider Risk Management* or *Insider Risk Management Admin* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get in to a 'zero administrator' scenario if specific users leave your organization.
+>Make sure you always have at least one user in the Built-In *Insider Risk Management* or *Insider Risk Management Admin* role groups (depending on the option you choose) so that your insider risk management configuration doesn't get in to a 'zero administrator' scenario if specific users leave your organization.
 
 Members of the following roles can assign users to insider risk management role groups and have the same solution permissions included with the *Insider Risk Management Admin* role group:
 
