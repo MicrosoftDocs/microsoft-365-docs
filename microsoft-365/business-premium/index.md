@@ -2,8 +2,8 @@
 title: "Microsoft 365 Business Premium Overview"
 f1.keywords:
 - NOCSH
-ms.author: samanro
-author: samanro
+ms.author: v-kcirillo
+author: v-kcirillo
 manager: scotv
 ms.audience: Admin
 ms.topic: article
@@ -29,11 +29,11 @@ description: "Learn how to collaborate securely in your small business or campai
 
 # Microsoft 365 Business Premium Overview
 
-Let us begin by saying that you have made a wise choice in adopting Microsoft 365 Business Premium. Though there are other small business productivity tools from which to choose, nothing compares to Microsoft 365 Business Premium for keeping your business safe from cybercriminals.
+Let us begin by saying that you made a wise choice in adopting Microsoft 365 Business Premium. There are other small business productivity tools out there, but none of them compare to Microsoft 365 Business Premium for keeping your organization safe from cybercriminals.
 
-You are the Chief Cybersecurity Officer and therefore are your organization’s best defense against hackers and cybercriminals, including random individuals, organized crime, or even highly sophisticated nation-states. The security of the organization rests upon you. Let Microsoft 365 Business Premium help secure your organization’s future.  
+As Chief Cybersecurity Officer you are your organization’s first best defense against hackers and cybercriminals, including random individuals, organized crime, or even highly sophisticated nation-states. This is the task before you. Let Microsoft 365 Business Premium help you secure your organization’s future.  
 
-Success will depend on how well you implement the recommendations in this library and accomplish the assigned missions to thwart hackers, protect against ransomware, and ensure that your organization’s purpose and direction are not disrupted. 
+Success depends on you completing the assigned missions before, which will allow you to thwart hackers, protect against ransomware, and ensure that your organization’s purpose and potential are not disrupted. Let's get started!
 
 In the process of setting up impenetrable defenses, you will complete the following missions:
 
@@ -50,7 +50,7 @@ In the process of setting up impenetrable defenses, you will complete the follow
 [**Protect devices with Defender for Business**](m365bp-protect-devices.md). This mission is all about augmenting your security with Defender.
 
 >[NOTE]
->There will be times when completing your objectives will take you away from the mission at hand. After completing a side quest, remember to always return here to continue the assigned mission. The fate of the org depends on you!
+>There will be times when completing your objectives will take you away from the mission at hand. After completing a side quest, remember to return here to continue the assigned mission. The fate of the org depends on you.
 
 :::image type="content" source="media/m365-whatisit-securityfocus2.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
 <!---
