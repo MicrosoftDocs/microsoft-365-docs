@@ -102,14 +102,6 @@ Filter the alerts based on the following Service sources:
 
 You can filter the alerts based on Tags assigned to alerts.
 
-### Entities
-
-You can filter the alerts based on Entity name or ID. 
-
-### Automated investigation state
-
-You can choose to filter the alerts based on their Automated investigation state.
-
 ### Policy 
 
 You can filter the alerts based on the following policies:
@@ -128,6 +120,16 @@ You can filter the alerts based on the following policies:
 - Remediation action taken by admin on emails or URL or sender
 - Suspicious service creation 
 - Unfamiliar sign-in properties
+
+### Entities
+
+You can filter the alerts based on Entity name or ID. 
+
+### Automated investigation state
+
+You can choose to filter the alerts based on their Automated investigation state.
+
+
 
 ## Related topics
 
