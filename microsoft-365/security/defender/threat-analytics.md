@@ -46,9 +46,11 @@ Watch this short video to learn more about how threat analytics can help you tra
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
 
-You can access threat analytics either from the upper left-hand side of Microsoft 365 security portal’s navigation bar, or from a dedicated dashboard card, which shows the top threats to your org. Getting visibility on active or ongoing campaigns and knowing what to do through threat analytics can help equip your security operations team to make informed decisions.
+You can access threat analytics either from the upper left-hand side of Microsoft 365 security portal’s navigation bar, or from a dedicated dashboard card that shows the top threats to your org, both in terms of impact, and in terms of exposure.
 
 ![Image of the threat analytics dashboard.](../../media/threat-analytics/ta_inlandingpage_mtp.png)
+
+High impact threats have the greatest potential to cause harm, while high exposure threats are the ones that your assets are most vulnerable to. Getting visibility on active or ongoing campaigns and knowing what to do through threat analytics can help equip your security operations team with informed decisions.
 
 _Where to access threat analytics_
 
