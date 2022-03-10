@@ -23,18 +23,16 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "An overview on how to protect devices"
+description: "How to set up managed devices"
 ---
 
 # Set up managed devices
 
-CONTENT TO FOLLOW
-
-What is a managed device?
+A managed device is one that is under control and being monitored by the organization. These devices are enrolled in a device manager such as Intune, or Azure Active Directory Premium. Microsoft 365 Business Premium offers both.  
 
 ## Enroll devices in Microsoft Endpoint Manager
 
-Go to Intune and enroll managed devices (Windows, macOS, iOS, and Android)
+To start, you need to go to Intune and enroll the devices (Windows, macOS, iOS, and Android).
 
 ## Onboard devices to Microsoft Defender for Business
 
