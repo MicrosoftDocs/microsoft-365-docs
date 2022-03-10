@@ -33,7 +33,7 @@ Let us begin by saying that you made a wise choice in adopting Microsoft 365 Bus
 
 As Chief Cybersecurity Officer you are your organization’s first best defense against hackers and cybercriminals, including random individuals, organized crime, or even highly sophisticated nation-states. This is the task before you. Let Microsoft 365 Business Premium help you secure your organization’s future.  
 
-Success depends on you completing the assigned missions before, which will allow you to thwart hackers, protect against ransomware, and ensure that your organization’s purpose and potential are not disrupted. Let's get started!
+Success depends on you completing the assigned missions ahead, which will allow you to thwart hackers, protect against ransomware, and ensure that your organization’s purpose and potential are not disrupted. Let's get started!
 
 In the process of setting up impenetrable defenses, you will complete the following missions:
 
