@@ -30,6 +30,14 @@ description: "An overview on how to protect devices"
 
 ## Overview
 
-This is your final mission. Here, you will initiate the capabilities of Defender to protect all the devices in your organization, making it a veritable citadel. Onboard with Defender to ensure malware and antivirus is always up to date, and 
+Welcome to your final critical mission! Here, you will initiate the capabilities of Defender to protect all the devices in your organization, making it a veritable citadel. Onboard with Defender to ensure malware and antivirus is always up to date, and set policies that make your systems lock-tight. You can rest assured you're fully protected once these objectives have been achieved!
+
+Your mission objectives:
+
+- Onboard devices to Microsoft Defender for Business
+- Review and edit device policies
+- Manage device groups
+
+Once these objectives are achieved, your overall mission to protect the org are a success! Next, set up your response teams to deal with any situation that may arise in defending the integrity of the system.
 
 
