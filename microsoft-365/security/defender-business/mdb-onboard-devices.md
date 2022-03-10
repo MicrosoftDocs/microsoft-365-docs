@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/03/2022
+ms.date: 03/09/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -66,8 +66,6 @@ The following table describes the most commonly used methods to onboard devices 
 | **Microsoft Intune** or **Microsoft Endpoint Manager**<br/>(*available to customers who are using Microsoft Intune or Endpoint Manager*) | [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Mobile Device Management](/mem/intune/enrollment/device-enrollment) are part of Endpoint Manager. Microsoft 365 Business Premium customers already have Microsoft Intune, and can use this option.<br/><br/>If you were already using Endpoint Manager before you got Defender for Business, you can opt to continue using Endpoint Manager to onboard and manage devices<br/><br/>To use this method, see [Microsoft Endpoint Manager](#microsoft-endpoint-manager). | Windows <br/>macOS<br/>iOS<br/>Android OS | 
 | **Microsoft Defender for Business security configuration** <br/>(*uses the Microsoft 365 Defender portal*) | To use this option, you configure certain settings to facilitate communication between Defender for Business and Endpoint Manager. Then, you onboard devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) by using a package that you download and run on each device. A trust is established between devices and Azure Active Directory (Azure AD), and Defender for Business security policies are pushed to devices.<br/><br/>To learn more, see [Microsoft Defender for Business security configuration](#microsoft-defender-for-business-security-configuration). | Windows <br/>macOS |
 
-
-
 > [!IMPORTANT]
 > If something goes wrong and your onboarding process fails, see [Microsoft Defender for Business troubleshooting](mdb-troubleshooting.yml).
 
@@ -81,7 +79,7 @@ To learn more about automatic onboarding, see step 2 in [Use the wizard to set u
 
 ## Local script in Defender for Business
 
-You can use a local script to onboard Windows and Mac devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory, enrolls the device in Microsoft Endpoint Manager, and onboards the device to Defender for Business. This method is useful for onboarding devices in Defender for Business. You can onboard up to 10 devices at a time.
+You can use a local script to onboard Windows and Mac devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory (if that trust doesn't already exist), enrolls the device in Microsoft Endpoint Manager (if it isn't already enrolled), and then onboards the device to Defender for Business. This method is useful for onboarding devices in Defender for Business. You can onboard up to 10 devices at a time.
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
@@ -109,7 +107,7 @@ See [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enroll
 
 Microsoft Defender for Business security configuration was built on a capability known as [Security Management for Microsoft Defender for Endpoint (preview)](/mem/intune/protect/mde-security-integration). It enables you to onboard devices to Defender for Business in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) without requiring those devices to be fully enrolled in Microsoft Endpoint Manager beforehand. 
 
-This method enables you to onboard devices and manage your antivirus and firewall policies in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). Here's how it works:
+This method enables you to onboard devices and manage your antivirus and firewall policies in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). Here's how it all works:
 
 1. You download an onboarding package from the Microsoft 365 Defender portal, and then run the package on your devices to onboard those devices to Defender for Business.
 
