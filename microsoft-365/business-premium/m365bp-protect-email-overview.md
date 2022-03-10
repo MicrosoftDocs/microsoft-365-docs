@@ -31,9 +31,9 @@ description: "An overview on how to protect your email"
 
 ## Overview
 
-As you know, emails are full of malicious attacks parading as harmless emails. Email systems are especially vulnerable because email is handled by everyone in the company to communicate, and it relies upon humans making consistently safe decisions with those communications. 
+As you know, emails are full of malicious attacks cloaked as harmless emails. Email systems are especially vulnerable because email is handled by everyone in the organization to communicate, and it relies upon humans making consistently safe decisions with those communications. 
 
-In this mission, you are ensuring email systems are safe from these attackers. 
+In this mission you are ensuring email systems are safe from attackers. 
 
 The mission objectives are to:
 
