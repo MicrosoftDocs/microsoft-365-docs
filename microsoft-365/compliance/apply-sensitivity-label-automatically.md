@@ -312,9 +312,9 @@ In all cases, matched files are labeled until the OneDrive account is permanentl
     
     If you change the default settings by using **Included** or **Excluded**:
     
-    - For the **Exchange** location, the policy is applied according the sender address of the recipients specified. Most of the time, you'll want to keep the default of **All** included and use the advanced rules in the next step to configure conditions to include or exclude recipients in your organization. Otherwise:
+    - For the **Exchange** location, the policy is applied according the sender address of the recipients specified. Most of the time, you'll want to keep the default of **All** included with **None** excluded. This configuration is suitable even if you're testing for a subset of users. Instead of specifying your subset of users here, use the advanced rules in the next step to configure conditions to include or exclude recipients in your organization. Otherwise, when you change the default settings here:
         -  If you change the default of **All** included and instead, choose specific users or groups, email sent from outside your organization will be exempt from the policy. 
-        -  If you keep the default of **All** included but specify users or groups to exclude, email sent by these users will be be exempt from the policy, but not email sent to these users.
+        -  If you keep the default of **All** included but specify users or groups to exclude, email that these excluded users send will be exempt from the policy, but not email that they receive.
     
     - For OneDrive accounts, see [Get a list of all user OneDrive URLs in your organization](/onedrive/list-onedrive-urls) to help you specify individual OneDrive accounts to include or exclude.
 
