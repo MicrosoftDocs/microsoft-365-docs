@@ -59,6 +59,7 @@ The following steps will guide you through onboarding VDI devices and will highl
 > For environments where there are low resource configurations, the VDI boot procedure might slow the Defender for Endpoint sensor onboarding.
 
 ### For Windows 10, or Windows 11, or Windows Server 2012 R2 and later
+
 > [!NOTE]
 > Windows Server 2016 and Windows Server 2012 R2 will need to be prepared by applying the installation package first using the instructions in [Onboard Windows servers](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2012-r2-and-windows-server-2016) for this feature to work.
 
