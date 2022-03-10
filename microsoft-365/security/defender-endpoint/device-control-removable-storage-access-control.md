@@ -172,7 +172,7 @@ Before you get started with Removable Storage Access Control, you must confirm y
 4. Default enforcement: allows you to set default access (Deny or Allow) to removable media if there is no policy. For example, you only have policy (either Deny or Allow) for RemovableMediaDevices, but do not have any policy for CdRomDevices or WpdDevices, and you set default Deny through this policy, Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked.
 
    - Once you deploy this setting, you will see **Default Allow** or **Default Deny**.
-   - Consider both Disk level and File system level AccessMask when configure this setting, for example, if you want to Default Deny but allow specific storage, you have to allow both Disk level and Fiel system level access, you have to set AccessMask to 63.
+   - Consider both Disk level and File system level AccessMask when configuring this setting, for example, if you want to Default Deny but allow specific storage, you have to allow both Disk level and File system level access, you have to set AccessMask to 63.
 
     :::image type="content" source="images/148609579-a7df650b-7792-4085-b552-500b28a35885.png" alt-text="Default Allow or Default Deny PowerShell code":::
 
