@@ -31,26 +31,26 @@ description: "Learn how to collaborate securely in your small business or campai
 
 Let us begin by saying that you made a wise choice in adopting Microsoft 365 Business Premium. There are other small business productivity tools out there, but none of them compare to Microsoft 365 Business Premium for keeping your organization safe from cybercriminals.
 
-As Chief Cybersecurity Officer you are your organization’s first best defense against hackers and cybercriminals, including random individuals, organized crime, or even highly sophisticated nation-states. This is the task before you. Let Microsoft 365 Business Premium help you secure your organization’s future.  
+As Chief Cybersecurity Officer you are your organization’s first and best defense against hackers and cybercriminals, including random individuals, organized crime, or even highly sophisticated nation-states. This is the task before you. Let Microsoft 365 Business Premium help you secure your organization’s future.  
 
-Success depends on you completing the assigned missions ahead, which will allow you to thwart hackers, protect against ransomware, and ensure that your organization’s purpose and potential are not disrupted. Let's get started!
+Success depends on you completing the assigned missions ahead, which will allow you to thwart hackers, protect against ransomware, and ensure that your organization’s purpose and potential are not disrupted. Let's get started.
 
 In the process of setting up impenetrable defenses, you will complete the following missions:
 
-[**Set up your environment**](m365bp-setup-overview.md). In your first mission, you set up and implement security across all accounts in the system.
+[**Set up your environment**](m365bp-setup-overview.md). In this first mission, you set up and implement security across all accounts in the system.
 
-[**Bump up security protection**](m365bp-security-overview.md). Here, you set up a number of security safeguards to protect your organization. 
+[**Bump up security protection**](m365bp-security-overview.md). Set up a number of security safeguards to protect your organization. 
 
 [**Set up devices**](m365bp-devices-overview.md). In this mission, you set up all types of devices so they are safely part of the ecosystem.
 
-[**Protect email**](m365bp-email-overview.md). Here you must take the steps to protect the email systems from attack.
+[**Protect email**](m365bp-email-overview.md). In this mission, take the necessary steps to protect the email systems from attack.
 
-[**Collaborate and share securely**](m365bp-collaborate-share-securely.md). In this mission, you set up secure file sharing for all members of the organization.
+[**Collaborate and share securely**](m365bp-collaborate-share-securely.md). The objectives of this mission require you to set up secure file sharing for all members of the organization.
 
-[**Protect devices with Defender for Business**](m365bp-protect-devices.md). This mission is all about augmenting your security with Defender.
+[**Protect devices with Defender for Business**](m365bp-protect-devices.md). This mission is about augmenting your security with Defender for Business, a critical piece of the puzzle.
 
 >[NOTE]
->There will be times when completing your objectives will take you away from the mission at hand. After completing a side quest, remember to return here to continue the assigned mission. The fate of the org depends on you.
+>There will be times when completing your objectives takes you away from the mission at-hand. After completing a side quest, remember to return here to continue the assigned mission. The fate of the org depends on you.
 
 :::image type="content" source="media/m365-whatisit-securityfocus2.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
 <!---
