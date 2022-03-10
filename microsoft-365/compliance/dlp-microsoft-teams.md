@@ -28,6 +28,11 @@ If your organization has data loss prevention (DLP), you can define policies tha
 
 - **Example 2: Protecting sensitive information in documents**. Suppose that someone attempts to share a document with guests in a Microsoft Teams channel or chat, and the document contains sensitive information. If you have a DLP policy defined to prevent this, the document won't open for those users. Your DLP policy must include SharePoint and OneDrive in order for protection to be in place. This is an example of DLP for SharePoint that shows up in Microsoft Teams, and therefore requires that users are licensed for Office 365 DLP (included in Office 365 E3), but does not require users to be licensed for Office 365 Advanced Compliance.)
 
+- **Example 3: Protecting communications in Teams Shared Channels**. For shared channels, the host Teams team DLP policy are applied. For example let’s say there's a shared channel owned by TeamA of Contoso. TeamA has a DLP policy P1. There are 3 ways to share a channel:
+    - **Share with member**: You invite user1 from Contoso to join the shared channel without making him a member of TeamA. Everyone in this shared channel, including user1, will be covered by P1.
+    - **Share with team (internally)**: You share the channel with another team TeamB in Contoso. That another team may have a different DLP policy, but that doesn’t matter. P1 will apply to everyone in this shared channel, including both TeamA and TeamB users.
+    - **Share with team (cross tenant)**: You share the channel with a team TeamF in Fabrikam. Fabrikam may have its own DLP policy, but that doesn’t matter. P1 will apply to everyone in this shared channel, including both TeamA (Contoso) and TeamF (Fabrikam) users.
+ 
 ## DLP Licensing for Microsoft Teams
 
 [Data loss prevention](dlp-learn-about-dlp.md) capabilities were extended to include Microsoft Teams chat and channel messages, **including private channel messages** for:
