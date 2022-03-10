@@ -61,6 +61,8 @@ Learn more about how to use and implement SharePoint Syntex in your organization
 |See example scenarios to give you ideas about how you can use SharePoint Syntex in your organization |[Scenarios and use cases for SharePoint Syntex](./adoption-scenarios.md)| 
 |Set up and run a trial pilot program for SharePoint Syntex |[Run a trial](./trial-syntex.md)|
 |Learn how to use SharePoint Syntex to automate document processes |[Manage contracts using a Microsoft 365 solution](./solution-manage-contracts-in-microsoft-365.md)| 
+|Try out this customizable SharePoint site template to help manage contracts |[Use the Contracts Management site template](./use-contracts-management-site.md)| 
+|Try out this instructional Content Center site template to learn more about models |[Use the Content Center site template](./use-content-center-site.md)| 
 
 ## Set up SharePoint Syntex
 
