@@ -1,5 +1,5 @@
 ---
-title: Difference between document understanding and form processing models
+title: Differences between document understanding and form processing models
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,10 +12,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about key difference between a document understanding model and a form processing model.
+description: Learn about key differences between a document understanding model and a form processing model.
 ---
 
-# Difference between document understanding and form processing models 
+# Differences between document understanding and form processing models 
 
 Content understanding in Microsoft SharePoint Syntex allows you to identify and classify documents that are uploaded to SharePoint document libraries, and extract relevant information from each file.  For example, as files are uploaded to a SharePoint document library, all files that are identified as *Purchase Orders* are classified as such, and then displayed in a custom document library view. Additionally, you can pull specific information from each file (for example, *PO Number* and *Total*) and display it as a column in your document library view. 
 

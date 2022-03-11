@@ -1,5 +1,5 @@
 ---
-title: "Activity Reports in the Microsoft 365 admin center"
+title: "Microsoft 365 admin center activity reports"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
