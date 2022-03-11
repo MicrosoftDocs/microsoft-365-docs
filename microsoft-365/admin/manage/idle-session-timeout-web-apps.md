@@ -26,21 +26,20 @@ When a user reaches the idle timeout session you've set, they'll get a notificat
 
 ## Turn on Idle session timeout
 
-1. In the Microsoft 365 admin center, select **Org Settings** **->**  [Security & privacy](https://go.microsoft.com/fwlink/p/?linkid=2072756) tab and select **Idle session timeout**.
+If you aren't a Microsoft 365 or Office 365 global admin, you won't see the **Security & privacy** tab.
 
-> [!NOTE]
-> If you aren't an Office 365 global admin, you won't see the **Security & privacy** tab.
+1. In the Microsoft 365 admin center, select **Org Settings** **->**  [Security & privacy](https://go.microsoft.com/fwlink/p/?linkid=2072756) tab and select **Idle session timeout**.
 
 2. On the **Idle Session Timeout** select the toggle to turn it on. You can choose a default setting or choose your own custom time. It'll take a few minutes for before idle session is turned on in your organization.
 
 > [!NOTE]
 > If you've set up idle session timeout policies for [Outlook web app](https://support.microsoft.com/topic/description-of-the-activity-based-authentication-timeout-for-owa-in-office-365-0c101e1b-020e-69c1-a0b0-26532d60c0a4) and [SharePoint Online](/sharepoint/sign-out-inactive-users)S, turning on idle session timeout in the admin center will override the Outlook web app and SharePoint settings.
 
-Idle session timeout is one of the many security measures in Microsoft 365. To learn about other security tasks in Microsoft 365 see [Top security tasks in Microsoft 365](../../security/top-security-tasks-for-remote-work.md).  
+Idle session timeout is one of the many security measures in Microsoft 365. To learn about other security tasks in Microsoft 365, see [Top security tasks in Microsoft 365](../../security/top-security-tasks-for-remote-work.md).  
 
 ## What users will see
 
-When a user has been inactive in Microsoft 365 web apps for the time period you chose, they'll see the following prompt. They have to select Stay signed in or they'll be signed out.
+When a user has been inactive in Microsoft 365 web apps for the time period you chose, they'll see the following prompt. They have to select **Stay signed in** or they'll be signed out.
 
 :::image type="content" source="../../media/idle-session-timeout.png" alt-text="Screenshot: Prompt letting you know that your session is about to expire. Select Stay signed in so you don't get signed out of Microsoft 365 web apps":::
 
@@ -77,9 +76,9 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
 
 ## Idle session timeout on unmanaged devices  
 
-For idle session timeout to get triggered on unmanaged devices, you'll need to add a Conditional Access policy in the Azure active directory admin center.
+For idle session timeout to get triggered on unmanaged devices, you'll need to add a Conditional Access policy in the Azure AD admin center.
 
-1. On the Conditional Access | Policies page of the Azure AD admin center, select **New policy** and enter a name for the policy.
+1. On the **Conditional Access | Policies** page of the Azure AD admin center, select **New policy** and enter a name for the policy.
 
 2. Select **Users or workload identities**, and then select **All users**.
 
