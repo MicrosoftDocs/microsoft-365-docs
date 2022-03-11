@@ -38,7 +38,7 @@ When a user reaches the idle timeout session you've set, they'll get a notificat
 
 Idle session timeout is one of the many security measures in Microsoft 365. To learn about other security tasks in Microsoft 365 see [Top security tasks in Microsoft 365](../../security/top-security-tasks-for-remote-work.md).  
 
-## Idle session timeout user experience
+## What users will see
 
 When a user has been inactive in Microsoft 365 web apps for the time period you chose, they'll see the following prompt. They have to select Stay signed in or they'll be signed out.
 
