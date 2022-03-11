@@ -40,12 +40,14 @@ A Windows 10 PC is considered managed after you have completed the following two
 
 Go to Intune and enroll the devices (Windows, macOS, iOS, and Android).
 
+Go to Endpoints > Device inventory (this kicks off the setup wizard for MDB). Choose Get started and work through the wizard. This onboards devices and applies endpoint protection policies to the devices
+
 ## Onboard devices to Microsoft Defender for Business
 
-(refer to [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md))
-
-Go to Endpoints > Device inventory (this kicks off the setup wizard for MDB). Choose Get started and work through the wizard. This onboards devices and applies endpoint protection policies to the devices
+(See your [Final mission](m365bp-protect-devices.md))
 
 ## Next steps
 
 [Protect all email](m365bp-protect-email-overview.md)
+
+<!---Should maybe just be the next objective (Install Office apps...).--->

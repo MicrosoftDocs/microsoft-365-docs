@@ -33,17 +33,17 @@ description: "Setup overview for Microsoft 365 Business Premium for campaigns or
 
 Welcome to your first mission. The following are enhanced security measures that are particularly useful for campaigns, but you may want to use these with any organization as part of your mission to achieve greater security.
 
-For this first mission, you're going to set up your initial security defenses to protect your organization. Sign in and initiate the [setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure overall security and licenses for your teams. 
+For this first mission, you're going to set up your initial security defenses to protect and defend your organization's systems and networks. Sign in and initiate the [setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure overall security and licenses for your teams. 
 
 Your objectives are to:
 
 - Sign up and sign in to Microsoft 365 for Business Premium
-- Set up your Microsoft 365 environment
+- Set up your Microsoft 365 Business Premium environment
 
 Once you've achieved these objectives, you can move on to the [next mission](m365bp-security-overview.md).
 
 <!---
-(In my opinion, this is only rehashing the same stuff covered in the TOC topics and references as "mission objectives" above. So, it's not needed here. Don't know if the paragraph for campaigns special pricing still applies, but it does rub against any narrative.)
+(In my opinion, this is only rehashing the same stuff covered in the TOC topics and referenced as "mission objectives" above and in the subsections. So, it's not needed here. Don't know if the paragraph for campaigns special pricing still applies, but it does rub against any narrative.)
 
 ## Admins: Set up Microsoft 365
 
