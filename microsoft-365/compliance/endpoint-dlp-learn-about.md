@@ -92,7 +92,7 @@ File Types are a grouping of file formats which are utilized to protect specific
 
 ### File extensions (preview)
 
-If the File types don't cover the file extensions you need, you can use file extensions separated by comma instead.
+If the File types don't cover the file extensions you need to list as a condition in a policy, you can use file extensions separated by comma instead.
 
 > [!IMPORTANT]
 > The file extensions and file types options cannot be used as conditions in the same rule. If you want to use them as conditions in the same policy, they must be in separate rules. 
