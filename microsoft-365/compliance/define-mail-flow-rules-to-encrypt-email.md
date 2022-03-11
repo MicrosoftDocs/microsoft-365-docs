@@ -98,7 +98,7 @@ You can define mail flow rules for triggering remove message encryption with the
 
 ### Use the EAC to create a rule to remove encryption from email messages with the new OME capabilities
 
-You can remove encryption that is applied by your organization.
+You can remove encryption from messages that was applied by your organization. You can also remove encryption from any encrypted attachments to ensure the whole email message is without any protection.
 
 1. In a web browser, using a work or school account that has been granted global administrator permissions, [sign in to Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
@@ -112,9 +112,11 @@ You can remove encryption that is applied by your organization.
 
 6. In **Apply this rule if**, select the conditions where encryption should be removed from messages. Add **The sender is located** \> **Inside the organization** for sending mail _or_ **The recipient is located** \> **Inside the organization** for receiving mail.
 
-7. In **Do the following**, select **Modify the message security** \> **Remove Office 365 Message Encryption and rights protection**.
+7. In **Do the following**, select **Modify the message security** \> **Remove Office 365 Message Encryption and rights protection applied by the organization**.
 
-8. Select **Save**.
+8. (Optional) In **Do the following**, select **Modify the message security** \> **Remove attachment rights protection protection applied by the organization**.
+
+Save the rule.
 
 ## Create mail flow rules for Office 365 Message Encryption without the new capabilities
 
