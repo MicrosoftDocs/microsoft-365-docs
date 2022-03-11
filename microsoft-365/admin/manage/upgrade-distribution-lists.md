@@ -194,10 +194,9 @@ OR
 
 The upgrade will happen only when the call is submitted to the server. If the upgrade fails, your DLs will be intact. They will work like they used to.
 
-### What happens to the Message approval (moderation) configuration on distribution group after upgrading to Microsoft 365 Group?
+### What happens to message approval (moderation) settings on distribution groups after upgrading?
 
-The message approval (moderation) settings configured on distribution group are preserved and continue to work fine after the distribution group is upgraded to Microsoft 365 Group.
-
+The message approval (moderation) settings are preserved and continue to work fine after the distribution group is upgraded to a Microsoft 365 Group.
 
 ## Related content
 
