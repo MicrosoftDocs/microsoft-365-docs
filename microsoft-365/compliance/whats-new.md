@@ -113,7 +113,7 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ### Compliance Manager
 
-New content updates can be viewed in [What's new in Microsoft Compliance Manager](compliance-manager-whats-new.md).
+New content updates can be viewed in [What's new in Microsoft Purview Compliance Manager](compliance-manager-whats-new.md).
 
 ### Device Onboarding
 

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Compliance Manager premium assessments trial playbook"
+title: "Microsoft Purview Compliance Manager premium assessments trial playbook"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -14,12 +14,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Compliance Manager premium assessments trial playbook."
+description: "Microsoft Purview Compliance Manager premium assessments trial playbook."
 ---
 
-# Trial playbook: Microsoft Compliance Manager premium assessments
+# Trial playbook: Microsoft Purview Compliance Manager premium assessments
 
-Welcome to the Microsoft Compliance Manager premium assessment trial playbook.
+Welcome to the Microsoft Purview Compliance Manager premium assessment trial playbook.
 
 This playbook will help you make the most of your 90-day free trial by teaching you how to use the comprehensive set of premium assessment templates (add-on).​
 

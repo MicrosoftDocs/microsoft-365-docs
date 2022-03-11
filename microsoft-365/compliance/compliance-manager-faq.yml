@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: "Microsoft Compliance Manager FAQ"
+  title: "Microsoft Purview Compliance Manager FAQ"
   f1.keywords:
   - NOCSH
   ms.author: chvukosw
@@ -14,7 +14,7 @@ metadata:
   search.appverid: 
   - MOE150
   - MET150
-  description: "Find answers to frequently asked questions about Microsoft Compliance Manager, which helps organizations simplify and automate risk assessments."
+  description: "Find answers to frequently asked questions about Microsoft Purview Compliance Manager, which helps organizations simplify and automate risk assessments."
     
 title: Compliance Manager frequently asked questions
 summary: |
@@ -35,7 +35,7 @@ sections:
           )
           ### The basics
           
-          Microsoft Compliance Manager began as a compliance management solution inside the Microsoft Service Trust Portal.  As compliance solutions came into in the Microsoft 365 compliance center, we developed a new experience with a more user-friendly design for this location. Compliance Score public preview was released in the Microsoft 365 compliance center in November 2019. Compliance Score shared the same backend as Compliance Manager, allowing customers to work in both places. Since November 2019, we’ve released several updates as we built new functionality and responded to customer feedback.
+          Microsoft Purview Compliance Manager began as a compliance management solution inside the Microsoft Service Trust Portal.  As compliance solutions came into in the Microsoft 365 compliance center, we developed a new experience with a more user-friendly design for this location. Compliance Score public preview was released in the Microsoft 365 compliance center in November 2019. Compliance Score shared the same backend as Compliance Manager, allowing customers to work in both places. Since November 2019, we’ve released several updates as we built new functionality and responded to customer feedback.
           
           The general availability of Compliance Manager in the Microsoft 365 compliance center in September 2020 completes this evolution. Compliance Manager is the unified, end-to-end compliance solution. Your compliance score remains a key component of Compliance Manager.
           
@@ -84,5 +84,5 @@ sections:
       - question: |
           Can I use Compliance Manager for non-Microsoft products?
         answer: |
-          While Compliance Manager provides continuous monitoring and recommended actions only for Microsoft cloud services, you can add custom assessments in Compliance Manager for your third-party services. In this way, you can use Microsoft Compliance Manager as a SaaS compliance management tool to help you manage all the controls across your digital assets.
+          While Compliance Manager provides continuous monitoring and recommended actions only for Microsoft cloud services, you can add custom assessments in Compliance Manager for your third-party services. In this way, you can use Microsoft Purview Compliance Manager as a SaaS compliance management tool to help you manage all the controls across your digital assets.
 

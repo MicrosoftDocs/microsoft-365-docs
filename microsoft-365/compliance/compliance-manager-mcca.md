@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Understand how to use Microsoft Compliance Configuration Analyzer to get up and running quickly with Microsoft Compliance Manager."
+description: "Understand how to use Microsoft Compliance Configuration Analyzer to get up and running quickly with Microsoft Purview Compliance Manager."
 ---
 
 # Microsoft Compliance Configuration Analyzer for Compliance Manager (preview)
@@ -25,7 +25,7 @@ description: "Understand how to use Microsoft Compliance Configuration Analyzer 
 
 ## Microsoft Compliance Configuration Analyzer (MCCA) (preview) overview
 
-The Microsoft Compliance Configuration Analyzer (MCCA) is a preview tool that can help you get started with [Microsoft Compliance Manager](compliance-manager.md). MCCA is a PowerShell-based utility that will fetch your organization’s current configurations and validate them against Microsoft 365 recommended best practices. These best practices are based on a set of controls that include key regulations and standards for data protection and data governance.
+The Microsoft Compliance Configuration Analyzer (MCCA) is a preview tool that can help you get started with [Microsoft Purview Compliance Manager](compliance-manager.md). MCCA is a PowerShell-based utility that will fetch your organization’s current configurations and validate them against Microsoft 365 recommended best practices. These best practices are based on a set of controls that include key regulations and standards for data protection and data governance.
 
 MCCA can help you quickly see which improvement actions in Compliance Manager apply to your current Microsoft 365 environment. Each action identified by MCCA will give you recommendations for implementation, with direct links to Compliance Manager and the applicable solution to start taking corrective action.
 

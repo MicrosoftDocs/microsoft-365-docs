@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Understand how Microsoft Compliance Manager calculates a personalized score based on actions taken to address risks and improve your compliance posture."
+description: "Understand how Microsoft Purview Compliance Manager calculates a personalized score based on actions taken to address risks and improve your compliance posture."
 ms.custom: seo-marvel-apr2020
 ---
 
