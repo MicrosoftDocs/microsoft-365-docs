@@ -1,5 +1,5 @@
 ---
-title: "About the Microsoft Compliance Manager premium assessment trial"
+title: "About the Microsoft Purview Compliance Manager premium assessment trial"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -13,10 +13,10 @@ ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
-description: "About the Microsoft Compliance Manager premium assessment trials."
+description: "About the Microsoft Purview Compliance Manager premium assessment trials."
 ---
 
-# About the free trial for Microsoft Compliance Manager premium assessments
+# About the free trial for Microsoft Purview Compliance Manager premium assessments
 
 Compliance Manager helps you manage your organization’s compliance requirements and assess and improve your compliance score. The assessments you build are based on templates that correspond to governmental regulations and industry standards around the world.  
 
@@ -59,6 +59,6 @@ After your trial ends, the templates you used won't receive automatic updates an
 
 ## Learn more about compliance
 
-To learn more about the features of Compliance Manager and how it can help your organization meet compliance and regulatory requirements, see [Microsoft Compliance Manager](compliance-manager.md).  
+To learn more about the features of Compliance Manager and how it can help your organization meet compliance and regulatory requirements, see [Microsoft Purview Compliance Manager](compliance-manager.md).  
 
 You can also learn about other Microsoft compliance solutions and how to start trials at [About the free trial for Microsoft 365 compliance](compliance-easy-trials.md).

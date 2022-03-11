@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Compliance Manager quickstart guide"
+title: "Microsoft Purview Compliance Manager quickstart guide"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -22,7 +22,7 @@ description: "Use the Compliance Manager quickstart guide to help you along your
 
 # Compliance Manager quickstart
 
-**In this article:** Use this quickstart guide to help you along your journey of using Microsoft Compliance Manager to manage your organization’s compliance with regulations, policies, and standards.
+**In this article:** Use this quickstart guide to help you along your journey of using Microsoft Purview Compliance Manager to manage your organization’s compliance with regulations, policies, and standards.
 
 Compliance Manager provides intelligent and actionable data upon your first visit. Compliance Manager also has advanced capabilities for scaling your compliance when you’re ready. Available assessments depend on your licensing agreement; [learn more](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 

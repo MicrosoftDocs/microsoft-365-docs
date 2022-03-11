@@ -38,7 +38,7 @@ When you first visit the Microsoft 365 compliance center, the card section on th
 
 From here, you can:
 
-- Review the **Microsoft Compliance Manager** card, which leads you to the [Compliance Manager](compliance-manager.md) solution. Compliance Manager helps simplify the way you manage compliance. It calculates a risk-based score measuring your progress toward completing recommended actions that help reduce risks around data protection and regulatory standards. It also provides workflow capabilities and built-in control mapping to help you efficiently carry out improvement actions.
+- Review the **Microsoft Purview Compliance Manager** card, which leads you to the [Compliance Manager](compliance-manager.md) solution. Compliance Manager helps simplify the way you manage compliance. It calculates a risk-based score measuring your progress toward completing recommended actions that help reduce risks around data protection and regulatory standards. It also provides workflow capabilities and built-in control mapping to help you efficiently carry out improvement actions.
 
     ![Compliance Manager card Microsoft 365 compliance center.](../media/m365-compliance-center-compliance-manager-card.png)
 
@@ -82,7 +82,7 @@ First, make sure that you have the appropriate licenses and permissions. Then, s
 
 ## Next steps
 
-- **Visit Microsoft Compliance Manager** to see your compliance score and start managing compliance for your organization. To learn more, see [Compliance Manager](compliance-manager.md).
+- **Visit Microsoft Purview Compliance Manager** to see your compliance score and start managing compliance for your organization. To learn more, see [Compliance Manager](compliance-manager.md).
 
 - **Configure insider risk management policies** to help minimize internal risks and enable you to detect, investigate, and take action for risky activities in your organization. See [Insider risk management](insider-risk-management.md).
 

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Compliance Manager alerts and alert policies"
+title: "Microsoft Purview Compliance Manager alerts and alert policies"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,10 +17,10 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to create alerts for activities in Microsoft Compliance Manager that can impact your compliance score."
+description: "Learn how to create alerts for activities in Microsoft Purview Compliance Manager that can impact your compliance score."
 ---
 
-# Microsoft Compliance Manager alerts and alert policies
+# Microsoft Purview Compliance Manager alerts and alert policies
 
 **In this article:** Learn how to **set alerts** for certain activities in Compliance Manager, how to manage alerts, and how to **create alert policies** for defining alert conditions.
 

@@ -1,5 +1,5 @@
 ---
-title: "Working with improvement actions in Microsoft Compliance Manager"
+title: "Working with improvement actions in Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how to implement and test controls by working with improvement actions in Microsoft Compliance Manager. Assign work, store documentation, and export reports."
+description: "Learn how to implement and test controls by working with improvement actions in Microsoft Purview Compliance Manager. Assign work, store documentation, and export reports."
 ---
 
 # Working with improvement actions in Compliance Manager
