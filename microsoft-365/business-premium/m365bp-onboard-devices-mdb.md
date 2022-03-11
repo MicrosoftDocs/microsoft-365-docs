@@ -74,11 +74,13 @@ You can use a local script to onboard Windows and Mac devices. When you run the 
 
 If you were already using Endpoint Manager (which includes Microsoft Intune and Mobile Device Management), before you got Defender for Business, you can continue to use Endpoint Manager to onboard your organization's devices. With Endpoint Manager, you can onboard computers, tablets, and phones, including iOS and Android devices.
 
-If your organization is using Android devices, use this method.
+## Enroll a device with Endpoint Manager and Intune
 
-See [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment).
+To enroll a device, sign in to your Intune account through the company portal, which is included with Microsoft 365 Business Premium. 
 
-NEED PROCEDURES HERE
+<!--KC NOTE: Where and how does this interact with the Endpoint Manager at endpoint.microsoft.com ?--->
+
+See [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment). 
 
 ## Run a detection test on a Windows device
 
