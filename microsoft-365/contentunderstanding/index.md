@@ -61,6 +61,8 @@ Learn more about how to use and implement SharePoint Syntex in your organization
 |See example scenarios to give you ideas about how you can use SharePoint Syntex in your organization |[Scenarios and use cases for SharePoint Syntex](./adoption-scenarios.md)| 
 |Set up and run a trial pilot program for SharePoint Syntex |[Run a trial](./trial-syntex.md)|
 |Learn how to use SharePoint Syntex to automate document processes |[Manage contracts using a Microsoft 365 solution](./solution-manage-contracts-in-microsoft-365.md)| 
+|Try out this customizable SharePoint site template to help manage contracts |[Use the Contracts Management site template](./use-contracts-management-site.md)| 
+|Try out this instructional Content Center site template to learn more about models |[Use the Content Center site template](./use-content-center-site.md)| 
 
 ## Set up SharePoint Syntex
 
@@ -82,6 +84,7 @@ The resources in this section help your users learn how to create and configure 
 |Apply a retention label to your model|[Apply a retention label to a document understanding model](./apply-a-retention-label-to-a-model.md)|
 |Apply a sensitivity label to your model|[Apply a sensitivity label to a document understanding model](./apply-a-sensitivity-label-to-a-model.md)|
 |Use prebuilt models to extract info from documents |[Use a prebuilt model to extract info from invoices or receipts](./prebuilt-models.md)|
+|Create and train models locally on a SharePoint site |[Create a model on a local SharePoint site](./create-local-model.md)|
 |Use trained models in other content centers |[Publish and discover document understanding models](./model-discovery.md)|
 |Perform metadata-based queries on document libraries|[Search for metadata in document libraries](./metadata-search.md)|
 |Use Managed Metadata services term store taxonomy when creating an extractor|[Leverage term store taxonomy when creating an extractor](./leverage-term-store-taxonomy.md)|
