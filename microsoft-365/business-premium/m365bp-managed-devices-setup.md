@@ -50,4 +50,4 @@ Go to Endpoints > Device inventory (this kicks off the setup wizard for MDB). Ch
 
 [Protect all email](m365bp-protect-email-overview.md)
 
-<!---Should maybe just be the next objective (Install Office apps...).--->
+<!---Should maybe just be the next objective, to keep them in this section (Install Office apps...).--->

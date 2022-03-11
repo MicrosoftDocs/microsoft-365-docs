@@ -55,9 +55,9 @@ Note: If you purchased Azure Active Directory Premium (AADP) Plan 1 or Plan 2, y
 
 # Set up mobile devices for Microsoft 365 for business users
 
-Follow the instructions in the tabs to install Office on an iPhone or an Android phone. After you follow these steps, your work files created in Office apps will be protected by Microsoft 365 for business.
+Use the following instructions to install Office on an iPhone or an Android phone. After you follow these steps, your work files created in Office apps will be protected by Microsoft 365 for business.
 
-The example is for Outlook, but applies for any other Office apps you want to install also.
+The example is for Outlook, but applies tp any other Office apps you want to install.
   
 ## Set up mobile devices
 
@@ -133,18 +133,6 @@ For additional details and information:
  
 - [Upgrade users to the latest apps](upgrade-users-to-latest-office-client.md) 
 
-
-<!--A Windows 10 PC is considered managed after you have completed the following two steps:
-
-1. You (or the admin) set up device and data protection policies in the [setup  wizard](../business/set-up.md).
-
-2. You have [connected your computer to Azure Active Directory](../business/set-up-windows-devices.md) and use your Microsoft 365 username and password to sign in.
-3.  
-
-## Protect a computer running Windows 10 or a Mac
-
-<!--If you have a PC that is running Windows 10 that is not connected to Microsoft 365, or a Mac, the Microsoft 365 protections do not apply to it, but here are some things you can do to keep your data secure on these devices as well:
--->
 If your Windows 10 PC or Mac is not managed by your organization, be sure to configure these security capabilities.
 
 ## [Windows 10](#tab/Windows10)

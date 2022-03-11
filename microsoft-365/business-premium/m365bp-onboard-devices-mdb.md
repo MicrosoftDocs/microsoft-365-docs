@@ -21,7 +21,7 @@ ms.collection:
 
 # Onboard managed devices to Microsoft Defender for Business
 
-Onboard devices to Microsoft Defender for Business to protect them with next-generation protection (antivirus, antimalware, and cloud-delivered protection), firewall protection, web content filtering and more. 
+Onboard devices to Microsoft Defender for Business to have next-generation protection (antivirus, antimalware, and cloud-delivered protection), firewall protection, web content filtering and more. 
 
 To onboard devices, you can choose from several options:
 
