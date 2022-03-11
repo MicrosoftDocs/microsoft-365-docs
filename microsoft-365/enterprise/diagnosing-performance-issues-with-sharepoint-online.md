@@ -43,6 +43,9 @@ This topic describes how to use each of these methods to diagnose performance is
 > If you're an administrator, and you're having trouble with performance in SharePoint, select **Run Tests** below, which will populate the Site and Page Performance diagnostic in the Microsoft 365 Admin Center. These tests will check your configuration and quickly recommend next steps to help improve SharePoint performance for your tenant.
 >> [!div class="nextstepaction"]
 >> [Run Tests: Check SharePoint Performance](https://aka.ms/PillarSiteandPagePerf)
+
+> [!NOTE] 
+> This feature is not available for Microsoft 365 Government, Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
   
 ## Using the F12 tool bar to diagnose performance in SharePoint Online
 <a name="F12ToolInfo"> </a>
