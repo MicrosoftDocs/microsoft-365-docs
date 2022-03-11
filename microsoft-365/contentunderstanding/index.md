@@ -73,6 +73,7 @@ The resources in this section help your admin in your organization to set up and
 |Set up and configure SharePoint Syntex|[Set up SharePoint Syntex](./set-up-content-understanding.md)|
 |Learn about licensing for SharePoint Syntex|[Licensing for SharePoint Syntex](./syntex-licensing.md)|
 |Learn about image tagging and how to disable|[Image tagging in SharePoint Syntex](./image-tagging.md)|
+|Use PowerShell to manage SharePoint Syntex|[Manage SharePoint Syntex with PowerShell](./powershell-syntex-intro.md)|
 
 ## Models
 
