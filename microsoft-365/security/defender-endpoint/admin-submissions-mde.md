@@ -107,5 +107,5 @@ You can also submit a file or file hash directly from the list of alerts on the 
 
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md)
 - [Address false positives/negatives](defender-endpoint-false-positives-negatives.md)
-- [Submit files for analysis](/windows/security/threat-protection/intelligence/submission-guide)
+- [Submit malware and non-malware for analysis](../office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
 - [View and organize alerts queue in Microsoft Defender for Endpoint](alerts-queue.md)
