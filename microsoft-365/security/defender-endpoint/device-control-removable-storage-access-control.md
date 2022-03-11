@@ -289,7 +289,7 @@ The [Microsoft 365 Defender portal](https://security.microsoft.com/advanced-hunt
 - Microsoft 365 for E5 reporting
 
 ```kusto
-//events triggered by RemovableStoragePolicyTriggered
+//RemovableStoragePolicyTriggered: event triggered by Disk level enforcement
 DeviceEvents
 | where ActionType == "RemovableStoragePolicyTriggered"
 | extend parsed=parse_json(AdditionalFields)
@@ -309,6 +309,29 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
+```kusto
+//RemovableStorageFileEvent: event triggered by File level enforcement, information of files written to removable storage 
+DeviceEvents
+| where ActionType contains "RemovableStorageFileEvent"
+| extend parsed=parse_json(AdditionalFields)
+| extend Policy = tostring(parsed.Policy) 
+| extend PolicyRuleId = tostring(parsed.PolicyRuleId) 
+| extend MediaClassName = tostring(parsed.ClassName)
+| extend MediaInstanceId = tostring(parsed.InstanceId)
+| extend MediaName = tostring(parsed.MediaName)
+| extend MediaProductId = tostring(parsed.ProductId) 
+| extend MediaVendorId = tostring(parsed.VendorId) 
+| extend MediaSerialNumber = tostring(parsed.SerialNumber) 
+| extend DuplicatedOperation = tostring(parsed.DuplicatedOperation)
+| extend FileEvidenceLocation = tostring(parsed.TargetFileLocation) 
+| project Timestamp , DeviceId, DeviceName, InitiatingProcessAccountName, 
+    ActionType, Policy, PolicyRuleId, DuplicatedOperation, 
+    MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber,
+    FileName, FolderPath, FileSize, FileEvidenceLocation,
+    AdditionalFields
+| order by Timestamp desc
+```
+    
 :::image type="content" source="images/block-removable-storage.png" alt-text="The screen depicting the blockage of the removable storage.":::
 
 ## Frequently asked questions
