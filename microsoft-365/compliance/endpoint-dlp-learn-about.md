@@ -97,6 +97,13 @@ If the File types don't cover the file extensions you need to list as a conditio
 > [!IMPORTANT]
 > The file extensions and file types options cannot be used as conditions in the same rule. If you want to use them as conditions in the same policy, they must be in separate rules. 
 
+> [!IMPORTANT]
+> These Windows versions support File types and File extension features:
+>- Windows 10 versions 20H1/20H2/21H1 (KB 5006738)
+>- Windows 10 versions 19H1/19H2 (KB 5007189)
+>- Windows 10 RS5 (KB 5006744)
+
+
 ## What's different in Endpoint DLP
 
 There are a few extra concepts that you need to be aware of before you dig into Endpoint DLP.
