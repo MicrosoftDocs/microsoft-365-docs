@@ -62,11 +62,13 @@ If you have [Microsoft Defender for Office 365 plan 2](defender-for-office-365.m
 
 1. Select **Connector**, insert **Connector Name**, select date range, and then click **Refresh**. 
 
-[image]
+    > [!div class="mx-imgBorder"]
+    > ![Inbound connector Explorer view.](../../media/connector-compromise-explorer.png)
 
 2. Identify if there's any abnormal spike or dip in email traffic. 
 
-[image]
+    > [!div class="mx-imgBorder"]
+    > ![Number of emails delivered to junk folder.](../../media/connector-compromise-abnormal-spike.png)
 
 3. Identify: 
 
@@ -76,7 +78,8 @@ If you have [Microsoft Defender for Office 365 plan 2](defender-for-office-365.m
 
     - If the recipients are the ones that your organization usually stays in contact with. 
 
-    [image]
+    > [!div class="mx-imgBorder"]
+    > ![Sender IP and your organization's on-prem IP address.](../../media/connector-compromise-sender-ip.png)
 
 If you have [Microsoft Defender for Office 365 Plan 1](defender-for-office-365.md) or [Exchange Online Protection](exchange-online-protection-overview.md), go to https://admin-sdf.exchange.microsoft.com/#/messagetrace. 
 
@@ -84,11 +87,13 @@ If you have [Microsoft Defender for Office 365 Plan 1](defender-for-office-365.m
 
 2. Select an activity under **Activity list**, and copy suspicious **connector domain** and **IP address** detected in the alert.
 
-[image]
-
+    > [!div class="mx-imgBorder"]
+    > ![Alert details flyout.](../../media/connector-compromise-outbound-email-details.png)
+    
 3. Search by using **connector domain** and **IP address** in [**Message trace**](https://admin-sdf.exchange.microsoft.com/#/messagetrace). 
 
-[image]
+    > [!div class="mx-imgBorder"]
+    > ![New message trace flyout.](../../media/connector-compromise-new-message-trace.png)
 
 4. In the **Message trace** search results, identify: 
 
@@ -96,7 +101,8 @@ If you have [Microsoft Defender for Office 365 Plan 1](defender-for-office-365.m
 
     - If the recipients are the ones that your organization usually stays in contact with. 
 
-[image] 
+    > [!div class="mx-imgBorder"]
+    > ![New message trace search results.](../../media/connector-compromise-message-trace-results.png)
 
 #### Investigate and validate connector-related activity 
 
