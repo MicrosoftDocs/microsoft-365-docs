@@ -126,7 +126,7 @@ The **export** control will create a .csv file that contains a listing of whatev
 ![data classification export control.](../media/data_classification_export_control.png)
 
 ### Latency
-As this is current snapshot of the tenant and data can be huge to scan, it can take upto **7 days** for counts to be updated in Content Explorer.
+It can take upto *seven days* for counts to be updated in Content Explorer.
 
 ### Search
 
