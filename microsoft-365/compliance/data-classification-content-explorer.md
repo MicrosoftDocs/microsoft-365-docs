@@ -125,8 +125,9 @@ The **export** control will create a .csv file that contains a listing of whatev
 
 ![data classification export control.](../media/data_classification_export_control.png)
 
-### Latency
-It can take upto *seven days* for counts to be updated in Content Explorer.
+
+> [!NOTE]
+> It can take upto *seven days* for counts to be updated in Content Explorer.
 
 ### Search
 
