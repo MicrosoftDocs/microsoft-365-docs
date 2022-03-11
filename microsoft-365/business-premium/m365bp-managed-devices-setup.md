@@ -28,11 +28,17 @@ description: "How to set up managed devices"
 
 # Set up managed devices
 
-A managed device is one that is under control and being monitored by the organization. These devices are enrolled in a device manager such as Intune, or Azure Active Directory Premium. Microsoft 365 Business Premium offers both.  
+A managed device is one that is under control and being monitored by the organization. These devices are enrolled in a device manager such as Intune, or Azure Active Directory Premium. Microsoft 365 Business Premium offers both. 
+
+A Windows 10 PC is considered managed after you have completed the following two steps:
+
+1. Set up device and data protection policies in the [setup  wizard](../business/set-up.md).
+
+2. Connect your computer to [Azure Active Directory](../business/set-up-windows-devices.md) and use your Microsoft 365 username and password to sign in. 
 
 ## Enroll devices in Microsoft Endpoint Manager
 
-To start, you need to go to Intune and enroll the devices (Windows, macOS, iOS, and Android).
+Go to Intune and enroll the devices (Windows, macOS, iOS, and Android).
 
 ## Onboard devices to Microsoft Defender for Business
 

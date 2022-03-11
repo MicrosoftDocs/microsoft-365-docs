@@ -1,5 +1,5 @@
 ---
-title: "Protect devices"
+title: "Protect devices with Defender for Business"
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
@@ -23,14 +23,14 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "An overview on how to protect devices"
+description: "An overview on how to protect devices with Defender"
 ---
 
-# Protect devices
+# Protect devices with Defender for Business
 
 ## Overview
 
-Welcome to your final critical mission. Here, you will initiate the capabilities of Defender to protect all the devices in your organization, making it a veritable citadel. Onboard with Defender to ensure malware and antivirus is always up-to-date, and set policies that make your systems lock-tight. Rest assured you're fully protected once these objectives have been achieved!
+Welcome to your final critical mission. Here, you will initiate the capabilities of the great Defender to protect all the devices in your organization, making it a veritable citadel. Onboard with Defender to ensure malware and antivirus is always up-to-date, and set policies that make your systems lock-tight. Rest assured, you're fully protected once these objectives have been achieved!
 
 Your mission objectives:
 
@@ -38,6 +38,6 @@ Your mission objectives:
 - [Review and edit device policies](m365bp--view-edit-create-mdb-policies.md)
 - [Manage device groups](m365bp-device-groups-mdb.md)
 
-Once these objectives are achieved, your overall mission to protect the org is a success! Next, set up response teams to deal with any situation that may arise in defending the integrity of the system. 
+Once these objectives are achieved, your overall mission to protect the org is a success! Now, make sure to set up response teams to deal with any situation that may arise in defending the integrity of the system. 
 
 

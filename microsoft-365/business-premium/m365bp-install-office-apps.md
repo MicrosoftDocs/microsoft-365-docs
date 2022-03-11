@@ -50,7 +50,7 @@ Follow these links for information on how to:
 
 - Install other apps: [Project](https://support.microsoft.com/office/install-project-7059249b-d9fe-4d61-ab96-5c5bf435f281), [Visio](https://support.microsoft.com/office/install-visio-f98f21e3-aa02-4827-9167-ddab5b025710), or [Skype for Business](https://support.microsoft.com/office/install-skype-for-business-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
 
-If you purchased Azure Active Directory Premium (AADP) Plan 1 or Plan 2, you're eligible for Microsoft Identity Manager (MIM). To download MIM, go to the [Download Center](https://www.microsoft.com/zh-cn/download/details.aspx?id=58498).
+Note: If you purchased Azure Active Directory Premium (AADP) Plan 1 or Plan 2, you're eligible for Microsoft Identity Manager (MIM). To download MIM, go to the [Download Center](https://www.microsoft.com/zh-cn/download/details.aspx?id=58498).
 
 
 # Set up mobile devices for Microsoft 365 for business users
@@ -133,12 +133,6 @@ For additional details and information:
  
 - [Upgrade users to the latest apps](upgrade-users-to-latest-office-client.md) 
 
-## Contact support
-
- **If you need to contact support:**
-  
-As a Microsoft 365 admin, you have access to our customer support team, **[Contact support for business products - Admin Help](../business-video/get-help-support.md)**
-
 
 <!--A Windows 10 PC is considered managed after you have completed the following two steps:
 
@@ -183,3 +177,9 @@ You can also reduce the risk of malware by using software only from reliable sou
 
 **Turn on firewall protection**<p>
 Use firewall settings to protect your Mac from unwanted contact initiated by other computers when you're connected to the Internet or a network. Without this protection, your Mac might be more vulnerable to unauthorized access. See [about the application firewall](https://support.apple.com/HT201642) for instructions.
+
+## Contact support
+
+ **If you need to contact support:**
+  
+As a Microsoft 365 admin, you have access to our customer support team, **[Contact support for business products - Admin Help](../business-video/get-help-support.md)**

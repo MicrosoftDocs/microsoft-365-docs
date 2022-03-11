@@ -28,19 +28,10 @@ description: "Protect unmanaged or bring-your-own devices (BYOD) with Microsoft 
 
 # Protect unmanaged Windows 10 PCs and Macs in Microsoft 365 Business Premium
 
-You can manage Windows 10 PCs and Macs by enrolling them in Microsoft Intune, which allows you to ensure they're healthy and secure before accessing data in your environment. However, many campaigns and small businesses include staff who bring their own devices (BYOD), which will not be managed by the organization. For these unmanaged PCs and Macs, use this article to ensure that minimum security capabilities are configured.
-
-<!--A Windows 10 PC is considered managed after you have completed the following two steps:
-
-1. You (or the admin) set up device and data protection policies in the [setup  wizard](../business/set-up.md).
-
-2. You have [connected your computer to Azure Active Directory](../business/set-up-windows-devices.md) and use your Microsoft 365 username and password to sign in.
-3. --> 
+The objective here is to manage Windows 10 PCs and Macs by enrolling them in Microsoft Intune, allowing you to ensure they're healthy and secure before accessing data in your environment. However, many campaigns or small businesses include staff who bring their own devices (BYOD), which will not be managed by the organization. For these unmanaged PCs and Macs, use this article to ensure that minimum security capabilities are configured.
 
 ## Protect a computer running Windows 10 or a Mac
 
-<!--If you have a PC that is running Windows 10 that is not connected to Microsoft 365, or a Mac, the Microsoft 365 protections do not apply to it, but here are some things you can do to keep your data secure on these devices as well:
--->
 If your Windows 10 PC or Mac is not managed by your organization, be sure to configure these security capabilities.
 
 ## [Windows 10](#tab/Windows10)
