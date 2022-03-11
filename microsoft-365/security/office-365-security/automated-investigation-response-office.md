@@ -2,8 +2,8 @@
 title: How automated investigation and response works in Microsoft Defender for Office 365
 f1.keywords: 
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article

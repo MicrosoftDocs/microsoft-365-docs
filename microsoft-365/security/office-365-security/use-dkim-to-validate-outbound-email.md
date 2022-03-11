@@ -87,7 +87,7 @@ Step 1: Click on the domain you wish to configure DKIM on DKIM page (https://sec
 
 :::image type="content" source="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png" alt-text="The DKIM page in the Microsoft 365 Defender portal with a domain selected" lightbox="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png":::
 
-Step 2: Click on Create DKIM keys.
+Step 2: Slide the toggle to **Enable**. You will see a pop-up window stating that you need to add CNAME records.
 
 :::image type="content" source="../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png" alt-text="The Domain details flyout with the Create DKIM keys button" lightbox="../../media/127001645-4ccf89e6-6310-4a91-85d6-aaedbfd501d3.png":::
 
@@ -394,6 +394,9 @@ Once you have set up DKIM, if you have not already set up SPF you should do so. 
 Next, see [**Use DMARC to validate email**](use-dmarc-to-validate-email.md). [Anti-spam message headers](anti-spam-message-headers.md) includes the syntax and header fields used by Microsoft 365 for DKIM checks.
 
 **This test will validate** that the DKIM signing configuration has been configured correctly, and that the proper DNS entries have been published.
+
+> [!NOTE]
+> This feature requires a Microsoft 365 administrator account. This feature isn't available for Microsoft 365 Government, Microsoft 365 operated by 21Vianet, or Microsoft 365 Germany.
 
 <div class="nextstepaction">
 <p><a href="https://admin.microsoft.com/AdminPortal/?searchSolutions=DKIM#/homepage" data-linktype="external">Run Tests: DKIM</a></p>

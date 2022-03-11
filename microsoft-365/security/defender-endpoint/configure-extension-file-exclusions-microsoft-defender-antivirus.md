@@ -13,7 +13,7 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer:
 manager: dansimp
-ms.date: 12/17/2021
+ms.date: 02/27/2022
 ms.collection: M365-security-compliance
 ---
 
@@ -192,6 +192,7 @@ You can use the asterisk `*`, question mark `?`, or environment variables (such 
 > There are key limitations and usage scenarios for these wildcards:
 >
 > - Environment variable usage is limited to machine variables and those applicable to processes running as an NT AUTHORITY\SYSTEM account.
+> - You can only use a maximum of six wildcards per entry.
 > - You cannot use a wildcard in place of a drive letter.
 > - An asterisk `*` in a folder exclusion stands in place for a single folder. Use multiple instances of `\*\` to indicate multiple nested folders with unspecified names.
 > - Currently, Microsoft Endpoint Configuration Manager does not support wildcard characters (such as `*` or `?`).

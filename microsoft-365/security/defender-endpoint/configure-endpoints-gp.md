@@ -297,6 +297,12 @@ Browse to **Computer Configuration** \> **Policies** \> **Administrative Templat
 
 :::image type="content" source="images/send-file-sample-further-analysis-require.png" alt-text="Send file sample when further analysis is required" lightbox="images/send-file-sample-further-analysis-require.png":::
 
+> [!NOTE]
+> The **Send all samples** option will provide the most analysis of binaries/scripts/docs which increases security posture.
+The **Send safe samples** option limits the type of binaries/scripts/docs being analyzed, and decreases security posture. 
+
+For more information, see [Turn on cloud protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md), and [Cloud protection and sample submission in Microsoft Defender Antivirus.](cloud-protection-microsoft-antivirus-sample-submission.md)
+
 ### Check for signature update
 
 Browse to **Computer Configuration** \> **Policies** \> **Administrative Templates** \> **Windows Components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.

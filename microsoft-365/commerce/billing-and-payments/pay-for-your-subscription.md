@@ -2,8 +2,8 @@
 title: "Paying for your subscription"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,10 +16,11 @@ ms.collection:
 search.appverid: MET150 
 description: "Use a credit or debit card or bank account to pay for your Microsoft 365 for business subscription, or in some cases, you can pay by invoice."
 ms.custom: 
+- commerce_billing
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-- commerce_billing
+- business_assist
 - AdminTemplateSet
 ms.date: 10/28/2021
 ---
@@ -32,6 +33,9 @@ ms.date: 10/28/2021
 You can use a credit or debit card, or bank account to pay for your subscription. In some cases, you can pay by invoice, using check or electronic funds transfer (EFT). If you have a billing profile, your options are slightly different. For more information, see [How to pay for your subscription with a billing profile](pay-for-subscription-billing-profile.md). If you’re not sure if your account has a billing profile, see [Understand billing profiles](manage-billing-profiles.md).
 
 **Just want to find out where to send your invoice payment?** If you pay your invoice by check or electronic funds transfer (EFT), see [Where do I send my check or EFT payment?](#where-do-i-send-my-check-or-eft-payment)
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
 
 ## Before you begin
 

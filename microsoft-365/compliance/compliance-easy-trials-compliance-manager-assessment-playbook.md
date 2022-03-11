@@ -2,8 +2,8 @@
 title: "Microsoft Compliance Manager premium assessments trial playbook"
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: hub-page

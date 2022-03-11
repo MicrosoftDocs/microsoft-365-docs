@@ -15,7 +15,7 @@ audience: Admin
 
 # Remove devices
 
-You can remove devices from Microsoft Managed Desktop management by using the Admin portal. This action is permanent, but you can register them with Microsoft Managed Desktop again by following the [registration steps](../get-started/register-devices-self.md).
+You can remove devices from Microsoft Managed Desktop management by using the Admin portal. This action is permanent, but you can register them with Microsoft Managed Desktop again by following the [manual registration steps](../get-started/manual-registration.md).
 
 When you remove a device, all of the following occur:
 

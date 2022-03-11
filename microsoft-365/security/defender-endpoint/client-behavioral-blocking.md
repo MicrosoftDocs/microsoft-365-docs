@@ -14,9 +14,7 @@ ms.localizationpriority: medium
 ms.custom:
   - next-gen
   - edr
-ms.collection:
-  - m365-security-compliance
-  - m365initiative-defender-endpoint
+ms.collection: m365-security-compliance
 ms.technology: mde
 ---
 

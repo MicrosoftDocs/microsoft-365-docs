@@ -3,8 +3,8 @@ title: Identity and device access policies for allowing guest and external user 
 description: Describes the recommended Conditional Access and related policies for protecting access of guests and external users.
 ms.prod: m365-security
 ms.topic: article
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 audience: Admin
 manager: Laurawi
 f1.keywords: 

@@ -13,7 +13,6 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -44,7 +43,7 @@ Exclusions can be useful to avoid incorrect detections on files or software that
 
 ## Supported exclusion types
 
-The follow table shows the exclusion types supported by Defender for Endpoint on Mac.
+The following table shows the exclusion types supported by Defender for Endpoint on Mac.
 
 Exclusion|Definition|Examples
 ---|---|---

@@ -13,7 +13,7 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 10/18/2021
+ms.date: 02/24/2022
 ms.collection: M365-security-compliance
 ---
 
@@ -135,3 +135,5 @@ There are two more scenarios where Defender for Endpoint might request a file sa
 ## See also
 
 [Next-generation protection overview](next-generation-protection.md)
+
+[Configure remediation for Microsoft Defender Antivirus detections.](configure-remediation-microsoft-defender-antivirus.md)

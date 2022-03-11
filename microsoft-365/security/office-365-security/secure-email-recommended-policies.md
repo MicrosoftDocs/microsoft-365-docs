@@ -1,8 +1,8 @@
 ---
 title: Secure email recommended policies - Microsoft 365 for enterprise | Microsoft Docs
 description: Describes the policies for Microsoft recommendations about how to apply email policies and configurations.
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: Laurawi
 ms.prod: m365-security
 ms.topic: article
