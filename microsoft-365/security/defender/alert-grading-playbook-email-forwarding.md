@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -238,7 +238,8 @@ CloudAppEvents
 Run this query to find out if there were any anomalous login events from this user. For example: unknown IPs, new applications, uncommon countries, multiple LogonFailed events.
 
 ```kusto
-let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder IdentityLogonEvents
+let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder 
+IdentityLogonEvents
 | where AccountUpn == sender
 ```
 

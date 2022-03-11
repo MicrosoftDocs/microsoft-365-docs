@@ -90,4 +90,4 @@ Learn how to open support tickets by contacting Defender for Endpoint support.
 ## Related topics
 
 - [Troubleshoot service issues](troubleshoot-mdatp.md)
-- [Check service health](service-status.md)
+- [Check service health](/microsoft-365/enterprise/view-service-health)

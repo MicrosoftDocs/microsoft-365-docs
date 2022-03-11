@@ -13,7 +13,6 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -550,6 +549,26 @@ Specify whether users can submit feedback to Microsoft by going to `Help` > `Sen
 |**Possible values**|enabled (default) <p> disabled|
 |**Comments**|Available in Microsoft Defender for Endpoint version 101.19.61 or higher.|
 |||
+
+
+
+#### Control sign-in to consumer version of Microsoft Defender
+
+Specify whether users can sign into the consumer version of Microsoft Defender.
+
+<br>
+
+****
+
+|Section|Value|
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|consumerExperience|
+|**Data type**|String|
+|**Possible values**|enabled (default) <p> disabled|
+|**Comments**|Available in Microsoft Defender for Endpoint version 101.60.18 or higher.|
+|||
+
 
 ### Endpoint detection and response preferences
 

@@ -46,7 +46,7 @@ This series of articles walks through a recommended process for managing devices
 
 Protecting the data and apps on devices and the devices themselves is a multi-layer process. There are some protections you can gain on unmanaged devices. After enrolling devices into management, you can implement more sophisticated controls. When threat protection is deployed across your endpoints, you gain even more insights and the ability to automatically remediate some attacks. Finally, if your organization has put the work into identifying sensitive data, applying classification and labels, and configuring data loss prevention policies, you can obtain even more granular protection for data on your endpoints.
 
-The following diagram illustrates building blocks to achieve a Zero Trust security posture for Microsoft 365 and other SaaS apps that you introduce to this environment. The elements related to devices are numbered 1 through 7. These are the layers of protection device administers will coordinate with other administrators to accomplish. 
+The following diagram illustrates building blocks to achieve a Zero Trust security posture for Microsoft 365 and other SaaS apps that you introduce to this environment. The elements related to devices are numbered 1 through 7. These are the layers of protection device admins will coordinate with other administrators to accomplish. 
 
 ![Microsoft 365 Zero Trust deployment stack](../media/devices/m365-zero-trust-deployment-stack-devices.png#lightbox)
 
@@ -56,12 +56,12 @@ In this illustration:
 |&nbsp;|Step |Description  |Licensing requirements  |
 |---------|---------|---------|---------|
 |1     | Configure starting-point Zero Trust identity and device access policies       | Work with your identity administrator to [Implement Level 2 App Protection Policies (APP) data protection](manage-devices-with-intune-app-protection.md). These policies do not require that you manage devices. You configure the APP policies in Intune. Your identity admin configures a Conditional Access policy to require approved apps.          |E3, E5, F1, F3, F5    |
-|2     | Enroll devices into management       | This task requires more planning and time to implement. While you have a choice of tools and methods to accomplish this, [Step 3—Enroll devices into management](manage-devices-with-intune-enroll.md) guides you through the process using Intune with Autopilot and automated enrollment.      | E3, E5, F1, F3, F5        |
-|3     | Configure compliance policies        |  You want to be sure devices that are accessing your apps and data meet minimum requirements, for example they’re password or pin-protected and the operating system is up to date. Compliance policies are the way to define the requirements that devices must meet. [Step 3. Set up compliance policies](manage-devices-with-intune-compliance-policies.md) helps you configure these policies.        |   E3, E5, F3, F5      |
+|2     | Enroll devices into management       | This task requires more planning and time to implement. Microsoft recommends using Intune to enroll devices because this tool provides optimal integration. There are several options for enrolling devices, depending on the platform. For example, Windows devices can be enrolled by using Azure AD Join or by using Autopilot. You need to review the options for each platform and decide which enrollment option is best for your environment. See [Step 3—Enroll devices into management](manage-devices-with-intune-enroll.md) for more information.      | E3, E5, F1, F3, F5        |
+|3     | Configure compliance policies        |  You want to be sure devices that are accessing your apps and data meet minimum requirements, for example devices are password or pin-protected and the operating system is up to date. Compliance policies are the way to define the requirements that devices must meet. [Step 3. Set up compliance policies](manage-devices-with-intune-compliance-policies.md) helps you configure these policies.        |   E3, E5, F3, F5      |
 |4     | Configure Enterprise (recommended) Zero Trust identity and device access policies        |Now that your devices are enrolled, you can work with your identity admin to [tune Conditional Access policies to require healthy and compliant devices](manage-devices-with-intune-require-compliance.md).          | E3, E5, F3, F5        |
 |5     |Deploy configuration profiles      | As opposed to device compliance policies that simply mark a device as compliant or not based on criteria you configure, configuration profiles actually change the configuration of settings on a device. You can use configuration policies to harden devices against cyberthreats. See [Step 5. Deploy configuration profiles](manage-devices-with-intune-configuration-profiles.md).        | E3, E5, F3, F5        |
-|6     |Monitor device risk and compliance to security baselines         | In this step, you connect Intune to Microsoft Defender for Endpoint. With this integration, you can then monitor device risk as a condition for access. Devices that are found to be in a risky state will be blocked. You can also monitor compliance to security baselines. See [Step 6. Monitor device risk and compliance to security baselines](manage-devices-with-intune-monitor-risk.md).       | E5, F5        |
-|7     |Implement data loss prevention (DLP) with information protection capabilities   | If your organization has put the work into identifying sensitive data and labeling documents, you can work with your information protection admin to [protect sensitive information and documents on your devices](manage-devices-with-intune-dlp-mip.md).         | E5, F5 compliance add on        |
+|6     |Monitor device risk and compliance with security baselines         | In this step, you connect Intune to Microsoft Defender for Endpoint. With this integration, you can then monitor device risk as a condition for access. Devices that are found to be in a risky state will be blocked. You can also monitor compliance with security baselines. See [Step 6. Monitor device risk and compliance to security baselines](manage-devices-with-intune-monitor-risk.md).       | E5, F5        |
+|7     |Implement data loss prevention (DLP) with information protection capabilities   | If your organization has put the work into identifying sensitive data and labeling documents, you can work with your information protection admin to [protect sensitive information and documents on your devices](manage-devices-with-intune-dlp-mip.md).         | E5, F5 compliance add-on        |
 | | | | |
 
 ## Coordinating endpoint management with Zero Trust identity and device access policies
@@ -80,6 +80,35 @@ In this illustration:
 <!---
 ## Managing change with users
 --->
+
+## Enrolling devices vs. onboarding devices
+If you follow this guidance, you will enroll devices into management using Intune (or another tool) and you will onboard devices for two services:
+- Defender for Endpoint
+- Endpoint DLP
+
+
+The following illustration details how this works using Intune.
+<br>
+
+![Process for enrolling and onboarding devices](../media/devices/devices-enroll-onboard-process.png#lightbox)
+
+In the illustration:
+1. Enroll devices into management with Intune.
+2. Use Intune to onboard devices to Defender for Endpoint.
+3. Devices that are onboarded to Defender for Endpoint are also onboarded for Microsoft 365 compliance features, including Endpoint DLP.
+ 
+Note that only Intune is managing devices. Onboarding refers to the ability for a device to share information with a specific service. The following table summarizes the differences between enrolling devices into management and onboarding devices for a specific service.
+
+
+|         |Enroll     |Onboard  |
+|---------|---------|---------|
+|Description     |  Enrollment applies to managing devices. Devices are enrolled for management with Intune or Configuration Manager.        | Onboarding configures a device to work with a specific set of capabilities in Microsoft 365. Currently, onboarding applies to Microsoft Defender for Endpoint and Microsoft compliance capabilities. <br><br>On Windows devices, onboarding involves toggling a setting in Windows Defender that allows Defender to connect to the online service and accept policies that apply to the device.        |
+|Scope     | These device management tools manage the entire device, including configuring the device to meet specific objectives, like security.        |Onboarding only affects the services that apply.     |
+|Recommended method     | Azure Active Directory join automatically enrolls devices into Intune.        | Intune is the preferred method for onboarding devices to Windows Defender for Endpoint, and consequently Microsoft 365 compliance capabilities.<br><br>Note that devices that are onboarded to Microsoft 365 compliance capabilities using other methods are not automatically enrolled for Defender for Endpoint.        |
+|Other methods     |   Other methods of enrollment depend on the platform of the device and whether it is BYOD or managed by your organization.      | Other methods for onboarding devices include, in recommended order:<br><li>Configuration Manager<li>Other mobile device management tool (if the device is managed by one)<li>Local script<li>VDI configuration package for onboarding non-persistent virtual desktop infrastructure (VDI) devices<li>Group Policy|
+| | |     |
+
+
 
 ## Learning for administrators
 The following resources help administrators learn concepts about using MEM and Intune.
