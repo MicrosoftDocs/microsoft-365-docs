@@ -31,7 +31,7 @@ You can use JAMF Pro to onboard macOS devices into Microsoft 365 compliance solu
 
 ## Before you begin
 
-- Make sure your macOS devices are associated with an identifiable Azure AD joined UPN through JAMF Connect
+- Make sure your macOS devices are managed by JAMF and are associated with an identity (Azure AD joined UPN) through JAMF Connect or Intune.
 - Install the v95+ Edge browser on your macOS devices 
 
 ## Onboard devices into Microsoft 365 Compliance solutions using JAMF Pro
