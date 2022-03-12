@@ -30,13 +30,13 @@ Microsoft Purview Information Protection provides a framework, process, and capa
 
 ## Microsoft Purview Information Protection framework
 
-Use Microsoft Information Protection to help you discover, classify, protect, and govern sensitive information wherever it lives or travels.
+Use Microsoft Purview Information Protection to help you discover, classify, protect, and govern sensitive information wherever it lives or travels.
 
 ![Microsoft Purview Information Protection solution overview](../media/mip-solution-overview-extended.png)
 
 Watch the following Ignite session to see how these capabilities support and build on each other: [Know your data, protect your data, and prevent data loss with Microsoft Information Protection](https://myignite.microsoft.com/archives/IG20-OD273).
 
-For information about governing your data, see [Microsoft Information Governance in Microsoft 365](manage-Information-governance.md).
+For information about governing your data, see [Microsoft Purview Information Governance in Microsoft 365](manage-Information-governance.md).
 
 ## Licensing
 
@@ -46,7 +46,7 @@ Microsoft Purview Information Protection capabilities are included with Microsof
 
 ![Know your data for Microsoft Purview Information Protection solution overview](../media/knowyourdata-mipsolution.png)
 
-Knowing where your sensitive data resides is often the biggest challenge for many organizations. Purview Information Protection data classification helps you to discover and accurately classify ever-increasing amounts of data that your organization creates. Graphical representations help you gain insights into this data so you can set up and monitor policies to protect and govern it.
+Knowing where your sensitive data resides is often the biggest challenge for many organizations. Microsoft Purview Information Protection data classification helps you to discover and accurately classify ever-increasing amounts of data that your organization creates. Graphical representations help you gain insights into this data so you can set up and monitor policies to protect and govern it.
 
 
 |Step|Description|More information|
