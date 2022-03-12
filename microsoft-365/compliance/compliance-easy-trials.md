@@ -76,7 +76,7 @@ Wondering what you can experience in your free trial? The compliance solutions t
 
 - **Information Governance**
 
-  Automate your retention coverage by using adaptive policy scopes. This feature allows you to dynamically target policies for retention to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, policies that use adaptive scopes are not subject to location limits. [Learn more about adaptive policy scopes](create-retention-policies.md#adaptive-or-static-policy-scopes-for-retention).
+  Automate your retention coverage by using adaptive policy scopes. This feature allows you to dynamically target policies for retention to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, policies that use adaptive scopes are not subject to location limits. [Learn more about adaptive policy scopes](retention.md#adaptive-or-static-policy-scopes-for-retention).
 
 - **Information Protection**
 
