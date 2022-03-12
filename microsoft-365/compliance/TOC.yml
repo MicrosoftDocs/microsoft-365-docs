@@ -6,7 +6,7 @@
   items:
     - name: About the free trial for Microsoft 365 compliance
       href: compliance-easy-trials.md
-    - name: About the free trial for Microsoft Compliance Manager premium assessments
+    - name: About the free trial for Microsoft Purview Compliance Manager premium assessments
       href: compliance-easy-trials-compliance-manager-assessments.md
 - name: Get started
   items: 

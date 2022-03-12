@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Compliance Manager and the GDPR"
+title: "Microsoft Purview Compliance Manager and the GDPR"
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -14,10 +14,10 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Compliance Manager is a free workflow-based risk assessment tool in the Microsoft Service Trust Portal. Compliance Manager enables you to track, assign, and verify regulatory compliance activities related to Microsoft cloud services."
+description: "Microsoft Purview Compliance Manager is a free workflow-based risk assessment tool in the Microsoft Service Trust Portal. Compliance Manager enables you to track, assign, and verify regulatory compliance activities related to Microsoft cloud services."
 ---
 
-# Microsoft Compliance Manager and the GDPR
+# Microsoft Purview Compliance Manager and the GDPR
 
 The General Data Protection Regulation (GDPR) enacted by the European Union can impact your compliance strategy and mandate specific actions to manage user and customer information used in Compliance Manager.
 

@@ -1,5 +1,5 @@
 ---
-title: "Build and manage assessments in Microsoft Compliance Manager"
+title: "Build and manage assessments in Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Build assessments in Microsoft Compliance Manager to help you meet the requirements of regulations and certifications that are important to your organization."
+description: "Build assessments in Microsoft Purview Compliance Manager to help you meet the requirements of regulations and certifications that are important to your organization."
 ---
 
 # Build and manage assessments in Compliance Manager

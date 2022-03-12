@@ -1,5 +1,5 @@
 ---
-title: "Get started with Microsoft Compliance Manager"
+title: "Get started with Microsoft Purview Compliance Manager"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,7 +17,7 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
-description: "Set Microsoft Compliance Manager user permissions and roles, and configure automated testing of actions. Manage user history and filter your dashboard view."
+description: "Set Microsoft Purview Compliance Manager user permissions and roles, and configure automated testing of actions. Manage user history and filter your dashboard view."
 ---
 
 # Get started with Compliance Manager
