@@ -18,7 +18,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: Use sensitivity labels from Microsoft Information Protection (MIP) to classify and protect sensitive content.
+description: Use sensitivity labels from Microsoft Purview Information Protection to classify and protect sensitive content.
 ms.custom: 
 - seo-marvel-apr2020
 - seo-marvel-jun2020
@@ -35,7 +35,7 @@ ms.custom:
 
 To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall—it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization's business and compliance policies.
 
-Sensitivity labels from the Microsoft Information Protection solution let you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn't hindered.
+Sensitivity labels from the Microsoft Purview Information Protection solution let you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn't hindered.
 
 Example showing available sensitivity labels in Excel, from the **Home** tab on the Ribbon. In this example, the applied label displays on the status bar:
 
@@ -238,7 +238,7 @@ If you're not seeing the label or label policy setting behavior that you expect 
 
 The sensitivity labels that are built into Microsoft 365 Apps on Windows, macOS, iOS, and Android look and behave very similarly across these devices to provide users with a consistent labeling experience. However, on Windows computers, you can also use the [Azure Information Protection (AIP) client](/azure/information-protection/rms-client/aip-clientv2). This client is now in [maintenance mode](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-aip-unified-labeling-client-maintenance-mode-and/ba-p/3043613).
 
-If you're using the AIP client, see [Why choose MIP built-in labeling over the AIP add-in for Office apps](sensitivity-labels-aip.md) to understand and manage your labeling choices for Windows computers.
+If you're using the AIP client, see [Why choose built-in labeling over the AIP add-in for Office apps](sensitivity-labels-aip.md) to understand and manage your labeling choices for Windows computers.
 
 ### Azure Information Protection labels
 
