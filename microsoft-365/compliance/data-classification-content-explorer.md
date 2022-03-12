@@ -127,7 +127,7 @@ The **export** control will create a .csv file that contains a listing of whatev
 
 
 > [!NOTE]
-> It can take upto *seven days* for counts to be updated in Content Explorer.
+> It can take up to *seven days* for counts to be updated in content explorer.
 
 ### Search
 
