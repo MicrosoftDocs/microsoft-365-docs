@@ -12,6 +12,9 @@ description: "Use this page to create your staff list and to manage staff member
 
 # Add staff to Bookings
 
+> [!NOTE]
+> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
+
 The Staff page in Bookings is where you create your staffing list and manage staff member details such as name, phone number, and email address. You can also set working hours for each staff member from here.
 
 ## Before you begin
@@ -24,12 +27,9 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
 
 ## Steps
 
-> [!NOTE]
-> These steps are not yet available in the new Bookings experience.
+1. Choose your calendar from the homepage. 
 
-1. Go to the [Manage staff page](https://outlook.office.com/bookings/staff) and select **Add staff**
-
-2. Select the **Add Staff** button.
+2. Go to staff option in left pane and select **Add new staff**.
 
 3. When adding staff from within your organization, type their name in the **Add people** field and select them when they appear in the drop-down menu. The other fields will automatically populate.
 

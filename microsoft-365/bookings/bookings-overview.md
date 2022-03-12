@@ -13,6 +13,9 @@ description: "An overview of the Microsoft Bookings app, which includes a web-ba
 
 # Microsoft Bookings
 
+> [!NOTE]
+> This article helps you to interact with the latest version of Microsoft Bookings. Previous versions will be retired in coming months.
+
 Microsoft Bookings makes scheduling and managing appointments a breeze. Bookings includes a web-based booking calendar and integrates with Outlook to optimize your staff’s calendar and give your customers flexibility to book a time that works best for them. Email and SMS text notifications reduce no-shows and enhances customer satisfaction Your organization saves time with a reduction in repetitive scheduling tasks. With built in flexibility and ability to customize, Bookings can be designed to fit the situation and needs of many different parts of an organization.
 
 > [!NOTE]
@@ -32,9 +35,15 @@ Bookings has three primary components:
 
 Microsoft Bookings is available in the following subscriptions:
 
-- Office 365: A3, A5, E3, E5, F1, F3
-- Microsoft 365: A3, A5, E3, E5, F1, F3, Business Standard, Business Premium
+- Office 365: A3, A5, E1, E3, E5, F1, F3
+- Microsoft 365: A3, A5, E1, E3, E5, F1, F3, Business Basic, Business Standard, Business Premium
 
-## Get started using Bookings
+## Watch: Introducing Microsoft Bookings
+
+> [!VIDEO https://youtu.be/G2HOsM767Sw]
+
+Bookings makes it easier for small businesses to schedule and manage appointments with their customers.
+
+## Next steps
 
 To get started, see [Get access to Microsoft Bookings](get-access.md). To turn Bookings on or off, see [Turn Bookings on or off for your organization](turn-bookings-on-or-off.md).
