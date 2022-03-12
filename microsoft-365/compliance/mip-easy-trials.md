@@ -1,5 +1,5 @@
 ---
-title: "Learn about the default labels and policies for Microsoft Information Protection"
+title: "Learn about the default labels and policies for Microsoft Purview Information Protection"
 f1.keywords:
 - CSH
 ms.author: cabailey
@@ -10,21 +10,21 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
-description: Learn about the default labels and policies for Microsoft Information Protection (MIP) to classify and protect sensitive content.
+description: Learn about the default labels and policies for Microsoft Purview Information Protection to classify and protect sensitive content.
 ---
 
-# Default labels and policies for Microsoft Information Protection
+# Default labels and policies for Microsoft Purview Information Protection
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Eligible customers can activate default labels and policies for Microsoft Information Protection (MIP): 
+Eligible customers can activate default labels and policies for Microsoft Purview Information Protection: 
 
 - Sensitivity labels and a sensitivity label policy
 - Client-side auto-labeling
 - Service-side auto-labeling
 - Data loss prevention (DLP) policies for Teams and devices
 
-These default configurations help you get up and running quickly with Microsoft Information Protection from Microsoft 365 Compliance. You can use them as-is, make just a few changes, or fully customize them to better suit your business requirements. 
+These default configurations help you get up and running quickly with Microsoft Purview Information Protection for Microsoft 365. You can use them as-is, make just a few changes, or fully customize them to better suit your business requirements. 
 
 Eligibility includes customers who have a [free trial for Microsoft 365 Compliance](compliance-easy-trials.md) and some customers who already have a Microsoft 365 E5 plan:
 
@@ -44,13 +44,13 @@ Eligibility includes customers who have a [free trial for Microsoft 365 Complian
 
 To get these preconfigured labels and policies: 
 
-1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Solutions** > **Information protection**
+1. From the [Microsoft Purview portal](https://compliance.microsoft.com/), select **Solutions** > **Information protection**
     
     If you don't immediately see this option, first select **Show all** from the navigation pane. 
     
-2. If you are eligible for the Microsoft Information Protection default labels and policies, you'll see the following information, where you can activate the default labels and policies. For example:
+2. If you are eligible for the Microsoft Purview Information Protection default labels and policies, you'll see the following information, where you can activate the default labels and policies. For example:
     
-    :::image type="content" alt-text="Microsoft Information Protection activation for preconfigured labels and policies." source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
+    :::image type="content" alt-text="Microsoft Purview Information Protection activation for preconfigured labels and policies." source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
     
     If you don't see this information displayed with the activation option, you're not currently eligible for the automatic creation of sensitivity labels and policies. You can try checking back later to see if this status has changed, or you can use the settings information that follows to manually create the same labels and policies.
 

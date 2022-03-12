@@ -32,7 +32,7 @@ Microsoft Purview Information Protection provides a framework, process, and capa
 
 Use Microsoft Information Protection to help you discover, classify, protect, and govern sensitive information wherever it lives or travels.
 
-![MIP solution overview](../media/mip-solution-overview-extended.png)
+![Microsoft Purview Information Protection solution overview](../media/mip-solution-overview-extended.png)
 
 Watch the following Ignite session to see how these capabilities support and build on each other: [Know your data, protect your data, and prevent data loss with Microsoft Information Protection](https://myignite.microsoft.com/archives/IG20-OD273).
 
@@ -57,7 +57,7 @@ Knowing where your sensitive data resides is often the biggest challenge for man
 
 ## Protect your data
 
-![Protect your data for MIP solution overview](../media/protect-mipsolution.png)
+![Protect your data for Microsoft Purview Information Protection solution overview](../media/protect-mipsolution.png)
 
 Use the information from knowing where your sensitive data resides to help you more efficiently protect it. But there's no need to wait—you can start to protect your data immediately with a combination of manual, default, and automatic labeling. Then use [content explorer](data-classification-content-explorer.md) and [activity explorer](data-classification-activity-explorer.md) from the previous section to confirm what items are labeled and how your labels are being used.
 

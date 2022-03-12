@@ -24,13 +24,13 @@ description: "Implement Microsoft Purview Information Protection  capabilities t
 
 >*[Licensing for Microsoft 365 Security & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Implement capabilities from Microsoft Information Protection (MIP) to help you discover, classify, and protect sensitive information wherever it lives or travels.
+Implement capabilities from Microsoft Purview Information Protection to help you discover, classify, and protect sensitive information wherever it lives or travels.
 
-Information protection capabilities are included with Microsoft 365 Compliance and give you the tools to [know your data](#know-your-data), [protect your data](#protect-your-data), and [prevent data loss](#prevent-data-loss).
+Information protection capabilities are included with Microsoft 365 and give you the tools to [know your data](#know-your-data), [protect your data](#protect-your-data), and [prevent data loss](#prevent-data-loss).
 
 ![Image of how Microsoft Purview Information Protection helps you discover, classify, and protect sensitive data.](../media/powered-by-intelligent-platform.png)
 
-For prescriptive guidance to deploy a Purview Information Protection solution for your organization, see [Deploy a Microsoft Purview Information Protection solution](information-protection-solution.md).
+For prescriptive guidance to deploy a Microsoft Purview Information Protection solution for your organization, see [Deploy a Microsoft Purview Information Protection solution](information-protection-solution.md).
 
 For information about governing your data, see [Microsoft Purview Information Governance for Microsoft 365](manage-Information-governance.md).
 
@@ -78,4 +78,4 @@ To help prevent accidental oversharing of sensitive information, use the followi
 
 ## Licensing requirements
 
-License requirements for Microsoft Purview Information Protection depend on the scenarios and features you use, rather than set licensing requirements for each capability listed on this page. To understand your licensing requirements and options for MIP, see the **Information Protection** sections from [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) and the related [PDF download](https://go.microsoft.com/fwlink/?linkid=2139145) for feature-level licensing requirements.
+License requirements for Microsoft Purview Information Protection depend on the scenarios and features you use, rather than set licensing requirements for each capability listed on this page. To understand your licensing requirements and options for Microsoft Purview Information Protection, see the **Information Protection** sections from [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) and the related [PDF download](https://go.microsoft.com/fwlink/?linkid=2139145) for feature-level licensing requirements.
