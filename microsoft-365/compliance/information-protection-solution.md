@@ -1,5 +1,5 @@
 ---
-title: "Deploy a Microsoft Information Protection solution"
+title: "Deploy a Microsoft Purview Information Protection solution"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,36 +17,36 @@ ms.collection:
 - m365solution-overview
 - m365solution-mip
 - m365initiative-compliance
-description: "Prescriptive guidance to deploy Microsoft Information Protection (MIP) for your organization."
+description: "Prescriptive guidance to deploy Microsoft Purview Information Protection for your organization."
 ---
 
-# Deploy a Microsoft Information Protection solution
+# Deploy a Microsoft Purview Information Protection solution
 
 >*[Licensing for Microsoft 365 Security & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 Your information protection strategy is driven by your business needs. Many organizations must comply with regulations, laws, and business practices. Additionally, organizations need to protect proprietary information, such as data for specific projects.
 
-Microsoft Information Protection (MIP) provides a framework, process, and capabilities you can use to accomplish your specific business objectives. 
+Microsoft Purview Information Protection provides a framework, process, and capabilities you can use to accomplish your specific business objectives. 
 
-## Microsoft Information Protection framework
+## Microsoft Purview Information Protection framework
 
-Use Microsoft Information Protection to help you discover, classify, protect, and govern sensitive information wherever it lives or travels.
+Use Microsoft Purview Information Protection to help you discover, classify, protect, and govern sensitive information wherever it lives or travels.
 
-![MIP solution overview](../media/mip-solution-overview-extended.png)
+![Microsoft Purview Information Protection solution overview](../media/mip-solution-overview-extended.png)
 
 Watch the following Ignite session to see how these capabilities support and build on each other: [Know your data, protect your data, and prevent data loss with Microsoft Information Protection](https://myignite.microsoft.com/archives/IG20-OD273).
 
-For information about governing your data, see [Microsoft Information Governance in Microsoft 365](manage-Information-governance.md).
+For information about governing your data, see [Microsoft Purview Information Governance in Microsoft 365](manage-Information-governance.md).
 
 ## Licensing
 
-MIP capabilities are included with Microsoft 365 Compliance. The licensing requirements can vary even within capabilities, depending on configuration options. To identify licensing requirements and options, see the [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Microsoft Purview Information Protection capabilities are included with Microsoft 365 Compliance. The licensing requirements can vary even within capabilities, depending on configuration options. To identify licensing requirements and options, see the [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## Know your data
 
-![Know your data for MIP solution overview](../media/knowyourdata-mipsolution.png)
+![Know your data for Microsoft Purview Information Protection solution overview](../media/knowyourdata-mipsolution.png)
 
-Knowing where your sensitive data resides is often the biggest challenge for many organizations. MIP data classification helps you to discover and accurately classify ever-increasing amounts of data that your organization creates. Graphical representations help you gain insights into this data so you can set up and monitor policies to protect and govern it.
+Knowing where your sensitive data resides is often the biggest challenge for many organizations. Microsoft Purview Information Protection data classification helps you to discover and accurately classify ever-increasing amounts of data that your organization creates. Graphical representations help you gain insights into this data so you can set up and monitor policies to protect and govern it.
 
 
 |Step|Description|More information|
@@ -57,7 +57,7 @@ Knowing where your sensitive data resides is often the biggest challenge for man
 
 ## Protect your data
 
-![Protect your data for MIP solution overview](../media/protect-mipsolution.png)
+![Protect your data for Microsoft Purview Information Protection solution overview](../media/protect-mipsolution.png)
 
 Use the information from knowing where your sensitive data resides to help you more efficiently protect it. But there's no need to wait—you can start to protect your data immediately with a combination of manual, default, and automatic labeling. Then use [content explorer](data-classification-content-explorer.md) and [activity explorer](data-classification-activity-explorer.md) from the previous section to confirm what items are labeled and how your labels are being used.
 
@@ -73,13 +73,13 @@ If you are a developer who wants to extend sensitivity labels to line-of-busines
 
 ### Additional protection capabilities
 
-Microsoft 365 includes additional capabilities to help protect data. Not every customer needs these capabilities, and some might be superseded by more recent releases.
+Microsoft Purview includes additional capabilities to help protect data. Not every customer needs these capabilities, and some might be superseded by more recent releases.
 
-Use the [Microsoft Information Protection in Microsoft 365](information-protection.md) page for the full list of protection capabilities.
+Use the [Microsoft Purview Information Protection](information-protection.md) page for the full list of protection capabilities.
 
 ## Prevent data loss
 
-![Prevent data loss for MIP solution overview](../media/dlp-mipsolution.png)
+![Prevent data loss for Microsoft Purview Information Protection solution overview](../media/dlp-mipsolution.png)
 
 Deploy data loss prevention (DLP) policies to govern and prevent the inappropriate sharing, transfer, or use of sensitive data across apps and services. These policies help users make the right decisions and take the right actions when they're using sensitive data.
 

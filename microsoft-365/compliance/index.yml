@@ -89,7 +89,7 @@ landingContent:
         links:
           - text: Secure data with Zero Trust
             url: /security/zero-trust/data
-          - text: Deploy a MIP solution
+          - text: Deploy a Microsoft Purview Information Protection solution
             url: information-protection-solution.md
           - text: Deploy information protection for data privacy regulations
             url: ../solutions/information-protection-deploy.md
