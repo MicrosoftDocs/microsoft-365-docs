@@ -19,7 +19,7 @@ description: "Learn about archive mailboxes to provide additional mailbox storag
 
 # Learn about archive mailboxes
 
-Mailbox archiving in Microsoft 365 (also called *In-Place Archiving*) provides users with additional mailbox storage space. After you turn on archive mailboxes, a user's current mailbox becomes their *primary mailbox* and an additional mailbox is created, called the *archive mailbox*. Both mailboxes are considered a user's mailbox for compliance features such as Content search from the Microsoft 365 compliance center, Microsoft 365 retention, and Litigation Hold.
+Mailbox archiving in Microsoft 365 (also called *In-Place Archiving*) provides users with additional mailbox storage space. After you turn on archive mailboxes, a user's current mailbox becomes their *primary mailbox* and an additional mailbox is created, called the *archive mailbox*. Both mailboxes are considered a user's mailbox for compliance features such as Content search from the Microsoft Purview portal, Microsoft 365 retention, and Litigation Hold.
 
 Users can access and store messages in their archive mailboxes by using Outlook and Outlook on the web. Users can also move or copy messages between their primary mailbox and their archive mailbox. They can also recover deleted items from the Recoverable Items folder in their archive mailbox by using the Recover Deleted Items tool.
 
@@ -46,4 +46,4 @@ For a list of Outlook licenses that support archive mailboxes, see the reference
 
 ## Next steps
 
-See [Enable archive mailboxes in the compliance center](enable-archive-mailboxes.md).
+See [Enable archive mailboxes in the Microsoft Purview portal](enable-archive-mailboxes.md).

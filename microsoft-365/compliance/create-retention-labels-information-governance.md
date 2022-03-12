@@ -46,7 +46,7 @@ The global admin for your organization has full permissions to create and edit r
 
 ## How to create retention labels for information governance
 
-1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to: **Solutions** > **Information governance** > **Labels** tab > + **Create a label**
+1. In the [Microsoft Purview portal](https://compliance.microsoft.com/), navigate to: **Solutions** > **Information governance** > **Labels** tab > + **Create a label**
     
     Don't immediately see the **Information governance** solution? First select **Show all**. 
 

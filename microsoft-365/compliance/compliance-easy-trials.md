@@ -76,11 +76,11 @@ Wondering what you can experience in your free trial? The compliance solutions t
 
 - **Information Governance**
 
-  Automate your retention policy coverage using Adaptive Policy Scopes. This feature allows you to dynamically target retention policies to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, retention policies using adaptive scopes are not subject to location limits. [Learn more about Adaptive Policy Scopes](create-retention-policies.md).
+  Automate your retention coverage by using adaptive policy scopes. This feature allows you to dynamically target policies for retention to specific users, groups, or sites. These policies automatically update when changes occur in your organization. In addition, policies that use adaptive scopes are not subject to location limits. [Learn more about adaptive policy scopes](create-retention-policies.md#adaptive-or-static-policy-scopes-for-retention).
 
 - **Information Protection**
 
-  Implement Microsoft Information Protection with [sensitivity labels](sensitivity-labels.md) and [data loss prevention policies](dlp-learn-about-dlp.md) to help you discover, classify, and protect your sensitive content wherever it lives or travels.
+  Implement Microsoft Purview Information Protection with [sensitivity labels](sensitivity-labels.md) and [data loss prevention policies](dlp-learn-about-dlp.md) to help you discover, classify, and protect your sensitive content wherever it lives or travels.
 
   The Information Protection trial provides you with default labels, auto-labeling for documents and emails, and data loss prevention to protect credit card numbers shared in Teams and by devices. The default policies we create for you get you up and running quickly, but you can fully customize them as you want.
 
@@ -91,9 +91,9 @@ Wondering what you can experience in your free trial? The compliance solutions t
   - Any auto-labeling policies cannot be edited after the trial ends, but can be deleted.
   - If you edit DLP policies that include either the Teams or Devices locations after the trial ends, those locations will be removed from the policy.
 
-  For more information about each of these preconfigured features and how they will impact users, see [Learn about the free trial for Microsoft Information Protection](mip-easy-trials.md).
+  For more information about each of these preconfigured features and how they will impact users, see [Learn about the free trial for Microsoft Purview Information Protection](mip-easy-trials.md).
 
-  For more information about the full range of features for Microsoft Information Protection, see [Microsoft Information Protection in Microsoft 365](information-protection.md).
+  For more information about the full range of features for Microsoft Purview Information Protection, see [Microsoft Information Protection in Microsoft 365](information-protection.md).
 
 - **Insider Risk Management**
 
