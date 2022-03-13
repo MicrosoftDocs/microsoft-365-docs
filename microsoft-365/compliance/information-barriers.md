@@ -79,8 +79,8 @@ To learn more about the user experience with information barriers, see [informat
 Before you get started with insider risk management, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) and any add-ons. To access and use information barriers, your organization must have one of the following subscriptions or add-ons:
 
 - Microsoft 365 E5/A5 subscription (paid or trial version)
-- Office 365 E5/A5/A3/A1 subscription (paid or trial version)
-- Office 365 Advanced Compliance add-on (no longer available for new subscriptions)
+- Office 365 E5/A5 (paid or trial version)
+- Office 365 E3/E1/A3/A1 subscription (paid or trial version) + Office 365 Advanced Compliance add-on (no longer available for new subscriptions)
 - Microsoft 365 E3/A3/A1 subscription + the Microsoft 365 E5/A5 Compliance add-on
 - Microsoft 365 E3/A3/A1 subscription + the Microsoft 365 E5/A5 Insider Risk Management add-on
 
