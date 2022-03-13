@@ -81,7 +81,7 @@ For information on other information protection capabilities outside of Microsof
 
 ## Sensitivity labels
 
-Sensitivity labels from the Microsoft Information Protection framework let you classify and protect your organization's data without hindering the productivity of users and their ability to collaborate.
+Sensitivity labels from Microsoft Purview Information Protection let you classify and protect your organization's data without hindering the productivity of users and their ability to collaborate.
 
 > [!div class="mx-imgBorder"]
 > ![Sensitivity labels in Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
@@ -109,7 +109,7 @@ Complete these activities prior to implementing any of the sensitivity label-bas
 
       If you are planning to use modern sensitivity labeling for email protection and existing email encryption methods like OME are in place, they can co-exist, but you should understand the scenarios in which either should be applied. See [Office 365 Message Encryption new capabilities (OME)](#office-365-message-encryption-ome-new-capabilities), which includes a table comparing modern sensitivity label-type protection with OME-based protection.
 
-3. Plan for integration into a broader information protection scheme. On top of coexistence with OME, sensitivity labels can be used along-side capabilities like Microsoft 365 data loss prevention (DLP) and Microsoft Defender for Cloud Apps. See [Microsoft Information Protection in Microsoft 365](../compliance/information-protection.md) to achieve your data privacy-related information protection goals.
+3. Plan for integration into a broader information protection scheme. On top of coexistence with OME, sensitivity labels can be used along-side capabilities like Microsoft 365 data loss prevention (DLP) and Microsoft Defender for Cloud Apps. See [Microsoft Purview Information Protection in Microsoft 365](../compliance/information-protection.md) to achieve your data privacy-related information protection goals.
 
 4. Develop a sensitivity label classification and control scheme. See [Data Classification and Sensitivity Label Taxonomy](https://aka.ms/dataclassificationwhitepaper).
 
@@ -129,7 +129,7 @@ Complete these activities prior to implementing any of the sensitivity label-bas
 
 ### Create and deploy sensitivity labels for sites, groups, and teams
 
-When you create [sensitivity labels](../compliance/sensitivity-labels-teams-groups-sites.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, you can now apply them to these containers:
+When you create [sensitivity labels](../compliance/sensitivity-labels-teams-groups-sites.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a>, you can now apply them to these containers:
 
 - Microsoft Teams sites
 - Microsoft 365 groups (formerly Office 365 groups)
@@ -153,7 +153,7 @@ When you're ready to start protecting your organization's data with sensitivity 
 2. **Define what each label can do.** Configure the protection settings you want associated with each label. For example, you might want lower sensitivity content (such as a "General" label) to have just a header or footer applied, while higher sensitivity content (such as a "Confidential" label) should have a watermark and have encryption enabled.
 3. **Publish the labels.** After your sensitivity labels are configured, publish them by using a label policy. Decide which users and groups should have the labels and what policy settings to use. A single label is reusable. You define it once and then you can include it in several label policies assigned to different users.
 
-Once you publish sensitivity labels from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, they start to appear in [Office apps](../compliance/sensitivity-labels-office-apps.md) for users to classify and protect content as it's created or edited.
+Once you publish sensitivity labels from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a>, they start to appear in [Office apps](../compliance/sensitivity-labels-office-apps.md) for users to classify and protect content as it's created or edited.
 
 ![Sensitivity label deployment flow in Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
 
