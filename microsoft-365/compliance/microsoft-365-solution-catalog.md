@@ -88,7 +88,7 @@ First, make sure that you have the appropriate licenses and permissions. Then, s
 
 - **Learn about and create Communication compliance policies** to quickly identify and remediate corporate code-of-conduct policy violations. See [Communication compliance](communication-compliance.md).
 
-- **Microsoft Information Protection**, learn how Microsoft 365 solutions help you discover, classify, and protect sensitive information wherever it lives or travels.
+- **Microsoft Purview Information Protection**, learn how Microsoft 365 solutions help you discover, classify, and protect sensitive information wherever it lives or travels.
     - **Get acquainted with and set up Microsoft Defender for Cloud Apps**. See [Quickstart: Get started with Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security).
     - **Get started with classifiers**. Classifying content and then labeling it so it can be protected and handled properly is the starting place for the information protection discipline. See [Learn about trainable classifiers (preview)](classifier-learn-about.md).
 
