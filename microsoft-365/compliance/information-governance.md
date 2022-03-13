@@ -21,7 +21,7 @@ description: Learn about what it means to govern your organization's data with M
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-As part of [Microsoft Information Governance](manage-information-governance.md) that also includes [records management](records-management.md) and [data connectors](archiving-third-party-data.md), information governance from Microsoft 365 provides you with tools and capabilities to retain the content that you need to keep, and delete the content that you don't. Retaining and deleting content is often needed for compliance and regulatory requirement, but deleting content that no longer has business value also helps you manage risk and liability. For example, it reduces your attack surface.
+As part of [Microsoft Purview Information Governance](manage-information-governance.md) that also includes [records management](records-management.md) and [data connectors](archiving-third-party-data.md), information governance from Microsoft 365 provides you with tools and capabilities to retain the content that you need to keep, and delete the content that you don't. Retaining and deleting content is often needed for compliance and regulatory requirement, but deleting content that no longer has business value also helps you manage risk and liability. For example, it reduces your attack surface.
 
 **Retention policies** are the cornerstone for information governance. Use them for Microsoft 365 workloads that include Exchange, SharePoint, OneDrive, Teams, and Yammer. Configure whether content for these services needs to be retained indefinitely, or for a specific period if users edit or delete it. Or you can configure the policy to automatically permanently delete the content after a specified period if it's not already deleted. You can also combine these two actions for retain and then delete, which is a very typical configuration. For example, retain email for three years and then delete it.
 
@@ -46,5 +46,5 @@ Other information governance capabilities to help you keep what you need and del
 
 For deployment guidance for information governance that includes a recommended deployment roadmap, licensing information, permissions, a list of supported scenarios, and end-user documentation, see [Get started with information governance](get-started-with-information-governance.md).
 
-Looking for deployment guidance to protect your data? See [Deploy a Microsoft Information Protection solution](information-protection-solution.md).
+Looking for deployment guidance to protect your data? See [Deploy a Microsoft Purview Information Protection solution](information-protection-solution.md).
 

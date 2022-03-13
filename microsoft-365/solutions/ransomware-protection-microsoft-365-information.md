@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-ransomware
 ms.custom: seo-marvel-jun2020
 keywords: ransomware, human-operated ransomware, human operated ransomware, HumOR, extortion attack, ransomware attack, encryption, cryptovirology, zero trust
-description: Use controlled folder access, MIP, DLP, and Microsoft Defender for Cloud Apps to protect your Microsoft 365 sensitive data.
+description: Use controlled folder access, Microsoft Purview Information Protection, DLP, and Microsoft Defender for Cloud Apps to protect your Microsoft 365 sensitive data.
 ---
 
 # Step 5. Protect information

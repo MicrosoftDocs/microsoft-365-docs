@@ -93,7 +93,7 @@ Wondering what you can experience in your free trial? The compliance solutions t
 
   For more information about each of these preconfigured features and how they will impact users, see [Learn about the free trial for Microsoft Purview Information Protection](mip-easy-trials.md).
 
-  For more information about the full range of features for Microsoft Purview Information Protection, see [Microsoft Information Protection in Microsoft 365](information-protection.md).
+  For more information about the full range of features for Microsoft Purview Information Protection, see [Microsoft Purview Information Protection in Microsoft 365](information-protection.md).
 
 - **Insider Risk Management**
 

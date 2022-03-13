@@ -51,7 +51,7 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ### Sensitivity labels
 
-- New guidance [Why choose MIP built-in labeling over the AIP add-in for Office apps](sensitivity-labels-aip.md) if you are using the Azure Information Protection (AIP) unified labeling client for Windows computers. This page includes information about the new private preview for Office apps.
+- New guidance [Why choose built-in labeling over the AIP add-in for Office apps](sensitivity-labels-aip.md) if you are using the Azure Information Protection (AIP) unified labeling client for Windows computers. This page includes information about the new private preview for Office apps.
 - New settings for [auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange):
   - Additional settings for email to support always applying a matched sensitivity label, and to apply encryption to email received from outside the organization.
   - Exclusions for specific instances (users, groups, sites) are supported by using the new **Excluded** option when the default selection of **All** is specified for **Included**.
@@ -61,9 +61,9 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ## January 2022
 
-### Microsoft Information Governance
+### Microsoft Purview Information Governance
 
-- The [Microsoft Information Governance in Microsoft 365](manage-information-governance.md) page and section of the documentation is substantially revised and restructured to help you more easily find information that relates to the solutions you configure in the Microsoft 365 compliance center: Data Connectors, Information Governance, and Records Management. As part of this revision, the documentation provides a clearer distinction for the retention scenarios for information governance vs. records management.
+- The [Microsoft Purview Information Governance in Microsoft 365](manage-information-governance.md) page and section of the documentation is substantially revised and restructured to help you more easily find information that relates to the solutions you configure in the Microsoft 365 compliance center: Data Connectors, Information Governance, and Records Management. As part of this revision, the documentation provides a clearer distinction for the retention scenarios for information governance vs. records management.
 - [Learn about information governance](information-governance.md) - new, to support the restructure.
 - [Get started with information governance](get-started-with-information-governance.md) - new, to replace "Get started with retention", this article includes getting started steps for all information governance capabilities, which include retention.
 - [Create retention labels for exceptions to your retention policies](create-retention-labels-information-governance.md) - new, identified scenario for using retention labels for information governance rather than records management.
@@ -75,7 +75,7 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ### Sensitivity labels
 
-- Support for the new [MIP role groups and roles](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels), now in preview.
+- Support for new [role groups and roles](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels), now in preview.
 - New [monitoring capabilities](apply-sensitivity-label-automatically.md#monitoring-your-auto-labeling-policy) for auto-labeling policies.
 - Now rolling out: default label for existing documents in Current Channel (Preview), and justification text for Office on the web.
 - Announced for the July Semi-Annual Enterprise Channel with version 2202+: Co-authoring and auditing for Outlook.
@@ -98,7 +98,7 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ### Information protection
 
-- [Deploy a MIP solution](information-protection-solution.md) - New step-by-step guidance for customers looking for a prescriptive roadmap to deploy Microsoft Information Protection (MIP)
+- [Deploy a Microsoft Purview Information Protection solution](information-protection-solution.md) - New step-by-step guidance for customers looking for a prescriptive roadmap to deploy Microsoft Purview Information Protection
 
 ### Retention and records management
 
