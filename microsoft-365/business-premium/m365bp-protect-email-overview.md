@@ -37,7 +37,7 @@ In this mission you are ensuring email systems are safe from attackers.
 
 The mission objectives are to:
 
-- [Protect against phishing and other attacks](m365-campaigns-phishing-an-attacks.md)
+- [Protect against phishing and other attacks](m365-campaigns-phishing-and-attacks.md)
 - [Set up encrypted email](send-encrypted-email.md)
 
 Accomplish these objectives before you move on to the [next mission](m365bp-collaborate-share-securely.md).
