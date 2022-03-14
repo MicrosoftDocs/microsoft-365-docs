@@ -53,7 +53,7 @@ Follow these links for information on how to:
 Note: If you purchased Azure Active Directory Premium (AADP) Plan 1 or Plan 2, you're eligible for Microsoft Identity Manager (MIM). To download MIM, go to the [Download Center](https://www.microsoft.com/zh-cn/download/details.aspx?id=58498).
 
 
-# Set up mobile devices for Microsoft 365 for business users
+## Set up mobile devices for Microsoft 365 for business users
 
 Use the following instructions to install Office on an iPhone or an Android phone. After you follow these steps, your work files created in Office apps will be protected by Microsoft 365 for business.
 
