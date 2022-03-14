@@ -3,7 +3,7 @@ title: "Install Office apps on all devices"
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
-author: cirilklo
+author: cirilk
 manager: scotv
 audience: Admin
 ms.topic: conceptual
