@@ -71,19 +71,19 @@ If you found this video helpful, check out the [complete training series for sma
 
 Go to **App store**, and in the search field type in Microsoft Outlook.
   
-:::image type="content" source="media/886913de-76e5-4883-8ed0-4eb3ec06188f.png" alt-text="Go to the iPhone App Store.":::
+:::image type="content" source="media/ios-app-store.png" alt-text="Go to the iPhone App Store.":::
   
 Tap the cloud icon to install Outlook.
   
-![Tap the cloud icon to install Outlook.](../../media/665e1620-948a-4ab8-b914-dca49530142c.png)
+:::image type="content" source="media/install-outlook.png" alt-text="Tap the cloud icon to install Outlook.":::
   
 When the installation is done, tap the **Open** button to open Outlook and then tap **Get Started**.
   
-![Screenshot of Outlook with Get Started button.](../../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
+:::image type="content" source="media/get-started-outlook.png" alt-text="Screenshot of Outlook with Get Started button.":::
   
 Enter your work email address on the **Add Email Account** screen \> **Add Account**, and then enter your Microsoft 365 for business credentials \> **Sign in**.
   
-![Sign in to your work account.](../../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
+![Sign in to your work account.](../../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)  
   
 If your organization is protecting files in apps, you'll see a dialog stating that your organization is now protecting the data in the app and you need to restart the app to continue to use it. Tap **OK** and close Outlook. 
   
