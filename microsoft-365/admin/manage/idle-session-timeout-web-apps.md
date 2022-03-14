@@ -102,7 +102,7 @@ Idle session timeout isn't supported when third party cookies are disabled in th
 
 ### How should I prepare if my organization is already using existing Outlook web app and SharePoint Online idle timeout policies?  
 
-If you're already using existing Outlook web app and SharePoint Online idle timeout policies, you can still turn on idle session timeout feature. When you turn on idle timeout policies, it takes precedence over the existing Outlook web app and SharePoint Online policies. We're planning to deprecate the existing Outlook web app and SharePoint Online policies in the near future. To better prepare your organization, we recommend you turn on idle session timeout.
+If you're already using existing Outlook web app and SharePoint Online idle timeout policies, you can still turn on idle session timeout feature. When you turn on the idle timeout policy, it takes precedence over the existing Outlook web app and SharePoint Online policies. We're planning to deprecate the existing Outlook web app and SharePoint Online policies in the near future. To better prepare your organization, we recommend you turn on idle session timeout.
 
 ### What happens if I am inactive on an included Microsoft 365 web app, but active on a Microsoft web app or SaaS web app that doesn't have idle session timeout turned on?  
 
