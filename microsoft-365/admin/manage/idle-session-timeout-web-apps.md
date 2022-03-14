@@ -13,7 +13,7 @@ ms.collection: Adm_TOC
 description: "Set how long user's session will last in Microsoft 365 before they're timed out."
 ---
 
-# Idle session timeout for Microsoft 365 (Preview)
+# Idle session timeout for Microsoft 365 (Public preview)
 
 <!-- Add metadata: localization, AdminSurgePortfolio, admindeeplinkMAC. remove robots nofollow -->
 
@@ -30,10 +30,10 @@ If you aren't a Microsoft 365 or Office 365 global admin, you won't see the **Se
 
 1. In the Microsoft 365 admin center, select **Org Settings** **->**  [Security & privacy](https://go.microsoft.com/fwlink/p/?linkid=2072756) tab and select **Idle session timeout**.
 
-2. On the **Idle Session Timeout** select the toggle to turn it on. You can choose a default setting or choose your own custom time. It'll take a few minutes for before idle session is turned on in your organization.
+2. On the **Idle Session Timeout** select the toggle to turn it on. You can choose a default setting or choose your own custom time. It'll take a few minutes before idle session is turned on in your organization.
 
 > [!NOTE]
-> If you've set up idle session timeout policies for [Outlook web app](https://support.microsoft.com/topic/description-of-the-activity-based-authentication-timeout-for-owa-in-office-365-0c101e1b-020e-69c1-a0b0-26532d60c0a4) and [SharePoint Online](/sharepoint/sign-out-inactive-users)S, turning on idle session timeout in the admin center will override the Outlook web app and SharePoint settings.
+> If you've set up idle session timeout policies for [Outlook web app](https://support.microsoft.com/topic/description-of-the-activity-based-authentication-timeout-for-owa-in-office-365-0c101e1b-020e-69c1-a0b0-26532d60c0a4) and [SharePoint Online](/sharepoint/sign-out-inactive-users), turning on idle session timeout in the admin center will override the Outlook web app and SharePoint settings.
 
 Idle session timeout is one of the many security measures in Microsoft 365. To learn about other security tasks in Microsoft 365, see [Top security tasks in Microsoft 365](../../security/top-security-tasks-for-remote-work.md).  
 
@@ -102,7 +102,7 @@ Idle session timeout isn't supported when third party cookies are disabled in th
 
 ### How should I prepare if my organization is already using existing Outlook web app and SharePoint Online idle timeout policies?  
 
-If you're already using existing Outlook web app and SharePoint Online idle timeout policies, you can still turn on idle session timeout feature. When you turn on Outlook web app and SharePoint Online idle timeout policies, it takes precedence over the existing Outlook web app and SharePoint Online policies. We're planning to deprecate the existing Outlook web app and SharePoint Online policies in the near future. To better prepare your organization, we recommend you turn on idle session timeout.
+If you're already using existing Outlook web app and SharePoint Online idle timeout policies, you can still turn on idle session timeout feature. When you turn on idle timeout policies, it takes precedence over the existing Outlook web app and SharePoint Online policies. We're planning to deprecate the existing Outlook web app and SharePoint Online policies in the near future. To better prepare your organization, we recommend you turn on idle session timeout.
 
 ### What happens if I am inactive on an included Microsoft 365 web app, but active on a Microsoft web app or SaaS web app that doesn't have idle session timeout turned on?  
 
