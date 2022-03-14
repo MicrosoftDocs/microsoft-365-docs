@@ -36,8 +36,8 @@ To create a security group
 1. Type a **Group name.** 
 1. Optionally, add a description for the group.
 1. For **Azure AD roles can be assigned to the group**, choose **No**.
-1. Select a pre-defined **Membership type (required).** For more information on membership types, see [Group and membership types](#membership-types).
-1. Add group owners and members or a dynamic query if you're using dynamic user membership.
+1. Select a pre-defined **Membership type (required)**.
+1. Add group owners and members or a [dynamic query](/azure/active-directory/enterprise-users/groups-dynamic-membership) if you're using dynamic user membership.
 1. Select **Create**. Your group is created and ready for you to add members.
 
 ## Add an organization
