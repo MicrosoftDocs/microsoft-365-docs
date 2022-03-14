@@ -55,7 +55,9 @@ If you're a global administrator or an Exchange Online administrator, and Exchan
   - Outlook included with Microsoft 365 apps for Enterprise
   - Outlook app for iOS and Android
 
-- Both add-ins aren't available for shared mailboxes or mailboxes in on-premises Exchange organizations.
+- Both add-ins are not available for shared mailboxes.
+
+- Both add-ins are not available for on-premises Exchange mailboxes. 
 
 - Your existing web browser should work with both the Report Message and Report Phishing add-ins. But, if you notice the add-in isn't available or not working as expected, try a different browser.
 
