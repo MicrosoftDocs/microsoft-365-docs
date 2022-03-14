@@ -16,8 +16,6 @@
       href: m365bp-setup.md
     - name: Set up Microsoft 365 for Campaigns
       items:
-        - name: Overview
-          href: microsoft-365-campaigns-setup-overview.md
         - name: Sign up
           href: m365-campaigns-sign-up.md
         - name: Sign in
@@ -80,6 +78,8 @@
   items: 
     - name: Overview
       href: m365bp-security-incident-management.md
+    - name: Review security recommendations
+      href: ../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Review remediation actions on devices
       href: m365bp-review-remediation-actions-devices.md
     - name: Respond to a compromised email account
