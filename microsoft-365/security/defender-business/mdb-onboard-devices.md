@@ -30,12 +30,7 @@ With Microsoft Defender for Business, you have several options to choose from fo
 
 ## What to do
 
-1. See your options for [onboarding devices](#device-onboarding-methods), and select one of the following methods: 
-
-   - [Automatic onboarding for Windows devices enrolled in Microsoft Endpoint Manager](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)
-   - [Local script for Windows and Mac devices](#local-script-in-defender-for-business)
-   - [Microsoft Endpoint Manager (Microsoft Intune)](#microsoft-endpoint-manager)
-   - [Microsoft Defender for Business security configuration](#microsoft-defender-for-business-security-configuration)
+1. See your options for [onboarding devices](#device-onboarding-methods), and select a method. 
 
 2. [Run a detection test](#run-a-detection-test) for newly onboarded Windows devices.
 
@@ -49,6 +44,8 @@ This article also includes information about [Running a detection test for Windo
 >
 
 ## Device onboarding methods
+
+
 
 The following table describes the most commonly used methods to onboard devices to Defender for Business. 
 
