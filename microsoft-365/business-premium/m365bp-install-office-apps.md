@@ -103,7 +103,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 To begin setup on your Android phone, go to the Play Store.
   
-![On the Android home screen, tap Play Store.](../../media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
+:::image type="content" source="media/aos-play-store.png" alt-text="On the Android home screen, tap Play Store.":::
   
 Enter Microsoft Outlook in the Google Play search box and tap **Install**. Once Outlook is done installing, tap **Open**.
   
