@@ -105,7 +105,7 @@ In the **Testing** section, you can view the testing status of your improvement 
  
 You can edit test status when an improvement action's implementation status is "implemented" or "alternative implementation."
 
-Test statuses for manually tested actions:
+Test statuses for [manually tested actions](#manual-testing-source):
   - **None**: no work has started on the action
   - **Not assessed**: action hasn't been tested
   - **Passed**: implementation has been verified by an assessor
@@ -116,7 +116,7 @@ Test statuses for manually tested actions:
   - **In progress**: testing in progress
   - **Remediated**: tbd
 
-Automatically tested actions may also show one of the following states in the **Test status** column on the **Improvement actions** page:
+[Automatically tested actions](#automatic-testing-source) may also show one of the following states in the **Test status** column on the **Improvement actions** page:
    - **To be detected**: awaiting signals that indicate test status
   - **Could not be detected**: couldn't detect a test status; will be automatically checked again
   - **Partially tested**: more testing needed before points can be achieved
@@ -130,7 +130,7 @@ Toggle through the calendar pop-up to select the testing date.
 
 **Testing notes** and **Additional notes**
 
-Text fields for notes for internal reference.
+Enter notes for your own internal reference in these free text fields.
 
 **Testing history**
 
