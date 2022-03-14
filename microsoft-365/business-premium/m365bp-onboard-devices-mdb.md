@@ -78,7 +78,7 @@ If you were already using Endpoint Manager (which includes Microsoft Intune and 
 
 To enroll a device, sign in to your Intune account through the company portal, which is included with Microsoft 365 Business Premium. 
 
-<!--KC NOTE: Where and how does this interact with the Endpoint Manager at endpoint.microsoft.com ?--->
+<!--KC NOTE: Where and how does this interact with the Endpoint Manager at endpoint.microsoft.com ?  denise response: Microsoft Intune is part of Endpoint Manager. Customers are to sign in at https://endpoint.microsoft.com. --->
 
 See [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment). 
 
