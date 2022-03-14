@@ -22,6 +22,9 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Managed Service Providers (MSPs) may enable granular and time-bound access to their customer tenants in Microsoft 365 Lighthouse by configuring Granular Delegated Admin Privileges (GDAP) in Partner Center. GDAP offers MSPs a high level of control and flexibility by providing customer access through [Azure Active Directory (Azure AD) built-in roles](/azure/active-directory/roles/permissions-reference). Assigning [the least privileged roles by task](/azure/active-directory/roles/delegate-by-task) through GDAP to MSP technicians reduces security risk for both MSPs and customers. Enable GDAP to assign more granular roles to your technicians who use Lighthouse and adopt a least-privileged approach to security across customer tenants.
 
+> [!NOTE]
+> GDAP is currently in [technical preview](/partner-center/announcements/2022-february#6) (public preview) to allow partners to assign granular permissions before GDAP is generally available.
+
 If MSP technicians still access customer environments with the Helpdesk Agent or Admin Agent roles granted through Delegated Admin Privileges (DAP), see [DAP in Lighthouse](#dap-in-lighthouse) in this article. If both GDAP and DAP coexist, roles granted to users through GDAP take precedence for customers where a GDAP relationship has been established.
 
 ## Set up GDAP in Lighthouse
