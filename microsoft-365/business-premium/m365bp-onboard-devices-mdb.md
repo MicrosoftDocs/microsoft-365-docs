@@ -16,7 +16,6 @@ f1.keywords: NOCSH
 ms.collection: 
 - SMB
 - M365-security-compliance
-- m365-initiative-defender-business
 ---
 
 # Onboard managed devices to Microsoft Defender for Business
@@ -31,7 +30,6 @@ To onboard devices, you can choose from several options:
 
 This article also includes:
 
-- [How to run a detection test on a Windows device](#run-a-detection-test-on-a-windows-device)
 - [How to onboard devices gradually](#onboard-devices-gradually)
 - [How to offboard a device](#offboard-a-device) if a device is replaced or someone leaves the organization
 
