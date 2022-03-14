@@ -71,7 +71,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 Go to **App store**, and in the search field type in Microsoft Outlook.
   
-![Go to the iPhone App Store.](../../media/886913de-76e5-4883-8ed0-4eb3ec06188f.png)
+:::image type="content" source="media/886913de-76e5-4883-8ed0-4eb3ec06188f.png" alt-text="Go to the iPhone App Store.":::
   
 Tap the cloud icon to install Outlook.
   
