@@ -43,7 +43,7 @@ In the process of setting up impenetrable defenses, you will complete the follow
 
 [**Set up devices**](m365bp-devices-overview.md). In this mission, you set up all types of devices so they are safely part of the ecosystem.
 
-[**Protect email**](m365bp-email-overview.md). In this mission, take the necessary steps to protect the email systems from attack.
+[**Protect email**](m365bp-protect-email-overview.md). In this mission, take the necessary steps to protect the email systems from attack.
 
 [**Collaborate and share securely**](m365bp-collaborate-share-securely.md). The objectives of this mission require you to set up secure file sharing for all members of the organization.
 
