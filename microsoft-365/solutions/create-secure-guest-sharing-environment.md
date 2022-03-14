@@ -63,7 +63,7 @@ Now, guest will be required to enroll in multi-factor authentication before they
 
 ### More information
 
-[Planning an Azure AD Multi-Factor Authentication deployment](/azure/active-directory/authentication/howto-mfa-getstarted)
+[Planning an Azure AD multi-factor authentication deployment](/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## Set up a terms of use for guests
 
@@ -138,7 +138,7 @@ To set up a guest access review
 13. Type a **Review name** and review the settings.
 14. Click **Create**.
 
-It's important to note that for SharePoint and OneDrive locations, documents will be proactively blocked right after detection of sensitive information, irrespective of whether the document is shared or not, for all external users, while internal users will continue to have access to the document.
+It's important to note that for SharePoint and OneDrive locations, documents will be proactively blocked right after detection of sensitive information, irrespective of whether the document is shared or not, for all guests, while internal users will continue to have access to the document.
 
 ### More information
 

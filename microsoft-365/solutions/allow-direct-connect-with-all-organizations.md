@@ -42,7 +42,7 @@ To allow users to invite B2B direct connect participants by default
 1. On the **External applications** tab, under **Access status**, choose **Allow access**.
 1. Select **Save**.
 1. Select the **Trust settings** tab.
-1. Choose if you want to trust multifactor authentication, compliant devices, or hybrid Azure AD joined devices from other organizations.
+1. Choose if you want to trust multi-factor authentication, compliant devices, or hybrid Azure AD joined devices from other organizations.
 1. Select **Save**.
 1. Close the **Default settings** blade.
 

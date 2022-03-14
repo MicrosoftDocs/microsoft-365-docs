@@ -65,7 +65,7 @@ Teams for sensitive and highly sensitive protection are private teams in which s
 
 ## Sensitivity labels
 
-The sensitive and highly sensitive tiers use sensitivity labels to help secure the team and its files. To implement these tiers, you must enable [sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md).
+The sensitive and highly sensitive tiers use sensitivity labels to help secure the team and its files. To implement these tiers, you must enable [sensitivity labels to protect content in Microsoft Teams, Office 365 Groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 While the baseline tier does not require sensitivity labels, consider creating a "general" label and then requiring that all teams be labeled. This will help ensure that users make a conscious choice about sensitivity when they create a team. If you plan to deploy the sensitive or highly sensitive tiers, we do recommend creating a "general" label that you can use for baseline teams and for files that are not sensitive.
 

@@ -22,7 +22,7 @@ description: Learn how to require people outside your organization to pass condi
 
 You can require any of the following conditional access options for people outside your organization:
 
-- Multifactor authentication
+- Multi-factor authentication
 - Compliant devices
 - Hybrid Azure AD joined devices
 
@@ -30,7 +30,7 @@ When using Azure AD B2B direct connect - such as with shared channels in Teams -
 
 ## Planning considerations for conditional access
 
-Multifactor authentication can be used with any external account. If your organization doesn't trust multifactor authentication from other Azure AD organizations, users from those organizations will have to perform multifactor authentication when accessing resources in your organization. People with third party email addresses (not hosted by Microsoft) will always be prompted for multifactor authentication.
+Multi-factor authentication can be used with any external account. If your organization doesn't trust multi-factor authentication from other Azure AD organizations, users from those organizations will have to perform multi-factor authentication when accessing resources in your organization. People with third party email addresses (not hosted by Microsoft) will always be prompted for multi-factor authentication.
 
 The options **Require device to be marked compliant** and **Require Hybrid Azure AD joined device** require devices that are managed in Azure AD. If you choose to enable these options, people outside your organization must be using devices that are managed by your organization or by an organization that you trust. People without managed devices will be blocked, including:
 
@@ -104,4 +104,4 @@ To set up conditional access for people outside your organization
 
 ## Related topics
 
-[Tutorial: Enforce multi-factor authentication for B2B guest users](/azure/active-directory/external-identities/b2b-tutorial-require-mfa)
+[Tutorial: Enforce multi-factor authentication for B2B guests](/azure/active-directory/external-identities/b2b-tutorial-require-mfa)

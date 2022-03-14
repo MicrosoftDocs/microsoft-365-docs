@@ -52,7 +52,7 @@ To allow or block guest sharing, we use a combination of a sensitivity label for
 
 For the sensitive level of protection, we'll be using a sensitivity label to classify the team. This label can also be used to classify individual files in this or other teams, or in other file locations such as SharePoint or OneDrive. 
 
-As a first step, you must enable sensitivity labels for Teams. See [Use sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md) for details.
+As a first step, you must enable sensitivity labels for Teams. See [Use sensitivity labels to protect content in Microsoft Teams, Office 365 Groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md) for details.
 
 If you already have sensitivity labels deployed in your organization, consider how this label fits with your overall label strategy. You can change the name or settings if needed to meet the needs of your organization.
 
