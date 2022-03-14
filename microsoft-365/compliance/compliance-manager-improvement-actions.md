@@ -101,9 +101,11 @@ In the **Testing** section, you can view the testing status of your improvement 
 
 #### Testing status fields
 
-**Test status**: Available to select when implementation status is "implemented" or "alternative implementation."
+**Test status**
+ 
+You can edit test status when an improvement action's implementation status is "implemented" or "alternative implementation."
 
-  Test status states for manually tested actions:
+Test statuses for manually tested actions:
   - **None**: no work has started on the action
   - **Not assessed**: action hasn't been tested
   - **Passed**: implementation has been verified by an assessor
@@ -114,19 +116,25 @@ In the **Testing** section, you can view the testing status of your improvement 
   - **In progress**: testing in progress
   - **Remediated**: tbd
 
-Automatically tested actions may also show one of the following states in the **Test status** column on the **Improvement actions** page. Because they're automatically tested, the test status can't be manually changed.
+Automatically tested actions may also show one of the following statuses in the **Test status** column on the **Improvement actions** page:
    - **To be detected**: awaiting signals that indicate test status
   - **Could not be detected**: couldn't detect a test status; will be automatically checked again
   - **Partially tested**: more testing needed before points can be achieved
 
 > [!NOTE]
-> Testing notes and the test status of automatically tested improvement actions are not editable fields.
+> For automatically tested improvement actions, the testing notes and test status are not editable fields.
 
-**Test date**: Toggle through the calendar pop-up to select the date.
+**Test date**
 
-**Testing notes** and **Additional notes**: Text fields for notes for internal reference.
+Toggle through the calendar pop-up to select the testing date.
 
-**Testing history**: Allows you to download a report of all test status changes for the action.
+**Testing notes** and **Additional notes**
+
+Text fields for notes for internal reference.
+
+**Testing history**
+
+The testing history provides a downloaded report of all test status changes for the improvement action.
 
 #### Exporting testing history
 You can export a report that will show you a history of all changes in test status for an improvement action. These reports are especially helpful for monitoring progress on [actions that are automatically tested](#automatic-testing-source), since such actions are regularly or frequently updated based on your tenant's data.
