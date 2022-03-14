@@ -48,7 +48,31 @@ The baseline configurations in the following table come standard with the Lighth
 | Configure Microsoft Defender Firewall for Windows 10 and later | A firewall policy to help secure devices by preventing unwanted and unauthorized network traffic. For more information about this baseline, see [Best practices for configuring Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/best-practices-configuring).  |
 | Configure a device compliance policy for Windows 10 and later | A Windows device policy with pre-configured settings to meet basic compliance requirements. For more information about this baseline, see [Conditional Access: Require compliant or hybrid Azure AD joined device](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). |
 
+## Deployment Plans
 
+A deployment plan provides status on a tenant's deployment progress. The deployment steps in a plan are based on the baseline applied to the tenant. A tenant must be active to access their deployment plan.
+
+From the **Tenants** page, select an active tenant from the list and then select the **Deployment Plan** tab. 
+
+:::image type="content" source="../media/m365-lighthouse-deploy-baselines/deployment-plan-tab.png" alt-text="Screenshot of the Deployment Plan tab.":::
+
+The Deployment Plan tab includes the following deplolment step information:
+
+
+|Column  |Description  |
+|---------|---------|
+|Deployment step     |  Description of deployment step.       |
+|Status     |The status of the deployment step.         |
+|Baseline     |The baseline from which the deployment step is derived.         |
+|Category     | Whether the deployment step is associated with managing Devices, Identity, or Data.        |
+|Last updated    | The date at which the deployment step was last updated.        |
+
+
+The Deployment Plan tab also includes the following options:
+
+- **Export:** Select to export deployment step data to an Excel comma-separated values (.csv) file.
+- **Refresh:** Select to retrieve the most current deployment step data.
+- **Search:** Enter keywords to quickly locate a specific deployment step in the list.
 ## Related content
 
 [Deploy Microsoft 365 Lighthouse baselines](m365-lighthouse-deploy-baselines.md) (article)\
