@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/08/2022
+ms.date: 03/14/2022
 ms.prod: m365-security
 ms.technology: mdb
 localization_priority: Normal
@@ -73,7 +73,6 @@ If your organization is using Android devices, use this method.
 
 See [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment).
 
-NEED PROCEDURES HERE
 
 ## Run a detection test on a Windows device
 
