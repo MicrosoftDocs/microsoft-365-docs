@@ -87,7 +87,7 @@ Enter your work email address on the **Add Email Account** screen \> **Add Accou
   
 If your organization is protecting files in apps, you'll see a dialog stating that your organization is now protecting the data in the app and you need to restart the app to continue to use it. Tap **OK** and close Outlook. 
   
-![Screenshot that shows your organization is now protecting your Outlook app.](../../media/fb4c1c84-b1e9-42e1-8070-c13dcf79fb09.png)
+:::image type="content" source="media/outlook-protected.png" alt-text="Screenshot that shows your organization is now protecting your Outlook app.":::
   
 Locate Outlook on the iPhone, and restart it. When prompted, enter a PIN and verify it. Outlook on your iPhone is now ready to be used.
   
