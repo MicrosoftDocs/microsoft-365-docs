@@ -45,7 +45,10 @@ This article also includes information about [Running a detection test for Windo
 
 ## Device onboarding methods
 
+This section describes several methods to onboard devices to Defender for Business. Download the following diagram for reference.
 
+[:::image type="content" source="media/mdb-device-onboarding.png" alt-text="Screenshot of device onboarding diagram":::](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf)
+[PDF](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) | [Visio](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.vsdx)
 
 The following table describes the most commonly used methods to onboard devices to Defender for Business. 
 
