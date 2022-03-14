@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/07/2022
+ms.date: 03/14/2022
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
@@ -37,7 +37,7 @@ Keeping Microsoft Defender Antivirus up to date is critical to assure your devic
 
 ## Security intelligence updates
 
-Microsoft Defender Antivirus uses [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads security intelligence updates to provide protection.
+Microsoft Defender Antivirus uses [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads dynamic security intelligence updates to provide additional protection. These dynamic updates do not take the place of regular security intelligence updates via security intelligence update KB2267602.
 
 > [!NOTE]
 > Updates are released under the following KBs:
