@@ -107,15 +107,15 @@ To begin setup on your Android phone, go to the Play Store.
   
 Enter Microsoft Outlook in the Google Play search box and tap **Install**. Once Outlook is done installing, tap **Open**.
   
-![Tap Open to open Outlook app.](../../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
+:::image type="content" source="media/aos-install-outlook.png" alt-text="Tap Open to open Outlook app.":::
   
 In the Outlook app, tap **Get Started**, then add your Microsoft 365 for business email account \> **Continue**, and sign in with your organization credentials.
   
-![Sign in to your organizational account in Outlook.](../../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
+:::image type="content" source="media/aos-outlook-signin.png" alt-text="Sign in using your account for Microsoft 365.":::
   
 In the dialog that states you must install the Intune Company Portal app, tap **Go to store**.
   
-![Tap on Go to store to get Intune Company Portal app.](../../media/a702d712-5622-45dd-a511-b1adaee63071.png)
+:::image type="content" source="media/intune-portal-app.png" alt-text="Get the Intune Company Portal app.":::
   
 In Play Store, install Intune Company Portal.
   
