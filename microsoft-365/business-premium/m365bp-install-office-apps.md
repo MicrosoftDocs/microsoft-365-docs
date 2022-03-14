@@ -99,7 +99,7 @@ Watch a video about installing Outlook and Office on Android devices.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ecc2e9c0-bc7e-4f26-8b14-91d84dbcfef0] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](../../business-video/index.yml).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](/microsoft-365/admin/admin-video-library).
 
 To begin setup on your Android phone, go to the Play Store.
   
