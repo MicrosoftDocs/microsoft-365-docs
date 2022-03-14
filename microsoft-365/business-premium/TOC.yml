@@ -41,7 +41,7 @@
     - name: Set up managed devices
       href: m365bp-managed-devices-setup.md
     - name: Install Office apps on devices
-      href: ../admin/setup/install-office-apps.md
+      href: install-office-apps.md
     - name: Protect unmanaged devices
       href: m365bp-protect-pcs-macs.md
 - name: Protect email
