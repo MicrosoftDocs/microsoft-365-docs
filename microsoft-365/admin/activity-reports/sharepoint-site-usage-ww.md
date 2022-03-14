@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - SharePoint site usage"
+title: "Microsoft 365 admin center SharePoint site usage reports"
 f1.keywords:
 - NOCSH
 ms.author: kwekua

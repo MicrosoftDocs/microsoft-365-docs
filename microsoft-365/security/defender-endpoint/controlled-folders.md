@@ -15,7 +15,7 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.collection: m365initiative-m365-defender
+ms.collection: m365-security-compliance
 ms.date: 
 ---
 

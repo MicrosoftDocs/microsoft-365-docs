@@ -31,25 +31,26 @@ description: "Learn how to collaborate securely in your small business or campai
 
 In our current world, keeping data and communications secure is a priority, particularly for medical and legal practices, political campaigns, and many other smaller businesses. Take advantage of the security features in Microsoft 365 Business Premium to collaborate safely within your small business. This solution provides a set of recommendations designed to help protect you and your data. This library includes help for setting up and using this recommended environment, no matter your business type.
 
-
-![Microsoft 365 Business Premium protects your productivity tools, collaboration tools, file storage, email, devices, and identity.](../media/M365-WhatIsIt-SecurityFocus.png#lightbox)
+:::image type="content" source="media/m365-whatisit-securityfocus2.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
 
 This configuration includes the following guidance for productivity, collaboration, file storage, email, devices, and identity to protect your business:
 
 | Protection for | Description | Links |
 | ----- | ----- | ----- | ----- |
-|Email | Use multi-factor authentication, and ATP Advanced Phishing Protection, and ATP Safe Links and Safe Attachments, and use encrypted email for sensitive information.| [Set up multi-factor authentication](m365-campaigns-multifactor-authentication.md), [Protect against phishing attacks](m365-campaigns-phishing-and-attacks.md), [Encrypt or label your sensitive email](send-encrypted-email.md) |
-|iPhones and Android devices |Use multi-factor authentication, and set up Microsoft mobile apps, and require a PIN | [Set up multi-factor authentication](m365-campaigns-multifactor-authentication.md), [Set up mobile devices](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)|
-|Bring-your-own-devices (BYOD) Macs and Windows 10 PCs |Keep Office up to date, keep operating systems updated, and enable security features. | [Protect unmanaged Windows 10 PCs and Macs](m365-campaigns-protect-pcs-macs.md) |
+|Email | Use multi-factor authentication, advanced anti-phishing, Safe Links and Safe Attachments, and encrypted email for sensitive information.| [Set up multi-factor authentication](m365bp-multifactor-authentication.md) <br/><br/>[Protect against phishing attacks](m365-campaigns-phishing-and-attacks.md)<br/><br/>[Encrypt or label your sensitive email](send-encrypted-email.md) |
+|iPhones and Android devices |Use multi-factor authentication, set up Microsoft mobile apps, and require a PIN | [Set up multi-factor authentication](m365bp-multifactor-authentication.md)<br/><br/>[Set up mobile devices](../business/set-up-mobile-devices.md)|
+|Bring-your-own-devices (BYOD) for Mac and Windows PCs |Keep Office up to date, keep operating systems updated, and enable security features. | [Protect unmanaged Windows and Mac devices](m365bp-protect-pcs-macs.md) |
 |Storing and sharing files securely | Share files and videos from Microsoft Teams, OneDrive, SharePoint, and Microsoft Stream, and protect sensitive data.| [Share files and videos](share-files-and-videos.md) |
-|Managed Windows 10 devices |Use managed devices for key staff and secure these devices. | [Set up managed devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) |
+|Managed Windows devices |Use managed devices for key staff and secure these devices. | [Set up managed devices](../business/set-up-windows-devices.md) |
 
 ## A recommended security configuration for Microsoft 365 Business Premium
 
 This recommended secure configuration for Microsoft 365 Business Premium lets you:
 
 - Rely on trusted business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products.
-- Protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage.
+
+- Protect your work files on all of your iOS, Android, and Windows devices with enterprise-grade security that is simple to manage.
+
 - Apply extra protection for user accounts and identity.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH]
@@ -59,7 +60,9 @@ While federal and some state election campaigns in the United States qualify for
 This library includes the following:
 
 - Prescriptive setup guidance for adding increased security.
-- Help for users to setup devices for secure access.
+
+- Help for users to set up devices for secure access.
+
 - Guidance on how to collaborate and share securely.
 
 For more information about what's included, see [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business).
@@ -68,9 +71,9 @@ For more information about what's included, see [Microsoft 365 Business Premium]
 
 Follow these steps to get started:
 
+- For small and medium-sized businesses: [Get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md)
+
 - For campaigns: [Get Microsoft 365 campaigns](get-microsoft-365-campaigns.md)
-- For any business: [Learn how your users will work with Microsoft 365](m365-campaigns-users.md)
-- For any business: [Set up Microsoft 365](microsoft-365-campaigns-setup-overview.md)
 
 ## Solutions for your business
 
