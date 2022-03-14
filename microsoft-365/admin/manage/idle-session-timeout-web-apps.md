@@ -33,7 +33,7 @@ If you aren't a Microsoft 365 or Office 365 global admin, you won't see the **Se
 2. On the **Idle Session Timeout** select the toggle to turn it on. You can choose a default setting or choose your own custom time. It'll take a few minutes before idle session is turned on in your organization.
 
 > [!NOTE]
-> If you've set up idle session timeout policies for [Outlook web app](https://support.microsoft.com/topic/description-of-the-activity-based-authentication-timeout-for-owa-in-office-365-0c101e1b-020e-69c1-a0b0-26532d60c0a4) and [SharePoint Online](/sharepoint/sign-out-inactive-users), turning on idle session timeout in the admin center will override the Outlook web app and SharePoint settings.
+> If you've set up idle session timeout policies for [Outlook web app](https://support.microsoft.com/topic/description-of-the-activity-based-authentication-timeout-for-owa-in-office-365-0c101e1b-020e-69c1-a0b0-26532d60c0a4) and [SharePoint Online](/sharepoint/sign-out-inactive-users), turning on idle session timeout in the Microsoft 365 admin center will override the Outlook web app and SharePoint settings.
 
 Idle session timeout is one of the many security measures in Microsoft 365. To learn about other security tasks in Microsoft 365, see [Top security tasks in Microsoft 365](../../security/top-security-tasks-for-remote-work.md).  
 
