@@ -90,10 +90,6 @@ For idle session timeout to get triggered on unmanaged devices, you'll need to a
 
 6. Turn on the policy and select **Create**.
 
-<!-- ## Get in touch
-
-We want to hear from you about idle session timeout. Send us an email at m365istfeedback@microsoft.com. -->
-
 ## Frequently asked questions
 
 ### Are there any browsers or browser scenarios in which idle session timeout feature doesn't work?  

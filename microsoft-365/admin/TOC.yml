@@ -345,7 +345,7 @@
         - name: Manage and monitor priority accounts
           href: setup/priority-accounts.md
         - name: Turn on Idle session timeout
-          href: admin/manage/idle-session-timeout-web-apps.md
+          href: /manage/idle-session-timeout-web-apps.md
         - name: Enable Modern Authentication for Office 2013
           href: security-and-compliance/enable-modern-authentication.md
         - name: Pre-requisites for data protection
