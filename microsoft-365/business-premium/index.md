@@ -3,7 +3,7 @@ title: "Microsoft 365 Business Premium Overview"
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
-author: v-kcirillo
+author: cirilk
 manager: scotv
 ms.audience: Admin
 ms.topic: article

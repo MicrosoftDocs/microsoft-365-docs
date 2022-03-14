@@ -3,7 +3,7 @@ title: "Customize sign-in page with a privacy and consent notice"
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
-author: v-kciril
+author: cirilk
 manager: scotv
 ms.audience: Admin
 ms.topic: article

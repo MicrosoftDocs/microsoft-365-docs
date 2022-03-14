@@ -3,7 +3,7 @@ title: "Set up managed devices"
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
-author: v-kciril
+author: cirilk
 manager: scotv
 ms.date: 03/08/2022
 audience: Admin

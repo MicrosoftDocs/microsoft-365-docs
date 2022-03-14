@@ -3,9 +3,9 @@ title: "Overview of security in Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
-author: v-kciril
+author: cirilk
 manager: scotv
-ms.date: 03/05/2022
+ms.date: 03/14/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration

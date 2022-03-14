@@ -3,7 +3,7 @@ title: "Security incident management"
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
-author: v-kciril
+author: cirilk
 manager: scotv
 ms.date: 03/07/2022
 audience: Admin

@@ -3,7 +3,7 @@ title: "Sign in to Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
-author: v-kciril
+author: cirilk
 manager: scotv
 audience: Admin
 ms.topic: article

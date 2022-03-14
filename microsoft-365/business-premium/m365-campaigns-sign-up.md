@@ -3,7 +3,7 @@ title: "Sign up for Microsoft 365 for Campaigns"
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
-author: v-kciril
+author: cirilk
 manager: scotv
 audience: Admin
 ms.topic: article

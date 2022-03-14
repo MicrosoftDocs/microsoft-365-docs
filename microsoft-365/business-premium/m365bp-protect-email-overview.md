@@ -3,7 +3,7 @@ title: "Protect email Overview"
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
-author: v-kcirillo
+author: cirilklo
 manager: scotv
 ms.date: 03/02/2022
 audience: Admin

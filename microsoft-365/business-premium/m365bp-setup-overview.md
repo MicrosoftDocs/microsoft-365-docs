@@ -3,7 +3,7 @@ title: "Set Up Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
-author: v-kciril
+author: cirilk
 manager: scotv
 ms.date: 03/05/2022
 audience: Admin
