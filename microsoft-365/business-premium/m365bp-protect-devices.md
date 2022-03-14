@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-kcirillo
 author: cirilk
 manager: scotv
-ms.date: 03/07/2022
+ms.date: 03/14/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -35,7 +35,7 @@ Welcome to your final critical mission. Here, you will initiate the capabilities
 Your mission objectives:
 
 - [Onboard devices to Microsoft Defender for Business](m365bp-onboard-devices-mdb.md)
-- [Review and edit device policies](m365bp--view-edit-create-mdb-policies.md)
+- [Review and edit device policies](m365bp-view-edit-create-mdb-policies.md)
 - [Manage device groups](m365bp-device-groups-mdb.md)
 
 Once these objectives are achieved, your overall mission to protect the org is a success! Now, make sure to set up response teams to deal with any situation that may arise in defending the integrity of the system. 
