@@ -83,7 +83,7 @@ When the installation is done, tap the **Open** button to open Outlook and then 
   
 Enter your work email address on the **Add Email Account** screen \> **Add Account**, and then enter your Microsoft 365 for business credentials \> **Sign in**.
   
-![Sign in to your work account.](../../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)  
+:::image type="content" source="media/sign-in-m365account.png" alt-text="Sign in to your work account.":::
   
 If your organization is protecting files in apps, you'll see a dialog stating that your organization is now protecting the data in the app and you need to restart the app to continue to use it. Tap **OK** and close Outlook. 
   
