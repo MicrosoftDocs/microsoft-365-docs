@@ -39,6 +39,7 @@ For more information about the CSP program, see the [Cloud Solution Provider pro
 
 ## Watch: What is Microsoft 365 Lighthouse?
 
+<br><br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4QVMP]
 
 ## Microsoft 365 Lighthouse benefits
