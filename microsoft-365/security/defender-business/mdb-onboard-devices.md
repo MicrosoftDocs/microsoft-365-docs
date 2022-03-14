@@ -66,21 +66,13 @@ Use the following guide and information to choose the best option for your organ
 
 The most commonly used methods to onboard devices to Defender for Business include:
 
-- **Automatic onboarding** for Windows devices that are already enrolled in Microsoft Endpoint Manager. Automatic onboarding sets up a connection between Defender for Business and Microsoft Endpoint Manager, and then onboards Windows devices to Defender for Business. In order to use this option, your devices must already be enrolled in Endpoint Manager.
+- **Automatic onboarding** for Windows devices that are already enrolled in Microsoft Endpoint Manager. Automatic onboarding sets up a connection between Defender for Business and Microsoft Endpoint Manager, and then onboards Windows devices to Defender for Business. In order to use this option, your devices must already be enrolled in Endpoint Manager. To learn more, see [Automatic onboarding](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager).
 
-   To learn more, see [Automatic onboarding](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager).
+- **Local script** to onboard Windows and macOS devices to Defender for Business manually. You can onboard up to 10 devices at a time using the local script. To learn more, see [Local script in Defender for Business](#local-script-in-defender-for-business).
 
-- **Local script** to onboard Windows and macOS devices to Defender for Business manually. You can onboard up to 10 devices at a time using the local script.
+- **Microsoft Intune** or **Microsoft Endpoint Manager** to onboard Windows, macOS, and mobile devices. You can enroll devices in Endpoint Manager, and then onboard your devices to Defender for Business. Microsoft 365 Business Premium customers already have [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), and both Microsoft Intune and [Mobile Device Management](/mem/intune/enrollment/device-enrollment) are now part of Endpoint Manager. To use this method, see [Microsoft Endpoint Manager](#microsoft-endpoint-manager).
 
-   To learn more, see [Local script in Defender for Business](#local-script-in-defender-for-business).
-
-- **Microsoft Intune** or **Microsoft Endpoint Manager** to onboard Windows, macOS, and mobile devices. You can enroll devices in Endpoint Manager, and then onboard your devices to Defender for Business. Microsoft 365 Business Premium customers already have [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), and both Microsoft Intune and [Mobile Device Management](/mem/intune/enrollment/device-enrollment) are now part of Endpoint Manager.
-   
-   To use this method, see [Microsoft Endpoint Manager](#microsoft-endpoint-manager).
-
-- **Microsoft Defender for Business security configuration** to onboard devices directly in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). To use this option, you configure certain settings to facilitate communication between Defender for Business and Endpoint Manager. Then, you onboard devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) by using a package that you select, download, and run on each device. A trust is established between devices and Azure Active Directory (Azure AD), and Defender for Business security policies are pushed to devices.
-
-   To learn more, see [Microsoft Defender for Business security configuration](#microsoft-defender-for-business-security-configuration). | Windows <br/>macOS |
+- **Microsoft Defender for Business security configuration** to onboard devices directly in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). To use this option, you configure certain settings to facilitate communication between Defender for Business and Endpoint Manager. Then, you onboard devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) by using a package that you select, download, and run on each device. A trust is established between devices and Azure Active Directory (Azure AD), and Defender for Business security policies are pushed to devices. To learn more, see [Microsoft Defender for Business security configuration](#microsoft-defender-for-business-security-configuration). | Windows <br/>macOS |
 
 > [!IMPORTANT]
 > If something goes wrong and your onboarding process fails, see [Microsoft Defender for Business troubleshooting](mdb-troubleshooting.yml).
