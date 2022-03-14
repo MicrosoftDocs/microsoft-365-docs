@@ -37,6 +37,6 @@ Your objectives are as follows:
 - [Create Teams for collaboration](create-teams-for-collaboration.md)
 - [Set up meetings](set-up-meetings.md)
 - [Share files and videos](share-files-and-videos.md)
-- [Create a communication site](create-communication-site.md)
+- [Create a communication site](create-communications-site.md)
 
 After you complete these objectives, start your [final mission](m365bp-protect-devices.md).
