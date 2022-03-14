@@ -739,7 +739,7 @@ For more information about this cmdlet, see [Set-PnPTenantCdnEnabled](/powershel
 <a name="CDNSetupinCLI"> </a>
 ## Set up and configure the Office 365 CDN using the CLI for Microsoft 365
 
-The procedures in this section require that you have installed the [CLI for Microsoft 365](https://aka.ms/o365cli). Next, connect to your Office 365 tenant using the [login](https://pnp.github.io/cli-microsoft365/cmd/login/) command.
+The procedures in this section require that you have installed the [CLI for Microsoft 365](https://aka.ms/cli-m365). Next, connect to your Office 365 tenant using the [login](https://pnp.github.io/cli-microsoft365/cmd/login/) command.
 
 Complete these steps to set up and configure the CDN to host your assets in SharePoint Online using the CLI for Microsoft 365.
 
@@ -808,7 +808,7 @@ spo cdn origin add --type Private --origin sites/site1/siteassets
 ```
 
 > [!NOTE]
-> After adding a CDN origin, it might take up to 15 minutes for you to be able to retrieve files via the CDN service. You can verify if the particular origin has already been enabled using the [spo cdn origin list](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-list/) command.
+> After adding a CDN origin, it might take up to 15 minutes for you to be able to retrieve files via the CDN service. You can verify if the particular origin has already been enabled using the [spo cdn origin list](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-origin-list/) command.
 
 ### Remove an Office 365 CDN origin
 
@@ -829,10 +829,10 @@ It's not possible to modify an existing CDN origin. Instead, you should remove t
 
 ### Change the types of files to include in the Office 365 CDN
 
-By default, the following file types are included in the CDN: _.css, .eot, .gif, .ico, .jpeg, .jpg, .js, .map, .png, .svg, .ttf, .woff and .woff2_. If you need to include additional file types in the CDN, you can change the CDN configuration using the [spo cdn policy set](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-set/) command.
+By default, the following file types are included in the CDN: _.css, .eot, .gif, .ico, .jpeg, .jpg, .js, .map, .png, .svg, .ttf, .woff and .woff2_. If you need to include additional file types in the CDN, you can change the CDN configuration using the [spo cdn policy set](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-policy-set/) command.
 
 > [!NOTE]
-> When changing the list of file types, you overwrite the currently defined list. If you want to include additional file types, first use the [spo cdn policy list](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-list/) command to find out which file types are currently configured.
+> When changing the list of file types, you overwrite the currently defined list. If you want to include additional file types, first use the [spo cdn policy list](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-origin-list/) command to find out which file types are currently configured.
 
 To add the _JSON_ file type to the default list of file types included in the public CDN, execute:
 
