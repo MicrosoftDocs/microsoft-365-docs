@@ -479,7 +479,7 @@ Get-PnPTenantCdnEnabled -CdnType <Public | Private>
 
 The status of the CDN for the specified CdnType will output to the screen.
 
-Use the **Set-PnPTenantCdnEnabled** cmdlet to enable your organization to use the Office 365 CDN. You can enable your organization to use public origins, private origins, or both at at the same time. You can also configure the CDN to skip the setup of default origins when you enable it. You can always add these origins later as described in this topic.
+Use the **Set-PnPTenantCdnEnabled** cmdlet to enable your organization to use the Office 365 CDN. You can enable your organization to use public origins, private origins, or both at the same time. You can also configure the CDN to skip the setup of default origins when you enable it. You can always add these origins later as described in this topic.
 
 In PnP PowerShell:
 

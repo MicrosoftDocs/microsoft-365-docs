@@ -250,7 +250,7 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
       `DefaultEnforcementDeny = 2`
 
     - Once you deploy this setting, you will see **Default Allow** or **Default Deny**
-    - Consider both Disk level and File system level AccessMask when configure this setting, for example, if you want to Default Deny but allow specific storage, you have to allow both Disk level and Fiel system level access, you have to set AccessMask to 63.
+    - Consider both Disk level and File system level AccessMask when configuring this setting, for example, if you want to Default Deny but allow specific storage, you have to allow both Disk level and File system level access, you have to set AccessMask to 63.
 
     :::image type="content" source="images/148609590-c67cfab8-8e2c-49f8-be2b-96444e9dfc2c.png" alt-text="Default Enforcement Allow PowerShell code":::
 
