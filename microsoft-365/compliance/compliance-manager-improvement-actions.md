@@ -122,7 +122,7 @@ Test statuses for [manually tested actions](#manual-testing-source):
   - **Partially tested**: more testing needed before points can be achieved
 
 > [!NOTE]
-> For automatically tested improvement actions, the testing notes and test status are not editable fields.
+> For automatically tested improvement actions, the test status and testing notes can't be edited manually. They are updated automatically by Compliance Manager.
 
 **Test date**
 
