@@ -97,11 +97,13 @@ Common actions synchronize across groups. When two different assessments in the 
 
 ## Change test status
 
-In the **Testing** section, you can view the testing status of your improvement action, the testing date, and any notes. The content of these fields can be changed under **Edit testing details** by any user with editing permissions.
+In the **Testing** section, you can view the testing status of your improvement action, the testing date, and any notes. A user with editing permissions can select  **Edit testing details** to edit content on the ***Testing** tab.
 
-The available fields are as follows:
+#### Testing status fields
 
-- **Test status**: available to select when implementation status is "implemented" or "alternative implementation." Options include:
+**Test status**: Available to select when implementation status is "implemented" or "alternative implementation."
+
+  Test status states for manually tested actions:
   - **None**: no work has started on the action
   - **Not assessed**: action hasn't been tested
   - **Passed**: implementation has been verified by an assessor
@@ -109,14 +111,22 @@ The available fields are as follows:
   - **Failed medium risk**: testing failed, medium risk
   - **Failed high risk**: testing failed, high risk
   - **Out of scope**: the action is out of scope for the assessment and doesn’t contribute to your score
-  - **To be detected**: awaiting signals that indicate test status
-  - **Could not be detected**: couldn't detect a test status; check again in a few hours
-  - **Partially tested**: more testing needed before points can be achieved
   - **In progress**: testing in progress
   - **Remediated**: tbd
-- **Test date**: toggle through the calendar pop-up to select the date
-- **Testing notes** and **Additional notes**: text fields for notes for internal reference
-- **Testing history**: allows you to download a report of all test status changes for the action
+
+Automatically tested actions may also show one of the following states in the **Test status** column on the **Improvement actions** page. Because they're automatically tested, the test status can't be manually changed.
+   - **To be detected**: awaiting signals that indicate test status
+  - **Could not be detected**: couldn't detect a test status; will be automatically checked again
+  - **Partially tested**: more testing needed before points can be achieved
+
+> [!NOTE]
+> Testing notes and the test status of automatically tested improvement actions are not editable fields.
+
+**Test date**: Toggle through the calendar pop-up to select the date.
+
+**Testing notes** and **Additional notes**: Text fields for notes for internal reference.
+
+**Testing history**: Allows you to download a report of all test status changes for the action.
 
 #### Exporting testing history
 You can export a report that will show you a history of all changes in test status for an improvement action. These reports are especially helpful for monitoring progress on [actions that are automatically tested](#automatic-testing-source), since such actions are regularly or frequently updated based on your tenant's data.
