@@ -97,7 +97,7 @@ Common actions synchronize across groups. When two different assessments in the 
 
 ## Change test status
 
-In the **Testing** section, you can view the testing status of your improvement action, the testing date, and any notes. A user with editing permissions can select  **Edit testing details** to edit content on the ***Testing** tab.
+In the **Testing** section, you can view the testing status of your improvement action, the testing date, and any notes. A user with editing permissions can select  **Edit testing details** to edit content on the **Testing** tab.
 
 #### Testing status fields
 
@@ -116,7 +116,7 @@ Test statuses for manually tested actions:
   - **In progress**: testing in progress
   - **Remediated**: tbd
 
-Automatically tested actions may also show one of the following statuses in the **Test status** column on the **Improvement actions** page:
+Automatically tested actions may also show one of the following states in the **Test status** column on the **Improvement actions** page:
    - **To be detected**: awaiting signals that indicate test status
   - **Could not be detected**: couldn't detect a test status; will be automatically checked again
   - **Partially tested**: more testing needed before points can be achieved
