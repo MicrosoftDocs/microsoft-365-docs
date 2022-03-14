@@ -15,7 +15,7 @@ ms.collection:
 ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
-description: 
+description: Learn how to limit guest sharing to specific Azure AD or Microsoft 365 organizations.
 ---
 
 # Limit guest sharing to specific organizations
