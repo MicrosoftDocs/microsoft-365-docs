@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-kcirillo
 author: cirilk
 manager: dansimp
-ms.date: 03/07/2022
+ms.date: 03/14/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -34,7 +34,7 @@ Users come and users go, but a secure environment must be maintained. So far, th
 
 To do this, complete the following steps:
 
-- [Remove users](m365bp-review-remediation-action-devices.md)
+- [Remove users](m365bp-review-remediation-actions-devices.md)
 - [Remove data from devices](../admin/devices/remove-company-data.md)
 - [Reset devices](../admin/devices/reset-devices-to-factory-settings.md)
 
