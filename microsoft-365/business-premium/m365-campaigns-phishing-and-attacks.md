@@ -70,7 +70,7 @@ Download this infographic with tips for you and the members of your campaign tea
 [PDF](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pptx)
 
 <!---
-NOTE: I think the above infographic should be re-done to reflect businesses and campaigns, not just campaigns. If not, we should greatly downplay the campaign references. TBD.
+KCNOTE: I think the above infographic should be re-done to reflect businesses and campaigns, not just campaigns. If not, we should greatly downplay the campaign references. TBD.
 --->
 
 ## Set it up

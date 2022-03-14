@@ -32,7 +32,7 @@ description: "Security overview for Microsoft 365 Business Premium"
 
 In this mission, you're going to really bump up your security defenses. As you must know by now, Admin access is a high-value target for the enemy hackers. Protecting Admin accounts is critical because the access and control they provide can impact many accounts, or the entire system. 
 
-In this mission you're going to need to know how to set up the different Admin roles and different levels of security for them. You'll enforce MFA requirements and set up all your security defaults. The safety and reliability of the system relies upon you.
+To be successful in this mission, you're going to need to know how to set up the different Admin roles and different levels of security for them. You'll enforce MFA requirements and set up all your security defaults. The safety and reliability of the system relies upon you.
 
 This mission has the following objectives:
 
