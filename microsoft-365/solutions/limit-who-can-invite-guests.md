@@ -15,7 +15,7 @@ ms.collection:
 ms.localizationpriority: medium
 f1.keywords: NOCSH
 recommendations: false
-description: 
+description: Learn how to limit who can invite guests to your organization.
 ---
 
 # Limit who can invite guests
