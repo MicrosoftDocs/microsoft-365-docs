@@ -34,7 +34,9 @@ ms.technology: mde
 
 > [!IMPORTANT]
 > EDR in block mode does not provide all the protection that is available when Microsoft Defender Antivirus real-time protection is enabled. All features that depend on Microsoft Defender Antivirus to be the active antivirus solution will not work, including the following key examples:
+>
 > - Real-time protection, including on-access scanning, is not available when Microsoft Defender Antivirus is in passive mode. To learn more about real-time protection policy settings, see **[Enable and configure Microsoft Defender Antivirus always-on protection](configure-real-time-protection-microsoft-defender-antivirus.md)**.
+>
 > - Features like **[network protection](network-protection.md)** and **[attack surface reduction rules](attack-surface-reduction.md)** are only available when Microsoft Defender Antivirus is running in active mode.
 >
 > It is expected that your non-Microsoft antivirus solution provides these capabilities.
@@ -97,6 +99,7 @@ In general, you can't set exclusions for EDR in block mode. However, if you get 
 The primary purpose of EDR in block mode is to remediate post-breach detections that were missed by a non-Microsoft antivirus product. However, we recommend keeping EDR in block mode turned on, whether Microsoft Defender Antivirus is running in passive mode or in active mode.
 
 - When Microsoft Defender Antivirus is in passive mode, EDR in block mode provides another layer of defense together with Microsoft Defender for Endpoint.
+
 - When Microsoft Defender Antivirus is in active mode, EDR in block mode does not provide extra scanning, but it does allow Microsoft Defender Antivirus to take automatic actions on post-breach, behavioral EDR detections.
 
 ### Will EDR in block mode affect a user's antivirus protection?
@@ -164,4 +167,5 @@ If you choose to disable EDR in block mode, it can take up to 30 minutes for the
 ## See also
 
 - [Tech Community blog: Introducing EDR in block mode: Stopping attacks in their tracks](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/introducing-edr-in-block-mode-stopping-attacks-in-their-tracks/ba-p/1596617)
+
 - [Behavioral blocking and containment](behavioral-blocking-containment.md)
