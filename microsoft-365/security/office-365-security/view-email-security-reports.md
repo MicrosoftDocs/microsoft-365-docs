@@ -600,7 +600,7 @@ On the **Threat protection status** page, the ![Create schedule icon.](../../med
 ![Detection technology view for malware in the Threat protection status report.](../../media/threat-protection-status-report-malware-detection-tech-view.png)
 
 > [!NOTE]
-> Starting in May 2021, malware detections in email were updated to include harmful URLs in messages attachments. This change might shift some of the detection volume out of the **View data by Email \> Phish** view and into the **View data by Email \> Malware** view. In other words, harmful URLs in message attachments that were traditionally identified as phishing now might be identified as malware instead.
+> Starting in May 2021, malware detections in email were updated to include **harmful URLs** in messages attachments. This change might shift some of the detection volume out of the **View data by Email \> Phish** view and into the **View data by Email \> Malware** view. In other words, harmful URLs in message attachments that were traditionally identified as phishing now might be identified as malware instead.
 
 In the **View data by Email \> Malware** and **Chart breakdown by Detection Technology** view, the following information is shown in the chart:
 
