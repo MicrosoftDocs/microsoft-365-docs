@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-kcirillo
 author: cirilk
 manager: scotv
-ms.date: 03/07/2022
+ms.date: 03/14/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -34,6 +34,6 @@ As threats are detected, remediation actions come into play. Depending on the pa
 
 To do this, use the following steps:
 
-- [Review remediation actions](m365bp-review-remediation-action-devices.md)
+- [Review remediation actions](m365bp-review-remediation-actions-devices.md)
 - [Respond to a compromised email account](../security/office-365-security/responding-to-a-compromised-email-account.md)
 
