@@ -1,5 +1,5 @@
 ---
-title: "Maintaining your environment"
+title: "Security incident management"
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
@@ -23,9 +23,17 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "An overview of maintaining your environment"
+description: "An overview of security incident management"
 ---
 
-# Maintain your environment
+# Security incident management
 
-KEITH'S OVERVIEW CONTENT FOR THIS SECTION GOES HERE
+## Overview
+
+As threats are detected, remediation actions come into play. Depending on the particular threat and how your security settings are configured, remediation actions might be taken automatically or only upon approval. 
+
+To do this, use the following steps:
+
+- [Review remediation actions](m365bp-review-remediation-action-devices.md)
+- [Respond to a compromised email account](../security/office-365-security/responding-to-a-compromised-email-account.md)
+

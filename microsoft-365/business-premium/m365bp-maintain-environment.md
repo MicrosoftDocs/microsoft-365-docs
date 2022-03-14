@@ -1,9 +1,9 @@
 ---
-title: "Security incident management"
+title: "Maintain environment"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: v-kcirillo
+author: v-kcirillo
 manager: dansimp
 ms.date: 03/07/2022
 audience: Admin
@@ -23,9 +23,18 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "An overview of security incident management"
+description: "An overview of maintaining your org's envoronment"
 ---
 
-# Security incident management
+# Maintain Environment
 
-KEITH'S OVERVIEW CONTENT FOR THIS SECTION GOES HERE
+## Overview
+
+Users come and users go, but a secure environment must be maintained. So far, the missions you've completed have been about getting the system established securely. Now, you need to be able to also safely and cleanly remove users from the system, thereby removing the user's access to all data and information. In this section you learn how to protect or transition the data they may have worked with, clean the company devices they owned, and completely remove them from the system.
+
+To do this, complete the following steps:
+
+- [Remove users](m365bp-review-remediation-action-devices.md)
+- [Remove data from devices]()
+- [Reset devices]()
+

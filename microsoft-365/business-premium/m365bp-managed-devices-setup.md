@@ -28,7 +28,7 @@ description: "How to set up managed devices"
 
 # Set up managed devices
 
-A managed device is one that is under control and being monitored by the organization. These devices are enrolled in a device manager such as Intune, or Azure Active Directory Premium. Microsoft 365 Business Premium offers both. 
+A managed device is one that is under control and being monitored by the organization. These devices are enrolled in a device manager wit Intune and Azure Active Directory Premium. Microsoft 365 Business Premium also offers these same features. 
 
 A Windows 10 PC is considered managed after you have completed the following two steps:
 
@@ -36,15 +36,44 @@ A Windows 10 PC is considered managed after you have completed the following two
 
 2. Connect your computer to [Azure Active Directory](../business/set-up-windows-devices.md) and use your Microsoft 365 username and password to sign in. 
 
+<!--3. Enroll the device in Endpoint Manager. --->
+
 ## Enroll devices in Microsoft Endpoint Manager
 
 Go to Intune and enroll the devices (Windows, macOS, iOS, and Android).
+
+<!---
+endpoint.microsoft.com > Microsoft Endpoint Manager admin center > Devices/Enroll devices
+
+OR FROM THE DASHBOARD...?
+
+### For Windows enrollment:
+
+1. Select Windows > Windows enrollment 
+1. From the enrollment methods listed, select Automatic enrollment.
+
+### For iOS enrollment:
+
+1. Select iOS > iOS enrollment
+1. From the list of policies, select a policy to see its details.
+1. Select Properties to manage the policy.
+1. Select Settings > System Security and configure security details in Intune.
+1. Look at configuration profiles. 
+1. Create a profile and push it to the devices in your organization, as needed.
+
+### For Android enrollment:
+
+1. Select Android > Android enrollment.
+1. Choose Managed Google Play and grant Microsoft permission to send information to Google.
+
+--->
+
 
 Go to Endpoints > Device inventory (this kicks off the setup wizard for MDB). Choose Get started and work through the wizard. This onboards devices and applies endpoint protection policies to the devices
 
 ## Onboard devices to Microsoft Defender for Business
 
-(See your [Final mission](m365bp-protect-devices.md))
+(See your [final mission](m365bp-protect-devices.md) to onboard to Defender for Business)
 
 ## Next steps
 
