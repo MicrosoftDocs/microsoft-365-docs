@@ -38,9 +38,9 @@ To enable modern authentication for any devices running Windows (for example on 
   
 |**Registry key**|**Type**|**Value** |
 |:-------|:------:|--------:|
+|HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover |REG_DWORD |1 |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\AlwaysUseMSOAuthForAutoDiscover |REG_DWORD |1 |
 
 Create or modify the following registry keys to force Outlook to use a newer authentication method for web services, such as EWS and Autodiscover. We recommend that users force Outlook to use Modern Authentication.
 
@@ -54,20 +54,32 @@ Create or modify the following registry keys to force Outlook to use a newer aut
 3. In Registry Editor, locate and click the following registry subkey:
 
  ```console
+    HKEY_CURRENT_USER\Software\Microsoft\Exchange\
+ ```
+
+4. If the *AlwaysUseMSOAuthForAutoDiscover* key is missing, type *AlwaysUseMSOAuthForAutoDiscover*, and then press **Enter.**
+
+5. Right-click *AlwaysUseMSOAuthForAutoDiscover*, and then click **Modify.**
+
+6. In the **Value** data box, type **1**, and then click **OK.**
+
+7. In Registry Editor, locate and click the following registry subkey:
+
+ ```console
     HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\
  ```
 
-4. If the values in the table above already exist, modify them, then exit Registry Editor. If they do not, on the Edit menu, point to **New**, and then click **DWORD Value** for the missing keys. 
+8. If the values in the table above already exist, modify them if necessary, then exit Registry Editor. If they do not, on the Edit menu, point to **New**, and then click **DWORD Value** for the missing keys. 
 
-5. For example, if the *AlwaysUseMSOAuthForAutoDiscover* key is missing, type *AlwaysUseMSOAuthForAutoDiscover*, and then press **Enter.**
+9. For example, if the *EnableADAL* key is missing, type *EnableADAL*, and then press **Enter.**
 
-6. Right-click *AlwaysUseMSOAuthForAutoDiscover*, and then click **Modify.**
+10. Right-click *EnableADAL*, and then click **Modify.**
 
-7. In the **Value** data box, type **1**, and then click **OK.**
+11. In the **Value** data box, type **1**, and then click **OK.**
 
-8. Follow the same process for the EnableADAL and Version keys as necessary. 
+12. Follow the same process for the Version key if necessary. 
 
-9. **Exit Registry Editor.**
+13. **Exit Registry Editor.**
 
 Once you've set the registry keys, you can set Office 2013 devices apps to use [multifactor authentication (MFA)](set-up-multi-factor-authentication.md) with Microsoft 365. 
   
@@ -80,7 +92,7 @@ To disable modern authentication on a device, set the following registry keys on
 |**Registry key**|**Type**|**Value**|
 |:-------|:------:|--------:|
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL |REG_DWORD|0|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\AlwaysUseMSOAuthForAutoDiscover |REG_DWORD |0 |
+|HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover |REG_DWORD |0 |
    
 ## Related content
 
