@@ -51,11 +51,11 @@ To set up the Office 365 CDN for your organization, you follow these basic steps
   + [Determine where you want to store your assets](use-microsoft-365-cdn-with-spo.md#CDNStoreAssets). This location can be a SharePoint site, library or folder and is called an _origin_.
   + [Choose whether each origin should be public or private](use-microsoft-365-cdn-with-spo.md#CDNOriginChoosePublicPrivate). You can add multiple origins of both public and private types.
 
-+ Set up and configure the CDN, using either PowerShell or the SharePoint Online CLI
++ Set up and configure the CDN, using either PowerShell or the CLI for Microsoft 365
 
   + [Set up and configure the CDN by using the SharePoint Online Management Shell](use-microsoft-365-cdn-with-spo.md#CDNSetupinPShell)
   + [Set up and configure the CDN by using PnP PowerShell](use-microsoft-365-cdn-with-spo.md#CDNSetupinPnPPosh)
-  + [Set up and configure the CDN by using the Office 365 CLI](use-microsoft-365-cdn-with-spo.md#CDNSetupinCLI)
+  + [Set up and configure the CDN by using the CLI for Microsoft 365](use-microsoft-365-cdn-with-spo.md#CDNSetupinCLI)
 
   When you complete this step, you will have:
 
@@ -737,18 +737,18 @@ For more information about this cmdlet, see [Set-PnPTenantCdnEnabled](/powershel
 </details>
 
 <a name="CDNSetupinCLI"> </a>
-## Set up and configure the Office 365 CDN using the Office 365 CLI
+## Set up and configure the Office 365 CDN using the CLI for Microsoft 365
 
-The procedures in this section require that you have installed the [Office 365 CLI](https://aka.ms/o365cli). Next, connect to your Office 365 tenant using the [login](https://pnp.github.io/office365-cli/cmd/login/) command.
+The procedures in this section require that you have installed the [CLI for Microsoft 365](https://aka.ms/o365cli). Next, connect to your Office 365 tenant using the [login](https://pnp.github.io/cli-microsoft365/cmd/login/) command.
 
-Complete these steps to set up and configure the CDN to host your assets in SharePoint Online using the Office 365 CLI.
+Complete these steps to set up and configure the CDN to host your assets in SharePoint Online using the CLI for Microsoft 365.
 
 <details>
   <summary>Click to expand</summary>
 
 ### Enable the Office 365 CDN
 
-You can manage the state of the Office 365 CDN in your tenant using the [spo cdn set](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-set/) command.
+You can manage the state of the Office 365 CDN in your tenant using the [spo cdn set](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-set/) command.
 
 To enable the Office 365 Public CDN in your tenant execute:
 
@@ -764,7 +764,7 @@ spo cdn set --type Private --enabled true
 
 #### View the current status of the Office 365 CDN
 
-To check if the particular type of Office 365 CDN is enabled or disabled, use the [spo cdn get](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-get/) command.
+To check if the particular type of Office 365 CDN is enabled or disabled, use the [spo cdn get](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-get/) command.
 
 To check if the Office 365 Public CDN is enabled, execute:
 
@@ -787,7 +787,7 @@ See [Default CDN origins](use-microsoft-365-cdn-with-spo.md#default-cdn-origins)
 > [!IMPORTANT]
 > You should never place resources that are considered sensitive to your organization in a SharePoint document library configured as a public origin.
 
-Use the [spo cdn origin add](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-add/) command to define a CDN origin. You can define multiple origins. The origin is a URL that points to a SharePoint library or folder that contains the assets that you want to be hosted by the CDN.
+Use the [spo cdn origin add](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-origin-add/) command to define a CDN origin. You can define multiple origins. The origin is a URL that points to a SharePoint library or folder that contains the assets that you want to be hosted by the CDN.
 
 ```cli
 spo cdn origin add --type [Public | Private] --origin <path>
@@ -812,7 +812,7 @@ spo cdn origin add --type Private --origin sites/site1/siteassets
 
 ### Remove an Office 365 CDN origin
 
-Use the [spo cdn origin remove](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-origin-remove/) command to remove a CDN origin for the specified CDN type.
+Use the [spo cdn origin remove](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-origin-remove/) command to remove a CDN origin for the specified CDN type.
 
 To remove a public origin from the CDN configuration, execute:
 
@@ -842,10 +842,10 @@ spo cdn policy set --type Public --policy IncludeFileExtensions --value "CSS,EOT
 
 ### Change the list of site classifications you want to exclude from the Office 365 CDN
 
-Use the [spo cdn policy set](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-set/) command to exclude site classifications that you do not want to make available over the CDN. By default, no site classifications are excluded.
+Use the [spo cdn policy set](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-policy-set/) command to exclude site classifications that you do not want to make available over the CDN. By default, no site classifications are excluded.
 
 > [!NOTE]
-> When changing the list of excluded site classifications, you overwrite the currently defined list. If you want to exclude additional classifications, first use the [spo cdn policy list](https://pnp.github.io/office365-cli/cmd/spo/cdn/cdn-policy-list/) command to find out which classifications are currently configured.
+> When changing the list of excluded site classifications, you overwrite the currently defined list. If you want to exclude additional classifications, first use the [spo cdn policy list](https://pnp.github.io/cli-microsoft365/cmd/spo/cdn/cdn-policy-list/) command to find out which classifications are currently configured.
 
 To exclude sites classified as _HBI_ from the public CDN, execute
 
@@ -1040,7 +1040,7 @@ spo cdn origin add --origin */CLIENTSIDEASSETS
 You can choose to work with the Office 365 CDN using either the **SharePoint Online Management Shell** PowerShell module or the **Office 365 CLI**.
 
 + [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
-+ [Installing the Office 365 CLI](https://pnp.github.io/office365-cli/user-guide/installing-cli/)
++ [Installing the Office 365 CLI](https://pnp.github.io/cli-microsoft365/user-guide/installing-cli/)
 
 ## See also
 
