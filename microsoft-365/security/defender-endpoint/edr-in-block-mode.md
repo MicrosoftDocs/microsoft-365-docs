@@ -15,7 +15,7 @@ ms.custom:
   - next-gen
   - edr
   - admindeeplinkDEFENDER
-ms.date: 11/29/2021
+ms.date: 03/14/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
 ---
@@ -34,7 +34,6 @@ ms.technology: mde
 
 > [!IMPORTANT]
 > EDR in block mode does not provide all the protection that is available when Microsoft Defender Antivirus real-time protection is enabled. All features that depend on Microsoft Defender Antivirus to be the active antivirus solution will not work, including the following key examples:
->
 > - Real-time protection, including on-access scanning, is not available when Microsoft Defender Antivirus is in passive mode. To learn more about real-time protection policy settings, see **[Enable and configure Microsoft Defender Antivirus always-on protection](configure-real-time-protection-microsoft-defender-antivirus.md)**.
 > - Features like **[network protection](network-protection.md)** and **[attack surface reduction rules](attack-surface-reduction.md)** are only available when Microsoft Defender Antivirus is running in active mode.
 >
@@ -62,13 +61,17 @@ The following image shows an instance of unwanted software that was detected and
 > Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning on EDR in block mode.
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) and sign in.
+
 2. Choose **Settings** \> **Endpoints** \> **General** \> **Advanced features**.
+
 3. Scroll down, and then turn on **Enable EDR in block mode**.
 
 > [!IMPORTANT]
 > EDR in block mode can be turned on only in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, and is applied tenant wide. You cannot set EDR in block mode to target specific device groups or users. You cannot use registry keys, Microsoft Intune, or Group Policy to enable or disable EDR in block mode.
 
 ## Requirements for EDR in block mode
+
+The following table lists requirements for EDR in block mode:
 
 |Requirement|Details|
 |---|---|
@@ -84,6 +87,10 @@ The following image shows an instance of unwanted software that was detected and
 > To get the best protection value, make sure your antivirus solution is configured to receive regular updates and essential features, and that your [exclusions are configured](configure-exclusions-microsoft-defender-antivirus.md). EDR in block mode respects exclusions that are defined for Microsoft Defender Antivirus, but not [indicators](manage-indicators.md) that are defined for Microsoft Defender for Endpoint.
 
 ## Frequently asked questions
+
+### Can I specify exclusions for EDR in block mode?
+
+In general, you can't set exclusions for EDR in block mode. However, if you get a false positive, you can submit the file for analysis at the [Microsoft Security Intelligence submission site](https://www.microsoft.com/en-us/wdsi/filesubmission).
 
 ### Do I need to turn EDR in block mode on if I have Microsoft Defender Antivirus running on devices?
 
@@ -116,8 +123,6 @@ For more information, see [Microsoft Defender Antivirus compatibility](microsoft
 ### How do I confirm Microsoft Defender Antivirus is in active or passive mode?
 
 To confirm whether Microsoft Defender Antivirus is running in active or passive mode, you can use Command Prompt or PowerShell on a device running Windows.
-
-<br/><br/>
 
 |Method|Procedure|
 |---|---|
