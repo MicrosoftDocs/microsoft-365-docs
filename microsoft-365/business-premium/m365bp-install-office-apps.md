@@ -91,7 +91,7 @@ If your organization is protecting files in apps, you'll see a dialog stating th
   
 Locate Outlook on the iPhone, and restart it. When prompted, enter a PIN and verify it. Outlook on your iPhone is now ready to be used.
   
-![Set a PIN to access your organization's data.](../../media/64f2630b-3164-47a4-9dd6-ca0c29ed5fb3.png)
+:::image type="content" source="media/set-pin.png" alt-text="Set a PIN to access your organization's data.":::
   
 ## [Android](#tab/Android)
   
