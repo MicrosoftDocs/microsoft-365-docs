@@ -58,6 +58,9 @@ Follow these steps to create a modern template.
    - [Enter text or select a date](#associate-a-placeholder-by-entering-text-or-selecting-a-date)
    - [Select from choices in a column of a list or library](#associate-a-placeholder-by-selecting-from-choices-in-a-column-of-a-list-or-library)
 
+   > [!NOTE]
+   > Currently, you can't add placeholders to a table cell or within a table.   
+
 ### Associate a placeholder by entering text or selecting a date 
 
 On the **All placeholders** panel:
