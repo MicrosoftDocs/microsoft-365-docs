@@ -92,8 +92,8 @@ While shared channels is turned on by default in Teams, external collaboration w
 
 If you plan to use shared channels with other organizations, you can choose between a self-service model and a by-request model.
 
-- Self-service – You can configure cross-tenant access to allow inbound and outbound access to all other Azure AD organizations. Alternatively, you can block a list of organizations that you don’t want your users to share with, leaving all other organizations available. This allows your users to invite people outside the organization to participate in shared channels without having to contact your helpdesk or IT department.
-- By-request – You can configure cross-tenant access for each individual organization with which you want to allow shared channels. When choosing this model, it’s important to have a documented business process that your users can follow to request cross-tenant access with another organization.
+- Self-service – You can configure cross-tenant access to allow inbound and outbound access to all other Azure AD organizations. Alternatively, you can block a list of organizations that you don't want your users to share with, leaving all other organizations available. This allows your users to invite people outside the organization to participate in shared channels without having to contact your helpdesk or IT department.
+- By-request – You can configure cross-tenant access for each individual organization with which you want to allow shared channels. When choosing this model, it's important to have a documented business process that your users can follow to request cross-tenant access with another organization.
 
 ## Compliance in shared channels
 
@@ -101,11 +101,11 @@ Shared channels are integrated with Microsoft 365 compliance features.
 
 ##### Communications compliance
 
-Admins can set policies to monitor content for all users in the channel. All messages content in channels, including the shared channel, are covered by communication compliance policies. Shared channels inherit the policy of the host organization.
+Admins can set policies to monitor content for all users in the channel. All messages content in channels, including the shared channel, are covered by [communication compliance policies](/microsoft-365/compliance/communication-compliance). Shared channels inherit the policy of the host organization.
 
 ##### Conditional access
 
-The host organization’s conditional access policies are applied to external participants, including B2B direct connect users. The external organization’s policies are not used. The following types of conditional access policies are supported with shared channels:
+The host organization's [conditional access policies](/azure/active-directory/conditional-access/overview) are applied to external participants, including B2B direct connect users. The external organization's policies are not used. The following types of conditional access policies are supported with shared channels:
 
 - Policies that are scoped to all guest users, external participants, SharePoint Online cloud apps
 - Grant Access controls that require MFA, a compliant device, or a hybrid Azure AD joined device. 
@@ -114,7 +114,7 @@ IP-based policies are supported at the SharePoint file level. So an external par
 
 ##### Data loss prevention (DLP)
 
-Admins can apply DLP policies to a team where all channels, including shared channels, inherit the policy. Shared channels inherit the policy of the host organization.
+Admins can apply [DLP policies](/microsoft-365/compliance/dlp-policy-design) to a team where all channels, including shared channels, inherit the policy. Shared channels inherit the policy of the host organization.
 
 ##### Retention policy
 
@@ -128,18 +128,18 @@ Shared channels and their associated SharePoint sites inherit the label from the
 
 ##### Information barriers
 
-Users who are not allowed to communicate per information barrier policies can’t be part of shared channel. Information barrier policies are only effective for users in the host organization. If users are external participants in another organization’s shared channel, information barrier policies don’t apply.
+Users who are not allowed to communicate per [information barrier](/microsoftteams/information-barriers-in-teams) policies can't be part of shared channel. Information barrier policies are only effective for users in the host organization. If users are external participants in another organization's shared channel, information barrier policies don't apply.
 eDiscovery
 
 Admins can perform searches for all users in the channel. All channels, including the shared channel, are discoverable. All message data in the channel regardless of who added the data is discoverable by the compliance admin.
 
 ##### Legal hold
 
-Admins can place channel-only members from the host organization who are not a part of the team on hold. They can also place the entire team on hold. Admins cannot place an external participant on hold.
+Admins can place channel-only members from the host organization who are not a part of the team on hold. They can also [place the entire team on hold](/MicrosoftTeams/legal-hold). Admins cannot place an external participant on hold.
 
 ##### Audit logs
 
-All the actions performed for existing audit events are audited in shared channels.
+All the actions performed for [existing audit events](/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log) are audited in shared channels.
 
 
 ## Related topics
