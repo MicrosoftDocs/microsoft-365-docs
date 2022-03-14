@@ -131,7 +131,7 @@ For additional details and information:
 
 - Set up email in Outlook: [Windows](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) or [Mac](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)
  
-- [Upgrade users to the latest apps](upgrade-users-to-latest-office-client.md) 
+- [Upgrade users to the latest Office apps](../admin/setup/upgrade-users-to-latest-office-client.md)
 
 If your Windows 10 PC or Mac is not managed by your organization, be sure to configure these security capabilities.
 
