@@ -26,9 +26,9 @@ search.appverid:
 description: "Set up multifactor authentication for mobile devices."
 ---
 
-# Set up multifactor authentication on your mobile device
+# Set up multi-factor authentication on your mobile device
 
-Multi-factor authentication provides more security for your business. After your admin has required you to use MFA, you can set up the Microsoft Authenticator app to let you log into key apps securely with your phone. 
+Multi-factor authentication provides more security for your business, because instead of simply a password, or a code through text, an app is used to verify access, which makes it extremely difficult to hack. When the Admin requires MFA, you can use the Microsoft Authenticator app to let you securely log into the key apps with your phone. 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 

@@ -23,10 +23,10 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "An overview of maintaining your org's envoronment"
+description: "An overview of maintaining your org's environment"
 ---
 
-# Maintain Environment
+# Maintain your environment
 
 ## Overview
 
@@ -35,6 +35,6 @@ Users come and users go, but a secure environment must be maintained. So far, th
 To do this, complete the following steps:
 
 - [Remove users](m365bp-review-remediation-action-devices.md)
-- [Remove data from devices]()
-- [Reset devices]()
+- [Remove data from devices](../admin/devices/remove-company-data.md)
+- [Reset devices](../admin/devices/reset-devices-to-factory-settings.md)
 
