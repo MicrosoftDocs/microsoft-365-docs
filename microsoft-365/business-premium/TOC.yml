@@ -41,7 +41,7 @@
     - name: Set up managed devices
       href: m365bp-managed-devices-setup.md
     - name: Install Office apps on devices
-      href: ../admin/setup/install-applications.md
+      href: ../admin/setup/install-office-apps.md
     - name: Protect unmanaged devices
       href: m365bp-protect-pcs-macs.md
 - name: Protect email
@@ -94,14 +94,6 @@
       href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: Reset devices to factory settings
       href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-- name: Security incident management
-  items: 
-    - name: Review security recommendations
-      href: ../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-    - name: Review remediation actions on devices
-      href: m365bp-review-remediation-actions-devices.md
-    - name: Respond to a compromised email account
-      href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Reference
   items:
     - name: Microsoft 365 admin content
