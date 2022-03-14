@@ -79,7 +79,7 @@ Here's a description of each eDiscovery capability.
 
 - **Export search results**. Export search results to a local computer in your organization in a two-step process. When you export search results, items are copied from their original content location in Microsoft 365 to a Microsoft-provided Azure Storage location. Then you can download those items to a local computer.
 
-- **Role-based permissions**. Use role-based access (RBAC) permissions to control what eDiscovery-related tasks that different users can perform. You can users to built-in eDiscovery-related role group or create custom role groups that assign specific eDiscovery permissions.
+- **Role-based permissions**. Use role-based access (RBAC) permissions to control what eDiscovery-related tasks that different users can perform. You can use a built-in eDiscovery-related role group or create custom role groups that assign specific eDiscovery permissions.
 
 - **Case management**. eDiscovery cases in Core eDiscovery and Advanced eDiscovery let you associate specific searches and exports with a specific investigation. You can also assign members to a case to control who can access the case and view the contents of the case.
 
