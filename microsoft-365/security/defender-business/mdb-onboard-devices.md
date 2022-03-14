@@ -55,10 +55,14 @@ This article also includes information about [Running a detection test for Windo
 
 Defender for Business offers you several different methods for onboarding devices, whether you're already using Microsoft Endpoint Manager, or you just want a simplified onboarding experience.
 
+### Get the device onboarding guide
+
 Use the following guide and information to choose the best option for your organization.
 
 [:::image type="content" source="media/mdb-device-onboarding.png" alt-text="Screenshot of device onboarding diagram":::](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) <br/>
 [PDF](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) | [Visio](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.vsdx)
+
+### Onboard devices 
 
 The most commonly used methods to onboard devices to Defender for Business include:
 
