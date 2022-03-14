@@ -1,5 +1,5 @@
 ---
-title: "Set up multifactor authentication"
+title: "Set up multifactor authentication for Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -23,10 +23,10 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Set up multifactor authentication."
+description: "Set up multifactor authentication for mobile devices."
 ---
 
-# Set up multi-factor authentication on your mobile device
+# Set up multifactor authentication on your mobile device
 
 Multi-factor authentication provides more security for your business. After your admin has required you to use MFA, you can set up the Microsoft Authenticator app to let you log into key apps securely with your phone. 
 
