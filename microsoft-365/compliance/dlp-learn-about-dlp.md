@@ -31,9 +31,9 @@ In Microsoft 365, you implement data loss prevention by defining and applying DL
 
 Microsoft 365 detects sensitive items by using deep content analysis, not by just a simple text scan. Content is analyzed for primary data matches to keywords, by the evaluation of regular expressions, by internal function validation, and by secondary data matches that are in proximity to the primary data match. Beyond that DLP also uses machine learning algorithms and other methods to detect content that matches your DLP policies.
 
-## DLP is part of the larger Microsoft 365 Compliance offering
+## DLP is part of the larger Microsoft Purview offering
 
-Microsoft 365 DLP is just one of the Microsoft 365 Compliance tools that you will use to help protect your sensitive items wherever they live or travel. You should understand the other tools in the Microsoft 365 Compliance tools set, how they interrelate, and work better together.  See, [Microsoft 365 compliance tools](protect-information.md) to learn more about the information protection process.
+Microsoft 365 DLP is just one of the Microsoft Purview tools that you will use to help protect your sensitive items wherever they live or travel. You should understand the other tools in the Microsoft Purview tools set, how they interrelate, and work better together.  See, [Microsoft Purview tools](protect-information.md) to learn more about the information protection process.
 
 ## Protective actions of DLP policies
 
@@ -162,7 +162,7 @@ location | include/exclude by|
 
 <!--## Create a DLP policy
 
-All DLP policies are created and maintained in the Microsoft 365 Compliance center. See, INSERT LINK TO ARTICLE THAT WILL START WALKING THEM THROUGH THE POLICY CREATION PROCEDURES for more information.-->
+All DLP policies are created and maintained in the Microsoft Purview center. See, INSERT LINK TO ARTICLE THAT WILL START WALKING THEM THROUGH THE POLICY CREATION PROCEDURES for more information.-->
 
 After you create a DLP policy in the Compliance Center, it's stored in a central policy store, and then synced to the various content sources, including:
 
