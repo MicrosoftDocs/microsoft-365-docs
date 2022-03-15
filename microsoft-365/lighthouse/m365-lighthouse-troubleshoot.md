@@ -60,7 +60,7 @@ This article describes error messages and problems that you might encounter whil
 | Ineligible - DAP or GDAP is not set up | You don't have DAP or GDAP admin privileges set up with the tenant, which is required by Lighthouse. | Set up DAP or GDAP admin privileges in the Microsoft Partner Center. |
 | Ineligible - Required license is missing | The tenant is missing a required license. They need at least one Microsoft 365 Business Premium or Microsoft 365 E3 license. | Make sure the tenant has at least one Microsoft 365 Business Premium or Microsoft 365 E3 license assigned. |
 | Ineligible - User count exceeded | The tenant has more than the maximum of 1000 licensed users allowed by Lighthouse. | Verify that the tenant doesn't have more than 1000 licensed users. |
-| Ineligible - Geo check failed | You and your customer don't reside in the same geographic region, which is required by Lighthouse. | Verify that the tenant resides in your geographic region. If not, then you can't manage the tenant in Lighthouse. |
+| Ineligible - Geo check failed | You and your customer don't reside in the same geographic region, which is required by Lighthouse. | Verify that the customer resides in your geographic region. If not, then you can't manage the tenant in Lighthouse. |
 | In process | Lighthouse discovered the tenant but is still in the process of onboarding them. | Allow Lighthouse 48 hours to complete onboarding of the tenant. |
 
 If you confirmed that your customer tenant meets the onboarding criteria and they're still not showing as **Active** in Lighthouse, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
@@ -133,6 +133,6 @@ If data is still not appearing on the Device compliance and Threat management pa
 
 ## Related content
 
-[Known issues with Microsoft 365 Lighthouse](/office365/troubleshoot/microsoft-365-lighthouse/lighthouse-known-issues) (article)\
+[Known issues with Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
 [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md) (article)

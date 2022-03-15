@@ -77,7 +77,7 @@ Wipe a device for these reasons:
 
 The wipe is sent immediately to the mobile device and the device is marked as not compliant in Azure active directory. While all data is removed when a device is reset to factory defaults, the following table describes what content is removed for each device type when a device when you remove company data.
 
-|**Content impact**|**iOS 10 and later**|**Android 5 and later**|
+|**Content impact**|**iOS**|**Android**|
 |:-----|:-----|:-----|
 |Microsoft 365 app data is wiped if the device is protected by Intune App Protection policies. The apps aren't removed. For devices not protected by Mobile Application Management (MAM) policies, Outlook and OneDrive won't remove cached data.<br/>**Note** For applying Intune App protection policies you must have an Intune license.|Yes|Yes|
 |Policy settings applied by Basic Mobility and Security to devices are no longer enforced; users can change the settings.|Yes|Yes|
