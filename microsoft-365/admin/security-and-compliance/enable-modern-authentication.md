@@ -43,9 +43,8 @@ To enable modern authentication for any devices running Windows (for example on 
 |Registry key|Type|Value|
 |:---|:---:|---:|
 |HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover|REG_DWORD|1|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|1|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version|REG_DWORD|1|
-|
+|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|1|
+|HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\Version|REG_DWORD|1|
 
 Create or modify the following registry keys to force Outlook to use a newer authentication method for web services, such as EWS and Autodiscover. We recommend that users force Outlook to use Modern Authentication.
 
@@ -62,7 +61,7 @@ Create or modify the following registry keys to force Outlook to use a newer aut
    HKEY_CURRENT_USER\Software\Microsoft\Exchange\
    ```
 
-4. If the *AlwaysUseMSOAuthForAutoDiscover* key is missing, type *AlwaysUseMSOAuthForAutoDiscover*, and then press **Enter.**
+4. If the *AlwaysUseMSOAuthForAutoDiscover* key is missing, on the Edit menu, point to **New** and then select **DWORD Value**. Type *AlwaysUseMSOAuthForAutoDiscover*, then press **Enter.**
 
 5. Right-click *AlwaysUseMSOAuthForAutoDiscover*, and then click **Modify.**
 
@@ -71,10 +70,10 @@ Create or modify the following registry keys to force Outlook to use a newer aut
 7. In Registry Editor, locate and click the following registry subkey:
 
    ```console
-   HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\
+   HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\
    ```
 
-8. If the values in the table above already exist, modify them if necessary, then exit Registry Editor. If they do not, on the Edit menu, point to **New**, and then click **DWORD Value** for the missing keys. 
+8. If the keys in the table above already exist, modify the values if necessary, then exit Registry Editor. If they do not, on the Edit menu, point to **New** and then select **DWORD Value** to create the missing keys. 
 
 9. For example, if the *EnableADAL* key is missing, type *EnableADAL*, and then press **Enter.**
 
@@ -100,9 +99,8 @@ To disable modern authentication on a device, set the following registry keys on
 
 |Registry key|Type|Value|
 |:---|:---:|---:|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|0|
+|HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|0|
 |HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover|REG_DWORD|0|
-|
    
 ## Related content
 
