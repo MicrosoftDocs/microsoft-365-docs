@@ -322,7 +322,7 @@ You can also change and apply a label from this page:
 
 ## Support for sensitivity labels
 
-When you use admin centers that support sensitivity labels, with the exception of the Azure Active Directory portal, you see all sensitivity labels for your tenant. In comparison, user apps and services that filter sensitivity labels according to publishing policies, and the Azure Active Directory portal that also filters the labels can result in you seeing a subset of those labels.
+When you use admin centers that support sensitivity labels, with the exception of the Azure Active Directory portal, you see all sensitivity labels for your tenant. In comparison, user apps and services that filter sensitivity labels according to publishing policies can result in you seeing a subset of those labels. The Azure Active Directory portal also filters the labels according to publishing policies.
 
 The following apps and services support sensitivity labels configured for sites and group settings:
 
