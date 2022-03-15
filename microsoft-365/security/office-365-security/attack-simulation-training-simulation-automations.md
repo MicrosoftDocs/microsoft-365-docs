@@ -27,9 +27,9 @@ To create a simulation automation, do the following steps:
 
    To go directly to the **Simulation automations** tab, use <https://security.microsoft.com/attacksimulator?viewid=simulationautomation>.
 
-2. On the **Simulation automations** tab, select ![Create simulation icon.](../../media/m365-cc-sc-create-icon.png) **Create simulation**.
+2. On the **Simulation automations** tab, select ![Create automation icon.](../../media/m365-cc-sc-create-icon.png) **Create automation**.
 
-   ![Create simulation button on the Simulation automations tab in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-sim-automations-create.png)
+   ![Create automation button on the Simulation automations tab in Attack simulation training in the Microsoft 365 Defender portal.](../../media/attack-sim-training-sim-automations-create.png)
 
 3. The creation wizard opens. The rest of this article describes the pages and the settings they contain.
 
@@ -243,7 +243,7 @@ On the **Landing page** page, you configure the web page that user are taken to 
     You need to configure the following additional settings on the **Landing page** page:
 
     - **Select landing page layout**: Select one of the 5 available landing page templates.
-    - **Add logo**: Click **Browse** to find and select a .png, .jpeg, or .gif file to add to all payloads that are selected by Microsoft. To remove the logo, click **Remove**.
+    - **Add logo**: Click **Browse** to find and select a .png, .jpeg, or .gif file to add to all payloads that are selected by Microsoft. The logo size should be a maximum of 210 x 70 to avoid distortion. To remove the logo, click **Remove**.
     - **Payload indicators**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.
 
       Select **Add payload indicators to email** to help users learn how to identify phishing messages.
@@ -254,19 +254,20 @@ On the **Landing page** page, you configure the web page that user are taken to 
 
     You need to configure the following additional settings on the **Landing page** page:
 
-    - **Payload indicators**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.
-
-      Select **Add payload indicators to email** to help users learn how to identify phishing messages.
+    - **Payload indicators**:  This setting is available to select only if both of the following conditions are true:
+      - You previously selected **Credential harvest**, **Link in attachment**, or **Drive-by URL** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.
+      - After you add the **Dynamic tag** named **Insert email content** into the page content.
 
     - Page content: Two tabs are available:
 
       - **Text**: A rich text editor is available to create your landing page. In addition to the typical font and formatting settings, the following settings are available:
         - **Dynamic tag**: Select from the following tags:
-          - **Username**
-          - **Email sender name**
-          - **Sender email address**
-          - **Email subject**
-          - **Email content**
+          - **Insert name**
+          - **Insert sender name**
+          - **Insert sender email**
+          - **Insert email subject**
+          - **Insert email content**
+          - **Insert date**
         - **Use from default**: Select one of the 5 available landing page templates to start with. You can modify the text and layout in the editing area. To reset the landing page back to the default text and layout of the template, click **Reset to default**.
         - **Training link**: In the **Name training URL** dialog that appears, enter a link title for the training link, and then click **Confirm** to add the link to the landing page.
       - **Code**: You can view and modify the HTML code directly.

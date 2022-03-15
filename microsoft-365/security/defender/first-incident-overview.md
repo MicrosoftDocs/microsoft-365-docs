@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -32,7 +32,7 @@ ms.technology: m365d
 
 An organization's incident response strategy determines its ability to deal with increasingly disruptive security incidents and cybercrime. While taking preventative measures is important, the ability to act quickly to contain, eradicate, and recover from detected incidents can minimize damage and business losses.
 
-This incident response walkthrough shows how you, as part of a security operations team, can perform most of the key incident response steps within Microsoft 365 Defender. Here are the steps:
+This incident response walkthrough shows how you, as part of a security operations (SecOps) team, can perform most of the key incident response steps within Microsoft 365 Defender. Here are the steps:
 
 - Preparation of your security posture
 - For each incident:
@@ -42,7 +42,7 @@ This incident response walkthrough shows how you, as part of a security operatio
 
 A security incident is defined by National Institute of Standards and Technology (NIST) as "an occurrence that actually or potentially jeopardizes the confidentiality, integrity, or availability of an information system; or the information the system processes, stores, or transmits; or that constitutes a violation or imminent threat of violation of security policies, security procedures, or acceptable use policies."
 
-Incidents in Microsoft 365 Defender are the logical starting points for analysis and incident response. Analyzing and remediating incidents typically makes up most of a security operations team's tasks.
+Incidents in Microsoft 365 Defender are the logical starting points for analysis and incident response. Analyzing and remediating incidents typically makes up most of a  (SecOps) team's tasks and time.
 
 ## Next step
 

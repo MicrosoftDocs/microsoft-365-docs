@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -60,7 +60,7 @@ Analysts then initiate investigations based on the **Priority** criteria set by 
 
 Incident prioritization might vary depending on the organization. NIST recommends also considering the functional and informational impact of the incident, and recoverability.
 
-The following is just one approach to triage:
+The following is just one approach to triage to consider:
 
 1. Go to the [incidents](incidents-overview.md) page to initiate triage. Here you can see a list of incidents affecting your organization. By default, they are arranged from the most recent to the oldest incident. From here, you can also see different columns for each incident showing their severity, category, number of active alerts, and impacted entities, among others. You can customize the set of columns and sort the incident queue by some of these columns by selecting the column name. You can also filter the incident queue according to your needs. For a full list of available filters, see [Prioritize incidents](incident-queue.md#available-filters).
 
@@ -90,19 +90,19 @@ The following is just one approach to triage:
 
 ## Analyze your first incident
 
-Understanding the context surrounding alerts is equally important. Often an alert is not a single independent event. There is a chain of processes created, commands, and actions that might not have occurred at the same time. Therefore, an analyst must look for the first and last activities of the suspicious entity in device timelines to understand the context of the alerts.
+Understanding the context surrounding alerts is equally important. Often an alert is not a single independent event. There is a chain of processes created, commands, and actions that might not have occurred at the same time. Therefore, you must look for the first and last activities of the suspicious entity in device timelines to understand the context of the alerts.
 
 There are multiple ways to read and analyze data using Microsoft 365 Defender but the end goal for analysts is to respond to incidents as quickly as possible. While Microsoft 365 Defender can significantly reduce [Mean Time to Remediate (MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) through the industry-leading [automated investigation and response](m365d-autoir.md) feature, there are always cases that require manual analysis.
 
 Here's an example:
 
-1. Once triage priority has been determined, an analyst begins an in-depth analysis by selecting the incident name. This page brings up the **Incident Summary** where data is displayed in tabs to assist with the analysis. Under the **Alerts** tab, the type of alerts are displayed. Analysts can click on each alert to drill down into the respective detection source.
+1. Once triage priority has been determined, you can begin an in-depth analysis by selecting the incident name. This page brings up the **Incident Summary** where data is displayed in tabs to assist with the analysis. Under the **Alerts** tab, the type of alerts are displayed. Analysts can click on each alert to drill down into the respective detection source.
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="Example of the Summary tab of an incident.":::
 
     For a quick guide about which domain each detection source covers, review the [Detect](#detection-by-microsoft-365-defender) section of this article.
 
-2. From the **Alerts** tab, an analyst can pivot to the detection source to conduct a more in-depth investigation and analysis. For example, selecting Malware Detection with Microsoft Defender for Cloud Apps as the detection source takes the analyst to its corresponding alert page.
+2. From the **Alerts** tab, you can pivot to the detection source to conduct a more in-depth investigation and analysis. For example, selecting Malware Detection with Microsoft Defender for Cloud Apps as the detection source takes the analyst to its corresponding alert page.
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-select-alert.png" alt-text="Example of selecting an alert of an incident.":::
 
@@ -120,7 +120,7 @@ Here's an example:
 
     :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-mcas-alert.png" alt-text="Example of alerts details for Microsoft Defender for Cloud Apps .":::
 
-6. By selecting other alerts, an analyst can get a complete picture of the attack.
+6. By selecting other alerts, you can get a complete picture of the attack.
 
 ## Next step
 

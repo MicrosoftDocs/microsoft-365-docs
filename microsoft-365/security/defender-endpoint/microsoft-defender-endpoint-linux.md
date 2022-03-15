@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
+  - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -116,6 +116,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
        - 2.6.32-754.35.1.el6.x86_64
        - 2.6.32-754.39.1.el6.x86_64
        - 2.6.32-754.41.2.el6.x86_64
+       - 2.6.32-754.43.1.el6.x86_64
        - 2.6.32-754.6.3.el6.x86_64
        - 2.6.32-754.9.1.el6.x86_64
 

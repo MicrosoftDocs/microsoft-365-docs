@@ -14,6 +14,7 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom: 
 - seo-marvel-apr2020
+- admindeeplinkSPO
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
@@ -37,21 +38,19 @@ Once an *Anyone* link expires, it can no longer be used to access content.
 
 To set an expiration date for Anyone links across the organization
 
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-2. In the left navigation, expand **Policies**, and then click **Sharing**.
-3. Under **Choose expiration and permissions options for Anyone links**, select the **These links must expire within this many days** check box.</br>
+1. Open the SharePoint admin center, expand **Policies**, and then select <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>.
+1. Under **Choose expiration and permissions options for Anyone links**, select the **These links must expire within this many days** check box.</br>
    ![Screenshot of SharePoint organization-level Anyone link expiration settings.](../media/sharepoint-organization-anyone-link-expiration.png)
-4. Type a number of days in the box, and then click **Save**.
+1. Type a number of days in the box, and then click **Save**.
 
 To set an expiration date for Anyone links on a specific site
 
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-2. In the left navigation, expand **Sites**, and then click **Active sites**.
-3. Select the site you want to change, and then click **Sharing**.
-4. Under **Advanced settings for Anyone links**, under **Expiration of Anyone links**, clear the **Same as organization-level setting** check box.</br>
+1. Open the SharePoint admin center, expand **Sites**, and then select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
+1. Select the site you want to change, and then select **Sharing**.
+1. Under **Advanced settings for Anyone links**, under **Expiration of Anyone links**, clear the **Same as organization-level setting** check box.</br>
    ![Screenshot of SharePoint site-level Anyone link expiration settings.](../media/sharepoint-organization-anyone-link-expiration-site.png)
-5. Select the **These links must expire within this many days** option, and type a number of days in the box.
-6. Click **Save**.
+1. Select the **These links must expire within this many days** option, and type a number of days in the box.
+1. Select **Save**.
 
 Note that once an *Anyone* link expires, the file or folder can be re-shared with a new *Anyone* link.
 
@@ -65,9 +64,8 @@ If you want to allow unauthenticated sharing, but are concerned about unauthenti
 
 To set permissions for Anyone links across the organization
 
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-2. In the left navigation, click **Sharing**.
-3. Under **Advanced settings for "Anyone" links**, select the file and folder permissions that you want to use.</br>
+1. Open the SharePoint admin center, and select <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>.
+1. Under **Advanced settings for "Anyone" links**, select the file and folder permissions that you want to use.</br>
    ![Screenshot of SharePoint organization-level Anyone link permissions settings.](../media/sharepoint-organization-anyone-link-permissions.png)
 
 With *Anyone* links set to **View**, users can still share files and folders with guests and give them edit permissions by using *Specific people* links. These links require people outside your organization to authenticate as guests, and you can track and audit guest activity on files and folders shared with these links.
@@ -79,23 +77,22 @@ When *Anyone* sharing is enabled for your organization, the default sharing link
 You can mitigate this risk by changing the default link setting to a link that only works for people inside your organization. Users who want to share with unauthenticated people would then have to specifically select that option.
 
 To set the default file and folder sharing link for the organization
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-2. In the left navigation, click **Sharing**.
-3. Under **File and folder links**, select **Only people in your organization**.
+1. Open the SharePoint admin center, and select <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>.
+1. Under **File and folder links**, select **Only people in your organization**.
 
    ![Screenshot of SharePoint default link type setting.](../media/sharepoint-default-sharing-link-company-link.png)
 
-4. Click **Save**
+1. Select **Save**
 
 To set the default file and folder sharing link for a specific site
-1. Open the [SharePoint admin center](https://admin.microsoft.com/sharepoint).
-2. In the left navigation, expand **Sites**, and then click **Active sites**.
-3. Select the site you want to change, and then click **Sharing**.
-4. Under **Default sharing link type**,  clear the **Same as organization-level setting** check box.
+
+1. Open the SharePoint admin center, expand **Sites**, and then select <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a>.
+1. Select the site you want to change, and then select **Sharing**.
+1. Under **Default sharing link type**,  clear the **Same as organization-level setting** check box.
 
    ![Screenshot of SharePoint site-level default link type settings.](../media/sharepoint-organization-anyone-link-permissions-site.png)
 
-5. Select the **Only people in your organization** option and click **Save**.
+1. Select the **Only people in your organization** option, and then select **Save**.
 
 ## Prevent unauthenticated sharing of sensitive content
 
@@ -115,7 +112,7 @@ To create a DLP rule
    ![Screenshot of conditions options, sensitive info types, sensitivity labels, and retention labels.](../media/limit-accidental-exposure-dlp-conditions.png)
 
 10. Under **Actions** click **Add an action** and choose **Restrict access or encrypt the content in Microsoft 365 locations**.
-11. Select the **Restrict access or encrypt the content in Microsoft 365 locations** check box and then choose the **Only people who were given access to the content through the "Anyone withe the link" options** option.
+11. Select the **Restrict access or encrypt the content in Microsoft 365 locations** check box and then choose the **Only people who were given access to the content through the "Anyone with the link" options** option.
 
       ![Screenshot of DLP rule action options.](../media/limit-accidental-exposure-dlp-anyone-links.png)
 
