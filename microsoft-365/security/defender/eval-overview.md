@@ -128,6 +128,6 @@ The following table describes this illustration.
 
 This is a commonly recommended order designed to leverage the value of the capabilities quickly based on how much effort is typically required to deploy and configure the capabilities. For example, Defender for Office 365 can be configured in less time than it takes to enroll devices in Defender for Endpoint. Of course, you should prioritize the components to meet your business needs, and can enable these in a different order.
 
-## The Next Step
+## Go to the Next Step
 
-[Learn about and create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)
+[Learn about and/or create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)
