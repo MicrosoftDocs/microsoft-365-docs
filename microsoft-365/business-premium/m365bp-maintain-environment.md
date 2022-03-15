@@ -30,7 +30,7 @@ description: "An overview of maintaining your org's environment"
 
 ## Overview
 
-As the users on your network change over time, a secure environment must be maintained. The missions you've completed so far have been about getting the system established securely. You also need to be able to also safely and cleanly remove users from the system, thereby removing the user's access to all data and information. In this section you learn how to protect or transition the data they may have worked with, clean the company devices they owned, and otherwise, completely remove them from the system.
+As the users on your network change over time, a secure environment must be maintained. The missions you've completed so far have been about getting the system established securely. You also need to be able to safely and cleanly remove users from the system, thereby removing their access to all data and information. In this section, you learn how to protect and transition the data the user may have worked with, clean the company devices they owned, and otherwise, completely remove them from the system.
 
 To do this, complete the following steps:
 
