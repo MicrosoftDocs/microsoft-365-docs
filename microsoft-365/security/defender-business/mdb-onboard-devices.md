@@ -28,6 +28,13 @@ ms.collection:
 
 With Microsoft Defender for Business, you have several options to choose from for onboarding your organization's devices. This article walks you through your options and includes an overview of how onboarding works.
 
+## Get the device onboarding guide
+
+Use the following guide and information to choose the best option for your organization.
+
+[:::image type="content" source="media/mdb-device-onboarding.png" alt-text="Screenshot of device onboarding diagram":::](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) <br/>
+[PDF](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) | [Visio](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.vsdx)
+
 >
 > **Got a minute?**
 > Please take our <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">short survey about Microsoft Defender for Business</a>. We'd love to hear from you!
@@ -38,11 +45,8 @@ With Microsoft Defender for Business, you have several options to choose from fo
 1. See your options for [onboarding devices](#device-onboarding-methods), and select a method. 
 
    - [Use automatic onboarding for Windows devices already enrolled in Microsoft Endpoint Manager](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)
-
    - [Use a local script to onboard Windows or macOS devices](#local-script-in-defender-for-business)
-
    - [Use Microsoft Endpoint Manager to onboard Windows, macOS, or mobile devices](#microsoft-endpoint-manager)
-
    - [Learn about device onboarding with Microsoft Defender for Business security configuration](#microsoft-defender-for-business-security-configuration)
 
 2. [Run a detection test](#run-a-detection-test) on newly onboarded Windows devices.
@@ -53,18 +57,7 @@ This article also includes information about [Running a detection test for Windo
 
 ## Device onboarding methods
 
-Defender for Business offers you several different methods for onboarding devices, whether you're already using Microsoft Endpoint Manager, or you just want a simplified onboarding experience.
-
-### Get the device onboarding guide
-
-Use the following guide and information to choose the best option for your organization.
-
-[:::image type="content" source="media/mdb-device-onboarding.png" alt-text="Screenshot of device onboarding diagram":::](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) <br/>
-[PDF](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) | [Visio](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.vsdx)
-
-### Choose an onboarding method
-
-The most commonly used methods to onboard devices to Defender for Business include:
+Defender for Business offers you several different methods for onboarding devices, whether you're already using Microsoft Endpoint Manager, or you just want a simplified onboarding experience. The most commonly used methods to onboard devices to Defender for Business include:
 
 - **Automatic onboarding** for Windows devices that are already enrolled in Microsoft Endpoint Manager. Automatic onboarding sets up a connection between Defender for Business and Microsoft Endpoint Manager, and then onboards Windows devices to Defender for Business. In order to use this option, your devices must already be enrolled in Endpoint Manager. To learn more, see [Automatic onboarding](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager).
 
