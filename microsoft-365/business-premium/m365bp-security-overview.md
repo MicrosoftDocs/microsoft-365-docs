@@ -40,4 +40,4 @@ This mission has the following objectives:
 - [Turn on security defaults](m365bp-conditional-access.md)
 - [Protect against malware and other threats](m365bp-increase-protection.md)
 
-Achieve these objectives and then start the [next mission](m365bp-devices-overview.md).
+Achieve these objectives and then start your [next mission](m365bp-devices-overview.md).
