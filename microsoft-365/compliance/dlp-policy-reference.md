@@ -395,7 +395,7 @@ To use these settings, you have to configure options in DLP settings and in the 
 
 The devices location provides many subactivities (conditions) and actions. To learn more, see [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on).
 
-When you select **Audit or restrict activities on Windows devices**, you can restrict the user activities by service domain or browser, and scope the actions that DLP takes by all apps, by a list of restricted apps that you define or by a restricted app group that you define.
+When you select **Audit or restrict activities on Windows devices**, you can restrict the user activities by service domain or browser, and scope the actions that DLP takes by all apps, by a list of restricted apps that you define or by a restricted app group (preview) that you define.
 
 ##### Service domain and browser activities
 
