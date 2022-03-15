@@ -481,6 +481,9 @@ When you're finished configuring the filters, click **Apply**, **Cancel**, or **
 
 ![Detection technology view for phishing email in the Threat protection status report.](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
+> [!NOTE]
+> Starting in May 2021, phishing detections in email were updated to include **message attachments** that contain phishing URLs. This change might shift some of the detection volume out of the **View data by Email \> Malware** view and into the **View data by Email \> Phish** view. In other words, message attachments with phishing URLs that were traditionally identified as malware now might be identified as phishing instead.
+
 In the **View data by Email \> Phish** and **Chart breakdown by Detection Technology** view, the following information is shown in the chart:
 
 - **URL malicious reputation**<sup>\*</sup>: Malicious URL reputation generated from Defender for Office 365 detonations in other Microsoft 365 customers.
@@ -595,6 +598,9 @@ On the **Threat protection status** page, the ![Create schedule icon.](../../med
 ### View data by Email \> Malware and Chart breakdown by Detection Technology
 
 ![Detection technology view for malware in the Threat protection status report.](../../media/threat-protection-status-report-malware-detection-tech-view.png)
+
+> [!NOTE]
+> Starting in May 2021, malware detections in email were updated to include **harmful URLs** in messages attachments. This change might shift some of the detection volume out of the **View data by Email \> Phish** view and into the **View data by Email \> Malware** view. In other words, harmful URLs in message attachments that were traditionally identified as phishing now might be identified as malware instead.
 
 In the **View data by Email \> Malware** and **Chart breakdown by Detection Technology** view, the following information is shown in the chart:
 
