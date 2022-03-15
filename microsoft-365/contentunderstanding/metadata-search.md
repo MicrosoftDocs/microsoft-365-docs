@@ -19,14 +19,14 @@ description: Learn how to use advanced metadata search to find items in SharePoi
 
 The advanced metadata search feature in SharePoint Syntex lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
 
-Advanced metadata search lets you use the metadata associated with a document to help locate the file in a SharePoint document library. This is particularly useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
+Advanced metadata search lets you use the metadata associated with a document to help locate the file in a SharePoint document library. This feature is particularly useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
 
 > [!NOTE]
 > This feature is available only for users who are licensed for SharePoint Syntex. 
 
 ## To use advanced metadata search
 
-1. From a SharePoint document library, in the **Search this library** box, click or tap the metadata search icon (![Screenshot of the metadata search icon.](../media/content-understanding/metadata-search-icon.png)).
+1. From a SharePoint document library, in the **Search this library** box, select the metadata search icon (![Screenshot of the metadata search icon.](../media/content-understanding/metadata-search-icon.png)).
 
     ![Screenshot of a document library page showing the search box with the metadata search icon highlighted.](../media/content-understanding/metadata-search-box.png)
 
@@ -43,7 +43,7 @@ Advanced metadata search lets you use the metadata associated with a document to
    |People   |Search for a match on people in any column in the library.   |
    |Modified date |Search by selected date range in the **Modified** column in the library.         |
    |File type     |Search by selected file type (for example, Word document or PDF).        |
-   |Content type  |Search by selected content type. This option will only appear if there is a non-default content type applied to the library. Default content types are *document* and *folder*.        |
+   |Content type  |Search by selected content type. This option will only appear if there's a non-default content type applied to the library. Default content types are *document* and *folder*.        |
 
 3. To add custom site columns that are in the current library view to your search, select **Add more options**, and then select the name of the site column. This is especially useful if you have a model running on the library because the metadata extractors automatically populate information into site columns.  
 
