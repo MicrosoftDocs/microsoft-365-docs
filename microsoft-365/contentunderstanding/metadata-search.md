@@ -34,7 +34,7 @@ Advanced metadata search lets you use the metadata associated with a document to
 
     ![Screenshot of a document library page showing the metadata search pane.](../media/content-understanding/metadata-search-pane.png)
 
-   Six metadata search fields are currently available. More fields will be added in the future.
+   The following metadata search fields are currently available. More fields will be added in the future.
 
    |Field    |Use this field to  |
    |---------|---------|
