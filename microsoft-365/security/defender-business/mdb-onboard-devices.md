@@ -53,7 +53,7 @@ Use the following guide and information to choose the best option for your organ
 
 3. [See your next steps](#next-steps). 
 
-This article also includes information about [Running a detection test for Windows devices](#run-a-detection-test) and [Offboarding a device](#offboarding-a-device).
+This article also includes information about [Offboarding a device](#offboarding-a-device).
 
 ## Device onboarding methods
 
