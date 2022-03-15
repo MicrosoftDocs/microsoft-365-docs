@@ -392,6 +392,14 @@ To complete the configuration, you select the label setting to change the label 
 
 With these concatenated settings, users will be able to delete the item from their app after three years but it remains accessible for eDiscovery searches for five years.
 
+Considerations for the relabeling option:
+
+- You can't relabel a regulatory record but the replacement label can be configured to mark the content as a regulatory record.
+
+- You won't be able to delete a retention label that's selected as a replacement label.
+
+- If the replacement label marks the item as a record or regulatory record but can't be applied because the file is checked out, the relabel process is tried when the file is checked back in again, or checkout is discarded.
+
 ### Deleting content that's older than a specific age
 
 A policy for retention can retain and then delete items, or delete old items without retaining them.
