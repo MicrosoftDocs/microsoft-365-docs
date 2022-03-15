@@ -94,6 +94,9 @@ To create a non-custodial hold for an Advanced eDiscovery case:
 12. Review your settings, and then click **Create this hold**.
 
 > [!NOTE]
+> When you create a query-based hold, all content from selected locations is initially placed on hold. Subsequently, any content that doesn't match the specified query is cleared from the hold every seven to 14 days. However, a query-based hold won't clear content if more than five holds of any type are applied to a content location, or if any item has indexing issues.
+
+> [!NOTE]
 > If the SMTP address of the user changes after you place the user's mailbox on hold, the mailbox will remain on hold. To use the new SMTP address to place hold, create a new hold.
 
 ## View hold statistics
