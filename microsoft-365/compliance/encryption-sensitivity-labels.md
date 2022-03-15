@@ -248,7 +248,7 @@ For more information, see [Rights Management issuer and Rights Management owner]
 > [!NOTE]
 > This feature is currently supported only by the Azure Information Protection unified labeling client.
 
-Select this option only after you have configured the Double Key Encryption service and you need to use this double key encryption for files that will have this label applied.
+Select this option only after you have configured the Double Key Encryption service and you need to use this double key encryption for files that will have this label applied. After the label is configured and saved, you won't be able to edit it.
 
 For more information, prerequisites, and configuration instructions, see [Double Key Encryption (DKE)](double-key-encryption.md).
 
