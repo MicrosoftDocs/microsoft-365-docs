@@ -61,7 +61,7 @@ Create or modify the following registry keys to force Outlook to use a newer aut
    HKEY_CURRENT_USER\Software\Microsoft\Exchange\
    ```
 
-4. If the *AlwaysUseMSOAuthForAutoDiscover* key is missing, on the Edit menu, point to **New**, and then click **DWORD Value** and type *AlwaysUseMSOAuthForAutoDiscover*, then then press **Enter.**
+4. If the *AlwaysUseMSOAuthForAutoDiscover* key is missing, on the Edit menu, point to **New** and then select **DWORD Value**. Type *AlwaysUseMSOAuthForAutoDiscover*, then press **Enter.**
 
 5. Right-click *AlwaysUseMSOAuthForAutoDiscover*, and then click **Modify.**
 
