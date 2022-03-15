@@ -30,7 +30,7 @@ description: "An overview on how to collaborate and share securely"
 
 ## Overview
 
-Armed with the protection afforded by the Microsoft 365 Business Premium Office apps, your next mission is to set up protections for file sharing and communication. The best way to do this is with Microsoft Teams, so all your files and communications are in a protected environment and not being stored in other ways outside of it. Your organization depends on protecting your data and information, so protect your files with everything you've got!
+Armed with the protection afforded by the Microsoft 365 Business Premium Office apps, your next mission is to set up protections for file sharing and communication. The best way to do this is with Microsoft Teams, so all your files and communications are in a protected environment and not being stored in unsafe ways outside of it. Your organization depends on protecting your data and information, so protect your files by all means possible.
 
 Your objectives are as follows:
 

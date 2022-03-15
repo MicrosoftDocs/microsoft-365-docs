@@ -31,7 +31,7 @@ description: "Setup overview for Microsoft 365 Business Premium for campaigns or
 
 ## Overview
 
-For this first mission, you have to get right to setting up your initial security defenses to protect your organization. Sign in and initiate the [setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure overall security and licenses for your teams. 
+For this first mission, you have to set up your initial security defenses right away. Sign in and initiate the [setup wizard](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) to configure overall security and licenses for your teams. 
 
 Your objectives are to:
 
