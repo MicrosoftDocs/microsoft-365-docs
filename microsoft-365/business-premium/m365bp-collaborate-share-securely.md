@@ -30,7 +30,7 @@ description: "An overview on how to collaborate and share securely"
 
 ## Overview
 
-You're already armed with the protection afforded by the Office apps, but your next mission is to set up protections for file sharing and communication. Focus on setting up protections so that members of your organization can safely share files. This is the data and information that your organization is built upon, so protect the files with everything you've got!
+Armed with the protection afforded by the Microsoft 365 Business Premium Office apps, your next mission is to set up protections for file sharing and communication. The best way to do this is with Microsoft Teams, so all your files and communications are in a protected environment and not being stored in other ways outside of it. Your organization depends on protecting your data and information, so protect your files with everything you've got!
 
 Your objectives are as follows:
 
@@ -39,4 +39,6 @@ Your objectives are as follows:
 - [Share files and videos](share-files-and-videos.md)
 - [Create a communication site](create-communications-site.md)
 
+<!---
 After you complete these objectives, start your [final mission](m365bp-protect-devices.md).
+--->
