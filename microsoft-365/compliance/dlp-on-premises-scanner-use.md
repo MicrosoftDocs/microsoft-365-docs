@@ -43,7 +43,7 @@ Data from DLP on-premises scanner surfaces in several areas
 
 #### Microsoft 365 Audit log
 
-The DLP rule matches are available in Audit log UI, see [Search the audit log in the compliance center](search-the-audit-log-in-security-and-compliance.md)  or accessible by [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell.
+The DLP rule matches are available in Audit log UI, see [Search the audit log in the Microsoft Purview portal](search-the-audit-log-in-security-and-compliance.md)  or accessible by [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell.
 
 #### AIP
 
