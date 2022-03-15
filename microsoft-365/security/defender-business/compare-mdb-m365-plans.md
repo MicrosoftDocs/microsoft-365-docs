@@ -1,6 +1,6 @@
 ---
 title: Compare security features in Microsoft 365 plans for small and medium-sized businesses
-description: Understand the differences between Defender for Business and Defender for Endpoint. Knowing what's included in each plan can help you make an informed decision for your organization.
+description: Understand the differences between Defender for Business and Defender for Endpoint. Knowing what's included in each plan can help you make an informed decision for your company.
 search.appverid: MET150 
 author: denisebmsft
 ms.author: deniseb

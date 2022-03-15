@@ -56,7 +56,7 @@ When you set up email notifications, you can choose from two types, as described
 
 ## View and edit email notifications
 
-To view or edit email notification settings for your organization, follow these steps:
+To view or edit email notification settings for your company, follow these steps:
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
