@@ -20,19 +20,23 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Get help and support for Microsoft 365 Lighthouse 
 
-Several options are available if you need help. Start by checking the current health of customer tenant services:
+Several options are available if you need help. First, check to see if there are any known issues:
 
-1. In the left navigation pane of Lighthouse, select **Service health**.
-2. View detailed information about current and past issues.
+- Review the current health of customer tenant services:
 
-To check the current health of the Lighthouse tenant services:
+    1. In the left navigation pane of Lighthouse, select **Service health**. 
+    2. View detailed information about current and past issues.
 
-1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
-2. In the left navigation pane, select **Health** > **Service health**.
-3. In the list of services, find **Microsoft 365 suite**, and then expand it to show all the services in the suite.
-4. Find **Microsoft 365 Lighthouse** and check the health.
+- Review the current health of the Lighthouse tenant services:
 
-If you're experiencing an issue that isn't listed in either of the Service health dashboards, follow the instructions in this article to view self-help options or to create a service request.
+    1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+    2. In the left navigation pane, select **Health** > **Service health**.
+    3. In the list of services, find **Microsoft 365 suite**, and then expand it to show all the services in the suite.
+    4. Find **Microsoft 365 Lighthouse** and check the health.
+
+- See if the issue is listed in [Known issues with Microsoft 365 Lighthouse](/office365/troubleshoot/microsoft-365-lighthouse/lighthouse-known-issues).
+
+If you're experiencing an issue that isn't listed in any of these resources, then follow the instructions in this article to view self-help options or to create a service request.
 
 ## Before you begin
 
@@ -70,5 +74,6 @@ If you're experiencing an issue that isn't listed in either of the Service healt
 
 ## Related content
 
+[Known issues with Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
 [Troubleshooot and resolve problems and error messages in Microsoft 365 Lighthouse](m365-lighthouse-troubleshoot.md) (article)
