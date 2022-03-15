@@ -67,6 +67,7 @@ The Deployment Plan tab also includes the following options:
 - **Search:** Enter keywords to quickly locate a specific deployment step in the list.
 
 ## Deployment steps and processes
+
 Each tenant’s deployment plan includes the deployment steps from the Microsoft 365 Lighthouse baseline. Each deployment step is comprised of one or more processes that need to be completed to fulfill the requirements of the deployment step. When a new tenant becomes active, you must complete deployment activities associated with the deployment steps and processes.
 
 For each deployment step, you can take the following actions:
@@ -74,11 +75,8 @@ For each deployment step, you can take the following actions:
 |Action  |Description  |
 |---------|---------|
 | Share    |  Enables the contents of the Deployment Step to be shared through a link or by email.    |
-| Review and deploy    |  Enables the user to: <ul><li>When supported, compares the configuration settings in the deployment step with settings in any existing policies without deploying the settings to the tenant.<br>The following deployment steps support comparison:</br><ul><li>Configure a device compliance policy for Windows 10 and later</li><li>Require MFA for end-users</li><li>Require MFA for admins</li><li>Block legacy authentication</li></ul><br></li> <li>Deploys the configuration settings to the tenant.</li></ul> <br>**Note:** Steps that don't support the ability to compare without deploying the settings to the tenant will enable you to review the configuration settings and deploy them.|
+| Review and deploy    |  Enables the user to: <ul><li>When supported, compare the configuration settings in the deployment step with settings in any existing policies without deploying the settings to the tenant.<br>The following deployment steps support comparison:</br><ul><li>Configure a device compliance policy for Windows 10 and later</li><li>Require MFA for end-users</li><li>Require MFA for admins</li><li>Block legacy authentication</li></ul></li> <li>Deploy the configuration settings to the tenant.</li></ul>**Note:** Steps that don't support the ability to compare without deploying the settings to the tenant will enable you to review the configuration settings and deploy them.|
 | Update action plan status    |  Enables the user to report the status of their action plan for the deployment step.      |
-
-
-
 
 ## Related content
 
