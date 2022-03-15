@@ -215,7 +215,7 @@ Onboarding a macOS device into Compliance solutions is a multiphase process.
 1. In **Packages** choose **+New**. Enter these details:
     - Display Name: leave blank because it will be reset when you choose the .pkg file.
     - Category: None (default)
-    - Filname: Choose file, in this case the `wdav.pkg` file.
+    - Filename: Choose file, in this case the `wdav.pkg` file.
 
 1. Choose **Open**. Set:
     - **Display Name**: `Microsoft Endpoint Technology`
