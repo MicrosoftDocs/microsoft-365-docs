@@ -45,4 +45,11 @@ Advanced metadata search lets you use the metadata associated with a document to
    |File type     |Search by selected file type (for example, Word document or PDF).        |
    |Content type  |Search by selected content type. This option will only appear if there is a non-default content type applied to the library. Default content types are *document* and *folder*.        |
 
-3. Select **Search**. The documents that match your metadata search are shown on the results page. 
+3. To add custom site columns that are in the current library view to your search, select **Add more options**, and then select the name of the site column. This is especially useful if you have a model running on the library because the metadata extractors automatically populate information into site columns.  
+
+    ![Screenshot of the Add more options menu on the metadata search pane.](../media/content-understanding/metadata-search-add-more-options.png)
+
+    > [!NOTE]
+    > Currently, the ability to add managed metadata fields or multiline text fields is not available. 
+
+4. Select **Search**. The documents that match your metadata search are shown on the results page. 
