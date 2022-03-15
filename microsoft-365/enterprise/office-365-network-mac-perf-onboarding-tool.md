@@ -250,7 +250,7 @@ This shows any significant health issues with Microsoft's global network, which 
 
 We provide a command line executable that can be used by your remote deployment and execution tools and run the same tests as are available in the Microsoft 365 network connectivity test tool web site.
 
-The command line test tool can be downloaded here: ![Command Line Tool](https://connectivity.office.com/api/AnonymousConnectivityTest/DownloadStandAloneRichClient)
+The command line test tool can be downloaded here: [Command Line Tool](https://connectivity.office.com/api/AnonymousConnectivityTest/DownloadStandAloneRichClient)
 
 You can run it by double clicking the executable in Windows File Explorer, or you can start it from a command prompt, or you can schedule it with task scheduler.
 
