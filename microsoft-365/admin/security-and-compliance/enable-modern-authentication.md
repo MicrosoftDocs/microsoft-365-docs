@@ -101,7 +101,6 @@ To disable modern authentication on a device, set the following registry keys on
 |:---|:---:|---:|
 |HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|0|
 |HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover|REG_DWORD|0|
-|
    
 ## Related content
 
