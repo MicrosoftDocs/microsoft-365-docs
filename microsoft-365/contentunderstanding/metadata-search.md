@@ -47,7 +47,7 @@ Advanced metadata search lets you use the metadata associated with a document to
 
 3. You can also search for custom site columns that are in the current library view. This is especially useful if you have a model running on the library because the metadata extractors automatically populate information into site columns.  
 
-    To add custom site columns to your search, select **Add more options**, and then select the name of the site column.
+    To add a custom site column to your search, select **Add more options**, and then select the name of the site column.
 
     ![Screenshot of the Add more options menu on the metadata search pane.](../media/content-understanding/metadata-search-add-more-options.png)
 
