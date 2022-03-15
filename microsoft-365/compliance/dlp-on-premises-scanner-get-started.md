@@ -95,7 +95,7 @@ Here's a list of MIP role groups that are in preview. To learn more about the, s
    > [!IMPORTANT]
    > Remember that the scanner runs a delta scan of the repository by default and the files that were already scanned in the previous scan cycle will be skipped unless the file was changed or you initiated a full rescan. Full rescan can be initiated by using **Rescan all files** option in the UI or by running **Start-AIPScan-Reset**.
 
-6.  Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies) in the Microsoft 365 Compliance center.
+6.  Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies) in the Microsoft Purview portal.
 
 7. Choose **Create policy** and create a test DLP policy. See [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md) if you need help creating a policy. Be sure to run it in test until you are comfortable with this feature. Use these parameters for your policy:
     1. Scope the DLP on-premises scanner rule to specific locations if needed. If you scope **locations** to **All**, all files scanned by the scanner will be subject to the DLP rule matching and enforcement.
@@ -119,7 +119,7 @@ Here's a list of MIP role groups that are in preview. To learn more about the, s
 
 ### Viewing DLP on-premises scanner alerts in DLP Alerts Management dashboard
 
-1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies) in the Microsoft 365 Compliance center and select **Alerts**.
+1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies) in the Microsoft Purview portal and select **Alerts**.
 
 2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
 
@@ -128,7 +128,7 @@ Here's a list of MIP role groups that are in preview. To learn more about the, s
 > [!NOTE]
 > The on-premises scanner requires that auditing be enabled. In Microsoft 365 auditing is enabled by default.
 
-1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft 365 Compliance center and select Activity explorer.
+1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft Purview portal and select Activity explorer.
 
 2. Refer to the procedures in [Get started with Activity explorer](data-classification-activity-explorer.md) to access and filter all the data for your on-premises scanner locations.
 
