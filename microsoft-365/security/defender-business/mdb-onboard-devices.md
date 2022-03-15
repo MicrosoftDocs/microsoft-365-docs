@@ -42,7 +42,7 @@ Use the following guide and information to choose the best option for your organ
 
 ## What to do
 
-1. See your options for [onboarding devices](#device-onboarding-methods), and select a method. 
+1. [See your options for onboarding devices](#device-onboarding-methods), and select a method. 
 
    - [Use automatic onboarding for Windows devices already enrolled in Microsoft Endpoint Manager](#automatic-onboarding-for-windows-devices-enrolled-in-microsoft-endpoint-manager)
    - [Use a local script to onboard Windows or macOS devices](#local-script-in-defender-for-business)
