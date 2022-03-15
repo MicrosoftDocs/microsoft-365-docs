@@ -28,7 +28,7 @@ description: "Protect against phishing and other attacks with Microsoft 365."
 
 # Protect yourself against phishing and other attacks
 
-In addition to the protection against attacks that Microsoft 365 Business Premium offers, there are other measures you can take that will further protect your organization.
+In addition to the protection Microsoft 365 Business Premium offers against attacks, there are other measures you must take to further defend the organization.
 
 - **Spam or junk mail** There are many reasons you might receive junk email and not all junk mail is the same. However, you can reduce what gets through to you, and thus reduce the risks of attacks, by filtering out junk mail.
 - **Phishing** A phishing scam is an email that seems legitimate but is an attempt to get your personal information or steal your money.

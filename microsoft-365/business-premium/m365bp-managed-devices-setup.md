@@ -36,28 +36,23 @@ A Windows 10 PC is considered managed after you have completed the following two
 
 2. Connect your computer to [Azure Active Directory](../business/set-up-windows-devices.md) and use your Microsoft 365 username and password to sign in. 
 
-<!--3. Enroll the device in Endpoint Manager. --->
-
 ## Enroll devices in Microsoft Endpoint Manager
 
-Go to Intune and enroll the devices (Windows, macOS, iOS, and Android).
+To enroll your device in Endpoint Manager, go to https://endpoint.microsoft.com and select **Devices** > **Enroll devices**. 
 
-<!---
-endpoint.microsoft.com > Microsoft Endpoint Manager admin center > Devices/Enroll devices
-
-OR FROM THE DASHBOARD...?
+Follow specific device enrollment guidance below.
 
 ### For Windows enrollment:
 
-1. Select Windows > Windows enrollment 
-1. From the enrollment methods listed, select Automatic enrollment.
+1. Select **Windows** > **Windows enrollment**. 
+1. From the enrollment methods listed, select **Automatic enrollment**.
 
 ### For iOS enrollment:
 
-1. Select iOS > iOS enrollment
+1. Select **iOS** > **iOS enrollment**
 1. From the list of policies, select a policy to see its details.
-1. Select Properties to manage the policy.
-1. Select Settings > System Security and configure security details in Intune.
+1. Select **Properties** to manage the policy.
+1. Select **Settings** > **System Security** and configure security details in Intune.
 1. Look at configuration profiles. 
 1. Create a profile and push it to the devices in your organization, as needed.
 
@@ -66,17 +61,17 @@ OR FROM THE DASHBOARD...?
 1. Select Android > Android enrollment.
 1. Choose Managed Google Play and grant Microsoft permission to send information to Google.
 
---->
-
-
 Go to Endpoints > Device inventory (this kicks off the setup wizard for MDB). Choose Get started and work through the wizard. This onboards devices and applies endpoint protection policies to the devices
 
 ## Onboard devices to Microsoft Defender for Business
 
 (See your [final mission](m365bp-protect-devices.md) to onboard to Defender for Business)
 
+<br>
+
+<!---
 ## Next steps
 
 [Protect all email](m365bp-protect-email-overview.md)
 
-<!---Should maybe just be the next objective, to keep them in this section (Install Office apps...).--->
+Note: Should maybe just be the next objective, to keep them in this section (Install Office apps...).--->

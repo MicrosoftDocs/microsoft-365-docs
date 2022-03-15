@@ -29,9 +29,9 @@ description: "Get help with increasing the level of protection in Microsoft 365 
 
 # Increase threat protection for Microsoft 365 Business Premium
 
-This article helps you increase the protection in your Microsoft 365 subscription to protect against phishing, malware, and other threats. These recommendations are appropriate for organizations with an increased need for security, like political campaigns, law offices, and health care clinics.
+In this objective, you increase your threat protection with Microsoft 365 Business Premium. It's critical to protect the org against phishing, malware, and other threats. These recommendations are especially appropriate for political campaigns, law offices, and health care clinics, which have an increased need for security.
 
-Before you begin, check your Microsoft Secure Score. Microsoft Secure Score analyzes your organization's security based on your regular activities and security settings and assigns a score. Begin by taking note of your current score. Taking the actions recommended in this article increases your score. The goal isn't to achieve the max score, but to be aware of opportunities to protect your environment that don't negatively affect productivity for your users.
+First, check your Microsoft Secure Score. Microsoft Secure Score analyzes your organization's security based on your regular activities and security settings and assigns a score. Take note of your current score and then take the recommended actions in this article to increase your score. The goal is to always be aware of and try to improve your score.
 
 For more information, see [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
@@ -169,7 +169,7 @@ If you don't see the **Setup** page with cards in your tenant yet, see how to co
 
 3. On the **Increase protection from advanced threats** page, choose **Get started**.
 4. On the pane that opens, select the check boxes next to **Links and attachments in email**, **Scan files in SharePoint, OneDrive, and Teams**, and **Scan links in Office desktop and Office Online apps** under **Scan items for malicious content**.
-
+    
    Under **Links and attachments in email**, Type in All Users, or the specific users whose email you want scanned.
 
    ![Select all check boxes in Increase protection from advanced threats.](../media/setatp.png)

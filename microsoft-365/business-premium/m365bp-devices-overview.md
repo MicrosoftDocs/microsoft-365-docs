@@ -24,14 +24,14 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: "Set up devices overview"
+description: "Set up all devices with protection"
 ---
 
-# Set up Microsoft 365 for Business devices
+# Set up Microsoft 365 Business Premium devices
 
 ## Overview
 
-Every  device is a possible attack avenue into your network and must be monitored and managed properly. In this critical mission, you will set up protection for every device in your network, and that includes multifactor authentication and Office apps on all devices. For managed devices, enroll them in Intune and onboard them with the endpoint setup wizard. You also must ensure the utmost security on unmanaged devices.
+Every  device is a possible attack avenue into your network and must be monitored and managed properly. In this critical mission, you will set up protection for every device in your network, and that includes multi-factor authentication and Office apps on all devices. For managed devices, enroll them in Intune and onboard them with the endpoint setup wizard. You also must ensure the utmost security on unmanaged devices.
 
 Your objectives are as follows:
 
