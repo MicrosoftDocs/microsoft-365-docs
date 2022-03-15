@@ -18,7 +18,6 @@ search.appverid:
 - MET150
 ms.collection: 
 - M365-security-compliance 
-- m365initiative-m365-defender 
 ms.custom: admindeeplinkDEFENDER
 ---
 

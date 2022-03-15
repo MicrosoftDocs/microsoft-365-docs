@@ -1,5 +1,5 @@
 ---
-title: Simulate a phishing attack with Microsoft Defender for Office 365
+title: Simulate a phishing attack with Attack simulation training
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -15,7 +15,7 @@ description: Admins can learn how to simulate phishing attacks and train their u
 ms.technology: mdo
 ---
 
-# Simulate a phishing attack in Defender for Office 365
+# Simulate a phishing attack with Attack simulation training in Defender for Office 365
 
 **Applies to**
  [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
@@ -46,7 +46,7 @@ On the **Select technique** page, select an available social engineering techniq
 - **Credential harvest**: Attempts to collect credentials by taking users to a well-known looking website with input boxes to submit a username and password.
 - **Malware attachment**: Adds a malicious attachment to a message. When the user opens the attachment, arbitrary code is run that will help the attacker compromise the target's device.
 - **Link in attachment**: A type of credential harvest hybrid. An attacker inserts a URL into an email attachment. The URL within the attachment follows the same technique as credential harvest.
-- **Link to malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user will contain a link to this malicious file. Opening the file and help the attacker compromise the target's device.
+- **Link to malware**: Runs some arbitrary code from a file hosted on a well-known file sharing service. The message sent to the user will contain a link to this malicious file. Opening the file will help the attacker compromise the target's device.
 - **Drive-by URL**: The malicious URL in the message takes the user to a familiar-looking website that silently runs and/or installs code on the user's device.
 
 If you click the **View details** link in the description, a details flyout opens that describes the technique and the simulation steps that result from the technique.
@@ -118,24 +118,37 @@ When you're finished, click **Next**.
 On the **Target users** page, select who will receive the simulation. Configure one of the following settings:
 
 - **Include all users in your organization**: The affected users are show in lists of 10. You can use the **Next** and **Previous** buttons directly below the list of users to scroll through the list. You can also use the ![Search icon.](../../media/m365-cc-sc-search-icon.png) **Search** icon on the page to find affected users.
+
 - **Include only specific users and groups**: Choose one of the following options:
   - ![Add users icon.](../../media/m365-cc-sc-create-icon.png) **Add users**: In the **Add users** flyout that appears, you can find users and groups based on the following criteria:
-    - **Users or groups**: In the ![Search for users and groups icon.](../../media/m365-cc-sc-search-icon.png) **Search for users and groups** box, you can type part of the **Name** or **Email address** of the user or group, and then press Enter. You can select some or all of the results. When you're finished, click **Add x users**.
+
+    - **Search for users or groups**: In box, you can type part of the **Name** or **Email address** of the user or group and then press Enter. You can select some or all of the results. When you're finished, click **Add x users**.
 
       > [!NOTE]
       > Clicking the **Add filters** button to return to the **Filter users by categories** options will clear any users or groups that you selected in the search results.
 
     - **Filter users by categories**: Select from none, some, or all of the following options:
+
       - **Suggested user groups**: Select from the following values:
         - **All suggested user groups**
         - **Users not targeted by a simulation in the last three months**
         - **Repeat offenders**
+
+      - **User tags**: User tags are identifiers for specific groups of users (for example, Priority accounts). For more information, see [User tags in Microsoft Defender for Office 365](user-tags.md).
+
+          Use the following options:
+
+        - **Search**: In ![Search by user tags icon.](../../media/m365-cc-sc-search-icon.png) **Search by user tags**, you can type part of the user tag and then press Enter. You can select some or all of the results.
+        - Select **All user tags**
+        - Select existing user tags.
+
       - **Department**: Use the following options:
-        - **Search**: In the ![Search by Department icon.](../../media/m365-cc-sc-search-icon.png) **Search by Department** box, you can type part of the Department value, and then press Enter. You can select some or all of the results.
+        - **Search**: In ![Search by Department icon.](../../media/m365-cc-sc-search-icon.png) **Search by Department**, you can type part the Department value and then press Enter. You can select some or all of the results.
         - Select **All Department**
         - Select existing Department values.
+
       - **Title**: Use the following options:
-        - **Search**: In the ![Search by Title icon.](../../media/m365-cc-sc-search-icon.png) **Search by Title** box, you can type part of the Title value, and then press Enter. You can select some or all of the results.
+        - **Search**: In ![Search by Title icon.](../../media/m365-cc-sc-search-icon.png) **Search by Title**, you can type part of the Title value and then press Enter. You can select some or all of the results.
         - Select **All Title**
         - Select existing Title values.
 
@@ -232,10 +245,8 @@ Microsoft-curated landing pages are available in 12 languages: Chinese (Simplifi
 - **Select landing page preference**: The available values are:
   - **Use Microsoft default landing page**: This is the default value that has the following associated options to configure:
     - **Select landing page layout**: Select one of the available templates.
-    - **Add logo**: Click **Browse** to find and select a .png, .jpeg, or .gif file. To remove the logo, click **Remove**.
+    - **Add logo**: Click **Browse** to find and select a .png, .jpeg, or .gif file. The logo size should be a maximum of 210 x 70 to avoid distortion. To remove the logo, click **Remove**.
     - **Add payload indicators to email**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select technique](#select-a-social-engineering-technique) page.
-
-      Select **Add payload indicators to email** to help users learn how to identify phishing messages.
 
     You can preview the results by clicking the **Open preview panel** button at the bottom of the page.
 
@@ -244,18 +255,19 @@ Microsoft-curated landing pages are available in 12 languages: Chinese (Simplifi
     If you select **Use a custom URL**, you need to add the URL in the **Enter the custom landing page URL** box that appears. No other options are available on the page.
 
   - **Create your own landing page**: This value has the following associated options to configure:
-    - **Add payload indicators to email**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select technique](#select-a-social-engineering-technique) page.
-
-      Select **Add payload indicators to email** to help users learn how to identify phishing messages.
+    - **Add payload indicators to email**: This setting is available to select only if both of the following conditions are true:
+      - You previously selected **Credential harvest**, **Link in attachment**, or **Drive-by URL** on the [Select technique](#select-a-social-engineering-technique) page.
+      - After you add the **Dynamic tag** named **Insert email content** into the page content.
 
     - Page content: Two tabs are available:
       - **Text**: A rich text editor is available to create your landing page. In addition to the typical font and formatting settings, the following settings are available:
         - **Dynamic tag**: Select from the following tags:
-          - **Username**
-          - **Email sender name**
-          - **Sender email address**
-          - **Email subject**
-          - **Email content**
+          - **Insert name**
+          - **Insert sender name**
+          - **Insert sender email**
+          - **Insert email subject**
+          - **Insert email content**
+          - **Insert date**
         - **Use from default**: Select an available template to start with. You can modify the text and layout in the editing area. To reset the landing page back to the default text and layout of the template, click **Reset to default**.
     - **Code**: You can view and modify the HTML code directly.
 
@@ -344,6 +356,7 @@ The following settings are available:
     - **Select launch time**
 - **Configure number of days to end simulation after**: The default value is 2.
 - **Enable region aware time zone delivery**: Deliver simulated attack messages to your employees during their working hours based on their region.
+- **Display the drive-by technique interstitial data gathered page**: You can show the overlay that comes up for the drive-bu URL technique attacks. To hide the overlay and go directly to the landing page, de-select this option.
 
 When you're finished, click **Next**.
 

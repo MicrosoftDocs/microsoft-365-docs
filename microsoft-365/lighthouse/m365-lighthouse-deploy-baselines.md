@@ -20,17 +20,15 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Deploy Microsoft 365 Lighthouse baselines 
 
-> [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
-
-Microsoft 365 Lighthouse baselines let you deploy standard managed-tenant configurations to secure users, devices, and data within customer tenants. There are six default baseline configurations that come standard with Lighthouse:
+Microsoft 365 Lighthouse baselines let you deploy standard managed-tenant configurations to secure users, devices, and data within customer tenants. There are seven default baseline configurations that come standard with Lighthouse:
 
 - Require MFA for admins
 - Require MFA for end users
 - Block Legacy Authentication
 - Set up Device Enrollment in Microsoft Endpoint Manager – Azure AD Join
-- Configure Defender Antivirus policy for Windows devices
-- Configure Compliance Policy for Windows devices
+- Configure Defender Antivirus policy for Windows 10 and later
+- Configure Microsoft Defender Firewall for Windows 10 and later
+- Configure Compliance Policy for Windows 10 and later
 
 ## Before you begin
 
@@ -38,13 +36,13 @@ Make sure you and your customer tenants meet the requirements listed in [Require
 
 ## Learn more about the default baseline
 
-Select **Baselines** from the left navigation pane to open the Baselines page. You'll see that the default baseline has already been added to the Default tenant group (all tenants). To view the default baseline configurations, select **View baseline** to open the Default baseline page. The configurations are listed as deployment steps. Select any of the deployment steps to view deployment details and user impact.
+Select **Baselines** from the left navigation pane in Lighthouse to open the Baselines page. You'll see that the default baseline has already been added to the Default tenant group (all tenants). To view the default baseline configurations, select **View baseline** to open the Default baseline page. The configurations are listed as deployment steps. Select any of the deployment steps to view deployment details and user impact.
 
-:::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Screenshot of the Default baseline page.>.":::
+:::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="Screenshot of the Default baseline page.":::
 
 ## Deploy a baseline configuration  
 
-1. In the left navigation page, select **Tenants** to view a list of your onboarded tenants.
+1. In the left navigation pane in Lighthouse, select **Tenants** to view a list of your onboarded tenants.
 
 2. Select the tenant you want to deploy the baseline configuration to.
 
@@ -52,9 +50,11 @@ Select **Baselines** from the left navigation pane to open the Baselines page. Y
 
 4. Select a deployment step to open the deployment step page.
 
-5. Select **Apply** to apply the selected deployment step to the tenant. If the deployment step indicates "This action requires a manual step", make sure to complete the manual step so the deployment step is applied correctly.
+5. Select **Review and Apply** to apply the selected deployment step to the tenant. If the deployment step indicates "This action requires a manual step", make sure to complete the manual step so the deployment step is applied correctly.
 
 ## Related content
 
 [Overview of using baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Microsoft 365 lighthouse Tenants page overview](m365-lighthouse-tenants-page-overview.md) (article)\
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
+[Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article) 

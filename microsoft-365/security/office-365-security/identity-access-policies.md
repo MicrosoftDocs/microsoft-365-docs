@@ -1,8 +1,8 @@
 ---
 title: Common Zero Trust identity and device access policies - Microsoft 365 for enterprise | Microsoft Docs
 description: Describes the recommended common Zero Trust identity and device access policies and configurations.
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.prod: m365-security
 ms.topic: article
@@ -23,11 +23,6 @@ ms.technology: mdo
 ---
 
 # Common Zero Trust identity and device access policies
-
-**Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- Azure
 
 This article describes the common recommended Zero Trust identity and device access policies for securing access to Microsoft 365 cloud services, including on-premises applications published with Azure Active Directory (Azure AD) Application Proxy.
 
@@ -241,14 +236,14 @@ To enforce the App protection policies you applied in Intune, you must create a 
 
 Enforcing App protection policies requires a set of policies described in [Require app protection policy for cloud app access with Conditional Access](/azure/active-directory/conditional-access/app-protection-based-conditional-access). These policies are each included in this recommended set of identity and access configuration policies.
 
-To create the Conditional Access policy that requires approved apps and APP protection, follow the steps in [Conditional Access: Require approved client apps or app protection policy](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection), which only allows accounts within apps protected by App protection policies to access Microsoft 365 endpoints.
+To create the Conditional Access policy that requires approved apps and APP protection, follow the steps in [Require approved client apps or app protection policy with mobile devices](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#require-approved-client-apps-or-app-protection-policy-with-mobile-devices), which only allows accounts within mobile apps protected by App protection policies to access Microsoft 365 endpoints.
 
    > [!NOTE]
    > This policy ensures mobile users can access all Microsoft 365 endpoints using the applicable apps.
 
-This policy also blocks Exchange ActiveSync clients from connecting to Exchange Online. However, you can create a separate policy for handling Exchange ActiveSync. For more information, see [Block ActiveSync clients](secure-email-recommended-policies.md#block-activesync-clients), which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online. This policy is not pictured in the illustration at the top of this article. It is described and pictured in [Policy recommendations for securing email](secure-email-recommended-policies.md).
+This policy also blocks Exchange ActiveSync clients on mobile devices from connecting to Exchange Online. However, you can create a separate policy for handling Exchange ActiveSync across all devices. For more information, see [Block ActiveSync clients](secure-email-recommended-policies.md#block-activesync-clients), which prevents Exchange ActiveSync clients leveraging basic authentication from connecting to Exchange Online. This policy is not pictured in the illustration at the top of this article. It is described and pictured in [Policy recommendations for securing email](secure-email-recommended-policies.md).
 
- These policies leverage the grant controls [Require approved client app](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) and [Require app protection policy](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
+ This policy leverages the grant controls [Require approved client app](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) and [Require app protection policy](/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy).
 
 Finally, blocking legacy authentication for other client apps on iOS and Android devices ensures that these clients cannot bypass Conditional Access policies. If you're following the guidance in this article, you've already configured [Block clients that don't support modern authentication](#block-clients-that-dont-support-multi-factor).
 

@@ -17,7 +17,9 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: "Learn how to use SharePoint Online IRM through Microsoft Azure Active Directory Rights Management Services (RMS) to protect SharePoint lists and document libraries."
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- admindeeplinkSPO
 ---
 
 # Set up Information Rights Management (IRM) in SharePoint admin center
@@ -34,7 +36,7 @@ After activating the Rights Management service, sign in to the SharePoint admin 
     
 2. Select the app launcher icon ![The app launcher icon in Office 365.](../media/e5aee650-c566-4100-aaad-4cc2355d909f.png) in the upper-left and choose **Admin** to open the Microsoft 365 admin center. (If you don't see the Admin tile, you don't have administrator permissions in your organization.) 
     
-3. In the left pane, choose **Admin centers** \> **SharePoint**.
+3. In the left pane, choose **Admin centers** \> <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>.
     
 4. In the left pane, choose **settings**, and then choose **classic settings page**.
     

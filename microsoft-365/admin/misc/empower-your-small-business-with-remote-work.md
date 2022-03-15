@@ -3,7 +3,7 @@ title: "Empower your small business with remote work"
 f1.keywords:
 - NOCSH
 ms.author: twerner
-author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article

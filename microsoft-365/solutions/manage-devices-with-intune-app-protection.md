@@ -15,11 +15,7 @@ description: Configure mobile app protection with App Protection policies (APP) 
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- Intune App Protection policies
-- APP
-- mobile application management
-- MAM
-- set up mobile ap protection 
+- M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
 ms.custom: 

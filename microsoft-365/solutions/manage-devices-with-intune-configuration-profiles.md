@@ -13,9 +13,7 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
-- Configuration profiles
-- Windows security baselines for Intune
-- customize configuration profiles- 
+- M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
 ms.custom: 

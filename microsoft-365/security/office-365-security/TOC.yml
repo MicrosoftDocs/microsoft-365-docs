@@ -58,8 +58,6 @@
          href: office-365-ti.md
        - name: Office 365 Security Incident Response
          href: office365-security-incident-response-overview.md
-       - name: Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations
-         href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
    - name: Deploy
      items: 
      - name: Protect against threats
@@ -296,7 +294,7 @@
        href: air-report-false-positives-negatives.md
      - name: Admin review for reported messages
        href: admin-review-reported-message.md
-     - name: Recover from a ransomware attack
+     - name: Recover from a ransonmware attack
        href: recover-from-ransomware.md
      - name: Remediate malicious email
        href: remediate-malicious-email-delivered-office-365.md
@@ -311,7 +309,9 @@
      - name: Manage quarantined messages and files as an admin
        href: manage-quarantined-messages-and-files.md
      - name: Quarantine policies
-       href: quarantine-policies.md  
+       href: quarantine-policies.md
+     - name: Release quarantined messages from shared mailboxes
+       href: view-and-release-quarantined-messages-from-shared-mailboxes.md
      - name: Remove blocked users from the Restricted Users portal
        href: removing-user-from-restricted-users-portal-after-spam.md
      - name: Use the delist portal to remove yourself from the blocked senders list
@@ -374,10 +374,6 @@
        href: virus-detection-in-spo.md
      - name: What's the difference between junk email and bulk email?
        href: what-s-the-difference-between-junk-email-and-bulk-email.md
-     - name: Configure groups and users for a political campaign dev/test environment
-       href: configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
-     - name: Create team sites in a political campaign dev/test environment
-       href: create-team-sites-in-a-political-campaign-dev-test-environment.md
    - name: Microsoft 365 Defender docs
      items: 
        - name: Microsoft 365 Defender

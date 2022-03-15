@@ -51,6 +51,8 @@ Safe Links protection is available in the following locations:
   
   > [!NOTE]
   > Safe Links does not work on mail-enabled public folders.
+  >
+  > Safe Links supports only HTTP(S) and FTP formats.
 
 - **Microsoft Teams**: Safe Links protection for links in Teams conversations, group chats, or from channels is also controlled by Safe Links policies.
 
@@ -203,6 +205,7 @@ Safe Links protection for Office 365 apps has the following client requirements:
   - Office apps on iOS or Android devices.
   - Visio on Windows.
   - OneNote in a web browser.
+  - Outlook for Windows when opening saved EML or MSG files.
 
 - Office 365 apps are configured to use modern authentication. For more information, see [How modern authentication works for Office 2013, Office 2016, and Office 2019 client apps](../../enterprise/modern-auth-for-office-2013-and-2016.md).
 
@@ -265,7 +268,7 @@ You configure the list of URLs in the global settings for Safe Links. For instru
   - The maximum length of an entry is 128 characters.
   - All of the entries can't exceed 10,000 characters.
 - Don't include a forward slash (`/`) at the end of the URL. For example, use `https://www.contoso.com`, not `https://www.contoso.com/`.
-- A domain only-URL (for example `contoso.com` or `tailspintoys.com`) will block any URL that contains the domain.
+- A domain-only-URL (for example `contoso.com` or `tailspintoys.com`) will block any URL that contains the domain.
 - You can block a subdomain without blocking the full domain. For example, `toys.contoso.com*` blocks any URL that contains the subdomain, but it doesn't block URLs that contain the full domain `contoso.com`.
 - You can include up to three wildcards (`*`) per URL entry.
 
@@ -296,7 +299,7 @@ To add entries to the list in new or existing Safe Links policies, see [Create S
 
 **Notes**:
 
-- The following clients don't recognize the **Do not rewrite the following URLs** lists in Safe Links policies. Users included in the polices can be blocked from accessing the URLs based on the results of Safe Links scanning in these clients:
+- The following clients don't recognize the **Do not rewrite the following URLs** lists in Safe Links policies. Users included in the policies can be blocked from accessing the URLs based on the results of Safe Links scanning in these clients:
   - Microsoft Teams
   - Office web apps
 
