@@ -102,8 +102,6 @@ On the **All placeholders** panel:
 
 6. If you want users to be able to add inputs manually, in addition to choosing from a list, select **Allow authors to add new choices**. In this case, the default for the manual input data type is *Single line of text*. Also the values input by the authors will only be used to generate the document. They won't be added to the SharePoint list.
 
-**NEW**
-
 ### Associate a placeholder by selecting from managed metadata term set or term
 
 On the **All placeholders** panel:
@@ -125,9 +123,7 @@ On the **All placeholders** panel:
 5. If you want users to be able to add multiple values corresponding to the term set or term, select **Allow multiple values**. Also, if the term set is configured as an open term set, you can select **Allow new values**. If you enable this option, users who generate documents from the modern template can add new terms to the term set and add those terms as placeholder values.
 
    > [!NOTE]
-   > When you enable the **Allow new values** option (only allowed for open term sets), users are less likely to add redundant terms in the term store. Redundant terms can make it difficult for admins to manage the term set.
-
-**END NEW**
+   > When you enable the **Allow new values** option (only allowed for open term sets), users are less likely to add redundant terms in the term store. Redundant terms can make it difficult for admins to manage a term set.
 
 You can create as many placeholders as you think are necessary. When you're done, you can choose to save the template as a draft or publish the template.
 
