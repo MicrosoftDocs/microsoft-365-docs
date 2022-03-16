@@ -44,7 +44,7 @@ Users can select the language of their choice for Windows 10, and Microsoft 365 
 > [!NOTE]
 > As of March 16, 2022, we're phasing out the Modern Workplace-Office-Language_Packs group that allows yours to add languages to Microsoft Office. The transition to the new method (see below) will be completed in April 2022. If you have any issues during this transition period, please reach out to [support](../working-with-managed-desktop/admin-support.md).
 
-By default, Microsoft Office requires users to be admin. Microsoft Managed Desktop deploys an Office policy to enable standard users to install language accessory packs directly from their Office apps. For more information, see [Allow users who aren't admins to install additional languages](https://docs.microsoft.com/deployoffice/overview-deploying-languages-microsoft-365-apps#allow-users-who-arent-admins-to-install-additional-languages).
+By default, Microsoft Office requires users to be admin. Microsoft Managed Desktop deploys an Office policy to enable standard users to install language accessory packs directly from their Office apps. For more information, see [Allow users who aren't admins to install additional languages](/deployoffice/overview-deploying-languages-microsoft-365-apps#allow-users-who-arent-admins-to-install-additional-languages).
 
 ## Supported languages
 
