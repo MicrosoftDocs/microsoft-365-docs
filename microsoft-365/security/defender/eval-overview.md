@@ -29,7 +29,7 @@ ms.technology: m365d
 
 - Microsoft 365 Defender
 
-# How this article series works
+## How this article series works
 
 This series of articles is designed to step you through the entire process of setting up a trial XDR environment, *end-to-end*, so you can evaluate the features and capabilities of Microsoft 365 Defender and even promote the evaluation environment straight to production when and if you're ready.
 
