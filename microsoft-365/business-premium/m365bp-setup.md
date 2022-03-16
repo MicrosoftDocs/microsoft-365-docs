@@ -41,7 +41,7 @@ After you have finished the guided setup, there are additional steps to complete
 
 - [Turning on security defaults](m365bp-conditional-access.md)
 - [Protecting against phishing and other attacks](m365-campaigns-phishing-and-attacks.md)
-- [Securing Windows devices](m365bp-secure-windows-devices.md)
+- [Securing devices](m365bp-secure-windows-devices.md)
 
 [Learn more about the differences between the guided setup process and the Setup page](../admin/setup/o365-setup-wizard-and-setup-page.md).
 
