@@ -54,7 +54,7 @@ When creating a new indicator (IoC), one or more of the following actions are av
 
 - Allow – the IoC will be allowed to run on your devices.
 - Audit – an alert will be triggered when the IoC runs.
-- Warn – the IoC will prompt a warning that the user can bypass (Defender for Cloud Apps only)
+- Warn – the IoC will prompt a warning that the user can bypass 
 - Block execution - the IoC will not be allowed to run.
 - Block and remediate - the IoC will not be allowed to run and a remediation action will be applied to the IoC.
 
@@ -72,8 +72,8 @@ The table below shows exactly which actions are available per indicator (IoC) ty
 | IoC type | Available actions |
 |:---|:---|
 | [Files](indicator-file.md) | Allow <br> Audit <br> Block and remediate |
-| [IP addresses](indicator-ip-domain.md) | Allow <br> Audit <br> Block execution |
-| [URLs and domains](indicator-ip-domain.md) | Allow <br> Audit <br> Block execution |
+| [IP addresses](indicator-ip-domain.md) | Allow <br> Audit <br> Block execution <br> Warn |
+| [URLs and domains](indicator-ip-domain.md) | Allow <br> Audit <br> Block execution<br> Warn |
 | [Certificates](indicator-certificates.md) | Allow <br> Block and remediate |
 
 The functionality of pre-existing IoCs will not change. However, the indicators were renamed to match the current supported response actions:
