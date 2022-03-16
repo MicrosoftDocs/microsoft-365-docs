@@ -15,7 +15,7 @@ ms.custom:
   - next-gen
   - edr
   - admindeeplinkDEFENDER
-ms.date: 03/14/2022
+ms.date: 03/16/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
 ---
@@ -59,8 +59,13 @@ The following image shows an instance of unwanted software that was detected and
 
 ## Enable EDR in block mode
 
+> [!IMPORTANT]
+> Starting with platform version 4.18.2202.X, you can now set EDR in block mode to target specific device groups using Intune CSPs. You can  continue to set EDR in block mode tenant-wide in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. Please note that EDR in block mode is primarily recommended for devices running MDAV in passive mode (a 3rd party AV is active). 
+
 > [!TIP]
 > Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning on EDR in block mode.
+
+### Security Portal 
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) and sign in.
 
@@ -68,8 +73,12 @@ The following image shows an instance of unwanted software that was detected and
 
 3. Scroll down, and then turn on **Enable EDR in block mode**.
 
-> [!IMPORTANT]
-> EDR in block mode can be turned on only in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, and is applied tenant wide. You cannot set EDR in block mode to target specific device groups or users. You cannot use registry keys, Microsoft Intune, or Group Policy to enable or disable EDR in block mode.
+### Intune
+
+To create a custom policy in Intune, see [Deploy OMA-URIs to target a CSP through Intune, and a comparison to on-premises](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune).
+
+For more information on the Defender CSP used for EDR in block mode, see "Configuration/PassiveRemediation" under [Defender CSP](/windows/client-management/mdm/defender-csp).
+
 
 ## Requirements for EDR in block mode
 
