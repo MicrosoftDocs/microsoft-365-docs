@@ -142,6 +142,8 @@ For additional details and information:
  
 - [Upgrade users to the latest Office apps](../admin/setup/upgrade-users-to-latest-office-client.md)
 
+<br>
+
 ## Contact support
 
  **If you need to contact support:**
