@@ -15,7 +15,7 @@ ms.custom:
   - next-gen
   - edr
   - admindeeplinkDEFENDER
-ms.date: 11/29/2021
+ms.date: 03/16/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
 ---
