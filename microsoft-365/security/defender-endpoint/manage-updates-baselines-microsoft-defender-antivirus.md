@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
@@ -80,6 +80,27 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>February-2022 (Platform: 4.18.xxxx.xx | Engine: 1.1.19000.8)</summary>
+
+&ensp;Security intelligence update version: **1.357.x.x**<br/>
+&ensp;Released: **March 14, 2022**<br/>
+&ensp;Platform: **4.18.xxxx.xx**<br/>
+&ensp;Engine: **1.1.19000.8**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.19000.8 <br/>
+Security intelligence update version: 1.357.x.x <br/>
+
+### What's new
+
+- Coming soon
+
+### Known Issues
+
+No known issues
+
+<br/><br/>
+</details><details>
 <summary>January-2022 (Platform: 4.18.2201.10 | Engine: 1.1.18900.2)</summary>
 
 &ensp;Security intelligence update version: **1.357.8.0**<br/>
@@ -134,14 +155,21 @@ Security intelligence update version: 1.355.2.0
 ### Known Issues
 No known issues
 <br/>
-</details><details>
+</details>
+
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
+
+<details>
 <summary> October-2021 (Platform: 4.18.2110.6 | Engine: 1.1.18700.4)</summary>
 
 &ensp;Security intelligence update version: **1.353.3.0**<br/>
 &ensp;Released: **October 28th, 2021**<br/>
 &ensp;Platform: **4.18.2110.6**<br/>
 &ensp;Engine: **1.1.18700.4**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.18700.4
 Security intelligence update version: 1.353.3.0
@@ -157,14 +185,7 @@ Security intelligence update version: 1.353.3.0
 ### Known Issues
 No known issues
 <br/>
-</details>
-
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
-
-<details>
+</details><details>
 <summary> September-2021 (Platform: 4.18.2109.6 | Engine: 1.1.18600.4)</summary>
 
 &ensp;Security intelligence update version: **1.351.7.0**<br/>
