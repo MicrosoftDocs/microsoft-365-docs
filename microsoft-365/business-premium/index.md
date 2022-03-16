@@ -47,7 +47,7 @@ In the process of setting up impenetrable defenses, you will complete the follow
 
 [**Collaborate and share securely**](m365bp-collaborate-share-securely.md). The objectives of this last mission require you to set up secure file sharing for all members of the organization.
 
->[NOTE]
+>[!NOTE]
 >There are times when a side quest takes you away from the mission at-hand. When this happens, return here to pick up where you left off. It's for the good of the org.
 
 :::image type="content" source="media/m365-whatisit-securityfocus2.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
@@ -56,6 +56,8 @@ NOTE: I THINK THIS IMAGE SHOULD BE RE-DONE TO REFLECT 5 MISSIONS, AND STYLISTICA
 --->
 
 Okay. Let's get started with the [first mission](m365bp-setup-overview.md)!
+
+<br>
 
 
 <!---

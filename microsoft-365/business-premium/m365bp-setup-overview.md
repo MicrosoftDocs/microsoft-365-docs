@@ -38,7 +38,7 @@ Your objectives are to:
 - Sign up and sign in to Microsoft 365 Business Premium
 - Set up your Microsoft 365 Business Premium environment
 
-Once you've achieved these objectives, you can move on to the [next mission](m365bp-security-overview.md).
+Once you've achieved these the objectives, you can move on to the [next mission](m365bp-security-overview.md).
 
 <!--
 (In my opinion, this is only rehashing the same stuff covered in the TOC topics and references as "mission objectives" above. So, it's not needed here.)

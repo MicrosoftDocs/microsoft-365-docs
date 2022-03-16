@@ -63,11 +63,6 @@ Follow specific device enrollment guidance below.
 
 Go to Endpoints > Device inventory (this kicks off the setup wizard for MDB). Choose Get started and work through the wizard. This onboards devices and applies endpoint protection policies to the devices
 
-## Onboard devices to Microsoft Defender for Business
-
-(See your [final mission](m365bp-protect-devices.md) to onboard to Defender for Business)
-
-<br>
 
 <!---
 ## Next steps
