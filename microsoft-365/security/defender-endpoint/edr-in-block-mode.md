@@ -64,17 +64,15 @@ The following image shows an instance of unwanted software that was detected and
 > [!TIP]
 > Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning on EDR in block mode.
 
-###Security Portal 
+### Security Portal 
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) and sign in.
 2. Choose **Settings** \> **Endpoints** \> **General** \> **Advanced features**.
 3. Scroll down, and then turn on **Enable EDR in block mode**.
 
-###Intune
+### Intune
 
-Follow the instructions in link below to create a custom policy in Intune:
-https://docs.microsoft.com/en-us/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune
-
+To create a custom policy in Intune, see [Deploy OMA-URIs to target a CSP through Intune, and a comparison to on-premises](/troubleshoot/mem/intune/deploy-oma-uris-to-target-csp-via-intune).
 
 For more information on the Defender CSP used for EDR in block mode, see "Configuration/PassiveRemediation" under [Defender CSP](/windows/client-management/mdm/defender-csp).
 
