@@ -92,7 +92,9 @@ The following table lists requirements for EDR in block mode:
 
 ### Can I specify exclusions for EDR in block mode?
 
-In general, you can't set exclusions for EDR in block mode. However, if you get a false positive, you can submit the file for analysis at the [Microsoft Security Intelligence submission site](https://www.microsoft.com/en-us/wdsi/filesubmission).
+In you get a false positive, you can submit the file for analysis at the [Microsoft Security Intelligence submission site](https://www.microsoft.com/en-us/wdsi/filesubmission).
+
+You can also define an exclusion for Microsoft Defender Antivirus. See [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md).
 
 ### Do I need to turn EDR in block mode on if I have Microsoft Defender Antivirus running on devices?
 
