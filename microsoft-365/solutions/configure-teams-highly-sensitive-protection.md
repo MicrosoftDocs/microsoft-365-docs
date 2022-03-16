@@ -135,7 +135,7 @@ To update the site default sharing link type
 1. Under Default sharing link type, clear the **Same as organization-level setting** check box, and select **People with existing access**.
 1. Select **Save**.
 
-Note that if you add private or shared channels to the team, each creates a new SharePoint site with the default sharing settings. You can update them in the SharePoint admin center by selecting the sites associated the the team.
+Note that if you add private or shared channels to the team, each creates a new SharePoint site with the default sharing settings. You can update them in the SharePoint admin center by selecting the sites associated with the team.
 
 ### Site sharing settings
 

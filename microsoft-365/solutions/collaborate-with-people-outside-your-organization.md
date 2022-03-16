@@ -28,7 +28,7 @@ The external sharing capabilities in Microsoft 365 provide an opportunity for pe
 Collaborating with people outside your organization consists of these major components:
 
 - **Enable sharing** - Configure the sharing controls across Azure Active Directory, Teams, Microsoft 365 Groups, and SharePoint to allow the level of sharing that you want for your organization.
-- **Configure organizational relationships** - If you are using shared channels, you must configure cross-tenant access settings in Azure Active Directory to allow B2B direct connect access for each organization you want to collaborate with. (These organization must also configure organizational relationships with your tenant.)
+- **Configure organizational relationships** - If you are using shared channels, you must configure cross-tenant access settings in Azure Active Directory to allow B2B direct connect access for each organization you want to collaborate with. (These organizations must also configure organizational relationships with your tenant.)
 - **Enable additional security** - While the basic sharing features can be configured to require people outside your organization to authenticate, Microsoft 365 provides many additional security and compliance features to help you protect your data and maintain your governance policies while sharing externally.
 
 Read [Set up secure collaboration with Microsoft 365 and Microsoft Teams](/microsoft-365/solutions/setup-secure-collaboration-with-teams) to learn how external sharing ties in with the overall Microsoft 365 collaboration guidance.

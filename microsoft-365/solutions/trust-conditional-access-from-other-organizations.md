@@ -44,8 +44,8 @@ We recommend using caution when requiring compliant or hybrid Azure AD joined de
 
 To require conditional access for people outside your organization, do the following:
 
-1. [Choose conditional access settings to trust from other organizations](#choose-conditional-access-settings-to-trust-from-other-organizations)
-1. [Set up conditional access for people outside your organization](#set-up-conditional-access-for-people-outside-your-organization)
+1. [Choose conditional access settings to trust from other organizations](#choose-conditional-access-settings-to-trust-from-other-organizations).
+1. [Set up conditional access for people outside your organization](#set-up-conditional-access-for-people-outside-your-organization).
 
 ## Choose conditional access settings to trust from other organizations
 
@@ -69,7 +69,7 @@ To trust conditional access settings from all Azure Active Directory organizatio
 
 ### Trust conditional access settings from a specific organization
 
-If you want to trust conditional access settings from a specific organizations, follow this procedure.
+If you want to trust conditional access settings from a specific organization, follow this procedure.
 
 To trust conditional access settings from a specific organization
 1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.

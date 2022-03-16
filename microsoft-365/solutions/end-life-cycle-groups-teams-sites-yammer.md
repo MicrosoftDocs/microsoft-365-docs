@@ -163,7 +163,7 @@ If it's only required to keep a copy of the plan for record-keeping purposes, th
 
 **Copy and move tasks to another Plan**
 
-While copying or moving tasks to another plan seems like a solution, individual tasks can only be [copied or moved between plans](https://support.microsoft.com/office/ad43a5d8-c1ad-42fd-b3da-fe97d72c8a1b) within the same group. This won't back up the data if the group associated With the plan is being deleted.
+While copying or moving tasks to another plan seems like a solution, individual tasks can only be [copied or moved between plans](https://support.microsoft.com/office/ad43a5d8-c1ad-42fd-b3da-fe97d72c8a1b) within the same group. This won't back up the data if the group associated with the plan is being deleted.
 
 **Copy entire plan**
 
