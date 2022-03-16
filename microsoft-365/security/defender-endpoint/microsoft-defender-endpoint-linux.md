@@ -80,6 +80,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
   - Debian 9 or higher
   - SUSE Linux Enterprise Server 12 or higher
   - Oracle Linux 7.2 or higher
+  - Oracle Linux 8.x
   - Amazon Linux 2
   - Fedora 33 or higher
 
