@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/01/2022
+ms.date: 03/16/2022
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
@@ -31,11 +31,7 @@ Use this article as a guide.
 
 ## Guided process for basic setup
 
-Microsoft 365 Business Premium includes a guided process for basic setup. The guided setup simplifies several tasks:
-
-- Connecting to a custom domain
-- Adding users and assigning licenses
-- Installing Outlook on mobile devices
+Microsoft 365 Business Premium includes a guided process for basic setup. Tasks include connecting to a custom domain, adding users, assigning licenses, and activating your DNS records.  
 
 To see how the guided setup works, watch the following video: <br/><br/>
 
@@ -47,21 +43,11 @@ After you have finished the guided setup, there are additional steps to complete
 
 - [Bump up security protection](m365bp-security-overview.md)
 - [Set up devices](m365bp-devices-overview.md)
-- [Protect email](m365bp-protect-email-overview.md)
-- [Set up secure collaboration and sharing](m365bp-collaborate-share-securely.md)
 - [Protect devices](m365bp-protect-devices.md)
-
-
-> [!TIP]
-> See the following section for more details about setting up and configuring Microsoft 365 Business Premium.
-
-
-## Work with a Microsoft partner
 
 If you'd prefer to have a Microsoft partner help you get and set up Microsoft 365, follow these steps:
 
 1. Go to the **Microsoft Solution Providers** page ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)).
- 
 2. In the search box, fill in your location and company size. 
 
 3. In the **Search for products, services, skills, industries** box, put `Microsoft 365`, and then select **Go**.
@@ -69,7 +55,6 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 4. Review the list of results. Select a provider to learn more about their expertise and the services they provide.
 
 Also see [Find your partner or reseller](../admin/manage/find-your-partner-or-reseller.md).
-
 
 ## See also
 
