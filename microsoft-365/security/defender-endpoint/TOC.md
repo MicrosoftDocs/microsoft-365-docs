@@ -259,6 +259,12 @@
 #### [Enable Corelight data integration](corelight-integration.md)
 #### [Device discovery FAQ](device-discovery-faq.md)
 
+### [Device inventory]()
+#### [Device inventory](machines-view-overview.md)
+#### [Exclude devices](exclude-devices.md)
+#### [Device timeline event flags](device-timeline-event-flag.md)
+#### [Manage device group and tags](machine-tags.md)
+
 ### [Network devices](network-devices.md)
 
 ### [Host firewall reporting in Microsoft Defender for Endpoint](host-firewall-reporting.md)
@@ -320,6 +326,7 @@
 #### [Use limited periodic scanning in Microsoft Defender Antivirus](limited-periodic-scanning-microsoft-defender-antivirus.md)
 #### [Tune performance of Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 #### [Compatibility with other security products](microsoft-defender-antivirus-compatibility.md)
+#### [Find malware detection names for Microsoft Defender for Endpoint](find-defender-malware-name.md)
 
 #### [Get your antivirus and antimalware updates](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Manage the sources for Microsoft Defender Antivirus protection updates](manage-protection-updates-microsoft-defender-antivirus.md)
@@ -413,11 +420,6 @@
 ##### [Investigate a domain](investigate-domain.md)
 ###### [Investigate connection events that occur behind forward proxies](investigate-behind-proxy.md)
 ##### [Investigate a user account](investigate-user.md)
-
-#### [Devices list]()
-##### [View and organize the Devices list](machines-view-overview.md)
-##### [Device timeline event flags](device-timeline-event-flag.md)
-##### [Manage device group and tags](machine-tags.md)
 
 #### [Take response actions]()
 ##### [Take response actions on a device]()

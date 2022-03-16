@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 02/09/2022
+ms.date: 03/15/2022
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
@@ -37,7 +37,7 @@ Keeping Microsoft Defender Antivirus up to date is critical to assure your devic
 
 ## Security intelligence updates
 
-Microsoft Defender Antivirus uses [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads security intelligence updates to provide protection.
+Microsoft Defender Antivirus uses [cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md) (also called the Microsoft Advanced Protection Service or MAPS) and periodically downloads dynamic security intelligence updates to provide additional protection. These dynamic updates do not take the place of regular security intelligence updates via security intelligence update KB2267602.
 
 > [!NOTE]
 > Updates are released under the following KBs:
@@ -80,6 +80,27 @@ All our updates contain
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>February-2022 (Platform: 4.18.xxxx.xx | Engine: 1.1.19000.8)</summary>
+
+&ensp;Security intelligence update version: **1.357.x.x**<br/>
+&ensp;Released: **March 14, 2022**<br/>
+&ensp;Platform: **4.18.xxxx.xx**<br/>
+&ensp;Engine: **1.1.19000.8**<br/>
+&ensp;Support phase: **Security and Critical Updates**<br/>
+
+Engine version: 1.1.19000.8 <br/>
+Security intelligence update version: 1.357.x.x <br/>
+
+### What's new
+
+- Coming soon
+
+### Known Issues
+
+No known issues
+
+<br/><br/>
+</details><details>
 <summary>January-2022 (Platform: 4.18.2201.10 | Engine: 1.1.18900.2)</summary>
 
 &ensp;Security intelligence update version: **1.357.8.0**<br/>
@@ -100,6 +121,7 @@ Security intelligence update version: 1.357.8.0 <br/>
 - Added the `-ServiceHealthReportInterval` setting to [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy configures the time interval (in minutes) to perform a scheduled scan.
 - Added the `AllowSwitchToAsyncInspection` setting to [Set-MpPreference](/powershell/module/defender/set-mppreference). This policy enables a performance optimization, that allows synchronously inspected network flows, to switch to async inspection once they have been checked and validated.
 - Performance Analyzer v2 updates: Remote PowerShell and PowerShell 7.x support added. See [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
+- Fixed potential duplicate packet bug in Microsoft Defender Antivirus network inspection system driver.
 
 ### Known Issues
 
@@ -133,14 +155,21 @@ Security intelligence update version: 1.355.2.0
 ### Known Issues
 No known issues
 <br/>
-</details><details>
+</details>
+
+
+### Previous version updates: Technical upgrade support only
+
+After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
+
+<details>
 <summary> October-2021 (Platform: 4.18.2110.6 | Engine: 1.1.18700.4)</summary>
 
 &ensp;Security intelligence update version: **1.353.3.0**<br/>
 &ensp;Released: **October 28th, 2021**<br/>
 &ensp;Platform: **4.18.2110.6**<br/>
 &ensp;Engine: **1.1.18700.4**<br/>
-&ensp;Support phase: **Security and Critical Updates**<br/>
+&ensp;Support phase: **Technical upgrade support (only)**<br/>
 
 Engine version: 1.1.18700.4
 Security intelligence update version: 1.353.3.0
@@ -156,14 +185,7 @@ Security intelligence update version: 1.353.3.0
 ### Known Issues
 No known issues
 <br/>
-</details>
-
-
-### Previous version updates: Technical upgrade support only
-
-After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that are listed in this section, and are provided for technical upgrade support only.<br/><br/>
-
-<details>
+</details><details>
 <summary> September-2021 (Platform: 4.18.2109.6 | Engine: 1.1.18600.4)</summary>
 
 &ensp;Security intelligence update version: **1.351.7.0**<br/>
@@ -636,6 +658,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220305.1</summary>
+
+&ensp;Package version: **20220305.1**<br/>
+&ensp;Platform version: **4.18.2201.10**<br/>
+&ensp;Engine version: **1.1.18900.3**<br/>
+&ensp;Signature version: **1.359.1405.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+</details><details>
 <summary>20220203.1</summary>
 
 &ensp;Package version: **20220203.1**<br/>
