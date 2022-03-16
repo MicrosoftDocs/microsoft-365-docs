@@ -2,8 +2,8 @@
 title: "Change Microsoft 365 for business plans manually"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,8 +14,8 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_subscriptions
+- AdminSurgePortfolio
 search.appverid: MET150
 description: "Change subscriptions manually by buying a new subscription and ensuring that both the subscriptions are listed and active."
 ROBOTS: NOINDEX
@@ -70,7 +70,7 @@ Include a license for each user that you want to move.
 - **If you purchased two subscriptions and they are not both listed here**, they may have been purchased for different organizations
     (for different domains). Subscriptions can't cross organization boundaries.
 
-- **If you know you have an additional subscription**, and it's not listed here, or is not active, [call Microsoft support](../../business-video/get-help-support.md).
+- **If you know you have an additional subscription**, and it's not listed here, or is not active, [call Microsoft support](../../admin/get-help-support.md).
 
 ### What about the old licenses?
 
@@ -114,4 +114,5 @@ If you moved all users from one subscription to another, and you no longer need 
 If you moved only some users to a different subscription, [remove licenses](../licenses/buy-licenses.md) that you no longer need.
 
 ## Call support to help you change plans
-[Call Microsoft support](../../business-video/get-help-support.md)
+
+[Call Microsoft support](../../admin/get-help-support.md).

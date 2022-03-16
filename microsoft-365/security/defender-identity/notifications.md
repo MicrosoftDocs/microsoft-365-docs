@@ -6,6 +6,7 @@ ms.topic: how-to
 author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
+ms.custom: admindeeplinkDEFENDER
 manager: raynew
 ---
 
@@ -25,7 +26,7 @@ This article explains how to work with [Microsoft Defender for Identity](/defend
 
 In Microsoft 365 Defender, you can add recipients for email notifications of health issues in Defender for Identity.
 
-1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Settings** and then **Identities**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Settings** and then **Identities**.
 
     ![Go to Settings, then Identities.](../../media/defender-identity/settings-identities.png)
 
@@ -46,7 +47,7 @@ In Microsoft 365 Defender, you can add recipients for email notifications of hea
 
 In Microsoft 365 Defender, you can add recipients for email notifications of detected alerts.
 
-1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Settings** and then **Identities**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Settings** and then **Identities**.
 
     ![Go to Settings, then Identities.](../../media/defender-identity/settings-identities.png)
 
@@ -60,7 +61,10 @@ In Microsoft 365 Defender, you can add recipients for email notifications of det
 
 Defender for Identity can notify you when it detects suspicious activities by sending security and health alerts to your Syslog server through a nominated sensor.
 
-1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Settings** and then **Identities**.
+> [!NOTE]
+> To learn how to integrate Defender for Identity with Microsoft Sentinel, see [Microsoft 365 Defender integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration).
+
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Settings** and then **Identities**.
 
     ![Go to Settings, then Identities.](../../media/defender-identity/settings-identities.png)
 

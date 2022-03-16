@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
-ms.topic: reference
+ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.UnindexedItemsLearnMore'
 ms.service: O365-seccomp
@@ -111,9 +111,9 @@ As a workaround for this limitation, we recommend the following procedure.
 3. Create and run a second search that uses the same search query (and searches the same locations) that you used in step 1. Append the following clause to the original query by using the **AND** operator:
 
    ```text
-   ((IndexingErrorCode>0 OR IndexingErrorCode<0) AND Date:date1…date2))
+   <original query> AND ((IndexingErrorCode>0 OR IndexingErrorCode<0) AND sent:date1..date2)
    ```
-  
+
    Adding this clause will return partially indexed items that match your original search query and that fall within a specific date range.<sup>2</sup>
 
 4. Export the results of the search from step 3, and this time include partially indexed items in the export. To do this, you would select the **All items, including ones that have unrecognized format, are encrypted, or weren't indexed for other reasons** export option.

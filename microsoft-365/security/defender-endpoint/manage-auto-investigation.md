@@ -6,14 +6,15 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
+ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
@@ -23,6 +24,8 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
+**Applies to:**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 ## Remediation actions
 
@@ -55,7 +58,7 @@ Whether taken automatically or upon approval, an automated investigation can res
 
 ## Review pending actions
 
-1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
 2. In the navigation pane, choose **Action center**.
 3. Review the items on the **Pending** tab.
 4. Select an action to open its flyout pane.
@@ -67,7 +70,7 @@ Whether taken automatically or upon approval, an automated investigation can res
 
 ## Review completed actions
 
-1. Go to the Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
 2. In the navigation pane, choose **Action center**.
 3. Review the items on the **History** tab.
 4. Select an item to view more details about that remediation action.

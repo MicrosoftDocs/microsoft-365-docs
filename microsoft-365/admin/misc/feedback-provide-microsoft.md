@@ -43,7 +43,6 @@ If you are using [Feedback](https://feedbackportal.microsoft.com/), you can prov
 :::image type="content" source="../../media/sending-feedback-community-portal.png" alt-text="Screenshot: Selection of Microsoft products you can send feedback on":::
 
 Selecting a forum allows you to see all feedback related to that product, and you can upvote or comment on feedback that matches yours.  If you do not see feedback that is similar to your own, you can submit new feedback through the portal itself.
-add screenshot.
 
 ### Sending feedback from Windows Feedback Hub
 
@@ -110,8 +109,7 @@ Moderation of community feedback may be performed by Microsoft employees or appr
 
 ## Data Handling and Privacy
 
-We understand that when you use Microsoft products and services, you’re entrusting us with one of your most valuable assets: your data.  We make sure the feedback we receive is stored and handled under Microsoft governance rules, and that it can only be accessed for approved uses.  We don’t use your email, chat, files, or other personal content to target ads to you.  When we collect data, we use it to make your experiences better.  Microsoft privacy policy.
-Thank you for all the feedback you give us to help improve our products and services.  We appreciate you. Thank you for being a part of our community!
+We understand that when you use Microsoft products and services, you’re entrusting us with one of your most valuable assets: your data.  We make sure the feedback we receive is stored and handled under Microsoft governance rules, and that it can only be accessed for approved uses.  We don’t use your email, chat, files, or other personal content to target ads to you.  When we collect data, we use it to make your experiences better. Thank you for being a part of our community!
 
 ## Have feedback about the new Feedback web portal?
 

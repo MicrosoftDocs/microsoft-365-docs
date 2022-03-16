@@ -13,6 +13,7 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MOE150
 - MET150
@@ -49,11 +50,11 @@ Licensing for Core eDiscovery requires the appropriate organization subscription
   
   For information about how to assign licenses, see [Assign licenses to users](../admin/manage/assign-licenses-to-users.md).
 
-For information about licensing:
+For information and guidance on security and compliance:
 
-- Download and see the "eDiscovery and auditing" section in the [Microsoft 365 Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
+- Download and see the eDiscovery and auditing section in the [Microsoft 365 Comparison table](https://aka.ms/M365EnterprisePlans).
 
-- See the [Security & Compliance Center service description](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+- See the [Microsoft 365 guidance for security & compliance - Service Descriptions | Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## Step 2: Assign eDiscovery permissions
 
@@ -61,9 +62,9 @@ To access Core eDiscovery or be added as a member of a Core eDiscovery case, a u
 
 Complete the following steps to add users to the eDiscovery Manager role group:
 
-1. Go to <https://compliance.microsoft.com/permissions> and sign in using the credentials for an admin account in your Microsoft 365 or Office 365 organization.
+1. Go to the Microsoft 365 compliance center and sign in using the credentials for an admin account in your Microsoft 365 or Office 365 organization.
 
-2. On the **Permissions** page, select the **eDiscovery Manager** role group.
+2. On the <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**Permissions**</a> page, select the **eDiscovery Manager** role group.
 
 3. On the eDiscovery Manager flyout page, click **Edit** next to the **eDiscovery Manager** section.
 
@@ -99,9 +100,9 @@ For more information about eDiscovery permissions and a description of each role
 
 The next step is to create a case and start using Core eDiscovery. Complete the following steps to create a case and add members. The user who creates the case is automatically added as a member.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in using the credentials for a user account that has been assigned the appropriate eDiscovery permissions. Members of the Organization Management role group can also create Core eDiscovery cases.
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and sign in using the credentials for a user account that has been assigned the appropriate eDiscovery permissions. Members of the Organization Management role group can also create Core eDiscovery cases.
 
-2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **eDiscovery > Core**.
+2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **eDiscovery** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**Core**</a>.
 
 3. On the **Core eDiscovery** page, click **Create a case**.
 
@@ -123,7 +124,7 @@ If you create a case in Step 3 and you're the only person who will use the case,
 
     You can also choose to add role groups as members of a case. Under **Role groups**, click **Add**. You can only assign the role groups that you are a member of to a case. That's because role groups control who can assign members to an eDiscovery case.
 
-4. In the list of people or role groups that can be added as members of the case, click to the left of the name of the people (or role groups) that you want to add. If you have a large list of people or role groups who can added as members, use the **Search** box to search for a specific person or role group in the list.
+4. In the list of people or role groups that can be added as members of the case, click to the left of the name of the people (or role groups) that you want to add. If you have a large list of people or role groups who can be added as members, use the **Search** box to search for a specific person or role group in the list.
   
 5. After you select the people or role groups to add as members of the case, click **Save** to save the new members or role groups.
 
@@ -150,4 +151,4 @@ To get you started using core eDiscovery, here's a simple workflow of creating e
 
    - Revise a query and rerun the search.
 
-3. **[Export and download search results](export-content-in-core-ediscovery.md)**. After you search for and find data that's relevant to your investigation, you can export it out of Office 365 for review by people outside of the investigation team. Exporting data is a two-step process. The first step is to export the results of a search in the case out of Office 365. This is accomplished by copying the results of a search to a Microsoft-provided Azure Storage location. The next step is to use the eDiscovery Export tool to download the content to a local computer. In addition to the exported data files, the contains of the export package also contains an export report, a summary report, and an error report.
+3. **[Export and download search results](export-content-in-core-ediscovery.md)**. After you search for and find data that's relevant to your investigation, you can export it out of Office 365 for review by people outside of the investigation team. Exporting data is a two-step process. The first step is to export the results of a search in the case out of Office 365. This is accomplished by copying the results of a search to a Microsoft-provided Azure Storage location. The next step is to use the eDiscovery Export tool to download the content to a local computer. In addition to the exported data files, the export package contains an export report, a summary report, and an error report.

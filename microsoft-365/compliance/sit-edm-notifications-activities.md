@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 # Create notifications for exact data match activities
 
-When you [create custom sensitive information types with exact data match (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) there are a number of activities that are created in the [audit log](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log). You can use the [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) PowerShell cmdlet to create notifications that let you know when these activities occur:
+When you [create custom sensitive information types with exact data match (EDM)](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types), there are a number of activities that are created in the [audit log](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log). You can use the [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) PowerShell cmdlet to create notifications that let you know when these activities occur:
 
 - CreateSchema
 - EditSchema
@@ -29,12 +29,15 @@ When you [create custom sensitive information types with exact data match (EDM)]
 - UploadDataFailed
 - UploadDataCompleted
 
+> [!NOTE]
+ The ability to create notifications for EDM activities is available for the World Wide and GCC clouds only.
+
 ## Pre-requisites
 
 The account you use must be one of the following:
 
-- a global admin
-- compliance administrator
+- A global admin
+- Compliance administrator
 - Exchange Online administrator
 
 To learn more about DLP permissions, see [Permissions](data-loss-prevention-policies.md#permissions).
@@ -58,7 +61,7 @@ To learn more about DLP licensing, see [Microsoft 365 licensing guidance for sec
     New-ProtectionAlert -Name "EdmUploadCompleteAlertPolicy" -Category Others -NotifyUser <address to send notification to> -ThreatType Activity -Operation UploadDataCompleted -Description "Custom alert policy to track when EDM upload Completed" -AggregationType None
     ```
     
-    for the **UploadDataFailed** you can run:
+    For the **UploadDataFailed** you can run:
     
     ```powershell
     New-ProtectionAlert -Name "EdmUploadFailAlertPolicy" -Category Others -NotifyUser <SMTP address to send notification to> -ThreatType Activity -Operation UploadDataFailed -Description "Custom alert policy to track when EDM upload Failed" -AggregationType None -Severity High
@@ -66,5 +69,5 @@ To learn more about DLP licensing, see [Microsoft 365 licensing guidance for sec
 
 ## Related articles
 
-- [Create custom sensitive information types with exact data match (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Learn about exact data match based sensitive information types](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert)

@@ -2,8 +2,8 @@
 title: "Tax Information"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: tugu, jmueller
 audience: Admin
@@ -16,9 +16,9 @@ ms.collection:
 search.appverid: MET150
 description: "Find out how much tax you will be charged for your Microsoft 365 for business subscription in different regions. "
 ms.custom:
+- commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 - AdminTemplateSet
 ms.date: 03/17/2021
 ---
@@ -129,7 +129,7 @@ If you're billed from one of the following locations, the current local tax is a
 
 In the United States, Canada, Mexico, Chile, and Colombia, various tax rates apply depending on the product nature and your location.
   
-If your billing is done by Microsoft Corporation ([see your invoice](view-your-bill-or-invoice.md)), and you signed up for Microsoft 365 outside of the United States, Canada, Puerto Rico, Chile, and Colombia, then tax is generally not charged.
+If your billing is done by Microsoft Corporation ([see your invoice](view-your-bill-or-invoice.md), and you signed up for Microsoft 365 outside of the United States, Canada, Puerto Rico, Chile, and Colombia, then tax is generally not charged.
 
 ## Add your VAT ID
 
@@ -153,7 +153,7 @@ For example:
 
 ## Apply for tax-exempt status
 
-If you qualify for tax-exempt status in your market, [start a service request](../../business-video/get-help-support.md) to establish tax exempt status for your organization.
+If you qualify for tax-exempt status in your market, [start a service request](../../admin/get-help-support.md) to establish tax exempt status for your organization.
 
 |Country or locale | Documentation |
 |------------------|----------------|

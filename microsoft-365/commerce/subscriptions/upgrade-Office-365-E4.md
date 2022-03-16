@@ -2,8 +2,8 @@
 title: "Upgrade from an Office 365 E4 subscription"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,8 +14,8 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
-- customer-email
 - commerce_subscriptions
+- customer-email
 - admindeeplinkMAC
 search.appverid: MET150 
 description: "Learn how to upgrade from an Office 365 E4 subscription."
@@ -58,7 +58,7 @@ Upgrading plans manually means completing the following separate procedures inst
 3. Select the **Upgrade** tab. If you see other plans listed, it means you can upgrade plans automatically.
 4. If you can’t upgrade automatically, you see a message that describes the reason why you can’t upgrade.
 
-There are several reasons why you can't upgrade plans automatically. Most of the issues are temporary ones, such as service health issues that you can resolve. For more information, see [Why can't I upgrade plans?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) If you need help with your upgrade, [contact support](../../business-video/get-help-support.md).
+There are several reasons why you can't upgrade plans automatically. Most of the issues are temporary ones, such as service health issues that you can resolve. For more information, see [Why can't I upgrade plans?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) If you need help with your upgrade, [contact support](../../admin/get-help-support.md).
 
 ## Will a credit check be required?
 

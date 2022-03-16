@@ -22,7 +22,7 @@ ms.technology: mde
 
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -105,7 +105,7 @@ This action takes effect on devices with Windows 10, version 1703 or later, and 
 
 4. Select any of the status indicators to view more information about the action. For example, select **Failed** to see where the action failed.
 
-#### Notification on device user
+#### Notification on device userf
 
 When the file is being removed from a device, the following notification is shown:
 
@@ -315,10 +315,10 @@ If you come across a problem when trying to submit a file, try each of the follo
 
 5. Change the organizational unit through the Group Policy. For more information, see [Configure with Group Policy](configure-endpoints-gp.md).
 
-6. If these steps do not resolve the issue, contact [winatp@microsoft.com](mailto:winatp@microsoft.com).
+6. If these steps do not resolve the issue, contact support.
 
 ## Related topics
 
 - [Take response actions on a device](respond-machine-alerts.md)
 - [Investigate files](investigate-files.md)
-- [Manual response actions in Microsoft Defender for Endpoint Plan 1 (preview)](defender-endpoint-plan-1.md#manual-response-actions)
+- [Manual response actions in Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md#manual-response-actions)

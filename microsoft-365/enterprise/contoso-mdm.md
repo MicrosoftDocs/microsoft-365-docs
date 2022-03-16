@@ -43,7 +43,7 @@ This is how Contoso set up their mobile device management infrastructure:
 - Set Intune as the Mobile Device Management (MDM) authority, and use Intune on Azure to administer content and manage the devices
 - Created Azure Active Directory (Azure AD) groups for devices for enrollment and Intune settings and device-based Conditional Access policies
 
-  For more information, see [Contoso Conditional Access policies](contoso-identity.md#conditional-access-policies-for-identity-and-device-access).
+  For more information, see [Contoso Conditional Access policies](contoso-identity.md#conditional-access-policies-for-zero-trust-identity-and-device-access).
 
 - Enabled the Apple device platform to support employees with iPads, iMacs, and iPhones, and corporate-owned iPhones
 - Created Contoso-specific terms and conditions policies, which are seen during the installation of the Company Portal for Contoso on mobile devices
@@ -58,7 +58,7 @@ This is how Contoso set up their mobile device management infrastructure:
   - Pushing certificates to managed devices.
   - A clear separation of business and personal data. Users or admins can selectively wipe corporate data from the device, while leaving personal data such as pictures, personal email accounts, and personal files untouched.
 
-Contoso enrolled deployed PCs and company-owned smartphones and tablets by adding them to the appropriate Intune device groups. They also established a BYOD program for employees to enroll their personal devices. Enrolled devices receive Intune policies, which results in managed and secured devices and their applications. Devices that aren't enrolled have Mobile Application Management (MAM) policies that specify allowed applications.
+Contoso enrolled deployed PCs and company-owned smartphones and tablets by adding them to the appropriate Intune device groups. They also established a BYOD program for employees to enroll their personal devices. Enrolled devices receive Intune policies, which result in managed and secured devices and their applications. Devices that aren't enrolled have Mobile Application Management (MAM) policies that specify allowed applications.
 
 Here is the Contoso mobile device management deployment architecture.
 

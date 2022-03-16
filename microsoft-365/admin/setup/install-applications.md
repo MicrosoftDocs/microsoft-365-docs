@@ -2,8 +2,8 @@
 title: "Install Office applications"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: landing-page
@@ -22,6 +22,7 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- adminvideo
 description: "Now that you've set up Microsoft 365, learn how to install individual Office applications on your Mac, PC, or mobile devices."
 ---
 
@@ -29,6 +30,20 @@ description: "Now that you've set up Microsoft 365, learn how to install individ
 
 Now that you've set up Microsoft 365, you can install individual Office applications on your Mac, PC, or mobile devices.
   
+## Watch: Install Office apps
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1?autoplay=false]
+
+Microsoft Office apps can be found on your  **Start** menu. If you don't see them, you can install them yourself.
+
+1. Go to office.com. You might need to sign in with your work account.
+2. Select  **Install Office**  >  **Microsoft 365 apps**  >  **Run** , and then select  **Yes**.
+3. The Office apps are installed. The process may take several minutes. When it completes, select  **Close**.
+4. To install Microsoft Teams, go to the office.com page, and choose  **Teams**.
+5. Get the Windows app, and then select  **Run**. Teams displays a prompt when installation is complete.
+
+## Next steps
+
 Follow these links for information on how to:
   
 - Install Office applications:  [Install Office on your PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)

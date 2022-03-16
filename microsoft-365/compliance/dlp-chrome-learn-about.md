@@ -33,7 +33,7 @@ The Microsoft Compliance Extension enables you to audit and manage the following
 
 activity |description  | supported policy actions|
 |---------|---------|---------|
-|file copied to cloud  | Detects when a user attempts to upload a sensitive item to a restricted service domain through the Chrome browser |audit, block|
+|file copied to cloud  | Detects when a user attempts to upload a sensitive item to a restricted service domain through the Chrome browser |audit, block with override, block|
 |file printed  |Detects when a user attempts to print a sensitive item that is open in the Chrome browser to a local or network printer |audit, block with override, block|
 |file copied to clipboard |Detects when a user attempts to copy information from a sensitive item that is being viewed in the Chrome browser and then paste it into another app, process, or item. |audit, block with override, block|
 |file copied to removable storage    | Detects when a user attempts to copy a sensitive item or information from a sensitive item that is open in the Chrome browser to removable media or USB device |audit, block with override, block|
@@ -41,7 +41,7 @@ activity |description  | supported policy actions|
 
 ## Deployment process
 1. [Get started with endpoint data loss prevention](endpoint-dlp-getting-started.md)
-2. [Onboarding tools and methods for Windows 10 devices](dlp-configure-endpoints.md)
+2. [Onboarding tools and methods for Windows 10 devices](device-onboarding-overview.md)
 3. [Install the extension on your Windows 10 devices](dlp-chrome-get-started.md)
 4. [Create or edit DLP policies](create-test-tune-dlp-policy.md) that restrict upload to cloud service, or access by unallowed browsers actions and apply them to your Windows 10 devices
 

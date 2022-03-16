@@ -11,6 +11,7 @@ metadata:
   ms.subservice: subservice
   ms.topic: landing-page # Required
   ms.collection: m365-security-compliance
+  ms.custom: intro-hub-or-landing
   author: robmazz #Required; your GitHub user alias, with correct capitalization.
   ms.author: robmazz #Required; microsoft alias of author; optional team alias.
   ms.date: 09/20/2019 #Required; mm/dd/yyyy format
@@ -87,7 +88,9 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Secure data with Zero Trust
-            url: /security/zero-trust/data         
+            url: /security/zero-trust/data
+          - text: Deploy a MIP solution
+            url: information-protection-solution.md
           - text: Deploy information protection for data privacy regulations
             url: ../solutions/information-protection-deploy.md
           - text: Information protection and compliance illustrations

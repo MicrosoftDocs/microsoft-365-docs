@@ -7,19 +7,18 @@ ms.reviewer: kshi
 ms.date:
 audience: ITPro
 ms.topic: how-to
-
 ms.localizationpriority: medium
 search.appverid:
   - MET150
 ms.assetid:
 ms.collection:
   - M365-security-compliance
-description: Learn about Safe Documents in Microsoft 365 E5 or Microsoft 365 E5 Security.
+description: Learn about Safe Documents in Microsoft 365 E5/A5 or Microsoft 365 E5/A5 Security.
 ms.technology: mdo
 ms.prod: m365-security
 ---
 
-# Safe Documents in Microsoft 365 E5
+# Safe Documents in Microsoft 365 E5/A5
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -65,11 +64,11 @@ Users don't need Defender for Endpoint installed on their local devices to get S
 
 To keep you protected, Safe Documents sends files to the [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) cloud for analysis. Details on how Microsoft Defender for Endpoint handles your data can be found here: [Microsoft Defender for Endpoint data storage and privacy](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy).
 
-Files sent by Safe Documents are not retained in Defender beyond the time needed for analysis (typically, less than 24 hours).
+Files sent by Safe Documents are not retained in Defender for Endpoint beyond the time needed for analysis (typically, less than 24 hours).
 
 ## Use the Microsoft 365 Defender portal to configure Safe Documents
 
-1. Open the Microsoft 365 Defender portal and go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Safe Attachments** in the **Policies** section. To go directly to the **Safe Attachments** page, use <https://security.microsoft.com/safeattachmentv2>.
 
 2. On the **Safe Attachments** page, click **Global settings**.
 

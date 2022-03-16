@@ -24,9 +24,9 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -39,7 +39,7 @@ In the [Planning](deployment-strategy.md) topic, there were several methods prov
 
 While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them. For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
 
-[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) is a solution platform that unifies several services. It includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) for cloud-based device management.
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) is a solution platform that unifies several services. It includes [Microsoft Intune](/mem/intune/fundamentals/what-is-intune)-based device management.
 
 This topic guides users in:
 
@@ -58,7 +58,7 @@ This onboarding guidance will walk you through the following basic steps that yo
 Here are the links you'll need for the rest of the process:
 
 - [MEM portal](https://aka.ms/memac)
-- [Security Center](https://securitycenter.windows.com/)
+- [Microsoft 365 Defender](https://security.microsoft.com)
 - [Intune Security baselines](/mem/intune/protect/security-baseline-settings-defender-atp#microsoft-defender)
 
 For more information about Microsoft Endpoint Manager, check out these resources:
@@ -74,9 +74,7 @@ For more information about Microsoft Endpoint Manager, check out these resources
 In this section, we will create a test group to assign your configurations on.
 
 > [!NOTE]
-> Intune uses Azure Active Directory (Azure AD) groups to manage devices and
-users. As an Intune admin, you can set up groups to suit your organizational
-needs.
+> Intune uses Azure Active Directory (Azure AD) groups to manage devices and users. As an Intune admin, you can set up groups to suit your organizational needs.
 >
 > For more information, see [Add groups to organize users and devices](/mem/intune/fundamentals/groups-add).
 
@@ -124,8 +122,7 @@ Then you will continue by creating several different types of endpoint security 
 
 1. Open the MEM portal.
 
-2. Navigate to **Endpoint security > Endpoint detection and response**. Click
-    on **Create Profile**.
+2. Navigate to **Endpoint security > Endpoint detection and response**. Click on **Create Profile**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager portal4.](images/58dcd48811147feb4ddc17212b7fe840.png)
@@ -179,17 +176,14 @@ Then you will continue by creating several different types of endpoint security 
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager portal12.](images/6b728d6e0d71108d768e368b416ff8ba.png)
 
-3. Select **Platform - Windows 10 and Later - Windows and Profile - Microsoft
-    Defender Antivirus > Create**.
+3. Select **Platform - Windows 10 and Later - Windows and Profile - Microsoft Defender Antivirus > Create**.
 
 4. Enter name and description, then select  **Next**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager portal13.](images/a7d738dd4509d65407b7d12beaa3e917.png)
 
-5. In the **Configuration settings page**: Set the configurations you require for
-    Microsoft Defender Antivirus (Cloud Protection, Exclusions, Real-Time
-    Protection, and Remediation).
+5. In the **Configuration settings page**: Set the configurations you require for Microsoft Defender Antivirus (Cloud Protection, Exclusions, Real-Time Protection, and Remediation).
 
     > [!div class="mx-imgBorder"]
     > ![Image of Microsoft Endpoint Manager portal14.](images/3840b1576d6f79a1d72eb14760ef5e8c.png)
@@ -359,17 +353,15 @@ To confirm that the configuration policy has been applied to your test device, f
     > [!div class="mx-imgBorder"]
     > [![Image of Services panel1.](images/b418a232a12b3d0a65fc98248dbb0e31.png)](images/b418a232a12b3d0a65fc98248dbb0e31.png#lightbox)
 
-2. After the configuration has been applied, the Defender for Endpoint
-    Protection Service should be started.
+2. After the configuration has been applied, the Defender for Endpoint Protection Service should be started.
 
     > [!div class="mx-imgBorder"]
     > [![Image of Services panel2.](images/a621b699899f1b41db211170074ea59e.png)](images/a621b699899f1b41db211170074ea59e.png#lightbox)
 
-3. After the services are running on the device, the device appears in Microsoft
-    Defender Security Center.
+3. After the services are running on the device, the device appears in Microsoft 365 Defender portal.
 
     > [!div class="mx-imgBorder"]
-    > [![Image of Microsoft Defender Security Center.](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
+    > [![Image of Microsoft 365 Defender portal.](images/df0c64001b9219cfbd10f8f81a273190.png)](images/df0c64001b9219cfbd10f8f81a273190.png#lightbox)
 
 ### Confirm next-generation protection
 
@@ -384,7 +376,7 @@ To confirm that the configuration policy has been applied to your test device, f
 
     > [!NOTE]
     > In the following image **Turn on cloud-delivered protection** and
-    > **Turn on real-time protection** are being shown as managed.
+    > **Turn on real-time protection** are being shown as managed.
 
     > [!div class="mx-imgBorder"]
     > ![Image of setting page2.](images/9341428b2d3164ca63d7d4eaa5cff642.png)

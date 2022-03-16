@@ -13,7 +13,6 @@ manager: dansimp
 audience: ITPro
 ms.collection:
   - m365-security-compliance
-  - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
 ---
@@ -24,8 +23,9 @@ ms.technology: mde
 
 
 **Applies to:**
-
 - [Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 This page will guide you through the steps you need to take to set up macOS policies in Jamf Pro.
 
@@ -45,11 +45,11 @@ You'll need to take the following steps:
 
 ## Step 1: Get the Microsoft Defender for Endpoint onboarding package
 
-1. In [Microsoft Defender Security Center](https://securitycenter.microsoft.com), navigate to **Settings > Onboarding**.
+1. In [Microsoft 365 Defender](https://security.microsoft.com), navigate to **Settings > Endpoints > Onboarding**.
 
 2. Select macOS as the operating system and Mobile Device Management / Microsoft Intune as the deployment method.
 
-    ![Image of Microsoft Defender Security Center.](images/onboarding-macos.png)
+    ![Image of Microsoft 365 Defender portal.](images/onboarding-macos.png)
 
 3. Select **Download onboarding package** (WindowsDefenderATPOnboardingPackage.zip).
 
@@ -63,7 +63,7 @@ You'll need to take the following steps:
 
    ![Image of WindowsDefenderATPOnboarding file.](images/plist-onboarding-file.png)
 
-2. In the Jamf Pro dashboard, select **New**.
+2. Sign in to Jamf Pro, navigate to **Computers** > **Configuration Profiles**, and select **New**.
 
     ![Image of creating a new Jamf Pro dashboard.](images/jamf-pro-configure-profile.png)
 
@@ -71,13 +71,13 @@ You'll need to take the following steps:
 
    **General**:
 
-   - Name: MDATP onboarding for macOS
-   - Description: MDATP EDR onboarding for macOS
+   - Name: MDE onboarding for macOS
+   - Description: MDE EDR onboarding for macOS
    - Category: None
    - Distribution Method: Install Automatically
    - Level: Computer Level
 
-4. In **Application & Custom Settings** select **Configure**.
+4.  Navigate to the **Application & Custom Settings** page and select **Upload** > **Add**.
 
     ![Image of configurate app and custom settings.](images/jamfpro-mac-profile.png)
 
@@ -107,7 +107,7 @@ You'll need to take the following steps:
 
 10. Select **Save**.
 
-    ![Image of  deployment target computers.](images/jamfpro-deployment-target.png)
+    ![Image of deployment target computers.](images/jamfpro-deployment-target.png)
 
     ![Image of target computers selected.](images/jamfpro-target-selected.png)
 
@@ -119,10 +119,9 @@ You'll need to take the following steps:
 
 ## Step 3: Configure Microsoft Defender for Endpoint settings
 
-You can either use JAMF Pro GUI to edit individual settings of the Microsoft Defender configuration,
-or use the legacy method by creating a configuration Plist in a text editor, and uploading it to JAMF Pro.
+You can either use JAMF Pro GUI to edit individual settings of the Microsoft Defender for Endpoint configuration, or use the legacy method by creating a configuration Plist in a text editor, and uploading it to JAMF Pro.
 
-Note that you must use exact `com.microsoft.wdav` as the **Preference Domain**, Microsoft Defender uses only this name and `com.microsoft.wdav.ext` to load its managed settings!
+Note that you must use exact `com.microsoft.wdav` as the **Preference Domain**, Microsoft Defender for Endpoint uses only this name and `com.microsoft.wdav.ext` to load its managed settings!
 
 (The `com.microsoft.wdav.ext` version may be used in rare cases when you prefer to use GUI method, but also need to configure a setting that has not been added to the schema yet.)
 
@@ -152,7 +151,7 @@ Note that you must use exact `com.microsoft.wdav` as the **Preference Domain**, 
 
     ![Upload schema.](images/a6f9f556037c42fabcfdcb1b697244cf.png)
 
-5. You can see all supported Microsoft Defender configuration settings below, under **Preference Domain Properties**. Click **Add/Remove properties** to select the settings that you want to be managed, and click **Ok** to save your changes. (Settings left unselected will not be included into the managed configuration, an end user will be able to configure those settings on their machines.)
+5. You can see all supported Microsoft Defender for Endpoint configuration settings below, under **Preference Domain Properties**. Click **Add/Remove properties** to select the settings that you want to be managed, and click **Ok** to save your changes. (Settings left unselected will not be included into the managed configuration, an end user will be able to configure those settings on their machines.)
 
     ![Select managed settings.](images/817b3b760d11467abe9bdd519513f54f.png)
 
@@ -176,7 +175,7 @@ Note that you must use exact `com.microsoft.wdav` as the **Preference Domain**, 
 
     ![Configuration settings - done.](images/dd55405106da0dfc2f50f8d4525b01c8.png)
 
-Microsoft Defender adds new settings over time. These new settings will be added to the schema, and a new version will be published to Github.
+Microsoft Defender for Endpoint adds new settings over time. These new settings will be added to the schema, and a new version will be published to Github.
 All you need to do to have updates is to download an updated schema, edit existing configuration profile, and **Edit schema** at the **Application & Custom Settings** tab.
 
 ### Legacy method
@@ -312,7 +311,7 @@ All you need to do to have updates is to download an updated schema, edit existi
 
 2. Save the file as `MDATP_MDAV_configuration_settings.plist`.
 
-3. In the Jamf Pro dashboard, open **Computers**, and there **Configuration Profiles**. Click **New(* and switch to the **General** tab.
+3. In the Jamf Pro dashboard, open **Computers**, and their **Configuration Profiles**. Click **New** and switch to the **General** tab.
 
     ![New profile.](images/644e0f3af40c29e80ca1443535b2fe32.png)
 
@@ -719,7 +718,7 @@ Alternatively, you can download [kext.mobileconfig](https://github.com/microsoft
 
 ## Step 9: Configure Network Extension
 
-As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft Defender Security Center portal. The following policy allows the network extension to perform this functionality.
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft 365 Defender portal. The following policy allows the network extension to perform this functionality.
 
 These steps are applicable of macOS 10.15 (Catalina) or newer.
 
@@ -728,14 +727,14 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
 2. Click **New**, and enter the following details for **Options**:
 
     - Tab **General**:
-        - **Name**: Microsoft Defender ATP Network Extension
+        - **Name**: Microsoft Defender Network Extension
         - **Description**: macOS 10.15 (Catalina) or newer
         - **Category**: None *(default)*
         - **Distribution Method**: Install Automatically *(default)*
         - **Level**: Computer Level *(default)*
 
     - Tab **Content Filter**:
-        - **Filter Name**: Microsoft Defender ATP Content Filter
+        - **Filter Name**: Microsoft Defender Content Filter
         - **Identifier**: `com.microsoft.wdav`
         - Leave **Service Address**, **Organization**, **User Name**, **Password**, **Certificate** blank (**Include** is *not* selected)
         - **Filter Order**: Inspector
@@ -746,6 +745,9 @@ These steps are applicable of macOS 10.15 (Catalina) or newer.
         Note that **Identifier**, **Socket Filter** and **Socket Filter Designated Requirement** exact values as specified above.
 
         ![Image of configuration setting mdatpmdav.](images/netext-create-profile.png)
+        
+ > [!NOTE]
+ > Jamf supports built-in content filter settings which can be set directly through the interface.
 
 3. Select the **Scope** tab.
 

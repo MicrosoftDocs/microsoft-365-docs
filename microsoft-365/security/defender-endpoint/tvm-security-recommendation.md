@@ -2,8 +2,6 @@
 title: Security recommendations by threat and vulnerability management
 description: Get actionable security recommendations prioritized by threat, likelihood to be breached, and value, in threat and vulnerability management.
 keywords: threat and vulnerability management, Microsoft Defender for Endpoint tvm security recommendation, cybersecurity recommendation, actionable security recommendation
-search.product: eADQiWindows 10XVcnh
-search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -25,7 +23,7 @@ ms.technology: mde
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Threat and vulnerability management](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -104,7 +102,9 @@ From the flyout, you can choose any of the following options:
 - [**Exception options**](tvm-exception.md) - Submit an exception, provide justification, and set exception duration if you can't remediate the issue yet.
 
 > [!NOTE]
-> When a software change is made on a device, it typically takes 2 hours for the data to be reflected in the security portal. However, it may sometimes take longer. Configuration changes can take anywhere from 4 to 24 hours.
+> When a software change is made on a Windows, Linux or macOS device, it typically takes 2-4 hours for the data to be reflected in the security portal. It can take up to 8 hours for changes on iOS and Android devices to be reflected. There may be situations where it takes longers.
+> 
+> Configuration changes can take anywhere from 4 to 24 hours.
 
 ### Investigate changes in device exposure or impact
 

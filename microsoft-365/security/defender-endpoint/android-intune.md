@@ -22,14 +22,13 @@ ms.technology: mde
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Learn how to deploy Defender for Endpoint on Android on Intune
-Company Portal enrolled devices. For more information about Intune device enrollment, see  [Enroll your
-device](/mem/intune/user-help/enroll-device-android-company-portal).
+Learn how to deploy Defender for Endpoint on Android on Intune Company Portal enrolled devices. For more information about Intune device enrollment, see [Enroll your device](/mem/intune/user-help/enroll-device-android-company-portal).
 
 > [!NOTE]
 > **Defender for Endpoint on Android is now available on [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx)**
@@ -40,15 +39,13 @@ device](/mem/intune/user-help/enroll-device-android-company-portal).
 
 ## Deploy on Device Administrator enrolled devices
 
-**Deploy Defender for Endpoint on Android on Intune Company Portal - Device
-Administrator enrolled devices**
+**Deploy Defender for Endpoint on Android on Intune Company Portal - Device Administrator enrolled devices**
 
 Learn how to deploy Defender for Endpoint on Android on Intune Company Portal - Device Administrator enrolled devices.
 
 ### Add as Android store app
 
-1. In [Microsoft Endpoint Manager admin
-center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
+1. In [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
 **Android Apps** \> **Add \> Android store app** and choose **Select**.
 
    :::image type="content" alt-text="Image of Microsoft Endpoint Manager Admin Center add android store application." source="images/mda-addandroidstoreapp.png" lightbox="images/mda-addandroidstoreapp.png":::
@@ -75,7 +72,7 @@ center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
 
     In a few moments, the Defender for Endpoint app would be created successfully, and a notification would show up at the top-right corner of the page.
 
-    :::image type="content" alt-text="Image of Microsoft Endpoint Manager Admin Center notification of Defender Endpoint app." source="images/86cbe56f88bb6e93e9c63303397fc24f.png" lightbox="images/86cbe56f88bb6e93e9c63303397fc24f.png":::
+    :::image type="content" alt-text="Image of Microsoft Endpoint Manager Admin Center notification of Defender for Endpoint app." source="images/86cbe56f88bb6e93e9c63303397fc24f.png" lightbox="images/86cbe56f88bb6e93e9c63303397fc24f.png":::
 
 5. In the app information page that is displayed, in the **Monitor** section, select **Device install status** to verify that the device installation has completed successfully.
 
@@ -89,7 +86,7 @@ center](https://go.microsoft.com/fwlink/?linkid=2109431) , go to **Apps** \>
 
 2. Tap the Microsoft Defender for Endpoint app icon and follow the on-screen instructions to complete onboarding the app. The details include end-user acceptance of Android permissions required by Defender for Endpoint on Android.
 
-3. Upon successful onboarding, the device will start showing up on the Devices list in Microsoft Defender Security Center.
+3. Upon successful onboarding, the device will start showing up on the Devices list in the Microsoft 365 Defender portal.
 
     :::image type="content" alt-text="Image of device in Defender for Endpoint portal." source="images/9fe378a1dce0f143005c3aa53d8c4f51.png" lightbox="images/9fe378a1dce0f143005c3aa53d8c4f51.png":::
 
@@ -109,7 +106,7 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
 
     :::image type="content" alt-text="Image of Microsoft Endpoint Manager admin center managed google play." source="images/579ff59f31f599414cedf63051628b2e.png" lightbox="images/579ff59f31f599414cedf63051628b2e.png":::
 
-2. On your managed Google Play page that loads subsequently, go to the search box and lookup **Microsoft Defender.** Your search should display the Microsoft Defender for Endpoint app in your Managed Google Play. Click on the Microsoft Defender for Endpoint app from the Apps search result.
+2. On your managed Google Play page that loads subsequently, go to the search box and enter `Microsoft Defender`. Your search should display the Microsoft Defender for Endpoint app in your Managed Google Play. Click on the Microsoft Defender for Endpoint app from the Apps search result.
 
     ![Image of Microsoft Endpoint Manager admin center Apps search.](images/0f79cb37900b57c3e2bb0effad1c19cb.png)
 
@@ -118,21 +115,18 @@ Follow the steps below to add Microsoft Defender for Endpoint app into your mana
     > [!div class="mx-imgBorder"]
     > ![A screenshot of a Managed Google Play.](images/07e6d4119f265037e3b80a20a73b856f.png)
 
-4. You'll be presented with the permissions that Defender for Endpoint
-obtains for it to work. Review them and then select **Approve**.
+4. You'll be presented with the permissions that Defender for Endpoint obtains for it to work. Review them and then select **Approve**.
 
     ![A screenshot of Defender for Endpoint preview app approval.](images/206b3d954f06cc58b3466fb7a0bd9f74.png)
 
 5. You'll be presented with the Approval settings page. The page confirms your preference to handle new app permissions that Defender for Endpoint on Android might ask. Review the choices and select your preferred option. Select **Done**.
 
-    By default, managed Google Play selects *Keep approved when app requests new
-permissions*
+    By default, managed Google Play selects **Keep approved when app requests new permissions**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of notifications tab.](images/ffecfdda1c4df14148f1526c22cc0236.png)
 
-6. After the permissions handling selection is made, select **Sync** to sync Microsoft
-Defender for Endpoint to your apps list.
+6. After the permissions handling selection is made, select **Sync** to sync Microsoft Defender for Endpoint to your apps list.
 
     > [!div class="mx-imgBorder"]
     > ![Image of sync page.](images/34e6b9a0dae125d085c84593140180ed.png)
@@ -237,7 +231,7 @@ Defender for Endpoint supports Device configuration policies for managed devices
 
 4. **Assignment**
 
-   In the **Assignments** page, select the user group to which this app config policy would be assigned to. Click **Select groups** to include and selecting the applicable group and then click **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app.
+   In the **Assignments** page, select the user group to which this app config policy would be assigned to. Choose **Select groups** to include and selecting the applicable group and then select **Next**. The group selected here is usually the same group to which you would assign Microsoft Defender for Endpoint Android app.
 
    ![Image of devices configuration profile Assignment.](images/4autosetupofvpn.png)
 
@@ -261,7 +255,7 @@ The device configuration profile is now assigned to the selected user group.
 
     ![Image of mobile device with Microsoft Defender for Endpoint app](images/MDE_new.png)
 
-4. At this stage the device is successfully onboarded onto Defender for Endpoint on Android. You can verify this on the [Microsoft Defender Security Center](https://securitycenter.microsoft.com) by navigating to the **Devices** page.
+4. At this stage the device is successfully onboarded onto Defender for Endpoint on Android. You can verify this on the [Microsoft 365 Defender portal](https://security.microsoft.com) by navigating to the **Device Inventory** page.
 
     :::image type="content" alt-text="Image of Microsoft Defender for Endpoint portal." source="images/9fe378a1dce0f143005c3aa53d8c4f51.png" lightbox="images/9fe378a1dce0f143005c3aa53d8c4f51.png":::
 

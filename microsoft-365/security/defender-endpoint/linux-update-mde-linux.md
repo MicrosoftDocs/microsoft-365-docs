@@ -18,6 +18,9 @@ ms.technology: mde
 
 # Schedule an update of the Microsoft Defender for Endpoint (Linux)
 
+**Applies to:**
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 To run an update on Microsoft Defender for Endpoint on Linux, see [Deploy updates for Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-updates).
 
 Linux (and Unix) have a tool called **crontab** (similar to Task Scheduler) to be able to run scheduled tasks.
@@ -72,7 +75,7 @@ And
 02**sat /bin/mdatp scan quick>~/mdatp_cron_job.log
 ```
 
-See [Schedule scans with Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-atp.md)
+See [Schedule scans with Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-mde.md)
 
 Press "Insert"
 
@@ -85,7 +88,7 @@ CRON_TZ=America/Los_Angeles
 > #!RHEL and variants (CentOS and Oracle Linux)
 >
 > ```bash
-> 0 6 * * sun [ $(date +%d) -le 15 ] && sudo yum update mdatp >> ~/mdatp_cron_job.log
+> 0 6 * * sun [ $(date +%d) -le 15 ] && sudo yum update mdatp -y >> ~/mdatp_cron_job.log
 > ```
 
 > #!SLES and variants

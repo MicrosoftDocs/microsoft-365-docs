@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 search.appverid: 
 - MET150
-description: "Microsoft Teams chats and channels supports Data Loss Prevention (DLP) policies."
+description: "Microsoft Teams chats and channels support Data Loss Prevention (DLP) policies."
 ---
 
 # Data loss prevention and Microsoft Teams
@@ -44,23 +44,23 @@ Support for DLP protection in Teams Chat requires E5.
 To learn more about licensing requirements, see [Microsoft 365 Tenant-Level Services Licensing Guidance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 > [!IMPORTANT]
-> DLP applies only to the actual messages in the chat or channel thread. Activity notifications -- which include a short message preview and appear based on a user's notification settings -- are **not** included in Teams DLP. Any sensitive information present in the part of the message that appears in the preview will remain visible in the notification even after the DLP policy has been applied and removed sensitive information the message itself.
+> DLP applies only to the actual messages in the chat or channel thread. Activity notifications—which include a short message preview and appear based on a user's notification settings—are **not** included in Teams DLP. Any sensitive information present in the part of the message that appears in the preview will remain visible in the notification even after the DLP policy has been applied and removed sensitive information the message itself.
 
 ## Scope of DLP protection
 
-DLP protection are applied differently to Teams entities.
+DLP protection is applied differently to Teams entities.
 
-|When policy is scoped by |these Teams Entities |will have DLP protection available|
+|When policy is scoped by |These Teams Entities |Will have DLP protection available|
 |---------|---------|---------|
-|individual user accounts     |1:1/n chats         |yes         |
-|     |general chats         |no         |
-|     |private channels         |yes         |
-|security groups/distribution lists  | 1:1/n chats         |yes         |
-|     |general chats         |no         |
-|     |private channels         |yes        |
-|Microsoft 365 group    |1:1/n chats          |no         |
-|     |general chats          |yes        |
-|     |private channels|no| 
+|Individual user accounts     |1:1/n chats         |Yes         |
+|     |General chats         |No         |
+|     |private channels         |Yes         |
+|Security groups/distribution lists  | 1:1/n chats         |Yes         |
+|     |General chats         |No         |
+|     |private channels         |Yes        |
+|Microsoft 365 group    |1:1/n chats          |No         |
+|     |General chats          |Yes        |
+|     |private channels|No| 
 
 
 ## Policy tips help educate users
@@ -120,15 +120,15 @@ To perform this task, you must be assigned a role that has permissions to edit D
     > [!div class="mx-imgBorder"]
     > ![Locations for existing policy.](../media/dlp-teams-editexistingpolicy.png)
 
-4. In the **Status** column, turn the policy on for **Teams chat and channel messages**.
+4. In the **Status** column, turn on the policy for **Teams chat and channel messages**.
 
     > [!div class="mx-imgBorder"]
     > ![DLP for Teams chats and channels.](../media/dlp-teams-addteamschatschannels.png)
 
 5. On the **Choose locations** tab, keep the default setting of all accounts, or select **Let me choose specific locations**. You can specify:
 
-    1. up to 1000 individual accounts to include or exclude
-    1. distribution lists and security groups to include or exclude. 
+    1. Up to 1000 individual accounts to include or exclude
+    1. Distribution lists and security groups to include or exclude. 
     <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**--> 
     
 6. Then choose **Next**.
@@ -157,8 +157,8 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
 5. On the **Choose locations** tab, keep the default setting of all accounts, or select **Let me choose specific locations**. You can specify:
 
-    1. up to 1000 individual accounts to include or exclude
-    1. distribution lists and security groups to include or exclude. **This is a public preview feature.**
+    1. Up to 1000 individual accounts to include or exclude
+    1. Distribution lists and security groups to include or exclude. **This is a public preview feature.**
     <!-- 1. the shared mailbox of a shared channel. **This is a public preview feature.**-->  
 
     ![DLP policy locations.](../media/dlp-teams-selectlocationsnewpolicy.png)
@@ -175,7 +175,7 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
     When you're finished reviewing or editing settings, choose **Next**.
 
-8. On the **Policy settings** tab, under **Do you want to turn on the policy or test things out first?**, choose whether to turn the policy on, [test it first](dlp-overview-plan-for-dlp.md#policy-deployment), or keep it turned off for now, and then choose **Next**.
+8. On the **Policy settings** tab, under **Do you want to turn on the policy or test things out first?**, choose whether to turn on the policy, [test it first](dlp-overview-plan-for-dlp.md#policy-deployment), or keep it turned off for now, and then choose **Next**.
 
     > [!div class="mx-imgBorder"]
     > ![Specify whether to turn the policy on.](../media/dlp-teams-policysettings-turnonnow.png)

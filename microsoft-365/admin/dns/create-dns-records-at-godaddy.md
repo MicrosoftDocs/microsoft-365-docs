@@ -2,13 +2,13 @@
 title: "Connect your DNS records at GoDaddy to Microsoft 365"
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
@@ -35,11 +35,11 @@ If GoDaddy is your DNS hosting provider, follow the steps in this article to ver
 
 You have two options for setting up DNS records for your domain:
 
-- [**Use Domain Connect**](#use-domain-connect-to-verify-and-set-up-your-domain) If you haven't set up your domain with another email service provider, use the Domain Connect steps to automatically verify and set up your new domain to use with Microsoft 365. 
+- [**Use Domain Connect**](#use-domain-connect-to-verify-and-set-up-your-domain) If you haven't set up your domain with another email service provider, use the Domain Connect steps to automatically verify and set up your new domain to use with Microsoft 365.
 
    OR
 
-- [**Use the manual steps**](#create-dns-records-with-manual-setup) Verify your domain using the manual steps below and choose when and which records to add to your domain registrar. This allows you to set up new MX (mail) records, for example, at your convenience. 
+- [**Use the manual steps**](#create-dns-records-with-manual-setup) Verify your domain using the manual steps below and choose when and which records to add to your domain registrar. This allows you to set up new MX (mail) records, for example, at your convenience.
 
 ## Use Domain Connect to verify and set up your domain
 
@@ -51,13 +51,13 @@ Follow these steps to automatically verify and set up your GoDaddy domain with M
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Select Start setup.":::
 
-1. On the How do you want to connect your domain? page, select **Continue**.   
+1. On the How do you want to connect your domain? page, select **Continue**.
 
 1. On the Add DNS records page, select **Add DNS records**.
 
 1. On the GoDaddy login page, sign in to your account, and select **Authorize**.
-    
-    This completes your domain setup for Microsoft 365. 
+
+    This completes your domain setup for Microsoft 365.
 
 ## Create DNS records with manual setup
 
@@ -73,7 +73,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 > [!NOTE]
 > This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.
 
-1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled). 
+1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled).
 
    If you're prompted to log in, use your login credentials, select your login name in the upper right, and then select **My Products**.
 
@@ -85,7 +85,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
 
    :::image type="content" source="../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png" alt-text="Select ADD.":::
 
-1. Choose **TXT** from the drop-down list. 
+1. Choose **TXT** from the drop-down list.
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="Select TXT from the Type drop-down list.":::
 
@@ -108,21 +108,21 @@ Now that you've added the record at your domain registrar's site, you'll go back
 To verify the record in Microsoft 365:
   
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**Domains**</a>.
-    
-1. On the Domains page, select the domain that you're verifying, and select **Start setup**. 
+
+1. On the Domains page, select the domain that you're verifying, and select **Start setup**.
 
    :::image type="content" source="../../media/dns-IONOS/IONOS-DomainConnects-2.png" alt-text="Select Start setup.":::
 
 1. Select **Continue**.
   
 1. On the **Verify domain** page, select **Verify**.
-    
+
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
 ### Add an MX record so email for your domain will come to Microsoft
 
-1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled). 
+1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled).
 
    If you're prompted to log in, use your login credentials, select your login name in the upper right, and then select **My Products**.
 
@@ -152,7 +152,7 @@ To verify the record in Microsoft 365:
 
 ### Add the CNAME record required for Microsoft
 
-1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled). 
+1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled).
 
    If you're prompted to log in, use your login credentials, select your login name in the upper right, and then select **My Products**.
 
@@ -187,7 +187,7 @@ To verify the record in Microsoft 365:
 > [!IMPORTANT]
 > You cannot have more than one TXT record for SPF for a domain. If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues. If you already have an SPF record for your domain, don't create a new one for Microsoft. Instead, add the required Microsoft values to the current record so that you have a  *single*  SPF record that includes both sets of values.
 
-1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled). 
+1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled).
 
    If you're prompted to log in, use your login credentials, select your login name in the upper right, and then select **My Products**.
 
@@ -221,7 +221,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 
 ### Add the two required SRV records
 
-1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled). 
+1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled).
 
    If you're prompted to log in, use your login credentials, select your login name in the upper right, and then select **My Products**.
 
@@ -259,7 +259,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 
 ### Add the two required CNAME records
   
-1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled). 
+1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled).
 
    If you're prompted to log in, use your login credentials, select your login name in the upper right, and then select **My Products**.
 
@@ -276,7 +276,7 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="Select CNAME from the Type drop-down list.":::
 
 1. In the empty boxes for the new records, type or copy and paste the values from the first row in the following table.
-    
+
     |**Type**|**Host**|**Points to**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **This value MUST end with a period (.)** <br/> |1 Hour  <br/> |
@@ -284,12 +284,12 @@ Only select this option if your organization uses ‎Skype for Business‎ for o
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-values.png" alt-text="Fill in the values from the table for the CNAME record.":::
   
-1. Select **Save**. 
+1. Select **Save**.
   
 1. Add the other CNAME record by choosing the values from the second row of the table.
-    
+
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
   
 ## Advanced option: Intune and Mobile Device Management for Microsoft 365
 
@@ -297,7 +297,7 @@ This service helps you secure and remotely manage mobile devices that connect to
 
 ### Add the two required CNAME records
 
-1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled). 
+1. To get started, go to your domains page at GoDaddy by using [this link](https://account.godaddy.com/products/?go_redirect=disabled).
 
    If you're prompted to log in, use your login credentials, select your login name in the upper right, and then select **My Products**.
 
@@ -314,7 +314,7 @@ This service helps you secure and remotely manage mobile devices that connect to
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-Type.png" alt-text="Select CNAME from the Type drop-down list.":::
 
 1. In the empty boxes for the new records, type or copy and paste the values from the first row in the following table.
-    
+
     |**Type**|**Host**|**Points to**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> **This value MUST end with a period (.)** <br/> |1 Hour  <br/> |
@@ -322,9 +322,9 @@ This service helps you secure and remotely manage mobile devices that connect to
 
    :::image type="content" source="../../media/dns-godaddy/godaddy-domains-CNAME-values.png" alt-text="Fill in the values from the table for the CNAME record.":::
   
-1. Select **Save**. 
+1. Select **Save**.
   
 1. Add the other CNAME record by choosing the values from the second row of the table.
-    
+
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).

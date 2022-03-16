@@ -93,6 +93,8 @@ The following sections identify the licensing requirements for Basic Audit and A
 
 ### Basic Audit
 
+- Microsoft 365 Business Basic subscription
+- Microsoft 365 Apps for Business subscription
 - Microsoft 365 Enterprise E3 subscription
 - Microsoft 365 Business Premium
 - Microsoft 365 Education A3 subscription
@@ -118,7 +120,6 @@ The following sections identify the licensing requirements for Basic Audit and A
 - Microsoft 365 Frontline F5 Compliance or F5 Security & Compliance add-on
 - Office 365 Enterprise E5 subscription
 - Office 365 Education A5 subscription
-- Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions)
 
 ## Set up Microsoft 365 auditing solutions
 

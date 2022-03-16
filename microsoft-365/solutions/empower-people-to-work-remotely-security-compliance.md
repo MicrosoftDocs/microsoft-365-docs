@@ -2,8 +2,8 @@
 title: "Step 3: Deploy security and compliance for hybrid workers"
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -29,14 +29,14 @@ Remote work needs these elements of security and compliance:
 
 - Controlled access to the productivity apps that hybrid workers use, such as Microsoft Teams
 - Controlled access to and protection of the data that hybrid workers create and use, such as chat conversations or shared files
-- Protection of Windows 10 devices from malware and other types of cyberattacks
+- Protection of Windows 11 or 10 devices from malware and other types of cyberattacks
 - Protection of email, files, and site with consistent labeling for levels of sensitivity and protection
 - Prevention of leaked information
 - Adherence to regional data regulations
 
 Here are the features of Microsoft 365 that provide security and compliance services for hybrid workers.
 
-![Use these Microsoft 365 services to stay secure and compliant.](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
+:::image type="content" source="../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png" alt-text="Use these Microsoft 365 services to stay secure and compliant" lightbox="../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png":::
 
 ## Security
 
@@ -47,7 +47,7 @@ Protect your applications and data with these security features of Microsoft 365
 |Microsoft Defender for Office 365|Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. <p> Microsoft Defender for Office 365 collects and analyzes signals from your apps for detection, investigation, and remediation of security risks and safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. It also provides automated tenant configuration assessment and configuration tooling for standard and strict security postures.|Microsoft 365 E3 or E5|
 |Malware protection|Microsoft Defender Antivirus and Device Guard provides device-based malware protection. <p> SharePoint Online automatically scans file uploads for known malware. <p> Exchange Online Protection (EOP) secures cloud mailboxes.|Microsoft 365 E3 or E5|
 |Microsoft Defender for Endpoint|Protect your organization’s devices from cyber threats and data breaches and detect, investigate, and respond to advanced threats.|Microsoft 365 E5|
-|Cloud App Security|Protect your cloud-based services—both Microsoft 365 and other SaaS apps—from attack.|Microsoft 365 E5 or individual Cloud App Security licenses|
+|Defender for Cloud Apps|Protect your cloud-based services—both Microsoft 365 and other SaaS apps—from attack.|Microsoft 365 E5 or individual Defender for Cloud Apps licenses|
 |Azure AD Identity Protection|Automate detection and remediation of identity-based risks. <p>Create risk-based Conditional Access policies to require multi-factor authentication (MFA) for risky sign-ins.|Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses|
 ||||
 
@@ -82,10 +82,10 @@ For your hybrid workers, you have implemented:
 
 - Security
   - Controlled access to apps and data that hybrid workers use to communicate and collaborate
-  - Malware protection for cloud service data, email, and Windows 10 devices
+  - Malware protection for cloud service data, email, and Windows 11 or 10 devices
 - Compliance
   - Consistent labeling for levels of sensitivity and protection
-  - Policies to prevention information leakage
+  - Policies to prevent information leakage
   - Adherence to regional data regulations
 
 ## Next step
