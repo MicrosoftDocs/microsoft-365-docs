@@ -26,7 +26,7 @@ If you want to allow your users to collaborate with people outside your organiza
 When you enable shared channels with another organization:
 
 - Team owners in your organization will be able to invite people from other organizations to participate in shared channels.
-- Your organization's LOB apps will be available in shared channels and external participants will be able to access them.
+- Your organization's custom (line of business) apps will be available in shared channels and external participants will be able to access them.
 - Your organization's apps list will be available in shared channels and external participants will be able to access them.
 
 > [!NOTE]
