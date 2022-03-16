@@ -68,7 +68,7 @@ On the **All placeholders** panel:
 
 1. In the **Name** field, enter a relevant name for the placeholder.
 
-   ![Screenshot of the template viewer showing the All placeholders panel for manual input.](../media/content-understanding/content-assembly-create-template-5.png)
+   ![Screenshot of the template viewer showing the All placeholders panel for manual input.](../media/content-understanding/content-assembly-create-template-5a.png)
 
 2. In the **How authors fill in this placeholder** section, select **Enter text or select a date**.
 
