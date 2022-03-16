@@ -112,7 +112,7 @@ Next, configure the supervised mode for Defender for Endpoint app through an App
 
 1. On the **Review + create** page, when you're done, choose **Create**. The new profile is displayed in the list of configuration profiles.
 
-1. Next, for enhanced Anti-phishing capabilities, you can deploy a custom profile on the supervised iOS devices. Follow the steps below:
+1. Next you must deploy a custom profile on supervised iOS devices. This is for enhanced Anti-phishing capabilities. Follow the steps below:
 
     - Download the config profile from [https://aka.ms/mdeiosprofilesupervised](https://aka.ms/mdeiosprofilesupervised)
     - Navigate to **Devices** -> **iOS/iPadOS** -> **Configuration profiles** -> **Create Profile**
