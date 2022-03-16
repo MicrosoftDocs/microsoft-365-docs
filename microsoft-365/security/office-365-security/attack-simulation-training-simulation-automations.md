@@ -6,7 +6,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
@@ -243,7 +243,7 @@ On the **Landing page** page, you configure the web page that user are taken to 
     You need to configure the following additional settings on the **Landing page** page:
 
     - **Select landing page layout**: Select one of the 5 available landing page templates.
-    - **Add logo**: Click **Browse** to find and select a .png, .jpeg, or .gif file to add to all payloads that are selected by Microsoft. To remove the logo, click **Remove**.
+    - **Add logo**: Click **Browse** to find and select a .png, .jpeg, or .gif file to add to all payloads that are selected by Microsoft. The logo size should be a maximum of 210 x 70 to avoid distortion. To remove the logo, click **Remove**.
     - **Payload indicators**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.
 
       Select **Add payload indicators to email** to help users learn how to identify phishing messages.
