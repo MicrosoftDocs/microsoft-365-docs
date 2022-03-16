@@ -39,9 +39,9 @@ To see how the guided setup works, watch the following video: <br/><br/>
 
 After you have finished the guided setup, there are additional steps to complete to help ensure that your security and compliance capabilities are properly set up and applied. These steps include:
 
+- [Turning on security defaults](m365bp-conditional-access.md)
+- [Protecting against phishing and other attacks](m365-campaigns-phishing-and-attacks.md)
 - [Securing Windows devices](m365bp-secure-windows-devices.md)
-- [Deploying Microsoft 365 apps](../admin/setup/install-applications.md)
-- [Setting up and configuring your new Defender for Business capabilities](../security/defender-business/mdb-setup-configuration.md)
 
 [Learn more about the differences between the guided setup process and the Setup page](../admin/setup/o365-setup-wizard-and-setup-page.md).
 
