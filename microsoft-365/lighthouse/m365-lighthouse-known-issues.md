@@ -69,7 +69,7 @@ This article lists the known issues for Microsoft 365 Lighthouse by feature area
 ## Granular Delegated Admin Permissions (GDAP)
 
 > [!NOTE]
-> GDAP is currently in [Technical Preview](/partner-center/announcements/2022-february#6) (Public Preview) to allow partners to assign granular permissions before GDAP is generally available.
+> GDAP is currently in [technical preview](/partner-center/announcements/2022-february#6) (public preview) to allow partners to assign granular permissions before GDAP is generally available.
 
 | Issue | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
