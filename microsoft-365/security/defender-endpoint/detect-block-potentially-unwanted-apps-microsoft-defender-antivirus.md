@@ -70,7 +70,7 @@ The potentially unwanted application (PUA) protection feature in Microsoft Defen
 > [!NOTE]
 > This feature is available in Windows 10, Windows 11, Windows Server 2019, Windows Server 2022, and Windows Server 2016.
 
-Microsoft Defender Antivirus blocks detected PUA files and any attempts to download, move, run, or install them. Blocked PUA files are then moved to quarantine. When a PUA file is detected on an endpoint, Microsoft Defender Antivirus sends a notification to the user ([unless notifications have been disabled](configure-notifications-microsoft-defender-antivirus.md)) in the same format as other threat detections. The notification is prefaced with `PUA:` to indicate its content.
+Microsoft Defender Antivirus blocks detected PUA files and any attempts to download, move, run, or install them. Blocked PUA files are then moved to quarantine. When a PUA file is detected on an endpoint, Microsoft Defender Antivirus sends a notification to the user ([unless notifications have been disabled](configure-notifications-microsoft-defender-antivirus.md) in the same format as other threat detections. The notification is prefaced with `PUA:` to indicate its content.
 
 The notification appears in the usual [quarantine list within the Windows Security app](microsoft-defender-security-center-antivirus.md).
 
@@ -82,6 +82,9 @@ You can also use PUA protection in audit mode to detect potentially unwanted app
 
 > [!TIP]
 > Visit the Microsoft Defender for Endpoint demo website at [demo.wd.microsoft.com](https://demo.wd.microsoft.com/Page/UrlRep) to confirm that the feature is working, and see it in action.
+
+> [!NOTE]
+> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
 
 PUA protection in audit mode is useful if your company is conducting an internal software security compliance check and you'd like to avoid any false positives.
 

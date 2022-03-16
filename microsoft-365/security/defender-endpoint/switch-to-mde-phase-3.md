@@ -70,7 +70,7 @@ Deployment methods vary, depending on operating system and preferred methods. Th
 |Windows 10 or later<br/><br/>Windows Server 2019 or later<br/><br/>Windows Server, version 1803 or later<br/><br/>Windows Server 2012 R2 and 2016<sup>[[1](#fn1)]<sup>  |   [Local script (up to 10 devices)](configure-endpoints-script.md)<br><br/>   [Group Policy](configure-endpoints-gp.md)<br/><br/>[Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)<br/><br/>[Microsoft Endpoint Manager/ Mobile Device Management (Intune)](configure-endpoints-mdm.md)<br>    [VDI scripts](configure-endpoints-vdi.md) <br><br> **NOTE**: A local script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, Microsoft Endpoint Configuration Manager, or Intune. |
 |Windows Server 2008 R2 SP1 | [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma)  or [Microsoft Defender for Cloud](/azure/security-center/security-center-wdatp) <br><br> **NOTE**: Microsoft Monitoring Agent is now Azure Log Analytics agent. To learn more, see [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).  |
 |Windows 8.1 Enterprise<br/><br/>Windows 8.1 Pro<br/><br/>Windows 7 SP1 Pro<br/><br/>Windows 7 SP1| [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md) <br><br> **NOTE**: Microsoft Monitoring Agent is now Azure Log Analytics agent. To learn more, see [Log Analytics agent overview](/azure/azure-monitor/platform/log-analytics-agent).  
-| macOS (see [System requirements](microsoft-defender-endpoint-mac.md)) | [Local script](mac-install-manually.md)<br/><br/>[Microsoft Endpoint Manager](mac-install-with-intune.md)<br/><br/>[JAMF Pro](mac-install-with-jamf.md)<br/><br/>[Mobile Device Management](mac-install-with-other-mdm.md)   |
+| macOS (see [System requirements](microsoft-defender-endpoint-mac.md) | [Local script](mac-install-manually.md)<br/><br/>[Microsoft Endpoint Manager](mac-install-with-intune.md)<br/><br/>[JAMF Pro](mac-install-with-jamf.md)<br/><br/>[Mobile Device Management](mac-install-with-other-mdm.md)   |
 | Linux (see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements)) |  [Local script](linux-install-manually.md) <br><br/> [Puppet](linux-install-with-puppet.md) <br><br/> [Ansible](linux-install-with-ansible.md)|  
 | iOS | [Microsoft Endpoint Manager](ios-install.md)     |
 |Android  | [Microsoft Endpoint Manager](android-intune.md)  | 
@@ -88,9 +88,11 @@ To verify that your onboarded devices are properly connected to Defender for End
 |Operating system|Guidance|
 |---|---|
 |Windows 10 or later<br/><br/>Windows Server 2022<br/><br/>Windows Server 2019<br/><br/>Windows Server, version 1803, or later<br/><br/>Windows Server 2016<br/><br/>Windows Server 2012 R2|See [Run a detection test](run-detection-test.md).<br/><br/>Visit the Defender for Endpoint demo scenarios site (<https://demo.wd.microsoft.com>) and try one or more of the scenarios. For example, try the **Cloud-delivered protection** demo scenario.|
-|macOS (see [System requirements](microsoft-defender-endpoint-mac.md))|Download and use the DIY app at <https://aka.ms/mdatpmacosdiy>. <br/><br/> For more information, see [Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).|
+|macOS (see [System requirements](microsoft-defender-endpoint-mac.md)|Download and use the DIY app at <https://aka.ms/mdatpmacosdiy>. <br/><br/> For more information, see [Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).|
 |Linux (see [System requirements](microsoft-defender-endpoint-linux.md#system-requirements))|1. Run the following command, and look for a result of **1**: `mdatp health --field real_time_protection_enabled`.<br/><br/>2. Open a Terminal window, and run the following command: `curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`.<br/><br/>3. Run the following command to list any detected threats: `mdatp threat list`.<br/><br/>For more information, see [Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).|
 
+> [!NOTE]
+> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
 
 ## Confirm that Microsoft Defender Antivirus is in passive mode on your endpoints
 
@@ -161,6 +163,9 @@ Now that you have onboarded to Defender for Endpoint, and you have uninstalled y
 - Cloud-delivered protection
 - Potentially Unwanted Applications (PUA)
 - Network Protection (NP)
+
+> [!NOTE]
+> The Defender for Endpoint demo site at demo.wd.microsoft.com is deprecated and will be removed in the future.
 
 ## Next steps
 

@@ -1,13 +1,11 @@
 ---
 title: "Set up Microsoft 365 Business Premium"
-f1.keywords:
-- NOCSH
 ms.author: kwekua
 author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
-f1_keywords:
+f1.keywords:
 - 'O365E_M365SetupBanner'
 - 'BCS365_M365SetupBanner'
 ms.service: o365-administration
@@ -51,7 +49,7 @@ Watch this video for an overview of Microsoft 365 Business Premium setup.<br><br
 
 ## Add your domain, users, and set up policies
 
-When you purchase Microsoft 365 Business Premium, you have the option of using a domain you own, or buying one during the [sign-up](../../business-video/sign-up.md).
+When you purchase Microsoft 365 Business Premium, you have the option of using a domain you own, or buying one during the [sign-up](../admin-overview/sign-up-for-office-365.md).
 
 - If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).
 

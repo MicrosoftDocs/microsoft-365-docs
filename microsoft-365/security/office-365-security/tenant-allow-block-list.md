@@ -13,7 +13,7 @@ search.appverid:
   - MET150
 ms.collection: 
   - M365-security-compliance
-ms.custom: admindeeplinkDEFENDER
+ms.custom:
 description: Admins can learn how to manage allows and blocks in the Tenant Allow/Block List in the Security portal.
 ms.technology: mdo
 ms.prod: m365-security
@@ -50,7 +50,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com/</a>. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 - You specify files by using the SHA256 hash value of the file. To find the SHA256 hash value of a file in Windows, run the following command in a Command Prompt:
 
@@ -94,7 +94,7 @@ This article describes how to configure entries in the Tenant Allow/Block List i
 
 ### Use the Microsoft 365 Defender portal
 
-In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 To add all blocks, see [Add blocks in the Tenant Allow/Block List](manage-tenant-blocks.md).
 
@@ -108,25 +108,28 @@ To manage all allows and blocks, see [Add blocks in the Tenant Allow/Block List]
 
 ## View entries in the Tenant Allow/Block List
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Policies & rules** \> **Threat Policies** \> **Rules** section \> **Tenant Allow/Block Lists**.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Threat Policies** \> **Tenant Allow/Block Lists** in the **Rules** section. To go directly to the **Tenant Allow/Block Lists** page, use <https://security.microsoft.com/tenantAllowBlockList>.
 
 2. Select the tab you want. The columns that are available depend on the tab you selected:
 
    - **Senders**:
      - **Value**: The sender domain or email address.
      - **Action**: The value **Allow** or **Block**.
+     - **Modified by**
      - **Last updated**
      - **Remove on**
      - **Notes**
    - **URLs**:
      - **Value**: The URL.
      - **Action**: The value **Allow** or **Block**.
+     - **Modified by**
      - **Last updated**
      - **Remove on**
      - **Notes**
    - **Files**
      - **Value**: The file hash.
      - **Action**: The value **Allow** or **Block**.
+     - **Modified by**
      - **Last updated**
      - **Remove on**
      - **Notes**
@@ -224,7 +227,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
 
 ## URL syntax for the Tenant Allow/Block List
 
-- IP4v and IPv6 addresses are allowed, but TCP/UDP ports are not.
+- IPv4 and IPv6 addresses are allowed, but TCP/UDP ports are not.
 
 - Filename extensions are not allowed (for example, test.pdf).
 
@@ -263,7 +266,7 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListSpoo
 
 - URL entries that contain protocols (for example, `http://`, `https://`, or `ftp://`) will fail, because URL entries apply to all protocols.
 
-- A username or password aren't supported or required.
+- A username or password isn't supported or required.
 
 - Quotes (' or ") are invalid characters.
 

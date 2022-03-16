@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 ms.prod: m365-security
 ms.date: 01/29/2021
 ms.localizationpriority: medium
@@ -21,7 +21,6 @@ ms.collection:
 ms.topic: how-to
 ms.custom: 
 - autoir
-- admindeeplinkDEFENDER
 ms.technology: mdo
 ---
 
@@ -78,11 +77,10 @@ With Threat Explorer, your security operations team can find an email affected b
 
 In the Action center, you can see remediation actions that were taken and potentially undo the action.
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
-2. In the navigation pane, select **Action center**.
-3. Select the **History** tab to view the list of completed actions.
-4. Select an item. Its flyout pane opens.
-5. In the flyout pane, select **Undo**. (Only actions that can be undone will have an **Undo** button.)
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the Action center by selecting **Action center**. To go directly to the Action center, use <https://security.microsoft.com/action-center/>.
+2. In the Action center, select the **History** tab to view the list of completed actions.
+3. Select an item. Its flyout pane opens.
+4. In the flyout pane, select **Undo**. (Only actions that can be undone will have an **Undo** button.)
 
 ## See also
 

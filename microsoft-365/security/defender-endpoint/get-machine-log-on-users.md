@@ -52,7 +52,7 @@ Delegated (work or school account) | User.Read.All | 'Read user profiles'
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'View Data'. For more information, see [Create and manage roles](user-roles.md)).
+> - The user needs to have at least the following role permission: 'View Data'. For more information, see [Create and manage roles](user-roles.md).
 > - Response will include users only if the device is visible to the user, based on device group settings. For more information, see [Create and manage device groups](machine-groups.md).
 
 ## HTTP request
@@ -99,11 +99,9 @@ Content-type: application/json
             "id": "contoso\\user1",
             "accountName": "user1",
             "accountDomain": "contoso",
-            "accountSid": "S-1-5-21-72051607-1745760036-109187956-93922",
             "firstSeen": "2019-12-18T08:02:54Z",
             "lastSeen": "2020-01-06T08:01:48Z",
             "logonTypes": "Interactive",
-            "logOnMachinesCount": 8,
             "isDomainAdmin": true,
             "isOnlyNetworkUser": false
         },

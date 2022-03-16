@@ -2,8 +2,8 @@
 title: "Microsoft 365 admin center - Overview"
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -125,7 +125,7 @@ Microsoft 365 is a complete, intelligent solution that includes Office 365, Wind
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Enterprise E5
 
-For more information, see [Try or buy a Microsoft 365 subscription](../commerce/try-or-buy-microsoft-365.md).
+For more information, see [Try or buy a Microsoft 365 for business subscription](../../commerce/try-or-buy-microsoft-365.md). 
 
 ### I found a bug or I want to request a feature enhancement. How do I let Microsoft know?
 
@@ -187,6 +187,6 @@ The Microsoft 365 admin center is fully localized in 40 languages.
 
 ## Related content
 
-[What is a Microsoft 365 admin?](what-is-admin.md) (video)\
-[Add an admin](add-admin.md) (video)\
-[Customize the Microsoft 365 theme for your organization](../admin/setup/customize-your-organization-theme.md) (article)
+[What is a Microsoft 365 admin?](../add-users/about-admin-roles.md) (video)\
+[Assign admin roles](../add-users/assign-admin-roles.md) (video)\
+[Customize the Microsoft 365 theme for your organization](../setup/customize-your-organization-theme.md) (article)

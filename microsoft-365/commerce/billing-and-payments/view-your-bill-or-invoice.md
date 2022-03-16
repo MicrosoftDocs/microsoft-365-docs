@@ -2,8 +2,8 @@
 title: "View your bill or invoice"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -15,16 +15,16 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- commerce_billing
 - TopSMBIssues
 - okr_smb
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
-- commerce_billing
 - AdminTemplateSet
 - adminvideo
 description: "Find your invoice or billing statement in the Microsoft 365 admin center. You can also save and print a copy of your bill."
-ms.date: 07/31/2020
+ms.date: 01/25/2022
 ---
 
 # View your bill or invoice
@@ -65,6 +65,8 @@ You must be a Global or Billing admin to do the steps described in this article.
 3. On the summary page, you can see the items, quantity, price, discount, and total for all items in the invoice.
 4. To print or save a PDF copy of the invoice, select **Download PDF**.
 
+If you want to receive a copy of your billing statement in email, see [Manage billing notifications and invoice attachments](manage-billing-notifications.md).
+
 ::: moniker range="o365-21vianet"
 
 ## Request a Fapiao
@@ -81,26 +83,21 @@ You can submit your Fapiao request to our [Fapiao management system](https://go.
 ::: moniker-end
 
 > [!NOTE]
-> 
+>
 > Microsoft 365 services do not provide payment receipts.
 > For credit card payments, please use the invoice and credit card billing statement to match your payment.
 
+## Run the Unknown Charge Diagnostic
 
-## Receive a copy of your billing statement in email
+As a Microsoft 365 Global admin, you can use a diagnostic tool that runs within the Microsoft 365 admin center to research unexpected charges from Microsoft that appear on your bank or credit card statement.
 
-You can choose to receive a copy of your billing statement as an email attachment. If you do, be aware that:
+> [!NOTE]
+> The Unknown Charge Diagnostic is only available for customers who bought their products and services from Microsoft.com, including Microsoft 365 Enterprise, Education, and Non-profit.
 
-- An email is sent to both the primary and alternate email address for every person listed as a notification recipient.
-- You receive two separate emails: one that lets you know that your bill is ready, with instructions to sign in to the admin center to view it, and a second email that contains the billing statement as an attachment.
+Select the **Run Tests** link below to open the diagnostic tool in the Microsoft 365 admin center.
 
-### To receive your billing statement in email
-
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
-    - If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing notifications</a> page.
-    - If you're using Office 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Billing notifications</a> page.
-1. Under **Receive billing statement as email attachment?** switch the toggle to **On**.
-
-    You can stop receiving the billing statement emails at any time by switching the toggle to **Off**.
+>[!div class="nextstepaction"]
+>[Run Tests: Unknown Charge](https://aka.ms/PillarUnknownCharge)
 
 ## Next steps
 

@@ -3,19 +3,22 @@ title: "Step 4. Require healthy and compliant devices with Intune"
 ms.author: bcarter
 author: brendacarter
 f1.keywords:
-- NOCSH
+- Conditional access policy
+- Microsoft Intune
+- Intune device management 
 manager: dougeby
 audience: ITPro
+description: Create a conditional access policy in Azure AD to require compliant devices, keeping corporate data secure when users work from any device in any location.
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.localizationpriority: high
 ms.collection:
+- Conditional access policy
+- Microsoft Intune
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
 ms.custom: 
-keywords: 
-description: 
 ---
 
 # Step 4. Require healthy and compliant devices with Intune

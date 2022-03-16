@@ -51,6 +51,8 @@ Safe Links protection is available in the following locations:
   
   > [!NOTE]
   > Safe Links does not work on mail-enabled public folders.
+  >
+  > Safe Links supports only HTTP(S) and FTP formats.
 
 - **Microsoft Teams**: Safe Links protection for links in Teams conversations, group chats, or from channels is also controlled by Safe Links policies.
 
@@ -203,6 +205,7 @@ Safe Links protection for Office 365 apps has the following client requirements:
   - Office apps on iOS or Android devices.
   - Visio on Windows.
   - OneNote in a web browser.
+  - Outlook for Windows when opening saved EML or MSG files.
 
 - Office 365 apps are configured to use modern authentication. For more information, see [How modern authentication works for Office 2013, Office 2016, and Office 2019 client apps](../../enterprise/modern-auth-for-office-2013-and-2016.md).
 
@@ -216,7 +219,7 @@ The following Safe Links settings are available for Office 365 apps:
 
 - **Do not track when users click Safe Links**: Enables or disables storing Safe Links click data for URLs clicked in the desktop versions Word, Excel, PowerPoint, and Visio. The recommended value is **Off**, which means user clicks are tracked.
 
-- **Do not let users click through safe links to original URL**: Allows or blocks users from clicking through the [warning page](#warning-pages-from-safe-links) to the original URL in in the desktop versions Word, Excel, PowerPoint, and Visio. The default and recommended value is **On**.
+- **Do not let users click through safe links to original URL**: Allows or blocks users from clicking through the [warning page](#warning-pages-from-safe-links) to the original URL in the desktop versions Word, Excel, PowerPoint, and Visio. The default and recommended value is **On**.
 
 To configure the Safe Links settings for Office 365 apps, see [Configure Safe Links protection for Office 365 apps](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-microsoft-365-defender-portal).
 
@@ -265,7 +268,7 @@ You configure the list of URLs in the global settings for Safe Links. For instru
   - The maximum length of an entry is 128 characters.
   - All of the entries can't exceed 10,000 characters.
 - Don't include a forward slash (`/`) at the end of the URL. For example, use `https://www.contoso.com`, not `https://www.contoso.com/`.
-- A domain only-URL (for example `contoso.com` or `tailspintoys.com`) will block any URL that contains the domain.
+- A domain-only-URL (for example `contoso.com` or `tailspintoys.com`) will block any URL that contains the domain.
 - You can block a subdomain without blocking the full domain. For example, `toys.contoso.com*` blocks any URL that contains the subdomain, but it doesn't block URLs that contain the full domain `contoso.com`.
 - You can include up to three wildcards (`*`) per URL entry.
 
@@ -296,16 +299,20 @@ To add entries to the list in new or existing Safe Links policies, see [Create S
 
 **Notes**:
 
-- The following clients don't recognize the **Do not rewrite the following URLs** lists in Safe Links policies. Users included in the polices can be blocked from accessing the URLs based on the results of Safe Links scanning in these clients:
+- The following clients don't recognize the **Do not rewrite the following URLs** lists in Safe Links policies. Users included in the policies can be blocked from accessing the URLs based on the results of Safe Links scanning in these clients:
   - Microsoft Teams
   - Office web apps
 
-  For a truly universal list of URLs that are allowed everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+  For a truly universal list of URLs that are allowed everywhere, see [Manage the Tenant Allow/Block List](tenant-allow-block-list.md). However, note that URLs added there will not be excluded from Safe Links rewriting, as that must be done in a Safe Links policy.
 
 - Consider adding commonly used internal URLs to the list to improve the user experience. For example, if you have on-premises services, such as Skype for Business or SharePoint, you can add those URLs to exclude them from scanning.
 - If you already have **Do not rewrite the following URLs** entries in your Safe Links policies, be sure to review the lists and add wildcards as required. For example, your list has an entry like `https://contoso.com/a` and you later decide to include subpaths like `https://contoso.com/a/b`. Instead of adding a new entry, add a wildcard to the existing entry so it becomes `https://contoso.com/a/*`.
 - You can include up to three wildcards (`*`) per URL entry. Wildcards explicitly include prefixes or subdomains. For example, the entry `contoso.com` is not the same as `*.contoso.com/*`, because `*.contoso.com/*` allows people to visit subdomains and paths in the specified domain.
 - If a URL uses automatic redirection for HTTP to HTTPS (for example, 302 redirection for `http://www.contoso.com` to `https://www.contoso.com`), and you try to enter both HTTP and HTTPS entries for the same URL to the list, you might notice that the second URL entry replaces the first URL entry. This behavior does not occur if the HTTP and HTTPS versions of the URL are completely separate.
+- Do not specify http:// or https:// (that is, contoso.com) in order to exclude both HTTP and HTTPS versions.
+- `*.contoso.com` does **not** cover contoso.com, so you would need to exclude both to cover both the specified domain and any child domains.
+- `contoso.com/*` covers **only** contoso.com, so there's no need to exclude both `contoso.com` and `contoso.com/*`; just `contoso.com/*` would suffice.
+- To exclude all iterations of a domain, two exclusion entries are needed; `contoso.com/*` and `*.contoso.com/*`. These combine to exclude both HTTP and HTTPS, the main domain contoso.com and any child domains, as well as any or not ending part (for example, both contoso.com and contoso.com/vdir1 are covered).
 
 ### Entry syntax for the "Do not rewrite the following URLs" list
 

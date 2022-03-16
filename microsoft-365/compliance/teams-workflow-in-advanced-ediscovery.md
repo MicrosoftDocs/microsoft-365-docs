@@ -37,9 +37,9 @@ A prerequisite to managing Teams content in Advanced eDiscovery is to understand
 ||Location of chat messages and posts  |Location of files and attachments |
 |:---------|:---------|:---------|
 |Teams 1:1 chats     |Messages in 1:1 chats are stored in the Exchange Online mailbox of all chat participants. |Files shared in a 1:1 chat are stored in the OneDrive for Business account of the person who shared the file. |
-|Teams group chats     |Messages in group chats are stored in the Exchange Online mailbox of all chat participants. |Files shared in group chats chat are stored in the OneDrive for Business account of the person who shared the file. |
+|Teams group chats     |Messages in group chats are stored in the Exchange Online mailbox of all chat participants. |Files shared in group chats are stored in the OneDrive for Business account of the person who shared the file. |
 |Teams channels     |All channel messages and posts are stored in the Exchange Online mailbox associated with the team.|Files shared in a channel are stored in the SharePoint Online site associated with the team.           |
-|Private Teams channels     |Messages sent in a private channel are stored in the Exchange Online mailboxes of all members of the private channel.|Files shared in a private Channel are stored in a dedicated SharePoint Online site associated with the private channel.|
+|Private Teams channels     |Messages sent in a private channel are stored in the Exchange Online mailboxes of all members of the private channel.|Files shared in a private channel are stored in a dedicated SharePoint Online site associated with the private channel.|
 ||||
 
 ## Create a case for Teams content
@@ -291,3 +291,11 @@ Here are some tips and best practices for viewing Teams content in a review set.
 - Useful columns that to help you review Teams content include **Custodian**, **Recipients**, and **File type** or **Message kind**.
 
 - Use [filters](review-set-search.md) for Teams-related properties to quickly display Teams content. There are filters for most of the metadata properties described in the previous section.
+
+## Reference guide
+
+Here's a quick reference guide for using Advanced eDiscovery for Microsoft Teams. This guide summarizes the keys points for using Advanced eDiscovery to preserve, collect, review, and export content from Microsoft Teams.
+
+![Thumbnail for reference guide for using Advanced eDiscovery for Microsoft Teams.](../media/AeDTeamsReferenceGuide-thumbnail.png)
+
+[Download as a PDF file](https://download.microsoft.com/download/9/e/4/9e4eec6f-c476-452f-b414-4bd4b5c39dca/AeDTeamsReferenceGuide.pdf)

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 06/22/2021
+ms.date:
 audience: Admin
 ms.topic: conceptual
 
@@ -46,7 +46,7 @@ Spam and malware signatures are updated in the service real-time on a daily basi
 
 The ZAP action is seamless for the user; they aren't notified if a message is detected and moved.
 
-[Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules (also known as transport rules), Inbox rules, or additional filters take precedence over ZAP. Similar to what happens in mail flow, this means that even if the service determines the delivered message needs ZAP, the message is not acted on because of the the safe senders configuration. This is another reason to be careful about configuring messages to bypass filtering.
+[Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules (also known as transport rules), Inbox rules, or additional filters take precedence over ZAP. Similar to what happens in mail flow, this means that even if the service determines the delivered message needs ZAP, the message is not acted on because of the safe senders configuration. This is another reason to be careful about configuring messages to bypass filtering.
 
 ### Zero-hour auto purge (ZAP) for malware
 
@@ -94,7 +94,12 @@ ZAP will not quarantine any message that's in the process of [Dynamic Delivery](
 
 ## How to see if ZAP moved your message
 
-To determine if ZAP moved your message, you can use either the [Threat Protection Status report](view-email-security-reports.md#threat-protection-status-report) or [Threat Explorer (and real-time detections)](threat-explorer.md). Note that as a system action, ZAP is not logged in the Exchange mailbox audit logs.
+To determine if ZAP moved your message, you have the following options:
+
+- **Number of messages**: Use the [Mailflow view in the Mailflow status report](view-email-security-reports.md#mailflow-view-for-the-mailflow-status-report) to see the number of ZAP-affected messages for the specified date range.
+- **Message details**: Use [Threat Explorer (and real-time detections)](threat-explorer.md) to filter **All email** events by the value **ZAP** for the **Additional action** column.
+
+**Note**: ZAP is not logged in the Exchange mailbox audit logs as as system action.
 
 ## Zero-hour auto purge (ZAP) FAQ
 

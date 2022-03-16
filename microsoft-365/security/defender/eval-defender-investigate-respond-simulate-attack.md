@@ -1,6 +1,6 @@
 ---
 title: Run an attack simulation in a Microsoft 365 Defender pilot environment
-description: Run attack simulations for Microsoft 365 Defender to see how how alerts and incidents are presented, insights are gained, and threats are quickly remediated.
+description: Run attack simulations for Microsoft 365 Defender to see how alerts and incidents are presented, insights are gained, and threats are quickly remediated.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 ms.date: 07/09/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -57,15 +57,15 @@ Defender for Office 365 with Microsoft 365 E5 or Microsoft Defender for Office 3
 
 1. Create a simulation
 
-   For step by step instructions on how to create and send a new simulation, see [Simulate a phishing attack](/microsoft-365/security/office-365-security/attack-simulation-training).
+   For step by step instructions on how to create and launch a new simulation, see [Simulate a phishing attack](/microsoft-365/security/office-365-security/attack-simulation-training).
 
 2. Create a payload
 
-   For step by step instructions on how to create a payload for use within a simulation, see [Create a custom payload for Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-payloads).
+   For step by step instructions on how to create a payload for use within a simulation, see [Create a custom payload for attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-payloads).
 
 3. Gaining insights
 
-   For step by step instructions on how to gain insights with reporting, see [Gain insights through Attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-insights).
+   For step by step instructions on how to gain insights with reporting, see [Gain insights through attack simulation training](/microsoft-365/security/office-365-security/attack-simulation-training-insights).
 
    > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWMhvB]
 
@@ -78,15 +78,15 @@ Here are the Defender for Endpoint simulations from Microsoft:
 - Document drops backdoor
 - Automated investigation (backdoor)
 
-There are additional simulations from Attack IQ and SafeBreach. There are also a set of tutorials.
+There are additional simulations from third-party sources. There are also a set of tutorials.
 
 For each simulation or tutorial:
 
-1. Download and read the corresponding walk through document provided with your selected simulation or scenario.
+1. Download and read the corresponding walk-through document provided.
 
 2. Download the simulation file. You can choose to download the file or script on the test device but it's not mandatory.
 
-3. Run the simulation file or script on the test device as instructed in the walk through document.
+3. Run the simulation file or script on the test device as instructed in the walk-through document.
 
  For more information, see [Experience Microsoft Defender for Endpoint through simulated attack](/microsoft-365/security/defender-endpoint/attack-simulations).
 
@@ -240,7 +240,7 @@ We employ large-scale learning algorithms to establish the normal behavior of co
 For this scenario, the process <i>notepad.exe</i> is exhibiting abnormal behavior, involving communication with an external location. This outcome is independent of the specific method used to introduce and execute the malicious code.
 
 > [!NOTE]
-> Because this alert is based on machine-learning models that require additional backend processing, it might take some time before you see this alert in the portal.
+> Because this alert is based on machine learning models that require additional backend processing, it might take some time before you see this alert in the portal.
 
 Notice that the alert details include the external IP address—an indicator that you can use as a pivot to expand investigation.
 
@@ -317,11 +317,11 @@ After the investigation is complete and confirmed to be remediated, you resolve 
 
 From the **Incident** page, select **Manage incident**. Set the status to **Resolve incident** and select **True alert** for the classification and **Security testing** for the determination.
 
-![Example of the incidents page with the open Manage incident panel where you can click the switch to resolve incident.](../../media/mtp/fig16.png)
+![Example of the incidents page with the open Manage incident panel where you can resolve the incident.](../../media/mtp/fig16.png)
 
 When the incident is resolved, it resolves all of the associated alerts in the Microsoft 365 Defender portal and the related portals.
 
-This wraps up the attack simulation for incident analysis, automated investigation, and incident resolution.
+This wraps up attack simulations for incident analysis, automated investigation, and incident resolution.
 
 ## Next step
 

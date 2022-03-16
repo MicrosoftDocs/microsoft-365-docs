@@ -3,7 +3,7 @@ title: "Empower your small business with remote work"
 f1.keywords:
 - NOCSH
 ms.author: twerner
-author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -66,7 +66,7 @@ Just a few steps can help you keep your business secure, even with remote emplo
 
 Use multi-factor authentication to protect your data and devices.
 
-For more information, see [Turn on multi-factor authentication](../../business-video/turn-on-mfa.md).
+For more information, see [Turn on multi-factor authentication](../security-and-compliance/set-up-multi-factor-authentication.md).
 
 ### Secure your devices
 

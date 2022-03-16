@@ -2,8 +2,8 @@
 title: "Step 3: Deploy security and compliance for hybrid workers"
 f1.keywords:
 - NOCSH
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -29,14 +29,14 @@ Remote work needs these elements of security and compliance:
 
 - Controlled access to the productivity apps that hybrid workers use, such as Microsoft Teams
 - Controlled access to and protection of the data that hybrid workers create and use, such as chat conversations or shared files
-- Protection of Windows 10 devices from malware and other types of cyberattacks
+- Protection of Windows 11 or 10 devices from malware and other types of cyberattacks
 - Protection of email, files, and site with consistent labeling for levels of sensitivity and protection
 - Prevention of leaked information
 - Adherence to regional data regulations
 
 Here are the features of Microsoft 365 that provide security and compliance services for hybrid workers.
 
-![Use these Microsoft 365 services to stay secure and compliant.](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
+:::image type="content" source="../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png" alt-text="Use these Microsoft 365 services to stay secure and compliant" lightbox="../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png":::
 
 ## Security
 
@@ -82,10 +82,10 @@ For your hybrid workers, you have implemented:
 
 - Security
   - Controlled access to apps and data that hybrid workers use to communicate and collaborate
-  - Malware protection for cloud service data, email, and Windows 10 devices
+  - Malware protection for cloud service data, email, and Windows 11 or 10 devices
 - Compliance
   - Consistent labeling for levels of sensitivity and protection
-  - Policies to prevention information leakage
+  - Policies to prevent information leakage
   - Adherence to regional data regulations
 
 ## Next step

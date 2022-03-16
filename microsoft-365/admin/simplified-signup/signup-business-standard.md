@@ -36,7 +36,7 @@ There are a couple of ways to get started:
 To sign up and purchase Microsoft 365 Business Standard, complete the following steps.
 
 > [!IMPORTANT]
-> The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. Check out [Add an admin](../../business-video/add-admin.md) for more info.
+> The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. Check out [Assign admin roles](../add-users/assign-admin-roles.md) for more info.
 
 1. On the [Microsoft 365 for business page](https://go.microsoft.com/fwlink/?linkid=2109654), select **See plans & pricing**.
 2. On the next page, find out the monthly cost, and then scroll down the page to find out more about what's included in Microsoft 365. Under Microsoft 365 Business Standard, select **Buy now**.

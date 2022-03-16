@@ -19,7 +19,7 @@ description: File plan provides advanced management capabilities for retention l
 ms.custom: seo-marvel-may2020
 ---
 
-# Use file plan to manage retention labels
+# Use file plan to create and manage retention labels
 
 >*[Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -108,6 +108,36 @@ When you select **Choose** for each of these optional descriptors, you can selec
 
 ![Create new file plan descriptor for provision/citation.](../media/file-plan-descriptors-create.png)
 
+## Create retention labels
+
+1. From the **File plan** page, select **+ Create a label** > **Retention label**
+
+2. Follow the prompts for the configuration process. Be careful what name you choose, because this can't be changed after the label is saved.
+    
+    For more information about the retention settings, see [Settings for retaining and deleting content](retention-settings.md#settings-for-retaining-and-deleting-content).
+    
+    To use the retention label to declare records, select **Mark items as records**, or **Mark items as regulatory records**. For more information, see [Configuring retention labels to declare records](declare-records.md#configuring-retention-labels-to-declare-records).
+
+3. After you have created the label and you see the options to publish the label, auto-apply the label, or just save the label: Select **Just save the label for now**, and then select **Done**.
+
+4. Repeat these steps to create more labels.
+
+## Edit retention labels
+
+To edit an existing retention label, select it from the **File Plan** page, and then select the **Edit label** option to start the edit retention process that lets you change the label description and any eligible settings.
+
+Some settings can't be changed after the label is created and saved, which include:
+- The retention label name and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
+- The option to mark items as a record.
+
+## Delete retention labels
+
+You can delete retention labels that aren't currently included in any [published](create-apply-retention-labels.md) or [auto-apply](apply-retention-labels-automatically.md) retention label policies, that aren't configured for event-based retention, or mark items as regulatory records.
+
+For retention labels that you can delete, if they have been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
+
+However, it can take up to two days for content explorer to show the items that are labeled. In this scenario, the retention label might be deleted without showing you the link to content explorer.
+
 ## Export all retention labels to analyze or enable offline reviews
 
 From your file plan, you can export the details of all retention labels into a .csv file to help you facilitate periodic compliance reviews with data governance stakeholders in your organization.
@@ -131,7 +161,11 @@ In file plan, you can bulk-import new retention labels by using a .csv file with
 
    ![Option to download a blank file plan template](../media/file-plan-blank-template-option.png)
 
-3. After the template downloads, add one row for each label, and save the file. See the [next section](#information-about-the-label-properties-for-import) for information that describes the properties and valid values for each property. 
+3. After the template downloads, add one row for each label, and save the file. See the [next section](#information-about-the-label-properties-for-import) for information that describes the properties and valid values for each property.
+    
+    Example of a filled in template:
+    
+    ![File plan template with information filled in.](../media/file-plan-filled-out-template.png)
 
 4. Select **Upload a file** to upload the filled-out template.
     
@@ -178,6 +212,6 @@ Use the following information to help you fill out the downloaded template to im
 
 ## Next steps
 
-For more information about creating, editing, and applying retention labels, see the following two scenarios:
-- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+Now you've created retention labels, they are ready to be added to items by publishing the labels, or automatically applying them:
+- [Publish retention labels and apply them in apps](create-apply-retention-labels.md)
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)

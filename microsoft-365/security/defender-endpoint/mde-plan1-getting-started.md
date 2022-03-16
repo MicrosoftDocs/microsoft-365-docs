@@ -7,16 +7,22 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 12/07/2021
+ms.date: 01/03/2022
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: mdep1
 ms.localizationpriority: medium
 ms.reviewer: inbadian
 f1.keywords: NOCSH
-ms.collection: M365-security-compliance
+ms.collection: 
+- M365-security-compliance
+- m365initiative-defender-endpoint
+ms.custom: intro-get-started
 ---
 
 # Get started with Microsoft Defender for Endpoint Plan 1
+
+**Applies to:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) enables you to view information about detected threats, manage your alerts and incidents, take any needed action on detected threats, and manage devices. The Microsoft 365 Defender portal is where you can get started interacting with the threat protection capabilities you get with Defender for Endpoint Plan 1. The following sections describe how to get started:
 

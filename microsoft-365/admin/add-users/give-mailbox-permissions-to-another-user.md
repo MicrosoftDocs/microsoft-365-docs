@@ -18,6 +18,8 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
+- admindeeplinkEXCHANGE
+- business_assist
 search.appverid:
 - BCS160
 - MET150
@@ -31,6 +33,9 @@ description: "Give a user the right to access another user's mailbox, which allo
 As the admin, you may have company requirements to allow some users access to another user's mailbox. For example, you may want to enable an assistant to send or read email from their manager's mailbox, or one of your user's the ability to send email on behalf of another user. This topic shows you how to accomplish this.
   
 If you're looking for information about creating and managing shared mailboxes, check out [Create a shared mailbox](../email/create-a-shared-mailbox.md).
+
+> [!TIP]
+> If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
     
 ## Looking to set up mailbox permissions?
 
@@ -107,7 +112,7 @@ There are a few different ways you can access a mailbox once you've been given a
 
 
 > [!NOTE]
-> **Read** and **Manage** permissions are called **Full Access** permission when granted in the Exchange admin center. This permission allows the assigned user mailbox to read as well as manage emails in the user mailbox on which the permission is assigned. Full Access permission does not grant **Send as** or **Send on behalf**  permissions.
+> **Read** and **Manage** permissions are called **Full Access** permission when granted in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>. This permission allows the assigned user mailbox to read as well as manage emails in the user mailbox on which the permission is assigned. Full Access permission does not grant **Send as** or **Send on behalf**  permissions.
 
 ::: moniker-end
 

@@ -2,8 +2,8 @@
 title: "Microsoft Compliance Manager templates list"
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -34,7 +34,11 @@ Templates are added to Compliance Manager as new laws and regulations are enacte
 
 ## List of templates and where to find them
 
-Below is the complete list of templates in Compliance Manager. The links in the template names below take you to related documentation about that standard, regulation, or law.
+Below is the complete list of templates in Compliance Manager. Template names match the associated regulation or certification. Where available, links in the template names below take you to related documentation about that standard, regulation, or law.
+
+Each template (apart from the baseline) is available in at least one version designed for use with a specific product, such as Microsoft 365, along with a universal version that you can use to assess other products of your choice. To learn more about template options, see [Learn about assessment templates](compliance-manager-templates.md).
+
+You can also select individual templates in Compliance Manager to view more information about them, including a description of the regulation and properties of the template. Read the **About** section for a summary.
 
 ### Where to find your templates
 

@@ -42,7 +42,7 @@ It can take up to 24 hours for an add-in to show up for client for all users.
 
 ## Before you begin
 
-Centralized deployment of add-ins requires that the users are using Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium), Office 365 Enterprise licenses (E1/E3/E5/F3), or Microsoft 365 Enterprise licenses (E3/E5/F3) (and are signed into Office using their organizational ID), and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in or federated to Azure Active Directory.
+Centralized deployment of add-ins requires that the users are using Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium), Office 365 Enterprise licenses (E1/E3/E5/F3), or Microsoft 365 Enterprise licenses (E3/E5/F3) (and are signed into Office using their organizational ID), Office 365 Education licenses (A1/A3/A5), or Microsoft 365 Education licenses (A3/A5), and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in or federated to Azure Active Directory.
 You can view specific requirements for Office and Exchange below, or use the [Centralized Deployment Compatibility Checker](#centralized-deployment-compatibility-checker).
 
 Centralized Deployment doesn't support the following:
@@ -80,10 +80,10 @@ Check with your organization's Exchange admin to find out which configuration is
 
 ### Admin requirements
 
-In order to deploy an add-in via Centralized Deployement, you need to be either a Global admin or an Exchange admin in the organization.
+In order to deploy an add-in via Centralized Deployment, you need to be either a Global admin or an Exchange admin in the organization.
 
 > [!NOTE]
-> An Exchange admin can deploy an add-in only if the **App Registrations** property is set to true in Azure Active Directory admin center as shown in the following image:
+> An Exchange admin can deploy an add-in if the **Application Administrator** role is added or if the **App Registrations** property is set to true in Azure Active Directory admin center as shown in the following image:
 >
 > ![image](https://user-images.githubusercontent.com/89943918/144516704-8874a10d-b540-41f3-ae9d-c07a8d7e143f.png)
 
@@ -140,7 +140,7 @@ Centralized Deployment supports assignments to individual users, groups, and eve
 
 Take a look at the following example where Sandra, Sheila, and the Sales Department group are assigned to an add-in. Because the West Coast Sales Department is a nested group, Bert and Fred aren't assigned to an add-in.
 
-![MicrosoftTeams-image](https://user-images.githubusercontent.com/89943918/144523499-6ec53cd8-a3d6-47ee-ac53-82fa1dfef0b8.png)
+![MicrosoftTeams-image](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
 
 ### Find out if a group contains nested groups
@@ -157,7 +157,7 @@ Alternately, you can use the Azure Active Directory Graph API to run queries to 
 
 ### Contacting Microsoft for support
 
-If you or your users encounter problems loading the add-in while using Office apps for the web (Word, Excel, etc.), which were centrally deployed, you may need to contact Microsoft support ([learn how](../../business-video/get-help-support.md)). Provide the following information about your Microsoft 365 environment in the support ticket.
+If you or your users encounter problems loading the add-in while using Office apps for the web (Word, Excel, etc.), which were centrally deployed, you may need to contact Microsoft support ([learn how](../../business-video/get-help-support.md). Provide the following information about your Microsoft 365 environment in the support ticket.
 
 | Platform | Debug information |
 |:-----|:-----|
