@@ -80,6 +80,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
   - Debian 9 or higher
   - SUSE Linux Enterprise Server 12 or higher
   - Oracle Linux 7.2 or higher
+  - Oracle Linux 8.x
   - Amazon Linux 2
   - Fedora 33 or higher
 
@@ -116,6 +117,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
        - 2.6.32-754.35.1.el6.x86_64
        - 2.6.32-754.39.1.el6.x86_64
        - 2.6.32-754.41.2.el6.x86_64
+       - 2.6.32-754.43.1.el6.x86_64
        - 2.6.32-754.6.3.el6.x86_64
        - 2.6.32-754.9.1.el6.x86_64
 
