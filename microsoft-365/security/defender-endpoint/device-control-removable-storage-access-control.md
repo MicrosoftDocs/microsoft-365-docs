@@ -250,7 +250,7 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
       `DefaultEnforcementDeny = 2`
 
     - Once you deploy this setting, you will see **Default Allow** or **Default Deny**
-    - Consider both Disk level and File system level AccessMask when configure this setting, for example, if you want to Default Deny but allow specific storage, you have to allow both Disk level and Fiel system level access, you have to set AccessMask to 63.
+    - Consider both Disk level and File system level AccessMask when configuring this setting, for example, if you want to Default Deny but allow specific storage, you have to allow both Disk level and File system level access, you have to set AccessMask to 63.
 
     :::image type="content" source="images/148609590-c67cfab8-8e2c-49f8-be2b-96444e9dfc2c.png" alt-text="Default Enforcement Allow PowerShell code":::
 
@@ -289,7 +289,7 @@ The [Microsoft 365 Defender portal](https://security.microsoft.com/advanced-hunt
 - Microsoft 365 for E5 reporting
 
 ```kusto
-//events triggered by RemovableStoragePolicyTriggered
+//RemovableStoragePolicyTriggered: event triggered by Disk level enforcement
 DeviceEvents
 | where ActionType == "RemovableStoragePolicyTriggered"
 | extend parsed=parse_json(AdditionalFields)
@@ -309,6 +309,29 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
+```kusto
+//RemovableStorageFileEvent: event triggered by File level enforcement, information of files written to removable storage 
+DeviceEvents
+| where ActionType contains "RemovableStorageFileEvent"
+| extend parsed=parse_json(AdditionalFields)
+| extend Policy = tostring(parsed.Policy) 
+| extend PolicyRuleId = tostring(parsed.PolicyRuleId) 
+| extend MediaClassName = tostring(parsed.ClassName)
+| extend MediaInstanceId = tostring(parsed.InstanceId)
+| extend MediaName = tostring(parsed.MediaName)
+| extend MediaProductId = tostring(parsed.ProductId) 
+| extend MediaVendorId = tostring(parsed.VendorId) 
+| extend MediaSerialNumber = tostring(parsed.SerialNumber) 
+| extend DuplicatedOperation = tostring(parsed.DuplicatedOperation)
+| extend FileEvidenceLocation = tostring(parsed.TargetFileLocation) 
+| project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, 
+    ActionType, Policy, PolicyRuleId, DuplicatedOperation, 
+    MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber,
+    FileName, FolderPath, FileSize, FileEvidenceLocation,
+    AdditionalFields
+| order by Timestamp desc
+```
+    
 :::image type="content" source="images/block-removable-storage.png" alt-text="The screen depicting the blockage of the removable storage.":::
 
 ## Frequently asked questions
