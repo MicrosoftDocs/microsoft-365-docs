@@ -79,3 +79,7 @@ Security defaults help protect your organization from identity-related attacks b
 
 - Before using admin accounts, close out all unrelated browser sessions and apps, including personal email accounts. You can also use in private, or incognito browser windows.
 - After completing admin tasks, be sure to sign out of the browser session.
+
+## Next objective
+
+Take the steps to [turn on security defaults](m365bp-condtional-access.md)
