@@ -134,9 +134,11 @@ For additional details and information:
  
 - [Upgrade users to the latest Office apps](../admin/setup/upgrade-users-to-latest-office-client.md)
 
+## Additional considerations for Windows 10 and Mac devices
+
 If your Windows 10 PC or Mac is not managed by your organization, be sure to configure these security capabilities.
 
-## [Windows 10](#tab/Windows10)
+## Windows 10
 
 **Turn on device encryption**<p>
 
@@ -154,7 +156,7 @@ If you have an earlier version of Windows and are using Microsoft Security Essen
 **Turn on Windows Firewall**<p>
 You should always run Windows Firewall even if you have another firewall turned on. Turning off Windows Firewall might make your device (and your network, if you have one) more vulnerable to unauthorized access. See [Turn Windows Firewall on or off](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) for instructions.
 
-## [Mac](#tab/Mac)
+## Mac
 
 **Use FileVault to encrypt your Mac disk**<p>
 Disk encryption protects data when devices are lost or stolen. FileVault full-disk encryption helps prevent unauthorized access to the information on your startup disk. See [use FileVault to encrypt the startup disk on your Mac](https://support.apple.com/HT204837) for instructions.
@@ -166,6 +168,14 @@ You can also reduce the risk of malware by using software only from reliable sou
 
 **Turn on firewall protection**<p>
 Use firewall settings to protect your Mac from unwanted contact initiated by other computers when you're connected to the Internet or a network. Without this protection, your Mac might be more vulnerable to unauthorized access. See [about the application firewall](https://support.apple.com/HT201642) for instructions.
+
+For additional details and information:
+
+- Set up mobile devices: [Microsoft 365 mobile setup - Help](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)
+
+- Set up email in Outlook: [Windows](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) or [Mac](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)
+ 
+- [Upgrade users to the latest Office apps](../admin/setup/upgrade-users-to-latest-office-client.md)
 
 ## Contact support
 

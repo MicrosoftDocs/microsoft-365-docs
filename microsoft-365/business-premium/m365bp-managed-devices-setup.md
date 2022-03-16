@@ -61,12 +61,8 @@ Follow specific device enrollment guidance below.
 1. Select **Android** > **Android enrollment**.
 1. Choose **Managed Google Play** and grant Microsoft permission to send information to Google.
 
-Go to Endpoints > Device inventory (this kicks off the setup wizard for MDB). Choose Get started and work through the wizard. This onboards devices and applies endpoint protection policies to the devices
-
-
 <!---
-## Next steps
+KCNote: Couldn't tell where this came into play after looking at the Endpoint Manager admin center...
 
-[Protect all email](m365bp-protect-email-overview.md)
-
-Note: Should maybe just be the next objective, to keep them in this section (Install Office apps...).--->
+Go to Endpoints > Device inventory (this kicks off the setup wizard for MDB). Choose Get started and work through the wizard. This onboards devices and applies endpoint protection policies to the devices
+--->
