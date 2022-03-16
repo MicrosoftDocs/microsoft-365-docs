@@ -7,10 +7,10 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 02/24/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -28,10 +28,12 @@ ms.collection:
 
 ## Overview
 
-After you've onboarded your organization's devices to Microsoft Defender for Business, your next step is to view and if necessary, edit your security policies and settings. Security policies include:
+After you've onboarded your company's devices to Microsoft Defender for Business, your next step is to view and if necessary, edit your security policies and settings. Security policies include:
 
-- **[Next-generation protection policies](#view-or-edit-your-next-generation-protection-policies)**, which determine antivirus and antimalware protection for your organization's devices
-- **[Firewall protection and rules](#view-or-edit-your-firewall-policies-and-custom-rules)**, which determine what network traffic is allowed to flow to or from your organization's devices
+- **[Next-generation protection policies](#view-or-edit-your-next-generation-protection-policies)**, which determine antivirus and antimalware protection for your company's devices
+
+- **[Firewall protection and rules](#view-or-edit-your-firewall-policies-and-custom-rules)**, which determine what network traffic is allowed to flow to or from your company's devices
+
 - **[Web content filtering](#set-up-web-content-filtering)**, which prevents people from visiting certain websites (URLs) based on categories, such as adult content or legal liability.
 
 In Defender for Business, security policies are applied to devices through [device groups](mdb-create-edit-device-groups.md#what-is-a-device-group). 
@@ -67,11 +69,11 @@ The following table can help you choose where to manage your security policies a
 
 | Option | Description |
 |:---|:---|
-| **Use the Microsoft 365 Defender portal** (*recommended*) | The Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) can be your one-stop shop for managing your organization's devices, security policies, and security settings. You can access your security policies and settings, use your [Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md), and [view and manage incidents](mdb-view-manage-incidents.md) all in one place.  |
-| **Use Microsoft Endpoint Manager** | If your organization is already using Endpoint Manager (which includes Microsoft Intune) to manage security policies, you can continue using Endpoint Manager to manage devices and security policies. To learn more, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>If you decide to switch to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md) to use the Microsoft 365 Defender portal instead, you'll be prompted to delete any existing security policies in Endpoint Manager to avoid [policy conflicts](mdb-troubleshooting.yml) later. |
+| **Use the Microsoft 365 Defender portal** (*recommended*) | The Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) can be your one-stop shop for managing your company's devices, security policies, and security settings. You can access your security policies and settings, use your [Threat & Vulnerability Management dashboard](mdb-view-tvm-dashboard.md), and [view and manage incidents](mdb-view-manage-incidents.md) all in one place. <br/><br/>If you're using Microsoft Endpoint Manager, devices that you onboard to Defender for Business and your security policies are visible in Endpoint Manager. To learn more, see the following articles:<br/><br/>- [Defender for Business default settings and Microsoft Endpoint Manager](mdb-next-gen-configuration-settings.md#defender-for-business-default-settings-and-microsoft-endpoint-manager)<br/><br/>- [Firewall in Microsoft Defender for Business](mdb-firewall.md)   |
+| **Use Microsoft Endpoint Manager** | If your company is already using Endpoint Manager (which includes Microsoft Intune) to manage security policies, you can continue using Endpoint Manager to manage devices and security policies. To learn more, see [Manage device security with endpoint security policies in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). <br/><br/>If you decide to switch to the [simplified configuration process in Defender for Business](mdb-simplified-configuration.md), you'll be prompted to delete any existing security policies in Endpoint Manager to avoid [policy conflicts](mdb-troubleshooting.yml) later. |
 
-> [!NOTE]
-> If you are managing our security policies in the Microsoft 365 Defender portal, you can *view* those policies in Endpoint Manager, listed as Antivirus or Firewall policies. When you view your firewall policies in Endpoint Manager, you'll see two policies listed: one policy for your firewall protection, and another for custom rules.
+> [!IMPORTANT]
+> If you are managing security policies in the Microsoft 365 Defender portal, you can *view* those policies in Endpoint Manager, listed as Antivirus or Firewall policies. When you view your firewall policies in Endpoint Manager, you'll see two policies listed: one policy for your firewall protection, and another for custom rules.
 
 ## View or edit your next-generation protection policies
 
@@ -96,12 +98,16 @@ Depending on whether you're using the Microsoft 365 Defender portal or Microsoft
 Web content filtering enables your security team to track and regulate access to websites based on their content categories, such as:
 
 - Adult content: Sites that are related to cults, gambling, nudity, pornography, sexually explicit material, or violence
+
 - High bandwidth: Download sites, image sharing sites, or peer-to-peer hosts
+
 - Legal liability: Sites that include child abuse images, promote illegal activities, foster plagiarism or school cheating, or that promote harmful activities
+
 - Leisure: Sites that provide web-based chat rooms, online gaming, web-based email, or social networking
+
 - Uncategorized: Sites that have no content or that are newly registered
 
-Not all of the websites in these categories are malicious, but they could be problematic for your organization because of compliance regulations, bandwidth usage, or other concerns. In addition, you can create an audit-only policy to get a better understanding of whether your security team should block any website categories.
+Not all of the websites in these categories are malicious, but they could be problematic for your company because of compliance regulations, bandwidth usage, or other concerns. In addition, you can create an audit-only policy to get a better understanding of whether your security team should block any website categories.
 
 Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave, and Opera). For more information see [Prerequisites for web content filtering](../defender-endpoint/web-content-filtering.md#prerequisites).
 

@@ -148,13 +148,13 @@ The table in this section summarizes the features and capabilities that are acti
  | [Network protection](network-protection.md)  | Yes | No | No | No | 
  | [Attack surface reduction rules](attack-surface-reduction.md)  | Yes | No | No  | No | 
  | [Limited periodic scanning availability](limited-periodic-scanning-microsoft-defender-antivirus.md) | No | No | Yes | No | 
- | [File scanning and detection information](review-scan-results-microsoft-defender-antivirus.md) | Yes | Yes | No | Yes | 
- | [Threat remediation](configure-remediation-microsoft-defender-antivirus.md) | Yes | See note <sup>[[5](#fn5)]</sup> | No | Yes | 
+ | [File scanning and detection information](review-scan-results-microsoft-defender-antivirus.md) | Yes | Yes<sup>[[5](#fn5)]</sup> | No | Yes | 
+ | [Threat remediation](configure-remediation-microsoft-defender-antivirus.md) | Yes | Yes | No | Yes | 
  | [Security intelligence updates](manage-updates-baselines-microsoft-defender-antivirus.md) | Yes | Yes | No | Yes | 
 
 (<a id="fn4">4</a>) In general, when Microsoft Defender Antivirus is in passive mode, real-time protection does not provide any blocking or enforcement, even though it is enabled and in passive mode.
 
-(<a id="fn5">5</a>) When Microsoft Defender Antivirus is in passive mode, threat remediation features are active only during scheduled or on-demand scans.
+(<a id="fn5">5</a>) When Microsoft Defender Antivirus is in passive mode, scans are not scheduled.
 
 > [!NOTE]
 > [Microsoft 365 Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about) protection continues to operate normally when Microsoft Defender Antivirus is in either active or passive mode.
