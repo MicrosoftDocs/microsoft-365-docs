@@ -60,7 +60,7 @@ Advanced classification scanning and protection allows the more advanced Microso
 
 When advanced classification is turned on, content is sent from the local device to the cloud services for scanning and classification. If bandwidth utilization is a concern, you can set a limit on how much can be used in a rolling 24 hour period. The limit is configured in Endpoint DLP settings and is applied per device. If you set a bandwidth utilization limit and it's exceeded, DLP stops sending the user content to the cloud. At this point data classification continues locally on the device but classification using exact data match, named entities (preview), and trainable classifiers aren't available. When When the cumulative bandwidth utilization drops below the rolling 24 hour limit, communication with the cloud services will resume.
 
-If bandwidth utilization isn't a concern, you choose to not set a limit and allow unlimited bandwidth utilization.
+If bandwidth utilization isn't a concern, you select **No limit** to allow unlimited bandwidth utilization.
 
 These Windows versions support advanced classification scanning and protection:
 
@@ -122,7 +122,7 @@ For performance reasons, Endpoint DLP includes a list of recommended file path e
 
 #### Restricted app activities list
 
-**Restricted app activities** is a list of applications that you create. You configure what actions DLP will take when an app on the list attempts to access a DLP protected file on a device. It's available for Windows 10 and macOS devices (preview).
+**Restricted app activities** (previously called **Unallowed apps**) is a list of applications that you create. You configure what actions DLP will take when an app on the list attempts to access a DLP protected file on a device. It's available for Windows 10 and macOS devices (preview).
 
 When **Access by restricted apps** is selected in a policy and an app that is on the restricted apps list attempts to access a protected file, the activity will be audited, blocked, or blocked with override. All activity is audited and available to review in activity explorer.
 
@@ -155,11 +155,11 @@ Configurations defined in **File activities for apps in restricted app groups (p
 
 Configurations defined in the **Restricted app activities** list override the configuration in **File activities for all apps** in the same rule.
 
-If an app is not in **File activities for apps in restricted app groups (preview)** or the **Restricted apps app activities** list, any restrictions defined in the **File activities for all apps** are applied in the same rule.  
+If an app is not in **File activities for apps in restricted app groups (preview)** or the **Restricted app activities** list, any restrictions defined in the **File activities for all apps** are applied in the same rule.  
 
 #### macOS devices (preview)
 
-Just like on Windows devices, you'll now be able to prevent macOS apps from accessing sensitive data by defining them in the **Unallowed apps** list. 
+Just like on Windows devices, you'll now be able to prevent macOS apps from accessing sensitive data by defining them in the **Restricted app activities** list. 
 
 > [!NOTE]
 > Note that cross platform apps must be entered with their unique paths respective to the OS they are running on.
