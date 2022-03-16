@@ -74,7 +74,7 @@ After you install MCCA, you can run MCCA and generate a report. To run a report:
 
 Your report will then take approximately 2-5 minutes to generate. When it’s done, a browser window opens and displays your HTML report. Every time you run the tool, it will ask for your credentials and generate a new report. This report is stored locally in the following directory:
 
-C:\Users\<username>\AppData\Local\Microsoft\MCCA. 
+C: \ Users \ *username* \ AppData \ Local \ Microsoft \ MCCA.
 
 You can access previously generated reports from this directory.
 
