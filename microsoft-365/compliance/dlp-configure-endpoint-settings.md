@@ -56,11 +56,11 @@ Before you get started, you should set up your DLP settings.
 
 ### Advanced classification scanning and protection
 
-Advanced classification scanning and protection allows the more advanced Microsoft 365 cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) classification, [named entities (preview)](named-entities-learn.md#learn-about-named-entities-preview) classification techniques in your DLP policies.
+Advanced classification scanning and protection allows the more advanced Microsoft 365 cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of classification techniques like [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) classification, [named entities (preview)](named-entities-learn.md#learn-about-named-entities-preview), and [trainable classifiers](classifier-learn-about.md#learn-about-trainable-classifiers) in your DLP policies.
 
-In advanced classification, content is sent from the local device to the cloud services for scanning and classification. If bandwidth utilization is a concern, you can set a limit in this global setting that is applied per device on how much can be used in a rolling 24 hour period. If you set a bandwidth utilization limit and it's exceeded, DLP stops sending the user content to the cloud and data classification will continue locally on the device. When the cumulative bandwidth utilization drops below the rolling 24 hour limit, communication with the cloud services will resume.
+When advanced classification is turned on, content is sent from the local device to the cloud services for scanning and classification. If bandwidth utilization is a concern, you can set a limit on how much can be used in a rolling 24 hour period. The limit is configured in Endpoint DLP settings and is applied per device. If you set a bandwidth utilization limit and it's exceeded, DLP stops sending the user content to the cloud. At this point data classification continues locally on the device but classification using exact data match, named entities (preview), and trainable classifiers aren't available. When When the cumulative bandwidth utilization drops below the rolling 24 hour limit, communication with the cloud services will resume.
 
-If bandwidth utilization isn't a concern, you cannot set a limit and allow unlimited utilization.
+If bandwidth utilization isn't a concern, you choose to not set a limit and allow unlimited bandwidth utilization.
 
 These Windows versions support advanced classification scanning and protection:
 
