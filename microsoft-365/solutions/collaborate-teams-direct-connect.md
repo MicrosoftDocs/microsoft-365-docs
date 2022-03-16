@@ -21,7 +21,7 @@ description: Learn how to use shared channels with people outside your organizat
 
 # Collaborate with external participants in a channel
 
-If you want to allow your users to collaborate with people outside your organization in shared channels, you need to configure B2B direct connect for each organization that you want to collaborate with. (Alternatively, you can [Enable shared channels with all external organizations](/microsoft-365/solutions/allow-direct-connect-with-all-organizations).)
+If you want to allow your users to collaborate with people outside your organization in [shared channels](/MicrosoftTeams/shared-channels), you need to configure B2B direct connect for each organization that you want to collaborate with. (Alternatively, you can [Enable shared channels with all external organizations](/microsoft-365/solutions/allow-direct-connect-with-all-organizations).)
 
 When you enable shared channels with another organization:
 
@@ -107,4 +107,4 @@ To configure outbound settings for an organization
 
 [Limit who can be invited by an organization](limit-invitations-from-specific-organization.md)
 
-[Shared channels limits](/MicrosoftTeams/shared-channels?branch=mikeplum-shared-channels#shared-channel-limits)
+[Shared channels limits](/MicrosoftTeams/shared-channels#shared-channel-limits)
