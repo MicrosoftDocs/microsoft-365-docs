@@ -82,7 +82,7 @@ On the **All placeholders** panel:
 
 1. In the **Name** field, enter a relevant name for the placeholder.
 
-   ![Screenshot of the template viewer showing the All placeholders panel for input from a SharePoint list.](../media/content-understanding/content-assembly-create-template-6.png)
+   ![Screenshot of the template viewer showing the All placeholders panel for input from a SharePoint list.](../media/content-understanding/content-assembly-create-template-6a.png)
 
 2. In the **How authors fill in this placeholder** section, choose **Select from choices in a column of a list or library**, and then choose **Select**.
 
