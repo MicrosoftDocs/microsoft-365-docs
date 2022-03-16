@@ -73,7 +73,7 @@ Create or modify the following registry keys to force Outlook to use a newer aut
    HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\
    ```
 
-8. If the keys in the table above already exist, modify the values if necessary, then exit Registry Editor. If they do not, on the Edit menu, point to **New** and then select **DWORD Value** to create the missing keys. 
+8. If the *EnableADAL* and *Version* keys already exist, modify the values if necessary, then exit Registry Editor. If they do not, on the Edit menu, point to **New** and then select **DWORD Value** to create the missing keys. 
 
 9. For example, if the *EnableADAL* key is missing, type *EnableADAL*, and then press **Enter.**
 
