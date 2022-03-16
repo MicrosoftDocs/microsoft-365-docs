@@ -9,7 +9,7 @@ ms.date:
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: "Learn how to set up and use a Slack eDiscovery data connector provided by Microsoft to import and archive instant messaging data."
 ---
