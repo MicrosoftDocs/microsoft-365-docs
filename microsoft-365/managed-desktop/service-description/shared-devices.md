@@ -5,7 +5,7 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: tiaraquan
 ms.author: tiaraquan
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: M365-modern-desktop
 manager: dougeby
 ms.topic: article
@@ -44,12 +44,12 @@ Shared device mode isn't a good choice in these situations:
 
 Whether you or a partner are handling enrollment, you can choose to use shared device mode.
 
-If you're enrolling devices yourself, follow the steps in [Register new devices yourself](../get-started/register-devices-self.md), and then add them to the **Modern Workplace Devices - Shared Device Mode** group.
+If you're enrolling devices yourself, follow the steps in [Manual registration](../get-started/manual-registration.md), and then add them to the **Modern Workplace Devices - Shared Device Mode** group.
 
 > [!WARNING]
 > Do not try to convert any existing Microsoft Managed Desktop devices to shared device mode by simply adding them to this group. The policies that are applied can potentially cause OneDrive files to be permanently lost.
 
-If you're having a partner enroll devices, follow the steps in [Steps for Partners to register devices](../get-started/register-devices-partner.md), but append **-Shared** to the group tag, as shown in the following table:
+If you're having a partner enroll devices, follow the steps in [Partner registration](../get-started/partner-registration.md), but append **-Shared** to the group tag, as shown in the following table:
 
 | Device profile | Autopilot group tag (standard mode) | Group tag (shared device mode) |
 | ----- | ----- | ----- |
@@ -111,7 +111,7 @@ Each Microsoft Intune device has a primary user, which is assigned when a device
 
 Some apps probably don't need to be present on all devices, so you might prefer that users only install those apps when they need them from [Company Portal](/mem/intune/user-help/install-apps-cpapp-windows).
 
-Microsoft Managed Desktop disables Company Portal by default for devices in shared device mode. If you want the Company Portal enabled, you can file a [change request](../working-with-managed-desktop/admin-support.md). However,you should be aware of some limitations in this feature in this public preview:
+Microsoft Managed Desktop disables Company Portal by default for devices in shared device mode. If you want the Company Portal enabled, you can file a [change request](../working-with-managed-desktop/admin-support.md). However, you should be aware of some limitations in this feature in this public preview:
 
 - To make an app available to users in Company Portal, [assign a user group](/mem/intune/apps/apps-deploy) to that app in Intune and then add each user to that user group.
 - Devices can't have a [primary user](#primary-user).
@@ -120,7 +120,7 @@ Microsoft Managed Desktop disables Company Portal by default for devices in shar
 > [!CAUTION]
 > Company Portal doesn't support applications assigned to device groups as available.
 
-### Redeployment of Microsoft 365 Apps for enterprise
+### Redeployment of Microsoft 365 Apps for Enterprise
 
 During public preview, if Microsoft 365 Apps must be redeployed, users must contact their local support staff to request an agent elevate and reinstall Microsoft 365 Apps for enterprise on that device.
 

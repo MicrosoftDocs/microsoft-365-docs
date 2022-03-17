@@ -61,6 +61,9 @@ In Microsoft 365 Defender, you can add recipients for email notifications of det
 
 Defender for Identity can notify you when it detects suspicious activities by sending security and health alerts to your Syslog server through a nominated sensor.
 
+> [!NOTE]
+> To learn how to integrate Defender for Identity with Microsoft Sentinel, see [Microsoft 365 Defender integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration).
+
 1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Settings** and then **Identities**.
 
     ![Go to Settings, then Identities.](../../media/defender-identity/settings-identities.png)

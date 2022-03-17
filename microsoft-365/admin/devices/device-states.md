@@ -33,6 +33,9 @@ description: "Learn about the various device states in the Device actions list i
 
 This article applies to Microsoft 365 Business Premium.
 
+> [!NOTE]
+> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. This offering provides additional security features for devices. [Learn more about Defender for Business](../../security/defender-business/mdb-overview.md).
+
 Devices in the **Device actions** list (Admin home \> **Device actions**) can have the following states.
   
 ![In the Device actions list, you can see the Devices states.](../../media/a621c47e-45d9-4e1a-beb9-c03254d40c1d.png)
@@ -52,3 +55,7 @@ Devices in the **Device actions** list (Admin home \> **Device actions**) can ha
 |Delete pending  <br/> |Delete action is pending.  <br/> |
 |Discovered  <br/> |Microsoft 365 Business Premium has detected the device.  <br/> |
    
+
+## See also
+
+[Top 10 ways to secure Microsoft 365 for business plans](../security-and-compliance/secure-your-business-data.md)

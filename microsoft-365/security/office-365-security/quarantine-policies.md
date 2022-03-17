@@ -38,10 +38,6 @@ The individual quarantine policy permissions are combined into the following pre
 
 The individual quarantine policy permissions that are contained in the preset permission groups are described in the following table:
 
-<br>
-
-****
-
 |Permission|No access|Limited access|Full access|
 |---|:---:|:---:|:---:|
 |**Block sender** (_PermissionToBlockSender_)||![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
@@ -49,7 +45,6 @@ The individual quarantine policy permissions that are contained in the preset pe
 |**Preview** (_PermissionToPreview_)||![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
 |**Allow recipients to release a message from quarantine** (_PermissionToRelease_)|||![Check mark.](../../media/checkmark.png)|
 |**Allow recipients to request a message to be released from quarantine** (_PermissionToRequestRelease_)||![Check mark](../../media/checkmark.png)||
-|
 
 The default quarantine policies, their associated permission groups, and whether quarantine notifications are enabled are described in the following table:
 
@@ -147,10 +142,6 @@ The _EndUserQuarantinePermissionsValue_ parameter uses a decimal value that's co
 
 The required order and values for each individual permission are described in the following table:
 
-<br>
-
-****
-
 |Permission|Decimal value|Binary value|
 |---|:---:|:---:|
 |PermissionToViewHeader<sup>\*</sup>|128|10000000|
@@ -161,7 +152,6 @@ The required order and values for each individual permission are described in th
 |PermissionToRelease<sup>\*\*\*</sup>|4|00000100|
 |PermissionToPreview|2|00000010|
 |PermissionToDelete|1|00000001|
-|
 
 <sup>\*</sup> The value 0 doesn't hide the **View message header** button in the details of the quarantined message (the button is always available).
 
@@ -170,10 +160,6 @@ The required order and values for each individual permission are described in th
 <sup>\*\*\*</sup> Don't set both of these values to 1. Set one to 1 and the other to 0, or set both to 0.
 
 For Limited access permissions, the required values are:
-
-<br>
-
-****
 
 |Permission|Limited access|
 |---|:--:|
@@ -187,7 +173,6 @@ For Limited access permissions, the required values are:
 |PermissionToDelete|1|
 |Binary value|00011011|
 |Decimal value to use|27|
-|
 
 This example creates a new quarantine policy named LimitedAccess with quarantine notifications turned on that assigns the Limited access permissions as described in the previous table.
 
@@ -195,17 +180,13 @@ This example creates a new quarantine policy named LimitedAccess with quarantine
 New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -EsnEnabled $true
 ```
 
-For custom permissions, use the previous table to get the binary value that corresponds to the permissions you want. Convert the binary value to a decimal value and use the decimal value for the _EndUserQuarantinePermissionsValue_ parameter.
+For custom permissions, use the previous table to get the binary value that corresponds to the permissions you want. Convert the binary value to a decimal value and use the decimal value for the _EndUserQuarantinePermissionsValue_ parameter. Don't use the binary value for the parameter value.
 
 For detailed syntax and parameter information, see [New-QuarantinePolicy](/powershell/module/exchange/new-quarantinepolicy).
 
 ## Step 2: Assign a quarantine policy to supported features
 
 In _supported_ protection features that quarantine email messages, you can assign a quarantine policy to the available quarantine actions. Features that quarantine messages and the availability of quarantine policies are described in the following table:
-
-<br>
-
-****
 
 |Feature|Quarantine policies supported?|Default quarantine policies used|
 |---|:---:|---|
@@ -214,7 +195,6 @@ In _supported_ protection features that quarantine email messages, you can assig
 |[Anti-malware policies](configure-anti-malware-policies.md): All detected messages are always quarantined.|Yes|AdminOnlyAccessPolicy (No access)|
 |[Safe Attachments protection](safe-attachments.md): <ul><li>Email messages with attachments that are quarantined as malware by Safe Attachments policies (_Enable_ and _Action_)</li><li>Files quarantined as malware by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](mdo-for-spo-odb-and-teams.md)</li></ul>|<ul><li>Yes</li><li>No</li></ul>|<ul><li>AdminOnlyAccessPolicy (No access)</li><li>n/a</li></ul>|
 |[Mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules) with the action: **Deliver the message to the hosted quarantine** (_Quarantine_).|No|n/a|
-|
 
 <sup>\*</sup> As [previously described in this article](#full-access-permissions-and-quarantine-notifications), your organization might use NotificationEnabledPolicy instead of DefaultFullAccessPolicy. The only difference between these two quarantine policies is quarantine notifications are turned on in NotificationEnabledPolicy and turned off in DefaultFullAccessPolicy.
 
