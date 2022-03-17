@@ -2,8 +2,8 @@
 title: "Paying for your subscription with a billing profile"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -16,9 +16,9 @@ ms.collection:
 search.appverid: MET150
 description: "Learn what payment options are available to pay for your subscription with a billing profile."
 ms.custom: 
+- commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_billing
 ms.date: 10/29/2021
 ---
 
@@ -46,7 +46,7 @@ To be eligible to pay by invoice, you must:
 
 If a credit check is required, you’re notified when you buy your subscription. If you agree to be contacted, you get an email that includes more information about applying for credit approval. Credit checks are usually completed within two business days.
 
-If your billing profile is backed by an invoice, you get an email when your billing statement is ready to view. This email doesn’t contain a copy of your billing statement. However, you can choose to [receive a copy of your billing statement in email](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). Your billing statement includes details about your options for making a payment, and where to send it. If you enter a purchase order (PO) number in your billing profile, the number appears on your billing statement. For information about accessing billing statements, see [View your bill or invoice](view-your-bill-or-invoice.md).
+If your billing profile is backed by an invoice, you get an email when your billing statement is ready to view. This email doesn’t contain a copy of your billing statement. However, you can choose to [receive your organization's invoices as email attachments](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). Your billing statement includes details about your options for making a payment, and where to send it. If you enter a purchase order (PO) number in your billing profile, the number appears on your billing statement. For information about accessing billing statements, see [View your bill or invoice](view-your-bill-or-invoice.md).
 
 ## Where do I send my check or EFT payment?
 
@@ -54,7 +54,6 @@ If your billing profile is backed by an invoice, you get an email when your bill
 
 > [!NOTE]
 > Paying by check is only available in a few countries.
-
 
 ## Can I pay my invoice online?
 

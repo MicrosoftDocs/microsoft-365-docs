@@ -37,7 +37,7 @@ In endpoint protection solutions, a false positive is an entity, such as a file 
 
 ![Definition of false positive and negatives in Defender for Endpoint.](images/false-positives-overview.png)
 
-Fortunately, steps can be taken to address and reduce these kinds of issues. If you're seeing false positives/negatives in [Microsoft 365 Defender](microsoft-defender-security-center.md) (formerly the Microsoft Defender Security Center), your security operations can take steps to address them by using the following process:
+Fortunately, steps can be taken to address and reduce these kinds of issues. If you're seeing false positives/negatives in [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender), your security operations can take steps to address them by using the following process:
 
 1. [Review and classify alerts](#part-1-review-and-classify-alerts)
 2. [Review remediation actions that were taken](#part-2-review-remediation-actions)
@@ -69,8 +69,6 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 3. Select an alert to more details about the alert. (See [Review alerts in Microsoft Defender for Endpoint](review-alerts.md).)
 
 4. Depending on the alert status, take the steps described in the following table:
-
-<br/><br/>
 
    |Alert status|What to do|
    |---|---|
@@ -277,7 +275,7 @@ Before you create indicators for IP addresses, URLs, or domains, make sure the f
 - Antimalware client version is 4.18.1906.x or later
 - Devices are running Windows 10, version 1709, or later, or Windows 11
 
-Custom network indicators are turned on in the [Microsoft 365 Defender](microsoft-defender-security-center.md). To learn more, see [Advanced features](/microsoft-365/security/defender-endpoint/advanced-features).
+Custom network indicators are turned on in the [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender). To learn more, see [Advanced features](/microsoft-365/security/defender-endpoint/advanced-features).
 
 #### Indicators for application certificates
 
@@ -303,7 +301,7 @@ If you have a file that was either wrongly detected as malicious or was missed, 
 
 1. Review the guidelines here: [Submit files for analysis](/windows/security/threat-protection/intelligence/submission-guide).
 
-2. Visit the Microsoft Security Intelligence submission site (<https://www.microsoft.com/wdsi/filesubmission>), and submit your file(s).
+2. Visit the [Microsoft Security Intelligence submission site](https://www.microsoft.com/wdsi/filesubmission) (https://www.microsoft.com/wdsi/filesubmission), and submit your file(s).
 
 ### Submit a fileless detection for analysis
 
@@ -317,7 +315,7 @@ If something was detected as malware based on behavior, and you don't have a fil
 
 3. Review the guidelines here: [Submit files for analysis](/windows/security/threat-protection/intelligence/submission-guide).
 
-4. Visit the Microsoft Security Intelligence submission site (<https://www.microsoft.com/wdsi/filesubmission>), and submit your .cab files.
+4. Visit the [Microsoft Security Intelligence submission site](https://www.microsoft.com/wdsi/filesubmission) (https://www.microsoft.com/wdsi/filesubmission), and submit your .cab files.
 
 ### What happens after a file is submitted?
 

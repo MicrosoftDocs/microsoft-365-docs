@@ -54,12 +54,6 @@ Or
 
 ### Advanced classification scanning and protection
 
-<!--#### Get registered
-
-To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).
-
-When enabled,--> 
-
 Advanced classification scanning and protection allows the more advanced Microsoft 365 cloud based data classification service to scan items, classify them and return the results to the local machine. This means you can take advantage of [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) classification, [named entities (preview)](named-entities-learn.md#learn-about-named-entities-preview) classification techniques in your DLP policies.
 
 In advanced classification, content is sent from the local device to the cloud services for scanning and classification. If bandwidth utilization is a concern, you can set a limit in this global setting that is applied per device on how much can be used in a rolling 24 hour period. If you set a bandwidth utilization limit and it is exceeded, DLP stops sending the user content to the cloud and data classification will continue locally on the device. When the cumulative bandwidth utilization drops below the rolling 24 hour limit, communication with the cloud services will resume.
@@ -144,8 +138,7 @@ To find the full path of Mac apps:
 
 2. Choose **Open Files and Ports** tab.
   
-3. The app name is located at the end of the full path.
-
+3. For macOS apps, you need the full path name, including the name of the app.
 
 #### Protect sensitive data from cloud synchronization apps
 
@@ -170,7 +163,7 @@ Restrict sensitive files that match your policies from being shared with unrestr
 
 #### Unallowed browsers
 
-For Windows devices you add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Microsoft Edge.
+For Windows devices you add browsers, identified by their executable names, that will be blocked from accessing files that match the conditions of an enforced a DLP policy where the upload to cloud services restriction is set to block or block override. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Microsoft Edge or display a customized message if one has been configured.
 
 For macOS devices, you must add the full file path. To find the full path of Mac apps:
 
@@ -178,7 +171,7 @@ For macOS devices, you must add the full file path. To find the full path of Mac
 
 2. Choose **Open Files and Ports** tab.
   
-3. The app name is located at the end of the full path.
+3. For macOS apps, you need the full path name, including the name of the app.
 
 #### Service domains
 
@@ -433,7 +426,7 @@ There are three procedures.
 
 #### Test Auto-quarantine on the Windows 10 device
 
-1. Login to the Windows 10 computer with the user account you specified in [Configure a policy to block OneDrive synchronization of files with the sensitivity label Highly Confidential](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential) step 5.
+1. Log in to the Windows 10 computer with the user account you specified in [Configure a policy to block OneDrive synchronization of files with the sensitivity label Highly Confidential](#configure-a-policy-to-block-onedrive-synchronization-of-files-with-the-sensitivity-label-highly-confidential) step 5.
 
 2. Create a folder whose contents will not be synchronized to OneDrive. For example:
 
@@ -467,7 +460,7 @@ There are three procedures.
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
-- [Onboarding tools and methods for Windows 10 machines](/microsoft-365/compliance/dlp-configure-endpoints)
+- [Onboard Windows 10 and Windows 11 devices into Microsoft 365 overview](/microsoft-365/compliance/device-onboarding-overview)
 - [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure Active Directory (AAD) joined](/azure/active-directory/devices/concept-azure-ad-join)
 - [Download the new Microsoft Edge based on Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

@@ -195,7 +195,7 @@ This example creates a new quarantine policy named LimitedAccess with quarantine
 New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -EsnEnabled $true
 ```
 
-For custom permissions, use the previous table to get the binary value that corresponds to the permissions you want. Convert the binary value to a decimal value and use the decimal value for the _EndUserQuarantinePermissionsValue_ parameter.
+For custom permissions, use the previous table to get the binary value that corresponds to the permissions you want. Convert the binary value to a decimal value and use the decimal value for the _EndUserQuarantinePermissionsValue_ parameter. Don't use the binary value for the parameter value.
 
 For detailed syntax and parameter information, see [New-QuarantinePolicy](/powershell/module/exchange/new-quarantinepolicy).
 
@@ -527,7 +527,7 @@ The global settings for quarantine policies allow you to customize the quarantin
 
      ![Selected languages in the second language box in the global quarantine notification settings of quarantine policies.](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
-   - **Use my company logo**: Select this option to replace the default Microsoft logo that's use at the top of quarantine notifications. Before you do this, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo.
+   - **Use my company logo**: Select this option to replace the default Microsoft logo that's used at the top of quarantine notifications. Before you do this, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo.
 
      The following screenshot shows a custom logo in a quarantine notification:
 

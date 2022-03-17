@@ -96,7 +96,7 @@ To display a list of mailbox folders or site documentlink (path) names:
       if (!$ExoSession)
       {
           Import-Module ExchangeOnlineManagement
-          Connect-ExchangeOnline
+          Connect-ExchangeOnline -ShowBanner:$false -CommandName Get-MailboxFolderStatistics
       }
       $folderQueries = @()
       $folderStatistics = Get-MailboxFolderStatistics $emailAddress
@@ -190,7 +190,7 @@ To display a list of mailbox folders or site documentlink (path) names:
 
 ### Script output for mailbox folders
 
-If you're getting mailbox folder IDs, the script connects to Exchange Online PowerShell, runs the **Get-MailboxFolderStatisics** cmdlet, and then displays the list of the folders from the specified mailbox. For every folder in the mailbox, the script displays the name of the folder in the **FolderPath** column and the folder ID in the **FolderQuery** column. Additionally, the script adds the prefix of **folderId** (which is the name of the mailbox property) to the folder ID. Because the **folderid** property is a searchable property, you'll use  `folderid:<folderid>` in a search query in Step 2 to search that folder. The script displays a maximum of 100 mailbox folders.
+If you're getting mailbox folder IDs, the script connects to Exchange Online PowerShell, runs the **Get-MailboxFolderStatisics** cmdlet, and then displays the list of the folders from the specified mailbox. For every folder in the mailbox, the script displays the name of the folder in the **FolderPath** column and the folder ID in the **FolderQuery** column. Additionally, the script adds the prefix of **folderId** (which is the name of the mailbox property) to the folder ID. Because the **folderid** property is a searchable property, you'll use  `folderid:<folderid>` in a search query in Step 2 to search that folder. 
 
 > [!IMPORTANT]
 > The script in this article includes encoding logic that converts the 64-character folder Id values that are returned by **Get-MailboxFolderStatistics** to the same 48-character format that is indexed for search. If you just run the **Get-MailboxFolderStatistics** cmdlet in PowerShell to obtain a folder Id (instead of running the script in this article), a search query that uses that folder Id value will fail. You have to run the script to get the correctly-formatted folder Ids that can be used in a Content Search.
@@ -203,7 +203,7 @@ The example in Step 2 shows the query used to search the Purges subfolder in the
 
 ### Script output for site folders
 
-If you're getting the path of the **documentlink** property from SharePoint or OneDrive for Business sites, the script connects to Security & Compliance PowerShell, creates a new Content Search that searches the site for folders, and then displays a list of the folders located in the specified site. The script displays the name of each folder and adds the prefix of **documentlink** to the folder URL. Because the **documentlink** property is a searchable property, you'll use `documentlink:<path>` property:value pair in a search query in Step 2 to search that folder. The script displays a maximum of 200 site folders. If there are more than 200 site folders, the newest ones are displayed.
+If you're getting the path of the **documentlink** property from SharePoint or OneDrive for Business sites, the script connects to Security & Compliance PowerShell, creates a new Content Search that searches the site for folders, and then displays a list of the folders located in the specified site. The script displays the name of each folder and adds the prefix of **documentlink** to the folder URL. Because the **documentlink** property is a searchable property, you'll use `documentlink:<path>` property:value pair in a search query in Step 2 to search that folder. The script displays a maximum of 100 site folders. If there are more than 100 site folders, the newest ones are displayed.
 
 Here's an example of the output returned by the script for site folders.
 

@@ -68,7 +68,7 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
    ![New Application](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
 
-5. On the Register an application page, under Supported account types, Select Accounts in any organizational directly (Any Azure AD directory - Multitenant). Then under Redirect URI (optional), select Web and enter <https://office.com>. Last, select Register.
+5. On the Register an application page, under Supported account types, select Accounts in any organizational directory (Any Azure AD directory - Multitenant). Then, under Redirect URI (optional), select Web and enter <https://office.com>. Lastly, select Register.
 
    ![Application Registration](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
 
@@ -88,7 +88,7 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 
 12. Now we need to add permission for mailbox migration, select Add a permission
 
-13. In the Request API permissions windows, select APIs my organization users, and search for office 365 exchange online, select it.
+13. In the Request API permissions windows, select APIs my organization uses, search for Office 365 Exchange Online, and select it.
 
     ![Select API](../media/tenant-to-tenant-mailbox-move/0b4dc1eea3910e9c475724d9473aca58.png)
 
@@ -140,6 +140,11 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
    > You will need the application ID of the mailbox migration app you just created and the password (the secret) you configured during this process. Also depending on the Microsoft 365 Cloud Instance you use your endpoint may be different. Please refer to the [Microsoft 365 endpoints](/microsoft-365/enterprise/microsoft-365-endpoints) page and select the correct instance for your tenant and review the Exchange Online Optimize Required address and replace as appropriate.
 
    ```powershell
+   
+   # Enable customization if tenant is dehydrated
+     $dehydrated=Get-OrganizationConfig | fl isdehydrated
+     if ($dehy -eq $true) {Enable-OrganizationCustomization}
+     
    $AppId = "[guid copied from the migrations app]"
 
    $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String "[this is your secret password you saved in the previous steps]" -AsPlainText -Force)
@@ -204,7 +209,16 @@ To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin c
 You can verify cross-tenant mailbox migration configuration by running [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) cmdlet against the cross-tenant migration endpoint that you created on your target tenant.
 
    > [!NOTE]
-   > Test-MigrationServerAvailability -Endpoint "[the name of your cross-tenant migration endpoint]" -TestMailbox "[email address of a source mailbox that is part of your migration scope]"
+   >
+   > - Target tenant:
+   > 
+   > Test-MigrationServerAvailability -Endpoint "[the name of your cross-tenant migration endpoint]"
+   >
+   > Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
+   >
+   > - Source tenant:
+   > 
+   > Get-OrganizationRelationship | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability 
 
 ### Move mailboxes back to the original source
 

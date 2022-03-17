@@ -11,7 +11,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 search.appverid: MET150
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 description: "Learn how to use PowerShell to request processing by a SharePoint Syntex document understanding model."
 ---
 
@@ -20,7 +20,7 @@ description: "Learn how to use PowerShell to request processing by a SharePoint 
 > [!IMPORTANT]
 > The SharePoint Syntex PowerShell cmdlets and all other PnP components are open-source tools backed by an active community providing support for them. There is no SLA for open-source tool support from official Microsoft support channels.
 
-Document understanding models will process newly uploaded files to a library. It is also possible to manually request processing in the UI. However there may be scenarios where it is more efficient to trigger processing through PowerShell.
+Document understanding models will process newly uploaded files to a library. It is also possible to manually request processing in the UI. However there might be scenarios where it is more efficient to trigger processing through PowerShell.
 
 ## Request processing of all items that have not been previously classified
 
@@ -37,7 +37,7 @@ For lower priority processing, you might also consider using the -OffPeak parame
 
 ## Request processing of all items in a library
 
-You can request processing of all files in the library, even if they have previously been classified. This may be useful if you have updated a model or added another model to the library.
+You can request processing of all files in the library, even if they have previously been classified. This might be useful if you have updated a model or added another model to the library.
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process
@@ -47,11 +47,11 @@ Request-PnPSyntexClassifyAndExtract -List "Documents" -Force
 ```
 
 > [!NOTE]
-> Using the -Force option with more than 5000 items will automatcially enable off peak processing.
+> Using the -Force option with more than 5000 items will automatically enable off peak processing.
 
 ## Request processing of all items based on a property
 
-If you want to limit processing to a specific subset of items in a library, you can use a script to select a specific group of files. In the below example, the script allows a field to be selected, and a field value to filter by. More complex queries can be completed using [Get-PnPListItem](https://pnp.github.io/powershell/cmdlets/Get-PnPListItem.html).
+If you want to limit processing to a specific subset of items in a library, you can use a script to select a specific group of files. In the following example, the script allows a field to be selected, and a field value to filter by. More complex queries can be completed using [Get-PnPListItem](https://pnp.github.io/powershell/cmdlets/Get-PnPListItem.html).
 
 ```PowerShell
 #Note: you're connecting here to the site that holds the document library you want to process

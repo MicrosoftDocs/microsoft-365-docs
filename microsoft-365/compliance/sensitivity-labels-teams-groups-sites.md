@@ -13,6 +13,7 @@ ms.localizationpriority: high
 ms.collection: 
 - M365-security-compliance
 - SPO_Content
+ms.custom: admindeeplinkSPO
 search.appverid: 
 - MOE150
 - MET150
@@ -169,52 +170,11 @@ Known limitations for this preview:
     - Workflows that use Power Apps or Power Automate
     - Third-party apps
 
-### Configure settings for the default sharing link for a site by using PowerShell advanced settings
+### Configure settings for the default sharing link type for a site by using PowerShell advanced settings
 
-In addition to the label settings for sites and groups that you can configure from the compliance center, you can also configure the default sharing link type for a site, and the sharing link permissions.
+In addition to the label settings for sites and groups that you can configure from the compliance center, you can also configure the default sharing link type for a site. Sensitivity labels for documents can also be configured for a default sharing link type. These settings that help to prevent over-sharing are automatically selected when users select the **Share** button in their Office apps. 
 
-To learn more about how these settings work, see [Change the default link type for a site](/sharepoint/change-default-sharing-link).
-
-These additional label settings for the sharing link are currently available only as a PowerShell *AdvancedSettings* parameter and the [Set-Label](/powershell/module/exchange/set-label) and [New-Label](/powershell/module/exchange/new-labelpolicy) cmdlets from [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell):
-
-- **DefaultSharingScope**: The available values are:
-    - **SpecificPeople**: Sets the default sharing link for the site to the "Specific people" link
-    - **Organization**: Sets the default sharing link for the site to the "organization" link or company shareable link
-    - **Anyone**: Sets the default sharing link for the site to an Anonymous Access or Anyone link
-
-- **DefaultShareLinkPermission**:  The available values are:
-    - **View**: Sets the default link permission for the site to "view" permissions
-    - **Edit**: Sets the default link permission for the site to "edit" permissions
-
-These two settings and values are the equivalent of the parameters *DefaultSharingScope* and *DefaultShareLinkPermission* from the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) cmdlet.
-
-PowerShell examples, where the sensitivity label GUID is **8faca7b8-8d20-48a3-8ea2-0f96310a848e**:
-
-- To set the sharing link type to SpecificPeople:
-    
-    ````powershell
-    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope="SpecificPeople"}
-    ````
-
-- To set the sharing link permissions to Edit:
-    
-    ````powershell
-    Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
-    ````
-
-#### PowerShell tips for specifying the advanced settings
-
-Although you can specify the sensitivity label by its name, we recommend using the label GUID to avoid potential confusion over specifying the label name or display name. To find the GUID:
-
-````powershell
-Get-Label | Format-Table -Property DisplayName, Name, Guid
-````
-
-To remove either of these advanced settings from a sensitivity label, use the same AdvancedSettings parameter syntax, but specify a null string value. For example:
-
-````powershell
-Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope=""}
-````
+For more information and instructions, see [Use sensitivity labels to configure the default sharing link type for sites and documents in SharePoint and OneDrive](sensitivity-labels-default-sharing-link.md).
 
 ## Sensitivity label management
 
@@ -346,7 +306,7 @@ This series of commands lets you label multiple sites across your tenant with th
 
 ## View and manage sensitivity labels in the SharePoint admin center
 
-To view, sort, and search the applied sensitivity labels, use the **Active sites** page in the new SharePoint admin center. You might need to first add the **Sensitivity** column:
+To view, sort, and search the applied sensitivity labels, use <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a> in the new SharePoint admin center. You might need to first add the **Sensitivity** column:
 
 ![The Sensitivity column on the Active sites page.](../media/manage-site-sensitivity-labels.png)
 
@@ -362,16 +322,17 @@ You can also change and apply a label from this page:
 
 ## Support for sensitivity labels
 
-When you use admin centers that support sensitivity labels, you see all sensitivity labels for your tenant. In comparison, user apps and services that filter sensitivity labels according to publishing policies can result in you seeing a subset of those labels.
+When you use admin centers that support sensitivity labels, with the exception of the Azure Active Directory portal, you see all sensitivity labels for your tenant. In comparison, user apps and services that filter sensitivity labels according to publishing policies can result in you seeing a subset of those labels. The Azure Active Directory portal also filters the labels according to publishing policies.
 
 The following apps and services support sensitivity labels configured for sites and group settings:
 
 - Admin centers:
 
   - SharePoint admin center
-  - Azure Active Directory portal
+  - Teams admin center
   - Microsoft 365 admin center
   - Microsoft 365 compliance center
+  - Azure Active Directory portal
 
 - User apps and services:
 
@@ -386,7 +347,6 @@ The following apps and services don't currently support sensitivity labels confi
 
 - Admin centers:
 
-  - Teams admin center
   - Exchange admin center
 
 - User apps and services:

@@ -1,5 +1,5 @@
 ---
-title: "Overview of importing your organization's PST files"
+title: "Learn about importing your organization's PST files"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -23,7 +23,7 @@ ms.custom:
 description: Learn how to use the Import service in the Microsoft 365 compliance center to bulk-import email data (PST files) to user mailboxes.
 ---
 
-# Overview of importing your organization's PST files
+# Learn about importing your organization's PST files
 
 > [!NOTE]
 > This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075).
@@ -77,7 +77,7 @@ Here's an illustration and description of the complete PST import process. The i
 
 5. **Filter the PST data that will be imported to mailboxes** - After the import job is created (and after the PST files from a drive shipping job are uploaded to the Azure Storage location) Microsoft 365 analyzes the data in the PST files (safely and securely) by identifying the age of the items and the different message types included in the PST files. When the analysis is completed and the data is ready to import, you have the option to import all the data contained in the PST files or you can trim the data that's imported by setting filters that control what data gets imported.
 
-6. **Start the PST import job** - After the import job is started, Microsoft 365 uses the information in the PST import mapping file to import the PSTs files from the he Azure Storage location to user mailboxes. Status information about the import job (including information about each PST file being imported) is displayed on the **Import PST files** page in the Microsoft 365 compliance center. When the import job is finished, the status for the job is set to **Complete**.
+6. **Start the PST import job** - After the import job is started, Microsoft 365 uses the information in the PST import mapping file to import the PST files from the Azure Storage location to user mailboxes. Status information about the import job (including information about each PST file being imported) is displayed on the **Import PST files** page in the Microsoft 365 compliance center. When the import job is finished, the status for the job is set to **Complete**.
 
 ## Why import email data to Microsoft 365?
 

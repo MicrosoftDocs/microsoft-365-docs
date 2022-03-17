@@ -2,8 +2,8 @@
 title: "Build and manage assessments in Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -27,7 +27,7 @@ description: "Build assessments in Microsoft Compliance Manager to help you meet
 
 Compliance Manager helps you create assessments that evaluate your compliance with industry and regional regulations that apply to your organization. Assessments are built upon the framework of assessment templates, which contain the necessary controls, improvement actions, and, where applicable, Microsoft actions for completing the assessment. Setting up the most relevant assessments for your organization can help you implement policies and operational procedures to limit your compliance risk.
 
-All of your assessments are listed on the assessments tab of Compliance Manager. Learn more about [how to filter your view of your assessments and interpret status states](compliance-manager-setup.md#assessments-page).
+All of your assessments are listed on the assessments tab of Compliance Manager. Learn more about [how to filter your view of your assessments and interpret status states](compliance-manager-setup.md#assessments-page).
 
 > [!IMPORTANT]
 > The templates available to your organization for building assessments depend on your licensing agreement. [Review licensing details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
@@ -68,7 +68,7 @@ You can create a group while creating a new assessment. Groups can't be created 
 - Related assessment controls in different assessments within the same group automatically update when completed.
 - Groups can contain assessments for the same certification or regulation, but each group can only contain one assessment for a specific product-certification pair. For example, a group can't contain two assessments for Office 365 and NIST CSF. A group can contain multiple assessments for the same product only if the corresponding certification or regulation for each one is different.
 - Deleting an assessment breaks the relationship between that assessment and the group.
-- Groups can't be manually deleted.
+- Groups can't be deleted.
 
 ## Understand templates before creating assessments
 
@@ -80,25 +80,35 @@ To learn more about templates, see [Working with assessment templates](complianc
 
 ## Create assessments
 
-To create an assessment, you will use a wizard to select the template it should use and set the assessment’s properties.
-
 > [!NOTE]
 > Only users who hold a Global Administrator, Compliance Manager Administration, or Compliance Manager Assessor role can create and modify assessments. Learn more about [roles and permissions](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
-To begin building assessments, follow these steps.
+Before you begin, be sure you know which group you'll assign it to, or be prepared to create a new group for this assessment. Read details about [groups and assessments](#understand-groups-before-creating-assessments).
 
-1. Know which group you’ll assign your assessment to, or be prepared to create a new one for this assessment.
+To create an assessment, you'll use a guided process to select a template and designate the associated product. On your **Assessments** page, we suggest starting with **Add Recommended Assessments**, which helps you identify and quickly set up the most relevant assessments for your organization all at once. You can also set up assessments one at a time by selecting **Add assessment**. Follow the steps below to begin building assessments.
 
-2. Open the assessment wizard. You can access this flyout pane from one of two places:
-    - Go to your **assessments** page in Compliance Manager and select **Add assessment**; or
-    - Find the template you want to use on the **assessment templates** tab, view its details, and select **Create assessment**. This will populate the wizard's template selection field for you.
+#### Create assessments based on recommendations for your org type
 
-3. **Select a template**: If you didn't already choose a template in step 2, choose a template to serve as the basis for your assessment. You’ll see the list of templates divided into included and premium categories (see [Template availability and licensing](compliance-manager-templates.md#template-availability-and-licensing) for more information). Select the radio button next to your chosen template, then select **Next**.
+Compliance Manager can indicate which assessments may be most relevant to your organization. When you provide basic information about your organization's industry and locations, we'll recommend which templates to use from our library of over 300 templates. Simply choose among the recommended templates for quick setup of multiple assessments all at once. 
+
+To create one or more assessments based on our recommendations, select **Add Recommended Assessments** from your **Assessments** page and follow these steps:
+   - Select one or more industries that identify your organization, then select **Next**
+   - Select one or more regions for your organization's location, then select **Next**
+   - On the **Choose assessment** screen, select the dropdown arrow next to **Recommended templates** to see the list of assessments we think apply to your organization. Check the boxes next to the templates you want to use for creating assessments, then select **Next**.
+   - Review your final selections and select **Add Recommended Assessments** to create your new assessments.
+
+#### Create an assessment using a guided process
+
+1. From your **Assessments** page, select **Add assessment**. This will put you into the assessment creation wizard.
+
+2. On the **Base template** screen, select **Select template** to choose the template for your assessment.
+
+3. On the flyout pane, choose the template for the regulation or certification on which to base the assessment. The list of templates divided into included and premium categories ([get details](compliance-manager-templates.md#template-availability-and-licensing)). The **Activated/Licensed templates** counter at the top of the flyout pane shows you how may templates you're using out of the total number available or your organization to use ([learn more](compliance-manager-templates.md#active-and-inactive-templates).) Select the radio button next to your chosen template, then select **Save**. You'll return to your **Base template** screen where you can review template details, then continue by selecting **Next**.
 
 4. **Product, name, and group:** Set these properties to identify your assessment, choose which product it will be evaluating, and assign it to a group.
 
-    - **Product**: Select the product you want your assessment to apply to. If you are using a Microsoft template, such as one designed for Microsoft 365, this field will be populated for you to indicate the appropriate product and cannot be changed. If you’re using a universal template, select whether you’re creating this assessment for a new product or a custom product you have already defined in Compliance Manager. If you choose a new product, enter its name. Note that you cannot select a pre-defined Microsoft product when using a universal template.
-    - **Name**: Enter a name for your assessment in the **Assessment name** field. Assessment names must be unique within groups. If the name of your assessment matches the name of another assessment in any given group, you’ll receive an error asking you to create a different name.
+    - **Product**: Select the product you want your assessment to apply to. If you are using a Microsoft template, such as one designed for Microsoft 365, this field will be populated for you to indicate the appropriate product and cannot be changed. If you’re using a universal template, select whether you’re creating this assessment for a new product or a custom product you have already defined in Compliance Manager. If you choose a new product, enter its name. Note that you cannot select a pre-defined Microsoft product when using a universal template.
+    - **Assessment name**: Enter a name for your assessment in the **Assessment name** field. Assessment names must be unique within groups. If the name of your assessment matches the name of another assessment in any given group, you’ll receive an error asking you to create a different name.
     - **Group**: Assign your assessment to a group. You can either:
         - Select **Use existing group** to assign it to a group you’ve already created; or
         - Select **Create new group** to create a new group and assign this assessment to it:
@@ -107,9 +117,9 @@ To begin building assessments, follow these steps.
 
     When finished, select **Next**.
 
-5. **Review and finish:** The last screen of the wizard shows the template, name, and group chosen for the assessment. You can edit any of these settings from the links on the screen, which take you back to the relevant steps in the wizard. When you're ready, select **Create assessment**.
+5. **Review and finish:** Review your selections and make any necessary edits. When you're satisfied ready, select **Create assessment**.
 
-6. The next screen confirms that you’ve successfully created your new assessment. Select **Done** to close the wizard, and your new assessment's details page will appear on the screen.
+The next screen confirms the assessment was created. When you select **Done**, you'll be taken to your new assessment's details page.
 
 If you see an **Assessment failed** screen after selecting **Create assessment**, select **Try again** to re-create your assessment.
 
@@ -165,9 +175,11 @@ Learn more about [how controls and improvement actions are tracked and scored.](
 
 When an update is available for an assessment, you’ll see a notification and have the option to accept the update or defer it for a later time.
 
+Updates are available for assessments based on Microsoft templates, such as those designed for use with Microsoft 365. If your organization is using universal templates for assessing other products, inheritance may not be supported. For more information, see [Extend assessment templates](compliance-manager-templates-extend.md).
+
 ### What causes an update
 
-An assessment update occurs when there are underlying template changes that impact scoring. Changes may involve adjusting control mapping or other guidance based on regulatory changes or product changes. Assessment updates can originate from your organization (such as, when a [custom template is modified](compliance-manager-templates-modify.md) as well as from Microsoft.
+An assessment update occurs when there are underlying template changes that impact scoring. Changes may involve adjusting control mapping or other guidance based on regulatory changes or product changes. Assessment updates can originate from your organization (such as when a [custom template is modified](compliance-manager-templates-modify.md)) as well as from Microsoft.
 
 If Microsoft updates a Compliance Manager template that you extended, your assessment will inherit those updates once you accept them. Your assessment will retain the additional attributes you applied to the assessment when you extended it.
 
@@ -229,8 +241,6 @@ To delete an assessment, follow the steps below:
 2. Select **Delete assessment** in the upper-right corner of your screen.
 
 3. A window will appear asking you to confirm that you want to permanently delete the assessment. Select **Delete assessment** to close the window. You’ll get a confirmation window that your assessment was deleted from Compliance Manager.
-
-If you delete the only assessment in a group, then that group is also deleted from Compliance Manager.
 
 > [!NOTE]
 > You can't delete all of your assessments. Organizations need at least one assessment for Compliance Manager to function properly. If the assessment you want to delete is the only one, add another assessment before deleting the other assessment.

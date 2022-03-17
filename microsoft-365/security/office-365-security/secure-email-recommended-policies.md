@@ -1,8 +1,8 @@
 ---
 title: Secure email recommended policies - Microsoft 365 for enterprise | Microsoft Docs
 description: Describes the policies for Microsoft recommendations about how to apply email policies and configurations.
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: Laurawi
 ms.prod: m365-security
 ms.topic: article
@@ -23,10 +23,6 @@ ms.technology: mdo
 ---
 
 # Policy recommendations for securing email
-
-**Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 
 This article describes how to implement the recommended Zero Trust identity and device access policies to protect organizational email and email clients that support modern authentication and conditional access. This guidance builds on the [Common identity and device access policies](identity-access-policies.md) and also includes a few additional recommendations.
 

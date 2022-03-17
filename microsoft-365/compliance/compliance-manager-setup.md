@@ -2,8 +2,8 @@
 title: "Get started with Microsoft Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -78,14 +78,34 @@ Users with Azure AD identities who don't have Office 365 or Microsoft 365 subscr
 
 The table below shows the functions allowed by each role in Compliance Manager. The table also shows how each [Azure AD role](/azure/active-directory/roles/permissions-reference) maps to Compliance Manager roles. Users will need at least the Compliance Manager reader role, or Azure AD global reader role, to access Compliance Manager.
 
-
 | User can: | Compliance Manager role | Azure AD role | 
 | :------------- | :-------------: | :------------: |
-| **Read but not edit data**| Compliance Manager Reader  | Azure AD Global reader, Security reader | 
-| **Edit data**| Compliance Manager Contribution | Compliance Administrator | 
-| **Edit test results**| Compliance Manager Assessor | Compliance Administrator | 
-| **Manage assessments, and template and tenant data**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  | 
-| **Assign users**| Global Administrator | Global Administrator | 
+| **Read but not edit data**| Compliance Manager Reader  | Azure AD Global reader, Security reader |
+| **Edit data**| Compliance Manager Contribution | Compliance Administrator |
+| **Edit test results**| Compliance Manager Assessor | Compliance Administrator |
+| **Manage assessments, and template and tenant data**| Compliance Manager Administration | Compliance Administrator, Compliance Data Administrator, Security Administrator  |
+| **Assign users**| Global Administrator | Global Administrator |
+
+## Start a premium assessments trial
+
+The Compliance Manager premium assessments trial is a great way to quickly set up assessments that are most relevant to your organization. Our library of over 300 templates correspond to governmental regulations and industry standards around the world.
+Learn more about the [premium assessments trial](compliance-easy-trials-compliance-manager-assessments.md).
+
+You can start your trial directly from Compliance Manager and set up recommended assessments by following these steps:
+
+1. On the Compliance Manager **Overview** page, select **Start trial**. You'll enter a trial activation wizard which will ask questions to help us recommend assessments for your organization.
+
+2. On the **Activate trial** page, select **Next** to begin your free 90 day premium assessments trial and continue with creating assessments.
+
+3. Select one or more industries that identify your organization, then select **Next**.
+
+4. Select one or more regions for your organization's location, then select **Next**.
+
+5. On the **Choose assessments** screen, select the dropdown arrow next to **Recommended templates** to see the list of assessments we think apply to your organization. Check the boxes next to the templates you want to use for creating assessments, then select **Next**.
+
+6. Review your final selections and select **Add Recommended Assessments** to create your new assessments.
+
+Learn more about getting started with assessments by visiting the [Assessments page](#assessments-page) section below.
 
 ## Settings for automated testing and user history
 
@@ -96,13 +116,15 @@ The Compliance Manager settings in the Microsoft 365 compliance center allow you
 
 ### Set up automated testing
 
-Some improvement actions in Compliance Manager are also monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). You can set up automated testing of actions that are jointly monitored, which means that when an action is tested and updated in Secure Score, those results synch with the same actions in Compliance Manager and count toward your compliance score.
+Compliance Manager detects signals from other Microsoft 365 compliance solutions that your organization subscribes to, including information governance, information protection, data loss prevention, communication compliance, and insider risk management. In each improvement action's details page, the **Testing logic** field on the **Testing** tab will show what's required in the other solution in order for the action to pass and earn points toward your compliance score.
 
-Automatic testing is turned on by default for organizations new to Compliance Manager. When you first deploy Microsoft 365 or Office 365, it takes approximately seven days for Secure Score to fully collect data and factor it into your compliance score.  When automated testing is turned on, the action’s test date won’t be updated, but its test status will update. When new assessments are created, scores automatically include Microsoft control scores and Secure Score integration.
+Compliance Manager also detects signals from complementary improvement actions that are also monitored by [Microsoft Secure Score](../security/defender/microsoft-secure-score.md). Using these signals, Compliance Manager can automatically test certain improvement actions for you, which helps maximize efficiency in your compliance activities. When an improvement action is successfully tested and implemented, you receive the full amount of points, which gets credited to your overall compliance score.
+
+Automatic testing is turned on by default for organizations new to Compliance Manager. When you first deploy Microsoft 365 or Office 365, it takes approximately seven days to fully collect data and factor it into your compliance score. When automated testing is turned on, the action’s test date won’t be updated, but its test status will update. When new assessments are created, scores automatically include Microsoft control scores and Secure Score integration.
+
+#### Manage automated testing settings
 
 The global administrator for your organization can change the settings for automated testing at any time. You can turn off automated testing for common improvement actions, or turn it on for individual actions. Follow the instructions below to change your automated testing settings.
-
-#### To manage your automated testing settings:
 
 1. Select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> in the Microsoft 365 compliance center.
 
@@ -117,6 +139,10 @@ The global administrator for your organization can change the settings for autom
 6. Select **Save** to save your settings. You’ll receive a confirmation message at the top of your screen that your selection was saved. If you receive a failure notice, try again.
 
 **Note:** Only the global administrator can turn on or off automatic updates for all actions. The Compliance Manager Administrator can turn on automatic updates for individual actions, but not for all actions globally.
+
+**Learn more**
+- [Learn more about how continuous monitoring contributes to your compliance score](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls).
+- [Learn more about designating a testing source for an improvement action](compliance-manager-improvement-actions.md#update-testing-source).
 
 ### Manage user history
 
@@ -254,16 +280,17 @@ To remove filters:
 
 ### View your improvement actions
 
-The Compliance Manager dashboard shows your **key improvement actions.** To view all of your improvement actions, select the Improvement actions tab on your dashboard, which brings you to your improvement actions page. You can also select View all improvement actions underneath the list of key improvement actions on your dashboard to get to your improvement actions page.
+The Compliance Manager dashboard shows your key improvement actions. To view all of your improvement actions, select the **Improvement actions** tab on your dashboard, which brings you to your improvement actions page. You can also select **View all improvement actions** underneath the list of key improvement actions on your dashboard to get to your improvement actions page.
 
 The improvement actions page shows all of the improvement actions that are managed by your organization. Actions that are managed by Microsoft can be viewed within each assessment (learn more about [Microsoft actions](compliance-manager-assessments.md#microsoft-actions-tab)).
 
-If you have a long list of actions on your improvement actions page, it may be helpful to filter your view. Select **Filter** at the upper-right corner of the actions list. When the **Filters** flyout pane appears, select your criteria based on regulations and standards, solution, and group. You can also customize your view by selecting **Group** in the upper-right corner. From the drop-down menu, select to view by group, solution, category, action type, or status.
+If you have a long list of actions on your improvement actions page, it may be helpful to filter your view. Select **Filter** at the upper-right corner of the actions list. When the **Filters** flyout pane appears, select your criteria from the available options. You can also customize your view by selecting **Group** in the upper-right corner. From the drop-down menu, select to view by group, solution, category, action type, or status.
 
 The default view for this page does not show improvement actions with a test status of **Passed**. To view actions that have passed testing, check the **Passed** box in the Filters flyout pane. Only actions with a test status of **Passed** count toward your score. Some actions may show a **pending update label.** Learn more about [updates to improvement actions](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions).
 
 The improvement actions page shows the following data points for each improvement action:
 
+- **Products**: the product being evaluated.
 - **Points achieved**: the number of points achieved out of the total available by completing the action
 - **Regulations**: the regulations or standards pertaining to the action
 - **Group**: the group to which you assigned the action
@@ -271,16 +298,19 @@ The improvement actions page shows the following data points for each improvemen
 - **Assessments**: the assessments that contain the action
 - **Categories**: the related data protection category (such as, protect information, manage devices, etc.)
 - **Test status**:
-    - **None** – no status update recorded
-    - **Not assessed** - testing hasn't started
-    - **Passed** - implementation successfully tested
-    - **Failed low risk** - testing failed, low risk
-    - **Failed medium risk** - testing failed, medium risk
-    - **Failed high risk** - testing failed, high risk
-    - **Out of scope** – the action is not in scope for the assessment and doesn't impact your score
-    - **To be detected** - for manual test, indicates an action has been implemented but not tested; for automated test, indicates an action is waiting for automation result
-    - **Could not be detected** - automated status can't be determined
-    - **Partially tested** – automated scoring that awards partial points
+  - **None** – no status update recorded
+  - **Not assessed** - testing hasn't started
+  - **Passed** - implementation successfully tested
+  - **Failed low risk** - testing failed, low risk
+  - **Failed medium risk** - testing failed, medium risk
+  - **Failed high risk** - testing failed, high risk
+  - **Out of scope** – the action is not in scope for the assessment and doesn't impact your score
+  - **To be detected** - for manual test, indicates an action has been implemented but not tested; for automated test, indicates an action is waiting for automation result
+  - **Could not be detected** - automated status can't be determined
+  - **Partially tested** – automated scoring that awards partial points
+- **Action type**: indicates whether the improvement action is technical, meaning it can be implemented within a solution or product, or non-technical, which would be implemented outside of a technical solution
+- **Assigned to**: the person this action has been assigned to, if applicable
+- **Testing source**: indicates whether the testing source for the action is manual, automatic, or inherited from a parent
 
 **Learn more:** [See how to assign and perform work on improvement actions](compliance-manager-improvement-actions.md).
 
@@ -295,7 +325,7 @@ Find the solutions page by selecting the **Solutions** tab on your Compliance Ma
 To filter your view of solutions:
 
 1. Select **Filter** at the top-left corner of your assessments list.
-2. On the **Filters** flyout pane, place a check next to the desired criteria (standards and regulations, solution, action type, Compliance Manager group, category).
+2. On the **Filters** flyout pane, place a check next to the desired criteria (regulations, solutions, action types, groups, categories).
 3. Select the **Apply** button. The filter pane will close and you’ll see your filtered view.
 
 You can also modify your view to see assessments by group, product, or regulation by selecting the type of grouping from the **Group** drop-down menu above your assessments list.

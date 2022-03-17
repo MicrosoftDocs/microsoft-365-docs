@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - SharePoint activity"
+title: "Microsoft 365 admin center SharePoint activity reports"
 f1.keywords:
 - NOCSH
 ms.author: kwekua

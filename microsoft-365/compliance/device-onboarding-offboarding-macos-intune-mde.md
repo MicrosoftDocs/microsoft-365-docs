@@ -9,7 +9,7 @@ ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance 
 search.appverid:
@@ -21,10 +21,6 @@ description: Learn how to onboard and offboard macOS devices into Microsoft 365 
 
 > [!IMPORTANT]
 > Use this procedure ***if you have*** deployed Microsoft Defender for Endpoint (MDE) to your macOS devices
-
-## Get registered
-
-To get access to this feature, you must register your tenant with Microsoft. See, [get registered for Microsoft 365 macOS support](https://aka.ms/EndpointDLPIgnite21-Previews).
 
 **Applies to:**
 

@@ -1,8 +1,8 @@
 ---
 title: Recommended secure document policies - Microsoft 365 for enterprise | Microsoft Docs
 description: Describes the policies for Microsoft recommendations about how to secure SharePoint file access.
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.prod: m365-security
 ms.topic: article
@@ -22,12 +22,6 @@ ms.technology: mdo
 ---
 
 # Policy recommendations for securing SharePoint sites and files
-
-**Applies to**
-- [Exchange Online Protection](exchange-online-protection-overview.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- SharePoint Online 
-
 
 This article describes how to implement the recommended Zero Trust identity and device access policies to protect SharePoint and OneDrive for Business. This guidance builds on the [common identity and device access policies](identity-access-policies.md).
 
