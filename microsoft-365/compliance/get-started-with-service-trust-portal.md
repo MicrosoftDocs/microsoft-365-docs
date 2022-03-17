@@ -25,7 +25,7 @@ The Microsoft Service Trust Portal provides a variety of content, tools, and oth
 
 ## Accessing the Service Trust Portal
 
-The Service Trust Portal contains details about Microsoft's implementation of controls and processes that protect our cloud services and the customer data therein. To access some of the resources on the Service Trust Portal, you must log in as an authenticated user with your Microsoft cloud services account (either an Azure Active Directory organization account or a Microsoft Account) and review and accept the Microsoft Non-Disclosure Agreement for Compliance Materials.
+The Service Trust Portal contains details about Microsoft's implementation of controls and processes that protect our cloud services and the customer data therein. To access some of the resources on the Service Trust Portal, you must log in as an authenticated user with your Microsoft cloud services account (Azure Active Directory organization account) and review and accept the Microsoft Non-Disclosure Agreement for Compliance Materials.
 
 ### Existing customers
 
@@ -36,7 +36,7 @@ Existing customers can access the Service Trust Portal at <https://aka.ms/STP> w
 - Azure
 
  > [!NOTE]
- > Azure Active Directory accounts associated with organizations have access to the full range of documents and features like Compliance Manager. Microsoft accounts created for personal use have limited access to Service Trust Portal content.
+ > Azure Active Directory accounts associated with organizations have access to the full range of documents and features like Compliance Manager.
 
 ### New customers and customers evaluating Microsoft online services
 
