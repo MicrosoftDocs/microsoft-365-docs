@@ -231,7 +231,7 @@ Import-Csv C:\O365Admin\GroupsAndPermissions.csv | ForEach {New-SPOSiteGroup -Gr
 Import-Csv C:\O365Admin\Users.csv | ForEach {Add-SPOUser -Group $_.Group –LoginName $_.LoginName -Site $_.Site}
 ```
 
-The script imports the CSV file contents and uses the values in the columns to populate the parameters of the **New-SPOSiteGroup** and **Add-SPOUser** commands. In our example, we're saving this file to theO365Admin folder on drive C, but you can save it wherever you want.
+The script imports the CSV file contents and uses the values in the columns to populate the parameters of the **New-SPOSiteGroup** and **Add-SPOUser** commands. In our example, we're saving this file to the O365Admin folder on drive C, but you can save it wherever you want.
 
 Now, let's remove a bunch of people for several groups in different sites using the same CSV file. Here's an example command:
 
