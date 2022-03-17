@@ -130,7 +130,7 @@ Shared channels and their associated SharePoint sites inherit the label from the
 
 Users who are not allowed to communicate per [information barrier](/microsoftteams/information-barriers-in-teams) policies can't be part of shared channel. Information barrier policies are only effective for users in the host organization. If users are external participants in another organization's shared channel, information barrier policies don't apply.
 
-#### eDiscovery
+##### eDiscovery
 
 Admins can perform searches for all users in the channel. All channels, including the shared channel, are discoverable. All message data in the channel regardless of who added the data is discoverable by the compliance admin.
 
