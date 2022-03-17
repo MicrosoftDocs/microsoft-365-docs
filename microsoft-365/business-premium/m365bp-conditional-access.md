@@ -34,7 +34,10 @@ Microsoft 365 Business Premium was designed to help protect your company's user 
 
 Some businesses require additional security. If your organization has complex security requirements or you need more granular control over your security policies, then you should consider using Conditional Access.
 
-This article provides information about security defaults and Conditional Access.
+This article provides information about:
+
+- [Security defaults](#security-defaults) (for most businesses)
+- [Conditional Access](#conditional-access) (for businesses with more stringent security requirements)
 
 > [!NOTE]
 > If you've been using Conditional Access policies, you'll need to turn them off before using security defaults. You can use either security defaults or Conditional Access policies, but you can't use both at the same time.
