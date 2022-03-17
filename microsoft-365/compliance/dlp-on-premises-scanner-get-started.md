@@ -1,5 +1,5 @@
 ---
-title: "Get started with Microsoft 365 data loss prevention on-premises scanner"
+title: "Get started with Microsoft Purview data loss prevention on-premises scanner"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MET150
-description: "Set up Microsoft 365 data loss prevention on-premises scanner"
+description: "Set up Microsoft Purview data loss prevention on-premises scanner"
 ---
 
 # Get started with the data loss prevention on-premises scanner
 
-This article walks you through the prerequisites and configuration for the Microsoft 365 data loss prevention on-premises scanner.
+This article walks you through the prerequisites and configuration for the Microsoft Purview data loss prevention on-premises scanner.
 
 ## Before you begin
 
@@ -55,7 +55,7 @@ Data from DLP on-premises scanner can be viewed in [Activity explorer](data-clas
 
 There are roles and role groups in preview that you can test out to fine tune your access controls.
 
-Here's a list of Microsoft Information Protection (MIP) roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Here's a list of Microsoft Purview Information Protection  roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Information Protection Admin
 - Information Protection Analyst
