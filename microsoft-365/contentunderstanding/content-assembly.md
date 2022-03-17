@@ -112,13 +112,13 @@ On the **All placeholders** panel:
 
 2. In the **How authors fill in this placeholder** section, choose **Select from managed metadata term set or term**, and then choose **Select**.
 
-3. Search for or select the term set or term to associate with the placeholder, and then select **Save**.
+3. On the **Select term sets or terms** panel, search for or select the term set or term to associate with the placeholder, and then select **Save**.
 
-   ![Screenshot of the Select a list for adding a source column page showing lists.](../media/content-understanding/content-assembly-create-template-7.png)
+   ![Screenshot of the Select term sets or terms panel.](../media/content-understanding/content-assembly-select-term.png)
 
 4. When you’re done, you’ll see that the selected term set or term has been associated with the placeholder. 
 
-   ![Screenshot of the Select a source column from the existing list page showing column names.](../media/content-understanding/content-assembly-create-template-8.png)
+   ![Screenshot of the All placeholders panel showing the associated term set or term.](../media/content-understanding/content-assembly-associated-term.png)
 
 5. If you want users to be able to add multiple values corresponding to the term set or term, select **Allow multiple values**. Also, if the term set is configured as an open term set, you can select **Allow new values**. If you enable this option, users who generate documents from the modern template can add new terms to the term set and add those terms as placeholder values.
 
