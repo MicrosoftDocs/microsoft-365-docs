@@ -127,7 +127,8 @@ On the **All placeholders** panel:
 
 You can create as many placeholders as you think are necessary. When you're done, you can choose to save the template as a draft or publish the template.
 
-   - **Save draft** – Saves the template as a draft and you can access it later. You can view, edit, or publish saved drafts from the **Modern templates** section by selecting **New** > **Edit New menu** from the document library. 
+   - **Save draft** – Saves the template as a draft and you can access it later. You can view, edit, or publish saved drafts from the **Modern templates** section by selecting **New** > **Edit New menu** from the document library.
+ 
    - **Publish** – Publishes the template to be used by other users in the organization to create documents. You can view, edit, or unpublish *published* templates from the **Modern templates** section by selecting **New** > **Edit New menu** from the document library. 
 
 ## Edit a modern template
