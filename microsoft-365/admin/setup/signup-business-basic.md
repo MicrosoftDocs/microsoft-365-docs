@@ -64,7 +64,7 @@ To buy, and sign up for Microsoft 365 Business Basic subscription, complete the 
 
 3. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Office apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set up steps.
 
-Follow these steps to [finish setting up](setup-apps-for-business.md) your Microsoft 365 Apps for business subscription. You can also [add a domain](../setup/add-domain.md) when you're ready.
+Follow these steps to [finish setting up](setup-apps-for-business.md) your Microsoft Business Basic subscription. You can also [add a domain](../setup/add-domain.md) when you're ready.
 
 ## Set up Microsoft 365 Business Basic
 
