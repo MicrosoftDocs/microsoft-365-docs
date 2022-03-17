@@ -68,7 +68,7 @@ You can create a group while creating a new assessment. Groups can't be created 
 - Related assessment controls in different assessments within the same group automatically update when completed.
 - Groups can contain assessments for the same certification or regulation, but each group can only contain one assessment for a specific product-certification pair. For example, a group can't contain two assessments for Office 365 and NIST CSF. A group can contain multiple assessments for the same product only if the corresponding certification or regulation for each one is different.
 - Deleting an assessment breaks the relationship between that assessment and the group.
-- Groups can't be manually deleted.
+- Groups can't be deleted.
 
 ## Understand templates before creating assessments
 

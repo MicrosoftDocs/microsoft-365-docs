@@ -344,12 +344,12 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Manage and monitor priority accounts
           href: setup/priority-accounts.md
+        - name: Turn on Idle session timeout
+          href: manage/idle-session-timeout-web-apps.md
         - name: Enable Modern Authentication for Office 2013
           href: security-and-compliance/enable-modern-authentication.md
         - name: Pre-requisites for data protection
           href: security-and-compliance/pre-requisites-for-data-protection.md
-        - name: Security features
-          href: security-and-compliance/secure-your-business-data.md
         - name: Increase threat protection
           href: security-and-compliance/increase-threat-protection.md
         - name: Threats detected by Microsoft Defender Antivirus
@@ -474,3 +474,4 @@
       href: get-help-support.md
     - name: Navigation guide
       href: ../microsoft-365-docs-navigation-guide.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json
+      
