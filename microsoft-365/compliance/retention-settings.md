@@ -398,6 +398,8 @@ Considerations for the relabeling option:
 
 - You won't be able to delete a retention label that's selected as a replacement label.
 
+- You can choose a replacement label that's configured for another replacement label. There's no limit to the number of replacement labels an item can have.
+
 - If the replacement label marks the item as a record or regulatory record but can't be applied because the file is checked out, the relabel process is tried when the file is checked back in again, or checkout is discarded.
 
 ### Deleting content that's older than a specific age
