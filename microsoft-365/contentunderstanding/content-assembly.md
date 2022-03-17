@@ -122,7 +122,7 @@ On the **All placeholders** panel:
 
 5. If you want users to be able to add multiple values corresponding to the term set or term, select **Allow multiple values**. Also, if the term set is configured as an open term set, you can select **Allow new values**. If you enable this option, users who generate documents from the modern template can add new terms to the term set and add those terms as placeholder values.
 
-   > [!NOTE]
+   > [!TIP]
    > When you enable the **Allow new values** option (only allowed for open term sets), users are less likely to add redundant terms in the term store. Redundant terms can make it difficult for admins to manage a term set.
 
 You can create as many placeholders as you think are necessary. When you're done, you can choose to save the template as a draft or publish the template.
@@ -164,7 +164,7 @@ You can use a *published* modern template to quickly create similar documents wi
 
 3. On the **Create a document from a template** panel, enter the information, and then select **Create document**.
 
-   ![Screenshot of document library showing the Create a document from a template panel.](../media/content-understanding/content-assembly-create-document-2.png)
+   ![Screenshot of document library showing the Create a document from a template panel.](../media/content-understanding/content-assembly-create-document-2b.png)
 
    To help reduce time and effort involved in filling values for placeholders, SharePoint Syntex provides:
 
@@ -172,11 +172,11 @@ You can use a *published* modern template to quickly create similar documents wi
       - Autofill placeholder values if able to uniquely identify a record for placeholders associated with the same list.
 
 > [!NOTE]
-> - Currently, only Microsoft Word documents (.docx extension) are supported for creating a template. Before uploading the document, ensure that the Word document doesn't have **Track changes** enabled or comments. If your document contains text placeholders for images, ensure that they are not text-wrapped. We do not support **Content Controls** in Word at the moment. If you want to create a template from a Word document with content controls, please remove them before creating a modern template.
+> - Currently, only Microsoft Word documents (.docx extension) are supported for creating a template. Before uploading a Word document, ensure that it doesn't include comments or have **Track changes** enabled. If the document contains text placeholders for images, ensure that they are not text-wrapped. Content controls in Word are currently not supported. If you want to create a template from a Word document with content controls, remove them before you create a modern template.
 >- The template and the document are associated with one document library. To use the template in another document library, you will need to create the template again in that document library.
 >- The uploaded document that is used to create the modern template will be saved as a separate copy and placed in the /forms directory of the document library. The original file on the disk will be unaffected.
 >- You can create placeholders for text only. Currently, images, smart art, tables, and bullet lists are not supported.
->- Once a document is created from a template, it is not associated with the template.
+>- Once a document is created from a template, it's not associated with the template.
 
 
 
