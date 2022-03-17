@@ -106,6 +106,10 @@ The following Microsoft Defender Antivirus component versions must be no more th
 
 Keeping Microsoft Defender Antivirus versions current helps reduce ASR rules false positive results and improves Microsoft Defender Antivirus detection capabilities. For more details on the current versions and how to update the different Microsoft Defender Antivirus components visit [Microsoft Defender Antivirus platform support](manage-updates-baselines-microsoft-defender-antivirus.md).
 
+### Caveat
+
+Some rules don’t work well if un-signed, internally developed application and scripts are in high usage. It is more difficult to deploy ASR rules if code signing is not enforced.
+
 ## ASR rules deployment steps
 
 As with any new, wide-scale implementation which could potentially impact your line-of-business operations, it is important to be methodical in your planning and implementation. Because of the powerful capabilities of ASR rules in preventing malware, careful planning and deployment of these rules is necessary to ensure they work best for your unique customer workflows. To work in your environment, you need to plan, test, implement, and operationalize ASR rules carefully.  

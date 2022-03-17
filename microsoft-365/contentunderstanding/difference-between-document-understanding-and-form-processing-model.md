@@ -1,5 +1,5 @@
 ---
-title: Difference between document understanding and form processing models
+title: Differences between document understanding and form processing models
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -12,10 +12,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn about key difference between a document understanding model and a form processing model.
+description: Learn about key differences between a document understanding model and a form processing model.
 ---
 
-# Difference between document understanding and form processing models 
+# Differences between document understanding and form processing models 
 
 Content understanding in Microsoft SharePoint Syntex allows you to identify and classify documents that are uploaded to SharePoint document libraries, and extract relevant information from each file.  For example, as files are uploaded to a SharePoint document library, all files that are identified as *Purchase Orders* are classified as such, and then displayed in a custom document library view. Additionally, you can pull specific information from each file (for example, *PO Number* and *Total*) and display it as a column in your document library view. 
 
@@ -79,7 +79,7 @@ Use the following table to understand when to use forms processing and when to u
 | Supported regions| Form processing relies on Power Platform. For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). | Available in all regions.|
 | Transactional cost | Uses AI Builder credits.<br>Credits can be purchased in batches of 1M.<br>1M credits are included when 300+ SharePoint Syntex licenses are purchased.<br>1M credits will allow processing of 2,000 file pages.<br>| N/A |
 | Capacity | Uses the default Power Platform environment (custom environments with Dataverse database supported). | Does not have capacity restrictions.|
-| Supported languages| English <br>Coming later in 2021: Latin alphabet languages | Models work on all latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese.|
+| Supported languages| English <br>Coming later in 2022: Latin alphabet languages | Models work on all latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese.|
 
 ## See Also
 

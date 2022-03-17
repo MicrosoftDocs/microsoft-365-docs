@@ -2,8 +2,8 @@
 title: "Change Microsoft 365 for business plans manually"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, jmueller
 audience: Admin
@@ -14,8 +14,8 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 ms.custom: 
-- AdminSurgePortfolio
 - commerce_subscriptions
+- AdminSurgePortfolio
 search.appverid: MET150
 description: "Change subscriptions manually by buying a new subscription and ensuring that both the subscriptions are listed and active."
 ROBOTS: NOINDEX
