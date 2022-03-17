@@ -1,5 +1,5 @@
 ---
-title: "Sign up for a Microsoft 365 Business Basic"
+title: "Sign up for Microsoft 365 Business Basic"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -27,7 +27,7 @@ search.appverid:
 description: "Learn how to sign up for a Microsoft 365 Business Basic subscription."
 ---
 
-# Sign up for a Microsoft 365 Business Basic
+# Sign up for Microsoft 365 Business Basic
 
 Want to sign up for a Microsoft 365 Business Basic?
 
@@ -44,7 +44,7 @@ There are a couple of ways to get started:
 
 ## Sign up steps
 
-To buy and sign up for Microsoft 365 Business Basic, complete the following steps.
+To buy, and sign up for Microsoft 365 Business Basic subscription, complete the following steps.
 
 > [!IMPORTANT]
 > The person who signs up for Microsoft 365 for business (usually the business owner) automatically becomes the technical administrator of the organization. You can add other people as admins if you want help managing your Microsoft 365 services. Check out [Assign admin roles](../add-users/assign-admin-roles.md) for more info.
@@ -76,7 +76,7 @@ For steps on how to buy or add a domain, see [Set up Microsoft 365 Business Basi
 
 To provide customers with the greatest amount of flexibility, different payment options are available.
 
-- Microsoft 365 Business Basic, Microsoft 365 Apps for business, Microsoft 365 Business Standard, and Microsoft 365 Business Premium plans are available for monthly commitment payment or annual commitment payment.
+- Microsoft 365 business plans are available for monthly commitment payment or annual commitment payment.
 - Monthly commitment payment: You pay month by month, and you can cancel at any time.
 - Annual commitment payment: You sign up for a one-year subscription, but you can choose to pay month to month or pay for the entire year at the time you sign up. There is a discount for using this payment option.
 
@@ -90,4 +90,4 @@ Contact our small business support experts who can help you change your business
 
 ## Related articles
 
-[Set up Microsoft Business Baisc](setup-business-basic.md)
+[Set up Microsoft 365 Business Baisc](setup-business-basic.md)
