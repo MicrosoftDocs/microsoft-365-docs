@@ -12,7 +12,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to automatically create documents and other content using content assembly in Microsoft SharePoint Syntex.
+description: Learn how to automatically create documents and other content using a modern template in Microsoft SharePoint Syntex.
 ---
 
 # Create documents using content assembly in Microsoft SharePoint Syntex
