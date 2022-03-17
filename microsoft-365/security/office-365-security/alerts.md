@@ -7,7 +7,7 @@ author: MSFTTracyP
 manager: dansimp
 ms.date: 
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.localizationpriority: medium
 search.appverid: 
   - MOE150
