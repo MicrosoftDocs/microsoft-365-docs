@@ -130,7 +130,7 @@ When **Access by restricted apps** is selected in a policy and a user uses an ap
 > Do not include the path to the executable, but only the executable name (such as browser.exe).
 
 > [!IMPORTANT]
-> The action (`audit`, `block with override`, or `block`) defined for apps that are on the restricted apps list ***ONLY APPLIES WHEN A USER ATTEMPT TO ACCESS A PROTECTED ITEM.*** 
+> The action (`audit`, `block with override`, or `block`) defined for apps that are on the restricted apps list only applies when a user attempts to ***access*** a protected item. 
 
 #### File activities for apps in restricted app groups (preview)
 
