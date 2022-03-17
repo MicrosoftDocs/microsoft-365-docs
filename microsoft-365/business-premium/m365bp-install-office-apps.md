@@ -142,7 +142,9 @@ For additional details and information:
  
 - [Upgrade users to the latest Office apps](../admin/setup/upgrade-users-to-latest-office-client.md)
 
-<br>
+## Next objective
+
+Set up protection for [unmanaged devices](m365bp-protect-pcs-macs.md)
 
 ## Contact support
 

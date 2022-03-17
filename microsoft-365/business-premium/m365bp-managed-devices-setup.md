@@ -61,6 +61,10 @@ Follow specific device enrollment guidance below.
 1. Select **Android** > **Android enrollment**.
 1. Choose **Managed Google Play** and grant Microsoft permission to send information to Google.
 
+## Next objective
+
+Make sure to [install the Office apps](m365bp-install-office-apps.md)
+
 <!---
 KCNote: Couldn't tell where this came into play after looking at the Endpoint Manager admin center...
 

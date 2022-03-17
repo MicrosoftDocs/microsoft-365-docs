@@ -65,3 +65,7 @@ You can also reduce the risk of malware by using software only from reliable sou
 
 **Turn on firewall protection**<p>
 Use firewall settings to protect your Mac from unwanted contact initiated by other computers when you're connected to the Internet or a network. Without this protection, your Mac might be more vulnerable to unauthorized access. See [about the application firewall](https://support.apple.com/HT201642) for instructions.
+
+## Next objective
+
+Learn how to [onboard devices to Microsoft Defender](m365bp-managed-devices-setup.md)

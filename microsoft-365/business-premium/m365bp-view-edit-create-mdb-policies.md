@@ -115,6 +115,7 @@ These policies are part of Microsoft Defender for Business, which is included in
    - When you’re ready to proceed, choose **Create policy**.
 
 
-## Next steps
+## Next objective
 
-[Device groups in Microsoft 365 Business Premium](m365bp-device-groups-mdb.md)
+Set up and manage [device groups](m365bp-device-groups-mdb.md)
+
