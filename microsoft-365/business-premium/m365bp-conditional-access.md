@@ -80,3 +80,8 @@ To learn more about Conditional Access, see [What is Conditional Access?](/azure
 
 > [!NOTE]
 > If you have a plan or license that provides Conditional Access but haven't yet created any Conditional Access policies, you're welcome to use security defaults. However, you'll need to turn off security defaults before you can use Conditional Access policies.
+
+## Next objective
+
+Set up ways to [protect against malware and other threats](m365bp-increase-protection.md)
+
