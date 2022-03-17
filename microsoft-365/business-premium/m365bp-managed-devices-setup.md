@@ -63,7 +63,7 @@ Follow specific device enrollment guidance below.
 
 ## Next objective
 
-Make sure to [install the Office apps](m365bp-install-office-apps.md)
+Make sure to [install the Office apps](m365bp-install-office-apps.md).
 
 <!---
 KCNote: Couldn't tell where this came into play after looking at the Endpoint Manager admin center...

@@ -129,5 +129,5 @@ If you want to offboard a device, use one of the following procedures:
 
 ## Next objective
 
-Take time to [review and edit](m365bp-view-edit-mdb-policies.md)
+Take time to [review and edit](m365bp-view-edit-create-mdb-policies.md).
 

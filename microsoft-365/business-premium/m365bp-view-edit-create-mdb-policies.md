@@ -117,5 +117,5 @@ These policies are part of Microsoft Defender for Business, which is included in
 
 ## Next objective
 
-Set up and manage [device groups](m365bp-device-groups-mdb.md)
+Set up and manage [device groups](m365bp-device-groups-mdb.md).
 

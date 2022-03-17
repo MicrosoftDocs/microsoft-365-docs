@@ -144,7 +144,7 @@ For additional details and information:
 
 ## Next objective
 
-Set up protection for [unmanaged devices](m365bp-protect-pcs-macs.md)
+Set up protection for [unmanaged devices](m365bp-protect-pcs-macs.md).
 
 ## Contact support
 

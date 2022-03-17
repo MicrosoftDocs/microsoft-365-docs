@@ -40,6 +40,6 @@ After your admin has required you to use MFA and you've set up an authenticator 
 
 ## Next objective
 
-Figure out how to [set up managed devices](m365bp-managed-devices-setup.md)
+Figure out how to [set up managed devices](m365bp-managed-devices-setup.md).
 
 

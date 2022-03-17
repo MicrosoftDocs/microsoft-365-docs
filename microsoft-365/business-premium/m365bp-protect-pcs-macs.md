@@ -68,4 +68,5 @@ Use firewall settings to protect your Mac from unwanted contact initiated by oth
 
 ## Next objective
 
-Learn how to [onboard devices to Microsoft Defender](m365bp-managed-devices-setup.md)
+Learn how to [onboard devices to Microsoft Defender](m365bp-onboard-devices-mdb.md).
+
