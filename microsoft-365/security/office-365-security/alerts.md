@@ -42,12 +42,7 @@ Alerts are available in the Microsoft 365 Defender portal at <https://security.m
 
 The following table describes the tools that are available on the **Alerts** page.
 
-<br>
-
-****
-
 |Tool|Description|
 |---|---|
 |[Manage alerts](../../compliance/create-activity-alerts.md)|Use activity alerts to send email notifications to yourself or other admins when users perform specific activities in Microsoft 365. Activity alerts are similar to searching the audit log for events, except that you'll be sent an email message when an event that you've created an alert for occurs.|
 |[Manage advanced alerts](/cloud-app-security/what-is-cloud-app-security)|Use the **Manage advanced alerts** feature of Microsoft Defender for Cloud Apps to set up policies that can alert you to suspicious and anomalous activity in Microsoft 365. After you're alerted, you can investigate situations that are potentially problematic and, if needed, take action to address security issues.|
-|
