@@ -102,9 +102,9 @@ After you have evaluated all your Exchange and Compliance center DLP policies fo
 >- [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
 >- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
 >- [Using Endpoint data loss prevention](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
->- [Learn about the Microsoft 365 data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner)
+>- [Learn about the Microsoft Purview data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner)
 >- [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)
->- [Use the Microsoft 365 data loss prevention on-premises scanner](dlp-on-premises-scanner-use.md#use-the-microsoft-365-data-loss-prevention-on-premises-scanner)
+>- [Use the Microsoft Purview data loss prevention on-premises scanner](dlp-on-premises-scanner-use.md#use-the-microsoft-365-data-loss-prevention-on-premises-scanner)
 >- [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)
  
 8. Review the migration wizard session settings. Select **Next**.

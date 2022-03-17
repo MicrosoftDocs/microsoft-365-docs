@@ -1,5 +1,5 @@
 ---
-title: "Get started with Microsoft 365 data loss prevention on-premises scanner"
+title: "Get started with Microsoft Purview data loss prevention on-premises scanner"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MET150
-description: "Set up Microsoft 365 data loss prevention on-premises scanner"
+description: "Set up Microsoft Purview data loss prevention on-premises scanner"
 ---
 
 # Get started with the data loss prevention on-premises scanner
 
-This article walks you through the prerequisites and configuration for the Microsoft 365 data loss prevention on-premises scanner.
+This article walks you through the prerequisites and configuration for the Microsoft Purview data loss prevention on-premises scanner.
 
 ## Before you begin
 

@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: "Learn how to protect your sensitive information using Microsoft 365 data loss prevention policies and tools and take a tour through the DLP lifecycle."
+description: "Learn how to protect your sensitive information using Microsoft Purview data loss prevention policies and tools and take a tour through the DLP lifecycle."
 ---
 
 # Learn about data loss prevention
@@ -74,7 +74,7 @@ DLP policies can block prohibited activities, like inappropriate sharing of sens
 
 A successful DLP implementation is as much dependent on getting your users trained and acclimated to data loss prevention practices as it is on well planned and tuned policies. Since your users are heavily involved, be sure to plan for training for them too. You can strategically use policy tips to raise awareness with your users before changing the policy enforcement from test mode to more restrictive modes.
 
-<!--For more information on planning for DLP, including suggestions for deployment based on your needs and resources, see [Planning for Microsoft 365 data loss prevention](dlp-plan-for-dlp.md).-->
+<!--For more information on planning for DLP, including suggestions for deployment based on your needs and resources, see [Planning for Microsoft Purview data loss prevention](dlp-plan-for-dlp.md).-->
 
 ### Prepare for DLP
 
@@ -210,7 +210,7 @@ To learn more about Microsoft 365 DLP, see:
 
 - [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Learn about the default data loss prevention policy in Microsoft Teams (preview)](dlp-teams-default-policy.md)
-- [Learn about the Microsoft 365 data loss prevention on-premises scanner (preview)](dlp-on-premises-scanner-learn.md)
+- [Learn about the Microsoft Purview data loss prevention on-premises scanner (preview)](dlp-on-premises-scanner-learn.md)
 - [Learn about the Microsoft Compliance Extension (preview)](dlp-chrome-learn-about.md)
 - [Learn about the data loss prevention Alerts dashboard](dlp-alerts-dashboard-learn.md)
 
