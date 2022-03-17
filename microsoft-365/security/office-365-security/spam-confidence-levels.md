@@ -43,7 +43,6 @@ What the SCL means and the default actions that are taken on messages are descri
 |0, 1|Spam filtering determined the message was not spam.|Deliver the message to the recipients' inbox.|
 |5, 6|Spam filtering marked the message as **Spam**|Deliver the message to the recipients' Junk Email folder.|
 |9|Spam filtering marked the message as **High confidence spam**|Deliver the message to the recipients' Junk Email folder.|
-|
 
 You'll notice that SCL 2, 3, 4, 7, and 8 aren't used by spam filtering.
 
