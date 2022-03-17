@@ -62,15 +62,10 @@ There are two major factors that determine which policy is applied to a message:
 
 For example, consider the following anti-phishing policies in Microsoft Defender for Office 365 **that apply to the same users**, and a message that's identified as both user impersonation and spoofing:
 
-<br>
-
-****
-
 |Policy name|Priority|User impersonation|Anti-spoofing|
 |---|---|---|---|
 |Policy A|1|On|Off|
 |Policy B|2|Off|On|
-|
 
 1. The message is marked and treated as spoof, because spoofing has a higher priority (4) than user impersonation (5).
 2. Policy A is applied to the users because it has a higher priority than Policy B.
