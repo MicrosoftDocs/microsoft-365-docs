@@ -82,4 +82,5 @@ Security defaults help protect your organization from identity-related attacks b
 
 ## Next objective
 
-Take the steps to [turn on security defaults](m365bp-condtional-access.md)
+Take the steps to [turn on security defaults](m365bp-conditional-access.md)
+
