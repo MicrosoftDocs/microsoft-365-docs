@@ -52,7 +52,6 @@ The following table lists the policies you either need to review and update or c
 ||[SharePoint access control policy](#sharepoint-access-control-policies): Allow browser-only access to specific SharePoint sites from unmanaged devices.|This prevents editing and downloading of files. Use PowerShell to specify sites.|
 |**Specialized security**|[*Always* require MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignment of cloud apps.|
 ||[SharePoint access control policy](#use-app-enforced-restrictions-in-sharepoint): Block access to specific SharePoint sites from unmanaged devices.|Use PowerShell to specify sites.|
-|
 
 ## Use app-enforced restrictions in SharePoint
 

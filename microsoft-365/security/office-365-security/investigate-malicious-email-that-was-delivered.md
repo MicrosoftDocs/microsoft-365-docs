@@ -54,16 +54,11 @@ Make sure that the following requirements are met:
 
 To perform certain actions, such as viewing message headers or downloading email message content, you must have the *Preview* role added to another appropriate role group. The following table clarifies required roles and permissions.
 
-<br>
-
-****
-
 |Activity|Role group|Preview role needed?|
 |---|---|---|
 |Use Threat Explorer (and Real-time detections) to analyze threats|Global Administrator <p> Security Administrator <p> Security Reader|No|
 |Use Threat Explorer (and Real-time detections) to view headers for email messages as well as preview and download quarantined email messages|Global Administrator <p> Security Administrator <p> Security Reader|No|
 |Use Threat Explorer to view headers, preview email (only in the email entity page) and download email messages delivered to mailboxes|Global Administrator <p> Security Administrator <p> Security Reader <p> Preview|Yes|
-|
 
 > [!NOTE]
 > **Preview** is a role, not a role group. The Preview role must be added to an existing role group or a new role group in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).

@@ -12,7 +12,7 @@ ms.topic: conceptual
 f1_keywords:
 - 'ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation'
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 description: "Learn how named entities help you detect sensitive items containing names of people, physical addresses, and medical terms via data loss prevention policies"

@@ -141,10 +141,6 @@ Microsoft Defender for Office 365 Plan 2 includes best-of-class [threat investig
 
 To access Microsoft Defender for Office 365 features, you must be assigned an appropriate role. The following table includes some examples:
 
-<br>
-
-****
-
 |Role or role group|Resources to learn more|
 |---|---|
 |global administrator (Organization Management)|You can assign this role in Azure Active Directory or in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).|

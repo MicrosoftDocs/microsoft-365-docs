@@ -39,7 +39,6 @@ This overview provides information about benefits we provide to your organizatio
 |[Microsoft support](#microsoft-support)|Provides self-help and escalation support for delivery issues.|
 |[Anti-Spam IP Delist Portal](#anti-spam-ip-delist-portal)|A tool to submit IP delist request. Before submitting this request it is the sender's responsibility to ensure that any further mail originating from the IP in question is not abusive or malicious.|
 |[Abuse and spam reporting for junk email originating from Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Keeps spam and other unwanted mail from being sent from Exchange Online and cluttering up the internet and your mail system.|
-|
 
 ## Microsoft support
 
