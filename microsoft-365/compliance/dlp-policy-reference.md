@@ -391,33 +391,45 @@ The actions that are available in a rule are dependent on the locations that hav
 
 - Audit or restrict activities on Windows devices
 
-To use these settings, you have to configure options in DLP settings and in the policy in which you want to use them. See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) for more information.
+To use these settings, you have to configure options in **DLP settings** and in the policy in which you want to use them. See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) for more information.
 
 The devices location provides many subactivities (conditions) and actions. To learn more, see [Endpoint activities you can monitor and take action on](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on).
 
-When you select **Audit or restrict activities on Windows devices**, you can restrict the user activities by service domain or browser, and scope the actions that DLP takes by all apps, by a list of restricted apps that you define or by a restricted app group (preview) that you define.
+When you select **Audit or restrict activities on Windows devices**, you can restrict the user activities by service domain or browser, and scope the actions that DLP takes by:
+
+- All apps
+- By a list of restricted apps that you define
+- Ay a restricted app group (preview) that you define.
 
 ##### Service domain and browser activities
 
-When you configure the **Allow/Block cloud service domains** and the **Unallowed browsers** list (see [Browser and domain restrictions to sensitive data](dlp-configure-endpoint-settings.md#browser-and-domain-restrictions-to-sensitive-data)) and a user attempts to upload a protected file to a cloud service domain or access it from an unallowed browser, you can configure the policy action to **Audit only**, **Block with override**, or **Block** the activity.
+When you configure the **Allow/Block cloud service domains** and the **Unallowed browsers** list (see [Browser and domain restrictions to sensitive data](dlp-configure-endpoint-settings.md#browser-and-domain-restrictions-to-sensitive-data)) and a user attempts to upload a protected file to a cloud service domain or access it from an unallowed browser, you can configure the policy action to `Audit only`, `Block with override`, or `Block` the activity.
 
 ##### File activities for all apps
 
-With the **File activities for all apps** option, you select either **Don't restrict file activities** or **Apply restrictions to specific activities**. The restrictions that you define here are applied if a user attempts an activity on a DLP protected item using an app that *is not* listed in the **Restricted app activities** or in a **File activities for apps in restricted app groups (preview)** group.
+With the **File activities for all apps** option, you select either **Don't restrict file activities** or **Apply restrictions to specific activities**. When you select to apply restrictions to specific activities, the actions that you select here are applied when a user has accessed a DLP protected item. You can tell DLP to `Audit only`, `Block with override`, `Block` (the actions) on these user activities:
+
+- **Copy to clipboard**
+- **Copy to a USB removable drive** 
+- **Copy to a network share**
+- **Print**
+- **Copy or move using an unallowed Bluetooth app**
+- **Remote desktop services**
+
 
 ##### Restricted app activities  
 
-Previously called Unallowed apps, you define a list of apps in Endpoint DLP settings that you want to place restrictions on. When a user attempts to access a DLP protected file using an app that is on the list, you can either **Audit only**, **Block with override** or **Block** the activity. DLP actions defined in **Restricted app activities** are overridden if the app is a member of restricted app group. Then the actions defined in the restricted app group are applied.
+Previously called Unallowed apps, you define a list of apps in Endpoint DLP settings that you want to place restrictions on. When a user attempts to access a DLP protected file using an app that is on the list, you can either `Audit only`, `Block with override`, or `Block` the activity. DLP actions defined in **Restricted app activities** are overridden if the app is a member of restricted app group. Then the actions defined in the restricted app group are applied.
 
 ##### File activities for apps in restricted app groups (preview)
 
-You define your restricted app groups in Endpoint DLP settings and add restricted app groups to your policies. When you add a restricted app group to a policy, you must select:
+You define your restricted app groups in Endpoint DLP settings and add restricted app groups to your policies. When you add a restricted app group to a policy, you must select one of these options:
 
 - Don't restrict file activity
 - Apply restrictions to all activity
 - Apply restrictions to specific activity
 
-When you select either of the *Apply restrictions* options, and a user attempts to access a DLP protected file using an app that is in the restricted app group, you can either **Audit only**, **Block with override** or **Block** by activity. DLP actions that you define here override actions defined in **Restricted app activities** and **File activities for all apps**.
+When you select either of the *Apply restrictions* options, and a user attempts to access a DLP protected file using an app that is in the restricted app group, you can either `Audit only`, `Block with override`, or `Block` by activity. DLP actions that you define here override actions defined in **Restricted app activities** and **File activities for all apps** for the app.
 
 See, [Restricted apps and app groups](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) for more information. 
 
