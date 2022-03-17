@@ -85,7 +85,6 @@ Microsoft provides local or toll-free telephone numbers for product support arou
 |Spain|Toll-free: 900 814 197 <br> Local: 912 718 160|Same|
 |United Kingdom|Toll-free: 0800 032 6417 <br> Local: 0203 450 6455|Same|
 |United States|Toll-free: 1-877-913-2707|Toll-free: 1-800-865-9408|
-|
 
 ## For more information about EOP documentation
 
