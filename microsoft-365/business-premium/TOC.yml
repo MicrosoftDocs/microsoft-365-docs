@@ -32,24 +32,16 @@
       href: m365bp-conditional-access.md
     - name: Protect against malware and other threats
       href: m365bp-increase-protection.md
-- name: Set up devices
+- name: Set up unmanaged (BYOD) devices
   items: 
     - name: Overview
       href: m365bp-devices-overview.md
     - name: Set up multifactor authentication
       href: m365bp-multifactor-authentication.md
-    - name: Set up managed devices
-      href: m365bp-managed-devices-setup.md
     - name: Install Office apps on devices
       href: m365bp-install-office-apps.md
     - name: Protect unmanaged devices
       href: m365bp-protect-pcs-macs.md
-    - name: Onboard devices to Microsoft Defender for Business
-      href: m365bp-onboard-devices-mdb.md
-    - name: Review and edit device policies
-      href: m365bp-view-edit-create-mdb-policies.md
-    - name: Manage device groups
-      href: m365bp-device-groups-mdb.md
 - name: Protect email
   items: 
     - name: Overview
@@ -70,6 +62,18 @@
       href: share-files-and-videos.md
     - name: Create a communication site for your organization
       href: create-communications-site.md
+- name: Set up managed devices
+  items:
+    - name: Overview
+      href: m365bp-protect-devices.md
+    - name: Onboard enrolled devices and apply policies
+      href: m365bp-onboard-devices-mdb.md
+    - name: Set up managed devices
+      href: m365bp-managed-devices-setup.md
+    - name: Review and edit device policies
+      href: m365bp-view-edit-create-mdb-policies.md
+    - name: Manage device groups
+      href: m365bp-device-groups-mdb.md
 - name: Security incident management
   items: 
     - name: Overview
@@ -100,5 +104,6 @@
       href: ../security/office-365-security/overview.md
     - name: Microsoft 365 Lighthouse
       href: ../lighthouse/m365-lighthouse-overview.md
+
 
 
