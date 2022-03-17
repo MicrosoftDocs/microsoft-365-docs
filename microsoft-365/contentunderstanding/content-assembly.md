@@ -112,9 +112,9 @@ On the **All placeholders** panel:
 
 2. In the **How authors fill in this placeholder** section, choose **Select from managed metadata term set or term**, and then choose **Select**.
 
-3. On the **Select term sets or terms** panel, search for or select the term set or term to associate with the placeholder, and then select **Save**.
+3. On the **Select term sets or terms** page, search for or select the term set or term to associate with the placeholder, and then select **Save**.
 
-   ![Screenshot of the Select term sets or terms panel.](../media/content-understanding/content-assembly-select-term.png)
+   ![Screenshot of the Select term sets or terms page.](../media/content-understanding/content-assembly-select-term.png)
 
 4. When you’re done, you’ll see that the selected term set or term has been associated with the placeholder. 
 
