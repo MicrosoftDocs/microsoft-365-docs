@@ -120,11 +120,11 @@ For performance reasons, Endpoint DLP includes a list of recommended file path e
 
 ### Restricted apps and app groups
 
-#### Restricted app activities list
+#### Restricted apps
 
-**Restricted app activities** (previously called **Unallowed apps**) is a list of applications that you create. You configure what actions DLP will take when a user uses an app on the list to ***access*** a DLP protected file on a device. It's available for Windows 10 and macOS devices (preview).
+**Restricted apps** (previously called **Unallowed apps**) is a list of applications that you create. You configure what actions DLP will take when a user uses an app on the list to ***access*** a DLP protected file on a device. It's available for Windows 10 and macOS devices (preview).
 
-When **Access by restricted apps** is selected in a policy and a user uses an app that is on the restricted apps list to access a protected file, the activity will be `audited`, `blocked`, or `blocked with override` depending on how you configured it. That is unless the same app is a member of a **Restricted app group**, then the actions configured for activities in the **Restricted app group** override the actions configured for the access activity for the **Restricted app activities** list. All activity is audited and available to review in activity explorer.
+When **Access by restricted apps** is selected in a policy and a user uses an app that is on the restricted apps list to access a protected file, the activity will be `audited`, `blocked`, or `blocked with override` depending on how you configured it. That is unless the same app is a member of a **Restricted app group**, then the actions configured for activities in the **Restricted app group** override the actions configured for the access activity for the **Restricted apps** list. All activity is audited and available to review in activity explorer.
 
 > [!IMPORTANT]
 > Do not include the path to the executable, but only the executable name (such as browser.exe).
@@ -159,11 +159,11 @@ The configurations of **Restricted app activities** and **File activities for al
 
 Here's an example:
 
-If Notepad.exe is added to **Restricted app activities** and **File activities for all apps** is configured to **Apply restrictions to specific activity** and both are configure like this:
+If Notepad.exe is added to **Restricted appss** and **File activities for all apps** is configured to **Apply restrictions to specific activity** and both are configure like this:
 
-|Setting  |App name  |User activity  |DLP action to take  |
+|Setting in policy  |App name  |User activity  |DLP action to take  |
 |---------|---------|---------|---------|
-|Restricted app activity list     |Notepad        |Access a DLP protected item         |Audit only         |
+|Restricted app activities     |Notepad        |Access a DLP protected item         |Audit only         |
 |File activities for all apps   |All apps        | Copy to clipboard        |Audit only         |
 |File activities for all apps     |All apps         |Copy to a USB removeable device | Block       |
 |File activities for all apps     |All apps         |Copy to a network share         |Audit only         |
@@ -172,6 +172,9 @@ If Notepad.exe is added to **Restricted app activities** and **File activities f
 |File activities for all apps     |All apps         |Remote desktop services         |Block with override         |
 
 User A opens a DLP protected file using Notepad. DLP allows the access and audits the activity. While still in Notepad, User A then tries to copy to clipboard from the protected item, this works and DLP audits the activity. User A then tries to print the protected item from Notepad and the activity is blocked.
+
+> [!NOTE]
+> When the DLP action to take in **Restricted app activities** is set to `block`, all access is blocked and the user cannot perform any activities on the file.
    
 ##### File activities for all apps only
 
