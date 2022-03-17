@@ -58,7 +58,7 @@ To buy and sign up for Microsoft 365 Business Basic, complete the following step
 
 4. Help us make sure this is you. Enter a number that we can use to reach you and select **Send Verification Code**. You'll receive a text. Enter your code and select **Verify**.
 
-5. Decide how you'll sign in to Microsoft 365. You can [sign in with your current personal email](#option-1-sign-in-with-your-outlook-hotmail-yahoo-gmail-or-other-email-account) or [create a new account](#option-2-add-a-domain) by adding a domain.
+5. Decide how you'll sign in to Microsoft 365. You can [sign in with your current personal email or [create a new account](setup-business-basic.md) by adding a domain.
 
 6. Select how many business licenses you want for your organization and select **Add payment method** and continue with checkout to **Place order**.
 
