@@ -13,6 +13,7 @@ ms.technology: mdb
 ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
+ms.collection: M365-security-compliance
 ---
 
 # Set up email notifications
