@@ -31,9 +31,9 @@ description: "Protect unmanaged or bring-your-own devices (BYOD) with Microsoft 
 The objective is to protect any unmanaged Windows 10 PCs and Macs not enrolled in Microsoft Intune. Many small businesses and campaigns have staff who bring their own devices (BYODs), and these devices are not managed. BYODs include personally-owned phones, tablets, and PCs. 
 
 >[!NOTE]
->The BYOD users themselves must install and run the Company Portal app to enroll these devices and get access to company resources.
+>BYOD users must install and run the Company Portal app to enroll these devices and receive access to company resources.
 
-For unmanaged PCs and Macs, use the following guidelines to ensure that minimum security capabilities are configured on these unmanaged devices.
+Use the following guidance to ensure that minimum security capabilities are configured on all the devices.
 
 ## [Windows 10](#tab/Windows10)
 
@@ -66,7 +66,5 @@ You can also reduce the risk of malware by using software only from reliable sou
 **Turn on firewall protection**<p>
 Use firewall settings to protect your Mac from unwanted contact initiated by other computers when you're connected to the Internet or a network. Without this protection, your Mac might be more vulnerable to unauthorized access. See [about the application firewall](https://support.apple.com/HT201642) for instructions.
 
-## Next objective
 
-Learn how to [onboard devices to Microsoft Defender](m365bp-onboard-devices-mdb.md).
 

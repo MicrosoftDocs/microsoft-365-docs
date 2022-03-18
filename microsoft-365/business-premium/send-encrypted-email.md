@@ -65,6 +65,3 @@ For more information, see [Define mail flow rules to encrypt email messages](../
 
 You can also apply your campaign branding to customize the look and the text in the email messages. For more information, see [Add your organization's brand to your encrypted messages](../compliance/email-encryption.md).
 
-## Next steps
-
-[Collaborate and share securely](m365bp-collaborate-share-securely.md)

@@ -31,7 +31,7 @@ description: "Set up all devices with protection"
 
 ## Overview
 
-Every  device is a possible attack avenue into your network and must be monitored and managed properly. In this critical mission, you will set up protection for every device in your network, and that includes multi-factor authentication and Office apps on all devices. For managed devices, enroll them in Intune and onboard them with the endpoint setup wizard. You also must ensure the utmost security on unmanaged devices. Last, you will onboard the devices to Defender, which ensures monitored protection and regularly updated software, as well as policy setting and device groups. 
+You probably know this, but every  device is a possible attack avenue into your network and must be monitored and managed properly, even those devices that are personally owned but used for work. In this critical mission, you will set up protection for all the bring-your-own devices (BYODs), which are those that are most risky to your organization due to them being unmanaged. It's a good idea to get these devices protected as soon as possible. 
 
 Your objectives are as follows:
 
