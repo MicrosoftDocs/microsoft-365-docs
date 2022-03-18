@@ -39,8 +39,8 @@ This article summarizes security recommendations and how they help protect your 
 All users should be aware of and use these email practices to help keep their email secure:
 
 - Set up email to use multi-factor authentication with the authenticator app.
-- Verify legitimate emails and look for safety tips from Advanced Phishing in Defender for Office 365 Protection.
-- Open only safe links and attachments, as verified by Safe Links and Safe Attachments.
+- Verify legitimate emails and look for safety tips from advanced anti-phishing protection
+- Allow Safe Links and Safe Attachments protection to check URLs and email attachments
 
 Learn more about [multi-factor authentication](m365bp-multifactor-authentication.md) and [phishing and other attacks](avoid-phishing-and-attacks.md).
 
