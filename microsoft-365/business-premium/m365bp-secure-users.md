@@ -1,5 +1,5 @@
 ---
-title: "How security recommendations can affect your users"
+title: "How security recommendations protect your users"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -26,9 +26,11 @@ search.appverid:
 description: "Learn how security recommendations for Microsoft 365 Business Premium affect your users and protect your data."
 ---
 
-# How security recommendations affect your users
+# How security recommendations protect your users
 
-The security recommendations for Microsoft 365 in this solution make it much harder for hackers to gain access to your environment. The tradeoff is that your users will need to be aware of how to work within this more secure environment. We understand a little extra patience is required, but it's worth it to keep your organization protected.
+The security recommendations in this library make it much harder for hackers to gain access to your environment. The tradeoff is that your users will need to be aware of how to work within this more secure environment. We understand a little extra patience is required, but it's worth it to keep your organization protected.
+
+This article summarizes security recommendations and how they help protect your users.
 
 :::image type="content" source="media/m365-democracy-users.png" alt-text="Illustration summarizing key points for devices.":::
 
