@@ -64,7 +64,7 @@ Trusted documents are Office documents that open without any security prompts fo
 
 Because of this behavior, users should clearly trust documents only if they trust the document source.
 
-If an admin blocks active content by using a policy, or if users set a Trust Center setting that blocks active content, the the active content will remain blocked.
+If an admin blocks active content by using a policy, or if users set a Trust Center setting that blocks active content, the active content will remain blocked.
 
 For more information, see the following articles:
 
