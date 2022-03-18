@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/16/2022
+ms.date: 03/18/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
@@ -80,7 +80,7 @@ To enroll a device, sign in to your Intune account through the company portal, w
 
 KC: Okay, and do you think the link below is useful? There's a lot of info there...--->
 
-See [Device enrollment in Microsoft Intune](https://docs.microsoft.com/en-us/mem/intune/enrollment/device-enrollment?branch=campaigns-refresh). 
+See [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment). 
 
 ## Run a detection test on a Windows device
 
