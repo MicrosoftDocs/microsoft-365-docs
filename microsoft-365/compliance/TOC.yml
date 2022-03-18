@@ -342,7 +342,7 @@
             href: customize-a-built-in-sensitive-information-type.md
           - name: Modify exact data match schema to use configurable match
             href: sit-modify-edm-schema-configurable-match.md
-          - name: Create notifications for exact data match activities (preview)
+          - name: Create notifications for exact data match activities
             href: sit-edm-notifications-activities.md
           - name: Manage custom sensitive information types in compliance center
             href: sit-manage-custom-sits-compliance-center.md
