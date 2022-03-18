@@ -339,7 +339,7 @@ DeviceEvents
 
 ### How to generate GUID for Group Id/PolicyRule Id/Entry Id?
 
-You can generate GUID through online open source, or through PowerShell - [How to generate GUID through PowerShell](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/new-guid?msclkid=c1398a25a6d911ec9c888875fa1f24f5&view=powershell-7.2)
+You can generate GUID through online open source, or through PowerShell - [How to generate GUID through PowerShell](/powershell/module/microsoft.powershell.utility/new-guid?msclkid=c1398a25a6d911ec9c888875fa1f24f5&view=powershell-7.2)
     
 ![image](https://user-images.githubusercontent.com/81826151/159046476-26ea0a21-8087-4f01-b8ae-5aa73b392d8f.png)
     
@@ -355,7 +355,7 @@ We've validated one USB group with 100,000 media - up to 7 MB in size. The polic
 
 3. If you are deploying and managing the policy via Group Policy, please make sure combine all PolicyRule into one XML file within a parent node called PolicyRules and all Group into one XML file within a parent node called Groups; if you manage through Intune, keep one PolicyRule one XML file, same thing, one Group one XML file.
     
-If still not work, you may want to contact us and share support cab by running cmd with administrator: “%programfiles%\Windows Defender\MpCmdRun.exe" -GetFiles
+If still not working, you may want to contact us and share support cab by running cmd with administrator: “%programfiles%\Windows Defender\MpCmdRun.exe" -GetFiles
 
 ### There is no configuration UX for 'Define device control policy groups' and 'Define device control policy rules' on my Group Policy
 
