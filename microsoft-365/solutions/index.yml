@@ -14,7 +14,7 @@ metadata:
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
   manager: bcarter
   audience: ITPro
-  ms.date: 10/19/2021 #Required; mm/dd/yyyy format.
+  ms.date: 03/18/2022
   ms.localizationpriority: high
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -36,6 +36,8 @@ landingContent:
             url: ransomware-protection-microsoft-365.md
           - text: Deploy information protection for data privacy regulations 
             url: information-protection-deploy.md
+          - text: Security guidance for agile organizations
+            url: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
           - text: Microsoft 365 for smaller businesses and campaigns
             url: ../business-premium/index.md
 
