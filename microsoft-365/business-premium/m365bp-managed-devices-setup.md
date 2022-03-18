@@ -63,7 +63,7 @@ Follow specific device enrollment guidance below.
 
 ## Next objective
 
-Follow the guidance to [onboard the devices](m365bp-onboard-devices-setup.md).
+Follow the guidance to [onboard the devices](m365bp-onboard-devices-mdb.md).
 
 <!---
 KCNote: Couldn't tell where this came into play after looking at the Endpoint Manager admin center...
