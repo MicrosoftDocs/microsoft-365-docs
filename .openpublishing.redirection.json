@@ -6740,12 +6740,17 @@
     },    
     {
     "source_path": "microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md",
-    "redirect_url": "/microsoft-365/business-premium/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o",
+    "redirect_url": "/microsoft-365/solutions/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o",
     "redirect_document_id": true
     },    
     {
     "source_path": "microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md",
     "redirect_url": "/microsoft-365/compliance/compliance-manager",
+    "redirect_document_id": false
+    },    
+    {
+    "source_path": "microsoft-365/business-premium/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md",
+    "redirect_url": "/microsoft-365/solutions/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o",
     "redirect_document_id": false
     }
   ]
