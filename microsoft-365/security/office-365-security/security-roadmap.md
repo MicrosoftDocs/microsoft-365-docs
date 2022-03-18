@@ -40,8 +40,6 @@ In this article:
 
 These roadmap recommendations are staged across three phases in a logical order with the following goals.
 
-****
-
 |Time frame|Outcomes|
 |---|---|
 |30 days|Rapid configuration: <ul><li>Basic admin protections.</li><li>Logging and analytics.</li><li>Basic identity protections.</li></ul> <p> Tenant configuration. <p> Prepare stakeholders.|
@@ -52,8 +50,6 @@ These roadmap recommendations are staged across three phases in a logical order 
 <a name="Thirdaydays"> </a>
 
 These tasks can be accomplished quickly and have low impact to users.
-
-****
 
 |Area|Tasks|
 |---|---|
@@ -67,8 +63,6 @@ These tasks can be accomplished quickly and have low impact to users.
 
 These tasks take a bit more time to plan and implement but greatly increase your security posture.
 
-****
-
 |Area|Task|
 |---|---|
 |Security management|<ul><li>Check Secure Score for recommended actions for your environment (<https://security.microsoft.com/securescore>).</li><li>Continue to regularly review dashboards and reports in the Microsoft 365 Defender portal, Defender for Cloud Apps, and SIEM tools.</li><li>Look for and implement software updates.</li><li>Conduct attack simulations for spear-phishing, password-spray, and brute-force password attacks using [Attack simulation training](attack-simulation-training.md) (included with [Office 365 Threat Intelligence](office-365-ti.md).</li><li>Look for sharing risk by reviewing the built-in reports in Defender for Cloud Apps (on the Investigate tab).</li><li>Check [Compliance Manager](../../compliance/compliance-manager.md) to review status for regulations that apply to your organization (such as GDPR, NIST 800-171).</li></ul>|
@@ -80,8 +74,6 @@ These tasks take a bit more time to plan and implement but greatly increase your
 <a name="Beyond"> </a>
 
 These are important security measures that build on previous work.
-
-****
 
 |Area|Task|
 |---|---|

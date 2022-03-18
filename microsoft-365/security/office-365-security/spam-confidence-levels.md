@@ -35,8 +35,6 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 What the SCL means and the default actions that are taken on messages are described in the following table. For more information about actions you can take on messages based on the spam filtering verdict, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
-****
-
 |SCL|Definition|Default action|
 |:---:|---|---|
 |-1|The message skipped spam filtering. For example, the message is from a safe sender, was sent to a safe recipient, or is from an email source server on the IP Allow List. For more information, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md).|Deliver the message to the recipients' inbox.|
