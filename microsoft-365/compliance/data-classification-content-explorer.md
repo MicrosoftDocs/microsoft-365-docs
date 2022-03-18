@@ -31,12 +31,13 @@ The data classification content explorer allows you to natively view the items t
 
 Every account that accesses and uses data classification must have a license assigned to it from one of these subscriptions:
 
-- Microsoft 365 (E5)
+- Microsoft 365 (E5/A5/G5)
 - Office 365 (E5)
+- Microsoft 365 E5/A5/G5/F5 Compliance
 - Advanced Compliance (E5) add-on
+- Microsoft 365 F5 Security & Compliance
 - Advanced Threat Intelligence (E5) add-on
-- Microsoft 365 E5/A5 Info Protection & Governance
-- Microsoft 365 E5/A5 Compliance
+- Microsoft 365 E5/A5/G5 Info Protection & Governance
 
 
 ### Permissions
