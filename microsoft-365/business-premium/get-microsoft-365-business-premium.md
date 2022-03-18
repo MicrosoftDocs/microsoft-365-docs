@@ -53,3 +53,7 @@ To find a solution provider in your area, take the following steps:
 ## What does Microsoft 365 Business Premium include?
 
 [View the Microsoft 365 User Subscription Suites for Small and Medium-sized Businesses](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RWR6bM)
+
+## Next steps
+
+[Set up Microsoft 365 Business Premium](m365bp-setup.md)
