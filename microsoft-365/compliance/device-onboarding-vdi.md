@@ -61,7 +61,7 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 4. Click **Download package** and save the .zip file.
 
-5. Copy the files from the DeviceCompliancePackage folder extracted from the .zip file into the `golden/master` image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`.
+5. Copy the files from the DeviceCompliancePackage folder extracted from the .zip file into the `golden` image under the path `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup`.
 
 6. If you are not implementing a single entry for each device, copy DeviceComplianceOnboardingScript.cmd.
 
@@ -99,7 +99,7 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 ## Updating non-persistent virtual desktop infrastructure (VDI) images
 
-As a best practice, we recommend using offline servicing tools to patch golden/master images.
+As a best practice, we recommend using offline servicing tools to patch golden images.
 
 For example, you can use the below commands to install an update while the image remains offline:
 
@@ -117,7 +117,7 @@ For more information on DISM commands and offline servicing, please refer to the
 
 If offline servicing is not a viable option for your non-persistent VDI environment, the following steps should be taken to ensure consistency and sensor health:
 
-1. After booting the master image for online servicing or patching, run an offboarding script to turn off the Microsoft 365 device monitoring sensor. For more information, see [Offboard devices using a local script](device-onboarding-script.md#offboard-devices-using-a-local-script).
+1. After booting the golden image for online servicing or patching, run an offboarding script to turn off the Microsoft 365 device monitoring sensor. For more information, see [Offboard devices using a local script](device-onboarding-script.md#offboard-devices-using-a-local-script).
 
 2. Ensure the sensor is stopped by running the command below in a CMD window:
 
@@ -137,7 +137,7 @@ If offline servicing is not a viable option for your non-persistent VDI environm
     exit
     ```
 
-5. Re-seal the golden/master image as you normally would.
+5. Re-seal the golden image as you normally would.
 
 ## Related topics
 
