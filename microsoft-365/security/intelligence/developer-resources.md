@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: windows-sec
+ms.technology: m365d
 ---
 
 # Software developer resources

@@ -15,7 +15,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 12/13/2021
 search.appverid: met150
-ms.technology: windows-sec
+ms.technology: m365d
 ---
 
 # How Microsoft identifies malware and potentially unwanted applications
