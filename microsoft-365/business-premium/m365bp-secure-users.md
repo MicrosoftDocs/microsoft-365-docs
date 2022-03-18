@@ -44,30 +44,34 @@ All users should be aware of and use these email practices to help keep their em
 
 Learn more about [multi-factor authentication](m365bp-multifactor-authentication.md) and [phishing and other attacks](avoid-phishing-and-attacks.md).
 
-Download an [infographic](m365-campaigns-protect-campaign-infographic.md) with tips for you and the members of your team.
+Download this infographic with tips for you and the members of your campaign team or business:
+
+[:::image type="content" source="media/m365bp-whatuserscandotosecure.png" alt-text="Thumbnail of downloadable guide.":::](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf)
+
+[PDF](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://download.microsoft.com/download/9/1/f/91fa8f24-9953-4f33-9d87-a95624db5e0b/M365BPWhatCanUsersDoToSecure.pptx)
 
 ## Set up iPhones and Android devices
 
 All users you add to your environment will need to take a few minutes to [setup iPhones and Android devices](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) to work securely:
 
 - Set up devices to use multi-factor authentication with the authenticator app.
-- Use Microsoft mobile apps, including Outlook Mobile, Word, OneDrive, and other Microsoft apps from the app store. The native mail apps that are included on iPhones and Android devices aren't supported. 
+- Use Microsoft mobile apps, including Outlook Mobile, Word, OneDrive, and other Microsoft apps from the app store. The native mail apps that are included on iPhones and Android devices aren't supported.
 - Require a PIN for users to unlock their device.
 
-After setting these up, your users will be prompted to use the authenticator app when accessing your organization data on these devices, including mail.
+After setting these up, your users will be prompted to use the authenticator app when accessing your organization data on these devices, including email.
 
-## Keep BYOD Macs and Windows 10 PCs fresh
+## Keep BYOD Macs and Windows PCs fresh
 
 It's also important that users keep their primary work device up to date:
 
 - Install the latest versions of Office desktop apps and keep these fresh with updates, when prompted.
 - Stay on top of operating system updates, such as Windows updates.
 
-For [unmanaged Windows 10 and Mac devices](m365bp-protect-pcs-macs.md), users have the responsibility to ensure that basic security features are enabled.
+For [unmanaged Windows and Mac devices](m365bp-protect-pcs-macs.md), users have the responsibility to ensure that basic security features are enabled.
 
-**Enable basic security capabilities on BYOD Windows 10 and Mac devices**
+### Enable basic security capabilities on BYOD Windows and Mac devices
 
-|**Windows 10**|**Mac**|
+| Windows 10 and 11 | macOS |
 |:-----|:------|
 |Turn on BitLocker device protection<p><p> Ensure Windows Defender remains on <p>Turn on Windows Firewall| Use FileVault to encrypt the Mac disk <p><p>Use a reliable antivirus software <p>Turn on firewall protection|
 
@@ -77,6 +81,6 @@ To learn more about these recommendations, see [Protect your account and devices
 
 Your users might be tempted to share and store your organization files in places other than Microsoft 365. Microsoft 365 makes it as easy as possible to collaborate and share securely. You can [share files and videos](share-files-and-videos.md) directly from Microsoft Teams, OneDrive, Stream, and even from within a file. Sharing from within these tools helps keep your data from leaking. You can add additional protection to sensitive data to prevent sharing outside your organization.
 
-## Set up managed Windows 10 devices
+## Set up managed devices
 
-We recommend that your most important staff members use freshly acquired Windows 10 devices that you manage. We'll show you how to [manage and secure these devices](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json). This ensures that staff members who are the highest value target to hackers receive the most protection.
+We recommend that your most important staff members use freshly acquired Windows devices that you manage. We'll show you how to [Set up managed devices](m365bp-managed-devices-setup.md) and apply security policies to protect them.
