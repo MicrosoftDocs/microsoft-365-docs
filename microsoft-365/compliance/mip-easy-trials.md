@@ -177,7 +177,7 @@ If you want to edit the DLP policy, see [Create, test, and tune a DLP policy](cr
 
 ## Additional resources
 
-To learn more about sensitivity labels, data loss prevention, and all the capabilities available with Microsoft Information Protection, see the following resources:
+To learn more about sensitivity labels, data loss prevention, and all the capabilities available with Microsoft Purview Information Protection, see the following resources:
 
 - [Learn about sensitivity labels](sensitivity-labels.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)

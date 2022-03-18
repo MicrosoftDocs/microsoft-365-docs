@@ -63,7 +63,7 @@ You can store Double Key Encrypted documents on-premises or in the cloud. In the
 
 ## What regions and languages is Double Key Encryption available in? Is Double Key Encryption available worldwide?
 
-DKE labels are localized to the same languages as other sensitivity labels in Microsoft Information Protection. Double Key Encryption is available worldwide.
+DKE labels are localized to the same languages as other sensitivity labels in Microsoft Purview Information Protection. Double Key Encryption is available worldwide.
 
 ## Can I convert a non-DKE label to a DKE label?
 
