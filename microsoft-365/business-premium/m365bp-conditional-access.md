@@ -52,7 +52,7 @@ Security defaults were designed to help protect your company's user accounts fro
 MFA is an important first step in securing your company, and security defaults make enabling MFA easy to implement. If your subscription was created on or after October 22, 2019, security defaults might have been automatically enabled for you&mdash;you should check your settings to confirm.
 
 > [!TIP]
-> For more information about security defaults and the policies they enforce, see [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
+> For more information about security defaults and the policies they enforce, see [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 ### To enable security defaults (or confirm they're already enabled)
 
