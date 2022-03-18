@@ -61,7 +61,7 @@ Read about five common types of scams in [Deal with abuse, phishing, or spoofing
 
 Help your customers trust your communications by adding a digital signature to prove that it's coming from you. See [Secure messages by using a digital signature](https://support.office.com/article/secure-messages-by-using-a-digital-signature-549ca2f1-a68f-4366-85fa-b3f4b5856fc6).
 
-## Help protect your campaign from online threats
+## Help protect your business from online threats
 
 Download this infographic with tips for you and the members of your campaign team or business:
 
