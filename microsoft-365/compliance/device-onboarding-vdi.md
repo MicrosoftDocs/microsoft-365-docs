@@ -39,7 +39,7 @@ Microsoft 365 supports non-persistent virtual desktop infrastructure (VDI) sessi
 
 There might be associated challenges when onboarding VDIs. The following are typical challenges for this scenario:
 
-- Instant early onboarding of a short-lived sessions, which must be onboarded to Microsoft 365 prior to the actual provisioning.
+- Instant early onboarding of short-lived sessions, which must be onboarded to Microsoft 365 prior to the actual provisioning.
 - The device name is typically reused for new sessions.
 
 VDI devices can appear in the Microsoft 365 Compliance center as either:
@@ -87,9 +87,9 @@ The following steps will guide you through onboarding VDI devices and will highl
 
 10. Test your solution:
     1. Create a pool with one device.
-    1. Logon to device.
-    1. Logoff from device.
-    1. Logon to device with another user.
+    1. Log on to device.
+    1. Log off from device.
+    1. Log on to device with another user.
     1. **For single entry for each device**: Check only one entry in Microsoft Defender Security Center.
        **For multiple entries for each device**: Check multiple entries in Microsoft Defender Security Center.
 
