@@ -73,8 +73,6 @@ For more information about how Premier Support can help your organization maximi
 
 Microsoft provides local or toll-free telephone numbers for product support around the world. Many of these support centers provide help in your local language during business hours or in English 24 hours a day, every day. If you don't see your location listed below, use the Virtual Agent as described above to find your local support telephone number.
 
-****
-
 |Country or region|Pre-purchase and billing questions|Technical Support questions|
 |---|---|---|
 |Brazil|Toll-free: 08007621146 <br> Local: 1147001999|Same|
