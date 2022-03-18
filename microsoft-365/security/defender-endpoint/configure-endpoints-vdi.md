@@ -46,12 +46,13 @@ There might be associated challenges when onboarding VDIs. The following are typ
 
 VDI devices can appear in Defender for Endpoint portal as either:
 
-- Single entry for each device.
+
+- Single entry for each device. If the machine is deleted and a new machine is created with the same host name, a new object will be created in the portal. 
 
   > [!NOTE]
   > In this case, the *same* device name must be configured when the session is created, for example using an unattended answer file.
 
-- Multiple entries for each device - one for each session.
+- Multiple entries for each device - one for each VDI instance.
 
 The following steps will guide you through onboarding VDI devices and will highlight steps for single and multiple entries.
 
