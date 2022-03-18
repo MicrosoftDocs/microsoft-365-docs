@@ -92,7 +92,7 @@ There's a big difference in the level of trust in internally created content vs.
 
 If your users don't need specific types of active content, your most secure option is to use policies to turn off user access to that active content, and allow exceptions as needed.
 
-The following policies are are available:
+The following policies are available:
 
 - **Turn off Trusted Locations**: Exceptions for groups available.
 - **Turn off Trusted Documents**: Exceptions for groups available.
