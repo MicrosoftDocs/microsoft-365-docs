@@ -31,8 +31,6 @@ This overview provides information about benefits we provide to your organizatio
 
 ## Sender solutions
 
-****
-
 |Service|Benefits|
 |---|---|
 |This online help content|Provides: <ul><li>A starting point for any questions related to delivering communications to EOP users.</li><li>Includes a simple online guide with our policies and requirements.</li><li>An overview of the junk email filters and authentication technologies employed by Microsoft.</li><ul>|

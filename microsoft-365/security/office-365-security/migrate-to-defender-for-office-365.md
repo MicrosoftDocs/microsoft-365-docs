@@ -71,10 +71,6 @@ The process of migrating from a third-party protection service to Defender for O
 
 ![The process for migrating to Defender for Office 365.](../../media/phase-diagrams/migration-phases.png)
 
-<p>
-
-****
-
 |Phase|Description|
 |---|---|
 |[Prepare for your migration](migrate-to-defender-for-office-365-prepare.md)|<ol><li>[Inventory the settings at your existing protection service](migrate-to-defender-for-office-365-prepare.md#inventory-the-settings-at-your-existing-protection-service)</li><li>[Check your existing protection configuration in Microsoft 365](migrate-to-defender-for-office-365-prepare.md#check-your-existing-protection-configuration-in-microsoft-365)</li><li>[Check your mail routing configuration](migrate-to-defender-for-office-365-prepare.md#check-your-mail-routing-configuration)</li><li>[Move features that modify messages into Microsoft 365](migrate-to-defender-for-office-365-prepare.md#move-features-that-modify-messages-into-microsoft-365)</li><li>[Define spam and bulk user experiences](migrate-to-defender-for-office-365-prepare.md#define-spam-and-bulk-user-experiences)</li><li>[Identify and designate priority accounts](migrate-to-defender-for-office-365-prepare.md#identify-and-designate-priority-accounts)</li></ol>|
