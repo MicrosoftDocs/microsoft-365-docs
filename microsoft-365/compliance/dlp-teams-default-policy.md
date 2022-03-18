@@ -26,13 +26,10 @@ description: "Learn about the default data loss prevention policy in Microsoft T
 
 Any tenant who is licensed with one or more of the below licenses and have active Teams users
  
-- ME5, 
-- MA5, 
-- E5/A5 Compliance, 
-- IP+G, 
-- OE5, 
-- O365 Advanced Compliance 
-- EMS E5
+- Office 365 E5/A5/G5
+- Microsoft 365 E5/A5/G5
+- Microsoft 365 E5/A5/G5 Information Protection and Governance
+- Microsoft 365 E5/A5/G5/F5 Compliance and F5 Security & Compliance
 
 
 ## What does the default policy do?
