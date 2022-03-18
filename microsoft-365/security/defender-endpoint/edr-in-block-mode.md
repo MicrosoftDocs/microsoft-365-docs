@@ -15,7 +15,7 @@ ms.custom:
   - next-gen
   - edr
   - admindeeplinkDEFENDER
-ms.date: 03/16/2022
+ms.date: 03/18/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
 ---
@@ -60,7 +60,7 @@ The following image shows an instance of unwanted software that was detected and
 ## Enable EDR in block mode
 
 > [!IMPORTANT]
-> Starting with platform version 4.18.2202.X, you can now set EDR in block mode to target specific device groups using Intune CSPs. You can  continue to set EDR in block mode tenant-wide in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. Please note that EDR in block mode is primarily recommended for devices running MDAV in passive mode (a 3rd party AV is active). 
+> Starting with platform version 4.18.2202.X, you can now set EDR in block mode to target specific device groups using Intune CSPs. You can  continue to set EDR in block mode tenant-wide in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. EDR in block mode is primarily recommended for devices that are running Microsoft Defender Antivirus in passive mode (a non-Microsoft antivirus solution is installed and active on the device). 
 
 > [!TIP]
 > Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning on EDR in block mode.
@@ -87,8 +87,8 @@ The following table lists requirements for EDR in block mode:
 |Requirement|Details|
 |---|---|
 |Permissions|You must have either the Global Administrator or Security Administrator role assigned in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). For more information, see [Basic permissions](basic-permissions.md).|
-|Operating system|Devices must be running one of the following versions of Windows: <br/>- Windows 10 (all releases)<br/>- Windows Server, version 1803 or newer<br/>- Windows Server 2019<br/>- Windows Server 2022<br/>- Windows Server 2016 (only when Microsoft Defender Antivirus is in active mode)|
-|Microsoft Defender for Endpoint|Devices must be onboarded to Defender for Endpoint. See [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md).|
+|Operating system|Devices must be running one of the following versions of Windows: <br/>- Windows 11 <br/>- Windows 10 (all releases)<br/>- Windows Server 2022 <br/>- Windows Server 2019<br/>- Windows Server, version 1803 or newer<br/>- Windows Server 2016 and Windows Server 2012 R2 (with the [new unified client solution](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview)) |
+|Microsoft Defender for Endpoint|Devices must be onboarded to Defender for Endpoint. See the following articles: <br/>- [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md)<br/>- [Onboard devices and configure Microsoft Defender for Endpoint capabilities](onboard-configure.md)<br/>- [Onboard Windows servers to the Defender for Endpoint service](configure-server-endpoints.md)<br/>- [New Windows Server 2012 R2 and 2016 functionality in the modern unified solution (Preview)](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) |
 |Microsoft Defender Antivirus|Devices must have Microsoft Defender Antivirus installed and running in either active mode or passive mode. [Confirm Microsoft Defender Antivirus is in active or passive mode](#how-do-i-confirm-microsoft-defender-antivirus-is-in-active-or-passive-mode).|
 |Cloud-delivered protection|Microsoft Defender Antivirus must be configured such that [cloud-delivered protection is enabled](enable-cloud-protection-microsoft-defender-antivirus.md).|
 |Microsoft Defender Antivirus platform|Devices must be up to date. To confirm, using PowerShell, run the [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) cmdlet as an administrator. In the **AMProductVersion** line, you should see **4.18.2001.10** or above. <p> To learn more, see [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md).|
@@ -156,20 +156,19 @@ You can use PowerShell to confirm that EDR in block mode is turned on with Micro
    > [!TIP]
    > If Microsoft Defender Antivirus is in active mode, you will see `Normal` instead of `EDR Block Mode`. To learn more, see [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus).
 
-### Is EDR in block mode supported on Windows Server 2016?
+### Is EDR in block mode supported on Windows Server 2016 and Windows Server 2012 R2?
 
 If Microsoft Defender Antivirus is running in active mode or passive mode, EDR in block mode is supported of the following versions of Windows:
 
+- Windows 11
 - Windows 10 (all releases)
 - Windows Server, version 1803 or newer 
 - Windows Server 2022
 - Windows Server 2019 
-- Windows Server 2016
-- Windows Server 2012 R2
-- Windows 11
+- Windows Server 2016 and Windows Server 2012 R2 (with the [new unified client solution](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview))
 
->[!NOTE]
->Windows Server 2016 and Windows Server 2012 R2 will need to be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md) for this feature to work. 
+> [!NOTE]
+> Windows Server 2016 and Windows Server 2012 R2 must be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md) for this feature to work. 
 
 ### How much time does it take for EDR in block mode to be disabled?
 
