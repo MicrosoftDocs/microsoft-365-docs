@@ -206,22 +206,13 @@ On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-cre
 
 In addition to the reports described in this article, several other reports are available, as described in the following table:
 
-<br>
-
-****
-
 |Report|Topic|
 |---|---|
 |**Explorer** (Microsoft Defender for Office 365 Plan 2) or **real-time detections** (Microsoft Defender for Office 365 Plan 1)|[Threat Explorer (and real-time detections)](threat-explorer.md)|
 |Email security reports that don't require Defender for Office 365|[View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md)|
 |Mail flow reports in the Exchange admin center (EAC)|[Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
-|
 
 PowerShell reporting cmdlets:
-
-<br>
-
-****
 
 |Report|Topic|
 |---|---|
@@ -232,7 +223,6 @@ PowerShell reporting cmdlets:
 |Compromised users|[Get-CompromisedUserAggregateReport](/powershell/module/exchange/get-compromiseduseraggregatereport) <p> [Get-CompromisedUserDetailReport](/powershell/module/exchange/get-compromiseduserdetailreport)|
 |Mail flow status|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
 |Spoofed users|[Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport)|
-|
 
 ## What permissions are needed to view the Defender for Office 365 reports?
 
