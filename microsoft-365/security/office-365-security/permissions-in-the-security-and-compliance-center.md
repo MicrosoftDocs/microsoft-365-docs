@@ -10,9 +10,8 @@ audience: Admin
 ms.topic: conceptual
 f1_keywords: 
   - 'ms.o365.cc.AdminRoleGroups'
-
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
-ms.collection: Strat_O365_IP
 search.appverid: 
   - MOE150
   - MET150
@@ -58,10 +57,6 @@ To see how to grant access to the Security & Compliance Center, check out [Give 
 
 > [!NOTE]
 > To view the **Permissions** tab in the Security & Compliance Center, you need to be an admin. Specifically, you need to be assigned the **Role Management** role, and that role is assigned only to the **Organization Management** role group in the Security & Compliance Center by default. Furthermore, the **Role Management** role allows users to view, create, and modify role groups.
-
-<br>
-
-****
 
 |Role group|Description|Default roles assigned|
 |---|---|---|
@@ -113,7 +108,6 @@ To see how to grant access to the Security & Compliance Center, check out [Give 
 |**Service Assurance User**|Members can access the Service assurance section in the Security & Compliance Center. Service assurance provides reports and documents that describe Microsoft's security practices for customer data that's stored in Microsoft 365. It also provides independent third-party audit reports on Microsoft 365. For more information, see [Service assurance in the Security & Compliance Center](../../compliance/service-assurance.md).|Service Assurance View|
 |**Subject Rights Request Administrators**|Create subject rights requests.|Case Management <p> Subject Rights Request Admin <p> View-Only Case|
 |**Supervisory Review**|Members can create and manage the policies that define which communications are subject to review in an organization. For more information, see [Configure communication compliance policies for your organization](../../compliance/communication-compliance-configure.md).|Supervisory Review Administrator|
-|
 
 > [!NOTE]
 > <sup>1</sup> This role group doesn't assign members the permissions necessary to search the audit log or to use any reports that might include Exchange data, such as the DLP or Defender for Office 365 reports. To search the audit log or to view all reports, a user has to be assigned permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet. Global admins can search the audit log and view all reports because they're automatically added as members of the Organization Management role group in Exchange Online. For more information, see [Search the audit log in the Security & Compliance Center](../../compliance/search-the-audit-log-in-security-and-compliance.md).
@@ -165,10 +159,6 @@ Note that the following roles aren't assigned to the Organization Management rol
 - Subject Rights Request Admin
 - Supervisory Review Administrator
 - Tenant AllowBlockList Manager
-
-<br>
-
-****
 
 |Role|Description|Default role group assignments|
 |---|---|---|
@@ -248,4 +238,3 @@ Note that the following roles aren't assigned to the Organization Management rol
 |**View-Only Recipients**|View information about users and groups.|Compliance Administrator <p> Compliance Data Administrator <p> Global Reader <p> MailFlow Administrator <p> Organization Management|
 |**View-Only Record Management**|View the configuration of the records management feature.|Compliance Administrator <p> Compliance Data Administrator <p> <p> Global Reader <p> Organization Management|
 |**View-Only Retention Management**|View the configuration of retention policies, retention labels, and retention label policies.|Compliance Administrator <p> Compliance Data Administrator <p> Global Administrator <p> Organization Management|
-|
