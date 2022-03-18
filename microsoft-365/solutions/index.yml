@@ -140,12 +140,12 @@ landingContent:
             url: ../security/office-365-security/security-recommendations-for-priority-accounts.md
           - text: Evaluate Microsoft 365 Defender
             url: ../security/defender-endpoint/deployment-phases.md
-          - text: Address false positives/negatives in Microsoft Defender for Endpoint
-            url: ../security/defender-endpoint/defender-endpoint-false-positives-negatives.md
       - linkListType: how-to-guide
         links:
           - text: Switch from a non-Microsoft endpoint protection solution to Microsoft Defender for Endpoint
             url: ../security/defender-endpoint/switch-to-mde-overview.md
+          - text: Address false positives/negatives in Microsoft Defender for Endpoint
+            url: ../security/defender-endpoint/defender-endpoint-false-positives-negatives.md
 
   # Card
   - title: Workload resources
