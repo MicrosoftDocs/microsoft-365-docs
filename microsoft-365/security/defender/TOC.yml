@@ -423,7 +423,6 @@
             - name: Understand threat intelligence concepts
               href: ../defender-endpoint/threat-indicator-concepts.md 
         - name: Security intelligence
-          href: ../intelligence/index.md
           items: 
           - name: Understand malware & other threats
             href: ../intelligence/understanding-malware.md
@@ -460,8 +459,6 @@
           href: ../intelligence/criteria.md
         - name: Submit files for analysis
           href: ../intelligence/submission-guide.md
-        - name: Safety Scanner download
-          href: ../intelligence/safety-scanner-download.md
         - name: Industry collaboration programs
           href: ../intelligence/cybersecurity-industry-partners.md
           items: 
