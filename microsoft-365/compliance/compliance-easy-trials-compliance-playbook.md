@@ -264,14 +264,14 @@ Use the Content search tool in the Microsoft 365 compliance center to quickly fi
 
 **Discover, classify and protect your sensitive information**
 
-Implement Microsoft Information Protection and sensitivity labels, to help you discover, classify, and protect your sensitive content wherever it lives or travels.
+Implement Microsoft Purview Information Protection and sensitivity labels, to help you discover, classify, and protect your sensitive content wherever it lives or travels.
 
 ### Step 1: [Start your information protection trial](mip-easy-trials.md)
 
 > [!TIP]
 > Trial best practice: Day 1
 
-Eligible customers can activate default labels and policies for Microsoft Information Protection. When you enable the default configuration in the trial, it will take about 2 minutes to configure all policies for your tenant and up to 24 hours to see the results of these default policies.
+Eligible customers can activate default labels and policies for Microsoft Purview Information Protection. When you enable the default configuration in the trial, it will take about 2 minutes to configure all policies for your tenant and up to 24 hours to see the results of these default policies.
 
 Choosing the default configuration, with 1-click, the following is automatically configured:
 
