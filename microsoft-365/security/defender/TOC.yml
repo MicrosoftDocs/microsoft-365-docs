@@ -424,6 +424,8 @@
               href: ../defender-endpoint/threat-indicator-concepts.md 
         - name: Security intelligence
           items: 
+          - name: Safety Scanner download
+            href: ../intelligence/safety-scanner-download.md
           - name: Understand malware & other threats
             href: ../intelligence/understanding-malware.md
             items: 
