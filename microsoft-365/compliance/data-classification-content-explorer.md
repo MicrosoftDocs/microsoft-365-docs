@@ -29,16 +29,7 @@ The data classification content explorer allows you to natively view the items t
 
 ## Prerequisites
 
-Every account that accesses and uses data classification must have a license assigned to it from one of these subscriptions:
-
-- Microsoft 365 (E5/A5/G5)
-- Office 365 (E5)
-- Microsoft 365 E5/A5/G5/F5 Compliance
-- Advanced Compliance (E5) add-on
-- Microsoft 365 F5 Security & Compliance
-- Advanced Threat Intelligence (E5) add-on
-- Microsoft 365 E5/A5/G5 Info Protection & Governance
-
+For licensing requirements, see [Information Protection: Data Classification Analytics: Over Content & Activity Explorer](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer)
 
 ### Permissions
 
