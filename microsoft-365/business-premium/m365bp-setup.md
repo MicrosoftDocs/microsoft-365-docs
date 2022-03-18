@@ -19,10 +19,10 @@ ms.collection:
 
 # Set up Microsoft 365 Business Premium
 
-You have several options for setting up and configuring Microsoft 365 Business Premium. You can:
+After you have [started a trial or purchased Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your next step is to get set up. You have several options available. You can:
 
-- [Start with the guided setup experience](#guided-process-for-basic-setup)
-- [Work with a partner, such as a Microsoft Cloud Solution Provider (CSP)](#work-with-a-microsoft-partner)
+- [Start with the guided setup experience](#guided-process-for-basic-setup) for basic setup and configuration; or
+- [Work with a partner, such as a Microsoft Cloud Solution Provider (CSP)](#work-with-a-microsoft-partner).
 
 Use this article as a guide.
 
