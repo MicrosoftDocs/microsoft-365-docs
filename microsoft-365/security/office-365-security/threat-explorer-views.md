@@ -38,8 +38,6 @@ ms.prod: m365-security
 
 When you first open Explorer (or the real-time detections report), the default view shows email malware detections for the past 7 days. This report can also show Microsoft Defender for Office 365 detections, such as malicious URLs detected by [Safe Links](safe-links.md), and malicious files detected by [Safe Attachments](safe-attachments.md). This report can be modified to show data for the past 30 days (with a Microsoft Defender for Office 365 P2 paid subscription). Trial subscriptions will include data for the past seven days only.
 
-****
-
 |Subscription|Utility|Days of Data|
 |---|---|---|
 |Microsoft Defender for Office 365 P1 trial|Real-time detections|7|

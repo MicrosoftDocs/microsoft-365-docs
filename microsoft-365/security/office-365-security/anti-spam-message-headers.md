@@ -56,8 +56,6 @@ The individual fields and values are described in the following table.
 > [!NOTE]
 > The **X-Forefront-Antispam-Report** header contains many different fields and values. Fields that aren't described in the table are used exclusively by the Microsoft anti-spam team for diagnostic purposes.
 
-****
-
 |Field|Description|
 |---|---|
 |`ARC`|The `ARC` protocol has the following fields: <ul><li>`AAR`: Records the content of the **Authentication-results** header from DMARC.</li><li>`AMS`: Includes cryptographic signatures of the message.</li><li>`AS`: Includes cryptographic signatures of the message headers. This field contains a tag of a chain validation called `"cv="`, which includes the outcome of the chain validation as **none**, **pass**, or **fail**.</li></ul>|
@@ -87,8 +85,6 @@ The individual fields and values are described in the following table.
 ## X-Microsoft-Antispam message header fields
 
 The following table describes useful fields in the **X-Microsoft-Antispam** message header. Other fields in this header are used exclusively by the Microsoft anti-spam team for diagnostic purposes.
-
-****
 
 |Field|Description|
 |---|---|
@@ -144,8 +140,6 @@ The following list describes the text that's added to the **Authentication-Resul
 ### Authentication-results message header fields
 
 The following table describes the fields and possible values for each email authentication check.
-
-****
 
 |Field|Description|
 |---|---|
