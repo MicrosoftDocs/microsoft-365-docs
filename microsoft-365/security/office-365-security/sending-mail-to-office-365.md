@@ -38,4 +38,3 @@ If you're not a customer, but are trying to send mail to someone in who is, you'
 |How to fix problems reaching customers at Microsoft 365 through email. Best practices for sending bulk mail to Microsoft 365 recipients.|[Troubleshooting mail sent to Office 365](troubleshooting-mail-sent-to-office-365.md)|
 |How Microsoft 365 prevents junk email, including phishing and spoofing email, from being sent to our customers.|[Anti-spam protection in Microsoft 365](anti-spam-protection.md)|
 |How you, an administrator sending email to Microsoft 365 customers, can avoid having email blocked by adhering to our anti-spam policies. This is the legal stuff you need to know.|[Reference: Policies, practices, and guidelines](reference-policies-practices-and-guidelines.md)|
-|

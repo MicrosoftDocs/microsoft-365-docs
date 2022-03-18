@@ -12,7 +12,7 @@ ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation'
 ms.service: O365-seccomp
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-security-compliance
 description: "Use these procedures to take advantage of named entities in your data loss prevention policies"
