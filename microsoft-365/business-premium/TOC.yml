@@ -62,7 +62,7 @@
       href: share-files-and-videos.md
     - name: Create a communication site for your organization
       href: create-communications-site.md
-- name: Set up managed devices
+- name: Set up and secure managed devices
   items:
     - name: Overview
       href: m365bp-protect-devices.md
