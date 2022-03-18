@@ -19,7 +19,7 @@ ms.collection:
 
 # Set up Microsoft 365 Business Premium
 
-After you have [started a trial or purchased Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your next step is to get set up. You have several options available. You can:
+After you have [started a trial or purchased Microsoft 365 Business Premium](get-microsoft-365-business-premium.md), your next step is to get everything set up. You have several options available. You can:
 
 - [Start with the guided setup experience](#guided-process-for-basic-setup) for basic setup and configuration; or
 - [Work with a partner, such as a Microsoft Cloud Solution Provider (CSP)](#work-with-a-microsoft-partner).
@@ -38,6 +38,8 @@ To see how the guided setup works, watch the following video: <br/><br/>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ?autoplay=false]
 
 [Learn more about the differences between the guided setup process and the Setup page](../admin/setup/o365-setup-wizard-and-setup-page.md).
+
+### Additional steps to complete
 
 After you have finished the guided setup, there are additional steps to complete to help ensure that your security and compliance capabilities are properly set up and applied. These steps include:
 
