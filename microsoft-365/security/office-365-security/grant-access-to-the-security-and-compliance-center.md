@@ -12,7 +12,6 @@ f1_keywords:
   - 'ms.o365.cc.PermissionsHelp'
 ms.collection: M365-security-compliance
 ms.localizationpriority: medium
-ms.collection: Strat_O365_IP
 search.appverid: 
   - MOE150
   - MET150
