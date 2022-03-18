@@ -37,8 +37,6 @@ Bulk mailers vary in their sending patterns, content creation, and recipient acq
 
 The BCL thresholds are described in the following table.
 
-****
-
 |BCL|Description|
 |:---:|---|
 |0|The message isn't from a bulk sender.|

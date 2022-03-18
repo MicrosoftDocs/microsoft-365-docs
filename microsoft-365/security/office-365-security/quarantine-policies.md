@@ -48,8 +48,6 @@ The individual quarantine policy permissions that are contained in the preset pe
 
 The default quarantine policies, their associated permission groups, and whether quarantine notifications are enabled are described in the following table:
 
-<br>
-
 |Default quarantine policy|Permission group used|Quarantine notifications enabled?|
 |---|---|---|
 |AdminOnlyAccessPolicy|No access|No|
