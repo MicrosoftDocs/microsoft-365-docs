@@ -177,7 +177,7 @@ You can roll back and remove a file from quarantine if you've determined that it
 2. Enter the following command, and press **Enter**:
 
     ```console
-    "ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
+    "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
     ```
 
     > [!IMPORTANT]
