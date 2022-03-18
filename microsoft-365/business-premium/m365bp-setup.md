@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/16/2022
+ms.date: 03/18/2022
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
@@ -44,6 +44,8 @@ After you have finished the guided setup, there are additional steps to complete
 - [Bump up security protection](m365bp-security-overview.md)
 - [Set up devices](m365bp-devices-overview.md)
 - [Protect devices](m365bp-protect-devices.md)
+
+## Work with a Microsoft partner
 
 If you'd prefer to have a Microsoft partner help you get and set up Microsoft 365, follow these steps:
 
