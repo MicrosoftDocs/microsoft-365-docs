@@ -457,27 +457,26 @@
               href: ../intelligence/unwanted-software.md
             - name: Worms
               href: ../intelligence/worms-malware.md
-        - name: How Microsoft identifies malware and PUA
-          href: ../intelligence/criteria.md
-        - name: Submit files for analysis
-          href: ../intelligence/submission-guide.md
-        - name: Industry collaboration programs
-          href: ../intelligence/cybersecurity-industry-partners.md
-          items: 
-            - name: Virus information alliance
-              href: ../intelligence/virus-information-alliance-criteria.md
-            - name: Microsoft virus initiative
-              href: ../intelligence/virus-initiative-criteria.md
-            - name: Coordinated malware eradication
-              href: ../intelligence/coordinated-malware-eradication.md
-            - name: Microsoft Bug Bounty Program
-              href: ../intelligence/microsoft-bug-bounty-program.md
-        - name: Information for developers
-          items: 
-            - name: Software developer FAQ
-              href: ../intelligence/developer-faq.yml
-            - name: Software developer resources
-              href: ../intelligence/developer-resources.md
+          - name: How Microsoft identifies malware and PUA
+            href: ../intelligence/criteria.md
+          - name: Submit files for analysis
+            href: ../intelligence/submission-guide.md
+          - name: Industry collaboration programs
+            href: ../intelligence/cybersecurity-industry-partners.md
+          - name: Virus information alliance
+            href: ../intelligence/virus-information-alliance-criteria.md
+          - name: Microsoft virus initiative
+            href: ../intelligence/virus-initiative-criteria.md
+          - name: Coordinated malware eradication
+            href: ../intelligence/coordinated-malware-eradication.md
+          - name: Microsoft Bug Bounty Program
+            href: ../intelligence/microsoft-bug-bounty-program.md
+          - name: Information for developers
+            items: 
+              - name: Software developer FAQ
+                href: ../intelligence/developer-faq.yml
+              - name: Software developer resources
+                href: ../intelligence/developer-resources.md
     - name: Microsoft 365 Defender docs
       items: 
        - name: Defender for Office 365
