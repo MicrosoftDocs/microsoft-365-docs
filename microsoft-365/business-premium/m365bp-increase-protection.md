@@ -37,7 +37,20 @@ Microsoft Secure Score analyzes your organization's security based on your regul
 
 For more information, see [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
-## Review and 
+## Review and apply preset security policies
+
+Your subscription includes [preset security policies](../security/office-365-security/preset-security-policies.md) that use recommended settings for anti-spam, anti-malware, and anti-phishing protection. By default, built-in protection is enabled; however, you can to apply standard or strict protection for increased security. You can also create your own security policies for custom settings.
+
+The following table summarizes the levels of protection included in your subscription.
+
+| Level | Description |
+|:---|:---|
+| Standard protection <br/>(*recommended for most businesses*) | Standard protection uses a baseline profile that's suitable for most users <br/><br/>It includes anti-spam, anti-malware, anti-phishing, spoof settings, impersonation settings, Safe Links, and Safe Attachments policies.  |
+| Strict protection  | Strict protection includes all the same kinds of policies as standard protection, but with more stringent settings. If your business must meet additional security requirements or regulations, consider applying strict protection to your priority users or high value targets. |
+| Built-in protection | Protects against malicious links and attachments in email. Enabled and applied to all users by default.  |
+
+<!--https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-worldwide
+
 
 ## Raise the level of protection against malware in mail
 
@@ -278,6 +291,8 @@ To change the sharing settings for OneDrive and SharePoint:
 3. On the **Sharing** page, under **File and folder links**, select **Specific people**, and under **Advanced settings for "Anyone" links**, select **These links must expire within this many days**, and type in 14 (or another number of days you want to restrict the link lifetime to).
 
    ![Choose Specific people and set link expiration to 14 days.](../media/anyonelinks.png)
+
+-->
 
 ## Activity alerts
 
