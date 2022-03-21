@@ -28,13 +28,15 @@ description: "How to install Office on all devices."
 
 # Install Office apps on all devices
 
-Okay, you've set up Microsoft 365, and you can require users to install individual Office applications on their Mac, PC, or mobile devices. This is something your users to do to help protect the entire org.
+Okay, you've set up Microsoft 365, and now you can require users to install individual Office applications on their Mac, PC, or mobile devices. This is something your users should do to be part of the front lines and help protect the org against attack.
   
 ## Watch: Install Office apps
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1?autoplay=false]
 
-For all members of the organization, the Microsoft Office apps can be found on the **Start** menu. If you don't see them, you can install them yourself.
+For all members of the organization, the Microsoft Office apps can be found on the **Start** menu. If you don't see them, each user must install them.
+
+Have them perform the following:
 
 1. Go to office.com. You might need to sign in with your work account.
 2. Select  **Install Office**  >  **Microsoft 365 apps**  >  **Run** , and then select  **Yes**.
@@ -44,7 +46,7 @@ For all members of the organization, the Microsoft Office apps can be found on t
 
 ## Next steps
 
-Follow these links for information on how to:
+Follow these links for additional information on how to:
   
 - Install Office applications:  [Install Office on your PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 

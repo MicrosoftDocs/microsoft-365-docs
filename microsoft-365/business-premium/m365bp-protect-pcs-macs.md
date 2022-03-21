@@ -28,12 +28,12 @@ description: "Protect unmanaged or bring-your-own devices (BYOD) with Microsoft 
 
 # Protect unmanaged Windows 10 PCs and Macs in Microsoft 365 Business Premium
 
-This objective is focused on creating protection for any unmanaged Windows 10 PCs and Macs not enrolled in Microsoft Intune. Your small businesse or campaign may have staff who bring their own devices (BYODs), and these devices are not managed. BYODs include personally-owned phones, tablets, and PCs. 
+This objective is focused on creating protection for any unmanaged Windows 10 PCs and Macs not enrolled in Microsoft Intune. It is very likely your small business or campaign may have staff who bring their own devices (BYODs), and these devices are not managed. BYODs include personally-owned phones, tablets, and PCs. 
 
 >[!NOTE]
 >BYOD users must each install and run the Company Portal app to enroll these devices and receive access to company resources.
 
-It's critical that you make sure your frontline users follow these guidelines to ensure that minimum security capabilities are configured on all the BYOD devices.
+It's critical that you ensure your frontline users follow these guidelines so that minimum security capabilities are configured on all the BYOD devices.
 
 ## [Windows 10](#tab/Windows10)
 
