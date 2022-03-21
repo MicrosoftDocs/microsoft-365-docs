@@ -60,13 +60,13 @@ To learn more, see [Microsoft Graph APIs for subject rights request](/graph/api/
 
 ### Microsoft Information Protection (MIP) SDK
 
-The MIP SDK exposes the labeling and protection services from Microsoft 365 security and compliance centers to third-party applications and services. Developers can use the SDK to build native support for applying labels and protection to files. Developers can determine which actions should be taken when specific labels are detected, and reason over MIP-encrypted information.
+The MIP SDK exposes the labeling and protection services from Microsoft 365 security and compliance centers to third-party applications and services. Developers can use the SDK to build native support for applying labels and protection to files. Developers can determine which actions should be taken when specific labels are detected, and reason over data that's been encrypted by Microsoft Purview Information Protection.
 
 High-level MIP SDK use cases include:
 
 - A line-of-business application that applies classification labels to files on export.
 
-- A CAD/CAM design application that provides native support for MIP labeling.
+- A CAD/CAM design application that provides native support for Microsoft Purview Information Protection labeling.
 
 - A cloud access security broker or data loss prevention solution that can encrypt data with Azure Information Protection.
 
