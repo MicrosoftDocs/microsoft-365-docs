@@ -123,7 +123,7 @@ On the **All placeholders** panel:
 5. If you want users to be able to add multiple values corresponding to the term set or term, select **Allow multiple values**. Also, if the term set is configured as an open term set, you can select **Allow new values**. If you enable this option, users who generate documents from the modern template can add new terms to the term set and add those terms as placeholder values.
 
    > [!TIP]
-   > When you enable the **Allow new values** option (only allowed for open term sets), users are less likely to add redundant terms in the term store. Redundant terms can make it difficult for admins to manage a term set.
+   > When you enable the **Allow new values** option (only allowed for open term sets), users are more likely to add redundant terms in the term store. Redundant terms can make it difficult for admins to manage a term set.
 
 You can create as many placeholders as you think are necessary. When you're done, you can choose to save the template as a draft or publish the template.
 
