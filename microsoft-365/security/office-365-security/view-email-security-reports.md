@@ -32,13 +32,30 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-A variety of reports are available in the Microsoft 365 Defender portal at <https://security.microsoft.com> to help you see how email security features, such as anti-spam, anti-malware, and encryption features in Microsoft 365 are protecting your organization. If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view and download these reports as described in this article.
+A variety of reports are available in the Microsoft 365 Defender portal at <https://security.microsoft.com> to help you see how email security features, such as anti-spam and anti-malware features in Microsoft 365 are protecting your organization. If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view and download these reports as described in this article.
 
 > [!NOTE]
 >
 > Some of the reports on the **Email & collaboration reports** page require Microsoft Defender for Office 365. For information about these reports, see [View Defender for Office 365 reports in the Microsoft 365 Defender portal](view-reports-for-mdo.md).
 >
 > Reports that are related to mail flow are now in the Exchange admin center. For more information about these reports, see [Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports).
+
+## Email security report changes in the Microsoft 365 Defender portal
+
+The Exchange Online Protection (EOP) and Microsoft Defender for Office 365 reports in the Microsoft 365 Defender portal that have been replaced, moved, or deprecated are described in the following table.
+
+|Deprecated report and cmdlets|New report and cmdlets|Message Center ID|Date|
+|---|---|:---:|:---:|
+|**URL trace** <p> Get-URLTrace|[URL protection report](view-reports-for-mdo.md#url-protection-report) <p> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|June 2021|
+|**Sent and received email report** <p> Get-MailTrafficReport <br> Get-MailDetailReport|[Threat protection status report](#threat-protection-status-report) <br> [Mailflow status report](#mailflow-status-report) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|June 2021|
+|**Forwarding report** <p> no cmdlets|[Auto-forwarded messages report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) <p> no cmdlets|MC250533|June 2021|
+|**Safe Attachments file types report** <p> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|June 2021|
+|**Safe Attachments message disposition report** <p> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|June 2021|
+|**Malware detected in email report** <p> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|June 2021|
+|**Spam detection report** <p> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[Threat protection status report: View data by Email \> Spam](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|October 2021|
+|Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|TBA|May 2022|
+|**Exchange transport rule report** <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange transport rule report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|April 2022|
+|Get-MailTrafficTopReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <p> **Note**: There is no replacement for the encryption reporting capabilities in Get-MailTrafficTopReport.|MC315742|April 2022|
 
 ## Compromised users report
 
@@ -63,11 +80,13 @@ The details table below the graph shows the following information:
 - **Creation time**
 - **User ID**
 - **Action**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
 
 - **Date (UTC)**: **Start date** and **End date**.
 - **Activity**: **Restricted** or **Suspicious**
+- **Tag**: **All** or the specified user tag (including priority accounts).
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
@@ -313,7 +332,7 @@ The **Spoof detections** report shows information about messages that were block
 
 The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for ten days of filtering.
 
-To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Spoof detections** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/SpoofMailReportV2>.
+To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Spoof detections** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/SpoofMailReport>.
 
 ![Spoof detections widget on the Email & collaboration reports page.](../../media/spoof-detections-widget.png)
 
@@ -459,6 +478,9 @@ When you're finished configuring the filters, click **Apply**, **Cancel**, or **
 
 ![Detection technology view for phishing email in the Threat protection status report.](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
+> [!NOTE]
+> Starting in May 2021, phishing detections in email were updated to include **message attachments** that contain phishing URLs. This change might shift some of the detection volume out of the **View data by Email \> Malware** view and into the **View data by Email \> Phish** view. In other words, message attachments with phishing URLs that were traditionally identified as malware now might be identified as phishing instead.
+
 In the **View data by Email \> Phish** and **Chart breakdown by Detection Technology** view, the following information is shown in the chart:
 
 - **URL malicious reputation**<sup>\*</sup>: Malicious URL reputation generated from Defender for Office 365 detonations in other Microsoft 365 customers.
@@ -491,7 +513,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**
 - **Delivery status**
 - **Sender IP**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -502,7 +524,7 @@ If you click **Filter**, the following filters are available:
   - **All**
   - **Inbound**
   - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts).
 - **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Policy type**:
   - **All**
@@ -543,7 +565,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**
 - **Delivery status**
 - **Sender IP**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -553,7 +575,7 @@ If you click **Filter**, the following filters are available:
   - **All**
   - **Inbound**
   - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts).
 - **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Policy type**:
   - **All**
@@ -573,6 +595,9 @@ On the **Threat protection status** page, the ![Create schedule icon.](../../med
 ### View data by Email \> Malware and Chart breakdown by Detection Technology
 
 ![Detection technology view for malware in the Threat protection status report.](../../media/threat-protection-status-report-malware-detection-tech-view.png)
+
+> [!NOTE]
+> Starting in May 2021, malware detections in email were updated to include **harmful URLs** in messages attachments. This change might shift some of the detection volume out of the **View data by Email \> Phish** view and into the **View data by Email \> Malware** view. In other words, harmful URLs in message attachments that were traditionally identified as phishing now might be identified as malware instead.
 
 In the **View data by Email \> Malware** and **Chart breakdown by Detection Technology** view, the following information is shown in the chart:
 
@@ -595,7 +620,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**
 - **Delivery Status**
 - **Sender IP**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -606,7 +631,7 @@ If you click **Filter**, the following filters are available:
   - **All**
   - **Inbound**
   - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts).
 - **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Policy type**:
   - **All**
@@ -645,7 +670,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**
 - **Delivery status**
 - **Sender IP**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -674,7 +699,7 @@ If you click **Filter**, the following filters are available:
   - **All**
   - **Inbound**
   - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts).
 - **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Policy type**:
   - **All**
@@ -718,7 +743,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**
 - **Delivery status**
 - **Sender IP**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -747,7 +772,7 @@ If you click **Filter**, the following filters are available:
   - **All**
   - **Inbound**
   - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts).
 - **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Policy type**:
   - **All**
@@ -820,7 +845,7 @@ In the details table below the chart, the following information is available:
 - **Recipients**
 - **System override**
 - **Sender IP**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -831,7 +856,7 @@ If you click **Filter**, the following filters are available:
   - **All**
   - **Inbound**
   - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts).
 - **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Policy type**: **All**
 - **Policy name (details table view only)**: **All**
@@ -858,7 +883,7 @@ In the details table below the chart, the following information is available:
 - **Recipients**
 - **System override**
 - **Sender IP**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -1008,7 +1033,7 @@ The details table below the graph shows the following information:
 - **Sender**
 - **Reported reason**
 - **Rescan result**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 To submit a message to Microsoft for analysis, select the message entry from the table, click **Submit to Microsoft for analysis** and then select one of the following values from the drop down list:
 

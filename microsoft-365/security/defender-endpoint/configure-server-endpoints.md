@@ -293,6 +293,8 @@ You can use the [installer script](server-migration.md#installer-script) to help
     ```  
 
      >[!NOTE]
+    >If you need to troubleshoot agent installation issues, add '-etl -log' to the install.ps1 script parameters.
+    >
     >The recommended execution policy setting is `Allsigned`. This requires importing the script's signing certificate into the Local Computer Trusted Publishers store if the script is running as SYSTEM on the endpoint.
 
     Replace \\servername-or-dfs-space\share-name with the UNC path, using the file server's fully qualified domain name (FQDN), of the shared *install.ps1* file. The installer package md4ws.msi must be placed in the same directory.  Also ensure that the permissions of the UNC path allow read access to the computer account that's installing the platform.
@@ -406,7 +408,7 @@ For other Windows server versions, you have two options to offboard Windows serv
 - Remove the Defender for Endpoint workspace configuration
 
 >[!NOTE]
->*These offboarding instructions for other Windows server versions also apply if you are running the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to migrate to the new unfiied solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
+> These offboarding instructions for other Windows server versions also apply if you are running the previous Microsoft Defender for Endpoint for Windows Server 2016 and Windows Server 2012 R2 that requires the MMA. Instructions to migrate to the new unfiied solution are at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
 
 ## Related topics
 
