@@ -7,7 +7,7 @@ ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-ms.localizationpriority: normal
+ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -30,7 +30,7 @@ You must be a Global or Billing admin to do the steps described in this article.
 
 ## What is cost management?
 
-In general, cost management is a methodology used to plan and control an organization’s budget. In the Microsoft 365 admin center, the cost management features help reduce the cost and overhead needed to manage your organization’s assets. As part of this feature, Microsoft is introducing new products and services that use a pay-as-you-go billing model, where you only pay for what you use. You can use the new cost management features to:
+Cost management is a methodology used to plan and control an organization’s budget. Microsoft is introducing new products and services that use a pay-as-you-go billing model, where you only pay for what you use. In the Microsoft 365 admin center, the cost management features help reduce the cost and overhead needed to manage your organization’s assets and also keep track of your variable pay-as-you-go charges. You can also:
 
 - Download cost and usage data used to generate your monthly invoice
 - Proactively apply data analysis to your costs
