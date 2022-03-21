@@ -136,21 +136,28 @@ The available views on the **URL protection** report page are described in the f
 
 The **View data by URL click protection action** view shows the number of URL clicks by users in the organization and the results of the click:
 
-- **Allowed**: The user was allowed to navigate to the URL.
-- **Blocked**: The user was blocked from navigating to the URL.
-- **Blocked and clicked through**: The user has chosen to continue navigating to the URL.
-- **Clicked through during scan**: The user has clicked on the link before the scan was complete.
+- **Allowed**: Clicks allowed.
+- **Allowed by tenant admin**: Clicks allowed in Safe Links policies.
+- **Blocked**: Click blocked.
+- **Blocked by tenant admin**: The Clicks blocked in Safe Links policies.
+- **Blocked and clicked through**: Blocked clicks where users click through to the blocked URL.
+- **Blocked by tenant admin and clicked through**: Admin has blocked the link, but the user clicked through.
+- **Clicked through during scan**: Clicks where users click through the pending scan page to the URL.
+- **Pending scan**: Clicks on URLs that are pending a scan verdict.
 
 A click indicates that the user has clicked through the block page to the malicious website (admins can disable click through in Safe Links policies).
 
 If you click **Filters**, you can modify the report and the details table by selecting one or more of the following values in the flyout that appears:
 
 - **Date (UTC)**: **Start date** and **End date**
-- **Detection**:
+- **Action**:
   - **Allowed**
   - **Blocked**
+  - **Allowed by tenant admin**
   - **Blocked and clicked through**
+  - **Blocked by tenant admin and clicked through**
   - **Clicked through during scan**
+  - **Pending scan**
 - **Domains**: The URL domains listed in the report results.
 - **Recipients**
 
@@ -173,13 +180,8 @@ On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-cre
 The **View data by URL click by application** view shows the number of URL clicks by apps that support Safe Links:
 
 - **Email client**
-- **PowerPoint**
-- **Word**
-- **Excel**
-- **OneNote**
-- **Visio**
+- **Office document**
 - **Teams**
-- **Others**
 
 If you click **Filters**, you can modify the report and the details table by selecting one or more of the following values in the flyout that appears:
 
@@ -204,22 +206,13 @@ On the main report page, the ![Create schedule icon.](../../media/m365-cc-sc-cre
 
 In addition to the reports described in this article, several other reports are available, as described in the following table:
 
-<br>
-
-****
-
 |Report|Topic|
 |---|---|
 |**Explorer** (Microsoft Defender for Office 365 Plan 2) or **real-time detections** (Microsoft Defender for Office 365 Plan 1)|[Threat Explorer (and real-time detections)](threat-explorer.md)|
 |Email security reports that don't require Defender for Office 365|[View email security reports in the Microsoft 365 Defender portal](view-email-security-reports.md)|
 |Mail flow reports in the Exchange admin center (EAC)|[Mail flow reports in the new Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
-|
 
 PowerShell reporting cmdlets:
-
-<br>
-
-****
 
 |Report|Topic|
 |---|---|
@@ -230,7 +223,6 @@ PowerShell reporting cmdlets:
 |Compromised users|[Get-CompromisedUserAggregateReport](/powershell/module/exchange/get-compromiseduseraggregatereport) <p> [Get-CompromisedUserDetailReport](/powershell/module/exchange/get-compromiseduserdetailreport)|
 |Mail flow status|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
 |Spoofed users|[Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport)|
-|
 
 ## What permissions are needed to view the Defender for Office 365 reports?
 
