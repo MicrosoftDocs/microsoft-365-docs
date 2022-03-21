@@ -17,11 +17,11 @@ description: Learn about key differences between a document understanding model 
 
 # Differences between document understanding and form processing models 
 
-Content understanding in Microsoft SharePoint Syntex allows you to identify and classify documents that are uploaded to SharePoint document libraries, and extract relevant information from each file.  For example, as files are uploaded to a SharePoint document library, all files that are identified as *Purchase Orders* are classified as such, and then displayed in a custom document library view. Additionally, you can pull specific information from each file (for example, *PO Number* and *Total*) and display it as a column in your document library view. 
+Content understanding in Microsoft SharePoint Syntex allows you to identify and classify documents that are uploaded to SharePoint document libraries, and then to extract relevant information from each file. For example, as files are uploaded to a SharePoint document library, all files that are identified as *Purchase Orders* are classified as such, and then displayed in a custom document library view. Additionally, you can pull specific information from each file (for example, *PO Number* and *Total*) and display it as a column in your document library view. 
 
 Content understanding lets you create *models* to identify and extract the information you need. Models have value in helping to resolve business issues for search, business processes, compliance, and many others.
 
-There are two model types that you can use:
+There are two custom model types that you can use:
 
 - [Document understanding models](document-understanding-overview.md)
 - [Form processing models](form-processing-overview.md)
@@ -47,7 +47,7 @@ Document understanding models are created and managed in a SharePoint content ce
 > [!NOTE]
 > For more information about input documents, see [Form processing model requirements and limitations](/ai-builder/form-processing-model-requirements). 
 
-Form processing models are created in Power Apps [AI Builder](/ai-builder/overview), but the creation starts directly from a SharePoint document library. A document library must have form processing model creation enabled before a user can create a form processing model for it. Admins can enable form processing model creation in the content understanding admin settings. Form processing models use PowerAutomate flows to process files when they're uploaded to the document library.
+Form processing models are created in Power Apps [AI Builder](/ai-builder/overview), but the creation starts directly from a SharePoint document library. A document library must have form processing model creation enabled before a user can create a form processing model for it. Admins can enable form processing model creation in the content understanding admin settings. Form processing models use Power Automate flows to process files when they're uploaded to the document library.
 
 When you create a document understanding model, you create a new [SharePoint content type](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) that is saved to the SharePoint Content Types gallery. Or you can use existing content types to define your model if needed.
 
@@ -79,7 +79,7 @@ Use the following table to understand when to use forms processing and when to u
 | Supported regions| Form processing relies on Power Platform. For information about global availability for Power Platform and AI Builder, see [Power Platform availability](https://dynamics.microsoft.com/geographic-availability/). | Available in all regions.|
 | Transactional cost | Uses AI Builder credits.<br>Credits can be purchased in batches of 1M.<br>1M credits are included when 300+ SharePoint Syntex licenses are purchased.<br>1M credits will allow processing of 2,000 file pages.<br>| N/A |
 | Capacity | Uses the default Power Platform environment (custom environments with Dataverse database supported). | Does not have capacity restrictions.|
-| Supported languages| English <br>Coming later in 2022: Latin alphabet languages | Models work on all latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese.|
+| Supported languages| English <br>Coming later in 2022: Latin alphabet languages | Models work on all Latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese.|
 
 ## See Also
 
