@@ -27,22 +27,22 @@ ms.prod: m365-security
 - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In every organization, there are people that are critical, like executives, leaders, managers, or other users who have access to sensitive, proprietary, or high priority information.You can tag these users within Microsoft Defender for Office 365 as priority accounts, allowing security teams to prioritize their focus on these critical individuals. With differentiated protection for priority accounts, users tagged as priority accounts will receive a higher level of protection against threats.
+In every organization, there are people that are critical, like executives, leaders, managers, or other users who have access to sensitive, proprietary, or high priority information. You can tag these users within Microsoft Defender for Office 365 as priority accounts, allowing security teams to prioritize their focus on these critical individuals. With differentiated protection for priority accounts, users tagged as priority accounts will receive a higher level of protection against threats.
 
 Priority accounts are targeted by attackers more often and are generally attacked with more sophisticated techniques. Differentiated protection for priority accounts focuses on this specific user set and provides higher level of protection using enhanced machine learning models. This differentiation in learning and message handling provides the highest level of protection for these accounts and helps maintain a low false positive rate, as a high rate of false positives can also have a negative impact on these users.
 
 ## Configure priority account protection
 
-Priority account protection is turned on be default for identified critical users. However, the security administrator of your organization can also turn on priority account protection by following these steps:
+Priority account protection is turned on be default for pre-identified critical users. However, the security administrator of your organization can also turn on priority account protection by following these steps:
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Settings** \> **Email & collaboration**. 
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Settings** \> **Email & collaboration** \> **Priority account protection**. 
  
-2. Select the checkbox next to **Priority account protection**. 
+2. Turn on **Priority account protection**. 
 
     [Need screenshot]
 
 > [!NOTE]
-> It is recommended not to disable or turn off priority account protection if it is already enabled.  
+> Don't disable or turn off priority account protection if it is already enabled.  
 
 
 ## Enable the priority account tag
@@ -57,7 +57,7 @@ Microsoft Defender for Office 365 supports priority accounts as tags that can be
 
 The **Threat protection status** report is a single view that brings together information about malicious content and malicious email detected and blocked by Microsoft Defender for Office 365. 
 
-To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Threat protection status** and then click **View details**.
+To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Threat protection status**, and then click **View details**.
 
 ### Threat Explorer 
 
@@ -70,7 +70,7 @@ To view the extra protection, in the Microsoft 365 Defender portal, go to **Emai
 
 ### Email entity page
 
-The email entity page is available in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Explorer**. In **Explorer**, select the subject of an email you're investigating. A gold bar will display at the top of the email fly-out for that mail. This invitation to the new page, reads 'Try out our new email entity page with enriched data...'. Select to view the new page.
+The email entity page is available in the Microsoft 365 Defender portal at <https://security.microsoft.com> at **Email & collaboration** \> **Explorer**. In **Explorer**, select the subject of an email you're investigating. A gold bar will display at the top of the email flyout for that mail. Select to view the new page.
 
 The tabs along the top of the entity page will allow you to investigate email efficiently. Click the **Analysis** tab. Priority account protection is now listed under **Threat detection details**. 
 
