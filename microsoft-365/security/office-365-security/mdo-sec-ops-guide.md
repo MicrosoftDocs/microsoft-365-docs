@@ -104,7 +104,7 @@ False positive and false negative management and the responsible personas are de
 
 |Activity|Cadence|Description|Persona|
 |---|---|---|---|
-|Review [top targeted users](threat-explorer.md#top-targeted-users.md) by malware and phishing.|Weekly|Review top targeted users by phishing and malware email. Use the information to decide if any policy changes needed to adjust the protection configuration for these users. Add them to the [Priority accounts](/microsoft-365/admin/setup/priority-accounts) tags to gain visibility when Incidents impacting them and provide additional protection when needed.|Security Administration <p> Security Operations Team|
+|Review [top targeted users](threat-explorer.md#top-targeted-users) by malware and phishing.|Weekly|Review top targeted users by phishing and malware email. Use the information to decide if any policy changes needed to adjust the protection configuration for these users. Add them to the [Priority accounts](/microsoft-365/admin/setup/priority-accounts) tags to gain visibility when Incidents impacting them and provide additional protection when needed.|Security Administration <p> Security Operations Team|
 
 ### Review top Malware, Phishing Campaigns targeting your tenant
 
