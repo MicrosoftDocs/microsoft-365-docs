@@ -14,7 +14,9 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.collection: m365solution-scenario
+ms.collection: 
+- m365solution-scenario
+- M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
 ---
@@ -157,6 +159,7 @@ You can use Microsoft Endpoint Manager (MEM) OMA-URI to configure custom ASR rul
 
    - In **Platform**, select **Windows 10 and later**
    - In **Profile type**, select **Templates**
+   - If ASR rules are already set through Endpoint security, in **Profile type**, select **Settings Catalog**.
 
    Select **Custom**, and then select **Create**.
 

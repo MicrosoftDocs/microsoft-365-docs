@@ -2,11 +2,11 @@
 title: "Understand subscriptions and licenses in Microsoft 365 for business"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: micurn, nicholak
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: medium
@@ -14,10 +14,10 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom: 
+- commerce_licensing
 - okr_smb
 - AdminSurgePortfolio
 - manage_licenses
-- commerce_licensing
 - AdminTemplateSet
 search.appverid: MET150
 description: "The applications and services that you receive depend on which Microsoft 365 product you purchased, such as Microsoft 365 Apps for business."

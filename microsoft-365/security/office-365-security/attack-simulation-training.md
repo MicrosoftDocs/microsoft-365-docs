@@ -245,10 +245,8 @@ Microsoft-curated landing pages are available in 12 languages: Chinese (Simplifi
 - **Select landing page preference**: The available values are:
   - **Use Microsoft default landing page**: This is the default value that has the following associated options to configure:
     - **Select landing page layout**: Select one of the available templates.
-    - **Add logo**: Click **Browse** to find and select a .png, .jpeg, or .gif file. To remove the logo, click **Remove**.
+    - **Add logo**: Click **Browse** to find and select a .png, .jpeg, or .gif file. The logo size should be a maximum of 210 x 70 to avoid distortion. To remove the logo, click **Remove**.
     - **Add payload indicators to email**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select technique](#select-a-social-engineering-technique) page.
-
-      Select **Add payload indicators to email** to help users learn how to identify phishing messages.
 
     You can preview the results by clicking the **Open preview panel** button at the bottom of the page.
 
@@ -257,18 +255,19 @@ Microsoft-curated landing pages are available in 12 languages: Chinese (Simplifi
     If you select **Use a custom URL**, you need to add the URL in the **Enter the custom landing page URL** box that appears. No other options are available on the page.
 
   - **Create your own landing page**: This value has the following associated options to configure:
-    - **Add payload indicators to email**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select technique](#select-a-social-engineering-technique) page.
-
-      Select **Add payload indicators to email** to help users learn how to identify phishing messages.
+    - **Add payload indicators to email**: This setting is available to select only if both of the following conditions are true:
+      - You previously selected **Credential harvest**, **Link in attachment**, or **Drive-by URL** on the [Select technique](#select-a-social-engineering-technique) page.
+      - After you add the **Dynamic tag** named **Insert email content** into the page content.
 
     - Page content: Two tabs are available:
       - **Text**: A rich text editor is available to create your landing page. In addition to the typical font and formatting settings, the following settings are available:
         - **Dynamic tag**: Select from the following tags:
-          - **Username**
-          - **Email sender name**
-          - **Sender email address**
-          - **Email subject**
-          - **Email content**
+          - **Insert name**
+          - **Insert sender name**
+          - **Insert sender email**
+          - **Insert email subject**
+          - **Insert email content**
+          - **Insert date**
         - **Use from default**: Select an available template to start with. You can modify the text and layout in the editing area. To reset the landing page back to the default text and layout of the template, click **Reset to default**.
     - **Code**: You can view and modify the HTML code directly.
 
@@ -357,6 +356,7 @@ The following settings are available:
     - **Select launch time**
 - **Configure number of days to end simulation after**: The default value is 2.
 - **Enable region aware time zone delivery**: Deliver simulated attack messages to your employees during their working hours based on their region.
+- **Display the drive-by technique interstitial data gathered page**: You can show the overlay that comes up for the drive-bu URL technique attacks. To hide the overlay and go directly to the landing page, de-select this option.
 
 When you're finished, click **Next**.
 

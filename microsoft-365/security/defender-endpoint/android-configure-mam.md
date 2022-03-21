@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: shthota
 author: shthota
 manager: dansimp
-localization_priority: Normal
+ms.localizationpriority: medium
 audience: ITPro
 ms.collection:
   - m365-security-compliance

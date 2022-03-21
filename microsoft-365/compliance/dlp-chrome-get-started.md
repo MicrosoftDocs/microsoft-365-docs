@@ -103,7 +103,7 @@ Deploying Microsoft Compliance Extension is a multi-phase process. You can choos
 
 ### Prepare infrastructure
 
-If you are rolling out the Microsoft Compliance Extension to all your monitored Windows 10 devices, you should remove Google Chrome from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](endpoint-dlp-using.md#unallowed-browsers). If you are only rolling it out to a few devices, you can leave Chrome on the unallowed browser or unallowed app lists. The Microsoft Compliance Extension will bypass the restrictions of both lists for those computers where it is installed.
+If you are rolling out the Microsoft Compliance Extension to all your monitored Windows 10 devices, you should remove Google Chrome from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](dlp-configure-endpoint-settings.md#unallowed-browsers). If you are only rolling it out to a few devices, you can leave Chrome on the unallowed browser or unallowed app lists. The Microsoft Compliance Extension will bypass the restrictions of both lists for those computers where it is installed.
 
 ### Prepare your devices
 
@@ -273,8 +273,7 @@ Now that you’ve removed Chrome from the disallowed browsers/apps list, you can
 
 ### Known Issues and Limitations
 
-1. Block Override enforcement for cloud egress is not supported.
-2. Incognito mode is not supported and must be disabled.
+1. Incognito mode is not supported and must be disabled.
 
 ## Next steps
 

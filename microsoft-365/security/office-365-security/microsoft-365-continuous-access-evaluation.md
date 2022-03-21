@@ -1,8 +1,8 @@
 ---
 title: Continuous access evaluation for Microsoft 365 - Microsoft 365 for enterprise
 description: Describes how conditional access evaluation for Microsoft 365 and Azure AD proactively terminates active user sessions and enforces tenant policy changes in near real time.
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.prod: m365-security
 ms.topic: article
@@ -70,10 +70,6 @@ Conditional Access policy evaluation occurs when the user account is no longer c
 
 The following Microsoft 365 services currently support continuous access evaluation by listening to events from Azure AD.
 
-<br>
-
-****
-
 |Enforcement type|Exchange|SharePoint|Teams|
 |---|---|---|---|
 |**Critical events:**||||
@@ -81,7 +77,6 @@ The following Microsoft 365 services currently support continuous access evaluat
 |User risk|Supported|Not supported|Not supported|
 |**Conditional Access policy evaluation:**||||
 |IP address location policy|Supported|Supported\*|Supported|
-|
 
 \* SharePoint Office web browser access supports instant IP policy enforcement by enabling strict mode. Without strict mode, access token lifetime is one hour.
 

@@ -58,6 +58,17 @@ Use [Explorer (and real-time detections)](threat-explorer.md) to analyze threats
 
 To view and use this report in the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
 
+## Office 365 Threat Intelligence connection
+
+This feature is only available if you have an active Office 365 E5 subscription or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
+
+When you turn on this feature, you'll be able to incorporate data from Microsoft Defender for Office 365 into Microsoft 365 Defender to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
+
+> [!NOTE]
+> You'll need to have the appropriate license to enable this feature.
+
+To receive contextual device integration in Office 365 Threat Intelligence, you'll need to enable the Defender for Endpoint settings in the Security & Compliance dashboard.
+
 ### Incidents
 
 Use the Incidents list (this is also called Investigations) to see a list of in flight security incidents. Incidents are used to track threats such as suspicious email messages, and to conduct further investigation and remediation.
@@ -98,10 +109,6 @@ Microsoft Defender for Office 365 uses role-based access control. Permissions ar
 > - [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md)
 > - [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)
 
-<br>
-
-****
-
 |Activity|Roles and permissions|
 |---|---|
 |Use the Threat & Vulnerability Management dashboard (or the new [Security dashboard](security-dashboard.md) <p> View information about recent or current threats|One of the following: <ul><li>**Global Administrator**</li><li>**Security Administrator**</li><li>**Security Reader**</li></ul> <p> These roles can be assigned in either Azure Active Directory (<https://portal.azure.com>) or the Microsoft 365 admin center (<https://admin.microsoft.com>).|
@@ -109,7 +116,6 @@ Microsoft Defender for Office 365 uses role-based access control. Permissions ar
 |View Incidents (also referred to as Investigations) <p> Add email messages to an incident|One of the following: <ul><li>**Global Administrator**</li><li>**Security Administrator**</li><li>**Security Reader**</li></ul> <p> These roles can be assigned in either Azure Active Directory (<https://portal.azure.com>) or the Microsoft 365 admin center (<https://admin.microsoft.com>).|
 |Trigger email actions in an incident <p> Find and delete suspicious email messages|One of the following: <ul><li>**Global Administrator**</li><li>**Security Administrator** plus the **Search and Purge** role</li></ul> <p> The **Global Administrator** and **Security Administrator** roles can be assigned in either Azure Active Directory (<https://portal.azure.com>) or the Microsoft 365 admin center (<https://admin.microsoft.com>). <p> The **Search and Purge** role must be assigned in the **Email & collaboration roles** in the Microsoft 36 Defender portal (<https://security.microsoft.com>).|
 |Integrate Microsoft Defender for Office 365 Plan 2 with Microsoft Defender for Endpoint <p> Integrate Microsoft Defender for Office 365 Plan 2 with a SIEM server|Either the **Global Administrator** or the **Security Administrator** role assigned in either Azure Active Directory (<https://portal.azure.com>) or the Microsoft 365 admin center (<https://admin.microsoft.com>). <p> --- **plus** --- <p> An appropriate role assigned in additional applications (such as [Microsoft Defender Security Center](/windows/security/threat-protection/microsoft-defender-atp/user-roles) or your SIEM server).|
-|
 
 ## Next steps
 
