@@ -7,10 +7,10 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/14/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
@@ -26,7 +26,7 @@ ms.collection:
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
-With Microsoft Defender for Business, you have several options to choose from for onboarding your organization's devices. This article walks you through your options and includes an overview of how onboarding works.
+With Microsoft Defender for Business, you have several options to choose from for onboarding your company's devices. This article walks you through your options and includes an overview of how onboarding works.
 
 >
 > **Got a minute?**
@@ -35,7 +35,7 @@ With Microsoft Defender for Business, you have several options to choose from fo
 
 ## Get the device onboarding guide
 
-Use the following guide and information to choose the best option for your organization.
+Use the following guide and information to choose the best option for your company.
 
 [:::image type="content" source="media/mdb-device-onboarding.png" alt-text="Screenshot of device onboarding diagram":::](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) <br/>
 [PDF](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.pdf) | [Visio](https://download.microsoft.com/download/4/d/2/4d2d8a86-2130-45b4-ba42-2997c854383a/MDB-DeviceOnboardingFlow-March2022.vsdx)
@@ -74,7 +74,7 @@ Defender for Business offers you several different methods for onboarding device
 
 The automatic onboarding option applies to Windows devices only. Automatic onboarding is available if the following conditions are met:
 
-- Your organization was already using Microsoft Endpoint Manager, Microsoft Intune, or Mobile Device Management (MDM) in Microsoft Intune before you got Defender for Business
+- Your company was already using Microsoft Endpoint Manager, Microsoft Intune, or Mobile Device Management (MDM) in Microsoft Intune before you got Defender for Business
 
 - You already have Windows devices enrolled in Endpoint Manager
 
@@ -102,11 +102,11 @@ You can use a local script to onboard Windows and Mac devices. When you run the 
    | Operating System | Procedure |
    |---|---|
    | Windows | 1. On a Windows device, extract the contents of the configuration package to a location, such as the Desktop folder. You should have a file named `WindowsDefenderATPLocalOnboardingScript.cmd`. <br/><br/>2. Open Command Prompt as an administrator.<br/><br/>3. Type the location of the script file. For example, if you copied the file to the Desktop folder, you would type: `%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd`, and then press the Enter key (or select **OK**).<br/><br/>4. After the script runs, proceed to [Run a detection test](#run-a-detection-test). |
-   | macOS | 1. On a Mac computer, save the installation package as `wdav.pkg` to a local directory. <br/><br/>2. Save the onboarding package as `WindowsDefenderATPOnboardingPackage.zip` to the same directory you used for the installation package. <br/><br/>3. Use Finder to navigate to `wdav.pkg` you saved, and then open it.<br/><br/>4. Select **Continue**, agree with the License terms, and then enter your password when prompted.<br/><br/>5. You will be prompted to allow a driver from Microsoft to be installed (either "System Extension Blocked" or "Installation is on hold", or both. The driver must be allowed to be installed. To allow the installation, select **Open Security Preferences** or **Open System Preferences** > **Security & Privacy**, and then select **Allow**.<br/><br/>6. Use the following Python command in Bash to run the onboarding package: `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py`. <br/><br/>7. To confirm that the device is associated with your organization, use the following Python command in Bash: `mdatp health --field org_id`.<br/><br/>8. If you are using macOS 10.15 (Catalina) or later, grant Defender for Business consent to protect your device. Go to **System Preferences** > **Security & Privacy** > **Privacy** > **Full Disk Access**.  Select the lock icon to make changes (bottom of the dialog box), and then select Microsoft Defender for Business (or Defender for Endpoint, if that's what you see). <br/><br/>9. To verify that the device is onboarded, use the following command in Bash: `mdatp health --field real_time_protection_enabled`.    |
+   | macOS | 1. On a Mac computer, save the installation package as `wdav.pkg` to a local directory. <br/><br/>2. Save the onboarding package as `WindowsDefenderATPOnboardingPackage.zip` to the same directory you used for the installation package. <br/><br/>3. Use Finder to navigate to `wdav.pkg` you saved, and then open it.<br/><br/>4. Select **Continue**, agree with the License terms, and then enter your password when prompted.<br/><br/>5. You will be prompted to allow a driver from Microsoft to be installed (either "System Extension Blocked" or "Installation is on hold", or both. The driver must be allowed to be installed. To allow the installation, select **Open Security Preferences** or **Open System Preferences** > **Security & Privacy**, and then select **Allow**.<br/><br/>6. Use the following Python command in Bash to run the onboarding package: `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py`. <br/><br/>7. To confirm that the device is associated with your company, use the following Python command in Bash: `mdatp health --field org_id`.<br/><br/>8. If you are using macOS 10.15 (Catalina) or later, grant Defender for Business consent to protect your device. Go to **System Preferences** > **Security & Privacy** > **Privacy** > **Full Disk Access**.  Select the lock icon to make changes (bottom of the dialog box), and then select Microsoft Defender for Business (or Defender for Endpoint, if that's what you see). <br/><br/>9. To verify that the device is onboarded, use the following command in Bash: `mdatp health --field real_time_protection_enabled`.    |
 
 ## Microsoft Endpoint Manager
 
-If you were already using Endpoint Manager (which includes Microsoft Intune and Mobile Device Management), before you got Defender for Business, you can continue to use Endpoint Manager to onboard your organization's devices. With Endpoint Manager, you can onboard computers, tablets, and phones, including iOS and Android devices.
+If you were already using Endpoint Manager (which includes Microsoft Intune and Mobile Device Management), before you got Defender for Business, you can continue to use Endpoint Manager to onboard your company's devices. With Endpoint Manager, you can onboard computers, tablets, and phones, including iOS and Android devices.
 
 See [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment).
 
@@ -147,7 +147,7 @@ After the command has run, the Command Prompt window will close automatically. I
 
 ## Gradual device onboarding
 
-You can onboard your organization's devices in phases. *We call this gradual device onboarding*. 
+You can onboard your company's devices in phases. *We call this gradual device onboarding*. 
 
 1. Identify a set of devices to onboard.
 
