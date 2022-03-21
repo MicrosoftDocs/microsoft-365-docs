@@ -82,7 +82,7 @@ The procedure to disable modern authentication on a device is very similar, but 
 Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\Microsoft\Exchange]
-   "AlwaysUseMSOAuthForAutoDiscover"=dword:00000001
+   "AlwaysUseMSOAuthForAutoDiscover"=dword:00000000
 
 [HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common]
 
