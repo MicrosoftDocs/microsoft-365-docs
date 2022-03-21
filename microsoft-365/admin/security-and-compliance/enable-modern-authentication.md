@@ -71,7 +71,7 @@ If you're currently signed in to any of Office client apps, you need to sign out
 
 ## Disable modern authentication on devices
 
-The procedure to disable modern authentication on a device is very similar. Only two of the previous three registry keys are required, and you need to change their values from 1 to 0:
+The procedure to disable modern authentication on a device is very similar, but fewer registry keys are required, and you need to set their values to 0.
 
 |Registry key|Type|Value|
 |---|:---:|:---:|
@@ -81,11 +81,13 @@ The procedure to disable modern authentication on a device is very similar. Only
 ```text
 Windows Registry Editor Version 5.00
 
+[HKEY_CURRENT_USER\Software\Microsoft\Exchange]
+   "AlwaysUseMSOAuthForAutoDiscover"=dword:00000001
+
 [HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common]
 
 [HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity]
 "EnableADAL"=dword:00000000
-"Version"=dword:00000000
 ```
 
 ## Related content
