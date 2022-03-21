@@ -31,14 +31,9 @@ ms.prod: m365-security
 
 If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [necessary permissions](#required-licenses-and-permissions), you have either **Explorer** or **Real-time detections** (formerly *Real-time reports* — [see what's new](#new-features-in-threat-explorer-and-real-time-detections)!). In the Security & Compliance Center, go to **Threat management**, and then choose **Explorer** _or_ **Real-time detections**.
 
-<br>
-
-****
-
 |With Microsoft Defender for Office 365 Plan 2, you see:|With Microsoft Defender for Office 365 Plan 1, you see:|
 |---|---|
 |![Threat explorer.](../../media/threatmgmt-explorer.png)|![Real-time detections](../../media/threatmgmt-realtimedetections.png)|
-|
 
 Explorer or Real-time detections helps your security operations team investigate and respond to threats efficiently. The report resembles the following image:
 
@@ -370,26 +365,16 @@ How is this done? Delivery status is now broken out into two columns:
 
 *Delivery action* is the action taken on an email due to existing policies or detections. Here are the possible actions for an email:
 
-<br>
-
-****
-
 |Delivered|Junked|Blocked|Replaced|
 |---|---|---|---|
 |Email was delivered to the inbox or folder of a user, and the user can access it.|Email was sent to the user's Junk  or Deleted folder, and the user can access it.|Emails that are quarantined, that failed, or were dropped. These mails are inaccessible to the user.|Email had malicious attachments replaced by .txt files that state the attachment was malicious.|
-|
 
 Here is what the user can and can't see:
-
-<br>
-
-****
 
 |Accessible to end users|Inaccessible to end users|
 |---|---|
 |Delivered|Blocked|
 |Junked|Replaced|
-|
 
 **Delivery location** shows the results of policies and detections that run post-delivery. It's linked to ***Delivery action***. These are the possible values:
 
