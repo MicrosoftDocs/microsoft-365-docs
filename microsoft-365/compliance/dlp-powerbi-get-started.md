@@ -75,18 +75,18 @@ When a dataset matches a DLP policy:
 
 - If the policy has user notification configured, it will be marked in the Power BI service with a shield icon to indicate that it matches a DLP policy.
 
-    ![Screenshot of policy tip badge on dataset in lists.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-policy-tip-on-dataset.png)
+    ![Screenshot of policy tip badge on dataset in lists.](../media/dlp-power-bi-policy-tip-on-dataset.png)
 
     Open the dataset details page to see a policy tip that explains the policy match and how the detected type of sensitive information should be handled.
 
-    ![Screenshot of policy tip on dataset details page.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-policy-tip-in-dataset-details.png)
+    ![Screenshot of policy tip on dataset details page.](../media/dlp-power-bi-policy-tip-in-dataset-details.png)
 
     >[!NOTE]
     > If you hide the policy tip, it doesn’t get deleted. It will appear the next time you visit the page.
 
 - If alerts are enabled in the policy, an alert will be recorded on the dlp **Alerts** tab in the compliance center, and (if configured) an email will be sent to administrators and/or specified users. The following image shows the **Alerts** tab in the data loss prevention section of the compliance center.
 
-    ![Screenshot of Alerts tab in the compliance center.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-alerts-tab.png)
+    ![Screenshot of Alerts tab in the compliance center.](../media/dlp-power-bi-alerts-tab.png)
 
 ## Configure a DLP policy for Power BI
 
