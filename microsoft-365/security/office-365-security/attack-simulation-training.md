@@ -245,7 +245,7 @@ Microsoft-curated landing pages are available in 12 languages: Chinese (Simplifi
 - **Select landing page preference**: The available values are:
   - **Use Microsoft default landing page**: This is the default value that has the following associated options to configure:
     - **Select landing page layout**: Select one of the available templates.
-    - **Add logo**: Click **Browse** to find and select a .png, .jpeg, or .gif file. To remove the logo, click **Remove**.
+    - **Add logo**: Click **Browse** to find and select a .png, .jpeg, or .gif file. The logo size should be a maximum of 210 x 70 to avoid distortion. To remove the logo, click **Remove**.
     - **Add payload indicators to email**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select technique](#select-a-social-engineering-technique) page.
 
     You can preview the results by clicking the **Open preview panel** button at the bottom of the page.
