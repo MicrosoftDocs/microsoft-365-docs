@@ -28,18 +28,17 @@ description: "Set up multifactor authentication for mobile devices."
 
 # Set up multi-factor authentication on your mobile device
 
-Multi-factor authentication provides more security for your business, because instead of only using a password, or a code through text, an separate app is used to verify access, which makes it extremely difficult to hack. When the Admin requires MFA, you can use the Microsoft Authenticator app to securely log into the key apps with your phone. 
+Multi-factor authentication provides more security because instead of only using a password, or a code through text, a separate app on your phone is used to verify access. This makes it difficult to hack. When MFA is required, members of the organization can use the Microsoft Authenticator app to securely log into key apps on their phones. 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
 See more at [Set up multifactor authentication in Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
 
-## Use the Outlook app in your devices
+## Use the Outlook app on your devices
 
-After your admin has required you to use MFA and you've set up an authenticator app as a second form of authentication, we recommend that you install and only use the Outlook app to access your Microsoft 365 email. See [Set up mobile devices](../business/set-up-mobile-devices.md) for how to install Office apps, including Outlook, on your phone.
+After an admin has required the front-line users to use MFA then the authenticator app serves as a second form of authentication. We recommend you have them install and use the Outlook app to access their Microsoft 365 email. See [Set up mobile devices](../business/set-up-mobile-devices.md) for how to install Office apps, including Outlook, on a phone.
 
 ## Next objective
 
 Figure out how to [set up managed devices](m365bp-managed-devices-setup.md).
-
 

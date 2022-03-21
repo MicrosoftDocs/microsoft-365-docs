@@ -28,13 +28,13 @@ description: "How to install Office on all devices."
 
 # Install Office apps on all devices
 
-Now that you've set up Microsoft 365, you can install individual Office applications on your Mac, PC, or mobile devices.
+Okay, you've set up Microsoft 365, and you can require users to install individual Office applications on their Mac, PC, or mobile devices. This is something your users to do to help protect the entire org.
   
 ## Watch: Install Office apps
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1?autoplay=false]
 
-Microsoft Office apps can be found on your  **Start** menu. If you don't see them, you can install them yourself.
+For all members of the organization, the Microsoft Office apps can be found on the **Start** menu. If you don't see them, you can install them yourself.
 
 1. Go to office.com. You might need to sign in with your work account.
 2. Select  **Install Office**  >  **Microsoft 365 apps**  >  **Run** , and then select  **Yes**.
@@ -59,16 +59,6 @@ Follow these links for information on how to:
 Use the following instructions to install Office on an iPhone or an Android phone. After you follow these steps, your work files created in Office apps will be protected by Microsoft 365 for business.
 
 The example is for Outlook, but applies tp any other Office apps you want to install.
-
-## Next objective
-
-Set up protection for [unmanaged devices](m365bp-protect-pcs-macs.md).
-
-## Contact support
-
- **If you need to contact support:**
-  
-As a Microsoft 365 admin, you have access to our customer support team, **[Contact support for business products - Admin Help](../business-video/get-help-support.md)**
   
 ## Set up mobile devices
 
@@ -103,6 +93,16 @@ If your organization is protecting files in apps, you'll see a dialog stating th
 Locate Outlook on the iPhone, and restart it. When prompted, enter a PIN and verify it. Outlook on your iPhone is now ready to be used.
   
 :::image type="content" source="media/set-pin.png" alt-text="Set a PIN to access your organization's data.":::
+
+## Next objective
+
+Set up protection for [unmanaged devices](m365bp-protect-pcs-macs.md).
+
+## Contact support
+
+ **If you need to contact support:**
+  
+As a Microsoft 365 admin, you have access to our customer support team, **[Contact support for business products - Admin Help](../business-video/get-help-support.md)**
   
 ## [Android](#tab/Android)
   

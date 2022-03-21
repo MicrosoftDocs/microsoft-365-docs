@@ -28,17 +28,16 @@ description: "Protect unmanaged or bring-your-own devices (BYOD) with Microsoft 
 
 # Protect unmanaged Windows 10 PCs and Macs in Microsoft 365 Business Premium
 
-The objective is to protect any unmanaged Windows 10 PCs and Macs not enrolled in Microsoft Intune. Many small businesses and campaigns have staff who bring their own devices (BYODs), and these devices are not managed. BYODs include personally-owned phones, tablets, and PCs. 
+This objective is focused on creating protection for any unmanaged Windows 10 PCs and Macs not enrolled in Microsoft Intune. Your small businesse or campaign may have staff who bring their own devices (BYODs), and these devices are not managed. BYODs include personally-owned phones, tablets, and PCs. 
 
 >[!NOTE]
->BYOD users must install and run the Company Portal app to enroll these devices and receive access to company resources.
+>BYOD users must each install and run the Company Portal app to enroll these devices and receive access to company resources.
 
-Use the following guidance to ensure that minimum security capabilities are configured on all the devices.
+It's critical that you make sure your frontline users follow these guidelines to ensure that minimum security capabilities are configured on all the BYOD devices.
 
 ## [Windows 10](#tab/Windows10)
 
 **Turn on device encryption**<p>
-
 Device encryption is available on a wide range of Windows devices and helps protect your data by encrypting it. If you turn on device encryption, only authorized individuals will be able to access your device and data. See [turn on device encryption](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) for instructions.
 
  If device encryption isn't available on your device, you can turn on standard [BitLocker encryption](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) instead. (BitLocker isn't available on Windows 10 Home edition.) 
