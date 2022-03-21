@@ -7,7 +7,7 @@ author: kelleyvice-msft
 manager: laurawi
 ms.date: 11/20/2019
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection: 

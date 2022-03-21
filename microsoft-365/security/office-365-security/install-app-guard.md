@@ -133,7 +133,6 @@ Office supports the following policies to enable you to configure the capabiliti
 |Turn off camera and microphone access for documents opened in Application Guard for Office|Enabling this policy will remove Office access to the camera and microphone inside Application Guard for Office.|
 |Restrict printing from documents opened in Application Guard for Office|Enabling this policy will limit the printers that a user can print to from a file opened in Application Guard for Office. For example, you can use this policy to restrict users to only print to PDF.|
 |Prevent users from removing Application Guard for Office protection on files|Enabling this policy will remove the option (within the Office application experience) to disable Application Guard for Office protection or to open a file outside Application Guard for Office. <p> **Note:** Users can still bypass this policy by manually removing the mark-of-the-web property from the file or by moving a document to a Trusted location.|
-|
 
 > [!NOTE]
 > The following policies will require the user to sign out and sign in again to Windows to take effect:
@@ -234,7 +233,7 @@ When this heuristic is met, Office will pre-create an Application Guard containe
 
 * Selecting web links (`http` or `https`) doesn't open the browser.
 * The default setting for copy-paste protection policy is to enable clipboard access to text only.
-* The default setting for unsupported file types protection policy is to block opening untrusted unsupported file types that are encrypted or have Information Rights Management (IRM) set. This includes files that have Microsoft Information Protection sensitivity labels using encryption (confidential or highly confidential).
+* The default setting for unsupported file types protection policy is to block opening untrusted unsupported file types that are encrypted or have Information Rights Management (IRM) set. This includes files that are encrypted by using sensitivity labels from Microsoft Purview Information Protection.
 * CSV and HTML files are not supported at this time.
 * Application Guard for Office currently does not work with NTFS compressed volumes. If you are seeing an error "ERROR_VIRTUAL_DISK_LIMITATION" please try uncompressing the volume.
 * Updates to .NET might cause files to fail to open in Application Guard. As a workaround, users can restart their device when they come across this failure. Learn more about the issue at [Receiving an error message when attempting to open Windows Defender Application Guard or Windows Sandbox](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap).

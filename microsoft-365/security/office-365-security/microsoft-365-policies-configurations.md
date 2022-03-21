@@ -151,7 +151,6 @@ Azure AD provides a full suite of identity management capabilities. We recommend
 |[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|Enables you to detect potential vulnerabilities affecting your organization's identities and configure automated remediation policy to low, medium, and high sign-in risk and user risk. This guidance relies on this risk evaluation to apply Conditional Access policies for multi-factor authentication. This guidance also includes a Conditional Access policy that requires users to change their password if high-risk activity is detected for their account.|Microsoft 365 E5, Microsoft 365 E3 with the E5 Security add-on, EMS E5, or Azure AD Premium P2 licenses|
 |[Self-service password reset (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|Allow your users to reset their passwords securely and without help-desk intervention, by providing verification of multiple authentication methods that the administrator can control.|Microsoft 365 E3 or E5|
 |[Azure AD password protection](/azure/active-directory/authentication/concept-password-ban-bad)|Detect and block known weak passwords and their variants and additional weak terms that are specific to your organization. Default global banned password lists are automatically applied to all users in an Azure AD tenant. You can define additional entries in a custom banned password list. When users change or reset their passwords, these banned password lists are checked to enforce the use of strong passwords.|Microsoft 365 E3 or E5|
-|
 
 Here are the components of Zero Trust identity and device access, including Intune and Azure AD objects, settings, and subservices.
 
@@ -193,7 +192,6 @@ The following table summarizes our recommendations for using these capabilities 
 |**Enforce password change**|For high-risk users|For high-risk users|For high-risk users|
 |**Enforce Intune application protection**|Yes|Yes|Yes|
 |**Enforce Intune enrollment for organization-owned device**|Require a compliant or domain-joined PC, but allow bring-your-own devices (BYOD) phones and tablets|Require a compliant or domain-joined device|Require a compliant or domain-joined device|
-|
 
 ## Device ownership
 

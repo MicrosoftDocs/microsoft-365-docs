@@ -74,14 +74,14 @@ Data from Endpoint DLP can be viewed in [Activity explorer](data-classification-
 
 There are roles and role groups in preview that you can test out to fine tune your access controls.
 
-Here's a list of Microsoft Purview Information Protection  roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
+Here's a list of applicable roles that are in preview. To learn more about them, see [Roles in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
 - Information Protection Admin
 - Information Protection Analyst
 - Information Protection Investigator
 - Information Protection Reader
 
-Here's a list of MIP role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
+Here's a list of applicable role groups that are in preview. To learn more about the, see [Role groups in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)
 
 - Information Protection
 - Information Protection Admins
@@ -103,7 +103,7 @@ Deploying Microsoft Compliance Extension is a multi-phase process. You can choos
 
 ### Prepare infrastructure
 
-If you are rolling out the Microsoft Compliance Extension to all your monitored Windows 10 devices, you should remove Google Chrome from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](endpoint-dlp-using.md#unallowed-browsers). If you are only rolling it out to a few devices, you can leave Chrome on the unallowed browser or unallowed app lists. The Microsoft Compliance Extension will bypass the restrictions of both lists for those computers where it is installed.
+If you are rolling out the Microsoft Compliance Extension to all your monitored Windows 10 devices, you should remove Google Chrome from the unallowed app and unallowed browser lists. For more information, see [Unallowed browsers](dlp-configure-endpoint-settings.md#unallowed-browsers). If you are only rolling it out to a few devices, you can leave Chrome on the unallowed browser or unallowed app lists. The Microsoft Compliance Extension will bypass the restrictions of both lists for those computers where it is installed.
 
 ### Prepare your devices
 

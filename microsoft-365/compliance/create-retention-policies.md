@@ -99,8 +99,6 @@ For technical details about how retention works for Teams, including what elemen
 
 - Although you can select the option to start the retention period when items were last modified, the value of **When items were created** is always used. For messages that are edited, a copy of the original message is saved with its original timestamp to identify when this pre-edited message was created, and the post-edited message has a newer timestamp.
 
-- When you select **Edit** for the **Teams channel messages** location, you might see Microsoft 365 groups that aren't also teams. Don't select these groups.
-
 - When you select **Edit** for the Teams chats location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
 
 
