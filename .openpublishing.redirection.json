@@ -6752,6 +6752,11 @@
     "source_path": "microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md",
     "redirect_url": "/microsoft-365/compliance/compliance-manager",
     "redirect_document_id": false
-    }
+    },    
+    {
+    "source_path": "microsoft-365/compliance/compliance-manager-and-the-gdpr.md",
+    "redirect_url": "/microsoft-365/compliance/compliance-manager",
+    "redirect_document_id": false
+    },
   ]
 }
