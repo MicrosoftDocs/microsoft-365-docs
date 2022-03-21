@@ -32,7 +32,7 @@ To help organizations detect and protect their sensitive data, [Microsoft 365 da
 - Both classic and new experience workspaces are supported, as long as they are hosted in Premium Gen2 capacities.
 - You must create a custom DLP custom policy for Power BI. DLP templates are not supported.
 - DLP polices that are applied to the DLP location support sensitivity labels and sensitive information types as conditions. 
-- DLP policies for Power BI are not supported for sample datasets, [streaming datasets](../connect-data/service-real-time-streaming.md), or datasets that connect to their data source via [DirectQuery](../connect-data/desktop-use-directquery.md) or [live connection](../connect-data/desktop-directquery-about.md#live-connections).
+- DLP policies for Power BI are not supported for sample datasets, [streaming datasets](/power-bi/connect-data/service-real-time-streaming), or datasets that connect to their data source via [DirectQuery](/power-bi/connect-data/desktop-use-directquery) or [live connection](/power-bi/connect-data/desktop-directquery-about#live-connections).
 - DLP policies for Power BI are not supported in sovereign clouds.
 
 ## Licensing and permissions
@@ -224,5 +224,5 @@ Click on an alert to start drilling down to its details and to see management op
 ## Next steps
 
 - [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
-- [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
-- [Audit schema for sensitivity labels in Power BI](service-security-sensitivity-label-audit-schema.md)
+- [Sensitivity labels in Power BI](/power-bi/enterprise/service-security-sensitivity-label-overview)
+- [Audit schema for sensitivity labels in Power BI](/power-bi/enterprise/service-security-sensitivity-label-audit-schema)
