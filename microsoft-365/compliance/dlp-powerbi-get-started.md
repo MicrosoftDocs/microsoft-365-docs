@@ -19,82 +19,83 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: "Prepare for and deploy the Microsoft Compliance Extension."
+description: "Prepare for and deploy DLP to PowerBI locations."
 ---
 # Get started with Data loss prevention policies for Power BI (preview)
 
-To help organizations detect and protect their sensitive data, Power BI supports [Microsoft 365 data loss prevention (DLP) polices](/microsoft-365/compliance/dlp-learn-about-dlp). When a DLP policy for Power BI detects a sensitive dataset, a policy tip can be attached to the dataset in the Power BI service that explains the nature of the sensitive content, and an alert can be registered in the data loss prevention **Alerts** tab in the Microsoft compliance portal for monitoring and management by administrators. In addition, email alerts can be sent to administrators and specified users.
+To help organizations detect and protect their sensitive data, [Microsoft 365 data loss prevention (DLP) polices](/microsoft-365/compliance/dlp-learn-about-dlp) support Power BI. When a PowerBI data set match the criteria in a DLP policy, an alert that explains the nature of the sensitive content can be triggered. This alert is also registered in the data loss prevention **Alerts** tab in the Microsoft compliance portal for monitoring and management by administrators. In addition, email alerts can be sent to administrators and specified users.
 
 ## Considerations and limitations
 
-* DLP policies for Power BI are defined in the Microsoft 365 compliance portal.
-* DLP policies apply to workspaces. Only workspaces hosted in Premium Gen2 capacities are supported.
-* DLP dataset evaluation workloads impact capacity. Metering for DLP evaluation workloads is not yet supported.
-* Both classic and new experience workspaces are supported, provided that they are hosted in Premium Gen2 capacities.
-* DLP policy templates are not yet supported for Power BI DLP policies. When creating a DLP policy for Power BI, choose the "custom policy" option.
-* Currently, "sensitivity label" is the only supported condition type for Power BI DLP policy rules. 
-* DLP policies for Power BI are not supported for sample datasets, [streaming datasets](../connect-data/service-real-time-streaming.md), or datasets that connect to their data source via [DirectQuery](../connect-data/desktop-use-directquery.md) or [live connection](../connect-data/desktop-directquery-about.md#live-connections).
-* DLP policies for Power BI are not supported in sovereign clouds.
+- DLP policies apply to workspaces. Only workspaces hosted in Premium Gen2 capacities are supported.
+- DLP dataset evaluation workloads impact capacity. Metering for DLP evaluation workloads is not supported.
+- Both classic and new experience workspaces are supported, as long as they are hosted in Premium Gen2 capacities.
+- You must create a custom DLP custom policy for Power BI. DLP templates are not supported.
+- DLP polices that are applied to the DLP location support sensitivity labels and sensitive information types as conditions. 
+- DLP policies for Power BI are not supported for sample datasets, [streaming datasets](../connect-data/service-real-time-streaming.md), or datasets that connect to their data source via [DirectQuery](../connect-data/desktop-use-directquery.md) or [live connection](../connect-data/desktop-directquery-about.md#live-connections).
+- DLP policies for Power BI are not supported in sovereign clouds.
 
 ## Licensing and permissions
 
 ### SKU/subscriptions licensing
 
-Before you get started with DLP for Power BI, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1). The admin account that sets up the DLP rules must be assigned one of the following licenses:
-
-* Microsoft 365 E5
-* Microsoft 365 E5 Compliance
-* Microsoft 365 E5 Information Protection & Governance
+Before you get started with DLP for Power BI, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1). For full licensing guidance, see [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 ### Permissions
 
 Data from DLP for Power BI can be viewed in [Activity explorer](/microsoft-365/compliance/data-classification-activity-explorer). There are four roles that grant permission to activity explorer; the account you use for accessing the data must be a member of any one of them.
 
-* Global administrator
-* Compliance administrator
-* Security administrator
-* Compliance data administrator
+- Global administrator
+- Compliance administrator
+- Security administrator
+- Compliance data administrator
 
-## How do DLP policies for Power BI work
+## How DLP policies for Power BI work
 
-You define a DLP policy in the data loss prevention section of the compliance portal. In the policy, you specify sensitivity label(s) you want to detect. You also specify the action(s) that will happen when the policy detects a dataset that has a specified sensitivity label applied. DLP policies for Power BI support two actions:
+You define a DLP policy in the data loss prevention section of the compliance portal. See, [Design a data loss prevention policy](dlp-policy-design.md#design-a-data-loss-prevention-policy). In the policy, you specify sensitivity label(s) you want to detect. You also specify the action(s) that will happen when the policy detects a dataset that has a specified sensitivity label applied. DLP policies support two actions for Power BI:
 
-* User notification via policy tips.
-* Alerts. Alerts can be sent by email to administrators and users. Additionally, administrators can monitor and manage alerts on the **Alerts** tab in the compliance center. 
+- User notification via policy tips.
+- Alerts. Alerts can be sent by email to administrators and users. Additionally, administrators can monitor and manage alerts on the **Alerts** tab in the compliance center. 
 
-When a dataset is evaluated by DLP policies, if it matches the conditions specified in a DLP policy, the actions specified in the policy occur. A dataset is evaluated against DLP policies whenever one of the following events occurs:
+When a dataset is evaluated by DLP and matches the conditions in a DLP policy, the actions defined in the policy are applied. A dataset is evaluated occurs when a dataset is:
 
-* Publish
-* Republish
-* On-demand refresh
-* Scheduled refresh
+- Publish
+- Republish
+- On-demand refresh
+- Scheduled refresh
 
 >[!NOTE]
 > DLP evaluation of the dataset does not occur if either of the following is true:
-> * The initiator of the event is a service principal.
-> * The dataset owner is either a service principal or a B2B user.
+> - The initiator of the event is a service principal.
+> - The dataset owner is either a service principal or a B2B user.
 
-## What happens when a dataset is flagged by a Power BI DLP policy
+### What happens when a dataset matches a DLP policy
 
-When a DLP policy detects an issue with a dataset:
-* If "user notification" is enabled in the policy, the dataset will be marked in the Power BI service with a shield that indicates that a DLP policy has detected an issue with the dataset.
+When a dataset matches a DLP policy:
+
+- If the policy has user notification configured, it will be marked in the Power BI service with a shield icon to indicate that it matches a DLP policy.
 
     ![Screenshot of policy tip badge on dataset in lists.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-policy-tip-on-dataset.png)
 
-    Open the dataset details page to see a policy tip that explains the policy violation and how the detected type of sensitive information should be handled.
+    Open the dataset details page to see a policy tip that explains the policy match and how the detected type of sensitive information should be handled.
 
     ![Screenshot of policy tip on dataset details page.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-policy-tip-in-dataset-details.png)
 
     >[!NOTE]
     > If you hide the policy tip, it doesn’t get deleted. It will appear the next time you visit the page.
 
-* If alerts are enabled in the policy, an alert will be recorded on the data loss prevention **Alerts** tab in the compliance center, and (if configured) an email will be sent to administrators and/or specified users. The following image shows the **Alerts** tab in the data loss prevention section of the compliance center.
+- If alerts are enabled in the policy, an alert will be recorded on the dlp **Alerts** tab in the compliance center, and (if configured) an email will be sent to administrators and/or specified users. The following image shows the **Alerts** tab in the data loss prevention section of the compliance center.
 
     ![Screenshot of Alerts tab in the compliance center.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-alerts-tab.png)
 
 ## Configure a DLP policy for Power BI
 
-1. Log into the [Microsoft 365 compliance portal](https://compliance.microsoft.com).
+Follow the procedures in [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy) and use the custom template.
+
+> [!IMPORTANT]
+> When you select the locations for your DLP policy for Power BI, select only the Power BI location. Do not select any other locations, this configuration is not supported. 
+
+<!--1. Log into the [Microsoft 365 compliance portal](https://compliance.microsoft.com).
 
 1. Choose the **Data loss prevention** solution in the navigation pane, select the **Policies** tab, choose **Create policy**.
 
@@ -219,9 +220,9 @@ Log into the Microsoft 365 compliance portal and navigate to **Data loss prevent
 ![Screenshot of D L P Alerts tab.](media/service-security-dlp-policies-for-power-bi/power-bi-dlp-alerts-tab.png)
 
 Click on an alert to start drilling down to its details and to see management options.
-
+-->
 ## Next steps
 
-* [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
-* [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
-* [Audit schema for sensitivity labels in Power BI](service-security-sensitivity-label-audit-schema.md)
+- [Learn about data loss prevention](/microsoft-365/compliance/dlp-learn-about-dlp)
+- [Sensitivity labels in Power BI](service-security-sensitivity-label-overview.md)
+- [Audit schema for sensitivity labels in Power BI](service-security-sensitivity-label-audit-schema.md)
