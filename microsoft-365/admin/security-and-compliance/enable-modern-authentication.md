@@ -34,7 +34,6 @@ Microsoft Office 2013 on Microsoft Windows computers supports Modern authenticat
 |HKEY_CURRENT_USER\Software\Microsoft\Exchange\AlwaysUseMSOAuthForAutoDiscover|REG_DWORD|1|
 |HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\EnableADAL|REG_DWORD|1|
 |HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Common\Identity\Version|REG_DWORD|1|
-To enable modern authentication for any Windows devices that have Office 2013 installed, you need to set specific registry keys.
 
 > [!NOTE]
 > Modern authentication is already enabled in Office 2016 or later. You don't need to set these registry keys for later versions of Office.
@@ -72,7 +71,7 @@ If you're currently signed in to any of Office client apps, you need to sign out
 
 ## Disable modern authentication on devices
 
-The procedure to disable modern authentication on a device is very similar. Use the following registry keys instead:
+The procedure to disable modern authentication on a device is very similar. Only two of the previous three registry keys are required, and you need to change their values from 1 to 0:
 
 |Registry key|Type|Value|
 |---|:---:|:---:|
