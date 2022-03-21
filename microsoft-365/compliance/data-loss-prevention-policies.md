@@ -31,7 +31,7 @@ description: data loss prevention reference material
 # Data loss prevention reference
 
 > [!IMPORTANT]
-> This is reference topic is no longer the main resource for Microsoft 365 data loss prevention (DLP) information. The DLP content set is being updated and restructured. The topics covered in this article will be moving to new, updated articles. For more information about DLP, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
+> This is reference topic is no longer the main resource for Microsoft Purview Data Loss Prevention (DLP) information. The DLP content set is being updated and restructured. The topics covered in this article will be moving to new, updated articles. For more information about DLP, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
 
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
