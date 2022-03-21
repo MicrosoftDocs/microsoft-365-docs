@@ -77,4 +77,4 @@ The tabs along the top of the entity page will allow you to investigate email ef
 ## More information
 
 - [User tags in Microsoft Defender for Office 365](user-tags.md)
-- [Manage and monitor priority accounts](../admin/setup/priority-accounts.md)
+- [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md)
