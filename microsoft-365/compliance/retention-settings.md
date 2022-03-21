@@ -54,7 +54,7 @@ When you choose to use adaptive scopes, you are prompted to select what type of 
 |:-----|:-----|
 |**Users** - applies to:  <br/> - Exchange email <br/> - OneDrive accounts <br/> - Teams chats <br/> - Teams private channel messages <br/> - Yammer user messages| First Name <br/> Last name <br/>Display name <br/> Job title <br/> Department <br/> Office <br/>Street address <br/> City <br/>State or province <br/>Postal code <br/> Country or region <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15|
 |**SharePoint sites** - applies to:  <br/> - SharePoint sites <br/> - OneDrive accounts |Site URL <br/>Site name <br/> SharePoint custom properties: RefinableString00 - RefinableString99 |
-|**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Groups <br/> - Teams channel messages <br/> - Yammer community messages |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
+|**Microsoft 365 Groups** - applies to:  <br/> - Microsoft 365 Groups <br/> - Teams channel messages (standard and shared) <br/> - Yammer community messages |Name <br/> Display name <br/> Description <br/> Email addresses <br/> Alias <br/> Exchange custom attributes: CustomAttribute1 - CustomAttribute15 |
 
 The property names for sites are based on SharePoint site managed properties. For information about the custom attributes, see [Using Custom SharePoint Site Properties to Apply Microsoft 365 Retention with Adaptive Policy Scopes](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970).
 
@@ -362,6 +362,14 @@ Examples:
 At the end of the retention period, you choose whether you want the content to be permanently deleted:
 
 ![Retention settings page.](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
+
+Before you configure retention, first familiarize yourself with capacity and storage limits for the respective workloads:
+
+- For SharePoint and OneDrive, retained items are stored in the site's Preservation Hold library, which is included in the site's storage quota. For more information, see [Manage site storage limits](/sharepoint/manage-site-collection-storage-limits) from the SharePoint documentation.
+
+- For Exchange, Teams, and Yammer, where retained messages are stored in mailboxes, see [Exchange Online limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits) and enable [auto-expanding archiving](autoexpanding-archiving.md).
+    
+    In extreme cases where a high volume of email is deleted in a short time period, either by users or automatically from policy settings, you might also need to configure Exchange to more frequently move items from the Recoverable Items folder in the user's primary mailbox to the Recoverable Items folder in their archive mailbox. For step-by-step instructions, see [Increase the Recoverable Items quota for mailboxes on hold](increase-the-recoverable-quota-for-mailboxes-on-hold.md).
 
 ### Deleting content that's older than a specific age
 
