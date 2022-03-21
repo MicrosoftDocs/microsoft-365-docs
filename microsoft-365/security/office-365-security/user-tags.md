@@ -138,3 +138,7 @@ To see how user tags are part of the strategy to help protect high-impact user a
 2. On the **User tags** page, select the user tag from the list, and then click ![Delete tag icon.](../../media/m365-cc-sc-delete-icon.png) **Delete tag**.
 
 3. Read the warning in the confirmation dialog that appears, and then click **Yes, remove**.
+
+## More information
+
+- [Priority account tags in Microsoft Defender for Office 365](priority-account-tags.md)
