@@ -89,7 +89,7 @@ The Azure network connections tab also includes the following options:
 - **Export:** Select to export connection data to an Excel comma-separated values (.csv) file.
 - **Search:** Enter keywords to quickly locate a specific connection.
 
-:::image type="content" source="../media/m365-lighthouse-win365-page-overview/on-prem-network-connections-tab.png" alt-text="Screenshot of the Azure network connections tab.":::
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png" alt-text="Screenshot of the Azure network connections tab.":::
 
 ## Related content
 
