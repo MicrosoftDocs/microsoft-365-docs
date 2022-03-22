@@ -171,9 +171,6 @@ If Microsoft Defender Antivirus is running in active mode or passive mode, EDR i
 
 With the [new unified client solution](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution-preview) for Windows Server 2016 and Windows Server 2012 R2, you can run EDR in block mode in either passive mode or active mode.
 
-If you are using the [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) (MMA) and not the new unified client solution, EDR in block mode works only in active mode on Windows Server 2016.
-
-
 > [!NOTE]
 > Windows Server 2016 and Windows Server 2012 R2 must be onboarded using the instructions in [Onboard Windows servers](configure-server-endpoints.md) for this feature to work. 
 
