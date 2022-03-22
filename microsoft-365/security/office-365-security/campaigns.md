@@ -207,10 +207,6 @@ The diagram contains the following information:
 - **Sender domains**
 - **Filter verdicts**: Verdict values are related to the available phishing and spam filtering verdicts as described in [Anti-spam message headers](anti-spam-message-headers.md). The available values are described in the following table:
 
-  <br>
-
-  ****
-
   |Value|Spam filter verdict|Description|
   |---|---|---|
   |**Allowed**|`SFV:SKN` <p> `SFV:SKI`|The message was marked as not spam and/or skipped filtering before being evaluated by spam filtering. For example, the message was marked as not spam by a mail flow rule (also known as a transport rule). <p> The message skipped spam filtering for other reasons. For example, the sender and recipient appear to be in the same organization.|
@@ -223,7 +219,6 @@ The diagram contains the following information:
   |**User Allow**<sup>\*</sup>|`SFV:SFE`|The message skipped spam filtering because the sender was in a user's Safe Senders list.|
   |**User Block**<sup>\*\*</sup>|`SFV:BLK`|The message was blocked by spam filtering because the sender was in a user's Blocked Senders list.|
   |**ZAP**|n/a|[Zero-hour auto purge (ZAP)](zero-hour-auto-purge.md) moved the delivered message to the Junk Email folder or quarantine. You configure the action in [anti-spam policies](configure-your-spam-filter-policies.md).|
-  |
 
   <sup>\*</sup> Review your anti-spam policies, because the allowed message would have likely been blocked by the service.
 

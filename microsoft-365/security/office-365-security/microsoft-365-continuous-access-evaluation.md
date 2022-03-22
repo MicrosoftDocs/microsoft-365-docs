@@ -70,10 +70,6 @@ Conditional Access policy evaluation occurs when the user account is no longer c
 
 The following Microsoft 365 services currently support continuous access evaluation by listening to events from Azure AD.
 
-<br>
-
-****
-
 |Enforcement type|Exchange|SharePoint|Teams|
 |---|---|---|---|
 |**Critical events:**||||
@@ -81,7 +77,6 @@ The following Microsoft 365 services currently support continuous access evaluat
 |User risk|Supported|Not supported|Not supported|
 |**Conditional Access policy evaluation:**||||
 |IP address location policy|Supported|Supported\*|Supported|
-|
 
 \* SharePoint Office web browser access supports instant IP policy enforcement by enabling strict mode. Without strict mode, access token lifetime is one hour.
 

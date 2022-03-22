@@ -125,12 +125,6 @@ For customers with DAP relationships, the partner admin will need to assign you 
 
 If data is still not appearing on the Device compliance and Threat management pages after following the resolution instructions, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
-### There are no Windows 365 Business Cloud PCs in Lighthouse  
-
-**Cause**: Lighthouse doesn't currently support viewing and managing of Windows 365 Business Cloud PCs.
-
-**Resolution:** You can view and manage your Windows 365 Business Cloud PCs in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) or at [https://windows365.microsoft.com](https://windows365.microsoft.com).
-
 ## Related content
 
 [Known issues with Microsoft 365 Lighthouse](m365-lighthouse-known-issues.md) (article)\
