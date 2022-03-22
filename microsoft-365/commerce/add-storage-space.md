@@ -2,8 +2,8 @@
 title: "Add more SharePoint storage to your subscription"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
 author: cmcatee-MSFT
+ms.author: cmcatee
 manager: scotv
 ms.reviewer: drjones, jmueller
 audience: Admin
@@ -15,10 +15,10 @@ ms.collection:
 - Adm_O365
 - SPO_Content
 ms.custom:
+- commerce_purchase
 - MAX_CampaignID
 - okr_SMB
 - AdminSurgePortfolio
-- commerce_purchase
 - business_assist
 - AdminTemplateSet
 - admindeeplinkSPO

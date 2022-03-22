@@ -1,20 +1,19 @@
 ### YamlMime:FAQ
 metadata:
-  title: Microsoft 365 Business Premium frequently asked questions 
-  description: Find answers to the most frequently asked questions about Microsoft 365 Business, a new solution designed for small, and midsize businesses (SMB). 
+  title: Microsoft 365 Business Premium frequently asked questions 
+  description: Find answers to the most frequently asked questions about Microsoft 365 Business, a new solution designed for small, and midsize businesses (SMB). 
   author: efrene
   f1.keywords:
   - NOCSH
   ms.author: efrene
-  ms.topic: article
+  ms.topic: faq
   ms.prod: microsoft-365-business
   ms.collection: M365-subscription-management
   ms.custom: AdminSurgePortfolio
   ms.localizationpriority: medium
-  audience: microsoft-business 
+  audience: microsoft-business 
   keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
-  ms.date: 07/21/2020
-    
+  ms.date: 02/25/2022
 title: Microsoft 365 Business Premium frequently asked questions
 summary: |
 
@@ -32,7 +31,7 @@ sections:
                    
           **Enterprise-grade device management and security capabilities**:
           
-          - Helps provide protection from external threats like phishing and sophisticated malware with Microsoft Defender for Office 365 Plan 1 and Microsoft Defender Exploit Guard.
+          - Helps provide protection from external threats like phishing and sophisticated malware with Microsoft Defender for Office 365 Plan 1 and Microsoft Defender for Business.
           - Helps control and manage how sensitive information is accessed and transmitted with data loss prevention policies and Azure Information Protection Plan 1.
           - Helps protect, preserve, and back up your data with Exchange Online Archiving.
           - App protection for Office and other mobile apps with Intune App Protection.

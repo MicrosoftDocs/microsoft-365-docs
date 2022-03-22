@@ -45,7 +45,7 @@ Microsoft Managed Desktop doesn't support the deployment of the 32-bit version o
 
 Microsoft 365 Apps are set to update on the [Monthly Enterprise Channel](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview). This practice provides your users with new Office features each month, but they'll receive just one update per month on a predictable release schedule. Updates are released on the second Tuesday of the month; these updates can include feature, security, and quality updates. These updates occur automatically and are pulled directly from the Office CDN for that specific channel.
 
-Microsoft Managed Desktop staggers each release to identify any potential issues in your environment. We complete the rollout 28 days after the release from the Microsoft 365 App product group. Microsoft Managed Desktop schedules update releases to different groups to allow time for validation and testing as follows:
+Microsoft Managed Desktop staggers each release to identify any potential issues in your environment. We complete the rollout from the Microsoft 365 App product group. Microsoft Managed Desktop schedules update releases to different groups to allow time for validation and testing as follows:
 
 - Test: zero days
 - First: zero days
