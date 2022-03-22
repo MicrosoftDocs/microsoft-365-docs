@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Yammer activity report"
+title: "Microsoft 365 admin center Yammer activity reports"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
