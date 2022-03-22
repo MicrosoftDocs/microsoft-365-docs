@@ -36,10 +36,10 @@ Microsoft Teams is a collaboration app that helps your staff stay organized and 
 1. Create teams for specific projects and apply the right amount of protection based on who should be included.
 1. Create specific teams for communication with external partners to keep them separate from anything sensitive for your business.
 
-For example, a business, legal firm, or healthcare practice could create the following teams:
+For example, a business, legal firm, or healthcare practice might create the following teams:
 
-1. **A business-, firm-, or practice-wide team:** This is for everyone to use for day to day communications and work across your business. You can use this team to post announcements or share information of interest for your whole firm or practice.
-1. **Individual teams:** Set up teams for smaller groups to collaborate about their day to day work.
+1. **A business-, firm-, or practice-wide team:** This is for everyone to use for day-to-day communications and work across your business. You can use this team to post announcements or share information of interest for your whole firm or practice.
+1. **Individual teams:** Set up teams for smaller groups to collaborate about their day-to-day work.
 1. **An external communications team or teams:** Coordinate with your vendors, partners, or clients without allowing them into anything sensitive. Set up different channels for specific groups.
 
 ![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration within a business.](../media/m365-democracy-teams-business-collab.png)
@@ -62,7 +62,7 @@ When you create a team, here's what else gets created:
 
 Inside Microsoft Teams, you can find:
 
-1. **Teams:** Find channels to belong to or create your own. Inside channels you can hold on-the-spot meetings, have conversations, and share files.
+1. **Teams:** Find channels to belong to or create your own. With inside channels you can hold on-the-spot meetings, have conversations, and share files.
 2. **Meetings:** See everything you've got lined up for the day or week. Or, schedule a meeting. This calendar syncs with your Outlook calendar.
 3. **Calls:** In some cases, if your organization has it set up, you can call anyone from Microsoft Teams, even if they're not using Microsoft Teams.
 4. **Activity:** Catch up on all your unread messages, @mentions, replies, and more.

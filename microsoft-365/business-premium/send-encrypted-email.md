@@ -30,7 +30,7 @@ description: "Learn how to send encrypted email using Outlook."
 
 # Encrypt or label sensitive email
 
-Your data and information is important, and often, confidential. Help protect this sensitive information by ensuring everyone is using sensitivity labels so that email recipients treat the information with the utmost sensitivity.
+Your data and information is important, and often, confidential. The objective here is to help protect this sensitive information by ensuring everyone is using sensitivity labels so that email recipients treat the information with the utmost sensitivity.
 
 ## Best practices
 

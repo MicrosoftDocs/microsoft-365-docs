@@ -32,7 +32,7 @@ A great way to communicate priorities, share strategy documents, and highlight u
 
 ## Best practices
 
-Include the following elements in your Communications site:
+Include the following elements in a Communications site:
 
 1. Add your logo and colors as a header image and theme.
 2. Lead with your strategy, message, important documents, a directory, and FAQ in a **Hero web part**.
