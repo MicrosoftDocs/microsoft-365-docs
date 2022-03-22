@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.date:
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -65,7 +65,7 @@ Once you're satisfied with the results of your testing and tuning, your EDM base
 
 - [DLP policies](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)
 - [Auto-labeling policies](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
-- [Microsoft Cloud App Security file policies](/cloud-app-security/data-protection-policies)
+- [Microsoft Defender for Cloud Apps](/cloud-app-security/data-protection-policies)
 
 ## Troubleshooting tips
 
