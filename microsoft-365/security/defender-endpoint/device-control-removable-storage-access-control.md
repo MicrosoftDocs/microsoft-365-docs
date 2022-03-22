@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 03/09/2022
+ms.date: 03/18/2022
 ---
 
 # Microsoft Defender for Endpoint Device Control Removable Storage Access Control
@@ -41,11 +41,11 @@ Microsoft Defender for Endpoint Device Control Removable Storage Access Control 
 
 |Capability|Description|Deploy through Intune|Deploy through Group Policy|
 |---|---|---|---|
-|Removable Media Group Creation|Allows you to create reusable removable media group|Step 1 and step 3 in the section, [Deploying policy via OMA-URI](#deploying-policy-via-oma-uri) | Step 1 in the section, [Deploying policy via Group Policy](#deploying-policy-via-group-policy)|
-|Policy Creation|Allows you to create policy to enforce each removable media group|Steps 2 and 3 in the section, [Deploying policy via OMA-URI](#deploying-policy-via-oma-uri) | Step 2 in the section, [Deploying policy via Group Policy](#deploying-policy-via-group-policy) |
-|Default Enforcement|Allows you to set default access (Deny or Allow) to removable media if there is no policy|Step 4 in the section, [Deploying policy via OMA-URI](#deploying-policy-via-oma-uri) | Step 3 in the section, [Deploying policy via Group Policy](#deploying-policy-via-group-policy) |
-|Enable or Disable Removable Storage Access Control|If you set Disable, it will disable the Removable Storage Access Control policy on this machine| Step 5 in the section, [Deploying policy via OMA-URI](#deploying-policy-via-oma-uri) | Step 4 in the section, [Deploying policy via Group Policy](#deploying-policy-via-group-policy) |
-|Capture file information|Allows you to create policy to capture file information when Write access happens| Step 2 and 6 in the section, [Deploying policy via OMA-URI](#deploying-policy-via-oma-uri) | Step 2 and 5 in the section, [Deploying policy via Group Policy](#deploying-policy-via-group-policy) |
+|Removable Media Group Creation|Allows you to create reusable removable media group|Step 1 in the section, [Deploying policy via OMA-URI](#deploying-policy-via-oma-uri) | Step 1 in the section, [Deploying policy via Group Policy](#deploying-policy-via-group-policy)|
+|Policy Creation|Allows you to create policy to enforce each removable media group|Step 2 in the section, [Deploying policy via OMA-URI](#deploying-policy-via-oma-uri) | Steps 2 and 3 in the section, [Deploying policy via Group Policy](#deploying-policy-via-group-policy) |
+|Default Enforcement|Allows you to set default access (Deny or Allow) to removable media if there is no policy|Step 3 in the section, [Deploying policy via OMA-URI](#deploying-policy-via-oma-uri) | Step 4 in the section, [Deploying policy via Group Policy](#deploying-policy-via-group-policy) |
+|Enable or Disable Removable Storage Access Control|If you set Disable, it will disable the Removable Storage Access Control policy on this machine| Step 4 in the section, [Deploying policy via OMA-URI](#deploying-policy-via-oma-uri) | Step 5 in the section, [Deploying policy via Group Policy](#deploying-policy-via-group-policy) |
+|Capture file information|Allows you to create policy to capture file information when Write access happens| Steps 2 and 5 in the section, [Deploying policy via OMA-URI](#deploying-policy-via-oma-uri) | Step 2 and 6 in the section, [Deploying policy via Group Policy](#deploying-policy-via-group-policy) |
 
 ## Prepare your endpoints
 
@@ -77,7 +77,7 @@ You can use the following properties to create a removable storage group:
 
 |Property Name|Description|Options|
 |---|---|---|
-|**GroupId**|GUID, a unique ID, represents the group and will be used in the policy.||
+|**Group Id**|GUID, a unique ID, represents the group and will be used in the policy as GroupId||
 |**DescriptorIdList**|List the device properties you want to use to cover in the group. For each device property, see [Device Properties](device-control-removable-storage-protection.md) for more detail. All properties are case sensitive. |**PrimaryId**: `RemovableMediaDevices`, `CdRomDevices`, `WpdDevices`<p>**BusId**: For example, USB, SCSI<p>**DeviceId**<p>**HardwareId**<p>**InstancePathId**: InstancePathId is a string that uniquely identifies the device in the system, for example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`. The number at the end (for example &0) represents the available slot and may change from device to device. For best results, use a wildcard at the end. For example, `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*`.<p>**FriendlyNameId**<p>**SerialNumberId**<p>**VID**<p>**PID**<p>**VID_PID**<p>`0751_55E0`: match this exact VID/PID pair<p>`_55E0`: match any media with PID=55E0 <p>`0751_`: match any media with VID=0751|
 |**MatchType**|When there are multiple device properties being used in the `DescriptorIDList`, MatchType defines the relationship.|**MatchAll**: Any attributes under the `DescriptorIdList` will be **And** relationship; for example, if administrator puts `DeviceID` and `InstancePathID`, for every connected USB, system will check to see whether the USB meets both values. <p> **MatchAny**: The attributes under the DescriptorIdList will be **Or** relationship; for example, if administrator puts `DeviceID` and `InstancePathID`, for every connected USB, system will do the enforcement as long as the USB has either an identical **DeviceID** or **InstanceID** value. |
 
@@ -85,7 +85,7 @@ You can use the following properties to create a removable storage group:
 
 | Property Name | Description | Options |
 |---|---|---|
-| **PolicyRuleId** | GUID, a unique ID, represents the policy and will be used in the reporting and troubleshooting. | |
+| **PolicyRule Id** | GUID, a unique ID, represents the policy and will be used in the reporting and troubleshooting. | |
 | **IncludedIdList** | The group(s) that the policy will be applied to. If multiple groups are added, the policy will be applied to any media in all those groups.|The Group ID/GUID must be used at this instance. <p> The following example shows the usage of GroupID: <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
 | **ExcludedIDList** | The group(s) that the policy will not be applied to. | The Group ID/GUID must be used at this instance. |
 | **Entry Id** | One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.| |
@@ -250,7 +250,7 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
       `DefaultEnforcementDeny = 2`
 
     - Once you deploy this setting, you will see **Default Allow** or **Default Deny**
-    - Consider both Disk level and File system level AccessMask when configure this setting, for example, if you want to Default Deny but allow specific storage, you have to allow both Disk level and Fiel system level access, you have to set AccessMask to 63.
+    - Consider both Disk level and File system level AccessMask when configuring this setting, for example, if you want to Default Deny but allow specific storage, you have to allow both Disk level and File system level access, you have to set AccessMask to 63.
 
     :::image type="content" source="images/148609590-c67cfab8-8e2c-49f8-be2b-96444e9dfc2c.png" alt-text="Default Enforcement Allow PowerShell code":::
 
@@ -280,7 +280,7 @@ Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>) \> *
     
 ## Deploying and managing policy by using Intune user interface
 
-This capability is available in the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>). Go to **Endpoint Security** > **Attack Surface Reduction** > **Create Policy**. Choose **Platform: Windows 10 and later** with **Profile: Device Control**.
+(*Coming soon!*) This capability will be available in the Microsoft Endpoint Manager admin center (<https://endpoint.microsoft.com/>). Go to **Endpoint Security** > **Attack Surface Reduction** > **Create Policy**. Choose **Platform: Windows 10 and later** with **Profile: Device Control**.
 
 ## View Device Control Removable Storage Access Control data in Microsoft Defender for Endpoint
 
@@ -289,7 +289,7 @@ The [Microsoft 365 Defender portal](https://security.microsoft.com/advanced-hunt
 - Microsoft 365 for E5 reporting
 
 ```kusto
-//events triggered by RemovableStoragePolicyTriggered
+//RemovableStoragePolicyTriggered: event triggered by Disk level enforcement
 DeviceEvents
 | where ActionType == "RemovableStoragePolicyTriggered"
 | extend parsed=parse_json(AdditionalFields)
@@ -309,21 +309,53 @@ DeviceEvents
 | order by Timestamp desc
 ```
 
+```kusto
+//RemovableStorageFileEvent: event triggered by File level enforcement, information of files written to removable storage 
+DeviceEvents
+| where ActionType contains "RemovableStorageFileEvent"
+| extend parsed=parse_json(AdditionalFields)
+| extend Policy = tostring(parsed.Policy) 
+| extend PolicyRuleId = tostring(parsed.PolicyRuleId) 
+| extend MediaClassName = tostring(parsed.ClassName)
+| extend MediaInstanceId = tostring(parsed.InstanceId)
+| extend MediaName = tostring(parsed.MediaName)
+| extend MediaProductId = tostring(parsed.ProductId) 
+| extend MediaVendorId = tostring(parsed.VendorId) 
+| extend MediaSerialNumber = tostring(parsed.SerialNumber) 
+| extend DuplicatedOperation = tostring(parsed.DuplicatedOperation)
+| extend FileEvidenceLocation = tostring(parsed.TargetFileLocation) 
+| project Timestamp, DeviceId, DeviceName, InitiatingProcessAccountName, 
+    ActionType, Policy, PolicyRuleId, DuplicatedOperation, 
+    MediaClassName, MediaInstanceId, MediaName, MediaProductId, MediaVendorId, MediaSerialNumber,
+    FileName, FolderPath, FileSize, FileEvidenceLocation,
+    AdditionalFields
+| order by Timestamp desc
+```
+    
 :::image type="content" source="images/block-removable-storage.png" alt-text="The screen depicting the blockage of the removable storage.":::
 
 ## Frequently asked questions
 
+
+### How to generate GUID for Group Id/PolicyRule Id/Entry Id?
+
+You can generate GUID through online open source, or through PowerShell - [How to generate GUID through PowerShell](/powershell/module/microsoft.powershell.utility/new-guid?msclkid=c1398a25a6d911ec9c888875fa1f24f5&view=powershell-7.2)
+    
+![image](https://user-images.githubusercontent.com/81826151/159046476-26ea0a21-8087-4f01-b8ae-5aa73b392d8f.png)
+    
 ### What is the removable storage media limitation for the maximum number of USBs?
 
 We've validated one USB group with 100,000 media - up to 7 MB in size. The policy works in both Intune and GPO without performance issues.
 
 ### Why does the policy not work?
 
-The most common reason is there's no required [antimalware client version](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints).
+1. The most common reason is there's no required [antimalware client version](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control#prepare-your-endpoints).
 
-Another reason could be that the XML file isn't correctly formatted, for example, not using the correct markdown formatting for the "&" character in the XML file, or the text editor might add a byte order mark (BOM) 0xEF 0xBB 0xBF at the beginning of the files, which causes the XML parsing not to work. One simple solution is to download the [sample file](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (select **Raw** and then **Save as**) and then update.
+2. Another reason could be that the XML file isn't correctly formatted, for example, not using the correct markdown formatting for the "&" character in the XML file, or the text editor might add a byte order mark (BOM) 0xEF 0xBB 0xBF at the beginning of the files, which causes the XML parsing not to work. One simple solution is to download the [sample file](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) (select **Raw** and then **Save as**) and then update.
 
-If you are deploying and managing the policy via Group Policy, please make sure combine all PolicyRule into one XML file within a parent node called PolicyRules and all Group into one XML file within a parent node called Groups; if you manage through Intune, keep one PolicyRule one XML file, same thing, one Group one XML file.
+3. If you are deploying and managing the policy via Group Policy, please make sure combine all PolicyRule into one XML file within a parent node called PolicyRules and all Group into one XML file within a parent node called Groups; if you manage through Intune, keep one PolicyRule one XML file, same thing, one Group one XML file.
+    
+If still not working, you may want to contact us and share support cab by running cmd with administrator: “%programfiles%\Windows Defender\MpCmdRun.exe" -GetFiles
 
 ### There is no configuration UX for 'Define device control policy groups' and 'Define device control policy rules' on my Group Policy
 
