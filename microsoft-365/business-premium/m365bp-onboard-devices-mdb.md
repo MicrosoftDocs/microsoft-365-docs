@@ -18,9 +18,9 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# Onboard managed devices to Microsoft Defender for Business
+# Onboard enrolled devices to Microsoft Defender for Business
 
-Next, you must onboard devices to Microsoft Defender for Business to implement next-generation protection (antivirus, antimalware, and cloud-delivered protection), firewall protection, web content filtering, and more. 
+Now that you've enrolled the devices, you must onboard them to Microsoft Defender for Business to implement next-generation protection (antivirus, antimalware, and cloud-delivered protection), firewall protection, web content filtering, and more. 
 
 To onboard devices, you can choose from several options:
 
@@ -70,11 +70,9 @@ You can use a local script to onboard Windows and Mac devices. When you run the 
 
 ## Use Microsoft Endpoint Manager to enroll devices
 
+To enroll a device, enroll them yourself, or have your users sign in to the company portal and enroll and install any apps that are needed. 
+
 If you were already using Endpoint Manager (which includes Microsoft Intune and Mobile Device Management), before you got Defender for Business, you can continue to use Endpoint Manager to onboard your organization's devices. With Endpoint Manager, you can onboard computers, tablets, and phones, including iOS and Android devices.
-
-## Enroll a device with Endpoint Manager and Intune
-
-To enroll a device, you can enroll them yourself, or have your users sign in to the company portal and enroll and install any apps that are needed. 
 
 See [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment). 
 

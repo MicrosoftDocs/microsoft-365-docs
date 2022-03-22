@@ -40,5 +40,5 @@ After an admin has required the front-line users to use MFA then the authenticat
 
 ## Next objective
 
-Figure out how to [set up managed devices](m365bp-managed-devices-setup.md).
+[Install Office apps](m365bp-install-office-apps.md).
 

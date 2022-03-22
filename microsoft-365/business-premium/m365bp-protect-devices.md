@@ -1,5 +1,5 @@
 ---
-title: "Protect devices with Defender for Business"
+title: "Set up and secure managed devices"
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
@@ -23,7 +23,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "An overview on how to protect devices with Defender"
+description: "An overview for how to set up and secure managed devices"
 ---
 
 # Set up and secure managed devices
@@ -39,5 +39,3 @@ Your mission objectives:
 - [Manage device groups](m365bp-device-groups-mdb.md)
 
 Once these objectives are achieved, your overall mission to protect the org is a success! Now, make sure to set up response teams to deal with any situation that may arise in defending the integrity of the system. 
-
-
