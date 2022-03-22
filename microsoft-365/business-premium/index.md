@@ -41,18 +41,20 @@ In the process of setting up impenetrable defenses, you will complete the follow
 
 [**Bump up security protection**](m365bp-security-overview.md). Set up a number of security safeguards to protect your organization. 
 
-[**Set up devices**](m365bp-devices-overview.md). In this mission, you set up all types of devices so they are safely part of the ecosystem.
+[**Set up BYOD devices**](m365bp-protect-pcs-macs.md). In this mission, you set up all the unmanaged (BYOD) devices so they are safely part of the ecosystem.
 
 [**Protect email**](m365bp-protect-email-overview.md). In this mission, take the necessary steps to protect the email systems from attack.
 
-[**Collaborate and share securely**](m365bp-collaborate-share-securely.md). The objectives of this last mission require you to set up secure file sharing for all members of the organization.
+[**Collaborate and share securely**](m365bp-collaborate-share-securely.md). The objectives of this mission require you to set up secure file sharing for all members of the organization.
+
+[**Set up and secure managed devices**](m365bp-managed-devices-setup.md). In this last mission, you need to onboard and enroll devices in Microsoft Defender for business so they are part of the managed ecosystem.
 
 >[!NOTE]
->There are times when a side quest takes you away from the mission at-hand. When this happens, return here to pick up where you left off. It's for the good of the org.
+>There are times when a side quest takes you away from the mission at-hand. When this happens, return to the mission where you left off. It's for the good of the org.
 
 :::image type="content" source="media/m365-whatisit-securityfocus2.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
 <!---
-NOTE: I THINK THIS IMAGE SHOULD BE RE-DONE TO REFLECT 5 MISSIONS, AND STYLISTICALLY TO HAVE A "DEFENDER" CHARACTER (SUCH AS IN THE POSTER) IN THE BACKGROUND BEHIND THE FRONT LAYER VISUALS FOR EACH MISSION CATEGORY. THE OBJECTIVES FOR EACH MISSION CAN BE BULLET POINTS IN EACH SECTION IN THE GRAPHIC.
+NOTE: I THINK THIS IMAGE SHOULD BE RE-DONE TO REFLECT 6 MISSIONS, AND STYLISTICALLY TO HAVE A "DEFENDER" CHARACTER (SUCH AS IN THE POSTER) IN THE BACKGROUND BEHIND THE FRONT LAYER VISUALS FOR EACH MISSION CATEGORY. THE OBJECTIVES FOR EACH MISSION CAN BE BULLET POINTS IN EACH SECTION IN THE GRAPHIC.
 --->
 
 Okay. Let's get started with the [first mission](m365bp-setup-overview.md)!
