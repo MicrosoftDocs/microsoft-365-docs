@@ -44,8 +44,8 @@ Your subscription includes [preset security policies](../security/office-365-sec
 Preset security policies consist of:
 
 - Profiles, which determine the level of protection
-- Policies
-- Policy settings
+- Policies (such as anti-spam, anti-malware, anti-phishing, Safe Attachments, and Safe Links)
+- Policy settings (such as groups, users, or domains to receive the policies and any exceptions)
 
 The following table summarizes the levels of protection and preset policy types.
 
@@ -54,6 +54,8 @@ The following table summarizes the levels of protection and preset policy types.
 | Standard protection <br/>(*recommended for most businesses*) | Standard protection uses a baseline profile that's suitable for most users <br/><br/>It includes anti-spam, anti-malware, anti-phishing, spoof settings, impersonation settings, Safe Links, and Safe Attachments policies.  |
 | Strict protection  | Strict protection includes the same kinds of policies as standard protection, but with more stringent settings. If your business must meet additional security requirements or regulations, consider applying strict protection to your priority users or high value targets. |
 | Built-in protection | Protects against malicious links and attachments in email. Enabled and applied to all users by default.  |
+
+You can specify the users, groups, and domains to receive preset policies, and you can define certain exceptions, but you cannot change preset policies themselves.
 
 You can also create your own security policies for custom settings to suit your company's needs.
 
