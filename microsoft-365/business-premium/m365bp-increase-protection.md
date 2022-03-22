@@ -39,15 +39,25 @@ For more information, see [Microsoft Secure Score](../security/defender/microsof
 
 ## Review and apply preset security policies
 
-Your subscription includes [preset security policies](../security/office-365-security/preset-security-policies.md) that use recommended settings for anti-spam, anti-malware, and anti-phishing protection. By default, built-in protection is enabled; however, you can to apply standard or strict protection for increased security. You can also create your own security policies for custom settings.
+Your subscription includes [preset security policies](../security/office-365-security/preset-security-policies.md) that use recommended settings for anti-spam, anti-malware, and anti-phishing protection. By default, built-in protection is enabled; consider applying standard or strict protection for increased security. 
 
-The following table summarizes the levels of protection included in your subscription.
+Preset security policies consist of:
 
-| Level | Description |
+- Profiles, which determine the level of protection
+- Policies
+- Policy settings
+
+The following table summarizes the levels of protection and preset policy types.
+
+| Level of protection | Description |
 |:---|:---|
 | Standard protection <br/>(*recommended for most businesses*) | Standard protection uses a baseline profile that's suitable for most users <br/><br/>It includes anti-spam, anti-malware, anti-phishing, spoof settings, impersonation settings, Safe Links, and Safe Attachments policies.  |
-| Strict protection  | Strict protection includes all the same kinds of policies as standard protection, but with more stringent settings. If your business must meet additional security requirements or regulations, consider applying strict protection to your priority users or high value targets. |
+| Strict protection  | Strict protection includes the same kinds of policies as standard protection, but with more stringent settings. If your business must meet additional security requirements or regulations, consider applying strict protection to your priority users or high value targets. |
 | Built-in protection | Protects against malicious links and attachments in email. Enabled and applied to all users by default.  |
+
+You can also create your own security policies for custom settings to suit your company's needs.
+
+For more detailed information about preset security policies, see [Preset security policies in EOP and Microsoft Defender for Office 365](../security/office-365-security/preset-security-policies.md).
 
 <!--https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-worldwide
 
