@@ -4,7 +4,7 @@ author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: article
-
+ms.collection: M365-security-compliance
 audience: admin
 f1.keywords: 
   - NOCSH
@@ -12,8 +12,6 @@ ms.localizationpriority: medium
 MS.collection: 
 search.appverid: MET150
 description: Threat remediation
-appliesto: 
-  - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
 ---

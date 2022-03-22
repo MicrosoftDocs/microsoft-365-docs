@@ -15,7 +15,7 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr, mkaminska
 manager: dansimp
 ms.technology: mde
-ms.date: 03/16/2022
+ms.date: 03/22/2022
 ms.collection: 
 - M365-security-compliance
 - m365initiative-defender-endpoint
@@ -666,6 +666,21 @@ We recommend updating your Windows 10 (Enterprise, Pro, and Home editions), Wind
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
+<summary>20220321.1</summary>
+
+&ensp;Package version: **20220321.1**<br/>
+&ensp;Platform version: **4.18.2202.4**<br/>
+&ensp;Engine version: **1.1.19000.8**<br/>
+&ensp;Signature version: **1.351.337.0**<br/>
+
+### Fixes
+- None
+
+### Additional information
+- None
+
+<br/>
+</details><details>
 <summary>20220305.1</summary>
 
 &ensp;Package version: **20220305.1**<br/>

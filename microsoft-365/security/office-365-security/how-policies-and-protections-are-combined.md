@@ -37,10 +37,6 @@ There are two major factors that determine which policy is applied to a message:
 
 - **The priority of the email protection type**: This order is not configurable, and is described in the following table:
 
-  <br>
-
-  ****
-
   |Priority|Email protection|Category|Where to manage|
   |---|---|---|---|
   |1|Malware|CAT:MALW|[Configure anti-malware policies in EOP](configure-anti-malware-policies.md)|
@@ -51,7 +47,6 @@ There are two major factors that determine which policy is applied to a message:
   |6<sup>\*</sup>|Domain impersonation (protected domains)|DIMP|[Configure anti-phishing policies in Microsoft Defender for Office 365](configure-mdo-anti-phishing-policies.md)|
   |7|Spam|CAT:SPM|[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
   |8|Bulk|CAT:BULK|[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)|
-  |
 
   <sup>\*</sup> These features are only available in anti-phishing policies in Microsoft Defender for Office 365.
 
