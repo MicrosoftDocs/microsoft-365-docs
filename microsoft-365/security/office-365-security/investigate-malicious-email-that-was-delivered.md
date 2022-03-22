@@ -54,16 +54,11 @@ Make sure that the following requirements are met:
 
 To perform certain actions, such as viewing message headers or downloading email message content, you must have the *Preview* role added to another appropriate role group. The following table clarifies required roles and permissions.
 
-<br>
-
-****
-
 |Activity|Role group|Preview role needed?|
 |---|---|---|
 |Use Threat Explorer (and Real-time detections) to analyze threats|Global Administrator <p> Security Administrator <p> Security Reader|No|
 |Use Threat Explorer (and Real-time detections) to view headers for email messages as well as preview and download quarantined email messages|Global Administrator <p> Security Administrator <p> Security Reader|No|
 |Use Threat Explorer to view headers, preview email (only in the email entity page) and download email messages delivered to mailboxes|Global Administrator <p> Security Administrator <p> Security Reader <p> Preview|Yes|
-|
 
 > [!NOTE]
 > **Preview** is a role, not a role group. The Preview role must be added to an existing role group or a new role group in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](permissions-microsoft-365-security-center.md).
@@ -134,10 +129,6 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
 
     **Overrides**: This filter takes information that appears on the mail's details tab and uses it to expose where organizational, or user policies, for allowing and blocking mails have been *overridden*. The most important thing about this filter is that it helps your organization's security team see how many suspicious emails were delivered due to configuration. This gives them an opportunity to modify allows and blocks as needed. This result set of this filter can be exported to spreadsheet.
 
-    <br>
-
-    ****
-
     |Threat Explorer Overrides|What they mean|
     |---|---|
     |Allowed by Org Policy|Mail was allowed into the mailbox as directed by the organization policy.|
@@ -145,7 +136,6 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
     |File extension blocked by Org Policy|File was blocked from delivery to the mailbox as directed by the organization policy.|
     |Allowed by User Policy|Mail was allowed into the mailbox as directed by the user policy.|
     |Blocked by User Policy|Mail was blocked from delivery to the mailbox as directed by the user policy.|
-    |
 
     **URL threat**: The URL threat field has been included on the *details* tab of an email to indicate the threat presented by a URL. Threats presented by a URL can include *Malware*, *Phish*, or *Spam*, and a URL with *no threat* will say *None* in the threats section.
 

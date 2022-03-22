@@ -170,10 +170,6 @@ On the **Add indicators** page, click **Add indicator**. On the flyout that appe
 
 - **Indicator name** and **Indicator location**: These values are interrelated. Where you can place the indicator depends on the indicator itself. The available values are described in the following table:
 
-  <br>
-
-  ****
-
   |Indicator name|Indicator location|
   |---|---|
   |**Attachment type**|Message body|
@@ -199,7 +195,6 @@ On the **Add indicators** page, click **Add indicator**. On the flyout that appe
   |**Unprofessional looking design or formatting**|Message body|
   |**URL hyperlinking**|Message body|
   |**You're special**|Message body|
-  |
   
   This list is curated to contain the most common clues that appear in phishing messages.
 
