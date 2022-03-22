@@ -27,7 +27,7 @@ description: "Get Microsoft 365 for Campaigns so you can protect your campaign f
 ---
 
 # Get Microsoft 365 for Campaigns
-
+test
 Anybody with Microsoft 365 Business Premium can use this guidance to configure extra security for email and collaboration. However, campaigns and political parties in the USA are eligible for special pricing for Microsoft 365. Currently this special pricing is available to:
 
 - National-level political parties in the United States, Canada, and New Zealand
