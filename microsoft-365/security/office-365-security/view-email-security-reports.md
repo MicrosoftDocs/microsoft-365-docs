@@ -44,10 +44,6 @@ A variety of reports are available in the Microsoft 365 Defender portal at <http
 
 The Exchange Online Protection (EOP) and Microsoft Defender for Office 365 reports in the Microsoft 365 Defender portal that have been replaced, moved, or deprecated are described in the following table.
 
-<br>
-
-****
-
 |Deprecated report and cmdlets|New report and cmdlets|Message Center ID|Date|
 |---|---|:---:|:---:|
 |**URL trace** <p> Get-URLTrace|[URL protection report](view-reports-for-mdo.md#url-protection-report) <p> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|June 2021|
@@ -58,9 +54,8 @@ The Exchange Online Protection (EOP) and Microsoft Defender for Office 365 repor
 |**Malware detected in email report** <p> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|June 2021|
 |**Spam detection report** <p> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[Threat protection status report: View data by Email \> Spam](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|October 2021|
 |Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|TBA|May 2022|
-|**Exchange transport rule report** <p> Get-MailTrafficPolicyReport <br> Get-MailDetailTransportRuleReport|[Exchange transport rule report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> no cmdlets|MC316157|April 2022|
+|**Exchange transport rule report** <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange transport rule report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|April 2022|
 |Get-MailTrafficTopReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <p> **Note**: There is no replacement for the encryption reporting capabilities in Get-MailTrafficTopReport.|MC315742|April 2022|
-|
 
 ## Compromised users report
 
@@ -85,11 +80,13 @@ The details table below the graph shows the following information:
 - **Creation time**
 - **User ID**
 - **Action**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 You can filter both the chart and the details table by clicking **Filter** and selecting one or more of the following values in the flyout that appears:
 
 - **Date (UTC)**: **Start date** and **End date**.
 - **Activity**: **Restricted** or **Suspicious**
+- **Tag**: **All** or the specified user tag (including priority accounts).
 
 When you're finished configuring the filters, click **Apply**, **Cancel**, or **Clear filters**.
 
@@ -335,7 +332,7 @@ The **Spoof detections** report shows information about messages that were block
 
 The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for ten days of filtering.
 
-To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Spoof detections** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/SpoofMailReportV2>.
+To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** \> **Email & collaboration reports**. On the **Email & collaboration reports** page, find **Spoof detections** and then click **View details**. To go directly to the report, open <https://security.microsoft.com/reports/SpoofMailReport>.
 
 ![Spoof detections widget on the Email & collaboration reports page.](../../media/spoof-detections-widget.png)
 
@@ -516,7 +513,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**
 - **Delivery status**
 - **Sender IP**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -527,7 +524,7 @@ If you click **Filter**, the following filters are available:
   - **All**
   - **Inbound**
   - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts).
 - **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Policy type**:
   - **All**
@@ -568,7 +565,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**
 - **Delivery status**
 - **Sender IP**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -578,7 +575,7 @@ If you click **Filter**, the following filters are available:
   - **All**
   - **Inbound**
   - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts).
 - **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Policy type**:
   - **All**
@@ -623,7 +620,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**
 - **Delivery Status**
 - **Sender IP**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -634,7 +631,7 @@ If you click **Filter**, the following filters are available:
   - **All**
   - **Inbound**
   - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts).
 - **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Policy type**:
   - **All**
@@ -673,7 +670,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**
 - **Delivery status**
 - **Sender IP**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -702,7 +699,7 @@ If you click **Filter**, the following filters are available:
   - **All**
   - **Inbound**
   - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts).
 - **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Policy type**:
   - **All**
@@ -746,7 +743,7 @@ In the details table below the chart, the following information is available:
 - **Detection technology**
 - **Delivery status**
 - **Sender IP**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -775,7 +772,7 @@ If you click **Filter**, the following filters are available:
   - **All**
   - **Inbound**
   - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts).
 - **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Policy type**:
   - **All**
@@ -848,7 +845,7 @@ In the details table below the chart, the following information is available:
 - **Recipients**
 - **System override**
 - **Sender IP**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -859,7 +856,7 @@ If you click **Filter**, the following filters are available:
   - **All**
   - **Inbound**
   - **Outbound**
-- **Tag**: **All** or the specified user tag (including priority accounts). For more information about user tags, see [User tags](user-tags.md).
+- **Tag**: **All** or the specified user tag (including priority accounts).
 - **Domain**: **All** or an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 - **Policy type**: **All**
 - **Policy name (details table view only)**: **All**
@@ -886,7 +883,7 @@ In the details table below the chart, the following information is available:
 - **Recipients**
 - **System override**
 - **Sender IP**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 If you click **Filter**, the following filters are available:
 
@@ -1036,7 +1033,7 @@ The details table below the graph shows the following information:
 - **Sender**
 - **Reported reason**
 - **Rescan result**
-- **Tags**
+- **Tags**: For more information about user tags, see [User tags](user-tags.md).
 
 To submit a message to Microsoft for analysis, select the message entry from the table, click **Submit to Microsoft for analysis** and then select one of the following values from the drop down list:
 
