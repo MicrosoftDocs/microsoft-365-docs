@@ -221,8 +221,8 @@ additionalContent:
               url: /DeployOffice/plan-microsoft-365-apps
             - text: Office for Mac
               url: /DeployOffice/mac
-            - text: Office 2019
-              url: /DeployOffice/office2019
+            - text: Office LTSC 2021
+              url: /DeployOffice/ltsc2021/overview
             - text: More >
               url: /DeployOffice
         # Card
