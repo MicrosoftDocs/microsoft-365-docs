@@ -44,10 +44,6 @@ A variety of reports are available in the Microsoft 365 Defender portal at <http
 
 The Exchange Online Protection (EOP) and Microsoft Defender for Office 365 reports in the Microsoft 365 Defender portal that have been replaced, moved, or deprecated are described in the following table.
 
-<br>
-
-****
-
 |Deprecated report and cmdlets|New report and cmdlets|Message Center ID|Date|
 |---|---|:---:|:---:|
 |**URL trace** <p> Get-URLTrace|[URL protection report](view-reports-for-mdo.md#url-protection-report) <p> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|June 2021|
@@ -60,7 +56,6 @@ The Exchange Online Protection (EOP) and Microsoft Defender for Office 365 repor
 |Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|TBA|May 2022|
 |**Exchange transport rule report** <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[Exchange transport rule report in the EAC](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|April 2022|
 |Get-MailTrafficTopReport|[Threat protection status report: View data by Email \> Malware](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <p> **Note**: There is no replacement for the encryption reporting capabilities in Get-MailTrafficTopReport.|MC315742|April 2022|
-|
 
 ## Compromised users report
 

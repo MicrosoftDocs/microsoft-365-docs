@@ -67,7 +67,9 @@
         items:
         - name: External sharing overview
           href: collaborate-with-people-outside-your-organization.md
-        - name: Configuration scenarios
+        - name: Plan external collaboration
+          href: plan-external-collaboration.md
+        - name: Configuration
           items:
           - name: Collaborate on documents
             href: collaborate-on-documents.md
@@ -75,18 +77,32 @@
             href: collaborate-in-site.md
           - name: Collaborate as a team
             href: collaborate-as-team.md
+          - name: Collaborate in a channel
+            href: collaborate-teams-direct-connect.md
+          - name: Enable shared channels with all organizations
+            href: allow-direct-connect-with-all-organizations.md
           - name: Create a B2B extranet
             href: b2b-extranet.md
-          - name: Limit sharing
-            href: microsoft-365-limit-sharing.md
-        - name: Security scenarios
+          - name: Trust conditional access from other organizations
+            href: trust-conditional-access-from-other-organizations.md
+        - name: Limit sharing
           items:
-          - name: Unauthenticated sharing
-            href: best-practices-anonymous-sharing.md
+          - name: Limit who can invite guests
+            href: limit-who-can-invite-guests.md
+          - name: Limit who can be invited by an organization
+            href: limit-invitations-from-specific-organization.md
+          - name: Limit guest sharing to specific organizations
+            href: limit-guest-sharing-to-specific-organization.md
+          - name: Limit organizations where users can be guests
+            href: limit-organizations-where-users-have-guest-accounts.md
           - name: Limit accidental exposure
             href: share-limit-accidental-exposure.md
-          - name: Secure guest sharing environment
-            href: create-secure-guest-sharing-environment.md
+          - name: Limit sharing
+            href: microsoft-365-limit-sharing.md
+        - name: Secure guest sharing environment
+          href: create-secure-guest-sharing-environment.md
+        - name: Unauthenticated sharing
+          href: best-practices-anonymous-sharing.md
         - name: External sharing reference
           href: microsoft-365-guest-settings.md    
     - name: Deploy ransomware protection for your Microsoft 365 tenant
