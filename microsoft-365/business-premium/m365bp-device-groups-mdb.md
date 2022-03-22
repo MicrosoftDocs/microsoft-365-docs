@@ -22,14 +22,14 @@ ms.collection:
 
 Microsoft 365 Business Premium includes endpoint protection through Microsoft Defender for Business. Device protection policies are applied to devices through certain collections that are called device groups. 
 
-**This article describes**:  
+**This guidance describes**:  
 
 - [What device groups are](#whats-a-device-group)
 - [How to create a new device group](#how-do-i-create-a-new-device-group)
 
 ## What's a device group?
 
-A device group is a collection of devices that are grouped together because of certain specified criteria, such as operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. 
+A device group is a collection of devices that are grouped together because of certain specified criteria, such as the operating system version. Devices that meet the criteria are included in that device group, unless you exclude them. 
 
 With your subscription, you have default device groups that you can use. The default device groups include all the devices that are onboarded to Defender for Business. However, you can also create new device groups to assign device protection policies with specific settings to certain devices. 
 

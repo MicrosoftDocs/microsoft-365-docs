@@ -20,9 +20,9 @@ ms.collection:
 
 # View and edit your device protection policies
 
-In Microsoft 365 Business Premium, security settings for managed devices are configured through device protection policies. To help simplify your setup and configuration experience, you have preconfigured policies that can help protect your organization's devices as soon as they are onboarded. You can use the default policies, edit policies, or create your own policies.
+In Microsoft 365 Business Premium, security settings for managed devices are configured through device protection policies. To help simplify your setup and configuration experience, you have preconfigured policies that help protect your organization's devices as soon as they are onboarded. Use the default policies, edit existing policies, or create your own policies.
 
-**This article describes how to**:
+**This guidance describes how to**:
 
 - Get an overview of your default policies
 - View your existing policies
@@ -113,7 +113,6 @@ These policies are part of Microsoft Defender for Business, which is included in
 
    - Make any needed changes by selecting **Edit**.
    - When you’re ready to proceed, choose **Create policy**.
-
 
 ## Next objective
 
