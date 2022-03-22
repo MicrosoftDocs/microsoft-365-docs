@@ -53,6 +53,9 @@ After you enable and configure sensitivity labels for containers, users can addi
 
 ![A sensitivity label when creating a team site from SharePoint.](../media/sensitivity-labels-new-team-site.png)
 
+> [!NOTE]
+> Sensitivity labels for containers support [Teams shared channels](/MicrosoftTeams/shared-channels), currently in preview. If a team has any shared channels, they automatically inherit sensitivity label settings from their parent team, and that label can't be removed or replaced with a different label.
+
 ## How to enable sensitivity labels for containers and synchronize labels
 
 If you haven't yet enabled sensitivity labels for containers, do the following set of steps as a one-time procedure:
@@ -322,7 +325,7 @@ You can also change and apply a label from this page:
 
 ## Support for sensitivity labels
 
-When you use admin centers that support sensitivity labels, you see all sensitivity labels for your tenant. In comparison, user apps and services that filter sensitivity labels according to publishing policies can result in you seeing a subset of those labels.
+When you use admin centers that support sensitivity labels, with the exception of the Azure Active Directory portal, you see all sensitivity labels for your tenant. In comparison, user apps and services that filter sensitivity labels according to publishing policies can result in you seeing a subset of those labels. The Azure Active Directory portal also filters the labels according to publishing policies.
 
 The following apps and services support sensitivity labels configured for sites and group settings:
 
@@ -330,9 +333,9 @@ The following apps and services support sensitivity labels configured for sites 
 
   - SharePoint admin center
   - Teams admin center
-  - Azure Active Directory portal
   - Microsoft 365 admin center
   - Microsoft 365 compliance center
+  - Azure Active Directory portal
 
 - User apps and services:
 

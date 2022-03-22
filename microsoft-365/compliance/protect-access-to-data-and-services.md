@@ -7,7 +7,7 @@ author: brendacarter
 manager: laurawi
 ms.date: 4/17/2018
 audience: Admin
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 search.appverid: 

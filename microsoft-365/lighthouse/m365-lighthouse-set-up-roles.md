@@ -26,6 +26,9 @@ If MSP technicians still access customer environments with the Helpdesk Agent or
 
 ## Set up GDAP in Lighthouse
 
+> [!NOTE]
+> GDAP is currently in [technical preview](/partner-center/announcements/2022-february#6) (public preview) to allow partners to assign granular permissions before GDAP is generally available.
+
 The high-level steps below are required to create a GDAP relationship with a customer. For more information on GDAP, see [Introduction to granular delegated admin privileges (GDAP).](/partner-center/gdap-introduction)
 
 1. [Categorize users into security groups](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal#create-a-basic-group-and-add-members) within the partner tenant's Azure AD.

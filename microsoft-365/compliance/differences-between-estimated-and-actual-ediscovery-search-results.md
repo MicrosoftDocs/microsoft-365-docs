@@ -68,7 +68,10 @@ Here are some reasons for these differences:
 
 - **Document versions in SharePoint and OneDrive**. When searching SharePoint sites and OneDrive accounts, multiple versions of a document aren't included in the count of estimated search results. But you have the option to include all document versions when you export the search results. If you include document versions when exporting search results, the actual number (and total size) of the exported items will be increased.
 
-- **SharePoint folders**. If the name of folders in SharePoint matches a search query, the search estimate will include a count of those folders (but not the items in those folders). When you export the search results, the items in folder are exported but the actual folder in not exported. The result is that the number of exported items export will more than the number of estimated search results. If a folder is empty, then the number of actual search results exported will be reduced by one item, because the actual folder isn't exported.
+- **SharePoint folders**. If the name of folders in SharePoint matches a search query, the search estimate will include a count of those folders (but not the items in those folders). When you export the search results, the items in folder are exported but the actual folder is not exported. The result is that the number of exported items will be more than the number of estimated search results. If a folder is empty, then the number of actual search results exported will be reduced by one item, because the actual folder isn't exported.
+
+   > [!NOTE]
+   > When running a query-based search, you can exclude SharePoint folders by adding the following condition to the query: `NOT(ContentType:folder)`.
 
 - **SharePoint lists**. If the name of a SharePoint list matches a search query, the search estimate will include a count of all the items in the list. When you export the search results, the list (and the list items) is exported as a single CSV file. This will reduce the actual number of items actually exported. If the list contains attachments, the attachments will be exported as separate documents, which will also increase the number of items exported.
 
