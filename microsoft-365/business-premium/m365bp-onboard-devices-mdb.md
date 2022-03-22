@@ -20,7 +20,7 @@ ms.collection:
 
 # Onboard managed devices to Microsoft Defender for Business
 
-Onboard devices to Microsoft Defender for Business to have next-generation protection (antivirus, antimalware, and cloud-delivered protection), firewall protection, web content filtering and more. 
+Next, you must onboard devices to Microsoft Defender for Business to implement next-generation protection (antivirus, antimalware, and cloud-delivered protection), firewall protection, web content filtering, and more. 
 
 To onboard devices, you can choose from several options:
 
@@ -43,7 +43,7 @@ The automatic onboarding option applies to Windows devices only. Automatic onboa
 - Your organization was already using Microsoft Endpoint Manager, Microsoft Intune, or Mobile Device Management (MDM) in Microsoft Intune before you got Defender for Business (Microsoft 365 Business Premium customers already have Microsoft Intune)
 - You already have Windows devices enrolled in Endpoint Manager
 
-If Windows devices are already enrolled in Endpoint Manager, Defender for Business will detect those devices while you are in the process of setting up and configuring Defender for Business. You'll be asked if you want to use automatic onboarding for all or some of your Windows devices. You can onboard all Windows devices at once, or select specific devices to start with, and then add more devices later.
+If Windows devices are already enrolled in Endpoint Manager, Defender for Business detects those devices while you are in the process of setting up and configuring Defender for Business. You'll be asked if you want to use automatic onboarding for all or some of your Windows devices. You can onboard all Windows devices at once, or select specific devices to start with, and then add more devices later.
 
 > [!TIP]
 > We recommend selecting the "all devices enrolled" option. That way, when Windows devices are enrolled in Endpoint Manager later on, they'll be onboarded to Defender for Business automatically.
@@ -74,11 +74,7 @@ If you were already using Endpoint Manager (which includes Microsoft Intune and 
 
 ## Enroll a device with Endpoint Manager and Intune
 
-To enroll a device, sign in to your Intune account through the company portal, which is included with Microsoft 365 Business Premium. 
-
-<!--KC NOTE: Where and how does this interact with the Endpoint Manager at endpoint.microsoft.com ?  denise response: Microsoft Intune is part of Endpoint Manager. Customers are to sign in at https://endpoint.microsoft.com. 
-
-KC: Okay, and do you think the link below is useful? There's a lot of info there...--->
+To enroll a device, you can enroll them yourself, or have your users sign in to the company portal and enroll and install any apps that are needed. 
 
 See [Device enrollment in Microsoft Intune](/mem/intune/enrollment/device-enrollment). 
 
@@ -96,7 +92,7 @@ After you've onboarded Windows devices to Defender for Business, you can run a d
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
-After the command has run, the Command Prompt window will close automatically. If successful, the detection test will be marked as completed, and a new alert will appear in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for the newly onboarded device in about 10 minutes.
+After the command has run, the Command Prompt window closes automatically. If successful, the detection test is marked as completed, and a new alert appears in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for the newly-onboarded device in about ten minutes.
 
 ## Onboard devices gradually
 
