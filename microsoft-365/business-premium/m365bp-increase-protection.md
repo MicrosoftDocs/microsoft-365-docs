@@ -57,7 +57,8 @@ The following table summarizes the levels of protection and preset policy types.
 
 You can also create your own security policies for custom settings to suit your company's needs.
 
-For more detailed information about preset security policies, see [Preset security policies in EOP and Microsoft Defender for Office 365](../security/office-365-security/preset-security-policies.md).
+
+
 
 <!--https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-worldwide
 
@@ -276,6 +277,8 @@ To create a new policy targeted to all recipients in your domain:
 
 For more information, see [Safe Links in Defender for Office 365](../security/office-365-security/safe-links.md).
 
+-->
+
 ## Turn on the Unified Audit Log
 
 After you turn on the audit log search in the Security & Compliance Center, you can retain the admin and other user activity in the log and search it.
@@ -302,7 +305,6 @@ To change the sharing settings for OneDrive and SharePoint:
 
    ![Choose Specific people and set link expiration to 14 days.](../media/anyonelinks.png)
 
--->
 
 ## Activity alerts
 
