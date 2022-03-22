@@ -39,7 +39,7 @@ This catalog contains some basic security features you can use to ensure your us
 
 An Azure Active Directory P2 license is required to utilize the security features in this catalog.
 
-Open the Identity security for Teams catalog
+[Open the Identity security for Teams catalog](https://aka.ms/teamsidentity)
 
 ## Azure Active Directory deployment  
 
@@ -64,10 +64,10 @@ Using Azure Active Directory sync tools is free and included with all Microsoft 
 This guide is designed to help you add cloud apps to Microsoft 365. In our guide, you can add an application to your tenant, add users to the app, assign roles, and more.  If the app supports Single Sign-On (SSO), we’ll walk you through that configuration as well.
 
 ### Licensing
+
 Every paid subscription to Microsoft 365 comes with a free subscription to Azure AD. You can use Azure AD to manage your apps and create and manage user and group accounts.
 
-Open the Add a cloud app to Microsoft 365 setup guide
-
+[Open the Add a cloud app to Microsoft 365 setup guide](https://aka.ms/AzureAppSetup)
 
 ## Azure Self-Service password reset (SSPR) guide
 
