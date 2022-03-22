@@ -1,6 +1,6 @@
 ---
-title: Work with advanced hunting query results at Microsoft 365 Defender
-description: Make the most of the query results returned by advanced hunting at Microsoft 365 Defender
+title: Work with advanced hunting query results in Microsoft 365 Defender
+description: Make the most of the query results returned by advanced hunting in Microsoft 365 Defender
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto, visualization, chart, filters, drill-down
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
