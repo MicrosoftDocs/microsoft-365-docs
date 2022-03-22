@@ -59,7 +59,6 @@ Next, download, install, and configure the Defender for Identity sensor on the d
 |3     | Install the Defender for Identity sensor    |  [Quickstart: Install the Microsoft Defender for Identity sensor](/defender-for-identity/install-step4)       |
 |4     | Configure the sensor       |  [Configure Microsoft Defender for Identity sensor settings ](/defender-for-identity/install-step5)   |
 
-
 ## Step 3. Configure event log and proxy settings on machines with the sensor
 
 On the machines that you installed the sensor on, configure Windows event log collection and Internet proxy settings to enable and enhance detection capabilities.
