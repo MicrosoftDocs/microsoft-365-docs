@@ -72,8 +72,6 @@ The following table identified key concepts that are important to understand whe
 | Role groups    | Defender for Identity offers role-based groups and delegated access to safeguard data according to your organization's specific security and compliance needs which includes Administrators, Users and Viewers.        |  [Microsoft Defender for Identity role groups](/defender-for-identity/role-groups)       |
 | Administrative portal    |  In addition to the Microsoft 365 Defender portal, the Defender for Identity portal can be used to monitor and respond to suspicious activity.      | [Working with the Microsoft Defender for Identity portal](/defender-for-identity/workspace-portal)        |
 | Microsoft Defender for Cloud Apps integration   | Microsoft Defender for Cloud Apps integrates with Microsoft Defender for Identity to provide user entity behavioral analytics (UEBA) across a hybrid environment - both cloud app and on-premises   | Microsoft Defender for Identity integration  |
-| | | |
-
 
 ## Review prerequisites
 
