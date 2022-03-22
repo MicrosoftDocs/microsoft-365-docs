@@ -48,15 +48,15 @@ The second is to  [Set up your Microsoft 365 Defender trial lab environment](set
 2. Select **Purchase Services** from the navigation menu.
 3. Scroll down to the Office 365 section and select **Details** button under Office 365 E5 license.
 
-   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="The Office 365 section has a Details button to click.":::
+   :::image type="content" source="../../media/mdo-eval/2_mdo-eval-license-details.png" alt-text="The Details button in the Microsoft 365 Defender portal" lightbox="../../media/mdo-eval/2_mdo-eval-license-details.png":::
 
 4. Select **Start free trial** link.
 
-   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="Click 'Start free trial' (there's a 35$ fee).":::
+   :::image type="content" source="../../media/mdo-eval/3-m365-purchase-button.png" alt-text="The Start free trial button in the Microsoft 365 Defender portal" lightbox="../../media/mdo-eval/3-m365-purchase-button.png":::
 
 5. Confirm your request and click **Try now** button.
 
-   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="There is a 'Try Now' button on the 'Check out, confirm your order' panel (for an Office 365 E5 trial of a month for 25 users).":::
+   :::image type="content" source="../../media/mdo-eval/4_mdo-trial-order.png" alt-text="The Try Now button in the Microsoft 365 Defender portal" lightbox="../../media/mdo-eval/4_mdo-trial-order.png":::
 
 ## Go to the next step
 
