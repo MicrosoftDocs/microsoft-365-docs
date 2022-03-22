@@ -15,7 +15,9 @@ audience: ITPro
 ms.custom: asr
 ms.topic: conceptual
 ms.technology: mde
-ms.collection: m365initiative-m365-defender
+ms.collection: 
+- m365initiative-m365-defender
+- M365-security-compliance
 ms.date: 1/18/2022
 ---
 
