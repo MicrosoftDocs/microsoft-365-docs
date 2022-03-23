@@ -535,6 +535,8 @@
             href: dlp-chrome-get-started.md
           - name: Get started with the data loss prevention alert dashboard
             href: dlp-alerts-dashboard-get-started.md
+          - name: Get started with Data loss prevention policies for Power BI (preview)
+            href: dlp-powerbi-get-started.md
         - name: Use DLP
           items:
             - name: DLP and Microsoft Teams
