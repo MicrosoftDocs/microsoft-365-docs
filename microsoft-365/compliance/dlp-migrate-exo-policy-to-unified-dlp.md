@@ -99,7 +99,7 @@ After you have evaluated all your Exchange and Compliance center DLP policies fo
 
 > [!IMPORTANT]
 > Any Exchange DLP policy conditions and actions that are not supported by other DLP locations, like Devices, SharePoint, OneDrive, On-premises, MCAS or Teams chat and channel messages will be dropped from the additional policy. Also, there is pre-work that must be done for the other locations. See:
->- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
+>- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 >- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
 >- [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 >- [Learn about the Microsoft Purview data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md)
@@ -159,7 +159,7 @@ Once you are satisfied with how your migrated policies are functioning, you can 
 ## Related articles
 
 - [Exchange Online data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
-- [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
+- [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Create, Test, and Tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
