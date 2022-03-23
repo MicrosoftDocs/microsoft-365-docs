@@ -28,9 +28,9 @@ description: "Learn how security recommendations for Microsoft 365 Business Prem
 
 # How security recommendations protect your business
 
-The security recommendations provided in this library make it much harder for cyber attackers to gain access to your environment. As the one responsible for the integrity of the network, your front line is the members of the org who use the systems regularly. The tradeoff is your users will need to be aware of how to work within and maintain a more secure environment, and training these users in proper safeguarding of the network plays a big part in overall security. We understand a little extra patience is required, but it's worth it to keep the organization protected. 
+The security recommendations provided here make it much harder for cyber attackers to gain access to your environment. As the one responsible for the integrity of the network, your front line is the members of the org who use the systems regularly. The tradeoff is your users will need to be aware of how to work within and maintain a more secure environment, and training these front-line users in proper safeguarding and maintenance of the network plays a big part in overall security. We understand a little extra patience is required, but it's worth it to keep the organization protected. 
 
-This article summarizes a number of security recommendations that will be covered in the course of the following missions, but that you should be aware of up-front because they are tasks mostly performed by your end users.
+This information summarizes a number of security recommendations specific to end-users. The same tasks are covered in the course of the following missions, but it's helpful to be aware of it up-front.
 
 :::image type="content" source="media/m365-democracy-users.png" alt-text="Illustration summarizing key points for devices.":::
 
