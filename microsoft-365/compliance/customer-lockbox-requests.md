@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.custom: admindeeplinkMAC
-description: "Learn about Customer Lockbox requests that allow you to control how a Microsoft support engineer can access your data when you run into an issue."
+description: "Learn about Customer Lockbox requests that allow you to control how a Microsoft support engineer can access your data when you encounter an issue."
 ---
 
 # Customer Lockbox in Office 365
@@ -32,7 +32,7 @@ Occasionally, Microsoft engineers help troubleshoot and fix issues that arise wi
 
 ## Customer Lockbox overview video
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/8fecf10b-1f03-4849-8b67-76d3d2a43f26?autoplay=false]
+> [!VIDEO <https://www.microsoft.com/videoplayer/embed/8fecf10b-1f03-4849-8b67-76d3d2a43f26?autoplay=false>]
 
 ## Customer Lockbox workflow
 
@@ -70,7 +70,7 @@ You can turn on Customer Lockbox controls in the Microsoft 365 admin center. Whe
 
 1. Using a work or school account that has either the global administrator or the **Customer Lockbox access approver** role assigned, go to [https://admin.microsoft.com](https://admin.microsoft.com) and sign in.
 
-2. Choose **Settings** > **Org Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**Security & Privacy**</a>.
+2. Choose **Settings** > **Org Settings** >**Security & Privacy**.
 
 3. Select **Security & Privacy**, then select **Customer Lockbox** in the left column. Check the **Require approval for all data access requests** checkbox and save the changes to turn on the feature.
 
@@ -260,7 +260,7 @@ Global administrators and anyone assigned the Customer Lockbox access approver a
 
 ### How do I opt in to Customer Lockbox?
 
-A global administrator can enable and configure Customer Lockbox in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+A global administrator can enable and configure Customer Lockbox in the Microsoft 365 admin center.
 
 ### If I approve a Customer Lockbox request, what can the engineer do and how will I know what the Microsoft engineer did?
 
