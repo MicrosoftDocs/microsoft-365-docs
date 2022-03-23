@@ -93,12 +93,14 @@ Now you're ready to actually purge chat messages from Teams. You'll use the Micr
 
 3. Purge the chat messages.
 
+For information about using Graph Explorer, see [Working with Graph Explorer](/graph/graph-explorer/graph-explorer-features).
+
 > [!IMPORTANT]
-> To perform these three tasks in Microsoft Graph Explorer, you'll have to consent to the eDiscovery.Read.All and eDiscovery.ReadWrite.All permissions.
+> To perform these three tasks in Graph Explorer, you may have to consent to the eDiscovery.Read.All and eDiscovery.ReadWrite.All permissions.
 
 ### Get the case Id
 
-1. Go to <https://developer.microsoft.com/graph/graph-explorer> and sign in to the Microsoft Graph Explorer with an account that's assigned the **Search And Purge** role in the Microsoft 365 compliance center. 
+1. Go to <https://developer.microsoft.com/graph/graph-explorer> and sign in to the Graph Explorer with an account that's assigned the **Search And Purge** role in the Microsoft 365 compliance center.
 
 2. 
 
