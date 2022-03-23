@@ -226,9 +226,9 @@ Customer content is the data created by users of Microsoft 365 services and appl
 
 - Instant messages (IM) or voice conversations
 
-- Text entered in chats and channels (1:1 chats, group chats, shared channels, private channels, meeting chat)
+- Text entered in chats and channels, for example, 1:1 chats, group chats, shared channels, private channels, and meeting chat
 
-- Other data pasted into chat threads (such as code snippets, images, and links)
+- Other data pasted into chat threads, such as code snippets, images, and links
 
 - App and bot data in chats and channels
 
