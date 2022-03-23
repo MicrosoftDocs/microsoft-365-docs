@@ -35,7 +35,7 @@ You took on the defense of your organization's systems, and that's good. You are
 
 Success depends on you completing the assigned missions ahead which are grouped by category of importance. These will allow you to thwart hackers, protect against ransomware, and ensure that your organization’s purpose and potential are not disrupted. Let's get started.
 
-## (#tab/Fortify Your Environment)
+## [](#tab/Fortify Your Environment)
 
 In the Fortify missions, you must sign in and set up your first protective walls of defense, starting with account access protections.
 
@@ -43,7 +43,7 @@ In the Fortify missions, you must sign in and set up your first protective walls
 
 [**Bump up security protection**](m365bp-security-overview.md). Set up a number of security safeguards to protect your organization. 
 
-## (#Tab/Train Your Team)
+## [](#Tab/Train Your Team)
 
 In the collection of Training missions that follow, your front-line must set up protection for all their devices, email and file sharing. 
 
@@ -53,7 +53,7 @@ In the collection of Training missions that follow, your front-line must set up 
 
 [**Collaborate and share securely**](m365bp-collaborate-share-securely.md). The objectives of this mission require you to set up secure file sharing for all members of the organization.
 
-## (#Tab/Safeguard Managed Devices)
+## [](#Tab/Safeguard Managed Devices)
 
 A safe device is one that is monitored by the organization. In this last critical mission, you will onboard and enroll devices in Microsoft Defender for Business so they are secured and protected with the best tools available.
 
