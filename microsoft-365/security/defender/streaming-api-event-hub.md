@@ -38,6 +38,9 @@ Prior to configuring Microsoft 365 Defender to stream data to Event Hubs, ensure
 
 3. Add permissions to the entity who has the privileges of a **Contributor** so that this entity can export data to the Event Hubs. For more information on adding permissions, see [Add permissions](configure-event-hub.md#add-permissions)
 
+> [!NOTE]
+> The Streaming API can be integrated either via Event Hubs or Azure Storage Account.
+
 ## Enable raw data streaming
 
 1. Log on to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> as a ***Global Administrator*** or ***Security Administrator***.
