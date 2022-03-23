@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Deploy the configuration package on virtual desktop infrastructure (VDI) device so that they are onboarded to the Microsoft 365 Endpoint data loss prevention service.
+description: Deploy the configuration package on virtual desktop infrastructure (VDI) device so that they are onboarded to the Endpoint data loss prevention service.
 
 ---
 
@@ -22,7 +22,7 @@ description: Deploy the configuration package on virtual desktop infrastructure 
 
 **Applies to:**
 
-- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 - [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 - Virtual desktop infrastructure (VDI) devices

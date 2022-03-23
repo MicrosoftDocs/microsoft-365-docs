@@ -25,7 +25,7 @@ description: When you use the Azure Information Protection (AIP) unified labelin
 
 When you use [sensitivity labels](sensitivity-labels.md) in Microsoft 365 Apps on Windows computers, you have a choice of using labeling that's built into Office apps, or an add-in from the [Azure Information Protection (AIP) unified labeling client](/azure/information-protection/rms-client/aip-clientv2). 
 
-Built-in labeling forms the cornerstone of a [Microsoft Purview information protection deployment](information-protection-solution.md) because this labeling technology extends across platforms (Windows, macOS, iOS, Android, and web), as well as across Microsoft apps and services, and beyond. Built-in labeling is also designed to work with other Microsoft Purview capabilities, such as data classification and data loss prevention (DLP).
+Built-in labeling forms the cornerstone of a [Microsoft Purview information protection deployment](information-protection-solution.md) because this labeling technology extends across platforms (Windows, macOS, iOS, Android, and web), as well as across Microsoft apps and services, and beyond. Built-in labeling is also designed to work with other Microsoft Purview capabilities, such as data classification and Microsoft Purview data loss prevention (DLP).
 
 Because built-in labels don't use an Office add-in, they benefit from more stability and better performance. They also support the latest Microsoft Purview features, such as advanced classifiers.
 

@@ -114,7 +114,7 @@ IP-based policies are supported at the SharePoint file level. So an external par
 
 ##### Data loss prevention (DLP)
 
-Admins can apply [DLP policies](/microsoft-365/compliance/dlp-policy-design) to a team where all channels, including shared channels, inherit the policy. Shared channels inherit the policy of the host organization.
+Admins can apply [Microsoft Purview DLP policies](/microsoft-365/compliance/dlp-policy-design) to a team where all channels, including shared channels, inherit the policy. Shared channels inherit the policy of the host organization.
 
 ##### Retention policy
 

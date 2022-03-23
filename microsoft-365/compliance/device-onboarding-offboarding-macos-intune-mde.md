@@ -25,7 +25,7 @@ description: Learn how to onboard and offboard macOS devices into Microsoft 365 
 **Applies to:**
 
 - Customers who have MDE deployed to their macOS devices.
-- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 - [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 

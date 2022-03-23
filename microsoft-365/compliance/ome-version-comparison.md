@@ -37,7 +37,7 @@ To assess whether this deprecation impacts your organization, see [How to migrat
 
 |           **Situation**           | **Legacy OME**    | **IRM in AD RMS**        | **New OME capabilities** |
 |-----------------------------------|-------------------|-------------------|--------------------------|
-|*Sending an encrypted mail*        |Through Exchange mail flow rules|End-user initiated from Outlook desktop or Outlook on the Web; or through Exchange mail flow rules|End-user initiated from Outlook desktop, Outlook for Mac, or Outlook on the Web; through Exchange mail flow rules (also known as transport rules) and Data Loss Prevention (DLP)|
+|*Sending an encrypted mail*        |Through Exchange mail flow rules|End-user initiated from Outlook desktop or Outlook on the Web; or through Exchange mail flow rules|End-user initiated from Outlook desktop, Outlook for Mac, or Outlook on the Web; through Exchange mail flow rules (also known as transport rules) and data loss prevention (DLP)|
 |*Rights management template*       |   N/A      |Do Not Forward option and custom templates|Do Not Forward option, encrypt-only option, and custom templates|
 |*Recipient type*                   |Internal and external recipients|Internal recipients only         |Internal and external recipients|
 |*Experience for internal recipient*|Recipients receive an HTML message, which they download and open in a web browser or mobile app|Native inline experience in Outlook clients|Native inline experience for recipients in the same organization using Outlook clients.  Recipients can read message from OME portal using clients other than Outlook (no download or app required).|

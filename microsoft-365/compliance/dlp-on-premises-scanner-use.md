@@ -1,5 +1,5 @@
 ---
-title: "Use Microsoft Purview data loss prevention on-premises scanner"
+title: "Use data loss prevention on-premises scanner"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,10 +18,10 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: "Learn how to use the Microsoft 365  data loss prevention on premises scanner to scan data at rest and implement protective actions for on premises file shares and on-premises SharePoint folders and document libraries."
+description: "Learn how to use the data loss prevention on premises scanner to scan data at rest and implement protective actions for on premises file shares and on-premises SharePoint folders and document libraries."
 ---
 
-# Use the Microsoft Purview data loss prevention on-premises scanner
+# Use the data loss prevention on-premises scanner
 
 To help familiarize you with DLP on-premises features and how they surface in DLP policies, we've put together some scenarios for you to follow.
 

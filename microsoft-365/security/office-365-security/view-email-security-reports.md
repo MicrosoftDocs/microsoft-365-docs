@@ -106,7 +106,7 @@ On the **Compromised users** page, the ![Create schedule icon.](../../media/m365
 If you select **Chart breakdown by Direction**, the follow charts are available:
 
 - **View data by Exchange transport rules**: The number of **Inbound** and **Outbound** messages that were affected by mail flow rules.
-- **View data by DLP Exchange transport rules**: The number of **Inbound** and **Outbound** messages that were affected by data loss prevention (DLP) mail flow rules.
+- **View data by DLP Exchange transport rules**: The number of **Inbound** and **Outbound** messages that were affected by Microsoft Purview data loss prevention (DLP) mail flow rules.
 
 The following information is shown in the details table below the graph:
 

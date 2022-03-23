@@ -1,5 +1,5 @@
 ---
-title: "Learn about Microsoft 365 Endpoint data loss prevention"
+title: "Learn about Endpoint data loss prevention"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,10 +18,10 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: "Microsoft 365 Endpoint data loss prevention extends monitoring of file activities and protective actions for those files to endpoints. Files are made visible in the Compliance solutions "
+description: "Endpoint data loss prevention extends monitoring of file activities and protective actions for those files to endpoints. Files are made visible in the Compliance solutions "
 ---
 
-# Learn about Microsoft 365 Endpoint data loss prevention
+# Learn about Endpoint data loss prevention
 
 You can use Microsoft Purview Data Loss Prevention (DLP) to monitor the actions that are being taken on items you've determined to be sensitive and to help prevent the unintentional sharing of those items. For more information on DLP, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
 

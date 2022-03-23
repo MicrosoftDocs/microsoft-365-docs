@@ -1,5 +1,5 @@
 ---
-title: "Learn about Microsoft Purview data loss prevention on-premises scanner"
+title: "Learn about data loss prevention on-premises scanner"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,10 +18,10 @@ ms.collection:
 - m365initiative-compliance
 search.appverid: 
 - MET150
-description: "Microsoft Purview data loss prevention on-premises scanner extends monitoring of file activities and protective actions for those files to on-premises file shares and SharePoint folders and document libraries. Files are scanned and protected by Azure Information Protection (AIP) scanner"
+description: "The data loss prevention on-premises scanner extends monitoring of file activities and protective actions for those files to on-premises file shares and SharePoint folders and document libraries. Files are scanned and protected by Azure Information Protection (AIP) scanner"
 ---
 
-# Learn about the Microsoft Purview data loss prevention on-premises scanner
+# Learn about the data loss prevention on-premises scanner
 
 Microsoft Purview data loss prevention on-premises scanner is part of the Microsoft Purview data loss prevention (DLP) suite of features that you can use to discover and protect sensitive items across Microsoft 365 services. For more information about all of Microsoft’s DLP offerings, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
 

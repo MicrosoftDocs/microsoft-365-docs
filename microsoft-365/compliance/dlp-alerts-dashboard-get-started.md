@@ -133,7 +133,7 @@ If your org is licensed for [single-event alert configuration options](#licensin
 
 To work with the DLP alert management dashboard:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a>, go to **Data Loss Prevention**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a>, go to **Data loss prevention**.
 2. Select the **Alerts** tab to view the DLP alerts dashboard.
 3. Select an alert to see details:
 

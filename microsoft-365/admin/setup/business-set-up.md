@@ -116,7 +116,7 @@ The policies you set up in the wizard are applied automatically to a [Security g
     ![Screenshot of Increase protection page.](../../media/increasetreatprotection.png)
 
 
-2. On the **Prevent leaks of sensitive data** page, accept the defaults to turn on Office 365 Data Loss Prevention (DLP) to track sensitive data in Office apps and prevent the accidental sharing of these outside your organization.
+2. On the **Prevent leaks of sensitive data** page, accept the defaults to turn on Microsoft Purview Data Loss Prevention to track sensitive data in Office apps and prevent the accidental sharing of these outside your organization.
 
 3. On the **Protect data in Office for mobile** page, leave mobile app management on, expand the settings and review them, and then select **Create mobile app management policy**.
 

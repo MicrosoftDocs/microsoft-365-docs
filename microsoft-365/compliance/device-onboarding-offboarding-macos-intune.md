@@ -26,7 +26,7 @@ You can use Intune to onboard macOS devices into Microsoft 365 compliance soluti
 
 **Applies to:**
 
-- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 - [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 ## Before you begin

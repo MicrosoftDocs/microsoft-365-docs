@@ -25,7 +25,7 @@ description: "Onboard Windows 10 and Windows 11 devices into Microsoft 365"
 
 **Applies to:**
 
-- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 - [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 Microsoft 365 Endpoint data loss prevention (Endpoint DLP) and insider risk management require that Windows 10 Windows and Windows 11 devices be onboarded into the service so that they can send monitoring data to the services.
@@ -143,7 +143,7 @@ Once an device is onboarded, it should be visible in the devices list and also s
 
 ### Viewing Endpoint DLP alerts in DLP Alerts Management dashboard
 
-1. Open the Data loss prevention page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and choose Alerts.
+1. Open the **Data loss prevention** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a> and choose Alerts.
 
 2. Refer to the procedures in [How to configure and view alerts for your DLP policies](dlp-configure-view-alerts-policies.md) to view alerts for your Endpoint DLP policies.
 

@@ -22,7 +22,7 @@ description: Use Configuration Manager to deploy the configuration package on de
 
 **Applies to:**
 
-- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 - [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 ### Onboard devices using System Center Configuration Manager
@@ -182,7 +182,7 @@ If you're using System Center 2012 R2 Configuration Manager, monitoring consists
 
     ![Configuration Manager showing successful deployment with no errors.](../media/sccm-deployment.png)
 
-### Check that the devices are compliant with the Microsoft 365 Endpoint data loss prevention service
+### Check that the devices are compliant with the Endpoint data loss prevention service
 
 You can set a compliance rule for configuration item in System Center 2012 R2 Configuration Manager to monitor your deployment.
 

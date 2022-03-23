@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 # Get started with exact data match based sensitive information types
 
-Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. They can be used in data loss prevention policies, eDiscovery and certain content governance tasks  This article outlines the workflow and links to the procedures for each of the phases
+Creating and making an exact data match (EDM) based sensitive information type (SIT) available is a multi-phase process. They can be used in Microsfoft Purview data loss prevention policies, eDiscovery and certain content governance tasks  This article outlines the workflow and links to the procedures for each of the phases
 
 ## Before you begin
 

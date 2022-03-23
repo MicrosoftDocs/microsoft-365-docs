@@ -44,7 +44,7 @@ This series of articles walks through a recommended process for managing devices
 
 ## Implementing the layers of protection on and for devices
 
-Protecting the data and apps on devices and the devices themselves is a multi-layer process. There are some protections you can gain on unmanaged devices. After enrolling devices into management, you can implement more sophisticated controls. When threat protection is deployed across your endpoints, you gain even more insights and the ability to automatically remediate some attacks. Finally, if your organization has put the work into identifying sensitive data, applying classification and labels, and configuring data loss prevention policies, you can obtain even more granular protection for data on your endpoints.
+Protecting the data and apps on devices and the devices themselves is a multi-layer process. There are some protections you can gain on unmanaged devices. After enrolling devices into management, you can implement more sophisticated controls. When threat protection is deployed across your endpoints, you gain even more insights and the ability to automatically remediate some attacks. Finally, if your organization has put the work into identifying sensitive data, applying classification and labels, and configuring Microsoft Purview data loss prevention policies, you can obtain even more granular protection for data on your endpoints.
 
 The following diagram illustrates building blocks to achieve a Zero Trust security posture for Microsoft 365 and other SaaS apps that you introduce to this environment. The elements related to devices are numbered 1 through 7. These are the layers of protection device admins will coordinate with other administrators to accomplish. 
 

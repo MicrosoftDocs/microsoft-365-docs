@@ -337,7 +337,7 @@ After you create the import job in Step 5, Microsoft 365 analyzes the data in th
 
   - Importing data to [inactive mailboxes](inactive-mailboxes-in-office-365.md) to archive data for compliance purposes. 
 
-  - Using [data loss prevention policies](dlp-learn-about-dlp.md) to prevent sensitive data from leaking outside your organization.
+  - Using [Microsoft Purview data loss prevention policies](dlp-learn-about-dlp.md) to prevent sensitive data from leaking outside your organization.
 
 - As previously explained, the Microsoft 365 Import service turns on the retention hold setting (for an indefinite duration) after PST files are imported to a mailbox. This means the  *RetentionHoldEnabled*  property is set to  **True** so that the retention policy assigned to the mailbox won't be processed. This gives the mailbox owner time to manage the newly imported messages by preventing a deletion or archive policy from deleting or archiving older messages. Here are some steps you can take to manage this retention hold:
 
