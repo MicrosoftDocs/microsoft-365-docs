@@ -7,6 +7,7 @@ author: dcurwin
 ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 manager: raynew
+ms.collection: M365-security-compliance
 ---
 
 # Configure Defender for Identity detection exclusions in Microsoft 365 Defender

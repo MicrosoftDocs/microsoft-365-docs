@@ -44,10 +44,6 @@ In addition to highlighting problem areas, smart reports and insights include re
 
 A wide variety of reports are available in the Security & Compliance Center. (Go to **Reports** > **Security report** to get an all-up view.) The following table lists available reports with links to learn more:
 
-<br>
-
-****
-
 |Type of information|How to get there|Where to go to learn more|
 |---|---|---|
 |**Security & Compliance Center reports** (all up) <p> Top insights and recommendations, and links to Security & Compliance reports, including data loss prevention reports, labels, email security reports, Defender for Office 365 reports, and more|In the Security & Compliance Center, go to **Reports** \> **Dashboard**|[Reports in the Security & Compliance Center](../../compliance/reports-in-security-and-compliance.md)|
