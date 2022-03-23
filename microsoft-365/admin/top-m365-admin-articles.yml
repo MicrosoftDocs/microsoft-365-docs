@@ -54,17 +54,17 @@ landingContent:
       - linkListType: overview
         links:
           - text: About registration numbers and under-review notifications
-            url: ../../commerce/about-registration-numbers.md
+            url: ../commerce/about-registration-numbers.md
       - linkListType: how-to-guide
         links:
           - text: Cancel your subscription
-            url: ../../commerce/subscriptions/cancel-your-subscription.md
+            url: ../commerce/subscriptions/cancel-your-subscription.md
           - text: Pay for your subscription
-            url: ../../commerce/billing-and-payments/pay-for-your-subscription.md
+            url: ../commerce/billing-and-payments/pay-for-your-subscription.md
           - text: Manage payment methods
-            url: ../../commerce/billing-and-payments/manage-payment-methods.md
+            url: ../commerce/billing-and-payments/manage-payment-methods.md
           - text: View your bill or invoice
-            url: ../../commerce/billing-and-payments/view-your-bill-or-invoice.md
+            url: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
   # Card (optional)
   - title: Email
     linkLists:
