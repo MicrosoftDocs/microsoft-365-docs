@@ -36,7 +36,7 @@ Here's the process to search for and purge Teams chat messages:
 
 ## Step 1: Create a case in Advanced eDiscovery
 
-The first step is to create a case in Advanced eDiscovery to manage the search and purge process. For information about creating a case, see [Use the new case format](advanced-ediscovery-new-case-format.md).
+The first step is to create a case in Advanced eDiscovery to manage the search and purge process. For information about creating a case, see [Use the new case format](advanced-ediscovery-new-case-format.md). 
 
 ## Step 2: Create a draft collection
 
@@ -102,10 +102,20 @@ For information about using Graph Explorer, see [Working with Graph Explorer](/g
 
 1. Go to <https://developer.microsoft.com/graph/graph-explorer> and sign in to the Graph Explorer with an account that's assigned the **Search And Purge** role in the Microsoft 365 compliance center.
 
-2. 
+2. Run the following GET request to retrieve the Id for the Advanced eDiscovery case. Use the value `https://graph.microsoft.com/beta/compliance/ediscovery/cases` in the address bar of the request query. Be sure to select **v1.0** in the API version dropdown list.
 
+   ![GET request for case Id.](..\media\GraphGetRequestForCaseId.png)
 
+   This request returns information about all cases in your organization on the **Response preview** tab.
 
+3. Scroll through the response to locate the Advanced eDiscovery case. Use the **displayName** property to identify the case.
+
+   ![Response with case Id.](..\media\GraphResponseForCaseId.png)
+
+4. Copy the corresponding Id (or copy and paste it to a text file). You'll use this Id in the next task.
+
+> [!TIP]
+> Instead of using the previous procedure to obtain the case Id, you can open the case in the Microsoft 365 compliance center and copy the case Id from the URL.
 
 ### Get the collection Id
 
