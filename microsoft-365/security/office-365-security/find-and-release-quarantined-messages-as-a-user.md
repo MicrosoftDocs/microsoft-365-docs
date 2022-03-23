@@ -36,10 +36,6 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 As an ordinary user (not an admin), the **default** capabilities that are available to you as a recipient of a quarantined message are described in the following table:
 
-<br>
-
-****
-
 |Quarantine reason|View|Release|Delete|
 |---|:---:|:---:|:---:|
 |**Anti-spam policies**||||
@@ -60,7 +56,6 @@ As an ordinary user (not an admin), the **default** capabilities that are availa
 |Safe Attachments for SharePoint, OneDrive, and Microsoft Teams that quarantines malicious files as malware.||||
 |**Mail flow rules (transport rules)**||||
 |Mail flow rules that quarantine email messages.||||
-|
 
 _Quarantine policies_ define what users are allowed to do to quarantined messages based on the why the message was quarantined in [supported features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). Default quarantine policies enforce the historical capabilities as described in the previous table. Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users in supported features. For more information, see [Quarantine policies](quarantine-policies.md).
 
