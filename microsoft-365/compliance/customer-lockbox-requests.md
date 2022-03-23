@@ -22,7 +22,7 @@ description: "Learn about Customer Lockbox requests that allow you to control ho
 
 # Customer Lockbox in Office 365
 
-This article provides deployment and configuration guidance for Customer Lockbox. Customer Lockbox supports requests to access data in Exchange Online, SharePoint Online, and OneDrive for Business. To recommend support for other services, submit a request at [Feedback Portal](https://feedbackportal.microsoft.com).
+This article provides deployment and configuration guidance for Customer Lockbox. Customer Lockbox supports requests to access data in Exchange Online, SharePoint Online, OneDrive for Business, and Teams. To recommend support for other services, submit a request at [Feedback Portal](https://feedbackportal.microsoft.com).
 
 To see the options for licensing your users to benefit from Microsoft 365 compliance offerings, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
@@ -42,7 +42,7 @@ These steps outline the typical workflow when a Microsoft engineer starts a Cust
 
 2. After the user troubleshoots the issue, but can't fix it, they open a support request with Microsoft Support.
 
-3. A Microsoft support engineer reviews the service request and determines a need to access the organization's tenant to repair the issue in Exchange Online.
+3. A Microsoft support engineer reviews the service request and determines a need to access the organization's tenant to repair the issue.
 
 4. The Microsoft support engineer logs into the Customer Lockbox request tool and makes a data access request that includes the organization's tenant name, service request number, and the estimated time the engineer needs access to the data.
 
@@ -59,7 +59,7 @@ These steps outline the typical workflow when a Microsoft engineer starts a Cust
    > [!IMPORTANT]
    > Microsoft does not include any links in Customer Lockbox email notifications requiring you to sign in to Office 365.
 
-7. After the approver from the organization approves the request, the Microsoft engineer receives the approval message, logs into the tenant in Exchange Online, and fixes the customer's issue. Microsoft engineers have the requested duration to fix the issue after which the access is automatically revoked.
+7. After the approver from the organization approves the request, the Microsoft engineer receives the approval message, logs into the tenant, and fixes the customer's issue. Microsoft engineers have the requested duration to fix the issue after which the access is automatically revoked.
 
 > [!NOTE]
 > All actions performed by a Microsoft engineer are logged in the audit log. You can search for and review these audit records.
@@ -206,7 +206,7 @@ The actions performed by a Microsoft engineer after a Customer Lockbox request i
 
 #### Which Microsoft 365 services does Customer Lockbox apply to?
 
-Customer Lockbox is currently supported in Exchange Online, SharePoint Online, and OneDrive for Business.
+Customer Lockbox is currently supported in Exchange Online, SharePoint Online, OneDrive for Business, and Teams.
 
 #### Is Customer Lockbox available to all customers?
 
@@ -226,6 +226,22 @@ Customer content is the data created by users of Microsoft 365 services and appl
 
 - Instant messages (IM) or voice conversations
 
+- Text entered in chats and channels (1:1 chats, group chats, shared channels, private channels, meeting chat)
+
+- Other data pasted into chat threads (such as code snippets, images, and links)
+
+- App and bot data in chats and channels
+
+- Activity feed
+
+- Meeting recordings and transcripts
+
+- Voicemail
+
+- Calendar
+
+- Files posted to chats and channels
+
 - Customer-generated blob or structured storage data (for example, SQL Containers)
 
 - Customer-owned security information (for example, certificates, encryption keys, and passwords)
@@ -244,7 +260,7 @@ Global administrators and anyone assigned the Customer Lockbox access approver a
 
 #### How do I opt in to Customer Lockbox?
 
-A global administrator can enable and configure Customer Lockbox in the Microsoft 365 or <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
+A global administrator can enable and configure Customer Lockbox in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 #### If I approve a Customer Lockbox request, what can the engineer do and how will I know what the Microsoft engineer did?
 
