@@ -17,7 +17,9 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.technology: mde
 ms.topic: article
-ms.collection: m365initiative-m365-defender
+ms.collection: 
+- m365initiative-m365-defender
+- M365-security-compliance
 ms.date: 1/18/2022
 ---
 

@@ -5,11 +5,10 @@ metadata:
   author: kwekuako
   manager: scotv
   audience: Admin
-  ms.topic: article
+  ms.topic: faq
   ms.service: bookings
   ms.localizationpriority: medium
   description: "Microsoft Bookings frequently asked questions."
-    
 title: Microsoft Bookings Frequently Asked Questions
 summary: |
 
@@ -414,6 +413,3 @@ additionalContent: |
   - [Bookings metrics and activity tracking](metrics-and-activity-tracking.md)
 
   - [M365 Public Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=bookings)
-
-  - Submit feedback via [UserVoice](https://outlook.uservoice.com/forums/314907-microsoft-bookings/suggestions/39505261-365-admins-should-have-full-access-to-all-bookings)
-  

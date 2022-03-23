@@ -7,8 +7,8 @@ ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: JoeDavies-MSFT
-ms.author: josephd
+author: dansimp
+ms.author: dansimp
 ms.date: 11/24/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -79,7 +79,10 @@ All remediation actions, whether pending or completed, are tracked in the [Actio
 
 ## Requirements for AIR
 
-Your organization must have Defender for Endpoint (see [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md).
+Your organization must have Defender for Endpoint (see [Minimum requirements for Microsoft Defender for Endpoint](minimum-requirements.md)).
+
+> [!NOTE]
+> Automated investigation and response requires Microsoft Defender Antivirus for running in passive mode or active mode. If Microsoft Defender Antivirus is disabled or uninstalled, Automated Investigation and Response will not function correctly.
 
 Currently, AIR only supports the following OS versions:
 

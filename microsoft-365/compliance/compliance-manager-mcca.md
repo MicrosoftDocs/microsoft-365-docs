@@ -2,8 +2,8 @@
 title: "Microsoft Compliance Configuration Analyzer for Compliance Manager"
 f1.keywords:
 - NOCSH
-ms.author: v-jgriffee
-author: jmgriffee
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -72,9 +72,7 @@ After you install MCCA, you can run MCCA and generate a report. To run a report:
 
 3. Once MCCA runs, it does an initial version check and ask for credentials. At the Input the user name prompt, sign in with your Microsoft 365 account email address ([view the roles eligible to create reports](#role-based-reporting)). Then enter your password at the password prompt.
 
-Your report will then take approximately 2-5 minutes to generate. When it’s done, a browser window opens and displays your HTML report. Every time you run the tool, it will ask for your credentials and generate a new report. This report is stored locally in the following directory:
-
-C:\Users\<username>\AppData\Local\Microsoft\MCCA. 
+Your report will then take approximately 2-5 minutes to generate. When it’s done, a browser window opens and displays your HTML report. Every time you run the tool, it will ask for your credentials and generate a new report. This report is stored locally in the directory C: \ Users \ *username* \ AppData \ Local \ Microsoft \ MCCA.
 
 You can access previously generated reports from this directory.
 

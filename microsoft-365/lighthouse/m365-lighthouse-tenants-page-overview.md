@@ -20,9 +20,6 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Microsoft 365 Lighthouse Tenants page overview
 
-> [!NOTE]
-> The features described in this article are in Preview, are subject to change, and are only available to partners who meet the [requirements](m365-lighthouse-requirements.md). If your organization does not have Microsoft 365 Lighthouse, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
-
 Microsoft 365 Lighthouse lets you manage tenant accounts by selecting **Tenants** in the left navigation pane to open the Tenants page. The Tenants page contains a list of all your tenants. You can select a tenant to view detailed information including contact details and deployment status.
 
 The Tenants page also includes the following options:
@@ -31,7 +28,6 @@ The Tenants page also includes the following options:
 - **Manage Tags:** Select to add, edit, or delete a tag.
 - **Assign Tags:** Select to assign a tag to a tenant.
 - **Search:** Enter keywords to quickly locate a specific tenant in the list.
-
 
 :::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-page-overview.png" alt-text="Screenshot of the Tenant page.":::
 
@@ -74,11 +70,9 @@ To help organize your tenants and easily filter the existing views, you can crea
 > [!NOTE]
 > You can create up to 30 tags across all tenant.
 
-
 ## Tenant details page
 
 To view detailed tenant information, select a tenant from the tenant list. The tenant details page contains contact information and deployment plan status.
-
 
 :::image type="content" source="../media/m365-lighthouse-tenants-page-overview/tenant-details-page.png" alt-text="Screenshot of the Tenant details page.":::
 
@@ -115,13 +109,12 @@ To edit details or delete an existing contact, select the contact name from the 
 
 #### Microsoft 365 usage card
 
-Lighthouse provides insights into Microsoft 365 services usage, including how many users within a tenant are licensed and actively using each service. Active indicates the number of users or devices that have signed into the service at least once in the past 28 days. Change indicates change in active users and devices since last month.
+Lighthouse provides insights into Microsoft 365 services usage, including how many users within a tenant are licensed and actively using each service. Active indicates the number of users or devices that have signed in to the service at least once in the past 28 days. Change indicates change in active users and devices since last month.
 
 The Microsoft 365 Usage card contains two sections:
 
 - **Microsoft 365 Lighthouse-enabled services:** Services that can be managed within the Lighthouse portal.
 - **Additional Microsoft 365 services:** Services that are included in the Microsoft 365 suite but can't be managed within the Microsoft 365 Lighthouse portal at this time.
-
 
 ### Deployment Plans tab
 
