@@ -31,7 +31,7 @@ After your organization has deployed Microsoft Defender for Endpoint, you can ga
 In this illustration:
 - Microsoft Defender for Endpoint greatly increases the sophistication of threat protection for devices. 
 - While Microsoft Intune allows you to set App Protection Policies and manage devices (including configuration changes), Defender for Endpoint continuously monitors your devices for threats and can take automated action to remediate attacks. 
-- You can use Intune to onboard devices to Defender for Endpoint. When you do this, you are also enabling these devices to work with Microsoft 365 Endpoint data loss prevention (Endpoint DLP).
+- You can use Intune to onboard devices to Defender for Endpoint. When you do this, you are also enabling these devices to work with Microsoft Purview Endpoint data loss prevention (Endpoint DLP).
 
 This article includes these steps:
 - Connect Microsoft Intune to Defender for Endpoint

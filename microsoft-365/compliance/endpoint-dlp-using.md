@@ -17,7 +17,7 @@ ms.collection:
 - SPO_Content
 search.appverid: 
 - MET150
-description: "Learn how to configure data loss prevention (DLP) policies to use Microsoft 365 Endpoint data loss prevention (EPDLP) locations."
+description: "Learn how to configure data loss prevention (DLP) policies to use Endpoint data loss prevention (EPDLP) locations."
 ---
 
 # Using Endpoint data loss prevention

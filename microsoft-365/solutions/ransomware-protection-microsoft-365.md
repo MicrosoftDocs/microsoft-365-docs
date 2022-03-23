@@ -102,7 +102,7 @@ For additional details, see [Dealing with data corruption in Microsoft 365](/com
 
 You can prevent a ransomware attacker from copying files outside your tenant with:
 
-- [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) policies
+- [Microsoft Purview Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) policies
 
     Detect, warn, and block risky, inadvertent, or inappropriate sharing of data containing:
 

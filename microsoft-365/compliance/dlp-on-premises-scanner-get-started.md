@@ -1,5 +1,5 @@
 ---
-title: "Get started with Microsoft Purview data loss prevention on-premises scanner"
+title: "Get started with data loss prevention on-premises scanner"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,7 +19,7 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid: 
 - MET150
-description: "Set up Microsoft Purview data loss prevention on-premises scanner"
+description: "Set up data loss prevention on-premises scanner"
 ---
 
 # Get started with the data loss prevention on-premises scanner

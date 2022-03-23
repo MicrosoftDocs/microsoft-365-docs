@@ -26,7 +26,7 @@ A number of information protection controls can be employed in your subscription
 These controls are within following solution areas:
 
 - Sensitivity labels
-- Data loss prevention (DLP)
+- Microsoft Purview Data loss prevention (DLP)
 - Office message encryption (OME)
 - Teams and sites access controls
 
@@ -67,7 +67,7 @@ Microsoft [information protection solutions](../compliance/information-protectio
   - Client-side/content-level
   - Automated for data-at-rest in SharePoint and OneDrive
 - Data Loss Prevention (DLP)
-- [Microsoft 365 Endpoint data loss prevention](../compliance/endpoint-dlp-learn-about.md)
+- [Endpoint data loss prevention](../compliance/endpoint-dlp-learn-about.md)
 - [Office 365 Message Encryption new capabilities (OME)](../compliance/ome.md) and OME [Advanced Message Encryption](../compliance/ome-advanced-message-encryption.md)
 
 In addition, site and library level protection are important mechanisms to include in any protection scheme.

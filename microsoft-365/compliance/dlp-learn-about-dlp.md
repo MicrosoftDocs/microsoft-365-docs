@@ -208,9 +208,9 @@ For more information, see [Get started with activity explorer](data-classificati
 
 To learn more about Microsoft 365 DLP, see:
 
-- [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md)
+- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Learn about the default data loss prevention policy in Microsoft Teams (preview)](dlp-teams-default-policy.md)
-- [Learn about the Microsoft Purview data loss prevention on-premises scanner (preview)](dlp-on-premises-scanner-learn.md)
+- [Learn about data loss prevention on-premises scanner (preview)](dlp-on-premises-scanner-learn.md)
 - [Learn about the Microsoft Compliance Extension (preview)](dlp-chrome-learn-about.md)
 - [Learn about the data loss prevention Alerts dashboard](dlp-alerts-dashboard-learn.md)
 

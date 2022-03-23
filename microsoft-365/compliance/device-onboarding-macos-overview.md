@@ -23,21 +23,21 @@ MacOS devices can be onboarded into Microsoft 365 compliance solutions using eit
 
 **Applies to:**
 
-- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 - [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
 ## Before you begin
 
 Before you get started with Endpoint DLP on macOS devices (Catalina 10.15 or later), you should familiarize yourself with these articles:
 
-- [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
-- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
+- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
+- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
 
 If you are not familiar with DLP at all, you should familiarize yourself with these articles as well:
 
 - [Learn about data loss prevention](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
 - [Plan for data loss prevention (DLP)](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
-- [Data Loss Prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference)
+- [Data loss prevention policy reference](dlp-policy-reference.md#data-loss-prevention-policy-reference)
 
 If you are not familiar with Insider Risk, you should familiarize yourself with these articles:
 

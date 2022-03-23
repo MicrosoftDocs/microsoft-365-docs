@@ -27,7 +27,7 @@ This guidance includes recommendations for these scenarios:
 
 - Bring SaaS apps into IT management
 - Tune protection for specific SaaS apps
-- Configure data loss prevention (DLP) to help comply with data protection regulations
+- Configure Microsoft Purview data loss prevention (DLP) to help comply with data protection regulations
 
 ## Bring SaaS apps into IT management
 

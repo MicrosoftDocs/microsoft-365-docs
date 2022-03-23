@@ -159,7 +159,7 @@ The table in this section summarizes the features and capabilities that are acti
 (<a id="fn6">6</a>) When Microsoft Defender Antivirus is in passive mode, it does not remediate threats. However, Threats can be remediated by [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md). In this case, you might see alerts showing Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in passive mode.
 
 > [!NOTE]
-> [Microsoft 365 Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about) protection continues to operate normally when Microsoft Defender Antivirus is in either active or passive mode.
+> [Microsoft Purview Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about) protection continues to operate normally when Microsoft Defender Antivirus is in either active or passive mode.
 
 ## Important notes
 
@@ -195,4 +195,4 @@ The table in this section describes various states you might see with Microsoft 
 - [Microsoft Defender Antivirus on Windows clients](microsoft-defender-antivirus-in-windows-10.md)
 - [Microsoft Defender Antivirus on Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 - [EDR in block mode](edr-in-block-mode.md)
-- [Learn about Microsoft 365 Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Learn about Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about)
