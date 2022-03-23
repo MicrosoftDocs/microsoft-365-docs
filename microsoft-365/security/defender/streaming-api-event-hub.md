@@ -23,7 +23,6 @@ ms.technology: mde
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -33,13 +32,11 @@ ms.technology: mde
 
 Prior to configuring Microsoft 365 Defender to stream data to Event Hubs, ensure the following prerequisites are fulfilled:
 
-> [!NOTE]
-> Event Hubs and an Azure Storage account are the causes for an integration between the Microsoft 365 Defender Streaming API and the Advanced Hunting API through Event Hubs. This article describes the role of only Event Hubs in the data-streaming process.
-
 1. Create an Event Hubs (for information, see [Set up Event Hubs](configure-event-hub.md#set-up-event-hub)).
 
 2. Creating an Event Hubs Namespace (for information, see [Set up Event Hubs namespace](configure-event-hub.md#set-up-event-hub-namespace)).
 
+3. Add permissions to the entity who has the privileges of a **Contributor** so that this entity can export data to the Event Hubs. For more information on adding permissions, see [Add permissions](configure-event-hub.md#add-permissions)
 
 ## Enable raw data streaming
 

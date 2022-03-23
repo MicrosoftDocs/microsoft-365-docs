@@ -56,7 +56,8 @@ Learn how to configure your Event Hub so that it can ingest events from Microsof
 1. Create a secret by clicking on **Certificates & secrets** \> **New client secret**:
 
     :::image type="content" source="../../media/d2ef88d3d2310d2c60c294b569cdf02e.png" alt-text="The Client secret section in the Microsoft Azure portal" lightbox="../../media/d2ef88d3d2310d2c60c294b569cdf02e.png":::
-    
+
+This client secret value is used by Microsoft Graph APIs to authenticate this application that is being registered.
 
 > [!WARNING]
 > **You won't be able to access the client secret again so make sure to save it**.
@@ -76,12 +77,18 @@ Learn how to configure your Event Hub so that it can ingest events from Microsof
 
     :::image type="content" source="../../media/759498162a4e93cbf17c4130d704d164.png" alt-text="The event hubs properties section in the Microsoft Azure portal" lightbox="../../media/759498162a4e93cbf17c4130d704d164.png":::
 
+### Add permissions
 
-1. Once the Event Hub Namespace is created, you will need to add the App Registration Service Principal as Reader, Azure Event Hub Data Receiver, and the user who will be logging into Microsoft 365 Defender as Contributor (you can also do this at Resource Group or Subscription level).
+You are required to add permissions to the following roles to entities that are involved in Event Hubs data management:
 
-    You do this step at **Event Hub Namespace** \> **Access Control (IAM)** \> **Add** and verify under **Role assignments**:
+- **Contributor**: The permissions related to this role are added to entity who logs in to the Microsoft 365 Defender portal.
+- **Reader** and **Azure Event Hub data Receiver**: The permissions related to these roles are assigned to the entity who is already assigned the role of a **Service Principal** and logs in to the Azure Active Directory application.
 
-    :::image type="content" source="../../media/9c9c29137b90d5858920202d87680d16.png" alt-text="An application registration service principal section in the Microsoft Azure portal" lightbox="../../media/9c9c29137b90d5858920202d87680d16.png":::
+To ensure that these roles have been added, perform the following step:
+
+Go to **Event Hub Namespace** \> **Access Control (IAM)** \> **Add** and verify under **Role assignments**.
+
+:::image type="content" source="../../media/9c9c29137b90d5858920202d87680d16.png" alt-text="An application registration service principal section in the Microsoft Azure portal" lightbox="../../media/9c9c29137b90d5858920202d87680d16.png":::
 
 ## Set up Event Hub
 
