@@ -74,7 +74,7 @@ The account that you use to run the migration wizard must have access to both th
 
 1. If you are unfamiliar with DLP, the Compliance center DLP console, or the Exchange Admin center DLP console, you should familiarize yourself before attempting a policy migration.
     1. [Exchange Online data loss prevention (DLP) policies](/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)
-    1. [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
+    1. [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
     1. [Create, Test, and Tune a DLP policy](create-test-tune-dlp-policy.md)
 1. Evaluate your Exchange DLP and Compliance center policies by asking these questions:
 
@@ -100,12 +100,12 @@ After you have evaluated all your Exchange and Compliance center DLP policies fo
 > [!IMPORTANT]
 > Any Exchange DLP policy conditions and actions that are not supported by other DLP locations, like Devices, SharePoint, OneDrive, On-premises, MCAS or Teams chat and channel messages will be dropped from the additional policy. Also, there is pre-work that must be done for the other locations. See:
 >- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
->- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
->- [Using Endpoint data loss prevention](endpoint-dlp-using.md#using-endpoint-data-loss-prevention)
->- [Learn about the Microsoft Purview data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md#learn-about-the-microsoft-purview-data-loss-prevention-on-premises-scanner)
->- [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)
->- [Use the Microsoft Purview data loss prevention on-premises scanner](dlp-on-premises-scanner-use.md#use-the-microsoft-purview-data-loss-prevention-on-premises-scanner)
->- [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)
+>- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
+>- [Using Endpoint data loss prevention](endpoint-dlp-using.md)
+>- [Learn about the Microsoft Purview data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md)
+>- [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md)
+>- [Use the Microsoft Purview data loss prevention on-premises scanner](dlp-on-premises-scanner-use.md)
+>- [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md)
  
 8. Review the migration wizard session settings. Select **Next**.
 9. Review the migration report. Pay attention to any failures involving Exchange mailflow rules. You can fix them and remigrate the associated policies.

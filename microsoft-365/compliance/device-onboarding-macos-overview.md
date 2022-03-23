@@ -30,8 +30,8 @@ MacOS devices can be onboarded into Microsoft 365 compliance solutions using eit
 
 Before you get started with Endpoint DLP on macOS devices (Catalina 10.15 or later), you should familiarize yourself with these articles:
 
-- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md#learn-about-microsoft-365-endpoint-data-loss-prevention)
-- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md#get-started-with-endpoint-data-loss-prevention)
+- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
+- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
 
 If you are not familiar with DLP at all, you should familiarize yourself with these articles as well:
 
