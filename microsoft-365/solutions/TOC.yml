@@ -136,7 +136,7 @@
       - name: Investigate
         href: information-protection-deploy-monitor-respond.md
     - name: Security guidance for agile organizations
-      href: microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md
+      href: productivity-illustrations.md#security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations
 - name: Workload solutions and scenarios
   items: 
     - name: Overview
