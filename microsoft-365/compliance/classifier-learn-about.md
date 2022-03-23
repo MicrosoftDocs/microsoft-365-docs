@@ -38,7 +38,7 @@ This category of classification mechanisms includes finding content by:
 - Recognizing an item because it's a variation on a template [(document finger printing)](document-fingerprinting.md).
 - Using the presence of exact strings [exact data match](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types).
 
-Sensitivity and retention labels can then be automatically applied to make the content available for use in [Learn about data loss prevention](dlp-learn-about-dlp.md) and [auto-apply polices for retention labels](apply-retention-labels-automatically.md).
+Sensitivity and retention labels can then be automatically applied to make the content available for use in [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) and [auto-apply polices for retention labels](apply-retention-labels-automatically.md).
 
 ## Classifiers
 

@@ -36,7 +36,7 @@ The availability key provides recovery capability for scenarios in which an exte
 
 In addition to the recovery capability, Exchange Online and Skype for Business use the availability key to ensure data availability during transient, or intermittent operational issues, related to the service accessing root keys. When the service cannot reach either of your Customer Keys in Azure Key Vault due to transient errors, the service automatically uses the availability key. The service NEVER goes directly to the availability key.
 
-Automated systems in Exchange Online and Skype for Business may use the availability key during transient errors to support automated back-end services such as anti-virus, e-discovery, data loss prevention, mailbox moves, and data indexing.
+Automated systems in Exchange Online and Skype for Business may use the availability key during transient errors to support automated back-end services such as anti-virus, e-discovery, Microsoft Purview Data Loss Prevention, mailbox moves, and data indexing.
 
 ### SharePoint Online, OneDrive for Business, and Teams files uses
 

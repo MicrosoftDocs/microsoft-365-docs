@@ -21,7 +21,7 @@ description: "Learn how to protect your sensitive information using Microsoft Pu
 
 Organizations have sensitive information under their control such as financial data, proprietary data, credit card numbers, health records, or social security numbers. To help protect this sensitive data and reduce risk, they need a way to prevent their users from inappropriately sharing it with people who shouldn't have it. This practice is called data loss prevention (DLP).
 
-In Microsoft 365, you implement data loss prevention by defining and applying DLP policies. With a DLP policy, you can identify, monitor, and automatically protect sensitive items across:
+In Microsoft Purview, you implement data loss prevention by defining and applying DLP policies. With a DLP policy, you can identify, monitor, and automatically protect sensitive items across:
 
 - Microsoft 365 services such as Teams, Exchange, SharePoint, and OneDrive
 - Office applications such as Word, Excel, and PowerPoint
@@ -74,7 +74,7 @@ DLP policies can block prohibited activities, like inappropriate sharing of sens
 
 A successful DLP implementation is as much dependent on getting your users trained and acclimated to data loss prevention practices as it is on well planned and tuned policies. Since your users are heavily involved, be sure to plan for training for them too. You can strategically use policy tips to raise awareness with your users before changing the policy enforcement from test mode to more restrictive modes.
 
-<!--For more information on planning for DLP, including suggestions for deployment based on your needs and resources, see [Planning for Microsoft Purview data loss prevention](dlp-plan-for-dlp.md).-->
+<!--For more information on planning for DLP, including suggestions for deployment based on your needs and resources, see [Planning for data loss prevention](dlp-plan-for-dlp.md).-->
 
 ### Prepare for DLP
 

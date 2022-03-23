@@ -52,9 +52,9 @@ See [Get started with the Microsoft Compliance Extension](dlp-chrome-get-started
 ## See also
 
 - [Get started with Microsoft Compliance Extension](dlp-chrome-get-started.md)
-- [Learn about Microsoft 365 Endpoint data loss prevention](endpoint-dlp-learn-about.md)
-- [Getting started with Microsoft Endpoint data loss prevention](endpoint-dlp-getting-started.md)
-- [Using Microsoft Endpoint data loss prevention](endpoint-dlp-using.md)
+- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
+- [Getting started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
+- [Using Endpoint data loss prevention](endpoint-dlp-using.md)
 - [Learn about data loss prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)

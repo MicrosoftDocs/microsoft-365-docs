@@ -27,7 +27,7 @@ Automatic redirection is enabled by default for all users accessing compliance-r
 - [Content search](search-for-content.md)
 - [Core eDiscovery](get-started-core-ediscovery.md)
 - [Data classification](data-classification-overview.md)
-- [Data loss prevention (DLP)](dlp-learn-about-dlp.md)
+- [Microsoft Purview Data Loss Prevention (DLP)](dlp-learn-about-dlp.md)
 - [Data subject requests](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool)
 - [Information governance](manage-information-governance.md)
 - [Records management](records-management.md)

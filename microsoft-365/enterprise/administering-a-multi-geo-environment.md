@@ -56,7 +56,7 @@ You can set your IP DLP policies for OneDrive for Business, SharePoint, and Exch
 
 The DLP policies are automatically synchronized based on their applicability to each geo location.
 
-Implementing Information Protection and Data Loss prevention policies to all users in a geo location is not an option available in the UI, instead you must select the applicable accounts for the policy or apply the policy globally to all accounts.
+Implementing Information Protection and Microsoft Purview Data Loss Prevention policies to all users in a geo location is not an option available in the UI, instead you must select the applicable accounts for the policy or apply the policy globally to all accounts.
 
 ## Microsoft Power Apps
 

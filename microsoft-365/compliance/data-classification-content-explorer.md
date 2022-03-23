@@ -149,4 +149,4 @@ You can search on:
 - [Learn about sensitivity labels](sensitivity-labels.md)
 - [Learn about retention policies and retention labels](retention.md)
 - [Sensitive information type entity definitions.md](sensitive-information-type-entity-definitions.md)
-- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+- [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)

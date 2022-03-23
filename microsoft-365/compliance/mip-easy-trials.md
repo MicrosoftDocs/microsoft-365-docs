@@ -22,7 +22,7 @@ Eligible customers can activate default labels and policies for Microsoft Purvie
 - Sensitivity labels and a sensitivity label policy
 - Client-side auto-labeling
 - Service-side auto-labeling
-- Data loss prevention (DLP) policies for Teams and devices
+- Microsoft Purview Data Loss Prevention (DLP) policies for Teams and devices
 
 These default configurations help you get up and running quickly with Microsoft Purview Information Protection for Microsoft 365. You can use them as-is, make just a few changes, or fully customize them to better suit your business requirements. 
 

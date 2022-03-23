@@ -27,7 +27,7 @@ To help familiarize you with Endpoint DLP features and how they surface in DLP p
 > [!IMPORTANT]
 > These Endpoint DLP scenarios are not the official procedures for creating and tuning DLP policies. Refer to the below topics when you need to work with DLP policies in general situations:
 >
->- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+>- [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 >- [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)
 >- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
 >- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)

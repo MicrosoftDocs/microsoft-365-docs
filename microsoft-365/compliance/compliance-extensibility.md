@@ -68,7 +68,7 @@ High-level MIP SDK use cases include:
 
 - A CAD/CAM design application that provides native support for Microsoft Purview Information Protection labeling.
 
-- A cloud access security broker or data loss prevention solution that can encrypt data with Azure Information Protection.
+- A cloud access security broker or Microsoft Purview Data Loss Prevention solution that can encrypt data with Azure Information Protection.
 
 To learn more about the MIP SDK, prerequisites, additional scenarios, and samples, see [MIP SDK Overview](/information-protection/develop/overview).
 

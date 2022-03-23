@@ -169,7 +169,7 @@ Datacenter asset management
 
 ### Data Loss Prevention
 
-- [Learn about Data Loss Prevention](endpoint-dlp-learn-about.md) was updated for macOS support and advanced classification; updated for creating a custom DLP policy to audit activity for all supported file types.
+- [Learn about Microsoft Purview Data Loss Prevention](endpoint-dlp-learn-about.md) was updated for macOS support and advanced classification; updated for creating a custom DLP policy to audit activity for all supported file types.
 - [Get started with Microsoft 365 Endpoint data loss prevention](endpoint-dlp-getting-started.md) was updated for macOS support and advanced classification.
 - [Using Endpoint data loss prevention](endpoint-dlp-using.md) was updated for macOS support and advanced classification.
 - [Data Loss Prevention policy tips reference](dlp-policy-tips-reference.md) was updated for macOS support and advanced classification.

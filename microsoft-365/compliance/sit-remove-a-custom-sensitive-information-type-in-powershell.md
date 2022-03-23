@@ -70,7 +70,7 @@ In Compliance center PowerShell, there are two methods to remove custom sensitiv
 
 ## More information
 
-- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+- [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 

@@ -102,7 +102,7 @@ After you have evaluated all your Exchange and Compliance center DLP policies fo
 >- [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 >- [Get started with Endpoint data loss prevention](endpoint-dlp-getting-started.md)
 >- [Using Endpoint data loss prevention](endpoint-dlp-using.md)
->- [Learn about the Microsoft Purview data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md)
+>- [Learn about the data loss prevention on-premises scanner](dlp-on-premises-scanner-learn.md)
 >- [Get started with the data loss prevention on-premises scanner](dlp-on-premises-scanner-get-started.md)
 >- [Use the Microsoft Purview data loss prevention on-premises scanner](dlp-on-premises-scanner-use.md)
 >- [Use data loss prevention policies for non-Microsoft cloud apps](dlp-use-policies-non-microsoft-cloud-apps.md)

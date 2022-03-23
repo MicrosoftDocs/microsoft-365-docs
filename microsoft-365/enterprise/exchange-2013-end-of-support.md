@@ -53,7 +53,7 @@ Migrating to Microsoft 365 is the best and simplest option to help you retire yo
 
 - Larger mailboxes with greater data resilience;
 - Security capabilities such as anti-spam and antimalware protection, 
-- Compliance capabilities such as Microsoft Purview Data Loss Prevention, Retention Policies, In-Place and Litigation Hold, in-place eDiscovery, and more;
+- Compliance capabilities such as Data Loss Prevention, Retention Policies, In-Place and Litigation Hold, in-place eDiscovery, and more;
 - Integration with SharePoint Online, OneDrive, Teams, Power BI, and other Microsoft 365 services;
 - Focused Inbox; and
 - Advanced analytics and Viva Insights.
