@@ -8,20 +8,22 @@
       href: get-microsoft-365-campaigns.md
     - name: How Microsoft 365 protects your business
       href: m365bp-secure-users.md
-- name: Set up and sign in
+- name: Fortify your environment
   items: 
-    - name: Overview
-      href: m365bp-setup-overview.md
-    - name: Set up Microsoft 365 Business Premium
-      href: m365bp-setup.md
-    - name: Set up Microsoft 365 for Campaigns
-      items:
-        - name: Sign up
-          href: m365-campaigns-sign-up.md
-        - name: Sign in
-          href: m365-campaigns-sign-in.md
-        - name: Customize sign-in page
-          href: m365-customize-sign-in.md
+  - name: Set up and sign in
+    items: 
+      - name: Overview
+        href: m365bp-setup-overview.md
+      - name: Set up Microsoft 365 Business Premium
+        href: m365bp-setup.md
+      - name: Set up Microsoft 365 for Campaigns
+        items:
+          - name: Sign up
+            href: m365-campaigns-sign-up.md
+          - name: Sign in
+            href: m365-campaigns-sign-in.md
+          - name: Customize sign-in page
+            href: m365-customize-sign-in.md
 - name: Bump up security protection
   items: 
     - name: Overview
