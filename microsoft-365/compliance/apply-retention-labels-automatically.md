@@ -142,7 +142,7 @@ Additionally, SharePoint items that are in draft or that have never been publish
 > 
 > Although group mailboxes would usually be included by selecting the **Microsoft 365 Groups** location, for this specific policy configuration, the groups location includes only SharePoint sites connected to a Microsoft 365 group.
 
-When you create auto-apply retention label policies for sensitive information, you see the same list of policy templates as when you create a data loss prevention (DLP) policy. Each template is preconfigured to look for specific types of sensitive information. In the following example, the sensitive info types are from the **Privacy** category, and **U.S Personally Identifiable Information (PII) Data** template:
+When you create auto-apply retention label policies for sensitive information, you see the same list of policy templates as when you create a Microsoft Purview Data Loss Prevention (DLP) policy. Each template is preconfigured to look for specific types of sensitive information. In the following example, the sensitive info types are from the **Privacy** category, and **U.S Personally Identifiable Information (PII) Data** template:
 
 ![Policy templates with sensitive information types.](../media/sensitive-info-configuration.png)
 

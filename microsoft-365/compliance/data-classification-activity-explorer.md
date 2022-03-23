@@ -120,7 +120,7 @@ Activity explorer also gathers **DLP policy matches** events from Exchange Onlin
 - Copied to network share
 - Accessed by unallowed app 
 
-Understanding what actions are being taken with your sensitive labeled content helps you see if the controls that you have in place, such as [data loss prevention](dlp-learn-about-dlp.md) policies are effective or not. If not, or if you discover something unexpected, such as a large number of items that are labeled `highly confidential` and are downgraded `general`, you can manage your various policies and take new actions to restrict the undesired behavior.
+Understanding what actions are being taken with your sensitive labeled content helps you see if the controls that you have in place, such as [Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md) policies are effective or not. If not, or if you discover something unexpected, such as a large number of items that are labeled `highly confidential` and are downgraded `general`, you can manage your various policies and take new actions to restrict the undesired behavior.
 
 > [!NOTE]
 > Activity explorer doesn't currently monitor retention activities for Exchange Online.

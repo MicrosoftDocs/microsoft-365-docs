@@ -68,7 +68,7 @@ The file contains activity information for the following fields:
 - **Category:** The category of the item modified. Values are *Policies, Cases, Users, Alerts, Settings,* and *Notice templates.*
 - **Date:** Date and time, listed in your organization's local date and time.
 - **Description**: The description input by the user for the object being acted on (such as a policy or a priority user group).
-- **DLP policy**: The data loss prevention (DLP) policy selected to trigger inclusion in an insider risk management policy.
+- **DLP policy**: The Microsoft Purview Data Loss Prevention (DLP) policy selected to trigger inclusion in an insider risk management policy.
 - **Indicator**: The indicator in the within insider risk settings that the activity was performed on (such as adding or removing an indicator).
 - **Notice template**: The notice template the activity was performed on.
 - **Number of days**: The policy activation window defined in insider risk settings.

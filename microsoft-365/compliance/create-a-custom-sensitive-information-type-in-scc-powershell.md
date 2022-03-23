@@ -905,6 +905,6 @@ You can copy this markup, save it as an XSD file, and use it to validate your ru
 
 ## More information
 
-- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+- [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 - [Sensitive information type functions](sit-functions.md)

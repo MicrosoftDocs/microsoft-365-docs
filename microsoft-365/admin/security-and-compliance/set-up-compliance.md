@@ -32,7 +32,7 @@ Your Microsoft 365 Business Premium comes with features to protect your data and
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3TGvL?autoplay=false]
 
-Data loss prevention policies help identify and protect your business's sensitive information, such as Social Security numbers or medical records.
+Microsoft Purview Data Loss Prevention policies help identify and protect your business's sensitive information, such as Social Security numbers or medical records.
 
 1. To get started, go to the [admin center](https://admin.microsoft.com), and select **Setup**.
 1. Scroll down to **Set up data loss prevention**, and then select **View**, and then **Manage**.

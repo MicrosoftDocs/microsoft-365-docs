@@ -28,7 +28,7 @@ Features:
 - [Advanced Audit](#advanced-audit)
 - [Communication Compliance](#communication-compliance)
 - [Compliance Manager](#compliance-manager)
-- [Data Loss Prevention](#data-loss-prevention)
+- [Microsoft Purview Data Loss Prevention](#data-loss-prevention)
 - [eDiscovery](#ediscovery)
 - [Information Protection](#information-protection)
 - [Insider Risk Management](#insider-risk-management)

@@ -31,7 +31,7 @@ Use these procedures to roll out the Microsoft Compliance Extension.
 To use Microsoft Compliance Extension, the device must be onboarded into endpoint DLP. Review these articles if you are new to DLP or endpoint DLP
 
 - [Learn about Microsoft Compliance Extension](dlp-chrome-learn-about.md)
-- [Learn about data loss prevention](dlp-learn-about-dlp.md)
+- [Learn about Microsoft Purview Data Loss Prevention](dlp-learn-about-dlp.md)
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
 - [Learn about endpoint data loss prevention](endpoint-dlp-learn-about.md)

@@ -181,7 +181,7 @@ Exchange 2016 includes all the features of previous releases of Exchange. It mos
 |Exchange release|Features|
 |---|---|
 |**Exchange 2013**|Simplified architecture reduces the number of server roles to three (Mailbox, Client Access, Edge Transport)|
-||Microsoft Purview Data loss prevention policies (DLP) that help keep sensitive information from leaking|
+||Data loss prevention policies (DLP) that help keep sensitive information from leaking|
 ||Improved Outlook Web App experience|
 |**Exchange 2016**|*Features from Exchange 2013 and …*|
 ||Further simplified server roles to just Mailbox and Edge Transport|

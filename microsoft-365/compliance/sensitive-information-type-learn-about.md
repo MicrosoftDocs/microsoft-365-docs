@@ -32,7 +32,7 @@ Microsoft provides a large number of pre-configured SITs or you can create your 
 
 ## Sensitive information types are used in
 
-- [Data loss prevention policies](dlp-learn-about-dlp.md)
+- [Microsoft Purview Data Loss Prevention policies](dlp-learn-about-dlp.md)
 - [Sensitivity labels](sensitivity-labels.md)
 - [Retention labels](retention.md)
 - [Insider risk management](insider-risk-management.md)

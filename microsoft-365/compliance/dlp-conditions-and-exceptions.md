@@ -102,7 +102,7 @@ To configure the sender address location at a DLP rule level, the parameter is _
 |---|---|---|---|
 |Subject contains words or phrases|condition: *SubjectContainsWords* <br/> exception: *ExceptIf SubjectContainsWords*|Words|Messages that have the specified words in the Subject field.|
 |Subject matches patterns|condition: *SubjectMatchesPatterns* <br/> exception: *ExceptIf SubjectMatchesPatterns*|Patterns|Messages where the Subject field contain text patterns that match the specified regular expressions.|
-|Content contains|condition: *ContentContainsSensitiveInformation* <br/> exception *ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|Messages or documents that contain sensitive information as defined by data loss prevention (DLP) policies.|
+|Content contains|condition: *ContentContainsSensitiveInformation* <br/> exception *ExceptIfContentContainsSensitiveInformation*|SensitiveInformationTypes|Messages or documents that contain sensitive information as defined by Microsoft Purview Data Loss Prevention (DLP) policies.|
 |Subject or Body matches pattern|condition: *SubjectOrBodyMatchesPatterns* <br/> exception: *ExceptIfSubjectOrBodyMatchesPatterns*|Patterns|Messages where the subject field or message body contains text patterns that match the specified regular expressions.|
 |Subject or Body contains words|condition: *SubjectOrBodyContainsWords* <br/> exception: *ExceptIfSubjectOrBodyContainsWords*|Words|Messages that have the specified words in the subject field or message body|
 |

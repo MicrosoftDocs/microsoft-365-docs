@@ -157,7 +157,7 @@ To remove a custom branding template:
 After you've either modified the default template or created new branding templates, you can create Exchange mail flow rules to apply your custom branding based on certain conditions. Such a rule will apply custom branding in the following scenarios:
 
 - If the email was manually encrypted by the end user using Outlook or Outlook on the web, formerly Outlook Web App
-- If the email was automatically encrypted by an Exchange mail flow rule or data loss prevention policy
+- If the email was automatically encrypted by an Exchange mail flow rule or Microsoft Purview Data Loss Prevention policy
 
 For information on how to create an Exchange mail flow rule that applies encryption, see [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md).
 

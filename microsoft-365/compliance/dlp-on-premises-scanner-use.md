@@ -23,7 +23,7 @@ description: "Learn how to use the data loss prevention on premises scanner to s
 
 # Use the data loss prevention on-premises scanner
 
-To help familiarize you with DLP on-premises features and how they surface in DLP policies, we've put together some scenarios for you to follow.
+To help familiarize you with Microsoft Purview Data Loss Prevention on-premises features and how they surface in DLP policies, we've put together some scenarios for you to follow.
 
 > [!IMPORTANT]
 > These DLP on-premises scenarios are not the official procedures for creating and tuning DLP policies. Refer to the below topics when you need to work with DLP policies in general situations:

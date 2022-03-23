@@ -165,7 +165,7 @@ For example, you can create and apply a retention label named "Review later" wit
 
 #### Using a retention label as a condition in a DLP policy
 
-You can specify a retention label as a condition in a data loss prevention (DLP) policy for documents in SharePoint. For example, configure a DLP policy to prevent documents from being shared outside the organization if they have a specified retention label applied to it.
+You can specify a retention label as a condition in a Microsoft Purview Data Loss Prevention (DLP) policy for documents in SharePoint. For example, configure a DLP policy to prevent documents from being shared outside the organization if they have a specified retention label applied to it.
 
 For more information, see [Using a retention label as a condition in a DLP policy](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
 

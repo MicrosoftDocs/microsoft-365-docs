@@ -81,7 +81,7 @@ Use the [Microsoft Purview Information Protection](information-protection.md) pa
 
 ![Prevent data loss for Microsoft Purview Information Protection solution overview](../media/dlp-mipsolution.png)
 
-Deploy data loss prevention (DLP) policies to govern and prevent the inappropriate sharing, transfer, or use of sensitive data across apps and services. These policies help users make the right decisions and take the right actions when they're using sensitive data.
+Deploy Microsoft Purview Data Loss Prevention (DLP) policies to govern and prevent the inappropriate sharing, transfer, or use of sensitive data across apps and services. These policies help users make the right decisions and take the right actions when they're using sensitive data.
 
 |Step|Description|More information|
 |:---|:----------|:---------------|
