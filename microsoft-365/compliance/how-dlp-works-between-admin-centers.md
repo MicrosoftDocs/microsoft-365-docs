@@ -22,9 +22,9 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ---
 
-# How DLP works between the Microsoft 365 Compliance Center and Exchange admin center
+# How DLP works between the Compliance Center and Exchange admin center
 
-In Microsoft 365, you can create a data loss prevention (DLP) policy in two different admin centers:
+In Microsoft Purview, you can create a data loss prevention (DLP) policy in two different admin centers:
   
 - In the **Microsoft 365 Compliance Center**, you can create a single DLP policy to help protect content in SharePoint, OneDrive, Exchange, Teams, and now Endpoint Devices. We recommend that you create a DLP policy here. For more information, see [Data Loss Prevention reference](data-loss-prevention-policies.md).
     
