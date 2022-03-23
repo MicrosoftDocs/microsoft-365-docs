@@ -58,7 +58,7 @@ Use the drop-down menu below to find the number for your country or region.
 
 [!INCLUDE [country-region-support-dropdown-list](../admin/includes/country-region-support-dropdown-list.md)]
 
-Billing support and Technical support hours (and languages) are listed on each Country page selected from the drop down.\
+Billing support and Technical support hours (and languages) are listed on each country's page selected from the drop-down.
 
 Admins, have your account details ready when you call.
 
