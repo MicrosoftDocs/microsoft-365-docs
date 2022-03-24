@@ -62,7 +62,7 @@ A safe device is one that is monitored by the organization. In this last critica
 >[!NOTE]
 >There are times when a side quest takes you away from the mission at-hand. When this happens, do not abandon your mission but instead, return and carry on. It's for the good of the org!
 
-Okay. Let's get started with the [first mission](m365bp-setup-overview.md)!
+Okay. Let's get started with your [first mission](m365bp-setup-overview.md)!
 
 :::image type="content" source="media/m365-whatisit-securityfocus2.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
 
