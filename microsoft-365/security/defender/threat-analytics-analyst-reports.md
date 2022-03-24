@@ -101,7 +101,7 @@ While detections allow you to identify and stop the tracked threat automatically
 Advanced hunting queries in the analyst reports have been vetted by Microsoft analysts and are ready for you to run in the [advanced hunting query editor](https://security.microsoft.com/advanced-hunting). You can also use the queries to create [custom detection rules](custom-detection-rules.md) that trigger alerts for future matches.
 
 >[!NOTE]
-> Threat analytics is also available in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics). However, it does not have the data integration between Microsoft Defender for Office and Microsoft Defender for Endpoint that Microsoft 365 Defender threat analytics has.
+> Threat analytics is also available in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics). However, it does not have the data integration between Microsoft Defender for Office and Microsoft Defender for Endpoint thin Microsoft 365 Defender threat analytics has.
 
 ## Related topics
 

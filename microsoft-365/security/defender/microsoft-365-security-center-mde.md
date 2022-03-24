@@ -70,7 +70,7 @@ Microsoft Defender for Endpoint in Microsoft 365 Defender supports [granting acc
 >- US Department of Defense
 >- All US government institutions with commercial licenses
 
-Take a look at Microsoft 365 Defender at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>.
+Take a look in Microsoft 365 Defender at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>.
 
 Learn more about the benefits: [Overview of Microsoft 365 Defender](microsoft-365-defender.md)
 
