@@ -19,3 +19,12 @@ description: "OME auditing enables tracking and revocation of encrypted messages
 ---
 
 # Office 365 Message Encryption message tracking and revocation
+
+
+## Enabling message tracking audit logs in PowerShell
+
+This parameter is available only in the cloud-based service.
+The *EnablePortalTrackingLogs* parameter specifies whether to enable the audit logs of accessing the Office 365 Message Encryption (OME) portal. Valid values are:
+•         $true: Turn on audit feature.
+•         $false: Turn off audit feature
+
