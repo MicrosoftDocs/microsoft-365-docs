@@ -39,12 +39,16 @@ For more information, see [Microsoft Secure Score](../security/defender/microsof
 
 ## Review and apply preset security policies
 
+:::image type="content" source="media/m365bp-presetsecuritypolicies.png" alt-text="Screenshot of preset security policies.":::
+
 Your subscription includes [preset security policies](../security/office-365-security/preset-security-policies.md) that use recommended settings for anti-spam, anti-malware, and anti-phishing protection. By default, built-in protection is enabled; consider applying standard or strict protection for increased security. 
+
+### What are the preset security policies?
 
 Preset security policies consist of:
 
 - *Profiles*, which determine the level of protection
-- *Policies* (such as anti-spam, anti-malware, anti-phishing, Safe Attachments, and Safe Links)
+- *Policies* (such as anti-spam, anti-malware, anti-phishing, spoof settings, impersonation, Safe Attachments, and Safe Links)
 - *Policy settings* (such as groups, users, or domains to receive the policies and any exceptions)
 
 The following table summarizes the levels of protection and preset policy types.
@@ -52,10 +56,11 @@ The following table summarizes the levels of protection and preset policy types.
 | Level of protection | Description |
 |:---|:---|
 | **Standard protection** <br/>(*recommended for most businesses*) | Standard protection uses a baseline profile that's suitable for most users. Standard protection includes anti-spam, anti-malware, anti-phishing, spoof settings, impersonation settings, Safe Links, and Safe Attachments policies.  |
-| **Strict protection**  | Strict protection includes the same kinds of policies as standard protection, but with more stringent settings. If your business must meet additional security requirements or regulations, consider applying strict protection to your priority users or high value targets. |
+| **Strict protection**  | Strict protection includes the same kinds of policies as standard protection, but with more stringent settings. If your business must meet additional security requirements or regulations, consider applying strict protection to at least your priority users or high value targets. |
 | **Built-in protection** | Protects against malicious links and attachments in email. Built-in protection is enabled and applied to all users by default.  |
 
-You can specify the users, groups, and domains to receive preset policies, and you can define certain exceptions, but you cannot change the preset policies themselves. If you want to use different settings for your security policies, you can create your own custom policies to suit your company's needs.
+> [!TIP]
+> You can specify the users, groups, and domains to receive preset policies, and you can define certain exceptions, but you cannot change the preset policies themselves. If you want to use different settings for your security policies, you can create your own custom policies to suit your company's needs.
 
 If users are assigned multiple policies, an order of priority is used to apply the policies. The order of priority works as follows:
 
@@ -66,10 +71,56 @@ If users are assigned multiple policies, an order of priority is used to apply t
 
 Strict protection overrides all other policies, and built-in protection is overridden by the other policies. 
 
+To learn more about preset security policies, see [What preset security policies are made of](../security/office-365-security/preset-security-policies.md#what-preset-security-policies-are-made-of).
+
+### How do I assign preset security policies to users?
+
+> [!IMPORTANT]
+> Before you begin, make sure you have one of the following roles assigned in Exchange Online (which is included in your subscription):
+> 
+> - Global Administrator
+> - Organization Management
+> - Security Administrator
+> 
+> To learn more, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo) and [About admin roles](../admin/add-users/about-admin-roles.md).
+
+To assign preset security policies, follow these steps:
+
+1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+
+2. Go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Preset Security Policies** in the **Templated policies** section. (To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies>.)
+
+2. On the **Preset security policies** page, in either the **Standard protection** or **Strict protection** section, change the toggle from **Disabled** to **Enabled**, and then select **Manage**.
+
+3. The **Apply Standard protection** or **Apply Strict protection** wizard starts in a flyout. On the **EOP protections apply to** page, identify the internal recipients that the policies apply to (recipient conditions):
+   - **Users**
+   - **Groups**
+   - **Domains**
+
+   Click in the appropriate box, start typing a value, and then select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, select the Remove icon next to the value.
+
+   For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users, type an asterisk (\*) by itself to see all available values.
+
+   To specify an exclusion, select the **Exclude these users, groups, and domains** checkbox, and then specify users, groups, or domains to exclude.
+
+   When you're finished, select **Next**.
+
+4. On the **Defender for Office 365 protections apply to** page to identify the internal recipients that the [Microsoft Defender for Office 365 protections](#policies-in-preset-security-policies) apply to (recipient conditions).
+
+   Specify users, groups, and domais just like what you did in step 4.
+
+   When you're finished, click **Next**.
+
+5. On the **Review and confirm your changes** page, verify your selections, and then select **Confirm**.
+
+> [!TIP]
+> To learn more about assigning preset security policies, see the following articles:
+> - [Assign preset security policies to users](../security/office-365-security/preset-security-policies.md#assign-preset-security-policies-to-users)
+> - [Recommended settings for email and collaboration content](../security/office-365-security/recommended-settings-for-eop-and-office365.md) (Microsoft 365 Business Premium includes Exchange Online Protection and Microsoft Defender for Office 365 Plan 1)
 
 
 
-<!--https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-worldwide
+<!--
 
 
 ## Raise the level of protection against malware in mail
