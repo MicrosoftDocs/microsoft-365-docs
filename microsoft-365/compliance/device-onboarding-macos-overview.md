@@ -83,10 +83,7 @@ When you want to onboard devices that haven't been onboarded yet, you'll downloa
    > [!NOTE]
    > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
 
-2. Open the Compliance Center settings page and choose **Onboard devices**.
-
-   > [!div class="mx-imgBorder"]
-   > ![enable device management.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+2. Open the Compliance Center settings page and choose **Turn on macOS device monitoring**.
 
 ## Next steps
 
