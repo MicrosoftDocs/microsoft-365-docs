@@ -35,7 +35,7 @@ You took on the defense of your organization's systems, and that's good. You are
 
 Success depends on you completing the assigned missions ahead which are grouped by category of importance. These will allow you to thwart hackers, protect against ransomware, and ensure that your organization’s purpose and potential are not disrupted. Let's get started.
 
-## [Fortify Your eEnvironment](#tab/Fortify)
+## [Fortify Your Environment](#tab/Fortify)
 
 In these first missions, you're going to have to sign in and set up your initial protective walls of defense, starting with account access protections.
 
