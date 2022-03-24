@@ -32,7 +32,7 @@ This article is [Step 2 of 2](eval-defender-mcas-overview.md) in the process of 
 
 This article walks you through the process of accessing the Defender for Cloud Apps portal and configuring the necessary integration to collect cloud app traffic data.
 
-To discover cloud apps used in your environment, you can do implement or both of the following ways:
+To discover cloud apps used in your environment, you can do one of the following:
 
 - Get up and running quickly with Cloud Discovery by integrating with Microsoft Defender for Endpoint. This native integration enables you to immediately start collecting data on cloud traffic across your Windows 10 and Windows 11 devices, on and off your network.
 - To discover all cloud apps accessed by all devices connected to your network, deploy the Defender for Cloud Apps log collector on your firewalls and other proxies. This deployment helps collect data from your endpoints and sends it to Defender for Cloud Apps for analysis. Defender for Cloud Apps natively integrates with some third-party proxies for even more capabilities.
