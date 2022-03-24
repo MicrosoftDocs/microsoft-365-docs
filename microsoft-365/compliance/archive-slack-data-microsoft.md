@@ -72,7 +72,14 @@ The following overview explains the process of using a Microsoft data connector 
 
    After you click **Allow**, the Slack page closes and the **Map Slack eDiscovery users to Microsoft 365 users** page in the connector wizard is displayed.
 
-## Step 3: Map users and select data types to import
+## Step 3: Specify users whose data should be imported:
+
+Select one of the following options to specify users whose data you would like to import.
+1. All Users: Select this option to import all users' data.
+
+2. Users on Legal Hold: Select this option to import data of users who are on litigation hold in your organization.
+
+## Step 4: Map users and select data types to import
 
 1. Configure one or both of the following options to map Slack users to their Microsoft 365 mailboxes.
 
