@@ -91,7 +91,7 @@ Now you're ready to actually purge chat messages from Teams. You'll use the Micr
 
 2. Get the Id of the collection that you created in Step 2 and verified the search results in Step 3. The search query in this collection returns the chat messages that will be purged.
 
-3. Purge the chat messages.
+3. Purge the chat messages returned by the collection.
 
 For information about using Graph Explorer, see [Working with Graph Explorer](/graph/graph-explorer/graph-explorer-features).
 
@@ -112,18 +112,36 @@ For information about using Graph Explorer, see [Working with Graph Explorer](/g
 
    ![Response with case Id.](..\media\GraphResponseForCaseId.png)
 
-4. Copy the corresponding Id (or copy and paste it to a text file). You'll use this Id in the next task.
+4. Copy the corresponding Id (or copy and paste it to a text file). You'll use this Id in the next task to get the collection Id.
 
 > [!TIP]
 > Instead of using the previous procedure to obtain the case Id, you can open the case in the Microsoft 365 compliance center and copy the case Id from the URL.
 
 ### Get the collection Id
 
+1. In Graph Explorer, run the following GET request to retrieve the Id for the collection that you created in Step 2, and contains the items you want to purge. Use the value `https://graph.microsoft.com/beta/compliance/ediscovery/cases('caseId')/sourceCollections` in the address bar of the request query, where CaseId is the Id that you obtained in the previous procedure. Be sure to surround the case Id with parentheses and single quotation marks.
+
+   ![GET request for collection Id.](..\media\GraphGetRequestForCollectionId.png)
+
+   This request returns information about all collections in the case on the **Response preview** tab.
+
+2. Scroll through the response to locate the collection that contains the items that you want to purge. Use the **displayName** property to identify the collection that you created in Step 3.
+
+   ![Response with collection Id.](..\media\GraphResponseForCollectionId.png)
+
+   In the response, the search query from the collection is displayed in the **contentQuery** property. Items returned by this query will be purged in the next task.
+
+3. Copy the corresponding Id (or copy and paste it to a text file). You'll use this Id in the next task to purge the chat messages.
 
 ### Purge the chat messages
 
+1. In Graph Explorer, run the following POST request to purge the items returned by the collection that you created in Step 2. Use the value `https://graph.microsoft.com/beta/compliance/ediscovery/cases('caseId')/sourceCollections('collectionId')/purgeData` in the address bar of the request query, where caseId and collectionId are the Ids that you obtained in the previous procedures. Be sure to surround the Id values with parentheses and single quotation marks.
 
+      ![POST request to delete items returned by the collection.](..\media\GraphPOSTRequestToPurgeItems.png)
 
+   If the POST request is successful, an HTTP response code is displayed in a green banner stating that the request was accepted.
+
+   ![Response for the purge request.](..\media\GraphResponseForPurge.png)
 
 ## Step 6: Verify chat messages are purged
 
