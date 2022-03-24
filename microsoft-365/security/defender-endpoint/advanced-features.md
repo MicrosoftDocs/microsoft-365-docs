@@ -1,6 +1,6 @@
 ---
-title: Configure advanced features at Microsoft Defender for Endpoint
-description: Turn on advanced features such as block file at Microsoft Defender for Endpoint.
+title: Configure advanced features in Microsoft Defender for Endpoint
+description: Turn on advanced features such as block file in Microsoft Defender for Endpoint.
 keywords: advanced features, settings, block file, automated investigation, auto resolve, skype, microsoft defender for identity, office 365, azure information protection, intune
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -126,7 +126,7 @@ During some kinds of cyber attacks, bad actors try to disable security features,
 
 Tamper protection essentially locks Microsoft Defender Antivirus and prevents your security settings from being changed through apps and methods.
 
-This feature is available if your organization uses Microsoft Defender Antivirus and Cloud-based protection is enabled. For more information, see [Use next-generation technologies at Microsoft Defender Antivirus through cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md).
+This feature is available if your organization uses Microsoft Defender Antivirus and Cloud-based protection is enabled. For more information, see [Use next-generation technologies in Microsoft Defender Antivirus through cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md).
 
 Keep tamper protection turned on to prevent unwanted changes to your security solution and its essential features.
 
@@ -181,7 +181,7 @@ Enabling this setting forwards Defender for Endpoint signals to Microsoft Defend
 
 ### Enable the Microsoft Defender for Endpoint integration from the Microsoft Defender for Identity portal
 
-To receive contextual device integration at Microsoft Defender for Identity, you'll also need to enable the feature in the Microsoft Defender for Identity portal.
+To receive contextual device integration in Microsoft Defender for Identity, you'll also need to enable the feature in the Microsoft Defender for Identity portal.
 
 1. Log in to the [Microsoft Defender for Identity portal](https://portal.atp.azure.com/) with a Global Administrator or Security Administrator role.
 
