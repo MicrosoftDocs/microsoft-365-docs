@@ -6,7 +6,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: 
   - M365-security-compliance
   - m365initiative-defender-office365
@@ -226,15 +226,10 @@ On the **Landing page** page, you configure the web page that user are taken to 
 
 - **Select landing page preference**: The available values depend on your previous selections on the [Select payloads](#select-payloads) page as described in the following table:
 
-  <br>
-
-  ****
-
   |Selection on Select payloads page|Available values for Select landing page preference|
   |---|---|
   |Manually select|Use Microsoft default landing page <p> Create your own landing page <p> Use a custom URL <p> **Note**: The **Use a custom URL** value is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.|
   |Randomize|Use Microsoft default landing page|
-  |
 
   The available **Select landing page preference** values and their associated settings are described in the following list:
 
@@ -243,7 +238,7 @@ On the **Landing page** page, you configure the web page that user are taken to 
     You need to configure the following additional settings on the **Landing page** page:
 
     - **Select landing page layout**: Select one of the 5 available landing page templates.
-    - **Add logo**: Click **Browse** to find and select a .png, .jpeg, or .gif file to add to all payloads that are selected by Microsoft. To remove the logo, click **Remove**.
+    - **Add logo**: Click **Browse** to find and select a .png, .jpeg, or .gif file to add to all payloads that are selected by Microsoft. The logo size should be a maximum of 210 x 70 to avoid distortion. To remove the logo, click **Remove**.
     - **Payload indicators**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.
 
       Select **Add payload indicators to email** to help users learn how to identify phishing messages.
@@ -254,19 +249,20 @@ On the **Landing page** page, you configure the web page that user are taken to 
 
     You need to configure the following additional settings on the **Landing page** page:
 
-    - **Payload indicators**: This setting is not available if you previously selected **Malware attachment** or **Link to malware** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.
-
-      Select **Add payload indicators to email** to help users learn how to identify phishing messages.
+    - **Payload indicators**:  This setting is available to select only if both of the following conditions are true:
+      - You previously selected **Credential harvest**, **Link in attachment**, or **Drive-by URL** on the [Select social engineering techniques](#select-one-or-more-social-engineering-techniques) page.
+      - After you add the **Dynamic tag** named **Insert email content** into the page content.
 
     - Page content: Two tabs are available:
 
       - **Text**: A rich text editor is available to create your landing page. In addition to the typical font and formatting settings, the following settings are available:
         - **Dynamic tag**: Select from the following tags:
-          - **Username**
-          - **Email sender name**
-          - **Sender email address**
-          - **Email subject**
-          - **Email content**
+          - **Insert name**
+          - **Insert sender name**
+          - **Insert sender email**
+          - **Insert email subject**
+          - **Insert email content**
+          - **Insert date**
         - **Use from default**: Select one of the 5 available landing page templates to start with. You can modify the text and layout in the editing area. To reset the landing page back to the default text and layout of the template, click **Reset to default**.
         - **Training link**: In the **Name training URL** dialog that appears, enter a link title for the training link, and then click **Confirm** to add the link to the landing page.
       - **Code**: You can view and modify the HTML code directly.

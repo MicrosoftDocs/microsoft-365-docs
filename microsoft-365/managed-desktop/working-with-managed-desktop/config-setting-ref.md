@@ -15,6 +15,9 @@ ms.topic: article
 
 This article lists the settings categories that customers can configure with Microsoft Managed Desktop. Each setting category includes information on requirements, best practices, and how to customize the setting category.
 
+> [!NOTE]
+> This page contains information for commonly requested settings. It applies to the legacy Edge browser.
+
 ## Desktop background picture
 
 You can customize the desktop background picture for Microsoft Managed Desktop devices in your organization. You might use the desktop background picture to apply a company brand or marketing material.
@@ -61,7 +64,7 @@ You must provide the fully qualified domain name (FQDN) for intranet or Internet
 
 If you have specific websites and apps that have compatibility problems with Microsoft Edge, you can use the Enterprise Mode site list to automatically open the websites in Internet Explorer 11. Also, if you know your intranet sites don't work correctly with Microsoft Edge, you can set all intranet sites to open automatically in Internet Explorer 11.
 
-Using Enterprise Mode means you can continue to use Microsoft Edge as your default browser, while also ensuring that your apps continue working in Internet Explorer 11. For more information on enterprise mode site lists,see [Enterprise Mode and Enterprise Mode Site Lists](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode).
+Using Enterprise Mode means you can continue to use Microsoft Edge as your default browser, while also ensuring that your apps continue working in Internet Explorer 11. For more information on enterprise mode site lists, see [Enterprise Mode and Enterprise Mode Site Lists](/internet-explorer/ie11-deploy-guide/what-is-enterprise-mode).
 
 You can specify an `https://` location, or the location for an internal share where you’ve hosted your enterprise mode site list.
 
@@ -79,7 +82,7 @@ These best practices are offered to help customers make decisions to modernize t
 
 | Practice | Description |
 | ------ | ------ |
-| Choose a limited number of sites | Microsoft Managed Desktop uses Microsoft Edge as the preferred browser to improve overall security for your organization and usability for your users. Most sites in this list are for legacy web apps that need an older version of a browser that won't include as many security features. |
+| Choose a limited number of sites | Microsoft Managed Desktop uses Microsoft Edge as the preferred browser to improve overall security for your organization and usability for your users. Most sites in this list are for legacy web apps that need an older version of a browser. It won't include as many security features. |
 | Consider an alternate | Consider a different site, or web app that doesn't require an older browser. Or, consider updating the site so that it can use newer browsers. Newer browsers use the latest technology and help improve security. |
 
 ### Customize and deploy Enterprise site mode list location
@@ -142,6 +145,7 @@ These requirements must be met for proxy server and proxy site exceptions:
 
 - Must be a valid server address and port number.
 - URLs must be a valid http site.
+- Proxy exceptions should be limited to a maximum of 2064 characters. This includes added Microsoft Managed Desktop addresses.
 
 ### Customize and deploy proxies
 

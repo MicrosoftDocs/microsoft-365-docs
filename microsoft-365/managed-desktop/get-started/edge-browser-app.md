@@ -71,7 +71,7 @@ The security baseline for Microsoft Edge on Microsoft Managed Desktop devices se
 
 | Setting | Default value | Description
 | ------ | ------ | ------ |
-| Enable saving passwords to the password manager | Disabled | The password manager is disabled by default. If you'd like this feature enabled, file a support request and our service engineers can enable the setting in your environment. |
+| Enable saving passwords to the password manager | Disabled | The password manager is disabled by default. If you'd like this feature enabled, file a support request and our engineers can enable the setting in your environment. |
 
 ### Internet Explorer Mode in Microsoft Edge
 
