@@ -50,8 +50,48 @@ Allow senders (or domains) on the **Submissions** page in Microsoft 365 Defender
 
 7. When you're finished, click the **Submit** button.
 
+> ![Submit malware to Microsoft for analysis example.](../../media/admin-submission-allow-messages.png)
+## Add URL allows using the Submissions portal
+
+Allow URLs on the **Submissions** page in Microsoft 365 Defender.
+
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+
+2. On the **Submissions** page, select the **URLs** tab, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+
+3. Use the **Submit to Microsoft for review** flyout to submit a message by adding the URL.
+
+4. In the **Select a reason for submitting to Microsoft** section, select **Should not have been blocked (false positive)**.
+
+5. Turn on the **Allow URLs like this** option.
+
+6. From the **Remove after** drop-down list, specify for how long you want the allow option to work.
+
+7. When you're finished, click the **Submit** button.
+
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/admin-submission-allow-messages.png" alt-text="The False positive submission example" lightbox="../../media/admin-submission-allow-messages.png":::
+> ![Submit URL for analysis.](../../media/submit-url-for-analysis.png)
+## Add File allows using the Submissions portal
+
+Allow Files  on the **Submissions** page in Microsoft 365 Defender.
+
+In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Actions & submissions** \> **Submissions**. Or, to go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>.
+
+2. On the **Submissions** page, select the **Email attachments** tab, and then click ![Submit to Microsoft for analysis icon.](../../media/m365-cc-sc-create-icon.png) **Submit to Microsoft for analysis**.
+
+3. Use the **Submit to Microsoft for review** flyout to submit a message by adding the file or files.
+
+4. In the **Select a reason for submitting to Microsoft** section, select **Should not have been blocked (false positive)**.
+
+5. Turn on the **Allow files like this** option.
+
+6. From the **Remove after** drop-down list, specify for how long you want the allow option to work.
+
+7. When you're finished, click the **Submit** button.
+
+> [!div class="mx-imgBorder"]
+> ![Submit email for analysis.](../../media/submit-email-for-analysis.png)
+
 
 ## Create spoofed sender allow entries using Microsoft 365 Defender
 
