@@ -53,7 +53,7 @@ We've included a set of missions here with some objectives that need to be compl
 
 [**Collaborate and share securely**](m365bp-collaborate-share-securely.md). The objectives of this mission require you to set up secure file sharing for all members of the organization.
 
-## [Safeguard Managed Devices](#tab/Safeguard Managed Devices)
+## [Safeguard Managed Devices](#tab/Safeguard)
 
 A safe device is one that is monitored by the organization. In this last critical mission, you will onboard and enroll devices in Microsoft Defender for Business so they are secured and protected with the best tools available.
 
