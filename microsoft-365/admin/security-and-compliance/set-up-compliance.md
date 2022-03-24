@@ -57,7 +57,9 @@ Here's how to get started:
 
    :::image type="content" source="../../business-premium/media/m365bp-dlppoliciestoconfigure.png" alt-text="Screenshot of DLP policies to configure.":::
 
-4. On the Improvement actions tab, 
+4. On the **Improvement actions** tab, select an item. In our example, we've selected **Create customized DLP policies or personally identifiable information**. A page loads that provides more information about the policy to configure.
+
+   :::image type="content" source="../../business-premium/media/m365bp-dlppolicyinfo.png" alt-text="Screenshot of information about DLP policy for PII.":::
 
 ## 
 
