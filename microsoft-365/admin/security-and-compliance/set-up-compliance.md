@@ -41,7 +41,7 @@ To learn more, see [Get started with the roles page](../add-users/admin-roles-pa
 
 :::image type="content" source="../../business-premium/media/m365bp-compliancemanager.png" alt-text="Screenshot of Compliance Manager in Microsoft 365 Business Premium.":::
 
-Microsoft 365 Business Premium includes Compliance Manager, which can help you get started setting up your compliance features (such as data loss prevention, information governance, and insider risk management, to name a few). Compliance Manager can save you time by highlighting recommendations, a compliance score, and ways to improve your score.
+Microsoft 365 Business Premium includes Compliance Manager, which can help you get started setting up your compliance features. Such features include data loss prevention, information governance, and insider risk management, to name a few. Compliance Manager can save you time by highlighting recommendations, a compliance score, and ways to improve your score.
 
 Here's how to get started:
 
@@ -53,7 +53,7 @@ Here's how to get started:
 
    :::image type="content" source="../../business-premium/media/m365bp-compliancesolutions.png" alt-text="Screenshot of Solutions That Affect Your Score pane.":::
 
-   That action takes you to the **Improvement actions** tab, which is filtered for the item you selected. In this example we are looking at DLP policies to configure.
+   That action takes you to the **Improvement actions** tab, which is filtered for the item you selected. In this example we're looking at DLP policies to configure.
 
    :::image type="content" source="../../business-premium/media/m365bp-dlppoliciestoconfigure.png" alt-text="Screenshot of DLP policies to configure.":::
 
