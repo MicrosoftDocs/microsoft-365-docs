@@ -23,7 +23,7 @@ ms.technology: mdo
 ---
 # Zero Trust identity and device access configurations
 
-Security architectures that rely on network firewalls and virtual private networks (VPNs) to isolate and restrict access to an organization’s technology resources and services are no longer sufficient for a workforce that regularly requires access to applications and resources that exist beyond traditional corporate network boundaries.
+Security architectures that rely on network firewalls and virtual private networks (VPNs) to isolate and restrict access to an organization's technology resources and services are no longer sufficient for a workforce that regularly requires access to applications and resources that exist beyond traditional corporate network boundaries.
 
 To address this new world of computing, Microsoft highly recommends the Zero Trust security model, which is based on these guiding principles:
 
@@ -33,7 +33,7 @@ To address this new world of computing, Microsoft highly recommends the Zero Tru
 
 - Use least privilege access
 
-  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.	
+  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
 
 - Assume breach
 
