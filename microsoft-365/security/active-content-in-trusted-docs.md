@@ -7,8 +7,8 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: tutorial
-ms.service: O365-seccomp
 ms.localizationpriority: medium
+ms.prod: m365-security
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -64,7 +64,7 @@ Trusted documents are Office documents that open without any security prompts fo
 
 Because of this behavior, users should clearly trust documents only if they trust the document source.
 
-If an admin blocks active content by using a policy, or if users set a Trust Center setting that blocks active content, the the active content will remain blocked.
+If an admin blocks active content by using a policy, or if users set a Trust Center setting that blocks active content, the active content will remain blocked.
 
 For more information, see the following articles:
 
@@ -92,7 +92,7 @@ There's a big difference in the level of trust in internally created content vs.
 
 If your users don't need specific types of active content, your most secure option is to use policies to turn off user access to that active content, and allow exceptions as needed.
 
-The following policies are are available:
+The following policies are available:
 
 - **Turn off Trusted Locations**: Exceptions for groups available.
 - **Turn off Trusted Documents**: Exceptions for groups available.

@@ -11,7 +11,7 @@ ms.topic: conceptual
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
-localization_priority: Priority
+ms.localizationpriority: high
 ms.collection:
 - M365-security-compliance
 - m365solution-mip
@@ -25,12 +25,12 @@ description: "Onboard Windows 10 and Windows 11 devices into Microsoft 365"
 
 **Applies to:**
 
-- [Microsoft 365 Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
 - [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
 
-Microsoft 365 Endpoint data loss prevention (Endpoint DLP) and insider risk management require that Windows 10 Windows and Windows 11 devices be onboarded into the service so that they can send monitoring data to the services.
+Endpoint data loss prevention (Endpoint DLP) and insider risk management require that Windows 10 Windows and Windows 11 devices be onboarded into the service so that they can send monitoring data to the services.
  
-Microsoft 365 Endpoint DLP allows you to monitor Windows 10 or Windows 11 devices and detect when sensitive items are used and shared. This gives you the visibility and control you need to ensure that they are used and protected properly, and to help prevent risky behavior that might compromise them. For more information about all of Microsoft’s DLP offerings, see [Learn about data loss prevention](dlp-learn-about-dlp.md). To learn more about Endpoint DLP, see [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md).
+Endpoint DLP allows you to monitor Windows 10 or Windows 11 devices and detect when sensitive items are used and shared. This gives you the visibility and control you need to ensure that they are used and protected properly, and to help prevent risky behavior that might compromise them. For more information about all of Microsoft’s DLP offerings, see [Learn about data loss prevention](dlp-learn-about-dlp.md). To learn more about Endpoint DLP, see [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md).
 
 Insider risk management uses the full breadth of service and 3rd-party indicators to help you quickly identify, triage, and act on risky user activity. By using logs from Microsoft 365 and Microsoft Graph, insider risk management allows you to define specific policies to identify risk indicators and to take action to mitigate these risks. For more information, see [Learn about insider risk management in Microsoft 365](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365).
 
@@ -115,10 +115,7 @@ In this deployment scenario, you'll onboard Windows 10 or Windows 11 devices tha
    > [!NOTE]
    > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
 
-2. Open the Compliance Center settings page and choose **Onboard devices**.
-
-   > [!div class="mx-imgBorder"]
-   > ![enable device management.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+2. Open the Compliance Center settings page and choose **Turn on Windows device monitoring**.
 
 3. Choose **Device management** to open the **Devices** list. 
 
