@@ -35,17 +35,17 @@ You took on the defense of your organization's systems, and that's good. You are
 
 Success depends on you completing the assigned missions ahead which are grouped by category of importance. These will allow you to thwart hackers, protect against ransomware, and ensure that your organization’s purpose and potential are not disrupted. Let's get started.
 
-## Fortify your environment
+## [Fortify](#tab/Fortify) your environment
 
-In these first missions, you must sign in and set up your initial protective walls of defense, starting with account access protections.
+In these first missions, you're going to have to sign in and set up your initial protective walls of defense, starting with account access protections.
 
 [**Set up your environment**](m365bp-setup-overview.md). In this first mission, you set up and implement security across all accounts in the system.
 
-[**Bump up security protection**](m365bp-security-overview.md). Set up a number of security safeguards to protect your organization. 
+[**Bump up security protection**](m365bp-security-overview.md). Set up a number of critical security safeguards to protect your organization. 
 
-## Train your team
+## [Train](#tab/Train) your team
 
-In the collection of training missions that follow, members of the organization that are on the front-line must set up protection, email and file sharing on all their devices. 
+We've included a set of missions here with some objectives that need to be completed by your team. You have to make sure the team's devices are protected, as well as that the team is trained to use email and file sharing safely, and to recognize and report threats. 
 
 [**Set up BYOD devices**](m365bp-protect-pcs-macs.md). In this mission, you set up all the unmanaged (BYOD) devices so they are safely part of the ecosystem.
 
