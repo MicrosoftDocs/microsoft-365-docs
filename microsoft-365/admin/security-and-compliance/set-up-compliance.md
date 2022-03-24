@@ -2,8 +2,8 @@
 title: "Increase threat protection for Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
+ms.author: deniseb
+author: denisebmsft
 manager: scotv
 audience: Admin
 ms.topic: article
