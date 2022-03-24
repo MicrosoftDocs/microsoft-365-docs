@@ -43,7 +43,7 @@ The Overview tab also includes the following options:
 - **Export:** Select to export Cloud PC data to an Excel comma-separated values (.csv) file.
 - **Search:** Enter keywords to quickly locate a specific Cloud PC in the list.
 
-:::image type="content" source="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png" alt-text="Screenshot of the Windows 365 Overview tab.":::
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png" alt-text="Screenshot of the Windows 365 Overview tab." lightbox="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png":::
 
 ## All Cloud PCs tab
 
@@ -71,7 +71,7 @@ The All Cloud PCs tab also includes the following options:
 
 To see a complete list of Cloud PC provisioning statuses and what they mean, see [Device management overview for Cloud PCs](/windows-365/enterprise/device-management-overview#column-details) in the Windows 365 documentation library.
 
-:::image type="content" source="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png" alt-text="Screenshot of the Windows 365 All Cloud PCs tab.":::
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png" alt-text="Screenshot of the Windows 365 All Cloud PCs tab." lightbox="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png":::
 
 ## Azure network connections tab
 
@@ -89,7 +89,7 @@ The Azure network connections tab also includes the following options:
 - **Export:** Select to export connection data to an Excel comma-separated values (.csv) file.
 - **Search:** Enter keywords to quickly locate a specific connection.
 
-:::image type="content" source="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png" alt-text="Screenshot of the Azure network connections tab.":::
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png" alt-text="Screenshot of the Azure network connections tab." lightbox="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png":::
 
 ## Related content
 
