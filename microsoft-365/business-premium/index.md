@@ -57,7 +57,7 @@ We've included a set of missions here with some objectives that need to be compl
 
 A safe device is one that is monitored by the organization. In this last critical mission, you will onboard and enroll devices in Microsoft Defender for Business, so they are secured and protected with the best tools available.
 
-[**Set up and secure managed devices**](m365bp-managed-devices-setup.md). 
+[**Set up and secure managed devices**](m365bp-protect-devices.md). Get those devices monitored and protected by the organization. 
 
 >[!NOTE]
 >There are times when a side quest takes you away from the mission at-hand. When this happens, do not abandon your mission but instead, return and carry on. It's for the good of the org!
