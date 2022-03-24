@@ -56,7 +56,7 @@ If you ran the PowerShell command from the previous section, you can alternative
 
 For example:
 
-![Configure a retention label to mark content as a record or regulatory.](../media/recordversioning6.png)
+![Configure a retention label to mark content as a record or regulatory.](../media/declare-records.png)
 
 Using this retention label, you can now apply it to SharePoint or OneDrive documents and Exchange emails, as needed.
 
