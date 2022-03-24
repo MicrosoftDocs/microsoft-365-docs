@@ -38,6 +38,8 @@ Success depends on you completing the assigned missions ahead which are grouped 
 >[!NOTE]
 >There are times when a side quest takes you away from the mission at-hand. When this happens, do not abandon your mission but instead, return and carry on for the good of the org!
 
+Okay. Let's get started with your [first mission](m365bp-setup-overview.md).
+
 ## [Fortify Your Environment](#tab/Fortify)
 
 In these first missions, you're going to have to sign in and set up your initial protective walls of defense, starting with account access protections.
@@ -61,8 +63,6 @@ We've included a set of missions here with some objectives that need to be compl
 A safe device is one that is monitored by the organization. In this last critical mission, you will onboard and enroll devices in Microsoft Defender for Business, so they are secured and protected with the best tools available.
 
 [**Set up and secure managed devices**](m365bp-protect-devices.md). Get those devices monitored and protected by the organization. 
-
-Okay. Let's get started with your [first mission](m365bp-setup-overview.md).
 
 :::image type="content" source="media/m365-whatisit-securityfocus2.png" alt-text="Microsoft 365 Business Premium protects your apps, file storage, email, devices, and identities.":::
 
