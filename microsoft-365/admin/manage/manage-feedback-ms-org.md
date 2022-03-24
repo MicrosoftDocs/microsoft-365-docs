@@ -64,10 +64,10 @@ Your devices must be on a minimum build number to use these policies. See the ta
 
 |**Build #**|**Win32**|**iOS**|**Android**|**Mac**|**Web**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|In-product feedback|At least 16.0.13328|At least 2.42|At least 16.0.13328|At least 16.42|Publicly available|
-|In-product surveys|At least 16.0.13328|At least 2.42|At least 16.0.13426|At least 16.42|Pending rollout|
-|Metadata collection|At least 16.0.13328|At least 2.42|At least 16.0.13328|At least 16.42|Publicly available|
-|Customer engagement|At least 16.0.13328|At least 2.42|At least 16.0.13426|At least 16.42|Pending rollout|
+|In-product feedback|At least Version 2010|At least 2.42|At least 16.0.13328|At least 16.42|Publicly available|
+|In-product surveys|At least Version 2010|At least 2.42|At least 16.0.13426|At least 16.42|Pending rollout|
+|Metadata collection|At least Version 2010|At least 2.42|At least 16.0.13328|At least 16.42|Publicly available|
+|Customer engagement|At least Version 2010|At least 2.42|At least 16.0.13426|At least 16.42|Pending rollout|
 
 ## Specific policies you can configure
 
@@ -83,19 +83,11 @@ Your devices must be on a minimum build number to use these policies. See the ta
 
 ## Configure policies
 
-1. Go to [https://config.office.com](https://config.office.com) and login.
-1. Select **Customization** then **Policy Management**.
-1. Select **Create**.
-1. Enter **name** and **description**.
-1. Choose the Azure Active directory groups that you want to configure.
-1. Search for **Feedback** and **Survey**.
-1. For each policy listed, set the value you want.
-
-For more information, see [Overview of the Office cloud policy service](/deployoffice/overview-office-cloud-policy-service).
+To configure these policy settings, you can use the Office cloud policy service. For more information, see [Overview of the Office cloud policy service](/deployoffice/overview-office-cloud-policy-service). You can search for "feedback" or "survey" within the Office cloud policy service UI to find the policy settings to configure them. 
 
 These policy settings are also available if you use Group Policy. To use these policy settings, download at least version 5146.1000 of the [Administrative Template files (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030), released on March 22, 2021.
 
-You can find these policy settings under User Configuration -> Policies -> Administrative Templates -> Microsoft Office 2016 -> Privacy -> Trust Center.
+You can find these policy settings under User Configuration\Policies\Administrative Templates\Microsoft Office 2016\Privacy\Trust Center.
 
 > [!NOTE]
 > It takes a few hours for the client applications to update.
