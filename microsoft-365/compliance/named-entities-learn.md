@@ -45,16 +45,16 @@ Bundled named entity SITs detect all possible matches. Use them as broad criteri
 
 Unbundled named entity SITs have a narrower focus, like a single country. Use them when you need a DLP policy with a narrower detection scope.
  
-Here are some examples of named entity SITs. You can find all 52 of them in the **Compliance Center > Data classification > Sensitive info types**.
+Here are some examples of named entity SITs. You can find all of them in [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
 
 |Named Entity |Description  |Bundled/Unbundled  |
 |---------|---------|---------|
 |All full names    |will detect all possible matches of full names         |   bundled      |
 |All physical addresses    |will detect all possible matches of physical addresses     | bundled |
 |All medical terms and conditions    |will detect all possible matches of medical terms and conditions |bundled |
-|Australia Physical Addresses |  Detects patterns related to physical addresses from Australia. |unbundled |
-|Blood Test Terms     |Detects terms related to blood tests, such as 'hCG'. English terms only.      |unbundled |
-|Brand Medication Names     |Detects names of brand medication, such as 'Tylenol'. English terms only.         |unbundled |
+|Australia Physical Addresses |  Detects patterns related to physical addresses from Australia. Included in All physical addresses SIT. |unbundled |
+|Blood Test Terms     |Detects terms related to blood tests, such as 'hCG'. English terms only. Included in All medical terms and conditions SIT      |unbundled |
+|Brand Medication Names     |Detects names of brand medication, such as 'Tylenol'. English terms only. Included in All medical terms and conditions.         |unbundled |
 
 ## Examples of enhanced DLP policies
 

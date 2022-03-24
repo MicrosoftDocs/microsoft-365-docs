@@ -23,18 +23,11 @@ description: "Use these procedures to take advantage of named entities in your d
 > [!IMPORTANT]
 > The named entities feature is rolling out and will appear in your tenant when it is available to you. Check for them in content explorer and in the data loss prevention (DLP) policy authoring flow. 
 
-Read through [Learn about named entities (preview)](named-entities-learn.md) before you start to use them.
+Read through [Learn about named entities](named-entities-learn.md) before you start to use them.
 
 ## Before you begin
 
 ### SKU/subscriptions licensing
-
-You have to have one of these subscriptions
-
-- Information Protection and Governance
-- Microsoft 365 E5 Compliance
-- Office 365 E5
-- Microsoft 365 E5
 
 For full licensing details see, [the service description](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection-data-classification-analytics-overview-content--activity-explorer).
 
@@ -50,7 +43,7 @@ You can use named entity SITs and enhanced policies to detect and protect sensit
 - SharePoint sites
 - OneDrive accounts
 - Teams chat and channel messages
-- Devices (Windows 10 endpoint devices)
+- Devices (Windows 10, and 11 endpoint devices)
 
 Named entity SITs and enhanced policies are not supported for:
 
@@ -65,7 +58,7 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 ## Workloads and services that support named entities
 
 
-- **Microsoft 3655 eDiscovery** supports the use of named entities in Substrate services.
+- **Microsoft 365 eDiscovery** supports the use of named entities in Substrate services.
 - **Microsoft Defender for Cloud Apps** supports the use of named entities in Defender for Cloud Apps policies.
 - **Insider Risk Management** supports the use of named entities in Substrate services.
 - **Communication Compliance** doesn't support the use of named entities in Exchange transport rules and data-at-rest.
@@ -73,13 +66,13 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
  
 ### Unified DLP
 
-|Workload/Services  |Public Preview Support for Named Entities  |
+|Workload/Services  |Support for Named Entities  |
 |---------|---------|
 |Office Win32 clients policy tip    |not supported  |
 |Office WAC clients policy tip    |supported         |
 |OWA policy tip     |not supported         |
 |Outlook policy tip     |not supported |
-|Endpoints (Windows 10 devices)     |supported  |
+|Endpoints (Windows 10, and 11 devices)     |supported  |
 |Exchange Transport rules     |not supported |
 |OneDrive for Business data-at-rest     |supported         |
 |SharePoint Online data-at-rest     |supported         |
@@ -89,7 +82,7 @@ To create or edit a DLP policy, use the procedures in [Create, test, and tune a 
 
 ### Autolabeling
 
-|Workload/Services |Public Preview Support for Named Entities  |
+|Workload/Services |Support for Named Entities  |
 |---------|---------|
 |Office Win32 clients offline   |supported, user must select label and manually apply |
 |Online Office Win32 clients online|supported with old confidence scheme |
