@@ -38,8 +38,6 @@ Success depends on you completing the assigned missions ahead which are grouped 
 >[!NOTE]
 >There are times when a side quest takes you away from the mission at-hand. When this happens, do not abandon your mission but instead, return and carry on for the good of the org!
 
-Okay. Let's get started with your [first mission](m365bp-setup-overview.md).
-
 ## [Fortify Your Environment](#tab/Fortify)
 
 In these first missions, you're going to have to sign in and set up your initial protective walls of defense, starting with account access protections.
