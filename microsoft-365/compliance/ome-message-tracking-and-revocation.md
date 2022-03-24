@@ -18,4 +18,4 @@ search.appverid:
 description: "OME auditing enables tracking and revocation of encrypted messages."
 ---
 
-# OME message tracking and revocation
+# Office 365 Message Encryption message tracking and revocation
