@@ -61,44 +61,27 @@ Here's how to get started:
 
    :::image type="content" source="../../business-premium/media/m365bp-dlppolicyinfo.png" alt-text="Screenshot of information about DLP policy for PII.":::
 
-## 
+   Follow the information on the screen to set up your DLP policy.
 
-See [Create a DLP policy from a template](../../compliance/create-a-dlp-policy-from-a-template.md) for an example on how to set up a policy to protect against protect loss of personal data. 
-  
-DLP comes with many ready-to-use policy templates for many different locales. For example, Australia Financial Data, Canada Personal Information Act, U.S. Financial Data, and so on. See [What the DLP policy templates include](../../compliance/what-the-dlp-policy-templates-include.md) for a full list. All of these templates can be enabled similar to the PII template example.
- 
-## Set up email retention with Exchange Online Archiving
+For more information about compliance features in Microsoft 365 for business, see [Microsoft 365 compliance documentation](../../compliance/index.yml).
 
- **Exchange Online Archiving** license features help maintain compliance and regulatory standards by preserving email content for eDiscovery. It also helps reduce your risk if there is a lawsuit, and provides a way to recover data after a security breach or when you need to recover deleted items. You can use litigation hold to preserve all of a user's content, or use retention policies to customize what you want to preserve.
-  
-**Litigation hold:** You can preserve all mailbox content including deleted items by putting a user's entire mailbox on litigation hold. 
-    
-To place a mailbox on litigation hold, in the Admin center:
-    
-1. In the left nav, go to **Users** \> **Active users**.
-    
-2. Select a user whose mailbox you want to place on litigation hold. In the user pane, expand **Mail settings**, and next to **More settings**, choose **Edit Exchange properties**.
-    
-3. On the mailbox page for the user, choose ** mailbox features ** on the left nav, and then choose the **Enable** link under **Litigation hold**.
-    
-4. In the **litigation hold** dialog box, you can specify the litigation hold duration in the **Litigation hold duration** field. Leave the field empty if you want to place an infinite hold. You can also add notes and direct the mailbox owner to a website you might have to explain more about the litigation hold. \> **Save**.
-    
-**Retention:** You can enable customized retention policies, for example, to preserve for a specific amount of time or delete content permanently at the end of the retention period. To learn more, see [Overview of retention policies](../../compliance/retention.md).
+## Use sensitivity labels
 
-## Watch: Set up Sensitivity labels
+Sensitivity labels are available in Office apps (such as Outlook, Word, Excel, and PowerPoint). Examples of labels include:
 
-Sensitivity labels come with Azure Information Protection (AIP) Plan 1, and help you classify, and optionally protect your documents and emails, by applying labels. Labels can be applied automatically by administrators who define rules and conditions, manually by users, or by using a combination where users are given recommendations.
+- Normal
+- Personal
+- Private
+- Confidential
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3VRGT?autoplay=false]
+However, you can define other labels for your company as well.
 
-1. In the [admin center](https://admin.microsoft.com), select the **Compliance** admin center.
-1. Select **Classification**, and then **Sensitivity labels**.
-1. Select **Create a label**, and when the warning appears, select **Yes**.
-1. Review your settings, and select **Create**. Your label has been created. Repeat this process for any additional labels you want.
-1. By default, labels appear in Office apps in this order: **Confidential**, **Internal**, and **Public**. To change the order, for each label, select the three dots (more actions), and then move the label up or down. Typically, permissions are listed from the lowest to highest level of permissions.
-1. Review your settings, then select **Publish**.
+Use the following articles to get started with sensitivity labels:
 
-For your labels to work, each user needs to download the Azure Information Protection unified labeling client. Search the web for **AzinfoProtection_UL.exe**, then download it from the Microsoft Download Center, and run it on your users' computers.
+1. [What are sensitivity labels?](../../compliance/sensitivity-labels.md)
 
-The next time you open an Office app like Word, you'll see the sensitivity labels that were created. To change or apply a label, select Sensitivity, and choose a label.
+2. [Get started creating your sensitivity labels](../../compliance/get-started-with-sensitivity-labels.md)
 
+3. [Publish sensitivity labels and their policies](../../compliance/create-sensitivity-labels.md)
+
+4. [Show people in your company how to use sensitivity labels](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
