@@ -26,7 +26,7 @@ description: "Set up compliance features to prevent data loss and help keep your
 ---
 # Set up compliance features
 
-Your Microsoft 365 Business Premium comes with compliance and privacy features to help protect your company's data, and to help you keep your and your customers' sensitive information secure. This article provides information to help you get started with your compliance features in Microsoft 365 Business Premium.
+Your Microsoft 365 Business Premium subscription includes compliance and privacy features. These capabilities help protect your company's data, and to help you keep your and your customers' sensitive information secure. This article is designed to help you get started with your compliance features.
 
 ## Before you begin
 
@@ -59,7 +59,7 @@ Here's how to get started:
 
 4. On the **Improvement actions** tab, select an item. In our example, we've selected **Create customized DLP policies or personally identifiable information**. A page loads that provides more information about the policy to configure.
 
-   :::image type="content" source="../../business-premium/media/m365bp-dlppolicyinfo.png" alt-text="Screenshot of information about DLP policy for PII.":::
+   :::image type="content" source="../../business-premium/media/m365bp-dlppolicyinfo.png" alt-text="Screenshot of information about DLP policy for customer content.":::
 
    Follow the information on the screen to set up your DLP policy.
 
