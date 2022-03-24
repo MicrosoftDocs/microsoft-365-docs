@@ -26,7 +26,13 @@ search.appverid:
 description: "Learn how security recommendations for Microsoft 365 Business Premium affect your users and protect your data."
 ---
 
-# How Microsoft 365 protects your business
+# How Microsoft 365 Business Premium helps your business
+
+## Features
+
+(FEATURES OF BP HERE)
+
+## Train your users
 
 The security recommendations provided here make it much harder for cyber attackers to gain access to your environment. As the one responsible for the integrity of the network, your front line is the members of the org who use the systems regularly. The tradeoff is your users need to be aware of how to work within and maintain a more secure environment. Training these front-line users in proper safeguarding and maintenance of the network plays a big part in overall security. We understand a little extra patience is required, but it's worth it to keep the organization protected. 
 
