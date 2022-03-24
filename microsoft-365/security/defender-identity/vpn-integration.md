@@ -8,6 +8,7 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
+ms.collection: M365-security-compliance
 ---
 
 # Defender for Identity VPN integration in Microsoft 365 Defender

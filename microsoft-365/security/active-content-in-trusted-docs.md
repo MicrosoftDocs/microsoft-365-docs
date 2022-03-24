@@ -7,8 +7,8 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: tutorial
-ms.service: O365-seccomp
 ms.localizationpriority: medium
+ms.prod: m365-security
 ms.collection:
 - M365-security-compliance
 search.appverid:

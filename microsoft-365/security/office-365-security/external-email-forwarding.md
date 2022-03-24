@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 11/17/2021
 audience: ITPro
 ms.topic: overview
-
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: 
 ms.custom: 
@@ -61,16 +61,11 @@ As an admin, you might have already configured other controls to allow or block 
 
 When one setting allows external forwarding, but another setting blocks external forwarding, the block typically wins. Examples are described in the following table:
 
-<br>
-
-****
-
 |Scenario|Result|
 |---|---|
 |<ul><li>You configure remote domain settings to allow automatic forwarding.</li><li>Automatic forwarding in the outbound spam filter policy is set to **Off**.</li></ul>|Automatically forwarded messages to recipients in the affected domains are blocked.|
 |<ul><li>You configure remote domain settings to allow automatic forwarding.</li><li>Automatic forwarding in the outbound spam filter policy is set to **Automatic - System-controlled**.</li></ul>|Automatically forwarded messages to recipients in the affected domains are blocked. <p> As described earlier, **Automatic - System-controlled** used to mean **On**, but the setting has changed over time to mean **Off** in all organizations. <p> For absolute clarity, you should configure your outbound spam filter policy to **On** or **Off**.|
 |<ul><li>Automatic forwarding in the outbound spam filter policy is set to **On**</li><li>You use mail flow rules or remote domains to block automatically forwarded email.</li></ul>|Automatically forwarded messages to affected recipients are blocked by mail flow rules or remote domains.|
-|
 
 You can use this behavior (for example) to allow automatic forwarding in outbound spam filter policies, but use remote domains to control the external domains that users can forward messages to.
 

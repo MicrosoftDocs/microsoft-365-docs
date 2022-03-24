@@ -35,10 +35,6 @@ Microsoft Defender for Office 365 safeguards your organization against malicious
 
 A Microsoft Defender for Office 365 trial is an easy way to try out the capabilities of Defender for Office 365 Plan 2 for free, after only a few clicks. These high level capabilities are described in the following table:
 
-<br>
-
-****
-
 |Feature|Description|
 |---|---|
 |[Exclusive settings in anti-phishing policies](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|Get user impersonation protection, domain impersonation protection, mailbox intelligence, and advanced phishing thresholds.|
@@ -51,7 +47,6 @@ A Microsoft Defender for Office 365 trial is an easy way to try out the capabili
 |[Campaign Views](campaigns.md)<sup>\*</sup>|Investigate and respond to large-scale malicious email activity.|
 |[Reports using Defender for Office 365 capabilities](view-reports-for-mdo.md)|View reports including threat protection status, URL threat protection, mail latency, and more.|
 |[Priority account protection](/microsoft-365/admin/setup/priority-accounts)<sup>\*</sup>|Users that you identify as Priority accounts are tagged in alerts, reports, and investigations so they stand out. You can also use the Priority tag in filters.|
-|
 
 <sup>\*</sup> This feature is exclusive to Defender for Office 365 Plan 2.
 

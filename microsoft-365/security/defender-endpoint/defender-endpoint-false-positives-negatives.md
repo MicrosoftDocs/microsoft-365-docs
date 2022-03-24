@@ -70,8 +70,6 @@ Before you classify or suppress an alert, determine whether the alert is accurat
 
 4. Depending on the alert status, take the steps described in the following table:
 
-<br/><br/>
-
    |Alert status|What to do|
    |---|---|
    |The alert is accurate|Assign the alert, and then [investigate it](investigate-alerts.md) further.|
@@ -179,7 +177,7 @@ You can roll back and remove a file from quarantine if you've determined that it
 2. Enter the following command, and press **Enter**:
 
     ```console
-    "ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
+    "%ProgramFiles%\Windows Defender\MpCmdRun.exe" -Restore -Name EUS:Win32/CustomEnterpriseBlock -All
     ```
 
     > [!IMPORTANT]
@@ -303,7 +301,7 @@ If you have a file that was either wrongly detected as malicious or was missed, 
 
 1. Review the guidelines here: [Submit files for analysis](/windows/security/threat-protection/intelligence/submission-guide).
 
-2. Visit the Microsoft Security Intelligence submission site (<https://www.microsoft.com/wdsi/filesubmission>), and submit your file(s).
+2. Visit the [Microsoft Security Intelligence submission site](https://www.microsoft.com/wdsi/filesubmission) (https://www.microsoft.com/wdsi/filesubmission), and submit your file(s).
 
 ### Submit a fileless detection for analysis
 
@@ -317,7 +315,7 @@ If something was detected as malware based on behavior, and you don't have a fil
 
 3. Review the guidelines here: [Submit files for analysis](/windows/security/threat-protection/intelligence/submission-guide).
 
-4. Visit the Microsoft Security Intelligence submission site (<https://www.microsoft.com/wdsi/filesubmission>), and submit your .cab files.
+4. Visit the [Microsoft Security Intelligence submission site](https://www.microsoft.com/wdsi/filesubmission) (https://www.microsoft.com/wdsi/filesubmission), and submit your .cab files.
 
 ### What happens after a file is submitted?
 

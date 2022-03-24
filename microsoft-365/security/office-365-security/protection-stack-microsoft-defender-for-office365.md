@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 description: Follow the path of an incoming message through the threat filtering stack in Microsoft Defender for Office 365.
 ms.technology: mdo
 ms.prod: m365-security
+ms.collection: M365-security-compliance
 ---
 # Step-by-step threat protection in Microsoft Defender for Office 365
 

@@ -125,10 +125,6 @@ More information:
 
 Alert when a file containing a credit card number is shared from an approved cloud app.
 
-<br>
-
-****
-
 |Control|Settings|
 |---|---|
 |Policy type|File policy|
@@ -140,7 +136,6 @@ Alert when a file containing a credit card number is shared from an approved clo
 |Content inspection|Includes files that match a present expression: All countries: Finance: Credit card number <p> Don't require relevant context: unchecked (this setting will match keywords as well as regex) <p> Includes files with at least 1 match <p> Unmask the last 4 characters of the violation: checked|
 |Alerts|Create an alert for each matching file: checked <p> Daily alert limit: 1000 <p> Select an alert as email: checked <p> To: infosec@contoso.com|
 |Governance|Microsoft OneDrive for Business <p> Make private: check Remove External Users <p> All other settings: unchecked <p> Microsoft SharePoint Online <p> Make private: check Remove External Users <p> All other settings: unchecked|
-|
 
 Similar policies:
 
@@ -156,10 +151,6 @@ Notes:
 - Box monitoring requires a connector be configured using the API Connector SDK.
 - This policy requires capabilities that are currently in private preview.
 
-<br>
-
-****
-
 |Control|Settings|
 |---|---|
 |Policy type|Activity policy|
@@ -170,7 +161,6 @@ Notes:
 |Filter settings|Activity type = Upload File <p> App = Microsoft OneDrive for Business and Box <p> Classification Label (currently in private preview): Azure Information Protection = Customer Data, Human Resources—Salary Data, Human Resources—Employee Data|
 |Alerts|Create an alert: checked <p> Daily alert limit: 1000 <p> Select an alert as email: checked <p> To: infosec@contoso.com|
 |Governance|All apps <p> Put user in quarantine: check <p> All other settings: unchecked <p> Office 365 <p> Put user in quarantine: check <p> All other settings: unchecked|
-|
 
 Similar policies:
 

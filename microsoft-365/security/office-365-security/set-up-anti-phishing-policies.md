@@ -40,10 +40,6 @@ Examples of Microsoft Defender for Office 365 organizations include:
 
 The high-level differences between anti-phishing policies in EOP and anti-phishing policies in Defender for Office 365 are described in the following table:
 
-<br>
-
-****
-
 |Feature|Anti-phishing policies in EOP|Anti-phishing policies in Defender for Office 365|
 |---|:---:|:---:|
 |Automatically created default policy|![Check mark.](../../media/checkmark.png)|![Check mark.](../../media/checkmark.png)|
@@ -53,7 +49,6 @@ The high-level differences between anti-phishing policies in EOP and anti-phishi
 |First contact safety tip|![Check mark.](../../media/checkmark.png)|![Check mark](../../media/checkmark.png)|
 |Impersonation settings||![Check mark](../../media/checkmark.png)|
 |Advanced phishing thresholds||![Check mark](../../media/checkmark.png)|
-|
 
 <sup>\*</sup> In the default policy, the policy name, and description are read-only (the description is blank), and you can't specify who the policy applies to (the default policy applies to all recipients).
 

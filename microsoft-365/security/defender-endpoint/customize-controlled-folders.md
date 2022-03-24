@@ -13,7 +13,7 @@ ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.collection: m365initiative-m365-defender
+ms.collection: M365-security-compliance
 ms.date:
 ---
 

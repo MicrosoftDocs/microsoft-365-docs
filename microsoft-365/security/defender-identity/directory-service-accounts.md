@@ -8,6 +8,7 @@ ms.author: dacurwin
 ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
+ms.collection: M365-security-compliance
 ---
 
 # Microsoft Defender for Identity Directory Services account in Microsoft 365 Defender

@@ -8,7 +8,7 @@ manager: dansimp
 ms.date: 09/18/2020
 audience: ITPro
 ms.topic: overview
-
+ms.collection: M365-security-compliance
 ms.localizationpriority: medium
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom: 
@@ -77,9 +77,6 @@ For information about requirements, important limits, and feature availability a
 - For recommended values for protection policies, see [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 - For quick instructions to configure protection policies, see [Protect against threats](protect-against-threats.md).
 
-<br>
-
-****
 |Feature|Comments|
 |---|---|
 |**Protection**||

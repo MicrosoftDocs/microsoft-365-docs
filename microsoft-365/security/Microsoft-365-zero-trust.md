@@ -31,13 +31,7 @@ A Zero Trust approach extends throughout the entire digital estate and serves as
 
 This illustration provides a representation of the primary elements that contribute to Zero Trust.
 
-<!---
-[![Zero Trust security architecture](../media/zero-trust/zero-trust-architecture.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/zero-trust/zero-trust-architecture.png)
--->
-
 :::image type="content" source="../media/zero-trust/zero-trust-architecture.png" alt-text="The Zero Trust security architecture" lightbox="../media/zero-trust/zero-trust-architecture.png":::
-
-
 
 In the illustration:
 - Security policy enforcement is at the center of a Zero Trust architecture. This includes Multi Factor authentication with conditional access that takes into account user account risk, device status, and other criteria and policies that you set.
@@ -140,6 +134,7 @@ While this work is represented at the top of the deployment stack illustrated ea
 Microsoft Information Protection provides a framework, process, and capabilities you can use to accomplish your specific business objectives.
 
 :::image type="content" source="../media/zero-trust/mip-solution-overview.png" alt-text="The Microsoft Information Protection (MIP) framework" lightbox="../media/zero-trust/mip-solution-overview.png":::
+
 
 For more information on how to plan and deploy information protection, see [**_Deploy a Microsoft Information Protection solution_**](../compliance/information-protection-solution.md). 
 
