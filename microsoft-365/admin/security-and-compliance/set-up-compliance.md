@@ -26,20 +26,40 @@ description: "Set up compliance features to prevent data loss and help keep your
 ---
 # Set up compliance features
 
-Your Microsoft 365 Business Premium comes with features to protect your data and devices, and help you keep your and your customers' sensitive information secure.
+Your Microsoft 365 Business Premium comes with compliance and privacy features to help protect your company's data, and to help you keep your and your customers' sensitive information secure.
 
-## Watch: Set up DLP features
+## Before you begin
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3TGvL?autoplay=false]
+Make sure you have one of the following roles assigned in Azure Active Directory:
 
-Data loss prevention policies help identify and protect your business's sensitive information, such as Social Security numbers or medical records.
+- Global Administrator
+- Compliance Administrator
 
-1. To get started, go to the [admin center](https://admin.microsoft.com), and select **Setup**.
-1. Scroll down to **Set up data loss prevention**, and then select **View**, and then **Manage**.
-1. To edit a policy, select it, choose **Edit policy**, then select what to change. For example, select **Locations** to change what gets scanned.
-1. To create a new policy, select **Create a policy**.
-1. You can create a custom policy or start with a template. For example, to create a HIPAA policy, select the **Medical and health** template, and then select **U.S. Health Insurance Act (HIPAA)**. Select **Next**.
-1. Review your settings, and select **Create**. After your policy takes effect, email that contains the described sensitive information is blocked, and the sender who attempted to send that information sees a warning message.
+To learn more, see [Get started with the roles page](../add-users/admin-roles-page.md).
+
+## Use Compliance Manager to get started
+
+:::image type="content" source="../../business-premium/media/m365bp-compliancemanager.png" alt-text="Screenshot of Compliance Manager in Microsoft 365 Business Premium.":::
+
+Microsoft 365 Business Premium includes Compliance Manager, which can help you get started setting up your compliance features (such as data loss prevention, information governance, and insider risk management, to name a few). Compliance Manager can save you time by highlighting recommendations, a compliance score, and ways to improve your score.
+
+Here's how to get started:
+
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.
+
+2. In the navigation pane, choose **Compliance Manager**.
+
+3. On the **Overview** tab, review the information. Select an item or link to view more information, or to take actions, such as configuring a data loss prevention (DLP) policy. For example, in the **Solutions that affect your score** section, you might select the link in the **Remaining actions** column.
+
+   :::image type="content" source="../../business-premium/media/m365bp-compliancesolutions.png" alt-text="Screenshot of Solutions That Affect Your Score pane.":::
+
+   That action takes you to the **Improvement actions** tab, which is filtered for the item you selected. In this example we are looking at DLP policies to configure.
+
+   :::image type="content" source="../../business-premium/media/m365bp-dlppoliciestoconfigure.png" alt-text="Screenshot of DLP policies to configure.":::
+
+4. On the Improvement actions tab, 
+
+## 
 
 See [Create a DLP policy from a template](../../compliance/create-a-dlp-policy-from-a-template.md) for an example on how to set up a policy to protect against protect loss of personal data. 
   
@@ -80,13 +100,3 @@ For your labels to work, each user needs to download the Azure Information Prote
 
 The next time you open an Office app like Word, you'll see the sensitivity labels that were created. To change or apply a label, select Sensitivity, and choose a label.
 
-### Install the Azure Information Protection client manually
-
-To manually install the AIP client:
-
-1. Download **AzinfoProtection_UL.exe** from [Microsoft download center](https://www.microsoft.com/download/details.aspx?id=53018).
- 
-2. You can verify that the installation worked by viewing a Word document and making sure that the **Sensitivity** option is available on the **Home** tab. 
-<br/>![Protection tab drop-down in a Word document.](../../media/word-sensitivity.png)
-
-For more information, see [Install the client](/azure/information-protection/infoprotect-tutorial-step3).
