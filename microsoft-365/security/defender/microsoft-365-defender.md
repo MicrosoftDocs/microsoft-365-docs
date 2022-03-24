@@ -150,7 +150,7 @@ Microsoft 365 Defender emphasizes *unity, clarity, and common goals* as it merge
 
 Centralizing security information creates a single place for investigating security incidents across Microsoft 365. A primary example is **Incidents** under **Incidents & alerts** on the quick launch of Microsoft 365 Defender.
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="The Incidents page in Microsoft 365 Defender" lightbox="../../media/converged-incidents-2.png.png":::
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Example of the Incidents page in Microsoft 365 Defender" lightbox="../../media/converged-incidents-2.png.png":::
 
 Selecting an incident name displays a page that demonstrates the value of centralizing security information.
 
