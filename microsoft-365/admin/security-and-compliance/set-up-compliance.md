@@ -26,7 +26,7 @@ description: "Set up compliance features to prevent data loss and help keep your
 ---
 # Set up compliance features
 
-Your Microsoft 365 Business Premium comes with compliance and privacy features to help protect your company's data, and to help you keep your and your customers' sensitive information secure.
+Your Microsoft 365 Business Premium comes with compliance and privacy features to help protect your company's data, and to help you keep your and your customers' sensitive information secure. This article provides information to help you get started with your compliance features in Microsoft 365 Business Premium.
 
 ## Before you begin
 
