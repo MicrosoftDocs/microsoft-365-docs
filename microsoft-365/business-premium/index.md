@@ -45,7 +45,7 @@ In these first missions, you must sign in and set up your initial protective wal
 
 ## Train your team
 
-In the collection of Training missions that follow, your front-line must set up protection for all their devices, email and file sharing. 
+In the collection of training missions that follow, members of the organization that are on the front-line must set up protection, email and file sharing on all their devices. 
 
 [**Set up BYOD devices**](m365bp-protect-pcs-macs.md). In this mission, you set up all the unmanaged (BYOD) devices so they are safely part of the ecosystem.
 
