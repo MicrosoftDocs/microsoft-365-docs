@@ -2,9 +2,9 @@
 title: "Increase threat protection for Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: Skjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -29,11 +29,41 @@ description: "Get help with increasing the level of protection in Microsoft 365 
 
 # Increase threat protection for Microsoft 365 Business Premium
 
-This article helps you increase the protection in your Microsoft 365 subscription to protect against phishing, malware, and other threats. These recommendations are appropriate for organizations with an increased need for security, like political campaigns, law offices, and health care clinics.
+In this objective, you increase your threat protection with Microsoft 365 Business Premium. It's critical to protect the org against phishing, malware, and other threats. These recommendations are especially appropriate for political campaigns, law offices, and health care clinics, which have an increased need for security.
 
-Before you begin, check your Microsoft Secure Score. Microsoft Secure Score analyzes your organization's security based on your regular activities and security settings and assigns a score. Begin by taking note of your current score. Taking the actions recommended in this article increases your score. The goal isn't to achieve the max score, but to be aware of opportunities to protect your environment that don't negatively affect productivity for your users.
+## Start with Secure Score
+
+Microsoft Secure Score analyzes your organization's security based on your regular activities and security settings and assigns a score. Take note of your current score and then take the recommended actions in this article to increase your score. The goal is to always be aware of and try to improve your score.
 
 For more information, see [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
+
+## Review and apply preset security policies
+
+Your subscription includes [preset security policies](../security/office-365-security/preset-security-policies.md) that use recommended settings for anti-spam, anti-malware, and anti-phishing protection. By default, built-in protection is enabled; consider applying standard or strict protection for increased security. 
+
+Preset security policies consist of:
+
+- Profiles, which determine the level of protection
+- Policies (such as anti-spam, anti-malware, anti-phishing, Safe Attachments, and Safe Links)
+- Policy settings (such as groups, users, or domains to receive the policies and any exceptions)
+
+The following table summarizes the levels of protection and preset policy types.
+
+| Level of protection | Description |
+|:---|:---|
+| **Standard protection** <br/>(*recommended for most businesses*) | Standard protection uses a baseline profile that's suitable for most users <br/><br/>It includes anti-spam, anti-malware, anti-phishing, spoof settings, impersonation settings, Safe Links, and Safe Attachments policies.  |
+| **Strict protection**  | Strict protection includes the same kinds of policies as standard protection, but with more stringent settings. If your business must meet additional security requirements or regulations, consider applying strict protection to your priority users or high value targets. |
+| **Built-in protection** | Protects against malicious links and attachments in email. Enabled and applied to all users by default.  |
+
+You can specify the users, groups, and domains to receive preset policies, and you can define certain exceptions, but you cannot change preset policies themselves.
+
+You can also create your own security policies for custom settings to suit your company's needs.
+
+
+
+
+<!--https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365?view=o365-worldwide
+
 
 ## Raise the level of protection against malware in mail
 
@@ -169,7 +199,7 @@ If you don't see the **Setup** page with cards in your tenant yet, see how to co
 
 3. On the **Increase protection from advanced threats** page, choose **Get started**.
 4. On the pane that opens, select the check boxes next to **Links and attachments in email**, **Scan files in SharePoint, OneDrive, and Teams**, and **Scan links in Office desktop and Office Online apps** under **Scan items for malicious content**.
-
+    
    Under **Links and attachments in email**, Type in All Users, or the specific users whose email you want scanned.
 
    ![Select all check boxes in Increase protection from advanced threats.](../media/setatp.png)
@@ -249,6 +279,8 @@ To create a new policy targeted to all recipients in your domain:
 
 For more information, see [Safe Links in Defender for Office 365](../security/office-365-security/safe-links.md).
 
+-->
+
 ## Turn on the Unified Audit Log
 
 After you turn on the audit log search in the Security & Compliance Center, you can retain the admin and other user activity in the log and search it.
@@ -274,6 +306,7 @@ To change the sharing settings for OneDrive and SharePoint:
 3. On the **Sharing** page, under **File and folder links**, select **Specific people**, and under **Advanced settings for "Anyone" links**, select **These links must expire within this many days**, and type in 14 (or another number of days you want to restrict the link lifetime to).
 
    ![Choose Specific people and set link expiration to 14 days.](../media/anyonelinks.png)
+
 
 ## Activity alerts
 
@@ -304,3 +337,4 @@ You can prevent people in your organization from sharing their calendars, or you
    ![Screenshot of calendar free/busy sharing with anyone.](../media/sharefreebusy.png)
 
 If your users are allowed to share their calendars, see [these instructions](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) for how to share from Outlook on the web.
+
