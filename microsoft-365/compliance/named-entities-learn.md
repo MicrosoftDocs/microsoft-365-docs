@@ -1,5 +1,5 @@
 ---
-title: "Learn about named entities (preview)"
+title: "Learn about named entities"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,7 +18,7 @@ ms.collection:
 description: "Learn how named entities help you detect sensitive items containing names of people, physical addresses, and medical terms via data loss prevention policies"
 ---
 
-# Learn about named entities (preview)
+# Learn about named entities
 
 > [!IMPORTANT]
 > The named entities feature is rolling out and will appear in your tenant when it is available to you. Check for them in content explorer and in the data loss prevention (DLP) policy authoring flow. 

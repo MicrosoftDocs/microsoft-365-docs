@@ -318,7 +318,7 @@
             href: sit-learn-about-exact-data-match-based-sits.md
           - name: Document Fingerprinting
             href: document-fingerprinting.md
-          - name: Learn about named entities (preview)
+          - name: Learn about named entities
             href: named-entities-learn.md
         - name: Get started with sensitive information type
           items:
@@ -362,7 +362,7 @@
             href: sit-use-exact-data-manage-schema.md
           - name: Refresh your sensitive information source table file
             href: sit-use-exact-data-refresh-data.md
-          - name: Use named entities in your data loss prevention policies (preview)
+          - name: Use named entities in your data loss prevention policies
             href: named-entities-use.md
           - name: Common usage scenarios for sensitive information types
             href: sit-common-scenarios.md

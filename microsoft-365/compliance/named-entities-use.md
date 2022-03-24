@@ -1,5 +1,5 @@
 ---
-title: "Use named entities in your data loss prevention policies (preview)"
+title: "Use named entities in your data loss prevention policies"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,7 +18,7 @@ ms.collection:
 description: "Use these procedures to take advantage of named entities in your data loss prevention policies"
 ---
 
-# Use named entities in your data loss prevention policies (preview)
+# Use named entities in your data loss prevention policies
 
 > [!IMPORTANT]
 > The named entities feature is rolling out and will appear in your tenant when it is available to you. Check for them in content explorer and in the data loss prevention (DLP) policy authoring flow. 
