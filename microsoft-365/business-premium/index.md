@@ -38,7 +38,7 @@ Success depends on you completing the assigned missions ahead which are grouped 
 >[!NOTE]
 >There are times when a side quest takes you away from the mission at-hand. When this happens, do not abandon your mission but instead, return and carry on for the good of the org!
 
-## [Fortify Your Environment](#tab/Fortify)
+## [**Fortify Your Environment**](#tab/Fortify)
 
 In these first missions, you're going to have to sign in and set up your initial protective walls of defense, starting with account access protections.
 
@@ -46,7 +46,7 @@ In these first missions, you're going to have to sign in and set up your initial
 
 [**Bump up security protection**](m365bp-security-overview.md). Now, set up a number of critical security measures to protect your organization. 
 
-## [Train Your Team](#tab/Train)
+## [**Train Your Team**](#tab/Train)
 
 We've included a set of missions here with some objectives that need to be completed by your team. You have to make sure the team's devices are protected, as well as that the team is trained to use email and file sharing safely, and to recognize and report threats. 
 
@@ -56,7 +56,7 @@ We've included a set of missions here with some objectives that need to be compl
 
 [**Collaborate and share securely**](m365bp-collaborate-share-securely.md). The objectives of this mission require you to set up secure file sharing for all members of the organization.
 
-## [Safeguard Managed Devices](#tab/Safeguard)
+## [**Safeguard Managed Devices**](#tab/Safeguard)
 
 A safe device is one that is monitored by the organization. In this last critical mission, you will onboard and enroll devices in Microsoft Defender for Business, so they are secured and protected with the best tools available.
 
