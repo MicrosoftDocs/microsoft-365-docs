@@ -39,7 +39,7 @@ You can now do the following things:
 - **Continually edit and retain individual versions of the document as records, by unlocking and locking the Record status property.** Only when the **Record status** property is set to **Locked** is a new version of the record retained. This toggle of locked and unlocked reduces the risk of retaining unnecessary versions and copies of the document.
     
     > [!NOTE]
-    > If the label is configured to unlock the record by default, but versioning is not enabled by the admin, or prevented by the records management setting, users will not be able to unlock the document after it's initially edited and saved.
+    > If the label is configured to unlock the record by default, but versioning is not enabled by the admin, or prevented by the records management setting, users will not be able to unlock the document after they lock it.
 
 - **Have the records automatically stored in an in-place records repository located with the site.** Each site in SharePoint and OneDrive preserves content in its Preservation Hold library. Record versions are stored in the Records folder in this library. For more information about how the Preservation Hold library works, see [How retention works for SharePoint and OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)
 
