@@ -67,7 +67,7 @@ Topic | Description
 
 For a general introduction to onboarding macOS devices, see:
  
-- [Onboard macOS devices into Microsoft 365 Purview](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
+- [Onboard macOS devices into Microsoft Purview](device-onboarding-macos-overview.md#onboard-macos-devices-into-microsoft-365-overview-preview)
 
 For specific guidance to onboarding macOS devices, see:
 
