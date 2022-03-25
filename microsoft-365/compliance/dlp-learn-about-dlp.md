@@ -29,15 +29,15 @@ In Microsoft Purview, you implement data loss prevention by defining and applyin
 - non-Microsoft cloud apps
 - on-premises file shares and on-premises SharePoint.
 
-Microsoft 365 detects sensitive items by using deep content analysis, not by just a simple text scan. Content is analyzed for primary data matches to keywords, by the evaluation of regular expressions, by internal function validation, and by secondary data matches that are in proximity to the primary data match. Beyond that DLP also uses machine learning algorithms and other methods to detect content that matches your DLP policies.
+DLP detects sensitive items by using deep content analysis, not by just a simple text scan. Content is analyzed for primary data matches to keywords, by the evaluation of regular expressions, by internal function validation, and by secondary data matches that are in proximity to the primary data match. Beyond that DLP also uses machine learning algorithms and other methods to detect content that matches your DLP policies.
 
 ## DLP is part of the larger Microsoft Purview offering
 
-Microsoft 365 DLP is just one of the Microsoft Purview tools that you will use to help protect your sensitive items wherever they live or travel. You should understand the other tools in the Microsoft Purview tools set, how they interrelate, and work better together.  See, [Microsoft Purview tools](protect-information.md) to learn more about the information protection process.
+DLP is just one of the Microsoft Purview tools that you will use to help protect your sensitive items wherever they live or travel. You should understand the other tools in the Microsoft Purview tools set, how they interrelate, and work better together.  See, [Microsoft Purview tools](protect-information.md) to learn more about the information protection process.
 
 ## Protective actions of DLP policies
 
-Microsoft 365 DLP policies are how you monitor the activities that users take on sensitive items at rest, sensitive items in transit, or sensitive items in use and take protective actions. For example, when a user attempts to take a prohibited action, like copying a sensitive item to an unapproved location or sharing medical information in an email or other conditions laid out in a policy, DLP can:
+DLP policies are how you monitor the activities that users take on sensitive items at rest, sensitive items in transit, or sensitive items in use and take protective actions. For example, when a user attempts to take a prohibited action, like copying a sensitive item to an unapproved location or sharing medical information in an email or other conditions laid out in a policy, DLP can:
 
 - show a pop-up policy tip to the user that warns them that they may be trying to share a sensitive item inappropriately
 - block the sharing and, via a policy tip, allow the user to override the block and capture the users' justification
@@ -60,7 +60,7 @@ A DLP implementation typically follows these major phases.
 
 ### Plan for DLP
 
-Microsoft 365 DLP monitoring and protection are native to the applications that users use every day. This helps to protect your organizations' sensitive items from risky activities even if your users are unaccustomed to data loss prevention thinking and practices. If your organization and your users are new to data loss prevention practices, the adoption of DLP may require a change to your business processes and there will be a culture shift for your users. But, with proper planning, testing and tuning, your DLP policies will protect your sensitive items while minimizing any potential business process disruptions.
+DLP monitoring and protection are native to the applications that users use every day. This helps to protect your organizations' sensitive items from risky activities even if your users are unaccustomed to data loss prevention thinking and practices. If your organization and your users are new to data loss prevention practices, the adoption of DLP may require a change to your business processes and there will be a culture shift for your users. But, with proper planning, testing and tuning, your DLP policies will protect your sensitive items while minimizing any potential business process disruptions.
 
 **Technology planning for DLP**
 
@@ -128,7 +128,7 @@ Once the policy meets all your objectives, turn it on. Continue to monitor the o
 
 You have flexibility in how you create and configure your DLP policies. You can start from a predefined template and create a policy in just a few clicks or you can design your own from the ground up. No matter which you choose, all DLP policies require the same information from you.
 
-1. **Choose what you want to monitor** - Microsoft 365 comes with many predefined policy templates to help you get started or you can create a custom policy.
+1. **Choose what you want to monitor** - DLP comes with many predefined policy templates to help you get started or you can create a custom policy.
     - A predefined policy template: Financial data, Medical and health data, Privacy data all for various countries and regions.
     - A custom policy that uses the available sensitive information types, retention labels, and sensitivity labels.
 2. **Choose where you want to monitor** - You pick one or more locations that you want DLP to monitor for sensitive information. You can monitor:
@@ -176,7 +176,7 @@ After the policy's synced to the right locations, it starts to evaluate content 
 
 ## Viewing policy application results
 
-DLP reports a vast amount of information into Microsoft 365 from monitoring, policy matches and actions, and user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft Purview portal Audit Logs](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
+DLP reports a vast amount of information into Microsoft Purview from monitoring, policy matches and actions, and user activities. You'll need to consume and act on that information to tune your policies and triage actions taken on sensitive items. The telemetry goes into the [Microsoft Purview portal Audit Logs](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-center) first, is processed, and makes its way to different reporting tools. Each reporting tool has a different purpose.
 
 ### DLP Alerts Dashboard
 
@@ -206,7 +206,7 @@ The Activity explorer tab on the DLP page has the *Activity* filter preset to *D
 
 For more information, see [Get started with activity explorer](data-classification-activity-explorer.md)
 
-To learn more about Microsoft 365 DLP, see:
+To learn more about Microsoft Purview DLP, see:
 
 - [Learn about Endpoint data loss prevention](endpoint-dlp-learn-about.md)
 - [Learn about the default data loss prevention policy in Microsoft Teams (preview)](dlp-teams-default-policy.md)
@@ -214,7 +214,7 @@ To learn more about Microsoft 365 DLP, see:
 - [Learn about the Microsoft Compliance Extension (preview)](dlp-chrome-learn-about.md)
 - [Learn about the data loss prevention Alerts dashboard](dlp-alerts-dashboard-learn.md)
 
-To learn how to use data loss prevention to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
+To learn how to use data loss prevention to comply with data privacy regulations, see [Deploy information protection for data privacy regulations with Microsoft Purview](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).
 
 ## Licensing and Subscriptions
 
