@@ -26,7 +26,7 @@ This article provides deployment and configuration guidance for Customer Lockbox
 
 To see the options for licensing your users to benefit from Microsoft 365 compliance offerings, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-Customer Lockbox ensures that Microsoft can't access your content to do service operations without your explicit approval. Customer Lockbox brings you into the approval workflow process that Microsoft uses to ensure only authorized requests allow access to your content. To learn more about Microsoft’s workflow process, see [Privileged access management in Microsoft 365](privileged-access-management-solution-overview.md).
+Customer Lockbox ensures that Microsoft can't access your content to do service operations without your explicit approval. Customer Lockbox brings you into the approval workflow process that Microsoft uses to ensure only authorized requests allow access to your content. To learn more about Microsoft's workflow process, see [Privileged access management in Microsoft 365](privileged-access-management-solution-overview.md).
 
 Occasionally, Microsoft engineers help troubleshoot and fix issues that arise with the service. Usually, engineers fix issues using extensive telemetry and debugging tools Microsoft has in place for its services. However, some cases require a Microsoft engineer to access your content to determine the root cause and fix the issue. Customer Lockbox requires the engineer to request access from you as a final step in the approval workflow. This gives you the option to approve or deny the request for your organization, and provide direct-access control to your content.
 
@@ -70,7 +70,7 @@ You can turn on Customer Lockbox controls in the Microsoft 365 admin center. Whe
 
 1. Using a work or school account that has either the global administrator or the **Customer Lockbox access approver** role assigned, go to [https://admin.microsoft.com](https://admin.microsoft.com) and sign in.
 
-2. Choose **Settings** > **Org Settings** >**Security & Privacy**.
+2. Choose **Settings** > **Org Settings** > **Security & Privacy**.
 
 3. Select **Security & Privacy**, then select **Customer Lockbox** in the left column. Check the **Require approval for all data access requests** checkbox and save the changes to turn on the feature.
 
@@ -226,21 +226,19 @@ Customer content is the data created by users of Microsoft 365 services and appl
 
 - Instant messages (IM) or voice conversations
 
-- Text entered in chats and channels, for example, 1:1 chats, group chats, shared channels, private channels, and meeting chat
+- Text entered in Teams chats and Teams channels, for example, 1:1 chats, group chats, shared channels, private channels, and meeting chat
 
-- Other data pasted into chat threads, such as code snippets, images, and links
+- Other data pasted into Teams chat threads, such as code snippets, images, audio and video messages, and links
 
-- App and bot data in chats and channels
+- App and bot data in Teams chats and Teams channels
 
-- Activity feed
+- Teams activity feed
 
-- Meeting recordings and transcripts
+- Teams meeting recordings and transcripts
 
 - Voicemail
 
-- Calendar
-
-- Files posted to chats and channels
+- Files posted to Teams chats and Teams channels
 
 - Customer-generated blob or structured storage data (for example, SQL Containers)
 
