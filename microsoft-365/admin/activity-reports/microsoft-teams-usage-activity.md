@@ -34,19 +34,22 @@ The brand-new **Teams usage report** gives you an overview of the usage activity
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
 2. From the dashboard homepage, click on the **View more** button on the **Microsoft Teams activity** card.<br/>
-<br/>![Microsoft 365 reports - Microsoft Teams activity card.](../../media/teams-usage-card.png)
+<br/>![Microsoft 365 reports - Microsoft Teams activity card.](../../media/teams-usage-card.png)<br/>
+
+3. On the **Microsoft Teams** reports page, select the **Teams Usage** tab.
+
 
 ## Interpret the Microsoft Teams usage activity report
 
 You can view the user activity in the Teams report by choosing the **Teams Usage** tab. This will display the following charts:
 
-- Channel usage: Tracks the number of channel uses, by activity type, over time.
+- **Channel usage**: Tracks the number of channel uses, by activity type, over time.<br/>
   <br/> ![Teams usage activity report - channel usage.](../../media/teams-usage-channel.png)<br/>
 
-- Team usage: Tracks the number of teams, by type and activity, over time.
+- **Team usage**: Tracks the number of teams, by type and activity, over time.<br/>
   <br/> ![Teams usage activity report - team usage.](../../media/teams-usage-usage.png)<br/>
 
-Additionally, a table shows usage details for individual teams, such as last activity date, active users, active channels, and other data.
+Additionally, the chart includes usage details for individual teams, such as last activity date, active users, active channels, and other data.
 
 <br/>![Microsoft 365 reports - Microsoft Teams usage activity table.](../../media/teams-usage-table.png)
 
@@ -67,9 +70,9 @@ To ensure data quality, we perform daily data validation checks for the past thr
 
 The Channel usage chart shows data on the following metrics.
 
-|||
+|Item|Description|
 |:-----|:-----|
-|**Item**|**Description**|
+|**Metric**|**Definition**|
 |Active channel users  <br/> |This is the total of internal active users, active guests, and external active users.  <br/><br/> **Internal active users** - Users that have at least one panel action in the specified time period. This excludes guests.   <br/> **Active guests** - Guests that have at least one panel action in the specified time period. A guest is a person from outside your organization who accesses shared resources by signing in to a guest account in my directory.  <br/> **External active user** - External users that have at least one panel action in the specified time period. An external user is a person from outside your organization who is participating in a resource – such as a shared channel – using their own identity and not a guest account in your directory.  <br/>|  
 |Active channels   <br/> |Valid channels in active teams that have at least one active user in the specified time period. This includes public, private, or shared channels.   <br/> |
 |Channel messages    <br/> |The number of unique messages that the user posted in a private chat during the specified time period.  <br/> |
@@ -79,9 +82,9 @@ The Channel usage chart shows data on the following metrics.
 
 The Teams usage chart shows data on the following metrics.
 
-|||
+|Item|Description|
 |:-----|:-----|
-|**Item**|**Description**|
+|**Metric**|**Definition**|
 |Team ID  <br/> |Team identifier <br/>|  
 |Internal active users   <br/> |Users that have at least one panel action in the specified time period including guests. <br/> <br/> Internal users and guests that reside in the same tenant. Internal users exclude guests.   |
 |Active guests     <br/> |Guests that have at least one panel action in the specified time period. <br/> <br/> A guest is defined as persons from outside your organization who accesses shared resources by signing in to a guest account in my directory.   |
@@ -103,9 +106,9 @@ The Teams usage chart shows data on the following metrics.
 
 Data for following metrics are available for individual teams.
 
- |||
+|Item|Description|
 |:-----|:-----|
-|**Item**|**Description**|
+|**Metric**|**Definition**|
 |Posts    <br/> |Count of all the post messages in channels in the specified time period.  |
 |Replies     <br/> |Count of all the reply messages in channels in the specified time period.  |
 |Urgent messages      <br/> |Count of urgent messages in the specified time period.  |
