@@ -7,11 +7,11 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: article
-ms.date: 02/07/2022
+ms.date: 03/15/2022
 ms.prod: m365-security
 ms.technology: mdb
-localization_priority: Normal
-ms.reviewer: inbadian, shlomiakirav
+ms.localizationpriority: medium
+ms.reviewer: shlomiakirav
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -22,13 +22,13 @@ ms.custom: intro-get-started
 # Use your Threat & Vulnerability Management dashboard in Microsoft Defender for Business
 
 > [!IMPORTANT]
-> Microsoft Defender for Business is rolling out to Microsoft 365 Business Premium customers, beginning March 1, 2022. Defender for Business as a standalone subscription is in in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. Preview includes an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
+> Microsoft Defender for Business is rolling out to [Microsoft 365 Business Premium](../../business-premium/index.md) customers, beginning March 1, 2022. Defender for Business as a standalone subscription is in in preview, and will roll out gradually to customers and IT Partners who [sign-up here](https://aka.ms/mdb-preview) to request it. Preview includes an [initial set of scenarios](mdb-tutorials.md#try-these-preview-scenarios), and we will be adding capabilities regularly.
 > 
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here. 
 
 Microsoft Defender for Business includes a Threat & Vulnerability Management dashboard that is designed to save your security team time and effort. In addition to providing an exposure score, you can also view information about exposed devices and security recommendations. You can use your Threat & Vulnerability Management dashboard to:
 
-- View your exposure score, which is associated with devices in your organization
+- View your exposure score, which is associated with devices in your company
 
 - View your top security recommendations, such as addressing impaired communications with devices, turning on firewall protection, or updating Microsoft Defender Antivirus definitions
 
