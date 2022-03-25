@@ -130,14 +130,16 @@ Use our quick-start guide, [Protect against threats](../security/office-365-secu
 
 To change the sharing settings for OneDrive and SharePoint:
 
-1. Go to the admin center at <https://admin.microsoft.com> and then choose **SharePoint** under **Admin centers** in the left nav.
 
-2. In the SharePoint admin center, go to **Policies** \> <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing**</a>.
+1. Go to <a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**Sharing** in the SharePoint admin center</a>, and sign in with an account that has [admin permissions for your organization](/sharepoint/sharepoint-admin-role).
+ 
+2. Under **External sharing**, specify the level of sharing. (We recommend using **Least permissive** to prevent external sharing.)
 
-3. On the **Sharing** page, under **File and folder links**, select **Specific people**, and under **Advanced settings for "Anyone" links**, select **These links must expire within this many days**, and type in 14 (or another number of days you want to restrict the link lifetime to).
+3. Under **File and folder links**, select an option (such as **Specific people**). Then choose whether to grant View or Edit permissions by default for shared links (such as **View**).
 
-   ![Choose Specific people and set link expiration to 14 days.](../media/anyonelinks.png)
+4. Under **Other settings**, select the options you want to use.
 
+5. Then choose **Save**.
 
 ## Activity alerts
 
