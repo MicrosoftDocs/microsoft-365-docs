@@ -27,7 +27,7 @@ description: Use Configuration Manager to deploy the configuration package on de
 
 ### Onboard devices using System Center Configuration Manager
 
-1. Get the configuration package .zip file (*DeviceComplianceOnboardingPackage.zip*) from [Microsoft Compliance center](https://compliance.microsoft.com/).
+1. Get the configuration package .zip file (*DeviceComplianceOnboardingPackage.zip*) from [Microsoft Purview portal](https://compliance.microsoft.com/).
 
 2. In the navigation pane, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> > **Device Onboarding** > **Onboarding**.
 

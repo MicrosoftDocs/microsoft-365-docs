@@ -110,7 +110,7 @@ There are a few extra concepts that you need to be aware of before you dig into 
 
 ### Enabling Device management
 
-Device management is the functionality that enables the collection of telemetry from devices and brings it into Microsoft Purview solutions like Endpoint DLP and [Insider Risk management](insider-risk-management.md). You'll need to onboard all devices you want to use as locations in DLP policies.
+Device management is the functionality that enables the collection of telemetry from devices and brings it into Microsoft Purview solutions like Endpoint DLP and [insider risk management](insider-risk-management.md). You'll need to onboard all devices you want to use as locations in DLP policies.
 
 > [!div class="mx-imgBorder"]
 > ![enable device management.](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
@@ -198,4 +198,4 @@ Now that you've learned about Endpoint DLP, your next steps are:
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
-- [Insider Risk management](insider-risk-management.md)
+- [Insider risk management](insider-risk-management.md)

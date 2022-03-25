@@ -59,4 +59,4 @@ See [Get started with the Microsoft Compliance Extension](dlp-chrome-get-started
 - [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
 - [Get started with Activity explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/)
-- [Insider Risk management](insider-risk-management.md)
+- [Insider risk management](insider-risk-management.md)

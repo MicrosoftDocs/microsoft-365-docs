@@ -152,7 +152,7 @@ The following table describes other tools that you can use to replace the existi
 
 **I use the copy search results functionality of In-Place eDiscovery & Holds in the EAC to copy search results to a discovery mailbox for review by attorneys. What options do I have now?**
 
-There are two ways to replicate this functionality today. The first is to use [review sets in Advanced eDiscovery v2.0](./view-documents-in-review-set.md). Review sets have many of the same capabilities you see in a traditional review tool like fast search of documents, tagging, email threading, near duplicate grouping, themes analysis, and predictive coding. If you still want to use discovery mailboxes for review, the second option is to export search results to PST files and then import the PST files to a discovery mailbox by using the [PST import feature](use-network-upload-to-import-pst-files.md) in the Microsoft compliance center.
+There are two ways to replicate this functionality today. The first is to use [review sets in Advanced eDiscovery v2.0](./view-documents-in-review-set.md). Review sets have many of the same capabilities you see in a traditional review tool like fast search of documents, tagging, email threading, near duplicate grouping, themes analysis, and predictive coding. If you still want to use discovery mailboxes for review, the second option is to export search results to PST files and then import the PST files to a discovery mailbox by using the [PST import feature](use-network-upload-to-import-pst-files.md) in the Microsoft Purview portal.
 
 **How do I control which content locations (such as mailboxes or sites) that can an eDiscovery manager can search using the new tools?**
 

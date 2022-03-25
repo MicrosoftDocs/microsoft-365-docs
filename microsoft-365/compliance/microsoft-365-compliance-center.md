@@ -84,12 +84,12 @@ First, make sure that you have the appropriate licenses and permissions. Then, s
 
 - **Visit Microsoft Purview Compliance Manager** to see your compliance score and start managing compliance for your organization. To learn more, see [Compliance Manager](compliance-manager.md).
 
-- **Configure insider risk management policies** to help minimize internal risks and enable you to detect, investigate, and take action for risky activities in your organization. See [Insider risk management](insider-risk-management.md).
+- **Configure insider risk management policies** to help minimize internal risks and enable you to detect, investigate, and take action for risky activities in your organization. See [Learn about insider risk management](insider-risk-management.md).
 
 - **Review your organization's data loss prevention policies** and make required changes as necessary. To learn more about, see [Learn about data loss prevention](dlp-learn-about-dlp.md).
 
 - **Get acquainted with and set up Microsoft Defender for Cloud Apps**. See [Quickstart: Get started with Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security).
 
-- **Learn about and create communication compliance policies** to quickly identify and remediate corporate code-of-conduct policy violations. See [Communication compliance in Microsoft 365](communication-compliance.md).
+- **Learn about and create communication compliance policies** to quickly identify and remediate corporate code-of-conduct policy violations. See [Learn about communication compliance](communication-compliance.md).
 
 - **Visit your Microsoft Purview portal often**, and make sure to review any alerts or potential risks that arise. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in.

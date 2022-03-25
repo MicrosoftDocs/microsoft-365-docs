@@ -30,7 +30,7 @@ The solution catalog is organized into sections that contain information cards f
 
 When you select **View** for a solution card, you'll see detailed information about the compliance solution and how to get started. This information includes an overview, pre-configuration requirements, learning resources, controls that allow you to pin the card to the navigation pane, and an option to share the solution as a link, email, or Microsoft Teams message.
 
-![Microsoft 365 communication compliance solution.](../media/m365-solution-catalog-communication-compliance.png)
+![Communication compliance solution.](../media/m365-solution-catalog-communication-compliance.png)
 
 ## Information protection & governance section
 
@@ -84,7 +84,7 @@ First, make sure that you have the appropriate licenses and permissions. Then, s
 
 - **Visit Microsoft Purview Compliance Manager**, which helps you understand your organization's state of compliance with key standards and regulations. It provides recommended actions you can take to strengthen your overall compliance posture, and provides workflow capabilities to help you efficiently carry out those actions. To learn more, see [Compliance Manager](compliance-manager.md).
 
-- **Configure insider risk management policies** to help minimize internal risks and enable you to detect, investigate, and take action for risky activities in your organization. See [Insider risk management](insider-risk-management.md).
+- **Configure insider risk management policies** to help minimize internal risks and enable you to detect, investigate, and take action for risky activities in your organization. See [Learn about insider risk management](insider-risk-management.md).
 
 - **Learn about and create Communication compliance policies** to quickly identify and remediate corporate code-of-conduct policy violations. See [Communication compliance](communication-compliance.md).
 

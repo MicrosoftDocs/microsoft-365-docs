@@ -35,7 +35,7 @@ You can also manually onboard individual devices to Microsoft 365. You might wan
 
 ## Onboard devices
  
-1. Get the configuration package .zip file (*DeviceComplianceOnboardingPackage.zip*) package from [Microsoft Compliance center](https://compliance.microsoft.com)
+1. Get the configuration package .zip file (*DeviceComplianceOnboardingPackage.zip*) package from [Microsoft Purview portal](https://compliance.microsoft.com)
 
 2. In the navigation pane, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> > **Device onboarding**.
 

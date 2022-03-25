@@ -44,7 +44,7 @@ The following overview explains the process of using a connector to archive the 
 
 ## Step 1: Set up the Pivot connector
 
-The first step is to access to the **Data Connectors** page in the Microsoft compliance center and create a connector for Pivot data.
+The first step is to access to the **Data Connectors** page in the Microsoft Purview portal and create a connector for Pivot data.
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** > **Pivot**.
 
