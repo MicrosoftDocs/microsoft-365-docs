@@ -44,17 +44,12 @@ You can also submit files for deep analysis, to run the file in a secure cloud s
 
 Some actions require certain permissions. The following table describes what action certain permissions can take on portable executable (PE) and non-PE files:
 
-<br>
-
-****
-
 |Permission|PE files|Non-PE files|
 |---|:---:|:---:|
 |View data|X|X|
 |Alerts investigation|&#x2611;|X|
 |Live response basic|X|X|
 |Live response advanced|&#x2611;|&#x2611;|
-|
 
 For more information on roles, see [Create and manage roles for role-based access control](user-roles.md).
 
@@ -251,10 +246,10 @@ Use the deep analysis feature to investigate the details of any file, usually du
 > [!NOTE]
 > Only files from Windows 10 and Windows 11 can be automatically collected.
 
-You can also submit a sample through the [Microsoft Security Center Portal](https://www.microsoft.com/security/portal/submission/submit.aspx) if the file wasn't observed on a Windows 10 device (or Windows 11), and wait for **Submit for deep analysis** button to become available.
+You can also submit a sample through the [Microsoft 365 Defender Portal](https://www.microsoft.com/security/portal/submission/submit.aspx) if the file wasn't observed on a Windows 10 device (or Windows 11), and wait for **Submit for deep analysis** button to become available.
 
 > [!NOTE]
-> Due to backend processing flows in the Microsoft Security Center Portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Defender for Endpoint.
+> Due to backend processing flows in the Microsoft 365 Defender Portal, there could be up to 10 minutes of latency between file submission and availability of the deep analysis feature in Defender for Endpoint.
 
 ### Submit files for deep analysis
 
