@@ -36,7 +36,7 @@ For JavaScript and CSS files, you can also use an approach called minification, 
 You can use third-party software such as Web Essentials to bundle CSS and JavaScript files.
   
 > [!IMPORTANT]
-> Web Essentials is a third-party, open-source, community-based project. The software is an extension to Visual Studio 2012 and Visual Studio 2013 and is not supported by Microsoft. To download Web Essentials, visit the website at [vsweb essentials 2012](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebEssentials2012).
+> Web Essentials is a third-party, open-source, community-based project. The software is an extension to Visual Studio 2012 and Visual Studio 2013 and is not supported by Microsoft. To download Web Essentials, visit the website at [Web Essentials 2012](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebEssentials2012).
   
 Web Essentials offers two forms of bundling:
  
