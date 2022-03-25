@@ -67,9 +67,9 @@ To ensure data quality, we perform daily data validation checks for the past thr
 
 The Channel usage chart shows data on the following metrics.
 
-|Item|Description|
+|||
 |:-----|:-----|
-|**Metric**|**Definition**|
+|**Item**|**Description**|
 |Active channel users  <br/> |This is the total of internal active users, active guests, and external active users.  <br/><br/> **Internal active users** - Users that have at least one panel action in the specified time period. This excludes guests.   <br/> **Active guests** - Guests that have at least one panel action in the specified time period. A guest is a person from outside your organization who accesses shared resources by signing in to a guest account in my directory.  <br/> **External active user** - External users that have at least one panel action in the specified time period. An external user is a person from outside your organization who is participating in a resource – such as a shared channel – using their own identity and not a guest account in your directory.  <br/>|  
 |Active channels   <br/> |Valid channels in active teams that have at least one active user in the specified time period. This includes public, private, or shared channels.   <br/> |
 |Channel messages    <br/> |The number of unique messages that the user posted in a private chat during the specified time period.  <br/> |
@@ -79,10 +79,10 @@ The Channel usage chart shows data on the following metrics.
 
 The Teams usage chart shows data on the following metrics.
 
-|Item|Description|
+|||
 |:-----|:-----|
-|**Metric**|**Definition**|
-|Team ID  <br/> |Team GUID <br/>|  
+|**Item**|**Description**|
+|Team ID  <br/> |Team identifier <br/>|  
 |Internal active users   <br/> |Users that have at least one panel action in the specified time period including guests. <br/> <br/> Internal users and guests that reside in the same tenant. Internal users exclude guests.   |
 |Active guests     <br/> |Guests that have at least one panel action in the specified time period. <br/> <br/> A guest is defined as persons from outside your organization who accesses shared resources by signing in to a guest account in my directory.   |
 |External active users   <br/> |External users that have at least one panel action in the specified time period.<br/><br/> An external user is defined as a person from outside your organization who is participating in a resource – such as a shared channel – using their own identity and not a guest account in your directory.   |  
@@ -103,9 +103,9 @@ The Teams usage chart shows data on the following metrics.
 
 Data for following metrics are available for individual teams.
 
- |Item|Description|
+ |||
 |:-----|:-----|
-|**Metric**|**Definition**|
+|**Item**|**Description**|
 |Posts    <br/> |Count of all the post messages in channels in the specified time period.  |
 |Replies     <br/> |Count of all the reply messages in channels in the specified time period.  |
 |Urgent messages      <br/> |Count of urgent messages in the specified time period.  |
@@ -113,6 +113,10 @@ Data for following metrics are available for individual teams.
 |Host tenant name      <br/> |Tenant names of this user all involved shared channel origin.   |
 |||
 
+## See also
+[Microsoft Teams device usage report](../activity-reports/microsoft-teams-device-usage-preview.md)
+
+[Microsoft Teams user activity report](../activity-reports/microsoft-teams-user-activity-preview.md)
 
 
 
