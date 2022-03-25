@@ -44,17 +44,12 @@ You can also submit files for deep analysis, to run the file in a secure cloud s
 
 Some actions require certain permissions. The following table describes what action certain permissions can take on portable executable (PE) and non-PE files:
 
-<br>
-
-****
-
 |Permission|PE files|Non-PE files|
 |---|:---:|:---:|
 |View data|X|X|
 |Alerts investigation|&#x2611;|X|
 |Live response basic|X|X|
 |Live response advanced|&#x2611;|&#x2611;|
-|
 
 For more information on roles, see [Create and manage roles for role-based access control](user-roles.md).
 
