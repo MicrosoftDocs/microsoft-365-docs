@@ -20,7 +20,7 @@ description: "Use Advanced eDiscovery and the Microsoft Graph Explorer to search
 
 # Search and purge chat messages in Teams
 
-You can use Advanced eDiscovery and the Microsoft Graph Explorer to search for and delete chat messages in Microsoft teams. This can help you find and remove sensitive information or inappropriate content. This search and purge workflow will also help you respond to a data spillage incident, when content containing confidential or malicious information is released through Teams chat messages.​
+You can use Advanced eDiscovery and the Microsoft Graph Explorer to search for and delete chat messages in Microsoft Teams. This can help you find and remove sensitive information or inappropriate content. This search and purge workflow will also help you respond to a data spillage incident, when content containing confidential or malicious information is released through Teams chat messages.​
 
 ## Before you search and purge chat messages
 
@@ -79,7 +79,7 @@ Additionally, you can use the collection statistics (specifically the Top Locati
 
 Before you can purge chat messages from a mailbox, you have to remove any hold or retention policy that is assigned to a target mailbox. If not, then the chat you're trying to delete will be retained. 
 
-Use the list of mailboxes that contain the chat messages that you want to delete and determine if there is a hold or retention policy assigned to those mailboxes, and then remove the hold or retention policy. Be sure to identify the hold or retention policy that you remove so that you can reassign to the mailboxes in Step 7. 
+Use the list of mailboxes that contain the chat messages that you want to delete and determine if there's a hold or retention policy assigned to those mailboxes, and then remove the hold or retention policy. Be sure to identify the hold or retention policy that you remove so that you can reassign to the mailboxes in Step 7. 
 
 For instructions about how to identify and remove holds and retention policies, see "Step 3: Remove all holds from the mailbox" in [Delete items in the Recoverable Items folder of cloud-based mailboxes on hold](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox).. 
 
@@ -93,10 +93,10 @@ Now you're ready to actually purge chat messages from Teams. You'll use the Micr
 
 3. Purge the chat messages returned by the collection.
 
-For information about using Graph Explorer, see [Working with Graph Explorer](/graph/graph-explorer/graph-explorer-features).
+For information about using Graph Explorer, see [Use Graph Explorer to try Microsoft Graph APIs](/graph/graph-explorer/graph-explorer-overview).
 
 > [!IMPORTANT]
-> To perform these three tasks in Graph Explorer, you may have to consent to the eDiscovery.Read.All and eDiscovery.ReadWrite.All permissions.
+> To perform these three tasks in Graph Explorer, you may have to consent to the eDiscovery.Read.All and eDiscovery.ReadWrite.All permissions. For more information, see the "Consent to permissions" section in [Working with Graph Explorer](/graph/graph-explorer/graph-explorer-features#consent-to-permissions).
 
 ### Get the case Id
 
@@ -147,7 +147,12 @@ For information about using Graph Explorer, see [Working with Graph Explorer](/g
 
 ## Step 7: Reapply holds and retention policies to data sources
 
+## Deleting chat messages in federated environments
 
+Admins can use the procedures in this article to search and delete Teams chat messages in federated environments. However, you must adhere to the following guidelines. These guidelines are based on the organizational ownership of the conversation thread that contains the messages you want to delete. An organization is the owner of a conversation thread that is started by a user in that organization. In other words, when a user starts a chat, the user's organization becomes the owner of the conversation thread.
 
+- Your organization must own the conversation thread to delete messages in that thread. An organization can't delete messages in conversation threads they don't own.
 
+- The organization who runs the search and delete operation can delete both the compliance copy and the message in the Teams client for messages in conversations owned by that organization. 
 
+- If an organization doesn't own the conversation thread, they'll only be able to delete a message from the Teams client of users in another organization. They can't deleted the compliance copy that is saved in the other organization.
