@@ -37,7 +37,6 @@ Your subscription includes [preset security policies](../security/office-365-sec
 
 :::image type="content" source="media/m365bp-presetsecuritypolicies.png" alt-text="Screenshot of preset security policies.":::
 
-
 ### What are preset security policies?
 
 Preset security policies provide protection for your email and collaboration content. These policies consist of:
@@ -136,7 +135,7 @@ By default, sharing levels are set to the most permissive level for both SharePo
 > [!TIP]
 > To learn more about these settings, see [Manage sharing settings](/sharepoint/turn-external-sharing-on-or-off).
 
-## Activity alerts
+## Review your activity alerts
 
 You can use activity alerts to track admin and user activities and detect malware and data loss prevention incidents in your organization. Your subscription includes a set of default policies, but you can also create custom ones. For more information, see [alert policies](../compliance/alert-policies.md). For example, if you store an important file in SharePoint that you don't want anyone to share externally, you can create a notification that alerts you if someone does share it.
 
