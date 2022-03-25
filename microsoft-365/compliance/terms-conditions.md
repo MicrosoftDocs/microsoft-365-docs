@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Compliance trial terms and conditions"
+title: "Microsoft Purview trial terms and conditions"
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft 365 Compliance trial terms and conditions."
+description: "Microsoft Purview trial terms and conditions."
 ---
 
 # Microsoft Compliance trial terms and conditions

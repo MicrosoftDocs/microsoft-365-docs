@@ -1,5 +1,5 @@
 ---
-title: "About the Microsoft 365 compliance trial"
+title: "About the Microsoft Purview trial"
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -20,15 +20,15 @@ description: "About the compliance solutions trials."
 
 Microsoft compliance solutions help protect your organization from internal threats rising from inappropriate permissions on files and emails, and helps your organization to comply with regulatory and policy requirements.
 
-The Microsoft 365 compliance solutions trial is the easiest way to try all the capabilities of Microsoft compliance solutions, and setting it up only takes a couple of minutes. After the trial setup is complete, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
+The Microsoft Purview solutions trial is the easiest way to try all the capabilities of Microsoft compliance solutions, and setting it up only takes a couple of minutes. After the trial setup is complete, all features of the Microsoft E5 license package are available for you to use for up to 90 days.
 
 ## Terms and conditions
 
-See the [terms and conditions](terms-conditions.md) for Microsoft 365 compliance trials.
+See the [terms and conditions](terms-conditions.md) for Microsoft Purview trials.
 
 ## Set up a compliance trial
 
-You can sign up for a trial in the [Microsoft 365 compliance center](https://go.microsoft.com/fwlink/p/?linkid=2077149) using the **Trials** link in the left navigation pane.
+You can sign up for a trial in the [Microsoft Purview portal](https://go.microsoft.com/fwlink/p/?linkid=2077149) using the **Trials** link in the left navigation pane.
 
 ## Licensing
 
@@ -52,7 +52,7 @@ If you decide not to enroll in a feature that is part of the compliance solution
 
 ## Availability
 
-The Microsoft 365 compliance solutions trial is gradually rolling out to existing customers who meet specific criteria (including geography) who don't already have a Microsoft E5 license package.
+The Microsoft Purview solutions trial is gradually rolling out to existing customers who meet specific criteria (including geography) who don't already have a Microsoft E5 license package.
 
 ## Learn more about compliance solutions
 

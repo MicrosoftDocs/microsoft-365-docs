@@ -52,11 +52,11 @@ The following screenshot shows the two audit-related roles assigned to the Organ
 
 ## Step 3: Search the audit log
 
-Now you're ready to search the audit log in the Microsoft 365 compliance center.
+Now you're ready to search the audit log in the Microsoft Purview portal.
 
 1. Go to <https://compliance.microsoft.com> and sign in using an account that has been assigned the appropriate audit permissions.
 
-2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all** and then click **Audit**.
+2. In the left navigation pane of the Microsoft Purview portal, click **Show all** and then click **Audit**.
 
 3. On the **Audit** page, configure the search using the following conditions on the **Search** tab. 
 

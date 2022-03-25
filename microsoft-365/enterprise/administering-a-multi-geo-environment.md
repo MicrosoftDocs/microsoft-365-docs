@@ -40,7 +40,7 @@ BCS, Secure Store, and Apps all have separate instances in each satellite locati
 
 ## Compliance admin center
 
-There is one central compliance center for a multi-geo tenant: [Microsoft 365 Compliance admin center](https://compliance.microsoft.com/).
+There is one central compliance center for a multi-geo tenant: [Microsoft Purview admin center](https://compliance.microsoft.com/).
 
 ## eDiscovery
 

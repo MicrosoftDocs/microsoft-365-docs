@@ -39,13 +39,13 @@ Ready to start managing your organization's high-value content for legal, busine
     - [Create retention labels and apply them in apps](create-apply-retention-labels.md)
     - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
-Independently from these steps, **Use connectors to import and archive third-party-data** that includes data from social media platforms, instant messaging platforms, and document collaboration platforms. When this data is imported to online mailboxes, it supports not just records management from Microsoft 365 Compliance, but also other compliance solutions such as communication compliance, insider risk management, and eDiscovery. For more information, see [Learn about connectors for third-party data](archiving-third-party-data.md).
+Independently from these steps, **Use connectors to import and archive third-party-data** that includes data from social media platforms, instant messaging platforms, and document collaboration platforms. When this data is imported to online mailboxes, it supports not just records management from Microsoft Purview, but also other compliance solutions such as communication compliance, insider risk management, and eDiscovery. For more information, see [Learn about connectors for third-party data](archiving-third-party-data.md).
 
 ## Subscription and licensing requirements
 
 A number of different subscriptions support records management and the licensing requirements for users depend on the features you use.
 
-To see the options for licensing your users to benefit from Microsoft 365 compliance features, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). For records management, see the [Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) section and related PDF download for feature-level licensing requirements.
+To see the options for licensing your users to benefit from Microsoft Purview features, see the [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). For records management, see the [Records Management](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) section and related PDF download for feature-level licensing requirements.
 
 ## Permissions
 

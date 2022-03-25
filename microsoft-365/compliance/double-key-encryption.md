@@ -19,12 +19,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 
 # Double Key Encryption for Microsoft 365
 
-> *Applies to: Double Key Encryption for Microsoft 365, [Microsoft 365 Compliance](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+> *Applies to: Double Key Encryption for Microsoft 365, [Microsoft Purview](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 >
 > *Instructions for: [Azure Information Protection unified labeling client for Windows](/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 
 
-> *Service description for: [Microsoft 365 Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
+> *Service description for: [Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
 Double Key Encryption (DKE) uses two keys together to access protected content. Microsoft stores one key in Microsoft Azure, and you hold the other key. You maintain full control of one of your keys using the Double Key Encryption service. You apply protection using The Azure Information Protection unified labeling client to your highly sensitive content.
 
@@ -78,7 +78,7 @@ You'll follow these general steps to set up DKE. Once you've completed these ste
 
 1. Deploy the DKE service as described in this article.
 
-2. Create a label with Double Key Encryption. In the Microsoft 365 compliance center, navigate to **Information protection** and create a new label with Double Key Encryption. See [Restrict access to content by using sensitivity labels to apply encryption](./encryption-sensitivity-labels.md).
+2. Create a label with Double Key Encryption. In the Microsoft Purview portal, navigate to **Information protection** and create a new label with Double Key Encryption. See [Restrict access to content by using sensitivity labels to apply encryption](./encryption-sensitivity-labels.md).
 
 3. Use Double Key Encryption labels. Protect data by selecting the Double Key Encrypted label from the Sensitivity ribbon in Microsoft Office.
 
@@ -544,12 +544,12 @@ Your DKE service is now registered. Continue by [creating labels using DKE](#cre
 
 ## Create sensitivity labels using DKE
 
-In the Microsoft 365 compliance center, create a new sensitivity label and apply encryption as you would otherwise. Select **Use Double Key Encryption** and enter the endpoint URL for your key. You need to include the key name you've provided within the "TestKeys" section of the appsettings.json file in the URL.
+In the Microsoft Purview portal, create a new sensitivity label and apply encryption as you would otherwise. Select **Use Double Key Encryption** and enter the endpoint URL for your key. You need to include the key name you've provided within the "TestKeys" section of the appsettings.json file in the URL.
 
 For example: `https://testingdke1.azurewebsites.net/KEYNAME`
 
 > [!div class="mx-imgBorder"]
-> ![Select Use Double Key Encryption in the Microsoft 365 compliance center.](../media/dke-use-dke.png)
+> ![Select Use Double Key Encryption in the Microsoft Purview portal.](../media/dke-use-dke.png)
 
 Any DKE labels you add will start appearing for users in the latest versions of Microsoft 365 Apps for enterprise.
 

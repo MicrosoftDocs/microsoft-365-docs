@@ -1,5 +1,5 @@
 ---
-title: "Quick tasks for getting started with Microsoft 365 compliance"
+title: "Quick tasks for getting started with Microsoft Purview"
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,17 +18,17 @@ ms.localizationpriority: medium
 description: "Learn about tasks that will help you quickly get started with compliance in Microsoft 365."
 ---
 
-# Quick tasks for getting started with Microsoft 365 compliance
+# Quick tasks for getting started with Microsoft Purview
 
-If you're new to Microsoft 365 compliance and wondering where to start, this article provides guidance on the basics and prioritizes important compliance tasks. This article will help you quickly get started with managing and monitoring your data, protecting information, and minimizing insider risks.
+If you're new to Microsoft Purview and wondering where to start, this article provides guidance on the basics and prioritizes important compliance tasks. This article will help you quickly get started with managing and monitoring your data, protecting information, and minimizing insider risks.
 
 This article is also helpful if you're figuring out how best to manage risks, protect your data, and remain compliant with regulations and standards with a newly remote workforce. Employees are now collaborating and connecting with each other in new ways, and this means your existing compliance processes and controls may need to adapt. Identifying and managing these new compliance risks within your organization is critical to safeguarding your data and minimizing threats and risks.
 
-After you’ve completed these basic compliance tasks, consider expanding compliance coverage in your organization by implementing additional Microsoft 365 compliance solutions.
+After you’ve completed these basic compliance tasks, consider expanding compliance coverage in your organization by implementing additional Microsoft Purview solutions.
 
 ## Task 1: Configure compliance permissions
 
-It’s important to manage who in your organization has access to the Microsoft 365 compliance center to view content and perform management tasks. Microsoft 365 provides administrative roles specific to compliance and for using the tools included in the Microsoft 365 compliance center.
+It’s important to manage who in your organization has access to the Microsoft Purview portal to view content and perform management tasks. Microsoft 365 provides administrative roles specific to compliance and for using the tools included in the Microsoft Purview portal.
 
 Start by assigning compliance permissions to the people in your organization so that they can perform these tasks and to prevent unauthorized people from having access to areas outside of their responsibilities. You’ll want to make sure that you’ve assigned the proper people to the **Compliance data administrator** and the **Compliance administrator** admin roles before you start to configure and implement compliance solutions included with Microsoft 365. You’ll also need to assign users to the Azure Active Directory global reader role to view data in Compliance Manager.
 

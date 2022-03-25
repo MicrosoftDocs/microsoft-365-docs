@@ -20,7 +20,7 @@ Are you looking for a way to quickly get started with compliance tasks in Micros
 
 Compliance solutions in Microsoft 365 are collections of integrated capabilities you can use to help you manage end-to-end compliance scenarios. A solution's capabilities and tools might include a combination of policies, alerts, reports, and more.
 
-Read this article to get acquainted with the new solution catalog in the Microsoft 365 compliance center, [how to get it](#how-do-i-get-this), [frequently asked questions](#frequently-asked-questions), and your [next steps](#next-steps).
+Read this article to get acquainted with the new solution catalog in the Microsoft Purview portal, [how to get it](#how-do-i-get-this), [frequently asked questions](#frequently-asked-questions), and your [next steps](#next-steps).
 
 ## Catalog organization
 
@@ -34,7 +34,7 @@ When you select **View** for a solution card, you'll see detailed information ab
 
 ## Information protection & governance section
 
-The **Information protection & governance** section shows you at a glance how you can use Microsoft 365 compliance solutions to protect and govern data in your organization.
+The **Information protection & governance** section shows you at a glance how you can use Microsoft Purview solutions to protect and govern data in your organization.
 
 ![Microsoft 365 solution catalog information protection and governance section.](../media/m365-solution-catalog-information-protection-governance.png)
 

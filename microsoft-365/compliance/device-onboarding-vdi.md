@@ -23,7 +23,7 @@ description: Deploy the configuration package on virtual desktop infrastructure 
 **Applies to:**
 
 - [Endpoint data loss prevention (DLP)](./endpoint-dlp-learn-about.md)
-- [Insider risk management](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [Insider risk management](insider-risk-management.md)
 
 - Virtual desktop infrastructure (VDI) devices
 
@@ -42,7 +42,7 @@ There might be associated challenges when onboarding VDIs. The following are typ
 - Instant early onboarding of short-lived sessions, which must be onboarded to Microsoft 365 prior to the actual provisioning.
 - The device name is typically reused for new sessions.
 
-VDI devices can appear in the Microsoft 365 Compliance center as either:
+VDI devices can appear in the Microsoft Purview portal as either:
 
 - Single entry for each device.
 Note that in this case, the *same* device name must be configured when the session is created, for example using an unattended answer file.

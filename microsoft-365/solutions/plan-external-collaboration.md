@@ -97,7 +97,7 @@ If you plan to use shared channels with other organizations, you can choose betw
 
 ## Compliance in shared channels
 
-Shared channels are integrated with Microsoft 365 compliance features.
+Shared channels are integrated with Microsoft Purview features.
 
 ##### Communications compliance
 

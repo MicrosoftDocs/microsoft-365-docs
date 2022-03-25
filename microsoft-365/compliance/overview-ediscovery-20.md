@@ -90,7 +90,7 @@ At a high level, here's how Advanced eDiscovery supports the EDRM workflow:
 
 Licensing for Advanced eDiscovery requires the appropriate organization subscription and per-user licensing.
 
-- **Organization subscription:** To access Advanced eDiscovery in the Microsoft 365 compliance center, your organization must have one of the following:
+- **Organization subscription:** To access Advanced eDiscovery in the Microsoft Purview portal, your organization must have one of the following:
 
   - Microsoft 365 E5 or Office 365 E5 subscription
   

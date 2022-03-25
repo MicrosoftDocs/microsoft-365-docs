@@ -1,6 +1,6 @@
 ---
 title: "Learn about communication compliance"
-description: "Learn about communication compliance in Microsoft 365"
+description: "Learn about communication compliance in Microsoft Purview"
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -22,9 +22,9 @@ search.appverid:
 - MOE150
 ---
 
-# Learn about communication compliance in Microsoft 365
+# Learn about communication compliance
 
-Communication compliance is an insider risk solution in Microsoft 365 that helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate actions to make sure they're compliant with your organization's message standards.
+Microsoft Purview Communication Compliance is an insider risk solution that helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate actions to make sure they're compliant with your organization's message standards.
 
 Communication compliance policies in Microsoft 365 help you overcome many modern challenges associated with compliance and internal and external communications, including:
 
@@ -106,7 +106,7 @@ New interactive dashboards for alerts, policy matches, actions, and trends help 
 
 - **Proactive intelligent alerts**: Alerts for policy matches requiring immediate attention include new dashboards for pending items sorted by severity and new automatic email notifications sent to designated reviewers.
 - **Interactive dashboards**: New dashboards display policy matches, pending and resolved actions, and trends by users and policy.
-- **Auditing support**: A full log of policy and review activities is easily exported from the Microsoft 365 compliance center to help support audit review requests.
+- **Auditing support**: A full log of policy and review activities is easily exported from the Microsoft Purview portal to help support audit review requests.
 
 ## Integration with Microsoft 365 services
 
@@ -135,7 +135,7 @@ In this workflow step, you identify your compliance requirements and configure a
 >[!IMPORTANT]
 >By default, Global Administrators do not have access to communication compliance features. To enable permissions for communication compliance features, see [Make communication compliance available in your organization](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance).
 
-You can choose from the following policy templates in the Microsoft 365 compliance center:
+You can choose from the following policy templates in the Microsoft Purview portal:
 
 - **Monitor for inappropriate text**: Use this template to quickly create a policy that uses built-in classifiers to automatically detect text in messages that may be considered inappropriate, abusive, or offensive.
 - **Monitor for inappropriate images**: Use this template to quickly create a policy that uses built-in classifiers to automatically detect content that contains adult and racy images that may be considered as inappropriate in your organization.
@@ -149,7 +149,7 @@ You can choose from the following policy templates in the Microsoft 365 complian
 
 ### Investigate
 
-In this step, you look deeper into the issues detected as matching your communication compliance policies. This step includes the following actions available in the Microsoft 365 compliance center:
+In this step, you look deeper into the issues detected as matching your communication compliance policies. This step includes the following actions available in the Microsoft Purview portal:
 
 - **Alerts**: When a message matches a policy condition, an alert is automatically generated. For each alert, you can see the status, the severity, the time detected, and if an Advanced eDiscovery case is assigned and its status. New alerts are displayed on the communication compliance home page and the **Alerts** page and are listed in order of severity.
 - **Issue management**: For each alert, you can take investigative actions to help remediate the issue detected in the message.
@@ -167,7 +167,7 @@ The next step is to remediate communication compliance issues you've investigate
 - **Escalate to another reviewer**: Sometimes, the initial reviewer of an issue needs input from other reviewers to help resolve the incident. You can easily escalate message issues to reviewers in other areas of your organization as part of the resolution process.
 - **Report as misclassified**: Messages incorrectly detected as matches of compliance policies will occasionally slip through to the review process. You can mark these types of alerts as misclassified, submit feedback to Microsoft about the misclassification to help improve global classifiers, and automatically resolve the issue.
 - **Remove message in Teams (preview)**: Inappropriate messages may be removed from displaying in Microsoft Teams channels or personal and group chat messages. Inappropriate messages that are removed are replaced with a notification that the message has been removed for a policy violation.
-- **Escalate for investigation**: In the most serious situations, you may need to share communication compliance information with other reviewers in your organization. Communication compliance is tightly integrated with other Microsoft 365 compliance features to help you with end-to-end risk resolution. Escalating a case for investigation allows you to transfer data and management of the case to Advanced eDiscovery in Microsoft 365. Advanced eDiscovery provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It allows legal teams to manage the entire legal hold notification workflow. To learn more about Advanced eDiscovery cases, see [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
+- **Escalate for investigation**: In the most serious situations, you may need to share communication compliance information with other reviewers in your organization. Communication compliance is tightly integrated with other Microsoft Purview features to help you with end-to-end risk resolution. Escalating a case for investigation allows you to transfer data and management of the case to Advanced eDiscovery in Microsoft 365. Advanced eDiscovery provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It allows legal teams to manage the entire legal hold notification workflow. To learn more about Advanced eDiscovery cases, see [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 
 ### Monitor
 

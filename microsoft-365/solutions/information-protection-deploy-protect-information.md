@@ -33,7 +33,7 @@ These controls are within following solution areas:
 ![Key services to protect personal information subject to data privacy regulation.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 > [!NOTE]
-> This solution describes security and compliance features to protect information subject to data privacy regulations. For a complete list of security features in Microsoft 365, see [Microsoft 365 security documentation](../security/index.yml). For a complete list of compliance features in Microsoft 365, see [Microsoft 365 compliance documentation](../compliance/index.yml).
+> This solution describes security and compliance features to protect information subject to data privacy regulations. For a complete list of security features in Microsoft 365, see [Microsoft 365 security documentation](../security/index.yml). For a complete list of compliance features in Microsoft 365, see [Microsoft Purview documentation](../compliance/index.yml).
 
 ## Data privacy regulations that impact information protection controls
 
@@ -203,7 +203,7 @@ DLP allows you to:
 
 ### Supported workloads for DLP
 
-With a DLP policy in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>, you can identify, monitor, and automatically protect sensitive items across many locations in Microsoft 365, such as Exchange Online, SharePoint, OneDrive, and Microsoft Teams.
+With a DLP policy in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a>, you can identify, monitor, and automatically protect sensitive items across many locations in Microsoft 365, such as Exchange Online, SharePoint, OneDrive, and Microsoft Teams.
 
 For example, you can identify any document containing a credit card number that's stored in any OneDrive site, or you can monitor just the OneDrive sites of specific people.
 

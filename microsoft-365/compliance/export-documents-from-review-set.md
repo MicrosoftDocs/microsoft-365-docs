@@ -25,7 +25,7 @@ Export allows users to customize the content that is included in the download pa
 
 To export documents from a review set:
 
-1. In the Microsoft 365 compliance center, open the Advanced eDiscovery case, select the **Review sets** tab, and then select the review set that you want to export.
+1. In the Microsoft Purview portal, open the Advanced eDiscovery case, select the **Review sets** tab, and then select the review set that you want to export.
 
 2. In the review set, click **Action** > **Export**.
 

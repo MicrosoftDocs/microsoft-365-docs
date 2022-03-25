@@ -65,8 +65,8 @@ Members of the following roles can assign users to insider risk management role 
 
 - Azure Active Directory *Global Administrator*
 - Azure Active Directory *Compliance Administrator*
-- Microsoft 365 compliance center *Organization Management*
-- Microsoft 365 compliance center *Compliance Administrator*
+- Microsoft Purview portal *Organization Management*
+- Microsoft Purview portal *Compliance Administrator*
 
 ## Understand requirements and dependencies
 
