@@ -33,19 +33,19 @@ ms.custom: api
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-In this section you will learn create a Power BI report on top of Defender for Endpoint APIs.
+In this section you will learn to create a Power BI report on top of Defender for Endpoint APIs.
 
 The first example demonstrates how to connect Power BI to Advanced Hunting API and the second example demonstrates a connection to our OData APIs, such as Machine Actions or Alerts.
 
 ## Connect Power BI to Advanced Hunting API
 
-- Open Microsoft Power BI
+- Open Microsoft Power BI.
 
-- Click **Get Data** \> **Blank Query**
+- Click **Get Data** \> **Blank Query**.
 
   :::image type="content" source="images/power-bi-create-blank-query.png" alt-text="The Blank Query option under the Get Data menu item" lightbox="images/power-bi-create-blank-query.png":::
 
-- Click **Advanced Editor**
+- Click **Advanced Editor**.
 
   :::image type="content" source="images/power-bi-open-advanced-editor.png" alt-text="The Advanced Editor menu item" lightbox="images/power-bi-open-advanced-editor.png":::
 
@@ -89,24 +89,24 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
     in Table
 ```
 
-- Click **Done**
+- Click **Done**.
 
-- Click **Edit Credentials**
+- Click **Edit Credentials**.
 
     :::image type="content" source="images/power-bi-edit-credentials.png" alt-text="The Edit Credentials menu item" lightbox="images/power-bi-edit-credentials.png":::
     
 
-- Select **Organizational account** \> **Sign in**
+- Select **Organizational account** \> **Sign in**.
 
     :::image type="content" source="images/power-bi-set-credentials-organizational.png" alt-text="The Sign in option in the Organizational account menu item" lightbox="images/power-bi-set-credentials-organizational.png":::
 
-- Enter your credentials and wait to be signed in
+- Enter your credentials and wait to be signed in.
 
-- Click **Connect**
+- Click **Connect**.
 
     :::image type="content" source="images/power-bi-set-credentials-organizational-cont.png" alt-text="The sign-in confirmation message in the Organizational account menu item" lightbox="images/power-bi-set-credentials-organizational-cont.png":::
 
-- Now the results of your query will appear as table and you can start build visualizations on top of it!
+- Now the results of your query will appear as a table and you can start to build visualizations on top of it!
 
 - You can duplicate this table, rename it and edit the Advanced Hunting query inside to get any data you would like.
 
@@ -127,7 +127,7 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API a
 ```
 
 - You can do the same for **Alerts** and **Machines**.
-- You also can use OData queries for queries filters, see [Using OData Queries](exposed-apis-odata-samples.md)
+- You also can use OData queries for queries filters, see [Using OData Queries](exposed-apis-odata-samples.md).
 
 ## Power BI dashboard samples in GitHub
 
