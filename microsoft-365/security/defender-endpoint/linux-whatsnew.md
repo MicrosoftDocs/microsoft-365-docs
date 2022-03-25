@@ -24,6 +24,11 @@ ms.technology: mde
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
+## 101.62.74 (30.122022.16274.0)
+
+- Addressed an issue where the product would incorrectly block access to files greater than 2GB in size when running on older kernel versions
+- Bug fixes
+
 ## 101.60.93 (30.122012.16093.0)
 
 - This version contains a security update for [CVE-2022-23278](https://msrc-blog.microsoft.com/2022/03/08/guidance-for-cve-2022-23278-spoofing-in-microsoft-defender-for-endpoint/)
