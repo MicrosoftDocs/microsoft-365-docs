@@ -28,7 +28,7 @@ Skype for Business Online administrators are responsible for managing policies. 
 > Skype for Business Online Connector is currently part of the latest Teams PowerShell module. If you're using the latest **Teams PowerShell** public release, you don't need to install the Skype for Business Online Connector.
 
 > [!NOTE]
-> Skype for Business Online Admins can manage both **Teams** and **Skype for Business Online** app policies through PowerShell module for now. Microsoft is working on separating out these capabilities in future updates.
+> Skype for Business Online Admins can manage both **Teams** and **Skype for Business Online** app policies through PowerShell.
 
 Install the [Teams PowerShell module](/microsoftteams/teams-powershell-install).
 
