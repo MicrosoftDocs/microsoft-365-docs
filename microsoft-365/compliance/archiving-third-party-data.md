@@ -33,7 +33,7 @@ Watch this interactive guide that demonstrates how to create data connectors to 
 
 ## Third-party data connectors
 
-The Microsoft 365 compliance center provides native third-party data connectors from Microsoft to import data from various data sources, such as LinkedIn, Instant Bloomberg, and Twitter and data connectors that support the Insider risk management solution. In addition to these data connectors, Microsoft works with the following partners to provide many more third part data connectors in the Microsoft 365 compliance center. Your organization works with these partners to set up their archiving service before creating a corresponding data connector in the Microsoft 365 compliance center.
+The Microsoft Purview portal provides native third-party data connectors from Microsoft to import data from various data sources, such as LinkedIn, Instant Bloomberg, and Twitter and data connectors that support the Insider risk management solution. In addition to these data connectors, Microsoft works with the following partners to provide many more third part data connectors in the Microsoft Purview portal. Your organization works with these partners to set up their archiving service before creating a corresponding data connector in the Microsoft Purview portal.
 
 - [Veritas](#veritas-data-connectors)
 
@@ -47,7 +47,7 @@ The third-party data listed in the next sections (except for HR data and physica
 
 ### Microsoft data connectors
 
-The following table lists the native third-party data connectors available in the Microsoft 365 compliance center. The table also summarizes the compliance solutions that you can apply after you import and archive third-party data in Microsoft 365. See the [Overview of compliance solutions that support third-party data](#overview-of-compliance-solutions-that-support-third-party-data) section for a more detailed description of each compliance solution and how it supports third-party data.
+The following table lists the native third-party data connectors available in the Microsoft Purview portal. The table also summarizes the compliance solutions that you can apply after you import and archive third-party data in Microsoft 365. See the [Overview of compliance solutions that support third-party data](#overview-of-compliance-solutions-that-support-third-party-data) section for a more detailed description of each compliance solution and how it supports third-party data.
 
 Click the link in the **Third-party data** column to go the step-by-step instructions for creating a connector for that data type.
 

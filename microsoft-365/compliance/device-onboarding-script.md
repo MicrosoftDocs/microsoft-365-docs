@@ -66,7 +66,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 > [!NOTE]
 > Onboarding and offboarding policies must not be deployed on the same device at the same time, otherwise this will cause unpredictable collisions.
 
-1. Get the offboarding package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
+1. Get the offboarding package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a>.
 
 2. In the navigation pane, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> > **Device offboarding**.
 
@@ -99,11 +99,11 @@ Monitoring can also be done directly on the portal, or by using the different de
 
 ### Monitor devices using the portal
 
-1. Go to [Microsoft 365 Compliance center](https://compliance.microsoft.com).
+1. Go to [Microsoft Purview portal](https://compliance.microsoft.com).
 
 2. Choose **Settings** > **Device onboarding** > **Devices**.
 
-1. Go to Microsoft 365 compliance center, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> > **Device onboarding** > **Devices**.
+1. Go to Microsoft Purview portal, and select <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**Settings**</a> > **Device onboarding** > **Devices**.
 
 1. Verify that devices are appearing.
 

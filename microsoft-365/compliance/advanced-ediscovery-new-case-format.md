@@ -28,7 +28,7 @@ To create an Advanced eDiscovery case using the new case format:
 
 1. Go to <https://compliance.microsoft.com> and sign in.
 
-2. In the left navigation pane of the Microsoft 365 compliance center, click **eDiscovery > Advanced**.
+2. In the left navigation pane of the Microsoft Purview portal, click **eDiscovery > Advanced**.
 
 3. On the **Advanced eDiscovery** page, click the **Cases** tab, and then click **Create a case**.
 

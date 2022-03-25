@@ -24,7 +24,7 @@ description: In this article, you'll learn about how to create DLP policies usin
 
 # Create a DLP policy from a template
 
-The easiest, most common way to get started with DLP policies is to use one of the templates included in the Microsoft 365 Compliance center. You can use one of these templates as is, or customize the rules to meet your organization's specific compliance requirements.
+The easiest, most common way to get started with DLP policies is to use one of the templates included in the Microsoft Purview portal. You can use one of these templates as is, or customize the rules to meet your organization's specific compliance requirements.
 
 Microsoft 365 includes over 40 ready-to-use templates that can help you meet a wide range of common regulatory and business policy needs. See; [Policy templates](dlp-policy-reference.md#policy-templates) for a complete list. 
 
@@ -71,7 +71,7 @@ Here's a list of applicable role groups that are in preview. To learn more about
 
 ### Create the DLP policy from a template
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 compliance center</a>.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview portal</a>.
 
 2. In the Compliance Center \> left navigation \> **Solutions** \> **Data loss prevention** \> **Policies** \> **+ Create policy**.
 

@@ -64,7 +64,7 @@ The table below outlines which users can create and edit alerts and alert polici
 - The **Security reader** role in Azure AD for viewing alerts and alert policies
 - The **Security administrator** role in Azure AD for creating or updating alert policies
  
-Learn more about [Azure roles in the Microsoft 365 compliance center](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-microsoft-365-compliance-center).
+Learn more about [Azure roles in the Microsoft Purview portal](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-microsoft-365-compliance-center).
 
 
 | Role | Can create and edit policies | Can edit alerts | 

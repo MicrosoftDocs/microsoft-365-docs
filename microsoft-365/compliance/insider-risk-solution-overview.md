@@ -1,6 +1,6 @@
 ---
-title: Insider risk solutions
-description: Learn how to help minimize risk in your organization with insider risk solutions in Microsoft 365.
+title: Microsoft Purview insider risk solutions
+description: Learn how to help minimize risk in your organization with insider risk solutions in Microsoft Purview.
 keywords: Microsoft 365, insider risk, compliance
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -18,7 +18,7 @@ ms.collection:
 - m365solution-overview
 ---
 
-# Insider risk solutions in Microsoft 365
+# Microsoft Purview insider risk solutions
 
 Insider risks are one of the top concerns of security and compliance professionals in the modern workplace. Industry studies have shown that insider risks are often associated with specific user events or activities. Protecting your organization against these risks can be challenging to identify and difficult to mitigate. Insider risks include vulnerabilities in a variety of areas and can cause major problems for your organization, ranging from the loss of intellectual property to workplace harassment, and more. The following figure outlines common insider risks:
 
@@ -41,13 +41,13 @@ Microsoft 365 risk prevention features are designed and built-in to our insider 
 | ![Security violations icon.](../media/ir-risk-security-violations.png)| Security violations |  | ![Supported](../media/check-mark.png) |  | ![Supported](../media/check-mark.png) |
 | ![Regulatory compliance violations icon.](../media/ir-risk-regulatory-compliance-violations.png)| Regulatory compliance violations | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) | ![Supported](../media/check-mark.png) |  |
 
-## Microsoft 365 insider risk solutions
+## Insider risk solutions
 
 To help protect your organization against insider risks, use these Microsoft 365 capabilities and features.
 
 ### Communication compliance
 
-Communication compliance helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization. Communication compliance is available in the following subscriptions:
+Microsoft Purview Communication Compliance helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization. Communication compliance is available in the following subscriptions:
 
 - Microsoft 365 E5/A5/G5 subscription (paid or trial version)
 - Microsoft 365 E3/A3/G5 subscription + the Microsoft 365 E5/A5/G5 Compliance add-on
@@ -58,7 +58,7 @@ Communication compliance helps minimize communication risks by helping you detec
 
 ### Insider risk management
 
-Insider risk management helps minimize internal risks by enabling you to detect, investigate, and act on malicious and inadvertent activities in your organization.
+Microsoft Purview Insider Risk Management helps minimize internal risks by enabling you to detect, investigate, and act on malicious and inadvertent activities in your organization.
 
 Insider risk management is available in the following subscriptions:
 
@@ -69,7 +69,7 @@ Insider risk management is available in the following subscriptions:
 
 ### Information barriers
 
-Information barriers allow you to restrict communication and collaboration between two internal groups to avoid a conflict of interest from occurring in your organization.
+Microsoft Purview Information Barriers allow you to restrict communication and collaboration between two internal groups to avoid a conflict of interest from occurring in your organization.
 
 Information barriers are available in the following subscriptions:
 
@@ -81,7 +81,7 @@ Information barriers are available in the following subscriptions:
 
 ### Privileged access management
 
-Privileged access management allows granular access control over privileged Exchange Online admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
+Microsoft Purview Privileged Access Management allows granular access control over privileged Exchange Online admin tasks in Office 365. It can help protect your organization from breaches that use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
 
 Privileged access management is available in the following subscriptions:
 
@@ -94,9 +94,9 @@ Privileged access management is available in the following subscriptions:
 - Microsoft 365 A3 subscription + the Microsoft 365 A5 Compliance add-on
 - Microsoft 365 A3 subscription + the Microsoft 365 A5 Information Protection and Governance add-on
 
-## Deploy Microsoft 365 insider risk solutions
+## Deploy Microsoft Purview insider risk solutions
 
-To help protect your organization against insider risks, set up and deploy the following Microsoft 365 solutions:
+To help protect your organization against insider risks, set up and deploy the following Microsoft Purview solutions:
 
 ![Insider risk solution defense-in-depth.](../media/ir-solution-defense-in-depth.png)
 
@@ -107,7 +107,7 @@ To help protect your organization against insider risks, set up and deploy the f
 
 ## Illustrations with examples
 
-To help you plan an integrated strategy for implementing Microsoft 365 insider risk capabilities, download the *Microsoft 365 information protection and compliance capabilities* set of illustrations. For insider risk capabilities, see the architecture illustration pages 5-7. Feel free to adapt these illustrations for your own use.
+To help you plan an integrated strategy for implementing Microsoft Purview insider risk capabilities, download the *Microsoft 365 information protection and compliance capabilities* set of illustrations. For insider risk capabilities, see the architecture illustration pages 5-7. Feel free to adapt these illustrations for your own use.
 
 | Item | Description |
 |:-----|:------------|
@@ -115,9 +115,9 @@ To help you plan an integrated strategy for implementing Microsoft 365 insider r
 
 ## Training
 
-Training your administrators and compliance team in the basics for each insider risk solution can help your organization get started more quickly with your deployment and implementation efforts. 
+Training your administrators and compliance team in the basics for each insider risk solution can help your organization get started more quickly with your deployment and implementation efforts.
 
-Microsoft 365 provides the following resources to help inform and train these users in your organization:
+Microsoft provides the following resources to help inform and train these users in your organization:
 
 | Solution/Area | Resources |
 |:------------------|:--------------|

@@ -22,7 +22,7 @@ ms.custom: seo-marvel-mar2020
 
 # What's new in Microsoft 365 compliance
 
-Whether it be adding new solutions to the [Microsoft 365 compliance center](microsoft-365-compliance-center.md), updating existing features based on your feedback, or rolling out fresh and updated documentation, Microsoft 365 helps you stay on top of the ever-changing compliance landscape. Take a look below to see what’s new in Microsoft 365 compliance today.
+Whether it be adding new solutions to the [Microsoft Purview portal](microsoft-365-compliance-center.md), updating existing features based on your feedback, or rolling out fresh and updated documentation, Microsoft 365 helps you stay on top of the ever-changing compliance landscape. Take a look below to see what’s new in Microsoft 365 compliance today.
 
 > [!NOTE]
 > Some compliance features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, try adding yourself to [targeted release](/office365/admin/manage/release-options-in-office-365).
@@ -63,7 +63,7 @@ Whether it be adding new solutions to the [Microsoft 365 compliance center](micr
 
 ### Microsoft Purview Information Governance
 
-- The [Microsoft Purview Information Governance in Microsoft 365](manage-information-governance.md) page and section of the documentation is substantially revised and restructured to help you more easily find information that relates to the solutions you configure in the Microsoft 365 compliance center: Data Connectors, Information Governance, and Records Management. As part of this revision, the documentation provides a clearer distinction for the retention scenarios for information governance vs. records management.
+- The [Microsoft Purview Information Governance in Microsoft 365](manage-information-governance.md) page and section of the documentation is substantially revised and restructured to help you more easily find information that relates to the solutions you configure in the Microsoft Purview portal: Data Connectors, Information Governance, and Records Management. As part of this revision, the documentation provides a clearer distinction for the retention scenarios for information governance vs. records management.
 - [Learn about information governance](information-governance.md) - new, to support the restructure.
 - [Get started with information governance](get-started-with-information-governance.md) - new, to replace "Get started with retention", this article includes getting started steps for all information governance capabilities, which include retention.
 - [Create retention labels for exceptions to your retention policies](create-retention-labels-information-governance.md) - new, identified scenario for using retention labels for information governance rather than records management.

@@ -28,7 +28,7 @@ See the [terms and conditions](terms-conditions.md) for Microsoft 365 compliance
 
 ## Set up a compliance trial
 
-You can sign up for a trial in the [Microsoft 365 compliance center](https://go.microsoft.com/fwlink/p/?linkid=2077149) using the **Trials** link in the left navigation pane.
+You can sign up for a trial in the [Microsoft Purview portal](https://go.microsoft.com/fwlink/p/?linkid=2077149) using the **Trials** link in the left navigation pane.
 
 ## Licensing
 
