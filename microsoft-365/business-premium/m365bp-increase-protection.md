@@ -33,9 +33,10 @@ In this objective, you increase your threat protection with Microsoft 365 Busine
 
 ## Review and apply preset security policies (suitable for most businesses)
 
+Your subscription includes [preset security policies](../security/office-365-security/preset-security-policies.md) that use recommended settings for anti-spam, anti-malware, and anti-phishing protection. By default, built-in protection is enabled; consider applying standard or strict protection for increased security. 
+
 :::image type="content" source="media/m365bp-presetsecuritypolicies.png" alt-text="Screenshot of preset security policies.":::
 
-Your subscription includes [preset security policies](../security/office-365-security/preset-security-policies.md) that use recommended settings for anti-spam, anti-malware, and anti-phishing protection. By default, built-in protection is enabled; consider applying standard or strict protection for increased security. 
 
 ### What are preset security policies?
 
