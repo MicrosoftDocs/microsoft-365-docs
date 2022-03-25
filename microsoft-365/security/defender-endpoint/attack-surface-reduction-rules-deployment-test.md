@@ -72,7 +72,7 @@ Your new attack surface reduction policy for ASR rules is listed in **Endpoint s
 
 ## Step 2: Understand the Attack surface reduction rules reporting page in the Microsoft 365 Defender portal
 
-The ASR  rules reporting page is found in **Microsoft 365 Defender portal** > **Reports** > **Attack surface reduction rules**. This page has three tabs:
+The ASR rules reporting page is found in **Microsoft 365 Defender portal** > **Reports** > **Attack surface reduction rules**. This page has three tabs:
 
 - Detections
 - Configuration
