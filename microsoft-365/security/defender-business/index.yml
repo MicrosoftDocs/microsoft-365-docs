@@ -5,7 +5,7 @@ summary: Starting March 1, 2022, Microsoft Defender for Business is included in 
 metadata:
   title: Microsoft Defender for Business documentation
   description: Get an overview and setup information for Microsoft Defender for Business
-  ms.prod: 365-security
+  ms.prod: m365-security
   ms.technology: mdb
   ms.topic: landing-page
   ms.collection: 
