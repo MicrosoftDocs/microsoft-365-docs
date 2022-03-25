@@ -214,7 +214,7 @@ Defender for Endpoint supports Device configuration policies for managed devices
 
    - Enable **Always-on VPN**
 
-     Setup a VPN client in the work profile to automatically connect and reconnect to the VPN whenever possible. Only one VPN client can be configured for always-on VPN on a given device, so be sure to have no more than one always-on VPN policy deployed to a single device.
+     Set up a VPN client in the work profile to automatically connect and reconnect to the VPN whenever possible. Only one VPN client can be configured for always-on VPN on a given device, so be sure to have no more than one always-on VPN policy deployed to a single device.
 
    - Select **Custom** in VPN client dropdown list
 
