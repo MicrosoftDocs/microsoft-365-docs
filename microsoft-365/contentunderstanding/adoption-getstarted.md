@@ -1,8 +1,8 @@
 ---
 title: Get started driving adoption of Microsoft SharePoint Syntex
 description: Learn how to use and implement SharePoint Syntex in your organization to help you streamline your business processes.
-ms.author: samanro
-author: samanro
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.date: 
 audience: admin
