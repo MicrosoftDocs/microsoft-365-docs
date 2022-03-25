@@ -402,6 +402,18 @@ Considerations for the relabeling option:
 
 - If the replacement label marks the item as a record or regulatory record but can't be applied because the file is checked out, the relabel process is tried when the file is checked back in again, or checkout is discarded.
 
+##### Configuration paths for relabeling
+
+The option to relabel at the end of the retention period has two configuration paths when you create a retention label:
+
+- If you need to initially retain content with the primary label (most typical): On the **Define label settings** page, select **Retain items indefinitely or for a specific period** and specify the retention period. Then on the **Choose what happens after the retention period** page, select **Change the label**.
+
+- If you don't need to initially retain content with the primary label: On the **Define label settings** page, select **Enforce actions after a specific period**, specify the retention period, and then select **Change the label**.
+
+Alternatively, disposition reviewers can manually select a replacement label as part of the [disposition review process](disposition.md#disposition-reviews) if the label setting **Start a disposition review** is selected on the **Choose what happens after the retention period** page.
+
+![Change the label option after the retention period.](../media/change-label-option.png)
+
 ### Deleting content that's older than a specific age
 
 A policy for retention can retain and then delete items, or delete old items without retaining them.
