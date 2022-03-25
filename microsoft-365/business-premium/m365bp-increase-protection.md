@@ -31,12 +31,6 @@ description: "Get help with increasing the level of protection in Microsoft 365 
 
 In this objective, you increase your threat protection with Microsoft 365 Business Premium. It's critical to protect the org against phishing, malware, and other threats. These recommendations are especially appropriate for political campaigns, law offices, and health care clinics, which have an increased need for security.
 
-## Start with Secure Score
-
-Microsoft Secure Score analyzes your organization's security based on your regular activities and security settings and assigns a score. Take note of your current score and then take the recommended actions in this article to increase your score. The goal is to always be aware of and try to improve your score.
-
-For more information, see [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
-
 ## Review and apply preset security policies (suitable for most businesses)
 
 :::image type="content" source="media/m365bp-presetsecuritypolicies.png" alt-text="Screenshot of preset security policies.":::
